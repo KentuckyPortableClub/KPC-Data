@@ -62775,6 +62775,692 @@
    "pass": 1
   },
   {
+   "ref": "US-6200",
+   "area": "US-WY",
+   "park": "Overland Stage BLM Interpretive Site",
+   "agency_group": "wyohistory.org",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "US-WY",
+   "url": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+   "name_field": "HA_NAME",
+   "agency": "BLM herd areas",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-6",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 72,
+   "record_name": "Rock Springs",
+   "layer": "PACK-US-land-188",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1/query?where=OBJECTID%3D72&outFields=%2A&f=html",
+   "where": "OBJECTID=72",
+   "pin_m": 0,
+   "acres_approx": 1916948.6,
+   "grade": "official",
+   "envelope": [
+    -109.79984,
+    41.22263,
+    -108.10248,
+    41.97842
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "White Mountain",
+     "layer": "PACK-US-land-189",
+     "tier": "T-6",
+     "pin_m": null
+    },
+    {
+     "record_name": "Rock Springs Field Office ERMA",
+     "layer": "PACK-US-land-208",
+     "tier": "T-5",
+     "pin_m": null
+    },
+    {
+     "record_name": "Rock Springs Field Office ERMA",
+     "layer": "PACK-US-AK-land-214",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1/query?geometry=-109.27%2C41.5973&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-6 WEAK: 'Rock Springs' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WY-trail-35",
+      "gave": "no hit (0 at pin, 22 by name)"
+     },
+     {
+      "source": "PACK-US-WY-trail-61",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WY-land-62",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-WY-park-377",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-WY-wildlife-378",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-WY-wildlife-379",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "hit (1 at pin, 4 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "hit (1 at pin, 4 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "error (HTTP 200)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-WY in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Rock Springs' (PACK-US-land-188); pin inside; about 1916948.6 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-11670",
+   "area": "US-OK",
+   "park": "Spring Creek Recreation Site",
+   "agency_group": "travelok.com",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "US-OK",
+   "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+   "name_field": "FET_NAME",
+   "agency": "BLM recreation management areas · official (BLM planning area)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-4",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 9711,
+   "record_name": "Spring Creek, Zone 1",
+   "layer": "PACK-US-land-208",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?where=OBJECTID%3D9711&outFields=%2A&f=html",
+   "where": "OBJECTID=9711",
+   "pin_m": 775575,
+   "acres_approx": 852.2,
+   "grade": "official",
+   "envelope": [
+    -107.94275,
+    38.38377,
+    -107.91855,
+    38.42221
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Spring Creek, Zone 3",
+     "layer": "PACK-US-land-208",
+     "tier": "T-4",
+     "pin_m": 776149
+    },
+    {
+     "record_name": "Spring Creek, Zone 2",
+     "layer": "PACK-US-land-208",
+     "tier": "T-4",
+     "pin_m": 776301
+    },
+    {
+     "record_name": "Spring Creek",
+     "layer": "PACK-US-land-188",
+     "tier": "T-4",
+     "pin_m": 810837
+    },
+    {
+     "record_name": "Spring Creek Basin",
+     "layer": "PACK-US-land-189",
+     "tier": "T-4",
+     "pin_m": 810837
+    }
+   ],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?where=FET_NAME%20LIKE%20%27%25Spring%25%27&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=0.0002&geometryPrecision=6&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "pin not inside nor within 150 m with a name match (distance check)",
+   "size_band": "unknown",
+   "why": "T-4 WEAK: 'Spring Creek, Zone 1' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-OK-trail-55",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-OK-land-205",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-OK-park-317",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-OK-wildlife-318",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-MN-wildlife-29",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-AK-land-41",
+      "gave": "hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "hit (0 at pin, 16 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "hit (0 at pin, 8 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "hit (0 at pin, 24 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 7 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-OK in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Spring Creek, Zone 1' (PACK-US-land-208); pin 775575 m from the edge; about 852.2 acres; Rule G: UNLIKELY (pin not inside nor within 150 m with a name match (distance check)); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-11837",
+   "area": "US-OK",
+   "park": "Smallest National Park Historic Site",
+   "agency_group": "travelok.com",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "US-OK",
+   "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1?f=html",
+   "service_url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+   "name_field": "RESNAME",
+   "agency": "National Register of Historic Places Polygons",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-5",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 386952,
+   "record_name": "Guthrie Historic District",
+   "layer": "PACK-US-AK-land-41",
+   "record_link": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D386952&outFields=%2A&f=html",
+   "where": "OBJECTID=386952",
+   "pin_m": 0,
+   "acres_approx": 1705.5,
+   "grade": "official",
+   "envelope": [
+    -97.44311,
+    35.86255,
+    -97.40754,
+    35.88727
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?geometry=-97.4274%2C35.8776&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "container: one record under several parks (or a management district)",
+   "size_band": "unknown",
+   "why": "T-5 WEAK: 'Guthrie Historic District' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-OK-trail-55",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-OK-land-205",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-OK-park-317",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-OK-wildlife-318",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-MN-wildlife-29",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-AK-land-41",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-OK in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Guthrie Historic District' (PACK-US-AK-land-41); pin inside; about 1705.5 acres; Rule G: UNLIKELY (container: one record under several parks (or a management district)); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): container: one record under several parks (or a management district)",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
    "ref": "CA-1194",
    "area": "CA-AB",
    "park": "Sylvan Lake Provincial Park",
@@ -119396,6 +120082,529 @@
     "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
     "step_reached": "L5",
     "date": "2026-11-06"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-12403",
+   "area": "US-WA",
+   "park": "Columbia Basin Hatchery Creek State Fish Hatchery",
+   "agency_group": "wdfw.wa.gov",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "US-WA",
+   "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1?f=html",
+   "service_url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1",
+   "name_field": "NAME",
+   "agency": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks) (land, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-6",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 2730,
+   "record_name": "Gloyd Seeps Wildlife Area",
+   "layer": "PACK-US-WA-land-366",
+   "record_link": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/query?where=OBJECTID%3D2730&outFields=%2A&f=html",
+   "where": "OBJECTID=2730",
+   "pin_m": 0,
+   "acres_approx": 164.0,
+   "grade": "official",
+   "envelope": [
+    -119.25649,
+    47.18227,
+    -119.24573,
+    47.18964
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/query?geometry=-119.253%2C47.1868&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-6 WEAK: 'Gloyd Seeps Wildlife Area' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WA-land-19",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Trails-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-WA-park-363",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-364",
+      "gave": "no hit (2 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-WA-preserve-365",
+      "gave": "no hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-366",
+      "gave": "hit (1 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-367",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-368",
+      "gave": "no hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-369",
+      "gave": "no hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "US-WA-trail-Trails_in_King_County-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-WA-trail-Generalized_Regional_Trails_for_Online_P-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Motorized_Trails-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Non_Motorized_Trails-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-475",
+      "gave": "no hit (1 at pin, 14 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-OR-land-323",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "https://wdfw.wa.gov/fishing/locations/lowland-lakes/columbia-basin-hatchery-cr",
+      "gave": "page read (fetch); 0 file candidates"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-WA in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Gloyd Seeps Wildlife Area' (PACK-US-WA-land-366); pin inside; about 164.0 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-13361",
+   "area": "US-WA",
+   "park": "Lake Stevens State Fishing Lake",
+   "agency_group": "wdfw.wa.gov",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "US-WA",
+   "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0?f=html",
+   "service_url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
+   "name_field": "ManagedPlaceName",
+   "agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-6",
+   "band": "WEAK",
+   "step": "L0",
+   "record": null,
+   "record_name": "North Cove",
+   "layer": "PACK-US-WA-wildlife-364",
+   "record_link": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.066%2C48.0133&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "where": "id=None",
+   "pin_m": 0,
+   "acres_approx": 1.0,
+   "grade": "official",
+   "envelope": [
+    -122.06653,
+    48.01305,
+    -122.06486,
+    48.01354
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Snohomish County Lakes",
+     "layer": "PACK-US-WA-land-366",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.066%2C48.0133&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-6 WEAK: 'North Cove' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WA-land-19",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Trails-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-WA-park-363",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-364",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-preserve-365",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-366",
+      "gave": "hit (2 at pin, 10 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-367",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-368",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-369",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-Trails_in_King_County-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-WA-trail-Generalized_Regional_Trails_for_Online_P-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Motorized_Trails-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Non_Motorized_Trails-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-475",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-OR-land-323",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "https://wdfw.wa.gov/fishing/locations/lowland-lakes/lake-stevens",
+      "gave": "page read (fetch); 0 file candidates"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-WA in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "same land also in PACK-US-WA-land-366 'Snohomish County Lakes': merged, counted once; record 'North Cove' (PACK-US-WA-wildlife-364); pin inside; about 1.0 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-07"
    },
    "pass": 1
   },
@@ -186952,6 +188161,451 @@
     "tag": "UNLIKELY only (evidence, never a question): other kind of place (wilderness vs state_park)",
     "step_reached": "L0",
     "date": "2026-11-06"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-7111",
+   "area": "US-MS",
+   "park": "Red Creek Wildlife Management Area",
+   "agency_group": "mdwfp.com",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "US-MS",
+   "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
+   "name_field": "FET_NAME",
+   "agency": "BLM recreation areas",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-6",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 9669,
+   "record_name": "Red Creek I & II Campsite",
+   "layer": "PACK-US-land-207",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9/query?where=OBJECTID%3D9669&outFields=%2A&f=html",
+   "where": "OBJECTID=9669",
+   "pin_m": 2152298,
+   "acres_approx": 0.3,
+   "grade": "official",
+   "envelope": [
+    -109.25126,
+    40.89495,
+    -109.25072,
+    40.89553
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Red Creek I & II Campsite",
+     "layer": "PACK-US-land-208",
+     "tier": "T-6",
+     "pin_m": 2152298
+    },
+    {
+     "record_name": "First Creek Trailhead",
+     "layer": "PACK-US-land-207",
+     "tier": "T-6",
+     "pin_m": 2532925
+    },
+    {
+     "record_name": "Oak Creek Trailhead South",
+     "layer": "PACK-US-land-207",
+     "tier": "T-6",
+     "pin_m": 2533136
+    },
+    {
+     "record_name": "Oak Creek Trailhead",
+     "layer": "PACK-US-land-207",
+     "tier": "T-6",
+     "pin_m": 2534900
+    }
+   ],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9/query?where=FET_NAME%20LIKE%20%27%25Creek%25%27&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=0.0002&geometryPrecision=6&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "pin not inside nor within 150 m with a name match (distance check)",
+   "size_band": "unknown",
+   "why": "T-6 WEAK: 'Red Creek I & II Campsite' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-MS-land-198",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-MS-land-199",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-AZ-land-44",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 16 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 18 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-MS in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a wildlife, record is a river",
+    "why_this_record": "same land also in PACK-US-land-208 'Red Creek I & II Campsite': merged, counted once; record 'Red Creek I & II Campsite' (PACK-US-land-207); pin 2152298 m from the edge; about 0.3 acres; Rule G: UNLIKELY (pin not inside nor within 150 m with a name match (distance check)); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "record is only 0.3 acres for a big kind of park; name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-10805",
+   "area": "US-WY",
+   "park": "Sinks Canyon State Wildlife Habitat Management Area",
+   "agency_group": "wgfd.wyo.gov",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "US-WY",
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+   "name_field": "ACEC_NAME",
+   "agency": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-5",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 423,
+   "record_name": "Lander Slope ACEC",
+   "layer": "PACK-US-AK-land-215",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?where=OBJECTID%3D423&outFields=%2A&f=html",
+   "where": "OBJECTID=423",
+   "pin_m": 0,
+   "acres_approx": 90464.5,
+   "grade": "official",
+   "envelope": [
+    -108.97946,
+    42.66365,
+    -108.64405,
+    42.89236
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?geometry=-108.814%2C42.747&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-5 WEAK: 'Lander Slope ACEC' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WY-trail-35",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WY-trail-61",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WY-land-62",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-WY-park-377",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-WY-wildlife-378",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-WY-wildlife-379",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (1 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (1 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "hit (1 at pin, 12 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "error (HTTP 200)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Sinks-Canyon",
+      "gave": "page read (fetch); 0 file candidates"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-WY in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Lander Slope ACEC' (PACK-US-AK-land-215); pin inside; about 90464.5 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-07"
    },
    "pass": 1
   },
@@ -256143,6 +257797,554 @@
    "pass": 1
   },
   {
+   "ref": "US-6972",
+   "area": "US-IN",
+   "park": "Historic New Harmony State Historic Site",
+   "agency_group": "indianamuseum.org",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "US-IN",
+   "url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html",
+   "service_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
+   "name_field": "unitname",
+   "agency": "Indiana DNR properties",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-4",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 4648,
+   "record_name": "New Harmony Public Access Site",
+   "layer": "PACK-US-IN-land-191",
+   "record_link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D4648&outFields=%2A&f=html",
+   "where": "OBJECTID=4648",
+   "pin_m": 390,
+   "acres_approx": 1.7,
+   "grade": "official",
+   "envelope": [
+    -87.94204,
+    38.12953,
+    -87.93943,
+    38.12984
+   ],
+   "rule": "R-G13",
+   "others": [],
+   "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=unitname%20LIKE%20%27%25Harmony%25%27&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=0.0002&geometryPrecision=6&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "pin not inside nor within 150 m with a name match (distance check)",
+   "size_band": "unknown",
+   "why": "T-4 WEAK: 'New Harmony Public Access Site' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-IN-land-191",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-IN-preserve-263",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-IN-land-387",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-IN in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "PIN OFF: 38.129785,-87.941538, 0.6 km, PACK-US-IN-wma-527",
+    "why_this_record": "record 'New Harmony Public Access Site' (PACK-US-IN-land-191); pin 390 m from the edge; about 1.7 acres; Rule G: UNLIKELY (pin not inside nor within 150 m with a name match (distance check)); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-3272",
+   "area": "CA-BC",
+   "park": "Buntzen Lake Recreation Park",
+   "agency_group": "bchydro.com",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "CA-BC",
+   "url": "https://openmaps.gov.bc.ca/geo/pub/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW",
+   "service_url": "https://openmaps.gov.bc.ca/geo/pub/wfs",
+   "name_field": "PROTECTED_LANDS_NAME",
+   "agency": "BC Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-5",
+   "band": "WEAK",
+   "step": "L0",
+   "record": "WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW.fid--500144a2_1a1a649c071_-7345",
+   "record_name": "SAY NUTH KHAW YUM PARK [A.K.A. INDIAN ARM PARK]",
+   "layer": "CA-BC-parks",
+   "record_link": "https://openmaps.gov.bc.ca/geo/pub/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW&count=25&bbox=1228224.172943484%2C485228.866591074%2C1228537.9859706839%2C485541.38863705983%2CEPSG%3A3005",
+   "where": "id=WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW.fid--500144a2_1a1a649c071_-7345",
+   "pin_m": 0,
+   "acres_approx": null,
+   "grade": "official",
+   "envelope": null,
+   "rule": null,
+   "others": [
+    {
+     "record_name": "PINECONE BURKE PARK",
+     "layer": "CA-BC-parks",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://openmaps.gov.bc.ca/geo/pub/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW&count=25&bbox=1228224.172943484%2C485228.866591074%2C1228537.9859706839%2C485541.38863705983%2CEPSG%3A3005",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-5 WEAK: 'SAY NUTH KHAW YUM PARK [A.K.A. INDIAN ARM PARK]' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-BC-park-72",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-trail-75",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-CA-BC-park-76",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "CA-BC-parks",
+      "gave": "hit (2 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-BC-provincial_park-British_Columbia_Provincial_Parks_Ecolog-10",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "CA-BC-wildlife_area-British_Columbia_Wildlife_Management_Are-9",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-CA-BC-land-416",
+      "gave": "blocked (blocked (robots))"
+     },
+     {
+      "source": "PACK-CA-BC-land-417",
+      "gave": "blocked (blocked (robots))"
+     },
+     {
+      "source": "PACK-CA-BC-park-420",
+      "gave": "blocked (blocked (robots))"
+     },
+     {
+      "source": "PACK-CA-BC-park-421",
+      "gave": "blocked (blocked (robots))"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-BC in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'SAY NUTH KHAW YUM PARK [A.K.A. INDIAN ARM PARK]' (CA-BC-parks); pin inside; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-12060",
+   "area": "US-NY",
+   "park": "Crystal Lake State Forest",
+   "agency_group": "dec.ny.gov",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "US-NY",
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+   "name_field": "NLCS_NAME",
+   "agency": "BLM wilderness study areas",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-6",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 147,
+   "record_name": "Crystal Lake",
+   "layer": "PACK-US-land-385",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1/query?where=OBJECTID%3D147&outFields=%2A&f=html",
+   "where": "OBJECTID=147",
+   "pin_m": 3294683,
+   "acres_approx": 8921.8,
+   "grade": "official",
+   "envelope": [
+    -116.44634,
+    47.35195,
+    -116.33054,
+    47.44272
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1/query?where=NLCS_NAME%20LIKE%20%27%25Crystal%25%27&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=0.0002&geometryPrecision=6&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "pin not inside nor within 150 m with a name match (distance check)",
+   "size_band": "unknown",
+   "why": "T-6 WEAK: 'Crystal Lake' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-NY-land-308",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-NY-park-309",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NY-trail-DEC_Trails-1",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NY-trail-DEC_Trails-3",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NY-trail-DEC_Trails-4",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NY-trail-DEC_Trails-5",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-AZ-land-44",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-GA-land-48",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-NY in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a forest, record is a lake",
+    "why_this_record": "record 'Crystal Lake' (PACK-US-land-385); pin 3294683 m from the edge; about 8921.8 acres; Rule G: UNLIKELY (pin not inside nor within 150 m with a name match (distance check)); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
    "ref": "US-13242",
    "area": "US-NV",
    "park": "Spring Creek Rearing Station State Fish Hatchery",
@@ -316374,6 +318576,1739 @@
    "pass": 1
   },
   {
+   "ref": "CA-0017",
+   "area": "CA-BC",
+   "park": "Clayoquot Sound Biosphere Reserve",
+   "agency_group": "clayoquotbiosphere.org",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "CA-BC",
+   "url": "https://openmaps.gov.bc.ca/geo/pub/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW",
+   "service_url": "https://openmaps.gov.bc.ca/geo/pub/wfs",
+   "name_field": "PROTECTED_LANDS_NAME",
+   "agency": "BC Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-6",
+   "band": "WEAK",
+   "step": "L0",
+   "record": "WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW.fid--181c0f93_1a1b45521b8_1fd5",
+   "record_name": "CLAYOQUOT ARM PARK",
+   "layer": "CA-BC-parks",
+   "record_link": "https://openmaps.gov.bc.ca/geo/pub/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3EPROTECTED_LANDS_NAME%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Aclayoquot%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E",
+   "where": "id=WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW.fid--181c0f93_1a1b45521b8_1fd5",
+   "pin_m": 0,
+   "acres_approx": null,
+   "grade": "official",
+   "envelope": null,
+   "rule": null,
+   "others": [
+    {
+     "record_name": "CLAYOQUOT PLATEAU PARK",
+     "layer": "CA-BC-parks",
+     "tier": "T-6",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://openmaps.gov.bc.ca/geo/pub/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3EPROTECTED_LANDS_NAME%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Aclayoquot%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: one word(s) in common",
+   "size_band": "unknown",
+   "why": "T-6 WEAK: 'CLAYOQUOT ARM PARK' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-BC-park-72",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-trail-75",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-CA-BC-park-76",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "CA-BC-parks",
+      "gave": "hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "CA-BC-provincial_park-British_Columbia_Provincial_Parks_Ecolog-10",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "CA-BC-wildlife_area-British_Columbia_Wildlife_Management_Are-9",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-CA-BC-land-416",
+      "gave": "blocked (blocked (robots))"
+     },
+     {
+      "source": "PACK-CA-BC-land-417",
+      "gave": "blocked (blocked (robots))"
+     },
+     {
+      "source": "PACK-CA-BC-park-420",
+      "gave": "blocked (blocked (robots))"
+     },
+     {
+      "source": "PACK-CA-BC-park-421",
+      "gave": "blocked (blocked (robots))"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-BC in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'CLAYOQUOT ARM PARK' (CA-BC-parks); pin inside; Rule G: UNLIKELY (name: one word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: one word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-10184",
+   "area": "US-WI",
+   "park": "Johnson State Wildlife Area",
+   "agency_group": "dnr.wisconsin.gov",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "US-WI",
+   "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2?f=html",
+   "service_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2",
+   "name_field": "SNA_NAME",
+   "agency": "Natural Area Parcel Ownership",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-4",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 24055,
+   "record_name": "Johnson Falls",
+   "layer": "PACK-US-WI-preserve-59",
+   "record_link": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2/query?where=OBJECTID%3D24055&outFields=%2A&f=html",
+   "where": "OBJECTID=24055",
+   "pin_m": 334731,
+   "acres_approx": 209.8,
+   "grade": "official",
+   "envelope": [
+    -88.15911,
+    45.28098,
+    -88.13887,
+    45.29026
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Johnson Falls",
+     "layer": "PACK-US-WI-preserve-372",
+     "tier": "T-4",
+     "pin_m": 334731
+    },
+    {
+     "record_name": "Johnson Hill Kame",
+     "layer": "PACK-US-WI-preserve-59",
+     "tier": "T-4",
+     "pin_m": 380730
+    },
+    {
+     "record_name": "Johnson Hill Kame",
+     "layer": "PACK-US-WI-preserve-372",
+     "tier": "T-4",
+     "pin_m": 380730
+    },
+    {
+     "record_name": "Johnson Valley",
+     "layer": "PACK-US-land-207",
+     "tier": "T-4",
+     "pin_m": 2353389
+    }
+   ],
+   "source_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2/query?where=SNA_NAME%20LIKE%20%27%25Johnson%25%27&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=0.0002&geometryPrecision=6&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "pin not inside nor within 150 m with a name match (distance check)",
+   "size_band": "unknown",
+   "why": "T-4 WEAK: 'Johnson Falls' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WI-trail-24",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-preserve-59",
+      "gave": "hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-WI-land-370",
+      "gave": "hit (1 at pin, 4 by name)"
+     },
+     {
+      "source": "PACK-US-WI-park-371",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-preserve-372",
+      "gave": "hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-WI-land-373",
+      "gave": "hit (2 at pin, 6 by name)"
+     },
+     {
+      "source": "PACK-US-WI-forest-388",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "https://dnr.wisconsin.gov/topic/Lands/WildlifeAreas/DeerPark",
+      "gave": "page read (fetch); 0 file candidates"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-WI in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "same land also in PACK-US-WI-preserve-372 'Johnson Falls': merged, counted once; record 'Johnson Falls' (PACK-US-WI-preserve-59); pin 334731 m from the edge; about 209.8 acres; Rule G: UNLIKELY (pin not inside nor within 150 m with a name match (distance check)); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-10192",
+   "area": "US-WI",
+   "park": "Pleasant Valley State Fish and Wildlife Area",
+   "agency_group": "dnr.wisconsin.gov",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "US-WI",
+   "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2?f=html",
+   "service_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2",
+   "name_field": "SNA_NAME",
+   "agency": "Natural Area Parcel Ownership",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-5",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 24128,
+   "record_name": "Kinnickinnic Wet Prairie",
+   "layer": "PACK-US-WI-preserve-59",
+   "record_link": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2/query?where=OBJECTID%3D24128&outFields=%2A&f=html",
+   "where": "OBJECTID=24128",
+   "pin_m": 0,
+   "acres_approx": 44.8,
+   "grade": "official",
+   "envelope": [
+    -92.48648,
+    44.89137,
+    -92.48119,
+    44.8986
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Kinnickinnic River Fishery Area",
+     "layer": "PACK-US-WI-land-370",
+     "tier": "T-5",
+     "pin_m": null
+    },
+    {
+     "record_name": "Kinnickinnic Wet Prairie",
+     "layer": "PACK-US-WI-preserve-372",
+     "tier": "T-5",
+     "pin_m": null
+    },
+    {
+     "record_name": "Kinnickinnic River Fishery Area",
+     "layer": "PACK-US-WI-land-373",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2/query?geometry=-92.4862%2C44.8977&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-5 WEAK: 'Kinnickinnic Wet Prairie' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WI-trail-24",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-preserve-59",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-WI-land-370",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-WI-park-371",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-preserve-372",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-WI-land-373",
+      "gave": "hit (1 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-WI-forest-388",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "https://dnr.wisconsin.gov/topic/Lands/WildlifeAreas/pleasantvalley",
+      "gave": "page read (fetch); 0 file candidates"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-WI in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "same land also in PACK-US-WI-land-370 'Kinnickinnic River Fishery Area', PACK-US-WI-preserve-372 'Kinnickinnic Wet Prairie': merged, counted once; record 'Kinnickinnic Wet Prairie' (PACK-US-WI-preserve-59); pin inside; about 44.8 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-10194",
+   "area": "US-WI",
+   "park": "Schmit State Wildlife Area",
+   "agency_group": "dnr.wisconsin.gov",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "US-WI",
+   "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0?f=html",
+   "service_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0",
+   "name_field": "PROP_NAME",
+   "agency": "Wisconsin DNR (land, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-5",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 713530,
+   "record_name": "Erin Prairie SHA-WPRA",
+   "layer": "PACK-US-WI-land-370",
+   "record_link": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?where=OBJECTID%3D713530&outFields=%2A&f=html",
+   "where": "OBJECTID=713530",
+   "pin_m": 0,
+   "acres_approx": 148.4,
+   "grade": "official",
+   "envelope": [
+    -92.47746,
+    45.10135,
+    -92.44731,
+    45.12673
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Erin Prairie SHA-WPRA",
+     "layer": "PACK-US-WI-land-373",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?geometry=-92.4573%2C45.1014&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-5 WEAK: 'Erin Prairie SHA-WPRA' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WI-trail-24",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-preserve-59",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-land-370",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-park-371",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-preserve-372",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-land-373",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-forest-388",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-WI in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "same land also in PACK-US-WI-land-373 'Erin Prairie SHA-WPRA': merged, counted once; record 'Erin Prairie SHA-WPRA' (PACK-US-WI-land-370); pin inside; about 148.4 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-10195",
+   "area": "US-WI",
+   "park": "Sette State Wildlife Area",
+   "agency_group": "dnr.wisconsin.gov",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "US-WI",
+   "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0?f=html",
+   "service_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0",
+   "name_field": "PROP_NAME",
+   "agency": "Wisconsin DNR (land, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-5",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 713533,
+   "record_name": "New Richmond SHA-WPRA",
+   "layer": "PACK-US-WI-land-370",
+   "record_link": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?where=OBJECTID%3D713533&outFields=%2A&f=html",
+   "where": "OBJECTID=713533",
+   "pin_m": 0,
+   "acres_approx": 77.2,
+   "grade": "official",
+   "envelope": [
+    -92.51816,
+    45.15865,
+    -92.50789,
+    45.16233
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "New Richmond SHA-WPRA",
+     "layer": "PACK-US-WI-land-373",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?geometry=-92.5082%2C45.1622&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-5 WEAK: 'New Richmond SHA-WPRA' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WI-trail-24",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-preserve-59",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-land-370",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-park-371",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-preserve-372",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-land-373",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-forest-388",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "https://dnr.wisconsin.gov/topic/Lands/WildlifeAreas/NewRichmond",
+      "gave": "page read (fetch); 0 file candidates"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-WI in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "same land also in PACK-US-WI-land-373 'New Richmond SHA-WPRA': merged, counted once; record 'New Richmond SHA-WPRA' (PACK-US-WI-land-370); pin inside; about 77.2 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-10198",
+   "area": "US-WI",
+   "park": "Swinging Gate State Fish and Wildlife Area",
+   "agency_group": "dnr.wisconsin.gov",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "US-WI",
+   "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0?f=html",
+   "service_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0",
+   "name_field": "PROP_NAME",
+   "agency": "Wisconsin DNR (land, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-5",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 712642,
+   "record_name": "Kinnickinnic River Fishery Area",
+   "layer": "PACK-US-WI-land-370",
+   "record_link": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?where=OBJECTID%3D712642&outFields=%2A&f=html",
+   "where": "OBJECTID=712642",
+   "pin_m": 0,
+   "acres_approx": 1209.5,
+   "grade": "official",
+   "envelope": [
+    -92.62355,
+    44.84462,
+    -92.47629,
+    44.96002
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Kinnickinnic River Fishery Area",
+     "layer": "PACK-US-WI-land-373",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?geometry=-92.6137%2C44.8863&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-5 WEAK: 'Kinnickinnic River Fishery Area' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WI-trail-24",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-preserve-59",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-land-370",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-park-371",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-preserve-372",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-land-373",
+      "gave": "hit (2 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-forest-388",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "https://dnr.wisconsin.gov/topic/Lands/WildlifeAreas/swinginggate",
+      "gave": "page read (fetch); 0 file candidates"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-WI in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a wildlife, record is a river",
+    "why_this_record": "same land also in PACK-US-WI-land-373 'Kinnickinnic River Fishery Area': merged, counted once; record 'Kinnickinnic River Fishery Area' (PACK-US-WI-land-370); pin inside; about 1209.5 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-10644",
+   "area": "US-WI",
+   "park": "Love and Strutt Creeks State Fish and Wildlife Area",
+   "agency_group": "dnr.wisconsin.gov",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "US-WI",
+   "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0?f=html",
+   "service_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0",
+   "name_field": "PROP_NAME",
+   "agency": "Wisconsin DNR (land, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-4",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 712780,
+   "record_name": "Rem-Love Creek",
+   "layer": "PACK-US-WI-land-370",
+   "record_link": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?where=OBJECTID%3D712780&outFields=%2A&f=html",
+   "where": "OBJECTID=712780",
+   "pin_m": 0,
+   "acres_approx": 578.9,
+   "grade": "official",
+   "envelope": [
+    -90.00593,
+    43.0133,
+    -89.97495,
+    43.04634
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Rem-Love Creek",
+     "layer": "PACK-US-WI-land-373",
+     "tier": "T-4",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?geometry=-89.9998%2C43.0427&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: one word(s) in common",
+   "size_band": "unknown",
+   "why": "T-4 WEAK: 'Rem-Love Creek' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WI-trail-24",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-preserve-59",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-land-370",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-park-371",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-preserve-372",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-land-373",
+      "gave": "hit (4 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-forest-388",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "https://dnr.wisconsin.gov/topic/Lands/FisheriesAreas/4090lovecreek.html",
+      "gave": "page read (fetch); 0 file candidates"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-WI in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a wildlife, record is a river",
+    "why_this_record": "same land also in PACK-US-WI-land-373 'Rem-Love Creek': merged, counted once; record 'Rem-Love Creek' (PACK-US-WI-land-370); pin inside; about 578.9 acres; Rule G: UNLIKELY (name: one word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: one word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-10650",
+   "area": "US-WI",
+   "park": "Nevin Springs State Fish and Wildlife Area",
+   "agency_group": "dnr.wisconsin.gov",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "US-WI",
+   "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0?f=html",
+   "service_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0",
+   "name_field": "PROP_NAME",
+   "agency": "Wisconsin DNR (land, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-6",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 712679,
+   "record_name": "Nevin Hatchery",
+   "layer": "PACK-US-WI-land-370",
+   "record_link": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?where=OBJECTID%3D712679&outFields=%2A&f=html",
+   "where": "OBJECTID=712679",
+   "pin_m": 0,
+   "acres_approx": 331.4,
+   "grade": "official",
+   "envelope": [
+    -89.42338,
+    43.009,
+    -89.39564,
+    43.02003
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Nevin Hatchery",
+     "layer": "PACK-US-WI-land-373",
+     "tier": "T-6",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?geometry=-89.3961%2C43.0162&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: one word(s) in common",
+   "size_band": "unknown",
+   "why": "T-6 WEAK: 'Nevin Hatchery' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WI-trail-24",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WI-preserve-59",
+      "gave": "no hit (0 at pin, 13 by name)"
+     },
+     {
+      "source": "PACK-US-WI-land-370",
+      "gave": "hit (1 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-WI-park-371",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-WI-preserve-372",
+      "gave": "no hit (0 at pin, 12 by name)"
+     },
+     {
+      "source": "PACK-US-WI-land-373",
+      "gave": "hit (1 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-WI-forest-388",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 10 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 6 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 21 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 19 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "https://dnr.wisconsin.gov/topic/Lands/FisheriesAreas/1750nevin",
+      "gave": "page read (fetch); 0 file candidates"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-WI in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "same land also in PACK-US-WI-land-373 'Nevin Hatchery': merged, counted once; record 'Nevin Hatchery' (PACK-US-WI-land-370); pin inside; about 331.4 acres; Rule G: UNLIKELY (name: one word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: one word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
    "ref": "CA-4657",
    "area": "CA-PE",
    "park": "St. Peters Harbour National Historic Site",
@@ -368649,6 +372584,1515 @@
     "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
     "step_reached": "L5",
     "date": "2026-11-06"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-12315",
+   "area": "US-WA",
+   "park": "Dragoon Creek State Recreation Site",
+   "agency_group": "wadnr.maps.arcgis.com",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "US-WA",
+   "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6?f=html",
+   "service_url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6",
+   "name_field": "PARCEL_LABEL_NM",
+   "agency": "Washington State Department of Natural Resources (preserve, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-5",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 3549292,
+   "record_name": "",
+   "layer": "PACK-US-WA-preserve-365",
+   "record_link": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6/query?where=OBJECTID%3D3549292&outFields=%2A&f=html",
+   "where": "OBJECTID=3549292",
+   "pin_m": 0,
+   "acres_approx": 159.9,
+   "grade": "official",
+   "envelope": [
+    -117.45434,
+    47.88546,
+    -117.43279,
+    47.88918
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6/query?geometry=-117.443%2C47.8884&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-5 WEAK: '' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WA-land-19",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Trails-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-WA-park-363",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-364",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-preserve-365",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-366",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-367",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-368",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-369",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-Trails_in_King_County-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-WA-trail-Generalized_Regional_Trails_for_Online_P-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Motorized_Trails-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Non_Motorized_Trails-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-475",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-OR-land-323",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-WA in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record '' (PACK-US-WA-preserve-365); pin inside; about 159.9 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-12316",
+   "area": "US-WA",
+   "park": "Sherry Creek State Recreation Site",
+   "agency_group": "wadnr.maps.arcgis.com",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "US-WA",
+   "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6?f=html",
+   "service_url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6",
+   "name_field": "PARCEL_LABEL_NM",
+   "agency": "Washington State Department of Natural Resources (preserve, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-5",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 3524911,
+   "record_name": "",
+   "layer": "PACK-US-WA-preserve-365",
+   "record_link": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6/query?where=OBJECTID%3D3524911&outFields=%2A&f=html",
+   "where": "OBJECTID=3524911",
+   "pin_m": 0,
+   "acres_approx": 224.4,
+   "grade": "official",
+   "envelope": [
+    -117.55826,
+    48.58598,
+    -117.54402,
+    48.60052
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/MapServer/6/query?geometry=-117.546%2C48.6&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-5 WEAK: '' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WA-land-19",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Trails-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-WA-park-363",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-364",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-preserve-365",
+      "gave": "hit (3 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-366",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-367",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-368",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-369",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-Trails_in_King_County-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-WA-trail-Generalized_Regional_Trails_for_Online_P-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Motorized_Trails-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Non_Motorized_Trails-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-475",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-OR-land-323",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-WA in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record '' (PACK-US-WA-preserve-365); pin inside; about 224.4 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-7439",
+   "area": "US-AR",
+   "park": "Bois D'Arc Lake State Recreation Area",
+   "agency_group": "agfc.com",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "US-AR",
+   "url": "https://gisec2.agfc.com/arcgis/rest/services/APP_AGFC/MapServer/10?f=html",
+   "service_url": "https://gisec2.agfc.com/arcgis/rest/services/APP_AGFC/MapServer/10",
+   "name_field": "fname",
+   "agency": "Arkansas Game and Fish Commission WMAs",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-4",
+   "band": "WEAK",
+   "step": "L0",
+   "record": null,
+   "record_name": "Dr Lester Sitzes, III Bois D'Arc WMA",
+   "layer": "PACK-US-AR-land-184",
+   "record_link": "https://gisec2.agfc.com/arcgis/rest/services/APP_AGFC/MapServer/10/query?geometry=-93.695%2C33.5531&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "where": "id=None",
+   "pin_m": 0,
+   "acres_approx": 13484.6,
+   "grade": "official",
+   "envelope": [
+    -93.78491,
+    33.52128,
+    -93.67048,
+    33.63091
+   ],
+   "rule": "R-G13",
+   "others": [],
+   "source_url": "https://gisec2.agfc.com/arcgis/rest/services/APP_AGFC/MapServer/10/query?geometry=-93.695%2C33.5531&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "other kind of place (state_rec_area vs wma)",
+   "size_band": "unknown",
+   "why": "T-4 WEAK: 'Dr Lester Sitzes, III Bois D'Arc WMA' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-AR-trail-0",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-AR-trail-3",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-AR-trail-32",
+      "gave": "no hit (2 at pin, 7 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-33",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-AR-trail-34",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-AR-trail-36",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-42",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-43",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-AR-trail-63",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-land-184",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AR-preserve-220",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-park-221",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-land-222",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-AZ-trail-22",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-AR in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "PIN OFF: 33.566976,-93.716099, 2.5 km, PACK-US-AR-wma-489; WRONG KIND?: park is a lake, record is a wildlife",
+    "why_this_record": "record 'Dr Lester Sitzes, III Bois D'Arc WMA' (PACK-US-AR-land-184); pin inside; about 13484.6 acres; Rule G: UNLIKELY (other kind of place (state_rec_area vs wma)); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): other kind of place (state_rec_area vs wma)",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-0618",
+   "area": "CA-SK",
+   "park": "Parr Hill Lake Recreation Site",
+   "agency_group": "tourismsaskatchewan.com",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "CA-SK",
+   "url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4?f=html",
+   "service_url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4",
+   "name_field": "PARKNM",
+   "agency": "Government of Saskatchewan, Ministry of Parks, Culture and Sport (gis.saskatchewan.ca)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-5",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 3408,
+   "record_name": "Porcupine Hills Provincial Park",
+   "layer": "PACK-CA-SK-park-413",
+   "record_link": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4/query?where=OBJECTID%3D3408&outFields=%2A&f=html",
+   "where": "OBJECTID=3408",
+   "pin_m": 0,
+   "acres_approx": 73730.3,
+   "grade": "official",
+   "envelope": [
+    -102.55868,
+    52.34006,
+    -101.63778,
+    52.55093
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "",
+     "layer": "PACK-CA-SK-park-449",
+     "tier": "T-5",
+     "pin_m": null
+    },
+    {
+     "record_name": "",
+     "layer": "PACK-CA-SK-park-453",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4/query?geometry=-102.188%2C52.3816&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-5 WEAK: 'Porcupine Hills Provincial Park' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-SK-land-69",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-trail-74",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-CA-SK-park-413",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-449",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-450",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-451",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-452",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-453",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-454",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-SK in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a lake, record is a park",
+    "why_this_record": "same land also in PACK-CA-SK-park-449 '', PACK-CA-SK-park-453 '': merged, counted once; record 'Porcupine Hills Provincial Park' (PACK-CA-SK-park-413); pin inside; about 73730.3 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-2680",
+   "area": "CA-SK",
+   "park": "Hackett Lake Recreation Site",
+   "agency_group": "tourismsaskatchewan.com",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "CA-SK",
+   "url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4?f=html",
+   "service_url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4",
+   "name_field": "PARKNM",
+   "agency": "Government of Saskatchewan, Ministry of Parks, Culture and Sport (gis.saskatchewan.ca)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-4",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 3318,
+   "record_name": "Hackett Lake Recreation Site",
+   "layer": "PACK-CA-SK-park-413",
+   "record_link": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4/query?where=OBJECTID%3D3318&outFields=%2A&f=html",
+   "where": "OBJECTID=3318",
+   "pin_m": 80412,
+   "acres_approx": 157.8,
+   "grade": "official",
+   "envelope": [
+    -106.94096,
+    54.10005,
+    -106.92862,
+    54.1127
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4/query?where=PARKNM%20LIKE%20%27%25Hackett%25%27&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=0.0002&geometryPrecision=6&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "pin not inside nor within 150 m with a name match (distance check)",
+   "size_band": "unknown",
+   "why": "T-4 WEAK: 'Hackett Lake Recreation Site' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-SK-land-69",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-trail-74",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-CA-SK-park-413",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-449",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-450",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-451",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-452",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-453",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-454",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-SK in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Hackett Lake Recreation Site' (PACK-CA-SK-park-413); pin 80412 m from the edge; about 157.8 acres; Rule G: UNLIKELY (pin not inside nor within 150 m with a name match (distance check)); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-2743",
+   "area": "CA-SK",
+   "park": "McBride Lake Recreation Site",
+   "agency_group": "tourismsaskatchewan.com",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "CA-SK",
+   "url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4?f=html",
+   "service_url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4",
+   "name_field": "PARKNM",
+   "agency": "Government of Saskatchewan, Ministry of Parks, Culture and Sport (gis.saskatchewan.ca)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-5",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 3408,
+   "record_name": "Porcupine Hills Provincial Park",
+   "layer": "PACK-CA-SK-park-413",
+   "record_link": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4/query?where=OBJECTID%3D3408&outFields=%2A&f=html",
+   "where": "OBJECTID=3408",
+   "pin_m": 0,
+   "acres_approx": 73730.3,
+   "grade": "official",
+   "envelope": [
+    -102.55868,
+    52.34006,
+    -101.63778,
+    52.55093
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "",
+     "layer": "PACK-CA-SK-park-449",
+     "tier": "T-5",
+     "pin_m": null
+    },
+    {
+     "record_name": "",
+     "layer": "PACK-CA-SK-park-453",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4/query?geometry=-102.379%2C52.4582&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-5 WEAK: 'Porcupine Hills Provincial Park' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-SK-land-69",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-trail-74",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-CA-SK-park-413",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-449",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-450",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-451",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-452",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-453",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-454",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-SK in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a lake, record is a park",
+    "why_this_record": "same land also in PACK-CA-SK-park-449 '', PACK-CA-SK-park-453 '': merged, counted once; record 'Porcupine Hills Provincial Park' (PACK-CA-SK-park-413); pin inside; about 73730.3 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-2914",
+   "area": "CA-SK",
+   "park": "Wollaston Lake (Hidden Bay) Recreation Site",
+   "agency_group": "tourismsaskatchewan.com",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "CA-SK",
+   "url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4?f=html",
+   "service_url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4",
+   "name_field": "PARKNM",
+   "agency": "Government of Saskatchewan, Ministry of Parks, Culture and Sport (gis.saskatchewan.ca)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-4",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 3401,
+   "record_name": "Wollaston Lake (Hidden Bay) Recreation Site",
+   "layer": "PACK-CA-SK-park-413",
+   "record_link": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4/query?where=OBJECTID%3D3401&outFields=%2A&f=html",
+   "where": "OBJECTID=3401",
+   "pin_m": 36476,
+   "acres_approx": 63.2,
+   "grade": "official",
+   "envelope": [
+    -103.79307,
+    58.09307,
+    -103.78651,
+    58.10491
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4/query?where=PARKNM%20LIKE%20%27%25Wollaston%25%27&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=0.0002&geometryPrecision=6&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "pin not inside nor within 150 m with a name match (distance check)",
+   "size_band": "unknown",
+   "why": "T-4 WEAK: 'Wollaston Lake (Hidden Bay) Recreation Site' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-SK-land-69",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-trail-74",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-CA-SK-park-413",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-449",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-450",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-451",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-452",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-453",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-454",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-SK in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Wollaston Lake (Hidden Bay) Recreation Site' (PACK-CA-SK-park-413); pin 36476 m from the edge; about 63.2 acres; Rule G: UNLIKELY (pin not inside nor within 150 m with a name match (distance check)); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-6127",
+   "area": "CA-SK",
+   "park": "Nut Point Campground Provincial Park",
+   "agency_group": "tourismsaskatchewan.com",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "CA-SK",
+   "url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4?f=html",
+   "service_url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4",
+   "name_field": "PARKNM",
+   "agency": "Government of Saskatchewan, Ministry of Parks, Culture and Sport (gis.saskatchewan.ca)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-5",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 3330,
+   "record_name": "Lac La Ronge Provincial Park",
+   "layer": "PACK-CA-SK-park-413",
+   "record_link": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4/query?where=OBJECTID%3D3330&outFields=%2A&f=html",
+   "where": "OBJECTID=3330",
+   "pin_m": 0,
+   "acres_approx": 789338.9,
+   "grade": "official",
+   "envelope": [
+    -105.37173,
+    54.88636,
+    -104.16657,
+    55.65577
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "",
+     "layer": "PACK-CA-SK-park-449",
+     "tier": "T-5",
+     "pin_m": null
+    },
+    {
+     "record_name": "",
+     "layer": "PACK-CA-SK-park-453",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4/query?geometry=-105.248%2C55.1159&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-5 WEAK: 'Lac La Ronge Provincial Park' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-SK-land-69",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-trail-74",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-CA-SK-park-413",
+      "gave": "hit (1 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-449",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-450",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-451",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-452",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-453",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-SK-park-454",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-SK in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "same land also in PACK-CA-SK-park-449 '', PACK-CA-SK-park-453 '': merged, counted once; record 'Lac La Ronge Provincial Park' (PACK-CA-SK-park-413); pin inside; about 789338.9 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-07"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-0853",
+   "area": "CA-PE",
+   "park": "Belmont Provincial Park",
+   "agency_group": "tourismpei.com",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "evidence",
+   "st": "CA-PE",
+   "url": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0?f=html",
+   "service_url": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0",
+   "name_field": "PARK",
+   "agency": "Government of Prince Edward Island, Dept of Environment, Energy and Climate Action (GeoLinc, gis.princeedwardisland.ca)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-5",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 26,
+   "record_name": "PARK",
+   "layer": "PACK-CA-PE-park-414",
+   "record_link": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0/query?where=OBJECTID%3D26&outFields=%2A&f=html",
+   "where": "OBJECTID=26",
+   "pin_m": 0,
+   "acres_approx": 19.6,
+   "grade": "official",
+   "envelope": [
+    -63.83416,
+    46.51376,
+    -63.82901,
+    46.51813
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://gis.princeedwardisland.ca/server/rest/services/GeoLinc_Provincial_Parks/MapServer/0/query?geometry=-63.8316%2C46.516&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-5 WEAK: 'PARK' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-PE-preserve-89",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-CA-PE-park-414",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-PE-wildlife-415",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-PE in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "error (HTTP robots-unreadable)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'PARK' (PACK-CA-PE-park-414); pin inside; about 19.6 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-07"
    },
    "pass": 1
   },
