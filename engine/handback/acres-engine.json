@@ -219,6 +219,24 @@
    "Notes": "computed from the official outline polygon (approx); layer https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0; read 2026-11-07"
   },
   {
+   "Park number (if matched)": "US-7980",
+   "Park name (as the agency writes it)": "Fort Baldwin Historic Site",
+   "Size": 7,
+   "Unit": "acres",
+   "Agency": "National Register of Historic Places Polygons",
+   "Source page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D400828&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "CA-0831",
+   "Park name (as the agency writes it)": "Inuujaarvik Territorial Park",
+   "Size": 3,
+   "Unit": "acres",
+   "Agency": "Crown-Indigenous Relations and Northern Affairs Canada (Nunavut Map Viewer); SOURCE=GN-ENV (Government of Nunavut Environment)",
+   "Source page": "https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21/query?where=OBJECTID%3D648&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21; read 2026-11-05"
+  },
+  {
    "Park number (if matched)": "CA-4794",
    "Park name (as the agency writes it)": "Kootenai House",
    "Size": 0,
@@ -712,15 +730,6 @@
    "Agency": "IDNR Properties",
    "Source page": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11/query?where=OBJECTID%3D272&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11; read 2026-11-05"
-  },
-  {
-   "Park number (if matched)": "US-7980",
-   "Park name (as the agency writes it)": "Fort Baldwin Historic Site",
-   "Size": 7,
-   "Unit": "acres",
-   "Agency": "National Register of Historic Places Polygons",
-   "Source page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D400828&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-05"
   },
   {
    "Park number (if matched)": "CA-2219",
@@ -1389,15 +1398,6 @@
    "Notes": "computed from the official outline polygon (approx); layer https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11; read 2026-11-05"
   },
   {
-   "Park number (if matched)": "CA-0831",
-   "Park name (as the agency writes it)": "Inuujaarvik Territorial Park",
-   "Size": 3,
-   "Unit": "acres",
-   "Agency": "Crown-Indigenous Relations and Northern Affairs Canada (Nunavut Map Viewer); SOURCE=GN-ENV (Government of Nunavut Environment)",
-   "Source page": "https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21/query?where=OBJECTID%3D648&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21; read 2026-11-05"
-  },
-  {
    "Park number (if matched)": "US-0042",
    "Park name (as the agency writes it)": "Fort Gaines",
    "Size": 32,
@@ -1577,6 +1577,16 @@
    "Kind": "GIS layer",
    "Example URL": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0",
    "# times used": 2,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "services.aadnc-aandc.gc.ca",
+   "Agency/area": "Crown-Indigenous Relations and Northern Affairs Canada (Nunavut Map Viewer); SOURCE=GN-ENV (Government of Nunavut Environment)",
+   "Kind": "GIS layer",
+   "Example URL": "https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21",
+   "# times used": 1,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -1787,16 +1797,6 @@
    "Kind": "GIS layer",
    "Example URL": "https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0",
    "# times used": 3,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
-   "Host": "services.aadnc-aandc.gc.ca",
-   "Agency/area": "Crown-Indigenous Relations and Northern Affairs Canada (Nunavut Map Viewer); SOURCE=GN-ENV (Government of Nunavut Environment)",
-   "Kind": "GIS layer",
-   "Example URL": "https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21",
-   "# times used": 1,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
