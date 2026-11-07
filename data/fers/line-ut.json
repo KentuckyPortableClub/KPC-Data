@@ -4,27 +4,27 @@
  "states": [
   "US-UT"
  ],
- "since": "2026-11-06",
- "date": "2026-11-06 12:12 UTC",
+ "since": "2026-11-07",
+ "date": "2026-11-07 03:21 UTC",
  "verdict": "STOPPED",
  "why": [
-  "missing check: 626 of 3172 expected pairs were never looked at (20%; 2171 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (560); <park>: not in this run (another state, retired, or no POTA pin) (41); <park>: no official boundary; <park>: not in this run (another state, retired, or no POTA  (11)",
+  "missing check: 610 of 3165 expected pairs were never looked at (19%; 2171 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (544); <park>: not in this run (another state, retired, or no POTA pin) (41); <park>: no official boundary; <park>: not in this run (another state, retired, or no POTA  (11)",
   "pass1 stopped for time: not every pair was looked at (run the fetcher again with more minutes)",
-  "pass 1 tested 1612 of 2110 pairs whose boxes touch"
+  "pass 1 tested 1660 of 2110 pairs whose boxes touch"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 67,
-  "DROPPED": 308,
-  "NEVER LOOKED AT": 2797
+  "FOUND": 68,
+  "DROPPED": 316,
+  "NEVER LOOKED AT": 2781
  },
  "never_looked_at": {
-  "counted": 626,
+  "counted": 610,
   "no_official_outline": 2171,
-  "expected": 3172,
+  "expected": 3165,
   "limit": "10%",
   "by_reason": {
-   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 560,
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 544,
    "<park>: not in this run (another state, retired, or no POTA pin)": 41,
    "<park>: no official boundary; <park>: not in this run (another state, retired, or no POTA ": 11,
    "<park>: not in this run (another state, retired, or no POTA pin); <park>: no official boun": 10,
@@ -34,24 +34,24 @@
  },
  "report": {
   "pass1": {
-   "date": "2026-11-06",
-   "pairs tested": 1612,
+   "date": "2026-11-07",
+   "pairs tested": 1660,
    "pairs whose boxes touch": 2110,
    "stopped for time": true
   },
   "pass2": {
-   "agree with the pass before": 605,
-   "date": "2026-11-06",
-   "pairs tested": 265
+   "agree with the pass before": 620,
+   "date": "2026-11-07",
+   "pairs tested": 273
   },
   "pass3": {
-   "agree with the pass before": 300,
-   "date": "2026-11-06",
-   "pairs tested": 242
+   "agree with the pass before": 306,
+   "date": "2026-11-07",
+   "pairs tested": 249
   },
   "pass5": {
    "checked": 51,
-   "date": "2026-11-06",
+   "date": "2026-11-07",
    "pairs tested": 0,
    "still not checked": 0
   }
@@ -60,20 +60,20 @@
   "US-UT": "data/fers/US-UT.json"
  },
  "US-UT": {
-  "rows": 744,
+  "rows": 761,
   "live": 118,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "the agency ownership map did not answer": 36,
+   "the agency ownership map did not answer": 38,
    "the official outline of Zion Scenic Byway National Parkway c": 3,
    "no public owner on the ownership map": 3,
    "the official outline of Scenic Byway 143 - Utah's Patchwork": 5,
    "the official outline of Logan Canyon National Scenic Byway N": 1,
    "one record covers two parks": 1
   },
-  "dropped": 404,
-  "merged": 173
+  "dropped": 415,
+  "merged": 177
  },
  "states_ready": [],
  "states_held": [
