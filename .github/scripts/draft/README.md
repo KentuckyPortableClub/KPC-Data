@@ -124,3 +124,16 @@ Status values:
 - Canada uses NRN roads only (no CanVec hydro yet). Prefixes other than US/CA give NO FIT.
 - Multi-unit maps (e.g. WMA units) need `boundary_rgb`. Check "kept N shapes" flags by hand.
 - Runtime is about 10–30 s per map, plus about 5 web requests per new park.
+
+## Nov 7 gates (held, not flagged)
+A picture trace is now held as **NEEDS A PERSON** (no outline written) when any of these is true; every reason is listed in `why` and `flags`
+(`kpc_trace_limits.hold_reasons`, in this order):
+1. **GeoPDF placement not trusted** (`geopdf_plausible`): residual over 100 m or 2% of the page's long side, scale outside 0.05-500 m/px, x/y scale skew over 15%, a malformed affine, a sheet over 50,000 km2, or the POTA pin outside the page (`pin off page`).
+2. **Pin outside**: the POTA pin is more than 1,000 m from the traced outline. The pin is never moved. The text says whether the georeference looked good (the pin may be wrong) or not (placement doubtful).
+3. **Clipped**: 3% or more of the outline runs along the picture frame (the park continues off the sheet). Under 3% stays a flag.
+4. **Size**: known acres decide as before (0.2x-5x). With **no** known acres the park type's ceiling decides (`TYPE_CEILING_ACRES`; unknown type = 60,000 ac), and on a GeoPDF a trace covering over 60% of the mapped page.
+Trail traces over 400 km (120 km for other lines) are held too. The park type comes from parkinfo (`kpc_picture_prep.py` / `kpc_trace_prep.py` copy it into each row as `type`).
+Parcel tracer: the 0.2x-2x check is unchanged; new holds are a seed parcel alone over `GROW_CAP` x the known size, and no known size with the trace over the type's ceiling.
+The ceilings are sanity bounds, not park sizes: change a line in `kpc_trace_limits.py` if a real park trips one. Report columns added: `acres_traced, acres_known, ceiling_acres, edge_share, pin_dist_m`.
+`KPC_NO_NET=1` (set by `kpc_full_suite.py` for every child process): a real HTTP request raises instead of opening a socket.
+Tests: `tests/test_trace_limits_nov7.py` (pure Python, fixtures in `tests/fixtures/tracer_nov7/`); the suite also runs the three tracer selftests listed in `NESTED_SELFTESTS`.

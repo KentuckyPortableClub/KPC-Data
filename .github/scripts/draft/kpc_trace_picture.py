@@ -119,7 +119,8 @@ DEFAULT_UA = ("KPC-Picture-Map-Tracer/%s (Kentucky POTA club park-boundary proje
 
 REPORT_FIELDS = ["ref", "status", "fit_m", "n_points", "why",
                  "fit_loo_m", "model", "n_search", "decoy_best", "search_tol_m", "flags", "source_url", "page", "date",
-                 "source_type", "source_org", "notes"]
+                 "source_type", "source_org", "notes",
+                 "acres_traced", "acres_known", "ceiling_acres", "edge_share", "pin_dist_m"]   # Nov 7: every gate's input in the report
 
 
 def log(msg: str) -> None:
@@ -177,6 +178,10 @@ class PoliteHttp:
                  timeout: float = 90.0):
         self.s = requests.Session()
         self.s.headers.update({"User-Agent": user_agent, "Accept": "application/json"})
+        if os.environ.get("KPC_NO_NET") == "1":      # Nov 7: the test gate sets this; a real request raises (mocked tests replace s.get)
+            def _no_net(*a, **k):
+                raise RuntimeError("network disabled (KPC_NO_NET=1)")
+            self.s.get = _no_net
         self.token = (user_agent.split("/", 1)[0].strip() or "*").lower()
         self.min_interval = min_interval
         self.retries = retries
@@ -1226,10 +1231,17 @@ def process_one(ref, row, base: Path, out: Path, pins, http, args):
     # ---- Nov 2 (review): a GeoPDF page carries its own coordinates (kpc_picture_geo.py wrote row['geo']): place the outline by
     # them and skip the basemap matching. Still Approximate (R-G9); the size and pin checks below still run.
     GEO = (row.get("geo") or {}) if os.environ.get("KPC_TRACE_GEOPDF", "1") != "0" else {}
+    geo_why, geo_info, geo_resid_ok = [], {}, None      # Nov 7: independent GeoPDF plausibility (residual, scale, skew, pin on page, sheet size)
     if GEO.get("affine"):
         proj = LocalProj(lat, lon)
         acres = float(row["acres"]) if row.get("acres") not in (None, "") else None
         _A = [float(x) for x in GEO["affine"]]
+        if TL is not None:
+            try:
+                _gok, geo_why, geo_info = TL.geopdf_plausible(_A, w, h, GEO.get("fit_err_m"), (lat, lon))
+            except Exception as e:  # noqa: BLE001
+                geo_why, geo_info = [f"geopdf scale: the georeference could not be checked ({type(e).__name__})"], {}
+            geo_resid_ok = not any(x.startswith("geopdf residual") for x in geo_why)
 
         def mdl(pts, _w=w, _h=h, _A=_A, _proj=proj):
             pts = np.asarray(pts, float)
@@ -1424,20 +1436,37 @@ def process_one(ref, row, base: Path, out: Path, pins, http, args):
         if not geom.is_simple:
             flags.append("route line self-crosses")
 
-    # ---- step 5: sanity checks (flag only, never move the pin)
+    # ---- step 5: sanity checks. Nov 7: pin outside, clipped at the picture edge, an implausible GeoPDF placement and an oversize trace are
+    # HELD as NEEDS A PERSON (no outline written), not just flagged. The pin is never moved. Reasons come from kpc_trace_limits.hold_reasons.
     pin = Point(0, 0)
     dpin = geom.distance(pin)
     if dpin > PIN_MAX_OUTSIDE_M:
         flags.append(f"POTA pin is {dpin:.0f} m outside the traced {'outline' if bnd['kind'] == 'area' else 'line'}")
     area_acres = None
     acres_held = None
+    edge_sh = None
     if bnd["kind"] == "area":
         area_acres = geom.area / 4046.86
-        if acres and not (AREA_RATIO_RANGE[0] * acres <= area_acres <= AREA_RATIO_RANGE[1] * acres):
-            # Nov 6: hold back (would catch US-5460 Sun Pass at 25M ac). No outline written.
-            acres_held = (f"traced area {area_acres:.0f} ac vs known {acres:.0f} ac outside "
-                          f"{AREA_RATIO_RANGE[0]:g}x-{AREA_RATIO_RANGE[1]:g}x")
-            flags.append(acres_held)
+    if TL is not None:
+        if bnd["kind"] == "area" and bnd.get("touches_edge"):
+            edge_sh = TL.edge_share(bpts, w, h)
+        page_share = None
+        if area_acres is not None and geo_info.get("page_km2"):
+            page_share = (area_acres * 4046.86 / 1e6) / geo_info["page_km2"]
+        held_why = TL.hold_reasons(kind=bnd["kind"], geopdf_why=geo_why, pin_dist_m=dpin, pin_max_m=PIN_MAX_OUTSIDE_M, edge=edge_sh,
+                                   traced_acres=area_acres, known_acres=acres, park_type=row.get("type"), page_share=page_share,
+                                   length_km=(geom.length / 1000.0 if bnd["kind"] != "area" else None), geopdf_residual_ok=geo_resid_ok)
+        res.update(acres_traced=round(area_acres, 1) if area_acres is not None else "", acres_known=acres if acres else "",
+                   ceiling_acres=int(TL.ceiling_acres(row.get("type"))), edge_share=round(edge_sh, 3) if edge_sh is not None else "",
+                   pin_dist_m=round(dpin))
+        if held_why:
+            acres_held = "; ".join(held_why)
+            flags.extend(x for x in held_why if x not in flags)
+    elif bnd["kind"] == "area" and acres and not (AREA_RATIO_RANGE[0] * acres <= area_acres <= AREA_RATIO_RANGE[1] * acres):
+        # kpc_trace_limits.py missing: keep the Nov 6 behaviour (hold back when known acres disagree)
+        acres_held = (f"traced area {area_acres:.0f} ac vs known {acres:.0f} ac outside "
+                      f"{AREA_RATIO_RANGE[0]:g}x-{AREA_RATIO_RANGE[1]:g}x")
+        flags.append(acres_held)
     if not geom.is_valid:
         flags.append("geometry still invalid")
 
@@ -1477,7 +1506,10 @@ def process_one(ref, row, base: Path, out: Path, pins, http, args):
     fc = dict(type="FeatureCollection",
               features=[dict(type="Feature", properties=props, geometry=_round_geojson(mapping(geom_ll)))])
     atomic_write(out / f"{sref}.json", json.dumps(fc, indent=1))
-    res.update(status=STATUS_UNOFFICIAL if unoff else "DRAWN", why="fit under 50 m with >= 3 control points" + (("; " + "; ".join(flags)) if flags else ""),
+    _ok_why = ("fit under 50 m with >= 3 control points" if not (GEO.get("affine") and TL is not None) else
+               f"placed by the map's own georeference (residual {res.get('fit_m')} m, "
+               f"{geo_info.get('m_per_px_x', 0):.2f} m/px); checked: pin on page, scale plausible, size within the limit for the park type")
+    res.update(status=STATUS_UNOFFICIAL if unoff else "DRAWN", why=_ok_why + (("; " + "; ".join(flags)) if flags else ""),
                flags="; ".join(flags))
     return res
 
@@ -1568,7 +1600,20 @@ def picture_selftest():
         if not (AREA_RATIO_RANGE == (TL.PICTURE_ACRES_LO, TL.PICTURE_ACRES_HI) or AREA_RATIO_RANGE == (0.2, 5.0)):
             problems.append('AREA_RATIO_RANGE must stay 0.2..5')
     problems += _http_selftest()
+    if TL is not None:      # Nov 7 gates (kpc_trace_limits.hold_reasons): a GeoPDF residual / pin outside / clipped / oversize trace is held
+        if not TL.hold_reasons(geopdf_why=["geopdf residual: 6580 m is over 100 m"], traced_acres=10, park_type="State Park"):
+            problems.append("a bad GeoPDF residual must be held as NEEDS A PERSON")
+        if not TL.hold_reasons(pin_dist_m=27555, traced_acres=142, park_type="State Park"):
+            problems.append("a pin 27 km outside the trace must be held")
+        if not TL.hold_reasons(edge=0.4, traced_acres=100, park_type="State Park"):
+            problems.append("a trace running along the picture edge must be held")
+        if not TL.hold_reasons(traced_acres=25895525.4, park_type="State Forest"):
+            problems.append("a 25.9 M ac trace with no known acres must be held by the ceiling (US-5460)")
+        if TL.hold_reasons(geopdf_why=[], pin_dist_m=0, edge=None, traced_acres=314.6, park_type="Nature Reserve"):
+            problems.append("a valid GeoPDF-sized trace (CA-1248) must not be held")
     src = Path(__file__).read_text(encoding='utf-8')
+    if 'hold_reasons' not in src or 'geopdf_plausible' not in src:
+        problems.append('process_one must call TL.geopdf_plausible and TL.hold_reasons (Nov 7 gates)')
     if 'NEEDS A PERSON' not in src or 'acres_held' not in src:
         problems.append('process_one must hold back as NEEDS A PERSON when acres are outside 0.2x-5x')
     for p_ in problems:

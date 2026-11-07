@@ -1,0 +1,128 @@
+{
+ "about": "Recorded Nov 2 numbers from the v2 handoff samples and the status the Nov 7 gates must give. Only values that are in the zip are used; anything not retained is marked undetermined, not guessed. The CA-5926 parcel row is NOT here: its park type was not retained and Larose Forest is a large real forest, so a hold is not known to be right.",
+ "rows": [
+  {
+   "ref": "US-5460",
+   "type": "State Forest",
+   "traced_acres": 25895525.4,
+   "fit_err_m": 6580.4,
+   "pin_dist_m": 0,
+   "known_acres": null,
+   "expect": "hold",
+   "reasons": [
+    "geopdf residual",
+    "ceiling"
+   ],
+   "note": "scale/page numbers were not retained; residual and ceiling alone hold it"
+  },
+  {
+   "ref": "US-5815",
+   "type": "BLM Recreation Management Area",
+   "traced_acres": 1838297.4,
+   "fit_err_m": 352.0,
+   "pin_dist_m": 0,
+   "known_acres": null,
+   "expect": "hold",
+   "reasons": [
+    "geopdf residual",
+    "ceiling"
+   ]
+  },
+  {
+   "ref": "US-10787",
+   "type": "State Park",
+   "traced_acres": 142.1,
+   "fit_err_m": 0.0,
+   "pin_dist_m": 27555,
+   "known_acres": null,
+   "expect": "hold",
+   "reasons": [
+    "pin outside"
+   ]
+  },
+  {
+   "ref": "CA-1248",
+   "type": "Nature Reserve",
+   "traced_acres": 314.6,
+   "fit_err_m": 0.3,
+   "pin_dist_m": 0,
+   "known_acres": null,
+   "expect": "ok"
+  },
+  {
+   "ref": "CA-5171",
+   "type": "Nature Reserve",
+   "traced_acres": 510.2,
+   "fit_err_m": 0.2,
+   "pin_dist_m": 0,
+   "known_acres": null,
+   "expect": "ok"
+  },
+  {
+   "ref": "US-7519",
+   "type": null,
+   "traced_acres": 34.5,
+   "fit_err_m": 0.4,
+   "pin_dist_m": 0,
+   "known_acres": null,
+   "expect": "ok",
+   "note": "switch off: no known acres, small trace"
+  },
+  {
+   "ref": "US-7519",
+   "type": null,
+   "traced_acres": 34.5,
+   "fit_err_m": 0.4,
+   "pin_dist_m": 0,
+   "known_acres": 320.0,
+   "expect": "hold",
+   "reasons": [
+    "0.2x"
+   ],
+   "note": "KPC_TRACE_ACRES_TRACTS=yes: 0.11x"
+  },
+  {
+   "ref": "US-5265",
+   "type": null,
+   "traced_acres": 69.0,
+   "fit_err_m": 0.6,
+   "pin_dist_m": 0,
+   "known_acres": null,
+   "expect": "ok",
+   "note": "switch off"
+  },
+  {
+   "ref": "US-5265",
+   "type": null,
+   "traced_acres": 69.0,
+   "fit_err_m": 0.6,
+   "pin_dist_m": 0,
+   "known_acres": 1683.4,
+   "expect": "hold",
+   "reasons": [
+    "0.2x"
+   ],
+   "note": "switch on: 0.04x"
+  },
+  {
+   "ref": "US-11145",
+   "type": null,
+   "traced_acres": 163999.1,
+   "fit_err_m": 75.6,
+   "pin_dist_m": 0,
+   "known_acres": null,
+   "expect": "undetermined",
+   "note": "park type and the share of the outline on the frame were not retained; with an unknown type the 60,000 ac default holds it, with a WMA type (150,000) the edge share decides. Coordinator's dry run decides."
+  },
+  {
+   "ref": "US-6048",
+   "type": null,
+   "traced_acres": 94095.1,
+   "fit_err_m": 29.4,
+   "pin_dist_m": 0,
+   "known_acres": null,
+   "expect": "undetermined",
+   "note": "same: unknown type -> default ceiling holds it; WMA type -> only the edge share can"
+  }
+ ]
+}

@@ -8,6 +8,12 @@ import glob, json, re, sys
 
 FED = re.compile(r'Parks Canada|Environment (?:and Climate Change )?Canada|Canadian Wildlife Service|National Defence|Fisheries and Oceans|Agriculture and Agri-Food|Transport Canada|Natural Resources Canada|National Capital Commission|Public Services and Procurement|Crown-Indigenous|Indigenous Services Canada|Parcs Canada|Environnement', re.I)
 LAY = re.compile(r'^https?://\S+?/(?:MapServer|FeatureServer)/\d+', re.I)
+types = {}   # Nov 7: POTA park type (parkinfo row[2]) for the tracer's size ceiling when the park has no known acres
+for _f in glob.glob('data/parkinfo/US-*.json') + glob.glob('data/parkinfo/CA.json'):
+    try:
+        for _r, _a in ((json.load(open(_f, encoding='utf-8')) or {}).get('parks') or {}).items():
+            if len(_a) > 2 and _a[2]: types[_r] = _a[2]
+    except Exception: pass  # noqa: BLE001
 out = []
 for f in sorted(glob.glob('data/intake/_in/hardlook/hardlook-*.json')):
     try: rows = (json.load(open(f, encoding='utf-8')) or {}).get('rows') or {}
@@ -24,6 +30,7 @@ for f in sorted(glob.glob('data/intake/_in/hardlook/hardlook-*.json')):
         fld = re.split(r'[\s/,;(]', str(v.get('field') or '').strip())[0]
         st = str(v.get('st') or '')
         out.append({'ref': ref, 'name': v.get('name'), 'state_or_prov': f'{ref[:2]}-{st}' if st else ref[:2], 'lat': lat, 'lon': lon,
+                    **({'type': types[ref]} if types.get(ref) else {}),
                     'agency_owner_names': list(dict.fromkeys(owners)), **({'parcel_layer_url': m.group(0)} if m else {'owner_source': 'dfrp'}),
                     **({'owner_field': fld} if re.search(r'own|name|prop', fld, re.I) else {}),
                     'club_source': f"Hard Look ({v.get('_file') or f.split('/')[-1]}): {str(v.get('record') or '')[:200]}"})

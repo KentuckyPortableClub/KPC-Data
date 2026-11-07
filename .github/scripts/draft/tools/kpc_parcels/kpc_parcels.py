@@ -40,6 +40,11 @@ BANNED_URL = re.compile(r'google\.[a-z.]+/maps|/maps/d/|protectedplanet|wdpa|'
 from urllib.parse import urljoin as _polite_urljoin
 
 
+def _no_net(*a, **k):
+    """KPC_NO_NET=1 (set by the test gate): any real request raises instead of touching a socket. Mocked tests replace _raw / _one / the session."""
+    raise RuntimeError('network disabled (KPC_NO_NET=1)')
+
+
 def banned(url):
     """True for the sources the club never uses (KPC rules 1 + handoff Part A.6)."""
     h = (urlparse(url).hostname or '').lower()
@@ -148,6 +153,7 @@ class Polite:
         self.stats = {'requests': 0, 'cache_hits': 0, 'robots_refused': 0, 'rested': 0, 'banned': 0, 'errors': 0, 'blocked': 0}
         self.log = log or (lambda *a: None)
         self.s = requests.Session()
+        if os.environ.get('KPC_NO_NET') == '1': self.s.request = _no_net
         if cache:
             os.makedirs(cache, exist_ok=True)
 
@@ -463,6 +469,20 @@ def polite_selftest():
         time.sleep = real_sleep
     if len(slept) != 3 or min(slept[:2]) < 59 or slept[2] < 89:
         problems.append(f'ArcGIS Hub must wait >= 60 s and a 90 s Crawl-delay must be honoured: {slept}')
+    # KPC_NO_NET=1: a real request raises, no socket is opened
+    old = os.environ.get('KPC_NO_NET')
+    os.environ['KPC_NO_NET'] = '1'
+    try:
+        w9 = Polite(cache=None, gap=1.0)
+        w9.gap = 0
+        try:
+            w9._one('https://no-net.example.invalid/x')
+            problems.append('KPC_NO_NET=1 must stop a real request')
+        except RuntimeError:
+            pass
+    finally:
+        if old is None: os.environ.pop('KPC_NO_NET', None)
+        else: os.environ['KPC_NO_NET'] = old
     return problems
 # ---------------------------------------------------------------- end of polite web reader
 

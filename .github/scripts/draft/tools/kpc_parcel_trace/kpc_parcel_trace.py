@@ -1060,6 +1060,13 @@ def trace(pk, web, aliases, read_date, deadline, max_km=10.0, log=print, outline
             held.append(f'size check failed: {acres} ac is {r:.2f}x the known {ka:g} ac (allowed {rng})')
     else:
         why.append(ka_src)
+    if TL is not None:      # Nov 7: seed over the cap on its own; no known size = the park type's ceiling (held, never DRAWN)
+        _seed_ac = parcels[seed]['g'].area / ACRES_M2 if seed in parcels else None
+        _new = TL.parcel_new_holds(acres, ka, pk.get('type'), _seed_ac, GROW_CAP)
+        if _new:
+            check = check if (check and check != 'ok') else 'over ceiling / seed cap'
+            held.extend(_new)
+            why.append('size: ' + '; '.join(_new))
     info['acres_check'] = check
     if held:      # club decision, Oct 31: held back, no outline written
         return HELD, 'held back, no outline written: ' + '; '.join(held) + ' | ' + '; '.join(why), None, info
