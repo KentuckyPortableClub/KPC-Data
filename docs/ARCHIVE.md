@@ -8,7 +8,7 @@ KPC-Data keeps what the site and the bots read every day. Bulk history moves to 
 |---|---|---|---|
 | `previous` | `data/waiting/previous/` | yes (rotation: older than 14 days) | undo copies of replaced live files |
 | `archive` | `archive/` | yes | old dated batches |
-| `fers-review` | `data/fers/review/` | yes | per-run review dumps, no reader |
+| `fers-review` | `data/fers/review/` | no | per-run review dumps; OFF because kpc-fers-lines.yml's combine step reads them |
 | `sources-review` | `data/sources/review/` | **no** (name it in `--groups`) | writer/readers not confirmed |
 
 **Never moves:** anything under `data/waiting/` except `previous/` (held items wait for grading and approval), the key folders

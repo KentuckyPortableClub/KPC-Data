@@ -42,6 +42,7 @@ for rel in ('data/waiting/previous/data/fers/US-CO.json', 'archive/2026-10/x.jso
     check(not M.protected(rel), f'movable: {rel}')
 check(all(not M.protected(f + '/x') for g in M.GROUPS.values() for f in g[2]), 'no group folder is a protected path')
 check(not M.GROUPS['sources-review'][0], 'sources-review (writer unknown) is OFF unless named')
+check(not M.GROUPS['fers-review'][0], 'fers-review is OFF by default (kpc-fers-lines.yml combine step reads data/fers/review/*.json)')
 
 with tempfile.TemporaryDirectory() as td:
     D, A = pathlib.Path(td, 'data'), pathlib.Path(td, 'archive')
@@ -51,7 +52,7 @@ with tempfile.TemporaryDirectory() as td:
         'data/waiting/in/data/fers/US-AK.json.gz': b'HELD' * 700,          # must never move
         'data/waiting/approved.json': b'{"approved":1}',                     # must never move
         'archive/2026-10/world-sources-batch86.json': b'{"b":86}' * 900,
-        'data/fers/review/southeast.json': b'{"r":1}' * 800,
+        'archive/2026-10/southeast.json': b'{"r":1}' * 800,
         'data/fers/US-KY.json': b'{"live":1}' * 100,                         # live 2-fer data: stays
         'data/sources/review/no-boundary.csv': b'a,b\n' * 500,               # off by default
         'data/us-key/tracts/US-MA.json': b'{"t":1}' * 300,                   # tracts: stay
@@ -86,17 +87,17 @@ with tempfile.TemporaryDirectory() as td:
 
     # ---- delete-verified: a changed archive copy is NOT trusted
     (A / 'fers-note.txt').write_text('x')
-    (A / 'data/fers/review/southeast.json').write_bytes(b'tampered')
+    (A / 'archive/2026-10/southeast.json').write_bytes(b'tampered')
     rc, out = run(['--data', str(D), '--archive', str(A), '--delete-verified'])
     after = tree(D)
-    check((D / 'data/fers/review/southeast.json').exists(), 'delete-verified keeps a file whose archive copy differs')
-    check(not (D / 'data/waiting/previous').exists() and not (D / 'archive').exists(), 'delete-verified removed the verified files and the empty folders')
+    check((D / 'archive/2026-10/southeast.json').exists(), 'delete-verified keeps a file whose archive copy differs')
+    check(not (D / 'data/waiting/previous').exists() and sorted(str(x.relative_to(D)) for x in (D / 'archive').rglob('*') if x.is_file()) == ['archive/2026-10/southeast.json'], 'delete-verified removed the verified files and the empty folders')
     check(run(['--data', str(D), '--archive', str(A), '--verify'])[0] == 1, '--verify catches the tampered archive copy')
-    (A / 'data/fers/review/southeast.json').write_bytes(files['data/fers/review/southeast.json'])
+    (A / 'archive/2026-10/southeast.json').write_bytes(files['archive/2026-10/southeast.json'])
 
     # ---- full apply (idempotent) on the rest
     rc, out = run(['--data', str(D), '--archive', str(A), '--apply', '--source-commit', 'def456'])
-    check(rc == 0 and not (D / 'data/fers/review').exists(), 'apply: finishes the move')
+    check(rc == 0 and not (D / 'archive/2026-10/southeast.json').exists(), 'apply: finishes the move')
     man2 = json.loads((A / 'archive-manifest.json').read_text())
     check(all(r['source_commit'] == 'abc123' for r in man2['files']), 'idempotent: rows that are still right keep their first source commit')
     survivors = tree(D); survivors.pop('data/archive-manifest.json')

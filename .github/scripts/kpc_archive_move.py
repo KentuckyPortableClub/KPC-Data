@@ -24,8 +24,8 @@ GROUPS = {   # name: (default?, confidence, folders, why)
                  'undo copies of files the waiting room replaced; read only by kpc_waiting_room.py undo / undo-bot (falls back to KPC-Archive)'),
     'archive': (True, 'medium', ['archive'],
                 'the club\'s own dated archive folder (archive/2026-10: old batches); no reader found in the code handed over'),
-    'fers-review': (True, 'medium', ['data/fers/review'],
-                    'per-run "needs a human look" dumps; written by kpc-fers-line.yml, no bot reader found (the combined list already lives on tools-out)'),
+    'fers-review': (False, 'medium', ['data/fers/review'],
+                    'per-run "needs a human look" dumps; OFF: kpc-fers-lines.yml (COMBINE_ONLY step, links kpc_fers_review.py) globs data/fers/review/*.json to rebuild the combined list on tools-out'),
     'sources-review': (False, 'low', ['data/sources/review'],
                        'review CSVs (no-boundary, inside-other-land); writer and readers are not in the code handed over: OFF unless named in --groups'),
 }
