@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 443 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 445 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -43,7 +43,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-02 | 5 | data/fers/US-UT.json.gz | HOLD | F-2 candidates 62 -> 104 (over 30% change); F-2 47 new candidate pairs since the live file (over 10% of 62): a person looks at them first, e.g. US-0072+US-6010, US-0558+US-4578, US-0645+US-4575; F-K known 2-fer missing:  |
 | 2026-11-02 | 5 | data/fers/US-WV.json | HOLD | F-2 3 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-0735+US-4556, US-4526+US-4556, US-4526+US-9950 |
 | 2026-11-04 | 3 | data/campinfo/US-AR.json | HOLD | F-I4 1 toll-free reservation numbers kept as a camp phone, e.g. Designated WMA campsites |
-| 2026-11-04 | 3 | data/docs/US-IN.json | HOLD | F-D3 5 of 20 re-tested links dead, e.g. https://www.in.gov/dA/95c9b0b79d/pokagon_trail.pdf?language_id=1 |
+| 2026-11-04 | 3 | data/docs/US-IN.json | HOLD | F-D3 3 of 20 re-tested links dead, e.g. https://www.in.gov/dA/a28b9519be/fo-owen-putnam-trail-map.pdf?language |
 | 2026-11-04 | 3 | data/fers/US-DE.json | HOLD | F-2 7 new candidate pairs since the live file (over 10% of 28): a person looks at them first, e.g. US-0898+US-9881, US-1733+US-9877, US-1743+US-9881 |
 | 2026-11-04 | 3 | data/fers/US-IA.json | HOLD | F-2 3 new candidate pairs since the live file (over 10% of 10): a person looks at them first, e.g. US-11305+US-11323, US-11305+US-2283, US-11305+US-9348 |
 | 2026-11-04 | 3 | data/fers/US-IN.json | HOLD | F-K known 2-fer missing: US-2264 + US-4182; F-K known 2-fer missing: US-4164 + US-5691 |
@@ -105,9 +105,11 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/campinfo/US-OR.json | PASS |  |
 | ? | ? | data/campinfo/US-PA.json | PASS |  |
 | ? | ? | data/campinfo/US-RI.json | PASS |  |
+| ? | ? | data/campinfo/US-SC.json | PASS |  |
 | ? | ? | data/campinfo/US-TX.json | PASS |  |
 | ? | ? | data/campinfo/US-UT.json | PASS |  |
 | ? | ? | data/campinfo/US-VA.json | PASS |  |
+| ? | ? | data/campinfo/US-WA.json | PASS |  |
 | ? | ? | data/campinfo/US-WY.json | PASS |  |
 | ? | ? | data/campstate/US-AK.json | PASS |  |
 | ? | ? | data/campstate/US-AZ.json | PASS |  |
