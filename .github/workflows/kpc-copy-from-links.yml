@@ -80,7 +80,9 @@ jobs:
           # the key bot is not wired yet); chat 2 puts it back after chat 11's YES
           DIRS="data/pota data/canada-bounds data/campfed data/campstate-manual data/nwr"   # Oct 30: data/campstate goes through the waiting room (below)
           FILES="data/northam.json data/canada.json data/parkinfo-web.json data/boundary-score.json data/boundary-report.json data/state-gis-found.json data/access-layers.json data/state-gis.json"
-          for d in $DIRS; do [ -d "links/$d" ] && mkdir -p "kpcdata/$d" && rsync -a --delete "links/$d/" "kpcdata/$d/"; done
+          # Nov 7 audit: data/pota/tiles.json is written HERE by kpc-tile-index.yml (07:46 UTC), not in KPC-Links, so --delete removed it at the
+          # next copy (10:40 UTC) every day and the site found no index for the POTA tiles. Keep it out of the mirror.
+          for d in $DIRS; do [ -d "links/$d" ] && mkdir -p "kpcdata/$d" && rsync -a --delete --exclude='/tiles.json' "links/$d/" "kpcdata/$d/"; done
           for f in $FILES; do [ -f "links/$f" ] && mkdir -p "kpcdata/$(dirname $f)" && cp "links/$f" "kpcdata/$f"; done
           # Oct 29 10:25 PM (chat 2 request, Brandon 10:21 PM 'map key bot isn't hooked into the waiting room yet'): the keys come over into
           # a working copy, then every CHANGED key file goes to data/waiting/in/ (checked: outlines lost, names vs POTA, retired parks,
