@@ -1,10 +1,10 @@
 # Closures super-bot: review (2026-11-07; RULE SHEET D; compared quietly, nothing on cards until GO)
 
-Run: 2026-11-07T07:44Z · requests 105 · pages 83 · PDFs 17 · sentences read 473 · unmatched 122 · look-alikes skipped 263 · sources failed 0
+Run: 2026-11-07T15:11Z · requests 105 · pages 83 · PDFs 17 · sentences read 473 · unmatched 122 · look-alikes skipped 263 · sources failed 0
 
 ## Kentucky gate: **PASS** — 30 of 31 of Kentucky's own reader's items found here on the same park (96%); 56 only here
 
-## US-KY (done, read 2026-11-07T07:44)
+## US-KY (done, read 2026-11-07T15:11)
 whole 0 · part 0 · hunt 0 · seasonal 0 · note 82 · taken_down 3 · 0 banners
 
 Dropped as another state's place (multi-state forest): 32 notices
