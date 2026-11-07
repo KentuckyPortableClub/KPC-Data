@@ -1,6 +1,6 @@
 # 2-fer post-line check (for Quality)
 
-2026-11-06 23:32 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
+2026-11-07 03:23 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
 
 ## CA-AB: live pairs 40 -> 36 (+3 / -7)
 - gained: CA-0110+US-4558 CA-2956+CA-2958 CA-3008+CA-6112
@@ -15,7 +15,7 @@
 ## CA-BC: live pairs 45 -> 57 (+14 / -2)
 - gained: CA-0736+CA-4096 CA-0737+CA-3551 CA-0742+US-0029 CA-0742+US-12607 CA-0742+US-4448 CA-0742+US-4592 CA-3191+US-4448 CA-3228+CA-4215 CA-3245+CA-5497 CA-3327+US-0055 CA-3328+CA-5346 CA-3511+CA-3512 CA-3567+US-4448 CA-3766+CA-4289
 - lost: CA-3624+CA-4122 (water only: boat or kayak); CA-4145+CA-4245 (dropped in pass 3: the finer official outlines show no shared patch here (the first, coars)
-- touching held parks: CA-3245+CA-5497 CA-3250+CA-3251 CA-3328+CA-5346 CA-3410+CA-3411 CA-3840+CA-3841
+- touching held parks: -
 - touching pin-only parks: -
 - water / bank: 16
 - one-record same land: CA-0748+CA-4282 CA-3250+CA-3251 CA-3261+CA-3262 CA-3263+CA-3264 CA-3320+CA-3321 CA-3348+CA-3349 CA-3410+CA-3411 CA-3439+CA-3440 CA-3465+CA-3466 CA-3495+CA-3496 CA-3504+CA-3505 CA-3511+CA-3512 CA-3522+CA-3523 CA-3524+CA-3525 CA-3684+CA-3685 CA-3781+CA-3782 CA-3789+CA-3790 CA-3838+CA-3839 CA-3840+CA-3841 CA-3868+CA-3869
@@ -579,7 +579,7 @@
 - touching pin-only parks: US-0072+US-10971 US-0072+US-10973 US-0072+US-10975 US-0072+US-10976 US-0072+US-6012 US-0072+US-6025 US-0895+US-10971 US-0895+US-10973 US-0895+US-10975 US-0895+US-10976 US-0895+US-6012 US-10971+US-6028 US-10971+US-6037 US-10975+US-10976 US-10975+US-6010 US-10976+US-6010 US-10976+US-6011 US-6012+US-6018
 - water / bank: 21
 - one-record same land: US-10972+US-6024 US-10974+US-6010 US-10990+US-6027 US-6010+US-6011 US-6045+US-6046 US-6063+US-6077 US-6073+US-6074
-- near a size threshold: US-0011+US-5883 25 m ~ 25 yd (kept); US-0011+US-5893 103 m ~ 100 yd (small); US-0011+US-5917 45 m ~ 50 yd (very tight); US-0072+US-6010 75 m ~ 100 yd (small); US-0072+US-6018 25 m ~ 25 yd (kept); US-0645+US-5849 75 m ~ 100 yd (small); US-0895+US-11760 25 m ~ 25 yd (kept); US-0914+US-4395 45 m ~ 50 yd (very tight); US-0914+US-6006 45 m ~ 50 yd (very tight); US-10993+US-6076 95 m ~ 100 yd (small); US-11000+US-6098 75 m ~ 100 yd (small); US-11103+US-4398 45 m ~ 50 yd (very tight); US-11104+US-4398 101 m ~ 100 yd (small); US-11205+US-4397 25 m ~ 25 yd (kept); US-11742+US-4395 25 m ~ 25 yd (kept); US-13603+US-4397 25 m ~ 25 yd (kept); US-3071+US-4396 109 m ~ 100 yd (small); US-4395+US-6067 25 m ~ 25 yd (kept); US-4396+US-5917 25 m ~ 25 yd (kept); US-4397+US-5925 25 m ~ 25 yd (kept)
+- near a size threshold: US-0010+US-5794 79 m ~ 100 yd (small); US-0010+US-5849 45 m ~ 50 yd (very tight); US-0011+US-5883 25 m ~ 25 yd (kept); US-0011+US-5893 103 m ~ 100 yd (small); US-0011+US-5917 45 m ~ 50 yd (very tight); US-0072+US-6010 75 m ~ 100 yd (small); US-0072+US-6018 25 m ~ 25 yd (kept); US-0645+US-5849 75 m ~ 100 yd (small); US-0895+US-11760 25 m ~ 25 yd (kept); US-0914+US-4395 45 m ~ 50 yd (very tight); US-0914+US-6006 45 m ~ 50 yd (very tight); US-10993+US-6076 95 m ~ 100 yd (small); US-11000+US-6098 75 m ~ 100 yd (small); US-11103+US-4398 45 m ~ 50 yd (very tight); US-11104+US-4398 101 m ~ 100 yd (small); US-11205+US-4397 25 m ~ 25 yd (kept); US-11742+US-4395 25 m ~ 25 yd (kept); US-13603+US-4397 25 m ~ 25 yd (kept); US-3071+US-4396 109 m ~ 100 yd (small); US-4395+US-6067 25 m ~ 25 yd (kept)
 - stale inputs: -
 
 ## US-VA: live pairs 116 -> 116 (+13 / -13)
