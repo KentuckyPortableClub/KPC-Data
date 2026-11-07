@@ -201,6 +201,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0; read 2026-11-04"
   },
   {
+   "Park number (if matched)": "US-3630",
+   "Park name (as the agency writes it)": "Indian Key Historic State Park",
+   "Size": 111,
+   "Unit": "acres",
+   "Agency": "Florida State Parks (DEP) (park, state GIS table)",
+   "Source page": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?where=OBJECTID%3D20&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0; read 2026-11-04"
+  },
+  {
    "Park number (if matched)": "CA-4794",
    "Park name (as the agency writes it)": "Kootenai House",
    "Size": 0,
@@ -444,6 +453,24 @@
    "Notes": "computed from the official outline polygon (approx); layer https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0; read 2026-11-05"
   },
   {
+   "Park number (if matched)": "US-12938",
+   "Park name (as the agency writes it)": "Industrial Forest Lands - Laurel Complex",
+   "Size": 359,
+   "Unit": "acres",
+   "Agency": "Delaware Fish & Wildlife (DNREC) (wild, state GIS table)",
+   "Source page": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17/query?where=OBJECTID%3D69&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-6326",
+   "Park name (as the agency writes it)": "T. M. Goodwin Waterfowl Management Area",
+   "Size": 3451,
+   "Unit": "acres",
+   "Agency": "FWC (wild, state GIS table)",
+   "Source page": "https://gis.myfwc.com/mapping/rest/services/Open_Data/Wildlife_Management_Areas_Florida/MapServer/1/query?where=OBJECTID%3D12&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.myfwc.com/mapping/rest/services/Open_Data/Wildlife_Management_Areas_Florida/MapServer/1; read 2026-11-05"
+  },
+  {
    "Park number (if matched)": "US-0731",
    "Park name (as the agency writes it)": "Columbia River Gorge National Scenic Area",
    "Size": 209918,
@@ -685,15 +712,6 @@
    "Agency": "National Register of Historic Places Polygons",
    "Source page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D400828&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-05"
-  },
-  {
-   "Park number (if matched)": "US-6326",
-   "Park name (as the agency writes it)": "T. M. Goodwin Waterfowl Management Area",
-   "Size": 3451,
-   "Unit": "acres",
-   "Agency": "FWC (wild, state GIS table)",
-   "Source page": "https://gis.myfwc.com/mapping/rest/services/Open_Data/Wildlife_Management_Areas_Florida/MapServer/1/query?where=OBJECTID%3D12&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://gis.myfwc.com/mapping/rest/services/Open_Data/Wildlife_Management_Areas_Florida/MapServer/1; read 2026-11-05"
   },
   {
    "Park number (if matched)": "CA-2219",
@@ -955,6 +973,24 @@
    "Agency": "",
    "Source page": "https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json",
    "Notes": "computed from the official outline polygon (approx); layer https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-7238",
+   "Park name (as the agency writes it)": "Salcha River State Recreation Site",
+   "Size": 62,
+   "Unit": "acres",
+   "Agency": "Alaska State Parks (DNR) (park, state GIS table)",
+   "Source page": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2/query?where=OBJECTID%3D73&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-7239",
+   "Park name (as the agency writes it)": "Tok River State Recreation Site",
+   "Size": 9,
+   "Unit": "acres",
+   "Agency": "Alaska State Parks (DNR) (park, state GIS table)",
+   "Source page": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2/query?where=OBJECTID%3D112&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2; read 2026-11-05"
   },
   {
    "Park number (if matched)": "US-5756",
@@ -1254,13 +1290,13 @@
    "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
   },
   {
-   "Park number (if matched)": "US-12938",
-   "Park name (as the agency writes it)": "Industrial Forest Lands - Laurel Complex",
-   "Size": 359,
+   "Park number (if matched)": "US-12678",
+   "Park name (as the agency writes it)": "Little Nelchina State Recreation Site",
+   "Size": 22,
    "Unit": "acres",
-   "Agency": "Delaware Fish & Wildlife (DNREC) (wild, state GIS table)",
-   "Source page": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17/query?where=OBJECTID%3D69&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17; read 2026-11-05"
+   "Agency": "Alaska State Parks (DNR) (park, state GIS table)",
+   "Source page": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2/query?where=OBJECTID%3D50&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2; read 2026-11-05"
   },
   {
    "Park number (if matched)": "US-3616",
@@ -1278,15 +1314,6 @@
    "Unit": "acres",
    "Agency": "Florida State Parks (DEP) (park, state GIS table)",
    "Source page": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?where=OBJECTID%3D46&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0; read 2026-11-04"
-  },
-  {
-   "Park number (if matched)": "US-3630",
-   "Park name (as the agency writes it)": "Indian Key Historic State Park",
-   "Size": 111,
-   "Unit": "acres",
-   "Agency": "Florida State Parks (DEP) (park, state GIS table)",
-   "Source page": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?where=OBJECTID%3D20&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0; read 2026-11-04"
   },
   {
@@ -1351,15 +1378,6 @@
    "Agency": "Crown-Indigenous Relations and Northern Affairs Canada (Nunavut Map Viewer); SOURCE=GN-ENV (Government of Nunavut Environment)",
    "Source page": "https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21/query?where=OBJECTID%3D648&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21; read 2026-11-05"
-  },
-  {
-   "Park number (if matched)": "US-12678",
-   "Park name (as the agency writes it)": "Little Nelchina State Recreation Site",
-   "Size": 22,
-   "Unit": "acres",
-   "Agency": "Alaska State Parks (DNR) (park, state GIS table)",
-   "Source page": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2/query?where=OBJECTID%3D50&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2; read 2026-11-05"
   },
   {
    "Park number (if matched)": "US-4854",
@@ -1441,24 +1459,6 @@
    "Agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
    "Source page": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.233%2C45.6066&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
    "Notes": "computed from the official outline polygon (approx); layer https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0; read 2026-11-04"
-  },
-  {
-   "Park number (if matched)": "US-7238",
-   "Park name (as the agency writes it)": "Salcha River State Recreation Site",
-   "Size": 62,
-   "Unit": "acres",
-   "Agency": "Alaska State Parks (DNR) (park, state GIS table)",
-   "Source page": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2/query?where=OBJECTID%3D73&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2; read 2026-11-05"
-  },
-  {
-   "Park number (if matched)": "US-7239",
-   "Park name (as the agency writes it)": "Tok River State Recreation Site",
-   "Size": 9,
-   "Unit": "acres",
-   "Agency": "Alaska State Parks (DNR) (park, state GIS table)",
-   "Source page": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2/query?where=OBJECTID%3D112&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2; read 2026-11-05"
   }
  ],
  "Sources": [
@@ -1553,6 +1553,16 @@
    "Retry?": "NO"
   },
   {
+   "Host": "ca.dep.state.fl.us",
+   "Agency/area": "Florida State Parks (DEP) (park, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0",
+   "# times used": 5,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "maps.gov.bc.ca",
    "Agency/area": "Government of British Columbia (Historic Places)",
    "Kind": "GIS layer",
@@ -1593,6 +1603,26 @@
    "Retry?": "NO"
   },
   {
+   "Host": "enterprise.firstmap.delaware.gov",
+   "Agency/area": "Delaware Fish & Wildlife (DNREC) (wild, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "gis.myfwc.com",
+   "Agency/area": "FWC (wild, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://gis.myfwc.com/mapping/rest/services/Open_Data/Wildlife_Management_Areas_Florida/MapServer/1",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "apps.fs.usda.gov",
    "Agency/area": "USDA Forest Service",
    "Kind": "GIS layer",
@@ -1628,16 +1658,6 @@
    "Kind": "GIS layer",
    "Example URL": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11",
    "# times used": 4,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
-   "Host": "gis.myfwc.com",
-   "Agency/area": "FWC (wild, state GIS table)",
-   "Kind": "GIS layer",
-   "Example URL": "https://gis.myfwc.com/mapping/rest/services/Open_Data/Wildlife_Management_Areas_Florida/MapServer/1",
-   "# times used": 1,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -1713,6 +1733,16 @@
    "Retry?": "NO"
   },
   {
+   "Host": "arcgis.dnr.alaska.gov",
+   "Agency/area": "Alaska State Parks (DNR) (park, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+   "# times used": 3,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "tnmap.tn.gov",
    "Agency/area": "Tennessee Wildlife Resources Agency (credit: TWRA) (wild, state GIS table)",
    "Kind": "GIS layer",
@@ -1733,26 +1763,6 @@
    "Retry?": "NO"
   },
   {
-   "Host": "enterprise.firstmap.delaware.gov",
-   "Agency/area": "Delaware Fish & Wildlife (DNREC) (wild, state GIS table)",
-   "Kind": "GIS layer",
-   "Example URL": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
-   "# times used": 1,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
-   "Host": "ca.dep.state.fl.us",
-   "Agency/area": "Florida State Parks (DEP) (park, state GIS table)",
-   "Kind": "GIS layer",
-   "Example URL": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0",
-   "# times used": 5,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
    "Host": "dnr.geodata.md.gov",
    "Agency/area": "Maryland DNR (Maryland Natural Areas) (preserve, state GIS table)",
    "Kind": "GIS layer",
@@ -1768,16 +1778,6 @@
    "Kind": "GIS layer",
    "Example URL": "https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21",
    "# times used": 1,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
-   "Host": "arcgis.dnr.alaska.gov",
-   "Agency/area": "Alaska State Parks (DNR) (park, state GIS table)",
-   "Kind": "GIS layer",
-   "Example URL": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
-   "# times used": 3,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
