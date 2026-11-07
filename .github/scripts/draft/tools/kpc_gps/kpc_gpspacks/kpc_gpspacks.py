@@ -149,6 +149,18 @@ def polygons_of(geom):
     return res
 
 
+def poly_tracts(geom, n):
+    """Nov 7: the tract id of each polygon polygons_of() returns, when every feature carries properties.tract; else None."""
+    if not isinstance(geom, dict) or geom.get("type") != "FeatureCollection":
+        return None
+    out, anyt = [], False
+    for f in geom.get("features") or []:
+        t = ((f or {}).get("properties") or {}).get("tract")
+        anyt = anyt or bool(t)
+        out += [t or ""] * len(polygons_of(f))
+    return out if anyt and len(out) == n else None
+
+
 def lines_of(geom):
     if not isinstance(geom, dict):
         return []
@@ -248,8 +260,11 @@ def ring_area(r):
     return abs(sum(xy[i][0] * xy[i + 1][1] - xy[i + 1][0] * xy[i][1] for i in range(len(xy) - 1)) / 2)
 
 
-def simplify_outline(polys, max_pts=MAX_PTS):
-    """<= max_pts points for the whole outline: 5 m first, then coarser. -> (polys, tol, dropped, points)"""
+def simplify_outline(polys, max_pts=MAX_PTS, tracts=None):
+    """<= max_pts points for the whole outline: 5 m first, then coarser. -> (polys, tol, dropped, points)
+    Nov 7 (KPC-Links tracts Part 1, mirrors kpc-gps.js simplifyOutline): `tracts` = the tract id of each polygon (only when the outline's
+    features carry properties.tract, i.e. the hidden tract switch was on where it was read). Then every tract keeps its biggest outer
+    ring before the size trim, so a small tract is never left out whole. Without it: exactly as before."""
     res, tol = polys, TOLS[0]
     for tol in TOLS:
         res = [[simplify_ring(r, tol) for r in p] for p in polys]
@@ -257,6 +272,14 @@ def simplify_outline(polys, max_pts=MAX_PTS):
             return res, tol, 0, count_pts(res)
     pieces = sorted(((pi, ri, ring_area(r), len(r)) for pi, p in enumerate(res) for ri, r in enumerate(p)), key=lambda x: -x[2])
     total, keep, dropped = 0, set(), 0
+    if tracts is not None and len(tracts) == len(res):
+        first = {}
+        for pi, ri, _a, n in pieces:
+            if ri == 0 and str(tracts[pi]) not in first: first[str(tracts[pi])] = (pi, ri, n)
+        for pi, ri, n in first.values():
+            total += n
+            keep.add((pi, ri))
+        pieces = [x for x in pieces if (x[0], x[1]) not in keep]
     for pi, ri, _a, n in pieces:
         if total + n <= max_pts:
             total += n
@@ -469,6 +492,7 @@ def model(park, opts):
     m = {"ref": ref, "name": name, "lat": park.get("lat"), "lon": park.get("lon"), "status": st, "agency": o.get("agency"), "why": o.get("why")}
     m["outline_label"] = outline_label(st, m["agency"], m["why"])
     m["polys"] = polys
+    m["poly_tracts"] = None if st == "pin" else poly_tracts(o.get("geojson"), len(polys))   # Nov 7: None unless tract-labelled
     m["outline_missing"] = st != "pin" and not polys
     acc, counts = [], {}
     for a in park.get("access") or []:
@@ -558,7 +582,7 @@ def gpx_doc(ms, o, what="parks"):
         for m in ms:
             if not m["polys"]:
                 continue
-            polys, tol, dropped, npts = simplify_outline(m["polys"], o["max_points"])
+            polys, tol, dropped, npts = simplify_outline(m["polys"], o["max_points"], m.get("poly_tracts"))
             stats["trk"] += 1
             stats["outline_points"].append(npts)
             stats["tols"].append(tol)
@@ -661,7 +685,7 @@ def kml_doc(ms, o):
             if m["status"] == "pin":
                 L.append(f"<Placemark><name>{xesc(m['ref'] + ': ' + NO_OUTLINE)}</name><description>{xesc(m['ref'] + ' ' + m['name'] + '. ' + NO_OUTLINE + '. No outline is drawn.')}</description></Placemark>")
             continue
-        polys, tol, dropped, npts = simplify_outline(m["polys"], o["max_points"])
+        polys, tol, dropped, npts = simplify_outline(m["polys"], o["max_points"], m.get("poly_tracts"))
         extra = f" Simplified to ~{tol} m ({npts} points)" + (f"; {dropped} small pieces left out" if dropped else "") + "."
         pg = "".join("<Polygon><tessellate>1</tessellate><outerBoundaryIs><LinearRing><coordinates>" + kc(p[0]) + "</coordinates></LinearRing></outerBoundaryIs>"
                      + "".join("<innerBoundaryIs><LinearRing><coordinates>" + kc(r) + "</coordinates></LinearRing></innerBoundaryIs>" for r in p[1:]) + "</Polygon>" for p in polys)
@@ -1278,6 +1302,17 @@ def selftest():
         many = [[[[-84 + i * 0.01, 37], [-84 + i * 0.01 + 0.001, 37], [-84 + i * 0.01, 37.001], [-84 + i * 0.01, 37]]] for i in range(1500)]
         sp = simplify_outline(many)
         ok(sp[3] <= 2000 and sp[2] > 0, f"1500 small pieces: <= 2000 points, smallest left out ({sp[3]} points, {sp[2]} dropped)")
+        # Nov 7 (tracts): with tract ids every tract keeps a ring; without them, the same answer as before
+        tr = [[[[-84 + i * 0.1, 37], [-84 + i * 0.1 + 0.0001, 37], [-84 + i * 0.1, 37.0001], [-84 + i * 0.1, 37]]] for i in range(4)]
+        big = [[[-85 + 0.05 * math.cos(i / 400 * 6.283), 37 + 0.05 * math.sin(i / 400 * 6.283)] for i in range(400)] + [[-84.95, 37.0]]]
+        off, on = simplify_outline([big] + tr, 12), simplify_outline([big] + tr, 12, ["a", "b", "c", "d", "e"])
+        ok(len(off[0]) < 5 and len(on[0]) == 5 and simplify_outline(many) == simplify_outline(many, MAX_PTS, None),
+           f"tract ids: every tract keeps a ring ({len(on[0])} of 5; {len(off[0])} without ids, as before)")
+        fc = {"type": "FeatureCollection", "features": [{"type": "Feature", "properties": {"tract": "US-1#1"}, "geometry": {"type": "Polygon", "coordinates": big}},
+                                                         {"type": "Feature", "properties": {"tract": "US-1#2"}, "geometry": {"type": "MultiPolygon", "coordinates": tr[:2]}}]}
+        bare = {"type": "FeatureCollection", "features": [{"type": "Feature", "properties": {}, "geometry": fc["features"][0]["geometry"]}]}
+        ok(poly_tracts(fc, 3) == ["US-1#1", "US-1#2", "US-1#2"] and poly_tracts(bare, 1) is None,
+           "poly_tracts: one id per polygon, None without tract labels")
         # 6. expected output
         with open(os.path.join(tdir, "expected_output.json"), encoding="utf-8") as fh:
             exp = json.load(fh)
