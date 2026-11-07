@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-07T11:26Z",
+ "checked": "2026-11-07T11:50Z",
  "switched_on": false,
  "results": [
   {
@@ -281,6 +281,13 @@
    "notes": [
     "no live copy: first time this file is published"
    ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-SC.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [],
    "verdict": "PASS"
   },
   {
@@ -670,7 +677,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 5 of 20 re-tested links dead, e.g. https://www.in.gov/dA/95c9b0b79d/pokagon_trail.pdf?language_id=1"
+    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dA/f54f39eab4/monroe_camp_fairfax_sra.pdf?language_"
    ],
    "notes": [],
    "verdict": "HOLD"

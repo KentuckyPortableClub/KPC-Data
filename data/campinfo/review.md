@@ -11,7 +11,7 @@ Updated 2026-11-07. Every fact in <area>.json carries its source url, read date 
 | US-VA | 163 | 2 | 74 | 0 | 0 | 0 | 40 | 30 | 17 | 2 | 19 | 0 |
 | US-GA | 205 | 61 | 64 | 4 | 0 | 0 | 0 | 8 | 68 | 8 | 131 | 0 |
 | US-AL | 100 | 12 | 34 | 1 | 0 | 0 | 0 | 4 | 49 | 6 | 60 | 7 |
-| US-SC | 63 | 20 | 26 | 17 | 0 | 0 | 0 | 0 | 0 | 17 | 23 | 0 |
+| US-SC | 77 | 19 | 26 | 24 | 0 | 0 | 0 | 7 | 1 | 16 | 31 | 0 |
 | US-FL | 299 | 60 | 38 | 0 | 23 | 0 | 147 | 8 | 23 | 0 | 106 | 0 |
 | US-MS | 196 | 21 | 45 | 0 | 2 | 0 | 0 | 6 | 122 | 6 | 59 | 0 |
 | US-IN | 94 | 61 | 13 | 0 | 0 | 0 | 2 | 8 | 10 | 8 | 68 | 0 |
@@ -86,11 +86,12 @@ Updated 2026-11-07. Every fact in <area>.json carries its source url, read date 
 - dec.ny.gov: 225 campgrounds
 - itd.idaho.gov: 30 campgrounds
 - parks.ky.gov: 26 campgrounds
-- southcarolinaparks.com: 17 campgrounds
+- southcarolinaparks.com: 22 campgrounds
 - www.dec.ny.gov: 5 campgrounds
 - dnr.wisconsin.gov: 4 campgrounds
 - www.recreation.gov: 4 campgrounds
 - gastateparks.org: 3 campgrounds
+- www.fs.usda.gov: 2 campgrounds
 - www.nps.gov: 2 campgrounds
 - cpw.state.co.us: 2 campgrounds
 - files.dfm.idaho.gov: 2 campgrounds
@@ -688,93 +689,16 @@ Updated 2026-11-07. Every fact in <area>.json carries its source url, read date 
 
 ## US-SC: 12 random samples (records with facts; seed = the date)
 
-- **Main campground (sites 1–25); Trailside walk-in tent/hammock sites (sites 26–35); Primitive group camping area** (US-2895:hq0, state, status ok, 14 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/givhans-ferry/camping)
+- **Lake Warren State Park** (US-2903, state, status ok, 9 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/lake-warren/faqs)
   - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
-  - booking.url = "https://reserve.southcarolinaparks.com/givhans-ferry" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/givhans-ferry”
-  - features = "fire ring, picnic table and storage box for food and suppli · “arking area. These tent/hammock sites have water and 20 amp electric, as well as a grill, fire ring, picnic table and storage box for food a”
-  - fees = "$13 -$15.50 which allows up to ten campers | $5-6.25 increm · “To make a primitive group camping reservation, contact the park directly. Minimum rate is $13 -$15.50 which allows up to ten campers. The ra”
-  - hookups.amps = [20, 30, 50] · “rk Coast Camping Camping Information: Sites 1 – 25 are full service with water, sewer and 50/30/20 amp power. Many sites can accommodate 40’”
-  - hookups.electric = true · “ing Camping Information: Sites 1 – 25 are full service with water, sewer and 50/30/20 amp power. Many sites can accommodate 40’ RVs, others ”
-  - hookups.sewer = true · “y State Park Coast Camping Camping Information: Sites 1 – 25 are full service with water, sewer and 50/30/20 amp power. Many sites can accom”
-  - hookups.water = true · “cking in on today, Friday, you must make the reservation by contacting the park directly. Full Hookup Sites with Elec, Water, Sewer: 25 site”
-  - phone_hint = "(843) 873-0692" · “ks Official Site Givhans Ferry DIRECTIONS 746 Givhans Ferry RD Ridgeville, SC 29472 PHONE 843.873.0692 EMAIL MAKE A RESERVATION TOP 5 THINGS”
-  - reservable = true · “nted officials. The area includes central water, fire ring and nearby restoom facilities. Reservations are accepted. To make a primitive gro”
-- **Croft State Park** (US-2891, state, status ok, 13 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/croft/camping)
-  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
-  - booking.url = "https://reserve.southcarolinaparks.com/croft" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/croft”
-  - hookups.amps = [20, 30, 50] · “rical hookups. Some sites accommodate RVs up to 40 ft. Twenty-five of the campsites offer 50 amp service. The campgrounds are convenient to ”
-  - hookups.electric = true · “lls 1/12/2027 2/11/2027 Camping Information: Each site is packed gravel and has water and electrical hookups. Some sites accommodate RVs up ”
-  - hookups.water = true · “Horse Stalls 1/12/2027 2/11/2027 Camping Information: Each site is packed gravel and has water and electrical hookups. Some sites accommodat”
-  - map.date_how = "PDF, no date in the link" · “link “The trail map can be found here.””
-  - map.url = "https://embed.widencdn.net/pdf/plus/scprt/sohstjfuoz/CroftT · “link “The trail map can be found here.” -> https://embed.widencdn.net/pdf/plus/scprt/sohstjfuoz/CroftTrailMap.pdf?u=sgt8lu”
-  - phone_hint = "(864) 585-1283" · “Parks Official Site Croft DIRECTIONS 450 Croft State Park RD Spartanburg, SC 29302 PHONE 864.585.1283 EMAIL MAKE A RESERVATION TOP 5 THINGS ”
-  - reservable = true · “pointed officials. The area includes central water and restoom facilities 100 yards away. Reservations are accepted. To make a primitive gro”
-  - restrooms = "yes (kind not stated)" · “ft. Twenty-five of the campsites offer 50 amp service. The campgrounds are convenient to restrooms with hot showers. Camping Reservations: T”
-- **Lake Hartwell State Park** (US-3879, state, status ok, 11 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/lake-hartwell/camping)
-  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
-  - booking.url = "https://reserve.southcarolinaparks.com/lake-hartwell" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/lake-hartwell”
-  - hookups.electric = true · “rk directly. Standard Sites with Elec. & Water: 109 paved sites with individual water and electrical hook-ups. Many sites accommodate RVs up”
-  - hookups.water = true · “ing the park directly. Standard Sites with Elec. & Water: 109 paved sites with individual water and electrical hook-ups. Many sites accommod”
-  - phone_hint = "(864) 972-3352" · “a Parks Official Site Lake Hartwell DIRECTIONS 19138-A HWY 11 S Fair Play, SC 29643 PHONE 864.972.3352 EMAIL MAKE A RESERVATION TOP 5 THINGS”
-  - restrooms = "yes (kind not stated)" · “asy access to the shoreline of Lake Hartwell. All sites are convenient to hot showers and restrooms. Camping Reservations: To make a camping”
-  - rules.pets = "Pets are allowed in Carolina Camper Cabins 1, 2 and 5" · “ch ADMISSION $3 adults; $1.50 SC seniors; $1 children age 6-15; age 5 & younger free PETS Pets are allowed in Carolina Camper Cabins 1, 2 an”
-  - rv_max_ft = 40 · “er: 109 paved sites with individual water and electrical hook-ups. Many sites accommodate RVs up to 40 feet. Designated Tent Sites: 13 walk-”
-  - showers = true · “a provides easy access to the shoreline of Lake Hartwell. All sites are convenient to hot showers and restrooms. Camping Reservations: To ma”
-  - sites.tent = 13 · “and electrical hook-ups. Many sites accommodate RVs up to 40 feet. Designated Tent Sites: 13 walk-in tent sites include tent pads Dump Stati”
-- **Main campground (standard RV/tent sites); Full-hookup sites; Primitive group camping area** (US-2883:hq0, state, status ok, 14 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/andrew-jackson/camping)
-  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
-  - booking.url = "https://reserve.southcarolinaparks.com/andrew-jackson" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/andrew-jackson”
-  - features = "fire rings and is located ½ mile from the restrooms" · “and has a lead officer or elected/appointed officials.) The area includes picnic tables, fire rings and is located ½ mile from the restrooms”
-  - fees = "$10 -$12.50 which allows up to ten campers | $5-$6.50 incre · “To make a primitive group camping reservation, contact the park directly. Minimum rate is $10 -$12.50 which allows up to ten campers. The ra”
-  - hookups.electric = true · “ckson State Park Midlands Camping Camping Information: Each site has individual water and electrical hookups. Five paved sites accommodate R”
-  - hookups.sewer = true · “reservation by contacting the park directly. Standard Sites with Elec. & Water: 22 sites Full Hookup Sites with Elec, Water, Sewer: 3 Dump S”
-  - hookups.water = true · “Andrew Jackson State Park Midlands Camping Camping Information: Each site has individual water and electrical hookups. Five paved sites acco”
-  - phone_hint = "(803) 285-3344" · “icial Site Andrew Jackson DIRECTIONS 196 Andrew Jackson Park RD Lancaster, SC 29720 PHONE 803.285.3344 EMAIL MAKE A RESERVATION TOP 5 THINGS”
-  - reservable = true · “s.) The area includes picnic tables, fire rings and is located ½ mile from the restrooms. Reservations are accepted. To make a primitive gro”
-  - restrooms = "yes (kind not stated)" · “eet, while 20 gravel sites accommodate RVs up to 30 feet. The campground is convenient to restrooms with hot showers. Camping Reservations: ”
-- **H. Cooper Black Jr. Memorial State Recreation Area** (US-3874, state, status ok, 11 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/h-cooper-black/camping)
-  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
-  - booking.url = "https://reserve.southcarolinaparks.com/h-cooper-black" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/h-cooper-black”
-  - dump_station = true · “e campsites available on the park. There are two comfort stations with hot showers and an RV dump station. Camping Reservations: To make a c”
-  - hookups.electric = true · “Area Midlands Camping Campground Map Camping Information: The park has 27 campsites with electricity and water. There are also some primitiv”
-  - hookups.water = true · “Area Midlands Camping Campground Map Camping Information: The park has 27 campsites with electricity and water. There are also some primitiv”
-  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
-  - map.url = "https://embed.widencdn.net/pdf/plus/scprt/cmtxtlns4d/24-SCP · “link “Campground Map” -> https://embed.widencdn.net/pdf/plus/scprt/cmtxtlns4d/24-SCP-5435-H-Cooper-Black-Jr-Campground-Map.pd”
-  - phone_hint = "(843) 253-5124" · “arks Official Site H. Cooper Black DIRECTIONS 279 Sporting Dog TRL Cheraw, SC 29520 PHONE 843.253.5124 EMAIL MAKE A RESERVATION TOP 5 THINGS”
-  - restrooms = "yes (kind not stated)" · “y and water. There are also some primitive campsites available on the park. There are two comfort stations with hot showers and an RV dump s”
-  - showers = true · “o some primitive campsites available on the park. There are two comfort stations with hot showers and an RV dump station. Camping Reservatio”
-- **Huntington Beach State Park** (US-2900, state, status ok, 12 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/huntington-beach/camping)
-  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
-  - booking.url = "https://reserve.southcarolinaparks.com/huntington-beach" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/huntington-beach”
-  - hookups.electric = "some" · “amping Camping Information: Each site, excluding the designated tent sites, has water and electrical hookups and is convenient to hot shower”
-  - hookups.sewer = "some" · “er and electrical hookups and is convenient to hot showers and restrooms. Some sites have sewer hookups. Several sites accommodate RVs up to”
-  - hookups.water = true · “rk Coast Camping Camping Information: Each site, excluding the designated tent sites, has water and electrical hookups and is convenient to ”
-  - phone_hint = "(843) 237-4440" · “Official Site Huntington Beach DIRECTIONS 16148 Ocean HWY Murrells Inlet, SC 29576 PHONE 843.237.4440 EMAIL MAKE A RESERVATION TOP 5 THINGS ”
-  - restrooms = "yes (kind not stated)" · “ignated tent sites, has water and electrical hookups and is convenient to hot showers and restrooms. Some sites have sewer hookups. Several ”
-  - rules.pets = "Dogs are allowed on the south end of the beach" · “t remain on a leash no longer than six feet at all times. Please clean up after your pet. Dogs are allowed on the south end of the beach. Do”
-  - rv_max_ft = 40 · “nt to hot showers and restrooms. Some sites have sewer hookups. Several sites accommodate RVs up to 40 feet, others up to 30 feet. While ten”
-  - showers = true · “ding the designated tent sites, has water and electrical hookups and is convenient to hot showers and restrooms. Some sites have sewer hooku”
-- **Family campground; Equestrian campground; Primitive group camping area** (US-2905:hq0, state, status ok, 14 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/lee/camping)
-  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
-  - booking.url = "https://reserve.southcarolinaparks.com/lee" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/lee”
-  - fees = "$14.50 which allows up to ten campers | $6.50 increments fo · “To make a primitive group camping reservation, contact the park directly. Minimum rate is $14.50 which allows up to ten campers. The rate in”
-  - hookups.electric = true · “Camping Information: The park campground is open year round. Each campsite has water and electrical hookups and is convenient to restrooms w”
-  - hookups.sewer = true · “s are available for family camping, while 18 sites are designated for equestrian campers. Full Hookup Sites with Elec, Water, Sewer: Sites 1”
-  - hookups.water = true · “ds Camping Camping Information: The park campground is open year round. Each campsite has water and electrical hookups and is convenient to ”
-  - phone_hint = "(803) 428-5307" · “South Carolina Parks Official Site Lee DIRECTIONS 487 Loop RD Bishopville, SC 29010 PHONE 803.428.5307 EMAIL MAKE A RESERVATION TOP 5 THINGS”
-  - reservable = true · “The area has 3 designated sites (25 people per site). There is central water and a privy. Reservations are accepted. To make a primitive gro”
-  - restrooms = "vault" · “ials.) The area has 3 designated sites (25 people per site). There is central water and a privy. Reservations are accepted. To make a primit”
-  - rules.pets = "Pets are allowed in most outdoor areas provided they are ke · “-Thursday 11am-12pm, Friday-Sunday 10am-5pm, closed Monday. ADMISSION Free admission PETS Pets are allowed in most outdoor areas provided th”
-- **Aiken State Park** (US-2882, state, status ok, no campground facts in the page text: needs browser?, 1 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/)
-  - rules.pets = "Pet Friendly" · “n Ultimate Outsider. GET THE GUIDE PICK UP A PARK PASSPORT Come Out & Play 5K Race Series Pet Friendly Lodging Fall Foliage Report EXPLORE M”
-- **Lake Wateree State Park** (US-3880, state, status ok, 5 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/lake-wateree)
-  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
-  - booking.url = "https://reserve.southcarolinaparks.com/lake-wateree" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/lake-wateree”
-  - hookups.electric = true · “e shop and a refueling dock. An ample number of Lake Wateree camping sites with water and electrical hookups are available. Many Lake Watere”
-  - hookups.water = true · “amp, tackle shop and a refueling dock. An ample number of Lake Wateree camping sites with water and electrical hookups are available. Many L”
-  - rules.pets = "Pets are allowed in most outdoor areas provided they are ke · “ly ADMISSION $3 adults; $1.50 SC seniors; $1 children age 6-15; age 5 & younger free PETS Pets are allowed in most outdoor areas provided th”
-- **Manchester State Forest** (US-5486, state, status ok, no campground facts in the page text: needs browser?, 1 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/)
-  - rules.pets = "Pet Friendly" · “n Ultimate Outsider. GET THE GUIDE PICK UP A PARK PASSPORT Come Out & Play 5K Race Series Pet Friendly Lodging Fall Foliage Report EXPLORE M”
+  - booking.url = "https://reserve.southcarolinaparks.com/lake-warren" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/lake-warren”
+  - drinking_water = true · “e 2 weeks in advance by calling or visiting the park. The only convenience in the area is potable water, the day use public restrooms are av”
+  - fees = "$22 a night, and reservations for individual use can only b · “groups. If no group is using the area, we do allow individuals to camp there. The cost is $22 a night, and reservations for individual use c”
+  - hookups.electric = true · “Lake Warren has three jon boats for rent, for $25 per day which includes life jackets, an electric trolling motor and battery. The boats are”
+  - reservable = true · “adults and fishing equipment. There is a third seat that can accommodate a child. You can reserve a boat up to 3 days in advance by calling ”
+  - restrooms = "yes (kind not stated)" · “visiting the park. The only convenience in the area is potable water, the day use public restrooms are available but are about 900 yards fro”
+  - rules.pets = "Pets are allowed in most outdoor areas provided they are ke · “S HOURS 9 a.m. - 6 p.m., daily OFFICE 11 a.m. - noon, daily ADMISSION Free admission PETS Pets are allowed in most outdoor areas provided th”
+  - rules.stay_limit = "3 days" · “ing equipment. There is a third seat that can accommodate a child. You can reserve a boat up to 3 days in advance by calling the park (803) ”
 - **Edisto Beach State Park** (US-2894, state, status ok, 12 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/edisto-beach/camping)
   - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
   - booking.url = "https://reserve.southcarolinaparks.com/edisto-beach" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/edisto-beach”
@@ -786,6 +710,13 @@ Updated 2026-11-07. Every fact in <area>.json carries its source url, read date 
   - restrooms = "yes (kind not stated)" · “ated areas. Several sites accommodate RVs up to 40 feet. Each campground is convenient to restrooms with hot showers. Camping Reservations: ”
   - rules.pets = "Pets are not allowed in the cabins or the cabin areas" · “ISSION $8/adult; $5 SC seniors; $4/ child age 6-15; Free for children 5 and younger. PETS Pets are not allowed in the cabins or the cabin ar”
   - rv_max_ft = 40 · “ar the salt marsh. Camping is only allowed in designated areas. Several sites accommodate RVs up to 40 feet. Each campground is convenient t”
+- **Caesars Head hike-in trailside campsites (18 backcountry sites, Mountain Bridge Wilderness)** (intake-US-2886, agency (outside research camping-us-oct31), status ok, no campground facts in the page text: needs browser?, 6 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/caesars-head)
+  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
+  - booking.url = "https://reserve.southcarolinaparks.com/caesars-head" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/caesars-head”
+  - fees = "$3 adults" · “r before dark, year-round. OFFICE 9:00 a.m. to 5 p.m., daily ADMISSION Trail access cost: $3 adults; $1.50 SC seniors; $1 children age 6-15;”
+  - reservable = "mixed" · “ed parking and will often reach capacity on weekends in October-November. Entry is always first-come first serve when parking is available. ”
+  - restrooms = "yes (kind not stated)" · “t on week days for a better chance of entry. We thank you for your patience. Caesars Head restrooms and overlook are OPEN from 9 a.m. to sun”
+  - rules.pets = "Pets are allowed in most outdoor areas provided they are ke · “access cost: $3 adults; $1.50 SC seniors; $1 children age 6-15; age 5 & younger free PETS Pets are allowed in most outdoor areas provided th”
 - **Baker Creek State Park** (US-2884, state, status ok, 13 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/baker-creek/camping)
   - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
   - booking.url = "https://reserve.southcarolinaparks.com/baker-creek" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/baker-creek”
@@ -797,6 +728,75 @@ Updated 2026-11-07. Every fact in <area>.json carries its source url, read date 
   - restrooms = "yes (kind not stated)" · “ENTLY ASKED QUESTIONS PARK ADVISORY THE CAMPGROUND IS NOW OPEN! With two new family-style comfort stations and 50-amp service. All trails ar”
   - rules.pets = "Pets are allowed in most outdoor areas provided they are ke · “m. ADMISSION $3 adults; $1.50 SC seniors; $1 children age 6-15; age 5 & younger free PETS Pets are allowed in most outdoor areas provided th”
   - showers = true · “ong the shores of Strom Thurmond Lake. The campground is convenient to restrooms with hot showers. Camping Reservations: To make a camping r”
+- **Manchester State Forest** (US-5486, state, status ok, no campground facts in the page text: needs browser?, 1 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/)
+  - rules.pets = "Pet Friendly" · “n Ultimate Outsider. GET THE GUIDE PICK UP A PARK PASSPORT Come Out & Play 5K Race Series Pet Friendly Lodging Fall Foliage Report EXPLORE M”
+- **Main campground; Designated tent sites; Primitive group camping area** (US-2910:hq0, state, status ok, 13 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/poinsett/camping)
+  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
+  - booking.url = "https://reserve.southcarolinaparks.com/poinsett" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/poinsett”
+  - features = "fire ring" · “ient to restroom facilities with hot showers. All sites include water, picnic table and a fire ring. Customers requiring extended lengths of”
+  - hookups.electric = true · “te Photos Camping Information: The campground provides 24 sites with individual water and electrical hookups and 26 tent sites with individu”
+  - hookups.water = true · “ing Campsite Photos Camping Information: The campground provides 24 sites with individual water and electrical hookups and 26 tent sites wit”
+  - phone_hint = "(803) 494-8177" · “Parks Official Site Poinsett DIRECTIONS 6660 Poinsett Park RD Wedgefield, SC 29168 PHONE 803.494.8177 EMAIL MAKE A RESERVATION TOP 5 THINGS ”
+  - reservable = true · “eal for organized groups up to 200 people. The area includes central water and restrooms. Reservations are accepted. To make a primitive gro”
+  - restrooms = "yes (kind not stated)" · “dividual water. Some sites accommodate RVs up to 40 feet. The campground is convenient to restroom facilities with hot showers. All sites in”
+  - rules.pets = "Pets are not allowed in the cabins or the cabin areas" · “pm ADMISSION $3 adults; $1.50 SC seniors; $1 children age 6-15; age 5 & younger free PETS Pets are not allowed in the cabins or the cabin ar”
+  - rv_max_ft = 40 · “er and electrical hookups and 26 tent sites with individual water. Some sites accommodate RVs up to 40 feet. The campground is convenient to”
+- **Main campground; Primitive group camping area** (US-2913:hq0, state, status ok, 16 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/sesqui/camping)
+  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
+  - booking.url = "https://reserve.southcarolinaparks.com/sesqui" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/sesqui”
+  - features = "fire ring" · “Camping Information: Each site is packed sand or gravel and has water, picnic table, and fire ring. Sites 1-29 have 20/30/50 amp electric, w”
+  - fees = "$25/year, and are pro-rated depending on the date of" · “sh dog park, a permit is required for each dog, available at the park office. Permits are $25/year, and are pro-rated depending on the date ”
+  - hookups.amps = [20, 30, 50] · “site is packed sand or gravel and has water, picnic table, and fire ring. Sites 1-29 have 20/30/50 amp electric, with sites 1-9 being full s”
+  - hookups.electric = true · “d sand or gravel and has water, picnic table, and fire ring. Sites 1-29 have 20/30/50 amp electric, with sites 1-9 being full service with s”
+  - hookups.sewer = true · “fire ring. Sites 1-29 have 20/30/50 amp electric, with sites 1-9 being full service with sewer. Sites 36-84 have 20/30 amp electric, 9 of wh”
+  - hookups.water = true · “reservation by contacting the park directly. Standard Sites with Elec. & Water: 69 sites Full Hookup Sites with Elec, Water, Sewer: 9 sites ”
+  - phone_hint = "(803) 788-2706" · “arks Official Site Sesquicentennial DIRECTIONS 9564 Two Notch RD Columbia, SC 29223 PHONE 803.788.2706 EMAIL MAKE A RESERVATION TOP 5 THINGS”
+  - reservable = true · “tance to restrooms. Showers not available. All 5 primitive sites now have hammock stands. Reservations are accepted. To make a primitive gro”
+- **Aiken State Park** (US-2882, state, status ok, no campground facts in the page text: needs browser?, 1 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/)
+  - rules.pets = "Pet Friendly" · “n Ultimate Outsider. GET THE GUIDE PICK UP A PARK PASSPORT Come Out & Play 5K Race Series Pet Friendly Lodging Fall Foliage Report EXPLORE M”
+- **Piedmont Forestry Center rental cabin and gate house** (intake-US-5487, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.scfc.gov](https://www.scfc.gov/state-forests/poe-creek-state-forest/)
+  - booking.url = "https://www.scfc.gov/state-forests/poe-creek-state-forest/" · “booking link from our outside research (camping, in the park) row (official system www.scfc.gov)”
+  - features = "fire pit, pole shed and a wooden deck overlooking the Cheoh · “n and spacious living room with satellite TV. Within steps of the cabin door are a grill, fire pit, pole shed and a wooden deck overlooking ”
+  - fees = "$150/night (max 9 people) | $100 deposit is required with a · “kends and special dates (see rental rates and restrictions below). Mountain cabin rental: $150/night (max 9 people). Gate house rental: $150”
+  - hookups.electric = true · “mily-reunion-sized outdoor shelter with plenty of sturdy picnic tables, running water and electricity. Conference Center PFC kitchen PFC sma”
+  - hookups.water = true · “re is a family-reunion-sized outdoor shelter with plenty of sturdy picnic tables, running water and electricity. Conference Center PFC kitch”
+  - map.date_how = "PDF, year 2024 in the link" · “link “View/download the Poe Creek State Forest WMA map””
+  - map.url = "https://www.scfc.gov/wp-content/uploads/2024/01/WMA-PoeCree · “link “View/download the Poe Creek State Forest WMA map” -> https://www.scfc.gov/wp-content/uploads/2024/01/WMA-PoeCreekStateForest.pdf”
+  - phone = "(803) 737-8483" · “nder; participants should pre-register online or by calling (803) 737-8483 . Participants should also bring their own fishing equipmen”
+  - restrooms = "yes (kind not stated)" · “on Highway 11; it has two parking lots, trails, picnic tables, a bike rack and a portable restroom. From the upper parking lot, follow the t”
+- **Sugarloaf Mountain, Campbell's Lake, Hunter/Lee/Sexton Pond and equine campsites (20)** (intake-US-5488, agency (outside research camping-us-oct31), status ok, 15 facts) · [www.scfc.gov](https://www.scfc.gov/state-forests/sand-hills-state-forest/)
+  - booking.url = "https://www.scfc.gov/state-forests/sand-hills-state-forest/ · “booking link from our outside research (camping, in the park) row (official system www.scfc.gov)”
+  - features = "fire ring or fireplace and trash can" · “ut shelters at Hunter Pond, Lee Pond and Sexton Pond. Most campsites have a picnic table, fire ring or fireplace and trash can. There are th”
+  - fees = "$15/day | $10/day | $15 per night | $10 per night" · “amily camping sites with shelters (1A, 1B, 2, 5, 6, 7 and the shelter at Campbell’s Lake) $15/day Family camping sites without shelters (3, ”
+  - hookups.electric = true · “ine through the SC Department of Natural Resources’ Online Customer Service Portal . Only electric motors are allowed on the ponds, except f”
+  - map.date_how = "PDF, year 2021 in the link" · “link “View/download the Sand Hills State Forest WMA map””
+  - map.url = "https://www.scfc.gov/wp-content/uploads/2021/06/wma-sandhil · “link “View/download the Sand Hills State Forest WMA map” -> https://www.scfc.gov/wp-content/uploads/2021/06/wma-sandhills.pdf”
+  - phone = "(843) 498-6478" · “4). For more information, please contact the main office at (843) 498-6478. Sand Hills State Forest map View/download the official San”
+  - reservable = true · “ikers using the trails or for others using the day-use areas, shelters or ponds; however, reservations are required to use the shelters and ”
+  - restrooms = "yes (kind not stated)" · “Most campsites have a picnic table, fire ring or fireplace and trash can. There are three restroom facilities: one near Mountain Pond, one a”
+  - rules.generators = "Generators ARE allowed at campsites" · “rs. Campers must camp in the reserved site. Lanterns must not be hung in trees or bushes. Generators ARE allowed at campsites. The person ob”
+- **Hamilton Branch State Park** (US-2897, state, status ok, 11 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/hamilton-branch/camping)
+  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
+  - booking.url = "https://reserve.southcarolinaparks.com/hamilton-branch" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/hamilton-branch”
+  - dump_station = true · “ch include restroom facilities with hot showers are also located throughout the park. Two dump stations are available for RVs. Camping Reser”
+  - hookups.electric = true · “contacting the park directly. Standard Sites with Elec. & Water: 173 sites with water and electricity Designated Tent Sites: 11 sites are av”
+  - hookups.water = true · “vation by contacting the park directly. Standard Sites with Elec. & Water: 173 sites with water and electricity Designated Tent Sites: 11 si”
+  - phone_hint = "(864) 333-2223" · “ks Official Site Hamilton Branch DIRECTIONS 111 Campground RD Plum Branch, SC 29845 PHONE 864.333.2223 EMAIL MAKE A RESERVATION TOP 5 THINGS”
+  - restrooms = "yes (kind not stated)" · “Lake is available. Some sites accommodate RVs up to 40 feet, others up to 35 feet. Eight comfort stations which include restroom facilities ”
+  - rules.pets = "Pets are allowed in most outdoor areas provided they are ke · “m. ADMISSION $3 adults; $1.50 SC seniors; $1 children age 6-15; age 5 & younger free PETS Pets are allowed in most outdoor areas provided th”
+  - rv_max_ft = 40 · “ion: Camping along the shores of Strom Thurmond Lake is available. Some sites accommodate RVs up to 40 feet, others up to 35 feet. Eight com”
+  - showers = true · “, others up to 35 feet. Eight comfort stations which include restroom facilities with hot showers are also located throughout the park. Two ”
+- **Calhoun Falls State Park** (US-2887, state, status ok, 11 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/calhoun-falls/camping)
+  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
+  - booking.url = "https://reserve.southcarolinaparks.com/calhoun-falls" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/calhoun-falls”
+  - hookups.electric = true · “ted along the shores of Lake Russell. Two of the campgrounds provide individual water and electrical hookups. Some of these sites accommodat”
+  - hookups.water = true · “s are located along the shores of Lake Russell. Two of the campgrounds provide individual water and electrical hookups. Some of these sites ”
+  - phone_hint = "(864) 447-8267" · “ficial Site Calhoun Falls DIRECTIONS 46 Maintenance Shop RD Calhoun Falls, SC 29628 PHONE 864.447.8267 EMAIL MAKE A RESERVATION TOP 5 THINGS”
+  - restrooms = "yes (kind not stated)" · “centralized water. All but one tent site is waterfront. Each campground is convenient to restrooms with hot showers. Camping Reservations: T”
+  - rules.pets = "Pets are allowed in most outdoor areas provided they are ke · “ly ADMISSION $3 adults; $1.50 SC seniors; $1 children age 6-15; age 5 & younger free PETS Pets are allowed in most outdoor areas provided th”
+  - rv_max_ft = 40 · “pgrounds provide individual water and electrical hookups. Some of these sites accommodate RVs up to 40 feet, others up to 30 feet. While ten”
+  - showers = true · “All but one tent site is waterfront. Each campground is convenient to restrooms with hot showers. Camping Reservations: To make a camping re”
+  - sites.tent = 14 · “ing the park directly. Standard Sites with Elec. & Water: 86 sites Designated Tent Sites: 14 walk-in tent sites Laundry Facilities: Yes Dump”
 
 ## US-FL: 12 random samples (records with facts; seed = the date)
 
