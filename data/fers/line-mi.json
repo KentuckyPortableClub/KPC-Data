@@ -4,8 +4,8 @@
  "states": [
   "US-MI"
  ],
- "since": "2026-11-06",
- "date": "2026-11-06 09:31 UTC",
+ "since": "2026-11-07",
+ "date": "2026-11-07 00:29 UTC",
  "verdict": "STOPPED",
  "why": [
   "missing check: 2547 of 4278 expected pairs were never looked at (60%; 1001 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (2506); <park>: not in this run (another state, retired, or no POTA pin) (30); <park>: not in this run (another state, retired, or no POTA pin); <park>: no official boun (8)"
@@ -30,23 +30,23 @@
  },
  "report": {
   "pass1": {
-   "date": "2026-11-06",
-   "pairs tested": 2327,
-   "pairs whose boxes touch": 2327
+   "date": "2026-11-07",
+   "pairs tested": 2276,
+   "pairs whose boxes touch": 2276
   },
   "pass2": {
    "agree with the pass before": 666,
-   "date": "2026-11-06",
+   "date": "2026-11-07",
    "pairs tested": 167
   },
   "pass3": {
    "agree with the pass before": 618,
-   "date": "2026-11-06",
+   "date": "2026-11-07",
    "pairs tested": 164
   },
   "pass5": {
    "checked": 23,
-   "date": "2026-11-06",
+   "date": "2026-11-07",
    "pairs tested": 0,
    "still not checked": 0
   }
