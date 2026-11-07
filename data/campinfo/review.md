@@ -45,7 +45,7 @@ Updated 2026-11-07. Every fact in <area>.json carries its source url, read date 
 | US-NM | 136 | 51 | 78 | 0 | 0 | 0 | 0 | 0 | 7 | 1 | 58 | 0 |
 | US-CA | 1190 | 50 | 752 | 0 | 7 | 0 | 352 | 0 | 29 | 4 | 81 | 0 |
 | US-OR | 496 | 47 | 410 | 0 | 0 | 0 | 0 | 1 | 38 | 8 | 85 | 0 |
-| US-WA | 280 | 0 | 214 | 0 | 0 | 0 | 66 | 0 | 0 | 0 | 0 | 0 |
+| US-WA | 363 | 24 | 212 | 1 | 15 | 0 | 66 | 0 | 45 | 3 | 70 | 0 |
 | US-AK | 368 | 119 | 234 | 0 | 0 | 0 | 4 | 0 | 11 | 7 | 127 | 368 |
 | US-HI | 22 | 10 | 2 | 0 | 0 | 0 | 8 | 0 | 2 | 0 | 12 | 0 |
 | US-MI | 511 | 3 | 110 | 2 | 0 | 10 | 377 | 0 | 9 | 0 | 12 | 0 |
@@ -72,6 +72,7 @@ Updated 2026-11-07. Every fact in <area>.json carries its source url, read date 
 - dep.nj.gov: 17 campgrounds · host resting
 - mdc.mo.gov: 15 campgrounds · host resting (deferred: slow host, next run)
 - azstateparks.com: 15 campgrounds · host resting (robots.txt could not be read: next run)
+- washington.goingtocamp.com: 15 campgrounds · host resting (robots.txt could not be read: next run)
 - midnrreservations.com: 12 campgrounds · host resting
 - www.reservecalifornia.com: 5 campgrounds · host resting (robots.txt could not be read: next run)
 - tpwd.texas.gov: 3 campgrounds · robots.txt says no
@@ -87,9 +88,9 @@ Updated 2026-11-07. Every fact in <area>.json carries its source url, read date 
 - itd.idaho.gov: 30 campgrounds
 - parks.ky.gov: 26 campgrounds
 - southcarolinaparks.com: 22 campgrounds
+- www.recreation.gov: 5 campgrounds
 - www.dec.ny.gov: 5 campgrounds
 - dnr.wisconsin.gov: 4 campgrounds
-- www.recreation.gov: 4 campgrounds
 - gastateparks.org: 3 campgrounds
 - www.fs.usda.gov: 2 campgrounds
 - www.nps.gov: 2 campgrounds
@@ -3287,6 +3288,97 @@ Updated 2026-11-07. Every fact in <area>.json carries its source url, read date 
 
 ## US-WA: 12 random samples (records with facts; seed = the date)
 
+- **Primitive campsites (first-come)** (intake-US-3283, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [www.parks.wa.gov](https://www.parks.wa.gov/295/Turn-Island)
+  - booking.url = "https://www.parks.wa.gov/295/Turn-Island" · “booking link from our outside research (camping, in the park) row (official system www.parks.wa.gov)”
+  - drinking_water = false · “and dogs are not permitted on the island anytime due to the wildlife sensitive areas. No potable water is available. No garbage services on ”
+  - map.date_how = "PDF, year 2025 in the link" · “link “Map and Recreation Guide (PDF)””
+  - map.url = "https://parks.wa.gov/sites/default/files/2025-11/Washington · “link “Map and Recreation Guide (PDF)” -> https://parks.wa.gov/sites/default/files/2025-11/Washington%20State%20Parks%20Recreation%20Guide%20”
+  - phone = "(360) 378-2044" · “e more about fees Contact Email limekiln@parks.wa.gov Phone (360) 378-2044 Get Directions Map & visitor guide Locate Map Satellite Key”
+  - reservable = false · “es The park provides unsheltered picnic tables for day-use visitors. Tables are available first-come, first-served. Camping Primitive campsi”
+  - restrooms = "yes (kind not stated)" · “and Wildlife Service owns the land, and Washington State Parks manages the campsites and restrooms. Boating Turn Island offers two buoys. Ph”
+  - rules.pets = "Dogs not Allowed" · “about fees Contact Email limekiln@parks.wa.gov Phone (360) 378-2044 Get Directions Rules Dogs not Allowed Fires not Allowed Horses not Allow”
+- **Dispersed camping (WDFW land)** (intake-US-12339, agency (outside research camping-us-oct31), status ok, 8 facts) · [wdfw.wa.gov](https://wdfw.wa.gov/about/wdfw-lands/public-conduct)
+  - booking.url = "https://wdfw.wa.gov/about/wdfw-lands/public-conduct" · “booking link from our outside research (camping, in the park) row (official system wdfw.wa.gov)”
+  - hookups.electric = true · “ctronics, furniture, vehicles, signs, or built structures (e.g. buildings, fences, gates, power poles). Pack out what you pack in, including”
+  - map.date_how = "PDF, year 2021 in the link" · “link “Green dot map 11x17 (PDF)””
+  - map.url = "https://wdfw.wa.gov/sites/default/files/2021-05/11x17_green · “link “Green dot map 11x17 (PDF)” -> https://wdfw.wa.gov/sites/default/files/2021-05/11x17_greendot_lt_murray.pdf”
+  - reservable = false · “hunting season. Unattended, non-department owned blinds are available to the public on a first-come, first-served basis. Digging pits to cre”
+  - rules.fires = "Campfires must be limited in size to a maximum of up to 3 f · “ent's use of fire for habitat management, it is unlawful to start or tend any other fire. Campfires must be limited in size to a maximum of ”
+  - rules.pets = "pets must be leashed" · “ilities, pets may be prohibited or regulated. From April through July, all dogs and other pets must be leashed. It is unlawful to cause or a”
+  - rules.stay_limit = "21 days" · “s ( WAC 220-500-030 ). Camping Except when allowed by department notice, campsites have a 21-day limit within a 30-day period. Residence cam”
+- **Primitive campsites (first-come)** (intake-US-3260, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [www.parks.wa.gov](https://www.parks.wa.gov/576/Saddlebag-Island)
+  - booking.url = "https://www.parks.wa.gov/576/Saddlebag-Island" · “booking link from our outside research (camping, in the park) row (official system www.parks.wa.gov)”
+  - drinking_water = false · “res Allowed in Designated Areas Boat-in Only See all other general park rules There is no potable water on the island. There is no garbage s”
+  - map.date_how = "PDF, year 2023 in the link" · “link “Saddlebag Island State Park Map.pdf””
+  - map.url = "https://parks.wa.gov/sites/default/files/2023-05/Saddlebag% · “link “Saddlebag Island State Park Map.pdf” -> https://parks.wa.gov/sites/default/files/2023-05/Saddlebag%20Island%20State%20Park%20Map.pdf”
+  - phone = "(360) 376-2073" · “re about fees Contact Email sucia.island@parks.wa.gov Phone (360) 376-2073 Get Directions Map & visitor guide Locate Map Satellite Key”
+  - reservable = false · “lable. Camping Four primitive campsites include a picnic table and firepit, are available first-come, first-served. One campsite is part of ”
+  - rules.fires = "fire pits and grills" · “main content Menu Search Search Alerts Burn Ban - Level 1 Fires allowed in all designated fire pits and grills. Propane and gas grills allow”
+  - rules.pets = "Dogs Allowed on Leash" · “ut fees Contact Email sucia.island@parks.wa.gov Phone (360) 376-2073 Get Directions Rules Dogs Allowed on Leash Fires Allowed in Designated ”
+- **Primitive campsites (first-come)** (intake-US-12608, agency (outside research camping-us-oct31), status ok, 4 facts) · [parks.wa.gov](https://parks.wa.gov/about/news-center/field-guide-blog/burrows-island-marine-state-park-history)
+  - booking.url = "https://parks.wa.gov/about/news-center/field-guide-blog/bur · “booking link from our outside research (camping, in the park) row (official system parks.wa.gov)”
+  - hookups.electric = true · “ent was widely celebrated as a highlight of the United States’ challenge to British naval power during the War of 1812. Burrows famously tol”
+  - map.date_how = "PDF, year 2025 in the link" · “link “Map and Recreation Guide (PDF)””
+  - map.url = "https://parks.wa.gov/sites/default/files/2025-11/Washington · “link “Map and Recreation Guide (PDF)” -> https://parks.wa.gov/sites/default/files/2025-11/Washington%20State%20Parks%20Recreation%20Guide%20”
+- **Dispersed / primitive camping** (intake-US-10655, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [wdfw.wa.gov](https://wdfw.wa.gov/places-to-go/wildlife-areas/banks-lake-wildlife-area-unit)
+  - booking.url = "https://wdfw.wa.gov/places-to-go/wildlife-areas/banks-lake- · “booking link from our outside research (camping, in the park) row (official system wdfw.wa.gov)”
+  - phone = "(509) 754-4624" · “unties, please call the Region 2 office customer service at 509-754-4624. The Banks Lake Unit is located north of Moses Lake and lie”
+  - restrooms = "some" · “s located north of Moses Lake and lies just south of Grand Coulee. Several boat launches, restrooms and campgrounds can be accessed from Hig”
+  - rules.fires = "Campfires are allowed from October 1 through April, unless  · “Water Access Site. Dispersed camping is also allowed for 14 days within a 30-day period. Campfires are allowed from October 1 through April,”
+  - season = "October 1 through April" · “ed camping is also allowed for 14 days within a 30-day period. Campfires are allowed from October 1 through April, unless othersise posted. ”
+- **Primitive campsites (first-come)** (intake-US-3162, agency (outside research camping-us-oct31), status ok (browser), 10 facts) · [parks.wa.gov](https://parks.wa.gov/find-parks/state-parks/blind-island-marine-state-park)
+  - booking.url = "https://parks.wa.gov/find-parks/state-parks/blind-island-ma · “booking link from our outside research (camping, in the park) row (official system parks.wa.gov)”
+  - drinking_water = false · “d in Designated Areas Horses not Allowed Boat-in Only See all other general park rules No potable water is available on the island. No garba”
+  - fees = "$23 for buoy | $1 per vessel foot for dock" · “s and a feeling of escape. Hours 8 a.m. - Dusk year round Fees Moorage - Docks and buoys: $23 for buoy, $1 per vessel foot for dock See more”
+  - map.date_how = "PDF, year 2025 in the link" · “link “Map and Recreation Guide (PDF)””
+  - map.url = "https://parks.wa.gov/sites/default/files/2025-11/Washington · “link “Map and Recreation Guide (PDF)” -> https://parks.wa.gov/sites/default/files/2025-11/Washington%20State%20Parks%20Recreation%20Guide%20”
+  - phone = "(360) 378-2044" · “e more about fees Contact Email limekiln@parks.wa.gov Phone (360) 378-2044 Get Directions Map & visitor guide Locate Map Satellite Key”
+  - reservable = false · “long ago. Camping This park has four primitive Cascade Marine Trail campsites, available first-come, first-served. Their use is restricted t”
+  - restrooms = "vault" · “ou're not allowed to camp at this park but may enjoy the island for day use. There is one composting toilet and two campsites, situated at t”
+  - rules.fires = "fire pits and grills" · “main content Menu Search Search Alerts Burn Ban - Level 1 Fires allowed in all designated fire pits and grills. Propane and gas grills allow”
+  - rules.pets = "Dogs Allowed on Leash" · “about fees Contact Email limekiln@parks.wa.gov Phone (360) 378-2044 Get Directions Rules Dogs Allowed on Leash Fires Allowed in Designated A”
+- **Primitive campsites (first-come)** (intake-US-3229, agency (outside research camping-us-oct31), status ok (browser), 8 facts) · [www.parks.wa.gov](https://www.parks.wa.gov/544/Matia-Island)
+  - booking.url = "https://www.parks.wa.gov/544/Matia-Island" · “booking link from our outside research (camping, in the park) row (official system www.parks.wa.gov)”
+  - drinking_water = false · “re open for public access. All other areas are closed to protect habitat and wildlife. No potable water is available. There is no garbage se”
+  - fees = "$23 for buoy | $1 per vessel foot for dock" · “d accessible only by boat. Hours 8 a.m. - Dusk year round Fees Moorage - Docks and buoys: $23 for buoy, $1 per vessel foot for dock See more”
+  - map.date_how = "PDF, year 2023 in the link" · “link “Matia Island State Park Map.pdf””
+  - map.url = "https://parks.wa.gov/sites/default/files/2023-04/Matia%20Is · “link “Matia Island State Park Map.pdf” -> https://parks.wa.gov/sites/default/files/2023-04/Matia%20Island%20State%20Park%20Map.pdf”
+  - phone = "(360) 376-2073" · “e more about fees Contact Email limekiln@parks.wa.gov Phone (360) 376-2073 Get Directions Map & visitor guide Locate Map Satellite Key”
+  - reservable = false · “done here with advanced experience and gear. Camping Camping at Rolfe Cove campground is first-come, first-served. There are six sites avail”
+  - rules.pets = "Dogs not Allowed" · “about fees Contact Email limekiln@parks.wa.gov Phone (360) 376-2073 Get Directions Rules Dogs not Allowed Fires not Allowed Horses not Allow”
+- **Dispersed camping (WDFW land)** (intake-US-12244, agency (outside research camping-us-oct31), status ok, 8 facts) · [wdfw.wa.gov](https://wdfw.wa.gov/about/wdfw-lands/public-conduct)
+  - booking.url = "https://wdfw.wa.gov/about/wdfw-lands/public-conduct" · “booking link from our outside research (camping, in the park) row (official system wdfw.wa.gov)”
+  - hookups.electric = true · “ctronics, furniture, vehicles, signs, or built structures (e.g. buildings, fences, gates, power poles). Pack out what you pack in, including”
+  - map.date_how = "PDF, year 2021 in the link" · “link “Green dot map 11x17 (PDF)””
+  - map.url = "https://wdfw.wa.gov/sites/default/files/2021-05/11x17_green · “link “Green dot map 11x17 (PDF)” -> https://wdfw.wa.gov/sites/default/files/2021-05/11x17_greendot_lt_murray.pdf”
+  - reservable = false · “hunting season. Unattended, non-department owned blinds are available to the public on a first-come, first-served basis. Digging pits to cre”
+  - rules.fires = "Campfires must be limited in size to a maximum of up to 3 f · “ent's use of fire for habitat management, it is unlawful to start or tend any other fire. Campfires must be limited in size to a maximum of ”
+  - rules.pets = "pets must be leashed" · “ilities, pets may be prohibited or regulated. From April through July, all dogs and other pets must be leashed. It is unlawful to cause or a”
+  - rules.stay_limit = "21 days" · “s ( WAC 220-500-030 ). Camping Except when allowed by department notice, campsites have a 21-day limit within a 30-day period. Residence cam”
+- **Hope Island (Skagit) primitive campsites** (intake-US-3199, agency (outside research camping-us-oct31), status ok (browser), 8 facts) · [parks.wa.gov](https://parks.wa.gov/find-parks/state-parks/hope-island-marine-state-park-skagit-county)
+  - booking.url = "https://parks.wa.gov/find-parks/state-parks/hope-island-mar · “booking link from our outside research (camping, in the park) row (official system parks.wa.gov)”
+  - fees = "$10 per night" · “Summer: 6:30 a.m. - Dusk Winter: 8:00 a.m. - Dusk Fees Overnight Unattended Vehicle Fee: $10 per night Moorage - Buoys: $23 for buoy See mor”
+  - map.date_how = "PDF, year 2025 in the link" · “link “Map and Recreation Guide (PDF)””
+  - map.url = "https://parks.wa.gov/sites/default/files/2025-11/Washington · “link “Map and Recreation Guide (PDF)” -> https://parks.wa.gov/sites/default/files/2025-11/Washington%20State%20Parks%20Recreation%20Guide%20”
+  - phone = "(360) 675-3767" · “about fees Contact Email deception.pass@parks.wa.gov Phone (360) 675-3767 Get Directions Map & visitor guide Locate Map Satellite Key”
+  - reservable = false · “onshore, visit the boating moorage page for more information. Camping The park offers six first-come, first-serve primitive campsites on the”
+  - restrooms = "vault" · “imitive campsites on the north shore bay. The pay station is near the eastern campsite. A vault toilet is in the woods 100-feet south of the”
+  - rules.pets = "Dogs not Allowed" · “fees Contact Email Deception.Pass@PARKS.WA.GOV Phone (360) 675-3767 Get Directions Rules Dogs not Allowed Fires Allowed in Designated Areas ”
+- **Dispersed / primitive camping** (intake-US-10712, agency (outside research camping-us-oct31), status ok, 6 facts) · [wdfw.wa.gov](https://wdfw.wa.gov/places-to-go/wildlife-areas/quincy-lakes-wildlife-area-unit)
+  - booking.how = "online: wdfw.wa.gov" · “link “Evergreen Reservoir E””
+  - booking.url = "https://wdfw.wa.gov/places-to-go/water-access-sites/evergre · “link “Evergreen Reservoir E” -> https://wdfw.wa.gov/places-to-go/water-access-sites/evergreen-reservoir-e-1604”
+  - hookups.electric = true · “history The parcels making up this area were purchased between 1951 and 2023. Funder Fund Power, dike & irrigation districts Mitigation Fund”
+  - restrooms = "vault" · “e unit. Parking options are plentiful on this unit. Most of the larger parking areas have vault toilets or porta-potties. Many boat ramps ar”
+  - rules.fires = "Campfires are prohibited in the Ancient Lakes area, defined · “allowed year-round. Access passes can be purchased on site from an automated pay station. Campfires are prohibited in the Ancient Lakes area”
+  - season = "October 1 through April" · “rsed camping is allowed for 14 days within a 30-day period and campfires are allowed from October 1 through April. A Discover Pass is requir”
+- **Dispersed / primitive camping** (intake-US-12541, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wdfw.wa.gov](https://wdfw.wa.gov/places-to-go/wildlife-areas/buzzard-lake-wildlife-area-unit)
+  - booking.url = "https://wdfw.wa.gov/places-to-go/wildlife-areas/buzzard-lak · “booking link from our outside research (camping, in the park) row (official system wdfw.wa.gov)”
+  - restrooms = "none" · “ands: please know the Public Conduct Rules . Public facility information: Parking area No restroom Primitive boat launch at [Buzzard Lake wa”
+- **Dispersed / primitive camping** (intake-US-12252, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [wdfw.wa.gov](https://wdfw.wa.gov/places-to-go/wildlife-areas/seep-lakes-wildlife-area-unit)
+  - booking.url = "https://wdfw.wa.gov/places-to-go/wildlife-areas/seep-lakes- · “booking link from our outside research (camping, in the park) row (official system wdfw.wa.gov)”
+  - restrooms = "vault" · “ow the Public Conduct Rules . Public facility information: Several parking areas provided Outhouse and boat ramps are at the Heart Lake, Win”
+  - rules.fires = "campfires are allowed from October 1 through April" · “ess otherwise posted, dispersed camping is allowed for 14 days within a 30-day period and campfires are allowed from October 1 through April”
+  - season = "October 1 through April" · “rsed camping is allowed for 14 days within a 30-day period and campfires are allowed from October 1 through April. A Discover Pass is requir”
 
 ## US-AK: 12 random samples (records with facts; seed = the date)
 
