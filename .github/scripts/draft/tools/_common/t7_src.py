@@ -576,8 +576,8 @@ class FakeWeb(Web):
 
 
 def web_rules_selftest():
-    """club decisions (Oct 31): one honest User-Agent, >= 2 s per host, a 403 on data accepted and the host marked
-    blocked; a 4xx on robots.txt alone = no robots rules, the data is still read (shared polite reader)"""
+    """club decisions (Oct 31): one honest User-Agent, >= 2 s per host, a robots 401/403/429/5xx = STOP (Nov 7 rule);
+    404/410 = no robots file (shared polite reader)"""
     problems = list(polite_selftest())
     w = Web(None, gap=1.0)
     if w.gap < 2.0: problems.append(f'gap per host is {w.gap} s, must be >= 2 s')
@@ -593,12 +593,10 @@ def web_rules_selftest():
         try:
             w.get_json(u, {'f': 'json'}, cache=False); problems.append('a 403 did not raise')
         except RuntimeError as e:
-            if 'BLOCKED' not in str(e) or '403 Forbidden on https://blocked.example.gov/' not in str(e): problems.append(f'403 reason missing: {e}')
-    # robots.txt answered 403 (and then the data too): 2 calls, robots.txt + the first data request, nothing more
-    if len(calls) != 2: problems.append(f'a 403 host was asked {len(calls)} times (robots.txt + one data request, then nothing more)')
-    if not w.blocked.get('blocked.example.gov', '').startswith('403 Forbidden on https://blocked.example.gov/a/'):
-        problems.append(f'host not marked blocked by the DATA 403: {w.blocked}')
-    for code in (401, 403, 404, 451):      # a 4xx on robots.txt alone: no robots rules, the layer is still read
+            if not any(k in str(e).lower() for k in ('robots', 'blocked')): problems.append(f'403 reason missing: {e}')
+    # Nov 7 standing rule: robots.txt answered 403 = STOP. Only robots.txt is asked, never the data.
+    if len(calls) != 1: problems.append(f'a robots-403 host was asked {len(calls)} times (robots.txt only, then nothing more)')
+    for code, stop in ((401, True), (403, True), (429, True), (500, True), (404, False), (410, False)):
         w2, calls2 = Web(None, gap=1.0), []
         w2.gap, w2.log = 0, (lambda *a: None)
 
@@ -608,11 +606,11 @@ def web_rules_selftest():
         w2._raw = fake2
         try:
             j, _ = w2.get_json('https://robots4xx.example.gov/arcgis/rest/services/T/FeatureServer', {'f': 'json'}, cache=False)
-            j2, _ = w2.get_json('https://robots4xx.example.gov/arcgis/rest/services/T/FeatureServer/0', {'f': 'json'}, cache=False)
-            if j != {'layers': []} or j2 != {'layers': []} or w2.blocked or len(calls2) != 3:
-                problems.append(f'robots.txt {code} alone must not block ({w2.blocked}, {calls2})')
+            if stop: problems.append(f'robots.txt {code} must STOP the layer, but it was read ({calls2})')
+            elif j != {'layers': []}: problems.append(f'robots.txt {code} (no robots file) should read the layer, got {j}')
         except Exception as e:      # noqa: BLE001
-            problems.append(f'robots.txt {code} alone must not block the layer: {e}')
+            if not stop: problems.append(f'robots.txt {code} (no robots file) must not block the layer: {e}')
+            elif any(not c.endswith('/robots.txt') for c in calls2): problems.append(f'robots.txt {code}: a data request was made after the STOP ({calls2})')
     return problems
 
 

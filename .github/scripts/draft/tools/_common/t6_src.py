@@ -638,15 +638,16 @@ def selftest():
         if not banned('https://www.protectedplanet.net/en') or not banned('https://overpass-api.de/api'):
             ok = False
             print('banned-source check wrong')
-        # Spain's national WFS answers 403 from here: kept, opens=false, "blocked from here (403)"
+        # Spain's national WFS answers 403 from here (robots.txt too). Nov 7 standing rule: a robots 401/403 is a STOP,
+        # so the link is kept, opens=false, and the reason names robots or the block; no data request is read.
         bw = FakeWeb([{'match': ['geoserver.iepnb.es'], 'status': 403, 'file': routes[0]['file']}])
         bo = Opener(bw).open('https://geoserver.iepnb.es/geoserver/ENP/wms?service=WFS&request=GetCapabilities', 'wfs')
-        if bo[0] is not False or not bo[2].startswith('blocked from here (403): 403 Forbidden on https://geoserver.iepnb.es/'):
+        if bo[0] is not False or not any(w in str(bo[2]).lower() for w in ('robots', 'blocked')):
             ok = False
-            print('a 403 link should read "blocked from here (403)", got', bo)
-        if 'geoserver.iepnb.es' not in bw.blocked:
+            print('a robots-403 link should be kept closed with a robots/blocked reason, got', bo)
+        if bw.stats['requests'] > 1:
             ok = False
-            print('the 403 host was not marked blocked')
+            print('a robots-403 host was asked', bw.stats['requests'], 'times (only robots.txt allowed)')
         if not os.path.exists(os.path.join(tmp, 'state.json')):
             ok = False
             print('no state.json')
