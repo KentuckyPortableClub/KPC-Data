@@ -629,73 +629,77 @@
    "parks": 536,
    "status": "partial",
    "updated": "2026-11-06"
+  },
+  "US-WV": {
+   "checked": 172,
+   "counts": {
+    "fees": 9,
+    "hours": 134,
+    "hours_lines": 142,
+    "no_page": 0,
+    "nothing": 9,
+    "parks": 172,
+    "permits": 1,
+    "season": 8,
+    "season_lines": 9
+   },
+   "left": 0,
+   "parks": 172,
+   "status": "done",
+   "updated": "2026-11-07"
+  },
+  "US-WY": {
+   "checked": 294,
+   "counts": {
+    "fees": 23,
+    "hours": 28,
+    "hours_lines": 36,
+    "no_page": 0,
+    "nothing": 218,
+    "parks": 294,
+    "permits": 3,
+    "season": 38,
+    "season_lines": 50
+   },
+   "left": 0,
+   "parks": 294,
+   "status": "done",
+   "updated": "2026-11-07"
   }
  },
- "hosts": {
-  "www.blm.gov": 1794038563.7817116,
-  "www.fws.gov": 1794036013.0793943
- },
+ "hosts": {},
  "last": {
   "areas": [
-   "US-SD",
-   "US-TN",
-   "US-TX",
-   "US-UT",
-   "US-VA",
-   "US-VT",
-   "US-WA",
-   "US-WI"
+   "US-WV",
+   "US-WY"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "crawl_delay_skip": 1,
-   "deferred": 67,
-   "dropped_queued": 3,
    "errors": 0,
+   "for_person": 1,
    "for_person_urls": [
     [
-     "https://www.mitigationcommission.gov/wetlands/wetlands_ulwp.html",
-     "Crawl-delay 300 s is over 120 s: not read"
-    ],
-    [
-     "https://www.wildlife.utah.gov/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.wildlife.utah.gov this run"
-    ],
-    [
-     "https://www.virginiastateparks.gov/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.virginiastateparks.gov this run"
-    ],
-    [
-     "http://www.nae.usace.army.mil/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.nae.usace.army.mil this run"
-    ],
-    [
-     "https://www.fws.org/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.fws.org this run"
-    ],
-    [
-     "https://www.nww.usace.army.mil/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.nww.usace.army.mil this run"
+     "http://www.fortwiki.com/Fort_Bonneville_(1)",
+     "HTTP 403 twice"
     ]
    ],
-   "requests": 1591,
-   "rested": 395,
-   "retry403": 2,
-   "robots": 7,
-   "robots_unreadable": 5,
+   "requests": 859,
+   "rested": 0,
+   "retry403": 1,
+   "robots": 0,
    "strikes": 2
   },
   "stat": {
    "errors": 0,
-   "fees": 165,
-   "hours": 133,
-   "no_page": 7,
-   "none": 944,
-   "pages_read": 1218,
-   "parks": 1224,
-   "permits": 46,
-   "skipped_fresh": 883
+   "fees": 32,
+   "hours": 162,
+   "no_page": 0,
+   "none": 279,
+   "pages_read": 548,
+   "parks": 466,
+   "permits": 4,
+   "skipped_fresh": 0
   },
-  "when": "2026-11-06"
+  "when": "2026-11-07"
  }
 }

@@ -1,12 +1,13 @@
 # Hours, fees & permits bot: review (facts only; nothing here reaches a card until Brandon's GO)
 
-Updated 2026-11-06. Every line is the agency's own sentence (H2). Refresh every 90 days.
+Updated 2026-11-07. Every line is the agency's own sentence (H2). Refresh every 90 days.
 
 | area | parks | hours | fees | permits | nothing found | no page |
 |---|---|---|---|---|---|---|
 | US-TN | 277 | 9 | 15 | 1 | 7 | 2 |
 | US-NC | 253 | 66 | 71 | 9 | 67 | 2 |
 | US-VA | 184 | 82 | 69 | 16 | 22 | 0 |
+| US-WV | 172 | 134 | 9 | 1 | 9 | 0 |
 | US-GA | 237 | 26 | 32 | 5 | 176 | 0 |
 | US-AL | 155 | 30 | 2 | 3 | 108 | 6 |
 | US-FL | 460 | 23 | 2 | 4 | 200 | 0 |
@@ -27,6 +28,7 @@ Updated 2026-11-06. Every line is the agency's own sentence (H2). Refresh every 
 | US-OK | 205 | 42 | 12 | 4 | 152 | 0 |
 | US-TX | 222 | 15 | 27 | 32 | 49 | 0 |
 | US-KS | 145 | 8 | 11 | 1 | 13 | 0 |
+| US-WY | 294 | 28 | 23 | 3 | 218 | 0 |
 | US-ID | 63 | 0 | 2 | 0 | 32 | 0 |
 | US-MT | 254 | 39 | 73 | 9 | 154 | 1 |
 | US-NV | 367 | 32 | 39 | 5 | 184 | 0 |
@@ -175,6 +177,42 @@ Updated 2026-11-06. Every line is the agency's own sentence (H2). Refresh every 
   - Hours: “Park grounds are open daily, sunrise to sunset.” · [www.nps.gov](https://www.nps.gov/frsp/planyourvisit/hours.htm)
   - Hours: “The Chatham Main Building is open and staffed Saturday and Sunday, 9 am to 5 pm.” · [www.nps.gov](https://www.nps.gov/frsp/planyourvisit/hours.htm)
   - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/frsp/planyourvisit/fees.htm)
+
+## US-WV: 12-park sample for chat 8
+
+- **US-0015 Chesapeake and Ohio Canal National Historical Park**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/choh/planyourvisit/fees.htm)
+- **US-0607 Canaan Valley National Wildlife Refuge**
+  - Hours: “The refuge is open daily from dawn to dusk.” · [www.fws.gov](https://www.fws.gov/locations/canaan-valley-national-wildlife-refuge)
+  - Hours: “Lands, Roads, and Trails : Seven days a week, sunrise to sunset” · [www.fws.gov](https://www.fws.gov/locations/canaan-valley-national-wildlife-refuge)
+  - Fees: “There are no fees for access to the refuge.” · [www.fws.gov](https://www.fws.gov/locations/canaan-valley-national-wildlife-refuge)
+  - Office hours: “Office Hours : Monday - Friday, 8:00 am - 4:00 pm.” · [www.fws.gov](https://www.fws.gov/locations/canaan-valley-national-wildlife-refuge)
+- **US-0608 Ohio River Islands National Wildlife Refuge**
+  - Hours: “Refuge lands, including islands in the river and all refuge trails, are open every day from an hour before sunrise to an hour after sunset” · [www.fws.gov](https://www.fws.gov/refuge/ohio-river-islands/visit-us)
+  - Hours: “All refuge property is open to the public from an hour before sunrise to an hour after sunset.” · [www.fws.gov](https://www.fws.gov/refuge/ohio-river-islands/visit-us)
+- **US-0629 Tomlinson Run State Park**
+  - Hours: “From sunrise to sunset, each West Virginia State Park has its own set of stunning views.” · [wvstateparks.com](https://wvstateparks.com/parks/tomlinson-run-state-park/)
+- **US-0631 Cathedral State Park**
+  - Hours: “From sunrise to sunset, each West Virginia State Park has its own set of stunning views.” · [wvstateparks.com](https://wvstateparks.com/park/cathedral-state-park/)
+- **US-0695 Gauley River National Recreation Area**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/gari/planyourvisit/fees.htm)
+- **US-0696 New River Gorge National Park**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/neri/planyourvisit/fees.htm)
+  - Fees: “There is NO FEE to enter New River Gorge National Park and Preserve.” · [www.nps.gov](https://www.nps.gov/neri/planyourvisit/fees.htm)
+- **US-0697 Bluestone National Wild and Scenic River**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/blue/planyourvisit/fees.htm)
+  - Fees: “There is no fee to enter Bluestone National Scenic River.” · [www.nps.gov](https://www.nps.gov/blue/planyourvisit/fees.htm)
+- **US-0735 Harpers Ferry National Historical Park**
+  - Hours: “Park museums/exhibits and restrooms in the historic Lower Town are open daily from 9 am to 5 pm.” · [www.nps.gov](https://www.nps.gov/hafe/planyourvisit/hours.htm)
+  - Hours: “Trails and parking lots are open daily from 30 minutes before sunrise to 30 minutes after sunset.” · [www.nps.gov](https://www.nps.gov/hafe/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/hafe/planyourvisit/fees.htm)
+- **US-10031 Elk River Trail State Trail**
+  - Hours: “From sunrise to sunset, each West Virginia State Park has its own set of stunning views.” · [wvstateparks.com](https://wvstateparks.com/park/elk-river-trail/)
+- **US-12051 White Sulphur Springs National Fish Hatchery**
+  - Hours: “Hatchery tours are available free to the public Monday through Friday from 8am to 3pm and grounds are open from dawn until dusk.” · [www.fws.gov](https://www.fws.gov/locations/white-sulphur-springs-national-fish-hatchery)
+  - Hours: “Hours of Operation, including federal holidays Monday through Friday: 7:00 AM - 3:30 PM.” · [www.fws.gov](https://www.fws.gov/locations/white-sulphur-springs-national-fish-hatchery)
+- **US-12052 Bowden State Fish Hatchery**
+  - Hours: “Exit gates close at 6 PM” · [wvdnr.gov](https://wvdnr.gov/fishing/fish-stocking/)
 
 ## US-GA: 12-park sample for chat 8
 
@@ -968,6 +1006,46 @@ Updated 2026-11-06. Every line is the agency's own sentence (H2). Refresh every 
   - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/poex/planyourvisit/fees.htm)
 - **US-4579 Santa Fe National Historic Trail**
   - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/safe/planyourvisit/fees.htm)
+
+## US-WY: 12-park sample for chat 8
+
+- **US-0031 Grand Teton National Park**
+  - Hours: “Grand Teton National Park is open 24 hours every day, year-round.” · [www.nps.gov](https://www.nps.gov/grte/planyourvisit/hours.htm)
+  - Hours: “Open year-round, Sunday Services June-September” · [www.nps.gov](https://www.nps.gov/grte/planyourvisit/hours.htm)
+  - Fees: “The fee waiver will allow qualifying groups free entry into the park for educational or scientific purposes.” · [www.nps.gov](https://www.nps.gov/grte/planyourvisit/fees.htm)
+  - Fees: “Each non-US resident aged 16 and older visiting Grand Teton National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass.” · [www.nps.gov](https://www.nps.gov/grte/planyourvisit/fees.htm)
+- **US-0070 Yellowstone National Park**
+  - Hours: “Yellowstone is open 24 hours per day, 365 days per year” · [www.nps.gov](https://www.nps.gov/yell/planyourvisit/operating-dates.htm)
+  - Fees: “Each non-US resident aged 16 and older visiting Yellowstone National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass.” · [www.nps.gov](https://www.nps.gov/yell/planyourvisit/fees.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/yell/planyourvisit/fees.htm)
+- **US-0609 Bamforth National Wildlife Refuge**
+  - Hours: “Visiting Hours: The refuge is open daily from 1/2 hour before sunrise to 1/2 hour after sunset, unless you are participating in a hunt, then 1 hour before sunrise to 1 hour after sunset are allowed.” · [www.fws.gov](https://www.fws.gov/refuge/bamforth/visit-us)
+- **US-0611 Hutton Lake National Wildlife Refuge**
+  - Hours: “Visiting Hours: The refuge is open daily from 1/2 hour before sunrise to 1/2 hour after sunset.” · [www.fws.gov](https://www.fws.gov/refuge/hutton-lake/visit-us)
+- **US-0613 National Elk National Wildlife Refuge**
+  - Hours: “National Elk Refuge Year-round: Sunrise - Sunset.” · [www.fws.gov](https://www.fws.gov/locations/national-elk-refuge)
+  - Fees: “There is no fee to visit the Refuge.” · [www.fws.gov](https://www.fws.gov/locations/national-elk-refuge)
+  - Fees: “Onsite: There is no fee to visit the Refuge.” · [www.fws.gov](https://www.fws.gov/locations/national-elk-refuge)
+- **US-0698 John D. Rockefeller Jr. National Parkway**
+  - Hours: “Grand Teton National Park is open 24 hours every day, year-round.” · [www.nps.gov](https://www.nps.gov/grte/planyourvisit/hours.htm)
+  - Hours: “Open year-round, Sunday Services June-September” · [www.nps.gov](https://www.nps.gov/grte/planyourvisit/hours.htm)
+  - Fees: “The fee waiver will allow qualifying groups free entry into the park for educational or scientific purposes.” · [www.nps.gov](https://www.nps.gov/grte/planyourvisit/fees.htm)
+  - Fees: “Each non-US resident aged 16 and older visiting Grand Teton National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass.” · [www.nps.gov](https://www.nps.gov/grte/planyourvisit/fees.htm)
+- **US-0817 Fort Laramie National Historic Site**
+  - Hours: “The park grounds are open from sunrise until sunset every day of the year.” · [www.nps.gov](https://www.nps.gov/fola/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/fola/planyourvisit/fees.htm)
+- **US-0920 Devils Tower National Monument**
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/deto/planyourvisit/fees.htm)
+- **US-0934 Fossil Butte National Monument**
+  - Hours: “The park is open sunrise - sunset year round.” · [www.nps.gov](https://www.nps.gov/fobu/planyourvisit/hours.htm)
+  - Hours: “Fall: day after Labor Day through October 31: open daily 8:00 am - 4:30 pm” · [www.nps.gov](https://www.nps.gov/fobu/planyourvisit/hours.htm)
+  - Fees: “All National Park Service sites that charge an entrance fee will offer free admission to US citizens and residents (other fees, including timed entry or reservation fees, may apply).” · [www.nps.gov](https://www.nps.gov/fobu/planyourvisit/fees.htm)
+- **US-10799 Ellis State Wildlife Habitat Management Area**
+  - Hours: “This area open to all human presence at 8:00 am June 1.” · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Ellis)
+- **US-10815 Jackson National Fish Hatchery**
+  - Hours: “Fishing Pond Daily, Year-round 8am - 5pm” · [www.fws.gov](https://www.fws.gov/locations/jackson-national-fish-hatchery)
+- **US-10816 Saratoga National Fish Hatchery**
+  - Hours: “Daily, Year-round 8:00 am - 4:00 pm” · [www.fws.gov](https://www.fws.gov/locations/saratoga-national-fish-hatchery)
 
 ## US-ID: 12-park sample for chat 8
 
