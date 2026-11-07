@@ -137,3 +137,20 @@ Parcel tracer: the 0.2x-2x check is unchanged; new holds are a seed parcel alone
 The ceilings are sanity bounds, not park sizes: change a line in `kpc_trace_limits.py` if a real park trips one. Report columns added: `acres_traced, acres_known, ceiling_acres, edge_share, pin_dist_m`.
 `KPC_NO_NET=1` (set by `kpc_full_suite.py` for every child process): a real HTTP request raises instead of opening a socket.
 Tests: `tests/test_trace_limits_nov7.py` (pure Python, fixtures in `tests/fixtures/tracer_nov7/`); the suite also runs the three tracer selftests listed in `NESTED_SELFTESTS`.
+
+## Nov 7 pin mode (which colour is the park)
+On a **GeoPDF** page the page's own coordinates are known before the colour is chosen, so the POTA pin's pixel is known too. `detect_boundary`
+is then given `pin_px` and chooses the boundary colour **by the pin**, not by total area:
+- a shape must contain the pin, or run within `PIN_NEAR_M` (200 m) of it, or its colour is not the park's;
+- a colour whose shape **contains** the pin beats one that merely runs near it;
+- with an official size (or the park type's expected size) the shape closest to that size wins, and a filled park tint breaks a tie;
+- with no size at all, a filled tint beats a boundary ring, then the tightest shape around the pin wins;
+- the reason records the pick, its estimated acres, how many shapes in that colour sit at the pin, and the runners-up, so a wrong pick can be
+  audited from report.csv alone.
+If **no** colour has a shape at the pin the result is `NO LINE` naming the pin's pixel, instead of a confident outline of the wrong thing.
+This is what stops a statewide sheet's district ring (US-5460, 25.9 M ac) or a road casing (CA-1248) being traced as the park.
+`KPC_TRACE_PIN_PICK=0` restores the old largest-area choice. Without a GeoPDF affine nothing changes: the pin's pixel is not known before the
+fit, so those maps still use the old choice and the Nov 7 size/pin/clip gates catch a bad one.
+Split maps: after the existing 50 m adjacency growth, a wider gap is bridged only when an official size says the pieces belong (0.5x-1.25x,
+nearest first, `kpc_trace_limits.stitch_extra`). Otherwise the further shapes are **listed** in the why for a person, never silently joined or
+silently dropped.

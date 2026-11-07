@@ -280,6 +280,45 @@ def capped_growth(candidates, area_m2, cap_m2):
     return add, capped
 
 
+def stitch_extra(kept_acres, candidates, known_acres, lo=0.5, hi=1.25):
+    """Nov 7 (picture tracer, split-unit maps): which FURTHER shapes in the park colour may join the piece at the pin, once the 50 m
+    adjacency growth has finished. candidates = [(index, distance_m, acres)] for the shapes left out. A gap wider than 50 m is only
+    bridged on evidence: there must be an official size, the kept piece must be under `lo` x it, and adding the nearest pieces must land
+    inside lo..hi x it. With no official size nothing is joined - the shapes are LISTED in the why for a person to judge, which is the
+    honest answer when the page alone cannot say whether they are other units of this park or a neighbouring park.
+    Returns (indices to add, text for the why)."""
+    left = sorted(candidates or [], key=lambda t: (t[1], -t[2]))
+    if not left:
+        return [], ''
+    def _listed(ix):
+        ds = [t[1] for t in left if t[0] in ix] if ix else [t[1] for t in left]
+        rng = f'{min(ds):.0f}' + (f'-{max(ds):.0f}' if max(ds) - min(ds) >= 1 else '')
+        return (f'{len(ds)} more shape(s) in the park colour at {rng} m not joined; they may be other units of this park or a '
+                f'neighbouring park: check by hand')
+    try: k = float(known_acres) if known_acres not in (None, '') else None
+    except (TypeError, ValueError): k = None
+    try: tot = float(kept_acres)
+    except (TypeError, ValueError): tot = None
+    if not k or k <= 0 or tot is None:
+        return [], _listed(None)
+    if tot >= lo * k:
+        return [], _listed(None)            # the piece at the pin is already the size of the park: nothing to add
+    add = []
+    for i, d, a in left:
+        if tot + a > hi * k:
+            continue
+        add.append(i); tot += a
+        if tot >= lo * k:
+            break
+    if tot < lo * k:
+        return [], _listed(None)            # even all of them do not make the official size: not this park's missing units
+    rest = [t[0] for t in left if t[0] not in add]
+    txt = (f'{len(add)} further shape(s) joined on the official size ({tot:,.0f} ac of {k:,.0f} ac known, inside {lo:g}x-{hi:g}x)')
+    if rest:
+        txt += '; ' + _listed(rest)
+    return add, txt
+
+
 def parcel_new_holds(acres, known_acres, park_type, seed_acres=None, grow_cap=1.25):
     """Nov 7 parcel-tracer holds on top of the existing 0.2x-2x size check (which stays as it is): (1) the seed parcel ALONE is over grow_cap x the
     known size (growth capping only ever limited ADDED parcels); (2) no known size at all and the trace is over the type's ceiling (the old

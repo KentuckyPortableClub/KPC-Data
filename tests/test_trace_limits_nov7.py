@@ -83,5 +83,17 @@ check(TL.parcel_new_holds(4500, 4000, 'State Park', seed_acres=4900, grow_cap=1.
 check(TL.parcel_new_holds(900000, 4000, 'State Park', seed_acres=100, grow_cap=1.25) == [], 'known size present: the existing 0.2x-2x check decides, not the ceiling')
 check(TL.parcel_new_holds(10, None, None, grow_cap=0) == [], 'no ceiling trip, no cap')
 
+# split-unit maps: a gap wider than the 50 m adjacency is bridged only on an official size, never silently
+C = [(1, 400.0, 120.0), (2, 2500.0, 80.0)]
+add, txt = TL.stitch_extra(100.0, C, None)
+check(add == [] and 'not joined' in txt and '400-2500 m' in txt, f'no official size: nothing is joined and both are listed, got {add} {txt!r}')
+add, txt = TL.stitch_extra(100.0, C, 300.0)
+check(add == [1] and '220 ac of 300 ac' in txt and 'not joined' in txt, f'with a size: the nearest piece joins, the far one is listed, got {add} {txt!r}')
+check(TL.stitch_extra(100.0, C, 1000.0)[0] == [], 'pieces that still do not make the official size are not joined')
+check(TL.stitch_extra(280.0, C, 300.0)[0] == [], 'a pin piece already the size of the park gains nothing')
+check(TL.stitch_extra(100.0, [(1, 400.0, 900.0)], 300.0)[0] == [], 'a piece that would overshoot 1.25x is not joined')
+check(TL.stitch_extra(100.0, [], None) == ([], ''), 'one shape only: nothing to say')
+check(TL.stitch_extra(100.0, C, 'x')[0] == [], 'a bad known size is treated as no size')
+
 print('FAIL' if bad else 'ALL PASS', f'({len(bad)} problems)' if bad else '')
 sys.exit(1 if bad else 0)

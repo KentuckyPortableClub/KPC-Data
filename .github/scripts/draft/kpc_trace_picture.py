@@ -94,7 +94,9 @@ BANNED_MAP_SOURCE_WORDS = ("openstreetmap", "osm.org", "google", "goo.gl", "allt
 MAX_FIT_M = 50.0          # Rule 3: draw only if RMS < 50 m (strict "<")
 MIN_POINTS = 3            # Rule 2: at least 3 control points
 SIMPLIFY_M = 3.0          # Step 4: Douglas-Peucker tolerance in metres
-PIN_MAX_OUTSIDE_M = 1000  # Step 5: pin inside or within 1 km (flag only)
+PIN_MAX_OUTSIDE_M = 1000  # Step 5: pin inside or within 1 km
+PIN_NEAR_M = 200.0        # Nov 7 (pin mode): a shape this close to the pin on the page is a candidate for the park's own shape
+PIN_PICK = os.environ.get("KPC_TRACE_PIN_PICK", "1") != "0"   # Nov 7: choose the boundary colour by the pin on a GeoPDF page (0 = old behaviour)
 AREA_RATIO_RANGE = (0.2, 5.0)  # Step 5 / Nov 6: vs known acreage -> NEEDS A PERSON (no outline)
 
 # Rule 6: only these basemap hosts may ever be queried.
@@ -489,10 +491,28 @@ def _is_rectangle(cnt):
     return len(ap) <= 6
 
 
-def detect_boundary(img, row, k=8):
-    """Returns dict(kind, pts_px (n,2), mask_color, cluster, touches_edge, note) or None."""
+def _pin_px_from_affine(A, w, h, lat, lon):
+    """The POTA pin's pixel on a GeoPDF page. The page's affine maps u = x/w, v = y/h to lon, lat; this is its inverse."""
+    det = A[0] * A[4] - A[1] * A[3]
+    if abs(det) < 1e-18 or not all(math.isfinite(x) for x in A):
+        return None
+    u = (A[4] * (lon - A[2]) - A[1] * (lat - A[5])) / det
+    v = (-A[3] * (lon - A[2]) + A[0] * (lat - A[5])) / det
+    return (u * w, v * h)
+
+
+def detect_boundary(img, row, k=8, pin_px=None, m_per_px=None, expected_acres=None):
+    """Returns dict(kind, pts_px (n,2), mask_color, cluster, touches_edge, note) or None.
+
+    Nov 7 (pin mode): with pin_px (the POTA pin's pixel on the page, known up front only on a GeoPDF) the colour is chosen BY THE PIN, not
+    by total area. Only shapes that contain the pin, or run within PIN_NEAR_M of it, stay; a colour with none is skipped; among the rest a
+    filled park tint beats a boundary ring, and the size closest to expected_acres wins (without a size, the tightest shape around the pin).
+    Without pin_px nothing changes: the largest total area still wins, as before. This is what stops a statewide sheet's district ring or a
+    road casing being traced as the park."""
     h, w = img.shape[:2]
     diag = math.hypot(w, h)
+    pin_mode = pin_px is not None
+    r_px = (PIN_NEAR_M / m_per_px) if (m_per_px and m_per_px > 0) else 0.02 * diag
     labels, centers, lab = lab_kmeans(img, k)
     kind = (row.get("kind") or "area").lower()
     masks = []
@@ -554,6 +574,38 @@ def detect_boundary(img, row, k=8):
                 ap = cv2.approxPolyDP(cnts[oi], 1.0, True).reshape(-1, 2).astype(float)
                 parcels.append((frac, ap, how))
             if not parcels:
+                continue
+            if pin_mode:
+                near = []
+                for frac, ap, how in parcels:
+                    d = cv2.pointPolygonTest(np.round(ap).astype(np.int32).reshape(-1, 1, 2),
+                                             (float(pin_px[0]), float(pin_px[1])), True)
+                    if d >= -r_px:                     # inside (d > 0) or within PIN_NEAR_M of the edge
+                        near.append((frac, ap, how, max(0.0, -d)))
+                if not near:
+                    continue                           # this colour has nothing at the pin: never the park
+                est = (lambda f: f * w * h * m_per_px * m_per_px / 4046.86) if (m_per_px and m_per_px > 0) else None
+                exp = float(expected_acres) if expected_acres else None
+
+                def _fit(t):
+                    """Lower is better. With a size to aim at, how far this shape is from it decides and a filled tint only breaks a tie;
+                    with no size, a filled park tint beats a boundary ring and then the tightest shape around the pin wins."""
+                    if est and exp and est(t[0]) > 0:
+                        return (abs(math.log(est(t[0]) / exp)), 0 if t[2] == "filled" else 1)
+                    return (0 if t[2] == "filled" else 1, t[0])
+                near.sort(key=lambda t: (0 if t[3] == 0 else 1, _fit(t)))   # a shape containing the pin beats one merely near it
+                pick = near[0]
+                rest = [t for t in parcels if t[1] is not pick[1]]
+                rank = (0 if pick[3] == 0 else 1, _fit(pick))             # lower is better; a colour whose shape CONTAINS the pin beats
+                #                                                           one that only runs near it, whatever its size
+                if best is None or rank < best.get("rank", (9, (float("inf"), float("inf")))):
+                    ea = est(pick[0]) if est else None
+                    others = ", ".join(f"{t[2]} ~{est(t[0]):.0f} ac" if est else t[2] for t in near[1:3])
+                    best = dict(kind="area", pts_px=pick[1], parcels=[pick[1]] + [t[1] for t in rest], score=sum(t[0] for t in parcels),
+                                rank=rank, at_pin=len(near), n_shapes=len(parcels),
+                                mask_name=(f"{name}, {pick[2]}" + (f", ~{ea:.0f} ac" if ea else "") +
+                                           f", {'contains' if pick[3] == 0 else f'{pick[3] * (m_per_px or 1):.0f} m from'} the pin"
+                                           f", {len(parcels)} shape(s) in this colour" + (f"; also at the pin: {others}" if others else "")))
                 continue
             parcels.sort(key=lambda t: -t[0])
             if parcels[0][0] < min_largest:
@@ -1207,8 +1259,35 @@ def process_one(ref, row, base: Path, out: Path, pins, http, args):
         h, w = img.shape[:2]
         flags.append(f"image downscaled to {_mx} px")
 
+    # ---- Nov 7: on a GeoPDF the page's own coordinates are known BEFORE the colour is chosen, so the pin's pixel is known too. Pass it to
+    # detect_boundary (pin mode) so the colour is chosen by the pin instead of by total area. The plausibility result is computed once here
+    # and reused by the gate in step 5.
+    GEO = (row.get("geo") or {}) if os.environ.get("KPC_TRACE_GEOPDF", "1") != "0" else {}
+    geo_why, geo_info, geo_resid_ok = [], {}, None
+    _A = None
+    if GEO.get("affine"):
+        try:
+            _A = [float(x) for x in GEO["affine"]]
+        except (TypeError, ValueError):
+            _A = None
+        if TL is not None:
+            try:
+                _gok, geo_why, geo_info = TL.geopdf_plausible(GEO["affine"], w, h, GEO.get("fit_err_m"), (lat, lon))
+            except Exception as e:  # noqa: BLE001
+                geo_why, geo_info = [f"geopdf scale: the georeference could not be checked ({type(e).__name__})"], {}
+            geo_resid_ok = not any(x.startswith("geopdf residual") for x in geo_why)
+    pin_px = m_per_px = None
+    if PIN_PICK and _A is not None and geo_info.get("pin_on_page"):
+        pin_px = _pin_px_from_affine(_A, w, h, lat, lon)
+        m_per_px = geo_info.get("m_per_px_x")
+    _acres_row = float(row["acres"]) if row.get("acres") not in (None, "") else None
+    _expect = _acres_row or (TL.type_expected_acres(row.get("type")) if TL is not None else None)
+
     # ---- step 1: boundary / route line
-    bnd = detect_boundary(img, row, k=args.k)
+    bnd = detect_boundary(img, row, k=args.k, pin_px=pin_px, m_per_px=m_per_px, expected_acres=_expect)
+    if pin_px is not None:
+        flags.append(f"boundary colour chosen at the POTA pin" + (f" ({bnd['at_pin']} of {bnd['n_shapes']} shapes in that colour "
+                     f"are at the pin)" if bnd and bnd.get("at_pin") else ""))
     im1 = img.copy()
     if bnd is not None:
         for pp in (bnd.get("parcels") or [])[1:]:
@@ -1219,8 +1298,11 @@ def process_one(ref, row, base: Path, out: Path, pins, http, args):
         put(im1, f"{ref}: no boundary line found", 30, (0, 0, 255))
     _dbg_write(dbg / f"{sref}_1_boundary.jpg", im1)
     if bnd is None:
-        res.update(status="NO LINE", why="no closed boundary colour / route line found on the picture "
-                                         "(try boundary_rgb in index.json)")
+        res.update(status="NO LINE", why=("no closed shape in any colour contains or runs within "
+                                          f"{PIN_NEAR_M:g} m of the POTA pin on this page (pin at {pin_px[0]:.0f}, {pin_px[1]:.0f} px); "
+                                          "the colour may need boundary_rgb in index.json" if pin_px is not None else
+                                          "no closed boundary colour / route line found on the picture "
+                                          "(try boundary_rgb in index.json)"))
         if stale.exists():
             stale.unlink()
         return res
@@ -1230,18 +1312,9 @@ def process_one(ref, row, base: Path, out: Path, pins, http, args):
 
     # ---- Nov 2 (review): a GeoPDF page carries its own coordinates (kpc_picture_geo.py wrote row['geo']): place the outline by
     # them and skip the basemap matching. Still Approximate (R-G9); the size and pin checks below still run.
-    GEO = (row.get("geo") or {}) if os.environ.get("KPC_TRACE_GEOPDF", "1") != "0" else {}
-    geo_why, geo_info, geo_resid_ok = [], {}, None      # Nov 7: independent GeoPDF plausibility (residual, scale, skew, pin on page, sheet size)
-    if GEO.get("affine"):
+    if GEO.get("affine") and _A is not None:
         proj = LocalProj(lat, lon)
-        acres = float(row["acres"]) if row.get("acres") not in (None, "") else None
-        _A = [float(x) for x in GEO["affine"]]
-        if TL is not None:
-            try:
-                _gok, geo_why, geo_info = TL.geopdf_plausible(_A, w, h, GEO.get("fit_err_m"), (lat, lon))
-            except Exception as e:  # noqa: BLE001
-                geo_why, geo_info = [f"geopdf scale: the georeference could not be checked ({type(e).__name__})"], {}
-            geo_resid_ok = not any(x.startswith("geopdf residual") for x in geo_why)
+        acres = _acres_row
 
         def mdl(pts, _w=w, _h=h, _A=_A, _proj=proj):
             pts = np.asarray(pts, float)
@@ -1411,11 +1484,23 @@ def process_one(ref, row, base: Path, out: Path, pins, http, args):
                 if i not in keep and polys[i].distance(cur) <= MAX_FIT_M:
                     keep.add(i)
                     grown = True
+        # Nov 7: a gap wider than the 50 m adjacency is only bridged on evidence (an official size the joined pieces land inside);
+        # otherwise the further shapes are LISTED for a person, never silently absorbed or silently dropped.
+        n_adj = len(keep)
+        extra_txt = ''
+        if TL is not None:
+            _acres_of = lambda i: polys[i].area / 4046.86
+            _cur = unary_union([polys[i] for i in keep])
+            cands = [(i, polys[i].distance(_cur), _acres_of(i)) for i in range(len(polys)) if i not in keep]
+            add, extra_txt = TL.stitch_extra(sum(_acres_of(i) for i in keep), cands,
+                                             float(row["acres"]) if row.get("acres") not in (None, "") else None)
+            keep.update(add)
         merged = unary_union([polys[i] for i in keep])
         merged = merged.buffer(0)
         flags.append(f"picture shows {len(polys)} shapes in the boundary colour; kept {len(keep)} "
                      f"({'containing' if polys[k_best].distance(Point(0, 0)) == 0 else 'nearest'} the POTA pin"
-                     f"{' + adjacent pieces within 50 m' if len(keep) > 1 else ''}) - check this is the whole park")
+                     f"{f' + {n_adj - 1} adjacent piece(s) within 50 m' if n_adj > 1 else ''})"
+                     + (f"; {extra_txt}" if extra_txt else " - check this is the whole park"))
     if merged is not None:
         geom = merged.simplify(SIMPLIFY_M, preserve_topology=True)
         if not geom.is_valid:
@@ -1612,6 +1697,15 @@ def picture_selftest():
         if TL.hold_reasons(geopdf_why=[], pin_dist_m=0, edge=None, traced_acres=314.6, park_type="Nature Reserve"):
             problems.append("a valid GeoPDF-sized trace (CA-1248) must not be held")
     src = Path(__file__).read_text(encoding='utf-8')
+    # Nov 7 pin mode: the pin's pixel from a page affine, and the switch
+    _A = [0.01, 0.0, -100.0, 0.0, -0.008, 40.0]      # u -> lon, v -> lat over a small page
+    _p = _pin_px_from_affine(_A, 1000, 800, 40.0 - 0.004, -100.0 + 0.005)
+    if _p is None or abs(_p[0] - 500) > 1 or abs(_p[1] - 400) > 1:
+        problems.append(f"the pin pixel from a page affine is wrong: {_p}")
+    if _pin_px_from_affine([0, 0, 0, 0, 0, 0], 100, 100, 1, 1) is not None:
+        problems.append("a degenerate affine must give no pin pixel")
+    if ("pin_px=" + "pin_px") not in src:      # written in two pieces so this check cannot match itself
+        problems.append("process_one must pass the pin pixel to detect_boundary (Nov 7 pin mode)")
     if 'hold_reasons' not in src or 'geopdf_plausible' not in src:
         problems.append('process_one must call TL.geopdf_plausible and TL.hold_reasons (Nov 7 gates)')
     if 'NEEDS A PERSON' not in src or 'acres_held' not in src:
