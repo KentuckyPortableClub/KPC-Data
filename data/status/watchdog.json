@@ -240,10 +240,15 @@
   "kpc-flow.yml|2026-11-07T13:46:00+00:00": "2026-11-07T15:10+00:00 started",
   "kpc-waiting-room.yml|2026-11-07T14:42:00+00:00": "2026-11-07T15:10+00:00 started",
   "kpc-youtube-comments.yml|2026-11-07T13:36:00+00:00": "2026-11-07T15:10+00:00 skipped (not restarted)",
-  "kpc-pages-sync.yml|2026-11-07T18:09:00+00:00": "2026-11-07T18:34+00:00 started"
+  "kpc-pages-sync.yml|2026-11-07T18:09:00+00:00": "2026-11-07T18:34+00:00 started",
+  "kpc-copy-from-links.yml|2026-11-07T20:11:00+00:00": "2026-11-07T21:10+00:00 started",
+  "kpc-eu-alerts.yml|2026-11-07T18:40:00+00:00": "2026-11-07T21:10+00:00 started",
+  "kpc-waiting-room.yml|2026-11-07T20:42:00+00:00": "2026-11-07T21:10+00:00 started"
  },
- "last": "2026-11-07T18:34+00:00",
+ "last": "2026-11-07T21:10+00:00",
  "last_restarted": [
-  "kpc-pages-sync.yml (missed Nov 07 18:09 UTC)"
+  "kpc-copy-from-links.yml (missed Nov 07 20:11 UTC)",
+  "kpc-eu-alerts.yml (missed Nov 07 18:40 UTC)",
+  "kpc-waiting-room.yml (missed Nov 07 20:42 UTC)"
  ]
 }
