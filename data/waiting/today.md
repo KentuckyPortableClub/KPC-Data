@@ -310,6 +310,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/us-key/US-WV.json | RELEASE |  |
 | ? | ? | data/us-key/US-WY.json | PASS |  |
 | 2026-11-04 | 3 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
+| 2026-11-07 | 0 | data/world-key/ZA.json | HOLD | F-O2 4 of 75 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
 | ? | ? | data/pile-solver/AS.json | PASS |  |
 | ? | ? | data/pile-solver/AT.json | PASS |  |
 | ? | ? | data/pile-solver/AU.json | PASS |  |
@@ -444,7 +445,6 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/world-key/UM.json | PASS |  |
 | ? | ? | data/world-key/UY.json | PASS |  |
 | ? | ? | data/world-key/VI.json | PASS |  |
-| ? | ? | data/world-key/ZA.json | PASS |  |
 
 ## Questions waiting for an answer
 
