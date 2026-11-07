@@ -1,4 +1,4 @@
-name: KPC cell coverage (FCC National Broadband Map) - OFF until fixed (by hand only)
+name: KPC cell coverage (FCC National Broadband Map)
 # Oct 31 2026 (chat 10; HQ 9:00 PM, Brandon 8:59 PM 'ok releasing cell coverage for a test'). Rule sheet: KPC-Links
 # .claude/notes/ideas.md 'CELL COVERAGE RULE SHEET'. Kentucky + the 5 test parks; data/cell/*.json held in the waiting room
 # for chat 11. Monthly check: one FCC call, and the files are read again only when the FCC publishes a new as-of date. Never red.
@@ -8,11 +8,10 @@ on:
       test:
         description: 'also the two test parks outside KY (Chincoteague NWR VA, Red Rock Canyon NCA NV): yes / no'
         default: 'yes'
-  # PR1 (Nov 2, Brandon OK): timer OFF until the bot is fixed. kpc_cell_bot.py reads carrier fields the FCC rows don't have
-  # (provider_name/provider_id), so every park came out carriers 'None' while the board said green. Run by hand only.
-  # To turn it back on after the fix, add back a 'schedule:' block with the cron 16 9 3 * * (the 3rd of each month,
-  # 3:16 AM Central in winter / 4:16 AM in summer). Written without the usual quotes on purpose, so the watchdog and the
-  # check-up (they look for cron lines in this file) don't treat this bot as scheduled while it is off.
+  # Nov 7 (Brandon, 2:19 PM CST: 'release fcc ridb'): timer back on after the carrier-field fix (Data #20). Same cron as before PR1:
+  # the 3rd of each month, 3:16 AM Central in winter / 4:16 AM in summer.
+  schedule:
+    - cron: '16 9 3 * *'
 permissions:
   contents: write
 concurrency:

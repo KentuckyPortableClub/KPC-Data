@@ -55,7 +55,8 @@ with tempfile.TemporaryDirectory() as td:
 check('the G8 report lists the caught error in the summary', ('Errors caught inside steps and kept green (1)' in summ, 'kpc_discovery.py - stopped with an error (exit 1)' in summ, 'Steps that failed but were kept green:** a' in summ, p.returncode), (True, True, True, 0))
 # Crons Brandon OK'd himself (the only way a new cron gets in): Brandon, 7:11 AM CST Nov 6 2026 (relayed by the parent agent, his
 # words): "Yes, put the Quality sample on a weekly schedule" -> kpc-quality-sample.yml Mondays 7:41 AM CST.
-BRANDON_OK_CRONS = {('kpc-quality-sample.yml', '41 13 * * 1')}
+# Nov 7 2026 2:19 PM CST (Brandon, own words: "release fcc ridb"): the cell coverage bot's pre-PR1 monthly cron is back.
+BRANDON_OK_CRONS = {('kpc-quality-sample.yml', '41 13 * * 1'), ('kpc-cell.yml', '16 9 3 * *')}
 crons = lambda t: re.findall(r"^\s*-\s*cron:.*$", t, re.M)
 base = subprocess.run(['git', '-C', str(R), 'cat-file', '-e', 'a569c9b35'], capture_output=True).returncode == 0
 if base:
