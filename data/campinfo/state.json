@@ -2396,12 +2396,12 @@
  },
  "last": {
   "areas": [
-   "US-NV"
+   "US-SC"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 33,
+   "dropped_queued": 25,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2409,7 +2409,7 @@
      "robots.txt answered 403: nothing fetched from epqs.nationalmap.gov this run"
     ]
    ],
-   "requests": 1,
+   "requests": 3,
    "rested": 0,
    "robots": 1,
    "robots_unreadable": 1,
@@ -2417,11 +2417,12 @@
   },
   "ridb_key": false,
   "stat": {
-   "camps": 34,
+   "browser": 1,
+   "camps": 26,
    "elevations": 0,
-   "errors": 0,
+   "errors": 1,
    "needs_browser": 0,
-   "needs_key": 34,
+   "needs_key": 26,
    "no_page": 0,
    "not_official": 0,
    "ok": 0,
@@ -2429,7 +2430,7 @@
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 54
+   "skipped_fresh": 51
   },
   "when": "2026-11-07"
  },
