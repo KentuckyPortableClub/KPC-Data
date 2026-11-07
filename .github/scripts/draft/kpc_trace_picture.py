@@ -52,6 +52,7 @@ import json
 import math
 import os
 import random
+import re
 import sys
 import time
 import traceback
@@ -126,18 +127,91 @@ def log(msg: str) -> None:
 
 
 # ===================================================================== HTTP
+def _robots_rules(text: str, token: str) -> list:
+    """Allow/Disallow rules of our group (token) or '*' from a robots.txt (RFC 9309 grouping)."""
+    groups, cur, last_ua = [], None, False
+    for raw in (text or "").splitlines():
+        line = raw.split("#", 1)[0].strip()
+        if ":" not in line:
+            continue
+        k, v = (x.strip() for x in line.split(":", 1))
+        k = k.lower()
+        if k == "user-agent":
+            if not last_ua:
+                cur = {"agents": [], "rules": []}
+                groups.append(cur)
+            cur["agents"].append(v.lower())
+            last_ua = True
+            continue
+        last_ua = False
+        if cur is not None and k in ("allow", "disallow"):
+            cur["rules"].append((k == "allow", v))
+    mine = [g for g in groups if any(a != "*" and token.startswith(a) for a in g["agents"])]
+    return [r for g in (mine or [g for g in groups if "*" in g["agents"]]) for r in g["rules"]]
+
+
+def _robots_allowed(rules: list, url: str) -> bool:
+    """Longest match wins, Allow wins ties, no match = allowed."""
+    p = urlparse(url)
+    path = (p.path or "/") + (("?" + p.query) if p.query else "")
+    best, ok = -1, True
+    for allow, pat in rules:
+        if not pat:
+            continue
+        rx = re.escape(pat).replace(r"\*", ".*")
+        if rx.endswith(r"\$"):
+            rx = rx[:-2] + "$"
+        if re.match(rx, path) and (len(pat) > best or (len(pat) == best and allow)):
+            best, ok = len(pat), allow
+    return ok
+
+
 class PoliteHttp:
-    """One request at a time, minimum interval, retries with exponential back-off."""
+    """One request at a time, minimum interval, retries with exponential back-off.
+    Nov 7 standing rule: robots.txt is read once per host and obeyed on every path (ArcGIS REST included);
+    a robots 401/403, 5xx, 429 or no answer is a STOP for that host (nothing is read); 404/410 = no robots file.
+    Redirects are never followed (all allowed basemap hosts answer directly)."""
+    STOP = [(False, "/")]
 
     def __init__(self, user_agent: str, min_interval: float = 1.0, retries: int = 5,
                  timeout: float = 90.0):
         self.s = requests.Session()
         self.s.headers.update({"User-Agent": user_agent, "Accept": "application/json"})
+        self.token = (user_agent.split("/", 1)[0].strip() or "*").lower()
         self.min_interval = min_interval
         self.retries = retries
         self.timeout = timeout
         self._last = 0.0
         self.n_requests = 0
+        self.robots = {}            # host -> rules
+        self.robots_stop = {}       # host -> why
+
+    def _robots(self, url: str) -> list:
+        p = urlparse(url)
+        host = (p.hostname or "").lower()
+        if host in self.robots:
+            return self.robots[host]
+        wait = self.min_interval - (time.time() - self._last)
+        if wait > 0:
+            time.sleep(wait)
+        self._last = time.time()
+        self.n_requests += 1
+        try:
+            r = self.s.get(f"{p.scheme or 'https'}://{p.netloc}/robots.txt", timeout=self.timeout,
+                           allow_redirects=False, headers={"Accept": "text/plain, */*"})
+            st, text = r.status_code, r.text
+        except requests.RequestException as e:
+            st, text = f"err:{type(e).__name__}", ""
+        if st == 200:
+            rules = _robots_rules(text, self.token) if "<html" not in text[:500].lower() else []
+        elif isinstance(st, int) and 400 <= st < 500 and st not in (401, 403, 429):
+            rules = []                                    # no robots file
+        else:
+            rules = self.STOP                             # 401/403/5xx/429/redirect/no answer = STOP (fail closed)
+            self.robots_stop[host] = f"robots.txt answered {st}"
+            log(f"   {host}/robots.txt answered {st}: treated as Disallow: / (STOP); nothing is read from this host")
+        self.robots[host] = rules
+        return rules
 
     @staticmethod
     def check_host(url: str) -> None:
@@ -147,6 +221,10 @@ class PoliteHttp:
 
     def get_json(self, url: str, params: dict) -> dict:
         self.check_host(url)
+        if not _robots_allowed(self._robots(url), url):
+            host = (urlparse(url).hostname or "").lower()
+            raise RuntimeError(f"robots: {host} robots.txt does not allow {urlparse(url).path} "
+                               f"({self.robots_stop.get(host, 'Disallow')}); not read, no other path tried")
         err = None
         for attempt in range(self.retries + 1):
             wait = self.min_interval - (time.time() - self._last)
@@ -155,7 +233,9 @@ class PoliteHttp:
             self._last = time.time()
             self.n_requests += 1
             try:
-                r = self.s.get(url, params=params, timeout=self.timeout)
+                r = self.s.get(url, params=params, timeout=self.timeout, allow_redirects=False)
+                if 300 <= r.status_code < 400:
+                    raise RuntimeError(f"redirect from {url} to {r.headers.get('Location')} not followed (club rule)")
                 if r.status_code in (429, 500, 502, 503, 504):
                     ra = r.headers.get("Retry-After")
                     delay = float(ra) if ra and ra.isdigit() else None
@@ -1411,6 +1491,70 @@ def _round_geojson(g):
 
 
 
+def _http_selftest() -> list:
+    """Nov 7: robots 401/403/5xx/no answer = STOP with no data request; Disallow on REST obeyed; no redirects."""
+    problems = []
+
+    class _R:
+        def __init__(self, st, text="", hd=None):
+            self.status_code, self.text, self.headers = st, text, hd or {}
+
+        def raise_for_status(self):
+            if self.status_code >= 400:
+                raise requests.HTTPError(str(self.status_code))
+
+        def json(self):
+            return {"features": []}
+
+    def make(robots_answer, data_answer=None):
+        h = PoliteHttp("KPC-Picture-Map-Tracer/test", min_interval=0, retries=0)
+        h.calls = []
+
+        def fake_get(url, params=None, timeout=None, allow_redirects=True, headers=None):
+            h.calls.append((url, allow_redirects))
+            if url.endswith("/robots.txt"):
+                if isinstance(robots_answer, Exception):
+                    raise robots_answer
+                return robots_answer
+            return data_answer or _R(200)
+        h.s.get = fake_get
+        return h
+
+    url = TIGER + "/8/query"
+    for ans in (_R(401), _R(403), _R(500), _R(429), requests.ConnectionError("x")):
+        h = make(ans)
+        try:
+            h.get_json(url, {})
+            problems.append(f"robots {getattr(ans, 'status_code', ans)} must STOP the basemap read")
+        except RuntimeError as e:
+            if not str(e).startswith("robots:") or len(h.calls) != 1:
+                problems.append(f"robots STOP must make no data request: {e} {h.calls}")
+    h = make(_R(200, "User-agent: *\nDisallow: /arcgis/rest/\n"))
+    try:
+        h.get_json(url, {})
+        problems.append("a robots Disallow on an ArcGIS REST path must be obeyed")
+    except RuntimeError as e:
+        if len(h.calls) != 1:
+            problems.append(f"robots Disallow must make no data request: {h.calls}")
+    h = make(_R(200, "User-agent: kpc-picture-map-tracer\nDisallow: /\n\nUser-agent: *\nAllow: /\n"))
+    try:
+        h.get_json(url, {})
+        problems.append("our own robots group must win over '*'")
+    except RuntimeError:
+        pass
+    h = make(_R(404))
+    if h.get_json(url, {}) != {"features": []} or len(h.calls) != 2:
+        problems.append(f"robots 404 = no robots file, the read must go ahead: {h.calls}")
+    h = make(_R(404), _R(302, hd={"Location": "https://ncnhde.natureserve.org/x"}))
+    try:
+        h.get_json(url, {})
+        problems.append("a redirect must not be followed")
+    except RuntimeError as e:
+        if "redirect" not in str(e) or any(a for _, a in h.calls) or len(h.calls) != 2:
+            problems.append(f"redirects must be refused with allow_redirects=False: {e} {h.calls}")
+    return problems
+
+
 def picture_selftest():
     """Offline checks for Nov 6 acres gate (no network)."""
     problems = []
@@ -1423,6 +1567,7 @@ def picture_selftest():
             problems.append('US-5460-sized wild GeoPDF must fail the acres gate')
         if not (AREA_RATIO_RANGE == (TL.PICTURE_ACRES_LO, TL.PICTURE_ACRES_HI) or AREA_RATIO_RANGE == (0.2, 5.0)):
             problems.append('AREA_RATIO_RANGE must stay 0.2..5')
+    problems += _http_selftest()
     src = Path(__file__).read_text(encoding='utf-8')
     if 'NEEDS A PERSON' not in src or 'acres_held' not in src:
         problems.append('process_one must hold back as NEEDS A PERSON when acres are outside 0.2x-5x')

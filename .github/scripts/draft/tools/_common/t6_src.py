@@ -525,7 +525,7 @@ def run(args, web=None):
         areas = areas[:args.limit]
     out = args.out
     os.makedirs(out, exist_ok=True)
-    web = web or Polite(cache=args.cache, log=log, rest_exempt=True)
+    web = web or Polite(cache=args.cache, log=log)
     web.log = log
     read_date = today()
     ij, sj, rj = (os.path.join(out, n) for n in ('inspire.json', 'state.json', 'report.json'))
@@ -592,7 +592,7 @@ def run(args, web=None):
 
 class FakeWeb(Polite):
     def __init__(self, routes):
-        super().__init__(cache=None, gap=0, rest_exempt=True)
+        super().__init__(cache=None, gap=0)
         self.routes = routes
 
     def _raw(self, url, method='GET', data=None, headers=None):
