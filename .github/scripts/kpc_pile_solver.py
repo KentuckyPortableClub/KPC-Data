@@ -323,6 +323,33 @@ def manager_of(attrs):
 def kind_words(t): return ' '.join(sorted(PC.tags(t) | DET.classes(t))) or ''
 
 
+# Round 3 (Nov 7 2026), Sinks Canyon (US-10890): a BLM park was joined, 3.1 km out, to the Wyoming STATE PARK record because the
+# names matched and the pin was in the same county. Names alone cannot tell two kinds of land apart, so for a join that rests only on
+# name + county (the pin is NOT inside or within NEAR_M) the record's own PAD-US designation is checked: a BLM park against a record
+# designated State Park / State Recreation Area and owned by a state goes to a person. Narrow on purpose: federal-BLM park vs state
+# park record only, far joins only (a pin inside the record still joins with the two-agency flag). KPC_DESIGNATION_CLASH=off turns it off.
+# GUESS: the live PAD-US layer returns Des_Tp / Own_Type with these codes (the key's own bk codes come from the same field).
+DES_STATE_PARK = {'SP', 'SREC', 'SRA'}
+BLM_PARK = re.compile(r'\bBLM\b|bureau of land management', re.I)
+
+
+def attr_ci(attrs, name):
+    for k, v in (attrs or {}).items():
+        if str(k).lower() == name.lower() and str(v or '').strip(): return str(v).strip()
+    return ''
+
+
+def designation_clash(ptype, pname, rec):
+    """-> a reason text when the park is a BLM area and the record is designated a state park owned by a state, else ''."""
+    if (os.environ.get('KPC_DESIGNATION_CLASH') or 'on').strip().lower() == 'off': return ''
+    if not BLM_PARK.search(f'{ptype} {pname}'): return ''
+    a = rec.get('attrs') or {}
+    des, own = attr_ci(a, 'Des_Tp').upper(), attr_ci(a, 'Own_Type').upper()
+    if des in DES_STATE_PARK and own == 'STAT':
+        return f"the park is a BLM area, but the record is designated State Park (PAD-US Des_Tp {des}, owner type {own}, {attr_ci(a, 'Own_Name') or attr_ci(a, 'Loc_Own') or 'a state'})"
+    return ''
+
+
 # Nov 6 research packs (KPC-Links). Report only. Never sets state['auto'].
 RESEARCH_RANKS = []
 
@@ -630,6 +657,13 @@ def solve(p, F, ov, sheet):
     if bad:
         return done(row, 'NEEDS-PERSON', f"the pin is {km} km from the outline and the county does not back the match: " + '; '.join(bad[:2]),
                     f"a person to say whether '{best['name']}' is {p['ref']} (pin {km} km out, other county), or report the POTA pin to POTA")
+    # Round 3: a far join (name + county only) to a record of another designation is a person's call; no ledger proposal is made for it
+    dc = next(((r, designation_clash(ptype, pname, r)) for r in far if designation_clash(ptype, pname, r)), None)
+    if dc:
+        r, why_dc = dc
+        return done(row, 'NEEDS-PERSON', f"the pin is {km} km from '{r['name']}' ({r['id']}) and {why_dc}: the name and the county are not enough (designation clash)",
+                    f"a person to say whether '{r['name']}' is {p['ref']} or another land with the same name, or report the POTA pin to POTA",
+                    pin_flag='; '.join(x for x in (two_flag, 'POTA pin may be off') if x))
     # Nov 6 Part B: short/generic names never take a far rule-3 join (root cause: Rock Creek / Seven Mile overconfidence)
     if is_short_name(pname) or is_short_name(best.get('name') or ''):
         return done(row, 'NEEDS-PERSON',
@@ -815,6 +849,15 @@ def run(root, pile_rows, F, areas=None, max_parks=0, mode='backfill'):
                                         'ranks': RESEARCH_RANKS}, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
             written.append(str(side))
         except Exception:  # noqa: BLE001  (unwritable side file: the waiting-room files are already written)
+            pass
+    # Round 3: park-type penalty. Report only, off unless KPC_TYPE_PENALTY=report; a failure here never skips the outputs above or state.json below.
+    # state['auto'] is not read or written by this block.
+    if (os.environ.get('KPC_TYPE_PENALTY') or 'off').strip().lower() == 'report':
+        try:
+            import kpc_pile_penalty as TP
+            W = load(DATA / TP.WEIGHTS_FILE, {})
+            if W: written.append(TP.write_side(root, TP.report(rows, key_row, W, TP.key_join_of(LINKS)), W))
+        except Exception:  # noqa: BLE001
             pass
     nov, novp = override_report(root, ov, inpile, written)
     stats.update(overrides_not_from_brandon=nov, of_them_in_pile=novp)
