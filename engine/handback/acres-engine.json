@@ -192,6 +192,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3; read 2026-11-02"
   },
   {
+   "Park number (if matched)": "US-10476",
+   "Park name (as the agency writes it)": "BLM",
+   "Size": 8,
+   "Unit": "acres",
+   "Agency": "State of Oregon (Oregon parklands) (park, state GIS table)",
+   "Source page": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0/query?where=OBJECTID%3D5132&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0; read 2026-11-04"
+  },
+  {
    "Park number (if matched)": "CA-4794",
    "Park name (as the agency writes it)": "Kootenai House",
    "Size": 0,
@@ -975,15 +984,6 @@
    "Notes": "computed from the official outline polygon (approx); layer https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3; read 2026-11-07"
   },
   {
-   "Park number (if matched)": "US-10476",
-   "Park name (as the agency writes it)": "BLM",
-   "Size": 8,
-   "Unit": "acres",
-   "Agency": "State of Oregon (Oregon parklands) (park, state GIS table)",
-   "Source page": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0/query?where=OBJECTID%3D5132&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0; read 2026-11-04"
-  },
-  {
    "Park number (if matched)": "CA-4899",
    "Park name (as the agency writes it)": "Lieu historique national du Canal-de-Carillon",
    "Size": 32,
@@ -1543,6 +1543,16 @@
    "Retry?": "NO"
   },
   {
+   "Host": "maps.prd.state.or.us",
+   "Agency/area": "State of Oregon (Oregon parklands) (park, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "maps.gov.bc.ca",
    "Agency/area": "Government of British Columbia (Historic Places)",
    "Kind": "GIS layer",
@@ -1707,16 +1717,6 @@
    "Agency/area": "Tennessee Wildlife Resources Agency (credit: TWRA) (wild, state GIS table)",
    "Kind": "GIS layer",
    "Example URL": "https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3",
-   "# times used": 1,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
-   "Host": "maps.prd.state.or.us",
-   "Agency/area": "State of Oregon (Oregon parklands) (park, state GIS table)",
-   "Kind": "GIS layer",
-   "Example URL": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0",
    "# times used": 1,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
