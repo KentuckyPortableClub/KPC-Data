@@ -17,11 +17,11 @@
  },
  "ca-key": {
   "build": "CA-42252274247",
-  "ran": [],
-  "waiting": {
-   "canadaeast": "next start (at most 3 areas at a time)",
-   "canadawest": "next start (at most 3 areas at a time)"
-  },
+  "ran": [
+   "canadaeast",
+   "canadawest"
+  ],
+  "waiting": {},
   "first_seen": "2026-11-06 17:41 UTC"
  }
 }
