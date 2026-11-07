@@ -1,8 +1,8 @@
 {
  "about": "world-key: the HELD build (data/waiting/in/data/world-key/) vs the LIVE key (data/world-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'world-key', 'build': the held build id from data/waiting/in/data/world-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-07 07:44 UTC",
+ "made": "2026-11-07 16:38 UTC",
  "totals": {
-  "gained": 783,
+  "gained": 790,
   "lost": 56,
   "pieces_changed": 4299,
   "grade_changed": 12017
@@ -309,7 +309,7 @@
    "grade_changed": 0
   },
   "ZA": {
-   "gained": 1,
+   "gained": 8,
    "lost": 2,
    "pieces_changed": 66,
    "grade_changed": 0
@@ -15560,6 +15560,82 @@
   },
   {
    "area": "ZA",
+   "ref": "ZA-0061",
+   "name": "Lotheni Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "34641",
+     "Loteni Nature Reserve",
+     "ENV_DB.LDR.Nature_Reserve",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/ZA-0061"
+  },
+  {
+   "area": "ZA",
+   "ref": "ZA-0064",
+   "name": "Kosi Bay Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "10",
+     "Kosi Bay",
+     "ZA: dpmegis.dpme.gov.za (approved layer 2)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/ZA-0064"
+  },
+  {
+   "area": "ZA",
+   "ref": "ZA-0070",
+   "name": "Ndumo Game Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "13",
+     "Ndumo Game Reserve",
+     "ZA: dpmegis.dpme.gov.za (approved layer 2)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/ZA-0070"
+  },
+  {
+   "area": "ZA",
+   "ref": "ZA-0142",
+   "name": "Pilansberg National Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "34058",
+     "Pilanesberg National Park",
+     "ENV_DB.LDR.Nature_Reserve",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/ZA-0142"
+  },
+  {
+   "area": "ZA",
    "ref": "ZA-0144",
    "name": "Mkambati Nature Reserve",
    "old_grade": "pin",
@@ -15576,6 +15652,63 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/ZA-0144"
+  },
+  {
+   "area": "ZA",
+   "ref": "ZA-0145",
+   "name": "Magaliesberg Protected Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "34280",
+     "Magaliesberg Protected Natural Environment",
+     "ENV_DB.LDR.Protected_Environment",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/ZA-0145"
+  },
+  {
+   "area": "ZA",
+   "ref": "ZA-0170",
+   "name": "Klipreviersberg Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "34146",
+     "Klipriviersberg Nature Reserve",
+     "ENV_DB.LDR.Nature_Reserve",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/ZA-0170"
+  },
+  {
+   "area": "ZA",
+   "ref": "ZA-0177",
+   "name": "Cederberg Wilderness Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "34293",
+     "Sederberg Wilderness Area",
+     "ENV_DB.LDR.Forest_Wilderness_Area",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/ZA-0177"
   }
  ],
  "lost": [
