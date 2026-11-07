@@ -1,6 +1,6 @@
 # 2-fer post-line check (for Quality)
 
-2026-11-07 03:23 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
+2026-11-07 04:08 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
 
 ## CA-AB: live pairs 40 -> 36 (+3 / -7)
 - gained: CA-0110+US-4558 CA-2956+CA-2958 CA-3008+CA-6112
@@ -42,12 +42,12 @@
 - near a size threshold: CA-0024+CA-4535+CA-6503+CA-6535 20 m ~ 25 yd (kept); CA-0024+CA-4535+CA-6535 20 m ~ 25 yd (kept); CA-0024+CA-4535 45 m ~ 50 yd (very tight); CA-0024+CA-6503+CA-6535 20 m ~ 25 yd (kept); CA-0025+CA-4535+CA-6503+CA-6535 20 m ~ 25 yd (kept); CA-0025+CA-4535+CA-6535 20 m ~ 25 yd (kept); CA-0025+CA-4535 45 m ~ 50 yd (very tight); CA-0025+CA-6503+CA-6535 20 m ~ 25 yd (kept); CA-0073+CA-1238+CA-6539 20 m ~ 25 yd (kept); CA-0771+CA-6547+CA-6548 20 m ~ 25 yd (kept); CA-0771+CA-6547 20 m ~ 25 yd (kept); CA-0772+CA-4524+CA-6518 20 m ~ 25 yd (kept); CA-0772+CA-4525+CA-6518 20 m ~ 25 yd (kept); CA-0780+CA-1233+CA-6550 20 m ~ 25 yd (kept); CA-0780+CA-6542+CA-6550 20 m ~ 25 yd (kept); CA-0788+CA-6542+CA-6549 20 m ~ 25 yd (kept); CA-0788+CA-6549 20 m ~ 25 yd (kept); CA-0795+CA-6537+US-8484 20 m ~ 25 yd (kept); CA-1222+CA-4410+CA-6545 20 m ~ 25 yd (kept); CA-1225+CA-4425+CA-6503 20 m ~ 25 yd (kept)
 - stale inputs: -
 
-## CA-NL: live pairs 1 -> 1 (+0 / -0)
-- gained: -
+## CA-NL: live pairs 1 -> 3 (+2 / -0)
+- gained: CA-0101+CA-0504 CA-4543+CA-4558
 - lost: -
 - touching held parks: -
 - touching pin-only parks: -
-- water / bank: 3
+- water / bank: 1
 - one-record same land: -
 - near a size threshold: CA-0097+CA-4546 79 m ~ 100 yd (small); CA-4543+CA-4558 79 m ~ 100 yd (small)
 - stale inputs: -

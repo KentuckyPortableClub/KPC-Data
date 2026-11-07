@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-07 03:23 UTC",
- "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42316197036",
+ "checked": "2026-11-07 04:08 UTC",
+ "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42328763121",
  "areas": {
   "CA-AB": {
    "gained": [
@@ -1450,23 +1450,16 @@
    "stale_inputs": []
   },
   "CA-NL": {
-   "gained": [],
+   "gained": [
+    "CA-0101+CA-0504",
+    "CA-4543+CA-4558"
+   ],
    "lost": [],
    "live_before": 1,
-   "live_now": 1,
+   "live_now": 3,
    "touch_held": [],
    "touch_pin_only": [],
    "water_bank": [
-    {
-     "pair": "CA-0101+CA-0504",
-     "kind": "area",
-     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
-    },
-    {
-     "pair": "CA-4543+CA-4558",
-     "kind": "area",
-     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
-    },
     {
      "pair": "CA-4543+CA-4558",
      "kind": "area",
@@ -1485,7 +1478,7 @@
      "pair": "CA-4543+CA-4558",
      "wide_m": 79,
      "near": "100 yd (small)",
-     "status": "not sure: water not checked (the USGS wa"
+     "status": "candidate"
     }
    ],
    "preline": {
