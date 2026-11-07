@@ -1,11 +1,11 @@
 # Closures super-bot: review (2026-11-07; RULE SHEET D; compared quietly, nothing on cards until GO)
 
-Run: 2026-11-07T15:11Z · requests 105 · pages 83 · PDFs 17 · sentences read 473 · unmatched 122 · look-alikes skipped 263 · sources failed 0
+Run: 2026-11-07T18:16Z · requests 0 · pages 0 · PDFs 0 · sentences read 0 · unmatched 0 · look-alikes skipped 0 · sources failed 0
 
 ## Kentucky gate: **PASS** — 30 of 31 of Kentucky's own reader's items found here on the same park (96%); 56 only here
 
 ## US-KY (done, read 2026-11-07T15:11)
-whole 0 · part 0 · hunt 0 · seasonal 0 · note 82 · taken_down 3 · 0 banners
+hunt 0 · note 82 · part 0 · seasonal 0 · taken_down 3 · whole 0 · 0 banners
 
 Dropped as another state's place (multi-state forest): 32 notices
 
@@ -14,32 +14,32 @@ Unmatched (two parks or none; for chat 11 to judge):
 - Laurel Bridge Boat Ramp on Laurel River Lake Temporarily Closed [ky-fw-alerts] = not tied: Laurel River Lake lies inside Daniel Boone NF (US-4484) but is not its own park; the ramp's land owner is not known here (NOT SURE = kept out) · nearest park name: Ed Mabry-Laurel Gorge Wildlife Management Area (US-3811)
 - Sympson Lake will be closed to all boating activity in 2026 [ky-fw-alerts] = no POTA park: Sympson Lake is a KDFWR lake (Nelson County) · no park name shares a word
 - West Point Boat Ramp Closure [ky-fw-alerts] = no POTA park: the West Point ramp is a KDFWR Ohio River ramp · no park name shares a word
-- 1. Cave Run Lake [ky-fw-quota] · nearest park name: Mammoth Cave National Park (US-0050)
-- ARCHERY SEASON [ky-fw-quota] · no park name shares a word
-- BLIND RESTRICTIONS [ky-fw-quota] · no park name shares a word
-- Big Rivers WMA (noon Central to 5 p.m.) in Union County and at the Roberts Tract [ky-fw-quota] · nearest park name: Big Rivers Wildlife Management Area (US-3796)
-- CROSSBOW SEASON [ky-fw-quota] · no park name shares a word
-- Clay WMA & Yellowbank WMA [ky-fw-quota] · nearest park name: Yellowbank Wildlife Management Area (US-3840)
-- Day of the hunt requirements [ky-fw-quota] · no park name shares a word
-- Defined Terms [ky-fw-quota] · no park name shares a word
-- Green River Lake WMA [ky-fw-quota] = no POTA park: Green River Lake WMA has no POTA number (Green River Lake State Park US-1259 is another park) · nearest park name: Green River Lake State Park (US-1259)
-- JENNY HOLE QUOTA HUNTS: [ky-fw-quota] · nearest park name: Jenny Wiley State Park (US-1281)
-- LIGHT GOOSE CONSERVATION ORDER SEASON [ky-fw-quota] · no park name shares a word
-- MODERN GUN EQUIPMENT [ky-fw-quota] · no park name shares a word
-- Public Land Closures [ky-fw-quota] · nearest park name: Land Between the Lakes National Recreation Area (US-3792)
-- River along the Illinois shore to [ky-fw-quota] · nearest park name: South Shore Wildlife Management Area (US-3831)
-- SHOT SIZE, TYPE, SHOT SHELL LENGTH RESTRICTIONS [ky-fw-quota] · no park name shares a word
-- Sandhill Crane Quota Hunts [ky-fw-quota] · no park name shares a word
-- Sauerheber, Crenshaw and Duncan II Units [ky-fw-quota] · no park name shares a word
-- Special WMA Regulations [ky-fw-quota] · no park name shares a word
-- Yea​r-round Wildlife ​Feeding Exemptions: [ky-fw-quota] · no park name shares a word
-- are open every Saturday and Sunday in January. [ky-fw-quota] · no park name shares a word
-- no more than 4 persons shall occupy a single hunt site at any one time; and [ky-fw-quota] · no park name shares a word
-- ​3. West Kentucky WMA [ky-fw-quota] · no park name shares a word
-- ​​Waterfowl Zones [ky-fw-quota] · no park name shares a word
 - Accessible/ Mobility-Impaired WMA | [ky-fw-public-land] · no park name shares a word
 - BLIND RESTRICTIONS [ky-fw-public-land] · no park name shares a word
 - Big Rivers WMA (noon Central to 5 p.m.) in Union County and at the Roberts Tract [ky-fw-public-land] · nearest park name: Big Rivers Wildlife Management Area (US-3796)
+- Clay WMA & Yellowbank WMA [ky-fw-public-land] · nearest park name: Yellowbank Wildlife Management Area (US-3840)
+- Daniel Boone National Forest | [ky-fw-public-land] · nearest park name: Daniel Boone National Forest (US-4484)
+- Day of the hunt requirements [ky-fw-public-land] · no park name shares a word
+- EXCEPTIONS [ky-fw-public-land] · no park name shares a word
+- Elk Horn Coal Hunting Access Area [ky-fw-public-land] · no park name shares a word
+- Exceptions: [ky-fw-public-land] · no park name shares a word
+- GRAYSON LAKE WMA - Carter & Elliott counties [ky-fw-public-land] · nearest park name: Grayson Lake State Park (US-1258)
+- Green River Lake WMA [ky-fw-public-land] = no POTA park: Green River Lake WMA has no POTA number (Green River Lake State Park US-1259 is another park) · nearest park name: Green River Lake State Park (US-1259)
+- Icon Guide [ky-fw-public-land] · no park name shares a word
+- JENNY HOLE QUOTA HUNTS: [ky-fw-public-land] · nearest park name: Jenny Wiley State Park (US-1281)
+- LAKE BARKLEY WMA - Livingston, Lyon and Trigg Counties [ky-fw-public-land] · nearest park name: Lake Barkley State Park (US-1284)
+- LAKE CUMBERLAND WMA - Pulaski County [ky-fw-public-land] · nearest park name: Cumberland Gap National Historical Park (US-0019)
+- LAND BETWEEN THE LAKES - Trigg & Lyon Counties​ [ky-fw-public-land] · nearest park name: Land Between the Lakes National Recreation Area (US-3792)
+- LEGAL ELK HUNTING EQUIPMENT [ky-fw-public-land] · no park name shares a word
+- No more than four (4) persons shall occupy a single hunt site at any one time; a [ky-fw-public-land] · no park name shares a word
+- OHIO RIVER - Ballard County [ky-fw-public-land] · nearest park name: Ohio River Islands National Wildlife Refuge (US-0608)
+- Other Restrictions: [ky-fw-public-land] · no park name shares a word
+- Overview [ky-fw-public-land] · no park name shares a word
+- Public Land Closures [ky-fw-public-land] · nearest park name: Land Between the Lakes National Recreation Area (US-3792)
+- ROBINSON FOREST WMA - Breathitt, Perry & Knott counties [ky-fw-public-land] · no park name shares a word
+- Sandhill Crane Quota Hunts [ky-fw-public-land] · no park name shares a word
+- Sauerheber, Crenshaw and Duncan II Units [ky-fw-public-land] · no park name shares a word
+- 1. Cave Run Lake [ky-fw-quota] · nearest park name: Mammoth Cave National Park (US-0050)
 
 ### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 30 · only here 56 · only there 1
 
