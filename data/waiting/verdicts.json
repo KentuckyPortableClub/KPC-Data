@@ -1,42 +1,7 @@
 {
- "checked": "2026-11-06T23:31Z",
+ "checked": "2026-11-07T00:15Z",
  "switched_on": false,
  "results": [
-  {
-   "path": "data/ca-key/CA-AB.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-BC.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/CA-NT.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/index.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/ca-key/overrides.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
   {
    "path": "data/campinfo/US-AL.json",
    "kind": "campinfo",
@@ -1463,7 +1428,7 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-NM.json.gz",
+   "path": "data/fers/US-NM.json",
    "kind": "fers",
    "why": [
     "F-2 only 5 of 9 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
@@ -1471,9 +1436,7 @@
     "F-K known 2-fer missing: US-11822 + US-8227",
     "F-K known 2-fer missing: US-4558 + US-4575"
    ],
-   "notes": [
-    "replaces live data/fers/US-NM.json (same file, other format): promotion removes the old name"
-   ],
+   "notes": [],
    "verdict": "HOLD"
   },
   {
@@ -3774,18 +3737,6 @@
    "why": [],
    "notes": [],
    "verdict": "PASS"
-  },
-  {
-   "path": "data/fers/US-NM.json",
-   "kind": "fers",
-   "why": [
-    "F-2 only 5 of 9 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 27 new candidate pairs since the live file (over 10% of 9): a person looks at them first, e.g. US-0012+US-4516, US-0458+US-4568, US-0462+US-4568",
-    "F-K known 2-fer missing: US-11822 + US-8227",
-    "F-K known 2-fer missing: US-4558 + US-4575"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
   }
  ]
 }
