@@ -25,7 +25,7 @@ Updated 2026-11-07. Every fact in <area>.json carries its source url, read date 
 | US-NJ | 23 | 0 | 3 | 2 | 0 | 15 | 0 | 0 | 3 | 0 | 4 | 0 |
 | US-CT | 32 | 0 | 2 | 0 | 0 | 0 | 0 | 29 | 1 | 0 | 3 | 32 |
 | US-RI | 5 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 2 | 4 | 0 |
-| US-MA | 30 | 20 | 8 | 0 | 0 | 0 | 0 | 0 | 2 | 18 | 22 | 0 |
+| US-MA | 36 | 25 | 8 | 0 | 0 | 0 | 0 | 0 | 3 | 18 | 28 | 0 |
 | US-VT | 280 | 105 | 9 | 0 | 0 | 0 | 146 | 0 | 20 | 103 | 125 | 0 |
 | US-NH | 79 | 41 | 24 | 0 | 0 | 0 | 12 | 0 | 2 | 3 | 43 | 0 |
 | US-MD | 77 | 40 | 30 | 1 | 0 | 0 | 0 | 0 | 6 | 10 | 43 | 0 |
@@ -1798,12 +1798,12 @@ Updated 2026-11-07. Every fact in <area>.json carries its source url, read date 
   - map.date_how = "web page, no date in the link" · “link “Download a trail map””
   - map.url = "https://www.mass.gov/doc/clarksburg-state-park-trail-map/do · “link “Download a trail map” -> https://www.mass.gov/doc/clarksburg-state-park-trail-map/download”
   - reservable = true · “ass.gov Wheelchair Accessible Dogs Allowed Self-guided opportunities Download a trail map Reserve a campsite Get Directions to Clarksburg St”
-- **Wellfleet Hollow State Campground** (US-8381:hq0, state, status ok, 5 facts) · [www.mass.gov](https://www.mass.gov/locations/wellfleet-hollow-state-campground)
-  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
-  - booking.url = "https://massdcrcamping.reserveamerica.com/camping/wellfleet · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/wellfleet-hollow-state-campground/r/campgroundDeta”
-  - phone_hint = "(508) 349-3007" · “llow State Campground Address 180 Old Kings Highway, Wellfleet, MA 02667 Directions Phone (508) 349-3007 Reserve a campsite Get Directions t”
-  - reservable = true · “ground Address 180 Old Kings Highway, Wellfleet, MA 02667 Directions Phone (508) 349-3007 Reserve a campsite Get Directions to Wellfleet Hol”
-  - sites.total = 27 · “ng State Forest, Erving, MA 01344 Directions Visit for a swim or hike, camp at one of our 27 sites, or kayak on Laurel Lake. Phone (978) 544”
+- **DAR State Forest campground** (intake-US-4724, agency (outside research camping-us-oct31), status ok, 5 facts) · [massdcrcamping.reserveamerica.com](https://massdcrcamping.reserveamerica.com/)
+  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://massdcrcamping.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://massdcrcamping.reserveamerica.com/memberSignInSignUp.do”
+  - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “Tents Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
+  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins, Yurts or Lodgings Options Occ”
 - **Lorraine Park Campground** (US-4746:hq0, state, status ok, 6 facts) · [www.mass.gov](https://www.mass.gov/locations/harold-parker-state-forest)
   - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
   - booking.url = "https://massdcrcamping.reserveamerica.com/camping/harold-pa · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/harold-parker-state-forest/r/campgroundDetails.do?”
@@ -1811,6 +1811,12 @@ Updated 2026-11-07. Every fact in <area>.json carries its source url, read date 
   - map.date_how = "web page, no date in the link" · “link “Download a trail map””
   - map.url = "https://www.mass.gov/doc/harold-parker-state-forest-trail-m · “link “Download a trail map” -> https://www.mass.gov/doc/harold-parker-state-forest-trail-map/download”
   - sites.total = 89 · “The Lorraine Park Campground offers 89 campsites for tents, trailers, or R.V.s. All Activities Hiking Camping Canoeing and kayaking Fishin”
+- **Peddocks Island campground (DCR)** (intake-US-2421, agency (outside research camping-us-oct31), status ok, 5 facts) · [massdcrcamping.reserveamerica.com](https://massdcrcamping.reserveamerica.com/)
+  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://massdcrcamping.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://massdcrcamping.reserveamerica.com/memberSignInSignUp.do”
+  - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “Tents Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
+  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins, Yurts or Lodgings Options Occ”
 - **Granville State Forest campground** (US-4703:hq0, state, status ok, 10 facts) · [www.mass.gov](https://www.mass.gov/locations/granville-state-forest)
   - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
   - booking.url = "https://massdcrcamping.reserveamerica.com/camping/granville · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/granville-state-forest/r/campgroundDetails.do?cont”
@@ -1833,6 +1839,42 @@ Updated 2026-11-07. Every fact in <area>.json carries its source url, read date 
   - rules.pets = "Dogs Allowed" · “bor Day weekend 9 a.m. - 10 p.m.. more less contact info Online willard.brook@state.ma.us Dogs Allowed Self-guided opportunities Download a ”
   - showers = true · “Activities Camping Visitors can choose from more than 50 campsites, which are served by a bathhouse. Swimming Cool off with a dip in Pearl H”
   - sites.total = 50 · “to sunset Parking Parking available Activities Camping Visitors can choose from more than 50 campsites, which are served by a bathhouse. Swi”
+- **Nickerson State Park campground** (US-2451:hq0, state, status ok, 8 facts) · [www.mass.gov](https://www.mass.gov/locations/nickerson-state-park)
+  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
+  - booking.url = "https://massdcrcamping.reserveamerica.com/camping/nickerson · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/nickerson-state-park/r/campgroundDetails.do?contra”
+  - fees = "$22/night for Massachusetts residents and | $70/night for n · “ted to a 10 horsepower-maximum engine. No firewood from outside park More info Camping is $22/night for Massachusetts residents and $70/nigh”
+  - map.date_how = "web page, no date in the link" · “link “Download a Trail Map””
+  - map.url = "https://www.mass.gov/doc/nickerson-state-park-trail-map/dow · “link “Download a Trail Map” -> https://www.mass.gov/doc/nickerson-state-park-trail-map/download”
+  - reservable = true · “ate.ma.us Wheelchair Accessible Dogs Allowed Download a Trail Map Suggested Hikes & Rides Reserve a campsite Southeastern MA Adult Walking C”
+  - rules.pets = "Dogs Allowed" · “) 896-3491 more less contact info Online nickerson.park@state.ma.us Wheelchair Accessible Dogs Allowed Download a Trail Map Suggested Hikes ”
+  - sites.total = 400 · “There's plenty of wooded trails and ponds to explore, and Nickerson also offers more than 400 campsites. Hours Sunrise to sunset Parking Dai”
+- **Savoy Mountain State Forest campground** (US-4743:hq0, state, status ok, 9 facts) · [www.mass.gov](https://www.mass.gov/locations/savoy-mountain-state-forest)
+  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
+  - booking.url = "https://massdcrcamping.reserveamerica.com/camping/savoy-mou · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/savoy-mountain-state-forest/r/campgroundDetails.do”
+  - fees = "$17/night for Massachusetts residents and | $54/night for n · “e park Read the rules for hunting in state parks More info Camping information Camping is $17/night for Massachusetts residents and $54/nigh”
+  - map.date_how = "web page, no date in the link" · “link “Download a trail map””
+  - map.url = "https://www.mass.gov/doc/savoy-mountain-state-forest-trail- · “link “Download a trail map” -> https://www.mass.gov/doc/savoy-mountain-state-forest-trail-map/download”
+  - phone_hint = "(781) 233-0834" · “about the local habitat. Explore a variety of nature and wildlife across 65 acres. Phone (781) 233-0834 Open Thursday, Friday, and Saturday ”
+  - reservable = true · “e.ma.us Wheelchair Accessible Dogs Allowed Self-guided opportunities Download a trail map Reserve a campsite Mohican - Mohawk Trail Busby Tr”
+  - rules.pets = "Dogs Allowed" · “) 663-8469 more less contact info Online savoy.mountain@state.ma.us Wheelchair Accessible Dogs Allowed Self-guided opportunities Download a ”
+  - sites.total = 27 · “ng State Forest, Erving, MA 01344 Directions Visit for a swim or hike, camp at one of our 27 sites, or kayak on Laurel Lake. Phone (978) 544”
+- **Tolland State Forest** (US-4707, state, status ok, 13 facts) · [www.mass.gov](https://www.mass.gov/locations/tolland-state-forest)
+  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
+  - booking.url = "https://massdcrcamping.reserveamerica.com/camping/tolland-s · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/tolland-state-forest/r/campgroundDetails.do?contra”
+  - dump_station = false · “esidents. RV sites have a 35-foot driveway and are non-electric. Please note, there is no dump station at this facility. Learn more about ca”
+  - fees = "$17/night for Massachusetts residents and | $54/night for n · “ber. Reservations required. No walk-ins. No visitors. Registered campers only. Camping is $17/night for Massachusetts residents and $54/nigh”
+  - hookups.electric = false · “s residents and $54/night for non-residents. RV sites have a 35-foot driveway and are non-electric. Please note, there is no dump station at”
+  - map.date_how = "web page, no date in the link" · “link “Download a trail map””
+  - map.url = "https://www.mass.gov/doc/tolland-state-forest-trail-map/dow · “link “Download a trail map” -> https://www.mass.gov/doc/tolland-state-forest-trail-map/download”
+  - phone_hint = "(781) 233-0834" · “about the local habitat. Explore a variety of nature and wildlife across 65 acres. Phone (781) 233-0834 Open Thursday, Friday, and Saturday ”
+  - reservable = true · “hone (413) 269-6002 more less contact info Online tolland.forest@state.ma.us Dogs Allowed Reserve a campsite Download a trail map Gilmore se”
+  - restrooms = "yes (kind not stated)" · “ed) Educational programs Facilities Boat ramp (trailer/motor boat) Campground with beach, comfort stations (Campers Only) Reservations requi”
+- **Clarksburg State Park campground (adjacent)** (intake-US-4760, agency (outside research camping-us-oct31), status ok, 5 facts) · [massdcrcamping.reserveamerica.com](https://massdcrcamping.reserveamerica.com/)
+  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://massdcrcamping.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://massdcrcamping.reserveamerica.com/memberSignInSignUp.do”
+  - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “Tents Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
+  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins, Yurts or Lodgings Options Occ”
 - **Willard Brook State Forest** (US-4752, state, status ok, 9 facts) · [www.mass.gov](https://www.mass.gov/locations/willard-brook-state-forest)
   - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
   - booking.url = "https://massdcrcamping.reserveamerica.com/camping/willard-b · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/willard-brook-state-forest/r/campgroundDetails.do?”
@@ -1843,51 +1885,6 @@ Updated 2026-11-07. Every fact in <area>.json carries its source url, read date 
   - rules.pets = "Dogs Allowed" · “4 Directions Phone (978) 597-8802 more less contact info Online willard.brook@state.ma.us Dogs Allowed Download a trail map Reserve a campsi”
   - season = "late May through early September" · “, including, hiking, and cross-country skiing. Hours Sunrise to sunset Campground office (late May to early September) Sunday - Saturday: 9:”
   - sites.total = 21 · “urday: 9:00 am-10:00 pm Parking Parking available Activities Camping Willard Brook offers 21 campsites and one group yurt Hiking Try the Fri”
-- **Lake Dennison campground** (US-8389:hq0, state, status ok, 8 facts) · [www.mass.gov](https://www.mass.gov/locations/lake-dennison-recreation-area)
-  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
-  - booking.url = "https://massdcrcamping.reserveamerica.com/camping/lake-denn · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/lake-dennison-recreation-area/r/campgroundDetails.”
-  - fees = "$17/night for Massachusetts residents and | $54/night for n · “o alcohol No littering No dogs allowed on the beach More info Camping at Lake Dennison is $17/night for Massachusetts residents and $54/nigh”
-  - phone = "(978) 297-1609" · “MA 01436 Directions Phone Call Lake Dennison Campground at (978) 297-1609 seasonal Related parks Otter River State Forest More parks”
-  - phone_hint = "(978) 297-1609" · “o mail delivery) , Winchendon, MA 01436 Directions Phone Call Lake Dennison Campground at (978) 297-1609 seasonal Related parks Otter River ”
-  - reservable = true · “939-8962 year round Contact station (978) 297-1609 seasonal Transit friendly Dogs Allowed Reserve a campsite Visit Massachusetts State Parks”
-  - rules.pets = "Dogs Allowed" · “arters (978) 939-8962 year round Contact station (978) 297-1609 seasonal Transit friendly Dogs Allowed Reserve a campsite Visit Massachusett”
-  - sites.total = 150 · “Google Maps Details Overview Located in Winchendon, the Lake Dennison Recreation Area has 150 campsites and a beach where you can swim. Due ”
-- **Wompatuck State Park campground** (US-2465:hq0, state, status ok, 8 facts) · [www.mass.gov](https://www.mass.gov/locations/wompatuck-state-park)
-  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
-  - booking.url = "https://massdcrcamping.reserveamerica.com/camping/wompatuck · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/wompatuck-state-park/r/campgroundDetails.do?contra”
-  - fees = "$17/night for Massachusetts residents and | $54/night for n · “ng Read the rules for hunting in state parks More info Camping at Wompatuck State Park is $17/night for Massachusetts residents and $54/nigh”
-  - map.date_how = "web page, no date in the link" · “link “Download a trail map””
-  - map.url = "https://www.mass.gov/doc/wompatuck-state-park-trail-map/dow · “link “Download a trail map” -> https://www.mass.gov/doc/wompatuck-state-park-trail-map/download”
-  - reservable = true · “tact info Online Wompatuck.park@mass.gov Wheelchair Accessible Dogs Allowed Historic site Reserve a campsite Download a trail map Recommende”
-  - rules.pets = "Dogs Allowed" · “617) 895-8245 more less contact info Online Wompatuck.park@mass.gov Wheelchair Accessible Dogs Allowed Historic site Reserve a campsite Down”
-  - sites.total = 250 · “iew Wompatuck State Park spans 3,526 acres of forest, streams and ponds. Offering an over 250 site campground, 12 miles of non-motorized roa”
-- **Wells State Park campground** (US-2462:hq0, state, status ok, 7 facts) · [www.mass.gov](https://www.mass.gov/locations/wells-state-park)
-  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
-  - booking.url = "https://massdcrcamping.reserveamerica.com/camping/wells-sta · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/wells-state-park/r/campgroundDetails.do?contractCo”
-  - map.date_how = "web page, no date in the link" · “link “Download a trail map””
-  - map.url = "https://www.mass.gov/doc/wells-state-park-trail-map/downloa · “link “Download a trail map” -> https://www.mass.gov/doc/wells-state-park-trail-map/download”
-  - reservable = true · “22-6762 Wheelchair Accessible Dogs Allowed Download a trail map Self-guided opportunities Reserve a campsite Sign Up for DCR Central Valley ”
-  - rules.pets = "Dogs Allowed" · “tions Phone Headquarters (508) 347-9257 Reservations (877) 422-6762 Wheelchair Accessible Dogs Allowed Download a trail map Self-guided oppo”
-  - sites.total = 60 · “me senior parking pass Activities Camping Bring your tent, trailer, or R.V. to any of the 60 sites located near Walker Pond Hiking Hike up C”
-- **Nickerson State Park campground** (US-2451:hq0, state, status ok, 8 facts) · [www.mass.gov](https://www.mass.gov/locations/nickerson-state-park)
-  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
-  - booking.url = "https://massdcrcamping.reserveamerica.com/camping/nickerson · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/nickerson-state-park/r/campgroundDetails.do?contra”
-  - fees = "$22/night for Massachusetts residents and | $70/night for n · “ted to a 10 horsepower-maximum engine. No firewood from outside park More info Camping is $22/night for Massachusetts residents and $70/nigh”
-  - map.date_how = "web page, no date in the link" · “link “Download a Trail Map””
-  - map.url = "https://www.mass.gov/doc/nickerson-state-park-trail-map/dow · “link “Download a Trail Map” -> https://www.mass.gov/doc/nickerson-state-park-trail-map/download”
-  - reservable = true · “ate.ma.us Wheelchair Accessible Dogs Allowed Download a Trail Map Suggested Hikes & Rides Reserve a campsite Southeastern MA Adult Walking C”
-  - rules.pets = "Dogs Allowed" · “) 896-3491 more less contact info Online nickerson.park@state.ma.us Wheelchair Accessible Dogs Allowed Download a Trail Map Suggested Hikes ”
-  - sites.total = 400 · “There's plenty of wooded trails and ponds to explore, and Nickerson also offers more than 400 campsites. Hours Sunrise to sunset Parking Dai”
-- **Beartown State Forest** (US-4711, state, status ok, 9 facts) · [www.mass.gov](https://www.mass.gov/orgs/department-of-conservation-recreation)
-  - booking.how = "online: www.mass.gov" · “link “Mt. Greylock””
-  - booking.url = "https://www.mass.gov/locations/mount-greylock-state-reserva · “link “Mt. Greylock” -> https://www.mass.gov/locations/mount-greylock-state-reservation”
-  - hookups.electric = true · “ampgrounds vary in what they offer, from showers and flush toilets to R.V. sites offering electric and water hook-ups. You can also try isla”
-  - hookups.water = true · “ampgrounds vary in what they offer, from showers and flush toilets to R.V. sites offering electric and water hook-ups. You can also try isla”
-  - map.date_how = "web page, year 2026 in the link" · “link “DCR Unveils 2026 Interactive Fall Foliage Map””
-  - map.url = "https://www.mass.gov/news/dcr-unveils-2026-interactive-fall · “link “DCR Unveils 2026 Interactive Fall Foliage Map” -> https://www.mass.gov/news/dcr-unveils-2026-interactive-fall-foliage-map”
-  - reservable = true · “Conservation & Recreation What would you like to do? Find a park Learn about Jobs at DCR Reserve a campsite Check DCR park alerts Pay a park”
-  - restrooms = "flush" · “res, or near the beach on Cape Cod. Campgrounds vary in what they offer, from showers and flush toilets to R.V. sites offering electric and ”
-  - showers = true · “the Berkshires, or near the beach on Cape Cod. Campgrounds vary in what they offer, from showers and flush toilets to R.V. sites offering el”
 
 ## US-VT: 12 random samples (records with facts; seed = the date)
 
