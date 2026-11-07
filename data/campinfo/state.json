@@ -128,8 +128,8 @@
     "with_facts": 105,
     "with_sites": 2
    },
-   "left": 0,
-   "status": "done",
+   "left": 6,
+   "status": "partial",
    "updated": "2026-11-07"
   },
   "US-CT": {
@@ -2396,49 +2396,40 @@
  },
  "last": {
   "areas": [
-   "US-WA"
+   "US-CO"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 386,
+   "dropped_queued": 544,
    "errors": 0,
    "for_person_urls": [
     [
      "https://epqs.nationalmap.gov/robots.txt",
      "robots.txt answered 403: nothing fetched from epqs.nationalmap.gov this run"
-    ],
-    [
-     "https://broadbandmap.fcc.gov/robots.txt",
-     "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
-    ],
-    [
-     "https://washington.goingtocamp.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from washington.goingtocamp.com this run"
     ]
    ],
-   "requests": 130,
-   "rested": 0,
-   "robots": 3,
-   "robots_unreadable": 3,
+   "requests": 1,
+   "rested": 200,
+   "robots": 1,
+   "robots_unreadable": 1,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 46,
-   "camps": 369,
+   "camps": 545,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 38,
-   "needs_key": 214,
-   "no_page": 74,
+   "needs_browser": 0,
+   "needs_key": 345,
+   "no_page": 0,
    "not_official": 0,
-   "ok": 71,
-   "pages_read": 72,
-   "resting": 0,
+   "ok": 0,
+   "pages_read": 0,
+   "resting": 200,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 0
+   "skipped_fresh": 131
   },
   "when": "2026-11-07"
  },
