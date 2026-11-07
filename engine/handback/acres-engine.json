@@ -210,6 +210,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0; read 2026-11-04"
   },
   {
+   "Park number (if matched)": "US-1080",
+   "Park name (as the agency writes it)": "DeGray Lake Resort State Park",
+   "Size": 828,
+   "Unit": "acres",
+   "Agency": "Arkansas State Parks (park, state GIS table)",
+   "Source page": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0/query?where=OBJECTID%3D54&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0; read 2026-11-07"
+  },
+  {
    "Park number (if matched)": "CA-4794",
    "Park name (as the agency writes it)": "Kootenai House",
    "Size": 0,
@@ -993,6 +1002,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2; read 2026-11-05"
   },
   {
+   "Park number (if matched)": "US-4854",
+   "Park name (as the agency writes it)": "Dupont State Forest",
+   "Size": 12469,
+   "Unit": "acres",
+   "Agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
+   "Source page": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?where=OBJECTID%3D3364&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0; read 2026-11-05"
+  },
+  {
    "Park number (if matched)": "US-5756",
    "Park name (as the agency writes it)": "Browns Park WMA",
    "Size": 3134,
@@ -1380,15 +1398,6 @@
    "Notes": "computed from the official outline polygon (approx); layer https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21; read 2026-11-05"
   },
   {
-   "Park number (if matched)": "US-4854",
-   "Park name (as the agency writes it)": "Dupont State Forest",
-   "Size": 12469,
-   "Unit": "acres",
-   "Agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
-   "Source page": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?where=OBJECTID%3D3364&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0; read 2026-11-05"
-  },
-  {
    "Park number (if matched)": "US-0042",
    "Park name (as the agency writes it)": "Fort Gaines",
    "Size": 32,
@@ -1563,6 +1572,16 @@
    "Retry?": "NO"
   },
   {
+   "Host": "gis.ardot.gov",
+   "Agency/area": "Arkansas State Parks (park, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0",
+   "# times used": 2,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "maps.gov.bc.ca",
    "Agency/area": "Government of British Columbia (Historic Places)",
    "Kind": "GIS layer",
@@ -1713,16 +1732,6 @@
    "Retry?": "NO"
   },
   {
-   "Host": "gis.ardot.gov",
-   "Agency/area": "Arkansas State Parks (park, state GIS table)",
-   "Kind": "GIS layer",
-   "Example URL": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0",
-   "# times used": 1,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
    "Host": "www.donneesquebec.ca",
    "Agency/area": null,
    "Kind": "GIS layer",
@@ -1738,6 +1747,16 @@
    "Kind": "GIS layer",
    "Example URL": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
    "# times used": 3,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "ncnhde.natureserve.org",
+   "Agency/area": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0",
+   "# times used": 1,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -1777,16 +1796,6 @@
    "Agency/area": "Crown-Indigenous Relations and Northern Affairs Canada (Nunavut Map Viewer); SOURCE=GN-ENV (Government of Nunavut Environment)",
    "Kind": "GIS layer",
    "Example URL": "https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21",
-   "# times used": 1,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
-   "Host": "ncnhde.natureserve.org",
-   "Agency/area": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
-   "Kind": "GIS layer",
-   "Example URL": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0",
    "# times used": 1,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
