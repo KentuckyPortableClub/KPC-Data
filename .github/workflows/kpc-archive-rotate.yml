@@ -1,5 +1,6 @@
-name: "KPC archive rotate (by hand) - old waiting-room undo copies to KPC-Archive"
-# Nov 7 2026 (archive split). BY HAND ONLY: no schedule, no workflow_run. Moves data/waiting/previous/ items older than N days
+name: "KPC archive rotate (weekly + by hand) - old waiting-room undo copies to KPC-Archive"
+# Nov 7 2026 (archive split). Weekly (Brandon Nov 7, 4:02 PM CST: "weekly to keep data from getting to big") plus by hand; no workflow_run.
+# The weekly run is a REAL run with the defaults: groups=previous, older than 14 days. Moves data/waiting/previous/ items older than N days
 # (default 14) from KPC-Data to KentuckyPortableClub/KPC-Archive (same paths), then removes them from KPC-Data. Held items in
 # data/waiting/in/ are never touched (kpc_archive_move.py refuses them). Needs the repo secret KPC_ARCHIVE_TOKEN: a fine-grained
 # token with Contents: read and write on KPC-Archive ONLY. This file holds the NAME of the secret, never a value.
@@ -7,6 +8,8 @@ name: "KPC archive rotate (by hand) - old waiting-room undo copies to KPC-Archiv
 # (4) delete from KPC-Data only what the archive copy matches byte for byte, (5) push KPC-Data. A failed push stops the run (red).
 # dry_run (default true) prints the MB that would move and changes nothing.
 on:
+  schedule:
+    - cron: '27 15 * * 3'   # weekly, Wednesday 9:27 AM CST (15:27 UTC), away from the 11:13 UTC nightly waiting room
   workflow_dispatch:
     inputs:
       older_than_days:
@@ -32,7 +35,7 @@ jobs:
     timeout-minutes: 60
     steps:
       - name: Stop early when the archive token is missing (a real run only)
-        if: ${{ inputs.dry_run == 'false' }}
+        if: ${{ (github.event_name == 'schedule' || inputs.dry_run == 'false') }}
         env:
           TOKEN_SET: ${{ secrets.KPC_ARCHIVE_TOKEN != '' }}
         run: |
@@ -52,13 +55,13 @@ jobs:
           python3 kpcdata/.github/scripts/kpc_archive_move.py --data kpcdata --archive archive \
             --groups "${{ inputs.groups || 'previous' }}" --older-than-days "${{ inputs.older_than_days || '14' }}" | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Copy into the archive checkout and verify
-        if: ${{ inputs.dry_run == 'false' }}
+        if: ${{ (github.event_name == 'schedule' || inputs.dry_run == 'false') }}
         run: |
           python3 kpcdata/.github/scripts/kpc_archive_move.py --data kpcdata --archive archive --copy-only \
             --groups "${{ inputs.groups || 'previous' }}" --older-than-days "${{ inputs.older_than_days || '14' }}"
           python3 kpcdata/.github/scripts/kpc_archive_move.py --data kpcdata --archive archive --verify
       - name: Push KPC-Archive
-        if: ${{ inputs.dry_run == 'false' }}
+        if: ${{ (github.event_name == 'schedule' || inputs.dry_run == 'false') }}
         working-directory: archive
         run: |
           git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -68,13 +71,13 @@ jobs:
           for i in 1 2 3 4 5; do git pull -q --rebase origin main 2>/dev/null; git push -q origin HEAD:main && ok=1 && break; sleep $((i*5)); done
           [ "${ok:-}" = 1 ] || { echo "::error title=Archive push::KPC-Archive could not be pushed; KPC-Data was NOT changed"; exit 1; }
       - name: Delete from KPC-Data only what the archive holds byte for byte
-        if: ${{ inputs.dry_run == 'false' }}
+        if: ${{ (github.event_name == 'schedule' || inputs.dry_run == 'false') }}
         run: |
           python3 kpcdata/.github/scripts/kpc_archive_move.py --data kpcdata --archive archive --verify
           python3 kpcdata/.github/scripts/kpc_archive_move.py --data kpcdata --archive archive --delete-verified \
             --groups "${{ inputs.groups || 'previous' }}" --older-than-days "${{ inputs.older_than_days || '14' }}"
       - name: Push KPC-Data
-        if: ${{ inputs.dry_run == 'false' }}
+        if: ${{ (github.event_name == 'schedule' || inputs.dry_run == 'false') }}
         working-directory: kpcdata
         run: |
           git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'

@@ -43,7 +43,7 @@ for f in KEEP:
 # Crons Brandon OK'd himself (the only way a new cron gets in): Brandon, 7:11 AM CST Nov 6 2026 (relayed by the parent agent, his
 # words): "Yes, put the Quality sample on a weekly schedule" -> kpc-quality-sample.yml Mondays 7:41 AM CST.
 # Nov 7 2026 2:19 PM CST (Brandon, own words: "release fcc ridb"): the cell coverage bot's pre-PR1 monthly cron is back.
-BRANDON_OK_CRONS = {('kpc-quality-sample.yml', '41 13 * * 1'), ('kpc-cell.yml', '16 9 3 * *')}
+BRANDON_OK_CRONS = {('kpc-quality-sample.yml', '41 13 * * 1'), ('kpc-cell.yml', '16 9 3 * *'), ('kpc-archive-rotate.yml', '27 15 * * 3')}  # archive weekly: Brandon Nov 7 4:02 PM CST
 new_crons = []
 for p in sorted(W.glob('*.yml')):
     before = subprocess.run(['git', 'show', f'{BASE}:.github/workflows/{p.name}'], capture_output=True, text=True).stdout
