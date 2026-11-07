@@ -191,7 +191,7 @@ try:
     wf_path = ROOT / '.github/workflows/kpc-archive-rotate.yml'
     wf = yaml.safe_load(wf_path.read_text(encoding='utf-8')); wf['on'] = wf.pop(True, wf.get('on'))
     txt = wf_path.read_text(encoding='utf-8')
-    check(list(wf['on']) == ['workflow_dispatch'], 'rotate workflow: by hand only (no schedule, no workflow_run)')
+    check(sorted(wf['on']) == ['schedule', 'workflow_dispatch'] and [c['cron'] for c in wf['on']['schedule']] == ['27 15 * * 3'], 'rotate workflow: weekly (Brandon Nov 7) + by hand, no workflow_run')
     check(wf['on']['workflow_dispatch']['inputs']['dry_run']['default'] == 'true' and wf['on']['workflow_dispatch']['inputs']['older_than_days']['default'] == '14',
           'rotate workflow: dry run and 14 days are the defaults')
     check(set(re.findall(r'secrets\.(\w+)', txt)) == {'KPC_ARCHIVE_TOKEN'} and not re.search(r'gh[pous]_[A-Za-z0-9]{10,}|github_pat_', txt), 'rotate workflow: only the secret NAME KPC_ARCHIVE_TOKEN, no token value')
