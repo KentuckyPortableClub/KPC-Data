@@ -1,11 +1,11 @@
 # Closures super-bot: review (2026-11-07; RULE SHEET D; compared quietly, nothing on cards until GO)
 
-Run: 2026-11-07T02:19Z · requests 105 · pages 83 · PDFs 17 · sentences read 473 · unmatched 122 · look-alikes skipped 263 · sources failed 0
+Run: 2026-11-07T07:44Z · requests 105 · pages 83 · PDFs 17 · sentences read 473 · unmatched 122 · look-alikes skipped 263 · sources failed 0
 
-## Kentucky gate: **PASS** — 30 of 31 of Kentucky's own reader's items found here on the same park (96%); 57 only here
+## Kentucky gate: **PASS** — 30 of 31 of Kentucky's own reader's items found here on the same park (96%); 56 only here
 
-## US-KY (done, read 2026-11-07T02:19)
-whole 0 · part 0 · hunt 0 · seasonal 0 · note 83 · taken_down 2 · 0 banners
+## US-KY (done, read 2026-11-07T07:44)
+whole 0 · part 0 · hunt 0 · seasonal 0 · note 82 · taken_down 3 · 0 banners
 
 Dropped as another state's place (multi-state forest): 32 notices
 
@@ -41,7 +41,7 @@ Unmatched (two parks or none; for chat 11 to judge):
 - BLIND RESTRICTIONS [ky-fw-public-land] · no park name shares a word
 - Big Rivers WMA (noon Central to 5 p.m.) in Union County and at the Roberts Tract [ky-fw-public-land] · nearest park name: Big Rivers Wildlife Management Area (US-3796)
 
-### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 30 · only here 57 · only there 1
+### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 30 · only here 56 · only there 1
 
 - ONLY THERE: US-3831 hc-US-3831-2026-11-15: Kentucky Fish & Wildlife: Nov 15–Jan 15: closed to all hunting and public access, except waterfowl a
 - ONLY HERE: US-0050 [note] "Elevator for Accessible Tour Out of Service."
@@ -68,7 +68,7 @@ Unmatched (two parks or none; for chat 11 to judge):
 - ONLY HERE: US-1281 [note] "Jenny Wiley State Resort Park lodge is closed for critical structural integrity renovations."
 - ONLY HERE: US-1282 [note] "Parts of the park may be closed during the quota hunt Nov. 19-22 (archery/crossbow)."
 - ONLY HERE: US-1282 [note] "Parts of the park may be closed during the quota hunt Dec. 3-6."
-- ONLY HERE: US-1284 [note] "Parts of the park may be closed during the quota hunt Nov. 2-6 (archery/crossbow)."
+- ONLY HERE: US-1284 [note] "Parts of the park may be closed during the quota hunt Jan. 5-6."
 
 - US-0050 · ℹ️ Note: "Elevator for Accessible Tour Out of Service." (National Park Service)
 - US-0050 · ℹ️ Part closed (Green River Ferry is operational but) updated 2026-11-05: "Green River Ferry is operational but remains closed to recreational vehicle and trailer traffic due to low water conditions."
