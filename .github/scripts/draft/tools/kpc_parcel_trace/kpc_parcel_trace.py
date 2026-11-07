@@ -41,8 +41,9 @@ lake-surface layer, the Kentucky answer key over the ky-*.geojson files, and off
 $KPC_OFFICIAL_DIR, else the KPC-Data data/ folder when this file sits in KPC-Data). Excluded parcel ids and the other
 park's ref are in the why, report.csv excluded_by_other_park and the feature property excluded_other_park. When every
 agency parcel within 500 m is excluded the park is NEEDS A PERSON. When no official data covers an area, the why says so.
-403s: a 403 on robots.txt alone means no robots rules (RFC 9309) and the layer is still read; only a 403 on the
-data request itself marks the host blocked (no retry), and that park is an ERROR "blocked: ...".  Exit: 0 done, 3 time ran out (run again with
+403s (standing rule, Nov 7): a robots.txt 401/403 (or 5xx / no answer) is a STOP: nothing is read from that host
+and the park is an ERROR "robots: ..."; robots Disallow is obeyed on ArcGIS REST paths too. A 403 on the data
+request itself marks the host blocked (no retry), and that park is an ERROR "blocked: ...".  Exit: 0 done, 3 time ran out (run again with
 --resume), 2 bad input.
 """
 import argparse, csv, json, math, os, re, sys, time
@@ -157,7 +158,12 @@ PID_FIRST = [re.compile(r'^(parno|span|map_par_id|cleanparcelid|parcel_?id|parce
 
 class Blocked(Exception):
     """The DATA request itself was refused (403): accepted, never retried, the host is marked blocked (club decision 3).
-    A 403 on robots.txt alone is not this: it means no robots rules (RFC 9309) and the layer is still read."""
+    A 403 on robots.txt is a robots STOP instead (robots_msg): nothing is read from that host (Nov 7 rule)."""
+
+
+def robots_msg(u):
+    return (f'robots: robots.txt does not allow reading {u} (a robots 401/403, 5xx or no answer is a STOP under the '
+            'club rule of Nov 7; no other user-agent or API path is tried)')
 
 
 def blocked_msg(u):
@@ -491,6 +497,8 @@ def open_layer(web, url, deadline):
             if not d and TL.is_ssl_status(st):
                 return None, f'ssl: the parcel layer did not open after one retry ({st})'
         if not d:
+            if str(st) == 'robots':
+                return None, robots_msg(url)
             return None, (blocked_msg(url) if str(st) == '403' else f'the parcel layer did not open ({st})')
         if kp.ZONING.search(str(d.get('name') or '') + ' ' + str(d.get('description') or '')[:300]):
             return None, 'a zoning layer (zoning is not ownership; never a parcel source)'
@@ -1154,7 +1162,7 @@ def run(args, web=None):
     state = json.load(open(sp)) if args.resume and os.path.exists(sp) else {'results': {}, 'done': {}}
     park_min = float(getattr(args, 'park_minutes', None) or PARK_MIN)
     req_to = float(getattr(args, 'request_timeout', None) or REQ_TIMEOUT)
-    web = web or kp.Polite(cache=args.cache, log=log, rest_exempt=True, timeout=req_to)
+    web = web or kp.Polite(cache=args.cache, log=log, timeout=req_to)     # Nov 7: no REST robots exemption
     web.log = log
     read_date = kp.today()
     left = 0
@@ -1239,7 +1247,7 @@ class _FakeServer(kp.Polite):
 
     def __init__(self, owner_at, owner_key='OWNER_NAME', pid_key='PARCEL_ID', robots403=False, data403=False,
                  other_layer=None):
-        super().__init__(cache=None, gap=0, rest_exempt=True)
+        super().__init__(cache=None, gap=0)
         self.owner_at, self.urls = owner_at, []
         self.other_layer = other_layer or {}      # oid -> (NAME, (i0, j0, i1, j1)): an 'official park' layer /O/MapServer/1
         self.owner_key, self.pid_key, self.robots403, self.data403 = owner_key, pid_key, robots403, data403
@@ -1448,14 +1456,25 @@ def selftest():
                                      'property_number'), {}, 'X', time.time() + 60)
         if stt != 'NO PARCEL' or 'federal property (DFRP)' not in why:
             problems.append(f'no DFRP property near the pin must be NO PARCEL: {stt} {why}')
-        # 403s: robots.txt alone = no robots rules, the layer is still read; a refused data request = blocked, ERROR
+        # 403s (Nov 7 rule): robots.txt 403 = STOP, the layer is never asked; a refused data request = blocked, ERROR
         w403 = _FakeServer(owners, robots403=True)
         try:
-            stt, why, feat, info = trace(dict(parks[0], ref='K4TEST-09'), w403, {}, 'X', time.time() + 60)
+            stt, why = trace(dict(parks[0], ref='K4TEST-09'), w403, {}, 'X', time.time() + 60)[:2]
         except Blocked as e:
             stt, why = 'ERROR', str(e)
-        if stt != 'DRAWN' or w403.blocked:
-            problems.append(f'a 403 on robots.txt alone must not stop the layer being read: {stt} {w403.blocked}')
+        asked = [u for u in w403.urls if not u.split('?')[0].endswith('/robots.txt')]
+        if stt != 'ERROR' or not why.startswith('robots:') or asked or 'fake.example.gov' not in w403.robots_stop:
+            problems.append(f'a 403 on robots.txt must STOP with no layer request: {stt} {why} {asked}')
+        # ... and a robots Disallow on the REST path is obeyed (no REST exemption any more)
+        wdis = _FakeServer(owners)
+        wdis.robots['fake.example.gov'] = kp.Robots('User-agent: *\nDisallow: /arcgis/rest/\n')
+        try:
+            stt, why = trace(dict(parks[0], ref='K4TEST-09b'), wdis, {}, 'X', time.time() + 60)[:2]
+        except Blocked as e:
+            stt, why = 'ERROR', str(e)
+        asked = [u for u in wdis.urls if not u.split('?')[0].endswith('/robots.txt')]
+        if stt != 'ERROR' or not why.startswith('robots:') or asked:
+            problems.append(f'a robots Disallow on an ArcGIS REST path must be obeyed: {stt} {why} {asked}')
         wdat = _FakeServer(owners, data403=True)
         try:
             stt, why = trace(dict(parks[0], ref='K4TEST-10'), wdat, {}, 'X', time.time() + 60)[:2]

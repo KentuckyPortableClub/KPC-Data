@@ -649,7 +649,7 @@ def run(args, web=None):
     log = (lambda *a: print(*a, flush=True)) if not args.quiet else (lambda *a: None)
     # The download cache only ever holds public catalogue replies (county lookups, searches, layer info);
     # parcel replies (which carry owner names) are asked with nocache=True.
-    web = web or Polite(cache=args.cache, log=log, rest_exempt=True)
+    web = web or Polite(cache=args.cache, log=log)
     web.log = log
     read_date = today()
     try:
@@ -845,7 +845,7 @@ def do_park(pk, web, finder, known, layers, no_layer, read_date, args, areas, lo
 # ------------------------------------------------------------------ self test (no network)
 class FakeWeb(Polite):
     def __init__(self, routes):
-        super().__init__(cache=None, gap=0, rest_exempt=True)
+        super().__init__(cache=None, gap=0)
         self.routes = routes
 
     def _raw(self, url, method='GET', data=None, headers=None):
