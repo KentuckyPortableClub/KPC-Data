@@ -111,26 +111,26 @@
    "updated": "2026-11-06"
   },
   "US-CO": {
-   "camps": 626,
-   "checked": 605,
+   "camps": 676,
+   "checked": 653,
    "counts": {
-    "camps": 605,
-    "needs_browser": 0,
-    "needs_key": 339,
+    "camps": 653,
+    "needs_browser": 2,
+    "needs_key": 337,
     "no_page": 0,
     "not_official": 0,
-    "ok": 102,
-    "other": 0,
-    "resting": 164,
+    "ok": 101,
+    "other": 20,
+    "resting": 193,
     "robots": 0,
-    "with_booking": 266,
-    "with_elevation": 1,
-    "with_facts": 102,
-    "with_sites": 0
+    "with_booking": 316,
+    "with_elevation": 0,
+    "with_facts": 105,
+    "with_sites": 2
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-10-31"
+   "updated": "2026-11-07"
   },
   "US-CT": {
    "camps": 32,
@@ -989,7 +989,7 @@
   "US-AR": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-AZ": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-CA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
-  "US-CO": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
+  "US-CO": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-CT": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-DE": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-FL": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1080,10 +1080,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
-    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+    "src": null,
+    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-10-31"
+   "read": "2026-11-07"
   },
   "US-CT": {
    "cell": {
@@ -1437,7 +1437,9 @@
    "read": "2026-11-03"
   }
  },
- "hosts": {},
+ "hosts": {
+  "cpw.state.co.us": 1794129397.3422284
+ },
  "ky_check": {
   "agree": 81,
   "bot_blank": 220,
@@ -2391,42 +2393,47 @@
  },
  "last": {
   "areas": [
-   "US-VT"
+   "US-CO"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 8,
+   "dropped_queued": 675,
    "errors": 0,
    "for_person_urls": [
     [
      "https://epqs.nationalmap.gov/robots.txt",
      "robots.txt answered 403: nothing fetched from epqs.nationalmap.gov this run"
+    ],
+    [
+     "https://broadbandmap.fcc.gov/robots.txt",
+     "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 1,
-   "rested": 0,
-   "robots": 1,
-   "robots_unreadable": 1,
-   "strikes": 0
+   "requests": 163,
+   "rested": 200,
+   "robots": 2,
+   "robots_unreadable": 2,
+   "strikes": 3
   },
   "ridb_key": false,
   "stat": {
-   "camps": 9,
+   "browser": 18,
+   "camps": 676,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 0,
-   "needs_key": 9,
-   "no_page": 0,
+   "needs_browser": 19,
+   "needs_key": 352,
+   "no_page": 3,
    "not_official": 0,
-   "ok": 0,
-   "pages_read": 0,
-   "resting": 0,
+   "ok": 121,
+   "pages_read": 136,
+   "resting": 201,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 276
+   "skipped_fresh": 0
   },
-  "when": "2026-11-06"
+  "when": "2026-11-07"
  },
  "test": {
   "result": "PASS",
