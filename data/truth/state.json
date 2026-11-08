@@ -123,22 +123,22 @@
   "US-FL": {
    "checked": 460,
    "counts": {
-    "agree": 84,
-    "handover_hints": 16,
+    "agree": 83,
+    "handover_hints": 15,
     "no_page": 0,
-    "no_size": 280,
+    "no_size": 279,
     "off": 46,
     "ours_unknown": 2,
     "parks": 460,
     "retired": 0,
     "unsure": 31,
-    "weak": 11,
-    "with_outline": 443
+    "weak": 10,
+    "with_outline": 441
    },
    "left": 0,
    "parks": 460,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-08"
   },
   "US-GA": {
    "checked": 237,
@@ -183,22 +183,22 @@
   "US-IL": {
    "checked": 219,
    "counts": {
-    "agree": 68,
+    "agree": 91,
     "handover_hints": 15,
     "no_page": 1,
-    "no_size": 36,
-    "off": 42,
-    "ours_unknown": 8,
+    "no_size": 40,
+    "off": 31,
+    "ours_unknown": 3,
     "parks": 219,
     "retired": 0,
-    "unsure": 56,
-    "weak": 6,
-    "with_outline": 211
+    "unsure": 38,
+    "weak": 7,
+    "with_outline": 204
    },
    "left": 0,
    "parks": 219,
-   "status": "done",
-   "updated": "2026-11-08"
+   "status": "queued",
+   "updated": "2026-11-01"
   },
   "US-IN": {
    "checked": 229,
@@ -583,22 +583,22 @@
   "US-SC": {
    "checked": 167,
    "counts": {
-    "agree": 16,
-    "handover_hints": 4,
+    "agree": 18,
+    "handover_hints": 5,
     "no_page": 3,
-    "no_size": 126,
-    "off": 7,
+    "no_size": 112,
+    "off": 14,
     "ours_unknown": 2,
     "parks": 167,
     "retired": 0,
-    "unsure": 5,
+    "unsure": 11,
     "weak": 4,
-    "with_outline": 159
+    "with_outline": 160
    },
    "left": 0,
    "parks": 167,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-08"
   },
   "US-SD": {
    "checked": 120,
@@ -742,41 +742,37 @@
   }
  },
  "hosts": {
-  "www.alapark.com": 1794248619.2284882
+  "www.alapark.com": 1794248619.2284882,
+  "www.floridastateparks.org": 1794252193.2078493,
+  "www.swfwmd.state.fl.us": 1794252263.334702
  },
  "last": {
   "areas": [
-   "US-IL"
+   "US-IN"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 10,
+   "browser": 9,
    "errors": 0,
-   "for_person_urls": [
-    [
-     "https://ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from ngrrec-hunt-illinois-wordpress-images.s3.amazonaws.com this run"
-    ]
-   ],
-   "requests": 581,
+   "for_person_urls": [],
+   "requests": 22,
    "rested": 0,
-   "robots": 1,
-   "robots_unreadable": 1,
+   "robots": 0,
    "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 15,
-   "no_size": 37,
-   "ours_unknown": 8,
-   "pages_read": 524,
-   "parks": 219,
+   "handover_hints": 17,
+   "no_size": 9,
+   "ours_unknown": 0,
+   "pages_read": 9,
+   "parks": 9,
    "retired": 0,
-   "size_agree": 68,
-   "size_off": 42,
-   "size_unsure": 56,
-   "skipped_fresh": 0,
-   "with_outline": 211
+   "size_agree": 0,
+   "size_off": 0,
+   "size_unsure": 0,
+   "skipped_fresh": 220,
+   "with_outline": 9
   },
   "when": "2026-11-08"
  },
