@@ -1,12 +1,12 @@
 # kpc_pulloffs run report (2026-11-08)
 
-- version 1.0.0; exit code 3; ran 50.1 min; 195 web requests
-- parks in this input (after --areas / --limit): 190; done: 58; left for the next run: 132
-- candidates for chat 11: 2125; kept out (log only, work/log/kept_out.jsonl): 5964
+- version 1.0.0; exit code 3; ran 50.1 min; 214 web requests
+- parks in this input (after --areas / --limit): 190; done: 59; left for the next run: 131
+- candidates for chat 11: 2293; kept out (log only, work/log/kept_out.jsonl): 6546
 
 ## Recall check (acceptance test only, before the duplicate drop)
 
-Official access pins next to a public road (within 30 m) inside the search band: 196; found within 50 m: 44 (22%)
+Official access pins next to a public road (within 30 m) inside the search band: 206; found within 50 m: 48 (23%)
 
 ## Parks
 
@@ -81,8 +81,12 @@ Official access pins next to a public road (within 30 m) inside the search band:
   - note: no official access point and no approved pull-off: looking up to 400 m outside (ruling G-P2)
 - US-3790 Fort Heiman National Battlefield: done; 1 candidate(s); 30 kept out; photo cells 18; points looked at {'entry': 12, 'road': 136, 'hint': 0}; roads {'public': 57, 'dropped (interstate/ramp/private/alley)': 0, 'lot-road hints': 0}; recall 0/0
   - note: no official access point and no approved pull-off: looking up to 400 m outside (ruling G-P2)
-- US-3792 Land Between the Lakes National Recreation Area: time ran out after 841 of 1000 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
+- US-3792 Land Between the Lakes National Recreation Area: done; 168 candidate(s); 582 kept out; photo cells 1000; points looked at {'entry': 42, 'road': 7303, 'hint': 0}; roads {'public': 749, 'dropped (interstate/ramp/private/alley)': 11, 'lot-road hints': 0}; recall 4/10
+  - problem (skipped, run went on): NAIP photo for cell 823,8152 not read: HTTP 502
+- US-3793 Ballard Wildlife Management Area: time ran out after 7 of 55 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
 
 ## Web manners
 
 - imagery.nationalmap.gov: no robots rules (HTTP 403); treated as allow-all (RFC 9309)
+- tigerweb.geo.census.gov: no robots rules (it answered with a web page, not a robots file); treated as allow-all (RFC 9309)
+- services2.arcgis.com: no robots rules (HTTP 403); treated as allow-all (RFC 9309)
