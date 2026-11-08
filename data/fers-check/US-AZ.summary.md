@@ -1,6 +1,6 @@
 # 2-fer accuracy check: US-AZ
 
-Run 2026-11-01T11:47:02Z → 2026-11-08T06:22:05Z (UTC) · tool 0.1.0 (2026-10-31) · complete
+Run 2026-11-01T11:47:02Z → 2026-11-08T12:05:55Z (UTC) · tool 0.1.0 (2026-10-31) · complete
 Live rows in the file: 42 · checked: 42 · skipped (dropped / merged): 467
 
 | verdict | rows |

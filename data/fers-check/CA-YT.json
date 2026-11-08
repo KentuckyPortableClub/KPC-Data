@@ -38,32 +38,6 @@
    "verdict": "RECORD CHANGED",
    "why": "CA-0106: key record Yukon parks :5 names a layer prefix not in us-key/layers.json | CA-4623: key record Yukon parks :6 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
   },
-  "CA-0039+CA-0106@area@68.569,-140.923": {
-   "id": "CA-0039+CA-0106@area@68.569,-140.923",
-   "area": "CA-YT",
-   "refs": [
-    "CA-0039",
-    "CA-0106"
-   ],
-   "kind": "area",
-   "verdict": "SOURCE DOWN",
-   "why": "checker error on this row (retry; report if it repeats): GEOSException: IllegalArgumentException: Overlay input is mixed-dimension",
-   "flags": [],
-   "layers": []
-  },
-  "CA-0039+CA-4623@area@68.566,-140.906": {
-   "id": "CA-0039+CA-4623@area@68.566,-140.906",
-   "area": "CA-YT",
-   "refs": [
-    "CA-0039",
-    "CA-4623"
-   ],
-   "kind": "area",
-   "verdict": "SOURCE DOWN",
-   "why": "checker error on this row (retry; report if it repeats): GEOSException: IllegalArgumentException: Overlay input is mixed-dimension",
-   "flags": [],
-   "layers": []
-  },
   "CA-0044+CA-0842@area@61.254,-140.886": {
    "id": "CA-0044+CA-0842@area@61.254,-140.886",
    "area": "CA-YT",
@@ -230,6 +204,32 @@
     64.511238,
     -138.513962
    ]
+  },
+  "CA-0039+CA-0106@area@68.569,-140.923": {
+   "id": "CA-0039+CA-0106@area@68.569,-140.923",
+   "area": "CA-YT",
+   "refs": [
+    "CA-0039",
+    "CA-0106"
+   ],
+   "kind": "area",
+   "verdict": "SOURCE DOWN",
+   "why": "checker error on this row (retry; report if it repeats): GEOSException: IllegalArgumentException: Overlay input is mixed-dimension",
+   "flags": [],
+   "layers": []
+  },
+  "CA-0039+CA-4623@area@68.566,-140.906": {
+   "id": "CA-0039+CA-4623@area@68.566,-140.906",
+   "area": "CA-YT",
+   "refs": [
+    "CA-0039",
+    "CA-4623"
+   ],
+   "kind": "area",
+   "verdict": "SOURCE DOWN",
+   "why": "checker error on this row (retry; report if it repeats): GEOSException: IllegalArgumentException: Overlay input is mixed-dimension",
+   "flags": [],
+   "layers": []
   }
  },
  "started": "2026-11-01T11:31:24Z",
@@ -242,7 +242,7 @@
   "moved_m": 200.0,
   "size_tol": 0.25
  },
- "updated": "2026-11-08T06:21:45Z",
+ "updated": "2026-11-08T12:05:55Z",
  "complete": true,
  "summary": {
   "rows": 6,
@@ -275,7 +275,7 @@
   "data/ca-key/CA-SP.json",
   "data/ca-key/CA-YT.json"
  ],
- "requests_this_run": 212,
+ "requests_this_run": 153,
  "notes": [
   "2026-11-08: the 2-fer file changed since this check started"
  ]

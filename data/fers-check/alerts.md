@@ -6,7 +6,7 @@ Rows the weekly checker found SHRUNK / GONE / MOVED against the live official la
 - **CA-BC** (checked 2026-11-08 5:16 AM CST): GONE 24, SHRUNK 13, MOVED 4
 - **CA-NB** (checked 2026-11-08 5:22 AM CST): GONE 88, MOVED 50, SHRUNK 22
 - **CA-NS** (checked 2026-11-08 5:45 AM CST): MOVED 1
-- **CA-ON** (checked 2026-11-08 5:48 AM CST): SHRUNK 117, MOVED 31, GONE 27
+- **CA-ON** (checked 2026-11-08 5:48 AM CST): SHRUNK 123, MOVED 31, GONE 27
 - **CA-SK** (checked 2026-11-01 5:30 AM CST): SHRUNK 1
 - **US-AK** (checked 2026-11-01 5:31 AM CST): GONE 5, SHRUNK 2
 - **US-AL** (checked 2026-11-01 5:45 AM CST): GONE 1

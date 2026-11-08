@@ -1,6 +1,6 @@
 # 2-fer accuracy check: CA-SP
 
-Run 2026-11-01T11:31:24Z → 2026-11-08T06:21:31Z (UTC) · tool 0.1.0 (2026-10-31) · complete
+Run 2026-11-01T11:31:24Z → 2026-11-08T12:05:53Z (UTC) · tool 0.1.0 (2026-10-31) · complete
 Live rows in the file: 0 · checked: 0 · skipped (dropped / merged): 0
 
 | verdict | rows |

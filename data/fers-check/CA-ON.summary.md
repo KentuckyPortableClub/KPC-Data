@@ -1,20 +1,20 @@
 # 2-fer accuracy check: CA-ON
 
-Run 2026-11-08T11:48:03Z → 2026-11-08T12:03:13Z (UTC) · tool 0.1.0 (2026-10-31) · NOT complete: rerun with --resume
-Live rows in the file: 315 · checked: 259 · skipped (dropped / merged): 713
+Run 2026-11-08T11:48:03Z → 2026-11-08T12:05:52Z (UTC) · tool 0.1.0 (2026-10-31) · complete
+Live rows in the file: 315 · checked: 315 · skipped (dropped / merged): 713
 
 | verdict | rows |
 |---|---|
-| CONFIRMED | 69 |
-| SHRUNK | 117 |
-| GREW | 15 |
+| CONFIRMED | 99 |
+| SHRUNK | 123 |
+| GREW | 35 |
 | MOVED | 31 |
 | GONE | 27 |
 
 | flag | rows |
 |---|---|
-| small overlap (under 50 yd across) | 162 |
-| trail line from the club saved copy (not re-read live) | 62 |
+| small overlap (under 50 yd across) | 177 |
+| trail line from the club saved copy (not re-read live) | 112 |
 
 ## For a person to look at
 
@@ -135,6 +135,12 @@ Live rows in the file: 315 · checked: 259 · skipped (dropped / merged): 713
 - **SHRUNK** `CA-1577+CA-1699@area@51.941,-94.207`: live overlap is 98% smaller (0.4 ac vs 18.4 ac stored)
 - **SHRUNK** `CA-1613+CA-1669@area@44.929,-79.517`: live overlap is 99% smaller (0.0 ac vs 2.9 ac stored)
 - **SHRUNK** `CA-4882+CA-5957@area@44.703,-76.182`: live overlap is 90% smaller (0.2 ac vs 1.6 ac stored)
+- **SHRUNK** `CA-5536+CA-5628@trail@43.481,-79.942`: live overlap is 74% smaller (1.0 ac vs 3.9 ac stored)
+- **SHRUNK** `CA-5564+CA-5628@trail@43.501,-79.929`: live overlap is 73% smaller (0.5 ac vs 1.7 ac stored)
+- **SHRUNK** `CA-5565+CA-5628@trail@43.211,-79.755`: live overlap is 83% smaller (0.2 ac vs 0.9 ac stored)
+- **SHRUNK** `CA-5593+CA-5595@area@42.886,-79.298`: live overlap is 98% smaller (0.2 ac vs 10.1 ac stored)
+- **SHRUNK** `CA-5628+CA-6611@trail@44.515,-80.365`: only 66% of the stored overlap is still inside the live overlap (10 m tolerance)
+- **SHRUNK** `CA-5633+CA-5942@same land@43.895,-78.674`: only 55% of the stored overlap is still inside the live overlap (10 m tolerance)
 - **GREW** `CA-0050+CA-0379@area@48.796,-87.347`: live overlap is 89% bigger (1.1 ac vs 0.6 ac stored); 99% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
 - **GREW** `CA-0050+CA-1282@area@48.694,-87.987`: live overlap is 82% bigger (151.8 ac vs 83.2 ac stored); 97% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
 - **GREW** `CA-0190+CA-5628@trail@44.361,-80.208`: live overlap is 41% bigger (6.7 ac vs 4.8 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
@@ -150,6 +156,26 @@ Live rows in the file: 315 · checked: 259 · skipped (dropped / merged): 713
 - **GREW** `CA-1673+CA-6003@trail@44.220,-76.538`: live overlap is 37% bigger (0.4 ac vs 0.3 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
 - **GREW** `CA-4863+CA-5628@trail@43.245,-79.065`: live overlap is 90% bigger (3.5 ac vs 1.8 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
 - **GREW** `CA-4863+CA-6003@trail@43.244,-79.068`: live overlap is 155% bigger (1.0 ac vs 0.4 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
+- **GREW** `CA-5092+CA-5628@trail@44.769,-81.077`: live overlap is 55% bigger (26.9 ac vs 17.3 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
+- **GREW** `CA-5143+CA-6003@trail@44.220,-76.538`: live overlap is 32% bigger (0.4 ac vs 0.3 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
+- **GREW** `CA-5312+CA-5628@trail@44.339,-80.204`: live overlap is 32% bigger (21.9 ac vs 16.6 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
+- **GREW** `CA-5358+CA-5566@same land@43.208,-79.742`: live overlap is 110% bigger (4.7 ac vs 2.2 ac stored); 77% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
+- **GREW** `CA-5358+CA-5628@trail@43.211,-79.763`: live overlap is 29% bigger (12.7 ac vs 9.8 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
+- **GREW** `CA-5559+CA-6003@trail@43.648,-79.328`: live overlap is 58% bigger (2.3 ac vs 1.4 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
+- **GREW** `CA-5566+CA-5628@trail@43.211,-79.763`: live overlap is 29% bigger (12.7 ac vs 9.8 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
+- **GREW** `CA-5578+CA-5628@trail@43.147,-79.160`: live overlap is 85% bigger (10.2 ac vs 5.5 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
+- **GREW** `CA-5627+CA-5628@trail@44.525,-80.932`: live overlap is 36% bigger (19.3 ac vs 14.2 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
+- **GREW** `CA-5628+CA-5653@trail@44.561,-80.990`: live overlap is 25% bigger (16.0 ac vs 12.8 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
+- **GREW** `CA-5628+CA-5654@trail@44.384,-80.523`: live overlap is 33% bigger (9.4 ac vs 7.1 ac stored); 99% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
+- **GREW** `CA-5628+CA-5656@trail@44.310,-80.531`: live overlap is 40% bigger (17.2 ac vs 12.3 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
+- **GREW** `CA-5628+CA-5658@trail@44.754,-81.138`: live overlap is 67% bigger (24.8 ac vs 14.8 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
+- **GREW** `CA-5628+CA-5665@trail@44.648,-80.997`: live overlap is 64% bigger (34.1 ac vs 20.7 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
+- **GREW** `CA-5628+CA-6008@trail@44.751,-80.941`: live overlap is 25% bigger (14.6 ac vs 11.6 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
+- **GREW** `CA-5633+CA-6003@trail@43.895,-78.672`: live overlap is 32% bigger (0.9 ac vs 0.7 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
+- **GREW** `CA-5671+CA-5895@area@43.717,-79.353`: live overlap is 46% bigger (0.9 ac vs 0.6 ac stored); 87% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
+- **GREW** `CA-5942+CA-6003@trail@43.895,-78.672`: live overlap is 32% bigger (0.9 ac vs 0.7 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
+- **GREW** `CA-5991+CA-5992@same land@43.088,-80.838`: live overlap is 108% bigger (95.3 ac vs 45.8 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
+- **GREW** `CA-6003+CA-6370@trail@41.997,-82.849`: live overlap is 134% bigger (1.3 ac vs 0.6 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch
 - **MOVED** `CA-0050+CA-0201@area@48.398,-88.640`: live overlap centre is 3482 m from the stored centre; 3% of the stored overlap is still inside it
 - **MOVED** `CA-0050+CA-0346@area@48.352,-88.635`: live overlap centre is 1127 m from the stored centre; 12% of the stored overlap is still inside it
 - **MOVED** `CA-0050+CA-0386@area@48.585,-88.270`: live overlap centre is 530 m from the stored centre; 15% of the stored overlap is still inside it

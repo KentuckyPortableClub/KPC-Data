@@ -96,19 +96,6 @@
     -116.406628
    ]
   },
-  "CA-0032+CA-3393@area@52.734,-132.106": {
-   "id": "CA-0032+CA-3393@area@52.734,-132.106",
-   "area": "CA-BC",
-   "refs": [
-    "CA-0032",
-    "CA-3393"
-   ],
-   "kind": "area",
-   "verdict": "SOURCE DOWN",
-   "why": "checker error on this row (retry; report if it repeats): GEOSException: IllegalArgumentException: Overlay input is mixed-dimension",
-   "flags": [],
-   "layers": []
-  },
   "CA-0045+CA-3829@area@51.066,-115.850": {
    "id": "CA-0045+CA-3829@area@51.066,-115.850",
    "area": "CA-BC",
@@ -5414,6 +5401,19 @@
     49.404992,
     -123.085892
    ]
+  },
+  "CA-0032+CA-3393@area@52.734,-132.106": {
+   "id": "CA-0032+CA-3393@area@52.734,-132.106",
+   "area": "CA-BC",
+   "refs": [
+    "CA-0032",
+    "CA-3393"
+   ],
+   "kind": "area",
+   "verdict": "SOURCE DOWN",
+   "why": "checker error on this row (retry; report if it repeats): GEOSException: IllegalArgumentException: Overlay input is mixed-dimension",
+   "flags": [],
+   "layers": []
   }
  },
  "started": "2026-11-08T11:16:13Z",
@@ -5426,7 +5426,7 @@
   "moved_m": 200.0,
   "size_tol": 0.25
  },
- "updated": "2026-11-08T11:22:10Z",
+ "updated": "2026-11-08T12:04:01Z",
  "complete": true,
  "summary": {
   "rows": 97,
@@ -5449,5 +5449,5 @@
   "data/ca-key/CA-AB.json",
   "data/ca-key/CA-BC.json"
  ],
- "requests_this_run": 742
+ "requests_this_run": 1
 }
