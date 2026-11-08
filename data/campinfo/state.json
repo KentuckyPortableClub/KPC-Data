@@ -285,6 +285,28 @@
    "status": "partial",
    "updated": "2026-11-08"
   },
+  "US-IL": {
+   "camps": 256,
+   "checked": 252,
+   "counts": {
+    "camps": 252,
+    "needs_browser": 0,
+    "needs_key": 28,
+    "no_page": 0,
+    "not_official": 4,
+    "ok": 15,
+    "other": 205,
+    "resting": 0,
+    "robots": 0,
+    "with_booking": 220,
+    "with_elevation": 0,
+    "with_facts": 202,
+    "with_sites": 2
+   },
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-08"
+  },
   "US-IN": {
    "camps": 96,
    "checked": 94,
@@ -1022,6 +1044,7 @@
   "US-HI": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-IA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-ID": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-IL": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-IN": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-KS": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-KY": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1166,6 +1189,15 @@
    "read": "2026-11-07"
   },
   "US-ID": {
+   "cell": {
+    "carriers": null,
+    "files": [],
+    "src": null,
+    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+   },
+   "read": "2026-11-08"
+  },
+  "US-IL": {
    "cell": {
     "carriers": null,
     "files": [],
@@ -2428,12 +2460,12 @@
  },
  "last": {
   "areas": [
-   "US-GA"
+   "US-IL"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 65,
+   "dropped_queued": 255,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2445,7 +2477,7 @@
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 8,
+   "requests": 408,
    "rested": 0,
    "robots": 2,
    "robots_unreadable": 2,
@@ -2453,19 +2485,20 @@
   },
   "ridb_key": false,
   "stat": {
-   "camps": 66,
+   "browser": 192,
+   "camps": 256,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 0,
-   "needs_key": 66,
-   "no_page": 0,
-   "not_official": 0,
-   "ok": 0,
-   "pages_read": 0,
+   "needs_browser": 192,
+   "needs_key": 28,
+   "no_page": 17,
+   "not_official": 4,
+   "ok": 207,
+   "pages_read": 212,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 146
+   "skipped_fresh": 0
   },
   "when": "2026-11-08"
  },
