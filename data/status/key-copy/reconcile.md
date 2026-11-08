@@ -2,9 +2,8 @@
 
 KPC-Data key copy vs KPC-Links under the same build stamp (kpc_key_reconcile.py check; fails closed)
 
-- world-key: build W-42509770852 (KPC-Links W-42509770852): FAILED CLOSED, 8065 unexplained
+- world-key: build W-42513036075 (KPC-Links W-42513036075): ok, 0 unexplained
   - AE.json: KPC-Links 8 outlined, KPC-Data 9; approved adds 1 (label missing 0); unexplained 0
-  - AU.json: KPC-Links 8155 outlined, KPC-Data 8843; approved adds 867 (label missing 0); unexplained 8065
   - BE.json: KPC-Links 164 outlined, KPC-Data 174; approved adds 10 (label missing 0); unexplained 0
   - BZ.json: KPC-Links 53 outlined, KPC-Data 54; approved adds 1 (label missing 0); unexplained 0
   - CD.json: KPC-Links 9 outlined, KPC-Data 13; approved adds 4 (label missing 0); unexplained 0
@@ -36,4 +35,4 @@ KPC-Data key copy vs KPC-Links under the same build stamp (kpc_key_reconcile.py 
   - SI.json: KPC-Links 137 outlined, KPC-Data 140; approved adds 3 (label missing 0); unexplained 0
   - ZA.json: KPC-Links 69 outlined, KPC-Data 76; approved adds 7 (label missing 0); unexplained 0
 - ca-key: build CA-42252274247 (KPC-Links CA-42252274247): ok, 0 unexplained
-- us-key: build US-42016221491 (KPC-Links US-42504172086): ok, 0 unexplained
+- us-key: build US-42504172086 (KPC-Links US-42504172086): ok, 0 unexplained
