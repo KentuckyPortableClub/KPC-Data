@@ -1,16 +1,16 @@
-# Flow board (2026-11-08 08:00Z, kpc_flow.py)
+# Flow board (2026-11-08 15:46Z, kpc_flow.py)
 Every pile of work, who it waits on and when it last moved. STUCK = work in it and no move for 2+ days. Fix the STUCK ones first.
 
 ## STUCK (27)
 - STUCK 9 d · **1** · hours fees permits bot: not run for 9 days · waits on **chat 10** · US-KY: done; {"fees": 8, "hours": 41, "hours_lines": 77, "no_page": 0, "nothing": 144, "parks": 193, · chat 8 grades the sample; Brandon GO before any card
 - STUCK 8 d · **7** · HELD campinfo files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-MA, US-NC, US-NY, US-AR, US-MO, US-MS, US-VT
-- STUCK 8 d · **49** · HELD docs files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-ID, US-IL, US-ME, US-MO, US-IN, US-AK, US-OR, US-AL, US-AR, US-AZ, US-CA, US-CO, US-CT, US-DC, US-DE, US-FL, US-GA, US-HI, US-KS, US-LA, US-MA, US-MD, US-MI, …
+- STUCK 8 d · **7** · HELD docs files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-ID, US-IL, US-ME, US-MO, US-IN, US-DC, US-NM
 - STUCK 7 d · **146** · questions/not-sure-for-chat9.json waiting for an answer · waits on **chat 9**
 - STUCK 7 d · **50** · HELD fers files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-FL, US-GA, US-IL, US-MA, US-MI, US-NC, US-NE, US-PA, US-SD, US-TX, CA-BC, US-AK, US-CT, US-MN, US-ND, US-NH, US-NY, US-SC, US-UT, US-WV, US-DE, US-IA, US-IN, …
 - STUCK 7 d · **9** · HELD truth files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-CT, US-MA, US-MD, US-ME, US-MN, US-MS, US-NY, US-OK, US-TX
-- STUCK 7 d · **1** · 2-fer checker: found work · waits on **chat 2 + chat 11** · weekly re-test of live 2-fers · chat 2 rechecks + chat 11 grades 849 SHRUNK / GONE / MOVED rows (data/fers-check/alerts.md
+- STUCK 7 d · **1** · 2-fer checker: found work · waits on **chat 2 + chat 11** · weekly re-test of live 2-fers · chat 2 rechecks + chat 11 grades 857 SHRUNK / GONE / MOVED rows (data/fers-check/alerts.md
 - STUCK 7 d · **1** · Storage keeper (weekly): found work · waits on **HQ** · STORAGE WARNING: KPC-Data 546 MB (line 400) / KPC-Links 621 MB (line 650) — the bot is fine; over th · HQ (storage step 2, Mon Nov 2 evening at the earliest)
-- STUCK 7 d · **1** · T5 site checker: found work · waits on **chat 3** · 60 checks failed on Nov 1; tuned Nov 2 (outline button on an already drawn outline = fine; failed fi · chat 3 fixes the 404s; then the weekly run
+- STUCK 7 d · **1** · T5 site checker: found work · waits on **chat 3** · 64 checks failed (tools-out site-check/summary.md) · chat 3 fixes the site
 - STUCK 6 d · **2** · questions/aliases-nov1.json waiting for an answer · waits on **chat 11** · Chat 2, Nov 1 2:45 PM (chat 11 KEY NO: 'make the name-variant joins follow my YES answers …
 - STUCK 6 d · **28** · questions/aliases-nov2.json waiting for an answer · waits on **chat 11** · Chat 2, Nov 2 11:40 AM (G-4 of the US per-park release): 28 parks that had an outline befo…
 - STUCK 6 d · **1,937** · questions/hardlook.json waiting for an answer · waits on **chat 11** · Canada Hard Look rows (outside research) read back from the layer by chat 10's reader: one…
@@ -33,13 +33,15 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 ## Waiting on each chat (open work, oldest first)
 ### chat 2
 - STUCK 7 · HELD campinfo files (a check failed; data/waiting/today.md says why) · since 2026-10-31
-- STUCK 49 · HELD docs files (a check failed; data/waiting/today.md says why) · since 2026-10-31
+- STUCK 7 · HELD docs files (a check failed; data/waiting/today.md says why) · since 2026-10-31
 - STUCK 50 · HELD fers files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - STUCK 9 · HELD truth files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - STUCK 1 · 2-fer checker: found work · since 2026-11-01
 - STUCK 3 · HELD trails files (a check failed; data/waiting/today.md says why) · since 2026-11-04
 - STUCK 1 · HELD pile-solver files (a check failed; data/waiting/today.md says why) · since 2026-11-05
 - 1 · HELD world-key files (a check failed; data/waiting/today.md says why) · since 2026-11-07
+- 1 · HELD us-key files (a check failed; data/waiting/today.md says why) · since 2026-11-08
+- 1 · HELD wwff files (a check failed; data/waiting/today.md says why) · since 2026-11-08
 ### chat 3
 - STUCK 1 · T5 site checker: found work · since 2026-11-01
 ### chat 9
@@ -50,7 +52,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 - STUCK 1 · Key bots: errors and silence: RED (the bot is broken) · since 2026-11-03
 ### chat 11
 - STUCK 7 · HELD campinfo files (a check failed; data/waiting/today.md says why) · since 2026-10-31
-- STUCK 49 · HELD docs files (a check failed; data/waiting/today.md says why) · since 2026-10-31
+- STUCK 7 · HELD docs files (a check failed; data/waiting/today.md says why) · since 2026-10-31
 - STUCK 50 · HELD fers files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - STUCK 9 · HELD truth files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - STUCK 1 · 2-fer checker: found work · since 2026-11-01
@@ -67,7 +69,9 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 - STUCK 37 · questions/world-finder.json waiting for an answer · since 2026-11-05
 - STUCK 1 · HELD pile-solver files (a check failed; data/waiting/today.md says why) · since 2026-11-05
 - 1 · HELD world-key files (a check failed; data/waiting/today.md says why) · since 2026-11-07
-- 373 · files waiting for a grader (data/status/grade-queue.md) · since 2026-11-07
+- 1 · HELD us-key files (a check failed; data/waiting/today.md says why) · since 2026-11-08
+- 1 · HELD wwff files (a check failed; data/waiting/today.md says why) · since 2026-11-08
+- 393 · files waiting for a grader (data/status/grade-queue.md) · since 2026-11-08
 ### bots
 - STUCK 1 · Storage keeper (weekly): found work · since 2026-11-01
 - STUCK 1 · Cell coverage (FCC): found work · since 2026-11-02
@@ -101,13 +105,15 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 | 6 questions | questions/parked.json waiting for an answer | 168 | chat 11 | 2026-11-05 **STUCK** |
 | 6 questions | questions/world-finder.json waiting for an answer | 37 | chat 11 | 2026-11-05 **STUCK** |
 | 7 waiting room | HELD campinfo files (a check failed; data/waiting/today.md says why) | 7 | chat 2 (fix) + chat 11 | 2026-10-31 **STUCK** |
-| 7 waiting room | HELD docs files (a check failed; data/waiting/today.md says why) | 49 | chat 2 (fix) + chat 11 | 2026-10-31 **STUCK** |
+| 7 waiting room | HELD docs files (a check failed; data/waiting/today.md says why) | 7 | chat 2 (fix) + chat 11 | 2026-10-31 **STUCK** |
 | 7 waiting room | HELD fers files (a check failed; data/waiting/today.md says why) | 50 | chat 2 (fix) + chat 11 | 2026-11-01 **STUCK** |
 | 7 waiting room | HELD pile-solver files (a check failed; data/waiting/today.md says why) | 1 | chat 2 (fix) + chat 11 | 2026-11-05 **STUCK** |
 | 7 waiting room | HELD trails files (a check failed; data/waiting/today.md says why) | 3 | chat 2 (fix) + chat 11 | 2026-11-04 **STUCK** |
 | 7 waiting room | HELD truth files (a check failed; data/waiting/today.md says why) | 9 | chat 2 (fix) + chat 11 | 2026-11-01 **STUCK** |
+| 7 waiting room | HELD us-key files (a check failed; data/waiting/today.md says why) | 1 | chat 2 (fix) + chat 11 | 2026-11-08 |
 | 7 waiting room | HELD world-key files (a check failed; data/waiting/today.md says why) | 1 | chat 2 (fix) + chat 11 | 2026-11-07 |
-| 7 waiting room | files waiting for a grader (data/status/grade-queue.md) | 373 | chat 11 | 2026-11-07 |
+| 7 waiting room | HELD wwff files (a check failed; data/waiting/today.md says why) | 1 | chat 2 (fix) + chat 11 | 2026-11-08 |
+| 7 waiting room | files waiting for a grader (data/status/grade-queue.md) | 393 | chat 11 | 2026-11-08 |
 | 8 bots | 2-fer checker: found work | 1 | chat 2 + chat 11 | 2026-11-01 **STUCK** |
 | 8 bots | Cell coverage (FCC): found work | 1 | HQ | 2026-11-02 **STUCK** |
 | 8 bots | Key bots: errors and silence: RED (the bot is broken) | 1 | chat 10 | 2026-11-03 **STUCK** |
