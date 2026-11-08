@@ -1,36 +1,42 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key', 'build': the held build id from data/waiting/in/data/us-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-08 19:31 UTC",
+ "made": "2026-11-08 20:03 UTC",
  "totals": {
-  "gained": 0,
-  "lost": 17,
-  "pieces_changed": 495,
-  "grade_changed": 20
+  "gained": 30,
+  "lost": 7,
+  "pieces_changed": 1126,
+  "grade_changed": 4
  },
  "per_area": {
   "US-AK": {
    "gained": 0,
-   "lost": 2,
+   "lost": 0,
+   "pieces_changed": 2,
+   "grade_changed": 0
+  },
+  "US-AR": {
+   "gained": 5,
+   "lost": 0,
    "pieces_changed": 0,
    "grade_changed": 0
   },
-  "US-CO": {
-   "gained": 0,
-   "lost": 1,
-   "pieces_changed": 129,
-   "grade_changed": 0
-  },
-  "US-DE": {
+  "US-AZ": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 53,
+   "pieces_changed": 1,
+   "grade_changed": 0
+  },
+  "US-CO": {
+   "gained": 1,
+   "lost": 0,
+   "pieces_changed": 137,
    "grade_changed": 0
   },
   "US-FL": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 29,
-   "grade_changed": 1
+   "pieces_changed": 116,
+   "grade_changed": 2
   },
   "US-GA": {
    "gained": 0,
@@ -44,359 +50,866 @@
    "pieces_changed": 1,
    "grade_changed": 0
   },
+  "US-ID": {
+   "gained": 1,
+   "lost": 0,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
   "US-MA": {
    "gained": 0,
-   "lost": 1,
+   "lost": 0,
+   "pieces_changed": 5,
+   "grade_changed": 0
+  },
+  "US-MD": {
+   "gained": 1,
+   "lost": 0,
    "pieces_changed": 0,
    "grade_changed": 0
   },
   "US-MN": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 1,
+   "pieces_changed": 71,
+   "grade_changed": 0
+  },
+  "US-MO": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 392,
+   "grade_changed": 0
+  },
+  "US-MT": {
+   "gained": 1,
+   "lost": 0,
+   "pieces_changed": 144,
+   "grade_changed": 0
+  },
+  "US-NC": {
+   "gained": 1,
+   "lost": 0,
+   "pieces_changed": 0,
    "grade_changed": 0
   },
   "US-NH": {
-   "gained": 0,
-   "lost": 4,
+   "gained": 1,
+   "lost": 2,
+   "pieces_changed": 172,
+   "grade_changed": 0
+  },
+  "US-NM": {
+   "gained": 1,
+   "lost": 0,
    "pieces_changed": 0,
    "grade_changed": 0
   },
   "US-NV": {
-   "gained": 0,
-   "lost": 1,
-   "pieces_changed": 0,
-   "grade_changed": 0
+   "gained": 2,
+   "lost": 3,
+   "pieces_changed": 53,
+   "grade_changed": 1
   },
   "US-OK": {
    "gained": 0,
-   "lost": 1,
-   "pieces_changed": 0,
+   "lost": 0,
+   "pieces_changed": 1,
+   "grade_changed": 0
+  },
+  "US-OR": {
+   "gained": 2,
+   "lost": 0,
+   "pieces_changed": 2,
    "grade_changed": 0
   },
   "US-SC": {
-   "gained": 0,
-   "lost": 1,
+   "gained": 1,
+   "lost": 0,
+   "pieces_changed": 1,
+   "grade_changed": 0
+  },
+  "US-TN": {
+   "gained": 1,
+   "lost": 0,
    "pieces_changed": 0,
    "grade_changed": 0
   },
   "US-UT": {
-   "gained": 0,
-   "lost": 4,
+   "gained": 10,
+   "lost": 2,
    "pieces_changed": 0,
    "grade_changed": 0
   },
   "US-WA": {
-   "gained": 0,
+   "gained": 1,
    "lost": 0,
-   "pieces_changed": 1,
+   "pieces_changed": 3,
    "grade_changed": 0
   },
   "US-WI": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 280,
-   "grade_changed": 19
+   "pieces_changed": 24,
+   "grade_changed": 1
   },
   "US-WY": {
-   "gained": 0,
-   "lost": 2,
+   "gained": 1,
+   "lost": 0,
    "pieces_changed": 0,
    "grade_changed": 0
   }
  },
- "gained": [],
- "lost": [
+ "gained": [
   {
-   "area": "US-AK",
-   "ref": "US-0150",
-   "name": "Kodiak National Wildlife Refuge",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
+   "area": "US-AR",
+   "ref": "US-10426",
+   "name": "West-Northwest State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
     [
-     "4957",
-     "Kodiak National Wildlife Refuge",
-     1637279,
-     "name"
+     "trl10426",
+     "West-Northwest State Trail",
+     0,
+     "official trail line (Arkansas Department of Transportation ("
     ]
    ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-0150"
-  },
-  {
-   "area": "US-AK",
-   "ref": "US-10281",
-   "name": "White Mountains National Recreation Area BLM Recreation Management Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "sgakg11010",
-     "White Mountains SRMA",
-     1016251,
-     "name"
-    ],
-    [
-     "2165",
-     "White Mountains National Recreation Area (Eastern Interior Field Office)",
-     932728,
-     "name"
-    ]
-   ],
+   "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-10281"
+   "pota": "https://pota.app/#/park/US-10426"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-10508",
+   "name": "Ozark Highlands Trail (OHT) National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl10508",
+     "Ozark Highlands Trail (OHT) National Historic Trail",
+     0,
+     "official trail line (U.S. Forest Service National Forest Sys"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10508"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-13622",
+   "name": "The Razorback Regional Greenway National Recreation Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl13622",
+     "The Razorback Regional Greenway National Recreation Trail",
+     0,
+     "official trail line (City of Rogers and City of Fayetteville"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13622"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-13623",
+   "name": "Alum Cove Natural Bridge Trail National Recreation Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl13623",
+     "Alum Cove Natural Bridge Trail National Recreation Trail",
+     0,
+     "official trail line (U.S. Forest Service National Forest Sys"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13623"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-9681",
+   "name": "Camden Expedition Scenic Highway State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9681",
+     "Camden Expedition Scenic Highway State Trail",
+     0,
+     "official trail line (Arkansas Department of Transportation ("
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9681"
   },
   {
    "area": "US-CO",
-   "ref": "US-9678",
-   "name": "Windy Gap Watchable State Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
+   "ref": "US-5749",
+   "name": "Kokopelli's Trail National Recreation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
     [
-     "cow909",
-     "Windy Gap WWA",
-     10,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-9678"
-  },
-  {
-   "area": "US-MA",
-   "ref": "US-11401",
-   "name": "Cummington Wildlife Management Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "sgmaa644046",
-     "Cummington WMA",
-     156,
-     "name"
-    ],
-    [
-     "sgmaa700516",
-     "Cummington WMA",
-     125,
-     "name"
-    ],
-    [
-     "sgmaa700291",
-     "Cummington WMA",
-     88,
-     "name"
-    ],
-    [
-     "55331",
-     "Cummington Wildlife Management Area",
-     86,
-     "name"
-    ],
-    [
-     "55329",
-     "Cummington Wildlife Management Area",
-     31,
-     "name"
-    ],
-    [
-     "sgmaa641755",
-     "Cummington WMA",
-     31,
-     "name"
-    ],
-    [
-     "55328",
-     "Cummington Wildlife Management Area",
-     14,
-     "name"
-    ],
-    [
-     "sgmaa645135",
-     "Cummington WMA",
-     14,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11401"
-  },
-  {
-   "area": "US-NH",
-   "ref": "US-4894",
-   "name": "Davis-White State Forest",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "sgnhc644",
-     "Davis-White State Forest",
-     40,
-     "name"
-    ],
-    [
-     "sgnha990",
-     "Davis-White State Forest",
+     "trl5749",
+     "Kokopelli's Trail National Recreation Area",
      0,
-     "name"
+     "official trail line (Bureau of Land Management and Utah stat"
     ]
    ],
+   "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4894"
+   "pota": "https://pota.app/#/park/US-5749"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-3424",
+   "name": "Ice Age Floods National Geologic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl3424",
+     "Ice Age Floods National Geologic Trail",
+     0,
+     "official trail line (NPS official (carto iafl_tour_routes, R"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3424"
+  },
+  {
+   "area": "US-MD",
+   "ref": "US-7973",
+   "name": "Baltimore-Washington National Parkway",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl7973",
+     "Baltimore-Washington National Parkway",
+     0,
+     "official trail line (National Park Service via USGS National"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7973"
+  },
+  {
+   "area": "US-MT",
+   "ref": "US-3424",
+   "name": "Ice Age Floods National Geologic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl3424",
+     "Ice Age Floods National Geologic Trail",
+     0,
+     "official trail line (NPS official (carto iafl_tour_routes, R"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3424"
+  },
+  {
+   "area": "US-NC",
+   "ref": "US-10398",
+   "name": "Chatuge Dam Trail Recreation Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl10398",
+     "Chatuge Dam Trail Recreation Park",
+     0,
+     "official trail line (Tennessee Valley Authority (federal age"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10398"
   },
   {
    "area": "US-NH",
-   "ref": "US-4933",
-   "name": "Merrimack River State Forest",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
+   "ref": "US-13626",
+   "name": "Sugar River State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
     [
-     "sgnhc2075",
-     "Merrimack River State Forest",
-     53,
-     "name"
-    ],
-    [
-     "sgnha4054",
-     "Merrimack River State Forest",
+     "trl13626",
+     "Sugar River State Trail",
      0,
-     "name"
-    ],
-    [
-     "sgnha4139",
-     "Merrimack River State Forest",
-     0,
-     "name"
+     "official trail line (New Hampshire GRANIT (state agency GIS "
     ]
    ],
+   "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4933"
+   "pota": "https://pota.app/#/park/US-13626"
   },
   {
-   "area": "US-NH",
-   "ref": "US-4934",
-   "name": "Merriman State Forest",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
+   "area": "US-NM",
+   "ref": "US-11815",
+   "name": "La Cueva Non-Motorized Trail System Recreation Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
     [
-     "57000",
-     "Merriman State Forest",
-     512,
-     "name"
-    ],
-    [
-     "sgnha1069",
-     "Merriman State Forest",
+     "trl11815",
+     "La Cueva Non-Motorized Trail System Recreation Site",
      0,
-     "name"
+     "official trail line (Bureau of Land Management via USGS Nati"
     ]
    ],
+   "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4934"
-  },
-  {
-   "area": "US-NH",
-   "ref": "US-4955",
-   "name": "Saltmarsh Pond State Forest",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "nhc3433",
-     "Saltmarsh Pond State Forest",
-     0,
-     "name"
-    ],
-    [
-     "sgnha3433",
-     "Saltmarsh Pond State Forest",
-     0,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4955"
+   "pota": "https://pota.app/#/park/US-11815"
   },
   {
    "area": "US-NV",
-   "ref": "US-13039",
-   "name": "Owyhee River Wilderness Area",
+   "ref": "US-13206",
+   "name": "Barnes Canyon Trailhead BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl13206",
+     "Barnes Canyon Trailhead BLM Recreation Management Area",
+     0,
+     "official trail line (Bureau of Land Management via USGS Nati"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13206"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13214",
+   "name": "Logandale Trails BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl13214",
+     "Logandale Trails BLM Recreation Management Area",
+     0,
+     "official trail line (Bureau of Land Management via USGS Nati"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13214"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-12959",
+   "name": "Quartzville BC Byway Kiosk BLM Special Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl12959",
+     "Quartzville BC Byway Kiosk BLM Special Recreation Management Area",
+     0,
+     "official trail line (Bureau of Land Management (Oregon/Washi"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12959"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-3424",
+   "name": "Ice Age Floods National Geologic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl3424",
+     "Ice Age Floods National Geologic Trail",
+     0,
+     "official trail line (NPS official (carto iafl_tour_routes, R"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3424"
+  },
+  {
+   "area": "US-SC",
+   "ref": "US-9203",
+   "name": "Palmetto State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9203",
+     "Palmetto State Trail",
+     0,
+     "official trail line (U.S. Forest Service and U.S. Fish and W"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9203"
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-0642",
+   "name": "Natchez Trace Parkway National Parkway",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl0642",
+     "Natchez Trace Parkway National Parkway",
+     0,
+     "official trail line (National Park Service via USGS National"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0642"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-10964",
+   "name": "Cathedral Valley Scenic Backway BLM Special Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl10964",
+     "Cathedral Valley Scenic Backway BLM Special Recreation Management Area",
+     0,
+     "official trail line (BLM GTLF public roads (official); named"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10964"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11004",
+   "name": "Hurricane Cliffs Trail System BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11004",
+     "Hurricane Cliffs Trail System BLM Recreation Management Area",
+     0,
+     "official trail line (Bureau of Land Management via USGS Nati"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11004"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11176",
+   "name": "Rojo Mountain Bike Trail BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11176",
+     "Rojo Mountain Bike Trail BLM Recreation Management Area",
+     0,
+     "official trail line (Bureau of Land Management via USGS Nati"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-11176"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11661",
+   "name": "Bar M Trail System BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11661",
+     "Bar M Trail System BLM Recreation Management Area",
+     0,
+     "official trail line (BLM official recreation trails (gis.blm"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11661"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11730",
+   "name": "Paiute  ATV Trail BLM Special Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11730",
+     "Paiute  ATV Trail BLM Special Recreation Management Area",
+     0,
+     "official trail line (U.S. Forest Service National Forest Sys"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11730"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11750",
+   "name": "Cottonwood Canyons Scenic Backway BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11750",
+     "Cottonwood Canyons Scenic Backway BLM Recreation Management Area",
+     0,
+     "official trail line (BLM GTLF public roads (official); named"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11750"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-5749",
+   "name": "Kokopelli's Trail National Recreation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl5749",
+     "Kokopelli's Trail National Recreation Area",
+     0,
+     "official trail line (Bureau of Land Management and Utah stat"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-5749"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-5841",
+   "name": "Moonshine Arch Trailhead BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl5841",
+     "Moonshine Arch Trailhead BLM Recreation Management Area",
+     0,
+     "official trail line (Bureau of Land Management via USGS Nati"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-5841"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-5935",
+   "name": "Canyons Of Escalante/ Burr Trail BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl5935",
+     "Canyons Of Escalante/ Burr Trail BLM Recreation Management Area",
+     0,
+     "official trail line (BLM GTLF public roads (official); Burr "
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-5935"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-5993",
+   "name": "Transcontinental Railroad BCB National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl5993",
+     "Transcontinental Railroad BCB National Historic Trail",
+     0,
+     "official trail line (National Park Service (Golden Spike NHP"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-5993"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-3424",
+   "name": "Ice Age Floods National Geologic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl3424",
+     "Ice Age Floods National Geologic Trail",
+     0,
+     "official trail line (NPS official (carto iafl_tour_routes, R"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3424"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-10877",
+   "name": "Mallo Trail BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl10877",
+     "Mallo Trail",
+     0,
+     "official trail line (USFS Black Hills NF trails (official) ("
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10877"
+  }
+ ],
+ "lost": [
+  {
+   "area": "US-NH",
+   "ref": "US-4868",
+   "name": "Annett State Forest",
    "old_grade": "official",
    "new_grade": "pin",
    "new_pieces": [],
    "old_pieces": [
     [
-     "wbl171",
-     "Owyhee River Wilderness",
+     "sgnhc2522",
+     "Annett State Forest",
+     1353,
+     "name"
+    ],
+    [
+     "sgnhc2651",
+     "Annett State Forest",
+     186,
+     "name"
+    ],
+    [
+     "sgnhc2610",
+     "Annett State Forest",
+     126,
+     "name"
+    ],
+    [
+     "sgnhc2298",
+     "Annett State Forest",
+     27,
+     "name"
+    ],
+    [
+     "sgnhc2607",
+     "Annett State Forest",
+     3,
+     "name"
+    ],
+    [
+     "sgnha10009",
+     "Annett State Forest",
+     0,
+     "name"
+    ],
+    [
+     "sgnha10010",
+     "Annett State Forest",
+     0,
+     "name"
+    ],
+    [
+     "sgnha10011",
+     "Annett State Forest",
      0,
      "name"
     ]
    ],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-13039"
+   "pota": "https://pota.app/#/park/US-4868"
   },
   {
-   "area": "US-OK",
-   "ref": "US-12028",
-   "name": "Barren Fork Wildlife Management Area",
+   "area": "US-NH",
+   "ref": "US-4886",
+   "name": "Connecticut Lakes State Forest",
    "old_grade": "official",
    "new_grade": "pin",
    "new_pieces": [],
    "old_pieces": [
     [
-     "sgokc7",
-     "Barren Fork",
-     507,
+     "sgnhc66",
+     "Connecticut Lakes State Forest",
+     1813,
+     "name"
+    ],
+    [
+     "sgnha3",
+     "Connecticut Lakes State Forest",
+     0,
+     "name"
+    ],
+    [
+     "sgnha138",
+     "Connecticut Lakes State Forest",
+     0,
+     "name"
+    ],
+    [
+     "sgnha345",
+     "Connecticut Lakes State Forest",
+     0,
+     "name"
+    ],
+    [
+     "sgnha346",
+     "Connecticut Lakes State Forest",
+     0,
+     "name"
+    ],
+    [
+     "sgnha347",
+     "Connecticut Lakes State Forest",
+     0,
+     "name"
+    ],
+    [
+     "sgnha495",
+     "Connecticut Lakes State Forest",
+     0,
+     "name"
+    ],
+    [
+     "sgnha510",
+     "Connecticut Lakes State Forest",
+     0,
      "name"
     ]
    ],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-12028"
+   "pota": "https://pota.app/#/park/US-4886"
   },
   {
-   "area": "US-SC",
-   "ref": "US-3917",
-   "name": "Little Pee Dee Bay Heritage Preserve",
+   "area": "US-NV",
+   "ref": "US-13132",
+   "name": "Seven Mile BLM Herd Management Area",
    "old_grade": "official",
    "new_grade": "pin",
    "new_pieces": [],
    "old_pieces": [
     [
-     "254129",
-     "Little Pee Dee State Park Bay Heritage Preserve",
-     298,
+     "hma104",
+     "Seven Mile",
+     98149,
      "name"
     ]
    ],
-   "held_now": [
-    "check (rule R-G8): bigger than the park's own record",
-    "check (rule R-G8): bigger than the park's own record",
-    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
-   ],
+   "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-3917"
+   "pota": "https://pota.app/#/park/US-13132"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13134",
+   "name": "Rock Creek BLM Herd Management Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "hma113",
+     "Rock Creek",
+     122085,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13134"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13138",
+   "name": "Wassuk BLM Herd Management Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "hma127",
+     "Wassuk",
+     52310,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13138"
   },
   {
    "area": "US-UT",
@@ -435,88 +948,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-5782"
-  },
-  {
-   "area": "US-UT",
-   "ref": "US-5789",
-   "name": "Behind the Rocks Wilderness Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "wsa967",
-     "Behind the Rocks",
-     0,
-     "name"
-    ],
-    [
-     "wsa968",
-     "Behind the Rocks",
-     0,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-5789"
-  },
-  {
-   "area": "US-UT",
-   "ref": "US-5869",
-   "name": "9 Mile Canyon BLM Recreation Management Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "rst9652",
-     "Nine Mile Canyon",
-     24249,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-5869"
-  },
-  {
-   "area": "US-WY",
-   "ref": "US-6197",
-   "name": "Popo Agie Wilderness Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "wld346",
-     "Popo Agie Wilderness",
-     102620,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-6197"
-  },
-  {
-   "area": "US-WY",
-   "ref": "US-6202",
-   "name": "North Absaroka Wilderness Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "wld335",
-     "North Absaroka Wilderness",
-     346320,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-6202"
   }
  ],
  "grade_changed": [
@@ -553,649 +984,102 @@
    "pota": "https://pota.app/#/park/US-3635"
   },
   {
-   "area": "US-WI",
-   "ref": "US-11936",
-   "name": "White River State Fish and Wildlife Area",
-   "old_grade": "official",
+   "area": "US-FL",
+   "ref": "US-6327",
+   "name": "Tenoroc Wildlife Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgflf10761",
+     "Tenoroc State Reserve",
+     27,
+     "name"
+    ],
+    [
+     "sgflf8115",
+     "Tenoroc Fish Management Area",
+     13,
+     "words"
+    ],
+    [
+     "sgflf5903",
+     "Tenoroc Fish Management Area",
+     0,
+     "words"
+    ],
+    [
+     "sgflf5998",
+     "Tenoroc Fish Management Area",
+     0,
+     "words"
+    ],
+    [
+     "sgflf5999",
+     "Tenoroc Fish Management Area",
+     0,
+     "words"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "191721",
+     "Tenoroc Fish Management Area",
+     7528,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "check (rule R-G8): bigger than the park's own record",
+    "check (rule R-G8): bigger than the park's own record"
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6327"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13178",
+   "name": "Mt. Irish Archaeological Site Archeological Reserve",
+   "old_grade": "pin",
    "new_grade": "approximate",
    "new_pieces": [
     [
-     "272997",
-     "White River Fishery Area-Waushara",
-     3461,
-     "words"
-    ],
-    [
-     "78245",
-     "White River Fishery Area-Waushara",
-     9,
-     "words"
+     "sgnvh1238",
+     "Mount Irish",
+     15075,
+     "reviewed-approx"
     ]
    ],
    "old_pieces": [
     [
-     "272997",
-     "White River Fishery Area-Waushara",
-     3461,
-     "words"
-    ],
-    [
-     "sgwia712748",
-     "White River Fishery Area-Waushara",
-     3457,
-     "words"
-    ],
-    [
-     "sgwid19764564",
-     "White River Marsh Wildlife Area",
-     50,
-     "name"
-    ],
-    [
-     "sgwid19764608",
-     "White River Marsh Wildlife Area",
-     50,
-     "name"
-    ],
-    [
-     "sgwid19770894",
-     "White River Marsh Wildlife Area",
-     50,
-     "name"
-    ],
-    [
-     "sgwid19770895",
-     "White River Marsh Wildlife Area",
-     50,
-     "name"
-    ],
-    [
-     "sgwid19773299",
-     "White River Marsh Wildlife Area",
-     50,
-     "name"
-    ],
-    [
-     "sgwid19754289",
-     "White River Marsh Wildlife Area",
-     48,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11936"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-4246",
-   "name": "Whitefish Dunes State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic6880",
-     "Whitefish Dunes",
-     411,
-     "name"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic6880",
-     "Whitefish Dunes",
-     411,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4246"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-4250",
-   "name": "Capitol Springs State Recreation Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "wid713577",
-     "Capital Springs Centennial SP And RA",
-     289,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwia713577",
-     "Capital Springs Centennial SP And RA",
-     289,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19797837",
-     "Capital Springs Centennial SP And RA",
-     58,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19797838",
-     "Capital Springs Centennial SP And RA",
-     55,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19797007",
-     "Capital Springs Centennial SP And RA",
-     40,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19797008",
-     "Capital Springs Centennial SP And RA",
-     40,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19798010",
-     "Capital Springs Centennial SP And RA",
-     40,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19798008",
-     "Capital Springs Centennial SP And RA",
-     28,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "wid713577",
-     "Capital Springs Centennial SP And RA",
-     289,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwia713577",
-     "Capital Springs Centennial SP And RA",
-     289,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19797837",
-     "Capital Springs Centennial SP And RA",
-     58,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19797838",
-     "Capital Springs Centennial SP And RA",
-     55,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19797007",
-     "Capital Springs Centennial SP And RA",
-     40,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19797008",
-     "Capital Springs Centennial SP And RA",
-     40,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19798010",
-     "Capital Springs Centennial SP And RA",
-     40,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19798008",
-     "Capital Springs Centennial SP And RA",
-     28,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4250"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-4252",
-   "name": "Brule Glacial Spillway State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic6866",
-     "Brule Glacial Spillway",
-     2656,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic6866",
-     "Brule Glacial Spillway",
-     2656,
-     "reviewed"
+     "wbl4778",
+     "Mount Irish",
+     0,
+     "reviewed-approx"
     ]
    ],
    "held_now": [],
    "by_answer": true,
-   "pota": "https://pota.app/#/park/US-4252"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-4255",
-   "name": "Lodi Marsh State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic7082",
-     "Lodi Marsh",
-     640,
-     "name"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic7082",
-     "Lodi Marsh",
-     640,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4255"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-4294",
-   "name": "Horicon Marsh State Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "wid713367",
-     "Horicon Marsh Wildlife Area",
-     11171,
-     "reviewed"
-    ],
-    [
-     "sgwia713367",
-     "Horicon Marsh Wildlife Area",
-     11171,
-     "name"
-    ],
-    [
-     "sgwid19749895",
-     "Horicon Marsh Wildlife Area",
-     72,
-     "name"
-    ],
-    [
-     "sgwid19749891",
-     "Horicon Marsh Wildlife Area",
-     71,
-     "name"
-    ],
-    [
-     "sgwid19749907",
-     "Horicon Marsh Wildlife Area",
-     70,
-     "name"
-    ],
-    [
-     "sgwid19749830",
-     "Horicon Marsh Wildlife Area",
-     69,
-     "name"
-    ],
-    [
-     "sgwid19749911",
-     "Horicon Marsh Wildlife Area",
-     68,
-     "name"
-    ],
-    [
-     "sgwid19749971",
-     "Horicon Marsh Wildlife Area",
-     68,
-     "name"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "wid713367",
-     "Horicon Marsh Wildlife Area",
-     11171,
-     "reviewed"
-    ],
-    [
-     "sgwia713367",
-     "Horicon Marsh Wildlife Area",
-     11171,
-     "name"
-    ],
-    [
-     "sgwid19749895",
-     "Horicon Marsh Wildlife Area",
-     72,
-     "name"
-    ],
-    [
-     "sgwid19749891",
-     "Horicon Marsh Wildlife Area",
-     71,
-     "name"
-    ],
-    [
-     "sgwid19749907",
-     "Horicon Marsh Wildlife Area",
-     70,
-     "name"
-    ],
-    [
-     "sgwid19749830",
-     "Horicon Marsh Wildlife Area",
-     69,
-     "name"
-    ],
-    [
-     "sgwid19749911",
-     "Horicon Marsh Wildlife Area",
-     68,
-     "name"
-    ],
-    [
-     "sgwid19749971",
-     "Horicon Marsh Wildlife Area",
-     68,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-4294"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-8205",
-   "name": "Kangaroo Lake State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic7046",
-     "Kangaroo Lake",
-     356,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic7046",
-     "Kangaroo Lake",
-     356,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8205"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-8206",
-   "name": "Meridian Park State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic7250",
-     "Meridian Park",
-     174,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic7250",
-     "Meridian Park",
-     174,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8206"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-8209",
-   "name": "Dewey Marsh State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic6887",
-     "Dewey Marsh",
-     1222,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic6887",
-     "Dewey Marsh",
-     1222,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-8209"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-8211",
-   "name": "Bear Beach State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic7108",
-     "Bear Beach",
-     96,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic7108",
-     "Bear Beach",
-     96,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8211"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-8213",
-   "name": "Belden Swamp State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic7028",
-     "Belden Swamp",
-     1795,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic7028",
-     "Belden Swamp",
-     1795,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8213"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-8214",
-   "name": "Empire Swamp State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic7223",
-     "Empire Swamp",
-     1570,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic7223",
-     "Empire Swamp",
-     1570,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8214"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-8215",
-   "name": "Ericson Creek Forest and Wetlands State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic7030",
-     "Ericson Creek Forest and Wetlands",
-     1894,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic7030",
-     "Ericson Creek Forest and Wetlands",
-     1894,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8215"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-8216",
-   "name": "Osceola Bedrock Glades State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic7094",
-     "Osceola Bedrock Glades",
-     31,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic7094",
-     "Osceola Bedrock Glades",
-     31,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8216"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-8219",
-   "name": "Jackson Marsh State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic6992",
-     "Jackson Marsh",
-     590,
-     "name"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic6992",
-     "Jackson Marsh",
-     590,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-8219"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-8363",
-   "name": "Gibraltar Rock State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic6742",
-     "Gibraltar Rock",
-     66,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic6742",
-     "Gibraltar Rock",
-     66,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8363"
+   "pota": "https://pota.app/#/park/US-13178"
   },
   {
    "area": "US-WI",
    "ref": "US-8667",
    "name": "Haskell Noyes Memorial Woods State Natural Area",
    "old_grade": "approximate",
-   "new_grade": "pin",
+   "new_grade": "official",
    "new_pieces": [
     [
      "sgwic6755",
      "Haskell Noyes Woods",
      62,
      "words"
+    ],
+    [
+     "sgwif23571",
+     "Haskell Noyes Woods",
+     62,
+     "reviewed"
     ]
    ],
    "old_pieces": [
@@ -1209,243 +1093,9 @@
    "held_now": [],
    "by_answer": true,
    "pota": "https://pota.app/#/park/US-8667"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-8669",
-   "name": "Scuppernong Prairie State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic6750",
-     "Scuppernong Prairie",
-     173,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic6750",
-     "Scuppernong Prairie",
-     173,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8669"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-9704",
-   "name": "Lizard Mound State Park",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "wid713644",
-     "Lizard Mound State Park",
-     33,
-     "reviewed"
-    ],
-    [
-     "sgwia713644",
-     "Lizard Mound State Park",
-     33,
-     "name"
-    ],
-    [
-     "sgwid19819419",
-     "Lizard Mound State Park",
-     20,
-     "name"
-    ],
-    [
-     "sgwid19819418",
-     "Lizard Mound State Park",
-     9,
-     "name"
-    ],
-    [
-     "sgwid19819420",
-     "Lizard Mound State Park",
-     2,
-     "name"
-    ],
-    [
-     "sgwib401998",
-     "Lizard Mound State Park",
-     0,
-     "name"
-    ],
-    [
-     "sgwid19819417",
-     "Lizard Mound State Park",
-     0,
-     "name"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "wid713644",
-     "Lizard Mound State Park",
-     33,
-     "reviewed"
-    ],
-    [
-     "sgwia713644",
-     "Lizard Mound State Park",
-     33,
-     "name"
-    ],
-    [
-     "sgwid19819419",
-     "Lizard Mound State Park",
-     20,
-     "name"
-    ],
-    [
-     "sgwid19819418",
-     "Lizard Mound State Park",
-     9,
-     "name"
-    ],
-    [
-     "sgwid19819420",
-     "Lizard Mound State Park",
-     2,
-     "name"
-    ],
-    [
-     "sgwib401998",
-     "Lizard Mound State Park",
-     0,
-     "name"
-    ],
-    [
-     "sgwid19819417",
-     "Lizard Mound State Park",
-     0,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-9704"
   }
  ],
  "sample": [
-  {
-   "area": "US-WI",
-   "ref": "US-4294",
-   "name": "Horicon Marsh State Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "wid713367",
-     "Horicon Marsh Wildlife Area",
-     11171,
-     "reviewed"
-    ],
-    [
-     "sgwia713367",
-     "Horicon Marsh Wildlife Area",
-     11171,
-     "name"
-    ],
-    [
-     "sgwid19749895",
-     "Horicon Marsh Wildlife Area",
-     72,
-     "name"
-    ],
-    [
-     "sgwid19749891",
-     "Horicon Marsh Wildlife Area",
-     71,
-     "name"
-    ],
-    [
-     "sgwid19749907",
-     "Horicon Marsh Wildlife Area",
-     70,
-     "name"
-    ],
-    [
-     "sgwid19749830",
-     "Horicon Marsh Wildlife Area",
-     69,
-     "name"
-    ],
-    [
-     "sgwid19749911",
-     "Horicon Marsh Wildlife Area",
-     68,
-     "name"
-    ],
-    [
-     "sgwid19749971",
-     "Horicon Marsh Wildlife Area",
-     68,
-     "name"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "wid713367",
-     "Horicon Marsh Wildlife Area",
-     11171,
-     "reviewed"
-    ],
-    [
-     "sgwia713367",
-     "Horicon Marsh Wildlife Area",
-     11171,
-     "name"
-    ],
-    [
-     "sgwid19749895",
-     "Horicon Marsh Wildlife Area",
-     72,
-     "name"
-    ],
-    [
-     "sgwid19749891",
-     "Horicon Marsh Wildlife Area",
-     71,
-     "name"
-    ],
-    [
-     "sgwid19749907",
-     "Horicon Marsh Wildlife Area",
-     70,
-     "name"
-    ],
-    [
-     "sgwid19749830",
-     "Horicon Marsh Wildlife Area",
-     69,
-     "name"
-    ],
-    [
-     "sgwid19749911",
-     "Horicon Marsh Wildlife Area",
-     68,
-     "name"
-    ],
-    [
-     "sgwid19749971",
-     "Horicon Marsh Wildlife Area",
-     68,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-4294"
-  },
   {
    "area": "US-FL",
    "ref": "US-3635",
@@ -1479,368 +1129,23 @@
    "pota": "https://pota.app/#/park/US-3635"
   },
   {
-   "area": "US-AK",
-   "ref": "US-0150",
-   "name": "Kodiak National Wildlife Refuge",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "4957",
-     "Kodiak National Wildlife Refuge",
-     1637279,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-0150"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-9704",
-   "name": "Lizard Mound State Park",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "wid713644",
-     "Lizard Mound State Park",
-     33,
-     "reviewed"
-    ],
-    [
-     "sgwia713644",
-     "Lizard Mound State Park",
-     33,
-     "name"
-    ],
-    [
-     "sgwid19819419",
-     "Lizard Mound State Park",
-     20,
-     "name"
-    ],
-    [
-     "sgwid19819418",
-     "Lizard Mound State Park",
-     9,
-     "name"
-    ],
-    [
-     "sgwid19819420",
-     "Lizard Mound State Park",
-     2,
-     "name"
-    ],
-    [
-     "sgwib401998",
-     "Lizard Mound State Park",
-     0,
-     "name"
-    ],
-    [
-     "sgwid19819417",
-     "Lizard Mound State Park",
-     0,
-     "name"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "wid713644",
-     "Lizard Mound State Park",
-     33,
-     "reviewed"
-    ],
-    [
-     "sgwia713644",
-     "Lizard Mound State Park",
-     33,
-     "name"
-    ],
-    [
-     "sgwid19819419",
-     "Lizard Mound State Park",
-     20,
-     "name"
-    ],
-    [
-     "sgwid19819418",
-     "Lizard Mound State Park",
-     9,
-     "name"
-    ],
-    [
-     "sgwid19819420",
-     "Lizard Mound State Park",
-     2,
-     "name"
-    ],
-    [
-     "sgwib401998",
-     "Lizard Mound State Park",
-     0,
-     "name"
-    ],
-    [
-     "sgwid19819417",
-     "Lizard Mound State Park",
-     0,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-9704"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-4252",
-   "name": "Brule Glacial Spillway State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic6866",
-     "Brule Glacial Spillway",
-     2656,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic6866",
-     "Brule Glacial Spillway",
-     2656,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-4252"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-8205",
-   "name": "Kangaroo Lake State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic7046",
-     "Kangaroo Lake",
-     356,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic7046",
-     "Kangaroo Lake",
-     356,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8205"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-8206",
-   "name": "Meridian Park State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic7250",
-     "Meridian Park",
-     174,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic7250",
-     "Meridian Park",
-     174,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8206"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-8211",
-   "name": "Bear Beach State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic7108",
-     "Bear Beach",
-     96,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic7108",
-     "Bear Beach",
-     96,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8211"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-8213",
-   "name": "Belden Swamp State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic7028",
-     "Belden Swamp",
-     1795,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic7028",
-     "Belden Swamp",
-     1795,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8213"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-8214",
-   "name": "Empire Swamp State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic7223",
-     "Empire Swamp",
-     1570,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic7223",
-     "Empire Swamp",
-     1570,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8214"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-8215",
-   "name": "Ericson Creek Forest and Wetlands State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic7030",
-     "Ericson Creek Forest and Wetlands",
-     1894,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic7030",
-     "Ericson Creek Forest and Wetlands",
-     1894,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8215"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-8216",
-   "name": "Osceola Bedrock Glades State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic7094",
-     "Osceola Bedrock Glades",
-     31,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic7094",
-     "Osceola Bedrock Glades",
-     31,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8216"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-8363",
-   "name": "Gibraltar Rock State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "sgwic6742",
-     "Gibraltar Rock",
-     66,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgwic6742",
-     "Gibraltar Rock",
-     66,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8363"
-  },
-  {
    "area": "US-WI",
    "ref": "US-8667",
    "name": "Haskell Noyes Memorial Woods State Natural Area",
    "old_grade": "approximate",
-   "new_grade": "pin",
+   "new_grade": "official",
    "new_pieces": [
     [
      "sgwic6755",
      "Haskell Noyes Woods",
      62,
      "words"
+    ],
+    [
+     "sgwif23571",
+     "Haskell Noyes Woods",
+     62,
+     "reviewed"
     ]
    ],
    "old_pieces": [
@@ -1856,547 +1161,577 @@
    "pota": "https://pota.app/#/park/US-8667"
   },
   {
-   "area": "US-WI",
-   "ref": "US-8669",
-   "name": "Scuppernong Prairie State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
+   "area": "US-TN",
+   "ref": "US-0642",
+   "name": "Natchez Trace Parkway National Parkway",
+   "old_grade": "pin",
+   "new_grade": "official",
    "new_pieces": [
     [
-     "sgwic6750",
-     "Scuppernong Prairie",
-     173,
-     "reviewed"
+     "trl0642",
+     "Natchez Trace Parkway National Parkway",
+     0,
+     "official trail line (National Park Service via USGS National"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0642"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11176",
+   "name": "Rojo Mountain Bike Trail BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11176",
+     "Rojo Mountain Bike Trail BLM Recreation Management Area",
+     0,
+     "official trail line (Bureau of Land Management via USGS Nati"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-11176"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13178",
+   "name": "Mt. Irish Archaeological Site Archeological Reserve",
+   "old_grade": "pin",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "sgnvh1238",
+     "Mount Irish",
+     15075,
+     "reviewed-approx"
     ]
    ],
    "old_pieces": [
     [
-     "sgwic6750",
-     "Scuppernong Prairie",
-     173,
-     "reviewed"
+     "wbl4778",
+     "Mount Irish",
+     0,
+     "reviewed-approx"
     ]
    ],
    "held_now": [],
    "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8669"
+   "pota": "https://pota.app/#/park/US-13178"
   },
   {
-   "area": "US-WI",
-   "ref": "US-4250",
-   "name": "Capitol Springs State Recreation Area",
-   "old_grade": "official",
-   "new_grade": "pin",
+   "area": "US-FL",
+   "ref": "US-6327",
+   "name": "Tenoroc Wildlife Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
    "new_pieces": [
     [
-     "wid713577",
-     "Capital Springs Centennial SP And RA",
-     289,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwia713577",
-     "Capital Springs Centennial SP And RA",
-     289,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19797837",
-     "Capital Springs Centennial SP And RA",
-     58,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19797838",
-     "Capital Springs Centennial SP And RA",
-     55,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19797007",
-     "Capital Springs Centennial SP And RA",
-     40,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19797008",
-     "Capital Springs Centennial SP And RA",
-     40,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19798010",
-     "Capital Springs Centennial SP And RA",
-     40,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19798008",
-     "Capital Springs Centennial SP And RA",
-     28,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "wid713577",
-     "Capital Springs Centennial SP And RA",
-     289,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwia713577",
-     "Capital Springs Centennial SP And RA",
-     289,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19797837",
-     "Capital Springs Centennial SP And RA",
-     58,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19797838",
-     "Capital Springs Centennial SP And RA",
-     55,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19797007",
-     "Capital Springs Centennial SP And RA",
-     40,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19797008",
-     "Capital Springs Centennial SP And RA",
-     40,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19798010",
-     "Capital Springs Centennial SP And RA",
-     40,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ],
-    [
-     "sgwid19798008",
-     "Capital Springs Centennial SP And RA",
-     28,
-     "alias name (pin inside): Capital Springs Centennial SP And R"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4250"
-  },
-  {
-   "area": "US-AK",
-   "ref": "US-10281",
-   "name": "White Mountains National Recreation Area BLM Recreation Management Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "sgakg11010",
-     "White Mountains SRMA",
-     1016251,
+     "sgflf10761",
+     "Tenoroc State Reserve",
+     27,
      "name"
     ],
     [
-     "2165",
-     "White Mountains National Recreation Area (Eastern Interior Field Office)",
-     932728,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-10281"
-  },
-  {
-   "area": "US-CO",
-   "ref": "US-9678",
-   "name": "Windy Gap Watchable State Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "cow909",
-     "Windy Gap WWA",
-     10,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-9678"
-  },
-  {
-   "area": "US-MA",
-   "ref": "US-11401",
-   "name": "Cummington Wildlife Management Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "sgmaa644046",
-     "Cummington WMA",
-     156,
-     "name"
+     "sgflf8115",
+     "Tenoroc Fish Management Area",
+     13,
+     "words"
     ],
     [
-     "sgmaa700516",
-     "Cummington WMA",
-     125,
-     "name"
-    ],
-    [
-     "sgmaa700291",
-     "Cummington WMA",
-     88,
-     "name"
-    ],
-    [
-     "55331",
-     "Cummington Wildlife Management Area",
-     86,
-     "name"
-    ],
-    [
-     "55329",
-     "Cummington Wildlife Management Area",
-     31,
-     "name"
-    ],
-    [
-     "sgmaa641755",
-     "Cummington WMA",
-     31,
-     "name"
-    ],
-    [
-     "55328",
-     "Cummington Wildlife Management Area",
-     14,
-     "name"
-    ],
-    [
-     "sgmaa645135",
-     "Cummington WMA",
-     14,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11401"
-  },
-  {
-   "area": "US-NH",
-   "ref": "US-4894",
-   "name": "Davis-White State Forest",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "sgnhc644",
-     "Davis-White State Forest",
-     40,
-     "name"
-    ],
-    [
-     "sgnha990",
-     "Davis-White State Forest",
+     "sgflf5903",
+     "Tenoroc Fish Management Area",
      0,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4894"
-  },
-  {
-   "area": "US-NV",
-   "ref": "US-13039",
-   "name": "Owyhee River Wilderness Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
+     "words"
+    ],
     [
-     "wbl171",
-     "Owyhee River Wilderness",
+     "sgflf5998",
+     "Tenoroc Fish Management Area",
      0,
-     "name"
+     "words"
+    ],
+    [
+     "sgflf5999",
+     "Tenoroc Fish Management Area",
+     0,
+     "words"
     ]
    ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-13039"
-  },
-  {
-   "area": "US-OK",
-   "ref": "US-12028",
-   "name": "Barren Fork Wildlife Management Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
    "old_pieces": [
     [
-     "sgokc7",
-     "Barren Fork",
-     507,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-12028"
-  },
-  {
-   "area": "US-SC",
-   "ref": "US-3917",
-   "name": "Little Pee Dee Bay Heritage Preserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "254129",
-     "Little Pee Dee State Park Bay Heritage Preserve",
-     298,
-     "name"
+     "191721",
+     "Tenoroc Fish Management Area",
+     7528,
+     "words"
     ]
    ],
    "held_now": [
     "check (rule R-G8): bigger than the park's own record",
-    "check (rule R-G8): bigger than the park's own record",
-    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
+    "check (rule R-G8): bigger than the park's own record"
    ],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-3917"
+   "pota": "https://pota.app/#/park/US-6327"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-10426",
+   "name": "West-Northwest State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl10426",
+     "West-Northwest State Trail",
+     0,
+     "official trail line (Arkansas Department of Transportation ("
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10426"
+  },
+  {
+   "area": "US-CO",
+   "ref": "US-5749",
+   "name": "Kokopelli's Trail National Recreation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl5749",
+     "Kokopelli's Trail National Recreation Area",
+     0,
+     "official trail line (Bureau of Land Management and Utah stat"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-5749"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-3424",
+   "name": "Ice Age Floods National Geologic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl3424",
+     "Ice Age Floods National Geologic Trail",
+     0,
+     "official trail line (NPS official (carto iafl_tour_routes, R"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3424"
+  },
+  {
+   "area": "US-MD",
+   "ref": "US-7973",
+   "name": "Baltimore-Washington National Parkway",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl7973",
+     "Baltimore-Washington National Parkway",
+     0,
+     "official trail line (National Park Service via USGS National"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7973"
+  },
+  {
+   "area": "US-MT",
+   "ref": "US-3424",
+   "name": "Ice Age Floods National Geologic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl3424",
+     "Ice Age Floods National Geologic Trail",
+     0,
+     "official trail line (NPS official (carto iafl_tour_routes, R"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3424"
+  },
+  {
+   "area": "US-NC",
+   "ref": "US-10398",
+   "name": "Chatuge Dam Trail Recreation Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl10398",
+     "Chatuge Dam Trail Recreation Park",
+     0,
+     "official trail line (Tennessee Valley Authority (federal age"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10398"
+  },
+  {
+   "area": "US-NH",
+   "ref": "US-13626",
+   "name": "Sugar River State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl13626",
+     "Sugar River State Trail",
+     0,
+     "official trail line (New Hampshire GRANIT (state agency GIS "
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13626"
+  },
+  {
+   "area": "US-NM",
+   "ref": "US-11815",
+   "name": "La Cueva Non-Motorized Trail System Recreation Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11815",
+     "La Cueva Non-Motorized Trail System Recreation Site",
+     0,
+     "official trail line (Bureau of Land Management via USGS Nati"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11815"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13206",
+   "name": "Barnes Canyon Trailhead BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl13206",
+     "Barnes Canyon Trailhead BLM Recreation Management Area",
+     0,
+     "official trail line (Bureau of Land Management via USGS Nati"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13206"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-12959",
+   "name": "Quartzville BC Byway Kiosk BLM Special Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl12959",
+     "Quartzville BC Byway Kiosk BLM Special Recreation Management Area",
+     0,
+     "official trail line (Bureau of Land Management (Oregon/Washi"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12959"
+  },
+  {
+   "area": "US-SC",
+   "ref": "US-9203",
+   "name": "Palmetto State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9203",
+     "Palmetto State Trail",
+     0,
+     "official trail line (U.S. Forest Service and U.S. Fish and W"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9203"
   },
   {
    "area": "US-UT",
-   "ref": "US-11748",
-   "name": "Cedar Mesa BLM Special Recreation Management Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
+   "ref": "US-10964",
+   "name": "Cathedral Valley Scenic Backway BLM Special Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
     [
-     "rst14459",
-     "Cedar Mesa",
+     "trl10964",
+     "Cathedral Valley Scenic Backway BLM Special Recreation Management Area",
      0,
-     "name"
+     "official trail line (BLM GTLF public roads (official); named"
     ]
    ],
+   "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11748"
+   "pota": "https://pota.app/#/park/US-10964"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-3424",
+   "name": "Ice Age Floods National Geologic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl3424",
+     "Ice Age Floods National Geologic Trail",
+     0,
+     "official trail line (NPS official (carto iafl_tour_routes, R"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3424"
   },
   {
    "area": "US-WY",
-   "ref": "US-6197",
-   "name": "Popo Agie Wilderness Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "wld346",
-     "Popo Agie Wilderness",
-     102620,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-6197"
-  },
-  {
-   "area": "US-WI",
-   "ref": "US-11936",
-   "name": "White River State Fish and Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "approximate",
+   "ref": "US-10877",
+   "name": "Mallo Trail BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
    "new_pieces": [
     [
-     "272997",
-     "White River Fishery Area-Waushara",
-     3461,
-     "words"
-    ],
-    [
-     "78245",
-     "White River Fishery Area-Waushara",
-     9,
-     "words"
+     "trl10877",
+     "Mallo Trail",
+     0,
+     "official trail line (USFS Black Hills NF trails (official) ("
     ]
    ],
-   "old_pieces": [
-    [
-     "272997",
-     "White River Fishery Area-Waushara",
-     3461,
-     "words"
-    ],
-    [
-     "sgwia712748",
-     "White River Fishery Area-Waushara",
-     3457,
-     "words"
-    ],
-    [
-     "sgwid19764564",
-     "White River Marsh Wildlife Area",
-     50,
-     "name"
-    ],
-    [
-     "sgwid19764608",
-     "White River Marsh Wildlife Area",
-     50,
-     "name"
-    ],
-    [
-     "sgwid19770894",
-     "White River Marsh Wildlife Area",
-     50,
-     "name"
-    ],
-    [
-     "sgwid19770895",
-     "White River Marsh Wildlife Area",
-     50,
-     "name"
-    ],
-    [
-     "sgwid19773299",
-     "White River Marsh Wildlife Area",
-     50,
-     "name"
-    ],
-    [
-     "sgwid19754289",
-     "White River Marsh Wildlife Area",
-     48,
-     "name"
-    ]
-   ],
+   "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11936"
+   "pota": "https://pota.app/#/park/US-10877"
   },
   {
-   "area": "US-WI",
-   "ref": "US-4246",
-   "name": "Whitefish Dunes State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
+   "area": "US-AR",
+   "ref": "US-10508",
+   "name": "Ozark Highlands Trail (OHT) National Historic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
    "new_pieces": [
     [
-     "sgwic6880",
-     "Whitefish Dunes",
-     411,
-     "name"
+     "trl10508",
+     "Ozark Highlands Trail (OHT) National Historic Trail",
+     0,
+     "official trail line (U.S. Forest Service National Forest Sys"
     ]
    ],
-   "old_pieces": [
-    [
-     "sgwic6880",
-     "Whitefish Dunes",
-     411,
-     "name"
-    ]
-   ],
+   "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4246"
+   "pota": "https://pota.app/#/park/US-10508"
   },
   {
-   "area": "US-WI",
-   "ref": "US-4255",
-   "name": "Lodi Marsh State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
+   "area": "US-AR",
+   "ref": "US-13622",
+   "name": "The Razorback Regional Greenway National Recreation Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
    "new_pieces": [
     [
-     "sgwic7082",
-     "Lodi Marsh",
-     640,
-     "name"
+     "trl13622",
+     "The Razorback Regional Greenway National Recreation Trail",
+     0,
+     "official trail line (City of Rogers and City of Fayetteville"
     ]
    ],
-   "old_pieces": [
-    [
-     "sgwic7082",
-     "Lodi Marsh",
-     640,
-     "name"
-    ]
-   ],
+   "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4255"
+   "pota": "https://pota.app/#/park/US-13622"
   },
   {
-   "area": "US-WI",
-   "ref": "US-8209",
-   "name": "Dewey Marsh State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
+   "area": "US-AR",
+   "ref": "US-13623",
+   "name": "Alum Cove Natural Bridge Trail National Recreation Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
    "new_pieces": [
     [
-     "sgwic6887",
-     "Dewey Marsh",
-     1222,
-     "reviewed"
+     "trl13623",
+     "Alum Cove Natural Bridge Trail National Recreation Trail",
+     0,
+     "official trail line (U.S. Forest Service National Forest Sys"
     ]
    ],
-   "old_pieces": [
-    [
-     "sgwic6887",
-     "Dewey Marsh",
-     1222,
-     "name"
-    ]
-   ],
+   "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-8209"
+   "pota": "https://pota.app/#/park/US-13623"
   },
   {
-   "area": "US-WI",
-   "ref": "US-8219",
-   "name": "Jackson Marsh State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
+   "area": "US-AR",
+   "ref": "US-9681",
+   "name": "Camden Expedition Scenic Highway State Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
    "new_pieces": [
     [
-     "sgwic6992",
-     "Jackson Marsh",
-     590,
-     "name"
+     "trl9681",
+     "Camden Expedition Scenic Highway State Trail",
+     0,
+     "official trail line (Arkansas Department of Transportation ("
     ]
    ],
-   "old_pieces": [
-    [
-     "sgwic6992",
-     "Jackson Marsh",
-     590,
-     "name"
-    ]
-   ],
+   "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-8219"
+   "pota": "https://pota.app/#/park/US-9681"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13214",
+   "name": "Logandale Trails BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl13214",
+     "Logandale Trails BLM Recreation Management Area",
+     0,
+     "official trail line (Bureau of Land Management via USGS Nati"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13214"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-3424",
+   "name": "Ice Age Floods National Geologic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl3424",
+     "Ice Age Floods National Geologic Trail",
+     0,
+     "official trail line (NPS official (carto iafl_tour_routes, R"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3424"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11004",
+   "name": "Hurricane Cliffs Trail System BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11004",
+     "Hurricane Cliffs Trail System BLM Recreation Management Area",
+     0,
+     "official trail line (Bureau of Land Management via USGS Nati"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11004"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11661",
+   "name": "Bar M Trail System BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11661",
+     "Bar M Trail System BLM Recreation Management Area",
+     0,
+     "official trail line (BLM official recreation trails (gis.blm"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11661"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11730",
+   "name": "Paiute  ATV Trail BLM Special Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11730",
+     "Paiute  ATV Trail BLM Special Recreation Management Area",
+     0,
+     "official trail line (U.S. Forest Service National Forest Sys"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11730"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11750",
+   "name": "Cottonwood Canyons Scenic Backway BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl11750",
+     "Cottonwood Canyons Scenic Backway BLM Recreation Management Area",
+     0,
+     "official trail line (BLM GTLF public roads (official); named"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11750"
   }
  ]
 }
