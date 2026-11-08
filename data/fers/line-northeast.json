@@ -15,48 +15,48 @@
   "US-DE",
   "US-DC"
  ],
- "since": "2026-11-06",
- "date": "2026-11-06 19:16 UTC",
+ "since": "2026-11-08",
+ "date": "2026-11-08 21:49 UTC",
  "verdict": "STOPPED",
  "why": [
-  "missing check: 5665 of 12562 expected pairs were never looked at (45%; 2868 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (5658); not tested: the official outline of <park> could not be read in pass 1 (one of its map rec (4); <park>: not in this run (another state, retired, or no POTA pin) (3)"
+  "missing check: 5705 of 12549 expected pairs were never looked at (45%; 2809 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (5698); not tested: the official outline of <park> could not be read in pass 1 (one of its map rec (4); <park>: not in this run (another state, retired, or no POTA pin) (3)"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 704,
-  "DROPPED": 3325,
-  "NEVER LOOKED AT": 8533
+  "FOUND": 713,
+  "DROPPED": 3322,
+  "NEVER LOOKED AT": 8514
  },
  "never_looked_at": {
-  "counted": 5665,
-  "no_official_outline": 2868,
-  "expected": 12562,
+  "counted": 5705,
+  "no_official_outline": 2809,
+  "expected": 12549,
   "limit": "10%",
   "by_reason": {
-   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 5658,
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 5698,
    "not tested: the official outline of <park> could not be read in pass 1 (one of its map rec": 4,
    "<park>: not in this run (another state, retired, or no POTA pin)": 3
   }
  },
  "report": {
   "pass1": {
-   "date": "2026-11-06",
-   "pairs tested": 14669,
-   "pairs whose boxes touch": 14669
+   "date": "2026-11-08",
+   "pairs tested": 14691,
+   "pairs whose boxes touch": 14691
   },
   "pass2": {
-   "agree with the pass before": 3369,
-   "date": "2026-11-06",
-   "pairs tested": 1205
+   "agree with the pass before": 3451,
+   "date": "2026-11-08",
+   "pairs tested": 1216
   },
   "pass3": {
-   "agree with the pass before": 2246,
-   "date": "2026-11-06",
-   "pairs tested": 1157
+   "agree with the pass before": 2326,
+   "date": "2026-11-08",
+   "pairs tested": 1165
   },
   "pass5": {
-   "checked": 298,
-   "date": "2026-11-06",
+   "checked": 300,
+   "date": "2026-11-08",
    "pairs tested": 0,
    "still not checked": 0
   }
@@ -90,15 +90,15 @@
   "merged": 383
  },
  "US-NY": {
-  "rows": 486,
-  "live": 120,
+  "rows": 491,
+  "live": 121,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 1
+   "no public owner on the ownership map": 2
   },
-  "dropped": 254,
-  "merged": 111
+  "dropped": 255,
+  "merged": 113
  },
  "US-NJ": {
   "rows": 202,
@@ -124,95 +124,93 @@
   "merged": 30
  },
  "US-RI": {
-  "rows": 38,
-  "live": 11,
+  "rows": 58,
+  "live": 13,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 1
+   "no public owner on the ownership map": 6
   },
-  "dropped": 23,
-  "merged": 3
+  "dropped": 26,
+  "merged": 13
  },
  "US-MA": {
-  "rows": 501,
-  "live": 84,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {
-   "no public owner on the ownership map": 3,
-   "one record covers two parks": 1,
-   "low-confidence outline for Nashua River Rail Trail State Tra": 2
-  },
-  "dropped": 203,
-  "merged": 208
- },
- "US-VT": {
-  "rows": 94,
-  "live": 8,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {
-   "no public owner on the ownership map": 1
-  },
-  "dropped": 57,
-  "merged": 28
- },
- "US-NH": {
-  "rows": 150,
-  "live": 26,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {},
-  "dropped": 62,
-  "merged": 62
- },
- "US-ME": {
-  "rows": 40,
-  "live": 6,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {
-   "the official outline of New Brunswick #15 Wildlife Managemen": 3,
-   "no public owner on the ownership map": 3
-  },
-  "dropped": 17,
-  "merged": 11
- },
- "US-MD": {
-  "rows": 687,
-  "live": 126,
+  "rows": 506,
+  "live": 86,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "no public owner on the ownership map": 4,
+   "one record covers two parks": 1,
+   "low-confidence outline for Nashua River Rail Trail State Tra": 2
+  },
+  "dropped": 205,
+  "merged": 208
+ },
+ "US-VT": {
+  "rows": 89,
+  "live": 7,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 56,
+  "merged": 26
+ },
+ "US-NH": {
+  "rows": 160,
+  "live": 27,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 62,
+  "merged": 71
+ },
+ "US-ME": {
+  "rows": 32,
+  "live": 4,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the official outline of New Brunswick #15 Wildlife Managemen": 3
+  },
+  "dropped": 16,
+  "merged": 9
+ },
+ "US-MD": {
+  "rows": 918,
+  "live": 135,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "the official outline of Baltimore-Washington National Parkwa": 3,
+   "no public owner on the ownership map": 14,
    "one record covers two parks": 2
   },
-  "dropped": 238,
-  "merged": 317
+  "dropped": 282,
+  "merged": 482
  },
  "US-DE": {
-  "rows": 273,
-  "live": 36,
+  "rows": 115,
+  "live": 31,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 12,
+   "no public owner on the ownership map": 2,
    "one record covers two parks": 1
   },
-  "dropped": 66,
-  "merged": 158
+  "dropped": 48,
+  "merged": 33
  },
  "US-DC": {
-  "rows": 57,
-  "live": 14,
+  "rows": 70,
+  "live": 15,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "one record covers two parks": 1
   },
-  "dropped": 21,
-  "merged": 21
+  "dropped": 28,
+  "merged": 26
  },
  "states_ready": [],
  "states_held": [
