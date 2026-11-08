@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-08T22:56Z",
+ "checked": "2026-11-08T23:16Z",
  "switched_on": false,
  "results": [
   {
@@ -736,11 +736,9 @@
   {
    "path": "data/docs/US-IN.json",
    "kind": "docs",
-   "why": [
-    "F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dA/86d62369fd/ouabache_trail.pdf?language_id=1"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-KS.json",
@@ -2822,6 +2820,13 @@
   },
   {
    "path": "data/truth/US-NC.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/truth/US-ND.json",
    "kind": "truth",
    "why": [],
    "notes": [],
