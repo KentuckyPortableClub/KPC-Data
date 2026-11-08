@@ -213,7 +213,7 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-07, 1 days): docs data/docs/US-DC.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/lyba/learn/management/lawsandpolicies.htm
 - FROM WAITING ROOM (held since 2026-10-31, 8 days): docs data/docs/US-ID.json held: F-D1 one rules page on 63 of 362 parks: https://idfg.idaho.gov/sites/default/files/seasons-rules-big-game-2026.pdf
 - FROM WAITING ROOM (held since 2026-10-31, 8 days): docs data/docs/US-IL.json held: F-D2 3 map links on a banned host (fire news / map pins / social), e.g. https://www.google.com/maps/place/39%C2%B006'01.1%22N+88%C2%B047'57.1%
-- FROM WAITING ROOM (held since 2026-11-04, 4 days): docs data/docs/US-IN.json held: F-D3 4 of 20 re-tested links dead, e.g. https://www.in.gov/dA/86d62369fd/ouabache_trail.pdf?language_id=1
+- FROM WAITING ROOM (held since 2026-11-04, 4 days): docs data/docs/US-IN.json held: F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dA/86d62369fd/ouabache_trail.pdf?language_id=1
 - FROM WAITING ROOM (held since 2026-10-31, 8 days): docs data/docs/US-ME.json held: F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml · F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml
 - FROM WAITING ROOM (held since 2026-10-31, 8 days): docs data/docs/US-MO.json held: F-D1 one rules page on 426 of 561 parks: https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp
 - FROM WAITING ROOM (held since 2026-11-07, 1 days): docs data/docs/US-NM.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/safe/learn/management/lawsandpolicies.htm
