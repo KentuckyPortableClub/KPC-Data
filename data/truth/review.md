@@ -1,10 +1,10 @@
 # Park truth checker: review (review lists only; nothing here changes a key or a card)
 
-Updated 2026-11-01. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + source agreement; weakest first in checklist-<area>.csv.
+Updated 2026-11-08. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + source agreement; weakest first in checklist-<area>.csv.
 
 | area | parks | with outline | agree | OFF (>15%) | unsure | no size | ours unknown | handover hints | retired | weak (≤4) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| US-KY | 193 | 189 | 111 | **5** | 8 | 65 | 0 | 5 | 0 | 26 |
+| US-KY | 193 | 193 | 111 | **5** | 8 | 68 | 1 | 5 | 0 | 29 |
 | US-TN | 277 | 257 | 7 | **5** | 1 | 236 | 2 | 3 | 0 | 9 |
 | US-NC | 253 | 219 | 38 | **10** | 24 | 146 | 0 | 18 | 0 | 8 |
 | US-VA | 184 | 156 | 65 | **16** | 35 | 40 | 0 | 16 | 0 | 4 |
@@ -56,7 +56,7 @@ Updated 2026-11-01. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
-- US-0019 Cumberland Gap National Historical Park: ours 24,225 ac · cause: whole park compared (POTA lists it in 2 states: {'US-TN': 5365, 'US-VA': 7614})
+- US-0019 Cumberland Gap National Historical Park: ours 24,225 ac · cause: whole park compared (POTA lists it in 2 states: {'US-VA': 9293, 'US-TN': 5365})
 - US-10098 Green River National Wildlife Refuge: ours 2,186 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-10104 Red River National Wild and Scenic River: ours 1,049 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 708,000 acres, no total words near it) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone)
 - US-10107 Big South Fork National Wild and Scenic River: ours 2,487 ac · cause: no total-looking sentence: numbers found were parts or other units
