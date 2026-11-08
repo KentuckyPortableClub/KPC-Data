@@ -403,22 +403,22 @@
   "US-NC": {
    "checked": 253,
    "counts": {
-    "agree": 38,
-    "handover_hints": 18,
+    "agree": 31,
+    "handover_hints": 20,
     "no_page": 1,
     "no_size": 146,
-    "off": 10,
-    "ours_unknown": 0,
+    "off": 15,
+    "ours_unknown": 5,
     "parks": 253,
     "retired": 0,
-    "unsure": 24,
+    "unsure": 27,
     "weak": 8,
-    "with_outline": 219
+    "with_outline": 225
    },
    "left": 0,
    "parks": 253,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-08"
   },
   "US-ND": {
    "checked": 155,
@@ -744,45 +744,31 @@
  "hosts": {},
  "last": {
   "areas": [
-   "US-TN"
+   "US-NC"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 392,
+   "browser": 2,
    "errors": 0,
-   "for_person_urls": [
-    [
-     "https://www.tn.gov/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.tn.gov this run"
-    ],
-    [
-     "https://tnstateparks.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from tnstateparks.com this run"
-    ],
-    [
-     "https://www.murfreesborotn.gov/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.murfreesborotn.gov this run"
-    ]
-   ],
-   "requests": 3,
+   "for_person_urls": [],
+   "requests": 498,
    "rested": 0,
-   "robots": 3,
-   "robots_unreadable": 3,
+   "robots": 0,
    "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 3,
-   "no_size": 227,
-   "ours_unknown": 2,
-   "pages_read": 0,
-   "parks": 230,
+   "handover_hints": 20,
+   "no_size": 147,
+   "ours_unknown": 5,
+   "pages_read": 346,
+   "parks": 253,
    "retired": 0,
-   "size_agree": 0,
-   "size_off": 0,
-   "size_unsure": 0,
-   "skipped_fresh": 47,
-   "with_outline": 229
+   "size_agree": 31,
+   "size_off": 15,
+   "size_unsure": 27,
+   "skipped_fresh": 0,
+   "with_outline": 225
   },
   "when": "2026-11-08"
  },
@@ -848,8 +834,8 @@
    "status": "HTTP 404"
   },
   "https://www.ncparks.gov/news": {
-   "links": 138,
-   "read": "2026-11-01",
+   "links": 139,
+   "read": "2026-11-08",
    "status": "ok"
   },
   "https://www.tn.gov/twra/news.html": {
