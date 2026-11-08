@@ -221,7 +221,13 @@ def geopdf_plausible(affine, w_px, h_px, fit_err_m, pin_ll):
         on_page = du == 0 and dv == 0
         off_km = math.hypot(du * wx, dv * hy) / 1000.0
     ok, why = geopdf_checks(fit_err_m, (sx, sy), page_km2, off_km, max(wx, hy))
-    return ok, why, {'m_per_px_x': sx, 'm_per_px_y': sy, 'page_km2': page_km2, 'pin_off_km': off_km, 'pin_on_page': on_page}
+    # lat_down: latitude grows DOWN the page (a[4] > 0). A north-up page rendered top-down should have a[4] < 0, so this is a sign the
+    # page's /GPTS-/LPTS orientation is mirrored - but it is reported as a FACT, not a verdict: it is true of pages that place correctly
+    # as well (a pin near the middle of a small page barely moves when mirrored), and a mirrored page can still fit its own points
+    # perfectly, so the residual does not catch it. Nov 7: US-5460 Sun Pass is a proven mirrored page; four of five sample pages carry
+    # this sign. Whoever can open the PDFs should settle it in kpc_picture_geo.py.
+    return ok, why, {'m_per_px_x': sx, 'm_per_px_y': sy, 'page_km2': page_km2, 'pin_off_km': off_km, 'pin_on_page': on_page,
+                     'lat_down': bool(a[4] > 0)}
 
 
 def size_verdict(traced_acres, known_acres, park_type, page_share=None):

@@ -96,6 +96,7 @@ MIN_POINTS = 3            # Rule 2: at least 3 control points
 SIMPLIFY_M = 3.0          # Step 4: Douglas-Peucker tolerance in metres
 PIN_MAX_OUTSIDE_M = 1000  # Step 5: pin inside or within 1 km
 PIN_NEAR_M = 200.0        # Nov 7 (pin mode): a shape this close to the pin on the page is a candidate for the park's own shape
+PIN_MIN_SHAPE_PX = 150.0  # Nov 7 (pin mode): the smallest shape at the pin still worth considering, in pixels (speckle floor)
 PIN_PICK = os.environ.get("KPC_TRACE_PIN_PICK", "1") != "0"   # Nov 7: choose the boundary colour by the pin on a GeoPDF page (0 = old behaviour)
 AREA_RATIO_RANGE = (0.2, 5.0)  # Step 5 / Nov 6: vs known acreage -> NEEDS A PERSON (no outline)
 
@@ -122,7 +123,8 @@ DEFAULT_UA = ("KPC-Picture-Map-Tracer/%s (Kentucky POTA club park-boundary proje
 REPORT_FIELDS = ["ref", "status", "fit_m", "n_points", "why",
                  "fit_loo_m", "model", "n_search", "decoy_best", "search_tol_m", "flags", "source_url", "page", "date",
                  "source_type", "source_org", "notes",
-                 "acres_traced", "acres_known", "ceiling_acres", "edge_share", "pin_dist_m"]   # Nov 7: every gate's input in the report
+                 "acres_traced", "acres_known", "ceiling_acres", "edge_share", "pin_dist_m",   # Nov 7: every gate's input in the report
+                 "geo_m_per_px", "geo_page_km2", "geo_lat_down", "pin_px"]
 
 
 def log(msg: str) -> None:
@@ -532,6 +534,11 @@ def detect_boundary(img, row, k=8, pin_px=None, m_per_px=None, expected_acres=No
     best = None
     # a colour picked by a person (boundary_rgb) may be a small parcel on a large regional map
     min_parcel, min_largest = (0.0005, 0.001) if row.get("boundary_rgb") else (0.002, 0.01)
+    if pin_mode:
+        # Nov 7: the "too small to be the park" floor exists for pages where we do NOT know where the park is. In pin mode we do, and on a
+        # regional or statewide sheet the park is far below that floor: on the Sun Pass (US-5460) page 0.002 of the page is 98,000 acres,
+        # while the park is 21,000. A shape AT THE PIN is judged on the shape itself, with only an absolute floor to keep out speckle.
+        min_parcel, min_largest = PIN_MIN_SHAPE_PX / float(w * h), 0.0
     ks = max(5, int(round(diag * 0.006)))
     for name, m in masks:
         if kind == "trail":
@@ -576,6 +583,9 @@ def detect_boundary(img, row, k=8, pin_px=None, m_per_px=None, expected_acres=No
             if not parcels:
                 continue
             if pin_mode:
+                est = (lambda f: f * w * h * m_per_px * m_per_px / 4046.86) if (m_per_px and m_per_px > 0) else None
+                exp = float(expected_acres) if expected_acres else None
+
                 near = []
                 for frac, ap, how in parcels:
                     d = cv2.pointPolygonTest(np.round(ap).astype(np.int32).reshape(-1, 1, 2),
@@ -584,8 +594,6 @@ def detect_boundary(img, row, k=8, pin_px=None, m_per_px=None, expected_acres=No
                         near.append((frac, ap, how, max(0.0, -d)))
                 if not near:
                     continue                           # this colour has nothing at the pin: never the park
-                est = (lambda f: f * w * h * m_per_px * m_per_px / 4046.86) if (m_per_px and m_per_px > 0) else None
-                exp = float(expected_acres) if expected_acres else None
 
                 def _fit(t):
                     """Lower is better. With a size to aim at, how far this shape is from it decides and a filled tint only breaks a tie;
@@ -602,6 +610,7 @@ def detect_boundary(img, row, k=8, pin_px=None, m_per_px=None, expected_acres=No
                     ea = est(pick[0]) if est else None
                     others = ", ".join(f"{t[2]} ~{est(t[0]):.0f} ac" if est else t[2] for t in near[1:3])
                     best = dict(kind="area", pts_px=pick[1], parcels=[pick[1]] + [t[1] for t in rest], score=sum(t[0] for t in parcels),
+                                pin_fit=(_fit(pick)[0] if (est and exp) else None), pin_acres=(est(pick[0]) if est else None),
                                 rank=rank, at_pin=len(near), n_shapes=len(parcels),
                                 mask_name=(f"{name}, {pick[2]}" + (f", ~{ea:.0f} ac" if ea else "") +
                                            f", {'contains' if pick[3] == 0 else f'{pick[3] * (m_per_px or 1):.0f} m from'} the pin"
@@ -1541,6 +1550,10 @@ def process_one(ref, row, base: Path, out: Path, pins, http, args):
         held_why = TL.hold_reasons(kind=bnd["kind"], geopdf_why=geo_why, pin_dist_m=dpin, pin_max_m=PIN_MAX_OUTSIDE_M, edge=edge_sh,
                                    traced_acres=area_acres, known_acres=acres, park_type=row.get("type"), page_share=page_share,
                                    length_km=(geom.length / 1000.0 if bnd["kind"] != "area" else None), geopdf_residual_ok=geo_resid_ok)
+        res.update(geo_m_per_px=round(geo_info["m_per_px_x"], 3) if geo_info.get("m_per_px_x") else "",
+                   geo_page_km2=round(geo_info["page_km2"], 1) if geo_info.get("page_km2") else "",
+                   geo_lat_down=("yes" if geo_info.get("lat_down") else "no") if geo_info else "",
+                   pin_px=f"{pin_px[0]:.0f},{pin_px[1]:.0f}" if pin_px is not None else "")
         res.update(acres_traced=round(area_acres, 1) if area_acres is not None else "", acres_known=acres if acres else "",
                    ceiling_acres=int(TL.ceiling_acres(row.get("type"))), edge_share=round(edge_sh, 3) if edge_sh is not None else "",
                    pin_dist_m=round(dpin))
