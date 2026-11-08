@@ -1,7 +1,8 @@
 {
  "area": "US-AL",
- "built": "2026-11-02",
+ "built": "2026-11-08",
  "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
  "parks": [
   {
    "ref": "US-0025",
@@ -166,11 +167,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 6982.4,
-     "official_acres": 13735.0,
-     "times": 1.97,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_acres": 6955.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)",
+     "official_acres_low": 6785.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 6,785 ac, all providers added 6,955 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -191,7 +194,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-87.7447482098095 30.271503947954]; 2 piece(s) under 10 m wide; 7 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-87.7447482098095 30.271503947954]; 2 piece(s) under 10 m wide; 7 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 7,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -210,8 +219,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "OFF: The outline is 2.0 times smaller than the official 13,735 acres (6,982 ac drawn) (+3 more flags)."
+   "score": 3,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-87.7447482098095 30.271503947954]; 2 piece(s) under 10 m wide; 7 hole(s) under 100 m2 (+2 more flags)."
   },
   {
    "ref": "US-0137",
@@ -271,11 +280,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 4924.8,
      "official_acres": 8383.0,
-     "times": 1.7,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 4872.8,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 4,873 ac, all providers added 8,383 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -294,7 +305,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-87.0577647367894 33.0941422444797]"
+     "note": "Ring Self-intersection[-87.0577647367894 33.0941422444797]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -315,8 +332,8 @@
     "record 3685: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 1.7 times smaller than the official 8,383 acres (4,925 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-87.0577647367894 33.0941422444797]."
   },
   {
    "ref": "US-0138",
@@ -392,7 +409,7 @@
     },
     "T9": {
      "last_edit": "2026-08-24",
-     "read": "2026-10-26",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -447,10 +464,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 24.4,
-     "official_acres": 48.0,
-     "times": 1.97,
+     "official_acres": 24.0,
+     "times": 1.02,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -485,8 +502,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 48 acres (24 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0140",
@@ -534,10 +551,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 203.8,
-     "official_acres": 406.0,
-     "times": 1.99,
+     "official_acres": 203.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -572,8 +589,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 406 acres (204 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0141",
@@ -633,10 +650,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1077.6,
-     "official_acres": 2106.0,
-     "times": 1.95,
+     "official_acres": 1053.0,
+     "times": 1.02,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -656,7 +673,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -677,8 +700,8 @@
     "record 3997: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 1.9 times smaller than the official 2,106 acres (1,078 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
   },
   {
    "ref": "US-0158",
@@ -726,10 +749,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 9016.7,
-     "official_acres": 18028.0,
-     "times": 2.0,
+     "official_acres": 9014.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -764,8 +787,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 18,028 acres (9,017 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0159",
@@ -813,10 +836,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 266.0,
-     "official_acres": 532.0,
-     "times": 2.0,
+     "official_acres": 266.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -851,8 +874,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 532 acres (266 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0160",
@@ -900,10 +923,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 24.2,
-     "official_acres": 48.0,
-     "times": 1.98,
+     "official_acres": 24.0,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -938,8 +961,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 48 acres (24 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0161",
@@ -1011,9 +1034,11 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 25539.7,
-     "official_acres": 34844.0,
-     "times": 1.36,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_acres": 26848.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 18852.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 18,852 ac, all providers added 26,848 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -1034,7 +1059,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-86.6689439562454 34.6211962550628]; 50 piece(s) under 10 m wide; 282 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-86.6689439562454 34.6211962550628]; 50 piece(s) under 10 m wide; 282 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.003,
+      "holes": 282,
+      "pieces": 50
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1104,10 +1135,10 @@
      "note": "the park spans several states / provinces (US-AL, US-MS): POTA's one pin may be in another part"
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 2731.6,
-     "official_acres": 5454.0,
-     "times": 2.0,
+     "official_acres": 2727.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1127,7 +1158,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1146,8 +1183,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 5,454 acres (2,732 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "SLIVERS: The shape has problems: 1 piece(s) under 10 m wide."
   },
   {
    "ref": "US-0641",
@@ -1729,21 +1766,10 @@
     -86.053
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://conservationgis.alabama.gov/adcnrweb/rest/services/StateParks/MapServer/0"
    ],
-   "acres_drawn": 1040.4,
+   "acres_drawn": 1028.8,
    "records": [
-    {
-     "id": "padus#256239",
-     "name": "Buck's Pocket State Park",
-     "type": "SP State Park",
-     "category": "Fee",
-     "acres": 669.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=256239&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgala2",
      "name": "Buck's Pocket State Park",
@@ -1754,7 +1780,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#256239",
     "https://conservationgis.alabama.gov/adcnrweb/rest/services/StateParks/MapServer/0#2"
    ],
    "tests": {
@@ -1764,10 +1789,10 @@
     },
     "T2": {
      "flag": "OFF",
-     "outline_acres": 1040.4,
-     "official_acres": 669.0,
-     "times": 1.56,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "outline_acres": 1028.8,
+     "official_acres": 2000.0,
+     "times": 1.94,
+     "official_from": "the club's acreage list"
     },
     "T3": {
      "flag": "PASS",
@@ -1802,7 +1827,7 @@
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "OFF: The outline is 1.6 times bigger than the official 669 acres (1,040 ac drawn)."
+   "why": "OFF: The outline is 1.9 times smaller than the official 2,000 acres (1,029 ac drawn)."
   },
   {
    "ref": "US-1036",
@@ -2110,17 +2135,27 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://conservationgis.alabama.gov/adcnrweb/rest/services/StateParks/MapServer/0"
    ],
-   "acres_drawn": 1595.6,
+   "acres_drawn": 1746.2,
    "records": [
     {
-     "id": "padus#256241",
+     "id": "padus#256240",
+     "name": "Desoto State Park",
+     "type": "SP State Park",
+     "category": "Fee",
+     "acres": 327.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=256240&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#256208",
      "name": "DeSoto State Park",
      "type": "SP State Park",
      "category": "Fee",
-     "acres": 1059.0,
+     "acres": 74.0,
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=256241&outFields=*&returnGeometry=false&f=html"
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=256208&outFields=*&returnGeometry=false&f=html"
     },
     {
      "id": "sgala6",
@@ -2132,7 +2167,8 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#256241",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#256240",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#256208",
     "https://conservationgis.alabama.gov/adcnrweb/rest/services/StateParks/MapServer/0#6"
    ],
    "tests": {
@@ -2142,9 +2178,9 @@
     },
     "T2": {
      "flag": "OFF",
-     "outline_acres": 1595.6,
-     "official_acres": 1059.0,
-     "times": 1.51,
+     "outline_acres": 1746.2,
+     "official_acres": 401.0,
+     "times": 4.35,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -2160,7 +2196,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 1
+     "pieces": 3
     },
     "T6": {
      "flag": "PASS"
@@ -2180,7 +2216,7 @@
    "problems": [],
    "status": "graded",
    "score": 2,
-   "why": "OFF: The outline is 1.5 times bigger than the official 1,059 acres (1,596 ac drawn) (+1 more flag)."
+   "why": "OFF: The outline is 4.3 times bigger than the official 401 acres (1,746 ac drawn) (+1 more flag)."
   },
   {
    "ref": "US-10396",
@@ -2240,7 +2276,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-87.320249408224 34.3762766594542]"
+     "note": "Ring Self-intersection[-87.320249408224 34.3762766594542]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2603,7 +2645,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-86.0968160383623 34.9427343760042]"
+     "note": "Ring Self-intersection[-86.0968160383623 34.9427343760042]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2693,7 +2741,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -2818,7 +2872,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "8 hole(s) under 100 m2"
+     "note": "8 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 8,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3672,53 +3732,76 @@
    "name": "Big Canoe Creek Nature Reserve",
    "key_name": "Big Canoe Creek Nature Reserve",
    "type": "Nature Reserve",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     33.794,
     -86.48
    ],
-   "outline_from": [],
-   "acres_drawn": null,
-   "records": [],
-   "record_ids": [],
+   "outline_from": [
+    "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0"
+   ],
+   "acres_drawn": 383.8,
+   "records": [
+    {
+     "id": "sgalb181",
+     "name": "Big Canoe Creek",
+     "type": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
+     "acres": 383.5,
+     "acres_from": "acres field",
+     "layer": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0",
+     "link": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0/query?objectIds=181&outFields=*&returnGeometry=false&f=html",
+     "name_field": "DCNR_Name"
+    }
+   ],
+   "record_ids": [
+    "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0#181"
+   ],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "NEAR",
+     "metres": 51.8
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "outline_acres": 383.8,
+     "official_acres": 383.5,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Big Canoe Creek Nature Reserve",
+     "record_name": "Big Canoe Creek"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": "preserve",
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "PASS",
+     "pieces": 1
     },
     "T6": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "CAN'T TELL",
-     "note": "no record id"
+     "flag": "PASS"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "Nothing could be tested."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 52 m outside the outline."
   },
   {
    "ref": "US-11032",
@@ -3835,76 +3918,53 @@
    "name": "The Portland Landing Conservation Reserve",
    "key_name": "The Portland Landing Conservation Reserve",
    "type": "Conservation Reserve",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     32.095,
     -87.22
    ],
-   "outline_from": [
-    "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0"
-   ],
-   "acres_drawn": 328.8,
-   "records": [
-    {
-     "id": "sgalb190",
-     "name": "Portland Landing - Gilmore Addition",
-     "type": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
-     "acres": 328.5,
-     "acres_from": "acres field",
-     "layer": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0",
-     "link": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0/query?objectIds=190&outFields=*&returnGeometry=false&f=html",
-     "name_field": "DCNR_Name"
-    }
-   ],
-   "record_ids": [
-    "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0#190"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "OUTSIDE",
-     "metres": 3962.7
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 328.8,
-     "official_acres": 328.5,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "The Portland Landing Conservation Reserve",
-     "record_name": "Portland Landing - Gilmore Addition"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "preserve",
-     "record_kind": null,
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OUTSIDE: POTA's pin is 4.0 km outside the outline."
+   "score": 0,
+   "why": "Nothing could be tested."
   },
   {
    "ref": "US-11272",
@@ -3977,7 +4037,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-87.257862766087 33.5527943178068]; 2 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-87.257862766087 33.5527943178068]; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -4080,80 +4146,53 @@
    "name": "USS Alabama Battleship Park",
    "key_name": "USS Alabama Battleship Park",
    "type": "Park",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     30.679,
     -88.025
    ],
-   "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
-   ],
-   "acres_drawn": 80.8,
-   "records": [
-    {
-     "id": "padus#166717",
-     "name": "Battleship Memorial Park",
-     "type": "State Park State Park",
-     "category": "Fee",
-     "acres": 81.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=166717&outFields=*&returnGeometry=false&f=html"
-    }
-   ],
-   "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#166717"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "OUTSIDE",
-     "metres": 546.2
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 80.8,
-     "official_acres": 81.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.333,
-     "pota_name": "USS Alabama Battleship Park",
-     "record_name": "Battleship Memorial Park"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": null,
-     "record_kind": "state park",
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "SLIVERS",
-     "pieces": 2,
-     "flags": [
-      "SLIVERS"
-     ],
-     "note": "1 piece(s) under 10 m wide"
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 7,
-   "why": "OUTSIDE: POTA's pin is 546 m outside the outline (+2 more flags)."
+   "score": 0,
+   "why": "Nothing could be tested."
   },
   {
    "ref": "US-12311",
@@ -5501,76 +5540,53 @@
    "name": "Fowl River Access Site BLM Recreation Management Area",
    "key_name": "Fowl River Access Site BLM Recreation Management Area",
    "type": "BLM Recreation Management Area",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     30.4094,
     -88.1423
    ],
-   "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
-   ],
-   "acres_drawn": 791.5,
-   "records": [
-    {
-     "id": "padus#166042",
-     "name": "Fowl River",
-     "type": "Mitigation Bank Mitigation Land or Bank",
-     "category": "Fee",
-     "acres": 792.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=166042&outFields=*&returnGeometry=false&f=html"
-    }
-   ],
-   "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#166042"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "OUTSIDE",
-     "metres": 4880.3
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 791.5,
-     "official_acres": 792.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
-     "pota_name": "Fowl River Access Site BLM Recreation Management Area",
-     "record_name": "Fowl River"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": null,
-     "record_kind": null,
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 6,
-   "why": "OUTSIDE: POTA's pin is 4.9 km outside the outline (+1 more flag)."
+   "score": 0,
+   "why": "Nothing could be tested."
   },
   {
    "ref": "US-13003",
@@ -5615,7 +5631,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.6,
      "pota_name": "TVA Little Bear Creek Dam Multiple Use Area",
      "record_name": "Little Bear Creek Reservoir Retained Land"
     },
@@ -5630,7 +5646,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "53 piece(s) under 10 m wide"
+     "note": "53 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.094,
+      "holes": 0,
+      "pieces": 53
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5652,7 +5674,7 @@
    ],
    "status": "graded",
    "score": 4,
-   "why": "MISMATCH: The record name 'Little Bear Creek Reservoir Retained Land' does not match POTA's name 'TVA Little Bear Creek Dam Multiple Use Area' (score 0.50) (+1 more flag)."
+   "why": "MISMATCH: The record name 'Little Bear Creek Reservoir Retained Land' does not match POTA's name 'TVA Little Bear Creek Dam Multiple Use Area' (score 0.60) (+1 more flag)."
   },
   {
    "ref": "US-13004",
@@ -5697,7 +5719,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.4,
+     "score": 0.5,
      "pota_name": "TVA Cedar Creek Dam Multiple Use Area",
      "record_name": "Cedar Creek Reservoir Retained Land"
     },
@@ -5712,7 +5734,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "22 piece(s) under 10 m wide"
+     "note": "22 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.012,
+      "holes": 0,
+      "pieces": 22
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5732,7 +5760,7 @@
    "problems": [],
    "status": "graded",
    "score": 4,
-   "why": "MISMATCH: The record name 'Cedar Creek Reservoir Retained Land' does not match POTA's name 'TVA Cedar Creek Dam Multiple Use Area' (score 0.40) (+1 more flag)."
+   "why": "MISMATCH: The record name 'Cedar Creek Reservoir Retained Land' does not match POTA's name 'TVA Cedar Creek Dam Multiple Use Area' (score 0.50) (+1 more flag)."
   },
   {
    "ref": "US-13005",
@@ -5777,7 +5805,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.333,
+     "score": 0.4,
      "pota_name": "TVA Big Bear Creek Dam Multiple Use Area",
      "record_name": "Bear Creek Reservoir Retained Land"
     },
@@ -5792,7 +5820,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "26 piece(s) under 10 m wide"
+     "note": "26 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.033,
+      "holes": 0,
+      "pieces": 26
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5812,7 +5846,7 @@
    "problems": [],
    "status": "graded",
    "score": 4,
-   "why": "MISMATCH: The record name 'Bear Creek Reservoir Retained Land' does not match POTA's name 'TVA Big Bear Creek Dam Multiple Use Area' (score 0.33) (+1 more flag)."
+   "why": "MISMATCH: The record name 'Bear Creek Reservoir Retained Land' does not match POTA's name 'TVA Big Bear Creek Dam Multiple Use Area' (score 0.40) (+1 more flag)."
   },
   {
    "ref": "US-13081",
@@ -6017,7 +6051,7 @@
     },
     "T9": {
      "last_edit": "2026-08-24",
-     "read": "2026-10-26",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6069,7 +6103,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.6,
      "pota_name": "TVA Upper Bear Creek Dam Resource Management Area",
      "record_name": "Upper Bear Creek Reservoir Retained Land"
     },
@@ -6084,7 +6118,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "20 piece(s) under 10 m wide"
+     "note": "20 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.009,
+      "holes": 0,
+      "pieces": 20
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6106,7 +6146,7 @@
    ],
    "status": "graded",
    "score": 4,
-   "why": "MISMATCH: The record name 'Upper Bear Creek Reservoir Retained Land' does not match POTA's name 'TVA Upper Bear Creek Dam Resource Management Area' (score 0.50) (+1 more flag)."
+   "why": "MISMATCH: The record name 'Upper Bear Creek Reservoir Retained Land' does not match POTA's name 'TVA Upper Bear Creek Dam Resource Management Area' (score 0.60) (+1 more flag)."
   },
   {
    "ref": "US-13317",
@@ -7081,7 +7121,9 @@
      "outline_acres": 1694.4,
      "official_acres": 1694.0,
      "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)",
+     "official_acres_low": 1125.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 1,125 ac, all providers added 1,694 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -7569,7 +7611,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-86.5050275055368 32.6051991621813]"
+     "note": "Ring Self-intersection[-86.5050275055368 32.6051991621813]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7739,7 +7787,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-85.4410973224649 31.9641811486075]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-85.4410973224649 31.9641811486075]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7971,7 +8025,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-85.6553505438054 33.7220636189744]"
+     "note": "Ring Self-intersection[-85.6553505438054 33.7220636189744]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8595,7 +8655,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-87.9249076068 34.6399561071194]; 4 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-87.9249076068 34.6399561071194]; 4 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 4,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8817,7 +8883,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-88.1867942931128 30.3400040155321]; 2 piece(s) under 10 m wide; 3 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-88.1867942931128 30.3400040155321]; 2 piece(s) under 10 m wide; 3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -8981,7 +9053,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-86.12082298303 33.1802246950298]"
+     "note": "Ring Self-intersection[-86.12082298303 33.1802246950298]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9118,7 +9196,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-85.9641497831044 34.9179347047456]; 7 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-85.9641497831044 34.9179347047456]; 7 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 7,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9306,7 +9390,9 @@
      "outline_acres": 20817.5,
      "official_acres": 20453.0,
      "times": 1.02,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 19783.6,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 19,784 ac, all providers added 20,453 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -9326,7 +9412,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-88.0920334759103 34.9561334759359]; 2 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-88.0920334759103 34.9561334759359]; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9576,7 +9668,9 @@
      "outline_acres": 14552.9,
      "official_acres": 14472.0,
      "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)",
+     "official_acres_low": 14289.9,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 14,290 ac, all providers added 14,472 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -9696,7 +9790,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-87.1081595666617 34.659584171767]; 5 piece(s) under 10 m wide; 2 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-87.1081595666617 34.659584171767]; 5 piece(s) under 10 m wide; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 2,
+      "pieces": 5
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9803,7 +9903,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-87.9544514702237 30.8368613523451]"
+     "note": "Ring Self-intersection[-87.9544514702237 30.8368613523451]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9963,7 +10069,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-87.4296503290523 30.641409814618]; 3 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-87.4296503290523 30.641409814618]; 3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9998,18 +10110,8 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 335.8,
+   "acres_drawn": 139.9,
    "records": [
-    {
-     "id": "padus#166069",
-     "name": "Pike County Pocosin Complex",
-     "type": "Nature Preserve State Conservation Area",
-     "category": "Fee",
-     "acres": 196.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=166069&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "padus#166070",
      "name": "Pike County Pocosin Complex",
@@ -10022,18 +10124,17 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#166069",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#166070"
    ],
    "tests": {
     "T1": {
      "flag": "OUTSIDE",
-     "metres": 3084.7
+     "metres": 4286.2
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 335.8,
-     "official_acres": 336.0,
+     "outline_acres": 139.9,
+     "official_acres": 140.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -10070,7 +10171,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "OUTSIDE: POTA's pin is 3.1 km outside the outline."
+   "why": "OUTSIDE: POTA's pin is 4.3 km outside the outline."
   },
   {
    "ref": "US-3702",
@@ -10154,7 +10255,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-87.3465716095095 31.7428406568341]; 2 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-87.3465716095095 31.7428406568341]; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -10181,76 +10288,53 @@
    "name": "Ruffner Mountain Preserve State Conservation Area",
    "key_name": "Ruffner Mountain Preserve State Conservation Area",
    "type": "State Conservation Area",
-   "grade": "approximate",
+   "grade": "pin",
    "pin": [
     33.5596,
     -86.7074
    ],
-   "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
-   ],
-   "acres_drawn": 225.5,
-   "records": [
-    {
-     "id": "padus#166064",
-     "name": "Ruffner Mountain Nature Center",
-     "type": "Outdoor Education and Recreation Research or Educational Area",
-     "category": "Fee",
-     "acres": 226.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=166064&outFields=*&returnGeometry=false&f=html"
-    }
-   ],
-   "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#166064"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "OUTSIDE",
-     "metres": 801.7
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 225.5,
-     "official_acres": 226.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Ruffner Mountain Preserve State Conservation Area",
-     "record_name": "Ruffner Mountain Nature Center"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": null,
-     "record_kind": null,
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OUTSIDE: POTA's pin is 802 m outside the outline."
+   "score": 0,
+   "why": "Nothing could be tested."
   },
   {
    "ref": "US-3704",
@@ -10310,7 +10394,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-87.9124935020307 34.0757162300429]"
+     "note": "Ring Self-intersection[-87.9124935020307 34.0757162300429]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -10478,7 +10568,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "4 hole(s) under 100 m2"
+     "note": "4 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 4,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -10723,7 +10819,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11016,7 +11118,7 @@
      "outline_acres": 43154.3,
      "official_acres": 42181.2,
      "times": 1.02,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)"
     },
     "T3": {
      "flag": "PASS",
@@ -11036,7 +11138,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-87.9237153560686 31.1613540339892]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-87.9237153560686 31.1613540339892]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11245,7 +11353,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "2 piece(s) under 10 m wide; 2 hole(s) under 100 m2"
+     "note": "2 piece(s) under 10 m wide; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.008,
+      "holes": 2,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11404,7 +11518,13 @@
       "SELF-INTERSECTION",
       "SLIVERS"
      ],
-     "note": "Ring Self-intersection[-86.9173522983952 33.2091861806065]; 1 piece(s) under 10 m wide"
+     "note": "Ring Self-intersection[-86.9173522983952 33.2091861806065]; 1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11495,7 +11615,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11522,7 +11648,7 @@
    "name": "Trail of Tears National Historic Trail",
    "key_name": "Trail of Tears National Historic Trail",
    "type": "National Historic Trail",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     36.8532,
     -87.4701
@@ -11568,11 +11694,8 @@
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "detail_m": 0.09,
-     "declared_m": null,
-     "coordinate_step_m": 0.09,
-     "median_spacing_m": 0.0,
-     "flag": "PASS"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -11580,13 +11703,15 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: : down for this run (failed 3 times)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 267 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 267 m outside the outline."
   },
   {
    "ref": "US-4449",
@@ -11646,7 +11771,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-86.4974740064281 31.1607583564367]"
+     "note": "Ring Self-intersection[-86.4974740064281 31.1607583564367]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11728,7 +11859,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-85.5155260526507 33.8556293943079]; 1 hole(s) under 100 m2; 90 pieces spread over 253 km"
+     "note": "Ring Self-intersection[-85.5155260526507 33.8556293943079]; 1 hole(s) under 100 m2; 90 pieces spread over 253 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11886,7 +12023,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-87.2151718339215 34.3354091580455]; 5 hole(s) under 100 m2; 108 pieces spread over 70 km"
+     "note": "Ring Self-intersection[-87.2151718339215 34.3354091580455]; 5 hole(s) under 100 m2; 108 pieces spread over 70 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 5,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11913,7 +12056,7 @@
    "name": "Natchez Trace Trail National Scenic Trail",
    "key_name": "Natchez Trace Trail National Scenic Trail",
    "type": "National Scenic Trail",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     34.3305,
     -88.71
@@ -11959,11 +12102,8 @@
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "detail_m": 0.09,
-     "declared_m": null,
-     "coordinate_step_m": 0.09,
-     "median_spacing_m": 0.0,
-     "flag": "PASS"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -11971,13 +12111,15 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: : down for this run (failed 3 times)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 47 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 47 m outside the outline."
   },
   {
    "ref": "US-4580",
@@ -12719,7 +12861,13 @@
       "SELF-INTERSECTION",
       "SLIVERS"
      ],
-     "note": "Ring Self-intersection[-87.7364541707925 34.7480619081001]; 1 piece(s) under 10 m wide"
+     "note": "Ring Self-intersection[-87.7364541707925 34.7480619081001]; 1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -12811,7 +12959,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13002,7 +13156,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "3 piece(s) under 10 m wide"
+     "note": "3 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 0,
+      "pieces": 3
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13345,7 +13505,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-86.5313961964117 31.1458711821381]"
+     "note": "Ring Self-intersection[-86.5313961964117 31.1458711821381]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13510,18 +13676,8 @@
     "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0",
     "https://conservationgis.alabama.gov/adcnrweb/rest/services/PublicFishingLakes/MapServer/1"
    ],
-   "acres_drawn": 1550.5,
+   "acres_drawn": 692.3,
    "records": [
-    {
-     "id": "sgalb144",
-     "name": "Dallas County WMA Phase II",
-     "type": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
-     "acres": 857.6,
-     "acres_from": "acres field",
-     "layer": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0",
-     "link": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0/query?objectIds=144&outFields=*&returnGeometry=false&f=html",
-     "name_field": "DCNR_Name"
-    },
     {
      "id": "sgalb131",
      "name": "Dallas County WMA",
@@ -13552,7 +13708,6 @@
     }
    ],
    "record_ids": [
-    "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0#144",
     "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0#131",
     "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0#147",
     "https://conservationgis.alabama.gov/adcnrweb/rest/services/PublicFishingLakes/MapServer/1#11"
@@ -13564,16 +13719,16 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 1550.5,
-     "official_acres": 1457.2,
-     "times": 1.06,
+     "outline_acres": 692.3,
+     "official_acres": 599.6,
+     "times": 1.15,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Dallas County Wildlife Management Area",
-     "record_name": "Dallas County WMA Phase II"
+     "record_name": "Dallas County WMA Addition"
     },
     "T4": {
      "park_kind": "wma",

@@ -1,7 +1,8 @@
 {
  "area": "US-AK",
- "built": "2026-11-02",
+ "built": "2026-11-08",
  "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
  "parks": [
   {
    "ref": "US-0002",
@@ -235,7 +236,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-149.174134940468 63.3909736604682]"
+     "note": "Ring Self-intersection[-149.174134940468 63.3909736604682]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -326,7 +333,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -511,7 +524,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "433 hole(s) under 100 m2; 233 pieces spread over 245 km"
+     "note": "433 hole(s) under 100 m2; 233 pieces spread over 245 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 433,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -593,7 +612,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -673,7 +698,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-159.719458904265 67.0947580048376]"
+     "note": "Ring Self-intersection[-159.719458904265 67.0947580048376]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -765,7 +796,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "4 piece(s) under 10 m wide; 29 hole(s) under 100 m2"
+     "note": "4 piece(s) under 10 m wide; 29 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 29,
+      "pieces": 4
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -870,7 +907,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-142.874608169345 61.4918003612998]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-142.874608169345 61.4918003612998]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -940,10 +983,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 19637595.5,
-     "official_acres": 39274194.0,
-     "times": 2.0,
+     "official_acres": 19637182.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -965,7 +1008,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-143.242663139845 70.14518737928]; 2 piece(s) under 10 m wide; 44 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-143.242663139845 70.14518737928]; 2 piece(s) under 10 m wide; 44 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 44,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -984,8 +1033,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "OFF: The outline is 2.0 times smaller than the official 39,274,194 acres (19,637,596 ac drawn) (+3 more flags)."
+   "score": 3,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-143.242663139845 70.14518737928]; 2 piece(s) under 10 m wide; 44 hole(s) under 100 m2 (+2 more flags)."
   },
   {
    "ref": "US-0143",
@@ -1000,7 +1049,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 4423778.3,
+   "acres_drawn": 4556304.9,
    "records": [
     {
      "id": "padus#4505",
@@ -1021,11 +1070,44 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3573&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#3572",
+     "name": "Alaska Maritime National Wildlife Refuge",
+     "type": "NWR National Wildlife Refuge",
+     "category": "Fee",
+     "acres": 478341.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3572&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#3574",
+     "name": "Alaska Maritime National Wildlife Refuge",
+     "type": "NWR National Wildlife Refuge",
+     "category": "Fee",
+     "acres": 464348.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3574&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#3575",
+     "name": "Alaska Maritime National Wildlife Refuge",
+     "type": "NWR National Wildlife Refuge",
+     "category": "Fee",
+     "acres": 391378.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3575&outFields=*&returnGeometry=false&f=html"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#4505",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3573"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3573",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3572",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3574",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3575"
    ],
    "tests": {
     "T1": {
@@ -1033,11 +1115,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 4423778.3,
-     "official_acres": 7643968.0,
-     "times": 1.73,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "PASS",
+     "outline_acres": 4556304.9,
+     "official_acres": 8978035.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 4555091.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 4,555,091 ac, all providers added 8,978,035 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -1052,14 +1136,20 @@
     },
     "T5": {
      "flag": "SELF-INTERSECTION",
-     "pieces": 22913,
+     "pieces": 22892,
      "flags": [
       "SELF-INTERSECTION",
       "SLIVERS",
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[179.536623255086 51.9929122077505]; 4989 piece(s) under 10 m wide; 10538 hole(s) under 100 m2; 22913 pieces spread over 3781 km"
+     "note": "Ring Self-intersection[179.536623255086 51.9929122077505]; 4961 piece(s) under 10 m wide; 11116 hole(s) under 100 m2; 22892 pieces spread over 3788 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 10927,
+      "pieces": 4961
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -1086,8 +1176,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 8,
-   "why": "SPILL: The outline covers 70% of US-7862 Aleutian Islands WW2 National Historic Site, with no 2-fer row (maybe the wrong record) (+5 more flags)."
+   "score": 7,
+   "why": "SPILL: The outline covers 70% of US-7862 Aleutian Islands WW2 National Historic Site, with no 2-fer row (maybe the wrong record) (+4 more flags)."
   },
   {
    "ref": "US-0144",
@@ -1102,18 +1192,8 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 3944900.9,
+   "acres_drawn": 3944021.5,
    "records": [
-    {
-     "id": "padus#4507",
-     "name": "Alaska Peninsula National Wildlife Refuge",
-     "type": "NWR National Wildlife Refuge",
-     "category": "Fee",
-     "acres": 3408728.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=4507&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "padus#3577",
      "name": "Alaska Peninsula National Wildlife Refuge",
@@ -1136,7 +1216,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#4507",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3577",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3576"
    ],
@@ -1146,10 +1225,10 @@
      "metres": 5564.4
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 3944900.9,
-     "official_acres": 7352751.0,
-     "times": 1.86,
+     "flag": "PASS",
+     "outline_acres": 3944021.5,
+     "official_acres": 3944023.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1165,14 +1244,20 @@
     },
     "T5": {
      "flag": "SELF-INTERSECTION",
-     "pieces": 155,
+     "pieces": 145,
      "flags": [
       "SELF-INTERSECTION",
       "SLIVERS",
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-157.091766115559 57.5391054805915]; 81 piece(s) under 10 m wide; 195 hole(s) under 100 m2; 155 pieces spread over 573 km"
+     "note": "Ring Self-intersection[-156.942992538874 56.9291320818179]; 71 piece(s) under 10 m wide; 72 hole(s) under 100 m2; 145 pieces spread over 573 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 72,
+      "pieces": 71
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1191,8 +1276,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 8,
-   "why": "OUTSIDE: POTA's pin is 5.6 km outside the outline (+5 more flags)."
+   "score": 7,
+   "why": "OUTSIDE: POTA's pin is 5.6 km outside the outline (+4 more flags)."
   },
   {
    "ref": "US-0145",
@@ -1240,10 +1325,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1166045.4,
-     "official_acres": 2331852.0,
-     "times": 2.0,
+     "official_acres": 1165926.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1265,7 +1350,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "9 piece(s) under 10 m wide; 4 hole(s) under 100 m2; 108 pieces spread over 165 km"
+     "note": "9 piece(s) under 10 m wide; 4 hole(s) under 100 m2; 108 pieces spread over 165 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 4,
+      "pieces": 9
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1287,8 +1378,8 @@
     "record 4551: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 4,
-   "why": "OFF: The outline is 2.0 times smaller than the official 2,331,852 acres (1,166,045 ac drawn) (+3 more flags)."
+   "score": 3,
+   "why": "SLIVERS: The shape has problems: 9 piece(s) under 10 m wide; 4 hole(s) under 100 m2; 108 pieces spread over 165 km (+2 more flags)."
   },
   {
    "ref": "US-0146",
@@ -1336,10 +1427,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 4050308.7,
-     "official_acres": 8099926.0,
-     "times": 2.0,
+     "official_acres": 4050055.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1361,7 +1452,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "1 piece(s) under 10 m wide; 3 hole(s) under 100 m2; 125 pieces spread over 298 km"
+     "note": "1 piece(s) under 10 m wide; 3 hole(s) under 100 m2; 125 pieces spread over 298 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1383,8 +1480,8 @@
     "record 4906: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 4,
-   "why": "OFF: The outline is 2.0 times smaller than the official 8,099,926 acres (4,050,309 ac drawn) (+3 more flags)."
+   "score": 3,
+   "why": "SLIVERS: The shape has problems: 1 piece(s) under 10 m wide; 3 hole(s) under 100 m2; 125 pieces spread over 298 km (+2 more flags)."
   },
   {
    "ref": "US-0147",
@@ -1443,11 +1540,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 492315.8,
      "official_acres": 806825.0,
-     "times": 1.64,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 406606.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 406,606 ac, all providers added 806,825 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -1467,7 +1566,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-162.295332339875 55.4532272956741]; 132 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-162.295332339875 55.4532272956741]; 132 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 132,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1489,8 +1594,8 @@
     "record 165775: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 3,
-   "why": "OFF: The outline is 1.6 times smaller than the official 806,825 acres (492,316 ac drawn) (+2 more flags)."
+   "score": 2,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-162.295332339875 55.4532272956741]; 132 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-0148",
@@ -1538,10 +1643,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1316394.6,
-     "official_acres": 2632516.0,
-     "times": 2.0,
+     "official_acres": 1316258.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1562,7 +1667,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-151.780485295042 66.7685284595636]; 3 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-151.780485295042 66.7685284595636]; 3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1581,8 +1692,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OFF: The outline is 2.0 times smaller than the official 2,632,516 acres (1,316,395 ac drawn) (+2 more flags)."
+   "score": 2,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-151.780485295042 66.7685284595636]; 3 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-0149",
@@ -1630,10 +1741,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1939839.8,
-     "official_acres": 3878196.0,
-     "times": 2.0,
+     "official_acres": 1939526.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1654,7 +1765,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-149.87624121353 60.321652202902]; 19 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-149.87624121353 60.321652202902]; 19 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 19,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -1681,8 +1798,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 6,
-   "why": "SPILL: The outline covers 53% of US-13462 Sportsman's Angler Access State Recreation Site, with no 2-fer row (maybe the wrong record) (+3 more flags)."
+   "score": 5,
+   "why": "SPILL: The outline covers 53% of US-13462 Sportsman's Angler Access State Recreation Site, with no 2-fer row (maybe the wrong record) (+2 more flags)."
   },
   {
    "ref": "US-0150",
@@ -1697,18 +1814,8 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 1637748.8,
+   "acres_drawn": 1637279.4,
    "records": [
-    {
-     "id": "padus#4005",
-     "name": "Kodiak National Wildlife Refuge",
-     "type": "NWR National Wildlife Refuge",
-     "category": "Fee",
-     "acres": 1637304.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=4005&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "padus#4957",
      "name": "Kodiak National Wildlife Refuge",
@@ -1721,19 +1828,18 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#4005",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#4957"
    ],
    "tests": {
     "T1": {
      "flag": "FAR",
-     "metres": 24507.5
+     "metres": 24508.7
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 1637748.8,
-     "official_acres": 3274583.0,
-     "times": 2.0,
+     "flag": "PASS",
+     "outline_acres": 1637279.4,
+     "official_acres": 1637279.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1749,14 +1855,20 @@
     },
     "T5": {
      "flag": "SELF-INTERSECTION",
-     "pieces": 60,
+     "pieces": 63,
      "flags": [
       "SELF-INTERSECTION",
       "SLIVERS",
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-153.000025008461 57.2931389510831]; 5 piece(s) under 10 m wide; 64 hole(s) under 100 m2; 60 pieces spread over 236 km"
+     "note": "Ring Self-intersection[-153.491188946693 57.1000312792777]; 4 piece(s) under 10 m wide; 56 hole(s) under 100 m2; 63 pieces spread over 236 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 56,
+      "pieces": 4
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1775,8 +1887,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 10,
-   "why": "FAR: POTA's pin is 24.5 km outside the outline (+5 more flags)."
+   "score": 9,
+   "why": "FAR: POTA's pin is 24.5 km outside the outline (+4 more flags)."
   },
   {
    "ref": "US-0151",
@@ -1824,10 +1936,10 @@
      "metres": 199.3
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 3988483.2,
-     "official_acres": 7976344.0,
-     "times": 2.0,
+     "official_acres": 3988185.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1849,7 +1961,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-156.056086513735 65.6104982413071]; 3 hole(s) under 100 m2; 86 pieces spread over 279 km"
+     "note": "Ring Self-intersection[-156.056086513735 65.6104982413071]; 3 hole(s) under 100 m2; 86 pieces spread over 279 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1868,8 +1986,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 5,
-   "why": "NEAR: POTA's pin is 199 m outside the outline (+4 more flags)."
+   "score": 4,
+   "why": "NEAR: POTA's pin is 199 m outside the outline (+3 more flags)."
   },
   {
    "ref": "US-0152",
@@ -1917,10 +2035,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1900551.5,
-     "official_acres": 3801019.0,
-     "times": 2.0,
+     "official_acres": 1900515.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1959,8 +2077,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 3,801,019 acres (1,900,552 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "SCATTERED: The shape has problems: 59 pieces spread over 186 km."
   },
   {
    "ref": "US-0153",
@@ -2008,10 +2126,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 2719538.6,
-     "official_acres": 5437599.0,
-     "times": 2.0,
+     "official_acres": 2718908.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -2034,7 +2152,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-156.748779766736 66.3609866293046]; 1 piece(s) under 10 m wide; 9 hole(s) under 100 m2; 295 pieces spread over 267 km"
+     "note": "Ring Self-intersection[-156.748779766736 66.3609866293046]; 1 piece(s) under 10 m wide; 9 hole(s) under 100 m2; 295 pieces spread over 267 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 9,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2053,8 +2177,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 5,
-   "why": "OFF: The outline is 2.0 times smaller than the official 5,437,599 acres (2,719,539 ac drawn) (+4 more flags)."
+   "score": 4,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-156.748779766736 66.3609866293046]; 1 piece(s) under 10 m wide; 9 hole(s) under 100 m2; 295 pieces spread over 267 km (+3 more flags)."
   },
   {
    "ref": "US-0154",
@@ -2102,10 +2226,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 741208.4,
-     "official_acres": 1479749.0,
-     "times": 2.0,
+     "official_acres": 740630.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -2128,7 +2252,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-142.110141054974 63.1453884984394]; 11 piece(s) under 10 m wide; 4 hole(s) under 100 m2; 108 pieces spread over 143 km"
+     "note": "Ring Self-intersection[-142.110141054974 63.1453884984394]; 11 piece(s) under 10 m wide; 4 hole(s) under 100 m2; 108 pieces spread over 143 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 4,
+      "pieces": 11
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2147,8 +2277,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 5,
-   "why": "OFF: The outline is 2.0 times smaller than the official 1,479,749 acres (741,208 ac drawn) (+4 more flags)."
+   "score": 4,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-142.110141054974 63.1453884984394]; 11 piece(s) under 10 m wide; 4 hole(s) under 100 m2; 108 pieces spread over 143 km (+3 more flags)."
   },
   {
    "ref": "US-0155",
@@ -2196,11 +2326,13 @@
      "metres": 64.9
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 4306555.6,
      "official_acres": 6728908.0,
-     "times": 1.56,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 4306201.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 4,306,201 ac, all providers added 6,728,908 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -2222,7 +2354,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-158.777569365849 59.0861023133133]; 12 piece(s) under 10 m wide; 141 hole(s) under 100 m2; 72 pieces spread over 287 km"
+     "note": "Ring Self-intersection[-158.777569365849 59.0861023133133]; 12 piece(s) under 10 m wide; 141 hole(s) under 100 m2; 72 pieces spread over 287 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 141,
+      "pieces": 12
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2241,8 +2379,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 6,
-   "why": "NEAR: POTA's pin is 65 m outside the outline (+5 more flags)."
+   "score": 5,
+   "why": "NEAR: POTA's pin is 65 m outside the outline (+4 more flags)."
   },
   {
    "ref": "US-0156",
@@ -2301,11 +2439,13 @@
      "metres": 540.9
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 20921220.5,
      "official_acres": 41828838.0,
-     "times": 2.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 20916180.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 20,916,180 ac, all providers added 41,828,838 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -2327,7 +2467,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-159.269482290619 61.3658149447718]; 47 piece(s) under 10 m wide; 895 hole(s) under 100 m2; 2386 pieces spread over 639 km"
+     "note": "Ring Self-intersection[-159.269482290619 61.3658149447718]; 47 piece(s) under 10 m wide; 895 hole(s) under 100 m2; 2386 pieces spread over 639 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 895,
+      "pieces": 47
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2346,8 +2492,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 8,
-   "why": "OUTSIDE: POTA's pin is 541 m outside the outline (+5 more flags)."
+   "score": 7,
+   "why": "OUTSIDE: POTA's pin is 541 m outside the outline (+4 more flags)."
   },
   {
    "ref": "US-0157",
@@ -2395,10 +2541,10 @@
      "metres": 291.9
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 9098793.4,
-     "official_acres": 18194251.0,
-     "times": 2.0,
+     "official_acres": 9097653.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -2421,7 +2567,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-143.288185421378 66.768703509113]; 3 piece(s) under 10 m wide; 13 hole(s) under 100 m2; 523 pieces spread over 409 km"
+     "note": "Ring Self-intersection[-143.288185421378 66.768703509113]; 3 piece(s) under 10 m wide; 13 hole(s) under 100 m2; 523 pieces spread over 409 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 13,
+      "pieces": 3
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2440,86 +2592,61 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 6,
-   "why": "NEAR: POTA's pin is 292 m outside the outline (+5 more flags)."
+   "score": 5,
+   "why": "NEAR: POTA's pin is 292 m outside the outline (+4 more flags)."
   },
   {
    "ref": "US-0643",
    "name": "Noatak National Preserve",
    "key_name": "Noatak National Preserve",
    "type": "National Preserve",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     67.4281,
     -160.677
    ],
-   "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
-   ],
-   "acres_drawn": 6542342.0,
-   "records": [
-    {
-     "id": "padus#3310",
-     "name": "Noatak National Preserve",
-     "type": "National Preserve Conservation Area",
-     "category": "Fee",
-     "acres": 6542343.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3310&outFields=*&returnGeometry=false&f=html"
-    }
-   ],
-   "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3310"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "FAR",
-     "metres": 16492.9
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 6542342.0,
-     "official_acres": 6542343.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Noatak National Preserve",
-     "record_name": "Noatak National Preserve"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": null,
-     "record_kind": null,
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 3
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
-   "problems": [
-    "record 3310: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
-   ],
+   "problems": [],
    "status": "graded",
-   "score": 5,
-   "why": "FAR: POTA's pin is 16.5 km outside the outline."
+   "score": 0,
+   "why": "Nothing could be tested."
   },
   {
    "ref": "US-0644",
@@ -2581,7 +2708,13 @@
       "SLIVERS",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-165.293516755036 66.135324780577]; 32 piece(s) under 10 m wide; 297 pieces spread over 268 km"
+     "note": "Ring Self-intersection[-165.293516755036 66.135324780577]; 32 piece(s) under 10 m wide; 297 pieces spread over 268 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 32
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2614,9 +2747,10 @@
     -135.2
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1"
    ],
-   "acres_drawn": 3375.4,
+   "acres_drawn": 73000.7,
    "records": [
     {
      "id": "padus#3218",
@@ -2627,21 +2761,30 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3218&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgaki395561",
+     "name": "Klondike Goldrush National Historical Park",
+     "type": "National Register of Historic Places Polygons (land, state GIS table)",
+     "layer": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+     "link": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?objectIds=395561&outFields=*&returnGeometry=false&f=html",
+     "name_field": "RESNAME"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3218"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3218",
+    "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1#395561"
    ],
    "tests": {
     "T1": {
-     "flag": "OUTSIDE",
-     "metres": 838.2
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 3375.4,
+     "flag": "WAY OFF",
+     "outline_acres": 73000.7,
      "official_acres": 3375.0,
-     "times": 1.0,
+     "times": 21.63,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -2656,12 +2799,8 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "SLIVERS",
-     "pieces": 19,
-     "flags": [
-      "SLIVERS"
-     ],
-     "note": "2 piece(s) under 10 m wide"
+     "flag": "PASS",
+     "pieces": 1
     },
     "T6": {
      "flag": "PASS"
@@ -2680,8 +2819,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "OUTSIDE: POTA's pin is 838 m outside the outline (+1 more flag)."
+   "score": 3,
+   "why": "WAY OFF: The outline is 21.6 times bigger than the official 3,375 acres (73,001 ac drawn)."
   },
   {
    "ref": "US-0758",
@@ -2694,9 +2833,10 @@
     -135.312
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1"
    ],
-   "acres_drawn": 58.2,
+   "acres_drawn": 148.5,
    "records": [
     {
      "id": "padus#3246",
@@ -2707,21 +2847,30 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3246&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgaki395557",
+     "name": "Sitka National Historical Park",
+     "type": "National Register of Historic Places Polygons (land, state GIS table)",
+     "layer": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+     "link": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?objectIds=395557&outFields=*&returnGeometry=false&f=html",
+     "name_field": "RESNAME"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3246"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3246",
+    "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1#395557"
    ],
    "tests": {
     "T1": {
-     "flag": "NEAR",
-     "metres": 1.6
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 58.2,
+     "flag": "OFF",
+     "outline_acres": 148.5,
      "official_acres": 58.0,
-     "times": 1.0,
+     "times": 2.56,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -2736,12 +2885,8 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "SLIVERS",
-     "pieces": 4,
-     "flags": [
-      "SLIVERS"
-     ],
-     "note": "1 piece(s) under 10 m wide"
+     "flag": "PASS",
+     "pieces": 3
     },
     "T6": {
      "flag": "PASS"
@@ -2760,8 +2905,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 2 m outside the outline (+1 more flag)."
+   "score": 1,
+   "why": "OFF: The outline is 2.6 times bigger than the official 58 acres (148 ac drawn)."
   },
   {
    "ref": "US-0877",
@@ -2773,34 +2918,52 @@
     66.5452,
     -152.678
    ],
-   "outline_from": [],
+   "outline_from": [
+    "trails/US-0877.json"
+   ],
    "acres_drawn": null,
-   "records": [],
+   "records": [
+    {
+     "id": "trl:US-0877",
+     "name": "Alatna National Wild and Scenic River",
+     "type": "trail",
+     "layer": "trails/US-0877.json"
+    }
+   ],
    "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "FAR",
+     "metres": 90827.8
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Alatna National Wild and Scenic River",
+     "record_name": "Alatna National Wild and Scenic River"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": "river",
+     "record_kind": "trail",
+     "flag": "PASS"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T6": {
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "detail_m": 0.04,
+     "declared_m": null,
+     "coordinate_step_m": 0.04,
+     "median_spacing_m": 0.0,
+     "flag": "PASS"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -2813,8 +2976,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "Nothing could be tested."
+   "score": 5,
+   "why": "FAR: POTA's pin is 90.8 km outside the outline."
   },
   {
    "ref": "US-0878",
@@ -3039,34 +3202,52 @@
     59.7336,
     -157.22
    ],
-   "outline_from": [],
+   "outline_from": [
+    "trails/US-0887.json"
+   ],
    "acres_drawn": null,
-   "records": [],
+   "records": [
+    {
+     "id": "trl:US-0887",
+     "name": "Mulchatna National Wild and Scenic River",
+     "type": "trail",
+     "layer": "trails/US-0887.json"
+    }
+   ],
    "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "FAR",
+     "metres": 195931.5
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Mulchatna National Wild and Scenic River",
+     "record_name": "Mulchatna National Wild and Scenic River"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": "river",
+     "record_kind": "trail",
+     "flag": "PASS"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T6": {
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "detail_m": 0.05,
+     "declared_m": null,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 0.0,
+     "flag": "PASS"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -3079,8 +3260,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "Nothing could be tested."
+   "score": 5,
+   "why": "FAR: POTA's pin is 195.9 km outside the outline."
   },
   {
    "ref": "US-0889",
@@ -3163,34 +3344,52 @@
     66.9205,
     -151.527
    ],
-   "outline_from": [],
+   "outline_from": [
+    "trails/US-0892.json"
+   ],
    "acres_drawn": null,
-   "records": [],
+   "records": [
+    {
+     "id": "trl:US-0892",
+     "name": "Tinayguk National Wild and Scenic River",
+     "type": "trail",
+     "layer": "trails/US-0892.json"
+    }
+   ],
    "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "FAR",
+     "metres": 75130.2
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Tinayguk National Wild and Scenic River",
+     "record_name": "Tinayguk National Wild and Scenic River"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": "river",
+     "record_kind": "trail",
+     "flag": "PASS"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T6": {
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "detail_m": 0.04,
+     "declared_m": null,
+     "coordinate_step_m": 0.04,
+     "median_spacing_m": 0.0,
+     "flag": "PASS"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -3203,8 +3402,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "Nothing could be tested."
+   "score": 5,
+   "why": "FAR: POTA's pin is 75.1 km outside the outline."
   },
   {
    "ref": "US-0893",
@@ -3425,7 +3624,13 @@
       "SLIVERS",
       "SCATTERED"
      ],
-     "note": "35 piece(s) under 10 m wide; 74 pieces spread over 110 km"
+     "note": "35 piece(s) under 10 m wide; 74 pieces spread over 110 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 35
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3439,7 +3644,7 @@
     },
     "T9": {
      "last_edit": "2026-10-16",
-     "read": "2026-10-27",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -3459,22 +3664,11 @@
     -145.987
    ],
    "outline_from": [
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
    "acres_drawn": 1016250.2,
    "records": [
-    {
-     "id": "rst11010",
-     "name": "White Mountains SRMA",
-     "type": "Bureau of Land Management",
-     "acres": 1016250.6,
-     "acres_from": "acres field",
-     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-     "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?objectIds=11010&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
-    },
     {
      "id": "sgakg11010",
      "name": "White Mountains SRMA",
@@ -3497,7 +3691,6 @@
     }
    ],
    "record_ids": [
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#11010",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#11010",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#2165"
    ],
@@ -3514,8 +3707,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "White Mountains National Recreation Area BLM Recreation Management Area",
      "record_name": "White Mountains SRMA",
      "worst_record": {
@@ -3562,8 +3755,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 11,
-   "why": "FAR: POTA's pin is 23.2 km outside the outline (+2 more flags)."
+   "score": 8,
+   "why": "FAR: POTA's pin is 23.2 km outside the outline (+1 more flag)."
   },
   {
    "ref": "US-10464",
@@ -3743,8 +3936,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.25,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Campbell Tract Special Recreation Management Area BLM Special Recreation Management Area",
      "record_name": "Campbell Tract SRMA"
     },
@@ -3774,8 +3967,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Campbell Tract SRMA' does not match POTA's name 'Campbell Tract Special Recreation Management Area BLM Special Recreation Management Area' (score 0.25)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-11798",
@@ -4986,8 +5179,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Chena Pump Wayside State Recreation Site",
      "record_name": "Chena Pump State Recreation Site"
     },
@@ -5017,8 +5210,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Chena Pump State Recreation Site' does not match POTA's name 'Chena Pump Wayside State Recreation Site' (score 0.67)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-11846",
@@ -5189,34 +5382,52 @@
     66.2377,
     -147.532
    ],
-   "outline_from": [],
+   "outline_from": [
+    "trails/US-11852.json"
+   ],
    "acres_drawn": null,
-   "records": [],
+   "records": [
+    {
+     "id": "trl:US-11852",
+     "name": "Beaver Creek BLM Wild and Scenic River",
+     "type": "trail",
+     "layer": "trails/US-11852.json"
+    }
+   ],
    "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "FAR",
+     "metres": 55896.7
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Beaver Creek BLM Wild and Scenic River",
+     "record_name": "Beaver Creek BLM Wild and Scenic River"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": "river",
+     "record_kind": "trail",
+     "flag": "PASS"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T6": {
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "detail_m": 0.05,
+     "declared_m": null,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 0.0,
+     "flag": "PASS"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -5229,8 +5440,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "Nothing could be tested."
+   "score": 5,
+   "why": "FAR: POTA's pin is 55.9 km outside the outline."
   },
   {
    "ref": "US-11853",
@@ -5290,7 +5501,7 @@
    "name": "Pinnell Mountain National Recreation Trail",
    "key_name": "Pinnell Mountain National Recreation Trail",
    "type": "National Recreation Trail",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     65.4838,
     -145.41
@@ -5336,11 +5547,8 @@
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "detail_m": 0.46,
-     "declared_m": null,
-     "coordinate_step_m": 0.46,
-     "median_spacing_m": 0.0,
-     "flag": "PASS"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -5348,13 +5556,15 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: : InvalidSchema"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 248 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 248 m outside the outline."
   },
   {
    "ref": "US-11855",
@@ -5367,9 +5577,10 @@
     -144.656
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0"
    ],
-   "acres_drawn": 1144718.1,
+   "acres_drawn": 1216020.4,
    "records": [
     {
      "id": "padus#2162",
@@ -5380,10 +5591,28 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2162&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "nca21314",
+     "name": "Steese National Conservation Area",
+     "type": "Bureau of Land Management",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
+     "link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0/query?objectIds=21314&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NCA_NAME"
+    },
+    {
+     "id": "nca21315",
+     "name": "Steese National Conservation Area",
+     "type": "Bureau of Land Management",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
+     "link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0/query?objectIds=21315&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NCA_NAME"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#2162"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#2162",
+    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0#21314",
+    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0#21315"
    ],
    "tests": {
     "T1": {
@@ -5392,16 +5621,20 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 1144718.1,
+     "outline_acres": 1216020.4,
      "official_acres": 1142779.0,
-     "times": 1.0,
+     "times": 1.06,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.0,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Steese National Conservation Area",
-     "record_name": "Eastern Interior Field Office"
+     "record_name": "Steese National Conservation Area",
+     "worst_record": {
+      "name": "Eastern Interior Field Office",
+      "score": 0.0
+     }
     },
     "T4": {
      "park_kind": null,
@@ -5409,86 +5642,8 @@
      "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "SLIVERS",
-     "pieces": 23,
-     "flags": [
-      "SLIVERS",
-      "TINY HOLES"
-     ],
-     "note": "2 piece(s) under 10 m wide; 1 hole(s) under 100 m2"
-    },
-    "T6": {
-     "flag": "PASS"
-    },
-    "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
-    },
-    "T8": {
-     "flag": "PASS"
-    },
-    "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
-    }
-   },
-   "problems": [
-    "record nca417 is no longer in https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0"
-   ],
-   "status": "graded",
-   "score": 5,
-   "why": "MISMATCH: The record name 'Eastern Interior Field Office' does not match POTA's name 'Steese National Conservation Area' (score 0.00) (+2 more flags)."
-  },
-  {
-   "ref": "US-11862",
-   "name": "Juneau Channel Islands State Park",
-   "key_name": "Juneau Channel Islands State Park",
-   "type": "State Park",
-   "grade": "official",
-   "pin": [
-    58.478,
-    -134.925
-   ],
-   "outline_from": [
-    "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0"
-   ],
-   "acres_drawn": 5256.8,
-   "records": [
-    {
-     "id": "sgakb1873",
-     "name": "JUNEAU CHANNEL ISLAND SMP",
-     "type": "Alaska Department of Natural Resources (preserve, state GIS table)",
-     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
-     "link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0/query?objectIds=1873&outFields=*&returnGeometry=false&f=html",
-     "name_field": "LDA_NAME_1"
-    }
-   ],
-   "record_ids": [
-    "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0#1873"
-   ],
-   "tests": {
-    "T1": {
-     "flag": "OUTSIDE",
-     "metres": 782.2
-    },
-    "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 5256.8
-    },
-    "T3": {
      "flag": "PASS",
-     "score": 0.936,
-     "pota_name": "Juneau Channel Islands State Park",
-     "record_name": "JUNEAU CHANNEL ISLAND SMP"
-    },
-    "T4": {
-     "park_kind": "state park",
-     "record_kind": null,
-     "flag": "CAN'T TELL"
-    },
-    "T5": {
-     "flag": "PASS",
-     "pieces": 12
+     "pieces": 2
     },
     "T6": {
      "flag": "PASS"
@@ -5507,8 +5662,61 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OUTSIDE: POTA's pin is 782 m outside the outline."
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "US-11862",
+   "name": "Juneau Channel Islands State Park",
+   "key_name": "Juneau Channel Islands State Park",
+   "type": "State Park",
+   "grade": "pin",
+   "pin": [
+    58.478,
+    -134.925
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
   },
   {
    "ref": "US-12381",
@@ -5552,8 +5760,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Delta BLM Wild and Scenic River",
      "record_name": "Delta River SRMA"
     },
@@ -5570,17 +5778,12 @@
      "flag": "SPILL",
      "parks": [
       {
-       "ref": "US-11800",
-       "name": "Delta Wild and Scenic River Wayside Recreation Site",
-       "share": 1.0
-      },
-      {
        "ref": "US-11799",
        "name": "Tangle Lakes Recreation Site",
        "share": 0.98
       }
      ],
-     "count": 2
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -5596,8 +5799,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 6,
-   "why": "MISMATCH: The record name 'Delta River SRMA' does not match POTA's name 'Delta BLM Wild and Scenic River' (score 0.50) (+1 more flag)."
+   "score": 3,
+   "why": "SPILL: The outline covers 98% of US-11799 Tangle Lakes Recreation Site, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "US-12607",
@@ -5786,80 +5989,87 @@
    "name": "Fort Egbert BLM Historic Area",
    "key_name": "Fort Egbert BLM Historic Area",
    "type": "BLM Historic Area",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     64.7894,
     -141.212
    ],
-   "outline_from": [],
-   "acres_drawn": null,
-   "records": [],
-   "record_ids": [],
+   "outline_from": [
+    "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1"
+   ],
+   "acres_drawn": 12.8,
+   "records": [
+    {
+     "id": "sgaki400954",
+     "name": "Fort Egbert",
+     "type": "National Register of Historic Places Polygons (land, state GIS table)",
+     "layer": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+     "link": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?objectIds=400954&outFields=*&returnGeometry=false&f=html",
+     "name_field": "RESNAME"
+    }
+   ],
+   "record_ids": [
+    "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1#400954"
+   ],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "NO FIGURE",
+     "outline_acres": 12.8
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Fort Egbert BLM Historic Area",
+     "record_name": "Fort Egbert"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "PASS",
+     "pieces": 1
     },
     "T6": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "CAN'T TELL",
-     "note": "no record id"
+     "flag": "PASS"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 0,
-   "why": "Nothing could be tested."
+   "why": "All tests pass."
   },
   {
    "ref": "US-12708",
    "name": "Kenai River State Conservation Area",
    "key_name": "Kenai River State Conservation Area",
    "type": "State Conservation Area",
-   "grade": "approximate",
+   "grade": "official",
    "pin": [
     60.4879,
     -151.04
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0"
    ],
    "acres_drawn": 45768.5,
    "records": [
-    {
-     "id": "padus#165883",
-     "name": "Kenai River Special Management Area",
-     "type": "State Special Management Area State Other or Unknown",
-     "category": "Fee",
-     "acres": 1404.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=165883&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgakb796",
      "name": "Kenai River",
@@ -5870,7 +6080,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#165883",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0#796"
    ],
    "tests": {
@@ -5879,17 +6088,14 @@
      "metres": 632.3
     },
     "T2": {
-     "flag": "WAY OFF",
-     "outline_acres": 45768.5,
-     "official_acres": 1404.0,
-     "times": 32.6,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO FIGURE",
+     "outline_acres": 45768.5
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Kenai River State Conservation Area",
-     "record_name": "Kenai River Special Management Area"
+     "record_name": "Kenai River"
     },
     "T4": {
      "park_kind": null,
@@ -5902,7 +6108,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-151.116173960864 60.5166760370539]"
+     "note": "Ring Self-intersection[-151.116173960864 60.5166760370539]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -5942,12 +6154,10 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [
-    "record 165883: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
-   ],
+   "problems": [],
    "status": "graded",
-   "score": 10,
-   "why": "OUTSIDE: POTA's pin is 632 m outside the outline (+3 more flags)."
+   "score": 7,
+   "why": "OUTSIDE: POTA's pin is 632 m outside the outline (+2 more flags)."
   },
   {
    "ref": "US-12709",
@@ -6202,7 +6412,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6485,7 +6701,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-149.449698211387 61.3540504312483]; 57 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-149.449698211387 61.3540504312483]; 57 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 57,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6527,18 +6749,8 @@
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 371594.1,
+   "acres_drawn": 173216.6,
    "records": [
-    {
-     "id": "sgaka147",
-     "name": "Kachemak Bay State Wilderness Park",
-     "type": "Alaska State Parks (DNR) (park, state GIS table)",
-     "acres": 198408.0,
-     "acres_from": "the key's acres",
-     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
-     "link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2/query?objectIds=147&outFields=*&returnGeometry=false&f=html",
-     "name_field": "PARKNAME"
-    },
     {
      "id": "sgaka116",
      "name": "Kachemak Bay State Park",
@@ -6550,16 +6762,6 @@
      "name_field": "PARKNAME"
     },
     {
-     "id": "sgake147",
-     "name": "Kachemak Bay State Wilderness Park",
-     "type": "Alaska DNR State Parks (park boundaries) (park, state GIS table)",
-     "acres": 198408.0,
-     "acres_from": "the key's acres",
-     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
-     "link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2/query?objectIds=147&outFields=*&returnGeometry=false&f=html",
-     "name_field": "PARKNAME"
-    },
-    {
      "id": "sgake116",
      "name": "Kachemak Bay State Park",
      "type": "Alaska DNR State Parks (park boundaries) (park, state GIS table)",
@@ -6567,16 +6769,6 @@
      "acres_from": "the key's acres",
      "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
      "link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2/query?objectIds=116&outFields=*&returnGeometry=false&f=html",
-     "name_field": "PARKNAME"
-    },
-    {
-     "id": "sgakf147",
-     "name": "Kachemak Bay State Wilderness Park",
-     "type": "Alaska DNR, Division of Parks & Outdoor Recreation (credit: Alaska Department of Natural Resources) (park, state GIS table)",
-     "acres": 198408.0,
-     "acres_from": "the key's acres",
-     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
-     "link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2/query?objectIds=147&outFields=*&returnGeometry=false&f=html",
      "name_field": "PARKNAME"
     },
     {
@@ -6621,11 +6813,8 @@
     }
    ],
    "record_ids": [
-    "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2#147",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2#116",
-    "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2#147",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2#116",
-    "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2#147",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2#116",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#165890",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#165889",
@@ -6638,8 +6827,8 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 371594.1,
-     "official_acres": 370963.0,
+     "outline_acres": 173216.6,
+     "official_acres": 172555.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -6647,7 +6836,7 @@
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Kachemak Bay State Park",
-     "record_name": "Kachemak Bay State Wilderness Park"
+     "record_name": "Kachemak Bay State Park"
     },
     "T4": {
      "park_kind": "state park",
@@ -6656,13 +6845,19 @@
     },
     "T5": {
      "flag": "SELF-INTERSECTION",
-     "pieces": 10,
+     "pieces": 11,
      "flags": [
       "SELF-INTERSECTION",
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-151.169054681781 59.7578318089653]; 1 piece(s) under 10 m wide; 19 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-151.169054681781 59.7578318089653]; 1 piece(s) under 10 m wide; 12 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 12,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6675,11 +6870,8 @@
      "flag": "DUPLICATE",
      "parks": {
       "US-3392": [
-       "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2#147",
        "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2#116",
-       "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2#147",
        "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2#116",
-       "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2#147",
        "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2#116",
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#165890",
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#165889",
@@ -6696,7 +6888,7 @@
    "problems": [],
    "status": "graded",
    "score": 4,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-151.169054681781 59.7578318089653]; 1 piece(s) under 10 m wide; 19 hole(s) under 100 m2 (+3 more flags)."
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-151.169054681781 59.7578318089653]; 1 piece(s) under 10 m wide; 12 hole(s) under 100 m2 (+3 more flags)."
   },
   {
    "ref": "US-1639",
@@ -6813,7 +7005,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "3 piece(s) under 10 m wide"
+     "note": "3 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 3
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7380,7 +7578,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Self-intersection[-159.234091448437 59.7795133339624]; 4 hole(s) under 100 m2"
+     "note": "Self-intersection[-159.234091448437 59.7795133339624]; 4 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 4,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7416,34 +7620,52 @@
     66.9144,
     -151.656
    ],
-   "outline_from": [],
+   "outline_from": [
+    "trails/US-3382.json"
+   ],
    "acres_drawn": null,
-   "records": [],
+   "records": [
+    {
+     "id": "trl:US-3382",
+     "name": "John National Wild and Scenic River",
+     "type": "trail",
+     "layer": "trails/US-3382.json"
+    }
+   ],
    "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "FAR",
+     "metres": 74208.6
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "John National Wild and Scenic River",
+     "record_name": "John National Wild and Scenic River"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": "river",
+     "record_kind": "trail",
+     "flag": "PASS"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T6": {
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "detail_m": 0.04,
+     "declared_m": null,
+     "coordinate_step_m": 0.04,
+     "median_spacing_m": 0.0,
+     "flag": "PASS"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -7456,8 +7678,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "Nothing could be tested."
+   "score": 5,
+   "why": "FAR: POTA's pin is 74.2 km outside the outline."
   },
   {
    "ref": "US-3392",
@@ -7632,7 +7854,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-151.169054681781 59.7578318089653]; 1 piece(s) under 10 m wide; 19 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-151.169054681781 59.7578318089653]; 1 piece(s) under 10 m wide; 19 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 19,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7645,11 +7873,8 @@
      "flag": "DUPLICATE",
      "parks": {
       "US-1638": [
-       "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2#147",
        "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2#116",
-       "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2#147",
        "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2#116",
-       "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2#147",
        "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2#116",
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#165890",
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#165889",
@@ -7731,14 +7956,20 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-144.915968320031 60.5217254470873]; 313 piece(s) under 10 m wide; 25 hole(s) under 100 m2; 4303 pieces spread over 398 km"
+     "note": "Ring Self-intersection[-144.915968320031 60.5217254470873]; 313 piece(s) under 10 m wide; 25 hole(s) under 100 m2; 4303 pieces spread over 398 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 25,
+      "pieces": 313
+     }
     },
     "T6": {
      "flag": "SPILL",
      "parks": [
       {
-       "ref": "US-4537",
-       "name": "Admiralty Island National Monument",
+       "ref": "US-7884",
+       "name": "Kenai Mountains-Turnagain Arm National Heritage Area",
        "share": 0.93
       },
       {
@@ -7764,7 +7995,7 @@
    "problems": [],
    "status": "graded",
    "score": 7,
-   "why": "SPILL: The outline covers 93% of US-4537 Admiralty Island National Monument, with no 2-fer row (maybe the wrong record) (+4 more flags)."
+   "why": "SPILL: The outline covers 93% of US-7884 Kenai Mountains-Turnagain Arm National Heritage Area, with no 2-fer row (maybe the wrong record) (+4 more flags)."
   },
   {
    "ref": "US-4448",
@@ -7827,7 +8058,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-131.736334198055 55.1669681189141]; 3740 piece(s) under 10 m wide; 17 hole(s) under 100 m2; 19394 pieces spread over 840 km"
+     "note": "Ring Self-intersection[-131.736334198055 55.1669681189141]; 3740 piece(s) under 10 m wide; 17 hole(s) under 100 m2; 19394 pieces spread over 840 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 17,
+      "pieces": 3740
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -7838,12 +8075,17 @@
        "share": 1.0
       },
       {
-       "ref": "US-7884",
-       "name": "Kenai Mountains-Turnagain Arm National Heritage Area",
-       "share": 1.0
+       "ref": "US-4537",
+       "name": "Admiralty Island National Monument",
+       "share": 0.99
+      },
+      {
+       "ref": "US-11862",
+       "name": "Juneau Channel Islands State Park",
+       "share": 0.31
       }
      ],
-     "count": 2
+     "count": 3
     },
     "T7": {
      "flag": "N/A",
@@ -7875,148 +8117,39 @@
    "outline_from": [
     "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0"
    ],
-   "acres_drawn": 1176782.1,
-   "records": [
-    {
-     "id": "fsod168",
-     "name": "Kenai Mountains-Turnagain Arm National Heritage Area",
-     "type": "Forest Service national designated areas (monuments, NRAs, scenic areas)",
-     "acres": 1018364.0,
-     "acres_from": "the key's acres",
-     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
-     "link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query?objectIds=168&outFields=*&returnGeometry=false&f=html",
-     "name_field": "fullname"
-    }
-   ],
-   "record_ids": [
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0#168"
-   ],
-   "tests": {
-    "T1": {
-     "flag": "FAR",
-     "metres": 877221.0
-    },
-    "T2": {
-     "flag": "PASS",
-     "outline_acres": 1176782.1,
-     "official_acres": 1018364.0,
-     "times": 1.16,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
-    },
-    "T3": {
-     "flag": "MISMATCH",
-     "score": 0.0,
-     "pota_name": "Admiralty Island National Monument",
-     "record_name": "Kenai Mountains-Turnagain Arm National Heritage Area"
-    },
-    "T4": {
-     "park_kind": "national park",
-     "record_kind": "national forest",
-     "flag": "PASS"
-    },
-    "T5": {
-     "flag": "SLIVERS",
-     "pieces": 33,
-     "flags": [
-      "SLIVERS"
-     ],
-     "note": "2 piece(s) under 10 m wide"
-    },
-    "T6": {
-     "flag": "SPILL",
-     "parks": [
-      {
-       "ref": "US-13462",
-       "name": "Sportsman's Angler Access State Recreation Site",
-       "share": 0.48
-      },
-      {
-       "ref": "US-12708",
-       "name": "Kenai River State Conservation Area",
-       "share": 0.31
-      }
-     ],
-     "count": 2
-    },
-    "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
-    },
-    "T8": {
-     "flag": "PASS"
-    },
-    "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
-    }
-   },
-   "problems": [],
-   "status": "graded",
-   "score": 12,
-   "why": "FAR: POTA's pin is 877.2 km outside the outline (+3 more flags)."
-  },
-  {
-   "ref": "US-4538",
-   "name": "Misty Fjords National Monument",
-   "key_name": "Misty Fjords National Monument",
-   "type": "National Monument",
-   "grade": "official",
-   "pin": [
-    54.767,
-    -130.849
-   ],
-   "outline_from": [
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0"
-   ],
-   "acres_drawn": 3163247.5,
+   "acres_drawn": 1018363.5,
    "records": [
     {
      "id": "fsod169",
      "name": "Admiralty Island National Monument",
      "type": "Forest Service national designated areas (monuments, NRAs, scenic areas)",
-     "acres": 2294702.0,
+     "acres": 1018364.0,
      "acres_from": "the key's acres",
      "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
      "link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query?objectIds=169&outFields=*&returnGeometry=false&f=html",
      "name_field": "fullname"
-    },
-    {
-     "id": "wld293",
-     "name": "Misty Fjords National Monument Wilderness",
-     "type": "National Wilderness Preservation System",
-     "acres": 2144883.0,
-     "acres_from": "the key's acres",
-     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
-     "link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0/query?objectIds=293&outFields=*&returnGeometry=false&f=html",
-     "name_field": "wildernessname"
     }
    ],
    "record_ids": [
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0#169",
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0#293"
+    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0#169"
    ],
    "tests": {
     "T1": {
-     "flag": "NEAR",
-     "metres": 5.3
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 3163247.5,
-     "official_acres": 2294702.0,
-     "times": 1.38,
+     "outline_acres": 1018363.5,
+     "official_acres": 1018364.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
-     "pota_name": "Misty Fjords National Monument",
-     "record_name": "Misty Fjords National Monument Wilderness",
-     "worst_record": {
-      "name": "Admiralty Island National Monument",
-      "score": 0.0
-     }
+     "pota_name": "Admiralty Island National Monument",
+     "record_name": "Admiralty Island National Monument"
     },
     "T4": {
      "park_kind": "national park",
@@ -8025,13 +8158,19 @@
     },
     "T5": {
      "flag": "SLIVERS",
-     "pieces": 1426,
+     "pieces": 645,
      "flags": [
       "SLIVERS",
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "107 piece(s) under 10 m wide; 1 hole(s) under 100 m2; 1426 pieces spread over 487 km"
+     "note": "31 piece(s) under 10 m wide; 1 hole(s) under 100 m2; 645 pieces spread over 150 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 31
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8052,15 +8191,114 @@
     "record fsod169: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 4,
-   "why": "NEAR: POTA's pin is 5 m outside the outline (+3 more flags)."
+   "score": 3,
+   "why": "SLIVERS: The shape has problems: 31 piece(s) under 10 m wide; 1 hole(s) under 100 m2; 645 pieces spread over 150 km (+2 more flags)."
+  },
+  {
+   "ref": "US-4538",
+   "name": "Misty Fjords National Monument",
+   "key_name": "Misty Fjords National Monument",
+   "type": "National Monument",
+   "grade": "official",
+   "pin": [
+    54.767,
+    -130.849
+   ],
+   "outline_from": [
+    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0"
+   ],
+   "acres_drawn": 2294703.0,
+   "records": [
+    {
+     "id": "fsod170",
+     "name": "Misty Fjords National Monument",
+     "type": "Forest Service national designated areas (monuments, NRAs, scenic areas)",
+     "acres": 2294702.0,
+     "acres_from": "the key's acres",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+     "link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query?objectIds=170&outFields=*&returnGeometry=false&f=html",
+     "name_field": "fullname"
+    },
+    {
+     "id": "wld293",
+     "name": "Misty Fjords National Monument Wilderness",
+     "type": "National Wilderness Preservation System",
+     "acres": 2144883.0,
+     "acres_from": "the key's acres",
+     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
+     "link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0/query?objectIds=293&outFields=*&returnGeometry=false&f=html",
+     "name_field": "wildernessname"
+    }
+   ],
+   "record_ids": [
+    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0#170",
+    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0#293"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "NEAR",
+     "metres": 5.3
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 2294703.0,
+     "official_acres": 2294702.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Misty Fjords National Monument",
+     "record_name": "Misty Fjords National Monument Wilderness"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national forest",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "SLIVERS",
+     "pieces": 784,
+     "flags": [
+      "SLIVERS",
+      "SCATTERED"
+     ],
+     "note": "77 piece(s) under 10 m wide; 784 pieces spread over 209 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 77
+     }
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "NEAR: POTA's pin is 5 m outside the outline (+2 more flags)."
   },
   {
    "ref": "US-4570",
    "name": "Iditarod National Historic Trail",
    "key_name": "Iditarod National Historic Trail",
    "type": "National Historic Trail",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     61.7446,
     -150.052
@@ -8106,11 +8344,8 @@
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "detail_m": 0.05,
-     "declared_m": null,
-     "coordinate_step_m": 0.05,
-     "median_spacing_m": 0.0,
-     "flag": "PASS"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -8118,13 +8353,15 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: : InvalidSchema"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 5,
-   "why": "FAR: POTA's pin is 29.3 km outside the outline."
+   "why": "SOURCE DOWN: FAR: POTA's pin is 29.3 km outside the outline."
   },
   {
    "ref": "US-4585",
@@ -8196,7 +8433,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "2 piece(s) under 10 m wide; 15 hole(s) under 100 m2"
+     "note": "2 piece(s) under 10 m wide; 15 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 15,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8399,7 +8642,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-135.416564255528 59.2795743662399]"
+     "note": "Ring Self-intersection[-135.416564255528 59.2795743662399]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -8425,10 +8674,10 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-11-02",
-     "read": "2026-10-27",
+     "last_edit": "2026-11-07",
+     "read": "2026-11-05",
      "flag": "NOTE",
-     "note": "the source changed on 2026-11-02, after the club read it (2026-10-27)"
+     "note": "the source changed on 2026-11-07, after the club read it (2026-11-05)"
     }
    },
    "problems": [
@@ -8626,10 +8875,10 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-11-02",
-     "read": "2026-10-27",
+     "last_edit": "2026-11-07",
+     "read": "2026-11-05",
      "flag": "NOTE",
-     "note": "the source changed on 2026-11-02, after the club read it (2026-10-27)"
+     "note": "the source changed on 2026-11-07, after the club read it (2026-11-05)"
     }
    },
    "problems": [],
@@ -8651,7 +8900,7 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0"
    ],
-   "acres_drawn": 1834971.9,
+   "acres_drawn": 2449362.5,
    "records": [
     {
      "id": "padus#165913",
@@ -8664,6 +8913,16 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=165913&outFields=*&returnGeometry=false&f=html"
     },
     {
+     "id": "sgakc2",
+     "name": "Tanana Valley State Forest",
+     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
+     "acres": 199685.8,
+     "acres_from": "acres field",
+     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
+     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=2&outFields=*&returnGeometry=false&f=html",
+     "name_field": "forestname"
+    },
+    {
      "id": "sgakc22",
      "name": "Tanana Valley State Forest",
      "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
@@ -8671,6 +8930,36 @@
      "acres_from": "acres field",
      "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
      "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=22&outFields=*&returnGeometry=false&f=html",
+     "name_field": "forestname"
+    },
+    {
+     "id": "sgakc5",
+     "name": "Tanana Valley State Forest",
+     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
+     "acres": 118397.0,
+     "acres_from": "acres field",
+     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
+     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=5&outFields=*&returnGeometry=false&f=html",
+     "name_field": "forestname"
+    },
+    {
+     "id": "sgakc38",
+     "name": "Tanana Valley State Forest",
+     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
+     "acres": 94036.5,
+     "acres_from": "acres field",
+     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
+     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=38&outFields=*&returnGeometry=false&f=html",
+     "name_field": "forestname"
+    },
+    {
+     "id": "sgakc19",
+     "name": "Tanana Valley State Forest",
+     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
+     "acres": 80175.8,
+     "acres_from": "acres field",
+     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
+     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=19&outFields=*&returnGeometry=false&f=html",
      "name_field": "forestname"
     },
     {
@@ -8684,98 +8973,145 @@
      "name_field": "forestname"
     },
     {
-     "id": "sgakc3",
+     "id": "sgakc13",
      "name": "Tanana Valley State Forest",
      "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 59350.5,
+     "acres": 75827.9,
      "acres_from": "acres field",
      "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=3&outFields=*&returnGeometry=false&f=html",
+     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=13&outFields=*&returnGeometry=false&f=html",
      "name_field": "forestname"
     },
     {
-     "id": "sgakc20",
+     "id": "sgakc14",
      "name": "Tanana Valley State Forest",
      "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 59230.0,
+     "acres": 74799.3,
      "acres_from": "acres field",
      "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=20&outFields=*&returnGeometry=false&f=html",
+     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=14&outFields=*&returnGeometry=false&f=html",
      "name_field": "forestname"
     },
     {
-     "id": "sgakc17",
+     "id": "sgakc309",
      "name": "Tanana Valley State Forest",
      "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 36128.1,
+     "acres": 73026.1,
      "acres_from": "acres field",
      "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=17&outFields=*&returnGeometry=false&f=html",
+     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=309&outFields=*&returnGeometry=false&f=html",
      "name_field": "forestname"
     },
     {
-     "id": "sgakc326",
+     "id": "sgakc7",
      "name": "Tanana Valley State Forest",
      "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 14554.9,
+     "acres": 69965.4,
      "acres_from": "acres field",
      "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=326&outFields=*&returnGeometry=false&f=html",
+     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=7&outFields=*&returnGeometry=false&f=html",
      "name_field": "forestname"
     },
     {
-     "id": "sgakc283",
+     "id": "sgakc287",
      "name": "Tanana Valley State Forest",
      "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 10537.2,
+     "acres": 69758.5,
      "acres_from": "acres field",
      "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=283&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc315",
-     "name": "Tanana Valley State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 9133.0,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=315&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc284",
-     "name": "Tanana Valley State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 7639.1,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=284&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc305",
-     "name": "Tanana Valley State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 1080.5,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=305&outFields=*&returnGeometry=false&f=html",
+     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=287&outFields=*&returnGeometry=false&f=html",
      "name_field": "forestname"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#165913",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#2",
     "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#22",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#5",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#38",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#19",
     "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#32",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#13",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#14",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#309",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#7",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#287",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#9",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#34",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#288",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#109",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#8",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#27",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#329",
     "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#3",
     "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#20",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#31",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#25",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#12",
     "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#17",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#325",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#302",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#35",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#11",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#279",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#36",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#324",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#37",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#317",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#24",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#33",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#1",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#311",
     "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#326",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#301",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#145",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#293",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#294",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#26",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#141",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#328",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#312",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#292",
     "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#283",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#323",
     "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#315",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#39",
     "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#284",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#305"
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#4",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#322",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#28",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#319",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#6",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#295",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#21",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#23",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#296",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#291",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#316",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#281",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#18",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#10",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#321",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#308",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#280",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#15",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#282",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#305",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#313",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#304",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#29",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#297",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#318",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#16",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#298",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#320",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#286",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#310",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#307",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#349",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#299",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#343",
+    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#347"
    ],
    "tests": {
     "T1": {
@@ -8784,9 +9120,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 1834971.9,
-     "official_acres": 1754914.0,
-     "times": 1.05,
+     "outline_acres": 2449362.5,
+     "official_acres": 1955211.0,
+     "times": 1.25,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -8801,12 +9137,20 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 28,
+     "flag": "SELF-INTERSECTION",
+     "pieces": 41,
      "flags": [
+      "SELF-INTERSECTION",
+      "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "7 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-144.147160652392 63.8243784183349]; 3 piece(s) under 10 m wide; 66 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 66,
+      "pieces": 3
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -8827,22 +9171,35 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-11-02",
-     "read": "2026-10-27",
+     "last_edit": "2026-11-07",
+     "read": "2026-11-05",
      "flag": "NOTE",
-     "note": "the source changed on 2026-11-02, after the club read it (2026-10-27)"
+     "note": "the source changed on 2026-11-07, after the club read it (2026-11-05)"
     }
    },
    "problems": [
     "record 165913: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
     "record sgakc22: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
+    "record sgakc5: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
+    "record sgakc13: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
+    "record sgakc287: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
+    "record sgakc9: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
+    "record sgakc8: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
+    "record sgakc25: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
+    "record sgakc325: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
+    "record sgakc279: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
+    "record sgakc324: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
+    "record sgakc311: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
+    "record sgakc294: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
     "record sgakc283: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
+    "record sgakc323: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
     "record sgakc315: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
-    "record sgakc305: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
+    "record sgakc305: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
+    "official acres count once the land of sgakc347: it lies inside a bigger record from the same source"
    ],
    "status": "graded",
-   "score": 4,
-   "why": "SPILL: The outline covers 100% of US-7232 Eagle Trail State Recreation Site, with no 2-fer row (maybe the wrong record) (+1 more flag)."
+   "score": 6,
+   "why": "SPILL: The outline covers 100% of US-7232 Eagle Trail State Recreation Site, with no 2-fer row (maybe the wrong record) (+3 more flags)."
   },
   {
    "ref": "US-6332",
@@ -10490,9 +10847,10 @@
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1"
    ],
-   "acres_drawn": 185.6,
+   "acres_drawn": 304.7,
    "records": [
     {
      "id": "sgaka39",
@@ -10533,13 +10891,22 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=157450&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgaki400877",
+     "name": "Fort Abercrombie State Historic Site",
+     "type": "National Register of Historic Places Polygons (land, state GIS table)",
+     "layer": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+     "link": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?objectIds=400877&outFields=*&returnGeometry=false&f=html",
+     "name_field": "RESNAME"
     }
    ],
    "record_ids": [
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2#39",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2#39",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2#39",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#157450"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#157450",
+    "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1#400877"
    ],
    "tests": {
     "T1": {
@@ -10547,10 +10914,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 185.6,
+     "flag": "OFF",
+     "outline_acres": 304.7,
      "official_acres": 183.0,
-     "times": 1.01,
+     "times": 1.67,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -10585,8 +10952,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 1,
+   "why": "OFF: The outline is 1.7 times bigger than the official 183 acres (305 ac drawn)."
   },
   {
    "ref": "US-7207",
@@ -11008,9 +11375,10 @@
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1"
    ],
-   "acres_drawn": 939.0,
+   "acres_drawn": 1099.0,
    "records": [
     {
      "id": "sgaka69",
@@ -11051,13 +11419,22 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=157446&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgaki400882",
+     "name": "Independence Mines",
+     "type": "National Register of Historic Places Polygons (land, state GIS table)",
+     "layer": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+     "link": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?objectIds=400882&outFields=*&returnGeometry=false&f=html",
+     "name_field": "RESNAME"
     }
    ],
    "record_ids": [
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2#69",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2#69",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2#69",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#157446"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#157446",
+    "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1#400882"
    ],
    "tests": {
     "T1": {
@@ -11066,9 +11443,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 939.0,
+     "outline_acres": 1099.0,
      "official_acres": 831.0,
-     "times": 1.13,
+     "times": 1.32,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -11083,12 +11460,8 @@
      "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 1,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "1 hole(s) under 100 m2"
+     "flag": "PASS",
+     "pieces": 1
     },
     "T6": {
      "flag": "PASS"
@@ -11107,8 +11480,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-7214",
@@ -12661,7 +13034,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13879,7 +14258,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-135.945229710906 59.413172365337]; 1 piece(s) under 10 m wide; 3 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-135.945229710906 59.413172365337]; 1 piece(s) under 10 m wide; 3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -14306,7 +14691,7 @@
    "name": "Juneau State Trail",
    "key_name": "Juneau State Trail",
    "type": "State Trail",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     58.3019,
     -134.42
@@ -14352,11 +14737,8 @@
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "detail_m": 0.58,
-     "declared_m": null,
-     "coordinate_step_m": 0.58,
-     "median_spacing_m": 0.0,
-     "flag": "PASS"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -14364,13 +14746,15 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: : down for this run (failed 3 times)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 5,
-   "why": "FAR: POTA's pin is 13.3 km outside the outline."
+   "why": "SOURCE DOWN: FAR: POTA's pin is 13.3 km outside the outline."
   },
   {
    "ref": "US-7246",
@@ -15509,39 +15893,39 @@
    "outline_from": [
     "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0"
    ],
-   "acres_drawn": 137485.7,
+   "acres_drawn": 1176782.1,
    "records": [
     {
-     "id": "fsod167",
-     "name": "Yakutat Forelands LUD II Management Area",
+     "id": "fsod168",
+     "name": "Kenai Mountains-Turnagain Arm National Heritage Area",
      "type": "Forest Service national designated areas (monuments, NRAs, scenic areas)",
      "acres": 1176785.0,
      "acres_from": "the key's acres",
      "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
-     "link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query?objectIds=167&outFields=*&returnGeometry=false&f=html",
+     "link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query?objectIds=168&outFields=*&returnGeometry=false&f=html",
      "name_field": "fullname"
     }
    ],
    "record_ids": [
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0#167"
+    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0#168"
    ],
    "tests": {
     "T1": {
-     "flag": "FAR",
-     "metres": 575330.3
+     "flag": "OUTSIDE",
+     "metres": 963.1
     },
     "T2": {
-     "flag": "WAY OFF",
-     "outline_acres": 137485.7,
+     "flag": "PASS",
+     "outline_acres": 1176782.1,
      "official_acres": 1176785.0,
-     "times": 8.56,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.0,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Kenai Mountains-Turnagain Arm National Heritage Area",
-     "record_name": "Yakutat Forelands LUD II Management Area"
+     "record_name": "Kenai Mountains-Turnagain Arm National Heritage Area"
     },
     "T4": {
      "park_kind": null,
@@ -15549,11 +15933,29 @@
      "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "SLIVERS",
+     "pieces": 33,
+     "flags": [
+      "SLIVERS"
+     ],
+     "note": "2 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 2
+     }
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "US-13462",
+       "name": "Sportsman's Angler Access State Recreation Site",
+       "share": 0.48
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -15569,8 +15971,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 11,
-   "why": "FAR: POTA's pin is 575.3 km outside the outline (+2 more flags)."
+   "score": 7,
+   "why": "OUTSIDE: POTA's pin is 963 m outside the outline (+2 more flags)."
   },
   {
    "ref": "US-7885",
@@ -15638,7 +16040,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 2196927.4,
+   "acres_drawn": 2196954.6,
    "records": [
     {
      "id": "padus#3315",
@@ -15649,10 +16051,21 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3315&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#165863",
+     "name": "Yukon-charley Rivers National Preserve",
+     "type": "Wild & Scenic River State Conservation Area",
+     "category": "Fee",
+     "acres": 27.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=165863&outFields=*&returnGeometry=false&f=html"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3315"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3315",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#165863"
    ],
    "tests": {
     "T1": {
@@ -15661,8 +16074,8 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 2196927.4,
-     "official_acres": 2194982.0,
+     "outline_acres": 2196954.6,
+     "official_acres": 2195009.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -15670,7 +16083,7 @@
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Yukon-Charley Rivers National Preserve",
-     "record_name": "Yukon-Charley Rivers National Preserve"
+     "record_name": "Yukon-charley Rivers National Preserve"
     },
     "T4": {
      "park_kind": null,
@@ -15678,12 +16091,19 @@
      "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "SCATTERED",
-     "pieces": 200,
+     "flag": "SLIVERS",
+     "pieces": 213,
      "flags": [
+      "SLIVERS",
       "SCATTERED"
      ],
-     "note": "200 pieces spread over 199 km"
+     "note": "6 piece(s) under 10 m wide; 213 pieces spread over 199 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 6
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -15702,8 +16122,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "OUTSIDE: POTA's pin is 3.3 km outside the outline (+1 more flag)."
+   "score": 5,
+   "why": "OUTSIDE: POTA's pin is 3.3 km outside the outline (+2 more flags)."
   },
   {
    "ref": "US-9696",
@@ -15991,7 +16411,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -16074,7 +16500,13 @@
       "SELF-INTERSECTION",
       "SLIVERS"
      ],
-     "note": "Ring Self-intersection[-148.995058511373 64.9105905005306]; 1 piece(s) under 10 m wide"
+     "note": "Ring Self-intersection[-148.995058511373 64.9105905005306]; 1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -16107,41 +16539,36 @@
     -149.559
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0"
    ],
-   "acres_drawn": 22837.3,
+   "acres_drawn": 31896.3,
    "records": [
     {
-     "id": "padus#165807",
-     "name": "Palmer Hay Flats State Game Refuge",
-     "type": "State Game Refuge State Conservation Area",
-     "category": "Fee",
-     "acres": 22839.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=165807&outFields=*&returnGeometry=false&f=html"
+     "id": "sgakb9",
+     "name": "Palmer Hay Flats",
+     "type": "Alaska Department of Natural Resources (preserve, state GIS table)",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
+     "link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0/query?objectIds=9&outFields=*&returnGeometry=false&f=html",
+     "name_field": "LDA_NAME_1"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#165807"
+    "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0#9"
    ],
    "tests": {
     "T1": {
-     "flag": "OUTSIDE",
-     "metres": 1072.0
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 22837.3,
-     "official_acres": 22839.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO FIGURE",
+     "outline_acres": 31896.3
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Palmer Hay Flats Wildlife Refuge",
-     "record_name": "Palmer Hay Flats State Game Refuge"
+     "record_name": "Palmer Hay Flats"
     },
     "T4": {
      "park_kind": "refuge",
@@ -16150,7 +16577,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 4
+     "pieces": 6
     },
     "T6": {
      "flag": "PASS"
@@ -16169,8 +16596,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OUTSIDE: POTA's pin is 1.1 km outside the outline."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-9702",
