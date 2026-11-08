@@ -1,6 +1,6 @@
 # kpc_pulloffs run report (2026-11-08)
 
-- version 1.0.0; exit code 3; ran 50.1 min; 232 web requests
+- version 1.0.0; exit code 3; ran 50.2 min; 235 web requests
 - parks in this input (after --areas / --limit): 190; done: 58; left for the next run: 132
 - candidates for chat 11: 2125; kept out (log only, work/log/kept_out.jsonl): 5964
 
@@ -81,7 +81,7 @@ Official access pins next to a public road (within 30 m) inside the search band:
   - note: no official access point and no approved pull-off: looking up to 400 m outside (ruling G-P2)
 - US-3790 Fort Heiman National Battlefield: done; 1 candidate(s); 30 kept out; photo cells 18; points looked at {'entry': 12, 'road': 136, 'hint': 0}; roads {'public': 57, 'dropped (interstate/ramp/private/alley)': 0, 'lot-road hints': 0}; recall 0/0
   - note: no official access point and no approved pull-off: looking up to 400 m outside (ruling G-P2)
-- US-3792 Land Between the Lakes National Recreation Area: time ran out after 444 of 1000 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
+- US-3792 Land Between the Lakes National Recreation Area: time ran out after 665 of 1000 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
 
 ## Web manners
 
