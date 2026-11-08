@@ -1,9 +1,9 @@
-# kpc_acres report (2026-11-02)
+# kpc_acres report (2026-11-08)
 
 - tool version 1.0.0; areas: all US, then all Canada
-- work items: 207 done of 207 - complete
-- parks with an official size: 1518; flagged: 16; unmatched rows: 27208
-- web requests this run: 182
+- work items: 234 done of 234 - complete
+- parks with an official size: 1600; flagged: 18; unmatched rows: 27234
+- web requests this run: 0
 
 ## One line per agency
 
@@ -13,7 +13,8 @@
 - US-AK | National Park Service | read OK (xlsx) | rows read 436, matched 60, unmatched 376, flagged 1 | https://www.nps.gov/subjects/lwcf/upload/NPS-Acreage-09-30-2026.xlsx
 - US-AK | U.S. Fish and Wildlife Service | failed: PDF table skipped: pypdf is not installed (pip install pypdf) | rows read 0, matched 0, unmatched 0, flagged 0 | https://www.fws.gov/sites/default/files/documents/2026-01/2025_annual_report_of_lands_data_tables-v2.pdf
 - US-AK | USDA Forest Service | failed: blocked by robots.txt | rows read 0, matched 0, unmatched 0, flagged 0 | https://usfs-public.app.box.com/index.php?rm=box_download_shared_file&shared_name=rhq1lm3rq3wauhtz6yulanuzoijaaqsw&file_id=f_2146441076608
-- US-AK | USDA Forest Service (hand copy) | read OK (hand sizes) | rows read 7, matched 7, unmatched 0, flagged 1
+- US-AK | National Park Service (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
+- US-AK | USDA Forest Service (hand copy) | read OK (hand sizes) | rows read 10, matched 10, unmatched 0, flagged 3
 - US-AL | ADCNR Wildlife & Freshwater Fisheries | skipped: page only, no list to read (research says so) | rows read 0, matched 0, unmatched 0, flagged 0 | https://www.outdooralabama.com/hunting/wildlife-management-areas
 - US-AL | Alabama State Parks (ADCNR) | skipped: page only, no list to read (research says so) | rows read 0, matched 0, unmatched 0, flagged 0 | https://www.alapark.com/sites/default/files/2020-11/Parksoverviewchartcompassmedia.pdf
 - US-AL | Bureau of Land Management | skipped: no list (research says so) | rows read 0, matched 0, unmatched 0, flagged 0 | https://www.blm.gov/sites/default/files/docs/2026-08/BLM-Public-Land-Statistics-2025.pdf
@@ -47,7 +48,7 @@
 - US-CT | National Park Service | read OK (xlsx) | rows read 436, matched 60, unmatched 376, flagged 1 | https://www.nps.gov/subjects/lwcf/upload/NPS-Acreage-09-30-2026.xlsx
 - US-DC | National Park Service | read OK (xlsx) | rows read 436, matched 60, unmatched 376, flagged 1 | https://www.nps.gov/subjects/lwcf/upload/NPS-Acreage-09-30-2026.xlsx
 - US-DE | DNREC Division of Fish & Wildlife | read OK (arcgis) | rows read 83, matched 73, unmatched 10, flagged 3 | https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17/query?where=1%3D1&outFields=AREA_NAME,TRACT_NAME,OWNER,GIS_ACRES&returnGeometry=false&f=json
-- US-DE | Delaware State Parks (DNREC) | read OK (arcgis) | rows read 1329, matched 579, unmatched 750, flagged 8 | https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/MapServer/0/query?where=MANAGEMENT%3D%27Delaware+State+Parks%27&outFields=NAME,TRACT,USE,ACRES&returnGeometry=false&f=json
+- US-DE | Delaware State Parks (DNREC) | read OK (arcgis) | rows read 1329, matched 579, unmatched 750, flagged 7 | https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/MapServer/0/query?where=MANAGEMENT%3D%27Delaware+State+Parks%27&outFields=NAME,TRACT,USE,ACRES&returnGeometry=false&f=json
 - US-DE | National Park Service | read OK (xlsx) | rows read 436, matched 60, unmatched 376, flagged 1 | https://www.nps.gov/subjects/lwcf/upload/NPS-Acreage-09-30-2026.xlsx
 - US-FL | Florida Fish and Wildlife Conservation Commission | read OK (arcgis) | rows read 284, matched 45, unmatched 239, flagged 0 | https://gis.myfwc.com/mapping/rest/services/Open_Data/Wildlife_Management_Areas_Florida/MapServer/1/query?where=1%3D1&outFields=NAME,TYPE,UNIT,MGT_TYPE,AREA_SQMI&returnGeometry=false&f=json
 - US-FL | Florida Forest Service (FDACS) | read OK (arcgis) | rows read 39, matched 0, unmatched 39, flagged 0 | https://gis.fdacs.gov/hosting/rest/services/Hosted/FFS_State_Forest_Public_View/FeatureServer/0/query?where=1%3D1&outFields=dof_name,forest,acres&returnGeometry=false&f=json
@@ -204,21 +205,47 @@
 - ? | U.S. Army Corps of Engineers (lakes) | skipped: no list (research says so) | rows read 0, matched 0, unmatched 0, flagged 0
 - ? | U.S. Fish and Wildlife Service (refuges) | failed: PDF table skipped: pypdf is not installed (pip install pypdf) | rows read 0, matched 0, unmatched 0, flagged 0 | https://www.fws.gov/sites/default/files/documents/2026-01/2025_annual_report_of_lands_data_tables-v2.pdf
 - ? | USDA Forest Service | failed: blocked by robots.txt | rows read 0, matched 0, unmatched 0, flagged 0 | https://usfs-public.app.box.com/index.php?rm=box_download_shared_file&shared_name=rhq1lm3rq3wauhtz6yulanuzoijaaqsw&file_id=f_2146441076608
+- ? | Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table) (hand copy) | read OK (hand sizes) | rows read 2, matched 2, unmatched 0, flagged 0
+- ? | Alaska State Parks (DNR) (park, state GIS table) (hand copy) | read OK (hand sizes) | rows read 3, matched 3, unmatched 0, flagged 0
+- ? | Arkansas Natural Heritage Commission (preserve, state GIS table) (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
+- ? | Arkansas State Parks (park, state GIS table) (hand copy) | read OK (hand sizes) | rows read 2, matched 2, unmatched 0, flagged 0
+- ? | Crown-Indigenous Relations and Northern Affairs Canada (Nunavut Map Viewer); SOURCE=GN-ENV (Government of Nunavut Environment) (hand copy) | read OK (hand sizes) | rows read 1, matched 0, unmatched 1, flagged 0
+- ? | DNR Management Units (hand copy) | read OK (hand sizes) | rows read 24, matched 24, unmatched 0, flagged 0
+- ? | Delaware Fish & Wildlife (DNREC) (wild, state GIS table) (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
+- ? | FWC (wild, state GIS table) (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
+- ? | Florida State Parks (DEP) (park, state GIS table) (hand copy) | read OK (hand sizes) | rows read 5, matched 5, unmatched 0, flagged 0
+- ? | Government of British Columbia (Historic Places) (hand copy) | read OK (hand sizes) | rows read 1, matched 0, unmatched 1, flagged 0
+- ? | Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data (hand copy) | read OK (hand sizes) | rows read 3, matched 0, unmatched 3, flagged 0
+- ? | Grey County GIS publishing Saugeen Valley Conservation Authority property data (hand copy) | read OK (hand sizes) | rows read 2, matched 0, unmatched 2, flagged 0
 - ? | HRM Parks (hand copy) | read OK (hand sizes) | rows read 2, matched 0, unmatched 2, flagged 0
+- ? | Hawaii Division of State Parks (DLNR) (park, state GIS table) (hand copy) | read OK (hand sizes) | rows read 3, matched 3, unmatched 0, flagged 0
+- ? | Heritage Properties (hand copy) | read OK (hand sizes) | rows read 1, matched 0, unmatched 1, flagged 0
+- ? | IDNR Properties (hand copy) | read OK (hand sizes) | rows read 4, matched 4, unmatched 0, flagged 0
+- ? | Indiana DNR properties (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
+- ? | Maryland DNR (Maryland Natural Areas) (preserve, state GIS table) (hand copy) | read OK (hand sizes) | rows read 3, matched 3, unmatched 0, flagged 0
 - ? | MassGIS / Executive Office of Energy and Environmental Affai (land, state GIS table) (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
+- ? | NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table) (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
 - ? | NH GRANIT conservation and public lands (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
-- ? | National Register of Historic Places Polygons (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
+- ? | NS_Lands_Proposed_or_Pending_Protection (hand copy) | read OK (hand sizes) | rows read 5, matched 0, unmatched 5, flagged 0
+- ? | National Register of Historic Places Polygons (hand copy) | read OK (hand sizes) | rows read 6, matched 6, unmatched 0, flagged 0
 - ? | National_Heritage_Areas_Updated2023 (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
+- ? | Natural Area Parcel Ownership (hand copy) | read OK (hand sizes) | rows read 6, matched 6, unmatched 0, flagged 0
 - ? | Nevada outdoor recreation areas (NV Division of State Parks SCORP, DCNR server) (land, state GIS table) (hand copy) | read OK (hand sizes) | rows read 3, matched 3, unmatched 0, flagged 0
-- ? | Parks (hand copy) | read OK (hand sizes) | rows read 2, matched 0, unmatched 2, flagged 0
-- ? | Property Boundaries (hand copy) | read OK (hand sizes) | rows read 9, matched 0, unmatched 9, flagged 0
-- ? | Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table) (hand copy) | read OK (hand sizes) | rows read 4, matched 4, unmatched 0, flagged 0
-- ? | unknown agency (hand copy) | read OK (hand sizes) | rows read 20, matched 1, unmatched 19, flagged 0
+- ? | Parks (hand copy) | read OK (hand sizes) | rows read 12, matched 0, unmatched 12, flagged 0
+- ? | Property Boundaries (hand copy) | read OK (hand sizes) | rows read 15, matched 0, unmatched 15, flagged 0
+- ? | State of Oregon (Oregon parklands) (park, state GIS table) (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
+- ? | Tennessee Wildlife Resources Agency (credit: TWRA) (wild, state GIS table) (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
+- ? | US Fish and Wildlife Service (hand copy) | read OK (hand sizes) | rows read 5, matched 5, unmatched 0, flagged 1
+- ? | Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table) (hand copy) | read OK (hand sizes) | rows read 8, matched 8, unmatched 0, flagged 0
+- ? | Washington Department of Fish and Wildlife (wild, state GIS table) (hand copy) | read OK (hand sizes) | rows read 6, matched 6, unmatched 0, flagged 0
+- ? | Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks) (land, state GIS table) (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
+- ? | Wisconsin DNR (land, state GIS table) (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
+- ? | unknown agency (hand copy) | read OK (hand sizes) | rows read 18, matched 2, unmatched 16, flagged 0
 
 ## Checks
 
 - WMA matched to a state park (must be 0): 0
-- flags: another official list differs by more than 10%: 8; over 50x the current outline: 2; possible duplicate rows: 6
+- flags: another official list differs by more than 10%: 8; over 50x the current outline: 2; possible duplicate rows: 8
 - answer key: 1 matched parks have a hand-checked size; 1 agree within 10% (100.0%; pass mark 95%)
 
 These sizes are candidates for the waiting room (kind `acres`); the club's rules and chat 11 decide.

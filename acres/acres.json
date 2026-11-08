@@ -4119,7 +4119,7 @@
     "source_url": "https://www.nps.gov/subjects/lwcf/upload/NPS-Acreage-09-30-2026.xlsx"
    }
   ],
-  "outline_acres": 1007843.0,
+  "outline_acres": 2015597.0,
   "park_name": "Glacier National Park"
  },
  "US-0030": {
@@ -5031,7 +5031,7 @@
     "source_url": "https://www.nps.gov/subjects/lwcf/upload/NPS-Acreage-09-30-2026.xlsx"
    }
   ],
-  "outline_acres": 67728.0,
+  "outline_acres": 67727.0,
   "park_name": "Haleakala National Park"
  },
  "US-0037": {
@@ -5956,7 +5956,7 @@
   "match": "number",
   "parts": 1,
   "source_url": "",
-  "read_date": "2026-11-02",
+  "read_date": "2026-11-08",
   "why": "unknown agency (hand copy) row \"Fort Gaines\" (32 acres): the list row carries the park number US-0042",
   "flags": [],
   "park_name": "Fort Gaines National Historic Site"
@@ -8012,6 +8012,22 @@
   "outline_acres": 236393.0,
   "park_name": "Mount Rainier National Park"
  },
+ "US-0054": {
+  "acres": 4226.0,
+  "value_given": 4226.0,
+  "unit_given": "acres",
+  "agency": "National Park Service",
+  "record_name": "Nez Perce National Historical Park",
+  "how": "hand copy (National Park Service, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "National Park Service (hand copy) row \"Nez Perce National Historical Park\" (4,226 acres): the list row carries the park number US-0054",
+  "flags": [],
+  "outline_acres": 1403.0,
+  "park_name": "Nez Perce National Historical Park"
+ },
  "US-0055": {
   "acres": 504780.94,
   "value_given": 504780.94,
@@ -9605,7 +9621,7 @@
     "source_url": "https://www.nps.gov/subjects/lwcf/upload/NPS-Acreage-09-30-2026.xlsx"
    }
   ],
-  "outline_acres": 366212.0,
+  "outline_acres": 393096.0,
   "park_name": "Shenandoah National Park"
  },
  "US-0067": {
@@ -10319,7 +10335,7 @@
     "source_url": "https://www.nps.gov/subjects/lwcf/upload/NPS-Acreage-09-30-2026.xlsx"
    }
   ],
-  "outline_acres": 2003734.0,
+  "outline_acres": 2359474.0,
   "park_name": "Yellowstone National Park"
  },
  "US-0071": {
@@ -10843,7 +10859,7 @@
   "read_date": "2026-11-02",
   "why": "Iowa DNR Wildlife Bureau row \"NEAL SMITH NATIONAL WILDLIFE REFUGE\" (4,230 acres): same name \"neal smith\" + same kind (national wildlife refuge) in US-IA; no county or point on the list",
   "flags": [],
-  "outline_acres": 22075.0,
+  "outline_acres": 22072.0,
   "park_name": "Neal Smith National Wildlife Refuge"
  },
  "US-0272": {
@@ -10884,6 +10900,28 @@
   "outline_acres": 9240.0,
   "park_name": "Union Slough National Wildlife Refuge"
  },
+ "US-0329": {
+  "acres": 80448.0,
+  "value_given": [
+   26816.0,
+   26816.0,
+   26816.0
+  ],
+  "unit_given": "acres",
+  "agency": "US Fish and Wildlife Service",
+  "record_name": "SILVIO O. CONTE NATIONAL FISH AND WILDLIFE REFUGE",
+  "how": "hand copy (US Fish and Wildlife Service, page not given)",
+  "match": "number",
+  "parts": 3,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "3 rows of US Fish and Wildlife Service (hand copy) added together (SILVIO O. CONTE NATIONAL FISH AND WILDLIFE REFUGE); every row matched US-0329 by number",
+  "flags": [
+   "possible duplicate rows (same name and size added twice)"
+  ],
+  "outline_acres": 54180.0,
+  "park_name": "Silvio O Conte National Wildlife Refuge"
+ },
  "US-0340": {
   "acres": 9.62,
   "value_given": 9.618903445436816,
@@ -10915,6 +10953,22 @@
   "flags": [],
   "outline_acres": 10271.0,
   "park_name": "Northern Tallgrass Prairie National Wildlife Refuge"
+ },
+ "US-0374": {
+  "acres": 5326.0,
+  "value_given": 5326.0,
+  "unit_given": "acres",
+  "agency": "US Fish and Wildlife Service",
+  "record_name": "BIG MUDDY NATIONAL FISH AND WILDLIFE REFUGE",
+  "how": "hand copy (US Fish and Wildlife Service, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "US Fish and Wildlife Service (hand copy) row \"BIG MUDDY NATIONAL FISH AND WILDLIFE REFUGE\" (5,326 acres): the list row carries the park number US-0374",
+  "flags": [],
+  "outline_acres": 10926.0,
+  "park_name": "Big Muddy National Wildlife Refuge"
  },
  "US-0378": {
   "acres": 2883.6,
@@ -11060,6 +11114,22 @@
   ],
   "outline_acres": 26.0,
   "park_name": "Washita National Wildlife Refuge"
+ },
+ "US-0526": {
+  "acres": 732.0,
+  "value_given": 732.0,
+  "unit_given": "acres",
+  "agency": "IDNR Properties",
+  "record_name": "Wildcat Hollow",
+  "how": "hand copy (IDNR Properties, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "IDNR Properties (hand copy) row \"Wildcat Hollow\" (732 acres): the list row carries the park number US-0526",
+  "flags": [],
+  "outline_acres": 1496.0,
+  "park_name": "Wildcat Hollow State Nature Preserve"
  },
  "US-0629": {
   "acres": 1360.0,
@@ -12073,7 +12143,7 @@
   "read_date": "2026-11-02",
   "why": "National Park Service row \"BIGHORN CANYON NRA\" (120,296.2 acres): same name \"bighorn canyon\" + same kind (national recreation area) in US-MT; no county or point on the list",
   "flags": [],
-  "outline_acres": 27953.0,
+  "outline_acres": 147740.0,
   "park_name": "Bighorn Canyon National Recreation Area"
  },
  "US-0676": {
@@ -13060,6 +13130,24 @@
   "outline_acres": 382.0,
   "park_name": "Lake Lenore Caves State Park"
  },
+ "US-0731": {
+  "acres": 209918.0,
+  "value_given": 209918.0,
+  "unit_given": "acres",
+  "agency": "USDA Forest Service",
+  "record_name": "Columbia River Gorge National Scenic Area",
+  "how": "hand copy (USDA Forest Service, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "USDA Forest Service (hand copy) row \"Columbia River Gorge National Scenic Area\" (209,918 acres): the list row carries the park number US-0731",
+  "flags": [
+   "over 50x the current outline (561 ac)"
+  ],
+  "outline_acres": 561.0,
+  "park_name": "Columbia River Gorge National Forest"
+ },
  "US-0765": {
   "acres": 16267.53,
   "value_given": 16267.53,
@@ -13532,6 +13620,22 @@
   "outline_acres": 85.0,
   "park_name": "Gateway Arch National Park"
  },
+ "US-0822": {
+  "acres": 60.0,
+  "value_given": 60.0,
+  "unit_given": "acres",
+  "agency": "National Register of Historic Places Polygons",
+  "record_name": "Fort Smith National Historic Site",
+  "how": "hand copy (National Register of Historic Places Polygons, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "National Register of Historic Places Polygons (hand copy) row \"Fort Smith National Historic Site\" (60 acres): the list row carries the park number US-0822",
+  "flags": [],
+  "outline_acres": 32.0,
+  "park_name": "Fort Smith National Historic Site"
+ },
  "US-0843": {
   "acres": 2.0,
   "value_given": 2.0,
@@ -13776,6 +13880,22 @@
   "outline_acres": 148226.0,
   "park_name": "White Sands National Park"
  },
+ "US-0980": {
+  "acres": 635.0,
+  "value_given": 635.0,
+  "unit_given": "acres",
+  "agency": "IDNR Properties",
+  "record_name": "Beall Woods",
+  "how": "hand copy (IDNR Properties, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "IDNR Properties (hand copy) row \"Beall Woods\" (635 acres): the list row carries the park number US-0980",
+  "flags": [],
+  "outline_acres": 635.0,
+  "park_name": "Beall Woods State Park"
+ },
  "US-10063": {
   "acres": 680.0,
   "value_given": 680.0,
@@ -13995,6 +14115,21 @@
   "outline_acres": 308.0,
   "park_name": "Dewey County Wildlife Management Area"
  },
+ "US-10237": {
+  "acres": 160.0,
+  "value_given": 160.0,
+  "unit_given": "acres",
+  "agency": "Indiana DNR properties",
+  "record_name": "Mongoquinong Nature Preserve",
+  "how": "hand copy (Indiana DNR properties, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Indiana DNR properties (hand copy) row \"Mongoquinong Nature Preserve\" (160 acres): the list row carries the park number US-10237",
+  "flags": [],
+  "park_name": "Mongoquinong State Nature Preserve"
+ },
  "US-10306": {
   "acres": 357.38,
   "value_given": 357.38,
@@ -14109,7 +14244,6 @@
   "read_date": "2026-11-02",
   "why": "Alabama State Parks (ADCNR) (hand copy) row \"Buck's Pocket\" (2,000 acres): same name \"bucks pocket\" + same kind (state park) in US-AL; no county or point on the list",
   "flags": [],
-  "outline_acres": 669.0,
   "park_name": "Buck's Pocket State Park"
  },
  "US-1036": {
@@ -14189,7 +14323,7 @@
   "read_date": "2026-11-02",
   "why": "Alabama State Parks (ADCNR) (hand copy) row \"DeSoto\" (3,502 acres): same name \"desoto\" + same kind (state park) in US-AL; no county or point on the list",
   "flags": [],
-  "outline_acres": 1059.0,
+  "outline_acres": 401.0,
   "park_name": "De Soto State Park"
  },
  "US-1041": {
@@ -14320,6 +14454,21 @@
   "outline_acres": 314.0,
   "park_name": "Meaher State Park"
  },
+ "US-10476": {
+  "acres": 8.0,
+  "value_given": 8.0,
+  "unit_given": "acres",
+  "agency": "State of Oregon (Oregon parklands) (park, state GIS table)",
+  "record_name": "BLM",
+  "how": "hand copy (State of Oregon (Oregon parklands) (park, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "State of Oregon (Oregon parklands) (park, state GIS table) (hand copy) row \"BLM\" (8 acres): the list row carries the park number US-10476",
+  "flags": [],
+  "park_name": "Monument BLM Recreation Management Area"
+ },
  "US-1048": {
   "acres": 2140.0,
   "value_given": 2140.0,
@@ -14405,7 +14554,7 @@
   "read_date": "2026-11-02",
   "why": "7 rows of Delaware State Parks (DNREC) added together (Fork Branch Nature Preserve); every row matched US-10531 by name+kind",
   "flags": [],
-  "outline_acres": 640.0,
+  "outline_acres": 878.0,
   "park_name": "Fork Branch State Nature Preserve"
  },
  "US-10619": {
@@ -14421,7 +14570,7 @@
   "read_date": "2026-11-02",
   "why": "Florida Fish and Wildlife Conservation Commission row \"Little River Wildlife Management Area\" (3.4363 acres): same name \"little river\" + same kind (WMA) in US-FL; no county or point on the list",
   "flags": [],
-  "outline_acres": 5703.0,
+  "outline_acres": 5701.0,
   "park_name": "Little River Wildlife Management Area"
  },
  "US-10656": {
@@ -14447,6 +14596,51 @@
   ],
   "outline_acres": 2846.0,
   "park_name": "Barn Island Wildlife Management Area"
+ },
+ "US-10751": {
+  "acres": 1495.0,
+  "value_given": 1495.0,
+  "unit_given": "acres",
+  "agency": "Maryland DNR (Maryland Natural Areas) (preserve, state GIS table)",
+  "record_name": "Idywild",
+  "how": "hand copy (Maryland DNR (Maryland Natural Areas) (preserve, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Maryland DNR (Maryland Natural Areas) (preserve, state GIS table) (hand copy) row \"Idywild\" (1,495 acres): the list row carries the park number US-10751",
+  "flags": [],
+  "park_name": "Idylwild Natural Area"
+ },
+ "US-10763": {
+  "acres": 16870.0,
+  "value_given": 16870.0,
+  "unit_given": "acres",
+  "agency": "Maryland DNR (Maryland Natural Areas) (preserve, state GIS table)",
+  "record_name": "Fishing Bay Marshes",
+  "how": "hand copy (Maryland DNR (Maryland Natural Areas) (preserve, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Maryland DNR (Maryland Natural Areas) (preserve, state GIS table) (hand copy) row \"Fishing Bay Marshes\" (16,870 acres): the list row carries the park number US-10763",
+  "flags": [],
+  "park_name": "Fishing Bay Marshes Natural Area"
+ },
+ "US-10765": {
+  "acres": 488.0,
+  "value_given": 488.0,
+  "unit_given": "acres",
+  "agency": "Maryland DNR (Maryland Natural Areas) (preserve, state GIS table)",
+  "record_name": "Millington",
+  "how": "hand copy (Maryland DNR (Maryland Natural Areas) (preserve, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Maryland DNR (Maryland Natural Areas) (preserve, state GIS table) (hand copy) row \"Millington\" (488 acres): the list row carries the park number US-10765",
+  "flags": [],
+  "park_name": "Millington Natural Area"
  },
  "US-10785": {
   "acres": 1344.38,
@@ -14475,6 +14669,21 @@
   ],
   "outline_acres": 5307.0,
   "park_name": "Honey Creek State Wildlife Area"
+ },
+ "US-1080": {
+  "acres": 828.0,
+  "value_given": 828.0,
+  "unit_given": "acres",
+  "agency": "Arkansas State Parks (park, state GIS table)",
+  "record_name": "DeGray Lake Resort State Park",
+  "how": "hand copy (Arkansas State Parks (park, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Arkansas State Parks (park, state GIS table) (hand copy) row \"DeGray Lake Resort State Park\" (828 acres): the list row carries the park number US-1080",
+  "flags": [],
+  "park_name": "DeGray Lake Resort State Park"
  },
  "US-10952": {
   "acres": 2126.92,
@@ -14588,6 +14797,22 @@
   "outline_acres": 2699.0,
   "park_name": "Bishop Swamp WMA Wildlife Management Area"
  },
+ "US-11027": {
+  "acres": 384.0,
+  "value_given": 384.0,
+  "unit_given": "acres",
+  "agency": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
+  "record_name": "Big Canoe Creek",
+  "how": "hand copy (Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table) (hand copy) row \"Big Canoe Creek\" (384 acres): the list row carries the park number US-11027",
+  "flags": [],
+  "outline_acres": 382.0,
+  "park_name": "Big Canoe Creek Nature Reserve"
+ },
  "US-11050": {
   "acres": 323.78,
   "value_given": 323.78471177,
@@ -14603,6 +14828,22 @@
   "flags": [],
   "outline_acres": 972.0,
   "park_name": "Ice Age Fossils State Park"
+ },
+ "US-1112": {
+  "acres": 15.0,
+  "value_given": 15.0,
+  "unit_given": "acres",
+  "agency": "Arkansas State Parks (park, state GIS table)",
+  "record_name": "Powhatan Historic State Park",
+  "how": "hand copy (Arkansas State Parks (park, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Arkansas State Parks (park, state GIS table) (hand copy) row \"Powhatan Historic State Park\" (15 acres): the list row carries the park number US-1112",
+  "flags": [],
+  "outline_acres": 23.0,
+  "park_name": "Powhatan State Park"
  },
  "US-11147": {
   "acres": 132.98,
@@ -14635,6 +14876,38 @@
   "flags": [],
   "outline_acres": 1166.0,
   "park_name": "Hardwood Creek WMA Wildlife Management Area"
+ },
+ "US-11165": {
+  "acres": 55.0,
+  "value_given": 55.0,
+  "unit_given": "acres",
+  "agency": "Arkansas Natural Heritage Commission (preserve, state GIS table)",
+  "record_name": "Chalk Bluff Natural Area",
+  "how": "hand copy (Arkansas Natural Heritage Commission (preserve, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Arkansas Natural Heritage Commission (preserve, state GIS table) (hand copy) row \"Chalk Bluff Natural Area\" (55 acres): the list row carries the park number US-11165",
+  "flags": [],
+  "outline_acres": 55.0,
+  "park_name": "Chalk Bluff Battlefield Park Recreation Park"
+ },
+ "US-11215": {
+  "acres": 1065.0,
+  "value_given": 1065.0,
+  "unit_given": "acres",
+  "agency": "unknown agency",
+  "record_name": "Bear Paw Battlefield",
+  "how": "hand copy (unknown agency, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "unknown agency (hand copy) row \"Bear Paw Battlefield\" (1,065 acres): the list row carries the park number US-11215",
+  "flags": [],
+  "outline_acres": 1064.0,
+  "park_name": "Bear Paw Battlefield National Monument"
  },
  "US-11241": {
   "acres": 31466.83,
@@ -14790,6 +15063,54 @@
   "flags": [],
   "outline_acres": 1577.0,
   "park_name": "Paw Paw State Game Land"
+ },
+ "US-11699": {
+  "acres": 290.0,
+  "value_given": 290.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Savage Fen",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Savage Fen\" (290 acres): the list row carries the park number US-11699",
+  "flags": [],
+  "outline_acres": 579.0,
+  "park_name": "Savage FEN SNA State Sanctuary"
+ },
+ "US-11700": {
+  "acres": 222.0,
+  "value_given": 222.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Wolsfeld Woods",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Wolsfeld Woods\" (222 acres): the list row carries the park number US-11700",
+  "flags": [],
+  "outline_acres": 443.0,
+  "park_name": "Wolsfeld Woods SNA State Sanctuary"
+ },
+ "US-11701": {
+  "acres": 141.0,
+  "value_given": 141.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Wood-Rill",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Wood-Rill\" (141 acres): the list row carries the park number US-11701",
+  "flags": [],
+  "outline_acres": 288.0,
+  "park_name": "Wood-Rill SNA State Sanctuary"
  },
  "US-11712": {
   "acres": 504.4,
@@ -14959,6 +15280,21 @@
   "outline_acres": 447.0,
   "park_name": "Orchard Mesa State Wildlife Area"
  },
+ "US-11955": {
+  "acres": 160.0,
+  "value_given": 160.0,
+  "unit_given": "acres",
+  "agency": "US Fish and Wildlife Service",
+  "record_name": "Genoa National Fish Hatchery",
+  "how": "hand copy (US Fish and Wildlife Service, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "US Fish and Wildlife Service (hand copy) row \"Genoa National Fish Hatchery\" (160 acres): the list row carries the park number US-11955",
+  "flags": [],
+  "park_name": "Genoa National Fish Hatchery"
+ },
  "US-11962": {
   "acres": 2732.61,
   "value_given": 2732.61,
@@ -15088,7 +15424,7 @@
   "read_date": "2026-11-02",
   "why": "Oklahoma Department of Wildlife Conservation (hand copy) row \"Barren Fork WMA\" (497.7 acres): same name \"barren fork\" + same kind (WMA) in US-OK; no county or point on the list",
   "flags": [],
-  "outline_acres": 1014.0,
+  "outline_acres": 507.0,
   "park_name": "Barren Fork Wildlife Management Area"
  },
  "US-12058": {
@@ -15106,6 +15442,22 @@
   "flags": [],
   "outline_acres": 1677.0,
   "park_name": "Gordie Mikkelson Wildlife Management Area"
+ },
+ "US-12064": {
+  "acres": 24.0,
+  "value_given": 24.0,
+  "unit_given": "acres",
+  "agency": "Tennessee Wildlife Resources Agency (credit: TWRA) (wild, state GIS table)",
+  "record_name": "Henderson Swamp",
+  "how": "hand copy (Tennessee Wildlife Resources Agency (credit: TWRA) (wild, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Tennessee Wildlife Resources Agency (credit: TWRA) (wild, state GIS table) (hand copy) row \"Henderson Swamp\" (24 acres): the list row carries the park number US-12064",
+  "flags": [],
+  "outline_acres": 24.0,
+  "park_name": "Henderson Swamp State Wilderness Area"
  },
  "US-12073": {
   "acres": 1508.32,
@@ -15503,7 +15855,7 @@
   "read_date": "2026-11-02",
   "why": "Iowa DNR Wildlife Bureau row \"LOESS HILLS WILDLIFE AREA\" (3,119 acres): same name \"loess hills\" + same kind (WMA) in US-IA; no county or point on the list",
   "flags": [],
-  "outline_acres": 17920.0,
+  "outline_acres": 8245.0,
   "park_name": "Loess Hills Wildlife Area"
  },
  "US-1220": {
@@ -15576,7 +15928,7 @@
   "read_date": "2026-11-02",
   "why": "8 rows of Colorado Parks and Wildlife added together (James M. Robb - Colorado River State Park; James M. Robb - Colorado River State Park - 34 Road section; James M. Robb - Colorado River State Park - Connected Lakes section; James M. Robb - Colorado River State Park - Corn Lake section; James M. Robb - Colorado River State Park - Fruita section; James M. Robb - Colorado River State Park - Pear Park section); every row matched US-1223 by name+kind",
   "flags": [],
-  "outline_acres": 1980.0,
+  "outline_acres": 1976.0,
   "park_name": "James M. Robb - Colorado River State Park"
  },
  "US-1224": {
@@ -15892,7 +16244,6 @@
   "read_date": "2026-11-02",
   "why": "3 rows of Minnesota DNR Fish & Wildlife added together (Whitewater WMA: South Branch Unit; Whitewater WMA: Main Branch Unit; Whitewater WMA: North Branch Unit); every row matched US-12378 by name+kind",
   "flags": [],
-  "outline_acres": 27451.0,
   "park_name": "Whitewater Wildlife Management Area"
  },
  "US-1238": {
@@ -16343,7 +16694,7 @@
   "read_date": "2026-11-02",
   "why": "Colorado Parks and Wildlife row \"Vega State Park\" (1,842.1054 acres): same name \"vega\" + same kind (state park) in US-CO; no county or point on the list",
   "flags": [],
-  "outline_acres": 7366.0,
+  "outline_acres": 5524.0,
   "park_name": "Vega State Park"
  },
  "US-1250": {
@@ -16593,6 +16944,22 @@
   "outline_acres": 1254.0,
   "park_name": "Huron Flats Wildlife Area"
  },
+ "US-12678": {
+  "acres": 22.0,
+  "value_given": 22.0,
+  "unit_given": "acres",
+  "agency": "Alaska State Parks (DNR) (park, state GIS table)",
+  "record_name": "Little Nelchina State Recreation Site",
+  "how": "hand copy (Alaska State Parks (DNR) (park, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Alaska State Parks (DNR) (park, state GIS table) (hand copy) row \"Little Nelchina State Recreation Site\" (22 acres): the list row carries the park number US-12678",
+  "flags": [],
+  "outline_acres": 66.0,
+  "park_name": "Little Nelchina State Recreation Area"
+ },
  "US-12680": {
   "acres": 43.0,
   "value_given": 43.0,
@@ -16798,7 +17165,7 @@
   "read_date": "2026-11-02",
   "why": "Iowa DNR Wildlife Bureau row \"WEST SALT CREEK WILDLIFE AREA\" (86 acres): same name \"west salt creek\" + same kind (WMA) in US-IA; no county or point on the list",
   "flags": [],
-  "outline_acres": 248.0,
+  "outline_acres": 254.0,
   "park_name": "West Salt Creek Wildlife Area"
  },
  "US-12706": {
@@ -16955,7 +17322,7 @@
   "read_date": "2026-11-02",
   "why": "4 rows of Minnesota DNR Fish & Wildlife added together (Beaver Creek WMA: Central Unit; Beaver Creek WMA; Beaver Creek WMA: South West Unit; Beaver Creek WMA: North East Unit); every row matched US-12811 by name+kind",
   "flags": [],
-  "outline_acres": 2005.0,
+  "outline_acres": 781.0,
   "park_name": "Beaver Creek Wildlife Management Area"
  },
  "US-12812": {
@@ -16992,6 +17359,37 @@
   "flags": [],
   "outline_acres": 286.0,
   "park_name": "Thorpe Wildlife Management Area"
+ },
+ "US-12830": {
+  "acres": 7.0,
+  "value_given": 7.0,
+  "unit_given": "acres",
+  "agency": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks) (land, state GIS table)",
+  "record_name": "Old Ruby State Park Heritage Site",
+  "how": "hand copy (Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks) (land, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks) (land, state GIS table) (hand copy) row \"Old Ruby State Park Heritage Site\" (7 acres): the list row carries the park number US-12830",
+  "flags": [],
+  "park_name": "Old Ruby State Park State Heritage Area"
+ },
+ "US-12938": {
+  "acres": 359.0,
+  "value_given": 359.0,
+  "unit_given": "acres",
+  "agency": "Delaware Fish & Wildlife (DNREC) (wild, state GIS table)",
+  "record_name": "Industrial Forest Lands - Laurel Complex",
+  "how": "hand copy (Delaware Fish & Wildlife (DNREC) (wild, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Delaware Fish & Wildlife (DNREC) (wild, state GIS table) (hand copy) row \"Industrial Forest Lands - Laurel Complex\" (359 acres): the list row carries the park number US-12938",
+  "flags": [],
+  "outline_acres": 1093.0,
+  "park_name": "Laurel Industrial Forest Land State Wildlife Area"
  },
  "US-13006": {
   "acres": 1556.39,
@@ -17544,6 +17942,98 @@
   "flags": [],
   "outline_acres": 2719.0,
   "park_name": "Chapman State Park"
+ },
+ "US-13392": {
+  "acres": 11.0,
+  "value_given": 11.0,
+  "unit_given": "acres",
+  "agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+  "record_name": "Massey Bar",
+  "how": "hand copy (Washington Department of Fish and Wildlife (wild, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Washington Department of Fish and Wildlife (wild, state GIS table) (hand copy) row \"Massey Bar\" (11 acres): the list row carries the park number US-13392",
+  "flags": [],
+  "park_name": "Massey Bar State Recreation Site"
+ },
+ "US-13395": {
+  "acres": 5.0,
+  "value_given": 5.0,
+  "unit_given": "acres",
+  "agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+  "record_name": "County Line",
+  "how": "hand copy (Washington Department of Fish and Wildlife (wild, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Washington Department of Fish and Wildlife (wild, state GIS table) (hand copy) row \"County Line\" (5 acres): the list row carries the park number US-13395",
+  "flags": [],
+  "park_name": "County Line State Recreation Site"
+ },
+ "US-13396": {
+  "acres": 1.0,
+  "value_given": 1.0,
+  "unit_given": "acres",
+  "agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+  "record_name": "Steel Bridge",
+  "how": "hand copy (Washington Department of Fish and Wildlife (wild, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Washington Department of Fish and Wildlife (wild, state GIS table) (hand copy) row \"Steel Bridge\" (1 acres): the list row carries the park number US-13396",
+  "flags": [],
+  "park_name": "Steel Bridge State Recreation Site"
+ },
+ "US-13397": {
+  "acres": 2.0,
+  "value_given": 2.0,
+  "unit_given": "acres",
+  "agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+  "record_name": "Modrow Bridge",
+  "how": "hand copy (Washington Department of Fish and Wildlife (wild, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Washington Department of Fish and Wildlife (wild, state GIS table) (hand copy) row \"Modrow Bridge\" (2 acres): the list row carries the park number US-13397",
+  "flags": [],
+  "outline_acres": 1.0,
+  "park_name": "Modrow Bridge State Recreation Site"
+ },
+ "US-13398": {
+  "acres": 2.0,
+  "value_given": 2.0,
+  "unit_given": "acres",
+  "agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+  "record_name": "Beginners' Hole",
+  "how": "hand copy (Washington Department of Fish and Wildlife (wild, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Washington Department of Fish and Wildlife (wild, state GIS table) (hand copy) row \"Beginners' Hole\" (2 acres): the list row carries the park number US-13398",
+  "flags": [],
+  "outline_acres": 1.0,
+  "park_name": "Beginner's Hole State Recreation Site"
+ },
+ "US-13399": {
+  "acres": 6.0,
+  "value_given": 6.0,
+  "unit_given": "acres",
+  "agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+  "record_name": "Hand",
+  "how": "hand copy (Washington Department of Fish and Wildlife (wild, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Washington Department of Fish and Wildlife (wild, state GIS table) (hand copy) row \"Hand\" (6 acres): the list row carries the park number US-13399",
+  "flags": [],
+  "park_name": "Hand State Recreation Site"
  },
  "US-1340": {
   "acres": 134.53,
@@ -18268,6 +18758,150 @@
   "outline_acres": 144.0,
   "park_name": "Hyner View State Park"
  },
+ "US-13631": {
+  "acres": 544.0,
+  "value_given": 544.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Winter WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Winter WMA\" (544 acres): the list row carries the park number US-13631",
+  "flags": [],
+  "outline_acres": 581.0,
+  "park_name": "Winter Wildlife Management Area"
+ },
+ "US-13632": {
+  "acres": 725.0,
+  "value_given": 725.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Two Rivers WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Two Rivers WMA\" (725 acres): the list row carries the park number US-13632",
+  "flags": [],
+  "outline_acres": 1448.0,
+  "park_name": "Two Rivers Wildlife Management Area"
+ },
+ "US-13633": {
+  "acres": 5320.0,
+  "value_given": 5320.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Talcot Lake WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Talcot Lake WMA\" (5,320 acres): the list row carries the park number US-13633",
+  "flags": [],
+  "outline_acres": 10580.0,
+  "park_name": "Talcot Lake Wildlife Management Area"
+ },
+ "US-13634": {
+  "acres": 756.0,
+  "value_given": 756.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Sodus WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Sodus WMA\" (756 acres): the list row carries the park number US-13634",
+  "flags": [],
+  "outline_acres": 1343.0,
+  "park_name": "Sodus Wildlife Management Area"
+ },
+ "US-13635": {
+  "acres": 969.0,
+  "value_given": 969.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Phyllis Voosen WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Phyllis Voosen WMA\" (969 acres): the list row carries the park number US-13635",
+  "flags": [],
+  "outline_acres": 1539.0,
+  "park_name": "Phyllis Voosen Wildlife Management Area"
+ },
+ "US-13636": {
+  "acres": 572.0,
+  "value_given": 572.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Lyons WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Lyons WMA\" (572 acres): the list row carries the park number US-13636",
+  "flags": [],
+  "outline_acres": 1143.0,
+  "park_name": "Lyons Wildlife Management Area"
+ },
+ "US-13637": {
+  "acres": 1362.0,
+  "value_given": 1362.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Lamberton WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Lamberton WMA\" (1,362 acres): the list row carries the park number US-13637",
+  "flags": [],
+  "outline_acres": 2555.0,
+  "park_name": "Lamberton Wildlife Management Area"
+ },
+ "US-13638": {
+  "acres": 951.0,
+  "value_given": 951.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Lake Maria WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Lake Maria WMA\" (951 acres): the list row carries the park number US-13638",
+  "flags": [],
+  "outline_acres": 1619.0,
+  "park_name": "Lake Maria Wildlife Management Area"
+ },
+ "US-13639": {
+  "acres": 589.0,
+  "value_given": 589.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Hopeful WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Hopeful WMA\" (589 acres): the list row carries the park number US-13639",
+  "flags": [],
+  "outline_acres": 590.0,
+  "park_name": "Hopeful Wildlife Management Area"
+ },
  "US-1364": {
   "acres": 2082.07,
   "value_given": 2082.07177068,
@@ -18284,6 +18918,166 @@
   "outline_acres": 6127.0,
   "park_name": "Kettle Creek State Park"
  },
+ "US-13640": {
+  "acres": 638.0,
+  "value_given": 638.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Hole-In-Mountain WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Hole-In-Mountain WMA\" (638 acres): the list row carries the park number US-13640",
+  "flags": [],
+  "outline_acres": 1277.0,
+  "park_name": "Hole-In-Mountain Wildlife Management Area"
+ },
+ "US-13641": {
+  "acres": 793.0,
+  "value_given": 793.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Green Valley WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Green Valley WMA\" (793 acres): the list row carries the park number US-13641",
+  "flags": [],
+  "outline_acres": 1588.0,
+  "park_name": "Green Valley Wildlife Management Area"
+ },
+ "US-13642": {
+  "acres": 517.0,
+  "value_given": 517.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Fenmont WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Fenmont WMA\" (517 acres): the list row carries the park number US-13642",
+  "flags": [],
+  "outline_acres": 1033.0,
+  "park_name": "Fenmont Wildlife Management Area"
+ },
+ "US-13643": {
+  "acres": 1103.0,
+  "value_given": 1103.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Coon Creek WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Coon Creek WMA\" (1,103 acres): the list row carries the park number US-13643",
+  "flags": [],
+  "outline_acres": 2152.0,
+  "park_name": "Coon Creek Wildlife Management Area"
+ },
+ "US-13644": {
+  "acres": 653.0,
+  "value_given": 653.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Cedar Rock WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Cedar Rock WMA\" (653 acres): the list row carries the park number US-13644",
+  "flags": [],
+  "outline_acres": 948.0,
+  "park_name": "Cedar Rock Wildlife Management Area"
+ },
+ "US-13645": {
+  "acres": 617.0,
+  "value_given": 617.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Budolfson WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Budolfson WMA\" (617 acres): the list row carries the park number US-13645",
+  "flags": [],
+  "outline_acres": 1053.0,
+  "park_name": "Budolfson Wildlife Management Area"
+ },
+ "US-13646": {
+  "acres": 664.0,
+  "value_given": 664.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Bohemian WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Bohemian WMA\" (664 acres): the list row carries the park number US-13646",
+  "flags": [],
+  "outline_acres": 1330.0,
+  "park_name": "Bohemian Wildlife Management Area"
+ },
+ "US-13647": {
+  "acres": 538.0,
+  "value_given": 538.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Badger Lake WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Badger Lake WMA\" (538 acres): the list row carries the park number US-13647",
+  "flags": [],
+  "outline_acres": 1021.0,
+  "park_name": "Badger Lake Wildlife Management Area"
+ },
+ "US-13648": {
+  "acres": 636.0,
+  "value_given": 636.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Altona WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Altona WMA\" (636 acres): the list row carries the park number US-13648",
+  "flags": [],
+  "outline_acres": 1188.0,
+  "park_name": "Altona Wildlife Management Area"
+ },
+ "US-13649": {
+  "acres": 87.0,
+  "value_given": 87.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Old Koschak Farm WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Old Koschak Farm WMA\" (87 acres): the list row carries the park number US-13649",
+  "flags": [],
+  "outline_acres": 176.0,
+  "park_name": "Old Koschak Farm Wildlife Management Area"
+ },
  "US-1365": {
   "acres": 1178.05,
   "value_given": 1178.04636754,
@@ -18299,6 +19093,38 @@
   "flags": [],
   "outline_acres": 3591.0,
   "park_name": "Keystone State Park"
+ },
+ "US-13650": {
+  "acres": 746.0,
+  "value_given": 746.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Darwin S. Myers WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Darwin S. Myers WMA\" (746 acres): the list row carries the park number US-13650",
+  "flags": [],
+  "outline_acres": 749.0,
+  "park_name": "Darwin S. Meyers Wildlife Management Area"
+ },
+ "US-13651": {
+  "acres": 612.0,
+  "value_given": 612.0,
+  "unit_given": "acres",
+  "agency": "DNR Management Units",
+  "record_name": "Zim WMA",
+  "how": "hand copy (DNR Management Units, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "DNR Management Units (hand copy) row \"Zim WMA\" (612 acres): the list row carries the park number US-13651",
+  "flags": [],
+  "outline_acres": 908.0,
+  "park_name": "Zim Wildlife Management Area"
  },
  "US-1366": {
   "acres": 314.85,
@@ -19618,7 +20444,7 @@
     "source_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_Managed_Lands_Dissolved_WTM_Ext/MapServer/0/query?where=FUNCTION_MGT_CODE%3D%27PR%27&outFields=PROP_NAME%2CPROP_CODE%2CTRANS_TYPE_CODE%2CACRES&returnGeometry=false&f=json"
    }
   ],
-  "outline_acres": 14779.0,
+  "outline_acres": 13102.0,
   "park_name": "Buckhorn State Park"
  },
  "US-1444": {
@@ -19984,7 +20810,7 @@
     "source_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_Managed_Lands_Dissolved_WTM_Ext/MapServer/0/query?where=FUNCTION_MGT_CODE%3D%27PR%27&outFields=PROP_NAME%2CPROP_CODE%2CTRANS_TYPE_CODE%2CACRES&returnGeometry=false&f=json"
    }
   ],
-  "outline_acres": 5245.0,
+  "outline_acres": 4027.0,
   "park_name": "Kinnickinnic State Park"
  },
  "US-1458": {
@@ -20584,7 +21410,7 @@
     "source_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_Managed_Lands_Dissolved_WTM_Ext/MapServer/0/query?where=FUNCTION_MGT_CODE%3D%27PR%27&outFields=PROP_NAME%2CPROP_CODE%2CTRANS_TYPE_CODE%2CACRES&returnGeometry=false&f=json"
    }
   ],
-  "outline_acres": 9383.0,
+  "outline_acres": 8565.0,
   "park_name": "Willow River State Park"
  },
  "US-1482": {
@@ -20636,7 +21462,7 @@
     "source_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_Managed_Lands_Dissolved_WTM_Ext/MapServer/0/query?where=FUNCTION_MGT_CODE%3D%27PR%27&outFields=PROP_NAME%2CPROP_CODE%2CTRANS_TYPE_CODE%2CACRES&returnGeometry=false&f=json"
    }
   ],
-  "outline_acres": 6797.0,
+  "outline_acres": 2437.0,
   "park_name": "Yellowstone Lake State Park"
  },
  "US-1645": {
@@ -20934,7 +21760,7 @@
     "source_url": "https://geodata.ct.gov/api/download/v1/items/ce4e1d1825154603b9b48d861bb050ff/csv?layers=0"
    }
   ],
-  "outline_acres": 568.0,
+  "outline_acres": 169.0,
   "park_name": "Chatfield Hollow State Park"
  },
  "US-1657": {
@@ -21030,7 +21856,6 @@
     "source_url": "https://geodata.ct.gov/api/download/v1/items/ce4e1d1825154603b9b48d861bb050ff/csv?layers=0"
    }
   ],
-  "outline_acres": 183.0,
   "park_name": "Day Pond State Park"
  },
  "US-1661": {
@@ -21702,7 +22527,7 @@
     "source_url": "https://geodata.ct.gov/api/download/v1/items/ce4e1d1825154603b9b48d861bb050ff/csv?layers=0"
    }
   ],
-  "outline_acres": 153.0,
+  "outline_acres": 73.0,
   "park_name": "Lake Waramaug State Park"
  },
  "US-1690": {
@@ -21870,7 +22695,7 @@
     "source_url": "https://geodata.ct.gov/api/download/v1/items/ce4e1d1825154603b9b48d861bb050ff/csv?layers=0"
    }
   ],
-  "outline_acres": 601.0,
+  "outline_acres": 272.0,
   "park_name": "Mianus River State Park"
  },
  "US-1697": {
@@ -21918,7 +22743,7 @@
     "source_url": "https://geodata.ct.gov/api/download/v1/items/ce4e1d1825154603b9b48d861bb050ff/csv?layers=0"
    }
   ],
-  "outline_acres": 2.0,
+  "outline_acres": 1.0,
   "park_name": "Minnie Island State Park"
  },
  "US-1699": {
@@ -22187,7 +23012,7 @@
     "source_url": "https://geodata.ct.gov/api/download/v1/items/ce4e1d1825154603b9b48d861bb050ff/csv?layers=0"
    }
   ],
-  "outline_acres": 759.0,
+  "outline_acres": 778.0,
   "park_name": "Quinnipiac River State Park"
  },
  "US-1710": {
@@ -22696,7 +23521,7 @@
   "read_date": "2026-11-02",
   "why": "12 rows of Delaware State Parks (DNREC) added together (Alapocas Run State Park); every row matched US-1730 by name+kind",
   "flags": [],
-  "outline_acres": 413.0,
+  "outline_acres": 743.0,
   "park_name": "Alapocas Run State Park"
  },
  "US-1731": {
@@ -22717,7 +23542,7 @@
   "read_date": "2026-11-02",
   "why": "4 rows of Delaware State Parks (DNREC) added together (Bellevue State Park); every row matched US-1731 by name+kind",
   "flags": [],
-  "outline_acres": 273.0,
+  "outline_acres": 304.0,
   "park_name": "Bellevue State Park"
  },
  "US-1732": {
@@ -22811,7 +23636,7 @@
   "flags": [
    "possible duplicate rows (same name and size added twice)"
   ],
-  "outline_acres": 5918.0,
+  "outline_acres": 11037.0,
   "park_name": "Cape Henlopen State Park"
  },
  "US-1734": {
@@ -22830,7 +23655,7 @@
   "read_date": "2026-11-02",
   "why": "2 rows of Delaware State Parks (DNREC) added together (Delaware Seashore State Park); every row matched US-1734 by name+kind",
   "flags": [],
-  "outline_acres": 232.0,
+  "outline_acres": 1940.0,
   "park_name": "Delaware Seashore State Park"
  },
  "US-1735": {
@@ -22853,10 +23678,8 @@
   "source_url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/MapServer/0/query?where=MANAGEMENT%3D%27Delaware+State+Parks%27&outFields=NAME,TRACT,USE,ACRES&returnGeometry=false&f=json",
   "read_date": "2026-11-02",
   "why": "7 rows of Delaware State Parks (DNREC) added together (Fenwick Island State Park; Fenwick Island Beach); every row matched US-1735 by name+kind",
-  "flags": [
-   "over 50x the current outline (6 ac)"
-  ],
-  "outline_acres": 6.0,
+  "flags": [],
+  "outline_acres": 334.0,
   "park_name": "Fenwick Island State Park"
  },
  "US-1736": {
@@ -22872,7 +23695,7 @@
   "read_date": "2026-11-02",
   "why": "Delaware State Parks (DNREC) row \"Fort Delaware State Park\" (257.2 acres): same name \"fort delaware\" + same kind (state park) in US-DE; county New Castle agrees with the pin",
   "flags": [],
-  "outline_acres": 256.0,
+  "outline_acres": 513.0,
   "park_name": "Fort Delaware State Park"
  },
  "US-1738": {
@@ -22888,7 +23711,7 @@
   "read_date": "2026-11-02",
   "why": "Delaware State Parks (DNREC) row \"Fox Point State Park\" (106.4 acres): same name \"fox point\" + same kind (state park) in US-DE; county New Castle agrees with the pin",
   "flags": [],
-  "outline_acres": 107.0,
+  "outline_acres": 213.0,
   "park_name": "Fox Point State Park"
  },
  "US-1739": {
@@ -22904,6 +23727,7 @@
   "read_date": "2026-11-02",
   "why": "Delaware State Parks (DNREC) row \"Holts Landing State Park\" (205.6 acres): same name \"holts landing\" + same kind (state park) in US-DE; county Sussex agrees with the pin",
   "flags": [],
+  "outline_acres": 206.0,
   "park_name": "Holts Landing State Park"
  },
  "US-1740": {
@@ -22943,7 +23767,7 @@
   "read_date": "2026-11-02",
   "why": "3 rows of Delaware State Parks (DNREC) added together (Lums Pond State Park); every row matched US-1741 by name+kind",
   "flags": [],
-  "outline_acres": 1863.0,
+  "outline_acres": 3617.0,
   "park_name": "Lums Pond State Park"
  },
  "US-1742": {
@@ -23005,7 +23829,7 @@
   "flags": [
    "possible duplicate rows (same name and size added twice)"
   ],
-  "outline_acres": 2573.0,
+  "outline_acres": 4887.0,
   "park_name": "Trap Pond State Park"
  },
  "US-1743": {
@@ -23026,7 +23850,7 @@
   "read_date": "2026-11-02",
   "why": "4 rows of Delaware State Parks (DNREC) added together (White Clay Creek State Park); every row matched US-1743 by name+kind",
   "flags": [],
-  "outline_acres": 4059.0,
+  "outline_acres": 7061.0,
   "park_name": "White Clay Creek State Park"
  },
  "US-1797": {
@@ -23768,6 +24592,54 @@
   "outline_acres": 1230.0,
   "park_name": "Tugaloo State Park"
  },
+ "US-2213": {
+  "acres": 7.0,
+  "value_given": 7.0,
+  "unit_given": "acres",
+  "agency": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
+  "record_name": "KAUMAHINA STATE WAYSIDE",
+  "how": "hand copy (Hawaii Division of State Parks (DLNR) (park, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Hawaii Division of State Parks (DLNR) (park, state GIS table) (hand copy) row \"KAUMAHINA STATE WAYSIDE\" (7 acres): the list row carries the park number US-2213",
+  "flags": [],
+  "outline_acres": 21.0,
+  "park_name": "Kaumahina Wayside State Park"
+ },
+ "US-2218": {
+  "acres": 4.0,
+  "value_given": 4.0,
+  "unit_given": "acres",
+  "agency": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
+  "record_name": "NUUANU PALI STATE WAYSIDE",
+  "how": "hand copy (Hawaii Division of State Parks (DLNR) (park, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Hawaii Division of State Parks (DLNR) (park, state GIS table) (hand copy) row \"NUUANU PALI STATE WAYSIDE\" (4 acres): the list row carries the park number US-2218",
+  "flags": [],
+  "outline_acres": 9.0,
+  "park_name": "Nu'uanu Pali Wayside State Park"
+ },
+ "US-2221": {
+  "acres": 2.0,
+  "value_given": 2.0,
+  "unit_given": "acres",
+  "agency": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
+  "record_name": "PUAA KAA STATE WAYSIDE",
+  "how": "hand copy (Hawaii Division of State Parks (DLNR) (park, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Hawaii Division of State Parks (DLNR) (park, state GIS table) (hand copy) row \"PUAA KAA STATE WAYSIDE\" (2 acres): the list row carries the park number US-2221",
+  "flags": [],
+  "outline_acres": 8.0,
+  "park_name": "Puaa Kaa Wayside State Park"
+ },
  "US-2277": {
   "acres": 121.0,
   "value_given": 121.0,
@@ -23781,7 +24653,7 @@
   "read_date": "2026-11-02",
   "why": "Iowa DNR Wildlife Bureau row \"BACKBONE STATE PARK\" (121 acres): same name \"backbone\" + same kind (state park) in US-IA; no county or point on the list",
   "flags": [],
-  "outline_acres": 5588.0,
+  "outline_acres": 5405.0,
   "park_name": "Backbone State Park"
  },
  "US-2280": {
@@ -23864,7 +24736,7 @@
   "read_date": "2026-11-02",
   "why": "Iowa DNR Wildlife Bureau row \"WAPSIPINICON STATE PARK\" (107 acres): same name \"wapsipinicon\" + same kind (state park) in US-IA; no county or point on the list",
   "flags": [],
-  "outline_acres": 1317.0,
+  "outline_acres": 1307.0,
   "park_name": "Wapsipinicon State Park"
  },
  "US-2625": {
@@ -27405,6 +28277,86 @@
   "outline_acres": 310.0,
   "park_name": "Bladon Springs State Park"
  },
+ "US-3616": {
+  "acres": 333.0,
+  "value_given": 333.0,
+  "unit_given": "acres",
+  "agency": "Florida State Parks (DEP) (park, state GIS table)",
+  "record_name": "Dudley Farm Historic State Park",
+  "how": "hand copy (Florida State Parks (DEP) (park, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Florida State Parks (DEP) (park, state GIS table) (hand copy) row \"Dudley Farm Historic State Park\" (333 acres): the list row carries the park number US-3616",
+  "flags": [],
+  "outline_acres": 999.0,
+  "park_name": "Dudley Farm State Park"
+ },
+ "US-3622": {
+  "acres": 42.0,
+  "value_given": 42.0,
+  "unit_given": "acres",
+  "agency": "Florida State Parks (DEP) (park, state GIS table)",
+  "record_name": "Fort Mose Historic State Park",
+  "how": "hand copy (Florida State Parks (DEP) (park, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Florida State Parks (DEP) (park, state GIS table) (hand copy) row \"Fort Mose Historic State Park\" (42 acres): the list row carries the park number US-3622",
+  "flags": [],
+  "outline_acres": 123.0,
+  "park_name": "Fort Mose State Park"
+ },
+ "US-3630": {
+  "acres": 111.0,
+  "value_given": 111.0,
+  "unit_given": "acres",
+  "agency": "Florida State Parks (DEP) (park, state GIS table)",
+  "record_name": "Indian Key Historic State Park",
+  "how": "hand copy (Florida State Parks (DEP) (park, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Florida State Parks (DEP) (park, state GIS table) (hand copy) row \"Indian Key Historic State Park\" (111 acres): the list row carries the park number US-3630",
+  "flags": [],
+  "outline_acres": 111.0,
+  "park_name": "Indian Key State Park"
+ },
+ "US-3643": {
+  "acres": 9.0,
+  "value_given": 9.0,
+  "unit_given": "acres",
+  "agency": "Florida State Parks (DEP) (park, state GIS table)",
+  "record_name": "Orman House Historic State Park",
+  "how": "hand copy (Florida State Parks (DEP) (park, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Florida State Parks (DEP) (park, state GIS table) (hand copy) row \"Orman House Historic State Park\" (9 acres): the list row carries the park number US-3643",
+  "flags": [],
+  "outline_acres": 29.0,
+  "park_name": "Orman House State Park"
+ },
+ "US-3646": {
+  "acres": 399.0,
+  "value_given": 399.0,
+  "unit_given": "acres",
+  "agency": "Florida State Parks (DEP) (park, state GIS table)",
+  "record_name": "Paynes Creek Historic State Park",
+  "how": "hand copy (Florida State Parks (DEP) (park, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Florida State Parks (DEP) (park, state GIS table) (hand copy) row \"Paynes Creek Historic State Park\" (399 acres): the list row carries the park number US-3646",
+  "flags": [],
+  "outline_acres": 1197.0,
+  "park_name": "Paynes Creek State Park"
+ },
  "US-3675": {
   "acres": 9898.63,
   "value_given": 9898.63,
@@ -27687,6 +28639,22 @@
   "why": "Alabama State Parks (ADCNR) (hand copy) row \"Roland Cooper\" (236 acres): same name \"roland cooper\" + same kind (state park) in US-AL; no county or point on the list",
   "flags": [],
   "park_name": "Roland Cooper State Park"
+ },
+ "US-3684": {
+  "acres": 316.0,
+  "value_given": 316.0,
+  "unit_given": "acres",
+  "agency": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
+  "record_name": "Coon Creek Tract",
+  "how": "hand copy (Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table) (hand copy) row \"Coon Creek Tract\" (316 acres): the list row carries the park number US-3684",
+  "flags": [],
+  "outline_acres": 316.0,
+  "park_name": "Coon Creek Preserve State Conservation Area"
  },
  "US-3730": {
   "acres": 31446.41,
@@ -28542,7 +29510,7 @@
   "read_date": "2026-11-02",
   "why": "2 rows of Tennessee Wildlife Resources Agency added together (Bridgestone/Firestone WMA); every row matched US-3928 by name+kind",
   "flags": [],
-  "outline_acres": 63541.0,
+  "outline_acres": 55019.0,
   "park_name": "Bridgestone/firestone Centennial Wilderness Wildlife Management Area"
  },
  "US-3929": {
@@ -28851,7 +29819,7 @@
   "read_date": "2026-11-02",
   "why": "2 rows of Tennessee Wildlife Resources Agency added together (Reelfoot WMA; Reelfoot SNA & WMA); every row matched US-3960 by name+kind",
   "flags": [],
-  "outline_acres": 72333.0,
+  "outline_acres": 66710.0,
   "park_name": "Reelfoot State Wildlife Area"
  },
  "US-3963": {
@@ -28979,6 +29947,38 @@
   "outline_acres": 132708.0,
   "park_name": "Prentice Cooper Wildlife Management Area"
  },
+ "US-4105": {
+  "acres": 1575.0,
+  "value_given": 1575.0,
+  "unit_given": "acres",
+  "agency": "IDNR Properties",
+  "record_name": "Washington County",
+  "how": "hand copy (IDNR Properties, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "IDNR Properties (hand copy) row \"Washington County\" (1,575 acres): the list row carries the park number US-4105",
+  "flags": [],
+  "outline_acres": 4024.0,
+  "park_name": "Washington County State Recreation Area"
+ },
+ "US-4122": {
+  "acres": 218.0,
+  "value_given": 218.0,
+  "unit_given": "acres",
+  "agency": "IDNR Properties",
+  "record_name": "Fall Creek Scenic Overlook",
+  "how": "hand copy (IDNR Properties, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "IDNR Properties (hand copy) row \"Fall Creek Scenic Overlook\" (218 acres): the list row carries the park number US-4122",
+  "flags": [],
+  "outline_acres": 428.0,
+  "park_name": "Fall Creek Overlook State Natural Area"
+ },
  "US-4243": {
   "acres": 3371.34,
   "value_given": 3371.34,
@@ -29002,6 +30002,22 @@
   ],
   "outline_acres": 12255.0,
   "park_name": "Sauk Prairie State Recreation Area"
+ },
+ "US-4246": {
+  "acres": 411.0,
+  "value_given": 411.0,
+  "unit_given": "acres",
+  "agency": "Natural Area Parcel Ownership",
+  "record_name": "Whitefish Dunes",
+  "how": "hand copy (Natural Area Parcel Ownership, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Natural Area Parcel Ownership (hand copy) row \"Whitefish Dunes\" (411 acres): the list row carries the park number US-4246",
+  "flags": [],
+  "outline_acres": 411.0,
+  "park_name": "Whitefish Dunes State Natural Area"
  },
  "US-4247": {
   "acres": 55.15,
@@ -29098,6 +30114,38 @@
   ],
   "outline_acres": 7066.0,
   "park_name": "Cedarburg Bog State Natural Area"
+ },
+ "US-4254": {
+  "acres": 30.0,
+  "value_given": 30.0,
+  "unit_given": "acres",
+  "agency": "Natural Area Parcel Ownership",
+  "record_name": "Chimney Rock Oak Savanna",
+  "how": "hand copy (Natural Area Parcel Ownership, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Natural Area Parcel Ownership (hand copy) row \"Chimney Rock Oak Savanna\" (30 acres): the list row carries the park number US-4254",
+  "flags": [],
+  "outline_acres": 657.0,
+  "park_name": "Chimney Rock Oak Savanna State Natural Area"
+ },
+ "US-4255": {
+  "acres": 640.0,
+  "value_given": 640.0,
+  "unit_given": "acres",
+  "agency": "Natural Area Parcel Ownership",
+  "record_name": "Lodi Marsh",
+  "how": "hand copy (Natural Area Parcel Ownership, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Natural Area Parcel Ownership (hand copy) row \"Lodi Marsh\" (640 acres): the list row carries the park number US-4255",
+  "flags": [],
+  "outline_acres": 640.0,
+  "park_name": "Lodi Marsh State Natural Area"
  },
  "US-4256": {
   "acres": 641.45,
@@ -29467,7 +30515,7 @@
     "source_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_Managed_Lands_Dissolved_WTM_Ext/MapServer/0/query?where=FUNCTION_MGT_CODE%3D%27PR%27&outFields=PROP_NAME%2CPROP_CODE%2CTRANS_TYPE_CODE%2CACRES&returnGeometry=false&f=json"
    }
   ],
-  "outline_acres": 17146.0,
+  "outline_acres": 17145.0,
   "park_name": "Collins Marsh State Wildlife Area"
  },
  "US-4278": {
@@ -29676,7 +30724,7 @@
     "source_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_Managed_Lands_Dissolved_WTM_Ext/MapServer/0/query?where=FUNCTION_MGT_CODE%3D%27PR%27&outFields=PROP_NAME%2CPROP_CODE%2CTRANS_TYPE_CODE%2CACRES&returnGeometry=false&f=json"
    }
   ],
-  "outline_acres": 54115.0,
+  "outline_acres": 54286.0,
   "park_name": "Fish Lake State Wildlife Area"
  },
  "US-4286": {
@@ -31107,7 +32155,7 @@
     "source_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_Managed_Lands_Dissolved_WTM_Ext/MapServer/0/query?where=FUNCTION_MGT_CODE%3D%27PR%27&outFields=PROP_NAME%2CPROP_CODE%2CTRANS_TYPE_CODE%2CACRES&returnGeometry=false&f=json"
    }
   ],
-  "outline_acres": 18213.0,
+  "outline_acres": 8723.0,
   "park_name": "Wolf River State Wildlife Area"
  },
  "US-4345": {
@@ -31296,7 +32344,7 @@
     "source_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_Managed_Lands_Dissolved_WTM_Ext/MapServer/0/query?where=FUNCTION_MGT_CODE%3D%27PR%27&outFields=PROP_NAME%2CPROP_CODE%2CTRANS_TYPE_CODE%2CACRES&returnGeometry=false&f=json"
    }
   ],
-  "outline_acres": 81201.0,
+  "outline_acres": 80963.0,
   "park_name": "Kettle Moraine State Forest"
  },
  "US-4354": {
@@ -31482,6 +32530,7 @@
   "flags": [
    "possible duplicate rows (same name and size added twice)"
   ],
+  "outline_acres": 223.0,
   "park_name": "Auburn Valley State Park"
  },
  "US-4369": {
@@ -31540,6 +32589,22 @@
   "outline_acres": 5726.0,
   "park_name": "Mines of Spain State Recreation Area"
  },
+ "US-4385": {
+  "acres": 1417667.0,
+  "value_given": 1417667.0,
+  "unit_given": "acres",
+  "agency": "USDA Forest Service",
+  "record_name": "Umatilla National Forest",
+  "how": "hand copy (USDA Forest Service, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "USDA Forest Service (hand copy) row \"Umatilla National Forest\" (1,417,667 acres): the list row carries the park number US-4385",
+  "flags": [],
+  "outline_acres": 1103397.0,
+  "park_name": "Umatilla National Forest"
+ },
  "US-4397": {
   "acres": 1340004.0,
   "value_given": 1340004.0,
@@ -31550,10 +32615,10 @@
   "match": "number",
   "parts": 1,
   "source_url": "",
-  "read_date": "2026-11-02",
+  "read_date": "2026-11-08",
   "why": "USDA Forest Service (hand copy) row \"Manti-La Sal National Forest\" (1,340,004 acres): the list row carries the park number US-4397",
   "flags": [],
-  "outline_acres": 1313464.0,
+  "outline_acres": 1313465.0,
   "park_name": "Manti-La Sal National Forest"
  },
  "US-4424": {
@@ -31566,7 +32631,7 @@
   "match": "number",
   "parts": 1,
   "source_url": "",
-  "read_date": "2026-11-02",
+  "read_date": "2026-11-08",
   "why": "USDA Forest Service (hand copy) row \"Ouachita National Forest\" (1,784,193 acres): the list row carries the park number US-4424",
   "flags": [],
   "outline_acres": 1430577.0,
@@ -31582,7 +32647,7 @@
   "match": "number",
   "parts": 1,
   "source_url": "",
-  "read_date": "2026-11-02",
+  "read_date": "2026-11-08",
   "why": "USDA Forest Service (hand copy) row \"Apache-Sitgreaves National Forests\" (2,015,864 acres): the list row carries the park number US-4427",
   "flags": [],
   "outline_acres": 820490.0,
@@ -31621,19 +32686,24 @@
   "park_name": "South Fork State Recreation Area"
  },
  "US-4477": {
-  "acres": 2498281.0,
-  "value_given": 2498281.0,
+  "acres": 4996562.0,
+  "value_given": [
+   2498281.0,
+   2498281.0
+  ],
   "unit_given": "acres",
   "agency": "USDA Forest Service",
   "record_name": "Idaho Panhandle National Forests",
   "how": "hand copy (USDA Forest Service, page not given)",
   "match": "number",
-  "parts": 1,
+  "parts": 2,
   "source_url": "",
-  "read_date": "2026-11-02",
-  "why": "USDA Forest Service (hand copy) row \"Idaho Panhandle National Forests\" (2,498,281 acres): the list row carries the park number US-4477",
-  "flags": [],
-  "outline_acres": 898213.0,
+  "read_date": "2026-11-08",
+  "why": "2 rows of USDA Forest Service (hand copy) added together (Idaho Panhandle National Forests); every row matched US-4477 by number",
+  "flags": [
+   "possible duplicate rows (same name and size added twice)"
+  ],
+  "outline_acres": 1625274.0,
   "park_name": "Idaho Panhandle National Forest"
  },
  "US-4501": {
@@ -31646,10 +32716,10 @@
   "match": "number",
   "parts": 1,
   "source_url": "",
-  "read_date": "2026-11-02",
+  "read_date": "2026-11-08",
   "why": "USDA Forest Service (hand copy) row \"Custer Gallatin National Forest\" (3,042,860 acres): the list row carries the park number US-4501",
   "flags": [],
-  "outline_acres": 1115748.0,
+  "outline_acres": 4448850.0,
   "park_name": "Custer Gallatin National Forest"
  },
  "US-4514": {
@@ -31665,7 +32735,7 @@
   "match": "number",
   "parts": 2,
   "source_url": "",
-  "read_date": "2026-11-02",
+  "read_date": "2026-11-08",
   "why": "2 rows of USDA Forest Service (hand copy) added together (Cibola National Forest); every row matched US-4514 by number",
   "flags": [
    "possible duplicate rows (same name and size added twice)"
@@ -31741,7 +32811,7 @@
   "read_date": "2026-11-02",
   "why": "22 rows of Delaware State Parks (DNREC) added together (Blackbird State Forest); every row matched US-4609 by name+kind",
   "flags": [],
-  "outline_acres": 14421.0,
+  "outline_acres": 18607.0,
   "park_name": "Blackbird State Forest"
  },
  "US-4610": {
@@ -31801,7 +32871,7 @@
   "read_date": "2026-11-02",
   "why": "43 rows of Delaware State Parks (DNREC) added together (Redden State Forest); every row matched US-4610 by name+kind",
   "flags": [],
-  "outline_acres": 29033.0,
+  "outline_acres": 37496.0,
   "park_name": "Redden State Forest"
  },
  "US-4611": {
@@ -31817,7 +32887,7 @@
   "read_date": "2026-11-02",
   "why": "Delaware State Parks (DNREC) row \"Taber State Forest\" (1,271.4 acres): same name \"taber\" + same kind (state forest) in US-DE; county Kent agrees with the pin",
   "flags": [],
-  "outline_acres": 2631.0,
+  "outline_acres": 3902.0,
   "park_name": "Taber State Forest"
  },
  "US-4647": {
@@ -31975,7 +33045,7 @@
   "read_date": "2026-11-02",
   "why": "5 rows of Iowa DNR Wildlife Bureau added together (SHIMEK STATE FOREST - CROTON UNIT; SHIMEK STATE FOREST - FARMINGTON UNIT; SHIMEK STATE FOREST - LICK CREEK UNIT; SHIMEK STATE FOREST - DONNELLSON UNIT; SHIMEK STATE FOREST - KEOSAUQUA UNIT); every row matched US-4661 by name+kind",
   "flags": [],
-  "outline_acres": 36729.0,
+  "outline_acres": 36727.0,
   "park_name": "Shimek State Forest"
  },
  "US-4662": {
@@ -31999,7 +33069,7 @@
   "read_date": "2026-11-02",
   "why": "7 rows of Iowa DNR Wildlife Bureau added together (STEPHENS STATE FOREST - CEDAR CREEK UNIT; STEPHENS STATE FOREST - CHARITON UNIT; STEPHENS STATE FOREST - LUCAS UNIT; STEPHENS STATE FOREST - UNIONVILLE UNIT; STEPHENS STATE FOREST - WHITEBREAST UNIT; STEPHENS STATE FOREST - WOODBURN UNIT ...); every row matched US-4662 by name+kind",
   "flags": [],
-  "outline_acres": 51714.0,
+  "outline_acres": 51711.0,
   "park_name": "Stephens State Forest"
  },
  "US-4664": {
@@ -32025,6 +33095,22 @@
   "flags": [],
   "outline_acres": 35255.0,
   "park_name": "Yellow River State Forest"
+ },
+ "US-4854": {
+  "acres": 12469.0,
+  "value_given": 12469.0,
+  "unit_given": "acres",
+  "agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
+  "record_name": "Dupont State Forest",
+  "how": "hand copy (NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table) (hand copy) row \"Dupont State Forest\" (12,469 acres): the list row carries the park number US-4854",
+  "flags": [],
+  "outline_acres": 11803.0,
+  "park_name": "DuPont State Recreational Forest State Forest"
  },
  "US-4989": {
   "acres": 65.0,
@@ -32226,7 +33312,7 @@
     "source_url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/MapServer/0/query?where=MANAGEMENT%3D%27Delaware+State+Parks%27&outFields=NAME,TRACT,USE,ACRES&returnGeometry=false&f=json"
    }
   ],
-  "outline_acres": 8967.0,
+  "outline_acres": 8978.0,
   "park_name": "Norman G Wilder State Wildlife Area"
  },
  "US-5722": {
@@ -32279,7 +33365,7 @@
     "source_url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/MapServer/0/query?where=MANAGEMENT%3D%27Delaware+State+Parks%27&outFields=NAME,TRACT,USE,ACRES&returnGeometry=false&f=json"
    }
   ],
-  "outline_acres": 13778.0,
+  "outline_acres": 16815.0,
   "park_name": "Milford Neck State Wildlife Area"
  },
  "US-5724": {
@@ -32459,6 +33545,53 @@
   "outline_acres": 2145.0,
   "park_name": "Wilson Island State Recreation Area"
  },
+ "US-5748": {
+  "acres": 16.0,
+  "value_given": 16.0,
+  "unit_given": "acres",
+  "agency": "National Register of Historic Places Polygons",
+  "record_name": "Fort Abercrombie",
+  "how": "hand copy (National Register of Historic Places Polygons, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "National Register of Historic Places Polygons (hand copy) row \"Fort Abercrombie\" (16 acres): the list row carries the park number US-5748",
+  "flags": [],
+  "park_name": "Fort Abercrombie State Historic Site"
+ },
+ "US-5756": {
+  "acres": 3134.0,
+  "value_given": 3134.0,
+  "unit_given": "acres",
+  "agency": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
+  "record_name": "Browns Park WMA",
+  "how": "hand copy (Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table) (hand copy) row \"Browns Park WMA\" (3,134 acres): the list row carries the park number US-5756",
+  "flags": [],
+  "outline_acres": 3133.0,
+  "park_name": "Browns Park National Wildlife Management Area"
+ },
+ "US-5877": {
+  "acres": 2804.0,
+  "value_given": 2804.0,
+  "unit_given": "acres",
+  "agency": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
+  "record_name": "Desert Lake WMA",
+  "how": "hand copy (Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table) (hand copy) row \"Desert Lake WMA\" (2,804 acres): the list row carries the park number US-5877",
+  "flags": [],
+  "outline_acres": 2804.0,
+  "park_name": "Desert Lake State Waterfowl Management Area"
+ },
  "US-5967": {
   "acres": 16665.0,
   "value_given": 16665.0,
@@ -32469,11 +33602,43 @@
   "match": "number",
   "parts": 1,
   "source_url": "",
-  "read_date": "2026-11-02",
+  "read_date": "2026-11-08",
   "why": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table) (hand copy) row \"Ogden Bay WMA\" (16,665 acres): the list row carries the park number US-5967",
   "flags": [],
   "outline_acres": 3795.0,
   "park_name": "Ogden Bay State Waterfowl Management Area"
+ },
+ "US-5968": {
+  "acres": 2548.0,
+  "value_given": 2548.0,
+  "unit_given": "acres",
+  "agency": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
+  "record_name": "Howard Slough WMA",
+  "how": "hand copy (Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table) (hand copy) row \"Howard Slough WMA\" (2,548 acres): the list row carries the park number US-5968",
+  "flags": [],
+  "outline_acres": 2546.0,
+  "park_name": "Howard Slough State Waterfowl Management Area"
+ },
+ "US-5971": {
+  "acres": 9852.0,
+  "value_given": 9852.0,
+  "unit_given": "acres",
+  "agency": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
+  "record_name": "Harold Crane WMA",
+  "how": "hand copy (Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table) (hand copy) row \"Harold Crane WMA\" (9,852 acres): the list row carries the park number US-5971",
+  "flags": [],
+  "outline_acres": 3599.0,
+  "park_name": "Harold S. Crane State Waterfowl Management Area"
  },
  "US-5973": {
   "acres": 5887.0,
@@ -32485,7 +33650,7 @@
   "match": "number",
   "parts": 1,
   "source_url": "",
-  "read_date": "2026-11-02",
+  "read_date": "2026-11-08",
   "why": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table) (hand copy) row \"Salt Creek WMA\" (5,887 acres): the list row carries the park number US-5973",
   "flags": [],
   "outline_acres": 7391.0,
@@ -32501,7 +33666,7 @@
   "match": "number",
   "parts": 1,
   "source_url": "",
-  "read_date": "2026-11-02",
+  "read_date": "2026-11-08",
   "why": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table) (hand copy) row \"Timpie Springs WMA\" (1,403 acres): the list row carries the park number US-5990",
   "flags": [],
   "outline_acres": 1408.0,
@@ -32517,7 +33682,7 @@
   "match": "number",
   "parts": 1,
   "source_url": "",
-  "read_date": "2026-11-02",
+  "read_date": "2026-11-08",
   "why": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table) (hand copy) row \"Clear Lake WMA\" (6,024 acres): the list row carries the park number US-5991",
   "flags": [],
   "outline_acres": 4893.0,
@@ -32552,7 +33717,7 @@
   "read_date": "2026-11-02",
   "why": "Tennessee State Parks (TDEC) row \"Devil's Backbone State Park\" (1,461.2305 acres): same name \"devils backbone\" + same kind (state park) in US-TN; no county or point on the list",
   "flags": [],
-  "outline_acres": 1461.0,
+  "outline_acres": 2922.0,
   "park_name": "Devil's Backbone State Park"
  },
  "US-6275": {
@@ -32568,7 +33733,7 @@
   "read_date": "2026-11-02",
   "why": "Tennessee Wildlife Resources Agency row \"Walls Of Jericho SNA\" (758.9886 acres): same name \"walls jericho\" + same kind (natural area) in US-TN; no county or point on the list",
   "flags": [],
-  "outline_acres": 2252.0,
+  "outline_acres": 1493.0,
   "park_name": "Walls of Jericho State Natural Area"
  },
  "US-6286": {
@@ -32619,7 +33784,7 @@
   "read_date": "2026-11-02",
   "why": "2 rows of Florida Fish and Wildlife Conservation Commission added together (Apalachicola Wildlife Management Area); every row matched US-6288 by name+kind",
   "flags": [],
-  "outline_acres": 100581.0,
+  "outline_acres": 37626.0,
   "park_name": "Apalachicola River Wildlife Area"
  },
  "US-6289": {
@@ -32714,7 +33879,6 @@
   "read_date": "2026-11-02",
   "why": "2 rows of Florida Fish and Wildlife Conservation Commission added together (Caravelle Ranch Wildlife Management Area); every row matched US-6295 by name+kind",
   "flags": [],
-  "outline_acres": 5652.0,
   "park_name": "Caravelle Ranch Wildlife Management Area"
  },
  "US-6296": {
@@ -32749,7 +33913,6 @@
   "read_date": "2026-11-02",
   "why": "2 rows of Florida Fish and Wildlife Conservation Commission added together (Dinner Island Ranch Wildlife Management Area; Dinner Island Ranch Wildlife Management Area - Caracara Unit); every row matched US-6299 by name+kind",
   "flags": [],
-  "outline_acres": 21706.0,
   "park_name": "Dinner Island Ranch Wildlife Management Area"
  },
  "US-6300": {
@@ -32935,7 +34098,6 @@
   "read_date": "2026-11-02",
   "why": "2 rows of Florida Fish and Wildlife Conservation Commission added together (Okaloacoochee Slough Wildlife Management Area); every row matched US-6318 by name+kind",
   "flags": [],
-  "outline_acres": 2993.0,
   "park_name": "Okaloacoochee Slough Wildlife Management Area"
  },
  "US-6321": {
@@ -32951,7 +34113,7 @@
   "read_date": "2026-11-02",
   "why": "Florida Fish and Wildlife Conservation Commission row \"Rotenberger Wildlife Management Area\" (46.593 acres): same name \"rotenberger\" + same kind (WMA) in US-FL; no county or point on the list",
   "flags": [],
-  "outline_acres": 29787.0,
+  "outline_acres": 29795.0,
   "park_name": "Rotenberger Wildlife Management Area"
  },
  "US-6322": {
@@ -32988,6 +34150,22 @@
   "flags": [],
   "outline_acres": 7648.0,
   "park_name": "Spirit-of-the-Wild Wildlife Management Area"
+ },
+ "US-6326": {
+  "acres": 3451.0,
+  "value_given": 3451.0,
+  "unit_given": "acres",
+  "agency": "FWC (wild, state GIS table)",
+  "record_name": "T. M. Goodwin Waterfowl Management Area",
+  "how": "hand copy (FWC (wild, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "FWC (wild, state GIS table) (hand copy) row \"T. M. Goodwin Waterfowl Management Area\" (3,451 acres): the list row carries the park number US-6326",
+  "flags": [],
+  "outline_acres": 13047.0,
+  "park_name": "T.M. Goodwin Wildlife Management Area"
  },
  "US-6328": {
   "acres": 98.54,
@@ -33660,6 +34838,21 @@
   "outline_acres": 15794.0,
   "park_name": "Hickory Creek Wildlife Management Area"
  },
+ "US-6426": {
+  "acres": 11.0,
+  "value_given": 11.0,
+  "unit_given": "acres",
+  "agency": "National Register of Historic Places Polygons",
+  "record_name": "Iolani Palace",
+  "how": "hand copy (National Register of Historic Places Polygons, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "National Register of Historic Places Polygons (hand copy) row \"Iolani Palace\" (11 acres): the list row carries the park number US-6426",
+  "flags": [],
+  "park_name": "Iolani Palace State Preserve"
+ },
  "US-6613": {
   "acres": 181.0,
   "value_given": 181.0,
@@ -33705,7 +34898,7 @@
   "read_date": "2026-11-02",
   "why": "Michigan DNR Wildlife Division (hand copy) row \"Allegan State Game Area\" (50,656 acres): same name \"allegan\" + same kind (WMA) in US-MI; no county or point on the list",
   "flags": [],
-  "outline_acres": 102207.0,
+  "outline_acres": 106887.0,
   "park_name": "Allegan State Game Land"
  },
  "US-6616": {
@@ -34345,7 +35538,7 @@
   "read_date": "2026-11-02",
   "why": "Michigan DNR Wildlife Division (hand copy) row \"Flat River State Game Area\" (11,235 acres): same name \"flat river\" + same kind (WMA) in US-MI; no county or point on the list",
   "flags": [],
-  "outline_acres": 23148.0,
+  "outline_acres": 23704.0,
   "park_name": "Flat River State Game Land"
  },
  "US-6674": {
@@ -34905,7 +36098,7 @@
   "read_date": "2026-11-02",
   "why": "Michigan DNR Wildlife Division (hand copy) row \"Maple River State Game Area\" (9,252 acres): same name \"maple river\" + same kind (WMA) in US-MI; no county or point on the list",
   "flags": [],
-  "outline_acres": 19230.0,
+  "outline_acres": 9258.0,
   "park_name": "Maple River State Game Land"
  },
  "US-6732": {
@@ -35529,7 +36722,7 @@
   "read_date": "2026-11-02",
   "why": "Michigan DNR Wildlife Division (hand copy) row \"Sharonville State Game Area\" (4,337 acres): same name \"sharonville\" + same kind (WMA) in US-MI; no county or point on the list",
   "flags": [],
-  "outline_acres": 8717.0,
+  "outline_acres": 9054.0,
   "park_name": "Sharonville State Game Land"
  },
  "US-6782": {
@@ -35737,7 +36930,7 @@
   "read_date": "2026-11-02",
   "why": "Michigan DNR Wildlife Division (hand copy) row \"Tuscola State Game Area\" (9,259 acres): same name \"tuscola\" + same kind (WMA) in US-MI; no county or point on the list",
   "flags": [],
-  "outline_acres": 18195.0,
+  "outline_acres": 18486.0,
   "park_name": "Tuscola State Game Land"
  },
  "US-6800": {
@@ -35905,7 +37098,7 @@
     "source_url": "https://geodata.ct.gov/api/download/v1/items/ce4e1d1825154603b9b48d861bb050ff/csv?layers=0"
    }
   ],
-  "outline_acres": 589.0,
+  "outline_acres": 142.0,
   "park_name": "Great Pond / Massacoe State Forest"
  },
  "US-6862": {
@@ -36307,6 +37500,38 @@
   "flags": [],
   "outline_acres": 95240.0,
   "park_name": "Redlands Wildlife Management Area"
+ },
+ "US-7238": {
+  "acres": 62.0,
+  "value_given": 62.0,
+  "unit_given": "acres",
+  "agency": "Alaska State Parks (DNR) (park, state GIS table)",
+  "record_name": "Salcha River State Recreation Site",
+  "how": "hand copy (Alaska State Parks (DNR) (park, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Alaska State Parks (DNR) (park, state GIS table) (hand copy) row \"Salcha River State Recreation Site\" (62 acres): the list row carries the park number US-7238",
+  "flags": [],
+  "outline_acres": 183.0,
+  "park_name": "Salcha River State Recreation Area"
+ },
+ "US-7239": {
+  "acres": 9.0,
+  "value_given": 9.0,
+  "unit_given": "acres",
+  "agency": "Alaska State Parks (DNR) (park, state GIS table)",
+  "record_name": "Tok River State Recreation Site",
+  "how": "hand copy (Alaska State Parks (DNR) (park, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Alaska State Parks (DNR) (park, state GIS table) (hand copy) row \"Tok River State Recreation Site\" (9 acres): the list row carries the park number US-7239",
+  "flags": [],
+  "outline_acres": 27.0,
+  "park_name": "Tok River State Recreation Area"
  },
  "US-7260": {
   "acres": 237221.41,
@@ -37431,7 +38656,7 @@
     "source_url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/MapServer/0/query?where=MANAGEMENT%3D%27Delaware+State+Parks%27&outFields=NAME,TRACT,USE,ACRES&returnGeometry=false&f=json"
    }
   ],
-  "outline_acres": 4736.0,
+  "outline_acres": 6317.0,
   "park_name": "Blackiston State Wildlife Area"
  },
  "US-7648": {
@@ -38105,10 +39330,26 @@
   "match": "number",
   "parts": 1,
   "source_url": "",
-  "read_date": "2026-11-02",
+  "read_date": "2026-11-08",
   "why": "National Register of Historic Places Polygons (hand copy) row \"Baltimore--Washington Parkway\" (4,290 acres): the list row carries the park number US-7973",
   "flags": [],
   "park_name": "Baltimore-Washington National Parkway"
+ },
+ "US-7980": {
+  "acres": 7.0,
+  "value_given": 7.0,
+  "unit_given": "acres",
+  "agency": "National Register of Historic Places Polygons",
+  "record_name": "Fort Baldwin Historic Site",
+  "how": "hand copy (National Register of Historic Places Polygons, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "National Register of Historic Places Polygons (hand copy) row \"Fort Baldwin Historic Site\" (7 acres): the list row carries the park number US-7980",
+  "flags": [],
+  "outline_acres": 36.0,
+  "park_name": "Fort Baldwin State Historic Site"
  },
  "US-8106": {
   "acres": 122.83,
@@ -38414,6 +39655,21 @@
   "outline_acres": 822.0,
   "park_name": "Whitegrass Flats Wildlife Management Area"
  },
+ "US-8143": {
+  "acres": 58.0,
+  "value_given": 58.0,
+  "unit_given": "acres",
+  "agency": "National Register of Historic Places Polygons",
+  "record_name": "Boggy Depot Site",
+  "how": "hand copy (National Register of Historic Places Polygons, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "National Register of Historic Places Polygons (hand copy) row \"Boggy Depot Site\" (58 acres): the list row carries the park number US-8143",
+  "flags": [],
+  "park_name": "Boggy Depot National Historical Site"
+ },
  "US-8208": {
   "acres": 917.93,
   "value_given": 917.93,
@@ -38488,6 +39744,22 @@
   ],
   "outline_acres": 3125.0,
   "park_name": "Hortonville Bog State Natural Area"
+ },
+ "US-8219": {
+  "acres": 590.0,
+  "value_given": 590.0,
+  "unit_given": "acres",
+  "agency": "Natural Area Parcel Ownership",
+  "record_name": "Jackson Marsh",
+  "how": "hand copy (Natural Area Parcel Ownership, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Natural Area Parcel Ownership (hand copy) row \"Jackson Marsh\" (590 acres): the list row carries the park number US-8219",
+  "flags": [],
+  "outline_acres": 590.0,
+  "park_name": "Jackson Marsh State Natural Area"
  },
  "US-8224": {
   "acres": 3485.57,
@@ -38715,6 +39987,38 @@
   "flags": [],
   "outline_acres": 472.0,
   "park_name": "Washita County Wildlife Management Area"
+ },
+ "US-8667": {
+  "acres": 62.0,
+  "value_given": 62.0,
+  "unit_given": "acres",
+  "agency": "Natural Area Parcel Ownership",
+  "record_name": "Haskell Noyes Woods",
+  "how": "hand copy (Natural Area Parcel Ownership, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Natural Area Parcel Ownership (hand copy) row \"Haskell Noyes Woods\" (62 acres): the list row carries the park number US-8667",
+  "flags": [],
+  "outline_acres": 62.0,
+  "park_name": "Haskell Noyes Memorial Woods State Natural Area"
+ },
+ "US-8668": {
+  "acres": 221.0,
+  "value_given": 221.0,
+  "unit_given": "acres",
+  "agency": "Natural Area Parcel Ownership",
+  "record_name": "Waterloo Prairie",
+  "how": "hand copy (Natural Area Parcel Ownership, page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Natural Area Parcel Ownership (hand copy) row \"Waterloo Prairie\" (221 acres): the list row carries the park number US-8668",
+  "flags": [],
+  "outline_acres": 4407.0,
+  "park_name": "Waterloo Prairie State Natural Area"
  },
  "US-8670": {
   "acres": 4353.91,
@@ -39304,7 +40608,7 @@
   "read_date": "2026-11-02",
   "why": "Iowa DNR Wildlife Bureau row \"WIESE SLOUGH WILDLIFE AREA\" (1,870 acres): same name \"wiese slough\" + same kind (WMA) in US-IA; no county or point on the list",
   "flags": [],
-  "outline_acres": 5613.0,
+  "outline_acres": 5612.0,
   "park_name": "Wiese Slough Wildlife Management Area"
  },
  "US-9351": {
@@ -39937,24 +41241,21 @@
     "source_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_Managed_Lands_Dissolved_WTM_Ext/MapServer/0/query?where=FUNCTION_MGT_CODE%3D%27PR%27&outFields=PROP_NAME%2CPROP_CODE%2CTRANS_TYPE_CODE%2CACRES&returnGeometry=false&f=json"
    }
   ],
-  "outline_acres": 45776.0,
+  "outline_acres": 45816.0,
   "park_name": "Buena Vista State Wildlife Area"
  },
  "US-9837": {
-  "acres": 2751.44,
-  "value_given": [
-   2749.8,
-   1.64
-  ],
+  "acres": 2750.0,
+  "value_given": 2750.0,
   "unit_given": "acres",
-  "agency": "Wisconsin DNR",
-  "record_name": "C.D. (BUZZ) BESADNY FISH AND WILDLIFE AREA",
-  "how": "name+kind",
-  "match": "name+kind",
-  "parts": 2,
-  "source_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_Managed_Lands_Dissolved_WTM_Ext/MapServer/0/query?where=FUNCTION_MGT_CODE%3C%3E%27PR%27&outFields=PROP_NAME%2CPROP_CODE%2CFUNCTION_MGT_CODE%2CTRANS_TYPE_CODE%2CACRES&returnGeometry=false&f=json",
-  "read_date": "2026-11-02",
-  "why": "2 rows of Wisconsin DNR added together (C.D. (BUZZ) BESADNY FISH AND WILDLIFE AREA); every row matched US-9837 by name+kind",
+  "agency": "Wisconsin DNR (land, state GIS table)",
+  "record_name": "C.D. (Buzz) Besadny Fish And Wildlife Area",
+  "how": "hand copy (Wisconsin DNR (land, state GIS table), page not given)",
+  "match": "number",
+  "parts": 1,
+  "source_url": "",
+  "read_date": "2026-11-08",
+  "why": "Wisconsin DNR (land, state GIS table) (hand copy) row \"C.D. (Buzz) Besadny Fish And Wildlife Area\" (2,750 acres): the list row carries the park number US-9837",
   "flags": [],
   "other_sources": [
    {
@@ -39962,6 +41263,12 @@
     "acres": 2751.44,
     "how": "name+kind",
     "source_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_Managed_Lands_Dissolved_WTM_Ext/MapServer/0/query?where=FUNCTION_MGT_CODE%3D%27PR%27&outFields=PROP_NAME%2CPROP_CODE%2CTRANS_TYPE_CODE%2CACRES&returnGeometry=false&f=json"
+   },
+   {
+    "agency": "Wisconsin DNR",
+    "acres": 2751.44,
+    "how": "name+kind",
+    "source_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_Managed_Lands_Dissolved_WTM_Ext/MapServer/0/query?where=FUNCTION_MGT_CODE%3C%3E%27PR%27&outFields=PROP_NAME%2CPROP_CODE%2CFUNCTION_MGT_CODE%2CTRANS_TYPE_CODE%2CACRES&returnGeometry=false&f=json"
    }
   ],
   "outline_acres": 7989.0,
@@ -40295,7 +41602,7 @@
     "source_url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_Managed_Lands_Dissolved_WTM_Ext/MapServer/0/query?where=FUNCTION_MGT_CODE%3D%27PR%27&outFields=PROP_NAME%2CPROP_CODE%2CTRANS_TYPE_CODE%2CACRES&returnGeometry=false&f=json"
    }
   ],
-  "outline_acres": 9120.0,
+  "outline_acres": 6953.0,
   "park_name": "Mud Lake State Wildlife Area"
  },
  "US-9856": {
@@ -40780,7 +42087,7 @@
   "read_date": "2026-11-02",
   "why": "6 rows of Delaware State Parks (DNREC) added together (Beach Plum Island Nature Preserve); every row matched US-9887 by name+kind",
   "flags": [],
-  "outline_acres": 256.0,
+  "outline_acres": 296.0,
   "park_name": "Beach Plum Island State Nature Preserve"
  },
  "US-9890": {
@@ -40812,7 +42119,7 @@
   "read_date": "2026-11-02",
   "why": "15 rows of Delaware State Parks (DNREC) added together (James Branch Nature Preserve); every row matched US-9890 by name+kind",
   "flags": [],
-  "outline_acres": 2225.0,
+  "outline_acres": 2778.0,
   "park_name": "James Branch State Nature Preserve"
  },
  "US-9894": {
