@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-08T15:30Z",
+ "checked": "2026-11-08T15:41Z",
  "switched_on": false,
  "results": [
   {
@@ -719,7 +719,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 9 of 20 re-tested links dead, e.g. https://www.in.gov/dA/86d62369fd/ouabache_trail.pdf?language_id=1"
+    "F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dA/86d62369fd/ouabache_trail.pdf?language_id=1"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -2682,6 +2682,13 @@
    "verdict": "HOLD"
   },
   {
+   "path": "data/truth/US-GA.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/truth/US-KY.json",
    "kind": "truth",
    "why": [],
@@ -2827,11 +2834,9 @@
   {
    "path": "data/us-key/US-AZ.json",
    "kind": "key",
-   "why": [
-    "F-O3 retired parks still outlined: US-13337"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/us-key/US-CA.json",

@@ -143,22 +143,22 @@
   "US-GA": {
    "checked": 237,
    "counts": {
-    "agree": 129,
-    "handover_hints": 10,
+    "agree": 104,
+    "handover_hints": 11,
     "no_page": 0,
-    "no_size": 26,
-    "off": 45,
-    "ours_unknown": 0,
+    "no_size": 22,
+    "off": 64,
+    "ours_unknown": 4,
     "parks": 237,
     "retired": 0,
-    "unsure": 20,
-    "weak": 4,
-    "with_outline": 220
+    "unsure": 30,
+    "weak": 7,
+    "with_outline": 225
    },
    "left": 0,
    "parks": 237,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-08"
   },
   "US-IA": {
    "checked": 181,
@@ -744,31 +744,52 @@
  "hosts": {},
  "last": {
   "areas": [
-   "US-WV"
+   "US-GA"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 2,
+   "browser": 3,
+   "dropped_queued": 1,
    "errors": 0,
-   "for_person_urls": [],
-   "requests": 480,
+   "for_person": 2,
+   "for_person_urls": [
+    [
+     "https://www.exploregeorgia.org/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.exploregeorgia.org this run"
+    ],
+    [
+     "http://www.sam.usace.army.mil/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.sam.usace.army.mil this run"
+    ],
+    [
+     "https://www.gwcca.org/centennial-olympic-park",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://georgiawildlife.com/news",
+     "HTTP 403 twice"
+    ]
+   ],
+   "requests": 529,
    "rested": 0,
-   "robots": 0,
-   "strikes": 0
+   "retry403": 2,
+   "robots": 2,
+   "robots_unreadable": 2,
+   "strikes": 4
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 1,
-   "no_size": 28,
-   "ours_unknown": 5,
-   "pages_read": 426,
-   "parks": 172,
+   "handover_hints": 11,
+   "no_size": 23,
+   "ours_unknown": 4,
+   "pages_read": 386,
+   "parks": 237,
    "retired": 0,
-   "size_agree": 20,
-   "size_off": 11,
-   "size_unsure": 101,
+   "size_agree": 104,
+   "size_off": 64,
+   "size_unsure": 30,
    "skipped_fresh": 0,
-   "with_outline": 165
+   "with_outline": 225
   },
   "when": "2026-11-08"
  },
@@ -790,7 +811,7 @@
   },
   "https://georgiawildlife.com/news": {
    "links": 0,
-   "read": "2026-11-01",
+   "read": "2026-11-08",
    "status": "HTTP 403"
   },
   "https://kentuckytourism.com/industry/news": {
