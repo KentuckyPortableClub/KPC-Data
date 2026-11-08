@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
     inputs:
       units:
-        description: "NPS unit codes, comma separated (e.g. GRSM,BUFF,MACA)"
-        required: true
-        default: 'GRSM'
+        description: "NPS unit codes, comma separated (e.g. GRSM,BUFF,MACA); blank or ALL = every NPS unit (about 1 request a second)"
+        required: false
+        default: ''
 permissions:
   contents: read
 concurrency:
@@ -18,7 +18,7 @@ concurrency:
 jobs:
   pull:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v5
         with: { persist-credentials: false }
@@ -28,7 +28,7 @@ jobs:
         env:
           UNITS: ${{ inputs.units }}
         run: |
-          case "$UNITS" in *[!A-Za-z,]*) echo "::error::units takes codes like GRSM,BUFF"; exit 1;; esac
+          case "$UNITS" in *[!A-Za-z,]*) echo "::error::units takes codes like GRSM,BUFF (blank = all)"; exit 1;; esac
           python3 .github/scripts/kpc_nps_park_trails.py --units "$UNITS" --out "$GITHUB_WORKSPACE/nps-trails"
       - uses: actions/upload-artifact@v4
         if: always()

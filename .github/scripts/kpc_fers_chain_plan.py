@@ -27,7 +27,7 @@ An area of a key runs once per key build, when ALL hold:
     Either way the 2-fer output stays HELD in the waiting room until a person grades it; the gate only decides what STARTS.
 At most MAX (3) areas per start; the rest come on the next hourly copy. Kentucky (its own key) is never in the chain.
 CA and world finishing later: each key's 2-fers wait for THAT key's own new build (the US areas do not wait for Canada); inside a
-line the other keys are the live (last good) ones. The world key has no 2-fer area here.
+line the other keys are the live (last good) ones. Nov 8: the world key has its own areas (worldwest/north/east, W-* countries).
 Remembered in data/status/fers-chain/seen.json {key: {build, ran: [tags], waiting: {tag: why}}}; while PENDING both answers are
 printed as notices in the run log (nothing is saved: nothing started). The gate state: data/status/fers-chain/gate.json.
 env  DATA=. LINKS=links GATE=<repo variable: on|off|empty> MAX=3 GITHUB_OUTPUT (writes run, areas, gate_changed)"""
@@ -37,8 +37,13 @@ R = {'southeast': 'US-TN US-NC US-VA US-WV US-GA US-AL US-SC US-FL US-MS', 'midw
      'northeast': 'US-PA US-NY US-NJ US-CT US-RI US-MA US-VT US-NH US-ME US-MD US-DE US-DC', 'southcentral': 'US-AR US-LA US-OK US-TX US-KS US-NE',
      'mountain': 'US-CO US-WY US-ID US-MT US-NV US-AZ US-NM', 'pacific': 'US-CA US-OR US-WA US-AK US-HI',
      'oh': 'US-OH', 'mi': 'US-MI', 'ut': 'US-UT',
-     'canadaeast': 'CA-ON CA-QC CA-NB CA-NS CA-PE CA-NL', 'canadawest': 'CA-MB CA-SK CA-AB CA-BC CA-YT CA-NT CA-NU'}   # = kpc-fers-pending.yml's areas
-KEYS = {'us-key': 'us', 'ca-key': 'ca'}
+     'canadaeast': 'CA-ON CA-QC CA-NB CA-NS CA-PE CA-NL', 'canadawest': 'CA-MB CA-SK CA-AB CA-BC CA-YT CA-NT CA-NU',   # = kpc-fers-pending.yml's areas
+     # Nov 8 (Brandon: 'if quality approves something it is good to run'): the world key's 2-fer areas (the W-* countries in data/fers)
+     'worldwest': 'W-GB W-IE W-FR W-ES W-PT W-BE W-NL W-LU W-DE W-CH',
+     'worldnorth': 'W-AT W-IT W-DK W-NO W-SE W-FI W-EE W-LV W-LT W-PL',
+     'worldeast': 'W-CZ W-SK W-HU W-SI W-HR W-RO W-AU W-JP'}
+KEYS = {'us-key': 'us', 'ca-key': 'ca', 'world-key': 'world'}
+KIND_OF = lambda sts: 'ca-key' if sts.startswith('CA-') else 'world-key' if sts.startswith('W-') else 'us-key'   # an area's key
 GATE_DEFAULT = 'off'   # <-- THE GATE DEFAULT (per Brandon via Super Head Bot (relayed), 5:48 AM CST Nov 4: off for testing; it turns on by itself: kpc_fers_chain_gate.py)
 
 
@@ -122,7 +127,7 @@ def plan(data='.', links='links', gate='', mx=3, now=None):
         if s.get('build') != bid: s = {'build': bid, 'ran': [], 'waiting': {}, 'first_seen': time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime(now))}
         s['waiting'] = {}
         for tag, sts in R.items():
-            if (kind == 'ca-key') != sts.startswith('CA-') or tag in s['ran']: continue
+            if KIND_OF(sts) != kind or tag in s['ran']: continue
             nr = [f'{x} ({notclean[x]})' for x in sts.split() if x in notclean]
             if gate == 'PENDING':
                 (would['off'] if len(would['off']) < mx else []).append(tag)

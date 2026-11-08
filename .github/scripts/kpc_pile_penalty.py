@@ -35,7 +35,16 @@ PARAMS = {
     'pin_off': 10, 'two_agencies': 5,                                         # GUESS
     'demote_below': 60,        # GUESS: a SOLVED-JOIN whose score falls under this is "would_demote" (reported only)
     'min_n_type': 10, 'min_n_kind': 8, 'min_n_name': 4,   # fewer parks than this = no evidence = weight 0
+    # Nov 8 (Quality Nov 7 A1/A2): the type/kind/name weights are a statistical PRIOR, not a row-quality ranking; these two flags look
+    # at THIS row's own match instead (they report only; auto stays false)
+    'no_record': 15,           # a solved row with no record id / record name (US-9906)
+    'unit_mismatch': 15,       # a unit / direction word in one name only (Salem Unit vs the whole park; Brush Mountain vs Brush Mountain East)
 }
+UNIT_WORDS = {'north', 'south', 'east', 'west', 'upper', 'lower', 'middle', 'unit', 'tract', 'annex', 'addition', 'northern', 'southern', 'eastern', 'western'}
+
+
+def unit_words(name):
+    return {w for w in re.findall(r'[a-z]+', str(name or '').lower()) if w in UNIT_WORDS}
 # name classes (word boundaries; "Churchill" must not hit "church"). university is NOT here: it is the shared rule in
 # kpc-maprep-candidates.js and had weight 0.
 NAME_CLASSES = {
@@ -96,7 +105,7 @@ def build_weights(links, today=None):
             names[cls] = {'n': c['n'], 'official': c['official'], 'pin': c['pin'], 'raw': 0, 'note': 'fewer than %d parks: no evidence, weight 0' % P['min_n_name']}
     return {
         'auto': False,
-        'about': 'Report only. Weights for the pile-solver park-type penalty, computed from the Links US key (outline rate by POTA type, by official-record '
+        'about': 'Report only. A statistical type PRIOR (Quality Nov 7: not a row-quality ranking); the match part checks the row itself. Weights for the pile-solver park-type penalty, computed from the Links US key (outline rate by POTA type, by official-record '
                  'kind code and by name class). Regenerate after each US key rebuild. Nothing here changes a verdict.',
         'made': today or '', 'us_key_parks': N, 'global_official_rate': round(goff, 4),
         'how': 'rate = parks with an official outline (g=official) / parks of the group. shrunk = (official + M*global) / (n + M). '
@@ -121,7 +130,7 @@ def type_penalty(row, kp, W, key_join=None):
     rid = str(row.get('record_id') or '')
     bk = kp.get('bk') or [None, None, '']
     hows = [str(m[3]) for m in (kp.get('m') or []) if isinstance(m, list) and len(m) > 3 and str(m[0]) == rid] if rid else []
-    parts = {'type': 0, 'kind': 0, 'name': 0, 'designation': 0}
+    parts = {'type': 0, 'kind': 0, 'name': 0, 'designation': 0, 'match': 0}
     why = []
     signed = join and ((rid and rid in [str(x) for x in (key_join or [])]) or any(h.startswith('reviewed') for h in hows))
     if signed:
@@ -154,6 +163,14 @@ def type_penalty(row, kp, W, key_join=None):
         if join and any('designation code ignored' in h for h in hows):
             parts['designation'] = P['designation_ignored']
             why.append('the key joined this record by name only; its designation code disagreed with the park (designation code ignored)')
+        # this row's own match (Quality Nov 7 A2), independent of the type prior
+        rname = str(row.get('record_name') or '')
+        if verdict != 'NEEDS-PERSON' and not rid and not rname:
+            parts['match'] = P.get('no_record', 15); why.append('no record id or name: cannot rank as an exact match')
+        elif rname:
+            a, b = unit_words(row.get('pota_name') or kp.get('n')), unit_words(rname)
+            if a != b:
+                parts['match'] = P.get('unit_mismatch', 15); why.append(f"unit/direction words differ: park {sorted(a) or '-'} vs record {sorted(b) or '-'}")
     pen = min(P['cap'], max(parts.values()))
     after = base - pen
     return {'ref': row.get('ref'), 'park': row.get('pota_name'), 'verdict': verdict, 'score_before': base, 'penalty': pen, 'parts': parts,

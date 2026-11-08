@@ -31,4 +31,6 @@ wired = {w['ref']: w for w in csv.DictReader(open(ROOT / 'data/waiting/outline-s
 check('US-5993' in wired and (ROOT / wired['US-5993']['layer_url'][5:]).is_file(), 'US-5993 Central Pacific grade line is wired')
 rows = json.loads(gzip.open(ROOT / 'data/waiting/outline-sources/ledger.json.gz').read())['rows']
 check(rows.get('US-5993', {}).get('trail', {}).get('status') == 'trail line wired', 'ledger: US-5993 wired')
+check(n.PACE >= 1.0 and "in ('', 'ALL')" in src, 'no unit codes = all NPS units, about 1 request a second')
+check("required: false" in y and "default: ''" in y, 'workflow: blank units = all')
 sys.exit(1 if FAILS else 0)
