@@ -39,6 +39,11 @@ BANNED_URL = re.compile(r'google\.[a-z.]+/maps|/maps/d/|protectedplanet|wdpa|'
 from urllib.parse import urljoin as _polite_urljoin
 
 
+def _no_net(*a, **k):
+    """KPC_NO_NET=1 (set by the test gate): any real request raises instead of touching a socket. Mocked tests replace _raw / _one / the session."""
+    raise RuntimeError('network disabled (KPC_NO_NET=1)')
+
+
 def banned(url):
     """True for the sources the club never uses (KPC rules 1 + handoff Part A.6)."""
     h = (urlparse(url).hostname or '').lower()
@@ -128,6 +133,8 @@ class Polite:
     ArcGIS Hub portals get at least 60 s between requests; a robots Crawl-delay is always honoured in full."""
     MIN_GAP = 2.0       # club decision (Oct 31): at least 2 seconds between two requests to one host, every tool
     HUB_GAP = 60.0      # standing rule: ArcGIS Hub portals need at least a 60-second crawl delay
+    MAX_DELAY = 300.0   # Nov 7 review: a robots Crawl-delay is honoured in full up to this; above it the host RESTS for the run (no request
+    #                     at all still obeys robots) instead of sleeping inside a time-budgeted job
     HUB_RX = re.compile(r'(^|\.)(hub\.arcgis\.com|opendata\.arcgis\.com)$', re.I)
     SHARED_RX = re.compile(r'(^|\.)(arcgis\.com|storage\.googleapis\.com)$', re.I)
     MAX_HOPS = 5
@@ -147,6 +154,7 @@ class Polite:
         self.stats = {'requests': 0, 'cache_hits': 0, 'robots_refused': 0, 'rested': 0, 'banned': 0, 'errors': 0, 'blocked': 0}
         self.log = log or (lambda *a: None)
         self.s = requests.Session()
+        if os.environ.get('KPC_NO_NET') == '1': self.s.request = _no_net
         if cache:
             os.makedirs(cache, exist_ok=True)
 
@@ -154,7 +162,7 @@ class Polite:
         gap = self.gap
         rb = self.robots.get(host)
         if rb is not None and rb.delay:
-            gap = max(gap, rb.delay)          # Nov 7: honoured in full (was capped at 30 s)
+            gap = max(gap, min(rb.delay, self.MAX_DELAY))   # Nov 7: honoured in full up to MAX_DELAY (was capped at 30 s)
         if gap and self.HUB_RX.search(host):
             gap = max(gap, self.HUB_GAP)
         t = self.last.get(host, 0) + gap + extra - time.time()
@@ -307,9 +315,15 @@ class Polite:
             return 'resting', {}, b'', url
         if self._block_key(url) in self.blocked:
             return 403, {}, b'', url
-        if not self.robots_for(url).allowed(url):     # Nov 7: obeyed on every path, ArcGIS REST included
+        rb = self.robots_for(url)
+        if not rb.allowed(url):     # Nov 7: obeyed on every path, ArcGIS REST included
             self.stats['robots_refused'] += 1
             return 'robots', {}, b'', url
+        if rb.delay and rb.delay > self.MAX_DELAY and host not in self.resting:
+            self.resting.add(host)      # Nov 7 review: a Crawl-delay we cannot honour inside a time budget = rest the host, do not sleep for it
+            self.log(f'  {host}: robots Crawl-delay {rb.delay:g} s is over {self.MAX_DELAY:g} s; resting it for this run (no requests)')
+            self.stats['rested'] += 1
+            return 'resting', {}, b'', url
         return self._cached(url, method, data, headers, nocache=nocache)
 
 
@@ -462,6 +476,33 @@ def polite_selftest():
         time.sleep = real_sleep
     if len(slept) != 3 or min(slept[:2]) < 59 or slept[2] < 89:
         problems.append(f'ArcGIS Hub must wait >= 60 s and a 90 s Crawl-delay must be honoured: {slept}')
+    # a Crawl-delay over MAX_DELAY rests the host: no request, no sleep (a run must not stall for an hour on one host)
+    w10, calls10 = Polite(cache=None, gap=1.0), []
+    w10.gap = 0
+    w10.robots['slow2.example.gov'] = Robots('User-agent: *\nCrawl-delay: 3600\n')
+    w10._raw = lambda url, method='GET', data=None, headers=None: (calls10.append(url), (200, {}, b'{}', url))[1]
+    slept2 = []
+    try:
+        time.sleep = lambda t: slept2.append(t)
+        st10 = w10.get('https://slow2.example.gov/data.json')[0]
+    finally:
+        time.sleep = real_sleep
+    if st10 != 'resting' or calls10 or slept2 or 'slow2.example.gov' not in w10.resting:
+        problems.append(f'a Crawl-delay over {Polite.MAX_DELAY:g} s must rest the host with no request and no sleep: {st10} {calls10} {slept2}')
+    # KPC_NO_NET=1: a real request raises, no socket is opened
+    old = os.environ.get('KPC_NO_NET')
+    os.environ['KPC_NO_NET'] = '1'
+    try:
+        w9 = Polite(cache=None, gap=1.0)
+        w9.gap = 0
+        try:
+            w9._one('https://no-net.example.invalid/x')
+            problems.append('KPC_NO_NET=1 must stop a real request')
+        except RuntimeError:
+            pass
+    finally:
+        if old is None: os.environ.pop('KPC_NO_NET', None)
+        else: os.environ['KPC_NO_NET'] = old
     return problems
 # ---------------------------------------------------------------- end of polite web reader
 
