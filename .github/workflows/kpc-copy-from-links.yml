@@ -139,6 +139,15 @@ jobs:
                   import sys as _s; _s.path.insert(0, '../links/.github/scripts'); import kpc_key_freeze as KF
                   if hb and hasattr(KF, 'not_blocking'): sup = KF.not_blocking(json.load(open(f'data/waiting/in/data/{k}/index.json')), k)
               except Exception as e: print(f'::warning title=Copy::{k}: the superseded test could not run ({str(e)[:120]}): the held build is kept', flush=True); sup = ''
+              # Nov 8 (Brandon 1:50 PM CST, card t748s2719): a NEWER build with Quality's KEY YES (approved.json, what + build) replaces the
+              # held one. Nothing of the old build goes live; it is logged in data/status/key-copy/replaced-<key>.json (kpc_key_supersede.py).
+              if hb and not sup:
+                  try:
+                      import sys as _s2; _s2.path.insert(0, '.github/scripts'); import kpc_key_supersede as KS
+                      nb0 = json.load(open(f'../links/data/{k}/index.json')).get('build')
+                      sup = KS.reason(ap, k, hb, nb0)
+                      if sup: KS.log_replaced(k, hb, nb0, sup)
+                  except Exception as e: print(f'::warning title=Copy::{k}: the newer-YES test could not run ({str(e)[:120]}): the held build is kept', flush=True); sup = ''
               if hb and sup:
                   import shutil
                   stray = []
