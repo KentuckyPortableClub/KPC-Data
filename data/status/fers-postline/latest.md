@@ -1,6 +1,6 @@
 # 2-fer post-line check (for Quality)
 
-2026-11-07 04:08 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
+2026-11-08 01:28 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
 
 ## CA-AB: live pairs 40 -> 36 (+3 / -7)
 - gained: CA-0110+US-4558 CA-2956+CA-2958 CA-3008+CA-6112
@@ -140,7 +140,7 @@
 - water / bank: 14
 - one-record same land: -
 - near a size threshold: CA-0106+US-0142 85 m ~ 100 yd (small); CA-0742+US-4448 87 m ~ 100 yd (small); CA-0742+US-4592 37 m ~ 50 yd (very tight); CA-3567+US-4448 27 m ~ 25 yd (kept); US-0143+US-0144 23 m ~ 25 yd (kept); US-4448+US-4593 45 m ~ 50 yd (very tight)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-AL: live pairs 25 -> 24 (+0 / -1)
 - gained: -
@@ -150,7 +150,7 @@
 - water / bank: 0
 - one-record same land: US-12964+US-9919 US-3690+US-4596 US-9876+US-9880
 - near a size threshold: US-0137+US-3713 23 m ~ 25 yd (kept); US-0141+US-9844 51 m ~ 50 yd (very tight); US-3683+US-4450+US-4595 25 m ~ 25 yd (kept); US-3685+US-4600 25 m ~ 25 yd (kept)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-AR: live pairs 16 -> 94 (+80 / -2)
 - gained: US-0162+US-7342 US-0164+US-7158 US-0164+US-7279 US-0164+US-9757 US-0165+US-7264 US-0168+US-7273 US-0171+US-7358 US-0646+US-7270 US-0646+US-7288 US-0646+US-7347 US-0646+US-7357 US-0721+US-9757 US-0768+US-7358 US-0822+US-9757 US-10258+US-7307 US-10303+US-4425 US-10303+US-7333 US-10333+US-7316 US-1076+US-11127 US-1082+US-4425+US-7345 US-1082+US-7345 US-1085+US-11353 US-1085+US-7293 US-1102+US-7356 US-1104+US-4425+US-7306 US-1104+US-7306 US-1104+US-8322 US-1111+US-7316 US-1114+US-4424 US-1114+US-8321
@@ -160,7 +160,7 @@
 - water / bank: 4
 - one-record same land: US-0171+US-11713 US-0646+US-7270 US-1085+US-7293 US-1096+US-12765 US-11165+US-7152 US-7163+US-7338 US-7170+US-7329 US-7170+US-7329 US-7180+US-7294 US-7183+US-7348
 - near a size threshold: US-0164+US-7279 85 m ~ 100 yd (small); US-0164+US-7319 45 m ~ 50 yd (very tight); US-0165+US-7264 45 m ~ 50 yd (very tight); US-0646+US-7347 39 m ~ 50 yd (very tight); US-1075+US-4424 39 m ~ 50 yd (very tight); US-12094+US-4424 25 m ~ 25 yd (kept); US-4424+US-7275 25 m ~ 25 yd (kept); US-4425+US-7288 105 m ~ 100 yd (small); US-7263+US-7271 25 m ~ 25 yd (kept); US-7270+US-7347 39 m ~ 50 yd (very tight); US-7276+US-7324 25 m ~ 25 yd (kept); US-7288+US-7336 25 m ~ 25 yd (kept)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-AZ: live pairs 36 -> 4 (+3 / -35)
 - gained: US-4562+US-4571 US-4562+US-4575 US-4562+US-9757
@@ -170,7 +170,7 @@
 - water / bank: 0
 - one-record same land: -
 - near a size threshold: -
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-CA: live pairs 88 -> 5 (+0 / -83)
 - gained: -
@@ -180,7 +180,7 @@
 - water / bank: 0
 - one-record same land: US-3406+US-3407 US-3462+US-3548 US-3462+US-3548 US-3476+US-3477 US-3476+US-3477 US-3476+US-3477 US-3580+US-3581 US-3594+US-3595 US-3594+US-3595
 - near a size threshold: -
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-CO: live pairs 49 -> 4 (+1 / -46)
 - gained: US-11885+US-12185
@@ -190,7 +190,7 @@
 - water / bank: 0
 - one-record same land: US-0033+US-8295 US-0223+US-9625 US-10533+US-10540 US-10539+US-1236 US-11885+US-12185
 - near a size threshold: -
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-CT: live pairs 33 -> 43 (+14 / -4)
 - gained: US-10073+US-7533 US-12620+US-4561 US-1646+US-7528 US-1682+US-4556 US-1697+US-4561 US-1706+US-4561 US-1724+US-4561 US-1725+US-4561 US-4561+US-7531 US-4582+US-6871 US-4582+US-7548 US-6863+US-7528 US-7528+US-7537 US-7535+US-7548
@@ -200,7 +200,7 @@
 - water / bank: 5
 - one-record same land: US-1694+US-7520
 - near a size threshold: US-10079+US-1719 39 m ~ 50 yd (very tight); US-11013+US-12604 45 m ~ 50 yd (very tight); US-1657+US-7530 39 m ~ 50 yd (very tight); US-1658+US-1674 23 m ~ 25 yd (kept); US-1695+US-7537 103 m ~ 100 yd (small); US-6857+US-6869 45 m ~ 50 yd (very tight)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-DC: live pairs 1 -> 14 (+14 / -1)
 - gained: US-0656+US-4564 US-0656+US-9901 US-0776+US-4567+US-4581 US-0785+US-4567+US-4581 US-0791+US-4567+US-4581 US-0792+US-4564 US-0792+US-4567+US-4581 US-0792+US-9901 US-0794+US-4567+US-4581 US-0796+US-4567+US-4581 US-0825+US-4564 US-0825+US-9901 US-13543+US-4564 US-13543+US-9901
@@ -210,7 +210,7 @@
 - water / bank: 6
 - one-record same land: US-0795+US-0796
 - near a size threshold: -
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-DE: live pairs 30 -> 33 (+7 / -4)
 - gained: US-0898+US-9881 US-1733+US-9877 US-1743+US-9881 US-4564+US-4567 US-4564+US-4582 US-4581+US-4582 US-4582+US-9901
@@ -220,7 +220,7 @@
 - water / bank: 5
 - one-record same land: US-10659+US-7646 US-10682+US-5722 US-11812+US-1742
 - near a size threshold: US-0229+US-9882 27 m ~ 25 yd (kept); US-0230+US-5724 75 m ~ 100 yd (small)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-FL: live pairs 175 -> 206 (+54 / -23)
 - gained: US-0240+US-3620 US-0247+US-3660 US-0256+US-6288 US-10552+US-3660 US-10553+US-3660 US-10559+US-3660 US-10565+US-3660 US-10566+US-3660 US-10567+US-3660 US-10568+US-3660 US-10592+US-3660 US-10603+US-3660 US-10604+US-3660 US-10620+US-3660 US-12131+US-6281 US-1851+US-3620 US-1852+US-3620 US-1865+US-3640 US-1870+US-3667 US-1887+US-6281 US-1897+US-3620 US-1921+US-8695 US-1925+US-3660 US-3627+US-3667 US-3627+US-6309 US-3637+US-4559 US-3640+US-3660 US-3641+US-4559 US-3644+US-8343 US-3645+US-4472
@@ -230,7 +230,7 @@
 - water / bank: 12
 - one-record same land: US-10565+US-10566 US-12133+US-3605 US-1838+US-4613 US-3663+US-6744
 - near a size threshold: US-0024+US-3618 105 m ~ 100 yd (small); US-0231+US-1914 47 m ~ 50 yd (very tight); US-0235+US-4646 45 m ~ 50 yd (very tight); US-0236+US-1886 23 m ~ 25 yd (kept); US-0237+US-3614 53 m ~ 50 yd (very tight); US-0240+US-0250 45 m ~ 50 yd (very tight); US-0241+US-3657 49 m ~ 50 yd (very tight); US-0250+US-6303 25 m ~ 25 yd (kept); US-0258+US-3618 45 m ~ 50 yd (very tight); US-1838+US-8680 91 m ~ 100 yd (small); US-1853+US-4627 25 m ~ 25 yd (kept); US-1862+US-4470 75 m ~ 100 yd (small); US-1866+US-4631 23 m ~ 25 yd (kept); US-1886+US-6303 39 m ~ 50 yd (very tight); US-1919+US-8716 23 m ~ 25 yd (kept); US-3637+US-8362 25 m ~ 25 yd (kept); US-4470+US-6300 25 m ~ 25 yd (kept); US-4471+US-4639 37 m ~ 50 yd (very tight); US-4471+US-6295 25 m ~ 25 yd (kept); US-4471+US-8364 25 m ~ 25 yd (kept)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-GA: live pairs 55 -> 60 (+10 / -5)
 - gained: US-0264+US-4649 US-2187+US-4473 US-2193+US-7139 US-2204+US-4473 US-4473+US-4556 US-4556+US-7135 US-4556+US-7138 US-4556+US-7447 US-4556+US-7451 US-7140+US-7141
@@ -240,7 +240,7 @@
 - water / bank: 4
 - one-record same land: US-3741+US-7899 US-3743+US-4650 US-3746+US-4651 US-3762+US-7461 US-3775+US-7470 US-4586+US-7462 US-4647+US-4648 US-7140+US-7141
 - near a size threshold: US-0264+US-3720 45 m ~ 50 yd (very tight); US-0264+US-4649 45 m ~ 50 yd (very tight); US-0662+US-7860 53 m ~ 50 yd (very tight); US-12418+US-2202+US-4473 105 m ~ 100 yd (small); US-12421+US-2166 105 m ~ 100 yd (small); US-2176+US-4473 45 m ~ 50 yd (very tight); US-2187+US-4473 25 m ~ 25 yd (kept); US-2192+US-4473 75 m ~ 100 yd (small); US-2204+US-4473 23 m ~ 25 yd (kept); US-3761+US-7461 75 m ~ 100 yd (small); US-3767+US-3773 51 m ~ 50 yd (very tight)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-HI: live pairs 21 -> 21 (+0 / -0)
 - gained: -
@@ -250,7 +250,7 @@
 - water / bank: 0
 - one-record same land: -
 - near a size threshold: US-10905+US-2222 23 m ~ 25 yd (kept); US-2210+US-3391 25 m ~ 25 yd (kept)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-IA: live pairs 16 -> 17 (+4 / -3)
 - gained: US-0268+US-3487 US-11305+US-11323 US-11305+US-2283 US-11305+US-9348
@@ -260,7 +260,7 @@
 - water / bank: 1
 - one-record same land: -
 - near a size threshold: US-0268+US-3487 25 m ~ 25 yd (kept); US-0922+US-4664 45 m ~ 50 yd (very tight); US-11875+US-9308 25 m ~ 25 yd (kept); US-2294+US-4661 85 m ~ 100 yd (small); US-2316+US-4659 45 m ~ 50 yd (very tight); US-9326+US-9327 25 m ~ 25 yd (kept)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-ID: live pairs 49 -> 5 (+5 / -49)
 - gained: US-4566+US-5605 US-4566+US-7360 US-4576+US-5593 US-4576+US-5604 US-4576+US-5605
@@ -270,7 +270,7 @@
 - water / bank: 0
 - one-record same land: -
 - near a size threshold: -
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-IL: live pairs 19 -> 28 (+11 / -2)
 - gained: US-0990+US-0997 US-1000+US-13298 US-1015+US-4118 US-10777+US-4130 US-12184+US-7638 US-12314+US-4132 US-4113+US-4482 US-4116+US-9989 US-4134+US-4148 US-4136+US-4482 US-4566+US-4573
@@ -280,7 +280,7 @@
 - water / bank: 1
 - one-record same land: -
 - near a size threshold: US-0283+US-4130 97 m ~ 100 yd (small); US-0283+US-4482 37 m ~ 50 yd (very tight); US-0990+US-0997 37 m ~ 50 yd (very tight); US-0996+US-4482 75 m ~ 100 yd (small); US-12184+US-7638 25 m ~ 25 yd (kept); US-12314+US-4132 25 m ~ 25 yd (kept); US-4113+US-4482 25 m ~ 25 yd (kept); US-4116+US-9989 25 m ~ 25 yd (kept); US-4157+US-4482 25 m ~ 25 yd (kept)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-IN: live pairs 60 -> 55 (+3 / -8)
 - gained: US-0765+US-4206 US-4198+US-4483 US-4217+US-5693
@@ -290,7 +290,7 @@
 - water / bank: 0
 - one-record same land: US-12019+US-2268 US-4163+US-5685 US-4163+US-5693 US-4164+US-5691
 - near a size threshold: US-0290+US-4228 45 m ~ 50 yd (very tight); US-0765+US-4206 25 m ~ 25 yd (kept); US-10253+US-4215+US-4235 27 m ~ 25 yd (kept); US-2251+US-4235 25 m ~ 25 yd (kept); US-2262+US-4203 93 m ~ 100 yd (small); US-4198+US-4483 25 m ~ 25 yd (kept); US-4200+US-4201 85 m ~ 100 yd (small); US-4214+US-4483 37 m ~ 50 yd (very tight); US-4219+US-4228 45 m ~ 50 yd (very tight); US-4235+US-6976 95 m ~ 100 yd (small); US-4483+US-5687 45 m ~ 50 yd (very tight)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-KS: live pairs 27 -> 18 (+1 / -10)
 - gained: US-2334+US-7945
@@ -300,7 +300,7 @@
 - water / bank: 1
 - one-record same land: US-2339+US-7928 US-2343+US-7934 US-2352+US-7434 US-7411+US-7949
 - near a size threshold: US-2334+US-7945 37 m ~ 50 yd (very tight); US-2336+US-7925 49 m ~ 50 yd (very tight)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-KY: live pairs 78 -> 75 (+0 / -3)
 - gained: -
@@ -310,7 +310,7 @@
 - water / bank: 29
 - one-record same land: US-0703+US-3790 US-10139+US-4526
 - near a size threshold: US-0019+US-10164 105 m ~ 100 yd (small); US-10158+US-10171+US-4484 37 m ~ 50 yd (very tight); US-10168+US-4484 37 m ~ 50 yd (very tight); US-1275+US-4484 27 m ~ 25 yd (kept); US-1281+US-4687 49 m ~ 50 yd (very tight); US-4484+US-7962 49 m ~ 50 yd (very tight)
-- stale inputs: the key build US-42230313177 (2026-11-06 16:25 UTC) is newer than this output's last pass (2026-11-02); no pre-line report for this area
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-02); no pre-line report for this area
 
 ## US-LA: live pairs 8 -> 8 (+0 / -0)
 - gained: -
@@ -320,7 +320,7 @@
 - water / bank: 1
 - one-record same land: -
 - near a size threshold: US-0297+US-0312 25 m ~ 25 yd (kept); US-0302+US-4071 25 m ~ 25 yd (kept); US-10456+US-4486 27 m ~ 25 yd (kept); US-2358+US-4047 95 m ~ 100 yd (small); US-4056+US-4065 25 m ~ 25 yd (kept)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-MA: live pairs 85 -> 82 (+10 / -13)
 - gained: US-11446+US-8394 US-11638+US-8395 US-2428+US-8397 US-2451+US-8395 US-2456+US-4582 US-4582+US-4702 US-4582+US-8431 US-4701+US-7528 US-4704+US-8398 US-8395+US-8430
@@ -330,7 +330,7 @@
 - water / bank: 29
 - one-record same land: US-11472+US-11473 US-11476+US-8417
 - near a size threshold: US-0320+US-4720 87 m ~ 100 yd (small); US-0742+US-2444 45 m ~ 50 yd (very tight); US-11396+US-4711 45 m ~ 50 yd (very tight); US-11409+US-4719 25 m ~ 25 yd (kept); US-2422+US-4755 99 m ~ 100 yd (small); US-2451+US-8381 37 m ~ 50 yd (very tight); US-4748+US-4756 25 m ~ 25 yd (kept)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-MD: live pairs 146 -> 125 (+7 / -28)
 - gained: US-0333+US-4567 US-0333+US-4581 US-10751+US-7741 US-10763+US-4567 US-10763+US-7740 US-10765+US-7731 US-4564+US-7777
@@ -340,7 +340,7 @@
 - water / bank: 56
 - one-record same land: US-0736+US-6382 US-10766+US-1602 US-10781+US-1562 US-10784+US-1568 US-1567+US-7767 US-1598+US-6390 US-6384+US-7779
 - near a size threshold: US-0331+US-7740 37 m ~ 50 yd (very tight); US-10758+US-1559 93 m ~ 100 yd (small); US-10758+US-7780 45 m ~ 50 yd (very tight); US-1575+US-1598 27 m ~ 25 yd (kept); US-4766+US-7765 23 m ~ 25 yd (kept)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-ME: live pairs 3 -> 6 (+3 / -0)
 - gained: US-2390+US-4556 US-4556+US-4582 US-4556+US-8098
@@ -350,7 +350,7 @@
 - water / bank: 0
 - one-record same land: US-2385+US-8492
 - near a size threshold: CA-0795+CA-6537+US-8484 20 m ~ 25 yd (kept); CA-4517+CA-6537+US-8484 20 m ~ 25 yd (kept); CA-6537+US-8484 20 m ~ 25 yd (kept)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-MI: live pairs 84 -> 123 (+50 / -11)
 - gained: US-0766+US-4239 US-10088+US-4239 US-10519+US-4239 US-10716+US-12801 US-10716+US-4239 US-10718+US-12799 US-12788+US-4239 US-12789+US-4239 US-12792+US-3329 US-12792+US-4239 US-12793+US-13184 US-12793+US-4239 US-12795+US-4239 US-12798+US-13184 US-12799+US-4239 US-12801+US-4489 US-13170+US-4487 US-13171+US-4583 US-13171+US-6625 US-13182+US-3383 US-13184+US-4239 US-1494+US-4239 US-1498+US-4239 US-1524+US-4239 US-1533+US-4239 US-1534+US-4239 US-1543+US-4239 US-1544+US-4239 US-1549+US-1550 US-1555+US-4239
@@ -370,7 +370,7 @@
 - water / bank: 12
 - one-record same land: US-2506+US-7148
 - near a size threshold: CA-0341+US-2489 27 m ~ 25 yd (kept); US-0067+US-4491 85 m ~ 100 yd (small); US-0364+US-2482+US-7145 39 m ~ 50 yd (very tight); US-11872+US-4490+US-4784 53 m ~ 50 yd (very tight); US-12813+US-2496 105 m ~ 100 yd (small); US-2508+US-4799+US-4831 25 m ~ 25 yd (kept); US-2517+US-4790+US-4824 25 m ~ 25 yd (kept); US-2531+US-4809 25 m ~ 25 yd (kept); US-4490+US-4787+US-4835 25 m ~ 25 yd (kept); US-4490+US-4797 25 m ~ 25 yd (kept); US-4490+US-4799 45 m ~ 50 yd (very tight); US-4490+US-4817 45 m ~ 50 yd (very tight); US-4799+US-4831 45 m ~ 50 yd (very tight); US-4806+US-4807 25 m ~ 25 yd (kept); US-4807+US-4819 45 m ~ 50 yd (very tight)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-MO: live pairs 60 -> 58 (+1 / -3)
 - gained: US-3348+US-7984
@@ -380,7 +380,7 @@
 - water / bank: 1
 - one-record same land: US-11138+US-1780 US-13253+US-3363 US-1773+US-6500
 - near a size threshold: US-0376+US-11065 25 m ~ 25 yd (kept); US-0377+US-6488 45 m ~ 50 yd (very tight); US-0788+US-4492 25 m ~ 25 yd (kept); US-0788+US-5696 25 m ~ 25 yd (kept); US-11138+US-4492 25 m ~ 25 yd (kept); US-11370+US-4492 25 m ~ 25 yd (kept); US-13160+US-4492 79 m ~ 100 yd (small); US-1758+US-6511 25 m ~ 25 yd (kept); US-1780+US-4492 25 m ~ 25 yd (kept); US-3348+US-7984 37 m ~ 50 yd (very tight); US-5713+US-8252 95 m ~ 100 yd (small)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-MS: live pairs 17 -> 14 (+0 / -3)
 - gained: -
@@ -390,7 +390,7 @@
 - water / bank: 0
 - one-record same land: -
 - near a size threshold: US-0642+US-10297 45 m ~ 50 yd (very tight); US-0642+US-4498 85 m ~ 100 yd (small); US-4495+US-7079+US-7080 20 m ~ 25 yd (kept); US-4495+US-7079 20 m ~ 25 yd (kept)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-MT: live pairs 28 -> 1 (+0 / -27)
 - gained: -
@@ -400,7 +400,7 @@
 - water / bank: 0
 - one-record same land: US-12646+US-12918 US-12646+US-12918
 - near a size threshold: -
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-NC: live pairs 92 -> 131 (+64 / -25)
 - gained: US-0411+US-8313 US-0415+US-8313 US-0682+US-3852 US-0682+US-6889 US-0682+US-8313 US-0706+US-8313 US-10262+US-8313 US-10397+US-4556 US-11019+US-8313 US-11020+US-8313 US-11856+US-2739 US-11856+US-4510 US-11856+US-6936 US-11856+US-6937 US-12320+US-2746 US-12320+US-2750 US-12320+US-4577 US-12320+US-8313 US-13002+US-2735 US-13002+US-6899 US-2725+US-8313 US-2733+US-8313 US-2735+US-8313 US-2737+US-8313 US-2738+US-8313 US-2747+US-4510+US-6936 US-2747+US-8313 US-2750+US-8313 US-2752+US-8313 US-2754+US-8313
@@ -410,7 +410,7 @@
 - water / bank: 2
 - one-record same land: US-3852+US-6889
 - near a size threshold: US-0410+US-0820 53 m ~ 50 yd (very tight); US-0410+US-6908 49 m ~ 50 yd (very tight); US-0417+US-6919 45 m ~ 50 yd (very tight); US-0419+US-6908 45 m ~ 50 yd (very tight); US-11019+US-6895 39 m ~ 50 yd (very tight); US-2732+US-4509+US-6937 49 m ~ 50 yd (very tight); US-2747+US-4510 53 m ~ 50 yd (very tight); US-2747+US-6936 53 m ~ 50 yd (very tight); US-2752+US-4852 81 m ~ 100 yd (small); US-2753+US-6952 27 m ~ 25 yd (kept); US-4509+US-9758 25 m ~ 25 yd (kept); US-4510+US-6927 81 m ~ 100 yd (small); US-4857+US-6916 81 m ~ 100 yd (small); US-6877+US-6922 81 m ~ 100 yd (small); US-6907+US-6917 25 m ~ 25 yd (kept); US-6927+US-9758 25 m ~ 25 yd (kept)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-ND: live pairs 13 -> 9 (+7 / -11)
 - gained: US-2759+US-4239 US-2764+US-4239 US-4239+US-7486 US-4239+US-7700 US-4239+US-7702 US-4239+US-8520 US-4239+US-8572
@@ -420,7 +420,7 @@
 - water / bank: 0
 - one-record same land: US-0422+US-8566
 - near a size threshold: US-0065+US-7485 89 m ~ 100 yd (small)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-NE: live pairs 15 -> 43 (+32 / -4)
 - gained: US-0268+US-3487 US-0675+US-2620 US-0675+US-2620+US-9360 US-0675+US-2622 US-0675+US-9360 US-0962+US-4566 US-0962+US-4578 US-13536+US-4566 US-13536+US-4576 US-13536+US-4578 US-13611+US-4566 US-13611+US-4573 US-2609+US-4566 US-2609+US-4576 US-2610+US-4566 US-2617+US-4566 US-2617+US-4578 US-2623+US-4566 US-2623+US-4576 US-2623+US-4578 US-4566+US-5628 US-4566+US-5646 US-4566+US-5657 US-4566+US-5665 US-4566+US-5671 US-4566+US-9366 US-4573+US-5657 US-4573+US-5665 US-4573+US-5671 US-4576+US-9366
@@ -430,7 +430,7 @@
 - water / bank: 0
 - one-record same land: US-12362+US-2612 US-12362+US-2612 US-12362+US-2612 US-13378+US-5629 US-13434+US-9371 US-13536+US-5659 US-13614+US-13615 US-13628+US-5676 US-2617+US-5628 US-2617+US-5628 US-2617+US-5628 US-2623+US-9366 US-2623+US-9366
 - near a size threshold: US-0268+US-3487 25 m ~ 25 yd (kept); US-0675+US-2620+US-9360 23 m ~ 25 yd (kept); US-2613+US-3371 75 m ~ 100 yd (small)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-NH: live pairs 28 -> 26 (+2 / -4)
 - gained: US-13595+US-4938 US-13595+US-4949
@@ -440,7 +440,7 @@
 - water / bank: 1
 - one-record same land: US-4923+US-4944 US-4952+US-4953
 - near a size threshold: US-4512+US-4875 25 m ~ 25 yd (kept); US-4512+US-4958 47 m ~ 50 yd (very tight)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-NJ: live pairs 28 -> 32 (+10 / -6)
 - gained: US-0684+US-1613 US-0684+US-1634 US-0746+US-4582 US-1613+US-4582 US-1619+US-4556 US-1628+US-4582 US-1636+US-4556 US-4556+US-4991 US-4556+US-4999 US-4556+US-5001
@@ -450,7 +450,7 @@
 - water / bank: 2
 - one-record same land: -
 - near a size threshold: US-0453+US-4992 39 m ~ 50 yd (very tight); US-0677+US-8058 47 m ~ 50 yd (very tight); US-0886+US-11964+US-13256 101 m ~ 100 yd (small); US-0888+US-1622 75 m ~ 100 yd (small); US-1613+US-1634 23 m ~ 25 yd (kept); US-1619+US-4999 97 m ~ 100 yd (small); US-1622+US-4995 23 m ~ 25 yd (kept)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-NM: live pairs 10 -> 33 (+27 / -4)
 - gained: US-0012+US-4516 US-0458+US-4568 US-0462+US-4568 US-0678+US-4517 US-0752+US-4579 US-0904+US-4517 US-0933+US-4579 US-11807+US-2707 US-12804+US-4568 US-2697+US-4568 US-2698+US-2700 US-2698+US-4575 US-2699+US-4517 US-2699+US-4517+US-8227 US-2699+US-8227 US-2700+US-4575 US-2701+US-4517 US-2712+US-4568 US-4513+US-4558 US-4513+US-4575 US-4517+US-4558 US-4517+US-4568 US-4517+US-4575 US-4517+US-4579 US-4517+US-8227 US-4579+US-7479 US-8618+US-8620
@@ -460,7 +460,7 @@
 - water / bank: 0
 - one-record same land: -
 - near a size threshold: US-11822+US-2699+US-4517 97 m ~ 100 yd (small); US-2699+US-4517+US-8227 97 m ~ 100 yd (small); US-2701+US-4517 83 m ~ 100 yd (small)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-NV: live pairs 49 -> 47 (+18 / -20)
 - gained: US-0071+US-4391 US-1144+US-4458 US-1147+US-4458 US-1156+US-4391 US-12614+US-4391 US-13139+US-9271 US-4391+US-4456 US-4391+US-4458 US-4391+US-4468 US-4391+US-4562 US-4391+US-9236 US-4391+US-9244 US-4391+US-9269 US-4458+US-4562 US-4562+US-4566 US-4566+US-4573 US-4566+US-4576 US-4576+US-4578
@@ -470,7 +470,7 @@
 - water / bank: 3
 - one-record same land: US-13115+US-4393 US-13139+US-9271
 - near a size threshold: US-0071+US-4391 23 m ~ 25 yd (kept); US-1147+US-4458 25 m ~ 25 yd (kept); US-13064+US-2640 85 m ~ 100 yd (small); US-2633+US-4391 37 m ~ 50 yd (very tight); US-2633+US-4458 95 m ~ 100 yd (small)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-NY: live pairs 44 -> 118 (+90 / -16)
 - gained: US-0062+US-8098 US-0456+US-4556 US-0476+US-8098 US-0931+US-4239 US-10037+US-8098 US-10040+US-4582 US-10040+US-8098 US-10041+US-4239 US-10043+US-8098 US-10051+US-8098 US-10078+US-4582 US-10078+US-8098 US-10663+US-8098 US-12375+US-2102 US-12375+US-2156 US-12382+US-9045 US-13624+US-4239 US-2003+US-4239 US-2010+US-4556 US-2010+US-4582 US-2021+US-8098 US-2036+US-4556 US-2069+US-4556 US-2069+US-4582 US-2073+US-4582 US-2079+US-4556 US-2079+US-4582 US-2097+US-8098 US-2120+US-8098 US-2122+US-4239
@@ -480,7 +480,7 @@
 - water / bank: 2
 - one-record same land: US-10033+US-2054 US-10295+US-5067 US-5153+US-5154
 - near a size threshold: US-2096+US-8069 37 m ~ 50 yd (very tight); US-2100+US-5403 23 m ~ 25 yd (kept); US-2132+US-8319 45 m ~ 50 yd (very tight); US-2148+US-4709 23 m ~ 25 yd (kept); US-5088+US-5261 45 m ~ 50 yd (very tight)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-OH: live pairs 32 -> 67 (+36 / -1)
 - gained: US-11673+US-4239 US-1935+US-4239 US-1939+US-4239 US-1948+US-4239 US-1958+US-4239 US-1960+US-4239 US-1969+US-4239 US-1970+US-4239 US-1972+US-4239 US-1983+US-4239 US-1989+US-4239 US-1990+US-4239 US-1991+US-4239 US-1996+US-4239 US-2000+US-4239 US-3520+US-4239 US-4239+US-4521 US-4239+US-5435 US-4239+US-5442 US-4239+US-5443 US-4239+US-5446 US-4239+US-5448 US-4239+US-5450 US-4239+US-5452 US-4239+US-7847 US-4239+US-7849 US-4239+US-8114 US-4239+US-8630 US-4239+US-9394 US-4239+US-9431
@@ -500,7 +500,7 @@
 - water / bank: 4
 - one-record same land: US-2802+US-2803
 - near a size threshold: US-2784+US-6359 103 m ~ 100 yd (small); US-2802+US-6333 75 m ~ 100 yd (small); US-2803+US-6333 75 m ~ 100 yd (small); US-6341+US-6360 25 m ~ 25 yd (kept); US-6341+US-6360 25 m ~ 25 yd (kept); US-6346+US-6347+US-8122 75 m ~ 100 yd (small); US-6346+US-8122 85 m ~ 100 yd (small); US-6347+US-7923 25 m ~ 25 yd (kept); US-6352+US-6377 25 m ~ 25 yd (kept); US-6360+US-6367 25 m ~ 25 yd (kept); US-6367+US-6377 45 m ~ 50 yd (very tight)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-OR: live pairs 84 -> 4 (+0 / -80)
 - gained: -
@@ -510,7 +510,7 @@
 - water / bank: 0
 - one-record same land: US-10482+US-12952 US-12951+US-2849 US-9143+US-9565 US-9586+US-9587 US-9992+US-9993
 - near a size threshold: -
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-PA: live pairs 71 -> 209 (+144 / -6)
 - gained: US-0619+US-2003 US-0619+US-4239 US-0619+US-8743 US-0624+US-5468 US-0625+US-5468 US-0626+US-5463 US-0626+US-5463+US-8796 US-0627+US-5463 US-0628+US-5469 US-0681+US-9140 US-0684+US-1347 US-0684+US-1391 US-0684+US-1410 US-0684+US-6432 US-0738+US-4582 US-0834+US-1355 US-12235+US-1331 US-12235+US-1341 US-12235+US-1345 US-12664+US-1344 US-12664+US-1374 US-1331+US-8743 US-1333+US-8737 US-1334+US-5472 US-1335+US-8727 US-1337+US-4556 US-1337+US-5471 US-1340+US-5476 US-1343+US-5479 US-1344+US-1374
@@ -520,7 +520,7 @@
 - water / bank: 39
 - one-record same land: -
 - near a size threshold: US-0619+US-5465 37 m ~ 50 yd (very tight); US-0619+US-8728 39 m ~ 50 yd (very tight); US-0619+US-8729 25 m ~ 25 yd (kept); US-0619+US-8743 25 m ~ 25 yd (kept); US-0681+US-5466+US-8906 25 m ~ 25 yd (kept); US-0704+US-5468 75 m ~ 100 yd (small); US-1331+US-8743 27 m ~ 25 yd (kept); US-1333+US-8737 25 m ~ 25 yd (kept); US-1337+US-5471 27 m ~ 25 yd (kept); US-1340+US-5476 53 m ~ 50 yd (very tight); US-1344+US-5478 25 m ~ 25 yd (kept); US-1345+US-8977 27 m ~ 25 yd (kept); US-1346+US-5463 37 m ~ 50 yd (very tight); US-1347+US-6432 27 m ~ 25 yd (kept); US-1349+US-8726 45 m ~ 50 yd (very tight); US-1353+US-5479 79 m ~ 100 yd (small); US-1355+US-5481 79 m ~ 100 yd (small); US-1359+US-8739 51 m ~ 50 yd (very tight); US-1359+US-8827 81 m ~ 100 yd (small); US-1359+US-8839 49 m ~ 50 yd (very tight)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-RI: live pairs 3 -> 10 (+7 / -0)
 - gained: US-0789+US-4582 US-2872+US-4582 US-4582+US-6990 US-4582+US-7971 US-5484+US-7508 US-6990+US-7535 US-6990+US-7548
@@ -530,7 +530,7 @@
 - water / bank: 1
 - one-record same land: US-2878+US-5483
 - near a size threshold: US-0515+US-7865 75 m ~ 100 yd (small)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-SC: live pairs 30 -> 20 (+3 / -13)
 - gained: US-4556+US-4577 US-4577+US-8313 US-5486+US-8149
@@ -540,7 +540,7 @@
 - water / bank: 0
 - one-record same land: US-9202+US-9208 US-9202+US-9208
 - near a size threshold: US-10415+US-2904 53 m ~ 50 yd (very tight); US-2908+US-4523 87 m ~ 100 yd (small); US-2910+US-5486 75 m ~ 100 yd (small); US-3885+US-4523 49 m ~ 50 yd (very tight); US-3900+US-9215 81 m ~ 100 yd (small)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-SD: live pairs 15 -> 20 (+7 / -2)
 - gained: US-0068+US-11905 US-0675+US-2620 US-0675+US-2620+US-9360 US-0675+US-2622 US-0675+US-9360 US-11905+US-2916 US-11905+US-2917
@@ -550,7 +550,7 @@
 - water / bank: 0
 - one-record same land: -
 - near a size threshold: US-0675+US-2620+US-9360 23 m ~ 25 yd (kept); US-10329+US-8192 39 m ~ 50 yd (very tight)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-TN: live pairs 75 -> 82 (+11 / -4)
 - gained: US-0034+US-4556 US-0034+US-8313 US-0685+US-2955 US-0716+US-2955 US-13364+US-7598 US-2938+US-2955 US-2948+US-2955 US-2955+US-3931 US-3792+US-7568 US-3951+US-4560 US-4525+US-4556
@@ -560,7 +560,7 @@
 - water / bank: 5
 - one-record same land: US-0538+US-3960 US-0538+US-3960 US-2935+US-3924 US-2936+US-3934 US-2936+US-5491 US-2961+US-3957 US-2966+US-5498 US-2978+US-5501 US-3934+US-5491 US-3971+US-5499 US-7580+US-7581
 - near a size threshold: US-0034+US-7588 85 m ~ 100 yd (small); US-0537+US-2947 25 m ~ 25 yd (kept); US-0537+US-5494 45 m ~ 50 yd (very tight); US-0539+US-2965 53 m ~ 50 yd (very tight); US-0686+US-5500 47 m ~ 50 yd (very tight); US-0703+US-7568 93 m ~ 100 yd (small); US-11879+US-3958 37 m ~ 50 yd (very tight); US-12361+US-2945+US-3928 37 m ~ 50 yd (very tight); US-12663+US-4525 95 m ~ 100 yd (small); US-2947+US-3948 25 m ~ 25 yd (kept); US-2952+US-4525 95 m ~ 100 yd (small); US-2974+US-4525 27 m ~ 25 yd (kept); US-3940+US-3963 75 m ~ 100 yd (small); US-3945+US-3959 83 m ~ 100 yd (small); US-4525+US-6246 47 m ~ 50 yd (very tight)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-TX: live pairs 13 -> 44 (+33 / -2)
 - gained: US-0006+US-6540 US-0035+US-9757 US-0541+US-6580 US-0549+US-0550 US-0549+US-0690 US-0550+US-3052 US-0550+US-6572 US-0551+US-6565 US-0553+US-6586 US-0689+US-3060 US-0756+US-4569 US-0816+US-9757 US-2986+US-4569 US-2994+US-6542 US-2997+US-6566 US-3011+US-9757 US-3015+US-4569 US-3018+US-9757 US-3030+US-4569 US-3037+US-6535 US-3040+US-4569 US-3502+US-4569 US-4371+US-9757 US-4414+US-6534 US-4414+US-6537 US-4415+US-4569 US-4415+US-6533 US-4415+US-6534 US-4416+US-4569 US-4416+US-6584
@@ -570,7 +570,7 @@
 - water / bank: 3
 - one-record same land: US-0633+US-2994 US-0633+US-6542 US-10509+US-4417 US-3000+US-6550 US-3015+US-3502 US-6581+US-7483
 - near a size threshold: US-0550+US-6572 23 m ~ 25 yd (kept); US-0551+US-3054 27 m ~ 25 yd (kept); US-0553+US-6586 23 m ~ 25 yd (kept); US-0689+US-3060 25 m ~ 25 yd (kept)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-UT: live pairs 75 -> 118 (+49 / -6)
 - gained: US-0072+US-6010 US-0072+US-6018 US-0558+US-4578 US-0645+US-4575 US-0914+US-4395 US-10966+US-5982 US-10971+US-6028 US-10975+US-6010 US-10987+US-6073 US-10987+US-6074 US-10990+US-6027 US-11104+US-4398 US-3064+US-4578 US-3065+US-5995 US-3068+US-4566 US-3068+US-4573 US-3068+US-4578 US-3077+US-4575 US-4395+US-4575 US-4395+US-6054 US-4395+US-6068 US-4396+US-4575 US-4397+US-4575 US-4566+US-5923 US-4566+US-5950 US-4566+US-5955 US-4566+US-5998 US-4566+US-6017 US-4573+US-5923 US-4573+US-5950
@@ -590,7 +590,7 @@
 - water / bank: 40
 - one-record same land: US-9940+US-9941
 - near a size threshold: US-0560+US-1298 45 m ~ 50 yd (very tight); US-0563+US-1308 23 m ~ 25 yd (kept); US-3378+US-9944 47 m ~ 50 yd (very tight); US-3378+US-9955 45 m ~ 50 yd (very tight)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-VT: live pairs 9 -> 8 (+0 / -1)
 - gained: -
@@ -600,7 +600,7 @@
 - water / bank: 0
 - one-record same land: -
 - near a size threshold: -
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-WA: live pairs 50 -> 5 (+3 / -48)
 - gained: US-11142+US-12277 US-12525+US-3165 US-12552+US-12553
@@ -610,7 +610,7 @@
 - water / bank: 0
 - one-record same land: US-11142+US-12277 US-12285+US-12286 US-12525+US-3165 US-12552+US-12553 US-12846+US-3173 US-3199+US-3268
 - near a size threshold: -
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-WI: live pairs 29 -> 85 (+68 / -12)
 - gained: US-0673+US-10725 US-0673+US-11153 US-0673+US-1457 US-0673+US-2466 US-0673+US-4238 US-0673+US-4239 US-0673+US-4249 US-0673+US-9386 US-0673+US-9790 US-0673+US-9819 US-0673+US-9856 US-10054+US-4238 US-11927+US-9821 US-11931+US-4238 US-11935+US-4238 US-11937+US-4238 US-11976+US-4238 US-12029+US-4238 US-12066+US-9821 US-12213+US-4238 US-1441+US-9804 US-1442+US-4238 US-1446+US-4239 US-1455+US-4238 US-1461+US-9800 US-1469+US-4239 US-1471+US-8672 US-1472+US-4238 US-1477+US-4238 US-4236+US-8672
@@ -620,7 +620,7 @@
 - water / bank: 9
 - one-record same land: -
 - near a size threshold: US-0673+US-2493 81 m ~ 100 yd (small)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-WV: live pairs 32 -> 33 (+4 / -3)
 - gained: US-0695+US-1807 US-0697+US-7037 US-0735+US-4556 US-4526+US-4556
@@ -630,7 +630,7 @@
 - water / bank: 0
 - one-record same land: -
 - near a size threshold: US-0632+US-1808 51 m ~ 50 yd (very tight); US-0632+US-1827 81 m ~ 100 yd (small); US-0632+US-7026 53 m ~ 50 yd (very tight); US-0695+US-1807 25 m ~ 25 yd (kept); US-0697+US-1804 45 m ~ 50 yd (very tight); US-0697+US-7037 39 m ~ 50 yd (very tight); US-4526+US-9950 75 m ~ 100 yd (small)
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
 ## US-WY: live pairs 66 -> 19 (+19 / -66)
 - gained: US-4566+US-6110 US-4566+US-6111 US-4566+US-6114 US-4566+US-6147 US-4566+US-6214 US-4566+US-6222 US-4566+US-6224 US-4576+US-6110 US-4576+US-6111 US-4576+US-6114 US-4576+US-6147 US-4576+US-6214 US-4576+US-6224 US-4578+US-6110 US-4578+US-6111 US-4578+US-6114 US-4578+US-6147 US-4578+US-6214 US-4578+US-6224
@@ -640,5 +640,5 @@
 - water / bank: 0
 - one-record same land: US-6130+US-6136
 - near a size threshold: -
-- stale inputs: -
+- stale inputs: the key build US-42421328570 (2026-11-07 22:36 UTC) is newer than this output's last pass (2026-11-06)
 
