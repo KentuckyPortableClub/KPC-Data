@@ -25,6 +25,12 @@ import argparse, os, pathlib, re, subprocess, sys, tempfile, time
 
 FAIL_WORDS = re.compile(r'SOME FAILED|SELFTEST FAIL|-> FAIL\b')
 BASELINE = 'tests/known-fail-main.txt'
+# Nov 7: the tracer selftests sit in nested folders the .github/scripts/*.py scan never reaches. Listed EXPLICITLY (not globbed): a listed file
+# that is missing is a FAILURE, never a skip. They need the tracer dependencies (shapely, pyproj, scikit-learn, opencv, rapidfuzz); if the gate
+# runner lacks them the row fails with ModuleNotFoundError - install .github/scripts/draft/requirements.txt, do not baseline it away.
+NESTED_SELFTESTS = ['.github/scripts/draft/kpc_trace_picture.py',
+                    '.github/scripts/draft/tools/kpc_parcel_trace/kpc_parcel_trace.py',
+                    '.github/scripts/draft/tools/kpc_parcels/kpc_parcels.py']
 
 
 def git_state(root):
@@ -58,7 +64,7 @@ def selftest_scripts(root):
 def run_one(cmd, root, timeout):
     t = time.time()
     try:
-        r = subprocess.run(cmd, cwd=root, capture_output=True, text=True, timeout=timeout, env=dict(os.environ, PYTHONDONTWRITEBYTECODE='1'))
+        r = subprocess.run(cmd, cwd=root, capture_output=True, text=True, timeout=timeout, env=dict(os.environ, PYTHONDONTWRITEBYTECODE='1', KPC_NO_NET='1'))
         out, rc = (r.stdout or '') + (r.stderr or ''), r.returncode
     except subprocess.TimeoutExpired:
         out, rc = f'TIMEOUT after {timeout}s', 124
@@ -74,8 +80,13 @@ def suite(root='.', baseline=None, timeout=180, selftests=True, label=''):
     items = [(str(f.relative_to(root)), [sys.executable, '-B', str(f.relative_to(root))]) for f in sorted(pathlib.Path(root, 'tests').glob('test_*.py'))]
     if selftests:
         items += [('selftest:' + str(f.relative_to(root)), [sys.executable, '-B', str(f.relative_to(root)), '--selftest']) for f in selftest_scripts(root)]
+    if selftests and pathlib.Path(root, '.github/scripts/draft').is_dir():
+        items += [('selftest:' + rel, [sys.executable, '-B', rel, '--selftest'] if pathlib.Path(root, rel).is_file() else None) for rel in NESTED_SELFTESTS]
     rows, before = [], git_state(root)
     for name, cmd in items:
+        if cmd is None:
+            rows.append({'name': name, 'ok': False, 'known': name in base, 'why': ['listed tracer selftest file is missing: a missing test is not a pass'], 'secs': 0.0})
+            continue
         ok, why, secs = run_one(cmd, root, timeout)
         after = git_state(root)
         if before is not None and after is not None and after != before:
@@ -133,6 +144,15 @@ def selftest():
     subprocess.run('git init -q && git add -A && git -c user.name=t -c user.email=t@t commit -qm t', shell=True, cwd=d)
     res = suite(d, timeout=30, label='selftest')
     by = {r['name']: r for r in res['rows']}
+    # Nov 7: nested tracer selftests are listed explicitly; a missing listed file FAILS (never a skip), and only when a draft/ folder exists
+    d2 = pathlib.Path(tempfile.mkdtemp(prefix='kpc-suite2-')); (d2 / 'tests').mkdir(); (d2 / '.github/scripts/draft').mkdir(parents=True)
+    (d2 / 'tests/test_ok.py').write_text("print('PASS')\n")
+    (d2 / '.github/scripts/draft/kpc_trace_picture.py').write_text("import sys\nprint('PASS' if '--selftest' in sys.argv else 'x')\n")
+    subprocess.run('git init -q && git add -A && git -c user.name=t -c user.email=t@t commit -qm t', shell=True, cwd=d2)
+    by2 = {r['name']: r for r in suite(d2, timeout=30, label='nested')['rows']}
+    check('a present listed tracer selftest runs', by2['selftest:.github/scripts/draft/kpc_trace_picture.py']['ok'], True)
+    check('a missing listed tracer selftest is a FAILURE', by2['selftest:.github/scripts/draft/tools/kpc_parcels/kpc_parcels.py']['ok'], False)
+    check('no draft/ folder = no nested rows', any(k.startswith('selftest:.github/scripts/draft') for k in by), False)
     check('a passing test passes', by['tests/test_a_pass.py']['ok'], True)
     check('a failing test on the baseline is known', (by['tests/test_b_known.py']['ok'], by['tests/test_b_known.py']['known']), (False, True))
     check('a failing test not on the baseline is NEW', (by['tests/test_c_new.py']['ok'], by['tests/test_c_new.py']['known']), (False, False))

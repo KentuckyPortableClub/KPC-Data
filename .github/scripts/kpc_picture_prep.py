@@ -17,10 +17,10 @@ def load(p, d):
 
 idx = load(base / 'index.json', {}) or {}
 rows = idx.get('maps') if isinstance(idx, dict) else idx
-pins, names, ag = {}, {}, {}
+pins, names, ag, types = {}, {}, {}, {}   # Nov 7: types = POTA park type (parkinfo row[2]) for the tracer's size ceiling
 for f in glob.glob('data/parkinfo/US-*.json'):
-    for r, a in ((load(f, {}) or {}).get('parks') or {}).items(): pins[r] = [a[5], a[6]]; names[r] = a[0]
-for r, a in ((load('data/parkinfo/CA.json', {}) or {}).get('parks') or {}).items(): pins[r] = [a[5], a[6]]; names[r] = a[0]
+    for r, a in ((load(f, {}) or {}).get('parks') or {}).items(): pins[r] = [a[5], a[6]]; names[r] = a[0]; types[r] = a[2] if len(a) > 2 else ''
+for r, a in ((load('data/parkinfo/CA.json', {}) or {}).get('parks') or {}).items(): pins[r] = [a[5], a[6]]; names[r] = a[0]; types[r] = a[2] if len(a) > 2 else ''
 for p in (load(links / 'kpc-ky-data.json', {}) or {}).get('parks') or []:
     try: pins[p['c']] = [float(p['la']), float(p['lo'])]; names[p['c']] = p.get('n')
     except Exception: pass  # noqa: BLE001
@@ -44,6 +44,7 @@ for m in rows or []:
     out[ref] = {'name': m.get('name') or names.get(ref) or ref, 'agency': m.get('agency') or ag.get(ref) or urllib.parse.urlsplit(m.get('source_url') or '').hostname or '',
                 'source_url': m.get('source_url'), 'page': pg, 'date': m.get('date'), 'source_type': 'official', 'image': files[0],
                 'map_file': files[0][5:] if files[0].startswith('maps/') else files[0],   # Nov 2 review: the tracer reads map_file, never image
+                **({'type': types[ref]} if types.get(ref) else {}),   # Nov 7: the tracer's ceiling for a trace with no known acres
                 **({'acres': acres[ref]} if acres.get(ref) else {})}   # Nov 2 review: the tracer's scale prior needs the size (0.2-25 m/px without it)
     used[ref] = pins[ref]
 json.dump(out, open(base / 'index.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)

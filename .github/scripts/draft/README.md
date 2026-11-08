@@ -124,3 +124,44 @@ Status values:
 - Canada uses NRN roads only (no CanVec hydro yet). Prefixes other than US/CA give NO FIT.
 - Multi-unit maps (e.g. WMA units) need `boundary_rgb`. Check "kept N shapes" flags by hand.
 - Runtime is about 10–30 s per map, plus about 5 web requests per new park.
+
+## Nov 7 gates (held, not flagged)
+A picture trace is now held as **NEEDS A PERSON** (no outline written) when any of these is true; every reason is listed in `why` and `flags`
+(`kpc_trace_limits.hold_reasons`, in this order):
+1. **GeoPDF placement not trusted** (`geopdf_plausible`): residual over 100 m or 2% of the page's long side, scale outside 0.05-500 m/px, x/y scale skew over 15%, a malformed affine, a sheet over 50,000 km2, or the POTA pin outside the page (`pin off page`).
+2. **Pin outside**: the POTA pin is more than 1,000 m from the traced outline. The pin is never moved. The text says whether the georeference looked good (the pin may be wrong) or not (placement doubtful).
+3. **Clipped**: 3% or more of the outline runs along the picture frame (the park continues off the sheet). Under 3% stays a flag.
+4. **Size**: known acres decide as before (0.2x-5x). With **no** known acres the park type's ceiling decides (`TYPE_CEILING_ACRES`; unknown type = 60,000 ac), and on a GeoPDF a trace covering over 60% of the mapped page.
+Trail traces over 400 km (120 km for other lines) are held too. The park type comes from parkinfo (`kpc_picture_prep.py` / `kpc_trace_prep.py` copy it into each row as `type`).
+Parcel tracer: the 0.2x-2x check is unchanged; new holds are a seed parcel alone over `GROW_CAP` x the known size, and no known size with the trace over the type's ceiling.
+The ceilings are sanity bounds, not park sizes: change a line in `kpc_trace_limits.py` if a real park trips one. Report columns added: `acres_traced, acres_known, ceiling_acres, edge_share, pin_dist_m`.
+`KPC_NO_NET=1` (set by `kpc_full_suite.py` for every child process): a real HTTP request raises instead of opening a socket.
+Tests: `tests/test_trace_limits_nov7.py` (pure Python, fixtures in `tests/fixtures/tracer_nov7/`); the suite also runs the three tracer selftests listed in `NESTED_SELFTESTS`.
+
+## Nov 7 pin mode (which colour is the park)
+On a **GeoPDF** page the page's own coordinates are known before the colour is chosen, so the POTA pin's pixel is known too. `detect_boundary`
+is then given `pin_px` and chooses the boundary colour **by the pin**, not by total area:
+- a shape must contain the pin, or run within `PIN_NEAR_M` (200 m) of it, or its colour is not the park's;
+- a colour whose shape **contains** the pin beats one that merely runs near it;
+- with an official size (or the park type's expected size) the shape closest to that size wins, and a filled park tint breaks a tie;
+- with no size at all, a filled tint beats a boundary ring, then the tightest shape around the pin wins;
+- the reason records the pick, its estimated acres, how many shapes in that colour sit at the pin, and the runners-up, so a wrong pick can be
+  audited from report.csv alone.
+If **no** colour has a shape at the pin the result is `NO LINE` naming the pin's pixel, instead of a confident outline of the wrong thing.
+This is what stops a statewide sheet's district ring (US-5460, 25.9 M ac) or a road casing (CA-1248) being traced as the park.
+`KPC_TRACE_PIN_PICK=0` restores the old largest-area choice. Without a GeoPDF affine nothing changes: the pin's pixel is not known before the
+fit, so those maps still use the old choice and the Nov 7 size/pin/clip gates catch a bad one.
+Split maps: after the existing 50 m adjacency growth, a wider gap is bridged only when an official size says the pieces belong (0.5x-1.25x,
+nearest first, `kpc_trace_limits.stitch_extra`). Otherwise the further shapes are **listed** in the why for a person, never silently joined or
+silently dropped.
+
+## Brandon's calls, Nov 7 evening (in the code)
+1. **A robots-blocked basemap source drops out of the run.** `fetch_basemap` asks each source once; a robots STOP (today: USGS NHD water,
+   `hydro.nationalmap.gov`) is recorded as skipped, never retried, never reached by another route, and the trace goes on with the allowed
+   sources (roads, land survey). Every result then carries `<name> source skipped (robots): partial basemap, matched on the allowed sources
+   only`. A partial basemap is never reused from the cache in a later run. All the normal hold gates still apply to whatever comes out. If
+   every source is blocked the map is an honest NO FIT, not an ERROR.
+2. **Statewide sheets (over 50,000 km2) stay held** until the US-5460 flip is understood.
+3. **Size ceilings:** a point-feature word in the name beats the agency ("Trailhead" beats "BLM"; US-6048 now has a 5,000 ac ceiling, not
+   1,000,000). A trace **within 5% of its ceiling** (`NEAR_CEILING`) goes to a person as NEEDS A PERSON, not straight through (US-11145 at
+   150,958 vs 150,000). Same band in the parcel tracer.
