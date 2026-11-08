@@ -5,20 +5,20 @@
   "agree": 7,
   "handover_hints": 4,
   "no_page": 0,
-  "no_size": 71,
-  "off": 7,
+  "no_size": 69,
+  "off": 8,
   "ours_unknown": 0,
   "parks": 155,
   "retired": 0,
-  "unsure": 5,
-  "weak": 17,
-  "with_outline": 101
+  "unsure": 6,
+  "weak": 16,
+  "with_outline": 100
  },
  "parks": {
   "US-0382": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Coldwater River National Wildlife Refuge",
    "official": null,
    "ours": {
@@ -1775,7 +1775,7 @@
   "US-10297": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Old Trace Park Recreation Park",
    "official": null,
    "ours": {
@@ -2016,9 +2016,9 @@
    "verdict": "no outline"
   },
   "US-12204": {
-   "checked": "2026-10-28",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-08",
    "handover": [],
-   "last_read_failed": "2026-11-01",
    "n": "Calling Panther State Fishing Lake",
    "official": null,
    "ours": {
@@ -2048,23 +2048,33 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://www.mdwfp.com/fishing-boating/lakes/calling-panther-lake",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
     "size": 1,
-    "source": 1
+    "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 404.0,
+     "as": "404 acre",
+     "clean": false,
+     "line": "ent Menu CLOSE License, Reservation & more CLOSE Search Search Calling Panther Lake Calling Panther Lake is a 404-acre lake located in Copiah County, 5 mi. W of Crystal Springs off New Zion Rd. This lake offers a unique fishing",
+     "total_like": false,
+     "url": "https://www.mdwfp.com/fishing-boating/lakes/calling-panther-lake",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
    "t": "State Fishing Lake",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-12205": {
    "checked": "2026-11-01",
@@ -2187,7 +2197,7 @@
   "US-2532": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Buccaneer State Park",
    "official": null,
    "ours": {
@@ -2229,7 +2239,7 @@
   "US-2533": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Clarkco State Park",
    "official": null,
    "ours": {
@@ -2271,7 +2281,7 @@
   "US-2534": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Florewood State Park",
    "official": null,
    "ours": {
@@ -2320,7 +2330,7 @@
   "US-2535": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "George P Cossar State Park",
    "official": null,
    "ours": {
@@ -2362,7 +2372,7 @@
   "US-2536": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Golden Memorial State Park",
    "official": null,
    "ours": {
@@ -2404,7 +2414,7 @@
   "US-2537": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Great River Road State Park",
    "official": null,
    "ours": {
@@ -2446,7 +2456,7 @@
   "US-2538": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Holmes County State Park",
    "official": null,
    "ours": {
@@ -2488,7 +2498,7 @@
   "US-2539": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Hugh White State Park",
    "official": null,
    "ours": {
@@ -2531,7 +2541,7 @@
   "US-2540": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "John W. Kyle State Park",
    "official": null,
    "ours": {
@@ -2573,7 +2583,7 @@
   "US-2541": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "J P Coleman State Park",
    "official": null,
    "ours": {
@@ -2633,7 +2643,7 @@
   "US-2542": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Lake Lincoln State Park",
    "official": null,
    "ours": {
@@ -2675,7 +2685,7 @@
   "US-2543": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Lake Lowndes State Park",
    "official": null,
    "ours": {
@@ -2717,7 +2727,7 @@
   "US-2544": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Lefleur's Bluff State Park",
    "official": null,
    "ours": {
@@ -2757,51 +2767,19 @@
    "verdict": "no size on page"
   },
   "US-2545": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-08",
    "handover": [],
-   "last_read_failed": "2026-11-01",
    "n": "Legion State Park",
-   "official": null,
-   "ours": {
-    "acres": 431,
-    "manager": "",
-    "pieces": [
-     [
-      211160,
-      "Legion Lake State Park",
-      431,
-      "same name (POTA writes the kind into the name) + pin inside"
-     ]
-    ],
-    "pin": "just outside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 0
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "rest",
-     "url": "https://www.mdwfp.com/parks-destinations/state-parks/legion",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 4,
-   "score_parts": {
-    "name": 1,
-    "pin": 1,
-    "size": 1,
-    "source": 1
-   },
-   "sizes": [],
+   "ours": null,
+   "score": null,
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "no outline"
   },
   "US-2546": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Leroy Percy State Park",
    "official": null,
    "ours": {
@@ -2843,7 +2821,7 @@
   "US-2547": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Natchez State Park",
    "official": null,
    "ours": {
@@ -2902,7 +2880,7 @@
   "US-2548": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Paul B. Johnson State Park",
    "official": null,
    "ours": {
@@ -2944,7 +2922,7 @@
   "US-2549": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Percy E Quin State Park",
    "ours": {
     "acres": 1676,
@@ -2969,7 +2947,7 @@
   "US-2550": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Roosevelt State Park",
    "official": null,
    "ours": {
@@ -3011,7 +2989,7 @@
   "US-2551": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Shepard State Park",
    "official": null,
    "ours": {
@@ -3053,7 +3031,7 @@
   "US-2552": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Tishomingo State Park",
    "official": null,
    "ours": {
@@ -3095,7 +3073,7 @@
   "US-2553": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Tombigbee State Park",
    "official": null,
    "ours": {
@@ -3137,7 +3115,7 @@
   "US-2554": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Trace State Park",
    "official": null,
    "ours": {
@@ -3179,7 +3157,7 @@
   "US-2555": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Wall Doxey State Park",
    "official": null,
    "ours": {
@@ -3759,7 +3737,7 @@
   "US-7070": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "O'Keefe Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3807,7 +3785,7 @@
   "US-7071": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Charlie Capps Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3872,7 +3850,7 @@
   "US-7073": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "William C. Deviney Wildlife Management Area",
    "ours": {
     "acres": 2848,
@@ -3920,7 +3898,7 @@
   "US-7074": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Stoneville Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3962,7 +3940,7 @@
   "US-7075": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Muscadine Farms Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4025,7 +4003,7 @@
   "US-7076": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Sky Lake Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4073,7 +4051,7 @@
   "US-7077": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Leroy Percy Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4115,7 +4093,7 @@
   "US-7078": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Howard Miller Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4163,7 +4141,7 @@
   "US-7079": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Twin Oaks Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4211,7 +4189,7 @@
   "US-7080": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Sunflower Wildlife Management Area",
    "ours": {
     "acres": 55090,
@@ -4242,7 +4220,7 @@
   "US-7081": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Lake George Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4284,7 +4262,7 @@
   "US-7082": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Shipland Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4326,7 +4304,7 @@
   "US-7083": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Mahannah Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4374,7 +4352,7 @@
   "US-7084": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Phil Bryant Wildlife Management Area",
    "ours": {
     "acres": 17622,
@@ -4440,7 +4418,7 @@
   "US-7085": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "John W. Starr Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4482,7 +4460,7 @@
   "US-7086": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Trim Cane Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4524,7 +4502,7 @@
   "US-7087": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Black Prairie Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4572,7 +4550,7 @@
   "US-7088": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Choctaw Wildlife Management Area",
    "ours": {
     "acres": 21391,
@@ -4597,7 +4575,7 @@
   "US-7089": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Yockanookany Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4639,7 +4617,7 @@
   "US-7090": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Nanih Waiya Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4698,7 +4676,7 @@
   "US-7091": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Okatibbee Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4740,7 +4718,7 @@
   "US-7092": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Tuscumbia Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4782,7 +4760,7 @@
   "US-7093": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Divide Section Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4825,7 +4803,7 @@
   "US-7094": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Hell Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4867,7 +4845,7 @@
   "US-7095": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "John Bell Williams Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4910,7 +4888,7 @@
   "US-7096": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Canal Section Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4978,7 +4956,7 @@
   "US-7099": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Sardis Waterfowl Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5020,7 +4998,7 @@
   "US-7100": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Upper Sardis Wildlife Management Area",
    "ours": {
     "acres": 49295,
@@ -5087,7 +5065,7 @@
   "US-7101": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Charles Ray Nix Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5129,7 +5107,7 @@
   "US-7102": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Calhoun County Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5171,7 +5149,7 @@
   "US-7103": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Malmaison Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5243,7 +5221,7 @@
   "US-7107": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Theodore Mars Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5294,7 +5272,7 @@
   "US-7108": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Pascagoula River Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5354,7 +5332,7 @@
   "US-7109": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Old River Wildlife Management Area",
    "ours": {
     "acres": 14766,
@@ -5391,7 +5369,7 @@
   "US-7110": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Little Biloxi Wildlife Management Area",
    "ours": {
     "acres": 13577,
@@ -5456,7 +5434,7 @@
   "US-7112": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Ward Bayou Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5508,9 +5486,8 @@
    "verdict": "no size on page"
   },
   "US-7113": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-08",
    "handover": [],
-   "last_read_failed": "2026-11-01",
    "n": "Pearl River Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5549,7 +5526,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://www.mdwfp.com/wildlife-hunting/wmas/pearl-river-wma",
      "why": "the park's page (data/parkinfo)"
     }
@@ -5570,7 +5547,7 @@
   "US-7114": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Bienville Wildlife Management Area",
    "ours": {
     "acres": 26702,
@@ -5621,7 +5598,7 @@
   "US-7117": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Canemount Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5669,7 +5646,7 @@
   "US-7118": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Copiah County Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5775,7 +5752,7 @@
   "US-7121": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Sandy Creek Wildlife Management Area",
    "ours": {
     "acres": 16869,
@@ -5800,7 +5777,7 @@
   "US-7122": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Marion County Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5842,7 +5819,7 @@
   "US-7123": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Wolf River Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5914,7 +5891,7 @@
   "US-7127": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-01",
+   "last_read_failed": "2026-11-08",
    "n": "Okatibbee Lake State Recreation Area",
    "official": null,
    "ours": {
@@ -6212,10 +6189,20 @@
    "verdict": "no outline"
   },
   "US-9847": {
-   "checked": "2026-10-28",
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-08",
    "handover": [],
-   "last_read_failed": "2026-11-01",
    "n": "Clark Creek Natural Area State Park",
+   "official": {
+    "acres": 700.0,
+    "as": "700 acres",
+    "clean": false,
+    "line": "hwestern Mississippi, is one of the Magnolia State's most beautiful outdoor treasures. Comprised of more than 700 acres, it is highlighted by some 50 waterfalls, ranging in size from 10 to 30 plus feet in height. Address 366 Fort",
+    "read": "2026-11-08",
+    "sent": "Comprised of more than 700 acres, it is highlighted by some 50 waterfalls, ranging in size from 10 to 30 plus feet in height.",
+    "url": "https://www.mdwfp.com/parks-destinations/park/clark-creek-state-park",
+    "why": "total-looking"
+   },
    "ours": {
     "acres": 572,
     "manager": "",
@@ -6231,10 +6218,37 @@
     "src": "",
     "unknown_pieces": 0
    },
-   "score": null,
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.mdwfp.com/parks-destinations/park/clark-creek-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 18,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 700.0,
+     "as": "700 acres",
+     "clean": false,
+     "line": "hwestern Mississippi, is one of the Magnolia State's most beautiful outdoor treasures. Comprised of more than 700 acres, it is highlighted by some 50 waterfalls, ranging in size from 10 to 30 plus feet in height. Address 366 Fort",
+     "total_like": true,
+     "url": "https://www.mdwfp.com/parks-destinations/park/clark-creek-state-park",
+     "why": "total-looking"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "off"
   },
   "US-9849": {
    "checked": "2026-11-01",
@@ -6247,5 +6261,5 @@
    "verdict": "no outline"
   }
  },
- "read": "2026-11-01"
+ "read": "2026-11-08"
 }
