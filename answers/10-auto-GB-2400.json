@@ -1,0 +1,40 @@
+{
+ "request": "requests/10-auto-GB-2400.json",
+ "id": "10-auto-GB-2400",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-2400",
+  "name": "Wharton Park",
+  "agency": "government agency (durham.gov.uk)",
+  "url": "https://www.durham.gov.uk/media/10124/Wharton-Park-map/pdf/WhartonParkMap.pdf?m=1537967488360",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-08 12:01Z",
+ "results": [
+  {
+   "url": "https://www.durham.gov.uk/media/10124/Wharton-Park-map/pdf/WhartonParkMap.pdf?m=1537967488360",
+   "map_url": "https://www.durham.gov.uk/media/10124/Wharton-Park-map/pdf/WhartonParkMap.pdf?m=1537967488360",
+   "saved": [
+    "maps/GB-2400_wharton-park.jpg"
+   ],
+   "bytes": 212249,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 5,
+ "manners": {
+  "requests": 2,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 1 read OK"
+}

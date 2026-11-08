@@ -1,0 +1,36 @@
+{
+ "request": "requests/10-auto-GB-6951.json",
+ "id": "10-auto-GB-6951",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-6951",
+  "name": "Loch Ardinning Wildlife Reserve",
+  "agency": "",
+  "url": "https://scottishwildlifetrust.org.uk/wp-content/uploads/2015/10/Loch-Ardinning-1.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-08 12:05Z",
+ "results": [
+  {
+   "url": "https://scottishwildlifetrust.org.uk/wp-content/uploads/2015/10/Loch-Ardinning-1.pdf",
+   "map_url": "https://scottishwildlifetrust.org.uk/wp-content/uploads/2015/10/Loch-Ardinning-1.pdf",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 5,
+ "manners": {
+  "requests": 2,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 0 read OK"
+}

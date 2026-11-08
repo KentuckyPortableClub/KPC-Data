@@ -1,0 +1,36 @@
+{
+ "request": "requests/10-auto-CA-2233.json",
+ "id": "10-auto-CA-2233",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-2233",
+  "name": "Parc de la Maison-Valois Recreation Park",
+  "agency": "Ville de Vaudreuil-Dorion",
+  "url": "https://www.ville.vaudreuil-dorion.qc.ca/uploads/sections/Loisirs_culture/Installations_recreatives/Parc_de_la_Maison-Valois/Carte_ParcMaison-Valois_Final_WEB.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-08 11:58Z",
+ "results": [
+  {
+   "url": "https://www.ville.vaudreuil-dorion.qc.ca/uploads/sections/Loisirs_culture/Installations_recreatives/Parc_de_la_Maison-Valois/Carte_ParcMaison-Valois_Final_WEB.pdf",
+   "map_url": "https://www.ville.vaudreuil-dorion.qc.ca/uploads/sections/Loisirs_culture/Installations_recreatives/Parc_de_la_Maison-Valois/Carte_ParcMaison-Valois_Final_WEB.pdf",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 2,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 0 read OK"
+}

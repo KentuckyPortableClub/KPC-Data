@@ -1,0 +1,39 @@
+{
+ "request": "requests/10-auto-US-9037.json",
+ "id": "10-auto-US-9037",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-9037",
+  "name": "Allegheny Reservoir Wildlife Management Area",
+  "agency": "government agency (dec.ny.gov)",
+  "url": "https://dec.ny.gov/sites/default/files/arwmamap.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-03 13:57Z",
+ "results": [
+  {
+   "url": "https://dec.ny.gov/sites/default/files/arwmamap.pdf",
+   "map_url": "https://dec.ny.gov/sites/default/files/arwmamap.pdf",
+   "saved": [
+    "maps/US-9037_allegheny-reservoir-wildlife-man.jpg"
+   ],
+   "bytes": 310783,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0
+ },
+ "short": "1 result(s), 1 read OK"
+}

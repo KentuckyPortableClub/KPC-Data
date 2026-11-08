@@ -1,0 +1,36 @@
+{
+ "request": "requests/10-auto-GB-4160.json",
+ "id": "10-auto-GB-4160",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-4160",
+  "name": "Purwell Meadows Nature Reserve",
+  "agency": "government agency (north-herts.gov.uk)",
+  "url": "https://www.north-herts.gov.uk/sites/default/files/2024-12/Purwell%20Meadows%20Map.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-08 12:03Z",
+ "results": [
+  {
+   "url": "https://www.north-herts.gov.uk/sites/default/files/2024-12/Purwell%20Meadows%20Map.pdf",
+   "map_url": "https://www.north-herts.gov.uk/sites/default/files/2024-12/Purwell%20Meadows%20Map.pdf",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 5,
+ "manners": {
+  "requests": 2,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 0 read OK"
+}

@@ -1,0 +1,36 @@
+{
+ "request": "requests/10-auto-CA-0984.json",
+ "id": "10-auto-CA-0984",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-0984",
+  "name": "Parc du Mont-Jacob Recreation Park",
+  "agency": "government agency (ville.saguenay.ca)",
+  "url": "https://ville.saguenay.ca/files/medias/activites_et_loisirs/Sports/mont_jacob_ouest.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-08 11:58Z",
+ "results": [
+  {
+   "url": "https://ville.saguenay.ca/files/medias/activites_et_loisirs/Sports/mont_jacob_ouest.pdf",
+   "map_url": "https://ville.saguenay.ca/files/medias/activites_et_loisirs/Sports/mont_jacob_ouest.pdf",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 2,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 0 read OK"
+}

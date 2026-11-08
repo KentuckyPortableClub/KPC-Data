@@ -1,0 +1,42 @@
+{
+ "request": "requests/10-auto-GB-0725.json",
+ "id": "10-auto-GB-0725",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-0725",
+  "name": "Dunstable Downs Country Park",
+  "agency": "",
+  "url": "https://nt.global.ssl.fastly.net/binaries/content/assets/website/national/regions/essex-bedfordshire-hertfordshire/places/dunstable-downs-and-whipsnade-estate/pdf/dunstable-downs-and-whipsnade-estate-map.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-08 12:01Z",
+ "results": [
+  {
+   "url": "https://nt.global.ssl.fastly.net/binaries/content/assets/website/national/regions/essex-bedfordshire-hertfordshire/places/dunstable-downs-and-whipsnade-estate/pdf/dunstable-downs-and-whipsnade-estate-map.pdf",
+   "error": "robots.txt says no (or no manners module)",
+   "looked": []
+  }
+ ],
+ "seconds": 0,
+ "manners": {
+  "requests": 1,
+  "robots": 1,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0,
+  "for_person_urls": [
+   [
+    "https://nt.global.ssl.fastly.net/robots.txt",
+    "robots.txt answered 403: nothing fetched from nt.global.ssl.fastly.net this run"
+   ]
+  ],
+  "robots_unreadable": 1
+ },
+ "short": "1 result(s), 0 read OK"
+}

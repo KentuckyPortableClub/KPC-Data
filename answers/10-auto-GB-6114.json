@@ -1,0 +1,42 @@
+{
+ "request": "requests/10-auto-GB-6114.json",
+ "id": "10-auto-GB-6114",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-6114",
+  "name": "Knole Park National Park",
+  "agency": "",
+  "url": "https://nt.global.ssl.fastly.net/binaries/content/assets/website/national/regions/kent/places/knole/pdf/knole-welcome-leaflet-map.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-08 12:04Z",
+ "results": [
+  {
+   "url": "https://nt.global.ssl.fastly.net/binaries/content/assets/website/national/regions/kent/places/knole/pdf/knole-welcome-leaflet-map.pdf",
+   "error": "robots.txt says no (or no manners module)",
+   "looked": []
+  }
+ ],
+ "seconds": 0,
+ "manners": {
+  "requests": 1,
+  "robots": 1,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0,
+  "for_person_urls": [
+   [
+    "https://nt.global.ssl.fastly.net/robots.txt",
+    "robots.txt answered 403: nothing fetched from nt.global.ssl.fastly.net this run"
+   ]
+  ],
+  "robots_unreadable": 1
+ },
+ "short": "1 result(s), 0 read OK"
+}

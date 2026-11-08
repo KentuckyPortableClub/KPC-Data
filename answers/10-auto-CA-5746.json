@@ -1,0 +1,36 @@
+{
+ "request": "requests/10-auto-CA-5746.json",
+ "id": "10-auto-CA-5746",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-5746",
+  "name": "Wye Lake Recreation Park",
+  "agency": "government agency (yukon.ca)",
+  "url": "https://watsonlakeyt.web.catalisgov.ca/uploads/dm/156002/Appendix_B_Wye_Lake_Trail_Drawings.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-08 11:59Z",
+ "results": [
+  {
+   "url": "https://watsonlakeyt.web.catalisgov.ca/uploads/dm/156002/Appendix_B_Wye_Lake_Trail_Drawings.pdf",
+   "map_url": "https://watsonlakeyt.web.catalisgov.ca/uploads/dm/156002/Appendix_B_Wye_Lake_Trail_Drawings.pdf",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 5,
+ "manners": {
+  "requests": 2,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 0 read OK"
+}

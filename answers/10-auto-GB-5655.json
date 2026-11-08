@@ -1,0 +1,36 @@
+{
+ "request": "requests/10-auto-GB-5655.json",
+ "id": "10-auto-GB-5655",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-5655",
+  "name": "Wellington Country Park",
+  "agency": "",
+  "url": "https://wellingtoncountrypark.co.uk/wp-content/uploads/2026/01/Wellington-Country-Park-Map-2026.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-08 12:04Z",
+ "results": [
+  {
+   "url": "https://wellingtoncountrypark.co.uk/wp-content/uploads/2026/01/Wellington-Country-Park-Map-2026.pdf",
+   "map_url": "https://wellingtoncountrypark.co.uk/wp-content/uploads/2026/01/Wellington-Country-Park-Map-2026.pdf",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 2,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 0 read OK"
+}

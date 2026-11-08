@@ -1,0 +1,36 @@
+{
+ "request": "requests/10-auto-GB-2680.json",
+ "id": "10-auto-GB-2680",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "GB-2680",
+  "name": "Forder Valley Nature Reserve",
+  "agency": "government agency (plymouth.gov.uk)",
+  "url": "https://www.plymouth.gov.uk/sites/default/files/ForderValleyMap_0.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-08 12:01Z",
+ "results": [
+  {
+   "url": "https://www.plymouth.gov.uk/sites/default/files/ForderValleyMap_0.pdf",
+   "map_url": "https://www.plymouth.gov.uk/sites/default/files/ForderValleyMap_0.pdf",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 2,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 0 read OK"
+}

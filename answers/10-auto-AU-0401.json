@@ -1,0 +1,36 @@
+{
+ "request": "requests/10-auto-AU-0401.json",
+ "id": "10-auto-AU-0401",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "AU-0401",
+  "name": "Greater Bendigo National Park",
+  "agency": "government agency (parks.vic.gov.au)",
+  "url": "https://www.parks.vic.gov.au/-/media/project/pv/main/parks/documents/visitor-guides-and-publications/greater-bendigo-national-park/greater-bendigo-national-park-dog-walking-areas-map.pdf?rev=496e372097404414884bf8a30446db02",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-08 12:05Z",
+ "results": [
+  {
+   "url": "https://www.parks.vic.gov.au/-/media/project/pv/main/parks/documents/visitor-guides-and-publications/greater-bendigo-national-park/greater-bendigo-national-park-dog-walking-areas-map.pdf?rev=496e372097404414884bf8a30446db02",
+   "map_url": "https://www.parks.vic.gov.au/-/media/project/pv/main/parks/documents/visitor-guides-and-publications/greater-bendigo-national-park/greater-bendigo-national-park-dog-walking-areas-map.pdf?rev=496e372097404414884bf8a30446db02",
+   "error": "could not render page(s) [1] under 3 MB"
+  }
+ ],
+ "seconds": 8,
+ "manners": {
+  "requests": 2,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 0 read OK"
+}
