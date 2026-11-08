@@ -1,0 +1,3614 @@
+{
+ "area": "CA-PE",
+ "built": "2026-11-08",
+ "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
+ "parks": [
+  {
+   "ref": "CA-0076",
+   "name": "Prince Edward Island National Park",
+   "key_name": "Prince Edward Island National Park",
+   "type": "National Park",
+   "grade": "official",
+   "pin": [
+    46.4172,
+    -63.074
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 6793.5,
+   "records": [
+    {
+     "id": "cpcad#22028",
+     "name": "Prince Edward Island National Park Of Canada",
+     "type": "National Park",
+     "acres": 6713.9,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22028&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22028"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 6793.5,
+     "official_acres": 6713.9,
+     "times": 1.01,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Prince Edward Island National Park",
+     "record_name": "Prince Edward Island National Park Of Canada"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 11
+    },
+    "T6": {
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-4893",
+       "name": "Green Gables Heritage Place (L.M. Montgomery's Cavendish NHS) National Historic Site",
+       "share": 0.68
+      },
+      {
+       "ref": "CA-5288",
+       "name": "Covehead Harbour National Historic Site",
+       "share": 0.32
+      }
+     ],
+     "count": 2
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "SPILL: The outline covers 68% of CA-4893 Green Gables Heritage Place (L.M. Montgomery's Cavendish NHS) National Historic Site, with no 2-fer row (maybe the wrong record)."
+  },
+  {
+   "ref": "CA-0851",
+   "name": "Argyle Shore Provincial Park",
+   "key_name": "Argyle Shore Provincial Park",
+   "type": "Provincial Park",
+   "grade": "official",
+   "pin": [
+    46.1726,
+    -63.3853
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0851.json"
+   ],
+   "acres_drawn": 48.3,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "ARGYLE SHORE",
+     "type": "Provincial Park",
+     "layer": "canada-bounds/CA-0851.json"
+    },
+    {
+     "id": "PE-PP Govern:18",
+     "name": "ARGYLE SHORE",
+     "type": "Provincial Park",
+     "acres": 47,
+     "layer": "PE-PP Govern"
+    }
+   ],
+   "record_ids": [
+    "PE-PP Govern:18"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 48.3,
+     "official_acres": 47.0,
+     "times": 1.03,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Argyle Shore Provincial Park",
+     "record_name": "ARGYLE SHORE"
+    },
+    "T4": {
+     "park_kind": "state park",
+     "record_kind": "state park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.08,
+     "median_spacing_m": 91.6,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0852",
+   "name": "Basin Head Provincial Park",
+   "key_name": "Basin Head Provincial Park",
+   "type": "Provincial Park",
+   "grade": "pin",
+   "pin": [
+    46.3794,
+    -62.109
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0852.json"
+   ],
+   "acres_drawn": 2283.2,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Basin Head Marine Protected Area",
+     "type": "Marine Protected Area",
+     "layer": "canada-bounds/CA-0852.json"
+    }
+   ],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NEAR",
+     "metres": 33.6
+    },
+    "T2": {
+     "flag": "NO FIGURE",
+     "outline_acres": 2283.2
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Basin Head Provincial Park",
+     "record_name": "Basin Head Marine Protected Area"
+    },
+    "T4": {
+     "park_kind": "state park",
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.08,
+     "median_spacing_m": 47.5,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "NEAR: POTA's pin is 34 m outside the outline."
+  },
+  {
+   "ref": "CA-0853",
+   "name": "Belmont Provincial Park",
+   "key_name": "Belmont Provincial Park",
+   "type": "Provincial Park",
+   "grade": "pin",
+   "pin": [
+    46.516,
+    -63.8316
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0854",
+   "name": "Bloomfield Provincial Park",
+   "key_name": "Bloomfield Provincial Park",
+   "type": "Provincial Park",
+   "grade": "official",
+   "pin": [
+    46.7451,
+    -64.1786
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0854.json"
+   ],
+   "acres_drawn": 11.3,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Bloomfield Conservation Area",
+     "type": "Provincially Owned Conservation Area",
+     "layer": "canada-bounds/CA-0854.json"
+    },
+    {
+     "id": "PE-PP Govern:31",
+     "name": "BLOOMFIELD",
+     "type": "Provincially Owned Conservation Area",
+     "acres": 3,
+     "layer": "PE-PP Govern"
+    }
+   ],
+   "record_ids": [
+    "PE-PP Govern:31"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "OFF",
+     "outline_acres": 11.3,
+     "official_acres": 3.0,
+     "times": 3.75,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Bloomfield Provincial Park",
+     "record_name": "Bloomfield Conservation Area"
+    },
+    "T4": {
+     "park_kind": "state park",
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.08,
+     "median_spacing_m": 95.6,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "OFF: The outline is 3.8 times bigger than the official 3 acres (11 ac drawn)."
+  },
+  {
+   "ref": "CA-0855",
+   "name": "Bonshaw Hills Provincial Park",
+   "key_name": "Bonshaw Hills Provincial Park",
+   "type": "Provincial Park",
+   "grade": "approximate",
+   "pin": [
+    46.1982,
+    -63.3499
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 223.4,
+   "records": [
+    {
+     "id": "cpcad#400",
+     "name": "Bonshaw Hills Woodlands Natural Area",
+     "type": "Provincially Owned Natural Area",
+     "acres": 94.9,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=400&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#403",
+     "name": "Bonshaw Hills Woodlands Natural Area",
+     "type": "Provincially Owned Natural Area",
+     "acres": 66.0,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=403&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#402",
+     "name": "Bonshaw Hills Woodlands Natural Area",
+     "type": "Provincially Owned Natural Area",
+     "acres": 62.5,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=402&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#400",
+    "cpcad#403",
+    "cpcad#402"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "OUTSIDE",
+     "metres": 804.9
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 223.4,
+     "official_acres": 223.3,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Bonshaw Hills Provincial Park",
+     "record_name": "Bonshaw Hills Woodlands Natural Area"
+    },
+    "T4": {
+     "park_kind": "state park",
+     "record_kind": "preserve",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "TINY HOLES",
+     "pieces": 2,
+     "flags": [
+      "TINY HOLES"
+     ],
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 2,
+      "pieces": 0
+     }
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 4,
+   "why": "OUTSIDE: POTA's pin is 805 m outside the outline (+1 more flag)."
+  },
+  {
+   "ref": "CA-0856",
+   "name": "Mark Arendz Provincial Park",
+   "key_name": "Mark Arendz Provincial Park",
+   "type": "Provincial Park",
+   "grade": "pin",
+   "pin": [
+    46.2804,
+    -63.4096
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0857",
+   "name": "Brudenell River Provincial Park",
+   "key_name": "Brudenell River Provincial Park",
+   "type": "Provincial Park",
+   "grade": "official",
+   "pin": [
+    46.2088,
+    -62.6038
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 758.3,
+   "records": [
+    {
+     "id": "cpcad#532",
+     "name": "Brudenell Provincial Park",
+     "type": "Provincial Park",
+     "acres": 758.2,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=532&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#532"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "NEAR",
+     "metres": 105.5
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 758.3,
+     "official_acres": 758.2,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Brudenell River Provincial Park",
+     "record_name": "Brudenell Provincial Park"
+    },
+    "T4": {
+     "park_kind": "state park",
+     "record_kind": "state park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 11
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "NEAR: POTA's pin is 106 m outside the outline."
+  },
+  {
+   "ref": "CA-0858",
+   "name": "Cabot Beach Provincial Park",
+   "key_name": "Cabot Beach Provincial Park",
+   "type": "Provincial Park",
+   "grade": "approximate",
+   "pin": [
+    46.5575,
+    -63.7052
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 401.8,
+   "records": [
+    {
+     "id": "cpcad#533",
+     "name": "Cabot Beach Sand Dunes Natural Area",
+     "type": "Provincially Owned Natural Area",
+     "acres": 401.8,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=533&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#533"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 401.8,
+     "official_acres": 401.8,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Cabot Beach Provincial Park",
+     "record_name": "Cabot Beach Sand Dunes Natural Area"
+    },
+    "T4": {
+     "park_kind": "state park",
+     "record_kind": "preserve",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 3
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0859",
+   "name": "Cedar Dunes Provincial Park",
+   "key_name": "Cedar Dunes Provincial Park",
+   "type": "Provincial Park",
+   "grade": "official",
+   "pin": [
+    46.6198,
+    -64.3804
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0859.json"
+   ],
+   "acres_drawn": 134.8,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Cedar Dunes Provincial Park Natural Area",
+     "type": "Provincial Park",
+     "layer": "canada-bounds/CA-0859.json"
+    },
+    {
+     "id": "531",
+     "name": "Cedar Dunes Provincial Park Natural Area",
+     "type": "Provincial Park",
+     "acres": 102,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "PE-PP Govern:12",
+     "name": "CEDAR DUNES",
+     "acres": 88,
+     "layer": "PE-PP Govern"
+    }
+   ],
+   "record_ids": [
+    "cpcad#531",
+    "PE-PP Govern:12"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 134.8,
+     "official_acres": 102.0,
+     "times": 1.32,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Cedar Dunes Provincial Park",
+     "record_name": "Cedar Dunes Provincial Park Natural Area"
+    },
+    "T4": {
+     "park_kind": "state park",
+     "record_kind": "state park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.08,
+     "median_spacing_m": 88.3,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0860",
+   "name": "Chelton Beach Provincial Park",
+   "key_name": "Chelton Beach Provincial Park",
+   "type": "Provincial Park",
+   "grade": "pin",
+   "pin": [
+    46.3029,
+    -63.7457
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0861",
+   "name": "Green Park Provincial Park",
+   "key_name": "Green Park Provincial Park",
+   "type": "Provincial Park",
+   "grade": "official",
+   "pin": [
+    46.5893,
+    -63.8906
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 219.0,
+   "records": [
+    {
+     "id": "cpcad#534",
+     "name": "Green Provincial Park",
+     "type": "Provincially Owned Natural Area",
+     "acres": 192.3,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=534&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#535",
+     "name": "Green Provincial Park",
+     "type": "Provincially Owned Natural Area",
+     "acres": 26.7,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=535&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#534",
+    "cpcad#535"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 219.0,
+     "official_acres": 219.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Green Park Provincial Park",
+     "record_name": "Green Provincial Park"
+    },
+    "T4": {
+     "park_kind": "state park",
+     "record_kind": "preserve",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "TINY HOLES",
+     "pieces": 1,
+     "flags": [
+      "TINY HOLES"
+     ],
+     "note": "6 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 6,
+      "pieces": 0
+     }
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "TINY HOLES: The shape has problems: 6 hole(s) under 100 m2."
+  },
+  {
+   "ref": "CA-0862",
+   "name": "Jacques Cartier Provincial Park",
+   "key_name": "Jacques Cartier Provincial Park",
+   "type": "Provincial Park",
+   "grade": "pin",
+   "pin": [
+    46.8489,
+    -64.0144
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0863",
+   "name": "Kings Castle Provincial Park",
+   "key_name": "Kings Castle Provincial Park",
+   "type": "Provincial Park",
+   "grade": "pin",
+   "pin": [
+    46.0228,
+    -62.562
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0865",
+   "name": "Linkletter Provincial Park",
+   "key_name": "Linkletter Provincial Park",
+   "type": "Provincial Park",
+   "grade": "pin",
+   "pin": [
+    46.3998,
+    -63.8514
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0869",
+   "name": "Northumberland Provincial Park",
+   "key_name": "Northumberland Provincial Park",
+   "type": "Provincial Park",
+   "grade": "pin",
+   "pin": [
+    45.9664,
+    -62.7174
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0870",
+   "name": "Panmure Island Provincial Park",
+   "key_name": "Panmure Island Provincial Park",
+   "type": "Provincial Park",
+   "grade": "official",
+   "pin": [
+    46.1196,
+    -62.4679
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0870.json"
+   ],
+   "acres_drawn": 164.6,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Boughton Island Natural Area",
+     "type": "Provincially Owned Natural Area",
+     "layer": "canada-bounds/CA-0870.json"
+    },
+    {
+     "id": "PE-PP Govern:8",
+     "name": "PANMURE ISLAND",
+     "type": "Provincially Owned Natural Area",
+     "acres": 62,
+     "layer": "PE-PP Govern"
+    }
+   ],
+   "record_ids": [
+    "PE-PP Govern:8"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "OFF",
+     "outline_acres": 164.6,
+     "official_acres": 62.0,
+     "times": 2.66,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Panmure Island Provincial Park",
+     "record_name": "PANMURE ISLAND",
+     "worst_record": {
+      "name": "Boughton Island Natural Area",
+      "score": 0.5
+     }
+    },
+    "T4": {
+     "park_kind": "state park",
+     "record_kind": "preserve",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.08,
+     "median_spacing_m": 80.3,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "OFF: The outline is 2.7 times bigger than the official 62 acres (165 ac drawn)."
+  },
+  {
+   "ref": "CA-0874",
+   "name": "Red Point Provincial Park",
+   "key_name": "Red Point Provincial Park",
+   "type": "Provincial Park",
+   "grade": "pin",
+   "pin": [
+    46.369,
+    -62.1339
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0874.json"
+   ],
+   "acres_drawn": 54.5,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Red Point Woodland Conservation Area",
+     "type": "Provincially Owned Conservation Area",
+     "layer": "canada-bounds/CA-0874.json"
+    }
+   ],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "OUTSIDE",
+     "metres": 1495.4
+    },
+    "T2": {
+     "flag": "NO FIGURE",
+     "outline_acres": 54.5
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Red Point Provincial Park",
+     "record_name": "Red Point Woodland Conservation Area"
+    },
+    "T4": {
+     "park_kind": "state park",
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.08,
+     "median_spacing_m": 268.0,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "OUTSIDE: POTA's pin is 1.5 km outside the outline."
+  },
+  {
+   "ref": "CA-0875",
+   "name": "Sally's Beach Provincial Park",
+   "key_name": "Sally's Beach Provincial Park",
+   "type": "Provincial Park",
+   "grade": "pin",
+   "pin": [
+    46.261,
+    -62.3797
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0877",
+   "name": "Strathgartney Provincial Park",
+   "key_name": "Strathgartney Provincial Park",
+   "type": "Provincial Park",
+   "grade": "approximate",
+   "pin": [
+    46.2141,
+    -63.336
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0877.json"
+   ],
+   "acres_drawn": 163.1,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Strathgartney Woodlands Natural Area",
+     "type": "Provincial Park",
+     "layer": "canada-bounds/CA-0877.json"
+    },
+    {
+     "id": "470",
+     "name": "Strathgartney Woodlands Natural Area",
+     "type": "Provincial Park",
+     "acres": 130,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "PE-PP Govern:11",
+     "name": "STRATHGARTNEY",
+     "acres": 92,
+     "layer": "PE-PP Govern"
+    },
+    {
+     "id": "466",
+     "name": "Strathgartney Woodlands Natural Area",
+     "acres": 24,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "460",
+     "name": "Strathgartney Woodlands Natural Area",
+     "acres": 8,
+     "layer": "CPCAD"
+    }
+   ],
+   "record_ids": [
+    "cpcad#470",
+    "PE-PP Govern:11",
+    "cpcad#466",
+    "cpcad#460"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 163.1,
+     "official_acres": 162.0,
+     "times": 1.01,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Strathgartney Provincial Park",
+     "record_name": "Strathgartney Woodlands Natural Area"
+    },
+    "T4": {
+     "park_kind": "state park",
+     "record_kind": "state park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.08,
+     "median_spacing_m": 73.2,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0878",
+   "name": "Tea Hill Provincial Park",
+   "key_name": "Tea Hill Provincial Park",
+   "type": "Provincial Park",
+   "grade": "pin",
+   "pin": [
+    46.1983,
+    -63.0639
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0879",
+   "name": "Union Corner Provincial Park",
+   "key_name": "Union Corner Provincial Park",
+   "type": "Provincial Park",
+   "grade": "official",
+   "pin": [
+    46.3877,
+    -63.9948
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0879.json"
+   ],
+   "acres_drawn": 9.2,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Maplecross-Union Corner Natural Area",
+     "type": "Privately Owned Natural Area (INT)",
+     "layer": "canada-bounds/CA-0879.json"
+    },
+    {
+     "id": "PE-PP Govern:33",
+     "name": "UNION CORNER",
+     "type": "Privately Owned Natural Area (INT)",
+     "acres": 6,
+     "layer": "PE-PP Govern"
+    }
+   ],
+   "record_ids": [
+    "PE-PP Govern:33"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "OFF",
+     "outline_acres": 9.2,
+     "official_acres": 6.0,
+     "times": 1.54,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Union Corner Provincial Park",
+     "record_name": "UNION CORNER"
+    },
+    "T4": {
+     "park_kind": "state park",
+     "record_kind": "preserve",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.08,
+     "median_spacing_m": 164.7,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "OFF: The outline is 1.5 times bigger than the official 6 acres (9 ac drawn)."
+  },
+  {
+   "ref": "CA-0880",
+   "name": "Wood Islands Provincial Park",
+   "key_name": "Wood Islands Provincial Park",
+   "type": "Provincial Park",
+   "grade": "pin",
+   "pin": [
+    45.951,
+    -62.7446
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0880.json"
+   ],
+   "acres_drawn": 190.8,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Wood Islands Bog Natural Area",
+     "type": "Provincially Owned Natural Area",
+     "layer": "canada-bounds/CA-0880.json"
+    }
+   ],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "OUTSIDE",
+     "metres": 3461.8
+    },
+    "T2": {
+     "flag": "NO FIGURE",
+     "outline_acres": 190.8
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Wood Islands Provincial Park",
+     "record_name": "Wood Islands Bog Natural Area"
+    },
+    "T4": {
+     "park_kind": "state park",
+     "record_kind": "preserve",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 3
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.08,
+     "median_spacing_m": 589.4,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "OUTSIDE: POTA's pin is 3.5 km outside the outline."
+  },
+  {
+   "ref": "CA-4646",
+   "name": "Beach Grove Nature Recreation Area",
+   "key_name": "Beach Grove Nature Recreation Area",
+   "type": "Nature Recreation Area",
+   "grade": "approximate",
+   "pin": [
+    46.254,
+    -63.175
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 15.7,
+   "records": [
+    {
+     "id": "cpcad#173",
+     "name": "Beach Grove Hardwoods Natural Area",
+     "type": "Provincially Owned Natural Area",
+     "acres": 15.7,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=173&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#173"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "NEAR",
+     "metres": 13.9
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 15.7,
+     "official_acres": 15.7,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Beach Grove Nature Recreation Area",
+     "record_name": "Beach Grove Hardwoods Natural Area"
+    },
+    "T4": {
+     "park_kind": "recreation area",
+     "record_kind": "preserve",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 2
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "NEAR: POTA's pin is 14 m outside the outline."
+  },
+  {
+   "ref": "CA-4650",
+   "name": "Boughton Island Natural Area",
+   "key_name": "Boughton Island Natural Area",
+   "type": "Natural Area",
+   "grade": "official",
+   "pin": [
+    46.193,
+    -62.422
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 581.4,
+   "records": [
+    {
+     "id": "cpcad#124",
+     "name": "Boughton Island Natural Area",
+     "type": "Provincially Owned Natural Area",
+     "acres": 576.3,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=124&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#128",
+     "name": "Boughton Island Natural Area",
+     "type": "Provincially Owned Natural Area",
+     "acres": 5.2,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=128&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#124",
+    "cpcad#128"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 581.4,
+     "official_acres": 581.5,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Boughton Island Natural Area",
+     "record_name": "Boughton Island Natural Area"
+    },
+    "T4": {
+     "park_kind": "preserve",
+     "record_kind": "preserve",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-4657",
+   "name": "St. Peters Harbour National Historic Site",
+   "key_name": "St. Peters Harbour National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    46.4418,
+    -62.7477
+   ],
+   "outline_from": [
+    "canada-bounds/CA-4657.json"
+   ],
+   "acres_drawn": 34.6,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "West St. Peters Conservation Agreement",
+     "type": "Provincially Owned Conservation Area",
+     "layer": "canada-bounds/CA-4657.json"
+    }
+   ],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "OUTSIDE",
+     "metres": 3238.4
+    },
+    "T2": {
+     "flag": "NO FIGURE",
+     "outline_acres": 34.6
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.667,
+     "pota_name": "St. Peters Harbour National Historic Site",
+     "record_name": "West St. Peters Conservation Agreement"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.08,
+     "median_spacing_m": 187.2,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 6,
+   "why": "OUTSIDE: POTA's pin is 3.2 km outside the outline (+1 more flag)."
+  },
+  {
+   "ref": "CA-4663",
+   "name": "Pituamkek National Park Reserve",
+   "key_name": "Pituamkek National Park Reserve",
+   "type": "National Park Reserve",
+   "grade": "official",
+   "pin": [
+    46.737,
+    -63.989
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 275.7,
+   "records": [
+    {
+     "id": "cpcad#22066",
+     "name": "Pituamkek National Park Reserve",
+     "type": "National Park",
+     "acres": 276.8,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22066&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22066"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "OUTSIDE",
+     "metres": 4971.8
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 275.7,
+     "official_acres": 276.8,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Pituamkek National Park Reserve",
+     "record_name": "Pituamkek National Park Reserve"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 3
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "OUTSIDE: POTA's pin is 5.0 km outside the outline."
+  },
+  {
+   "ref": "CA-4673",
+   "name": "East Point Lighthouse Historic Site",
+   "key_name": "East Point Lighthouse Historic Site",
+   "type": "Historic Site",
+   "grade": "pin",
+   "pin": [
+    46.4528,
+    -61.9717
+   ],
+   "outline_from": [
+    "canada-bounds/CA-4673.json"
+   ],
+   "acres_drawn": 40.8,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "East Point Woodland Conservation Area",
+     "type": "Provincially Owned Conservation Area",
+     "layer": "canada-bounds/CA-4673.json"
+    }
+   ],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "OUTSIDE",
+     "metres": 3437.5
+    },
+    "T2": {
+     "flag": "NO FIGURE",
+     "outline_acres": 40.8
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.667,
+     "pota_name": "East Point Lighthouse Historic Site",
+     "record_name": "East Point Woodland Conservation Area"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.08,
+     "median_spacing_m": 511.1,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 6,
+   "why": "OUTSIDE: POTA's pin is 3.4 km outside the outline (+1 more flag)."
+  },
+  {
+   "ref": "CA-4696",
+   "name": "Courtin Islands Natural Area",
+   "key_name": "Courtin Islands Natural Area",
+   "type": "Natural Area",
+   "grade": "pin",
+   "pin": [
+    46.5177,
+    -63.7732
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4721",
+   "name": "North Cape Natural Area",
+   "key_name": "North Cape Natural Area",
+   "type": "Natural Area",
+   "grade": "pin",
+   "pin": [
+    47.0571,
+    -63.9965
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4748",
+   "name": "Tryon United Church National Historic Site",
+   "key_name": "Tryon United Church National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    46.2384,
+    -63.5434
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4757",
+   "name": "St. Peters Island Natural Area",
+   "key_name": "St. Peters Island Natural Area",
+   "type": "Natural Area",
+   "grade": "official",
+   "pin": [
+    46.1247,
+    -63.1806
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 70.3,
+   "records": [
+    {
+     "id": "cpcad#123",
+     "name": "St. Peters Island Natural Area",
+     "type": "Privately Owned Natural Area (INT)",
+     "acres": 70.3,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=123&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#123"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 70.3,
+     "official_acres": 70.3,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "St. Peters Island Natural Area",
+     "record_name": "St. Peters Island Natural Area"
+    },
+    "T4": {
+     "park_kind": "preserve",
+     "record_kind": "preserve",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-4766",
+   "name": "Victoria Park Natural Area",
+   "key_name": "Victoria Park Natural Area",
+   "type": "Natural Area",
+   "grade": "pin",
+   "pin": [
+    46.2292,
+    -63.1406
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4891",
+   "name": "Ardgowan National Historic Site",
+   "key_name": "Ardgowan National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    46.2521,
+    -63.1275
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4893",
+   "name": "Green Gables Heritage Place (L.M. Montgomery's Cavendish NHS) National Historic Site",
+   "key_name": "Green Gables Heritage Place (L.M. Montgomery's Cavendish NHS) National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    46.4905,
+    -63.3824
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4894",
+   "name": "Skmaqn-Port-la-Joye-Fort Amherst National Historic Site",
+   "key_name": "Skmaqn-Port-la-Joye-Fort Amherst National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    46.1957,
+    -63.1362
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5288",
+   "name": "Covehead Harbour National Historic Site",
+   "key_name": "Covehead Harbour National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    46.4299,
+    -63.1429
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5414",
+   "name": "Farmers' Bank of Rustico National Historic Site",
+   "key_name": "Farmers' Bank of Rustico National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    46.4233,
+    -63.2833
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5418",
+   "name": "Jean-Pierre Roma at Three Rivers, P.E.I. National Historic Site",
+   "key_name": "Jean-Pierre Roma at Three Rivers, P.E.I. National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    46.1814,
+    -62.5611
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5419",
+   "name": "Kensington Railway Station National Historic Site",
+   "key_name": "Kensington Railway Station National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    46.4373,
+    -63.6403
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5753",
+   "name": "Cape Bear National Heritage Site",
+   "key_name": "Cape Bear National Heritage Site",
+   "type": "National Heritage Site",
+   "grade": "pin",
+   "pin": [
+    46.0036,
+    -62.4583
+   ],
+   "outline_from": [
+    "canada-bounds/CA-5753.json"
+   ],
+   "acres_drawn": 155.3,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Cape Bear Conservation Area",
+     "type": "Provincially Owned Conservation Area",
+     "layer": "canada-bounds/CA-5753.json"
+    }
+   ],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NEAR",
+     "metres": 170.4
+    },
+    "T2": {
+     "flag": "NO FIGURE",
+     "outline_acres": 155.3
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.667,
+     "pota_name": "Cape Bear National Heritage Site",
+     "record_name": "Cape Bear Conservation Area"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.08,
+     "median_spacing_m": 175.7,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 4,
+   "why": "MISMATCH: The record name 'Cape Bear Conservation Area' does not match POTA's name 'Cape Bear National Heritage Site' (score 0.67) (+1 more flag)."
+  },
+  {
+   "ref": "CA-5755",
+   "name": "Cape Tryon National Heritage Site",
+   "key_name": "Cape Tryon National Heritage Site",
+   "type": "National Heritage Site",
+   "grade": "pin",
+   "pin": [
+    46.5339,
+    -63.507
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5776",
+   "name": "Northport Rear Range National Heritage Site",
+   "key_name": "Northport Rear Range National Heritage Site",
+   "type": "National Heritage Site",
+   "grade": "pin",
+   "pin": [
+    46.7942,
+    -64.0624
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5779",
+   "name": "Point Prim National Heritage Site",
+   "key_name": "Point Prim National Heritage Site",
+   "type": "National Heritage Site",
+   "grade": "pin",
+   "pin": [
+    46.0502,
+    -63.0391
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5788",
+   "name": "Rotary Friendship Park Protected Area",
+   "key_name": "Rotary Friendship Park Protected Area",
+   "type": "Protected Area",
+   "grade": "pin",
+   "pin": [
+    46.4087,
+    -63.7655
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5791",
+   "name": "Sir Andrew MacPhail Homestead National Historic Site",
+   "key_name": "Sir Andrew MacPhail Homestead National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    46.1614,
+    -62.8233
+   ],
+   "outline_from": [
+    "canada-bounds/CA-5791.json"
+   ],
+   "acres_drawn": 97.6,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Sir Andrew Macphail Natural Area",
+     "type": "Privately Owned Natural Area",
+     "layer": "canada-bounds/CA-5791.json"
+    }
+   ],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NEAR",
+     "metres": 311.7
+    },
+    "T2": {
+     "flag": "NO FIGURE",
+     "outline_acres": 97.6
+    },
+    "T3": {
+     "flag": "WEAK",
+     "score": 0.75,
+     "pota_name": "Sir Andrew MacPhail Homestead National Historic Site",
+     "record_name": "Sir Andrew Macphail Natural Area"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": "preserve",
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.08,
+     "median_spacing_m": 94.8,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 2,
+   "why": "NEAR: POTA's pin is 312 m outside the outline (+1 more flag)."
+  },
+  {
+   "ref": "CA-6138",
+   "name": "Hillsborough River Canadian Heritage River",
+   "key_name": "Hillsborough River Canadian Heritage River",
+   "type": "Canadian Heritage River",
+   "grade": "pin",
+   "pin": [
+    46.3502,
+    -62.9104
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6172",
+   "name": "Seacow Head Lighthouse National Heritage Site",
+   "key_name": "Seacow Head Lighthouse National Heritage Site",
+   "type": "National Heritage Site",
+   "grade": "pin",
+   "pin": [
+    46.316,
+    -63.811
+   ],
+   "outline_from": [
+    "canada-bounds/CA-6172.json"
+   ],
+   "acres_drawn": 6.9,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Seacow Head Coastal Cliff Natural Area",
+     "type": "Privately Owned Natural Area (INT)",
+     "layer": "canada-bounds/CA-6172.json"
+    }
+   ],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "OUTSIDE",
+     "metres": 1641.2
+    },
+    "T2": {
+     "flag": "NO FIGURE",
+     "outline_acres": 6.9
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.5,
+     "pota_name": "Seacow Head Lighthouse National Heritage Site",
+     "record_name": "Seacow Head Coastal Cliff Natural Area"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": "preserve",
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.08,
+     "median_spacing_m": 53.3,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 6,
+   "why": "OUTSIDE: POTA's pin is 1.6 km outside the outline (+1 more flag)."
+  },
+  {
+   "ref": "CA-6373",
+   "name": "Fisherman's Haven Provincial Park",
+   "key_name": "Fisherman's Haven Provincial Park",
+   "type": "Provincial Park",
+   "grade": "pin",
+   "pin": [
+    46.9461,
+    -63.9946
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6439",
+   "name": "Holman's Island National Nature Reserve",
+   "key_name": "Holman's Island National Nature Reserve",
+   "type": "National Nature Reserve",
+   "grade": "pin",
+   "pin": [
+    46.3753,
+    -63.7891
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6593",
+   "name": "Victoria Provincial Nature Reserve",
+   "key_name": "Victoria Provincial Nature Reserve",
+   "type": "Provincial Nature Reserve",
+   "grade": "official",
+   "pin": [
+    46.2083,
+    -63.4791
+   ],
+   "outline_from": [
+    "canada-bounds/CA-6593.json"
+   ],
+   "acres_drawn": 16.4,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "VICTORIA",
+     "type": "Provincial Nature Reserve",
+     "layer": "canada-bounds/CA-6593.json"
+    },
+    {
+     "id": "PE-PP Govern:29",
+     "name": "VICTORIA",
+     "type": "Provincial Nature Reserve",
+     "acres": 15,
+     "layer": "PE-PP Govern"
+    }
+   ],
+   "record_ids": [
+    "PE-PP Govern:29"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 16.4,
+     "official_acres": 15.0,
+     "times": 1.09,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Victoria Provincial Nature Reserve",
+     "record_name": "VICTORIA"
+    },
+    "T4": {
+     "park_kind": "preserve",
+     "record_kind": "preserve",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.08,
+     "median_spacing_m": 122.6,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-6594",
+   "name": "Pinette Provincial Park",
+   "key_name": "Pinette Provincial Park",
+   "type": "Provincial Park",
+   "grade": "pin",
+   "pin": [
+    46.0556,
+    -62.9105
+   ],
+   "outline_from": [
+    "canada-bounds/CA-6594.json"
+   ],
+   "acres_drawn": 130.4,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "North Pinette Natural Area",
+     "type": "Privately Owned Natural Area (INT)",
+     "layer": "canada-bounds/CA-6594.json"
+    }
+   ],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "OUTSIDE",
+     "metres": 5042.6
+    },
+    "T2": {
+     "flag": "NO FIGURE",
+     "outline_acres": 130.4
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Pinette Provincial Park",
+     "record_name": "North Pinette Natural Area"
+    },
+    "T4": {
+     "park_kind": "state park",
+     "record_kind": "preserve",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.08,
+     "median_spacing_m": 183.5,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "OUTSIDE: POTA's pin is 5.0 km outside the outline."
+  },
+  {
+   "ref": "CA-6595",
+   "name": "Buffaloland Provincial Wildlife Area",
+   "key_name": "Buffaloland Provincial Wildlife Area",
+   "type": "Provincial Wildlife Area",
+   "grade": "official",
+   "pin": [
+    46.1043,
+    -62.6206
+   ],
+   "outline_from": [
+    "canada-bounds/CA-6595.json"
+   ],
+   "acres_drawn": 150.5,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "BUFFALOLAND",
+     "type": "Provincial Wildlife Area",
+     "layer": "canada-bounds/CA-6595.json"
+    },
+    {
+     "id": "PE-PP Govern:9",
+     "name": "BUFFALOLAND",
+     "type": "Provincial Wildlife Area",
+     "acres": 93,
+     "layer": "PE-PP Govern"
+    }
+   ],
+   "record_ids": [
+    "PE-PP Govern:9"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "OFF",
+     "outline_acres": 150.5,
+     "official_acres": 93.0,
+     "times": 1.62,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Buffaloland Provincial Wildlife Area",
+     "record_name": "BUFFALOLAND"
+    },
+    "T4": {
+     "park_kind": "wma",
+     "record_kind": "wma",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.08,
+     "median_spacing_m": 239.6,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "OFF: The outline is 1.6 times bigger than the official 93 acres (150 ac drawn)."
+  },
+  {
+   "ref": "CA-6596",
+   "name": "Souris Beach Gateway Provincial Recreation Area",
+   "key_name": "Souris Beach Gateway Provincial Recreation Area",
+   "type": "Provincial Recreation Area",
+   "grade": "official",
+   "pin": [
+    46.3564,
+    -62.271
+   ],
+   "outline_from": [
+    "canada-bounds/CA-6596.json"
+   ],
+   "acres_drawn": 49.2,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "SOURIS BEACH",
+     "type": "Provincial Recreation Area",
+     "layer": "canada-bounds/CA-6596.json"
+    },
+    {
+     "id": "PE-PP Govern:17",
+     "name": "SOURIS BEACH",
+     "type": "Provincial Recreation Area",
+     "acres": 25,
+     "layer": "PE-PP Govern"
+    }
+   ],
+   "record_ids": [
+    "PE-PP Govern:17"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "OFF",
+     "outline_acres": 49.2,
+     "official_acres": 25.0,
+     "times": 1.97,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.667,
+     "pota_name": "Souris Beach Gateway Provincial Recreation Area",
+     "record_name": "SOURIS BEACH"
+    },
+    "T4": {
+     "park_kind": "recreation area",
+     "record_kind": "recreation area",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.08,
+     "median_spacing_m": 50.8,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 4,
+   "why": "MISMATCH: The record name 'SOURIS BEACH' does not match POTA's name 'Souris Beach Gateway Provincial Recreation Area' (score 0.67) (+1 more flag)."
+  }
+ ]
+}

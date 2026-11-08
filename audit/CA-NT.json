@@ -1,0 +1,4118 @@
+{
+ "area": "CA-NT",
+ "built": "2026-11-08",
+ "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
+ "parks": [
+  {
+   "ref": "CA-0002",
+   "name": "Aulavik National Park",
+   "key_name": "Aulavik National Park",
+   "type": "National Park",
+   "grade": "pin",
+   "pin": [
+    72.0357,
+    -125.264
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0062",
+   "name": "Nahanni National Park Reserve",
+   "key_name": "Nahanni National Park Reserve",
+   "type": "National Park Reserve",
+   "grade": "official",
+   "pin": [
+    61.5007,
+    -125.5
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 7428843.7,
+   "records": [
+    {
+     "id": "cpcad#22020",
+     "name": "Nahanni National Park Reserve Of Canada",
+     "type": "National Park",
+     "acres": 7413161.4,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22020&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22020"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 7428843.7,
+     "official_acres": 7413161.4,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Nahanni National Park Reserve",
+     "record_name": "Nahanni National Park Reserve Of Canada"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 2
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0098",
+   "name": "Thaidene Nene National Park Reserve",
+   "key_name": "Thaidene Nene National Park Reserve",
+   "type": "National Park Reserve",
+   "grade": "official",
+   "pin": [
+    62.8568,
+    -108.522
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 3478098.6,
+   "records": [
+    {
+     "id": "cpcad#22045",
+     "name": "Thaidene Nene National Park Reserve Of Canada",
+     "type": "National Park",
+     "acres": 3476772.7,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22045&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22045"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 3478098.6,
+     "official_acres": 3476772.7,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Thaidene Nene National Park Reserve",
+     "record_name": "Thaidene Nene National Park Reserve Of Canada"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-5474",
+       "name": "Fort Reliance National Historic Site",
+       "share": 1.0
+      }
+     ],
+     "count": 1
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "SPILL: The outline covers 100% of CA-5474 Fort Reliance National Historic Site, with no 2-fer row (maybe the wrong record)."
+  },
+  {
+   "ref": "CA-0102",
+   "name": "Tuktut Nogait National Park",
+   "key_name": "Tuktut Nogait National Park",
+   "type": "National Park",
+   "grade": "official",
+   "pin": [
+    68.8187,
+    -121.749
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 4663238.2,
+   "records": [
+    {
+     "id": "cpcad#22047",
+     "name": "Tuktut Nogait National Park Of Canada",
+     "type": "National Park",
+     "acres": 4492622.9,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22047&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22047"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 4663238.2,
+     "official_acres": 4492622.9,
+     "times": 1.04,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Tuktut Nogait National Park",
+     "record_name": "Tuktut Nogait National Park Of Canada"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0121",
+   "name": "Nááts'ihch'oh National Park Reserve",
+   "key_name": "Nááts'ihch'oh National Park Reserve",
+   "type": "National Park Reserve",
+   "grade": "official",
+   "pin": [
+    62.375,
+    -127.958
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 1210643.4,
+   "records": [
+    {
+     "id": "cpcad#22021",
+     "name": "Nááts'ihch'oh National Park Reserve Of Canada",
+     "type": "National Park",
+     "acres": 1209580.8,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22021&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22021"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "FAR",
+     "metres": 10482.2
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 1210643.4,
+     "official_acres": 1209580.8,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Nááts'ihch'oh National Park Reserve",
+     "record_name": "Nááts'ihch'oh National Park Reserve Of Canada"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 2
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 5,
+   "why": "FAR: POTA's pin is 10.5 km outside the outline."
+  },
+  {
+   "ref": "CA-0125",
+   "name": "Pingo National Landmark Natural Area",
+   "key_name": "Pingo National Landmark Natural Area",
+   "type": "Natural Area",
+   "grade": "official",
+   "pin": [
+    69.3997,
+    -133.08
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0125.json"
+   ],
+   "acres_drawn": 4011.2,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Pingo Canadian Landmark",
+     "type": "Natural Area",
+     "layer": "canada-bounds/CA-0125.json"
+    },
+    {
+     "id": "22024",
+     "name": "Pingo Canadian Landmark",
+     "type": "Natural Area",
+     "acres": 2669,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "NT GNWT Envi:40502",
+     "name": "Pingo Canadian Landmark",
+     "acres": 2230,
+     "layer": "NT GNWT Envi"
+    },
+    {
+     "id": "22025",
+     "name": "Pingo Canadian Landmark",
+     "acres": 1280,
+     "layer": "CPCAD"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22024",
+    "NT GNWT Envi:40502",
+    "cpcad#22025"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 4011.2,
+     "official_acres": 3949.0,
+     "times": 1.02,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Pingo National Landmark Natural Area",
+     "record_name": "Pingo Canadian Landmark"
+    },
+    "T4": {
+     "park_kind": "preserve",
+     "record_kind": "preserve",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.04,
+     "median_spacing_m": 50.8,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0751",
+   "name": "Blackstone Territorial Park",
+   "key_name": "Blackstone Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    61.101,
+    -122.881
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0752",
+   "name": "Cameron Falls Trail Territorial Park",
+   "key_name": "Cameron Falls Trail Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    62.5203,
+    -113.688
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0753",
+   "name": "Chan Lake Territorial Park",
+   "key_name": "Chan Lake Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    61.9374,
+    -116.497
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0754",
+   "name": "Fort Simpson Territorial Park",
+   "key_name": "Fort Simpson Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    61.8549,
+    -121.343
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0755",
+   "name": "Fred Henne Territorial Park",
+   "key_name": "Fred Henne Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    62.4717,
+    -114.417
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0756",
+   "name": "Hay River Territorial Park",
+   "key_name": "Hay River Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    60.8638,
+    -115.747
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0757",
+   "name": "Hidden Lake Territorial Park",
+   "key_name": "Hidden Lake Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    62.5316,
+    -113.665
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0757.json"
+   ],
+   "acres_drawn": 6925.0,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Hidden Lake Territorial Park",
+     "type": "Territorial Park",
+     "layer": "canada-bounds/CA-0757.json"
+    },
+    {
+     "id": "NT GNWT Envi:40507",
+     "name": "Hidden Lake Territorial Park",
+     "type": "Territorial Park",
+     "acres": 6035,
+     "layer": "NT GNWT Envi"
+    }
+   ],
+   "record_ids": [
+    "NT GNWT Envi:40507"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 6925.0,
+     "official_acres": 6035.0,
+     "times": 1.15,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Hidden Lake Territorial Park",
+     "record_name": "Hidden Lake Territorial Park"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-0752",
+       "name": "Cameron Falls Trail Territorial Park",
+       "share": 1.0
+      }
+     ],
+     "count": 1
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 2244.6,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "SPILL: The outline covers 100% of CA-0752 Cameron Falls Trail Territorial Park, with no 2-fer row (maybe the wrong record)."
+  },
+  {
+   "ref": "CA-0758",
+   "name": "Jak Territorial Park",
+   "key_name": "Jak Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    68.3332,
+    -133.655
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0759",
+   "name": "Lady Evelyn Falls Territorial Park",
+   "key_name": "Lady Evelyn Falls Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    60.9943,
+    -117.266
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0760",
+   "name": "Madeline Lake Territorial Park",
+   "key_name": "Madeline Lake Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    62.5445,
+    -114.084
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0761",
+   "name": "Nitainlaii Territorial Park",
+   "key_name": "Nitainlaii Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    67.3504,
+    -134.859
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0762",
+   "name": "Prelude Lake Territorial Park",
+   "key_name": "Prelude Lake Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    62.5666,
+    -113.981
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0763",
+   "name": "Queen Elizabeth Territorial Park",
+   "key_name": "Queen Elizabeth Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    60.0235,
+    -111.911
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0764",
+   "name": "Reid Lake Territorial Park",
+   "key_name": "Reid Lake Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    62.4892,
+    -113.468
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0765",
+   "name": "Twin Falls Gorge Territorial Park",
+   "key_name": "Twin Falls Gorge Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    60.2214,
+    -116.619
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4316",
+   "name": "60th Parallel Territorial Park",
+   "key_name": "60th Parallel Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    60.0011,
+    -116.977
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4317",
+   "name": "Alexandra Falls Day Use Area Territorial Park",
+   "key_name": "Alexandra Falls Day Use Area Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    60.5011,
+    -116.283
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4318",
+   "name": "Anderson River Delta Migratory Bird Sanctuary",
+   "key_name": "Anderson River Delta Migratory Bird Sanctuary",
+   "type": "Bird Sanctuary",
+   "grade": "official",
+   "pin": [
+    69.638,
+    -128.922
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 292575.2,
+   "records": [
+    {
+     "id": "cpcad#22069",
+     "name": "Anderson River Delta Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 252884.3,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22069&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22070",
+     "name": "Anderson River Delta Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 39729.7,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22070&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22069",
+    "cpcad#22070"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 292575.2,
+     "official_acres": 292614.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Anderson River Delta Migratory Bird Sanctuary",
+     "record_name": "Anderson River Delta Migratory Bird Sanctuary"
+    },
+    "T4": {
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "TINY HOLES",
+     "pieces": 1,
+     "flags": [
+      "TINY HOLES"
+     ],
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
+  },
+  {
+   "ref": "CA-4319",
+   "name": "Anuniaqvia Niqiqyuam (Darnley Bay) Marine Protected Area",
+   "key_name": "Anuniaqvia Niqiqyuam (Darnley Bay) Marine Protected Area",
+   "type": "Protected Area",
+   "grade": "pin",
+   "pin": null,
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "CAN'T TELL",
+     "bad_pin": [
+      0.0,
+      -0.0
+     ],
+     "bad_pin_from": "POTA list",
+     "note": "POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin): for a person to report to POTA (never moved)"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [
+    "POTA's pin lat 0.0, lon -0.0 is 0, 0 (no real pin) (read from POTA list)"
+   ],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4320",
+   "name": "Banks Island Migratory No.1 Bird Sanctuary",
+   "key_name": "Banks Island Migratory No.1 Bird Sanctuary",
+   "type": "Bird Sanctuary",
+   "grade": "official",
+   "pin": [
+    72.666,
+    -123.5
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 4787320.9,
+   "records": [
+    {
+     "id": "cpcad#22074",
+     "name": "Banks Island Migratory Bird Sanctuary No. 1",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 4787323.9,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22074&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22074"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 4787320.9,
+     "official_acres": 4787323.9,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Banks Island Migratory No.1 Bird Sanctuary",
+     "record_name": "Banks Island Migratory Bird Sanctuary No. 1"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": "refuge",
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 27
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-4321",
+   "name": "Banks Island Migratory No.2 Bird Sanctuary",
+   "key_name": "Banks Island Migratory No.2 Bird Sanctuary",
+   "type": "Bird Sanctuary",
+   "grade": "official",
+   "pin": [
+    74.0,
+    -119.8
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 35340.1,
+   "records": [
+    {
+     "id": "cpcad#22076",
+     "name": "Banks Island Migratory Bird Sanctuary No. 2",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 27117.6,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22076&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22077",
+     "name": "Banks Island Migratory Bird Sanctuary No. 2",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 8222.4,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22077&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22076",
+    "cpcad#22077"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "OUTSIDE",
+     "metres": 1333.3
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 35340.1,
+     "official_acres": 35340.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Banks Island Migratory No.2 Bird Sanctuary",
+     "record_name": "Banks Island Migratory Bird Sanctuary No. 2"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": "refuge",
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "OUTSIDE: POTA's pin is 1.3 km outside the outline."
+  },
+  {
+   "ref": "CA-4322",
+   "name": "Cameron River Crossing Territorial Park",
+   "key_name": "Cameron River Crossing Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    62.4924,
+    -113.549
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4323",
+   "name": "Cape Parry Migratory Bird Sanctuary",
+   "key_name": "Cape Parry Migratory Bird Sanctuary",
+   "type": "Bird Sanctuary",
+   "grade": "official",
+   "pin": [
+    70.1907,
+    -124.668
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 564.9,
+   "records": [
+    {
+     "id": "cpcad#22116",
+     "name": "Cape Parry Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 327.8,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22116&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22115",
+     "name": "Cape Parry Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 234.1,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22115&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22116",
+    "cpcad#22115"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 564.9,
+     "official_acres": 561.9,
+     "times": 1.01,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Cape Parry Migratory Bird Sanctuary",
+     "record_name": "Cape Parry Migratory Bird Sanctuary"
+    },
+    "T4": {
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 3
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-4324",
+   "name": "Dory Point Territorial Park",
+   "key_name": "Dory Point Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    61.2452,
+    -117.483
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4326",
+   "name": "Fort Providence Territorial Park",
+   "key_name": "Fort Providence Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    62.328,
+    -117.616
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4327",
+   "name": "Fort Smith Mission Territorial Park",
+   "key_name": "Fort Smith Mission Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    60.0044,
+    -111.879
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4328",
+   "name": "Gwich'in Territorial Park",
+   "key_name": "Gwich'in Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    68.205,
+    -133.427
+   ],
+   "outline_from": [
+    "canada-bounds/CA-4328.json"
+   ],
+   "acres_drawn": 26970.0,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Gwich'in Territorial Park",
+     "type": "Territorial Park",
+     "layer": "canada-bounds/CA-4328.json"
+    },
+    {
+     "id": "NT GNWT Envi:40506",
+     "name": "Gwich'in Territorial Park",
+     "type": "Territorial Park",
+     "acres": 24311,
+     "layer": "NT GNWT Envi"
+    }
+   ],
+   "record_ids": [
+    "NT GNWT Envi:40506"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 26970.0,
+     "official_acres": 24311.0,
+     "times": 1.11,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Gwich'in Territorial Park",
+     "record_name": "Gwich'in Territorial Park"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 6
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.04,
+     "median_spacing_m": 52.9,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-4329",
+   "name": "Happy Valley Territorial Park",
+   "key_name": "Happy Valley Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    68.3598,
+    -133.737
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4330",
+   "name": "Kakisa River Territorial Park",
+   "key_name": "Kakisa River Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    60.9864,
+    -117.247
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4331",
+   "name": "Kelly Lake Protected Area",
+   "key_name": "Kelly Lake Protected Area",
+   "type": "Protected Area",
+   "grade": "official",
+   "pin": [
+    65.413,
+    -126.281
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 67371.4,
+   "records": [
+    {
+     "id": "cpcad#21788",
+     "name": "Kelly Lake Protected Area",
+     "type": "Protected Through Indigenous Land Claim Agreement",
+     "acres": 67360.9,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21788&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21788"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "OUTSIDE",
+     "metres": 1602.7
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 67371.4,
+     "official_acres": 67360.9,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Kelly Lake Protected Area",
+     "record_name": "Kelly Lake Protected Area"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "OUTSIDE: POTA's pin is 1.6 km outside the outline."
+  },
+  {
+   "ref": "CA-4332",
+   "name": "Kendall Island Migratory Bird Sanctuary",
+   "key_name": "Kendall Island Migratory Bird Sanctuary",
+   "type": "Bird Sanctuary",
+   "grade": "official",
+   "pin": [
+    69.337,
+    -135.175
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 151330.8,
+   "records": [
+    {
+     "id": "cpcad#22169",
+     "name": "Kendall Island Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 118350.1,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22169&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22170",
+     "name": "Kendall Island Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 32979.4,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22170&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22169",
+    "cpcad#22170"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 151330.8,
+     "official_acres": 151329.5,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Kendall Island Migratory Bird Sanctuary",
+     "record_name": "Kendall Island Migratory Bird Sanctuary"
+    },
+    "T4": {
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-4333",
+   "name": "Little Buffalo River Crossing Territorial Park",
+   "key_name": "Little Buffalo River Crossing Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    60.9937,
+    -113.765
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4334",
+   "name": "Little Buffalo River Falls Territorial Park",
+   "key_name": "Little Buffalo River Falls Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    60.0473,
+    -112.703
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4335",
+   "name": "Louise Falls Campground & Day Use Area Territorial Park",
+   "key_name": "Louise Falls Campground & Day Use Area Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    60.505,
+    -116.243
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4336",
+   "name": "McKinnon Territorial Park",
+   "key_name": "McKinnon Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    65.2625,
+    -126.729
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4337",
+   "name": "McNallie Creek Territorial Park",
+   "key_name": "McNallie Creek Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    60.7791,
+    -116.577
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4338",
+   "name": "North Arm Territorial Park",
+   "key_name": "North Arm Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    62.7197,
+    -116.079
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4339",
+   "name": "Pontoon Lake Territorial Park",
+   "key_name": "Pontoon Lake Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    62.5531,
+    -114.026
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4340",
+   "name": "Powder Point Territorial Park",
+   "key_name": "Powder Point Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    62.519,
+    -113.737
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4341",
+   "name": "Prosperous Lake Territorial Territorial Park",
+   "key_name": "Prosperous Lake Territorial Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    62.5378,
+    -114.147
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4343",
+   "name": "Sambaa Deh Falls Territorial Park",
+   "key_name": "Sambaa Deh Falls Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    61.1435,
+    -119.845
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4344",
+   "name": "Tarium Niryutait Marine Protected Area",
+   "key_name": "Tarium Niryutait Marine Protected Area",
+   "type": "Protected Area",
+   "grade": "official",
+   "pin": [
+    69.302,
+    -135.625
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 317698.4,
+   "records": [
+    {
+     "id": "cpcad#21895",
+     "name": "Tarium Niryutait Marine Protected Area",
+     "type": "Marine Protected Area",
+     "acres": 257438.8,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21895&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#21897",
+     "name": "Tarium Niryutait Marine Protected Area",
+     "type": "Marine Protected Area",
+     "acres": 60089.9,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21897&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21895",
+    "cpcad#21897"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "FAR",
+     "metres": 14750.1
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 317698.4,
+     "official_acres": 317528.6,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Tarium Niryutait Marine Protected Area",
+     "record_name": "Tarium Niryutait Marine Protected Area"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 2
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 5,
+   "why": "FAR: POTA's pin is 14.8 km outside the outline."
+  },
+  {
+   "ref": "CA-4345",
+   "name": "Tetlit Gwinjik Territorial Park",
+   "key_name": "Tetlit Gwinjik Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    67.35,
+    -134.859
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4346",
+   "name": "Wehexlaxodiale Protected Area",
+   "key_name": "Wehexlaxodiale Protected Area",
+   "type": "Protected Area",
+   "grade": "official",
+   "pin": [
+    64.836,
+    -115.11
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 157686.5,
+   "records": [
+    {
+     "id": "cpcad#21847",
+     "name": "Dè Wexèlahodı ha-le",
+     "type": "Indigenous owned protected area",
+     "acres": 154193.8,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21847&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21847"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 157686.5,
+     "official_acres": 154193.8,
+     "times": 1.02,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.0,
+     "pota_name": "Wehexlaxodiale Protected Area",
+     "record_name": "Dè Wexèlahodı ha-le"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "MISMATCH: The record name 'Dè Wexèlahodı ha-le' does not match POTA's name 'Wehexlaxodiale Protected Area' (score 0.00)."
+  },
+  {
+   "ref": "CA-4347",
+   "name": "Whooping Crane Summer Range Ramsar Site",
+   "key_name": "Whooping Crane Summer Range Ramsar Site",
+   "type": "Ramsar Site",
+   "grade": "pin",
+   "pin": [
+    60.017,
+    -113.543
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4348",
+   "name": "Yellowknife River Territorial Park",
+   "key_name": "Yellowknife River Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    62.5182,
+    -114.319
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4571",
+   "name": "Coppermine Heritage River Wilderness Preserve",
+   "key_name": "Coppermine Heritage River Wilderness Preserve",
+   "type": "Wilderness Preserve",
+   "grade": "pin",
+   "pin": [
+    67.8167,
+    -115.067
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4597",
+   "name": "Thelon Sanctuary Wilderness Preserve",
+   "key_name": "Thelon Sanctuary Wilderness Preserve",
+   "type": "Wilderness Preserve",
+   "grade": "pin",
+   "pin": [
+    64.8257,
+    -124.846
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4605",
+   "name": "Ezodziti Habitat Protection Area",
+   "key_name": "Ezodziti Habitat Protection Area",
+   "type": "Habitat Protection Area",
+   "grade": "official",
+   "pin": [
+    64.5007,
+    -119.03
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 339777.4,
+   "records": [
+    {
+     "id": "cpcad#21787",
+     "name": "Ezǫdzìtì",
+     "type": "Protected Through Indigenous Land Claim Agreement - Heritage Resource",
+     "acres": 339769.9,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21787&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21787"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 339777.4,
+     "official_acres": 339769.9,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Ezodziti Habitat Protection Area",
+     "record_name": "Ezǫdzìtì"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-4851",
+   "name": "Saoyú-ʔehdacho National Historic Site",
+   "key_name": "Saoyú-ʔehdacho National Historic Site",
+   "type": "National Historic Site",
+   "grade": "official",
+   "pin": [
+    65.9971,
+    -121.523
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 1385820.9,
+   "records": [
+    {
+     "id": "cpcad#22038",
+     "name": "Saoyú-Ɂehdacho National Historic Site Of Canada",
+     "type": "National Historic Site",
+     "acres": 1373905.9,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22038&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22038"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 1385820.9,
+     "official_acres": 1373905.9,
+     "times": 1.01,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Saoyú-ʔehdacho National Historic Site",
+     "record_name": "Saoyú-Ɂehdacho National Historic Site Of Canada"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 2
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-5470",
+   "name": "Church of Our Lady of Good Hope National Historic Site",
+   "key_name": "Church of Our Lady of Good Hope National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    66.2519,
+    -128.644
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5471",
+   "name": "Deline Fishery / Franklin's Fort National Historic Site",
+   "key_name": "Deline Fishery / Franklin's Fort National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    65.1905,
+    -123.439
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5472",
+   "name": "Ehdaa National Historic Site",
+   "key_name": "Ehdaa National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    61.8586,
+    -121.343
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5473",
+   "name": "Fort McPherson National Historic Site",
+   "key_name": "Fort McPherson National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    67.4396,
+    -134.885
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5474",
+   "name": "Fort Reliance National Historic Site",
+   "key_name": "Fort Reliance National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    62.7129,
+    -109.166
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5475",
+   "name": "Fort Resolution National Historic Site",
+   "key_name": "Fort Resolution National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    61.1677,
+    -113.677
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5476",
+   "name": "Hay River Mission Sites National Historic Site",
+   "key_name": "Hay River Mission Sites National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    60.86,
+    -115.728
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5477",
+   "name": "Kittigazuit Archaeological Sites National Historic Site",
+   "key_name": "Kittigazuit Archaeological Sites National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    69.3497,
+    -133.71
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5478",
+   "name": "Nagwichoonjik (Mackenzie River) National Historic Site",
+   "key_name": "Nagwichoonjik (Mackenzie River) National Historic Site",
+   "type": "National Historic Site",
+   "grade": "official",
+   "pin": [
+    67.4412,
+    -133.742
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [
+    {
+     "id": "NT Nagwichoo:1",
+     "name": "Nagwichoonjik National Historic Site",
+     "acres": 482115,
+     "layer": "NT Nagwichoo"
+    }
+   ],
+   "record_ids": [
+    "NT Nagwichoo:1"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.5,
+     "pota_name": "Nagwichoonjik (Mackenzie River) National Historic Site",
+     "record_name": "Nagwichoonjik National Historic Site"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "CAN'T TELL",
+     "note": "the park's records could not be read (see problems)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (NT Nagwichoo)"
+   ],
+   "status": "graded",
+   "score": 3,
+   "why": "MISMATCH: The record name 'Nagwichoonjik National Historic Site' does not match POTA's name 'Nagwichoonjik (Mackenzie River) National Historic Site' (score 0.50)."
+  },
+  {
+   "ref": "CA-5479",
+   "name": "Parry's Rock Wintering Site National Historic Site",
+   "key_name": "Parry's Rock Wintering Site National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    74.7672,
+    -110.636
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5480",
+   "name": "Tsa Tue Biosphere Reserve UNESCO Biosphere Reserve",
+   "key_name": "Tsa Tue Biosphere Reserve UNESCO Biosphere Reserve",
+   "type": "UNESCO Biosphere Reserve",
+   "grade": "pin",
+   "pin": [
+    66.035,
+    -120.588
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6347",
+   "name": "Paniksak Territorial Park",
+   "key_name": "Paniksak Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    69.4416,
+    -133.026
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  }
+ ]
+}

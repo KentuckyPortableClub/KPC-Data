@@ -1,0 +1,83 @@
+{
+ "area": "CA-SP",
+ "built": "2026-11-08",
+ "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
+ "parks": [
+  {
+   "ref": "CA-0122",
+   "name": "St. Paul Island National Wildlife Area",
+   "key_name": "St. Paul Island National Wildlife Area",
+   "type": "National Wildlife Area",
+   "grade": "official",
+   "pin": [
+    47.2,
+    -60.15
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 1144.0,
+   "records": [
+    {
+     "id": "cpcad#22345",
+     "name": "St. Paul Island National Wildlife Area",
+     "type": "National Wildlife Area",
+     "acres": 1144.1,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22345&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22345"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 1144.0,
+     "official_acres": 1144.1,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "St. Paul Island National Wildlife Area",
+     "record_name": "St. Paul Island National Wildlife Area"
+    },
+    "T4": {
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  }
+ ]
+}

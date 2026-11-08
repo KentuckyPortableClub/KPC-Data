@@ -913,3 +913,552 @@ It decides nothing: it ranks. Score 0 = all pass; +3 OUTSIDE / WAY OFF / MISMATC
 | 9 | US-12553 | Skagit Headquarters State Wildlife Area | CONFLICT: The park is a wma but the record is a state park (+4 more flags). |
 | 9 | US-4531 | Okanogan-Wenatchee National Forest | OUTSIDE: POTA's pin is 875 m outside the outline (+4 more flags). |
 | 9 | US-6583 | Asotin Creek State Wildlife Area | WAY OFF: The outline is 29.6 times bigger than the official 1,234 acres (36,558 ac drawn) (+2 more flags). |
+
+## US-WI
+
+- parks: 348 (333 with an outline graded, 15 with no outline, 0 with records this tool can't read)
+- pass every test: 143; have flags: 205; source down (retry): 3
+- flags: TINY HOLES 168, SELF-INTERSECTION 92, SLIVERS 38, NEAR 30, MISMATCH 16, SCATTERED 12, SPILL 10, DUPLICATE 10, OUTSIDE 3, WEAK 2, STALE CHECK 1, OFF 1, CONFLICT 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 11 | US-4263 | Piers Gorge Unit of Menominee River State Recreation Area | MISMATCH: The record name 'Menominee River State Recreation Area' does not match POTA's name 'Piers Gorge Unit of Menominee River State Recreation Area' (score 0.33) (+6 more flags). |
+| 7 | US-13535 | La Crosse Area Comprehensive State Fish and Wildlife Area | OUTSIDE: POTA's pin is 6.7 km outside the outline (+4 more flags). |
+| 7 | US-4236 | Upper Mississippi River National Wildlife Refuge | SPILL: The outline covers 48% of US-11955 Genoa National Fish Hatchery, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4238 | Ice Age National Scenic Trail | SPILL: The outline covers 54% of US-1448 Cross Plains State Park, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4533 | Chequamegon-Nicolet National Forest | MISMATCH: The record name 'Chequamegon National Forest' does not match POTA's name 'Chequamegon-Nicolet National Forest' (score 0.50) (+4 more flags). |
+| 7 | US-7260 | Northern Highland American Legion State Forest | SPILL: The outline covers 64% of US-4318 New Wood State Wildlife Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 6 | US-0602 | Leopold Wetland Management District | MISMATCH: The record name 'WINNEBAGO COUNTY WATERFOWL PRODUCTION AREA OF WI' does not match POTA's name 'Leopold Wetland Management District' (score 0.00) (+3 more flags). |
+| 6 | US-11976 | Prairie River State Fish and Wildlife Area | SPILL: The outline covers 100% of US-12081 Spring Lake State Fish and Wildlife Area, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-4343 | LaSage Unit of Wolf River Bottoms State Wildlife Area | MISMATCH: The record name 'Wolf River Bottoms Wildlife Area' does not match POTA's name 'LaSage Unit of Wolf River Bottoms State Wildlife Area' (score 0.67) (+1 more flag). |
+| 6 | US-5577 | Brule River State Forest | SPILL: The outline covers 96% of US-8211 Bear Beach State Natural Area, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+
+## US-WV
+
+- parks: 172 (165 with an outline graded, 7 with no outline, 0 with records this tool can't read)
+- pass every test: 54; have flags: 118; source down (retry): 5
+- flags: STALE CHECK 104, TINY HOLES 16, SELF-INTERSECTION 13, NEAR 9, SLIVERS 8, SCATTERED 3, OUTSIDE 3, SPILL 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 7 | US-0632 | Monongahela National Forest | SPILL: The outline covers 100% of US-12436 Big Draft Wilderness Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 4 | US-4526 | George Washington & Jefferson National Forest | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-78.7192919286108 38.9208954173449]; 203 piece(s) under 10 m wide; 14 hole(s) under 100 m2; 304 pieces spread over 281 km (+3 more flags). |
+| 4 | US-7027 | Slatyfork Wildlife Management Area | OUTSIDE: POTA's pin is 5.9 km outside the outline (+1 more flag). |
+| 4 | US-7043 | Tate Lohr Wildlife Management Area | OUTSIDE: POTA's pin is 2.4 km outside the outline (+1 more flag). |
+| 3 | US-0696 | New River Gorge National Park | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-80.9237665219749 37.7561387567045]; 4 piece(s) under 10 m wide; 115 pieces spread over 55 km (+2 more flags). |
+| 3 | US-12442 | Roaring Plains West Wilderness Area | OUTSIDE: POTA's pin is 725 m outside the outline. |
+| 3 | US-7002 | Lewis Wetzel Wildlife Management Area | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-80.702877241717 39.4826422075845]; 1 hole(s) under 100 m2 (+2 more flags). |
+| 3 | US-7024 | Elk River Wildlife Management Area | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-80.6598976299176 38.620640714525]; 2 hole(s) under 100 m2 (+2 more flags). |
+| 3 | US-7044 | Tug Fork Wildlife Management Area | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-81.6552318831789 37.4372274713279]; 1 hole(s) under 100 m2 (+2 more flags). |
+| 3 | US-7062 | Ritchie Mines Wildlife Management Area | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-81.1404639685496 39.1130272443943]; 2 hole(s) under 100 m2 (+2 more flags). |
+
+## US-WY
+
+- parks: 294 (214 with an outline graded, 80 with no outline, 0 with records this tool can't read)
+- pass every test: 163; have flags: 131; source down (retry): 10
+- flags: NEAR 41, MISMATCH 39, SPILL 34, SELF-INTERSECTION 23, OUTSIDE 17, TINY HOLES 14, SLIVERS 8, DUPLICATE 8, OFF 5, WEAK 4, SCATTERED 4, CONFLICT 3, FAR 3, STALE CHECK 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 10 | US-10897 | Greater Sand Dunes BLM Special Recreation Management Area | OUTSIDE: POTA's pin is 1.9 km outside the outline (+3 more flags). |
+| 9 | US-10930 | Devil's Playground BLM WSA Wilderness Area | MISMATCH: The record name 'Devil's Playground-Twin Buttes' does not match POTA's name 'Devil's Playground BLM WSA Wilderness Area' (score 0.67) (+4 more flags). |
+| 9 | US-10944 | Twin Buttes BLM WSA Wilderness Area | MISMATCH: The record name 'Devil's Playground-Twin Buttes' does not match POTA's name 'Twin Buttes BLM WSA Wilderness Area' (score 0.67) (+4 more flags). |
+| 9 | US-6221 | Fontenelle Creek BLM Recreation Management Area | OUTSIDE: POTA's pin is 1.1 km outside the outline (+2 more flags). |
+| 8 | US-4534 | Bighorn National Forest | OUTSIDE: POTA's pin is 4.2 km outside the outline (+3 more flags). |
+| 8 | US-6188 | Point of Rocks Cemetery State Historic Site | MISMATCH: The record name 'Point of Rocks Stage Station' does not match POTA's name 'Point of Rocks Cemetery State Historic Site' (score 0.67) (+3 more flags). |
+| 8 | US-6204 | Little Colorado BLM Herd Management Area | FAR: POTA's pin is 11.8 km outside the outline (+1 more flag). |
+| 7 | US-0613 | National Elk National Wildlife Refuge | OUTSIDE: POTA's pin is 6.1 km outside the outline (+2 more flags). |
+| 7 | US-4403 | Medicine Bow - Routt National Forest | SPILL: The outline covers 100% of US-6133 Huston Park Wilderness Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4536 | Shoshone National Forest | SPILL: The outline covers 100% of US-6197 Popo Agie Wilderness Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+
+## CA-AB
+
+- parks: 459 (398 with an outline graded, 61 with no outline, 0 with records this tool can't read)
+- pass every test: 325; have flags: 134
+- flags: NEAR 55, CONFLICT 24, DUPLICATE 21, INVALID 19, SPILL 14, TINY HOLES 12, TOO COARSE 6, MISMATCH 5, OUTSIDE 5, SLIVERS 4, FAR 3, SCATTERED 2, WEAK 2, OFF 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 11 | CA-0109 | Waterton Biosphere Reserve | FAR: POTA's pin is 29.0 km outside the outline (+2 more flags). |
+| 8 | CA-6112 | Kananaskis Country Provincial Park | FAR: POTA's pin is 12.4 km outside the outline (+1 more flag). |
+| 6 | CA-1164 | Beaver Lake Provincial Recreation Area | OUTSIDE: POTA's pin is 5.1 km outside the outline (+1 more flag). |
+| 6 | CA-1194 | Sylvan Lake Provincial Park | FAR: POTA's pin is 13.4 km outside the outline (+1 more flag). |
+| 5 | CA-6125 | Porcupine Hills Public Land Use Zone Other Conservation Area | MISMATCH: The record name 'Porcupine Hills' does not match POTA's name 'Porcupine Hills Public Land Use Zone Other Conservation Area' (score 0.67) (+2 more flags). |
+| 5 | CA-6588 | Barrier Lake Provincial Recreation Area | CONFLICT: The record is the whole lake but the park is a recreation area on it (+2 more flags). |
+| 4 | CA-0005 | Banff National Park | SPILL: The outline covers 100% of CA-4784 Sulphur Mountain Cosmic Ray Station National Historic Site, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+| 4 | CA-0011 | CFB Suffield National Wildlife Area | MISMATCH: The record name 'Canadian Forces Base Suffield National Wildlife Area' does not match POTA's name 'CFB Suffield National Wildlife Area' (score 0.50) (+1 more flag). |
+| 4 | CA-0040 | Jasper National Park | SPILL: The outline covers 100% of CA-6116 Athabasca River Canadian Heritage River, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+| 4 | CA-0115 | Wood Buffalo National Park | SPILL: The outline covers 100% of CA-0663 Peace-Athabasca Delta Natural Area, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+
+## CA-BC
+
+- parks: 1254 (1210 with an outline graded, 31 with no outline, 13 with records this tool can't read)
+- pass every test: 697; have flags: 557
+- flags: TINY HOLES 171, NEAR 163, TOO COARSE 112, DUPLICATE 101, OFF 76, SLIVERS 54, SELF-INTERSECTION 52, OUTSIDE 32, MISMATCH 27, SPILL 18, WAY OFF 15, FAR 11, WEAK 6, INVALID 3, SCATTERED 3, CONFLICT 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 12 | CA-3888 | Negiy / Nekite Estuary Conservancy Protected Area | FAR: POTA's pin is 26.5 km outside the outline (+3 more flags). |
+| 9 | CA-3493 | Evans Lake Ecological Reserve | OUTSIDE: POTA's pin is 3.9 km outside the outline (+2 more flags). |
+| 8 | CA-3300 | Cariboo Park | WAY OFF: The outline is 48.0 times bigger than the official 5 acres (240 ac drawn) (+3 more flags). |
+| 8 | CA-3427 | Douglas Park | FAR: POTA's pin is 33.4 km outside the outline (+1 more flag). |
+| 8 | CA-3537 | Garibaldi Park Recreation Park | FAR: POTA's pin is 47.4 km outside the outline (+1 more flag). |
+| 8 | CA-4031 | Roche Point Park | FAR: POTA's pin is 31.7 km outside the outline (+1 more flag). |
+| 8 | CA-5345 | Swalwell Recreation Park | FAR: POTA's pin is 11.9 km outside the outline (+1 more flag). |
+| 7 | CA-0032 | Gwaii Haanas and Haida National Park | SPILL: The outline covers 81% of CA-5483 SGang Gwaay National Heritage Site, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | CA-3192 | Babine Lake (Pendleton Bay Site) Marine Park | MISMATCH: The record name 'BABINE LAKE MARINE PARK' does not match POTA's name 'Babine Lake (Pendleton Bay Site) Marine Park' (score 0.50) (+2 more flags). |
+| 7 | CA-3193 | Babine Lake (Pinkut Creek Site) Marine Park | MISMATCH: The record name 'BABINE LAKE MARINE PARK' does not match POTA's name 'Babine Lake (Pinkut Creek Site) Marine Park' (score 0.50) (+2 more flags). |
+
+## CA-MB
+
+- parks: 308 (224 with an outline graded, 84 with no outline, 0 with records this tool can't read)
+- pass every test: 211; have flags: 97
+- flags: OFF 48, NEAR 25, DUPLICATE 12, OUTSIDE 12, SPILL 9, MISMATCH 6, FAR 3, CONFLICT 3, TOO COARSE 3, WAY OFF 3, SLIVERS 2, SCATTERED 2
+
+| score | ref | park | why |
+|---|---|---|---|
+| 12 | CA-0083 | Riding Mountain Biosphere Reserve | FAR: POTA's pin is 11.9 km outside the outline (+3 more flags). |
+| 11 | CA-2410 | Ethelbert (Duck Mountain) Wildlife Management Area | FAR: POTA's pin is 30.0 km outside the outline (+2 more flags). |
+| 9 | CA-2443 | Birch River (Community Pasture) Conservation Area | OUTSIDE: POTA's pin is 9.7 km outside the outline (+2 more flags). |
+| 8 | CA-2491 | Asatiwisipe Aki (Poplar River) Wildlife Management Area | OUTSIDE: POTA's pin is 1.8 km outside the outline (+3 more flags). |
+| 7 | CA-5464 | Netley-Libau Marsh Bird Sanctuary | OUTSIDE: POTA's pin is 3.6 km outside the outline (+2 more flags). |
+| 5 | CA-2375 | Asatiwisipe Aki (Poplar/Nanowin Rivers) Wildlife Management Area | MISMATCH: The record name 'Asatiwisipe Aki Traditional Use Planning Area' does not match POTA's name 'Asatiwisipe Aki (Poplar/Nanowin Rivers) Wildlife Management Area' (score 0.50) (+2 more flags). |
+| 5 | CA-2503 | Sandilands Provincial Forest Wildlife Management Area | SPILL: The outline covers 100% of CA-2531 Wampum Ecological Reserve, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | CA-2506 | Saskeram Wildlife Management Area | FAR: POTA's pin is 25.8 km outside the outline. |
+| 4 | CA-2417 | Grant's Lake Wildlife Management Area | OUTSIDE: POTA's pin is 789 m outside the outline (+1 more flag). |
+| 4 | CA-2427 | Kaskatamagan Sipi Wildlife Management Area | SPILL: The outline covers 100% of CA-2390 Cape Tatnam Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+
+## CA-NB
+
+- parks: 548 (312 with an outline graded, 221 with no outline, 15 with records this tool can't read)
+- pass every test: 327; have flags: 221
+- flags: TINY HOLES 95, INVALID 69, NEAR 61, OUTSIDE 52, SPILL 34, SLIVERS 32, MISMATCH 16, FAR 13, DUPLICATE 12, OFF 11, CONFLICT 1, SELF-INTERSECTION 1, WEAK 1, WAY OFF 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 11 | CA-0787 | Middle Island Historic Site | FAR: POTA's pin is 33.0 km outside the outline (+2 more flags). |
+| 11 | CA-6161 | Upper Restigouche (Listuguj) River Canadian Heritage River | FAR: POTA's pin is 16.6 km outside the outline (+2 more flags). |
+| 9 | CA-6544 | New Brunswick #5 Wildlife Management Area | FAR: POTA's pin is 26.4 km outside the outline (+2 more flags). |
+| 8 | CA-0795 | Spednic Lake Recreation Park | CONFLICT: The record is the whole lake but the park is a recreation area on it (+3 more flags). |
+| 8 | CA-4382 | Carr Falls Brook Protected Area | FAR: POTA's pin is 12.2 km outside the outline (+3 more flags). |
+| 8 | CA-6135 | St. Croix River Canadian Heritage River | OUTSIDE: POTA's pin is 619 m outside the outline (+3 more flags). |
+| 8 | CA-6501 | Cormier-Village Ecological Park | FAR: POTA's pin is 37.5 km outside the outline (+1 more flag). |
+| 7 | CA-0024 | Fundy Biosphere Reserve | MISMATCH: The record name 'Fundy National Park Of Canada' does not match POTA's name 'Fundy Biosphere Reserve' (score 0.50) (+2 more flags). |
+| 7 | CA-4443 | McCluskey Brook Protected Area | FAR: POTA's pin is 36.7 km outside the outline (+2 more flags). |
+| 7 | CA-4525 | Tabusintac River Protected Area | OUTSIDE: POTA's pin is 961 m outside the outline (+4 more flags). |
+
+## CA-NL
+
+- parks: 134 (70 with an outline graded, 57 with no outline, 7 with records this tool can't read)
+- pass every test: 110; have flags: 24
+- flags: NEAR 8, MISMATCH 5, OUTSIDE 4, SLIVERS 4, DUPLICATE 4, SPILL 3, TINY HOLES 3, SCATTERED 2, OFF 2, FAR 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 8 | CA-5384 | Colony of Avalon National Historic Site | FAR: POTA's pin is 13.3 km outside the outline (+1 more flag). |
+| 6 | CA-4549 | Grand Codroy Estuary Ramsar Site | OUTSIDE: POTA's pin is 9.1 km outside the outline (+1 more flag). |
+| 6 | CA-6115 | Bay du Nord River Canadian Heritage River | MISMATCH: The record name 'Bay du Nord Wilderness Reserve' does not match POTA's name 'Bay du Nord River Canadian Heritage River' (score 0.50) (+3 more flags). |
+| 6 | CA-6166 | Cape St. Mary's Lighthouse National Heritage Site | MISMATCH: The record name 'Cape St. Mary's Ecological Reserve' does not match POTA's name 'Cape St. Mary's Lighthouse National Heritage Site' (score 0.60) (+1 more flag). |
+| 4 | CA-0101 | Torngat Mountains National Park | SPILL: The outline covers 100% of CA-4820 Kitjigattalik - Ramah Chert Quarries National Historic Site, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+| 4 | CA-4556 | Little Grand Lake  Reserve Wildlife Reserve | OUTSIDE: POTA's pin is 2.1 km outside the outline (+1 more flag). |
+| 3 | CA-0810 | Duley Lake Provincial Park Reserve | OUTSIDE: POTA's pin is 851 m outside the outline. |
+| 3 | CA-1263 | Cape St. Mary's Ecological Reserve | SPILL: The outline covers 100% of CA-6166 Cape St. Mary's Lighthouse National Heritage Site, with no 2-fer row (maybe the wrong record). |
+| 3 | CA-4543 | Bay du Nord Wilderness Reserve Protected Area | SLIVERS: The shape has problems: 4 piece(s) under 10 m wide; 1 hole(s) under 100 m2 (+2 more flags). |
+| 3 | CA-4547 | Funk Island Ecological Reserve | OUTSIDE: POTA's pin is 7.6 km outside the outline. |
+
+## CA-NS
+
+- parks: 489 (339 with an outline graded, 119 with no outline, 31 with records this tool can't read)
+- pass every test: 235; have flags: 254
+- flags: OFF 182, NEAR 49, TINY HOLES 35, SLIVERS 32, INVALID 26, MISMATCH 22, OUTSIDE 20, SPILL 18, DUPLICATE 15, WAY OFF 12, FAR 11, WEAK 3, TOO COARSE 3, SCATTERED 1, SELF-INTERSECTION 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 13 | CA-1902 | Tusket River Lookoff Provincial Park | FAR: POTA's pin is 13.0 km outside the outline (+4 more flags). |
+| 12 | CA-1901 | Tusket River Ecological Area Wilderness Area | MISMATCH: The record name 'Tusket River Wilderness Area' does not match POTA's name 'Tusket River Ecological Area Wilderness Area' (score 0.50) (+7 more flags). |
+| 12 | CA-6562 | Mersey River Provincial Park | FAR: POTA's pin is 10.8 km outside the outline (+3 more flags). |
+| 11 | CA-0465 | Lawrencetown Beach Provincial Park | FAR: POTA's pin is 16.4 km outside the outline (+2 more flags). |
+| 11 | CA-0881 | Annapolis Basin Look Off Provincial Park | FAR: POTA's pin is 200.2 km outside the outline (+4 more flags). |
+| 11 | CA-1799 | McCormacks Beach Provincial Park | FAR: POTA's pin is 28.9 km outside the outline (+2 more flags). |
+| 11 | CA-6137 | Margaree River Canadian Heritage River | FAR: POTA's pin is 13.2 km outside the outline (+2 more flags). |
+| 9 | CA-1904 | Blind Bay Provincial Park | OUTSIDE: POTA's pin is 8.6 km outside the outline (+2 more flags). |
+| 8 | CA-0892 | Burnt Island Provincial Park | FAR: POTA's pin is 41.8 km outside the outline (+1 more flag). |
+| 8 | CA-1851 | Shut-in Island Nature Reserve | FAR: POTA's pin is 18.6 km outside the outline (+1 more flag). |
+
+## CA-NT
+
+- parks: 68 (17 with an outline graded, 50 with no outline, 1 with records this tool can't read)
+- pass every test: 59; have flags: 9
+- flags: SPILL 2, FAR 2, OUTSIDE 2, MISMATCH 2, TINY HOLES 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 5 | CA-0121 | Nááts'ihch'oh National Park Reserve | FAR: POTA's pin is 10.5 km outside the outline. |
+| 5 | CA-4344 | Tarium Niryutait Marine Protected Area | FAR: POTA's pin is 14.8 km outside the outline. |
+| 3 | CA-0098 | Thaidene Nene National Park Reserve | SPILL: The outline covers 100% of CA-5474 Fort Reliance National Historic Site, with no 2-fer row (maybe the wrong record). |
+| 3 | CA-0757 | Hidden Lake Territorial Park | SPILL: The outline covers 100% of CA-0752 Cameron Falls Trail Territorial Park, with no 2-fer row (maybe the wrong record). |
+| 3 | CA-4321 | Banks Island Migratory No.2 Bird Sanctuary | OUTSIDE: POTA's pin is 1.3 km outside the outline. |
+| 3 | CA-4331 | Kelly Lake Protected Area | OUTSIDE: POTA's pin is 1.6 km outside the outline. |
+| 3 | CA-4346 | Wehexlaxodiale Protected Area | MISMATCH: The record name 'Dè Wexèlahodı ha-le' does not match POTA's name 'Wehexlaxodiale Protected Area' (score 0.00). |
+| 3 | CA-5478 | Nagwichoonjik (Mackenzie River) National Historic Site | MISMATCH: The record name 'Nagwichoonjik National Historic Site' does not match POTA's name 'Nagwichoonjik (Mackenzie River) National Historic Site' (score 0.50). |
+| 1 | CA-4318 | Anderson River Delta Migratory Bird Sanctuary | TINY HOLES: The shape has problems: 1 hole(s) under 100 m2. |
+
+## CA-NU
+
+- parks: 48 (34 with an outline graded, 14 with no outline, 0 with records this tool can't read)
+- pass every test: 29; have flags: 19
+- flags: MISMATCH 10, TINY HOLES 6, WEAK 2, OUTSIDE 1, SPILL 1, NEAR 1, WAY OFF 1, OFF 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 6 | CA-0833 | Katannilik Territorial Park | OUTSIDE: POTA's pin is 1.7 km outside the outline (+1 more flag). |
+| 4 | CA-0835 | Kugluk (Bloody Falls) Territorial Park | MISMATCH: The record name 'Kugluk Territorial Park' does not match POTA's name 'Kugluk (Bloody Falls) Territorial Park' (score 0.50) (+1 more flag). |
+| 4 | CA-4572 | Dewey Soper Migratory Bird Sanctuary | MISMATCH: The record name 'Isulijarniq Migratory Bird Sanctuary' does not match POTA's name 'Dewey Soper Migratory Bird Sanctuary' (score 0.50) (+1 more flag). |
+| 4 | CA-4587 | Queen Maud Gulf (Ahiak) Migratory Bird Sanctuary | MISMATCH: The record name 'Ahiak Migratory Bird Sanctuary' does not match POTA's name 'Queen Maud Gulf (Ahiak) Migratory Bird Sanctuary' (score 0.50) (+1 more flag). |
+| 3 | CA-0070 | Polar Bear Pass National Wildlife Area | MISMATCH: The record name 'Nanuit Itillinga National Wildlife Area' does not match POTA's name 'Polar Bear Pass National Wildlife Area' (score 0.00). |
+| 3 | CA-0836 | Mallikjuaq Island Territorial Park | MISMATCH: The record name 'Malijuaq Territorial Park' does not match POTA's name 'Mallikjuaq Island Territorial Park' (score 0.67). |
+| 3 | CA-4573 | East Bay Migratory Bird Sanctuary | MISMATCH: The record name 'Qaqsauqtuuq Migratory Bird Sanctuary' does not match POTA's name 'East Bay Migratory Bird Sanctuary' (score 0.50). |
+| 3 | CA-4577 | Harry Gibbons Migratory Bird Sanctuary | MISMATCH: The record name 'Ikattuaq Migratory Bird Sanctuary' does not match POTA's name 'Harry Gibbons Migratory Bird Sanctuary' (score 0.50). |
+| 3 | CA-4586 | Prince Leopold Island Migratory Bird Sanctuary | MISMATCH: The record name 'Akpaqarvik Migratory Bird Sanctuary' does not match POTA's name 'Prince Leopold Island Migratory Bird Sanctuary' (score 0.40). |
+| 3 | CA-4589 | Seymour Island Migratory Bird Sanctuary | MISMATCH: The record name 'Naujavaat Migratory Bird Sanctuary' does not match POTA's name 'Seymour Island Migratory Bird Sanctuary' (score 0.50). |
+
+## CA-ON
+
+- parks: 1180 (951 with an outline graded, 195 with no outline, 34 with records this tool can't read)
+- pass every test: 814; have flags: 366
+- flags: NEAR 167, OFF 75, OUTSIDE 48, DUPLICATE 46, SLIVERS 44, SPILL 38, TOO COARSE 38, MISMATCH 34, TINY HOLES 28, FAR 14, SCATTERED 8, SELF-INTERSECTION 8, INVALID 5, WAY OFF 3, WEAK 2
+
+| score | ref | park | why |
+|---|---|---|---|
+| 12 | CA-0027 | Georgian Bay Littoral Biosphere Reserve | FAR: POTA's pin is 10.7 km outside the outline (+3 more flags). |
+| 11 | CA-1467 | Kishkebus Lake Wilderness Area | FAR: POTA's pin is 23.0 km outside the outline (+2 more flags). |
+| 11 | CA-5616 | Hawkins Tract Conservation Area | FAR: POTA's pin is 25.5 km outside the outline (+2 more flags). |
+| 10 | CA-5633 | Bowmanville Valley Conservation Area | OUTSIDE: POTA's pin is 3.5 km outside the outline (+3 more flags). |
+| 9 | CA-1476 | Lake Nipigon Conservation Reserve | FAR: POTA's pin is 66.3 km outside the outline (+2 more flags). |
+| 9 | CA-1587 | Tiffany Falls Conservation Area | OUTSIDE: POTA's pin is 4.7 km outside the outline (+2 more flags). |
+| 9 | CA-1620 | Sherman Falls Conservation Reserve | OUTSIDE: POTA's pin is 5.4 km outside the outline (+2 more flags). |
+| 9 | CA-5354 | Burlington Heights National Historic Site | OUTSIDE: POTA's pin is 4.6 km outside the outline (+2 more flags). |
+| 8 | CA-0050 | Lake Superior National Marine Area | OUTSIDE: POTA's pin is 566 m outside the outline (+3 more flags). |
+| 8 | CA-1475 | Lake Country  (Weeskayjahk Ohtahzhoganiing) Conservation Reserve | MISMATCH: The record name 'Weeskayjahk Ohtahzhoganeeng' does not match POTA's name 'Lake Country  (Weeskayjahk Ohtahzhoganiing) Conservation Reserve' (score 0.67) (+3 more flags). |
+
+## CA-PE
+
+- parks: 54 (27 with an outline graded, 27 with no outline, 0 with records this tool can't read)
+- pass every test: 34; have flags: 20
+- flags: OUTSIDE 8, NEAR 5, OFF 5, MISMATCH 5, TINY HOLES 2, SPILL 1, WEAK 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 6 | CA-4657 | St. Peters Harbour National Historic Site | OUTSIDE: POTA's pin is 3.2 km outside the outline (+1 more flag). |
+| 6 | CA-4673 | East Point Lighthouse Historic Site | OUTSIDE: POTA's pin is 3.4 km outside the outline (+1 more flag). |
+| 6 | CA-6172 | Seacow Head Lighthouse National Heritage Site | OUTSIDE: POTA's pin is 1.6 km outside the outline (+1 more flag). |
+| 4 | CA-0855 | Bonshaw Hills Provincial Park | OUTSIDE: POTA's pin is 805 m outside the outline (+1 more flag). |
+| 4 | CA-5753 | Cape Bear National Heritage Site | MISMATCH: The record name 'Cape Bear Conservation Area' does not match POTA's name 'Cape Bear National Heritage Site' (score 0.67) (+1 more flag). |
+| 4 | CA-6596 | Souris Beach Gateway Provincial Recreation Area | MISMATCH: The record name 'SOURIS BEACH' does not match POTA's name 'Souris Beach Gateway Provincial Recreation Area' (score 0.67) (+1 more flag). |
+| 3 | CA-0076 | Prince Edward Island National Park | SPILL: The outline covers 68% of CA-4893 Green Gables Heritage Place (L.M. Montgomery's Cavendish NHS) National Historic Site, with no 2-fer row (maybe the wrong record). |
+| 3 | CA-0874 | Red Point Provincial Park | OUTSIDE: POTA's pin is 1.5 km outside the outline. |
+| 3 | CA-0880 | Wood Islands Provincial Park | OUTSIDE: POTA's pin is 3.5 km outside the outline. |
+| 3 | CA-4663 | Pituamkek National Park Reserve | OUTSIDE: POTA's pin is 5.0 km outside the outline. |
+
+## CA-QC
+
+- parks: 834 (466 with an outline graded, 366 with no outline, 2 with records this tool can't read)
+- pass every test: 600; have flags: 234
+- flags: NEAR 77, MISMATCH 41, OUTSIDE 40, SELF-INTERSECTION 40, SPILL 36, SLIVERS 34, WEAK 28, FAR 15, TINY HOLES 14, TOO COARSE 13, OFF 9, DUPLICATE 6, SCATTERED 4, INVALID 2
+
+| score | ref | park | why |
+|---|---|---|---|
+| 12 | CA-2042 | Ile Blanche Migratory Bird Sanctuary | FAR: POTA's pin is 36.9 km outside the outline (+3 more flags). |
+| 12 | CA-2251 | Lac Beattie Nature Park | FAR: POTA's pin is 15.4 km outside the outline (+3 more flags). |
+| 11 | CA-1000 | Parc-nature du Ruisseau-De Montigny Nature Park | FAR: POTA's pin is 26.4 km outside the outline (+2 more flags). |
+| 11 | CA-2083 | Lac-Beauchamp Park (Regional) Nature Reserve | FAR: POTA's pin is 24.0 km outside the outline (+2 more flags). |
+| 11 | CA-4961 | Parc Nature La Gabelle Regional Park | FAR: POTA's pin is 36.5 km outside the outline (+2 more flags). |
+| 11 | CA-5067 | Parc Decouverte Nature Regional Park | FAR: POTA's pin is 24.5 km outside the outline (+2 more flags). |
+| 8 | CA-0970 | Parc de la Plage-Jacques-Cartier Regional Park | FAR: POTA's pin is 39.2 km outside the outline (+1 more flag). |
+| 8 | CA-2159 | Parc nature du Lac-Jerome Recreation Park | FAR: POTA's pin is 39.1 km outside the outline (+1 more flag). |
+| 8 | CA-5043 | Parc Saint-Jean-Bosco Regional Park | FAR: POTA's pin is 17.1 km outside the outline (+1 more flag). |
+| 8 | CA-5063 | Parc de la foret ancienne du Mont Wright Regional Park | FAR: POTA's pin is 28.1 km outside the outline (+1 more flag). |
+
+## CA-SI
+
+- parks: 1 (1 with an outline graded, 0 with no outline, 0 with records this tool can't read)
+- pass every test: 0; have flags: 1
+- flags: OFF 1, SELF-INTERSECTION 1, SLIVERS 1, TOO COARSE 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 4 | CA-0120 | Sable Island National Park | OFF: The outline is 1.7 times smaller than the official 12,537 acres (7,542 ac drawn) (+3 more flags). |
+
+## CA-SK
+
+- parks: 411 (323 with an outline graded, 71 with no outline, 17 with records this tool can't read)
+- pass every test: 237; have flags: 174
+- flags: NEAR 59, OUTSIDE 44, DUPLICATE 27, MISMATCH 26, SPILL 20, FAR 14, CONFLICT 13, TINY HOLES 10, SLIVERS 9, OFF 7, TOO COARSE 1, WEAK 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 14 | CA-2743 | McBride Lake Recreation Site | FAR: POTA's pin is 38.9 km outside the outline (+3 more flags). |
+| 12 | CA-2580 | Bitter Lake Recreation Site | OUTSIDE: POTA's pin is 8.3 km outside the outline (+3 more flags). |
+| 12 | CA-2680 | Hackett Lake Recreation Site | OUTSIDE: POTA's pin is 8.5 km outside the outline (+3 more flags). |
+| 12 | CA-2764 | Mud Lake Recreation Site | OUTSIDE: POTA's pin is 8.3 km outside the outline (+3 more flags). |
+| 11 | CA-2658 | Foam Lake Recreation Site | FAR: POTA's pin is 14.0 km outside the outline (+2 more flags). |
+| 10 | CA-2710 | Lady Lake Recreation Site | OUTSIDE: POTA's pin is 705 m outside the outline (+3 more flags). |
+| 9 | CA-2570 | Berube Lake Recreation Site | OUTSIDE: POTA's pin is 692 m outside the outline (+2 more flags). |
+| 9 | CA-2768 | Neely Lake Recreation Site | OUTSIDE: POTA's pin is 2.6 km outside the outline (+2 more flags). |
+| 9 | CA-6203 | Prairie - Unit Number 13 National Wildlife Area | OUTSIDE: POTA's pin is 7.4 km outside the outline (+2 more flags). |
+| 8 | CA-2679 | Gull Lake Recreation Site | FAR: POTA's pin is 10.4 km outside the outline (+1 more flag). |
+
+## CA-SP
+
+- parks: 1 (1 with an outline graded, 0 with no outline, 0 with records this tool can't read)
+- pass every test: 1; have flags: 0
+- flags: none
+
+| score | ref | park | why |
+|---|---|---|---|
+
+## CA-YT
+
+- parks: 112 (28 with an outline graded, 82 with no outline, 2 with records this tool can't read)
+- pass every test: 90; have flags: 22
+- flags: MISMATCH 13, DUPLICATE 7, SPILL 6, TINY HOLES 3, INVALID 2, WEAK 2, NEAR 2, CONFLICT 2, SLIVERS 1, FAR 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 7 | CA-0847 | Kusawa Territorial Park | MISMATCH: The record name 'Kusawa' does not match POTA's name 'Kusawa Territorial Park' (score 0.50) (+2 more flags). |
+| 7 | CA-4636 | Tombstone Territorial Park | MISMATCH: The record name 'Tombstone' does not match POTA's name 'Tombstone Territorial Park' (score 0.50) (+2 more flags). |
+| 7 | CA-6261 | Tombstone Mountain Campground Recreation Site | MISMATCH: The record name 'Tombstone' does not match POTA's name 'Tombstone Mountain Campground Recreation Site' (score 0.33) (+2 more flags). |
+| 7 | CA-6280 | Kusawa Lake Campground Recreation Site | MISMATCH: The record name 'Kusawa' does not match POTA's name 'Kusawa Lake Campground Recreation Site' (score 0.50) (+2 more flags). |
+| 6 | CA-0841 | Agay Mene Territorial Park | MISMATCH: The record name 'Agay Mene' does not match POTA's name 'Agay Mene Territorial Park' (score 0.67) (+1 more flag). |
+| 5 | CA-0848 | Pickhandle Lake Recreation Park | CONFLICT: The record is the whole lake but the park is a recreation area on it (+2 more flags). |
+| 5 | CA-4623 | Old Crow Flats Special Management Area Habitat Protection Area | FAR: POTA's pin is 24.3 km outside the outline. |
+| 4 | CA-6265 | Tagish Bridge Recreation Site | MISMATCH: The record name 'Tagish River' does not match POTA's name 'Tagish Bridge Recreation Site' (score 0.50) (+1 more flag). |
+| 3 | CA-0039 | Ivvavik National Park | INVALID: The shape has problems: Too few points in geometry component[-140.558585 69.598758]; 17 piece(s) under 10 m wide; 8 hole(s) under 100 m2 (+2 more flags). |
+| 3 | CA-0044 | Kluane National Park | SPILL: The outline covers 89% of CA-4600 Alsek River Canadian Heritage River, with no 2-fer row (maybe the wrong record). |
+
+## AE
+
+- parks: 8 (0 with an outline graded, 8 with no outline, 0 with records this tool can't read)
+- pass every test: 8; have flags: 0
+- flags: none
+
+| score | ref | park | why |
+|---|---|---|---|
+
+## AS
+
+- parks: 2 (0 with an outline graded, 2 with no outline, 0 with records this tool can't read)
+- pass every test: 2; have flags: 0
+- flags: none
+
+| score | ref | park | why |
+|---|---|---|---|
+
+## POTA pins this tool could not use (for a person to report to POTA; never moved)
+
+202 park(s).
+
+| area | ref | park | pin (lat, lon) | why | read from |
+|---|---|---|---|---|---|
+| CA-MB | CA-2395 | Churchill Wildlife Management Area | 92.595, -57.056 | POTA's pin (lat 92.595, lon -57.056) cannot be on Earth (latitude and longitude look swapped) | POTA list |
+| CA-MB | CA-2456 | Maple Lake Wildlife Management Area | 100.856, -49.514 | POTA's pin (lat 100.856, lon -49.514) cannot be on Earth (latitude and longitude look swapped) | POTA list |
+| CA-MB | CA-2538 | Westlake Wildlife Management Area | 99.364, -51.308 | POTA's pin (lat 99.364, lon -51.308) cannot be on Earth (latitude and longitude look swapped) | POTA list |
+| CA-NT | CA-4319 | Anuniaqvia Niqiqyuam (Darnley Bay) Marine Protected Area | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1930 | Baie aux Feuilles National Park Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1932 | Baie de Mille Vaches Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1934 | Baie des Loups Migratory Bird Sanctuary | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1935 | Barbara-Burrowes-Buchanan Nature Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1939 | Betchouane Migratory Bird Sanctuary | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1940 | Bird Rocks Migratory Bird Sanctuary | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1942 | Bois-Angell Nature Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1943 | Bois-Barre-de-Villieu Nature Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1946 | Bois-des-Patriotes Nature Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1948 | Boise-de-la-Pointe-Saint-Gilles Nature Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1951 | Boise-des-Muir Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1953 | Boise du Seminaire Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1959 | Boise-Roger-Lemoine Nature Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1964 | Canal de l'Aqueduc (Regional) Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1967 | Cap Saint Ignace Migratory Bird Sanctuary | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1968 | Caribous-de-Jourdan Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1974 | Champ de Mars (Regional) Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1977 | Chemin Saint Georges Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1978 | Chenaie-des-Iles-Finlay Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1986 | Corossol Island Migratory Bird Sanctuary | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1989 | Coulee a Biron Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1990 | Coulee des Erables Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1992 | Cumberland Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1994 | Deborah Stairs Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1996 | Deux Montagnes Preserve Wildlife Area | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1997 | Dorchester Square Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1998 | Dunes-de-Berry Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-1999 | Dunes-de-la-Moraine-d'Harricana Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2000 | Duniere Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2001 | Echappee Belle Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2002 | Edgar Morier Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2003 | Envol Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2004 | Erabliere-du-Trente-et-Un-Milles Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2005 | Ernest-Lepage Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2006 | Estuaire de la Petite Riviere Cascapedia Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2007 | Estuaire de la Riviere Bonaventure Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2008 | Estuaire de la Riviere York Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2010 | Fernald Ecological Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2011 | Foret de Senneville Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2014 | France MacKeen Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2018 | G.-Oscar-Villeneuve Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2019 | Gaudreau de Scottsmore Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2022 | Grand-Lac-Sale Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2023 | Grande Riviere Ecological Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2030 | Grands-Ormes Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2031 | Gros Mecatina Migratory Bird Sanctuary | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2035 | Hameau Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2036 | Hank Rotherham Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2037 | Heron Bleu et de ses Amis Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2038 | Ile a la Brume Migratory Bird Sanctuary | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2040 | Ile aux Herons Migratory Bird Sanctuary | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2047 | Ile de Grace Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2051 | Ile Jeannotte Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2055 | Ile Longue Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2056 | Ile Marianne (282) Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2058 | Ile Poirier Old-Growth Forest Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2059 | Iles-Avelle-Wight-et-Hiam Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2060 | Iles de la Dartmouth Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2061 | Iles de la Madeleine Marine Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2062 | Iles de la Paix Migratory Bird Sanctuary | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2063 | Iles Sainte Marie Migratory Bird Sanctuary | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2064 | Ilet aux Alouettes Preserve Nature Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2065 | Ilet du Moulin a Vent de Contrecoeur Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2066 | Irene-Fournier Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2067 | Irenee-Marie Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2070 | J.-Clovis-Laflamme Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2072 | James Darby Park (Regional) Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2075 | John Withall Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2076 | Judith-De Bresoles Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2077 | Jules-Carpentier Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2078 | Karst de Saint Elzear Biodiversity Reserve Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2079 | Kettles-de-Berry Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2080 | Lac a Jos Old Growth Forest Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2082 | Lac Ancelin Old Growth Forest Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2084 | Lac Boule Rare Forest Ecosystem Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2089 | Lac-Brule Natrue Reserve Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2092 | Lac des Faucons Old-Growth Forest Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2093 | Lac Despres Old-Growth Forest Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2094 | Lac-du-Brochet Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2095 | Lac-du-Portage Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2097 | Lac Hastel Old-Growth Forest Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2098 | Lac Indian Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2099 | Lac Kanistukamat Rare Forest Ecosystem Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2100 | Lac-Malakisis Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2101 | Lac Montjoie Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2103 | Lac Teton Old-Growth Forest Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2104 | Lac Vandal Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2105 | Lacs Albanel Mistassini et Waconichi  Reserve Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2110 | Lionel-Cinq-Mars Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2111 | Louis-Babel Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2112 | Louis-Ovide-Brunet Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2113 | Louis-Zephirin-Rousseau Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2114 | Madakik Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2115 | Madeleine Gingras Potvin Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2117 | Manche d'Epee Ecological Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2118 | Marais de Katevale Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2119 | Marais du Lac Megantic Natrue Reserve Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2123 | Marais Kergus Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2125 | Marais Trepanier Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2127 | Marcel-Raymond Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2128 | Marcelle-Gauvreau Ecological Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2129 | Marecage-des-Chenaux-de-Vaudreuil Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2130 | Marie-Jean-Eudes Ecological Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2131 | Matamec Ecological Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2132 | Materne Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2133 | Meandre-de-la-Riviere-Vincelotte Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2134 | Meteorite Biodiversity Reserve Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2136 | Milarepa Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2137 | Milieux-Humides-du-Lac-Lichtfield Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2138 | Mine-aux-Pipistrelles Ecological Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2141 | Mont-Foster Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2152 | Mont-Saint-Pierre Ecological Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2157 | Montagne Rouge Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2164 | Montmagny Migratory Bird Sanctuary | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2166 | Monts et Merveilles Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2167 | Namaste Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2168 | Neigette Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2170 | North River Farm Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2171 | Oxford Park (Regional) Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2175 | Parc ecologique des Sansonnets (Regional) Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2184 | Pere-Louis-Marie Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2185 | Pere Louis Trempe Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2187 | Petit-Domaine-Walden Nature Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2188 | Philipsburg Migratory Bird Sanctuary | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2195 | Pin-Rigide Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2197 | Plaine Checkley Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2198 | Pointe a la Battrie Cap de la Table Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2200 | Pointe de la Croix Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2207 | Pont-a-Chevilles Nature Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2210 | Portageur Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2212 | Presqu'ile Robillard Ecological Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2213 | Price Woods Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2214 | Quilliams Durrull Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2221 | Riviere-aux-Brochets Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2223 | Riviere Bostonnais Old Growth Forest Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2225 | Riviere-du-Moulin Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2226 | Riviere-Fouquette Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2227 | Riviere Malbaie (CNC/Stallman) Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2228 | Riviere Pikauba Rare Forest Ecosystem Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2229 | Riviere-Rouge Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2230 | Rocher Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2231 | Rochers aux Oiseaux Migratory Bird Sanctuary | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2232 | Rolland-Germain Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2234 | Ruisseau Chevalier Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2235 | Ruisseau-de-l'Indien Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2236 | Ruisseau Gulf Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2237 | Ruisseau Robert Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2238 | Ruisseau Teed Old Growth Forest Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2239 | Ruisseau Tompkin Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2240 | Saint Augustin Migratory Bird Sanctuary | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2241 | Saint Helen's Island Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2243 | Saint-Omer Migratory Bird Sanctuary | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2244 | Saint-Vallier Migratory Bird Sanctuary | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2245 | Sault a la Puce Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2246 | Senneville Migratory Bird Sanctuary | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2254 | Stone Ledge Farm Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2255 | Sure la Montagne Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2256 | Tantare Ecological Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2257 | Tapani Ecological Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2258 | Terres-Noyees-de-la-Riviere-Noire Nature Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2259 | Thomas Boyd Stanger Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2260 | Thomas-Fortin Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2261 | Thomas-Sterry-Hunt International Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2262 | Thomas Weldon Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2267 | Tourbiere de Millington Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2272 | Tourbieres-de-Lanoraie Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2273 | Trois Saumons Migratory Bird Sanctuary | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2274 | Tyre Macfa Natrue Reserve Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2276 | Vallee-du-Ruiter Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2277 | Victor-A.-Huard Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2278 | Vieux-Arbres Ecological Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2279 | Walbridge Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2280 | Watshishou Migratory Bird Sanctuary | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2281 | Wild Wood Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2282 | William Baldwin Ecological Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2283 | William Godrey le Maistre Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2284 | William-R.-J.-Oliver Nature Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2308 | ZEC de la Grande Riviere Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2334 | ZEC de l'Oie Blanche de Montmagny Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2337 | ZEC Pabok Nature Reserve | 0.0, 0.0 | POTA's pin (lat 0.0, lon 0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2340 | ZEC de la Petite Riviere Cascapedia Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2347 | ZEC de la Riviere Bonaventure Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2348 | ZEC de la Riviere Cap Chat Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2349 | ZEC de la Riviere Dartmouth Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2351 | ZEC de la Riviere des Escoumins Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2352 | ZEC de la Riviere Jacques Cartier Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2353 | ZEC de la Riviere Laval Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2354 | ZEC Riviere Madeleine Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2355 | ZEC de la Riviere Matane Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2356 | ZEC de la Riviere Mitis Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2357 | ZEC de la Riviere Moisie Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2358 | ZEC de la Riviere Nouvelle Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2359 | ZEC de la Riviere Petit Saguenay Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2360 | ZEC de la Riviere Rimouski Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2361 | ZEC de la Riviere Sainte Marguerite Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2362 | ZEC de la Riviere Saint Jean du Saguenay Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2363 | ZEC des Rivieres Godbout et Mistassini Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |
+| CA-QC | CA-2364 | ZEC de la Riviere York Nature Reserve | 0.0, -0.0 | POTA's pin (lat 0.0, lon -0.0) is 0, 0 (no real pin) | POTA list |

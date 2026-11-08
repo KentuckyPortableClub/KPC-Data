@@ -1,0 +1,118 @@
+{
+ "area": "AS",
+ "built": "2026-11-08",
+ "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
+ "parks": [
+  {
+   "ref": "AS-0001",
+   "name": "American Samoa National Park",
+   "key_name": "American Samoa National Park",
+   "type": "National Park",
+   "grade": "world key (read live)",
+   "pin": [
+    -14.259,
+    -170.681
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [
+    "CAN'T TELL: record 1177 is on 'Samoa (American): US National Park Service (Land Resources D', not a layer this tool reads live"
+   ],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "AS-0002",
+   "name": "Rose Atoll National Wildlife Refuge",
+   "key_name": "Rose Atoll National Wildlife Refuge",
+   "type": "National Wildlife Refuge",
+   "grade": "world key (read live)",
+   "pin": [
+    -14.5446,
+    -168.155
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [
+    "CAN'T TELL: record 992 is on 'Samoa (American): US National Park Service (Land Resources D', not a layer this tool reads live"
+   ],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  }
+ ]
+}

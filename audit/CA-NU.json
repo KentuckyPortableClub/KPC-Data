@@ -1,0 +1,3702 @@
+{
+ "area": "CA-NU",
+ "built": "2026-11-08",
+ "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
+ "parks": [
+  {
+   "ref": "CA-0003",
+   "name": "Auyuittuq National Park",
+   "key_name": "Auyuittuq National Park",
+   "type": "National Park",
+   "grade": "official",
+   "pin": [
+    67.4895,
+    -66.056
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 4822240.5,
+   "records": [
+    {
+     "id": "cpcad#21982",
+     "name": "Auyuittuq National Park Of Canada",
+     "type": "National Park",
+     "acres": 4507943.4,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21982&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#21983",
+     "name": "Auyuittuq National Park Of Canada",
+     "type": "National Park",
+     "acres": 209051.2,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21983&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21982",
+    "cpcad#21983"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 4822240.5,
+     "official_acres": 4716994.6,
+     "times": 1.02,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Auyuittuq National Park",
+     "record_name": "Auyuittuq National Park Of Canada"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0064",
+   "name": "Nirjutiqavvik National Wildlife Area",
+   "key_name": "Nirjutiqavvik National Wildlife Area",
+   "type": "National Wildlife Area",
+   "grade": "official",
+   "pin": [
+    75.9505,
+    -79.2085
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 440649.7,
+   "records": [
+    {
+     "id": "cpcad#22201",
+     "name": "Nirjutiqarvik National Wildlife Area",
+     "type": "National Wildlife Area",
+     "acres": 356415.4,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22201&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22202",
+     "name": "Nirjutiqarvik National Wildlife Area",
+     "type": "National Wildlife Area",
+     "acres": 84243.5,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22202&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22201",
+    "cpcad#22202"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 440649.7,
+     "official_acres": 440658.9,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 0.923,
+     "pota_name": "Nirjutiqavvik National Wildlife Area",
+     "record_name": "Nirjutiqarvik National Wildlife Area"
+    },
+    "T4": {
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0070",
+   "name": "Polar Bear Pass National Wildlife Area",
+   "key_name": "Polar Bear Pass National Wildlife Area",
+   "type": "National Wildlife Area",
+   "grade": "official",
+   "pin": [
+    75.6769,
+    -99.2155
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 651558.6,
+   "records": [
+    {
+     "id": "cpcad#22209",
+     "name": "Nanuit Itillinga National Wildlife Area",
+     "type": "National Wildlife Area",
+     "acres": 598403.9,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22209&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22210",
+     "name": "Nanuit Itillinga National Wildlife Area",
+     "type": "National Wildlife Area",
+     "acres": 53084.6,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22210&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22209",
+    "cpcad#22210"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 651558.6,
+     "official_acres": 651488.5,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.0,
+     "pota_name": "Polar Bear Pass National Wildlife Area",
+     "record_name": "Nanuit Itillinga National Wildlife Area"
+    },
+    "T4": {
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "MISMATCH: The record name 'Nanuit Itillinga National Wildlife Area' does not match POTA's name 'Polar Bear Pass National Wildlife Area' (score 0.00)."
+  },
+  {
+   "ref": "CA-0080",
+   "name": "Quttinirpaaq National Park",
+   "key_name": "Quttinirpaaq National Park",
+   "type": "National Park",
+   "grade": "official",
+   "pin": [
+    82.079,
+    -70.907
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 9351945.1,
+   "records": [
+    {
+     "id": "cpcad#22030",
+     "name": "Quttinirpaaq National Park Of Canada",
+     "type": "National Park",
+     "acres": 8799175.5,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22030&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22031",
+     "name": "Quttinirpaaq National Park Of Canada",
+     "type": "National Park",
+     "acres": 590829.0,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22031&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22030",
+    "cpcad#22031"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 9351945.1,
+     "official_acres": 9390004.4,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Quttinirpaaq National Park",
+     "record_name": "Quttinirpaaq National Park Of Canada"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "TINY HOLES",
+     "pieces": 1,
+     "flags": [
+      "TINY HOLES"
+     ],
+     "note": "338 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 338,
+      "pieces": 0
+     }
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [
+    "record 22030: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
+   ],
+   "status": "graded",
+   "score": 1,
+   "why": "TINY HOLES: The shape has problems: 338 hole(s) under 100 m2."
+  },
+  {
+   "ref": "CA-0091",
+   "name": "Sirmilik National Park",
+   "key_name": "Sirmilik National Park",
+   "type": "National Park",
+   "grade": "official",
+   "pin": [
+    72.9279,
+    -80.9377
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 5422110.8,
+   "records": [
+    {
+     "id": "cpcad#22039",
+     "name": "Sirmilik National Park Of Canada",
+     "type": "National Park",
+     "acres": 5428163.9,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22039&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22039"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 5422110.8,
+     "official_acres": 5428163.9,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Sirmilik National Park",
+     "record_name": "Sirmilik National Park Of Canada"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 22
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0104",
+   "name": "Ukkusiksalik National Park",
+   "key_name": "Ukkusiksalik National Park",
+   "type": "National Park",
+   "grade": "official",
+   "pin": [
+    66.0455,
+    -88.9886
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 5162767.5,
+   "records": [
+    {
+     "id": "cpcad#22048",
+     "name": "Ukkusiksalik National Park Of Canada",
+     "type": "National Park",
+     "acres": 4399217.1,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22048&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22049",
+     "name": "Ukkusiksalik National Park Of Canada",
+     "type": "National Park",
+     "acres": 760343.3,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22049&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22048",
+    "cpcad#22049"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 5162767.5,
+     "official_acres": 5159560.3,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Ukkusiksalik National Park",
+     "record_name": "Ukkusiksalik National Park Of Canada"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0123",
+   "name": "Akpait National Wildlife Area",
+   "key_name": "Akpait National Wildlife Area",
+   "type": "National Wildlife Area",
+   "grade": "official",
+   "pin": [
+    66.9336,
+    -61.7647
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 195576.0,
+   "records": [
+    {
+     "id": "cpcad#22331",
+     "name": "Akpait National Wildlife Area",
+     "type": "National Wildlife Area",
+     "acres": 183632.5,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22331&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22330",
+     "name": "Akpait National Wildlife Area",
+     "type": "National Wildlife Area",
+     "acres": 11940.9,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22330&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22331",
+    "cpcad#22330"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 195576.0,
+     "official_acres": 195573.3,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Akpait National Wildlife Area",
+     "record_name": "Akpait National Wildlife Area"
+    },
+    "T4": {
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0124",
+   "name": "Niginganiq National Wildlife Area",
+   "key_name": "Niginganiq National Wildlife Area",
+   "type": "National Wildlife Area",
+   "grade": "official",
+   "pin": [
+    69.6177,
+    -67.547
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 831285.6,
+   "records": [
+    {
+     "id": "cpcad#22333",
+     "name": "Ninginganiq National Wildlife Area",
+     "type": "National Wildlife Area",
+     "acres": 700370.1,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22333&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22332",
+     "name": "Ninginganiq National Wildlife Area",
+     "type": "National Wildlife Area",
+     "acres": 130884.4,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22332&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22333",
+    "cpcad#22332"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 831285.6,
+     "official_acres": 831254.5,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 0.952,
+     "pota_name": "Niginganiq National Wildlife Area",
+     "record_name": "Ninginganiq National Wildlife Area"
+    },
+    "T4": {
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0126",
+   "name": "Qaqulluit National Wildlife Area",
+   "key_name": "Qaqulluit National Wildlife Area",
+   "type": "National Wildlife Area",
+   "grade": "official",
+   "pin": [
+    67.2333,
+    -62.4667
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 98401.3,
+   "records": [
+    {
+     "id": "cpcad#22335",
+     "name": "Qaqulluit National Wildlife Area",
+     "type": "National Wildlife Area",
+     "acres": 97894.1,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22335&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22334",
+     "name": "Qaqulluit National Wildlife Area",
+     "type": "National Wildlife Area",
+     "acres": 506.8,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22334&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22335",
+    "cpcad#22334"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 98401.3,
+     "official_acres": 98400.9,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Qaqulluit National Wildlife Area",
+     "record_name": "Qaqulluit National Wildlife Area"
+    },
+    "T4": {
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0127",
+   "name": "Qausuittuq National Park",
+   "key_name": "Qausuittuq National Park",
+   "type": "National Park",
+   "grade": "official",
+   "pin": [
+    76.031,
+    -101.03
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 2722798.4,
+   "records": [
+    {
+     "id": "cpcad#22032",
+     "name": "Qausuittuq National Park Of Canada",
+     "type": "National Park",
+     "acres": 2429293.0,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22032&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22033",
+     "name": "Qausuittuq National Park Of Canada",
+     "type": "National Park",
+     "acres": 290843.0,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22033&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22032",
+    "cpcad#22033"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 2722798.4,
+     "official_acres": 2720136.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Qausuittuq National Park",
+     "record_name": "Qausuittuq National Park Of Canada"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "TINY HOLES",
+     "pieces": 33,
+     "flags": [
+      "TINY HOLES"
+     ],
+     "note": "3070 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3070,
+      "pieces": 0
+     }
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [
+    "record 22032: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
+   ],
+   "status": "graded",
+   "score": 1,
+   "why": "TINY HOLES: The shape has problems: 3070 hole(s) under 100 m2."
+  },
+  {
+   "ref": "CA-0831",
+   "name": "Inuujarvik Territorial Park",
+   "key_name": "Inuujarvik Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    64.317,
+    -96.0506
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0832",
+   "name": "Iqalugaarjuup Nunanga Territorial Park",
+   "key_name": "Iqalugaarjuup Nunanga Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    62.898,
+    -92.1723
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0832.json"
+   ],
+   "acres_drawn": 5211.6,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Iqalugaarjuup Nunanga Territorial Park",
+     "type": "Territorial Park",
+     "layer": "canada-bounds/CA-0832.json"
+    },
+    {
+     "id": "21852",
+     "name": "Iqalugaarjuup Nunanga Territorial Park",
+     "type": "Territorial Park",
+     "acres": 5176,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "NU-TP Crown-:646",
+     "name": "Iqalugaarjuup Nunanga Territorial Park",
+     "acres": 3519,
+     "layer": "NU-TP Crown-"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21852",
+    "NU-TP Crown-:646"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 5211.6,
+     "official_acres": 5176.0,
+     "times": 1.01,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Iqalugaarjuup Nunanga Territorial Park",
+     "record_name": "Iqalugaarjuup Nunanga Territorial Park"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 36.6,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0833",
+   "name": "Katannilik Territorial Park",
+   "key_name": "Katannilik Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    63.2097,
+    -69.968
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0833.json"
+   ],
+   "acres_drawn": 369545.7,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Katannilik Territorial Park",
+     "type": "Territorial Park",
+     "layer": "canada-bounds/CA-0833.json"
+    },
+    {
+     "id": "21858",
+     "name": "Katannilik Territorial Park",
+     "type": "Territorial Park",
+     "acres": 361253,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "NU-TP Crown-:642",
+     "name": "Katannilik Territorial Park",
+     "acres": 356644,
+     "layer": "NU-TP Crown-"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21858",
+    "NU-TP Crown-:642"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "OUTSIDE",
+     "metres": 1726.7
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 369545.7,
+     "official_acres": 361253.0,
+     "times": 1.02,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Katannilik Territorial Park",
+     "record_name": "Katannilik Territorial Park"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-4590",
+       "name": "Soper River Canadian Heritage River",
+       "share": 1.0
+      }
+     ],
+     "count": 1
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 40.5,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 6,
+   "why": "OUTSIDE: POTA's pin is 1.7 km outside the outline (+1 more flag)."
+  },
+  {
+   "ref": "CA-0834",
+   "name": "Kekerten Territorial Park",
+   "key_name": "Kekerten Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    65.6987,
+    -65.8146
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0834.json"
+   ],
+   "acres_drawn": 3471.6,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Kekerten (Qikiqtan) Territorial Park",
+     "type": "Territorial Park",
+     "layer": "canada-bounds/CA-0834.json"
+    },
+    {
+     "id": "21857",
+     "name": "Kekerten (Qikiqtan) Territorial Park",
+     "type": "Territorial Park",
+     "acres": 3472,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "NU-TP Crown-:644",
+     "name": "Kekerten Territorial Park",
+     "acres": 2372,
+     "layer": "NU-TP Crown-"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21857",
+    "NU-TP Crown-:644"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 3471.6,
+     "official_acres": 3472.0,
+     "times": 1.0,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Kekerten Territorial Park",
+     "record_name": "Kekerten Territorial Park"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 33.4,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0835",
+   "name": "Kugluk (Bloody Falls) Territorial Park",
+   "key_name": "Kugluk (Bloody Falls) Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    67.7487,
+    -115.364
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0835.json"
+   ],
+   "acres_drawn": 2262.2,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Kugluk Territorial Park",
+     "type": "Territorial Park",
+     "layer": "canada-bounds/CA-0835.json"
+    },
+    {
+     "id": "21859",
+     "name": "Kugluk Territorial Park",
+     "type": "Territorial Park",
+     "acres": 2060,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "NU-TP Crown-:643",
+     "name": "Kugluk Territorial Park",
+     "acres": 1674,
+     "layer": "NU-TP Crown-"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21859",
+    "NU-TP Crown-:643"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "NEAR",
+     "metres": 184.0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 2262.2,
+     "official_acres": 2060.0,
+     "times": 1.1,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.5,
+     "pota_name": "Kugluk (Bloody Falls) Territorial Park",
+     "record_name": "Kugluk Territorial Park"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 3
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.04,
+     "median_spacing_m": 49.0,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 4,
+   "why": "MISMATCH: The record name 'Kugluk Territorial Park' does not match POTA's name 'Kugluk (Bloody Falls) Territorial Park' (score 0.50) (+1 more flag)."
+  },
+  {
+   "ref": "CA-0836",
+   "name": "Mallikjuaq Island Territorial Park",
+   "key_name": "Mallikjuaq Island Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    64.2342,
+    -76.6147
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 4539.7,
+   "records": [
+    {
+     "id": "cpcad#21851",
+     "name": "Malijuaq Territorial Park",
+     "type": "Territorial Park",
+     "acres": 4539.7,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21851&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21851"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 4539.7,
+     "official_acres": 4539.7,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.667,
+     "pota_name": "Mallikjuaq Island Territorial Park",
+     "record_name": "Malijuaq Territorial Park"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "MISMATCH: The record name 'Malijuaq Territorial Park' does not match POTA's name 'Mallikjuaq Island Territorial Park' (score 0.67)."
+  },
+  {
+   "ref": "CA-0837",
+   "name": "Ovayok Territorial Park",
+   "key_name": "Ovayok Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    69.1786,
+    -104.727
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0837.json"
+   ],
+   "acres_drawn": 5385.1,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Ovayok Territorial Park",
+     "type": "Territorial Park",
+     "layer": "canada-bounds/CA-0837.json"
+    },
+    {
+     "id": "21855",
+     "name": "Ovayok Territorial Park",
+     "type": "Territorial Park",
+     "acres": 5379,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "NU-TP Crown-:641",
+     "name": "Ovayok Territorial Park",
+     "acres": 2975,
+     "layer": "NU-TP Crown-"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21855",
+    "NU-TP Crown-:641"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 5385.1,
+     "official_acres": 5379.0,
+     "times": 1.0,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Ovayok Territorial Park",
+     "record_name": "Ovayok Territorial Park"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.04,
+     "median_spacing_m": 39.3,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0838",
+   "name": "Pisuktinu Tunngavik Territorial Park",
+   "key_name": "Pisuktinu Tunngavik Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    66.1444,
+    -65.685
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0838.json"
+   ],
+   "acres_drawn": 13.4,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Pisuktinu Tunngavik Territorial Park",
+     "type": "Territorial Park",
+     "layer": "canada-bounds/CA-0838.json"
+    },
+    {
+     "id": "NU-TP Crown-:647",
+     "name": "Pisuktinu Tunngavik Territorial Park",
+     "type": "Territorial Park",
+     "acres": 10,
+     "layer": "NU-TP Crown-"
+    }
+   ],
+   "record_ids": [
+    "NU-TP Crown-:647"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 13.4,
+     "official_acres": 10.0,
+     "times": 1.34,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Pisuktinu Tunngavik Territorial Park",
+     "record_name": "Pisuktinu Tunngavik Territorial Park"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 61.1,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0839",
+   "name": "Qaummaarviit Territorial Park",
+   "key_name": "Qaummaarviit Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    63.725,
+    -68.693
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0839.json"
+   ],
+   "acres_drawn": 38.4,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Qaummaarviit Territorial Park",
+     "type": "Territorial Park",
+     "layer": "canada-bounds/CA-0839.json"
+    },
+    {
+     "id": "21856",
+     "name": "Qaummaarviit Territorial Park",
+     "type": "Territorial Park",
+     "acres": 38,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "NU-TP Crown-:650",
+     "name": "Qaummaarviit Territorial Park",
+     "acres": 17,
+     "layer": "NU-TP Crown-"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21856",
+    "NU-TP Crown-:650"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 38.4,
+     "official_acres": 38.0,
+     "times": 1.01,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Qaummaarviit Territorial Park",
+     "record_name": "Qaummaarviit Territorial Park"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 30.9,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0840",
+   "name": "Sylvia Grinnell Territorial Park",
+   "key_name": "Sylvia Grinnell Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    63.7475,
+    -68.5626
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0840.json"
+   ],
+   "acres_drawn": 10946.3,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Sylvia Grinnell Territorial Park",
+     "type": "Territorial Park",
+     "layer": "canada-bounds/CA-0840.json"
+    },
+    {
+     "id": "NU-TP Crown-:649",
+     "name": "Sylvia Grinnell Territorial Park",
+     "type": "Territorial Park",
+     "acres": 9065,
+     "layer": "NU-TP Crown-"
+    }
+   ],
+   "record_ids": [
+    "NU-TP Crown-:649"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 10946.3,
+     "official_acres": 9065.0,
+     "times": 1.21,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Sylvia Grinnell Territorial Park",
+     "record_name": "Sylvia Grinnell Territorial Park"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 28
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 36.5,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-1960",
+   "name": "Boatswain Bay Migratory Bird Sanctuary",
+   "key_name": "Boatswain Bay Migratory Bird Sanctuary",
+   "type": "Bird Sanctuary",
+   "grade": "official",
+   "pin": [
+    51.8141,
+    -78.9157
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 38768.8,
+   "records": [
+    {
+     "id": "cpcad#22097",
+     "name": "Boatswain Bay Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 21723.4,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22097&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22098",
+     "name": "Boatswain Bay Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 17039.7,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22098&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22097",
+    "cpcad#22098"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 38768.8,
+     "official_acres": 38763.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "WEAK",
+     "score": 0.75,
+     "pota_name": "Boatswain Bay Migratory Bird Sanctuary",
+     "record_name": "Boatswain Bay Bird Sanctuary"
+    },
+    "T4": {
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "WEAK: The record name 'Boatswain Bay Bird Sanctuary' does not match POTA's name 'Boatswain Bay Migratory Bird Sanctuary' (score 0.75)."
+  },
+  {
+   "ref": "CA-4566",
+   "name": "Akimiski Island Migratory Bird Sanctuary",
+   "key_name": "Akimiski Island Migratory Bird Sanctuary",
+   "type": "Bird Sanctuary",
+   "grade": "official",
+   "pin": [
+    52.784,
+    -80.919
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 873307.5,
+   "records": [
+    {
+     "id": "cpcad#22067",
+     "name": "Akimiski Island Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 509503.0,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22067&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22068",
+     "name": "Akimiski Island Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 363818.6,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22068&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22067",
+    "cpcad#22068"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 873307.5,
+     "official_acres": 873321.6,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Akimiski Island Migratory Bird Sanctuary",
+     "record_name": "Akimiski Island Migratory Bird Sanctuary"
+    },
+    "T4": {
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "TINY HOLES",
+     "pieces": 1,
+     "flags": [
+      "TINY HOLES"
+     ],
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
+  },
+  {
+   "ref": "CA-4569",
+   "name": "Bylot Island Migratory Bird Sanctuary",
+   "key_name": "Bylot Island Migratory Bird Sanctuary",
+   "type": "Bird Sanctuary",
+   "grade": "official",
+   "pin": [
+    73.266,
+    -78.4989
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 3169692.6,
+   "records": [
+    {
+     "id": "cpcad#22106",
+     "name": "Bylot Island Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 2733517.6,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22106&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22107",
+     "name": "Bylot Island Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 436179.5,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22107&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22106",
+    "cpcad#22107"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 3169692.6,
+     "official_acres": 3169697.1,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Bylot Island Migratory Bird Sanctuary",
+     "record_name": "Bylot Island Migratory Bird Sanctuary"
+    },
+    "T4": {
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "TINY HOLES",
+     "pieces": 1,
+     "flags": [
+      "TINY HOLES"
+     ],
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
+  },
+  {
+   "ref": "CA-4572",
+   "name": "Dewey Soper Migratory Bird Sanctuary",
+   "key_name": "Dewey Soper Migratory Bird Sanctuary",
+   "type": "Bird Sanctuary",
+   "grade": "official",
+   "pin": [
+    66.026,
+    -73.545
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 2017840.3,
+   "records": [
+    {
+     "id": "cpcad#22127",
+     "name": "Isulijarniq Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 1624440.1,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22127&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22128",
+     "name": "Isulijarniq Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 393420.1,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22128&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22127",
+    "cpcad#22128"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 2017840.3,
+     "official_acres": 2017860.2,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.5,
+     "pota_name": "Dewey Soper Migratory Bird Sanctuary",
+     "record_name": "Isulijarniq Migratory Bird Sanctuary"
+    },
+    "T4": {
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "TINY HOLES",
+     "pieces": 1,
+     "flags": [
+      "TINY HOLES"
+     ],
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 4,
+   "why": "MISMATCH: The record name 'Isulijarniq Migratory Bird Sanctuary' does not match POTA's name 'Dewey Soper Migratory Bird Sanctuary' (score 0.50) (+1 more flag)."
+  },
+  {
+   "ref": "CA-4573",
+   "name": "East Bay Migratory Bird Sanctuary",
+   "key_name": "East Bay Migratory Bird Sanctuary",
+   "type": "Bird Sanctuary",
+   "grade": "official",
+   "pin": [
+    64.028,
+    -82.111
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 278783.7,
+   "records": [
+    {
+     "id": "cpcad#22130",
+     "name": "Qaqsauqtuuq Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 207935.2,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22130&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22131",
+     "name": "Qaqsauqtuuq Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 70828.0,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22131&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22130",
+    "cpcad#22131"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 278783.7,
+     "official_acres": 278763.2,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.5,
+     "pota_name": "East Bay Migratory Bird Sanctuary",
+     "record_name": "Qaqsauqtuuq Migratory Bird Sanctuary"
+    },
+    "T4": {
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "MISMATCH: The record name 'Qaqsauqtuuq Migratory Bird Sanctuary' does not match POTA's name 'East Bay Migratory Bird Sanctuary' (score 0.50)."
+  },
+  {
+   "ref": "CA-4575",
+   "name": "Fossil Creek Trail Wilderness Preserve",
+   "key_name": "Fossil Creek Trail Wilderness Preserve",
+   "type": "Wilderness Preserve",
+   "grade": "pin",
+   "pin": [
+    64.174,
+    -83.113
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4577",
+   "name": "Harry Gibbons Migratory Bird Sanctuary",
+   "key_name": "Harry Gibbons Migratory Bird Sanctuary",
+   "type": "Bird Sanctuary",
+   "grade": "official",
+   "pin": [
+    63.802,
+    -85.794
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 355376.3,
+   "records": [
+    {
+     "id": "cpcad#22147",
+     "name": "Ikattuaq Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 308196.4,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22147&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22148",
+     "name": "Ikattuaq Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 47168.7,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22148&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22147",
+    "cpcad#22148"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 355376.3,
+     "official_acres": 355365.1,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.5,
+     "pota_name": "Harry Gibbons Migratory Bird Sanctuary",
+     "record_name": "Ikattuaq Migratory Bird Sanctuary"
+    },
+    "T4": {
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "MISMATCH: The record name 'Ikattuaq Migratory Bird Sanctuary' does not match POTA's name 'Harry Gibbons Migratory Bird Sanctuary' (score 0.50)."
+  },
+  {
+   "ref": "CA-4580",
+   "name": "Kazan Heritage River National Heritage Area",
+   "key_name": "Kazan Heritage River National Heritage Area",
+   "type": "National Heritage Area",
+   "grade": "pin",
+   "pin": [
+    63.86,
+    -95.623
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4581",
+   "name": "McConnell River (Kuugaarjuk) Migratory Bird Sanctuary",
+   "key_name": "McConnell River (Kuugaarjuk) Migratory Bird Sanctuary",
+   "type": "Bird Sanctuary",
+   "grade": "official",
+   "pin": [
+    60.8021,
+    -94.4231
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 90940.8,
+   "records": [
+    {
+     "id": "cpcad#22186",
+     "name": "Kuugaarjuk Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 58289.4,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22186&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22187",
+     "name": "Kuugaarjuk Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 32653.4,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22187&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22186",
+    "cpcad#22187"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 90940.8,
+     "official_acres": 90942.8,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "WEAK",
+     "score": 0.75,
+     "pota_name": "McConnell River (Kuugaarjuk) Migratory Bird Sanctuary",
+     "record_name": "Kuugaarjuk Migratory Bird Sanctuary"
+    },
+    "T4": {
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "WEAK: The record name 'Kuugaarjuk Migratory Bird Sanctuary' does not match POTA's name 'McConnell River (Kuugaarjuk) Migratory Bird Sanctuary' (score 0.75)."
+  },
+  {
+   "ref": "CA-4585",
+   "name": "Northwest Passage Trail Territorial Park",
+   "key_name": "Northwest Passage Trail Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    68.663,
+    -95.883
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4586",
+   "name": "Prince Leopold Island Migratory Bird Sanctuary",
+   "key_name": "Prince Leopold Island Migratory Bird Sanctuary",
+   "type": "Bird Sanctuary",
+   "grade": "official",
+   "pin": [
+    74.0333,
+    -90.0545
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 75113.3,
+   "records": [
+    {
+     "id": "cpcad#22261",
+     "name": "Akpaqarvik Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 59361.7,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22261&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22260",
+     "name": "Akpaqarvik Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 15755.4,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22260&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22261",
+    "cpcad#22260"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 75113.3,
+     "official_acres": 75117.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.4,
+     "pota_name": "Prince Leopold Island Migratory Bird Sanctuary",
+     "record_name": "Akpaqarvik Migratory Bird Sanctuary"
+    },
+    "T4": {
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "MISMATCH: The record name 'Akpaqarvik Migratory Bird Sanctuary' does not match POTA's name 'Prince Leopold Island Migratory Bird Sanctuary' (score 0.40)."
+  },
+  {
+   "ref": "CA-4587",
+   "name": "Queen Maud Gulf (Ahiak) Migratory Bird Sanctuary",
+   "key_name": "Queen Maud Gulf (Ahiak) Migratory Bird Sanctuary",
+   "type": "Bird Sanctuary",
+   "grade": "official",
+   "pin": [
+    67.356,
+    -101.437
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 15339805.9,
+   "records": [
+    {
+     "id": "cpcad#22262",
+     "name": "Ahiak Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 13930526.0,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22262&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22263",
+     "name": "Ahiak Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 1619366.1,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22263&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22262",
+    "cpcad#22263"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 15339805.9,
+     "official_acres": 15549892.2,
+     "times": 1.01,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.5,
+     "pota_name": "Queen Maud Gulf (Ahiak) Migratory Bird Sanctuary",
+     "record_name": "Ahiak Migratory Bird Sanctuary"
+    },
+    "T4": {
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "TINY HOLES",
+     "pieces": 2,
+     "flags": [
+      "TINY HOLES"
+     ],
+     "note": "91 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 91,
+      "pieces": 0
+     }
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 4,
+   "why": "MISMATCH: The record name 'Ahiak Migratory Bird Sanctuary' does not match POTA's name 'Queen Maud Gulf (Ahiak) Migratory Bird Sanctuary' (score 0.50) (+1 more flag)."
+  },
+  {
+   "ref": "CA-4588",
+   "name": "Rasmussen Lowlands Ramsar Site",
+   "key_name": "Rasmussen Lowlands Ramsar Site",
+   "type": "Ramsar Site",
+   "grade": "pin",
+   "pin": [
+    68.66,
+    -93.12
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4589",
+   "name": "Seymour Island Migratory Bird Sanctuary",
+   "key_name": "Seymour Island Migratory Bird Sanctuary",
+   "type": "Bird Sanctuary",
+   "grade": "official",
+   "pin": [
+    76.809,
+    -101.264
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 13100.2,
+   "records": [
+    {
+     "id": "cpcad#22293",
+     "name": "Naujavaat Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 12677.0,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22293&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22292",
+     "name": "Naujavaat Migratory Bird Sanctuary",
+     "type": "Migratory Bird Sanctuary",
+     "acres": 424.7,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22292&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22293",
+    "cpcad#22292"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 13100.2,
+     "official_acres": 13101.7,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.5,
+     "pota_name": "Seymour Island Migratory Bird Sanctuary",
+     "record_name": "Naujavaat Migratory Bird Sanctuary"
+    },
+    "T4": {
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "MISMATCH: The record name 'Naujavaat Migratory Bird Sanctuary' does not match POTA's name 'Seymour Island Migratory Bird Sanctuary' (score 0.50)."
+  },
+  {
+   "ref": "CA-4590",
+   "name": "Soper River Canadian Heritage River",
+   "key_name": "Soper River Canadian Heritage River",
+   "type": "National Heritage Area",
+   "grade": "pin",
+   "pin": [
+    62.92,
+    -69.825
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4594",
+   "name": "Tallurutiup Imanga / Lancaster Sound NMCA National Marine Area",
+   "key_name": "Tallurutiup Imanga / Lancaster Sound NMCA National Marine Area",
+   "type": "National Marine Area",
+   "grade": "official",
+   "pin": [
+    74.225,
+    -84.017
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 26816583.5,
+   "records": [
+    {
+     "id": "cpcad#22042",
+     "name": "Tallurutiup Imanga National Marine Conservation Area",
+     "type": "National Marine Conservation Area",
+     "acres": 26669095.2,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22042&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#22043",
+     "name": "Tallurutiup Imanga National Marine Conservation Area",
+     "type": "National Marine Conservation Area",
+     "acres": 18285.8,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22043&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22042",
+    "cpcad#22043"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 26816583.5,
+     "official_acres": 26687381.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.5,
+     "pota_name": "Tallurutiup Imanga / Lancaster Sound NMCA National Marine Area",
+     "record_name": "Tallurutiup Imanga National Marine Conservation Area"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "MISMATCH: The record name 'Tallurutiup Imanga National Marine Conservation Area' does not match POTA's name 'Tallurutiup Imanga / Lancaster Sound NMCA National Marine Area' (score 0.50)."
+  },
+  {
+   "ref": "CA-4595",
+   "name": "Tamaarvik Territorial Park",
+   "key_name": "Tamaarvik Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    72.674,
+    -77.971
+   ],
+   "outline_from": [
+    "canada-bounds/CA-4595.json"
+   ],
+   "acres_drawn": 11.4,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Tamaarvik Territorial Park",
+     "type": "Territorial Park",
+     "layer": "canada-bounds/CA-4595.json"
+    },
+    {
+     "id": "NU-TP Crown-:651",
+     "name": "Tamaarvik Territorial Park",
+     "type": "Territorial Park",
+     "acres": 2,
+     "layer": "NU-TP Crown-"
+    }
+   ],
+   "record_ids": [
+    "NU-TP Crown-:651"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "WAY OFF",
+     "outline_acres": 11.4,
+     "official_acres": 2.0,
+     "times": 5.68,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Tamaarvik Territorial Park",
+     "record_name": "Tamaarvik Territorial Park"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.03,
+     "median_spacing_m": 30.7,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "WAY OFF: The outline is 5.7 times bigger than the official 2 acres (11 ac drawn)."
+  },
+  {
+   "ref": "CA-4596",
+   "name": "Taqaiqsirvik Territorial Park",
+   "key_name": "Taqaiqsirvik Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    62.848,
+    -69.89
+   ],
+   "outline_from": [
+    "canada-bounds/CA-4596.json"
+   ],
+   "acres_drawn": 8.0,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Taqaiqsirvik Territorial Park",
+     "type": "Territorial Park",
+     "layer": "canada-bounds/CA-4596.json"
+    },
+    {
+     "id": "NU-TP Crown-:653",
+     "name": "Taqaiqsirvik Territorial Park",
+     "type": "Territorial Park",
+     "acres": 6,
+     "layer": "NU-TP Crown-"
+    }
+   ],
+   "record_ids": [
+    "NU-TP Crown-:653"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 8.0,
+     "official_acres": 6.0,
+     "times": 1.33,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Taqaiqsirvik Territorial Park",
+     "record_name": "Taqaiqsirvik Territorial Park"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 34.3,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-4598",
+   "name": "Tupirvik Territorial Park",
+   "key_name": "Tupirvik Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    74.745,
+    -95.039
+   ],
+   "outline_from": [
+    "canada-bounds/CA-4598.json"
+   ],
+   "acres_drawn": 11.5,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Tupirvik Territorial Park",
+     "type": "Territorial Park",
+     "layer": "canada-bounds/CA-4598.json"
+    },
+    {
+     "id": "NU-TP Crown-:652",
+     "name": "Tupirvik Territorial Park",
+     "type": "Territorial Park",
+     "acres": 4,
+     "layer": "NU-TP Crown-"
+    }
+   ],
+   "record_ids": [
+    "NU-TP Crown-:652"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "OFF",
+     "outline_acres": 11.5,
+     "official_acres": 4.0,
+     "times": 2.88,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Tupirvik Territorial Park",
+     "record_name": "Tupirvik Territorial Park"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.03,
+     "median_spacing_m": 126.6,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "OFF: The outline is 2.9 times bigger than the official 4 acres (12 ac drawn)."
+  },
+  {
+   "ref": "CA-4599",
+   "name": "Twin Islands  Sanctuary Wilderness Preserve",
+   "key_name": "Twin Islands  Sanctuary Wilderness Preserve",
+   "type": "Wilderness Preserve",
+   "grade": "official",
+   "pin": [
+    53.189,
+    -79.957
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 327365.6,
+   "records": [
+    {
+     "id": "cpcad#21862",
+     "name": "Twin Islands Wildlife Sanctuary",
+     "type": "Wildlife Sanctuary",
+     "acres": 327365.0,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21862&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21862"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 327365.6,
+     "official_acres": 327365.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Twin Islands  Sanctuary Wilderness Preserve",
+     "record_name": "Twin Islands Wildlife Sanctuary"
+    },
+    "T4": {
+     "park_kind": "wilderness",
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-4852",
+   "name": "Wrecks of HMS Erebus and HMS Terror National Historic Site",
+   "key_name": "Wrecks of HMS Erebus and HMS Terror National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    68.6391,
+    -95.8725
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5285",
+   "name": "Kodlunarn Island National Historic Site",
+   "key_name": "Kodlunarn Island National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    62.8177,
+    -65.4296
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5466",
+   "name": "Blacklead Island Whaling Station National Historic Site",
+   "key_name": "Blacklead Island Whaling Station National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    64.9818,
+    -66.2127
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5467",
+   "name": "Bloody Falls National Historic Site",
+   "key_name": "Bloody Falls National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    67.7437,
+    -115.367
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5468",
+   "name": "Inuksuk National Historic Site",
+   "key_name": "Inuksuk National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    64.5718,
+    -78.171
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5469",
+   "name": "Port Refuge National Historic Site",
+   "key_name": "Port Refuge National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    77.0054,
+    -96.1786
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5735",
+   "name": "Arvia'juaq and Qikiqtaarjuk National Historic Site",
+   "key_name": "Arvia'juaq and Qikiqtaarjuk National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    61.1398,
+    -93.9934
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5736",
+   "name": "Fall Caribou Crossing National Historic Site",
+   "key_name": "Fall Caribou Crossing National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    64.3186,
+    -96.0282
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  }
+ ]
+}

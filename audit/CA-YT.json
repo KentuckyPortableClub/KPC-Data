@@ -1,0 +1,7036 @@
+{
+ "area": "CA-YT",
+ "built": "2026-11-08",
+ "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
+ "parks": [
+  {
+   "ref": "CA-0039",
+   "name": "Ivvavik National Park",
+   "key_name": "Ivvavik National Park",
+   "type": "National Park",
+   "grade": "official",
+   "pin": [
+    69.0942,
+    -139.834
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0039.json"
+   ],
+   "acres_drawn": 2419119.7,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Ivvavik National Park Of Canada",
+     "type": "National Park",
+     "layer": "canada-bounds/CA-0039.json"
+    },
+    {
+     "id": "22005",
+     "name": "Ivvavik National Park Of Canada",
+     "type": "National Park",
+     "acres": 2389752,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "Yukon parks :17",
+     "name": "Ivvavik",
+     "acres": 2355377,
+     "layer": "Yukon parks "
+    },
+    {
+     "id": "22006",
+     "name": "Ivvavik National Park Of Canada",
+     "acres": 19521,
+     "layer": "CPCAD"
+    }
+   ],
+   "record_ids": [
+    "cpcad#22005",
+    "Yukon parks :17",
+    "cpcad#22006"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 2419119.7,
+     "official_acres": 2409273.0,
+     "times": 1.0,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Ivvavik National Park",
+     "record_name": "Ivvavik National Park Of Canada"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "INVALID",
+     "pieces": 29,
+     "flags": [
+      "INVALID",
+      "SLIVERS",
+      "TINY HOLES"
+     ],
+     "note": "Too few points in geometry component[-140.558585 69.598758]; 17 piece(s) under 10 m wide; 8 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 8,
+      "pieces": 17
+     }
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.04,
+     "median_spacing_m": 74.7,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "INVALID: The shape has problems: Too few points in geometry component[-140.558585 69.598758]; 17 piece(s) under 10 m wide; 8 hole(s) under 100 m2 (+2 more flags)."
+  },
+  {
+   "ref": "CA-0044",
+   "name": "Kluane National Park",
+   "key_name": "Kluane National Park",
+   "type": "National Park",
+   "grade": "official",
+   "pin": [
+    60.75,
+    -139.5
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0044.json"
+   ],
+   "acres_drawn": 6326103.7,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Kluane National Park Reserve Of Canada",
+     "type": "National Park",
+     "layer": "canada-bounds/CA-0044.json"
+    },
+    {
+     "id": "22011",
+     "name": "Kluane National Park Reserve Of Canada",
+     "type": "National Park",
+     "acres": 5451383,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "Yukon parks :22",
+     "name": "Kluane",
+     "acres": 5411117,
+     "layer": "Yukon parks "
+    },
+    {
+     "id": "Yukon parks :23",
+     "name": "Kluane",
+     "acres": 859646,
+     "layer": "Yukon parks "
+    }
+   ],
+   "record_ids": [
+    "cpcad#22011",
+    "Yukon parks :22",
+    "Yukon parks :23"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 6326103.7,
+     "official_acres": 6270763.0,
+     "times": 1.01,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Kluane National Park",
+     "record_name": "Kluane National Park Reserve Of Canada"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-4600",
+       "name": "Alsek River Canadian Heritage River",
+       "share": 0.89
+      },
+      {
+       "ref": "CA-6276",
+       "name": "Million Dollar Falls Campground Territorial Park",
+       "share": 0.66
+      },
+      {
+       "ref": "CA-4631",
+       "name": "Tatshenshini River Canadian Heritage River",
+       "share": 0.64
+      },
+      {
+       "ref": "CA-6282",
+       "name": "Kathleen Lake Campground and Rec. Site National Park",
+       "share": 0.6
+      },
+      {
+       "ref": "CA-6259",
+       "name": "Dezadeash Lake Campground Territorial Park",
+       "share": 0.49
+      },
+      {
+       "ref": "CA-4628",
+       "name": "Spruce Beetle Trail Recreation Site",
+       "share": 0.38
+      }
+     ],
+     "count": 6
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 158.5,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "SPILL: The outline covers 89% of CA-4600 Alsek River Canadian Heritage River, with no 2-fer row (maybe the wrong record)."
+  },
+  {
+   "ref": "CA-0065",
+   "name": "Nisutlin River Delta National Wildlife Area",
+   "key_name": "Nisutlin River Delta National Wildlife Area",
+   "type": "National Wildlife Area",
+   "grade": "official",
+   "pin": [
+    60.2289,
+    -132.565
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0065.json"
+   ],
+   "acres_drawn": 14377.7,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Nisutlin River Delta National Wildlife Area",
+     "type": "National Wildlife Area",
+     "layer": "canada-bounds/CA-0065.json"
+    },
+    {
+     "id": "22203",
+     "name": "Nisutlin River Delta National Wildlife Area",
+     "type": "National Wildlife Area",
+     "acres": 13549,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "Yukon parks :10",
+     "name": "Nisutlin River Delta",
+     "acres": 12442,
+     "layer": "Yukon parks "
+    }
+   ],
+   "record_ids": [
+    "cpcad#22203",
+    "Yukon parks :10"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 14377.7,
+     "official_acres": 13549.0,
+     "times": 1.06,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Nisutlin River Delta National Wildlife Area",
+     "record_name": "Nisutlin River Delta National Wildlife Area"
+    },
+    "T4": {
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.06,
+     "median_spacing_m": 78.3,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0106",
+   "name": "Vuntut National Park",
+   "key_name": "Vuntut National Park",
+   "type": "National Park",
+   "grade": "official",
+   "pin": [
+    68.3849,
+    -139.858
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0106.json"
+   ],
+   "acres_drawn": 1102524.5,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Vuntut National Park Of Canada",
+     "type": "National Park",
+     "layer": "canada-bounds/CA-0106.json"
+    },
+    {
+     "id": "22050",
+     "name": "Vuntut National Park Of Canada",
+     "type": "National Park",
+     "acres": 1073671,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "Yukon parks :5",
+     "name": "Vuntut",
+     "acres": 1061307,
+     "layer": "Yukon parks "
+    }
+   ],
+   "record_ids": [
+    "cpcad#22050",
+    "Yukon parks :5"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 1102524.5,
+     "official_acres": 1073671.0,
+     "times": 1.03,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Vuntut National Park",
+     "record_name": "Vuntut National Park Of Canada"
+    },
+    "T4": {
+     "park_kind": "national park",
+     "record_kind": "national park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.04,
+     "median_spacing_m": 96.5,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0841",
+   "name": "Agay Mene Territorial Park",
+   "key_name": "Agay Mene Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    60.1928,
+    -133.679
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0841.json"
+   ],
+   "acres_drawn": 179265.4,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Agay Mene",
+     "type": "Territorial Park",
+     "layer": "canada-bounds/CA-0841.json"
+    },
+    {
+     "id": "Yukon parks :25",
+     "name": "Agay Mene",
+     "type": "Territorial Park",
+     "acres": 172885,
+     "layer": "Yukon parks "
+    }
+   ],
+   "record_ids": [
+    "Yukon parks :25"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 179265.4,
+     "official_acres": 172885.0,
+     "times": 1.04,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.667,
+     "pota_name": "Agay Mene Territorial Park",
+     "record_name": "Agay Mene"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-6263",
+       "name": "Tarfu Lake Campground Recreation Site",
+       "share": 0.6
+      },
+      {
+       "ref": "CA-6268",
+       "name": "Snafu Lake Campground Recreation Site",
+       "share": 0.52
+      }
+     ],
+     "count": 2
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.06,
+     "median_spacing_m": 251.0,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 6,
+   "why": "MISMATCH: The record name 'Agay Mene' does not match POTA's name 'Agay Mene Territorial Park' (score 0.67) (+1 more flag)."
+  },
+  {
+   "ref": "CA-0842",
+   "name": "Asi Keyi Territorial Park",
+   "key_name": "Asi Keyi Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    61.5144,
+    -140.38
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0842.json"
+   ],
+   "acres_drawn": 737495.6,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Asi Keyi",
+     "type": "Territorial Park",
+     "layer": "canada-bounds/CA-0842.json"
+    },
+    {
+     "id": "21763",
+     "name": "Asi Keyi",
+     "type": "Territorial Park",
+     "acres": 728458,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "Yukon parks :24",
+     "name": "Asi Keyi",
+     "acres": 727937,
+     "layer": "Yukon parks "
+    }
+   ],
+   "record_ids": [
+    "cpcad#21763",
+    "Yukon parks :24"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 737495.6,
+     "official_acres": 728458.0,
+     "times": 1.01,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.667,
+     "pota_name": "Asi Keyi Territorial Park",
+     "record_name": "Asi Keyi"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 155.4,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "MISMATCH: The record name 'Asi Keyi' does not match POTA's name 'Asi Keyi Territorial Park' (score 0.67)."
+  },
+  {
+   "ref": "CA-0843",
+   "name": "Coal River Springs Territorial Park",
+   "key_name": "Coal River Springs Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    60.1586,
+    -127.419
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0843.json"
+   ],
+   "acres_drawn": 4124.1,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Coal River Springs",
+     "type": "Territorial Park",
+     "layer": "canada-bounds/CA-0843.json"
+    },
+    {
+     "id": "21755",
+     "name": "Coal River Springs",
+     "type": "Territorial Park",
+     "acres": 3880,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "Yukon parks :16",
+     "name": "Coal River Springs",
+     "acres": 3580,
+     "layer": "Yukon parks "
+    }
+   ],
+   "record_ids": [
+    "cpcad#21755",
+    "Yukon parks :16"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 4124.1,
+     "official_acres": 3880.0,
+     "times": 1.06,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.667,
+     "pota_name": "Coal River Springs Territorial Park",
+     "record_name": "Coal River Springs"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.06,
+     "median_spacing_m": 156.6,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "MISMATCH: The record name 'Coal River Springs' does not match POTA's name 'Coal River Springs Territorial Park' (score 0.67)."
+  },
+  {
+   "ref": "CA-0844",
+   "name": "Five Finger Rapids Recreation Park",
+   "key_name": "Five Finger Rapids Recreation Park",
+   "type": "Recreation Park",
+   "grade": "pin",
+   "pin": [
+    62.273,
+    -136.343
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0845",
+   "name": "Five Mile Lake Recreation Park",
+   "key_name": "Five Mile Lake Recreation Park",
+   "type": "Recreation Park",
+   "grade": "pin",
+   "pin": [
+    63.6522,
+    -135.887
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-0846",
+   "name": "Herschel Island - Qikiqtaruk Territorial Park",
+   "key_name": "Herschel Island - Qikiqtaruk Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    69.5795,
+    -139.076
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 27745.2,
+   "records": [
+    {
+     "id": "cpcad#21765",
+     "name": "Herschel Island - Qikiqtaruk",
+     "type": "Territorial Park",
+     "acres": 28664.2,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21765&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21765"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 27745.2,
+     "official_acres": 28664.2,
+     "times": 1.03,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "WEAK",
+     "score": 0.75,
+     "pota_name": "Herschel Island - Qikiqtaruk Territorial Park",
+     "record_name": "Herschel Island - Qikiqtaruk"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 2
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "WEAK: The record name 'Herschel Island - Qikiqtaruk' does not match POTA's name 'Herschel Island - Qikiqtaruk Territorial Park' (score 0.75)."
+  },
+  {
+   "ref": "CA-0847",
+   "name": "Kusawa Territorial Park",
+   "key_name": "Kusawa Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    60.3771,
+    -136.113
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0847.json"
+   ],
+   "acres_drawn": 763966.2,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Kusawa",
+     "type": "Territorial Park",
+     "layer": "canada-bounds/CA-0847.json"
+    },
+    {
+     "id": "21764",
+     "name": "Kusawa",
+     "type": "Territorial Park",
+     "acres": 758341,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "Yukon parks :4",
+     "name": "Kusawa",
+     "acres": 755827,
+     "layer": "Yukon parks "
+    }
+   ],
+   "record_ids": [
+    "cpcad#21764",
+    "Yukon parks :4"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 763966.2,
+     "official_acres": 758341.0,
+     "times": 1.01,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.5,
+     "pota_name": "Kusawa Territorial Park",
+     "record_name": "Kusawa"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-6280",
+       "name": "Kusawa Lake Campground Recreation Site",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-6264",
+       "name": "Takhini River Campground Recreation Site",
+       "share": 1.0
+      }
+     ],
+     "count": 2
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.06,
+     "median_spacing_m": 132.4,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "DUPLICATE",
+     "parks": {
+      "CA-6280": [
+       "cpcad#21764"
+      ]
+     },
+     "note": "same record id(s) as another park number: for KPC 13"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 7,
+   "why": "MISMATCH: The record name 'Kusawa' does not match POTA's name 'Kusawa Territorial Park' (score 0.50) (+2 more flags)."
+  },
+  {
+   "ref": "CA-0848",
+   "name": "Pickhandle Lake Recreation Park",
+   "key_name": "Pickhandle Lake Recreation Park",
+   "type": "Recreation Park",
+   "grade": "official",
+   "pin": [
+    61.921,
+    -140.299
+   ],
+   "outline_from": [
+    "canada-bounds/CA-0848.json"
+   ],
+   "acres_drawn": 12633.2,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Pickhandle Lake",
+     "type": "Recreation Park",
+     "layer": "canada-bounds/CA-0848.json"
+    },
+    {
+     "id": "Yukon parks :1",
+     "name": "Pickhandle Lake",
+     "type": "Recreation Park",
+     "acres": 12155,
+     "layer": "Yukon parks "
+    }
+   ],
+   "record_ids": [
+    "Yukon parks :1"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "NEAR",
+     "metres": 2.1
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 12633.2,
+     "official_acres": 12155.0,
+     "times": 1.04,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Pickhandle Lake Recreation Park",
+     "record_name": "Pickhandle Lake"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": "lake",
+     "flag": "CONFLICT",
+     "why": "the record is the whole lake but the park is a recreation area on it"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 137.1,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "DUPLICATE",
+     "parks": {
+      "CA-4625": [
+       "Yukon parks :1"
+      ]
+     },
+     "note": "same record id(s) as another park number: for KPC 13"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 5,
+   "why": "CONFLICT: The record is the whole lake but the park is a recreation area on it (+2 more flags)."
+  },
+  {
+   "ref": "CA-0849",
+   "name": "Tagish River Habitat Protection Area",
+   "key_name": "Tagish River Habitat Protection Area",
+   "type": "Habitat Protection Area",
+   "grade": "official",
+   "pin": [
+    60.302,
+    -134.265
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 1107.9,
+   "records": [
+    {
+     "id": "cpcad#21756",
+     "name": "Tagish River",
+     "type": "Habitat Protection Area",
+     "acres": 1112.0,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21756&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21756"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 1107.9,
+     "official_acres": 1112.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Tagish River Habitat Protection Area",
+     "record_name": "Tagish River"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-0850",
+   "name": "Tatchun Lake Recreation Park",
+   "key_name": "Tatchun Lake Recreation Park",
+   "type": "Recreation Park",
+   "grade": "official",
+   "pin": [
+    62.299,
+    -136.139
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 137.2,
+   "records": [
+    {
+     "id": "cpcad#21782",
+     "name": "Tatchun Lake",
+     "type": "Territorial Park",
+     "acres": 138.4,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21782&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21782"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 137.2,
+     "official_acres": 138.4,
+     "times": 1.01,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Tatchun Lake Recreation Park",
+     "record_name": "Tatchun Lake"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": "lake",
+     "flag": "CONFLICT",
+     "why": "the record is the whole lake but the park is a recreation area on it"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 2
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "CONFLICT: The record is the whole lake but the park is a recreation area on it."
+  },
+  {
+   "ref": "CA-4600",
+   "name": "Alsek River Canadian Heritage River",
+   "key_name": "Alsek River Canadian Heritage River",
+   "type": "National Heritage Area",
+   "grade": "official",
+   "pin": [
+    60.003,
+    -137.82
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [
+    {
+     "id": "Hard look~20:4",
+     "name": "Alsek River",
+     "acres": 45317,
+     "layer": "Hard look~20"
+    }
+   ],
+   "record_ids": [
+    "Hard look~20:4"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.333,
+     "pota_name": "Alsek River Canadian Heritage River",
+     "record_name": "Alsek River"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "CAN'T TELL",
+     "note": "the park's records could not be read (see problems)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Hard look~20)"
+   ],
+   "status": "graded",
+   "score": 3,
+   "why": "MISMATCH: The record name 'Alsek River' does not match POTA's name 'Alsek River Canadian Heritage River' (score 0.33)."
+  },
+  {
+   "ref": "CA-4601",
+   "name": "Bonnet Plume River Canadian Heritage River",
+   "key_name": "Bonnet Plume River Canadian Heritage River",
+   "type": "National Heritage Area",
+   "grade": "pin",
+   "pin": [
+    64.885,
+    -133.351
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4602",
+   "name": "Conrad Park Recreation Park",
+   "key_name": "Conrad Park Recreation Park",
+   "type": "Recreation Park",
+   "grade": "pin",
+   "pin": [
+    60.069,
+    -134.571
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4603",
+   "name": "Devils' Elbow / Big Island Habitat Protection Area",
+   "key_name": "Devils' Elbow / Big Island Habitat Protection Area",
+   "type": "Habitat Protection Area",
+   "grade": "official",
+   "pin": [
+    63.428,
+    -136.412
+   ],
+   "outline_from": [
+    "canada-bounds/CA-4603.json"
+   ],
+   "acres_drawn": 18774.0,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Devil's Elbow",
+     "type": "Habitat Protection Area",
+     "layer": "canada-bounds/CA-4603.json"
+    },
+    {
+     "id": "21771",
+     "name": "Devil's Elbow",
+     "type": "Habitat Protection Area",
+     "acres": 18558,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "Yukon parks :8",
+     "name": "Devil's Elbow",
+     "acres": 14184,
+     "layer": "Yukon parks "
+    }
+   ],
+   "record_ids": [
+    "cpcad#21771",
+    "Yukon parks :8"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 18774.0,
+     "official_acres": 18558.0,
+     "times": 1.01,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.5,
+     "pota_name": "Devils' Elbow / Big Island Habitat Protection Area",
+     "record_name": "Devil's Elbow"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 153.3,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "MISMATCH: The record name 'Devil's Elbow' does not match POTA's name 'Devils' Elbow / Big Island Habitat Protection Area' (score 0.50)."
+  },
+  {
+   "ref": "CA-4604",
+   "name": "Ddhaw Ghro Habitat Protection Area",
+   "key_name": "Ddhaw Ghro Habitat Protection Area",
+   "type": "Habitat Protection Area",
+   "grade": "official",
+   "pin": [
+    63.149,
+    -135.797
+   ],
+   "outline_from": [
+    "canada-bounds/CA-4604.json"
+   ],
+   "acres_drawn": 399745.6,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Ddhaw Ghro",
+     "type": "Habitat Protection Area",
+     "layer": "canada-bounds/CA-4604.json"
+    },
+    {
+     "id": "21761",
+     "name": "Ddhaw Ghro",
+     "type": "Habitat Protection Area",
+     "acres": 397839,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "Yukon parks :26",
+     "name": "Ddhaw Ghro",
+     "acres": 389220,
+     "layer": "Yukon parks "
+    }
+   ],
+   "record_ids": [
+    "cpcad#21761",
+    "Yukon parks :26"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 399745.6,
+     "official_acres": 397839.0,
+     "times": 1.0,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Ddhaw Ghro Habitat Protection Area",
+     "record_name": "Ddhaw Ghro"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 107.1,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-4607",
+   "name": "Fort Selkirk Historic Site Habitat Protection Area",
+   "key_name": "Fort Selkirk Historic Site Habitat Protection Area",
+   "type": "Habitat Protection Area",
+   "grade": "pin",
+   "pin": [
+    62.774,
+    -137.386
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4609",
+   "name": "Nuna K’óhonete Yédäk Tah’é (Horseshoe Slough) Habitat Protection Area",
+   "key_name": "Nuna K’óhonete Yédäk Tah’é (Horseshoe Slough) Habitat Protection Area",
+   "type": "Habitat Protection Area",
+   "grade": "official",
+   "pin": [
+    63.422,
+    -135.069
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 19025.8,
+   "records": [
+    {
+     "id": "cpcad#21759",
+     "name": "Nuna K’óhonete Yédäk Tah’é (Horseshoe Slough)",
+     "type": "Habitat Protection Area",
+     "acres": 19027.1,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21759&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21759"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 19025.8,
+     "official_acres": 19027.1,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Nuna K’óhonete Yédäk Tah’é (Horseshoe Slough) Habitat Protection Area",
+     "record_name": "Nuna K’óhonete Yédäk Tah’é (Horseshoe Slough)"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-4610",
+   "name": "Kookatsoon Lake Recreation Park",
+   "key_name": "Kookatsoon Lake Recreation Park",
+   "type": "Recreation Park",
+   "grade": "pin",
+   "pin": [
+    60.5588,
+    -134.878
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4611",
+   "name": "Lewes Marsh Habitat Protection Area",
+   "key_name": "Lewes Marsh Habitat Protection Area",
+   "type": "Habitat Protection Area",
+   "grade": "official",
+   "pin": [
+    60.5764,
+    -134.682
+   ],
+   "outline_from": [
+    "canada-bounds/CA-4611.json"
+   ],
+   "acres_drawn": 5246.2,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Lewes Marsh",
+     "type": "Habitat Protection Area",
+     "layer": "canada-bounds/CA-4611.json"
+    },
+    {
+     "id": "21757",
+     "name": "Lewes Marsh",
+     "type": "Habitat Protection Area",
+     "acres": 5016,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "Yukon parks :2",
+     "name": "Lewes Marsh",
+     "acres": 846,
+     "layer": "Yukon parks "
+    }
+   ],
+   "record_ids": [
+    "cpcad#21757",
+    "Yukon parks :2"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 5246.2,
+     "official_acres": 5016.0,
+     "times": 1.05,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Lewes Marsh Habitat Protection Area",
+     "record_name": "Lewes Marsh"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 124.9,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-4612",
+   "name": "Lhutsaw (Lutsaw) Wetland Habitat Protection Area",
+   "key_name": "Lhutsaw (Lutsaw) Wetland Habitat Protection Area",
+   "type": "Habitat Protection Area",
+   "grade": "official",
+   "pin": [
+    62.712,
+    -136.71
+   ],
+   "outline_from": [
+    "canada-bounds/CA-4612.json"
+   ],
+   "acres_drawn": 7986.0,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Lhutsaw Wetland",
+     "type": "Habitat Protection Area",
+     "layer": "canada-bounds/CA-4612.json"
+    },
+    {
+     "id": "Yukon parks :13",
+     "name": "Lhutsaw Wetland",
+     "type": "Habitat Protection Area",
+     "acres": 5918,
+     "layer": "Yukon parks "
+    }
+   ],
+   "record_ids": [
+    "Yukon parks :13"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 7986.0,
+     "official_acres": 5918.0,
+     "times": 1.35,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Lhutsaw (Lutsaw) Wetland Habitat Protection Area",
+     "record_name": "Lhutsaw Wetland"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 137.2,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-4613",
+   "name": "Liard Canyon Recreation Park",
+   "key_name": "Liard Canyon Recreation Park",
+   "type": "Recreation Park",
+   "grade": "pin",
+   "pin": [
+    60.019,
+    -128.58
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4614",
+   "name": "Marsh Lake Regional Park",
+   "key_name": "Marsh Lake Regional Park",
+   "type": "Regional Park",
+   "grade": "pin",
+   "pin": [
+    60.5613,
+    -134.451
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4615",
+   "name": "Morley River Recreation Park",
+   "key_name": "Morley River Recreation Park",
+   "type": "Recreation Park",
+   "grade": "pin",
+   "pin": [
+    60.007,
+    -132.135
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4616",
+   "name": "Nisutlin River Recreation Site",
+   "key_name": "Nisutlin River Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    60.9211,
+    -132.953
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4617",
+   "name": "Ni'iinlii Njik (Fishing Branch) Territorial Park",
+   "key_name": "Ni'iinlii Njik (Fishing Branch) Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    66.392,
+    -139.353
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 1362225.3,
+   "records": [
+    {
+     "id": "cpcad#21769",
+     "name": "Ni'iinlii Njik (Fishing Branch)",
+     "type": "Territorial Park",
+     "acres": 1289148.8,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21769&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#21754",
+     "name": "Ni'iinlii Njik (Fishing Branch)",
+     "type": "Territorial Park",
+     "acres": 41933.8,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21754&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "cpcad#21772",
+     "name": "Ni'iinlii Njik (Fishing Branch)",
+     "type": "First Nation Settlement Land",
+     "acres": 34827.0,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21772&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21769",
+    "cpcad#21754",
+    "cpcad#21772"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 1362225.3,
+     "official_acres": 1365909.6,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "WEAK",
+     "score": 0.75,
+     "pota_name": "Ni'iinlii Njik (Fishing Branch) Territorial Park",
+     "record_name": "Ni'iinlii Njik (Fishing Branch)"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "TINY HOLES",
+     "pieces": 1,
+     "flags": [
+      "TINY HOLES"
+     ],
+     "note": "120 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 120,
+      "pieces": 0
+     }
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 2,
+   "why": "WEAK: The record name 'Ni'iinlii Njik (Fishing Branch)' does not match POTA's name 'Ni'iinlii Njik (Fishing Branch) Territorial Park' (score 0.75) (+1 more flag)."
+  },
+  {
+   "ref": "CA-4619",
+   "name": "T'aw Ta'ar National Historic Site",
+   "key_name": "T'aw Ta'ar National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    61.2428,
+    -134.614
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4621",
+   "name": "Nordenskiold Wetlands Habitat Protection Area",
+   "key_name": "Nordenskiold Wetlands Habitat Protection Area",
+   "type": "Habitat Protection Area",
+   "grade": "official",
+   "pin": [
+    61.923,
+    -136.181
+   ],
+   "outline_from": [
+    "canada-bounds/CA-4621.json"
+   ],
+   "acres_drawn": 19393.0,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Nordenskiold",
+     "type": "Habitat Protection Area",
+     "layer": "canada-bounds/CA-4621.json"
+    },
+    {
+     "id": "Yukon parks :14",
+     "name": "Nordenskiold",
+     "type": "Habitat Protection Area",
+     "acres": 20844,
+     "layer": "Yukon parks "
+    }
+   ],
+   "record_ids": [
+    "Yukon parks :14"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 19393.0,
+     "official_acres": 20844.0,
+     "times": 1.07,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.5,
+     "pota_name": "Nordenskiold Wetlands Habitat Protection Area",
+     "record_name": "Nordenskiold"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 289.9,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "MISMATCH: The record name 'Nordenskiold' does not match POTA's name 'Nordenskiold Wetlands Habitat Protection Area' (score 0.50)."
+  },
+  {
+   "ref": "CA-4623",
+   "name": "Old Crow Flats Special Management Area Habitat Protection Area",
+   "key_name": "Old Crow Flats Special Management Area Habitat Protection Area",
+   "type": "Habitat Protection Area",
+   "grade": "official",
+   "pin": [
+    67.395,
+    -139.705
+   ],
+   "outline_from": [
+    "canada-bounds/CA-4623.json"
+   ],
+   "acres_drawn": 2989780.4,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Old Crow Flats",
+     "type": "Habitat Protection Area",
+     "layer": "canada-bounds/CA-4623.json"
+    },
+    {
+     "id": "Yukon parks :6",
+     "name": "Old Crow Flats",
+     "type": "Habitat Protection Area",
+     "acres": 2944877,
+     "layer": "Yukon parks "
+    }
+   ],
+   "record_ids": [
+    "Yukon parks :6"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "FAR",
+     "metres": 24294.0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 2989780.4,
+     "official_acres": 2944877.0,
+     "times": 1.02,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Old Crow Flats Special Management Area Habitat Protection Area",
+     "record_name": "Old Crow Flats"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.04,
+     "median_spacing_m": 385.7,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 5,
+   "why": "FAR: POTA's pin is 24.3 km outside the outline."
+  },
+  {
+   "ref": "CA-4624",
+   "name": "Otter Falls Recreation Park",
+   "key_name": "Otter Falls Recreation Park",
+   "type": "Recreation Park",
+   "grade": "pin",
+   "pin": [
+    61.0816,
+    -136.995
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4625",
+   "name": "Pickhandle Lake Habitat Protection Area",
+   "key_name": "Pickhandle Lake Habitat Protection Area",
+   "type": "Habitat Protection Area",
+   "grade": "official",
+   "pin": [
+    61.925,
+    -140.323
+   ],
+   "outline_from": [
+    "canada-bounds/CA-4625.json"
+   ],
+   "acres_drawn": 12633.2,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Pickhandle Lake",
+     "type": "Habitat Protection Area",
+     "layer": "canada-bounds/CA-4625.json"
+    },
+    {
+     "id": "Yukon parks :1",
+     "name": "Pickhandle Lake",
+     "type": "Habitat Protection Area",
+     "acres": 12155,
+     "layer": "Yukon parks "
+    }
+   ],
+   "record_ids": [
+    "Yukon parks :1"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 12633.2,
+     "official_acres": 12155.0,
+     "times": 1.04,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Pickhandle Lake Habitat Protection Area",
+     "record_name": "Pickhandle Lake"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": "lake",
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 137.1,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "DUPLICATE",
+     "parks": {
+      "CA-0848": [
+       "Yukon parks :1"
+      ]
+     },
+     "note": "same record id(s) as another park number: for KPC 13"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "DUPLICATE: Another park number uses the same record: CA-0848."
+  },
+  {
+   "ref": "CA-4626",
+   "name": "Rampart House Habitat Protection Area",
+   "key_name": "Rampart House Habitat Protection Area",
+   "type": "Habitat Protection Area",
+   "grade": "pin",
+   "pin": [
+    67.417,
+    -140.997
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4627",
+   "name": "Rancheria Falls Recreation Site",
+   "key_name": "Rancheria Falls Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    60.0801,
+    -130.82
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4628",
+   "name": "Spruce Beetle Trail Recreation Site",
+   "key_name": "Spruce Beetle Trail Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    60.8408,
+    -137.769
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4629",
+   "name": "Ta'Tla Mun Special Management Area Habitat Protection Area",
+   "key_name": "Ta'Tla Mun Special Management Area Habitat Protection Area",
+   "type": "Habitat Protection Area",
+   "grade": "official",
+   "pin": [
+    62.605,
+    -135.971
+   ],
+   "outline_from": [
+    "canada-bounds/CA-4629.json"
+   ],
+   "acres_drawn": 8222.9,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Ta'Tla Mun",
+     "type": "Habitat Protection Area",
+     "layer": "canada-bounds/CA-4629.json"
+    },
+    {
+     "id": "Yukon parks :15",
+     "name": "Ta'Tla Mun",
+     "type": "Habitat Protection Area",
+     "acres": 7918,
+     "layer": "Yukon parks "
+    }
+   ],
+   "record_ids": [
+    "Yukon parks :15"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 8222.9,
+     "official_acres": 7918.0,
+     "times": 1.04,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Ta'Tla Mun Special Management Area Habitat Protection Area",
+     "record_name": "Ta'Tla Mun"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 101.1,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "All tests pass."
+  },
+  {
+   "ref": "CA-4631",
+   "name": "Tatshenshini River Canadian Heritage River",
+   "key_name": "Tatshenshini River Canadian Heritage River",
+   "type": "National Heritage Area",
+   "grade": "official",
+   "pin": [
+    60.001,
+    -136.885
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [
+    {
+     "id": "Hard look~20:3",
+     "name": "Tatshenshini River",
+     "acres": 16687,
+     "layer": "Hard look~20"
+    }
+   ],
+   "record_ids": [
+    "Hard look~20:3"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.333,
+     "pota_name": "Tatshenshini River Canadian Heritage River",
+     "record_name": "Tatshenshini River"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "CAN'T TELL",
+     "note": "the park's records could not be read (see problems)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Hard look~20)"
+   ],
+   "status": "graded",
+   "score": 3,
+   "why": "MISMATCH: The record name 'Tatshenshini River' does not match POTA's name 'Tatshenshini River Canadian Heritage River' (score 0.33)."
+  },
+  {
+   "ref": "CA-4632",
+   "name": "Thirty Mile - Yukon River Canadian Heritage River",
+   "key_name": "Thirty Mile - Yukon River Canadian Heritage River",
+   "type": "National Heritage Area",
+   "grade": "pin",
+   "pin": [
+    61.4143,
+    -135.21
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4633",
+   "name": "Thirty Mile River Habitat Protection Area",
+   "key_name": "Thirty Mile River Habitat Protection Area",
+   "type": "Habitat Protection Area",
+   "grade": "pin",
+   "pin": [
+    59.2816,
+    -129.817
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4635",
+   "name": "Tombstone Natural Habitat Protection Area",
+   "key_name": "Tombstone Natural Habitat Protection Area",
+   "type": "Habitat Protection Area",
+   "grade": "official",
+   "pin": [
+    64.551,
+    -138.591
+   ],
+   "outline_from": [
+    "canada-bounds/CA-4635.json"
+   ],
+   "acres_drawn": 521401.8,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Tombstone",
+     "type": "Habitat Protection Area",
+     "layer": "canada-bounds/CA-4635.json"
+    },
+    {
+     "id": "21762",
+     "name": "Tombstone",
+     "type": "Habitat Protection Area",
+     "acres": 505700,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "Yukon parks :20",
+     "name": "Tombstone",
+     "acres": 500778,
+     "layer": "Yukon parks "
+    },
+    {
+     "id": "Yukon parks :21",
+     "name": "Tombstone",
+     "acres": 12099,
+     "layer": "Yukon parks "
+    }
+   ],
+   "record_ids": [
+    "cpcad#21762",
+    "Yukon parks :20",
+    "Yukon parks :21"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 521401.8,
+     "official_acres": 512877.0,
+     "times": 1.02,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Tombstone Natural Habitat Protection Area",
+     "record_name": "Tombstone"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "INVALID",
+     "pieces": 1,
+     "flags": [
+      "INVALID",
+      "TINY HOLES"
+     ],
+     "note": "Too few points in geometry component[-138.240382 64.534227]; 8 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 8,
+      "pieces": 0
+     }
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 70.4,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "DUPLICATE",
+     "parks": {
+      "CA-4636": [
+       "cpcad#21762",
+       "Yukon parks :20"
+      ],
+      "CA-6261": [
+       "cpcad#21762"
+      ]
+     },
+     "note": "same record id(s) as another park number: for KPC 13"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "INVALID: The shape has problems: Too few points in geometry component[-138.240382 64.534227]; 8 hole(s) under 100 m2 (+2 more flags)."
+  },
+  {
+   "ref": "CA-4636",
+   "name": "Tombstone Territorial Park",
+   "key_name": "Tombstone Territorial Park",
+   "type": "Territorial Park",
+   "grade": "official",
+   "pin": [
+    64.572,
+    -138.606
+   ],
+   "outline_from": [
+    "canada-bounds/CA-4636.json"
+   ],
+   "acres_drawn": 508043.7,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Tombstone",
+     "type": "Territorial Park",
+     "layer": "canada-bounds/CA-4636.json"
+    },
+    {
+     "id": "21762",
+     "name": "Tombstone",
+     "type": "Territorial Park",
+     "acres": 505700,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "Yukon parks :20",
+     "name": "Tombstone",
+     "acres": 500778,
+     "layer": "Yukon parks "
+    }
+   ],
+   "record_ids": [
+    "cpcad#21762",
+    "Yukon parks :20"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 508043.7,
+     "official_acres": 505700.0,
+     "times": 1.0,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.5,
+     "pota_name": "Tombstone Territorial Park",
+     "record_name": "Tombstone"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 2
+    },
+    "T6": {
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-6261",
+       "name": "Tombstone Mountain Campground Recreation Site",
+       "share": 1.0
+      }
+     ],
+     "count": 1
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.05,
+     "median_spacing_m": 78.3,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "DUPLICATE",
+     "parks": {
+      "CA-4635": [
+       "cpcad#21762",
+       "Yukon parks :20"
+      ],
+      "CA-6261": [
+       "cpcad#21762"
+      ]
+     },
+     "note": "same record id(s) as another park number: for KPC 13"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 7,
+   "why": "MISMATCH: The record name 'Tombstone' does not match POTA's name 'Tombstone Territorial Park' (score 0.50) (+2 more flags)."
+  },
+  {
+   "ref": "CA-4637",
+   "name": "Ch'ihilii Chik (Whitefish Wetland) Habitat Protection Area",
+   "key_name": "Ch'ihilii Chik (Whitefish Wetland) Habitat Protection Area",
+   "type": "Habitat Protection Area",
+   "grade": "official",
+   "pin": [
+    67.1483,
+    -137.399
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 117274.2,
+   "records": [
+    {
+     "id": "cpcad#21773",
+     "name": "Ch’ihilii Chìk",
+     "type": "Habitat Protection Area",
+     "acres": 117276.2,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21773&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21773"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 117274.2,
+     "official_acres": 117276.2,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.5,
+     "pota_name": "Ch'ihilii Chik (Whitefish Wetland) Habitat Protection Area",
+     "record_name": "Ch’ihilii Chìk"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 3,
+   "why": "MISMATCH: The record name 'Ch’ihilii Chìk' does not match POTA's name 'Ch'ihilii Chik (Whitefish Wetland) Habitat Protection Area' (score 0.50)."
+  },
+  {
+   "ref": "CA-4936",
+   "name": "Dawson Historical Complex National Historic Site",
+   "key_name": "Dawson Historical Complex National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    64.05,
+    -139.433
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4937",
+   "name": "Dredge No. 4 National Historic Site",
+   "key_name": "Dredge No. 4 National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    63.9458,
+    -139.33
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4938",
+   "name": "Former Territorial Court House National Historic Site",
+   "key_name": "Former Territorial Court House National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    64.0563,
+    -139.441
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4939",
+   "name": "S.S. Keno National Historic Site",
+   "key_name": "S.S. Keno National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    64.0675,
+    -139.429
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-4940",
+   "name": "S.S. Klondike National Historic Site",
+   "key_name": "S.S. Klondike National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    60.7294,
+    -135.047
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5286",
+   "name": "Canadian Bank of Commerce National Historic Site",
+   "key_name": "Canadian Bank of Commerce National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    64.0632,
+    -139.435
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5287",
+   "name": "Tr'ochek National Historic Site",
+   "key_name": "Tr'ochek National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    64.0481,
+    -139.446
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5449",
+   "name": "Aishihik Lake Recreation Site",
+   "key_name": "Aishihik Lake Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    61.1963,
+    -136.998
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5451",
+   "name": "Lapierre House (Zheh Gwatsal) Nature Reserve",
+   "key_name": "Lapierre House (Zheh Gwatsal) Nature Reserve",
+   "type": "Nature Reserve",
+   "grade": "pin",
+   "pin": [
+    67.3894,
+    -137.013
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5452",
+   "name": "Simpson Lake Recreation Park",
+   "key_name": "Simpson Lake Recreation Park",
+   "type": "Recreation Park",
+   "grade": "pin",
+   "pin": [
+    60.6793,
+    -129.23
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5453",
+   "name": "Teslin Lake Recreation Park",
+   "key_name": "Teslin Lake Recreation Park",
+   "type": "Recreation Park",
+   "grade": "pin",
+   "pin": [
+    60.2325,
+    -132.91
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5454",
+   "name": "Discovery Claim (Claim 37903) National Historic Site",
+   "key_name": "Discovery Claim (Claim 37903) National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    63.9274,
+    -139.325
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5455",
+   "name": "Old Territorial Administration Building National Historic Site",
+   "key_name": "Old Territorial Administration Building National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    64.0569,
+    -139.435
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5456",
+   "name": "St. Paul's Anglican Church National Historic Site",
+   "key_name": "St. Paul's Anglican Church National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    64.0588,
+    -139.438
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5458",
+   "name": "Yukon Hotel National Historic Site",
+   "key_name": "Yukon Hotel National Historic Site",
+   "type": "National Historic Site",
+   "grade": "pin",
+   "pin": [
+    64.0591,
+    -139.438
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5737",
+   "name": "Big Creek Recreation Park",
+   "key_name": "Big Creek Recreation Park",
+   "type": "Recreation Park",
+   "grade": "pin",
+   "pin": [
+    60.159,
+    -129.706
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5738",
+   "name": "Lake Laberge Recreation Park",
+   "key_name": "Lake Laberge Recreation Park",
+   "type": "Recreation Park",
+   "grade": "pin",
+   "pin": [
+    61.0751,
+    -135.2
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5739",
+   "name": "Lucky Lake Recreation Site",
+   "key_name": "Lucky Lake Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    60.019,
+    -128.58
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5743",
+   "name": "Twin Lakes Recreation Park",
+   "key_name": "Twin Lakes Recreation Park",
+   "type": "Recreation Park",
+   "grade": "pin",
+   "pin": [
+    61.7048,
+    -135.937
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5744",
+   "name": "Watson Lake Recreation Park",
+   "key_name": "Watson Lake Recreation Park",
+   "type": "Recreation Park",
+   "grade": "pin",
+   "pin": [
+    60.095,
+    -128.818
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5745",
+   "name": "Wolf Creek Recreation Park",
+   "key_name": "Wolf Creek Recreation Park",
+   "type": "Recreation Park",
+   "grade": "pin",
+   "pin": [
+    60.6071,
+    -134.944
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-5746",
+   "name": "Wye Lake Recreation Park",
+   "key_name": "Wye Lake Recreation Park",
+   "type": "Recreation Park",
+   "grade": "pin",
+   "pin": [
+    60.0656,
+    -128.705
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6258",
+   "name": "Congdon Creek Campground Territorial Park",
+   "key_name": "Congdon Creek Campground Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    61.15,
+    -138.557
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6259",
+   "name": "Dezadeash Lake Campground Territorial Park",
+   "key_name": "Dezadeash Lake Campground Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    60.398,
+    -137.048
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6260",
+   "name": "Yukon River Campground Recreation Site",
+   "key_name": "Yukon River Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    64.072,
+    -139.438
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6261",
+   "name": "Tombstone Mountain Campground Recreation Site",
+   "key_name": "Tombstone Mountain Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "approximate",
+   "pin": [
+    64.506,
+    -138.22
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 506043.7,
+   "records": [
+    {
+     "id": "cpcad#21762",
+     "name": "Tombstone",
+     "type": "Territorial Park",
+     "acres": 505701.2,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21762&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21762"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 506043.7,
+     "official_acres": 505701.2,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.333,
+     "pota_name": "Tombstone Mountain Campground Recreation Site",
+     "record_name": "Tombstone"
+    },
+    "T4": {
+     "park_kind": "recreation area",
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 2
+    },
+    "T6": {
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-4636",
+       "name": "Tombstone Territorial Park",
+       "share": 1.0
+      }
+     ],
+     "count": 1
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "DUPLICATE",
+     "parks": {
+      "CA-4636": [
+       "cpcad#21762"
+      ],
+      "CA-4635": [
+       "cpcad#21762"
+      ]
+     },
+     "note": "same record id(s) as another park number: for KPC 13"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 7,
+   "why": "MISMATCH: The record name 'Tombstone' does not match POTA's name 'Tombstone Mountain Campground Recreation Site' (score 0.33) (+2 more flags)."
+  },
+  {
+   "ref": "CA-6262",
+   "name": "Tatchun Creek Campground Recreation Site",
+   "key_name": "Tatchun Creek Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    62.284,
+    -136.307
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6263",
+   "name": "Tarfu Lake Campground Recreation Site",
+   "key_name": "Tarfu Lake Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    60.074,
+    -133.809
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6264",
+   "name": "Takhini River Campground Recreation Site",
+   "key_name": "Takhini River Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    60.654,
+    -136.105
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6265",
+   "name": "Tagish Bridge Recreation Site",
+   "key_name": "Tagish Bridge Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    60.316,
+    -134.27
+   ],
+   "outline_from": [
+    "canada-bounds/CA-6265.json"
+   ],
+   "acres_drawn": 1108.0,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Tagish River",
+     "type": "Habitat Protection Area",
+     "layer": "canada-bounds/CA-6265.json"
+    }
+   ],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NEAR",
+     "metres": 4.6
+    },
+    "T2": {
+     "flag": "NO FIGURE",
+     "outline_acres": 1108.0
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.5,
+     "pota_name": "Tagish Bridge Recreation Site",
+     "record_name": "Tagish River"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "detail_m": 5,
+     "declared_m": 5,
+     "coordinate_step_m": 0.06,
+     "median_spacing_m": 213.8,
+     "flag": "PASS",
+     "note": "between 3 and 5 m: allowed, but over the 3 m aim"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 4,
+   "why": "MISMATCH: The record name 'Tagish River' does not match POTA's name 'Tagish Bridge Recreation Site' (score 0.50) (+1 more flag)."
+  },
+  {
+   "ref": "CA-6266",
+   "name": "Squanga Lake Campground Recreation Site",
+   "key_name": "Squanga Lake Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    60.445,
+    -133.603
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6267",
+   "name": "Snag Junction Campground Recreation Site",
+   "key_name": "Snag Junction Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    62.239,
+    -140.689
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6268",
+   "name": "Snafu Lake Campground Recreation Site",
+   "key_name": "Snafu Lake Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    60.131,
+    -133.823
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6269",
+   "name": "Rock River Campground Recreation Site",
+   "key_name": "Rock River Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    66.912,
+    -136.355
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6270",
+   "name": "Quiet Lake South Campground Recreation Site",
+   "key_name": "Quiet Lake South Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    60.991,
+    -133.02
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6271",
+   "name": "Quiet Lake North Campground Recreation Site",
+   "key_name": "Quiet Lake North Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    61.147,
+    -133.075
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6272",
+   "name": "Pine Lake Campground Recreation Site",
+   "key_name": "Pine Lake Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    60.799,
+    -137.489
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6273",
+   "name": "Nunatuk Campground Recreation Site",
+   "key_name": "Nunatuk Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    62.164,
+    -135.799
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6274",
+   "name": "Nahanni Range Campground Recreation Site",
+   "key_name": "Nahanni Range Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    61.27,
+    -128.282
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6275",
+   "name": "Moose Creek Campground Recreation Site",
+   "key_name": "Moose Creek Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    63.509,
+    -137.026
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6276",
+   "name": "Million Dollar Falls Campground Territorial Park",
+   "key_name": "Million Dollar Falls Campground Territorial Park",
+   "type": "Territorial Park",
+   "grade": "pin",
+   "pin": [
+    60.11,
+    -136.925
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6277",
+   "name": "Little Salmon Lake Campground Recreation Site",
+   "key_name": "Little Salmon Lake Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    62.188,
+    -134.988
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6278",
+   "name": "Lapie Canyon Campground Recreation Site",
+   "key_name": "Lapie Canyon Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    61.987,
+    -132.607
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6279",
+   "name": "Lake Creek Campground Recreation Site",
+   "key_name": "Lake Creek Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    61.857,
+    -140.149
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6280",
+   "name": "Kusawa Lake Campground Recreation Site",
+   "key_name": "Kusawa Lake Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "approximate",
+   "pin": [
+    60.585,
+    -136.146
+   ],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 761252.0,
+   "records": [
+    {
+     "id": "cpcad#21764",
+     "name": "Kusawa",
+     "type": "Territorial Park",
+     "acres": 758341.7,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=21764&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#21764"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "PASS",
+     "outline_acres": 761252.0,
+     "official_acres": 758341.7,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+    },
+    "T3": {
+     "flag": "MISMATCH",
+     "score": 0.5,
+     "pota_name": "Kusawa Lake Campground Recreation Site",
+     "record_name": "Kusawa"
+    },
+    "T4": {
+     "park_kind": "recreation area",
+     "record_kind": null,
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-0847",
+       "name": "Kusawa Territorial Park",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-6264",
+       "name": "Takhini River Campground Recreation Site",
+       "share": 1.0
+      }
+     ],
+     "count": 2
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "DUPLICATE",
+     "parks": {
+      "CA-0847": [
+       "cpcad#21764"
+      ]
+     },
+     "note": "same record id(s) as another park number: for KPC 13"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 7,
+   "why": "MISMATCH: The record name 'Kusawa' does not match POTA's name 'Kusawa Lake Campground Recreation Site' (score 0.50) (+2 more flags)."
+  },
+  {
+   "ref": "CA-6281",
+   "name": "Klondike River Campground Recreation Site",
+   "key_name": "Klondike River Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    64.05,
+    -139.113
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6282",
+   "name": "Kathleen Lake Campground and Rec. Site National Park",
+   "key_name": "Kathleen Lake Campground and Rec. Site National Park",
+   "type": "National Park",
+   "grade": "pin",
+   "pin": [
+    60.583,
+    -137.209
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6283",
+   "name": "Johnson Lake Campground Recreation Site",
+   "key_name": "Johnson Lake Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    62.209,
+    -133.405
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6284",
+   "name": "Frenchman Lake Campground Recreation Site",
+   "key_name": "Frenchman Lake Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    62.118,
+    -135.698
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6285",
+   "name": "Frances Lake Campground Recreation Site",
+   "key_name": "Frances Lake Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    61.403,
+    -129.645
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6286",
+   "name": "Fox Lake Campground Recreation Site",
+   "key_name": "Fox Lake Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    61.246,
+    -135.461
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6287",
+   "name": "Ethel Lake Campground Recreation Site",
+   "key_name": "Ethel Lake Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    63.377,
+    -136.251
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6288",
+   "name": "Engineer Creek Campground Recreation Site",
+   "key_name": "Engineer Creek Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    65.352,
+    -138.272
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6289",
+   "name": "Drury Creek Campground Recreation Site",
+   "key_name": "Drury Creek Campground Recreation Site",
+   "type": "Recreation Site",
+   "grade": "pin",
+   "pin": [
+    62.199,
+    -134.381
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6299",
+   "name": "Caribou Hotel Historic Site",
+   "key_name": "Caribou Hotel Historic Site",
+   "type": "Historic Site",
+   "grade": "pin",
+   "pin": [
+    60.165,
+    -134.706
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6300",
+   "name": "Dawson City Telegraph Office Historic Site",
+   "key_name": "Dawson City Telegraph Office Historic Site",
+   "type": "Historic Site",
+   "grade": "pin",
+   "pin": [
+    64.0559,
+    -139.433
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6301",
+   "name": "The Yukon Sawmill Company Office Historic Site",
+   "key_name": "The Yukon Sawmill Company Office Historic Site",
+   "type": "Historic Site",
+   "grade": "pin",
+   "pin": [
+    64.066,
+    -139.43
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6302",
+   "name": "Mayo Legion Hall Historic Site",
+   "key_name": "Mayo Legion Hall Historic Site",
+   "type": "Historic Site",
+   "grade": "pin",
+   "pin": [
+    63.591,
+    -135.895
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6303",
+   "name": "Archdeacon McDonald Memorial Church and St Luke’s Church Historic Site",
+   "key_name": "Archdeacon McDonald Memorial Church and St Luke’s Church Historic Site",
+   "type": "Historic Site",
+   "grade": "pin",
+   "pin": [
+    67.5686,
+    -139.834
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6304",
+   "name": "Gindehchik-Rampart House Historic Site",
+   "key_name": "Gindehchik-Rampart House Historic Site",
+   "type": "Historic Site",
+   "grade": "pin",
+   "pin": [
+    67.417,
+    -140.998
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6305",
+   "name": "Watson Lake Air Terminal Building Historic Site",
+   "key_name": "Watson Lake Air Terminal Building Historic Site",
+   "type": "Historic Site",
+   "grade": "pin",
+   "pin": [
+    60.114,
+    -128.822
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6306",
+   "name": "Watson Lake Sign Post Forest Historic Site",
+   "key_name": "Watson Lake Sign Post Forest Historic Site",
+   "type": "Historic Site",
+   "grade": "pin",
+   "pin": [
+    60.064,
+    -128.714
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6307",
+   "name": "Old Log Church and Rectory Historic Site",
+   "key_name": "Old Log Church and Rectory Historic Site",
+   "type": "Historic Site",
+   "grade": "pin",
+   "pin": [
+    60.718,
+    -135.054
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6308",
+   "name": "AJ Goddard Shipwreck Archeological Reserve",
+   "key_name": "AJ Goddard Shipwreck Archeological Reserve",
+   "type": "Archeological Reserve",
+   "grade": "pin",
+   "pin": [
+    61.3588,
+    -135.235
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6309",
+   "name": "The Mabel McIntyre House(Mining Recorder's Office) Historic Site",
+   "key_name": "The Mabel McIntyre House(Mining Recorder's Office) Historic Site",
+   "type": "Historic Site",
+   "grade": "pin",
+   "pin": [
+    63.593,
+    -135.897
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6313",
+   "name": "Carcross Desert Recreation Park",
+   "key_name": "Carcross Desert Recreation Park",
+   "type": "Recreation Park",
+   "grade": "pin",
+   "pin": [
+    60.186,
+    -134.7
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6314",
+   "name": "Robinson Roadhouse Historic Site",
+   "key_name": "Robinson Roadhouse Historic Site",
+   "type": "Historic Site",
+   "grade": "pin",
+   "pin": [
+    60.449,
+    -134.847
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "CA-6330",
+   "name": "Whitehorse Telegraph Office Historic Site",
+   "key_name": "Whitehorse Telegraph Office Historic Site",
+   "type": "Historic Site",
+   "grade": "pin",
+   "pin": [
+    60.721,
+    -135.051
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  }
+ ]
+}

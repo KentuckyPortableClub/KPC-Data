@@ -1,7 +1,8 @@
 {
  "area": "US-WY",
- "built": "2026-11-02",
+ "built": "2026-11-08",
  "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
  "parks": [
   {
    "ref": "US-0031",
@@ -62,7 +63,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-110.647841038672 43.9452902558252]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-110.647841038672 43.9452902558252]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -206,10 +213,10 @@
      "metres": 60.2
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1172.4,
-     "official_acres": 2342.0,
-     "times": 2.0,
+     "official_acres": 1171.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -244,8 +251,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 60 m outside the outline (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 60 m outside the outline."
   },
   {
    "ref": "US-0610",
@@ -293,10 +300,10 @@
      "metres": 73.0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 5998.1,
-     "official_acres": 11984.0,
-     "times": 2.0,
+     "official_acres": 5992.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -331,8 +338,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 73 m outside the outline (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 73 m outside the outline."
   },
   {
    "ref": "US-0611",
@@ -380,10 +387,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1991.3,
-     "official_acres": 3980.0,
-     "times": 2.0,
+     "official_acres": 1990.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -418,8 +425,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 3,980 acres (1,991 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0613",
@@ -467,10 +474,10 @@
      "metres": 6109.2
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 24860.1,
-     "official_acres": 49708.0,
-     "times": 2.0,
+     "official_acres": 24854.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -490,7 +497,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-110.63824927992 43.6140301787253]"
+     "note": "Ring Self-intersection[-110.63824927992 43.6140301787253]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -517,8 +530,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 8,
-   "why": "OUTSIDE: POTA's pin is 6.1 km outside the outline (+3 more flags)."
+   "score": 7,
+   "why": "OUTSIDE: POTA's pin is 6.1 km outside the outline (+2 more flags)."
   },
   {
    "ref": "US-0614",
@@ -590,9 +603,11 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 23641.7,
-     "official_acres": 26207.0,
-     "times": 1.11,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_acres": 23637.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 21066.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 21,066 ac, all providers added 23,637 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -675,10 +690,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 25993.5,
-     "official_acres": 51970.0,
-     "times": 2.0,
+     "official_acres": 25985.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -726,8 +741,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "SPILL: The outline covers 97% of US-6219 Lombard Ferry State Historic Site, with no 2-fer row (maybe the wrong record) (+1 more flag)."
+   "score": 3,
+   "why": "SPILL: The outline covers 97% of US-6219 Lombard Ferry State Historic Site, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "US-0698",
@@ -1038,53 +1053,78 @@
    "name": "Packers Lake Public Access Area BLM Special Recreation Management Area",
    "key_name": "Packers Lake Public Access Area BLM Special Recreation Management Area",
    "type": "BLM Special Recreation Management Area",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     41.897,
     -104.053
    ],
-   "outline_from": [],
-   "acres_drawn": null,
-   "records": [],
-   "record_ids": [],
+   "outline_from": [
+    "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/PAA_Boundaries/FeatureServer/1"
+   ],
+   "acres_drawn": 105.5,
+   "records": [
+    {
+     "id": "sgwyd10131",
+     "name": "Packers Lake",
+     "type": "Wyoming Game and Fish Department (AGOL org cWzdqIyxbijuhPLw) (wild, state GIS table)",
+     "acres": 105.4,
+     "acres_from": "acres field",
+     "layer": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/PAA_Boundaries/FeatureServer/1",
+     "link": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/PAA_Boundaries/FeatureServer/1/query?objectIds=10131&outFields=*&returnGeometry=false&f=html",
+     "name_field": "PAA_Name"
+    }
+   ],
+   "record_ids": [
+    "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/PAA_Boundaries/FeatureServer/1#10131"
+   ],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "outline_acres": 105.5,
+     "official_acres": 105.4,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Packers Lake Public Access Area BLM Special Recreation Management Area",
+     "record_name": "Packers Lake"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": "recreation area",
+     "record_kind": "lake",
+     "flag": "CONFLICT",
+     "why": "the record is the whole lake but the park is a recreation area on it"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "PASS",
+     "pieces": 1
     },
     "T6": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "CAN'T TELL",
-     "note": "no record id"
+     "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "last_edit": "2026-10-20",
+     "read": "2026-11-08",
+     "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "Nothing could be tested."
+   "score": 3,
+   "why": "CONFLICT: The record is the whole lake but the park is a recreation area on it."
   },
   {
    "ref": "US-10778",
@@ -1154,7 +1194,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -1242,7 +1282,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -1367,7 +1407,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-105.461571707692 41.9669405180242]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-105.461571707692 41.9669405180242]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1381,7 +1427,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -1467,7 +1513,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -1544,7 +1590,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -1724,8 +1770,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Coco Belle Van Meerendonk BLM Special Recreation Management Area",
      "record_name": "Coco Belle Van Meerendonk"
     },
@@ -1750,14 +1796,14 @@
     },
     "T9": {
      "last_edit": "2026-10-20",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Coco Belle Van Meerendonk' does not match POTA's name 'Coco Belle Van Meerendonk BLM Special Recreation Management Area' (score 0.67)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-10797",
@@ -1839,7 +1885,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -1906,7 +1952,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-110.667681526293 42.0245715406692]"
+     "note": "Ring Self-intersection[-110.667681526293 42.0245715406692]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1920,7 +1972,7 @@
     },
     "T9": {
      "last_edit": "2026-10-20",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -2062,7 +2114,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -2173,7 +2225,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -2250,7 +2302,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -2339,7 +2391,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -2416,7 +2468,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -2505,7 +2557,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -2582,7 +2634,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -2633,8 +2685,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Green Mountain BLM Herd Management Area",
      "record_name": "Green Mountain"
     },
@@ -2672,8 +2724,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 9,
-   "why": "OUTSIDE: POTA's pin is 905 m outside the outline (+2 more flags)."
+   "score": 6,
+   "why": "OUTSIDE: POTA's pin is 905 m outside the outline (+1 more flag)."
   },
   {
    "ref": "US-10811",
@@ -2717,8 +2769,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Lost Creek BLM Herd Management Area",
      "record_name": "Lost Creek"
     },
@@ -2748,8 +2800,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Lost Creek' does not match POTA's name 'Lost Creek BLM Herd Management Area' (score 0.50)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-10815",
@@ -2797,10 +2849,10 @@
      "metres": 267.3
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 32.3,
-     "official_acres": 64.0,
-     "times": 1.98,
+     "official_acres": 32.0,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -2835,8 +2887,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 267 m outside the outline (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 267 m outside the outline."
   },
   {
    "ref": "US-10816",
@@ -2884,10 +2936,10 @@
      "metres": 2777.2
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 116.7,
-     "official_acres": 232.0,
-     "times": 1.99,
+     "official_acres": 116.0,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -2922,8 +2974,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "OUTSIDE: POTA's pin is 2.8 km outside the outline (+1 more flag)."
+   "score": 3,
+   "why": "OUTSIDE: POTA's pin is 2.8 km outside the outline."
   },
   {
    "ref": "US-10817",
@@ -3073,8 +3125,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "WEAK",
-     "score": 0.75,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Boulder Rearing Station State Fish Hatchery",
      "record_name": "Boulder Rearing Station"
     },
@@ -3099,14 +3151,14 @@
     },
     "T9": {
      "last_edit": "2026-10-20",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "WEAK: The record name 'Boulder Rearing Station' does not match POTA's name 'Boulder Rearing Station State Fish Hatchery' (score 0.75)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-10820",
@@ -3187,7 +3239,7 @@
     },
     "T9": {
      "last_edit": "2026-10-20",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -3507,15 +3559,15 @@
      "metres": 18.4
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 481.3,
-     "official_acres": 961.8,
-     "times": 2.0,
+     "official_acres": 480.9,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "WEAK",
-     "score": 0.75,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Wigwam Rearing Station State Fish Hatchery",
      "record_name": "Wigwam Rearing Station"
     },
@@ -3540,14 +3592,14 @@
     },
     "T9": {
      "last_edit": "2026-10-20",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "NEAR: POTA's pin is 18 m outside the outline (+2 more flags)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 18 m outside the outline."
   },
   {
    "ref": "US-10828",
@@ -3592,7 +3644,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.4,
+     "score": 0.5,
      "pota_name": "Quebec 01 Missile Alert Facility State Park",
      "record_name": "Quebec 01 MAF"
     },
@@ -3617,14 +3669,14 @@
     },
     "T9": {
      "last_edit": "2026-02-12",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "MISMATCH: The record name 'Quebec 01 MAF' does not match POTA's name 'Quebec 01 Missile Alert Facility State Park' (score 0.40)."
+   "why": "MISMATCH: The record name 'Quebec 01 MAF' does not match POTA's name 'Quebec 01 Missile Alert Facility State Park' (score 0.50)."
   },
   {
    "ref": "US-10829",
@@ -3780,7 +3832,7 @@
     },
     "T9": {
      "last_edit": "2026-02-12",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -4145,7 +4197,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.667,
      "pota_name": "Bennett Mountains BLM WSA Wilderness Area",
      "record_name": "Bennett Mountains"
     },
@@ -4176,7 +4228,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "MISMATCH: The record name 'Bennett Mountains' does not match POTA's name 'Bennett Mountains BLM WSA Wilderness Area' (score 0.50)."
+   "why": "MISMATCH: The record name 'Bennett Mountains' does not match POTA's name 'Bennett Mountains BLM WSA Wilderness Area' (score 0.67)."
   },
   {
    "ref": "US-10842",
@@ -4268,8 +4320,8 @@
      "outline_acres": 16992.8
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.6,
+     "flag": "WEAK",
+     "score": 0.75,
      "pota_name": "Bobcat Draw Badlands BLM WSA Wilderness Area",
      "record_name": "Bobcat Draw Badlands"
     },
@@ -4299,8 +4351,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Bobcat Draw Badlands' does not match POTA's name 'Bobcat Draw Badlands BLM WSA Wilderness Area' (score 0.60)."
+   "score": 1,
+   "why": "WEAK: The record name 'Bobcat Draw Badlands' does not match POTA's name 'Bobcat Draw Badlands BLM WSA Wilderness Area' (score 0.75)."
   },
   {
    "ref": "US-10845",
@@ -4344,8 +4396,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Bobcat-Houlihan Trail BLM Recreation Management Area",
      "record_name": "South Fork Shoshone River-Houlihan/Bobcat"
     },
@@ -4370,14 +4422,14 @@
     },
     "T9": {
      "last_edit": "2026-10-20",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'South Fork Shoshone River-Houlihan/Bobcat' does not match POTA's name 'Bobcat-Houlihan Trail BLM Recreation Management Area' (score 0.67)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-10847",
@@ -4433,8 +4485,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Burnt Hollow BLM Recreation Management Area",
      "record_name": "Burnt Hollow SRMA"
     },
@@ -4464,8 +4516,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Burnt Hollow SRMA' does not match POTA's name 'Burnt Hollow BLM Recreation Management Area' (score 0.67)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-10848",
@@ -4575,7 +4627,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.4,
+     "score": 0.5,
      "pota_name": "CCC Ponds/Pinedale Pathway BLM Recreation Management Area",
      "record_name": "CCC Ponds SRMA"
     },
@@ -4606,7 +4658,7 @@
    "problems": [],
    "status": "graded",
    "score": 4,
-   "why": "MISMATCH: The record name 'CCC Ponds SRMA' does not match POTA's name 'CCC Ponds/Pinedale Pathway BLM Recreation Management Area' (score 0.40) (+1 more flag)."
+   "why": "MISMATCH: The record name 'CCC Ponds SRMA' does not match POTA's name 'CCC Ponds/Pinedale Pathway BLM Recreation Management Area' (score 0.50) (+1 more flag)."
   },
   {
    "ref": "US-10850",
@@ -4703,8 +4755,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Cody Canal BLM Recreation Management Area",
      "record_name": "South Fork Shoshone River-Cody Canal"
     },
@@ -4729,14 +4781,14 @@
     },
     "T9": {
      "last_edit": "2026-10-20",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "MISMATCH: The record name 'South Fork Shoshone River-Cody Canal' does not match POTA's name 'Cody Canal BLM Recreation Management Area' (score 0.67) (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 14 m outside the outline."
   },
   {
    "ref": "US-10854",
@@ -5228,8 +5280,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "WEAK",
-     "score": 0.833,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Killpecker Sand Dunes Open Play Area BLM Recreation Management Area",
      "record_name": "Killpecker Sand Dunes Open Play Area"
     },
@@ -5244,7 +5296,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-109.013493868376 41.960108268544]"
+     "note": "Ring Self-intersection[-109.013493868376 41.960108268544]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -5276,8 +5334,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 5,
-   "why": "SPILL: The outline covers 33% of US-6195 Crookston Ranch Cultural Site BLM Historic Preservation Site, with no 2-fer row (maybe the wrong record) (+2 more flags)."
+   "score": 4,
+   "why": "SPILL: The outline covers 33% of US-6195 Crookston Ranch Cultural Site BLM Historic Preservation Site, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "US-10865",
@@ -5337,7 +5395,7 @@
    "name": "Lone Tree Trail BLM Recreation Management Area",
    "key_name": "Lone Tree Trail BLM Recreation Management Area",
    "type": "BLM Recreation Management Area",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     44.2927,
     -107.493
@@ -5383,11 +5441,8 @@
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "detail_m": 0.08,
-     "declared_m": null,
-     "coordinate_step_m": 0.08,
-     "median_spacing_m": 0.0,
-     "flag": "PASS"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -5395,52 +5450,69 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: : down for this run (failed 3 times)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-10877",
    "name": "Mallo Trail BLM Recreation Management Area",
    "key_name": "Mallo Trail BLM Recreation Management Area",
    "type": "BLM Recreation Management Area",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     44.0819,
     -104.056
    ],
-   "outline_from": [],
+   "outline_from": [
+    "trails/US-10877.json"
+   ],
    "acres_drawn": null,
-   "records": [],
+   "records": [
+    {
+     "id": "trl:US-10877",
+     "name": "Mallo Trail BLM Recreation Management Area",
+     "type": "trail",
+     "layer": "trails/US-10877.json"
+    }
+   ],
    "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Mallo Trail BLM Recreation Management Area",
+     "record_name": "Mallo Trail BLM Recreation Management Area"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": "trail",
+     "record_kind": "trail",
+     "flag": "PASS"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T6": {
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -5448,13 +5520,15 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: : down for this run (failed 3 times)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "Nothing could be tested."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-10878",
@@ -5502,8 +5576,8 @@
      "outline_acres": 25223.0
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "McCullough Peaks BLM Wilderness Area",
      "record_name": "McCullough Peaks"
     },
@@ -5533,8 +5607,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'McCullough Peaks' does not match POTA's name 'McCullough Peaks BLM Wilderness Area' (score 0.67)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-10879",
@@ -5590,8 +5664,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "WEAK",
-     "score": 0.8,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Muddy Mountain Environmental Education Area BLM Recreation Management Area",
      "record_name": "Muddy Mountain Environmental Education Area SRMA"
     },
@@ -5621,8 +5695,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 75 m outside the outline (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 75 m outside the outline."
   },
   {
    "ref": "US-10880",
@@ -5732,7 +5806,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.667,
      "pota_name": "Pine Creek Camp Area BLM Recreation Management Area",
      "record_name": "Pine Creek SRMA"
     },
@@ -5763,7 +5837,7 @@
    "problems": [],
    "status": "graded",
    "score": 4,
-   "why": "MISMATCH: The record name 'Pine Creek SRMA' does not match POTA's name 'Pine Creek Camp Area BLM Recreation Management Area' (score 0.50) (+1 more flag)."
+   "why": "MISMATCH: The record name 'Pine Creek SRMA' does not match POTA's name 'Pine Creek Camp Area BLM Recreation Management Area' (score 0.67) (+1 more flag)."
   },
   {
    "ref": "US-10882",
@@ -5982,7 +6056,7 @@
    "name": "Salt Lick Trail BLM Recreation Management Area",
    "key_name": "Salt Lick Trail BLM Recreation Management Area",
    "type": "BLM Recreation Management Area",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     44.0708,
     -107.349
@@ -6028,11 +6102,8 @@
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "detail_m": 0.08,
-     "declared_m": null,
-     "coordinate_step_m": 0.08,
-     "median_spacing_m": 0.0,
-     "flag": "PASS"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -6040,13 +6111,15 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: : down for this run (failed 3 times)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-10887",
@@ -6102,8 +6175,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Scab Creek BLM Recreation Management Area",
      "record_name": "Scab Creek SRMA"
     },
@@ -6133,8 +6206,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "MISMATCH: The record name 'Scab Creek SRMA' does not match POTA's name 'Scab Creek BLM Recreation Management Area' (score 0.67) (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 25 m outside the outline."
   },
   {
    "ref": "US-10888",
@@ -6243,8 +6316,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Shirley Mountains BLM Recreation Management Area",
      "record_name": "Shirley Mountains SRMA"
     },
@@ -6259,7 +6332,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-106.581119132794 42.1863187986175]"
+     "note": "Ring Self-intersection[-106.581119132794 42.1863187986175]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -6286,8 +6365,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 8,
-   "why": "MISMATCH: The record name 'Shirley Mountains SRMA' does not match POTA's name 'Shirley Mountains BLM Recreation Management Area' (score 0.67) (+3 more flags)."
+   "score": 5,
+   "why": "SPILL: The outline covers 69% of US-10882 Prior Flat Campground BLM Recreation Management Area, with no 2-fer row (maybe the wrong record) (+2 more flags)."
   },
   {
    "ref": "US-10890",
@@ -6331,8 +6410,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Sinks Canyon BLM Recreation Management Area",
      "record_name": "Sinks Canyon"
     },
@@ -6347,7 +6426,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6372,8 +6457,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 8,
-   "why": "OUTSIDE: POTA's pin is 3.1 km outside the outline (+3 more flags)."
+   "score": 5,
+   "why": "OUTSIDE: POTA's pin is 3.1 km outside the outline (+2 more flags)."
   },
   {
    "ref": "US-10891",
@@ -6588,8 +6673,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Welch Ranch BLM Recreation Management Area",
      "record_name": "Welch Ranch SRMA"
     },
@@ -6619,8 +6704,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Welch Ranch SRMA' does not match POTA's name 'Welch Ranch BLM Recreation Management Area' (score 0.67)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-10895",
@@ -6676,8 +6761,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Weston Hills BLM Recreation Management Area",
      "record_name": "Weston Hills SRMA"
     },
@@ -6707,8 +6792,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 6,
-   "why": "OUTSIDE: POTA's pin is 1.4 km outside the outline (+1 more flag)."
+   "score": 3,
+   "why": "OUTSIDE: POTA's pin is 1.4 km outside the outline."
   },
   {
    "ref": "US-10896",
@@ -6818,7 +6903,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.4,
+     "score": 0.667,
      "pota_name": "Greater Sand Dunes BLM Special Recreation Management Area",
      "record_name": "Killpecker Sand Dunes SRMA"
     },
@@ -6833,7 +6918,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-109.01349377972 41.9601083066192]"
+     "note": "Ring Self-intersection[-109.01349377972 41.9601083066192]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -6990,8 +7081,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "WEAK",
-     "score": 0.75,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Poison Spider OHV Park BLM Recreation Management Area",
      "record_name": "Poison Spider OHV Park SRMA"
     },
@@ -7021,8 +7112,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "WEAK: The record name 'Poison Spider OHV Park SRMA' does not match POTA's name 'Poison Spider OHV Park BLM Recreation Management Area' (score 0.75)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-10900",
@@ -7114,8 +7205,8 @@
      "outline_acres": 13066.9
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.714,
+     "flag": "WEAK",
+     "score": 0.833,
      "pota_name": "Alkali Basin/East Sand Dunes BLM WSA Wilderness Area",
      "record_name": "Alkali Basin-East Sand Dunes"
     },
@@ -7145,8 +7236,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Alkali Basin-East Sand Dunes' does not match POTA's name 'Alkali Basin/East Sand Dunes BLM WSA Wilderness Area' (score 0.71)."
+   "score": 1,
+   "why": "WEAK: The record name 'Alkali Basin-East Sand Dunes' does not match POTA's name 'Alkali Basin/East Sand Dunes BLM WSA Wilderness Area' (score 0.83)."
   },
   {
    "ref": "US-10902",
@@ -7195,7 +7286,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.667,
      "pota_name": "Alkali Creek BLM WSA Wilderness Area",
      "record_name": "Alkali Creek"
     },
@@ -7226,7 +7317,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "MISMATCH: The record name 'Alkali Creek' does not match POTA's name 'Alkali Creek BLM WSA Wilderness Area' (score 0.50)."
+   "why": "MISMATCH: The record name 'Alkali Creek' does not match POTA's name 'Alkali Creek BLM WSA Wilderness Area' (score 0.67)."
   },
   {
    "ref": "US-10926",
@@ -7275,7 +7366,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.667,
      "pota_name": "Buffalo Hump BLM WSA Wilderness Area",
      "record_name": "Buffalo Hump"
     },
@@ -7306,7 +7397,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "MISMATCH: The record name 'Buffalo Hump' does not match POTA's name 'Buffalo Hump BLM WSA Wilderness Area' (score 0.50)."
+   "why": "MISMATCH: The record name 'Buffalo Hump' does not match POTA's name 'Buffalo Hump BLM WSA Wilderness Area' (score 0.67)."
   },
   {
    "ref": "US-10927",
@@ -7355,7 +7446,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.667,
      "pota_name": "Cedar Mountain BLM WSA Wilderness Area",
      "record_name": "Cedar Mountain"
     },
@@ -7386,7 +7477,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "MISMATCH: The record name 'Cedar Mountain' does not match POTA's name 'Cedar Mountain BLM WSA Wilderness Area' (score 0.50)."
+   "why": "MISMATCH: The record name 'Cedar Mountain' does not match POTA's name 'Cedar Mountain BLM WSA Wilderness Area' (score 0.67)."
   },
   {
    "ref": "US-10928",
@@ -7426,7 +7517,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.667,
      "pota_name": "Copper Mountain BLM WSA Wilderness Area",
      "record_name": "Copper Mountain"
     },
@@ -7457,7 +7548,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "MISMATCH: The record name 'Copper Mountain' does not match POTA's name 'Copper Mountain BLM WSA Wilderness Area' (score 0.50)."
+   "why": "MISMATCH: The record name 'Copper Mountain' does not match POTA's name 'Copper Mountain BLM WSA Wilderness Area' (score 0.67)."
   },
   {
    "ref": "US-10929",
@@ -7550,7 +7641,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.667,
      "pota_name": "Devil's Playground BLM WSA Wilderness Area",
      "record_name": "Devil's Playground-Twin Buttes"
     },
@@ -7566,7 +7657,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-109.669100764534 41.1666210952312]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-109.669100764534 41.1666210952312]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -7600,7 +7697,7 @@
    "problems": [],
    "status": "graded",
    "score": 9,
-   "why": "MISMATCH: The record name 'Devil's Playground-Twin Buttes' does not match POTA's name 'Devil's Playground BLM WSA Wilderness Area' (score 0.50) (+4 more flags)."
+   "why": "MISMATCH: The record name 'Devil's Playground-Twin Buttes' does not match POTA's name 'Devil's Playground BLM WSA Wilderness Area' (score 0.67) (+4 more flags)."
   },
   {
    "ref": "US-10931",
@@ -7640,7 +7737,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.667,
      "pota_name": "Ferris Mountains BLM WSA Wilderness Area",
      "record_name": "Ferris Mountains"
     },
@@ -7671,7 +7768,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "MISMATCH: The record name 'Ferris Mountains' does not match POTA's name 'Ferris Mountains BLM WSA Wilderness Area' (score 0.50)."
+   "why": "MISMATCH: The record name 'Ferris Mountains' does not match POTA's name 'Ferris Mountains BLM WSA Wilderness Area' (score 0.67)."
   },
   {
    "ref": "US-10932",
@@ -7720,7 +7817,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.667,
      "pota_name": "Honeycomb Buttes BLM WSA Wilderness Area",
      "record_name": "Honeycomb Buttes"
     },
@@ -7751,7 +7848,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "MISMATCH: The record name 'Honeycomb Buttes' does not match POTA's name 'Honeycomb Buttes BLM WSA Wilderness Area' (score 0.50)."
+   "why": "MISMATCH: The record name 'Honeycomb Buttes' does not match POTA's name 'Honeycomb Buttes BLM WSA Wilderness Area' (score 0.67)."
   },
   {
    "ref": "US-10933",
@@ -7791,7 +7888,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.333,
+     "score": 0.5,
      "pota_name": "Honeycombs BLM WSA Wilderness Area",
      "record_name": "Honeycombs"
     },
@@ -7822,7 +7919,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "MISMATCH: The record name 'Honeycombs' does not match POTA's name 'Honeycombs BLM WSA Wilderness Area' (score 0.33)."
+   "why": "MISMATCH: The record name 'Honeycombs' does not match POTA's name 'Honeycombs BLM WSA Wilderness Area' (score 0.50)."
   },
   {
    "ref": "US-10934",
@@ -7862,7 +7959,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.333,
+     "score": 0.5,
      "pota_name": "Lake Mountain BLM WSA Wilderness Area",
      "record_name": "Lake Mountain"
     },
@@ -7893,7 +7990,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "MISMATCH: The record name 'Lake Mountain' does not match POTA's name 'Lake Mountain BLM WSA Wilderness Area' (score 0.33)."
+   "why": "MISMATCH: The record name 'Lake Mountain' does not match POTA's name 'Lake Mountain BLM WSA Wilderness Area' (score 0.50)."
   },
   {
    "ref": "US-10935",
@@ -7942,7 +8039,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.667,
      "pota_name": "Medicine Lodge BLM WSA Wilderness Area",
      "record_name": "Medicine Lodge"
     },
@@ -7973,7 +8070,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "MISMATCH: The record name 'Medicine Lodge' does not match POTA's name 'Medicine Lodge BLM WSA Wilderness Area' (score 0.50)."
+   "why": "MISMATCH: The record name 'Medicine Lodge' does not match POTA's name 'Medicine Lodge BLM WSA Wilderness Area' (score 0.67)."
   },
   {
    "ref": "US-10936",
@@ -8031,7 +8128,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.667,
      "pota_name": "Owl Creek BLM WSA Wilderness Area",
      "record_name": "Owl Creek"
     },
@@ -8062,7 +8159,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "MISMATCH: The record name 'Owl Creek' does not match POTA's name 'Owl Creek BLM WSA Wilderness Area' (score 0.50)."
+   "why": "MISMATCH: The record name 'Owl Creek' does not match POTA's name 'Owl Creek BLM WSA Wilderness Area' (score 0.67)."
   },
   {
    "ref": "US-10937",
@@ -8102,7 +8199,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.667,
      "pota_name": "Raymond Mountain BLM WSA Wilderness Area",
      "record_name": "Raymond Mountain"
     },
@@ -8133,7 +8230,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "MISMATCH: The record name 'Raymond Mountain' does not match POTA's name 'Raymond Mountain BLM WSA Wilderness Area' (score 0.50)."
+   "why": "MISMATCH: The record name 'Raymond Mountain' does not match POTA's name 'Raymond Mountain BLM WSA Wilderness Area' (score 0.67)."
   },
   {
    "ref": "US-10938",
@@ -8173,7 +8270,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.667,
      "pota_name": "Red Butte BLM WSA Wilderness Area",
      "record_name": "Red Butte"
     },
@@ -8204,7 +8301,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "MISMATCH: The record name 'Red Butte' does not match POTA's name 'Red Butte BLM WSA Wilderness Area' (score 0.50)."
+   "why": "MISMATCH: The record name 'Red Butte' does not match POTA's name 'Red Butte BLM WSA Wilderness Area' (score 0.67)."
   },
   {
    "ref": "US-10939",
@@ -8243,8 +8340,8 @@
      "outline_acres": 8789.5
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.6,
+     "flag": "WEAK",
+     "score": 0.75,
      "pota_name": "Red Creek Badlands BLM WSA Wilderness Area",
      "record_name": "Red Creek Badlands"
     },
@@ -8274,8 +8371,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Red Creek Badlands' does not match POTA's name 'Red Creek Badlands BLM WSA Wilderness Area' (score 0.60)."
+   "score": 1,
+   "why": "WEAK: The record name 'Red Creek Badlands' does not match POTA's name 'Red Creek Badlands BLM WSA Wilderness Area' (score 0.75)."
   },
   {
    "ref": "US-10940",
@@ -8315,7 +8412,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.333,
+     "score": 0.5,
      "pota_name": "Red Lake BLM WSA Wilderness Area",
      "record_name": "Red Lake"
     },
@@ -8346,7 +8443,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "MISMATCH: The record name 'Red Lake' does not match POTA's name 'Red Lake BLM WSA Wilderness Area' (score 0.33)."
+   "why": "MISMATCH: The record name 'Red Lake' does not match POTA's name 'Red Lake BLM WSA Wilderness Area' (score 0.50)."
   },
   {
    "ref": "US-10941",
@@ -8395,7 +8492,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.667,
      "pota_name": "Sand Dunes BLM WSA Wilderness Area",
      "record_name": "Sand Dunes"
     },
@@ -8439,7 +8536,7 @@
    "problems": [],
    "status": "graded",
    "score": 6,
-   "why": "MISMATCH: The record name 'Sand Dunes' does not match POTA's name 'Sand Dunes BLM WSA Wilderness Area' (score 0.50) (+1 more flag)."
+   "why": "MISMATCH: The record name 'Sand Dunes' does not match POTA's name 'Sand Dunes BLM WSA Wilderness Area' (score 0.67) (+1 more flag)."
   },
   {
    "ref": "US-10942",
@@ -8479,7 +8576,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.667,
      "pota_name": "South Pinnacles BLM WSA Wilderness Area",
      "record_name": "South Pinnacles"
     },
@@ -8518,7 +8615,7 @@
    "problems": [],
    "status": "graded",
    "score": 6,
-   "why": "MISMATCH: The record name 'South Pinnacles' does not match POTA's name 'South Pinnacles BLM WSA Wilderness Area' (score 0.50) (+1 more flag)."
+   "why": "MISMATCH: The record name 'South Pinnacles' does not match POTA's name 'South Pinnacles BLM WSA Wilderness Area' (score 0.67) (+1 more flag)."
   },
   {
    "ref": "US-10943",
@@ -8558,7 +8655,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.667,
      "pota_name": "Trapper Creek BLM WSA Wilderness Area",
      "record_name": "Trapper Creek"
     },
@@ -8574,7 +8671,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-107.581921383708 44.4605298086718]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-107.581921383708 44.4605298086718]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8594,7 +8697,7 @@
    "problems": [],
    "status": "graded",
    "score": 5,
-   "why": "MISMATCH: The record name 'Trapper Creek' does not match POTA's name 'Trapper Creek BLM WSA Wilderness Area' (score 0.50) (+2 more flags)."
+   "why": "MISMATCH: The record name 'Trapper Creek' does not match POTA's name 'Trapper Creek BLM WSA Wilderness Area' (score 0.67) (+2 more flags)."
   },
   {
    "ref": "US-10944",
@@ -8634,7 +8737,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.667,
      "pota_name": "Twin Buttes BLM WSA Wilderness Area",
      "record_name": "Devil's Playground-Twin Buttes"
     },
@@ -8650,7 +8753,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-109.669100764534 41.1666210952312]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-109.669100764534 41.1666210952312]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -8684,7 +8793,7 @@
    "problems": [],
    "status": "graded",
    "score": 9,
-   "why": "MISMATCH: The record name 'Devil's Playground-Twin Buttes' does not match POTA's name 'Twin Buttes BLM WSA Wilderness Area' (score 0.50) (+4 more flags)."
+   "why": "MISMATCH: The record name 'Devil's Playground-Twin Buttes' does not match POTA's name 'Twin Buttes BLM WSA Wilderness Area' (score 0.67) (+4 more flags)."
   },
   {
    "ref": "US-10945",
@@ -8724,7 +8833,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.667,
      "pota_name": "Whitehorse Creek BLM WSA Wilderness Area",
      "record_name": "Whitehorse Creek"
     },
@@ -8755,7 +8864,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "MISMATCH: The record name 'Whitehorse Creek' does not match POTA's name 'Whitehorse Creek BLM WSA Wilderness Area' (score 0.50)."
+   "why": "MISMATCH: The record name 'Whitehorse Creek' does not match POTA's name 'Whitehorse Creek BLM WSA Wilderness Area' (score 0.67)."
   },
   {
    "ref": "US-10946",
@@ -8942,7 +9051,7 @@
     },
     "T9": {
      "last_edit": "2026-10-20",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -9041,7 +9150,7 @@
     },
     "T9": {
      "last_edit": "2026-10-20",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -9195,8 +9304,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Bear River Divide State HMA Wildlife Area",
      "record_name": "Bear River Divide"
     },
@@ -9211,7 +9320,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "3 piece(s) under 10 m wide"
+     "note": "3 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 3
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -9233,7 +9348,7 @@
     },
     "T9": {
      "last_edit": "2026-10-20",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -9241,8 +9356,8 @@
     "record sgwyd10293: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 7,
-   "why": "MISMATCH: The record name 'Bear River Divide' does not match POTA's name 'Bear River Divide State HMA Wildlife Area' (score 0.67) (+2 more flags)."
+   "score": 4,
+   "why": "SPILL: The outline covers 47% of US-6230 Cumberland Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "US-12718",
@@ -9365,7 +9480,7 @@
     },
     "T9": {
      "last_edit": "2026-10-20",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -9715,7 +9830,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-107.356212288947 42.5074517767504]"
+     "note": "Ring Self-intersection[-107.356212288947 42.5074517767504]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9805,7 +9926,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -9882,7 +10003,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -9971,7 +10092,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -10017,8 +10138,8 @@
      "outline_acres": 4555.6
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Dubois Badlands BLM Wilderness Area",
      "record_name": "Dubois Badlands"
     },
@@ -10048,8 +10169,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Dubois Badlands' does not match POTA's name 'Dubois Badlands BLM Wilderness Area' (score 0.67)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-12731",
@@ -10115,8 +10236,8 @@
      "outline_acres": 87225.3
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Adobe Town BLM Wilderness Area",
      "record_name": "Adobe Town"
     },
@@ -10146,8 +10267,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Adobe Town' does not match POTA's name 'Adobe Town BLM Wilderness Area' (score 0.67)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-12732",
@@ -10186,8 +10307,8 @@
      "outline_acres": 15663.7
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Pryor Mountain BLM Wilderness Area",
      "record_name": "Pryor Mountain"
     },
@@ -10217,8 +10338,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Pryor Mountain' does not match POTA's name 'Pryor Mountain BLM Wilderness Area' (score 0.67)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-12733",
@@ -10257,8 +10378,8 @@
      "outline_acres": 22692.9
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Sheep Mountain BLM Wilderness Area",
      "record_name": "Sheep Mountain"
     },
@@ -10288,8 +10409,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Sheep Mountain' does not match POTA's name 'Sheep Mountain BLM Wilderness Area' (score 0.67)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-12734",
@@ -10337,8 +10458,8 @@
      "outline_acres": 9150.1
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Sweetwater Canyon BLM Wilderness Area",
      "record_name": "Sweetwater Canyon"
     },
@@ -10368,8 +10489,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Sweetwater Canyon' does not match POTA's name 'Sweetwater Canyon BLM Wilderness Area' (score 0.67)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-13244",
@@ -10429,90 +10550,71 @@
    "name": "Flaming Gorge - Green River Basin Scenic Byway - All-American Road National Parkway",
    "key_name": "Flaming Gorge - Green River Basin Scenic Byway - All-American Road National Parkway",
    "type": "National Parkway",
-   "grade": "approximate",
+   "grade": "pin",
    "pin": [
     41.2709,
     -109.622
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "trails/US-13245.json"
    ],
-   "acres_drawn": 44236.9,
+   "acres_drawn": null,
    "records": [
     {
-     "id": "padus#2377",
-     "name": "Flaming Gorge Reservoir National Recreation Area",
-     "type": "Recreation Management Area Recreation Management Area",
-     "category": "Fee",
-     "acres": 44237.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2377&outFields=*&returnGeometry=false&f=html"
+     "id": "trl:US-13245",
+     "name": "Flaming Gorge - Green River Basin Scenic Byway - All-American Road National Parkway",
+     "type": "trail",
+     "layer": "trails/US-13245.json"
     }
    ],
-   "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#2377"
-   ],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "OUTSIDE",
-     "metres": 1633.5
+     "flag": "NEAR",
+     "metres": 158.0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 44236.9,
-     "official_acres": 44237.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.25,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Flaming Gorge - Green River Basin Scenic Byway - All-American Road National Parkway",
-     "record_name": "Flaming Gorge Reservoir National Recreation Area"
+     "record_name": "Flaming Gorge - Green River Basin Scenic Byway - All-American Road National Parkway"
     },
     "T4": {
      "park_kind": "national park",
-     "record_kind": "recreation area",
+     "record_kind": "trail",
      "flag": "PASS"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 5
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T6": {
-     "flag": "SPILL",
-     "parks": [
-      {
-       "ref": "US-4394",
-       "name": "Ashley National Forest",
-       "share": 0.45
-      }
-     ],
-     "count": 1
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "detail_m": 0.08,
+     "declared_m": null,
+     "coordinate_step_m": 0.08,
+     "median_spacing_m": 0.0,
+     "flag": "PASS"
     },
     "T8": {
-     "flag": "DUPLICATE",
-     "parks": {
-      "US-5793": [
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#2377"
-      ]
-     },
-     "note": "same record id(s) as another park number: for KPC 13"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 10,
-   "why": "OUTSIDE: POTA's pin is 1.6 km outside the outline (+3 more flags)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 158 m outside the outline."
   },
   {
    "ref": "US-3292",
@@ -10604,7 +10706,7 @@
     },
     "T9": {
      "last_edit": "2026-02-12",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -10714,7 +10816,7 @@
     },
     "T9": {
      "last_edit": "2026-02-12",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -10825,7 +10927,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -10847,7 +10955,7 @@
     },
     "T9": {
      "last_edit": "2026-02-12",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -10957,7 +11065,7 @@
     },
     "T9": {
      "last_edit": "2026-02-12",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -11048,7 +11156,7 @@
     },
     "T9": {
      "last_edit": "2026-02-12",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -11147,7 +11255,7 @@
     },
     "T9": {
      "last_edit": "2026-02-12",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -11257,7 +11365,7 @@
     },
     "T9": {
      "last_edit": "2026-02-12",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -11367,7 +11475,7 @@
     },
     "T9": {
      "last_edit": "2026-02-12",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -11456,7 +11564,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-104.811334594347 44.381854751127]"
+     "note": "Ring Self-intersection[-104.811334594347 44.381854751127]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11470,7 +11584,7 @@
     },
     "T9": {
      "last_edit": "2026-02-12",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -11577,7 +11691,7 @@
     },
     "T9": {
      "last_edit": "2026-02-12",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -11684,7 +11798,7 @@
     },
     "T9": {
      "last_edit": "2026-02-12",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -11764,23 +11878,24 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-109.406426792027 41.4596773021129]"
+     "note": "Ring Self-intersection[-109.406426792027 41.4596773021129]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
      "parks": [
-      {
-       "ref": "US-13245",
-       "name": "Flaming Gorge - Green River Basin Scenic Byway - All-American Road National Parkway",
-       "share": 0.98
-      },
       {
        "ref": "US-5793",
        "name": "Flaming Gorge National Recreation Area",
        "share": 0.48
       }
      ],
-     "count": 2
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -11797,7 +11912,7 @@
    "problems": [],
    "status": "graded",
    "score": 4,
-   "why": "SPILL: The outline covers 98% of US-13245 Flaming Gorge - Green River Basin Scenic Byway - All-American Road National Parkway, with no 2-fer row (maybe the wrong record) (+1 more flag)."
+   "why": "SPILL: The outline covers 48% of US-5793 Flaming Gorge National Recreation Area, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "US-4403",
@@ -11854,10 +11969,10 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Medicine Bow - Routt National Forest",
-     "record_name": "Medicine Bow National Forest",
+     "record_name": "Medicine Bow National Forest + Routt National Forest",
      "worst_record": {
       "name": "Routt National Forest",
       "score": 0.333
@@ -11877,7 +11992,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-105.355146002057 42.3047331911213]; 5 piece(s) under 10 m wide; 2 hole(s) under 100 m2; 169 pieces spread over 252 km"
+     "note": "Ring Self-intersection[-105.355146002057 42.3047331911213]; 5 piece(s) under 10 m wide; 2 hole(s) under 100 m2; 169 pieces spread over 252 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 5
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -11919,8 +12040,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 10,
-   "why": "MISMATCH: The record name 'Medicine Bow National Forest' does not match POTA's name 'Medicine Bow - Routt National Forest' (score 0.67) (+5 more flags)."
+   "score": 7,
+   "why": "SPILL: The outline covers 100% of US-6133 Huston Park Wilderness Area, with no 2-fer row (maybe the wrong record) (+4 more flags)."
   },
   {
    "ref": "US-4475",
@@ -11999,10 +12120,10 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Caribou-Targhee National Forest",
-     "record_name": "Targhee National Forest",
+     "record_name": "Targhee National Forest + Caribou National Forest",
      "worst_record": {
       "name": "Caribou National Forest",
       "score": 0.5
@@ -12021,7 +12142,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-110.84985787723 43.9277408439459]; 14 piece(s) under 10 m wide; 397 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-110.84985787723 43.9277408439459]; 14 piece(s) under 10 m wide; 397 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 397,
+      "pieces": 14
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -12053,8 +12180,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 9,
-   "why": "MISMATCH: The record name 'Targhee National Forest' does not match POTA's name 'Caribou-Targhee National Forest' (score 0.50) (+4 more flags)."
+   "score": 6,
+   "why": "SPILL: The outline covers 100% of US-6226 Jedediah Smith Wilderness Area, with no 2-fer row (maybe the wrong record) (+3 more flags)."
   },
   {
    "ref": "US-4524",
@@ -12129,7 +12256,13 @@
       "SLIVERS",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-104.188000730604 44.3490823278706]; 3 piece(s) under 10 m wide; 85 pieces spread over 144 km"
+     "note": "Ring Self-intersection[-104.188000730604 44.3490823278706]; 3 piece(s) under 10 m wide; 85 pieces spread over 144 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 0,
+      "pieces": 3
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -12210,7 +12343,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-107.352556601185 44.7908749224806]; 16 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-107.352556601185 44.7908749224806]; 16 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 16,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -12298,10 +12437,10 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Bridger-Teton National Forest",
-     "record_name": "Teton National Forest",
+     "record_name": "Bridger National Forest + Teton National Forest",
      "worst_record": {
       "name": "Bridger National Forest",
       "score": 0.5
@@ -12320,7 +12459,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-110.160535840692 43.445751305095]; 3 piece(s) under 10 m wide; 983 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-110.160535840692 43.445751305095]; 3 piece(s) under 10 m wide; 983 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 983,
+      "pieces": 3
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -12332,7 +12477,7 @@
       },
       {
        "ref": "US-6227",
-       "name": "Snake River National Wild & Scenic River",
+       "name": "Snake River National Wild and Scenic River",
        "share": 0.7
       },
       {
@@ -12357,8 +12502,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 9,
-   "why": "MISMATCH: The record name 'Teton National Forest' does not match POTA's name 'Bridger-Teton National Forest' (score 0.50) (+4 more flags)."
+   "score": 6,
+   "why": "SPILL: The outline covers 100% of US-6223 Gros Ventre Wilderness Area, with no 2-fer row (maybe the wrong record) (+3 more flags)."
   },
   {
    "ref": "US-4536",
@@ -12421,7 +12566,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-109.081697911735 43.8630373894766]; 108 piece(s) under 10 m wide; 967 hole(s) under 100 m2; 118 pieces spread over 304 km"
+     "note": "Ring Self-intersection[-109.081697911735 43.8630373894766]; 108 piece(s) under 10 m wide; 967 hole(s) under 100 m2; 118 pieces spread over 304 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 967,
+      "pieces": 108
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -12448,7 +12599,7 @@
       },
       {
        "ref": "US-6207",
-       "name": "Clarks Fork of the Yellowstone National Wild & Scenic River",
+       "name": "Clarks Fork of the Yellowstone National Wild and Scenic River",
        "share": 0.98
       }
      ],
@@ -12535,11 +12686,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 133 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 133 m outside the outline."
   },
   {
    "ref": "US-4566",
@@ -12605,11 +12756,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 136 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 136 m outside the outline."
   },
   {
    "ref": "US-4573",
@@ -12675,11 +12826,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 112 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 112 m outside the outline."
   },
   {
    "ref": "US-4574",
@@ -12747,11 +12898,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-4576",
@@ -12817,11 +12968,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 33 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 33 m outside the outline."
   },
   {
    "ref": "US-4578",
@@ -12889,11 +13040,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-5793",
@@ -12979,13 +13130,7 @@
      "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "DUPLICATE",
-     "parks": {
-      "US-13245": [
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#2377"
-      ]
-     },
-     "note": "same record id(s) as another park number: for KPC 13"
+     "flag": "PASS"
     },
     "T9": {
      "flag": "CAN'T TELL",
@@ -12994,8 +13139,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "SPILL: The outline covers 100% of US-4394 Ashley National Forest, with no 2-fer row (maybe the wrong record) (+1 more flag)."
+   "score": 3,
+   "why": "SPILL: The outline covers 100% of US-4394 Ashley National Forest, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "US-6107",
@@ -13075,7 +13220,7 @@
     },
     "T9": {
      "last_edit": "2026-02-12",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -13173,7 +13318,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -13284,7 +13429,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -13395,7 +13540,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -13415,10 +13560,21 @@
     -104.709
    ],
    "outline_from": [
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 0.3,
+   "acres_drawn": 4.7,
    "records": [
+    {
+     "id": "sgwyb30",
+     "name": "Register Cliff",
+     "type": "Wyoming State Parks, Historic Sites & Trails (park, state GIS table)",
+     "acres": 5.0,
+     "acres_from": "the key's acres",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "link": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0/query?objectIds=30&outFields=*&returnGeometry=false&f=html",
+     "name_field": "site_name"
+    },
     {
      "id": "padus#292690",
      "name": "Register Cliff",
@@ -13429,16 +13585,20 @@
     }
    ],
    "record_ids": [
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0#30",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#292690"
    ],
    "tests": {
     "T1": {
      "flag": "NEAR",
-     "metres": 74.6
+     "metres": 46.0
     },
     "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 0.3
+     "flag": "PASS",
+     "outline_acres": 4.7,
+     "official_acres": 5.0,
+     "times": 1.06,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
      "flag": "PASS",
@@ -13453,7 +13613,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 2
+     "pieces": 1
     },
     "T6": {
      "flag": "PASS"
@@ -13466,14 +13626,15 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-02-12",
+     "read": "2026-11-08",
+     "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "NEAR: POTA's pin is 75 m outside the outline."
+   "why": "NEAR: POTA's pin is 46 m outside the outline."
   },
   {
    "ref": "US-6112",
@@ -13555,7 +13716,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -13633,7 +13794,7 @@
     },
     "T9": {
      "last_edit": "2026-10-20",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -13729,7 +13890,8 @@
     -104.815
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0"
    ],
    "acres_drawn": 0.5,
    "records": [
@@ -13740,10 +13902,19 @@
      "category": "Fee",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=273791&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgwyb17",
+     "name": "Historic Governors' Mansion",
+     "type": "Wyoming State Parks, Historic Sites & Trails (park, state GIS table)",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "link": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0/query?objectIds=17&outFields=*&returnGeometry=false&f=html",
+     "name_field": "site_name"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#273791"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#273791",
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0#17"
    ],
    "tests": {
     "T1": {
@@ -13758,7 +13929,7 @@
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Historic Governors' Mansion State Historic Site",
-     "record_name": "Historic Governor's Mansion"
+     "record_name": "Historic Governors' Mansion"
     },
     "T4": {
      "park_kind": null,
@@ -13780,8 +13951,9 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-02-12",
+     "read": "2026-11-08",
+     "flag": "PASS"
     }
    },
    "problems": [],
@@ -13848,7 +14020,13 @@
       "SELF-INTERSECTION",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-104.423296487109 43.8406301666225]; 331 pieces spread over 214 km"
+     "note": "Ring Self-intersection[-104.423296487109 43.8406301666225]; 331 pieces spread over 214 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13875,53 +14053,72 @@
    "name": "Camp Douglas WW-II POW Officers' Club State Historic Site",
    "key_name": "Camp Douglas WW-II POW Officers' Club State Historic Site",
    "type": "State Historic Site",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     42.7588,
     -105.406
    ],
-   "outline_from": [],
-   "acres_drawn": null,
-   "records": [],
-   "record_ids": [],
+   "outline_from": [
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0"
+   ],
+   "acres_drawn": 1.4,
+   "records": [
+    {
+     "id": "sgwyb50",
+     "name": "Camp Douglas",
+     "type": "Wyoming State Parks, Historic Sites & Trails (park, state GIS table)",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "link": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0/query?objectIds=50&outFields=*&returnGeometry=false&f=html",
+     "name_field": "site_name"
+    }
+   ],
+   "record_ids": [
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0#50"
+   ],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "NO FIGURE",
+     "outline_acres": 1.4
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "MISMATCH",
+     "score": 0.286,
+     "pota_name": "Camp Douglas WW-II POW Officers' Club State Historic Site",
+     "record_name": "Camp Douglas"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": null,
+     "record_kind": "state park",
+     "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "PASS",
+     "pieces": 1
     },
     "T6": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "CAN'T TELL",
-     "note": "no record id"
+     "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "last_edit": "2026-02-12",
+     "read": "2026-11-08",
+     "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "Nothing could be tested."
+   "score": 3,
+   "why": "MISMATCH: The record name 'Camp Douglas' does not match POTA's name 'Camp Douglas WW-II POW Officers' Club State Historic Site' (score 0.29)."
   },
   {
    "ref": "US-6118",
@@ -14003,7 +14200,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -14076,9 +14273,10 @@
     -105.398
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0"
    ],
-   "acres_drawn": 8.3,
+   "acres_drawn": 8.5,
    "records": [
     {
      "id": "padus#292660",
@@ -14089,10 +14287,21 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=292660&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgwyb7",
+     "name": "Ames Monument",
+     "type": "Wyoming State Parks, Historic Sites & Trails (park, state GIS table)",
+     "acres": 8.0,
+     "acres_from": "the key's acres",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "link": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0/query?objectIds=7&outFields=*&returnGeometry=false&f=html",
+     "name_field": "site_name"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#292660"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#292660",
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0#7"
    ],
    "tests": {
     "T1": {
@@ -14101,9 +14310,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 8.3,
+     "outline_acres": 8.5,
      "official_acres": 8.0,
-     "times": 1.04,
+     "times": 1.06,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -14132,8 +14341,9 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-02-12",
+     "read": "2026-11-08",
+     "flag": "PASS"
     }
    },
    "problems": [],
@@ -14228,7 +14438,8 @@
     -105.61
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0"
    ],
    "acres_drawn": 208.3,
    "records": [
@@ -14241,10 +14452,21 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=273792&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgwyb48",
+     "name": "Wyoming Territorial Prison ",
+     "type": "Wyoming State Parks, Historic Sites & Trails (park, state GIS table)",
+     "acres": 208.0,
+     "acres_from": "the key's acres",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "link": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0/query?objectIds=48&outFields=*&returnGeometry=false&f=html",
+     "name_field": "site_name"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#273792"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#273792",
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0#48"
    ],
    "tests": {
     "T1": {
@@ -14284,8 +14506,9 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-02-12",
+     "read": "2026-11-08",
+     "flag": "PASS"
     }
    },
    "problems": [],
@@ -14402,7 +14625,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -14469,7 +14692,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.668,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -14656,7 +14885,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -14746,80 +14975,53 @@
    "name": "National Historic Trails Interpretive Center National Historic Site",
    "key_name": "National Historic Trails Interpretive Center National Historic Site",
    "type": "National Historic Site",
-   "grade": "approximate",
+   "grade": "pin",
    "pin": [
     42.8663,
     -106.337
    ],
-   "outline_from": [
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0"
-   ],
-   "acres_drawn": 217.0,
-   "records": [
-    {
-     "id": "rst10719",
-     "name": "National Historic Trails SRMA",
-     "type": "Bureau of Land Management",
-     "acres": 217.4,
-     "acres_from": "acres field",
-     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-     "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?objectIds=10719&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
-    }
-   ],
-   "record_ids": [
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#10719"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "OUTSIDE",
-     "metres": 8217.8
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 217.0,
-     "official_acres": 217.4,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.0,
-     "pota_name": "National Historic Trails Interpretive Center National Historic Site",
-     "record_name": "National Historic Trails SRMA"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": null,
-     "record_kind": null,
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "SLIVERS",
-     "pieces": 42,
-     "flags": [
-      "SLIVERS"
-     ],
-     "note": "1 piece(s) under 10 m wide"
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 7,
-   "why": "OUTSIDE: POTA's pin is 8.2 km outside the outline (+2 more flags)."
+   "score": 0,
+   "why": "Nothing could be tested."
   },
   {
    "ref": "US-6130",
@@ -15020,8 +15222,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "WEAK",
+     "score": 0.8,
      "pota_name": "Dry Creek Petrified Tree BLM Interpretive Site",
      "record_name": "Dry Creek Petrified Tree SRMA"
     },
@@ -15051,8 +15253,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Dry Creek Petrified Tree SRMA' does not match POTA's name 'Dry Creek Petrified Tree BLM Interpretive Site' (score 0.67)."
+   "score": 1,
+   "why": "WEAK: The record name 'Dry Creek Petrified Tree SRMA' does not match POTA's name 'Dry Creek Petrified Tree BLM Interpretive Site' (score 0.80)."
   },
   {
    "ref": "US-6133",
@@ -15262,7 +15464,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -15276,7 +15484,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-10-30",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -15322,8 +15530,8 @@
      "outline_acres": 4563.5
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Encampment River Canyon BLM Recreation Management Area",
      "record_name": "Encampment River Canyon"
     },
@@ -15359,8 +15567,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "MISMATCH: The record name 'Encampment River Canyon' does not match POTA's name 'Encampment River Canyon BLM Recreation Management Area' (score 0.67) (+1 more flag)."
+   "score": 1,
+   "why": "DUPLICATE: Another park number uses the same record: US-6130."
   },
   {
    "ref": "US-6137",
@@ -15373,10 +15581,21 @@
     -106.827
    ],
    "outline_from": [
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 696.9,
+   "acres_drawn": 730.8,
    "records": [
+    {
+     "id": "sgwyb44",
+     "name": "Fort Phil Kearny",
+     "type": "Wyoming State Parks, Historic Sites & Trails (park, state GIS table)",
+     "acres": 717.0,
+     "acres_from": "the key's acres",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "link": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0/query?objectIds=44&outFields=*&returnGeometry=false&f=html",
+     "name_field": "site_name"
+    },
     {
      "id": "padus#292678",
      "name": "Fort Phil Kearny",
@@ -15389,6 +15608,7 @@
     }
    ],
    "record_ids": [
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0#44",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#292678"
    ],
    "tests": {
@@ -15398,9 +15618,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 696.9,
-     "official_acres": 697.0,
-     "times": 1.0,
+     "outline_acres": 730.8,
+     "official_acres": 717.0,
+     "times": 1.02,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -15429,8 +15649,9 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-02-12",
+     "read": "2026-11-08",
+     "flag": "PASS"
     }
    },
    "problems": [],
@@ -15492,8 +15713,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Hole-in-the-Wall BLM Recreation Management Area",
      "record_name": "Hole-in-the-Wall SRMA"
     },
@@ -15508,7 +15729,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-106.813460075771 43.5137456331496]"
+     "note": "Ring Self-intersection[-106.813460075771 43.5137456331496]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -15527,8 +15754,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 7,
-   "why": "OUTSIDE: POTA's pin is 646 m outside the outline (+2 more flags)."
+   "score": 4,
+   "why": "OUTSIDE: POTA's pin is 646 m outside the outline (+1 more flag)."
   },
   {
    "ref": "US-6139",
@@ -15610,7 +15837,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -15717,13 +15944,13 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "WEAK",
-     "score": 0.75,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Middle Fork Powder River BLM Recreation Management Area",
      "record_name": "Middle Fork of the Powder River SRMA",
      "worst_record": {
       "name": "Middle Fork SRMA",
-      "score": 0.5
+      "score": 0.667
      }
     },
     "T4": {
@@ -15737,7 +15964,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-107.190609930577 43.5304814193869]"
+     "note": "Ring Self-intersection[-107.190609930577 43.5304814193869]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -15769,8 +16002,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 5,
-   "why": "SPILL: The outline covers 100% of US-6143 Outlaw Cave Trail BLM Recreation Management Area, with no 2-fer row (maybe the wrong record) (+2 more flags)."
+   "score": 4,
+   "why": "SPILL: The outline covers 100% of US-6143 Outlaw Cave Trail BLM Recreation Management Area, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "US-6141",
@@ -15863,7 +16096,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -15883,9 +16116,10 @@
     -106.947
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0"
    ],
-   "acres_drawn": 166.0,
+   "acres_drawn": 169.2,
    "records": [
     {
      "id": "padus#292677",
@@ -15896,10 +16130,21 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=292677&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgwyb41",
+     "name": "Fort Fred Steele",
+     "type": "Wyoming State Parks, Historic Sites & Trails (park, state GIS table)",
+     "acres": 166.0,
+     "acres_from": "the key's acres",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "link": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0/query?objectIds=41&outFields=*&returnGeometry=false&f=html",
+     "name_field": "site_name"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#292677"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#292677",
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0#41"
    ],
    "tests": {
     "T1": {
@@ -15908,9 +16153,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 166.0,
+     "outline_acres": 169.2,
      "official_acres": 166.0,
-     "times": 1.0,
+     "times": 1.02,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -15939,8 +16184,9 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-02-12",
+     "read": "2026-11-08",
+     "flag": "PASS"
     }
    },
    "problems": [],
@@ -15953,7 +16199,7 @@
    "name": "Outlaw Cave Trail BLM Recreation Management Area",
    "key_name": "Outlaw Cave Trail BLM Recreation Management Area",
    "type": "BLM Recreation Management Area",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     43.589,
     -106.948
@@ -15999,11 +16245,8 @@
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "detail_m": 0.08,
-     "declared_m": null,
-     "coordinate_step_m": 0.08,
-     "median_spacing_m": 0.0,
-     "flag": "PASS"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -16011,13 +16254,15 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: : down for this run (failed 3 times)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-6144",
@@ -16186,7 +16431,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -16282,10 +16527,21 @@
     -107.133
    ],
    "outline_from": [
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 138.2,
+   "acres_drawn": 204.0,
    "records": [
+    {
+     "id": "sgwyb34",
+     "name": "Independence Rock",
+     "type": "Wyoming State Parks, Historic Sites & Trails (park, state GIS table)",
+     "acres": 204.0,
+     "acres_from": "the key's acres",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "link": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0/query?objectIds=34&outFields=*&returnGeometry=false&f=html",
+     "name_field": "site_name"
+    },
     {
      "id": "padus#292683",
      "name": "Independence Rock",
@@ -16308,6 +16564,7 @@
     }
    ],
    "record_ids": [
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0#34",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#292683",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#273790"
    ],
@@ -16318,9 +16575,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 138.2,
-     "official_acres": 139.0,
-     "times": 1.01,
+     "outline_acres": 204.0,
+     "official_acres": 204.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -16336,7 +16593,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 3
+     "pieces": 1
     },
     "T6": {
      "flag": "PASS"
@@ -16349,8 +16606,9 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-02-12",
+     "read": "2026-11-08",
+     "flag": "PASS"
     }
    },
    "problems": [
@@ -16418,7 +16676,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "3 hole(s) under 100 m2"
+     "note": "3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.238,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -16556,7 +16820,7 @@
     },
     "T9": {
      "last_edit": "2026-02-12",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -16654,7 +16918,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -16743,7 +17007,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -16852,7 +17116,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -17005,7 +17269,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -17160,7 +17424,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -17264,8 +17528,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Stewart Creek BLM Herd Management Area",
      "record_name": "Stewart Creek"
     },
@@ -17295,8 +17559,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Stewart Creek' does not match POTA's name 'Stewart Creek BLM Herd Management Area' (score 0.50)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-6161",
@@ -17340,8 +17604,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Continental Peak BLM Herd Management Area",
      "record_name": "Continental Peak"
     },
@@ -17424,8 +17688,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 6,
-   "why": "MISMATCH: The record name 'Continental Peak' does not match POTA's name 'Continental Peak BLM Herd Management Area' (score 0.50) (+1 more flag)."
+   "score": 3,
+   "why": "SPILL: The outline covers 100% of US-10940 Red Lake BLM WSA Wilderness Area, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "US-6162",
@@ -17469,8 +17733,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "WEAK",
-     "score": 0.8,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Red Gulch Dinosaur Tracksite BLM Recreation Management Area",
      "record_name": "Red Gulch Dinosaur Tracksite ACEC"
     },
@@ -17500,8 +17764,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "WEAK: The record name 'Red Gulch Dinosaur Tracksite ACEC' does not match POTA's name 'Red Gulch Dinosaur Tracksite BLM Recreation Management Area' (score 0.80)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-6163",
@@ -17545,8 +17809,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Muskrat Basin BLM Herd Management Area",
      "record_name": "Muskrat Basin"
     },
@@ -17576,8 +17840,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Muskrat Basin' does not match POTA's name 'Muskrat Basin BLM Herd Management Area' (score 0.50)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-6164",
@@ -17674,8 +17938,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.333,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Triangle BLM Herd Management Area",
      "record_name": "Triangle"
     },
@@ -17713,8 +17977,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 6,
-   "why": "MISMATCH: The record name 'Triangle' does not match POTA's name 'Triangle BLM Herd Management Area' (score 0.33) (+1 more flag)."
+   "score": 3,
+   "why": "SPILL: The outline covers 76% of US-6193 South Pass Overlook BLM Interpretive Site, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "US-6166",
@@ -17758,8 +18022,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Conant Creek BLM Herd Management Area",
      "record_name": "Conant Creek"
     },
@@ -17789,8 +18053,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Conant Creek' does not match POTA's name 'Conant Creek BLM Herd Management Area' (score 0.50)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-6167",
@@ -17834,8 +18098,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Crooks Mountain BLM Herd Management Area",
      "record_name": "Crooks Mountain"
     },
@@ -17865,8 +18129,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Crooks Mountain' does not match POTA's name 'Crooks Mountain BLM Herd Management Area' (score 0.50)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-6168",
@@ -17910,8 +18174,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Dishpan Butte BLM Herd Management Area",
      "record_name": "Dishpan Butte"
     },
@@ -17941,8 +18205,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Dishpan Butte' does not match POTA's name 'Dishpan Butte BLM Herd Management Area' (score 0.50)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-6169",
@@ -18114,7 +18378,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -18165,8 +18429,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Adobe Town BLM Herd Management Area",
      "record_name": "Adobe Town"
     },
@@ -18196,8 +18460,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 6,
-   "why": "OUTSIDE: POTA's pin is 4.1 km outside the outline (+1 more flag)."
+   "score": 3,
+   "why": "OUTSIDE: POTA's pin is 4.1 km outside the outline."
   },
   {
    "ref": "US-6172",
@@ -18241,8 +18505,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Antelope Hills BLM Herd Management Area",
      "record_name": "Antelope Hills"
     },
@@ -18272,8 +18536,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Antelope Hills' does not match POTA's name 'Antelope Hills BLM Herd Management Area' (score 0.50)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-6173",
@@ -18393,8 +18657,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.333,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Fifteenmile BLM Herd Management Area",
      "record_name": "Fifteenmile"
     },
@@ -18432,8 +18696,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 6,
-   "why": "MISMATCH: The record name 'Fifteenmile' does not match POTA's name 'Fifteenmile BLM Herd Management Area' (score 0.33) (+1 more flag)."
+   "score": 3,
+   "why": "SPILL: The outline covers 88% of US-10843 Bobcat Draw Badlands BLM WSA Wilderness Area, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "US-6175",
@@ -18589,7 +18853,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -18609,7 +18873,8 @@
     -108.792
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0"
    ],
    "acres_drawn": 1.0,
    "records": [
@@ -18622,10 +18887,21 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=292667&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgwyb18",
+     "name": "Point of Rocks Stage Station",
+     "type": "Wyoming State Parks, Historic Sites & Trails (park, state GIS table)",
+     "acres": 1.0,
+     "acres_from": "the key's acres",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "link": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0/query?objectIds=18&outFields=*&returnGeometry=false&f=html",
+     "name_field": "site_name"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#292667"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#292667",
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0#18"
    ],
    "tests": {
     "T1": {
@@ -18679,8 +18955,9 @@
      "note": "same record id(s) as another park number: for KPC 13"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-02-12",
+     "read": "2026-11-08",
+     "flag": "PASS"
     }
    },
    "problems": [],
@@ -18821,7 +19098,7 @@
     },
     "T9": {
      "last_edit": "2026-02-12",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -18939,7 +19216,9 @@
      "outline_acres": 12146.9,
      "official_acres": 12014.0,
      "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 11377.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 11,377 ac, all providers added 12,014 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -18968,7 +19247,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -19068,7 +19347,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -19225,8 +19504,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "McCullough Peaks BLM Herd Management Area",
      "record_name": "McCullough Peaks"
     },
@@ -19256,8 +19535,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'McCullough Peaks' does not match POTA's name 'McCullough Peaks BLM Herd Management Area' (score 0.50)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-6184",
@@ -19533,7 +19812,7 @@
       {
        "ref": "US-6176",
        "name": "Point of Rocks Stage Station State Historic Site",
-       "share": 1.0
+       "share": 0.99
       }
      ],
      "count": 1
@@ -19572,10 +19851,21 @@
     -108.8
    ],
    "outline_from": [
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 274.7,
+   "acres_drawn": 368.8,
    "records": [
+    {
+     "id": "sgwyb46",
+     "name": "South Pass City",
+     "type": "Wyoming State Parks, Historic Sites & Trails (park, state GIS table)",
+     "acres": 333.0,
+     "acres_from": "the key's acres",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "link": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0/query?objectIds=46&outFields=*&returnGeometry=false&f=html",
+     "name_field": "site_name"
+    },
     {
      "id": "padus#292693",
      "name": "South Pass City",
@@ -19588,18 +19878,19 @@
     }
    ],
    "record_ids": [
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0#46",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#292693"
    ],
    "tests": {
     "T1": {
-     "flag": "NEAR",
-     "metres": 29.4
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 274.7,
-     "official_acres": 275.0,
-     "times": 1.0,
+     "outline_acres": 368.8,
+     "official_acres": 333.0,
+     "times": 1.11,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -19615,7 +19906,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 2
+     "pieces": 1
     },
     "T6": {
      "flag": "PASS"
@@ -19628,14 +19919,15 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-02-12",
+     "read": "2026-11-08",
+     "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "NEAR: POTA's pin is 29 m outside the outline."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-6190",
@@ -19997,8 +20289,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Rock Springs BLM Herd Management Area",
      "record_name": "Rock Springs"
     },
@@ -20013,7 +20305,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-109.406308722702 41.4162340128586]"
+     "note": "Ring Self-intersection[-109.406308722702 41.4162340128586]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -20024,13 +20322,13 @@
        "share": 1.0
       },
       {
-       "ref": "US-6176",
-       "name": "Point of Rocks Stage Station State Historic Site",
+       "ref": "US-6188",
+       "name": "Point of Rocks Cemetery State Historic Site",
        "share": 1.0
       },
       {
-       "ref": "US-6188",
-       "name": "Point of Rocks Cemetery State Historic Site",
+       "ref": "US-6176",
+       "name": "Point of Rocks Stage Station State Historic Site",
        "share": 1.0
       },
       {
@@ -20075,8 +20373,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 8,
-   "why": "MISMATCH: The record name 'Rock Springs' does not match POTA's name 'Rock Springs BLM Herd Management Area' (score 0.50) (+3 more flags)."
+   "score": 5,
+   "why": "SPILL: The outline covers 100% of US-6192 Superior Mail Arrow BLM Historic Preservation Site, with no 2-fer row (maybe the wrong record) (+2 more flags)."
   },
   {
    "ref": "US-6197",
@@ -20196,8 +20494,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.6,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Salt Wells Creek BLM Herd Management Area",
      "record_name": "Salt Wells Creek"
     },
@@ -20240,8 +20538,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 6,
-   "why": "MISMATCH: The record name 'Salt Wells Creek' does not match POTA's name 'Salt Wells Creek BLM Herd Management Area' (score 0.60) (+1 more flag)."
+   "score": 3,
+   "why": "SPILL: The outline covers 100% of US-10939 Red Creek Badlands BLM WSA Wilderness Area, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "US-6199",
@@ -20596,8 +20894,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Little Colorado BLM Herd Management Area",
      "record_name": "Little Colorado"
     },
@@ -20645,8 +20943,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 11,
-   "why": "FAR: POTA's pin is 11.8 km outside the outline (+2 more flags)."
+   "score": 8,
+   "why": "FAR: POTA's pin is 11.8 km outside the outline (+1 more flag)."
   },
   {
    "ref": "US-6205",
@@ -20728,7 +21026,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -20817,7 +21115,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -20828,8 +21126,8 @@
   },
   {
    "ref": "US-6207",
-   "name": "Clarks Fork of the Yellowstone National Wild & Scenic River",
-   "key_name": "Clarks Fork of the Yellowstone National Wild & Scenic River",
+   "name": "Clarks Fork of the Yellowstone National Wild and Scenic River",
+   "key_name": "Clarks Fork of the Yellowstone National Wild and Scenic River",
    "type": "National Wild & Scenic River",
    "grade": "official",
    "pin": [
@@ -20870,7 +21168,7 @@
     "T3": {
      "flag": "PASS",
      "score": 1.0,
-     "pota_name": "Clarks Fork of the Yellowstone National Wild & Scenic River",
+     "pota_name": "Clarks Fork of the Yellowstone National Wild and Scenic River",
      "record_name": "Clarks Fork Yellowstone, Wyoming National Wild and Scenic River"
     },
     "T4": {
@@ -21301,8 +21599,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "White Mountain BLM Herd Management Area",
      "record_name": "White Mountain"
     },
@@ -21345,8 +21643,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 7,
-   "why": "MISMATCH: The record name 'White Mountain' does not match POTA's name 'White Mountain BLM Herd Management Area' (score 0.50) (+2 more flags)."
+   "score": 4,
+   "why": "SPILL: The outline covers 100% of US-6203 Pilot Butte Wild Horse Scenic Tour BLM Recreation Management Area, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "US-6214",
@@ -21359,9 +21657,10 @@
     -109.97
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0"
    ],
-   "acres_drawn": 1.0,
+   "acres_drawn": 1.6,
    "records": [
     {
      "id": "padus#292663",
@@ -21372,10 +21671,19 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=292663&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgwyb25",
+     "name": "Granger Stage Station",
+     "type": "Wyoming State Parks, Historic Sites & Trails (park, state GIS table)",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "link": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0/query?objectIds=25&outFields=*&returnGeometry=false&f=html",
+     "name_field": "site_name"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#292663"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#292663",
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0#25"
    ],
    "tests": {
     "T1": {
@@ -21383,10 +21691,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1.0,
+     "flag": "OFF",
+     "outline_acres": 1.6,
      "official_acres": 1.0,
-     "times": 1.01,
+     "times": 1.58,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -21415,14 +21723,15 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-02-12",
+     "read": "2026-11-08",
+     "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 1,
+   "why": "OFF: The outline is 1.6 times bigger than the official 1 acres (2 ac drawn)."
   },
   {
    "ref": "US-6215",
@@ -21660,8 +21969,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Boulder Lake BLM Recreation Management Area",
      "record_name": "Boulder Lake SRMA"
     },
@@ -21691,8 +22000,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 6,
-   "why": "OUTSIDE: POTA's pin is 5.4 km outside the outline (+1 more flag)."
+   "score": 3,
+   "why": "OUTSIDE: POTA's pin is 5.4 km outside the outline."
   },
   {
    "ref": "US-6219",
@@ -21843,7 +22152,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.333,
+     "score": 0.5,
      "pota_name": "Fontenelle Creek BLM Recreation Management Area",
      "record_name": "Fontenelle Reservoir"
     },
@@ -21888,10 +22197,21 @@
     -110.187
    ],
    "outline_from": [
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 2.6,
+   "acres_drawn": 6.9,
    "records": [
+    {
+     "id": "sgwyb51",
+     "name": "Names Hill",
+     "type": "Wyoming State Parks, Historic Sites & Trails (park, state GIS table)",
+     "acres": 5.0,
+     "acres_from": "the key's acres",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "link": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0/query?objectIds=51&outFields=*&returnGeometry=false&f=html",
+     "name_field": "site_name"
+    },
     {
      "id": "padus#292686",
      "name": "Names Hill",
@@ -21904,18 +22224,19 @@
     }
    ],
    "record_ids": [
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0#51",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#292686"
    ],
    "tests": {
     "T1": {
      "flag": "NEAR",
-     "metres": 63.7
+     "metres": 16.8
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 2.6,
-     "official_acres": 3.0,
-     "times": 1.17,
+     "outline_acres": 6.9,
+     "official_acres": 5.0,
+     "times": 1.39,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -21944,14 +22265,15 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-02-12",
+     "read": "2026-11-08",
+     "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "NEAR: POTA's pin is 64 m outside the outline."
+   "why": "NEAR: POTA's pin is 17 m outside the outline."
   },
   {
    "ref": "US-6223",
@@ -22040,9 +22362,10 @@
     -110.388
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0"
    ],
-   "acres_drawn": 40.7,
+   "acres_drawn": 41.5,
    "records": [
     {
      "id": "padus#292675",
@@ -22053,19 +22376,30 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=292675&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgwyb33",
+     "name": "Fort Bridger",
+     "type": "Wyoming State Parks, Historic Sites & Trails (park, state GIS table)",
+     "acres": 41.0,
+     "acres_from": "the key's acres",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "link": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0/query?objectIds=33&outFields=*&returnGeometry=false&f=html",
+     "name_field": "site_name"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#292675"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#292675",
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0#33"
    ],
    "tests": {
     "T1": {
      "flag": "NEAR",
-     "metres": 50.2
+     "metres": 49.7
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 40.7,
+     "outline_acres": 41.5,
      "official_acres": 41.0,
      "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
@@ -22075,81 +22409,6 @@
      "score": 1.0,
      "pota_name": "Fort Bridger State Historic Site",
      "record_name": "Fort Bridger"
-    },
-    "T4": {
-     "park_kind": null,
-     "record_kind": "state park",
-     "flag": "CAN'T TELL"
-    },
-    "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 1,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "1 hole(s) under 100 m2"
-    },
-    "T6": {
-     "flag": "PASS"
-    },
-    "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
-    },
-    "T8": {
-     "flag": "PASS"
-    },
-    "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
-    }
-   },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 50 m outside the outline (+1 more flag)."
-  },
-  {
-   "ref": "US-6225",
-   "name": "Fort Supply State Historic Site",
-   "key_name": "Fort Supply State Historic Site",
-   "type": "State Historic Site",
-   "grade": "official",
-   "pin": [
-    41.1671,
-    -110.438
-   ],
-   "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
-   ],
-   "acres_drawn": 0.1,
-   "records": [
-    {
-     "id": "padus#292680",
-     "name": "Fort Supply",
-     "type": "Fort Supply State Park",
-     "category": "Fee",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=292680&outFields=*&returnGeometry=false&f=html"
-    }
-   ],
-   "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#292680"
-   ],
-   "tests": {
-    "T1": {
-     "flag": "NEAR",
-     "metres": 155.9
-    },
-    "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 0.1
-    },
-    "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Fort Supply State Historic Site",
-     "record_name": "Fort Supply"
     },
     "T4": {
      "park_kind": null,
@@ -22171,14 +22430,97 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-02-12",
+     "read": "2026-11-08",
+     "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "NEAR: POTA's pin is 156 m outside the outline."
+   "why": "NEAR: POTA's pin is 50 m outside the outline."
+  },
+  {
+   "ref": "US-6225",
+   "name": "Fort Supply State Historic Site",
+   "key_name": "Fort Supply State Historic Site",
+   "type": "State Historic Site",
+   "grade": "official",
+   "pin": [
+    41.1671,
+    -110.438
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0"
+   ],
+   "acres_drawn": 0.5,
+   "records": [
+    {
+     "id": "padus#292680",
+     "name": "Fort Supply",
+     "type": "Fort Supply State Park",
+     "category": "Fee",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=292680&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgwyb13",
+     "name": "Fort Supply",
+     "type": "Wyoming State Parks, Historic Sites & Trails (park, state GIS table)",
+     "layer": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
+     "link": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0/query?objectIds=13&outFields=*&returnGeometry=false&f=html",
+     "name_field": "site_name"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#292680",
+    "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0#13"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "NEAR",
+     "metres": 4.9
+    },
+    "T2": {
+     "flag": "NO FIGURE",
+     "outline_acres": 0.5
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Fort Supply State Historic Site",
+     "record_name": "Fort Supply"
+    },
+    "T4": {
+     "park_kind": null,
+     "record_kind": "state park",
+     "flag": "CAN'T TELL"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 2
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "last_edit": "2026-02-12",
+     "read": "2026-11-08",
+     "flag": "PASS"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 1,
+   "why": "NEAR: POTA's pin is 5 m outside the outline."
   },
   {
    "ref": "US-6226",
@@ -22266,8 +22608,8 @@
   },
   {
    "ref": "US-6227",
-   "name": "Snake River National Wild & Scenic River",
-   "key_name": "Snake River National Wild & Scenic River",
+   "name": "Snake River National Wild and Scenic River",
+   "key_name": "Snake River National Wild and Scenic River",
    "type": "National Wild & Scenic River",
    "grade": "approximate",
    "pin": [
@@ -22331,7 +22673,7 @@
     "T3": {
      "flag": "PASS",
      "score": 1.0,
-     "pota_name": "Snake River National Wild & Scenic River",
+     "pota_name": "Snake River National Wild and Scenic River",
      "record_name": "Snake River Headwaters, Wyoming National Wild and Scenic River"
     },
     "T4": {
@@ -22345,7 +22687,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "3 hole(s) under 100 m2"
+     "note": "3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -22367,9 +22715,9 @@
     },
     "T9": {
      "last_edit": "2025-09-16",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-09-16, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-09-16, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -22459,7 +22807,7 @@
     },
     "T9": {
      "last_edit": "2026-02-12",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -22548,7 +22896,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -22855,7 +23203,7 @@
     },
     "T9": {
      "last_edit": "2026-10-21",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },

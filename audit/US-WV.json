@@ -1,7 +1,8 @@
 {
  "area": "US-WV",
- "built": "2026-11-02",
+ "built": "2026-11-08",
  "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
  "parks": [
   {
    "ref": "US-0015",
@@ -127,10 +128,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 16995.7,
-     "official_acres": 33946.0,
-     "times": 2.0,
+     "official_acres": 16987.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -165,8 +166,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 33,946 acres (16,996 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0608",
@@ -214,10 +215,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 2742.6,
-     "official_acres": 5468.0,
-     "times": 1.99,
+     "official_acres": 2734.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -238,7 +239,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-80.8205346618746 39.8202341016991]; 2 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-80.8205346618746 39.8202341016991]; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -257,8 +264,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OFF: The outline is 2.0 times smaller than the official 5,468 acres (2,743 ac drawn) (+2 more flags)."
+   "score": 2,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-80.8205346618746 39.8202341016991]; 2 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-0629",
@@ -419,7 +426,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-79.533532202745 39.3267711669188]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-79.533532202745 39.3267711669188]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -502,7 +515,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-79.3726611524699 38.8304388416964]; 22 piece(s) under 10 m wide; 35 hole(s) under 100 m2; 161 pieces spread over 209 km"
+     "note": "Ring Self-intersection[-79.3726611524699 38.8304388416964]; 22 piece(s) under 10 m wide; 35 hole(s) under 100 m2; 161 pieces spread over 209 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 35,
+      "pieces": 22
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -703,7 +722,13 @@
       "SLIVERS",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-80.9237665219749 37.7561387567045]; 4 piece(s) under 10 m wide; 115 pieces spread over 55 km"
+     "note": "Ring Self-intersection[-80.9237665219749 37.7561387567045]; 4 piece(s) under 10 m wide; 115 pieces spread over 55 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 0,
+      "pieces": 4
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -793,15 +818,15 @@
     },
     "T9": {
      "last_edit": "2025-09-16",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-09-16, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-09-16, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-09-16, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-09-16, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-0735",
@@ -861,7 +886,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "5 piece(s) under 10 m wide"
+     "note": "5 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.017,
+      "holes": 0,
+      "pieces": 5
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -947,11 +978,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-12031",
@@ -1109,9 +1140,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -1119,7 +1150,7 @@
    ],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-12033",
@@ -1212,15 +1243,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-12034",
@@ -1302,9 +1333,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -1392,15 +1423,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-12036",
@@ -1482,15 +1513,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-12037",
@@ -1572,9 +1603,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -1582,7 +1613,7 @@
    ],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-12038",
@@ -1664,15 +1695,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-12039",
@@ -1754,15 +1785,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-12040",
@@ -1844,9 +1875,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -1854,7 +1885,7 @@
    ],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-12041",
@@ -1936,15 +1967,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-12042",
@@ -2016,7 +2047,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-81.4834215415698 38.9970004171106]"
+     "note": "Ring Self-intersection[-81.4834215415698 38.9970004171106]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2030,9 +2067,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -2120,15 +2157,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-12044",
@@ -2210,9 +2247,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -2220,7 +2257,7 @@
    ],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-12045",
@@ -2302,9 +2339,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -2312,7 +2349,7 @@
    ],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-12046",
@@ -2394,15 +2431,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-12047",
@@ -2484,15 +2521,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-12048",
@@ -2574,15 +2611,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-12049",
@@ -2664,15 +2701,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-12050",
@@ -2754,15 +2791,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-12051",
@@ -2810,10 +2847,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 66.3,
-     "official_acres": 132.0,
-     "times": 1.99,
+     "official_acres": 66.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -2833,7 +2870,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.011,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2852,8 +2895,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 132 acres (66 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
   },
   {
    "ref": "US-12052",
@@ -4053,8 +4096,10 @@
      "flag": "PASS",
      "outline_acres": 12490.5,
      "official_acres": 14307.0,
-     "times": 1.15,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 12474.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 12,474 ac, all providers added 14,307 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -4416,8 +4461,10 @@
      "flag": "PASS",
      "outline_acres": 1393.0,
      "official_acres": 2005.0,
-     "times": 1.44,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)",
+     "official_acres_low": 1114.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 1,114 ac, all providers added 2,005 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -4779,8 +4826,10 @@
      "flag": "PASS",
      "outline_acres": 385.5,
      "official_acres": 575.0,
-     "times": 1.49,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 383.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 383 ac, all providers added 575 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -4799,7 +4848,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5070,7 +5125,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.004,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5161,11 +5222,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 4.1,
-     "official_acres": 9.0,
-     "times": 2.17,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_acres": 5.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)",
+     "official_acres_low": 4.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 4 ac, all providers added 5 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -5199,8 +5262,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.2 times smaller than the official 9 acres (4 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-1813",
@@ -5615,8 +5678,10 @@
      "flag": "PASS",
      "outline_acres": 124.9,
      "official_acres": 171.0,
-     "times": 1.37,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 125.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 125 ac, all providers added 171 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -5635,7 +5700,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5728,7 +5799,13 @@
       "SELF-INTERSECTION",
       "SLIVERS"
      ],
-     "note": "Ring Self-intersection[-81.0690181152473 39.2169539814945]; 2 piece(s) under 10 m wide"
+     "note": "Ring Self-intersection[-81.0690181152473 39.2169539814945]; 2 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 0,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6707,10 +6784,10 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "George Washington & Jefferson National Forest",
-     "record_name": "George Washington National Forest",
+     "record_name": "George Washington National Forest + Jefferson National Forest",
      "worst_record": {
       "name": "Jefferson National Forest",
       "score": 0.333
@@ -6730,7 +6807,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-78.7192919286108 38.9208954173449]; 203 piece(s) under 10 m wide; 14 hole(s) under 100 m2; 304 pieces spread over 281 km"
+     "note": "Ring Self-intersection[-78.7192919286108 38.9208954173449]; 203 piece(s) under 10 m wide; 14 hole(s) under 100 m2; 304 pieces spread over 281 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.011,
+      "holes": 14,
+      "pieces": 203
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6752,8 +6835,8 @@
     "record 2638: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 7,
-   "why": "MISMATCH: The record name 'George Washington National Forest' does not match POTA's name 'George Washington & Jefferson National Forest' (score 0.67) (+4 more flags)."
+   "score": 4,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-78.7192919286108 38.9208954173449]; 203 piece(s) under 10 m wide; 14 hole(s) under 100 m2; 304 pieces spread over 281 km (+3 more flags)."
   },
   {
    "ref": "US-4556",
@@ -6819,11 +6902,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-4572",
@@ -6889,11 +6972,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 137 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 137 m outside the outline."
   },
   {
    "ref": "US-5582",
@@ -6965,7 +7048,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6979,9 +7068,9 @@
     },
     "T9": {
      "last_edit": "2025-10-09",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-10-09, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-10-09, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -7082,9 +7171,9 @@
     },
     "T9": {
      "last_edit": "2025-10-09",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-10-09, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-10-09, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -7252,7 +7341,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7266,9 +7361,9 @@
     },
     "T9": {
      "last_edit": "2025-10-09",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-10-09, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-10-09, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -7358,15 +7453,15 @@
     },
     "T9": {
      "last_edit": "2025-10-09",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-10-09, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-10-09, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-10-09, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-10-09, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-5587",
@@ -7448,15 +7543,15 @@
     },
     "T9": {
      "last_edit": "2025-10-09",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-10-09, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-10-09, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-10-09, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-10-09, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-5588",
@@ -7538,15 +7633,15 @@
     },
     "T9": {
      "last_edit": "2025-10-09",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-10-09, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-10-09, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-10-09, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-10-09, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-5589",
@@ -7618,7 +7713,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-79.9194010901992 38.3345074724358]"
+     "note": "Ring Self-intersection[-79.9194010901992 38.3345074724358]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7632,9 +7733,9 @@
     },
     "T9": {
      "last_edit": "2025-10-09",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-10-09, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-10-09, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -7722,15 +7823,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-6994",
@@ -7812,15 +7913,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-6995",
@@ -7902,9 +8003,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -7912,7 +8013,7 @@
    ],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-6996",
@@ -7994,15 +8095,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-6997",
@@ -8084,15 +8185,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-6998",
@@ -8164,7 +8265,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8178,9 +8285,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -8270,15 +8377,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7000",
@@ -8360,9 +8467,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -8370,7 +8477,7 @@
    ],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7001",
@@ -8452,15 +8559,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7002",
@@ -8533,7 +8640,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-80.702877241717 39.4826422075845]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-80.702877241717 39.4826422075845]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8547,9 +8660,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -8637,15 +8750,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7004",
@@ -8727,15 +8840,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7005",
@@ -8817,15 +8930,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7006",
@@ -8907,9 +9020,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -8917,7 +9030,7 @@
    ],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7007",
@@ -8999,15 +9112,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7008",
@@ -9089,15 +9202,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7009",
@@ -9179,15 +9292,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7010",
@@ -9269,9 +9382,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -9279,7 +9392,7 @@
    ],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7011",
@@ -9361,15 +9474,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7012",
@@ -9451,15 +9564,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7013",
@@ -9541,15 +9654,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7014",
@@ -9631,15 +9744,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7015",
@@ -9721,15 +9834,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7016",
@@ -9811,15 +9924,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7017",
@@ -9901,15 +10014,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7018",
@@ -9983,8 +10096,10 @@
      "flag": "PASS",
      "outline_acres": 664.4,
      "official_acres": 764.0,
-     "times": 1.15,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)",
+     "official_acres_low": 571.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 571 ac, all providers added 764 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -10003,7 +10118,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -10017,9 +10138,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -10109,15 +10230,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7020",
@@ -10199,15 +10320,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7021",
@@ -10289,15 +10410,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7022",
@@ -10379,15 +10500,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7023",
@@ -10469,15 +10590,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7024",
@@ -10541,7 +10662,7 @@
      "outline_acres": 20444.8,
      "official_acres": 19850.0,
      "times": 1.03,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)"
     },
     "T3": {
      "flag": "PASS",
@@ -10561,7 +10682,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-80.6598976299176 38.620640714525]; 2 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-80.6598976299176 38.620640714525]; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -10575,9 +10702,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -10665,15 +10792,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7026",
@@ -10755,15 +10882,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7027",
@@ -10823,11 +10950,13 @@
      "metres": 5864.7
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 62.3,
      "official_acres": 99.0,
-     "times": 1.59,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 62.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 62 ac, all providers added 99 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -10860,15 +10989,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-10-30",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-10-30)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 5,
-   "why": "OUTSIDE: POTA's pin is 5.9 km outside the outline (+2 more flags)."
+   "score": 4,
+   "why": "OUTSIDE: POTA's pin is 5.9 km outside the outline (+1 more flag)."
   },
   {
    "ref": "US-7028",
@@ -10950,15 +11079,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7029",
@@ -11040,15 +11169,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7030",
@@ -11130,15 +11259,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7031",
@@ -11220,15 +11349,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7032",
@@ -11310,15 +11439,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7033",
@@ -11400,9 +11529,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -11410,7 +11539,7 @@
    ],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7034",
@@ -11492,15 +11621,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7035",
@@ -11560,10 +11689,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 91.1,
-     "official_acres": 182.0,
-     "times": 2.0,
+     "official_acres": 91.1,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -11593,15 +11722,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 182 acres (91 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7036",
@@ -11683,11 +11812,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 10693.5,
      "official_acres": 21031.0,
-     "times": 1.97,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 10542.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 10,542 ac, all providers added 21,031 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -11716,15 +11847,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 21,031 acres (10,694 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7037",
@@ -11806,15 +11937,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7038",
@@ -11896,15 +12027,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7039",
@@ -11986,15 +12117,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7040",
@@ -12066,7 +12197,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "2 piece(s) under 10 m wide"
+     "note": "2 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -12080,9 +12217,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -12172,15 +12309,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7042",
@@ -12262,9 +12399,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -12272,7 +12409,7 @@
    ],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7043",
@@ -12354,9 +12491,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-10-30",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-10-30)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -12435,7 +12572,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-81.6552318831789 37.4372274713279]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-81.6552318831789 37.4372274713279]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -12449,9 +12592,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -12539,9 +12682,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -12549,7 +12692,7 @@
    ],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7046",
@@ -12631,15 +12774,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7047",
@@ -12703,7 +12846,9 @@
      "outline_acres": 5541.5,
      "official_acres": 5539.0,
      "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 5476.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 5,476 ac, all providers added 5,539 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -12732,15 +12877,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7048",
@@ -12822,9 +12967,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -12832,7 +12977,7 @@
    ],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7049",
@@ -12904,7 +13049,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "3 hole(s) under 100 m2"
+     "note": "3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -12918,9 +13069,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -13008,15 +13159,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7051",
@@ -13098,15 +13249,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7052",
@@ -13188,15 +13339,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7053",
@@ -13278,15 +13429,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7054",
@@ -13368,15 +13519,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7056",
@@ -13458,15 +13609,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7057",
@@ -13548,9 +13699,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -13638,15 +13789,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7059",
@@ -13728,9 +13879,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -13738,7 +13889,7 @@
    ],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7060",
@@ -13820,9 +13971,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -13912,15 +14063,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7062",
@@ -13993,7 +14144,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-81.1404639685496 39.1130272443943]; 2 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-81.1404639685496 39.1130272443943]; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -14007,9 +14164,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -14097,15 +14254,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7064",
@@ -14187,9 +14344,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -14197,7 +14354,7 @@
    ],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7065",
@@ -14279,9 +14436,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -14360,7 +14517,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-80.8736959327161 39.4393590975297]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-80.8736959327161 39.4393590975297]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -14374,9 +14537,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -14464,15 +14627,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7068",
@@ -14554,15 +14717,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-7069",
@@ -14785,9 +14948,9 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -14859,11 +15022,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-9742",
@@ -14929,11 +15092,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-9743",
@@ -15167,15 +15330,15 @@
     },
     "T9": {
      "last_edit": "2023-06-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-06-15, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-06-15, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-9915",
