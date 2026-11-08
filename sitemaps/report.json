@@ -210,19 +210,19 @@
    "read_date": "2026-11-01"
   }
  },
- "read_date": "2026-11-01",
+ "read_date": "2026-11-08",
  "areas": [
   "US-TN",
   "US-KY"
  ],
  "inputs": [
   "US-TN parks: data/parkinfo/US-TN.json (277)",
-  "US-KY parks: api.pota.app (193)"
+  "US-KY parks: could not read (robots)"
  ],
  "requests": {
-  "requests": 2,
+  "requests": 1,
   "cache_hits": 0,
-  "robots_refused": 0,
+  "robots_refused": 1,
   "rested": 0,
   "banned": 0,
   "errors": 0,
