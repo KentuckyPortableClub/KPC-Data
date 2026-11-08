@@ -1,0 +1,450 @@
+{
+ "about": "Nov 8 wild river boundaries (Brandon 1:04 AM): WSR and KY Wild River parks are BOUNDED parks (boundary or corridor polygon; 2-fers by overlap), never trails. source_kind: boundary = official unit/legal boundary (NPS MAP_METHOD Official NPS Park Unit Boundary, or Digitized rim-to-rim Virgin boundary); corridor = buffered/statutory corridor (NPS Buffered Centerline NHD, USFS EDW BdyDesg_WildScenicRiver, KY ONP Wild_River_Corridors).",
+ "parks": {
+  "PR-0048": {
+   "notes": [
+    "usfs: kept line: no key layer record near the pin for this polygon (park absent in key) [source_kind=corridor]"
+   ]
+  },
+  "PR-0049": {
+   "notes": [
+    "usfs: kept line: no key layer record near the pin for this polygon (park absent in key) [source_kind=corridor]"
+   ]
+  },
+  "PR-0050": {
+   "notes": [
+    "usfs: kept line: no key layer record near the pin for this polygon (park absent in key) [source_kind=corridor]"
+   ]
+  },
+  "US-0197": {
+   "notes": [
+    "nps: check - ledger only",
+    "usfs: joined in overrides: ['fwsr208', 'fwsr41'] (23803 ac vs polygon 25463 ac) [source_kind=corridor]"
+   ],
+   "joined": [
+    "fwsr208",
+    "fwsr41"
+   ],
+   "source_kind": "corridor"
+  },
+  "US-0201": {
+   "notes": [
+    "nps: check - ledger only",
+    "usfs: check - ledger only"
+   ]
+  },
+  "US-0673": {
+   "notes": [
+    "nps: already bounded: key joins ['wsrc9'] [source_kind=boundary]"
+   ]
+  },
+  "US-0677": {
+   "notes": [
+    "nps: already bounded: key joins ['wsrc31'] [source_kind=corridor]"
+   ]
+  },
+  "US-0681": {
+   "notes": [
+    "nps: already bounded (official outline in key) [source_kind=boundary]"
+   ]
+  },
+  "US-0684": {
+   "notes": [
+    "nps: joined in overrides: ['wsrc20'] (21333 ac vs polygon 21350 ac) [source_kind=corridor]"
+   ],
+   "joined": [
+    "wsrc20"
+   ],
+   "source_kind": "corridor"
+  },
+  "US-0685": {
+   "notes": [
+    "nps: already bounded (official outline in key) [source_kind=boundary]"
+   ]
+  },
+  "US-0697": {
+   "notes": [
+    "nps: already bounded: key joins ['wsrc22'] [source_kind=boundary]"
+   ]
+  },
+  "US-0883": {
+   "notes": [
+    "nps: check - ledger only",
+    "usfs: already bounded: key joins ['fwsr198', 'wsrc21', 'fwsr30'] [source_kind=corridor]"
+   ]
+  },
+  "US-0884": {
+   "notes": [
+    "nps: check - ledger only",
+    "usfs: kept line: no key layer record near the pin for this polygon (park present in key) [source_kind=corridor]"
+   ]
+  },
+  "US-0886": {
+   "notes": [
+    "nps: joined in overrides: ['wsrc23'] (13983 ac vs polygon 13902 ac) [source_kind=corridor]"
+   ],
+   "joined": [
+    "wsrc23"
+   ],
+   "source_kind": "corridor"
+  },
+  "US-0888": {
+   "notes": [
+    "nps: already bounded: key joins ['wsrc24'] [source_kind=corridor]"
+   ]
+  },
+  "US-0890": {
+   "notes": [
+    "usfs: kept line: key records ['fwsr246', 'fwsr245'] cover 25670 of 40625 ac (partial) - not joined [source_kind=corridor]"
+   ]
+  },
+  "US-0894": {
+   "notes": [
+    "nps: check - ledger only",
+    "usfs: joined in overrides: ['fwsr252', 'fwsr149', 'fwsr79'] (8379 ac vs polygon 8379 ac) [source_kind=corridor]"
+   ],
+   "joined": [
+    "fwsr252",
+    "fwsr149",
+    "fwsr79"
+   ],
+   "source_kind": "corridor"
+  },
+  "US-0895": {
+   "notes": [
+    "nps: already bounded: key joins ['wsrc12'] [source_kind=boundary]"
+   ]
+  },
+  "US-0898": {
+   "notes": [
+    "nps: already bounded: key joins ['wsrc25', 'wsrc26'] [source_kind=corridor]"
+   ]
+  },
+  "US-10103": {
+   "notes": [
+    "ky: too far from pin - ledger only"
+   ]
+  },
+  "US-10104": {
+   "notes": [
+    "usfs: kept line: no key layer record near the pin for this polygon (park absent in key) [source_kind=corridor]",
+    "ky: already bounded: ky-answer-key bwild tract from the same KY ONP Wild River Corridors layer [source_kind=corridor]"
+   ]
+  },
+  "US-10105": {
+   "notes": [
+    "ky: already bounded: ky-answer-key bwild tract from the same KY ONP Wild River Corridors layer [source_kind=corridor]"
+   ]
+  },
+  "US-10106": {
+   "notes": [
+    "ky: check - ledger only"
+   ]
+  },
+  "US-10107": {
+   "notes": [
+    "ky: too far from pin - ledger only"
+   ]
+  },
+  "US-10108": {
+   "notes": [
+    "ky: KY ONP corridor, pin inside; NOT in ky-answer-key.json (Links data) - needs a bwild tract there; not done (Links) [source_kind=corridor]"
+   ]
+  },
+  "US-10111": {
+   "notes": [
+    "ky: already bounded: ky-answer-key bwild tract from the same KY ONP Wild River Corridors layer [source_kind=corridor]"
+   ]
+  },
+  "US-10112": {
+   "notes": [
+    "ky: already bounded: ky-answer-key bwild tract from the same KY ONP Wild River Corridors layer [source_kind=corridor]"
+   ]
+  },
+  "US-10113": {
+   "notes": [
+    "ky: too far from pin - ledger only"
+   ]
+  },
+  "US-10249": {
+   "notes": [
+    "usfs: kept line: no key layer record near the pin for this polygon (park present in key) [source_kind=corridor]"
+   ]
+  },
+  "US-10251": {
+   "notes": [
+    "usfs: kept line: no key layer record near the pin for this polygon (park present in key) [source_kind=corridor]"
+   ]
+  },
+  "US-10429": {
+   "notes": [
+    "usfs: already bounded: key joins ['fwsr214'] [source_kind=corridor]"
+   ]
+  },
+  "US-10709": {
+   "notes": [
+    "usfs: joined in overrides: ['fwsr35'] (4815 ac vs polygon 4815 ac) [source_kind=corridor]",
+    "HELD: overrides has a hand ruling (Oct 22, none=True \"a different place, not this park; no outline of its own\") - not overridden; needs Brandon to confirm the corridor join"
+   ],
+   "source_kind": "corridor",
+   "held": true
+  },
+  "US-10970": {
+   "notes": [
+    "nps: check - ledger only"
+   ]
+  },
+  "US-10971": {
+   "notes": [
+    "nps: check - ledger only"
+   ]
+  },
+  "US-10972": {
+   "notes": [
+    "nps: check - ledger only"
+   ]
+  },
+  "US-10973": {
+   "notes": [
+    "nps: check - ledger only"
+   ]
+  },
+  "US-10974": {
+   "notes": [
+    "nps: check - ledger only"
+   ]
+  },
+  "US-10975": {
+   "notes": [
+    "nps: check - ledger only"
+   ]
+  },
+  "US-10976": {
+   "notes": [
+    "nps: check - ledger only"
+   ]
+  },
+  "US-11115": {
+   "notes": [
+    "nps: already bounded (official outline in key) [source_kind=boundary]"
+   ]
+  },
+  "US-11755": {
+   "notes": [
+    "nps: check - ledger only"
+   ]
+  },
+  "US-12234": {
+   "notes": [
+    "usfs: joined in overrides: ['fwsr1'] (35107 ac vs polygon 35107 ac) [source_kind=corridor]",
+    "HELD: overrides has a hand ruling (Oct 22, none=True \"a different place, not this park; no outline of its own\") - not overridden; needs Brandon to confirm the corridor join"
+   ],
+   "source_kind": "corridor",
+   "held": true
+  },
+  "US-12235": {
+   "notes": [
+    "usfs: joined in overrides: ['fwsr16', 'fwsr98'] (16467 ac vs polygon 16466 ac) [source_kind=corridor]"
+   ],
+   "joined": [
+    "fwsr16",
+    "fwsr98"
+   ],
+   "source_kind": "corridor"
+  },
+  "US-12343": {
+   "notes": [
+    "usfs: kept line: key records ['fwsr173'] cover 1931 of 8437 ac (partial) - not joined [source_kind=corridor]"
+   ]
+  },
+  "US-12347": {
+   "notes": [
+    "usfs: already bounded: key joins ['fwsr201', 'fwsr34'] [source_kind=corridor]"
+   ]
+  },
+  "US-12786": {
+   "notes": [
+    "usfs: joined in overrides: ['fwsr88'] (7011 ac vs polygon 7011 ac) [source_kind=corridor]"
+   ],
+   "joined": [
+    "fwsr88"
+   ],
+   "source_kind": "corridor"
+  },
+  "US-12787": {
+   "notes": [
+    "usfs: joined in overrides: ['fwsr89'] (1902 ac vs polygon 1902 ac) [source_kind=corridor]"
+   ],
+   "joined": [
+    "fwsr89"
+   ],
+   "source_kind": "corridor"
+  },
+  "US-12788": {
+   "notes": [
+    "usfs: kept line: no key layer record near the pin for this polygon (park present in key) [source_kind=corridor]"
+   ]
+  },
+  "US-12789": {
+   "notes": [
+    "usfs: kept line: key records ['fwsr5'] cover 1254 of 6014 ac (partial) - not joined [source_kind=corridor]"
+   ]
+  },
+  "US-12790": {
+   "notes": [
+    "usfs: kept line: key records ['fwsr8'] cover 2501 of 2992 ac (partial) - not joined [source_kind=corridor]"
+   ]
+  },
+  "US-12791": {
+   "notes": [
+    "usfs: joined in overrides: ['fwsr40', 'fwsr116'] (11545 ac vs polygon 11545 ac) [source_kind=corridor]"
+   ],
+   "joined": [
+    "fwsr40",
+    "fwsr116"
+   ],
+   "source_kind": "corridor"
+  },
+  "US-12792": {
+   "notes": [
+    "usfs: joined in overrides: ['fwsr44'] (8919 ac vs polygon 8919 ac) [source_kind=corridor]",
+    "HELD: overrides has a hand ruling (Oct 22, none=True \"a different place, not this park; no outline of its own\") - not overridden; needs Brandon to confirm the corridor join"
+   ],
+   "source_kind": "corridor",
+   "held": true
+  },
+  "US-12793": {
+   "notes": [
+    "usfs: kept line: key records ['fwsr49', 'fwsr139'] cover 33946 of 46125 ac (partial) - not joined [source_kind=corridor]"
+   ]
+  },
+  "US-12794": {
+   "notes": [
+    "usfs: joined in overrides: ['fwsr51'] (16070 ac vs polygon 16070 ac) [source_kind=corridor]"
+   ],
+   "joined": [
+    "fwsr51"
+   ],
+   "source_kind": "corridor"
+  },
+  "US-12795": {
+   "notes": [
+    "usfs: already bounded: key joins ['fwsr142'] [source_kind=corridor]"
+   ]
+  },
+  "US-12796": {
+   "notes": [
+    "usfs: joined in overrides: ['fwsr143'] (5388 ac vs polygon 5388 ac) [source_kind=corridor]"
+   ],
+   "joined": [
+    "fwsr143"
+   ],
+   "source_kind": "corridor"
+  },
+  "US-12797": {
+   "notes": [
+    "usfs: joined in overrides: ['fwsr63', 'fwsr144'] (20227 ac vs polygon 20227 ac) [source_kind=corridor]"
+   ],
+   "joined": [
+    "fwsr63",
+    "fwsr144"
+   ],
+   "source_kind": "corridor"
+  },
+  "US-12798": {
+   "notes": [
+    "usfs: joined in overrides: ['fwsr163', 'fwsr61'] (8392 ac vs polygon 8392 ac) [source_kind=corridor]",
+    "HELD: overrides has a hand ruling (Oct 22, none=True \"a different place, not this park; no outline of its own\") - not overridden; needs Brandon to confirm the corridor join"
+   ],
+   "source_kind": "corridor",
+   "held": true
+  },
+  "US-12799": {
+   "notes": [
+    "usfs: kept line: key records ['fwsr250'] cover 5573 of 7194 ac (partial) - not joined [source_kind=corridor]"
+   ]
+  },
+  "US-12800": {
+   "notes": [
+    "usfs: joined in overrides: ['fwsr168'] (9404 ac vs polygon 10331 ac) [source_kind=corridor]"
+   ],
+   "joined": [
+    "fwsr168"
+   ],
+   "source_kind": "corridor"
+  },
+  "US-12801": {
+   "notes": [
+    "usfs: joined in overrides: ['fwsr231'] (1097 ac vs polygon 1097 ac) [source_kind=corridor]"
+   ],
+   "joined": [
+    "fwsr231"
+   ],
+   "source_kind": "corridor"
+  },
+  "US-4237": {
+   "notes": [
+    "nps: kept line: no key layer record near the pin for this polygon (park absent in key) [source_kind=boundary]"
+   ]
+  },
+  "US-5622": {
+   "notes": [
+    "nps: already bounded: key joins ['wsrc8'] [source_kind=boundary]"
+   ]
+  },
+  "US-6012": {
+   "notes": [
+    "nps: check - ledger only"
+   ]
+  },
+  "US-6025": {
+   "notes": [
+    "nps: check - ledger only"
+   ]
+  },
+  "US-6207": {
+   "notes": [
+    "usfs: already bounded: key joins ['fwsr182'] [source_kind=corridor]"
+   ]
+  },
+  "US-6227": {
+   "notes": [
+    "usfs: kept line: no key layer record near the pin for this polygon (park present in key) [source_kind=corridor]"
+   ]
+  },
+  "US-7958": {
+   "notes": [
+    "ky: no match - ledger only"
+   ]
+  },
+  "US-8015": {
+   "notes": [
+    "usfs: joined in overrides: ['fwsr175', 'fwsr86'] (1364 ac vs polygon 1364 ac) [source_kind=corridor]",
+    "HELD: overrides has a hand ruling (Oct 22, none=True \"a different place, not this park; no outline of its own\") - not overridden; needs Brandon to confirm the corridor join"
+   ],
+   "source_kind": "corridor",
+   "held": true
+  },
+  "US-9758": {
+   "notes": [
+    "usfs: joined in overrides: ['fwsr180', 'fwsr6', 'fwsr95'] (16528 ac vs polygon 16528 ac) [source_kind=corridor]"
+   ],
+   "joined": [
+    "fwsr180",
+    "fwsr6",
+    "fwsr95"
+   ],
+   "source_kind": "corridor"
+  },
+  "US-9985": {
+   "notes": [
+    "usfs: already bounded: key joins ['fwsr259', 'fwsr174'] [source_kind=corridor]"
+   ]
+  },
+  "US-9992": {
+   "notes": [
+    "usfs: already bounded: key joins ['fwsr57'] [source_kind=corridor]"
+   ]
+  }
+ }
+}
