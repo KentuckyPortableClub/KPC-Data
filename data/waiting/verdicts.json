@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-08T22:33Z",
+ "checked": "2026-11-08T22:56Z",
  "switched_on": false,
  "results": [
   {
@@ -737,7 +737,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dA/86d62369fd/ouabache_trail.pdf?language_id=1"
+    "F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dA/86d62369fd/ouabache_trail.pdf?language_id=1"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1139,8 +1139,9 @@
    "path": "data/fers/US-AR.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 12 -> 81 (over 30% change)",
-    "F-2 71 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0162+US-7342, US-0164+US-7158, US-0164+US-7279",
+    "F-2 candidates 12 -> 99 (over 30% change)",
+    "F-2 only 9 of 12 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
+    "F-2 90 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0162+US-7342, US-0164+US-7158, US-0164+US-7279",
     "F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-7276+US-7298 102 km"
    ],
    "notes": [
@@ -1416,9 +1417,9 @@
    "path": "data/fers/US-NE.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 15 -> 41 (over 30% change)",
+    "F-2 candidates 15 -> 45 (over 30% change)",
     "F-2 only 11 of 15 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 30 new candidate pairs since the live file (over 10% of 15): a person looks at them first, e.g. US-0675+US-2620, US-0675+US-2622, US-0675+US-9360"
+    "F-2 34 new candidate pairs since the live file (over 10% of 15): a person looks at them first, e.g. US-0675+US-10341, US-0675+US-10372, US-0675+US-2620"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -2731,6 +2732,13 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/truth/US-IA.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/truth/US-IL.json",
    "kind": "truth",
    "why": [],
@@ -2916,7 +2924,9 @@
    "path": "data/world-key/AU.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
