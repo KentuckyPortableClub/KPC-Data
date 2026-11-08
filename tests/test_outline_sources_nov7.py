@@ -34,7 +34,13 @@ import kpc_outline_ledger as OL  # noqa: E402
 check(OL.needs_search('US-99999', rows), 'a park with no row still needs a search')
 some = next(k for k, v in rows.items() if v['verdict'].startswith('source already'))
 check(not OL.needs_search(some, rows), f'{some} (already sourced) is skipped')
-nf = next(k for k, v in rows.items() if v['verdict'] == 'nothing found' and '|' not in k and len(OL.rows_for(k, rows)) == 1)
+def _plain_nf(k, v):
+    if v['verdict'] != 'nothing found' or '|' in k or len(OL.rows_for(k, rows)) != 1:
+        return False
+    # Nov 7 trail-load: a wired / rejected / conditional trail status also means skip, so the 60-day example
+    # must be a park that still has no trail line (US-13622 was the old first hit; it is now wired).
+    return (v.get('trail') or {}).get('status') not in ('trail line wired', 'rejected', 'conditional')
+nf = next(k for k, v in rows.items() if _plain_nf(k, v))
 check(not OL.needs_search(nf, rows, today=dt.date(2026, 11, 20)) and OL.needs_search(nf, rows, today=dt.date(2027, 3, 1)),
       f'{nf} (nothing found) waits 60 days before another search')
 check(OL.load('/nonexistent.json.gz') == {}, 'a missing ledger reads as nothing searched yet')

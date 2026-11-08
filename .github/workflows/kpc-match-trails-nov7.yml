@@ -25,6 +25,8 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install requests
+      - name: Get our own intake files branch (read from git, not raw.githubusercontent.com)
+        run: git fetch --depth 1 origin intake-files:refs/remotes/origin/intake-files
       - name: Match
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # only sent to raw.githubusercontent.com
