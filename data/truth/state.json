@@ -723,64 +723,52 @@
   "US-WV": {
    "checked": 172,
    "counts": {
-    "agree": 16,
-    "handover_hints": 0,
+    "agree": 20,
+    "handover_hints": 1,
     "no_page": 0,
-    "no_size": 38,
-    "off": 5,
-    "ours_unknown": 0,
+    "no_size": 28,
+    "off": 11,
+    "ours_unknown": 5,
     "parks": 172,
     "retired": 0,
     "unsure": 101,
-    "weak": 2,
-    "with_outline": 160
+    "weak": 5,
+    "with_outline": 165
    },
    "left": 0,
    "parks": 172,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-08"
   }
  },
  "hosts": {},
  "last": {
   "areas": [
-   "US-VA"
+   "US-WV"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 10,
+   "browser": 2,
    "errors": 0,
-   "for_person": 1,
-   "for_person_urls": [
-    [
-     "https://www.virginiastateparks.gov/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.virginiastateparks.gov this run"
-    ],
-    [
-     "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
-     "HTTP 403 twice"
-    ]
-   ],
-   "requests": 598,
+   "for_person_urls": [],
+   "requests": 480,
    "rested": 0,
-   "retry403": 1,
-   "robots": 2,
-   "robots_unreadable": 1,
-   "strikes": 2
+   "robots": 0,
+   "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 17,
+   "handover_hints": 1,
    "no_size": 28,
-   "ours_unknown": 21,
-   "pages_read": 454,
-   "parks": 184,
+   "ours_unknown": 5,
+   "pages_read": 426,
+   "parks": 172,
    "retired": 0,
-   "size_agree": 50,
-   "size_off": 25,
-   "size_unsure": 53,
+   "size_agree": 20,
+   "size_off": 11,
+   "size_unsure": 101,
    "skipped_fresh": 0,
-   "with_outline": 177
+   "with_outline": 165
   },
   "when": "2026-11-08"
  },
@@ -827,7 +815,7 @@
   },
   "https://wvdnr.gov/news/": {
    "links": 166,
-   "read": "2026-11-01",
+   "read": "2026-11-08",
    "status": "ok"
   },
   "https://www.dcr.virginia.gov/news": {
