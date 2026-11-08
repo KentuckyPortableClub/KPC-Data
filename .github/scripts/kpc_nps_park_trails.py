@@ -7,6 +7,7 @@ and DATAACCESS='Unrestricted' lines are kept. Writes <out>/<UNITCODE>.geojson.gz
 [{unit, name, lines, kb, bbox}], for an in-park trail map layer or a trail park tied to an NPS unit.
 The NPS DataStore (irma.nps.gov /DataStore/DownloadFile/, irmaservices.nps.gov: robots Disallow) is NOT used: hand download only.
   python3 kpc_nps_park_trails.py --units GRSM,BUFF --out /tmp/nps-trails
+  python3 kpc_nps_park_trails.py --out /tmp/nps-trails    (no --units = every NPS unit, ~1 request a second)
   python3 kpc_nps_park_trails.py --list            (unit codes + names the service holds)"""
 import argparse, gzip, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request, urllib.robotparser
 
@@ -33,7 +34,14 @@ def robots_ok(url, fetch=None):
     return rp.can_fetch(UA['User-Agent'], url)
 
 
+PACE = float(os.environ.get('NPS_PACE') or 1.0)   # Nov 8: about one request per second to mapservices.nps.gov
+_last = [0.0]
+
+
 def get(url):
+    w = PACE - (time.time() - _last[0])
+    if w > 0: time.sleep(w)
+    _last[0] = time.time()
     for i in range(3):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=180) as f: return json.loads(f.read())
@@ -91,10 +99,15 @@ def main():
     a = ap.parse_args()
     if not robots_ok(LAYER + '/query'):
         print('::warning title=NPS trails::robots.txt refuses mapservices.nps.gov: nothing fetched'); return 0
-    if a.list:
+    def all_units():
         j = get(LAYER + '/query?' + urllib.parse.urlencode({'where': '1=1', 'outFields': 'UNITCODE,UNITNAME', 'returnDistinctValues': 'true', 'returnGeometry': 'false', 'f': 'json'}))
-        for r in sorted({(f['attributes']['UNITCODE'], f['attributes']['UNITNAME']) for f in j.get('features', [])}, key=str): print(*r, sep='\t')
+        return sorted({(f['attributes']['UNITCODE'], f['attributes']['UNITNAME']) for f in j.get('features', []) if f['attributes'].get('UNITCODE')}, key=str)
+    if a.list:
+        for r in all_units(): print(*r, sep='\t')
         return 0
+    if a.units.strip().upper() in ('', 'ALL'):   # Nov 8: no unit codes = every NPS unit the service holds
+        a.units = ','.join(u for u, _ in all_units() if re.fullmatch(r'[A-Z]{4}', str(u)))
+        print(f"all NPS units: {a.units.count(',') + 1 if a.units else 0}")
     os.makedirs(a.out, exist_ok=True); index = []
     for unit in [u.strip().upper() for u in a.units.split(',') if u.strip()]:
         try:
