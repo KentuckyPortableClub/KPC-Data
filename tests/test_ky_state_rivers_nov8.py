@@ -29,3 +29,19 @@ def test_ca_trails_pass():
     assert sum(1 for v in ROW.values() if (v.get('trail') or {}).get('qc_trq_nov8')) >= 200
     raw = (ROOT / 'data/waiting/outline-sources/trail-lines-wired-nov7.csv').read_bytes()
     assert raw.count(b'\r\n') == raw.count(b'\n')
+
+
+def test_ca_parks_canada_pass():
+    assert sum(1 for v in ROW.values() if (v.get('trail') or {}).get('ca_trails_pc_nov8')) == 812
+    assert 'inactive' in ROW['CA-2926']['trail']['ca_trails_pc_nov8'] and not (ROOT / 'data/trails/CA-2926.json').exists()
+    for r in ('CA-4775', 'CA-4778', 'CA-4782', 'CA-4784', 'CA-4798', 'CA-6075'):
+        assert 'not a trail' in ROW[r]['trail']['ca_trails_pc_nov8'] and not (ROOT / f'data/trails/{r}.json').exists()
+
+
+def test_us_worklist_pass():
+    assert (ROOT / 'data/trails/US-12959.json').exists() and 'wired' in ROW['US-12959']['trail']['us_worklist_nov8']
+    assert 'kept existing' in ROW['US-13623']['trail']['us_worklist_nov8']
+    for r in ('US-6134', 'US-10860', 'US-11319'):
+        assert 'point is not a line' in ROW[r]['trail']['us_worklist_nov8']
+    assert 'Brandon to decide' in ROW['US-13622']['trail']['us_worklist_nov8']
+    assert sum(1 for v in ROW.values() if (v.get('trail') or {}).get('us_worklist_nov8')) == 28
