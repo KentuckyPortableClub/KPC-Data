@@ -1,6 +1,6 @@
 # Engine board, 2026-11-08
 
-**One line:** 550 new candidates across 1 kinds; 97411 parks with a gap; 6 hosts blocked.
+**One line:** 550 new candidates across 1 kinds; 97411 parks with a gap; 7 hosts blocked.
 
 | kind | area | missing yesterday | missing today | found / candidate today | still missing | top why-not |
 |---|---|---|---|---|---|---|
@@ -16,7 +16,7 @@
 | outline | AR | 390 | 390 | 0 | 390 |  |
 | outline | AS | 2 | 2 | 0 | 2 |  |
 | outline | AT | 222 | 222 | 0 | 222 |  |
-| outline | AU | 3152 | 3152 | 0 | 3152 |  |
+| outline | AU | 3152 | 3149 | 0 | 3149 |  |
 | outline | AW | 1 | 1 | 0 | 1 |  |
 | outline | AX | 5 | 5 | 0 | 5 |  |
 | outline | AZ | 19 | 19 | 0 | 19 |  |
@@ -89,7 +89,7 @@
 | outline | FO | 3 | 3 | 0 | 3 |  |
 | outline | FR | 3856 | 3856 | 0 | 3856 |  |
 | outline | GA | 5 | 5 | 0 | 5 |  |
-| outline | GB | 3406 | 3406 | 28 | 3378 | blocked (6 sources could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record 232, UNLIKELY only (evidence, never a question): name: none word(s) in common 57, UNLIKELY only (evidence, never a question): name: one word(s) in common 56 |
+| outline | GB | 3406 | 3406 | 28 | 3378 | blocked (6 sources could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record 239, UNLIKELY only (evidence, never a question): name: one word(s) in common 61, UNLIKELY only (evidence, never a question): name: none word(s) in common 58 |
 | outline | GD | 16 | 16 | 0 | 16 |  |
 | outline | GE | 5 | 5 | 0 | 5 |  |
 | outline | GF | 35 | 35 | 0 | 35 |  |
@@ -279,7 +279,7 @@
 | outline | US-SD | 2 | 2 | 2 | 0 | already approved 4, check failed 2 |
 | outline | US-TN | 20 | 20 | 4 | 16 | no-layer: no official record at the pin or by name 31, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 3, already approved 2 |
 | outline | US-TX | 16 | 16 | 2 | 14 | no-layer: no official record at the pin or by name 26, already approved 2, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 2 |
-| outline | US-UT | 313 | 313 | 16 | 297 | UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks 134, UNLIKELY only (evidence, never a question): name: none word(s) in common 48, no-layer: no official record at the pin or by name 40 |
+| outline | US-UT | 313 | 313 | 16 | 297 | UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks 155, UNLIKELY only (evidence, never a question): name: none word(s) in common 50, no-layer: no official record at the pin or by name 43 |
 | outline | US-VA | 12 | 12 | 7 | 5 | already approved 6, blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record 6, UNLIKELY only (evidence, never a question): container: one record under several parks (or a management district) 4 |
 | outline | US-VT | 25 | 25 | 10 | 15 | UNLIKELY only (evidence, never a question): other kind of place (state_park vs state_forest) 22, UNLIKELY only (evidence, never a question): name: none word(s) in common 6, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 6 |
 | outline | US-WA | 67 | 67 | 32 | 35 | UNLIKELY only (evidence, never a question): name: none word(s) in common 29, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 19, no-layer: no official record at the pin or by name 12 |
@@ -304,11 +304,11 @@
 
 | kind | pass 1 | pass 2 | solved in pass 2 |
 |---|---|---|---|
-| outline | {"error": 430, "already approved": 460, "found": 174, "candidate": 617, "evidence": 2469, "blocked": 841, "not found": 2419, "pin only": 3} | null | - |
+| outline | {"error": 430, "already approved": 462, "found": 174, "candidate": 617, "evidence": 2503, "blocked": 848, "not found": 2422, "pin only": 3} | null | - |
 
 ## Blocked hosts (blocked is not "not found"; retried next night)
 
-- services.dwr.virginia.gov: blocked (host resting: 3 strikes) (116)
+- services.dwr.virginia.gov: blocked (host resting: 3 strikes) (117)
 - mapservices.nps.gov: blocked (host resting: 3 strikes) (86)
 - maps.gov.bc.ca: blocked (robots) (14)
 - tnmap.tn.gov: blocked (host resting: 3 strikes) (10)
@@ -317,6 +317,7 @@
 - mapservices.nps.gov: blocked (HTTP 403: server refuses this client) (2)
 - utility.arcgis.com: blocked (HTTP 403: server refuses this client) (2)
 - tnmap.tn.gov: blocked (HTTP 403: server refuses this client) (2)
+- www.blm.gov: blocked (HTTP 403: server refuses this client) (1)
 
 ## Rules for this run
 

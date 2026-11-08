@@ -5,14 +5,14 @@
    "verdict": "FAIL",
    "bar": "Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.",
    "measured": {
-    "rows": 7413,
-    "parks": 3639,
+    "rows": 7459,
+    "parks": 3685,
     "parks_with_hit": 329,
     "SURE": 296,
     "LIKELY": 457,
-    "UNLIKELY_evidence": 2509,
+    "UNLIKELY_evidence": 2543,
     "strong": 132,
-    "already_approved": 460,
+    "already_approved": 462,
     "open_without_whynot": 615,
     "non_official_candidates": 0,
     "unlikely_as_questions": 0,
@@ -26,11 +26,11 @@
    "top_miss_reasons": [
     {
      "reason": "not found: no-layer: no official record at the pin or by name",
-     "parks": 2419
+     "parks": 2422
     },
     {
      "reason": "evidence: UNLIKELY only : name: none word in common",
-     "parks": 1077
+     "parks": 1080
     },
     {
      "reason": "evidence: UNLIKELY only : pin not inside nor within m with a name match",
@@ -38,11 +38,11 @@
     },
     {
      "reason": "blocked: host resting",
-     "parks": 481
+     "parks": 488
     },
     {
      "reason": "already approved: already approved",
-     "parks": 460
+     "parks": 462
     }
    ],
    "examples": [
@@ -107,9 +107,9 @@
     "the finder bars need the side-by-side run (95% re-found, +25% parks) and a 40-row sample (85% YES)"
    ],
    "details": {
-    "rows": 7413,
+    "rows": 7459,
     "found_or_candidate": 550,
-    "blocked": 841,
+    "blocked": 848,
     "hit_rate": 0.074,
     "bands": {
      "STRONG": 132,
@@ -295,12 +295,12 @@
   "outline": {
    "pass1": {
     "error": 430,
-    "already approved": 460,
+    "already approved": 462,
     "found": 174,
     "candidate": 617,
-    "evidence": 2469,
-    "blocked": 841,
-    "not found": 2419,
+    "evidence": 2503,
+    "blocked": 848,
+    "not found": 2422,
     "pin only": 3
    },
    "pass2": null,
