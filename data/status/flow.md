@@ -1,4 +1,4 @@
-# Flow board (2026-11-08 15:46Z, kpc_flow.py)
+# Flow board (2026-11-08 18:31Z, kpc_flow.py)
 Every pile of work, who it waits on and when it last moved. STUCK = work in it and no move for 2+ days. Fix the STUCK ones first.
 
 ## STUCK (27)
@@ -9,14 +9,14 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 - STUCK 7 d · **50** · HELD fers files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-FL, US-GA, US-IL, US-MA, US-MI, US-NC, US-NE, US-PA, US-SD, US-TX, CA-BC, US-AK, US-CT, US-MN, US-ND, US-NH, US-NY, US-SC, US-UT, US-WV, US-DE, US-IA, US-IN, …
 - STUCK 7 d · **9** · HELD truth files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-CT, US-MA, US-MD, US-ME, US-MN, US-MS, US-NY, US-OK, US-TX
 - STUCK 7 d · **1** · 2-fer checker: found work · waits on **chat 2 + chat 11** · weekly re-test of live 2-fers · chat 2 rechecks + chat 11 grades 857 SHRUNK / GONE / MOVED rows (data/fers-check/alerts.md
-- STUCK 7 d · **1** · Storage keeper (weekly): found work · waits on **HQ** · STORAGE WARNING: KPC-Data 546 MB (line 400) / KPC-Links 621 MB (line 650) — the bot is fine; over th · HQ (storage step 2, Mon Nov 2 evening at the earliest)
+- STUCK 7 d · **1** · Storage keeper (weekly): found work · waits on **HQ** · STORAGE WARNING: KPC-Links 663 MB (line 650); KPC-Data 1090 MB (line 400) / KPC-Links 663 MB, KPC-Da · HQ: over the line = decide (squash / move files); the keeper never rewrites main
 - STUCK 7 d · **1** · T5 site checker: found work · waits on **chat 3** · 64 checks failed (tools-out site-check/summary.md) · chat 3 fixes the site
 - STUCK 6 d · **2** · questions/aliases-nov1.json waiting for an answer · waits on **chat 11** · Chat 2, Nov 1 2:45 PM (chat 11 KEY NO: 'make the name-variant joins follow my YES answers …
 - STUCK 6 d · **28** · questions/aliases-nov2.json waiting for an answer · waits on **chat 11** · Chat 2, Nov 2 11:40 AM (G-4 of the US per-park release): 28 parks that had an outline befo…
 - STUCK 6 d · **1,937** · questions/hardlook.json waiting for an answer · waits on **chat 11** · Canada Hard Look rows (outside research) read back from the layer by chat 10's reader: one…
 - STUCK 6 d · **45** · questions/nearmiss-nov2.json waiting for an answer · waits on **chat 11** · Near-miss pass Nov 2 (Brandon's outside research, KPC_nearmiss_nov2.zip): CONFIRM + POSSIB…
 - STUCK 6 d · **1** · Cell coverage (FCC): found work · waits on **HQ** · OFF until fixed: the bot read the wrong FCC fields, so every park showed carriers 'None'. Timer turn · fix kpc_cell_bot.py carrier fields
-- STUCK 6 d · **1** · key-doctor: found work · waits on **chat 10** · NOs: 431 of 723 NOs landed; 292 missing (re-applied to overrides.fixed.json); 1059 came back in the  · chat 10 (came-back NOs / stuck areas); per-park release in release-approved
+- STUCK 6 d · **1** · key-doctor: found work · waits on **chat 10** · NOs: 434 of 723 NOs landed; 289 missing (re-applied to overrides.fixed.json); 1087 came back in the  · chat 10 (came-back NOs / stuck areas); per-park release in release-approved
 - STUCK 5 d · **132** · questions/map-audit.json waiting for an answer · waits on **chat 11** · KPC 10 map audit's worst outlines (50 per area): chat 2 fixes, chat 11 / 12 answer YES (ri…
 - STUCK 5 d · **1** · Key bots: errors and silence: RED (the bot is broken) · waits on **chat 10** · 1 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots) · HQ: open the watchdog run summary for the run links
 - STUCK 5 d · **1** · Skipped-run watchdog: found work · waits on **HQ** · 2026-11-03 22:51 UTC: 2 skipped run(s) started again: kpc-collector.yml (missed Nov 03 21:16 UTC); k · nobody (it restarts them itself)
@@ -71,7 +71,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 - 1 · HELD world-key files (a check failed; data/waiting/today.md says why) · since 2026-11-07
 - 1 · HELD us-key files (a check failed; data/waiting/today.md says why) · since 2026-11-08
 - 1 · HELD wwff files (a check failed; data/waiting/today.md says why) · since 2026-11-08
-- 393 · files waiting for a grader (data/status/grade-queue.md) · since 2026-11-08
+- 397 · files waiting for a grader (data/status/grade-queue.md) · since 2026-11-08
 ### bots
 - STUCK 1 · Storage keeper (weekly): found work · since 2026-11-01
 - STUCK 1 · Cell coverage (FCC): found work · since 2026-11-02
@@ -113,7 +113,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 | 7 waiting room | HELD us-key files (a check failed; data/waiting/today.md says why) | 1 | chat 2 (fix) + chat 11 | 2026-11-08 |
 | 7 waiting room | HELD world-key files (a check failed; data/waiting/today.md says why) | 1 | chat 2 (fix) + chat 11 | 2026-11-07 |
 | 7 waiting room | HELD wwff files (a check failed; data/waiting/today.md says why) | 1 | chat 2 (fix) + chat 11 | 2026-11-08 |
-| 7 waiting room | files waiting for a grader (data/status/grade-queue.md) | 393 | chat 11 | 2026-11-08 |
+| 7 waiting room | files waiting for a grader (data/status/grade-queue.md) | 397 | chat 11 | 2026-11-08 |
 | 8 bots | 2-fer checker: found work | 1 | chat 2 + chat 11 | 2026-11-01 **STUCK** |
 | 8 bots | Cell coverage (FCC): found work | 1 | HQ | 2026-11-02 **STUCK** |
 | 8 bots | Key bots: errors and silence: RED (the bot is broken) | 1 | chat 10 | 2026-11-03 **STUCK** |
