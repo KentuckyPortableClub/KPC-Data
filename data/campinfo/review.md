@@ -2274,7 +2274,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 - **Greenbelt Park Ranger Station** (intake-US-7973, agency (outside research camping-us-oct31), status ok, no campground facts in the page text: needs browser?, 6 facts) · [www.recreation.gov](https://www.recreation.gov/camping/poi/258850)
   - booking.how = "online: www.recreation.gov" · “link “Greenbelt Park””
   - booking.url = "https://www.recreation.gov/camping/gateways/2734" · “link “Greenbelt Park” -> https://www.recreation.gov/camping/gateways/2734”
-  - fees = "$20 per night" · “backcountry sites, there are options for every camping style. Greenbelt Campground Price: $20 per night Rating: 4.3 stars (624 reviews) Gree”
+  - fees = "$20 per night" · “backcountry sites, there are options for every camping style. Greenbelt Campground Price: $20 per night Rating: 4.3 stars (630 reviews) Gree”
   - map.date_how = "web page, no date in the link" · “link “Greenbelt Park Map””
   - map.url = "https://www.nps.gov/gree/planyourvisit/maps.htm" · “link “Greenbelt Park Map” -> https://www.nps.gov/gree/planyourvisit/maps.htm”
   - phone = "(771) 208-1588" · “328300000000, -76.89722100000000 Contact & Resources Phone: (771) 208-1588 Additional Information: Additional Information Greenbelt Pa”
