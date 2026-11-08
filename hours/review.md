@@ -1,6 +1,6 @@
 # Hours, fees & permits bot: review (facts only; nothing here reaches a card until Brandon's GO)
 
-Updated 2026-11-07. Every line is the agency's own sentence (H2). Refresh every 90 days.
+Updated 2026-11-08. Every line is the agency's own sentence (H2). Refresh every 90 days.
 
 | area | parks | hours | fees | permits | nothing found | no page |
 |---|---|---|---|---|---|---|
