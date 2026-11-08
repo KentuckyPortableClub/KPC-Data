@@ -1,7 +1,7 @@
 {
  "tool": "KPC 13 same-land finder",
  "area": "CA-ON",
- "built": "2026-11-01",
+ "built": "2026-11-08",
  "about": "Pairs of POTA parks whose outlines overlap, with the five same-land tests. SAME LAND: likely and CHECK rows are questions for the checker; nothing here relabels a 2-fer.",
  "counts": {
   "parks": 1180,
@@ -12,7 +12,144 @@
   "NOT SAME": 119,
   "one_inside_the_other": 1
  },
- "left_out": [],
+ "left_out": [
+  [
+   "CA-0023",
+   "no layer address for 'Hard look~5'"
+  ],
+  [
+   "CA-0177",
+   "no layer address for 'Hard look~6'"
+  ],
+  [
+   "CA-1301",
+   "no layer address for 'trl1301'"
+  ],
+  [
+   "CA-1599",
+   "no layer address for 'trl1599'"
+  ],
+  [
+   "CA-1658",
+   "no layer address for 'Hard look~8'"
+  ],
+  [
+   "CA-1660",
+   "no layer address for 'Hard look~9'"
+  ],
+  [
+   "CA-1661",
+   "no layer address for 'Hard look~9'"
+  ],
+  [
+   "CA-1678",
+   "no layer address for 'Hard look~9'"
+  ],
+  [
+   "CA-4861",
+   "no layer address for 'Hard look~2'"
+  ],
+  [
+   "CA-4865",
+   "no layer address for 'Hard look~2'"
+  ],
+  [
+   "CA-4873",
+   "no layer address for 'Hard look~2'"
+  ],
+  [
+   "CA-4887",
+   "no layer address for 'Hard look~2'"
+  ],
+  [
+   "CA-4890",
+   "no layer address for 'Hard look~2'"
+  ],
+  [
+   "CA-5114",
+   "no layer address for 'Hard look~10'"
+  ],
+  [
+   "CA-5297",
+   "no layer address for 'Hard look~11'"
+  ],
+  [
+   "CA-5314",
+   "no layer address for 'Hard look~9'"
+  ],
+  [
+   "CA-5528",
+   "no layer address for 'Hard look~13'"
+  ],
+  [
+   "CA-5536",
+   "no layer address for 'trl5536'"
+  ],
+  [
+   "CA-5565",
+   "no layer address for 'trl5565'"
+  ],
+  [
+   "CA-5628",
+   "no layer address for 'trl5628'"
+  ],
+  [
+   "CA-5641",
+   "no layer address for 'Hard look~14'"
+  ],
+  [
+   "CA-5645",
+   "no layer address for 'Hard look~14'"
+  ],
+  [
+   "CA-5650",
+   "no layer address for 'Hard look~14'"
+  ],
+  [
+   "CA-5945",
+   "no layer address for 'Hard look~15'"
+  ],
+  [
+   "CA-5989",
+   "no layer address for 'ON-SVCA Grey'"
+  ],
+  [
+   "CA-6003",
+   "no layer address for 'trl6003'"
+  ],
+  [
+   "CA-6139",
+   "no layer address for 'Hard look~16'"
+  ],
+  [
+   "CA-6204",
+   "no layer address for 'Hard look~7'"
+  ],
+  [
+   "CA-6256",
+   "no layer address for 'Hard look~7'"
+  ],
+  [
+   "CA-6257",
+   "no layer address for 'Hard look~7'"
+  ],
+  [
+   "CA-6337",
+   "no layer address for 'Hard look~7'"
+  ],
+  [
+   "CA-6345",
+   "no layer address for 'Hard look~7'"
+  ],
+  [
+   "CA-6512",
+   "no layer address for 'Hard look~7'"
+  ],
+  [
+   "CA-6617",
+   "no layer address for 'Hard look~17'"
+  ]
+ ],
  "pairs": [
   {
    "id": "CA-1320+CA-1321",
@@ -1395,7 +1532,7 @@
    ],
    "acres": [
     929.6,
-    2736.4
+    2730.7
    ],
    "overlap_acres": 104.5,
    "verdict": "NOT SAME",
@@ -1424,11 +1561,7 @@
      ]
     ]
    },
-   "fers": [],
-   "outline_from": [
-    "live agency layer (full detail)",
-    "the club's saved simplified outline (the live layer could not be read)"
-   ]
+   "fers": []
   },
   {
    "id": "CA-5670+CA-5671",

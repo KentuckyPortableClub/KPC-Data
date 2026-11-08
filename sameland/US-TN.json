@@ -1,18 +1,43 @@
 {
  "tool": "KPC 13 same-land finder",
  "area": "US-TN",
- "built": "2026-11-01",
+ "built": "2026-11-08",
  "about": "Pairs of POTA parks whose outlines overlap, with the five same-land tests. SAME LAND: likely and CHECK rows are questions for the checker; nothing here relabels a 2-fer.",
  "counts": {
   "parks": 277,
-  "outlines": 257,
+  "outlines": 256,
   "pairs_overlapping": 88,
   "SAME LAND: likely": 4,
   "CHECK": 13,
   "NOT SAME": 71,
-  "one_inside_the_other": 3
+  "one_inside_the_other": 2
  },
- "left_out": [],
+ "left_out": [
+  [
+   "US-11181",
+   "a trail or river line, not an area"
+  ],
+  [
+   "US-3791",
+   "a trail or river line, not an area"
+  ],
+  [
+   "US-4556",
+   "a trail or river line, not an area"
+  ],
+  [
+   "US-4560",
+   "a trail or river line, not an area"
+  ],
+  [
+   "US-4577",
+   "a trail or river line, not an area"
+  ],
+  [
+   "US-8313",
+   "a trail or river line, not an area"
+  ]
+ ],
  "pairs": [
   {
    "id": "US-3933+US-7578",
@@ -77,113 +102,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-3933+US-7578@same land@36.289,-87.115",
-     "kind": "same land",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-7580+US-7581",
@@ -237,58 +156,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-7580+US-7581@same land@36.302,-85.813",
-     "kind": "same land",
-     "live": true
-    },
-    {
-     "id": "US-7580+US-7581@same land@36.302,-85.813",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-7580+US-7581@same land@36.302,-85.813",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-7580+US-7581@same land@36.302,-85.813",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-7580+US-7581@same land@36.302,-85.813",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-7580+US-7581@same land@36.302,-85.813",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-7580+US-7581@same land@36.302,-85.813",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-7580+US-7581@same land@36.302,-85.813",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-7580+US-7581@same land@36.302,-85.813",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-7580+US-7581@same land@36.302,-85.813",
-     "kind": "same land",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-3971+US-5499",
@@ -335,41 +203,34 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-3971+US-5499@same land@35.057,-85.429",
-     "kind": "same land",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
-   "id": "US-0538+US-3960",
+   "id": "US-2971+US-3960",
    "refs": [
-    "US-0538",
+    "US-2971",
     "US-3960"
    ],
    "names": [
-    "Reelfoot National Wildlife Refuge",
+    "Reelfoot Lake State Park",
     "Reelfoot State Wildlife Area"
    ],
    "acres": [
-    26109.0,
-    28018.4
+    20195.7,
+    22437.3
    ],
-   "overlap_acres": 25707.6,
+   "overlap_acres": 20059.5,
    "verdict": "SAME LAND: likely",
    "why": "The outlines are almost the same shape, the names are the same family, and the same agency runs both.",
    "tests": {
     "S1": "SHARES A RECORD",
     "S1_records": [
      "PAD-US:255640",
-     "PAD-US:255740",
-     "sgtne:325"
+     "PAD-US:255740"
     ],
     "S2": "SAME SHAPE",
-    "S2_of_smaller": 0.985,
-    "S2_of_larger": 0.918,
+    "S2_of_smaller": 0.993,
+    "S2_of_larger": 0.894,
     "S3": true,
     "S3_score": 100.0,
     "S3_names": [
@@ -377,12 +238,12 @@
      "reelfoot"
     ],
     "S4": false,
-    "S4_m": 5640,
+    "S4_m": 9688,
     "S5": "same",
     "S5_agencies": [
      [
-      "State fish and wildlife agency",
-      "U.S. Fish and Wildlife Service"
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "State fish and wildlife agency"
      ],
      [
       "State conservation department (TDEC; PAD-US 'SDC')",
@@ -391,23 +252,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-0538+US-3960@same land@36.427,-89.420",
-     "kind": "same land",
-     "live": true
-    },
-    {
-     "id": "US-0538+US-3960@same land@36.427,-89.420",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-0538+US-3960@same land@36.427,-89.420",
-     "kind": "same land",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-3934+US-5491",
@@ -453,13 +298,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-3934+US-5491@same land@35.344,-88.787",
-     "kind": "same land",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-3935+US-5492",
@@ -502,13 +341,56 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-3935+US-5492@area@36.335,-83.924",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
+  },
+  {
+   "id": "US-0538+US-3960",
+   "refs": [
+    "US-0538",
+    "US-3960"
+   ],
+   "names": [
+    "Reelfoot National Wildlife Refuge",
+    "Reelfoot State Wildlife Area"
+   ],
+   "acres": [
+    26109.0,
+    22437.3
+   ],
+   "overlap_acres": 20126.5,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255640",
+     "PAD-US:255740"
+    ],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.897,
+    "S2_of_larger": 0.771,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "reelfoot",
+     "reelfoot"
+    ],
+    "S4": false,
+    "S4_m": 5640,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency",
+      "U.S. Fish and Wildlife Service"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')",
+      "State fish and wildlife agency",
+      "U.S. Fish and Wildlife Service"
+     ]
+    ]
+   },
+   "fers": []
   },
   {
    "id": "US-0538+US-2971",
@@ -556,18 +438,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-0538+US-2971@same land@36.419,-89.368",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-0538+US-2971@same land@36.419,-89.368",
-     "kind": "same land",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-12663+US-2952",
@@ -590,8 +461,7 @@
     "S1": "SHARES A RECORD",
     "S1_records": [
      "sgtnf:84",
-     "sgtng:44",
-     "tnd:84"
+     "sgtng:44"
     ],
     "S2": "ONE INSIDE THE OTHER",
     "S2_of_smaller": 0.979,
@@ -615,88 +485,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-12663+US-2952@same land@35.234,-84.548",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-12663+US-2952@same land@35.234,-84.548",
-     "kind": "same land",
-     "live": false
-    },
-    {
-     "id": "US-12663+US-2952@same land@35.234,-84.548",
-     "kind": "same land",
-     "live": false
-    }
-   ]
-  },
-  {
-   "id": "US-2971+US-3960",
-   "refs": [
-    "US-2971",
-    "US-3960"
-   ],
-   "names": [
-    "Reelfoot Lake State Park",
-    "Reelfoot State Wildlife Area"
-   ],
-   "acres": [
-    20195.7,
-    28018.4
-   ],
-   "overlap_acres": 20079.3,
-   "verdict": "CHECK",
-   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
-   "tests": {
-    "S1": "SHARES A RECORD",
-    "S1_records": [
-     "PAD-US:255640",
-     "PAD-US:255740"
-    ],
-    "S2": "ONE INSIDE THE OTHER",
-    "S2_of_smaller": 0.994,
-    "S2_of_larger": 0.717,
-    "S3": true,
-    "S3_score": 100.0,
-    "S3_names": [
-     "reelfoot",
-     "reelfoot"
-    ],
-    "S4": false,
-    "S4_m": 9688,
-    "S5": "same",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')",
-      "State fish and wildlife agency"
-     ],
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')",
-      "State fish and wildlife agency",
-      "U.S. Fish and Wildlife Service"
-     ]
-    ]
-   },
-   "fers": [
-    {
-     "id": "US-2971+US-3960+US-7573@area@36.444,-89.385",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2971+US-3960@area@36.370,-89.413",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-2971+US-3960@area@36.411,-89.204",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2935+US-3924",
@@ -743,13 +532,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2935+US-3924@same land@36.095,-86.385",
-     "kind": "same land",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2966+US-5498",
@@ -795,18 +578,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2966+US-5498@same land@36.559,-84.793",
-     "kind": "same land",
-     "live": true
-    },
-    {
-     "id": "US-2966+US-5498@same land@36.559,-84.793",
-     "kind": "same land",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2961+US-3957",
@@ -852,13 +624,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2961+US-3957@same land@35.837,-88.264",
-     "kind": "same land",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-11879+US-2955",
@@ -903,13 +669,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-11879+US-2955@same land@35.253,-85.285",
-     "kind": "same land",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2978+US-5501",
@@ -954,13 +714,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2978+US-5501@same land@36.464,-85.412",
-     "kind": "same land",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2936+US-5491",
@@ -1005,13 +759,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2936+US-5491@same land@35.344,-88.787",
-     "kind": "same land",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2936+US-3934",
@@ -1056,13 +804,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2936+US-3934@same land@35.371,-88.820",
-     "kind": "same land",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-6266+US-9718",
@@ -1105,13 +847,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-6266+US-9718@area@35.438,-85.536",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-11918+US-12714",
@@ -1152,18 +888,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-11918+US-12714+US-5493@area@35.096,-85.886",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-11918+US-12714@area@35.086,-85.901",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-12361+US-3928",
@@ -1177,7 +902,7 @@
    ],
    "acres": [
     10182.6,
-    18579.9
+    18579.2
    ],
    "overlap_acres": 7087.4,
    "verdict": "NOT SAME",
@@ -1206,43 +931,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-12361+US-2945+US-3928@area@35.850,-85.289",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-12361+US-2945+US-3928@area@35.850,-85.293",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12361+US-2945+US-3928@area@35.851,-85.299",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12361+US-2945+US-3928@area@35.853,-85.281",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12361+US-3928+US-5490@area@35.801,-85.272",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12361+US-3928+US-5490@area@35.811,-85.265",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12361+US-3928@area@35.834,-85.270",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-12360+US-3969",
@@ -1285,13 +974,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-12360+US-3969@area@35.120,-89.314",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-0534+US-7568",
@@ -1335,43 +1018,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-0534+US-7568@area@36.418,-87.678",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-0534+US-7568@area@36.492,-87.810",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0534+US-7568@area@36.494,-87.800",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0534+US-7568@area@36.498,-87.813",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0534+US-7568@area@36.502,-87.811",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0534+US-7568@area@36.514,-87.768",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0534+US-7568@area@36.516,-87.743",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-3944+US-6255",
@@ -1414,13 +1061,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-3944+US-6255@area@35.443,-86.015",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-3948+US-5494",
@@ -1463,18 +1104,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-0537+US-3948+US-5494@area@35.659,-89.790",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-3948+US-5494@area@35.671,-89.793",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-3969+US-6245",
@@ -1519,13 +1149,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-3969+US-6245@same land@35.033,-89.293",
-     "kind": "same land",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-11918+US-5493",
@@ -1566,18 +1190,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-11918+US-12714+US-5493@area@35.096,-85.886",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-11918+US-5493@area@35.082,-85.875",
-     "kind": "area",
-     "live": true
-    }
-   ],
+   "fers": [],
    "grades": [
     "official",
     "approximate"
@@ -1624,13 +1237,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2955+US-7880@area@35.919,-84.821",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-12361+US-2945",
@@ -1674,43 +1281,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-12361+US-2945+US-3928@area@35.850,-85.289",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-12361+US-2945+US-3928@area@35.850,-85.293",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12361+US-2945+US-3928@area@35.851,-85.299",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12361+US-2945+US-3928@area@35.853,-85.281",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12361+US-2945@area@35.832,-85.359",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12361+US-2945@area@35.840,-85.327",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-12361+US-2945@area@35.886,-85.348",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2946+US-7622",
@@ -1755,13 +1326,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2946+US-7622@area@35.582,-84.199",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2955+US-6252",
@@ -1804,13 +1369,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2955+US-6252@area@35.546,-85.032",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2956+US-6240",
@@ -1853,13 +1412,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2956+US-6240@area@36.103,-86.534",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2929+US-3959",
@@ -1902,13 +1455,50 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2929+US-3959@area@36.205,-88.889",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
+  },
+  {
+   "id": "US-2935+US-3925",
+   "refs": [
+    "US-2935",
+    "US-3925"
+   ],
+   "names": [
+    "Cedars of Lebanon State Park",
+    "Vesta Cedar Glade State Natural Area"
+   ],
+   "acres": [
+    4430.4,
+    145.2
+   ],
+   "overlap_acres": 145.1,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.999,
+    "S2_of_larger": 0.033,
+    "S3": false,
+    "S3_score": 58.1,
+    "S3_names": [
+     "cedars lebanon",
+     "vesta cedar glade"
+    ],
+    "S4": false,
+    "S4_m": 6072,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ]
+    ]
+   },
+   "fers": []
   },
   {
    "id": "US-13563+US-6275",
@@ -1922,9 +1512,9 @@
    ],
    "acres": [
     22495.5,
-    779.5
+    752.8
    ],
-   "overlap_acres": 779.5,
+   "overlap_acres": 752.8,
    "verdict": "NOT SAME",
    "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
    "tests": {
@@ -1932,7 +1522,7 @@
     "S1_records": [],
     "S2": "SMALL ONE INSIDE",
     "S2_of_smaller": 1.0,
-    "S2_of_larger": 0.035,
+    "S2_of_larger": 0.033,
     "S3": false,
     "S3_score": 36.4,
     "S3_names": [
@@ -1953,68 +1543,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-13563+US-3694+US-6275@area@34.990,-86.119",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-13563+US-6275@area@34.997,-86.110",
-     "kind": "area",
-     "live": true
-    }
-   ]
-  },
-  {
-   "id": "US-2935+US-3925",
-   "refs": [
-    "US-2935",
-    "US-3925"
-   ],
-   "names": [
-    "Cedars of Lebanon State Park",
-    "Vesta Cedar Glade State Natural Area"
-   ],
-   "acres": [
-    4430.4,
-    147.4
-   ],
-   "overlap_acres": 147.3,
-   "verdict": "NOT SAME",
-   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 1.0,
-    "S2_of_larger": 0.033,
-    "S3": false,
-    "S3_score": 58.1,
-    "S3_names": [
-     "cedars lebanon",
-     "vesta cedar glade"
-    ],
-    "S4": false,
-    "S4_m": 6072,
-    "S5": "same",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')",
-      "Tennessee Natural Areas"
-     ]
-    ]
-   },
-   "fers": [
-    {
-     "id": "US-2935+US-3925@area@36.077,-86.398",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2966+US-6239",
@@ -2057,13 +1586,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2966+US-6239@area@36.358,-84.871",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2939+US-2955",
@@ -2106,63 +1629,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2939+US-2955+US-6260@area@35.725,-84.864",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2939+US-2955+US-6260@area@35.727,-84.855",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2939+US-2955+US-6260@area@35.731,-84.865",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2939+US-2955+US-6260@area@35.732,-84.864",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2939+US-2955@area@35.721,-84.867",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2939+US-2955@area@35.721,-84.877",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2939+US-2955@area@35.722,-84.866",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2939+US-2955@area@35.725,-84.858",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2939+US-2955@area@35.726,-84.874",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2939+US-2955@area@35.732,-84.864",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2939+US-2955@area@35.867,-84.902",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-0686+US-6272",
@@ -2206,13 +1673,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-0686+US-6272@area@36.539,-84.736",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2955+US-6270",
@@ -2255,13 +1716,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2955+US-6270@area@35.719,-84.931",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-3924+US-3925",
@@ -2275,9 +1730,9 @@
    ],
    "acres": [
     9514.0,
-    147.4
+    145.2
    ],
-   "overlap_acres": 147.3,
+   "overlap_acres": 145.1,
    "verdict": "NOT SAME",
    "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
    "tests": {
@@ -2302,18 +1757,11 @@
       "Tennessee Natural Areas"
      ],
      [
-      "State conservation department (TDEC; PAD-US 'SDC')",
-      "Tennessee Natural Areas"
+      "State conservation department (TDEC; PAD-US 'SDC')"
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-3924+US-3925@area@36.077,-86.398",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-3960+US-7573",
@@ -2326,7 +1774,7 @@
     "Black Bayou Refuge Wildlife Management Area"
    ],
    "acres": [
-    28018.4,
+    22437.3,
     1373.9
    ],
    "overlap_acres": 324.7,
@@ -2337,7 +1785,7 @@
     "S1_records": [],
     "S2": "PART OVERLAP",
     "S2_of_smaller": 0.236,
-    "S2_of_larger": 0.012,
+    "S2_of_larger": 0.014,
     "S3": false,
     "S3_score": 10.5,
     "S3_names": [
@@ -2358,23 +1806,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2971+US-3960+US-7573@area@36.444,-89.385",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-3960+US-7573@area@36.445,-89.384",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-3960+US-7573@area@36.476,-89.374",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-6242+US-7615",
@@ -2419,13 +1851,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-6242+US-7615@area@36.053,-86.556",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2955+US-6260",
@@ -2468,33 +1894,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2939+US-2955+US-6260@area@35.725,-84.864",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2939+US-2955+US-6260@area@35.727,-84.855",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2939+US-2955+US-6260@area@35.731,-84.865",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2939+US-2955+US-6260@area@35.732,-84.864",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2955+US-6260@area@35.722,-84.872",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-3965+US-7623",
@@ -2537,13 +1937,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-3965+US-7623@area@36.112,-89.566",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-3940+US-3963",
@@ -2586,28 +1980,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-3940+US-3959+US-3963@area@36.278,-89.059",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-3940+US-3963@area@36.271,-89.087",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-3940+US-3963@area@36.275,-89.061",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-3940+US-3963@area@36.289,-89.056",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2945+US-3928",
@@ -2621,7 +1994,7 @@
    ],
    "acres": [
     29491.4,
-    18579.9
+    18579.2
    ],
    "overlap_acres": 75.3,
    "verdict": "NOT SAME",
@@ -2651,83 +2024,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-12361+US-2945+US-3928@area@35.850,-85.289",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-12361+US-2945+US-3928@area@35.850,-85.293",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12361+US-2945+US-3928@area@35.851,-85.299",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12361+US-2945+US-3928@area@35.853,-85.281",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2945+US-3928@area@35.767,-85.352",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2945+US-3928@area@35.784,-85.382",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2945+US-3928@area@35.785,-85.384",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2945+US-3928@area@35.791,-85.392",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2945+US-3928@area@35.808,-85.339",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-2945+US-3928@area@35.831,-85.357",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2945+US-3928@area@35.845,-85.349",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2945+US-3928@area@35.850,-85.290",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2945+US-3928@area@35.850,-85.293",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2945+US-3928@area@35.851,-85.299",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2945+US-3928@area@35.853,-85.281",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2955+US-6243",
@@ -2770,13 +2067,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2955+US-6243@area@35.187,-85.274",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-13364+US-7598",
@@ -2862,68 +2153,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2955+US-7609@area@36.357,-84.176",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2955+US-7609@area@36.364,-84.166",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2955+US-7609@area@36.365,-84.164",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2955+US-7609@area@36.370,-84.156",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2955+US-7609@area@36.422,-84.075",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2955+US-7609@area@36.450,-84.050",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-2955+US-7609@area@36.492,-83.856",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2955+US-7609@area@36.504,-83.839",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2955+US-7609@area@36.504,-83.841",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2955+US-7609@area@36.505,-83.838",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2955+US-7609@area@36.533,-83.805",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2955+US-7609@area@36.545,-83.785",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-13362+US-7598",
@@ -2967,23 +2197,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-13362+US-7598@area@35.370,-84.909",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-13362+US-7598@area@35.435,-84.992",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-13362+US-7598@area@35.464,-84.970",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-11879+US-3958",
@@ -3026,13 +2240,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-11879+US-3958@area@35.276,-85.333",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-0034+US-6264",
@@ -3076,13 +2284,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-0034+US-6264@area@35.691,-83.668",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2957+US-3937",
@@ -3125,63 +2327,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2957+US-3937@area@35.279,-90.079",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2957+US-3937@area@35.283,-90.077",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2957+US-3937@area@35.284,-90.087",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2957+US-3937@area@35.286,-90.076",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2957+US-3937@area@35.288,-90.076",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2957+US-3937@area@35.308,-90.089",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2957+US-3937@area@35.308,-90.092",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2957+US-3937@area@35.308,-90.093",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2957+US-3937@area@35.309,-90.095",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2957+US-3937@area@35.323,-90.093",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2957+US-3937@area@35.331,-90.083",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-0686+US-6248",
@@ -3225,13 +2371,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-0686+US-6248@area@36.430,-84.654",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-0686+US-5500",
@@ -3275,138 +2415,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-0686+US-5500@area@36.459,-84.703",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.467,-84.700",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-0686+US-5500@area@36.470,-84.690",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.471,-84.690",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.474,-84.688",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.480,-84.682",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.483,-84.668",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.483,-84.699",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.484,-84.703",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.486,-84.668",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.488,-84.690",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.491,-84.690",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.492,-84.706",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.493,-84.692",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.493,-84.694",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.494,-84.706",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.496,-84.687",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.496,-84.707",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.497,-84.687",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.498,-84.687",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.499,-84.687",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.499,-84.697",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.500,-84.667",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.500,-84.672",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.500,-84.678",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5500@area@36.500,-84.692",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2980+US-7611",
@@ -3450,13 +2459,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2980+US-7611@area@35.201,-86.165",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-3940+US-3959",
@@ -3499,33 +2502,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-3940+US-3959+US-3963@area@36.278,-89.059",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-3940+US-3959@area@36.260,-89.050",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-3940+US-3959@area@36.273,-89.083",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-3940+US-3959@area@36.276,-89.061",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-3940+US-3959@area@36.278,-89.059",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-3945+US-3959",
@@ -3568,23 +2545,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-3945+US-3959@area@36.247,-88.977",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-3945+US-3959@area@36.250,-88.983",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-3945+US-3959@area@36.253,-88.992",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-0703+US-7568",
@@ -3628,43 +2589,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-0703+US-7568@area@36.474,-87.831",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0703+US-7568@area@36.478,-87.828",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0703+US-7568@area@36.488,-87.850",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-0703+US-7568@area@36.489,-87.836",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0703+US-7568@area@36.491,-87.847",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0703+US-7568@area@36.491,-87.863",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0703+US-7568@area@36.493,-87.860",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-0539+US-2965",
@@ -3708,33 +2633,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-0539+US-2965@area@36.398,-88.102",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0539+US-2965@area@36.401,-88.104",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0539+US-2965@area@36.402,-88.092",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-0539+US-2965@area@36.402,-88.095",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0539+US-2965@area@36.402,-88.107",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-0019+US-7609",
@@ -3821,33 +2720,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2952+US-4525@area@35.082,-84.490",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-2952+US-4525@area@35.096,-84.534",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2952+US-4525@area@35.096,-84.547",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2952+US-4525@area@35.099,-84.538",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2952+US-4525@area@35.231,-84.544",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-3959+US-3963",
@@ -3890,23 +2763,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-3940+US-3959+US-3963@area@36.278,-89.059",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-3959+US-3963@area@36.274,-89.080",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-3959+US-3963@area@36.278,-89.059",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-12663+US-4525",
@@ -3949,33 +2806,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-12663+US-4525@area@35.083,-84.490",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-12663+US-4525@area@35.096,-84.534",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12663+US-4525@area@35.098,-84.550",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12663+US-4525@area@35.099,-84.538",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12663+US-4525@area@35.231,-84.544",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-0722+US-2930",
@@ -4018,13 +2849,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-0722+US-2930@area@35.028,-88.798",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-0537+US-2947",
@@ -4067,18 +2892,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-0537+US-2947@area@35.616,-89.885",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0537+US-2947@area@35.618,-89.877",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-4525+US-6246",
@@ -4122,23 +2936,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-4525+US-6246@area@36.129,-82.045",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-6246@area@36.130,-82.037",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-6246@area@36.141,-82.035",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2947+US-3948",
@@ -4181,13 +2979,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2947+US-3948@area@35.647,-89.834",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-12361+US-5490",
@@ -4230,38 +3022,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-12361+US-3928+US-5490@area@35.801,-85.272",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12361+US-3928+US-5490@area@35.811,-85.265",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12361+US-5490@area@35.801,-85.273",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-12361+US-5490@area@35.805,-85.273",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12361+US-5490@area@35.810,-85.266",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12361+US-5490@area@35.811,-85.265",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2974+US-4525",
@@ -4304,13 +3065,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2974+US-4525@area@36.075,-82.566",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2955+US-7599",
@@ -4353,33 +3108,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2955+US-7599@area@35.976,-84.838",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2955+US-7599@area@35.978,-84.858",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-2955+US-7599@area@35.979,-84.851",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-2955+US-7599@area@35.982,-84.841",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-2955+US-7599@area@35.988,-84.849",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2955+US-5499",
@@ -4423,13 +3152,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2955+US-5499@area@35.130,-85.364",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2955+US-3971",
@@ -4473,13 +3196,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2955+US-3971@area@35.131,-85.362",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-3928+US-5490",
@@ -4492,7 +3209,7 @@
     "Bledsoe State Forest"
    ],
    "acres": [
-    18579.9,
+    18579.2,
     8385.5
    ],
    "overlap_acres": 0.4,
@@ -4522,28 +3239,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-12361+US-3928+US-5490@area@35.801,-85.272",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12361+US-3928+US-5490@area@35.811,-85.265",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-3928+US-5490@area@35.807,-85.272",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-3928+US-5490@area@35.811,-85.265",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-3931+US-5496",
@@ -4586,13 +3282,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-3931+US-5496@area@36.058,-84.599",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2948+US-7609",
@@ -4635,18 +3325,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2948+US-7609@area@36.125,-84.421",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-2948+US-7609@area@36.214,-84.527",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-12774+US-4525",
@@ -4690,13 +3369,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-12774+US-4525@area@36.164,-82.388",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-0686+US-5498",
@@ -4740,28 +3413,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-0686+US-5498@area@36.528,-84.798",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5498@area@36.528,-84.803",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0686+US-5498@area@36.545,-84.785",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-0686+US-5498@area@36.577,-84.766",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-0034+US-7588",
@@ -4804,148 +3456,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-0034+US-7588@area@35.477,-83.922",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.478,-83.925",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.480,-83.933",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.484,-83.932",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.488,-83.932",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.491,-83.929",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.494,-83.928",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.496,-83.927",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.496,-83.934",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.497,-83.931",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.499,-83.935",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.499,-83.942",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.500,-83.949",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.501,-83.943",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.502,-83.949",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.504,-83.958",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.504,-83.973",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.506,-83.948",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.507,-83.965",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.508,-83.950",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.508,-83.954",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.559,-84.011",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.577,-84.005",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.588,-83.995",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.590,-83.978",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.595,-83.976",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.599,-83.987",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-7588@area@35.628,-83.957",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-4525+US-7622",
@@ -4989,23 +3500,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-4525+US-7622@area@35.534,-84.105",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-7622@area@35.537,-84.150",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-7622@area@35.541,-84.132",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-0537+US-5494",
@@ -5048,18 +3543,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-0537+US-3948+US-5494@area@35.659,-89.790",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0537+US-5494@area@35.658,-89.790",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-12714+US-5493",
@@ -5102,23 +3586,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-11918+US-12714+US-5493@area@35.096,-85.886",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12714+US-5493@area@35.077,-85.896",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-12714+US-5493@area@35.121,-85.891",
-     "kind": "area",
-     "live": false
-    }
-   ],
+   "fers": [],
    "grades": [
     "official",
     "approximate"
@@ -5165,13 +3633,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2955+US-3958@area@35.278,-85.332",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-3792+US-7568",
@@ -5184,7 +3646,7 @@
     "Barkley Wildlife Management Area"
    ],
    "acres": [
-    121446.7,
+    171280.9,
     13808.1
    ],
    "overlap_acres": 33.7,
@@ -5215,18 +3677,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-3792+US-7568@area@36.558,-87.907",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-3792+US-7568@area@36.567,-87.921",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-0034+US-4525",
@@ -5269,33 +3720,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-0034+US-4525+US-6936@area@35.771,-83.111",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-4525+US-6937@area@35.771,-83.111",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-4525@area@35.773,-83.111",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0034+US-4525@area@35.821,-83.212",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-0034+US-4525@area@35.825,-83.202",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2976+US-5498",
@@ -5338,13 +3763,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2976+US-5498@area@36.560,-84.930",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-2972+US-4525",
@@ -5387,13 +3806,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-2972+US-4525@area@36.189,-82.118",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-3953+US-3959",
@@ -5436,18 +3849,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-3953+US-3959@area@36.185,-88.918",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-3953+US-3959@area@36.188,-88.910",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-0685+US-3931",
@@ -5490,118 +3892,7 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-0685+US-3931@area@36.071,-84.666",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0685+US-3931@area@36.076,-84.788",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0685+US-3931@area@36.080,-84.774",
-     "kind": "area",
-     "live": true
-    },
-    {
-     "id": "US-0685+US-3931@area@36.081,-84.672",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0685+US-3931@area@36.081,-84.766",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0685+US-3931@area@36.085,-84.677",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0685+US-3931@area@36.085,-84.679",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0685+US-3931@area@36.085,-84.683",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0685+US-3931@area@36.085,-84.789",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0685+US-3931@area@36.086,-84.790",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0685+US-3931@area@36.087,-84.716",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0685+US-3931@area@36.088,-84.800",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0685+US-3931@area@36.089,-84.685",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0685+US-3931@area@36.089,-84.703",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0685+US-3931@area@36.091,-84.798",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0685+US-3931@area@36.093,-84.823",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0685+US-3931@area@36.096,-84.693",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0685+US-3931@area@36.096,-84.828",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0685+US-3931@area@36.138,-84.877",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0685+US-3931@area@36.142,-84.880",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0685+US-3931@area@36.146,-84.883",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-0685+US-3931@area@channel@36.079,-84.765",
-     "kind": "area",
-     "live": true
-    }
-   ]
+   "fers": []
   },
   {
    "id": "US-4525+US-5497",
@@ -5644,593 +3935,8 @@
      ]
     ]
    },
-   "fers": [
-    {
-     "id": "US-4525+US-5497@area@35.789,-83.013",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.791,-83.007",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.793,-83.016",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.793,-83.021",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.793,-83.025",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.795,-83.002",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.795,-83.004",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.795,-83.028",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.795,-83.032",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.797,-83.001",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.799,-83.045",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.802,-83.001",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.804,-83.002",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.806,-83.048",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.808,-83.031",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.810,-82.998",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.810,-82.999",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.811,-82.997",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.811,-83.034",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.812,-83.027",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.812,-83.031",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.813,-83.039",
-     "kind": "area",
-     "live": false
-    },
-    {
-     "id": "US-4525+US-5497@area@35.816,-83.013",
-     "kind": "area",
-     "live": false
-    }
-   ]
+   "fers": []
   }
  ],
- "club_same_land_rows": [
-  {
-   "fer_id": "US-0538+US-2971@same land@36.419,-89.368",
-   "refs": [
-    "US-0538",
-    "US-2971"
-   ],
-   "live": false,
-   "tool_verdict": "CHECK"
-  },
-  {
-   "fer_id": "US-0538+US-2971@same land@36.419,-89.368",
-   "refs": [
-    "US-0538",
-    "US-2971"
-   ],
-   "live": false,
-   "tool_verdict": "CHECK"
-  },
-  {
-   "fer_id": "US-0538+US-3960@same land@36.427,-89.420",
-   "refs": [
-    "US-0538",
-    "US-3960"
-   ],
-   "live": true,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-0538+US-3960@same land@36.427,-89.420",
-   "refs": [
-    "US-0538",
-    "US-3960"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-0538+US-3960@same land@36.427,-89.420",
-   "refs": [
-    "US-0538",
-    "US-3960"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-11879+US-2955@same land@35.253,-85.285",
-   "refs": [
-    "US-11879",
-    "US-2955"
-   ],
-   "live": true,
-   "tool_verdict": "CHECK"
-  },
-  {
-   "fer_id": "US-12663+US-2952@same land@35.234,-84.548",
-   "refs": [
-    "US-12663",
-    "US-2952"
-   ],
-   "live": false,
-   "tool_verdict": "CHECK"
-  },
-  {
-   "fer_id": "US-12663+US-2952@same land@35.234,-84.548",
-   "refs": [
-    "US-12663",
-    "US-2952"
-   ],
-   "live": false,
-   "tool_verdict": "CHECK"
-  },
-  {
-   "fer_id": "US-12663+US-2952@same land@35.234,-84.548",
-   "refs": [
-    "US-12663",
-    "US-2952"
-   ],
-   "live": false,
-   "tool_verdict": "CHECK"
-  },
-  {
-   "fer_id": "US-2935+US-3924@same land@36.095,-86.385",
-   "refs": [
-    "US-2935",
-    "US-3924"
-   ],
-   "live": true,
-   "tool_verdict": "CHECK"
-  },
-  {
-   "fer_id": "US-2936+US-3934@same land@35.371,-88.820",
-   "refs": [
-    "US-2936",
-    "US-3934"
-   ],
-   "live": true,
-   "tool_verdict": "CHECK"
-  },
-  {
-   "fer_id": "US-2936+US-5491@same land@35.344,-88.787",
-   "refs": [
-    "US-2936",
-    "US-5491"
-   ],
-   "live": true,
-   "tool_verdict": "CHECK"
-  },
-  {
-   "fer_id": "US-2937+US-7580@same land@36.302,-85.813",
-   "refs": [
-    "US-2937",
-    "US-7580"
-   ],
-   "live": false,
-   "tool_verdict": "NOT FOUND OVERLAPPING"
-  },
-  {
-   "fer_id": "US-2937+US-7581@same land@36.302,-85.813",
-   "refs": [
-    "US-2937",
-    "US-7581"
-   ],
-   "live": false,
-   "tool_verdict": "NOT FOUND OVERLAPPING"
-  },
-  {
-   "fer_id": "US-2961+US-3957@same land@35.837,-88.264",
-   "refs": [
-    "US-2961",
-    "US-3957"
-   ],
-   "live": true,
-   "tool_verdict": "CHECK"
-  },
-  {
-   "fer_id": "US-2966+US-5498@same land@36.559,-84.793",
-   "refs": [
-    "US-2966",
-    "US-5498"
-   ],
-   "live": true,
-   "tool_verdict": "CHECK"
-  },
-  {
-   "fer_id": "US-2966+US-5498@same land@36.559,-84.793",
-   "refs": [
-    "US-2966",
-    "US-5498"
-   ],
-   "live": false,
-   "tool_verdict": "CHECK"
-  },
-  {
-   "fer_id": "US-2978+US-5501@same land@36.464,-85.412",
-   "refs": [
-    "US-2978",
-    "US-5501"
-   ],
-   "live": true,
-   "tool_verdict": "CHECK"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3933+US-7578@same land@36.289,-87.115",
-   "refs": [
-    "US-3933",
-    "US-7578"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-3934+US-5491@same land@35.344,-88.787",
-   "refs": [
-    "US-3934",
-    "US-5491"
-   ],
-   "live": true,
-   "tool_verdict": "CHECK"
-  },
-  {
-   "fer_id": "US-3969+US-6245@same land@35.033,-89.293",
-   "refs": [
-    "US-3969",
-    "US-6245"
-   ],
-   "live": true,
-   "tool_verdict": "NOT SAME"
-  },
-  {
-   "fer_id": "US-3971+US-5499@same land@35.057,-85.429",
-   "refs": [
-    "US-3971",
-    "US-5499"
-   ],
-   "live": true,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-7580+US-7581@same land@36.302,-85.813",
-   "refs": [
-    "US-7580",
-    "US-7581"
-   ],
-   "live": true,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-7580+US-7581@same land@36.302,-85.813",
-   "refs": [
-    "US-7580",
-    "US-7581"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-7580+US-7581@same land@36.302,-85.813",
-   "refs": [
-    "US-7580",
-    "US-7581"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-7580+US-7581@same land@36.302,-85.813",
-   "refs": [
-    "US-7580",
-    "US-7581"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-7580+US-7581@same land@36.302,-85.813",
-   "refs": [
-    "US-7580",
-    "US-7581"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-7580+US-7581@same land@36.302,-85.813",
-   "refs": [
-    "US-7580",
-    "US-7581"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-7580+US-7581@same land@36.302,-85.813",
-   "refs": [
-    "US-7580",
-    "US-7581"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-7580+US-7581@same land@36.302,-85.813",
-   "refs": [
-    "US-7580",
-    "US-7581"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-7580+US-7581@same land@36.302,-85.813",
-   "refs": [
-    "US-7580",
-    "US-7581"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  },
-  {
-   "fer_id": "US-7580+US-7581@same land@36.302,-85.813",
-   "refs": [
-    "US-7580",
-    "US-7581"
-   ],
-   "live": false,
-   "tool_verdict": "SAME LAND: likely"
-  }
- ]
+ "club_same_land_rows": []
 }

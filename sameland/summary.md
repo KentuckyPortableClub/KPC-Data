@@ -1,9 +1,9 @@
-# KPC 13 same land, two park numbers: 2026-11-01
+# KPC 13 same land, two park numbers: 2026-11-08
 
 | area | parks with outline | overlapping pairs | SAME LAND: likely | CHECK | NOT SAME | one inside the other |
 |---|---|---|---|---|---|---|
 | US-KY | 187 | 53 | 2 | 1 | 50 | 0 |
-| US-TN | 257 | 88 | 4 | 13 | 71 | 3 |
+| US-TN | 256 | 88 | 4 | 13 | 71 | 2 |
 | CA-ON | 932 | 144 | 12 | 13 | 119 | 1 |
 
 ## US-KY: top candidates
@@ -14,25 +14,24 @@
 
 Rows the club's 2-fer file already calls same land: 2; this tool says SAME LAND or CHECK for 2.
 
-Parks left out (no area outline): 5 (see US-KY.json, left_out).
+Parks left out (no area outline): 6 (see US-KY.json, left_out).
 
 ## US-TN: top candidates
 
-- **SAME LAND: likely** US-3933 Cheatham Wildlife Management Area / US-7578 Cheatham Lake Wildlife Management Area: Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers. (2-fer rows: same land x21)
-- **SAME LAND: likely** US-7580 Cordell Hull Wildlife Management Area / US-7581 Cordell Hull Waterfowl Refuge Wildlife Management Area: Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers. (2-fer rows: same land x10)
-- **SAME LAND: likely** US-3971 Prentice Cooper Wildlife Management Area / US-5499 Prentice Cooper State Forest: The outlines are almost the same shape, the names are the same family, and the same agency runs both. (2-fer rows: same land)
-- **SAME LAND: likely** US-0538 Reelfoot National Wildlife Refuge / US-3960 Reelfoot State Wildlife Area: The outlines are almost the same shape, the names are the same family, and the same agency runs both. (2-fer rows: same land x3)
-- **CHECK** US-3934 Chickasaw State Wildlife Area / US-5491 Chickasaw State Forest: The outlines are almost the same shape but different agencies run them, which is usually normal layering: a person should look. (2-fer rows: same land)
-- **CHECK** US-3935 Chuck Swan Wildlife Management Area / US-5492 Chuck Swan State Forest: The outlines are almost the same shape but different agencies run them, which is usually normal layering: a person should look. (2-fer rows: area)
-- **CHECK** US-0538 Reelfoot National Wildlife Refuge / US-2971 Reelfoot Lake State Park: The two park numbers share an agency record but not all of their records: a person should look. (2-fer rows: same land x2)
-- **CHECK** US-12663 Ocoee River State Park / US-2952 Hiwassee Ocoee State Park: The two park numbers share an agency record but not all of their records: a person should look. (2-fer rows: same land x3)
-- **CHECK** US-2971 Reelfoot Lake State Park / US-3960 Reelfoot State Wildlife Area: The two park numbers share an agency record but not all of their records: a person should look. (2-fer rows: area x3)
-- **CHECK** US-2935 Cedars of Lebanon State Park / US-3924 Cedars of Lebanon State Forest: The two park numbers share an agency record but not all of their records: a person should look. (2-fer rows: same land)
+- **SAME LAND: likely** US-3933 Cheatham Wildlife Management Area / US-7578 Cheatham Lake Wildlife Management Area: Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.
+- **SAME LAND: likely** US-7580 Cordell Hull Wildlife Management Area / US-7581 Cordell Hull Waterfowl Refuge Wildlife Management Area: Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.
+- **SAME LAND: likely** US-3971 Prentice Cooper Wildlife Management Area / US-5499 Prentice Cooper State Forest: The outlines are almost the same shape, the names are the same family, and the same agency runs both.
+- **SAME LAND: likely** US-2971 Reelfoot Lake State Park / US-3960 Reelfoot State Wildlife Area: The outlines are almost the same shape, the names are the same family, and the same agency runs both.
+- **CHECK** US-3934 Chickasaw State Wildlife Area / US-5491 Chickasaw State Forest: The outlines are almost the same shape but different agencies run them, which is usually normal layering: a person should look.
+- **CHECK** US-3935 Chuck Swan Wildlife Management Area / US-5492 Chuck Swan State Forest: The outlines are almost the same shape but different agencies run them, which is usually normal layering: a person should look.
+- **CHECK** US-0538 Reelfoot National Wildlife Refuge / US-3960 Reelfoot State Wildlife Area: The two park numbers share an agency record but not all of their records: a person should look.
+- **CHECK** US-0538 Reelfoot National Wildlife Refuge / US-2971 Reelfoot Lake State Park: The two park numbers share an agency record but not all of their records: a person should look.
+- **CHECK** US-12663 Ocoee River State Park / US-2952 Hiwassee Ocoee State Park: The two park numbers share an agency record but not all of their records: a person should look.
+- **CHECK** US-2935 Cedars of Lebanon State Park / US-3924 Cedars of Lebanon State Forest: The two park numbers share an agency record but not all of their records: a person should look.
 
-Rows the club's 2-fer file already calls same land: 52; this tool says SAME LAND or CHECK for 49.
-- US-2937+US-7580@same land@36.302,-85.813: tool says NOT FOUND OVERLAPPING
-- US-2937+US-7581@same land@36.302,-85.813: tool says NOT FOUND OVERLAPPING
-- US-3969+US-6245@same land@35.033,-89.293: tool says NOT SAME
+Rows the club's 2-fer file already calls same land: none in this area.
+
+Parks left out (no area outline): 6 (see US-TN.json, left_out).
 
 ## CA-ON: top candidates
 
@@ -48,3 +47,5 @@ Rows the club's 2-fer file already calls same land: 52; this tool says SAME LAND
 - **SAME LAND: likely** CA-0162 Bonnechere Provincial Park / CA-0163 Bonnechere River Provincial Park: The outlines are almost the same shape, the names are the same family, and the same agency runs both.
 
 Rows the club's 2-fer file already calls same land: none in this area.
+
+Parks left out (no area outline): 34 (see CA-ON.json, left_out).
