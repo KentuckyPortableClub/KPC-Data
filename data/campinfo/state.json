@@ -215,9 +215,9 @@
     "with_facts": 121,
     "with_sites": 8
    },
-   "left": 2,
-   "status": "partial",
-   "updated": "2026-11-05"
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-08"
   },
   "US-HI": {
    "camps": 22,
@@ -1145,7 +1145,7 @@
     "src": null,
     "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-11-05"
+   "read": "2026-11-08"
   },
   "US-HI": {
    "cell": {
@@ -2428,12 +2428,12 @@
  },
  "last": {
   "areas": [
-   "US-WV"
+   "US-GA"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 104,
+   "dropped_queued": 65,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2445,7 +2445,7 @@
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 95,
+   "requests": 8,
    "rested": 0,
    "robots": 2,
    "robots_unreadable": 2,
@@ -2453,20 +2453,19 @@
   },
   "ridb_key": false,
   "stat": {
-   "browser": 27,
-   "camps": 105,
+   "camps": 66,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 53,
-   "needs_key": 51,
+   "needs_browser": 0,
+   "needs_key": 66,
    "no_page": 0,
    "not_official": 0,
-   "ok": 54,
-   "pages_read": 56,
+   "ok": 0,
+   "pages_read": 0,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 0
+   "skipped_fresh": 146
   },
   "when": "2026-11-08"
  },
