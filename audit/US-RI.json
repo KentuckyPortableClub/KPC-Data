@@ -1,7 +1,8 @@
 {
  "area": "US-RI",
- "built": "2026-11-02",
+ "built": "2026-11-08",
  "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
  "parks": [
   {
    "ref": "US-0513",
@@ -73,9 +74,11 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 232.8,
-     "official_acres": 341.0,
-     "times": 1.46,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_acres": 232.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 123.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 123 ac, all providers added 232 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -158,10 +161,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 565.1,
-     "official_acres": 1124.0,
-     "times": 1.99,
+     "official_acres": 562.0,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -196,8 +199,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 1,124 acres (565 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0515",
@@ -245,10 +248,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 883.7,
-     "official_acres": 1764.0,
-     "times": 2.0,
+     "official_acres": 882.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -283,8 +286,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 1,764 acres (884 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0516",
@@ -332,10 +335,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 244.0,
-     "official_acres": 488.0,
-     "times": 2.0,
+     "official_acres": 244.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -370,8 +373,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 488 acres (244 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0517",
@@ -419,10 +422,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 663.6,
-     "official_acres": 1326.0,
-     "times": 2.0,
+     "official_acres": 663.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -457,8 +460,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 1,326 acres (664 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0789",
@@ -628,7 +631,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -729,7 +732,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -830,7 +833,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -1119,22 +1122,11 @@
     -71.5639
    ],
    "outline_from": [
-    "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
     "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 1.2,
    "records": [
-    {
-     "id": "sgria649",
-     "name": "Barbers Pond",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 1.2,
-     "acres_from": "acres field",
-     "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-     "link": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0/query?objectIds=649&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
     {
      "id": "sgrib617",
      "name": "Barbers Pond",
@@ -1157,7 +1149,6 @@
     }
    ],
    "record_ids": [
-    "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#649",
     "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#617",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#649"
    ],
@@ -1201,7 +1192,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -1391,7 +1382,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -1558,8 +1549,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 406.4,
-     "official_acres": 406.0,
-     "times": 1.0,
+     "official_acres": 364.0,
+     "times": 1.12,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1580,7 +1571,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-71.4007116162651 41.9027719521636]; 2 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-71.4007116162651 41.9027719521636]; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.003,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1695,15 +1692,7 @@
      "pieces": 4
     },
     "T6": {
-     "flag": "SPILL",
-     "parks": [
-      {
-       "ref": "US-2873",
-       "name": "Fishermen's Memorial State Park",
-       "share": 0.46
-      }
-     ],
-     "count": 1
+     "flag": "PASS"
     },
     "T7": {
      "flag": "N/A",
@@ -1714,7 +1703,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -1722,8 +1711,8 @@
     "record 157804: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 3,
-   "why": "SPILL: The outline covers 46% of US-2873 Fishermen's Memorial State Park, with no 2-fer row (maybe the wrong record)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-2871",
@@ -1884,7 +1873,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -2021,7 +2010,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-71.2819782807599 41.6802703873126]; 3 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-71.2819782807599 41.6802703873126]; 3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2035,7 +2030,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -2055,23 +2050,12 @@
     -71.4897
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
     "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
-   "acres_drawn": 147.4,
+   "acres_drawn": 67.3,
    "records": [
-    {
-     "id": "padus#57170",
-     "name": "Fisherman's",
-     "type": "SP State Park",
-     "category": "Fee",
-     "acres": 80.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=57170&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgria275",
      "name": "Fishermans Memorial State Park",
@@ -2104,7 +2088,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57170",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#275",
     "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#269",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#275"
@@ -2115,10 +2098,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 147.4,
-     "official_acres": 80.0,
-     "times": 1.84,
+     "flag": "PASS",
+     "outline_acres": 67.3,
+     "official_acres": 67.2,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -2134,18 +2117,10 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 2
+     "pieces": 1
     },
     "T6": {
-     "flag": "SPILL",
-     "parks": [
-      {
-       "ref": "US-2870",
-       "name": "Brenton Point State Park",
-       "share": 0.42
-      }
-     ],
-     "count": 1
+     "flag": "PASS"
     },
     "T7": {
      "flag": "N/A",
@@ -2156,14 +2131,14 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "SPILL: The outline covers 42% of US-2870 Brenton Point State Park, with no 2-fer row (maybe the wrong record) (+1 more flag)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-2874",
@@ -2366,7 +2341,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -2467,7 +2442,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -2601,7 +2576,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -2775,7 +2750,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -2911,7 +2886,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2925,7 +2906,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -3069,7 +3050,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -3229,11 +3210,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : InvalidSchema"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-5482",
@@ -3516,7 +3497,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -3700,7 +3681,7 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 16433.4,
-     "official_acres": 16434.0,
+     "official_acres": 16394.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -3721,7 +3702,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "12 hole(s) under 100 m2"
+     "note": "12 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 12,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -3970,9 +3957,11 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 3714.3,
-     "official_acres": 3715.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_acres": 3677.0,
+     "times": 1.01,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)",
+     "official_acres_low": 3605.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 3,605 ac, all providers added 3,677 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -3992,7 +3981,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-71.5760390118623 41.4750085612993]; 65 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-71.5760390118623 41.4750085612993]; 65 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 65,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -4006,7 +4001,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -4109,7 +4104,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -4179,7 +4174,9 @@
      "outline_acres": 806.3,
      "official_acres": 806.0,
      "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 735.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 735 ac, all providers added 806 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -4387,7 +4384,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -4401,7 +4404,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -4536,7 +4539,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -4724,7 +4727,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -4881,7 +4884,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -4895,7 +4904,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -5021,7 +5030,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-71.7229894594268 41.4632343933293]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-71.7229894594268 41.4632343933293]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.004,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5035,7 +5050,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -5215,7 +5230,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "6 hole(s) under 100 m2"
+     "note": "6 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 6,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5229,7 +5250,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -5404,7 +5425,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "1 piece(s) under 10 m wide; 1 hole(s) under 100 m2"
+     "note": "1 piece(s) under 10 m wide; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5534,7 +5561,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -5635,7 +5662,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -5736,7 +5763,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -5885,8 +5912,10 @@
      "flag": "PASS",
      "outline_acres": 2055.5,
      "official_acres": 2315.0,
-     "times": 1.13,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)",
+     "official_acres_low": 2056.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 2,056 ac, all providers added 2,315 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -5906,7 +5935,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-71.769419813792 41.9941745364411]; 15 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-71.769419813792 41.9941745364411]; 15 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 15,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5920,7 +5955,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -6064,7 +6099,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6199,7 +6240,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "5 hole(s) under 100 m2"
+     "note": "5 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 5,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6232,23 +6279,12 @@
     -71.6382
    ],
    "outline_from": [
-    "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
     "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
    "acres_drawn": 87.5,
    "records": [
-    {
-     "id": "sgria391",
-     "name": "Charlestown Breachway Fishing Area",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 49.7,
-     "acres_from": "acres field",
-     "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-     "link": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0/query?objectIds=391&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
     {
      "id": "sgrib377",
      "name": "Charlestown Breachway Fishing Area",
@@ -6281,7 +6317,6 @@
     }
    ],
    "record_ids": [
-    "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#391",
     "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#377",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#391",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57160"
@@ -6325,7 +6360,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -6426,7 +6461,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -6560,7 +6595,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -6661,7 +6696,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -6762,7 +6797,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -6852,53 +6887,101 @@
    "name": "John H. Chaffee Rome Point State Nature Preserve",
    "key_name": "John H. Chaffee Rome Point State Nature Preserve",
    "type": "State Nature Preserve",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     41.5372,
     -71.4374
    ],
-   "outline_from": [],
-   "acres_drawn": null,
-   "records": [],
-   "record_ids": [],
+   "outline_from": [
+    "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
+    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
+    "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
+   ],
+   "acres_drawn": 244.0,
+   "records": [
+    {
+     "id": "sgria647",
+     "name": "Rome Point",
+     "type": "Rhode Island DEM (land, state GIS table)",
+     "acres": 243.9,
+     "acres_from": "acres field",
+     "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
+     "link": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0/query?objectIds=647&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgrib615",
+     "name": "Rome Point",
+     "type": "Rhode Island DEM (land, state GIS table)",
+     "acres": 243.9,
+     "acres_from": "acres field",
+     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
+     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=615&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgric647",
+     "name": "Rome Point",
+     "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
+     "acres": 243.9,
+     "acres_from": "acres field",
+     "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3",
+     "link": "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3/query?objectIds=647&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    }
+   ],
+   "record_ids": [
+    "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#647",
+    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#615",
+    "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#647"
+   ],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "outline_acres": 244.0,
+     "official_acres": 243.9,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "MISMATCH",
+     "score": 0.4,
+     "pota_name": "John H. Chaffee Rome Point State Nature Preserve",
+     "record_name": "Rome Point"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": "preserve",
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "PASS",
+     "pieces": 2
     },
     "T6": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "CAN'T TELL",
-     "note": "no record id"
+     "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "last_edit": "2026-05-07",
+     "read": "2026-11-08",
+     "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "Nothing could be tested."
+   "score": 3,
+   "why": "MISMATCH: The record name 'Rome Point' does not match POTA's name 'John H. Chaffee Rome Point State Nature Preserve' (score 0.40)."
   },
   {
    "ref": "US-7865",
@@ -6911,53 +6994,12 @@
     -71.6733
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
     "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
-   "acres_drawn": 250.3,
+   "acres_drawn": 198.9,
    "records": [
-    {
-     "id": "padus#57165",
-     "name": "East Beach",
-     "type": "SP State Park",
-     "category": "Fee",
-     "acres": 160.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=57165&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#57166",
-     "name": "East Beach",
-     "type": "SP State Park",
-     "category": "Fee",
-     "acres": 68.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=57166&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#57167",
-     "name": "East Beach",
-     "type": "SP State Park",
-     "category": "Fee",
-     "acres": 15.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=57167&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#57169",
-     "name": "East Beach",
-     "type": "SP State Park",
-     "category": "Fee",
-     "acres": 3.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=57169&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgria270",
      "name": "East Beach",
@@ -7020,10 +7062,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57165",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57166",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57167",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57169",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#270",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#125",
     "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#264",
@@ -7038,9 +7076,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 250.3,
-     "official_acres": 246.0,
-     "times": 1.02,
+     "outline_acres": 198.9,
+     "official_acres": 198.9,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -7051,16 +7089,12 @@
     },
     "T4": {
      "park_kind": "recreation area",
-     "record_kind": "state park",
+     "record_kind": "recreation area",
      "flag": "PASS"
     },
     "T5": {
-     "flag": "SELF-INTERSECTION",
-     "pieces": 2,
-     "flags": [
-      "SELF-INTERSECTION"
-     ],
-     "note": "Ring Self-intersection[-71.6606348650493 41.3533466916727]"
+     "flag": "PASS",
+     "pieces": 2
     },
     "T6": {
      "flag": "PASS"
@@ -7074,14 +7108,14 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-71.6606348650493 41.3533466916727]."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-7971",
@@ -7148,7 +7182,7 @@
     },
     "T9": {
      "last_edit": "2026-10-16",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -7305,7 +7339,7 @@
     },
     "T9": {
      "last_edit": "2026-05-07",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },

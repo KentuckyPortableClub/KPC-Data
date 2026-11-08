@@ -1,7 +1,8 @@
 {
  "area": "US-SC",
- "built": "2026-11-02",
+ "built": "2026-11-08",
  "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
  "parks": [
   {
    "ref": "US-0017",
@@ -61,7 +62,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-80.7746300959843 33.8177421760202]"
+     "note": "Ring Self-intersection[-80.7746300959843 33.8177421760202]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -129,10 +136,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1521.1,
-     "official_acres": 3034.0,
-     "times": 1.99,
+     "official_acres": 1517.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -167,8 +174,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 3,034 acres (1,521 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0518",
@@ -216,10 +223,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 35203.7,
-     "official_acres": 70297.0,
-     "times": 2.0,
+     "official_acres": 35161.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -241,7 +248,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-79.3943133706289 33.0698597512566]; 2 piece(s) under 10 m wide; 2 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-79.3943133706289 33.0698597512566]; 2 piece(s) under 10 m wide; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -260,8 +273,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "OFF: The outline is 2.0 times smaller than the official 70,297 acres (35,204 ac drawn) (+3 more flags)."
+   "score": 3,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-79.3943133706289 33.0698597512566]; 2 piece(s) under 10 m wide; 2 hole(s) under 100 m2 (+2 more flags)."
   },
   {
    "ref": "US-0519",
@@ -309,10 +322,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 45935.1,
-     "official_acres": 91834.0,
-     "times": 2.0,
+     "official_acres": 45917.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -334,7 +347,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-80.1749099039114 34.5867039276619]; 1 piece(s) under 10 m wide; 5 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-80.1749099039114 34.5867039276619]; 1 piece(s) under 10 m wide; 5 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 5,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -353,8 +372,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "OFF: The outline is 2.0 times smaller than the official 91,834 acres (45,935 ac drawn) (+3 more flags)."
+   "score": 3,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-80.1749099039114 34.5867039276619]; 1 piece(s) under 10 m wide; 5 hole(s) under 100 m2 (+2 more flags)."
   },
   {
    "ref": "US-0520",
@@ -402,11 +421,13 @@
      "metres": 17.3
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 12233.2,
      "official_acres": 24291.0,
-     "times": 1.99,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 12224.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 12,224 ac, all providers added 24,291 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -426,7 +447,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-80.3982819623246 32.6228026695247]; 3 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-80.3982819623246 32.6228026695247]; 3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -445,8 +472,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "NEAR: POTA's pin is 17 m outside the outline (+3 more flags)."
+   "score": 3,
+   "why": "NEAR: POTA's pin is 17 m outside the outline (+2 more flags)."
   },
   {
    "ref": "US-0521",
@@ -494,10 +521,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 4543.0,
-     "official_acres": 9063.0,
-     "times": 1.99,
+     "official_acres": 4533.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -535,8 +562,8 @@
     "record 5267: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 9,063 acres (4,543 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0522",
@@ -583,13 +610,13 @@
      "flag": "NOTE",
      "metres": 2090.9,
      "was": "OUTSIDE",
-     "note": "the park spans several states / provinces (US-SC, US-GA): POTA's one pin may be in another part (the key says GA)"
+     "note": "the park spans several states / provinces (US-SC, US-GA): POTA's one pin may be in another part"
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 15268.4,
-     "official_acres": 30520.0,
-     "times": 2.0,
+     "official_acres": 15260.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -611,7 +638,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-81.1176617306772 32.2736080568821]; 3 piece(s) under 10 m wide; 4 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-81.1176617306772 32.2736080568821]; 3 piece(s) under 10 m wide; 4 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 4,
+      "pieces": 3
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -630,8 +663,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "OFF: The outline is 2.0 times smaller than the official 30,520 acres (15,268 ac drawn) (+3 more flags)."
+   "score": 3,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-81.1176617306772 32.2736080568821]; 3 piece(s) under 10 m wide; 4 hole(s) under 100 m2 (+2 more flags)."
   },
   {
    "ref": "US-0524",
@@ -679,11 +712,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 19027.8,
      "official_acres": 35223.0,
-     "times": 1.85,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 18852.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 18,852 ac, all providers added 35,223 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -704,7 +739,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-79.0468805021852 33.7131493917693]; 6 piece(s) under 10 m wide; 10 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-79.0468805021852 33.7131493917693]; 6 piece(s) under 10 m wide; 10 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 10,
+      "pieces": 6
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -723,8 +764,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "OFF: The outline is 1.9 times smaller than the official 35,223 acres (19,028 ac drawn) (+3 more flags)."
+   "score": 3,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-79.0468805021852 33.7131493917693]; 6 piece(s) under 10 m wide; 10 hole(s) under 100 m2 (+2 more flags)."
   },
   {
    "ref": "US-0702",
@@ -784,7 +825,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.004,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1092,7 +1139,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.095,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1219,7 +1272,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1233,9 +1292,9 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -1353,7 +1412,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -1442,15 +1501,15 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-10467",
@@ -1544,7 +1603,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -1645,7 +1704,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -1665,21 +1724,10 @@
     -80.678
    ],
    "outline_from": [
-    "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 255.6,
+   "acres_drawn": 239.9,
    "records": [
-    {
-     "id": "sgscb48",
-     "name": "Hanging Rock Battleground Property",
-     "type": "South Carolina State Parks (PRT) (park, state GIS table)",
-     "acres": 242.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
-     "link": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0/query?objectIds=48&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
     {
      "id": "padus#254531",
      "name": "Hanging Rock Battleground",
@@ -1692,30 +1740,29 @@
     }
    ],
    "record_ids": [
-    "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0#48",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254531"
    ],
    "tests": {
     "T1": {
      "flag": "OUTSIDE",
-     "metres": 929.4
+     "metres": 1025.7
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 255.6,
-     "official_acres": 242.0,
-     "times": 1.06,
+     "outline_acres": 239.9,
+     "official_acres": 240.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Hanging Rock Battleground State Historical Park",
-     "record_name": "Hanging Rock Battleground Property"
+     "record_name": "Hanging Rock Battleground"
     },
     "T4": {
      "park_kind": null,
-     "record_kind": "state park",
+     "record_kind": null,
      "flag": "CAN'T TELL"
     },
     "T5": {
@@ -1733,16 +1780,14 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-08-02",
-     "read": "2026-11-02",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "OUTSIDE: POTA's pin is 929 m outside the outline (+1 more flag)."
+   "score": 3,
+   "why": "OUTSIDE: POTA's pin is 1.0 km outside the outline."
   },
   {
    "ref": "US-10622",
@@ -1824,9 +1869,9 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -1895,8 +1940,10 @@
      "flag": "PASS",
      "outline_acres": 301.1,
      "official_acres": 341.0,
-     "times": 1.13,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)",
+     "official_acres_low": 196.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 196 ac, all providers added 341 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -1925,7 +1972,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -2014,9 +2061,9 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -2116,7 +2163,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -2219,7 +2266,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "1 piece(s) under 10 m wide; 1 hole(s) under 100 m2"
+     "note": "1 piece(s) under 10 m wide; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.061,
+      "holes": 1,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2233,7 +2286,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -2315,7 +2368,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -2538,15 +2591,15 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2882",
@@ -2619,7 +2672,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "1 piece(s) under 10 m wide; 1 hole(s) under 100 m2"
+     "note": "1 piece(s) under 10 m wide; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 1,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2633,9 +2692,9 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -2725,15 +2784,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2884",
@@ -2815,15 +2874,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2885",
@@ -2916,15 +2975,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2886",
@@ -3070,9 +3129,9 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -3152,7 +3211,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-79.9387202369858 34.6346279759411]; 1 piece(s) under 10 m wide; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-79.9387202369858 34.6346279759411]; 1 piece(s) under 10 m wide; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3166,9 +3231,9 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -3256,15 +3321,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2890",
@@ -3346,9 +3411,9 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -3437,7 +3502,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3451,9 +3522,9 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -3529,15 +3600,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2893",
@@ -3619,15 +3690,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2894",
@@ -3709,15 +3780,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2895",
@@ -3799,15 +3870,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2896",
@@ -3889,9 +3960,9 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -3979,9 +4050,9 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -4069,15 +4140,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2899",
@@ -4159,15 +4230,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2900",
@@ -4239,7 +4310,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "5 hole(s) under 100 m2"
+     "note": "5 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.004,
+      "holes": 5,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -4253,9 +4330,9 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -4430,15 +4507,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2903",
@@ -4542,15 +4619,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2904",
@@ -4643,9 +4720,9 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -4744,15 +4821,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2906",
@@ -4858,7 +4935,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -4947,15 +5024,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2908",
@@ -5037,15 +5114,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2909",
@@ -5127,15 +5204,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2910",
@@ -5217,15 +5294,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2911",
@@ -5307,15 +5384,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2912",
@@ -5397,15 +5474,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2913",
@@ -5487,15 +5564,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-2914",
@@ -5567,7 +5644,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5581,9 +5664,9 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -5693,15 +5776,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-3872",
@@ -5771,15 +5854,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-3873",
@@ -5883,15 +5966,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-3874",
@@ -5961,9 +6044,9 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -6053,15 +6136,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-3877",
@@ -6133,7 +6216,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6147,9 +6236,9 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -6237,15 +6326,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-3879",
@@ -6327,15 +6416,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-3880",
@@ -6417,15 +6506,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-3881",
@@ -6544,9 +6633,9 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -6634,15 +6723,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-3883",
@@ -6800,9 +6889,9 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -6890,15 +6979,15 @@
     },
     "T9": {
      "last_edit": "2021-08-02",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2021-08-02, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2021-08-02, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-3886",
@@ -7002,9 +7091,9 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -7135,7 +7224,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -7327,7 +7416,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -7427,7 +7516,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "6 hole(s) under 100 m2"
+     "note": "6 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 6,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7441,9 +7536,9 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -7531,15 +7626,15 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-3891",
@@ -7637,7 +7732,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -7733,9 +7828,9 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -7853,7 +7948,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -7996,7 +8091,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -8085,9 +8180,9 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -8196,7 +8291,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -8373,7 +8468,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-82.890219680717 34.6185681888442]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-82.890219680717 34.6185681888442]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8387,7 +8488,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -8487,7 +8588,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-80.5111832802821 34.6401599721113]; 4 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-80.5111832802821 34.6401599721113]; 4 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 4,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8501,9 +8608,9 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -8591,9 +8698,9 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -8720,7 +8827,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -8742,22 +8849,11 @@
     -80.4668
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
     "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3"
    ],
-   "acres_drawn": 3964.5,
+   "acres_drawn": 3963.6,
    "records": [
-    {
-     "id": "padus#253964",
-     "name": "Hickory Top Wildlife Management Area",
-     "type": "Wildlife Management Area Specific State Conservation Area",
-     "category": "Fee",
-     "acres": 2352.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=253964&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgsca60",
      "name": "Hickory Top WMA",
@@ -8790,7 +8886,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#253964",
     "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4#60",
     "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3#20",
     "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3#21"
@@ -8802,16 +8897,16 @@
     },
     "T2": {
      "flag": "OFF",
-     "outline_acres": 3964.5,
-     "official_acres": 2352.0,
-     "times": 1.69,
+     "outline_acres": 3963.6,
+     "official_acres": 1105.0,
+     "times": 3.59,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Hickory Top Wildlife Management Area",
-     "record_name": "Hickory Top Wildlife Management Area"
+     "record_name": "Hickory Top WMA"
     },
     "T4": {
      "park_kind": "wma",
@@ -8819,12 +8914,8 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "SELF-INTERSECTION",
-     "pieces": 2,
-     "flags": [
-      "SELF-INTERSECTION"
-     ],
-     "note": "Ring Self-intersection[-80.4753224261183 33.5944202148517]"
+     "flag": "PASS",
+     "pieces": 2
     },
     "T6": {
      "flag": "PASS"
@@ -8838,14 +8929,14 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 1.7 times bigger than the official 2,352 acres (3,964 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "OFF: The outline is 3.6 times bigger than the official 1,105 acres (3,964 ac drawn)."
   },
   {
    "ref": "US-3902",
@@ -8939,7 +9030,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -9030,15 +9121,15 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-3904",
@@ -9120,15 +9211,15 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-3905",
@@ -9231,7 +9322,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -9320,15 +9411,15 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-3907",
@@ -9431,7 +9522,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -9552,7 +9643,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9566,7 +9663,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -9679,7 +9776,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -9787,8 +9884,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 5075.1,
-     "official_acres": 6288.0,
-     "times": 1.24,
+     "official_acres": 4735.0,
+     "times": 1.07,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -9810,7 +9907,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-80.2648244366556 33.4275095575205]; 1 piece(s) under 10 m wide; 11 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-80.2648244366556 33.4275095575205]; 1 piece(s) under 10 m wide; 11 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 11,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9824,7 +9927,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -9913,9 +10016,9 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -10024,7 +10127,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -10113,15 +10216,15 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-3914",
@@ -10203,9 +10306,9 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -10293,9 +10396,9 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -10317,59 +10420,70 @@
     "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/HeritagePreserve_Map2_WFL1/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 307.0,
+   "acres_drawn": 10388.3,
    "records": [
     {
-     "id": "sgscc59",
-     "name": "Little Pee Dee State Park Bay Heritage Preserve",
+     "id": "sgscc11",
+     "name": "Little Pee Dee Heritage Preserve and Wildlife Management Area",
      "type": "South Carolina DNR (heritage preserves) (preserve, state GIS table)",
-     "acres": 301.0,
+     "acres": 10455.0,
      "acres_from": "the key's acres",
      "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/HeritagePreserve_Map2_WFL1/FeatureServer/0",
-     "link": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/HeritagePreserve_Map2_WFL1/FeatureServer/0/query?objectIds=59&outFields=*&returnGeometry=false&f=html",
+     "link": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/HeritagePreserve_Map2_WFL1/FeatureServer/0/query?objectIds=11&outFields=*&returnGeometry=false&f=html",
      "name_field": "PropertyName"
     },
     {
-     "id": "padus#254129",
-     "name": "Little Pee Dee State Park Bay Heritage Preserve",
-     "type": "State Natural Heritage Preserve State Historic or Cultural Area",
+     "id": "padus#254041",
+     "name": "Little Pee Dee Heritage Preserve / Wildlife Management Area",
+     "type": "State Natural Heritage Preserve / Wildlife Management Area State Conservation Area",
      "category": "Fee",
-     "acres": 298.0,
+     "acres": 10168.0,
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=254129&outFields=*&returnGeometry=false&f=html"
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=254041&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#254043",
+     "name": "Little Pee Dee Heritage Preserve / Wildlife Management Area - Twin Bays Tract",
+     "type": "State Natural Heritage Preserve / Wildlife Management Area State Conservation Area",
+     "category": "Fee",
+     "acres": 218.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=254043&outFields=*&returnGeometry=false&f=html"
     }
    ],
    "record_ids": [
-    "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/HeritagePreserve_Map2_WFL1/FeatureServer/0#59",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254129"
+    "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/HeritagePreserve_Map2_WFL1/FeatureServer/0#11",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254041",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254043"
    ],
    "tests": {
     "T1": {
-     "flag": "FAR",
-     "metres": 21160.8
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 307.0,
-     "official_acres": 301.0,
-     "times": 1.02,
+     "outline_acres": 10388.3,
+     "official_acres": 10455.0,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
      "flag": "PASS",
-     "score": 1.0,
+     "score": 0.92,
      "pota_name": "Little Pee Dee Bay Heritage Preserve",
-     "record_name": "Little Pee Dee State Park Bay Heritage Preserve"
+     "record_name": "Little Pee Dee Heritage Preserve / Wildlife Management Area - Twin Bays Tract"
     },
     "T4": {
      "park_kind": null,
-     "record_kind": "state park",
+     "record_kind": "wma",
      "flag": "CAN'T TELL"
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 1
+     "pieces": 7
     },
     "T6": {
      "flag": "PASS"
@@ -10383,15 +10497,17 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
-   "problems": [],
+   "problems": [
+    "record sgscc11: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
+   ],
    "status": "graded",
-   "score": 6,
-   "why": "FAR: POTA's pin is 21.2 km outside the outline (+1 more flag)."
+   "score": 1,
+   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-3918",
@@ -10473,9 +10589,9 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -10595,10 +10711,10 @@
      "metres": 58.2
     },
     "T2": {
-     "flag": "PASS",
+     "flag": "OFF",
      "outline_acres": 1463.2,
-     "official_acres": 1290.0,
-     "times": 1.13,
+     "official_acres": 645.0,
+     "times": 2.27,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -10618,7 +10734,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -10632,15 +10754,15 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "NEAR: POTA's pin is 58 m outside the outline (+2 more flags)."
+   "score": 4,
+   "why": "NEAR: POTA's pin is 58 m outside the outline (+3 more flags)."
   },
   {
    "ref": "US-3921",
@@ -10722,15 +10844,15 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-4522",
@@ -10745,7 +10867,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 262712.6,
+   "acres_drawn": 263676.5,
    "records": [
     {
      "id": "padus#2974",
@@ -10756,10 +10878,21 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2974&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#3016",
+     "name": "Sewee Purchase Unit",
+     "type": "NF National Forest",
+     "category": "Fee",
+     "acres": 964.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3016&outFields=*&returnGeometry=false&f=html"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#2974"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#2974",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3016"
    ],
    "tests": {
     "T1": {
@@ -10768,8 +10901,8 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 262712.6,
-     "official_acres": 262712.0,
+     "outline_acres": 263676.5,
+     "official_acres": 263676.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -10777,7 +10910,11 @@
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Francis Marion National Forest",
-     "record_name": "Francis Marion National Forest"
+     "record_name": "Francis Marion National Forest",
+     "worst_record": {
+      "name": "Sewee Purchase Unit",
+      "score": 0.0
+     }
     },
     "T4": {
      "park_kind": "national forest",
@@ -10791,7 +10928,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-79.6359193931532 33.2631156828355]; 4 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-79.6359193931532 33.2631156828355]; 4 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 4,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -10886,7 +11029,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-81.4271121921779 34.4019753132122]; 9 hole(s) under 100 m2; 137 pieces spread over 247 km"
+     "note": "Ring Self-intersection[-81.4271121921779 34.4019753132122]; 9 hole(s) under 100 m2; 137 pieces spread over 247 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 9,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11048,11 +11197,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : InvalidSchema"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 219 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 219 m outside the outline."
   },
   {
    "ref": "US-5485",
@@ -11222,7 +11371,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "69 hole(s) under 100 m2"
+     "note": "69 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.004,
+      "holes": 69,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11580,8 +11735,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 28968.1,
-     "official_acres": 28128.0,
-     "times": 1.03,
+     "official_acres": 27110.0,
+     "times": 1.07,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -11602,7 +11757,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-80.4831309814199 33.913752637587]; 273 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-80.4831309814199 33.913752637587]; 273 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 273,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -11620,27 +11781,11 @@
      "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "DUPLICATE",
-     "parks": {
-      "US-8149": [
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254381",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254389",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254388",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254266",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254385",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254393",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254270",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254392",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254268",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254395",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254267"
-      ]
-     },
-     "note": "same record id(s) as another park number: for KPC 13"
+     "flag": "PASS"
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -11651,8 +11796,8 @@
     "record 254206: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 6,
-   "why": "SPILL: The outline covers 71% of US-8149 Oak Lea Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+3 more flags)."
+   "score": 5,
+   "why": "SPILL: The outline covers 71% of US-8149 Oak Lea Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+2 more flags)."
   },
   {
    "ref": "US-5487",
@@ -11821,8 +11966,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 2508.4,
-     "official_acres": 2502.0,
-     "times": 1.0,
+     "official_acres": 2483.0,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -11843,7 +11988,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "1 piece(s) under 10 m wide; 25 hole(s) under 100 m2"
+     "note": "1 piece(s) under 10 m wide; 25 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 25,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11857,7 +12008,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -12129,7 +12280,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-80.1346135553741 34.5685408575389]; 13 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-80.1346135553741 34.5685408575389]; 13 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 13,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -12151,7 +12308,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -12308,7 +12465,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "34 hole(s) under 100 m2"
+     "note": "34 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 34,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -12400,7 +12563,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -12414,7 +12583,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -12503,15 +12672,15 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-8147",
@@ -12593,15 +12762,15 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-8148",
@@ -12671,15 +12840,15 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-02-27, over a year before the club read it (2026-11-08)."
   },
   {
    "ref": "US-8149",
@@ -12696,7 +12865,7 @@
     "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 2206.8,
+   "acres_drawn": 2205.9,
    "records": [
     {
      "id": "sgsca154",
@@ -12735,16 +12904,6 @@
      "name_field": "PropertyName"
     },
     {
-     "id": "padus#254381",
-     "name": "Manchester State Forest",
-     "type": "State Forest and Wildlife Management Area State Conservation Area",
-     "category": "Fee",
-     "acres": 861.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=254381&outFields=*&returnGeometry=false&f=html"
-    },
-    {
      "id": "padus#254386",
      "name": "Manchester State Forest",
      "type": "State Forest and Wildlife Management Area State Conservation Area",
@@ -12753,16 +12912,6 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=254386&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#254389",
-     "name": "Manchester State Forest",
-     "type": "State Forest and Wildlife Management Area State Conservation Area",
-     "category": "Fee",
-     "acres": 160.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=254389&outFields=*&returnGeometry=false&f=html"
     },
     {
      "id": "padus#254390",
@@ -12775,26 +12924,6 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=254390&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "padus#254388",
-     "name": "Manchester State Forest",
-     "type": "State Forest and Wildlife Management Area State Conservation Area",
-     "category": "Fee",
-     "acres": 126.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=254388&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#254266",
-     "name": "Manchester State Forest",
-     "type": "State Forest and Wildlife Management Area State Conservation Area",
-     "category": "Fee",
-     "acres": 123.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=254266&outFields=*&returnGeometry=false&f=html"
-    },
-    {
      "id": "padus#254394",
      "name": "Manchester State Forest",
      "type": "State Forest and Wildlife Management Area State Conservation Area",
@@ -12805,14 +12934,54 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=254394&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "padus#254385",
+     "id": "padus#254269",
      "name": "Manchester State Forest",
      "type": "State Forest and Wildlife Management Area State Conservation Area",
      "category": "Fee",
-     "acres": 93.0,
+     "acres": 64.0,
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=254385&outFields=*&returnGeometry=false&f=html"
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=254269&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#254387",
+     "name": "Manchester State Forest",
+     "type": "State Forest and Wildlife Management Area State Conservation Area",
+     "category": "Fee",
+     "acres": 37.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=254387&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#254396",
+     "name": "Manchester State Forest",
+     "type": "State Forest and Wildlife Management Area State Conservation Area",
+     "category": "Fee",
+     "acres": 30.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=254396&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#254384",
+     "name": "Manchester State Forest",
+     "type": "State Forest and Wildlife Management Area State Conservation Area",
+     "category": "Fee",
+     "acres": 14.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=254384&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#254382",
+     "name": "Manchester State Forest",
+     "type": "State Forest and Wildlife Management Area State Conservation Area",
+     "category": "Fee",
+     "acres": 13.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=254382&outFields=*&returnGeometry=false&f=html"
     }
    ],
    "record_ids": [
@@ -12820,29 +12989,18 @@
     "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3#22",
     "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3#23",
     "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3#24",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254381",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254386",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254389",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254390",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254388",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254266",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254394",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254385",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254393",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254270",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254269",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254387",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254392",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254396",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254384",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254382",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254383",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254397",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254391",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254268",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254380",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254395",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254267",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254398"
    ],
    "tests": {
@@ -12852,9 +13010,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 2206.8,
-     "official_acres": 2191.0,
-     "times": 1.01,
+     "outline_acres": 2205.9,
+     "official_acres": 2000.0,
+     "times": 1.1,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -12873,12 +13031,8 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 1,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "1 hole(s) under 100 m2"
+     "flag": "PASS",
+     "pieces": 1
     },
     "T6": {
      "flag": "PASS"
@@ -12888,34 +13042,18 @@
      "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "DUPLICATE",
-     "parks": {
-      "US-5486": [
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254381",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254389",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254388",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254266",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254385",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254393",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254270",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254392",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254268",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254395",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254267"
-      ]
-     },
-     "note": "same record id(s) as another park number: for KPC 13"
+     "flag": "PASS"
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2 (+1 more flag)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-8150",
@@ -12997,9 +13135,9 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -13110,7 +13248,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -13199,9 +13337,9 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [],
@@ -13401,7 +13539,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13415,7 +13559,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -13519,7 +13663,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -13708,7 +13852,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -13819,10 +13963,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1413.2,
-     "official_acres": 3339.0,
-     "times": 2.36,
+     "official_acres": 1113.0,
+     "times": 1.27,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -13852,14 +13996,14 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.4 times smaller than the official 3,339 acres (1,413 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-9198",
@@ -13944,7 +14088,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-79.9344453077365 33.0939996873273]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-79.9344453077365 33.0939996873273]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13958,7 +14108,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -14158,7 +14308,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -14259,7 +14409,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -14366,6 +14516,14 @@
      "name_field": "PropertyName"
     },
     {
+     "id": "sgscd49",
+     "name": "Santee WMA",
+     "type": "South Carolina Department of Natural Resources (credit: SCDNR) (land, state GIS table)",
+     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
+     "link": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3/query?objectIds=49&outFields=*&returnGeometry=false&f=html",
+     "name_field": "PropertyName"
+    },
+    {
      "id": "sgscd261",
      "name": "Santee Coastal Reserve WMA",
      "type": "South Carolina Department of Natural Resources (credit: SCDNR) (land, state GIS table)",
@@ -14388,14 +14546,6 @@
      "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
      "link": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3/query?objectIds=417&outFields=*&returnGeometry=false&f=html",
      "name_field": "PropertyName"
-    },
-    {
-     "id": "sgscd49",
-     "name": "Santee WMA",
-     "type": "South Carolina Department of Natural Resources (credit: SCDNR) (land, state GIS table)",
-     "layer": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
-     "link": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3/query?objectIds=49&outFields=*&returnGeometry=false&f=html",
-     "name_field": "PropertyName"
     }
    ],
    "record_ids": [
@@ -14407,10 +14557,10 @@
     "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3#262",
     "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3#114",
     "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3#113",
+    "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3#49",
     "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3#261",
     "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3#263",
     "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3#417",
-    "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3#49",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254097",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254096",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254095"
@@ -14448,7 +14598,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-79.8089398665919 33.2186519543645]"
+     "note": "Ring Self-intersection[-79.8089398665919 33.2186519543645]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -14479,7 +14635,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -14493,39 +14649,54 @@
    "name": "Palmetto State Trail",
    "key_name": "Palmetto State Trail",
    "type": "State Trail",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     33.0558,
     -79.6956
    ],
-   "outline_from": [],
+   "outline_from": [
+    "trails/US-9203.json"
+   ],
    "acres_drawn": null,
-   "records": [],
+   "records": [
+    {
+     "id": "trl:US-9203",
+     "name": "Palmetto State Trail",
+     "type": "trail",
+     "layer": "trails/US-9203.json"
+    }
+   ],
    "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "NEAR",
+     "metres": 43.8
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Palmetto State Trail",
+     "record_name": "Palmetto State Trail"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": "trail",
+     "record_kind": "trail",
+     "flag": "PASS"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T6": {
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -14533,13 +14704,15 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 0,
-   "why": "Nothing could be tested."
+   "problems": [
+    "SOURCE DOWN: : down for this run (failed 3 times)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 44 m outside the outline."
   },
   {
    "ref": "US-9204",
@@ -14633,7 +14806,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -14734,7 +14907,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -14885,10 +15058,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 8010.4,
-     "official_acres": 16132.0,
-     "times": 2.01,
+     "official_acres": 8066.0,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -14918,7 +15091,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -14926,8 +15099,8 @@
     "record sgsca153: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 16,132 acres (8,010 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-9207",
@@ -15021,7 +15194,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -15142,7 +15315,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -15243,7 +15416,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -15380,7 +15553,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -15507,7 +15680,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -15605,7 +15778,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -15720,7 +15893,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -15891,7 +16064,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "3 hole(s) under 100 m2"
+     "note": "3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -15905,7 +16084,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -16018,7 +16197,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -16131,7 +16310,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -16202,7 +16381,7 @@
      "outline_acres": 8735.8,
      "official_acres": 8557.0,
      "times": 1.02,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)"
     },
     "T3": {
      "flag": "PASS",
@@ -16222,7 +16401,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-78.6843002773533 33.9216804668102]; 22 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-78.6843002773533 33.9216804668102]; 22 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 22,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -16236,9 +16421,9 @@
     },
     "T9": {
      "last_edit": "2025-02-27",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-02-27, over a year before the club read it (2026-11-08)"
     }
    },
    "problems": [
@@ -16339,7 +16524,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -16353,7 +16544,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -16530,7 +16721,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -16701,7 +16892,9 @@
      "outline_acres": 122.0,
      "official_acres": 121.0,
      "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)",
+     "official_acres_low": 62.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 62 ac, all providers added 121 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -16730,7 +16923,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -16843,7 +17036,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -16953,7 +17146,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -17053,7 +17246,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -17156,7 +17349,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -17170,7 +17369,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -17339,7 +17538,7 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 39599.6,
-     "official_acres": 33042.0,
+     "official_acres": 33038.0,
      "times": 1.2,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -17361,7 +17560,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "2 piece(s) under 10 m wide; 3 hole(s) under 100 m2"
+     "note": "2 piece(s) under 10 m wide; 3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -17375,7 +17580,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -17521,7 +17726,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -17687,7 +17892,7 @@
     },
     "T9": {
      "last_edit": "2026-10-15",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },

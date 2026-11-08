@@ -1,7 +1,8 @@
 {
  "area": "US-SD",
- "built": "2026-11-02",
+ "built": "2026-11-08",
  "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
  "parks": [
   {
    "ref": "US-0005",
@@ -168,18 +169,8 @@
    "outline_from": [
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0"
    ],
-   "acres_drawn": 17725.2,
+   "acres_drawn": 16269.2,
    "records": [
-    {
-     "id": "fws2277",
-     "name": "BEADLE COUNTY WATERFOWL PRODUCTION AREA",
-     "type": "U.S. Fish & Wildlife Service",
-     "acres": 1455.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
-     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=2277&outFields=*&returnGeometry=false&f=html",
-     "name_field": "ORGNAME"
-    },
     {
      "id": "fws2330",
      "name": "HYDE COUNTY WATERFOWL PRODUCTION AREA",
@@ -289,10 +280,19 @@
      "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
      "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=2316&outFields=*&returnGeometry=false&f=html",
      "name_field": "ORGNAME"
+    },
+    {
+     "id": "fws2319",
+     "name": "HAND COUNTY WATERFOWL PRODUCTION AREA",
+     "type": "U.S. Fish & Wildlife Service",
+     "acres": 473.0,
+     "acres_from": "the key's acres",
+     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
+     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=2319&outFields=*&returnGeometry=false&f=html",
+     "name_field": "ORGNAME"
     }
    ],
    "record_ids": [
-    "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#2277",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#2330",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#2329",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#2337",
@@ -360,9 +360,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 17725.2,
-     "official_acres": 17712.0,
-     "times": 1.0,
+     "outline_acres": 16269.2,
+     "official_acres": 13008.0,
+     "times": 1.25,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -400,7 +400,7 @@
     },
     "T9": {
      "last_edit": "2026-08-24",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -455,10 +455,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 16579.1,
-     "official_acres": 33142.0,
-     "times": 2.0,
+     "official_acres": 16571.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -479,7 +479,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-101.632986025872 43.0894835546341]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-101.632986025872 43.0894835546341]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -498,8 +504,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OFF: The outline is 2.0 times smaller than the official 33,142 acres (16,579 ac drawn) (+2 more flags)."
+   "score": 2,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-101.632986025872 43.0894835546341]; 1 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-0528",
@@ -547,11 +553,13 @@
      "metres": 24.8
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1114.2,
      "official_acres": 2043.0,
-     "times": 1.83,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 1112.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 1,112 ac, all providers added 2,043 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -585,8 +593,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 25 m outside the outline (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 25 m outside the outline."
   },
   {
    "ref": "US-0529",
@@ -601,18 +609,8 @@
    "outline_from": [
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0"
    ],
-   "acres_drawn": 44264.0,
+   "acres_drawn": 42820.6,
    "records": [
-    {
-     "id": "fws3477",
-     "name": "BROOKINGS COUNTY WATERFOWL PRODUCTION AREA",
-     "type": "U.S. Fish & Wildlife Service",
-     "acres": 1443.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
-     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=3477&outFields=*&returnGeometry=false&f=html",
-     "name_field": "ORGNAME"
-    },
     {
      "id": "fws3706",
      "name": "MINNEHAHA COUNTY WATERFOWL PRODUCTION AREA",
@@ -722,10 +720,19 @@
      "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
      "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=3559&outFields=*&returnGeometry=false&f=html",
      "name_field": "ORGNAME"
+    },
+    {
+     "id": "fws3583",
+     "name": "KINGSBURY COUNTY WATERFOWL PRODUCTION AREA",
+     "type": "U.S. Fish & Wildlife Service",
+     "acres": 456.0,
+     "acres_from": "the key's acres",
+     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
+     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=3583&outFields=*&returnGeometry=false&f=html",
+     "name_field": "ORGNAME"
     }
    ],
    "record_ids": [
-    "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#3477",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#3706",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#3475",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#3630",
@@ -980,10 +987,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 44264.0,
-     "official_acres": 44242.0,
-     "times": 1.0,
+     "flag": "OFF",
+     "outline_acres": 42820.6,
+     "official_acres": 25122.0,
+     "times": 1.7,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1003,12 +1010,18 @@
     },
     "T5": {
      "flag": "TINY HOLES",
-     "pieces": 258,
+     "pieces": 255,
      "flags": [
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "1 hole(s) under 100 m2; 258 pieces spread over 282 km"
+     "note": "1 hole(s) under 100 m2; 255 pieces spread over 282 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1022,14 +1035,14 @@
     },
     "T9": {
      "last_edit": "2026-08-24",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 5,
-   "why": "MISMATCH: The record name 'YANKTON COUNTY WATERFOWL PRODUCTION AREA' does not match POTA's name 'Madison Wetland Management District' (score 0.00) (+2 more flags)."
+   "score": 6,
+   "why": "MISMATCH: The record name 'YANKTON COUNTY WATERFOWL PRODUCTION AREA' does not match POTA's name 'Madison Wetland Management District' (score 0.00) (+3 more flags)."
   },
   {
    "ref": "US-0530",
@@ -1077,10 +1090,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 19498.7,
-     "official_acres": 38972.0,
-     "times": 2.0,
+     "official_acres": 19486.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1115,8 +1128,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 38,972 acres (19,499 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0531",
@@ -1164,10 +1177,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 4632.9,
-     "official_acres": 9262.0,
-     "times": 2.0,
+     "official_acres": 4631.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1202,8 +1215,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 9,262 acres (4,633 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0532",
@@ -1218,18 +1231,8 @@
    "outline_from": [
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0"
    ],
-   "acres_drawn": 41098.3,
+   "acres_drawn": 39424.8,
    "records": [
-    {
-     "id": "fws5957",
-     "name": "GRANT COUNTY WATERFOWL PRODUCTION AREA",
-     "type": "U.S. Fish & Wildlife Service",
-     "acres": 1673.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
-     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=5957&outFields=*&returnGeometry=false&f=html",
-     "name_field": "ORGNAME"
-    },
     {
      "id": "fws5831",
      "name": "CLARK COUNTY WATERFOWL PRODUCTION AREA",
@@ -1339,10 +1342,19 @@
      "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
      "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=5866&outFields=*&returnGeometry=false&f=html",
      "name_field": "ORGNAME"
+    },
+    {
+     "id": "fws6038",
+     "name": "ROBERTS COUNTY WATERFOWL PRODUCTION AREA",
+     "type": "U.S. Fish & Wildlife Service",
+     "acres": 661.0,
+     "acres_from": "the key's acres",
+     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
+     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=6038&outFields=*&returnGeometry=false&f=html",
+     "name_field": "ORGNAME"
     }
    ],
    "record_ids": [
-    "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#5957",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#5831",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#5954",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#5971",
@@ -1545,9 +1557,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 41098.3,
-     "official_acres": 41084.0,
-     "times": 1.0,
+     "outline_acres": 39424.8,
+     "official_acres": 27867.0,
+     "times": 1.41,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1567,11 +1579,11 @@
     },
     "T5": {
      "flag": "SCATTERED",
-     "pieces": 217,
+     "pieces": 215,
      "flags": [
       "SCATTERED"
      ],
-     "note": "217 pieces spread over 188 km"
+     "note": "215 pieces spread over 188 km"
     },
     "T6": {
      "flag": "PASS"
@@ -1585,7 +1597,7 @@
     },
     "T9": {
      "last_edit": "2026-08-24",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -1599,8 +1611,8 @@
   },
   {
    "ref": "US-0675",
-   "name": "Missouri National Recreational River National Wild & Scenic River",
-   "key_name": "Missouri National Recreational River National Wild & Scenic River",
+   "name": "Missouri National Recreational River National Wild and Scenic River",
+   "key_name": "Missouri National Recreational River National Wild and Scenic River",
    "type": "National Wild & Scenic River",
    "grade": "official",
    "pin": [
@@ -1638,7 +1650,7 @@
     "T3": {
      "flag": "PASS",
      "score": 1.0,
-     "pota_name": "Missouri National Recreational River National Wild & Scenic River",
+     "pota_name": "Missouri National Recreational River National Wild and Scenic River",
      "record_name": "Missouri National Recreational River"
     },
     "T4": {
@@ -1662,7 +1674,7 @@
     },
     "T9": {
      "last_edit": "2026-10-16",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -2274,22 +2286,11 @@
     -98.665
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0"
    ],
-   "acres_drawn": 45.6,
+   "acres_drawn": 45.1,
    "records": [
-    {
-     "id": "padus#255379",
-     "name": "White Swan Recreation Area",
-     "type": "3102 State Recreation Area",
-     "category": "Fee",
-     "acres": 19.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=255379&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgsda872",
      "name": "White Swan",
@@ -2308,7 +2309,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255379",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0#872",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0#872"
    ],
@@ -2318,22 +2318,19 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 45.6,
-     "official_acres": 19.0,
-     "times": 2.4,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO FIGURE",
+     "outline_acres": 45.1
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "White Swan State Recreation Area",
-     "record_name": "White Swan Recreation Area"
+     "record_name": "White Swan"
     },
     "T4": {
      "park_kind": "recreation area",
-     "record_kind": "recreation area",
-     "flag": "PASS"
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
      "flag": "PASS",
@@ -2356,8 +2353,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.4 times bigger than the official 19 acres (46 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-10324",
@@ -2936,22 +2933,11 @@
     -103.39
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0"
    ],
-   "acres_drawn": 807.1,
+   "acres_drawn": 34.9,
    "records": [
-    {
-     "id": "padus#255206",
-     "name": "Newell Lake Game Production Area",
-     "type": "3301 State Recreation Area",
-     "category": "Fee",
-     "acres": 807.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=255206&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgsda978",
      "name": "Newell Lake",
@@ -2970,7 +2956,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255206",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0#978",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0#978"
    ],
@@ -2980,17 +2965,14 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 807.1,
-     "official_acres": 807.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO FIGURE",
+     "outline_acres": 34.9
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Newell Lake State Recreation Area",
-     "record_name": "Newell Lake Game Production Area"
+     "record_name": "Newell Lake"
     },
     "T4": {
      "park_kind": "recreation area",
@@ -3100,7 +3082,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3139,22 +3127,11 @@
     -96.9621
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0"
    ],
-   "acres_drawn": 15.1,
+   "acres_drawn": 11.2,
    "records": [
-    {
-     "id": "padus#255373",
-     "name": "Wall Lake",
-     "type": "3102 State Recreation Area",
-     "category": "Fee",
-     "acres": 15.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=255373&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgsda855",
      "name": "Wall Lake",
@@ -3173,7 +3150,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255373",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0#855",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0#855"
    ],
@@ -3183,11 +3159,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 15.1,
-     "official_acres": 15.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO FIGURE",
+     "outline_acres": 11.2
     },
     "T3": {
      "flag": "PASS",
@@ -5373,7 +5346,7 @@
    "name": "Centennial Trail State Trail",
    "key_name": "Centennial Trail State Trail",
    "type": "State Trail",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     44.4582,
     -103.436
@@ -5394,7 +5367,7 @@
    "tests": {
     "T1": {
      "flag": "NEAR",
-     "metres": 39.3
+     "metres": 35.2
     },
     "T2": {
      "flag": "N/A",
@@ -5419,11 +5392,8 @@
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "detail_m": 0.8,
-     "declared_m": null,
-     "coordinate_step_m": 0.8,
-     "median_spacing_m": 0.0,
-     "flag": "PASS"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -5431,13 +5401,15 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: : down for this run (failed 3 times)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 39 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 35 m outside the outline."
   },
   {
    "ref": "US-2916",
@@ -6240,22 +6212,11 @@
     -96.514
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0"
    ],
-   "acres_drawn": 424.1,
+   "acres_drawn": 420.3,
    "records": [
-    {
-     "id": "padus#255339",
-     "name": "Palisades",
-     "type": "3102 State Recreation Area",
-     "category": "Fee",
-     "acres": 167.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=255339&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgsda928",
      "name": "Palisades",
@@ -6274,7 +6235,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255339",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0#928",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0#928"
    ],
@@ -6284,11 +6244,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 424.1,
-     "official_acres": 167.0,
-     "times": 2.54,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO FIGURE",
+     "outline_acres": 420.3
     },
     "T3": {
      "flag": "PASS",
@@ -6298,8 +6255,8 @@
     },
     "T4": {
      "park_kind": "state park",
-     "record_kind": "recreation area",
-     "flag": "PASS"
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
      "flag": "PASS",
@@ -6322,8 +6279,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.5 times bigger than the official 167 acres (424 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-2925",
@@ -6738,7 +6695,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-103.372326534172 44.0458229869423]; 25 piece(s) under 10 m wide; 2 hole(s) under 100 m2; 238 pieces spread over 151 km"
+     "note": "Ring Self-intersection[-103.372326534172 44.0458229869423]; 25 piece(s) under 10 m wide; 2 hole(s) under 100 m2; 238 pieces spread over 151 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 25
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6824,11 +6787,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 137 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 137 m outside the outline."
   },
   {
    "ref": "US-5644",
@@ -7071,7 +7034,13 @@
       "SELF-INTERSECTION",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-101.850263815482 43.9150694998118]; 104 pieces spread over 233 km"
+     "note": "Ring Self-intersection[-101.850263815482 43.9150694998118]; 104 pieces spread over 233 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7151,7 +7120,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-100.114263240714 44.2309746668745]"
+     "note": "Ring Self-intersection[-100.114263240714 44.2309746668745]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7231,7 +7206,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-101.923010730171 45.5886174750821]"
+     "note": "Ring Self-intersection[-101.923010730171 45.5886174750821]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7339,18 +7320,8 @@
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0"
    ],
-   "acres_drawn": 7986.1,
+   "acres_drawn": 3157.9,
    "records": [
-    {
-     "id": "padus#2299",
-     "name": "Angostura Reservoir",
-     "type": "Other Bureau of Reclamation Land Resource Management Area",
-     "category": "Fee",
-     "acres": 4841.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2299&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "padus#255141",
      "name": "Angostura Reservoir Game Production Area",
@@ -7399,7 +7370,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#2299",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255141",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255272",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255274",
@@ -7413,8 +7383,8 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 7986.1,
-     "official_acres": 7985.0,
+     "outline_acres": 3157.9,
+     "official_acres": 3144.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -7426,17 +7396,12 @@
     },
     "T4": {
      "park_kind": "recreation area",
-     "record_kind": "lake",
-     "flag": "CONFLICT",
-     "why": "the record is the whole lake but the park is a recreation area on it"
+     "record_kind": "recreation area",
+     "flag": "PASS"
     },
     "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 1,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "31 hole(s) under 100 m2"
+     "flag": "PASS",
+     "pieces": 5
     },
     "T6": {
      "flag": "SPILL",
@@ -7469,8 +7434,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 8,
-   "why": "CONFLICT: The record is the whole lake but the park is a recreation area on it (+3 more flags)."
+   "score": 4,
+   "why": "SPILL: The outline covers 98% of US-10331 Bailey State Recreation Area, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "US-8156",
@@ -7761,22 +7726,11 @@
     -99.26
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0"
    ],
    "acres_drawn": 205.2,
    "records": [
-    {
-     "id": "padus#255281",
-     "name": "Burke Lake",
-     "type": "3102 State Recreation Area",
-     "category": "Fee",
-     "acres": 205.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=255281&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgsda896",
      "name": "Burke Lake",
@@ -7795,7 +7749,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255281",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0#896",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0#896"
    ],
@@ -7805,11 +7758,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 205.2,
-     "official_acres": 205.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO FIGURE",
+     "outline_acres": 205.2
     },
     "T3": {
      "flag": "PASS",
@@ -7858,22 +7808,11 @@
     -99.1732
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0"
    ],
-   "acres_drawn": 259.3,
+   "acres_drawn": 255.5,
    "records": [
-    {
-     "id": "padus#255282",
-     "name": "Buryanek Recreation Area",
-     "type": "3102 State Recreation Area",
-     "category": "Fee",
-     "acres": 75.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=255282&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgsda906",
      "name": "Buryanek",
@@ -7892,7 +7831,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255282",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0#906",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0#906"
    ],
@@ -7902,22 +7840,19 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 259.3,
-     "official_acres": 75.0,
-     "times": 3.46,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO FIGURE",
+     "outline_acres": 255.5
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Buryanek State Recreation Area",
-     "record_name": "Buryanek Recreation Area"
+     "record_name": "Buryanek"
     },
     "T4": {
      "park_kind": "recreation area",
-     "record_kind": "recreation area",
-     "flag": "PASS"
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
      "flag": "PASS",
@@ -7940,8 +7875,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 3.5 times bigger than the official 75 acres (259 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-8161",
@@ -8213,7 +8148,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-100.237749119979 44.329295874303]"
+     "note": "Ring Self-intersection[-100.237749119979 44.329295874303]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8240,7 +8181,7 @@
    "name": "George S. Mickelson State Trail",
    "key_name": "George S. Mickelson State Trail",
    "type": "State Trail",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     44.3707,
     -103.729
@@ -8261,7 +8202,7 @@
    "tests": {
     "T1": {
      "flag": "NEAR",
-     "metres": 37.2
+     "metres": 36.9
     },
     "T2": {
      "flag": "N/A",
@@ -8286,11 +8227,8 @@
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "detail_m": 0.08,
-     "declared_m": null,
-     "coordinate_step_m": 0.08,
-     "median_spacing_m": 0.0,
-     "flag": "PASS"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -8298,13 +8236,15 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: : down for this run (failed 3 times)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 37 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 37 m outside the outline."
   },
   {
    "ref": "US-8165",
@@ -8585,22 +8525,11 @@
     -96.4789
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0"
    ],
-   "acres_drawn": 29.3,
+   "acres_drawn": 28.1,
    "records": [
-    {
-     "id": "padus#255288",
-     "name": "Cochrane",
-     "type": "3102 State Recreation Area",
-     "category": "Fee",
-     "acres": 29.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=255288&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgsda902",
      "name": "Lake Cochrane",
@@ -8619,7 +8548,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255288",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0#902",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0#902"
    ],
@@ -8629,11 +8557,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 29.3,
-     "official_acres": 29.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO FIGURE",
+     "outline_acres": 28.1
     },
     "T3": {
      "flag": "PASS",
@@ -8643,8 +8568,8 @@
     },
     "T4": {
      "park_kind": "recreation area",
-     "record_kind": "recreation area",
-     "flag": "PASS"
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
      "flag": "PASS",
@@ -9172,7 +9097,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9263,8 +9194,10 @@
      "flag": "PASS",
      "outline_acres": 25969.1,
      "official_acres": 26841.0,
-     "times": 1.03,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 25792.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 25,792 ac, all providers added 26,841 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -9283,7 +9216,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-97.5601345712968 42.8590958861765]"
+     "note": "Ring Self-intersection[-97.5601345712968 42.8590958861765]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9526,16 +9465,6 @@
    "acres_drawn": 373.8,
    "records": [
     {
-     "id": "padus#255327",
-     "name": "Mina",
-     "type": "3102 State Recreation Area",
-     "category": "Fee",
-     "acres": 302.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=255327&outFields=*&returnGeometry=false&f=html"
-    },
-    {
      "id": "padus#254917",
      "name": "Mina",
      "type": "3301 State Conservation Area",
@@ -9563,7 +9492,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255327",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#254917",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0#866",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0#866"
@@ -9574,10 +9502,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
+     "flag": "WAY OFF",
      "outline_acres": 373.8,
-     "official_acres": 374.0,
-     "times": 1.0,
+     "official_acres": 72.0,
+     "times": 5.19,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -9613,8 +9541,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "CONFLICT: The record is the whole lake but the park is a recreation area on it."
+   "score": 6,
+   "why": "WAY OFF: The outline is 5.2 times bigger than the official 72 acres (374 ac drawn) (+1 more flag)."
   },
   {
    "ref": "US-8178",
@@ -10111,18 +10039,8 @@
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0"
    ],
-   "acres_drawn": 569.8,
+   "acres_drawn": 557.9,
    "records": [
-    {
-     "id": "padus#255341",
-     "name": "Pelican Lake",
-     "type": "3102 State Recreation Area",
-     "category": "Fee",
-     "acres": 444.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=255341&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "padus#255213",
      "name": "Pelican Lake",
@@ -10151,7 +10069,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255341",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255213",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0#985",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0#985"
@@ -10162,10 +10079,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 569.8,
-     "official_acres": 566.0,
-     "times": 1.01,
+     "flag": "OFF",
+     "outline_acres": 557.9,
+     "official_acres": 122.0,
+     "times": 4.57,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -10201,8 +10118,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "CONFLICT: The record is the whole lake but the park is a recreation area on it."
+   "score": 4,
+   "why": "CONFLICT: The record is the whole lake but the park is a recreation area on it (+1 more flag)."
   },
   {
    "ref": "US-8184",
@@ -10219,18 +10136,8 @@
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0"
    ],
-   "acres_drawn": 529.2,
+   "acres_drawn": 519.2,
    "records": [
-    {
-     "id": "padus#255343",
-     "name": "Pickerel Lake",
-     "type": "3102 State Recreation Area",
-     "category": "Fee",
-     "acres": 391.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=255343&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "padus#255214",
      "name": "Pickerel Lake (okroi)",
@@ -10259,7 +10166,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255343",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255214",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0#919",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0#919"
@@ -10270,10 +10176,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 529.2,
-     "official_acres": 521.0,
-     "times": 1.02,
+     "flag": "OFF",
+     "outline_acres": 519.2,
+     "official_acres": 130.0,
+     "times": 3.99,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -10309,8 +10215,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "CONFLICT: The record is the whole lake but the park is a recreation area on it."
+   "score": 4,
+   "why": "CONFLICT: The record is the whole lake but the park is a recreation area on it (+1 more flag)."
   },
   {
    "ref": "US-8185",
@@ -10714,16 +10620,6 @@
    "acres_drawn": 480.8,
    "records": [
     {
-     "id": "padus#255348",
-     "name": "Richmond Lake",
-     "type": "3102 State Recreation Area",
-     "category": "Fee",
-     "acres": 314.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=255348&outFields=*&returnGeometry=false&f=html"
-    },
-    {
      "id": "padus#255222",
      "name": "Richmond Lake Game Production Area",
      "type": "3301 State Recreation Area",
@@ -10751,7 +10647,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255348",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255222",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0#1002",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0#1002"
@@ -10762,10 +10657,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
+     "flag": "OFF",
      "outline_acres": 480.8,
-     "official_acres": 481.0,
-     "times": 1.0,
+     "official_acres": 167.0,
+     "times": 2.88,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -10801,8 +10696,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "CONFLICT: The record is the whole lake but the park is a recreation area on it."
+   "score": 4,
+   "why": "CONFLICT: The record is the whole lake but the park is a recreation area on it (+1 more flag)."
   },
   {
    "ref": "US-8190",
@@ -10911,22 +10806,11 @@
     -97.241
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0"
    ],
-   "acres_drawn": 35.3,
+   "acres_drawn": 33.1,
    "records": [
-    {
-     "id": "padus#255355",
-     "name": "Sandy Shore",
-     "type": "3102 State Recreation Area",
-     "category": "Fee",
-     "acres": 22.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=255355&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgsda917",
      "name": "Sandy Shore",
@@ -10945,7 +10829,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255355",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0#917",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0#917"
    ],
@@ -10955,11 +10838,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 35.3,
-     "official_acres": 22.0,
-     "times": 1.6,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO FIGURE",
+     "outline_acres": 33.1
     },
     "T3": {
      "flag": "PASS",
@@ -10969,8 +10849,8 @@
     },
     "T4": {
      "park_kind": "recreation area",
-     "record_kind": "recreation area",
-     "flag": "PASS"
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
      "flag": "PASS",
@@ -10993,8 +10873,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 1.6 times bigger than the official 22 acres (35 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-8192",
@@ -11011,18 +10891,8 @@
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0"
    ],
-   "acres_drawn": 12451.6,
+   "acres_drawn": 6285.9,
    "records": [
-    {
-     "id": "padus#255232",
-     "name": "Shadehill Reservoir Game Production Area",
-     "type": "3301 State Recreation Area",
-     "category": "Fee",
-     "acres": 6206.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=255232&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "padus#2343",
      "name": "Shadehill Reservoir",
@@ -11061,7 +10931,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255232",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#2343",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255356",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0#1005",
@@ -11074,10 +10943,12 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 12451.6,
-     "official_acres": 12433.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "outline_acres": 6285.9,
+     "official_acres": 6227.0,
+     "times": 1.01,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 5335.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 5,335 ac, all providers added 6,227 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -11097,7 +10968,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "58 hole(s) under 100 m2"
+     "note": "55 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 55,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11686,22 +11563,11 @@
     -97.0286
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0"
    ],
-   "acres_drawn": 47.1,
+   "acres_drawn": 46.4,
    "records": [
-    {
-     "id": "padus#255372",
-     "name": "Walkers Point Recreation Area",
-     "type": "3102 State Recreation Area",
-     "category": "Fee",
-     "acres": 9.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=255372&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgsda891",
      "name": "Walkers Point",
@@ -11720,7 +11586,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255372",
     "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0#891",
     "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0#891"
    ],
@@ -11730,22 +11595,19 @@
      "metres": 0
     },
     "T2": {
-     "flag": "WAY OFF",
-     "outline_acres": 47.1,
-     "official_acres": 9.0,
-     "times": 5.23,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO FIGURE",
+     "outline_acres": 46.4
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Walker's Point State Recreation Area",
-     "record_name": "Walkers Point Recreation Area"
+     "record_name": "Walkers Point"
     },
     "T4": {
      "park_kind": "recreation area",
-     "record_kind": "recreation area",
-     "flag": "PASS"
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
      "flag": "PASS",
@@ -11768,8 +11630,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "WAY OFF: The outline is 5.2 times bigger than the official 9 acres (47 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-8200",
@@ -11849,7 +11711,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-99.7135546065853 44.1692124276402]"
+     "note": "Ring Self-intersection[-99.7135546065853 44.1692124276402]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
