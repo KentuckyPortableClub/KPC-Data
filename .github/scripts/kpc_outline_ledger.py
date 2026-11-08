@@ -27,7 +27,9 @@ def rows_for(ref, rows=None):
 
 def verdict(ref, rows=None):
     r = rows_for(ref, rows)
-    return '; '.join(dict.fromkeys(f"{x.get('verdict')} ({x.get('date')})" for x in r)) if r else ''
+    v = [f"{x.get('verdict')} ({x.get('date')})" for x in r]
+    v += [f"trail match: {x['trail'].get('status')} ({x['trail'].get('date')})" for x in r if x.get('trail')]  # Nov 7 trail matcher
+    return '; '.join(dict.fromkeys(v)) if r else ''
 
 
 def needs_search(ref, rows=None, today=None, days=None):
@@ -35,6 +37,7 @@ def needs_search(ref, rows=None, today=None, days=None):
     r = rows_for(ref, rows)
     if not r: return True
     today = today or dt.date.today()
+    if any((x.get('trail') or {}).get('status') == 'trail line wired' for x in r): return False
     for x in r:
         if x.get('verdict') not in AGAIN: return False
         try:
