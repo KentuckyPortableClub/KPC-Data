@@ -41,6 +41,7 @@ jobs:
           python3 .github/scripts/kpc_storage_keeper.py measure | tee /tmp/m.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { kpc_rc=$?; echo "::warning title=kpc_storage_keeper.py::stopped with an error (exit $rc), see the log above"; echo "kpc_storage_keeper.py - stopped with an error (exit $rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           L=$(grep '^LINE=' /tmp/m.txt | cut -d= -f2-); O=$(grep '^OVER=' /tmp/m.txt | cut -d= -f2); echo "OVER=$O" >> "$GITHUB_ENV"
           C=green; [ "$O" = 1 ] && C=amber   # over the line = HQ decides (amber); red is only for a broken bot
+          { echo "KPC_BOARD_C=$C"; echo "KPC_BOARD_L=$L"; } >> "$GITHUB_ENV"   # Nov 8: kept for a re-write of the board line on a save conflict
           python3 .github/scripts/kpc_status.py board "Storage keeper (weekly)" "$C" "$L" "HQ: over the line = decide (squash / move files); the keeper never rewrites main" || true   # ok: a status-board line (reporting only)
       - name: Clean this repo (old artifacts, caches, stale bot branches)
         id: kept_green_3
@@ -54,7 +55,22 @@ jobs:
         continue-on-error: true
         run: |
           git add data/status 2>/dev/null; git diff --cached --quiet && exit 0
-          git commit -qm 'storage keeper: weekly sizes'; { saved=0; for i in 1 2 3; do git pull -q --rebase && git push -q && { saved=1; break; }; sleep 5; done; [ "$saved" = 1 ] || { kpc_rc=$?; echo "::error title=Save::not saved after every try; the next run tries again"; echo "Save - not saved after every try; the next run tries again" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; }; true
+          # Nov 8 (5:58 AM CST red: data/status/board.json conflicted with another bot): on a conflict, drop the rebase, take the newest main,
+          # put back this run's own status files, RE-READ board.json and write this run's line into it again, then push (3 tries)
+          git diff --cached --name-only | grep -v '^data/status/board.json$' > /tmp/keep.list || true   # ok: may be empty
+          [ -s /tmp/keep.list ] && tar -cf /tmp/keep.tar -T /tmp/keep.list || true   # ok: may be empty
+          git commit -qm 'storage keeper: weekly sizes'; saved=0
+          for i in 1 2 3; do
+            if git pull -q --rebase; then git push -q && { saved=1; break; }
+            else
+              git rebase --abort 2>/dev/null || true; git fetch -q origin main && git reset -q --hard origin/main
+              [ -s /tmp/keep.list ] && tar -xf /tmp/keep.tar || true   # ok: may be empty
+              python3 .github/scripts/kpc_status.py board "Storage keeper (weekly)" "$KPC_BOARD_C" "$KPC_BOARD_L" "HQ: over the line = decide (squash / move files); the keeper never rewrites main" || true   # ok: a status-board line (reporting only)
+              git add data/status 2>/dev/null; git diff --cached --quiet && { saved=1; break; }
+              git commit -qm 'storage keeper: weekly sizes' && git push -q && { saved=1; break; }
+            fi; sleep $((i*5))
+          done
+          [ "$saved" = 1 ] || { echo "::error title=Save::not saved after every try; the next run tries again"; echo "Save - not saved after every try; the next run tries again" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; true
       - name: "Over the line? (the only red end = one email)"
         if: ${{ env.OVER == '1' }}
         run: |

@@ -44,7 +44,12 @@ jobs:
           repository: KentuckyPortableClub/KPC-Links
           path: links
           persist-credentials: false
-          sparse-checkout: .github/scripts
+          # Nov 8: + the Kentucky key and the saved official KY outlines (86 of 88 KY rows were NOT CHECKED without them)
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.github/scripts/
+            /data/ky-answer-key.json
+            /ky-*.geojson
       - uses: actions/setup-python@v5
         if: steps.gap.outputs.busy != 'yes'
         with:
@@ -61,7 +66,7 @@ jobs:
           pip install -q -r .github/scripts/tools/kpc_fers_check/requirements.txt || { kpc_rc=$?; echo "::warning title=install::an install step failed (exit $kpc_rc); the next steps may not work"; echo "install - an install step failed (exit $kpc_rc); the next steps may not work" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           A="${IN_AREAS:-US-KY $(ls data/fers | grep -E '^(US|CA)-[A-Z]{2}\.json(\.gz)?$' | sed 's/\.json.*//' | grep -v '^US-KY$' | tr '\n' ' ')}"
           [ "${{ (inputs.as_schedule && 'schedule') || github.event_name }}" = schedule ] && R="" || R="--resume"
-          python3 .github/scripts/tools/kpc_fers_check/kpc_fers_check.py --areas $A $R --fers-dir data/fers --key-dir data --out data/fers-check --max-minutes 50 2>&1 | tee /tmp/fers.log | tail -30 || true   # ok: a pipeline (its exit status is the last command; follow-up: pipefail)
+          python3 .github/scripts/tools/kpc_fers_check/kpc_fers_check.py --areas $A $R --fers-dir data/fers --key-dir data --ky-key ../links/data/ky-answer-key.json --ky-outlines ../links --out data/fers-check --max-minutes 50 2>&1 | tee /tmp/fers.log | tail -30 || true   # ok: a pipeline (its exit status is the last command; follow-up: pipefail)
           grep -q 'rerun with --resume' /tmp/fers.log && echo "more=yes" >> $GITHUB_OUTPUT || true   # ok: nothing to do is fine
           rm -rf data/fers-check/.cache || true   # ok: nothing to do is fine
           python3 .github/scripts/kpc_tools_run.py fers-alerts | tee /tmp/al.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { kpc_rc=$?; echo "::warning title=kpc_tools_run.py::stopped with an error (exit $rc), see the log above"; echo "kpc_tools_run.py - stopped with an error (exit $rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
