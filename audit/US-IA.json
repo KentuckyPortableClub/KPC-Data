@@ -1,7 +1,8 @@
 {
  "area": "US-IA",
- "built": "2026-11-02",
+ "built": "2026-11-08",
  "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
  "parks": [
   {
    "ref": "US-0268",
@@ -61,11 +62,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 3993.7,
      "official_acres": 7530.0,
-     "times": 1.89,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 3986.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 3,986 ac, all providers added 7,530 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -99,8 +102,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 1.9 times smaller than the official 7,530 acres (3,994 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0269",
@@ -238,10 +241,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1235.0,
-     "official_acres": 2440.0,
-     "times": 1.98,
+     "official_acres": 1220.0,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -274,10 +277,12 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "official acres count once the land of sgiac105725: it lies inside a bigger record from the same source"
+   ],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 2,440 acres (1,235 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0270",
@@ -292,18 +297,8 @@
    "outline_from": [
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0"
    ],
-   "acres_drawn": 27593.1,
+   "acres_drawn": 25460.9,
    "records": [
-    {
-     "id": "fws2381",
-     "name": "CERRO GORDO COUNTY WATERFOWL PRODUCTION AREA",
-     "type": "U.S. Fish & Wildlife Service",
-     "acres": 2132.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
-     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=2381&outFields=*&returnGeometry=false&f=html",
-     "name_field": "ORGNAME"
-    },
     {
      "id": "fws2489",
      "name": "WRIGHT COUNTY WATERFOWL PRODUCTION AREA OF IA",
@@ -413,10 +408,19 @@
      "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
      "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=2446&outFields=*&returnGeometry=false&f=html",
      "name_field": "ORGNAME"
+    },
+    {
+     "id": "fws2483",
+     "name": "WORTH COUNTY WATERFOWL PRODUCTION AREA",
+     "type": "U.S. Fish & Wildlife Service",
+     "acres": 543.0,
+     "acres_from": "the key's acres",
+     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
+     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=2483&outFields=*&returnGeometry=false&f=html",
+     "name_field": "ORGNAME"
     }
    ],
    "record_ids": [
-    "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#2381",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#2489",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#2403",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#2405",
@@ -515,9 +519,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 27593.1,
-     "official_acres": 27595.0,
-     "times": 1.0,
+     "outline_acres": 25460.9,
+     "official_acres": 20930.0,
+     "times": 1.22,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -537,14 +541,20 @@
     },
     "T5": {
      "flag": "SELF-INTERSECTION",
-     "pieces": 170,
+     "pieces": 169,
      "flags": [
       "SELF-INTERSECTION",
       "SLIVERS",
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-93.6514944005671 42.6390184889816]; 1 piece(s) under 10 m wide; 4 hole(s) under 100 m2; 170 pieces spread over 269 km"
+     "note": "Ring Self-intersection[-93.6514944005671 42.6390184889816]; 1 piece(s) under 10 m wide; 4 hole(s) under 100 m2; 169 pieces spread over 269 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 4,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -581,7 +591,7 @@
     },
     "T9": {
      "last_edit": "2026-08-24",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -754,11 +764,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 6448.2,
      "official_acres": 11917.0,
-     "times": 1.85,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 6177.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 6,177 ac, all providers added 11,917 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -777,7 +789,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-93.2531645520899 41.5623903450068]"
+     "note": "Ring Self-intersection[-93.2531645520899 41.5623903450068]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -796,8 +814,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 1.9 times smaller than the official 11,917 acres (6,448 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-93.2531645520899 41.5623903450068]."
   },
   {
    "ref": "US-0272",
@@ -925,8 +943,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 16336.6,
-     "official_acres": 23701.0,
-     "times": 1.45,
+     "official_acres": 11861.0,
+     "times": 1.38,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -947,7 +965,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-92.2980589525014 41.8810276367683]; 7 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-92.2980589525014 41.8810276367683]; 7 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 7,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -989,9 +1013,10 @@
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9"
    ],
-   "acres_drawn": 2836.3,
+   "acres_drawn": 3321.4,
    "records": [
     {
      "id": "padus#4428",
@@ -1014,6 +1039,36 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=5385&outFields=*&returnGeometry=false&f=html"
     },
     {
+     "id": "sgiac105582",
+     "name": "Union Slough National Wildlife Refuge",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 2498.1,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=105582&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac105676",
+     "name": "Union Slough National Wildlife Refuge",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 556.0,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=105676&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac105581",
+     "name": "Union Slough National Wildlife Refuge",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 259.4,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=105581&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
      "id": "sgiaa34347",
      "name": "UNION SLOUGH NATIONAL WILDLIFE REFUGE - SCHWOB MARSH",
      "type": "Iowa DNR (wild, state GIS table)",
@@ -1027,6 +1082,9 @@
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#4428",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#5385",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105582",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105676",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105581",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#34347"
    ],
    "tests": {
@@ -1035,10 +1093,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 2836.3,
-     "official_acres": 5668.0,
-     "times": 2.0,
+     "flag": "PASS",
+     "outline_acres": 3321.4,
+     "official_acres": 3313.5,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1071,14 +1129,10 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [
-    "record sgiac94584 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac94678 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac94583 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
-   ],
+   "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 5,668 acres (2,836 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0367",
@@ -1453,23 +1507,12 @@
     -95.124
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10"
    ],
    "acres_drawn": 205.5,
    "records": [
-    {
-     "id": "padus#199096",
-     "name": "Marble Lake",
-     "type": "Sovereign Waters State Other or Unknown",
-     "category": "Fee",
-     "acres": 166.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199096&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgiac106694",
      "name": "Marble Lake",
@@ -1538,7 +1581,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#199096",
     "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106694",
     "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104129",
     "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104130",
@@ -1611,7 +1653,8 @@
    ],
    "outline_from": [
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
    ],
    "acres_drawn": 3869.0,
    "records": [
@@ -1684,6 +1727,56 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=197209&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgiac106475",
+     "name": "Chichaqua Bottoms WMA",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 749.0,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=106475&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac106488",
+     "name": "Chichaqua Bottoms WMA",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 590.2,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=106488&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac106650",
+     "name": "Chichaqua Bottoms WMA",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 472.4,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=106650&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac106474",
+     "name": "Chichaqua Bottoms WMA",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 361.1,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=106474&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac105814",
+     "name": "Chichaqua Bottoms WMA",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 295.9,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=105814&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     }
    ],
    "record_ids": [
@@ -1693,7 +1786,25 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198422",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198706",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#197778",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#197209"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#197209",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106475",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106488",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106650",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106474",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105814",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106476",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106478",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106480",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106485",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106486",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106483",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106479",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106484",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106652",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106487",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106651",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106481",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106482"
    ],
    "tests": {
     "T1": {
@@ -1703,8 +1814,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 3869.0,
-     "official_acres": 3663.0,
-     "times": 1.06,
+     "official_acres": 3861.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1737,26 +1848,7 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [
-    "record sgiac95486 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95499 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95664 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95485 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac94816 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95487 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95489 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95491 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95496 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95497 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95494 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95490 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95495 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95666 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95498 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95665 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95492 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95493 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 0,
    "why": "All tests pass."
@@ -1966,7 +2058,7 @@
    "name": "Wapsipinicon River Water State Trail",
    "key_name": "Wapsipinicon River Water State Trail",
    "type": "State Trail",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     41.766,
     -90.534
@@ -1987,7 +2079,7 @@
    "tests": {
     "T1": {
      "flag": "NEAR",
-     "metres": 71.8
+     "metres": 35.0
     },
     "T2": {
      "flag": "N/A",
@@ -2012,11 +2104,8 @@
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "detail_m": 0.83,
-     "declared_m": null,
-     "coordinate_step_m": 0.83,
-     "median_spacing_m": 0.0,
-     "flag": "PASS"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -2024,13 +2113,15 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: : down for this run (failed 3 times)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 72 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 35 m outside the outline."
   },
   {
    "ref": "US-11306",
@@ -2145,9 +2236,10 @@
    "outline_from": [
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9"
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
    ],
-   "acres_drawn": 1197.4,
+   "acres_drawn": 1213.7,
    "records": [
     {
      "id": "fws4787",
@@ -2198,6 +2290,46 @@
      "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
      "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9/query?objectIds=33956&outFields=*&returnGeometry=false&f=html",
      "name_field": "AREA_NAME"
+    },
+    {
+     "id": "sgiac106211",
+     "name": "Princeton WMA",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 743.2,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=106211&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac106536",
+     "name": "Princeton WMA",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 299.0,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=106536&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac106019",
+     "name": "Princeton WMA",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 144.9,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=106019&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac107816",
+     "name": "Princeton WMA",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 16.3,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=107816&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     }
    ],
    "record_ids": [
@@ -2205,7 +2337,11 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195490",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198924",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#33957",
-    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#33956"
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#33956",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106211",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106536",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106019",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#107816"
    ],
    "tests": {
     "T1": {
@@ -2214,8 +2350,8 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 1197.4,
-     "official_acres": 1187.0,
+     "outline_acres": 1213.7,
+     "official_acres": 1203.5,
      "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -2231,8 +2367,18 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "TINY HOLES",
+     "pieces": 2,
+     "flags": [
+      "TINY HOLES"
+     ],
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2246,19 +2392,14 @@
     },
     "T9": {
      "last_edit": "2026-08-24",
-     "read": "2026-10-26",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
-   "problems": [
-    "record sgiac95219 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95547 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95025 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac96835 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
-   ],
+   "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 1,
+   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
   },
   {
    "ref": "US-11323",
@@ -2957,6 +3098,7 @@
    ],
    "outline_from": [
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
    "acres_drawn": 1108.3,
@@ -2970,6 +3112,26 @@
      "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
      "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9/query?objectIds=38924&outFields=*&returnGeometry=false&f=html",
      "name_field": "AREA_NAME"
+    },
+    {
+     "id": "sgiac107850",
+     "name": "Turin Preserve WMA",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 891.5,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=107850&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac107849",
+     "name": "Turin Loess Hills State Preserve",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 215.9,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=107849&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
      "id": "padus#198996",
@@ -2994,6 +3156,8 @@
    ],
    "record_ids": [
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#38924",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#107850",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#107849",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198996",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198647"
    ],
@@ -3005,7 +3169,7 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 1108.3,
-     "official_acres": 1107.0,
+     "official_acres": 1107.4,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -3039,10 +3203,7 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [
-    "record sgiac96869 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac96868 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 0,
    "why": "All tests pass."
@@ -3059,21 +3220,10 @@
    ],
    "outline_from": [
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 12808.7,
+   "acres_drawn": 3140.1,
    "records": [
-    {
-     "id": "sgiaa34306",
-     "name": "LOESS HILLS STATE FOREST - PREPARATION CANYON UNIT",
-     "type": "Iowa DNR (wild, state GIS table)",
-     "acres": 5977.0,
-     "acres_from": "acres field",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9/query?objectIds=34306&outFields=*&returnGeometry=false&f=html",
-     "name_field": "AREA_NAME"
-    },
     {
      "id": "sgiaa46927",
      "name": "LOESS HILLS WILDLIFE AREA",
@@ -3085,26 +3235,6 @@
      "name_field": "AREA_NAME"
     },
     {
-     "id": "sgiaa58128",
-     "name": "LOESS HILLS STATE FOREST - PISGAH UNIT",
-     "type": "Iowa DNR (wild, state GIS table)",
-     "acres": 2602.0,
-     "acres_from": "acres field",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9/query?objectIds=58128&outFields=*&returnGeometry=false&f=html",
-     "name_field": "AREA_NAME"
-    },
-    {
-     "id": "sgiaa34304",
-     "name": "LOESS HILLS STATE FOREST - MONDAMIN UNIT",
-     "type": "Iowa DNR (wild, state GIS table)",
-     "acres": 1096.0,
-     "acres_from": "acres field",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9/query?objectIds=34304&outFields=*&returnGeometry=false&f=html",
-     "name_field": "AREA_NAME"
-    },
-    {
      "id": "padus#198859",
      "name": "Loess Hill Wildlife Management Area",
      "type": "State Wildlife Management Area State Conservation Area",
@@ -3113,58 +3243,11 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=198859&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgiac107900",
-     "name": "Loess Hills WMA",
-     "type": "Iowa DNR (land, state GIS table)",
-     "acres": 2295.8,
-     "acres_from": "acres field",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=107900&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgiac108038",
-     "name": "Loess Hill WMA",
-     "type": "Iowa DNR (land, state GIS table)",
-     "acres": 238.0,
-     "acres_from": "acres field",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=108038&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgiac108155",
-     "name": "Loess Hills WMA",
-     "type": "Iowa DNR (land, state GIS table)",
-     "acres": 161.5,
-     "acres_from": "acres field",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=108155&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgiac106384",
-     "name": "Loess Hill WMA",
-     "type": "Iowa DNR (land, state GIS table)",
-     "acres": 96.4,
-     "acres_from": "acres field",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=106384&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
-    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#34306",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#46927",
-    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#58128",
-    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#34304",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198859",
-    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#107900",
-    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#108038",
-    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#108155",
-    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106384"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198859"
    ],
    "tests": {
     "T1": {
@@ -3172,26 +3255,23 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 12808.7,
-     "official_acres": 12794.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Loess Hills Wildlife Area",
-     "record_name": "Loess Hills WMA"
+     "record_name": "LOESS HILLS WILDLIFE AREA"
     },
     "T4": {
      "park_kind": "wma",
-     "record_kind": "state forest",
+     "record_kind": "wma",
      "flag": "PASS"
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 15
+     "pieces": 3
     },
     "T6": {
      "flag": "PASS"
@@ -3201,25 +3281,19 @@
      "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "DUPLICATE",
-     "parks": {
-      "US-4659": [
-       "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#34306",
-       "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#58128",
-       "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#34304"
-      ]
-     },
-     "note": "same record id(s) as another park number: for KPC 13"
+     "flag": "PASS"
     },
     "T9": {
      "flag": "CAN'T TELL",
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "DUPLICATE: Another park number uses the same record: US-4659."
+   "problems": [
+    "SOURCE DOWN: programs.iowadnr.gov: layer said: Error performing query operation"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-12376",
@@ -3467,7 +3541,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3916,7 +3996,7 @@
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10"
    ],
-   "acres_drawn": 1970.1,
+   "acres_drawn": 1787.7,
    "records": [
     {
      "id": "padus#198520",
@@ -3936,16 +4016,6 @@
      "acres_from": "acres field",
      "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
      "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=104063&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgiab104062",
-     "name": "Backbone State Forest",
-     "type": "Iowa DNR (park, state GIS table)",
-     "acres": 182.6,
-     "acres_from": "acres field",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=104062&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     },
     {
@@ -4008,7 +4078,6 @@
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198520",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104063",
-    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104062",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#108186",
     "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104063",
     "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#108186",
@@ -4023,8 +4092,8 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 1970.1,
-     "official_acres": 1945.8,
+     "outline_acres": 1787.7,
+     "official_acres": 1763.1,
      "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -4051,13 +4120,7 @@
      "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "DUPLICATE",
-     "parks": {
-      "US-4655": [
-       "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104062"
-      ]
-     },
-     "note": "same record id(s) as another park number: for KPC 13"
+     "flag": "PASS"
     },
     "T9": {
      "flag": "CAN'T TELL",
@@ -4066,8 +4129,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "DUPLICATE: Another park number uses the same record: US-4655."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-2278",
@@ -4694,7 +4757,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "5 hole(s) under 100 m2"
+     "note": "5 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 5,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -4907,7 +4976,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "7 hole(s) under 100 m2"
+     "note": "7 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 7,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5122,7 +5197,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5156,9 +5237,11 @@
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10"
    ],
-   "acres_drawn": 3720.2,
+   "acres_drawn": 3723.2,
    "records": [
     {
      "id": "padus#198455",
@@ -5211,20 +5294,74 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=198467&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "sgiad107774",
-     "name": "Clear Lake State Park",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=107774&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "id": "sgiac104844",
+     "name": "Clear Lake",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 3627.6,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=104844&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
-     "id": "sgiad107775",
+     "id": "sgiac107775",
      "name": "Clear Lake State Park",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=107775&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 50.7,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=107775&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac104228",
+     "name": "Clear Lake",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 0.9,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=104228&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac107774",
+     "name": "Clear Lake State Park",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 0.8,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=107774&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiab107775",
+     "name": "Clear Lake State Park",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 50.7,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=107775&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiab104355",
+     "name": "Clear Lake Woods",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 23.5,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=104355&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiab104081",
+     "name": "Clear Lake Access",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 4.3,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=104081&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     }
    ],
    "record_ids": [
@@ -5233,6 +5370,16 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198600",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198586",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198467",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104844",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#107775",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104228",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#107774",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#107775",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104355",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104081",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104082",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104080",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#107774",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#107774",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#107775"
    ],
@@ -5243,7 +5390,7 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 3720.2,
+     "outline_acres": 3723.2,
      "official_acres": 3720.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
@@ -5260,12 +5407,8 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 2,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "1 hole(s) under 100 m2"
+     "flag": "PASS",
+     "pieces": 2
     },
     "T6": {
      "flag": "PASS"
@@ -5282,21 +5425,10 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [
-    "record sgiac93844 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac96794 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac93227 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac96793 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiab96794 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93354 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93077 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93078 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93076 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab96793 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2"
-   ],
+   "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-2285",
@@ -6118,8 +6250,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 1296.2,
-     "official_acres": 1378.9,
-     "times": 1.06,
+     "official_acres": 1275.1,
+     "times": 1.02,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -6139,7 +6271,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6156,7 +6294,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "official acres count once the land of sgiac107764: it lies inside a bigger record from the same source"
+   ],
    "status": "graded",
    "score": 1,
    "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
@@ -6326,9 +6466,11 @@
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10"
    ],
-   "acres_drawn": 235.0,
+   "acres_drawn": 239.6,
    "records": [
     {
      "id": "padus#198536",
@@ -6341,16 +6483,6 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=198536&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "padus#198541",
-     "name": "Gull Point State Park",
-     "type": "State Park State Park",
-     "category": "Fee",
-     "acres": 4.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=198541&outFields=*&returnGeometry=false&f=html"
-    },
-    {
      "id": "padus#198538",
      "name": "Gull Point State Park",
      "type": "State Park State Park",
@@ -6359,6 +6491,16 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=198538&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#198541",
+     "name": "Gull Point State Park",
+     "type": "State Park State Park",
+     "category": "Fee",
+     "acres": 4.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=198541&outFields=*&returnGeometry=false&f=html"
     },
     {
      "id": "padus#198540",
@@ -6391,45 +6533,89 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=198539&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "sgiad104111",
+     "id": "sgiab107677",
      "name": "Gull Point State Park",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=104111&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 210.1,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=107677&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
-     "id": "sgiad104163",
-     "name": "Gull Point State Park - Pillsbury Point",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=104163&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
-    },
-    {
-     "id": "sgiad107677",
+     "id": "sgiab104111",
      "name": "Gull Point State Park",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=107677&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 6.8,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=104111&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
-     "id": "sgiad107760",
-     "name": "Gull Point State Park - Hattie Elston",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=107760&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "id": "sgiab104163",
+     "name": "Gull Point State Park",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 3.7,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=104163&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiab105151",
+     "name": "Gull Point State Park",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 4.0,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=105151&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiab104059",
+     "name": "Gull Point State Park",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 1.2,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=104059&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiab104089",
+     "name": "Gull Point State Park",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 1.4,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=104089&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198536",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198541",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198538",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198541",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198540",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198537",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198539",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#107677",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104111",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104163",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#105151",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104059",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104089",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104090",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#107760",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#107677",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104111",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104163",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105151",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104059",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104089",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104090",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#107760",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#104111",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#104163",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#107677",
@@ -6442,9 +6628,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 235.0,
-     "official_acres": 226.0,
-     "times": 1.04,
+     "outline_acres": 239.6,
+     "official_acres": 229.2,
+     "times": 1.05,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -6464,7 +6650,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6481,27 +6673,10 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [
-    "record sgiab96696 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93107 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93161 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab94151 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93055 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab96779 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93085 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93086 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiac96696 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac93107 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac93161 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac94151 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac93055 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac96779 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac93085 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac93086 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
+   "why": "TINY HOLES: The shape has problems: 2 hole(s) under 100 m2."
   },
   {
    "ref": "US-2293",
@@ -6689,7 +6864,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7324,6 +7505,8 @@
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10"
    ],
    "acres_drawn": 2492.1,
@@ -7367,68 +7550,84 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=198549&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "sgiad102758",
+     "id": "sgiab105254",
      "name": "Lake Macbride State Park",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=102758&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 1029.2,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=105254&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
-     "id": "sgiad104309",
+     "id": "sgiab108123",
      "name": "Lake Macbride State Park",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=104309&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 575.1,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=108123&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
-     "id": "sgiad105253",
+     "id": "sgiab108118",
      "name": "Lake Macbride State Park",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=105253&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 328.0,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=108118&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
-     "id": "sgiad105254",
-     "name": "Lake Macbride State Park",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=105254&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
-    },
-    {
-     "id": "sgiad108109",
+     "id": "sgiab108110",
      "name": "Lake MacBride State Park",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=108109&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 47.2,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=108110&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
-     "id": "sgiad108110",
-     "name": "Lake MacBride State Park",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=108110&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
-    },
-    {
-     "id": "sgiad108117",
+     "id": "sgiab102758",
      "name": "Lake Macbride State Park",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=108117&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 26.4,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=102758&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
-     "id": "sgiad108118",
+     "id": "sgiab108124",
      "name": "Lake Macbride State Park",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=108118&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 21.6,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=108124&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiab108120",
+     "name": "Lake Macbride State Park",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 16.2,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=108120&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiab105253",
+     "name": "Lake Macbride State Park",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 9.3,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=105253&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     }
    ],
    "record_ids": [
@@ -7436,6 +7635,35 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195467",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195474",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198549",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#105254",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#108123",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#108118",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#108110",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#102758",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#108124",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#108120",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#105253",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#108122",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#108109",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#108121",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#108119",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#108117",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104309",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105254",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#108123",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105121",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#108118",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#108110",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#102758",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#108124",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#108120",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105253",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#108122",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#108109",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#108121",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#108119",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#108117",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104309",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#102758",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#104309",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#105253",
@@ -7459,8 +7687,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 2492.1,
-     "official_acres": 2434.0,
-     "times": 1.02,
+     "official_acres": 2479.1,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -7480,7 +7708,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "7 hole(s) under 100 m2"
+     "note": "7 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 7,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7497,37 +7731,7 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [
-    "record sgiab94254 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab97146 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab97141 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab97133 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab91753 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab97147 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab97143 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab94253 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab97145 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab97132 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab97144 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab97142 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab97140 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93308 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiac94254 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac97146 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac94121 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac97141 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac97133 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac91753 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac97147 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac97143 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac94253 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac97145 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac97132 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac97144 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac97142 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac97140 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac93308 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 1,
    "why": "TINY HOLES: The shape has problems: 7 hole(s) under 100 m2."
@@ -9021,6 +9225,8 @@
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10"
    ],
    "acres_drawn": 1123.0,
@@ -9056,82 +9262,124 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=198563&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "sgiad104132",
-     "name": "Pikes Peak State Park - Mcgregor Area",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=104132&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
-    },
-    {
-     "id": "sgiad104133",
-     "name": "Pikes Peak State Park - Mcgregor Area",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=104133&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
-    },
-    {
-     "id": "sgiad104156",
+     "id": "sgiab104159",
      "name": "Pikes Peak State Park",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=104156&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 846.7,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=104159&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
-     "id": "sgiad104157",
-     "name": "Pikes Peak State Park - Ridgewood Area",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=104157&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
-    },
-    {
-     "id": "sgiad104158",
-     "name": "Pikes Peak State Park - Ridgewood Area",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=104158&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
-    },
-    {
-     "id": "sgiad104159",
+     "id": "sgiab104132",
      "name": "Pikes Peak State Park",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=104159&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 61.5,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=104132&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
-     "id": "sgiad104160",
+     "id": "sgiab105155",
      "name": "Pikes Peak State Park",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=104160&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 54.5,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=105155&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
-     "id": "sgiad104172",
-     "name": "Pikes Peak State Park - Ridgewood Area",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=104172&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "id": "sgiab104156",
+     "name": "Pikes Peak State Park",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 42.8,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=104156&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
-     "id": "sgiad104173",
-     "name": "Pikes Peak State Park - Ridgewood Area",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=104173&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "id": "sgiab104174",
+     "name": "Pikes Peak State Park",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 30.4,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=104174&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiab104157",
+     "name": "Pikes Peak State Park",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 23.5,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=104157&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiab105154",
+     "name": "Pikes Peak State Park",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 14.3,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=105154&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiab104133",
+     "name": "Pikes Peak State Park",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 10.2,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=104133&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiab104160",
+     "name": "Pikes Peak State Park",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 8.3,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=104160&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198561",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198562",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198563",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104159",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104132",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#105155",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104156",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104174",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104157",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#105154",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104133",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104160",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104172",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104158",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104173",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104159",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104132",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105155",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104156",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104174",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104157",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105154",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104133",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104160",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104172",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104158",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104173",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#104132",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#104133",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#104156",
@@ -9153,8 +9401,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 1123.0,
-     "official_acres": 1088.0,
-     "times": 1.03,
+     "official_acres": 1098.5,
+     "times": 1.02,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -9187,32 +9435,7 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [
-    "record sgiab93157 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93130 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab94155 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93154 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93173 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93155 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab94154 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93131 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93158 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93171 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93156 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93172 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiac93157 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac93130 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac94155 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac93154 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac93173 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac93155 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac94154 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac93131 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac93158 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac93171 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac93156 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac93172 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 0,
    "why": "All tests pass."
@@ -9380,21 +9603,42 @@
     -93.5549
    ],
    "outline_from": [
-    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10"
    ],
-   "acres_drawn": 302.9,
+   "acres_drawn": 304.5,
    "records": [
     {
-     "id": "sgiaa33950",
-     "name": "PILOT KNOB RECREATION AREA",
-     "type": "Iowa DNR (wild, state GIS table)",
-     "acres": 158.0,
+     "id": "sgiac106160",
+     "name": "Pilot Knob State Recreation Area",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 159.1,
      "acres_from": "acres field",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9/query?objectIds=33950&outFields=*&returnGeometry=false&f=html",
-     "name_field": "AREA_NAME"
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=106160&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac104233",
+     "name": "Pilot Knob State Park",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 104.2,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=104233&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac104235",
+     "name": "Pilot Knob State Park",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 40.2,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=104235&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
      "id": "padus#198566",
@@ -9405,6 +9649,26 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=198566&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgiab104233",
+     "name": "Pilot Knob State Park",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 104.2,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=104233&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiab104235",
+     "name": "Pilot Knob State Park",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 40.2,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=104235&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
      "id": "sgiad104233",
@@ -9424,8 +9688,12 @@
     }
    ],
    "record_ids": [
-    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#33950",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106160",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104233",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104235",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198566",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104233",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104235",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#104233",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#104235"
    ],
@@ -9435,17 +9703,17 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 302.9,
-     "official_acres": 158.0,
-     "times": 1.92,
+     "flag": "PASS",
+     "outline_acres": 304.5,
+     "official_acres": 303.5,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Pilot Knob State Park",
-     "record_name": "Pilot Knob State Park"
+     "record_name": "Pilot Knob State Recreation Area"
     },
     "T4": {
      "park_kind": "state park",
@@ -9471,16 +9739,10 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [
-    "record sgiac95168 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac93232 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac93234 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiab93232 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93234 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2"
-   ],
+   "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 1.9 times bigger than the official 158 acres (303 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-2314",
@@ -10079,7 +10341,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -10245,8 +10513,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 1785.9,
-     "official_acres": 2190.7,
-     "times": 1.23,
+     "official_acres": 1762.0,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -10555,7 +10823,9 @@
      "outline_acres": 1678.7,
      "official_acres": 1665.0,
      "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 1640.7,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 1,641 ac, all providers added 1,665 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -11777,9 +12047,10 @@
    ],
    "outline_from": [
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
    ],
-   "acres_drawn": 58589.5,
+   "acres_drawn": 58705.6,
    "records": [
     {
      "id": "sgiaa34365",
@@ -11810,12 +12081,34 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=4430&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgiac105685",
+     "name": "Upper Mississippi River National Wildlife and Fish Refuge",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 12407.4,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=105685&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac105686",
+     "name": "Upper Mississippi River National Wildlife and Fish Refuge",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 403.0,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=105686&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#34365",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#5387",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#4430"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#4430",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105685",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105686"
    ],
    "tests": {
     "T1": {
@@ -11826,7 +12119,7 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 58589.5,
+     "outline_acres": 58705.6,
      "official_acres": 51575.0,
      "times": 1.14,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
@@ -11835,7 +12128,7 @@
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Upper Mississippi River National Wildlife Refuge",
-     "record_name": "Upper Mississippi River National Wildlife And Fish Refuge"
+     "record_name": "Upper Mississippi River National Wildlife and Fish Refuge"
     },
     "T4": {
      "park_kind": "refuge",
@@ -11844,13 +12137,19 @@
     },
     "T5": {
      "flag": "SELF-INTERSECTION",
-     "pieces": 43,
+     "pieces": 44,
      "flags": [
       "SELF-INTERSECTION",
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Self-intersection[-91.1624204015247 43.1481017249954]; 1 piece(s) under 10 m wide; 11 hole(s) under 100 m2"
+     "note": "Self-intersection[-91.1624204015247 43.1481017249954]; 1 piece(s) under 10 m wide; 11 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 11,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11867,10 +12166,7 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [
-    "record sgiac94687 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac94688 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 3,
    "why": "SELF-INTERSECTION: The shape has problems: Self-intersection[-91.1624204015247 43.1481017249954]; 1 piece(s) under 10 m wide; 11 hole(s) under 100 m2 (+2 more flags)."
@@ -12041,9 +12337,11 @@
    "outline_from": [
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10"
    ],
-   "acres_drawn": 1443.5,
+   "acres_drawn": 1504.6,
    "records": [
     {
      "id": "sgiaa34331",
@@ -12086,20 +12384,84 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=195944&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "sgiad104138",
+     "id": "sgiab105137",
      "name": "Mines of Spain State Recreation Area",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=104138&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 748.2,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=105137&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
-     "id": "sgiad105137",
+     "id": "sgiab105157",
      "name": "Mines of Spain State Recreation Area",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=105137&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 612.5,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=105157&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiab105136",
+     "name": "Mines of Spain State Recreation Area",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 87.6,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=105136&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiab104138",
+     "name": "Mines of Spain State Recreation Area",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 14.6,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=104138&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac105137",
+     "name": "Mines of Spain State Recreation Area",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 748.2,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=105137&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac105157",
+     "name": "Mines of Spain State Recreation Area",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 612.5,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=105157&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac105136",
+     "name": "Mines of Spain State Recreation Area",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 87.6,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=105136&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac104138",
+     "name": "Mines of Spain State Recreation Area",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 14.6,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=104138&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     }
    ],
    "record_ids": [
@@ -12107,6 +12469,14 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198604",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198506",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195944",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#105137",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#105157",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#105136",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104138",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105137",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105157",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105136",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104138",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#104138",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#105137"
    ],
@@ -12117,9 +12487,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 1443.5,
-     "official_acres": 1422.0,
-     "times": 1.02,
+     "outline_acres": 1504.6,
+     "official_acres": 1462.9,
+     "times": 1.03,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -12152,16 +12522,7 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [
-    "record sgiab94137 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab94157 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab94136 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93136 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiac94137 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac94157 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac94136 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac93136 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 0,
    "why": "All tests pass."
@@ -12230,11 +12591,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : InvalidSchema"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 137 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 137 m outside the outline."
   },
   {
    "ref": "US-4573",
@@ -12300,11 +12661,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : InvalidSchema"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 112 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 112 m outside the outline."
   },
   {
    "ref": "US-4655",
@@ -12416,13 +12777,7 @@
      "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "DUPLICATE",
-     "parks": {
-      "US-2277": [
-       "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104062"
-      ]
-     },
-     "note": "same record id(s) as another park number: for KPC 13"
+     "flag": "PASS"
     },
     "T9": {
      "flag": "CAN'T TELL",
@@ -12431,8 +12786,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "DUPLICATE: Another park number uses the same record: US-2277."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-4656",
@@ -12971,15 +13326,7 @@
      "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "DUPLICATE",
-     "parks": {
-      "US-12192": [
-       "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#34306",
-       "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#58128",
-       "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#34304"
-      ]
-     },
-     "note": "same record id(s) as another park number: for KPC 13"
+     "flag": "PASS"
     },
     "T9": {
      "flag": "CAN'T TELL",
@@ -12988,8 +13335,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "DUPLICATE: Another park number uses the same record: US-12192."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-4660",
@@ -13285,8 +13632,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 9261.7,
-     "official_acres": 9238.0,
-     "times": 1.0,
+     "official_acres": 9182.4,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -13307,7 +13654,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-91.6893920657131 40.6450587531115]; 9 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-91.6893920657131 40.6450587531115]; 9 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 9,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13324,7 +13677,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "official acres count once the land of padus#198613, sgiab107808, sgiac107808: it lies inside a bigger record from the same source"
+   ],
    "status": "graded",
    "score": 3,
    "why": "NEAR: POTA's pin is 410 m outside the outline (+2 more flags)."
@@ -13534,12 +13889,12 @@
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#104077",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#104078",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#104079",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#104123",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#104124",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#104375",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#104376",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#105140",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#107684",
-    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#104123",
-    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#104124",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#107806",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#107807",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#108129",
@@ -13575,7 +13930,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-93.1700571453711 41.0660858795131]; 4 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-93.1700571453711 41.0660858795131]; 4 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 4,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13953,7 +14314,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -14264,6 +14631,8 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10"
    ],
    "acres_drawn": 6463.8,
@@ -14289,73 +14658,126 @@
      "name_field": "AREA_NAME"
     },
     {
-     "id": "sgiad104308",
+     "id": "sgiab107745",
      "name": "Brushy Creek State Recreation Area",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=104308&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 5500.0,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=107745&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
-     "id": "sgiad105649",
+     "id": "sgiab105649",
      "name": "Brushy Creek State Recreation Area",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=105649&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 313.5,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=105649&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
-     "id": "sgiad105650",
+     "id": "sgiab104308",
      "name": "Brushy Creek State Recreation Area",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=105650&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 299.8,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=104308&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
-     "id": "sgiad105651",
-     "name": "Brushy Creek State Recreation Area",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=105651&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "id": "sgiab104236",
+     "name": "Brushy Creek State Preserve",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 228.1,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=104236&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
-     "id": "sgiad107745",
+     "id": "sgiab105651",
      "name": "Brushy Creek State Recreation Area",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=107745&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 33.4,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=105651&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
-     "id": "sgiad108099",
+     "id": "sgiab105650",
      "name": "Brushy Creek State Recreation Area",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=108099&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 13.0,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=105650&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
-     "id": "sgiad108100",
+     "id": "sgiab108099",
      "name": "Brushy Creek State Recreation Area",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=108100&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 1.1,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=108099&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
-     "id": "sgiad108101",
+     "id": "sgiab108100",
      "name": "Brushy Creek State Recreation Area",
-     "type": "Iowa DNR (credit: Iowa Department of Natural Resources) (land, state GIS table)",
-     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
-     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10/query?objectIds=108101&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NameUnit"
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 0.6,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=108100&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiab108101",
+     "name": "Brushy Creek State Recreation Area",
+     "type": "Iowa DNR (park, state GIS table)",
+     "acres": 0.4,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2/query?objectIds=108101&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac107745",
+     "name": "Brushy Creek State Recreation Area",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 5500.0,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=107745&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198598",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#34329",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#107745",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#105649",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104308",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#104236",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#105651",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#105650",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#108099",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#108100",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#108101",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#107745",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105649",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#104308",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105651",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105650",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#108099",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#108100",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#108101",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#104308",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#105649",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#105650",
@@ -14373,8 +14795,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 6463.8,
-     "official_acres": 6189.0,
-     "times": 1.04,
+     "official_acres": 6390.1,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -14394,7 +14816,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "3 hole(s) under 100 m2"
+     "note": "3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -14411,25 +14839,7 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [
-    "record sgiab96764 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab94651 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93307 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab93235 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab94653 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab94652 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab97122 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab97123 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiab97124 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
-    "record sgiac96764 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac94651 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac93307 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac94653 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac94652 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac97122 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac97123 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac97124 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 1,
    "why": "TINY HOLES: The shape has problems: 3 hole(s) under 100 m2."
@@ -14806,53 +15216,13 @@
     -95.1256
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10"
    ],
    "acres_drawn": 315.6,
    "records": [
-    {
-     "id": "padus#199095",
-     "name": "Lower Gar Lake",
-     "type": "Sovereign Waters State Other or Unknown",
-     "category": "Fee",
-     "acres": 252.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199095&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#198864",
-     "name": "Lower Gar Lake Complex",
-     "type": "State Wildlife Management Area State Conservation Area",
-     "category": "Fee",
-     "acres": 35.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=198864&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#199142",
-     "name": "Lower Gar Lake Complex",
-     "type": "Access State Recreation Area",
-     "category": "Fee",
-     "acres": 16.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199142&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#198603",
-     "name": "Lower Gar State Recreation Area",
-     "type": "State Recreation Area State Recreation Area",
-     "category": "Fee",
-     "acres": 12.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=198603&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgiac106708",
      "name": "Lower Gar Lake",
@@ -14904,6 +15274,36 @@
      "name_field": "NAME"
     },
     {
+     "id": "padus#198864",
+     "name": "Lower Gar Lake Complex",
+     "type": "State Wildlife Management Area State Conservation Area",
+     "category": "Fee",
+     "acres": 35.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=198864&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#199142",
+     "name": "Lower Gar Lake Complex",
+     "type": "Access State Recreation Area",
+     "category": "Fee",
+     "acres": 16.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199142&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#198603",
+     "name": "Lower Gar State Recreation Area",
+     "type": "State Recreation Area State Recreation Area",
+     "category": "Fee",
+     "acres": 12.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=198603&outFields=*&returnGeometry=false&f=html"
+    },
+    {
      "id": "sgiab108125",
      "name": "Lower Gar State Recreation Area",
      "type": "Iowa DNR (park, state GIS table)",
@@ -14923,15 +15323,14 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#199095",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198864",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#199142",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198603",
     "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106708",
     "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105950",
     "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105983",
     "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#108125",
     "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105951",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198864",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#199142",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198603",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks_Trails/MapServer/2#108125",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10#108125"
    ],
@@ -14943,7 +15342,7 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 315.6,
-     "official_acres": 315.0,
+     "official_acres": 314.9,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -14965,7 +15364,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -15071,7 +15476,9 @@
      "outline_acres": 87.7,
      "official_acres": 87.0,
      "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 61.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 61 ac, all providers added 87 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -16325,7 +16732,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Self-intersection[-91.655865 41.775493]"
+     "note": "Self-intersection[-91.655865 41.775493]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -16917,7 +17330,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "5 hole(s) under 100 m2"
+     "note": "5 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 5,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -19630,7 +20049,8 @@
    ],
    "outline_from": [
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
    ],
    "acres_drawn": 997.6,
    "records": [
@@ -19683,6 +20103,46 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=198758&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgiac107667",
+     "name": "Elm Lake",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 337.6,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=107667&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac107666",
+     "name": "Elm Lake WMA",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 251.6,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=107666&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac108154",
+     "name": "Elm Lake WMA",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 143.0,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=108154&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac107665",
+     "name": "Elm Lake WMA",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 59.3,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=107665&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     }
    ],
    "record_ids": [
@@ -19690,7 +20150,11 @@
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#34164",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#35122",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#199078",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198758"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198758",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#107667",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#107666",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#108154",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#107665"
    ],
    "tests": {
     "T1": {
@@ -19721,7 +20185,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "4 hole(s) under 100 m2"
+     "note": "4 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 4,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -19738,12 +20208,7 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [
-    "record sgiac96685 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac96684 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac97177 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac96683 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 1,
    "why": "TINY HOLES: The shape has problems: 4 hole(s) under 100 m2."
@@ -20225,7 +20690,8 @@
    ],
    "outline_from": [
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
    ],
    "acres_drawn": 347.3,
    "records": [
@@ -20258,12 +20724,23 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=198942&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgiac106770",
+     "name": "Rush Lake (Osceola)",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 275.6,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=106770&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#33983",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#199105",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198942"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198942",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106770"
    ],
    "tests": {
     "T1": {
@@ -20308,8 +20785,7 @@
     }
    },
    "problems": [
-    "record sgiac95785 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95181 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
+    "record sgiac106173 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
    ],
    "status": "graded",
    "score": 0,
@@ -20327,7 +20803,8 @@
    ],
    "outline_from": [
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
    ],
    "acres_drawn": 5569.7,
    "records": [
@@ -20360,12 +20837,113 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=198738&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgiac107593",
+     "name": "Dewey's Pasture Complex",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 643.9,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=107593&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac106406",
+     "name": "Dewey's Pasture Complex",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 446.8,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=106406&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac106404",
+     "name": "Dewey's Pasture Complex",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 373.3,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=106404&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac106726",
+     "name": "Dewey's Pasture Complex",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 334.2,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=106726&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac106727",
+     "name": "Dewey's Pasture Complex",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 182.6,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=106727&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac105849",
+     "name": "Dewey's Pasture Complex",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 78.9,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=105849&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac105850",
+     "name": "Dewey's Pasture Complex",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 77.2,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=105850&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac107723",
+     "name": "Dewey's Pasture Complex",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 65.7,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=107723&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgiac106397",
+     "name": "Dewey's Pasture Complex",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 45.4,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=106397&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#33751",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#33752",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198738"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#198738",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#107593",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106406",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106404",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106726",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106727",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105849",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#105850",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#107723",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106397",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106145",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106405"
    ],
    "tests": {
     "T1": {
@@ -20397,7 +20975,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Self-intersection[-94.9543157118644 43.1812510677966]; 11 hole(s) under 100 m2"
+     "note": "Self-intersection[-94.9543157118644 43.1812510677966]; 11 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 11,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -20414,19 +20998,7 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [
-    "record sgiac96611 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95414 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95412 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95741 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95742 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac94852 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac94853 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac96742 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95405 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95153 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
-    "record sgiac95413 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 2,
    "why": "SELF-INTERSECTION: The shape has problems: Self-intersection[-94.9543157118644 43.1812510677966]; 11 hole(s) under 100 m2 (+1 more flag)."
@@ -20443,9 +21015,10 @@
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9"
    ],
-   "acres_drawn": 706.2,
+   "acres_drawn": 779.8,
    "records": [
     {
      "id": "padus#199074",
@@ -20456,6 +21029,16 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=199074&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgiac106757",
+     "name": "Eagle Lake",
+     "type": "Iowa DNR (land, state GIS table)",
+     "acres": 433.4,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0/query?objectIds=106757&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
      "id": "sgiaa35193",
@@ -20476,12 +21059,24 @@
      "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
      "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9/query?objectIds=34674&outFields=*&returnGeometry=false&f=html",
      "name_field": "AREA_NAME"
+    },
+    {
+     "id": "sgiaa33767",
+     "name": "EAGLE LAKE WPA - HANCOCK",
+     "type": "Iowa DNR (wild, state GIS table)",
+     "acres": 74.0,
+     "acres_from": "acres field",
+     "layer": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+     "link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9/query?objectIds=33767&outFields=*&returnGeometry=false&f=html",
+     "name_field": "AREA_NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#199074",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0#106757",
     "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#35193",
-    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#34674"
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#34674",
+    "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9#33767"
    ],
    "tests": {
     "T1": {
@@ -20490,9 +21085,9 @@
     },
     "T2": {
      "flag": "OFF",
-     "outline_acres": 706.2,
+     "outline_acres": 779.8,
      "official_acres": 434.0,
-     "times": 1.63,
+     "times": 1.8,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -20508,7 +21103,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 3
+     "pieces": 4
     },
     "T6": {
      "flag": "PASS"
@@ -20525,12 +21120,10 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [
-    "record sgiac95772 is no longer in https://programs.iowadnr.gov/geospatial/rest/services/Boundaries/Public_Lands/MapServer/0"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "OFF: The outline is 1.6 times bigger than the official 434 acres (706 ac drawn)."
+   "why": "OFF: The outline is 1.8 times bigger than the official 434 acres (780 ac drawn)."
   },
   {
    "ref": "US-9332",
@@ -20814,7 +21407,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-94.943303 43.133876]; 6 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-94.943303 43.133876]; 6 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 6,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -20890,14 +21489,10 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Teal Basins State Waterfowl Management Area",
-     "record_name": "Teal Basins WPA",
-     "worst_record": {
-      "name": "TEAL BASINS WPA",
-      "score": 0.667
-     }
+     "record_name": "Teal Basins WPA"
     },
     "T4": {
      "park_kind": null,
@@ -20925,8 +21520,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Teal Basins WPA' does not match POTA's name 'Teal Basins State Waterfowl Management Area' (score 0.67)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-9335",
@@ -21177,7 +21772,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-92.226316 42.847534]; 4 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-92.226316 42.847534]; 4 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 4,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -22703,7 +23304,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-91.2716737131709 41.4481790454517]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-91.2716737131709 41.4481790454517]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -23251,7 +23858,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Self-intersection[-94.0140359060111 42.2595972396784]"
+     "note": "Self-intersection[-94.0140359060111 42.2595972396784]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -23597,8 +24210,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 11995.6,
-     "official_acres": 11831.7,
-     "times": 1.01,
+     "official_acres": 11615.0,
+     "times": 1.03,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -23618,7 +24231,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "3 hole(s) under 100 m2"
+     "note": "3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -23786,7 +24405,7 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 2817.7,
-     "official_acres": 2814.6,
+     "official_acres": 2813.8,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -23820,7 +24439,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "official acres count once the land of sgiac108193: it lies inside a bigger record from the same source"
+   ],
    "status": "graded",
    "score": 1,
    "why": "NEAR: POTA's pin is 6 m outside the outline."

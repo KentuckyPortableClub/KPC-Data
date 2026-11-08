@@ -1,7 +1,8 @@
 {
  "area": "US-KS",
- "built": "2026-11-02",
+ "built": "2026-11-08",
  "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
  "parks": [
   {
    "ref": "US-0291",
@@ -49,10 +50,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 18560.4,
-     "official_acres": 37104.0,
-     "times": 2.0,
+     "official_acres": 18552.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -87,8 +88,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 37,104 acres (18,560 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0292",
@@ -170,7 +171,7 @@
     },
     "T9": {
      "last_edit": "2026-08-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -225,10 +226,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 7656.0,
-     "official_acres": 15172.0,
-     "times": 1.98,
+     "official_acres": 7608.0,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -249,7 +250,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-94.6493382427209 38.2043269967244]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-94.6493382427209 38.2043269967244]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -268,8 +275,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OFF: The outline is 2.0 times smaller than the official 15,172 acres (7,656 ac drawn) (+2 more flags)."
+   "score": 2,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-94.6493382427209 38.2043269967244]; 1 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-0294",
@@ -317,10 +324,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 22168.9,
-     "official_acres": 44326.0,
-     "times": 2.0,
+     "official_acres": 22163.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -341,7 +348,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-98.5093574463477 38.1074313813271]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-98.5093574463477 38.1074313813271]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -360,8 +373,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OFF: The outline is 2.0 times smaller than the official 44,326 acres (22,169 ac drawn) (+2 more flags)."
+   "score": 2,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-98.5093574463477 38.1074313813271]; 1 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-0803",
@@ -740,9 +753,9 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
@@ -838,15 +851,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-13456",
@@ -993,9 +1006,9 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [
@@ -1073,7 +1086,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1087,9 +1106,9 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
@@ -1162,7 +1181,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1176,9 +1201,9 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [
@@ -1291,37 +1316,28 @@
      "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "DUPLICATE",
-     "parks": {
-      "US-7402": [
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201214",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201215",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#942",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#978"
-      ]
-     },
-     "note": "same record id(s) as another park number: for KPC 13"
+     "flag": "PASS"
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [
     "SOURCE DOWN: robots.txt asks bots not to read https://kanplan.ksdot.gov/arcgis_web_adaptor/rest/services/Boundaries/State_Park_Area/MapServer/0/query"
    ],
    "status": "SOURCE DOWN: retry next run",
-   "score": 2,
-   "why": "SOURCE DOWN: DUPLICATE: Another park number uses the same record: US-7402 (+1 more flag)."
+   "score": 1,
+   "why": "SOURCE DOWN: STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-2334",
    "name": "Cross Timbers State Park",
    "key_name": "Cross Timbers State Park",
    "type": "State Park",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     37.7775,
     -95.9421
@@ -1346,8 +1362,8 @@
      "note": "no record"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
      "flag": "NO OUTLINE"
@@ -1361,13 +1377,15 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: robots.txt asks bots not to read https://kanplan.ksdot.gov/arcgis_web_adaptor/rest/services/Boundaries/State_Park_Area/MapServer/0/query"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "Nothing could be tested."
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-2335",
@@ -1432,9 +1450,9 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [
@@ -1442,7 +1460,7 @@
    ],
    "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "SOURCE DOWN: STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "SOURCE DOWN: STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-2336",
@@ -1525,27 +1543,21 @@
      "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "DUPLICATE",
-     "parks": {
-      "US-7925": [
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#131"
-      ]
-     },
-     "note": "same record id(s) as another park number: for KPC 13"
+     "flag": "PASS"
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [
     "SOURCE DOWN: robots.txt asks bots not to read https://kanplan.ksdot.gov/arcgis_web_adaptor/rest/services/Boundaries/State_Park_Area/MapServer/0/query"
    ],
    "status": "SOURCE DOWN: retry next run",
-   "score": 2,
-   "why": "SOURCE DOWN: DUPLICATE: Another park number uses the same record: US-7925 (+1 more flag)."
+   "score": 1,
+   "why": "SOURCE DOWN: STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-2337",
@@ -1622,9 +1634,9 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [
@@ -1632,7 +1644,7 @@
    ],
    "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "SOURCE DOWN: STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "SOURCE DOWN: STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-2338",
@@ -1712,15 +1724,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-2339",
@@ -1798,7 +1810,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "7 hole(s) under 100 m2"
+     "note": "7 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 7,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1818,9 +1836,9 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [
@@ -1916,9 +1934,9 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [
@@ -1926,7 +1944,7 @@
    ],
    "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "SOURCE DOWN: STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "SOURCE DOWN: STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-2341",
@@ -2062,8 +2080,10 @@
      "flag": "PASS",
      "outline_acres": 21300.9,
      "official_acres": 22855.0,
-     "times": 1.07,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 21212.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 21,212 ac, all providers added 22,855 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -2092,15 +2112,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-2343",
@@ -2194,9 +2214,9 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [
@@ -2277,28 +2297,21 @@
      "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "DUPLICATE",
-     "parks": {
-      "US-7433": [
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201219",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#943"
-      ]
-     },
-     "note": "same record id(s) as another park number: for KPC 13"
+     "flag": "PASS"
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [
     "SOURCE DOWN: robots.txt asks bots not to read https://kanplan.ksdot.gov/arcgis_web_adaptor/rest/services/Boundaries/State_Park_Area/MapServer/0/query"
    ],
    "status": "SOURCE DOWN: retry next run",
-   "score": 2,
-   "why": "SOURCE DOWN: DUPLICATE: Another park number uses the same record: US-7433 (+1 more flag)."
+   "score": 1,
+   "why": "SOURCE DOWN: STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-2345",
@@ -2375,9 +2388,9 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [
@@ -2385,7 +2398,7 @@
    ],
    "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "SOURCE DOWN: STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "SOURCE DOWN: STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-2346",
@@ -2462,9 +2475,9 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [
@@ -2472,7 +2485,7 @@
    ],
    "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "SOURCE DOWN: STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "SOURCE DOWN: STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-2347",
@@ -2550,7 +2563,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2564,9 +2583,9 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [
@@ -2662,9 +2681,9 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [
@@ -2672,7 +2691,7 @@
    ],
    "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "SOURCE DOWN: STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "SOURCE DOWN: STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-2349",
@@ -2749,9 +2768,9 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [
@@ -2759,7 +2778,7 @@
    ],
    "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "SOURCE DOWN: STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "SOURCE DOWN: STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-2350",
@@ -2825,11 +2844,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2351",
@@ -2906,9 +2925,9 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [
@@ -2916,7 +2935,7 @@
    ],
    "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "SOURCE DOWN: STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "SOURCE DOWN: STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-2352",
@@ -3000,9 +3019,9 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [
@@ -3061,8 +3080,10 @@
      "flag": "PASS",
      "outline_acres": 34628.7,
      "official_acres": 35630.0,
-     "times": 1.03,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 34548.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 34,548 ac, all providers added 35,630 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -3183,15 +3204,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-2355",
@@ -3252,8 +3273,10 @@
      "flag": "PASS",
      "outline_acres": 21811.0,
      "official_acres": 22582.0,
-     "times": 1.04,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 21808.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 21,808 ac, all providers added 22,582 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -3282,15 +3305,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-3673",
@@ -3432,11 +3455,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 136 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 136 m outside the outline."
   },
   {
    "ref": "US-4572",
@@ -3502,11 +3525,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 137 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 137 m outside the outline."
   },
   {
    "ref": "US-4576",
@@ -3572,11 +3595,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 33 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 33 m outside the outline."
   },
   {
    "ref": "US-4578",
@@ -3644,11 +3667,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-4579",
@@ -3714,11 +3737,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 129 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 129 m outside the outline."
   },
   {
    "ref": "US-5717",
@@ -3839,11 +3862,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-7384",
@@ -3943,15 +3966,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7385",
@@ -4041,7 +4064,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -4055,9 +4084,9 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
@@ -4207,15 +4236,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7388",
@@ -4315,15 +4344,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7390",
@@ -4433,15 +4462,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7391",
@@ -4541,15 +4570,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7392",
@@ -4691,22 +4720,11 @@
     -95.5962
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0"
    ],
-   "acres_drawn": 284.5,
+   "acres_drawn": 283.5,
    "records": [
-    {
-     "id": "padus#201311",
-     "name": "Nebo State Lake Wildlife Area",
-     "type": "Wildlife Habitat Area State Conservation Area",
-     "category": "Fee",
-     "acres": 78.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201311&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgksb44",
      "name": "Nebo State Lake Wildlife Area",
@@ -4725,7 +4743,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201311",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#44",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#825"
    ],
@@ -4735,11 +4752,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 284.5,
-     "official_acres": 78.0,
-     "times": 3.65,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO FIGURE",
+     "outline_acres": 283.5
     },
     "T3": {
      "flag": "PASS",
@@ -4768,15 +4782,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 3.6 times bigger than the official 78 acres (284 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7395",
@@ -4866,15 +4880,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7396",
@@ -4887,21 +4901,10 @@
     -96.4081
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0"
    ],
    "acres_drawn": 187.0,
    "records": [
-    {
-     "id": "padus#201252",
-     "name": "Pottawatomie State Fishing Lake",
-     "type": "Lake State Recreation Area",
-     "category": "Fee",
-     "acres": 17.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201252&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgksc862",
      "name": "Pottawatomie State Fishing Lake No. 1 And Wildlife",
@@ -4920,7 +4923,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201252",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#862",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#968"
    ],
@@ -4930,11 +4932,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "WAY OFF",
-     "outline_acres": 187.0,
-     "official_acres": 17.0,
-     "times": 11.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO FIGURE",
+     "outline_acres": 187.0
     },
     "T3": {
      "flag": "PASS",
@@ -4948,7 +4947,7 @@
     },
     "T4": {
      "park_kind": "lake",
-     "record_kind": "recreation area",
+     "record_kind": "lake",
      "flag": "PASS"
     },
     "T5": {
@@ -4967,15 +4966,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "WAY OFF: The outline is 11.0 times bigger than the official 17 acres (187 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7397",
@@ -4988,21 +4987,10 @@
     -96.5157
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0"
    ],
-   "acres_drawn": 256.0,
+   "acres_drawn": 255.0,
    "records": [
-    {
-     "id": "padus#201253",
-     "name": "Pottawatomie State Fishing Lake",
-     "type": "Lake State Recreation Area",
-     "category": "Fee",
-     "acres": 255.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201253&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgksc969",
      "name": "Pottawatomie State Fishing Lake",
@@ -5013,7 +5001,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201253",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#969"
    ],
    "tests": {
@@ -5022,11 +5009,8 @@
      "metres": 509.9
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 256.0,
-     "official_acres": 255.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO FIGURE",
+     "outline_acres": 255.0
     },
     "T3": {
      "flag": "MISMATCH",
@@ -5036,7 +5020,7 @@
     },
     "T4": {
      "park_kind": "lake",
-     "record_kind": "recreation area",
+     "record_kind": "lake",
      "flag": "PASS"
     },
     "T5": {
@@ -5055,9 +5039,9 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
@@ -5143,15 +5127,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7399",
@@ -5353,15 +5337,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7401",
@@ -5482,7 +5466,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5496,9 +5486,9 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
@@ -5516,111 +5506,48 @@
     37.6436,
     -94.809
    ],
-   "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0"
-   ],
-   "acres_drawn": 514.2,
-   "records": [
-    {
-     "id": "padus#201214",
-     "name": "Crawford State Park",
-     "type": "State Park State Park",
-     "category": "Fee",
-     "acres": 365.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201214&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#201215",
-     "name": "Crawford State Park Lake",
-     "type": "State Park State Park",
-     "category": "Fee",
-     "acres": 108.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201215&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgksc942",
-     "name": "Crawford State Park Lake",
-     "type": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation) (land, state GIS table)",
-     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0",
-     "link": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0/query?objectIds=942&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Unit_Name"
-    },
-    {
-     "id": "sgksc978",
-     "name": "Crawford State Park",
-     "type": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation) (land, state GIS table)",
-     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0",
-     "link": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0/query?objectIds=978&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Unit_Name"
-    }
-   ],
-   "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201214",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201215",
-    "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#942",
-    "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#978"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "CAN'T TELL",
-     "note": "a source was down: only part of the park could be read"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Crawford State Fishing Lake",
-     "record_name": "Crawford State Park Lake"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "lake",
-     "record_kind": "state park",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "DUPLICATE",
-     "parks": {
-      "US-2333": [
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201214",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201215",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#942",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#978"
-      ]
-     },
-     "note": "same record id(s) as another park number: for KPC 13"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2025-04-24",
-     "read": "2026-11-02",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
-   "problems": [
-    "SOURCE DOWN: robots.txt asks bots not to read https://kanplan.ksdot.gov/arcgis_web_adaptor/rest/services/Boundaries/State_Park_Area/MapServer/0/query"
-   ],
-   "status": "SOURCE DOWN: retry next run",
-   "score": 2,
-   "why": "SOURCE DOWN: DUPLICATE: Another park number uses the same record: US-2333 (+1 more flag)."
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
   },
   {
    "ref": "US-7403",
@@ -5720,15 +5647,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7405",
@@ -5793,169 +5720,48 @@
     37.4262,
     -94.7592
    ],
-   "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0",
-    "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0"
-   ],
-   "acres_drawn": 14846.3,
-   "records": [
-    {
-     "id": "padus#201168",
-     "name": "Mined Land Wildlife Area",
-     "type": "Wildlife Area State Conservation Area",
-     "category": "Fee",
-     "acres": 515.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201168&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#201165",
-     "name": "Mined Land Wildlife Area",
-     "type": "Wildlife Area State Conservation Area",
-     "category": "Fee",
-     "acres": 432.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201165&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#201169",
-     "name": "Mined Land Wildlife Area",
-     "type": "Wildlife Area State Conservation Area",
-     "category": "Fee",
-     "acres": 412.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201169&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#201170",
-     "name": "Mined Land Wildlife Area",
-     "type": "Wildlife Area State Conservation Area",
-     "category": "Fee",
-     "acres": 77.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201170&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgksb67",
-     "name": "Mined Land Wildlife Area",
-     "type": "KDWPT (owner jjones_KDWPT) (wild, state GIS table)",
-     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0",
-     "link": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0/query?objectIds=67&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Label_Name"
-    },
-    {
-     "id": "sgksb105",
-     "name": "Mined Land Wildlife Area",
-     "type": "KDWPT (owner jjones_KDWPT) (wild, state GIS table)",
-     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0",
-     "link": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0/query?objectIds=105&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Label_Name"
-    },
-    {
-     "id": "sgksb108",
-     "name": "Mined Land Wildlife Area",
-     "type": "KDWPT (owner jjones_KDWPT) (wild, state GIS table)",
-     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0",
-     "link": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0/query?objectIds=108&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Label_Name"
-    },
-    {
-     "id": "sgksb109",
-     "name": "Mined Land Wildlife Area",
-     "type": "KDWPT (owner jjones_KDWPT) (wild, state GIS table)",
-     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0",
-     "link": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0/query?objectIds=109&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Label_Name"
-    },
-    {
-     "id": "sgksc843",
-     "name": "Mined Land Wildlife Area",
-     "type": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation) (land, state GIS table)",
-     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0",
-     "link": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0/query?objectIds=843&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Unit_Name"
-    }
-   ],
-   "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201168",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201165",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201169",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201170",
-    "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#67",
-    "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#105",
-    "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#108",
-    "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#109",
-    "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#843"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "NEAR",
-     "metres": 46.9
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "WAY OFF",
-     "outline_acres": 14846.3,
-     "official_acres": 1436.0,
-     "times": 10.34,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Mined Land State Fishing Lake",
-     "record_name": "Mined Land Wildlife Area"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "lake",
-     "record_kind": "wma",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 17
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "DUPLICATE",
-     "parks": {
-      "US-7939": [
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201168",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201165",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201169",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201170",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#67",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#105",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#108",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#109",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#843"
-      ]
-     },
-     "note": "same record id(s) as another park number: for KPC 13"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2025-07-11",
-     "read": "2026-11-02",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
-   "problems": [
-    "record sgksc843: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
-   ],
+   "problems": [],
    "status": "graded",
-   "score": 6,
-   "why": "WAY OFF: The outline is 10.3 times bigger than the official 1,436 acres (14,846 ac drawn) (+3 more flags)."
+   "score": 0,
+   "why": "Nothing could be tested."
   },
   {
    "ref": "US-7407",
@@ -6035,15 +5841,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7408",
@@ -6133,7 +5939,9 @@
      "outline_acres": 3673.1,
      "official_acres": 3226.0,
      "times": 1.14,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 2999.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 2,999 ac, all providers added 3,226 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -6162,15 +5970,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7409",
@@ -6250,15 +6058,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7410",
@@ -6358,15 +6166,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7411",
@@ -6380,31 +6188,10 @@
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0"
    ],
-   "acres_drawn": 2974.8,
+   "acres_drawn": 110.8,
    "records": [
-    {
-     "id": "padus#201208",
-     "name": "Woodson State Fishing Lake And Wildlife Area",
-     "type": "Fishing Lake And Wildlife Area State Recreation Area",
-     "category": "Fee",
-     "acres": 2471.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201208&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#201187",
-     "name": "Woodson Wildlife Area",
-     "type": "Wildlife Area State Conservation Area",
-     "category": "Fee",
-     "acres": 344.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201187&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "padus#201260",
      "name": "Woodson State Fishing Lake",
@@ -6416,38 +6203,6 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201260&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "sgksb84",
-     "name": "Woodson Wildlife Area",
-     "type": "KDWPT (owner jjones_KDWPT) (wild, state GIS table)",
-     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0",
-     "link": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0/query?objectIds=84&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Label_Name"
-    },
-    {
-     "id": "sgksb85",
-     "name": "Woodson Wildlife Area",
-     "type": "KDWPT (owner jjones_KDWPT) (wild, state GIS table)",
-     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0",
-     "link": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0/query?objectIds=85&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Label_Name"
-    },
-    {
-     "id": "sgksc841",
-     "name": "Woodson State Fishing Lake And Wildlife Area",
-     "type": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation) (land, state GIS table)",
-     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0",
-     "link": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0/query?objectIds=841&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Unit_Name"
-    },
-    {
-     "id": "sgksc870",
-     "name": "Woodson Wildlife Area",
-     "type": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation) (land, state GIS table)",
-     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0",
-     "link": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0/query?objectIds=870&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Unit_Name"
-    },
-    {
      "id": "sgksc976",
      "name": "Woodson State Fishing Lake",
      "type": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation) (land, state GIS table)",
@@ -6457,13 +6212,7 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201208",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201187",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201260",
-    "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#84",
-    "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#85",
-    "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#841",
-    "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#870",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#976"
    ],
    "tests": {
@@ -6473,25 +6222,25 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 2974.8,
-     "official_acres": 2925.0,
-     "times": 1.02,
+     "outline_acres": 110.8,
+     "official_acres": 110.0,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Woodson State Fishing Lake",
-     "record_name": "Woodson Wildlife Area"
+     "record_name": "Woodson State Fishing Lake"
     },
     "T4": {
      "park_kind": "lake",
-     "record_kind": "wma",
+     "record_kind": "recreation area",
      "flag": "PASS"
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 2
+     "pieces": 1
     },
     "T6": {
      "flag": "PASS"
@@ -6504,23 +6253,17 @@
      "flag": "DUPLICATE",
      "parks": {
       "US-7949": [
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201208",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201187",
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201260",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#84",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#85",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#841",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#870",
        "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#976"
       ]
      },
      "note": "same record id(s) as another park number: for KPC 13"
     },
     "T9": {
-     "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "last_edit": "2025-04-24",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
@@ -6591,15 +6334,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7413",
@@ -6689,15 +6432,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7414",
@@ -6797,15 +6540,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7415",
@@ -6905,15 +6648,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7416",
@@ -6993,15 +6736,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7417",
@@ -7081,15 +6824,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7418",
@@ -7179,15 +6922,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7419",
@@ -7204,18 +6947,8 @@
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0"
    ],
-   "acres_drawn": 601.4,
+   "acres_drawn": 600.6,
    "records": [
-    {
-     "id": "padus#201201",
-     "name": "Logan State Fishing Lake And Wildlife Area",
-     "type": "Fishing Lake And Wildlife Area State Recreation Area",
-     "category": "Fee",
-     "acres": 227.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201201&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "padus#201243",
      "name": "Logan State Fishing Lake",
@@ -7252,7 +6985,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201201",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201243",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#164",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#859",
@@ -7264,10 +6996,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 601.4,
-     "official_acres": 271.0,
-     "times": 2.22,
+     "flag": "WAY OFF",
+     "outline_acres": 600.6,
+     "official_acres": 44.0,
+     "times": 13.65,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -7278,7 +7010,7 @@
     },
     "T4": {
      "park_kind": "lake",
-     "record_kind": "wma",
+     "record_kind": "recreation area",
      "flag": "PASS"
     },
     "T5": {
@@ -7297,15 +7029,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.2 times bigger than the official 271 acres (601 ac drawn) (+1 more flag)."
+   "score": 4,
+   "why": "WAY OFF: The outline is 13.7 times bigger than the official 44 acres (601 ac drawn) (+1 more flag)."
   },
   {
    "ref": "US-7420",
@@ -7405,15 +7137,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7421",
@@ -7493,15 +7225,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7422",
@@ -7581,15 +7313,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7423",
@@ -7669,15 +7401,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7424",
@@ -7757,15 +7489,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7425",
@@ -7778,22 +7510,11 @@
     -98.5789
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0"
    ],
-   "acres_drawn": 213.1,
+   "acres_drawn": 200.3,
    "records": [
-    {
-     "id": "padus#201191",
-     "name": "Barber State Fishing Lake And Wildlife Area",
-     "type": "Fishing Lake And Wildlife Area State Recreation Area",
-     "category": "Fee",
-     "acres": 129.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201191&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgksb205",
      "name": "Barber State Lake and Wildlife Area",
@@ -7812,7 +7533,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201191",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#205",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#849"
    ],
@@ -7822,11 +7542,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 213.1,
-     "official_acres": 129.0,
-     "times": 1.65,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO FIGURE",
+     "outline_acres": 200.3
     },
     "T3": {
      "flag": "PASS",
@@ -7855,15 +7572,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 1.6 times bigger than the official 129 acres (213 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7426",
@@ -7973,15 +7690,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7427",
@@ -8081,15 +7798,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7428",
@@ -8169,15 +7886,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7429",
@@ -8257,15 +7974,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7430",
@@ -8355,15 +8072,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7431",
@@ -8443,9 +8160,9 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
@@ -8531,15 +8248,15 @@
     },
     "T9": {
      "last_edit": "2025-04-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-04-24, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-04-24, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7433",
@@ -8556,7 +8273,7 @@
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0"
    ],
-   "acres_drawn": 1265.8,
+   "acres_drawn": 838.4,
    "records": [
     {
      "id": "padus#201164",
@@ -8567,16 +8284,6 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201164&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#201219",
-     "name": "Meade State Park",
-     "type": "State Park State Park",
-     "category": "Fee",
-     "acres": 427.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201219&outFields=*&returnGeometry=false&f=html"
     },
     {
      "id": "sgksb150",
@@ -8593,31 +8300,24 @@
      "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0",
      "link": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0/query?objectIds=833&outFields=*&returnGeometry=false&f=html",
      "name_field": "Unit_Name"
-    },
-    {
-     "id": "sgksc943",
-     "name": "Meade State Park",
-     "type": "KDWPT (owner jjones_KDWPT; KS Natural Heritage Inventory compilation) (land, state GIS table)",
-     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0",
-     "link": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0/query?objectIds=943&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Unit_Name"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201164",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201219",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#150",
-    "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#833",
-    "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#943"
+    "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#833"
    ],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "OUTSIDE",
+     "metres": 1385.3
     },
     "T2": {
-     "flag": "CAN'T TELL",
-     "note": "a source was down: only part of the park could be read"
+     "flag": "PASS",
+     "outline_acres": 838.4,
+     "official_acres": 811.0,
+     "times": 1.03,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
      "flag": "PASS",
@@ -8642,28 +8342,19 @@
      "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "DUPLICATE",
-     "parks": {
-      "US-2344": [
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201219",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#943"
-      ]
-     },
-     "note": "same record id(s) as another park number: for KPC 13"
+     "flag": "PASS"
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
-   "problems": [
-    "SOURCE DOWN: robots.txt asks bots not to read https://kanplan.ksdot.gov/arcgis_web_adaptor/rest/services/Boundaries/State_Park_Area/MapServer/0/query"
-   ],
-   "status": "SOURCE DOWN: retry next run",
-   "score": 2,
-   "why": "SOURCE DOWN: DUPLICATE: Another park number uses the same record: US-2344 (+1 more flag)."
+   "problems": [],
+   "status": "graded",
+   "score": 4,
+   "why": "OUTSIDE: POTA's pin is 1.4 km outside the outline (+1 more flag)."
   },
   {
    "ref": "US-7434",
@@ -8777,9 +8468,9 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [
@@ -8847,7 +8538,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-101.66452542634 37.1562767402575]"
+     "note": "Ring Self-intersection[-101.66452542634 37.1562767402575]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8995,15 +8692,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7918",
@@ -9093,15 +8790,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7919",
@@ -9163,7 +8860,9 @@
      "outline_acres": 14268.1,
      "official_acres": 12646.0,
      "times": 1.13,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 11416.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 11,416 ac, all providers added 12,646 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -9198,9 +8897,9 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
@@ -9296,15 +8995,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7921",
@@ -9394,15 +9093,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7922",
@@ -9555,15 +9254,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7923",
@@ -9665,15 +9364,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7924",
@@ -9757,9 +9456,9 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
@@ -9781,7 +9480,7 @@
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0"
    ],
-   "acres_drawn": 7268.4,
+   "acres_drawn": 4223.3,
    "records": [
     {
      "id": "sgksb130",
@@ -9789,14 +9488,6 @@
      "type": "KDWPT (owner jjones_KDWPT) (wild, state GIS table)",
      "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0",
      "link": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0/query?objectIds=130&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Label_Name"
-    },
-    {
-     "id": "sgksb131",
-     "name": "El Dorado State Park",
-     "type": "KDWPT (owner jjones_KDWPT) (wild, state GIS table)",
-     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0",
-     "link": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0/query?objectIds=131&outFields=*&returnGeometry=false&f=html",
      "name_field": "Label_Name"
     },
     {
@@ -9826,7 +9517,6 @@
    ],
    "record_ids": [
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#130",
-    "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#131",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#132",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#133",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#65"
@@ -9838,7 +9528,7 @@
     },
     "T2": {
      "flag": "NO FIGURE",
-     "outline_acres": 7268.4
+     "outline_acres": 4223.3
     },
     "T3": {
      "flag": "PASS",
@@ -9848,9 +9538,8 @@
     },
     "T4": {
      "park_kind": "wma",
-     "record_kind": "state park",
-     "flag": "CONFLICT",
-     "why": "the park is a wma but the record is a state park"
+     "record_kind": "wma",
+     "flag": "PASS"
     },
     "T5": {
      "flag": "PASS",
@@ -9864,25 +9553,19 @@
      "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "DUPLICATE",
-     "parks": {
-      "US-2336": [
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#131"
-      ]
-     },
-     "note": "same record id(s) as another park number: for KPC 13"
+     "flag": "PASS"
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 5,
-   "why": "CONFLICT: The park is a wma but the record is a state park (+2 more flags)."
+   "score": 1,
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7926",
@@ -9975,15 +9658,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7927",
@@ -10058,15 +9741,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7928",
@@ -10147,7 +9830,9 @@
      "outline_acres": 26338.1,
      "official_acres": 24627.0,
      "times": 1.07,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 14021.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 14,021 ac, all providers added 24,627 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -10166,7 +9851,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "3 hole(s) under 100 m2"
+     "note": "3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -10186,9 +9877,9 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
@@ -10268,7 +9959,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "9 hole(s) under 100 m2"
+     "note": "9 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 9,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -10282,9 +9979,9 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
@@ -10380,15 +10077,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7931",
@@ -10404,18 +10101,8 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0"
    ],
-   "acres_drawn": 4624.3,
+   "acres_drawn": 4594.3,
    "records": [
-    {
-     "id": "padus#201157",
-     "name": "Jamestown Wildlife Area",
-     "type": "Wildlife Area State Conservation Area",
-     "category": "Fee",
-     "acres": 1895.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201157&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "padus#201158",
      "name": "Jamestown Wildlife Area",
@@ -10478,7 +10165,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201157",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201158",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201159",
     "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#49",
@@ -10493,10 +10179,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 4624.3,
-     "official_acres": 2710.0,
-     "times": 1.71,
+     "flag": "WAY OFF",
+     "outline_acres": 4594.3,
+     "official_acres": 408.0,
+     "times": 11.26,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -10516,7 +10202,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "3 hole(s) under 100 m2"
+     "note": "3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -10530,15 +10222,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OFF: The outline is 1.7 times bigger than the official 2,710 acres (4,624 ac drawn) (+2 more flags)."
+   "score": 5,
+   "why": "WAY OFF: The outline is 11.3 times bigger than the official 408 acres (4,594 ac drawn) (+2 more flags)."
   },
   {
    "ref": "US-7932",
@@ -10603,15 +10295,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7933",
@@ -10710,15 +10402,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7934",
@@ -10790,7 +10482,9 @@
      "outline_acres": 6339.5,
      "official_acres": 6001.0,
      "times": 1.06,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 4067.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 4,067 ac, all providers added 6,001 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -10809,7 +10503,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "5 hole(s) under 100 m2"
+     "note": "5 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 5,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -10829,9 +10529,9 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
@@ -10936,15 +10636,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7936",
@@ -11019,15 +10719,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7937",
@@ -11121,9 +10821,9 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [
@@ -11131,7 +10831,7 @@
    ],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7938",
@@ -11277,7 +10977,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "3 hole(s) under 100 m2"
+     "note": "3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11291,9 +10997,9 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
@@ -11505,35 +11211,21 @@
      "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "DUPLICATE",
-     "parks": {
-      "US-7406": [
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201168",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201165",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201169",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201170",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#67",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#105",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#108",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#109",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#843"
-      ]
-     },
-     "note": "same record id(s) as another park number: for KPC 13"
+     "flag": "PASS"
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [
     "record sgksc843: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 2,
-   "why": "DUPLICATE: Another park number uses the same record: US-7406 (+1 more flag)."
+   "score": 1,
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7940",
@@ -11623,15 +11315,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7941",
@@ -11706,15 +11398,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7942",
@@ -11804,15 +11496,15 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-07-11, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-7943",
@@ -11940,9 +11632,9 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
@@ -12049,7 +11741,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -12063,9 +11761,9 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
@@ -12173,7 +11871,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-96.6475491869587 39.6860435181752]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-96.6475491869587 39.6860435181752]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -12187,9 +11891,9 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
@@ -12279,9 +11983,9 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
@@ -12389,9 +12093,9 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
@@ -12544,13 +12248,7 @@
      "flag": "DUPLICATE",
      "parks": {
       "US-7411": [
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201208",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201187",
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201260",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#84",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0#85",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#841",
-       "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#870",
        "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0#976"
       ]
      },
@@ -12558,9 +12256,9 @@
     },
     "T9": {
      "last_edit": "2025-07-11",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-07-11, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
