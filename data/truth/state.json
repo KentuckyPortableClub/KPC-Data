@@ -6,19 +6,19 @@
     "agree": 33,
     "handover_hints": 4,
     "no_page": 3,
-    "no_size": 60,
+    "no_size": 57,
     "off": 16,
     "ours_unknown": 4,
     "parks": 155,
     "retired": 0,
-    "unsure": 13,
+    "unsure": 15,
     "weak": 7,
-    "with_outline": 134
+    "with_outline": 133
    },
    "left": 0,
    "parks": 155,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-08"
   },
   "US-AR": {
    "checked": 306,
@@ -741,55 +741,53 @@
    "updated": "2026-11-08"
   }
  },
- "hosts": {},
+ "hosts": {
+  "www.alapark.com": 1794238982.9815848
+ },
  "last": {
   "areas": [
-   "US-GA"
+   "US-AL"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 3,
+   "browser": 22,
    "dropped_queued": 1,
    "errors": 0,
    "for_person": 2,
    "for_person_urls": [
     [
-     "https://www.exploregeorgia.org/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.exploregeorgia.org this run"
-    ],
-    [
-     "http://www.sam.usace.army.mil/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.sam.usace.army.mil this run"
-    ],
-    [
-     "https://www.gwcca.org/centennial-olympic-park",
+     "https://www.alapark.com/rules-and-regulations",
      "HTTP 403 twice"
     ],
     [
-     "https://georgiawildlife.com/news",
+     "https://www.alapark.com/rules-and-regulations",
      "HTTP 403 twice"
+    ],
+    [
+     "https://www.tva.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.tva.com this run"
     ]
    ],
-   "requests": 529,
-   "rested": 0,
+   "requests": 61,
+   "rested": 40,
    "retry403": 2,
-   "robots": 2,
-   "robots_unreadable": 2,
+   "robots": 1,
+   "robots_unreadable": 1,
    "strikes": 4
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 11,
-   "no_size": 23,
-   "ours_unknown": 4,
-   "pages_read": 386,
-   "parks": 237,
+   "handover_hints": 4,
+   "no_size": 41,
+   "ours_unknown": 2,
+   "pages_read": 26,
+   "parks": 46,
    "retired": 0,
-   "size_agree": 104,
-   "size_off": 64,
-   "size_unsure": 30,
-   "skipped_fresh": 0,
-   "with_outline": 225
+   "size_agree": 0,
+   "size_off": 0,
+   "size_unsure": 2,
+   "skipped_fresh": 109,
+   "with_outline": 45
   },
   "when": "2026-11-08"
  },

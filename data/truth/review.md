@@ -10,7 +10,7 @@ Updated 2026-11-08. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-VA | 184 | 177 | 50 | **25** | 53 | 28 | 21 | 17 | 0 | 20 |
 | US-WV | 172 | 165 | 20 | **11** | 101 | 28 | 5 | 1 | 0 | 5 |
 | US-GA | 237 | 225 | 104 | **64** | 30 | 22 | 4 | 11 | 0 | 7 |
-| US-AL | 155 | 134 | 33 | **16** | 13 | 60 | 4 | 4 | 0 | 7 |
+| US-AL | 155 | 133 | 33 | **16** | 15 | 57 | 4 | 4 | 0 | 7 |
 | US-SC | 167 | 159 | 16 | **7** | 5 | 126 | 2 | 4 | 0 | 4 |
 | US-FL | 460 | 443 | 84 | **46** | 31 | 280 | 2 | 16 | 0 | 11 |
 | US-MS | 155 | 101 | 7 | **7** | 5 | 71 | 0 | 4 | 0 | 17 |
@@ -516,6 +516,8 @@ Updated 2026-11-08. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 - US-0160 Watercress Darter National Wildlife Refuge: ours 48 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 1.5 acres, a tiny number without size wording) · [www.fws.gov](https://www.fws.gov/refuge/watercress-darter/about-us)
 - US-0642 Natchez Trace Parkway National Parkway: ours 35,645 ac · cause: whole park compared (POTA lists it in 2 states: {'US-AL': 4118, 'US-MS': 31527})
 - US-0719 Horseshoe Bend National Military Park: ours 2,079 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 23,000,000 acres, a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit) · [www.nps.gov](https://www.nps.gov/hobe/index.htm)
+- US-1037 Cheaha Resort State Park: ours 3,610 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 2,799 acres, no total words near it) · [www.alapark.com](https://www.alapark.com/parks/cheaha-state-park)
+- US-1038 Chewacla State Park: ours 292 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-11032 Old Cahawba Prairie Conservation Reserve: ours 3,078 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-12996 Fowl River Access Site BLM Recreation Management Area: ours 792 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-13311 TVA Upper Bear Creek Dam Resource Management Area: ours 3,216 ac · cause: no total-looking sentence: numbers found were parts or other units
