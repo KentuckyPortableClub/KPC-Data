@@ -1,6 +1,6 @@
 # 2-fer accuracy check: US-KY
 
-Run 2026-11-08T05:26:55Z → 2026-11-08T05:27:09Z (UTC) · tool 0.1.0 (2026-10-31) · complete
+Run 2026-11-08T05:26:55Z → 2026-11-08T06:17:40Z (UTC) · tool 0.1.0 (2026-10-31) · complete
 Live rows in the file: 88 · checked: 88 · skipped (dropped / merged): 321
 
 | verdict | rows |

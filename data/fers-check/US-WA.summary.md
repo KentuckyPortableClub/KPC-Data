@@ -1,6 +1,6 @@
 # 2-fer accuracy check: US-WA
 
-Run 2026-11-01T04:13:34Z → 2026-11-01T12:15:44Z (UTC) · tool 0.1.0 (2026-10-31) · complete
+Run 2026-11-01T04:13:34Z → 2026-11-08T06:28:19Z (UTC) · tool 0.1.0 (2026-10-31) · complete
 Live rows in the file: 53 · checked: 53 · skipped (dropped / merged): 873
 
 | verdict | rows |

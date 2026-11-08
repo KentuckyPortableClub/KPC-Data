@@ -3,53 +3,6 @@
  "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
  "fers_file": "data/fers/CA-YT.json",
  "rows": {
-  "CA-0044+CA-0842@area@61.233,-140.516": {
-   "id": "CA-0044+CA-0842@area@61.233,-140.516",
-   "area": "CA-YT",
-   "refs": [
-    "CA-0044",
-    "CA-0842"
-   ],
-   "kind": "area",
-   "stored_status": "candidate",
-   "stored_acres": 8727.6,
-   "stored_wide_m": 2055,
-   "utm_epsg": 32607,
-   "checked_at": "2026-11-01T11:31:26Z",
-   "layers": [
-    {
-     "ref": "CA-0044",
-     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T11:31:27Z"
-    },
-    {
-     "ref": "CA-0842",
-     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T11:31:29Z"
-    }
-   ],
-   "saved_lines": [],
-   "stored_water_pct": 0,
-   "stored_shape_acres": 298.88,
-   "live_acres": 258.16,
-   "kept_pct": 68.2,
-   "size_pct": -13.6,
-   "moved_m": 41465,
-   "gap_m": 0,
-   "wide_m": 145.3,
-   "flags": [],
-   "size_vs": "stored shape",
-   "verdict": "RECORD CHANGED",
-   "why": "CA-0044: key record Yukon parks :22 names a layer prefix not in us-key/layers.json | CA-0044: key record Yukon parks :23 names a layer prefix not in us-key/layers.json | CA-0842: key record Yukon parks :24 names a layer prefix not in us-key/layers.json (geometry now: SHRUNK: only 68% of the stored overlap is still inside the live overlap (10 m tolerance))",
-   "live_center": [
-    61.312224,
-    -140.11697
-   ]
-  },
   "CA-0106+CA-4623@area@68.375,-138.616": {
    "id": "CA-0106+CA-4623@area@68.375,-138.616",
    "area": "CA-YT",
@@ -85,80 +38,8 @@
    "verdict": "RECORD CHANGED",
    "why": "CA-0106: key record Yukon parks :5 names a layer prefix not in us-key/layers.json | CA-4623: key record Yukon parks :6 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
   },
-  "CA-0848+CA-4625@same land@61.928,-140.336": {
-   "id": "CA-0848+CA-4625@same land@61.928,-140.336",
-   "area": "CA-YT",
-   "refs": [
-    "CA-0848",
-    "CA-4625"
-   ],
-   "kind": "same land",
-   "stored_status": "candidate",
-   "stored_acres": null,
-   "stored_wide_m": null,
-   "utm_epsg": 32607,
-   "checked_at": "2026-11-01T11:31:32Z",
-   "layers": [],
-   "saved_lines": [],
-   "stored_shape_acres": 12616.61,
-   "live_acres": 0.0,
-   "kept_pct": 0.0,
-   "size_pct": null,
-   "moved_m": null,
-   "gap_m": null,
-   "wide_m": 0.0,
-   "flags": [],
-   "verdict": "RECORD CHANGED",
-   "why": "CA-0848: key record Yukon parks :1 names a layer prefix not in us-key/layers.json | CA-4625: key record Yukon parks :1 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
-  },
-  "CA-4635+CA-4636@same land@64.543,-138.759": {
-   "id": "CA-4635+CA-4636@same land@64.543,-138.759",
-   "area": "CA-YT",
-   "refs": [
-    "CA-4635",
-    "CA-4636"
-   ],
-   "kind": "same land",
-   "stored_status": "candidate",
-   "stored_acres": null,
-   "stored_wide_m": null,
-   "utm_epsg": 32607,
-   "checked_at": "2026-11-01T11:31:32Z",
-   "layers": [
-    {
-     "ref": "CA-4635",
-     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T11:31:33Z"
-    },
-    {
-     "ref": "CA-4636",
-     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T11:31:33Z"
-    }
-   ],
-   "saved_lines": [],
-   "stored_shape_acres": 403379.6,
-   "live_acres": 421050.03,
-   "kept_pct": 99.0,
-   "size_pct": 4.4,
-   "moved_m": 12322,
-   "gap_m": 0,
-   "wide_m": 24857.6,
-   "flags": [],
-   "size_vs": "stored shape",
-   "verdict": "CONFIRMED",
-   "why": "live overlap 421050.0 ac vs 403379.6 ac stored (+4%), 99% of the stored overlap still inside (10 m tolerance); note: CA-4635: key record Yukon parks :20 names a layer prefix not in us-key/layers.json | CA-4635: key record Yukon parks :21 names a layer prefix not in us-key/layers.json | CA-4636: key record Yukon parks :20 names a layer prefix not in us-key/layers.json",
-   "live_center": [
-    64.511678,
-    -138.5133
-   ]
-  },
-  "CA-0039+CA-0106@area@68.558,-140.978": {
-   "id": "CA-0039+CA-0106@area@68.558,-140.978",
+  "CA-0039+CA-0106@area@68.569,-140.923": {
+   "id": "CA-0039+CA-0106@area@68.569,-140.923",
    "area": "CA-YT",
    "refs": [
     "CA-0039",
@@ -170,8 +51,8 @@
    "flags": [],
    "layers": []
   },
-  "CA-0039+CA-4623@area@68.564,-140.893": {
-   "id": "CA-0039+CA-4623@area@68.564,-140.893",
+  "CA-0039+CA-4623@area@68.566,-140.906": {
+   "id": "CA-0039+CA-4623@area@68.566,-140.906",
    "area": "CA-YT",
    "refs": [
     "CA-0039",
@@ -182,29 +63,196 @@
    "why": "checker error on this row (retry; report if it repeats): GEOSException: IllegalArgumentException: Overlay input is mixed-dimension",
    "flags": [],
    "layers": []
+  },
+  "CA-0044+CA-0842@area@61.254,-140.886": {
+   "id": "CA-0044+CA-0842@area@61.254,-140.886",
+   "area": "CA-YT",
+   "refs": [
+    "CA-0044",
+    "CA-0842"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
+   "stored_acres": 8727.6,
+   "stored_wide_m": 2055,
+   "utm_epsg": 32607,
+   "checked_at": "2026-11-08T06:21:33Z",
+   "layers": [
+    {
+     "ref": "CA-0044",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:21:33Z"
+    },
+    {
+     "ref": "CA-0044",
+     "layer": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T06:21:36Z"
+    },
+    {
+     "ref": "CA-0842",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:21:37Z"
+    },
+    {
+     "ref": "CA-0842",
+     "layer": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:21:38Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 298.88,
+   "live_acres": 8688.1,
+   "kept_pct": 100.0,
+   "size_pct": -0.5,
+   "moved_m": 17,
+   "gap_m": 0,
+   "wide_m": 2039.4,
+   "flags": [],
+   "size_vs": "row acres",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 8688.1 ac vs 8727.6 ac stored (row acres; the stored shape is a 298.9 ac preview) (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    61.254247,
+    -140.881232
+   ]
+  },
+  "CA-0848+CA-4625@same land@61.934,-140.359": {
+   "id": "CA-0848+CA-4625@same land@61.934,-140.359",
+   "area": "CA-YT",
+   "refs": [
+    "CA-0848",
+    "CA-4625"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32607,
+   "checked_at": "2026-11-08T06:21:39Z",
+   "layers": [
+    {
+     "ref": "CA-0848",
+     "layer": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:21:40Z"
+    },
+    {
+     "ref": "CA-4625",
+     "layer": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:21:40Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 12623.34,
+   "live_acres": 12623.48,
+   "kept_pct": 100.0,
+   "size_pct": 0.0,
+   "moved_m": 5450,
+   "gap_m": 0,
+   "wide_m": 3600.4,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 12623.5 ac vs 12623.3 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    61.89751,
+    -140.290764
+   ]
+  },
+  "CA-4635+CA-4636@same land@64.565,-138.837": {
+   "id": "CA-4635+CA-4636@same land@64.565,-138.837",
+   "area": "CA-YT",
+   "refs": [
+    "CA-4635",
+    "CA-4636"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32607,
+   "checked_at": "2026-11-08T06:21:41Z",
+   "layers": [
+    {
+     "ref": "CA-4635",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:21:41Z"
+    },
+    {
+     "ref": "CA-4635",
+     "layer": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T06:21:42Z"
+    },
+    {
+     "ref": "CA-4636",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:21:41Z"
+    },
+    {
+     "ref": "CA-4636",
+     "layer": "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:21:44Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 397668.15,
+   "live_acres": 475682.71,
+   "kept_pct": 99.0,
+   "size_pct": 19.6,
+   "moved_m": 16614,
+   "gap_m": 0,
+   "wide_m": 24941.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 475682.7 ac vs 397668.1 ac stored (+20%), 99% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    64.511238,
+    -138.513962
+   ]
   }
  },
  "started": "2026-11-01T11:31:24Z",
- "fers_sha256": "c4bb36b77ace1964825405b7cff9b4ce3cdb3966a6a8546283926947815286a6",
+ "fers_sha256": "efdc8faeb865247c2bcf53cfadc34ce14f73aa89347f2b44388102041b6c8c79",
  "live_rows": 6,
- "skipped_rows": 88,
+ "skipped_rows": 68,
  "rules": {
   "trail_buffer_m": 30.48,
   "small_across_m": 45.72,
   "moved_m": 200.0,
   "size_tol": 0.25
  },
- "updated": "2026-11-01T12:04:59Z",
+ "updated": "2026-11-08T06:21:45Z",
  "complete": true,
  "summary": {
   "rows": 6,
   "verdicts": {
-   "CONFIRMED": 1,
+   "CONFIRMED": 3,
    "SHRUNK": 0,
    "GREW": 0,
    "MOVED": 0,
    "GONE": 0,
-   "RECORD CHANGED": 3,
+   "RECORD CHANGED": 1,
    "SOURCE DOWN": 2,
    "NOT CHECKED": 0
   },
@@ -219,6 +267,7 @@
   "data/ca-key/CA-NS.json",
   "data/ca-key/CA-NT.json",
   "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-ON.json",
   "data/ca-key/CA-PE.json",
   "data/ca-key/CA-QC.json",
   "data/ca-key/CA-SI.json",
@@ -226,5 +275,8 @@
   "data/ca-key/CA-SP.json",
   "data/ca-key/CA-YT.json"
  ],
- "requests_this_run": 3
+ "requests_this_run": 212,
+ "notes": [
+  "2026-11-08: the 2-fer file changed since this check started"
+ ]
 }

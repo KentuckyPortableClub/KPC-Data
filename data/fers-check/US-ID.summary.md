@@ -1,6 +1,6 @@
 # 2-fer accuracy check: US-ID
 
-Run 2026-11-01T00:38:17Z → 2026-11-01T12:15:36Z (UTC) · tool 0.1.0 (2026-10-31) · complete
+Run 2026-11-01T00:38:17Z → 2026-11-08T06:25:43Z (UTC) · tool 0.1.0 (2026-10-31) · complete
 Live rows in the file: 66 · checked: 66 · skipped (dropped / merged): 1154
 
 | verdict | rows |

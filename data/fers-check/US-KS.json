@@ -1680,36 +1680,281 @@
     39.182861,
     -101.781531
    ]
+  },
+  "US-0818+US-4579@trail@38.185,-99.215": {
+   "id": "US-0818+US-4579@trail@38.185,-99.215",
+   "area": "US-KS",
+   "refs": [
+    "US-0818",
+    "US-4579"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 23.02,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-08T06:25:44Z",
+   "layers": [
+    {
+     "ref": "US-0818",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:25:44Z"
+    },
+    {
+     "ref": "US-4579",
+     "layer": "saved copy US-4579.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    }
+   ],
+   "saved_lines": [
+    "US-4579"
+   ],
+   "live_stretch_acres": 21.52,
+   "stored_shape_acres": 21.68,
+   "live_acres": 21.44,
+   "kept_pct": 71.0,
+   "size_pct": -1.1,
+   "moved_m": 454,
+   "gap_m": 0,
+   "wide_m": 61.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 71% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    38.187776,
+    -99.211354
+   ]
+  },
+  "US-4579+US-7409@trail@38.777,-95.671": {
+   "id": "US-4579+US-7409@trail@38.777,-95.671",
+   "area": "US-KS",
+   "refs": [
+    "US-4579",
+    "US-7409"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 8.09,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:25:45Z",
+   "layers": [
+    {
+     "ref": "US-4579",
+     "layer": "saved copy US-4579.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    },
+    {
+     "ref": "US-7409",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:25:46Z"
+    },
+    {
+     "ref": "US-7409",
+     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:25:48Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4579"
+   ],
+   "live_stretch_acres": 7.56,
+   "stored_shape_acres": 7.24,
+   "live_acres": 7.56,
+   "kept_pct": 72.9,
+   "size_pct": 4.5,
+   "moved_m": 164,
+   "gap_m": 0,
+   "wide_m": 61.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 73% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    38.777674,
+    -95.666773
+   ]
+  },
+  "US-4579+US-7477@trail@37.196,-101.727": {
+   "id": "US-4579+US-7477@trail@37.196,-101.727",
+   "area": "US-KS",
+   "refs": [
+    "US-4579",
+    "US-7477"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 14.34,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32614,
+   "checked_at": "2026-11-08T06:25:49Z",
+   "layers": [
+    {
+     "ref": "US-4579",
+     "layer": "saved copy US-4579.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    },
+    {
+     "ref": "US-7477",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:25:49Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4579"
+   ],
+   "live_stretch_acres": 72.31,
+   "stored_shape_acres": 13.73,
+   "live_acres": 15.51,
+   "kept_pct": 93.2,
+   "size_pct": 13.0,
+   "moved_m": 935,
+   "gap_m": 0,
+   "wide_m": 91.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 15.5 ac vs 13.7 ac stored (+13%), 93% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    37.191879,
+    -101.736768
+   ]
+  },
+  "US-4579+US-9188@trail@39.032,-94.624": {
+   "id": "US-4579+US-9188@trail@39.032,-94.624",
+   "area": "US-KS",
+   "refs": [
+    "US-4579",
+    "US-9188"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 1.95,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:25:50Z",
+   "layers": [
+    {
+     "ref": "US-4579",
+     "layer": "saved copy US-4579.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    },
+    {
+     "ref": "US-9188",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:25:51Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4579"
+   ],
+   "live_stretch_acres": 1.2,
+   "stored_shape_acres": 1.7,
+   "live_acres": 1.2,
+   "kept_pct": 87.2,
+   "size_pct": -29.7,
+   "moved_m": 20,
+   "gap_m": 0,
+   "wide_m": 56.4,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 30% smaller (1.2 ac vs 1.7 ac stored)",
+   "live_center": [
+    39.032105,
+    -94.62424
+   ]
+  },
+  "US-6347+US-7923@area@36.999,-95.962": {
+   "id": "US-6347+US-7923@area@36.999,-95.962",
+   "area": "US-KS",
+   "refs": [
+    "US-6347",
+    "US-7923"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 15.8,
+   "stored_wide_m": 25,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:25:52Z",
+   "layers": [
+    {
+     "ref": "US-7923",
+     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T06:25:53Z"
+    },
+    {
+     "ref": "US-7923",
+     "layer": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T06:25:55Z"
+    }
+   ],
+   "saved_lines": [],
+   "verdict": "NOT CHECKED",
+   "why": "park is not in any boundary key that was loaded",
+   "flags": []
   }
  },
  "started": "2026-11-01T00:46:48Z",
- "fers_sha256": "7d99e5fe568f66d67f67acb0fa9f1035d87f119b17f01cf7246426a681a69cbe",
- "live_rows": 24,
- "skipped_rows": 38,
+ "fers_sha256": "b9211a2981d3e539139d234c00c38ddbca3d8a9cf0fb678d66a0fa23e8a9fa22",
+ "live_rows": 29,
+ "skipped_rows": 20,
  "rules": {
   "trail_buffer_m": 30.48,
   "small_across_m": 45.72,
   "moved_m": 200.0,
   "size_tol": 0.25
  },
- "updated": "2026-11-01T12:15:37Z",
+ "updated": "2026-11-08T06:25:56Z",
  "complete": true,
  "summary": {
-  "rows": 24,
+  "rows": 29,
   "verdicts": {
-   "CONFIRMED": 18,
-   "SHRUNK": 3,
+   "CONFIRMED": 19,
+   "SHRUNK": 6,
    "GREW": 2,
    "MOVED": 1,
    "GONE": 0,
    "RECORD CHANGED": 0,
    "SOURCE DOWN": 0,
-   "NOT CHECKED": 0
+   "NOT CHECKED": 1
   },
   "flags": {
    "water-only": 1,
    "small overlap (under 50 yd across)": 3,
-   "trail line from the club saved copy (not re-read live)": 1
+   "trail line from the club saved copy (not re-read live)": 5
   }
  },
  "key_files": [
@@ -1721,6 +1966,7 @@
   "data/ca-key/CA-NS.json",
   "data/ca-key/CA-NT.json",
   "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-ON.json",
   "data/ca-key/CA-PE.json",
   "data/ca-key/CA-QC.json",
   "data/ca-key/CA-SI.json",
@@ -1745,5 +1991,8 @@
   "data/us-key/US-IN.json",
   "data/us-key/US-KS.json"
  ],
- "requests_this_run": 1030
+ "requests_this_run": 608,
+ "notes": [
+  "2026-11-08: the 2-fer file changed since this check started"
+ ]
 }

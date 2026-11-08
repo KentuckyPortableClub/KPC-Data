@@ -3,55 +3,6 @@
  "tool": "kpc_fers_check.py 0.1.0 (2026-10-31)",
  "fers_file": "data/fers/US-MS.json",
  "rows": {
-  "US-0390+US-4498@area@33.206,-88.939": {
-   "id": "US-0390+US-4498@area@33.206,-88.939",
-   "area": "US-MS",
-   "refs": [
-    "US-0390",
-    "US-4498"
-   ],
-   "kind": "area",
-   "stored_status": "very tight: could be map error: check both official maps on the ground",
-   "stored_acres": 6.1,
-   "stored_wide_m": 23,
-   "utm_epsg": 32616,
-   "checked_at": "2026-11-01T02:11:23Z",
-   "layers": [
-    {
-     "ref": "US-0390",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "how": "2 record id(s)",
-     "n": 2,
-     "read": "2026-11-01T02:11:24Z"
-    },
-    {
-     "ref": "US-4498",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:11:26Z"
-    }
-   ],
-   "saved_lines": [],
-   "stored_water_pct": 0,
-   "stored_shape_acres": 4.78,
-   "live_acres": 4.81,
-   "kept_pct": 100.0,
-   "size_pct": 0.8,
-   "moved_m": 15,
-   "gap_m": 0,
-   "wide_m": 19.6,
-   "flags": [
-    "small overlap (under 50 yd across)"
-   ],
-   "size_vs": "stored shape",
-   "verdict": "CONFIRMED",
-   "why": "live overlap 4.8 ac vs 4.8 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
-   "live_center": [
-    33.207728,
-    -88.938701
-   ]
-  },
   "US-0390+US-7085@area@33.286,-88.878": {
    "id": "US-0390+US-7085@area@33.286,-88.878",
    "area": "US-MS",
@@ -592,8 +543,381 @@
     -89.888811
    ]
   },
-  "US-7091+US-7127@area@32.563,-88.808": {
-   "id": "US-7091+US-7127@area@32.563,-88.808",
+  "US-0390+US-4498@area@33.213,-88.939": {
+   "id": "US-0390+US-4498@area@33.213,-88.939",
+   "area": "US-MS",
+   "refs": [
+    "US-0390",
+    "US-4498"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 6.0,
+   "stored_wide_m": 105,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-08T06:27:38Z",
+   "layers": [
+    {
+     "ref": "US-0390",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T06:27:39Z"
+    },
+    {
+     "ref": "US-4498",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:41Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 5.25,
+   "live_acres": 5.45,
+   "kept_pct": 100.0,
+   "size_pct": 3.7,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 106.2,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.4 ac vs 5.2 ac stored (+4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    33.212653,
+    -88.939098
+   ]
+  },
+  "US-2547+US-7119@same land@31.598,-91.211": {
+   "id": "US-2547+US-7119@same land@31.598,-91.211",
+   "area": "US-MS",
+   "refs": [
+    "US-2547",
+    "US-7119"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:27:42Z",
+   "layers": [
+    {
+     "ref": "US-2547",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T06:27:43Z"
+    }
+   ],
+   "saved_lines": [],
+   "verdict": "NOT CHECKED",
+   "why": "US-2547: layer mszw is a downloaded file, not a live map | key has no joined official outline for US-7119 (status 'official')",
+   "flags": []
+  },
+  "US-2548+US-4494@area@31.142,-89.234": {
+   "id": "US-2548+US-4494@area@31.142,-89.234",
+   "area": "US-MS",
+   "refs": [
+    "US-2548",
+    "US-4494"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 2.5,
+   "stored_wide_m": 31,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-08T06:27:44Z",
+   "layers": [
+    {
+     "ref": "US-2548",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:45Z"
+    },
+    {
+     "ref": "US-4494",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:47Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2.08,
+   "live_acres": 1.66,
+   "kept_pct": 100.0,
+   "size_pct": -20.3,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 25.1,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1.7 ac vs 2.1 ac stored (-20%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    31.142264,
+    -89.234348
+   ]
+  },
+  "US-4493+US-7114@area@32.418,-89.597": {
+   "id": "US-4493+US-7114@area@32.418,-89.597",
+   "area": "US-MS",
+   "refs": [
+    "US-4493",
+    "US-7114"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 26528.4,
+   "stored_wide_m": 5802,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-08T06:27:48Z",
+   "layers": [
+    {
+     "ref": "US-4493",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:49Z"
+    }
+   ],
+   "saved_lines": [],
+   "verdict": "NOT CHECKED",
+   "why": "US-7114: layer mszw is a downloaded file, not a live map",
+   "flags": []
+  },
+  "US-4494+US-7110@area@30.717,-89.257": {
+   "id": "US-4494+US-7110@area@30.717,-89.257",
+   "area": "US-MS",
+   "refs": [
+    "US-4494",
+    "US-7110"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 8003.3,
+   "stored_wide_m": 3171,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-08T06:27:50Z",
+   "layers": [
+    {
+     "ref": "US-4494",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:51Z"
+    }
+   ],
+   "saved_lines": [],
+   "verdict": "NOT CHECKED",
+   "why": "US-7110: layer mszw is a downloaded file, not a live map",
+   "flags": []
+  },
+  "US-4495+US-7079+US-7080@area@32.830,-90.837": {
+   "id": "US-4495+US-7079+US-7080@area@32.830,-90.837",
+   "area": "US-MS",
+   "refs": [
+    "US-4495",
+    "US-7079",
+    "US-7080"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Twin Oaks Wildlife Management Area could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 0.3,
+   "stored_wide_m": 20,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:27:51Z",
+   "layers": [
+    {
+     "ref": "US-4495",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:52Z"
+    },
+    {
+     "ref": "US-7079",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T06:27:54Z"
+    }
+   ],
+   "saved_lines": [],
+   "verdict": "NOT CHECKED",
+   "why": "US-7080: layer mszw is a downloaded file, not a live map",
+   "flags": []
+  },
+  "US-4495+US-7080@area@32.727,-90.783": {
+   "id": "US-4495+US-7080@area@32.727,-90.783",
+   "area": "US-MS",
+   "refs": [
+    "US-4495",
+    "US-7080"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 55017.3,
+   "stored_wide_m": 5504,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:27:55Z",
+   "layers": [
+    {
+     "ref": "US-4495",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:56Z"
+    }
+   ],
+   "saved_lines": [],
+   "verdict": "NOT CHECKED",
+   "why": "US-7080: layer mszw is a downloaded file, not a live map",
+   "flags": []
+  },
+  "US-4496+US-7100@area@34.374,-89.345": {
+   "id": "US-4496+US-7100@area@34.374,-89.345",
+   "area": "US-MS",
+   "refs": [
+    "US-4496",
+    "US-7100"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 40610.9,
+   "stored_wide_m": 3559,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-08T06:27:56Z",
+   "layers": [
+    {
+     "ref": "US-4496",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:57Z"
+    }
+   ],
+   "saved_lines": [],
+   "verdict": "NOT CHECKED",
+   "why": "US-7100: layer mszw is a downloaded file, not a live map",
+   "flags": []
+  },
+  "US-4497+US-7121@area@31.434,-91.194": {
+   "id": "US-4497+US-7121@area@31.434,-91.194",
+   "area": "US-MS",
+   "refs": [
+    "US-4497",
+    "US-7121"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 16662.9,
+   "stored_wide_m": 3848,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:27:58Z",
+   "layers": [
+    {
+     "ref": "US-4497",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:59Z"
+    }
+   ],
+   "saved_lines": [],
+   "verdict": "NOT CHECKED",
+   "why": "US-7121: layer mszw is a downloaded file, not a live map",
+   "flags": []
+  },
+  "US-4498+US-7088@area@33.293,-89.107": {
+   "id": "US-4498+US-7088@area@33.293,-89.107",
+   "area": "US-MS",
+   "refs": [
+    "US-4498",
+    "US-7088"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 21233.8,
+   "stored_wide_m": 3565,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-08T06:28:00Z",
+   "layers": [
+    {
+     "ref": "US-4498",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:28:01Z"
+    }
+   ],
+   "saved_lines": [],
+   "verdict": "NOT CHECKED",
+   "why": "US-7088: layer mszw is a downloaded file, not a live map",
+   "flags": []
+  },
+  "US-7079+US-7080@area@32.806,-90.837": {
+   "id": "US-7079+US-7080@area@32.806,-90.837",
+   "area": "US-MS",
+   "refs": [
+    "US-7079",
+    "US-7080"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Twin Oaks Wildlife Management Area could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 4.0,
+   "stored_wide_m": 60,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:28:01Z",
+   "layers": [
+    {
+     "ref": "US-7079",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T06:28:02Z"
+    }
+   ],
+   "saved_lines": [],
+   "verdict": "NOT CHECKED",
+   "why": "US-7080: layer mszw is a downloaded file, not a live map",
+   "flags": []
+  },
+  "US-7083+US-7084@area@32.562,-90.947": {
+   "id": "US-7083+US-7084@area@32.562,-90.947",
+   "area": "US-MS",
+   "refs": [
+    "US-7083",
+    "US-7084"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Mahannah Wildlife Management Area could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 50.3,
+   "stored_wide_m": 60,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:28:02Z",
+   "layers": [
+    {
+     "ref": "US-7083",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T06:28:03Z"
+    }
+   ],
+   "saved_lines": [],
+   "verdict": "NOT CHECKED",
+   "why": "US-7084: layer mszw is a downloaded file, not a live map",
+   "flags": []
+  },
+  "US-7091+US-7127@area@32.555,-88.807": {
+   "id": "US-7091+US-7127@area@32.555,-88.807",
    "area": "US-MS",
    "refs": [
     "US-7091",
@@ -601,45 +925,45 @@
    ],
    "kind": "area",
    "stored_status": "not sure: the official outline of Okatibbee Wildlife Management Area could not be read in pass 2 (the next run tries again)",
-   "stored_acres": 4285.1,
-   "stored_wide_m": 2002,
+   "stored_acres": 4304.8,
+   "stored_wide_m": 2010,
    "utm_epsg": 32616,
-   "checked_at": "2026-11-01T02:11:53Z",
+   "checked_at": "2026-11-08T06:28:04Z",
    "layers": [
     {
      "ref": "US-7091",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T02:11:54Z"
+     "read": "2026-11-08T06:28:05Z"
     },
     {
      "ref": "US-7127",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T02:11:56Z"
+     "read": "2026-11-08T06:28:07Z"
     }
    ],
    "saved_lines": [],
-   "stored_shape_acres": 4568.7,
+   "stored_shape_acres": 4584.83,
    "live_acres": 4283.12,
-   "kept_pct": 92.6,
-   "size_pct": -6.3,
-   "moved_m": 890,
+   "kept_pct": 92.4,
+   "size_pct": -6.6,
+   "moved_m": 6,
    "gap_m": 0,
    "wide_m": 1972.9,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "CONFIRMED",
-   "why": "live overlap 4283.1 ac vs 4568.7 ac stored (-6%), 93% of the stored overlap still inside (10 m tolerance)",
+   "why": "live overlap 4283.1 ac vs 4584.8 ac stored (-7%), 92% of the stored overlap still inside (10 m tolerance)",
    "live_center": [
     32.55451,
     -88.806866
    ]
   },
-  "US-7095+US-7096@area@34.479,-88.347": {
-   "id": "US-7095+US-7096@area@34.479,-88.347",
+  "US-7095+US-7096@area@34.336,-88.434": {
+   "id": "US-7095+US-7096@area@34.336,-88.434",
    "area": "US-MS",
    "refs": [
     "US-7095",
@@ -647,24 +971,24 @@
    ],
    "kind": "area",
    "stored_status": "not sure: the official outline of Canal Section Wildlife Management Area could not be read in pass 2 (the next run tries again)",
-   "stored_acres": 41.4,
-   "stored_wide_m": 20,
+   "stored_acres": 352.5,
+   "stored_wide_m": 619,
    "utm_epsg": 32616,
-   "checked_at": "2026-11-01T02:11:57Z",
+   "checked_at": "2026-11-08T06:28:08Z",
    "layers": [
     {
      "ref": "US-7095",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T02:11:58Z"
+     "read": "2026-11-08T06:28:09Z"
     },
     {
      "ref": "US-7096",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "how": "2 record id(s)",
      "n": 1,
-     "read": "2026-11-01T02:12:00Z"
+     "read": "2026-11-08T06:28:11Z"
     }
    ],
    "saved_lines": [],
@@ -672,8 +996,8 @@
    "why": "US-7095: layer mszw is a downloaded file, not a live map",
    "flags": []
   },
-  "US-7108+US-7112@area@30.676,-88.602": {
-   "id": "US-7108+US-7112@area@30.676,-88.602",
+  "US-7108+US-7112@area@30.658,-88.614": {
+   "id": "US-7108+US-7112@area@30.658,-88.614",
    "area": "US-MS",
    "refs": [
     "US-7108",
@@ -681,24 +1005,24 @@
    ],
    "kind": "area",
    "stored_status": "not sure: the official outline of Ward Bayou Wildlife Management Area could not be read in pass 2 (the next run tries again)",
-   "stored_acres": 20.4,
-   "stored_wide_m": 20,
+   "stored_acres": 29.7,
+   "stored_wide_m": 60,
    "utm_epsg": 32616,
-   "checked_at": "2026-11-01T02:12:00Z",
+   "checked_at": "2026-11-08T06:28:12Z",
    "layers": [
     {
      "ref": "US-7108",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T02:12:01Z"
+     "read": "2026-11-08T06:28:13Z"
     },
     {
      "ref": "US-7112",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "how": "3 record id(s)",
-     "n": 2,
-     "read": "2026-11-01T02:12:03Z"
+     "n": 3,
+     "read": "2026-11-08T06:28:15Z"
     }
    ],
    "saved_lines": [],
@@ -708,28 +1032,28 @@
   }
  },
  "started": "2026-11-01T02:11:23Z",
- "fers_sha256": "1d3be980987c5604baf37748b3ca9a1678cdf8148df6a1b7d1bb477ef6d36a02",
- "live_rows": 15,
- "skipped_rows": 80,
+ "fers_sha256": "dd9b25c120fcdd2aaeeb51d9fcb9b4298950b559c9092594c67f6d052b8fd130",
+ "live_rows": 26,
+ "skipped_rows": 100,
  "rules": {
   "trail_buffer_m": 30.48,
   "small_across_m": 45.72,
   "moved_m": 200.0,
   "size_tol": 0.25
  },
- "updated": "2026-11-01T12:15:39Z",
+ "updated": "2026-11-08T06:28:16Z",
  "complete": true,
  "summary": {
-  "rows": 15,
+  "rows": 26,
   "verdicts": {
-   "CONFIRMED": 10,
+   "CONFIRMED": 11,
    "SHRUNK": 2,
    "GREW": 0,
    "MOVED": 1,
    "GONE": 0,
    "RECORD CHANGED": 0,
    "SOURCE DOWN": 0,
-   "NOT CHECKED": 2
+   "NOT CHECKED": 12
   },
   "flags": {
    "small overlap (under 50 yd across)": 6,
@@ -745,6 +1069,7 @@
   "data/ca-key/CA-NS.json",
   "data/ca-key/CA-NT.json",
   "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-ON.json",
   "data/ca-key/CA-PE.json",
   "data/ca-key/CA-QC.json",
   "data/ca-key/CA-SI.json",
@@ -777,5 +1102,8 @@
   "data/us-key/US-MO.json",
   "data/us-key/US-MS.json"
  ],
- "requests_this_run": 1030
+ "requests_this_run": 820,
+ "notes": [
+  "2026-11-08: the 2-fer file changed since this check started"
+ ]
 }

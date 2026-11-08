@@ -1100,24 +1100,299 @@
     32.948546,
     -87.403695
    ]
+  },
+  "US-10428+US-3694@area@34.931,-86.153": {
+   "id": "US-10428+US-3694@area@34.931,-86.153",
+   "area": "US-AL",
+   "refs": [
+    "US-10428",
+    "US-3694"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at any part of the spot: could be private land under the designations",
+   "stored_acres": 68.2,
+   "stored_wide_m": 454,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-08T06:21:45Z",
+   "layers": [
+    {
+     "ref": "US-10428",
+     "layer": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T06:21:47Z"
+    },
+    {
+     "ref": "US-3694",
+     "layer": "https://conservationgis.alabama.gov/adcnrweb/rest/services/WildlifeManagementAreas/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:21:50Z"
+    },
+    {
+     "ref": "US-3694",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "5 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T06:21:51Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 67.39,
+   "live_acres": 67.61,
+   "kept_pct": 100.0,
+   "size_pct": 0.3,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 463.3,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 67.6 ac vs 67.4 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.930487,
+    -86.152169
+   ]
+  },
+  "US-13081+US-6460@area@32.509,-86.244": {
+   "id": "US-13081+US-6460@area@32.509,-86.244",
+   "area": "US-AL",
+   "refs": [
+    "US-13081",
+    "US-6460"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 259.1,
+   "stored_wide_m": 567,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-08T06:21:51Z",
+   "layers": [
+    {
+     "ref": "US-13081",
+     "layer": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:21:51Z"
+    },
+    {
+     "ref": "US-6460",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:21:53Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 256.43,
+   "live_acres": 255.96,
+   "kept_pct": 100.0,
+   "size_pct": -0.2,
+   "moved_m": 3,
+   "gap_m": 0,
+   "wide_m": 566.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 256.0 ac vs 256.4 ac stored (-0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    32.509082,
+    -86.244592
+   ]
+  },
+  "US-3683+US-4450+US-4595@area@33.709,-85.655": {
+   "id": "US-3683+US-4450+US-4595@area@33.709,-85.655",
+   "area": "US-AL",
+   "refs": [
+    "US-3683",
+    "US-4450",
+    "US-4595"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 6.6,
+   "stored_wide_m": 25,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-08T06:21:54Z",
+   "layers": [
+    {
+     "ref": "US-3683",
+     "layer": "https://conservationgis.alabama.gov/adcnrweb/rest/services/WildlifeManagementAreas/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:21:54Z"
+    },
+    {
+     "ref": "US-4450",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:21:55Z"
+    },
+    {
+     "ref": "US-4595",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:21:57Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 4.89,
+   "live_acres": 4.75,
+   "kept_pct": 100.0,
+   "size_pct": -2.8,
+   "moved_m": 4,
+   "gap_m": 0,
+   "wide_m": 18.0,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 4.8 ac vs 4.9 ac stored (-3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    33.716244,
+    -85.651144
+   ]
+  },
+  "US-3697+US-4580@trail@32.267,-86.696": {
+   "id": "US-3697+US-4580@trail@32.267,-86.696",
+   "area": "US-AL",
+   "refs": [
+    "US-3697",
+    "US-4580"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 20.18,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-08T06:21:58Z",
+   "layers": [
+    {
+     "ref": "US-3697",
+     "layer": "https://conservationgis.alabama.gov/adcnrweb/rest/services/WildlifeManagementAreas/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:21:58Z"
+    },
+    {
+     "ref": "US-3697",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "4 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:21:59Z"
+    },
+    {
+     "ref": "US-3697",
+     "layer": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:22:00Z"
+    },
+    {
+     "ref": "US-4580",
+     "layer": "saved copy US-4580.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    }
+   ],
+   "saved_lines": [
+    "US-4580"
+   ],
+   "live_stretch_acres": 18.89,
+   "stored_shape_acres": 18.74,
+   "live_acres": 18.89,
+   "kept_pct": 99.8,
+   "size_pct": 0.8,
+   "moved_m": 336,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 18.9 ac vs 18.7 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    32.266043,
+    -86.693055
+   ]
+  },
+  "US-9876+US-9880@same land@34.842,-85.837": {
+   "id": "US-9876+US-9880@same land@34.842,-85.837",
+   "area": "US-AL",
+   "refs": [
+    "US-9876",
+    "US-9880"
+   ],
+   "kind": "same land",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32616,
+   "checked_at": "2026-11-08T06:22:01Z",
+   "layers": [
+    {
+     "ref": "US-9876",
+     "layer": "https://conservationgis.alabama.gov/adcnrweb/rest/services/WildlifeManagementAreas/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T06:22:02Z"
+    },
+    {
+     "ref": "US-9876",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T06:22:03Z"
+    },
+    {
+     "ref": "US-9880",
+     "layer": "https://conservationgis.alabama.gov/adcnrweb/rest/services/WildlifeManagementAreas/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:22:04Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 3428.84,
+   "live_acres": 3430.24,
+   "kept_pct": 99.9,
+   "size_pct": 0.0,
+   "moved_m": 1214,
+   "gap_m": 0,
+   "wide_m": 1845.7,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3430.2 ac vs 3428.8 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    34.851236,
+    -85.843811
+   ]
   }
  },
  "started": "2026-11-01T11:45:07Z",
- "fers_sha256": "167974671e872d559b1ac7ac8039b10f40a293348ed438fcdf20839fe3b4b4d3",
- "live_rows": 21,
- "skipped_rows": 56,
+ "fers_sha256": "9380b991b719ec709e6e585cebe0e2b252c4b553e55ba823b1be5c3dd658aef9",
+ "live_rows": 26,
+ "skipped_rows": 63,
  "rules": {
   "trail_buffer_m": 30.48,
   "small_across_m": 45.72,
   "moved_m": 200.0,
   "size_tol": 0.25
  },
- "updated": "2026-11-01T12:04:59Z",
+ "updated": "2026-11-08T06:22:05Z",
  "complete": true,
  "summary": {
-  "rows": 21,
+  "rows": 26,
   "verdicts": {
-   "CONFIRMED": 19,
+   "CONFIRMED": 24,
    "SHRUNK": 0,
    "GREW": 1,
    "MOVED": 0,
@@ -1127,8 +1402,8 @@
    "NOT CHECKED": 0
   },
   "flags": {
-   "small overlap (under 50 yd across)": 3,
-   "trail line from the club saved copy (not re-read live)": 2
+   "small overlap (under 50 yd across)": 4,
+   "trail line from the club saved copy (not re-read live)": 3
   }
  },
  "key_files": [
@@ -1140,6 +1415,7 @@
   "data/ca-key/CA-NS.json",
   "data/ca-key/CA-NT.json",
   "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-ON.json",
   "data/ca-key/CA-PE.json",
   "data/ca-key/CA-QC.json",
   "data/ca-key/CA-SI.json",
@@ -1149,5 +1425,8 @@
   "data/us-key/US-AK.json",
   "data/us-key/US-AL.json"
  ],
- "requests_this_run": 3
+ "requests_this_run": 242,
+ "notes": [
+  "2026-11-08: the 2-fer file changed since this check started"
+ ]
 }

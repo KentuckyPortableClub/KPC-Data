@@ -1,6 +1,6 @@
 # 2-fer accuracy check: CA-NB
 
-Run 2026-11-08T05:35:34Z → 2026-11-08T05:59:06Z (UTC) · tool 0.1.0 (2026-10-31) · complete
+Run 2026-11-08T05:35:34Z → 2026-11-08T06:17:44Z (UTC) · tool 0.1.0 (2026-10-31) · complete
 Live rows in the file: 409 · checked: 409 · skipped (dropped / merged): 338
 
 | verdict | rows |

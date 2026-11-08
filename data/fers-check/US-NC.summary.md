@@ -1,6 +1,6 @@
 # 2-fer accuracy check: US-NC
 
-Run 2026-11-01T02:14:03Z → 2026-11-01T12:15:40Z (UTC) · tool 0.1.0 (2026-10-31) · complete
+Run 2026-11-01T02:14:03Z → 2026-11-08T06:28:17Z (UTC) · tool 0.1.0 (2026-10-31) · complete
 Live rows in the file: 95 · checked: 95 · skipped (dropped / merged): 806
 
 | verdict | rows |

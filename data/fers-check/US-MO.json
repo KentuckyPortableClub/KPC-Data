@@ -121,104 +121,6 @@
     -90.110861
    ]
   },
-  "US-0788+US-4009+US-6498@area@37.193,-91.155": {
-   "id": "US-0788+US-4009+US-6498@area@37.193,-91.155",
-   "area": "US-MO",
-   "refs": [
-    "US-0788",
-    "US-4009",
-    "US-6498"
-   ],
-   "kind": "area",
-   "stored_status": "not sure: low-confidence outline for Ozark National Wild and Scenic River (check the join)",
-   "stored_acres": 12.8,
-   "stored_wide_m": 45,
-   "utm_epsg": 32615,
-   "checked_at": "2026-11-01T02:07:56Z",
-   "layers": [
-    {
-     "ref": "US-0788",
-     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:07:57Z"
-    },
-    {
-     "ref": "US-0788",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:07:58Z"
-    },
-    {
-     "ref": "US-0788",
-     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/3",
-     "how": "3 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:08:00Z"
-    },
-    {
-     "ref": "US-0788",
-     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:08:01Z"
-    },
-    {
-     "ref": "US-4009",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:08:02Z"
-    },
-    {
-     "ref": "US-6498",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:08:04Z"
-    },
-    {
-     "ref": "US-6498",
-     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:08:05Z"
-    },
-    {
-     "ref": "US-6498",
-     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/3",
-     "how": "2 record id(s)",
-     "n": 0,
-     "read": "2026-11-01T02:08:07Z"
-    },
-    {
-     "ref": "US-6498",
-     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:08:08Z"
-    }
-   ],
-   "saved_lines": [],
-   "stored_shape_acres": 12.11,
-   "live_acres": 11.23,
-   "kept_pct": 100.0,
-   "size_pct": -7.2,
-   "moved_m": 60,
-   "gap_m": 0,
-   "wide_m": 41.5,
-   "flags": [
-    "small overlap (under 50 yd across)"
-   ],
-   "size_vs": "stored shape",
-   "verdict": "CONFIRMED",
-   "why": "live overlap 11.2 ac vs 12.1 ac stored (-7%), 100% of the stored overlap still inside (10 m tolerance)",
-   "live_center": [
-    37.192364,
-    -91.144539
-   ]
-  },
   "US-0788+US-4009@area@37.125,-91.194": {
    "id": "US-0788+US-4009@area@37.125,-91.194",
    "area": "US-MO",
@@ -284,76 +186,6 @@
    "live_center": [
     37.124738,
     -91.194056
-   ]
-  },
-  "US-0788+US-4492@area@37.044,-91.252": {
-   "id": "US-0788+US-4492@area@37.044,-91.252",
-   "area": "US-MO",
-   "refs": [
-    "US-0788",
-    "US-4492"
-   ],
-   "kind": "area",
-   "stored_status": "very tight: could be map error: check both official maps on the ground",
-   "stored_acres": 7.9,
-   "stored_wide_m": 25,
-   "utm_epsg": 32615,
-   "checked_at": "2026-11-01T02:08:11Z",
-   "layers": [
-    {
-     "ref": "US-0788",
-     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:08:11Z"
-    },
-    {
-     "ref": "US-0788",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:08:11Z"
-    },
-    {
-     "ref": "US-0788",
-     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/3",
-     "how": "3 record id(s)",
-     "n": 0,
-     "read": "2026-11-01T02:08:12Z"
-    },
-    {
-     "ref": "US-0788",
-     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:08:12Z"
-    },
-    {
-     "ref": "US-4492",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:08:13Z"
-    }
-   ],
-   "saved_lines": [],
-   "stored_water_pct": 0,
-   "stored_shape_acres": 4.96,
-   "live_acres": 5.69,
-   "kept_pct": 100.0,
-   "size_pct": 14.6,
-   "moved_m": 618,
-   "gap_m": 0,
-   "wide_m": 28.2,
-   "flags": [
-    "small overlap (under 50 yd across)"
-   ],
-   "size_vs": "stored shape",
-   "verdict": "CONFIRMED",
-   "why": "live overlap 5.7 ac vs 5.0 ac stored (+15%), 100% of the stored overlap still inside (10 m tolerance)",
-   "live_center": [
-    37.043416,
-    -91.236815
    ]
   },
   "US-0788+US-5696@area@37.117,-91.486": {
@@ -622,124 +454,6 @@
    "live_center": [
     37.193833,
     -91.148964
-   ]
-  },
-  "US-0788+US-7836@trail@37.192,-91.203": {
-   "id": "US-0788+US-7836@trail@37.192,-91.203",
-   "area": "US-MO",
-   "refs": [
-    "US-0788",
-    "US-7836"
-   ],
-   "kind": "trail",
-   "stored_status": "candidate",
-   "stored_acres": 27.46,
-   "stored_wide_m": 87.9,
-   "utm_epsg": 32615,
-   "checked_at": "2026-11-01T02:08:29Z",
-   "layers": [
-    {
-     "ref": "US-0788",
-     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:08:30Z"
-    },
-    {
-     "ref": "US-0788",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:08:30Z"
-    },
-    {
-     "ref": "US-0788",
-     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/3",
-     "how": "3 record id(s)",
-     "n": 2,
-     "read": "2026-11-01T02:08:31Z"
-    },
-    {
-     "ref": "US-0788",
-     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:08:31Z"
-    },
-    {
-     "ref": "US-7836",
-     "layer": "saved copy US-7836.json",
-     "how": "club saved official line (not re-read live)",
-     "n": 1,
-     "read": "2026-11-01"
-    }
-   ],
-   "saved_lines": [
-    "US-7836"
-   ],
-   "live_stretch_acres": 106.66,
-   "stored_shape_acres": 25.65,
-   "live_acres": 29.2,
-   "kept_pct": 98.9,
-   "size_pct": 13.9,
-   "moved_m": 391,
-   "gap_m": 0,
-   "wide_m": 103.7,
-   "flags": [
-    "trail line from the club saved copy (not re-read live)"
-   ],
-   "size_vs": "stored shape",
-   "verdict": "CONFIRMED",
-   "why": "live overlap 29.2 ac vs 25.6 ac stored (+14%), 99% of the stored overlap still inside (10 m tolerance)",
-   "live_center": [
-    37.198155,
-    -91.207732
-   ]
-  },
-  "US-0831+US-11015@same land@38.901,-94.530": {
-   "id": "US-0831+US-11015@same land@38.901,-94.530",
-   "area": "US-MO",
-   "refs": [
-    "US-0831",
-    "US-11015"
-   ],
-   "kind": "same land",
-   "stored_status": "candidate",
-   "stored_acres": null,
-   "stored_wide_m": null,
-   "utm_epsg": 32615,
-   "checked_at": "2026-11-01T02:08:31Z",
-   "layers": [
-    {
-     "ref": "US-0831",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:08:31Z"
-    },
-    {
-     "ref": "US-11015",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:08:31Z"
-    }
-   ],
-   "saved_lines": [],
-   "stored_shape_acres": 6.07,
-   "live_acres": 11.06,
-   "kept_pct": 100.0,
-   "size_pct": 82.3,
-   "moved_m": 31,
-   "gap_m": 0,
-   "wide_m": 144.1,
-   "flags": [],
-   "size_vs": "stored shape",
-   "verdict": "GREW",
-   "why": "live overlap is 82% bigger (11.1 ac vs 6.1 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
-   "live_center": [
-    38.901214,
-    -94.53004
    ]
   },
   "US-10211+US-1754@area@37.319,-91.418": {
@@ -1041,68 +755,6 @@
     -92.025024
    ]
   },
-  "US-11138+US-13161@same land@36.594,-93.818": {
-   "id": "US-11138+US-13161@same land@36.594,-93.818",
-   "area": "US-MO",
-   "refs": [
-    "US-11138",
-    "US-13161"
-   ],
-   "kind": "same land",
-   "stored_status": "candidate",
-   "stored_acres": null,
-   "stored_wide_m": null,
-   "utm_epsg": 32615,
-   "checked_at": "2026-11-01T02:08:52Z",
-   "layers": [
-    {
-     "ref": "US-11138",
-     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
-     "how": "1 record id(s)",
-     "n": 0,
-     "read": "2026-11-01T02:08:53Z"
-    },
-    {
-     "ref": "US-11138",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "how": "1 record id(s)",
-     "n": 0,
-     "read": "2026-11-01T02:08:54Z"
-    },
-    {
-     "ref": "US-11138",
-     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
-     "how": "1 record id(s)",
-     "n": 0,
-     "read": "2026-11-01T02:08:55Z"
-    },
-    {
-     "ref": "US-13161",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:08:56Z"
-    },
-    {
-     "ref": "US-13161",
-     "layer": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/3",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:08:58Z"
-    }
-   ],
-   "saved_lines": [],
-   "stored_shape_acres": 79.95,
-   "live_acres": 0.0,
-   "kept_pct": 0.0,
-   "size_pct": null,
-   "moved_m": null,
-   "gap_m": null,
-   "wide_m": 0.0,
-   "flags": [],
-   "verdict": "GONE",
-   "why": "no overlap between the live official outlines near this spot"
-  },
   "US-11138+US-1780@same land@36.597,-93.824": {
    "id": "US-11138+US-1780@same land@36.597,-93.824",
    "area": "US-MO",
@@ -1311,81 +963,6 @@
    "live_center": [
     36.625657,
     -93.793971
-   ]
-  },
-  "US-13161+US-1780@area@36.582,-93.852": {
-   "id": "US-13161+US-1780@area@36.582,-93.852",
-   "area": "US-MO",
-   "refs": [
-    "US-13161",
-    "US-1780"
-   ],
-   "kind": "area",
-   "stored_status": "candidate",
-   "stored_acres": 277.2,
-   "stored_wide_m": 475,
-   "utm_epsg": 32615,
-   "checked_at": "2026-11-01T02:09:14Z",
-   "layers": [
-    {
-     "ref": "US-13161",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:09:14Z"
-    },
-    {
-     "ref": "US-13161",
-     "layer": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/3",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:09:14Z"
-    },
-    {
-     "ref": "US-1780",
-     "layer": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/0",
-     "how": "2 record id(s)",
-     "n": 2,
-     "read": "2026-11-01T02:09:15Z"
-    },
-    {
-     "ref": "US-1780",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:09:15Z"
-    },
-    {
-     "ref": "US-1780",
-     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:09:15Z"
-    },
-    {
-     "ref": "US-1780",
-     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:09:15Z"
-    }
-   ],
-   "saved_lines": [],
-   "stored_water_pct": 1,
-   "stored_shape_acres": 275.09,
-   "live_acres": 88.31,
-   "kept_pct": 0.0,
-   "size_pct": -67.9,
-   "moved_m": 3476,
-   "gap_m": 2525,
-   "wide_m": 462.8,
-   "flags": [],
-   "size_vs": "stored shape",
-   "verdict": "MOVED",
-   "why": "live overlap centre is 3476 m from the stored centre; 0% of the stored overlap is still inside it",
-   "live_center": [
-    36.595003,
-    -93.816952
    ]
   },
   "US-13253+US-3363@same land@39.033,-93.007": {
@@ -2139,61 +1716,6 @@
    "live_center": [
     39.746908,
     -93.22035
-   ]
-  },
-  "US-1787+US-4492@area@36.642,-93.374": {
-   "id": "US-1787+US-4492@area@36.642,-93.374",
-   "area": "US-MO",
-   "refs": [
-    "US-1787",
-    "US-4492"
-   ],
-   "kind": "area",
-   "stored_status": "not sure: owner not known for Table Rock State Park",
-   "stored_acres": 1.8,
-   "stored_wide_m": 25,
-   "utm_epsg": 32615,
-   "checked_at": "2026-11-01T02:10:07Z",
-   "layers": [
-    {
-     "ref": "US-1787",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "how": "2 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:10:07Z"
-    },
-    {
-     "ref": "US-1787",
-     "layer": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/0",
-     "how": "1 record id(s)",
-     "n": 0,
-     "read": "2026-11-01T02:10:08Z"
-    },
-    {
-     "ref": "US-4492",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:10:09Z"
-    }
-   ],
-   "saved_lines": [],
-   "stored_shape_acres": 1.02,
-   "live_acres": 1.12,
-   "kept_pct": 99.5,
-   "size_pct": 9.5,
-   "moved_m": 9,
-   "gap_m": 0,
-   "wide_m": 18.4,
-   "flags": [
-    "small overlap (under 50 yd across)"
-   ],
-   "size_vs": "stored shape",
-   "verdict": "CONFIRMED",
-   "why": "live overlap 1.1 ac vs 1.0 ac stored (+10%), 100% of the stored overlap still inside (10 m tolerance)",
-   "live_center": [
-    36.644503,
-    -93.374081
    ]
   },
   "US-1787+US-4492@area@36.682,-93.571": {
@@ -3449,143 +2971,6 @@
     -91.169881
    ]
   },
-  "US-7836+US-8252@trail@37.549,-90.691": {
-   "id": "US-7836+US-8252@trail@37.549,-90.691",
-   "area": "US-MO",
-   "refs": [
-    "US-7836",
-    "US-8252"
-   ],
-   "kind": "trail",
-   "stored_status": "candidate",
-   "stored_acres": 10.35,
-   "stored_wide_m": 70.0,
-   "utm_epsg": 32615,
-   "checked_at": "2026-11-01T02:11:05Z",
-   "layers": [
-    {
-     "ref": "US-7836",
-     "layer": "saved copy US-7836.json",
-     "how": "club saved official line (not re-read live)",
-     "n": 1,
-     "read": "2026-11-01"
-    },
-    {
-     "ref": "US-8252",
-     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/3",
-     "how": "2 record id(s)",
-     "n": 2,
-     "read": "2026-11-01T02:11:05Z"
-    },
-    {
-     "ref": "US-8252",
-     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:11:06Z"
-    },
-    {
-     "ref": "US-8252",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:11:06Z"
-    },
-    {
-     "ref": "US-8252",
-     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:11:07Z"
-    }
-   ],
-   "saved_lines": [
-    "US-7836"
-   ],
-   "live_stretch_acres": 27.04,
-   "stored_shape_acres": 9.7,
-   "live_acres": 11.42,
-   "kept_pct": 98.0,
-   "size_pct": 17.7,
-   "moved_m": 302,
-   "gap_m": 0,
-   "wide_m": 79.0,
-   "flags": [
-    "trail line from the club saved copy (not re-read live)"
-   ],
-   "size_vs": "stored shape",
-   "verdict": "CONFIRMED",
-   "why": "live overlap 11.4 ac vs 9.7 ac stored (+18%), 98% of the stored overlap still inside (10 m tolerance)",
-   "live_center": [
-    37.568399,
-    -90.695134
-   ]
-  },
-  "US-7836+US-8282@trail@36.948,-90.372": {
-   "id": "US-7836+US-8282@trail@36.948,-90.372",
-   "area": "US-MO",
-   "refs": [
-    "US-7836",
-    "US-8282"
-   ],
-   "kind": "trail",
-   "stored_status": "candidate",
-   "stored_acres": 40.16,
-   "stored_wide_m": 79.9,
-   "utm_epsg": 32615,
-   "checked_at": "2026-11-01T02:11:07Z",
-   "layers": [
-    {
-     "ref": "US-7836",
-     "layer": "saved copy US-7836.json",
-     "how": "club saved official line (not re-read live)",
-     "n": 1,
-     "read": "2026-11-01"
-    },
-    {
-     "ref": "US-8282",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:11:07Z"
-    },
-    {
-     "ref": "US-8282",
-     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:11:08Z"
-    },
-    {
-     "ref": "US-8282",
-     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
-     "how": "1 record id(s)",
-     "n": 1,
-     "read": "2026-11-01T02:11:10Z"
-    }
-   ],
-   "saved_lines": [
-    "US-7836"
-   ],
-   "live_stretch_acres": 94.03,
-   "stored_shape_acres": 37.65,
-   "live_acres": 41.88,
-   "kept_pct": 99.4,
-   "size_pct": 11.2,
-   "moved_m": 1098,
-   "gap_m": 0,
-   "wide_m": 89.4,
-   "flags": [
-    "trail line from the club saved copy (not re-read live)"
-   ],
-   "size_vs": "stored shape",
-   "verdict": "CONFIRMED",
-   "why": "live overlap 41.9 ac vs 37.6 ac stored (+11%), 99% of the stored overlap still inside (10 m tolerance)",
-   "live_center": [
-    36.949885,
-    -90.384481
-   ]
-  },
   "US-8278+US-8284@area@37.865,-93.704": {
    "id": "US-8278+US-8284@area@37.865,-93.704",
    "area": "US-MO",
@@ -3735,35 +3120,2038 @@
     36.667134,
     -93.29449
    ]
+  },
+  "US-0374+US-4579@trail@39.066,-92.940": {
+   "id": "US-0374+US-4579@trail@39.066,-92.940",
+   "area": "US-MO",
+   "refs": [
+    "US-0374",
+    "US-4579"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 5.79,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:25:57Z",
+   "layers": [
+    {
+     "ref": "US-0374",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:25:57Z"
+    },
+    {
+     "ref": "US-4579",
+     "layer": "saved copy US-4579.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    }
+   ],
+   "saved_lines": [
+    "US-4579"
+   ],
+   "live_stretch_acres": 5.79,
+   "stored_shape_acres": 5.58,
+   "live_acres": 5.7,
+   "kept_pct": 60.2,
+   "size_pct": 2.1,
+   "moved_m": 97,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 60% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    39.0661,
+    -92.938861
+   ]
+  },
+  "US-0710+US-9757@trail@37.104,-93.403": {
+   "id": "US-0710+US-9757@trail@37.104,-93.403",
+   "area": "US-MO",
+   "refs": [
+    "US-0710",
+    "US-9757"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 12.55,
+   "stored_wide_m": 72.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:25:58Z",
+   "layers": [
+    {
+     "ref": "US-0710",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:25:59Z"
+    },
+    {
+     "ref": "US-9757",
+     "layer": "saved copy US-9757.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    }
+   ],
+   "saved_lines": [
+    "US-9757"
+   ],
+   "live_stretch_acres": 54.59,
+   "stored_shape_acres": 11.99,
+   "live_acres": 12.67,
+   "kept_pct": 97.1,
+   "size_pct": 5.7,
+   "moved_m": 2554,
+   "gap_m": 0,
+   "wide_m": 64.2,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 12.7 ac vs 12.0 ac stored (+6%), 97% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    37.085782,
+    -93.42131
+   ]
+  },
+  "US-0788+US-4009+US-6498@area@37.193,-91.160": {
+   "id": "US-0788+US-4009+US-6498@area@37.193,-91.160",
+   "area": "US-MO",
+   "refs": [
+    "US-0788",
+    "US-4009",
+    "US-6498"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: low-confidence outline for Ozark National Wild and Scenic River (check the join)",
+   "stored_acres": 12.8,
+   "stored_wide_m": 45,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:26:00Z",
+   "layers": [
+    {
+     "ref": "US-0788",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:01Z"
+    },
+    {
+     "ref": "US-0788",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:03Z"
+    },
+    {
+     "ref": "US-0788",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/3",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:05Z"
+    },
+    {
+     "ref": "US-0788",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:07Z"
+    },
+    {
+     "ref": "US-6498",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:08Z"
+    },
+    {
+     "ref": "US-6498",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:09Z"
+    },
+    {
+     "ref": "US-6498",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T06:26:11Z"
+    },
+    {
+     "ref": "US-6498",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:12Z"
+    }
+   ],
+   "saved_lines": [],
+   "verdict": "NOT CHECKED",
+   "why": "key has no joined official outline for US-4009 (status 'pin')",
+   "flags": []
+  },
+  "US-0788+US-4492@area@37.045,-91.427": {
+   "id": "US-0788+US-4492@area@37.045,-91.427",
+   "area": "US-MO",
+   "refs": [
+    "US-0788",
+    "US-4492"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 17.0,
+   "stored_wide_m": 25,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:26:13Z",
+   "layers": [
+    {
+     "ref": "US-0788",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:13Z"
+    },
+    {
+     "ref": "US-0788",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:13Z"
+    },
+    {
+     "ref": "US-0788",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/3",
+     "how": "3 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T06:26:14Z"
+    },
+    {
+     "ref": "US-0788",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:14Z"
+    },
+    {
+     "ref": "US-4492",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:14Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 9.58,
+   "live_acres": 10.17,
+   "kept_pct": 100.0,
+   "size_pct": 6.2,
+   "moved_m": 157,
+   "gap_m": 0,
+   "wide_m": 13.9,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 10.2 ac vs 9.6 ac stored (+6%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    37.045669,
+    -91.403334
+   ]
+  },
+  "US-0788+US-7836@trail@37.191,-91.203": {
+   "id": "US-0788+US-7836@trail@37.191,-91.203",
+   "area": "US-MO",
+   "refs": [
+    "US-0788",
+    "US-7836"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 29.36,
+   "stored_wide_m": 115.9,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:26:15Z",
+   "layers": [
+    {
+     "ref": "US-0788",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:15Z"
+    },
+    {
+     "ref": "US-0788",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:16Z"
+    },
+    {
+     "ref": "US-0788",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/3",
+     "how": "3 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T06:26:16Z"
+    },
+    {
+     "ref": "US-0788",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:17Z"
+    },
+    {
+     "ref": "US-7836",
+     "layer": "saved copy US-7836.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    }
+   ],
+   "saved_lines": [
+    "US-7836"
+   ],
+   "live_stretch_acres": 106.66,
+   "stored_shape_acres": 27.59,
+   "live_acres": 29.25,
+   "kept_pct": 100.0,
+   "size_pct": 6.0,
+   "moved_m": 341,
+   "gap_m": 0,
+   "wide_m": 104.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 29.3 ac vs 27.6 ac stored (+6%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    37.198158,
+    -91.207737
+   ]
+  },
+  "US-10110+US-9757@trail@36.923,-93.590": {
+   "id": "US-10110+US-9757@trail@36.923,-93.590",
+   "area": "US-MO",
+   "refs": [
+    "US-10110",
+    "US-9757"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 11.06,
+   "stored_wide_m": 64.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:26:17Z",
+   "layers": [
+    {
+     "ref": "US-10110",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:17Z"
+    },
+    {
+     "ref": "US-10110",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:19Z"
+    },
+    {
+     "ref": "US-10110",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:20Z"
+    },
+    {
+     "ref": "US-9757",
+     "layer": "saved copy US-9757.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    }
+   ],
+   "saved_lines": [
+    "US-9757"
+   ],
+   "live_stretch_acres": 13.19,
+   "stored_shape_acres": 10.65,
+   "live_acres": 10.5,
+   "kept_pct": 72.7,
+   "size_pct": -1.3,
+   "moved_m": 119,
+   "gap_m": 0,
+   "wide_m": 61.1,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 73% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    36.923911,
+    -93.588856
+   ]
+  },
+  "US-10165+US-1766@trail@38.703,-91.605": {
+   "id": "US-10165+US-1766@trail@38.703,-91.605",
+   "area": "US-MO",
+   "refs": [
+    "US-10165",
+    "US-1766"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 8.62,
+   "stored_wide_m": 40.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:26:21Z",
+   "layers": [
+    {
+     "ref": "US-10165",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:21Z"
+    },
+    {
+     "ref": "US-10165",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:23Z"
+    },
+    {
+     "ref": "US-10165",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T06:26:24Z"
+    },
+    {
+     "ref": "US-10165",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:25Z"
+    },
+    {
+     "ref": "US-1766",
+     "layer": "saved copy US-1766.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    }
+   ],
+   "saved_lines": [
+    "US-1766"
+   ],
+   "live_stretch_acres": 7.49,
+   "stored_shape_acres": 6.72,
+   "live_acres": 7.49,
+   "kept_pct": 100.0,
+   "size_pct": 11.5,
+   "moved_m": 27,
+   "gap_m": 0,
+   "wide_m": 28.4,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 7.5 ac vs 6.7 ac stored (+12%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.703518,
+    -91.605038
+   ]
+  },
+  "US-10208+US-1766@trail@38.708,-92.331": {
+   "id": "US-10208+US-1766@trail@38.708,-92.331",
+   "area": "US-MO",
+   "refs": [
+    "US-10208",
+    "US-1766"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 16.07,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:26:26Z",
+   "layers": [
+    {
+     "ref": "US-10208",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:26Z"
+    },
+    {
+     "ref": "US-10208",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:27Z"
+    },
+    {
+     "ref": "US-10208",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:28Z"
+    },
+    {
+     "ref": "US-1766",
+     "layer": "saved copy US-1766.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    }
+   ],
+   "saved_lines": [
+    "US-1766"
+   ],
+   "live_stretch_acres": 14.93,
+   "stored_shape_acres": 14.89,
+   "live_acres": 14.93,
+   "kept_pct": 100.0,
+   "size_pct": 0.3,
+   "moved_m": 543,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 14.9 ac vs 14.9 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.711189,
+    -92.335212
+   ]
+  },
+  "US-10583+US-1766@trail@38.575,-93.487": {
+   "id": "US-10583+US-1766@trail@38.575,-93.487",
+   "area": "US-MO",
+   "refs": [
+    "US-10583",
+    "US-1766"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 5.6,
+   "stored_wide_m": 28.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:26:29Z",
+   "layers": [
+    {
+     "ref": "US-10583",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:29Z"
+    },
+    {
+     "ref": "US-10583",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:30Z"
+    },
+    {
+     "ref": "US-10583",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:31Z"
+    },
+    {
+     "ref": "US-1766",
+     "layer": "saved copy US-1766.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    }
+   ],
+   "saved_lines": [
+    "US-1766"
+   ],
+   "live_stretch_acres": 5.18,
+   "stored_shape_acres": 4.68,
+   "live_acres": 5.18,
+   "kept_pct": 100.0,
+   "size_pct": 10.6,
+   "moved_m": 85,
+   "gap_m": 0,
+   "wide_m": 25.9,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 5.2 ac vs 4.7 ac stored (+11%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.578395,
+    -93.483077
+   ]
+  },
+  "US-11015+US-4579@trail@39.094,-94.414": {
+   "id": "US-11015+US-4579@trail@39.094,-94.414",
+   "area": "US-MO",
+   "refs": [
+    "US-11015",
+    "US-4579"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 0.7,
+   "stored_wide_m": 50.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:26:32Z",
+   "layers": [
+    {
+     "ref": "US-11015",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:32Z"
+    },
+    {
+     "ref": "US-4579",
+     "layer": "saved copy US-4579.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    }
+   ],
+   "saved_lines": [
+    "US-4579"
+   ],
+   "live_stretch_acres": 0.78,
+   "stored_shape_acres": 0.55,
+   "live_acres": 0.78,
+   "kept_pct": 100.0,
+   "size_pct": 42.1,
+   "moved_m": 18,
+   "gap_m": 0,
+   "wide_m": 51.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 42% bigger (0.8 ac vs 0.5 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    39.094061,
+    -94.414296
+   ]
+  },
+  "US-11138+US-4492@area@36.565,-93.805": {
+   "id": "US-11138+US-4492@area@36.565,-93.805",
+   "area": "US-MO",
+   "refs": [
+    "US-11138",
+    "US-4492"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 9.1,
+   "stored_wide_m": 25,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:26:33Z",
+   "layers": [
+    {
+     "ref": "US-11138",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:33Z"
+    },
+    {
+     "ref": "US-11138",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:34Z"
+    },
+    {
+     "ref": "US-11138",
+     "layer": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:37Z"
+    },
+    {
+     "ref": "US-11138",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:38Z"
+    },
+    {
+     "ref": "US-4492",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:39Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 3.23,
+   "live_acres": 3.02,
+   "kept_pct": 100.0,
+   "size_pct": -6.5,
+   "moved_m": 885,
+   "gap_m": 0,
+   "wide_m": 26.1,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.0 ac vs 3.2 ac stored (-6%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.565093,
+    -93.80523
+   ]
+  },
+  "US-11370+US-4492@area@36.951,-92.303": {
+   "id": "US-11370+US-4492@area@36.951,-92.303",
+   "area": "US-MO",
+   "refs": [
+    "US-11370",
+    "US-4492"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 2.7,
+   "stored_wide_m": 25,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:26:40Z",
+   "layers": [
+    {
+     "ref": "US-11370",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:40Z"
+    },
+    {
+     "ref": "US-11370",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:41Z"
+    },
+    {
+     "ref": "US-11370",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:42Z"
+    },
+    {
+     "ref": "US-4492",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:43Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2.26,
+   "live_acres": 2.0,
+   "kept_pct": 100.0,
+   "size_pct": -11.4,
+   "moved_m": 7,
+   "gap_m": 0,
+   "wide_m": 22.7,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.0 ac vs 2.3 ac stored (-11%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.951385,
+    -92.30316
+   ]
+  },
+  "US-13161+US-1780@area@36.595,-93.817": {
+   "id": "US-13161+US-1780@area@36.595,-93.817",
+   "area": "US-MO",
+   "refs": [
+    "US-13161",
+    "US-1780"
+   ],
+   "kind": "area",
+   "stored_status": "candidate",
+   "stored_acres": 89.3,
+   "stored_wide_m": 465,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:26:44Z",
+   "layers": [
+    {
+     "ref": "US-13161",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:44Z"
+    },
+    {
+     "ref": "US-13161",
+     "layer": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:46Z"
+    },
+    {
+     "ref": "US-1780",
+     "layer": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:48Z"
+    },
+    {
+     "ref": "US-1780",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:49Z"
+    },
+    {
+     "ref": "US-1780",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T06:26:50Z"
+    },
+    {
+     "ref": "US-1780",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T06:26:50Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_water_pct": 0,
+   "stored_shape_acres": 88.1,
+   "live_acres": 88.31,
+   "kept_pct": 100.0,
+   "size_pct": 0.2,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 462.8,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 88.3 ac vs 88.1 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.595003,
+    -93.816952
+   ]
+  },
+  "US-1762+US-9757@trail@38.167,-93.381": {
+   "id": "US-1762+US-9757@trail@38.167,-93.381",
+   "area": "US-MO",
+   "refs": [
+    "US-1762",
+    "US-9757"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 120.91,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:26:50Z",
+   "layers": [
+    {
+     "ref": "US-1762",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:51Z"
+    },
+    {
+     "ref": "US-1762",
+     "layer": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T06:26:52Z"
+    },
+    {
+     "ref": "US-9757",
+     "layer": "saved copy US-9757.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    }
+   ],
+   "saved_lines": [
+    "US-9757"
+   ],
+   "live_stretch_acres": 123.71,
+   "stored_shape_acres": 114.77,
+   "live_acres": 114.99,
+   "kept_pct": 84.9,
+   "size_pct": 0.2,
+   "moved_m": 4901,
+   "gap_m": 0,
+   "wide_m": 61.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 115.0 ac vs 114.8 ac stored (+0%), 85% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.133593,
+    -93.417088
+   ]
+  },
+  "US-1762+US-9757@trail@38.300,-93.357": {
+   "id": "US-1762+US-9757@trail@38.300,-93.357",
+   "area": "US-MO",
+   "refs": [
+    "US-1762",
+    "US-9757"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": 29.53,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:26:53Z",
+   "layers": [
+    {
+     "ref": "US-1762",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:53Z"
+    },
+    {
+     "ref": "US-1762",
+     "layer": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T06:26:54Z"
+    },
+    {
+     "ref": "US-9757",
+     "layer": "saved copy US-9757.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    }
+   ],
+   "saved_lines": [
+    "US-9757"
+   ],
+   "live_stretch_acres": 40.22,
+   "stored_shape_acres": 28.63,
+   "live_acres": 27.56,
+   "kept_pct": 72.2,
+   "size_pct": -3.7,
+   "moved_m": 1567,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 72% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    38.286067,
+    -93.3613
+   ]
+  },
+  "US-1766+US-3349@trail@38.780,-90.481": {
+   "id": "US-1766+US-3349@trail@38.780,-90.481",
+   "area": "US-MO",
+   "refs": [
+    "US-1766",
+    "US-3349"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 0.2,
+   "stored_wide_m": 20.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:26:54Z",
+   "layers": [
+    {
+     "ref": "US-1766",
+     "layer": "saved copy US-1766.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    },
+    {
+     "ref": "US-3349",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T06:26:54Z"
+    },
+    {
+     "ref": "US-3349",
+     "layer": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:56Z"
+    }
+   ],
+   "saved_lines": [
+    "US-1766"
+   ],
+   "live_stretch_acres": 0.14,
+   "stored_shape_acres": 0.1,
+   "live_acres": 0.14,
+   "kept_pct": 100.0,
+   "size_pct": 32.8,
+   "moved_m": 28,
+   "gap_m": 0,
+   "wide_m": 13.3,
+   "flags": [
+    "small overlap (under 50 yd across)",
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "GREW",
+   "why": "live overlap is 33% bigger (0.1 ac vs 0.1 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "live_center": [
+    38.780013,
+    -90.481052
+   ]
+  },
+  "US-1766+US-4579@trail@38.987,-92.755": {
+   "id": "US-1766+US-4579@trail@38.987,-92.755",
+   "area": "US-MO",
+   "refs": [
+    "US-1766",
+    "US-4579"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:26:56Z",
+   "layers": [
+    {
+     "ref": "US-1766",
+     "layer": "saved copy US-1766.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    },
+    {
+     "ref": "US-4579",
+     "layer": "saved copy US-4579.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    }
+   ],
+   "saved_lines": [
+    "US-1766",
+    "US-4579"
+   ],
+   "live_stretch_acres": 1.46,
+   "stored_shape_acres": 2.99,
+   "live_acres": 1.46,
+   "kept_pct": 62.3,
+   "size_pct": -51.2,
+   "moved_m": 14,
+   "gap_m": 0,
+   "wide_m": 60.8,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 51% smaller (1.5 ac vs 3.0 ac stored)",
+   "live_center": [
+    38.98734,
+    -92.754678
+   ]
+  },
+  "US-1766+US-6492@trail@38.676,-90.714": {
+   "id": "US-1766+US-6492@trail@38.676,-90.714",
+   "area": "US-MO",
+   "refs": [
+    "US-1766",
+    "US-6492"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 147.57,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:26:56Z",
+   "layers": [
+    {
+     "ref": "US-1766",
+     "layer": "saved copy US-1766.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    },
+    {
+     "ref": "US-6492",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:57Z"
+    },
+    {
+     "ref": "US-6492",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T06:26:58Z"
+    },
+    {
+     "ref": "US-6492",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/3",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:26:59Z"
+    },
+    {
+     "ref": "US-6492",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:00Z"
+    }
+   ],
+   "saved_lines": [
+    "US-1766"
+   ],
+   "live_stretch_acres": 138.6,
+   "stored_shape_acres": 137.03,
+   "live_acres": 138.6,
+   "kept_pct": 100.0,
+   "size_pct": 1.1,
+   "moved_m": 731,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 138.6 ac vs 137.0 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.671789,
+    -90.721339
+   ]
+  },
+  "US-1766+US-6517@trail@38.980,-92.581": {
+   "id": "US-1766+US-6517@trail@38.980,-92.581",
+   "area": "US-MO",
+   "refs": [
+    "US-1766",
+    "US-6517"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 19.34,
+   "stored_wide_m": 52.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:27:01Z",
+   "layers": [
+    {
+     "ref": "US-1766",
+     "layer": "saved copy US-1766.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    },
+    {
+     "ref": "US-6517",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:01Z"
+    },
+    {
+     "ref": "US-6517",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:02Z"
+    }
+   ],
+   "saved_lines": [
+    "US-1766"
+   ],
+   "live_stretch_acres": 17.24,
+   "stored_shape_acres": 16.64,
+   "live_acres": 17.24,
+   "kept_pct": 100.0,
+   "size_pct": 3.6,
+   "moved_m": 262,
+   "gap_m": 0,
+   "wide_m": 46.2,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 17.2 ac vs 16.6 ac stored (+4%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.980522,
+    -92.5833
+   ]
+  },
+  "US-1766+US-6524@trail@38.882,-92.441": {
+   "id": "US-1766+US-6524@trail@38.882,-92.441",
+   "area": "US-MO",
+   "refs": [
+    "US-1766",
+    "US-6524"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 46.09,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:27:03Z",
+   "layers": [
+    {
+     "ref": "US-1766",
+     "layer": "saved copy US-1766.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    },
+    {
+     "ref": "US-6524",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:03Z"
+    },
+    {
+     "ref": "US-6524",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:04Z"
+    },
+    {
+     "ref": "US-6524",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:05Z"
+    }
+   ],
+   "saved_lines": [
+    "US-1766"
+   ],
+   "live_stretch_acres": 43.21,
+   "stored_shape_acres": 42.36,
+   "live_acres": 43.21,
+   "kept_pct": 100.0,
+   "size_pct": 2.0,
+   "moved_m": 1993,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 43.2 ac vs 42.4 ac stored (+2%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.86606,
+    -92.431079
+   ]
+  },
+  "US-1766+US-7666@trail@38.996,-92.632": {
+   "id": "US-1766+US-7666@trail@38.996,-92.632",
+   "area": "US-MO",
+   "refs": [
+    "US-1766",
+    "US-7666"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 35.58,
+   "stored_wide_m": 65.9,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:27:06Z",
+   "layers": [
+    {
+     "ref": "US-1766",
+     "layer": "saved copy US-1766.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    },
+    {
+     "ref": "US-7666",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:06Z"
+    },
+    {
+     "ref": "US-7666",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:07Z"
+    },
+    {
+     "ref": "US-7666",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Boundaries/MDC_Administrative_Boundaries/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:10Z"
+    },
+    {
+     "ref": "US-7666",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:11Z"
+    }
+   ],
+   "saved_lines": [
+    "US-1766"
+   ],
+   "live_stretch_acres": 32.63,
+   "stored_shape_acres": 32.6,
+   "live_acres": 32.63,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 733,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 32.6 ac vs 32.6 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    38.993766,
+    -92.624165
+   ]
+  },
+  "US-1766+US-9753@trail@38.541,-93.520": {
+   "id": "US-1766+US-9753@trail@38.541,-93.520",
+   "area": "US-MO",
+   "refs": [
+    "US-1766",
+    "US-9753"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:27:12Z",
+   "layers": [
+    {
+     "ref": "US-1766",
+     "layer": "saved copy US-1766.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    },
+    {
+     "ref": "US-9753",
+     "layer": "saved copy US-9753.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    }
+   ],
+   "saved_lines": [
+    "US-1766",
+    "US-9753"
+   ],
+   "live_stretch_acres": 0.79,
+   "stored_shape_acres": 2.31,
+   "live_acres": 0.79,
+   "kept_pct": 49.7,
+   "size_pct": -65.7,
+   "moved_m": 2,
+   "gap_m": 0,
+   "wide_m": 58.6,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 66% smaller (0.8 ac vs 2.3 ac stored)",
+   "live_center": [
+    38.540692,
+    -93.519672
+   ]
+  },
+  "US-1780+US-4492@area@36.569,-93.830": {
+   "id": "US-1780+US-4492@area@36.569,-93.830",
+   "area": "US-MO",
+   "refs": [
+    "US-1780",
+    "US-4492"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 19.0,
+   "stored_wide_m": 25,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:27:12Z",
+   "layers": [
+    {
+     "ref": "US-1780",
+     "layer": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T06:27:12Z"
+    },
+    {
+     "ref": "US-1780",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:13Z"
+    },
+    {
+     "ref": "US-1780",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:13Z"
+    },
+    {
+     "ref": "US-1780",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:13Z"
+    },
+    {
+     "ref": "US-4492",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:14Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 3.23,
+   "live_acres": 3.02,
+   "kept_pct": 100.0,
+   "size_pct": -6.4,
+   "moved_m": 1829,
+   "gap_m": 0,
+   "wide_m": 26.1,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 3.0 ac vs 3.2 ac stored (-6%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.565093,
+    -93.80523
+   ]
+  },
+  "US-3335+US-4579@trail@39.066,-92.946": {
+   "id": "US-3335+US-4579@trail@39.066,-92.946",
+   "area": "US-MO",
+   "refs": [
+    "US-3335",
+    "US-4579"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 14.62,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:27:14Z",
+   "layers": [
+    {
+     "ref": "US-3335",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:15Z"
+    },
+    {
+     "ref": "US-3335",
+     "layer": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/FeatureServer/0",
+     "how": "12 record id(s)",
+     "n": 12,
+     "read": "2026-11-08T06:27:16Z"
+    },
+    {
+     "ref": "US-4579",
+     "layer": "saved copy US-4579.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    }
+   ],
+   "saved_lines": [
+    "US-4579"
+   ],
+   "live_stretch_acres": 14.09,
+   "stored_shape_acres": 13.58,
+   "live_acres": 14.09,
+   "kept_pct": 92.8,
+   "size_pct": 3.7,
+   "moved_m": 408,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 14.1 ac vs 13.6 ac stored (+4%), 93% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.066334,
+    -92.94107
+   ]
+  },
+  "US-4492+US-6491@area@36.999,-91.214": {
+   "id": "US-4492+US-6491@area@36.999,-91.214",
+   "area": "US-MO",
+   "refs": [
+    "US-4492",
+    "US-6491"
+   ],
+   "kind": "area",
+   "stored_status": "very tight: could be map error: check both official maps on the ground",
+   "stored_acres": 3.2,
+   "stored_wide_m": 35,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:27:17Z",
+   "layers": [
+    {
+     "ref": "US-4492",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:17Z"
+    },
+    {
+     "ref": "US-6491",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:18Z"
+    },
+    {
+     "ref": "US-6491",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:19Z"
+    },
+    {
+     "ref": "US-6491",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/3",
+     "how": "4 record id(s)",
+     "n": 4,
+     "read": "2026-11-08T06:27:20Z"
+    },
+    {
+     "ref": "US-6491",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:21Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2.59,
+   "live_acres": 2.26,
+   "kept_pct": 97.8,
+   "size_pct": -12.8,
+   "moved_m": 69,
+   "gap_m": 0,
+   "wide_m": 22.7,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 2.3 ac vs 2.6 ac stored (-13%), 98% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    37.043064,
+    -91.222908
+   ]
+  },
+  "US-4566+US-4576@trail@39.071,-95.782": {
+   "id": "US-4566+US-4576@trail@39.071,-95.782",
+   "area": "US-MO",
+   "refs": [
+    "US-4566",
+    "US-4576"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:27:22Z",
+   "layers": [
+    {
+     "ref": "US-4566",
+     "layer": "saved copy US-4566.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    },
+    {
+     "ref": "US-4576",
+     "layer": "saved copy US-4576.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    }
+   ],
+   "saved_lines": [
+    "US-4566",
+    "US-4576"
+   ],
+   "live_stretch_acres": 2776.84,
+   "stored_shape_acres": 26.21,
+   "live_acres": 26.89,
+   "kept_pct": 57.7,
+   "size_pct": 2.6,
+   "moved_m": 820,
+   "gap_m": 0,
+   "wide_m": 61.2,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 58% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    39.068204,
+    -95.791095
+   ]
+  },
+  "US-4576+US-4579@trail@39.018,-94.455": {
+   "id": "US-4576+US-4579@trail@39.018,-94.455",
+   "area": "US-MO",
+   "refs": [
+    "US-4576",
+    "US-4579"
+   ],
+   "kind": "trail",
+   "stored_status": "not sure: no public owner on the ownership map (PAD-US fee records) at the spot: could be private land under the designations",
+   "stored_acres": null,
+   "stored_wide_m": null,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:27:22Z",
+   "layers": [
+    {
+     "ref": "US-4576",
+     "layer": "saved copy US-4576.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    },
+    {
+     "ref": "US-4579",
+     "layer": "saved copy US-4579.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    }
+   ],
+   "saved_lines": [
+    "US-4576",
+    "US-4579"
+   ],
+   "live_stretch_acres": 7.42,
+   "stored_shape_acres": 11.96,
+   "live_acres": 7.42,
+   "kept_pct": 77.3,
+   "size_pct": -37.9,
+   "moved_m": 1329,
+   "gap_m": 0,
+   "wide_m": 53.4,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 38% smaller (7.4 ac vs 12.0 ac stored)",
+   "live_center": [
+    39.03079,
+    -94.439083
+   ]
+  },
+  "US-4579+US-7512@trail@39.201,-93.593": {
+   "id": "US-4579+US-7512@trail@39.201,-93.593",
+   "area": "US-MO",
+   "refs": [
+    "US-4579",
+    "US-7512"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 9.91,
+   "stored_wide_m": 70.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:27:22Z",
+   "layers": [
+    {
+     "ref": "US-4579",
+     "layer": "saved copy US-4579.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    },
+    {
+     "ref": "US-7512",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:22Z"
+    },
+    {
+     "ref": "US-7512",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:23Z"
+    },
+    {
+     "ref": "US-7512",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:24Z"
+    }
+   ],
+   "saved_lines": [
+    "US-4579"
+   ],
+   "live_stretch_acres": 9.75,
+   "stored_shape_acres": 8.85,
+   "live_acres": 9.75,
+   "kept_pct": 100.0,
+   "size_pct": 10.1,
+   "moved_m": 191,
+   "gap_m": 0,
+   "wide_m": 61.0,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 9.7 ac vs 8.9 ac stored (+10%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    39.201546,
+    -93.590632
+   ]
+  },
+  "US-6491+US-6498@area@37.082,-91.057": {
+   "id": "US-6491+US-6498@area@37.082,-91.057",
+   "area": "US-MO",
+   "refs": [
+    "US-6491",
+    "US-6498"
+   ],
+   "kind": "water-only",
+   "stored_status": "water only: boat or kayak",
+   "stored_acres": 3.0,
+   "stored_wide_m": 37,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:27:25Z",
+   "layers": [
+    {
+     "ref": "US-6491",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:25Z"
+    },
+    {
+     "ref": "US-6491",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T06:27:26Z"
+    },
+    {
+     "ref": "US-6491",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/3",
+     "how": "4 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T06:27:26Z"
+    },
+    {
+     "ref": "US-6491",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:27Z"
+    },
+    {
+     "ref": "US-6498",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:27Z"
+    },
+    {
+     "ref": "US-6498",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:27Z"
+    },
+    {
+     "ref": "US-6498",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T06:27:28Z"
+    },
+    {
+     "ref": "US-6498",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:29Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/9",
+     "how": "USGS NHD water in the window (1=1)",
+     "n": 1,
+     "read": "2026-11-08T06:27:30Z"
+    },
+    {
+     "ref": "water",
+     "layer": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/12",
+     "how": "USGS NHD water in the window (1=1)",
+     "n": 1,
+     "read": "2026-11-08T06:27:30Z"
+    }
+   ],
+   "saved_lines": [],
+   "live_water_pct": 18.5,
+   "stored_water_pct": 33,
+   "stored_shape_acres": 2.33,
+   "live_acres": 0.48,
+   "kept_pct": 56.6,
+   "size_pct": -79.6,
+   "moved_m": 125,
+   "gap_m": 0,
+   "wide_m": 7.2,
+   "flags": [
+    "water-only",
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 80% smaller (0.5 ac vs 2.3 ac stored)",
+   "live_center": [
+    37.082229,
+    -91.056976
+   ]
+  },
+  "US-7836+US-8252@trail@37.567,-90.698": {
+   "id": "US-7836+US-8252@trail@37.567,-90.698",
+   "area": "US-MO",
+   "refs": [
+    "US-7836",
+    "US-8252"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 10.54,
+   "stored_wide_m": 72.0,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:27:30Z",
+   "layers": [
+    {
+     "ref": "US-7836",
+     "layer": "saved copy US-7836.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    },
+    {
+     "ref": "US-8252",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/3",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T06:27:30Z"
+    },
+    {
+     "ref": "US-8252",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:32Z"
+    },
+    {
+     "ref": "US-8252",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:33Z"
+    },
+    {
+     "ref": "US-8252",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:34Z"
+    }
+   ],
+   "saved_lines": [
+    "US-7836"
+   ],
+   "live_stretch_acres": 27.04,
+   "stored_shape_acres": 9.77,
+   "live_acres": 11.55,
+   "kept_pct": 100.0,
+   "size_pct": 18.3,
+   "moved_m": 303,
+   "gap_m": 0,
+   "wide_m": 78.9,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 11.6 ac vs 9.8 ac stored (+18%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    37.5684,
+    -90.695134
+   ]
+  },
+  "US-7836+US-8282@trail@36.948,-90.373": {
+   "id": "US-7836+US-8282@trail@36.948,-90.373",
+   "area": "US-MO",
+   "refs": [
+    "US-7836",
+    "US-8282"
+   ],
+   "kind": "trail",
+   "stored_status": "candidate",
+   "stored_acres": 41.41,
+   "stored_wide_m": 83.9,
+   "utm_epsg": 32615,
+   "checked_at": "2026-11-08T06:27:35Z",
+   "layers": [
+    {
+     "ref": "US-7836",
+     "layer": "saved copy US-7836.json",
+     "how": "club saved official line (not re-read live)",
+     "n": 1,
+     "read": "2026-11-08"
+    },
+    {
+     "ref": "US-8282",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:35Z"
+    },
+    {
+     "ref": "US-8282",
+     "layer": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:36Z"
+    },
+    {
+     "ref": "US-8282",
+     "layer": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T06:27:38Z"
+    }
+   ],
+   "saved_lines": [
+    "US-7836"
+   ],
+   "live_stretch_acres": 94.03,
+   "stored_shape_acres": 38.62,
+   "live_acres": 41.99,
+   "kept_pct": 100.0,
+   "size_pct": 8.7,
+   "moved_m": 1103,
+   "gap_m": 0,
+   "wide_m": 89.4,
+   "flags": [
+    "trail line from the club saved copy (not re-read live)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 42.0 ac vs 38.6 ac stored (+9%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    36.949894,
+    -90.384481
+   ]
   }
  },
  "started": "2026-11-01T02:07:46Z",
- "fers_sha256": "29923f874c787ff77e754a0badeb18facb47ac3759d364628b0faa8c22f79f65",
- "live_rows": 55,
- "skipped_rows": 307,
+ "fers_sha256": "9bb23c2459939420bd152725b893f0a85c8a080d7739f4cc844dd7622bb1a7a3",
+ "live_rows": 77,
+ "skipped_rows": 326,
  "rules": {
   "trail_buffer_m": 30.48,
   "small_across_m": 45.72,
   "moved_m": 200.0,
   "size_tol": 0.25
  },
- "updated": "2026-11-01T12:15:39Z",
+ "updated": "2026-11-08T06:27:38Z",
  "complete": true,
  "summary": {
-  "rows": 55,
+  "rows": 77,
   "verdicts": {
-   "CONFIRMED": 48,
-   "SHRUNK": 1,
-   "GREW": 3,
-   "MOVED": 2,
-   "GONE": 1,
+   "CONFIRMED": 62,
+   "SHRUNK": 9,
+   "GREW": 4,
+   "MOVED": 1,
+   "GONE": 0,
    "RECORD CHANGED": 0,
    "SOURCE DOWN": 0,
-   "NOT CHECKED": 0
+   "NOT CHECKED": 1
   },
   "flags": {
-   "small overlap (under 50 yd across)": 11,
-   "trail line from the club saved copy (not re-read live)": 10
+   "small overlap (under 50 yd across)": 17,
+   "trail line from the club saved copy (not re-read live)": 30,
+   "water-only": 1
   }
  },
  "key_files": [
@@ -3775,6 +5163,7 @@
   "data/ca-key/CA-NS.json",
   "data/ca-key/CA-NT.json",
   "data/ca-key/CA-NU.json",
+  "data/ca-key/CA-ON.json",
   "data/ca-key/CA-PE.json",
   "data/ca-key/CA-QC.json",
   "data/ca-key/CA-SI.json",
@@ -3806,5 +5195,8 @@
   "data/us-key/US-MN.json",
   "data/us-key/US-MO.json"
  ],
- "requests_this_run": 1030
+ "requests_this_run": 782,
+ "notes": [
+  "2026-11-08: the 2-fer file changed since this check started"
+ ]
 }
