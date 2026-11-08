@@ -12,7 +12,7 @@ Updated 2026-11-08. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-GA | 237 | 225 | 104 | **64** | 30 | 22 | 4 | 11 | 0 | 7 |
 | US-AL | 155 | 133 | 33 | **16** | 17 | 56 | 4 | 5 | 0 | 7 |
 | US-SC | 167 | 160 | 18 | **14** | 11 | 112 | 2 | 5 | 0 | 4 |
-| US-FL | 460 | 443 | 84 | **46** | 31 | 280 | 2 | 16 | 0 | 11 |
+| US-FL | 460 | 441 | 83 | **46** | 31 | 279 | 2 | 15 | 0 | 10 |
 | US-MS | 155 | 101 | 7 | **7** | 5 | 71 | 0 | 4 | 0 | 17 |
 | US-IN | 229 | 209 | 85 | **54** | 34 | 35 | 1 | 17 | 0 | 17 |
 | US-IL | 219 | 204 | 91 | **31** | 38 | 40 | 3 | 15 | 0 | 7 |
@@ -707,12 +707,14 @@ You · [www.fws.gov](https://www.fws.gov/refuge/chassahowitzka/about-us)
 - US-4494 De Soto National Forest: ours 532,454 ac vs agency 1.2 million acres (= 1,200,000 ac; 56% off) · cause: agency bigger: our outline may miss a tract · [www.fs.usda.gov](https://www.fs.usda.gov/detail/mississippi/about-forest/districts/?cid=stelprdb5209588) · “l Plain to the upland hardwoods in the northern part of the state, the National Forests in Mississippi covers 1.2 million acres of diverse natural resources and”
 - US-0391 Panther Swamp National Wildlife Refuge: ours 30,790 ac vs agency 40,000 acres (= 40,000 ac; 23% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/panther_swamp/) · “and Cotton's access for some amazing sites to find a variety of game species, but don't stop there! With over 40,000 acres of land, there are plenty of areas fo”
 - US-0388 Mississippi Sandhill Crane National Wildlife Refuge: ours 15,663 ac vs agency 20,000 acres (= 20,000 ac; 22% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/mississippi-sandhill-crane/about-us) · “s the description of 'the rarest bird in North America'. Although the refuge and I-10 were both created, only 20,000 acres of the original crane habitat exist a”
+- US-9847 Clark Creek Natural Area State Park: ours 572 ac vs agency 700 acres (= 700 ac; 18% off) · cause: agency bigger: our outline may miss a tract · [www.mdwfp.com](https://www.mdwfp.com/parks-destinations/park/clark-creek-state-park) · “hwestern Mississippi, is one of the Magnolia State's most beautiful outdoor treasures. Comprised of more than 700 acres, it is highlighted by some 50 waterfalls”
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
 - US-0390 Noxubee National Wildlife Refuge: ours 48,330 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 800 acres, no total words near it) · [www.fws.gov](https://www.fws.gov/refuge/sam-d-hamilton-noxubee/about-us)
 - US-0392 St. Catherine Creek National Wildlife Refuge: ours 26,398 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-0642 Natchez Trace Parkway National Parkway: ours 35,645 ac · cause: whole park compared (POTA lists it in 2 states: {'US-AL': 4118, 'US-MS': 31527})
+- US-12204 Calling Panther State Fishing Lake: ours 1,500 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-12639 Pelahatchie Shore State Recreation Area: ours 60 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 250 acres, no total words near it) · [www.therez.ms.gov](https://www.therez.ms.gov/parks-recreation/hunting/draw-hunt-rules)
 - US-4498 Tombigbee National Forest: ours 67,449 ac · cause: no total-looking sentence: numbers found were parts or other units
 

@@ -123,22 +123,22 @@
   "US-FL": {
    "checked": 460,
    "counts": {
-    "agree": 84,
-    "handover_hints": 16,
+    "agree": 83,
+    "handover_hints": 15,
     "no_page": 0,
-    "no_size": 280,
+    "no_size": 279,
     "off": 46,
     "ours_unknown": 2,
     "parks": 460,
     "retired": 0,
     "unsure": 31,
-    "weak": 11,
-    "with_outline": 443
+    "weak": 10,
+    "with_outline": 441
    },
    "left": 0,
    "parks": 460,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-08"
   },
   "US-GA": {
    "checked": 237,
@@ -217,8 +217,8 @@
    },
    "left": 0,
    "parks": 229,
-   "status": "done",
-   "updated": "2026-11-08"
+   "status": "queued",
+   "updated": "2026-11-01"
   },
   "US-KS": {
    "checked": 145,
@@ -386,19 +386,19 @@
     "agree": 7,
     "handover_hints": 4,
     "no_page": 0,
-    "no_size": 69,
-    "off": 8,
+    "no_size": 71,
+    "off": 7,
     "ours_unknown": 0,
     "parks": 155,
     "retired": 0,
-    "unsure": 6,
-    "weak": 16,
-    "with_outline": 100
+    "unsure": 5,
+    "weak": 17,
+    "with_outline": 101
    },
    "left": 0,
    "parks": 155,
-   "status": "done",
-   "updated": "2026-11-08"
+   "status": "queued",
+   "updated": "2026-11-01"
   },
   "US-NC": {
    "checked": 253,
@@ -583,22 +583,22 @@
   "US-SC": {
    "checked": 167,
    "counts": {
-    "agree": 16,
-    "handover_hints": 4,
+    "agree": 18,
+    "handover_hints": 5,
     "no_page": 3,
-    "no_size": 126,
-    "off": 7,
+    "no_size": 112,
+    "off": 14,
     "ours_unknown": 2,
     "parks": 167,
     "retired": 0,
-    "unsure": 5,
+    "unsure": 11,
     "weak": 4,
-    "with_outline": 159
+    "with_outline": 160
    },
    "left": 0,
    "parks": 167,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-08"
   },
   "US-SD": {
    "checked": 120,
@@ -742,35 +742,56 @@
   }
  },
  "hosts": {
-  "www.alapark.com": 1794248619.2284882
+  "www.alapark.com": 1794248619.2284882,
+  "www.floridastateparks.org": 1794252193.2078493,
+  "www.swfwmd.state.fl.us": 1794252263.334702
  },
  "last": {
   "areas": [
-   "US-IN"
+   "US-FL"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 9,
+   "dropped_queued": 35,
    "errors": 0,
-   "for_person_urls": [],
-   "requests": 22,
-   "rested": 0,
-   "robots": 0,
-   "strikes": 0
+   "for_person": 4,
+   "for_person_urls": [
+    [
+     "https://www.floridastateparks.org/parks-and-trails/little-talbot-island-state-park",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.floridastateparks.org/learn/rules-regulations",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.swfwmd.state.fl.us/recreation/myakka-river-flatford-swamp",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.swfwmd.state.fl.us/recreation/deep-creek-preserve",
+     "HTTP 403 twice"
+    ]
+   ],
+   "requests": 18,
+   "rested": 366,
+   "retry403": 4,
+   "robots": 1,
+   "strikes": 8
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 17,
-   "no_size": 9,
+   "handover_hints": 15,
+   "no_size": 215,
    "ours_unknown": 0,
-   "pages_read": 9,
-   "parks": 9,
+   "pages_read": 1,
+   "parks": 230,
    "retired": 0,
-   "size_agree": 0,
-   "size_off": 0,
-   "size_unsure": 0,
-   "skipped_fresh": 220,
-   "with_outline": 9
+   "size_agree": 8,
+   "size_off": 3,
+   "size_unsure": 4,
+   "skipped_fresh": 230,
+   "with_outline": 230
   },
   "when": "2026-11-08"
  },
@@ -832,7 +853,7 @@
   },
   "https://www.in.gov/dnr/news/": {
    "links": 0,
-   "read": "2026-11-08",
+   "read": "2026-11-01",
    "status": "HTTP 404"
   },
   "https://www.ncparks.gov/news": {
