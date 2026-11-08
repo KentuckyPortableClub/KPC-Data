@@ -2,9 +2,8 @@
 
 KPC-Data key copy vs KPC-Links under the same build stamp (kpc_key_reconcile.py check; fails closed)
 
-- world-key: build W-42371359104 (KPC-Links W-42371359104): ok, 0 unexplained
+- world-key: build W-42410527148 (KPC-Links W-42410527148): ok, 0 unexplained
   - AE.json: KPC-Links 8 outlined, KPC-Data 9; approved adds 1 (label missing 0); unexplained 0
-  - AU.json: KPC-Links 7245 outlined, KPC-Data 8843; approved adds 1598 (label missing 0); unexplained 0
   - BE.json: KPC-Links 164 outlined, KPC-Data 174; approved adds 10 (label missing 0); unexplained 0
   - BZ.json: KPC-Links 53 outlined, KPC-Data 54; approved adds 1 (label missing 0); unexplained 0
   - CD.json: KPC-Links 9 outlined, KPC-Data 13; approved adds 4 (label missing 0); unexplained 0
@@ -17,7 +16,6 @@ KPC-Data key copy vs KPC-Links under the same build stamp (kpc_key_reconcile.py 
   - FO.json: KPC-Links 2 outlined, KPC-Data 3; approved adds 1 (label missing 0); unexplained 0
   - GB.json: KPC-Links 3673 outlined, KPC-Data 3818; approved adds 145 (label missing 0); unexplained 0
   - GR.json: KPC-Links 150 outlined, KPC-Data 254; approved adds 104 (label missing 0); unexplained 0
-  - HU.json: KPC-Links 23 outlined, KPC-Data 27; approved adds 4 (label missing 0); unexplained 0
   - ID.json: KPC-Links 18 outlined, KPC-Data 26; approved adds 8 (label missing 0); unexplained 0
   - IE.json: KPC-Links 103 outlined, KPC-Data 116; approved adds 13 (label missing 0); unexplained 0
   - IT.json: KPC-Links 1919 outlined, KPC-Data 1940; approved adds 21 (label missing 0); unexplained 0
@@ -28,7 +26,6 @@ KPC-Data key copy vs KPC-Links under the same build stamp (kpc_key_reconcile.py 
   - MV.json: KPC-Links 0 outlined, KPC-Data 2; approved adds 2 (label missing 0); unexplained 0
   - MX.json: KPC-Links 141 outlined, KPC-Data 155; approved adds 14 (label missing 0); unexplained 0
   - NC.json: KPC-Links 19 outlined, KPC-Data 21; approved adds 2 (label missing 0); unexplained 0
-  - NO.json: KPC-Links 3044 outlined, KPC-Data 3087; approved adds 43 (label missing 0); unexplained 0
   - NZ.json: KPC-Links 814 outlined, KPC-Data 831; approved adds 17 (label missing 0); unexplained 0
   - PR.json: KPC-Links 41 outlined, KPC-Data 46; approved adds 5 (label missing 0); unexplained 0
   - PT.json: KPC-Links 223 outlined, KPC-Data 233; approved adds 10 (label missing 0); unexplained 0
