@@ -400,3 +400,117 @@ It decides nothing: it ranks. Score 0 = all pass; +3 OUTSIDE / WAY OFF / MISMATC
 | 6 | US-1566 | Cunningham Falls State Park | WAY OFF: The outline is 139.3 times bigger than the official 46 acres (6,410 ac drawn) (+1 more flag). |
 | 6 | US-1601 | Susquehanna State Park | WAY OFF: The outline is 2754.0 times bigger than the official 1 acres (2,754 ac drawn) (+3 more flags). |
 | 6 | US-4770 | Savage River State Forest | SPILL: The outline covers 98% of US-10769 Monroe Run Natural Area, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+
+## US-ME
+
+- parks: 148 (141 with an outline graded, 7 with no outline, 0 with records this tool can't read)
+- pass every test: 35; have flags: 113; source down (retry): 1
+- flags: TINY HOLES 58, STALE CHECK 51, NEAR 35, SLIVERS 17, SELF-INTERSECTION 11, MISMATCH 11, SCATTERED 6, SPILL 5, DUPLICATE 4, OUTSIDE 3, CONFLICT 3, WEAK 3, INVALID 2
+
+| score | ref | park | why |
+|---|---|---|---|
+| 8 | US-8443 | Seboomook Lake Property State Preserve | MISMATCH: The record name 'Seboomook' does not match POTA's name 'Seboomook Lake Property State Preserve' (score 0.50) (+3 more flags). |
+| 8 | US-8492 | Cobscook Bay Wildlife Management Area | CONFLICT: The park is a wma but the record is a state park (+5 more flags). |
+| 5 | US-0341 | Moosehorn National Wildlife Refuge | SPILL: The outline covers 95% of US-2385 Cobscook Bay State Park, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-13572 | Kennebec River Estuary Wildlife Management Area | NEAR: POTA's pin is 10 m outside the outline (+4 more flags). |
+| 5 | US-2381 | Baxter State Park | CONFLICT: The park is a state park but the record is a wma (+2 more flags). |
+| 5 | US-7980 | Fort Baldwin State Historic Site | SPILL: The outline covers 87% of US-7979 Fort Popham State Historic Site, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-8451 | Major Gregory Sanborn Wildlife Management Area | MISMATCH: The record name 'Maj. Gregory Sanborn (Brownfield Bog) Wildlife Management Area' does not match POTA's name 'Major Gregory Sanborn Wildlife Management Area' (score 0.67) (+2 more flags). |
+| 5 | US-9175 | Holeb State Conservation Area | OUTSIDE: POTA's pin is 3.0 km outside the outline (+2 more flags). |
+| 4 | US-0001 | Acadia National Park | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-68.2435671836458 44.3102054542673]; 1 piece(s) under 10 m wide; 3 hole(s) under 100 m2; 51 pieces spread over 69 km (+3 more flags). |
+| 4 | US-0343 | Rachel Carson National Wildlife Refuge | NEAR: POTA's pin is 471 m outside the outline (+3 more flags). |
+
+## US-MI
+
+- parks: 388 (361 with an outline graded, 27 with no outline, 0 with records this tool can't read)
+- pass every test: 254; have flags: 134; source down (retry): 8
+- flags: SELF-INTERSECTION 45, TINY HOLES 41, SLIVERS 26, SPILL 25, NEAR 24, MISMATCH 17, DUPLICATE 17, SCATTERED 5, OUTSIDE 5, OFF 2, CONFLICT 2, FAR 1, WEAK 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 11 | US-0350 | Michigan Wetland Management District | FAR: POTA's pin is 18.1 km outside the outline (+2 more flags). |
+| 8 | US-4263 | Piers Gorge Unit of Menominee River State Recreation Area | MISMATCH: The record name 'Menominee River State Recreation Area' does not match POTA's name 'Piers Gorge Unit of Menominee River State Recreation Area' (score 0.33) (+3 more flags). |
+| 7 | US-4488 | Huron National Forest | SPILL: The outline covers 100% of US-12786 Au Sable National Wild and Scenic River, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4489 | Ottawa National Forest | SPILL: The outline covers 100% of US-10718 Sturgeon River Gorge Wilderness Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4583 | Manistee National Forest | SPILL: The outline covers 91% of US-12796 Pine National Wild and Scenic River, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 6 | US-4264 | Quiver Falls Unit of Menominee River State Recreation Area | MISMATCH: The record name 'Menominee River State Recreation Area' does not match POTA's name 'Quiver Falls Unit of Menominee River State Recreation Area' (score 0.33) (+3 more flags). |
+| 6 | US-4487 | Hiawatha National Forest | SPILL: The outline covers 100% of US-13170 Bay De Noc/Grand Island National Recreation Trail, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-6619 | Bakale Wildlife Management Area | OUTSIDE: POTA's pin is 1.5 km outside the outline (+1 more flag). |
+| 6 | US-6666 | Edger Waterfowl National Wildlife Management Area | MISMATCH: The record name 'Barry County Waterfowl Production Area' does not match POTA's name 'Edger Waterfowl National Wildlife Management Area' (score 0.00) (+1 more flag). |
+| 6 | US-6796 | Tobico Marsh Wildlife Management Area | CONFLICT: The park is a wma but the record is a state park (+1 more flag). |
+
+## US-MN
+
+- parks: 319 (313 with an outline graded, 6 with no outline, 0 with records this tool can't read)
+- pass every test: 103; have flags: 216; source down (retry): 19
+- flags: TINY HOLES 84, STALE CHECK 76, SPILL 53, SELF-INTERSECTION 46, NEAR 35, SCATTERED 33, SLIVERS 28, OFF 26, OUTSIDE 25, MISMATCH 15, WAY OFF 14, FAR 6, WEAK 2, DUPLICATE 2, CONFLICT 2, INVALID 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 11 | US-10725 | St. Croix Savanna SNA Scenic Reserve | FAR: POTA's pin is 303.0 km outside the outline (+2 more flags). |
+| 11 | US-11023 | Egret Island SNA State Conservation Area | FAR: POTA's pin is 136.5 km outside the outline (+2 more flags). |
+| 10 | US-4490 | Chippewa National Forest | OUTSIDE: POTA's pin is 690 m outside the outline (+5 more flags). |
+| 10 | US-4491 | Superior National Forest | OUTSIDE: POTA's pin is 545 m outside the outline (+5 more flags). |
+| 9 | US-0356 | Big Stone Wetland Management District | FAR: POTA's pin is 11.3 km outside the outline (+2 more flags). |
+| 9 | US-0365 | Minnesota Valley Wetland Management District | FAR: POTA's pin is 48.7 km outside the outline (+2 more flags). |
+| 9 | US-11872 | Lost 40 SNA State Natural Area | FAR: POTA's pin is 75.6 km outside the outline (+2 more flags). |
+| 8 | US-0362 | Litchfield Wetland Management District | MISMATCH: The record name 'WRIGHT COUNTY WATERFOWL PRODUCTION AREA OF MN' does not match POTA's name 'Litchfield Wetland Management District' (score 0.00) (+5 more flags). |
+| 8 | US-10723 | Crystal Spring SNA Scenic Reserve | FAR: POTA's pin is 119.3 km outside the outline (+1 more flag). |
+| 8 | US-4786 | Blackduck State Forest | OUTSIDE: POTA's pin is 507 m outside the outline (+3 more flags). |
+
+## US-MO
+
+- parks: 561 (554 with an outline graded, 7 with no outline, 0 with records this tool can't read)
+- pass every test: 446; have flags: 115; source down (retry): 9
+- flags: NEAR 54, TINY HOLES 21, SELF-INTERSECTION 18, OUTSIDE 12, DUPLICATE 10, OFF 8, SLIVERS 6, MISMATCH 5, WEAK 5, SPILL 4, WAY OFF 1, SCATTERED 1, FAR 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 7 | US-0831 | Harry S. Truman Family Farm National Historic Site | MISMATCH: The record name 'Harry S Truman National Historic Site' does not match POTA's name 'Harry S. Truman Family Farm National Historic Site' (score 0.60) (+2 more flags). |
+| 7 | US-4492 | Mark Twain National Forest | OUTSIDE: POTA's pin is 1.1 km outside the outline (+4 more flags). |
+| 6 | US-7984 | St Genevieve (Beauvais House) National Historical Park | MISMATCH: The record name 'Ste. Genevieve National Historical Park' does not match POTA's name 'St Genevieve (Beauvais House) National Historical Park' (score 0.50) (+1 more flag). |
+| 5 | US-10211 | Sunklands State Conservation Area | OUTSIDE: POTA's pin is 696 m outside the outline (+2 more flags). |
+| 5 | US-11015 | Harry S Truman Home National Historical Site | SPILL: The outline covers 100% of US-0831 Harry S. Truman Family Farm National Historic Site, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-7836 | Ozark State Trail | SOURCE DOWN: FAR: POTA's pin is 22.4 km outside the outline. |
+| 4 | US-12406 | Poplar Bluff State Conservation Area | OUTSIDE: POTA's pin is 1.1 km outside the outline (+1 more flag). |
+| 4 | US-6514 | Big Buffalo Creek State Conservation Area | OUTSIDE: POTA's pin is 2.0 km outside the outline (+1 more flag). |
+| 3 | US-0374 | Big Muddy National Wildlife Refuge | OUTSIDE: POTA's pin is 700 m outside the outline. |
+| 3 | US-10387 | Joe Crighton Beach Access State Conservation Area | MISMATCH: The record name 'Crighton (Joe) Access' does not match POTA's name 'Joe Crighton Beach Access State Conservation Area' (score 0.67). |
+
+## US-MS
+
+- parks: 155 (88 with an outline graded, 56 with no outline, 11 with records this tool can't read)
+- pass every test: 103; have flags: 52; source down (retry): 25
+- flags: NEAR 27, SELF-INTERSECTION 23, TINY HOLES 15, SPILL 8, OUTSIDE 4, SCATTERED 4, SLIVERS 3, DUPLICATE 2, MISMATCH 2, CONFLICT 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 7 | US-4493 | Bienville National Forest | SPILL: The outline covers 100% of US-7116 Caney Creek Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4494 | De Soto National Forest | SPILL: The outline covers 100% of US-7106 Leaf River Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4496 | Holly Springs National Forest | SPILL: The outline covers 99% of US-7630 Chewalla Lake State Recreation Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 5 | US-0642 | Natchez Trace Parkway National Parkway | SPILL: The outline covers 30% of US-11883 Emerald Mound National Historical Site, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-4560 | Natchez Trace Trail National Scenic Trail | SPILL: The outline covers 30% of US-11883 Emerald Mound National Historical Site, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 4 | US-12639 | Pelahatchie Shore State Recreation Area | MISMATCH: The record name 'Pelahatchie Recreation Area' does not match POTA's name 'Pelahatchie Shore State Recreation Area' (score 0.50) (+1 more flag). |
+| 4 | US-4495 | Delta National Forest | OUTSIDE: POTA's pin is 808 m outside the outline (+1 more flag). |
+| 4 | US-4498 | Tombigbee National Forest | SPILL: The outline covers 58% of US-7097 Chickasaw Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+| 4 | US-7079 | Twin Oaks Wildlife Management Area | OUTSIDE: POTA's pin is 1.4 km outside the outline (+1 more flag). |
+| 4 | US-7096 | Canal Section Wildlife Management Area | SPILL: The outline covers 62% of US-7130 Aberdeen Lake State Recreation Area, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+
+## US-MT
+
+- parks: 254 (245 with an outline graded, 9 with no outline, 0 with records this tool can't read)
+- pass every test: 180; have flags: 74; source down (retry): 4
+- flags: NEAR 28, SELF-INTERSECTION 27, TINY HOLES 26, SPILL 10, SLIVERS 10, MISMATCH 8, SCATTERED 6, OUTSIDE 4, DUPLICATE 2, OFF 2, WEAK 2, STALE CHECK 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 8 | US-4499 | Beaverhead-Deerlodge National Forest | SPILL: The outline covers 100% of US-12923 Stuart Mill Bay State Fish and Wildlife Area, with no 2-fer row (maybe the wrong record) (+5 more flags). |
+| 8 | US-4502 | Flathead National Forest | OUTSIDE: POTA's pin is 7.3 km outside the outline (+3 more flags). |
+| 6 | US-0399 | Charles M. Russell National Wildlife Refuge | SPILL: The outline covers 100% of US-12912 Rock Creek State Fish and Wildlife Area, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-4500 | Bitterroot National Forest | SPILL: The outline covers 100% of US-4849 Sula State Forest, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-4505 | Kootenai National Forest | SPILL: The outline covers 100% of US-12695 Bull River Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-4507 | Lolo National Forest | SPILL: The outline covers 100% of US-12871 Forks State Fish and Wildlife Area, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 5 | US-12702 | MT Fish Creek Wildlife Management Area | MISMATCH: The record name 'Fish Creek Wildlife Management Area' does not match POTA's name 'MT Fish Creek Wildlife Management Area' (score 0.50) (+2 more flags). |
+| 5 | US-4501 | Custer Gallatin National Forest | SPILL: The outline covers 97% of US-6209 Absaroka-Beartooth Wilderness Area, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-4549 | Upper Missouri River Breaks National Monument | SPILL: The outline covers 100% of US-12941 Judith Landing State Park, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-4844 | Clearwater State Forest | OUTSIDE: POTA's pin is 2.7 km outside the outline (+2 more flags). |

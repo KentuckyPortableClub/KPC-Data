@@ -1,7 +1,8 @@
 {
  "area": "US-MS",
- "built": "2026-11-02",
+ "built": "2026-11-08",
  "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
  "parks": [
   {
    "ref": "US-0382",
@@ -49,10 +50,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 2515.7,
-     "official_acres": 5028.0,
-     "times": 2.0,
+     "official_acres": 2514.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -72,7 +73,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-90.135864698065 34.1091123633495]"
+     "note": "Ring Self-intersection[-90.135864698065 34.1091123633495]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -91,8 +98,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 5,028 acres (2,516 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-90.135864698065 34.1091123633495]."
   },
   {
    "ref": "US-0383",
@@ -140,10 +147,10 @@
      "metres": 4.8
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 9541.6,
-     "official_acres": 19074.0,
-     "times": 2.0,
+     "official_acres": 9537.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -178,8 +185,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 5 m outside the outline (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 5 m outside the outline."
   },
   {
    "ref": "US-0384",
@@ -227,10 +234,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 7686.5,
-     "official_acres": 15334.0,
-     "times": 1.99,
+     "official_acres": 7667.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -251,7 +258,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-88.4082402925856 30.4110872828656]; 2 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-88.4082402925856 30.4110872828656]; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -270,8 +283,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OFF: The outline is 2.0 times smaller than the official 15,334 acres (7,686 ac drawn) (+2 more flags)."
+   "score": 2,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-88.4082402925856 30.4110872828656]; 2 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-0385",
@@ -319,10 +332,10 @@
      "metres": 16.1
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 15490.0,
-     "official_acres": 30969.0,
-     "times": 2.0,
+     "official_acres": 15485.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -357,8 +370,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 16 m outside the outline (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 16 m outside the outline."
   },
   {
    "ref": "US-0386",
@@ -428,10 +441,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 2999.4,
-     "official_acres": 5992.0,
-     "times": 2.0,
+     "official_acres": 2996.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -451,7 +464,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -470,8 +489,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 5,992 acres (2,999 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "TINY HOLES: The shape has problems: 2 hole(s) under 100 m2."
   },
   {
    "ref": "US-0387",
@@ -519,10 +538,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 2365.1,
-     "official_acres": 4722.0,
-     "times": 2.0,
+     "official_acres": 2363.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -542,7 +561,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-90.2621142622685 33.3737194195413]"
+     "note": "Ring Self-intersection[-90.2621142622685 33.3737194195413]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -561,8 +586,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 4,722 acres (2,365 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-90.2621142622685 33.3737194195413]."
   },
   {
    "ref": "US-0388",
@@ -610,10 +635,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 18451.0,
-     "official_acres": 36869.0,
-     "times": 2.0,
+     "official_acres": 18435.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -633,7 +658,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-88.7824230076086 30.5018206090934]"
+     "note": "Ring Self-intersection[-88.7824230076086 30.5018206090934]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -652,8 +683,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 36,869 acres (18,451 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-88.7824230076086 30.5018206090934]."
   },
   {
    "ref": "US-0389",
@@ -701,10 +732,10 @@
      "metres": 31.3
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 7573.8,
-     "official_acres": 15138.0,
-     "times": 2.0,
+     "official_acres": 7569.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -724,7 +755,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "3 hole(s) under 100 m2"
+     "note": "3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -743,8 +780,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "NEAR: POTA's pin is 31 m outside the outline (+2 more flags)."
+   "score": 2,
+   "why": "NEAR: POTA's pin is 31 m outside the outline (+1 more flag)."
   },
   {
    "ref": "US-0390",
@@ -792,10 +829,10 @@
      "metres": 189.3
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 48347.3,
-     "official_acres": 96660.0,
-     "times": 2.0,
+     "official_acres": 48330.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -816,7 +853,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-88.8269134886978 33.240558600853]; 13 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-88.8269134886978 33.240558600853]; 13 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 13,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -835,8 +878,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "NEAR: POTA's pin is 189 m outside the outline (+3 more flags)."
+   "score": 3,
+   "why": "NEAR: POTA's pin is 189 m outside the outline (+2 more flags)."
   },
   {
    "ref": "US-0391",
@@ -884,10 +927,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 33161.9,
-     "official_acres": 66312.0,
-     "times": 2.0,
+     "official_acres": 33156.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -924,8 +967,8 @@
     "record 4205: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 66,312 acres (33,162 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0392",
@@ -973,11 +1016,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 24993.4,
      "official_acres": 49195.0,
-     "times": 1.97,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 24909.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 24,909 ac, all providers added 49,195 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -1011,8 +1056,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 49,195 acres (24,993 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0393",
@@ -1060,10 +1105,10 @@
      "metres": 10.5
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 4192.2,
-     "official_acres": 8372.0,
-     "times": 2.0,
+     "official_acres": 4186.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1098,8 +1143,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 10 m outside the outline (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 10 m outside the outline."
   },
   {
    "ref": "US-0395",
@@ -1147,10 +1192,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 13045.8,
-     "official_acres": 26086.0,
-     "times": 2.0,
+     "official_acres": 13043.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1171,7 +1216,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-90.9753312275476 33.068720661195]; 3 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-90.9753312275476 33.068720661195]; 3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1190,8 +1241,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OFF: The outline is 2.0 times smaller than the official 26,086 acres (13,046 ac drawn) (+2 more flags)."
+   "score": 2,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-90.9753312275476 33.068720661195]; 3 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-0642",
@@ -1251,7 +1302,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-89.9755724943113 32.5252903653566]"
+     "note": "Ring Self-intersection[-89.9755724943113 32.5252903653566]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -1867,7 +1924,7 @@
     }
    },
    "problems": [
-    "SOURCE DOWN: : InvalidSchema"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
    "status": "SOURCE DOWN: retry next run",
    "score": 1,
@@ -3089,7 +3146,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-89.4059919289658 30.2599644616357]"
+     "note": "Ring Self-intersection[-89.4059919289658 30.2599644616357]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3320,7 +3383,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-89.8803022651319 34.1352494521245]"
+     "note": "Ring Self-intersection[-89.8803022651319 34.1352494521245]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3625,7 +3694,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-89.6833571673439 33.8386942078309]"
+     "note": "Ring Self-intersection[-89.6833571673439 33.8386942078309]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3707,7 +3782,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-89.8028667204796 34.43904111851]"
+     "note": "Ring Self-intersection[-89.8028667204796 34.43904111851]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3784,7 +3865,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "26 piece(s) under 10 m wide"
+     "note": "26 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 0,
+      "pieces": 26
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3866,7 +3953,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "6 piece(s) under 10 m wide"
+     "note": "6 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.04,
+      "holes": 0,
+      "pieces": 6
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -4022,7 +4115,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.009,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -4049,76 +4148,53 @@
    "name": "Legion State Park",
    "key_name": "Legion State Park",
    "type": "State Park",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     33.157,
     -89.0423
    ],
-   "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
-   ],
-   "acres_drawn": 431.4,
-   "records": [
-    {
-     "id": "padus#211160",
-     "name": "Legion Lake State Park",
-     "type": "State Park State Park",
-     "category": "Fee",
-     "acres": 431.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=211160&outFields=*&returnGeometry=false&f=html"
-    }
-   ],
-   "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#211160"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 431.4,
-     "official_acres": 431.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Legion State Park",
-     "record_name": "Legion Lake State Park"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "state park",
-     "record_kind": "state park",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 0,
-   "why": "All tests pass."
+   "why": "Nothing could be tested."
   },
   {
    "ref": "US-2546",
@@ -4341,7 +4417,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-89.2416291235881 31.1340768376645]"
+     "note": "Ring Self-intersection[-89.2416291235881 31.1340768376645]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -4476,7 +4558,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-89.6773590236653 32.3158105998063]"
+     "note": "Ring Self-intersection[-89.6773590236653 32.3158105998063]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -4938,7 +5026,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-89.3139325139705 32.2528659427116]; 1 hole(s) under 100 m2; 59 pieces spread over 73 km"
+     "note": "Ring Self-intersection[-89.3139325139705 32.2528659427116]; 1 hole(s) under 100 m2; 59 pieces spread over 73 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -5028,7 +5122,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-88.6762484283343 31.4559619061989]; 6 hole(s) under 100 m2; 94 pieces spread over 156 km"
+     "note": "Ring Self-intersection[-88.6762484283343 31.4559619061989]; 6 hole(s) under 100 m2; 94 pieces spread over 156 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 6,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -5146,7 +5246,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-90.7331954487373 32.943506030888]"
+     "note": "Ring Self-intersection[-90.7331954487373 32.943506030888]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5228,7 +5334,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-89.0972059440943 34.7139031762063]; 2 hole(s) under 100 m2; 104 pieces spread over 147 km"
+     "note": "Ring Self-intersection[-89.0972059440943 34.7139031762063]; 2 hole(s) under 100 m2; 104 pieces spread over 147 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -5318,7 +5430,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-90.6947372679686 31.6077391462777]; 5 hole(s) under 100 m2; 61 pieces spread over 94 km"
+     "note": "Ring Self-intersection[-90.6947372679686 31.6077391462777]; 5 hole(s) under 100 m2; 61 pieces spread over 94 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 5,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5398,7 +5516,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-88.8865285152552 33.9362944580719]"
+     "note": "Ring Self-intersection[-88.8865285152552 33.9362944580719]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -5496,7 +5620,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-89.9755724943113 32.5252903653566]"
+     "note": "Ring Self-intersection[-89.9755724943113 32.5252903653566]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -5696,7 +5826,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6049,7 +6185,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-90.4554009899266 33.2977485101545]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-90.4554009899266 33.2977485101545]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6303,7 +6445,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "6 hole(s) under 100 m2"
+     "note": "6 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 6,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7099,7 +7247,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-89.0594842363315 32.8863967609844]"
+     "note": "Ring Self-intersection[-89.0594842363315 32.8863967609844]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8370,7 +8524,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-88.6313526947625 30.6322184716239]; 139 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-88.6313526947625 30.6322184716239]; 139 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 139,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8637,7 +8797,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8750,7 +8916,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9125,8 +9297,8 @@
      "note": "no record"
     },
     "T5": {
-     "flag": "CAN'T TELL",
-     "note": "source down"
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
      "flag": "NO OUTLINE"
@@ -9140,15 +9312,13 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
-   "problems": [
-    "SOURCE DOWN: : down for this run (failed 3 times)"
-   ],
-   "status": "SOURCE DOWN: retry next run",
+   "problems": [],
+   "status": "graded",
    "score": 0,
-   "why": "SOURCE DOWN: Nothing could be tested."
+   "why": "Nothing could be tested."
   },
   {
    "ref": "US-7120",
@@ -10221,15 +10391,15 @@
      "metres": 1.0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 30.7,
-     "official_acres": 62.0,
-     "times": 2.02,
+     "official_acres": 31.0,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "WEAK",
-     "score": 0.75,
+     "flag": "MISMATCH",
+     "score": 0.667,
      "pota_name": "Pvt. John Allen National Fish Hatchery",
      "record_name": "Private John Allen National Fish Hatchery"
     },
@@ -10259,8 +10429,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "NEAR: POTA's pin is 1 m outside the outline (+2 more flags)."
+   "score": 4,
+   "why": "MISMATCH: The record name 'Private John Allen National Fish Hatchery' does not match POTA's name 'Pvt. John Allen National Fish Hatchery' (score 0.67) (+1 more flag)."
   },
   {
    "ref": "US-7633",
