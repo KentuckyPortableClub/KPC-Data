@@ -15,21 +15,21 @@
    "stored_acres": 354.3,
    "stored_wide_m": 888,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:15:36Z",
+   "checked_at": "2026-11-08T05:29:33Z",
    "layers": [
     {
      "ref": "CA-0001",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:15:37Z"
+     "read": "2026-11-08T05:29:33Z"
     },
     {
      "ref": "CA-3539",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:15:39Z"
+     "read": "2026-11-08T05:29:35Z"
     }
    ],
    "saved_lines": [],
@@ -61,21 +61,21 @@
    "stored_acres": 23.5,
    "stored_wide_m": 225,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-01T11:15:40Z",
+   "checked_at": "2026-11-08T05:29:36Z",
    "layers": [
     {
      "ref": "CA-0018",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "4 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:15:41Z"
+     "read": "2026-11-08T05:29:37Z"
     },
     {
      "ref": "CA-3362",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:15:43Z"
+     "read": "2026-11-08T05:29:39Z"
     }
    ],
    "saved_lines": [],
@@ -96,6 +96,19 @@
     -116.406628
    ]
   },
+  "CA-0032+CA-3393@area@52.734,-132.106": {
+   "id": "CA-0032+CA-3393@area@52.734,-132.106",
+   "area": "CA-BC",
+   "refs": [
+    "CA-0032",
+    "CA-3393"
+   ],
+   "kind": "area",
+   "verdict": "SOURCE DOWN",
+   "why": "checker error on this row (retry; report if it repeats): GEOSException: IllegalArgumentException: Overlay input is mixed-dimension",
+   "flags": [],
+   "layers": []
+  },
   "CA-0045+CA-3829@area@51.066,-115.850": {
    "id": "CA-0045+CA-3829@area@51.066,-115.850",
    "area": "CA-BC",
@@ -108,39 +121,46 @@
    "stored_acres": 8.2,
    "stored_wide_m": 51,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-01T11:15:47Z",
+   "checked_at": "2026-11-08T05:29:44Z",
    "layers": [
     {
      "ref": "CA-0045",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:15:48Z"
+     "read": "2026-11-08T05:29:44Z"
+    },
+    {
+     "ref": "CA-3829",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:29:46Z"
     },
     {
      "ref": "CA-3829",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:15:50Z"
+     "read": "2026-11-08T05:29:47Z"
     }
    ],
    "saved_lines": [],
    "stored_water_pct": 0,
    "stored_shape_acres": 7.29,
-   "live_acres": 6.78,
+   "live_acres": 6.86,
    "kept_pct": 100.0,
-   "size_pct": -7.0,
+   "size_pct": -5.8,
    "moved_m": 2,
    "gap_m": 0,
-   "wide_m": 49.8,
+   "wide_m": 50.3,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "CONFIRMED",
-   "why": "live overlap 6.8 ac vs 7.3 ac stored (-7%), 100% of the stored overlap still inside (10 m tolerance)",
+   "why": "live overlap 6.9 ac vs 7.3 ac stored (-6%), 100% of the stored overlap still inside (10 m tolerance)",
    "live_center": [
-    51.073558,
-    -115.854211
+    51.07356,
+    -115.854217
    ]
   },
   "CA-0066+CA-5344@trail@48.577,-124.417": {
@@ -155,21 +175,21 @@
    "stored_acres": 8.91,
    "stored_wide_m": 70.0,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:15:51Z",
+   "checked_at": "2026-11-08T05:29:48Z",
    "layers": [
     {
      "ref": "CA-0066",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:15:52Z"
+     "read": "2026-11-08T05:29:49Z"
     },
     {
      "ref": "CA-5344",
      "layer": "saved copy CA-5344.json",
      "how": "club saved official line (not re-read live)",
      "n": 1,
-     "read": "2026-11-01"
+     "read": "2026-11-08"
     }
    ],
    "saved_lines": [
@@ -206,36 +226,43 @@
    "stored_acres": 10.6,
    "stored_wide_m": 69,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-01T11:15:53Z",
+   "checked_at": "2026-11-08T05:29:50Z",
    "layers": [
     {
      "ref": "CA-0105",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:15:54Z"
+     "read": "2026-11-08T05:29:51Z"
     },
     {
      "ref": "CA-4253",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:15:56Z"
+     "read": "2026-11-08T05:29:53Z"
+    },
+    {
+     "ref": "CA-4253",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:29:54Z"
     }
    ],
    "saved_lines": [],
    "stored_water_pct": 0,
    "stored_shape_acres": 4.87,
-   "live_acres": 9.58,
+   "live_acres": 9.6,
    "kept_pct": 100.0,
-   "size_pct": -9.7,
+   "size_pct": -9.4,
    "moved_m": 3,
    "gap_m": 0,
    "wide_m": 67.6,
    "flags": [],
    "size_vs": "row acres",
    "verdict": "CONFIRMED",
-   "why": "live overlap 9.6 ac vs 10.6 ac stored (row acres; the stored shape is a 4.9 ac preview) (-10%), 100% of the stored overlap still inside (10 m tolerance)",
+   "why": "live overlap 9.6 ac vs 10.6 ac stored (row acres; the stored shape is a 4.9 ac preview) (-9%), 100% of the stored overlap still inside (10 m tolerance)",
    "live_center": [
     49.298976,
     -119.529878
@@ -253,40 +280,88 @@
    "stored_acres": 10.6,
    "stored_wide_m": 69,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-01T11:15:57Z",
+   "checked_at": "2026-11-08T05:29:55Z",
    "layers": [
     {
      "ref": "CA-0105",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:15:54Z"
+     "read": "2026-11-08T05:29:51Z"
     },
     {
      "ref": "CA-4254",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:15:56Z"
+     "read": "2026-11-08T05:29:53Z"
+    },
+    {
+     "ref": "CA-4254",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:29:54Z"
     }
    ],
    "saved_lines": [],
    "stored_water_pct": 0,
    "stored_shape_acres": 4.87,
-   "live_acres": 9.58,
+   "live_acres": 9.6,
    "kept_pct": 100.0,
-   "size_pct": -9.7,
+   "size_pct": -9.4,
    "moved_m": 3,
    "gap_m": 0,
    "wide_m": 67.6,
    "flags": [],
    "size_vs": "row acres",
    "verdict": "CONFIRMED",
-   "why": "live overlap 9.6 ac vs 10.6 ac stored (row acres; the stored shape is a 4.9 ac preview) (-10%), 100% of the stored overlap still inside (10 m tolerance)",
+   "why": "live overlap 9.6 ac vs 10.6 ac stored (row acres; the stored shape is a 4.9 ac preview) (-9%), 100% of the stored overlap still inside (10 m tolerance)",
    "live_center": [
     49.298976,
     -119.529878
    ]
+  },
+  "CA-0117+CA-4798@area@51.544,-116.532": {
+   "id": "CA-0117+CA-4798@area@51.544,-116.532",
+   "area": "CA-BC",
+   "refs": [
+    "CA-0117",
+    "CA-4798"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Twin Falls Tea House National Historic Site could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 0.1,
+   "stored_wide_m": 20,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-08T05:29:55Z",
+   "layers": [
+    {
+     "ref": "CA-0117",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:29:55Z"
+    },
+    {
+     "ref": "CA-4798",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:29:57Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.0,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "RECORD CHANGED",
+   "why": "CA-4798: 1 key record id(s) no longer in maps.gov.bc.ca/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82: [6165326] (geometry now: GONE: no overlap between the live official outlines near this spot)"
   },
   "CA-0697+CA-4080@area@51.094,-118.888": {
    "id": "CA-0697+CA-4080@area@51.094,-118.888",
@@ -300,35 +375,61 @@
    "stored_acres": 48.8,
    "stored_wide_m": 215,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-01T11:15:57Z",
+   "checked_at": "2026-11-08T05:29:58Z",
    "layers": [
     {
      "ref": "CA-0697",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:15:58Z"
+     "read": "2026-11-08T05:29:58Z"
+    },
+    {
+     "ref": "CA-0697",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:29:59Z"
     },
     {
      "ref": "CA-4080",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 0,
-     "read": "2026-11-01T11:16:00Z"
+     "read": "2026-11-08T05:30:00Z"
+    },
+    {
+     "ref": "CA-4080",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:30:01Z"
+    },
+    {
+     "ref": "CA-4080",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:03Z"
     }
    ],
    "saved_lines": [],
    "stored_water_pct": 3,
    "stored_shape_acres": 47.34,
-   "live_acres": 0.0,
-   "kept_pct": 0.0,
-   "size_pct": null,
-   "moved_m": null,
-   "gap_m": null,
-   "wide_m": 0.0,
+   "live_acres": 47.68,
+   "kept_pct": 100.0,
+   "size_pct": 0.7,
+   "moved_m": 10,
+   "gap_m": 0,
+   "wide_m": 222.6,
    "flags": [],
-   "verdict": "RECORD CHANGED",
-   "why": "CA-4080: key record BC recreatio:331807 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 47.7 ac vs 47.3 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    51.094339,
+    -118.888108
+   ]
   },
   "CA-0711+CA-4065@area@50.698,-128.381": {
    "id": "CA-0711+CA-4065@area@50.698,-128.381",
@@ -342,40 +443,277 @@
    "stored_acres": 7230.2,
    "stored_wide_m": 1928,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-01T11:16:01Z",
+   "checked_at": "2026-11-08T05:30:04Z",
    "layers": [
+    {
+     "ref": "CA-0711",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:04Z"
+    },
     {
      "ref": "CA-0711",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:16:02Z"
+     "read": "2026-11-08T05:30:06Z"
     },
     {
      "ref": "CA-4065",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:16:04Z"
+     "read": "2026-11-08T05:30:08Z"
     }
    ],
    "saved_lines": [],
    "stored_water_pct": 0,
    "stored_shape_acres": 3185.22,
-   "live_acres": 7125.6,
+   "live_acres": 7130.78,
    "kept_pct": 99.8,
    "size_pct": -1.4,
-   "moved_m": 6,
+   "moved_m": 11,
    "gap_m": 0,
-   "wide_m": 1947.6,
+   "wide_m": 1949.3,
    "flags": [],
    "size_vs": "row acres",
    "verdict": "CONFIRMED",
-   "why": "live overlap 7125.6 ac vs 7230.2 ac stored (row acres; the stored shape is a 3185.2 ac preview) (-1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "why": "live overlap 7130.8 ac vs 7230.2 ac stored (row acres; the stored shape is a 3185.2 ac preview) (-1%), 100% of the stored overlap still inside (10 m tolerance)",
    "live_center": [
-    50.787386,
-    -128.407307
+    50.78748,
+    -128.407175
    ]
+  },
+  "CA-0723+CA-1214+CA-3537@area@50.081,-122.864": {
+   "id": "CA-0723+CA-1214+CA-3537@area@50.081,-122.864",
+   "area": "CA-BC",
+   "refs": [
+    "CA-0723",
+    "CA-1214",
+    "CA-3537"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Garibaldi Park Recreation Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 0.4,
+   "stored_wide_m": 20,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:30:08Z",
+   "layers": [
+    {
+     "ref": "CA-0723",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:09Z"
+    },
+    {
+     "ref": "CA-0723",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:11Z"
+    },
+    {
+     "ref": "CA-1214",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:12Z"
+    },
+    {
+     "ref": "CA-1214",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:13Z"
+    },
+    {
+     "ref": "CA-3537",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:30:15Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.4,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "CA-0723+CA-3231+CA-3537@area@49.738,-122.799": {
+   "id": "CA-0723+CA-3231+CA-3537@area@49.738,-122.799",
+   "area": "CA-BC",
+   "refs": [
+    "CA-0723",
+    "CA-3231",
+    "CA-3537"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Garibaldi Park Recreation Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 61.4,
+   "stored_wide_m": 60,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:30:16Z",
+   "layers": [
+    {
+     "ref": "CA-0723",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:16Z"
+    },
+    {
+     "ref": "CA-0723",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:16Z"
+    },
+    {
+     "ref": "CA-3231",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:17Z"
+    },
+    {
+     "ref": "CA-3231",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:18Z"
+    },
+    {
+     "ref": "CA-3537",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:30:19Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 30.79,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "CA-0723+CA-3537+CA-3810@area@50.230,-122.585": {
+   "id": "CA-0723+CA-3537+CA-3810@area@50.230,-122.585",
+   "area": "CA-BC",
+   "refs": [
+    "CA-0723",
+    "CA-3537",
+    "CA-3810"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Garibaldi Park Recreation Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 1112.3,
+   "stored_wide_m": 740,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:30:19Z",
+   "layers": [
+    {
+     "ref": "CA-0723",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:19Z"
+    },
+    {
+     "ref": "CA-0723",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:20Z"
+    },
+    {
+     "ref": "CA-3537",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:30:20Z"
+    },
+    {
+     "ref": "CA-3810",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:20Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1070.45,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "CA-0723+CA-3537@area@49.914,-122.793": {
+   "id": "CA-0723+CA-3537@area@49.914,-122.793",
+   "area": "CA-BC",
+   "refs": [
+    "CA-0723",
+    "CA-3537"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Garibaldi Park Recreation Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 458443.5,
+   "stored_wide_m": 33354,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:30:21Z",
+   "layers": [
+    {
+     "ref": "CA-0723",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:22Z"
+    },
+    {
+     "ref": "CA-0723",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:22Z"
+    },
+    {
+     "ref": "CA-3537",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:30:22Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 461439.94,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
   },
   "CA-0748+CA-4282@same land@53.352,-120.577": {
    "id": "CA-0748+CA-4282@same land@53.352,-120.577",
@@ -389,38 +727,66 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:16:05Z",
+   "checked_at": "2026-11-08T05:30:22Z",
    "layers": [
     {
      "ref": "CA-0748",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:16:06Z"
+     "read": "2026-11-08T05:30:23Z"
+    },
+    {
+     "ref": "CA-0748",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:30:24Z"
+    },
+    {
+     "ref": "CA-0748",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:25Z"
     },
     {
      "ref": "CA-4282",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:16:06Z"
+     "read": "2026-11-08T05:30:23Z"
+    },
+    {
+     "ref": "CA-4282",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:30:24Z"
+    },
+    {
+     "ref": "CA-4282",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:25Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 48596.12,
-   "live_acres": 62038.16,
+   "live_acres": 62048.62,
    "kept_pct": 99.7,
    "size_pct": 27.7,
-   "moved_m": 2438,
+   "moved_m": 2437,
    "gap_m": 0,
-   "wide_m": 10080.4,
+   "wide_m": 10081.3,
    "flags": [],
    "size_vs": "stored shape",
-   "verdict": "RECORD CHANGED",
-   "why": "CA-0748: key record BC recreatio:1159546 names a layer prefix not in us-key/layers.json | CA-4282: key record BC recreatio:1159546 names a layer prefix not in us-key/layers.json (geometry now: GREW: live overlap is 28% bigger (62038.2 ac vs 48596.1 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch)",
+   "verdict": "GREW",
+   "why": "live overlap is 28% bigger (62048.6 ac vs 48596.1 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
    "live_center": [
-    53.3405,
-    -120.545698
+    53.340502,
+    -120.545706
    ]
   },
   "CA-0750+CA-3543@area@49.013,-115.650": {
@@ -435,25 +801,168 @@
    "stored_acres": 133.2,
    "stored_wide_m": 587,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-01T11:16:07Z",
+   "checked_at": "2026-11-08T05:30:26Z",
    "layers": [
+    {
+     "ref": "CA-0750",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:27Z"
+    },
     {
      "ref": "CA-0750",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-01T11:16:08Z"
+     "read": "2026-11-08T05:30:28Z"
+    },
+    {
+     "ref": "CA-0750",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:30:29Z"
     },
     {
      "ref": "CA-3543",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:16:10Z"
+     "read": "2026-11-08T05:30:30Z"
+    },
+    {
+     "ref": "CA-3543",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:31Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 132.03,
+   "live_acres": 132.18,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 593.5,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 132.2 ac vs 132.0 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    49.012608,
+    -115.65124
+   ]
+  },
+  "CA-1204+CA-3247@area@49.353,-123.341": {
+   "id": "CA-1204+CA-3247@area@49.353,-123.341",
+   "area": "CA-BC",
+   "refs": [
+    "CA-1204",
+    "CA-3247"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Bowen Island Ecological Reserve could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 0.3,
+   "stored_wide_m": 20,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:30:32Z",
+   "layers": [
+    {
+     "ref": "CA-1204",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:30:32Z"
+    },
+    {
+     "ref": "CA-1204",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:33Z"
+    },
+    {
+     "ref": "CA-3247",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:35Z"
+    },
+    {
+     "ref": "CA-3247",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:36Z"
+    },
+    {
+     "ref": "CA-3247",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:37Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.33,
+   "live_acres": 0.37,
+   "kept_pct": 38.1,
+   "size_pct": -72.4,
+   "moved_m": 273,
+   "gap_m": 0,
+   "wide_m": 7.7,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 72% smaller (0.4 ac vs 1.3 ac stored)",
+   "live_center": [
+    49.355805,
+    -123.341069
+   ]
+  },
+  "CA-1214+CA-3537@area@50.081,-122.864": {
+   "id": "CA-1214+CA-3537@area@50.081,-122.864",
+   "area": "CA-BC",
+   "refs": [
+    "CA-1214",
+    "CA-3537"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Garibaldi Park Recreation Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 0.4,
+   "stored_wide_m": 20,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:30:38Z",
+   "layers": [
+    {
+     "ref": "CA-1214",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:38Z"
+    },
+    {
+     "ref": "CA-1214",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:38Z"
+    },
+    {
+     "ref": "CA-3537",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:30:39Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.4,
    "live_acres": 0.0,
    "kept_pct": 0.0,
    "size_pct": null,
@@ -461,8 +970,8 @@
    "gap_m": null,
    "wide_m": 0.0,
    "flags": [],
-   "verdict": "RECORD CHANGED",
-   "why": "CA-0750: key record BC recreatio:1007826 names a layer prefix not in us-key/layers.json | CA-0750: key record BC recreatio:1510813 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
   },
   "CA-3193+CA-3194@area@54.560,-125.710": {
    "id": "CA-3193+CA-3194@area@54.560,-125.710",
@@ -476,21 +985,28 @@
    "stored_acres": 447.2,
    "stored_wide_m": 1056,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:16:11Z",
+   "checked_at": "2026-11-08T05:30:39Z",
    "layers": [
     {
      "ref": "CA-3193",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:16:12Z"
+     "read": "2026-11-08T05:30:39Z"
+    },
+    {
+     "ref": "CA-3193",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:40Z"
     },
     {
      "ref": "CA-3194",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:16:12Z"
+     "read": "2026-11-08T05:30:39Z"
     }
    ],
    "saved_lines": [],
@@ -511,6 +1027,61 @@
     -125.709793
    ]
   },
+  "CA-3200+CA-3278@area@49.290,-122.936": {
+   "id": "CA-3200+CA-3278@area@49.290,-122.936",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3200",
+    "CA-3278"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Barnet Marine Park, Burnaby Mountain Conservation Area could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 0.3,
+   "stored_wide_m": 20,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:30:41Z",
+   "layers": [
+    {
+     "ref": "CA-3200",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "9 record id(s)",
+     "n": 9,
+     "read": "2026-11-08T05:30:41Z"
+    },
+    {
+     "ref": "CA-3200",
+     "layer": "https://gis.burnaby.ca/arcgis/rest/services/OpenData/OpenData1/MapServer/6",
+     "how": "21 record id(s)",
+     "n": 17,
+     "read": "2026-11-08T05:30:43Z"
+    },
+    {
+     "ref": "CA-3278",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "8 record id(s)",
+     "n": 5,
+     "read": "2026-11-08T05:30:44Z"
+    },
+    {
+     "ref": "CA-3278",
+     "layer": "https://gis.burnaby.ca/arcgis/rest/services/OpenData/OpenData1/MapServer/6",
+     "how": "20 record id(s)",
+     "n": 13,
+     "read": "2026-11-08T05:30:45Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.33,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
   "CA-3209+CA-4044@area@48.771,-123.401": {
    "id": "CA-3209+CA-4044@area@48.771,-123.401",
    "area": "CA-BC",
@@ -519,44 +1090,134 @@
     "CA-4044"
    ],
    "kind": "area",
-   "stored_status": "not sure: water not checked (the USGS water map did not answer): run pass 5",
-   "stored_acres": 39.9,
-   "stored_wide_m": 395,
+   "stored_status": "not sure: the official outline of Ruckle Provincial Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 17.8,
+   "stored_wide_m": 204,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:16:13Z",
+   "checked_at": "2026-11-08T05:30:46Z",
    "layers": [
     {
      "ref": "CA-3209",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:16:14Z"
+     "read": "2026-11-08T05:30:46Z"
+    },
+    {
+     "ref": "CA-3209",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:47Z"
     },
     {
      "ref": "CA-4044",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:16:16Z"
+     "read": "2026-11-08T05:30:48Z"
+    },
+    {
+     "ref": "CA-4044",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:30:50Z"
+    },
+    {
+     "ref": "CA-4044",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:51Z"
     }
    ],
    "saved_lines": [],
-   "stored_shape_acres": 39.3,
-   "live_acres": 0.07,
-   "kept_pct": 3.3,
-   "size_pct": -99.8,
-   "moved_m": 286,
-   "gap_m": 0,
-   "wide_m": 1.4,
+   "stored_shape_acres": 15.13,
+   "live_acres": 0.17,
+   "kept_pct": 3.2,
+   "size_pct": -98.8,
+   "moved_m": 192,
+   "gap_m": 2,
+   "wide_m": 2.3,
    "flags": [
     "small overlap (under 50 yd across)"
    ],
    "size_vs": "stored shape",
    "verdict": "RECORD CHANGED",
-   "why": "CA-4044: key record BC-HP Govern:6121205 names a layer prefix not in us-key/layers.json (geometry now: MOVED: live overlap centre is 286 m from the stored centre; 3% of the stored overlap is still inside it)",
+   "why": "CA-4044: 1 key record id(s) no longer in maps.gov.bc.ca/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82: [6164576] (geometry now: SHRUNK: live overlap is 99% smaller (0.2 ac vs 15.1 ac stored))",
    "live_center": [
-    48.77244,
-    -123.399733
+    48.772435,
+    -123.399739
+   ]
+  },
+  "CA-3215+CA-4060@area@49.344,-122.867": {
+   "id": "CA-3215+CA-4060@area@49.344,-122.867",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3215",
+    "CA-4060"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Belcarra Regional Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 0.1,
+   "stored_wide_m": 20,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:30:52Z",
+   "layers": [
+    {
+     "ref": "CA-3215",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:52Z"
+    },
+    {
+     "ref": "CA-3215",
+     "layer": "https://services6.arcgis.com/56eqCzQ5SZhBaDST/arcgis/rest/services/RegionalParksBoundaries_OpenData/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:54Z"
+    },
+    {
+     "ref": "CA-3215",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:55Z"
+    },
+    {
+     "ref": "CA-4060",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:56Z"
+    },
+    {
+     "ref": "CA-4060",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:57Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.0,
+   "live_acres": 0.34,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": 30,
+   "gap_m": 27,
+   "wide_m": 1.8,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 0% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    49.344132,
+    -122.86705
    ]
   },
   "CA-3228+CA-4214@area@50.720,-120.500": {
@@ -571,39 +1232,404 @@
    "stored_acres": 647.5,
    "stored_wide_m": 1145,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:16:17Z",
+   "checked_at": "2026-11-08T05:30:58Z",
    "layers": [
     {
      "ref": "CA-3228",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:16:18Z"
+     "read": "2026-11-08T05:30:59Z"
+    },
+    {
+     "ref": "CA-3228",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:00Z"
     },
     {
      "ref": "CA-4214",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:16:20Z"
+     "read": "2026-11-08T05:31:01Z"
     }
    ],
    "saved_lines": [],
    "stored_water_pct": 39,
    "stored_shape_acres": 645.25,
-   "live_acres": 645.35,
+   "live_acres": 684.77,
    "kept_pct": 100.0,
-   "size_pct": 0.0,
-   "moved_m": 3,
+   "size_pct": 6.1,
+   "moved_m": 58,
    "gap_m": 0,
-   "wide_m": 1152.7,
+   "wide_m": 1219.1,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "CONFIRMED",
-   "why": "live overlap 645.3 ac vs 645.3 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "why": "live overlap 684.8 ac vs 645.3 ac stored (+6%), 100% of the stored overlap still inside (10 m tolerance)",
    "live_center": [
-    50.717152,
-    -120.509307
+    50.71665,
+    -120.509298
+   ]
+  },
+  "CA-3231+CA-3537@area@49.738,-122.865": {
+   "id": "CA-3231+CA-3537@area@49.738,-122.865",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3231",
+    "CA-3537"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Garibaldi Park Recreation Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 91.6,
+   "stored_wide_m": 60,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:31:02Z",
+   "layers": [
+    {
+     "ref": "CA-3231",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:03Z"
+    },
+    {
+     "ref": "CA-3231",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:03Z"
+    },
+    {
+     "ref": "CA-3537",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:31:03Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 61.37,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "CA-3245+CA-4031+CA-5901@area@49.028,-122.870": {
+   "id": "CA-3245+CA-4031+CA-5901@area@49.028,-122.870",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3245",
+    "CA-4031",
+    "CA-5901"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Roche Point Park, Kwomais Point Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 0.3,
+   "stored_wide_m": 20,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:31:04Z",
+   "layers": [
+    {
+     "ref": "CA-3245",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:31:04Z"
+    },
+    {
+     "ref": "CA-4031",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:31:05Z"
+    },
+    {
+     "ref": "CA-5901",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:06Z"
+    },
+    {
+     "ref": "CA-5901",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:07Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.0,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "CA-3245+CA-4031@area@49.028,-122.868": {
+   "id": "CA-3245+CA-4031@area@49.028,-122.868",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3245",
+    "CA-4031"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Roche Point Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 3.6,
+   "stored_wide_m": 100,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:31:08Z",
+   "layers": [
+    {
+     "ref": "CA-3245",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:31:08Z"
+    },
+    {
+     "ref": "CA-4031",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:31:09Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.99,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "CA-3245+CA-5497@area@49.085,-122.885": {
+   "id": "CA-3245+CA-5497@area@49.085,-122.885",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3245",
+    "CA-5497"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Boundary Bay Regional Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 1775.4,
+   "stored_wide_m": 1187,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:31:09Z",
+   "layers": [
+    {
+     "ref": "CA-3245",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:31:09Z"
+    },
+    {
+     "ref": "CA-5497",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:10Z"
+    },
+    {
+     "ref": "CA-5497",
+     "layer": "https://services6.arcgis.com/56eqCzQ5SZhBaDST/arcgis/rest/services/RegionalParksBoundaries_OpenData/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:11Z"
+    },
+    {
+     "ref": "CA-5497",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:12Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 21.09,
+   "live_acres": 0.02,
+   "kept_pct": 0.0,
+   "size_pct": -99.9,
+   "moved_m": 817,
+   "gap_m": 3533,
+   "wide_m": 5.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 817 m from the stored centre; 0% of the stored overlap is still inside it",
+   "live_center": [
+    49.091447,
+    -122.890302
+   ]
+  },
+  "CA-3245+CA-5548@area@49.057,-122.873": {
+   "id": "CA-3245+CA-5548@area@49.057,-122.873",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3245",
+    "CA-5548"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Blackie Spit Recreation Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 0.6,
+   "stored_wide_m": 20,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:31:13Z",
+   "layers": [
+    {
+     "ref": "CA-3245",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:31:14Z"
+    },
+    {
+     "ref": "CA-5548",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:31:15Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.68,
+   "live_acres": 0.19,
+   "kept_pct": 13.3,
+   "size_pct": -88.8,
+   "moved_m": 126,
+   "gap_m": 0,
+   "wide_m": 9.7,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 89% smaller (0.2 ac vs 1.7 ac stored)",
+   "live_center": [
+    49.057143,
+    -122.874228
+   ]
+  },
+  "CA-3245+CA-5901@area@49.028,-122.868": {
+   "id": "CA-3245+CA-5901@area@49.028,-122.868",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3245",
+    "CA-5901"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Kwomais Point Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 2.1,
+   "stored_wide_m": 60,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:31:15Z",
+   "layers": [
+    {
+     "ref": "CA-3245",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:31:16Z"
+    },
+    {
+     "ref": "CA-5901",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:17Z"
+    },
+    {
+     "ref": "CA-5901",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:17Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.24,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "CA-3245+CA-6382@area@49.065,-122.844": {
+   "id": "CA-3245+CA-6382@area@49.065,-122.844",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3245",
+    "CA-6382"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Stewart Farm Historic Site could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 16.9,
+   "stored_wide_m": 180,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:31:17Z",
+   "layers": [
+    {
+     "ref": "CA-3245",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:31:18Z"
+    },
+    {
+     "ref": "CA-6382",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:31:18Z"
+    },
+    {
+     "ref": "CA-6382",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:31:20Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 12.94,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": -100.0,
+   "moved_m": 321,
+   "gap_m": 206,
+   "wide_m": 0.5,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-6382: 1 key record id(s) no longer in maps.gov.bc.ca/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82: [6164522] (geometry now: MOVED: live overlap centre is 321 m from the stored centre; 0% of the stored overlap is still inside it)",
+   "live_center": [
+    49.066826,
+    -122.847638
    ]
   },
   "CA-3250+CA-3251@same land@49.489,-124.704": {
@@ -618,38 +1644,66 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:16:21Z",
+   "checked_at": "2026-11-08T05:31:21Z",
    "layers": [
     {
      "ref": "CA-3250",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:16:22Z"
+     "read": "2026-11-08T05:31:21Z"
+    },
+    {
+     "ref": "CA-3250",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:31:22Z"
+    },
+    {
+     "ref": "CA-3250",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:23Z"
     },
     {
      "ref": "CA-3251",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:16:22Z"
+     "read": "2026-11-08T05:31:21Z"
+    },
+    {
+     "ref": "CA-3251",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:31:22Z"
+    },
+    {
+     "ref": "CA-3251",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:23Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 15.92,
-   "live_acres": 348.06,
-   "kept_pct": 96.9,
-   "size_pct": 2085.9,
-   "moved_m": 704,
+   "live_acres": 350.03,
+   "kept_pct": 97.7,
+   "size_pct": 2098.2,
+   "moved_m": 706,
    "gap_m": 0,
-   "wide_m": 816.0,
+   "wide_m": 817.3,
    "flags": [],
    "size_vs": "stored shape",
-   "verdict": "RECORD CHANGED",
-   "why": "CA-3250: key record BC local and:3560404 names a layer prefix not in us-key/layers.json | CA-3251: key record BC local and:3560404 names a layer prefix not in us-key/layers.json (geometry now: GREW: live overlap is 2086% bigger (348.1 ac vs 15.9 ac stored); 97% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch)",
+   "verdict": "GREW",
+   "why": "live overlap is 2098% bigger (350.0 ac vs 15.9 ac stored); 98% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
    "live_center": [
-    49.482706,
-    -124.705083
+    49.482692,
+    -124.705082
    ]
   },
   "CA-3261+CA-3262@same land@49.819,-119.185": {
@@ -664,38 +1718,59 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-01T11:16:23Z",
+   "checked_at": "2026-11-08T05:31:24Z",
    "layers": [
     {
      "ref": "CA-3261",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:16:24Z"
+     "read": "2026-11-08T05:31:24Z"
+    },
+    {
+     "ref": "CA-3261",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:31:25Z"
     },
     {
      "ref": "CA-3262",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:16:26Z"
+     "read": "2026-11-08T05:31:26Z"
+    },
+    {
+     "ref": "CA-3262",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:27Z"
+    },
+    {
+     "ref": "CA-3262",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:28Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 165.55,
-   "live_acres": 106.64,
+   "live_acres": 107.02,
    "kept_pct": 65.1,
-   "size_pct": -35.6,
-   "moved_m": 529,
+   "size_pct": -35.4,
+   "moved_m": 530,
    "gap_m": 0,
-   "wide_m": 380.7,
+   "wide_m": 381.8,
    "flags": [],
    "size_vs": "stored shape",
-   "verdict": "RECORD CHANGED",
-   "why": "CA-3262: key record BC recreatio:954230 names a layer prefix not in us-key/layers.json (geometry now: SHRUNK: live overlap is 36% smaller (106.6 ac vs 165.5 ac stored))",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 35% smaller (107.0 ac vs 165.5 ac stored)",
    "live_center": [
-    49.823718,
-    -119.188172
+    49.823721,
+    -119.18818
    ]
   },
   "CA-3263+CA-3264@same land@50.715,-126.639": {
@@ -710,38 +1785,121 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-01T11:16:27Z",
+   "checked_at": "2026-11-08T05:31:29Z",
    "layers": [
+    {
+     "ref": "CA-3263",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:30Z"
+    },
     {
      "ref": "CA-3263",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:16:28Z"
+     "read": "2026-11-08T05:31:32Z"
+    },
+    {
+     "ref": "CA-3264",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:30Z"
     },
     {
      "ref": "CA-3264",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "3 record id(s)",
      "n": 3,
-     "read": "2026-11-01T11:16:30Z"
+     "read": "2026-11-08T05:31:34Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 28530.81,
-   "live_acres": 29573.35,
+   "live_acres": 29591.2,
    "kept_pct": 84.5,
    "size_pct": 3.7,
-   "moved_m": 5725,
+   "moved_m": 6298,
    "gap_m": 0,
-   "wide_m": 2870.4,
+   "wide_m": 4949.7,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "CONFIRMED",
-   "why": "live overlap 29573.3 ac vs 28530.8 ac stored (+4%), 85% of the stored overlap still inside (10 m tolerance)",
+   "why": "live overlap 29591.2 ac vs 28530.8 ac stored (+4%), 85% of the stored overlap still inside (10 m tolerance)",
    "live_center": [
-    50.697854,
-    -126.715605
+    50.674109,
+    -126.700905
+   ]
+  },
+  "CA-3275+CA-3840@area@48.799,-123.523": {
+   "id": "CA-3275+CA-3840@area@48.799,-123.523",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3275",
+    "CA-3840"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Mount Maxwell Ecological Reserve could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 2.3,
+   "stored_wide_m": 36,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:31:35Z",
+   "layers": [
+    {
+     "ref": "CA-3275",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:35Z"
+    },
+    {
+     "ref": "CA-3275",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:36Z"
+    },
+    {
+     "ref": "CA-3840",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:31:37Z"
+    },
+    {
+     "ref": "CA-3840",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:39Z"
+    },
+    {
+     "ref": "CA-3840",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:31:40Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 4.1,
+   "live_acres": 0.16,
+   "kept_pct": 0.0,
+   "size_pct": -96.0,
+   "moved_m": 414,
+   "gap_m": 31,
+   "wide_m": 1.3,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 414 m from the stored centre; 0% of the stored overlap is still inside it",
+   "live_center": [
+    48.798177,
+    -123.517381
    ]
   },
   "CA-3303+CA-3615@area@52.774,-127.728": {
@@ -756,21 +1914,21 @@
    "stored_acres": 2.8,
    "stored_wide_m": 79,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-01T11:16:31Z",
+   "checked_at": "2026-11-08T05:31:41Z",
    "layers": [
     {
      "ref": "CA-3303",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:16:32Z"
+     "read": "2026-11-08T05:31:41Z"
     },
     {
      "ref": "CA-3615",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:16:34Z"
+     "read": "2026-11-08T05:31:43Z"
     }
    ],
    "saved_lines": [],
@@ -802,38 +1960,114 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:16:35Z",
+   "checked_at": "2026-11-08T05:31:44Z",
    "layers": [
     {
      "ref": "CA-3320",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:16:36Z"
+     "read": "2026-11-08T05:31:45Z"
+    },
+    {
+     "ref": "CA-3320",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:31:46Z"
     },
     {
      "ref": "CA-3321",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:16:38Z"
+     "read": "2026-11-08T05:31:47Z"
+    },
+    {
+     "ref": "CA-3321",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:48Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 9.6,
-   "live_acres": 351.12,
-   "kept_pct": 86.9,
-   "size_pct": 3558.3,
-   "moved_m": 569,
+   "live_acres": 357.79,
+   "kept_pct": 88.1,
+   "size_pct": 3627.8,
+   "moved_m": 389,
    "gap_m": 0,
-   "wide_m": 770.7,
+   "wide_m": 773.3,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "GREW",
-   "why": "live overlap is 3558% bigger (351.1 ac vs 9.6 ac stored); 87% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "why": "live overlap is 3628% bigger (357.8 ac vs 9.6 ac stored); 88% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
    "live_center": [
-    51.215318,
-    -121.47881
+    51.217668,
+    -121.478752
+   ]
+  },
+  "CA-3328+CA-5346@area@49.081,-121.883": {
+   "id": "CA-3328+CA-5346@area@49.081,-121.883",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3328",
+    "CA-5346"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Thompson Regional Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 1.2,
+   "stored_wide_m": 20,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:31:49Z",
+   "layers": [
+    {
+     "ref": "CA-3328",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:50Z"
+    },
+    {
+     "ref": "CA-3328",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:51Z"
+    },
+    {
+     "ref": "CA-3328",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:31:52Z"
+    },
+    {
+     "ref": "CA-5346",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:54Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2.75,
+   "live_acres": 1.57,
+   "kept_pct": 18.2,
+   "size_pct": -42.7,
+   "moved_m": 107,
+   "gap_m": 0,
+   "wide_m": 19.4,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 43% smaller (1.6 ac vs 2.7 ac stored)",
+   "live_center": [
+    49.080033,
+    -121.882277
    ]
   },
   "CA-3347+CA-4241@area@50.474,-123.616": {
@@ -848,21 +2082,28 @@
    "stored_acres": 37.6,
    "stored_wide_m": 39,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:16:39Z",
+   "checked_at": "2026-11-08T05:31:55Z",
    "layers": [
+    {
+     "ref": "CA-3347",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:31:55Z"
+    },
     {
      "ref": "CA-3347",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:16:40Z"
+     "read": "2026-11-08T05:31:56Z"
     },
     {
      "ref": "CA-4241",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:16:42Z"
+     "read": "2026-11-08T05:31:58Z"
     }
    ],
    "saved_lines": [],
@@ -897,42 +2138,56 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:16:43Z",
+   "checked_at": "2026-11-08T05:31:59Z",
    "layers": [
     {
      "ref": "CA-3348",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:16:44Z"
+     "read": "2026-11-08T05:32:00Z"
+    },
+    {
+     "ref": "CA-3348",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:32:01Z"
     },
     {
      "ref": "CA-3349",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:16:44Z"
+     "read": "2026-11-08T05:32:00Z"
+    },
+    {
+     "ref": "CA-3349",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:32:01Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 499.54,
-   "live_acres": 1659.96,
+   "live_acres": 1660.33,
    "kept_pct": 97.8,
-   "size_pct": 232.3,
-   "moved_m": 672,
+   "size_pct": 232.4,
+   "moved_m": 664,
    "gap_m": 0,
-   "wide_m": 1707.2,
+   "wide_m": 1707.0,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "GREW",
-   "why": "live overlap is 232% bigger (1660.0 ac vs 499.5 ac stored); 98% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "why": "live overlap is 232% bigger (1660.3 ac vs 499.5 ac stored); 98% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
    "live_center": [
-    54.060496,
-    -121.02927
+    54.060471,
+    -121.029165
    ]
   },
-  "CA-3410+CA-3411@same land@49.578,-124.827": {
-   "id": "CA-3410+CA-3411@same land@49.578,-124.827",
+  "CA-3410+CA-3411@same land@49.579,-124.829": {
+   "id": "CA-3410+CA-3411@same land@49.579,-124.829",
    "area": "CA-BC",
    "refs": [
     "CA-3410",
@@ -943,38 +2198,66 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:16:45Z",
+   "checked_at": "2026-11-08T05:32:02Z",
    "layers": [
     {
      "ref": "CA-3410",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:16:46Z"
+     "read": "2026-11-08T05:32:02Z"
+    },
+    {
+     "ref": "CA-3410",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:32:03Z"
+    },
+    {
+     "ref": "CA-3410",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:32:04Z"
     },
     {
      "ref": "CA-3411",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:16:46Z"
+     "read": "2026-11-08T05:32:02Z"
+    },
+    {
+     "ref": "CA-3411",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:32:03Z"
+    },
+    {
+     "ref": "CA-3411",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:32:04Z"
     }
    ],
    "saved_lines": [],
-   "stored_shape_acres": 166.9,
-   "live_acres": 752.45,
-   "kept_pct": 88.2,
-   "size_pct": 350.9,
-   "moved_m": 948,
+   "stored_shape_acres": 111.26,
+   "live_acres": 694.29,
+   "kept_pct": 95.7,
+   "size_pct": 524.0,
+   "moved_m": 1058,
    "gap_m": 0,
-   "wide_m": 1522.9,
+   "wide_m": 1524.7,
    "flags": [],
    "size_vs": "stored shape",
-   "verdict": "RECORD CHANGED",
-   "why": "CA-3410: key record BC local and:3560439 names a layer prefix not in us-key/layers.json | CA-3410: key record BC local and:3560472 names a layer prefix not in us-key/layers.json | CA-3411: key record BC local and:3560439 names a layer prefix not in us-key/layers.json | CA-3411: key record BC local and:3560472 names a layer prefix not in us-key/layers.json (geometry now: GREW: live overlap is 351% bigger (752.5 ac vs 166.9 ac stored); 88% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch)",
+   "verdict": "GREW",
+   "why": "live overlap is 524% bigger (694.3 ac vs 111.3 ac stored); 96% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
    "live_center": [
-    49.570545,
-    -124.822275
+    49.57055,
+    -124.82229
    ]
   },
   "CA-3439+CA-3440@same land@58.063,-125.714": {
@@ -989,39 +2272,184 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:16:47Z",
+   "checked_at": "2026-11-08T05:32:05Z",
    "layers": [
     {
      "ref": "CA-3439",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:16:48Z"
+     "read": "2026-11-08T05:32:05Z"
+    },
+    {
+     "ref": "CA-3439",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:07Z"
     },
     {
      "ref": "CA-3440",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:16:48Z"
+     "read": "2026-11-08T05:32:05Z"
+    },
+    {
+     "ref": "CA-3440",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:07Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 39467.03,
-   "live_acres": 132283.53,
+   "live_acres": 132286.77,
    "kept_pct": 97.1,
    "size_pct": 235.2,
-   "moved_m": 7306,
+   "moved_m": 6989,
    "gap_m": 0,
-   "wide_m": 16542.0,
+   "wide_m": 16035.6,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "GREW",
-   "why": "live overlap is 235% bigger (132283.5 ac vs 39467.0 ac stored); 97% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "why": "live overlap is 235% bigger (132286.8 ac vs 39467.0 ac stored); 97% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
    "live_center": [
-    58.126817,
-    -125.681725
+    58.123128,
+    -125.677156
    ]
+  },
+  "CA-3453+CA-4071+CA-4106@area@49.239,-122.783": {
+   "id": "CA-3453+CA-4071+CA-4106@area@49.239,-122.783",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3453",
+    "CA-4071",
+    "CA-4106"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Eastern Drive Park, Settlers Park, Skyline Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 0.1,
+   "stored_wide_m": 20,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:32:07Z",
+   "layers": [
+    {
+     "ref": "CA-3453",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:08Z"
+    },
+    {
+     "ref": "CA-4071",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:10Z"
+    },
+    {
+     "ref": "CA-4106",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:12Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.0,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "CA-3453+CA-4071@area@49.239,-122.783": {
+   "id": "CA-3453+CA-4071@area@49.239,-122.783",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3453",
+    "CA-4071"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Eastern Drive Park, Settlers Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 0.1,
+   "stored_wide_m": 20,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:32:13Z",
+   "layers": [
+    {
+     "ref": "CA-3453",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:14Z"
+    },
+    {
+     "ref": "CA-4071",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:15Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.0,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "CA-3453+CA-4106@area@49.239,-122.783": {
+   "id": "CA-3453+CA-4106@area@49.239,-122.783",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3453",
+    "CA-4106"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Eastern Drive Park, Skyline Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 0.1,
+   "stored_wide_m": 20,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:32:15Z",
+   "layers": [
+    {
+     "ref": "CA-3453",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:14Z"
+    },
+    {
+     "ref": "CA-4106",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:16Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.0,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
   },
   "CA-3465+CA-3466@same land@50.027,-125.299": {
    "id": "CA-3465+CA-3466@same land@50.027,-125.299",
@@ -1035,38 +2463,52 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:16:49Z",
+   "checked_at": "2026-11-08T05:32:16Z",
    "layers": [
     {
      "ref": "CA-3465",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:16:50Z"
+     "read": "2026-11-08T05:32:16Z"
+    },
+    {
+     "ref": "CA-3465",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:17Z"
     },
     {
      "ref": "CA-3466",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:16:50Z"
+     "read": "2026-11-08T05:32:16Z"
+    },
+    {
+     "ref": "CA-3466",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:17Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 0.98,
-   "live_acres": 1.85,
+   "live_acres": 2.2,
    "kept_pct": 100.0,
-   "size_pct": 87.6,
-   "moved_m": 22,
+   "size_pct": 123.6,
+   "moved_m": 34,
    "gap_m": 0,
-   "wide_m": 68.6,
+   "wide_m": 74.4,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "GREW",
-   "why": "live overlap is 88% bigger (1.8 ac vs 1.0 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "why": "live overlap is 124% bigger (2.2 ac vs 1.0 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
    "live_center": [
-    50.027064,
-    -125.298399
+    50.026966,
+    -125.29834
    ]
   },
   "CA-3495+CA-3496@same land@54.335,-129.296": {
@@ -1081,39 +2523,101 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-01T11:16:51Z",
+   "checked_at": "2026-11-08T05:32:18Z",
    "layers": [
     {
      "ref": "CA-3495",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:16:52Z"
+     "read": "2026-11-08T05:32:18Z"
+    },
+    {
+     "ref": "CA-3495",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:32:19Z"
     },
     {
      "ref": "CA-3496",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:16:52Z"
+     "read": "2026-11-08T05:32:18Z"
+    },
+    {
+     "ref": "CA-3496",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:32:19Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 28.6,
-   "live_acres": 948.58,
+   "live_acres": 948.66,
    "kept_pct": 100.0,
-   "size_pct": 3216.3,
+   "size_pct": 3216.6,
    "moved_m": 565,
    "gap_m": 0,
    "wide_m": 1798.9,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "GREW",
-   "why": "live overlap is 3216% bigger (948.6 ac vs 28.6 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "why": "live overlap is 3217% bigger (948.7 ac vs 28.6 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
    "live_center": [
     54.338897,
     -129.301573
    ]
+  },
+  "CA-3498+CA-5327@area@49.202,-121.785": {
+   "id": "CA-3498+CA-5327@area@49.202,-121.785",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3498",
+    "CA-5327"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Island 22 Regional Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 36.4,
+   "stored_wide_m": 204,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:32:20Z",
+   "layers": [
+    {
+     "ref": "CA-3498",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:20Z"
+    },
+    {
+     "ref": "CA-3498",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:21Z"
+    },
+    {
+     "ref": "CA-5327",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:32:22Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 31.86,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
   },
   "CA-3504+CA-3505@same land@50.129,-119.504": {
    "id": "CA-3504+CA-3505@same land@50.129,-119.504",
@@ -1127,38 +2631,52 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-01T11:16:53Z",
+   "checked_at": "2026-11-08T05:32:23Z",
    "layers": [
     {
      "ref": "CA-3504",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:16:54Z"
+     "read": "2026-11-08T05:32:23Z"
+    },
+    {
+     "ref": "CA-3504",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:32:24Z"
     },
     {
      "ref": "CA-3505",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:16:54Z"
+     "read": "2026-11-08T05:32:23Z"
+    },
+    {
+     "ref": "CA-3505",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:32:24Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 0.98,
-   "live_acres": 0.97,
+   "live_acres": 1.0,
    "kept_pct": 97.6,
-   "size_pct": -1.4,
-   "moved_m": 12,
+   "size_pct": 2.0,
+   "moved_m": 11,
    "gap_m": 0,
-   "wide_m": 49.8,
+   "wide_m": 50.9,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "CONFIRMED",
-   "why": "live overlap 1.0 ac vs 1.0 ac stored (-1%), 98% of the stored overlap still inside (10 m tolerance)",
+   "why": "live overlap 1.0 ac vs 1.0 ac stored (+2%), 98% of the stored overlap still inside (10 m tolerance)",
    "live_center": [
-    50.129279,
-    -119.503345
+    50.129285,
+    -119.503351
    ]
   },
   "CA-3506+CA-3615@area@52.889,-127.870": {
@@ -1173,21 +2691,21 @@
    "stored_acres": 161.2,
    "stored_wide_m": 651,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-01T11:16:55Z",
+   "checked_at": "2026-11-08T05:32:25Z",
    "layers": [
     {
      "ref": "CA-3506",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:16:56Z"
+     "read": "2026-11-08T05:32:25Z"
     },
     {
      "ref": "CA-3615",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:16:58Z"
+     "read": "2026-11-08T05:32:27Z"
     }
    ],
    "saved_lines": [],
@@ -1207,6 +2725,95 @@
     -127.857806
    ]
   },
+  "CA-3508+CA-3509@area@49.142,-122.781": {
+   "id": "CA-3508+CA-3509@area@49.142,-122.781",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3508",
+    "CA-3509"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Fleetwood Meadows Park, Fleetwood Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 97.0,
+   "stored_wide_m": 348,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:32:27Z",
+   "layers": [
+    {
+     "ref": "CA-3508",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:32:27Z"
+    },
+    {
+     "ref": "CA-3509",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:28Z"
+    },
+    {
+     "ref": "CA-3509",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:30Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 88.92,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "CA-3514+CA-3792@area@49.167,-122.651": {
+   "id": "CA-3514+CA-3792@area@49.167,-122.651",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3514",
+    "CA-3792"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Forest Hills Park, McClughan Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 0.1,
+   "stored_wide_m": 20,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:32:31Z",
+   "layers": [
+    {
+     "ref": "CA-3514",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:32Z"
+    },
+    {
+     "ref": "CA-3792",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:32:34Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.0,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
   "CA-3522+CA-3523@same land@49.608,-124.058": {
    "id": "CA-3522+CA-3523@same land@49.608,-124.058",
    "area": "CA-BC",
@@ -1219,38 +2826,52 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:16:58Z",
+   "checked_at": "2026-11-08T05:32:35Z",
    "layers": [
     {
      "ref": "CA-3522",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "4 record id(s)",
      "n": 4,
-     "read": "2026-11-01T11:16:59Z"
+     "read": "2026-11-08T05:32:35Z"
+    },
+    {
+     "ref": "CA-3522",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:32:36Z"
     },
     {
      "ref": "CA-3523",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:17:01Z"
+     "read": "2026-11-08T05:32:37Z"
+    },
+    {
+     "ref": "CA-3523",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:38Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 62.54,
-   "live_acres": 208.08,
-   "kept_pct": 98.6,
-   "size_pct": 232.7,
-   "moved_m": 45,
+   "live_acres": 208.74,
+   "kept_pct": 98.7,
+   "size_pct": 233.8,
+   "moved_m": 44,
    "gap_m": 0,
-   "wide_m": 468.9,
+   "wide_m": 470.1,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "GREW",
-   "why": "live overlap is 233% bigger (208.1 ac vs 62.5 ac stored); 99% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "why": "live overlap is 234% bigger (208.7 ac vs 62.5 ac stored); 99% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
    "live_center": [
-    49.607373,
-    -124.058024
+    49.607384,
+    -124.058032
    ]
   },
   "CA-3524+CA-3525@same land@53.983,-125.167": {
@@ -1265,39 +2886,108 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:17:02Z",
+   "checked_at": "2026-11-08T05:32:39Z",
    "layers": [
+    {
+     "ref": "CA-3524",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:32:40Z"
+    },
     {
      "ref": "CA-3524",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:17:03Z"
+     "read": "2026-11-08T05:32:41Z"
+    },
+    {
+     "ref": "CA-3524",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:42Z"
+    },
+    {
+     "ref": "CA-3525",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:32:40Z"
     },
     {
      "ref": "CA-3525",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:17:03Z"
+     "read": "2026-11-08T05:32:41Z"
+    },
+    {
+     "ref": "CA-3525",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:42Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 11981.67,
-   "live_acres": 16630.6,
+   "live_acres": 16637.22,
    "kept_pct": 97.3,
-   "size_pct": 38.8,
-   "moved_m": 9882,
+   "size_pct": 38.9,
+   "moved_m": 9883,
    "gap_m": 0,
-   "wide_m": 3329.4,
+   "wide_m": 3331.0,
    "flags": [],
    "size_vs": "stored shape",
-   "verdict": "RECORD CHANGED",
-   "why": "CA-3524: key record BC recreatio:241344 names a layer prefix not in us-key/layers.json | CA-3525: key record BC recreatio:241344 names a layer prefix not in us-key/layers.json (geometry now: GREW: live overlap is 39% bigger (16630.6 ac vs 11981.7 ac stored); 97% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch)",
+   "verdict": "GREW",
+   "why": "live overlap is 39% bigger (16637.2 ac vs 11981.7 ac stored); 97% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
    "live_center": [
-    53.981715,
-    -125.317144
+    53.981717,
+    -125.317159
    ]
+  },
+  "CA-3537+CA-3810@area@50.230,-122.580": {
+   "id": "CA-3537+CA-3810@area@50.230,-122.580",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3537",
+    "CA-3810"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Garibaldi Park Recreation Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 1171.6,
+   "stored_wide_m": 780,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:32:43Z",
+   "layers": [
+    {
+     "ref": "CA-3537",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:32:44Z"
+    },
+    {
+     "ref": "CA-3810",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:44Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1127.76,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
   },
   "CA-3539+CA-4026@area@49.098,-123.198": {
    "id": "CA-3539+CA-4026@area@49.098,-123.198",
@@ -1311,21 +3001,21 @@
    "stored_acres": 565.1,
    "stored_wide_m": 1107,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:17:04Z",
+   "checked_at": "2026-11-08T05:32:44Z",
    "layers": [
     {
      "ref": "CA-3539",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:17:05Z"
+     "read": "2026-11-08T05:32:45Z"
     },
     {
      "ref": "CA-4026",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:17:06Z"
+     "read": "2026-11-08T05:32:46Z"
     }
    ],
    "saved_lines": [],
@@ -1357,34 +3047,60 @@
    "stored_acres": 133.2,
    "stored_wide_m": 587,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-01T11:17:07Z",
+   "checked_at": "2026-11-08T05:32:47Z",
    "layers": [
     {
      "ref": "CA-3542",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-01T11:17:08Z"
+     "read": "2026-11-08T05:32:48Z"
+    },
+    {
+     "ref": "CA-3542",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:32:49Z"
+    },
+    {
+     "ref": "CA-3542",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:50Z"
     },
     {
      "ref": "CA-3543",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:16:10Z"
+     "read": "2026-11-08T05:30:30Z"
+    },
+    {
+     "ref": "CA-3543",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:30:31Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 132.03,
-   "live_acres": 0.0,
-   "kept_pct": 0.0,
-   "size_pct": null,
-   "moved_m": null,
-   "gap_m": null,
-   "wide_m": 0.0,
+   "live_acres": 132.18,
+   "kept_pct": 100.0,
+   "size_pct": 0.1,
+   "moved_m": 5,
+   "gap_m": 0,
+   "wide_m": 593.5,
    "flags": [],
-   "verdict": "RECORD CHANGED",
-   "why": "CA-3542: key record BC recreatio:1510813 names a layer prefix not in us-key/layers.json | CA-3542: key record BC recreatio:1662737 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 132.2 ac vs 132.0 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    49.012608,
+    -115.65124
+   ]
   },
   "CA-3615+CA-4243@area@53.087,-127.442": {
    "id": "CA-3615+CA-4243@area@53.087,-127.442",
@@ -1398,21 +3114,21 @@
    "stored_acres": 1.3,
    "stored_wide_m": 31,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-01T11:17:09Z",
+   "checked_at": "2026-11-08T05:32:51Z",
    "layers": [
     {
      "ref": "CA-3615",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:17:10Z"
+     "read": "2026-11-08T05:32:51Z"
     },
     {
      "ref": "CA-4243",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:17:11Z"
+     "read": "2026-11-08T05:32:52Z"
     }
    ],
    "saved_lines": [],
@@ -1446,21 +3162,21 @@
    "stored_acres": 1.5,
    "stored_wide_m": 23,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-01T11:17:12Z",
+   "checked_at": "2026-11-08T05:32:53Z",
    "layers": [
     {
      "ref": "CA-3615",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:17:13Z"
+     "read": "2026-11-08T05:32:54Z"
     },
     {
      "ref": "CA-4243",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:17:14Z"
+     "read": "2026-11-08T05:32:55Z"
     }
    ],
    "saved_lines": [],
@@ -1482,6 +3198,61 @@
     -127.404191
    ]
   },
+  "CA-3617+CA-5498@area@49.335,-123.120": {
+   "id": "CA-3617+CA-5498@area@49.335,-123.120",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3617",
+    "CA-5498"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Hugo Ray Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 0.2,
+   "stored_wide_m": 20,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:32:55Z",
+   "layers": [
+    {
+     "ref": "CA-3617",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "6 record id(s)",
+     "n": 6,
+     "read": "2026-11-08T05:32:55Z"
+    },
+    {
+     "ref": "CA-5498",
+     "layer": "https://services6.arcgis.com/56eqCzQ5SZhBaDST/arcgis/rest/services/RegionalParksBoundaries_OpenData/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:56Z"
+    },
+    {
+     "ref": "CA-5498",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:58Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.0,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": 19,
+   "gap_m": 1,
+   "wide_m": 0.0,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "only 0% of the stored overlap is still inside the live overlap (10 m tolerance)",
+   "live_center": [
+    49.335033,
+    -123.119646
+   ]
+  },
   "CA-3624+CA-4122@area@49.226,-119.545": {
    "id": "CA-3624+CA-4122@area@49.226,-119.545",
    "area": "CA-BC",
@@ -1494,41 +3265,55 @@
    "stored_acres": 3.2,
    "stored_wide_m": 31,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-01T11:17:14Z",
+   "checked_at": "2026-11-08T05:32:59Z",
    "layers": [
+    {
+     "ref": "CA-3624",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:32:59Z"
+    },
     {
      "ref": "CA-3624",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:17:15Z"
+     "read": "2026-11-08T05:33:00Z"
+    },
+    {
+     "ref": "CA-3624",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:33:01Z"
     },
     {
      "ref": "CA-4122",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:17:17Z"
+     "read": "2026-11-08T05:33:02Z"
     }
    ],
    "saved_lines": [],
    "stored_water_pct": 27,
    "stored_shape_acres": 1.16,
-   "live_acres": 1.87,
+   "live_acres": 1.98,
    "kept_pct": 100.0,
-   "size_pct": 61.8,
-   "moved_m": 6,
+   "size_pct": 71.1,
+   "moved_m": 80,
    "gap_m": 0,
-   "wide_m": 34.3,
+   "wide_m": 30.4,
    "flags": [
     "small overlap (under 50 yd across)"
    ],
    "size_vs": "stored shape",
-   "verdict": "RECORD CHANGED",
-   "why": "CA-3624: key record BC recreatio:954452 names a layer prefix not in us-key/layers.json (geometry now: GREW: live overlap is 62% bigger (1.9 ac vs 1.2 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch)",
+   "verdict": "GREW",
+   "why": "live overlap is 71% bigger (2.0 ac vs 1.2 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
    "live_center": [
-    49.225413,
-    -119.544727
+    49.224851,
+    -119.543905
    ]
   },
   "CA-3672+CA-3674@area@54.519,-129.713": {
@@ -1543,21 +3328,21 @@
    "stored_acres": 100.7,
    "stored_wide_m": 464,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-01T11:17:18Z",
+   "checked_at": "2026-11-08T05:33:03Z",
    "layers": [
     {
      "ref": "CA-3672",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:17:19Z"
+     "read": "2026-11-08T05:33:04Z"
     },
     {
      "ref": "CA-3674",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:17:21Z"
+     "read": "2026-11-08T05:33:06Z"
     }
    ],
    "saved_lines": [],
@@ -1589,38 +3374,52 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-01T11:17:22Z",
+   "checked_at": "2026-11-08T05:33:07Z",
    "layers": [
     {
      "ref": "CA-3684",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:17:23Z"
+     "read": "2026-11-08T05:33:08Z"
+    },
+    {
+     "ref": "CA-3684",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:33:09Z"
     },
     {
      "ref": "CA-3685",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:17:25Z"
+     "read": "2026-11-08T05:33:10Z"
+    },
+    {
+     "ref": "CA-3685",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:33:11Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 871.64,
-   "live_acres": 1087.37,
+   "live_acres": 1088.95,
    "kept_pct": 92.5,
-   "size_pct": 24.8,
-   "moved_m": 1564,
+   "size_pct": 24.9,
+   "moved_m": 1563,
    "gap_m": 0,
-   "wide_m": 1413.0,
+   "wide_m": 1414.2,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "CONFIRMED",
-   "why": "live overlap 1087.4 ac vs 871.6 ac stored (+25%), 92% of the stored overlap still inside (10 m tolerance)",
+   "why": "live overlap 1088.9 ac vs 871.6 ac stored (+25%), 93% of the stored overlap still inside (10 m tolerance)",
    "live_center": [
-    50.789436,
-    -118.823381
+    50.789455,
+    -118.823391
    ]
   },
   "CA-3724+CA-4065@area@50.792,-128.656": {
@@ -1635,39 +3434,46 @@
    "stored_acres": 8429.3,
    "stored_wide_m": 1165,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-01T11:17:26Z",
+   "checked_at": "2026-11-08T05:33:12Z",
    "layers": [
+    {
+     "ref": "CA-3724",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:33:13Z"
+    },
     {
      "ref": "CA-3724",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:17:27Z"
+     "read": "2026-11-08T05:33:14Z"
     },
     {
      "ref": "CA-4065",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:17:29Z"
+     "read": "2026-11-08T05:33:16Z"
     }
    ],
    "saved_lines": [],
    "stored_water_pct": 0,
    "stored_shape_acres": 13732.74,
-   "live_acres": 8501.0,
+   "live_acres": 8504.17,
    "kept_pct": 62.9,
    "size_pct": -38.1,
-   "moved_m": 4,
+   "moved_m": 3,
    "gap_m": 0,
-   "wide_m": 1178.9,
+   "wide_m": 1178.7,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "SHRUNK",
-   "why": "live overlap is 38% smaller (8501.0 ac vs 13732.7 ac stored)",
+   "why": "live overlap is 38% smaller (8504.2 ac vs 13732.7 ac stored)",
    "live_center": [
-    50.804389,
-    -128.71118
+    50.804391,
+    -128.711195
    ]
   },
   "CA-3781+CA-3782@same land@50.696,-119.109": {
@@ -1682,38 +3488,52 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-01T11:17:29Z",
+   "checked_at": "2026-11-08T05:33:16Z",
    "layers": [
     {
      "ref": "CA-3781",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:17:30Z"
+     "read": "2026-11-08T05:33:17Z"
+    },
+    {
+     "ref": "CA-3781",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:33:18Z"
     },
     {
      "ref": "CA-3782",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:17:32Z"
+     "read": "2026-11-08T05:33:19Z"
+    },
+    {
+     "ref": "CA-3782",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:33:20Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 524.09,
-   "live_acres": 523.39,
-   "kept_pct": 51.4,
-   "size_pct": -0.1,
-   "moved_m": 903,
+   "live_acres": 524.79,
+   "kept_pct": 51.5,
+   "size_pct": 0.1,
+   "moved_m": 904,
    "gap_m": 0,
-   "wide_m": 860.0,
+   "wide_m": 861.1,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "SHRUNK",
    "why": "only 51% of the stored overlap is still inside the live overlap (10 m tolerance)",
    "live_center": [
-    50.703538,
-    -119.106667
+    50.703542,
+    -119.106675
    ]
   },
   "CA-3789+CA-3790@same land@59.842,-123.251": {
@@ -1728,21 +3548,35 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:17:33Z",
+   "checked_at": "2026-11-08T05:33:21Z",
    "layers": [
     {
      "ref": "CA-3789",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:17:34Z"
+     "read": "2026-11-08T05:33:21Z"
+    },
+    {
+     "ref": "CA-3789",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:33:22Z"
     },
     {
      "ref": "CA-3790",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:17:34Z"
+     "read": "2026-11-08T05:33:21Z"
+    },
+    {
+     "ref": "CA-3790",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:33:22Z"
     }
    ],
    "saved_lines": [],
@@ -1774,40 +3608,144 @@
    "stored_acres": 9.1,
    "stored_wide_m": 101,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-01T11:17:35Z",
+   "checked_at": "2026-11-08T05:33:23Z",
    "layers": [
     {
      "ref": "CA-3791",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:17:36Z"
+     "read": "2026-11-08T05:33:23Z"
     },
     {
      "ref": "CA-4239",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:17:38Z"
+     "read": "2026-11-08T05:33:25Z"
+    },
+    {
+     "ref": "CA-4239",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:33:26Z"
     }
    ],
    "saved_lines": [],
    "stored_water_pct": 0,
    "stored_shape_acres": 5.17,
-   "live_acres": 5.03,
-   "kept_pct": 99.5,
-   "size_pct": -2.8,
+   "live_acres": 5.51,
+   "kept_pct": 100.0,
+   "size_pct": 6.5,
    "moved_m": 2,
    "gap_m": 0,
-   "wide_m": 106.1,
+   "wide_m": 106.7,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "CONFIRMED",
-   "why": "live overlap 5.0 ac vs 5.2 ac stored (-3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "why": "live overlap 5.5 ac vs 5.2 ac stored (+6%), 100% of the stored overlap still inside (10 m tolerance)",
    "live_center": [
-    53.397735,
-    -129.437245
+    53.397734,
+    -129.437253
    ]
+  },
+  "CA-3797+CA-4097+CA-5343@area@49.443,-119.556": {
+   "id": "CA-3797+CA-4097+CA-5343@area@49.443,-119.556",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3797",
+    "CA-4097",
+    "CA-5343"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Skaha Lake Recreation Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 30.9,
+   "stored_wide_m": 180,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-08T05:33:27Z",
+   "layers": [
+    {
+     "ref": "CA-3797",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:33:27Z"
+    },
+    {
+     "ref": "CA-4097",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:33:29Z"
+    },
+    {
+     "ref": "CA-4097",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:33:31Z"
+    },
+    {
+     "ref": "CA-5343",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:33:32Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 25.25,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "CA-3797+CA-5343@area@49.438,-119.538": {
+   "id": "CA-3797+CA-5343@area@49.438,-119.538",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3797",
+    "CA-5343"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Skaha Lake Recreation Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 471.6,
+   "stored_wide_m": 780,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-08T05:33:33Z",
+   "layers": [
+    {
+     "ref": "CA-3797",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:33:33Z"
+    },
+    {
+     "ref": "CA-5343",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:33:34Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 114.97,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
   },
   "CA-3834+CA-4027@area@49.432,-123.613": {
    "id": "CA-3834+CA-4027@area@49.432,-123.613",
@@ -1821,34 +3759,60 @@
    "stored_acres": 177.1,
    "stored_wide_m": 519,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:17:39Z",
+   "checked_at": "2026-11-08T05:33:34Z",
    "layers": [
     {
      "ref": "CA-3834",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:17:40Z"
+     "read": "2026-11-08T05:33:34Z"
+    },
+    {
+     "ref": "CA-3834",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:33:35Z"
+    },
+    {
+     "ref": "CA-4027",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:33:36Z"
     },
     {
      "ref": "CA-4027",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:17:42Z"
+     "read": "2026-11-08T05:33:37Z"
+    },
+    {
+     "ref": "CA-4027",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:33:38Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 174.73,
-   "live_acres": 0.0,
-   "kept_pct": 0.0,
-   "size_pct": null,
-   "moved_m": null,
-   "gap_m": null,
-   "wide_m": 0.0,
+   "live_acres": 176.87,
+   "kept_pct": 100.0,
+   "size_pct": 1.2,
+   "moved_m": 6,
+   "gap_m": 0,
+   "wide_m": 524.7,
    "flags": [],
-   "verdict": "RECORD CHANGED",
-   "why": "CA-4027: key record BC recreatio:1509403 names a layer prefix not in us-key/layers.json (geometry now: GONE: no overlap between the live official outlines near this spot)"
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 176.9 ac vs 174.7 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    49.430857,
+    -123.612172
+   ]
   },
   "CA-3838+CA-3839@same land@50.884,-118.500": {
    "id": "CA-3838+CA-3839@same land@50.884,-118.500",
@@ -1862,38 +3826,52 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-01T11:17:43Z",
+   "checked_at": "2026-11-08T05:33:39Z",
    "layers": [
     {
      "ref": "CA-3838",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:17:44Z"
+     "read": "2026-11-08T05:33:39Z"
+    },
+    {
+     "ref": "CA-3838",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:33:40Z"
     },
     {
      "ref": "CA-3839",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:17:46Z"
+     "read": "2026-11-08T05:33:41Z"
+    },
+    {
+     "ref": "CA-3839",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:33:42Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 204.11,
-   "live_acres": 309.7,
-   "kept_pct": 90.7,
-   "size_pct": 51.7,
+   "live_acres": 310.88,
+   "kept_pct": 90.9,
+   "size_pct": 52.3,
    "moved_m": 1457,
    "gap_m": 0,
-   "wide_m": 454.9,
+   "wide_m": 456.4,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "GREW",
-   "why": "live overlap is 52% bigger (309.7 ac vs 204.1 ac stored); 91% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "why": "live overlap is 52% bigger (310.9 ac vs 204.1 ac stored); 91% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
    "live_center": [
-    50.872616,
-    -118.51066
+    50.872617,
+    -118.51067
    ]
   },
   "CA-3840+CA-3841@same land@48.807,-123.517": {
@@ -1908,38 +3886,114 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:17:47Z",
+   "checked_at": "2026-11-08T05:33:43Z",
    "layers": [
     {
      "ref": "CA-3840",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:17:48Z"
+     "read": "2026-11-08T05:33:43Z"
+    },
+    {
+     "ref": "CA-3840",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:33:44Z"
+    },
+    {
+     "ref": "CA-3840",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:33:44Z"
     },
     {
      "ref": "CA-3841",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:17:50Z"
+     "read": "2026-11-08T05:33:44Z"
+    },
+    {
+     "ref": "CA-3841",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:33:45Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 24.28,
-   "live_acres": 578.29,
+   "live_acres": 579.12,
    "kept_pct": 99.4,
-   "size_pct": 2281.8,
+   "size_pct": 2285.2,
    "moved_m": 1191,
    "gap_m": 0,
-   "wide_m": 948.2,
+   "wide_m": 948.4,
    "flags": [],
    "size_vs": "stored shape",
-   "verdict": "RECORD CHANGED",
-   "why": "CA-3840: key record BC local and:3560463 names a layer prefix not in us-key/layers.json (geometry now: GREW: live overlap is 2282% bigger (578.3 ac vs 24.3 ac stored); 99% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch)",
+   "verdict": "GREW",
+   "why": "live overlap is 2285% bigger (579.1 ac vs 24.3 ac stored); 99% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
    "live_center": [
-    48.8003,
-    -123.505155
+    48.800301,
+    -123.505158
+   ]
+  },
+  "CA-3850+CA-3943@area@49.322,-122.973": {
+   "id": "CA-3850+CA-3943@area@49.322,-122.973",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3850",
+    "CA-3943"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Parkgate Recreation Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 0.1,
+   "stored_wide_m": 20,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:33:46Z",
+   "layers": [
+    {
+     "ref": "CA-3850",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:33:47Z"
+    },
+    {
+     "ref": "CA-3850",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:33:48Z"
+    },
+    {
+     "ref": "CA-3943",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:33:50Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.0,
+   "live_acres": 0.02,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": 221,
+   "gap_m": 211,
+   "wide_m": 0.8,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 221 m from the stored centre; 0% of the stored overlap is still inside it",
+   "live_center": [
+    49.32117,
+    -122.970109
    ]
   },
   "CA-3868+CA-3869@same land@49.992,-121.733": {
@@ -1954,38 +4008,59 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:17:51Z",
+   "checked_at": "2026-11-08T05:33:51Z",
    "layers": [
+    {
+     "ref": "CA-3868",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:33:51Z"
+    },
     {
      "ref": "CA-3868",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:17:52Z"
+     "read": "2026-11-08T05:33:52Z"
+    },
+    {
+     "ref": "CA-3868",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:33:53Z"
+    },
+    {
+     "ref": "CA-3869",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:33:51Z"
     },
     {
      "ref": "CA-3869",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:17:52Z"
+     "read": "2026-11-08T05:33:52Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 4440.16,
-   "live_acres": 5133.96,
-   "kept_pct": 65.2,
-   "size_pct": 15.6,
+   "live_acres": 5150.15,
+   "kept_pct": 65.3,
+   "size_pct": 16.0,
    "moved_m": 3584,
    "gap_m": 0,
-   "wide_m": 1335.0,
+   "wide_m": 1336.0,
    "flags": [],
    "size_vs": "stored shape",
-   "verdict": "RECORD CHANGED",
-   "why": "CA-3868: key record BC recreatio:1053599 names a layer prefix not in us-key/layers.json (geometry now: SHRUNK: only 65% of the stored overlap is still inside the live overlap (10 m tolerance))",
+   "verdict": "SHRUNK",
+   "why": "only 65% of the stored overlap is still inside the live overlap (10 m tolerance)",
    "live_center": [
-    50.008969,
-    -121.690661
+    50.008974,
+    -121.690663
    ]
   },
   "CA-3871+CA-4212@area@54.045,-131.830": {
@@ -2000,32 +4075,46 @@
    "stored_acres": 22.6,
    "stored_wide_m": 35,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-01T11:17:53Z",
+   "checked_at": "2026-11-08T05:33:54Z",
    "layers": [
+    {
+     "ref": "CA-3871",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:33:54Z"
+    },
     {
      "ref": "CA-3871",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:17:54Z"
+     "read": "2026-11-08T05:33:55Z"
     },
     {
      "ref": "CA-4212",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:17:56Z"
+     "read": "2026-11-08T05:33:57Z"
+    },
+    {
+     "ref": "CA-4212",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:33:58Z"
     }
    ],
    "saved_lines": [],
    "stored_water_pct": 5,
    "stored_shape_acres": 19.21,
-   "live_acres": 18.19,
+   "live_acres": 18.2,
    "kept_pct": 100.0,
    "size_pct": -5.3,
-   "moved_m": 377,
+   "moved_m": 369,
    "gap_m": 0,
-   "wide_m": 27.5,
+   "wide_m": 27.4,
    "flags": [
     "small overlap (under 50 yd across)"
    ],
@@ -2034,7 +4123,7 @@
    "why": "live overlap 18.2 ac vs 19.2 ac stored (-5%), 100% of the stored overlap still inside (10 m tolerance)",
    "live_center": [
     54.045134,
-    -131.86681
+    -131.866701
    ]
   },
   "CA-3899+CA-3900@same land@55.095,-128.947": {
@@ -2049,38 +4138,52 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-01T11:17:57Z",
+   "checked_at": "2026-11-08T05:33:59Z",
    "layers": [
+    {
+     "ref": "CA-3899",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:00Z"
+    },
     {
      "ref": "CA-3899",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "3 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:17:58Z"
+     "read": "2026-11-08T05:34:01Z"
+    },
+    {
+     "ref": "CA-3900",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "3 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:00Z"
     },
     {
      "ref": "CA-3900",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "3 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:17:58Z"
+     "read": "2026-11-08T05:34:01Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 20.18,
-   "live_acres": 25.96,
-   "kept_pct": 81.6,
-   "size_pct": 28.6,
+   "live_acres": 26.21,
+   "kept_pct": 82.5,
+   "size_pct": 29.9,
    "moved_m": 212,
    "gap_m": 0,
-   "wide_m": 106.7,
+   "wide_m": 107.6,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "GREW",
-   "why": "live overlap is 29% bigger (26.0 ac vs 20.2 ac stored); 82% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "why": "live overlap is 30% bigger (26.2 ac vs 20.2 ac stored); 83% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
    "live_center": [
     55.092981,
-    -128.946007
+    -128.946015
    ]
   },
   "CA-3917+CA-4258@area@48.444,-123.272": {
@@ -2095,39 +4198,87 @@
    "stored_acres": 44.4,
    "stored_wide_m": 349,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:17:59Z",
+   "checked_at": "2026-11-08T05:34:02Z",
    "layers": [
     {
      "ref": "CA-3917",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:18:00Z"
+     "read": "2026-11-08T05:34:03Z"
+    },
+    {
+     "ref": "CA-3917",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:04Z"
     },
     {
      "ref": "CA-4258",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:18:02Z"
+     "read": "2026-11-08T05:34:05Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 43.75,
-   "live_acres": 43.86,
+   "live_acres": 44.03,
    "kept_pct": 100.0,
-   "size_pct": 0.3,
-   "moved_m": 15,
+   "size_pct": 0.7,
+   "moved_m": 115,
    "gap_m": 0,
-   "wide_m": 337.7,
+   "wide_m": 414.8,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "CONFIRMED",
-   "why": "live overlap 43.9 ac vs 43.7 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "why": "live overlap 44.0 ac vs 43.7 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
    "live_center": [
-    48.445692,
-    -123.272428
+    48.44455,
+    -123.27282
    ]
+  },
+  "CA-3918+CA-4251@area@49.239,-123.128": {
+   "id": "CA-3918+CA-4251@area@49.239,-123.128",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3918",
+    "CA-4251"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Oak Meadows Park, VanDusen Botanical Gardens could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 0.6,
+   "stored_wide_m": 20,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:34:06Z",
+   "layers": [
+    {
+     "ref": "CA-3918",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:07Z"
+    },
+    {
+     "ref": "CA-4251",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:08Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 2.24,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
   },
   "CA-3932+CA-3933@same land@49.585,-120.775": {
    "id": "CA-3932+CA-3933@same land@49.585,-120.775",
@@ -2141,39 +4292,170 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:18:03Z",
+   "checked_at": "2026-11-08T05:34:09Z",
    "layers": [
     {
      "ref": "CA-3932",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:18:04Z"
+     "read": "2026-11-08T05:34:09Z"
+    },
+    {
+     "ref": "CA-3932",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:34:10Z"
     },
     {
      "ref": "CA-3933",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:18:04Z"
+     "read": "2026-11-08T05:34:09Z"
+    },
+    {
+     "ref": "CA-3933",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:34:10Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 1.99,
-   "live_acres": 70.16,
-   "kept_pct": 96.5,
-   "size_pct": 3430.8,
-   "moved_m": 467,
+   "live_acres": 70.47,
+   "kept_pct": 96.6,
+   "size_pct": 3446.3,
+   "moved_m": 469,
    "gap_m": 0,
-   "wide_m": 384.5,
+   "wide_m": 385.6,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "GREW",
-   "why": "live overlap is 3431% bigger (70.2 ac vs 2.0 ac stored); 96% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "why": "live overlap is 3446% bigger (70.5 ac vs 2.0 ac stored); 97% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
    "live_center": [
-    49.588646,
-    -120.778703
+    49.588666,
+    -120.778711
    ]
+  },
+  "CA-3944+CA-4012@area@49.317,-124.251": {
+   "id": "CA-3944+CA-4012@area@49.317,-124.251",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3944",
+    "CA-4012"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Rathtrevor Beach Provincial Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 5.4,
+   "stored_wide_m": 60,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:34:11Z",
+   "layers": [
+    {
+     "ref": "CA-3944",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:34:12Z"
+    },
+    {
+     "ref": "CA-4012",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:34:14Z"
+    },
+    {
+     "ref": "CA-4012",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:15Z"
+    },
+    {
+     "ref": "CA-4012",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:34:16Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1.89,
+   "live_acres": 0.01,
+   "kept_pct": 27.7,
+   "size_pct": -99.6,
+   "moved_m": 85,
+   "gap_m": 0,
+   "wide_m": 0.1,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "RECORD CHANGED",
+   "why": "CA-4012: 1 key record id(s) no longer in maps.gov.bc.ca/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82: [6165727] (geometry now: SHRUNK: live overlap is 100% smaller (0.0 ac vs 1.9 ac stored))",
+   "live_center": [
+    49.316671,
+    -124.249519
+   ]
+  },
+  "CA-3965+CA-5504@area@49.310,-122.691": {
+   "id": "CA-3965+CA-5504@area@49.310,-122.691",
+   "area": "CA-BC",
+   "refs": [
+    "CA-3965",
+    "CA-5504"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Minnekhada Regional Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 12.7,
+   "stored_wide_m": 140,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:34:17Z",
+   "layers": [
+    {
+     "ref": "CA-3965",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:17Z"
+    },
+    {
+     "ref": "CA-5504",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:19Z"
+    },
+    {
+     "ref": "CA-5504",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:20Z"
+    },
+    {
+     "ref": "CA-5504",
+     "layer": "https://services6.arcgis.com/56eqCzQ5SZhBaDST/arcgis/rest/services/RegionalParksBoundaries_OpenData/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:21Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 9.85,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
   },
   "CA-3976+CA-3977@same land@59.645,-126.878": {
    "id": "CA-3976+CA-3977@same land@59.645,-126.878",
@@ -2187,38 +4469,52 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-01T11:18:05Z",
+   "checked_at": "2026-11-08T05:34:22Z",
    "layers": [
     {
      "ref": "CA-3976",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:18:06Z"
+     "read": "2026-11-08T05:34:22Z"
+    },
+    {
+     "ref": "CA-3976",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:34:23Z"
     },
     {
      "ref": "CA-3977",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:18:06Z"
+     "read": "2026-11-08T05:34:22Z"
+    },
+    {
+     "ref": "CA-3977",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:34:23Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 750.8,
-   "live_acres": 2845.01,
+   "live_acres": 2846.11,
    "kept_pct": 100.0,
-   "size_pct": 278.9,
-   "moved_m": 1539,
+   "size_pct": 279.1,
+   "moved_m": 1547,
    "gap_m": 0,
-   "wide_m": 2680.4,
+   "wide_m": 2681.7,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "GREW",
-   "why": "live overlap is 279% bigger (2845.0 ac vs 750.8 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "why": "live overlap is 279% bigger (2846.1 ac vs 750.8 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
    "live_center": [
-    59.64145,
-    -126.904874
+    59.641468,
+    -126.905018
    ]
   },
   "CA-3988+CA-3989@same land@53.494,-120.871": {
@@ -2233,39 +4529,204 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:18:07Z",
+   "checked_at": "2026-11-08T05:34:24Z",
    "layers": [
     {
      "ref": "CA-3988",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:18:08Z"
+     "read": "2026-11-08T05:34:24Z"
+    },
+    {
+     "ref": "CA-3988",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:25Z"
+    },
+    {
+     "ref": "CA-3988",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:34:26Z"
     },
     {
      "ref": "CA-3989",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:18:10Z"
+     "read": "2026-11-08T05:34:28Z"
+    },
+    {
+     "ref": "CA-3989",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:34:29Z"
+    },
+    {
+     "ref": "CA-3989",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:34:26Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 11243.62,
-   "live_acres": 8166.99,
+   "live_acres": 8169.59,
    "kept_pct": 72.5,
-   "size_pct": -27.4,
-   "moved_m": 1417,
+   "size_pct": -27.3,
+   "moved_m": 1418,
    "gap_m": 0,
-   "wide_m": 4606.5,
+   "wide_m": 4608.1,
    "flags": [],
    "size_vs": "stored shape",
-   "verdict": "RECORD CHANGED",
-   "why": "CA-3988: key record BC recreatio:1147781 names a layer prefix not in us-key/layers.json | CA-3989: key record BC recreatio:1147781 names a layer prefix not in us-key/layers.json (geometry now: SHRUNK: live overlap is 27% smaller (8167.0 ac vs 11243.6 ac stored))",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 27% smaller (8169.6 ac vs 11243.6 ac stored)",
    "live_center": [
-    53.490699,
-    -120.891936
+    53.490703,
+    -120.891946
    ]
+  },
+  "CA-4031+CA-5901@area@49.028,-122.869": {
+   "id": "CA-4031+CA-5901@area@49.028,-122.869",
+   "area": "CA-BC",
+   "refs": [
+    "CA-4031",
+    "CA-5901"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Roche Point Park, Kwomais Point Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 11.2,
+   "stored_wide_m": 100,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:34:30Z",
+   "layers": [
+    {
+     "ref": "CA-4031",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "2 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:34:30Z"
+    },
+    {
+     "ref": "CA-5901",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:30Z"
+    },
+    {
+     "ref": "CA-5901",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:31Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 7.91,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "CA-4071+CA-4106@area@49.239,-122.783": {
+   "id": "CA-4071+CA-4106@area@49.239,-122.783",
+   "area": "CA-BC",
+   "refs": [
+    "CA-4071",
+    "CA-4106"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Settlers Park, Skyline Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 0.1,
+   "stored_wide_m": 20,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:34:31Z",
+   "layers": [
+    {
+     "ref": "CA-4071",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:15Z"
+    },
+    {
+     "ref": "CA-4106",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:32:16Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.0,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
+  },
+  "CA-4097+CA-5343@area@49.431,-119.560": {
+   "id": "CA-4097+CA-5343@area@49.431,-119.560",
+   "area": "CA-BC",
+   "refs": [
+    "CA-4097",
+    "CA-5343"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Skaha Lake Recreation Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 317.1,
+   "stored_wide_m": 651,
+   "utm_epsg": 32611,
+   "checked_at": "2026-11-08T05:34:31Z",
+   "layers": [
+    {
+     "ref": "CA-4097",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:31Z"
+    },
+    {
+     "ref": "CA-4097",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:31Z"
+    },
+    {
+     "ref": "CA-5343",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:32Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 295.72,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
+   "flags": [],
+   "verdict": "GONE",
+   "why": "no overlap between the live official outlines near this spot"
   },
   "CA-4100+CA-4101@same land@50.254,-121.508": {
    "id": "CA-4100+CA-4101@same land@50.254,-121.508",
@@ -2279,38 +4740,52 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:18:11Z",
+   "checked_at": "2026-11-08T05:34:32Z",
    "layers": [
     {
      "ref": "CA-4100",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:18:12Z"
+     "read": "2026-11-08T05:34:32Z"
+    },
+    {
+     "ref": "CA-4100",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:34:33Z"
     },
     {
      "ref": "CA-4101",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:18:14Z"
+     "read": "2026-11-08T05:34:34Z"
+    },
+    {
+     "ref": "CA-4101",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:35Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 1.79,
-   "live_acres": 327.76,
-   "kept_pct": 41.6,
-   "size_pct": 18168.9,
+   "live_acres": 327.95,
+   "kept_pct": 41.8,
+   "size_pct": 18179.5,
    "moved_m": 580,
    "gap_m": 0,
-   "wide_m": 961.4,
+   "wide_m": 961.9,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "SHRUNK",
    "why": "only 42% of the stored overlap is still inside the live overlap (10 m tolerance)",
    "live_center": [
-    50.249345,
-    -121.512177
+    50.249348,
+    -121.512188
    ]
   },
   "CA-4142+CA-4143@same land@49.673,-123.144": {
@@ -2325,38 +4800,52 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:18:15Z",
+   "checked_at": "2026-11-08T05:34:37Z",
    "layers": [
     {
      "ref": "CA-4142",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:18:16Z"
+     "read": "2026-11-08T05:34:37Z"
+    },
+    {
+     "ref": "CA-4142",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:34:38Z"
     },
     {
      "ref": "CA-4143",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:18:16Z"
+     "read": "2026-11-08T05:34:37Z"
+    },
+    {
+     "ref": "CA-4143",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:34:38Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 18.43,
-   "live_acres": 676.18,
-   "kept_pct": 98.7,
-   "size_pct": 3569.0,
+   "live_acres": 676.89,
+   "kept_pct": 98.8,
+   "size_pct": 3572.9,
    "moved_m": 481,
    "gap_m": 0,
-   "wide_m": 1349.7,
+   "wide_m": 1350.5,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "GREW",
-   "why": "live overlap is 3569% bigger (676.2 ac vs 18.4 ac stored); 99% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "why": "live overlap is 3573% bigger (676.9 ac vs 18.4 ac stored); 99% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
    "live_center": [
-    49.677548,
-    -123.14635
+    49.67755,
+    -123.14636
    ]
   },
   "CA-4145+CA-4245@area@50.121,-122.228": {
@@ -2371,21 +4860,28 @@
    "stored_acres": 1.0,
    "stored_wide_m": 45,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:18:17Z",
+   "checked_at": "2026-11-08T05:34:39Z",
    "layers": [
     {
      "ref": "CA-4145",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:18:18Z"
+     "read": "2026-11-08T05:34:39Z"
+    },
+    {
+     "ref": "CA-4145",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:40Z"
     },
     {
      "ref": "CA-4245",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:18:20Z"
+     "read": "2026-11-08T05:34:41Z"
     }
    ],
    "saved_lines": [],
@@ -2393,19 +4889,19 @@
    "stored_shape_acres": 0.76,
    "live_acres": 0.79,
    "kept_pct": 99.8,
-   "size_pct": 3.1,
+   "size_pct": 3.8,
    "moved_m": 3,
    "gap_m": 0,
-   "wide_m": 42.9,
+   "wide_m": 43.0,
    "flags": [
     "small overlap (under 50 yd across)"
    ],
    "size_vs": "stored shape",
    "verdict": "CONFIRMED",
-   "why": "live overlap 0.8 ac vs 0.8 ac stored (+3%), 100% of the stored overlap still inside (10 m tolerance)",
+   "why": "live overlap 0.8 ac vs 0.8 ac stored (+4%), 100% of the stored overlap still inside (10 m tolerance)",
    "live_center": [
     50.129858,
-    -122.266611
+    -122.266612
    ]
   },
   "CA-4152+CA-4153@same land@54.625,-124.643": {
@@ -2420,38 +4916,119 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:18:21Z",
+   "checked_at": "2026-11-08T05:34:42Z",
    "layers": [
     {
      "ref": "CA-4152",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:18:22Z"
+     "read": "2026-11-08T05:34:43Z"
+    },
+    {
+     "ref": "CA-4152",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:44Z"
     },
     {
      "ref": "CA-4153",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:18:22Z"
+     "read": "2026-11-08T05:34:43Z"
+    },
+    {
+     "ref": "CA-4153",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:44Z"
+    },
+    {
+     "ref": "CA-4153",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:34:45Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 460.47,
-   "live_acres": 849.37,
+   "live_acres": 850.53,
    "kept_pct": 100.0,
-   "size_pct": 84.5,
+   "size_pct": 84.7,
    "moved_m": 374,
    "gap_m": 0,
-   "wide_m": 1149.8,
+   "wide_m": 1150.4,
    "flags": [],
    "size_vs": "stored shape",
-   "verdict": "RECORD CHANGED",
-   "why": "CA-4153: key record BC recreatio:243165 names a layer prefix not in us-key/layers.json (geometry now: GREW: live overlap is 84% bigger (849.4 ac vs 460.5 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch)",
+   "verdict": "GREW",
+   "why": "live overlap is 85% bigger (850.5 ac vs 460.5 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
    "live_center": [
-    54.627672,
-    -124.639933
+    54.627667,
+    -124.639926
+   ]
+  },
+  "CA-4155+CA-5502@area@49.222,-123.246": {
+   "id": "CA-4155+CA-5502@area@49.222,-123.246",
+   "area": "CA-BC",
+   "refs": [
+    "CA-4155",
+    "CA-5502"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Iona Beach Regional Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 1544.4,
+   "stored_wide_m": 2164,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:34:46Z",
+   "layers": [
+    {
+     "ref": "CA-4155",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:34:46Z"
+    },
+    {
+     "ref": "CA-5502",
+     "layer": "https://services6.arcgis.com/56eqCzQ5SZhBaDST/arcgis/rest/services/RegionalParksBoundaries_OpenData/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:47Z"
+    },
+    {
+     "ref": "CA-5502",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:48Z"
+    },
+    {
+     "ref": "CA-5502",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:49Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 1522.57,
+   "live_acres": 1747.74,
+   "kept_pct": 99.8,
+   "size_pct": 14.8,
+   "moved_m": 96,
+   "gap_m": 0,
+   "wide_m": 2243.9,
+   "flags": [],
+   "size_vs": "stored shape",
+   "verdict": "CONFIRMED",
+   "why": "live overlap 1747.7 ac vs 1522.6 ac stored (+15%), 100% of the stored overlap still inside (10 m tolerance)",
+   "live_center": [
+    49.220797,
+    -123.24517
    ]
   },
   "CA-4157+CA-4158@same land@53.916,-121.670": {
@@ -2466,38 +5043,52 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:18:23Z",
+   "checked_at": "2026-11-08T05:34:50Z",
    "layers": [
     {
      "ref": "CA-4157",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:18:24Z"
+     "read": "2026-11-08T05:34:51Z"
+    },
+    {
+     "ref": "CA-4157",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:34:52Z"
     },
     {
      "ref": "CA-4158",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:18:24Z"
+     "read": "2026-11-08T05:34:51Z"
+    },
+    {
+     "ref": "CA-4158",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:34:52Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 75.85,
-   "live_acres": 1034.75,
+   "live_acres": 1035.92,
    "kept_pct": 100.0,
-   "size_pct": 1264.2,
-   "moved_m": 1137,
+   "size_pct": 1265.8,
+   "moved_m": 865,
    "gap_m": 0,
-   "wide_m": 982.2,
+   "wide_m": 1055.3,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "GREW",
-   "why": "live overlap is 1264% bigger (1034.8 ac vs 75.8 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "why": "live overlap is 1266% bigger (1035.9 ac vs 75.8 ac stored); 100% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
    "live_center": [
-    53.908431,
-    -121.659374
+    53.90876,
+    -121.671178
    ]
   },
   "CA-4191+CA-4258@area@48.451,-123.266": {
@@ -2512,38 +5103,45 @@
    "stored_acres": 7.9,
    "stored_wide_m": 127,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:18:25Z",
+   "checked_at": "2026-11-08T05:34:53Z",
    "layers": [
     {
      "ref": "CA-4191",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:18:26Z"
+     "read": "2026-11-08T05:34:53Z"
+    },
+    {
+     "ref": "CA-4191",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:54Z"
     },
     {
      "ref": "CA-4258",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:18:28Z"
+     "read": "2026-11-08T05:34:56Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 7.54,
-   "live_acres": 7.54,
+   "live_acres": 7.64,
    "kept_pct": 100.0,
-   "size_pct": 0.1,
-   "moved_m": 16,
+   "size_pct": 1.3,
+   "moved_m": 6,
    "gap_m": 0,
-   "wide_m": 123.7,
+   "wide_m": 130.6,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "CONFIRMED",
-   "why": "live overlap 7.5 ac vs 7.5 ac stored (+0%), 100% of the stored overlap still inside (10 m tolerance)",
+   "why": "live overlap 7.6 ac vs 7.5 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
    "live_center": [
-    48.449966,
-    -123.266515
+    48.450085,
+    -123.266484
    ]
   },
   "CA-4218+CA-4258@area@48.401,-123.304": {
@@ -2558,38 +5156,45 @@
    "stored_acres": 14.2,
    "stored_wide_m": 105,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-01T11:18:28Z",
+   "checked_at": "2026-11-08T05:34:56Z",
    "layers": [
     {
      "ref": "CA-4218",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:18:29Z"
+     "read": "2026-11-08T05:34:57Z"
+    },
+    {
+     "ref": "CA-4218",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:34:58Z"
     },
     {
      "ref": "CA-4258",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:18:31Z"
+     "read": "2026-11-08T05:34:59Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 6.45,
-   "live_acres": 6.52,
+   "live_acres": 6.64,
    "kept_pct": 100.0,
-   "size_pct": 1.1,
-   "moved_m": 333,
+   "size_pct": 2.9,
+   "moved_m": 334,
    "gap_m": 0,
-   "wide_m": 85.6,
+   "wide_m": 86.8,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "CONFIRMED",
-   "why": "live overlap 6.5 ac vs 6.4 ac stored (+1%), 100% of the stored overlap still inside (10 m tolerance)",
+   "why": "live overlap 6.6 ac vs 6.4 ac stored (+3%), 100% of the stored overlap still inside (10 m tolerance)",
    "live_center": [
-    48.403997,
-    -123.304682
+    48.404001,
+    -123.304689
    ]
   },
   "CA-4253+CA-4254@same land@49.302,-119.532": {
@@ -2604,86 +5209,245 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-01T11:18:31Z",
+   "checked_at": "2026-11-08T05:34:59Z",
    "layers": [
     {
      "ref": "CA-4253",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:18:32Z"
+     "read": "2026-11-08T05:35:00Z"
+    },
+    {
+     "ref": "CA-4253",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:35:00Z"
     },
     {
      "ref": "CA-4254",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:18:32Z"
+     "read": "2026-11-08T05:35:00Z"
+    },
+    {
+     "ref": "CA-4254",
+     "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:35:00Z"
     }
    ],
    "saved_lines": [],
    "stored_shape_acres": 23.99,
-   "live_acres": 41.7,
-   "kept_pct": 92.9,
-   "size_pct": 73.9,
-   "moved_m": 403,
+   "live_acres": 41.92,
+   "kept_pct": 93.0,
+   "size_pct": 74.8,
+   "moved_m": 402,
    "gap_m": 0,
-   "wide_m": 244.2,
+   "wide_m": 244.8,
    "flags": [],
    "size_vs": "stored shape",
    "verdict": "GREW",
-   "why": "live overlap is 74% bigger (41.7 ac vs 24.0 ac stored); 93% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
+   "why": "live overlap is 75% bigger (41.9 ac vs 24.0 ac stored); 93% of the stored overlap still inside (10 m tolerance): the stored row may carry an ownership / water mask this tool does not re-apply, or be one piece of a longer stretch",
    "live_center": [
-    49.298259,
-    -119.530749
+    49.298268,
+    -119.530762
    ]
   },
-  "CA-0032+CA-3393@area@52.734,-132.106": {
-   "id": "CA-0032+CA-3393@area@52.734,-132.106",
+  "CA-4258+CA-5539@area@48.439,-123.294": {
+   "id": "CA-4258+CA-5539@area@48.439,-123.294",
    "area": "CA-BC",
    "refs": [
-    "CA-0032",
-    "CA-3393"
+    "CA-4258",
+    "CA-5539"
    ],
    "kind": "area",
-   "verdict": "SOURCE DOWN",
-   "why": "checker error on this row (retry; report if it repeats): GEOSException: IllegalArgumentException: Overlay input is mixed-dimension",
+   "stored_status": "not sure: the official outline of Uplands Park Natural Area could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 12.7,
+   "stored_wide_m": 148,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:35:00Z",
+   "layers": [
+    {
+     "ref": "CA-4258",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "2 record id(s)",
+     "n": 2,
+     "read": "2026-11-08T05:35:01Z"
+    },
+    {
+     "ref": "CA-5539",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:35:01Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 7.42,
+   "live_acres": 0.33,
+   "kept_pct": 12.4,
+   "size_pct": -95.5,
+   "moved_m": 140,
+   "gap_m": 0,
+   "wide_m": 14.3,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "SHRUNK",
+   "why": "live overlap is 95% smaller (0.3 ac vs 7.4 ac stored)",
+   "live_center": [
+    48.439062,
+    -123.292685
+   ]
+  },
+  "CA-4787+CA-4789@area@48.431,-123.449": {
+   "id": "CA-4787+CA-4789@area@48.431,-123.449",
+   "area": "CA-BC",
+   "refs": [
+    "CA-4787",
+    "CA-4789"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Fisgard Lighthouse National Historic Site, Fort Rodd Hill National Historic Site could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 0.2,
+   "stored_wide_m": 20,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:35:02Z",
+   "layers": [
+    {
+     "ref": "CA-4787",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:35:03Z"
+    },
+    {
+     "ref": "CA-4789",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:35:05Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 0.0,
+   "live_acres": 0.0,
+   "kept_pct": 0.0,
+   "size_pct": null,
+   "moved_m": null,
+   "gap_m": null,
+   "wide_m": 0.0,
    "flags": [],
-   "layers": []
+   "verdict": "RECORD CHANGED",
+   "why": "CA-4787: 1 key record id(s) no longer in maps.gov.bc.ca/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82: [6160614] | CA-4789: 1 key record id(s) no longer in maps.gov.bc.ca/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82: [6166104] (geometry now: GONE: no overlap between the live official outlines near this spot)"
+  },
+  "CA-5501+CA-5503@area@49.403,-123.081": {
+   "id": "CA-5501+CA-5503@area@49.403,-123.081",
+   "area": "CA-BC",
+   "refs": [
+    "CA-5501",
+    "CA-5503"
+   ],
+   "kind": "area",
+   "stored_status": "not sure: the official outline of Grouse Mountain Regional Park, Lynn Headwaters Regional Park could not be read in pass 2 (the next run tries again)",
+   "stored_acres": 26.6,
+   "stored_wide_m": 260,
+   "utm_epsg": 32610,
+   "checked_at": "2026-11-08T05:35:06Z",
+   "layers": [
+    {
+     "ref": "CA-5501",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:35:07Z"
+    },
+    {
+     "ref": "CA-5501",
+     "layer": "https://services6.arcgis.com/56eqCzQ5SZhBaDST/arcgis/rest/services/RegionalParksBoundaries_OpenData/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 0,
+     "read": "2026-11-08T05:35:08Z"
+    },
+    {
+     "ref": "CA-5503",
+     "layer": "https://services6.arcgis.com/56eqCzQ5SZhBaDST/arcgis/rest/services/RegionalParksBoundaries_OpenData/FeatureServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:35:10Z"
+    },
+    {
+     "ref": "CA-5503",
+     "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:35:11Z"
+    },
+    {
+     "ref": "CA-5503",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "how": "1 record id(s)",
+     "n": 1,
+     "read": "2026-11-08T05:35:12Z"
+    }
+   ],
+   "saved_lines": [],
+   "stored_shape_acres": 23.58,
+   "live_acres": 1.14,
+   "kept_pct": 10.1,
+   "size_pct": -95.2,
+   "moved_m": 422,
+   "gap_m": 0,
+   "wide_m": 26.8,
+   "flags": [
+    "small overlap (under 50 yd across)"
+   ],
+   "size_vs": "stored shape",
+   "verdict": "MOVED",
+   "why": "live overlap centre is 422 m from the stored centre; 10% of the stored overlap is still inside it",
+   "live_center": [
+    49.404992,
+    -123.085892
+   ]
   }
  },
- "started": "2026-11-01T11:15:36Z",
- "fers_sha256": "feb341d355bd852fafdc9fe6608ac33e5fd6dcd67fc232b0dc3a5469132a977d",
- "live_rows": 58,
- "skipped_rows": 585,
+ "started": "2026-11-08T05:29:33Z",
+ "fers_sha256": "72396295f9ce5d0dab81beb513017f08fb8bb366307b7956d4404f091d69f5bc",
+ "live_rows": 97,
+ "skipped_rows": 564,
  "rules": {
   "trail_buffer_m": 30.48,
   "small_across_m": 45.72,
   "moved_m": 200.0,
   "size_tol": 0.25
  },
- "updated": "2026-11-01T12:04:56Z",
+ "updated": "2026-11-08T05:35:13Z",
  "complete": true,
  "summary": {
-  "rows": 58,
+  "rows": 97,
   "verdicts": {
-   "CONFIRMED": 24,
-   "SHRUNK": 4,
-   "GREW": 14,
-   "MOVED": 0,
-   "GONE": 0,
-   "RECORD CHANGED": 15,
+   "CONFIRMED": 29,
+   "SHRUNK": 13,
+   "GREW": 21,
+   "MOVED": 4,
+   "GONE": 24,
+   "RECORD CHANGED": 5,
    "SOURCE DOWN": 1,
    "NOT CHECKED": 0
   },
   "flags": {
    "trail line from the club saved copy (not re-read live)": 1,
-   "small overlap (under 50 yd across)": 7
+   "small overlap (under 50 yd across)": 19
   }
  },
  "key_files": [
   "data/ca-key/CA-AB.json",
   "data/ca-key/CA-BC.json"
  ],
- "requests_this_run": 1
+ "requests_this_run": 742
 }

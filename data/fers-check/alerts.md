@@ -1,49 +1,58 @@
-# 2-fer checker alerts (2026-11-01)
+# 2-fer checker alerts (2026-11-08, Central)
 
 Rows the weekly checker found SHRUNK / GONE / MOVED against the live official layers: chat 2 rechecks, chat 11 grades. Nothing changed by the bot.
 
-- **CA-BC**: SHRUNK 4
-- **CA-SK**: SHRUNK 1
-- **US-AK**: GONE 5, SHRUNK 2
-- **US-AL**: GONE 1
-- **US-AR**: SHRUNK 2
-- **US-AZ**: SHRUNK 8, GONE 1
-- **US-CA**: GONE 10, MOVED 4, SHRUNK 3
-- **US-CT**: SHRUNK 4, MOVED 3
-- **US-DC**: MOVED 1
-- **US-DE**: SHRUNK 4, MOVED 1
-- **US-FL**: GONE 38, SHRUNK 14, MOVED 3
-- **US-GA**: SHRUNK 2, MOVED 1
-- **US-ID**: SHRUNK 6, MOVED 5, GONE 4
-- **US-IL**: SHRUNK 2
-- **US-IN**: MOVED 1
-- **US-KS**: SHRUNK 3, MOVED 1
-- **US-KY**: SHRUNK 1
-- **US-MA**: SHRUNK 22, MOVED 5
-- **US-MD**: SHRUNK 17, MOVED 5
-- **US-MI**: SHRUNK 10, MOVED 2, GONE 2
-- **US-MN**: MOVED 38, GONE 33, SHRUNK 14
-- **US-MO**: MOVED 2, GONE 1, SHRUNK 1
-- **US-MS**: SHRUNK 2, MOVED 1
-- **US-MT**: MOVED 3
-- **US-NC**: SHRUNK 2, GONE 1
-- **US-ND**: GONE 17
-- **US-NH**: SHRUNK 1
-- **US-NM**: SHRUNK 5
-- **US-NV**: SHRUNK 5
-- **US-NY**: GONE 11, SHRUNK 1
-- **US-OH**: SHRUNK 2
-- **US-OK**: SHRUNK 3
-- **US-OR**: SHRUNK 13, MOVED 2
-- **US-PA**: SHRUNK 4
-- **US-SC**: GONE 6, SHRUNK 1
-- **US-SD**: GONE 1
-- **US-TN**: MOVED 6, SHRUNK 6, GONE 1
-- **US-TX**: MOVED 1, SHRUNK 1
-- **US-UT**: SHRUNK 11, MOVED 4
-- **US-VA**: SHRUNK 17, MOVED 2, GONE 1
-- **US-VT**: SHRUNK 1
-- **US-WA**: SHRUNK 4, GONE 1
-- **US-WI**: GONE 17, SHRUNK 3
-- **US-WV**: MOVED 3, GONE 2
-- **US-WY**: SHRUNK 6, MOVED 4, GONE 2
+- **CA-AB** (checked 2026-11-07 11:27 PM CST): SHRUNK 1, GONE 1
+- **CA-BC** (checked 2026-11-07 11:29 PM CST): GONE 24, SHRUNK 13, MOVED 4
+- **CA-NB** (checked 2026-11-07 11:35 PM CST): GONE 88, MOVED 50, SHRUNK 22
+- **CA-NS** (checked 2026-11-07 11:59 PM CST): MOVED 1
+- **CA-ON** (checked 2026-11-08 12:01 AM CST): SHRUNK 115, MOVED 27, GONE 25
+- **CA-SK** (checked 2026-11-01 5:30 AM CST): SHRUNK 1
+- **US-AK** (checked 2026-11-01 5:31 AM CST): GONE 5, SHRUNK 2
+- **US-AR** (checked 2026-11-01 5:46 AM CST): SHRUNK 2
+- **US-AZ** (checked 2026-11-01 5:47 AM CST): SHRUNK 8, GONE 1
+- **US-CA** (checked 2026-11-01 5:48 AM CST): GONE 10, MOVED 4, SHRUNK 3
+- **US-CT** (checked 2026-11-01 5:55 AM CST): SHRUNK 4, MOVED 3
+- **US-DC** (checked 2026-11-01 6:00 AM CST): MOVED 1
+- **US-DE** (checked 2026-11-01 6:00 AM CST): SHRUNK 4, MOVED 1
+- **US-FL** (checked 2026-11-01 6:03 AM CST): GONE 38, SHRUNK 14, MOVED 3
+- **US-GA** (checked 2026-10-31 7:27 PM CDT): SHRUNK 2, MOVED 1
+- **US-ID** (checked 2026-10-31 7:38 PM CDT): SHRUNK 6, MOVED 5, GONE 4
+- **US-IL** (checked 2026-10-31 7:41 PM CDT): SHRUNK 2
+- **US-IN** (checked 2026-10-31 7:42 PM CDT): MOVED 1
+- **US-KY** (checked 2026-11-07 11:26 PM CST): SHRUNK 1
+- **US-MA** (checked 2026-10-31 7:50 PM CDT): SHRUNK 22, MOVED 5
+- **US-MD** (checked 2026-10-31 7:56 PM CDT): SHRUNK 17, MOVED 5
+- **US-MI** (checked 2026-10-31 8:00 PM CDT): SHRUNK 10, MOVED 2, GONE 2
+- **US-MN** (checked 2026-10-31 8:58 PM CDT): MOVED 38, GONE 33, SHRUNK 14
+- **US-MT** (checked 2026-10-31 9:12 PM CDT): MOVED 3
+- **US-NC** (checked 2026-10-31 9:14 PM CDT): SHRUNK 2, GONE 1
+- **US-ND** (checked 2026-10-31 9:19 PM CDT): GONE 17
+- **US-NH** (checked 2026-10-31 9:22 PM CDT): SHRUNK 1
+- **US-NM** (checked 2026-10-31 9:26 PM CDT): SHRUNK 5
+- **US-NV** (checked 2026-10-31 9:27 PM CDT): SHRUNK 5
+- **US-NY** (checked 2026-10-31 9:32 PM CDT): GONE 11, SHRUNK 1
+- **US-OH** (checked 2026-10-31 9:36 PM CDT): SHRUNK 2
+- **US-OK** (checked 2026-10-31 9:42 PM CDT): SHRUNK 3
+- **US-OR** (checked 2026-10-31 9:46 PM CDT): SHRUNK 13, MOVED 2
+- **US-PA** (checked 2026-10-31 10:48 PM CDT): SHRUNK 4
+- **US-SC** (checked 2026-10-31 10:55 PM CDT): GONE 6, SHRUNK 1
+- **US-SD** (checked 2026-10-31 10:58 PM CDT): GONE 1
+- **US-TN** (checked 2026-10-31 10:59 PM CDT): MOVED 6, SHRUNK 6, GONE 1
+- **US-TX** (checked 2026-10-31 11:09 PM CDT): MOVED 1, SHRUNK 1
+- **US-UT** (checked 2026-10-31 4:31 PM CDT): SHRUNK 11, MOVED 4
+- **US-VA** (checked 2026-10-31 4:31 PM CDT): SHRUNK 17, MOVED 2, GONE 1
+- **US-VT** (checked 2026-10-31 11:13 PM CDT): SHRUNK 1
+- **US-WA** (checked 2026-10-31 11:13 PM CDT): SHRUNK 4, GONE 1
+- **US-WI** (checked 2026-10-31 11:16 PM CDT): GONE 17, SHRUNK 3
+- **US-WV** (checked 2026-10-31 11:22 PM CDT): MOVED 3, GONE 2
+- **US-WY** (checked 2026-10-31 11:24 PM CDT): SHRUNK 6, MOVED 4, GONE 2
+
+## Stale: the 2-fer file changed since the check (6 area(s), left out above until the next check)
+
+- CA-YT (checked 2026-11-01 5:31 AM CST; 0 alert(s) not counted)
+- US-AL (checked 2026-11-01 5:45 AM CST; 1 alert(s) not counted)
+- US-CO (checked 2026-11-01 5:54 AM CST; 0 alert(s) not counted)
+- US-KS (checked 2026-10-31 7:46 PM CDT; 4 alert(s) not counted)
+- US-MO (checked 2026-10-31 9:07 PM CDT; 4 alert(s) not counted)
+- US-MS (checked 2026-10-31 9:11 PM CDT; 3 alert(s) not counted)

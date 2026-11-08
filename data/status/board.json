@@ -3,11 +3,11 @@
  "bots": {
   "2-fer checker": {
    "areas": "",
-   "last_run": "2026-11-02",
-   "made": "weekly re-test of live 2-fers (last run 2026-11-01; the bot is fine, red was the old status rule)",
+   "last_run": "2026-11-08",
+   "made": "weekly re-test of live 2-fers",
    "result": "amber",
-   "run": "",
-   "waiting_on": "chat 2 rechecks + chat 11 grades 461 SHRUNK / GONE / MOVED rows (data/fers-check/alerts.md)"
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42450778344",
+   "waiting_on": "chat 2 rechecks + chat 11 grades 816 SHRUNK / GONE / MOVED rows (data/fers-check/alerts.md)"
   },
   "2-fer gate (areas ready / waiting)": {
    "areas": "",
@@ -1196,9 +1196,9 @@
   "key-doctor": {
    "areas": "",
    "last_run": "2026-11-08",
-   "made": "NOs: 431 of 723 NOs landed; 292 missing (re-applied to overrides.fixed.json); 1059 came back in the key release: 12726 parks pass, 381 held, 50 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-08.md ",
+   "made": "NOs: 438 of 720 NOs landed; 282 missing (re-applied to overrides.fixed.json); 1059 came back in the key release: 12726 parks pass, 381 held, 50 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-08.md ",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42450780330",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42446803570",
    "waiting_on": "chat 10 (came-back NOs / stuck areas); per-park release in release-approved"
   },
   "layer intake": {
@@ -1251,9 +1251,9 @@
   },
   "waiting room": {
    "last_run": "2026-11-08",
-   "made": "262 files waiting over 3 days in data/waiting/in/ (e.g. US-NY.json)",
-   "result": "red",
-   "waiting_on": "chat 11 (look at the waiting room run)"
+   "made": "heartbeat 3 h old, 445 files waiting",
+   "result": "green",
+   "waiting_on": "nothing"
   },
   "world finder v2": {
    "areas": "",

@@ -1,12 +1,12 @@
 # 2-fer accuracy check: US-KY
 
-Run 2026-11-01T11:14:06Z → 2026-11-01T12:04:52Z (UTC) · tool 0.1.0 (2026-10-31) · complete
-Live rows in the file: 90 · checked: 90 · skipped (dropped / merged): 335
+Run 2026-11-08T05:26:55Z → 2026-11-08T05:27:09Z (UTC) · tool 0.1.0 (2026-10-31) · complete
+Live rows in the file: 88 · checked: 88 · skipped (dropped / merged): 321
 
 | verdict | rows |
 |---|---|
 | SHRUNK | 1 |
-| NOT CHECKED | 89 |
+| NOT CHECKED | 87 |
 
 | flag | rows |
 |---|---|
@@ -15,7 +15,7 @@ Live rows in the file: 90 · checked: 90 · skipped (dropped / merged): 335
 
 ## For a person to look at
 
-- **SHRUNK** `US-3791+US-4572@trail@37.144,-88.740`: live overlap is 41% smaller (5.6 ac vs 9.6 ac stored)
+- **SHRUNK** `US-3791+US-4572@trail@37.144,-88.740`: live overlap is 29% smaller (6.8 ac vs 9.6 ac stored)
 - **NOT CHECKED** `US-0019+US-10164@area@36.679,-83.503`: park is not in any boundary key that was loaded | park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-0050+US-10105@area@37.171,-86.155`: park is not in any boundary key that was loaded | park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-0050+US-10105@area@channel@37.220,-86.062`: park is not in any boundary key that was loaded | park is not in any boundary key that was loaded
@@ -25,7 +25,7 @@ Live rows in the file: 90 · checked: 90 · skipped (dropped / merged): 335
 - **NOT CHECKED** `US-0703+US-10140@area@36.509,-88.057`: park is not in any boundary key that was loaded | park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-0703+US-3790@same land@36.503,-88.061`: park is not in any boundary key that was loaded | park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-0703+US-3791@river@36.501,-88.068`: park is not in any boundary key that was loaded
-- **NOT CHECKED** `US-10098+US-4572@river@37.895,-87.443`: park is not in any boundary key that was loaded
+- **NOT CHECKED** `US-10098+US-4572@river@37.903,-87.553`: park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-10098+US-7951@area@37.883,-87.471`: park is not in any boundary key that was loaded | park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-10102+US-10112@trail@37.104,-82.760`: park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-10102+US-10139@trail@37.208,-82.534`: park is not in any boundary key that was loaded
@@ -82,21 +82,19 @@ Live rows in the file: 90 · checked: 90 · skipped (dropped / merged): 335
 - **NOT CHECKED** `US-1283+US-3791@river@37.000,-88.284`: park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-3790+US-3791@river@36.501,-88.066`: park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-3791+US-3792@river@36.982,-88.199`: park is not in any boundary key that was loaded
-- **NOT CHECKED** `US-3791+US-3793+US-4572@river@37.184,-89.049`: park is not in any boundary key that was loaded
-- **NOT CHECKED** `US-3791+US-3797+US-4572@river@37.013,-89.145`: park is not in any boundary key that was loaded
-- **NOT CHECKED** `US-3791+US-3808@river@36.797,-89.113`: park is not in any boundary key that was loaded
+- **NOT CHECKED** `US-3791+US-3793+US-4572@river@37.143,-89.086`: park is not in any boundary key that was loaded
+- **NOT CHECKED** `US-3791+US-3797+US-4572@river@37.108,-89.110`: park is not in any boundary key that was loaded
+- **NOT CHECKED** `US-3791+US-3808@river@36.789,-89.119`: park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-3791+US-3823@trail@37.366,-88.442`: park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-3791+US-3827@river@36.590,-89.143`: park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-3791+US-3837+US-4572@river@37.176,-88.808`: park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-3791+US-3838@river@36.935,-89.062`: park is not in any boundary key that was loaded
-- **NOT CHECKED** `US-3791+US-4572+US-7953@river@37.151,-88.770`: park is not in any boundary key that was loaded
-- **NOT CHECKED** `US-3793+US-4572@river@37.184,-89.049`: park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-3794+US-4484@area@36.917,-84.425`: park is not in any boundary key that was loaded | park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-3796+US-4572@river@37.518,-88.046`: park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-3801+US-4484@area@37.841,-83.582`: park is not in any boundary key that was loaded | park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-3830+US-4572@river@37.782,-87.904`: park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-3831+US-4572@river@38.738,-82.942`: park is not in any boundary key that was loaded
-- **NOT CHECKED** `US-3840+US-4572@river@37.884,-86.582`: park is not in any boundary key that was loaded
+- **NOT CHECKED** `US-3840+US-4572@river@38.006,-86.519`: park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-4484+US-7962@area@36.668,-84.698`: park is not in any boundary key that was loaded | park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-4484+US-7970@area@37.109,-84.239`: park is not in any boundary key that was loaded | park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-4484+US-7970@area@channel@37.102,-84.231`: park is not in any boundary key that was loaded | park is not in any boundary key that was loaded

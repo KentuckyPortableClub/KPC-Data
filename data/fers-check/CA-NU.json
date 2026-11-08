@@ -15,21 +15,21 @@
    "stored_acres": 163.7,
    "stored_wide_m": 39,
    "utm_epsg": 32614,
-   "checked_at": "2026-11-01T11:28:13Z",
+   "checked_at": "2026-11-08T06:01:03Z",
    "layers": [
     {
      "ref": "CA-0070",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:28:14Z"
+     "read": "2026-11-08T06:01:04Z"
     },
     {
      "ref": "CA-0127",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:28:16Z"
+     "read": "2026-11-08T06:01:06Z"
     }
    ],
    "saved_lines": [],
@@ -64,21 +64,21 @@
    "stored_acres": 2431423.5,
    "stored_wide_m": 14145,
    "utm_epsg": 32617,
-   "checked_at": "2026-11-01T11:28:17Z",
+   "checked_at": "2026-11-08T06:01:07Z",
    "layers": [
     {
      "ref": "CA-0091",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:28:18Z"
+     "read": "2026-11-08T06:01:08Z"
     },
     {
      "ref": "CA-4569",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:28:20Z"
+     "read": "2026-11-08T06:01:10Z"
     }
    ],
    "saved_lines": [],
@@ -99,8 +99,8 @@
     -78.93855
    ]
   },
-  "CA-0091+CA-4594@area@73.383,-83.641": {
-   "id": "CA-0091+CA-4594@area@73.383,-83.641",
+  "CA-0091+CA-4594@area@72.795,-79.728": {
+   "id": "CA-0091+CA-4594@area@72.795,-79.728",
    "area": "CA-NU",
    "refs": [
     "CA-0091",
@@ -108,42 +108,42 @@
    ],
    "kind": "area",
    "stored_status": "candidate",
-   "stored_acres": 222.3,
-   "stored_wide_m": 141,
+   "stored_acres": 114.7,
+   "stored_wide_m": 373,
    "utm_epsg": 32617,
-   "checked_at": "2026-11-01T11:28:21Z",
+   "checked_at": "2026-11-08T06:01:11Z",
    "layers": [
     {
      "ref": "CA-0091",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-01T11:28:22Z"
+     "read": "2026-11-08T06:01:12Z"
     },
     {
      "ref": "CA-4594",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:28:24Z"
+     "read": "2026-11-08T06:01:15Z"
     }
    ],
    "saved_lines": [],
    "stored_water_pct": 3,
-   "stored_shape_acres": 136.21,
-   "live_acres": 207.85,
+   "stored_shape_acres": 72.15,
+   "live_acres": 100.33,
    "kept_pct": 100.0,
-   "size_pct": -6.5,
-   "moved_m": 4,
+   "size_pct": -12.5,
+   "moved_m": 188,
    "gap_m": 0,
-   "wide_m": 146.9,
+   "wide_m": 463.8,
    "flags": [],
    "size_vs": "row acres",
    "verdict": "CONFIRMED",
-   "why": "live overlap 207.9 ac vs 222.3 ac stored (row acres; the stored shape is a 136.2 ac preview) (-6%), 100% of the stored overlap still inside (10 m tolerance)",
+   "why": "live overlap 100.3 ac vs 114.7 ac stored (row acres; the stored shape is a 72.2 ac preview) (-12%), 100% of the stored overlap still inside (10 m tolerance)",
    "live_center": [
-    73.493982,
-    -83.930248
+    72.802753,
+    -79.744703
    ]
   },
   "CA-4569+CA-4594@area@73.348,-76.870": {
@@ -158,21 +158,21 @@
    "stored_acres": 189453.5,
    "stored_wide_m": 3689,
    "utm_epsg": 32617,
-   "checked_at": "2026-11-01T11:28:26Z",
+   "checked_at": "2026-11-08T06:01:16Z",
    "layers": [
     {
      "ref": "CA-4569",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:28:27Z"
+     "read": "2026-11-08T06:01:18Z"
     },
     {
      "ref": "CA-4594",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-01T11:28:29Z"
+     "read": "2026-11-08T06:01:20Z"
     }
    ],
    "saved_lines": [],
@@ -194,8 +194,8 @@
    ]
   }
  },
- "started": "2026-11-01T11:28:13Z",
- "fers_sha256": "a2459b07ea8985161c10090161411640fa85d1824805891cb9abb3bff0e6291f",
+ "started": "2026-11-08T06:01:03Z",
+ "fers_sha256": "e62ee1f4f6320e2e160998fffdbfd83af1e191ad813aa5dc33272f7fae4f307f",
  "live_rows": 4,
  "skipped_rows": 230,
  "rules": {
@@ -204,7 +204,7 @@
   "moved_m": 200.0,
   "size_tol": 0.25
  },
- "updated": "2026-11-01T12:04:57Z",
+ "updated": "2026-11-08T06:01:21Z",
  "complete": true,
  "summary": {
   "rows": 4,
@@ -232,5 +232,5 @@
   "data/ca-key/CA-NT.json",
   "data/ca-key/CA-NU.json"
  ],
- "requests_this_run": 1
+ "requests_this_run": 2814
 }
