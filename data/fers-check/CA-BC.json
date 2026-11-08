@@ -15,21 +15,21 @@
    "stored_acres": 354.3,
    "stored_wide_m": 888,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:29:33Z",
+   "checked_at": "2026-11-08T11:16:13Z",
    "layers": [
     {
      "ref": "CA-0001",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:29:33Z"
+     "read": "2026-11-08T11:16:13Z"
     },
     {
      "ref": "CA-3539",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:29:35Z"
+     "read": "2026-11-08T11:16:15Z"
     }
    ],
    "saved_lines": [],
@@ -61,21 +61,21 @@
    "stored_acres": 23.5,
    "stored_wide_m": 225,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-08T05:29:36Z",
+   "checked_at": "2026-11-08T11:16:16Z",
    "layers": [
     {
      "ref": "CA-0018",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "4 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:29:37Z"
+     "read": "2026-11-08T11:16:17Z"
     },
     {
      "ref": "CA-3362",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:29:39Z"
+     "read": "2026-11-08T11:16:19Z"
     }
    ],
    "saved_lines": [],
@@ -96,6 +96,19 @@
     -116.406628
    ]
   },
+  "CA-0032+CA-3393@area@52.734,-132.106": {
+   "id": "CA-0032+CA-3393@area@52.734,-132.106",
+   "area": "CA-BC",
+   "refs": [
+    "CA-0032",
+    "CA-3393"
+   ],
+   "kind": "area",
+   "verdict": "SOURCE DOWN",
+   "why": "checker error on this row (retry; report if it repeats): GEOSException: IllegalArgumentException: Overlay input is mixed-dimension",
+   "flags": [],
+   "layers": []
+  },
   "CA-0045+CA-3829@area@51.066,-115.850": {
    "id": "CA-0045+CA-3829@area@51.066,-115.850",
    "area": "CA-BC",
@@ -108,28 +121,28 @@
    "stored_acres": 8.2,
    "stored_wide_m": 51,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-08T05:29:44Z",
+   "checked_at": "2026-11-08T11:16:24Z",
    "layers": [
     {
      "ref": "CA-0045",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:29:44Z"
+     "read": "2026-11-08T11:16:24Z"
     },
     {
      "ref": "CA-3829",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:29:46Z"
+     "read": "2026-11-08T11:16:26Z"
     },
     {
      "ref": "CA-3829",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:29:47Z"
+     "read": "2026-11-08T11:16:27Z"
     }
    ],
    "saved_lines": [],
@@ -162,14 +175,14 @@
    "stored_acres": 8.91,
    "stored_wide_m": 70.0,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:29:48Z",
+   "checked_at": "2026-11-08T11:16:28Z",
    "layers": [
     {
      "ref": "CA-0066",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:29:49Z"
+     "read": "2026-11-08T11:16:30Z"
     },
     {
      "ref": "CA-5344",
@@ -213,28 +226,28 @@
    "stored_acres": 10.6,
    "stored_wide_m": 69,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-08T05:29:50Z",
+   "checked_at": "2026-11-08T11:16:30Z",
    "layers": [
     {
      "ref": "CA-0105",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:29:51Z"
+     "read": "2026-11-08T11:16:31Z"
     },
     {
      "ref": "CA-4253",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:29:53Z"
+     "read": "2026-11-08T11:16:33Z"
     },
     {
      "ref": "CA-4253",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:29:54Z"
+     "read": "2026-11-08T11:16:34Z"
     }
    ],
    "saved_lines": [],
@@ -267,28 +280,28 @@
    "stored_acres": 10.6,
    "stored_wide_m": 69,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-08T05:29:55Z",
+   "checked_at": "2026-11-08T11:16:35Z",
    "layers": [
     {
      "ref": "CA-0105",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:29:51Z"
+     "read": "2026-11-08T11:16:31Z"
     },
     {
      "ref": "CA-4254",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:29:53Z"
+     "read": "2026-11-08T11:16:33Z"
     },
     {
      "ref": "CA-4254",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:29:54Z"
+     "read": "2026-11-08T11:16:34Z"
     }
    ],
    "saved_lines": [],
@@ -321,21 +334,21 @@
    "stored_acres": 0.1,
    "stored_wide_m": 20,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-08T05:29:55Z",
+   "checked_at": "2026-11-08T11:16:35Z",
    "layers": [
     {
      "ref": "CA-0117",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:29:55Z"
+     "read": "2026-11-08T11:16:35Z"
     },
     {
      "ref": "CA-4798",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:29:57Z"
+     "read": "2026-11-08T11:16:38Z"
     }
    ],
    "saved_lines": [],
@@ -362,42 +375,42 @@
    "stored_acres": 48.8,
    "stored_wide_m": 215,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-08T05:29:58Z",
+   "checked_at": "2026-11-08T11:16:38Z",
    "layers": [
     {
      "ref": "CA-0697",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:29:58Z"
+     "read": "2026-11-08T11:16:39Z"
     },
     {
      "ref": "CA-0697",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:29:59Z"
+     "read": "2026-11-08T11:16:40Z"
     },
     {
      "ref": "CA-4080",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:30:00Z"
+     "read": "2026-11-08T11:16:41Z"
     },
     {
      "ref": "CA-4080",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "3 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:30:01Z"
+     "read": "2026-11-08T11:16:42Z"
     },
     {
      "ref": "CA-4080",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:03Z"
+     "read": "2026-11-08T11:16:44Z"
     }
    ],
    "saved_lines": [],
@@ -430,28 +443,28 @@
    "stored_acres": 7230.2,
    "stored_wide_m": 1928,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-08T05:30:04Z",
+   "checked_at": "2026-11-08T11:16:45Z",
    "layers": [
     {
      "ref": "CA-0711",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:04Z"
+     "read": "2026-11-08T11:16:45Z"
     },
     {
      "ref": "CA-0711",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:30:06Z"
+     "read": "2026-11-08T11:16:46Z"
     },
     {
      "ref": "CA-4065",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:08Z"
+     "read": "2026-11-08T11:16:48Z"
     }
    ],
    "saved_lines": [],
@@ -485,42 +498,42 @@
    "stored_acres": 0.4,
    "stored_wide_m": 20,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:30:08Z",
+   "checked_at": "2026-11-08T11:16:49Z",
    "layers": [
     {
      "ref": "CA-0723",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:09Z"
+     "read": "2026-11-08T11:16:50Z"
     },
     {
      "ref": "CA-0723",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:11Z"
+     "read": "2026-11-08T11:16:51Z"
     },
     {
      "ref": "CA-1214",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:12Z"
+     "read": "2026-11-08T11:16:52Z"
     },
     {
      "ref": "CA-1214",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:13Z"
+     "read": "2026-11-08T11:16:53Z"
     },
     {
      "ref": "CA-3537",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:30:15Z"
+     "read": "2026-11-08T11:16:55Z"
     }
    ],
    "saved_lines": [],
@@ -548,42 +561,42 @@
    "stored_acres": 61.4,
    "stored_wide_m": 60,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:30:16Z",
+   "checked_at": "2026-11-08T11:16:56Z",
    "layers": [
     {
      "ref": "CA-0723",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:16Z"
+     "read": "2026-11-08T11:16:56Z"
     },
     {
      "ref": "CA-0723",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:16Z"
+     "read": "2026-11-08T11:16:56Z"
     },
     {
      "ref": "CA-3231",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:17Z"
+     "read": "2026-11-08T11:16:57Z"
     },
     {
      "ref": "CA-3231",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:18Z"
+     "read": "2026-11-08T11:16:59Z"
     },
     {
      "ref": "CA-3537",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:30:19Z"
+     "read": "2026-11-08T11:16:59Z"
     }
    ],
    "saved_lines": [],
@@ -611,35 +624,35 @@
    "stored_acres": 1112.3,
    "stored_wide_m": 740,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:30:19Z",
+   "checked_at": "2026-11-08T11:16:59Z",
    "layers": [
     {
      "ref": "CA-0723",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:19Z"
+     "read": "2026-11-08T11:17:00Z"
     },
     {
      "ref": "CA-0723",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:20Z"
+     "read": "2026-11-08T11:17:00Z"
     },
     {
      "ref": "CA-3537",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:30:20Z"
+     "read": "2026-11-08T11:17:01Z"
     },
     {
      "ref": "CA-3810",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:20Z"
+     "read": "2026-11-08T11:17:01Z"
     }
    ],
    "saved_lines": [],
@@ -666,28 +679,28 @@
    "stored_acres": 458443.5,
    "stored_wide_m": 33354,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:30:21Z",
+   "checked_at": "2026-11-08T11:17:02Z",
    "layers": [
     {
      "ref": "CA-0723",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:22Z"
+     "read": "2026-11-08T11:17:03Z"
     },
     {
      "ref": "CA-0723",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:22Z"
+     "read": "2026-11-08T11:17:03Z"
     },
     {
      "ref": "CA-3537",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:30:22Z"
+     "read": "2026-11-08T11:17:03Z"
     }
    ],
    "saved_lines": [],
@@ -714,49 +727,49 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:30:22Z",
+   "checked_at": "2026-11-08T11:17:03Z",
    "layers": [
     {
      "ref": "CA-0748",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:30:23Z"
+     "read": "2026-11-08T11:17:04Z"
     },
     {
      "ref": "CA-0748",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:30:24Z"
+     "read": "2026-11-08T11:17:05Z"
     },
     {
      "ref": "CA-0748",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:25Z"
+     "read": "2026-11-08T11:17:06Z"
     },
     {
      "ref": "CA-4282",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:30:23Z"
+     "read": "2026-11-08T11:17:04Z"
     },
     {
      "ref": "CA-4282",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:30:24Z"
+     "read": "2026-11-08T11:17:05Z"
     },
     {
      "ref": "CA-4282",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:25Z"
+     "read": "2026-11-08T11:17:06Z"
     }
    ],
    "saved_lines": [],
@@ -788,42 +801,42 @@
    "stored_acres": 133.2,
    "stored_wide_m": 587,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-08T05:30:26Z",
+   "checked_at": "2026-11-08T11:17:07Z",
    "layers": [
     {
      "ref": "CA-0750",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
      "how": "2 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:27Z"
+     "read": "2026-11-08T11:17:08Z"
     },
     {
      "ref": "CA-0750",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:30:28Z"
+     "read": "2026-11-08T11:17:09Z"
     },
     {
      "ref": "CA-0750",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:30:29Z"
+     "read": "2026-11-08T11:17:10Z"
     },
     {
      "ref": "CA-3543",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:30Z"
+     "read": "2026-11-08T11:17:11Z"
     },
     {
      "ref": "CA-3543",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:31Z"
+     "read": "2026-11-08T11:17:12Z"
     }
    ],
    "saved_lines": [],
@@ -855,42 +868,42 @@
    "stored_acres": 0.3,
    "stored_wide_m": 20,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:30:32Z",
+   "checked_at": "2026-11-08T11:17:13Z",
    "layers": [
     {
      "ref": "CA-1204",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:30:32Z"
+     "read": "2026-11-08T11:17:13Z"
     },
     {
      "ref": "CA-1204",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:33Z"
+     "read": "2026-11-08T11:17:14Z"
     },
     {
      "ref": "CA-3247",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:35Z"
+     "read": "2026-11-08T11:17:15Z"
     },
     {
      "ref": "CA-3247",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:36Z"
+     "read": "2026-11-08T11:17:16Z"
     },
     {
      "ref": "CA-3247",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:37Z"
+     "read": "2026-11-08T11:17:18Z"
     }
    ],
    "saved_lines": [],
@@ -924,28 +937,28 @@
    "stored_acres": 0.4,
    "stored_wide_m": 20,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:30:38Z",
+   "checked_at": "2026-11-08T11:17:18Z",
    "layers": [
     {
      "ref": "CA-1214",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:38Z"
+     "read": "2026-11-08T11:17:18Z"
     },
     {
      "ref": "CA-1214",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:38Z"
+     "read": "2026-11-08T11:17:18Z"
     },
     {
      "ref": "CA-3537",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:30:39Z"
+     "read": "2026-11-08T11:17:19Z"
     }
    ],
    "saved_lines": [],
@@ -972,28 +985,28 @@
    "stored_acres": 447.2,
    "stored_wide_m": 1056,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:30:39Z",
+   "checked_at": "2026-11-08T11:17:19Z",
    "layers": [
     {
      "ref": "CA-3193",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:39Z"
+     "read": "2026-11-08T11:17:19Z"
     },
     {
      "ref": "CA-3193",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:40Z"
+     "read": "2026-11-08T11:17:21Z"
     },
     {
      "ref": "CA-3194",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:39Z"
+     "read": "2026-11-08T11:17:19Z"
     }
    ],
    "saved_lines": [],
@@ -1026,35 +1039,35 @@
    "stored_acres": 0.3,
    "stored_wide_m": 20,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:30:41Z",
+   "checked_at": "2026-11-08T11:17:22Z",
    "layers": [
     {
      "ref": "CA-3200",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "9 record id(s)",
      "n": 9,
-     "read": "2026-11-08T05:30:41Z"
+     "read": "2026-11-08T11:17:22Z"
     },
     {
      "ref": "CA-3200",
      "layer": "https://gis.burnaby.ca/arcgis/rest/services/OpenData/OpenData1/MapServer/6",
      "how": "21 record id(s)",
      "n": 17,
-     "read": "2026-11-08T05:30:43Z"
+     "read": "2026-11-08T11:17:39Z"
     },
     {
      "ref": "CA-3278",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "8 record id(s)",
      "n": 5,
-     "read": "2026-11-08T05:30:44Z"
+     "read": "2026-11-08T11:17:40Z"
     },
     {
      "ref": "CA-3278",
      "layer": "https://gis.burnaby.ca/arcgis/rest/services/OpenData/OpenData1/MapServer/6",
      "how": "20 record id(s)",
      "n": 13,
-     "read": "2026-11-08T05:30:45Z"
+     "read": "2026-11-08T11:17:41Z"
     }
    ],
    "saved_lines": [],
@@ -1081,42 +1094,42 @@
    "stored_acres": 17.8,
    "stored_wide_m": 204,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:30:46Z",
+   "checked_at": "2026-11-08T11:17:42Z",
    "layers": [
     {
      "ref": "CA-3209",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:46Z"
+     "read": "2026-11-08T11:17:43Z"
     },
     {
      "ref": "CA-3209",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:47Z"
+     "read": "2026-11-08T11:17:44Z"
     },
     {
      "ref": "CA-4044",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:48Z"
+     "read": "2026-11-08T11:17:45Z"
     },
     {
      "ref": "CA-4044",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:30:50Z"
+     "read": "2026-11-08T11:17:46Z"
     },
     {
      "ref": "CA-4044",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:51Z"
+     "read": "2026-11-08T11:17:47Z"
     }
    ],
    "saved_lines": [],
@@ -1150,42 +1163,42 @@
    "stored_acres": 0.1,
    "stored_wide_m": 20,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:30:52Z",
+   "checked_at": "2026-11-08T11:17:48Z",
    "layers": [
     {
      "ref": "CA-3215",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:52Z"
+     "read": "2026-11-08T11:17:48Z"
     },
     {
      "ref": "CA-3215",
      "layer": "https://services6.arcgis.com/56eqCzQ5SZhBaDST/arcgis/rest/services/RegionalParksBoundaries_OpenData/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:54Z"
+     "read": "2026-11-08T11:17:50Z"
     },
     {
      "ref": "CA-3215",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "3 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:55Z"
+     "read": "2026-11-08T11:17:51Z"
     },
     {
      "ref": "CA-4060",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:56Z"
+     "read": "2026-11-08T11:17:52Z"
     },
     {
      "ref": "CA-4060",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:57Z"
+     "read": "2026-11-08T11:17:53Z"
     }
    ],
    "saved_lines": [],
@@ -1219,28 +1232,28 @@
    "stored_acres": 647.5,
    "stored_wide_m": 1145,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:30:58Z",
+   "checked_at": "2026-11-08T11:17:54Z",
    "layers": [
     {
      "ref": "CA-3228",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:59Z"
+     "read": "2026-11-08T11:17:55Z"
     },
     {
      "ref": "CA-3228",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:00Z"
+     "read": "2026-11-08T11:17:56Z"
     },
     {
      "ref": "CA-4214",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:01Z"
+     "read": "2026-11-08T11:17:57Z"
     }
    ],
    "saved_lines": [],
@@ -1273,28 +1286,28 @@
    "stored_acres": 91.6,
    "stored_wide_m": 60,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:31:02Z",
+   "checked_at": "2026-11-08T11:17:58Z",
    "layers": [
     {
      "ref": "CA-3231",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:03Z"
+     "read": "2026-11-08T11:17:59Z"
     },
     {
      "ref": "CA-3231",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:03Z"
+     "read": "2026-11-08T11:18:00Z"
     },
     {
      "ref": "CA-3537",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:31:03Z"
+     "read": "2026-11-08T11:18:00Z"
     }
    ],
    "saved_lines": [],
@@ -1322,35 +1335,35 @@
    "stored_acres": 0.3,
    "stored_wide_m": 20,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:31:04Z",
+   "checked_at": "2026-11-08T11:18:00Z",
    "layers": [
     {
      "ref": "CA-3245",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:31:04Z"
+     "read": "2026-11-08T11:18:00Z"
     },
     {
      "ref": "CA-4031",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "2 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:31:05Z"
+     "read": "2026-11-08T11:18:01Z"
     },
     {
      "ref": "CA-5901",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:06Z"
+     "read": "2026-11-08T11:18:03Z"
     },
     {
      "ref": "CA-5901",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:07Z"
+     "read": "2026-11-08T11:18:04Z"
     }
    ],
    "saved_lines": [],
@@ -1377,21 +1390,21 @@
    "stored_acres": 3.6,
    "stored_wide_m": 100,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:31:08Z",
+   "checked_at": "2026-11-08T11:18:05Z",
    "layers": [
     {
      "ref": "CA-3245",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:31:08Z"
+     "read": "2026-11-08T11:18:05Z"
     },
     {
      "ref": "CA-4031",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "2 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:31:09Z"
+     "read": "2026-11-08T11:18:06Z"
     }
    ],
    "saved_lines": [],
@@ -1418,35 +1431,35 @@
    "stored_acres": 1775.4,
    "stored_wide_m": 1187,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:31:09Z",
+   "checked_at": "2026-11-08T11:18:06Z",
    "layers": [
     {
      "ref": "CA-3245",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:31:09Z"
+     "read": "2026-11-08T11:18:06Z"
     },
     {
      "ref": "CA-5497",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:10Z"
+     "read": "2026-11-08T11:18:07Z"
     },
     {
      "ref": "CA-5497",
      "layer": "https://services6.arcgis.com/56eqCzQ5SZhBaDST/arcgis/rest/services/RegionalParksBoundaries_OpenData/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:11Z"
+     "read": "2026-11-08T11:18:08Z"
     },
     {
      "ref": "CA-5497",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:12Z"
+     "read": "2026-11-08T11:18:09Z"
     }
    ],
    "saved_lines": [],
@@ -1480,21 +1493,21 @@
    "stored_acres": 0.6,
    "stored_wide_m": 20,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:31:13Z",
+   "checked_at": "2026-11-08T11:18:10Z",
    "layers": [
     {
      "ref": "CA-3245",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:31:14Z"
+     "read": "2026-11-08T11:18:11Z"
     },
     {
      "ref": "CA-5548",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:31:15Z"
+     "read": "2026-11-08T11:18:11Z"
     }
    ],
    "saved_lines": [],
@@ -1528,28 +1541,28 @@
    "stored_acres": 2.1,
    "stored_wide_m": 60,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:31:15Z",
+   "checked_at": "2026-11-08T11:18:12Z",
    "layers": [
     {
      "ref": "CA-3245",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:31:16Z"
+     "read": "2026-11-08T11:18:12Z"
     },
     {
      "ref": "CA-5901",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:17Z"
+     "read": "2026-11-08T11:18:13Z"
     },
     {
      "ref": "CA-5901",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:17Z"
+     "read": "2026-11-08T11:18:13Z"
     }
    ],
    "saved_lines": [],
@@ -1576,28 +1589,28 @@
    "stored_acres": 16.9,
    "stored_wide_m": 180,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:31:17Z",
+   "checked_at": "2026-11-08T11:18:13Z",
    "layers": [
     {
      "ref": "CA-3245",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:31:18Z"
+     "read": "2026-11-08T11:18:14Z"
     },
     {
      "ref": "CA-6382",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:31:18Z"
+     "read": "2026-11-08T11:18:14Z"
     },
     {
      "ref": "CA-6382",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:31:20Z"
+     "read": "2026-11-08T11:18:16Z"
     }
    ],
    "saved_lines": [],
@@ -1631,49 +1644,49 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:31:21Z",
+   "checked_at": "2026-11-08T11:18:17Z",
    "layers": [
     {
      "ref": "CA-3250",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:31:21Z"
+     "read": "2026-11-08T11:18:17Z"
     },
     {
      "ref": "CA-3250",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:31:22Z"
+     "read": "2026-11-08T11:18:18Z"
     },
     {
      "ref": "CA-3250",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:23Z"
+     "read": "2026-11-08T11:18:19Z"
     },
     {
      "ref": "CA-3251",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:31:21Z"
+     "read": "2026-11-08T11:18:17Z"
     },
     {
      "ref": "CA-3251",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:31:22Z"
+     "read": "2026-11-08T11:18:18Z"
     },
     {
      "ref": "CA-3251",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:23Z"
+     "read": "2026-11-08T11:18:19Z"
     }
    ],
    "saved_lines": [],
@@ -1705,42 +1718,42 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-08T05:31:24Z",
+   "checked_at": "2026-11-08T11:18:20Z",
    "layers": [
     {
      "ref": "CA-3261",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:31:24Z"
+     "read": "2026-11-08T11:18:20Z"
     },
     {
      "ref": "CA-3261",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:31:25Z"
+     "read": "2026-11-08T11:18:21Z"
     },
     {
      "ref": "CA-3262",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:26Z"
+     "read": "2026-11-08T11:18:23Z"
     },
     {
      "ref": "CA-3262",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:27Z"
+     "read": "2026-11-08T11:18:24Z"
     },
     {
      "ref": "CA-3262",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:28Z"
+     "read": "2026-11-08T11:18:25Z"
     }
    ],
    "saved_lines": [],
@@ -1772,35 +1785,35 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-08T05:31:29Z",
+   "checked_at": "2026-11-08T11:18:26Z",
    "layers": [
     {
      "ref": "CA-3263",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:30Z"
+     "read": "2026-11-08T11:18:27Z"
     },
     {
      "ref": "CA-3263",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:31:32Z"
+     "read": "2026-11-08T11:18:28Z"
     },
     {
      "ref": "CA-3264",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:30Z"
+     "read": "2026-11-08T11:18:27Z"
     },
     {
      "ref": "CA-3264",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "3 record id(s)",
      "n": 3,
-     "read": "2026-11-08T05:31:34Z"
+     "read": "2026-11-08T11:18:30Z"
     }
    ],
    "saved_lines": [],
@@ -1832,42 +1845,42 @@
    "stored_acres": 2.3,
    "stored_wide_m": 36,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:31:35Z",
+   "checked_at": "2026-11-08T11:18:31Z",
    "layers": [
     {
      "ref": "CA-3275",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:35Z"
+     "read": "2026-11-08T11:18:32Z"
     },
     {
      "ref": "CA-3275",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:36Z"
+     "read": "2026-11-08T11:18:33Z"
     },
     {
      "ref": "CA-3840",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:31:37Z"
+     "read": "2026-11-08T11:18:34Z"
     },
     {
      "ref": "CA-3840",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:39Z"
+     "read": "2026-11-08T11:18:35Z"
     },
     {
      "ref": "CA-3840",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:31:40Z"
+     "read": "2026-11-08T11:18:36Z"
     }
    ],
    "saved_lines": [],
@@ -1901,21 +1914,21 @@
    "stored_acres": 2.8,
    "stored_wide_m": 79,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-08T05:31:41Z",
+   "checked_at": "2026-11-08T11:18:37Z",
    "layers": [
     {
      "ref": "CA-3303",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:41Z"
+     "read": "2026-11-08T11:18:37Z"
     },
     {
      "ref": "CA-3615",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:43Z"
+     "read": "2026-11-08T11:18:39Z"
     }
    ],
    "saved_lines": [],
@@ -1947,35 +1960,35 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:31:44Z",
+   "checked_at": "2026-11-08T11:18:40Z",
    "layers": [
     {
      "ref": "CA-3320",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:31:45Z"
+     "read": "2026-11-08T11:18:41Z"
     },
     {
      "ref": "CA-3320",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:31:46Z"
+     "read": "2026-11-08T11:18:42Z"
     },
     {
      "ref": "CA-3321",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:47Z"
+     "read": "2026-11-08T11:18:43Z"
     },
     {
      "ref": "CA-3321",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:48Z"
+     "read": "2026-11-08T11:18:44Z"
     }
    ],
    "saved_lines": [],
@@ -2007,35 +2020,35 @@
    "stored_acres": 1.2,
    "stored_wide_m": 20,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:31:49Z",
+   "checked_at": "2026-11-08T11:18:46Z",
    "layers": [
     {
      "ref": "CA-3328",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:50Z"
+     "read": "2026-11-08T11:18:46Z"
     },
     {
      "ref": "CA-3328",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:51Z"
+     "read": "2026-11-08T11:18:47Z"
     },
     {
      "ref": "CA-3328",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:31:52Z"
+     "read": "2026-11-08T11:18:49Z"
     },
     {
      "ref": "CA-5346",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:54Z"
+     "read": "2026-11-08T11:18:50Z"
     }
    ],
    "saved_lines": [],
@@ -2069,28 +2082,28 @@
    "stored_acres": 37.6,
    "stored_wide_m": 39,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:31:55Z",
+   "checked_at": "2026-11-08T11:18:51Z",
    "layers": [
     {
      "ref": "CA-3347",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:55Z"
+     "read": "2026-11-08T11:18:52Z"
     },
     {
      "ref": "CA-3347",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:56Z"
+     "read": "2026-11-08T11:18:53Z"
     },
     {
      "ref": "CA-4241",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:31:58Z"
+     "read": "2026-11-08T11:18:55Z"
     }
    ],
    "saved_lines": [],
@@ -2125,35 +2138,35 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:31:59Z",
+   "checked_at": "2026-11-08T11:18:56Z",
    "layers": [
     {
      "ref": "CA-3348",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:00Z"
+     "read": "2026-11-08T11:18:58Z"
     },
     {
      "ref": "CA-3348",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:01Z"
+     "read": "2026-11-08T11:18:58Z"
     },
     {
      "ref": "CA-3349",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:00Z"
+     "read": "2026-11-08T11:18:58Z"
     },
     {
      "ref": "CA-3349",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:01Z"
+     "read": "2026-11-08T11:18:58Z"
     }
    ],
    "saved_lines": [],
@@ -2185,49 +2198,49 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:32:02Z",
+   "checked_at": "2026-11-08T11:18:59Z",
    "layers": [
     {
      "ref": "CA-3410",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:02Z"
+     "read": "2026-11-08T11:18:59Z"
     },
     {
      "ref": "CA-3410",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:03Z"
+     "read": "2026-11-08T11:19:01Z"
     },
     {
      "ref": "CA-3410",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:04Z"
+     "read": "2026-11-08T11:19:01Z"
     },
     {
      "ref": "CA-3411",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:02Z"
+     "read": "2026-11-08T11:18:59Z"
     },
     {
      "ref": "CA-3411",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:03Z"
+     "read": "2026-11-08T11:19:01Z"
     },
     {
      "ref": "CA-3411",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:04Z"
+     "read": "2026-11-08T11:19:01Z"
     }
    ],
    "saved_lines": [],
@@ -2259,35 +2272,35 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:32:05Z",
+   "checked_at": "2026-11-08T11:19:02Z",
    "layers": [
     {
      "ref": "CA-3439",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:05Z"
+     "read": "2026-11-08T11:19:03Z"
     },
     {
      "ref": "CA-3439",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:07Z"
+     "read": "2026-11-08T11:19:04Z"
     },
     {
      "ref": "CA-3440",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:05Z"
+     "read": "2026-11-08T11:19:03Z"
     },
     {
      "ref": "CA-3440",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:07Z"
+     "read": "2026-11-08T11:19:04Z"
     }
    ],
    "saved_lines": [],
@@ -2320,28 +2333,28 @@
    "stored_acres": 0.1,
    "stored_wide_m": 20,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:32:07Z",
+   "checked_at": "2026-11-08T11:19:05Z",
    "layers": [
     {
      "ref": "CA-3453",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:08Z"
+     "read": "2026-11-08T11:19:05Z"
     },
     {
      "ref": "CA-4071",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:10Z"
+     "read": "2026-11-08T11:19:07Z"
     },
     {
      "ref": "CA-4106",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:12Z"
+     "read": "2026-11-08T11:19:09Z"
     }
    ],
    "saved_lines": [],
@@ -2368,21 +2381,21 @@
    "stored_acres": 0.1,
    "stored_wide_m": 20,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:32:13Z",
+   "checked_at": "2026-11-08T11:19:10Z",
    "layers": [
     {
      "ref": "CA-3453",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:14Z"
+     "read": "2026-11-08T11:19:11Z"
     },
     {
      "ref": "CA-4071",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:15Z"
+     "read": "2026-11-08T11:19:12Z"
     }
    ],
    "saved_lines": [],
@@ -2409,21 +2422,21 @@
    "stored_acres": 0.1,
    "stored_wide_m": 20,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:32:15Z",
+   "checked_at": "2026-11-08T11:19:12Z",
    "layers": [
     {
      "ref": "CA-3453",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:14Z"
+     "read": "2026-11-08T11:19:11Z"
     },
     {
      "ref": "CA-4106",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:16Z"
+     "read": "2026-11-08T11:19:13Z"
     }
    ],
    "saved_lines": [],
@@ -2450,35 +2463,35 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:32:16Z",
+   "checked_at": "2026-11-08T11:19:13Z",
    "layers": [
     {
      "ref": "CA-3465",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:16Z"
+     "read": "2026-11-08T11:19:13Z"
     },
     {
      "ref": "CA-3465",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:17Z"
+     "read": "2026-11-08T11:19:14Z"
     },
     {
      "ref": "CA-3466",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:16Z"
+     "read": "2026-11-08T11:19:13Z"
     },
     {
      "ref": "CA-3466",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:17Z"
+     "read": "2026-11-08T11:19:14Z"
     }
    ],
    "saved_lines": [],
@@ -2510,35 +2523,35 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-08T05:32:18Z",
+   "checked_at": "2026-11-08T11:19:15Z",
    "layers": [
     {
      "ref": "CA-3495",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:18Z"
+     "read": "2026-11-08T11:19:15Z"
     },
     {
      "ref": "CA-3495",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:19Z"
+     "read": "2026-11-08T11:19:16Z"
     },
     {
      "ref": "CA-3496",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:18Z"
+     "read": "2026-11-08T11:19:15Z"
     },
     {
      "ref": "CA-3496",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:19Z"
+     "read": "2026-11-08T11:19:16Z"
     }
    ],
    "saved_lines": [],
@@ -2570,28 +2583,28 @@
    "stored_acres": 36.4,
    "stored_wide_m": 204,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:32:20Z",
+   "checked_at": "2026-11-08T11:19:17Z",
    "layers": [
     {
      "ref": "CA-3498",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:20Z"
+     "read": "2026-11-08T11:19:17Z"
     },
     {
      "ref": "CA-3498",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:21Z"
+     "read": "2026-11-08T11:19:18Z"
     },
     {
      "ref": "CA-5327",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:32:22Z"
+     "read": "2026-11-08T11:19:19Z"
     }
    ],
    "saved_lines": [],
@@ -2618,35 +2631,35 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-08T05:32:23Z",
+   "checked_at": "2026-11-08T11:19:20Z",
    "layers": [
     {
      "ref": "CA-3504",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:23Z"
+     "read": "2026-11-08T11:19:20Z"
     },
     {
      "ref": "CA-3504",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:24Z"
+     "read": "2026-11-08T11:19:21Z"
     },
     {
      "ref": "CA-3505",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:23Z"
+     "read": "2026-11-08T11:19:20Z"
     },
     {
      "ref": "CA-3505",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:24Z"
+     "read": "2026-11-08T11:19:21Z"
     }
    ],
    "saved_lines": [],
@@ -2678,21 +2691,21 @@
    "stored_acres": 161.2,
    "stored_wide_m": 651,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-08T05:32:25Z",
+   "checked_at": "2026-11-08T11:19:22Z",
    "layers": [
     {
      "ref": "CA-3506",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:25Z"
+     "read": "2026-11-08T11:19:23Z"
     },
     {
      "ref": "CA-3615",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:27Z"
+     "read": "2026-11-08T11:19:25Z"
     }
    ],
    "saved_lines": [],
@@ -2724,28 +2737,28 @@
    "stored_acres": 97.0,
    "stored_wide_m": 348,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:32:27Z",
+   "checked_at": "2026-11-08T11:19:25Z",
    "layers": [
     {
      "ref": "CA-3508",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:32:27Z"
+     "read": "2026-11-08T11:19:25Z"
     },
     {
      "ref": "CA-3509",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:28Z"
+     "read": "2026-11-08T11:19:26Z"
     },
     {
      "ref": "CA-3509",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:30Z"
+     "read": "2026-11-08T11:19:27Z"
     }
    ],
    "saved_lines": [],
@@ -2772,21 +2785,21 @@
    "stored_acres": 0.1,
    "stored_wide_m": 20,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:32:31Z",
+   "checked_at": "2026-11-08T11:19:28Z",
    "layers": [
     {
      "ref": "CA-3514",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "2 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:32Z"
+     "read": "2026-11-08T11:19:29Z"
     },
     {
      "ref": "CA-3792",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:34Z"
+     "read": "2026-11-08T11:19:31Z"
     }
    ],
    "saved_lines": [],
@@ -2813,35 +2826,35 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:32:35Z",
+   "checked_at": "2026-11-08T11:19:32Z",
    "layers": [
     {
      "ref": "CA-3522",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "4 record id(s)",
      "n": 4,
-     "read": "2026-11-08T05:32:35Z"
+     "read": "2026-11-08T11:19:32Z"
     },
     {
      "ref": "CA-3522",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:36Z"
+     "read": "2026-11-08T11:19:33Z"
     },
     {
      "ref": "CA-3523",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:37Z"
+     "read": "2026-11-08T11:19:34Z"
     },
     {
      "ref": "CA-3523",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:38Z"
+     "read": "2026-11-08T11:19:35Z"
     }
    ],
    "saved_lines": [],
@@ -2873,49 +2886,49 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:32:39Z",
+   "checked_at": "2026-11-08T11:19:36Z",
    "layers": [
     {
      "ref": "CA-3524",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:40Z"
+     "read": "2026-11-08T11:19:37Z"
     },
     {
      "ref": "CA-3524",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:41Z"
+     "read": "2026-11-08T11:19:38Z"
     },
     {
      "ref": "CA-3524",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:42Z"
+     "read": "2026-11-08T11:19:40Z"
     },
     {
      "ref": "CA-3525",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:40Z"
+     "read": "2026-11-08T11:19:37Z"
     },
     {
      "ref": "CA-3525",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:41Z"
+     "read": "2026-11-08T11:19:38Z"
     },
     {
      "ref": "CA-3525",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:42Z"
+     "read": "2026-11-08T11:19:40Z"
     }
    ],
    "saved_lines": [],
@@ -2947,21 +2960,21 @@
    "stored_acres": 1171.6,
    "stored_wide_m": 780,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:32:43Z",
+   "checked_at": "2026-11-08T11:19:40Z",
    "layers": [
     {
      "ref": "CA-3537",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:32:44Z"
+     "read": "2026-11-08T11:19:41Z"
     },
     {
      "ref": "CA-3810",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:44Z"
+     "read": "2026-11-08T11:19:41Z"
     }
    ],
    "saved_lines": [],
@@ -2988,21 +3001,21 @@
    "stored_acres": 565.1,
    "stored_wide_m": 1107,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:32:44Z",
+   "checked_at": "2026-11-08T11:19:41Z",
    "layers": [
     {
      "ref": "CA-3539",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:32:45Z"
+     "read": "2026-11-08T11:19:42Z"
     },
     {
      "ref": "CA-4026",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:46Z"
+     "read": "2026-11-08T11:19:43Z"
     }
    ],
    "saved_lines": [],
@@ -3034,42 +3047,42 @@
    "stored_acres": 133.2,
    "stored_wide_m": 587,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-08T05:32:47Z",
+   "checked_at": "2026-11-08T11:19:44Z",
    "layers": [
     {
      "ref": "CA-3542",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:32:48Z"
+     "read": "2026-11-08T11:19:45Z"
     },
     {
      "ref": "CA-3542",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:32:49Z"
+     "read": "2026-11-08T11:19:47Z"
     },
     {
      "ref": "CA-3542",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
      "how": "2 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:50Z"
+     "read": "2026-11-08T11:19:48Z"
     },
     {
      "ref": "CA-3543",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:30Z"
+     "read": "2026-11-08T11:17:11Z"
     },
     {
      "ref": "CA-3543",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:30:31Z"
+     "read": "2026-11-08T11:17:12Z"
     }
    ],
    "saved_lines": [],
@@ -3101,21 +3114,21 @@
    "stored_acres": 1.3,
    "stored_wide_m": 31,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-08T05:32:51Z",
+   "checked_at": "2026-11-08T11:19:49Z",
    "layers": [
     {
      "ref": "CA-3615",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:51Z"
+     "read": "2026-11-08T11:19:49Z"
     },
     {
      "ref": "CA-4243",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:52Z"
+     "read": "2026-11-08T11:19:50Z"
     }
    ],
    "saved_lines": [],
@@ -3149,21 +3162,21 @@
    "stored_acres": 1.5,
    "stored_wide_m": 23,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-08T05:32:53Z",
+   "checked_at": "2026-11-08T11:19:51Z",
    "layers": [
     {
      "ref": "CA-3615",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:54Z"
+     "read": "2026-11-08T11:19:52Z"
     },
     {
      "ref": "CA-4243",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:55Z"
+     "read": "2026-11-08T11:19:53Z"
     }
    ],
    "saved_lines": [],
@@ -3197,28 +3210,28 @@
    "stored_acres": 0.2,
    "stored_wide_m": 20,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:32:55Z",
+   "checked_at": "2026-11-08T11:19:53Z",
    "layers": [
     {
      "ref": "CA-3617",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "6 record id(s)",
      "n": 6,
-     "read": "2026-11-08T05:32:55Z"
+     "read": "2026-11-08T11:19:53Z"
     },
     {
      "ref": "CA-5498",
      "layer": "https://services6.arcgis.com/56eqCzQ5SZhBaDST/arcgis/rest/services/RegionalParksBoundaries_OpenData/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:56Z"
+     "read": "2026-11-08T11:19:54Z"
     },
     {
      "ref": "CA-5498",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:58Z"
+     "read": "2026-11-08T11:19:55Z"
     }
    ],
    "saved_lines": [],
@@ -3252,35 +3265,35 @@
    "stored_acres": 3.2,
    "stored_wide_m": 31,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-08T05:32:59Z",
+   "checked_at": "2026-11-08T11:19:56Z",
    "layers": [
     {
      "ref": "CA-3624",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:32:59Z"
+     "read": "2026-11-08T11:19:56Z"
     },
     {
      "ref": "CA-3624",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:00Z"
+     "read": "2026-11-08T11:19:57Z"
     },
     {
      "ref": "CA-3624",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:01Z"
+     "read": "2026-11-08T11:19:58Z"
     },
     {
      "ref": "CA-4122",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:02Z"
+     "read": "2026-11-08T11:19:59Z"
     }
    ],
    "saved_lines": [],
@@ -3315,21 +3328,21 @@
    "stored_acres": 100.7,
    "stored_wide_m": 464,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-08T05:33:03Z",
+   "checked_at": "2026-11-08T11:20:00Z",
    "layers": [
     {
      "ref": "CA-3672",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:04Z"
+     "read": "2026-11-08T11:20:01Z"
     },
     {
      "ref": "CA-3674",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:06Z"
+     "read": "2026-11-08T11:20:03Z"
     }
    ],
    "saved_lines": [],
@@ -3361,35 +3374,35 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-08T05:33:07Z",
+   "checked_at": "2026-11-08T11:20:04Z",
    "layers": [
     {
      "ref": "CA-3684",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:08Z"
+     "read": "2026-11-08T11:20:05Z"
     },
     {
      "ref": "CA-3684",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:09Z"
+     "read": "2026-11-08T11:20:06Z"
     },
     {
      "ref": "CA-3685",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:10Z"
+     "read": "2026-11-08T11:20:07Z"
     },
     {
      "ref": "CA-3685",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:11Z"
+     "read": "2026-11-08T11:20:08Z"
     }
    ],
    "saved_lines": [],
@@ -3421,28 +3434,28 @@
    "stored_acres": 8429.3,
    "stored_wide_m": 1165,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-08T05:33:12Z",
+   "checked_at": "2026-11-08T11:20:09Z",
    "layers": [
     {
      "ref": "CA-3724",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:13Z"
+     "read": "2026-11-08T11:20:10Z"
     },
     {
      "ref": "CA-3724",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:14Z"
+     "read": "2026-11-08T11:20:12Z"
     },
     {
      "ref": "CA-4065",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:16Z"
+     "read": "2026-11-08T11:20:14Z"
     }
    ],
    "saved_lines": [],
@@ -3475,35 +3488,35 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-08T05:33:16Z",
+   "checked_at": "2026-11-08T11:20:14Z",
    "layers": [
     {
      "ref": "CA-3781",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:17Z"
+     "read": "2026-11-08T11:20:15Z"
     },
     {
      "ref": "CA-3781",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:18Z"
+     "read": "2026-11-08T11:20:16Z"
     },
     {
      "ref": "CA-3782",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:19Z"
+     "read": "2026-11-08T11:20:17Z"
     },
     {
      "ref": "CA-3782",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:20Z"
+     "read": "2026-11-08T11:20:18Z"
     }
    ],
    "saved_lines": [],
@@ -3535,35 +3548,35 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:33:21Z",
+   "checked_at": "2026-11-08T11:20:19Z",
    "layers": [
     {
      "ref": "CA-3789",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:21Z"
+     "read": "2026-11-08T11:20:19Z"
     },
     {
      "ref": "CA-3789",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:22Z"
+     "read": "2026-11-08T11:20:20Z"
     },
     {
      "ref": "CA-3790",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:21Z"
+     "read": "2026-11-08T11:20:19Z"
     },
     {
      "ref": "CA-3790",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:22Z"
+     "read": "2026-11-08T11:20:20Z"
     }
    ],
    "saved_lines": [],
@@ -3595,28 +3608,28 @@
    "stored_acres": 9.1,
    "stored_wide_m": 101,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-08T05:33:23Z",
+   "checked_at": "2026-11-08T11:20:21Z",
    "layers": [
     {
      "ref": "CA-3791",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:23Z"
+     "read": "2026-11-08T11:20:21Z"
     },
     {
      "ref": "CA-4239",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:25Z"
+     "read": "2026-11-08T11:20:23Z"
     },
     {
      "ref": "CA-4239",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:26Z"
+     "read": "2026-11-08T11:20:24Z"
     }
    ],
    "saved_lines": [],
@@ -3650,35 +3663,35 @@
    "stored_acres": 30.9,
    "stored_wide_m": 180,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-08T05:33:27Z",
+   "checked_at": "2026-11-08T11:20:25Z",
    "layers": [
     {
      "ref": "CA-3797",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:27Z"
+     "read": "2026-11-08T11:20:25Z"
     },
     {
      "ref": "CA-4097",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:29Z"
+     "read": "2026-11-08T11:20:27Z"
     },
     {
      "ref": "CA-4097",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:31Z"
+     "read": "2026-11-08T11:20:28Z"
     },
     {
      "ref": "CA-5343",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:33:32Z"
+     "read": "2026-11-08T11:20:30Z"
     }
    ],
    "saved_lines": [],
@@ -3705,21 +3718,21 @@
    "stored_acres": 471.6,
    "stored_wide_m": 780,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-08T05:33:33Z",
+   "checked_at": "2026-11-08T11:20:30Z",
    "layers": [
     {
      "ref": "CA-3797",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:33Z"
+     "read": "2026-11-08T11:20:31Z"
     },
     {
      "ref": "CA-5343",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:33:34Z"
+     "read": "2026-11-08T11:20:31Z"
     }
    ],
    "saved_lines": [],
@@ -3746,42 +3759,42 @@
    "stored_acres": 177.1,
    "stored_wide_m": 519,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:33:34Z",
+   "checked_at": "2026-11-08T11:20:31Z",
    "layers": [
     {
      "ref": "CA-3834",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:34Z"
+     "read": "2026-11-08T11:20:32Z"
     },
     {
      "ref": "CA-3834",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:35Z"
+     "read": "2026-11-08T11:20:33Z"
     },
     {
      "ref": "CA-4027",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:36Z"
+     "read": "2026-11-08T11:20:34Z"
     },
     {
      "ref": "CA-4027",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:37Z"
+     "read": "2026-11-08T11:20:35Z"
     },
     {
      "ref": "CA-4027",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:38Z"
+     "read": "2026-11-08T11:20:36Z"
     }
    ],
    "saved_lines": [],
@@ -3813,35 +3826,35 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-08T05:33:39Z",
+   "checked_at": "2026-11-08T11:20:37Z",
    "layers": [
     {
      "ref": "CA-3838",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:39Z"
+     "read": "2026-11-08T11:20:37Z"
     },
     {
      "ref": "CA-3838",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:40Z"
+     "read": "2026-11-08T11:20:38Z"
     },
     {
      "ref": "CA-3839",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:41Z"
+     "read": "2026-11-08T11:20:39Z"
     },
     {
      "ref": "CA-3839",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:42Z"
+     "read": "2026-11-08T11:20:40Z"
     }
    ],
    "saved_lines": [],
@@ -3873,42 +3886,42 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:33:43Z",
+   "checked_at": "2026-11-08T11:20:41Z",
    "layers": [
     {
      "ref": "CA-3840",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:43Z"
+     "read": "2026-11-08T11:20:41Z"
     },
     {
      "ref": "CA-3840",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:44Z"
+     "read": "2026-11-08T11:20:41Z"
     },
     {
      "ref": "CA-3840",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:44Z"
+     "read": "2026-11-08T11:20:42Z"
     },
     {
      "ref": "CA-3841",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:44Z"
+     "read": "2026-11-08T11:20:42Z"
     },
     {
      "ref": "CA-3841",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:45Z"
+     "read": "2026-11-08T11:20:43Z"
     }
    ],
    "saved_lines": [],
@@ -3940,28 +3953,28 @@
    "stored_acres": 0.1,
    "stored_wide_m": 20,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:33:46Z",
+   "checked_at": "2026-11-08T11:20:44Z",
    "layers": [
     {
      "ref": "CA-3850",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:47Z"
+     "read": "2026-11-08T11:20:45Z"
     },
     {
      "ref": "CA-3850",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:48Z"
+     "read": "2026-11-08T11:20:46Z"
     },
     {
      "ref": "CA-3943",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:50Z"
+     "read": "2026-11-08T11:20:48Z"
     }
    ],
    "saved_lines": [],
@@ -3995,42 +4008,42 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:33:51Z",
+   "checked_at": "2026-11-08T11:20:48Z",
    "layers": [
     {
      "ref": "CA-3868",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:51Z"
+     "read": "2026-11-08T11:20:49Z"
     },
     {
      "ref": "CA-3868",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:52Z"
+     "read": "2026-11-08T11:20:50Z"
     },
     {
      "ref": "CA-3868",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:33:53Z"
+     "read": "2026-11-08T11:20:51Z"
     },
     {
      "ref": "CA-3869",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:51Z"
+     "read": "2026-11-08T11:20:49Z"
     },
     {
      "ref": "CA-3869",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:52Z"
+     "read": "2026-11-08T11:20:50Z"
     }
    ],
    "saved_lines": [],
@@ -4062,35 +4075,35 @@
    "stored_acres": 22.6,
    "stored_wide_m": 35,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-08T05:33:54Z",
+   "checked_at": "2026-11-08T11:20:52Z",
    "layers": [
     {
      "ref": "CA-3871",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:54Z"
+     "read": "2026-11-08T11:20:52Z"
     },
     {
      "ref": "CA-3871",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:55Z"
+     "read": "2026-11-08T11:20:53Z"
     },
     {
      "ref": "CA-4212",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:33:57Z"
+     "read": "2026-11-08T11:20:55Z"
     },
     {
      "ref": "CA-4212",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:33:58Z"
+     "read": "2026-11-08T11:20:56Z"
     }
    ],
    "saved_lines": [],
@@ -4125,35 +4138,35 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-08T05:33:59Z",
+   "checked_at": "2026-11-08T11:20:57Z",
    "layers": [
     {
      "ref": "CA-3899",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "3 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:00Z"
+     "read": "2026-11-08T11:20:58Z"
     },
     {
      "ref": "CA-3899",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "3 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:01Z"
+     "read": "2026-11-08T11:20:59Z"
     },
     {
      "ref": "CA-3900",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "3 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:00Z"
+     "read": "2026-11-08T11:20:58Z"
     },
     {
      "ref": "CA-3900",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "3 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:01Z"
+     "read": "2026-11-08T11:20:59Z"
     }
    ],
    "saved_lines": [],
@@ -4185,28 +4198,28 @@
    "stored_acres": 44.4,
    "stored_wide_m": 349,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:34:02Z",
+   "checked_at": "2026-11-08T11:21:00Z",
    "layers": [
     {
      "ref": "CA-3917",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:03Z"
+     "read": "2026-11-08T11:21:01Z"
     },
     {
      "ref": "CA-3917",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:04Z"
+     "read": "2026-11-08T11:21:02Z"
     },
     {
      "ref": "CA-4258",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:05Z"
+     "read": "2026-11-08T11:21:03Z"
     }
    ],
    "saved_lines": [],
@@ -4238,21 +4251,21 @@
    "stored_acres": 0.6,
    "stored_wide_m": 20,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:34:06Z",
+   "checked_at": "2026-11-08T11:21:04Z",
    "layers": [
     {
      "ref": "CA-3918",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:07Z"
+     "read": "2026-11-08T11:21:04Z"
     },
     {
      "ref": "CA-4251",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:08Z"
+     "read": "2026-11-08T11:21:06Z"
     }
    ],
    "saved_lines": [],
@@ -4279,35 +4292,35 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:34:09Z",
+   "checked_at": "2026-11-08T11:21:07Z",
    "layers": [
     {
      "ref": "CA-3932",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:09Z"
+     "read": "2026-11-08T11:21:07Z"
     },
     {
      "ref": "CA-3932",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:10Z"
+     "read": "2026-11-08T11:21:08Z"
     },
     {
      "ref": "CA-3933",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:09Z"
+     "read": "2026-11-08T11:21:07Z"
     },
     {
      "ref": "CA-3933",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:10Z"
+     "read": "2026-11-08T11:21:08Z"
     }
    ],
    "saved_lines": [],
@@ -4339,35 +4352,35 @@
    "stored_acres": 5.4,
    "stored_wide_m": 60,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:34:11Z",
+   "checked_at": "2026-11-08T11:21:09Z",
    "layers": [
     {
      "ref": "CA-3944",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:12Z"
+     "read": "2026-11-08T11:21:10Z"
     },
     {
      "ref": "CA-4012",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:14Z"
+     "read": "2026-11-08T11:21:11Z"
     },
     {
      "ref": "CA-4012",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:15Z"
+     "read": "2026-11-08T11:21:13Z"
     },
     {
      "ref": "CA-4012",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:34:16Z"
+     "read": "2026-11-08T11:21:14Z"
     }
    ],
    "saved_lines": [],
@@ -4401,35 +4414,35 @@
    "stored_acres": 12.7,
    "stored_wide_m": 140,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:34:17Z",
+   "checked_at": "2026-11-08T11:21:15Z",
    "layers": [
     {
      "ref": "CA-3965",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:17Z"
+     "read": "2026-11-08T11:21:15Z"
     },
     {
      "ref": "CA-5504",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:19Z"
+     "read": "2026-11-08T11:21:17Z"
     },
     {
      "ref": "CA-5504",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:20Z"
+     "read": "2026-11-08T11:21:18Z"
     },
     {
      "ref": "CA-5504",
      "layer": "https://services6.arcgis.com/56eqCzQ5SZhBaDST/arcgis/rest/services/RegionalParksBoundaries_OpenData/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:21Z"
+     "read": "2026-11-08T11:21:19Z"
     }
    ],
    "saved_lines": [],
@@ -4456,35 +4469,35 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32609,
-   "checked_at": "2026-11-08T05:34:22Z",
+   "checked_at": "2026-11-08T11:21:20Z",
    "layers": [
     {
      "ref": "CA-3976",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:22Z"
+     "read": "2026-11-08T11:21:20Z"
     },
     {
      "ref": "CA-3976",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:23Z"
+     "read": "2026-11-08T11:21:21Z"
     },
     {
      "ref": "CA-3977",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:22Z"
+     "read": "2026-11-08T11:21:20Z"
     },
     {
      "ref": "CA-3977",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:23Z"
+     "read": "2026-11-08T11:21:21Z"
     }
    ],
    "saved_lines": [],
@@ -4516,49 +4529,49 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:34:24Z",
+   "checked_at": "2026-11-08T11:21:22Z",
    "layers": [
     {
      "ref": "CA-3988",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:24Z"
+     "read": "2026-11-08T11:21:22Z"
     },
     {
      "ref": "CA-3988",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:25Z"
+     "read": "2026-11-08T11:21:23Z"
     },
     {
      "ref": "CA-3988",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:34:26Z"
+     "read": "2026-11-08T11:21:24Z"
     },
     {
      "ref": "CA-3989",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:28Z"
+     "read": "2026-11-08T11:21:25Z"
     },
     {
      "ref": "CA-3989",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:29Z"
+     "read": "2026-11-08T11:21:26Z"
     },
     {
      "ref": "CA-3989",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:34:26Z"
+     "read": "2026-11-08T11:21:24Z"
     }
    ],
    "saved_lines": [],
@@ -4590,28 +4603,28 @@
    "stored_acres": 11.2,
    "stored_wide_m": 100,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:34:30Z",
+   "checked_at": "2026-11-08T11:21:27Z",
    "layers": [
     {
      "ref": "CA-4031",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "2 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:34:30Z"
+     "read": "2026-11-08T11:21:28Z"
     },
     {
      "ref": "CA-5901",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:30Z"
+     "read": "2026-11-08T11:21:28Z"
     },
     {
      "ref": "CA-5901",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:31Z"
+     "read": "2026-11-08T11:21:29Z"
     }
    ],
    "saved_lines": [],
@@ -4638,21 +4651,21 @@
    "stored_acres": 0.1,
    "stored_wide_m": 20,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:34:31Z",
+   "checked_at": "2026-11-08T11:21:29Z",
    "layers": [
     {
      "ref": "CA-4071",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:15Z"
+     "read": "2026-11-08T11:19:12Z"
     },
     {
      "ref": "CA-4106",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:32:16Z"
+     "read": "2026-11-08T11:19:13Z"
     }
    ],
    "saved_lines": [],
@@ -4679,28 +4692,28 @@
    "stored_acres": 317.1,
    "stored_wide_m": 651,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-08T05:34:31Z",
+   "checked_at": "2026-11-08T11:21:29Z",
    "layers": [
     {
      "ref": "CA-4097",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:31Z"
+     "read": "2026-11-08T11:21:29Z"
     },
     {
      "ref": "CA-4097",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:31Z"
+     "read": "2026-11-08T11:21:29Z"
     },
     {
      "ref": "CA-5343",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:32Z"
+     "read": "2026-11-08T11:21:30Z"
     }
    ],
    "saved_lines": [],
@@ -4727,35 +4740,35 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:34:32Z",
+   "checked_at": "2026-11-08T11:21:30Z",
    "layers": [
     {
      "ref": "CA-4100",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:32Z"
+     "read": "2026-11-08T11:21:30Z"
     },
     {
      "ref": "CA-4100",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:33Z"
+     "read": "2026-11-08T11:21:31Z"
     },
     {
      "ref": "CA-4101",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:34Z"
+     "read": "2026-11-08T11:21:32Z"
     },
     {
      "ref": "CA-4101",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:35Z"
+     "read": "2026-11-08T11:21:33Z"
     }
    ],
    "saved_lines": [],
@@ -4787,35 +4800,35 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:34:37Z",
+   "checked_at": "2026-11-08T11:21:34Z",
    "layers": [
     {
      "ref": "CA-4142",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:37Z"
+     "read": "2026-11-08T11:21:34Z"
     },
     {
      "ref": "CA-4142",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:38Z"
+     "read": "2026-11-08T11:21:35Z"
     },
     {
      "ref": "CA-4143",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:37Z"
+     "read": "2026-11-08T11:21:34Z"
     },
     {
      "ref": "CA-4143",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:38Z"
+     "read": "2026-11-08T11:21:35Z"
     }
    ],
    "saved_lines": [],
@@ -4847,28 +4860,28 @@
    "stored_acres": 1.0,
    "stored_wide_m": 45,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:34:39Z",
+   "checked_at": "2026-11-08T11:21:36Z",
    "layers": [
     {
      "ref": "CA-4145",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:39Z"
+     "read": "2026-11-08T11:21:36Z"
     },
     {
      "ref": "CA-4145",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:40Z"
+     "read": "2026-11-08T11:21:37Z"
     },
     {
      "ref": "CA-4245",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:41Z"
+     "read": "2026-11-08T11:21:38Z"
     }
    ],
    "saved_lines": [],
@@ -4903,42 +4916,42 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:34:42Z",
+   "checked_at": "2026-11-08T11:21:39Z",
    "layers": [
     {
      "ref": "CA-4152",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:43Z"
+     "read": "2026-11-08T11:21:40Z"
     },
     {
      "ref": "CA-4152",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:44Z"
+     "read": "2026-11-08T11:21:41Z"
     },
     {
      "ref": "CA-4153",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:43Z"
+     "read": "2026-11-08T11:21:40Z"
     },
     {
      "ref": "CA-4153",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:44Z"
+     "read": "2026-11-08T11:21:41Z"
     },
     {
      "ref": "CA-4153",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:34:45Z"
+     "read": "2026-11-08T11:21:43Z"
     }
    ],
    "saved_lines": [],
@@ -4970,35 +4983,35 @@
    "stored_acres": 1544.4,
    "stored_wide_m": 2164,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:34:46Z",
+   "checked_at": "2026-11-08T11:21:43Z",
    "layers": [
     {
      "ref": "CA-4155",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:46Z"
+     "read": "2026-11-08T11:21:43Z"
     },
     {
      "ref": "CA-5502",
      "layer": "https://services6.arcgis.com/56eqCzQ5SZhBaDST/arcgis/rest/services/RegionalParksBoundaries_OpenData/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:47Z"
+     "read": "2026-11-08T11:21:45Z"
     },
     {
      "ref": "CA-5502",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:48Z"
+     "read": "2026-11-08T11:21:46Z"
     },
     {
      "ref": "CA-5502",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:49Z"
+     "read": "2026-11-08T11:21:47Z"
     }
    ],
    "saved_lines": [],
@@ -5030,35 +5043,35 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:34:50Z",
+   "checked_at": "2026-11-08T11:21:48Z",
    "layers": [
     {
      "ref": "CA-4157",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:51Z"
+     "read": "2026-11-08T11:21:49Z"
     },
     {
      "ref": "CA-4157",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:52Z"
+     "read": "2026-11-08T11:21:50Z"
     },
     {
      "ref": "CA-4158",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:51Z"
+     "read": "2026-11-08T11:21:49Z"
     },
     {
      "ref": "CA-4158",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:52Z"
+     "read": "2026-11-08T11:21:50Z"
     }
    ],
    "saved_lines": [],
@@ -5090,28 +5103,28 @@
    "stored_acres": 7.9,
    "stored_wide_m": 127,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:34:53Z",
+   "checked_at": "2026-11-08T11:21:51Z",
    "layers": [
     {
      "ref": "CA-4191",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:53Z"
+     "read": "2026-11-08T11:21:51Z"
     },
     {
      "ref": "CA-4191",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:54Z"
+     "read": "2026-11-08T11:21:52Z"
     },
     {
      "ref": "CA-4258",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:56Z"
+     "read": "2026-11-08T11:21:53Z"
     }
    ],
    "saved_lines": [],
@@ -5143,28 +5156,28 @@
    "stored_acres": 14.2,
    "stored_wide_m": 105,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:34:56Z",
+   "checked_at": "2026-11-08T11:21:53Z",
    "layers": [
     {
      "ref": "CA-4218",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:57Z"
+     "read": "2026-11-08T11:21:54Z"
     },
     {
      "ref": "CA-4218",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:34:58Z"
+     "read": "2026-11-08T11:21:55Z"
     },
     {
      "ref": "CA-4258",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:34:59Z"
+     "read": "2026-11-08T11:21:56Z"
     }
    ],
    "saved_lines": [],
@@ -5196,35 +5209,35 @@
    "stored_acres": null,
    "stored_wide_m": null,
    "utm_epsg": 32611,
-   "checked_at": "2026-11-08T05:34:59Z",
+   "checked_at": "2026-11-08T11:21:56Z",
    "layers": [
     {
      "ref": "CA-4253",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:35:00Z"
+     "read": "2026-11-08T11:21:57Z"
     },
     {
      "ref": "CA-4253",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:35:00Z"
+     "read": "2026-11-08T11:21:57Z"
     },
     {
      "ref": "CA-4254",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:35:00Z"
+     "read": "2026-11-08T11:21:57Z"
     },
     {
      "ref": "CA-4254",
      "layer": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:35:00Z"
+     "read": "2026-11-08T11:21:57Z"
     }
    ],
    "saved_lines": [],
@@ -5256,21 +5269,21 @@
    "stored_acres": 12.7,
    "stored_wide_m": 148,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:35:00Z",
+   "checked_at": "2026-11-08T11:21:57Z",
    "layers": [
     {
      "ref": "CA-4258",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "2 record id(s)",
      "n": 2,
-     "read": "2026-11-08T05:35:01Z"
+     "read": "2026-11-08T11:21:58Z"
     },
     {
      "ref": "CA-5539",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:35:01Z"
+     "read": "2026-11-08T11:21:59Z"
     }
    ],
    "saved_lines": [],
@@ -5304,21 +5317,21 @@
    "stored_acres": 0.2,
    "stored_wide_m": 20,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:35:02Z",
+   "checked_at": "2026-11-08T11:21:59Z",
    "layers": [
     {
      "ref": "CA-4787",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:35:03Z"
+     "read": "2026-11-08T11:22:00Z"
     },
     {
      "ref": "CA-4789",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:35:05Z"
+     "read": "2026-11-08T11:22:02Z"
     }
    ],
    "saved_lines": [],
@@ -5345,42 +5358,42 @@
    "stored_acres": 26.6,
    "stored_wide_m": 260,
    "utm_epsg": 32610,
-   "checked_at": "2026-11-08T05:35:06Z",
+   "checked_at": "2026-11-08T11:22:03Z",
    "layers": [
     {
      "ref": "CA-5501",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:35:07Z"
+     "read": "2026-11-08T11:22:04Z"
     },
     {
      "ref": "CA-5501",
      "layer": "https://services6.arcgis.com/56eqCzQ5SZhBaDST/arcgis/rest/services/RegionalParksBoundaries_OpenData/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 0,
-     "read": "2026-11-08T05:35:08Z"
+     "read": "2026-11-08T11:22:05Z"
     },
     {
      "ref": "CA-5503",
      "layer": "https://services6.arcgis.com/56eqCzQ5SZhBaDST/arcgis/rest/services/RegionalParksBoundaries_OpenData/FeatureServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:35:10Z"
+     "read": "2026-11-08T11:22:08Z"
     },
     {
      "ref": "CA-5503",
      "layer": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:35:11Z"
+     "read": "2026-11-08T11:22:08Z"
     },
     {
      "ref": "CA-5503",
      "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
      "how": "1 record id(s)",
      "n": 1,
-     "read": "2026-11-08T05:35:12Z"
+     "read": "2026-11-08T11:22:09Z"
     }
    ],
    "saved_lines": [],
@@ -5401,22 +5414,9 @@
     49.404992,
     -123.085892
    ]
-  },
-  "CA-0032+CA-3393@area@52.734,-132.106": {
-   "id": "CA-0032+CA-3393@area@52.734,-132.106",
-   "area": "CA-BC",
-   "refs": [
-    "CA-0032",
-    "CA-3393"
-   ],
-   "kind": "area",
-   "verdict": "SOURCE DOWN",
-   "why": "checker error on this row (retry; report if it repeats): GEOSException: IllegalArgumentException: Overlay input is mixed-dimension",
-   "flags": [],
-   "layers": []
   }
  },
- "started": "2026-11-08T05:29:33Z",
+ "started": "2026-11-08T11:16:13Z",
  "fers_sha256": "72396295f9ce5d0dab81beb513017f08fb8bb366307b7956d4404f091d69f5bc",
  "live_rows": 97,
  "skipped_rows": 564,
@@ -5426,7 +5426,7 @@
   "moved_m": 200.0,
   "size_tol": 0.25
  },
- "updated": "2026-11-08T06:17:44Z",
+ "updated": "2026-11-08T11:22:10Z",
  "complete": true,
  "summary": {
   "rows": 97,
@@ -5449,5 +5449,5 @@
   "data/ca-key/CA-AB.json",
   "data/ca-key/CA-BC.json"
  ],
- "requests_this_run": 1
+ "requests_this_run": 742
 }

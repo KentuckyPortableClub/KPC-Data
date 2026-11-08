@@ -1,21 +1,23 @@
 # 2-fer accuracy check: US-KY
 
-Run 2026-11-08T05:26:55Z → 2026-11-08T06:17:40Z (UTC) · tool 0.1.0 (2026-10-31) · complete
+Run 2026-11-08T11:13:10Z → 2026-11-08T11:13:22Z (UTC) · tool 0.1.0 (2026-10-31) · complete
 Live rows in the file: 88 · checked: 88 · skipped (dropped / merged): 321
 
 | verdict | rows |
 |---|---|
 | SHRUNK | 1 |
-| NOT CHECKED | 87 |
+| GONE | 1 |
+| NOT CHECKED | 86 |
 
 | flag | rows |
 |---|---|
-| trail line from the club saved copy (not re-read live) | 1 |
+| trail line from the club saved copy (not re-read live) | 2 |
 | water-only | 6 |
 
 ## For a person to look at
 
 - **SHRUNK** `US-3791+US-4572@trail@37.144,-88.740`: live overlap is 29% smaller (6.8 ac vs 9.6 ac stored)
+- **GONE** `US-10107+US-11181@trail@36.658,-84.536`: no overlap between the live official outlines near this spot
 - **NOT CHECKED** `US-0019+US-10164@area@36.679,-83.503`: park is not in any boundary key that was loaded | park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-0050+US-10105@area@37.171,-86.155`: park is not in any boundary key that was loaded | park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-0050+US-10105@area@channel@37.220,-86.062`: park is not in any boundary key that was loaded | park is not in any boundary key that was loaded
@@ -43,7 +45,6 @@ Live rows in the file: 88 · checked: 88 · skipped (dropped / merged): 321
 - **NOT CHECKED** `US-10106+US-4484@area@37.087,-84.299`: park is not in any boundary key that was loaded | park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-10106+US-4484@area@channel@37.165,-84.294`: park is not in any boundary key that was loaded | park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-10106+US-7964@area@37.048,-84.322`: park is not in any boundary key that was loaded | park is not in any boundary key that was loaded
-- **NOT CHECKED** `US-10107+US-11181@trail@36.658,-84.536`: park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-10111+US-11181@trail@36.644,-84.712`: park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-10111+US-4484@area@36.643,-84.711`: park is not in any boundary key that was loaded | park is not in any boundary key that was loaded
 - **NOT CHECKED** `US-10112+US-7966@area@37.089,-82.767`: park is not in any boundary key that was loaded | park is not in any boundary key that was loaded

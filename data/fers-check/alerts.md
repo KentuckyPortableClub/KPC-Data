@@ -2,11 +2,11 @@
 
 Rows the weekly checker found SHRUNK / GONE / MOVED against the live official layers: chat 2 rechecks, chat 11 grades. Nothing changed by the bot.
 
-- **CA-AB** (checked 2026-11-07 11:27 PM CST): SHRUNK 1, GONE 1
-- **CA-BC** (checked 2026-11-07 11:29 PM CST): GONE 24, SHRUNK 13, MOVED 4
-- **CA-NB** (checked 2026-11-07 11:35 PM CST): GONE 88, MOVED 50, SHRUNK 22
-- **CA-NS** (checked 2026-11-07 11:59 PM CST): MOVED 1
-- **CA-ON** (checked 2026-11-08 12:01 AM CST): SHRUNK 121, MOVED 28, GONE 25
+- **CA-AB** (checked 2026-11-08 5:13 AM CST): SHRUNK 1, GONE 1
+- **CA-BC** (checked 2026-11-08 5:16 AM CST): GONE 24, SHRUNK 13, MOVED 4
+- **CA-NB** (checked 2026-11-08 5:22 AM CST): GONE 88, MOVED 50, SHRUNK 22
+- **CA-NS** (checked 2026-11-08 5:45 AM CST): MOVED 1
+- **CA-ON** (checked 2026-11-08 5:48 AM CST): SHRUNK 117, MOVED 31, GONE 27
 - **CA-SK** (checked 2026-11-01 5:30 AM CST): SHRUNK 1
 - **US-AK** (checked 2026-11-01 5:31 AM CST): GONE 5, SHRUNK 2
 - **US-AL** (checked 2026-11-01 5:45 AM CST): GONE 1
@@ -23,7 +23,7 @@ Rows the weekly checker found SHRUNK / GONE / MOVED against the live official la
 - **US-IL** (checked 2026-10-31 7:41 PM CDT): SHRUNK 2
 - **US-IN** (checked 2026-10-31 7:42 PM CDT): MOVED 1
 - **US-KS** (checked 2026-10-31 7:46 PM CDT): SHRUNK 6, MOVED 1
-- **US-KY** (checked 2026-11-07 11:26 PM CST): SHRUNK 1
+- **US-KY** (checked 2026-11-08 5:13 AM CST): GONE 1, SHRUNK 1
 - **US-MA** (checked 2026-10-31 7:50 PM CDT): SHRUNK 22, MOVED 5
 - **US-MD** (checked 2026-10-31 7:56 PM CDT): SHRUNK 17, MOVED 5
 - **US-MI** (checked 2026-10-31 8:00 PM CDT): SHRUNK 10, MOVED 2, GONE 2
