@@ -16,7 +16,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 | US-MS | 196 | 21 | 45 | 0 | 2 | 0 | 0 | 6 | 122 | 6 | 59 | 0 |
 | US-IN | 94 | 61 | 13 | 0 | 0 | 0 | 2 | 8 | 10 | 8 | 68 | 0 |
 | US-MO | 188 | 97 | 74 | 0 | 0 | 15 | 0 | 0 | 2 | 87 | 114 | 0 |
-| US-WI | 107 | 9 | 45 | 4 | 0 | 48 | 0 | 0 | 1 | 6 | 31 | 0 |
+| US-WI | 107 | 3 | 45 | 1 | 0 | 58 | 0 | 0 | 0 | 1 | 25 | 0 |
 | US-MN | 227 | 34 | 45 | 0 | 0 | 0 | 50 | 0 | 98 | 0 | 132 | 0 |
 | US-IA | 222 | 27 | 32 | 0 | 0 | 0 | 93 | 0 | 70 | 0 | 97 | 0 |
 | US-SD | 126 | 36 | 29 | 0 | 0 | 0 | 0 | 0 | 61 | 30 | 60 | 0 |
@@ -61,8 +61,8 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 - cpw.state.co.us: 193 campgrounds · host resting
 - outdoornebraska.gov: 187 campgrounds · host resting
 - www.ksoutdoors.gov: 63 campgrounds · host resting (robots.txt could not be read: next run)
+- dnr.wisconsin.gov: 58 campgrounds · host resting
 - dec.ny.gov: 55 campgrounds · robots.txt says no
-- dnr.wisconsin.gov: 48 campgrounds · host resting
 - www.wlf.louisiana.gov: 31 campgrounds · host resting (robots.txt could not be read: next run)
 - reserve.tnstateparks.com: 25 campgrounds · host resting
 - www.fdacs.gov: 23 campgrounds · robots.txt says no
@@ -90,7 +90,6 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 - parks.ky.gov: 26 campgrounds
 - southcarolinaparks.com: 22 campgrounds
 - www.recreation.gov: 5 campgrounds
-- dnr.wisconsin.gov: 4 campgrounds
 - gastateparks.org: 3 campgrounds
 - www.fs.usda.gov: 2 campgrounds
 - www.nps.gov: 2 campgrounds
@@ -98,6 +97,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 - files.dfm.idaho.gov: 2 campgrounds
 - explore.gastateparks.org: 1 campgrounds
 - www.outdooralabama.com: 1 campgrounds
+- dnr.wisconsin.gov: 1 campgrounds
 - tpwd.texas.gov: 1 campgrounds
 - wgfapps.wyo.gov: 1 campgrounds
 - parks.nv.gov: 1 campgrounds
@@ -1192,44 +1192,6 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 
 ## US-WI: 12 random samples (records with facts; seed = the date)
 
-- **Twin Lakes Recreation Area; Spearhead Point Recreation Area; Wabasso Lake Recreation Area; West Point Recreation Area; Birch Grove Recreation Area; Perch Lake Recreation Area; Emily Lake Recreation Ar** (intake-US-4533, agency (outside research camping-us-oct31), status ok, 5 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/cnnf/recarea/?recid=27801)
-  - booking.url = "https://www.fs.usda.gov/recarea/cnnf/recarea/?recid=27801" · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
-  - map.date_how = "web page, no date in the link" · “link “Find a Map””
-  - map.url = "https://www.fs.usda.gov/r09/chequamegon-nicolet/maps-guides · “link “Find a Map” -> https://www.fs.usda.gov/r09/chequamegon-nicolet/maps-guides”
-  - season = "year-round" · “rthern Wisconsin. Explore the more than 1.5 million acres of water and woodlands offering year-round motorized trail riding, water- and land”
-  - sites.total = 30 · “thing sound of flowing water, you will appreciate this campground. About one-third of the 30 campsites are located adjacent to the Oconto Ri”
-- **Devil's Lake State Park** (US-1449, state, status ok, 14 facts) · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/parks/devilslake/recreation/camping)
-  - booking.how = "online: dnr.wisconsin.gov" · “link “Parks_Topic Contact_WSPS Reservations””
-  - booking.url = "https://dnr.wisconsin.gov/node/26781" · “link “Parks_Topic Contact_WSPS Reservations” -> https://dnr.wisconsin.gov/node/26781”
-  - dump_station = true · “tations are free for use by registered campers. Unregistered camping vehicles may use the dump station for a fee of $10 and purchase of an a”
-  - fees = "$10 and purchase of an admission pass" · “y registered campers. Unregistered camping vehicles may use the dump station for a fee of $10 and purchase of an admission pass. Dump statio”
-  - hookups.electric = "some" · “ted shade or are on the perimeter near (but not in) the surrounding woods. There are both electric (75 sites) and non-electric campsites. Ma”
-  - map.date_how = "web page, no date in the link" · “link “Quartzite campground map””
-  - map.url = "https://widnr.widen.net/s/vch7xqt8h9/devils-lake_northern-l · “link “Quartzite campground map” -> https://widnr.widen.net/s/vch7xqt8h9/devils-lake_northern-lights-quartzite-campgrounds-map”
-  - phone_hint = "(888) 947-2757" · “make a reservation before setting up on any site. Reserve a campsite online or by calling 1-888-947-2757. Devil's Lake campgrounds Each camp”
-  - reservable = true · “also nine group campsites that can accommodate a total of 460 campers. All campsites are reservable. Reservations Camping reservations are r”
-  - restrooms = "vault" · “because the sites are more open and spacious. The campground has one shower building, two pit toilets and a dump/fill station. A playground ”
-- **Family campground (100 sites)** (US-1440:hq0, state, status ok, 12 facts) · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/parks/bigfoot/recreation/camping)
-  - booking.how = "online: dnr.wisconsin.gov" · “link “Parks_Topic Contact_WSPS Reservations””
-  - booking.url = "https://dnr.wisconsin.gov/node/26781" · “link “Parks_Topic Contact_WSPS Reservations” -> https://dnr.wisconsin.gov/node/26781”
-  - dump_station = true · “ic table. There are 34 sites with electric pedestals. Campground Map The campground has a dump station, vault toilets and a shower building.”
-  - hookups.electric = true · “in the upper loop have a gravel pad, fire ring and picnic table. There are 34 sites with electric pedestals. Campground Map The campground h”
-  - map.date_how = "web page, no date in the link" · “link “Campground Map””
-  - map.url = "https://widnr.widen.net/s/ss2jdfx5z2/big-foot-beach_campgro · “link “Campground Map” -> https://widnr.widen.net/s/ss2jdfx5z2/big-foot-beach_campground-map_pr-294”
-  - phone_hint = "(888) 947-2757" · “ontact Parks_Topic Contact_WSPS Reservations Wisconsin State Park System Reservations tel:+1-888-947-2757”
-  - reservable = true · “mping Big Foot Beach State Park Big Foot Beach State Park has 100 campsites. Reservations Reserve a campsite online. Campground Campsites in”
-  - restrooms = "vault" · “e are 34 sites with electric pedestals. Campground Map The campground has a dump station, vault toilets and a shower building. Tent sites in”
-  - rules.fires = "firewood! Due to the potential of carrying harmful tree pes · “starters can be purchased at the camp host site near the campground entrance. Don't move firewood! Due to the potential of carrying harmful ”
-- **Backpack campsites (17 total, including one group site)** (US-1468:hq0, state, status ok, 9 facts) · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/parks/newport/recreation/camping)
-  - booking.how = "online: dnr.wisconsin.gov" · “link “Parks_Topic Contact_WSPS Reservations””
-  - booking.url = "https://dnr.wisconsin.gov/node/26781" · “link “Parks_Topic Contact_WSPS Reservations” -> https://dnr.wisconsin.gov/node/26781”
-  - map.date_how = "web page, no date in the link" · “link “Park map””
-  - map.url = "https://widnr.widen.net/s/dtkcjrwv5r/newport_trails-map" · “link “Park map” -> https://widnr.widen.net/s/dtkcjrwv5r/newport_trails-map”
-  - phone_hint = "(888) 947-2757" · “ontact Parks_Topic Contact_WSPS Reservations Wisconsin State Park System Reservations tel:+1-888-947-2757”
-  - reservable = true · “kpack camping for visitors. Camping is allowed in designated campsites only. Reservations Reserve a campsite online. Backpack campsites Newp”
-  - restrooms = "vault" · “e are no carts available at the park. There are a few amenities at the sites, including a pit toilet, fire ring with flip-up grill, a lock b”
-  - rules.fires = "firewood! Due to the potential of carrying harmful tree pes · “any wood that is dead and down. It is illegal to cut anything from live trees. Don't move firewood! Due to the potential of carrying harmful”
-  - showers = false · “ark office or at a solar pump near the picnic shelter by Lot 3 (seasonally). There are no shower facilities at the park. All garbage must be”
 - **300 campground (70 sites); 100 campground (50 sites); group camp (4 areas)** (US-1481:hq0, state, status ok, 9 facts) · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/parks/willowriver/recreation/camping)
   - booking.how = "online: dnr.wisconsin.gov" · “link “Parks_Topic Contact_WSPS Reservations””
   - booking.url = "https://dnr.wisconsin.gov/node/26781" · “link “Parks_Topic Contact_WSPS Reservations” -> https://dnr.wisconsin.gov/node/26781”
@@ -1240,68 +1202,27 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - restrooms = "flush" · “online. Standard campgrounds The 300 campground has 70 tent, trailer or motor home sites, flush toilets and showers. The 100 campground has ”
   - rules.fires = "fire rings only" · “o 8 p.m. in the 300 campground when in season. Fires are allowed in authorized grills and fire rings only. Do not leave fires unattended and”
   - showers = true · “ampgrounds The 300 campground has 70 tent, trailer or motor home sites, flush toilets and showers. The 100 campground has another 50 sites. ”
-- **Brule River SF: two family campgrounds** (intake-US-5577, agency (outside research camping-us-oct31), status ok, no campground facts in the page text: needs browser?, 6 facts) · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/StateForests/bruleriver)
-  - booking.how = "online: dnr.wisconsin.gov" · “link “Parks_Topic Contact_WSPS Reservations””
-  - booking.url = "https://dnr.wisconsin.gov/node/26781" · “link “Parks_Topic Contact_WSPS Reservations” -> https://dnr.wisconsin.gov/node/26781”
-  - map.date_how = "web page, no date in the link" · “link “Bois Brule Campground Map””
-  - map.url = "https://p.widencdn.net/qwstme/BoisBruleCampground" · “link “Bois Brule Campground Map” -> https://p.widencdn.net/qwstme/BoisBruleCampground”
-  - phone_hint = "(715) 372-5678" · “sts_Topic Contact_Brule River For more information, contact: Brule River State Forest tel:+1-715-372-5678”
-  - reservable = true · “n the Bois Brule River. All campsites in both Bois Brule and Copper Range campgrounds are reservable. Reservations Reserve a campsite at Bru”
-- **Cox Hollow and Twin Valley campgrounds; Hickory Ridge equestrian campground; Hickory Ridge group camp; backpack campsite** (US-1451:hq0, state, status ok, 14 facts) · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/parks/govdodge/recreation/camping)
-  - booking.how = "online: dnr.wisconsin.gov" · “link “Parks_Topic Contact_WSPS Reservations””
-  - booking.url = "https://dnr.wisconsin.gov/node/26781" · “link “Parks_Topic Contact_WSPS Reservations” -> https://dnr.wisconsin.gov/node/26781”
-  - drinking_water = true · “vernor Dodge State Park Seasonal Water Systems: At Governor Dodge State Park, showers and drinking water are available from Memorial Day wee”
-  - dump_station = true · “owers in the Twin Valley and Cox Hollow restroom buildings. Both campgrounds have trailer dumping stations. Playgrounds are available in bot”
-  - hookups.electric = "some" · “unds Governor Dodge has 269 standard campsites in Twin Valley and Cox Hollow campgrounds. Electrical hookups are available at 80 sites. Ther”
-  - map.date_how = "web page, no date in the link" · “link “Campground maps””
-  - map.url = "https://widnr.widen.net/s/tkqsnpprbr/governor-dodge_campgro · “link “Campground maps” -> https://widnr.widen.net/s/tkqsnpprbr/governor-dodge_campground-map”
-  - phone_hint = "(888) 947-2757" · “ontact Parks_Topic Contact_WSPS Reservations Wisconsin State Park System Reservations tel:+1-888-947-2757”
-  - reservable = true · “d group sites to an equestrian campground and remote backpack sites. Reservations Camping reservations are required for all sites and can be”
-  - restrooms = "vault" · “high-line hitching post with cable, and has a picnic table and fire ring. Drinking water, vault toilets, a horse washing station and manure ”
-- **Family campground (40 sites: 4 electric, 2 walk-in tent, 1 tent-only, 33 trailer/tent; one accessible electric site)** (US-1474:hq0, state, status ok, 12 facts) · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/parks/rocheacri/recreation/camping)
-  - booking.how = "online: dnr.wisconsin.gov" · “link “Parks_Topic Contact_WSPS Reservations””
-  - booking.url = "https://dnr.wisconsin.gov/node/26781" · “link “Parks_Topic Contact_WSPS Reservations” -> https://dnr.wisconsin.gov/node/26781”
-  - drinking_water = true · “sphalt path to the vault toilet. Campground amenities include vault toilets (accessible), drinking water fountains and a dump station near t”
-  - dump_station = true · “. Campground amenities include vault toilets (accessible), drinking water fountains and a dump station near the park office building. Flush ”
-  - hookups.electric = true · “rvations Reserve a campsite online. Family campground The family campground features four electric sites, two walk-in tent sites, one tent-o”
-  - map.date_how = "web page, no date in the link" · “link “Park map””
-  - map.url = "https://widnr.widen.net/s/wfq6p5vjhv/roche-a-cri_map" · “link “Park map” -> https://widnr.widen.net/s/wfq6p5vjhv/roche-a-cri_map”
-  - phone_hint = "(888) 947-2757" · “ontact Parks_Topic Contact_WSPS Reservations Wisconsin State Park System Reservations tel:+1-888-947-2757”
-  - reservable = true · “ri State Park has a rustic family campground open late spring to early fall. Reservations Reserve a campsite online. Family campground The f”
-  - restrooms = "vault" · “ies and features electricity, a hard-surface pad with a grill, and an asphalt path to the vault toilet. Campground amenities include vault t”
 - **Amnicon Falls State Park** (US-1436, state, status ok, no campground facts in the page text: needs browser?, 4 facts) · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/parks)
   - booking.how = "online: dnr.wisconsin.gov" · “link “Parks_Topic Contact_WSPS Reservations””
   - booking.url = "https://dnr.wisconsin.gov/node/26781" · “link “Parks_Topic Contact_WSPS Reservations” -> https://dnr.wisconsin.gov/node/26781”
   - phone_hint = "(888) 947-2757" · “ontact Parks_Topic Contact_WSPS Reservations Wisconsin State Park System Reservations tel:+1-888-947-2757”
   - rules.pets = "Pets are welcome in the parks with a few simple rules" · “d all employment opportunities in the Wisconsin State Park System! Bring your Best Friend Pets are welcome in the parks with a few simple ru”
-- **Buckhorn State Park** (US-1443, state, status ok, 13 facts) · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/parks/buckhorn/recreation/camping)
+- **Backpack campsites (17 total, including one group site)** (US-1468:hq0, state, status ok, 9 facts) · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/parks/newport/recreation/camping)
   - booking.how = "online: dnr.wisconsin.gov" · “link “Parks_Topic Contact_WSPS Reservations””
   - booking.url = "https://dnr.wisconsin.gov/node/26781" · “link “Parks_Topic Contact_WSPS Reservations” -> https://dnr.wisconsin.gov/node/26781”
-  - dump_station = true · “ampground features drive-in campsites, pull-through sites, a shower/toilet building and a dump station near the park office. A 0.5-mile crus”
-  - hookups.electric = "some" · “or trailers. Each family site has a picnic table and campfire ring. There are 17 standard electric sites and 3 accessible electric sites. Fa”
   - map.date_how = "web page, no date in the link" · “link “Park map””
-  - map.url = "https://widnr.widen.net/s/wn7v7qbzjw/buckhorn_map" · “link “Park map” -> https://widnr.widen.net/s/wn7v7qbzjw/buckhorn_map”
+  - map.url = "https://widnr.widen.net/s/dtkcjrwv5r/newport_trails-map" · “link “Park map” -> https://widnr.widen.net/s/dtkcjrwv5r/newport_trails-map”
   - phone_hint = "(888) 947-2757" · “ontact Parks_Topic Contact_WSPS Reservations Wisconsin State Park System Reservations tel:+1-888-947-2757”
-  - reservable = true · “, 50 cart-in campsites and an accessible cabin for people with disabilities. Reservations Reserve a campsite online. Family campsites There ”
-  - restrooms = "vault" · “er apart than traditional campsites. Each site has a picnic table, fire ring and bench. A portable toilet is available for each cluster of s”
-  - rules.fires = "firewood! Due to the potential of carrying harmful tree pes · “web page . Firewood Firewood is available at the park office when it is open. Don't move firewood! Due to the potential of carrying harmful ”
-- **Council Grounds State Park** (US-1447, state, status ok, 14 facts) · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/parks/councilgrounds/recreation/camping)
-  - booking.how = "online: dnr.wisconsin.gov" · “link “Parks_Topic Contact_WSPS Reservations””
-  - booking.url = "https://dnr.wisconsin.gov/node/26781" · “link “Parks_Topic Contact_WSPS Reservations” -> https://dnr.wisconsin.gov/node/26781”
-  - drinking_water = true · “has electricity, tables, a fire ring and a grill. The group campground has vault toilets, drinking water fountains and garbage/recycling ava”
-  - dump_station = true · “and group campsites, open from May 1 to October 31. Shower and toilet facilities and the dump station are open seasonally from approximately”
-  - hookups.electric = true · “s heavily wooded and has 52 campsites, showers and flush toilets. There are 19 sites with electricity. Each site has a table and a fire ring”
-  - map.date_how = "web page, no date in the link" · “link “Park and campground map””
-  - map.url = "https://p.widencdn.net/ypmcf2/Council-Grounds_Map" · “link “Park and campground map” -> https://p.widencdn.net/ypmcf2/Council-Grounds_Map”
-  - phone_hint = "(888) 947-2757" · “ontact Parks_Topic Contact_WSPS Reservations Wisconsin State Park System Reservations tel:+1-888-947-2757”
-  - reservable = true · “ation are open seasonally from approximately mid-May to mid-October. Reservations Camping reservations are required and can be made for the ”
-  - restrooms = "flush + vault" · “mily campground The family campground is heavily wooded and has 52 campsites, showers and flush toilets. There are 19 sites with electricity”
-- **Chippewa Moraine SRA 3 outpost campsites** (intake-US-4257, agency (outside research camping-us-oct31), status ok, no campground facts in the page text: needs browser?, 5 facts) · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/parks/chipmoraine/recreation/camping)
-  - booking.url = "https://dnr.wisconsin.gov/topic/parks/chipmoraine/recreatio · “booking link from our outside research (camping, in the park) row (official system dnr.wisconsin.gov)”
-  - phone_hint = "(888) 947-2757" · “make a reservation before setting up on any site. Reserve a campsite online or by calling 1-888-947-2757. Firewood Don't move firewood! Due ”
-  - reservable = true · “park headquarters. Each site has a fire ring and an open-air toilet. Reservations Camping reservations are required and can be made for the ”
-  - restrooms = "yes (kind not stated)" · “about 5 miles away from the park headquarters. Each site has a fire ring and an open-air toilet. Reservations Camping reservations are requi”
-  - rules.fires = "firewood! Due to the potential of carrying harmful tree pes · “on any site. Reserve a campsite online or by calling 1-888-947-2757. Firewood Don't move firewood! Due to the potential of carrying harmful ”
+  - reservable = true · “kpack camping for visitors. Camping is allowed in designated campsites only. Reservations Reserve a campsite online. Backpack campsites Newp”
+  - restrooms = "vault" · “e are no carts available at the park. There are a few amenities at the sites, including a pit toilet, fire ring with flip-up grill, a lock b”
+  - rules.fires = "firewood! Due to the potential of carrying harmful tree pes · “any wood that is dead and down. It is illegal to cut anything from live trees. Don't move firewood! Due to the potential of carrying harmful”
+  - showers = false · “ark office or at a solar pump near the picnic shelter by Lot 3 (seasonally). There are no shower facilities at the park. All garbage must be”
+- **Twin Lakes Recreation Area; Spearhead Point Recreation Area; Wabasso Lake Recreation Area; West Point Recreation Area; Birch Grove Recreation Area; Perch Lake Recreation Area; Emily Lake Recreation Ar** (intake-US-4533, agency (outside research camping-us-oct31), status ok, 5 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/cnnf/recarea/?recid=27801)
+  - booking.url = "https://www.fs.usda.gov/recarea/cnnf/recarea/?recid=27801" · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
+  - map.date_how = "web page, no date in the link" · “link “Find a Map””
+  - map.url = "https://www.fs.usda.gov/r09/chequamegon-nicolet/maps-guides · “link “Find a Map” -> https://www.fs.usda.gov/r09/chequamegon-nicolet/maps-guides”
+  - season = "year-round" · “rthern Wisconsin. Explore the more than 1.5 million acres of water and woodlands offering year-round motorized trail riding, water- and land”
+  - sites.total = 30 · “thing sound of flowing water, you will appreciate this campground. About one-third of the 30 campsites are located adjacent to the Oconto Ri”
 
 ## US-MN: 12 random samples (records with facts; seed = the date)
 
