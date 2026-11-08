@@ -1,6 +1,6 @@
 {
  "about": "FLOW BOARD (chat 10, Nov 1 2026; Brandon 2:01 PM: 'stuff seems to get dropped a lot ... where you can see for example 900",
- "built": "2026-11-08 04:26Z",
+ "built": "2026-11-08 08:00Z",
  "stuck_days": 2,
  "piles": [
   {
@@ -49,7 +49,7 @@
    "n": 0,
    "owner": "chat 10 (the reader of that kind)",
    "note": "",
-   "date": "2026-11-07",
+   "date": "2026-11-08",
    "first_seen": "2026-11-01",
    "moved": "2026-11-02",
    "still_days": 6,
@@ -74,13 +74,13 @@
    "what": "engine finds handed to the collector (last hand-back)",
    "n": 0,
    "owner": "layer collector (every 2 h)",
-   "note": "engine results last saved 2026-11-07",
-   "date": "2026-11-07",
-   "engine_saved": "2026-11-07",
+   "note": "engine results last saved 2026-11-08",
+   "date": "2026-11-08",
+   "engine_saved": "2026-11-08",
    "first_seen": "2026-11-01",
    "moved": "2026-11-01",
    "still_days": 7,
-   "stuck": true
+   "stuck": false
   },
   {
    "id": "collector-left",
@@ -350,9 +350,9 @@
    "id": "held-trails",
    "stage": "7 waiting room",
    "what": "HELD trails files (a check failed; data/waiting/today.md says why)",
-   "n": 1,
+   "n": 3,
    "owner": "chat 2 (fix) + chat 11",
-   "note": "state-report",
+   "note": "state-report, US-13626, US-9203",
    "date": "2026-11-04",
    "since": "2026-11-04",
    "first_seen": "2026-11-01",
@@ -378,9 +378,9 @@
    "id": "held-world-key",
    "stage": "7 waiting room",
    "what": "HELD world-key files (a check failed; data/waiting/today.md says why)",
-   "n": 2,
+   "n": 1,
    "owner": "chat 2 (fix) + chat 11",
-   "note": "ZA, HU",
+   "note": "ZA",
    "date": "2026-11-07",
    "since": "2026-11-07",
    "first_seen": "2026-11-07",
@@ -407,8 +407,8 @@
    "what": "2-fer checker: found work",
    "n": 1,
    "owner": "chat 2 + chat 11",
-   "note": "weekly re-test of live 2-fers (last run 2026-11-01; the bot is fine, red was the old status rule) · chat 2 rechecks + chat 11 grades 461 SHRUNK / GONE / MOVED rows (data/fers-check/alerts.md",
-   "date": "2026-11-02",
+   "note": "weekly re-test of live 2-fers · chat 2 rechecks + chat 11 grades 849 SHRUNK / GONE / MOVED rows (data/fers-check/alerts.md",
+   "date": "2026-11-08",
    "first_seen": "2026-11-01",
    "moved": "2026-11-01",
    "still_days": 7,
@@ -498,25 +498,12 @@
    "what": "key-doctor: found work",
    "n": 1,
    "owner": "chat 10",
-   "note": "NOs: 442 of 720 NOs landed; 278 missing (re-applied to overrides.fixed.json); 1059 came back in the  · chat 10 (came-back NOs / stuck areas); per-park release in release-approved",
+   "note": "NOs: 431 of 723 NOs landed; 292 missing (re-applied to overrides.fixed.json); 1059 came back in the  · chat 10 (came-back NOs / stuck areas); per-park release in release-approved",
    "date": "2026-11-08",
    "first_seen": "2026-11-02",
    "moved": "2026-11-02",
    "still_days": 6,
    "stuck": true
-  },
-  {
-   "id": "bot-waiting room",
-   "stage": "8 bots",
-   "what": "waiting room: RED (the bot is broken)",
-   "n": 1,
-   "owner": "chat 10",
-   "note": "262 files waiting over 3 days in data/waiting/in/ (e.g. US-NY.json) · chat 11 (look at the waiting room run)",
-   "date": "2026-11-08",
-   "first_seen": "2026-11-08",
-   "moved": "2026-11-08",
-   "still_days": 0,
-   "stuck": false
   }
  ]
 }
