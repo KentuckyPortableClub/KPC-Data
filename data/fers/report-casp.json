@@ -1,0 +1,109 @@
+{
+ "about": "Counts from the 2-fer bot (kpc_fers.py). Hidden: data only.",
+ "pass1": {
+  "cell_m": 20.0,
+  "date": "2026-11-08",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 649,
+   "bad POTA pin (0,0 / impossible, listed)": 171,
+   "every joined piece is in the overrides no list (key not rebuilt yet)": 0,
+   "no outline": 2953,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "missing boundary": 0,
+  "official parks": 1,
+  "pairs tested": 0,
+  "pairs whose boxes touch": 0,
+  "parks done by the box test": 1,
+  "parks whose outline could not be read": 0,
+  "pass": 1,
+  "problems": [
+   "W&S river corridors joined as area parks: 15",
+   "281 trail parks tested by their official line (R5), not their polygon: CA-1301, CA-1599, CA-3546, CA-4786, CA-5344, CA-5536, CA-5565, CA-5595, CA-5628, CA-5688"
+  ],
+  "with official lines": 0
+ },
+ "pass2": {
+  "agree with the pass before": 0,
+  "cell_m": 10.0,
+  "date": "2026-11-08",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 649,
+   "bad POTA pin (0,0 / impossible, listed)": 171,
+   "every joined piece is in the overrides no list (key not rebuilt yet)": 0,
+   "no outline": 2953,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "new here only (not counted)": 0,
+  "official parks": 1,
+  "pairs tested": 0,
+  "parks whose outline could not be read": 0,
+  "parks with a saved copy only (no fresh download possible)": 0,
+  "pass": 2,
+  "problems": [
+   "W&S river corridors joined as area parks: 15",
+   "281 trail parks tested by their official line (R5), not their polygon: CA-1301, CA-1599, CA-3546, CA-4786, CA-5344, CA-5536, CA-5565, CA-5595, CA-5628, CA-5688"
+  ],
+  "with official lines": 0
+ },
+ "pass3": {
+  "agree with the pass before": 0,
+  "cell_m": 5.0,
+  "date": "2026-11-08",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 649,
+   "bad POTA pin (0,0 / impossible, listed)": 171,
+   "every joined piece is in the overrides no list (key not rebuilt yet)": 0,
+   "no outline": 2953,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "new here only (not counted)": 0,
+  "official parks": 1,
+  "pairs tested": 0,
+  "parks whose outline could not be read": 0,
+  "parks with a saved copy only (no fresh download possible)": 0,
+  "pass": 3,
+  "problems": [
+   "W&S river corridors joined as area parks: 15",
+   "281 trail parks tested by their official line (R5), not their polygon: CA-1301, CA-1599, CA-3546, CA-4786, CA-5344, CA-5536, CA-5565, CA-5595, CA-5628, CA-5688"
+  ],
+  "with official lines": 0
+ },
+ "pass5": {
+  "cell_m": 5.0,
+  "checked": 0,
+  "date": "2026-11-08",
+  "left out": {
+   "Kentucky (own list)": "all (ky-overlaps.geojson)",
+   "approximate": 649,
+   "bad POTA pin (0,0 / impossible, listed)": 171,
+   "every joined piece is in the overrides no list (key not rebuilt yet)": 0,
+   "no outline": 2953,
+   "no pin": 0,
+   "pin well outside": 0
+  },
+  "live rows held: spot far from a state park pin (rule B13)": 0,
+  "memory (MB now / cap; caches dropped for memory)": "599 / 5000; 0",
+  "official parks": 1,
+  "pairs tested": 0,
+  "pass": 5,
+  "problems": [
+   "W&S river corridors joined as area parks: 15",
+   "281 trail parks tested by their official line (R5), not their polygon: CA-1301, CA-1599, CA-3546, CA-4786, CA-5344, CA-5536, CA-5565, CA-5595, CA-5628, CA-5688"
+  ],
+  "river channels listed as water only (boat spots)": 0,
+  "spots given their boundary lines": 0,
+  "still not checked": 0,
+  "trail stretches given their true zone": 0,
+  "water only": 0,
+  "water retries (won / tries)": "0 / 0",
+  "with official lines": 0
+ },
+ "per state": {}
+}
