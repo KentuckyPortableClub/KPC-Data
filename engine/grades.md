@@ -8,14 +8,14 @@ The engine decides nothing; this is its self-check against the bar.
 
 **Bar:** Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.
 
-**Measured:** rows 7459, parks 3685, parks_with_hit 329, SURE 296, LIKELY 457, UNLIKELY_evidence 2543, strong 132, already_approved 462, open_without_whynot 615, non_official_candidates 0, unlikely_as_questions 0, strong_but_not_sure 0, questions_beyond_150m 0, size_way_off_questions 0
+**Measured:** rows 7509, parks 3735, parks_with_hit 332, SURE 296, LIKELY 460, UNLIKELY_evidence 2572, strong 132, already_approved 465, open_without_whynot 615, non_official_candidates 0, unlikely_as_questions 0, strong_but_not_sure 0, questions_beyond_150m 0, size_way_off_questions 0
 
 **Top reasons for misses:**
-- not found: no-layer: no official record at the pin or by name (2422)
-- evidence: UNLIKELY only : name: none word in common (1080)
+- not found: no-layer: no official record at the pin or by name (2428)
+- evidence: UNLIKELY only : name: none word in common (1088)
 - evidence: UNLIKELY only : pin not inside nor within m with a name match (593)
-- blocked: host resting (488)
-- already approved: already approved (462)
+- blocked: host resting (497)
+- already approved: already approved (465)
 
 **Why it fails:**
 - open parks without a why-not: 615
