@@ -6,19 +6,19 @@
     "agree": 33,
     "handover_hints": 4,
     "no_page": 3,
-    "no_size": 60,
+    "no_size": 57,
     "off": 16,
     "ours_unknown": 4,
     "parks": 155,
     "retired": 0,
-    "unsure": 13,
+    "unsure": 15,
     "weak": 7,
-    "with_outline": 134
+    "with_outline": 133
    },
    "left": 0,
    "parks": 155,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-08"
   },
   "US-AR": {
    "checked": 306,
@@ -123,22 +123,22 @@
   "US-FL": {
    "checked": 460,
    "counts": {
-    "agree": 84,
-    "handover_hints": 16,
+    "agree": 83,
+    "handover_hints": 15,
     "no_page": 0,
-    "no_size": 280,
+    "no_size": 279,
     "off": 46,
     "ours_unknown": 2,
     "parks": 460,
     "retired": 0,
     "unsure": 31,
-    "weak": 11,
-    "with_outline": 443
+    "weak": 10,
+    "with_outline": 441
    },
    "left": 0,
    "parks": 460,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-08"
   },
   "US-GA": {
    "checked": 237,
@@ -157,7 +157,7 @@
    },
    "left": 0,
    "parks": 237,
-   "status": "queued",
+   "status": "done",
    "updated": "2026-11-08"
   },
   "US-IA": {
@@ -417,7 +417,7 @@
    },
    "left": 0,
    "parks": 253,
-   "status": "queued",
+   "status": "done",
    "updated": "2026-11-08"
   },
   "US-ND": {
@@ -583,22 +583,22 @@
   "US-SC": {
    "checked": 167,
    "counts": {
-    "agree": 16,
-    "handover_hints": 4,
+    "agree": 18,
+    "handover_hints": 5,
     "no_page": 3,
-    "no_size": 126,
-    "off": 7,
-    "ours_unknown": 2,
+    "no_size": 111,
+    "off": 14,
+    "ours_unknown": 3,
     "parks": 167,
     "retired": 0,
-    "unsure": 5,
+    "unsure": 11,
     "weak": 4,
-    "with_outline": 159
+    "with_outline": 160
    },
    "left": 0,
    "parks": 167,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-08"
   },
   "US-SD": {
    "checked": 120,
@@ -677,7 +677,7 @@
    },
    "left": 0,
    "parks": 184,
-   "status": "queued",
+   "status": "done",
    "updated": "2026-11-08"
   },
   "US-VT": {
@@ -737,52 +737,61 @@
    },
    "left": 0,
    "parks": 172,
-   "status": "queued",
+   "status": "done",
    "updated": "2026-11-08"
   }
  },
- "hosts": {},
+ "hosts": {
+  "www.alapark.com": 1794238982.9815848,
+  "www.floridastateparks.org": 1794242895.6292014,
+  "www.swfwmd.state.fl.us": 1794242965.7682638
+ },
  "last": {
   "areas": [
-   "US-TN"
+   "US-FL"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 392,
+   "dropped_queued": 35,
    "errors": 0,
+   "for_person": 4,
    "for_person_urls": [
     [
-     "https://www.tn.gov/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.tn.gov this run"
+     "https://www.floridastateparks.org/parks-and-trails/little-talbot-island-state-park",
+     "HTTP 403 twice"
     ],
     [
-     "https://tnstateparks.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from tnstateparks.com this run"
+     "https://www.floridastateparks.org/learn/rules-regulations",
+     "HTTP 403 twice"
     ],
     [
-     "https://www.murfreesborotn.gov/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.murfreesborotn.gov this run"
+     "https://www.swfwmd.state.fl.us/recreation/myakka-river-flatford-swamp",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.swfwmd.state.fl.us/recreation/deep-creek-preserve",
+     "HTTP 403 twice"
     ]
    ],
-   "requests": 3,
-   "rested": 0,
-   "robots": 3,
-   "robots_unreadable": 3,
-   "strikes": 0
+   "requests": 18,
+   "rested": 366,
+   "retry403": 4,
+   "robots": 1,
+   "strikes": 8
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 3,
-   "no_size": 227,
-   "ours_unknown": 2,
-   "pages_read": 0,
-   "parks": 229,
+   "handover_hints": 15,
+   "no_size": 215,
+   "ours_unknown": 0,
+   "pages_read": 1,
+   "parks": 232,
    "retired": 0,
-   "size_agree": 0,
-   "size_off": 0,
-   "size_unsure": 0,
-   "skipped_fresh": 48,
-   "with_outline": 229
+   "size_agree": 8,
+   "size_off": 3,
+   "size_unsure": 4,
+   "skipped_fresh": 228,
+   "with_outline": 230
   },
   "when": "2026-11-08"
  },
