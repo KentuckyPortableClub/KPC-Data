@@ -1,0 +1,39 @@
+# Outside agent's layer converter (Nov 7 2026; Brandon 7:39 PM CST: 'Enter everything you got'), reviewed by Grok Bot before it went in:
+# blocked hosts, robots.txt (401/403/5xx = refused, as kpc_manners reads it), Crawl-delay (2 s minimum, 60 s for ArcGIS Hub / open-data
+# portals), at most 3 tries, no mirrors, token only ever sent to raw.githubusercontent.com. MANUAL ONLY (no schedule). Nothing is
+# committed or pushed: the converted files come back as a run artifact for review. Licences are BELIEVED, not confirmed; rows with a
+# 'hold' reason in licences.csv (RO, MX, VU, GE, TT, US-MS WMA, BG; and 38 SI evrd, 50 NL PDOK, 51 BE am_patdat) are converted for review
+# only and marked hold_for_check / publish false.
+name: KPC convert approved non-layer sources, Nov 7 (manual, artifact only)
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Row numbers to run, e.g. 4,5,39 (blank = all 55)"
+        required: false
+        default: ''
+permissions:
+  contents: read
+concurrency:
+  group: kpc-convert-sources-nov7
+  cancel-in-progress: false
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install geopandas pyogrio shapely pyproj requests
+      - name: Convert
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # only sent to raw.githubusercontent.com (the intake-files branch)
+          ONLY: ${{ inputs.only }}                    # passed as data, never pasted into the shell line
+        run: |
+          case "$ONLY" in *[!0-9,\ ]*) echo "::error::only takes row numbers and commas"; exit 1;; esac
+          D=.github/scripts/draft/tools/kpc_layers_nov7
+          python3 "$D/convert_layers.py" --csv "$D/inputs/kpc-non-layer-urls-to-convert-nov7.csv" --out converted --only "$ONLY"
+      - uses: actions/upload-artifact@v4          # review the artifact; no commit, no push
+        if: always()
+        with: { name: converted-layers, path: converted/, retention-days: 14 }

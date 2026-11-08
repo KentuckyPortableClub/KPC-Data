@@ -1,5 +1,5 @@
 {
- "about": "Recorded Nov 2 numbers from the v2 handoff samples and the status the Nov 7 gates must give. Only values that are in the zip are used; anything not retained is marked undetermined, not guessed. The CA-5926 parcel row is NOT here: its park type was not retained and Larose Forest is a large real forest, so a hold is not known to be right.",
+ "about": "Recorded Nov 2 numbers from the v2 handoff samples and the status the Nov 7 gates must give. Only values that are in the zip are used; anything not retained is marked undetermined, not guessed. The CA-5926 parcel row is NOT here: its park type was not retained and Larose Forest is a large real forest, so a hold is not known to be right. Nov 7 evening (Quality grade 2026-11-07 world-pins15-tracer item C): CA-1248 and US-10787 updated to the #31/#32 outcomes; expect 'no_fit' = the tracer draws nothing (checked in tests/test_trace_limits_nov7.py).",
  "rows": [
   {
    "ref": "US-5460",
@@ -35,19 +35,23 @@
    "fit_err_m": 0.0,
    "pin_dist_m": 27555,
    "known_acres": null,
-   "expect": "hold",
+   "expect": "no_fit",
    "reasons": [
-    "pin outside"
-   ]
+    "water source skipped (robots)"
+   ],
+   "outcome": "NO FIT",
+   "note": "Nov 7 (#31/#32 dry run): an honest NO FIT, 'water source skipped (robots)', instead of ERROR. The Nov 2 numbers (142.1 ac, pin 27.6 km away) would still hold it on 'pin outside'; no outline is drawn now."
   },
   {
    "ref": "CA-1248",
    "type": "Nature Reserve",
-   "traced_acres": 314.6,
+   "traced_acres": 28.9,
    "fit_err_m": 0.3,
    "pin_dist_m": 0,
    "known_acres": null,
-   "expect": "ok"
+   "expect": "ok",
+   "outcome": "DRAWN",
+   "note": "Nov 7 (#31 tracer gates + #32 GeoPDF flip, real 4000 px fixture page): DRAWN 28.9 ac, the preserve the pin sits in, right way up. Was 314.6 ac (Nov 2: streets / the 265 ac shoreline ring on a flipped page)."
   },
   {
    "ref": "CA-5171",
