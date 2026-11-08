@@ -2,18 +2,13 @@
 
 | area | SAME | FIRST LOOK | GREW | SHRANK | MOVED | RECORD GONE | RENAMED | LAYER MOVED | SOURCE DOWN | CAN'T TELL |
 |---|---|---|---|---|---|---|---|---|---|---|
-| US-KY | 189 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 3 |
-| US-TN | 252 | 2 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 4 |
-| CA-ON | 814 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 151 |
+| US-KY | 190 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 |
+| US-TN | 258 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 |
+| CA-ON | 815 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 151 |
 
-## Changed parks (6)
+## Changed parks (0)
 
-- **US-KY US-4484 Daniel Boone National Forest**: SHRANK. The agency's outline shrank from 2,043,000.0 to 710,400.0 acres (-65.2%). Note: the set of records read is not the same as last run. 35.5% of the old outline is still inside the new one. 2-fer rows using it: 236 (28 live).
-- **US-TN US-3792 Land Between the Lakes National Recreation Area**: GREW. The agency's outline grew from 121,400.0 to 171,300.0 acres (+41.1%). Note: the set of records read is not the same as last run. 52.4% of the old outline is still inside the new one.
-- **US-TN US-3949 Kyker Bottoms Wildlife Refuge**: GREW. The agency's outline grew from 578.7 to 585.7 acres (+1.2%). Note: the set of records read is not the same as last run. 100.0% of the old outline is still inside the new one.
-- **US-TN US-3960 Reelfoot State Wildlife Area**: SHRANK. The agency's outline shrank from 28,020.0 to 22,440.0 acres (-19.9%). Note: the set of records read is not the same as last run. 80.5% of the old outline is still inside the new one.
-- **US-TN US-6275 Walls of Jericho State Natural Area**: SHRANK. The agency's outline shrank from 779.5 to 752.8 acres (-3.4%). Note: the set of records read is not the same as last run. 97.0% of the old outline is still inside the new one.
-- **CA-ON CA-1643 St. Williams Conservation Reserve**: GREW. The agency's outline grew from 2,556.0 to 2,731.0 acres (+6.8%). Note: the set of records read is not the same as last run. 99.8% of the old outline is still inside the new one.
+None.
 
 ## Could not check (158), tried again next run
 
@@ -62,4 +57,4 @@
 - CAN'T TELL (1): This park could not be checked: no layer address for 'ON-LSRCA Lak' in layers.json or the tool's list. Parks: CA-6358.
 - CAN'T TELL (1): This park could not be checked: no layer address for 'Hard look~17' in layers.json or the tool's list. Parks: CA-6617.
 
-Layers: 25 looked at, 13 not edited since the last run. Web requests this run: 267.
+Layers: 25 looked at, 15 not edited since the last run. Web requests this run: 264.
