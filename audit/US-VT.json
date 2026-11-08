@@ -1,7 +1,8 @@
 {
  "area": "US-VT",
- "built": "2026-11-02",
+ "built": "2026-11-08",
  "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
  "parks": [
   {
    "ref": "US-0329",
@@ -49,10 +50,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 27098.5,
-     "official_acres": 54180.0,
-     "times": 2.0,
+     "official_acres": 27090.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -73,7 +74,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-71.7600611148564 44.8109113367356]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-71.7600611148564 44.8109113367356]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -92,8 +99,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OFF: The outline is 2.0 times smaller than the official 54,180 acres (27,098 ac drawn) (+2 more flags)."
+   "score": 2,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-71.7600611148564 44.8109113367356]; 1 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-0574",
@@ -141,10 +148,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 7303.6,
-     "official_acres": 14571.0,
-     "times": 2.0,
+     "official_acres": 7292.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -179,8 +186,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 14,571 acres (7,304 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0744",
@@ -753,7 +760,8 @@
     -73.3848
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38"
    ],
    "acres_drawn": 142.8,
    "records": [
@@ -776,11 +784,22 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=58785&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgvta269",
+     "name": "Mount Independence",
+     "type": "Vermont Agency of Natural Resources (preserve, state GIS table)",
+     "acres": 12.0,
+     "acres_from": "acres field",
+     "layer": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
+     "link": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?objectIds=269&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#52105",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#58785"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#58785",
+    "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38#269"
    ],
    "tests": {
     "T1": {
@@ -988,7 +1007,13 @@
       "INVALID",
       "TINY HOLES"
      ],
-     "note": "Too few points in geometry component[-73.3018219791085 44.8758259285574]; 4 hole(s) under 100 m2"
+     "note": "Too few points in geometry component[-73.3018219791085 44.8758259285574]; 4 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 4,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1071,8 +1096,10 @@
      "flag": "PASS",
      "outline_acres": 481.5,
      "official_acres": 643.0,
-     "times": 1.34,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)",
+     "official_acres_low": 482.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 482 ac, all providers added 643 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -1316,7 +1343,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -1839,7 +1872,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2084,7 +2123,13 @@
       "INVALID",
       "TINY HOLES"
      ],
-     "note": "Too few points in geometry component[-72.927477110772 44.2241894096481]; 2 hole(s) under 100 m2"
+     "note": "Too few points in geometry component[-72.927477110772 44.2241894096481]; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2205,10 +2250,21 @@
     -72.6973
    ],
    "outline_from": [
+    "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 5787.3,
+   "acres_drawn": 23597.9,
    "records": [
+    {
+     "id": "sgvta18",
+     "name": "Coolidge State Forest",
+     "type": "Vermont Agency of Natural Resources (preserve, state GIS table)",
+     "acres": 23596.0,
+     "acres_from": "acres field",
+     "layer": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
+     "link": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?objectIds=18&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
     {
      "id": "padus#61205",
      "name": "Coolidge State Forest",
@@ -2231,6 +2287,7 @@
     }
    ],
    "record_ids": [
+    "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38#18",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#61205",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#61234"
    ],
@@ -2241,8 +2298,8 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 5787.3,
-     "official_acres": 5787.0,
+     "outline_acres": 23597.9,
+     "official_acres": 23596.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -2259,7 +2316,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 8
+     "pieces": 15
     },
     "T6": {
      "flag": "PASS"
@@ -2283,7 +2340,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "record sgvta18: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
+   ],
    "status": "graded",
    "score": 1,
    "why": "DUPLICATE: Another park number uses the same record: US-5541."
@@ -2590,7 +2649,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-72.5327849270213 44.5417589000722]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-72.5327849270213 44.5417589000722]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3927,8 +3992,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 55.5,
-     "official_acres": 59.0,
-     "times": 1.06,
+     "official_acres": 56.0,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -3961,7 +4026,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "official acres count once the land of padus#61120: it lies inside a bigger record from the same source"
+   ],
    "status": "graded",
    "score": 0,
    "why": "All tests pass."
@@ -4491,10 +4558,21 @@
     -71.6432
    ],
    "outline_from": [
+    "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 413.8,
+   "acres_drawn": 441.8,
    "records": [
+    {
+     "id": "sgvta30",
+     "name": "Maidstone State Forest",
+     "type": "Vermont Agency of Natural Resources (preserve, state GIS table)",
+     "acres": 442.0,
+     "acres_from": "acres field",
+     "layer": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
+     "link": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?objectIds=30&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
     {
      "id": "padus#61335",
      "name": "Maidstone State Forest",
@@ -4517,6 +4595,7 @@
     }
    ],
    "record_ids": [
+    "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38#30",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#61335",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#61334"
    ],
@@ -4527,8 +4606,8 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 413.8,
-     "official_acres": 413.0,
+     "outline_acres": 441.8,
+     "official_acres": 442.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -4545,7 +4624,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 2
+     "pieces": 3
     },
     "T6": {
      "flag": "PASS"
@@ -5076,7 +5155,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-73.1834619494348 44.5780579413134]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-73.1834619494348 44.5780579413134]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5622,7 +5707,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6418,11 +6509,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-4527",
@@ -6484,7 +6575,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-72.8558190520403 44.0624197173004]; 5 hole(s) under 100 m2; 89 pieces spread over 176 km"
+     "note": "Ring Self-intersection[-72.8558190520403 44.0624197173004]; 5 hole(s) under 100 m2; 89 pieces spread over 176 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 5,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6570,11 +6667,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-4588",
@@ -6732,7 +6829,13 @@
       "INVALID",
       "SLIVERS"
      ],
-     "note": "Nested shells[-72.2857928469864 44.3575223438596]; 1 piece(s) under 10 m wide"
+     "note": "Nested shells[-72.2857928469864 44.3575223438596]; 1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.01,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6765,7 +6868,8 @@
     -72.4591
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38"
    ],
    "acres_drawn": 204.4,
    "records": [
@@ -6778,10 +6882,21 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=61142&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgvta419",
+     "name": "Muckross",
+     "type": "Vermont Agency of Natural Resources (preserve, state GIS table)",
+     "acres": 204.0,
+     "acres_from": "acres field",
+     "layer": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
+     "link": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?objectIds=419&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#61142"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#61142",
+    "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38#419"
    ],
    "tests": {
     "T1": {
@@ -7087,7 +7202,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7861,7 +7982,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8034,8 +8161,10 @@
      "flag": "PASS",
      "outline_acres": 86.7,
      "official_acres": 91.0,
-     "times": 1.05,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)",
+     "official_acres_low": 87.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 87 ac, all providers added 91 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -8430,8 +8559,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 14840.9,
-     "official_acres": 14839.0,
-     "times": 1.0,
+     "official_acres": 14172.0,
+     "times": 1.05,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -8451,7 +8580,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "34 hole(s) under 100 m2"
+     "note": "34 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 34,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9231,7 +9366,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-72.7009640086983 44.0549369919856]; 1 piece(s) under 10 m wide; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-72.7009640086983 44.0549369919856]; 1 piece(s) under 10 m wide; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9489,7 +9630,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-72.3782059389468 44.2369672809264]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-72.3782059389468 44.2369672809264]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9712,7 +9859,7 @@
      "outline_acres": 27141.5,
      "official_acres": 27058.0,
      "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)"
     },
     "T3": {
      "flag": "PASS",
@@ -9733,7 +9880,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Self-intersection[-72.332517984813 44.3240572334209]; 1 piece(s) under 10 m wide; 12 hole(s) under 100 m2"
+     "note": "Self-intersection[-72.332517984813 44.3240572334209]; 1 piece(s) under 10 m wide; 12 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 12,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -10132,7 +10285,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "7 hole(s) under 100 m2"
+     "note": "7 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 7,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -10360,7 +10519,7 @@
      "outline_acres": 45474.0,
      "official_acres": 45219.0,
      "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)"
     },
     "T3": {
      "flag": "PASS",
@@ -10380,7 +10539,13 @@
       "INVALID",
       "TINY HOLES"
      ],
-     "note": "Too few points in geometry component[-72.7436078087947 44.386524336778]; 8 hole(s) under 100 m2"
+     "note": "Too few points in geometry component[-72.7436078087947 44.386524336778]; 8 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 8,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -10657,7 +10822,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11215,7 +11386,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11373,7 +11550,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
