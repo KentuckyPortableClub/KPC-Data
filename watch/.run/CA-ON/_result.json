@@ -18,6 +18,12 @@
   "why": "The agency's outline matches the last run."
  },
  {
+  "ref": "CA-0023",
+  "name": "Frontenac Arch Biosphere Reserve",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~5' in layers.json or the tool's list."
+ },
+ {
   "ref": "CA-0026",
   "name": "Georgian Bay Islands National Park",
   "verdict": "SAME",
@@ -376,6 +382,12 @@
   "name": "Chantry Island Migratory Bird Sanctuary",
   "verdict": "SAME",
   "why": "The agency's outline matches the last run."
+ },
+ {
+  "ref": "CA-0177",
+  "name": "Chapleau Crown Game Preserve",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~6' in layers.json or the tool's list."
  },
  {
   "ref": "CA-0178",
@@ -2118,6 +2130,12 @@
   "why": "This park could not be checked: no layer address for 'ON-ABCA Ausa' in layers.json or the tool's list."
  },
  {
+  "ref": "CA-1301",
+  "name": "Barron Canyon National Geologic Trail",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'trl1301' in layers.json or the tool's list."
+ },
+ {
   "ref": "CA-1302",
   "name": "Barron River Provincial Park",
   "verdict": "SAME",
@@ -3756,6 +3774,12 @@
   "why": "The agency's outline matches the last run. Some records could not be read: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
  },
  {
+  "ref": "CA-1599",
+  "name": "South Point Trail (Rondeau) Provincial Park",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'trl1599' in layers.json or the tool's list."
+ },
+ {
   "ref": "CA-1600",
   "name": "Rose Lake Dune Peatland Complex Conservation Reserve",
   "verdict": "SAME",
@@ -3986,22 +4010,11 @@
  {
   "ref": "CA-1643",
   "name": "St. Williams Conservation Reserve",
-  "leads": [
-   {
-    "layer": "Ontario cons",
-    "old_record_id": 20801,
-    "new_record_ids": [
-     22081
-    ],
-    "name_on_layer": "ST. WILLIAMS CONSERVATION RESERVE",
-    "how": "exact name"
-   }
-  ],
-  "verdict": "RECORD GONE",
-  "why": "No longer on the agency's layer: record 20801 ('ST. WILLIAMS CONSERVATION RESERVE') on Ontario cons (a record named 'ST. WILLIAMS CONSERVATION RESERVE' is on the layer as number 22081: probably renumbered).",
+  "verdict": "GREW",
+  "why": "The agency's outline grew from 2,556.0 to 2,731.0 acres (+6.8%). Note: the set of records read is not the same as last run.",
   "old_acres": 2556,
-  "new_acres": 2556,
-  "old_still_inside_pct": 93.9,
+  "new_acres": 2731,
+  "old_still_inside_pct": 99.8,
   "old_outline_from": "the club's saved outline",
   "fers": []
  },
@@ -4076,6 +4089,24 @@
   "name": "Tembec Wetland Complex Conservation Reserve",
   "verdict": "SAME",
   "why": "The agency's outline matches the last run."
+ },
+ {
+  "ref": "CA-1658",
+  "name": "Sunnidale Recreation Park",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~8' in layers.json or the tool's list."
+ },
+ {
+  "ref": "CA-1660",
+  "name": "Edenvale Conservation Area",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~9' in layers.json or the tool's list."
+ },
+ {
+  "ref": "CA-1661",
+  "name": "Fort Willow Conservation Area",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~9' in layers.json or the tool's list."
  },
  {
   "ref": "CA-1662",
@@ -4166,6 +4197,12 @@
   "name": "Upper Shebeshekong Wetland Conservation Reserve",
   "verdict": "SAME",
   "why": "The agency's outline matches the last run."
+ },
+ {
+  "ref": "CA-1678",
+  "name": "New Lowell Conservation Area",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~9' in layers.json or the tool's list."
  },
  {
   "ref": "CA-1679",
@@ -4354,16 +4391,34 @@
   "why": "The agency's outline matches the last run."
  },
  {
+  "ref": "CA-4861",
+  "name": "Butler's Barracks National Historic Site",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~2' in layers.json or the tool's list."
+ },
+ {
   "ref": "CA-4863",
   "name": "Fort George National Historic Site",
   "verdict": "SAME",
   "why": "The agency's outline matches the last run."
  },
  {
+  "ref": "CA-4865",
+  "name": "Fort Malden National Historic Site",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~2' in layers.json or the tool's list."
+ },
+ {
   "ref": "CA-4867",
   "name": "Fort St. Joseph National Historic Site",
   "verdict": "SAME",
   "why": "The agency's layer has not been edited since the last run, so the outline is the same."
+ },
+ {
+  "ref": "CA-4873",
+  "name": "Laurier House National Historic Site",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~2' in layers.json or the tool's list."
  },
  {
   "ref": "CA-4878",
@@ -4382,6 +4437,18 @@
   "name": "Sault Ste. Marie Canal National Historic Site",
   "verdict": "SAME",
   "why": "The agency's layer has not been edited since the last run, so the outline is the same."
+ },
+ {
+  "ref": "CA-4887",
+  "name": "Sir John Johnson House National Historic Site",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~2' in layers.json or the tool's list."
+ },
+ {
+  "ref": "CA-4890",
+  "name": "Woodside National Historic Site",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~2' in layers.json or the tool's list."
  },
  {
   "ref": "CA-5086",
@@ -4492,6 +4559,12 @@
   "why": "The agency's outline matches the last run. Some records could not be read: no layer address for 'ON-TRCA Toro' in layers.json or the tool's list; no layer address for 'ON-TRCA Toro' in layers.json or the tool's list."
  },
  {
+  "ref": "CA-5114",
+  "name": "Pier 4 Park",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~10' in layers.json or the tool's list."
+ },
+ {
   "ref": "CA-5141",
   "name": "Lemoine Point Conservation Area",
   "verdict": "SAME",
@@ -4522,6 +4595,12 @@
   "why": "The agency's outline matches the last run. Some records could not be read: no layer address for 'ON-RVCA Ride' in layers.json or the tool's list."
  },
  {
+  "ref": "CA-5297",
+  "name": "Bell Homestead National Historic Site",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~11' in layers.json or the tool's list."
+ },
+ {
   "ref": "CA-5301",
   "name": "David Dunlap Observatory National Historic Site",
   "verdict": "SAME",
@@ -4538,6 +4617,12 @@
   "name": "Nottawasaga Bluffs Conservation Area",
   "verdict": "SAME",
   "why": "The agency's outline matches the last run."
+ },
+ {
+  "ref": "CA-5314",
+  "name": "Tottenham Conservation Area",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~9' in layers.json or the tool's list."
  },
  {
   "ref": "CA-5317",
@@ -4648,6 +4733,18 @@
   "why": "This park could not be checked: no layer address for 'ON-CH Conser' in layers.json or the tool's list."
  },
  {
+  "ref": "CA-5528",
+  "name": "Mackenzie Glen District Park Recreation Park",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~13' in layers.json or the tool's list."
+ },
+ {
+  "ref": "CA-5536",
+  "name": "Nassagaweya Canyon Trail Recreation Site",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'trl5536' in layers.json or the tool's list."
+ },
+ {
   "ref": "CA-5541",
   "name": "E.M. Warwick Conservation Area",
   "verdict": "CAN'T TELL",
@@ -4724,6 +4821,12 @@
   "name": "Area 8 Conservation Area",
   "verdict": "CAN'T TELL",
   "why": "This park could not be checked: no layer address for 'ON-CH Conser' in layers.json or the tool's list."
+ },
+ {
+  "ref": "CA-5565",
+  "name": "Dofasco 2000 Trail Conservation Area",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'trl5565' in layers.json or the tool's list."
  },
  {
   "ref": "CA-5566",
@@ -4954,6 +5057,12 @@
   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
  },
  {
+  "ref": "CA-5628",
+  "name": "Bruce Trail National Recreation Trail",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'trl5628' in layers.json or the tool's list."
+ },
+ {
   "ref": "CA-5630",
   "name": "Carr's Marsh Conservation Area",
   "verdict": "CAN'T TELL",
@@ -5002,6 +5111,12 @@
   "why": "The agency's outline matches the last run."
  },
  {
+  "ref": "CA-5641",
+  "name": "Sylvan Glen Conservation Area",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~14' in layers.json or the tool's list."
+ },
+ {
   "ref": "CA-5642",
   "name": "Rock Dunder Nature Reserve",
   "verdict": "SAME",
@@ -5012,6 +5127,12 @@
   "name": "Charles Sauriol Conservation Area",
   "verdict": "CAN'T TELL",
   "why": "This park could not be checked: no layer address for 'ON-TRCA Toro' in layers.json or the tool's list."
+ },
+ {
+  "ref": "CA-5645",
+  "name": "Ball's Mill Conservation Area",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~14' in layers.json or the tool's list."
  },
  {
   "ref": "CA-5647",
@@ -5030,6 +5151,12 @@
   "name": "Richardson's Lookout Conservation Area",
   "verdict": "CAN'T TELL",
   "why": "This park could not be checked: no layer address for 'ON-GANA Gana' in layers.json or the tool's list."
+ },
+ {
+  "ref": "CA-5650",
+  "name": "Thurne Parks Conservation Area",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~14' in layers.json or the tool's list."
  },
  {
   "ref": "CA-5651",
@@ -5134,6 +5261,12 @@
   "why": "This park could not be checked: no layer address for 'ON-CVC Credi' in layers.json or the tool's list."
  },
  {
+  "ref": "CA-5945",
+  "name": "Cooper Marsh Conservation Area",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~15' in layers.json or the tool's list."
+ },
+ {
   "ref": "CA-5947",
   "name": "Devonwood Conservation Area",
   "verdict": "CAN'T TELL",
@@ -5212,6 +5345,12 @@
   "why": "The agency's outline matches the last run."
  },
  {
+  "ref": "CA-5989",
+  "name": "Sulpher Spring Conservation Area",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+ },
+ {
   "ref": "CA-5990",
   "name": "Varney Conservation Area",
   "verdict": "CAN'T TELL",
@@ -5264,6 +5403,12 @@
   "name": "Shakespeare Conservation Area",
   "verdict": "SAME",
   "why": "The agency's outline matches the last run."
+ },
+ {
+  "ref": "CA-6003",
+  "name": "Great Lakes Waterfront Trail Recreation Site",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'trl6003' in layers.json or the tool's list."
  },
  {
   "ref": "CA-6004",
@@ -5356,10 +5501,22 @@
   "why": "The agency's outline matches the last run."
  },
  {
+  "ref": "CA-6139",
+  "name": "Fingal Wildlife Management Area",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~16' in layers.json or the tool's list."
+ },
+ {
   "ref": "CA-6154",
   "name": "Big Creek Conservation Reserve",
   "verdict": "SAME",
   "why": "The agency's layer has not been edited since the last run, so the outline is the same."
+ },
+ {
+  "ref": "CA-6204",
+  "name": "Vincent Massey Conservation Park",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~7' in layers.json or the tool's list."
  },
  {
   "ref": "CA-6208",
@@ -5380,10 +5537,34 @@
   "why": "The agency's outline matches the last run."
  },
  {
+  "ref": "CA-6256",
+  "name": "Major's Hill National Park",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~7' in layers.json or the tool's list."
+ },
+ {
+  "ref": "CA-6257",
+  "name": "Rideau Falls and Green Island National Park",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~7' in layers.json or the tool's list."
+ },
+ {
   "ref": "CA-6329",
   "name": "Uxbridge Urban Provincial Park",
   "verdict": "SAME",
   "why": "The agency's outline matches the last run."
+ },
+ {
+  "ref": "CA-6337",
+  "name": "LeBreton Flats National Park",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~7' in layers.json or the tool's list."
+ },
+ {
+  "ref": "CA-6345",
+  "name": "Confederation National Park",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~7' in layers.json or the tool's list."
  },
  {
   "ref": "CA-6351",
@@ -5482,6 +5663,12 @@
   "why": "This park could not be checked: no layer address for 'ON-ERCA Esse' in layers.json or the tool's list."
  },
  {
+  "ref": "CA-6512",
+  "name": "Kìwekì Point National Park",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~7' in layers.json or the tool's list."
+ },
+ {
   "ref": "CA-6607",
   "name": "Holland Landing Conservation Area",
   "verdict": "SAME",
@@ -5540,6 +5727,12 @@
   "name": "Massassauga Point Conservation Area",
   "verdict": "SAME",
   "why": "The agency's outline matches the last run."
+ },
+ {
+  "ref": "CA-6617",
+  "name": "H. R. Frink Conservation Area",
+  "verdict": "CAN'T TELL",
+  "why": "This park could not be checked: no layer address for 'Hard look~17' in layers.json or the tool's list."
  },
  {
   "ref": "CA-6618",
