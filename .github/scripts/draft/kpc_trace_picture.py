@@ -531,7 +531,7 @@ def _pin_px_from_affine(A, w, h, lat, lon):
     return (u * w, v * h)
 
 
-def detect_boundary(img, row, k=8, pin_px=None, m_per_px=None, expected_acres=None):
+def detect_boundary(img, row, k=8, pin_px=None, m_per_px=None, expected_acres=None, max_acres=None):
     """Returns dict(kind, pts_px (n,2), mask_color, cluster, touches_edge, note) or None.
 
     Nov 7 (pin mode): with pin_px (the POTA pin's pixel on the page, known up front only on a GeoPDF) the colour is chosen BY THE PIN, not
@@ -626,19 +626,22 @@ def detect_boundary(img, row, k=8, pin_px=None, m_per_px=None, expected_acres=No
                 def _fit(t):
                     """Lower is better. With a size to aim at, how far this shape is from it decides and a filled tint only breaks a tie;
                     with no size, a filled park tint beats a boundary ring and then the tightest shape around the pin wins."""
+                    # Nov 7 (coordinator): a shape bigger than the park type's ceiling ranks last. A size guessed from the TYPE only is
+                    # not a target: it made CA-1248 pick the 265 ac shoreline ring over the 29 ac preserve the pin sits in.
+                    over = 1 if (est and max_acres and est(t[0]) > float(max_acres)) else 0
                     if est and exp and est(t[0]) > 0:
-                        return (abs(math.log(est(t[0]) / exp)), 0 if t[2] == "filled" else 1)
-                    return (0 if t[2] == "filled" else 1, t[0])
+                        return (over, abs(math.log(est(t[0]) / exp)), 0 if t[2] == "filled" else 1)
+                    return (over, 0 if t[2] == "filled" else 1, t[0])
                 near.sort(key=lambda t: (0 if t[3] == 0 else 1, _fit(t)))   # a shape containing the pin beats one merely near it
                 pick = near[0]
                 rest = [t for t in parcels if t[1] is not pick[1]]
                 rank = (0 if pick[3] == 0 else 1, _fit(pick))             # lower is better; a colour whose shape CONTAINS the pin beats
                 #                                                           one that only runs near it, whatever its size
-                if best is None or rank < best.get("rank", (9, (float("inf"), float("inf")))):
+                if best is None or rank < best.get("rank", (9, (float("inf"), float("inf"), float("inf")))):
                     ea = est(pick[0]) if est else None
                     others = ", ".join(f"{t[2]} ~{est(t[0]):.0f} ac" if est else t[2] for t in near[1:3])
                     best = dict(kind="area", pts_px=pick[1], parcels=[pick[1]] + [t[1] for t in rest], score=sum(t[0] for t in parcels),
-                                pin_fit=(_fit(pick)[0] if (est and exp) else None), pin_acres=(est(pick[0]) if est else None),
+                                pin_fit=(_fit(pick)[1] if (est and exp) else None), pin_acres=(est(pick[0]) if est else None),
                                 rank=rank, at_pin=len(near), n_shapes=len(parcels),
                                 mask_name=(f"{name}, {pick[2]}" + (f", ~{ea:.0f} ac" if ea else "") +
                                            f", {'contains' if pick[3] == 0 else f'{pick[3] * (m_per_px or 1):.0f} m from'} the pin"
@@ -1318,10 +1321,12 @@ def process_one(ref, row, base: Path, out: Path, pins, http, args):
         pin_px = _pin_px_from_affine(_A, w, h, lat, lon)
         m_per_px = geo_info.get("m_per_px_x")
     _acres_row = float(row["acres"]) if row.get("acres") not in (None, "") else None
-    _expect = _acres_row or (TL.type_expected_acres(row.get("type")) if TL is not None else None)
+    # Nov 7 (coordinator): only the park's REAL size is a ranking target; the type gives a ceiling (bigger shapes rank last), not a target
+    _expect = _acres_row
+    _max_ac = (TL.ceiling_acres(row.get("type")) if TL is not None else None)
 
     # ---- step 1: boundary / route line
-    bnd = detect_boundary(img, row, k=args.k, pin_px=pin_px, m_per_px=m_per_px, expected_acres=_expect)
+    bnd = detect_boundary(img, row, k=args.k, pin_px=pin_px, m_per_px=m_per_px, expected_acres=_expect, max_acres=_max_ac)
     if pin_px is not None:
         flags.append(f"boundary colour chosen at the POTA pin" + (f" ({bnd['at_pin']} of {bnd['n_shapes']} shapes in that colour "
                      f"are at the pin)" if bnd and bnd.get("at_pin") else ""))

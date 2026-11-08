@@ -72,8 +72,12 @@ def geo_iso(page, box, rot):
         if str(m.get('/Subtype')) != '/GEO': continue
         bb = _arr(vp.get('/BBox')); g = _arr(m.get('/GPTS')); lp = _arr(m.get('/LPTS') or [0, 1, 0, 0, 1, 0, 1, 1])
         if len(bb) != 4 or len(g) < 6 or len(lp) != len(g) or None in bb + g + lp: continue
-        x0, y0, x1, y1 = min(bb[0], bb[2]), min(bb[1], bb[3]), max(bb[0], bb[2]), max(bb[1], bb[3])
+        # LPTS are fractions of the BBox *in the order its corners are written* (ISO 32000-2 12.10).
+        # Many exporters (ArcGIS among them) write the BBox top-to-bottom ([x0, ytop, x1, ybottom]);
+        # sorting the corners first flips the page upside down (US-5460, CA-1248, US-6048, Nov 7).
+        x0, y0, x1, y1 = bb
         uv = [to_uv(x0 + lp[i] * (x1 - x0), y0 + lp[i + 1] * (y1 - y0), box, rot) for i in range(0, len(lp), 2)]
+        x0, y0, x1, y1 = min(bb[0], bb[2]), min(bb[1], bb[3]), max(bb[0], bb[2]), max(bb[1], bb[3])
         ll = [(g[i + 1], g[i]) for i in range(0, len(g), 2)]   # GPTS = lat, lon pairs
         area = (x1 - x0) * (y1 - y0)
         if best is None or area > best[0]: best = (area, uv, ll)
