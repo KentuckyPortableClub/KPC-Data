@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-08T14:27Z",
+ "checked": "2026-11-08T14:46Z",
  "switched_on": false,
  "results": [
   {
@@ -719,7 +719,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dA/86d62369fd/ouabache_trail.pdf?language_id=1"
+    "F-D3 8 of 20 re-tested links dead, e.g. https://www.in.gov/dA/86d62369fd/ouabache_trail.pdf?language_id=1"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -2790,13 +2790,6 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/truth/US-VA.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/us-key/US-AK.json",
    "kind": "key",
    "why": [],
@@ -2820,9 +2813,11 @@
   {
    "path": "data/us-key/US-AZ.json",
    "kind": "key",
-   "why": [],
+   "why": [
+    "F-O3 retired parks still outlined: US-13337"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/us-key/US-CA.json",
@@ -3345,13 +3340,11 @@
   {
    "path": "data/world-key/CZ.json",
    "kind": "key",
-   "why": [
-    "F-O1 outlines 232 -> 215 (more than 1% lost)"
-   ],
+   "why": [],
    "notes": [
     "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
    ],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/DE.json",
@@ -3414,7 +3407,9 @@
    "path": "data/world-key/FO.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -3641,7 +3636,7 @@
    "kind": "key",
    "why": [],
    "notes": [
-    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+    "F-O4 shape test: 15 changed outlines read from PAD-US, 0 far from the park pin"
    ],
    "verdict": "PASS"
   },
@@ -3741,20 +3736,18 @@
    "kind": "key",
    "why": [],
    "notes": [
-    "F-O4 shape test: 7 changed outlines read from PAD-US, 0 far from the park pin"
+    "F-O4 shape test: 10 changed outlines read from PAD-US, 0 far from the park pin"
    ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/PT.json",
    "kind": "key",
-   "why": [
-    "F-O1 outlines 335 -> 327 (more than 1% lost)"
-   ],
+   "why": [],
    "notes": [
     "F-O4 shape test: 29 changed outlines read from PAD-US, 0 far from the park pin"
    ],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/PY.json",
@@ -3920,6 +3913,13 @@
   {
    "path": "data/wwff/PYFF.json",
    "kind": "wwff",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/truth/US-VA.json",
+   "kind": "truth",
    "why": [],
    "notes": [],
    "verdict": "PASS"

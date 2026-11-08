@@ -2396,54 +2396,40 @@
  },
  "last": {
   "areas": [
-   "US-WI"
+   "US-CT"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 106,
+   "dropped_queued": 1,
    "errors": 0,
-   "for_person": 2,
    "for_person_urls": [
-    [
-     "https://dnr.wisconsin.gov/node/30776",
-     "HTTP 403 twice"
-    ],
     [
      "https://epqs.nationalmap.gov/robots.txt",
      "robots.txt answered 403: nothing fetched from epqs.nationalmap.gov this run"
-    ],
-    [
-     "https://broadbandmap.fcc.gov/robots.txt",
-     "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
-    ],
-    [
-     "https://dnr.wisconsin.gov/node/30776",
-     "HTTP 403 twice"
     ]
    ],
-   "requests": 13,
-   "rested": 58,
-   "retry403": 2,
-   "robots": 2,
-   "robots_unreadable": 2,
-   "strikes": 4
+   "requests": 1,
+   "rested": 0,
+   "robots": 1,
+   "robots_unreadable": 1,
+   "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 107,
+   "camps": 2,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 1,
-   "needs_key": 45,
+   "needs_browser": 0,
+   "needs_key": 2,
    "no_page": 0,
    "not_official": 0,
-   "ok": 4,
-   "pages_read": 5,
-   "resting": 58,
+   "ok": 0,
+   "pages_read": 0,
+   "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 0
+   "skipped_fresh": 30
   },
   "when": "2026-11-08"
  },
