@@ -296,6 +296,7 @@ Source file: `data/campinfo/US-NY.json`
   "how": "online: www.recreation.gov",
   "url": "https://www.recreation.gov/camping/campgrounds/234714"
  },
+ "browser_checked": "2026-11-08",
  "cell": null,
  "checked": "2026-11-08",
  "checkin": null,
@@ -353,7 +354,7 @@ Source file: `data/campinfo/US-NY.json`
   "tent": null,
   "total": null
  },
- "status": "ok, no campground facts in the page text: needs browser?"
+ "status": "ok (browser)"
 }
 ```
 
@@ -515,6 +516,7 @@ Source file: `data/campinfo/US-NY.json`
   "how": "online: dec.ny.gov",
   "url": "https://dec.ny.gov/things-to-do/camping/reservations"
  },
+ "browser_checked": "2026-11-08",
  "campground_page": {
   "read": "names other campgrounds only",
   "status": "ok",
@@ -577,7 +579,7 @@ Source file: `data/campinfo/US-NY.json`
   "tent": null,
   "total": null
  },
- "status": "ok, no campground facts in the page text: needs browser?"
+ "status": "ok, no campground facts even in a browser"
 }
 ```
 
@@ -664,6 +666,7 @@ Source file: `data/campinfo/US-NY.json`
   "how": "online: dec.ny.gov",
   "url": "https://dec.ny.gov/things-to-do/camping/reservations"
  },
+ "browser_checked": "2026-11-08",
  "campground_page": {
   "read": "names other campgrounds only",
   "status": "ok",
@@ -726,7 +729,7 @@ Source file: `data/campinfo/US-NY.json`
   "tent": null,
   "total": null
  },
- "status": "ok, no campground facts in the page text: needs browser?"
+ "status": "ok, no campground facts even in a browser"
 }
 ```
 

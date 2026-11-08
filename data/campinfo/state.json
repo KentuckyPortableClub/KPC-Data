@@ -661,12 +661,12 @@
    "checked": 584,
    "counts": {
     "camps": 584,
-    "needs_browser": 205,
+    "needs_browser": 0,
     "needs_key": 5,
     "no_page": 1,
     "not_official": 0,
-    "ok": 93,
-    "other": 225,
+    "ok": 95,
+    "other": 428,
     "resting": 0,
     "robots": 55,
     "with_booking": 572,
@@ -2396,12 +2396,12 @@
  },
  "last": {
   "areas": [
-   "US-NC"
+   "US-NY"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 66,
+   "dropped_queued": 5,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2409,7 +2409,7 @@
      "robots.txt answered 403: nothing fetched from epqs.nationalmap.gov this run"
     ]
    ],
-   "requests": 1,
+   "requests": 208,
    "rested": 0,
    "robots": 1,
    "robots_unreadable": 1,
@@ -2417,19 +2417,20 @@
   },
   "ridb_key": false,
   "stat": {
-   "camps": 67,
+   "browser": 205,
+   "camps": 6,
    "elevations": 0,
    "errors": 0,
    "needs_browser": 0,
-   "needs_key": 67,
+   "needs_key": 6,
    "no_page": 0,
    "not_official": 0,
-   "ok": 0,
+   "ok": 2,
    "pages_read": 0,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 80
+   "skipped_fresh": 579
   },
   "when": "2026-11-08"
  },
