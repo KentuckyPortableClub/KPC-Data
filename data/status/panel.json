@@ -1,7 +1,7 @@
 {
- "made": "2026-11-07 23:59 UTC",
+ "made": "2026-11-08 01:47 UTC",
  "snap": {
-  "date": "2026-11-07",
+  "date": "2026-11-08",
   "outlines": {
    "US": {
     "official": 11163,
@@ -143,12 +143,12 @@
   }
  },
  "first": {
-  "date": "2026-10-31",
+  "date": "2026-11-01",
   "outlines": {
    "US": {
-    "official": 11099,
-    "approximate": 391,
-    "pin": 1593
+    "official": 11132,
+    "approximate": 465,
+    "pin": 1489
    },
    "Canada": {
     "pin": 1608,
@@ -156,91 +156,104 @@
     "approximate": 39
    },
    "World": {
-    "official": 39967,
-    "pin": 15859,
-    "approx": 50
+    "official": 39741,
+    "pin": 17780,
+    "approx": 2676
    }
   },
   "questions": {
+   "aliases-nov1": {},
+   "aliases-oct31": {
+    "- YES": 21,
+    "rows": 33,
+    "- NOT SURE": 7,
+    "- NO": 5
+   },
    "gis-hunter": {
-    "- YES": 81,
+    "- YES": 84,
     "rows": 534,
     "- NO": 339,
-    "- NOT SURE": 3,
-    "SURE YES": 3,
+    "- NOT SURE": 16,
+    "SURE YES": 8,
     "SURE NOT SURE": 1,
-    "LIKELY NO": 21,
-    "LIKELY YES": 11,
-    "LIKELY NOT SURE": 7,
+    "LIKELY NO": 22,
+    "LIKELY YES": 12,
+    "LIKELY NOT SURE": 8,
     "SURE NO": 2,
-    "- open": 16,
-    "SURE bot YES": 42,
-    "SURE open": 5,
-    "LIKELY open": 3
+    "SURE bot YES": 42
    },
+   "hardlook": {},
    "key-pieces": {
-    "- NO": 63,
+    "- NO": 81,
     "rows": 307,
     "- YES": 193,
-    "- NOT SURE": 17,
-    "- open": 34
+    "- NOT SURE": 33
    },
    "layers": {
-    "LIKELY YES": 237,
-    "rows": 3257,
-    "LIKELY NO": 153,
-    "SURE NO": 4,
-    "LIKELY NOT SURE": 132,
-    "SURE YES": 847,
-    "SURE NOT SURE": 10,
-    "SURE open": 1304,
-    "LIKELY open": 570
+    "LIKELY YES": 1132,
+    "rows": 8153,
+    "LIKELY NO": 213,
+    "SURE NO": 8,
+    "LIKELY NOT SURE": 651,
+    "SURE YES": 6013,
+    "SURE NOT SURE": 75,
+    "LIKELY bot YES": 12,
+    "SURE bot YES": 49
+   },
+   "lost-finds-nov1": {},
+   "no-recheck": {
+    "- YES": 2,
+    "rows": 13,
+    "LIKELY NOT SURE": 6,
+    "SURE YES": 2,
+    "- NOT SURE": 1,
+    "LIKELY NO": 1,
+    "LIKELY YES": 1
    },
    "not-sure-for-chat9": {
     "- open": 146,
     "rows": 146
    },
+   "pin-typos": {},
    "world-finder": {
-    "- NO": 1650,
-    "rows": 3717,
-    "LIKELY NO": 418,
-    "LIKELY NOT SURE": 440,
-    "SURE YES": 967,
-    "SURE NOT SURE": 53,
-    "LIKELY open": 31,
-    "LIKELY YES": 33,
-    "SURE bot YES": 4,
-    "SURE open": 5,
+    "- NO": 1652,
+    "rows": 3762,
+    "LIKELY NO": 437,
+    "LIKELY NOT SURE": 464,
+    "SURE YES": 984,
+    "SURE NOT SURE": 50,
+    "LIKELY YES": 57,
     "SURE NO": 72,
-    "- open": 35,
-    "- YES": 9
+    "- YES": 15,
+    "- NOT SURE": 27,
+    "SURE bot YES": 4
    }
   },
   "layers": {
    "intake": {
-    "REJECT": 1387,
-    "WATER-ONLY": 35,
-    "ASK-THE-PUBLISHER": 295,
+    "REJECT": 1500,
+    "WATER-ONLY": 38,
+    "ASK-THE-PUBLISHER": 351,
     "LIVE-ONLY": 1,
+    "RETRY": 335,
     "READY": 2,
-    "RETRY": 308,
     "approved": 2
    },
-   "queue rows": 1866,
+   "queue rows": 1971,
    "collector": {
-    "asked": 46,
+    "asked": 85,
     "evidence": 9,
-    "failed": 157,
-    "no match": 59
+    "failed": 196,
+    "no match": 261
    },
-   "finders found": 148
+   "finders found": 150
   },
   "coverage": {
    "world countries done": 224,
    "world countries started": 233,
-   "world candidates": 1632,
+   "world candidates": 1690,
    "hunter areas": 63,
-   "hunter last pass": "auto-202610310250"
+   "hunter last pass": "auto-202611010210"
   }
  },
  "board": {
@@ -1438,10 +1451,10 @@
   },
   "key-doctor": {
    "areas": "",
-   "last_run": "2026-11-07",
-   "made": "NOs: 442 of 720 NOs landed; 278 missing (re-applied to overrides.fixed.json); 1059 came back in the key release: 12726 parks pass, 381 held, 50 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-07.md ",
+   "last_run": "2026-11-08",
+   "made": "NOs: 442 of 720 NOs landed; 278 missing (re-applied to overrides.fixed.json); 1059 came back in the key release: 12726 parks pass, 381 held, 50 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-08.md ",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42315611495",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42435640807",
    "waiting_on": "chat 10 (came-back NOs / stuck areas); per-park release in release-approved"
   },
   "layer intake": {
@@ -1493,8 +1506,8 @@
    "waiting_on": "nothing (facts only)"
   },
   "waiting room": {
-   "last_run": "2026-11-07",
-   "made": "161 files waiting over 3 days in data/waiting/in/ (e.g. US-NY.json)",
+   "last_run": "2026-11-08",
+   "made": "262 files waiting over 3 days in data/waiting/in/ (e.g. US-NY.json)",
    "result": "red",
    "waiting_on": "chat 11 (look at the waiting room run)"
   },
