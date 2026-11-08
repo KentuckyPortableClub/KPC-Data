@@ -1,7 +1,8 @@
 {
  "area": "US-KY",
- "built": "2026-11-02",
+ "built": "2026-11-08",
  "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
  "parks": [
   {
    "ref": "US-0019",
@@ -58,7 +59,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-83.66263 36.59321]"
+     "note": "Ring Self-intersection[-83.66263 36.59321]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -226,7 +233,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Self-intersection[-88.303676 36.848219]; Too few points in geometry component[-88.28961 36.81352]; 1 piece(s) under 10 m wide; 7 hole(s) under 100 m2"
+     "note": "Self-intersection[-88.303676 36.848219]; Too few points in geometry component[-88.28961 36.81352]; 1 piece(s) under 10 m wide; 7 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 7,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -317,7 +330,13 @@
      "flags": [
       "INVALID"
      ],
-     "note": "Nested shells[-89.35332 36.38135]"
+     "note": "Nested shells[-89.35332 36.38135]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -407,7 +426,13 @@
       "INVALID",
       "TINY HOLES"
      ],
-     "note": "Nested shells[-81.51694 39.36256]; 1 hole(s) under 100 m2"
+     "note": "Nested shells[-81.51694 39.36256]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -487,7 +512,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "2 piece(s) under 10 m wide"
+     "note": "2 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -720,7 +751,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Self-intersection[-87.5589590704801 37.8881456690501]; 1 hole(s) under 100 m2"
+     "note": "Self-intersection[-87.5589590704801 37.8881456690501]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1493,7 +1530,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-84.265544 37.042406]"
+     "note": "Ring Self-intersection[-84.265544 37.042406]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1575,7 +1618,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Self-intersection[-83.916660695186 38.3593690229254]; 1 piece(s) under 10 m wide; 2 hole(s) under 100 m2"
+     "note": "Self-intersection[-83.916660695186 38.3593690229254]; 1 piece(s) under 10 m wide; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2725,7 +2774,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-83.471026 37.142383]"
+     "note": "Ring Self-intersection[-83.471026 37.142383]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3444,38 +3499,61 @@
     38.1777,
     -84.9231
    ],
-   "outline_from": [],
-   "acres_drawn": null,
-   "records": [],
-   "record_ids": [],
+   "outline_from": [
+    "club file ky-padus-parks.geojson"
+   ],
+   "acres_drawn": 250.3,
+   "records": [
+    {
+     "id": "bpad:Salato Wildlife Refuge",
+     "name": "Salato Wildlife Refuge",
+     "type": "pad-us Wildlife Education Center",
+     "layer": "ky-padus-parks.geojson",
+     "count": 1
+    }
+   ],
+   "record_ids": [
+    "bpad:salato wildlife refuge"
+   ],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "outline_acres": 250.3,
+     "official_acres": 250.0,
+     "times": 1.0,
+     "official_from": "the outline files' ACRES / the key's tract acres"
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Salato Wildlife Refuge",
+     "record_name": "Salato Wildlife Refuge"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": "refuge",
+     "record_kind": "refuge",
+     "flag": "PASS"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "PASS",
+     "pieces": 1
     },
     "T6": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "detail_m": 0.88,
+     "declared_m": null,
+     "coordinate_step_m": 0.88,
+     "median_spacing_m": 120.0,
+     "flag": "PASS"
     },
     "T8": {
-     "flag": "CAN'T TELL",
-     "note": "no record id"
+     "flag": "PASS"
     },
     "T9": {
      "flag": "CAN'T TELL",
@@ -3485,7 +3563,7 @@
    "problems": [],
    "status": "graded",
    "score": 0,
-   "why": "Nothing could be tested."
+   "why": "All tests pass."
   },
   {
    "ref": "US-10173",
@@ -6037,7 +6115,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6774,7 +6858,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-83.677668 37.766344]"
+     "note": "Ring Self-intersection[-83.677668 37.766344]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8683,7 +8773,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11043,7 +11139,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Self-intersection[-88.409799 37.327325]"
+     "note": "Self-intersection[-88.409799 37.327325]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11351,7 +11453,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -12384,18 +12492,10 @@
     -84.0002
    ],
    "outline_from": [
-    "club file ky-dbnf.geojson",
     "club file ky-dbnf-owned.geojson"
    ],
-   "acres_drawn": 2043100.0,
+   "acres_drawn": 710457.1,
    "records": [
-    {
-     "id": "bdbnf:Daniel Boone National Forest",
-     "name": "Daniel Boone National Forest",
-     "type": "national forest proclamation boundary National Forest proclamation",
-     "layer": "ky-dbnf.geojson",
-     "count": 1
-    },
     {
      "id": "bdbnfo:Daniel Boone National Forest",
      "name": "Daniel Boone National Forest",
@@ -12405,7 +12505,6 @@
     }
    ],
    "record_ids": [
-    "bdbnf:daniel boone national forest",
     "bdbnfo:daniel boone national forest"
    ],
    "tests": {
@@ -12415,9 +12514,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 2043100.0,
-     "official_acres": 2029098.0,
-     "times": 1.01,
+     "outline_acres": 710457.1,
+     "official_acres": 706956.0,
+     "times": 1.0,
      "official_from": "the outline files' ACRES / the key's tract acres"
     },
     "T3": {
@@ -12428,64 +12527,34 @@
     },
     "T4": {
      "park_kind": "national forest",
-     "record_kind": "proclamation",
-     "flag": "CONFLICT",
-     "why": "the record is a proclamation line, not the land the agency owns"
+     "record_kind": "national forest",
+     "flag": "PASS"
     },
     "T5": {
      "flag": "INVALID",
-     "pieces": 6,
+     "pieces": 393,
      "flags": [
-      "INVALID"
+      "INVALID",
+      "SLIVERS",
+      "TINY HOLES",
+      "SCATTERED"
      ],
-     "note": "Too few points in geometry component[-84.35946 36.95485]"
+     "note": "Too few points in geometry component[-84.35946 36.95485]; 1 piece(s) under 10 m wide; 21 hole(s) under 100 m2; 393 pieces spread over 247 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 21,
+      "pieces": 1
+     }
     },
     "T6": {
-     "flag": "SPILL",
-     "parks": [
-      {
-       "ref": "US-12083",
-       "name": "University of the Cumberlands Wildlife Management Area",
-       "share": 1.0
-      },
-      {
-       "ref": "US-1277",
-       "name": "Cumberland Falls State Park",
-       "share": 1.0
-      },
-      {
-       "ref": "US-7964",
-       "name": "William H. Martin State Natural Area",
-       "share": 1.0
-      },
-      {
-       "ref": "US-3799",
-       "name": "Burchell-Beech Wildlife Management Area",
-       "share": 1.0
-      },
-      {
-       "ref": "US-1286",
-       "name": "Natural Bridge State Park",
-       "share": 1.0
-      },
-      {
-       "ref": "US-10107",
-       "name": "Big South Fork National Wild and Scenic River",
-       "share": 1.0
-      },
-      {
-       "ref": "US-12079",
-       "name": "Little Sextons Creek Wildlife Management Area",
-       "share": 0.55
-      }
-     ],
-     "count": 7
+     "flag": "PASS"
     },
     "T7": {
      "detail_m": 0.89,
      "declared_m": null,
      "coordinate_step_m": 0.89,
-     "median_spacing_m": 65.8,
+     "median_spacing_m": 118.3,
      "flag": "PASS"
     },
     "T8": {
@@ -12498,8 +12567,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 7,
-   "why": "CONFLICT: The record is a proclamation line, not the land the agency owns (+2 more flags)."
+   "score": 4,
+   "why": "INVALID: The shape has problems: Too few points in geometry component[-84.35946 36.95485]; 1 piece(s) under 10 m wide; 21 hole(s) under 100 m2; 393 pieces spread over 247 km (+3 more flags)."
   },
   {
    "ref": "US-4526",
@@ -12788,7 +12857,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13030,7 +13105,13 @@
       "SELF-INTERSECTION",
       "SLIVERS"
      ],
-     "note": "Self-intersection[-87.6483391775273 37.1077770284044]; 2 piece(s) under 10 m wide"
+     "note": "Self-intersection[-87.6483391775273 37.1077770284044]; 2 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13110,7 +13191,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"

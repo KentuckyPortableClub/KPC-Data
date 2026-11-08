@@ -1,95 +1,48 @@
-US-KY: already done (resume)
-US-AK: already done (resume)
-US-AL: already done (resume)
-US-AR: already done (resume)
-US-AZ: already done (resume)
-US-CA: already done (resume)
-US-CO: already done (resume)
-US-CT: already done (resume)
-US-DC: already done (resume)
-US-DE: already done (resume)
-US-FL: already done (resume)
-US-GA: already done (resume)
-US-HI: already done (resume)
-US-IA: already done (resume)
-US-ID: already done (resume)
-US-IL: already done (resume)
-US-IN: already done (resume)
-US-KS: already done (resume)
-US-LA: already done (resume)
-US-MA: already done (resume)
-US-MD: already done (resume)
-US-ME: already done (resume)
-US-MI: already done (resume)
-US-MN: already done (resume)
-US-MO: already done (resume)
-US-MS: already done (resume)
-US-MT: already done (resume)
-US-NC: already done (resume)
-US-ND: already done (resume)
-US-NE: already done (resume)
-US-NH: already done (resume)
-US-NJ: already done (resume)
-US-NM: already done (resume)
-US-NV: already done (resume)
-US-NY: already done (resume)
-US-OH: already done (resume)
-US-OK: already done (resume)
-US-OR: already done (resume)
-US-PA: already done (resume)
-US-RI: already done (resume)
-US-SC: already done (resume)
-US-SD: already done (resume)
-US-TN: already done (resume)
-US-TX: already done (resume)
-US-UT: already done (resume)
-US-VA: already done (resume)
-US-VT: already done (resume)
-US-WA: already done (resume)
-US-WI: already done (resume)
-US-WV: already done (resume)
-US-WY: already done (resume)
-CA-AB: already done (resume)
-CA-BC: ca (../club/ca-key/CA-BC.json)
-  POTA: 1255 parks with pins
-  1000/1254 parks
-  1050/1254 parks
-  1100/1254 parks
-  1150/1254 parks
-  1200/1254 parks
-  1250/1254 parks
-CA-BC: 1254 parks, 565 with flags
-CA-MB: ca (../club/ca-key/CA-MB.json)
-  POTA: 309 parks with pins
-  50/308 parks
-  100/308 parks
-Traceback (most recent call last):
-  File "/home/runner/work/KPC-Data/KPC-Data/kpcdata/.github/scripts/draft/tools/KPC_10_map_audit/kpc_map_audit.py", line 1511, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File "/home/runner/work/KPC-Data/KPC-Data/kpcdata/.github/scripts/draft/tools/KPC_10_map_audit/kpc_map_audit.py", line 1485, in main
-    recs, ok = run_area(audit, ar, acres_list, deadline, prog)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/KPC-Data/KPC-Data/kpcdata/.github/scripts/draft/tools/KPC_10_map_audit/kpc_map_audit.py", line 1322, in run_area
-    tests = grade_park(P, pin, acres_list, kind == "world")
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/KPC-Data/KPC-Data/kpcdata/.github/scripts/draft/tools/KPC_10_map_audit/kpc_map_audit.py", line 1214, in grade_park
-    d = pin_distance_m(g, pin["lon"], pin["lat"])
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/KPC-Data/KPC-Data/kpcdata/.github/scripts/draft/tools/KPC_10_map_audit/kpc_map_audit.py", line 307, in pin_distance_m
-    fwd, _ = local_proj(lon, lat)
-             ^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/KPC-Data/KPC-Data/kpcdata/.github/scripts/draft/tools/KPC_10_map_audit/kpc_map_audit.py", line 284, in local_proj
-    return Transformer.from_crs(4326, crs, always_xy=True), Transformer.from_crs(crs, 4326, always_xy=True)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pyproj/transformer.py", line 743, in from_crs
-    cstrencode(CRS.from_user_input(crs_to).srs),
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pyproj/crs/crs.py", line 503, in from_user_input
-    return cls(value, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pyproj/crs/crs.py", line 350, in __init__
-    self._local.crs = _CRS(self.srs)
-                      ^^^^^^^^^^^^^^
-  File "pyproj/_crs.pyx", line 2364, in pyproj._crs._CRS.__init__
-pyproj.exceptions.CRSError: Invalid projection: +proj=aeqd +lat_0=92.595 +lon_0=-57.056 +datum=WGS84 +units=m +type=crs: (Internal Proj Error: proj_create: Error 1027 (Invalid value for an argument): aeqd: Invalid value for lat_0: |lat_0| should be <= 90°)
+US-KY: ky (../club/ky-answer-key.json)
+  POTA: 193 parks with pins
+  50/193 parks
+  100/193 parks
+  150/193 parks
+US-KY: 193 parks, 73 with flags
+US-TN: us (../club/us-key/US-TN.json)
+  POTA: 277 parks with pins
+  layer details not read (: InvalidSchema)
+  50/277 parks
+  100/277 parks
+  150/277 parks
+  200/277 parks
+  250/277 parks
+US-TN: 277 parks, 175 with flags
+CA-ON: ca (../club/ca-key/CA-ON.json)
+  POTA: 1181 parks with pins
+  50/1180 parks
+  100/1180 parks
+  150/1180 parks
+  200/1180 parks
+  250/1180 parks
+  300/1180 parks
+  350/1180 parks
+  400/1180 parks
+  450/1180 parks
+  500/1180 parks
+  550/1180 parks
+  600/1180 parks
+  650/1180 parks
+  700/1180 parks
+  750/1180 parks
+  800/1180 parks
+  850/1180 parks
+  900/1180 parks
+  950/1180 parks
+  1000/1180 parks
+  1050/1180 parks
+  1100/1180 parks
+  1150/1180 parks
+CA-ON: 1180 parks, 366 with flags
+CH: world (../club/world-bounds/CH)
+  POTA: 319 parks with pins
+  50/189 parks
+  100/189 parks
+  150/189 parks
+CH: 189 parks, 62 with flags
+done in 16.3 min: ../out/audit/summary.md, worst.csv, questions.json
