@@ -57,7 +57,7 @@ import sys
 import time
 import traceback
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urljoin, urlparse
 
 import cv2
 import numpy as np
@@ -200,17 +200,28 @@ class PoliteHttp:
         host = (p.hostname or "").lower()
         if host in self.robots:
             return self.robots[host]
-        wait = self.min_interval - (time.time() - self._last)
-        if wait > 0:
-            time.sleep(wait)
-        self._last = time.time()
-        self.n_requests += 1
-        try:
-            r = self.s.get(f"{p.scheme or 'https'}://{p.netloc}/robots.txt", timeout=self.timeout,
-                           allow_redirects=False, headers={"Accept": "text/plain, */*"})
-            st, text = r.status_code, r.text
-        except requests.RequestException as e:
-            st, text = f"err:{type(e).__name__}", ""
+        rurl, st, text = f"{p.scheme or 'https'}://{p.netloc}/robots.txt", None, ""
+        for _hop in range(4):                 # Nov 7 review: follow a robots.txt redirect (www. / https hops) but only within the allowed hosts
+            wait = self.min_interval - (time.time() - self._last)
+            if wait > 0:
+                time.sleep(wait)
+            self._last = time.time()
+            self.n_requests += 1
+            try:
+                r = self.s.get(rurl, timeout=self.timeout, allow_redirects=False, headers={"Accept": "text/plain, */*"})
+                st, text = r.status_code, r.text
+            except requests.RequestException as e:
+                st, text = f"err:{type(e).__name__}", ""
+                break
+            if isinstance(st, int) and 300 <= st < 400 and r.headers.get("Location"):
+                nxt = urljoin(rurl, r.headers["Location"])
+                nh = (urlparse(nxt).hostname or "").lower()
+                if nh not in ALLOWED_BASEMAP_HOSTS or any(wd in nh for wd in FORBIDDEN_HOST_WORDS):
+                    st = f"redirect to {nh}"      # a robots.txt that leads off the allowed list = STOP
+                    break
+                rurl = nxt
+                continue
+            break
         if st == 200:
             rules = _robots_rules(text, self.token) if "<html" not in text[:500].lower() else []
         elif isinstance(st, int) and 400 <= st < 500 and st not in (401, 403, 429):
@@ -1675,6 +1686,32 @@ def _http_selftest() -> list:
     h = make(_R(404))
     if h.get_json(url, {}) != {"features": []} or len(h.calls) != 2:
         problems.append(f"robots 404 = no robots file, the read must go ahead: {h.calls}")
+    # a robots.txt redirect: followed within the allowed hosts, a STOP when it leads outside them
+    seq = {}
+
+    def make_redirect(target):
+        h = PoliteHttp("KPC-Picture-Map-Tracer/test", min_interval=0, retries=0)
+        h.calls = []
+
+        def fake_get(u, params=None, timeout=None, allow_redirects=True, headers=None):
+            h.calls.append(u)
+            if u == "https://tigerweb.geo.census.gov/robots.txt":
+                return _R(301, hd={"Location": target})
+            if u.endswith("/robots.txt"):
+                return _R(404)
+            return _R(200)
+        h.s.get = fake_get
+        return h
+    h = make_redirect("https://hydro.nationalmap.gov/robots.txt")
+    if h.get_json(url, {}) != {"features": []} or len(h.calls) != 3:
+        problems.append(f"a robots.txt redirect within the allowed hosts must be followed: {h.calls}")
+    h = make_redirect("https://www.example.com/robots.txt")
+    try:
+        h.get_json(url, {})
+        problems.append("a robots.txt redirect to a host outside the allowed list must STOP")
+    except RuntimeError as e:
+        if not str(e).startswith("robots:") or any("example.com" in c for c in h.calls):
+            problems.append(f"the outside host must not be requested: {e} {h.calls}")
     h = make(_R(404), _R(302, hd={"Location": "https://ncnhde.natureserve.org/x"}))
     try:
         h.get_json(url, {})
