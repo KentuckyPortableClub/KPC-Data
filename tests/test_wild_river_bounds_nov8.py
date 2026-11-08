@@ -9,7 +9,7 @@ def test_joins_marked():
     joined = {r: v for r, v in WB.items() if v.get('joined')}
     assert len(joined) == 14
     for r, v in joined.items():
-        assert set(v['joined']) <= set(OV[r]['join']) and OV[r]['source_kind'] in ('boundary', 'corridor')
+        assert set(v['joined']) <= set(OV[r]['join']) and OV[r]['source_kind'] in ('boundary', 'corridor', 'state_boundary')
 
 
 def test_hand_rulings_not_overridden():

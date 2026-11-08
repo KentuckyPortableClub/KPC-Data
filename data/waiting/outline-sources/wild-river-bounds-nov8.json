@@ -128,13 +128,15 @@
   "US-10104": {
    "notes": [
     "usfs: kept line: no key layer record near the pin for this polygon (park absent in key) [source_kind=corridor]",
-    "ky: already bounded: ky-answer-key bwild tract from the same KY ONP Wild River Corridors layer [source_kind=corridor]"
-   ]
+    "ky: already bounded: ky-answer-key bwild tract from the same KY ONP Wild River Corridors layer [source_kind=state_boundary]"
+   ],
+   "ky_source_kind": "state_boundary"
   },
   "US-10105": {
    "notes": [
-    "ky: already bounded: ky-answer-key bwild tract from the same KY ONP Wild River Corridors layer [source_kind=corridor]"
-   ]
+    "ky: already bounded: ky-answer-key bwild tract from the same KY ONP Wild River Corridors layer [source_kind=state_boundary]"
+   ],
+   "ky_source_kind": "state_boundary"
   },
   "US-10106": {
    "notes": [
@@ -148,18 +150,22 @@
   },
   "US-10108": {
    "notes": [
-    "ky: KY ONP corridor, pin inside; NOT in ky-answer-key.json (Links data) - needs a bwild tract there; not done (Links) [source_kind=corridor]"
-   ]
+    "ky: KY ONP corridor, pin inside; NOT in ky-answer-key.json (Links data) - needs a bwild tract there; not done (Links) [source_kind=state_boundary]",
+    "ky (Nov 8): not joined - POTA lists US-10108 as inactive (active 0) and it is not in Links kpc-ky-data.json, so kpc_ky_key.js has no park to put the bwild tract on"
+   ],
+   "ky_source_kind": "state_boundary"
   },
   "US-10111": {
    "notes": [
-    "ky: already bounded: ky-answer-key bwild tract from the same KY ONP Wild River Corridors layer [source_kind=corridor]"
-   ]
+    "ky: already bounded: ky-answer-key bwild tract from the same KY ONP Wild River Corridors layer [source_kind=state_boundary]"
+   ],
+   "ky_source_kind": "state_boundary"
   },
   "US-10112": {
    "notes": [
-    "ky: already bounded: ky-answer-key bwild tract from the same KY ONP Wild River Corridors layer [source_kind=corridor]"
-   ]
+    "ky: already bounded: ky-answer-key bwild tract from the same KY ONP Wild River Corridors layer [source_kind=state_boundary]"
+   ],
+   "ky_source_kind": "state_boundary"
   },
   "US-10113": {
    "notes": [
@@ -446,5 +452,6 @@
     "usfs: already bounded: key joins ['fwsr57'] [source_kind=corridor]"
    ]
   }
- }
+ },
+ "ky_state_boundary_nov8": "Brandon Nov 8: the KY Office of Nature Preserves Wild_River_Corridors layer is the official STATE boundary for Kentucky wild rivers -> source_kind 'state_boundary' (was 'corridor'). US-10106 Rockcastle stays check."
 }
