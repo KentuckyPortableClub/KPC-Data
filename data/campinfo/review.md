@@ -9,6 +9,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 | US-TN | 394 | 2 | 78 | 4 | 0 | 38 | 267 | 0 | 5 | 2 | 49 | 0 |
 | US-NC | 141 | 66 | 66 | 0 | 0 | 0 | 0 | 0 | 9 | 23 | 75 | 0 |
 | US-VA | 163 | 2 | 74 | 0 | 0 | 0 | 40 | 30 | 17 | 2 | 19 | 0 |
+| US-WV | 101 | 1 | 47 | 26 | 0 | 0 | 0 | 0 | 27 | 0 | 54 | 0 |
 | US-GA | 205 | 61 | 64 | 4 | 0 | 0 | 0 | 8 | 68 | 8 | 131 | 0 |
 | US-AL | 100 | 12 | 34 | 1 | 0 | 0 | 0 | 4 | 49 | 6 | 60 | 7 |
 | US-SC | 77 | 19 | 26 | 24 | 0 | 0 | 0 | 7 | 1 | 16 | 31 | 0 |
@@ -87,9 +88,11 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 
 - itd.idaho.gov: 30 campgrounds
 - parks.ky.gov: 26 campgrounds
+- reservations.wvstateparks.com: 24 campgrounds
 - southcarolinaparks.com: 22 campgrounds
 - www.recreation.gov: 5 campgrounds
 - gastateparks.org: 3 campgrounds
+- wvdnr.gov: 2 campgrounds
 - www.fs.usda.gov: 2 campgrounds
 - cpw.state.co.us: 2 campgrounds
 - files.dfm.idaho.gov: 2 campgrounds
@@ -515,6 +518,19 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - map.date_how = "web page, no date in the link" · “link “National Incident Wildfire Map””
   - map.url = "https://inciweb.wildfire.gov/" · “link “National Incident Wildfire Map” -> https://inciweb.wildfire.gov/”
   - season = "year-round" · “Camp Lake. Sections of… Bark Camp Recreation Area Site Open Bark Camp Recreation area is year-round day use area with a seasonal campground ”
+
+## US-WV: 12 random samples (records with facts; seed = the date)
+
+- **Camp Creek State Park and Forest State Park campground** (intake-US-5584, agency (outside research camping-us-oct31), status ok, 4 facts) · [reservations.wvstateparks.com](https://reservations.wvstateparks.com/select_destination)
+  - booking.url = "https://reservations.wvstateparks.com/select_destination" · “booking link from our outside research (camping, in the park) row (official system reservations.wvstateparks.com)”
+  - hookups.amps = [20, 30, 50] · “nit Amenities Wireless internet connection Lakeview Lakefront Pet Friendly Pull Thru Site 30 Amp 50 Amp 20 Amp 40’ to 50’ RV 30’ to 40’ RV 2”
+  - hookups.electric = true · “nit Amenities Wireless internet connection Lakeview Lakefront Pet Friendly Pull Thru Site 30 Amp 50 Amp 20 Amp 40’ to 50’ RV 30’ to 40’ RV 2”
+  - rules.pets = "Pet Friendly" · “y Vehicle charging station Unit Amenities Wireless internet connection Lakeview Lakefront Pet Friendly Pull Thru Site 30 Amp 50 Amp 20 Amp 4”
+- **Gauley Tailwaters** (intake-US-0695, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.nps.gov](https://www.nps.gov/gari/planyourvisit/camping.htm)
+  - booking.how = "online: www.nps.gov" · “link “New River Gorge National Park and Preserve””
+  - booking.url = "https://www.nps.gov/neri/index.htm" · “link “New River Gorge National Park and Preserve” -> https://www.nps.gov/neri/index.htm”
+  - rules.fires = "Open fires are allowed where campfire receptacles are provi · “oric ruin. The maximum stay is 14 days at the same camping area. There is no camping fee. Open fires are allowed where campfire receptacles ”
+  - rules.stay_limit = "14 days" · “ed trail head area, top edge or bottom of any cliff, park structure or historic ruin. The maximum stay is 14 days at the same camping area. ”
 
 ## US-GA: 12 random samples (records with facts; seed = the date)
 
