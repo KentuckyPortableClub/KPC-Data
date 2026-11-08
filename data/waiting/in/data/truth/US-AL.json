@@ -3,14 +3,14 @@
  "area": "US-AL",
  "counts": {
   "agree": 33,
-  "handover_hints": 4,
+  "handover_hints": 5,
   "no_page": 3,
-  "no_size": 57,
+  "no_size": 56,
   "off": 16,
   "ours_unknown": 4,
   "parks": 155,
   "retired": 0,
-  "unsure": 15,
+  "unsure": 17,
   "weak": 7,
   "with_outline": 133
  },
@@ -1954,10 +1954,11 @@
    "verdict": "unsure"
   },
   "US-1039": {
-   "checked": "2026-10-28",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-08",
    "handover": [],
-   "last_read_failed": "2026-11-08",
    "n": "De Soto State Park",
+   "official": null,
    "ours": {
     "acres": 1299,
     "manager": "",
@@ -1979,10 +1980,42 @@
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
-   "score": null,
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.alapark.com/parks/desoto-state-park",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "other_unit": true,
+     "status": "HTTP 403",
+     "url": "https://www.alapark.com/rules-and-regulations",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 3502.0,
+     "as": "3,502 acre",
+     "clean": false,
+     "line": "ible boardwalk trail. Accommodations No matter what type of lodging you might prefer or need, we have it! Our 3,502-acre park provides lodging facilities ranging from chalets and cabins to lodge rooms, plus an Improved Campground",
+     "total_like": false,
+     "url": "https://www.alapark.com/parks/desoto-state-park",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "unsure"
   },
   "US-10396": {
    "checked": "2026-10-28",
@@ -2027,9 +2060,18 @@
    "verdict": "no size on page"
   },
   "US-1040": {
-   "checked": "2026-10-28",
-   "handover": [],
-   "last_read_failed": "2026-11-08",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-08",
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "Florala, AL 36442 Phone Numbers 334-858-6425 HOURS Lake Jackson RV Campground & Park at Florala is now owned and operated by the City of Florala. To make campground reservations call 334-858-6425 Rates: $34.80 a day for water sites, $30.16 for non-water sites, $208.80 weekly for wa",
+     "owner_now": "City of Florala",
+     "src": "https://www.alapark.com/parks/lake-jackson-rv-park-florala",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
    "n": "Lake Jackson RV Park at Florala State Park",
    "official": null,
    "ours": {
@@ -2047,15 +2089,16 @@
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
-   "owner_now": null,
+   "owner_now": "City of Florala",
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://www.alapark.com/parks/lake-jackson-rv-park-florala",
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "rest",
+     "other_unit": true,
+     "status": "HTTP 403",
      "url": "https://www.alapark.com/rules-and-regulations",
      "why": "rules page (documents bot)"
     }
@@ -2068,10 +2111,38 @@
     "size": 1,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 500.0,
+     "as": "500 acre",
+     "clean": false,
+     "line": "rs & dryers available, club house, all sites beautiful Sits on the shores of Alabama's only natural lake, the 500 acre Lake Jackson, which shares it's shores with Florida Park also features a wetlands park, Civic Center named fo",
+     "total_like": false,
+     "url": "https://www.alapark.com/parks/lake-jackson-rv-park-florala",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 500.0,
+     "as": "500 acre",
+     "clean": false,
+     "line": "________________________________________________________________ Stretching along the shores of the beautiful 500-acre Lake Jackson, this compact 40-acre park offers swimming, a bike path and walking trail, excellent fishing, a",
+     "total_like": false,
+     "url": "https://www.alapark.com/parks/lake-jackson-rv-park-florala",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 40.0,
+     "as": "40 acre",
+     "clean": false,
+     "line": "____________________________ Stretching along the shores of the beautiful 500-acre Lake Jackson, this compact 40-acre park offers swimming, a bike path and walking trail, excellent fishing, a scene picnic area, and a modern lak",
+     "total_like": false,
+     "url": "https://www.alapark.com/parks/lake-jackson-rv-park-florala",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-1041": {
    "checked": "2026-10-28",

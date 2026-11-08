@@ -4,21 +4,21 @@
    "checked": 155,
    "counts": {
     "agree": 33,
-    "handover_hints": 4,
+    "handover_hints": 5,
     "no_page": 3,
-    "no_size": 60,
+    "no_size": 56,
     "off": 16,
     "ours_unknown": 4,
     "parks": 155,
     "retired": 0,
-    "unsure": 13,
+    "unsure": 17,
     "weak": 7,
-    "with_outline": 134
+    "with_outline": 133
    },
    "left": 0,
    "parks": 155,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-08"
   },
   "US-AR": {
    "checked": 306,
@@ -741,41 +741,53 @@
    "updated": "2026-11-08"
   }
  },
- "hosts": {},
+ "hosts": {
+  "www.alapark.com": 1794248619.2284882
+ },
  "last": {
   "areas": [
-   "US-GA"
+   "US-AL"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 1,
+   "browser": 22,
+   "dropped_queued": 1,
    "errors": 0,
-   "for_person": 1,
+   "for_person": 2,
    "for_person_urls": [
     [
-     "https://www.gwcca.org/centennial-olympic-park",
+     "https://www.alapark.com/rules-and-regulations",
      "HTTP 403 twice"
+    ],
+    [
+     "https://www.alapark.com/rules-and-regulations",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.tva.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.tva.com this run"
     ]
    ],
-   "requests": 6,
-   "rested": 0,
-   "retry403": 1,
-   "robots": 0,
-   "strikes": 2
+   "requests": 61,
+   "rested": 36,
+   "retry403": 2,
+   "robots": 1,
+   "robots_unreadable": 1,
+   "strikes": 4
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 11,
-   "no_size": 2,
-   "ours_unknown": 0,
-   "pages_read": 1,
-   "parks": 2,
+   "handover_hints": 5,
+   "no_size": 39,
+   "ours_unknown": 2,
+   "pages_read": 26,
+   "parks": 43,
    "retired": 0,
    "size_agree": 0,
    "size_off": 0,
-   "size_unsure": 0,
-   "skipped_fresh": 235,
-   "with_outline": 2
+   "size_unsure": 2,
+   "skipped_fresh": 112,
+   "with_outline": 43
   },
   "when": "2026-11-08"
  },
