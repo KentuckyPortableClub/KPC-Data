@@ -3,7 +3,7 @@
  "counts": {
   "AK": 11,
   "AL": 6,
-  "AR": 17,
+  "AR": 16,
   "AZ": 5,
   "CA": 8,
   "CA-AB": 13,
@@ -21,7 +21,7 @@
   "CA-SK": 12,
   "CA-SP": 0,
   "CA-YT": 2,
-  "CO": 5,
+  "CO": 4,
   "CT": 3,
   "DC": 2,
   "DE": 1,
@@ -33,7 +33,7 @@
   "IN": 11,
   "KS": 5,
   "LA": 2,
-  "MA": 7,
+  "MA": 6,
   "MD": 5,
   "ME": 3,
   "MI": 14,
@@ -44,20 +44,20 @@
   "NC": 15,
   "ND": 7,
   "NE": 2,
-  "NH": 4,
+  "NH": 2,
   "NJ": 1,
   "NM": 5,
-  "NV": 30,
+  "NV": 20,
   "NY": 12,
   "OH": 0,
   "OK": 3,
   "OR": 27,
   "PA": 1,
   "RI": 2,
-  "SC": 4,
+  "SC": 3,
   "TN": 4,
   "TX": 4,
-  "UT": 40,
+  "UT": 39,
   "VA": 4,
   "VT": 4,
   "WA": 11,
@@ -6891,22 +6891,6 @@
    "site": true,
    "st": "OR"
   },
-  "US-10508": {
-   "acts": 42,
-   "leads": [
-    {
-     "acres": 1132752.0,
-     "id": "3003",
-     "km": 0.66,
-     "layer": "Forest Service Region 08 Southern",
-     "name": "Ozark National Forest",
-     "why": "shares ozark"
-    }
-   ],
-   "n": "Ozark Highlands Trail (OHT) National Historic Trail",
-   "site": true,
-   "st": "AR"
-  },
   "US-10511": {
    "acts": 179,
    "leads": [
@@ -7186,22 +7170,6 @@
    "n": "Ellis State Wildlife Habitat Management Area",
    "site": false,
    "st": "WY"
-  },
-  "US-10844": {
-   "acts": 2,
-   "leads": [
-    {
-     "acres": 322004.26580333,
-     "id": "hab279",
-     "km": 0.22,
-     "layer": "BLM herd areas",
-     "name": "Buck-Bald",
-     "why": "same kind of place (hma)"
-    }
-   ],
-   "n": "Diamond BLM Herd Management Area",
-   "site": false,
-   "st": "NV"
   },
   "US-10862": {
    "acts": 5,
@@ -8098,46 +8066,6 @@
    "n": "Muddy Creek WMA Wildlife Management Area",
    "site": false,
    "st": "AR"
-  },
-  "US-11401": {
-   "acts": 3,
-   "leads": [
-    {
-     "acres": 232.92361853,
-     "id": "sgmaa655563",
-     "km": 0.0,
-     "layer": "MassGIS / Executive Office of Energy and Environmental Affai (land, state GIS table)",
-     "name": "Hawks Brook WMA",
-     "why": "same kind of place (wma)"
-    },
-    {
-     "acres": 233.0,
-     "id": "55539",
-     "km": 0.0,
-     "layer": " ",
-     "name": "Hawks Brook Wildlife Management Area",
-     "why": "same kind of place (wma)"
-    },
-    {
-     "acres": 132.0,
-     "id": "55537",
-     "km": 0.9,
-     "layer": " ",
-     "name": "Hawks Brook Wildlife Management Area",
-     "why": "same kind of place (wma)"
-    },
-    {
-     "acres": 132.00238431,
-     "id": "sgmaa665619",
-     "km": 0.92,
-     "layer": "MassGIS / Executive Office of Energy and Environmental Affai (land, state GIS table)",
-     "name": "Hawks Brook WMA",
-     "why": "same kind of place (wma)"
-    }
-   ],
-   "n": "Cummington Wildlife Management Area",
-   "site": false,
-   "st": "MA"
   },
   "US-11584": {
    "acts": 8,
@@ -9867,22 +9795,6 @@
    "site": true,
    "st": "OR"
   },
-  "US-13013": {
-   "acts": 9,
-   "leads": [
-    {
-     "acres": 6605.17711166,
-     "id": "hma92",
-     "km": 0.7,
-     "layer": "BLM herd management areas",
-     "name": "Dogskin Mountains",
-     "why": "shares dogskin"
-    }
-   ],
-   "n": "Dogskin Mountains BLM Herd Management Area",
-   "site": false,
-   "st": "NV"
-  },
   "US-13023": {
    "acts": 5,
    "leads": [
@@ -9904,134 +9816,6 @@
     }
    ],
    "n": "Artesia Lake State Wildlife Area",
-   "site": false,
-   "st": "NV"
-  },
-  "US-13029": {
-   "acts": 4,
-   "leads": [
-    {
-     "acres": 516.0,
-     "id": "230214",
-     "km": 0.28,
-     "layer": "State of Nevada",
-     "name": "Flanigan Area Grant Lands",
-     "why": "shares flanigan"
-    }
-   ],
-   "n": "Flanigan BLM Herd Management Area",
-   "site": false,
-   "st": "NV"
-  },
-  "US-13039": {
-   "acts": 0,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "wsa400",
-     "km": 0.02,
-     "layer": "BLM wilderness study areas",
-     "name": "Owyhee Canyon",
-     "why": "shares owyhee"
-    },
-    {
-     "acres": 14511.34109163,
-     "id": "rst9628",
-     "km": 0.83,
-     "layer": "BLM recreation management areas · official (BLM planning area)",
-     "name": "South Fork Owyhee River",
-     "why": "shares owyhee"
-    },
-    {
-     "acres": 14511.34109163,
-     "id": "sgakg9628",
-     "km": 0.83,
-     "layer": "BLM recreation SITE polygons (national, 3,478) (land, state GIS table)",
-     "name": "South Fork Owyhee River",
-     "why": "shares owyhee"
-    }
-   ],
-   "n": "Owyhee River Wilderness Area",
-   "site": false,
-   "st": "NV"
-  },
-  "US-13041": {
-   "acts": 0,
-   "leads": [
-    {
-     "acres": 517008.58978636,
-     "id": "hab12",
-     "km": 0.0,
-     "layer": "BLM herd areas",
-     "name": "Maverick-Butte",
-     "why": "shares maverick"
-    },
-    {
-     "acres": 324316.94066995,
-     "id": "hma31",
-     "km": 0.63,
-     "layer": "BLM herd management areas",
-     "name": "Maverick-Medicine",
-     "why": "shares maverick, medicine"
-    },
-    {
-     "acres": 1235921.5880484,
-     "id": "hma87",
-     "km": 0.0,
-     "layer": "BLM herd management areas",
-     "name": "Triple B",
-     "why": "same kind of place (hma)"
-    },
-    {
-     "acres": 481288.57328081,
-     "id": "hab172",
-     "km": 0.41,
-     "layer": "BLM herd areas",
-     "name": "Cherry Creek",
-     "why": "same kind of place (hma)"
-    }
-   ],
-   "n": "Maverick-Medicine BLM Herd Management Area",
-   "site": false,
-   "st": "NV"
-  },
-  "US-13043": {
-   "acts": 0,
-   "leads": [
-    {
-     "acres": 287948.4199666,
-     "id": "hma84",
-     "km": 0.87,
-     "layer": "BLM herd management areas",
-     "name": "New Pass-Ravenswood",
-     "why": "shares pass, ravenswood"
-    },
-    {
-     "acres": 67575.20466732,
-     "id": "hab228",
-     "km": 0.0,
-     "layer": "BLM herd areas",
-     "name": "Mount Airy",
-     "why": "same kind of place (hma)"
-    }
-   ],
-   "n": "New Pass-Ravenswood BLM Herd Management Area",
-   "site": false,
-   "st": "NV"
-  },
-  "US-13044": {
-   "acts": 1,
-   "leads": [
-    {
-     "acres": 119262.30942353,
-     "id": "hma70",
-     "km": 0.78,
-     "layer": "BLM herd management areas",
-     "name": "Palmetto",
-     "why": "shares palmetto"
-    }
-   ],
-   "n": "Palmetto BLM Herd Management Area",
    "site": false,
    "st": "NV"
   },
@@ -10075,38 +9859,6 @@
    "site": false,
    "st": "AL"
   },
-  "US-13119": {
-   "acts": 3,
-   "leads": [
-    {
-     "acres": 24059.41159765,
-     "id": "hma108",
-     "km": 0.84,
-     "layer": "BLM herd management areas",
-     "name": "Stonewall",
-     "why": "shares stonewall"
-    }
-   ],
-   "n": "Stonewall BLM Herd Management Area",
-   "site": false,
-   "st": "NV"
-  },
-  "US-13129": {
-   "acts": 2,
-   "leads": [
-    {
-     "acres": 9686.61091796,
-     "id": "hma1",
-     "km": 0.69,
-     "layer": "BLM herd management areas",
-     "name": "Lahontan",
-     "why": "shares lahontan"
-    }
-   ],
-   "n": "Lahontan BLM Herd Management Area",
-   "site": false,
-   "st": "NV"
-  },
   "US-13166": {
    "acts": 15,
    "leads": [
@@ -10138,46 +9890,6 @@
    "n": "Lake Ottawa National Recreation Area",
    "site": false,
    "st": "MI"
-  },
-  "US-13181": {
-   "acts": 0,
-   "leads": [
-    {
-     "acres": 16227.19405253,
-     "id": "sgakh1214",
-     "km": 0.0,
-     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
-     "name": "Pine Forest",
-     "why": "shares pine"
-    },
-    {
-     "acres": 76970.26367442,
-     "id": "rst11394",
-     "km": 0.0,
-     "layer": "BLM recreation management areas · official (BLM planning area)",
-     "name": "Pine Forest Creeks RMZ",
-     "why": "shares pine"
-    },
-    {
-     "acres": 76970.26367442,
-     "id": "sgakg11394",
-     "km": 0.0,
-     "layer": "BLM recreation SITE polygons (national, 3,478) (land, state GIS table)",
-     "name": "Pine Forest Creeks RMZ",
-     "why": "shares pine"
-    },
-    {
-     "acres": 0.0,
-     "id": "wbl241",
-     "km": 0.2,
-     "layer": "BLM wilderness",
-     "name": "Pine Forest Range",
-     "why": "shares pine"
-    }
-   ],
-   "n": "Pine Forest BLM Recreation Management Area",
-   "site": true,
-   "st": "NV"
   },
   "US-13186": {
    "acts": 4,
@@ -10995,46 +10707,6 @@
    "site": false,
    "st": "DC"
   },
-  "US-13626": {
-   "acts": 1,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "nhc3516",
-     "km": 0.05,
-     "layer": "NH GRANIT conservation and public lands",
-     "name": "Sugar River Recreational Trail",
-     "why": "shares sugar"
-    },
-    {
-     "acres": 0.0,
-     "id": "sgnha3516",
-     "km": 0.05,
-     "layer": "NH GRANIT (land, state GIS table)",
-     "name": "Sugar River Recreational Trail",
-     "why": "shares sugar"
-    },
-    {
-     "acres": 0.0,
-     "id": "nhc3889",
-     "km": 0.77,
-     "layer": "NH GRANIT conservation and public lands",
-     "name": "Sugar River Recreational Trail",
-     "why": "shares sugar"
-    },
-    {
-     "acres": 0.0,
-     "id": "sgnha3889",
-     "km": 0.77,
-     "layer": "NH GRANIT (land, state GIS table)",
-     "name": "Sugar River Recreational Trail",
-     "why": "shares sugar"
-    }
-   ],
-   "n": "Sugar River State Trail",
-   "site": false,
-   "st": "NH"
-  },
   "US-2001": {
    "acts": 1520,
    "leads": [
@@ -11627,46 +11299,6 @@
    "site": false,
    "st": "NC"
   },
-  "US-3917": {
-   "acts": 57,
-   "leads": [
-    {
-     "acres": 10168.0,
-     "id": "254041",
-     "km": 0.0,
-     "layer": "Unknown",
-     "name": "Little Pee Dee Heritage Preserve / Wildlife Management Area",
-     "why": "shares dee, heritage, pee"
-    },
-    {
-     "acres": 10454.655,
-     "id": "sgscc11",
-     "km": 0.0,
-     "layer": "South Carolina DNR (heritage preserves) (preserve, state GIS table)",
-     "name": "Little Pee Dee Heritage Preserve and Wildlife Management Area",
-     "why": "shares dee, heritage, pee"
-    },
-    {
-     "acres": 10455.0,
-     "id": "sgsca94",
-     "km": 0.0,
-     "layer": "South Carolina DNR (WMAs, heritage preserves) (wild, state GIS table)",
-     "name": "Little Pee Dee HP and WMA",
-     "why": "shares dee, pee"
-    },
-    {
-     "acres": 10455.0,
-     "id": "sgscd175",
-     "km": 0.0,
-     "layer": "South Carolina Department of Natural Resources (credit: SCDNR) (land, state GIS table)",
-     "name": "Little Pee Dee HP and WMA",
-     "why": "shares dee, pee"
-    }
-   ],
-   "n": "Little Pee Dee Bay Heritage Preserve",
-   "site": false,
-   "st": "SC"
-  },
   "US-3950": {
    "acts": 15,
    "leads": [
@@ -12090,38 +11722,6 @@
    "n": "Pere Marquette State Forest",
    "site": false,
    "st": "MI"
-  },
-  "US-4894": {
-   "acts": 5,
-   "leads": [
-    {
-     "acres": 725046.0,
-     "id": "3087",
-     "km": 0.0,
-     "layer": "Forest Service Region 09 Eastern",
-     "name": "White Mountain National Forest",
-     "why": "shares white"
-    },
-    {
-     "acres": 0.0,
-     "id": "sgnha911",
-     "km": 0.0,
-     "layer": "NH GRANIT (land, state GIS table)",
-     "name": "White Mountain National Forest",
-     "why": "shares white"
-    },
-    {
-     "acres": 0.0,
-     "id": "sgnha883",
-     "km": 0.99,
-     "layer": "NH GRANIT (land, state GIS table)",
-     "name": "White Mountain National Forest",
-     "why": "shares white"
-    }
-   ],
-   "n": "Davis-White State Forest",
-   "site": false,
-   "st": "NH"
   },
   "US-5197": {
    "acts": 4,
@@ -12865,22 +12465,6 @@
    ],
    "n": "Big Creek USFS Wild Horse Territory & BLM Herd Management Area",
    "site": false,
-   "st": "UT"
-  },
-  "US-5993": {
-   "acts": 39,
-   "leads": [
-    {
-     "acres": 4920.877577,
-     "id": "sgakh1557",
-     "km": 0.0,
-     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
-     "name": "Central Pacific Railroad Grade",
-     "why": "shares railroad"
-    }
-   ],
-   "n": "Transcontinental Railroad BCB National Historic Trail",
-   "site": true,
    "st": "UT"
   },
   "US-5997": {
@@ -15235,30 +14819,6 @@
    "site": false,
    "st": "CO"
   },
-  "US-9678": {
-   "acts": 36,
-   "leads": [
-    {
-     "acres": 10.16428272,
-     "id": "cow909",
-     "km": 0.12,
-     "layer": "Colorado Parks and Wildlife properties",
-     "name": "Windy Gap WWA",
-     "why": "shares gap, windy"
-    },
-    {
-     "acres": 10.16428272,
-     "id": "sgcoc909",
-     "km": 0.12,
-     "layer": "Colorado Parks & Wildlife (CPW AGOL org ttNGmDvKQA7oeDQ3) (wild, state GIS table)",
-     "name": "Windy Gap WWA",
-     "why": "shares gap, windy"
-    }
-   ],
-   "n": "Windy Gap Watchable State Wildlife Area",
-   "site": false,
-   "st": "CO"
-  },
   "US-9759": {
    "acts": 74,
    "leads": [
@@ -15383,8 +14943,8 @@
  "skipped": [],
  "totals": {
   "canada": 257,
-  "name_word": 491,
-  "parks": 644,
-  "us": 389
+  "name_word": 476,
+  "parks": 627,
+  "us": 372
  }
 }
