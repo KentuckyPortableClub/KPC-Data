@@ -545,7 +545,7 @@
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-01"
+   "updated": "2026-11-08"
   },
   "US-NE": {
    "camps": 236,
@@ -1011,7 +1011,7 @@
   "US-MO": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-MS": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-MT": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
-  "US-NC": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
+  "US-NC": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-NE": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-NH": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-NJ": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1254,10 +1254,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
-    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+    "src": null,
+    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-11-01"
+   "read": "2026-11-08"
   },
   "US-NE": {
    "cell": {
@@ -1440,9 +1440,7 @@
    "read": "2026-11-03"
   }
  },
- "hosts": {
-  "cpw.state.co.us": 1794129397.3422284
- },
+ "hosts": {},
  "ky_check": {
   "agree": 81,
   "bot_blank": 220,
@@ -2396,12 +2394,12 @@
  },
  "last": {
   "areas": [
-   "US-MD"
+   "US-NC"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 77,
+   "dropped_queued": 146,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2413,7 +2411,7 @@
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 81,
+   "requests": 144,
    "rested": 0,
    "robots": 2,
    "robots_unreadable": 2,
@@ -2421,16 +2419,16 @@
   },
   "ridb_key": false,
   "stat": {
-   "browser": 6,
-   "camps": 78,
+   "browser": 10,
+   "camps": 147,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 7,
-   "needs_key": 31,
-   "no_page": 0,
+   "needs_browser": 8,
+   "needs_key": 68,
+   "no_page": 1,
    "not_official": 0,
-   "ok": 47,
-   "pages_read": 69,
+   "ok": 80,
+   "pages_read": 126,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
