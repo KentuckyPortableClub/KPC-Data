@@ -5,15 +5,15 @@
    "verdict": "FAIL",
    "bar": "Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.",
    "measured": {
-    "rows": 7250,
-    "parks": 3476,
-    "parks_with_hit": 318,
-    "SURE": 295,
-    "LIKELY": 447,
-    "UNLIKELY_evidence": 2375,
-    "strong": 131,
+    "rows": 7301,
+    "parks": 3527,
+    "parks_with_hit": 321,
+    "SURE": 296,
+    "LIKELY": 453,
+    "UNLIKELY_evidence": 2416,
+    "strong": 132,
     "already_approved": 459,
-    "open_without_whynot": 615,
+    "open_without_whynot": 620,
     "non_official_candidates": 0,
     "unlikely_as_questions": 0,
     "strong_but_not_sure": 0,
@@ -21,16 +21,16 @@
     "size_way_off_questions": 0
    },
    "fails": [
-    "open parks without a why-not: 615"
+    "open parks without a why-not: 620"
    ],
    "top_miss_reasons": [
     {
      "reason": "not found: no-layer: no official record at the pin or by name",
-     "parks": 2407
+     "parks": 2409
     },
     {
      "reason": "evidence: UNLIKELY only : name: none word in common",
-     "parks": 1030
+     "parks": 1042
     },
     {
      "reason": "evidence: UNLIKELY only : pin not inside nor within m with a name match",
@@ -38,7 +38,7 @@
     },
     {
      "reason": "blocked: host resting",
-     "parks": 476
+     "parks": 477
     },
     {
      "reason": "already approved: already approved",
@@ -107,21 +107,21 @@
     "the finder bars need the side-by-side run (95% re-found, +25% parks) and a 40-row sample (85% YES)"
    ],
    "details": {
-    "rows": 7250,
-    "found_or_candidate": 539,
-    "blocked": 836,
+    "rows": 7301,
+    "found_or_candidate": 541,
+    "blocked": 837,
     "hit_rate": 0.074,
     "bands": {
-     "STRONG": 131,
-     "WEAK": 397,
+     "STRONG": 132,
+     "WEAK": 398,
      "CONFLICT": 11
     },
     "tiers": {
      "T-1": 35,
-     "T-2": 204,
-     "T-3": 232,
+     "T-2": 208,
+     "T-3": 228,
      "T-4": 32,
-     "T-6": 36
+     "T-6": 38
     },
     "every_open_park_has_whynot": false,
     "non_official_publishers": []
@@ -296,11 +296,11 @@
    "pass1": {
     "error": 430,
     "already approved": 459,
-    "found": 173,
-    "candidate": 607,
-    "evidence": 2335,
-    "blocked": 836,
-    "not found": 2407,
+    "found": 174,
+    "candidate": 613,
+    "evidence": 2376,
+    "blocked": 837,
+    "not found": 2409,
     "pin only": 3
    },
    "pass2": null,
