@@ -1,6 +1,13 @@
 {
  "about": "kpc engine finds (engine): \"rest\" = ArcGIS layers; \"other\" = WFS / downloads. Leads only: nothing live without chat 11.",
- "rest": {},
+ "rest": {
+  "GB-3015": {
+   "layer": "https://maps.gov.scot/server/rest/services/ScotGov/ProtectedSites/MapServer/3",
+   "agency": "NationalScenicAreas",
+   "field": "nsaname",
+   "status": "FOUND (engine 2026-11-08)"
+  }
+ },
  "other": {
   "GB-1733": {
    "url": "https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=protectedareas%3Asssi",
@@ -125,6 +132,16 @@
   "GB-2151": {
    "url": "https://datamap.gov.wales/geoserver/ows?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=inspire-nrw%3ANRW_SSSI",
    "agency": "Natural Resources Wales / Welsh Government (DataMapWales)",
+   "status": "POSSIBLE MATCH (engine 2026-11-08)"
+  },
+  "GB-2915": {
+   "url": "https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=protectedareas%3Asssi",
+   "agency": "NatureScot",
+   "status": "POSSIBLE MATCH (engine 2026-11-08)"
+  },
+  "GB-7156": {
+   "url": "https://ogc.nature.scot/geoserver/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=scottishforestry%3ANational_Forest_Estate_Ownership_Scotland",
+   "agency": "Forestry and Land Scotland - National Forest Estate Ownership Scotland (scottishforestry: on NatureScot geoserver)",
    "status": "POSSIBLE MATCH (engine 2026-11-08)"
   }
  }
