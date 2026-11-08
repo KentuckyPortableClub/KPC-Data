@@ -1,4 +1,5 @@
 KPC site-check 0.1.0: 40 parks × phone,desktop × us_planner on https://kentuckyportableclub.github.io/KPC-Links/; read 2026-11-08
+Playwright's own Chromium is not installed; using /usr/bin/google-chrome
 [phone] US-2194 us_planner: official (expect official) outline=True fit=True errors=0 OK
 [desktop] US-2194 us_planner: official (expect official) outline=True fit=None errors=0 OK
 [phone] US-4784 us_planner: official (expect official) outline=True fit=True errors=0 OK
@@ -7,27 +8,27 @@ KPC site-check 0.1.0: 40 parks × phone,desktop × us_planner on https://kentuck
 [desktop] US-6218 us_planner: official (expect official) outline=True fit=None errors=0 OK
 [phone] US-1952 us_planner: official (expect official) outline=True fit=True errors=0 OK
 [desktop] US-1952 us_planner: official (expect official) outline=True fit=None errors=0 OK
-[phone] US-10614 us_planner: official (expect official) outline=True fit=False errors=0 PROBLEM: card does not fit the phone
+[phone] US-10614 us_planner: official (expect official) outline=True fit=True errors=0 OK
 [desktop] US-10614 us_planner: official (expect official) outline=True fit=None errors=0 OK
-[phone] US-2740 us_planner: official (expect official) outline=True fit=False errors=0 PROBLEM: card does not fit the phone
+[phone] US-2740 us_planner: official (expect official) outline=True fit=True errors=0 OK
 [desktop] US-2740 us_planner: official (expect official) outline=True fit=None errors=0 OK
-[phone] US-3350 us_planner: official (expect official) outline=True fit=False errors=0 PROBLEM: card does not fit the phone
+[phone] US-3350 us_planner: official (expect official) outline=True fit=True errors=0 OK
 [desktop] US-3350 us_planner: official (expect official) outline=True fit=None errors=0 OK
-[phone] US-0434 us_planner: official (expect official) outline=True fit=True errors=0 OK
+[phone] US-0434 us_planner: official (expect official) outline=True fit=False errors=0 PROBLEM: card does not fit the phone
 [desktop] US-0434 us_planner: official (expect official) outline=True fit=None errors=0 OK
-[phone] US-1043 us_planner: official (expect official) outline=True fit=True errors=0 OK
+[phone] US-1043 us_planner: official (expect official) outline=True fit=False errors=0 PROBLEM: card does not fit the phone
 [desktop] US-1043 us_planner: official (expect official) outline=True fit=None errors=0 OK
 [phone] US-6123 us_planner: official (expect official) outline=True fit=False errors=0 PROBLEM: card does not fit the phone
 [desktop] US-6123 us_planner: official (expect official) outline=True fit=None errors=0 OK
 [phone] US-0437 us_planner: approximate (expect approximate) outline=True fit=True errors=0 OK
-[phone] US-10709 us_planner: approximate (expect approximate) outline=True fit=False errors=0 PROBLEM: card does not fit the phone
 [desktop] US-0437 us_planner: approximate (expect approximate) outline=True fit=None errors=0 OK
-[phone] US-11793 us_planner: approximate (expect approximate) outline=True fit=True errors=0 OK
+[phone] US-10709 us_planner: approximate (expect approximate) outline=True fit=False errors=0 PROBLEM: card does not fit the phone
 [desktop] US-10709 us_planner: approximate (expect approximate) outline=True fit=None errors=0 OK
-[phone] US-9442 us_planner: approximate (expect approximate) outline=True fit=True errors=0 OK
+[phone] US-11793 us_planner: approximate (expect approximate) outline=True fit=True errors=0 OK
 [desktop] US-11793 us_planner: approximate (expect approximate) outline=True fit=None errors=0 OK
-[phone] US-10754 us_planner: approximate (expect approximate) outline=True fit=False errors=0 PROBLEM: card does not fit the phone
+[phone] US-9442 us_planner: approximate (expect approximate) outline=True fit=True errors=0 OK
 [desktop] US-9442 us_planner: approximate (expect approximate) outline=True fit=None errors=0 OK
+[phone] US-10754 us_planner: approximate (expect approximate) outline=True fit=False errors=0 PROBLEM: card does not fit the phone
 [phone] US-12064 us_planner: approximate (expect approximate) outline=True fit=True errors=0 OK
 [desktop] US-10754 us_planner: approximate (expect approximate) outline=True fit=None errors=0 OK
 [phone] US-7239 us_planner: approximate (expect approximate) outline=True fit=True errors=0 OK
@@ -36,10 +37,10 @@ KPC site-check 0.1.0: 40 parks × phone,desktop × us_planner on https://kentuck
 [desktop] US-7239 us_planner: approximate (expect approximate) outline=True fit=None errors=0 OK
 [phone] US-10010 us_planner: approximate (expect approximate) outline=True fit=True errors=0 OK
 [desktop] US-5258 us_planner: approximate (expect approximate) outline=True fit=None errors=0 OK
-[phone] US-4254 us_planner: approximate (expect approximate) outline=True fit=True errors=0 OK
 [desktop] US-10010 us_planner: approximate (expect approximate) outline=True fit=None errors=0 OK
+[phone] US-4254 us_planner: approximate (expect approximate) outline=True fit=True errors=0 OK
 [desktop] US-4254 us_planner: approximate (expect approximate) outline=True fit=None errors=0 OK
-[phone] US-10838 us_planner: pin (expect pin) outline=False fit=True errors=0 OK
+[phone] US-10838 us_planner: pin (expect pin) outline=False fit=False errors=0 PROBLEM: card does not fit the phone
 [desktop] US-10838 us_planner: pin (expect pin) outline=False fit=None errors=0 OK
 [phone] US-11308 us_planner: pin (expect pin) outline=False fit=True errors=0 OK
 [desktop] US-11308 us_planner: pin (expect pin) outline=False fit=None errors=0 OK
@@ -47,36 +48,36 @@ KPC site-check 0.1.0: 40 parks × phone,desktop × us_planner on https://kentuck
 [desktop] US-12772 us_planner: pin (expect pin) outline=False fit=None errors=0 OK
 [phone] US-11655 us_planner: pin (expect pin) outline=False fit=True errors=0 OK
 [desktop] US-11655 us_planner: pin (expect pin) outline=False fit=None errors=0 OK
-[phone] US-12055 us_planner: pin (expect pin) outline=False fit=False errors=0 PROBLEM: card does not fit the phone
+[phone] US-12055 us_planner: pin (expect pin) outline=False fit=True errors=0 OK
 [phone] US-9986 us_planner: pin (expect pin) outline=True fit=True errors=0 OK
 [desktop] US-12055 us_planner: pin (expect pin) outline=False fit=None errors=0 OK
-[phone] US-3724 us_planner: pin (expect pin) outline=False fit=False errors=0 PROBLEM: card does not fit the phone
+[phone] US-3724 us_planner: pin (expect pin) outline=False fit=True errors=0 OK
 [desktop] US-9986 us_planner: pin (expect pin) outline=False fit=None errors=0 OK
 [phone] US-10877 us_planner: pin (expect pin) outline=False fit=True errors=0 OK
 [desktop] US-3724 us_planner: pin (expect pin) outline=False fit=None errors=0 OK
 [phone] US-7475 us_planner: pin (expect pin) outline=False fit=True errors=0 OK
-[phone] US-2436 us_planner: pin (expect pin) outline=True fit=False errors=0 PROBLEM: card does not fit the phone
 [desktop] US-10877 us_planner: pin (expect pin) outline=False fit=None errors=0 OK
-[phone] US-4398 us_planner: official (expect ) outline=True fit=True errors=0 OK
-[phone] US-4566 us_planner: official (expect ) outline=True fit=True errors=0 OK
+[phone] US-2436 us_planner: pin (expect pin) outline=True fit=True errors=0 OK
+[phone] US-10139 us_planner: official (expect ) outline=True fit=True errors=4 PROBLEM: 4 console error(s)
 [desktop] US-7475 us_planner: pin (expect pin) outline=False fit=None errors=0 OK
-[phone] US-3304 us_planner: official (expect ) outline=True fit=True errors=0 OK
-[phone] US-4567 us_planner: official (expect ) outline=True fit=True errors=0 OK
+[phone] US-0332 us_planner: official (expect ) outline=True fit=True errors=0 OK
+[phone] US-0006 us_planner: official (expect ) outline=True fit=True errors=0 OK
 [desktop] US-2436 us_planner: pin (expect pin) outline=False fit=None errors=0 OK
-[phone] US-1777 us_planner: official (expect ) outline=True fit=True errors=0 OK
-[desktop] US-4398 us_planner: official (expect ) outline=True fit=None errors=0 OK
-[phone] US-0031 us_planner: official (expect ) outline=True fit=True errors=0 OK
-[desktop] US-4566 us_planner: official (expect ) outline=True fit=None errors=0 OK
-[phone] US-2422 us_planner: official (expect ) outline=True fit=True errors=0 OK
-[desktop] US-3304 us_planner: official (expect ) outline=True fit=None errors=0 OK
-[phone] US-1772 us_planner: official (expect ) outline=True fit=True errors=0 OK
-[desktop] US-4567 us_planner: official (expect ) outline=True fit=None errors=0 OK
-[phone] US-4641 us_planner: official (expect ) outline=True fit=True errors=0 OK
-[desktop] US-1777 us_planner: official (expect ) outline=True fit=None errors=0 OK
-[phone] US-0364 us_planner: official (expect ) outline=True fit=True errors=0 OK
-[desktop] US-0031 us_planner: official (expect ) outline=True fit=None errors=0 OK
-[desktop] US-2422 us_planner: official (expect ) outline=True fit=None errors=0 OK
-[desktop] US-1772 us_planner: official (expect ) outline=True fit=None errors=0 OK
-[desktop] US-4641 us_planner: official (expect ) outline=True fit=None errors=0 OK
-[desktop] US-0364 us_planner: official (expect ) outline=True fit=None errors=0 OK
-done: 80 checks, 10 with problems, 12.5 min
+[phone] US-4403 us_planner: official (expect ) outline=True fit=True errors=0 OK
+[desktop] US-10139 us_planner: official (expect ) outline=True fit=None errors=4 PROBLEM: 4 console error(s)
+[phone] US-1449 us_planner: official (expect ) outline=True fit=True errors=0 OK
+[desktop] US-0332 us_planner: official (expect ) outline=True fit=None errors=0 OK
+[phone] US-6675 us_planner: official (expect ) outline=True fit=True errors=0 OK
+[desktop] US-0006 us_planner: official (expect ) outline=True fit=None errors=0 OK
+[phone] US-12589 us_planner: official (expect ) outline=True fit=False errors=0 PROBLEM: card does not fit the phone
+[phone] US-10186 us_planner: official (expect ) outline=True fit=True errors=0 OK
+[desktop] US-4403 us_planner: official (expect ) outline=True fit=None errors=0 OK
+[phone] US-0886 us_planner: approximate (expect ) outline=True fit=True errors=0 OK
+[desktop] US-1449 us_planner: official (expect ) outline=True fit=None errors=0 OK
+[phone] US-0238 us_planner: official (expect ) outline=True fit=True errors=0 OK
+[desktop] US-6675 us_planner: official (expect ) outline=True fit=None errors=0 OK
+[desktop] US-12589 us_planner: official (expect ) outline=True fit=None errors=0 OK
+[desktop] US-10186 us_planner: official (expect ) outline=True fit=None errors=0 OK
+[desktop] US-0886 us_planner: approximate (expect ) outline=True fit=None errors=0 OK
+[desktop] US-0238 us_planner: official (expect ) outline=True fit=None errors=0 OK
+done: 80 checks, 10 with problems, 12.7 min
