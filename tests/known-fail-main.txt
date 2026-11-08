@@ -8,3 +8,6 @@ tests/test_fers_check_ca_layers_nov6.py         # reads a hard-coded /tmp/fers/L
 tests/test_key_reconcile_nov6.py                # kpc_key_reconcile --selftest: 'a park only in Links: unexplained'
 tests/test_pile_solver_research_replay_nov6.py  # report mode also reads links/data/research-sources/abbreviations.csv
 selftest:.github/scripts/kpc_key_reconcile.py   # same selftest as test_key_reconcile_nov6
+# Added Nov 8 2026 (pre-existing on main; ledger grew past the Nov 7 sheet counts; trail statuses include "kept current line")
+tests/test_outline_sources_nov7.py             # sheet counts 1500/1488 and "every row Nov 7" no longer match main's ledger
+tests/test_trail_load_nov7.py                  # trail status "kept current line" not in the Nov 7 allowed list; wired CSV count drift
