@@ -115,17 +115,45 @@ def clean_name(name, ptype):
     return (n[: -len(t)] if n.endswith(t) else n).strip()
 
 
+PATHWORDS = {"trail", "trails", "pathway", "path", "walk", "walkway", "greenway", "loop", "route", "byway", "road"}
+
+
+def is_wsr(ptype):
+    t = norm(ptype)
+    return "wild" in t and "scenic" in t and "river" in t
+
+
+def wsr_ok(park_name, ptype, feat):
+    """Nov 7 (Brandon's hand test): a Wild and Scenic River park only matches the river itself:
+    the feature must hold '<distinctive words> river' and must not be a trail/pathway named after it
+    (Black River -> Black Mountain Pathway, Paint -> Paint Creek Trail, Au Sable -> Hartwick Pines Au Sable River Trail)."""
+    toks = [w for w in clean_name(park_name, ptype).split() if w not in ("national", "blm", "wild", "and", "scenic", "river")]
+    b = norm(feat).split()
+    if not toks or PATHWORDS & set(b):
+        return False
+    return (" ".join(toks) + " river") in " ".join(b)
+
+
 def name_score(park_name, ptype, feat_names):
     a = clean_name(park_name, ptype)
+    wsr = is_wsr(ptype)
     best, bestn = 0.0, ""
     for f in feat_names:
         b = norm(f).strip()
         if not b:
             continue
+        if wsr and not wsr_ok(park_name, ptype, f):
+            continue                                              # a trail named after the river is not the river
         r = difflib.SequenceMatcher(None, a, b).ratio()
         ta, tb = set(a.split()) - STOP, set(b.split()) - STOP
         if ta and ta <= tb:                                       # every distinctive park word appears in the feature name
-            r = max(r, 0.9)
+            # one shared word is not enough when it is only the first word of a different named path
+            # (e.g. 'Paint' -> 'Paint Creek Trail'); it must not be followed by another place word
+            if len(ta) == 1 and b.split()[:1] == list(ta) and len(set(b.split()) - STOP - PATHWORDS - ta) >= 1 \
+                    and not set(a.split()) - STOP - ta <= set(b.split()):
+                r = max(r, 0.6)
+            else:
+                r = max(r, 0.9)
         if r > best:
             best, bestn = r, f
     return best, bestn
