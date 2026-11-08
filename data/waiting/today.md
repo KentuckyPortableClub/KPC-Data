@@ -122,6 +122,8 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-07 | 1 | data/docs/US-WI.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-07 | 1 | data/docs/US-WV.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-07 | 1 | data/docs/US-WY.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-08 | 0 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
+| 2026-11-08 | 0 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
 | ? | ? | data/campinfo/US-AL.json | PASS |  |
 | ? | ? | data/campinfo/US-AZ.json | PASS |  |
 | ? | ? | data/campinfo/US-CA.json | PASS |  |
@@ -259,12 +261,10 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/trails/US-10917.json | PASS |  |
 | ? | ? | data/trails/US-13195.json | PASS |  |
 | ? | ? | data/trails/US-13624.json | PASS |  |
-| ? | ? | data/trails/US-13626.json | PASS |  |
 | ? | ? | data/trails/US-7544.json | PASS |  |
 | ? | ? | data/trails/US-8292.json | PASS |  |
 | ? | ? | data/trails/US-8437.json | PASS |  |
 | ? | ? | data/trails/US-8617.json | PASS |  |
-| ? | ? | data/trails/US-9203.json | PASS |  |
 | ? | ? | data/us-key/US-AK.json | PASS |  |
 | ? | ? | data/us-key/US-AL.json | PASS |  |
 | ? | ? | data/us-key/US-AR.json | PASS |  |
