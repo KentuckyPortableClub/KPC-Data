@@ -10,7 +10,7 @@ Two modes
 
 How a pair is scored (all of it is a *candidate* for review, not a verified match)
   name score  : best difflib ratio between the park's distinctive name and any returned feature name
-  spatial hit : (US rows with lat/lon only) a line feature of the layer lies within 2 km of the POTA point
+  spatial hit : (US rows with lat/lon only) a line feature of the layer lies within 5 km of the POTA point (distance to the line, not its centroid)
   high        : name score >= 0.85 and spatial hit
   medium      : name score >= 0.70, or spatial hit with name score >= 0.50
   low         : one weak signal only
@@ -192,15 +192,19 @@ def query_layer(L, park):
     if park.get("lat") and park.get("lon"):
         rows = arcgis_query(L["url"], {"where": "1=1", "outFields": field, "geometry": f"{park['lon']},{park['lat']}",
                                        "geometryType": "esriGeometryPoint", "inSR": "4326",
-                                       "spatialRel": "esriSpatialRelIntersects", "distance": "2000", "units": "esriSRUnit_Meter"})
+                                       "spatialRel": "esriSpatialRelIntersects", "distance": "5000", "units": "esriSRUnit_Meter"})
         if rows:
             k = find_field(rows[0], field)
             sp_names = sorted({str(r.get(k)) for r in rows if r.get(k)})
     return name_names, sp_names
 
 
-def confidence(score, spatial):
+def confidence(score, spatial, exact_same_state=False):
+    """Nov 8: trails are long and a POTA pin can sit anywhere on one. The spatial test is a 5 km buffer around the line itself
+    (nearest point on the line, never a centroid), and an exact-name line on a layer for the park's own state is not
+    downgraded for being far from the pin."""
     if score >= 0.85 and spatial: return "high"
+    if score >= 0.99 and exact_same_state: return "high"
     if score >= 0.70 or (spatial and score >= 0.50): return "medium"
     return "low"
 
@@ -297,7 +301,7 @@ def main():
         rows.append({"ref": p["ref"], "state": p["state"], "park": p["name"], "layer_row": i, "layer_title": L["title"],
                      "layer_url": L["url"], "best_feature": best, "name_score": round(sc, 2), "spatial_hit": "yes" if spatial else "no",
                      "n_names": len(set(name_names + sp_names)), "feature_names": "; ".join(sorted(set(name_names + sp_names))[:8]),
-                     "confidence": confidence(sc, spatial), "why": why})
+                     "confidence": confidence(sc, spatial, L.get("area") == p["state"]), "why": why})
     order = {"high": 0, "medium": 1, "low": 2}
     rows.sort(key=lambda r: (r["ref"], order[r["confidence"]], -r["name_score"]))
     cols = ["ref", "state", "park", "layer_row", "layer_title", "layer_url", "best_feature", "name_score", "spatial_hit",
