@@ -5,14 +5,14 @@
   "agree": 7,
   "handover_hints": 8,
   "no_page": 0,
-  "no_size": 242,
+  "no_size": 263,
   "off": 13,
   "ours_unknown": 0,
-  "parks": 298,
+  "parks": 319,
   "retired": 0,
   "unsure": 12,
   "weak": 10,
-  "with_outline": 274
+  "with_outline": 295
  },
  "parks": {
   "US-0067": {
@@ -8316,6 +8316,953 @@
    "ver": 15,
    "verdict": "no size on page"
   },
+  "US-13631": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Winter Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 658,
+    "manager": "",
+    "pieces": [
+     [
+      209766,
+      "Winter State Wildlife Management Area",
+      581,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 4
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0090703",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13632": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Two Rivers Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 670,
+    "dissolved": {
+     "after": 724,
+     "before": 1448,
+     "copies": 1,
+     "key_union": 670,
+     "parts": 0,
+     "records": 2,
+     "summed": 724,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1448 -> 724 acres",
+    "pieces": [
+     [
+      209662,
+      "Two Rivers State Wildlife Management Area",
+      724,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0170200",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13633": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Talcot Lake Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 5793,
+    "dissolved": {
+     "after": 5319,
+     "before": 10580,
+     "copies": 1,
+     "key_union": 5793,
+     "parts": 0,
+     "records": 2,
+     "summed": 5319,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 10580 -> 5319 acres",
+    "pieces": [
+     [
+      "sgmna246",
+      "Talcot Lake WMA",
+      5319,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0900700",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13634": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Sodus Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 908,
+    "family_fold": "layers {'sgmna': 757, 'padus': 586}: one land in 2 layers, the sgmna copy used (586 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgmna386",
+      "Sodus WMA",
+      757,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0005300",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13635": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Phyllis Voosen Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 683,
+    "family_fold": "layers {'sgmna': 968, 'padus': 571}: one land in 2 layers, the sgmna copy used (571 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgmna1070",
+      "Phyllis Voosen WMA",
+      968,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0186600",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13636": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Lyons Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 503,
+    "dissolved": {
+     "after": 572,
+     "before": 1143,
+     "copies": 1,
+     "key_union": 503,
+     "parts": 0,
+     "records": 2,
+     "summed": 572,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1143 -> 572 acres",
+    "pieces": [
+     [
+      "sgmna259",
+      "Lyons WMA",
+      572,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0001800",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13637": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Lamberton Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 1591,
+    "family_fold": "layers {'sgmna': 1361, 'padus': 1194}: one land in 2 layers, the sgmna copy used (1,194 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgmna1629",
+      "Lamberton WMA",
+      1361,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0008800",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13638": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Lake Maria Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 686,
+    "family_fold": "layers {'sgmna': 951, 'padus': 668}: one land in 2 layers, the sgmna copy used (668 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgmna1422",
+      "Lake Maria WMA",
+      951,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0183501",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13639": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Hopeful Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 404,
+    "manager": "",
+    "pieces": [
+     [
+      "sgmna381",
+      "Hopeful WMA",
+      590,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0205100",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13640": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Hole-In-Mountain Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 447,
+    "dissolved": {
+     "after": 639,
+     "before": 1277,
+     "copies": 1,
+     "key_union": 447,
+     "parts": 0,
+     "records": 2,
+     "summed": 639,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1277 -> 639 acres",
+    "pieces": [
+     [
+      "sgmna687",
+      "Hole-In-Mountain WMA",
+      639,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0149200",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13641": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Green Valley Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 274,
+    "dissolved": {
+     "after": 794,
+     "before": 1588,
+     "copies": 1,
+     "key_union": 274,
+     "parts": 0,
+     "records": 2,
+     "summed": 794,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1588 -> 794 acres",
+    "pieces": [
+     [
+      208862,
+      "Green Valley State Wildlife Management Area",
+      794,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0015600",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13642": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Fenmont Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 351,
+    "dissolved": {
+     "after": 517,
+     "before": 1033,
+     "copies": 1,
+     "key_union": 351,
+     "parts": 0,
+     "records": 2,
+     "summed": 517,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1033 -> 517 acres",
+    "pieces": [
+     [
+      "sgmna56",
+      "Fenmont WMA",
+      517,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0082100",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13643": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Coon Creek Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 988,
+    "family_fold": "layers {'sgmna': 1103, 'padus': 1049}: one land in 2 layers, the sgmna copy used (1,049 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgmna654",
+      "Coon Creek WMA",
+      1103,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0003600",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13644": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Cedar Rock Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 948,
+    "manager": "",
+    "pieces": [
+     [
+      208601,
+      "Cedar Rock State Wildlife Management Area",
+      948,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0090901",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13645": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Budolfson Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 468,
+    "family_fold": "layers {'sgmna': 617, 'padus': 436}: one land in 2 layers, the sgmna copy used (436 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgmna601",
+      "Budolfson WMA",
+      617,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0074500",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13646": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Bohemian Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 567,
+    "dissolved": {
+     "after": 665,
+     "before": 1330,
+     "copies": 1,
+     "key_union": 567,
+     "parts": 0,
+     "records": 2,
+     "summed": 665,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1330 -> 665 acres",
+    "pieces": [
+     [
+      208530,
+      "Bohemian State Wildlife Management Area",
+      665,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0019000",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13647": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Badger Lake Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 543,
+    "family_fold": "layers {'sgmna': 618, 'padus': 403}: one land in 2 layers, the sgmna copy used (403 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgmna1419",
+      "Badger Lake WMA",
+      618,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0019900",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13648": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Altona Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 710,
+    "family_fold": "layers {'sgmna': 637, 'padus': 551}: one land in 2 layers, the sgmna copy used (551 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgmna1689",
+      "Altona WMA",
+      637,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0006300",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13649": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Old Koschak Farm Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 56,
+    "family_fold": "layers {'sgmna': 89, 'padus': 87}: one land in 2 layers, the sgmna copy used (87 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgmna115",
+      "Old Koschak Farm WMA",
+      89,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0171300",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13650": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Darwin S. Meyers Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 527,
+    "manager": "",
+    "pieces": [
+     [
+      208680,
+      "Darwin S. Myers",
+      749,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=wma0181600",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13651": {
+   "checked": "2026-11-08",
+   "handover": [],
+   "n": "Zim Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 705,
+    "manager": "",
+    "pieces": [
+     [
+      209789,
+      "Zim State Wildlife Management Area",
+      908,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "robots",
+     "url": "https://www.dnr.state.mn.us/wmas/detail_report.html?id=WMA0143302",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
   "US-2466": {
    "checked": "2026-11-01",
    "handover": [],
@@ -16055,5 +17002,5 @@
    "verdict": "no outline"
   }
  },
- "read": "2026-11-01"
+ "read": "2026-11-08"
 }
