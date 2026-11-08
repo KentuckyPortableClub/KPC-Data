@@ -1,7 +1,8 @@
 {
  "area": "US-CT",
- "built": "2026-11-02",
+ "built": "2026-11-08",
  "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
  "parks": [
   {
    "ref": "US-0228",
@@ -152,10 +153,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1043.9,
-     "official_acres": 2023.0,
-     "times": 1.94,
+     "official_acres": 1015.0,
+     "times": 1.03,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -175,7 +176,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "3 hole(s) under 100 m2"
+     "note": "3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -189,7 +196,7 @@
     },
     "T9": {
      "last_edit": "2026-07-23",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -198,8 +205,8 @@
     "record 4360: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 1.9 times smaller than the official 2,023 acres (1,044 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "TINY HOLES: The shape has problems: 3 hole(s) under 100 m2."
   },
   {
    "ref": "US-0329",
@@ -418,7 +425,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -432,7 +445,7 @@
     },
     "T9": {
      "last_edit": "2026-07-23",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -684,7 +697,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -900,7 +913,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-72.9619484791242 41.8510333773369]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-72.9619484791242 41.8510333773369]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -914,7 +933,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -1091,7 +1110,9 @@
      "outline_acres": 1112.3,
      "official_acres": 1102.0,
      "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)",
+     "official_acres_low": 1055.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 1,055 ac, all providers added 1,102 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -1110,7 +1131,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "3 hole(s) under 100 m2"
+     "note": "3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1124,7 +1151,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -1312,7 +1339,7 @@
      "outline_acres": 3526.5,
      "official_acres": 2959.0,
      "times": 1.19,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)"
     },
     "T3": {
      "flag": "PASS",
@@ -1332,7 +1359,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "1 piece(s) under 10 m wide; 2 hole(s) under 100 m2"
+     "note": "1 piece(s) under 10 m wide; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1346,7 +1379,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -1437,7 +1470,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -1639,7 +1672,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1653,7 +1692,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -1865,7 +1904,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -2074,7 +2113,7 @@
      "outline_acres": 5032.9,
      "official_acres": 4491.0,
      "times": 1.12,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)"
     },
     "T3": {
      "flag": "PASS",
@@ -2094,7 +2133,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-73.0573570578826 41.6156517847101]; 3 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-73.0573570578826 41.6156517847101]; 3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -2121,7 +2166,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -2320,7 +2365,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -2498,7 +2543,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -2590,7 +2635,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -2858,7 +2903,7 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 10529.2,
-     "official_acres": 9590.0,
+     "official_acres": 9546.0,
      "times": 1.1,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -2880,7 +2925,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-72.2170487640898 41.9453555825372]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-72.2170487640898 41.9453555825372]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -2902,7 +2953,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -3005,7 +3056,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -3094,7 +3145,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -3400,7 +3451,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-72.5786066495984 41.6350222394714]; 6 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-72.5786066495984 41.6350222394714]; 6 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 6,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -3422,7 +3479,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -3532,7 +3589,7 @@
     },
     "T9": {
      "last_edit": "2026-07-23",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -3644,7 +3701,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -3862,7 +3919,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -3960,7 +4017,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3974,7 +4037,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4070,7 +4133,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4169,7 +4232,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4356,7 +4419,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4472,7 +4535,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -4486,7 +4555,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4657,7 +4726,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4848,7 +4917,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5014,7 +5083,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5205,7 +5274,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5292,7 +5361,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5402,7 +5471,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5570,7 +5639,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5727,7 +5796,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5749,22 +5818,11 @@
     -72.5859
    ],
    "outline_from": [
-    "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0"
    ],
-   "acres_drawn": 1032.7,
+   "acres_drawn": 965.4,
    "records": [
-    {
-     "id": "sgcta4113",
-     "name": "Chatfield Hollow State Park",
-     "type": "Connecticut DEEP (land, state GIS table)",
-     "acres": 399.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0",
-     "link": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0/query?objectIds=4113&outFields=*&returnGeometry=false&f=html",
-     "name_field": "PROPERTY"
-    },
     {
      "id": "padus#54376",
      "name": "Chatfield Hollow State Park (Old Forest Management Area)",
@@ -5795,7 +5853,6 @@
     }
    ],
    "record_ids": [
-    "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0#4113",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#54376",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#52323",
     "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0#12955"
@@ -5806,10 +5863,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 1032.7,
-     "official_acres": 399.0,
-     "times": 2.59,
+     "flag": "WAY OFF",
+     "outline_acres": 965.4,
+     "official_acres": 169.0,
+     "times": 5.71,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -5829,7 +5886,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5842,15 +5905,15 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "last_edit": "2026-07-23",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.6 times bigger than the official 399 acres (1,033 ac drawn) (+1 more flag)."
+   "score": 4,
+   "why": "WAY OFF: The outline is 5.7 times bigger than the official 169 acres (965 ac drawn) (+1 more flag)."
   },
   {
    "ref": "US-1657",
@@ -6010,7 +6073,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6195,7 +6258,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-72.4051072329178 41.3506540492983]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-72.4051072329178 41.3506540492983]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -6217,7 +6286,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6294,7 +6363,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6308,27 +6377,16 @@
    "name": "Day Pond State Park",
    "key_name": "Day Pond State Park",
    "type": "State Park",
-   "grade": "official",
+   "grade": "approximate",
    "pin": [
     41.5565,
     -72.4172
    ],
    "outline_from": [
-    "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0",
     "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0"
    ],
-   "acres_drawn": 965.0,
+   "acres_drawn": 958.0,
    "records": [
-    {
-     "id": "sgcta4115",
-     "name": "Day Pond State Park",
-     "type": "Connecticut DEEP (land, state GIS table)",
-     "acres": 183.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0",
-     "link": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0/query?objectIds=4115&outFields=*&returnGeometry=false&f=html",
-     "name_field": "PROPERTY"
-    },
     {
      "id": "sgctb793",
      "name": "Day Pond State Park and Salmon River State Forest",
@@ -6339,7 +6397,6 @@
     }
    ],
    "record_ids": [
-    "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0#4115",
     "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0#793"
    ],
    "tests": {
@@ -6349,10 +6406,10 @@
     },
     "T2": {
      "flag": "WAY OFF",
-     "outline_acres": 965.0,
-     "official_acres": 183.0,
-     "times": 5.27,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "outline_acres": 958.0,
+     "official_acres": 182.7,
+     "times": 5.24,
+     "official_from": "the club's acreage list"
     },
     "T3": {
      "flag": "PASS",
@@ -6386,15 +6443,15 @@
      "note": "same record id(s) as another park number: for KPC 13"
     },
     "T9": {
-     "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "last_edit": "2026-07-23",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 4,
-   "why": "WAY OFF: The outline is 5.3 times bigger than the official 183 acres (965 ac drawn) (+1 more flag)."
+   "why": "WAY OFF: The outline is 5.2 times bigger than the official 183 acres (958 ac drawn) (+1 more flag)."
   },
   {
    "ref": "US-1661",
@@ -6486,7 +6543,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6684,7 +6741,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6823,7 +6880,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6900,7 +6957,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6989,7 +7046,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7112,7 +7169,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7201,7 +7258,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7321,7 +7378,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "3 hole(s) under 100 m2"
+     "note": "3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -7343,7 +7406,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7522,7 +7585,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7536,7 +7605,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7623,7 +7692,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7734,7 +7803,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7891,7 +7960,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-72.4325513015534 41.4304483095636]; 4 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-72.4325513015534 41.4304483095636]; 4 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 4,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7905,7 +7980,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7994,7 +8069,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -8102,7 +8177,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -8268,7 +8343,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -8290,22 +8365,11 @@
     -72.5589
    ],
    "outline_from": [
-    "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0"
    ],
-   "acres_drawn": 1013.7,
+   "acres_drawn": 975.1,
    "records": [
-    {
-     "id": "sgcta4125",
-     "name": "Hammonasset Beach State Park",
-     "type": "Connecticut DEEP (land, state GIS table)",
-     "acres": 581.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0",
-     "link": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0/query?objectIds=4125&outFields=*&returnGeometry=false&f=html",
-     "name_field": "PROPERTY"
-    },
     {
      "id": "padus#51787",
      "name": "Hammonasset Beach State Park",
@@ -8401,10 +8465,17 @@
      "layer": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0",
      "link": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0/query?objectIds=12407&outFields=*&returnGeometry=false&f=html",
      "name_field": "OFFIC_NAME"
+    },
+    {
+     "id": "sgctb12408",
+     "name": "Hammonasset Beach State Park",
+     "type": "CT DEEP (deepgis account) (land, state GIS table)",
+     "layer": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0",
+     "link": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0/query?objectIds=12408&outFields=*&returnGeometry=false&f=html",
+     "name_field": "OFFIC_NAME"
     }
    ],
    "record_ids": [
-    "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0#4125",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#51787",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#51786",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#51785",
@@ -8429,10 +8500,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 1013.7,
-     "official_acres": 581.0,
-     "times": 1.74,
+     "flag": "WAY OFF",
+     "outline_acres": 975.1,
+     "official_acres": 12.0,
+     "times": 81.26,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -8447,12 +8518,8 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 5,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "1 hole(s) under 100 m2"
+     "flag": "PASS",
+     "pieces": 10
     },
     "T6": {
      "flag": "PASS"
@@ -8465,15 +8532,15 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "last_edit": "2026-07-23",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 1.7 times bigger than the official 581 acres (1,014 ac drawn) (+1 more flag)."
+   "score": 3,
+   "why": "WAY OFF: The outline is 81.3 times bigger than the official 12 acres (975 ac drawn)."
   },
   {
    "ref": "US-1677",
@@ -8589,7 +8656,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -8748,7 +8815,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -8924,7 +8991,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8938,7 +9011,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -9025,7 +9098,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -9221,7 +9294,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "3 hole(s) under 100 m2"
+     "note": "3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9235,7 +9314,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -9396,7 +9475,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -9599,7 +9678,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -9707,7 +9786,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -9898,7 +9977,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -10095,7 +10174,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -10117,7 +10202,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -10308,7 +10393,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -10503,7 +10588,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -10523,22 +10608,11 @@
     -73.3842
    ],
    "outline_from": [
-    "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0"
    ],
-   "acres_drawn": 413.0,
+   "acres_drawn": 404.6,
    "records": [
-    {
-     "id": "sgcta4138",
-     "name": "Lake Waramaug State Park",
-     "type": "Connecticut DEEP (land, state GIS table)",
-     "acres": 80.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0",
-     "link": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0/query?objectIds=4138&outFields=*&returnGeometry=false&f=html",
-     "name_field": "PROPERTY"
-    },
     {
      "id": "padus#52618",
      "name": "Lake Waramaug State Park",
@@ -10587,7 +10661,6 @@
     }
    ],
    "record_ids": [
-    "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0#4138",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#52618",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#52616",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#52617",
@@ -10601,9 +10674,9 @@
     },
     "T2": {
      "flag": "WAY OFF",
-     "outline_acres": 413.0,
-     "official_acres": 80.0,
-     "times": 5.16,
+     "outline_acres": 404.6,
+     "official_acres": 73.0,
+     "times": 5.54,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -10618,8 +10691,18 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 2
+     "flag": "TINY HOLES",
+     "pieces": 3,
+     "flags": [
+      "TINY HOLES"
+     ],
+     "note": "4 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.005,
+      "holes": 4,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -10632,15 +10715,15 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "last_edit": "2026-07-23",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "WAY OFF: The outline is 5.2 times bigger than the official 80 acres (413 ac drawn)."
+   "score": 4,
+   "why": "WAY OFF: The outline is 5.5 times bigger than the official 73 acres (405 ac drawn) (+1 more flag)."
   },
   {
    "ref": "US-1690",
@@ -10738,7 +10821,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -10892,7 +10975,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -10906,7 +10995,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11099,7 +11188,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11178,7 +11267,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -11200,7 +11295,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11359,7 +11454,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11550,7 +11645,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11570,21 +11665,10 @@
     -73.5831
    ],
    "outline_from": [
-    "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 330.3,
+   "acres_drawn": 271.5,
    "records": [
-    {
-     "id": "sgcta4199",
-     "name": "Mianus River State Park Scenic Reserve",
-     "type": "Connecticut DEEP (land, state GIS table)",
-     "acres": 329.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0",
-     "link": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0/query?objectIds=4199&outFields=*&returnGeometry=false&f=html",
-     "name_field": "PROPERTY"
-    },
     {
      "id": "padus#51804",
      "name": "Mianus River State Park Scenic Reserve",
@@ -11647,7 +11731,6 @@
     }
    ],
    "record_ids": [
-    "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0#4199",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#51804",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#51807",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#51805",
@@ -11658,12 +11741,12 @@
    "tests": {
     "T1": {
      "flag": "OUTSIDE",
-     "metres": 3490.6
+     "metres": 4062.2
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 330.3,
-     "official_acres": 329.0,
+     "outline_acres": 271.5,
+     "official_acres": 272.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -11679,8 +11762,18 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 3
+     "flag": "TINY HOLES",
+     "pieces": 3,
+     "flags": [
+      "TINY HOLES"
+     ],
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.004,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11693,15 +11786,14 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-08-19",
-     "read": "2026-10-26",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OUTSIDE: POTA's pin is 3.5 km outside the outline."
+   "score": 4,
+   "why": "OUTSIDE: POTA's pin is 4.1 km outside the outline (+1 more flag)."
   },
   {
    "ref": "US-1697",
@@ -11856,7 +11948,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11962,7 +12054,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12039,7 +12131,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12197,7 +12289,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "5 hole(s) under 100 m2"
+     "note": "5 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.004,
+      "holes": 5,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -12211,7 +12309,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12359,7 +12457,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12490,7 +12588,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12667,7 +12765,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12870,7 +12968,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12998,7 +13096,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -13166,7 +13264,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -13358,7 +13456,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -13526,7 +13624,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -13553,7 +13651,7 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0"
    ],
-   "acres_drawn": 386.3,
+   "acres_drawn": 406.0,
    "records": [
     {
      "id": "sgctc183",
@@ -13596,6 +13694,16 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=52687&outFields=*&returnGeometry=false&f=html"
     },
     {
+     "id": "padus#52861",
+     "name": "Quinnipiac River Water Access",
+     "type": "WAT State Recreation Area",
+     "category": "Fee",
+     "acres": 14.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=52861&outFields=*&returnGeometry=false&f=html"
+    },
+    {
      "id": "padus#52686",
      "name": "Quinnipiac River State Park",
      "type": "SP State Park",
@@ -13604,6 +13712,16 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=52686&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#52860",
+     "name": "Quinnipiac River Water Access",
+     "type": "WAT State Recreation Area",
+     "category": "Fee",
+     "acres": 5.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=52860&outFields=*&returnGeometry=false&f=html"
     },
     {
      "id": "padus#60964",
@@ -13643,7 +13761,9 @@
     "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0#4150",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#51811",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#52687",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#52861",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#52686",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#52860",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#60964",
     "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0#14212",
     "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0#14220",
@@ -13656,16 +13776,16 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 386.3,
+     "outline_acres": 406.0,
      "official_acres": 346.0,
-     "times": 1.12,
+     "times": 1.17,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Quinnipiac River State Park",
-     "record_name": "Quinnipiac River State Park"
+     "record_name": "Quinnipiac River Water Access"
     },
     "T4": {
      "park_kind": "state park",
@@ -13674,11 +13794,17 @@
     },
     "T5": {
      "flag": "TINY HOLES",
-     "pieces": 4,
+     "pieces": 7,
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13692,7 +13818,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-10-26",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -13769,7 +13895,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -13846,7 +13972,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -14005,7 +14131,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -14231,7 +14357,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -14245,7 +14377,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -14357,7 +14489,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -14446,7 +14578,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -14513,7 +14645,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-73.0674638119745 41.2010517874957]"
+     "note": "Ring Self-intersection[-73.0674638119745 41.2010517874957]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -14527,7 +14665,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -14680,7 +14818,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -14694,7 +14838,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -14808,7 +14952,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -14913,7 +15057,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -15061,7 +15205,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -15252,7 +15396,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -15372,7 +15516,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -15457,7 +15601,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -15637,7 +15781,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -15651,7 +15801,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -15761,7 +15911,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -15938,7 +16088,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -16098,7 +16248,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -16112,7 +16268,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -16201,7 +16357,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -16385,7 +16541,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-72.6522035032889 41.8088350259429]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-72.6522035032889 41.8088350259429]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -16399,7 +16561,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -16610,7 +16772,7 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 8033.9,
-     "official_acres": 7500.0,
+     "official_acres": 7485.0,
      "times": 1.07,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -16632,7 +16794,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-72.4048281893272 41.9578384341253]; 2 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-72.4048281893272 41.9578384341253]; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -16654,7 +16822,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -16729,11 +16897,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-4561",
@@ -16799,11 +16967,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-4582",
@@ -16869,11 +17037,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-6857",
@@ -16967,7 +17135,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -17056,7 +17224,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -17240,7 +17408,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-72.8942478812553 41.9551269946796]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-72.8942478812553 41.9551269946796]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -17254,7 +17428,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -17327,22 +17501,11 @@
     -72.8375
    ],
    "outline_from": [
-    "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0"
    ],
-   "acres_drawn": 379.6,
+   "acres_drawn": 141.6,
    "records": [
-    {
-     "id": "sgcta4081",
-     "name": "Massacoe State Forest",
-     "type": "Connecticut DEEP (land, state GIS table)",
-     "acres": 372.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0",
-     "link": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0/query?objectIds=4081&outFields=*&returnGeometry=false&f=html",
-     "name_field": "PROPERTY"
-    },
     {
      "id": "padus#52999",
      "name": "Massacoe State Forest",
@@ -17354,24 +17517,6 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=52999&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "padus#53000",
-     "name": "Massacoe State Forest",
-     "type": "SF State Resource Management Area",
-     "category": "Fee",
-     "acres": 75.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=53000&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgctb2101",
-     "name": "Massacoe State Forest",
-     "type": "CT DEEP (deepgis account) (land, state GIS table)",
-     "layer": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0",
-     "link": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0/query?objectIds=2101&outFields=*&returnGeometry=false&f=html",
-     "name_field": "OFFIC_NAME"
-    },
-    {
      "id": "sgctb2155",
      "name": "Massacoe State Forest",
      "type": "CT DEEP (deepgis account) (land, state GIS table)",
@@ -17381,10 +17526,7 @@
     }
    ],
    "record_ids": [
-    "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0#4081",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#52999",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#53000",
-    "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0#2101",
     "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0#2155"
    ],
    "tests": {
@@ -17394,9 +17536,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 379.6,
-     "official_acres": 372.0,
-     "times": 1.02,
+     "outline_acres": 141.6,
+     "official_acres": 142.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -17412,7 +17554,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 2
+     "pieces": 1
     },
     "T6": {
      "flag": "PASS"
@@ -17425,8 +17567,8 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "last_edit": "2026-07-23",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -17517,7 +17659,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -17695,7 +17837,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.003,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -17709,7 +17857,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -17732,7 +17880,6 @@
    ],
    "outline_from": [
     "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/Connecticut_Open_for_Hunting_New_Schema/FeatureServer/0",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0"
    ],
    "acres_drawn": 284.7,
@@ -17748,16 +17895,6 @@
      "name_field": "HuntAName"
     },
     {
-     "id": "padus#52831",
-     "name": "Mono Pond",
-     "type": "WAT State Recreation Area",
-     "category": "Fee",
-     "acres": 282.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=52831&outFields=*&returnGeometry=false&f=html"
-    },
-    {
      "id": "sgctb5570",
      "name": "Mono Pond",
      "type": "CT DEEP (deepgis account) (land, state GIS table)",
@@ -17768,7 +17905,6 @@
    ],
    "record_ids": [
     "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/Connecticut_Open_for_Hunting_New_Schema/FeatureServer/0#6",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#52831",
     "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0#5570"
    ],
    "tests": {
@@ -17810,7 +17946,7 @@
     },
     "T9": {
      "last_edit": "2026-08-03",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -18006,7 +18142,7 @@
      "outline_acres": 1643.9,
      "official_acres": 1560.0,
      "times": 1.05,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)"
     },
     "T3": {
      "flag": "PASS",
@@ -18025,7 +18161,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "4 hole(s) under 100 m2"
+     "note": "4 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 4,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -18039,7 +18181,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -18243,7 +18385,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "6 hole(s) under 100 m2"
+     "note": "6 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 6,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -18265,7 +18413,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -18463,7 +18611,7 @@
      "outline_acres": 1021.1,
      "official_acres": 925.0,
      "times": 1.1,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)"
     },
     "T3": {
      "flag": "PASS",
@@ -18482,7 +18630,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-72.3025903131991 41.8891470710128]"
+     "note": "Ring Self-intersection[-72.3025903131991 41.8891470710128]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -18496,7 +18650,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -18615,7 +18769,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -18716,7 +18870,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -18806,7 +18960,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -18934,7 +19088,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -19045,7 +19199,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -19141,7 +19295,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -19338,7 +19492,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-72.9877327617931 42.0190576825449]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-72.9877327617931 42.0190576825449]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -19352,7 +19512,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -19612,7 +19772,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "1 piece(s) under 10 m wide; 1 hole(s) under 100 m2"
+     "note": "1 piece(s) under 10 m wide; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -19632,7 +19798,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -19815,8 +19981,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 498.5,
-     "official_acres": 353.0,
-     "times": 1.41,
+     "official_acres": 352.0,
+     "times": 1.42,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -19841,7 +20007,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "8 piece(s) under 10 m wide; 17 hole(s) under 100 m2"
+     "note": "8 piece(s) under 10 m wide; 17 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.004,
+      "holes": 17,
+      "pieces": 8
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -19855,7 +20027,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -20063,7 +20235,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-73.3755763598803 41.264797864449]; 6 piece(s) under 10 m wide; 2 hole(s) under 100 m2; 228 pieces spread over 122 km"
+     "note": "Ring Self-intersection[-73.3755763598803 41.264797864449]; 6 piece(s) under 10 m wide; 2 hole(s) under 100 m2; 228 pieces spread over 122 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.003,
+      "holes": 2,
+      "pieces": 6
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -20077,7 +20255,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -20483,7 +20661,7 @@
      "outline_acres": 18003.2,
      "official_acres": 16636.0,
      "times": 1.08,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)"
     },
     "T3": {
      "flag": "PASS",
@@ -20504,7 +20682,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-72.5483122262943 41.4334907445167]; 1 piece(s) under 10 m wide; 2 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-72.5483122262943 41.4334907445167]; 1 piece(s) under 10 m wide; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -20512,7 +20696,7 @@
       {
        "ref": "US-1656",
        "name": "Chatfield Hollow State Park",
-       "share": 0.57
+       "share": 0.61
       },
       {
        "ref": "US-1726",
@@ -20531,7 +20715,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -20541,7 +20725,7 @@
    ],
    "status": "graded",
    "score": 6,
-   "why": "SPILL: The outline covers 57% of US-1656 Chatfield Hollow State Park, with no 2-fer row (maybe the wrong record) (+3 more flags)."
+   "why": "SPILL: The outline covers 61% of US-1656 Chatfield Hollow State Park, with no 2-fer row (maybe the wrong record) (+3 more flags)."
   },
   {
    "ref": "US-7532",
@@ -20728,7 +20912,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.005,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -20742,7 +20932,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -20930,7 +21120,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -21154,7 +21344,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -21333,7 +21523,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "1 piece(s) under 10 m wide; 2 hole(s) under 100 m2"
+     "note": "1 piece(s) under 10 m wide; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.32,
+      "holes": 2,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -21347,7 +21543,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -21436,7 +21632,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -21745,8 +21941,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 21623.2,
-     "official_acres": 20725.0,
-     "times": 1.04,
+     "official_acres": 20180.0,
+     "times": 1.07,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -21769,7 +21965,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-72.1833180958325 41.8792814028772]; 18 piece(s) under 10 m wide; 3 hole(s) under 100 m2; 84 pieces spread over 67 km"
+     "note": "Ring Self-intersection[-72.1833180958325 41.8792814028772]; 18 piece(s) under 10 m wide; 3 hole(s) under 100 m2; 84 pieces spread over 67 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.004,
+      "holes": 3,
+      "pieces": 18
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -21783,7 +21985,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -21995,7 +22197,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -22009,7 +22217,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -22102,7 +22310,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -22297,7 +22505,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -22608,7 +22816,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-72.4251238852196 41.5735685776754]; 1 piece(s) under 10 m wide; 2 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-72.4251238852196 41.5735685776754]; 1 piece(s) under 10 m wide; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -22616,7 +22830,7 @@
       {
        "ref": "US-1660",
        "name": "Day Pond State Park",
-       "share": 0.99
+       "share": 1.0
       },
       {
        "ref": "US-7528",
@@ -22641,7 +22855,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -22651,7 +22865,7 @@
    ],
    "status": "graded",
    "score": 7,
-   "why": "SPILL: The outline covers 99% of US-1660 Day Pond State Park, with no 2-fer row (maybe the wrong record) (+4 more flags)."
+   "why": "SPILL: The outline covers 100% of US-1660 Day Pond State Park, with no 2-fer row (maybe the wrong record) (+4 more flags)."
   },
   {
    "ref": "US-7542",
@@ -22964,7 +23178,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -23191,7 +23405,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "1 piece(s) under 10 m wide; 2 hole(s) under 100 m2"
+     "note": "1 piece(s) under 10 m wide; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -23205,7 +23425,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -23285,7 +23505,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -23750,7 +23970,7 @@
      "outline_acres": 29205.9,
      "official_acres": 27501.0,
      "times": 1.06,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)"
     },
     "T3": {
      "flag": "PASS",
@@ -23770,7 +23990,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-71.7953338049488 41.5412502248994]; 9 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-71.7953338049488 41.5412502248994]; 9 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 9,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -23792,7 +24018,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -23980,7 +24206,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -24177,7 +24403,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -24266,7 +24492,7 @@
     },
     "T9": {
      "last_edit": "2026-08-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },

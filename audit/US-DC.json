@@ -1,7 +1,8 @@
 {
  "area": "US-DC",
- "built": "2026-11-02",
+ "built": "2026-11-08",
  "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
  "parks": [
   {
    "ref": "US-0015",
@@ -192,7 +193,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-76.9973262626343 38.8420157268575]; 305 piece(s) under 10 m wide; 2 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-76.9973262626343 38.8420157268575]; 305 piece(s) under 10 m wide; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.354,
+      "holes": 2,
+      "pieces": 305
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -343,7 +350,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -463,14 +476,16 @@
      "flag": "NOTE",
      "metres": 3850.2,
      "was": "OUTSIDE",
-     "note": "the park spans several states / provinces (US-DC, US-MD, US-VA): POTA's one pin may be in another part (the key says MD)"
+     "note": "the park spans several states / provinces (US-DC, US-MD, US-VA): POTA's one pin may be in another part (the key says VA)"
     },
     "T2": {
      "flag": "PASS",
      "outline_acres": 131.3,
      "official_acres": 135.0,
-     "times": 1.03,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 131.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 131 ac, all providers added 135 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -489,7 +504,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "60 piece(s) under 10 m wide"
+     "note": "60 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.764,
+      "holes": 0,
+      "pieces": 60
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1501,7 +1522,14 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": false,
+      "area_change_pct": 18.202,
+      "holes": 0,
+      "pieces": 1,
+      "why": "the repair would change the land by 18.2 %"
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1652,7 +1680,11 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": false,
+      "why": "nothing left after the repair"
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1732,7 +1764,14 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "2 piece(s) under 10 m wide"
+     "note": "2 piece(s) under 10 m wide",
+     "repair": {
+      "ok": false,
+      "area_change_pct": 4.117,
+      "holes": 0,
+      "pieces": 2,
+      "why": "the repair would change the land by 4.1 %"
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1793,7 +1832,7 @@
      "outline_acres": 380.3,
      "official_acres": 380.0,
      "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)"
     },
     "T3": {
      "flag": "MISMATCH",
@@ -1814,7 +1853,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-76.969578657269 38.9116879156705]; 37 piece(s) under 10 m wide; 18 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-76.969578657269 38.9116879156705]; 37 piece(s) under 10 m wide; 18 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.535,
+      "holes": 18,
+      "pieces": 37
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2006,11 +2051,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-4567",
@@ -2076,11 +2121,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 305 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 305 m outside the outline."
   },
   {
    "ref": "US-4581",
@@ -2146,11 +2191,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-4582",
@@ -2216,11 +2261,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-7499",
@@ -2427,7 +2472,7 @@
    "name": "Mount Vernon National Historic Trail",
    "key_name": "Mount Vernon National Historic Trail",
    "type": "National Historic Trail",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     38.793,
     -77.0496
@@ -2473,11 +2518,8 @@
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "detail_m": 0.09,
-     "declared_m": null,
-     "coordinate_step_m": 0.09,
-     "median_spacing_m": 0.0,
-     "flag": "PASS"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -2485,20 +2527,22 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: : down for this run (failed 3 times)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-9901",
    "name": "Civil War Defenses of Washington National Historic Trail",
    "key_name": "Civil War Defenses of Washington National Historic Trail",
    "type": "National Historic Trail",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     38.9346,
     -77.126
@@ -2544,11 +2588,8 @@
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "detail_m": 0.09,
-     "declared_m": null,
-     "coordinate_step_m": 0.09,
-     "median_spacing_m": 0.0,
-     "flag": "PASS"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -2556,13 +2597,15 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: : down for this run (failed 3 times)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 82 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 82 m outside the outline."
   }
  ]
 }
