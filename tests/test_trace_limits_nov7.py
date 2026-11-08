@@ -95,5 +95,16 @@ check(TL.stitch_extra(100.0, [(1, 400.0, 900.0)], 300.0)[0] == [], 'a piece that
 check(TL.stitch_extra(100.0, [], None) == ([], ''), 'one shape only: nothing to say')
 check(TL.stitch_extra(100.0, C, 'x')[0] == [], 'a bad known size is treated as no size')
 
+# Brandon's Nov 7 calls: Trailhead beats BLM; within 5% of a ceiling = a person looks
+check(TL.ceiling_acres('Notch Peak Trailhead BLM Recreation Management Area') == 5000, 'Trailhead must beat BLM (US-6048)')
+check(TL.ceiling_acres('Grand Staircase-Escalante National Monument') == 20000000, 'a National Monument is not a point feature')
+for c in lim['near_ceiling']:
+    st, why = TL.size_verdict(c['traced'], None, c['type'])
+    check(st == c['expect'] and (not c.get('within') or 'within 5%' in why), f'near-ceiling {c}: got {st} {why!r}')
+check(TL.parcel_new_holds(57500, None, 'Recreation Park') != [] and TL.parcel_new_holds(50000, None, 'Recreation Park') == [],
+      'the parcel tracer applies the same 5% band (60,000 ceiling)')
+check(TL.size_verdict(93853, None, 'Notch Peak Trailhead BLM Recreation Management Area')[0] == 'hold',
+      'US-6048 at 93,853 ac is now over its 5,000 ac trailhead ceiling: held by size, not only by the edge rule')
+
 print('FAIL' if bad else 'ALL PASS', f'({len(bad)} problems)' if bad else '')
 sys.exit(1 if bad else 0)

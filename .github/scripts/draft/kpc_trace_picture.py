@@ -410,23 +410,39 @@ def fetch_basemap(http: PoliteHttp, ref: str, lat: float, lon: float, half_km: f
     if use_cache and cache.exists():
         d = json.loads(cache.read_text())
         if (abs(d.get("half_km", 0) - half_km) < 1e-6 and d.get("pin") == [lat, lon]
-                and d.get("version") == __version__):
+                and d.get("version") == __version__ and not d.get("skipped")):   # a partial basemap is never reused from an older run
             log("   basemap from cache")
             return d
     bbox = bbox_around(lat, lon, half_km)
     prefix = ref.split("-")[0].upper()
-    lines, points, sources = [], [], []
+    lines, points, sources, skipped = [], [], [], []
+
+    def ask(name: str, layer_url: str):
+        """Brandon, Nov 7: a basemap source whose robots.txt says STOP drops out of THIS run - no retry, no other route to it - and the
+        trace goes on with the allowed sources that remain. Every result then says '<name> source skipped (robots)'. PoliteHttp keeps the
+        STOP per host for the run, so the host is not asked again. Any other failure still stops the map as before."""
+        try:
+            return arcgis_query(http, layer_url, bbox)
+        except RuntimeError as e:
+            if not str(e).startswith("robots:"):
+                raise
+            if name not in skipped:
+                skipped.append(name)
+                log(f"   {name} source skipped (robots): {e}")
+            return []
     if prefix == "US":
         roads = []
         for lid, nm in ((2, "primary"), (6, "secondary"), (8, "local")):
-            fs = arcgis_query(http, f"{TIGER}/{lid}", bbox)
+            fs = ask("road", f"{TIGER}/{lid}")
             log(f"   TIGER {nm} roads: {len(fs)}")
             roads += fs
-        sources.append("US Census TIGERweb Transportation (roads)")
-        rivers = arcgis_query(http, f"{NHD}/6", bbox)
+        if "road" not in skipped:
+            sources.append("US Census TIGERweb Transportation (roads)")
+        rivers = ask("water", f"{NHD}/6")
         log(f"   NHD flowlines: {len(rivers)}")
-        sources.append("USGS NHD flowlines (large scale)")
-        plss = arcgis_query(http, f"{PLSS}/2", bbox)
+        if "water" not in skipped:
+            sources.append("USGS NHD flowlines (large scale)")
+        plss = ask("land survey", f"{PLSS}/2")
         log(f"   BLM PLSS sections: {len(plss)}")
         if plss:
             sources.append("BLM CadNSDI PLSS sections")
@@ -452,10 +468,11 @@ def fetch_basemap(http: PoliteHttp, ref: str, lat: float, lon: float, half_km: f
         roads = []
         for i in provs:
             for grp, base in NRN_ROAD_GROUP_BASES.items():
-                fs = arcgis_query(http, f"{NRN}/{base + i}", bbox)
+                fs = ask("road", f"{NRN}/{base + i}")
                 log(f"   NRN {NRN_PROVINCES[i]} {grp}: {len(fs)}")
                 roads += fs
-        sources.append("Canada National Road Network (NRN), Statistics Canada / NRCan")
+        if "road" not in skipped:
+            sources.append("Canada National Road Network (NRN), Statistics Canada / NRCan")
         for f in roads:
             g = f.get("geometry")
             if g:
@@ -465,7 +482,7 @@ def fetch_basemap(http: PoliteHttp, ref: str, lat: float, lon: float, half_km: f
             points.append(["road", p[0], p[1]])
     else:
         sources.append(f"none: no government basemap adapter for prefix {prefix}")
-    d = dict(ref=ref, version=__version__, pin=[lat, lon], half_km=half_km, bbox=bbox, sources=sources,
+    d = dict(ref=ref, version=__version__, pin=[lat, lon], half_km=half_km, bbox=bbox, sources=sources, skipped=skipped,
              lines=lines, points=points,
              fetched=_dt.datetime.now(_dt.timezone.utc).isoformat(timespec="seconds"))
     atomic_write(cache, json.dumps(d))
@@ -1363,8 +1380,11 @@ def process_one(ref, row, base: Path, out: Path, pins, http, args):
         if acres:
             half_km = max(half_km, 1.5 * math.sqrt(acres * 4046.86) / 1000.0)
         bm = fetch_basemap(http, ref, lat, lon, half_km, base / "cache", use_cache=not args.refresh)
+        for _sk in bm.get("skipped") or []:
+            flags.append(f"{_sk} source skipped (robots): partial basemap, matched on the allowed sources only")
         if not bm["points"]:
-            res.update(status="NO FIT", why="no basemap control points: " + "; ".join(bm["sources"]),
+            res.update(status="NO FIT", why="no basemap control points: " + "; ".join(bm["sources"] or ["every basemap source was skipped (robots)"])
+                       + (("; " + "; ".join(flags)) if flags else ""),
                        flags="; ".join(flags))
             if stale.exists():
                 stale.unlink()

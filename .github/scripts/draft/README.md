@@ -154,3 +154,14 @@ fit, so those maps still use the old choice and the Nov 7 size/pin/clip gates ca
 Split maps: after the existing 50 m adjacency growth, a wider gap is bridged only when an official size says the pieces belong (0.5x-1.25x,
 nearest first, `kpc_trace_limits.stitch_extra`). Otherwise the further shapes are **listed** in the why for a person, never silently joined or
 silently dropped.
+
+## Brandon's calls, Nov 7 evening (in the code)
+1. **A robots-blocked basemap source drops out of the run.** `fetch_basemap` asks each source once; a robots STOP (today: USGS NHD water,
+   `hydro.nationalmap.gov`) is recorded as skipped, never retried, never reached by another route, and the trace goes on with the allowed
+   sources (roads, land survey). Every result then carries `<name> source skipped (robots): partial basemap, matched on the allowed sources
+   only`. A partial basemap is never reused from the cache in a later run. All the normal hold gates still apply to whatever comes out. If
+   every source is blocked the map is an honest NO FIT, not an ERROR.
+2. **Statewide sheets (over 50,000 km2) stay held** until the US-5460 flip is understood.
+3. **Size ceilings:** a point-feature word in the name beats the agency ("Trailhead" beats "BLM"; US-6048 now has a 5,000 ac ceiling, not
+   1,000,000). A trace **within 5% of its ceiling** (`NEAR_CEILING`) goes to a person as NEEDS A PERSON, not straight through (US-11145 at
+   150,958 vs 150,000). Same band in the parcel tracer.

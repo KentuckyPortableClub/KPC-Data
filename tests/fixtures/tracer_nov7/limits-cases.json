@@ -59,6 +59,18 @@
   [
    null,
    60000
+  ],
+  [
+   "Notch Peak Trailhead BLM Recreation Management Area",
+   5000
+  ],
+  [
+   "National Monument",
+   20000000
+  ],
+  [
+   "Boat Ramp State Park",
+   5000
   ]
  ],
  "geopdf_checks": [
@@ -137,6 +149,26 @@
    "pin_off_km": 0,
    "expect": false,
    "first": "geopdf page"
+  }
+ ],
+ "near_ceiling": [
+  {
+   "traced": 150958,
+   "type": "State Forest",
+   "expect": "hold",
+   "note": "US-11145 measured here: just over 150,000"
+  },
+  {
+   "traced": 145000,
+   "type": "State Forest",
+   "expect": "hold",
+   "within": true,
+   "note": "under the ceiling but within 5%: a person looks (Brandon Nov 7)"
+  },
+  {
+   "traced": 140000,
+   "type": "State Forest",
+   "expect": "ok"
   }
  ]
 }

@@ -121,6 +121,11 @@ def acres_in_range(traced, known, lo=None, hi=None):
 # type word: the ceilings below are a starting point for Brandon to tune (one line each), and a real park that trips one is a NEEDS A PERSON
 # row for a person, which is the intended outcome. Federal giants (a national forest can be 16 M ac) only guard against country-sized errors.
 TYPE_CEILING_ACRES = [
+    # Brandon, Nov 7: a specific POINT-FEATURE word in the name beats the agency ("Trailhead" beats "BLM"): a trailhead with a million-acre
+    # limit makes no sense. Only point-like words sit up here; "historic", "monument" and the like stay below the national tier because a
+    # National Monument or National Historical Park can be large.
+    (re.compile(r'trailhead|trail head|recreation site|boat (ramp|launch|access)|fishing access|day use|picnic|campground|overlook|'
+                r'wayside|rest area|visitor cent', re.I), 5_000),
     (re.compile(r'\bnational (park|preserve|forest|grassland|monument|wildlife refuge|recreation area|seashore|lakeshore)|wilderness', re.I), 20_000_000),
     (re.compile(r'\bblm\b|bureau of land', re.I), 1_000_000),
     (re.compile(r'state forest|wildlife management|wildlife area|game land|conservation area|crown land|state game', re.I), 150_000),
@@ -130,6 +135,7 @@ TYPE_CEILING_ACRES = [
                 r'day use|picnic|city park|municipal|urban', re.I), 5_000),
 ]
 DEFAULT_CEILING_ACRES = 60_000
+NEAR_CEILING = 0.95              # Brandon, Nov 7: a trace within 5% of its ceiling goes to a person too, not straight through
 PAGE_SHARE_MAX = 0.60            # a GeoPDF trace covering more of the mapped page than this is a sheet outline, not a park
 GEOPDF_RESID_MAX_M = 100.0       # /GPTS residual above this: placement not trusted
 GEOPDF_RESID_MAX_PAGE = 0.02     # ... or above this share of the page's long side
@@ -245,6 +251,9 @@ def size_verdict(traced_acres, known_acres, park_type, page_share=None):
     if t > c:
         return 'hold', (f'traced area {t:,.0f} ac is over the {c:,.0f} ac ceiling for a {park_type or "park (type unknown)"}'
                         ' and no official size is known')
+    if t >= NEAR_CEILING * c:
+        return 'hold', (f'traced area {t:,.0f} ac is within {1 - NEAR_CEILING:.0%} of the {c:,.0f} ac ceiling for a '
+                        f'{park_type or "park (type unknown)"} and no official size is known: a person should look')
     if page_share is not None and page_share > PAGE_SHARE_MAX:
         return 'hold', f'the trace covers {page_share:.0%} of the mapped page: a sheet outline, not a park, and no official size is known'
     return 'ok', ''
@@ -343,6 +352,9 @@ def parcel_new_holds(acres, known_acres, park_type, seed_acres=None, grow_cap=1.
     c = ceiling_acres(park_type)
     if t > c:
         out.append(f'no known size and {t:,.0f} ac is over the {c:,.0f} ac ceiling for a {park_type or "park (type unknown)"}')
+    elif t >= NEAR_CEILING * c:
+        out.append(f'no known size and {t:,.0f} ac is within {1 - NEAR_CEILING:.0%} of the {c:,.0f} ac ceiling for a '
+                   f'{park_type or "park (type unknown)"}: a person should look')
     return out
 
 
