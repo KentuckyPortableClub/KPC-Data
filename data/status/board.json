@@ -14,7 +14,7 @@
    "last_run": "2026-11-08",
    "made": "1068 audit rows not clean in 43 areas; waiting for audit 16, waiting for key 50 (a key build is saving: nothing started)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42501549469",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42511399337",
    "waiting_on": "chat 11 / 12 (audit answers), chat 2 (fixes)"
   },
   "Cell coverage (FCC)": {
@@ -43,10 +43,10 @@
   },
   "GPS packs": {
    "areas": "",
-   "last_run": "2026-11-02",
-   "made": "51 state packs built 2026-11-02 (4 MB, branch gps-packs)",
+   "last_run": "2026-11-08",
+   "made": "51 state packs built 2026-11-08 (4 MB, branch gps-packs)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41452476889",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42503027607",
    "waiting_on": "chat 3 links them on the site after Brandon GO"
   },
   "Hard look reader": {
@@ -1020,9 +1020,9 @@
   "Key bots: errors and silence": {
    "areas": "",
    "last_run": "2026-11-08",
-   "made": "3 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots); map audit (Save); waiting room (kpc_engine.py)",
+   "made": "4 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots); copy from KPC-Links (Key reconcile); map audit (Save); waiting room (kpc_engine.py)",
    "result": "red",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42501549469",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42511399337",
    "waiting_on": "HQ: open the watchdog run summary for the run links"
   },
   "Layer collector": {
@@ -1076,9 +1076,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-08",
-   "made": "nothing skipped",
-   "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42501549469",
+   "made": "2026-11-08 18:43 UTC: 1 skipped run(s) started again: kpc-copy-from-links.yml (missed Nov 08 18:11 UTC)",
+   "result": "amber",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42511399337",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1190,7 +1190,7 @@
    "last_run": "2026-11-08",
    "made": "site is under 60 min behind main: the copy bot will catch up",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42501549469",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42511399337",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "answer-sheet-check": {
@@ -1202,19 +1202,19 @@
    "waiting_on": "proposals: answer YES / NO / NOT SURE in an inbox batch"
   },
   "campground info bot": {
-   "areas": "left: 32",
+   "areas": "left: 59",
    "last_run": "2026-11-08",
-   "made": "US-NY: done; {\"camps\": 584, \"needs_browser\": 0, \"needs_key\": 5, \"no_page\": 1, \"not_official\": 0, \"ok\": 95, \"other\": 428, \"resting\": 0, \"robots\": 55, \"with_booking\": 572, \"with_elevation\": 0, \"with_facts\": 516, \"wi",
+   "made": "US-WV: done; {\"camps\": 101, \"needs_browser\": 26, \"needs_key\": 47, \"no_page\": 0, \"not_official\": 0, \"ok\": 1, \"other\": 27, \"resting\": 0, \"robots\": 0, \"with_booking\": 54, \"with_elevation\": 0, \"with_facts\": 2, \"with_s",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42489595539",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42503777868",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "closures super-bot": {
-   "areas": "1 done, 0 left",
+   "areas": "0 done, 0 left",
    "last_run": "2026-11-08",
-   "made": "1 areas read, 1 saved; see data/closures/review.md",
+   "made": "0 areas read, 0 saved; see data/closures/review.md",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42496458308",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42510155181",
    "waiting_on": "chat 11 grades the Kentucky side-by-side; Brandon GO before any merge (CL-5)"
   },
   "hours fees permits bot": {
@@ -1228,9 +1228,9 @@
   "key-doctor": {
    "areas": "",
    "last_run": "2026-11-08",
-   "made": "NOs: 434 of 723 NOs landed; 289 missing (re-applied to overrides.fixed.json); 1059 came back in the key release: 12726 parks pass, 381 held, 50 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-08.md ",
+   "made": "NOs: 434 of 723 NOs landed; 289 missing (re-applied to overrides.fixed.json); 1087 came back in the key release: 12726 parks pass, 381 held, 50 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-08.md ",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42495603489",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42502846636",
    "waiting_on": "chat 10 (came-back NOs / stuck areas); per-park release in release-approved"
   },
   "layer intake": {
@@ -1266,9 +1266,9 @@
    "waiting_on": "chat 8 grades the sample; chat 2 reads the name-mismatch list; nothing goes in a key by itself"
   },
   "park truth checker": {
-   "areas": "left: 63",
+   "areas": "left: 58",
    "last_run": "2026-11-08",
-   "made": "US-KY: done; {\"agree\": 111, \"handover_hints\": 5, \"no_page\": 0, \"no_size\": 68, \"off\": 5, \"ours_unknown\": 1, \"parks\": 193, \"retired\": 0, \"unsure\": 8, \"weak\": 29, \"with_outline\": 193}",
+   "made": "US-GA: done; {\"agree\": 104, \"handover_hints\": 11, \"no_page\": 0, \"no_size\": 22, \"off\": 64, \"ours_unknown\": 4, \"parks\": 237, \"retired\": 0, \"unsure\": 30, \"weak\": 7, \"with_outline\": 225}",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42497531372",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
@@ -1283,7 +1283,7 @@
   },
   "waiting room": {
    "last_run": "2026-11-08",
-   "made": "heartbeat 0 h old, 466 files waiting",
+   "made": "heartbeat 0 h old, 469 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
