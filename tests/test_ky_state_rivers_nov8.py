@@ -19,3 +19,13 @@ def test_blm_pass_ledger_only():
     for r in ('US-13214', 'US-13206', 'US-11815'):
         assert 'KEPT existing line' in ROW[r]['trail']['blm_trailheads_nov8'] and (ROOT / f'data/trails/{r}.json').exists()
     assert sum(1 for v in ROW.values() if (v.get('trail') or {}).get('blm_trailheads_nov8')) == 22
+
+
+def test_ca_trails_pass():
+    assert (ROOT / 'data/trails/CA-5506.json').exists() and 'wired' in ROW['CA-5506']['trail']['ca_trails_nov8']
+    assert 'ledger only' in ROW['CA-6141']['trail']['ca_trails_nov8'] and not (ROOT / 'data/trails/CA-6141.json').exists()
+    assert '8.40 km' in ROW['CA-6211']['trail']['ca_trails_nov8'] and not (ROOT / 'data/trails/CA-6211.json').exists()
+    assert sum(1 for v in ROW.values() if (v.get('trail') or {}).get('ca_trails_nov8')) == 52
+    assert sum(1 for v in ROW.values() if (v.get('trail') or {}).get('qc_trq_nov8')) >= 200
+    raw = (ROOT / 'data/waiting/outline-sources/trail-lines-wired-nov7.csv').read_bytes()
+    assert raw.count(b'\r\n') == raw.count(b'\n')
