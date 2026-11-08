@@ -1,10 +1,10 @@
 {
  "about": "world-key: the HELD build (data/waiting/in/data/world-key/) vs the LIVE key (data/world-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'world-key', 'build': the held build id from data/waiting/in/data/world-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-08 07:56 UTC",
+ "made": "2026-11-08 08:59 UTC",
  "totals": {
-  "gained": 790,
-  "lost": 88,
-  "pieces_changed": 4414,
+  "gained": 751,
+  "lost": 109,
+  "pieces_changed": 4419,
   "grade_changed": 12017
  },
  "per_area": {
@@ -28,7 +28,7 @@
   },
   "BE": {
    "gained": 0,
-   "lost": 0,
+   "lost": 10,
    "pieces_changed": 0,
    "grade_changed": 164
   },
@@ -64,13 +64,13 @@
   },
   "CZ": {
    "gained": 0,
-   "lost": 0,
+   "lost": 31,
    "pieces_changed": 1,
    "grade_changed": 193
   },
   "DE": {
    "gained": 0,
-   "lost": 1,
+   "lost": 3,
    "pieces_changed": 682,
    "grade_changed": 0
   },
@@ -104,12 +104,6 @@
    "pieces_changed": 3,
    "grade_changed": 1592
   },
-  "FO": {
-   "gained": 1,
-   "lost": 0,
-   "pieces_changed": 0,
-   "grade_changed": 0
-  },
   "FR": {
    "gained": 16,
    "lost": 35,
@@ -123,9 +117,9 @@
    "grade_changed": 0
   },
   "GR": {
-   "gained": 104,
+   "gained": 79,
    "lost": 0,
-   "pieces_changed": 0,
+   "pieces_changed": 5,
    "grade_changed": 0
   },
   "HR": {
@@ -136,7 +130,7 @@
   },
   "HU": {
    "gained": 0,
-   "lost": 4,
+   "lost": 0,
    "pieces_changed": 0,
    "grade_changed": 23
   },
@@ -219,7 +213,7 @@
    "grade_changed": 0
   },
   "MX": {
-   "gained": 14,
+   "gained": 0,
    "lost": 7,
    "pieces_changed": 1,
    "grade_changed": 0
@@ -238,7 +232,7 @@
   },
   "NO": {
    "gained": 0,
-   "lost": 28,
+   "lost": 0,
    "pieces_changed": 2989,
    "grade_changed": 55
   },
@@ -261,14 +255,14 @@
    "grade_changed": 2662
   },
   "PR": {
-   "gained": 6,
+   "gained": 7,
    "lost": 0,
    "pieces_changed": 0,
    "grade_changed": 0
   },
   "PT": {
    "gained": 0,
-   "lost": 0,
+   "lost": 10,
    "pieces_changed": 29,
    "grade_changed": 194
   },
@@ -1232,7 +1226,7 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "111",
+     "134",
      "Vía Panorámica Costa Azul",
      "Areas Protegidas",
      "same name (POTA writes the kind into the name)"
@@ -1242,25 +1236,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/DO-0110"
-  },
-  {
-   "area": "FO",
-   "ref": "FO-0004",
-   "name": "Skuvoy island Ramsar Site",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "5",
-     "Skúgvoy",
-     "Faroe Islands: Umhvørvisstovan (Faroese Environment Agency), gis.us.fo",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/FO-0004"
   },
   {
    "area": "FR",
@@ -11959,8 +11934,8 @@
     [
      "425",
      "DELTA AXIOU - LOUDIA - ALIAKMONA – EVRYTERI PERIOCHI - AXIOUPOLI",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -11978,8 +11953,8 @@
     [
      "165",
      "OROS PAIKO",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -11997,8 +11972,8 @@
     [
      "265",
      "OROS BELES",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -12016,14 +11991,33 @@
     [
      "190",
      "KORYFES OROUS FALAKRO",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GR-0010"
+  },
+  {
+   "area": "GR",
+   "ref": "GR-0017",
+   "name": "Thasos(Oros Ypsario kai paraktia zoni) Natura 2000",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "226",
+     "THASOS (OROS YPSARIO KAI PARAKTIA ZONI) KAI NISIDES KOINYRA, XIRONISI",
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GR-0017"
   },
   {
    "area": "GR",
@@ -12035,8 +12029,8 @@
     [
      "215",
      "OROS STRATONIKON - KORYFI SKAMNI",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -12054,8 +12048,8 @@
     [
      "437",
      "LIMNI KAI FRAGMA AGRA",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -12073,8 +12067,8 @@
     [
      "401",
      "OROS VORAS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -12092,8 +12086,8 @@
     [
      "280",
      "YDROCHARES DASOS MOURION",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -12111,8 +12105,8 @@
     [
      "232",
      "ALYKI KITROUS - EVRYTERI PERIOCHI",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -12130,8 +12124,8 @@
     [
      "287",
      "LIMNI PIKROLIMNI - XILOKERATEA",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -12149,33 +12143,14 @@
     [
      "397",
      "EKVOLES POTAMOU STRYMONA",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GR-0040"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0046",
-   "name": "Flamouria Gramatikou Dimou Edessas National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "179",
-     "Flamouria - Grammatikou Dimou Edessas",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0046"
   },
   {
    "area": "GR",
@@ -12187,33 +12162,14 @@
     [
      "274",
      "LIMNI PETRON",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GR-0051"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0053",
-   "name": "Lampanitsa (Ardassas-Vlastis) National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "644",
-     "Lampanitsa (Ardassas-Vlastis)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0053"
   },
   {
    "area": "GR",
@@ -12225,8 +12181,8 @@
     [
      "217",
      "LIMNES ChEIMADITIDA KAI ZAZARI",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -12244,8 +12200,8 @@
     [
      "21",
      "LIMNI IOANNINON",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -12255,22 +12211,22 @@
   },
   {
    "area": "GR",
-   "ref": "GR-0069",
-   "name": "Paramithia Petousi- Agia Kyriaki Wildlife Refuge",
+   "ref": "GR-0068",
+   "name": "Ekvoles Delta Kalama Marine Protected Area",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "563",
-     "Paramythia-Petousi-Agia Kyriaki",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
+     "82",
+     "EKVOLES (DELTA) KALAMA",
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "pin inside + shared name words"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0069"
+   "pota": "https://pota.app/#/park/GR-0068"
   },
   {
    "area": "GR",
@@ -12282,8 +12238,8 @@
     [
      "345",
      "ELOS KALODIKI",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -12301,52 +12257,14 @@
     [
      "299",
      "AMVRAKIKOS KOLPOS, LIMNOTHALASSA KATAFOURKO KAI KORAKONISIA",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GR-0072"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0074",
-   "name": "Metsovo-Chrisovitsa-Grevenitio Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "589",
-     "Metsovo-Chrysovitsa-Grevenitio",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0074"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0083",
-   "name": "Kalithea-Lofos-Kokkinogis-Livadi-Dolichi Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "616",
-     "Kallithea-Lofos-Kokkinogis-Livadi-Dolichi",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0083"
   },
   {
    "area": "GR",
@@ -12358,8 +12276,8 @@
     [
      "339",
      "OROS PILIO",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -12369,117 +12287,22 @@
   },
   {
    "area": "GR",
-   "ref": "GR-0094",
-   "name": "Platania(Komninis-Renginiou-Kamenon Vourlon) National Wildlife Refuge",
+   "ref": "GR-0093",
+   "name": "ETHNIKOS DRYMOS OITIS - KOILADA ASOPOU Natura 2000",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "501",
-     "Platania (Komninis-Renginiou-Kamenon Vourlon)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
+     "191",
+     "ETHNIKOS DRYMOS OITIS - KOILADA ASOPOU",
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0094"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0101",
-   "name": "Agioi Pantes(Delfon-Desfinas-Chrysou) National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "461",
-     "Agioi Pantes (Delfon-Desfinas-Chrysou)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0101"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0102",
-   "name": "Xirovouni(Kalitheas-Dafnochoriou-Elaias-Makrynis) National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "437",
-     "Xirovouni (Kallitheas-Dafnochoriou-Elaias-Makrynis)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0102"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0104",
-   "name": "Oreinos Ogkos(Achladeris-Oktonias-Avlonariou) National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "472",
-     "Oreinos Ogkos (Achladeris-Oktonias-Avlonariou)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0104"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0106",
-   "name": "Peroiochi Dafnonta Dimon Messapion National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "125",
-     "Periochi Dafnonta Dimon Messapion",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0106"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0111",
-   "name": "Makria Rachi,Dryodasos Pentagion National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "485",
-     "Makrya Rachi, Dryodasos Pentagion",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0111"
+   "pota": "https://pota.app/#/park/GR-0093"
   },
   {
    "area": "GR",
@@ -12491,8 +12314,8 @@
     [
      "163",
      "YMITTOS - AISTHITIKO DASOS KAISARIANIS - LIMNI VOULIAGMENIS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -12510,33 +12333,14 @@
     [
      "415",
      "LIMNOTHALASSA ANTINIOTI (KERKYRA)",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GR-0121"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0123",
-   "name": "Alyki Lefkimmis(Kerkyra) Natura 2000",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "298",
-     "ALYKI LEFKIMIS (KERKYRA)",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0123"
   },
   {
    "area": "GR",
@@ -12548,8 +12352,8 @@
     [
      "49",
      "PERIOCHI CHORTATON (LEFKADA)",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -12559,60 +12363,22 @@
   },
   {
    "area": "GR",
-   "ref": "GR-0125",
-   "name": "Limnothlasses Stenon Lefkadas kai Alykes Lefkadas Natura 2000",
+   "ref": "GR-0130",
+   "name": "KOLPOS LAGANA ZAKYNTHOU (AKR. GERAKI - KERI) KAI NISIDES MARATHONISI KAI PELOUZO Natura 2000",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "402",
-     "LIMNOTHALASSES STENON LEFKADAS (PALIONIS - AVLIMON) KAI ALYKES LEFKADAS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "5",
+     "KOLPOS LAGANA ZAKYNTHOU (AKR. GERAKI - KERI) KAI NISIDES MARATHONISI KAI PELOUZO",
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0125"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0138",
-   "name": "Kompovouni (Mitopolis-Chionas) National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "432",
-     "Kompovouni (Mitopolis-Chionas)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0138"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0144",
-   "name": "Daosodis Periochi Agiou Theodoron(Tripoleos-Perithoriou) National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "406",
-     "Dasodis periochi Agiou Theodoron (Tripoleos-Perithoriou)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0144"
+   "pota": "https://pota.app/#/park/GR-0130"
   },
   {
    "area": "GR",
@@ -12624,14 +12390,33 @@
     [
      "73",
      "THINES KAI PARALIAKO DASOS ZACHAROS,  LIMNI KAIAFA, STROFYLIA, KAKOVATOS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GR-0146"
+  },
+  {
+   "area": "GR",
+   "ref": "GR-0148",
+   "name": "Ekvoles Delta Pineiou Natura 2000",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "17",
+     "EKVOLES (DELTA) PINEIOU",
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GR-0148"
   },
   {
    "area": "GR",
@@ -12643,8 +12428,8 @@
     [
      "168",
      "OROS TAYGETOS - LAGKADA TRYPIS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -12654,41 +12439,22 @@
   },
   {
    "area": "GR",
-   "ref": "GR-0150",
-   "name": "Ano Gliata (Mandras) National Wildlife Refuge",
+   "ref": "GR-0153",
+   "name": "Ekvoles Evrota Marine Protected Area",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "398",
-     "Ano Gliata (Mandras)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
+     "350",
+     "EKVOLES EVROTA, PERIOCHI VRONTAMA KAI THALASSIA PERIOCHI LAKONIKOU KOLPOU",
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "pin inside + shared name words"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0150"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0151",
-   "name": "Kalligas(Trikorfou-Drainas) National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "393",
-     "Kalligas (Trikorfou-Drainas)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0151"
+   "pota": "https://pota.app/#/park/GR-0153"
   },
   {
    "area": "GR",
@@ -12700,14 +12466,33 @@
     [
      "403",
      "NOTIA MANI",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GR-0154"
+  },
+  {
+   "area": "GR",
+   "ref": "GR-0157",
+   "name": "Chersonisos Rodopou-Paralia Maleme Natura 2000",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "318",
+     "CHERSONISOS RODOPOU – PARALIA MALEME -KOLPOS CHANION",
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GR-0157"
   },
   {
    "area": "GR",
@@ -12719,8 +12504,8 @@
     [
      "130",
      "ELOS - TOPOLIA - SASALOS - AGIOS DIKAIOS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -12730,73 +12515,16 @@
   },
   {
    "area": "GR",
-   "ref": "GR-0162",
-   "name": "Stylou-Katochoriou Dimou Armenion Kai Kerameion National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "143",
-     "Stylou - Katochoriou Dimou Armenon kai Kerameion",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0162"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0166",
-   "name": "Thylakas(Agiou Nikolaou Kritsa) National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "344",
-     "Thylakas (Agiou Nikolaou Kritsa)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0166"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0167",
-   "name": "Oxya (Agiou Nikolaou Elountas) National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "347",
-     "Oxya (Agiou Nikolaou Elountas)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0167"
-  },
-  {
-   "area": "GR",
    "ref": "GR-0174",
    "name": "Nisos Chrysi Protected Area",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "340",
-     "Nisi Chrysi i Gaidouronisi",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
+     "302",
+     "NISOS CHRYSI",
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -12814,8 +12542,8 @@
     [
      "244",
      "NISOI GAVDOS KAI GAVDOPOULA",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -12825,136 +12553,22 @@
   },
   {
    "area": "GR",
-   "ref": "GR-0183",
-   "name": "Chortis ( Lardou Rodou) National Wildlife Refuge",
+   "ref": "GR-0177",
+   "name": "Nisos  Kasos Kai Symplegma Kasonision Marine Protected Area",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "357",
-     "Chortis (Lardou Rodou)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
+     "445",
+     "NISOS KASOS KAI SYMPLEGMA KASONISION KAI THALASSIA PERIOCHI",
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0183"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0190",
-   "name": "Fanari (Filotiou Naxou) National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "386",
-     "Fanari (Filotiou Naxou)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0190"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0194",
-   "name": "Notia (Paroikias Parou) National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "377",
-     "Notia (Paroikias Parou)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0194"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0196",
-   "name": "Ano meria (Syrou) National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "401",
-     "Ano Meria (Syrou)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0196"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0197",
-   "name": "Marathi (Mykonou) National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "403",
-     "Marathi (Mykonou)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0197"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0199",
-   "name": "Dilos (Mykonou) National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "402",
-     "Dilos (Mykonou)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0199"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0202",
-   "name": "Panormos(Pyrgou Tinou) National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "322",
-     "Panormos (Pyrgou Tinou)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0202"
+   "pota": "https://pota.app/#/park/GR-0177"
   },
   {
    "area": "GR",
@@ -12966,8 +12580,8 @@
     [
      "211",
      "NISOS IKARIA (NOTIODYTIKO TMIMA)",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -12985,8 +12599,8 @@
     [
      "315",
      "IKARIA - FOURNOI KAI PARAKTIA ZONI",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13002,111 +12616,16 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "61",
-     "Oros Karvouni stin Samo",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
+     "124",
+     "SAMOS: OROS AMPELOS (KARVOUNIS)",
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GR-0206"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0209",
-   "name": "Zygomata (Volissou-Potamias) National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "470",
-     "Zygomata (Volissou-Potamias)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0209"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0211",
-   "name": "Diaselo Dimou Alonisou National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "261",
-     "Diaselo Dimou Alonnisou",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0211"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0214",
-   "name": "Plati (Asomaton-Sykountos-Mychou) National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "537",
-     "Plati (Asomaton-Sykountos-Mychou)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0214"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0215",
-   "name": "Divolo-Akothi (Loutron) National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "532",
-     "Divolo-Akothi (Loutron)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0215"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0219",
-   "name": "Kakavos (Thanous) National Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "585",
-     "Kakavos (Thanous)",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0219"
   },
   {
    "area": "GR",
@@ -13118,8 +12637,8 @@
     [
      "255",
      "OROS ITAMOS - SITHONIA",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13137,8 +12656,14 @@
     [
      "39",
      "OROS ERYMANTHOS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
+    ],
+    [
+     "413",
+     "OROS ERYMANTHOS",
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13156,8 +12681,8 @@
     [
      "97",
      "OROPEDIO FOLOIS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13175,8 +12700,8 @@
     [
      "309",
      "STENA RENTINAS – EVRYTERI PERIOCHI SPILAIO DRAKOTRYPA- SPILAIO LAKKIA KAI REMA NEROMANA",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13194,8 +12719,8 @@
     [
      "410",
      "OROS VARASOVA",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13213,8 +12738,8 @@
     [
      "438",
      "PERIOCHI ELOUS ARTZAN",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13232,8 +12757,8 @@
     [
      "404",
      "PERIOCHI ANTHOFYTOU",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13249,54 +12774,16 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "292",
-     "Delta Evrou Dimon Tra¿anoupolis Ferron",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
+     "218",
+     "DELTA EVROU",
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GR-0232"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0233",
-   "name": "Limnes Trichonida kai Lysimachia Natura 2000",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "343",
-     "LIMNES TRICHONIDA KAI LYSIMACHEIA",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0233"
-  },
-  {
-   "area": "GR",
-   "ref": "GR-0239",
-   "name": "Profitis Nimfopetra Wildlife Refuge",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "671",
-     "Profitis-Nymfopetra",
-     "Greece: NECCA (Natural Environment & Climate Change Agency), Greece",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GR-0239"
   },
   {
    "area": "GR",
@@ -13308,8 +12795,8 @@
     [
      "334",
      "LIMNI OZEROS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13327,8 +12814,8 @@
     [
      "91",
      "AKROKORINTHOS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13346,8 +12833,8 @@
     [
      "435",
      "KOILADA ACHELOOU KAI ORI VALTOU",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13365,8 +12852,8 @@
     [
      "392",
      "YGROTOPOI NEAS FOKAIAS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13384,8 +12871,8 @@
     [
      "69",
      "KORYFES OROUS KYLLINI (ZIRIA) KAI CHARADRA FLAMPOURITSA",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13403,8 +12890,8 @@
     [
      "229",
      "PARALIA APO CHRYSOSKALITISSA MECHRI AKROTIRIO KRIOS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13422,8 +12909,8 @@
     [
      "103",
      "LIMNI AGIAS – PLATANIAS – REMA KAI EKVOLI KERITI – KOILADA FASA",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13441,8 +12928,8 @@
     [
      "208",
      "ORI ZAKROU",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13460,8 +12947,8 @@
     [
      "27",
      "ORMOS POTAMIAS - AKR. PYRGOS EOS N. GRAMVOUSSA",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13479,8 +12966,8 @@
     [
      "242",
      "NOTIO AKRO RODOU, PRASONISI, YGROTOPOS LIVADI KATTAVIAS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13498,8 +12985,8 @@
     [
      "312",
      "RODOS: AKRAMYTIS, ARMENISTIS, ATTAVYROS, REMATA KAI THALASSIA ZONI (KARAVOLA-ORMOS GLYFADA)",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13517,8 +13004,8 @@
     [
      "14",
      "OLYMPIA",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13536,8 +13023,8 @@
     [
      "282",
      "LIMNOTHALASSA KOTYCHI - ALYKI LECHAINON",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13555,8 +13042,8 @@
     [
      "51",
      "THINES KYPARISSIAS (NEOCHORI - KYPARISSIA)",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13574,8 +13061,8 @@
     [
      "352",
      "LIMNOTHALASSA PYLOU (DIVARI) KAI NISOS SFAKTIRIA, AGIOS DIMITRIOS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13593,8 +13080,8 @@
     [
      "364",
      "FARANGI NEDONA (PETALON - CHANI)",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13612,8 +13099,8 @@
     [
      "123",
      "PERIOCHI NEAPOLIS KAI NISOS ELAFONISOS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13631,8 +13118,8 @@
     [
      "385",
      "ORI ANATOLIKIS LAKONIAS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13650,8 +13137,8 @@
     [
      "174",
      "NISOI SAPIENTZA KAI SCHIZA, AKROTIRIO AKRITAS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13669,8 +13156,8 @@
     [
      "390",
      "ANTICHASIA ORI KAI METEORA",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13688,8 +13175,8 @@
     [
      "230",
      "VOREIA LESVOS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13707,8 +13194,8 @@
     [
      "35",
      "OROS MAINALO",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13726,8 +13213,8 @@
     [
      "184",
      "CHERSONISOS ATHOS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13745,8 +13232,8 @@
     [
      "347",
      "THALASSIA ZONI ANATOLIKA KAI NOTIA CHERSONISOU ATHONA",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13764,8 +13251,8 @@
     [
      "115",
      "THALASSIA ZONI CHERSONISOU ATHONA",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13783,8 +13270,8 @@
     [
      "234",
      "OROS PARNONAS (KAI PERIOCHI MALEVIS)",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13802,8 +13289,8 @@
     [
      "388",
      "DIRFYS: DASOS STENIS - DELFI",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13821,8 +13308,8 @@
     [
      "46",
      "RODOS: PROFITIS ILIAS - EPTA PIGES – PETALOUDES - REMATA",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13840,14 +13327,33 @@
     [
      "121",
      "KASTELLORIZO KAI NISIDES RO KAI STRONGYLI KAI PARAKTIA THALASSIA ZONI",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GR-0291"
+  },
+  {
+   "area": "GR",
+   "ref": "GR-0292",
+   "name": "NOTIA NISYROS KAI STRONGYLI KAI PARAKTIA THALASSIA ZONI Natura 2000",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "196",
+     "NOTIA NISYROS KAI  STRONGYLI, IFAISTIAKO PEDIO KAI PARAKTIA THALASSIA ZONI",
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GR-0292"
   },
   {
    "area": "GR",
@@ -13859,8 +13365,8 @@
     [
      "314",
      "PARAKTIA THALASSIA ZONI APO PARGA EOS AKROTIRIO AGIOS THOMAS (PREVEZA), AKR. KELADIO - AG. THOMAS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13878,8 +13384,8 @@
     [
      "386",
      "KYTHIRA KAI GYRO NISIDES: PRASONISI, DRAGONERA, ANTIDRAGONERA, AVGO, KAPELLO, KOUFO KAI FIDONISI",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13897,8 +13403,8 @@
     [
      "329",
      "ANTIKYTHIRA - PRASONISI KAI LAGOUVARDOS",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -13916,8 +13422,8 @@
     [
      "60",
      "LIMNES VOULKARIA KAI SALTINI",
-     "GR: Προστατευόμενες τοποθεσίες NATURA 2000 (approved layer 0)",
-     "name (chat 11 YES)"
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -14456,272 +13962,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/MV-0003"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0042",
-   "name": "Cascada de Basaseachi National Park",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "20",
-     "Cascada de Bassaseachic",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0042"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0043",
-   "name": "Insurgente Miguel Hiidalgo y Costilla National Park",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "49",
-     "Insurgente Miguel Hidalgo y Costilla",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0043"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0054",
-   "name": "Molino de Flores Nezahualcoyotl National Park",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "73",
-     "Molino de Flores Netzahualcóyotl",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0054"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0094",
-   "name": "Dunas de Samalyuca National Park",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "162",
-     "Médanos de Samalayuca",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0094"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0125",
-   "name": "Chichinautzin Flora and Fauna Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "31",
-     "Corredor Biológico Chichinautzin",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0125"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0126",
-   "name": "Chichinautzin Flora and Fauna Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "31",
-     "Corredor Biológico Chichinautzin",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0126"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0127",
-   "name": "Mariposa Monarca Flora and Fauna Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "111",
-     "Mariposa Monarca",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0127"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0138",
-   "name": "El Vizcaíno Flora and Fauna Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "44",
-     "El Vizcaíno",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0138"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0153",
-   "name": "Campo Verde Flora and Fauna Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "19",
-     "Campo Verde",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0153"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0154",
-   "name": "Cañón de Santa Elena Flora and Fauna Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "15",
-     "Cañón de Santa Elena",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0154"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0162",
-   "name": "Ojo de Liebre Biosphere Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "146",
-     "Complejo Lagunar Ojo de Liebre",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0162"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0178",
-   "name": "Laguna de Términos Flora and Fauna Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "128",
-     "Laguna de Términos",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0178"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0183",
-   "name": "Maderas del Carmen Flora and Fauna Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "67",
-     "Maderas del Carmen",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0183"
-  },
-  {
-   "area": "MX",
-   "ref": "MX-0197",
-   "name": "Pantanos de Centla Flora and Fauna Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "134",
-     "Pantanos de Centla",
-     "Mexico: CONANP / SEMARNAT (federal protected areas)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/MX-0197"
   },
   {
    "area": "NC",
@@ -15358,63 +14598,6 @@
   },
   {
    "area": "PR",
-   "ref": "PR-0017",
-   "name": "Bosque Estatal de Cambalache State Forest",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "2",
-     "Bosque Estatal de Cambalache",
-     "Puerto Rico: Puerto Rico Planning Board (Junta de Planificación, SIGE) – PACAT prot",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/PR-0017"
-  },
-  {
-   "area": "PR",
-   "ref": "PR-0019",
-   "name": "Bosque Estatal de Ceiba State Forest",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "92",
-     "Bosque Estatal de Ceiba",
-     "Puerto Rico: Puerto Rico Planning Board (Junta de Planificación, SIGE) – PACAT prot",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/PR-0019"
-  },
-  {
-   "area": "PR",
-   "ref": "PR-0020",
-   "name": "Bosque Estatal de Cerrillos State Forest",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "3",
-     "Bosque Estatal de Cerrillos",
-     "Puerto Rico: Puerto Rico Planning Board (Junta de Planificación, SIGE) – PACAT prot",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/PR-0020"
-  },
-  {
-   "area": "PR",
    "ref": "PR-0053",
    "name": "Reserva Natural Canal Luis Pena Nature Reserve",
    "old_grade": "pin",
@@ -15423,8 +14606,8 @@
     [
      "24",
      "Reserva Natural Canal Luis Peña",
-     "PR: Áreas Naturales Protegidas Marinas (approved layer 4)",
-     "name (chat 11 YES)"
+     "Áreas Naturales Protegidas Marinas",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -15442,8 +14625,8 @@
     [
      "23",
      "Reserva Natural Arrecifes de la Cordillera",
-     "PR: Áreas Naturales Protegidas Marinas (approved layer 4)",
-     "name (chat 11 YES)"
+     "Áreas Naturales Protegidas Marinas",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -15461,7 +14644,7 @@
     [
      "74",
      "Refugio de Vida Silvestre Iris Alameda de Boquerón / BE de Boque",
-     "Puerto Rico: Puerto Rico Planning Board (Junta de Planificación, SIGE) – PACAT prot",
+     "Áreas Naturales ProtegidasTerrrestres",
      "pin inside + shared name words"
     ]
    ],
@@ -15469,6 +14652,82 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/PR-0057"
+  },
+  {
+   "area": "PR",
+   "ref": "PR-0070",
+   "name": "Estuarina Laguna del Condado Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "25",
+     "Reserva Natural Laguna del Condado",
+     "Áreas Naturales Protegidas Marinas",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/PR-0070"
+  },
+  {
+   "area": "PR",
+   "ref": "PR-0079",
+   "name": "Caja de Muertos Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "27",
+     "Ext. Marina Reserva Natural Isla Caja de Muertos",
+     "Áreas Naturales Protegidas Marinas",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/PR-0079"
+  },
+  {
+   "area": "PR",
+   "ref": "PR-0082",
+   "name": "Tres Palmas Marine Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "12",
+     "Reserva Natural (Marina) Tres Palmas",
+     "Áreas Naturales Protegidas Marinas",
+     "same name (POTA writes the kind into the name)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/PR-0082"
+  },
+  {
+   "area": "PR",
+   "ref": "PR-0084",
+   "name": "Arrecife de Isla Verde Marine Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "21",
+     "Reserva Natural Arrecife de la Isla Verde",
+     "Áreas Naturales Protegidas Marinas",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/PR-0084"
   },
   {
    "area": "PY",
@@ -15734,6 +14993,785 @@
    "pota": "https://pota.app/#/park/AU-8945"
   },
   {
+   "area": "BE",
+   "ref": "BE-0387",
+   "name": "Valée de la Burdinale Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "381",
+     "Vallée de la Burdinale",
+     "EEA Natura 2000",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/BE-0387"
+  },
+  {
+   "area": "BE",
+   "ref": "BE-0396",
+   "name": "Ru de Chawion Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "275",
+     "Chawion (Ru de)",
+     "BE: Réserves naturelles domaniales (approved layer 2)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/BE-0396"
+  },
+  {
+   "area": "BE",
+   "ref": "BE-0412",
+   "name": "Vallée de l'Eisch et Clarefontaine Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "594",
+     "Vallées de l'Eisch et de Clairefontaine",
+     "EEA Natura 2000",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/BE-0412"
+  },
+  {
+   "area": "BE",
+   "ref": "BE-0414",
+   "name": "Marais de Sampont Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "132257",
+     "Sampont",
+     "EEA nationally designated areas",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/BE-0414"
+  },
+  {
+   "area": "BE",
+   "ref": "BE-0424",
+   "name": "Virée de Grosse National Forest",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "231",
+     "Virée de Grosse",
+     "BE: Réserves naturelles domaniales (approved layer 2)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/BE-0424"
+  },
+  {
+   "area": "BE",
+   "ref": "BE-0428",
+   "name": "Fange de Mirenne National Forest",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "178",
+     "Fange de Mirenne",
+     "BE: Réserves naturelles agréées (approved layer 3)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/BE-0428"
+  },
+  {
+   "area": "BE",
+   "ref": "BE-0441",
+   "name": "Marais du Ton Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "123476",
+     "Marais du Ton",
+     "EEA nationally designated areas",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/BE-0441"
+  },
+  {
+   "area": "BE",
+   "ref": "BE-0442",
+   "name": "Ruisseau du Cron National Forest",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "124473",
+     "Cron (Ruisseau du ) (Vallée de Laclaireau)",
+     "EEA nationally designated areas",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/BE-0442"
+  },
+  {
+   "area": "BE",
+   "ref": "BE-0448",
+   "name": "Carriere de 'Aloutte Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "122108",
+     "Alouette (Carrière de l') à Hotton",
+     "EEA nationally designated areas",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/BE-0448"
+  },
+  {
+   "area": "BE",
+   "ref": "BE-0449",
+   "name": "Vague des Gomhets Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "132201",
+     "Vague des Gomhets",
+     "EEA nationally designated areas",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/BE-0449"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0040",
+   "name": "Berounka Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "79",
+     "Berounka",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0040"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0041",
+   "name": "Rohatiny Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "72",
+     "Rohatiny",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0041"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0042",
+   "name": "Manětínská Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "73",
+     "Manětínská",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0042"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0043",
+   "name": "Javořická vrchovina Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "47",
+     "Javořická vrchovina",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0043"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0047",
+   "name": "Čeřínek Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "116",
+     "Čeřínek",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0047"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0048",
+   "name": "Česká Kanada Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "51",
+     "Česká Kanada",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0048"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0055",
+   "name": "Homolka – Vojířov Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "56",
+     "Homolka - Vojířov",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0055"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0056",
+   "name": "Zelenov Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "68",
+     "Zelenov",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0056"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0057",
+   "name": "Chrašická stráň Nature Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "1295",
+     "Chrašická stráň",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0057"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0063",
+   "name": "Radeč Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "58",
+     "Radeč",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0063"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0069",
+   "name": "Čertova zeď National Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "108",
+     "Čertova zeď",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0069"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0075",
+   "name": "Trhoň Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "59",
+     "Trhoň",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0075"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0076",
+   "name": "Džbány-Žebrák Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "14",
+     "Džbány-Žebrák",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0076"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0081",
+   "name": "Babiččino údolí National Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "102",
+     "Babiččino údolí",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0081"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0084",
+   "name": "Polické stěny National Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "114",
+     "Polické stěny",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0084"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0087",
+   "name": "Pískovcové sloupky Nature Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "1373",
+     "Pískovcové sloupky",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0087"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0090",
+   "name": "Bonetice Nature Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "1448",
+     "Bonětice",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0090"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0094",
+   "name": "Kopeckeho pramen Nature Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "532",
+     "Kopeckého pramen",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0094"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0095",
+   "name": "Malesicka skala Nature Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "403",
+     "Malesická skála",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0095"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0100",
+   "name": "Ejpovicke utesy Nature Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "999",
+     "Ejpovické útesy",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0100"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0115",
+   "name": "Hostivar-Zabehlice Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "37",
+     "Hostivař - Záběhlice",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0115"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0128",
+   "name": "Plánický hřeben Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "69",
+     "Plánický hřeben",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0128"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0129",
+   "name": "Kakov - Plánický hřeben Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "63",
+     "Kakov - Plánický hřeben",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0129"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0130",
+   "name": "Svratecká hornatina Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "118",
+     "Svratecká hornatina",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0130"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0131",
+   "name": "Lysicko Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "123",
+     "Lysicko",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0131"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0132",
+   "name": "Halasovo Kunštátsko Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "122",
+     "Halasovo Kunštátsko",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0132"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0138",
+   "name": "Pod Stedrym Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "62",
+     "Pod Štědrým",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0138"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0139",
+   "name": "Ještěd Nature Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "140",
+     "Ještěd",
+     "CZ: Přírodní park (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0139"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0141",
+   "name": "Dalejský profil National Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "61",
+     "Dalejský profil",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0141"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0143",
+   "name": "Americká zahrada National Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "101",
+     "Americká zahrada",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0143"
+  },
+  {
+   "area": "CZ",
+   "ref": "CZ-0230",
+   "name": "Černý Nadýmač National Monument",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "1609",
+     "Černý Nadýmač",
+     "CZ: Maloplošné zvláště chráněné území (MZCHÚ) (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CZ-0230"
+  },
+  {
    "area": "DE",
    "ref": "DE-0095",
    "name": "Mecklenburgisches Elbetal UNESCO Biosphere Reserve",
@@ -15751,6 +15789,44 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/DE-0095"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-1019",
+   "name": "Argen National Nature Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "907859",
+     "Argen",
+     "DE: Naturschutzgebiet (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-1019"
+  },
+  {
+   "area": "DE",
+   "ref": "DE-1132",
+   "name": "Hildesheimer Wallanlagen Historic Site",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "121872",
+     "Wallanlagen",
+     "EEA nationally designated areas",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/DE-1132"
   },
   {
    "area": "DO",
@@ -16573,82 +16649,6 @@
    "pota": "https://pota.app/#/park/GB-6536"
   },
   {
-   "area": "HU",
-   "ref": "HU-0043",
-   "name": "Csongrád-bokrosi Salt Lake National Preserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "15504",
-     "Csongrád-bokrosi Sóstó",
-     "EEA Natura 2000",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/HU-0043"
-  },
-  {
-   "area": "HU",
-   "ref": "HU-0049",
-   "name": "Péteritói Madárrezervátum National Park",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "871",
-     "Péteri-tavi madárrezervátum TT",
-     "HU: Országos védett természeti területek (approved layer 17)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/HU-0049"
-  },
-  {
-   "area": "HU",
-   "ref": "HU-0076",
-   "name": "Kelet-Mecsek National Conservation Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "274",
-     "Kelet-Mecsek TK",
-     "HU: Országos védett természeti területek (approved layer 17)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/HU-0076"
-  },
-  {
-   "area": "HU",
-   "ref": "HU-0090",
-   "name": "Soproni State Forest Park",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "74",
-     "Soproni TK",
-     "HU: Országos védett természeti területek (approved layer 17)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/HU-0090"
-  },
-  {
    "area": "JP",
    "ref": "JP-1709",
    "name": "Taradake Prefectural Nature Park",
@@ -16881,538 +16881,6 @@
    "pota": "https://pota.app/#/park/MX-0196"
   },
   {
-   "area": "NO",
-   "ref": "NO-0363",
-   "name": "Ertsvikskjær Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "30069",
-     "Ersvikskjær",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-0363"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-0563",
-   "name": "Gjørahaugen Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "29384",
-     "Gjørashaugen",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-0563"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-1382",
-   "name": "Myrnesset Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "28978",
-     "Myrneset",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-1382"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-1751",
-   "name": "Sagbekkskåra Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "29928",
-     "Sagbekkskora",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-1751"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-1906",
-   "name": "Skorbekken Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "28622",
-     "Skårbekken",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-1906"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-2592",
-   "name": "Tangendammen Wildlife Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "27312",
-     "Tangendammen",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-2592"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-2605",
-   "name": "Andelven, Nessa og Risa National Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "28689",
-     "Andelven, Nessa og Risa",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-2605"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-2639",
-   "name": "Baneåsen Flora Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "26779",
-     "Baneåsen",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-2639"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-2640",
-   "name": "Krogshavn Flora Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "27292",
-     "Krogshavn",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-2640"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-2651",
-   "name": "Stave Flora Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "27097",
-     "Stave",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-2651"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-2658",
-   "name": "Huk Nature Monument",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "29431",
-     "Huk",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-2658"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-2671",
-   "name": "Skjerpemyr Nature Monument",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "27373",
-     "Skjerpemyr",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-2671"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-2697",
-   "name": "Vikaleiret National Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "26974",
-     "Vikaleiret",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-2697"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-2705",
-   "name": "Innstrandfjæra National Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "27326",
-     "Innstrandfjæra",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-2705"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-2707",
-   "name": "Lundleiret National Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "27482",
-     "Lundleiret",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-2707"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-2720",
-   "name": "Vollsfjorden midtre National Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "27063",
-     "Vollsfjorden midtre",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-2720"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-2750",
-   "name": "Rørvikvågen National Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "28377",
-     "Rørvikvågen",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-2750"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-2785",
-   "name": "Loga National Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "27987",
-     "Loga",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-2785"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-2788",
-   "name": "Einarsneset Flora Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "28065",
-     "Einarsneset",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-2788"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-2790",
-   "name": "Lundevågen National Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "28397",
-     "Lundevågen",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-2790"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-2816",
-   "name": "Berg National Recreation Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "27593",
-     "Berg",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-2816"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-2824",
-   "name": "Falkenstendammen National Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "28663",
-     "Falkenstendammen",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-2824"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-2876",
-   "name": "Stad Marine Protected Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "36536",
-     "Stad",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-2876"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-2880",
-   "name": "Glomsteinskjær National Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "29217",
-     "Glomsteinskjær",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-2880"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-2971",
-   "name": "Vorma National Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "28614",
-     "Vorma",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-2971"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-3085",
-   "name": "Ringsholmane National Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "27498",
-     "Ringsholmane",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-3085"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-3129",
-   "name": "Lille Follesøya National Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "28681",
-     "Lille Follesøya",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-3129"
-  },
-  {
-   "area": "NO",
-   "ref": "NO-3133",
-   "name": "Skorpa-Nøklan National Ecological Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "28932",
-     "Skorpa-Nøklan",
-     "Svalbard & Jan Mayen: Miljødirektoratet (Norwegian Environment Agency) – Naturbase",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NO-3133"
-  },
-  {
    "area": "PL",
    "ref": "PL-0992",
    "name": "Osiek II Nature Reserve",
@@ -17430,6 +16898,196 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/PL-0992"
+  },
+  {
+   "area": "PT",
+   "ref": "PT-0010",
+   "name": "Reserva da Faia Brava Natura 2000",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "48",
+     "Faia Brava",
+     "PT: RNAP - Limites (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/PT-0010"
+  },
+  {
+   "area": "PT",
+   "ref": "PT-0033",
+   "name": "Estuario do Mondego Natura 2000",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "1",
+     "Estuário do Mondego",
+     "PT: Conveção RAMSAR (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/PT-0033"
+  },
+  {
+   "area": "PT",
+   "ref": "PT-0096",
+   "name": "Mata Nacional dos Medos Natura 2000",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "4962",
+     "Mata Nacional dos Medos",
+     "PT: REFLOA_RF (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/PT-0096"
+  },
+  {
+   "area": "PT",
+   "ref": "PT-0327",
+   "name": "Mata Nacional da Machada National Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "5947",
+     "Mata Nacional da Machada",
+     "PT: REFLOA_RF (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/PT-0327"
+  },
+  {
+   "area": "PT",
+   "ref": "PT-0329",
+   "name": "MATA NACIONAL DO VIMEIRO National Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "4961",
+     "Mata Nacional do Vimeiro",
+     "PT: REFLOA_RF (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/PT-0329"
+  },
+  {
+   "area": "PT",
+   "ref": "PT-0330",
+   "name": "MATA NACIONAL DE LEIRIA National Forest",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "4947",
+     "Mata Nacional de Leiria",
+     "PT: REFLOA_RF (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/PT-0330"
+  },
+  {
+   "area": "PT",
+   "ref": "PT-0332",
+   "name": "Mata Nacional dos Sete Montes National Forest",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "4963",
+     "Mata Nacional dos Sete Montes",
+     "PT: REFLOA_RF (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/PT-0332"
+  },
+  {
+   "area": "PT",
+   "ref": "PT-0333",
+   "name": "Mata Nacional do Pedrogão National Forest",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "5140",
+     "Mata Nacional do Pedrógão",
+     "PT: REFLOA_RF (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/PT-0333"
+  },
+  {
+   "area": "PT",
+   "ref": "PT-0334",
+   "name": "Mata Nacional do Urso National Forest",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "4958",
+     "Mata Nacional do Urso",
+     "PT: REFLOA_RF (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/PT-0334"
+  },
+  {
+   "area": "PT",
+   "ref": "PT-0338",
+   "name": "Mata das Virtudes National Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "5946",
+     "Mata Nacional das Virtudes",
+     "PT: REFLOA_RF (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/PT-0338"
   },
   {
    "area": "SE",
@@ -23390,6 +23048,31 @@
    "pota": "https://pota.app/#/park/FR-15823"
   },
   {
+   "area": "GR",
+   "ref": "GR-0225",
+   "name": "Oros Erymanthos Natura 2000",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "39",
+     "OROS ERYMANTHOS",
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
+    ],
+    [
+     "413",
+     "OROS ERYMANTHOS",
+     "Προστατευόμενες τοποθεσίες NATURA 2000",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GR-0225"
+  },
+  {
    "area": "NZ",
    "ref": "NZ-0018",
    "name": "Shakespear Regional Park",
@@ -23932,25 +23615,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/CV-0012"
-  },
-  {
-   "area": "DO",
-   "ref": "DO-0110",
-   "name": "Costa Azul Protected Landscape",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "111",
-     "Vía Panorámica Costa Azul",
-     "Areas Protegidas",
-     "same name (POTA writes the kind into the name)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/DO-0110"
   }
  ]
 }
