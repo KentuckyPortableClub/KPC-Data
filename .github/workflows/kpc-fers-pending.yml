@@ -153,7 +153,11 @@ jobs:
           PY
           git config user.name kpc-bot; git config user.email bot@kpc.local
           git add data/fers/pending.json data/fers/key-seen.json data/fers/new-key-states.json && git commit -qm "2-fer small batches: waiting list" || true   # ok: nothing to commit is fine
-          git pull -q --rebase || { kpc_rc=$?; echo "::warning title=git fetch::git could not fetch or merge the newest main (exit $kpc_rc)"; echo "git fetch - git could not fetch or merge the newest main (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; git push -q || { kpc_rc=$?; echo "::error title=git push::a push failed (exit $kpc_rc); this run is NOT saved"; echo "git push - a push failed (exit $kpc_rc); this run is NOT saved" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          # Nov 8 (5:56 AM CST red: nothing to save, but one push lost a race): push only when there is a commit; pull --rebase + push up to 3 tries
+          if [ "$(git rev-list --count origin/main..HEAD 2>/dev/null || echo 1)" = 0 ]; then echo 'nothing new to save'; else
+            saved=0; for i in 1 2 3; do if git pull -q --rebase; then git push -q && { saved=1; break; }; else git rebase --abort 2>/dev/null || true; fi; sleep $((i*5)); done   # ok: retried
+            [ "$saved" = 1 ] || { echo "::error title=git push::a push failed after 3 tries; this run is NOT saved"; echo "git push - a push failed after 3 tries; this run is NOT saved" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          fi
       - name: Report hidden failures (Nov 2 review, G8; Nov 4 PM fix bundle item 7)
         if: always()
         env:

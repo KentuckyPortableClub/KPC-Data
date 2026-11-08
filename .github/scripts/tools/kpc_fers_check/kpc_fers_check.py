@@ -102,6 +102,10 @@ KY_LAYERS: dict[str, dict | None] = {
 KY_OUTLINE_FOR_WATER: dict[str, dict] = {
     'bdbnfo': {'url': 'https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_ForestSystemBoundaries_01/MapServer/1', 'name': 'forestname', 'by': 'box'},
 }
+# the club's saved official copy of each KY layer (KPC-Links root), used only when the live layer is down
+KY_SAVED = {'bstate': 'ky-state-parks.geojson', 'bwma': 'ky-hunting-areas.geojson', 'bsnp': 'ky-nature-preserves.geojson',
+            'bsna': 'ky-natural-areas.geojson', 'bwild': 'ky-wild-rivers.geojson', 'bnps': 'ky-nps.geojson', 'bfws': 'ky-fws.geojson',
+            'bwilder': 'ky-wilderness.geojson', 'bdbnfo': 'ky-dbnf-owned.geojson', 'bpad': 'ky-padus-parks.geojson'}
 KY_NOT_LIVE_WHY = {'bdbnf': 'proclamation line only (never the park, club rule B1)',
                    'bkpc': 'only outline is traced from OpenStreetMap (not official, refused)',
                    'btrail': 'trail pin only, no official outline or line'}
@@ -411,19 +415,25 @@ class Keys:
     data/ky-answer-key.json parks[ref].tracts = [[layer code, outline name, acres, how, pieces]]; 'line'/'trl' = trail line
     """
 
-    def __init__(self, key_dir: pathlib.Path, extra_trails: dict | None = None):
+    def __init__(self, key_dir: pathlib.Path, extra_trails: dict | None = None, ky_key: pathlib.Path | None = None,
+                 ky_outlines: pathlib.Path | None = None):
         self.dir = key_dir
+        # Nov 8 (2-fer checker: 86 of 88 KY rows NOT CHECKED): the KY key lives in KPC-Links (data/ky-answer-key.json), not in
+        # the data folder; --ky-key points at it. --ky-outlines = the club's saved official ky-*.geojson copies (used only when the
+        # live layer is down, and marked as a saved copy).
+        self.ky_path = ky_key or (key_dir / 'ky-answer-key.json')
+        self.ky_outlines = ky_outlines
         self.us_layers = self._load(key_dir / 'us-key' / 'layers.json') or {}
         # Nov 6 (Quality 2-fer grade): CA rows looked up prefixes in us-key/layers.json, so 614 of 687 CA rows
         # were NOT CHECKED. Read the CA key's layers too.
         self.ca_layers = self._load(key_dir / 'ca-key' / 'layers.json') or {}
-        self.ky = (self._load(key_dir / 'ky-answer-key.json') or {}).get('parks') or {}
+        self.ky = (self._load(self.ky_path) or {}).get('parks') or {}
         self.area_keys: dict[str, dict] = {}
         self.trails = dict(TRAIL_LAYERS)
         self.trails.update(extra_trails or {})
         self.files_read: list[str] = []
         if self.ky:
-            self.files_read.append(str(key_dir / 'ky-answer-key.json'))
+            self.files_read.append(str(self.ky_path))
 
     @staticmethod
     def _load(p: pathlib.Path):
@@ -459,6 +469,26 @@ class Keys:
             if ref in kk:
                 return a, kk[ref]
         return '', None
+
+    def ky_saved(self, code: str, name: str, window_ll) -> list:
+        """Shapes named `name` in the saved ky-*.geojson copy for layer `code`, clipped to the window ([] if none)."""
+        if not self.ky_outlines or code not in KY_SAVED:
+            return []
+        d = self._load(self.ky_outlines / KY_SAVED[code]) or {}
+        win, out = sbox(*window_ll), []
+        want = re.sub(r'\W+', ' ', str(name)).strip().lower()
+        for ft in d.get('features') or []:
+            p = ft.get('properties') or {}
+            if code != 'bdbnfo' and re.sub(r'\W+', ' ', str(p.get('NAME', ''))).strip().lower() != want:
+                continue
+            g = gj_shape(ft['geometry']) if ft.get('geometry') else None
+            if g is None:
+                continue
+            if not g.is_valid:
+                g = shapely.make_valid(g)
+            if g.intersects(win):
+                out.append(g)
+        return out
 
     def load_neighbours(self, areas: Iterable[str]):
         for a in areas:
@@ -613,8 +643,14 @@ class ParkReader:
                     geoms += [f['geom'] for f in feats if f['geom'] is not None]
                     out['records'] += len(feats)
                 except SourceDown as e:
-                    out['down'].append(f'{ref}: {short(L["url"])}: {e}')
-                    self.http.mark_down(L['url'], str(e))
+                    saved = self.keys.ky_saved(code, nm, window_ll)
+                    if saved:
+                        geoms += saved; out['records'] += len(saved)
+                        out['issues'].append(f"{ref}: {short(L['url'])} did not answer; read the club's saved official copy ({KY_SAVED[code]})")
+                        out['reads'].append({'ref': ref, 'layer': KY_SAVED[code], 'how': f'saved copy name={nm}', 'n': len(saved), 'read': 'saved'})
+                    else:
+                        out['down'].append(f'{ref}: {short(L["url"])}: {e}')
+                        self.http.mark_down(L['url'], str(e))
                 except Refused as e:
                     out['not_checked'] = str(e)
         else:
@@ -1187,7 +1223,10 @@ def run(args) -> int:
     out = pathlib.Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     extra = json.loads(pathlib.Path(args.trail_layers).read_text()) if args.trail_layers else {}
-    keys = Keys(pathlib.Path(args.key_dir), extra)
+    keys = Keys(pathlib.Path(args.key_dir), extra, pathlib.Path(args.ky_key) if args.ky_key else None,
+                pathlib.Path(args.ky_outlines) if args.ky_outlines else None)
+    if 'US-KY' in (args.areas or []) and not keys.ky:
+        print(f'WARNING: no Kentucky key read ({keys.ky_path}): KY rows cannot be checked', file=sys.stderr)
     if args.neighbour_keys:
         keys.load_neighbours(args.neighbour_keys)
     http = Http(None if args.no_cache else out / '.cache', min_interval=args.min_interval, cache_hours=args.cache_hours,
@@ -1267,6 +1306,8 @@ def main(argv=None) -> int:
     ap.add_argument('--resume', action='store_true', help='carry on from <out>/<area>.json (SOURCE DOWN rows are retried)')
     ap.add_argument('--fers-dir', default='data/fers')
     ap.add_argument('--key-dir', default='data', help='folder holding us-key/, ca-key/ and ky-answer-key.json')
+    ap.add_argument('--ky-key', default='', help="the Kentucky key (KPC-Links data/ky-answer-key.json); default <key-dir>/ky-answer-key.json")
+    ap.add_argument('--ky-outlines', default='', help="folder with the club's saved official ky-*.geojson copies (fallback when a live KY layer is down)")
     ap.add_argument('--trails-dir', default=None, help='saved official trail lines (default: <fers-dir>/../trails)')
     ap.add_argument('--trail-layers', default=None, help='JSON {ref: {url, where}}: more live official trail line layers')
     ap.add_argument('--neighbour-keys', nargs='*', default=[], help='extra area keys to search for parks (e.g. US-TN US-VA)')
