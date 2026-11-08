@@ -21,7 +21,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 | US-IA | 222 | 27 | 32 | 0 | 0 | 0 | 93 | 0 | 70 | 0 | 97 | 0 |
 | US-SD | 126 | 36 | 29 | 0 | 0 | 0 | 0 | 0 | 61 | 30 | 60 | 0 |
 | US-PA | 161 | 101 | 45 | 1 | 0 | 0 | 0 | 0 | 14 | 1 | 115 | 0 |
-| US-NY | 584 | 92 | 5 | 232 | 55 | 0 | 1 | 0 | 199 | 38 | 572 | 0 |
+| US-NY | 584 | 93 | 5 | 205 | 55 | 0 | 1 | 0 | 225 | 37 | 572 | 0 |
 | US-NJ | 23 | 0 | 3 | 2 | 0 | 15 | 0 | 0 | 3 | 0 | 4 | 0 |
 | US-CT | 32 | 0 | 2 | 0 | 0 | 0 | 0 | 29 | 1 | 0 | 3 | 0 |
 | US-RI | 5 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 2 | 4 | 0 |
@@ -85,12 +85,11 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 
 ## Needs a browser pass (the page opened but its text holds no campground facts: filled by script, most likely)
 
-- dec.ny.gov: 225 campgrounds
+- dec.ny.gov: 203 campgrounds
 - itd.idaho.gov: 30 campgrounds
 - parks.ky.gov: 26 campgrounds
 - southcarolinaparks.com: 22 campgrounds
 - www.recreation.gov: 5 campgrounds
-- www.dec.ny.gov: 5 campgrounds
 - dnr.wisconsin.gov: 4 campgrounds
 - gastateparks.org: 3 campgrounds
 - www.fs.usda.gov: 2 campgrounds
@@ -1757,7 +1756,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - booking.url = "https://parks.ny.gov/camping/things-to-know" · “link “Reservation Info Rules” -> https://parks.ny.gov/camping/things-to-know”
   - fees = "$80- and your key to all-season enjoyment with unlimi | $10 · “verify information, please contact the park directly. The easy-to-use Empire Pass card is $80- and your key to all-season enjoyment with unl”
   - hookups.amps = [20, 30, 50] · “Saturday, & night before a holiday) $4.00 XL Site+ $5.00 Waterfront $6.00 Electric -- 15/20/30 amps $7.00 Electric -- 50 amps $9.00 Oceanfro”
-  - hookups.electric = "some" · “Boat Launch Finger Lakes Region Dean's Cove Boat Launch is a boat launch site, including power boats, with fishing access. Fillmore Glen Sta”
+  - hookups.electric = "some" · “ring water and clear blue sky. The park's camping areas have tent and trailer sites, many electric hookups. A swimming beach, picnic… Seneca”
   - hookups.sewer = true · “c -- 15/20/30 amps $7.00 Electric -- 50 amps $9.00 Oceanfront $10.00 Full Hook-up (water, sewer, 30 amp electric) $13.00 Full Hook-up (water”
   - phone = "(607) 349-4767" · “gh Myers Park. For more information: Paddles-N-More or call (607)349-4767. Bow/crossbow hunting for deer is permitted in season. Most”
   - reservable = true · “6/26 - Labor Day, 11:00am - 7:00pm, daily 2026 Camping Season: 5/15 - 10/12 with existing reservations only at this time. Cabins available 5”

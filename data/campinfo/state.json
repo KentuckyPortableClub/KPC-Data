@@ -661,22 +661,22 @@
    "checked": 584,
    "counts": {
     "camps": 584,
-    "needs_browser": 232,
+    "needs_browser": 205,
     "needs_key": 5,
     "no_page": 1,
     "not_official": 0,
-    "ok": 92,
-    "other": 199,
+    "ok": 93,
+    "other": 225,
     "resting": 0,
     "robots": 55,
     "with_booking": 572,
     "with_elevation": 0,
     "with_facts": 516,
-    "with_sites": 38
+    "with_sites": 37
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-01"
+   "updated": "2026-11-08"
   },
   "US-OK": {
    "camps": 201,
@@ -1017,7 +1017,7 @@
   "US-NJ": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-NM": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-NV": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
-  "US-NY": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
+  "US-NY": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-OK": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-OR": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-PA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1308,10 +1308,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
-    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+    "src": null,
+    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-11-01"
+   "read": "2026-11-08"
   },
   "US-OK": {
    "cell": {
@@ -2394,12 +2394,12 @@
  },
  "last": {
   "areas": [
-   "US-NC"
+   "US-NY"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 146,
+   "dropped_queued": 584,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2411,27 +2411,27 @@
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 144,
+   "requests": 1221,
    "rested": 0,
-   "robots": 2,
+   "robots": 57,
    "robots_unreadable": 2,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 10,
-   "camps": 147,
+   "browser": 226,
+   "camps": 585,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 8,
-   "needs_key": 68,
+   "needs_browser": 429,
+   "needs_key": 6,
    "no_page": 1,
    "not_official": 0,
-   "ok": 80,
-   "pages_read": 126,
+   "ok": 524,
+   "pages_read": 986,
    "resting": 0,
    "ridb_calls": 0,
-   "robots": 0,
+   "robots": 55,
    "skipped_fresh": 0
   },
   "when": "2026-11-08"
