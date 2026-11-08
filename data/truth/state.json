@@ -6,19 +6,19 @@
     "agree": 33,
     "handover_hints": 4,
     "no_page": 3,
-    "no_size": 60,
+    "no_size": 57,
     "off": 16,
     "ours_unknown": 4,
     "parks": 155,
     "retired": 0,
-    "unsure": 13,
+    "unsure": 15,
     "weak": 7,
-    "with_outline": 134
+    "with_outline": 133
    },
    "left": 0,
    "parks": 155,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-08"
   },
   "US-AR": {
    "checked": 306,
@@ -157,7 +157,7 @@
    },
    "left": 0,
    "parks": 237,
-   "status": "queued",
+   "status": "done",
    "updated": "2026-11-08"
   },
   "US-IA": {
@@ -417,7 +417,7 @@
    },
    "left": 0,
    "parks": 253,
-   "status": "queued",
+   "status": "done",
    "updated": "2026-11-08"
   },
   "US-ND": {
@@ -583,22 +583,22 @@
   "US-SC": {
    "checked": 167,
    "counts": {
-    "agree": 16,
-    "handover_hints": 4,
+    "agree": 18,
+    "handover_hints": 5,
     "no_page": 3,
-    "no_size": 126,
-    "off": 7,
-    "ours_unknown": 2,
+    "no_size": 111,
+    "off": 14,
+    "ours_unknown": 3,
     "parks": 167,
     "retired": 0,
-    "unsure": 5,
+    "unsure": 11,
     "weak": 4,
-    "with_outline": 159
+    "with_outline": 160
    },
    "left": 0,
    "parks": 167,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-08"
   },
   "US-SD": {
    "checked": 120,
@@ -637,7 +637,7 @@
    },
    "left": 0,
    "parks": 277,
-   "status": "queued",
+   "status": "done",
    "updated": "2026-11-08"
   },
   "US-TX": {
@@ -677,7 +677,7 @@
    },
    "left": 0,
    "parks": 184,
-   "status": "queued",
+   "status": "done",
    "updated": "2026-11-08"
   },
   "US-VT": {
@@ -737,44 +737,56 @@
    },
    "left": 0,
    "parks": 172,
-   "status": "queued",
+   "status": "done",
    "updated": "2026-11-08"
   }
  },
- "hosts": {},
+ "hosts": {
+  "www.alapark.com": 1794238982.9815848
+ },
  "last": {
   "areas": [
-   "US-KY"
+   "US-SC"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 4,
+   "browser": 7,
+   "deferred": 14,
+   "dropped_queued": 42,
    "errors": 0,
    "for_person_urls": [
     [
-     "https://explorekyhistory.ky.gov/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from explorekyhistory.ky.gov this run"
+     "https://www2.dnr.sc.gov/robots.txt",
+     "robots.txt answered 500: nothing fetched from www2.dnr.sc.gov this run"
+    ],
+    [
+     "http://www.wildlifesouth.com/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.wildlifesouth.com this run"
+    ],
+    [
+     "https://www.yorkcountygov.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.yorkcountygov.com this run"
     ]
    ],
-   "requests": 25,
+   "requests": 238,
    "rested": 0,
-   "robots": 1,
-   "robots_unreadable": 1,
+   "robots": 4,
+   "robots_unreadable": 3,
    "strikes": 0
   },
   "stat": {
    "errors": 0,
    "handover_hints": 5,
-   "no_size": 7,
-   "ours_unknown": 0,
-   "pages_read": 9,
-   "parks": 9,
+   "no_size": 114,
+   "ours_unknown": 3,
+   "pages_read": 199,
+   "parks": 167,
    "retired": 0,
-   "size_agree": 0,
-   "size_off": 1,
-   "size_unsure": 1,
-   "skipped_fresh": 184,
-   "with_outline": 9
+   "size_agree": 18,
+   "size_off": 14,
+   "size_unsure": 11,
+   "skipped_fresh": 0,
+   "with_outline": 160
   },
   "when": "2026-11-08"
  },
