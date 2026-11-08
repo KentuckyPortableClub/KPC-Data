@@ -5,12 +5,12 @@
   "agree": 50,
   "handover_hints": 17,
   "no_page": 0,
-  "no_size": 28,
+  "no_size": 27,
   "off": 25,
   "ours_unknown": 21,
   "parks": 184,
   "retired": 0,
-  "unsure": 53,
+  "unsure": 54,
   "weak": 20,
   "with_outline": 177
  },
@@ -14816,9 +14816,9 @@
    "verdict": "unsure"
   },
   "US-9950": {
-   "checked": "2026-10-28",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-08",
    "handover": [],
-   "last_read_failed": "2026-11-08",
    "n": "Peters Mountain Wilderness Area",
    "official": null,
    "ours": {
@@ -14850,14 +14850,10 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "other_unit": true,
+     "status": "ok",
      "url": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
      "why": "the park's page (data/parkinfo)"
-    },
-    {
-     "status": "rest",
-     "url": "https://www.fs.usda.gov/gwj/alerts-notices",
-     "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
@@ -14868,10 +14864,29 @@
     "size": 1,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 1800000.0,
+     "as": "1.8 million acres",
+     "clean": false,
+     "line": "p Explore your forests Experience lush woodlands, cold mountain streams, and unique mountaintop balds on over 1.8 million acres of Appalachian forests. Recreation Opportunities T T T Welcome to the George Washington & Jefferson National",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+     "why": "another park / unit named in the sentence"
+    },
+    {
+     "acres": 1800000.0,
+     "as": "1.8 million acres",
+     "clean": false,
+     "line": "West Virginia, the George Washington and Jefferson National Forest blankets the Blue Ridge mountains offering 1.8 million acres of lush woodlands, unique mountain balds, peaceful waterways, and adventures galore. With more wildlife and t",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+     "why": "another park / unit named in the sentence"
+    }
+   ],
    "t": "Wilderness Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-9951": {
    "cause": "a number 17 parks share from one page (1,800,000 ac): an agency total, not this park",

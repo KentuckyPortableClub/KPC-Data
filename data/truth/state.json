@@ -666,18 +666,18 @@
     "agree": 50,
     "handover_hints": 17,
     "no_page": 0,
-    "no_size": 28,
+    "no_size": 27,
     "off": 25,
     "ours_unknown": 21,
     "parks": 184,
     "retired": 0,
-    "unsure": 53,
+    "unsure": 54,
     "weak": 20,
     "with_outline": 177
    },
    "left": 0,
    "parks": 184,
-   "status": "queued",
+   "status": "done",
    "updated": "2026-11-08"
   },
   "US-VT": {
@@ -744,30 +744,36 @@
  "hosts": {},
  "last": {
   "areas": [
-   "US-NC"
+   "US-VA"
   ],
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
-   "for_person_urls": [],
-   "requests": 53,
+   "for_person_urls": [
+    [
+     "https://forms.office.com/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from forms.office.com this run"
+    ]
+   ],
+   "requests": 9,
    "rested": 0,
-   "robots": 0,
+   "robots": 1,
+   "robots_unreadable": 1,
    "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 20,
-   "no_size": 46,
+   "handover_hints": 17,
+   "no_size": 3,
    "ours_unknown": 0,
-   "pages_read": 2,
-   "parks": 46,
+   "pages_read": 1,
+   "parks": 4,
    "retired": 0,
    "size_agree": 0,
    "size_off": 0,
-   "size_unsure": 0,
-   "skipped_fresh": 207,
-   "with_outline": 46
+   "size_unsure": 1,
+   "skipped_fresh": 180,
+   "with_outline": 4
   },
   "when": "2026-11-08"
  },
