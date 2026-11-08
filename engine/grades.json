@@ -5,15 +5,15 @@
    "verdict": "FAIL",
    "bar": "Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.",
    "measured": {
-    "rows": 7301,
-    "parks": 3527,
-    "parks_with_hit": 321,
+    "rows": 7355,
+    "parks": 3581,
+    "parks_with_hit": 320,
     "SURE": 296,
     "LIKELY": 453,
-    "UNLIKELY_evidence": 2416,
-    "strong": 132,
+    "UNLIKELY_evidence": 2465,
+    "strong": 131,
     "already_approved": 459,
-    "open_without_whynot": 620,
+    "open_without_whynot": 621,
     "non_official_candidates": 0,
     "unlikely_as_questions": 0,
     "strong_but_not_sure": 0,
@@ -21,16 +21,16 @@
     "size_way_off_questions": 0
    },
    "fails": [
-    "open parks without a why-not: 620"
+    "open parks without a why-not: 621"
    ],
    "top_miss_reasons": [
     {
      "reason": "not found: no-layer: no official record at the pin or by name",
-     "parks": 2409
+     "parks": 2414
     },
     {
      "reason": "evidence: UNLIKELY only : name: none word in common",
-     "parks": 1042
+     "parks": 1060
     },
     {
      "reason": "evidence: UNLIKELY only : pin not inside nor within m with a name match",
@@ -107,17 +107,17 @@
     "the finder bars need the side-by-side run (95% re-found, +25% parks) and a 40-row sample (85% YES)"
    ],
    "details": {
-    "rows": 7301,
-    "found_or_candidate": 541,
+    "rows": 7355,
+    "found_or_candidate": 540,
     "blocked": 837,
-    "hit_rate": 0.074,
+    "hit_rate": 0.073,
     "bands": {
-     "STRONG": 132,
+     "STRONG": 131,
      "WEAK": 398,
      "CONFLICT": 11
     },
     "tiers": {
-     "T-1": 35,
+     "T-1": 34,
      "T-2": 208,
      "T-3": 228,
      "T-4": 32,
@@ -298,9 +298,9 @@
     "already approved": 459,
     "found": 174,
     "candidate": 613,
-    "evidence": 2376,
+    "evidence": 2425,
     "blocked": 837,
-    "not found": 2409,
+    "not found": 2414,
     "pin only": 3
    },
    "pass2": null,
