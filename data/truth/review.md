@@ -5,7 +5,7 @@ Updated 2026-11-08. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | area | parks | with outline | agree | OFF (>15%) | unsure | no size | ours unknown | handover hints | retired | weak (≤4) |
 |---|---|---|---|---|---|---|---|---|---|---|
 | US-KY | 193 | 193 | 111 | **5** | 8 | 68 | 1 | 5 | 0 | 29 |
-| US-TN | 277 | 257 | 7 | **5** | 1 | 236 | 2 | 3 | 0 | 9 |
+| US-TN | 277 | 256 | 7 | **5** | 1 | 236 | 2 | 3 | 0 | 9 |
 | US-NC | 253 | 219 | 38 | **10** | 24 | 146 | 0 | 18 | 0 | 8 |
 | US-VA | 184 | 156 | 65 | **16** | 35 | 40 | 0 | 16 | 0 | 4 |
 | US-WV | 172 | 160 | 16 | **5** | 101 | 38 | 0 | 0 | 0 | 2 |
