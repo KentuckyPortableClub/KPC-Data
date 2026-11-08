@@ -1,7 +1,8 @@
 {
  "area": "US-NH",
- "built": "2026-11-02",
+ "built": "2026-11-08",
  "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
  "parks": [
   {
    "ref": "US-0329",
@@ -18,7 +19,7 @@
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6"
    ],
-   "acres_drawn": 7908.7,
+   "acres_drawn": 7901.2,
    "records": [
     {
      "id": "padus#5300",
@@ -29,16 +30,6 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=5300&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#4343",
-     "name": "Silvio O. Conte National Fish And Wildlife Refuge",
-     "type": "NWR National Wildlife Refuge",
-     "category": "Fee",
-     "acres": 7496.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=4343&outFields=*&returnGeometry=false&f=html"
     },
     {
      "id": "nhc10713",
@@ -59,22 +50,21 @@
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#5300",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#4343",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0#10713",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6#10713"
    ],
    "tests": {
     "T1": {
      "flag": "NOTE",
-     "metres": 22351.2,
+     "metres": 22351.5,
      "was": "FAR",
      "note": "the park spans several states / provinces (US-NH, US-CT, US-MA, US-VT): POTA's one pin may be in another part"
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 7908.7,
-     "official_acres": 15389.0,
-     "times": 1.95,
+     "flag": "PASS",
+     "outline_acres": 7901.2,
+     "official_acres": 7893.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -96,7 +86,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-71.5329012489622 44.3689592479819]; 1 piece(s) under 10 m wide; 28 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-71.5329012489622 44.3689592479819]; 1 piece(s) under 10 m wide; 27 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 27,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -113,12 +109,10 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [
-    "record 4343: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
-   ],
+   "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "OFF: The outline is 1.9 times smaller than the official 15,389 acres (7,909 ac drawn) (+3 more flags)."
+   "score": 3,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-71.5329012489622 44.3689592479819]; 1 piece(s) under 10 m wide; 27 hole(s) under 100 m2 (+2 more flags)."
   },
   {
    "ref": "US-0448",
@@ -197,10 +191,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1116.8,
-     "official_acres": 2206.0,
-     "times": 1.98,
+     "official_acres": 1103.0,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -235,8 +229,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 2,206 acres (1,117 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0449",
@@ -774,10 +768,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 22015.5,
-     "official_acres": 43764.0,
-     "times": 1.99,
+     "official_acres": 21882.0,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -798,7 +792,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "8 piece(s) under 10 m wide; 8 hole(s) under 100 m2"
+     "note": "8 piece(s) under 10 m wide; 8 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.004,
+      "holes": 8,
+      "pieces": 8
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -817,8 +817,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OFF: The outline is 2.0 times smaller than the official 43,764 acres (22,016 ac drawn) (+2 more flags)."
+   "score": 2,
+   "why": "SLIVERS: The shape has problems: 8 piece(s) under 10 m wide; 8 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-0451",
@@ -910,10 +910,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1740.4,
-     "official_acres": 3288.0,
-     "times": 1.89,
+     "official_acres": 1698.6,
+     "times": 1.02,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -948,8 +948,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 1.9 times smaller than the official 3,288 acres (1,740 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0857",
@@ -1326,9 +1326,10 @@
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6"
    ],
-   "acres_drawn": 1008.5,
+   "acres_drawn": 1068.1,
    "records": [
     {
      "id": "padus#56862",
@@ -1341,6 +1342,36 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=56862&outFields=*&returnGeometry=false&f=html"
     },
     {
+     "id": "sgnhc2411",
+     "name": "Wantastiquet Mountain Natural Area",
+     "type": "NH GRANIT (recreation inventory areas) (land, state GIS table)",
+     "acres": 514.7,
+     "acres_from": "acres field",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "link": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3/query?objectIds=2411&outFields=*&returnGeometry=false&f=html",
+     "name_field": "site"
+    },
+    {
+     "id": "sgnhc2627",
+     "name": "Wantastiquet Mountain Natural Area",
+     "type": "NH GRANIT (recreation inventory areas) (land, state GIS table)",
+     "acres": 370.0,
+     "acres_from": "acres field",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "link": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3/query?objectIds=2627&outFields=*&returnGeometry=false&f=html",
+     "name_field": "site"
+    },
+    {
+     "id": "sgnhc2686",
+     "name": "Wantastiquet Mountain Natural Area",
+     "type": "NH GRANIT (recreation inventory areas) (land, state GIS table)",
+     "acres": 96.8,
+     "acres_from": "acres field",
+     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
+     "link": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3/query?objectIds=2686&outFields=*&returnGeometry=false&f=html",
+     "name_field": "site"
+    },
+    {
      "id": "sgnha9521",
      "name": "Wantastiquet Mountain Natural Area",
      "type": "NH GRANIT (land, state GIS table)",
@@ -1351,6 +1382,9 @@
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#56862",
+    "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3#2411",
+    "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3#2627",
+    "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3#2686",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6#9521"
    ],
    "tests": {
@@ -1360,9 +1394,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 1008.5,
-     "official_acres": 913.0,
-     "times": 1.1,
+     "outline_acres": 1068.1,
+     "official_acres": 981.5,
+     "times": 1.09,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1480,7 +1514,7 @@
     },
     "T9": {
      "last_edit": "2026-10-08",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -1812,7 +1846,7 @@
     },
     "T9": {
      "last_edit": "2026-10-08",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -2013,7 +2047,7 @@
     },
     "T9": {
      "last_edit": "2026-10-08",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -2176,7 +2210,7 @@
     },
     "T9": {
      "last_edit": "2026-10-08",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -2253,7 +2287,7 @@
     },
     "T9": {
      "last_edit": "2026-10-08",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -2509,7 +2543,7 @@
     },
     "T9": {
      "last_edit": "2026-10-08",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -2523,7 +2557,7 @@
    "name": "Northern Recreational State Trail",
    "key_name": "Northern Recreational State Trail",
    "type": "State Trail",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     43.4364,
     -71.8555
@@ -2569,9 +2603,79 @@
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "detail_m": 0.81,
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [
+    "SOURCE DOWN: : down for this run (failed 3 times)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
+  },
+  {
+   "ref": "US-13625",
+   "name": "Ammonoosuc State Trail",
+   "key_name": "Ammonoosuc State Trail",
+   "type": "State Trail",
+   "grade": "pin",
+   "pin": [
+    44.2128,
+    -71.9098
+   ],
+   "outline_from": [
+    "trails/US-13625.json"
+   ],
+   "acres_drawn": null,
+   "records": [
+    {
+     "id": "trl:US-13625",
+     "name": "Ammonoosuc State Trail",
+     "type": "trail",
+     "layer": "trails/US-13625.json"
+    }
+   ],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "PASS",
+     "metres": 0
+    },
+    "T2": {
+     "flag": "N/A",
+     "note": "a line, not an area"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Ammonoosuc State Trail",
+     "record_name": "Ammonoosuc State Trail"
+    },
+    "T4": {
+     "park_kind": "trail",
+     "record_kind": "trail",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "N/A",
+     "note": "a line, not an area"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "detail_m": 0.08,
      "declared_m": null,
-     "coordinate_step_m": 0.81,
+     "coordinate_step_m": 0.08,
      "median_spacing_m": 0.0,
      "flag": "PASS"
     },
@@ -2590,59 +2694,6 @@
    "why": "All tests pass."
   },
   {
-   "ref": "US-13625",
-   "name": "Ammonoosuc State Trail",
-   "key_name": "Ammonoosuc State Trail",
-   "type": "State Trail",
-   "grade": "pin",
-   "pin": [
-    44.2128,
-    -71.9098
-   ],
-   "outline_from": [],
-   "acres_drawn": null,
-   "records": [],
-   "record_ids": [],
-   "tests": {
-    "T1": {
-     "flag": "NO OUTLINE"
-    },
-    "T2": {
-     "flag": "NO OUTLINE"
-    },
-    "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
-    },
-    "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
-    },
-    "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
-    },
-    "T6": {
-     "flag": "NO OUTLINE"
-    },
-    "T7": {
-     "flag": "NO OUTLINE"
-    },
-    "T8": {
-     "flag": "CAN'T TELL",
-     "note": "no record id"
-    },
-    "T9": {
-     "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
-    }
-   },
-   "problems": [],
-   "status": "graded",
-   "score": 0,
-   "why": "Nothing could be tested."
-  },
-  {
    "ref": "US-13626",
    "name": "Sugar River State Trail",
    "key_name": "Sugar River State Trail",
@@ -2652,34 +2703,52 @@
     43.3667,
     -72.1791
    ],
-   "outline_from": [],
+   "outline_from": [
+    "trails/US-13626.json"
+   ],
    "acres_drawn": null,
-   "records": [],
+   "records": [
+    {
+     "id": "trl:US-13626",
+     "name": "Sugar River State Trail",
+     "type": "trail",
+     "layer": "trails/US-13626.json"
+    }
+   ],
    "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "NEAR",
+     "metres": 34.3
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Sugar River State Trail",
+     "record_name": "Sugar River State Trail"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": "trail",
+     "record_kind": "trail",
+     "flag": "PASS"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T6": {
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "detail_m": 0.08,
+     "declared_m": null,
+     "coordinate_step_m": 0.08,
+     "median_spacing_m": 0.0,
+     "flag": "PASS"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -2692,8 +2761,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "Nothing could be tested."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 34 m outside the outline."
   },
   {
    "ref": "US-13627",
@@ -2763,7 +2832,7 @@
     },
     "T9": {
      "last_edit": "2026-10-08",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -3076,7 +3145,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-71.4047091161552 43.1338093349745]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-71.4047091161552 43.1338093349745]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3692,8 +3767,8 @@
      "outline_acres": 7.0
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Eisenhower Memorial Wayside State Park",
      "record_name": "Eisenhower Memorial Area"
     },
@@ -3723,8 +3798,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "MISMATCH: The record name 'Eisenhower Memorial Area' does not match POTA's name 'Eisenhower Memorial Wayside State Park' (score 0.50) (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 131 m outside the outline."
   },
   {
    "ref": "US-2651",
@@ -4752,7 +4827,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5451,7 +5532,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-71.2271764407087 44.3983187581436]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-71.2271764407087 44.3983187581436]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6256,7 +6343,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6537,7 +6630,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "2 piece(s) under 10 m wide; 4 hole(s) under 100 m2"
+     "note": "2 piece(s) under 10 m wide; 4 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 4,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6966,7 +7065,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7184,7 +7289,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8038,7 +8149,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8192,7 +8309,9 @@
      "outline_acres": 237.3,
      "official_acres": 231.0,
      "times": 1.03,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)",
+     "official_acres_low": 223.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 223 ac, all providers added 231 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -8211,7 +8330,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8322,7 +8447,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.006,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8882,7 +9013,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-71.1313758612563 44.110381295294]; 2 piece(s) under 10 m wide; 23 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-71.1313758612563 44.110381295294]; 2 piece(s) under 10 m wide; 23 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 23,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -8983,11 +9120,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-4862",
@@ -9520,22 +9657,11 @@
     -72.1069
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6"
    ],
    "acres_drawn": 1769.9,
    "records": [
-    {
-     "id": "padus#56939",
-     "name": "Annett State Forest",
-     "type": "SF State Resource Management Area",
-     "category": "Fee",
-     "acres": 1356.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=56939&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgnhc2522",
      "name": "Annett State Forest",
@@ -9620,7 +9746,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#56939",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3#2522",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3#2651",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3#2610",
@@ -9660,7 +9785,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11059,8 +11190,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 149.1,
-     "official_acres": 138.8,
-     "times": 1.07,
+     "official_acres": 136.3,
+     "times": 1.09,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -11558,7 +11689,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.006,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11698,22 +11835,11 @@
     -71.2877
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6"
    ],
-   "acres_drawn": 2001.4,
+   "acres_drawn": 1994.7,
    "records": [
-    {
-     "id": "padus#56956",
-     "name": "Connecticut Lakes State Forest",
-     "type": "SF State Resource Management Area",
-     "category": "Fee",
-     "acres": 1827.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=56956&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgnhc66",
      "name": "Connecticut Lakes State Forest",
@@ -11790,7 +11916,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#56956",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3#66",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6#3",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6#138",
@@ -11808,8 +11933,8 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 2001.4,
-     "official_acres": 1827.0,
+     "outline_acres": 1994.7,
+     "official_acres": 1812.9,
      "times": 1.1,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -11830,7 +11955,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -12188,7 +12319,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-71.0686609579608 44.0729447691373]"
+     "note": "Ring Self-intersection[-71.0686609579608 44.0729447691373]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -12532,22 +12669,11 @@
     -71.3093
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6"
    ],
    "acres_drawn": 60.0,
    "records": [
-    {
-     "id": "padus#56963",
-     "name": "Davis-White State Forest",
-     "type": "SF State Resource Management Area",
-     "category": "Fee",
-     "acres": 40.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=56963&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgnhc644",
      "name": "Davis-White State Forest",
@@ -12568,7 +12694,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#56963",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3#644",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6#990"
    ],
@@ -12718,7 +12843,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.004,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -12927,7 +13058,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.007,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13641,7 +13778,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-71.9002468479934 43.1480889474452]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-71.9002468479934 43.1480889474452]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13930,7 +14073,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-72.0149139408632 43.5002613356698]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-72.0149139408632 43.5002613356698]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -16142,7 +16291,7 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 204.2,
-     "official_acres": 196.1,
+     "official_acres": 196.0,
      "times": 1.04,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -16163,7 +16312,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "3 hole(s) under 100 m2"
+     "note": "3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -16974,22 +17129,11 @@
     -71.9639
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6"
    ],
    "acres_drawn": 167.1,
    "records": [
-    {
-     "id": "padus#56999",
-     "name": "Merrimack River State Forest",
-     "type": "SF State Resource Management Area",
-     "category": "Fee",
-     "acres": 158.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=56999&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgnhc2075",
      "name": "Merrimack River State Forest",
@@ -17018,7 +17162,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#56999",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3#2075",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6#4054",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6#4139"
@@ -17029,10 +17172,10 @@
      "metres": 26324.3
     },
     "T2": {
-     "flag": "PASS",
+     "flag": "OFF",
      "outline_acres": 167.1,
-     "official_acres": 158.0,
-     "times": 1.06,
+     "official_acres": 53.1,
+     "times": 3.15,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -17067,8 +17210,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 5,
-   "why": "FAR: POTA's pin is 26.3 km outside the outline."
+   "score": 6,
+   "why": "FAR: POTA's pin is 26.3 km outside the outline (+1 more flag)."
   },
   {
    "ref": "US-4934",
@@ -17081,22 +17224,11 @@
     -71.3962
    ],
    "outline_from": [
-    "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6"
    ],
-   "acres_drawn": 544.1,
+   "acres_drawn": 541.8,
    "records": [
-    {
-     "id": "sgnhc317",
-     "name": "Merriman State Forest",
-     "type": "NH GRANIT (recreation inventory areas) (land, state GIS table)",
-     "acres": 513.3,
-     "acres_from": "acres field",
-     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
-     "link": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3/query?objectIds=317&outFields=*&returnGeometry=false&f=html",
-     "name_field": "site"
-    },
     {
      "id": "padus#57000",
      "name": "Merriman State Forest",
@@ -17117,7 +17249,6 @@
     }
    ],
    "record_ids": [
-    "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3#317",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57000",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6#1069"
    ],
@@ -17128,8 +17259,8 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 544.1,
-     "official_acres": 513.3,
+     "outline_acres": 541.8,
+     "official_acres": 512.0,
      "times": 1.06,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -18755,7 +18886,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-71.9382382701654 43.744321136329]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-71.9382382701654 43.744321136329]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -18795,16 +18932,6 @@
    ],
    "acres_drawn": 887.1,
    "records": [
-    {
-     "id": "padus#57965",
-     "name": "Ragged Mountain Tract",
-     "type": "WMA State Conservation Area",
-     "category": "Fee",
-     "acres": 114.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=57965&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "padus#57013",
      "name": "Ragged Mountain State Forest",
@@ -18859,7 +18986,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57965",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57013",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3#1852",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6#3680",
@@ -18873,10 +18999,10 @@
      "metres": 1090.5
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "WAY OFF",
      "outline_acres": 887.1,
-     "official_acres": 188.0,
-     "times": 4.72,
+     "official_acres": 74.0,
+     "times": 11.99,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -18887,7 +19013,7 @@
     },
     "T4": {
      "park_kind": "state forest",
-     "record_kind": "wma",
+     "record_kind": "state forest",
      "flag": "PASS"
     },
     "T5": {
@@ -18911,7 +19037,7 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
+   "score": 6,
    "why": "OUTSIDE: POTA's pin is 1.1 km outside the outline (+1 more flag)."
   },
   {
@@ -19715,22 +19841,11 @@
     -71.4262
    ],
    "outline_from": [
-    "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6"
    ],
-   "acres_drawn": 74.1,
+   "acres_drawn": 72.9,
    "records": [
-    {
-     "id": "sgnhc2115",
-     "name": "Saltmarsh Pond State Forest",
-     "type": "NH GRANIT (recreation inventory areas) (land, state GIS table)",
-     "acres": 70.9,
-     "acres_from": "acres field",
-     "layer": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3",
-     "link": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3/query?objectIds=2115&outFields=*&returnGeometry=false&f=html",
-     "name_field": "site"
-    },
     {
      "id": "nhc3433",
      "name": "Saltmarsh Pond State Forest",
@@ -19749,7 +19864,6 @@
     }
    ],
    "record_ids": [
-    "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CSD_RecreationResources/FeatureServer/3#2115",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0#3433",
     "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/6#3433"
    ],
@@ -19759,11 +19873,8 @@
      "metres": 22115.9
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 74.1,
-     "official_acres": 70.9,
-     "times": 1.04,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO FIGURE",
+     "outline_acres": 72.9
     },
     "T3": {
      "flag": "PASS",
@@ -21636,7 +21747,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -23446,10 +23563,10 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Robert Frost Farm State Historic Site",
-     "record_name": "Robert Frost Historic Site",
+     "record_name": "Robert Frost Historic Site + Frost Farm Historical Site",
      "worst_record": {
       "name": "Frost Farm Historical Site",
       "score": 0.667
@@ -23481,8 +23598,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Robert Frost Historic Site' does not match POTA's name 'Robert Frost Farm State Historic Site' (score 0.67)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-8024",

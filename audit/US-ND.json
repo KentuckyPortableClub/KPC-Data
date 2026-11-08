@@ -1,7 +1,8 @@
 {
  "area": "US-ND",
- "built": "2026-11-02",
+ "built": "2026-11-08",
  "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
  "parks": [
   {
    "ref": "US-0065",
@@ -125,10 +126,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 13360.9,
-     "official_acres": 26702.0,
-     "times": 2.0,
+     "official_acres": 13351.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -163,8 +164,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 26,702 acres (13,361 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0421",
@@ -179,18 +180,8 @@
    "outline_from": [
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0"
    ],
-   "acres_drawn": 6251.8,
+   "acres_drawn": 5206.3,
    "records": [
-    {
-     "id": "fws809",
-     "name": "EDDY COUNTY WATERFOWL PRODUCTION AREA",
-     "type": "U.S. Fish & Wildlife Service",
-     "acres": 1045.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
-     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=809&outFields=*&returnGeometry=false&f=html",
-     "name_field": "ORGNAME"
-    },
     {
      "id": "fws810",
      "name": "EDDY COUNTY WATERFOWL PRODUCTION AREA",
@@ -300,10 +291,19 @@
      "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
      "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=816&outFields=*&returnGeometry=false&f=html",
      "name_field": "ORGNAME"
+    },
+    {
+     "id": "fws822",
+     "name": "FOSTER COUNTY WATERFOWL PRODUCTION AREA",
+     "type": "U.S. Fish & Wildlife Service",
+     "acres": 159.0,
+     "acres_from": "the key's acres",
+     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
+     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=822&outFields=*&returnGeometry=false&f=html",
+     "name_field": "ORGNAME"
     }
    ],
    "record_ids": [
-    "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#809",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#810",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#800",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#808",
@@ -339,9 +339,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 6251.8,
-     "official_acres": 6252.0,
-     "times": 1.0,
+     "outline_acres": 5206.3,
+     "official_acres": 4791.0,
+     "times": 1.09,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -361,11 +361,17 @@
     },
     "T5": {
      "flag": "SLIVERS",
-     "pieces": 34,
+     "pieces": 33,
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.045,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -379,7 +385,7 @@
     },
     "T9": {
      "last_edit": "2026-08-24",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -458,7 +464,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -478,7 +490,7 @@
     },
     "T9": {
      "last_edit": "2026-08-24",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -546,11 +558,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 4480.4,
-     "official_acres": 8833.0,
-     "times": 1.97,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_acres": 4479.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 4354.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 4,354 ac, all providers added 4,479 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -584,8 +598,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 8,833 acres (4,480 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0424",
@@ -633,10 +647,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 14006.0,
-     "official_acres": 27974.0,
-     "times": 2.0,
+     "official_acres": 13987.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -671,8 +685,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 27,974 acres (14,006 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0425",
@@ -687,18 +701,8 @@
    "outline_from": [
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0"
    ],
-   "acres_drawn": 53346.6,
+   "acres_drawn": 50687.6,
    "records": [
-    {
-     "id": "fws1871",
-     "name": "TOWNER COUNTY WATERFOWL PRODUCTION AREA",
-     "type": "U.S. Fish & Wildlife Service",
-     "acres": 2657.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
-     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=1871&outFields=*&returnGeometry=false&f=html",
-     "name_field": "ORGNAME"
-    },
     {
      "id": "fws1767",
      "name": "GRAND FORKS COUNTY WATERFOWL PRODUCTION AREA",
@@ -808,10 +812,19 @@
      "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
      "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=1712&outFields=*&returnGeometry=false&f=html",
      "name_field": "ORGNAME"
+    },
+    {
+     "id": "fws1762",
+     "name": "GRAND FORKS COUNTY WATERFOWL PRODUCTION AREA",
+     "type": "U.S. Fish & Wildlife Service",
+     "acres": 764.0,
+     "acres_from": "the key's acres",
+     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
+     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=1762&outFields=*&returnGeometry=false&f=html",
+     "name_field": "ORGNAME"
     }
    ],
    "record_ids": [
-    "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#1871",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#1767",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#1834",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#1807",
@@ -1043,10 +1056,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 53346.6,
-     "official_acres": 53308.0,
-     "times": 1.0,
+     "flag": "OFF",
+     "outline_acres": 50687.6,
+     "official_acres": 31967.0,
+     "times": 1.59,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1066,12 +1079,18 @@
     },
     "T5": {
      "flag": "TINY HOLES",
-     "pieces": 263,
+     "pieces": 260,
      "flags": [
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "1 hole(s) under 100 m2; 263 pieces spread over 246 km"
+     "note": "1 hole(s) under 100 m2; 260 pieces spread over 246 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1085,14 +1104,14 @@
     },
     "T9": {
      "last_edit": "2026-08-24",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 5,
-   "why": "MISMATCH: The record name 'WALSH COUNTY WATERFOWL PRODUCTION AREA' does not match POTA's name 'Devils Lake Wetland Management District' (score 0.00) (+2 more flags)."
+   "score": 6,
+   "why": "MISMATCH: The record name 'WALSH COUNTY WATERFOWL PRODUCTION AREA' does not match POTA's name 'Devils Lake Wetland Management District' (score 0.00) (+3 more flags)."
   },
   {
    "ref": "US-0426",
@@ -1140,10 +1159,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1461.8,
-     "official_acres": 2920.0,
-     "times": 2.0,
+     "official_acres": 1460.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1178,8 +1197,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 2,920 acres (1,462 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0427",
@@ -1238,10 +1257,10 @@
      "metres": 108.0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 55051.6,
-     "official_acres": 110059.0,
-     "times": 2.0,
+     "official_acres": 55032.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1276,8 +1295,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 108 m outside the outline (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 108 m outside the outline."
   },
   {
    "ref": "US-0428",
@@ -1292,18 +1311,8 @@
    "outline_from": [
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0"
    ],
-   "acres_drawn": 34027.8,
+   "acres_drawn": 32299.3,
    "records": [
-    {
-     "id": "fws2592",
-     "name": "PIERCE COUNTY WATERFOWL PRODUCTION AREA",
-     "type": "U.S. Fish & Wildlife Service",
-     "acres": 1727.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
-     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=2592&outFields=*&returnGeometry=false&f=html",
-     "name_field": "ORGNAME"
-    },
     {
      "id": "fws2580",
      "name": "PIERCE COUNTY WATERFOWL PRODUCTION AREA",
@@ -1413,10 +1422,19 @@
      "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
      "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=2583&outFields=*&returnGeometry=false&f=html",
      "name_field": "ORGNAME"
+    },
+    {
+     "id": "fws2626",
+     "name": "ROLETTE COUNTY WATERFOWL PRODUCTION AREA",
+     "type": "U.S. Fish & Wildlife Service",
+     "acres": 503.0,
+     "acres_from": "the key's acres",
+     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
+     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=2626&outFields=*&returnGeometry=false&f=html",
+     "name_field": "ORGNAME"
     }
    ],
    "record_ids": [
-    "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#2592",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#2580",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#2631",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#2567",
@@ -1589,9 +1607,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 34027.8,
-     "official_acres": 34003.0,
-     "times": 1.0,
+     "outline_acres": 32299.3,
+     "official_acres": 24867.0,
+     "times": 1.3,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1611,11 +1629,11 @@
     },
     "T5": {
      "flag": "SCATTERED",
-     "pieces": 220,
+     "pieces": 219,
      "flags": [
       "SCATTERED"
      ],
-     "note": "220 pieces spread over 237 km"
+     "note": "219 pieces spread over 237 km"
     },
     "T6": {
      "flag": "PASS"
@@ -1629,7 +1647,7 @@
     },
     "T9": {
      "last_edit": "2026-08-24",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -1697,11 +1715,13 @@
      "metres": 140.6
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 872.4,
-     "official_acres": 1688.0,
-     "times": 1.93,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_acres": 871.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 817.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 817 ac, all providers added 871 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -1735,8 +1755,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 141 m outside the outline (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 141 m outside the outline."
   },
   {
    "ref": "US-0430",
@@ -1751,18 +1771,8 @@
    "outline_from": [
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0"
    ],
-   "acres_drawn": 45145.5,
+   "acres_drawn": 43385.7,
    "records": [
-    {
-     "id": "fws2738",
-     "name": "DICKEY COUNTY WATERFOWL PRODUCTION AREA",
-     "type": "U.S. Fish & Wildlife Service",
-     "acres": 1757.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
-     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=2738&outFields=*&returnGeometry=false&f=html",
-     "name_field": "ORGNAME"
-    },
     {
      "id": "fws2812",
      "name": "LOGAN COUNTY WATERFOWL PRODUCTION AREA",
@@ -1872,10 +1882,19 @@
      "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
      "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=2852&outFields=*&returnGeometry=false&f=html",
      "name_field": "ORGNAME"
+    },
+    {
+     "id": "fws2839",
+     "name": "LOGAN COUNTY WATERFOWL PRODUCTION AREA",
+     "type": "U.S. Fish & Wildlife Service",
+     "acres": 673.0,
+     "acres_from": "the key's acres",
+     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
+     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=2839&outFields=*&returnGeometry=false&f=html",
+     "name_field": "ORGNAME"
     }
    ],
    "record_ids": [
-    "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#2738",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#2812",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#2923",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#2864",
@@ -2080,9 +2099,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 45145.5,
-     "official_acres": 45264.0,
-     "times": 1.0,
+     "outline_acres": 43385.7,
+     "official_acres": 30611.0,
+     "times": 1.42,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -2102,11 +2121,11 @@
     },
     "T5": {
      "flag": "SCATTERED",
-     "pieces": 225,
+     "pieces": 223,
      "flags": [
       "SCATTERED"
      ],
-     "note": "225 pieces spread over 140 km"
+     "note": "223 pieces spread over 140 km"
     },
     "T6": {
      "flag": "PASS"
@@ -2120,7 +2139,7 @@
     },
     "T9": {
      "last_edit": "2026-08-24",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -2175,10 +2194,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 8649.4,
-     "official_acres": 17281.0,
-     "times": 2.0,
+     "official_acres": 8643.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -2198,7 +2217,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-99.146457956731 48.2890658422935]"
+     "note": "Ring Self-intersection[-99.146457956731 48.2890658422935]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2217,8 +2242,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 17,281 acres (8,649 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-99.146457956731 48.2890658422935]."
   },
   {
    "ref": "US-0432",
@@ -2266,11 +2291,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 4014.0,
      "official_acres": 7222.0,
-     "times": 1.8,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 4012.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 4,012 ac, all providers added 7,222 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -2304,8 +2331,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 1.8 times smaller than the official 7,222 acres (4,014 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0433",
@@ -2353,10 +2380,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 3215.5,
-     "official_acres": 6424.0,
-     "times": 2.0,
+     "official_acres": 3212.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -2391,8 +2418,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 6,424 acres (3,216 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0434",
@@ -2440,11 +2467,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 14057.3,
      "official_acres": 27889.0,
-     "times": 1.98,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 14050.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 14,050 ac, all providers added 27,889 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -2464,7 +2493,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-100.174973462723 46.6935769759834]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-100.174973462723 46.6935769759834]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2483,8 +2518,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OFF: The outline is 2.0 times smaller than the official 27,889 acres (14,057 ac drawn) (+2 more flags)."
+   "score": 2,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-100.174973462723 46.6935769759834]; 1 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-0435",
@@ -2532,10 +2567,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 27339.2,
-     "official_acres": 54662.0,
-     "times": 2.0,
+     "official_acres": 27331.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -2555,7 +2590,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2574,8 +2615,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 54,662 acres (27,339 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
   },
   {
    "ref": "US-0436",
@@ -2623,10 +2664,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 2999.5,
-     "official_acres": 5998.0,
-     "times": 2.0,
+     "official_acres": 2999.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -2661,8 +2702,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 5,998 acres (3,000 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0437",
@@ -2786,10 +2827,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 7016.7,
-     "official_acres": 14020.0,
-     "times": 2.0,
+     "official_acres": 7010.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -2809,7 +2850,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2828,8 +2875,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 14,020 acres (7,017 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
   },
   {
    "ref": "US-0439",
@@ -2877,10 +2924,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 31567.5,
-     "official_acres": 63102.0,
-     "times": 2.0,
+     "official_acres": 31551.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -2900,7 +2947,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2919,8 +2972,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 63,102 acres (31,568 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "TINY HOLES: The shape has problems: 2 hole(s) under 100 m2."
   },
   {
    "ref": "US-0440",
@@ -2935,18 +2988,8 @@
    "outline_from": [
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0"
    ],
-   "acres_drawn": 19536.5,
+   "acres_drawn": 17187.6,
    "records": [
-    {
-     "id": "fws5767",
-     "name": "CASS COUNTY WATERFOWL PRODUCTION AREA",
-     "type": "U.S. Fish & Wildlife Service",
-     "acres": 2348.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
-     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=5767&outFields=*&returnGeometry=false&f=html",
-     "name_field": "ORGNAME"
-    },
     {
      "id": "fws5756",
      "name": "BARNES COUNTY WATERFOWL PRODUCTION AREA",
@@ -3056,10 +3099,19 @@
      "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
      "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=5790&outFields=*&returnGeometry=false&f=html",
      "name_field": "ORGNAME"
+    },
+    {
+     "id": "fws5800",
+     "name": "STEELE COUNTY WATERFOWL PRODUCTION AREA",
+     "type": "U.S. Fish & Wildlife Service",
+     "acres": 340.0,
+     "acres_from": "the key's acres",
+     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
+     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=5800&outFields=*&returnGeometry=false&f=html",
+     "name_field": "ORGNAME"
     }
    ],
    "record_ids": [
-    "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#5767",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#5756",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#5799",
     "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#5777",
@@ -3146,9 +3198,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 19536.5,
-     "official_acres": 19521.0,
-     "times": 1.0,
+     "outline_acres": 17187.6,
+     "official_acres": 14218.0,
+     "times": 1.21,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -3168,11 +3220,11 @@
     },
     "T5": {
      "flag": "SCATTERED",
-     "pieces": 94,
+     "pieces": 91,
      "flags": [
       "SCATTERED"
      ],
-     "note": "94 pieces spread over 141 km"
+     "note": "91 pieces spread over 141 km"
     },
     "T6": {
      "flag": "PASS"
@@ -3186,7 +3238,7 @@
     },
     "T9": {
      "last_edit": "2026-08-24",
-     "read": "2026-11-02",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -3253,7 +3305,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.033,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3602,7 +3660,7 @@
     },
     "T9": {
      "last_edit": "2026-06-22",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -3714,7 +3772,7 @@
     },
     "T9": {
      "last_edit": "2026-06-22",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -3815,7 +3873,7 @@
     },
     "T9": {
      "last_edit": "2026-06-22",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -3916,7 +3974,7 @@
     },
     "T9": {
      "last_edit": "2026-06-22",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4007,7 +4065,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -4021,7 +4085,7 @@
     },
     "T9": {
      "last_edit": "2026-06-22",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4122,7 +4186,7 @@
     },
     "T9": {
      "last_edit": "2026-06-22",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4223,7 +4287,7 @@
     },
     "T9": {
      "last_edit": "2026-06-22",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4333,7 +4397,7 @@
     },
     "T9": {
      "last_edit": "2026-06-22",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4424,7 +4488,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "3 hole(s) under 100 m2"
+     "note": "3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -4446,7 +4516,7 @@
     },
     "T9": {
      "last_edit": "2026-06-22",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4547,7 +4617,7 @@
     },
     "T9": {
      "last_edit": "2026-06-22",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4681,7 +4751,7 @@
     },
     "T9": {
      "last_edit": "2026-06-22",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4770,7 +4840,7 @@
     },
     "T9": {
      "last_edit": "2026-06-22",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4871,7 +4941,7 @@
     },
     "T9": {
      "last_edit": "2026-06-22",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4944,11 +5014,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-4572",
@@ -5014,11 +5084,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 137 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 137 m outside the outline."
   },
   {
    "ref": "US-5639",
@@ -5131,77 +5201,53 @@
    "name": "Homen State Forest",
    "key_name": "Homen State Forest",
    "type": "State Forest",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     48.9496,
     -100.252
    ],
-   "outline_from": [
-    "https://services3.arcgis.com/G9FKQ0xH9VagrUos/arcgis/rest/services/NDPRD_Boundaries/FeatureServer/0"
-   ],
-   "acres_drawn": 322.3,
-   "records": [
-    {
-     "id": "sgndc26",
-     "name": "Homen State Forest",
-     "type": "North Dakota Parks and Recreation Department (credit) (park, state GIS table)",
-     "acres": 322.1,
-     "acres_from": "acres field",
-     "layer": "https://services3.arcgis.com/G9FKQ0xH9VagrUos/arcgis/rest/services/NDPRD_Boundaries/FeatureServer/0",
-     "link": "https://services3.arcgis.com/G9FKQ0xH9VagrUos/arcgis/rest/services/NDPRD_Boundaries/FeatureServer/0/query?objectIds=26&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    }
-   ],
-   "record_ids": [
-    "https://services3.arcgis.com/G9FKQ0xH9VagrUos/arcgis/rest/services/NDPRD_Boundaries/FeatureServer/0#26"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "OUTSIDE",
-     "metres": 9539.2
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 322.3,
-     "official_acres": 322.1,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Homen State Forest",
-     "record_name": "Homen State Forest"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "state forest",
-     "record_kind": "state forest",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2026-06-01",
-     "read": "2026-10-30",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OUTSIDE: POTA's pin is 9.5 km outside the outline."
+   "score": 0,
+   "why": "Nothing could be tested."
   },
   {
    "ref": "US-5743",
@@ -5495,7 +5541,7 @@
     },
     "T9": {
      "last_edit": "2026-06-22",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5746,7 +5792,13 @@
       "SLIVERS",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-102.920191756683 47.6886274145567]; 2 piece(s) under 10 m wide; 332 pieces spread over 230 km"
+     "note": "Ring Self-intersection[-102.920191756683 47.6886274145567]; 2 piece(s) under 10 m wide; 332 pieces spread over 230 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5826,7 +5878,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-97.2800073053725 46.4200650851929]"
+     "note": "Ring Self-intersection[-97.2800073053725 46.4200650851929]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5928,7 +5986,7 @@
     },
     "T9": {
      "last_edit": "2026-06-22",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6017,7 +6075,7 @@
     },
     "T9": {
      "last_edit": "2026-06-22",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6094,7 +6152,7 @@
     },
     "T9": {
      "last_edit": "2026-06-01",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6194,7 +6252,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6396,7 +6454,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6540,7 +6598,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6728,7 +6786,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6828,7 +6886,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6994,7 +7052,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7138,7 +7196,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7238,7 +7296,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7360,7 +7418,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7460,7 +7518,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7485,16 +7543,6 @@
    "acres_drawn": 6955.0,
    "records": [
     {
-     "id": "ndw342",
-     "name": "MacLean Bottoms",
-     "type": "North Dakota Game and Fish WMAs",
-     "acres": 6955.0,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wildlife_Management_Areas/FeatureServer/0",
-     "link": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wildlife_Management_Areas/FeatureServer/0/query?objectIds=342&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Unit_Name"
-    },
-    {
      "id": "sgnda342",
      "name": "MacLean Bottoms",
      "type": "North Dakota Game & Fish (wild, state GIS table)",
@@ -7506,7 +7554,6 @@
     }
    ],
    "record_ids": [
-    "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wildlife_Management_Areas/FeatureServer/0#342",
     "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wildlife_Management_Areas/FeatureServer/0#342"
    ],
    "tests": {
@@ -7548,7 +7595,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-10-30",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7603,10 +7650,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 78.2,
-     "official_acres": 156.0,
-     "times": 1.99,
+     "official_acres": 78.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -7641,8 +7688,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 156 acres (78 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-8521",
@@ -7690,10 +7737,10 @@
      "metres": 54.1
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 638.1,
-     "official_acres": 1276.0,
-     "times": 2.0,
+     "official_acres": 638.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -7728,8 +7775,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 54 m outside the outline (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 54 m outside the outline."
   },
   {
    "ref": "US-8522",
@@ -7777,10 +7824,10 @@
      "metres": 18.0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1045.1,
-     "official_acres": 2088.0,
-     "times": 2.0,
+     "official_acres": 1044.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -7815,8 +7862,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 18 m outside the outline (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 18 m outside the outline."
   },
   {
    "ref": "US-8524",
@@ -9593,7 +9640,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -9681,7 +9728,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -9781,7 +9828,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -9881,7 +9928,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -10037,7 +10084,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "3 hole(s) under 100 m2"
+     "note": "3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -10057,7 +10110,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -10170,7 +10223,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -10258,7 +10311,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -10346,7 +10399,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -10446,7 +10499,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -10535,7 +10588,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -10635,7 +10688,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -10723,7 +10776,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -10823,7 +10876,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -10923,7 +10976,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11125,7 +11178,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11315,7 +11368,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11329,7 +11388,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11433,7 +11492,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11533,7 +11592,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11633,7 +11692,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11733,7 +11792,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11833,7 +11892,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11933,7 +11992,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12033,7 +12092,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12133,7 +12192,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12233,7 +12292,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12333,7 +12392,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12433,7 +12492,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12521,7 +12580,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12621,7 +12680,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12721,7 +12780,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12821,7 +12880,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12943,7 +13002,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -13043,7 +13102,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -13143,7 +13202,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -13247,7 +13306,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -13335,7 +13394,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -13435,7 +13494,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -13535,7 +13594,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -13707,9 +13766,11 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 4302.2,
-     "official_acres": 4272.7,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_acres": 4209.0,
+     "times": 1.02,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 4113.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 4,113 ac, all providers added 4,209 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -13729,7 +13790,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-97.3411348936458 48.0635647761961]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-97.3411348936458 48.0635647761961]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13743,7 +13810,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -13865,7 +13932,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -13965,7 +14032,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -14087,7 +14154,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -14209,7 +14276,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -14309,7 +14376,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -14329,9 +14396,10 @@
     -101.276
    ],
    "outline_from": [
-    "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wildlife_Management_Areas/FeatureServer/0"
+    "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wildlife_Management_Areas/FeatureServer/0",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 927.3,
+   "acres_drawn": 931.7,
    "records": [
     {
      "id": "ndw301",
@@ -14372,13 +14440,24 @@
      "layer": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wildlife_Management_Areas/FeatureServer/0",
      "link": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wildlife_Management_Areas/FeatureServer/0/query?objectIds=141&outFields=*&returnGeometry=false&f=html",
      "name_field": "Unit_Name"
+    },
+    {
+     "id": "padus#215615",
+     "name": "Sweetbriar Lake",
+     "type": "3301 State Recreation Area",
+     "category": "Fee",
+     "acres": 875.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=215615&outFields=*&returnGeometry=false&f=html"
     }
    ],
    "record_ids": [
     "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wildlife_Management_Areas/FeatureServer/0#301",
     "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wildlife_Management_Areas/FeatureServer/0#141",
     "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wildlife_Management_Areas/FeatureServer/0#301",
-    "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wildlife_Management_Areas/FeatureServer/0#141"
+    "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wildlife_Management_Areas/FeatureServer/0#141",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#215615"
    ],
    "tests": {
     "T1": {
@@ -14387,7 +14466,7 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 927.3,
+     "outline_acres": 931.7,
      "official_acres": 927.5,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
@@ -14396,7 +14475,11 @@
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Sweet Briar Lake Wildlife Management Area",
-     "record_name": "Sweet Briar Lake"
+     "record_name": "Sweet Briar Lake",
+     "worst_record": {
+      "name": "Sweetbriar Lake",
+      "score": 0.476
+     }
     },
     "T4": {
      "park_kind": "wma",
@@ -14419,7 +14502,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -14541,7 +14624,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -14663,7 +14746,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -14763,7 +14846,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -14895,7 +14978,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -14995,7 +15078,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -15095,7 +15178,7 @@
     },
     "T9": {
      "last_edit": "2026-10-29",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },

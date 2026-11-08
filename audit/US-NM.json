@@ -1,7 +1,8 @@
 {
  "area": "US-NM",
- "built": "2026-11-02",
+ "built": "2026-11-08",
  "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
  "parks": [
   {
    "ref": "US-0012",
@@ -201,10 +202,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 24868.2,
-     "official_acres": 49722.0,
-     "times": 2.0,
+     "official_acres": 24861.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -239,8 +240,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 49,722 acres (24,868 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0458",
@@ -288,10 +289,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 57057.8,
-     "official_acres": 114098.0,
-     "times": 2.0,
+     "official_acres": 57049.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -326,8 +327,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 114,098 acres (57,058 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0459",
@@ -375,10 +376,10 @@
      "metres": 635.2
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 8717.1,
-     "official_acres": 17426.0,
-     "times": 2.0,
+     "official_acres": 8713.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -399,7 +400,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-105.144427910977 35.5232791537617]; 3 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-105.144427910977 35.5232791537617]; 3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -418,8 +425,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 6,
-   "why": "OUTSIDE: POTA's pin is 635 m outside the outline (+3 more flags)."
+   "score": 5,
+   "why": "OUTSIDE: POTA's pin is 635 m outside the outline (+2 more flags)."
   },
   {
    "ref": "US-0460",
@@ -467,10 +474,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 2750.5,
-     "official_acres": 5494.0,
-     "times": 2.0,
+     "official_acres": 2747.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -491,7 +498,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-104.572596501703 36.5807132941924]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-104.572596501703 36.5807132941924]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -510,8 +523,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OFF: The outline is 2.0 times smaller than the official 5,494 acres (2,750 ac drawn) (+2 more flags)."
+   "score": 2,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-104.572596501703 36.5807132941924]; 1 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-0462",
@@ -559,10 +572,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 227874.3,
-     "official_acres": 455703.0,
-     "times": 2.0,
+     "official_acres": 227852.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -597,8 +610,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 455,703 acres (227,874 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0547",
@@ -646,10 +659,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 3233.6,
-     "official_acres": 6462.0,
-     "times": 2.0,
+     "official_acres": 3231.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -684,8 +697,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 6,462 acres (3,234 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0678",
@@ -1126,7 +1139,13 @@
       "SELF-INTERSECTION",
       "SLIVERS"
      ],
-     "note": "Ring Self-intersection[-108.108641284112 34.9955884742812]; 1 piece(s) under 10 m wide"
+     "note": "Ring Self-intersection[-108.108641284112 34.9955884742812]; 1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1457,7 +1476,7 @@
    "name": "Salinas Pueblo Missions, Gran Quivira Unit, National Monument",
    "key_name": "Salinas Pueblo Missions, Gran Quivira Unit, National Monument",
    "type": "National Monument",
-   "grade": "approximate",
+   "grade": "official",
    "pin": [
     34.26,
     -106.091
@@ -1710,7 +1729,8 @@
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
    ],
    "acres_drawn": 671.3,
    "records": [
@@ -1753,13 +1773,24 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=14052&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
+    },
+    {
+     "id": "sgnmc14052",
+     "name": "Datil Well Recreation Area Campground",
+     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
+     "acres": 2.0,
+     "acres_from": "acres field",
+     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=14052&outFields=*&returnGeometry=false&f=html",
+     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#13971",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#14052",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9#14052",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#14052"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#14052",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#14052"
    ],
    "tests": {
     "T1": {
@@ -1769,18 +1800,18 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 671.3,
-     "official_acres": 673.3,
+     "official_acres": 671.3,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "WEAK",
-     "score": 0.75,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Datil Well Campground BLM Recreation Management Area",
      "record_name": "Datil Well Recreation Area Campground",
      "worst_record": {
       "name": "Datil Well",
-      "score": 0.5
+      "score": 0.667
      }
     },
     "T4": {
@@ -1803,14 +1834,17 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-10-13",
+     "read": "2026-11-05",
+     "flag": "PASS"
     }
    },
-   "problems": [],
+   "problems": [
+    "official acres count once the land of rst14052: it lies inside a bigger record from the same source"
+   ],
    "status": "graded",
-   "score": 1,
-   "why": "WEAK: The record name 'Datil Well Recreation Area Campground' does not match POTA's name 'Datil Well Campground BLM Recreation Management Area' (score 0.75)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-11782",
@@ -1854,8 +1888,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Dunes BLM Recreation Management Area",
      "record_name": "Dunes Vehicle Recreation Area"
     },
@@ -1885,8 +1919,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Dunes Vehicle Recreation Area' does not match POTA's name 'Dunes BLM Recreation Management Area' (score 0.50)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-11783",
@@ -1953,9 +1987,10 @@
    ],
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
    ],
-   "acres_drawn": 24654.1,
+   "acres_drawn": 24654.2,
    "records": [
     {
      "id": "sgakg14020",
@@ -1976,11 +2011,22 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?objectIds=14020&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
+    },
+    {
+     "id": "sgnmc14020",
+     "name": "Fort Stanton",
+     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
+     "acres": 24654.1,
+     "acres_from": "acres field",
+     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=14020&outFields=*&returnGeometry=false&f=html",
+     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#14020",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#14020"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#14020",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#14020"
    ],
    "tests": {
     "T1": {
@@ -1989,7 +2035,7 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 24654.1,
+     "outline_acres": 24654.2,
      "official_acres": 24654.1,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
@@ -2020,8 +2066,9 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-10-13",
+     "read": "2026-11-05",
+     "flag": "PASS"
     }
    },
    "problems": [],
@@ -2159,8 +2206,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Santa Cruz Lake BLM Recreation Management Area",
      "record_name": "Santa Cruz Lake"
     },
@@ -2191,8 +2238,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 6,
-   "why": "MISMATCH: The record name 'Santa Cruz Lake' does not match POTA's name 'Santa Cruz Lake BLM Recreation Management Area' (score 0.67) (+1 more flag)."
+   "score": 3,
+   "why": "CONFLICT: The record is the whole lake but the park is a recreation area on it."
   },
   {
    "ref": "US-11795",
@@ -2429,8 +2476,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "WEAK",
-     "score": 0.75,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Johnson (Gordy's) Hill BLM Recreation Management Area",
      "record_name": "Johnson (Gordy's) Hill South"
     },
@@ -2460,8 +2507,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 155 m outside the outline (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 155 m outside the outline."
   },
   {
    "ref": "US-11807",
@@ -2517,14 +2564,10 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.4,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Simon Canyon ACEC BLM Special Recreation Management Area",
-     "record_name": "Simón Canyon (Recreation Area)",
-     "worst_record": {
-      "name": "Simon Canyon",
-      "score": 0.4
-     }
+     "record_name": "Simón Canyon (Recreation Area)"
     },
     "T4": {
      "park_kind": null,
@@ -2552,8 +2595,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Simón Canyon (Recreation Area)' does not match POTA's name 'Simon Canyon ACEC BLM Special Recreation Management Area' (score 0.40)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-11813",
@@ -2761,34 +2804,52 @@
     32.3623,
     -104.299
    ],
-   "outline_from": [],
+   "outline_from": [
+    "trails/US-11815.json"
+   ],
    "acres_drawn": null,
-   "records": [],
+   "records": [
+    {
+     "id": "trl:US-11815",
+     "name": "La Cueva Non-Motorized Trail System Recreation Site",
+     "type": "trail",
+     "layer": "trails/US-11815.json"
+    }
+   ],
    "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "NEAR",
+     "metres": 268.5
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "La Cueva Non-Motorized Trail System Recreation Site",
+     "record_name": "La Cueva Non-Motorized Trail System Recreation Site"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": "trail",
+     "record_kind": "trail",
+     "flag": "PASS"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T6": {
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "detail_m": 0.09,
+     "declared_m": null,
+     "coordinate_step_m": 0.09,
+     "median_spacing_m": 0.0,
+     "flag": "PASS"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -2801,8 +2862,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "Nothing could be tested."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 268 m outside the outline."
   },
   {
    "ref": "US-11816",
@@ -2816,7 +2877,8 @@
    ],
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
    ],
    "acres_drawn": 57638.4,
    "records": [
@@ -2849,12 +2911,23 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?objectIds=14039&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
+    },
+    {
+     "id": "sgnmc14039",
+     "name": "Hackberry Lake OHV",
+     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
+     "acres": 57605.1,
+     "acres_from": "acres field",
+     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=14039&outFields=*&returnGeometry=false&f=html",
+     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9#14053",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#14053",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#14039"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#14039",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#14039"
    ],
    "tests": {
     "T1": {
@@ -2862,21 +2935,17 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 57638.4,
-     "official_acres": 115210.9,
-     "times": 2.0,
+     "official_acres": 57605.8,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Hackberry Lake OHV Use Area BLM Recreation Management Area",
-     "record_name": "Hackberry Lake OHV Area",
-     "worst_record": {
-      "name": "Hackberry Lake OHV",
-      "score": 0.667
-     }
+     "record_name": "Hackberry Lake OHV Area"
     },
     "T4": {
      "park_kind": null,
@@ -2898,14 +2967,15 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-10-13",
+     "read": "2026-11-05",
+     "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "MISMATCH: The record name 'Hackberry Lake OHV Area' does not match POTA's name 'Hackberry Lake OHV Use Area BLM Recreation Management Area' (score 0.67) (+1 more flag)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-11817",
@@ -2988,15 +3058,15 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1939.3,
-     "official_acres": 3867.3,
-     "times": 1.99,
+     "official_acres": 1933.6,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "WEAK",
-     "score": 0.75,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Haystack Mountain OHV Area BLM Recreation Management Area",
      "record_name": "Haystack Mountain OHV Area"
     },
@@ -3026,8 +3096,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 3,867 acres (1,939 ac drawn) (+1 more flag)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-11821",
@@ -3242,8 +3312,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.5,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "The Box BLM Recreation Management Area",
      "record_name": "The Box"
     },
@@ -3273,8 +3343,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'The Box' does not match POTA's name 'The Box BLM Recreation Management Area' (score 0.50)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-11840",
@@ -3457,14 +3527,10 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.6,
+     "flag": "WEAK",
+     "score": 0.75,
      "pota_name": "Rio Bonito Acquired Lands: Salazar Tract, BLM Recreation Management Area",
-     "record_name": "Rio Bonito Acquired Lands Tract 4",
-     "worst_record": {
-      "name": "Rio Bonito Acquired Lands Tract 1",
-      "score": 0.6
-     }
+     "record_name": "Rio Bonito Acquired Lands Tract 4"
     },
     "T4": {
      "park_kind": null,
@@ -3510,8 +3576,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 6,
-   "why": "MISMATCH: The record name 'Rio Bonito Acquired Lands Tract 4' does not match POTA's name 'Rio Bonito Acquired Lands: Salazar Tract, BLM Recreation Management Area' (score 0.60) (+1 more flag)."
+   "score": 4,
+   "why": "SPILL: The outline covers 52% of US-13185 Dow Canyon Tract BLM Recreation Management Area, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "US-12111",
@@ -3684,8 +3750,8 @@
      "outline_acres": 262903.8
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "El Malpais BLM National Conservation Area",
      "record_name": "El Malpais National Conservation Area"
     },
@@ -3700,7 +3766,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-107.831020481926 34.8673351903399]"
+     "note": "Ring Self-intersection[-107.831020481926 34.8673351903399]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3719,8 +3791,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "MISMATCH: The record name 'El Malpais National Conservation Area' does not match POTA's name 'El Malpais BLM National Conservation Area' (score 0.67) (+1 more flag)."
+   "score": 1,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-107.831020481926 34.8673351903399]."
   },
   {
    "ref": "US-12590",
@@ -3734,7 +3806,8 @@
    ],
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
    ],
    "acres_drawn": 3315.4,
    "records": [
@@ -3757,11 +3830,22 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=14013&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
+    },
+    {
+     "id": "sgnmc14013",
+     "name": "Alien Run",
+     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
+     "acres": 3315.3,
+     "acres_from": "acres field",
+     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=14013&outFields=*&returnGeometry=false&f=html",
+     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#14013",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#14013"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#14013",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#14013"
    ],
    "tests": {
     "T1": {
@@ -3777,7 +3861,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.4,
+     "score": 0.5,
      "pota_name": "Alien Run Mountain Bike Trail BLM Recreation Management Area",
      "record_name": "Alien Run"
     },
@@ -3801,14 +3885,15 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-10-13",
+     "read": "2026-11-05",
+     "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 4,
-   "why": "MISMATCH: The record name 'Alien Run' does not match POTA's name 'Alien Run Mountain Bike Trail BLM Recreation Management Area' (score 0.40) (+1 more flag)."
+   "why": "MISMATCH: The record name 'Alien Run' does not match POTA's name 'Alien Run Mountain Bike Trail BLM Recreation Management Area' (score 0.50) (+1 more flag)."
   },
   {
    "ref": "US-12591",
@@ -3823,7 +3908,8 @@
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
    ],
    "acres_drawn": 2.1,
    "records": [
@@ -3856,12 +3942,23 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=11412&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
+    },
+    {
+     "id": "sgnmc11412",
+     "name": "Sunset Reef Campground",
+     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
+     "acres": 2.1,
+     "acres_from": "acres field",
+     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=11412&outFields=*&returnGeometry=false&f=html",
+     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9#11412",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#11412",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#11412"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#11412",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#11412"
    ],
    "tests": {
     "T1": {
@@ -3876,8 +3973,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "WEAK",
-     "score": 0.75,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Sunset Reef Campground BLM Recreation Management Area",
      "record_name": "Sunset Reef Campground"
     },
@@ -3901,14 +3998,15 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-10-13",
+     "read": "2026-11-05",
+     "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "WEAK: The record name 'Sunset Reef Campground' does not match POTA's name 'Sunset Reef Campground BLM Recreation Management Area' (score 0.75)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-12592",
@@ -3975,9 +4073,10 @@
    ],
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
    ],
-   "acres_drawn": 23339.5,
+   "acres_drawn": 23339.6,
    "records": [
     {
      "id": "rst13982",
@@ -3998,11 +4097,22 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=13982&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
+    },
+    {
+     "id": "sgnmc13982",
+     "name": "Glade Run Recreation Area",
+     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
+     "acres": 23339.4,
+     "acres_from": "acres field",
+     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=13982&outFields=*&returnGeometry=false&f=html",
+     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#13982",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#13982"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#13982",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#13982"
    ],
    "tests": {
     "T1": {
@@ -4011,14 +4121,14 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 23339.5,
+     "outline_acres": 23339.6,
      "official_acres": 23339.4,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Glade Run Recreation Area BLM Recreation Management Area",
      "record_name": "Glade Run Recreation Area"
     },
@@ -4029,11 +4139,18 @@
     },
     "T5": {
      "flag": "SELF-INTERSECTION",
-     "pieces": 3,
+     "pieces": 2,
      "flags": [
-      "SELF-INTERSECTION"
+      "SELF-INTERSECTION",
+      "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-108.110326470483 36.9065650437661]"
+     "note": "Ring Self-intersection[-108.110326470483 36.9065650437661]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -4046,14 +4163,15 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-10-13",
+     "read": "2026-11-05",
+     "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "MISMATCH: The record name 'Glade Run Recreation Area' does not match POTA's name 'Glade Run Recreation Area BLM Recreation Management Area' (score 0.67) (+1 more flag)."
+   "score": 2,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-108.110326470483 36.9065650437661]; 1 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-12737",
@@ -4121,7 +4239,8 @@
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
    ],
    "acres_drawn": 8051.5,
    "records": [
@@ -4154,12 +4273,23 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=11071&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
+    },
+    {
+     "id": "sgnmc11071",
+     "name": "Aden Hills",
+     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
+     "acres": 8051.4,
+     "acres_from": "acres field",
+     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=11071&outFields=*&returnGeometry=false&f=html",
+     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9#11071",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#11071",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#11071"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#11071",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#11071"
    ],
    "tests": {
     "T1": {
@@ -4175,7 +4305,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.333,
+     "score": 0.4,
      "pota_name": "Aden Hills Off-Highway Vehicle Area BLM Recreation Management Area",
      "record_name": "Aden Hills"
     },
@@ -4191,7 +4321,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-107.07565015818 32.1698996257025]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-107.07565015818 32.1698996257025]; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -4204,14 +4340,15 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-10-13",
+     "read": "2026-11-05",
+     "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 5,
-   "why": "MISMATCH: The record name 'Aden Hills' does not match POTA's name 'Aden Hills Off-Highway Vehicle Area BLM Recreation Management Area' (score 0.33) (+2 more flags)."
+   "why": "MISMATCH: The record name 'Aden Hills' does not match POTA's name 'Aden Hills Off-Highway Vehicle Area BLM Recreation Management Area' (score 0.40) (+2 more flags)."
   },
   {
    "ref": "US-12785",
@@ -4259,10 +4396,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 4232.1,
-     "official_acres": 8460.0,
-     "times": 2.0,
+     "official_acres": 4230.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -4297,8 +4434,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 8,460 acres (4,232 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-12804",
@@ -4368,10 +4505,10 @@
      "metres": 31.7
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 572.5,
-     "official_acres": 1142.0,
-     "times": 1.99,
+     "official_acres": 571.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -4391,7 +4528,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -4410,8 +4553,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "NEAR: POTA's pin is 32 m outside the outline (+2 more flags)."
+   "score": 2,
+   "why": "NEAR: POTA's pin is 32 m outside the outline (+1 more flag)."
   },
   {
    "ref": "US-13001",
@@ -4478,9 +4621,10 @@
    ],
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
    ],
-   "acres_drawn": 3832.7,
+   "acres_drawn": 3832.8,
    "records": [
     {
      "id": "sgakg14015",
@@ -4501,11 +4645,22 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?objectIds=14015&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
+    },
+    {
+     "id": "sgnmc14015",
+     "name": "Quebradas Backcountry Byway",
+     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
+     "acres": 3833.7,
+     "acres_from": "acres field",
+     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=14015&outFields=*&returnGeometry=false&f=html",
+     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#14015",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#14015"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#14015",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#14015"
    ],
    "tests": {
     "T1": {
@@ -4514,14 +4669,14 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 3832.7,
+     "outline_acres": 3832.8,
      "official_acres": 3833.7,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "WEAK",
-     "score": 0.75,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Quebradas Backcountry Byway BLM Wilderness Area",
      "record_name": "Quebradas Backcountry Byway"
     },
@@ -4545,14 +4700,15 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-10-13",
+     "read": "2026-11-05",
+     "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "WEAK: The record name 'Quebradas Backcountry Byway' does not match POTA's name 'Quebradas Backcountry Byway BLM Wilderness Area' (score 0.75)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-13185",
@@ -4673,7 +4829,8 @@
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
    ],
    "acres_drawn": 4.2,
    "records": [
@@ -4706,12 +4863,23 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=11411&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
+    },
+    {
+     "id": "sgnmc11411",
+     "name": "Chosa Campground",
+     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
+     "acres": 4.2,
+     "acres_from": "acres field",
+     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=11411&outFields=*&returnGeometry=false&f=html",
+     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9#11411",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#11411",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#11411"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#11411",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#11411"
    ],
    "tests": {
     "T1": {
@@ -4726,8 +4894,8 @@
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
+     "flag": "PASS",
+     "score": 1.0,
      "pota_name": "Chosa Campground BLM Recreation Management Area",
      "record_name": "Chosa Campground"
     },
@@ -4751,14 +4919,15 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-10-13",
+     "read": "2026-11-05",
+     "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Chosa Campground' does not match POTA's name 'Chosa Campground BLM Recreation Management Area' (score 0.67)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-2686",
@@ -4840,7 +5009,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4929,7 +5098,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5018,7 +5187,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5107,7 +5276,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5174,7 +5343,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-106.120959471848 35.4459540302082]"
+     "note": "Ring Self-intersection[-106.120959471848 35.4459540302082]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5188,7 +5363,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5277,7 +5452,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5366,7 +5541,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5455,7 +5630,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5544,7 +5719,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5615,7 +5790,9 @@
      "outline_acres": 7909.7,
      "official_acres": 7761.0,
      "times": 1.02,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 7306.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 7,306 ac, all providers added 7,761 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -5644,7 +5821,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5744,7 +5921,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5823,7 +6000,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5837,7 +6020,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5916,7 +6099,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "4 hole(s) under 100 m2"
+     "note": "4 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 4,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5930,7 +6119,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6019,7 +6208,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6108,7 +6297,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6197,7 +6386,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6286,7 +6475,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6375,7 +6564,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6464,7 +6653,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6553,7 +6742,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6642,7 +6831,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6663,9 +6852,10 @@
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0"
+    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
    ],
-   "acres_drawn": 22085.9,
+   "acres_drawn": 28803.3,
    "records": [
     {
      "id": "padus#229286",
@@ -6696,12 +6886,23 @@
      "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
      "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=18&outFields=*&returnGeometry=false&f=html",
      "name_field": "Name"
+    },
+    {
+     "id": "sgnmc13998",
+     "name": "Navajo Lake Horse Trails",
+     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
+     "acres": 6764.9,
+     "acres_from": "acres field",
+     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=13998&outFields=*&returnGeometry=false&f=html",
+     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229286",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#184876",
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#18"
+    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#18",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#13998"
    ],
    "tests": {
     "T1": {
@@ -6709,10 +6910,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 22085.9,
+     "flag": "OFF",
+     "outline_acres": 28803.3,
      "official_acres": 17478.0,
-     "times": 1.26,
+     "times": 1.65,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -6732,7 +6933,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6745,8 +6952,8 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "last_edit": "2026-10-13",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6754,8 +6961,8 @@
     "record 229286: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 1,
-   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
+   "score": 2,
+   "why": "OFF: The outline is 1.6 times bigger than the official 17,478 acres (28,803 ac drawn) (+1 more flag)."
   },
   {
    "ref": "US-2708",
@@ -6837,7 +7044,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6926,7 +7133,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7015,7 +7222,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7104,7 +7311,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7193,7 +7400,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7286,7 +7493,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7375,7 +7582,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7464,7 +7671,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7553,7 +7760,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7642,7 +7849,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7731,7 +7938,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7873,7 +8080,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7995,7 +8202,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-105.783499013378 36.3931787493161]; 9 piece(s) under 10 m wide; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-105.783499013378 36.3931787493161]; 9 piece(s) under 10 m wide; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 9
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8077,7 +8290,13 @@
       "SLIVERS",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-105.729034839523 34.2091391403397]; 2 piece(s) under 10 m wide; 59 pieces spread over 363 km"
+     "note": "Ring Self-intersection[-105.729034839523 34.2091391403397]; 2 piece(s) under 10 m wide; 59 pieces spread over 363 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8185,7 +8404,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-107.721156549025 33.455229931313]; 3 piece(s) under 10 m wide; 6 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-107.721156549025 33.455229931313]; 3 piece(s) under 10 m wide; 6 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 6,
+      "pieces": 3
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8266,7 +8491,13 @@
       "SELF-INTERSECTION",
       "SLIVERS"
      ],
-     "note": "Ring Self-intersection[-105.210573020405 33.6176101834287]; 2 piece(s) under 10 m wide"
+     "note": "Ring Self-intersection[-105.210573020405 33.6176101834287]; 2 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8385,7 +8616,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-105.562839215844 35.6093950756648]; 2 piece(s) under 10 m wide; 4 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-105.562839215844 35.6093950756648]; 2 piece(s) under 10 m wide; 4 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 4,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -8550,21 +8787,10 @@
     -106.864
    ],
    "outline_from": [
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
     "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0"
    ],
-   "acres_drawn": 5272.9,
+   "acres_drawn": 5260.6,
    "records": [
-    {
-     "id": "sgakg14047",
-     "name": "Prehistoric Trackways",
-     "type": "BLM recreation SITE polygons (national, 3,478) (land, state GIS table)",
-     "acres": 5262.1,
-     "acres_from": "acres field",
-     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
-     "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=14047&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
-    },
     {
      "id": "nca21271",
      "name": "Prehistoric Trackways National Monument",
@@ -8575,7 +8801,6 @@
     }
    ],
    "record_ids": [
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#14047",
     "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0#21271"
    ],
    "tests": {
@@ -8584,11 +8809,8 @@
      "metres": 660.4
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 5272.9,
-     "official_acres": 5262.1,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO FIGURE",
+     "outline_acres": 5260.6
     },
     "T3": {
      "flag": "PASS",
@@ -8769,11 +8991,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 133 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 133 m outside the outline."
   },
   {
    "ref": "US-4569",
@@ -8800,10 +9022,8 @@
    "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "NOTE",
-     "metres": 712670.5,
-     "was": "FAR",
-     "note": "the park spans several states / provinces (US-NM, US-TX): POTA's one pin may be in another part"
+     "flag": "NEAR",
+     "metres": 112.5
     },
     "T2": {
      "flag": "N/A",
@@ -8841,11 +9061,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 112 m outside the outline."
   },
   {
    "ref": "US-4575",
@@ -8911,11 +9131,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 449 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 449 m outside the outline."
   },
   {
    "ref": "US-4579",
@@ -8981,11 +9201,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 129 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 129 m outside the outline."
   },
   {
    "ref": "US-7479",
@@ -9046,7 +9266,13 @@
       "SELF-INTERSECTION",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-103.100363162041 36.5619794029774]; 57 pieces spread over 152 km"
+     "note": "Ring Self-intersection[-103.100363162041 36.5619794029774]; 57 pieces spread over 152 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9297,7 +9523,8 @@
    ],
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
    ],
    "acres_drawn": 463.0,
    "records": [
@@ -9320,11 +9547,22 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=13990&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
+    },
+    {
+     "id": "sgnmc13990",
+     "name": "Valley of Fires Recreation Area",
+     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
+     "acres": 463.0,
+     "acres_from": "acres field",
+     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=13990&outFields=*&returnGeometry=false&f=html",
+     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#13990",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#13990"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#13990",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#13990"
    ],
    "tests": {
     "T1": {
@@ -9364,8 +9602,9 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-10-13",
+     "read": "2026-11-05",
+     "flag": "PASS"
     }
    },
    "problems": [],
@@ -9384,12 +9623,23 @@
     -106.014
    ],
    "outline_from": [
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1"
    ],
-   "acres_drawn": 33872.5,
+   "acres_drawn": 33872.6,
    "records": [
+    {
+     "id": "sgnmc11047",
+     "name": "Red Sands OHV",
+     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
+     "acres": 33872.3,
+     "acres_from": "acres field",
+     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=11047&outFields=*&returnGeometry=false&f=html",
+     "name_field": "FET_NAME"
+    },
     {
      "id": "rma11047",
      "name": "Red Sands OHV",
@@ -9422,6 +9672,7 @@
     }
    ],
    "record_ids": [
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#11047",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9#11047",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#11047",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#11047"
@@ -9433,7 +9684,7 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 33872.5,
+     "outline_acres": 33872.6,
      "official_acres": 33872.3,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
@@ -9456,7 +9707,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-106.085680929852 32.6074349715192]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-106.085680929852 32.6074349715192]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9469,8 +9726,9 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-10-13",
+     "read": "2026-11-05",
+     "flag": "PASS"
     }
    },
    "problems": [],
@@ -9645,6 +9903,7 @@
    ],
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0"
    ],
    "acres_drawn": 10216.6,
@@ -9660,6 +9919,16 @@
      "name_field": "FET_NAME"
     },
     {
+     "id": "sgnmc13981",
+     "name": "Angel Peak Scenic Area",
+     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
+     "acres": 10216.1,
+     "acres_from": "acres field",
+     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=13981&outFields=*&returnGeometry=false&f=html",
+     "name_field": "FET_NAME"
+    },
+    {
      "id": "rst13981",
      "name": "Angel Peak Scenic Area",
      "type": "Bureau of Land Management",
@@ -9672,6 +9941,7 @@
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#13981",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#13981",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#13981"
    ],
    "tests": {
@@ -9712,8 +9982,9 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-10-13",
+     "read": "2026-11-05",
+     "flag": "PASS"
     }
    },
    "problems": [],
@@ -9856,11 +10127,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 44 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 44 m outside the outline."
   },
   {
    "ref": "US-8619",
@@ -9874,7 +10145,8 @@
    ],
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
    ],
    "acres_drawn": 4439.9,
    "records": [
@@ -9897,11 +10169,22 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=14080&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
+    },
+    {
+     "id": "sgnmc14080",
+     "name": "San Ysidro Trails Area",
+     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
+     "acres": 4439.0,
+     "acres_from": "acres field",
+     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
+     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=14080&outFields=*&returnGeometry=false&f=html",
+     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#14080",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#14080"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#14080",
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#14080"
    ],
    "tests": {
     "T1": {
@@ -9917,7 +10200,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.667,
      "pota_name": "San Ysidro Trials Area BLM Recreation Management Area",
      "record_name": "San Ysidro Trails Area"
     },
@@ -9941,14 +10224,15 @@
      "flag": "PASS"
     },
     "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "last_edit": "2026-10-13",
+     "read": "2026-11-05",
+     "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "MISMATCH: The record name 'San Ysidro Trails Area' does not match POTA's name 'San Ysidro Trials Area BLM Recreation Management Area' (score 0.50)."
+   "why": "MISMATCH: The record name 'San Ysidro Trails Area' does not match POTA's name 'San Ysidro Trials Area BLM Recreation Management Area' (score 0.67)."
   },
   {
    "ref": "US-8620",
@@ -10029,7 +10313,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "2 piece(s) under 10 m wide; 1 hole(s) under 100 m2"
+     "note": "2 piece(s) under 10 m wide; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -10190,7 +10480,7 @@
     },
     "T9": {
      "last_edit": "2026-07-30",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -10265,11 +10555,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   }
  ]
 }

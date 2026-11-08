@@ -1,7 +1,8 @@
 {
  "area": "US-NE",
- "built": "2026-11-02",
+ "built": "2026-11-08",
  "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
  "parks": [
   {
    "ref": "US-0441",
@@ -49,10 +50,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 3972.3,
-     "official_acres": 7936.0,
-     "times": 2.0,
+     "official_acres": 3968.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -87,8 +88,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 7,936 acres (3,972 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0442",
@@ -136,11 +137,13 @@
      "metres": 1592.7
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 46723.6,
      "official_acres": 92597.0,
-     "times": 1.98,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 46712.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 46,712 ac, all providers added 92,597 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -174,8 +177,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "OUTSIDE: POTA's pin is 1.6 km outside the outline (+1 more flag)."
+   "score": 3,
+   "why": "OUTSIDE: POTA's pin is 1.6 km outside the outline."
   },
   {
    "ref": "US-0443",
@@ -223,10 +226,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 19097.8,
-     "official_acres": 38186.0,
-     "times": 2.0,
+     "official_acres": 19093.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -261,8 +264,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 38,186 acres (19,098 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0445",
@@ -310,10 +313,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 2919.9,
-     "official_acres": 5832.0,
-     "times": 2.0,
+     "official_acres": 2916.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -355,8 +358,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 5,832 acres (2,920 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "DUPLICATE: Another park number uses the same record: US-13433."
   },
   {
    "ref": "US-0446",
@@ -457,10 +460,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 72365.7,
-     "official_acres": 144700.0,
-     "times": 2.0,
+     "official_acres": 72350.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -479,7 +482,15 @@
      "pieces": 1
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "US-9356",
+       "name": "Willow Lake Wildlife Management Area",
+       "share": 0.73
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -495,13 +506,13 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 144,700 acres (72,366 ac drawn)."
+   "score": 3,
+   "why": "SPILL: The outline covers 73% of US-9356 Willow Lake Wildlife Management Area, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "US-0675",
-   "name": "Missouri National Recreational River National Wild & Scenic River",
-   "key_name": "Missouri National Recreational River National Wild & Scenic River",
+   "name": "Missouri National Recreational River National Wild and Scenic River",
+   "key_name": "Missouri National Recreational River National Wild and Scenic River",
    "type": "National Wild & Scenic River",
    "grade": "official",
    "pin": [
@@ -539,7 +550,7 @@
     "T3": {
      "flag": "PASS",
      "score": 1.0,
-     "pota_name": "Missouri National Recreational River National Wild & Scenic River",
+     "pota_name": "Missouri National Recreational River National Wild and Scenic River",
      "record_name": "Missouri National Recreational River"
     },
     "T4": {
@@ -576,7 +587,7 @@
     },
     "T9": {
      "last_edit": "2026-10-16",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -917,11 +928,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1672.9,
      "official_acres": 3327.0,
-     "times": 1.99,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 1664.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 1,664 ac, all providers added 3,327 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -940,7 +953,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -954,14 +973,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 3,327 acres (1,673 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
   },
   {
    "ref": "US-11867",
@@ -1043,11 +1062,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 557.9,
      "official_acres": 1114.0,
-     "times": 2.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.01,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 564.2,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 564 ac, all providers added 1,114 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -1076,14 +1097,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 1,114 acres (558 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-11868",
@@ -1154,11 +1175,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1119.8,
      "official_acres": 2238.0,
-     "times": 2.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.02,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 1140.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 1,140 ac, all providers added 2,238 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -1187,14 +1210,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 2,238 acres (1,120 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-11871",
@@ -1265,11 +1288,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1031.8,
      "official_acres": 1828.0,
-     "times": 1.77,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 916.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 916 ac, all providers added 1,828 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -1298,14 +1323,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 1.8 times smaller than the official 1,828 acres (1,032 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-12087",
@@ -1375,7 +1400,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -1452,7 +1477,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -1529,7 +1554,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -1606,7 +1631,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -1676,8 +1701,10 @@
      "flag": "PASS",
      "outline_acres": 1991.7,
      "official_acres": 2028.0,
-     "times": 1.02,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 1990.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 1,990 ac, all providers added 2,028 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -1706,7 +1733,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -1783,7 +1810,7 @@
     },
     "T9": {
      "last_edit": "2026-09-14",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -1872,11 +1899,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 330.1,
      "official_acres": 555.0,
-     "times": 1.68,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 297.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 297 ac, all providers added 555 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -1915,15 +1944,15 @@
     },
     "T9": {
      "last_edit": "2023-03-23",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-03-23, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-03-23, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OFF: The outline is 1.7 times smaller than the official 555 acres (330 ac drawn) (+2 more flags)."
+   "score": 2,
+   "why": "DUPLICATE: Another park number uses the same record: US-2612 (+1 more flag)."
   },
   {
    "ref": "US-12383",
@@ -2005,7 +2034,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -2094,11 +2123,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 210.0,
      "official_acres": 420.0,
-     "times": 2.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 210.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 210 ac, all providers added 420 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -2127,14 +2158,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 420 acres (210 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-12385",
@@ -2216,7 +2247,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -2305,7 +2336,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -2372,10 +2403,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 159.2,
-     "official_acres": 318.0,
-     "times": 2.0,
+     "official_acres": 160.0,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -2405,14 +2436,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 318 acres (159 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-12407",
@@ -2472,11 +2503,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 45.3,
      "official_acres": 85.0,
-     "times": 1.87,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 44.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 44 ac, all providers added 85 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -2505,14 +2538,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 1.9 times smaller than the official 85 acres (45 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-12408",
@@ -2594,7 +2627,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -2683,7 +2716,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -2772,7 +2805,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -2839,10 +2872,10 @@
      "metres": 1.3
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 139.0,
-     "official_acres": 278.0,
-     "times": 2.0,
+     "official_acres": 139.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -2872,14 +2905,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 1 m outside the outline (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 1 m outside the outline."
   },
   {
    "ref": "US-12686",
@@ -2949,7 +2982,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -3016,11 +3049,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1559.9,
      "official_acres": 3011.0,
-     "times": 1.93,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 1531.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 1,531 ac, all providers added 3,011 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -3053,14 +3088,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 1.9 times smaller than the official 3,011 acres (1,560 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-12946",
@@ -3130,7 +3165,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -3219,7 +3254,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -3297,11 +3332,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 848.2,
      "official_acres": 1692.0,
-     "times": 1.99,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 847.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 847 ac, all providers added 1,692 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -3330,14 +3367,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 1,692 acres (848 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-13093",
@@ -3408,11 +3445,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 635.7,
      "official_acres": 1270.0,
-     "times": 2.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 635.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 635 ac, all providers added 1,270 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -3441,14 +3480,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 1,270 acres (636 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-13202",
@@ -3508,11 +3547,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 238.1,
      "official_acres": 397.0,
-     "times": 1.67,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 238.3,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 238 ac, all providers added 397 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -3541,14 +3582,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 1.7 times smaller than the official 397 acres (238 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-13204",
@@ -3630,7 +3671,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -3723,7 +3764,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -3823,7 +3864,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -3900,7 +3941,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -3989,7 +4030,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4056,11 +4097,13 @@
      "metres": 7.9
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 199.5,
      "official_acres": 391.0,
-     "times": 1.96,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 199.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 199 ac, all providers added 391 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -4089,14 +4132,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 8 m outside the outline (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 8 m outside the outline."
   },
   {
    "ref": "US-13328",
@@ -4178,7 +4221,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4271,7 +4314,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4372,7 +4415,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "19 hole(s) under 100 m2"
+     "note": "19 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 19,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -4385,7 +4434,6 @@
      "flag": "DUPLICATE",
      "parks": {
       "US-5629": [
-       "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268#276",
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#2345"
       ]
      },
@@ -4393,7 +4441,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4470,7 +4518,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4547,7 +4595,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4602,10 +4650,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 2919.9,
-     "official_acres": 5832.0,
-     "times": 2.0,
+     "official_acres": 2916.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -4647,8 +4695,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 5,832 acres (2,920 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "DUPLICATE: Another park number uses the same record: US-0445."
   },
   {
    "ref": "US-13434",
@@ -4782,7 +4830,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4873,7 +4921,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -4940,11 +4988,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 61.4,
      "official_acres": 121.0,
-     "times": 1.97,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.02,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 62.6,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 63 ac, all providers added 121 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -4973,14 +5023,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 121 acres (61 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-13536",
@@ -5107,11 +5157,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1310.1,
      "official_acres": 2412.0,
-     "times": 1.84,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 1305.5,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 1,306 ac, all providers added 2,412 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -5147,14 +5199,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 1.8 times smaller than the official 2,412 acres (1,310 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "DUPLICATE: Another park number uses the same record: US-5659."
   },
   {
    "ref": "US-13537",
@@ -5236,7 +5288,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5325,7 +5377,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5392,10 +5444,10 @@
      "metres": 2.1
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 163.1,
-     "official_acres": 326.0,
-     "times": 2.0,
+     "official_acres": 163.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -5425,14 +5477,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 2 m outside the outline (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 2 m outside the outline."
   },
   {
    "ref": "US-13609",
@@ -5492,11 +5544,13 @@
      "metres": 11.0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 155.5,
      "official_acres": 305.0,
-     "times": 1.96,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 154.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 154 ac, all providers added 305 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -5525,14 +5579,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 11 m outside the outline (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 11 m outside the outline."
   },
   {
    "ref": "US-13610",
@@ -5614,7 +5668,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5703,7 +5757,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -5770,11 +5824,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1021.8,
      "official_acres": 2022.0,
-     "times": 1.98,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 1019.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 1,019 ac, all providers added 2,022 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -5803,14 +5859,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 2,022 acres (1,022 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-13613",
@@ -5892,7 +5948,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6006,8 +6062,10 @@
      "flag": "PASS",
      "outline_acres": 812.7,
      "official_acres": 851.0,
-     "times": 1.05,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 455.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 455 ac, all providers added 851 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -6049,7 +6107,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6149,11 +6207,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 416.9,
      "official_acres": 831.0,
-     "times": 1.99,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 417.4,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 417 ac, all providers added 831 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -6195,14 +6255,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 831 acres (417 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "DUPLICATE: Another park number uses the same record: US-13614."
   },
   {
    "ref": "US-13628",
@@ -6325,7 +6385,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6414,7 +6474,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6503,7 +6563,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -6668,15 +6728,15 @@
     },
     "T9": {
      "last_edit": "2023-03-23",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-03-23, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-03-23, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-03-23, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-03-23, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-2610",
@@ -6736,11 +6796,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 57.2,
      "official_acres": 112.0,
-     "times": 1.96,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.29,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 73.8,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 74 ac, all providers added 112 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -6769,15 +6831,15 @@
     },
     "T9": {
      "last_edit": "2023-03-23",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-03-23, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-03-23, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 112 acres (57 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "STALE CHECK: The source was last edited 2023-03-23, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-2611",
@@ -6858,15 +6920,15 @@
     },
     "T9": {
      "last_edit": "2023-03-23",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-03-23, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-03-23, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-03-23, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2023-03-23, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-2612",
@@ -6971,11 +7033,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 330.1,
      "official_acres": 555.0,
-     "times": 1.68,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 297.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 297 ac, all providers added 555 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -7018,14 +7082,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 1.7 times smaller than the official 555 acres (330 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "DUPLICATE: Another park number uses the same record: US-12362."
   },
   {
    "ref": "US-2613",
@@ -7139,11 +7203,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 987.2,
      "official_acres": 1793.0,
-     "times": 1.82,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 986.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 986 ac, all providers added 1,793 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -7172,7 +7238,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -7180,8 +7246,8 @@
     "record 216364: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 1.8 times smaller than the official 1,793 acres (987 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-2614",
@@ -7297,11 +7363,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 677.7,
      "official_acres": 1350.0,
-     "times": 1.99,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 676.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 676 ac, all providers added 1,350 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -7320,7 +7388,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7334,14 +7408,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 1,350 acres (678 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
   },
   {
    "ref": "US-2615",
@@ -7412,11 +7486,13 @@
      "metres": 6.8
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 157.4,
      "official_acres": 304.0,
-     "times": 1.93,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 155.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 155 ac, all providers added 304 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -7445,15 +7521,15 @@
     },
     "T9": {
      "last_edit": "2023-03-23",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-03-23, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-03-23, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "NEAR: POTA's pin is 7 m outside the outline (+2 more flags)."
+   "score": 2,
+   "why": "NEAR: POTA's pin is 7 m outside the outline (+1 more flag)."
   },
   {
    "ref": "US-2616",
@@ -7513,11 +7589,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 20.0,
      "official_acres": 37.0,
-     "times": 1.85,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 19.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 19 ac, all providers added 37 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -7546,15 +7624,15 @@
     },
     "T9": {
      "last_edit": "2023-03-23",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-03-23, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2023-03-23, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 1.9 times smaller than the official 37 acres (20 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "STALE CHECK: The source was last edited 2023-03-23, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-2617",
@@ -7681,11 +7759,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 246.8,
      "official_acres": 417.0,
-     "times": 1.69,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 224.4,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 224 ac, all providers added 417 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -7727,14 +7807,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 1.7 times smaller than the official 417 acres (247 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "DUPLICATE: Another park number uses the same record: US-5628."
   },
   {
    "ref": "US-2618",
@@ -7861,11 +7941,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 22279.4,
      "official_acres": 44496.0,
-     "times": 2.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 22332.7,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 22,333 ac, all providers added 44,496 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -7894,14 +7976,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 44,496 acres (22,279 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-2619",
@@ -8063,11 +8145,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 3335.3,
      "official_acres": 6654.0,
-     "times": 2.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.02,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 3399.7,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 3,400 ac, all providers added 6,654 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -8096,14 +8180,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 6,654 acres (3,335 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-2620",
@@ -8186,11 +8270,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1881.6,
      "official_acres": 3076.0,
-     "times": 1.63,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 1786.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 1,786 ac, all providers added 3,076 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -8209,7 +8295,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8223,7 +8315,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -8233,8 +8325,8 @@
     "record sgnec39: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 1.6 times smaller than the official 3,076 acres (1,882 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
   },
   {
    "ref": "US-2621",
@@ -8317,11 +8409,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 545.6,
      "official_acres": 985.0,
-     "times": 1.81,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 515.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 515 ac, all providers added 985 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -8340,7 +8434,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8354,14 +8454,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 1.8 times smaller than the official 985 acres (546 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
   },
   {
    "ref": "US-2622",
@@ -8523,11 +8623,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 2053.8,
      "official_acres": 4085.0,
-     "times": 1.99,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.03,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 2123.6,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 2,124 ac, all providers added 4,085 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -8556,14 +8658,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 4,085 acres (2,054 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-2623",
@@ -8700,7 +8802,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -8813,7 +8915,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.203,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8827,7 +8935,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -8909,7 +9017,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "3 piece(s) under 10 m wide"
+     "note": "3 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.007,
+      "holes": 0,
+      "pieces": 3
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9269,7 +9383,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -9347,11 +9461,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 1805.3,
      "official_acres": 3551.0,
-     "times": 1.97,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 1784.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 1,784 ac, all providers added 3,551 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -9380,14 +9496,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 3,551 acres (1,805 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-3483",
@@ -9432,7 +9548,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.667,
+     "score": 0.0,
      "pota_name": "Atlanta National Waterfowl Production Area",
      "record_name": "Phelps County Waterfowl Production Area"
     },
@@ -9471,7 +9587,7 @@
    "problems": [],
    "status": "graded",
    "score": 6,
-   "why": "MISMATCH: The record name 'Phelps County Waterfowl Production Area' does not match POTA's name 'Atlanta National Waterfowl Production Area' (score 0.67) (+1 more flag)."
+   "why": "MISMATCH: The record name 'Phelps County Waterfowl Production Area' does not match POTA's name 'Atlanta National Waterfowl Production Area' (score 0.00) (+1 more flag)."
   },
   {
    "ref": "US-3484",
@@ -9516,7 +9632,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.667,
+     "score": 0.0,
      "pota_name": "Peterson National Waterfowl Production Area",
      "record_name": "Gosper County Waterfowl Production Area"
     },
@@ -9547,7 +9663,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "MISMATCH: The record name 'Gosper County Waterfowl Production Area' does not match POTA's name 'Peterson National Waterfowl Production Area' (score 0.67)."
+   "why": "MISMATCH: The record name 'Gosper County Waterfowl Production Area' does not match POTA's name 'Peterson National Waterfowl Production Area' (score 0.00)."
   },
   {
    "ref": "US-3485",
@@ -9592,7 +9708,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.0,
      "pota_name": "Jensen Lagoon National Waterfowl Production Area",
      "record_name": "Kearney County Waterfowl Production Area"
     },
@@ -9623,7 +9739,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "MISMATCH: The record name 'Kearney County Waterfowl Production Area' does not match POTA's name 'Jensen Lagoon National Waterfowl Production Area' (score 0.50)."
+   "why": "MISMATCH: The record name 'Kearney County Waterfowl Production Area' does not match POTA's name 'Jensen Lagoon National Waterfowl Production Area' (score 0.00)."
   },
   {
    "ref": "US-3486",
@@ -9668,7 +9784,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.667,
+     "score": 0.0,
      "pota_name": "Moger National Waterfowl Production Area",
      "record_name": "Clay County Waterfowl Production Area Of Ne"
     },
@@ -9726,7 +9842,7 @@
    "problems": [],
    "status": "graded",
    "score": 7,
-   "why": "MISMATCH: The record name 'Clay County Waterfowl Production Area Of Ne' does not match POTA's name 'Moger National Waterfowl Production Area' (score 0.67) (+2 more flags)."
+   "why": "MISMATCH: The record name 'Clay County Waterfowl Production Area Of Ne' does not match POTA's name 'Moger National Waterfowl Production Area' (score 0.00) (+2 more flags)."
   },
   {
    "ref": "US-3487",
@@ -9774,11 +9890,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 4378.0,
      "official_acres": 8635.0,
-     "times": 1.97,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 4377.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 4,377 ac, all providers added 8,635 ac"
     },
     "T3": {
      "flag": "MISMATCH",
@@ -9812,8 +9930,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "MISMATCH: The record name 'Desoto National Wildlife Refuge' does not match POTA's name 'DeSoto (NE) National Wildlife Refuge' (score 0.50) (+1 more flag)."
+   "score": 3,
+   "why": "MISMATCH: The record name 'Desoto National Wildlife Refuge' does not match POTA's name 'DeSoto (NE) National Wildlife Refuge' (score 0.50)."
   },
   {
    "ref": "US-3488",
@@ -9911,7 +10029,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.667,
+     "score": 0.0,
      "pota_name": "Massie National Waterfowl Production Area",
      "record_name": "Clay County Waterfowl Production Area Of Ne"
     },
@@ -9952,10 +10070,10 @@
     "T8": {
      "flag": "DUPLICATE",
      "parks": {
-      "US-3490": [
+      "US-3486": [
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#4664"
       ],
-      "US-3486": [
+      "US-3490": [
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#4664"
       ]
      },
@@ -9969,7 +10087,7 @@
    "problems": [],
    "status": "graded",
    "score": 7,
-   "why": "MISMATCH: The record name 'Clay County Waterfowl Production Area Of Ne' does not match POTA's name 'Massie National Waterfowl Production Area' (score 0.67) (+2 more flags)."
+   "why": "MISMATCH: The record name 'Clay County Waterfowl Production Area Of Ne' does not match POTA's name 'Massie National Waterfowl Production Area' (score 0.00) (+2 more flags)."
   },
   {
    "ref": "US-3490",
@@ -10014,7 +10132,7 @@
     },
     "T3": {
      "flag": "MISMATCH",
-     "score": 0.5,
+     "score": 0.0,
      "pota_name": "Smith Lagoon National Waterfowl Production Area",
      "record_name": "Clay County Waterfowl Production Area Of Ne"
     },
@@ -10072,7 +10190,7 @@
    "problems": [],
    "status": "graded",
    "score": 7,
-   "why": "MISMATCH: The record name 'Clay County Waterfowl Production Area Of Ne' does not match POTA's name 'Smith Lagoon National Waterfowl Production Area' (score 0.50) (+2 more flags)."
+   "why": "MISMATCH: The record name 'Clay County Waterfowl Production Area Of Ne' does not match POTA's name 'Smith Lagoon National Waterfowl Production Area' (score 0.00) (+2 more flags)."
   },
   {
    "ref": "US-3491",
@@ -10142,7 +10260,7 @@
     },
     "T9": {
      "last_edit": "2026-09-14",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -10678,7 +10796,7 @@
     },
     "T9": {
      "last_edit": "2026-09-14",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -10831,7 +10949,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -10920,7 +11038,7 @@
     },
     "T9": {
      "last_edit": "2026-09-14",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11009,7 +11127,7 @@
     },
     "T9": {
      "last_edit": "2026-09-14",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11098,7 +11216,7 @@
     },
     "T9": {
      "last_edit": "2026-09-14",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11187,7 +11305,7 @@
     },
     "T9": {
      "last_edit": "2026-09-14",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11264,7 +11382,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11353,7 +11471,7 @@
     },
     "T9": {
      "last_edit": "2026-09-14",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11495,7 +11613,7 @@
     },
     "T9": {
      "last_edit": "2026-09-14",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11562,77 +11680,53 @@
    "name": "Prairie Lake State Recreation Area",
    "key_name": "Prairie Lake State Recreation Area",
    "type": "State Recreation Area",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     40.5389,
     -98.4902
    ],
-   "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
-   ],
-   "acres_drawn": 158.3,
-   "records": [
-    {
-     "id": "padus#215684",
-     "name": "Prairie Lake",
-     "type": "Lake Private Recreation or Education",
-     "category": "Fee",
-     "acres": 158.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=215684&outFields=*&returnGeometry=false&f=html"
-    }
-   ],
-   "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#215684"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 158.3,
-     "official_acres": 158.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Prairie Lake State Recreation Area",
-     "record_name": "Prairie Lake"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "recreation area",
-     "record_kind": "lake",
-     "flag": "CONFLICT",
-     "why": "the record is the whole lake but the park is a recreation area on it"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "CONFLICT: The record is the whole lake but the park is a recreation area on it."
+   "score": 0,
+   "why": "Nothing could be tested."
   },
   {
    "ref": "US-4029",
@@ -11645,21 +11739,10 @@
     -98.5844
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Conservation_Partner_Lands/FeatureServer/0"
    ],
-   "acres_drawn": 116.5,
+   "acres_drawn": 115.1,
    "records": [
-    {
-     "id": "padus#215722",
-     "name": "Roseland Lake",
-     "type": "Lake Private Recreation or Education",
-     "category": "Fee",
-     "acres": 116.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=215722&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgnea4",
      "name": "Roseland Lake Recreation Area (NRD)",
@@ -11672,7 +11755,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#215722",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Conservation_Partner_Lands/FeatureServer/0#4"
    ],
    "tests": {
@@ -11682,9 +11764,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 116.5,
+     "outline_acres": 115.1,
      "official_acres": 116.0,
-     "times": 1.0,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -11695,9 +11777,8 @@
     },
     "T4": {
      "park_kind": "recreation area",
-     "record_kind": "lake",
-     "flag": "CONFLICT",
-     "why": "the record is the whole lake but the park is a recreation area on it"
+     "record_kind": "recreation area",
+     "flag": "PASS"
     },
     "T5": {
      "flag": "PASS",
@@ -11715,14 +11796,14 @@
     },
     "T9": {
      "last_edit": "2026-09-14",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "CONFLICT: The record is the whole lake but the park is a recreation area on it."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-4030",
@@ -11804,7 +11885,7 @@
     },
     "T9": {
      "last_edit": "2026-09-14",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -11893,7 +11974,7 @@
     },
     "T9": {
      "last_edit": "2026-09-14",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12062,7 +12143,7 @@
     },
     "T9": {
      "last_edit": "2026-09-14",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12151,7 +12232,7 @@
     },
     "T9": {
      "last_edit": "2026-09-14",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12240,7 +12321,7 @@
     },
     "T9": {
      "last_edit": "2026-09-14",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12370,7 +12451,7 @@
     },
     "T9": {
      "last_edit": "2026-09-14",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12447,7 +12528,7 @@
     },
     "T9": {
      "last_edit": "2026-09-14",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12536,7 +12617,7 @@
     },
     "T9": {
      "last_edit": "2026-09-14",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12625,7 +12706,7 @@
     },
     "T9": {
      "last_edit": "2026-09-14",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12714,7 +12795,7 @@
     },
     "T9": {
      "last_edit": "2026-09-14",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -12787,11 +12868,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 136 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 136 m outside the outline."
   },
   {
    "ref": "US-4572",
@@ -12857,11 +12938,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 137 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 137 m outside the outline."
   },
   {
    "ref": "US-4573",
@@ -12927,11 +13008,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 112 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 112 m outside the outline."
   },
   {
    "ref": "US-4576",
@@ -12997,11 +13078,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 33 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 33 m outside the outline."
   },
   {
    "ref": "US-4578",
@@ -13069,11 +13150,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-5622",
@@ -13155,15 +13236,15 @@
     },
     "T9": {
      "last_edit": "2025-09-16",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-09-16, over a year before the club read it (2026-11-02)"
+     "note": "the source was last edited 2025-09-16, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2025-09-16, over a year before the club read it (2026-11-02)."
+   "why": "STALE CHECK: The source was last edited 2025-09-16, over a year before the club read it (2026-11-05)."
   },
   {
    "ref": "US-5625",
@@ -13246,10 +13327,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 171.3,
-     "official_acres": 331.0,
-     "times": 1.93,
+     "official_acres": 240.2,
+     "times": 1.4,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -13279,14 +13360,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 1.9 times smaller than the official 331 acres (171 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-5626",
@@ -13369,10 +13450,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 167.5,
-     "official_acres": 333.0,
-     "times": 1.99,
+     "official_acres": 167.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -13402,14 +13483,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 333 acres (168 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-5627",
@@ -13514,7 +13595,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -13648,11 +13729,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 246.8,
      "official_acres": 417.0,
-     "times": 1.69,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 224.4,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 224 ac, all providers added 417 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -13694,14 +13777,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 1.7 times smaller than the official 417 acres (247 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "DUPLICATE: Another park number uses the same record: US-2617."
   },
   {
    "ref": "US-5629",
@@ -13714,22 +13797,11 @@
     -98.8931
    ],
    "outline_from": [
-    "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 3633.6,
+   "acres_drawn": 3631.1,
    "records": [
-    {
-     "id": "sgneb276",
-     "name": "Sherman Reservoir SRA",
-     "type": "NGPC (owner NGPC.GISAdmin) (land, state GIS table)",
-     "acres": 4386.3,
-     "acres_from": "acres field",
-     "layer": "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268",
-     "link": "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268/query?objectIds=276&outFields=*&returnGeometry=false&f=html",
-     "name_field": "AreaName"
-    },
     {
      "id": "sgnec53",
      "name": "Sherman Reservoir SRA",
@@ -13752,7 +13824,6 @@
     }
    ],
    "record_ids": [
-    "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268#276",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0#53",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#2345"
    ],
@@ -13763,7 +13834,7 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 3633.6,
+     "outline_acres": 3631.1,
      "official_acres": 4386.3,
      "times": 1.21,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
@@ -13781,12 +13852,8 @@
      "why": "the record is the whole lake but the park is a recreation area on it"
     },
     "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 1,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "1 hole(s) under 100 m2"
+     "flag": "PASS",
+     "pieces": 1
     },
     "T6": {
      "flag": "PASS"
@@ -13799,16 +13866,16 @@
      "flag": "DUPLICATE",
      "parks": {
       "US-13378": [
-       "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268#276",
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#2345"
       ]
      },
      "note": "same record id(s) as another park number: for KPC 13"
     },
     "T9": {
-     "last_edit": "2026-10-19",
-     "read": "2026-11-02",
-     "flag": "PASS"
+     "last_edit": "2023-03-23",
+     "read": "2026-11-05",
+     "flag": "STALE CHECK",
+     "note": "the source was last edited 2023-03-23, over a year before the club read it (2026-11-05)"
     }
    },
    "problems": [],
@@ -13907,7 +13974,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -13927,22 +13994,11 @@
     -100.892
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268"
    ],
-   "acres_drawn": 3243.6,
+   "acres_drawn": 731.7,
    "records": [
-    {
-     "id": "padus#2333",
-     "name": "Merritt Reservoir",
-     "type": "Other Bureau of Reclamation Land Resource Management Area",
-     "category": "Fee",
-     "acres": 2524.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2333&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgnec36",
      "name": "Merritt Reservoir SRA",
@@ -13965,7 +14021,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#2333",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0#36",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268#415"
    ],
@@ -13976,9 +14031,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 3243.6,
-     "official_acres": 2524.0,
-     "times": 1.29,
+     "outline_acres": 731.7,
+     "official_acres": 823.0,
+     "times": 1.12,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -13989,17 +14044,12 @@
     },
     "T4": {
      "park_kind": "recreation area",
-     "record_kind": "lake",
-     "flag": "CONFLICT",
-     "why": "the record is the whole lake but the park is a recreation area on it"
+     "record_kind": "recreation area",
+     "flag": "PASS"
     },
     "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 1,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "14 hole(s) under 100 m2"
+     "flag": "PASS",
+     "pieces": 2
     },
     "T6": {
      "flag": "PASS"
@@ -14013,14 +14063,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "CONFLICT: The record is the whole lake but the park is a recreation area on it (+1 more flag)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-5632",
@@ -14103,11 +14153,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 23.4,
      "official_acres": 43.0,
-     "times": 1.84,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 23.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 23 ac, all providers added 43 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -14136,14 +14188,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 1.8 times smaller than the official 43 acres (23 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-5642",
@@ -14156,22 +14208,11 @@
     -101.073
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268"
    ],
-   "acres_drawn": 6020.3,
+   "acres_drawn": 1661.8,
    "records": [
-    {
-     "id": "padus#2346",
-     "name": "Swanson Lake",
-     "type": "Other Bureau of Reclamation Land Resource Management Area",
-     "category": "Fee",
-     "acres": 4972.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2346&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "nep73",
      "name": "Swanson Reservoir SRA",
@@ -14204,7 +14245,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#2346",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0#73",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0#73",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268#402"
@@ -14216,9 +14256,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 6020.3,
-     "official_acres": 4972.0,
-     "times": 1.21,
+     "outline_acres": 1661.8,
+     "official_acres": 1300.0,
+     "times": 1.28,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -14229,17 +14269,12 @@
     },
     "T4": {
      "park_kind": "recreation area",
-     "record_kind": "lake",
-     "flag": "CONFLICT",
-     "why": "the record is the whole lake but the park is a recreation area on it"
+     "record_kind": "recreation area",
+     "flag": "PASS"
     },
     "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 1,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "1 hole(s) under 100 m2"
+     "flag": "PASS",
+     "pieces": 5
     },
     "T6": {
      "flag": "PASS"
@@ -14253,7 +14288,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -14261,8 +14296,8 @@
     "record sgneb402: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 4,
-   "why": "CONFLICT: The record is the whole lake but the park is a recreation area on it (+1 more flag)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-5646",
@@ -14275,22 +14310,12 @@
     -101.712
    ],
    "outline_from": [
-    "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268",
+    "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
    "acres_drawn": 5207.7,
    "records": [
-    {
-     "id": "nep29",
-     "name": "Lake McConaughy SRA",
-     "type": "Nebraska Game and Parks areas",
-     "acres": 37032.8,
-     "acres_from": "acres field",
-     "layer": "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0",
-     "link": "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0/query?objectIds=29&outFields=*&returnGeometry=false&f=html",
-     "name_field": "AreaName"
-    },
     {
      "id": "sgneb164",
      "name": "Lake McConaughy SRA",
@@ -14323,7 +14348,6 @@
     }
    ],
    "record_ids": [
-    "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0#29",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268#164",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0#29",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#216386"
@@ -14357,7 +14381,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -14371,12 +14401,11 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [
-    "record nep29: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
     "record sgneb164: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
     "record sgnec29: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
@@ -14479,8 +14508,10 @@
      "flag": "PASS",
      "outline_acres": 5348.0,
      "official_acres": 6833.0,
-     "times": 1.28,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 4807.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 4,807 ac, all providers added 6,833 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -14509,7 +14540,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -14621,11 +14652,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 225.6,
      "official_acres": 377.0,
-     "times": 1.67,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 220.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 220 ac, all providers added 377 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -14644,7 +14677,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -14658,14 +14697,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 1.7 times smaller than the official 377 acres (226 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
   },
   {
    "ref": "US-5649",
@@ -14762,8 +14801,10 @@
      "flag": "PASS",
      "outline_acres": 2249.9,
      "official_acres": 2730.0,
-     "times": 1.21,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 1660.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 1,660 ac, all providers added 2,730 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -14782,7 +14823,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "5 hole(s) under 100 m2"
+     "note": "5 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 5,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -14796,7 +14843,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -14897,11 +14944,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 345.8,
      "official_acres": 562.0,
-     "times": 1.63,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 345.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 345 ac, all providers added 562 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -14930,14 +14979,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 1.6 times smaller than the official 562 acres (346 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-5651",
@@ -15034,8 +15083,10 @@
      "flag": "PASS",
      "outline_acres": 657.2,
      "official_acres": 736.0,
-     "times": 1.12,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 482.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 482 ac, all providers added 736 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -15054,7 +15105,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.003,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -15068,7 +15125,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -15172,8 +15229,10 @@
      "flag": "PASS",
      "outline_acres": 932.0,
      "official_acres": 1023.0,
-     "times": 1.1,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 870.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 870 ac, all providers added 1,023 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -15202,7 +15261,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -15306,8 +15365,10 @@
      "flag": "PASS",
      "outline_acres": 661.9,
      "official_acres": 743.0,
-     "times": 1.12,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 555.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 555 ac, all providers added 743 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -15326,7 +15387,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -15340,7 +15407,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -15446,8 +15513,10 @@
      "flag": "PASS",
      "outline_acres": 1097.5,
      "official_acres": 1311.0,
-     "times": 1.19,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 664.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 664 ac, all providers added 1,311 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -15476,7 +15545,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -15589,7 +15658,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -15603,7 +15678,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -15909,11 +15984,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 99.8,
      "official_acres": 198.0,
-     "times": 1.98,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.01,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 101.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 101 ac, all providers added 198 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -15949,14 +16026,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 198 acres (100 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "DUPLICATE: Another park number uses the same record: US-13536."
   },
   {
    "ref": "US-5660",
@@ -15969,22 +16046,11 @@
     -103.073
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0"
    ],
-   "acres_drawn": 1709.2,
+   "acres_drawn": 204.2,
    "records": [
-    {
-     "id": "padus#2307",
-     "name": "Box Butte Reservoir",
-     "type": "Other Bureau of Reclamation Land Resource Management Area",
-     "category": "Fee",
-     "acres": 1525.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2307&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgneb398",
      "name": "Box Butte Reservoir SRA",
@@ -16007,7 +16073,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#2307",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268#398",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0#72"
    ],
@@ -16018,8 +16083,8 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 1709.2,
-     "official_acres": 1525.0,
+     "outline_acres": 204.2,
+     "official_acres": 182.0,
      "times": 1.12,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -16031,9 +16096,8 @@
     },
     "T4": {
      "park_kind": "recreation area",
-     "record_kind": "lake",
-     "flag": "CONFLICT",
-     "why": "the record is the whole lake but the park is a recreation area on it"
+     "record_kind": "recreation area",
+     "flag": "PASS"
     },
     "T5": {
      "flag": "PASS",
@@ -16051,14 +16115,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "CONFLICT: The record is the whole lake but the park is a recreation area on it."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-5661",
@@ -16141,11 +16205,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 342.7,
      "official_acres": 676.0,
-     "times": 1.97,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 342.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 342 ac, all providers added 676 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -16174,14 +16240,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 676 acres (343 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-5662",
@@ -16267,8 +16333,10 @@
      "flag": "PASS",
      "outline_acres": 856.8,
      "official_acres": 907.0,
-     "times": 1.06,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 758.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 758 ac, all providers added 907 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -16297,7 +16365,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -16409,7 +16477,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -16429,22 +16497,11 @@
     -101.523
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0"
    ],
-   "acres_drawn": 2544.7,
+   "acres_drawn": 1247.3,
    "records": [
-    {
-     "id": "padus#2318",
-     "name": "Enders Reservoir",
-     "type": "Other Bureau of Reclamation Land Resource Management Area",
-     "category": "Fee",
-     "acres": 1611.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2318&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgneb396",
      "name": "Enders Reservoir SRA",
@@ -16467,7 +16524,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#2318",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268#396",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0#68"
    ],
@@ -16477,10 +16533,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 2544.7,
-     "official_acres": 1611.0,
-     "times": 1.58,
+     "flag": "PASS",
+     "outline_acres": 1247.3,
+     "official_acres": 990.0,
+     "times": 1.26,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -16491,13 +16547,12 @@
     },
     "T4": {
      "park_kind": "recreation area",
-     "record_kind": "lake",
-     "flag": "CONFLICT",
-     "why": "the record is the whole lake but the park is a recreation area on it"
+     "record_kind": "recreation area",
+     "flag": "PASS"
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 1
+     "pieces": 4
     },
     "T6": {
      "flag": "PASS"
@@ -16511,7 +16566,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -16519,8 +16574,8 @@
     "record sgneb396: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 4,
-   "why": "CONFLICT: The record is the whole lake but the park is a recreation area on it (+1 more flag)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-5665",
@@ -16625,7 +16680,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -16725,7 +16780,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -16825,7 +16880,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -16937,7 +16992,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -17026,7 +17081,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -17126,7 +17181,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -17216,10 +17271,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 37.6,
-     "official_acres": 74.0,
-     "times": 1.97,
+     "official_acres": 37.0,
+     "times": 1.02,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -17249,14 +17304,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 74 acres (38 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-5673",
@@ -17349,7 +17404,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -17449,7 +17504,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -17469,21 +17524,11 @@
     -101.138
    ],
    "outline_from": [
-    "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0",
-    "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268"
+    "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268",
+    "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0"
    ],
    "acres_drawn": 105.5,
    "records": [
-    {
-     "id": "nep57",
-     "name": "Sutherland Reservoir SRA",
-     "type": "Nebraska Game and Parks areas",
-     "acres": 105.0,
-     "acres_from": "acres field",
-     "layer": "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0",
-     "link": "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0/query?objectIds=57&outFields=*&returnGeometry=false&f=html",
-     "name_field": "AreaName"
-    },
     {
      "id": "sgneb300",
      "name": "Sutherland Reservoir SRA",
@@ -17506,7 +17551,6 @@
     }
    ],
    "record_ids": [
-    "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0#57",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268#300",
     "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0#57"
    ],
@@ -17549,7 +17593,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -17639,10 +17683,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 682.5,
-     "official_acres": 1355.0,
-     "times": 1.99,
+     "official_acres": 679.0,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -17679,14 +17723,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 1,355 acres (682 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "DUPLICATE: Another park number uses the same record: US-13628."
   },
   {
    "ref": "US-5677",
@@ -17791,7 +17835,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -17903,7 +17947,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -18003,7 +18047,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -18070,7 +18114,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-103.524010649682 42.9728544082574]"
+     "note": "Ring Self-intersection[-103.524010649682 42.9728544082574]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -18195,7 +18245,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -18284,7 +18334,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -18351,11 +18401,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 126.0,
      "official_acres": 247.0,
-     "times": 1.96,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 126.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 126 ac, all providers added 247 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -18384,91 +18436,67 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 247 acres (126 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-9356",
    "name": "Willow Lake Wildlife Management Area",
    "key_name": "Willow Lake Wildlife Management Area",
    "type": "Wildlife Management Area",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     42.5502,
     -100.578
    ],
-   "outline_from": [
-    "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268"
-   ],
-   "acres_drawn": 513.5,
-   "records": [
-    {
-     "id": "sgneb342",
-     "name": "Willow Lake B.C. WMA",
-     "type": "NGPC (owner NGPC.GISAdmin) (land, state GIS table)",
-     "acres": 511.0,
-     "acres_from": "acres field",
-     "layer": "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268",
-     "link": "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268/query?objectIds=342&outFields=*&returnGeometry=false&f=html",
-     "name_field": "AreaName"
-    }
-   ],
-   "record_ids": [
-    "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268#342"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "FAR",
-     "metres": 52363.3
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 513.5,
-     "official_acres": 511.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Willow Lake Wildlife Management Area",
-     "record_name": "Willow Lake B.C. WMA"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "wma",
-     "record_kind": "wma",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2026-10-19",
-     "read": "2026-10-30",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 5,
-   "why": "FAR: POTA's pin is 52.4 km outside the outline."
+   "score": 0,
+   "why": "Nothing could be tested."
   },
   {
    "ref": "US-9357",
@@ -18551,10 +18579,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 16.6,
-     "official_acres": 32.0,
-     "times": 1.92,
+     "official_acres": 16.0,
+     "times": 1.04,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -18584,14 +18612,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 1.9 times smaller than the official 32 acres (17 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-9358",
@@ -18696,7 +18724,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -18796,7 +18824,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -18919,7 +18947,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -19020,10 +19048,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 152.0,
-     "official_acres": 302.0,
-     "times": 1.99,
+     "official_acres": 154.0,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -19053,14 +19081,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 302 acres (152 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-9363",
@@ -19153,7 +19181,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -19265,7 +19293,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -19377,7 +19405,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -19521,7 +19549,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -19611,10 +19639,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 422.7,
-     "official_acres": 842.0,
-     "times": 1.99,
+     "official_acres": 436.2,
+     "times": 1.03,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -19644,14 +19672,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 2.0 times smaller than the official 842 acres (423 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-9368",
@@ -19756,7 +19784,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -19868,11 +19896,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 350.6,
      "official_acres": 694.0,
-     "times": 1.98,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 350.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 350 ac, all providers added 694 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -19891,7 +19921,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -19905,14 +19941,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 2.0 times smaller than the official 694 acres (351 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
   },
   {
    "ref": "US-9370",
@@ -20017,7 +20053,7 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -20129,11 +20165,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 722.4,
      "official_acres": 1232.0,
-     "times": 1.71,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 711.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 711 ac, all providers added 1,232 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -20152,7 +20190,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-103.676808096731 41.7054501416354]"
+     "note": "Ring Self-intersection[-103.676808096731 41.7054501416354]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -20173,14 +20217,14 @@
     },
     "T9": {
      "last_edit": "2026-10-19",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OFF: The outline is 1.7 times smaller than the official 1,232 acres (722 ac drawn) (+2 more flags)."
+   "score": 2,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-103.676808096731 41.7054501416354] (+1 more flag)."
   }
  ]
 }

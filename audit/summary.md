@@ -514,3 +514,136 @@ It decides nothing: it ranks. Score 0 = all pass; +3 OUTSIDE / WAY OFF / MISMATC
 | 5 | US-4501 | Custer Gallatin National Forest | SPILL: The outline covers 97% of US-6209 Absaroka-Beartooth Wilderness Area, with no 2-fer row (maybe the wrong record) (+2 more flags). |
 | 5 | US-4549 | Upper Missouri River Breaks National Monument | SPILL: The outline covers 100% of US-12941 Judith Landing State Park, with no 2-fer row (maybe the wrong record) (+2 more flags). |
 | 5 | US-4844 | Clearwater State Forest | OUTSIDE: POTA's pin is 2.7 km outside the outline (+2 more flags). |
+
+## US-NC
+
+- parks: 253 (226 with an outline graded, 27 with no outline, 0 with records this tool can't read)
+- pass every test: 120; have flags: 133; source down (retry): 5
+- flags: TINY HOLES 65, NEAR 50, SELF-INTERSECTION 42, SLIVERS 21, SPILL 16, OUTSIDE 13, OFF 13, MISMATCH 8, SCATTERED 8, DUPLICATE 6, CONFLICT 3, WEAK 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 10 | US-6936 | Pisgah State Game Land | OUTSIDE: POTA's pin is 564 m outside the outline (+5 more flags). |
+| 8 | US-4511 | Uwharrie National Forest | SPILL: The outline covers 98% of US-10260 Birkhead Mountains Wilderness Area, with no 2-fer row (maybe the wrong record) (+5 more flags). |
+| 7 | US-4509 | Nantahala National Forest | SPILL: The outline covers 72% of US-9758 Chattooga National Wild and Scenic River, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4510 | Pisgah National Forest | SPILL: The outline covers 100% of US-8011 Bobby N. Setzer State Fish Hatchery, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-6937 | Pisgah WRC State Game Land | SPILL: The outline covers 100% of US-8011 Bobby N. Setzer State Fish Hatchery, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-6962 | Uwharrie State Game Land | SPILL: The outline covers 97% of US-10260 Birkhead Mountains Wilderness Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 6 | US-3378 | Blue Ridge National Parkway | SPILL: The outline covers 100% of US-12371 Julian Price National Park, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-6927 | Nantahala State Game Land | SPILL: The outline covers 72% of US-9758 Chattooga National Wild and Scenic River, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-6931 | Nicholson Creek State Game Land | OUTSIDE: POTA's pin is 785 m outside the outline (+1 more flag). |
+| 6 | US-6947 | Sandhills State Game Land | SPILL: The outline covers 100% of US-8010 McKinney Lake State Fish Hatchery, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+
+## US-ND
+
+- parks: 155 (111 with an outline graded, 44 with no outline, 0 with records this tool can't read)
+- pass every test: 112; have flags: 43; source down (retry): 2
+- flags: NEAR 25, TINY HOLES 11, MISMATCH 5, SCATTERED 5, SELF-INTERSECTION 5, SLIVERS 3, OFF 2, DUPLICATE 2, FAR 2, OUTSIDE 2, SPILL 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 9 | US-0428 | J. Clark Salyer Wetland Management District | FAR: POTA's pin is 15.3 km outside the outline (+2 more flags). |
+| 6 | US-0425 | Devils Lake Wetland Management District | MISMATCH: The record name 'WALSH COUNTY WATERFOWL PRODUCTION AREA' does not match POTA's name 'Devils Lake Wetland Management District' (score 0.00) (+3 more flags). |
+| 5 | US-0421 | Arrowwood Wetland Management District | MISMATCH: The record name 'FOSTER COUNTY WATERFOWL PRODUCTION AREA' does not match POTA's name 'Arrowwood Wetland Management District' (score 0.00) (+2 more flags). |
+| 5 | US-0430 | Kulm Wetland Management District | MISMATCH: The record name 'MCINTOSH COUNTY WATERFOWL PRODUCTION AREA' does not match POTA's name 'Kulm Wetland Management District' (score 0.00) (+2 more flags). |
+| 5 | US-0440 | Valley City Wetland Management District | MISMATCH: The record name 'TRAILL COUNTY WATERFOWL PRODUCTION AREA' does not match POTA's name 'Valley City Wetland Management District' (score 0.00) (+2 more flags). |
+| 5 | US-7707 | Maclean Bottoms Wildlife Management Area | FAR: POTA's pin is 11.9 km outside the outline. |
+| 4 | US-2764 | Lake Sakakawea State Park | SPILL: The outline covers 84% of US-4239 North Country Trail National Scenic Trail, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+| 4 | US-7486 | Sheyenne National Grassland | OUTSIDE: POTA's pin is 772 m outside the outline (+1 more flag). |
+| 3 | US-0422 | Audubon National Wildlife Refuge | OFF: The outline is 1.7 times bigger than the official 14,778 acres (25,559 ac drawn) (+2 more flags). |
+| 3 | US-0437 | White Horse Hill Game Preserve | OUTSIDE: POTA's pin is 670 m outside the outline. |
+
+## US-NE
+
+- parks: 201 (183 with an outline graded, 18 with no outline, 0 with records this tool can't read)
+- pass every test: 136; have flags: 65; source down (retry): 5
+- flags: DUPLICATE 21, TINY HOLES 12, NEAR 11, STALE CHECK 8, MISMATCH 8, SPILL 6, OFF 4, OUTSIDE 3, SLIVERS 2, SELF-INTERSECTION 2, WEAK 1, CONFLICT 1, WAY OFF 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 7 | US-3486 | Moger National Waterfowl Production Area | MISMATCH: The record name 'Clay County Waterfowl Production Area Of Ne' does not match POTA's name 'Moger National Waterfowl Production Area' (score 0.00) (+2 more flags). |
+| 7 | US-3489 | Massie National Waterfowl Production Area | MISMATCH: The record name 'Clay County Waterfowl Production Area Of Ne' does not match POTA's name 'Massie National Waterfowl Production Area' (score 0.00) (+2 more flags). |
+| 7 | US-3490 | Smith Lagoon National Waterfowl Production Area | MISMATCH: The record name 'Clay County Waterfowl Production Area Of Ne' does not match POTA's name 'Smith Lagoon National Waterfowl Production Area' (score 0.00) (+2 more flags). |
+| 6 | US-3483 | Atlanta National Waterfowl Production Area | MISMATCH: The record name 'Phelps County Waterfowl Production Area' does not match POTA's name 'Atlanta National Waterfowl Production Area' (score 0.00) (+1 more flag). |
+| 5 | US-5629 | Sherman Reservoir State Recreation Area | CONFLICT: The record is the whole lake but the park is a recreation area on it (+2 more flags). |
+| 4 | US-5646 | Lake McConaughy State Recreation Area | WAY OFF: The outline is 7.1 times smaller than the official 37,033 acres (5,208 ac drawn) (+1 more flag). |
+| 4 | US-7478 | Oglala National Grassland | OUTSIDE: POTA's pin is 1.1 km outside the outline (+1 more flag). |
+| 3 | US-0442 | Crescent Lake National Wildlife Refuge | OUTSIDE: POTA's pin is 1.6 km outside the outline. |
+| 3 | US-0447 | Valentine National Wildlife Refuge | SPILL: The outline covers 73% of US-9356 Willow Lake Wildlife Management Area, with no 2-fer row (maybe the wrong record). |
+| 3 | US-0675 | Missouri National Recreational River National Wild and Scenic River | SPILL: The outline covers 63% of US-2622 Ponca State Park, with no 2-fer row (maybe the wrong record). |
+
+## US-NH
+
+- parks: 206 (199 with an outline graded, 7 with no outline, 0 with records this tool can't read)
+- pass every test: 103; have flags: 103; source down (retry): 2
+- flags: NEAR 46, OUTSIDE 24, TINY HOLES 22, SELF-INTERSECTION 8, OFF 6, SLIVERS 5, SPILL 4, FAR 4, DUPLICATE 4, MISMATCH 3, CONFLICT 1, WAY OFF 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 6 | US-4512 | White Mountain National Forest | SPILL: The outline covers 95% of US-4959 Sentinel Mountain State Forest, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-4933 | Merrimack River State Forest | FAR: POTA's pin is 26.3 km outside the outline (+1 more flag). |
+| 6 | US-4949 | Ragged Mountain State Forest | OUTSIDE: POTA's pin is 1.1 km outside the outline (+1 more flag). |
+| 5 | US-4894 | Davis-White State Forest | FAR: POTA's pin is 55.5 km outside the outline. |
+| 5 | US-4905 | Gile State Forest | SPILL: The outline covers 100% of US-2685 Winslow State Park, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-4934 | Merriman State Forest | FAR: POTA's pin is 21.2 km outside the outline. |
+| 5 | US-4955 | Saltmarsh Pond State Forest | FAR: POTA's pin is 22.1 km outside the outline. |
+| 4 | US-4868 | Annett State Forest | OUTSIDE: POTA's pin is 9.4 km outside the outline (+1 more flag). |
+| 4 | US-4886 | Connecticut Lakes State Forest | OUTSIDE: POTA's pin is 5.8 km outside the outline (+1 more flag). |
+| 4 | US-4937 | Nottingham State Forest | OUTSIDE: POTA's pin is 1.1 km outside the outline (+1 more flag). |
+
+## US-NJ
+
+- parks: 134 (129 with an outline graded, 5 with no outline, 0 with records this tool can't read)
+- pass every test: 47; have flags: 87; source down (retry): 2
+- flags: TINY HOLES 57, NEAR 29, SELF-INTERSECTION 25, SLIVERS 20, SPILL 6, MISMATCH 4, SCATTERED 3, STALE CHECK 3, WEAK 2, CONFLICT 2, INVALID 2, OUTSIDE 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 6 | US-11964 | Peaslee Wildlife Management Area | SPILL: The outline covers 74% of US-13256 Menantico Ponds Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 5 | US-13061 | Gum Tree Corner Wildlife Management Area | MISMATCH: The record name 'Gumtree Corner Wildlife Management Area' does not match POTA's name 'Gum Tree Corner Wildlife Management Area' (score 0.67) (+2 more flags). |
+| 5 | US-5000 | Wharton State Forest | SPILL: The outline covers 98% of US-6609 Pinelands Preserve National Conservation Area, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 4 | US-0453 | Edwin B. Forsythe National Wildlife Refuge | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-74.275981897499 39.6189470423469]; 5 piece(s) under 10 m wide; 6 hole(s) under 100 m2; 322 pieces spread over 78 km (+3 more flags). |
+| 4 | US-0677 | Great Egg Harbor National Wild and Scenic River | SPILL: The outline covers 41% of US-8060 Winslow Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+| 4 | US-0888 | Musconetcong River National Wild and Scenic River | SPILL: The outline covers 52% of US-1631 Stephens State Park, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+| 4 | US-11988 | Cohansey River Wildlife Management Area | OUTSIDE: POTA's pin is 1.1 km outside the outline (+1 more flag). |
+| 4 | US-6461 | Spruce Run State Recreation Area | CONFLICT: The record is the whole lake but the park is a recreation area on it (+1 more flag). |
+| 4 | US-7505 | Round Valley State Recreation Area | CONFLICT: The record is the whole lake but the park is a recreation area on it (+1 more flag). |
+| 4 | US-8037 | Dix Wildlife Management Area | INVALID: The shape has problems: Nested shells[-75.3305893248544 39.3535544868743]; Self-intersection[-75.3297518352367 39.3531975754792]; 1 piece(s) under 10 m wide; 2 hole(s) under 100 m2 (+3 more flags). |
+
+## US-NM
+
+- parks: 123 (106 with an outline graded, 17 with no outline, 0 with records this tool can't read)
+- pass every test: 79; have flags: 44; source down (retry): 6
+- flags: NEAR 18, SELF-INTERSECTION 14, TINY HOLES 12, SLIVERS 8, SPILL 7, MISMATCH 5, OUTSIDE 4, DUPLICATE 3, WEAK 3, OFF 3, SCATTERED 2, CONFLICT 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 7 | US-0961 | Salinas Pueblo Missions, Gran Quivira Unit, National Monument | MISMATCH: The record name 'Salinas Pueblo Missions National Monument' does not match POTA's name 'Salinas Pueblo Missions, Gran Quivira Unit, National Monument' (score 0.60) (+2 more flags). |
+| 6 | US-11814 | Salinas Pueblo Missions, Quarai unit, National Monument | SPILL: The outline covers 100% of US-11813 Salinas Pueblo Missions, Abo Unit National Monument, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-4517 | Santa Fe National Forest | SPILL: The outline covers 85% of US-8227 Jemez National Recreation Area, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-4551 | Organ Mountains-Desert Peaks National Monument | OUTSIDE: POTA's pin is 1.5 km outside the outline (+1 more flag). |
+| 5 | US-0459 | Las Vegas National Wildlife Refuge | OUTSIDE: POTA's pin is 635 m outside the outline (+2 more flags). |
+| 5 | US-11813 | Salinas Pueblo Missions, Abo Unit National Monument | SPILL: The outline covers 100% of US-11814 Salinas Pueblo Missions, Quarai unit, National Monument, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-12746 | Aden Hills Off-Highway Vehicle Area BLM Recreation Management Area | MISMATCH: The record name 'Aden Hills' does not match POTA's name 'Aden Hills Off-Highway Vehicle Area BLM Recreation Management Area' (score 0.40) (+2 more flags). |
+| 4 | US-11866 | Rio Bonito Acquired Lands: Salazar Tract, BLM Recreation Management Area | SPILL: The outline covers 52% of US-13185 Dow Canyon Tract BLM Recreation Management Area, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+| 4 | US-12590 | Alien Run Mountain Bike Trail BLM Recreation Management Area | MISMATCH: The record name 'Alien Run' does not match POTA's name 'Alien Run Mountain Bike Trail BLM Recreation Management Area' (score 0.50) (+1 more flag). |
+| 4 | US-8620 | Ojito Wilderness Area | NEAR: POTA's pin is 56 m outside the outline (+3 more flags). |
+
+## US-NV
+
+- parks: 367 (197 with an outline graded, 170 with no outline, 0 with records this tool can't read)
+- pass every test: 243; have flags: 124; source down (retry): 3
+- flags: SPILL 34, NEAR 30, OUTSIDE 20, SELF-INTERSECTION 17, TINY HOLES 17, MISMATCH 14, SLIVERS 12, STALE CHECK 10, DUPLICATE 10, CONFLICT 5, WEAK 4, OFF 4, WAY OFF 2, FAR 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 10 | US-9285 | Avi Kwa Ame (Spirit Mountain) National Monument | OUTSIDE: POTA's pin is 2.4 km outside the outline (+3 more flags). |
+| 7 | US-13018 | Black Rock Range East/West BLM Herd Management Area | OUTSIDE: POTA's pin is 2.8 km outside the outline (+2 more flags). |
+| 6 | US-13151 | Shoshone OHV Trail System BLM Recreation Management Area | OUTSIDE: POTA's pin is 1.3 km outside the outline (+1 more flag). |
+| 6 | US-13269 | Lake Tahoe-Eastshore Dr Byway Area of Outstanding Natural Beauty | OUTSIDE: POTA's pin is 533 m outside the outline (+1 more flag). |
+| 6 | US-4391 | Humboldt-Toiyabe National Forest | SPILL: The outline covers 100% of US-2635 Spring Mountain Ranch State Park, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 5 | US-13026 | Eagle BLM Herd Management Area | SPILL: The outline covers 100% of US-13217 Panaca Charcoal Kilns BLM Historic Area, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-13039 | Owyhee River Wilderness Area | FAR: POTA's pin is 28.2 km outside the outline. |
+| 5 | US-13045 | Pancake BLM Herd Management Area | SPILL: The outline covers 90% of US-13526 Duckwater Airport BLM Backcountry Airstrip, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-13050 | Silver King BLM Herd Management Area | SPILL: The outline covers 100% of US-13196 Stampede-Nevada BLM Recreation Management Area, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-13115 | Gold Butte BLM Herd Management Area | SPILL: The outline covers 100% of US-9260 Jumbo Springs Wilderness Area, with no 2-fer row (maybe the wrong record) (+2 more flags). |
