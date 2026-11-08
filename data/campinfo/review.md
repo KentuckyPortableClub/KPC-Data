@@ -38,7 +38,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 | US-NE | 232 | 3 | 11 | 2 | 0 | 185 | 6 | 23 | 2 | 0 | 74 | 0 |
 | US-CO | 653 | 101 | 337 | 2 | 0 | 193 | 0 | 0 | 20 | 2 | 316 | 0 |
 | US-WY | 301 | 5 | 162 | 1 | 0 | 0 | 79 | 0 | 54 | 0 | 41 | 0 |
-| US-ID | 450 | 27 | 311 | 33 | 0 | 0 | 0 | 35 | 44 | 6 | 100 | 30 |
+| US-ID | 450 | 27 | 311 | 33 | 4 | 0 | 0 | 35 | 40 | 8 | 100 | 0 |
 | US-MT | 389 | 30 | 311 | 0 | 0 | 0 | 0 | 0 | 48 | 0 | 78 | 0 |
 | US-NV | 87 | 23 | 34 | 1 | 0 | 0 | 0 | 7 | 22 | 11 | 46 | 0 |
 | US-AZ | 198 | 1 | 168 | 0 | 16 | 0 | 0 | 2 | 11 | 0 | 28 | 0 |
@@ -75,6 +75,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 - washington.goingtocamp.com: 15 campgrounds · host resting (robots.txt could not be read: next run)
 - midnrreservations.com: 12 campgrounds · host resting
 - www.reservecalifornia.com: 5 campgrounds · host resting (robots.txt could not be read: next run)
+- getoutside.idaho.gov: 4 campgrounds · host resting (robots.txt could not be read: next run)
 - tpwd.texas.gov: 3 campgrounds · robots.txt says no
 - reserve.mdwfp.com: 2 campgrounds · robots.txt says no
 - reserve.arkansasstateparks.com: 2 campgrounds · host resting (robots.txt could not be read: next run)
@@ -2627,8 +2628,8 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 ## US-ID: 12 random samples (records with facts; seed = the date)
 
 - **Standard/serviced campsites; Canyonview Campground; group camping areas** (US-2243:hq0, state, status ok, 17 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/massacre-rocks-state-park/)
-  - booking.how = "online: parksandrecreation.idaho.gov" · “link “City of Rocks National Reserve””
-  - booking.url = "https://parksandrecreation.idaho.gov/state-park/city-of-roc · “link “City of Rocks National Reserve” -> https://parksandrecreation.idaho.gov/state-park/city-of-rocks-national-reserve/”
+  - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
+  - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
   - checkin = "2 p.m" · “eas within parks or campgrounds are open from 7 a.m. to 10 p.m., unless otherwise posted. Check-in time is 2 p.m. for campsites and 3 p.m. f”
   - checkout = "1 p.m" · “osted. Check-in time is 2 p.m. for campsites and 3 p.m. for facilities (local park time). Checkout time is 1 p.m. for campsites and 12 p.m. ”
   - features = "fire pit" · “oom cabins that sleep up to 5 on bunk beds, and futons. Cook outside on the grill-covered fire pit. Cabins are powered, heated, and air cond”
@@ -2638,8 +2639,8 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.water = true · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
   - lodging_booking.how = "online: parksandrecreation.idaho.gov" · “link “Reserve a Yurt””
 - **Smoky Mountain Campground; equestrian campsites; yurt; Ranch House; Almo Creek Cottage** (US-2230:hq0, state, status ok, 17 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/castle-rocks-state-park/)
-  - booking.how = "online: parksandrecreation.idaho.gov" · “link “City of Rocks National Reserve””
-  - booking.url = "https://parksandrecreation.idaho.gov/state-park/city-of-roc · “link “City of Rocks National Reserve” -> https://parksandrecreation.idaho.gov/state-park/city-of-rocks-national-reserve/”
+  - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
+  - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
   - checkin = "2 p.m" · “eas within parks or campgrounds are open from 7 a.m. to 10 p.m., unless otherwise posted. Check-in time is 2 p.m. for campsites and 3 p.m. f”
   - checkout = "1 p.m" · “osted. Check-in time is 2 p.m. for campsites and 3 p.m. for facilities (local park time). Checkout time is 1 p.m. for campsites and 12 p.m. ”
   - features = "fire pit" · “oom cabins that sleep up to 5 on bunk beds, and futons. Cook outside on the grill-covered fire pit. Cabins are powered, heated, and air cond”
@@ -2648,9 +2649,9 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.sewer = "some" · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
   - hookups.water = true · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
   - lodging_booking.how = "online: parksandrecreation.idaho.gov" · “link “Reserve a Yurt””
-- **Billingsley Creek Campground** (US-2248:hq0, state, status ok, 23 facts, 2942 ft) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/thousand-springs-state-park/)
-  - booking.how = "online: parksandrecreation.idaho.gov" · “link “City of Rocks National Reserve””
-  - booking.url = "https://parksandrecreation.idaho.gov/state-park/city-of-roc · “link “City of Rocks National Reserve” -> https://parksandrecreation.idaho.gov/state-park/city-of-rocks-national-reserve/”
+- **Billingsley Creek Campground** (US-2248:hq0, state, status ok, 23 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/thousand-springs-state-park/)
+  - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
+  - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
   - checkin = "2:00 p.m" · “online at parksandrecreation.id.gov or by calling our reservation desk at 1-888-922-6743. Check-in 2:00 p.m. Check-out 1:00 p.m. Idaho Parks”
   - checkout = "1:00 p.m" · “ecreation.id.gov or by calling our reservation desk at 1-888-922-6743. Check-in 2:00 p.m. Check-out 1:00 p.m. Idaho Parks & Recreation Rules”
   - features = "fire pit" · “oom cabins that sleep up to 5 on bunk beds, and futons. Cook outside on the grill-covered fire pit. Cabins are powered, heated, and air cond”
@@ -2659,20 +2660,20 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.sewer = true · “lad Gorge (ADA) Overnight: 3 rental homes available for reservation on Ritter Island & 50 full hookup sites available for reservation at Bil”
   - hookups.water = true · “lad Gorge (ADA) Overnight: 3 rental homes available for reservation on Ritter Island & 50 full hookup sites available for reservation at Bil”
   - lodging_booking.how = "online: parksandrecreation.idaho.gov" · “link “Reserve a Yurt””
-- **Standard and serviced campsites; deluxe cabins; camper cabin** (US-2245:hq0, state, status ok, 21 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/ponderosa-state-park/)
-  - booking.how = "online: parksandrecreation.idaho.gov" · “link “City of Rocks National Reserve””
-  - booking.url = "https://parksandrecreation.idaho.gov/state-park/city-of-roc · “link “City of Rocks National Reserve” -> https://parksandrecreation.idaho.gov/state-park/city-of-rocks-national-reserve/”
-  - checkin = "2 p.m" · “eas within parks or campgrounds are open from 7 a.m. to 10 p.m., unless otherwise posted. Check-in time is 2 p.m. for campsites and 3 p.m. f”
-  - checkout = "1 p.m" · “osted. Check-in time is 2 p.m. for campsites and 3 p.m. for facilities (local park time). Checkout time is 1 p.m. for campsites and 12 p.m. ”
-  - features = "fire pit/gathering place" · “ch access, the Kokanee project will include an event center, rental cabins and an outdoor fire pit/gathering place. See video of the work CM”
+- **Standard and serviced campsites; deluxe cabins; camper cabin** (US-2245:hq0, state, status ok, 22 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/ponderosa-state-park/)
+  - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
+  - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
+  - checkin = "3 PM" · “out, you have not met the requirements, a fee will be charged to the credit card on file. Check in time is after 3 PM on your arrival date. ”
+  - checkout = "11 AM" · “be charged to the credit card on file. Check in time is after 3 PM on your arrival date. Check out time is by 11 AM on your departure date. ”
+  - features = "fire pit" · “oom cabins that sleep up to 5 on bunk beds, and futons. Cook outside on the grill-covered fire pit. Cabins are powered, heated, and air cond”
   - fees = "$4 on camping | $10.00 for individual campsites, yurts, and · “mited income (Medicaid card) or who sign a limited income form will receive a discount of $4 on camping. Idaho Disabled Veterans Idaho Veter”
   - hookups.electric = true · “ic amenities: a table, couch, and a bunk bed. No water or restroom. It does have heat and power. There is a spigot outside. Customers will n”
   - hookups.sewer = "some" · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
-  - hookups.water = true · “e Blackberry loop so consider that before planning a stay. 2021 Updates: The Aspen loop’s electrical and water service will be improved with”
+  - hookups.water = true · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
   - lodging_booking.how = "online: parksandrecreation.idaho.gov" · “link “Reserve a Yurt””
-- **Crane Creek Reservoir** (intake-US-11257, agency (outside research camping-us-oct31), status ok, 9 facts, 3187 ft) · [www.blm.gov](https://www.blm.gov/programs/recreation/camping)
-  - booking.how = "online: gcc02.safelinks.protection.outlook.com" · “link “Hot Spring””
-  - booking.url = "https://gcc02.safelinks.protection.outlook.com/?url=https%3 · “link “Hot Spring” -> https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.blm.gov%2Fvisit%2Fhot-springs-”
+- **Crane Creek Reservoir** (intake-US-11257, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.blm.gov](https://www.blm.gov/programs/recreation/camping)
+  - booking.how = "online: www.recreation.gov" · “link “Plan Ahead and Play It Safe””
+  - booking.url = "https://www.recreation.gov/articles/list/plan-ahead-and-pla · “link “Plan Ahead and Play It Safe” -> https://www.recreation.gov/articles/list/plan-ahead-and-play-it-safe-on-your-next-trip/2259”
   - drinking_water = true · “nds The BLM manages many developed campgrounds. Some include amenities such as restrooms, potable water, picnic tables, fire rings, garbage ”
   - features = "fire rings, garbage receptacles, tent pads, electrical hook · “oped campgrounds. Some include amenities such as restrooms, potable water, picnic tables, fire rings, garbage receptacles, tent pads, electr”
   - hookups.electric = true · “h as restrooms, potable water, picnic tables, fire rings, garbage receptacles, tent pads, electrical hookups, or group shelters, while other”
@@ -2680,36 +2681,36 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - map.url = "https://webmaps.blm.gov/program_apps/BLM_Natl_Recreation_Op · “link “Interactive Map” -> https://webmaps.blm.gov/program_apps/BLM_Natl_Recreation_Opportunities/”
   - restrooms = "vault" · “n, Pack It Out : Take all trash and belongings with you. Human Waste : If possible, use a portable toilet or pack out your waste. In some lo”
   - rules.stay_limit = "14 days" · “ons Part 8360 - Visitor Services for details. Stay Limit : Dispersed camping is generally limited to 14 days within any 28‑day period, thoug”
-- **Indian Creek Campground; Lionhead Campground; Schaefer Cabin** (US-2246:hq0, state, status ok, 19 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/priest-lake-state-park/)
-  - booking.how = "online: parksandrecreation.idaho.gov" · “link “City of Rocks National Reserve””
-  - booking.url = "https://parksandrecreation.idaho.gov/state-park/city-of-roc · “link “City of Rocks National Reserve” -> https://parksandrecreation.idaho.gov/state-park/city-of-rocks-national-reserve/”
-  - dump_station = true · “for the season. Please bring plenty of your own water for drinking, cooking, and washing. Dump Station is Closed. Please plan your waste dis”
-  - fees = "$330 for non-residents | $300 for residents | $45 per night · “queen bed, and a futon couch No pets (inside or outside) allowed at this location Cost is $330 for non-residents, $300 for residents. Downlo”
+- **Indian Creek Campground; Lionhead Campground; Schaefer Cabin** (US-2246:hq0, state, status ok, 18 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/priest-lake-state-park/)
+  - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
+  - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
+  - dump_station = true · “r the season. Please bring plenty of your own water for drinking, cooking, and washing. • Dump station is Closed. Please plan your waste dis”
+  - fees = "$330 for non-residents | $300 for residents | $45 per night · “ed (with pullout trundle bed), a queen bed, and two futon couches No pets allowed Cost is $330 for non-residents, $300 for residents. Downlo”
   - hookups.electric = true · “r IDAPA 26.01.20 and Title 49 of Idaho Code, prohibits motorized toys-including go-karts, electric scooter, toy cars, hoverboards, electric ”
-  - hookups.sewer = true · “n sleeps 11 and features cooking facilities 12 RV campsites include water, electrical and sewer hookups Central shower and restroom faciliti”
+  - hookups.sewer = true · “n sleeps 12 and features cooking facilities 12 RV campsites include water, electrical and sewer hookups Central shower and restroom faciliti”
   - lodging_booking.how = "online: parksandrecreation.idaho.gov" · “link “Reserve a Yurt””
-  - lodging_booking.url = "https://parksandrecreation.idaho.gov/activities/yurts/" · “link “Reserve a Yurt” -> https://parksandrecreation.idaho.gov/activities/yurts/”
-  - map.date_how = "PDF, year 2009 in the link" · “link “Lionhead Unit Map””
-  - map.url = "https://parksandrecreation.idaho.gov/wp-content/uploads/par · “link “Lionhead Unit Map” -> https://parksandrecreation.idaho.gov/wp-content/uploads/parks/priest-lake/Priest-Lake-State-Park-Lio”
-- **Bear Lake State Park** (US-2228, state, status ok, 15 facts, 5943 ft) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/)
-  - booking.how = "online: parksandrecreation.idaho.gov" · “link “City of Rocks National Reserve””
-  - booking.url = "https://parksandrecreation.idaho.gov/state-park/city-of-roc · “link “City of Rocks National Reserve” -> https://parksandrecreation.idaho.gov/state-park/city-of-rocks-national-reserve/”
-  - checkin = "2 p.m" · “eas within parks or campgrounds are open from 7 a.m. to 10 p.m., unless otherwise posted. Check-in time is 2 p.m. for campsites and 3 p.m. f”
-  - checkout = "1 p.m" · “osted. Check-in time is 2 p.m. for campsites and 3 p.m. for facilities (local park time). Checkout time is 1 p.m. for campsites and 12 p.m. ”
-  - features = "fire pit" · “oom cabins that sleep up to 5 on bunk beds, and futons. Cook outside on the grill-covered fire pit. Cabins are powered, heated, and air cond”
-  - fees = "$4 on camping | $10.00 for individual campsites, yurts, and · “mited income (Medicaid card) or who sign a limited income form will receive a discount of $4 on camping. Idaho Disabled Veterans Idaho Veter”
-  - hookups.electric = "some" · “are ADA friendly and support service animals. Per IDAPA Code 26.01.20, park services and utilities are for state park customer use only. IDP”
-  - hookups.sewer = "some" · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
-  - hookups.water = true · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
+  - lodging_booking.url = "https://parksandrecreation.idaho.gov/park-activity/yurts/" · “link “Reserve a Yurt” -> https://parksandrecreation.idaho.gov/park-activity/yurts/”
+  - map.date_how = "PDF, year 2018 in the link" · “link “Bicycle Tourism Map””
+  - map.url = "https://parksandrecreation.idaho.gov/wp-content/uploads/act · “link “Bicycle Tourism Map” -> https://parksandrecreation.idaho.gov/wp-content/uploads/activities/biking/2018-05_IDStateParks-ACARo”
+- **Bear Lake State Park** (US-2228, state, status ok, 10 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/)
+  - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
+  - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
   - lodging_booking.how = "online: parksandrecreation.idaho.gov" · “link “Reserve a Yurt””
+  - lodging_booking.url = "https://parksandrecreation.idaho.gov/park-activity/yurts/" · “link “Reserve a Yurt” -> https://parksandrecreation.idaho.gov/park-activity/yurts/”
+  - map.date_how = "PDF, year 2018 in the link" · “link “Bicycle Tourism Map””
+  - map.url = "https://parksandrecreation.idaho.gov/wp-content/uploads/act · “link “Bicycle Tourism Map” -> https://parksandrecreation.idaho.gov/wp-content/uploads/activities/biking/2018-05_IDStateParks-ACARo”
+  - phone = "(208) 939-0696" · “rk to Begin Nov 14, 2022 Contact: Eagle Island State Park | 208-939-0696 , EAG@idpr.idaho.gov Park staff will be conducting hazardou”
+  - restrooms = "yes (kind not stated)" · “te responsibly while having fun. In recent weeks, a few visitors have left trash, defaced restrooms, and damaged private property&hellip; Re”
+  - rules.fires = "Campfires Allowed for Labor Day Weekend!" · “e Safety Still Necessary Aug 30 2023 Fire Restrictions Eased at North Idaho Parks &mdash; Campfires Allowed for Labor Day Weekend! NORTH IDA”
+  - sites.total = 500 · “tment of Parks and Recreation manages across the state. The experience at the more than 2,500 campsites, yurts, cabins and&hellip; Read More”
 - **No public camping; overnight yurts and historic rental facilities** (US-2235:hq0, state, status ok, 23 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/harriman-state-park/)
-  - booking.how = "online: parksandrecreation.idaho.gov" · “link “City of Rocks National Reserve””
-  - booking.url = "https://parksandrecreation.idaho.gov/state-park/city-of-roc · “link “City of Rocks National Reserve” -> https://parksandrecreation.idaho.gov/state-park/city-of-rocks-national-reserve/”
+  - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
+  - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
   - checkin = "9:00 a.m" · “ver. SITE DETAILS: Season: May 15 – Oct. 15 Type of Use: Day Use Max Number of People: 50 Check In: 9:00 a.m. Check Out: 10:00 p.m. Cost: $1”
   - checkout = "10:00 p.m" · “eason: May 15 – Oct. 15 Type of Use: Day Use Max Number of People: 50 Check In: 9:00 a.m. Check Out: 10:00 p.m. Cost: $100 AMENITIES: ADA Ac”
   - drinking_water = false · “ything you need, other than what is listed above. All trash must be packed out. Water (No potable water is available at the yurt. Water must”
   - features = "fire pit" · “oom cabins that sleep up to 5 on bunk beds, and futons. Cook outside on the grill-covered fire pit. Cabins are powered, heated, and air cond”
-  - fees = "$7 per-vehicle MVEF (Motor Vehicle Entrance Fee) is | $7 pe · “Volunteering Harriman State Park Home / State Park / Harriman State Park PARK UPDATE The $7 per-vehicle MVEF (Motor Vehicle Entrance Fee) is”
+  - fees = "$7 per-vehicle MVEF (Motor Vehicle Entrance Fee) is | $7 pe · “rks Events --> Harriman State Park Home / Harriman State Park Park Bulletins Minimize The $7 per-vehicle MVEF (Motor Vehicle Entrance Fee) i”
   - hookups.electric = "some" · “are ADA friendly and support service animals. Per IDAPA Code 26.01.20, park services and utilities are for state park customer use only. IDP”
   - hookups.sewer = "some" · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
   - hookups.water = true · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
@@ -2722,15 +2723,15 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - map.date_how = "web page, no date in the link" · “link “Bitterroot National Forest Prescribed Burn Map””
   - map.url = "https://experience.arcgis.com/experience/4ac726fda3434b40bf · “link “Bitterroot National Forest Prescribed Burn Map” -> https://experience.arcgis.com/experience/4ac726fda3434b40bf59a127f1ddf380”
   - restrooms = "vault" · “ampground in the Bitterroot National Forest: RV/tent sites, river fishing, potable water, vault toilets, host site & shaded spots near hikin”
-- **Challis Hot Springs Campground** (US-2241:hq0, state, status ok, 20 facts, 4899 ft) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/land-of-the-yankee-fork-state-park/)
-  - booking.how = "online: parksandrecreation.idaho.gov" · “link “City of Rocks National Reserve””
-  - booking.url = "https://parksandrecreation.idaho.gov/state-park/city-of-roc · “link “City of Rocks National Reserve” -> https://parksandrecreation.idaho.gov/state-park/city-of-rocks-national-reserve/”
+- **Challis Hot Springs Campground** (US-2241:hq0, state, status ok, 20 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/land-of-the-yankee-fork-state-park/)
+  - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
+  - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
   - checkin = "2 p.m" · “eas within parks or campgrounds are open from 7 a.m. to 10 p.m., unless otherwise posted. Check-in time is 2 p.m. for campsites and 3 p.m. f”
   - checkout = "1 p.m" · “osted. Check-in time is 2 p.m. for campsites and 3 p.m. for facilities (local park time). Checkout time is 1 p.m. for campsites and 12 p.m. ”
-  - dump_station = true · “m Due to projected overnight temperatures the Interpretive Center and Challis Hot Springs Dump Stations will be CLOSED and winterized for th”
+  - dump_station = true · “8:30am – 8:30pm Monday – Tuesday: CLOSED The Interpretive Center and Challis Hot Springs Dump Stations CLOSED for the season on October 26, ”
   - features = "fire pit" · “oom cabins that sleep up to 5 on bunk beds, and futons. Cook outside on the grill-covered fire pit. Cabins are powered, heated, and air cond”
   - fees = "$1,037,322 in gold and silver at a cost of | $10 per person · “s of stream gravel, leaving behind 5 miles of dredge tailings and recovering an estimated $1,037,322 in gold and silver at a cost of $1,076,”
-  - hookups.electric = true · “t Springs campground consists of 68 campsites, ranging from primitive tent sites to water/electric RV sites. Other camping opportunities can”
+  - hookups.electric = "some" · “and the Challis Hot Springs campgrounds. Camping opportunities range from primitive to RV hookups and B&B’s. The elevation at Custer is 6,50”
   - hookups.sewer = "some" · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
   - hookups.water = true · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
 - **Herd Lake Campground** (intake-US-11947, agency (outside research camping-us-oct31), status ok, 7 facts) · [www.recreation.gov](https://www.recreation.gov/camping/poi/202091)

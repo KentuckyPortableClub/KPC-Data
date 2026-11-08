@@ -51,10 +51,10 @@
   },
   "Hard look reader": {
    "areas": "",
-   "last_run": "2026-11-07",
-   "made": " 2026-11-07; left 0",
+   "last_run": "2026-11-08",
+   "made": " 2026-11-08; left 0",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42352977928",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42460776050",
    "waiting_on": "chat 11 answers data/waiting/questions/hardlook.json"
   },
   "Intake: acres-engine.json": {
@@ -1051,10 +1051,10 @@
   },
   "Picture-map tracer (draft)": {
    "areas": "",
-   "last_run": "2026-11-02",
-   "made": "2026-11-02: 163 maps: {'NO LINE': 43, 'NO FIT': 95, 'DRAWN': 25}",
+   "last_run": "2026-11-08",
+   "made": "2026-11-08: 166 maps: {'NO LINE': 43, 'NO FIT': 96, 'DRAWN': 27}",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41463596136",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42460781600",
    "waiting_on": "chat 11 grades tools-out picture-trace/ (approximate only, R-G9)"
   },
   "Retry list (GitHub try)": {
@@ -1091,27 +1091,35 @@
   },
   "T5 site checker": {
    "areas": "",
-   "last_run": "2026-11-02",
-   "made": "60 checks failed on Nov 1; tuned Nov 2 (outline button on an already drawn outline = fine; failed file URLs listed); reruns after chat 3's 404 fixes",
+   "last_run": "2026-11-08",
+   "made": "66 checks failed (tools-out site-check/summary.md)",
    "result": "amber",
-   "run": "",
-   "waiting_on": "chat 3 fixes the 404s; then the weekly run"
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42460777833",
+   "waiting_on": "chat 3 fixes the site"
   },
   "Tool trial: audit": {
    "areas": "",
-   "last_run": "2026-11-01",
-   "made": "exit 0 2026-11-01: done in 14.4 min: ../out/audit/summary.md, worst.csv, questions.json",
+   "last_run": "2026-11-08",
+   "made": "exit 0 2026-11-08: done in 16.3 min: ../out/audit/summary.md, worst.csv, questions.json",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41304282990",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42460786561",
    "waiting_on": "chat 11 grades tools-out/audit/ against the spec pass mark; open files only when red"
   },
   "Tool trial: inspire": {
    "areas": "",
-   "last_run": "2026-11-01",
-   "made": "exit 0 2026-11-01: ",
+   "last_run": "2026-11-08",
+   "made": "exit 0 2026-11-08: ",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41304282990",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42460786561",
    "waiting_on": "chat 11 grades tools-out/inspire/ against the spec pass mark; open files only when red"
+  },
+  "Tool trial: missedfers": {
+   "areas": "",
+   "last_run": "2026-11-08",
+   "made": "exit 0 2026-11-08: 2026-11-08T08:03:49 exit 0",
+   "result": "green",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42460786561",
+   "waiting_on": "chat 11 grades tools-out/missedfers/ against the spec pass mark; open files only when red"
   },
   "Tool trial: parcels": {
    "areas": "",
@@ -1123,18 +1131,26 @@
   },
   "Tool trial: pulloffs": {
    "areas": "",
+   "last_run": "2026-11-01",
+   "made": "exit 3 2026-11-01: US-3792: photo cell 58/1000",
+   "result": "green",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41334084381",
+   "waiting_on": "chat 11 grades tools-out/pulloffs/ against the spec pass mark; open files only when red"
+  },
+  "Tool trial: sameland": {
+   "areas": "",
    "last_run": "2026-11-08",
-   "made": "exit 3 2026-11-08: US-3792: photo cell 95/1000",
+   "made": "exit 0 2026-11-08: Done. See ../out/sameland/summary.md and ../out/sameland/questions.json",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42460786561",
-   "waiting_on": "chat 11 grades tools-out/pulloffs/ against the spec pass mark; open files only when red"
+   "waiting_on": "chat 11 grades tools-out/sameland/ against the spec pass mark; open files only when red"
   },
   "Tool trial: sitemaps": {
    "areas": "",
-   "last_run": "2026-11-01",
-   "made": "exit 0 2026-11-01:   api.pota.app/robots.txt answered 403: no robots rules (RFC 9309); the data is still read",
+   "last_run": "2026-11-08",
+   "made": "exit 0 2026-11-08:   api.pota.app/robots.txt answered 403: treated as Disallow: / (STOP); nothing is read from this host",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41304282990",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42460786561",
    "waiting_on": "chat 11 grades tools-out/sitemaps/ against the spec pass mark; open files only when red"
   },
   "Tool trial: trace": {
@@ -1144,6 +1160,14 @@
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/41463600874",
    "waiting_on": "chat 11 grades tools-out/trace/ against the spec pass mark; open files only when red"
+  },
+  "Tool trial: watch": {
+   "areas": "",
+   "last_run": "2026-11-08",
+   "made": "exit 0 2026-11-08: Done: 6 changed park(s), 158 could not be checked. See ../out/watch/summary.md",
+   "result": "green",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42460786561",
+   "waiting_on": "chat 11 grades tools-out/watch/ against the spec pass mark; open files only when red"
   },
   "WDPA phone book": {
    "areas": "",
@@ -1170,9 +1194,9 @@
    "waiting_on": "proposals: answer YES / NO / NOT SURE in an inbox batch"
   },
   "campground info bot": {
-   "areas": "left: 31",
+   "areas": "left: 30",
    "last_run": "2026-11-08",
-   "made": "US-CT: done; {\"camps\": 32, \"needs_browser\": 0, \"needs_key\": 2, \"no_page\": 0, \"not_official\": 29, \"ok\": 0, \"other\": 1, \"resting\": 0, \"robots\": 0, \"with_booking\": 3, \"with_elevation\": 0, \"with_sites\": 0}",
+   "made": "US-ID: done; {\"camps\": 450, \"needs_browser\": 33, \"needs_key\": 311, \"no_page\": 0, \"not_official\": 35, \"ok\": 27, \"other\": 40, \"resting\": 0, \"robots\": 4, \"with_booking\": 100, \"with_elevation\": 0, \"with_facts\": 37, \"w",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42460779719",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
@@ -1219,10 +1243,10 @@
   },
   "outside-KY trial (hours / closures, saved only)": {
    "areas": "",
-   "last_run": "2026-11-07",
+   "last_run": "2026-11-08",
    "made": "9126 parks read, 2096 with hours or fees; 186 closure items (branch trial-outside-ky)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42352982396",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42460788147",
    "waiting_on": "Sat Nov 7: short report -> chat 11 grades 12 rows -> Brandon decides"
   },
   "park detective": {
@@ -1243,15 +1267,15 @@
   },
   "scoreboard": {
    "areas": "",
-   "last_run": "2026-11-07",
+   "last_run": "2026-11-08",
    "made": "scoreboard.json + scoreboard-parks.json + scoreboard-check.md",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42352981001",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42460784989",
    "waiting_on": "nothing (facts only)"
   },
   "waiting room": {
    "last_run": "2026-11-08",
-   "made": "heartbeat 3 h old, 445 files waiting",
+   "made": "heartbeat 0 h old, 446 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
