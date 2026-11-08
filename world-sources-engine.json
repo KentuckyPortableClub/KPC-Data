@@ -56,6 +56,41 @@
    "url": "https://datamap.gov.wales/geoserver/ows?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=inspire-nrw%3ANRW_FORESTRY_OWNERSHIP_GB",
    "agency": "Natural Resources Wales - NRW_FORESTRY_OWNERSHIP_GB (DataMapWales)",
    "status": "POSSIBLE MATCH (engine 2026-11-08)"
+  },
+  "GB-0982": {
+   "url": "https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=protectedareas%3Asssi",
+   "agency": "NatureScot",
+   "status": "POSSIBLE MATCH (engine 2026-11-08)"
+  },
+  "GB-7231": {
+   "url": "https://ogc.nature.scot/geoserver/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=scottishforestry%3ANational_Forest_Estate_Ownership_Scotland",
+   "agency": "Forestry and Land Scotland - National Forest Estate Ownership Scotland (scottishforestry: on NatureScot geoserver)",
+   "status": "POSSIBLE MATCH (engine 2026-11-08)"
+  },
+  "GB-7239": {
+   "url": "https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=protectedareas%3Asssi",
+   "agency": "NatureScot",
+   "status": "POSSIBLE MATCH (engine 2026-11-08)"
+  },
+  "GB-1000": {
+   "url": "https://datamap.gov.wales/geoserver/ows?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=geonode%3AGWC21_Area_of_Outstanding_Natural_Beauty",
+   "agency": "Natural Resources Wales / Welsh Government (DataMapWales)",
+   "status": "POSSIBLE MATCH (engine 2026-11-08)"
+  },
+  "GB-1003": {
+   "url": "https://datamap.gov.wales/geoserver/ows?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=inspire-nrw%3ANRW_SSSI",
+   "agency": "Natural Resources Wales / Welsh Government (DataMapWales)",
+   "status": "POSSIBLE MATCH (engine 2026-11-08)"
+  },
+  "GB-1006": {
+   "url": "https://datamap.gov.wales/geoserver/ows?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=geonode%3Anrw_national_forest",
+   "agency": "Wales - National Forest for Wales sites (DataMapWales geonode:nrw_national_forest)",
+   "status": "FOUND (engine 2026-11-08)"
+  },
+  "GB-1191": {
+   "url": "https://datamap.gov.wales/geoserver/ows?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=inspire-nrw%3ANRW_SSSI",
+   "agency": "Natural Resources Wales / Welsh Government (DataMapWales)",
+   "status": "POSSIBLE MATCH (engine 2026-11-08)"
   }
  }
 }
