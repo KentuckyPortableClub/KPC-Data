@@ -10,9 +10,9 @@ Updated 2026-11-08. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-VA | 184 | 177 | 50 | **25** | 53 | 28 | 21 | 17 | 0 | 20 |
 | US-WV | 172 | 165 | 20 | **11** | 101 | 28 | 5 | 1 | 0 | 5 |
 | US-GA | 237 | 225 | 104 | **64** | 30 | 22 | 4 | 11 | 0 | 7 |
-| US-AL | 155 | 133 | 33 | **16** | 15 | 57 | 4 | 4 | 0 | 7 |
-| US-SC | 167 | 160 | 18 | **14** | 11 | 111 | 3 | 5 | 0 | 4 |
-| US-FL | 460 | 441 | 83 | **46** | 31 | 279 | 2 | 15 | 0 | 10 |
+| US-AL | 155 | 134 | 33 | **16** | 13 | 60 | 4 | 4 | 0 | 7 |
+| US-SC | 167 | 159 | 16 | **7** | 5 | 126 | 2 | 4 | 0 | 4 |
+| US-FL | 460 | 443 | 84 | **46** | 31 | 280 | 2 | 16 | 0 | 11 |
 | US-MS | 155 | 101 | 7 | **7** | 5 | 71 | 0 | 4 | 0 | 17 |
 | US-IN | 229 | 209 | 85 | **54** | 34 | 35 | 1 | 17 | 0 | 17 |
 | US-IL | 219 | 204 | 91 | **31** | 38 | 40 | 3 | 15 | 0 | 7 |
@@ -583,7 +583,7 @@ Updated 2026-11-08. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 
 ## US-FL
 
-**Agree:** 83 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 83 agree (second agency).
+**Agree:** 84 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 84 agree (second agency).
 
 **Size more than 15% off (our outline vs the agency):**
 
@@ -644,8 +644,8 @@ Updated 2026-11-08. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 - US-0258 Ten Thousand Islands National Wildlife Refuge: ours 21,088 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-0658 Timucuan Preserve National Conservation Area: ours 16,646 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 600 acre, no total words near it) · [www.nps.gov](https://www.nps.gov/timu/index.htm)
 - US-10551 Falling Creek State Conservation Area: ours 502 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-5118 Edward W. Chance Reserve State Conservation Area: ours 7,164 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 2100 Acres, no total words near it) · [www.swfwmd.state.fl.us](https://www.swfwmd.state.fl.us/recreation/edward-w-chance-reserve-coker-prairie-tract)
-- US-5250 Annutteliga Hammock State Conservation Area: ours 2,322 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 570 Acres, no total words near it) · [www.swfwmd.state.fl.us](https://www.swfwmd.state.fl.us/recreation/annutteliga-hammock)
+- US-5118 Edward W. Chance Reserve State Conservation Area: ours 7,935 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 2100 Acres, no total words near it) · [www.swfwmd.state.fl.us](https://www.swfwmd.state.fl.us/recreation/edward-w-chance-reserve-coker-prairie-tract)
+- US-5250 Annutteliga Hammock State Conservation Area: ours 2,317 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 570 Acres, no total words near it) · [www.swfwmd.state.fl.us](https://www.swfwmd.state.fl.us/recreation/annutteliga-hammock)
 - US-6289 Aucilla Wildlife Management Area: ours 45,299 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 14,000 acres, no total words near it) · [myfwc.com](https://myfwc.com/recreation/lead/aucilla/history/)
 - US-6291 Fred C. Babcock/Cecil M. Webb Wildlife Management Area: ours 67,375 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 1,280 acres, no total words near it) · [myfwc.com](https://myfwc.com/recreation/lead/babcockwebb/history/)
 - US-6293 Box-R Wildlife Management Area: ours 11,187 ac · cause: no total-looking sentence: numbers found were parts or other units
@@ -685,6 +685,7 @@ You · [www.fws.gov](https://www.fws.gov/refuge/chassahowitzka/about-us)
 - US-6329 Tosohatchee Wildlife Management Area · transfer: “Department, where it was restored and opened to the public. In 2006, management of Tosohatchee was transferred from the Department of Environmental Protection to the Florida Fish and Wildlife Conserva” · owner now: Department of Environmental Protection · [myfwc.com](https://myfwc.com/recreation/lead/tosohatchee/history/)
 - US-6329 Tosohatchee Wildlife Management Area · managed by: “hatchee property. In 1993, the Beehead Ranch House was moved to the Fort Christmas Historical Park, operated by the Orange County Parks and Recreation Department, where it was restored and opened to t” · owner now: Department of Environmental Protection · [myfwc.com](https://myfwc.com/recreation/lead/tosohatchee/history/)
 - US-6682 RV Griffin Reserve State Conservation Area · managed by: “s and resembles Florida dry prairie, one of North America's most imperiled ecosystems. The property is managed by the Peace River Manasota Regional Water Supply Authority (PRMRWSA). The reserve was na” · owner now: Peace River Manasota Regional Water Supply Authority · [www.swfwmd.state.fl.us](https://www.swfwmd.state.fl.us/recreation/rv-griffin-reserve)
+- US-7475 Starkey Wilderness/Serenova Preserve State Conservation Area · managed by: “tributary, the Anclote River. The Preserve also serves as a recharge area for a regional well field operated by Tampa Bay Water that is an essential component of the multi-county water supply system t” · owner now: Tampa Bay Water · [www.swfwmd.state.fl.us](https://www.swfwmd.state.fl.us/recreation/starkey-wilderness-preserve)
 - US-8349 Gourd Island State Conservation Area · transfer: “hammock. The Florida Department of Transportation acquired the property in December 2010 and later donated it to the St. Johns River Water Management District as mitigation for wetland impacts elsewhe” · owner now: St · [www.sjrwmd.com](https://www.sjrwmd.com/lands/recreation/gourd-island/)
 - US-8356 Lake Monroe State Conservation Area · transfer: “onservation area is dedicated to Minnie Beck Kratzert, whose family owned the property until it was sold to the District in 1987. One of the special highlights of this property is its beautiful views ” · owner now: District · [www.sjrwmd.com](https://www.sjrwmd.com/lands/recreation/lake-monroe/)
 - US-8367 Pellicer Creek State Conservation Area · managed by: “ghts of this property is its location adjacent to other public properties. Princess Place Preserve, managed by Flagler County, is the site of the Princess Estate, a lodge designed by William Wright an” · owner now: Flagler County · [www.sjrwmd.com](https://www.sjrwmd.com/lands/recreation/pellicer-creek/)

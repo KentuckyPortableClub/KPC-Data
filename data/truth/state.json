@@ -6,19 +6,19 @@
     "agree": 33,
     "handover_hints": 4,
     "no_page": 3,
-    "no_size": 57,
+    "no_size": 60,
     "off": 16,
     "ours_unknown": 4,
     "parks": 155,
     "retired": 0,
-    "unsure": 15,
+    "unsure": 13,
     "weak": 7,
-    "with_outline": 133
+    "with_outline": 134
    },
    "left": 0,
    "parks": 155,
-   "status": "done",
-   "updated": "2026-11-08"
+   "status": "queued",
+   "updated": "2026-11-01"
   },
   "US-AR": {
    "checked": 306,
@@ -123,22 +123,22 @@
   "US-FL": {
    "checked": 460,
    "counts": {
-    "agree": 83,
-    "handover_hints": 15,
+    "agree": 84,
+    "handover_hints": 16,
     "no_page": 0,
-    "no_size": 279,
+    "no_size": 280,
     "off": 46,
     "ours_unknown": 2,
     "parks": 460,
     "retired": 0,
     "unsure": 31,
-    "weak": 10,
-    "with_outline": 441
+    "weak": 11,
+    "with_outline": 443
    },
    "left": 0,
    "parks": 460,
-   "status": "done",
-   "updated": "2026-11-08"
+   "status": "queued",
+   "updated": "2026-11-01"
   },
   "US-GA": {
    "checked": 237,
@@ -157,7 +157,7 @@
    },
    "left": 0,
    "parks": 237,
-   "status": "done",
+   "status": "queued",
    "updated": "2026-11-08"
   },
   "US-IA": {
@@ -583,22 +583,22 @@
   "US-SC": {
    "checked": 167,
    "counts": {
-    "agree": 18,
-    "handover_hints": 5,
+    "agree": 16,
+    "handover_hints": 4,
     "no_page": 3,
-    "no_size": 111,
-    "off": 14,
-    "ours_unknown": 3,
+    "no_size": 126,
+    "off": 7,
+    "ours_unknown": 2,
     "parks": 167,
     "retired": 0,
-    "unsure": 11,
+    "unsure": 5,
     "weak": 4,
-    "with_outline": 160
+    "with_outline": 159
    },
    "left": 0,
    "parks": 167,
-   "status": "done",
-   "updated": "2026-11-08"
+   "status": "queued",
+   "updated": "2026-11-01"
   },
   "US-SD": {
    "checked": 120,
@@ -677,7 +677,7 @@
    },
    "left": 0,
    "parks": 184,
-   "status": "done",
+   "status": "queued",
    "updated": "2026-11-08"
   },
   "US-VT": {
@@ -737,61 +737,37 @@
    },
    "left": 0,
    "parks": 172,
-   "status": "done",
+   "status": "queued",
    "updated": "2026-11-08"
   }
  },
- "hosts": {
-  "www.alapark.com": 1794238982.9815848,
-  "www.floridastateparks.org": 1794242895.6292014,
-  "www.swfwmd.state.fl.us": 1794242965.7682638
- },
+ "hosts": {},
  "last": {
   "areas": [
-   "US-FL"
+   "US-NC"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 35,
    "errors": 0,
-   "for_person": 4,
-   "for_person_urls": [
-    [
-     "https://www.floridastateparks.org/parks-and-trails/little-talbot-island-state-park",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.floridastateparks.org/learn/rules-regulations",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.swfwmd.state.fl.us/recreation/myakka-river-flatford-swamp",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.swfwmd.state.fl.us/recreation/deep-creek-preserve",
-     "HTTP 403 twice"
-    ]
-   ],
-   "requests": 18,
-   "rested": 366,
-   "retry403": 4,
-   "robots": 1,
-   "strikes": 8
+   "for_person_urls": [],
+   "requests": 53,
+   "rested": 0,
+   "robots": 0,
+   "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 15,
-   "no_size": 215,
+   "handover_hints": 20,
+   "no_size": 46,
    "ours_unknown": 0,
-   "pages_read": 1,
-   "parks": 232,
+   "pages_read": 2,
+   "parks": 46,
    "retired": 0,
-   "size_agree": 8,
-   "size_off": 3,
-   "size_unsure": 4,
-   "skipped_fresh": 228,
-   "with_outline": 230
+   "size_agree": 0,
+   "size_off": 0,
+   "size_unsure": 0,
+   "skipped_fresh": 207,
+   "with_outline": 46
   },
   "when": "2026-11-08"
  },
