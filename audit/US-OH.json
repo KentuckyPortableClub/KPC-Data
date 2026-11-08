@@ -1,7 +1,8 @@
 {
  "area": "US-OH",
- "built": "2026-11-02",
+ "built": "2026-11-08",
  "tool": "KPC-map-audit",
+ "rules": "2026-11-02c",
  "parks": [
   {
    "ref": "US-0020",
@@ -63,7 +64,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-81.546477077027 41.1962100934463]; 2 piece(s) under 10 m wide; 3 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-81.546477077027 41.1962100934463]; 2 piece(s) under 10 m wide; 3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -131,10 +138,10 @@
      "metres": 327.9
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 2594.9,
-     "official_acres": 5186.0,
-     "times": 2.0,
+     "official_acres": 2593.0,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -171,8 +178,8 @@
     "record 3709: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 328 m outside the outline (+1 more flag)."
+   "score": 1,
+   "why": "NEAR: POTA's pin is 328 m outside the outline."
   },
   {
    "ref": "US-0483",
@@ -220,11 +227,13 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
+     "flag": "PASS",
      "outline_acres": 7560.3,
      "official_acres": 14516.0,
-     "times": 1.92,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "official_acres_low": 7542.0,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 7,542 ac, all providers added 14,516 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -243,7 +252,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.003,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -262,8 +277,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 1.9 times smaller than the official 14,516 acres (7,560 ac drawn) (+1 more flag)."
+   "score": 1,
+   "why": "SLIVERS: The shape has problems: 1 piece(s) under 10 m wide."
   },
   {
    "ref": "US-0732",
@@ -328,7 +343,7 @@
     },
     "T9": {
      "last_edit": "2026-10-16",
-     "read": "2026-11-02",
+     "read": "2026-11-05",
      "flag": "PASS"
     }
    },
@@ -1782,7 +1797,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1903,7 +1924,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "3 hole(s) under 100 m2"
+     "note": "3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2097,7 +2124,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "14 hole(s) under 100 m2"
+     "note": "14 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 14,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2222,7 +2255,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-82.0411901044363 39.535015332594]"
+     "note": "Ring Self-intersection[-82.0411901044363 39.535015332594]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2369,7 +2408,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -2945,7 +2990,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "4 hole(s) under 100 m2"
+     "note": "4 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 4,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3115,7 +3166,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-83.048817941221 40.4501664694861]; 4 piece(s) under 10 m wide; 2 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-83.048817941221 40.4501664694861]; 4 piece(s) under 10 m wide; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 4
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3274,7 +3331,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "1 piece(s) under 10 m wide; 1 hole(s) under 100 m2"
+     "note": "1 piece(s) under 10 m wide; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "SPILL",
@@ -3417,7 +3480,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3518,7 +3587,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -4001,7 +4076,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "1 piece(s) under 10 m wide; 1867 hole(s) under 100 m2"
+     "note": "1 piece(s) under 10 m wide; 1867 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.007,
+      "holes": 1867,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -4615,7 +4696,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "6 hole(s) under 100 m2"
+     "note": "6 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 6,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -4815,7 +4902,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "2 piece(s) under 10 m wide; 10 hole(s) under 100 m2"
+     "note": "2 piece(s) under 10 m wide; 10 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 10,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -5705,7 +5798,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "25 hole(s) under 100 m2"
+     "note": "25 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.007,
+      "holes": 25,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6138,7 +6237,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6341,7 +6446,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-82.2569537468033 40.6062592959546]; 181 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-82.2569537468033 40.6062592959546]; 181 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.003,
+      "holes": 181,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6450,7 +6561,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6860,7 +6977,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -6974,7 +7097,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "6 hole(s) under 100 m2"
+     "note": "6 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 6,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7190,7 +7319,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "6 piece(s) under 10 m wide; 24 hole(s) under 100 m2"
+     "note": "6 piece(s) under 10 m wide; 24 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.007,
+      "holes": 24,
+      "pieces": 6
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7633,7 +7768,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-81.4444387563425 40.1074852018229]; 3 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-81.4444387563425 40.1074852018229]; 3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7676,41 +7817,11 @@
     -82.9619
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0"
+    "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 9612.8,
+   "acres_drawn": 9592.0,
    "records": [
-    {
-     "id": "padus#72012",
-     "name": "Scioto Trail State Forest",
-     "type": "Forest Management State Recreation Area",
-     "category": "Fee",
-     "acres": 9272.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=72012&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#72033",
-     "name": "Scioto Trail State Park",
-     "type": "Trails State Recreation Area",
-     "category": "Fee",
-     "acres": 212.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=72033&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#72032",
-     "name": "Scioto Trail State Forest",
-     "type": "Trails State Recreation Area",
-     "category": "Fee",
-     "acres": 78.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=72032&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgohf827",
      "name": "Scioto Trail SF",
@@ -7750,16 +7861,24 @@
      "layer": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0",
      "link": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0/query?objectIds=855&outFields=*&returnGeometry=false&f=html",
      "name_field": "Name_Label"
+    },
+    {
+     "id": "padus#72033",
+     "name": "Scioto Trail State Park",
+     "type": "Trails State Recreation Area",
+     "category": "Fee",
+     "acres": 212.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=72033&outFields=*&returnGeometry=false&f=html"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#72012",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#72033",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#72032",
     "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0#827",
     "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0#65",
     "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0#826",
-    "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0#855"
+    "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0#855",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#72033"
    ],
    "tests": {
     "T1": {
@@ -7778,16 +7897,22 @@
     },
     "T4": {
      "park_kind": "state park",
-     "record_kind": "recreation area",
+     "record_kind": "trail",
      "flag": "PASS"
     },
     "T5": {
      "flag": "TINY HOLES",
-     "pieces": 24,
+     "pieces": 25,
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "3 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 3,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -7800,8 +7925,6 @@
      "flag": "DUPLICATE",
      "parks": {
       "US-5448": [
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#72012",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#72032",
        "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0#827",
        "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0#65",
        "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0#826",
@@ -7821,7 +7944,7 @@
    ],
    "status": "SOURCE DOWN: retry next run",
    "score": 2,
-   "why": "SOURCE DOWN: TINY HOLES: The shape has problems: 2 hole(s) under 100 m2 (+1 more flag)."
+   "why": "SOURCE DOWN: TINY HOLES: The shape has problems: 3 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-1991",
@@ -7924,7 +8047,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-83.2258554434549 38.6616099414667]; 5 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-83.2258554434549 38.6616099414667]; 5 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 5,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8421,7 +8550,13 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "1 piece(s) under 10 m wide; 21 hole(s) under 100 m2"
+     "note": "1 piece(s) under 10 m wide; 21 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 21,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8638,7 +8773,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "4 piece(s) under 10 m wide"
+     "note": "4 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.073,
+      "holes": 0,
+      "pieces": 4
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -8763,7 +8904,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "4 hole(s) under 100 m2"
+     "note": "4 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 4,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9028,21 +9175,10 @@
     -81.3622
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0"
    ],
-   "acres_drawn": 690.1,
+   "acres_drawn": 689.2,
    "records": [
-    {
-     "id": "padus#72031",
-     "name": "Wingfoot Wildlife Area",
-     "type": "Sportsman's/Gun/Hunting/Fishing Club State Recreation Area",
-     "category": "Fee",
-     "acres": 594.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=72031&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgohf619",
      "name": "Wingfoot WA",
@@ -9075,7 +9211,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#72031",
     "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0#619",
     "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0#63",
     "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0#638"
@@ -9093,13 +9228,12 @@
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Wingfoot Lake State Park",
-     "record_name": "Wingfoot Wildlife Area"
+     "record_name": "Wingfoot WA"
     },
     "T4": {
      "park_kind": "state park",
-     "record_kind": "wma",
-     "flag": "CONFLICT",
-     "why": "the park is a state park but the record is a wma"
+     "record_kind": "state park",
+     "flag": "PASS"
     },
     "T5": {
      "flag": "TINY HOLES",
@@ -9107,7 +9241,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "13 hole(s) under 100 m2"
+     "note": "24 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.003,
+      "holes": 24,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9120,7 +9260,6 @@
      "flag": "DUPLICATE",
      "parks": {
       "US-9518": [
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#72031",
        "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0#619",
        "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0#63",
        "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0#638"
@@ -9138,8 +9277,8 @@
     "SOURCE DOWN: robots.txt asks bots not to read https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_Public_nolakes/FeatureServer/5/query"
    ],
    "status": "SOURCE DOWN: retry next run",
-   "score": 5,
-   "why": "SOURCE DOWN: CONFLICT: The park is a state park but the record is a wma (+2 more flags)."
+   "score": 2,
+   "why": "SOURCE DOWN: TINY HOLES: The shape has problems: 24 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-3517",
@@ -9601,11 +9740,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : InvalidSchema"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-4521",
@@ -9678,7 +9817,13 @@
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-81.0639637299282 39.5477137916791]; 2 hole(s) under 100 m2; 312 pieces spread over 206 km"
+     "note": "Ring Self-intersection[-81.0639637299282 39.5477137916791]; 2 hole(s) under 100 m2; 312 pieces spread over 206 km",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -9764,11 +9909,11 @@
     }
    },
    "problems": [
-    "CAN'T TELL: no layer known for record id 'trl…'"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 137 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 137 m outside the outline."
   },
   {
    "ref": "US-5435",
@@ -9978,7 +10123,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -10813,7 +10964,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-82.2569537468033 40.6062592959546]; 122 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-82.2569537468033 40.6062592959546]; 122 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 122,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -10913,7 +11070,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-82.1979259776932 39.7924997195668]; 2 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-82.1979259776932 39.7924997195668]; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11143,7 +11306,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "5 hole(s) under 100 m2"
+     "note": "5 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 5,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11279,7 +11448,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11292,8 +11467,6 @@
      "flag": "DUPLICATE",
      "parks": {
       "US-1990": [
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#72012",
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#72032",
        "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0#827",
        "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0#65",
        "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0#826",
@@ -11382,7 +11555,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-81.8124788022324 39.1294899990497]"
+     "note": "Ring Self-intersection[-81.8124788022324 39.1294899990497]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11530,7 +11709,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-83.2258554434549 38.6616099414667]; 31 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-83.2258554434549 38.6616099414667]; 31 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 31,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11785,7 +11970,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "9 hole(s) under 100 m2"
+     "note": "9 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 9,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -12097,7 +12288,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-82.272102902517 39.3780723527005]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-82.272102902517 39.3780723527005]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -12199,7 +12396,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "42 hole(s) under 100 m2"
+     "note": "42 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 42,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -12619,7 +12822,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "15 hole(s) under 100 m2"
+     "note": "15 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 15,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13238,7 +13447,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "2 piece(s) under 10 m wide"
+     "note": "2 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.003,
+      "holes": 0,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13331,7 +13546,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-81.9443079742437 40.1077430952993]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-81.9443079742437 40.1077430952993]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13494,7 +13715,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-81.6816468940354 39.7905573829482]; 12 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-81.6816468940354 39.7905573829482]; 12 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 12,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13751,7 +13978,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "19 hole(s) under 100 m2"
+     "note": "19 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 19,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13885,7 +14118,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -13999,7 +14238,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -14179,7 +14424,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-83.4840208751795 38.9809369327644]"
+     "note": "Ring Self-intersection[-83.4840208751795 38.9809369327644]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -14547,7 +14798,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -14783,7 +15040,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "18 hole(s) under 100 m2"
+     "note": "18 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 18,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -14963,7 +15226,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "5 hole(s) under 100 m2"
+     "note": "5 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 5,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -15353,7 +15622,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2"
+     "note": "2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -15743,7 +16018,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-82.6448678029338 39.6453146881574]; 2 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-82.6448678029338 39.6453146881574]; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -16973,7 +17254,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -17193,7 +17480,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -18793,7 +19086,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -20892,7 +21191,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-82.3327738600634 38.6261621883882]"
+     "note": "Ring Self-intersection[-82.3327738600634 38.6261621883882]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -21127,7 +21432,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-83.048817941221 40.4501664694861]; 4 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-83.048817941221 40.4501664694861]; 4 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 4,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -21213,7 +21524,7 @@
      "outline_acres": 167.6,
      "official_acres": 168.0,
      "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by Ducks Unlimited (PAD-US source DU_PADUS2_0_CARL_2016_gdb)"
     },
     "T3": {
      "flag": "MISMATCH",
@@ -21350,7 +21661,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide"
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 0,
+      "pieces": 1
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -22087,7 +22404,13 @@
      "flags": [
       "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-80.913768122844 41.3970030083429]"
+     "note": "Ring Self-intersection[-80.913768122844 41.3970030083429]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -22356,7 +22679,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-80.784651117389 40.6471640813983]; 1 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-80.784651117389 40.6471640813983]; 1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -23364,7 +23693,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -23852,7 +24187,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -25111,7 +25452,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-81.4444387563425 40.1074852018229]; 5 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-81.4444387563425 40.1074852018229]; 5 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 5,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -25198,7 +25545,13 @@
      "flags": [
       "SLIVERS"
      ],
-     "note": "2 piece(s) under 10 m wide"
+     "note": "2 piece(s) under 10 m wide",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.002,
+      "holes": 0,
+      "pieces": 2
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -26255,7 +26608,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2"
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -26877,7 +27236,13 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "13 hole(s) under 100 m2"
+     "note": "13 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 13,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -26890,7 +27255,6 @@
      "flag": "DUPLICATE",
      "parks": {
       "US-3516": [
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#72031",
        "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0#619",
        "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0#63",
        "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_External/MapServer/0#638"
@@ -26979,7 +27343,13 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-81.9532404585096 39.5677043609451]; 2 hole(s) under 100 m2"
+     "note": "Ring Self-intersection[-81.9532404585096 39.5677043609451]; 2 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.001,
+      "holes": 2,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"

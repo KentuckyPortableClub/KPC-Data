@@ -647,3 +647,79 @@ It decides nothing: it ranks. Score 0 = all pass; +3 OUTSIDE / WAY OFF / MISMATC
 | 5 | US-13045 | Pancake BLM Herd Management Area | SPILL: The outline covers 90% of US-13526 Duckwater Airport BLM Backcountry Airstrip, with no 2-fer row (maybe the wrong record) (+2 more flags). |
 | 5 | US-13050 | Silver King BLM Herd Management Area | SPILL: The outline covers 100% of US-13196 Stampede-Nevada BLM Recreation Management Area, with no 2-fer row (maybe the wrong record) (+2 more flags). |
 | 5 | US-13115 | Gold Butte BLM Herd Management Area | SPILL: The outline covers 100% of US-9260 Jumbo Springs Wilderness Area, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+
+## US-NY
+
+- parks: 851 (826 with an outline graded, 25 with no outline, 0 with records this tool can't read)
+- pass every test: 637; have flags: 214; source down (retry): 5
+- flags: NEAR 98, TINY HOLES 55, SELF-INTERSECTION 54, MISMATCH 27, DUPLICATE 25, SPILL 21, SLIVERS 16, OFF 4, OUTSIDE 4, SCATTERED 2, WEAK 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 9 | US-5106 | Bear Swamp(Otsego County) State Forest | MISMATCH: The record name 'Bear Swamp State Forest' does not match POTA's name 'Bear Swamp(Otsego County) State Forest' (score 0.67) (+4 more flags). |
+| 8 | US-5107 | Bear Swamp(Cayuga County) State Forest | MISMATCH: The record name 'Bear Swamp State Forest' does not match POTA's name 'Bear Swamp(Cayuga County) State Forest' (score 0.67) (+3 more flags). |
+| 8 | US-5110 | Beaver Creek(St Lawrence County) State Forest | MISMATCH: The record name 'Beaver Creek State Forest' does not match POTA's name 'Beaver Creek(St Lawrence County) State Forest' (score 0.50) (+3 more flags). |
+| 8 | US-5249 | Pine Hill (Delaware County) State Forest | MISMATCH: The record name 'Pine Hill State Forest' does not match POTA's name 'Pine Hill (Delaware County) State Forest' (score 0.67) (+3 more flags). |
+| 7 | US-10284 | Lost Nation (St. Lawrence County) State Forest | MISMATCH: The record name 'Lost Nation State Forest' does not match POTA's name 'Lost Nation (St. Lawrence County) State Forest' (score 0.50) (+2 more flags). |
+| 7 | US-12030 | Pine Hill (Cattaraugus County) State Forest | MISMATCH: The record name 'Pine Hill State Forest' does not match POTA's name 'Pine Hill (Cattaraugus County) State Forest' (score 0.67) (+2 more flags). |
+| 7 | US-12778 | Tracy Creek (Steuben County) State Forest | MISMATCH: The record name 'Tracy Creek State Forest' does not match POTA's name 'Tracy Creek (Steuben County) State Forest' (score 0.67) (+2 more flags). |
+| 7 | US-2128 | Robert Moses (Long Island) State Park | MISMATCH: The record name 'Robert Moses State Park' does not match POTA's name 'Robert Moses (Long Island) State Park' (score 0.50) (+2 more flags). |
+| 7 | US-4374 | Robert Moses (Thousand Islands) State Park | MISMATCH: The record name 'Robert Moses State Park' does not match POTA's name 'Robert Moses (Thousand Islands) State Park' (score 0.50) (+2 more flags). |
+| 7 | US-5111 | Beaver Creek (Madison County) State Forest | MISMATCH: The record name 'Beaver Creek State Forest' does not match POTA's name 'Beaver Creek (Madison County) State Forest' (score 0.67) (+2 more flags). |
+
+## US-OH
+
+- parks: 276 (271 with an outline graded, 1 with no outline, 4 with records this tool can't read)
+- pass every test: 155; have flags: 121; source down (retry): 261
+- flags: TINY HOLES 58, NEAR 44, DUPLICATE 38, SELF-INTERSECTION 22, SLIVERS 12, CONFLICT 9, OUTSIDE 5, SPILL 4, MISMATCH 3, SCATTERED 1, WEAK 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 6 | US-1947 | Dillon State Park | SOURCE DOWN: SPILL: The outline covers 30% of US-9393 Blackhand Gorge State Nature Preserve, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-1986 | Pymatuning of Ohio State Park | SOURCE DOWN: OUTSIDE: POTA's pin is 1.3 km outside the outline (+1 more flag). |
+| 6 | US-9456 | Delaware State Wildlife Area | SOURCE DOWN: CONFLICT: The park is a wma but the record is a state park (+3 more flags). |
+| 6 | US-9499 | Salt Fork State Wildlife Area | SOURCE DOWN: CONFLICT: The park is a wma but the record is a state park (+3 more flags). |
+| 5 | US-7850 | Caesar Creek Lake State Wildlife Area | SOURCE DOWN: CONFLICT: The park is a wma but the record is a state park (+2 more flags). |
+| 5 | US-8114 | East Fork State Wildlife Area | SOURCE DOWN: CONFLICT: The park is a wma but the record is a state park (+2 more flags). |
+| 5 | US-8636 | Paint Creek State Wildlife Area | SOURCE DOWN: CONFLICT: The park is a wma but the record is a state park (+2 more flags). |
+| 5 | US-8637 | Deer Creek State Wildlife Area | SOURCE DOWN: CONFLICT: The park is a wma but the record is a state park (+2 more flags). |
+| 5 | US-9458 | Dillon State Wildlife Area | SOURCE DOWN: CONFLICT: The park is a wma but the record is a state park (+2 more flags). |
+| 5 | US-9518 | Wingfoot State Wildlife Area | SOURCE DOWN: CONFLICT: The park is a wma but the record is a state park (+2 more flags). |
+
+## US-OK
+
+- parks: 205 (154 with an outline graded, 51 with no outline, 0 with records this tool can't read)
+- pass every test: 111; have flags: 94; source down (retry): 5
+- flags: STALE CHECK 33, NEAR 29, TINY HOLES 17, SPILL 14, SELF-INTERSECTION 11, OUTSIDE 9, OFF 9, DUPLICATE 4, MISMATCH 3, SLIVERS 3, FAR 2, WAY OFF 2
+
+| score | ref | park | why |
+|---|---|---|---|
+| 9 | US-6352 | Honobia Creek Wildlife Management Area | FAR: POTA's pin is 14.9 km outside the outline (+4 more flags). |
+| 6 | US-2802 | Sequoyah Bay State Park | WAY OFF: The outline is 14.6 times bigger than the official 178 acres (2,605 ac drawn) (+3 more flags). |
+| 6 | US-6366 | Ouachita Leflore Unit Wildlife Management Area | SPILL: The outline covers 100% of US-11322 Beech Creek National Scenic Reserve, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 5 | US-12028 | Barren Fork Wildlife Management Area | FAR: POTA's pin is 28.0 km outside the outline. |
+| 5 | US-2801 | Roman Nose State Park | SPILL: The outline covers 99% of US-8640 Lake Watonga State Fishing Lake, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-2803 | Sequoyah State Park | WAY OFF: The outline is 14.6 times bigger than the official 178 acres (2,605 ac drawn) (+2 more flags). |
+| 5 | US-6347 | Copan Wildlife Management Area | SPILL: The outline covers 100% of US-6346 Hal and Fern Cooper Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-8140 | Gary Sherrer Wildlife Management Area | OUTSIDE: POTA's pin is 1.9 km outside the outline (+2 more flags). |
+| 4 | US-12027 | Altus-Lugert State Fishing Lake | OUTSIDE: POTA's pin is 4.9 km outside the outline (+1 more flag). |
+| 4 | US-2773 | Black Mesa State Park | SPILL: The outline covers 100% of US-10305 Lake Carl Etling Conservation Area, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+
+## US-OR
+
+- parks: 440 (389 with an outline graded, 51 with no outline, 0 with records this tool can't read)
+- pass every test: 228; have flags: 212; source down (retry): 8
+- flags: TINY HOLES 67, NEAR 54, STALE CHECK 47, SELF-INTERSECTION 33, SLIVERS 27, SPILL 26, MISMATCH 21, DUPLICATE 19, OFF 16, SCATTERED 8, OUTSIDE 5, WEAK 4, CONFLICT 4, WAY OFF 1, FAR 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 8 | US-4381 | Mount Hood National Forest | SPILL: The outline covers 100% of US-10249 Salmon River National Wild and Scenic River, with no 2-fer row (maybe the wrong record) (+5 more flags). |
+| 8 | US-9159 | Lower Deschutes National Wild and Scenic River | FAR: POTA's pin is 13.0 km outside the outline (+3 more flags). |
+| 7 | US-13098 | Neptune South Wayside State Recreation Site | MISMATCH: The record name 'Neptune' does not match POTA's name 'Neptune South Wayside State Recreation Site' (score 0.50) (+2 more flags). |
+| 7 | US-13099 | Neptune North Wayside State Recreation Site | MISMATCH: The record name 'Neptune' does not match POTA's name 'Neptune North Wayside State Recreation Site' (score 0.50) (+2 more flags). |
+| 7 | US-4387 | Wallowa-Whitman National Forest | SPILL: The outline covers 73% of US-7361 Hells Canyon National Recreation Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-5461 | Tillamook State Forest | SPILL: The outline covers 100% of US-5460 Sun Pass State Forest, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-9143 | Detroit Lake State Recreation Area | CONFLICT: The record is the whole lake but the park is a recreation area on it (+2 more flags). |
+| 6 | US-0502 | Malheur National Wildlife Refuge | SPILL: The outline covers 100% of US-9157 Donner und Blitzen National Wild and Scenic River, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-4380 | Malheur National Forest | SPILL: The outline covers 52% of US-10741 Murderer's Creek BLM Herd Management Area, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-4388 | Willamette National Forest | SPILL: The outline covers 100% of US-12991 Marion Forks State Fish Hatchery, with no 2-fer row (maybe the wrong record) (+3 more flags). |
