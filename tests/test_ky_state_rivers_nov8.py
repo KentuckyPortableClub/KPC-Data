@@ -29,3 +29,10 @@ def test_ca_trails_pass():
     assert sum(1 for v in ROW.values() if (v.get('trail') or {}).get('qc_trq_nov8')) >= 200
     raw = (ROOT / 'data/waiting/outline-sources/trail-lines-wired-nov7.csv').read_bytes()
     assert raw.count(b'\r\n') == raw.count(b'\n')
+
+
+def test_ca_parks_canada_pass():
+    assert sum(1 for v in ROW.values() if (v.get('trail') or {}).get('ca_trails_pc_nov8')) == 812
+    assert 'inactive' in ROW['CA-2926']['trail']['ca_trails_pc_nov8'] and not (ROOT / 'data/trails/CA-2926.json').exists()
+    for r in ('CA-4775', 'CA-4778', 'CA-4782', 'CA-4784', 'CA-4798', 'CA-6075'):
+        assert 'not a trail' in ROW[r]['trail']['ca_trails_pc_nov8'] and not (ROOT / f'data/trails/{r}.json').exists()
