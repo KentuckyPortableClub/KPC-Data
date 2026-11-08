@@ -392,8 +392,23 @@
      8691.5
     ]
    },
-   "when": "2026-11-02",
-   "why": "Nov 2 map audit: chat 11 NO on wsrc4 (NO (chat 11, Nov 2, pattern OUTSIDE/FAR): PIN. The name differs from t)"
+   "when": "2026-11-08",
+   "why": "Nov 2 map audit: chat 11 NO on wsrc4 (NO (chat 11, Nov 2, pattern OUTSIDE/FAR): PIN. The name differs from t) · 2026-11-08: official wild & scenic river corridor polygon (USFS EDW WSR; Research Bot 0059-0103 CST, area matches within 10%) = this park (Brandon Nov 8: wild rivers are bounded parks)",
+   "join": [
+    "fwsr208",
+    "fwsr41"
+   ],
+   "fp": {
+    "fwsr208": [
+     "Kern, California National Wild and Scenic River",
+     20356
+    ],
+    "fwsr41": [
+     "Kern, California National Wild and Scenic River",
+     3447
+    ]
+   },
+   "source_kind": "corridor"
   },
   "US-0200": {
    "fp": {
@@ -1753,8 +1768,28 @@
      24342.3
     ]
    },
-   "when": "2026-11-02",
-   "why": "Nov 2 map audit: chat 11 NO on wsrc3 (NO (chat 11, Nov 2, pattern OFF bigger): PIN until fixed. The outline )"
+   "when": "2026-11-08",
+   "why": "Nov 2 map audit: chat 11 NO on wsrc3 (NO (chat 11, Nov 2, pattern OFF bigger): PIN until fixed. The outline ) · 2026-11-08: official wild & scenic river corridor polygon (USFS EDW WSR; Research Bot 0059-0103 CST, area matches within 10%) = this park (Brandon Nov 8: wild rivers are bounded parks)",
+   "join": [
+    "fwsr252",
+    "fwsr149",
+    "fwsr79"
+   ],
+   "fp": {
+    "fwsr252": [
+     "Tuolumne, California National Wild and Scenic River",
+     7057
+    ],
+    "fwsr149": [
+     "Tuolumne, California National Wild and Scenic River",
+     1233
+    ],
+    "fwsr79": [
+     "Tuolumne, California National Wild and Scenic River",
+     89
+    ]
+   },
+   "source_kind": "corridor"
   },
   "US-0896": {
    "no": [
@@ -14538,8 +14573,18 @@
    "alias_ok_names": [
     "Au Sable River"
    ],
-   "when": "2026-11-02",
-   "why": "2026-11-02 12:49: aliases-oct31 row YES 'Au Sable River' (chat 11 (Oct 31); applied by kpc_key_answers)"
+   "when": "2026-11-08",
+   "why": "2026-11-02 12:49: aliases-oct31 row YES 'Au Sable River' (chat 11 (Oct 31); applied by kpc_key_answers) · 2026-11-08: official wild & scenic river corridor polygon (USFS EDW WSR; Research Bot 0059-0103 CST, area matches within 10%) = this park (Brandon Nov 8: wild rivers are bounded parks)",
+   "join": [
+    "fwsr88"
+   ],
+   "fp": {
+    "fwsr88": [
+     "Au Sable, Michigan National Wild and Scenic River",
+     7011
+    ]
+   },
+   "source_kind": "corridor"
   },
   "US-12789": {
    "alias": [
@@ -14573,8 +14618,18 @@
    "alias_ok_names": [
     "Paint River"
    ],
-   "when": "2026-11-02",
-   "why": "2026-11-02 12:49: aliases-oct31 row YES 'Paint River' (chat 11 (Oct 31); applied by kpc_key_answers)"
+   "when": "2026-11-08",
+   "why": "2026-11-02 12:49: aliases-oct31 row YES 'Paint River' (chat 11 (Oct 31); applied by kpc_key_answers) · 2026-11-08: official wild & scenic river corridor polygon (USFS EDW WSR; Research Bot 0059-0103 CST, area matches within 10%) = this park (Brandon Nov 8: wild rivers are bounded parks)",
+   "join": [
+    "fwsr51"
+   ],
+   "fp": {
+    "fwsr51": [
+     "Paint, Michigan National Wild and Scenic River",
+     16070
+    ]
+   },
+   "source_kind": "corridor"
   },
   "US-12795": {
    "none": true,
@@ -14588,8 +14643,18 @@
    "alias_ok_names": [
     "Pine River"
    ],
-   "when": "2026-11-02",
-   "why": "2026-11-02 12:49: aliases-oct31 row YES 'Pine River' (chat 11 (Oct 31); applied by kpc_key_answers)"
+   "when": "2026-11-08",
+   "why": "2026-11-02 12:49: aliases-oct31 row YES 'Pine River' (chat 11 (Oct 31); applied by kpc_key_answers) · 2026-11-08: official wild & scenic river corridor polygon (USFS EDW WSR; Research Bot 0059-0103 CST, area matches within 10%) = this park (Brandon Nov 8: wild rivers are bounded parks)",
+   "join": [
+    "fwsr143"
+   ],
+   "fp": {
+    "fwsr143": [
+     "Pine, Michigan National Wild and Scenic River",
+     5388
+    ]
+   },
+   "source_kind": "corridor"
   },
   "US-12798": {
    "none": true,
@@ -61906,6 +61971,157 @@
    ],
    "when": "2026-11-02",
    "why": "2026-11-02 12:49: layers row YES 'Virgin Islands Coral Reef National Monum' (chat 11 (Oct 31); applied by kpc_key_answers)"
+  },
+  "US-0684": {
+   "join": [
+    "wsrc20"
+   ],
+   "fp": {
+    "wsrc20": [
+     "Delaware Wild and Scenic River",
+     21333
+    ]
+   },
+   "when": "2026-11-08",
+   "source_kind": "corridor",
+   "why": "2026-11-08: official wild & scenic river corridor polygon (NPS WSR boundaries; Research Bot 0059-0103 CST, area matches within 10%) = this park (Brandon Nov 8: wild rivers are bounded parks)"
+  },
+  "US-0886": {
+   "join": [
+    "wsrc23"
+   ],
+   "fp": {
+    "wsrc23": [
+     "Maurice Wild and Scenic River",
+     13983
+    ]
+   },
+   "when": "2026-11-08",
+   "source_kind": "corridor",
+   "why": "2026-11-08: official wild & scenic river corridor polygon (NPS WSR boundaries; Research Bot 0059-0103 CST, area matches within 10%) = this park (Brandon Nov 8: wild rivers are bounded parks)"
+  },
+  "US-9758": {
+   "join": [
+    "fwsr180",
+    "fwsr6",
+    "fwsr95"
+   ],
+   "fp": {
+    "fwsr180": [
+     "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+     10971
+    ],
+    "fwsr6": [
+     "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+     4651
+    ],
+    "fwsr95": [
+     "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+     906
+    ]
+   },
+   "when": "2026-11-08",
+   "source_kind": "corridor",
+   "why": "2026-11-08: official wild & scenic river corridor polygon (USFS EDW WSR; Research Bot 0059-0103 CST, area matches within 10%) = this park (Brandon Nov 8: wild rivers are bounded parks)"
+  },
+  "US-12235": {
+   "join": [
+    "fwsr16",
+    "fwsr98"
+   ],
+   "fp": {
+    "fwsr16": [
+     "Clarion, Pennsylvania National Wild and Scenic River",
+     10878
+    ],
+    "fwsr98": [
+     "Clarion, Pennsylvania National Wild and Scenic River",
+     5589
+    ]
+   },
+   "when": "2026-11-08",
+   "source_kind": "corridor",
+   "why": "2026-11-08: official wild & scenic river corridor polygon (USFS EDW WSR; Research Bot 0059-0103 CST, area matches within 10%) = this park (Brandon Nov 8: wild rivers are bounded parks)"
+  },
+  "US-12787": {
+   "join": [
+    "fwsr89"
+   ],
+   "fp": {
+    "fwsr89": [
+     "Bear Creek, Michigan National Wild and Scenic River",
+     1902
+    ]
+   },
+   "when": "2026-11-08",
+   "source_kind": "corridor",
+   "why": "2026-11-08: official wild & scenic river corridor polygon (USFS EDW WSR; Research Bot 0059-0103 CST, area matches within 10%) = this park (Brandon Nov 8: wild rivers are bounded parks)"
+  },
+  "US-12791": {
+   "join": [
+    "fwsr40",
+    "fwsr116"
+   ],
+   "fp": {
+    "fwsr40": [
+     "Indian, Michigan National Wild and Scenic River",
+     8796
+    ],
+    "fwsr116": [
+     "Indian, Michigan National Wild and Scenic River",
+     2749
+    ]
+   },
+   "when": "2026-11-08",
+   "source_kind": "corridor",
+   "why": "2026-11-08: official wild & scenic river corridor polygon (USFS EDW WSR; Research Bot 0059-0103 CST, area matches within 10%) = this park (Brandon Nov 8: wild rivers are bounded parks)"
+  },
+  "US-12797": {
+   "join": [
+    "fwsr63",
+    "fwsr144"
+   ],
+   "fp": {
+    "fwsr63": [
+     "Presque Isle, Michigan National Wild and Scenic River",
+     12744
+    ],
+    "fwsr144": [
+     "Presque Isle, Michigan National Wild and Scenic River",
+     7483
+    ]
+   },
+   "when": "2026-11-08",
+   "source_kind": "corridor",
+   "why": "2026-11-08: official wild & scenic river corridor polygon (USFS EDW WSR; Research Bot 0059-0103 CST, area matches within 10%) = this park (Brandon Nov 8: wild rivers are bounded parks)"
+  },
+  "US-12800": {
+   "join": [
+    "fwsr168"
+   ],
+   "fp": {
+    "fwsr168": [
+     "Whitefish, Michigan National Wild and Scenic River",
+     9404
+    ]
+   },
+   "when": "2026-11-08",
+   "source_kind": "corridor",
+   "why": "2026-11-08: official wild & scenic river corridor polygon (USFS EDW WSR; Research Bot 0059-0103 CST, area matches within 10%) = this park (Brandon Nov 8: wild rivers are bounded parks)"
+  },
+  "US-12801": {
+   "join": [
+    "fwsr231"
+   ],
+   "fp": {
+    "fwsr231": [
+     "Yellow Dog, Michigan National Wild and Scenic River",
+     1097
+    ]
+   },
+   "when": "2026-11-08",
+   "source_kind": "corridor",
+   "why": "2026-11-08: official wild & scenic river corridor polygon (USFS EDW WSR; Research Bot 0059-0103 CST, area matches within 10%) = this park (Brandon Nov 8: wild rivers are bounded parks)"
   }
  }
 }
