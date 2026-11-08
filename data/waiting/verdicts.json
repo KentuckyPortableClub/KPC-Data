@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-08T15:08Z",
+ "checked": "2026-11-08T15:30Z",
  "switched_on": false,
  "results": [
   {
@@ -719,7 +719,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 8 of 20 re-tested links dead, e.g. https://www.in.gov/dA/86d62369fd/ouabache_trail.pdf?language_id=1"
+    "F-D3 9 of 20 re-tested links dead, e.g. https://www.in.gov/dA/86d62369fd/ouabache_trail.pdf?language_id=1"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -2797,6 +2797,13 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/truth/US-WV.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/us-key/US-AK.json",
    "kind": "key",
    "why": [],
@@ -3920,13 +3927,6 @@
   {
    "path": "data/wwff/PYFF.json",
    "kind": "wwff",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/truth/US-WV.json",
-   "kind": "truth",
    "why": [],
    "notes": [],
    "verdict": "PASS"
