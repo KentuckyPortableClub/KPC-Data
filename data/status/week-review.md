@@ -6,9 +6,9 @@ For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snaps
 
 | key | official | approximate | pin | official change this week |
 |---|---|---|---|---|
-| US | 11,252 | 424 | 1,430 | +120 |
+| US | 11,223 | 424 | 1,459 | +91 |
 | Canada | 4,374 | 39 | 1,488 | +122 |
-| World | 29,224 | 0 | 17,553 | -10,517 |
+| World | 29,234 | 0 | 17,545 | -10,507 |
 
 ## Questions (per file: tier + answer)
 

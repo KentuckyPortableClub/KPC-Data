@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 467 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 416 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -43,7 +43,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-02 | 6 | data/fers/US-UT.json.gz | HOLD | F-2 candidates 62 -> 104 (over 30% change); F-2 47 new candidate pairs since the live file (over 10% of 62): a person looks at them first, e.g. US-0072+US-6010, US-0558+US-4578, US-0645+US-4575; F-K known 2-fer missing:  |
 | 2026-11-02 | 6 | data/fers/US-WV.json | HOLD | F-2 3 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-0735+US-4556, US-4526+US-4556, US-4526+US-9950 |
 | 2026-11-04 | 4 | data/campinfo/US-AR.json | HOLD | F-I4 1 toll-free reservation numbers kept as a camp phone, e.g. Designated WMA campsites |
-| 2026-11-04 | 4 | data/docs/US-IN.json | HOLD | F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dA/86d62369fd/ouabache_trail.pdf?language_id=1 |
+| 2026-11-04 | 4 | data/docs/US-IN.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-04 | 4 | data/fers/US-DE.json | HOLD | F-2 7 new candidate pairs since the live file (over 10% of 28): a person looks at them first, e.g. US-0898+US-9881, US-1733+US-9877, US-1743+US-9881 |
 | 2026-11-04 | 4 | data/fers/US-IA.json | HOLD | F-2 3 new candidate pairs since the live file (over 10% of 10): a person looks at them first, e.g. US-11305+US-11323, US-11305+US-2283, US-11305+US-9348 |
 | 2026-11-04 | 4 | data/fers/US-IN.json | HOLD | F-K known 2-fer missing: US-2264 + US-4182; F-K known 2-fer missing: US-4164 + US-5691 |
@@ -124,7 +124,6 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-08 | 0 | data/docs/US-WY.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-08 | 0 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
 | 2026-11-08 | 0 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
-| 2026-11-08 | 0 | data/us-key/US-AZ.json | PASS |  |
 | ? | ? | data/campinfo/US-AL.json | PASS |  |
 | ? | ? | data/campinfo/US-AZ.json | PASS |  |
 | ? | ? | data/campinfo/US-CA.json | PASS |  |
@@ -160,6 +159,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/campinfo/US-VA.json | PASS |  |
 | ? | ? | data/campinfo/US-WA.json | PASS |  |
 | ? | ? | data/campinfo/US-WI.json | PASS |  |
+| ? | ? | data/campinfo/US-WV.json | PASS |  |
 | ? | ? | data/campinfo/US-WY.json | PASS |  |
 | ? | ? | data/campstate/US-AK.json | PASS |  |
 | ? | ? | data/campstate/US-AZ.json | PASS |  |
@@ -272,62 +272,15 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/trails/US-8437.json | PASS |  |
 | ? | ? | data/trails/US-8617.json | PASS |  |
 | ? | ? | data/truth/US-AL.json | PASS |  |
+| ? | ? | data/truth/US-FL.json | PASS |  |
 | ? | ? | data/truth/US-GA.json | PASS |  |
+| ? | ? | data/truth/US-IN.json | PASS |  |
 | ? | ? | data/truth/US-KY.json | PASS |  |
 | ? | ? | data/truth/US-NC.json | PASS |  |
 | ? | ? | data/truth/US-SC.json | PASS |  |
 | ? | ? | data/truth/US-TN.json | PASS |  |
 | ? | ? | data/truth/US-VA.json | PASS |  |
 | ? | ? | data/truth/US-WV.json | PASS |  |
-| ? | ? | data/us-key/US-AK.json | PASS |  |
-| ? | ? | data/us-key/US-AL.json | PASS |  |
-| ? | ? | data/us-key/US-AR.json | PASS |  |
-| ? | ? | data/us-key/US-CA.json | PASS |  |
-| ? | ? | data/us-key/US-CO.json | PASS |  |
-| ? | ? | data/us-key/US-CT.json | PASS |  |
-| ? | ? | data/us-key/US-DC.json | RELEASE |  |
-| ? | ? | data/us-key/US-DE.json | PASS |  |
-| ? | ? | data/us-key/US-FL.json | PASS |  |
-| ? | ? | data/us-key/US-GA.json | PASS |  |
-| ? | ? | data/us-key/US-HI.json | RELEASE |  |
-| ? | ? | data/us-key/US-IA.json | PASS |  |
-| ? | ? | data/us-key/US-ID.json | PASS |  |
-| ? | ? | data/us-key/US-IL.json | PASS |  |
-| ? | ? | data/us-key/US-IN.json | PASS |  |
-| ? | ? | data/us-key/US-KS.json | PASS |  |
-| ? | ? | data/us-key/US-LA.json | RELEASE |  |
-| ? | ? | data/us-key/US-MA.json | PASS |  |
-| ? | ? | data/us-key/US-MD.json | PASS |  |
-| ? | ? | data/us-key/US-ME.json | PASS |  |
-| ? | ? | data/us-key/US-MI.json | PASS |  |
-| ? | ? | data/us-key/US-MN.json | PASS |  |
-| ? | ? | data/us-key/US-MO.json | PASS |  |
-| ? | ? | data/us-key/US-MS.json | RELEASE |  |
-| ? | ? | data/us-key/US-MT.json | PASS |  |
-| ? | ? | data/us-key/US-NC.json | PASS |  |
-| ? | ? | data/us-key/US-ND.json | PASS |  |
-| ? | ? | data/us-key/US-NE.json | PASS |  |
-| ? | ? | data/us-key/US-NH.json | PASS |  |
-| ? | ? | data/us-key/US-NJ.json | PASS |  |
-| ? | ? | data/us-key/US-NM.json | PASS |  |
-| ? | ? | data/us-key/US-NV.json | PASS |  |
-| ? | ? | data/us-key/US-NY.json | PASS |  |
-| ? | ? | data/us-key/US-OH.json | PASS |  |
-| ? | ? | data/us-key/US-OK.json | RELEASE |  |
-| ? | ? | data/us-key/US-OR.json | PASS |  |
-| ? | ? | data/us-key/US-PA.json | PASS |  |
-| ? | ? | data/us-key/US-RI.json | PASS |  |
-| ? | ? | data/us-key/US-SC.json | PASS |  |
-| ? | ? | data/us-key/US-SD.json | PASS |  |
-| ? | ? | data/us-key/US-TN.json | PASS |  |
-| ? | ? | data/us-key/US-TX.json | PASS |  |
-| ? | ? | data/us-key/US-UT.json | PASS |  |
-| ? | ? | data/us-key/US-VA.json | RELEASE |  |
-| ? | ? | data/us-key/US-VT.json | PASS |  |
-| ? | ? | data/us-key/US-WA.json | PASS |  |
-| ? | ? | data/us-key/US-WI.json | PASS |  |
-| ? | ? | data/us-key/US-WV.json | RELEASE |  |
-| ? | ? | data/us-key/US-WY.json | PASS |  |
 | 2026-11-04 | 4 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
 | 2026-11-07 | 1 | data/world-key/ZA.json | HOLD | F-O2 4 of 75 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
 | 2026-11-08 | 0 | data/wwff/CTFF.json | HOLD | F-W2 rows 702 -> 280 (under 80% of the saved list) |
@@ -379,15 +332,11 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/pile-solver/solved-join.csv | ? |  |
 | ? | ? | data/pile-solver/solved-pin.csv | ? |  |
 | ? | ? | data/trails/index-state.json | PASS |  |
-| ? | ? | data/us-key/answers-applied.json | RELEASE |  |
-| ? | ? | data/us-key/changed-parks.json | RELEASE |  |
-| ? | ? | data/us-key/index.json | RELEASE |  |
-| ? | ? | data/us-key/lost-finds.json | PASS |  |
-| ? | ? | data/us-key/overrides.json | RELEASE |  |
 | ? | ? | data/world-key/AE.json | PASS |  |
 | ? | ? | data/world-key/AS.json | PASS |  |
 | ? | ? | data/world-key/AT.json | PASS |  |
 | ? | ? | data/world-key/AU.json | PASS |  |
+| ? | ? | data/world-key/AX.json | PASS |  |
 | ? | ? | data/world-key/BE.json | RELEASE |  |
 | ? | ? | data/world-key/BM.json | PASS |  |
 | ? | ? | data/world-key/BS.json | PASS |  |
