@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-08T01:27Z",
+ "checked": "2026-11-08T04:27Z",
  "switched_on": false,
  "results": [
   {
@@ -2663,11 +2663,11 @@
   {
    "path": "data/trails/US-13626.json",
    "kind": "trails",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
+   "why": [
+    "F-T3 length 16 -> 114 km (outside -25% / +50%)"
    ],
-   "verdict": "PASS"
+   "notes": [],
+   "verdict": "HOLD"
   },
   {
    "path": "data/trails/US-7544.json",
@@ -2700,11 +2700,12 @@
   {
    "path": "data/trails/US-9203.json",
    "kind": "trails",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
+   "why": [
+    "F-T2 points 19246 -> 1822 (under half the saved line)",
+    "F-T3 length 138 -> 88 km (outside -25% / +50%)"
    ],
-   "verdict": "PASS"
+   "notes": [],
+   "verdict": "HOLD"
   },
   {
    "path": "data/trails/index-state.json",
