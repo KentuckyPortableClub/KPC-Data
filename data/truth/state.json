@@ -663,22 +663,22 @@
   "US-VA": {
    "checked": 184,
    "counts": {
-    "agree": 65,
-    "handover_hints": 16,
+    "agree": 50,
+    "handover_hints": 17,
     "no_page": 0,
-    "no_size": 40,
-    "off": 16,
-    "ours_unknown": 0,
+    "no_size": 28,
+    "off": 25,
+    "ours_unknown": 21,
     "parks": 184,
     "retired": 0,
-    "unsure": 35,
-    "weak": 4,
-    "with_outline": 156
+    "unsure": 53,
+    "weak": 20,
+    "with_outline": 177
    },
    "left": 0,
    "parks": 184,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-08"
   },
   "US-VT": {
    "checked": 109,
@@ -744,38 +744,50 @@
  "hosts": {},
  "last": {
   "areas": [
-   "US-NC"
+   "US-VA"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 2,
+   "browser": 10,
    "errors": 0,
-   "for_person_urls": [],
-   "requests": 498,
+   "for_person": 1,
+   "for_person_urls": [
+    [
+     "https://www.virginiastateparks.gov/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.virginiastateparks.gov this run"
+    ],
+    [
+     "https://www.fs.usda.gov/detail/gwj/home/?cid=stelprdb5312424",
+     "HTTP 403 twice"
+    ]
+   ],
+   "requests": 598,
    "rested": 0,
-   "robots": 0,
-   "strikes": 0
+   "retry403": 1,
+   "robots": 2,
+   "robots_unreadable": 1,
+   "strikes": 2
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 20,
-   "no_size": 147,
-   "ours_unknown": 5,
-   "pages_read": 346,
-   "parks": 253,
+   "handover_hints": 17,
+   "no_size": 28,
+   "ours_unknown": 21,
+   "pages_read": 454,
+   "parks": 184,
    "retired": 0,
-   "size_agree": 31,
-   "size_off": 15,
-   "size_unsure": 27,
+   "size_agree": 50,
+   "size_off": 25,
+   "size_unsure": 53,
    "skipped_fresh": 0,
-   "with_outline": 225
+   "with_outline": 177
   },
   "when": "2026-11-08"
  },
  "news": {
   "https://dwr.virginia.gov/news/": {
    "links": 0,
-   "read": "2026-11-01",
+   "read": "2026-11-08",
    "status": "HTTP 404"
   },
   "https://fw.ky.gov/News/Pages/All-News.aspx": {
@@ -820,7 +832,7 @@
   },
   "https://www.dcr.virginia.gov/news": {
    "links": 0,
-   "read": "2026-11-01",
+   "read": "2026-11-08",
    "status": "HTTP 404"
   },
   "https://www.floridastateparks.org/news": {
