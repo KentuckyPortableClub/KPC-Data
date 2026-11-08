@@ -1,0 +1,26 @@
+{
+ "tag": "casp",
+ "states": [
+  "CA-SP"
+ ],
+ "key_source": "live",
+ "checked": "2026-11-08 23:32 UTC",
+ "areas": {
+  "CA-SP": {
+   "hold": [],
+   "warn": [],
+   "key_file": "kpcdata/data/ca-key/CA-SP.json",
+   "build": "CA-42252274247",
+   "built": "2026-11-06 17:05 UTC",
+   "rules": "8feccbb7d9ee",
+   "parks": 1,
+   "outlines": 1,
+   "bad_pins": 0,
+   "overrides_no_still": 0
+  }
+ },
+ "about": "2-fer pre-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4). HOLD = the line does not build. Read-only; nothing is moved or released.",
+ "verdict": "GO",
+ "holds": [],
+ "held_key": false
+}
