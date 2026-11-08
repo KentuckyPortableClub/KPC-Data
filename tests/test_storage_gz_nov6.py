@@ -33,6 +33,12 @@ for row in man:
     gz = ROOT / row['path']
     raw = gzip.decompress(gz.read_bytes())
     digest = hashlib.sha256(raw).hexdigest()
+    if row['plain'].endswith('.jsonl') and len(raw) > row['plain_bytes']:
+        # Nov 7: verdicts.jsonl is an append-only log the bots keep adding to (Step B3 grew it by 249 bytes), so the stored bytes
+        # must still be its unchanged start; history may grow, never change
+        digest = hashlib.sha256(raw[:row['plain_bytes']]).hexdigest()
+        check(digest == row['sha256'], f"round trip {row['plain']} sha256 (append-only: the first {row['plain_bytes']} bytes unchanged)")
+        continue
     check(digest == row['sha256'] and len(raw) == row['plain_bytes'], f"round trip {row['plain']} sha256")
     check(not (ROOT / row['plain']).exists(), f"plain copy removed {row['plain']}")
 

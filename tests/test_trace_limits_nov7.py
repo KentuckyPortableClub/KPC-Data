@@ -45,7 +45,7 @@ check(TL.edge_share(nick, 1000, 800) < TL.EDGE_SHARE_FLAG, f'a corner nick stays
 
 # the recorded Nov 2 rows
 for r in json.load(open(os.path.join(FX, 'expected-outcomes.json')))['rows']:
-    if r['expect'] == 'undetermined': continue
+    if r['expect'] in ('undetermined', 'no_fit'): continue   # no_fit: nothing is drawn, so there are no gates to run (checked below)
     gok, gwhy = TL.geopdf_checks(r['fit_err_m'], (1.0, 1.0), None, 0.0)
     got = TL.hold_reasons(geopdf_why=gwhy, pin_dist_m=r['pin_dist_m'], traced_acres=r['traced_acres'], known_acres=r['known_acres'],
                           park_type=r['type'], geopdf_residual_ok=gok)
@@ -63,6 +63,16 @@ pic = [r for r in rows if r['tracer'] == 'picture']
 big = sorted(r['ref'] for r in pic if TL.size_verdict(r['traced_acres'], None, None)[0] == 'hold')
 check(big == ['US-11145', 'US-5460', 'US-5815', 'US-6048'], f'default ceiling holds the four giants: {big}')
 check(len(pic) == 25, f'25 picture DRAWN rows in the table, got {len(pic)}')
+
+# Nov 7 evening (Quality item C): the #31/#32 outcomes are in the fixture, not only in the PR text
+_ex = {r['ref']: r for r in json.load(open(os.path.join(FX, 'expected-outcomes.json')))['rows'] if r['ref'] in ('CA-1248', 'US-10787')}
+check(_ex['CA-1248']['traced_acres'] == 28.9 and _ex['CA-1248']['expect'] == 'ok' and _ex['CA-1248'].get('outcome') == 'DRAWN',
+      f"CA-1248 fixture: DRAWN 28.9 ac, ok: {_ex['CA-1248']}")
+_g = TL.geopdf_checks(0.3, (1.0, 1.0), None, 0.0)
+check(TL.hold_reasons(geopdf_why=_g[1], pin_dist_m=0, traced_acres=28.9, known_acres=None, park_type='Nature Reserve', geopdf_residual_ok=_g[0]) == [],
+      'CA-1248 at 28.9 ac (Nature Reserve, pin inside) passes every gate')
+check(_ex['US-10787']['expect'] == 'no_fit' and _ex['US-10787'].get('outcome') == 'NO FIT'
+      and any('water source skipped' in x for x in _ex['US-10787'].get('reasons', [])), f"US-10787 fixture: NO FIT, water skipped: {_ex['US-10787']}")
 
 # order and wording of reasons
 got = TL.hold_reasons(geopdf_why=['geopdf residual: 352 m is over 100 m'], pin_dist_m=5000, edge=0.4, traced_acres=1e6, park_type='State Park')

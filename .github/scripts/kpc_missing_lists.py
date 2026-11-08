@@ -15,6 +15,7 @@ import collections, glob, json, os, pathlib, sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import kpc_scoreboard_bot as S  # noqa: E402
+import kpc_outline_ledger as OL  # noqa: E402  (Nov 7: parks already searched for an outline)
 
 OUT = pathlib.Path(os.environ.get('MISSING_OUT') or 'data/review/missing')   # the nightly job writes to the orphan branch 'missing-lists' (no history kept)
 COLS = ['ref', 'name', 'area', 'type', 'activations', 'attempts', 'lat', 'lon', 'why']
@@ -40,6 +41,7 @@ def main():
     lists = collections.defaultdict(list); totals = collections.Counter()
     # ---- US + Canada: the scoreboard's own park rows
     SB = load('data/review/scoreboard-parks.json', {}) or {}
+    LED = OL.load()
     types = SB.get('types') or []
     for ref, v in (SB.get('parks') or {}).items():
         cc = ref.split('-')[0]
@@ -48,6 +50,8 @@ def main():
         a = ACT.get(ref) or [0, 0, '']; p = pins.get(ref) or ('', None, None)
         why = {'no layer': 'no official layer found yet', 'likely name mismatch': 'a near miss: likely a name mismatch'}.get(v.get('status'), 'no official boundary yet')
         if v.get('near_miss'): why += f" (near miss: {v['near_miss']})"
+        # Nov 7 (Brandon 7:30 PM CST: 'no reason to look for same park over and over'): say when the park was already searched
+        if OL.rows_for(ref, LED): why += ' · already searched: ' + OL.verdict(ref, LED) + ('' if OL.needs_search(ref, LED) else ' (skip)')
         lists[cc].append([ref, v.get('n') or p[0], v.get('a') or '', t, a[0], a[1], p[1], p[2], why])
     for c in ('US', 'CA'): totals[c] = sum(1 for r in (SB.get('parks') or {}) if r.startswith(c + '-'))
     # ---- the world
