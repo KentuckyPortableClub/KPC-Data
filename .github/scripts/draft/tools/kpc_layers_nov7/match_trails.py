@@ -205,10 +205,23 @@ def confidence(score, spatial):
     return "low"
 
 
+def own_file(url):
+    """Nov 7: our own intake file (raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/<branch>/<path>) is read from the git
+    checkout (git show origin/<branch>:<path>; the workflow fetches the branch), not over the web, where raw's robots.txt refuses it."""
+    import subprocess
+    m = re.match(r"https://raw\.githubusercontent\.com/KentuckyPortableClub/KPC-Data/([^/]+)/(.+)$", url)
+    if m:
+        for ref in (f"origin/{m.group(1)}", "FETCH_HEAD"):
+            r = subprocess.run(["git", "show", f"{ref}:{m.group(2)}"], capture_output=True)
+            if r.returncode == 0 and r.stdout:
+                return r.stdout
+        raise RuntimeError(f"own intake file not in the checkout: git fetch origin {m.group(1)} first")
+    return polite_get(url).content
+
+
 def read_github_geojson(L, park):
     """The one non-ArcGIS layer (intake geojson.gz): name match + nearest-vertex test, no server query."""
-    import requests  # noqa
-    gj = json.load(gzip.open(io.BytesIO(polite_get(L["url"]).content)))
+    gj = json.load(gzip.open(io.BytesIO(own_file(L["url"]))))
     names, near = set(), set()
     for f in gj.get("features", []):
         nm = (f.get("properties") or {}).get(L["name_field"]) or ""
@@ -217,7 +230,8 @@ def read_github_geojson(L, park):
             g = f.get("geometry") or {}
             coords = g.get("coordinates", [])
             pts = coords if g.get("type") == "LineString" else [p for part in coords for p in part] if g.get("type") == "MultiLineString" else []
-            for lon, lat in pts[:: max(1, len(pts) // 200)]:
+            for pt in pts[:: max(1, len(pts) // 200)]:
+                lon, lat = pt[0], pt[1]                           # some files carry a z value too
                 if abs(float(park["lat"]) - lat) < 0.02 and abs(float(park["lon"]) - lon) < 0.025:
                     near.add(nm); break
     return sorted(names), sorted(near)

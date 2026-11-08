@@ -37,7 +37,11 @@ jobs:
           # Nov 1 (chat 2, Brandon: 'we are finding stuff but it never makes it in'): SURE line finds from the outside research
           # for trail parks still a pin go to the trail bot too (then the waiting room, chat 11, the key)
           DATA=kpcdata python3 .github/scripts/kpc_finds_lines.py /tmp/finds-lines.json || { kpc_rc=$?; echo "::error title=kpc_finds_lines.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_finds_lines.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          # Nov 7 (Brandon 9 PM CST: 'build the rest of it so that dont get forgot about'): the reviewed trail-match lines too
+          DATA=kpcdata python3 kpcdata/.github/scripts/kpc_wired_trails.py /tmp/finds-lines.json || true
           python3 .github/scripts/kpc_us_trails.py || { kpc_rc=$?; echo "::error title=kpc_us_trails.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_us_trails.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          # File-based Research extracts (USGS/FS/municipal) live in the repo; re-install after the bot rewrites index.json
+          DATA=kpcdata python3 kpcdata/.github/scripts/kpc_wired_trails.py --install-files || true
       - name: Show the results
         if: always()
         run: if [ -e /tmp/trails-log.txt ]; then while read -r l; do echo "::notice title=trails::$l"; done < <(tail -n 9 /tmp/trails-log.txt); fi

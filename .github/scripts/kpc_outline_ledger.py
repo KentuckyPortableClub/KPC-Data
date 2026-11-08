@@ -37,7 +37,7 @@ def needs_search(ref, rows=None, today=None, days=None):
     r = rows_for(ref, rows)
     if not r: return True
     today = today or dt.date.today()
-    if any((x.get('trail') or {}).get('status') == 'trail line wired' for x in r): return False
+    if any((x.get('trail') or {}).get('status') in ('trail line wired', 'rejected', 'conditional') for x in r): return False
     for x in r:
         if x.get('verdict') not in AGAIN: return False
         try:
