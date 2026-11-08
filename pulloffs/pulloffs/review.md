@@ -2,7 +2,7 @@
 
 ℹ️ Maps and park info are a planning aid, not a guarantee. Always check the official agency map and rules before you go.
 
-Built 2026-11-01 by kpc_pulloffs 1.0.0. These are CANDIDATES seen on an aerial photo, not official. The tool decides nothing: chat 11 grades each one with its chip. They are shown under the official access points, never above, in the bot pile ('seen on an aerial photo'), apart from member reports.
+Built 2026-11-08 by kpc_pulloffs 1.0.0. These are CANDIDATES seen on an aerial photo, not official. The tool decides nothing: chat 11 grades each one with its chip. They are shown under the official access points, never above, in the bot pile ('seen on an aerial photo'), apart from member reports.
 
 Chip colours: yellow = park line, white = public road, red = the patch.
 
