@@ -292,8 +292,6 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-02, 6 days): fers data/fers/US-WV.json held: F-2 3 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-0735+US-4556, US-4526+US-4556, US-4526+US-9950
 - FROM WAITING ROOM (held since 2026-11-05, 3 days): fers data/fers/US-WY.json held: F-4 data/fers/US-WY.json replaces live data/fers/US-WY.json.gz (other format) with 21 rows for 1392 (over 10% fewer)
 - FROM WAITING ROOM (held since 2026-11-05, 3 days): pilesolver data/pile-solver/US-VT.json held: US-5538: pin 1920 m out without the POTA pin flag
-- FROM WAITING ROOM (held since 2026-11-08): trails data/trails/US-13626.json held: F-T3 length 16 -> 114 km (outside -25% / +50%)
-- FROM WAITING ROOM (held since 2026-11-08): trails data/trails/US-9203.json held: F-T2 points 19246 -> 1822 (under half the saved line) · F-T3 length 138 -> 88 km (outside -25% / +50%)
 - FROM WAITING ROOM (held since 2026-11-04, 4 days): trails data/trails/state-report.json held: F-T1 the line has no points
 - FROM WAITING ROOM (held since 2026-11-01, 7 days): truth data/truth/US-CT.json held: F-R2 9 OFF rows share the size 255,000.0 ac
 - FROM WAITING ROOM (held since 2026-11-01, 7 days): truth data/truth/US-MA.json held: F-R2 6 OFF rows share the size 1,000.0 ac · F-R3 169 of 243 sized parks are OFF (over half: a reading problem?)
@@ -306,3 +304,5 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-01, 7 days): truth data/truth/US-TX.json held: F-R2 5 OFF rows share the size 675,000.0 ac
 - FROM WAITING ROOM (held since 2026-11-08): key data/world-key/HU.json held: F-O2 8 of 23 outlines carry a layer name that shares no word with the park (35%; live 8/27): outlines swapped to other parks?
 - FROM WAITING ROOM (held since 2026-11-07, 1 days): key data/world-key/ZA.json held: F-O2 4 of 75 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?
+- FROM WAITING ROOM HEALTH (2026-11-08): RED: 262 files waiting over 3 days in data/waiting/in/ (e.g. US-NY.json)
+- FROM BOT closures super-bot (2026-11-08): grade me: US-KY data/closures/US-KY.json — 30 of 31 of Kentucky's own reader's items found here on the same park (96%); 56 only here · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42446796833)
