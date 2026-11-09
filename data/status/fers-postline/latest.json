@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-09 05:30 UTC",
- "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42542530493",
+ "checked": "2026-11-09 18:47 UTC",
+ "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42677021026",
  "areas": {
   "CA-AB": {
    "gained": [
@@ -116,6 +116,14 @@
   },
   "CA-BC": {
    "gained": [
+    "CA-0018+CA-3362",
+    "CA-0032+CA-3393",
+    "CA-0045+CA-3829",
+    "CA-0066+CA-5344",
+    "CA-0105+CA-4253",
+    "CA-0105+CA-4254",
+    "CA-0697+CA-4080",
+    "CA-0711+CA-4065",
     "CA-0736+CA-4096",
     "CA-0737+CA-3551",
     "CA-0742+US-0029",
@@ -123,25 +131,22 @@
     "CA-0742+US-4448",
     "CA-0742+US-4592",
     "CA-3191+US-4448",
+    "CA-3193+CA-3194",
+    "CA-3228+CA-4214",
     "CA-3228+CA-4215",
     "CA-3245+CA-5497",
     "CA-3327+US-0055",
     "CA-3328+CA-5346",
-    "CA-3511+CA-3512",
+    "CA-3347+CA-4241",
     "CA-3567+US-4448",
-    "CA-3766+CA-4289"
+    "CA-3615+CA-4243",
+    "CA-3724+CA-4065",
+    "CA-3766+CA-4289",
+    "CA-3791+CA-4239",
+    "CA-3871+CA-4212"
    ],
-   "lost": [
-    {
-     "pair": "CA-3624+CA-4122",
-     "now": "water only: boat or kayak"
-    },
-    {
-     "pair": "CA-4145+CA-4245",
-     "now": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coars"
-    }
-   ],
-   "live_before": 45,
+   "lost": [],
+   "live_before": 29,
    "live_now": 57,
    "touch_held": [],
    "touch_pin_only": [],
@@ -489,14 +494,21 @@
    "stale_inputs": []
   },
   "CA-NB": {
-   "gained": [],
-   "lost": [
-    {
-     "pair": "CA-0024+CA-0025",
-     "now": "not sure: one record covers two parks (the record 'Fundy National Park Of Canada' does not"
-    }
+   "gained": [
+    "CA-0024+CA-4446",
+    "CA-0024+CA-4535",
+    "CA-0025+CA-4446",
+    "CA-0025+CA-4535",
+    "CA-0798+CA-4404",
+    "CA-1243+CA-4424",
+    "CA-4368+CA-6234",
+    "CA-4381+CA-6510",
+    "CA-4424+CA-4432",
+    "CA-4424+CA-4467",
+    "CA-4424+CA-4497"
    ],
-   "live_before": 14,
+   "lost": [],
+   "live_before": 2,
    "live_now": 13,
    "touch_held": [],
    "touch_pin_only": [],
@@ -1451,11 +1463,12 @@
   },
   "CA-NL": {
    "gained": [
+    "CA-0097+CA-4546",
     "CA-0101+CA-0504",
     "CA-4543+CA-4558"
    ],
    "lost": [],
-   "live_before": 1,
+   "live_before": 0,
    "live_now": 3,
    "touch_held": [],
    "touch_pin_only": [],
@@ -1490,18 +1503,13 @@
    "stale_inputs": []
   },
   "CA-NS": {
-   "gained": [],
-   "lost": [
-    {
-     "pair": "CA-0952+CA-6437",
-     "now": "not sure: one record covers two parks ('Tidnish Dock Site Historic Site' is a historic, th"
-    },
-    {
-     "pair": "CA-1843+CA-6136",
-     "now": "gone"
-    }
+   "gained": [
+    "CA-0013+CA-1818",
+    "CA-1822+CA-1824",
+    "CA-4837+CA-4849"
    ],
-   "live_before": 11,
+   "lost": [],
+   "live_before": 6,
    "live_now": 9,
    "touch_held": [],
    "touch_pin_only": [],
@@ -1571,9 +1579,11 @@
    "stale_inputs": []
   },
   "CA-NT": {
-   "gained": [],
+   "gained": [
+    "CA-4332+CA-4344"
+   ],
    "lost": [],
-   "live_before": 1,
+   "live_before": 0,
    "live_now": 1,
    "touch_held": [],
    "touch_pin_only": [],
@@ -1589,9 +1599,14 @@
    "stale_inputs": []
   },
   "CA-NU": {
-   "gained": [],
+   "gained": [
+    "CA-0070+CA-0127",
+    "CA-0091+CA-4569",
+    "CA-0091+CA-4594",
+    "CA-4569+CA-4594"
+   ],
    "lost": [],
-   "live_before": 4,
+   "live_before": 0,
    "live_now": 4,
    "touch_held": [],
    "touch_pin_only": [],
@@ -2154,29 +2169,36 @@
   },
   "CA-SK": {
    "gained": [
+    "CA-0051+CA-1118",
+    "CA-0075+CA-6128",
     "CA-0075+CA-6130",
     "CA-0075+CA-6140",
     "CA-0075+CA-6142",
+    "CA-0075+CA-6143",
+    "CA-0075+CA-6144",
+    "CA-0075+CA-6145",
+    "CA-0075+CA-6146",
+    "CA-0075+CA-6147",
+    "CA-0075+CA-6148",
     "CA-0075+CA-6149",
     "CA-0075+CA-6150",
+    "CA-0075+CA-6151",
     "CA-0075+CA-6152",
+    "CA-0075+CA-6153",
+    "CA-0081+CA-2717",
+    "CA-1117+CA-2605",
+    "CA-1118+CA-2711",
+    "CA-2653+CA-2654",
+    "CA-2653+CA-2677",
+    "CA-2676+CA-2677",
+    "CA-2740+CA-2741",
+    "CA-2838+CA-2839",
+    "CA-2894+CA-2896",
+    "CA-6146+CA-6147",
     "CA-6152+CA-6153"
    ],
-   "lost": [
-    {
-     "pair": "CA-0591+CA-6057",
-     "now": "not sure: one record covers two parks ('Cumberland House National Historic Site' is a hist"
-    },
-    {
-     "pair": "CA-0600+CA-6064",
-     "now": "not sure: one record covers two parks ('Fort Pitt National Historic Site' is a historic, t"
-    },
-    {
-     "pair": "CA-0624+CA-6072",
-     "now": "not sure: one record covers two parks ('Steele Narrows National Historic Site' is a histor"
-    }
-   ],
-   "live_before": 33,
+   "lost": [],
+   "live_before": 10,
    "live_now": 37,
    "touch_held": [],
    "touch_pin_only": [],
@@ -2264,11 +2286,13 @@
   },
   "CA-YT": {
    "gained": [
+    "CA-0039+CA-0106",
     "CA-0044+CA-0742",
-    "CA-0044+CA-0842"
+    "CA-0044+CA-0842",
+    "CA-0106+CA-4623"
    ],
    "lost": [],
-   "live_before": 4,
+   "live_before": 2,
    "live_now": 6,
    "touch_held": [],
    "touch_pin_only": [],
@@ -2519,14 +2543,32 @@
    "stale_inputs": []
   },
   "US-AL": {
-   "gained": [],
-   "lost": [
-    {
-     "pair": "US-12964+US-9919",
-     "now": "not sure: one record covers two parks ('Dallas County Wildlife Management Area' is a wma, "
-    }
+   "gained": [
+    "US-0137+US-3713",
+    "US-0141+US-9844",
+    "US-0158+US-3683",
+    "US-1037+US-3682+US-4450",
+    "US-1037+US-4450",
+    "US-10396+US-3706+US-4452",
+    "US-10396+US-4452",
+    "US-10428+US-3694",
+    "US-13081+US-6460",
+    "US-3682+US-4450",
+    "US-3683+US-4450",
+    "US-3683+US-4450+US-4595",
+    "US-3683+US-4595",
+    "US-3685+US-4600",
+    "US-3687+US-4450",
+    "US-3689+US-4560",
+    "US-3693+US-4450",
+    "US-3697+US-4580",
+    "US-4449+US-4559",
+    "US-4449+US-9911",
+    "US-4449+US-9912",
+    "US-4450+US-9924"
    ],
-   "live_before": 25,
+   "lost": [],
+   "live_before": 2,
    "live_now": 24,
    "touch_held": [],
    "touch_pin_only": [],
@@ -2584,17 +2626,20 @@
     "US-0162+US-7342",
     "US-0164+US-7158",
     "US-0164+US-7279",
+    "US-0164+US-7319",
     "US-0164+US-9757",
     "US-0165+US-7264",
     "US-0168+US-7273",
+    "US-0171+US-1081",
     "US-0171+US-7358",
-    "US-0646+US-7270",
+    "US-0646+US-4425",
     "US-0646+US-7288",
     "US-0646+US-7347",
     "US-0646+US-7357",
     "US-0721+US-9757",
     "US-0768+US-7358",
     "US-0822+US-9757",
+    "US-10258+US-4424",
     "US-10258+US-7307",
     "US-10303+US-10508",
     "US-10303+US-4425",
@@ -2609,14 +2654,17 @@
     "US-10508+US-7333",
     "US-10508+US-7336",
     "US-10508+US-8323",
+    "US-1075+US-4424",
     "US-1076+US-11127",
+    "US-1082+US-4425",
     "US-1082+US-4425+US-7345",
     "US-1082+US-7345",
     "US-1085+US-11353",
-    "US-1085+US-7293",
     "US-1087+US-9681",
+    "US-1097+US-7154",
     "US-1100+US-9681",
     "US-1102+US-7356",
+    "US-1104+US-4425",
     "US-1104+US-4425+US-7306",
     "US-1104+US-7306",
     "US-1104+US-8322",
@@ -2625,14 +2673,17 @@
     "US-1111+US-9681",
     "US-1114+US-4424",
     "US-1114+US-8321",
+    "US-1118+US-4426",
     "US-1118+US-7316",
     "US-1118+US-9681",
+    "US-11294+US-4424",
     "US-11294+US-4424+US-7272",
     "US-11294+US-7272",
     "US-11353+US-7293",
     "US-11393+US-4425",
     "US-11393+US-7357",
     "US-11713+US-7358",
+    "US-12094+US-4424",
     "US-13229+US-9757",
     "US-13623+US-4425",
     "US-13623+US-7315",
@@ -2640,6 +2691,7 @@
     "US-4424+US-7275",
     "US-4424+US-7307",
     "US-4424+US-7309",
+    "US-4424+US-8321",
     "US-4425+US-7167+US-7333",
     "US-4425+US-7270",
     "US-4425+US-7270+US-7333",
@@ -2657,13 +2709,9 @@
     "US-4425+US-9757",
     "US-4426+US-9681",
     "US-7159+US-7299",
-    "US-7163+US-7338",
     "US-7169+US-7291",
-    "US-7170+US-7329",
     "US-7177+US-7285",
-    "US-7180+US-7294",
     "US-7180+US-9757",
-    "US-7183+US-7348",
     "US-7263+US-7271",
     "US-7270+US-7288",
     "US-7270+US-7347",
@@ -2681,21 +2729,8 @@
     "US-7342+US-7355",
     "US-7345+US-9757"
    ],
-   "lost": [
-    {
-     "pair": "US-10258+US-8321",
-     "now": "gone"
-    },
-    {
-     "pair": "US-1096+US-12765",
-     "now": "not sure: one record covers two parks ('Logoly State Natural Area' is a natural area, the "
-    },
-    {
-     "pair": "US-4425+US-7167",
-     "now": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coars"
-    }
-   ],
-   "live_before": 16,
+   "lost": [],
+   "live_before": 7,
    "live_now": 112,
    "touch_held": [],
    "touch_pin_only": [],
@@ -3232,196 +3267,10 @@
   },
   "US-CO": {
    "gained": [
-    "US-11885+US-12185",
     "US-4575+US-8295"
    ],
-   "lost": [
-    {
-     "pair": "US-0033+US-4405",
-     "now": "gone"
-    },
-    {
-     "pair": "US-0033+US-4407",
-     "now": "gone"
-    },
-    {
-     "pair": "US-0059+US-4400+US-9591",
-     "now": "gone"
-    },
-    {
-     "pair": "US-0059+US-4406",
-     "now": "gone"
-    },
-    {
-     "pair": "US-0059+US-4406+US-9591",
-     "now": "gone"
-    },
-    {
-     "pair": "US-0192+US-11897",
-     "now": "gone"
-    },
-    {
-     "pair": "US-0222+US-1239",
-     "now": "gone"
-    },
-    {
-     "pair": "US-0652+US-12190",
-     "now": "gone"
-    },
-    {
-     "pair": "US-0652+US-12682",
-     "now": "gone"
-    },
-    {
-     "pair": "US-0652+US-12683",
-     "now": "gone"
-    },
-    {
-     "pair": "US-0652+US-4402",
-     "now": "gone"
-    },
-    {
-     "pair": "US-10535+US-1237",
-     "now": "gone"
-    },
-    {
-     "pair": "US-11890+US-1223",
-     "now": "gone"
-    },
-    {
-     "pair": "US-11895+US-4404",
-     "now": "gone"
-    },
-    {
-     "pair": "US-11897+US-13110",
-     "now": "gone"
-    },
-    {
-     "pair": "US-11902+US-4410",
-     "now": "gone"
-    },
-    {
-     "pair": "US-11938+US-4406",
-     "now": "gone"
-    },
-    {
-     "pair": "US-1214+US-4404",
-     "now": "gone"
-    },
-    {
-     "pair": "US-1217+US-4404",
-     "now": "gone"
-    },
-    {
-     "pair": "US-12171+US-12172",
-     "now": "gone"
-    },
-    {
-     "pair": "US-12173+US-4409",
-     "now": "gone"
-    },
-    {
-     "pair": "US-12354+US-12355",
-     "now": "gone"
-    },
-    {
-     "pair": "US-1247+US-4410",
-     "now": "gone"
-    },
-    {
-     "pair": "US-12682+US-4575",
-     "now": "gone"
-    },
-    {
-     "pair": "US-12683+US-4575",
-     "now": "gone"
-    },
-    {
-     "pair": "US-13569+US-4408",
-     "now": "gone"
-    },
-    {
-     "pair": "US-13573+US-13574",
-     "now": "gone"
-    },
-    {
-     "pair": "US-13574+US-13575",
-     "now": "gone"
-    },
-    {
-     "pair": "US-4400+US-9591",
-     "now": "gone"
-    },
-    {
-     "pair": "US-4402+US-9592",
-     "now": "gone"
-    },
-    {
-     "pair": "US-4404+US-9605",
-     "now": "gone"
-    },
-    {
-     "pair": "US-4405+US-8295",
-     "now": "gone"
-    },
-    {
-     "pair": "US-4405+US-9610",
-     "now": "gone"
-    },
-    {
-     "pair": "US-4405+US-9634",
-     "now": "gone"
-    },
-    {
-     "pair": "US-4406+US-9591",
-     "now": "gone"
-    },
-    {
-     "pair": "US-4406+US-9629",
-     "now": "gone"
-    },
-    {
-     "pair": "US-4406+US-9644",
-     "now": "gone"
-    },
-    {
-     "pair": "US-4407+US-8295",
-     "now": "gone"
-    },
-    {
-     "pair": "US-4407+US-9590",
-     "now": "gone"
-    },
-    {
-     "pair": "US-4408+US-4413",
-     "now": "gone"
-    },
-    {
-     "pair": "US-4410+US-9609",
-     "now": "gone"
-    },
-    {
-     "pair": "US-4410+US-9619",
-     "now": "gone"
-    },
-    {
-     "pair": "US-4575+US-9620",
-     "now": "gone"
-    },
-    {
-     "pair": "US-4575+US-9631",
-     "now": "gone"
-    },
-    {
-     "pair": "US-4575+US-9648",
-     "now": "gone"
-    },
-    {
-     "pair": "US-4579+US-9639",
-     "now": "gone"
-    }
-   ],
-   "live_before": 49,
+   "lost": [],
+   "live_before": 4,
    "live_now": 5,
    "touch_held": [],
    "touch_pin_only": [],
@@ -3598,13 +3447,8 @@
     "US-13543+US-9901",
     "US-9898+US-9901"
    ],
-   "lost": [
-    {
-     "pair": "US-0795+US-0796",
-     "now": "not sure: one record covers two parks (the record 'World War I Memorial' does not name 'Wo"
-    }
-   ],
-   "live_before": 1,
+   "lost": [],
+   "live_before": 0,
    "live_now": 15,
    "touch_held": [],
    "touch_pin_only": [],
@@ -4381,13 +4225,9 @@
     {
      "pair": "US-12192+US-2316",
      "now": "gone"
-    },
-    {
-     "pair": "US-2277+US-4655",
-     "now": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coars"
     }
    ],
-   "live_before": 16,
+   "live_before": 15,
    "live_now": 17,
    "touch_held": [],
    "touch_pin_only": [],
@@ -4682,15 +4522,11 @@
    ],
    "lost": [
     {
-     "pair": "US-1023+US-10786",
-     "now": "gone"
-    },
-    {
      "pair": "US-4573+US-4576",
      "now": "gone"
     }
    ],
-   "live_before": 19,
+   "live_before": 18,
    "live_now": 27,
    "touch_held": [],
    "touch_pin_only": [],
@@ -4907,51 +4743,27 @@
   },
   "US-KS": {
    "gained": [
-    "US-2334+US-7945"
+    "US-0818+US-4579",
+    "US-2331+US-7920",
+    "US-2332+US-7922",
+    "US-2333+US-7939",
+    "US-2334+US-7945",
+    "US-2336+US-7925",
+    "US-2337+US-7926",
+    "US-2340+US-7929",
+    "US-2342+US-7944",
+    "US-2345+US-7938",
+    "US-2347+US-7941",
+    "US-2349+US-7940",
+    "US-2353+US-7946",
+    "US-2355+US-7948",
+    "US-4579+US-7409",
+    "US-4579+US-7477",
+    "US-4579+US-9188",
+    "US-7416+US-7918"
    ],
-   "lost": [
-    {
-     "pair": "US-2333+US-7402",
-     "now": "gone"
-    },
-    {
-     "pair": "US-2333+US-7406",
-     "now": "gone"
-    },
-    {
-     "pair": "US-2339+US-7928",
-     "now": "not sure: one record covers two parks ('Glen Elder State Park' is a state park, the record"
-    },
-    {
-     "pair": "US-2343+US-7934",
-     "now": "not sure: one record covers two parks ('Lovewell State Park' is a state park, the record a"
-    },
-    {
-     "pair": "US-2344+US-7433",
-     "now": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coars"
-    },
-    {
-     "pair": "US-2352+US-7434",
-     "now": "not sure: one record covers two parks ('Scott State Fishing Lake' is a lake, the record a "
-    },
-    {
-     "pair": "US-6347+US-7923",
-     "now": "gone"
-    },
-    {
-     "pair": "US-7406+US-7939",
-     "now": "gone"
-    },
-    {
-     "pair": "US-7411+US-7949",
-     "now": "not sure: one record covers two parks ('Woodson State Wildlife Area' is a wma, the record "
-    },
-    {
-     "pair": "US-7424+US-7932",
-     "now": "gone"
-    }
-   ],
-   "live_before": 27,
+   "lost": [],
+   "live_before": 0,
    "live_now": 18,
    "touch_held": [],
    "touch_pin_only": [],
@@ -6082,10 +5894,12 @@
   },
   "US-ME": {
    "gained": [
-    "US-2390+US-4556"
+    "US-2381+US-4556",
+    "US-2390+US-4556",
+    "US-4556+US-8435"
    ],
    "lost": [],
-   "live_before": 3,
+   "live_before": 1,
    "live_now": 4,
    "touch_held": [],
    "touch_pin_only": [],
@@ -6887,23 +6701,64 @@
   },
   "US-MO": {
    "gained": [
-    "US-3348+US-7984"
+    "US-0376+US-11065",
+    "US-0377+US-6488",
+    "US-0710+US-9757",
+    "US-0788+US-4492",
+    "US-0788+US-5696",
+    "US-0788+US-6491",
+    "US-0788+US-6498",
+    "US-0788+US-7836",
+    "US-10110+US-9757",
+    "US-10165+US-1766",
+    "US-10208+US-1766",
+    "US-10211+US-1754",
+    "US-10211+US-5696",
+    "US-10583+US-1766",
+    "US-11015+US-4579",
+    "US-11137+US-4492",
+    "US-11138+US-4492",
+    "US-11370+US-4492",
+    "US-12779+US-1763",
+    "US-13160+US-4492",
+    "US-13161+US-1780",
+    "US-1746+US-7836",
+    "US-1755+US-8507",
+    "US-1758+US-6511",
+    "US-1762+US-9757",
+    "US-1764+US-8252",
+    "US-1766+US-3349",
+    "US-1766+US-4579",
+    "US-1766+US-6492",
+    "US-1766+US-6517",
+    "US-1766+US-6524",
+    "US-1766+US-7666",
+    "US-1777+US-3355",
+    "US-1777+US-6512",
+    "US-1780+US-4492",
+    "US-1787+US-4492",
+    "US-1788+US-7836",
+    "US-1788+US-8252",
+    "US-3335+US-4579",
+    "US-3348+US-7984",
+    "US-4492+US-5713",
+    "US-4492+US-6491",
+    "US-4492+US-6504",
+    "US-4492+US-7836",
+    "US-4579+US-7512",
+    "US-5713+US-7836",
+    "US-5713+US-8252",
+    "US-6491+US-6498",
+    "US-6491+US-7836",
+    "US-6499+US-7836",
+    "US-7664+US-7665",
+    "US-7836+US-8252",
+    "US-7836+US-8282",
+    "US-8278+US-8284",
+    "US-8510+US-8511"
    ],
-   "lost": [
-    {
-     "pair": "US-0374+US-4579",
-     "now": "gone"
-    },
-    {
-     "pair": "US-1772+US-3356",
-     "now": "gone"
-    },
-    {
-     "pair": "US-1795+US-3368",
-     "now": "gone"
-    }
-   ],
-   "live_before": 60,
+   "lost": [],
+   "live_before": 3,
    "live_now": 58,
    "touch_held": [],
    "touch_pin_only": [],
@@ -7034,13 +6889,9 @@
     {
      "pair": "US-0642+US-7113",
      "now": "gone"
-    },
-    {
-     "pair": "US-2547+US-7119",
-     "now": "gone"
     }
    ],
-   "live_before": 17,
+   "live_before": 16,
    "live_now": 9,
    "touch_held": [],
    "touch_pin_only": [],
@@ -7597,6 +7448,8 @@
   "US-NE": {
    "gained": [
     "US-0268+US-3487",
+    "US-0443+US-5622",
+    "US-0445+US-5655",
     "US-0675+US-10341",
     "US-0675+US-10372",
     "US-0675+US-2620",
@@ -7607,6 +7460,7 @@
     "US-0675+US-9360",
     "US-0962+US-4566",
     "US-0962+US-4578",
+    "US-13433+US-5655",
     "US-13536+US-4566",
     "US-13536+US-4576",
     "US-13536+US-4578",
@@ -7615,11 +7469,15 @@
     "US-2609+US-4566",
     "US-2609+US-4576",
     "US-2610+US-4566",
+    "US-2613+US-3371",
     "US-2617+US-4566",
     "US-2617+US-4578",
+    "US-2618+US-3371",
+    "US-2620+US-9360",
     "US-2623+US-4566",
     "US-2623+US-4576",
     "US-2623+US-4578",
+    "US-2624+US-5622",
     "US-4566+US-5628",
     "US-4566+US-5646",
     "US-4566+US-5657",
@@ -7633,25 +7491,8 @@
     "US-4578+US-5628",
     "US-4578+US-9366"
    ],
-   "lost": [
-    {
-     "pair": "US-13434+US-9371",
-     "now": "not sure: one record covers two parks ('Wildcat Hills Wildlife Management Area' is a wma, "
-    },
-    {
-     "pair": "US-13536+US-5659",
-     "now": "not sure: one record covers two parks ('Alexandria Wildlife Management Area' is a wma, the"
-    },
-    {
-     "pair": "US-13614+US-13615",
-     "now": "not sure: one record covers two parks (the record 'Kirkpatrick Basin Wildlife Management A"
-    },
-    {
-     "pair": "US-3372+US-5631",
-     "now": "gone"
-    }
-   ],
-   "live_before": 15,
+   "lost": [],
+   "live_before": 4,
    "live_now": 47,
    "touch_held": [],
    "touch_pin_only": [],
@@ -7949,10 +7790,6 @@
    ],
    "lost": [
     {
-     "pair": "US-11822+US-8227",
-     "now": "dropped: one of the two park numbers is no longer joined to this outline in the answer key"
-    },
-    {
      "pair": "US-4558+US-4566",
      "now": "gone"
     },
@@ -7965,7 +7802,7 @@
      "now": "gone"
     }
    ],
-   "live_before": 10,
+   "live_before": 9,
    "live_now": 33,
    "touch_held": [],
    "touch_pin_only": [],
@@ -8181,7 +8018,9 @@
    "gained": [
     "US-0062+US-8098",
     "US-0456+US-4556",
+    "US-0475+US-8100",
     "US-0476+US-8098",
+    "US-0680+US-8068",
     "US-0931+US-4239",
     "US-10037+US-8098",
     "US-10040+US-4582",
@@ -8194,26 +8033,43 @@
     "US-10663+US-8098",
     "US-12375+US-2102",
     "US-12375+US-2156",
+    "US-12375+US-8102",
     "US-12382+US-9045",
     "US-13624+US-4239",
     "US-2003+US-4239",
     "US-2010+US-4556",
     "US-2010+US-4582",
+    "US-2017+US-5413",
     "US-2021+US-8098",
+    "US-2034+US-9082",
     "US-2036+US-4556",
+    "US-2061+US-2128",
     "US-2069+US-4556",
     "US-2069+US-4582",
+    "US-2069+US-8319",
     "US-2073+US-4582",
+    "US-2073+US-8319",
+    "US-2074+US-8319",
     "US-2079+US-4556",
     "US-2079+US-4582",
+    "US-2079+US-5161",
+    "US-2096+US-8069",
     "US-2097+US-8098",
+    "US-2100+US-5403",
+    "US-2118+US-5089",
+    "US-2118+US-5415",
     "US-2120+US-8098",
+    "US-2121+US-5411",
     "US-2122+US-4239",
+    "US-2122+US-5175",
     "US-2125+US-8098",
     "US-2127+US-4239",
+    "US-2132+US-8319",
     "US-2144+US-4556",
+    "US-2144+US-8319",
     "US-2148+US-4709",
     "US-2156+US-4239",
+    "US-2159+US-5391",
     "US-4239+US-4518",
     "US-4239+US-5007",
     "US-4239+US-5014",
@@ -8261,6 +8117,12 @@
     "US-4556+US-8319",
     "US-4582+US-7734",
     "US-4582+US-8319",
+    "US-5088+US-5261",
+    "US-5214+US-9062",
+    "US-5292+US-5623",
+    "US-5376+US-5623",
+    "US-5385+US-5423",
+    "US-7734+US-8319",
     "US-8066+US-8098",
     "US-8071+US-8098",
     "US-8079+US-8098",
@@ -8271,73 +8133,8 @@
     "US-8098+US-9684",
     "US-8098+US-9895"
    ],
-   "lost": [
-    {
-     "pair": "US-0476+US-8299",
-     "now": "gone"
-    },
-    {
-     "pair": "US-10043+US-8299",
-     "now": "gone"
-    },
-    {
-     "pair": "US-2028+US-2061",
-     "now": "gone"
-    },
-    {
-     "pair": "US-2028+US-2061+US-2128",
-     "now": "gone"
-    },
-    {
-     "pair": "US-2028+US-2061+US-4374",
-     "now": "gone"
-    },
-    {
-     "pair": "US-2028+US-2128",
-     "now": "gone"
-    },
-    {
-     "pair": "US-2028+US-4374",
-     "now": "gone"
-    },
-    {
-     "pair": "US-2061+US-4374",
-     "now": "gone"
-    },
-    {
-     "pair": "US-2097+US-8299",
-     "now": "gone"
-    },
-    {
-     "pair": "US-8096+US-8097",
-     "now": "gone"
-    },
-    {
-     "pair": "US-8299+US-9029",
-     "now": "gone"
-    },
-    {
-     "pair": "US-8299+US-9071",
-     "now": "gone"
-    },
-    {
-     "pair": "US-8299+US-9083",
-     "now": "gone"
-    },
-    {
-     "pair": "US-8299+US-9097",
-     "now": "gone"
-    },
-    {
-     "pair": "US-8299+US-9099",
-     "now": "gone"
-    },
-    {
-     "pair": "US-8299+US-9101",
-     "now": "gone"
-    }
-   ],
-   "live_before": 44,
+   "lost": [],
+   "live_before": 3,
    "live_now": 119,
    "touch_held": [],
    "touch_pin_only": [],
@@ -9944,7 +9741,9 @@
   },
   "US-RI": {
    "gained": [
+    "US-0515+US-7865",
     "US-0789+US-4582",
+    "US-2869+US-7971",
     "US-2872+US-4582",
     "US-4556+US-4582",
     "US-4582+US-6990",
@@ -9955,7 +9754,7 @@
     "US-6990+US-7548"
    ],
    "lost": [],
-   "live_before": 3,
+   "live_before": 1,
    "live_now": 12,
    "touch_held": [],
    "touch_pin_only": [],
