@@ -1,4 +1,4 @@
-"""Nov 9 2-fer breakage fixes (Quality grade of run 42594981324): time budget, saved owned lines from KPC-Archive, post-line after kpc-fers.yml."""
+"""Nov 9 2-fer breakage fixes (Quality grade of run 42594981324): time budget, KISS ownership (no owned-land store), post-line after kpc-fers.yml."""
 import os, pathlib, subprocess, tempfile
 import yaml
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -9,11 +9,11 @@ def _steps(f, job):
     return yaml.safe_load(open(W / f))['jobs'][job]['steps']
 
 
-def test_archive_owned_lines_read_only():
-    st = [s for s in _steps('kpc-fers.yml', 'fers') if 'KPC-Archive' in str(s.get('with', {}).get('repository', ''))]
-    assert st and st[0]['with']['sparse-checkout'] == 'fers-sources' and st[0]['with']['persist-credentials'] is False
-    look = next(s for s in _steps('kpc-fers.yml', 'fers') if s.get('id') == 'kept_green_3')
-    assert look['env']['OWNED_STORE'] == 'archive/fers-sources/owned'
+def test_kiss_ownership_no_owned_store():
+    # Brandon Nov 9, 9:37 AM CST (KISS): the owner comes from the park record / agency name; the run reads no owned-land store
+    st = _steps('kpc-fers.yml', 'fers')
+    assert not any('KPC-Archive' in str(s.get('with', {}).get('repository', '')) for s in st)
+    assert 'OWNED_STORE' not in open(W / 'kpc-fers.yml').read()
 
 
 def test_no_cron_added():
