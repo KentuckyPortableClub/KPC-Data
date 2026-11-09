@@ -268,17 +268,17 @@
     "no_page": 0,
     "no_size": 93,
     "off": 7,
-    "ours_unknown": 0,
+    "ours_unknown": 1,
     "parks": 123,
     "retired": 0,
     "unsure": 6,
-    "weak": 2,
-    "with_outline": 115
+    "weak": 3,
+    "with_outline": 116
    },
    "left": 0,
    "parks": 123,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-09"
   },
   "US-MA": {
    "checked": 421,
@@ -752,41 +752,41 @@
  },
  "last": {
   "areas": [
-   "US-AR"
+   "US-LA"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 7,
-   "errors": 2,
+   "dropped_queued": 88,
+   "errors": 0,
    "for_person_urls": [
     [
-     "https://apps.agfc.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from apps.agfc.com this run"
+     "https://www.wlf.louisiana.gov/robots.txt",
+     "robots.txt answered 405: nothing fetched from www.wlf.louisiana.gov this run"
     ],
     [
-     "https://www.agfc/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.agfc this run"
+     "https://www.lastateparks.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.lastateparks.com this run"
     ]
    ],
-   "requests": 457,
+   "requests": 111,
    "rested": 0,
-   "robots": 3,
+   "robots": 2,
    "robots_unreadable": 2,
-   "strikes": 2
+   "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 12,
-   "no_size": 92,
-   "ours_unknown": 80,
-   "pages_read": 395,
-   "parks": 306,
+   "handover_hints": 5,
+   "no_size": 93,
+   "ours_unknown": 1,
+   "pages_read": 100,
+   "parks": 123,
    "retired": 0,
-   "size_agree": 37,
-   "size_off": 18,
-   "size_unsure": 41,
+   "size_agree": 9,
+   "size_off": 7,
+   "size_unsure": 6,
    "skipped_fresh": 0,
-   "with_outline": 268
+   "with_outline": 116
   },
   "when": "2026-11-09"
  },
