@@ -243,10 +243,6 @@ Source file: `data/campinfo/US-WV.json`
   "sewer": null,
   "water": null
  },
- "ids": [
-  "10234906",
-  "248530"
- ],
  "kind": "c",
  "lat": 38.84123,
  "list": "campfed",
