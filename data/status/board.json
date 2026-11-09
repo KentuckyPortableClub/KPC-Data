@@ -12,9 +12,9 @@
   "2-fer gate (areas ready / waiting)": {
    "areas": "",
    "last_run": "2026-11-09",
-   "made": "1068 audit rows not clean in 43 areas; waiting for audit 65, waiting for key 1 (a key build is saving: nothing started)",
+   "made": "1068 audit rows not clean in 43 areas; waiting for audit 65, waiting for key 1",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42698290243",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42722347381",
    "waiting_on": "chat 11 / 12 (audit answers), chat 2 (fixes)"
   },
   "Cell coverage (FCC)": {
@@ -1020,9 +1020,9 @@
   "Key bots: errors and silence": {
    "areas": "",
    "last_run": "2026-11-09",
-   "made": "4 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots); copy from KPC-Links (Key reconcile); waiting room (kpc_engine.py); website copy (site branch) (run failure)",
+   "made": "3 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots); copy from KPC-Links (Key reconcile); waiting room (kpc_engine.py)",
    "result": "red",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42698290243",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42722347381",
    "waiting_on": "HQ: open the watchdog run summary for the run links"
   },
   "Layer collector": {
@@ -1076,9 +1076,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-09",
-   "made": "2026-11-09 21:00 UTC: 1 skipped run(s) started again: kpc-pages-sync.yml (missed Nov 09 20:29 UTC)",
+   "made": "2026-11-09 23:41 UTC: 2 skipped run(s) started again: kpc-copy-from-links.yml (missed Nov 09 23:11 UTC); kpc-waiting-room.yml (missed Nov 09 22:42 UTC)",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42698290243",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42722347381",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1190,7 +1190,7 @@
    "last_run": "2026-11-09",
    "made": "site is under 60 min behind main: the copy bot will catch up",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42698290243",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42722347381",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "answer-sheet-check": {
@@ -1202,9 +1202,9 @@
    "waiting_on": "proposals: answer YES / NO / NOT SURE in an inbox batch"
   },
   "campground info bot": {
-   "areas": "left: 23",
+   "areas": "left: 20",
    "last_run": "2026-11-09",
-   "made": "US-AZ: partial; {\"camps\": 198, \"needs_browser\": 0, \"needs_key\": 168, \"no_page\": 0, \"not_official\": 2, \"ok\": 1, \"other\": 11, \"resting\": 0, \"robots\": 16, \"with_booking\": 28, \"with_elevation\": 0, \"with_facts\": 2, \"with_",
+   "made": "US-CA: done; {\"camps\": 1190, \"needs_browser\": 0, \"needs_key\": 752, \"no_page\": 352, \"not_official\": 0, \"ok\": 50, \"other\": 29, \"resting\": 0, \"robots\": 7, \"with_booking\": 81, \"with_elevation\": 0, \"with_facts\": 54, \"w",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42682701079",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
@@ -1266,11 +1266,11 @@
    "waiting_on": "chat 8 grades the sample; chat 2 reads the name-mismatch list; nothing goes in a key by itself"
   },
   "park truth checker": {
-   "areas": "left: 23",
+   "areas": "left: 21",
    "last_run": "2026-11-09",
-   "made": "US-NM: partial; {\"agree\": 19, \"handover_hints\": 4, \"no_page\": 1, \"no_size\": 51, \"off\": 9, \"ours_unknown\": 7, \"parks\": 113, \"retired\": 0, \"unsure\": 9, \"weak\": 6, \"with_outline\": 96}",
+   "made": "US-CA: done; {\"agree\": 83, \"handover_hints\": 42, \"no_page\": 1, \"no_size\": 185, \"off\": 32, \"ours_unknown\": 12, \"parks\": 410, \"retired\": 0, \"unsure\": 78, \"weak\": 18, \"with_outline\": 391}",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42630277639",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42682701079",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "scoreboard": {
@@ -1283,7 +1283,7 @@
   },
   "waiting room": {
    "last_run": "2026-11-09",
-   "made": "heartbeat 0 h old, 469 files waiting",
+   "made": "heartbeat 0 h old, 470 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
