@@ -9,11 +9,11 @@
   "CA-PE",
   "CA-NL"
  ],
- "since": "2026-11-07",
- "date": "2026-11-07 04:07 UTC",
+ "since": "2026-11-09",
+ "date": "2026-11-09 21:17 UTC",
  "verdict": "PART READY FOR CHAT 8",
  "why": [
-  "water not checked: CA-ON: 4 rows (the USGS water map / files had no answer there): never READY with one"
+  "water not checked: CA-ON: 6 rows (the USGS water map / files had no answer there): never READY with one"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
@@ -30,25 +30,25 @@
  },
  "report": {
   "pass1": {
-   "date": "2026-11-07",
-   "pairs tested": 13880,
-   "pairs whose boxes touch": 13880
+   "date": "2026-11-09",
+   "pairs tested": 13904,
+   "pairs whose boxes touch": 13904
   },
   "pass2": {
-   "agree with the pass before": 1220,
-   "date": "2026-11-07",
-   "pairs tested": 436
+   "agree with the pass before": 1225,
+   "date": "2026-11-09",
+   "pairs tested": 435
   },
   "pass3": {
-   "agree with the pass before": 379,
-   "date": "2026-11-07",
-   "pairs tested": 396
+   "agree with the pass before": 382,
+   "date": "2026-11-09",
+   "pairs tested": 395
   },
   "pass5": {
    "checked": 45,
-   "date": "2026-11-07",
+   "date": "2026-11-09",
    "pairs tested": 0,
-   "still not checked": 4
+   "still not checked": 7
   }
  },
  "files": {
@@ -60,28 +60,36 @@
   "CA-NL": "data/fers/CA-NL.json"
  },
  "CA-ON": {
-  "rows": 1069,
-  "live": 111,
+  "rows": 1075,
+  "live": 129,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 4,
+   "water not checked": 6,
    "one record covers two parks": 5,
-   "no public owner on the ownership map": 35
+   "no ownership source for this row": 8,
+   "no owner on the park record or in its name for Marshlands Co": 2,
+   "no owner on the park record or in its name for Silver Creek": 1,
+   "no park here owns land": 3,
+   "no owner on the park record or in its name for Cheltenham Ba": 1
   },
-  "dropped": 806,
-  "merged": 108
+  "dropped": 799,
+  "merged": 121
  },
  "water_weak": {
-  "CA-ON": 4
+  "CA-ON": 6
  },
  "CA-QC": {
   "rows": 486,
-  "live": 6,
+  "live": 2,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
+   "no owner on the park record or in its name for Bonaventure I": 1,
+   "no owner on the park record or in its name for Saguenay-St.": 2,
    "the official outline of La Mauricie National Park, R\u00e9serve f": 1,
+   "no owner on the park record or in its name for Mont Saint Hi": 2,
+   "no ownership source for this row": 1,
    "the official outline of Zec Buteux-Bas-Saguenay Nature Reser": 1,
    "the official outline of Zec Saint-Romain Nature Reserve coul": 1,
    "the official outline of R\u00e9serve faunique de Matane Wildlife": 3,
@@ -100,8 +108,10 @@
    "the official outline of Zec Rapides-des-Joachims Nature Rese": 3,
    "the official outline of Ashuapmushuan Nature Reserve could n": 1,
    "the official outline of ZEC du Bas-Saint-Laurent Nature Rese": 1,
+   "no owner on the park record or in its name for Gault de l'Un": 1,
    "the official outline of Parc regional des Grandes-Coulees Re": 1,
    "the official outline of Zec Saint-Patrice Nature Reserve cou": 1,
+   "no owner on the park record or in its name for Mont-Saint-Hi": 1,
    "the official outline of Zec Louise-Gosford Nature Reserve co": 1,
    "the official outline of Port-Cartier-Sept-Iles Nature Reserv": 1,
    "the official outline of Port-Daniel  Reserve Nature Reserve,": 1,
@@ -129,12 +139,12 @@
    "the official outline of Zec Owen Nature Reserve, New Brunswi": 4,
    "the official outline of Zec Owen Nature Reserve could not be": 1
   },
-  "dropped": 71,
-  "merged": 336
+  "dropped": 65,
+  "merged": 338
  },
  "CA-NB": {
   "rows": 776,
-  "live": 13,
+  "live": 11,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -155,6 +165,7 @@
    "the official outline of New Brunswick #15 Wildlife Managemen": 32,
    "the official outline of New Brunswick #16 Wildlife Managemen": 42,
    "the official outline of New Brunswick #6 Wildlife Management": 5,
+   "no ownership source for this row": 3,
    "the official outline of New Brunswick #10 Wildlife Managemen": 21,
    "the official outline of New Brunswick #3 Wildlife Management": 24,
    "the official outline of New Brunswick #18 Wildlife Managemen": 18,
@@ -164,16 +175,18 @@
    "the official outline of New Brunswick #9 Wildlife Management": 3,
    "the official outline of New Brunswick #21 Wildlife Managemen": 10
   },
-  "dropped": 77,
+  "dropped": 76,
   "merged": 272
  },
  "CA-NS": {
   "rows": 217,
-  "live": 10,
+  "live": 5,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 3,
+   "no owner on the park record or in its name for Polletts Cove": 1,
+   "no ownership source for this row": 6,
+   "no owner on the park record or in its name for Baddeck River": 1,
    "one record covers two parks": 1,
    "the official outline of New Brunswick #25 Wildlife Managemen": 1
   },
