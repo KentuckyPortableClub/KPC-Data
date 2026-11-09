@@ -1,4 +1,4 @@
-# Flow board (2026-11-09 15:12Z, kpc_flow.py)
+# Flow board (2026-11-09 23:10Z, kpc_flow.py)
 Every pile of work, who it waits on and when it last moved. STUCK = work in it and no move for 2+ days. Fix the STUCK ones first.
 
 ## STUCK (29)
@@ -6,7 +6,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 - STUCK 9 d · **7** · HELD campinfo files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-MA, US-NC, US-NY, US-AR, US-MO, US-MS, US-VT
 - STUCK 9 d · **6** · HELD docs files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-ID, US-IL, US-ME, US-MO, US-IN, US-MS
 - STUCK 8 d · **146** · questions/not-sure-for-chat9.json waiting for an answer · waits on **chat 9**
-- STUCK 8 d · **51** · HELD fers files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-FL, US-GA, US-IL, US-MA, US-MI, US-NC, US-NE, US-PA, US-SD, US-TX, CA-BC, US-AK, US-CT, US-MN, US-ND, US-NH, US-NY, US-SC, US-UT, US-WV, US-DE, US-IA, US-IN, …
+- STUCK 8 d · **54** · HELD fers files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-FL, US-GA, US-IL, US-MA, US-MI, US-NC, US-NE, US-PA, US-SD, US-TX, CA-BC, US-AK, US-CT, US-MN, US-ND, US-NH, US-NY, US-SC, US-UT, US-WV, US-DE, US-IA, US-IN, …
 - STUCK 8 d · **8** · HELD truth files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-CT, US-MA, US-MD, US-MN, US-MS, US-NY, US-OK, US-TX
 - STUCK 8 d · **1** · 2-fer checker: found work · waits on **chat 2 + chat 11** · weekly re-test of live 2-fers · chat 2 rechecks + chat 11 grades 857 SHRUNK / GONE / MOVED rows (data/fers-check/alerts.md
 - STUCK 8 d · **1** · NO rechecker: not run for 8 days · waits on **chat 10** · NO answers re-tested (tools-out no-recheck/summary.md) · chat 11 looks at 13 flagged rows (data/waiting/questions/no-recheck.json)
@@ -36,7 +36,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 ### chat 2
 - STUCK 7 · HELD campinfo files (a check failed; data/waiting/today.md says why) · since 2026-10-31
 - STUCK 6 · HELD docs files (a check failed; data/waiting/today.md says why) · since 2026-10-31
-- STUCK 51 · HELD fers files (a check failed; data/waiting/today.md says why) · since 2026-11-01
+- STUCK 54 · HELD fers files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - STUCK 8 · HELD truth files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - STUCK 1 · 2-fer checker: found work · since 2026-11-01
 - STUCK 4 · HELD trails files (a check failed; data/waiting/today.md says why) · since 2026-11-04
@@ -55,7 +55,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 ### chat 11
 - STUCK 7 · HELD campinfo files (a check failed; data/waiting/today.md says why) · since 2026-10-31
 - STUCK 6 · HELD docs files (a check failed; data/waiting/today.md says why) · since 2026-10-31
-- STUCK 51 · HELD fers files (a check failed; data/waiting/today.md says why) · since 2026-11-01
+- STUCK 54 · HELD fers files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - STUCK 8 · HELD truth files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - STUCK 1 · 2-fer checker: found work · since 2026-11-01
 - STUCK 2 · questions/aliases-nov1.json waiting for an answer · since 2026-11-02
@@ -72,7 +72,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 - STUCK 1 · HELD pile-solver files (a check failed; data/waiting/today.md says why) · since 2026-11-05
 - STUCK 1 · HELD world-key files (a check failed; data/waiting/today.md says why) · since 2026-11-07
 - 1 · HELD wwff files (a check failed; data/waiting/today.md says why) · since 2026-11-08
-- 382 · files waiting for a grader (data/status/grade-queue.md) · since 2026-11-09
+- 390 · files waiting for a grader (data/status/grade-queue.md) · since 2026-11-09
 ### bots
 - STUCK 1 · Storage keeper (weekly): found work · since 2026-11-01
 - STUCK 1 · Cell coverage (FCC): found work · since 2026-11-02
@@ -107,13 +107,13 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 | 6 questions | questions/world-finder.json waiting for an answer | 37 | chat 11 | 2026-11-05 **STUCK** |
 | 7 waiting room | HELD campinfo files (a check failed; data/waiting/today.md says why) | 7 | chat 2 (fix) + chat 11 | 2026-10-31 **STUCK** |
 | 7 waiting room | HELD docs files (a check failed; data/waiting/today.md says why) | 6 | chat 2 (fix) + chat 11 | 2026-10-31 **STUCK** |
-| 7 waiting room | HELD fers files (a check failed; data/waiting/today.md says why) | 51 | chat 2 (fix) + chat 11 | 2026-11-01 **STUCK** |
+| 7 waiting room | HELD fers files (a check failed; data/waiting/today.md says why) | 54 | chat 2 (fix) + chat 11 | 2026-11-01 **STUCK** |
 | 7 waiting room | HELD pile-solver files (a check failed; data/waiting/today.md says why) | 1 | chat 2 (fix) + chat 11 | 2026-11-05 **STUCK** |
 | 7 waiting room | HELD trails files (a check failed; data/waiting/today.md says why) | 4 | chat 2 (fix) + chat 11 | 2026-11-04 **STUCK** |
 | 7 waiting room | HELD truth files (a check failed; data/waiting/today.md says why) | 8 | chat 2 (fix) + chat 11 | 2026-11-01 **STUCK** |
 | 7 waiting room | HELD world-key files (a check failed; data/waiting/today.md says why) | 1 | chat 2 (fix) + chat 11 | 2026-11-07 **STUCK** |
 | 7 waiting room | HELD wwff files (a check failed; data/waiting/today.md says why) | 1 | chat 2 (fix) + chat 11 | 2026-11-08 |
-| 7 waiting room | files waiting for a grader (data/status/grade-queue.md) | 382 | chat 11 | 2026-11-09 |
+| 7 waiting room | files waiting for a grader (data/status/grade-queue.md) | 390 | chat 11 | 2026-11-09 |
 | 8 bots | 2-fer checker: found work | 1 | chat 2 + chat 11 | 2026-11-01 **STUCK** |
 | 8 bots | Cell coverage (FCC): found work | 1 | HQ | 2026-11-02 **STUCK** |
 | 8 bots | Key bots: errors and silence: RED (the bot is broken) | 1 | chat 10 | 2026-11-03 **STUCK** |
