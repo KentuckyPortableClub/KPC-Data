@@ -2544,45 +2544,40 @@
  },
  "last": {
   "areas": [
-   "US-IL"
+   "US-ME"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 255,
+   "dropped_queued": 3,
    "errors": 0,
    "for_person_urls": [
     [
      "https://epqs.nationalmap.gov/robots.txt",
      "robots.txt answered 403: nothing fetched from epqs.nationalmap.gov this run"
-    ],
-    [
-     "https://broadbandmap.fcc.gov/robots.txt",
-     "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 408,
+   "requests": 1,
    "rested": 0,
-   "robots": 2,
-   "robots_unreadable": 2,
+   "robots": 1,
+   "robots_unreadable": 1,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 192,
-   "camps": 256,
+   "camps": 4,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 192,
-   "needs_key": 28,
-   "no_page": 17,
-   "not_official": 4,
-   "ok": 207,
-   "pages_read": 212,
+   "needs_browser": 0,
+   "needs_key": 4,
+   "no_page": 0,
+   "not_official": 0,
+   "ok": 0,
+   "pages_read": 0,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 0
+   "skipped_fresh": 21
   },
   "when": "2026-11-09"
  },
