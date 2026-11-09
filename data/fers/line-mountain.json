@@ -10,50 +10,56 @@
   "US-AZ",
   "US-NM"
  ],
- "since": "2026-11-06",
- "date": "2026-11-06 21:26 UTC",
+ "since": "2026-11-08",
+ "date": "2026-11-09 00:05 UTC",
  "verdict": "STOPPED",
  "why": [
-  "missing check: 3680 of 8328 expected pairs were never looked at (44%; 4307 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (3680)",
+  "missing check: 3772 of 8256 expected pairs were never looked at (46%; 4034 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (3727); <park>: not in this run (another state, retired, or no POTA pin) (34); <park>: no official boundary; <park>: not in this run (another state, retired, or no POTA  (4)",
   "pass1 stopped for time: not every pair was looked at (run the fetcher again with more minutes)",
-  "pass 1 tested 1695 of 10042 pairs whose boxes touch",
-  "US-NM: pass1 not run in this run (stamp 2026-11-01, run started 2026-11-06)"
+  "pass 1 tested 2317 of 10481 pairs whose boxes touch",
+  "US-AZ: pass1 not run in this run (stamp 2026-10-29, run started 2026-11-08)",
+  "US-NM: pass1 not run in this run (stamp 2026-11-01, run started 2026-11-08)"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 91,
-  "DROPPED": 250,
-  "NEVER LOOKED AT": 7987
+  "FOUND": 129,
+  "DROPPED": 321,
+  "NEVER LOOKED AT": 7806
  },
  "never_looked_at": {
-  "counted": 3680,
-  "no_official_outline": 4307,
-  "expected": 8328,
+  "counted": 3772,
+  "no_official_outline": 4034,
+  "expected": 8256,
   "limit": "10%",
   "by_reason": {
-   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 3680
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 3727,
+   "<park>: not in this run (another state, retired, or no POTA pin)": 34,
+   "<park>: no official boundary; <park>: not in this run (another state, retired, or no POTA ": 4,
+   "<park>: not in this run (another state, retired, or no POTA pin); <park>: no official boun": 3,
+   "<park>: not in this run (another state, retired, or no POTA pin); <park>: approximate outl": 3,
+   "<park>: approximate outline only (never confirms); <park>: not in this run (another state,": 1
   }
  },
  "report": {
   "pass1": {
-   "date": "2026-11-06",
-   "pairs tested": 1695,
-   "pairs whose boxes touch": 10042,
+   "date": "2026-11-08",
+   "pairs tested": 2317,
+   "pairs whose boxes touch": 10481,
    "stopped for time": true
   },
   "pass2": {
-   "agree with the pass before": 724,
-   "date": "2026-11-06",
+   "agree with the pass before": 505,
+   "date": "2026-11-08",
    "pairs tested": 120
   },
   "pass3": {
-   "agree with the pass before": 639,
-   "date": "2026-11-06",
-   "pairs tested": 117
+   "agree with the pass before": 420,
+   "date": "2026-11-08",
+   "pairs tested": 118
   },
   "pass5": {
-   "checked": 33,
-   "date": "2026-11-06",
+   "checked": 48,
+   "date": "2026-11-08",
    "pairs tested": 0,
    "still not checked": 0
   }
@@ -68,15 +74,15 @@
   "US-NM": "data/fers/US-NM.json"
  },
  "US-CO": {
-  "rows": 10,
-  "live": 4,
+  "rows": 12,
+  "live": 5,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "one record covers two parks": 1
   },
   "dropped": 0,
-  "merged": 5
+  "merged": 6
  },
  "US-WY": {
   "rows": 21,
@@ -91,8 +97,8 @@
   "merged": 0
  },
  "US-ID": {
-  "rows": 11,
-  "live": 5,
+  "rows": 12,
+  "live": 6,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {},
@@ -100,37 +106,38 @@
   "merged": 6
  },
  "US-MT": {
-  "rows": 8,
-  "live": 1,
+  "rows": 77,
+  "live": 5,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "one record covers two parks": 1
+   "one record covers two parks": 1,
+   "no public owner on the ownership map": 1
   },
-  "dropped": 0,
-  "merged": 6
+  "dropped": 5,
+  "merged": 65
  },
  "US-NV": {
-  "rows": 706,
-  "live": 50,
+  "rows": 450,
+  "live": 49,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 7
+   "no public owner on the ownership map": 2
   },
-  "dropped": 368,
-  "merged": 281
+  "dropped": 195,
+  "merged": 204
  },
  "US-AZ": {
-  "rows": 36,
-  "live": 4,
+  "rows": 509,
+  "live": 36,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 3
+   "no public owner on the ownership map": 5
   },
-  "dropped": 1,
-  "merged": 28
+  "dropped": 255,
+  "merged": 213
  },
  "US-NM": {
   "rows": 257,
