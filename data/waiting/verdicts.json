@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-09T05:48Z",
+ "checked": "2026-11-09T06:12Z",
  "switched_on": false,
  "results": [
   {
@@ -163,6 +163,15 @@
    "kind": "campinfo",
    "why": [],
    "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-ME.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
    "verdict": "PASS"
   },
   {
@@ -1599,8 +1608,8 @@
    "path": "data/fers/US-UT.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 62 -> 104 (over 30% change)",
-    "F-2 47 new candidate pairs since the live file (over 10% of 62): a person looks at them first, e.g. US-0072+US-6010, US-0558+US-4578, US-0645+US-4575",
+    "F-2 candidates 62 -> 119 (over 30% change)",
+    "F-2 63 new candidate pairs since the live file (over 10% of 62): a person looks at them first, e.g. US-0011+US-5935, US-0072+US-6010, US-0558+US-4578",
     "F-K known 2-fer missing: US-11739 + US-6033"
    ],
    "notes": [],

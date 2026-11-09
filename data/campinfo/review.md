@@ -1,6 +1,6 @@
 # Campground info bot: review (facts only; nothing here decides anything)
 
-Updated 2026-11-08. Every fact in <area>.json carries its source url, read date and quoted line (facts_src). Unknown = null, never guessed.
+Updated 2026-11-09. Every fact in <area>.json carries its source url, read date and quoted line (facts_src). Unknown = null, never guessed.
 ℹ️ Maps and park info are a planning aid, not a guarantee. Always check the official agency map and rules before you go.
 
 | area | campgrounds | read ok | needs RIDB key | needs browser (403) | robots no | host resting | no page on file | not official host | other | with site count | with booking link | with elevation |
@@ -31,6 +31,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 | US-MA | 36 | 25 | 8 | 0 | 0 | 0 | 0 | 0 | 3 | 18 | 28 | 0 |
 | US-VT | 280 | 105 | 9 | 0 | 0 | 0 | 146 | 0 | 20 | 103 | 125 | 0 |
 | US-NH | 79 | 41 | 24 | 0 | 0 | 0 | 12 | 0 | 2 | 3 | 43 | 0 |
+| US-ME | 25 | 0 | 4 | 0 | 7 | 0 | 0 | 1 | 13 | 0 | 20 | 0 |
 | US-MD | 77 | 40 | 30 | 1 | 0 | 0 | 0 | 0 | 6 | 10 | 43 | 0 |
 | US-DE | 24 | 2 | 0 | 2 | 0 | 20 | 0 | 0 | 0 | 0 | 24 | 0 |
 | US-AR | 229 | 21 | 120 | 0 | 2 | 0 | 0 | 5 | 81 | 5 | 78 | 0 |
@@ -78,7 +79,9 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 - washington.goingtocamp.com: 15 campgrounds · host resting (robots.txt could not be read: next run)
 - midnrreservations.com: 12 campgrounds · host resting
 - www.reservecalifornia.com: 5 campgrounds · host resting (robots.txt could not be read: next run)
+- apps.web.maine.gov: 4 campgrounds · host resting (robots.txt could not be read: next run)
 - getoutside.idaho.gov: 4 campgrounds · host resting (robots.txt could not be read: next run)
+- www.maine.gov: 3 campgrounds · host resting (robots.txt could not be read: next run)
 - tpwd.texas.gov: 3 campgrounds · robots.txt says no
 - reserve.mdwfp.com: 2 campgrounds · robots.txt says no
 - reserve.arkansasstateparks.com: 2 campgrounds · host resting (robots.txt could not be read: next run)
@@ -208,17 +211,6 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 
 ## US-KY: 12 random samples (records with facts; seed = the date)
 
-- **Maple Springs Group Campground** (maple-springs-group-campground, KY (hand-checked list), status ok (browser), 16 facts) · [home.nps.gov](https://home.nps.gov/maca/planyourvisit/maplespringscg.htm)
-  - booking.how = "online: www.recreation.gov" · “link “Recreation.gov””
-  - booking.url = "https://www.recreation.gov/camping/gateways/2818" · “link “Recreation.gov” -> https://www.recreation.gov/camping/gateways/2818”
-  - checkin = "1 pm" · “Check-in time is after 1 pm at the Mammoth Cave, Houchin Ferry and Maple Springs Campground. If you arrive at your re”
-  - drinking_water = true · “ddy campsites, catch your drain water in buckets and empty into toilets in the restrooms. Water hydrants are for collection of water to be u”
-  - hookups.electric = true · “luded sites ideal for larger groups of campers and their horse companions. All sites have electric and water hookups for RVs. This campgroun”
-  - hookups.water = true · “luded sites ideal for larger groups of campers and their horse companions. All sites have electric and water hookups for RVs. This campgroun”
-  - map.date_how = "web page, no date in the link" · “link “Mammoth Cave Map & Guide””
-  - map.url = "https://home.nps.gov/maca/planyourvisit/mammoth-cave-map-gu · “link “Mammoth Cave Map & Guide” -> https://home.nps.gov/maca/planyourvisit/mammoth-cave-map-guide.htm”
-  - phone = "(270) 758-2166" · “information, schedules, and trailer standards, please call (270) 758-2166 or visit Directions and Transportation. OPEN BASIC INFORMAT”
-  - phone_hint = "(270) 758-2424" · “in person only on the day of your trip. Contact campground office for hours of operation. (270) 758-2424. Leave No Trace Seven Principles (U”
 - **Station Camp Campground (TN)** (station-camp-campground-tn, KY (hand-checked list), status ok (browser), 14 facts) · [home.nps.gov](https://home.nps.gov/biso/planyourvisit/station-camp-campground.htm)
   - booking.how = "online: www.recreation.gov" · “link “Start Your Reservation””
   - booking.url = "https://www.recreation.gov/camping/campgrounds/10004358" · “link “Start Your Reservation” -> https://www.recreation.gov/camping/campgrounds/10004358”
@@ -230,98 +222,98 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - map.date_how = "PDF, year 2024 in the link" · “link “Download your map here.””
   - map.url = "https://home.nps.gov/biso/planyourvisit/upload/Station-Camp · “link “Download your map here.” -> https://home.nps.gov/biso/planyourvisit/upload/Station-Camp-Campground-Map-and-Regs-2024.pdf”
   - reservable = true · “or Passes). Station Camp Campground is now operated by the National Park Service. Camping reservations can be made by calling 1-877-444-6777”
-- **Zilpo Campground** (us-10171-zilpo-campground, KY (hand-checked list), status ok, 14 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground)
-  - booking.how = "online: www.recreation.gov" · “link “Make Reservations Here””
-  - booking.url = "https://www.recreation.gov/camping/campgrounds/232370" · “link “Make Reservations Here” -> https://www.recreation.gov/camping/campgrounds/232370”
-  - checkin = "2 p.m" · “your visit. Seasons of Use 3rd Friday in March - Last Sunday in October Operational Hours Check-in: 2 p.m. Checkout: 11 a.m. Only registered”
-  - checkout = "11 a.m" · “ns of Use 3rd Friday in March - Last Sunday in October Operational Hours Check-in: 2 p.m. Checkout: 11 a.m. Only registered campers are allo”
-  - drinking_water = true · “ccessible. Contact VISTA Recreation for more information. Restrooms Flush toilet(s) Water Potable water is available at this site. Drinking ”
-  - dump_station = true · “lable at some campsites. Bathhouses with showers are spread throughout the campground. An RV dump station is available. Reservable cabins sl”
-  - features = "campfire ring" · “shades the campground, and campsites have good privacy. Each site has a picnic table and campfire ring. Electric hookups are available at so”
-  - hookups.electric = "some" · “ilpo Campground Scenic Zilpo Campground offers cabin rentals, tent camping, RV sites with electric hookups and a selection of lakefront site”
-  - map.date_how = "web page, no date in the link" · “link “Zilpo Recreation Area Map””
-  - map.url = "https://usfs-public.box.com/s/q18extxpqb7ota6w4c6vpl65317w2 · “link “Zilpo Recreation Area Map” -> https://usfs-public.box.com/s/q18extxpqb7ota6w4c6vpl65317w2iv0”
-- **Blue Heron Campground (KY)** (blue-heron-campground-ky, KY (hand-checked list), status ok (browser), 15 facts) · [home.nps.gov](https://home.nps.gov/biso/planyourvisit/blueheroncampground.htm)
-  - booking.how = "online: www.recreation.gov" · “link “Start Your Reservation””
-  - booking.url = "https://www.recreation.gov/camping/campgrounds/232505" · “link “Start Your Reservation” -> https://www.recreation.gov/camping/campgrounds/232505”
-  - checkin = "12:00 pm" · “ly from April through mid-to-late December each year. Important Information Check-out and check-in time is 12:00 pm (ET) for all campsites i”
-  - checkout = "12:00 pm" · “NRRA with the exception of Bandy Creek Group Camp where check-in time is 2:00 pm (ET) and check-out time is 12:00 pm (ET). Notice: Sites wit”
-  - dump_station = true · “r and electric hook-ups, picnic tables, fire-rings, access to restrooms and showers and a dump station. A map of the Blue Heron Campground m”
-  - hookups.amps = [50] · “ere check-in time is 2:00 pm (ET) and check-out time is 12:00 pm (ET). Notice: Sites with 50-amp electric service are shaded in gray. . Camp”
-  - hookups.electric = true · “of Stearns off Highway 742. The campground offers a total of 45 sites all with water and electric hook-ups, picnic tables, fire-rings, acces”
-  - hookups.water = true · “miles west of Stearns off Highway 742. The campground offers a total of 45 sites all with water and electric hook-ups, picnic tables, fire-r”
-  - map.date_how = "PDF, year 2024 in the link" · “link “map of the Blue Heron Campground””
-  - map.url = "https://home.nps.gov/biso/planyourvisit/upload/Blue-Heron-C · “link “map of the Blue Heron Campground” -> https://home.nps.gov/biso/planyourvisit/upload/Blue-Heron-Campground-Map-and-Regs-2024.pdf”
-- **Columbus-Belmont Campground** (columbus-belmont-campground, KY (hand-checked list), status ok, no campground facts even in a browser, 6 facts) · [parks.ky.gov](https://parks.ky.gov/explore/columbus-belmont-state-park-7809)
-  - booking.url = "https://kentuckystateparks.reserveamerica.com/camping/colum · “booking link from our kpc-campgrounds.json row (official system kentuckystateparks.reserveamerica.com)”
+- **West Kentucky WMA designated camping site** (west-kentucky-wma-designated-camping-site, KY (hand-checked list), status ok, no campground facts even in a browser, 3 facts) · [app.fw.ky.gov](https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=137)
+  - map.date_how = "PDF, no date in the link" · “link “View Detailed Map””
+  - map.url = "https://fw.ky.gov/More/Documents/West_Kentucky_WMA.pdf" · “link “View Detailed Map” -> https://fw.ky.gov/More/Documents/West_Kentucky_WMA.pdf”
+  - phone = "(270) 488-3233" · “WMA Overview Size: 4495 acres Location: McCracken Contact: (270) 488-3233 Elevation: minimum 297 feet, maximum 451 feet. Entrance GPS”
+- **Barren River Lake State Resort Park Campground** (barren-river-lake-state-resort-park-campground, KY (hand-checked list), status ok (browser), 8 facts) · [parks.ky.gov](https://parks.ky.gov/parks/find-a-park/barren-river-lake-campground-7834)
+  - booking.url = "https://kentuckystateparks.reserveamerica.com/camping/barre · “booking link from our kpc-campgrounds.json row (official system kentuckystateparks.reserveamerica.com)”
+  - dump_station = true · “ll you to sleep in the campground. Utility hookups are available. For your convenience, a dump station and two central service buildings wit”
+  - hookups.electric = true · “eep closer to nature? Let the sounds of the outdoors lull you to sleep in the campground. Utility hookups are available. For your convenienc”
+  - hookups.water = true · “eep closer to nature? Let the sounds of the outdoors lull you to sleep in the campground. Utility hookups are available. For your convenienc”
   - lodging_booking.how = "online: parks.ky.gov" · “link “Reservations Online””
   - lodging_booking.url = "https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-c · “link “Reservations Online” -> https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-cottage”
-  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
-  - map.url = "https://www.kentuckytourism.com/media/docs/default-source/l · “link “Campground Map” -> https://www.kentuckytourism.com/media/docs/default-source/listing-documents/campground-mapcd7e8459-4”
-  - reservable = true · “mbus-Belmont State Park 270-677-2327 lee.jackson@ky.gov 350 Park Road, Columbus, KY 42032 Reserve A Campsite View All Photos A visit to this”
-- **Clear Creek Campground** (clear-creek-campground, KY (hand-checked list), status ok, 7 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone/recreation/clear-creek-campground)
-  - drinking_water = true · “ts accessibility standards for persons with disabilities. Restrooms Vault toilet(s) Water Potable water is available at this site. Drinking ”
-  - features = "fire rings and lantern poles" · “t can run swiftly during rainy seasons. Campsites include tent or RV pads, picnic tables, fire rings and lantern poles. There is no electric”
-  - fees = "$20 per night | $25 per night" · “r-round Operational Hours Open 24 hours/day Fee Site and Info Overnight Use: Single Site: $20 per night Double Site: $25 per night Pay at si”
-  - hookups.electric = false · “mpsites include tent or RV pads, picnic tables, fire rings and lantern poles. There is no electricity or shower facilities. Active Alerts Na”
-  - restrooms = "vault" · “ng Parking is available at the campground. Facility and Amenity Information Accessibility Vault toilet meets accessibility standards for per”
-  - season = "year-round" · “nitoring, Oct 2026-Sept 2027 General Lake Prohibitions General Information Seasons of Use Open year-round Operational Hours Open 24 hours/da”
-  - showers = false · “tent or RV pads, picnic tables, fire rings and lantern poles. There is no electricity or shower facilities. Active Alerts National Visitor U”
+  - rules.pets = "Pets are allowed if restrained" · “a dump station and two central service buildings with showers and rest rooms are offered. Pets are allowed if restrained. Laundry facilities”
+  - showers = true · “re available. For your convenience, a dump station and two central service buildings with showers and rest rooms are offered. Pets are allow”
+- **Higginson-Henry WMA designated campsites** (higginson-henry-wma-designated-campsites, KY (hand-checked list), status ok, no campground facts even in a browser, 3 facts) · [app.fw.ky.gov](https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=132)
+  - map.date_how = "PDF, no date in the link" · “link “View Detailed Map””
+  - map.url = "https://fw.ky.gov/More/Documents/Higginson-HenryWMA_ALL.pdf · “link “View Detailed Map” -> https://fw.ky.gov/More/Documents/Higginson-HenryWMA_ALL.pdf”
+  - phone = "(270) 389-3580" · “A Overview Size: 5446 acres Location: Union Contact: Office (270) 389-3580 Elevation: minimum 396 feet, maximum 675 feet. Entrance GPS”
 - **White Sulphur Horse Camp** (white-sulphur-horse-camp, KY (hand-checked list), status ok, 5 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone/recreation/white-sulphur-horse-camp)
   - drinking_water = false · “rs up to 50ft in length. Facility and Amenity Information Restrooms Vault toilet(s) Water Potable water is not available at this site. Picni”
   - fees = "$20 per night Peak Season (March 20 - October 26) | $15 per · “r-round Operational Hours Open 24 hours/day Fee Site and Info Overnight Use: Single Site: $20 per night Peak Season (March 20 - October 26) ”
   - hookups.electric = false · “White Sulphur Horse Camp, located near Cave Run Lake, is a primitive campground (without electricity) designed for horseback riders. The cam”
   - rv_max_ft = 50 · “d continue for 2.5 miles. Parking The parking area can accommodate up to 30 vehicles with trailers up to 50ft in length. Facility and Amenit”
   - season = "year-round" · “nitoring, Oct 2026-Sept 2027 General Lake Prohibitions General Information Seasons of Use Open year-round Operational Hours Open 24 hours/da”
-- **Bandy Creek Campground (TN)** (bandy-creek-campground-tn, KY (hand-checked list), status ok, 16 facts) · [home.nps.gov](https://home.nps.gov/biso/planyourvisit/bandycreekcampground.htm)
-  - booking.how = "online: www.recreation.gov" · “link “Start Your Reservation””
-  - booking.url = "https://www.recreation.gov/camping/campgrounds/232506" · “link “Start Your Reservation” -> https://www.recreation.gov/camping/campgrounds/232506”
-  - checkin = "12:00 pm" · “es a bookstore and vending machines at this location. Important Information Check-out and check-in time is 12:00 pm (ET) for all campsites i”
-  - checkout = "12:00 pm" · “NRRA with the exception of Bandy Creek Group Camp where check-in time is 2:00 pm (ET) and check-out time is 12:00 pm (ET). Note: Sites that ”
-  - dump_station = true · “. All campsites include picnic tables, fire rings, and access to restrooms and showers. A dump station is located near the registration kios”
-  - features = "fire rings, and access to restrooms and showers" · “with 19 sites in one loop and 16 sites in the other. All campsites include picnic tables, fire rings, and access to restrooms and showers. A”
-  - hookups.amps = [50] · “check-in time is 2:00 pm (ET) and check-out time is 12:00 pm (ET). Note: Sites that have 50-amp power service are shaded in gray. Campground”
-  - hookups.electric = "some" · “n. The campground offers a total of 181 campsites: 96 trailer sites which offer water and electric hook-ups, 49 sites for tent camping, and ”
-  - hookups.sewer = false · “estrooms and showers. A dump station is located near the registration kiosk. There are no sewer hook-ups at individual trailer sites. The gr”
-  - hookups.water = true · “f Jamestown. The campground offers a total of 181 campsites: 96 trailer sites which offer water and electric hook-ups, 49 sites for tent cam”
-- **Great Meadows Campground** (great-meadows-campground, KY (hand-checked list), status ok, 6 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone/recreation/great-meadows-campground)
-  - drinking_water = true · “et accessibility standards for persons with disabilities. Restrooms Vault toilet(s) Water Potable water is available at this site. Drinking ”
-  - hookups.electric = false · “tables, parking and a fishing pier. The campground can accommodate RVs up to 35 feet. No hookups or dumpsites are available. Rock Creek, a d”
-  - restrooms = "vault" · “ng Parking is available at the campground. Facility and Amenity Information Accessibility Vault toilets meet accessibility standards for per”
-  - rv_max_ft = 35 · “and RV camping, picnic tables, parking and a fishing pier. The campground can accommodate RVs up to 35 feet. No hookups or dumpsites are ava”
-  - sites.primitive = 18 · “nd is located off Rock Creek-Bell Farm Road (Forest #137) in McCreary County and features 18 primitive sites for tent and RV camping, picnic”
-  - sites.total = 18 · “dows Campground is located off Rock Creek-Bell Farm Road (Forest #137) in McCreary County and features 18 primitive sites for tent and RV ca”
-- **Fenton Self-Service Campground** (fenton-self-service-campground, KY (hand-checked list), status ok, 6 facts) · [www.landbetweenthelakes.us](https://www.landbetweenthelakes.us/facility/self-service-camping/)
-  - fees = "$12 per night | $26 per night | $10 per night" · “rash pickup, lake access, and boat ramps. Self-Service Campgrounds include: Cravens Bay – $12 per night Fenton (30 amp electric) – $26 per n”
-  - hookups.amps = [30] · “ss, and boat ramps. Self-Service Campgrounds include: Cravens Bay – $12 per night Fenton (30 amp electric) – $26 per night Turkey Bay Off-Hi”
-  - hookups.electric = true · “boat ramps. Self-Service Campgrounds include: Cravens Bay – $12 per night Fenton (30 amp electric) – $26 per night Turkey Bay Off-Highway Ve”
-  - restrooms = "vault" · “er basic amenities including designated campsite pads, picnic tables, grills, fire rings, vault toilets, trash pickup, lake access, and boat”
-  - rules.fires = "firewood at home – do not transport it to campgrounds" · “$10 per night Boswell Landing – $10 per night Gatlin Point – $10 per night Firewood Leave firewood at home – do not transport it to campgrou”
-  - season = "year-round" · “atives to the more developed campgrounds. We have 11 self-service campgrounds which offer year-round lakeside camping. Although these areas ”
-- **Alum Ford Campground (KY)** (alum-ford-campground-ky, KY (hand-checked list), status ok (browser), 9 facts) · [home.nps.gov](https://home.nps.gov/biso/planyourvisit/alumfordcampground.htm)
-  - booking.how = "online: home.nps.gov" · “link “Permits & Reservations””
-  - booking.url = "https://home.nps.gov/biso/planyourvisit/permitsandreservati · “link “Permits & Reservations” -> https://home.nps.gov/biso/planyourvisit/permitsandreservations.htm”
-  - checkin = "12:00 pm" · “onths in advance. This campground is open year-round. Important Information Check-out and check-in time is 12:00 pm (ET) for all campsites i”
-  - checkout = "12:00 pm" · “NRRA with the exception of Bandy Creek Group Camp where check-in time is 2:00 pm (ET) and check-out time is 12:00 pm (ET). . Campsite at Alu”
-  - drinking_water = false · “of six campsites each with picnic table and fire ring. Pit toilets are available, but no drinking water. A map of the campground may be down”
-  - features = "fire ring" · “e end of Highway 700. The campground consists of six campsites each with picnic table and fire ring. Pit toilets are available, but no drink”
-  - fees = "$15 per night ($7 | $7.50 for holders of the Interagency Ag · “e, Cumberland Falls, & Pickett State Parks in Kentucky and Tennessee. The campsite fee is $15 per night ($7.50 for holders of the Interagenc”
-  - restrooms = "vault" · “ghway 700. The campground consists of six campsites each with picnic table and fire ring. Pit toilets are available, but no drinking water. ”
-  - season = "year-round" · “vations are site-specific and may be booked up to 6 months in advance. This campground is open year-round. Important Information Check-out a”
-- **Kentucky Horse Park Campground** (kentucky-horse-park-campground, KY (hand-checked list), status ok (browser), 20 facts) · [kyhorsepark.com](https://kyhorsepark.com/campground/)
-  - booking.how = "online: www.reserveamerica.com" · “link “Make a Reservation””
-  - booking.url = "https://www.reserveamerica.com/explore/kentucky-horse-park/ · “link “Make a Reservation” -> https://www.reserveamerica.com/explore/kentucky-horse-park/KY/90800/overview”
-  - checkin = "2 pm" · “SE PARK 4089 Iron Works Pike Lexington, Kentucky, 40511 Get Directions Ready to Check In? Check-in is after 2 pm. Check-out is before/by noo”
-  - checkout = "12:00 noon" · “imum stay is 14 days unless approved by Campground management. Check in time is 2:00 p.m. Check out time is 12:00 noon. All guests are requi”
-  - drinking_water = true · “yards away (groups of 25 or more are responsible for renting portable toilets). In-ground water hydrant available (renters must supply their”
-  - dump_station = true · “water, our campground sites are 55’ paved back-ins with fire rings and picnic tables. Two dump stations are provided for your convenience as”
-  - features = "fire rings and picnic tables" · “with 50/30/20 amp electricity and water, our campground sites are 55’ paved back-ins with fire rings and picnic tables. Two dump stations ar”
-  - hookups.amps = [20, 30, 50] · “Countless Welcome to the Kentucky Horse Park Campground! Offering 260 spacious sites with 50/30/20 amp electricity and water, our campground”
-  - hookups.electric = "some" · “come to the Kentucky Horse Park Campground! Offering 260 spacious sites with 50/30/20 amp electricity and water, our campground sites are 55”
-  - hookups.sewer = "some" · “he campground store. The campground remains available to campers after hours. Do you have sewer at your sites? We do not have sewer hookups ”
+- **Wranglers Campground** (wranglers-campground, KY (hand-checked list), status ok, 15 facts) · [www.landbetweenthelakes.us](https://www.landbetweenthelakes.us/visit/wranglers-campground/)
+  - booking.how = "online: lblweb.usedirect.com" · “link “Reserve Online””
+  - booking.url = "https://lblweb.usedirect.com/camplbl/" · “link “Reserve Online” -> https://lblweb.usedirect.com/camplbl/”
+  - checkin = "4:30 p.m" · “.. SEARCH About Wranglers Campground Wranglers Campground is open for camping year-round. Check-in is 4:30 p.m. , you may check in anytime o”
+  - checkout = "3:30 p.m" · “ck-in is 4:30 p.m. , you may check in anytime of your arrival date if the site is vacant. Check-out is 3:30 p.m. A 1 night late fee will be ”
+  - hookups.amps = [30, 50] · “eservations can be made 2 days to 6 months in advance Type of Site Basic Nightly Rate $12 30 Amp Electric Nightly Rate $26 50 Amp Electric N”
+  - hookups.electric = "some" · “seback riding and wagon driving enthusiasts. It offers 198 well-defined sites — some with electrical hookups, sites with electric, water, an”
+  - hookups.sewer = true · “rs 198 well-defined sites — some with electrical hookups, sites with electric, water, and sewer, primitive sites, and 12 rustic cabins avail”
+  - hookups.water = true · “enthusiasts. It offers 198 well-defined sites — some with electrical hookups, sites with electric, water, and sewer, primitive sites, and 12”
+  - map.date_how = "PDF, year 2025 in the link" · “link “Wranglers Campground Map””
+  - map.url = "https://www.landbetweenthelakes.us/wp-content/uploads/2025/ · “link “Wranglers Campground Map” -> https://www.landbetweenthelakes.us/wp-content/uploads/2025/04/Wranglers_Campground_Map_2025_web.pdf”
+- **Houchin Ferry Campground** (houchin-ferry-campground, KY (hand-checked list), status ok (browser), 15 facts) · [home.nps.gov](https://home.nps.gov/maca/planyourvisit/houchinferrycg.htm)
+  - booking.how = "online: www.recreation.gov" · “link “Recreation.gov””
+  - booking.url = "https://www.recreation.gov/camping/gateways/2818" · “link “Recreation.gov” -> https://www.recreation.gov/camping/gateways/2818”
+  - checkin = "1 pm" · “Check-in time is after 1 pm at the Mammoth Cave, Houchin Ferry and Maple Springs Campground. If you arrive at your re”
+  - drinking_water = true · “ddy campsites, catch your drain water in buckets and empty into toilets in the restrooms. Water hydrants are for collection of water to be u”
+  - hookups.electric = true · “, these 12 tent-only campsites afford a quiet visit with drive-up access. TOTAL SITES: 12 Electric Hookups: 0 RV Only: 0 Tent Only: 12 Walk ”
+  - map.date_how = "web page, no date in the link" · “link “Mammoth Cave Map & Guide””
+  - map.url = "https://home.nps.gov/maca/planyourvisit/mammoth-cave-map-gu · “link “Mammoth Cave Map & Guide” -> https://home.nps.gov/maca/planyourvisit/mammoth-cave-map-guide.htm”
+  - phone_hint = "(270) 758-2424" · “in person only on the day of your trip. Contact campground office for hours of operation. (270) 758-2424. Leave No Trace Seven Principles (U”
+  - reservable = true · “TION & DIRECTIONS ADDITIONAL INFORMATION & REGULATIONS RESERVATIONS Campsites are through reservations only. IMAGE GALLERY Campsites with pi”
+  - restrooms = "yes (kind not stated)" · “te unpleasant odors and muddy campsites, catch your drain water in buckets and empty into toilets in the restrooms. Water hydrants are for c”
+- **Yellowbank WMA primitive campground (Main Area)** (yellowbank-wma-primitive-campground, KY (hand-checked list), status ok, no campground facts even in a browser, 3 facts) · [app.fw.ky.gov](https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=192)
+  - map.date_how = "PDF, no date in the link" · “link “View Detailed Map””
+  - map.url = "https://fw.ky.gov/More/Documents/YellowbankWMA_ALL.pdf" · “link “View Detailed Map” -> https://fw.ky.gov/More/Documents/YellowbankWMA_ALL.pdf”
+  - phone = "(270) 547-6856" · “iew Size: 7555 acres Location: Breckinridge Contact: Office (270) 547-6856 Elevation: minimum 382 feet, maximum 872 feet. Entrance GPS”
+- **Koomer Ridge Campground** (koomer-ridge-campground, KY (hand-checked list), status ok, 13 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone/recreation/koomer-ridge-campground)
+  - booking.how = "online: www.recreation.gov" · “link “Make Reservations Here””
+  - booking.url = "https://www.recreation.gov/camping/campgrounds/10311270" · “link “Make Reservations Here” -> https://www.recreation.gov/camping/campgrounds/10311270”
+  - drinking_water = true · “et accessibility standards for persons with disabilities. Restrooms Flush toilet(s) Water Potable water is available at this site. Drinking ”
+  - dump_station = false · “s. Campground facilities include an amphitheater and bath house with seasonal showers. No dump station available. The area serves as a trail”
+  - fees = "$35 per night | $45 per night | $27 per night | $10 per nig · “Open 24 hours/day Fee Site and Info Spring - Fall (March 14 - Nov 1, 2026): Single Site: $35 per night Double Site: $45 per night Walk in te”
+  - hookups.electric = false · “provides 54 campsites suitable for tent camping, 19 of which may accommodate RVs with no hookups. Campground facilities include an amphithea”
+  - map.date_how = "web page, no date in the link" · “link “View Guide/Map””
+  - map.url = "https://usfs-public.box.com/s/uv28hc08gky5zkaw4bzowmqk1jbiq · “link “View Guide/Map” -> https://usfs-public.box.com/s/uv28hc08gky5zkaw4bzowmqk1jbiqgs3”
+  - reservable = "mixed" · “Sept 2027 Reservations Make Reservations Here Reservations available. Sites are available first-come, first-served unless reserved. General ”
+  - restrooms = "flush" · “Parking Parking is available at the site. Facility and Amenity Information Accessibility Flush toilets and showers meet accessibility standa”
+- **Breaks Interstate Park Campground** (breaks-interstate-park-campground, KY (hand-checked list), status ok, 16 facts) · [www.breakspark.com](https://www.breakspark.com/campground)
+  - booking.how = "online: app.fireflyreservations.com" · “link “Book Your Campsite Here””
+  - booking.url = "https://app.fireflyreservations.com/reserve/property/Breaks · “link “Book Your Campsite Here” -> https://app.fireflyreservations.com/reserve/property/BreaksInterstatePark”
+  - checkin = "4:00 pm" · “eing you! KNOW BEFORE YOU GO: INFORMATION FOR FIRST TIME CAMPERS View Campground Map here Check-in: 4:00 pm Check-out: 1:00 pm Our 138 camp ”
+  - checkout = "1:00 pm" · “ORE YOU GO: INFORMATION FOR FIRST TIME CAMPERS View Campground Map here Check-in: 4:00 pm Check-out: 1:00 pm Our 138 camp sites range from a”
+  - hookups.electric = "some" · “ck-out: 1:00 pm Our 138 camp sites range from a great place to pitch your tent to full RV hook-ups. Most of these sites are wooded, but if y”
+  - hookups.sewer = true · “0 plus tax Electric and Water Sites Nightly: $37.00 plus tax Electric Service, Water, and Sewer sites Nightly: $41.00 plus tax Group Camp Si”
+  - hookups.water = true · “ink at the top of this page. Campsites and Rates Primitive Sites Nightly: $27.00 plus tax Electric and Water Sites Nightly: $37.00 plus tax ”
+  - map.date_how = "web page, no date in the link" · “link “View Campground Map here””
+  - map.url = "https://www.breakspark.com/s/BreaksCampground-Map-Optimized · “link “View Campground Map here” -> https://www.breakspark.com/s/BreaksCampground-Map-Optimized.jpg”
+  - phone_hint = "(276) 865-4413" · “the front of the campground store. If you have questions regarding check-in, please call (276) 865-4413. Cancellation Policy Campground rese”
+- **S-Tree Campground** (s-tree-campground, KY (hand-checked list), status ok, 6 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone/recreation/s-tree-campground)
+  - drinking_water = false · “et accessibility standards for persons with disabilities. Restrooms Vault toilet(s) Water Potable water is not available at this site. Picni”
+  - features = "fire ring and lantern pole" · “unty, KY. Each of the 20 first-come, first-served campsites has a picnic table, tent pad, fire ring and lantern pole. The campground's small”
+  - fees = "$15 per night | $20 per night" · “r-round Operational Hours Open 24 hours/day Fee Site and Info Overnight Use: Single Site: $15 per night Double Site: $20 per night Pay at si”
+  - reservable = false · “d sits on a ridge above Horse Lick Creek near McKee in Jackson County, KY. Each of the 20 first-come, first-served campsites has a picnic ta”
+  - season = "year-round" · “isitor Use Monitoring, Oct 2026-Sept 2027 Reservations General Information Seasons of Use Open year-round Operational Hours Open 24 hours/da”
+  - sites.total = 20 · “ound sits on a ridge above Horse Lick Creek near McKee in Jackson County, KY. Each of the 20 first-come, first-served campsites has a picnic”
+- **Barren Fork Horse Camp** (barren-fork-horse-camp, KY (hand-checked list), status ok, 7 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone/recreation/barren-fork-horse-camp)
+  - drinking_water = true · “ts accessibility standards for persons with disabilities. Restrooms Vault toilet(s) Water Potable water is available at this site. Drinking ”
+  - fees = "$15 per night" · “er 15th Operational Hours Open 24 hours/day Fee Site and Info Overnight Use: Single Site: $15 per night Pay at site using fee envelope with ”
+  - map.date_how = "web page, no date in the link" · “link “View Guide/Map””
+  - map.url = "https://usfs-public.box.com/s/jp0e6xw1cv8jjryh53x3k3ixmkyhw · “link “View Guide/Map” -> https://usfs-public.box.com/s/jp0e6xw1cv8jjryh53x3k3ixmkyhwggg”
+  - restrooms = "vault" · “rs must park in the overflow parking area. Facility and Amenity Information Accessibility Vault toilet meets accessibility standards for per”
+  - rv_max_ft = 35 · “al Company. Today, the campground offers 41 campsites that accommodate horse trailers and RVs up to 35 feet. A picnic shelter at the campgro”
+  - sites.total = 41 · “ng town operated by the Barren Fork Mining and Coal Company. Today, the campground offers 41 campsites that accommodate horse trailers and R”
 
 ## US-TN: 12 random samples (records with facts; seed = the date)
 
+- **S-Tree Campground** (intake-US-11181, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/dbnf/recarea/?recid=39572)
+  - booking.url = "https://www.fs.usda.gov/recarea/dbnf/recarea/?recid=39572" · “booking link from our outside research (camping, nearby only) row (official system www.fs.usda.gov)”
+  - reservable = false · “g, family-friendly picnic getaway. The site has a number of individual picnic tables, two first-come, first-served picnic… Alpine Spur Trail”
 - **Jeff Busby Campground, Milepost 193.1** (intake-US-0642, agency (outside research camping-us-oct31), status ok, 6 facts) · [www.recreation.gov](https://www.recreation.gov/camping/poi/259043)
   - booking.how = "online: www.recreation.gov" · “link “Natchez Trace Parkway””
   - booking.url = "https://www.recreation.gov/camping/gateways/2872" · “link “Natchez Trace Parkway” -> https://www.recreation.gov/camping/gateways/2872”
@@ -329,9 +321,6 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - restrooms = "yes (kind not stated)" · “at milepost 193.1, midway on the parkway, includes an 18-site campground, picnic tables, restrooms, trails, exhibits and an overlook atop Li”
   - rules.stay_limit = "14 days" · “ing and fall, especially during holiday weekends. There is no fee for camping. There is a 14 day stay limit. Photo Gallery Camp, RV, and Exp”
   - sites.total = 18 · “sit! Overview Jeff Busby Campground at milepost 193.1, midway on the parkway, includes an 18-site campground, picnic tables, restrooms, trai”
-- **S-Tree Campground** (intake-US-11181, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/dbnf/recarea/?recid=39572)
-  - booking.url = "https://www.fs.usda.gov/recarea/dbnf/recarea/?recid=39572" · “booking link from our outside research (camping, nearby only) row (official system www.fs.usda.gov)”
-  - reservable = false · “g, family-friendly picnic getaway. The site has a number of individual picnic tables, two first-come, first-served picnic… Alpine Spur Trail”
 - **Bandy Creek Campground** (intake-US-5500, agency (outside research camping-us-oct31), status ok, 16 facts) · [www.nps.gov](https://www.nps.gov/biso/planyourvisit/bandycreekcampground.htm)
   - booking.how = "online: www.recreation.gov" · “link “Start Your Reservation””
   - booking.url = "https://www.recreation.gov/camping/campgrounds/232506" · “link “Start Your Reservation” -> https://www.recreation.gov/camping/campgrounds/232506”
@@ -346,40 +335,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 
 ## US-NC: 12 random samples (records with facts; seed = the date)
 
-- **Family campground; Primitive equestrian campsites; Group tent campground** (US-2744:hq0, state, status ok, 11 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/medoc-mountain-state-park/camping)
-  - booking.how = "online: northcarolinastateparks.reserveamerica.com" · “link “Webstore””
-  - booking.url = "https://northcarolinastateparks.reserveamerica.com/posProdu · “link “Webstore” -> https://northcarolinastateparks.reserveamerica.com/posProducts.do?contractCode=NC&amp;tti=Shop”
-  - fees = "$15 to $145 | $15 fee to cancel a camping reservation | $3  · “oup; Equestrian; Paddle-in; or Accessible. Camping Fees Camping fees per night range from $15 to $145. Camping reservations made online or a”
-  - hookups.electric = true · “rks in 2021 $7.1 million in completed Connect NC camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with fu”
-  - hookups.sewer = true · “camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with full hookups (electric, water, and sewer) 151 # of ”
-  - hookups.water = true · “camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with full hookups (electric, water, and sewer) 151 # of ”
-  - map.date_how = "web page, no date in the link" · “link “Export Map Data””
-  - map.url = "https://www.ncparks.gov/tablefield/export/paragraph/3845/fi · “link “Export Map Data” -> https://www.ncparks.gov/tablefield/export/paragraph/3845/field_map_data/en/0”
-  - reservable = "mixed" · “h walk-ups, you can make reserve the site with park staff. These sites are available on a first-come, first-served basis. Not all campsites ”
-  - rules.pets = "Pets are allowed at most campsites, except in cabins" · “hen you check in for your campsite and for the phone number to call in case of emergency. Pets are allowed at most campsites, except in cabi”
-- **Ivy Bluffs paddle-in campsites** (US-2750:hq1, state, status ok, 13 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/pilot-mountain-state-park/camping)
-  - booking.how = "online: northcarolinastateparks.reserveamerica.com" · “link “Webstore””
-  - booking.url = "https://northcarolinastateparks.reserveamerica.com/posProdu · “link “Webstore” -> https://northcarolinastateparks.reserveamerica.com/posProducts.do?contractCode=NC&amp;tti=Shop”
-  - drinking_water = false · “ations are required to use these campsites . These sites are open year-round. There is no potable water at these campsites. You must bring y”
-  - fees = "$15 to $145 | $15 fee to cancel a camping reservation | $3  · “oup; Equestrian; Paddle-in; or Accessible. Camping Fees Camping fees per night range from $15 to $145. Camping reservations made online or a”
-  - hookups.electric = true · “rks in 2021 $7.1 million in completed Connect NC camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with fu”
-  - hookups.sewer = true · “camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with full hookups (electric, water, and sewer) 151 # of ”
-  - hookups.water = true · “camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with full hookups (electric, water, and sewer) 151 # of ”
-  - map.date_how = "web page, no date in the link" · “link “Campground Map (PDF)””
-  - map.url = "https://www.ncparks.gov/maps/pilot-mountain-state-park-camp · “link “Campground Map (PDF)” -> https://www.ncparks.gov/maps/pilot-mountain-state-park-campground-map/open”
-  - reservable = true · “-in campsites are located at the Ivy Bluffs access on the south bank of the Yadkin River. Reservations are required to use these campsites .”
-- **Merchants Millpond State Park** (intake-US-2727, agency (outside research camping-us-oct31), status ok, 11 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/dismal-swamp-state-park)
-  - booking.how = "online: northcarolinastateparks.reserveamerica.com" · “link “Webstore””
-  - booking.url = "https://northcarolinastateparks.reserveamerica.com/posProdu · “link “Webstore” -> https://northcarolinastateparks.reserveamerica.com/posProducts.do?contractCode=NC&amp;tti=Shop”
-  - fees = "$15 to $145 | $15 fee to cancel a camping reservation | $3  · “oup; Equestrian; Paddle-in; or Accessible. Camping Fees Camping fees per night range from $15 to $145. Camping reservations made online or a”
-  - hookups.electric = true · “rks in 2021 $7.1 million in completed Connect NC camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with fu”
-  - hookups.sewer = true · “camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with full hookups (electric, water, and sewer) 151 # of ”
-  - hookups.water = true · “camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with full hookups (electric, water, and sewer) 151 # of ”
-  - map.date_how = "web page, no date in the link" · “link “SVG Park map (PDF)””
-  - map.url = "https://www.ncparks.gov/maps/dismal-swamp-state-park-map/op · “link “SVG Park map (PDF)” -> https://www.ncparks.gov/maps/dismal-swamp-state-park-map/open”
-  - reservable = "mixed" · “h walk-ups, you can make reserve the site with park staff. These sites are available on a first-come, first-served basis. Not all campsites ”
-  - rules.pets = "Pets are allowed at the park, except they are not permitted · “rentals. Fees are also charged certain event permits and facility reservations. SVG Pets Pets are allowed at the park, except they are not p”
-- **Fanny’s Ford campground** (US-2729:hq0, state, status ok, 14 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/eno-river-state-park/camping-eno-river)
+- **Buckquarter Creek group campsite** (US-2729:hq3, state, status ok, 14 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/eno-river-state-park/camping-eno-river)
   - booking.how = "online: northcarolinastateparks.reserveamerica.com" · “link “Webstore””
   - booking.url = "https://northcarolinastateparks.reserveamerica.com/posProdu · “link “Webstore” -> https://northcarolinastateparks.reserveamerica.com/posProducts.do?contractCode=NC&amp;tti=Shop”
   - drinking_water = false · “each campground. All sites require hiking in and supplies must be carried in. There is no potable water source at the sites. Book now Group ”
@@ -390,48 +346,29 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.water = true · “camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with full hookups (electric, water, and sewer) 151 # of ”
   - map.date_how = "web page, no date in the link" · “link “Fanny's Ford campground map (PDF)””
   - map.url = "https://www.ncparks.gov/maps/eno-river-state-park-fannys-fo · “link “Fanny's Ford campground map (PDF)” -> https://www.ncparks.gov/maps/eno-river-state-park-fannys-ford-campground-map/open”
-- **Family Campground (two loops)** (US-2735:hq0, state, status ok, 12 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/hanging-rock-state-park/camping-hanging-rock)
-  - booking.how = "online: northcarolinastateparks.reserveamerica.com" · “link “Webstore””
-  - booking.url = "https://northcarolinastateparks.reserveamerica.com/posProdu · “link “Webstore” -> https://northcarolinastateparks.reserveamerica.com/posProducts.do?contractCode=NC&amp;tti=Shop”
-  - drinking_water = true · “a picnic table. Camp amenities include a drinking station where campers can obtain fresh drinking water as well as restrooms with hot shower”
-  - features = "fire ring" · “ell as a full kitchen. Outside each cabin, there is a picnic table, charcoal grill, and a fire ring. Cabin numbers 1 and 9 are accessible fo”
-  - hookups.electric = true · “their own pillows and sleeping bags or linens, as these are not provided. Each cabin has electrical outlets and a heating and air-conditioni”
-  - map.date_how = "web page, no date in the link" · “link “Park map and hiking trails (PDF)””
-  - map.url = "https://www.ncparks.gov/maps/hanging-rock-state-park-map/op · “link “Park map and hiking trails (PDF)” -> https://www.ncparks.gov/maps/hanging-rock-state-park-map/open”
-  - reservable = "mixed" · “ed ahead of time, and any sites that have not previously been reserved are available on a first-come, first-served basis. Each campsite incl”
-  - restrooms = "yes (kind not stated)" · “ded. Each cabin has electrical outlets and a heating and air-conditioning unit. There are restrooms inside the cabin, as well as a full kitc”
-  - rules.pets = "pet-friendly, but pets must be kept on a leash at al" · “can obtain fresh drinking water as well as restrooms with hot showers. The campground is pet-friendly, but pets must be kept on a leash at a”
-- **Family tent/trailer campground** (US-2750:hq0, state, status ok, 11 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/pilot-mountain-state-park/camping)
+- **Hammocks Beach State Park** (intake-US-2730, agency (outside research camping-us-oct31), status ok, 11 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/fort-macon-state-park)
   - booking.how = "online: northcarolinastateparks.reserveamerica.com" · “link “Webstore””
   - booking.url = "https://northcarolinastateparks.reserveamerica.com/posProdu · “link “Webstore” -> https://northcarolinastateparks.reserveamerica.com/posProducts.do?contractCode=NC&amp;tti=Shop”
   - fees = "$15 to $145 | $15 fee to cancel a camping reservation | $3  · “oup; Equestrian; Paddle-in; or Accessible. Camping Fees Camping fees per night range from $15 to $145. Camping reservations made online or a”
   - hookups.electric = true · “rks in 2021 $7.1 million in completed Connect NC camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with fu”
   - hookups.sewer = true · “camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with full hookups (electric, water, and sewer) 151 # of ”
   - hookups.water = true · “camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with full hookups (electric, water, and sewer) 151 # of ”
-  - map.date_how = "web page, no date in the link" · “link “Campground Map (PDF)””
-  - map.url = "https://www.ncparks.gov/maps/pilot-mountain-state-park-camp · “link “Campground Map (PDF)” -> https://www.ncparks.gov/maps/pilot-mountain-state-park-campground-map/open”
+  - map.date_how = "web page, no date in the link" · “link “SVG Park map (PDF)””
+  - map.url = "https://www.ncparks.gov/maps/fort-macon-state-park-map/open · “link “SVG Park map (PDF)” -> https://www.ncparks.gov/maps/fort-macon-state-park-map/open”
   - reservable = "mixed" · “h walk-ups, you can make reserve the site with park staff. These sites are available on a first-come, first-served basis. Not all campsites ”
-  - rules.pets = "Pets are allowed at most campsites, except in cabins" · “hen you check in for your campsite and for the phone number to call in case of emergency. Pets are allowed at most campsites, except in cabi”
-- **Primitive tent campground** (US-2731:hq1, state, status ok, 15 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/goose-creek-state-park/camping-goose-creek)
+  - rules.pets = "Pets are allowed at the park, except they are not permitted · “s Fort Macon State Park for day use. Fees are charged for certain event permits. SVG Pets Pets are allowed at the park, except they are not ”
+- **Crosswinds Campground; Parkers Creek Campground; Poplar Point Campground; New Hope Overlook primitive campsites; Parkers** (US-3844:hq0, state, status ok, 14 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/jordan-lake-state-recreation-area/camping)
   - booking.how = "online: northcarolinastateparks.reserveamerica.com" · “link “Webstore””
   - booking.url = "https://northcarolinastateparks.reserveamerica.com/posProdu · “link “Webstore” -> https://northcarolinastateparks.reserveamerica.com/posProducts.do?contractCode=NC&amp;tti=Shop”
-  - drinking_water = "some" · “ook. Parking for two vehicles is located at each site. One site is wheelchair accessible. Water spigots and composting toilets are located n”
-  - features = "fire ring with grill, a picnic table and a lantern hook" · “ric, water and sewer). One site is wheelchair accessible. Each campsite has a tent pad, a fire ring with grill, a picnic table and a lantern”
-  - hookups.electric = true · “d located between Goose and Flatty creeks. The RV camping area has 22 sites that all have full hook-ups (electric, water and sewer). One sit”
-  - hookups.sewer = true · “d located between Goose and Flatty creeks. The RV camping area has 22 sites that all have full hook-ups (electric, water and sewer). One sit”
-  - hookups.water = true · “d located between Goose and Flatty creeks. The RV camping area has 22 sites that all have full hook-ups (electric, water and sewer). One sit”
-  - map.date_how = "web page, no date in the link" · “link “Campground map (PDF)””
-  - map.url = "https://www.ncparks.gov/maps/goose-creek-state-park-campgro · “link “Campground map (PDF)” -> https://www.ncparks.gov/maps/goose-creek-state-park-campground-map/open”
-  - reservable = true · “e official website. Search Camping at Goose Creek SVG Make a Camping Reservation Find and book a campsite online at ncparks.gov/reservations”
-- **Lumber River State Park** (US-2742, state, status ok, 7 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/lumber-river-state-park/camping-lumber-river)
-  - booking.how = "online: northcarolinastateparks.reserveamerica.com" · “link “Webstore””
-  - booking.url = "https://northcarolinastateparks.reserveamerica.com/posProdu · “link “Webstore” -> https://northcarolinastateparks.reserveamerica.com/posProducts.do?contractCode=NC&amp;tti=Shop”
-  - map.date_how = "web page, no date in the link" · “link “Park map (PDF)””
-  - map.url = "https://www.ncparks.gov/maps/lumber-river-state-park-map/op · “link “Park map (PDF)” -> https://www.ncparks.gov/maps/lumber-river-state-park-map/open”
-  - reservable = true · “official website. Search Camping at Lumber River SVG Make a Camping Reservation Find and book a campsite online at ncparks.gov/reservations ”
-  - sites.group = 1 · “Camping Lumber River has primitive campsites at two accesses: Chalk Banks: 15 sites total 1 group site Bathroom CB3 is accessible for those ”
-  - sites.total = 15 · “ping Primitive Camping Lumber River has primitive campsites at two accesses: Chalk Banks: 15 sites total 1 group site Bathroom CB3 is access”
-- **Backcountry campsites** (US-2732:hq2, state, status ok, 15 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/gorges-state-park/camping-gorges)
+  - drinking_water = true · “rom the parking lot. Each site has a picnic table, grill, and lantern holder. Toilets and drinking water are provided nearby. These sites ca”
+  - dump_station = true · “es a picnic table, grill, and lantern holder. Showers, restrooms, trash containers, and a dump station are conveniently located. Parkers Cre”
+  - hookups.electric = true · “offers 182 campsites for recreational vehicles, tent and trailer camping; 134 sites have electric and water hookups. Each site includes a pi”
+  - hookups.water = true · “offers 182 campsites for recreational vehicles, tent and trailer camping; 134 sites have electric and water hookups. Each site includes a pi”
+  - map.date_how = "web page, no date in the link" · “link “Crosswinds campground map (PDF)””
+  - map.url = "https://www.ncparks.gov/maps/jordan-lake-state-recreation-a · “link “Crosswinds campground map (PDF)” -> https://www.ncparks.gov/maps/jordan-lake-state-recreation-area-crosswinds-campground-map/open”
+  - reservable = "mixed" · “arkers Creek and Loop E at Poplar Point are all walk-up campsites that are available on a first-come, first-served basis. These sites are no”
+  - restrooms = "yes (kind not stated)" · “Jordan Lake: Camping | NC State Parks Skip to main content Parkers Creek Loop 1 comfort station closed. Parkers Creek Loop 1 comfort station”
+- **Camper cabins** (US-2732:hq1, state, status ok, 15 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/gorges-state-park/camping-gorges)
   - booking.how = "online: northcarolinastateparks.reserveamerica.com" · “link “Webstore””
   - booking.url = "https://northcarolinastateparks.reserveamerica.com/posProdu · “link “Webstore” -> https://northcarolinastateparks.reserveamerica.com/posProducts.do?contractCode=NC&amp;tti=Shop”
   - drinking_water = "some" · “und has a bathhouse with toilets and hot showers available to all campers. There are also potable water spigots around the campground for ca”
@@ -442,47 +379,92 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.water = true · “camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with full hookups (electric, water, and sewer) 151 # of ”
   - map.date_how = "web page, no date in the link" · “link “Park Map (PDF)””
   - map.url = "https://www.ncparks.gov/maps/gorges-state-park-map/open" · “link “Park Map (PDF)” -> https://www.ncparks.gov/maps/gorges-state-park-map/open”
-- **Lake James State Park** (intake-US-2724, agency (outside research camping-us-oct31), status ok, 11 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/chimney-rock-state-park)
+- **Main campground** (US-2738:hq0, state, status ok, 14 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/jones-lake-state-park/camping-jones-lake)
+  - booking.how = "online: northcarolinastateparks.reserveamerica.com" · “link “Webstore””
+  - booking.url = "https://northcarolinastateparks.reserveamerica.com/posProdu · “link “Webstore” -> https://northcarolinastateparks.reserveamerica.com/posProducts.do?contractCode=NC&amp;tti=Shop”
+  - drinking_water = true · “d campsites at Jones Lake State Park is equipped with a picnic table and fire ring/grill. Drinking water and a bathhouse are located nearby.”
+  - features = "fire ring/grill" · “h of the 20 wooded campsites at Jones Lake State Park is equipped with a picnic table and fire ring/grill. Drinking water and a bathhouse ar”
+  - hookups.electric = true · “ring/grill. Drinking water and a bathhouse are located nearby. Six campsites have full RV hookups for electric, water, and sewer. Reservatio”
+  - hookups.sewer = true · “bathhouse are located nearby. Six campsites have full RV hookups for electric, water, and sewer. Reservations are suggested, but campsites a”
+  - hookups.water = true · “Drinking water and a bathhouse are located nearby. Six campsites have full RV hookups for electric, water, and sewer. Reservations are sugge”
+  - map.date_how = "web page, no date in the link" · “link “Park map (PDF)””
+  - map.url = "https://www.ncparks.gov/maps/jones-lake-state-park-map/open · “link “Park map (PDF)” -> https://www.ncparks.gov/maps/jones-lake-state-park-map/open”
+  - reservable = "mixed" · “electric, water, and sewer. Reservations are suggested, but campsites are available on a first-come, first-served basis if not reserved. Boo”
+- **Family tent/trailer campground; backpacking sites; paddle-in sites; group tent sites** (US-2745:hq0, state, status ok, 11 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/merchants-millpond-state-park)
   - booking.how = "online: northcarolinastateparks.reserveamerica.com" · “link “Webstore””
   - booking.url = "https://northcarolinastateparks.reserveamerica.com/posProdu · “link “Webstore” -> https://northcarolinastateparks.reserveamerica.com/posProducts.do?contractCode=NC&amp;tti=Shop”
   - fees = "$15 to $145 | $15 fee to cancel a camping reservation | $3  · “oup; Equestrian; Paddle-in; or Accessible. Camping Fees Camping fees per night range from $15 to $145. Camping reservations made online or a”
   - hookups.electric = true · “rks in 2021 $7.1 million in completed Connect NC camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with fu”
-  - hookups.sewer = true · “camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with full hookups (electric, water, and sewer) 151 # of ”
-  - hookups.water = true · “camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with full hookups (electric, water, and sewer) 151 # of ”
-  - map.date_how = "web page, no date in the link" · “link “SVG Park Map (PDF)””
-  - map.url = "https://www.ncparks.gov/maps/chimney-rock-state-park-map/op · “link “SVG Park Map (PDF)” -> https://www.ncparks.gov/maps/chimney-rock-state-park-map/open”
-  - reservable = "mixed" · “h walk-ups, you can make reserve the site with park staff. These sites are available on a first-come, first-served basis. Not all campsites ”
-  - rules.pets = "Pets are allowed at the park, except they are not permitted · “re charged for group climbing, certain event permits, and facility reservations. SVG Pets Pets are allowed at the park, except they are not ”
-- **Jacob Fork campground (family tent/RV); Jacob Fork backpacking campsites; Jacob Fork equestrian campground** (US-2753:hq0, state, status ok, 11 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/south-mountains-state-park)
-  - booking.how = "online: northcarolinastateparks.reserveamerica.com" · “link “Webstore””
-  - booking.url = "https://northcarolinastateparks.reserveamerica.com/posProdu · “link “Webstore” -> https://northcarolinastateparks.reserveamerica.com/posProducts.do?contractCode=NC&amp;tti=Shop”
-  - fees = "$15 to $145 | $15 fee to cancel a camping reservation | $3  · “oup; Equestrian; Paddle-in; or Accessible. Camping Fees Camping fees per night range from $15 to $145. Camping reservations made online or a”
-  - hookups.electric = "some" · “g Events Camping Tent sites (including backpacking sites) Trailer and RV sites (some with electric hookups) Equestrian campsites Showers Fir”
   - hookups.sewer = true · “camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with full hookups (electric, water, and sewer) 151 # of ”
   - hookups.water = true · “camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with full hookups (electric, water, and sewer) 151 # of ”
   - map.date_how = "web page, no date in the link" · “link “Park map (PDF)””
-  - map.url = "https://www.ncparks.gov/maps/south-mountains-state-park-map · “link “Park map (PDF)” -> https://www.ncparks.gov/maps/south-mountains-state-park-map-trail-closures/open”
+  - map.url = "https://www.ncparks.gov/maps/merchants-millpond-state-park- · “link “Park map (PDF)” -> https://www.ncparks.gov/maps/merchants-millpond-state-park-map/open”
   - reservable = "mixed" · “h walk-ups, you can make reserve the site with park staff. These sites are available on a first-come, first-served basis. Not all campsites ”
-  - rules.pets = "Pets are allowed at the park and at campsites" · “Fees are charged for camping, certain event permits, and facility reservations. SVG Pets Pets are allowed at the park and at campsites. They”
-- **Paddy's Creek drive-in tent campground; Catawba River walk-in/backpack campground; Long Arm Peninsula paddle-in campgrou** (US-2739:hq0, state, status ok, 11 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/lake-james-state-park/camping)
+  - rules.pets = "Pets are allowed at the park and at campsites" · “are also charged for camping, certain event permits, and facility reservations. SVG Pets Pets are allowed at the park and at campsites. They”
+- **Group tent campground** (US-2731:hq2, state, status ok, 15 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/goose-creek-state-park/camping-goose-creek)
+  - booking.how = "online: northcarolinastateparks.reserveamerica.com" · “link “Webstore””
+  - booking.url = "https://northcarolinastateparks.reserveamerica.com/posProdu · “link “Webstore” -> https://northcarolinastateparks.reserveamerica.com/posProducts.do?contractCode=NC&amp;tti=Shop”
+  - drinking_water = "some" · “ook. Parking for two vehicles is located at each site. One site is wheelchair accessible. Water spigots and composting toilets are located n”
+  - features = "fire ring with grill, a picnic table and a lantern hook" · “ric, water and sewer). One site is wheelchair accessible. Each campsite has a tent pad, a fire ring with grill, a picnic table and a lantern”
+  - hookups.electric = true · “d located between Goose and Flatty creeks. The RV camping area has 22 sites that all have full hook-ups (electric, water and sewer). One sit”
+  - hookups.sewer = true · “d located between Goose and Flatty creeks. The RV camping area has 22 sites that all have full hook-ups (electric, water and sewer). One sit”
+  - hookups.water = true · “d located between Goose and Flatty creeks. The RV camping area has 22 sites that all have full hook-ups (electric, water and sewer). One sit”
+  - map.date_how = "web page, no date in the link" · “link “Campground map (PDF)””
+  - map.url = "https://www.ncparks.gov/maps/goose-creek-state-park-campgro · “link “Campground map (PDF)” -> https://www.ncparks.gov/maps/goose-creek-state-park-campground-map/open”
+  - reservable = true · “e official website. Search Camping at Goose Creek SVG Make a Camping Reservation Find and book a campsite online at ncparks.gov/reservations”
+- **Kimball Point campground (Areas 1–2)** (US-3845:hq3, state, status ok, 13 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/kerr-lake-state-recreation-area/camping-kerr-lake)
   - booking.how = "online: northcarolinastateparks.reserveamerica.com" · “link “Webstore””
   - booking.url = "https://northcarolinastateparks.reserveamerica.com/posProdu · “link “Webstore” -> https://northcarolinastateparks.reserveamerica.com/posProducts.do?contractCode=NC&amp;tti=Shop”
   - fees = "$15 to $145 | $15 fee to cancel a camping reservation | $3  · “oup; Equestrian; Paddle-in; or Accessible. Camping Fees Camping fees per night range from $15 to $145. Camping reservations made online or a”
-  - hookups.electric = true · “rks in 2021 $7.1 million in completed Connect NC camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with fu”
+  - hookups.electric = "some" · “ocksville County Line Henderson Hibernia* JC Cooper* Kimball Point Nutbush* Bullocksville Electric/RV Hookup and Non-electric 59 sites total”
   - hookups.sewer = true · “camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with full hookups (electric, water, and sewer) 151 # of ”
   - hookups.water = true · “camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with full hookups (electric, water, and sewer) 151 # of ”
-  - map.date_how = "web page, no date in the link" · “link “Paddy's Creek Campground Map (PDF)””
-  - map.url = "https://www.ncparks.gov/maps/lake-james-state-park-paddys-c · “link “Paddy's Creek Campground Map (PDF)” -> https://www.ncparks.gov/maps/lake-james-state-park-paddys-creek-campground-map/open”
-  - reservable = "mixed" · “h walk-ups, you can make reserve the site with park staff. These sites are available on a first-come, first-served basis. Not all campsites ”
-  - rules.pets = "Pets are allowed at most campsites, except in cabins" · “hen you check in for your campsite and for the phone number to call in case of emergency. Pets are allowed at most campsites, except in cabi”
+  - map.date_how = "web page, no date in the link" · “link “Park Map (PDF)””
+  - map.url = "https://www.ncparks.gov/maps/kerr-lake-state-recreation-are · “link “Park Map (PDF)” -> https://www.ncparks.gov/maps/kerr-lake-state-recreation-area-map/open”
+  - reservable = true · “the official website. Search Camping at Kerr Lake SVG Make a Camping Reservation Find and book a campsite online at ncparks.gov/kela/reserva”
+  - restrooms = "yes (kind not stated)" · “a side. Kerr Lake SRA will have ongoing extensive construction to improve campgrounds and restrooms. Beginning August 1, 2026, JC Cooper, Nu”
+- **Primitive group camping areas (4); yurt campsite (1)** (US-2741:hq0, state, status ok, 12 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/lake-waccamaw-state-park/camping-lake-waccamaw)
+  - booking.how = "online: northcarolinastateparks.reserveamerica.com" · “link “Webstore””
+  - booking.url = "https://northcarolinastateparks.reserveamerica.com/posProdu · “link “Webstore” -> https://northcarolinastateparks.reserveamerica.com/posProducts.do?contractCode=NC&amp;tti=Shop”
+  - fees = "$15 to $145 | $15 fee to cancel a camping reservation | $3  · “oup; Equestrian; Paddle-in; or Accessible. Camping Fees Camping fees per night range from $15 to $145. Camping reservations made online or a”
+  - hookups.electric = false · “ocated nearby. Please be aware that these are hike-in campsites that do not have water or electricity onsite. All campers must check-in at t”
+  - hookups.sewer = true · “camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with full hookups (electric, water, and sewer) 151 # of ”
+  - hookups.water = true · “camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with full hookups (electric, water, and sewer) 151 # of ”
+  - map.date_how = "web page, no date in the link" · “link “Park Map (PDF)””
+  - map.url = "https://www.ncparks.gov/maps/lake-waccamaw-state-park-map/o · “link “Park Map (PDF)” -> https://www.ncparks.gov/maps/lake-waccamaw-state-park-map/open”
+  - reservable = true · “official website. Search Camping at Lake Waccamaw SVG Make a Camping Reservation Find and book a campsite online at ncparks.gov/reservations”
+  - restrooms = "vault" · “manent tent. Picnic tables, fire circles and charcoal grills are located in the sites and pit toilets are located nearby. Please be aware th”
+- **Crosswinds Campground; Parkers Creek Campground; Poplar Point Campground; New Hope Overlook primitive campsites; Parkers** (US-3844:hq2, state, status ok, 14 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/jordan-lake-state-recreation-area/camping)
+  - booking.how = "online: northcarolinastateparks.reserveamerica.com" · “link “Webstore””
+  - booking.url = "https://northcarolinastateparks.reserveamerica.com/posProdu · “link “Webstore” -> https://northcarolinastateparks.reserveamerica.com/posProducts.do?contractCode=NC&amp;tti=Shop”
+  - drinking_water = true · “rom the parking lot. Each site has a picnic table, grill, and lantern holder. Toilets and drinking water are provided nearby. These sites ca”
+  - dump_station = true · “es a picnic table, grill, and lantern holder. Showers, restrooms, trash containers, and a dump station are conveniently located. Parkers Cre”
+  - hookups.electric = true · “offers 182 campsites for recreational vehicles, tent and trailer camping; 134 sites have electric and water hookups. Each site includes a pi”
+  - hookups.water = true · “offers 182 campsites for recreational vehicles, tent and trailer camping; 134 sites have electric and water hookups. Each site includes a pi”
+  - map.date_how = "web page, no date in the link" · “link “Crosswinds campground map (PDF)””
+  - map.url = "https://www.ncparks.gov/maps/jordan-lake-state-recreation-a · “link “Crosswinds campground map (PDF)” -> https://www.ncparks.gov/maps/jordan-lake-state-recreation-area-crosswinds-campground-map/open”
+  - reservable = "mixed" · “arkers Creek and Loop E at Poplar Point are all walk-up campsites that are available on a first-come, first-served basis. These sites are no”
+  - restrooms = "yes (kind not stated)" · “Jordan Lake: Camping | NC State Parks Skip to main content Parkers Creek Loop 1 comfort station closed. Parkers Creek Loop 1 comfort station”
+- **J.C. Cooper campground (Areas 1–3 and group site)** (US-3845:hq2, state, status ok, 13 facts) · [www.ncparks.gov](https://www.ncparks.gov/state-parks/kerr-lake-state-recreation-area/camping-kerr-lake)
+  - booking.how = "online: northcarolinastateparks.reserveamerica.com" · “link “Webstore””
+  - booking.url = "https://northcarolinastateparks.reserveamerica.com/posProdu · “link “Webstore” -> https://northcarolinastateparks.reserveamerica.com/posProducts.do?contractCode=NC&amp;tti=Shop”
+  - fees = "$15 to $145 | $15 fee to cancel a camping reservation | $3  · “oup; Equestrian; Paddle-in; or Accessible. Camping Fees Camping fees per night range from $15 to $145. Camping reservations made online or a”
+  - hookups.electric = "some" · “ocksville County Line Henderson Hibernia* JC Cooper* Kimball Point Nutbush* Bullocksville Electric/RV Hookup and Non-electric 59 sites total”
+  - hookups.sewer = true · “camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with full hookups (electric, water, and sewer) 151 # of ”
+  - hookups.water = true · “camping projects 481 # of campsites with electric hookups for RVs 59 # of campsites with full hookups (electric, water, and sewer) 151 # of ”
+  - map.date_how = "web page, no date in the link" · “link “Park Map (PDF)””
+  - map.url = "https://www.ncparks.gov/maps/kerr-lake-state-recreation-are · “link “Park Map (PDF)” -> https://www.ncparks.gov/maps/kerr-lake-state-recreation-area-map/open”
+  - reservable = true · “the official website. Search Camping at Kerr Lake SVG Make a Camping Reservation Find and book a campsite online at ncparks.gov/kela/reserva”
+  - restrooms = "yes (kind not stated)" · “a side. Kerr Lake SRA will have ongoing extensive construction to improve campgrounds and restrooms. Beginning August 1, 2026, JC Cooper, Nu”
+- **Jordan Lake Educational State Forest** (US-4857, state, status ok, 5 facts) · [www.ncparks.gov](https://www.ncparks.gov/)
+  - booking.how = "online: northcarolinastateparks.reserveamerica.com" · “link “Webstore””
+  - booking.url = "https://northcarolinastateparks.reserveamerica.com/posProdu · “link “Webstore” -> https://northcarolinastateparks.reserveamerica.com/posProducts.do?contractCode=NC&amp;tti=Shop”
+  - reservable = true · “ttps:// means you’ve safely connected to the official website. Home Search Popular Topics Reserve a Campsite Host an Event at the Park Buy a”
+  - rules.pets = "Pets are welcome at all North Carolina state parks and camp · “e charged for camping, facility reservations, swim passes, rentals, and permits. SVG Pets Pets are welcome at all North Carolina state parks”
+  - sites.total = 100 · “– its diverse arts and culture, rich history, and spectacular natural areas. At more than 100 sites across the state, the department enhance”
 
 ## US-VA: 12 random samples (records with facts; seed = the date)
 
-- **Camp Roosevelt Recreation Area; Camp Run Campground; Cane Patch Campground; Cave Mountain Lake Recreation Area; Shaws Fork Campground; Collins Cove Group Horse Campground; Comers Rock Recreation Area;** (intake-US-4526, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/gwj/recarea/?recid=73633)
-  - booking.url = "https://www.fs.usda.gov/recarea/gwj/recarea/?recid=73633" · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
-  - map.date_how = "web page, no date in the link" · “link “National Incident Wildfire Map””
-  - map.url = "https://inciweb.wildfire.gov/" · “link “National Incident Wildfire Map” -> https://inciweb.wildfire.gov/”
-  - season = "year-round" · “Camp Lake. Sections of… Bark Camp Recreation Area Site Open Bark Camp Recreation area is year-round day use area with a seasonal campground ”
 - **Staunton River SP (20 min)** (intake-US-1322, agency (outside research camping-us-oct31), status ok, 20 facts) · [www.dcr.virginia.gov](https://www.dcr.virginia.gov/state-parks/staunton-river-battlefield)
   - booking.how = "online: reservevaparks.com" · “link “Reserve Online””
   - booking.url = "https://reservevaparks.com/web/" · “link “Reserve Online” -> https://reservevaparks.com/web/”
@@ -494,6 +476,11 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.electric = "some" · “itor Center opened in 1995 thanks to a partnership between Virginia State Parks, Virginia Power, Old Dominion Electric Cooperative and the H”
   - hookups.sewer = true · “ommodate recreational vehicles and campers. Kiptopeke and Hungry Mother campgrounds offer sewer hook-ups. Primitive campgrounds are open yea”
   - hookups.water = "some" · “0 campsites. Site sizes, configurations and amenities vary. Some parks provide sites with electric and water hookups, which tend to be large”
+- **White Rocks Campground; Boley Field Group Campground; BOLEY FIELD GROUP CAMPGROUND** (intake-US-9905, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/gwj/recarea/?recid=74023)
+  - booking.url = "https://www.fs.usda.gov/recarea/gwj/recarea/?recid=74023" · “booking link from our outside research (camping, nearby only) row (official system www.fs.usda.gov)”
+  - map.date_how = "web page, no date in the link" · “link “National Incident Wildfire Map””
+  - map.url = "https://inciweb.wildfire.gov/" · “link “National Incident Wildfire Map” -> https://inciweb.wildfire.gov/”
+  - season = "year-round" · “Camp Lake. Sections of… Bark Camp Recreation Area Site Open Bark Camp Recreation area is year-round day use area with a seasonal campground ”
 - **New River Trail SP primitive camping (~0.2 mi)** (intake-US-1317, agency (outside research camping-us-oct31), status ok, 18 facts) · [www.dcr.virginia.gov](https://www.dcr.virginia.gov/state-parks/shot-tower)
   - booking.how = "online: reservevaparks.com" · “link “Reserve Online””
   - booking.url = "https://reservevaparks.com/web/" · “link “Reserve Online” -> https://reservevaparks.com/web/”
@@ -505,18 +492,18 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.electric = "some" · “0 campsites. Site sizes, configurations and amenities vary. Some parks provide sites with electric and water hookups, which tend to be large”
   - hookups.sewer = true · “ommodate recreational vehicles and campers. Kiptopeke and Hungry Mother campgrounds offer sewer hook-ups. Primitive campgrounds are open yea”
   - hookups.water = "some" · “0 campsites. Site sizes, configurations and amenities vary. Some parks provide sites with electric and water hookups, which tend to be large”
-- **White Rocks Campground; Boley Field Group Campground; BOLEY FIELD GROUP CAMPGROUND** (intake-US-9905, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/gwj/recarea/?recid=74023)
+- **Camp Roosevelt Recreation Area; Camp Run Campground; Cane Patch Campground; Cave Mountain Lake Recreation Area; Shaws Fork Campground; Collins Cove Group Horse Campground; Comers Rock Recreation Area;** (intake-US-4526, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/gwj/recarea/?recid=73633)
+  - booking.url = "https://www.fs.usda.gov/recarea/gwj/recarea/?recid=73633" · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
+  - map.date_how = "web page, no date in the link" · “link “National Incident Wildfire Map””
+  - map.url = "https://inciweb.wildfire.gov/" · “link “National Incident Wildfire Map” -> https://inciweb.wildfire.gov/”
+  - season = "year-round" · “Camp Lake. Sections of… Bark Camp Recreation Area Site Open Bark Camp Recreation area is year-round day use area with a seasonal campground ”
+- **White Rocks Campground** (intake-US-9949, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/gwj/recarea/?recid=74023)
   - booking.url = "https://www.fs.usda.gov/recarea/gwj/recarea/?recid=74023" · “booking link from our outside research (camping, nearby only) row (official system www.fs.usda.gov)”
   - map.date_how = "web page, no date in the link" · “link “National Incident Wildfire Map””
   - map.url = "https://inciweb.wildfire.gov/" · “link “National Incident Wildfire Map” -> https://inciweb.wildfire.gov/”
   - season = "year-round" · “Camp Lake. Sections of… Bark Camp Recreation Area Site Open Bark Camp Recreation area is year-round day use area with a seasonal campground ”
 - **Beartree Recreation Area; BEARTREE; Grindstone Recreation Area; GRINDSTONE** (intake-US-9923, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/gwj/recarea/?recid=73579)
   - booking.url = "https://www.fs.usda.gov/recarea/gwj/recarea/?recid=73579" · “booking link from our outside research (camping, nearby only) row (official system www.fs.usda.gov)”
-  - map.date_how = "web page, no date in the link" · “link “National Incident Wildfire Map””
-  - map.url = "https://inciweb.wildfire.gov/" · “link “National Incident Wildfire Map” -> https://inciweb.wildfire.gov/”
-  - season = "year-round" · “Camp Lake. Sections of… Bark Camp Recreation Area Site Open Bark Camp Recreation area is year-round day use area with a seasonal campground ”
-- **White Rocks Campground** (intake-US-9949, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/gwj/recarea/?recid=74023)
-  - booking.url = "https://www.fs.usda.gov/recarea/gwj/recarea/?recid=74023" · “booking link from our outside research (camping, nearby only) row (official system www.fs.usda.gov)”
   - map.date_how = "web page, no date in the link" · “link “National Incident Wildfire Map””
   - map.url = "https://inciweb.wildfire.gov/" · “link “National Incident Wildfire Map” -> https://inciweb.wildfire.gov/”
   - season = "year-round" · “Camp Lake. Sections of… Bark Camp Recreation Area Site Open Bark Camp Recreation area is year-round day use area with a seasonal campground ”
@@ -536,7 +523,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 
 ## US-GA: 12 random samples (records with facts; seed = the date)
 
-- **Campground - name not in layer** (US-2191:p2-1, state, status ok, 7 facts) · [gastateparks.org](https://gastateparks.org/)
+- **Campground #1** (US-2177:p2-0, state, status ok, 7 facts) · [gastateparks.org](https://gastateparks.org/)
   - booking.how = "online: gastateparks.org" · “link “Reservations””
   - booking.url = "https://gastateparks.org/Reservations" · “link “Reservations” -> https://gastateparks.org/Reservations”
   - features = "fire pits and grills" · “ver to spend a few days exploring the park’s trails and river. All have screened porches, fire pits and grills. Georgia's Great Places Disco”
@@ -544,57 +531,14 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - map.date_how = "web page, no date in the link" · “link “Find a Park””
   - map.url = "https://gastateparks.org/Map" · “link “Find a Park” -> https://gastateparks.org/Map”
   - restrooms = "yes (kind not stated)" · “ate Park Campsites have officially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing ”
-- **1 WRD campground point(s) on DIXON MEMORIAL WMA** (intake-US-3746, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [georgiawildlife.com](https://georgiawildlife.com/dixon-memorial-wma)
-  - booking.url = "https://georgiawildlife.com/dixon-memorial-wma" · “booking link from our outside research (camping, in the park) row (official system georgiawildlife.com)”
-  - map.date_how = "web page, no date in the link" · “link “Map of All Properties””
-  - map.url = "https://georgiawildlife.com/locations/wrd" · “link “Map of All Properties” -> https://georgiawildlife.com/locations/wrd”
-  - phone = "(912) 262-3173" · “g INTERACTIVE MAP REGULATIONS Phone Numbers Region 6 Office 912-262-3173 Fees & Passes Land Access Hunting License Fishing License,”
-- **Pioneer Campground (group)** (intake-US-2193, agency (outside research camping-us-oct31), status ok, 10 facts) · [gastateparks.org](https://gastateparks.org/PanolaMountain)
+- **Campground - name not in layer** (US-2173:p2-0, state, status ok, 7 facts) · [gastateparks.org](https://gastateparks.org/)
   - booking.how = "online: gastateparks.org" · “link “Reservations””
   - booking.url = "https://gastateparks.org/Reservations" · “link “Reservations” -> https://gastateparks.org/Reservations”
   - features = "fire pits and grills" · “ver to spend a few days exploring the park’s trails and river. All have screened porches, fire pits and grills. Georgia's Great Places Disco”
   - hookups.electric = true · “cially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing for RVs. 1 2 3 GADNR Assista”
-  - map.date_how = "PDF, no date in the link" · “link “Trail Map””
-  - map.url = "https://gastateparks.org/sites/default/files/parks/pdf/trai · “link “Trail Map” -> https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/PanolaMountain_TrailMap.pdf”
-  - reservable = true · “s will see the outcrop and its rare ecosystem just as Native Americans did centuries ago. Reservations are required for ranger-led hikes tha”
+  - map.date_how = "web page, no date in the link" · “link “Find a Park””
+  - map.url = "https://gastateparks.org/Map" · “link “Find a Park” -> https://gastateparks.org/Map”
   - restrooms = "yes (kind not stated)" · “ate Park Campsites have officially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing ”
-  - rules.pets = "Pets are not allowed in this conservation area" · “er-led guided hikes are required to access the granite mountain. Call for reservations. › Pets are not allowed in this conservation area; ho”
-  - sites.cabin = 4 · “rs Farm Reservations, Accommodations & Facilities 1,815 Acres 2 Lakes - 35 acres together 4 Picnic Shelters (Before making reservations, cal”
-- **Seminole State Park** (US-2197, state, status ok, 9 facts) · [gastateparks.org](https://gastateparks.org/seminole)
-  - booking.how = "online: gastateparks.org" · “link “Reservations””
-  - booking.url = "https://gastateparks.org/Reservations" · “link “Reservations” -> https://gastateparks.org/Reservations”
-  - features = "fire pits and grills" · “ver to spend a few days exploring the park’s trails and river. All have screened porches, fire pits and grills. Georgia's Great Places Disco”
-  - hookups.electric = true · “cially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing for RVs. 1 2 3 GADNR Assista”
-  - map.date_how = "PDF, no date in the link" · “link “Trail Map””
-  - map.url = "https://gastateparks.org/sites/default/files/parks/pdf/trai · “link “Trail Map” -> https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/Seminole_TrailMap.pdf”
-  - restrooms = "yes (kind not stated)" · “ate Park Campsites have officially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing ”
-  - sites.cabin = 14 · “hunting. Reservations, Accommodations & Facilities 1,478 Acres 37,500-acre Lake Seminole 14 Cottages 50 Tent, Trailer & RV Campsites — Site-”
-  - sites.group = 1 · “e-Specific 4 Picnic Shelters (Before making reservations, call park for capacity limits.) 1 Group Shelter (seats 200. Before making reservat”
-- **1 WRD campground point(s) on SHEFFIELD WMA** (intake-US-7895, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [georgiawildlife.com](https://georgiawildlife.com/sheffield-wma)
-  - booking.url = "https://georgiawildlife.com/sheffield-wma" · “booking link from our outside research (camping, in the park) row (official system georgiawildlife.com)”
-  - map.date_how = "PDF, no date in the link" · “link “PDF MAP””
-  - map.url = "https://georgiawildlife.com/sites/default/files/wrd/pdf/map · “link “PDF MAP” -> https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/locationmaps/SheffieldWMA.pdf”
-  - phone = "(706) 295-6041" · “CTIVE MAP PDF MAP REGULATIONS Phone Numbers Region 1 Office 706-295-6041 Fees & Passes Land Access Hunting License Fishing License,”
-- **both primitive camping and newly constructed** (intake-US-7905, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [georgiawildlife.com](https://georgiawildlife.com/canoochee-sandhills-wma)
-  - booking.url = "https://georgiawildlife.com/canoochee-sandhills-wma" · “booking link from our outside research (camping, in the park) row (official system georgiawildlife.com)”
-  - map.date_how = "PDF, year 2020 in the link" · “link “PDF MAP””
-  - map.url = "https://georgiawildlife.com/sites/default/files/wrd/pdf/map · “link “PDF MAP” -> https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/locationmaps/CSWMA%20Color%20Line%20Map”
-  - phone = "(229) 426-5267" · “CTIVE MAP PDF MAP REGULATIONS Phone Numbers Region 4 Office 229-426-5267 Fees & Passes Land Access Hunting License Fishing License,”
-- **1 WRD campground point(s) on ALAPAHA RIVER WMA** (intake-US-7881, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [georgiawildlife.com](https://georgiawildlife.com/alapaha-river-wma)
-  - booking.url = "https://georgiawildlife.com/alapaha-river-wma" · “booking link from our outside research (camping, in the park) row (official system georgiawildlife.com)”
-  - map.date_how = "web page, no date in the link" · “link “Map of All Properties””
-  - map.url = "https://georgiawildlife.com/locations/wrd" · “link “Map of All Properties” -> https://georgiawildlife.com/locations/wrd”
-  - phone = "(229) 426-5267" · “g INTERACTIVE MAP REGULATIONS Phone Numbers Region 4 Office 229-426-5267 Fees & Passes Land Access Hunting License Fishing License,”
-- **1 WRD campground point(s) on HANNAHATCHEE WMA** (intake-US-3753, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [georgiawildlife.com](https://georgiawildlife.com/hannahatchee-creek-wma)
-  - booking.url = "https://georgiawildlife.com/hannahatchee-creek-wma" · “booking link from our outside research (camping, in the park) row (official system georgiawildlife.com)”
-  - map.date_how = "web page, no date in the link" · “link “Map of All Properties””
-  - map.url = "https://georgiawildlife.com/locations/wrd" · “link “Map of All Properties” -> https://georgiawildlife.com/locations/wrd”
-  - phone = "(229) 430-4254" · “g INTERACTIVE MAP REGULATIONS Phone Numbers Region 5 Office 229-430-4254 Fees & Passes Land Access Hunting License Fishing License,”
-- **1 WRD campground point(s) on CLAYHOLE SWAMP WMA** (intake-US-3740, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [georgiawildlife.com](https://georgiawildlife.com/clayhole-swamp-wma)
-  - booking.url = "https://georgiawildlife.com/clayhole-swamp-wma" · “booking link from our outside research (camping, in the park) row (official system georgiawildlife.com)”
-  - map.date_how = "web page, no date in the link" · “link “Map of All Properties””
-  - map.url = "https://georgiawildlife.com/locations/wrd" · “link “Map of All Properties” -> https://georgiawildlife.com/locations/wrd”
-  - phone = "(912) 262-3173" · “g INTERACTIVE MAP REGULATIONS Phone Numbers Region 6 Office 912-262-3173 Fees & Passes Land Access Hunting License Fishing License,”
 - **Main campground; walk-in campsite** (US-2182:hq0, state, status ok, 10 facts) · [gastateparks.org](https://gastateparks.org/JackHill)
   - booking.how = "online: gastateparks.org" · “link “Reservations””
   - booking.url = "https://gastateparks.org/Reservations" · “link “Reservations” -> https://gastateparks.org/Reservations”
@@ -606,103 +550,93 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - sites.cabin = 10 · “ed golf course and more. Reservations, Accommodations & Facilities 662 Acres 12 Acre Lake 10 Cottages 29 Tent, Trailer & RV Campsites 1 Walk”
   - sites.group = 1 · “n Campsite 4 Picnic Shelters (Before making reservations, call park for capacity limits.) 1 Group Shelter (seats 80. Before making reservati”
   - sites.primitive = 1 · “modations & Facilities 662 Acres 12 Acre Lake 10 Cottages 29 Tent, Trailer & RV Campsites 1 Walk-In Campsite 4 Picnic Shelters (Before makin”
-- **Main campground; Group camp; Pioneer campground** (US-2188:hq0, state, status ok, 7 facts) · [gastateparks.org](https://gastateparks.org/LauraSWalker)
+- **Charlie Elliott Wildlife Center and Clybel WMA Campground** (intake-US-7467, agency (outside research camping-us-oct31), status ok, 16 facts) · [georgiawildlife.com](https://georgiawildlife.com/charlie-elliott-wildlife-center)
+  - booking.how = "online: reservations.gooutdoorsgeorgia.com" · “link “Make a Camping Reservation””
+  - booking.url = "https://reservations.gooutdoorsgeorgia.com/FacilityDetails. · “link “Make a Camping Reservation” -> https://reservations.gooutdoorsgeorgia.com/FacilityDetails.aspx?facID=1”
+  - features = "fire ring" · “ists of 20 campsites, all containing electricity, water, wireless wifi, picnic table, and fire ring. Of the 20 sites, there are 6 tent-only ”
+  - hookups.electric = true · “ish, crappie, and redear sunfish. The campground consists of 20 campsites, all containing electricity, water, wireless wifi, picnic table, a”
+  - hookups.sewer = true · “ng. Of the 20 sites, there are 6 tent-only sites, and 14 full-size RV sites offering full sewer service. To make a reservation and see prici”
+  - hookups.water = true · “ish, crappie, and redear sunfish. The campground consists of 20 campsites, all containing electricity, water, wireless wifi, picnic table, a”
+  - map.date_how = "PDF, year 2025 in the link" · “link “PDF Map””
+  - map.url = "https://georgiawildlife.com/sites/default/files/wrd/pdf/cew · “link “PDF Map” -> https://georgiawildlife.com/sites/default/files/wrd/pdf/cewc/CEWC Facilities %26 Trail Map Mar2025.p”
+  - phone = "(770) 784-3059" · “Charlie Elliott Wildlife Center, contact Katie Blaylock at 770-784-3059 or katie.blaylock@dnr.ga.gov . Shooting Range The shooting”
+  - phone_hint = "(770) 784-3059" · “on on the roles and hosting at Charlie Elliott Wildlife Center, contact Katie Blaylock at 770-784-3059 or katie.blaylock@dnr.ga.gov . Shooti”
+- **Equestrian campground** (US-2207:hq1, state, status ok, 9 facts) · [gastateparks.org](https://gastateparks.org/WatsonMillBridge)
   - booking.how = "online: gastateparks.org" · “link “Reservations””
   - booking.url = "https://gastateparks.org/Reservations" · “link “Reservations” -> https://gastateparks.org/Reservations”
   - features = "fire pits and grills" · “ver to spend a few days exploring the park’s trails and river. All have screened porches, fire pits and grills. Georgia's Great Places Disco”
   - hookups.electric = true · “cially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing for RVs. 1 2 3 GADNR Assista”
   - map.date_how = "PDF, no date in the link" · “link “Trail Map””
-  - map.url = "https://gastateparks.org/sites/default/files/parks/pdf/trai · “link “Trail Map” -> https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/LauraSWalker_TrailMap.pdf”
+  - map.url = "https://gastateparks.org/sites/default/files/parks/pdf/trai · “link “Trail Map” -> https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/WatsonMillBridge_TrailMap.pdf”
   - restrooms = "yes (kind not stated)" · “ate Park Campsites have officially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing ”
-- **Main campground** (US-2192:hq0, state, status ok, 13 facts) · [gastateparks.org](https://gastateparks.org/moccasincreek)
+  - sites.cabin = 3 · “ailer & RV Campsites 11 Equestrian Campsites 1 Buddy Equestrian Campsite 22 Horse Stables 3 Log Cabin Bunkhouses 1 Group Shelter (Before mak”
+  - sites.group = 1 · “Equestrian Campsites 1 Buddy Equestrian Campsite 22 Horse Stables 3 Log Cabin Bunkhouses 1 Group Shelter (Before making reservations, call p”
+- **1 WRD campground point(s) on FLAT TUB WMA** (intake-US-3749, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [georgiawildlife.com](https://georgiawildlife.com/flat-tub-wma)
+  - booking.url = "https://georgiawildlife.com/flat-tub-wma" · “booking link from our outside research (camping, in the park) row (official system georgiawildlife.com)”
+  - map.date_how = "PDF, year 2020 in the link" · “link “PDF MAP””
+  - map.url = "https://georgiawildlife.com/sites/default/files/Flat%20Tub% · “link “PDF MAP” -> https://georgiawildlife.com/sites/default/files/Flat%20Tub%20WMA%202023%20Revised%20Hunter%20Map.pdf”
+  - phone = "(229) 426-5267" · “CTIVE MAP PDF MAP REGULATIONS Phone Numbers Region 4 Office 229-426-5267 Fees & Passes Land Access Hunting License Fishing License,”
+- **Fort McAllister State Park** (US-2175, state, status ok, 11 facts) · [gastateparks.org](https://gastateparks.org/FortMcAllister)
   - booking.how = "online: gastateparks.org" · “link “Reservations””
   - booking.url = "https://gastateparks.org/Reservations" · “link “Reservations” -> https://gastateparks.org/Reservations”
-  - drinking_water = "some" · “d than tent/trailer/RV sites, they are within easy walking distance of a comfort station, water spigot, trash bins and central parking area.”
-  - dump_station = true · “wers, flush toilets and electrical outlets are conveniently located. All campgrounds have dump stations, and several offer cable TV hookups.”
   - features = "fire pits and grills" · “ver to spend a few days exploring the park’s trails and river. All have screened porches, fire pits and grills. Georgia's Great Places Disco”
   - hookups.electric = true · “cially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing for RVs. 1 2 3 GADNR Assista”
-  - hookups.water = true · “oss between a tent and a cabin). Tent, Trailer & RV Campsites These developed sites offer electrical and water hookups, grills or fire rings”
-  - map.date_how = "PDF, no date in the link" · “link “Trail Map””
-  - map.url = "https://gastateparks.org/sites/default/files/parks/pdf/trai · “link “Trail Map” -> https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/MoccasinCreek_TrailMap.pdf”
+  - map.date_how = "PDF, year 2024 in the link" · “link “Trail Map””
+  - map.url = "https://gastateparks.org/sites/default/files/parks/pdf/Fort · “link “Trail Map” -> https://gastateparks.org/sites/default/files/parks/pdf/FortMcAllister/FortMcAllister-ParkMap-2024.pd”
+  - reservable = true · “g at Georgia State Parks - Colonial Coast Birding Trail Geocaching at Georgia State Parks Reserve a GRIT Freedom Chair Nearby Attractions Go”
   - restrooms = "yes (kind not stated)" · “ate Park Campsites have officially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing ”
+  - sites.cabin = 7 · “vides access to the Ogeechee River. Reservations, Accommodations & Facilities 1,725 Acres 7 Cottages 67 Tent, Trailer & RV Campsites 1 Backc”
+  - sites.group = 1 · “to sites) 2 Picnic Shelters (Before making reservations, call park for capacity limits.) 1 Group Shelter (seats 150. Before making reservati”
+- **Trails Primitive Campsites** (intake-US-7906, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [georgiawildlife.com](https://georgiawildlife.com/chattahoochee-fall-line-wma-almo-tract)
+  - booking.url = "https://georgiawildlife.com/chattahoochee-fall-line-wma-alm · “booking link from our outside research (camping, in the park) row (official system georgiawildlife.com)”
+  - map.date_how = "web page, no date in the link" · “link “Map of All Properties””
+  - map.url = "https://georgiawildlife.com/locations/wrd" · “link “Map of All Properties” -> https://georgiawildlife.com/locations/wrd”
+  - phone = "(229) 430-4254" · “g INTERACTIVE MAP REGULATIONS Phone Numbers Region 5 Office 229-430-4254 Fees & Passes Land Access Hunting License Fishing License,”
+  - phone_hint = "(229) 430-4254" · “Highway 240 on WMA entry road. INTERACTIVE MAP REGULATIONS Phone Numbers Region 5 Office 229-430-4254 Fees & Passes Land Access Hunting Lice”
+- **Campground - name not in layer** (US-3729:p2-1, state, status ok, 7 facts) · [gastateparks.org](https://gastateparks.org/)
+  - booking.how = "online: gastateparks.org" · “link “Reservations””
+  - booking.url = "https://gastateparks.org/Reservations" · “link “Reservations” -> https://gastateparks.org/Reservations”
+  - features = "fire pits and grills" · “ver to spend a few days exploring the park’s trails and river. All have screened porches, fire pits and grills. Georgia's Great Places Disco”
+  - hookups.electric = true · “cially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing for RVs. 1 2 3 GADNR Assista”
+  - map.date_how = "web page, no date in the link" · “link “Find a Park””
+  - map.url = "https://gastateparks.org/Map" · “link “Find a Park” -> https://gastateparks.org/Map”
+  - restrooms = "yes (kind not stated)" · “ate Park Campsites have officially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing ”
+- **Victoria Bryant State Park** (US-2205, state, status ok, 10 facts) · [gastateparks.org](https://gastateparks.org/VictoriaBryant)
+  - booking.how = "online: gastateparks.org" · “link “Reservations””
+  - booking.url = "https://gastateparks.org/Reservations" · “link “Reservations” -> https://gastateparks.org/Reservations”
+  - features = "fire pits and grills" · “ver to spend a few days exploring the park’s trails and river. All have screened porches, fire pits and grills. Georgia's Great Places Disco”
+  - hookups.electric = true · “cially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing for RVs. 1 2 3 GADNR Assista”
+  - map.date_how = "PDF, year 2026 in the link" · “link “Trail Map””
+  - map.url = "https://gastateparks.org/sites/default/files/parks/pdf/trai · “link “Trail Map” -> https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/VictoriaBryant_TrailMap.pdf?v=20260”
+  - restrooms = "yes (kind not stated)" · “ate Park Campsites have officially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing ”
+  - sites.cabin = 1 · “vailable for overnight golf packages. Reservations, Accommodations & Facilities 502 Acres 1 Bluebird Cottage 27 Tent, Trailer & RV Campsites”
+  - sites.primitive = 8 · “ies 502 Acres 1 Bluebird Cottage 27 Tent, Trailer & RV Campsites 1 Tent/RV Combo Campsite 8 Platform Walk-In Campsites 1 Pioneer Campground ”
+  - sites.rv = 1 · “Accommodations & Facilities 502 Acres 1 Bluebird Cottage 27 Tent, Trailer & RV Campsites 1 Tent/RV Combo Campsite 8 Platform Walk-In Campsit”
+- **both primitive camping and newly constructed** (intake-US-7905, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [georgiawildlife.com](https://georgiawildlife.com/canoochee-sandhills-wma)
+  - booking.url = "https://georgiawildlife.com/canoochee-sandhills-wma" · “booking link from our outside research (camping, in the park) row (official system georgiawildlife.com)”
+  - map.date_how = "PDF, year 2020 in the link" · “link “PDF MAP””
+  - map.url = "https://georgiawildlife.com/sites/default/files/wrd/pdf/map · “link “PDF MAP” -> https://georgiawildlife.com/sites/default/files/wrd/pdf/maps/locationmaps/CSWMA%20Color%20Line%20Map”
+  - phone = "(229) 426-5267" · “CTIVE MAP PDF MAP REGULATIONS Phone Numbers Region 4 Office 229-426-5267 Fees & Passes Land Access Hunting License Fishing License,”
+- **General Coffee State Park** (US-2178, state, status ok, 9 facts) · [gastateparks.org](https://gastateparks.org/GeneralCoffee)
+  - booking.how = "online: gastateparks.org" · “link “Reservations””
+  - booking.url = "https://gastateparks.org/Reservations" · “link “Reservations” -> https://gastateparks.org/Reservations”
+  - features = "fire pits and grills" · “ver to spend a few days exploring the park’s trails and river. All have screened porches, fire pits and grills. Georgia's Great Places Disco”
+  - hookups.electric = true · “cially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing for RVs. 1 2 3 GADNR Assista”
+  - map.date_how = "PDF, no date in the link" · “link “Trail Map””
+  - map.url = "https://gastateparks.org/sites/default/files/parks/pdf/trai · “link “Trail Map” -> https://gastateparks.org/sites/default/files/parks/pdf/trailmaps/GeneralCoffee_TrailMap.pdf”
+  - restrooms = "yes (kind not stated)" · “ate Park Campsites have officially reopened at Seminole State Park, featuring a brand-new comfort station and all new electric and plumbing ”
+  - sites.cabin = 4 · “ns, Accommodations & Facilities 1,511 Acres 4 Acre Lake Burnham Cottage & Hawksnest House 4 Cottages 50 Tent, Trailer & RV Campsites 10 Dry ”
+  - sites.group = 1 · “y limits.) 7 Picnic Shelters (Before making reservations, call park for capacity limits.) 1 Group Shelter (seats 120. Before making reservat”
 
 ## US-AL: 12 random samples (records with facts; seed = the date)
 
-- **Oak Mountain State Park: Cabins (9 units)** (US-1049:1, state, status ok, no campground facts even in a browser, 5 facts) · [www.alapark.com](https://www.alapark.com/camping)
+- **Blue Springs State Park: Cabins (3 units)** (US-1034:1, state, status ok, no campground facts even in a browser, 5 facts, 303 ft) · [www.alapark.com](https://www.alapark.com/camping)
   - booking.how = "online: reserve.alapark.com" · “link “Educational Programs””
   - booking.url = "https://reserve.alapark.com/register/" · “link “Educational Programs” -> https://reserve.alapark.com/register/”
   - map.date_how = "web page, no date in the link" · “link “Interactive Map””
   - map.url = "https://conservationgis.alabama.gov/alapark" · “link “Interactive Map” -> https://conservationgis.alabama.gov/alapark”
   - rules.pets = "pet-friendly options , spacious pads, and more! Whet" · “Gulf Coast beaches to scenic mountain vistas at our campgrounds. Enjoy modern amenities, pet-friendly options , spacious pads, and more! Whe”
-- **Geneva SF primitive camping** (intake-US-4596, agency (outside research camping-us-oct31), status ok (browser), 6 facts) · [www.forestry.alabama.gov](https://www.forestry.alabama.gov/Pages/Management/GenevaSF.aspx)
-  - booking.url = "https://www.forestry.alabama.gov/Pages/Management/GenevaSF. · “booking link from our outside research (camping, in the park) row (official system www.forestry.alabama.gov)”
-  - fees = "$5.00, or an annual pass, is required for each person b" · “it which can be obtained at Geneva State Forest Lake. General Rules A daily permit fee of $5.00, or an annual pass, is required for each per”
-  - map.date_how = "web page, no date in the link" · “link “Current Wildfire Map””
-  - map.url = "https://www.forestry.alabama.gov/Pages/Maps/Wildfires.aspx" · “link “Current Wildfire Map” -> https://www.forestry.alabama.gov/Pages/Maps/Wildfires.aspx”
-  - phone_hint = "(334) 898-7013" · “tional groups of 15+ members must make reservations prior to visit. For reservations call 334-898-7013. The AFC is not responsible for perso”
-  - rules.fires = "Campfires must be attended at all times and completely exti · “apply for lake and streams. Capacity is limited and will be determined by AFC personnel. Campfires must be attended at all times and complet”
-- **Weogufka State Forest** (US-4600, state, status ok, 7 facts) · [www.forestry.alabama.gov](https://www.forestry.alabama.gov/Pages/Management/WeogufkaSF.aspx)
-  - booking.url = "https://www.forestry.alabama.gov/Pages/Management/WeogufkaS · “booking link from our campstate-manual row (official system www.forestry.alabama.gov)”
-  - map.date_how = "PDF, no date in the link" · “link “Hiking Trails Map””
-  - map.url = "https://www.forestry.alabama.gov/Pages/Management/Forms/Hik · “link “Hiking Trails Map” -> https://www.forestry.alabama.gov/Pages/Management/Forms/Hiking_Trails_Map.pdf”
-  - phone_hint = "(334) 561-5467" · “nts are available, but reservations must be through the caretaker in advance. Please text (334) 561-5467. Currently there are limited bathro”
-  - restrooms = "yes (kind not stated)" · “room facilities. Efforts are underway to improve the facilities. This includes building a bathhouse, and improving the shelters. History The”
-  - rules.fires = "campfires or any other purposes is prohibited" · “trash pickup service available at the Weogufka State Forest. Cutting down live trees for campfires or any other purposes is prohibited. Camp”
-  - showers = true · “room facilities. Efforts are underway to improve the facilities. This includes building a bathhouse, and improving the shelters. History The”
-- **Brushy Lake Recreation Area; Corinth Recreation Area; Coleman Lake Recreation Area; Pine Glen Recreation Area; Warden Station Horse Camp; Turnipseed Campground; Payne Lake Recreation Area; Clear Creek** (intake-US-4450, agency (outside research camping-us-oct31), status ok, 8 facts, 1644 ft) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/alabama/recarea/?recid=30083)
-  - booking.url = "https://www.fs.usda.gov/recarea/alabama/recarea/?recid=3008 · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
-  - dump_station = true · “eloped boat launches and swimming areas, cabin or lookout rentals. Services like hookups, dump stations, special tours, transportation syste”
-  - hookups.electric = true · “ighly developed boat launches and swimming areas, cabin or lookout rentals. Services like hookups, dump stations, special tours, transportat”
-  - phone = "(205) 489-5111" · “Go Bankhead National Forest - Double Springs, AL Telephone: 205-489-5111 Recreation areas on Bankhead: Corinth, Clear Creek and Brus”
-  - phone_hint = "(334) 222-2555" · “ng Rules Hunting, Fishing and Shooting Conecuh National Forest - Andalusia, AL Telephone: 334-222-2555 ATV/OHV use is not allowed. Check the”
-  - restrooms = "yes (kind not stated)" · “s on Bankhead: Corinth, Clear Creek and Brushy Lake. Houston Day Use is Open. Brushy Lake Bathhouse is Open. Check the motor vehicle use map”
-  - showers = true · “s on Bankhead: Corinth, Clear Creek and Brushy Lake. Houston Day Use is Open. Brushy Lake Bathhouse is Open. Check the motor vehicle use map”
-  - sites.total = 13 · “oating, and fishing to sanitary facilities including a bathhouse. Brushy Lake is 33-acres and has 13 campsites that… Clear Creek Recreation ”
-- **Brushy Lake Recreation Area; Corinth Recreation Area; Coleman Lake Recreation Area; Pine Glen Recreation Area; Warden Station Horse Camp; Turnipseed Campground; Payne Lake Recreation Area; Clear Creek** (intake-US-3687, agency (outside research camping-us-oct31), status ok, 8 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/alabama/recarea/?recid=30083)
-  - booking.url = "https://www.fs.usda.gov/recarea/alabama/recarea/?recid=3008 · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
-  - dump_station = true · “eloped boat launches and swimming areas, cabin or lookout rentals. Services like hookups, dump stations, special tours, transportation syste”
-  - hookups.electric = true · “ighly developed boat launches and swimming areas, cabin or lookout rentals. Services like hookups, dump stations, special tours, transportat”
-  - phone = "(205) 489-5111" · “Go Bankhead National Forest - Double Springs, AL Telephone: 205-489-5111 Recreation areas on Bankhead: Corinth, Clear Creek and Brus”
-  - phone_hint = "(334) 222-2555" · “ng Rules Hunting, Fishing and Shooting Conecuh National Forest - Andalusia, AL Telephone: 334-222-2555 ATV/OHV use is not allowed. Check the”
-  - restrooms = "yes (kind not stated)" · “s on Bankhead: Corinth, Clear Creek and Brushy Lake. Houston Day Use is Open. Brushy Lake Bathhouse is Open. Check the motor vehicle use map”
-  - showers = true · “s on Bankhead: Corinth, Clear Creek and Brushy Lake. Houston Day Use is Open. Brushy Lake Bathhouse is Open. Check the motor vehicle use map”
-  - sites.total = 13 · “oating, and fishing to sanitary facilities including a bathhouse. Brushy Lake is 33-acres and has 13 campsites that… Clear Creek Recreation ”
-- **Gulf State Park: Cabins (3 units)** (US-1042:2, state, status ok, no campground facts even in a browser, 5 facts) · [www.alapark.com](https://www.alapark.com/camping)
-  - booking.how = "online: reserve.alapark.com" · “link “Educational Programs””
-  - booking.url = "https://reserve.alapark.com/register/" · “link “Educational Programs” -> https://reserve.alapark.com/register/”
-  - map.date_how = "web page, no date in the link" · “link “Interactive Map””
-  - map.url = "https://conservationgis.alabama.gov/alapark" · “link “Interactive Map” -> https://conservationgis.alabama.gov/alapark”
-  - rules.pets = "pet-friendly options , spacious pads, and more! Whet" · “Gulf Coast beaches to scenic mountain vistas at our campgrounds. Enjoy modern amenities, pet-friendly options , spacious pads, and more! Whe”
-- **Frank Jackson State Park: Cabins (2 units)** (US-1041:1, state, status ok, no campground facts even in a browser, 5 facts) · [www.alapark.com](https://www.alapark.com/camping)
-  - booking.how = "online: reserve.alapark.com" · “link “Educational Programs””
-  - booking.url = "https://reserve.alapark.com/register/" · “link “Educational Programs” -> https://reserve.alapark.com/register/”
-  - map.date_how = "web page, no date in the link" · “link “Interactive Map””
-  - map.url = "https://conservationgis.alabama.gov/alapark" · “link “Interactive Map” -> https://conservationgis.alabama.gov/alapark”
-  - rules.pets = "pet-friendly options , spacious pads, and more! Whet" · “Gulf Coast beaches to scenic mountain vistas at our campgrounds. Enjoy modern amenities, pet-friendly options , spacious pads, and more! Whe”
-- **Lake Jackson RV Campground & Park** (US-1040:hq0, state, status ok, 10 facts) · [www.alapark.com](https://www.alapark.com/parks/lake-jackson-rv-park-at-florala/camping)
-  - booking.how = "online: reserve.alapark.com" · “link “Educational Programs””
-  - booking.url = "https://reserve.alapark.com/register/" · “link “Educational Programs” -> https://reserve.alapark.com/register/”
-  - hookups.amps = [50] · “tent Menu --> Lake Jackson Rv Park At Florala Share Camping Florala has 28 campsites with 50-amp electrical service, satellite TV, water and”
-  - hookups.electric = true · “nu --> Lake Jackson Rv Park At Florala Share Camping Florala has 28 campsites with 50-amp electrical service, satellite TV, water and sewage”
-  - map.date_how = "web page, no date in the link" · “link “Interactive Map””
-  - map.url = "https://conservationgis.alabama.gov/alapark" · “link “Interactive Map” -> https://conservationgis.alabama.gov/alapark”
-  - reservable = false · “erated laundry facilities. A large pavilion is available for campers and can be used on a first come, first served basis. A boat launch is a”
-  - restrooms = "yes (kind not stated)" · “ater and sewage. Each site has a picnic table and grill. The campground features a modern bathhouse with coin operated laundry facilities. A”
-  - showers = true · “ater and sewage. Each site has a picnic table and grill. The campground features a modern bathhouse with coin operated laundry facilities. A”
-  - sites.total = 28 · “k Skip to main content Menu --> Lake Jackson Rv Park At Florala Share Camping Florala has 28 campsites with 50-amp electrical service, satel”
-- **Joe Wheeler State Park: Cabins (29 units)** (US-1043:3, state, status ok, no campground facts even in a browser, 5 facts) · [www.alapark.com](https://www.alapark.com/camping)
-  - booking.how = "online: reserve.alapark.com" · “link “Educational Programs””
-  - booking.url = "https://reserve.alapark.com/register/" · “link “Educational Programs” -> https://reserve.alapark.com/register/”
-  - map.date_how = "web page, no date in the link" · “link “Interactive Map””
-  - map.url = "https://conservationgis.alabama.gov/alapark" · “link “Interactive Map” -> https://conservationgis.alabama.gov/alapark”
-  - rules.pets = "pet-friendly options , spacious pads, and more! Whet" · “Gulf Coast beaches to scenic mountain vistas at our campgrounds. Enjoy modern amenities, pet-friendly options , spacious pads, and more! Whe”
-- **Cathedral Caverns State Park: Cabins (4 units)** (US-1036:1, state, status ok, no campground facts even in a browser, 5 facts) · [www.alapark.com](https://www.alapark.com/camping)
-  - booking.how = "online: reserve.alapark.com" · “link “Educational Programs””
-  - booking.url = "https://reserve.alapark.com/register/" · “link “Educational Programs” -> https://reserve.alapark.com/register/”
-  - map.date_how = "web page, no date in the link" · “link “Interactive Map””
-  - map.url = "https://conservationgis.alabama.gov/alapark" · “link “Interactive Map” -> https://conservationgis.alabama.gov/alapark”
-  - rules.pets = "pet-friendly options , spacious pads, and more! Whet" · “Gulf Coast beaches to scenic mountain vistas at our campgrounds. Enjoy modern amenities, pet-friendly options , spacious pads, and more! Whe”
-- **Bladon Springs State Park** (US-3600, state, status ok, no campground facts even in a browser, 5 facts, 102 ft) · [www.alapark.com](https://www.alapark.com/camping)
+- **Gulf State Park: Cabins (24 units)** (US-1042:1, state, status ok, no campground facts even in a browser, 5 facts) · [www.alapark.com](https://www.alapark.com/camping)
   - booking.how = "online: reserve.alapark.com" · “link “Educational Programs””
   - booking.url = "https://reserve.alapark.com/register/" · “link “Educational Programs” -> https://reserve.alapark.com/register/”
   - map.date_how = "web page, no date in the link" · “link “Interactive Map””
@@ -717,92 +651,69 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - restrooms = "yes (kind not stated)" · “s on Bankhead: Corinth, Clear Creek and Brushy Lake. Houston Day Use is Open. Brushy Lake Bathhouse is Open. Check the motor vehicle use map”
   - showers = true · “s on Bankhead: Corinth, Clear Creek and Brushy Lake. Houston Day Use is Open. Brushy Lake Bathhouse is Open. Check the motor vehicle use map”
   - sites.total = 13 · “oating, and fishing to sanitary facilities including a bathhouse. Brushy Lake is 33-acres and has 13 campsites that… Clear Creek Recreation ”
+- **Cathedral Caverns State Park: Cabins (4 units)** (US-1036:1, state, status ok, no campground facts even in a browser, 5 facts) · [www.alapark.com](https://www.alapark.com/camping)
+  - booking.how = "online: reserve.alapark.com" · “link “Educational Programs””
+  - booking.url = "https://reserve.alapark.com/register/" · “link “Educational Programs” -> https://reserve.alapark.com/register/”
+  - map.date_how = "web page, no date in the link" · “link “Interactive Map””
+  - map.url = "https://conservationgis.alabama.gov/alapark" · “link “Interactive Map” -> https://conservationgis.alabama.gov/alapark”
+  - rules.pets = "pet-friendly options , spacious pads, and more! Whet" · “Gulf Coast beaches to scenic mountain vistas at our campgrounds. Enjoy modern amenities, pet-friendly options , spacious pads, and more! Whe”
+- **De Soto State Park: Cabins (5 units)** (US-1039:3, state, status ok, no campground facts even in a browser, 5 facts) · [www.alapark.com](https://www.alapark.com/camping)
+  - booking.how = "online: reserve.alapark.com" · “link “Educational Programs””
+  - booking.url = "https://reserve.alapark.com/register/" · “link “Educational Programs” -> https://reserve.alapark.com/register/”
+  - map.date_how = "web page, no date in the link" · “link “Interactive Map””
+  - map.url = "https://conservationgis.alabama.gov/alapark" · “link “Interactive Map” -> https://conservationgis.alabama.gov/alapark”
+  - rules.pets = "pet-friendly options , spacious pads, and more! Whet" · “Gulf Coast beaches to scenic mountain vistas at our campgrounds. Enjoy modern amenities, pet-friendly options , spacious pads, and more! Whe”
+- **Brushy Lake Recreation Area; Corinth Recreation Area; Coleman Lake Recreation Area; Pine Glen Recreation Area; Warden Station Horse Camp; Turnipseed Campground; Payne Lake Recreation Area; Clear Creek** (intake-US-3687, agency (outside research camping-us-oct31), status ok, 8 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/alabama/recarea/?recid=30083)
+  - booking.url = "https://www.fs.usda.gov/recarea/alabama/recarea/?recid=3008 · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
+  - dump_station = true · “eloped boat launches and swimming areas, cabin or lookout rentals. Services like hookups, dump stations, special tours, transportation syste”
+  - hookups.electric = true · “ighly developed boat launches and swimming areas, cabin or lookout rentals. Services like hookups, dump stations, special tours, transportat”
+  - phone = "(205) 489-5111" · “Go Bankhead National Forest - Double Springs, AL Telephone: 205-489-5111 Recreation areas on Bankhead: Corinth, Clear Creek and Brus”
+  - phone_hint = "(334) 222-2555" · “ng Rules Hunting, Fishing and Shooting Conecuh National Forest - Andalusia, AL Telephone: 334-222-2555 ATV/OHV use is not allowed. Check the”
+  - restrooms = "yes (kind not stated)" · “s on Bankhead: Corinth, Clear Creek and Brushy Lake. Houston Day Use is Open. Brushy Lake Bathhouse is Open. Check the motor vehicle use map”
+  - showers = true · “s on Bankhead: Corinth, Clear Creek and Brushy Lake. Houston Day Use is Open. Brushy Lake Bathhouse is Open. Check the motor vehicle use map”
+  - sites.total = 13 · “oating, and fishing to sanitary facilities including a bathhouse. Brushy Lake is 33-acres and has 13 campsites that… Clear Creek Recreation ”
+- **Wind Creek State Park: Cabins (7 units)** (US-1051:1, state, status ok, no campground facts even in a browser, 5 facts) · [www.alapark.com](https://www.alapark.com/camping)
+  - booking.how = "online: reserve.alapark.com" · “link “Educational Programs””
+  - booking.url = "https://reserve.alapark.com/register/" · “link “Educational Programs” -> https://reserve.alapark.com/register/”
+  - map.date_how = "web page, no date in the link" · “link “Interactive Map””
+  - map.url = "https://conservationgis.alabama.gov/alapark" · “link “Interactive Map” -> https://conservationgis.alabama.gov/alapark”
+  - rules.pets = "pet-friendly options , spacious pads, and more! Whet" · “Gulf Coast beaches to scenic mountain vistas at our campgrounds. Enjoy modern amenities, pet-friendly options , spacious pads, and more! Whe”
+- **Joe Wheeler State Park: Cabins (29 units)** (US-1043:3, state, status ok, no campground facts even in a browser, 5 facts) · [www.alapark.com](https://www.alapark.com/camping)
+  - booking.how = "online: reserve.alapark.com" · “link “Educational Programs””
+  - booking.url = "https://reserve.alapark.com/register/" · “link “Educational Programs” -> https://reserve.alapark.com/register/”
+  - map.date_how = "web page, no date in the link" · “link “Interactive Map””
+  - map.url = "https://conservationgis.alabama.gov/alapark" · “link “Interactive Map” -> https://conservationgis.alabama.gov/alapark”
+  - rules.pets = "pet-friendly options , spacious pads, and more! Whet" · “Gulf Coast beaches to scenic mountain vistas at our campgrounds. Enjoy modern amenities, pet-friendly options , spacious pads, and more! Whe”
+- **Brushy Lake Recreation Area; Corinth Recreation Area; Coleman Lake Recreation Area; Pine Glen Recreation Area; Warden Station Horse Camp; Turnipseed Campground; Payne Lake Recreation Area; Clear Creek** (intake-US-4450, agency (outside research camping-us-oct31), status ok, 8 facts, 1644 ft) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/alabama/recarea/?recid=30083)
+  - booking.url = "https://www.fs.usda.gov/recarea/alabama/recarea/?recid=3008 · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
+  - dump_station = true · “eloped boat launches and swimming areas, cabin or lookout rentals. Services like hookups, dump stations, special tours, transportation syste”
+  - hookups.electric = true · “ighly developed boat launches and swimming areas, cabin or lookout rentals. Services like hookups, dump stations, special tours, transportat”
+  - phone = "(205) 489-5111" · “Go Bankhead National Forest - Double Springs, AL Telephone: 205-489-5111 Recreation areas on Bankhead: Corinth, Clear Creek and Brus”
+  - phone_hint = "(334) 222-2555" · “ng Rules Hunting, Fishing and Shooting Conecuh National Forest - Andalusia, AL Telephone: 334-222-2555 ATV/OHV use is not allowed. Check the”
+  - restrooms = "yes (kind not stated)" · “s on Bankhead: Corinth, Clear Creek and Brushy Lake. Houston Day Use is Open. Brushy Lake Bathhouse is Open. Check the motor vehicle use map”
+  - showers = true · “s on Bankhead: Corinth, Clear Creek and Brushy Lake. Houston Day Use is Open. Brushy Lake Bathhouse is Open. Check the motor vehicle use map”
+  - sites.total = 13 · “oating, and fishing to sanitary facilities including a bathhouse. Brushy Lake is 33-acres and has 13 campsites that… Clear Creek Recreation ”
+- **Joe Wheeler State Park: Cabins (1 units)** (US-1043:1, state, status ok, no campground facts even in a browser, 5 facts) · [www.alapark.com](https://www.alapark.com/camping)
+  - booking.how = "online: reserve.alapark.com" · “link “Educational Programs””
+  - booking.url = "https://reserve.alapark.com/register/" · “link “Educational Programs” -> https://reserve.alapark.com/register/”
+  - map.date_how = "web page, no date in the link" · “link “Interactive Map””
+  - map.url = "https://conservationgis.alabama.gov/alapark" · “link “Interactive Map” -> https://conservationgis.alabama.gov/alapark”
+  - rules.pets = "pet-friendly options , spacious pads, and more! Whet" · “Gulf Coast beaches to scenic mountain vistas at our campgrounds. Enjoy modern amenities, pet-friendly options , spacious pads, and more! Whe”
+- **Oak Mountain State Park: Cabins (9 units)** (US-1049:1, state, status ok, no campground facts even in a browser, 5 facts) · [www.alapark.com](https://www.alapark.com/camping)
+  - booking.how = "online: reserve.alapark.com" · “link “Educational Programs””
+  - booking.url = "https://reserve.alapark.com/register/" · “link “Educational Programs” -> https://reserve.alapark.com/register/”
+  - map.date_how = "web page, no date in the link" · “link “Interactive Map””
+  - map.url = "https://conservationgis.alabama.gov/alapark" · “link “Interactive Map” -> https://conservationgis.alabama.gov/alapark”
+  - rules.pets = "pet-friendly options , spacious pads, and more! Whet" · “Gulf Coast beaches to scenic mountain vistas at our campgrounds. Enjoy modern amenities, pet-friendly options , spacious pads, and more! Whe”
+- **Meaher State Park: Cabins (7 units)** (US-1047:1, state, status ok, no campground facts even in a browser, 5 facts) · [www.alapark.com](https://www.alapark.com/camping)
+  - booking.how = "online: reserve.alapark.com" · “link “Educational Programs””
+  - booking.url = "https://reserve.alapark.com/register/" · “link “Educational Programs” -> https://reserve.alapark.com/register/”
+  - map.date_how = "web page, no date in the link" · “link “Interactive Map””
+  - map.url = "https://conservationgis.alabama.gov/alapark" · “link “Interactive Map” -> https://conservationgis.alabama.gov/alapark”
+  - rules.pets = "pet-friendly options , spacious pads, and more! Whet" · “Gulf Coast beaches to scenic mountain vistas at our campgrounds. Enjoy modern amenities, pet-friendly options , spacious pads, and more! Whe”
 
 ## US-SC: 12 random samples (records with facts; seed = the date)
 
-- **Chester State Park** (US-2889, state, status ok, 15 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/chester/camping)
-  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
-  - booking.url = "https://reserve.southcarolinaparks.com/chester" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/chester”
-  - features = "fire rings, lantern holders, picnic tables and picnic pads" · “ked gravel and has individual water and 50 amp electrical hookups. All sites also include fire rings, lantern holders, picnic tables and pic”
-  - fees = "$13.50 which allows up to ten campers | $5 increments for e · “To make a primitive group camping reservation, contact the park directly. Minimum rate is $13.50 which allows up to ten campers. The rate in”
-  - hookups.amps = [50] · “campground. Camping Information: Each site is packed gravel and has individual water and 50 amp electrical hookups. All sites also include f”
-  - hookups.electric = true · “ound. Camping Information: Each site is packed gravel and has individual water and 50 amp electrical hookups. All sites also include fire ri”
-  - phone_hint = "(803) 385-2680" · “Carolina Parks Official Site Chester DIRECTIONS 788 State Park DR Chester, SC 29706 PHONE 803.385.2680 EMAIL MAKE A RESERVATION TOP 5 THINGS”
-  - reservable = true · “ludes picnic tables, central water, fire ring and is located 100 yards from the restroom. Reservations are accepted. To make a primitive gro”
-  - restrooms = "flush + vault" · “able and a tent pad. A vault toilet is available in the parking area, and hot showers and flush toilets are available in the standard campgr”
-  - rules.pets = "Pets are not allowed in the camper cabins or the camper cab · “Su ADMISSION $3 adults; $1.50 SC seniors; $1 children age 6-15; age 5 & younger free PETS Pets are not allowed in the camper cabins or the c”
-- **Baker Creek State Park** (US-2884, state, status ok, 13 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/baker-creek/camping)
-  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
-  - booking.url = "https://reserve.southcarolinaparks.com/baker-creek" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/baker-creek”
-  - hookups.amps = [50] · “PARK ADVISORY THE CAMPGROUND IS NOW OPEN! With two new family-style comfort stations and 50-amp service. All trails are currently closed due”
-  - hookups.electric = true · “ion by contacting the park directly. Standard Sites with Elec. & Water: 30 standard sites Full Hookup Sites with Elec, Water, Sewer: 2 full ”
-  - hookups.sewer = true · “ion by contacting the park directly. Standard Sites with Elec. & Water: 30 standard sites Full Hookup Sites with Elec, Water, Sewer: 2 full ”
-  - hookups.water = true · “ion by contacting the park directly. Standard Sites with Elec. & Water: 30 standard sites Full Hookup Sites with Elec, Water, Sewer: 2 full ”
-  - phone_hint = "(864) 443-2457" · “a Parks Official Site Baker Creek DIRECTIONS 863 Baker Creek RD McCormick, SC 29835 PHONE 864.443.2457 EMAIL MAKE A RESERVATION TOP 5 THINGS”
-  - restrooms = "yes (kind not stated)" · “ENTLY ASKED QUESTIONS PARK ADVISORY THE CAMPGROUND IS NOW OPEN! With two new family-style comfort stations and 50-amp service. All trails ar”
-  - rules.pets = "Pets are allowed in most outdoor areas provided they are ke · “m. ADMISSION $3 adults; $1.50 SC seniors; $1 children age 6-15; age 5 & younger free PETS Pets are allowed in most outdoor areas provided th”
-  - showers = true · “ong the shores of Strom Thurmond Lake. The campground is convenient to restrooms with hot showers. Camping Reservations: To make a camping r”
-- **Black River State Park** (US-13198, state, status ok, no campground facts in the page text: needs browser?, 1 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/)
-  - rules.pets = "Pet Friendly" · “n Ultimate Outsider. GET THE GUIDE PICK UP A PARK PASSPORT Come Out & Play 5K Race Series Pet Friendly Lodging Fall Foliage Report EXPLORE M”
-- **Manchester State Forest** (US-5486, state, status ok, no campground facts in the page text: needs browser?, 1 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/)
-  - rules.pets = "Pet Friendly" · “n Ultimate Outsider. GET THE GUIDE PICK UP A PARK PASSPORT Come Out & Play 5K Race Series Pet Friendly Lodging Fall Foliage Report EXPLORE M”
-- **Aiken State Park** (US-2882, state, status ok, no campground facts in the page text: needs browser?, 1 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/)
-  - rules.pets = "Pet Friendly" · “n Ultimate Outsider. GET THE GUIDE PICK UP A PARK PASSPORT Come Out & Play 5K Race Series Pet Friendly Lodging Fall Foliage Report EXPLORE M”
-- **Cypress View Campground; Lakeshore Campground; primitive group camping area** (US-2912:hq0, state, status ok, 12 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/santee/camping)
-  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
-  - booking.url = "https://reserve.southcarolinaparks.com/santee" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/santee”
-  - hookups.amps = [50] · “reservation by contacting the park directly. Standard Sites with Elec. & Water: 146 sites 50 Amp Service Sites: 48 sites Designated Tent Sit”
-  - hookups.electric = true · “cated on the east side of the park. Each site is packed sand and has individual water and electrical hookups and a picnic table. Both campgr”
-  - hookups.water = true · “tes, is located on the east side of the park. Each site is packed sand and has individual water and electrical hookups and a picnic table. B”
-  - reservable = true · “inted officials.) The area includes central water and is located near restoom facilities. Reservations are accepted. To make a primitive gro”
-  - restrooms = "yes (kind not stated)" · “idual water and electrical hookups and a picnic table. Both campgrounds are convenient to restroom facilities with hot showers. Many sites a”
-  - rules.pets = "Pets are allowed in cabins 11-28 at Santee State Park" · “6.50 increments for each additional five campers. Tent Camping: Yes RV Camping: Yes Pets: Pets are allowed in cabins 11-28 at Santee State P”
-  - rv_max_ft = 40 · “ampgrounds are convenient to restroom facilities with hot showers. Many sites accommodate RVs up to 40 feet. Camping Reservations: To make a”
-  - showers = true · “okups and a picnic table. Both campgrounds are convenient to restroom facilities with hot showers. Many sites accommodate RVs up to 40 feet.”
-- **Keowee-Toxaway State Park** (US-3877, state, status ok, 16 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/keowee-toxaway/camping)
-  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
-  - booking.url = "https://reserve.southcarolinaparks.com/keowee-toxaway" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/keowee-toxaway”
-  - features = "fire rings and lantern holders" · “area includes 10 sites with water, 20 amp power and individual tent pads, picnic tables, fire rings and lantern holders. The campground is c”
-  - fees = "$2 per person/per night" · “ix campers to reserve the backcountry group site and a maximum of 25 campers. The rate is $2 per person/per night. Note: Rates listed do not”
-  - hookups.amps = [20, 50] · “ate Park Mountains Camping Camping Information: Ten paved sites have individual water and 50amp electrical hookups and can accommodate RVs u”
-  - hookups.electric = true · “rk Mountains Camping Camping Information: Ten paved sites have individual water and 50amp electrical hookups and can accommodate RVs up to 4”
-  - hookups.sewer = true · “park directly. Standard Sites with Elec. & Water: 7 sites have 50 amp service and water. Full Hookup Sites with Elec, Water, Sewer: 3 sites ”
-  - hookups.water = true · “park directly. Standard Sites with Elec. & Water: 7 sites have 50 amp service and water. Full Hookup Sites with Elec, Water, Sewer: 3 sites ”
-  - phone_hint = "(864) 868-2605" · “ina Parks Official Site Keowee-Toxaway DIRECTIONS 108 Residence DR Sunset, SC 29685 PHONE 864.868.2605 EMAIL MAKE A RESERVATION TOP 5 THINGS”
-  - reservable = true · “roups at one designated site near the shores of Lake Keowee. Registration is required and reservations are accepted. To make a backcountry g”
-- **Sugarloaf Mountain, Campbell's Lake, Hunter/Lee/Sexton Pond and equine campsites (20)** (intake-US-5488, agency (outside research camping-us-oct31), status ok, 15 facts) · [www.scfc.gov](https://www.scfc.gov/state-forests/sand-hills-state-forest/)
-  - booking.url = "https://www.scfc.gov/state-forests/sand-hills-state-forest/ · “booking link from our outside research (camping, in the park) row (official system www.scfc.gov)”
-  - features = "fire ring or fireplace and trash can" · “ut shelters at Hunter Pond, Lee Pond and Sexton Pond. Most campsites have a picnic table, fire ring or fireplace and trash can. There are th”
-  - fees = "$15/day | $10/day | $15 per night | $10 per night" · “amily camping sites with shelters (1A, 1B, 2, 5, 6, 7 and the shelter at Campbell’s Lake) $15/day Family camping sites without shelters (3, ”
-  - hookups.electric = true · “ine through the SC Department of Natural Resources’ Online Customer Service Portal . Only electric motors are allowed on the ponds, except f”
-  - map.date_how = "PDF, year 2021 in the link" · “link “View/download the Sand Hills State Forest WMA map””
-  - map.url = "https://www.scfc.gov/wp-content/uploads/2021/06/wma-sandhil · “link “View/download the Sand Hills State Forest WMA map” -> https://www.scfc.gov/wp-content/uploads/2021/06/wma-sandhills.pdf”
-  - phone = "(843) 498-6478" · “4). For more information, please contact the main office at (843) 498-6478. Sand Hills State Forest map View/download the official San”
-  - reservable = true · “ikers using the trails or for others using the day-use areas, shelters or ponds; however, reservations are required to use the shelters and ”
-  - restrooms = "yes (kind not stated)" · “Most campsites have a picnic table, fire ring or fireplace and trash can. There are three restroom facilities: one near Mountain Pond, one a”
-  - rules.generators = "Generators ARE allowed at campsites" · “rs. Campers must camp in the reserved site. Lanterns must not be hung in trees or bushes. Generators ARE allowed at campsites. The person ob”
-- **Lake Hartwell State Park** (US-3879, state, status ok, 11 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/lake-hartwell/camping)
-  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
-  - booking.url = "https://reserve.southcarolinaparks.com/lake-hartwell" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/lake-hartwell”
-  - hookups.electric = true · “rk directly. Standard Sites with Elec. & Water: 109 paved sites with individual water and electrical hook-ups. Many sites accommodate RVs up”
-  - hookups.water = true · “ing the park directly. Standard Sites with Elec. & Water: 109 paved sites with individual water and electrical hook-ups. Many sites accommod”
-  - phone_hint = "(864) 972-3352" · “a Parks Official Site Lake Hartwell DIRECTIONS 19138-A HWY 11 S Fair Play, SC 29643 PHONE 864.972.3352 EMAIL MAKE A RESERVATION TOP 5 THINGS”
-  - restrooms = "yes (kind not stated)" · “asy access to the shoreline of Lake Hartwell. All sites are convenient to hot showers and restrooms. Camping Reservations: To make a camping”
-  - rules.pets = "Pets are allowed in Carolina Camper Cabins 1, 2 and 5" · “ch ADMISSION $3 adults; $1.50 SC seniors; $1 children age 6-15; age 5 & younger free PETS Pets are allowed in Carolina Camper Cabins 1, 2 an”
-  - rv_max_ft = 40 · “er: 109 paved sites with individual water and electrical hook-ups. Many sites accommodate RVs up to 40 feet. Designated Tent Sites: 13 walk-”
-  - showers = true · “a provides easy access to the shoreline of Lake Hartwell. All sites are convenient to hot showers and restrooms. Camping Reservations: To ma”
-  - sites.tent = 13 · “and electrical hook-ups. Many sites accommodate RVs up to 40 feet. Designated Tent Sites: 13 walk-in tent sites include tent pads Dump Stati”
-- **Main campground (sites 1–25); Trailside walk-in tent/hammock sites (sites 26–35); Primitive group camping area** (US-2895:hq0, state, status ok, 14 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/givhans-ferry/camping)
-  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
-  - booking.url = "https://reserve.southcarolinaparks.com/givhans-ferry" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/givhans-ferry”
-  - features = "fire ring, picnic table and storage box for food and suppli · “arking area. These tent/hammock sites have water and 20 amp electric, as well as a grill, fire ring, picnic table and storage box for food a”
-  - fees = "$13 -$15.50 which allows up to ten campers | $5-6.25 increm · “To make a primitive group camping reservation, contact the park directly. Minimum rate is $13 -$15.50 which allows up to ten campers. The ra”
-  - hookups.amps = [20, 30, 50] · “rk Coast Camping Camping Information: Sites 1 – 25 are full service with water, sewer and 50/30/20 amp power. Many sites can accommodate 40’”
-  - hookups.electric = true · “ing Camping Information: Sites 1 – 25 are full service with water, sewer and 50/30/20 amp power. Many sites can accommodate 40’ RVs, others ”
-  - hookups.sewer = true · “y State Park Coast Camping Camping Information: Sites 1 – 25 are full service with water, sewer and 50/30/20 amp power. Many sites can accom”
-  - hookups.water = true · “cking in on today, Friday, you must make the reservation by contacting the park directly. Full Hookup Sites with Elec, Water, Sewer: 25 site”
-  - phone_hint = "(843) 873-0692" · “ks Official Site Givhans Ferry DIRECTIONS 746 Givhans Ferry RD Ridgeville, SC 29472 PHONE 843.873.0692 EMAIL MAKE A RESERVATION TOP 5 THINGS”
-  - reservable = true · “nted officials. The area includes central water, fire ring and nearby restoom facilities. Reservations are accepted. To make a primitive gro”
 - **Main campground; Designated tent sites; Primitive group camping area** (US-2910:hq0, state, status ok, 13 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/poinsett/camping)
   - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
   - booking.url = "https://reserve.southcarolinaparks.com/poinsett" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/poinsett”
@@ -814,27 +725,120 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - restrooms = "yes (kind not stated)" · “dividual water. Some sites accommodate RVs up to 40 feet. The campground is convenient to restroom facilities with hot showers. All sites in”
   - rules.pets = "Pets are not allowed in the cabins or the cabin areas" · “pm ADMISSION $3 adults; $1.50 SC seniors; $1 children age 6-15; age 5 & younger free PETS Pets are not allowed in the cabins or the cabin ar”
   - rv_max_ft = 40 · “er and electrical hookups and 26 tent sites with individual water. Some sites accommodate RVs up to 40 feet. The campground is convenient to”
-- **Lake Wateree State Park** (US-3880, state, status ok, 5 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/lake-wateree)
+- **Goodale State Park** (US-2896, state, status ok, no campground facts in the page text: needs browser?, 1 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/)
+  - rules.pets = "Pet Friendly" · “n Ultimate Outsider. GET THE GUIDE PICK UP A PARK PASSPORT Come Out & Play 5K Race Series Pet Friendly Lodging Fall Foliage Report EXPLORE M”
+- **Hamilton Branch State Park** (US-2897, state, status ok, 11 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/hamilton-branch/camping)
   - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
-  - booking.url = "https://reserve.southcarolinaparks.com/lake-wateree" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/lake-wateree”
-  - hookups.electric = true · “e shop and a refueling dock. An ample number of Lake Wateree camping sites with water and electrical hookups are available. Many Lake Watere”
-  - hookups.water = true · “amp, tackle shop and a refueling dock. An ample number of Lake Wateree camping sites with water and electrical hookups are available. Many L”
+  - booking.url = "https://reserve.southcarolinaparks.com/hamilton-branch" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/hamilton-branch”
+  - dump_station = true · “ch include restroom facilities with hot showers are also located throughout the park. Two dump stations are available for RVs. Camping Reser”
+  - hookups.electric = true · “contacting the park directly. Standard Sites with Elec. & Water: 173 sites with water and electricity Designated Tent Sites: 11 sites are av”
+  - hookups.water = true · “vation by contacting the park directly. Standard Sites with Elec. & Water: 173 sites with water and electricity Designated Tent Sites: 11 si”
+  - phone_hint = "(864) 333-2223" · “ks Official Site Hamilton Branch DIRECTIONS 111 Campground RD Plum Branch, SC 29845 PHONE 864.333.2223 EMAIL MAKE A RESERVATION TOP 5 THINGS”
+  - restrooms = "yes (kind not stated)" · “Lake is available. Some sites accommodate RVs up to 40 feet, others up to 35 feet. Eight comfort stations which include restroom facilities ”
+  - rules.pets = "Pets are allowed in most outdoor areas provided they are ke · “m. ADMISSION $3 adults; $1.50 SC seniors; $1 children age 6-15; age 5 & younger free PETS Pets are allowed in most outdoor areas provided th”
+  - rv_max_ft = 40 · “ion: Camping along the shores of Strom Thurmond Lake is available. Some sites accommodate RVs up to 40 feet, others up to 35 feet. Eight com”
+  - showers = true · “, others up to 35 feet. Eight comfort stations which include restroom facilities with hot showers are also located throughout the park. Two ”
+- **Colleton State Park** (US-2890, state, status ok, 16 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/colleton/camping)
+  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
+  - booking.url = "https://reserve.southcarolinaparks.com/colleton" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/colleton”
+  - dump_station = true · “Unique Features Volunteers Visitor Survey ORDER ONLINE! Colleton State Park Coast Camping Dump station access is available to non-campers fo”
+  - features = "fire rings and nearby restrooms" · “and has a lead officer or elected/appointed officials.) The area includes picnic tables, fire rings and nearby restrooms. Reservations are a”
+  - fees = "$10 fee | $11 -$13.50 which includes up to five campers" · “! Colleton State Park Coast Camping Dump station access is available to non-campers for a $10 fee. Camping Information: The main roads at th”
+  - hookups.amps = [20, 30, 50] · “and in the campground are paved. Each site is packed sand and includes individual water, 20/30/50 amp electrical hookups and sewer. Some sit”
+  - hookups.electric = true · “ampground are paved. Each site is packed sand and includes individual water, 20/30/50 amp electrical hookups and sewer. Some sites accommoda”
+  - hookups.sewer = true · “ch site is packed sand and includes individual water, 20/30/50 amp electrical hookups and sewer. Some sites accommodate RVs up to 40 feet, o”
+  - hookups.water = true · “cking in on today, Friday, you must make the reservation by contacting the park directly. Full Hookup Sites with Elec, Water, Sewer: 25 site”
+  - phone_hint = "(843) 538-8206" · “arolina Parks Official Site Colleton DIRECTIONS 147 Wayside LN Walterboro, SC 29488 PHONE 843.538.8206 EMAIL MAKE A RESERVATION TOP 5 THINGS”
+- **Aiken State Park** (US-2882, state, status ok, no campground facts in the page text: needs browser?, 1 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/)
+  - rules.pets = "Pet Friendly" · “n Ultimate Outsider. GET THE GUIDE PICK UP A PARK PASSPORT Come Out & Play 5K Race Series Pet Friendly Lodging Fall Foliage Report EXPLORE M”
+- **Calhoun Falls State Park** (US-2887, state, status ok, 11 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/calhoun-falls/camping)
+  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
+  - booking.url = "https://reserve.southcarolinaparks.com/calhoun-falls" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/calhoun-falls”
+  - hookups.electric = true · “ted along the shores of Lake Russell. Two of the campgrounds provide individual water and electrical hookups. Some of these sites accommodat”
+  - hookups.water = true · “s are located along the shores of Lake Russell. Two of the campgrounds provide individual water and electrical hookups. Some of these sites ”
+  - phone_hint = "(864) 447-8267" · “ficial Site Calhoun Falls DIRECTIONS 46 Maintenance Shop RD Calhoun Falls, SC 29628 PHONE 864.447.8267 EMAIL MAKE A RESERVATION TOP 5 THINGS”
+  - restrooms = "yes (kind not stated)" · “centralized water. All but one tent site is waterfront. Each campground is convenient to restrooms with hot showers. Camping Reservations: T”
   - rules.pets = "Pets are allowed in most outdoor areas provided they are ke · “ly ADMISSION $3 adults; $1.50 SC seniors; $1 children age 6-15; age 5 & younger free PETS Pets are allowed in most outdoor areas provided th”
+  - rv_max_ft = 40 · “pgrounds provide individual water and electrical hookups. Some of these sites accommodate RVs up to 40 feet, others up to 30 feet. While ten”
+  - showers = true · “All but one tent site is waterfront. Each campground is convenient to restrooms with hot showers. Camping Reservations: To make a camping re”
+  - sites.tent = 14 · “ing the park directly. Standard Sites with Elec. & Water: 86 sites Designated Tent Sites: 14 walk-in tent sites Laundry Facilities: Yes Dump”
+- **Black River State Park** (US-13198, state, status ok, no campground facts in the page text: needs browser?, 1 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/)
+  - rules.pets = "Pet Friendly" · “n Ultimate Outsider. GET THE GUIDE PICK UP A PARK PASSPORT Come Out & Play 5K Race Series Pet Friendly Lodging Fall Foliage Report EXPLORE M”
+- **Caesars Head hike-in trailside campsites (18 backcountry sites, Mountain Bridge Wilderness)** (intake-US-2886, agency (outside research camping-us-oct31), status ok, no campground facts in the page text: needs browser?, 6 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/caesars-head)
+  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
+  - booking.url = "https://reserve.southcarolinaparks.com/caesars-head" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/caesars-head”
+  - fees = "$3 adults" · “r before dark, year-round. OFFICE 9:00 a.m. to 5 p.m., daily ADMISSION Trail access cost: $3 adults; $1.50 SC seniors; $1 children age 6-15;”
+  - reservable = "mixed" · “ed parking and will often reach capacity on weekends in October-November. Entry is always first-come first serve when parking is available. ”
+  - restrooms = "yes (kind not stated)" · “t on week days for a better chance of entry. We thank you for your patience. Caesars Head restrooms and overlook are OPEN from 9 a.m. to sun”
+  - rules.pets = "Pets are allowed in most outdoor areas provided they are ke · “access cost: $3 adults; $1.50 SC seniors; $1 children age 6-15; age 5 & younger free PETS Pets are allowed in most outdoor areas provided th”
+- **Baker Creek State Park** (US-2884, state, status ok, 13 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/baker-creek/camping)
+  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
+  - booking.url = "https://reserve.southcarolinaparks.com/baker-creek" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/baker-creek”
+  - hookups.amps = [50] · “PARK ADVISORY THE CAMPGROUND IS NOW OPEN! With two new family-style comfort stations and 50-amp service. All trails are currently closed due”
+  - hookups.electric = true · “ion by contacting the park directly. Standard Sites with Elec. & Water: 30 standard sites Full Hookup Sites with Elec, Water, Sewer: 2 full ”
+  - hookups.sewer = true · “ion by contacting the park directly. Standard Sites with Elec. & Water: 30 standard sites Full Hookup Sites with Elec, Water, Sewer: 2 full ”
+  - hookups.water = true · “ion by contacting the park directly. Standard Sites with Elec. & Water: 30 standard sites Full Hookup Sites with Elec, Water, Sewer: 2 full ”
+  - phone_hint = "(864) 443-2457" · “a Parks Official Site Baker Creek DIRECTIONS 863 Baker Creek RD McCormick, SC 29835 PHONE 864.443.2457 EMAIL MAKE A RESERVATION TOP 5 THINGS”
+  - restrooms = "yes (kind not stated)" · “ENTLY ASKED QUESTIONS PARK ADVISORY THE CAMPGROUND IS NOW OPEN! With two new family-style comfort stations and 50-amp service. All trails ar”
+  - rules.pets = "Pets are allowed in most outdoor areas provided they are ke · “m. ADMISSION $3 adults; $1.50 SC seniors; $1 children age 6-15; age 5 & younger free PETS Pets are allowed in most outdoor areas provided th”
+  - showers = true · “ong the shores of Strom Thurmond Lake. The campground is convenient to restrooms with hot showers. Camping Reservations: To make a camping r”
+- **Cheraw State Park** (US-2888, state, status ok, 16 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/cheraw/camping)
+  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
+  - booking.url = "https://reserve.southcarolinaparks.com/cheraw" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/cheraw”
+  - drinking_water = false · “oat-in camping area is located at the old boat landing on the north side of Lake Juniper. Drinking water is not available. To make a reserva”
+  - dump_station = true · “s with hot showers. Six sites are waterfront on Lake Juniper, the park's 360-acre lake. A dump station is available for RVs. Camping Reserva”
+  - fees = "$11 -$13.50 which allows up to ten campers | $5-$6.50 incre · “To make a primitive group camping reservation, contact the park directly. Minimum rate is $11 -$13.50 which allows up to ten campers. The ra”
+  - hookups.amps = [30] · “es with Elec, Water, Sewer: Campsites 4 and 5 are full service sites with the electricity(30 amp), water and sewer. Designated Tent Sites: T”
+  - hookups.electric = true · “Camping Camping Information: Each campsite is packed gravel and has individual water and electrical hookups. The pull-through sites accommod”
+  - hookups.sewer = true · “reservation by contacting the park directly. Standard Sites with Elec. & Water: 17 sites Full Hookup Sites with Elec, Water, Sewer: Campsite”
+  - hookups.water = true · “k Midlands Camping Camping Information: Each campsite is packed gravel and has individual water and electrical hookups. The pull-through sit”
+  - phone_hint = "(843) 537-9656" · “Carolina Parks Official Site Cheraw DIRECTIONS 100 State Park RD Cheraw, SC 29520 OFFICE 843.537.9656 GOLF 1.800.868.9630 EMAIL MAKE A RESER”
+- **Edisto Beach State Park** (US-2894, state, status ok, 12 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/edisto-beach/camping)
+  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
+  - booking.url = "https://reserve.southcarolinaparks.com/edisto-beach" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/edisto-beach”
+  - dump_station = true · “a.m. - 6 p.m. daily (extended to 8 p.m. during Daylight Savings Time) OFFICE M-F 9am-5pm Dump Station Gate Hours: 8:00 a.m. to 6:00 p.m., da”
+  - hookups.amps = [20, 30, 50] · “reservation by contacting the park directly. Standard Sites with Elec. & Water: 112 sites 50 Amp Service Sites: All of the standard campsite”
+  - hookups.electric = true · “tations and grocery stores. Camping Information: There are two campgrounds with water and electrical hookups that are available ocean-side o”
+  - hookups.water = true · “filling stations and grocery stores. Camping Information: There are two campgrounds with water and electrical hookups that are available oce”
+  - phone_hint = "(843) 869-2156" · “s Official Site Edisto Beach DIRECTIONS 8377 State Cabin RD Edisto Island, SC 29438 PHONE 843.869.2156 EMAIL MAKE A RESERVATION TOP 5 THINGS”
+  - restrooms = "yes (kind not stated)" · “ated areas. Several sites accommodate RVs up to 40 feet. Each campground is convenient to restrooms with hot showers. Camping Reservations: ”
+  - rules.pets = "Pets are not allowed in the cabins or the cabin areas" · “ISSION $8/adult; $5 SC seniors; $4/ child age 6-15; Free for children 5 and younger. PETS Pets are not allowed in the cabins or the cabin ar”
+  - rv_max_ft = 40 · “ar the salt marsh. Camping is only allowed in designated areas. Several sites accommodate RVs up to 40 feet. Each campground is convenient t”
+- **Chester State Park** (US-2889, state, status ok, 15 facts) · [southcarolinaparks.com](https://southcarolinaparks.com/chester/camping)
+  - booking.how = "online: reserve.southcarolinaparks.com" · “link “MAKE A RESERVATION””
+  - booking.url = "https://reserve.southcarolinaparks.com/chester" · “link “MAKE A RESERVATION” -> https://reserve.southcarolinaparks.com/chester”
+  - features = "fire rings, lantern holders, picnic tables and picnic pads" · “ked gravel and has individual water and 50 amp electrical hookups. All sites also include fire rings, lantern holders, picnic tables and pic”
+  - fees = "$13.50 which allows up to ten campers | $5 increments for e · “To make a primitive group camping reservation, contact the park directly. Minimum rate is $13.50 which allows up to ten campers. The rate in”
+  - hookups.amps = [50] · “campground. Camping Information: Each site is packed gravel and has individual water and 50 amp electrical hookups. All sites also include f”
+  - hookups.electric = true · “ound. Camping Information: Each site is packed gravel and has individual water and 50 amp electrical hookups. All sites also include fire ri”
+  - phone_hint = "(803) 385-2680" · “Carolina Parks Official Site Chester DIRECTIONS 788 State Park DR Chester, SC 29706 PHONE 803.385.2680 EMAIL MAKE A RESERVATION TOP 5 THINGS”
+  - reservable = true · “ludes picnic tables, central water, fire ring and is located 100 yards from the restroom. Reservations are accepted. To make a primitive gro”
+  - restrooms = "flush + vault" · “able and a tent pad. A vault toilet is available in the parking area, and hot showers and flush toilets are available in the standard campgr”
+  - rules.pets = "Pets are not allowed in the camper cabins or the camper cab · “Su ADMISSION $3 adults; $1.50 SC seniors; $1 children age 6-15; age 5 & younger free PETS Pets are not allowed in the camper cabins or the c”
 
 ## US-FL: 12 random samples (records with facts; seed = the date)
 
-- **Two primitive campgrounds (FFS-regulated)** (intake-US-6318, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [myfwc.com](https://myfwc.com/recreation/lead/ok-slough/things-to-do/)
-  - booking.url = "https://myfwc.com/recreation/lead/ok-slough/things-to-do/" · “booking link from our outside research (camping, in the park) row (official system myfwc.com)”
-  - drinking_water = false · “s permitted year-round at two campgrounds and is regulated by the Florida Forest Service. Potable water is not available. Check with the Flo”
-  - map.date_how = "web page, no date in the link" · “link “Explore by map””
-  - map.url = "http://ocean.floridamarine.org/wma/entrances/" · “link “Explore by map” -> http://ocean.floridamarine.org/wma/entrances/”
-  - season = "year-round" · “Service to see their designated equestrian trail. Camping Primitive camping is permitted year-round at two campgrounds and is regulated by t”
-- **Blackwater River State Park** (intake-US-1841, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
+- **Faver-Dykes State Park** (intake-US-1866, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
   - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
   - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
   - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
   - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
-- **Fanning Springs State Park** (intake-US-1865, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
+- **John Pennekamp Coral Reef State Park** (intake-US-1886, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
+  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
+  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
+- **Gamble Rogers Memorial State Recreation Area at Flagler Beach** (intake-US-3626, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
+  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
+  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
+- **O'Leno State Park** (intake-US-1906, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
+  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
+  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
+- **Myakka River State Park** (intake-US-1904, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
   - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
   - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
   - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
@@ -844,22 +848,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
   - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
   - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
-- **Big Lagoon State Park** (intake-US-1837, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
-  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
-  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
-  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
-- **Faver-Dykes State Park** (intake-US-1866, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
-  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
-  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
-  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
-- **Manatee Springs State Park** (intake-US-1901, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
-  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
-  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
-  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
-- **Fred Gannon Rocky Bayou State Park** (intake-US-1873, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
+- **Mike Roess Gold Head Branch State Park** (intake-US-1902, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
   - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
   - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
   - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
@@ -869,25 +858,84 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
   - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
   - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
-- **Little Manatee River State Park** (intake-US-1898, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
+- **Oscar Scherer State Park** (intake-US-1909, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
   - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
   - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
   - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
   - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
-- **High Bluff Campground** (intake-US-6312, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [myfwc.com](https://myfwc.com/recreation/lead/joe-budd/things-to-do/)
-  - booking.how = "online: floridastateforests.reserveamerica.com" · “link “Florida Forest Service Reserve America””
-  - booking.url = "https://floridastateforests.reserveamerica.com/camping/high · “link “Florida Forest Service Reserve America” -> https://floridastateforests.reserveamerica.com/camping/high-bluff-campground-lake-talquin-s”
-  - map.date_how = "web page, no date in the link" · “link “Explore by map””
-  - map.url = "http://ocean.floridamarine.org/wma/entrances/" · “link “Explore by map” -> http://ocean.floridamarine.org/wma/entrances/”
-  - reservable = true · “ife and unique plants. Camping Camping is permitted only at the High Bluff Campground. To reserve a camp site, visit the Florida Forest Serv”
-- **Sebastian Inlet State Park** (intake-US-1914, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
+- **Falling Waters State Park** (intake-US-1864, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
   - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
   - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
   - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
   - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
+- **Blue Spring State Park** (intake-US-1842, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
+  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
+  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
+- **Long Pine Key Campground; Flamingo Campground** (intake-US-0024, agency (outside research camping-us-oct31), status ok, 13 facts) · [www.nps.gov](https://www.nps.gov/ever/planyourvisit/camping.htm)
+  - booking.how = "online: www.recreation.gov" · “link “purchased online””
+  - booking.url = "https://www.recreation.gov/sitepass/74278" · “link “purchased online” -> https://www.recreation.gov/sitepass/74278”
+  - drinking_water = true · “as raccoons often chew through soft-sided containers (such as “milk jugs”) to get to your drinking water. In addition to ruining your trip, ”
+  - fees = "$21 administrative fee plus an additional | $2 per person,  · “you during your trip. You are no longer required to pick up a physical permit. There is a $21 administrative fee plus an additional $2 per p”
+  - phone = "(305) 242-7700" · “ey Visitor Center. For the Gulf Coast District, please call 305-242-7700 . Safely exploring a wilderness by water requires careful p”
+  - phone_hint = "(305) 242-7700" · “equire assistance planning your trip, call or stop by the Flamingo Visitor Center or call 305-242-7700. Questions on Permits and Reservation”
+  - reservable = true · “ing aboard boats. Campers can make advanced reservations through Recreation.gov. Advanced reservations are available on a rolling basis, thr”
+  - restrooms = "some" · “y are elevated 10' x 12' wooden platforms with roofs. A walkway leads to a self-contained toilet. You'll need a free-standing tent, since st”
+  - rules.fires = "campfires are allowed on chickees" · “ained toilet. You'll need a free-standing tent, since stakes or nails are not allowed. No campfires are allowed on chickees. Some paddlers h”
+  - rules.generators = "Generators, chain saws and other portable motors are prohib · “nal Park follows State of Florida regulations. Fireworks are prohibited. Portable Motors :Generators, chain saws and other portable motors a”
 
 ## US-MS: 12 random samples (records with facts; seed = the date)
 
+- **USACE Tenn-Tom campgrounds (e.g. Dewayne Hayes, Town Creek) elsewhere on Columbus Lake** (intake-US-7129, agency (outside research camping-us-oct31), status ok, 6 facts) · [www.recreation.gov](https://www.recreation.gov/camping/campgrounds/10296866)
+  - booking.how = "online: www.recreation.gov" · “link “Tennessee-Tombigbee Waterway””
+  - booking.url = "https://www.recreation.gov/gateways/441" · “link “Tennessee-Tombigbee Waterway” -> https://www.recreation.gov/gateways/441”
+  - hookups.electric = "some" · “g the lock and dam, and hanging out with friends. Facilities Each shelter provides water, electricity, and picnic tables for your use (excep”
+  - restrooms = "yes (kind not stated)" · “leash or a 6 foot lead. Owners must clean up pets’ waste. Service animals only allowed in bathhouses. Please no unreasonable amount of noise”
+  - rules.pets = "Pets must be on a leash or a 6 foot lead" · “. 9. Shelter Reservation fees are refundable up to seven days before the reservation. 10. Pets must be on a leash or a 6 foot lead. Owners m”
+  - showers = true · “leash or a 6 foot lead. Owners must clean up pets’ waste. Service animals only allowed in bathhouses. Please no unreasonable amount of noise”
+- **Primitive camping (WMA) in designated areas** (intake-US-7084, agency (outside research camping-us-oct31), status ok, 5 facts) · [www.mdwfp.com](https://www.mdwfp.com/wildlife-hunting/wmas/phil-bryant-wma)
+  - booking.url = "https://www.mdwfp.com/wildlife-hunting/wmas/phil-bryant-wma · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
+  - map.date_how = "PDF, year 2024 in the link" · “link “Ten Point Hunt Unit Area Map (PDF)””
+  - map.url = "https://www.mdwfp.com/sites/default/files/2024-04/phil-brya · “link “Ten Point Hunt Unit Area Map (PDF)” -> https://www.mdwfp.com/sites/default/files/2024-04/phil-bryant-hunt-units-2023-1-v2_1.pdf”
+  - phone = "(601) 432-2199" · “y. If you have any questions regarding Phil Bryant WMA call 601-432-2199. Individual Hunt Units Ten Point Unit Driving Directions Ap”
+  - sites.total = 3 · “south) at the sharp turn, then travel an additional 0.9 miles south to the Backwoods Unit 3 Campsite and Visitor Permi station. Backwoods Un”
+- **Primitive camping (WMA) in designated areas** (intake-US-7083, agency (outside research camping-us-oct31), status ok, 5 facts) · [www.mdwfp.com](https://www.mdwfp.com/wildlife-hunting/wmas/mahannah-wma)
+  - booking.url = "https://www.mdwfp.com/wildlife-hunting/wmas/mahannah-wma" · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
+  - checkout = "1:00 pm" · “hunt? Shooting hours for waterfowl on this WMA end at 12:00 noon. Waterfowl hunters must check out by 1:00 pm, except during the waterfowl y”
+  - hookups.electric = true · “arty will be allowed to hunt the unit on your draw date. Are ATV/UTVs allowed? ORVs/UTVs/ Electric Bikes are allowed only on designated road”
+  - map.date_how = "PDF, year 2024 in the link" · “link “Mahannah Area Map (PDF)””
+  - map.url = "https://www.mdwfp.com/sites/default/files/2024-04/mahannah- · “link “Mahannah Area Map (PDF)” -> https://www.mdwfp.com/sites/default/files/2024-04/mahannah-bryant-2023.pdf”
+- **State lake campground** (intake-US-12193, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/lake-claude-bennett)
+  - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/lake-claude-ben · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
+  - hookups.electric = true · “information. Boat ramp Handicap accessible fishing piers 31 developed camping sites with electrical/water hookups Restrooms with showers Pav”
+  - hookups.water = true · “information. Boat ramp Handicap accessible fishing piers 31 developed camping sites with electrical/water hookups Restrooms with showers Pav”
+  - map.date_how = "PDF, year 2024 in the link" · “link “Lake Depth Map””
+  - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/claude-be · “link “Lake Depth Map” -> https://www.mdwfp.com/sites/default/files/2024-05/claude-bennett-habitat-2017.pdf”
+  - phone = "(601) 727-3561" · “y. Address: 237 County Rd 50319, Rose Hill, MS 39356 Phone: (601) 727-3561 Fees: Daily and Annual Fishing Report Bass No new report. B”
+  - reservable = false · “0 GPS coordinates that were added on 12/17/14 are listed below. Amenities Campgrounds are first come first served, please call the State Lak”
+  - restrooms = "yes (kind not stated)" · “andicap accessible fishing piers 31 developed camping sites with electrical/water hookups Restrooms with showers Pavilion rental with restro”
+  - showers = true · “ble fishing piers 31 developed camping sites with electrical/water hookups Restrooms with showers Pavilion rental with restrooms Picnic tabl”
+- **State lake campground** (intake-US-12196, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/tippah-county-lake)
+  - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/tippah-county-l · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
+  - hookups.electric = true · “information. Boat ramp Handicap accessible fishing piers 22 developed camping sites with electrical/water hookups Primitive camping Restroom”
+  - hookups.water = true · “information. Boat ramp Handicap accessible fishing piers 22 developed camping sites with electrical/water hookups Primitive camping Restroom”
+  - map.date_how = "PDF, year 2024 in the link" · “link “Lake Depth Map””
+  - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/tippah-la · “link “Lake Depth Map” -> https://www.mdwfp.com/sites/default/files/2024-05/tippah-lake-depth-and-fish-atractors.pdf”
+  - phone = "(662) 837-9850" · “ssissippi. Address: 1180 Co Rd 410, Ripley, MS 38663 Phone: (662) 837-9850 Fees: Daily and Annual Fishing Report Bass Angling traffic”
+  - reservable = false · “within ski area. Lake is designated as No Wake all other times. Amenities Campgrounds are first come first served, please call the State Lak”
+  - restrooms = "yes (kind not stated)" · “fishing piers 22 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental with restroo”
+  - showers = true · “22 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental with restrooms Picnic tabl”
+- **State lake campground** (intake-US-12205, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/lake-mike-conner)
+  - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/lake-mike-conne · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
+  - hookups.electric = true · “nformation. Boat ramp 2 handicap accessible fishing piers 15 developed camping sites with electrical/water hookups Primitive camping Restroo”
+  - hookups.water = true · “nformation. Boat ramp 2 handicap accessible fishing piers 15 developed camping sites with electrical/water hookups Primitive camping Restroo”
+  - map.date_how = "PDF, year 2024 in the link" · “link “Lake Depth Map””
+  - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/lake_mike · “link “Lake Depth Map” -> https://www.mdwfp.com/sites/default/files/2024-05/lake_mike_conner_web_map_2016__2_.pdf”
+  - phone = "(601) 765-4024" · “in recent years. Address: Lake Rd, Collins, MS 39428 Phone: (601) 765-4024 Fees: Daily and Annual Fishing Report - Updated 10/26/2026”
+  - reservable = false · “31.57489N -89.65144W 31.57251N -89.65022W 31.57206N -89.64914W Amenities Campgrounds are first come first served, please call the State Lake”
+  - restrooms = "yes (kind not stated)" · “fishing piers 15 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Picnic table”
+  - showers = true · “15 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Picnic tables Reel Facts L”
 - **State lake campground (21 camping pads and 2 handicapped camping pads with electrical/water/sewer hookups)** (intake-US-12204, agency (outside research camping-us-oct31), status ok, 10 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/calling-panther-lake)
   - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/calling-panther · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
   - hookups.electric = true · “he State Lake office for information. 21 camping pads and 2 handicapped camping pads with electrical/water/sewer hookups. Boat ramp Kayak la”
@@ -899,52 +947,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - reservable = false · “within ski area. Lake is designated as No Wake all other times. Amenities Campgrounds are first come first served, please call the State Lak”
   - restrooms = "yes (kind not stated)" · “ewer hookups. Boat ramp Kayak launch Handicap accessible fishing pier Handicap accessible restrooms with showers Nature trail. Reel Facts Sh”
   - showers = true · “oat ramp Kayak launch Handicap accessible fishing pier Handicap accessible restrooms with showers Nature trail. Reel Facts Sheet Lake Depth ”
-- **State lake campground** (intake-US-12199, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/lake-tom-bailey)
-  - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/lake-tom-bailey · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
-  - hookups.electric = true · “information. Boat ramp Handicap accessible fishing piers 22 developed camping sites with electrical/water hookups Primitive camping Restroom”
-  - hookups.water = true · “information. Boat ramp Handicap accessible fishing piers 22 developed camping sites with electrical/water hookups Primitive camping Restroom”
-  - map.date_how = "PDF, year 2024 in the link" · “link “Lake Depth Map””
-  - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/lake-tom- · “link “Lake Depth Map” -> https://www.mdwfp.com/sites/default/files/2024-05/lake-tom-bailey-depth.pdf”
-  - phone = "(601) 632-4679" · “e Tom Bailey, 3222 Northshore Dr, Toomsuba, MS 39364 Phone: (601) 632-4679 Fees: Daily and Annual Effective 9/22/2025, Tom Bailey Lake”
-  - reservable = false · “, and Labor Day. Lake is designated as No Wake all other times. Amenities Campgrounds are first come first served, please call the State Lak”
-  - restrooms = "yes (kind not stated)" · “fishing piers 22 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Picnic tables Barbecue grill”
-  - showers = true · “22 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Picnic tables Barbecue grills. Fish Attrac”
-- **Primitive camping (WMA) / USFS dispersed or campgrounds** (intake-US-7080, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.mdwfp.com](https://www.mdwfp.com/wildlife-hunting/wmas/sunflower-wma)
-  - booking.url = "https://www.mdwfp.com/wildlife-hunting/wmas/sunflower-wma" · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
-  - map.date_how = "PDF, year 2024 in the link" · “link “Sunflower Area Map (PDF)””
-  - map.url = "https://www.mdwfp.com/sites/default/files/2024-04/sunflower · “link “Sunflower Area Map (PDF)” -> https://www.mdwfp.com/sites/default/files/2024-04/sunflower_2023.pdf”
-  - phone = "(662) 873-6256" · “d trail closures, please contact the Delta Force Service at 662-873-6256 The permit station with cards is located off the levee. ADD”
-- **State lake campground** (intake-US-12194, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/lake-lamar-bruce)
-  - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/lake-lamar-bruc · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
-  - hookups.electric = true · “information. Boat ramp Handicap accessible fishing piers 11 developed camping sites with electrical/water hookups Primitive camping Restroom”
-  - hookups.water = true · “information. Boat ramp Handicap accessible fishing piers 11 developed camping sites with electrical/water hookups Primitive camping Restroom”
-  - map.date_how = "PDF, year 2024 in the link" · “link “Lake Depth Map””
-  - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/lake-lama · “link “Lake Depth Map” -> https://www.mdwfp.com/sites/default/files/2024-05/lake-lamar-bruce_2019.pdf”
-  - phone = "(662) 869-2009" · “g piers, and a new pond. Address: Saltillo, MS 38866 Phone: (662) 869-2009 Fees: Daily and Annual Fishing Report Bass The fishing repo”
-  - reservable = false · “3 -88.6666 34.39078 -88.6684 34.3914 -88.6679 34.39422 -88.6664 Amenities Campgrounds are first come first served, please call the State Lak”
-  - restrooms = "yes (kind not stated)" · “fishing piers 11 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Picnic table”
-  - showers = true · “11 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Picnic tables Barbecue gri”
-- **State lake campground** (intake-US-12196, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/tippah-county-lake)
-  - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/tippah-county-l · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
-  - hookups.electric = true · “information. Boat ramp Handicap accessible fishing piers 22 developed camping sites with electrical/water hookups Primitive camping Restroom”
-  - hookups.water = true · “information. Boat ramp Handicap accessible fishing piers 22 developed camping sites with electrical/water hookups Primitive camping Restroom”
-  - map.date_how = "PDF, year 2024 in the link" · “link “Lake Depth Map””
-  - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/tippah-la · “link “Lake Depth Map” -> https://www.mdwfp.com/sites/default/files/2024-05/tippah-lake-depth-and-fish-atractors.pdf”
-  - phone = "(662) 837-9850" · “ssissippi. Address: 1180 Co Rd 410, Ripley, MS 38663 Phone: (662) 837-9850 Fees: Daily and Annual Fishing Report Bass Angling traffic”
-  - reservable = false · “within ski area. Lake is designated as No Wake all other times. Amenities Campgrounds are first come first served, please call the State Lak”
-  - restrooms = "yes (kind not stated)" · “fishing piers 22 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental with restroo”
-  - showers = true · “22 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental with restrooms Picnic tabl”
-- **State lake campground** (intake-US-12193, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/lake-claude-bennett)
-  - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/lake-claude-ben · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
-  - hookups.electric = true · “information. Boat ramp Handicap accessible fishing piers 31 developed camping sites with electrical/water hookups Restrooms with showers Pav”
-  - hookups.water = true · “information. Boat ramp Handicap accessible fishing piers 31 developed camping sites with electrical/water hookups Restrooms with showers Pav”
-  - map.date_how = "PDF, year 2024 in the link" · “link “Lake Depth Map””
-  - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/claude-be · “link “Lake Depth Map” -> https://www.mdwfp.com/sites/default/files/2024-05/claude-bennett-habitat-2017.pdf”
-  - phone = "(601) 727-3561" · “y. Address: 237 County Rd 50319, Rose Hill, MS 39356 Phone: (601) 727-3561 Fees: Daily and Annual Fishing Report Bass No new report. B”
-  - reservable = false · “0 GPS coordinates that were added on 12/17/14 are listed below. Amenities Campgrounds are first come first served, please call the State Lak”
-  - restrooms = "yes (kind not stated)" · “andicap accessible fishing piers 31 developed camping sites with electrical/water hookups Restrooms with showers Pavilion rental with restro”
-  - showers = true · “ble fishing piers 31 developed camping sites with electrical/water hookups Restrooms with showers Pavilion rental with restrooms Picnic tabl”
-- **Turkey Fork; Blue Lake Recreation Area; Airey Lake; Big Biloxi Recreation Area; Clear Springs Recreation Area** (intake-US-4494, agency (outside research camping-us-oct31), status ok, 10 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/mississippi/recarea/?recid=28815)
+- **Turkey Fork; Blue Lake Recreation Area; Airey Lake; Big Biloxi Recreation Area; Clear Springs Recreation Area** (intake-US-4497, agency (outside research camping-us-oct31), status ok, 10 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/mississippi/recarea/?recid=28815)
   - booking.how = "online: www.recreation.gov" · “link “Delta National Forest Campsites””
   - booking.url = "https://www.recreation.gov/camping/campgrounds/253459" · “link “Delta National Forest Campsites” -> https://www.recreation.gov/camping/campgrounds/253459”
   - map.date_how = "web page, no date in the link" · “link “Daily Prescribed Burns Map””
@@ -955,36 +958,6 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - showers = true · “year. Please place your campsite at least 100 feet from any stream or other water source. Showers can be locally heavy and occasionally have”
   - sites.primitive = 57 · “athon Lake Shockaloe Trail BC1 Shockaloe Trail BC2 Delta Delta National Forest Campsites (57 Primitive camp sites) De Soto Janice Recreation”
   - sites.total = 20 · “camping, picnicking, swimming, boating, fishing, hiking and bicycling. Facilities include 20 campsites with utility… Clear Springs Site Open”
-- **State lake campground** (intake-US-12206, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/lake-jeff-davis)
-  - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/lake-jeff-davis · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
-  - hookups.electric = true · “information. Boat ramp Handicap accessible fishing piers 13 developed camping sites with electrical/water hookups Primitive camping Restroom”
-  - hookups.water = true · “information. Boat ramp Handicap accessible fishing piers 13 developed camping sites with electrical/water hookups Primitive camping Restroom”
-  - map.date_how = "PDF, year 2024 in the link" · “link “Lake Depth Map””
-  - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/lake_jeff · “link “Lake Depth Map” -> https://www.mdwfp.com/sites/default/files/2024-05/lake_jeff_davis.pdf”
-  - phone = "(601) 792-8225" · “ial cover. Address: 16 Lake Drive Prentiss, MS 39474 Phone: (601) 792-8225 Fees: Daily and Annual Fishing Report - Updated 10/26/2026”
-  - reservable = false · “within ski area. Lake is designated as No Wake all other times. Amenities Campgrounds are first come first served, please call the State Lak”
-  - restrooms = "yes (kind not stated)" · “fishing piers 13 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Nature trail”
-  - showers = true · “13 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Nature trail Bike trail Pi”
-- **State lake campground** (intake-US-12208, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/lake-perry)
-  - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/lake-perry" · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
-  - hookups.electric = true · “Boat ramps Kayak launch Handicap accessible fishing piers 15 developed camping sites with electrical/water hookups Primitive camping Restroo”
-  - hookups.water = true · “Boat ramps Kayak launch Handicap accessible fishing piers 15 developed camping sites with electrical/water hookups Primitive camping Restroo”
-  - map.date_how = "PDF, year 2024 in the link" · “link “Lake Depth Map””
-  - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/lake_perr · “link “Lake Depth Map” -> https://www.mdwfp.com/sites/default/files/2024-05/lake_perry_Depth.pdf”
-  - phone = "(601) 784-6119" · “ally. Address: 281 Lake Perry Rd, Beaumont, MS 39423 Phone: (601) 784-6119 Fees: Daily and Annual Fishing Report - Updated 10/26/2026”
-  - reservable = false · “n the ski area . Lake is designated as No Wake all other times. Amenities Campgrounds are first come first served, please call the State Lak”
-  - restrooms = "yes (kind not stated)" · “fishing piers 15 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Nature trail”
-  - showers = true · “15 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Nature trail Picnic tables”
-- **State lake campground** (intake-US-12205, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/lake-mike-conner)
-  - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/lake-mike-conne · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
-  - hookups.electric = true · “nformation. Boat ramp 2 handicap accessible fishing piers 15 developed camping sites with electrical/water hookups Primitive camping Restroo”
-  - hookups.water = true · “nformation. Boat ramp 2 handicap accessible fishing piers 15 developed camping sites with electrical/water hookups Primitive camping Restroo”
-  - map.date_how = "PDF, year 2024 in the link" · “link “Lake Depth Map””
-  - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/lake_mike · “link “Lake Depth Map” -> https://www.mdwfp.com/sites/default/files/2024-05/lake_mike_conner_web_map_2016__2_.pdf”
-  - phone = "(601) 765-4024" · “in recent years. Address: Lake Rd, Collins, MS 39428 Phone: (601) 765-4024 Fees: Daily and Annual Fishing Report - Updated 10/26/2026”
-  - reservable = false · “31.57489N -89.65144W 31.57251N -89.65022W 31.57206N -89.64914W Amenities Campgrounds are first come first served, please call the State Lake”
-  - restrooms = "yes (kind not stated)" · “fishing piers 15 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Picnic table”
-  - showers = true · “15 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Picnic tables Reel Facts L”
 - **State lake campground (22 developed camping sites with electrical/water/sewer hookups)** (intake-US-12198, agency (outside research camping-us-oct31), status ok, 10 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/neshoba-county-lake)
   - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/neshoba-county- · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
   - hookups.electric = true · “information. Boat ramp Handicap accessible fishing piers 22 developed camping sites with electrical/water/sewer hookups Primitive camping Re”
@@ -996,46 +969,50 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - reservable = false · “e with state and Coast Guard regulations. Skiing is prohibited. Amenities Campgrounds are first come first served, please call the State Lak”
   - restrooms = "yes (kind not stated)" · “ng piers 22 developed camping sites with electrical/water/sewer hookups Primitive camping Restrooms with showers Pavilion rental with restro”
   - showers = true · “eloped camping sites with electrical/water/sewer hookups Primitive camping Restrooms with showers Pavilion rental with restrooms Picnic tabl”
-- **Primitive camping (WMA) in designated areas** (intake-US-7083, agency (outside research camping-us-oct31), status ok, 5 facts) · [www.mdwfp.com](https://www.mdwfp.com/wildlife-hunting/wmas/mahannah-wma)
-  - booking.url = "https://www.mdwfp.com/wildlife-hunting/wmas/mahannah-wma" · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
-  - checkout = "1:00 pm" · “hunt? Shooting hours for waterfowl on this WMA end at 12:00 noon. Waterfowl hunters must check out by 1:00 pm, except during the waterfowl y”
-  - hookups.electric = true · “arty will be allowed to hunt the unit on your draw date. Are ATV/UTVs allowed? ORVs/UTVs/ Electric Bikes are allowed only on designated road”
-  - map.date_how = "PDF, year 2024 in the link" · “link “Mahannah Area Map (PDF)””
-  - map.url = "https://www.mdwfp.com/sites/default/files/2024-04/mahannah- · “link “Mahannah Area Map (PDF)” -> https://www.mdwfp.com/sites/default/files/2024-04/mahannah-bryant-2023.pdf”
+- **Primitive camping (WMA) / USFS dispersed or campgrounds** (intake-US-7080, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.mdwfp.com](https://www.mdwfp.com/wildlife-hunting/wmas/sunflower-wma)
+  - booking.url = "https://www.mdwfp.com/wildlife-hunting/wmas/sunflower-wma" · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
+  - map.date_how = "PDF, year 2024 in the link" · “link “Sunflower Area Map (PDF)””
+  - map.url = "https://www.mdwfp.com/sites/default/files/2024-04/sunflower · “link “Sunflower Area Map (PDF)” -> https://www.mdwfp.com/sites/default/files/2024-04/sunflower_2023.pdf”
+  - phone = "(662) 873-6256" · “d trail closures, please contact the Delta Force Service at 662-873-6256 The permit station with cards is located off the levee. ADD”
+- **State lake campground** (intake-US-12203, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/lake-mary-crawford)
+  - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/lake-mary-crawf · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
+  - hookups.electric = true · “formation. 2 boat ramps Handicap accessible fishing piers 20 developed camping sites with electrical/water hookups Primitive camping Restroo”
+  - hookups.water = true · “formation. 2 boat ramps Handicap accessible fishing piers 20 developed camping sites with electrical/water hookups Primitive camping Restroo”
+  - map.date_how = "PDF, year 2024 in the link" · “link “””
+  - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/lake-mary · “link “” -> https://www.mdwfp.com/sites/default/files/2024-05/lake-mary-crawford-depth-map-2021.pdf”
+  - phone = "(601) 587-7853" · “ery. Address: 293 Lake Mary Ln, Monticello, MS 39654 Phone: (601) 587-7853 Fees: Daily and Annual Fishing Report - Updated 10/26/2026”
+  - reservable = false · “189, -90.1589997 31.5752798, -90.159057 31.5784526, -90.1569927 Amenities Campgrounds are first come first served, please call the State Lak”
+  - restrooms = "yes (kind not stated)" · “fishing piers 20 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Nature trail”
+  - showers = true · “20 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Nature trail Picnic tables”
+- **State lake campground** (intake-US-12194, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.mdwfp.com](https://www.mdwfp.com/fishing-boating/lakes/lake-lamar-bruce)
+  - booking.url = "https://www.mdwfp.com/fishing-boating/lakes/lake-lamar-bruc · “booking link from our outside research (camping, in the park) row (official system www.mdwfp.com)”
+  - hookups.electric = true · “information. Boat ramp Handicap accessible fishing piers 11 developed camping sites with electrical/water hookups Primitive camping Restroom”
+  - hookups.water = true · “information. Boat ramp Handicap accessible fishing piers 11 developed camping sites with electrical/water hookups Primitive camping Restroom”
+  - map.date_how = "PDF, year 2024 in the link" · “link “Lake Depth Map””
+  - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/lake-lama · “link “Lake Depth Map” -> https://www.mdwfp.com/sites/default/files/2024-05/lake-lamar-bruce_2019.pdf”
+  - phone = "(662) 869-2009" · “g piers, and a new pond. Address: Saltillo, MS 38866 Phone: (662) 869-2009 Fees: Daily and Annual Fishing Report Bass The fishing repo”
+  - reservable = false · “3 -88.6666 34.39078 -88.6684 34.3914 -88.6679 34.39422 -88.6664 Amenities Campgrounds are first come first served, please call the State Lak”
+  - restrooms = "yes (kind not stated)" · “fishing piers 11 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Picnic table”
+  - showers = true · “11 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Picnic tables Barbecue gri”
 
 ## US-IN: 12 random samples (records with facts; seed = the date)
 
-- **Campground: Electric / 200 sites Youth Tent Areas** (intake-US-2257, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
+- **Family camping (11), Horseman's Campground (25)** (intake-US-4219, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [www.in.gov](https://www.in.gov/dnr/forestry/properties/pike-state-forest/)
+  - booking.url = "https://www.in.gov/dnr/forestry/properties/pike-state-fores · “booking link from our outside research (camping, in the park) row (official system www.in.gov)”
+  - drinking_water = true · “a first-come, first-serve basis. Self-registration is required. Pit toilets and seasonal drinking water are available. There is a picnic tab”
+  - lodging_booking.how = "online: www.in.gov" · “link “Reserve a cabin””
+  - lodging_booking.url = "https://www.in.gov/dnr/forestry/properties/recreation" · “link “Reserve a cabin” -> https://www.in.gov/dnr/forestry/properties/recreation”
+  - map.date_how = "PDF, no date in the link" · “link “Pike State Forest Map””
+  - map.url = "https://www.in.gov/dA/91a139f30e/fo-PikeSF_maps.pdf?languag · “link “Pike State Forest Map” -> https://www.in.gov/dA/91a139f30e/fo-PikeSF_maps.pdf?language_id=1”
+  - reservable = "mixed" · “ctivities Camping Primitive camping is available for a fee . Campsites are available on a first-come, first-serve basis. Self-registration i”
+  - restrooms = "vault" · “ampsites are available on a first-come, first-serve basis. Self-registration is required. Pit toilets and seasonal drinking water are availa”
+- **Campground: Electric / 213 sites Youth Tent Areas Camp Store Dumping Station** (intake-US-2272, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
   - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
   - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
   - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
   - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
   - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
-- **Miami SRA campground (same lake property)** (intake-US-7843, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
-  - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
-  - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
-  - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
-  - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
-  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
-- **Paynetown SRA campground (same lake property)** (intake-US-5689, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
-  - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
-  - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
-  - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
-  - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
-  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
-- **Paynetown SRA campground (same lake property)** (intake-US-5682, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
-  - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
-  - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
-  - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
-  - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
-  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
-- **Campground: Electric / 240 sites Non-electric / 37 sites Primitive / 35 sites Youth Tent Areas Camp Store Dumping Station** (intake-US-4164, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
-  - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
-  - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
-  - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
-  - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
-  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
-- **Campground: Electric / 149 sites - Shale Bluff Primitive / 8 sites - Wooster Dumping Station** (intake-US-4166, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
+- **Campground: Electric (113 family sites), equestrian electric, rent-a-camp cabins** (intake-US-4165, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
   - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
   - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
   - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
@@ -1047,73 +1024,82 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
   - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
   - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
-- **Lieber SRA campground (same lake property)** (intake-US-5693, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
+- **Miami SRA campground (same lake property)** (intake-US-4168, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
   - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
   - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
   - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
   - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
   - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
-- **Newton-Stewart SRA campground (same lake property)** (intake-US-4172, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
+- **Fish Creek (14), Horse (15), Rattlesnake (9) campgrounds** (intake-US-4217, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.in.gov](https://www.in.gov/dnr/forestry/properties/owen-putnam-state-forest/)
+  - booking.url = "https://www.in.gov/dnr/forestry/properties/owen-putnam-stat · “booking link from our outside research (camping, in the park) row (official system www.in.gov)”
+  - drinking_water = "some" · “l as a waterfall that may occur after significant rain. Wearing hiking boots and carrying drinking water is recommended. Fish Creek - .3 mil”
+  - lodging_booking.how = "online: www.in.gov" · “link “Reserve a cabin””
+  - lodging_booking.url = "https://www.in.gov/dnr/forestry/properties/recreation" · “link “Reserve a cabin” -> https://www.in.gov/dnr/forestry/properties/recreation”
+  - map.date_how = "PDF, no date in the link" · “link “Owen-Putnam State Forest trails map””
+  - map.url = "https://www.in.gov/dA/a28b9519be/fo-owen-putnam-trail-map.p · “link “Owen-Putnam State Forest trails map” -> https://www.in.gov/dA/a28b9519be/fo-owen-putnam-trail-map.pdf?language_id=1”
+  - reservable = "mixed" · “n be obtained at the Forest Office or Fish Creek Campground. Campsites are available on a first-come, first-serve basis; please self-registe”
+  - restrooms = "vault" · “attlesnake Campground: 9 sites. Campgrounds are primitive (Class C) and are provided with vault toilets, picnic tables, grills, and parking ”
+  - sites.total = 15 · “Fish Creek Campground: 14 sites, available water; Horse Campground: 15 sites, water trough; and Rattlesnake Campground: 9 sites. Campgrounds”
+- **Campground: Electric / 112 sites Horsemen's / 56 sites - primitive Canoe Camp / 10 sites Rent-A-Camp Cabins Youth Tent Areas Dumping Station Tepicon Recreation Hall Section: Tepicon Recreation Hall is** (intake-US-2271, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
   - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
   - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
   - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
   - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
   - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
-- **Campground: Electric / 455 sites Primitive / 45 sites Dumping Station** (intake-US-4174, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
+- **Campground: Electric - 178 sites Full Hookup - 45 sites Youth Tent Areas Dumping station Camp store: April 15 to May 15 Days may vary, generally open five days a week, 9 a.m. - 5 p.m. . May 16 to Nov.** (intake-US-2269, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
   - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
   - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
   - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
   - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
   - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
-- **Hidden Paradise Campgound** (IN-49987e4f18, state, status ok, no campground facts even in a browser, 8 facts) · [www.in.gov](https://www.in.gov/dnr/outdoor-recreation/water-trails/water-trail-camping/)
+- **Paynetown SRA campground (same lake property)** (intake-US-5688, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
+  - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
+  - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
+  - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
+- **26 primitive campsites** (intake-US-4214, agency (outside research camping-us-oct31), status ok, 12 facts) · [www.in.gov](https://www.in.gov/dnr/forestry/properties/martin-state-forest/)
+  - booking.url = "https://www.in.gov/dnr/forestry/properties/martin-state-for · “booking link from our outside research (camping, in the park) row (official system www.in.gov)”
+  - drinking_water = true · “for a fee . There are 26 designated campsites located within the forest. Pit toilets and drinking water are available near sites. A self che”
+  - hookups.electric = "some" · “egill and largemouth bass, as well as some crappie and redear. Boat motors are limited to electric trolling motors. Swimming is prohibited i”
+  - lodging_booking.how = "online: www.in.gov" · “link “Reserve a cabin””
+  - lodging_booking.url = "https://www.in.gov/dnr/forestry/properties/recreation" · “link “Reserve a cabin” -> https://www.in.gov/dnr/forestry/properties/recreation”
+  - map.date_how = "PDF, no date in the link" · “link “Martin State Forest Hunting Map””
+  - map.url = "https://www.in.gov/dA/82e592117d/fo-MartinSF_Hunting_Map.pd · “link “Martin State Forest Hunting Map” -> https://www.in.gov/dA/82e592117d/fo-MartinSF_Hunting_Map.pdf?language_id=1”
+  - phone = "(317) 232-4052" · “ion, please contact the DNR Division of Nature Preserves at 317-232-4052. Mountain bike trails Martin State Forest offers seven mile”
+  - reservable = "mixed" · “on is located in the campground. We do not accept reservations, camping is available on a first come, first served basis. Fishing Martin Sta”
+  - restrooms = "vault" · “ing is available for a fee . There are 26 designated campsites located within the forest. Pit toilets and drinking water are available near ”
+- **Campground: Electric / 149 sites - Shale Bluff Primitive / 8 sites - Wooster Dumping Station** (intake-US-4166, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
+  - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
+  - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
+  - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
+- **Chain O' Lakes State Park** (IN-770beacb90, state, status ok, 10 facts) · [www.in.gov](https://www.in.gov/dnr/state-parks/parks-lakes/chain-o-lakes-state-park/)
   - booking.how = "online: www.in.gov" · “link “Reservations””
   - booking.url = "https://www.in.gov/dnr/state-parks/reservations" · “link “Reservations” -> https://www.in.gov/dnr/state-parks/reservations”
-  - lodging_booking.how = "online: www.in.gov" · “link “Reserve room at state park inn””
-  - lodging_booking.url = "https://www.in.gov/dnr/state-parks/inns" · “link “Reserve room at state park inn” -> https://www.in.gov/dnr/state-parks/inns”
-  - map.date_how = "web page, no date in the link" · “link “Find a state park map””
-  - map.url = "https://www.in.gov/dnr/state-parks/maps" · “link “Find a state park map” -> https://www.in.gov/dnr/state-parks/maps”
-  - phone_hint = "(317) 232-4070" · “ound added to this list, please contact: Allen Hurst Trails Coordinator ahurst@dnr.IN.gov 317-232-4070 Upcoming Events 11-03-2026 Fall Photo”
-  - reservable = true · “e FAQs Indiana Department of Natural Resources Online Services Buy gifts from state parks Reserve a campsite Buy a state park permit Reserve”
-- **Paynetown SRA campground (same lake property)** (intake-US-5684, agency (outside research camping-us-oct31), status ok, 5 facts) · [indianastateparks.reserveamerica.com](https://indianastateparks.reserveamerica.com/)
-  - booking.how = "online: indianastateparks.reserveamerica.com" · “link “Find a Site””
-  - booking.url = "https://indianastateparks.reserveamerica.com/unifSearch.do" · “link “Find a Site” -> https://indianastateparks.reserveamerica.com/unifSearch.do”
-  - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
-  - hookups.electric = false · “iler sites Group sites Horse sites RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
-  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins or lodgings Options Occupants ”
+  - hookups.electric = "some" · “through the chain of serene kettle lakes, hike the 29 miles of forested trails, fish the electric-motors-only lakes, stay overnight in a for”
+  - lodging_booking.how = "online: www.in.gov" · “link “Cabins””
+  - lodging_booking.url = "https://www.in.gov/dnr/state-parks/rates-and-fees/family-ca · “link “Cabins” -> https://www.in.gov/dnr/state-parks/rates-and-fees/family-cabins-fees-and-reservations”
+  - map.date_how = "PDF, no date in the link" · “link “Property Map (PDF)””
+  - map.url = "https://www.in.gov/dnr/state-parks/files/chain_o_lakes_trai · “link “Property Map (PDF)” -> https://www.in.gov/dnr/state-parks/files/chain_o_lakes_trail.pdf”
+  - reservable = true · “p FAQs Indiana Department of Natural Resources Online Services Buy gifts from state parks Reserve a campsite Buy a state park permit Reserve”
+  - showers = true · “tate Park Alerts (1) BLUE-GREEN ALGAE : Found in lakes year round. Don't drink the water. Shower after you swim. More information . Previous”
+  - sites.total = 331 · “oric one-room Stanley Schoolhouse Camping - See campground maps under MAPS tab Electric / 331 sites Non-Electric / 49 sites Primitive / 33 s”
 
 ## US-IL: 12 random samples (records with facts; seed = the date)
 
-- **Honeysuckle (99 campsites)** (US-0986:4, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
+- **Big River State Forest campground** (intake-US-4110, agency (outside research camping-us-oct31), status ok, 9 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks/camp/park.bigriver.html)
   - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
   - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
-  - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
-  - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
-- **Quail Drive (58 campsites)** (US-4094:4, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
-  - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
-  - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
-  - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
-  - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
-- **Starved Rock West Loop (58 campsites)** (US-1027:2, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
-  - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
-  - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
-  - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
-  - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
-- **Buzzards Roost (11 campsites)** (US-0981:2, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
-  - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
-  - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
-  - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
-  - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
-- **White Oak (42 campsites)** (US-1019:4, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
-  - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
-  - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
-  - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
-  - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
-- **Water Lily Campground (5 campsites)** (US-1006:3, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
-  - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
-  - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
-  - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
-  - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
-- **Turner Lake South (36 campsites)** (US-0986:3, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
+  - drinking_water = true · “shower buildings. Campsites do not have individual water or sewer hookups, but there are water hydrants throughout the campground and a dump”
+  - dump_station = true · “dual water or sewer hookups, but there are water hydrants throughout the campground and a dump station at the front of the campground.&lt;/p”
+  - hookups.electric = "some" · “campground in the southern unit at Illinois Beach provides 220 Class A Premium sites with electricity and access to showers and sanitary fac”
+  - hookups.sewer = false · “nt in the campground near the shower buildings. Campsites do not have individual water or sewer hookups, but there are water hydrants throug”
+  - reservable = "mixed" · “on summer weekends, reservations are recommended. Unreserved campsites are available on a first-come, first-serve basis. Five handicap acces”
+  - season = "April 1 through Nov. 15" · “camping unit with them at check-in.&lt;/p>\n&lt;p>&nbsp;&lt;/p>\n&lt;p>The campground is open from April 1 through Nov. 15. Reservations can”
+  - showers = "some" · “unit at Illinois Beach provides 220 Class A Premium sites with electricity and access to showers and sanitary facilities. Campers must make ”
+- **Hickory Hill Campground (150 campsites)** (US-1005:2, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
   - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
   - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
   - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
@@ -1123,28 +1109,47 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
   - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
   - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
-- **Buzzard Roost (6 campsites)** (US-0981:6, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
+- **Tent Camping (17 campsites)** (US-0981:3, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
   - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
   - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
   - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
   - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
-- **Bobwhite Circle (37 campsites)** (US-1033:12, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
+- **Illini (26 campsites)** (US-4097:6, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
   - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
   - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
   - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
   - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
-- **Rock Island Trail Campground** (intake-US-10093, agency (outside research camping-us-oct31), status ok, 10 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks/camp/park.rockislandtrail.html)
+- **Weldon Springs State Park: (area name blank in layer) 1 group camp** (US-1030:4, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
   - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
   - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
-  - drinking_water = true · “shower buildings. Campsites do not have individual water or sewer hookups, but there are water hydrants throughout the campground and a dump”
-  - dump_station = true · “dual water or sewer hookups, but there are water hydrants throughout the campground and a dump station at the front of the campground.&lt;/p”
-  - hookups.electric = "some" · “campground in the southern unit at Illinois Beach provides 220 Class A Premium sites with electricity and access to showers and sanitary fac”
-  - hookups.sewer = false · “nt in the campground near the shower buildings. Campsites do not have individual water or sewer hookups, but there are water hydrants throug”
-  - reservable = "mixed" · “on summer weekends, reservations are recommended. Unreserved campsites are available on a first-come, first-serve basis. Five handicap acces”
-  - restrooms = "vault" · “ap in the Kickapoo Creek Recreation Area and accessible only by trail. Facilities include pit toilets, fire pads, picnic tables, a picnic sh”
-  - season = "April 1 through Nov. 15" · “camping unit with them at check-in.&lt;/p>\n&lt;p>&nbsp;&lt;/p>\n&lt;p>The campground is open from April 1 through Nov. 15. Reservations can”
-  - showers = "some" · “unit at Illinois Beach provides 220 Class A Premium sites with electricity and access to showers and sanitary facilities. Campers must make ”
-- **Mud Lake East (12 campsites)** (US-0986:5, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
+  - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
+  - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
+- **Big Oak Campground (54 campsites)** (US-1006:2, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
+  - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
+  - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
+  - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
+  - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
+- **Siloam Springs State Park: (area name blank in layer) 2 cabins** (US-1023:7, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
+  - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
+  - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
+  - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
+  - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
+- **Turkey Ridge Campground (21 campsites)** (US-0992:4, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
+  - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
+  - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
+  - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
+  - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
+- **Eldon Hazlet State Park (101 campsites)** (US-0991:3, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
+  - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
+  - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
+  - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
+  - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
+- **Starved Rock West Loop (58 campsites)** (US-1027:2, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
+  - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
+  - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
+  - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
+  - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
+- **Argyle Lake State Park: (area name blank in layer) 1 group camp** (US-0979:6, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
   - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
   - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
   - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
@@ -1152,7 +1157,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 
 ## US-MO: 12 random samples (records with facts; seed = the date)
 
-- **Cuivre River State Park: Campsites area (sites E301–H311)** (US-1753:3, state, status ok, 12 facts) · [mostateparks.com](https://mostateparks.com/)
+- **Lake of the Ozarks State Park: Campsites area (sites 002–H079)** (US-1768:1, state, status ok, 12 facts) · [mostateparks.com](https://mostateparks.com/)
   - booking.how = "online: mostateparks.com" · “link “Reserve a Campsite””
   - booking.url = "https://mostateparks.com/activity/camping/reservation-syste · “link “Reserve a Campsite” -> https://mostateparks.com/activity/camping/reservation-system”
   - dump_station = true · “e great outdoors. Campgrounds offer amenities such as hot showers, laundry facilities and dump stations, and some even provide free Wi-Fi co”
@@ -1163,101 +1168,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - reservable = true · “te Parks Skip to main content Search Park/Site Status Things to Do I want to... Link Item Reserve a Campsite Go Camping Reserve a Lodging Un”
   - rules.pets = "pets are welcome in Missouri state parks" · “state parks. Enjoying Missouri State Parks with Your Pet Responsible pet owners and their pets are welcome in Missouri state parks. As a cou”
   - season = "year-round" · “to any 15 days within a 30-consecutive-day period at any one park. Electric hook-ups are available year-round at most state parks, while wat”
-- **Harry S Truman State Park: Campsites area (sites 150–151)** (US-1762:3, state, status ok, 12 facts) · [mostateparks.com](https://mostateparks.com/)
-  - booking.how = "online: mostateparks.com" · “link “Reserve a Campsite””
-  - booking.url = "https://mostateparks.com/activity/camping/reservation-syste · “link “Reserve a Campsite” -> https://mostateparks.com/activity/camping/reservation-system”
-  - dump_station = true · “e great outdoors. Campgrounds offer amenities such as hot showers, laundry facilities and dump stations, and some even provide free Wi-Fi co”
-  - hookups.electric = "some" · “ites offer more than 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. C”
-  - hookups.sewer = true · “n 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. Campgrounds are clos”
-  - map.date_how = "web page, no date in the link" · “link “””
-  - map.url = "https://mostateparks.com/page/locator-map" · “link “” -> https://mostateparks.com/page/locator-map”
-  - reservable = true · “te Parks Skip to main content Search Park/Site Status Things to Do I want to... Link Item Reserve a Campsite Go Camping Reserve a Lodging Un”
-  - rules.pets = "pets are welcome in Missouri state parks" · “state parks. Enjoying Missouri State Parks with Your Pet Responsible pet owners and their pets are welcome in Missouri state parks. As a cou”
-  - season = "year-round" · “to any 15 days within a 30-consecutive-day period at any one park. Electric hook-ups are available year-round at most state parks, while wat”
-- **Montauk State Park: Campsites area (sites 101–H401)** (US-1774:1, state, status ok, 12 facts) · [mostateparks.com](https://mostateparks.com/)
-  - booking.how = "online: mostateparks.com" · “link “Reserve a Campsite””
-  - booking.url = "https://mostateparks.com/activity/camping/reservation-syste · “link “Reserve a Campsite” -> https://mostateparks.com/activity/camping/reservation-system”
-  - dump_station = true · “e great outdoors. Campgrounds offer amenities such as hot showers, laundry facilities and dump stations, and some even provide free Wi-Fi co”
-  - hookups.electric = "some" · “ites offer more than 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. C”
-  - hookups.sewer = true · “n 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. Campgrounds are clos”
-  - map.date_how = "web page, no date in the link" · “link “””
-  - map.url = "https://mostateparks.com/page/locator-map" · “link “” -> https://mostateparks.com/page/locator-map”
-  - reservable = true · “te Parks Skip to main content Search Park/Site Status Things to Do I want to... Link Item Reserve a Campsite Go Camping Reserve a Lodging Un”
-  - rules.pets = "pets are welcome in Missouri state parks" · “state parks. Enjoying Missouri State Parks with Your Pet Responsible pet owners and their pets are welcome in Missouri state parks. As a cou”
-  - season = "year-round" · “to any 15 days within a 30-consecutive-day period at any one park. Electric hook-ups are available year-round at most state parks, while wat”
-- **Roaring River State Park: Campsites area (sites 001–H057)** (US-1780:1, state, status ok, 12 facts) · [mostateparks.com](https://mostateparks.com/)
-  - booking.how = "online: mostateparks.com" · “link “Reserve a Campsite””
-  - booking.url = "https://mostateparks.com/activity/camping/reservation-syste · “link “Reserve a Campsite” -> https://mostateparks.com/activity/camping/reservation-system”
-  - dump_station = true · “e great outdoors. Campgrounds offer amenities such as hot showers, laundry facilities and dump stations, and some even provide free Wi-Fi co”
-  - hookups.electric = "some" · “ites offer more than 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. C”
-  - hookups.sewer = true · “n 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. Campgrounds are clos”
-  - map.date_how = "web page, no date in the link" · “link “””
-  - map.url = "https://mostateparks.com/page/locator-map" · “link “” -> https://mostateparks.com/page/locator-map”
-  - reservable = true · “te Parks Skip to main content Search Park/Site Status Things to Do I want to... Link Item Reserve a Campsite Go Camping Reserve a Lodging Un”
-  - rules.pets = "pets are welcome in Missouri state parks" · “state parks. Enjoying Missouri State Parks with Your Pet Responsible pet owners and their pets are welcome in Missouri state parks. As a cou”
-  - season = "year-round" · “to any 15 days within a 30-consecutive-day period at any one park. Electric hook-ups are available year-round at most state parks, while wat”
-- **Lake Wappapello State Park: Cabins area (units LAWPCabin2)** (US-1769:3, state, status ok, 12 facts) · [mostateparks.com](https://mostateparks.com/)
-  - booking.how = "online: mostateparks.com" · “link “Reserve a Campsite””
-  - booking.url = "https://mostateparks.com/activity/camping/reservation-syste · “link “Reserve a Campsite” -> https://mostateparks.com/activity/camping/reservation-system”
-  - dump_station = true · “e great outdoors. Campgrounds offer amenities such as hot showers, laundry facilities and dump stations, and some even provide free Wi-Fi co”
-  - hookups.electric = "some" · “ites offer more than 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. C”
-  - hookups.sewer = true · “n 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. Campgrounds are clos”
-  - map.date_how = "web page, no date in the link" · “link “””
-  - map.url = "https://mostateparks.com/page/locator-map" · “link “” -> https://mostateparks.com/page/locator-map”
-  - reservable = true · “te Parks Skip to main content Search Park/Site Status Things to Do I want to... Link Item Reserve a Campsite Go Camping Reserve a Lodging Un”
-  - rules.pets = "pets are welcome in Missouri state parks" · “state parks. Enjoying Missouri State Parks with Your Pet Responsible pet owners and their pets are welcome in Missouri state parks. As a cou”
-  - season = "year-round" · “to any 15 days within a 30-consecutive-day period at any one park. Electric hook-ups are available year-round at most state parks, while wat”
-- **Backcountry/dispersed camping (not a developed campground)** (US-1754:hq0, state, status ok, 14 facts) · [mostateparks.com](https://mostateparks.com/webform/register-backcountry-camp-current-riverecho-bluff-state-park)
-  - booking.how = "online: mostateparks.com" · “link “Reserve a Campsite””
-  - booking.url = "https://mostateparks.com/activity/camping/reservation-syste · “link “Reserve a Campsite” -> https://mostateparks.com/activity/camping/reservation-system”
-  - dump_station = true · “e great outdoors. Campgrounds offer amenities such as hot showers, laundry facilities and dump stations, and some even provide free Wi-Fi co”
-  - hookups.electric = "some" · “ites offer more than 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. C”
-  - hookups.sewer = true · “n 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. Campgrounds are clos”
-  - map.date_how = "web page, no date in the link" · “link “””
-  - map.url = "https://mostateparks.com/page/locator-map" · “link “” -> https://mostateparks.com/page/locator-map”
-  - phone = "(573) 751-5211" · “ice ( Current River State Park and Echo Bluff State Park ): 573-751-5211 Emergencies: 911 Regulations Dispersed camping is allowed o”
-  - phone_hint = "(573) 751-5211" · “rk Important Phone Numbers Office ( Current River State Park and Echo Bluff State Park ): 573-751-5211 Emergencies: 911 Regulations Disperse”
-  - reservable = true · “te Parks Skip to main content Search Park/Site Status Things to Do I want to... Link Item Reserve a Campsite Go Camping Reserve a Lodging Un”
-- **Watkins Mill State Park: Campsites area (sites 001–H050)** (US-1795:1, state, status ok, 12 facts) · [mostateparks.com](https://mostateparks.com/)
-  - booking.how = "online: mostateparks.com" · “link “Reserve a Campsite””
-  - booking.url = "https://mostateparks.com/activity/camping/reservation-syste · “link “Reserve a Campsite” -> https://mostateparks.com/activity/camping/reservation-system”
-  - dump_station = true · “e great outdoors. Campgrounds offer amenities such as hot showers, laundry facilities and dump stations, and some even provide free Wi-Fi co”
-  - hookups.electric = "some" · “ites offer more than 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. C”
-  - hookups.sewer = true · “n 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. Campgrounds are clos”
-  - map.date_how = "web page, no date in the link" · “link “””
-  - map.url = "https://mostateparks.com/page/locator-map" · “link “” -> https://mostateparks.com/page/locator-map”
-  - reservable = true · “te Parks Skip to main content Search Park/Site Status Things to Do I want to... Link Item Reserve a Campsite Go Camping Reserve a Lodging Un”
-  - rules.pets = "pets are welcome in Missouri state parks" · “state parks. Enjoying Missouri State Parks with Your Pet Responsible pet owners and their pets are welcome in Missouri state parks. As a cou”
-  - season = "year-round" · “to any 15 days within a 30-consecutive-day period at any one park. Electric hook-ups are available year-round at most state parks, while wat”
-- **Weston Bend State Park: Campsites area (sites 36–F034)** (US-1796:1, state, status ok, 12 facts) · [mostateparks.com](https://mostateparks.com/)
-  - booking.how = "online: mostateparks.com" · “link “Reserve a Campsite””
-  - booking.url = "https://mostateparks.com/activity/camping/reservation-syste · “link “Reserve a Campsite” -> https://mostateparks.com/activity/camping/reservation-system”
-  - dump_station = true · “e great outdoors. Campgrounds offer amenities such as hot showers, laundry facilities and dump stations, and some even provide free Wi-Fi co”
-  - hookups.electric = "some" · “ites offer more than 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. C”
-  - hookups.sewer = true · “n 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. Campgrounds are clos”
-  - map.date_how = "web page, no date in the link" · “link “””
-  - map.url = "https://mostateparks.com/page/locator-map" · “link “” -> https://mostateparks.com/page/locator-map”
-  - reservable = true · “te Parks Skip to main content Search Park/Site Status Things to Do I want to... Link Item Reserve a Campsite Go Camping Reserve a Lodging Un”
-  - rules.pets = "pets are welcome in Missouri state parks" · “state parks. Enjoying Missouri State Parks with Your Pet Responsible pet owners and their pets are welcome in Missouri state parks. As a cou”
-  - season = "year-round" · “to any 15 days within a 30-consecutive-day period at any one park. Electric hook-ups are available year-round at most state parks, while wat”
-- **Funk  Memorial State Forest camping: Open Camping - Walk-in/Float-in/Backpack** (intake-US-5638, agency (outside research camping-us-oct31), status ok, 5 facts) · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/funk-memorial-state-forest-wildlife-area)
-  - booking.url = "https://mdc.mo.gov/discover-nature/places/funk-memorial-sta · “booking link from our outside research (camping, in the park) row (official system mdc.mo.gov)”
-  - hookups.electric = true · “it on department areas is 45 miles per hour. Unless otherwise posted, bicycles, including electric bicycles as defined in the Missouri Wildl”
-  - map.date_how = "PDF, year 2024 in the link" · “link “Area Map””
-  - map.url = "https://mdc.mo.gov/sites/default/files/2024-05/7513map.pdf" · “link “Area Map” -> https://mdc.mo.gov/sites/default/files/2024-05/7513map.pdf”
-  - rules.pets = "dogs are permitted but must be on a leash or confined at al · “ting Dogs Chapter 3CSR 10-11 Rule Number 120 Pets and Hunting Dogs Rules Pets and hunting dogs are permitted but must be on a leash or confi”
-- **Hawn State Park: Campsites area (sites BPC4)** (US-1763:4, state, status ok, 12 facts) · [mostateparks.com](https://mostateparks.com/)
-  - booking.how = "online: mostateparks.com" · “link “Reserve a Campsite””
-  - booking.url = "https://mostateparks.com/activity/camping/reservation-syste · “link “Reserve a Campsite” -> https://mostateparks.com/activity/camping/reservation-system”
-  - dump_station = true · “e great outdoors. Campgrounds offer amenities such as hot showers, laundry facilities and dump stations, and some even provide free Wi-Fi co”
-  - hookups.electric = "some" · “ites offer more than 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. C”
-  - hookups.sewer = true · “n 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. Campgrounds are clos”
-  - map.date_how = "web page, no date in the link" · “link “””
-  - map.url = "https://mostateparks.com/page/locator-map" · “link “” -> https://mostateparks.com/page/locator-map”
-  - reservable = true · “te Parks Skip to main content Search Park/Site Status Things to Do I want to... Link Item Reserve a Campsite Go Camping Reserve a Lodging Un”
-  - rules.pets = "pets are welcome in Missouri state parks" · “state parks. Enjoying Missouri State Parks with Your Pet Responsible pet owners and their pets are welcome in Missouri state parks. As a cou”
-  - season = "year-round" · “to any 15 days within a 30-consecutive-day period at any one park. Electric hook-ups are available year-round at most state parks, while wat”
-- **St. Joe State Park: Campsites area (sites 201–225)** (US-1785:2, state, status ok, 12 facts) · [mostateparks.com](https://mostateparks.com/)
+- **Johnson's Shut-Ins State Park: Campsites area (sites E101–H109)** (US-1764:3, state, status ok, 12 facts) · [mostateparks.com](https://mostateparks.com/)
   - booking.how = "online: mostateparks.com" · “link “Reserve a Campsite””
   - booking.url = "https://mostateparks.com/activity/camping/reservation-syste · “link “Reserve a Campsite” -> https://mostateparks.com/activity/camping/reservation-system”
   - dump_station = true · “e great outdoors. Campgrounds offer amenities such as hot showers, laundry facilities and dump stations, and some even provide free Wi-Fi co”
@@ -1274,9 +1185,104 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - map.date_how = "PDF, no date in the link" · “link “Area Map””
   - map.url = "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/ · “link “Area Map” -> https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/7945map.pdf”
   - rules.pets = "dogs are permitted but must be on a leash or confined at al · “ting Dogs Chapter 3CSR 10-11 Rule Number 120 Pets and Hunting Dogs Rules Pets and hunting dogs are permitted but must be on a leash or confi”
+- **Echo Bluff State Park: Campsites area (sites W1–H062)** (US-1756:1, state, status ok, 12 facts) · [mostateparks.com](https://mostateparks.com/)
+  - booking.how = "online: mostateparks.com" · “link “Reserve a Campsite””
+  - booking.url = "https://mostateparks.com/activity/camping/reservation-syste · “link “Reserve a Campsite” -> https://mostateparks.com/activity/camping/reservation-system”
+  - dump_station = true · “e great outdoors. Campgrounds offer amenities such as hot showers, laundry facilities and dump stations, and some even provide free Wi-Fi co”
+  - hookups.electric = "some" · “ites offer more than 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. C”
+  - hookups.sewer = true · “n 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. Campgrounds are clos”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://mostateparks.com/page/locator-map" · “link “” -> https://mostateparks.com/page/locator-map”
+  - reservable = true · “te Parks Skip to main content Search Park/Site Status Things to Do I want to... Link Item Reserve a Campsite Go Camping Reserve a Lodging Un”
+  - rules.pets = "pets are welcome in Missouri state parks" · “state parks. Enjoying Missouri State Parks with Your Pet Responsible pet owners and their pets are welcome in Missouri state parks. As a cou”
+  - season = "year-round" · “to any 15 days within a 30-consecutive-day period at any one park. Electric hook-ups are available year-round at most state parks, while wat”
+- **Lake Wappapello State Park: Cabins area (units LAWPCabin3)** (US-1769:4, state, status ok, 12 facts) · [mostateparks.com](https://mostateparks.com/)
+  - booking.how = "online: mostateparks.com" · “link “Reserve a Campsite””
+  - booking.url = "https://mostateparks.com/activity/camping/reservation-syste · “link “Reserve a Campsite” -> https://mostateparks.com/activity/camping/reservation-system”
+  - dump_station = true · “e great outdoors. Campgrounds offer amenities such as hot showers, laundry facilities and dump stations, and some even provide free Wi-Fi co”
+  - hookups.electric = "some" · “ites offer more than 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. C”
+  - hookups.sewer = true · “n 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. Campgrounds are clos”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://mostateparks.com/page/locator-map" · “link “” -> https://mostateparks.com/page/locator-map”
+  - reservable = true · “te Parks Skip to main content Search Park/Site Status Things to Do I want to... Link Item Reserve a Campsite Go Camping Reserve a Lodging Un”
+  - rules.pets = "pets are welcome in Missouri state parks" · “state parks. Enjoying Missouri State Parks with Your Pet Responsible pet owners and their pets are welcome in Missouri state parks. As a cou”
+  - season = "year-round" · “to any 15 days within a 30-consecutive-day period at any one park. Electric hook-ups are available year-round at most state parks, while wat”
+- **St. Francois State Park: Campsites area (sites 001–H201)** (US-1784:1, state, status ok, 12 facts) · [mostateparks.com](https://mostateparks.com/)
+  - booking.how = "online: mostateparks.com" · “link “Reserve a Campsite””
+  - booking.url = "https://mostateparks.com/activity/camping/reservation-syste · “link “Reserve a Campsite” -> https://mostateparks.com/activity/camping/reservation-system”
+  - dump_station = true · “e great outdoors. Campgrounds offer amenities such as hot showers, laundry facilities and dump stations, and some even provide free Wi-Fi co”
+  - hookups.electric = "some" · “ites offer more than 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. C”
+  - hookups.sewer = true · “n 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. Campgrounds are clos”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://mostateparks.com/page/locator-map" · “link “” -> https://mostateparks.com/page/locator-map”
+  - reservable = true · “te Parks Skip to main content Search Park/Site Status Things to Do I want to... Link Item Reserve a Campsite Go Camping Reserve a Lodging Un”
+  - rules.pets = "pets are welcome in Missouri state parks" · “state parks. Enjoying Missouri State Parks with Your Pet Responsible pet owners and their pets are welcome in Missouri state parks. As a cou”
+  - season = "year-round" · “to any 15 days within a 30-consecutive-day period at any one park. Electric hook-ups are available year-round at most state parks, while wat”
+- **Big Oak Tree State Park** (US-1749, state, status ok, 12 facts) · [mostateparks.com](https://mostateparks.com/)
+  - booking.how = "online: mostateparks.com" · “link “Reserve a Campsite””
+  - booking.url = "https://mostateparks.com/activity/camping/reservation-syste · “link “Reserve a Campsite” -> https://mostateparks.com/activity/camping/reservation-system”
+  - dump_station = true · “e great outdoors. Campgrounds offer amenities such as hot showers, laundry facilities and dump stations, and some even provide free Wi-Fi co”
+  - hookups.electric = "some" · “ites offer more than 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. C”
+  - hookups.sewer = true · “n 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. Campgrounds are clos”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://mostateparks.com/page/locator-map" · “link “” -> https://mostateparks.com/page/locator-map”
+  - reservable = true · “te Parks Skip to main content Search Park/Site Status Things to Do I want to... Link Item Reserve a Campsite Go Camping Reserve a Lodging Un”
+  - rules.pets = "pets are welcome in Missouri state parks" · “state parks. Enjoying Missouri State Parks with Your Pet Responsible pet owners and their pets are welcome in Missouri state parks. As a cou”
+  - season = "year-round" · “to any 15 days within a 30-consecutive-day period at any one park. Electric hook-ups are available year-round at most state parks, while wat”
+- **Funk  Memorial State Forest camping: Open Camping - Walk-in/Float-in/Backpack** (intake-US-5638, agency (outside research camping-us-oct31), status ok, 5 facts) · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/funk-memorial-state-forest-wildlife-area)
+  - booking.url = "https://mdc.mo.gov/discover-nature/places/funk-memorial-sta · “booking link from our outside research (camping, in the park) row (official system mdc.mo.gov)”
+  - hookups.electric = true · “it on department areas is 45 miles per hour. Unless otherwise posted, bicycles, including electric bicycles as defined in the Missouri Wildl”
+  - map.date_how = "PDF, year 2024 in the link" · “link “Area Map””
+  - map.url = "https://mdc.mo.gov/sites/default/files/2024-05/7513map.pdf" · “link “Area Map” -> https://mdc.mo.gov/sites/default/files/2024-05/7513map.pdf”
+  - rules.pets = "dogs are permitted but must be on a leash or confined at al · “ting Dogs Chapter 3CSR 10-11 Rule Number 120 Pets and Hunting Dogs Rules Pets and hunting dogs are permitted but must be on a leash or confi”
+- **Harmony Mission Lake State Conservation Area camping: Designated Camping Sites** (intake-US-6481, agency (outside research camping-us-oct31), status ok, 5 facts) · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/harmony-mission-lake-conservation-area)
+  - booking.url = "https://mdc.mo.gov/discover-nature/places/harmony-mission-l · “booking link from our outside research (camping, in the park) row (official system mdc.mo.gov)”
+  - hookups.electric = true · “it on department areas is 45 miles per hour. Unless otherwise posted, bicycles, including electric bicycles as defined in the Missouri Wildl”
+  - map.date_how = "PDF, year 2022 in the link" · “link “Area Map””
+  - map.url = "https://mdc.mo.gov/sites/default/files/2022-12/8206map_0.pd · “link “Area Map” -> https://mdc.mo.gov/sites/default/files/2022-12/8206map_0.pdf”
+  - rules.pets = "dogs are permitted but must be on a leash or confined at al · “ting Dogs Chapter 3CSR 10-11 Rule Number 120 Pets and Hunting Dogs Rules Pets and hunting dogs are permitted but must be on a leash or confi”
+- **Montauk State Park: Campsites area (sites 101–H401)** (US-1774:1, state, status ok, 12 facts) · [mostateparks.com](https://mostateparks.com/)
+  - booking.how = "online: mostateparks.com" · “link “Reserve a Campsite””
+  - booking.url = "https://mostateparks.com/activity/camping/reservation-syste · “link “Reserve a Campsite” -> https://mostateparks.com/activity/camping/reservation-system”
+  - dump_station = true · “e great outdoors. Campgrounds offer amenities such as hot showers, laundry facilities and dump stations, and some even provide free Wi-Fi co”
+  - hookups.electric = "some" · “ites offer more than 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. C”
+  - hookups.sewer = true · “n 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. Campgrounds are clos”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://mostateparks.com/page/locator-map" · “link “” -> https://mostateparks.com/page/locator-map”
+  - reservable = true · “te Parks Skip to main content Search Park/Site Status Things to Do I want to... Link Item Reserve a Campsite Go Camping Reserve a Lodging Un”
+  - rules.pets = "pets are welcome in Missouri state parks" · “state parks. Enjoying Missouri State Parks with Your Pet Responsible pet owners and their pets are welcome in Missouri state parks. As a cou”
+  - season = "year-round" · “to any 15 days within a 30-consecutive-day period at any one park. Electric hook-ups are available year-round at most state parks, while wat”
+- **Knob Noster State Park: Campsites area (sites 030–F037)** (US-1767:1, state, status ok, 12 facts) · [mostateparks.com](https://mostateparks.com/)
+  - booking.how = "online: mostateparks.com" · “link “Reserve a Campsite””
+  - booking.url = "https://mostateparks.com/activity/camping/reservation-syste · “link “Reserve a Campsite” -> https://mostateparks.com/activity/camping/reservation-system”
+  - dump_station = true · “e great outdoors. Campgrounds offer amenities such as hot showers, laundry facilities and dump stations, and some even provide free Wi-Fi co”
+  - hookups.electric = "some" · “ites offer more than 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. C”
+  - hookups.sewer = true · “n 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. Campgrounds are clos”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://mostateparks.com/page/locator-map" · “link “” -> https://mostateparks.com/page/locator-map”
+  - reservable = true · “te Parks Skip to main content Search Park/Site Status Things to Do I want to... Link Item Reserve a Campsite Go Camping Reserve a Lodging Un”
+  - rules.pets = "pets are welcome in Missouri state parks" · “state parks. Enjoying Missouri State Parks with Your Pet Responsible pet owners and their pets are welcome in Missouri state parks. As a cou”
+  - season = "year-round" · “to any 15 days within a 30-consecutive-day period at any one park. Electric hook-ups are available year-round at most state parks, while wat”
+- **Wakonda State Park: Campsites area (sites 100–H115)** (US-1792:2, state, status ok, 12 facts) · [mostateparks.com](https://mostateparks.com/)
+  - booking.how = "online: mostateparks.com" · “link “Reserve a Campsite””
+  - booking.url = "https://mostateparks.com/activity/camping/reservation-syste · “link “Reserve a Campsite” -> https://mostateparks.com/activity/camping/reservation-system”
+  - dump_station = true · “e great outdoors. Campgrounds offer amenities such as hot showers, laundry facilities and dump stations, and some even provide free Wi-Fi co”
+  - hookups.electric = "some" · “ites offer more than 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. C”
+  - hookups.sewer = true · “n 3,500 campsites that range from secluded walk-in sites to sites with hookups for water, sewer and electrical service. Campgrounds are clos”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://mostateparks.com/page/locator-map" · “link “” -> https://mostateparks.com/page/locator-map”
+  - reservable = true · “te Parks Skip to main content Search Park/Site Status Things to Do I want to... Link Item Reserve a Campsite Go Camping Reserve a Lodging Un”
+  - rules.pets = "pets are welcome in Missouri state parks" · “state parks. Enjoying Missouri State Parks with Your Pet Responsible pet owners and their pets are welcome in Missouri state parks. As a cou”
+  - season = "year-round" · “to any 15 days within a 30-consecutive-day period at any one park. Electric hook-ups are available year-round at most state parks, while wat”
 
 ## US-WI: 12 random samples (records with facts; seed = the date)
 
+- **Twin Lakes Recreation Area; Spearhead Point Recreation Area; Wabasso Lake Recreation Area; West Point Recreation Area; Birch Grove Recreation Area; Perch Lake Recreation Area; Emily Lake Recreation Ar** (intake-US-4533, agency (outside research camping-us-oct31), status ok, 5 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/cnnf/recarea/?recid=27801)
+  - booking.url = "https://www.fs.usda.gov/recarea/cnnf/recarea/?recid=27801" · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
+  - map.date_how = "web page, no date in the link" · “link “Find a Map””
+  - map.url = "https://www.fs.usda.gov/r09/chequamegon-nicolet/maps-guides · “link “Find a Map” -> https://www.fs.usda.gov/r09/chequamegon-nicolet/maps-guides”
+  - season = "year-round" · “rthern Wisconsin. Explore the more than 1.5 million acres of water and woodlands offering year-round motorized trail riding, water- and land”
+  - sites.total = 30 · “thing sound of flowing water, you will appreciate this campground. About one-third of the 30 campsites are located adjacent to the Oconto Ri”
 - **300 campground (70 sites); 100 campground (50 sites); group camp (4 areas)** (US-1481:hq0, state, status ok, 9 facts) · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/parks/willowriver/recreation/camping)
   - booking.how = "online: dnr.wisconsin.gov" · “link “Parks_Topic Contact_WSPS Reservations””
   - booking.url = "https://dnr.wisconsin.gov/node/26781" · “link “Parks_Topic Contact_WSPS Reservations” -> https://dnr.wisconsin.gov/node/26781”
@@ -1287,11 +1293,6 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - restrooms = "flush" · “online. Standard campgrounds The 300 campground has 70 tent, trailer or motor home sites, flush toilets and showers. The 100 campground has ”
   - rules.fires = "fire rings only" · “o 8 p.m. in the 300 campground when in season. Fires are allowed in authorized grills and fire rings only. Do not leave fires unattended and”
   - showers = true · “ampgrounds The 300 campground has 70 tent, trailer or motor home sites, flush toilets and showers. The 100 campground has another 50 sites. ”
-- **Amnicon Falls State Park** (US-1436, state, status ok, no campground facts in the page text: needs browser?, 4 facts) · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/parks)
-  - booking.how = "online: dnr.wisconsin.gov" · “link “Parks_Topic Contact_WSPS Reservations””
-  - booking.url = "https://dnr.wisconsin.gov/node/26781" · “link “Parks_Topic Contact_WSPS Reservations” -> https://dnr.wisconsin.gov/node/26781”
-  - phone_hint = "(888) 947-2757" · “ontact Parks_Topic Contact_WSPS Reservations Wisconsin State Park System Reservations tel:+1-888-947-2757”
-  - rules.pets = "Pets are welcome in the parks with a few simple rules" · “d all employment opportunities in the Wisconsin State Park System! Bring your Best Friend Pets are welcome in the parks with a few simple ru”
 - **Backpack campsites (17 total, including one group site)** (US-1468:hq0, state, status ok, 9 facts) · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/parks/newport/recreation/camping)
   - booking.how = "online: dnr.wisconsin.gov" · “link “Parks_Topic Contact_WSPS Reservations””
   - booking.url = "https://dnr.wisconsin.gov/node/26781" · “link “Parks_Topic Contact_WSPS Reservations” -> https://dnr.wisconsin.gov/node/26781”
@@ -1302,64 +1303,39 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - restrooms = "vault" · “e are no carts available at the park. There are a few amenities at the sites, including a pit toilet, fire ring with flip-up grill, a lock b”
   - rules.fires = "firewood! Due to the potential of carrying harmful tree pes · “any wood that is dead and down. It is illegal to cut anything from live trees. Don't move firewood! Due to the potential of carrying harmful”
   - showers = false · “ark office or at a solar pump near the picnic shelter by Lot 3 (seasonally). There are no shower facilities at the park. All garbage must be”
-- **Twin Lakes Recreation Area; Spearhead Point Recreation Area; Wabasso Lake Recreation Area; West Point Recreation Area; Birch Grove Recreation Area; Perch Lake Recreation Area; Emily Lake Recreation Ar** (intake-US-4533, agency (outside research camping-us-oct31), status ok, 5 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/cnnf/recarea/?recid=27801)
-  - booking.url = "https://www.fs.usda.gov/recarea/cnnf/recarea/?recid=27801" · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
-  - map.date_how = "web page, no date in the link" · “link “Find a Map””
-  - map.url = "https://www.fs.usda.gov/r09/chequamegon-nicolet/maps-guides · “link “Find a Map” -> https://www.fs.usda.gov/r09/chequamegon-nicolet/maps-guides”
-  - season = "year-round" · “rthern Wisconsin. Explore the more than 1.5 million acres of water and woodlands offering year-round motorized trail riding, water- and land”
-  - sites.total = 30 · “thing sound of flowing water, you will appreciate this campground. About one-third of the 30 campsites are located adjacent to the Oconto Ri”
+- **Amnicon Falls State Park** (US-1436, state, status ok, no campground facts in the page text: needs browser?, 4 facts) · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/parks)
+  - booking.how = "online: dnr.wisconsin.gov" · “link “Parks_Topic Contact_WSPS Reservations””
+  - booking.url = "https://dnr.wisconsin.gov/node/26781" · “link “Parks_Topic Contact_WSPS Reservations” -> https://dnr.wisconsin.gov/node/26781”
+  - phone_hint = "(888) 947-2757" · “ontact Parks_Topic Contact_WSPS Reservations Wisconsin State Park System Reservations tel:+1-888-947-2757”
+  - rules.pets = "Pets are welcome in the parks with a few simple rules" · “d all employment opportunities in the Wisconsin State Park System! Bring your Best Friend Pets are welcome in the parks with a few simple ru”
 
 ## US-MN: 12 random samples (records with facts; seed = the date)
 
-- **Cedar Hill Campground; Gooseberry Glen Cart-in Campground** (intake-US-2528, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
+- **Lindbergh Campground** (intake-US-2476, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
   - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
   - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
   - map.date_how = "web page, no date in the link" · “link “””
   - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
   - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-- **Savanna Portage Campground** (intake-US-4826, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
+- **Equestrian Campground; Grass Lake Campground; Lake Lida Campground** (intake-US-2507, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
   - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
   - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
   - map.date_how = "web page, no date in the link" · “link “””
   - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
   - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-- **Equestrian Campground; Wild River Campground** (intake-US-2529, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
+- **Equestrian Campground** (intake-US-7145, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
   - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
   - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
   - map.date_how = "web page, no date in the link" · “link “””
   - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
   - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-- **Blue Mounds Campground** (intake-US-2471, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
+- **Backpack Campground; Boat/Canoe Campground; Hike-In Campground** (intake-US-2466, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
   - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
   - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
   - map.date_how = "web page, no date in the link" · “link “””
   - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
   - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-- **Schoolcraft Campground** (intake-US-2521, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
-  - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
-  - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
-  - map.date_how = "web page, no date in the link" · “link “””
-  - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
-  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-- **Clint Converse Campground and Day Use Area** (intake-US-4810, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
-  - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
-  - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
-  - map.date_how = "web page, no date in the link" · “link “””
-  - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
-  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-- **Equestrian Campground; Lakeview Campground; Oakridge Campground** (intake-US-2522, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
-  - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
-  - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
-  - map.date_how = "web page, no date in the link" · “link “””
-  - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
-  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-- **Bike-In Campground; Sakatah Lake Campground** (intake-US-2518, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
-  - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
-  - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
-  - map.date_how = "web page, no date in the link" · “link “””
-  - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
-  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-- **Dispersed camping** (intake-US-4827, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.dnr.state.mn.us](https://www.dnr.state.mn.us/state-forests/dispersed-camping.html)
+- **Dispersed camping** (intake-US-4800, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.dnr.state.mn.us](https://www.dnr.state.mn.us/state-forests/dispersed-camping.html)
   - booking.how = "online: www.dnr.state.mn.us" · “link “Fees””
   - booking.url = "https://www.dnr.state.mn.us/state-forests/fees-reservations · “link “Fees” -> https://www.dnr.state.mn.us/state-forests/fees-reservations.html”
   - drinking_water = false · “designated campgrounds or campsites in a Minnesota state forest. There are no restrooms, drinking water, picnic tables, fire rings, trash ca”
@@ -1369,23 +1345,13 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - reservable = false · “e willing to hike out into the woods to camp. Dispersed camping is free and operates on a first-come, first-served basis. While dispersed ca”
   - restrooms = "vault" · “and create sanitation problems. We recommend using commercially available waste bags or a portable toilet kit for a convenient way to pack o”
   - rules.fires = "campfires are allowed on state forest lands, including stat · “es, burning restrictions are in effect in Cook, Lake, and northern St. Louis counties. No campfires are allowed on state forest lands, inclu”
-- **Dispersed camping** (intake-US-4797, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.dnr.state.mn.us](https://www.dnr.state.mn.us/state-forests/dispersed-camping.html)
-  - booking.how = "online: www.dnr.state.mn.us" · “link “Fees””
-  - booking.url = "https://www.dnr.state.mn.us/state-forests/fees-reservations · “link “Fees” -> https://www.dnr.state.mn.us/state-forests/fees-reservations.html”
-  - drinking_water = false · “designated campgrounds or campsites in a Minnesota state forest. There are no restrooms, drinking water, picnic tables, fire rings, trash ca”
-  - hookups.electric = "some" · “n the full shoulder of a road. Do not block roads, trails, or gates with your vehicle. Is electricity or water available? No, dispersed camp”
-  - map.date_how = "web page, no date in the link" · “link “Office locator map””
-  - map.url = "https://www.dnr.state.mn.us/contact/locator.html" · “link “Office locator map” -> https://www.dnr.state.mn.us/contact/locator.html”
-  - reservable = false · “e willing to hike out into the woods to camp. Dispersed camping is free and operates on a first-come, first-served basis. While dispersed ca”
-  - restrooms = "vault" · “and create sanitation problems. We recommend using commercially available waste bags or a portable toilet kit for a convenient way to pack o”
-  - rules.fires = "campfires are allowed on state forest lands, including stat · “es, burning restrictions are in effect in Cook, Lake, and northern St. Louis counties. No campfires are allowed on state forest lands, inclu”
-- **Baptism River Campground; Lake Superior Cart-In Campground** (intake-US-2526, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
+- **Huntersville Forest Landing Campground** (intake-US-4803, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
   - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
   - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
   - map.date_how = "web page, no date in the link" · “link “””
   - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
   - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-- **Dispersed camping** (intake-US-12457, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.dnr.state.mn.us](https://www.dnr.state.mn.us/state-forests/dispersed-camping.html)
+- **Dispersed camping** (intake-US-4805, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.dnr.state.mn.us](https://www.dnr.state.mn.us/state-forests/dispersed-camping.html)
   - booking.how = "online: www.dnr.state.mn.us" · “link “Fees””
   - booking.url = "https://www.dnr.state.mn.us/state-forests/fees-reservations · “link “Fees” -> https://www.dnr.state.mn.us/state-forests/fees-reservations.html”
   - drinking_water = false · “designated campgrounds or campsites in a Minnesota state forest. There are no restrooms, drinking water, picnic tables, fire rings, trash ca”
@@ -1395,22 +1361,88 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - reservable = false · “e willing to hike out into the woods to camp. Dispersed camping is free and operates on a first-come, first-served basis. While dispersed ca”
   - restrooms = "vault" · “and create sanitation problems. We recommend using commercially available waste bags or a portable toilet kit for a convenient way to pack o”
   - rules.fires = "campfires are allowed on state forest lands, including stat · “es, burning restrictions are in effect in Cook, Lake, and northern St. Louis counties. No campfires are allowed on state forest lands, inclu”
+- **Portsmouth Campground (Cuyuna Country SRA)** (intake-US-11151, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
+  - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
+  - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+- **Equestrian Campground; Mille Lacs Kathio Petaga Campground; Ogechie Campground** (intake-US-2509, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
+  - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
+  - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+- **Chase Point Campground; Lodge Campground** (intake-US-2520, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
+  - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
+  - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+- **Nerstrand Campground** (intake-US-4809, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
+  - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
+  - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
+- **Wakemup Bay Campground and Day Use Area; Woodenfrog Campground and Day Use Area** (intake-US-4806, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [reservemn.usedirect.com](https://reservemn.usedirect.com/MinnesotaWeb/)
+  - booking.how = "online: reservemn.usedirect.com" · “link “Forgot Password?””
+  - booking.url = "https://reservemn.usedirect.com/MinnesotaWeb/Customers/Reco · “link “Forgot Password?” -> https://reservemn.usedirect.com/MinnesotaWeb/Customers/Recover.aspx”
+  - map.date_how = "web page, no date in the link" · “link “””
+  - map.url = "https://www.dnr.state.mn.us/state_parks/map.html" · “link “” -> https://www.dnr.state.mn.us/state_parks/map.html”
+  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
 
 ## US-IA: 12 random samples (records with facts; seed = the date)
 
-- **Pikes Peak State Park campground** (intake-US-2311, agency (outside research camping-us-oct31), status ok, 5 facts) · [iowastateparks.reserveamerica.com](https://iowastateparks.reserveamerica.com/)
+- **Wapsipinicon State Park campground** (intake-US-2327, agency (outside research camping-us-oct31), status ok, 5 facts) · [iowastateparks.reserveamerica.com](https://iowastateparks.reserveamerica.com/)
   - booking.how = "online: iowastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
   - booking.url = "https://iowastateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://iowastateparks.reserveamerica.com/memberSignInSignUp.do”
   - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
   - hookups.electric = false · “Sites Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
   - rules.pets = "Pets allowed" · “r more) 30 Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Pets allowed Cabins or Yurts Options Occupants mor”
-- **Lacey-Keosauqua State Park campground** (intake-US-2294, agency (outside research camping-us-oct31), status ok, 5 facts) · [iowastateparks.reserveamerica.com](https://iowastateparks.reserveamerica.com/)
+- **Union Grove State Park campground** (intake-US-2324, agency (outside research camping-us-oct31), status ok, 5 facts) · [iowastateparks.reserveamerica.com](https://iowastateparks.reserveamerica.com/)
+  - booking.how = "online: iowastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://iowastateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://iowastateparks.reserveamerica.com/memberSignInSignUp.do”
+  - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “Sites Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
+  - rules.pets = "Pets allowed" · “r more) 30 Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Pets allowed Cabins or Yurts Options Occupants mor”
+- **Maquoketa Caves State Park campground** (intake-US-2305, agency (outside research camping-us-oct31), status ok, 5 facts) · [iowastateparks.reserveamerica.com](https://iowastateparks.reserveamerica.com/)
   - booking.how = "online: iowastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
   - booking.url = "https://iowastateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://iowastateparks.reserveamerica.com/memberSignInSignUp.do”
   - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
   - hookups.electric = false · “Sites Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
   - rules.pets = "Pets allowed" · “r more) 30 Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Pets allowed Cabins or Yurts Options Occupants mor”
 - **Beed's Lake State Park campground** (intake-US-2279, agency (outside research camping-us-oct31), status ok, 5 facts) · [iowastateparks.reserveamerica.com](https://iowastateparks.reserveamerica.com/)
+  - booking.how = "online: iowastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://iowastateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://iowastateparks.reserveamerica.com/memberSignInSignUp.do”
+  - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “Sites Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
+  - rules.pets = "Pets allowed" · “r more) 30 Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Pets allowed Cabins or Yurts Options Occupants mor”
+- **Lewis and Clark State Park campground** (intake-US-2304, agency (outside research camping-us-oct31), status ok, 5 facts) · [iowastateparks.reserveamerica.com](https://iowastateparks.reserveamerica.com/)
+  - booking.how = "online: iowastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://iowastateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://iowastateparks.reserveamerica.com/memberSignInSignUp.do”
+  - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “Sites Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
+  - rules.pets = "Pets allowed" · “r more) 30 Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Pets allowed Cabins or Yurts Options Occupants mor”
+- **Geode State Park campground** (intake-US-2289, agency (outside research camping-us-oct31), status ok, 5 facts) · [iowastateparks.reserveamerica.com](https://iowastateparks.reserveamerica.com/)
+  - booking.how = "online: iowastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://iowastateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://iowastateparks.reserveamerica.com/memberSignInSignUp.do”
+  - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “Sites Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
+  - rules.pets = "Pets allowed" · “r more) 30 Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Pets allowed Cabins or Yurts Options Occupants mor”
+- **Dolliver Memorial State Park campground** (intake-US-2285, agency (outside research camping-us-oct31), status ok, 5 facts) · [iowastateparks.reserveamerica.com](https://iowastateparks.reserveamerica.com/)
+  - booking.how = "online: iowastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://iowastateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://iowastateparks.reserveamerica.com/memberSignInSignUp.do”
+  - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “Sites Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
+  - rules.pets = "Pets allowed" · “r more) 30 Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Pets allowed Cabins or Yurts Options Occupants mor”
+- **Lake Anita State Park campground** (intake-US-2296, agency (outside research camping-us-oct31), status ok, 5 facts) · [iowastateparks.reserveamerica.com](https://iowastateparks.reserveamerica.com/)
+  - booking.how = "online: iowastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://iowastateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://iowastateparks.reserveamerica.com/memberSignInSignUp.do”
+  - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “Sites Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
+  - rules.pets = "Pets allowed" · “r more) 30 Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Pets allowed Cabins or Yurts Options Occupants mor”
+- **Stone State Park campground** (intake-US-2321, agency (outside research camping-us-oct31), status ok, 5 facts) · [iowastateparks.reserveamerica.com](https://iowastateparks.reserveamerica.com/)
   - booking.how = "online: iowastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
   - booking.url = "https://iowastateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://iowastateparks.reserveamerica.com/memberSignInSignUp.do”
   - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
@@ -1428,46 +1460,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
   - hookups.electric = false · “Sites Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
   - rules.pets = "Pets allowed" · “r more) 30 Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Pets allowed Cabins or Yurts Options Occupants mor”
-- **Walnut Woods State Park campground** (intake-US-2326, agency (outside research camping-us-oct31), status ok, 5 facts) · [iowastateparks.reserveamerica.com](https://iowastateparks.reserveamerica.com/)
-  - booking.how = "online: iowastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
-  - booking.url = "https://iowastateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://iowastateparks.reserveamerica.com/memberSignInSignUp.do”
-  - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
-  - hookups.electric = false · “Sites Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
-  - rules.pets = "Pets allowed" · “r more) 30 Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Pets allowed Cabins or Yurts Options Occupants mor”
-- **Preparation Canyon hike-in backpacking campsites** (intake-US-4659, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [www.iowadnr.gov](https://www.iowadnr.gov/places-go/state-forests/loess-hills-state-forest)
-  - booking.how = "online: www.iowadnr.gov" · “link “Lakes, Ponds, and Reservoirs””
-  - booking.url = "https://www.iowadnr.gov/things-do/fishing/where-fish/lakes- · “link “Lakes, Ponds, and Reservoirs” -> https://www.iowadnr.gov/things-do/fishing/where-fish/lakes-ponds-and-reservoirs”
-  - map.date_how = "web page, no date in the link" · “link “Little Sioux Map (2.5 MB) .pdf””
-  - map.url = "https://www.iowadnr.gov/media/404/download?inline" · “link “Little Sioux Map (2.5 MB) .pdf” -> https://www.iowadnr.gov/media/404/download?inline”
-  - phone = "(712) 456-2924" · “y - Friday, 8:30 a.m. - noon, or by appointment Please call 712-456-2924 to schedule a visit. History & Ecology List items for Loess”
-  - reservable = false · “tate Park . Hike-in campsites can be accessed at the southeast corner of the park and are first-come, first-served. No modern restroom facil”
-  - restrooms = "none" · “accessed at the southeast corner of the park and are first-come, first-served. No modern restroom facilities are available. Preparation Cany”
-  - season = "year-round" · “o learn about the geology and unique flora and fauna of this area. The visitors center is open year-round, with seasonal hours. Camp in one ”
 - **Waubonsie State Park campground** (intake-US-11875, agency (outside research camping-us-oct31), status ok, 5 facts) · [iowastateparks.reserveamerica.com](https://iowastateparks.reserveamerica.com/)
-  - booking.how = "online: iowastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
-  - booking.url = "https://iowastateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://iowastateparks.reserveamerica.com/memberSignInSignUp.do”
-  - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
-  - hookups.electric = false · “Sites Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
-  - rules.pets = "Pets allowed" · “r more) 30 Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Pets allowed Cabins or Yurts Options Occupants mor”
-- **Lake Manawa State Park campground** (intake-US-2300, agency (outside research camping-us-oct31), status ok, 5 facts) · [iowastateparks.reserveamerica.com](https://iowastateparks.reserveamerica.com/)
-  - booking.how = "online: iowastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
-  - booking.url = "https://iowastateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://iowastateparks.reserveamerica.com/memberSignInSignUp.do”
-  - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
-  - hookups.electric = false · “Sites Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
-  - rules.pets = "Pets allowed" · “r more) 30 Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Pets allowed Cabins or Yurts Options Occupants mor”
-- **Lake Keomah State Park campground** (intake-US-2298, agency (outside research camping-us-oct31), status ok, 5 facts) · [iowastateparks.reserveamerica.com](https://iowastateparks.reserveamerica.com/)
-  - booking.how = "online: iowastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
-  - booking.url = "https://iowastateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://iowastateparks.reserveamerica.com/memberSignInSignUp.do”
-  - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
-  - hookups.electric = false · “Sites Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
-  - rules.pets = "Pets allowed" · “r more) 30 Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Pets allowed Cabins or Yurts Options Occupants mor”
-- **McIntosh Woods State Park campground** (intake-US-2306, agency (outside research camping-us-oct31), status ok, 5 facts) · [iowastateparks.reserveamerica.com](https://iowastateparks.reserveamerica.com/)
-  - booking.how = "online: iowastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
-  - booking.url = "https://iowastateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://iowastateparks.reserveamerica.com/memberSignInSignUp.do”
-  - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
-  - hookups.electric = false · “Sites Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
-  - rules.pets = "Pets allowed" · “r more) 30 Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Pets allowed Cabins or Yurts Options Occupants mor”
-- **Shimek Forest campgrounds (4 main + 2 equestrian)** (intake-US-4661, agency (outside research camping-us-oct31), status ok, 5 facts) · [iowastateparks.reserveamerica.com](https://iowastateparks.reserveamerica.com/)
   - booking.how = "online: iowastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
   - booking.url = "https://iowastateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://iowastateparks.reserveamerica.com/memberSignInSignUp.do”
   - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
@@ -1487,6 +1480,17 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.electric = true · “Decline Search Fort Ransom State Park - Camping Campsite Types 24 Modern Horse Campsites (electricity, corral access, central water hydrant)”
   - hookups.water = true · “t Ransom State Park 10 Primitive Campsites Price: $15 per night 4 Group Modern Campsites (electricity, water and the ability to put multiple”
   - map.date_how = "PDF, no date in the link" · “link “Campground Map””
+- **Cross Ranch State Park** (US-2757, state, status ok, 10 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/cross-ranch-state-park-camping)
+  - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
+  - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
+  - checkin = "4:00 pm" · “he date you wish to stay. - Reservations can be made online or by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the res”
+  - checkout = "3:00 pm" · “by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the reservation and checkout is at 3:00 pm on the last day of the rese”
+  - hookups.electric = true · “s 35 Standard Campsites (electricity) Price: $25-30 per night 6 Group Standard Campsites (electricity and the ability to put multiple units ”
+  - reservable = true · “nformation - Campsites can be booked 95 days in advance from the date you wish to stay. - Reservations can be made online or by calling 800-”
+  - rules.pets = "Pets are welcome but must stay on a leash" · “t day of the reservation and checkout is at 3:00 pm on the last day of the reservation. - Pets are welcome but must stay on a leash. Most pa”
+  - sites.group = 6 · “Park - Camping Campsite Types 35 Standard Campsites (electricity) Price: $25-30 per night 6 Group Standard Campsites (electricity and the ab”
+  - sites.primitive = 22 · “rnors Centennial, Primitive & Sanger Campground Maps Full Park Map Cross Ranch State Park 22 Primitive Campsites Price: $15 per night 2 Grou”
+  - sites.total = 35 · “rsion will prevail. Accept Decline Search Cross Ranch State Park - Camping Campsite Types 35 Standard Campsites (electricity) Price: $25-30 ”
 - **Fort Abraham Lincoln State Park campground** (US-2758:hq0, state, status ok, 14 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/fort-abraham-lincoln-state-park-camping)
   - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
   - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
@@ -1498,16 +1502,6 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - map.date_how = "PDF, no date in the link" · “link “Campground Map””
   - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Fort%2 · “link “Campground Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Fort%20Lincoln/FALSP%20-%20Campground%20Map.pdf”
   - reservable = true · “nformation - Campsites can be booked 95 days in advance from the date you wish to stay. - Reservations can be made online or by calling 800-”
-- **Beaver Lake State Park** (US-2756, state, status ok, no campground facts even in a browser, 9 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/)
-  - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
-  - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
-  - checkin = "4:00 pm" · “he date you wish to stay. - Reservations can be made online or by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the res”
-  - checkout = "3:00 pm" · “by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the reservation and checkout is at 3:00 pm on the last day of the rese”
-  - features = "fire pits, a holiday-themed hot chocolate bar and hot coffe · “eason! The hike begins and ends at the park Visitor Center, where visitors can enjoy warm fire pits, a holiday-themed hot chocolate bar and ”
-  - map.date_how = "web page, no date in the link" · “link “MAP: Find a park with our Destination Finder””
-  - map.url = "https://www.parkrec.nd.gov/maps-widget/map" · “link “MAP: Find a park with our Destination Finder” -> https://www.parkrec.nd.gov/maps-widget/map”
-  - reservable = true · “r you are a returning visitor or new to the state, your journey starts here! RESERVATIONS Book your next stay in a campsite, cabin, wagon or”
-  - rules.pets = "Pets are welcome but must stay on a leash" · “t day of the reservation and checkout is at 3:00 pm on the last day of the reservation. - Pets are welcome but must stay on a leash. Most pa”
 - **Lewis and Clark State Park** (US-2765, state, status ok, 18 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/lewis-clark-state-park)
   - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
   - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
@@ -1519,28 +1513,6 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.water = true · “eservations on our FAQs page . Copy Link Campsite type 41 Premium Campsites (electricity, sewer & water) Price: $30-35 per night 47 Modern C”
   - map.date_how = "PDF, no date in the link" · “link “Campground Map””
   - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Destin · “link “Campground Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Destinations/Lewis%20%26%20Clark/LCSP%20-%20Cam”
-- **Lake Sakakawea State Park** (US-2764, state, status ok, 16 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/lake-sakakawea-state-park)
-  - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
-  - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
-  - checkin = "4 pm" · “re vacating, including sweeping, wiping down surfaces and collecting and bagging trash. - Check-in is after 4 pm, check-out is at noon. - Sm”
-  - checkout = "3:00 pm" · “by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the reservation and checkout is at 3:00 pm on the last day of the rese”
-  - hookups.electric = "some" · “Modern Campsites (electricity & water) Price: $25-30 per night 10 Modern Group Campsites (electricity, water and the ability to put multiple”
-  - hookups.sewer = true · “Full-service marina Horseshoe pits Picnic shelters Playgrounds (2) Sand volleyball courts Sewer and electrical hookups Showers and flush toi”
-  - hookups.water = true · “Modern Campsites (electricity & water) Price: $25-30 per night 10 Modern Group Campsites (electricity, water and the ability to put multiple”
-  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
-  - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Destin · “link “Campground Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Destinations/Lake%20Sakakawea/LSSP%20-%20Campgr”
-  - reservable = true · “nformation - Campsites can be booked 95 days in advance from the date you wish to stay. - Reservations can be made online or by calling 800-”
-- **Little Missouri State Park** (US-2766, state, status ok, 12 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/little-missouri-state-park-camping)
-  - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
-  - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
-  - checkin = "4:00 pm" · “he date you wish to stay. - Reservations can be made online or by calling 800-807-4723. - Check-in is at 4:00 pm Mountain Standard Time on t”
-  - checkout = "3:00 pm" · “. - Check-in is at 4:00 pm Mountain Standard Time on the first day of the reservation and checkout is at 3:00 pm Mountain Standard Time on t”
-  - fees = "$15 per night | $25-30 per night" · “e Search Little Missouri State Park - Camping Campsite Types 3 Primitive Campsites Price: $15 per night 28 Modern Campsites (electricity) Pr”
-  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
-  - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Destin · “link “Campground Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Destinations/Little%20Mo/LMOSP%20Campground%20M”
-  - reservable = true · “nformation - Campsites can be booked 95 days in advance from the date you wish to stay. - Reservations can be made online or by calling 800-”
-  - rules.pets = "Pets are welcome but must stay on a leash" · “n and checkout is at 3:00 pm Mountain Standard Time on the last day of the reservation. - Pets are welcome but must stay on a leash. Most pa”
-  - sites.group = 1 · “Campsites Price: $15 per night 28 Modern Campsites (electricity) Price: $25-30 per night 1 Small Group Shelter Campsite ** (ability to put m”
 - **Pembina Gorge State Recreation Area** (US-7509, state, status ok (browser), 9 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/pembina-gorge-state-park)
   - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
   - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
@@ -1551,38 +1523,16 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Destin · “link “Multi-Use Trail Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Destinations/Pembina/PGSP%20Map%20-%20Trails.pd”
   - reservable = true · “at to know - Campsites can be booked 95 days in advance from the date you wish to stay. - Reservations can be made online or by calling 800-”
   - rules.pets = "Pets are welcome but must stay on a leash" · “t day of the reservation and checkout is at 3:00 pm on the last day of the reservation. - Pets are welcome but must stay on a leash. Most pa”
-- **Lake Metigoshe State Park** (US-2763, state, status ok, 20 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/lake-metigoshe-state-park)
+- **Lake Sakakawea State Park** (US-2764, state, status ok, 16 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/lake-sakakawea-state-park)
   - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
   - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
   - checkin = "4 pm" · “re vacating, including sweeping, wiping down surfaces and collecting and bagging trash. - Check-in is after 4 pm, check-out is at noon. - Sm”
   - checkout = "3:00 pm" · “by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the reservation and checkout is at 3:00 pm on the last day of the rese”
-  - drinking_water = true · “m during poor weather conditions. Suggested items to bring to the learning center include drinking water, bug spray, sunscreen, rain gear, l”
-  - fees = "$135-150 per night (two-night minimum stay required) | $100 · “n for special events. Lodging Camping Features Trails Events Contact Slemmen Lodge Price: $135-150 per night (two-night minimum stay require”
-  - hookups.electric = true · “e: $25-30 per night 39 Primitive Campsites Price: $15 per night 3 Modern Group Campsites (electricity, water and the ability to put multiple”
-  - hookups.water = true · “e: $25-30 per night 39 Primitive Campsites Price: $15 per night 3 Modern Group Campsites (electricity, water and the ability to put multiple”
-  - map.date_how = "PDF, no date in the link" · “link “Washegum, Maid O'Moonshine, and Primitive Campgrounds Map””
-  - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Destin · “link “Washegum, Maid O'Moonshine, and Primitive Campgrounds Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Destinations/Lake%2”
-- **Turtle River State Park campgrounds** (US-2768:hq0, state, status ok, 12 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/turtle-river-state-park-camping)
-  - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
-  - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
-  - checkin = "4:00 pm" · “he date you wish to stay. - Reservations can be made online or by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the res”
-  - checkout = "3:00 pm" · “by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the reservation and checkout is at 3:00 pm on the last day of the rese”
-  - fees = "$25-30 per night | $15 per night" · “iver State Park - Camping Campsite Types 67 Modern Campsites (electricity & water) Price: $25-30 per night 3 Modern Group Campsites (the abi”
+  - hookups.electric = "some" · “Modern Campsites (electricity & water) Price: $25-30 per night 10 Modern Group Campsites (electricity, water and the ability to put multiple”
+  - hookups.sewer = true · “Full-service marina Horseshoe pits Picnic shelters Playgrounds (2) Sand volleyball courts Sewer and electrical hookups Showers and flush toi”
+  - hookups.water = true · “Modern Campsites (electricity & water) Price: $25-30 per night 10 Modern Group Campsites (electricity, water and the ability to put multiple”
   - map.date_how = "PDF, no date in the link" · “link “Campground Map””
-  - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Destin · “link “Campground Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Destinations/Turtle%20River/TRSP%20-%20Campgrou”
-  - reservable = true · “nformation - Campsites can be booked 95 days in advance from the date you wish to stay. - Reservations can be made online or by calling 800-”
-  - rules.pets = "Pets are welcome but must stay on a leash" · “t day of the reservation and checkout is at 3:00 pm on the last day of the reservation. - Pets are welcome but must stay on a leash. Most pa”
-  - sites.group = 3 · “Camping Campsite Types 67 Modern Campsites (electricity & water) Price: $25-30 per night 3 Modern Group Campsites (the ability to put multip”
-- **Icelandic State Park** (US-2762, state, status ok, 14 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/icelandic-state-park-camping)
-  - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
-  - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
-  - checkin = "4:00 pm" · “he date you wish to stay. - Reservations can be made online or by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the res”
-  - checkout = "3:00 pm" · “by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the reservation and checkout is at 3:00 pm on the last day of the rese”
-  - fees = "$25-30 per night | $15/night" · “dic State Park - Camping Campsite Types 136 Modern Campsites (electricity & water) Price: $25-30 per night 7 Modern Group Campsites (electri”
-  - hookups.electric = true · “Modern Campsites (electricity & water) Price: $25-30 per night 7 Modern Group Campsites (electricity, water & the ability to put multiple un”
-  - hookups.water = true · “Modern Campsites (electricity & water) Price: $25-30 per night 7 Modern Group Campsites (electricity, water & the ability to put multiple un”
-  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
-  - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Destin · “link “Campground Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Destinations/Icelandic/ISP_Campground.pdf”
+  - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Destin · “link “Campground Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Destinations/Lake%20Sakakawea/LSSP%20-%20Campgr”
   - reservable = true · “nformation - Campsites can be booked 95 days in advance from the date you wish to stay. - Reservations can be made online or by calling 800-”
 - **Fort Stevenson State Park campgrounds** (US-2760:hq0, state, status ok, 15 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/fort-stevenson-state-park-camping)
   - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
@@ -1595,85 +1545,63 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.water = true · “pt Decline Search Fort Stevenson State Park - Camping campsite type 48 Premium Campsites (electricity, water & sewer) Price: $30-35 per nigh”
   - map.date_how = "PDF, no date in the link" · “link “Campground Map””
   - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Destin · “link “Campground Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Destinations/Fort%20Stevenson/FSSP%20-%20Campgr”
-- **Cross Ranch State Park** (US-2757, state, status ok, 10 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/cross-ranch-state-park-camping)
+- **Little Missouri State Park** (US-2766, state, status ok, 12 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/little-missouri-state-park-camping)
+  - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
+  - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
+  - checkin = "4:00 pm" · “he date you wish to stay. - Reservations can be made online or by calling 800-807-4723. - Check-in is at 4:00 pm Mountain Standard Time on t”
+  - checkout = "3:00 pm" · “. - Check-in is at 4:00 pm Mountain Standard Time on the first day of the reservation and checkout is at 3:00 pm Mountain Standard Time on t”
+  - fees = "$15 per night | $25-30 per night" · “e Search Little Missouri State Park - Camping Campsite Types 3 Primitive Campsites Price: $15 per night 28 Modern Campsites (electricity) Pr”
+  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
+  - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Destin · “link “Campground Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Destinations/Little%20Mo/LMOSP%20Campground%20M”
+  - reservable = true · “nformation - Campsites can be booked 95 days in advance from the date you wish to stay. - Reservations can be made online or by calling 800-”
+  - rules.pets = "Pets are welcome but must stay on a leash" · “n and checkout is at 3:00 pm Mountain Standard Time on the last day of the reservation. - Pets are welcome but must stay on a leash. Most pa”
+  - sites.group = 1 · “Campsites Price: $15 per night 28 Modern Campsites (electricity) Price: $25-30 per night 1 Small Group Shelter Campsite ** (ability to put m”
+- **Icelandic State Park** (US-2762, state, status ok, 14 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/icelandic-state-park-camping)
   - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
   - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
   - checkin = "4:00 pm" · “he date you wish to stay. - Reservations can be made online or by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the res”
   - checkout = "3:00 pm" · “by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the reservation and checkout is at 3:00 pm on the last day of the rese”
-  - hookups.electric = true · “s 35 Standard Campsites (electricity) Price: $25-30 per night 6 Group Standard Campsites (electricity and the ability to put multiple units ”
+  - fees = "$25-30 per night | $15/night" · “dic State Park - Camping Campsite Types 136 Modern Campsites (electricity & water) Price: $25-30 per night 7 Modern Group Campsites (electri”
+  - hookups.electric = true · “Modern Campsites (electricity & water) Price: $25-30 per night 7 Modern Group Campsites (electricity, water & the ability to put multiple un”
+  - hookups.water = true · “Modern Campsites (electricity & water) Price: $25-30 per night 7 Modern Group Campsites (electricity, water & the ability to put multiple un”
+  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
+  - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Destin · “link “Campground Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Destinations/Icelandic/ISP_Campground.pdf”
   - reservable = true · “nformation - Campsites can be booked 95 days in advance from the date you wish to stay. - Reservations can be made online or by calling 800-”
+- **Beaver Lake State Park** (US-2756, state, status ok, no campground facts even in a browser, 9 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/)
+  - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
+  - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
+  - checkin = "4:00 pm" · “he date you wish to stay. - Reservations can be made online or by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the res”
+  - checkout = "3:00 pm" · “by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the reservation and checkout is at 3:00 pm on the last day of the rese”
+  - features = "fire pits, a holiday-themed hot chocolate bar and hot coffe · “eason! The hike begins and ends at the park Visitor Center, where visitors can enjoy warm fire pits, a holiday-themed hot chocolate bar and ”
+  - map.date_how = "web page, no date in the link" · “link “MAP: Find a park with our Destination Finder””
+  - map.url = "https://www.parkrec.nd.gov/maps-widget/map" · “link “MAP: Find a park with our Destination Finder” -> https://www.parkrec.nd.gov/maps-widget/map”
+  - reservable = true · “r you are a returning visitor or new to the state, your journey starts here! RESERVATIONS Book your next stay in a campsite, cabin, wagon or”
   - rules.pets = "Pets are welcome but must stay on a leash" · “t day of the reservation and checkout is at 3:00 pm on the last day of the reservation. - Pets are welcome but must stay on a leash. Most pa”
-  - sites.group = 6 · “Park - Camping Campsite Types 35 Standard Campsites (electricity) Price: $25-30 per night 6 Group Standard Campsites (electricity and the ab”
-  - sites.primitive = 22 · “rnors Centennial, Primitive & Sanger Campground Maps Full Park Map Cross Ranch State Park 22 Primitive Campsites Price: $15 per night 2 Grou”
-  - sites.total = 35 · “rsion will prevail. Accept Decline Search Cross Ranch State Park - Camping Campsite Types 35 Standard Campsites (electricity) Price: $25-30 ”
+- **Grahams Island State Park** (US-2761, state, status ok, 17 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/grahams-island-state-park)
+  - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
+  - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
+  - checkin = "4 pm" · “re vacating, including sweeping, wiping down surfaces and collecting and bagging trash. - Check-in is after 4 pm, check-out is at noon. - Sm”
+  - checkout = "3:00 pm" · “l center (800-807-4723). - Check-in is at 4:00 pm on the first day of the reservation and checkout is at 3:00 pm on the last day of the rese”
+  - hookups.electric = "some" · “tions about reservations on our FAQs page . Copy Link Campsite type 45 Premium Campsites (electricity, water & sewer) Price: $30-35 per nigh”
+  - hookups.sewer = true · “ons on our FAQs page . Copy Link Campsite type 45 Premium Campsites (electricity, water & sewer) Price: $30-35 per night 5 Premium Group Cam”
+  - hookups.water = true · “tions about reservations on our FAQs page . Copy Link Campsite type 45 Premium Campsites (electricity, water & sewer) Price: $30-35 per nigh”
+  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
+  - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Destin · “link “Campground Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Destinations/Grahams%20Island/GISP%20-%20Campgr”
+  - phone = "(701) 766-4015" · “s are included with the rental fee. Please call the park at 701-766-4015 to reserve. Copy Link Sivert Thompson Loop Distance: 1.2 mi”
+- **Lake Metigoshe State Park** (US-2763, state, status ok, 20 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/lake-metigoshe-state-park)
+  - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
+  - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
+  - checkin = "4 pm" · “re vacating, including sweeping, wiping down surfaces and collecting and bagging trash. - Check-in is after 4 pm, check-out is at noon. - Sm”
+  - checkout = "3:00 pm" · “by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the reservation and checkout is at 3:00 pm on the last day of the rese”
+  - drinking_water = true · “m during poor weather conditions. Suggested items to bring to the learning center include drinking water, bug spray, sunscreen, rain gear, l”
+  - fees = "$135-150 per night (two-night minimum stay required) | $100 · “n for special events. Lodging Camping Features Trails Events Contact Slemmen Lodge Price: $135-150 per night (two-night minimum stay require”
+  - hookups.electric = true · “e: $25-30 per night 39 Primitive Campsites Price: $15 per night 3 Modern Group Campsites (electricity, water and the ability to put multiple”
+  - hookups.water = true · “e: $25-30 per night 39 Primitive Campsites Price: $15 per night 3 Modern Group Campsites (electricity, water and the ability to put multiple”
+  - map.date_how = "PDF, no date in the link" · “link “Washegum, Maid O'Moonshine, and Primitive Campgrounds Map””
+  - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Destin · “link “Washegum, Maid O'Moonshine, and Primitive Campgrounds Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Destinations/Lake%2”
 
 ## US-SD: 12 random samples (records with facts; seed = the date)
 
-- **Sandy Shore State Recreation Area** (US-8191, state, status ok, 12 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/sandy-shore-recreation-area/)
-  - booking.how = "online: gfp.sd.gov" · “link “Adams Homestead and Nature Preserve””
-  - booking.url = "https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature- · “link “Adams Homestead and Nature Preserve” -> https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature-Preserve”
-  - features = "fire pit on the shoreline for viewing the evening sunset" · “cess in the state. Each cabin also has a dock out front to utilize during your stay and a fire pit on the shoreline for viewing the evening ”
-  - fees = "$30 per night | $60 per night" · “ne Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Camping Cabins: $60 per night Show M”
-  - hookups.electric = true · “uring your stay and a fire pit on the shoreline for viewing the evening sunset. 15 modern electric campsites across the parking lot from the”
-  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
-  - map.url = "https://gfp.sd.gov/userdocs/sandy_shore.pdf" · “link “Campground Map” -> https://gfp.sd.gov/userdocs/sandy_shore.pdf”
-  - restrooms = "flush + vault" · “60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may be close”
-  - season = "year-round" · “ites - electrical: $30 per night Camping Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, ”
-  - showers = true · “Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may”
-- **Cow Creek Recreation Area campground and primitive shoreline camping** (US-8162:hq0, state, status ok, 12 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/cow-creek-recreation-area-/)
-  - booking.how = "online: gfp.sd.gov" · “link “Adams Homestead and Nature Preserve””
-  - booking.url = "https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature- · “link “Adams Homestead and Nature Preserve” -> https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature-Preserve”
-  - drinking_water = true · “while providing a great deal of privacy. Campsites in the campground have easy access to drinking water and restrooms/showers. Lake Oahe Res”
-  - fees = "$30 per night | $23 per night | $60 per night" · “ne Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Campsites - non-electrical: $23 per ”
-  - hookups.electric = "some" · “urchase Online Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Campsites - non-electric”
-  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
-  - map.url = "https://gfp.sd.gov/userdocs/cow_creek_campground.pdf" · “link “Campground Map” -> https://gfp.sd.gov/userdocs/cow_creek_campground.pdf”
-  - restrooms = "flush + vault" · “60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may be close”
-  - season = "year-round" · “- non-electrical: $23 per night Camping Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, f”
-  - showers = true · “of privacy. Campsites in the campground have easy access to drinking water and restrooms/showers. Lake Oahe Reservoir, located on the Missou”
-- **Lake Herman State Park** (US-2921, state, status ok, 11 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/lake-herman-state-park/)
-  - booking.how = "online: gfp.sd.gov" · “link “Adams Homestead and Nature Preserve””
-  - booking.url = "https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature- · “link “Adams Homestead and Nature Preserve” -> https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature-Preserve”
-  - fees = "$30 per night | $16 per night | $60 per night" · “ne Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Campsites - non-electrical: $16 per ”
-  - hookups.electric = "some" · “nd relaxation. The park features a fully equipped campground with 72 campsites (including electrical sites), 4 cabins, and modern shower fac”
-  - map.date_how = "PDF, no date in the link" · “link “Park Overview Map””
-  - map.url = "https://gfp.sd.gov/userdocs/herman_overview_cg.pdf" · “link “Park Overview Map” -> https://gfp.sd.gov/userdocs/herman_overview_cg.pdf”
-  - restrooms = "flush + vault" · “60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may be close”
-  - season = "year-round" · “- non-electrical: $16 per night Camping Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, f”
-  - showers = true · “equipped campground with 72 campsites (including electrical sites), 4 cabins, and modern shower facilities. Visitors can enjoy a range of ac”
-  - sites.cabin = 4 · “park features a fully equipped campground with 72 campsites (including electrical sites), 4 cabins, and modern shower facilities. Visitors c”
-- **Lake Hiddenwood campground** (US-8169:hq0, state, status ok, 9 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/lake-hiddenwood-recreation-area/)
-  - booking.how = "online: gfp.sd.gov" · “link “Adams Homestead and Nature Preserve””
-  - booking.url = "https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature- · “link “Adams Homestead and Nature Preserve” -> https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature-Preserve”
-  - dump_station = true · “trical: $23 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, dump station and other water systems may be closed”
-  - hookups.electric = true · “urchase Online Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $23 per night Show More Park Specs Ope”
-  - map.date_how = "PDF, no date in the link" · “link “Hunting Map””
-  - map.url = "https://gfp.sd.gov/userdocs/hiddenwood_hunting.pdf" · “link “Hunting Map” -> https://gfp.sd.gov/userdocs/hiddenwood_hunting.pdf”
-  - restrooms = "vault" · “d other water systems may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 13 c”
-  - season = "year-round" · “esidents Purchase Online Campsites - electrical: $23 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, dump stat”
-  - sites.total = 13 · “ntact the park directly for current status. Vault toilets usually remain open. Park Size: 13 campsites Directions: 5 miles Northeast of Selb”
-- **Walker's Point campground** (US-8199:hq0, state, status ok, 11 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/walker%27s-point-recreation-area/)
-  - booking.how = "online: gfp.sd.gov" · “link “Adams Homestead and Nature Preserve””
-  - booking.url = "https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature- · “link “Adams Homestead and Nature Preserve” -> https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature-Preserve”
-  - fees = "$30 per night | $60 per night" · “ne Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Camping Cabins: $60 per night Show M”
-  - hookups.electric = true · “urchase Online Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Camping Cabins: $60 per ”
-  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
-  - map.url = "https://gfp.sd.gov/userdocs/walkers_cg.pdf" · “link “Campground Map” -> https://gfp.sd.gov/userdocs/walkers_cg.pdf”
-  - restrooms = "flush + vault" · “60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may be close”
-  - season = "year-round" · “ites - electrical: $30 per night Camping Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, ”
-  - showers = true · “Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may”
-  - sites.cabin = 2 · “rectly for current status. Vault toilets usually remain open. Park Size: 42 campsites and 2 camping cabins Directions: 9 miles southeast of ”
-- **Bear Butte SP campground (15 non-electric + 4 horse sites + middle camp)** (intake-US-2916, agency (outside research camping-us-oct31), status ok, 10 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/bear-butte-state-park/)
-  - booking.how = "online: gfp.sd.gov" · “link “Adams Homestead and Nature Preserve””
-  - booking.url = "https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature- · “link “Adams Homestead and Nature Preserve” -> https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature-Preserve”
-  - fees = "$16 per night" · “nnual: $40 for residents $60 for nonresidents Purchase Online Campsites - non-electrical: $16 per night Show More Park Specs Open: Year-roun”
-  - hookups.electric = false · “ase Online Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - non-electrical: $16 per night Show More Park Specs Ope”
-  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
-  - map.url = "https://gfp.sd.gov/userdocs/bear_butte_cg.pdf" · “link “Campground Map” -> https://gfp.sd.gov/userdocs/bear_butte_cg.pdf”
-  - reservable = false · “ites, 4 non-electric horse campsites and middle camp non-electric campsites; available on first-come, first served basis Directions: Located”
-  - restrooms = "flush + vault" · “trical: $16 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, flush toilets and other water systems may be close”
-  - rules.pets = "Pets are not allowed on the Summit Trail" · “ake Trail: 2.5 miles Northernmost point of 111-mile Centennial Trail Show More Park Rules Pets are not allowed on the Summit Trail. It is to”
-  - season = "year-round" · “ents Purchase Online Campsites - non-electrical: $16 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, flush toi”
 - **Electrical campground; Primitive campground** (US-8170:hq0, state, status ok, 11 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/lake-louise-recreation-area/)
   - booking.how = "online: gfp.sd.gov" · “link “Adams Homestead and Nature Preserve””
   - booking.url = "https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature- · “link “Adams Homestead and Nature Preserve” -> https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature-Preserve”
@@ -1685,6 +1613,38 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - season = "year-round" · “- non-electrical: $23 per night Camping Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, f”
   - showers = true · “Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may”
   - sites.cabin = 2 · “rectly for current status. Vault toilets usually remain open. Park Size: 41 campsites and 2 camping cabins Directions: Head north on Highway”
+- **West Pollock campground** (US-8201:hq0, state, status ok, 10 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/west-pollock-recreation-area/)
+  - booking.how = "online: gfp.sd.gov" · “link “Adams Homestead and Nature Preserve””
+  - booking.url = "https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature- · “link “Adams Homestead and Nature Preserve” -> https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature-Preserve”
+  - fees = "$30 per night" · “ne Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Show More Park Specs Open: Year-roun”
+  - hookups.electric = true · “urchase Online Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Show More Park Specs Ope”
+  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
+  - map.url = "https://gfp.sd.gov/userdocs/west-pollock-campground.pdf" · “link “Campground Map” -> https://gfp.sd.gov/userdocs/west-pollock-campground.pdf”
+  - restrooms = "flush + vault" · “30 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may be close”
+  - season = "year-round" · “esidents Purchase Online Campsites - electrical: $30 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, ”
+  - showers = true · “trical: $30 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may”
+  - sites.total = 29 · “ntact the park directly for current status. Vault toilets usually remain open. Park Size: 29 campsites Directions: 3 miles southwest of Poll”
+- **Lake Poinsett State Recreation Area** (US-8171, state, status ok, 9 facts) · [22gfp.sd.gov](https://22gfp.sd.gov/parks/detail/lake-poinsett-recreation-area/)
+  - booking.how = "online: 22gfp.sd.gov" · “link “Adams Homestead and Nature Preserve””
+  - booking.url = "https://22gfp.sd.gov/parks/detail/Adams-Homestead-and-Natur · “link “Adams Homestead and Nature Preserve” -> https://22gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature-Preserve”
+  - hookups.electric = true · “urchase Online Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Camping Cabins: $60 per ”
+  - map.date_how = "PDF, no date in the link" · “link “Campground 1 Map””
+  - map.url = "https://22gfp.sd.gov/userdocs/poinsett_cg_1.pdf" · “link “Campground 1 Map” -> https://22gfp.sd.gov/userdocs/poinsett_cg_1.pdf”
+  - restrooms = "flush + vault" · “60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may be close”
+  - season = "year-round" · “ites - electrical: $30 per night Camping Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, ”
+  - showers = true · “Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may”
+  - sites.cabin = 4 · “tatus. Vault toilets usually remain open. Park Size: 2 campgrounds with 112 campsites and 4 camping cabins Directions: 14 miles northeast of”
+- **Main campground; Horse campground** (US-2927:hq0, state, status ok, 10 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/union-grove-state-park/)
+  - booking.how = "online: gfp.sd.gov" · “link “Adams Homestead and Nature Preserve””
+  - booking.url = "https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature- · “link “Adams Homestead and Nature Preserve” -> https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature-Preserve”
+  - fees = "$30 per night | $16 per night (tent only)" · “ne Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Campsites - non-electrical: $16 per ”
+  - hookups.electric = "some" · “urchase Online Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Campsites - non-electric”
+  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
+  - map.url = "https://gfp.sd.gov/userdocs/uniongrove_overview.pdf" · “link “Campground Map” -> https://gfp.sd.gov/userdocs/uniongrove_overview.pdf”
+  - restrooms = "flush + vault" · “(tent only) Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may be closed”
+  - season = "year-round" · “er night Campsites - non-electrical: $16 per night (tent only) Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, ”
+  - showers = true · “per night (tent only) Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may”
+  - sites.total = 25 · “ntact the park directly for current status. Vault toilets usually remain open. Park Size: 25 campsites, including 4 horse campsites Directio”
 - **Sica Hollow campground; Horse camp** (US-2926:hq0, state, status ok, 9 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/sica-hollow-state-park/)
   - booking.how = "online: gfp.sd.gov" · “link “Adams Homestead and Nature Preserve””
   - booking.url = "https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature- · “link “Adams Homestead and Nature Preserve” -> https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature-Preserve”
@@ -1695,106 +1655,86 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - restrooms = "vault" · “rical Site(s) Horse Campsite(s) Horse Trail(s) Picnic Tables Self-serve Entrance Kiosk(s) Vault Toilets (open year-round) Show More Hunting ”
   - season = "year-round" · “ites - non-electrical: $16 per night Horse Camp: $18 per night Show More Park Specs Open: Year-round Park Size: 14 Campsites Directions: 15 ”
   - sites.total = 14 · “$16 per night Horse Camp: $18 per night Show More Park Specs Open: Year-round Park Size: 14 Campsites Directions: 15 miles northwest of Siss”
-- **West Bend campground** (US-8200:hq0, state, status ok, 12 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/west-bend-recreation-area/)
-  - booking.how = "online: gfp.sd.gov" · “link “Adams Homestead and Nature Preserve””
-  - booking.url = "https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature- · “link “Adams Homestead and Nature Preserve” -> https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature-Preserve”
-  - fees = "$30 per night | $23 per night | $60 per night" · “ne Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Campsites - non-electrical: $23 per ”
-  - hookups.electric = "some" · “urchase Online Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Campsites - non-electric”
-  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
-  - map.url = "https://gfp.sd.gov/userdocs/west-bend-campground.pdf" · “link “Campground Map” -> https://gfp.sd.gov/userdocs/west-bend-campground.pdf”
-  - phone_hint = "(605) 773-2885" · “etween April 30 and September 30. For storage information, call the Farm Island office at 605.773.2885. Show More Lake Camera The camera let”
-  - restrooms = "flush + vault" · “60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may be close”
-  - season = "year-round" · “- non-electrical: $23 per night Camping Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, f”
-  - showers = true · “Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may”
-- **Hartford Beach campground** (US-2920:hq0, state, status ok, 11 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/hartford-beach-state-park/)
-  - booking.how = "online: gfp.sd.gov" · “link “Adams Homestead and Nature Preserve””
-  - booking.url = "https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature- · “link “Adams Homestead and Nature Preserve” -> https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature-Preserve”
-  - fees = "$30 per night | $16 per night | $60 per night" · “ne Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Campsites - non-electrical: $16 per ”
-  - hookups.electric = "some" · “to enjoy all seasons and the views. The one-room cabins come with heat, air conditioning, electricity and sleeping accommodations for four p”
-  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
-  - map.url = "https://gfp.sd.gov/userdocs/hartford_cgs.pdf" · “link “Campground Map” -> https://gfp.sd.gov/userdocs/hartford_cgs.pdf”
-  - restrooms = "flush + vault" · “60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may be close”
-  - season = "year-round" · “s, walleyes, largemouth bass, and northern pike. The park&rsquo;s four camping cabins are open year-round to enjoy all seasons and the views”
-  - showers = true · “Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may”
-  - sites.cabin = 4 · “rectly for current status. Vault toilets usually remain open. Park Size: 89 campsites and 4 camping cabins Directions: 15 miles north of Mil”
-- **North Point campground** (US-8178:hq0, state, status ok, 12 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/north-point-recreation-area/)
+- **Rocky Point campground** (US-8190:hq0, state, status ok, 10 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/rocky-point-recreation-area/)
   - booking.how = "online: gfp.sd.gov" · “link “Adams Homestead and Nature Preserve””
   - booking.url = "https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature- · “link “Adams Homestead and Nature Preserve” -> https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature-Preserve”
   - fees = "$30 per night | $60 per night" · “ne Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Camping Cabins: $60 per night Show M”
   - hookups.electric = true · “urchase Online Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Camping Cabins: $60 per ”
   - map.date_how = "PDF, no date in the link" · “link “Campground Map””
-  - map.url = "https://gfp.sd.gov/userdocs/north_point_cg.pdf" · “link “Campground Map” -> https://gfp.sd.gov/userdocs/north_point_cg.pdf”
-  - phone = "(605) 487-7272" · “ith the Division of Parks and Recreation. Contact by phone: 605.487.7272 Read More About This Park Activities Archery Biking (on par”
+  - map.url = "https://gfp.sd.gov/userdocs/rocky_pt_cg.pdf" · “link “Campground Map” -> https://gfp.sd.gov/userdocs/rocky_pt_cg.pdf”
   - restrooms = "flush + vault" · “60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may be close”
   - season = "year-round" · “ites - electrical: $30 per night Camping Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, ”
   - showers = true · “Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may”
-- **Platte Creek campground** (US-8186:hq0, state, status ok, 10 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/platte-creek-recreation-area/)
+  - sites.total = 62 · “ntact the park directly for current status. Vault toilets usually remain open. Park Size: 62 campsites Directions: 8 miles east of Belle Fou”
+- **Mina Lake campground** (US-8177:hq0, state, status ok, 16 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/mina-lake-recreation-area/)
   - booking.how = "online: gfp.sd.gov" · “link “Adams Homestead and Nature Preserve””
   - booking.url = "https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature- · “link “Adams Homestead and Nature Preserve” -> https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature-Preserve”
-  - fees = "$30 per night" · “ne Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Show More Park Specs Open: Year-roun”
-  - hookups.electric = true · “urchase Online Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Show More Park Specs Ope”
+  - checkin = "4 p.m" · “ays before arrival. $25 per night fee if cancelled within 30 days of arrival. Regulations Check-in: 4 p.m. CT Check-out: 11 a.m. CT No smoki”
+  - checkout = "11 a.m" · “$25 per night fee if cancelled within 30 days of arrival. Regulations Check-in: 4 p.m. CT Check-out: 11 a.m. CT No smoking allowed inside. P”
+  - fees = "$150 (additional | $10 per person for up to 15 guests) | $6 · “ther amenities may vary by unit. Price per night. Modern cabin: two bedrooms, sleeps 10 | $150 (additional $10 per person for up to 15 guest”
+  - hookups.electric = true · “oor recreation and natural beauty. The park provides a well-maintained campground with 37 electrical campsites, one tent site, one camping c”
+  - map.date_how = "PDF, no date in the link" · “link “Hunting Map””
+  - map.url = "https://gfp.sd.gov/userdocs/mina_lake_hunting_map.pdf" · “link “Hunting Map” -> https://gfp.sd.gov/userdocs/mina_lake_hunting_map.pdf”
+  - phone_hint = "(800) 710-2267" · “sleeps 10 | $150 (additional $10 per person for up to 15 guests) Reservations CampSD.com 1.800.710.2267 (additional $6 fee for residents or ”
+  - reservable = true · “res more than standard cleaning. Camping units and tents cannot be placed outside. Please reserve a campsite in the campground. Park entranc”
+- **South Unit campground** (US-8189:hq0, state, status ok, 11 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/richmond-lake-recreation-area/)
+  - booking.how = "online: gfp.sd.gov" · “link “Adams Homestead and Nature Preserve””
+  - booking.url = "https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature- · “link “Adams Homestead and Nature Preserve” -> https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature-Preserve”
+  - fees = "$30 per night | $16 per night | $60 per night" · “ne Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Campsites - non-electrical: $16 per ”
+  - hookups.electric = "some" · “rse range of outdoor activities across its three distinct units. The South Unit offers 24 electrical campsites, two tent sites, a camping ca”
   - map.date_how = "PDF, no date in the link" · “link “Campground Map””
-  - map.url = "https://gfp.sd.gov/userdocs/platte_creek_cg.pdf" · “link “Campground Map” -> https://gfp.sd.gov/userdocs/platte_creek_cg.pdf”
-  - restrooms = "flush + vault" · “30 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may be close”
-  - season = "year-round" · “esidents Purchase Online Campsites - electrical: $30 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, ”
-  - showers = true · “trical: $30 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may”
-  - sites.total = 36 · “ntact the park directly for current status. Vault toilets usually remain open. Park Size: 36 campsites Directions: 8 miles west and 10 miles”
+  - map.url = "https://gfp.sd.gov/userdocs/richmond_cg.pdf" · “link “Campground Map” -> https://gfp.sd.gov/userdocs/richmond_cg.pdf”
+  - restrooms = "flush + vault" · “60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may be close”
+  - season = "year-round" · “- non-electrical: $16 per night Camping Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, f”
+  - showers = true · “Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may”
+  - sites.cabin = 1 · “rectly for current status. Vault toilets usually remain open. Park Size: 26 campsites and 1 camping cabin Directions: 11 miles northwest of ”
+- **Sheps Canyon campground; Horse camp** (US-8193:hq0, state, status ok, 15 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/sheps-canyon-recreation-area/)
+  - booking.how = "online: gfp.sd.gov" · “link “Adams Homestead and Nature Preserve””
+  - booking.url = "https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature- · “link “Adams Homestead and Nature Preserve” -> https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature-Preserve”
+  - checkin = "4 p.m" · “rrival. Reservations must be made by midnight two days prior to your arrival. Regulations Check-in: 4 p.m. CT Check-out: 11 a.m. CT Pets all”
+  - checkout = "11 a.m" · “must be made by midnight two days prior to your arrival. Regulations Check-in: 4 p.m. CT Check-out: 11 a.m. CT Pets allowed on main level wi”
+  - hookups.electric = "some" · “urchase Online Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Campsites - non-electric”
+  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
+  - map.url = "https://gfp.sd.gov/userdocs/sheps_canyon_cg.pdf" · “link “Campground Map” -> https://gfp.sd.gov/userdocs/sheps_canyon_cg.pdf”
+  - phone_hint = "(800) 710-2267" · “structures with multiple rooms for larger groups. $280 per night Reservations CampSD.com 1.800.710.2267 (additional $2 fee). Minimum two-nig”
+  - reservable = false · “ites, 40 non-electrical campsites, 11 horse campsites, and 2 group sites (Group sites are first-come, first-served, not available for reserv”
+  - restrooms = "flush + vault" · “23 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may be close”
+- **Campground 1; Campground 2; Campground 3** (US-8180:hq0, state, status ok, 9 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/oahe-downstream-recreation-area/)
+  - booking.how = "online: gfp.sd.gov" · “link “Adams Homestead and Nature Preserve””
+  - booking.url = "https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature- · “link “Adams Homestead and Nature Preserve” -> https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature-Preserve”
+  - fees = "$30 per night | $60 per night | $120-$150 per night | $150  · “ne Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Camping Cabins: $60 per night Modern”
+  - hookups.electric = true · “The Corps of Engineers began building the Oahe Dam in 1948 and in 1962 started generating electricity. It's one of the largest constructed r”
+  - map.date_how = "PDF, no date in the link" · “link “Park Overview Map””
+  - map.url = "https://gfp.sd.gov/userdocs/ods_overview.pdf" · “link “Park Overview Map” -> https://gfp.sd.gov/userdocs/ods_overview.pdf”
+  - restrooms = "vault" · “) Shooting Range Shore Fishing Access Showers Ski Beach(es) Swim Beach(es) TRACK Trail(s) Vault Toilets (open year-round) Visitor Center(s) ”
+  - season = "year-round" · “Modern Cabins: $120-$150 per night Group Lodge: $150 per night Show More Park Specs Open: Year-round. Campgrounds 1 and 2 closed to camping ”
+  - sites.cabin = 8 · “1 and April 30, water systems may be closed. Park Size: 3 campgrounds with 205 campsites, 8 camping cabins, 4 modern cabins, and group lodge”
+- **Main campground (specific campground name not stated)** (US-8157:hq0, state, status ok, 11 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/big-sioux-recreation-area/)
+  - booking.how = "online: gfp.sd.gov" · “link “Adams Homestead and Nature Preserve””
+  - booking.url = "https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature- · “link “Adams Homestead and Nature Preserve” -> https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature-Preserve”
+  - fees = "$30 per night | $16 per night | $60 per night" · “ne Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Campsites - non-electrical: $16 per ”
+  - hookups.electric = "some" · “urchase Online Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Campsites - non-electric”
+  - map.date_how = "PDF, no date in the link" · “link “Archery Trail Map””
+  - map.url = "https://gfp.sd.gov/userdocs/bigsioux_archery_trail_map.pdf" · “link “Archery Trail Map” -> https://gfp.sd.gov/userdocs/bigsioux_archery_trail_map.pdf”
+  - restrooms = "flush + vault" · “60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may be close”
+  - season = "year-round" · “- non-electrical: $16 per night Camping Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, f”
+  - showers = true · “Cabins: $60 per night Show More Park Specs Open: Year-round. Between Oct. 1 and April 30, showers, flush toilets and other water systems may”
+  - sites.cabin = 3 · “rectly for current status. Vault toilets usually remain open. Park Size: 49 campsites and 3 camping cabins Directions: 4 miles southwest of ”
+- **Shadehill campground** (US-8192:hq0, state, status ok, 17 facts) · [gfp.sd.gov](https://gfp.sd.gov/parks/detail/shadehill-recreation-area/)
+  - booking.how = "online: gfp.sd.gov" · “link “Adams Homestead and Nature Preserve””
+  - booking.url = "https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature- · “link “Adams Homestead and Nature Preserve” -> https://gfp.sd.gov/parks/detail/Adams-Homestead-and-Nature-Preserve”
+  - checkin = "4 p.m" · “rrival. Reservations must be made by midnight two days prior to your arrival. Regulations Check-in: 4 p.m. MT Check-out: 11 a.m. MT No pets ”
+  - checkout = "11 a.m" · “must be made by midnight two days prior to your arrival. Regulations Check-in: 4 p.m. MT Check-out: 11 a.m. MT No pets allowed inside. Servi”
+  - fees = "$300 per night | $2 fee) | $30 per night | $60 per night" · “up Lodge Group lodges are single rental structures with multiple rooms for larger groups. $300 per night Reservations CampSD.com 1.800.710.2”
+  - hookups.electric = true · “urchase Online Annual: $40 for residents $60 for nonresidents Purchase Online Campsites - electrical: $30 per night Camping Cabins: $60 per ”
+  - map.date_how = "PDF, no date in the link" · “link “Campground Map””
+  - map.url = "https://gfp.sd.gov/userdocs/shadehill_cg.pdf" · “link “Campground Map” -> https://gfp.sd.gov/userdocs/shadehill_cg.pdf”
+  - phone_hint = "(800) 710-2267" · “structures with multiple rooms for larger groups. $300 per night Reservations CampSD.com 1.800.710.2267 (additional $2 fee). Minimum two-nig”
+  - restrooms = "flush + vault" · “r night Show More Park Specs Open: Year-round. Between November 30 and April 30, showers, flush toilets, and other water systems may be clos”
 
 ## US-PA: 12 random samples (records with facts; seed = the date)
 
-- **Organized group tenting area** (intake-US-1352, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [www.pa.gov](https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/fort-washington-state-park/stay)
-  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
-  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/camping/f · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/camping/fort-washington-state-park/r/campgroundDet”
-  - drinking_water = false · “a maximum capacity of 220 people. Each site holds 20-100 people. Non-flush restrooms and potable water are available.&lt;/p>\r\n"}}"> Organi”
-  - restrooms = "none" · “round and has a maximum capacity of 220 people. Each site holds 20-100 people. Non-flush restrooms and potable water are available.&lt;/p>\r”
-  - season = "year-round" · “ng&lt;br>\r\n&lt;/h1>\r\n&lt;p class=\"ms-rteElement-P\">♿&nbsp;&nbsp;This rustic area is open year round and has a maximum capacity of 220 ”
-- **Hyner Run Campground** (PA-437867d14f, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_004834.pdf)
-  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
-  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
-  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
-- **Tobyhanna Campground** (PA-952f884be4, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_003049.pdf)
-  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
-  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
-  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
-- **Worlds End Campground** (PA-cbe04cc29f, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_002960.pdf)
-  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
-  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
-  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
-- **State forest primitive and motorized (roadside) campsites** (intake-US-5473, agency (outside research camping-us-oct31), status ok, 13 facts) · [www.pa.gov](https://www.pa.gov/agencies/dcnr/recreation/what-to-do/stay-overnight/backpacking-and-primitive-camping)
-  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation Online””
-  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation Online” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
-  - dump_station = false · “find endless opportunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest”
-  - hookups.electric = false · “tunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest lands; however, t”
-  - hookups.water = false · “tunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest lands; however, t”
-  - map.date_how = "web page, no date in the link" · “link “State Forest Camping Locations Map””
-  - map.url = "https://maps.dcnr.pa.gov/bof/camping/" · “link “State Forest Camping Locations Map” -> https://maps.dcnr.pa.gov/bof/camping/”
-  - reservable = true · “nities not available: check in at park office for availability of water Pets allowed: Yes Reserve sites: up to 11 months in advance Explore ”
-  - restrooms = "some" · “rk) Number of shelters per site: 3 Number of tent spaces per site: 0 Amenities available: restroom and fire ring Amenities not available: fi”
-  - rules.fires = "campfire is desired during spring wildfire season -- you mu · “nline;\">d.”&lt;/span>&lt;/div>\r\n&lt;/li>\r\n&lt;li>&lt;div class=\"ms-rteElement-P\">A campfire is desired during spring wildfire season ”
-- **State forest primitive and motorized (roadside) campsites** (intake-US-5479, agency (outside research camping-us-oct31), status ok, 13 facts) · [www.pa.gov](https://www.pa.gov/agencies/dcnr/recreation/what-to-do/stay-overnight/backpacking-and-primitive-camping)
-  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation Online””
-  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation Online” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
-  - dump_station = false · “find endless opportunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest”
-  - hookups.electric = false · “tunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest lands; however, t”
-  - hookups.water = false · “tunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest lands; however, t”
-  - map.date_how = "web page, no date in the link" · “link “State Forest Camping Locations Map””
-  - map.url = "https://maps.dcnr.pa.gov/bof/camping/" · “link “State Forest Camping Locations Map” -> https://maps.dcnr.pa.gov/bof/camping/”
-  - reservable = true · “nities not available: check in at park office for availability of water Pets allowed: Yes Reserve sites: up to 11 months in advance Explore ”
-  - restrooms = "some" · “rk) Number of shelters per site: 3 Number of tent spaces per site: 0 Amenities available: restroom and fire ring Amenities not available: fi”
-  - rules.fires = "campfire is desired during spring wildfire season -- you mu · “nline;\">d.”&lt;/span>&lt;/div>\r\n&lt;/li>\r\n&lt;li>&lt;div class=\"ms-rteElement-P\">A campfire is desired during spring wildfire season ”
-- **Leonard Harrison Campground** (PA-416a6def8e, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_003757.pdf)
-  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
-  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
-  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
-- **Poe Paddy Campground** (PA-db742e185f, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_003316.pdf)
-  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
-  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
-  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
-- **Little Pine Campground** (PA-c8b88ec53d, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_003721.pdf)
-  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
-  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
-  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
-- **Kettle Creek Upper Campground** (PA-f088f7bf7b, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_004133.pdf)
+- **Caledonia Hosack Run Campground** (PA-4046c57307, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_004832.pdf)
   - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
   - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
   - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
@@ -1802,14 +1742,74 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
   - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
   - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
-- **Cowans Gap Camping Area A** (PA-d2fb7a4394, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_004759.pdf)
+- **French Creek Campground** (PA-35d4a79093, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_004689.rtf)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
+  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
+- **Promised Land Pickerel Point & Deerfield Campgrounds** (PA-f5571550d4, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_017205.pdf)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
+  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
+- **Patterson Campground** (PA-8e0aafbe5c, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_003417.pdf)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
+  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
+- **Colonel Denning Campground** (PA-75bbffdb44, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_004792.pdf)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
+  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
+- **Tobyhanna Campground** (PA-952f884be4, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_003049.pdf)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
+  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
+- **Promised Land Pines Campground** (PA-e64d94fb2b, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_003241.pdf)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
+  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
+- **Pymatuning Linesville Campground** (PA-3c8812b915, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_003213.pdf)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
+  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
+- **Raymond B. Winter Campground** (PA-55acdfa809, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_003182.pdf)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
+  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
+- **Denton Hill State Park** (PA-5d13f4c10b, state, status ok, no campground facts even in a browser, 3 facts) · [www.dcnr.pa.gov](https://www.dcnr.pa.gov/StateParks/FindAPark/DentonHillStatePark)
+  - map.date_how = "web page, no date in the link" · “link “download the park map””
+  - map.url = "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/sta · “link “download the park map” -> https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/denton-hill-state-pa”
+  - reservable = true · “yman Run Road&lt;br>\n Galeton, PA 16922&lt;br>&lt;/p>\n&lt;p>Currently, this park has no reservable facilities.&lt;/p>"}}"> Street Address:”
+- **Colton Point Campground** (PA-01409dd158, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_20026365.pdf)
   - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
   - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
   - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
 
 ## US-NY: 12 random samples (records with facts; seed = the date)
 
-- **Buck's Brook State Forest** (intake-US-5139, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
+- **Sandy Hook Camp Ground; Fort Wadsworth Campsite** (intake-US-0680, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [www.nps.gov](https://www.nps.gov/gate/planyourvisit/camping-at-gateway.htm)
+  - booking.how = "online: www.recreation.gov" · “link “Camp Gateway - Sandy Hook, Gateway National Recreation Area - Recreation.gov””
+  - booking.url = "https://www.recreation.gov/camping/campgrounds/234714" · “link “Camp Gateway - Sandy Hook, Gateway National Recreation Area - Recreation.gov” -> https://www.recreation.gov/camping/campgrounds/234714”
+  - fees = "$30 a night | $15 a night with the Senior or Access Pass (s · “ay - Sandy Hook, Gateway National Recreation Area - Recreation.gov Camping details Rates: $30 a night; $15 a night with the Senior or Access”
+  - season = "May through September 20" · “act Us Camping at Gateway Camping at Sandy Hook NPS Photo Camp Gateway Sandy Hook will be open May -September 2026. All reservations for Cam”
+- **Devil's Tombstone Campground** (NY-b8b05dd194, state, status ok, 7 facts) · [www.dec.ny.gov](http://www.dec.ny.gov/outdoor/24462.html)
+  - booking.how = "online: newyorkstateparks.reserveamerica.com" · “link “ReserveAmerica””
+  - booking.url = "https://newyorkstateparks.reserveamerica.com/camping/devils · “link “ReserveAmerica” -> https://newyorkstateparks.reserveamerica.com/camping/devils-tombstone-campground/r/campgroundDetails”
+  - map.date_how = "PDF, no date in the link" · “link “Firewood Restriction Map””
+  - map.url = "https://dec.ny.gov/docs/lands_forests_pdf/fwdevilstombstone · “link “Firewood Restriction Map” -> https://dec.ny.gov/docs/lands_forests_pdf/fwdevilstombstone.pdf”
+  - restrooms = "vault" · “- Friday during normal working hours) related to the construction and installation of new vault toilets within the facility. We apologize fo”
+  - showers = true · “harcoal grills, playground, volleyball, horseshoes, hiking trails. Swimming, boating, and showers are available at North-South Lake Campgrou”
+  - sites.rv = 24 · “al education, provide public land access, and protect natural resources. Donate Amenities 24 tent and trailer sites, Notch Lake, 2 picnic ar”
+- **Clarence Fahnestock** (NY-f6ee19c076, state, status ok, 12 facts) · [parks.ny.gov](https://parks.ny.gov/visit/state-parks/fahnestock-state-park-clarence-fahnestock)
+  - booking.how = "online: parks.ny.gov" · “link “Reservation Info Rules””
+  - booking.url = "https://parks.ny.gov/camping/things-to-know" · “link “Reservation Info Rules” -> https://parks.ny.gov/camping/things-to-know”
+  - dump_station = false · “Additionally, there is an area for RV camping. Although there are no hookups available or dump station, restroom and shower facilities are c”
+  - features = "fire ring" · “tranquility for campers. Each of the 80 campsites has a picnic table, charcoal grill, and fire ring. Additionally, there is an area for RV c”
+  - fees = "$75 and can accommodate up to 50 people" · “ty of touch boxes. Pavilion Information Fahnestock has one pavilion. The day-use price is $75 and can accommodate up to 50 people. Check ava”
+  - hookups.electric = false · “rill, and fire ring. Additionally, there is an area for RV camping. Although there are no hookups available or dump station, restroom and sh”
+  - map.date_how = "PDF, year 2025 in the link" · “link “Fahnestock Hunting Map””
+  - map.url = "https://parks.ny.gov/sites/default/files/2025-10/ClarenceFa · “link “Fahnestock Hunting Map” -> https://parks.ny.gov/sites/default/files/2025-10/ClarenceFahnestockFahnestockHuntingMap.pdf”
+  - phone = "(845) 225-7207" · “ark office to obtain park hunting permits and maps, or call (845) 225-7207 with any questions. The park office located at 1498 Rte 301”
+  - restrooms = "none" · “there is an area for RV camping. Although there are no hookups available or dump station, restroom and shower facilities are centrally locat”
+- **Summer Hill State Forest** (intake-US-5323, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
   - booking.how = "online: dec.ny.gov" · “link “Camping Reservations””
   - booking.url = "https://dec.ny.gov/things-to-do/camping/reservations" · “link “Camping Reservations” -> https://dec.ny.gov/things-to-do/camping/reservations”
   - drinking_water = true · “ollect and bury droppings away from water, trails and camp sites. Keep your pet away from drinking water sources. Observe and enjoy wildlife”
@@ -1818,7 +1818,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - reservable = false · “k State Forest Ranger responsible for the area. Lean-tos are available in many areas on a first come first served basis. Lean-tos cannot be ”
   - restrooms = "vault" · “plants, rocks, fossils or artifacts from state land without a permit is illegal. Use pit privies provided near popular camping areas and tra”
   - rules.fires = "firewood into New York unless it has been heat treated to k · “ls. New York State Firewood Regulation There is a regulation that prohibits the import of firewood into New York unless it has been heat tre”
-- **Scott Patent State Forest** (intake-US-5290, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
+- **Windfall Creek State Forest** (intake-US-5374, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
   - booking.how = "online: dec.ny.gov" · “link “Camping Reservations””
   - booking.url = "https://dec.ny.gov/things-to-do/camping/reservations" · “link “Camping Reservations” -> https://dec.ny.gov/things-to-do/camping/reservations”
   - drinking_water = true · “ollect and bury droppings away from water, trails and camp sites. Keep your pet away from drinking water sources. Observe and enjoy wildlife”
@@ -1827,7 +1827,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - reservable = false · “k State Forest Ranger responsible for the area. Lean-tos are available in many areas on a first come first served basis. Lean-tos cannot be ”
   - restrooms = "vault" · “plants, rocks, fossils or artifacts from state land without a permit is illegal. Use pit privies provided near popular camping areas and tra”
   - rules.fires = "firewood into New York unless it has been heat treated to k · “ls. New York State Firewood Regulation There is a regulation that prohibits the import of firewood into New York unless it has been heat tre”
-- **Taconic Ridge State Forest** (intake-US-5329, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
+- **Snow Bowl State Forest** (intake-US-5299, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
   - booking.how = "online: dec.ny.gov" · “link “Camping Reservations””
   - booking.url = "https://dec.ny.gov/things-to-do/camping/reservations" · “link “Camping Reservations” -> https://dec.ny.gov/things-to-do/camping/reservations”
   - drinking_water = true · “ollect and bury droppings away from water, trails and camp sites. Keep your pet away from drinking water sources. Observe and enjoy wildlife”
@@ -1836,7 +1836,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - reservable = false · “k State Forest Ranger responsible for the area. Lean-tos are available in many areas on a first come first served basis. Lean-tos cannot be ”
   - restrooms = "vault" · “plants, rocks, fossils or artifacts from state land without a permit is illegal. Use pit privies provided near popular camping areas and tra”
   - rules.fires = "firewood into New York unless it has been heat treated to k · “ls. New York State Firewood Regulation There is a regulation that prohibits the import of firewood into New York unless it has been heat tre”
-- **Steuben Hill State Forest** (intake-US-5313, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
+- **Michigan Hill State Forest** (intake-US-5416, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
   - booking.how = "online: dec.ny.gov" · “link “Camping Reservations””
   - booking.url = "https://dec.ny.gov/things-to-do/camping/reservations" · “link “Camping Reservations” -> https://dec.ny.gov/things-to-do/camping/reservations”
   - drinking_water = true · “ollect and bury droppings away from water, trails and camp sites. Keep your pet away from drinking water sources. Observe and enjoy wildlife”
@@ -1845,7 +1845,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - reservable = false · “k State Forest Ranger responsible for the area. Lean-tos are available in many areas on a first come first served basis. Lean-tos cannot be ”
   - restrooms = "vault" · “plants, rocks, fossils or artifacts from state land without a permit is illegal. Use pit privies provided near popular camping areas and tra”
   - rules.fires = "firewood into New York unless it has been heat treated to k · “ls. New York State Firewood Regulation There is a regulation that prohibits the import of firewood into New York unless it has been heat tre”
-- **Ambler State Forest** (intake-US-5087, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
+- **Cameron Mills State Forest** (intake-US-5154, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
   - booking.how = "online: dec.ny.gov" · “link “Camping Reservations””
   - booking.url = "https://dec.ny.gov/things-to-do/camping/reservations" · “link “Camping Reservations” -> https://dec.ny.gov/things-to-do/camping/reservations”
   - drinking_water = true · “ollect and bury droppings away from water, trails and camp sites. Keep your pet away from drinking water sources. Observe and enjoy wildlife”
@@ -1854,7 +1854,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - reservable = false · “k State Forest Ranger responsible for the area. Lean-tos are available in many areas on a first come first served basis. Lean-tos cannot be ”
   - restrooms = "vault" · “plants, rocks, fossils or artifacts from state land without a permit is illegal. Use pit privies provided near popular camping areas and tra”
   - rules.fires = "firewood into New York unless it has been heat treated to k · “ls. New York State Firewood Regulation There is a regulation that prohibits the import of firewood into New York unless it has been heat tre”
-- **Calhoun Creek State Forest** (intake-US-5150, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
+- **Burnell Access Road Campsite; Loop Access Road Campsite** (intake-US-5369, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
   - booking.how = "online: dec.ny.gov" · “link “Camping Reservations””
   - booking.url = "https://dec.ny.gov/things-to-do/camping/reservations" · “link “Camping Reservations” -> https://dec.ny.gov/things-to-do/camping/reservations”
   - drinking_water = true · “ollect and bury droppings away from water, trails and camp sites. Keep your pet away from drinking water sources. Observe and enjoy wildlife”
@@ -1872,45 +1872,17 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - reservable = false · “k State Forest Ranger responsible for the area. Lean-tos are available in many areas on a first come first served basis. Lean-tos cannot be ”
   - restrooms = "vault" · “plants, rocks, fossils or artifacts from state land without a permit is illegal. Use pit privies provided near popular camping areas and tra”
   - rules.fires = "firewood into New York unless it has been heat treated to k · “ls. New York State Firewood Regulation There is a regulation that prohibits the import of firewood into New York unless it has been heat tre”
-- **Vandermark State Forest** (intake-US-5356, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
-  - booking.how = "online: dec.ny.gov" · “link “Camping Reservations””
-  - booking.url = "https://dec.ny.gov/things-to-do/camping/reservations" · “link “Camping Reservations” -> https://dec.ny.gov/things-to-do/camping/reservations”
-  - drinking_water = true · “ollect and bury droppings away from water, trails and camp sites. Keep your pet away from drinking water sources. Observe and enjoy wildlife”
-  - map.date_how = "web page, year 2024 in the link" · “link “Eastern High Peaks Map””
-  - map.url = "https://dec.ny.gov/sites/default/files/2024-07/hpwmap.png" · “link “Eastern High Peaks Map” -> https://dec.ny.gov/sites/default/files/2024-07/hpwmap.png”
-  - reservable = false · “k State Forest Ranger responsible for the area. Lean-tos are available in many areas on a first come first served basis. Lean-tos cannot be ”
-  - restrooms = "vault" · “plants, rocks, fossils or artifacts from state land without a permit is illegal. Use pit privies provided near popular camping areas and tra”
-  - rules.fires = "firewood into New York unless it has been heat treated to k · “ls. New York State Firewood Regulation There is a regulation that prohibits the import of firewood into New York unless it has been heat tre”
-- **Blenheim Hill State Forest** (intake-US-5125, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
-  - booking.how = "online: dec.ny.gov" · “link “Camping Reservations””
-  - booking.url = "https://dec.ny.gov/things-to-do/camping/reservations" · “link “Camping Reservations” -> https://dec.ny.gov/things-to-do/camping/reservations”
-  - drinking_water = true · “ollect and bury droppings away from water, trails and camp sites. Keep your pet away from drinking water sources. Observe and enjoy wildlife”
-  - map.date_how = "web page, year 2024 in the link" · “link “Eastern High Peaks Map””
-  - map.url = "https://dec.ny.gov/sites/default/files/2024-07/hpwmap.png" · “link “Eastern High Peaks Map” -> https://dec.ny.gov/sites/default/files/2024-07/hpwmap.png”
-  - reservable = false · “k State Forest Ranger responsible for the area. Lean-tos are available in many areas on a first come first served basis. Lean-tos cannot be ”
-  - restrooms = "vault" · “plants, rocks, fossils or artifacts from state land without a permit is illegal. Use pit privies provided near popular camping areas and tra”
-  - rules.fires = "firewood into New York unless it has been heat treated to k · “ls. New York State Firewood Regulation There is a regulation that prohibits the import of firewood into New York unless it has been heat tre”
-- **Taughannock Falls State Park** (NY-5a9cc25e11, state, status ok, 12 facts) · [parks.ny.gov](https://parks.ny.gov/parks/62/details.aspx)
+- **Eel Weir State Park** (NY-6157d0424f, state, status ok, 9 facts) · [parks.ny.gov](https://parks.ny.gov/parks/121/details.aspx)
   - booking.how = "online: parks.ny.gov" · “link “Reservation Info Rules””
   - booking.url = "https://parks.ny.gov/camping/things-to-know" · “link “Reservation Info Rules” -> https://parks.ny.gov/camping/things-to-know”
-  - fees = "$80- and your key to all-season enjoyment with unlimi | $10 · “verify information, please contact the park directly. The easy-to-use Empire Pass card is $80- and your key to all-season enjoyment with unl”
+  - fees = "$80 — and your key to all-season enjoyment with unlim | $15 · “verify information, please contact the park directly. The easy-to-use Empire Pass card is $80 — and your key to all-season enjoyment with un”
   - hookups.amps = [20, 30, 50] · “Saturday, & night before a holiday) $4.00 XL Site+ $5.00 Waterfront $6.00 Electric -- 15/20/30 amps $7.00 Electric -- 50 amps $9.00 Oceanfro”
-  - hookups.electric = "some" · “ring water and clear blue sky. The park's camping areas have tent and trailer sites, many electric hookups. A swimming beach, picnic… Seneca”
+  - hookups.electric = true · “oliday (Friday, Saturday, & night before a holiday) $4.00 XL Site+ $5.00 Waterfront $6.00 Electric -- 15/20/30 amps $7.00 Electric -- 50 amp”
   - hookups.sewer = true · “c -- 15/20/30 amps $7.00 Electric -- 50 amps $9.00 Oceanfront $10.00 Full Hook-up (water, sewer, 30 amp electric) $13.00 Full Hook-up (water”
-  - phone = "(607) 349-4767" · “gh Myers Park. For more information: Paddles-N-More or call (607)349-4767. Bow/crossbow hunting for deer is permitted in season. Most”
-  - reservable = true · “6/26 - Labor Day, 11:00am - 7:00pm, daily 2026 Camping Season: 5/15 - 10/12 with existing reservations only at this time. Cabins available 5”
   - restrooms = "yes (kind not stated)" · “tric/propane/fireplace and/or woodstove heat, porch, screened porch, living room, shower, toilet, running water, number of bedrooms, prime l”
-  - rules.pets = "pets are allowed in campsites and day use areas unless proh · “icle fee, per night: $10 Peddling Fee $400 Know Before You Go Pet Policy A maximum of two pets are allowed in campsites and day use areas un”
-- **Turkey Hill State Forest** (intake-US-5350, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
-  - booking.how = "online: dec.ny.gov" · “link “Camping Reservations””
-  - booking.url = "https://dec.ny.gov/things-to-do/camping/reservations" · “link “Camping Reservations” -> https://dec.ny.gov/things-to-do/camping/reservations”
-  - drinking_water = true · “ollect and bury droppings away from water, trails and camp sites. Keep your pet away from drinking water sources. Observe and enjoy wildlife”
-  - map.date_how = "web page, year 2024 in the link" · “link “Eastern High Peaks Map””
-  - map.url = "https://dec.ny.gov/sites/default/files/2024-07/hpwmap.png" · “link “Eastern High Peaks Map” -> https://dec.ny.gov/sites/default/files/2024-07/hpwmap.png”
-  - reservable = false · “k State Forest Ranger responsible for the area. Lean-tos are available in many areas on a first come first served basis. Lean-tos cannot be ”
-  - restrooms = "vault" · “plants, rocks, fossils or artifacts from state land without a permit is illegal. Use pit privies provided near popular camping areas and tra”
-  - rules.fires = "firewood into New York unless it has been heat treated to k · “ls. New York State Firewood Regulation There is a regulation that prohibits the import of firewood into New York unless it has been heat tre”
-- **Black Creek(Herkimer County) State Forest** (intake-US-5124, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
+  - rules.pets = "pets are allowed in campsites and day use areas unless proh · “se (Daily) Commercial: $75 Non Profit: $35 Know Before You Go Pet Policy A maximum of two pets are allowed in campsites and day use areas un”
+  - showers = true · “ty, electric/propane/fireplace and/or woodstove heat, porch, screened porch, living room, shower, toilet, running water, number of bedrooms,”
+- **Jenksville State Forest** (intake-US-5072, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
   - booking.how = "online: dec.ny.gov" · “link “Camping Reservations””
   - booking.url = "https://dec.ny.gov/things-to-do/camping/reservations" · “link “Camping Reservations” -> https://dec.ny.gov/things-to-do/camping/reservations”
   - drinking_water = true · “ollect and bury droppings away from water, trails and camp sites. Keep your pet away from drinking water sources. Observe and enjoy wildlife”
@@ -1928,16 +1900,6 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 
 ## US-RI: 12 random samples (records with facts; seed = the date)
 
-- **Fishermen's Memorial Campground** (US-2873:hq0, state, status ok, 9 facts) · [rhodeislandstateparks.reserveamerica.com](https://rhodeislandstateparks.reserveamerica.com/camping/fishermans-memorial-campground/r/campgroundDetails.do?contractCode=RI&parkId=252611)
-  - booking.how = "online: rhodeislandstateparks.reserveamerica.com" · “link “Sign In / Sign Up””
-  - booking.url = "https://rhodeislandstateparks.reserveamerica.com/memberSign · “link “Sign In / Sign Up” -> https://rhodeislandstateparks.reserveamerica.com/memberSignInSignUp.do”
-  - checkin = "1:00 PM" · “IST OF POLICES, PLEASE REFER TO THE LINK IN THE KNOW BEFORE YOU GO! SECTION. CHECK IN/OUT Check In: 1:00 PM to no later than 10:00 PM. No ch”
-  - checkout = "11:00 AM" · “o not allow check-ins later than 10PM out of respect for our campers and our quite hours. Check Out: 11:00 AM sharp. This is strictly enforc”
-  - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
-  - hookups.electric = false · “gings Group sites Day Use Shelters RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
-  - reservable = true · “06 2026 Max Reservation Window: View all Booking Window Fri Nov 06 2026 - Sat Nov 06 2027 Reservations can be made for today and can be made”
-  - rules.pets = "Pets allowed" · “r more) 30 Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Pets allowed Tent Options Occupants more options..”
-  - sites.total = 182 · “ront Pets allowed Common Attributes Group Accessibility needs Apply Filter Find your spot 182 site(s) found ALL (182) RV Only (40) Standard ”
 - **George Washington Campground** (US-5484:hq0, state, status ok, 12 facts) · [rhodeislandstateparks.reserveamerica.com](https://rhodeislandstateparks.reserveamerica.com/camping/george-washington-campground/r/campgroundDetails.do?contractCode=RI&parkId=253123)
   - booking.how = "online: rhodeislandstateparks.reserveamerica.com" · “link “Sign In / Sign Up””
   - booking.url = "https://rhodeislandstateparks.reserveamerica.com/memberSign · “link “Sign In / Sign Up” -> https://rhodeislandstateparks.reserveamerica.com/memberSignInSignUp.do”
@@ -1957,9 +1919,65 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - reservable = true · “of the property. Contact Burlingame State Campground Make A Reservation Reserve America: Book Online or call 1-877-742-2675 Questions About ”
   - restrooms = "yes (kind not stated)" · “Burlingame Campground: New Shower and Restroom Facilities Project | Rhode Island State Parks Skip to main content Official State of Rhod”
   - showers = true · “Burlingame Campground: New Shower and Restroom Facilities Project | Rhode Island State Parks Skip to main content Official”
+- **Fishermen's Memorial Campground** (US-2873:hq0, state, status ok, 9 facts) · [rhodeislandstateparks.reserveamerica.com](https://rhodeislandstateparks.reserveamerica.com/camping/fishermans-memorial-campground/r/campgroundDetails.do?contractCode=RI&parkId=252611)
+  - booking.how = "online: rhodeislandstateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://rhodeislandstateparks.reserveamerica.com/memberSign · “link “Sign In / Sign Up” -> https://rhodeislandstateparks.reserveamerica.com/memberSignInSignUp.do”
+  - checkin = "1:00 PM" · “IST OF POLICES, PLEASE REFER TO THE LINK IN THE KNOW BEFORE YOU GO! SECTION. CHECK IN/OUT Check In: 1:00 PM to no later than 10:00 PM. No ch”
+  - checkout = "11:00 AM" · “o not allow check-ins later than 10PM out of respect for our campers and our quite hours. Check Out: 11:00 AM sharp. This is strictly enforc”
+  - hookups.amps = [20, 30, 50] · “tions Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “gings Group sites Day Use Shelters RV sites Options Occupants Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - reservable = true · “06 2026 Max Reservation Window: View all Booking Window Fri Nov 06 2026 - Sat Nov 06 2027 Reservations can be made for today and can be made”
+  - rules.pets = "Pets allowed" · “r more) 30 Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Pets allowed Tent Options Occupants more options..”
+  - sites.total = 182 · “ront Pets allowed Common Attributes Group Accessibility needs Apply Filter Find your spot 182 site(s) found ALL (182) RV Only (40) Standard ”
 
 ## US-MA: 12 random samples (records with facts; seed = the date)
 
+- **Lorraine Park Campground** (US-4746:hq0, state, status ok, 6 facts) · [www.mass.gov](https://www.mass.gov/locations/harold-parker-state-forest)
+  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
+  - booking.url = "https://massdcrcamping.reserveamerica.com/camping/harold-pa · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/harold-parker-state-forest/r/campgroundDetails.do?”
+  - fees = "$17/night for Massachusetts residents and | $54/night for n · “Beach wheelchairs available Restrictions No alcohol No littering More info Camping costs $17/night for Massachusetts residents and $54/night”
+  - map.date_how = "web page, no date in the link" · “link “Download a trail map””
+  - map.url = "https://www.mass.gov/doc/harold-parker-state-forest-trail-m · “link “Download a trail map” -> https://www.mass.gov/doc/harold-parker-state-forest-trail-map/download”
+  - sites.total = 89 · “The Lorraine Park Campground offers 89 campsites for tents, trailers, or R.V.s. All Activities Hiking Camping Canoeing and kayaking Fishin”
+- **Lake Dennison campground** (US-8389:hq0, state, status ok, 8 facts) · [www.mass.gov](https://www.mass.gov/locations/lake-dennison-recreation-area)
+  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
+  - booking.url = "https://massdcrcamping.reserveamerica.com/camping/lake-denn · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/lake-dennison-recreation-area/r/campgroundDetails.”
+  - fees = "$17/night for Massachusetts residents and | $54/night for n · “o alcohol No littering No dogs allowed on the beach More info Camping at Lake Dennison is $17/night for Massachusetts residents and $54/nigh”
+  - phone = "(978) 297-1609" · “MA 01436 Directions Phone Call Lake Dennison Campground at (978) 297-1609 seasonal Related parks Otter River State Forest More parks”
+  - phone_hint = "(978) 297-1609" · “o mail delivery) , Winchendon, MA 01436 Directions Phone Call Lake Dennison Campground at (978) 297-1609 seasonal Related parks Otter River ”
+  - reservable = true · “939-8962 year round Contact station (978) 297-1609 seasonal Transit friendly Dogs Allowed Reserve a campsite Visit Massachusetts State Parks”
+  - rules.pets = "Dogs Allowed" · “arters (978) 939-8962 year round Contact station (978) 297-1609 seasonal Transit friendly Dogs Allowed Reserve a campsite Visit Massachusett”
+  - sites.total = 150 · “Google Maps Details Overview Located in Winchendon, the Lake Dennison Recreation Area has 150 campsites and a beach where you can swim. Due ”
+- **DAR State Forest campground** (intake-US-4724, agency (outside research camping-us-oct31), status ok, 5 facts) · [massdcrcamping.reserveamerica.com](https://massdcrcamping.reserveamerica.com/)
+  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://massdcrcamping.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://massdcrcamping.reserveamerica.com/memberSignInSignUp.do”
+  - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “Tents Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
+  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins, Yurts or Lodgings Options Occ”
+- **Nickerson State Park campground** (US-2451:hq0, state, status ok, 8 facts) · [www.mass.gov](https://www.mass.gov/locations/nickerson-state-park)
+  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
+  - booking.url = "https://massdcrcamping.reserveamerica.com/camping/nickerson · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/nickerson-state-park/r/campgroundDetails.do?contra”
+  - fees = "$22/night for Massachusetts residents and | $70/night for n · “ted to a 10 horsepower-maximum engine. No firewood from outside park More info Camping is $22/night for Massachusetts residents and $70/nigh”
+  - map.date_how = "web page, no date in the link" · “link “Download a Trail Map””
+  - map.url = "https://www.mass.gov/doc/nickerson-state-park-trail-map/dow · “link “Download a Trail Map” -> https://www.mass.gov/doc/nickerson-state-park-trail-map/download”
+  - reservable = true · “ate.ma.us Wheelchair Accessible Dogs Allowed Download a Trail Map Suggested Hikes & Rides Reserve a campsite Southeastern MA Adult Walking C”
+  - rules.pets = "Dogs Allowed" · “) 896-3491 more less contact info Online nickerson.park@state.ma.us Wheelchair Accessible Dogs Allowed Download a Trail Map Suggested Hikes ”
+  - sites.total = 400 · “There's plenty of wooded trails and ponds to explore, and Nickerson also offers more than 400 campsites. Hours Sunrise to sunset Parking Dai”
+- **Clarksburg State Park campground (adjacent)** (intake-US-4760, agency (outside research camping-us-oct31), status ok, 5 facts) · [massdcrcamping.reserveamerica.com](https://massdcrcamping.reserveamerica.com/)
+  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://massdcrcamping.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://massdcrcamping.reserveamerica.com/memberSignInSignUp.do”
+  - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “Tents Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
+  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins, Yurts or Lodgings Options Occ”
+- **Wompatuck State Park campground** (US-2465:hq0, state, status ok, 8 facts) · [www.mass.gov](https://www.mass.gov/locations/wompatuck-state-park)
+  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
+  - booking.url = "https://massdcrcamping.reserveamerica.com/camping/wompatuck · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/wompatuck-state-park/r/campgroundDetails.do?contra”
+  - fees = "$17/night for Massachusetts residents and | $54/night for n · “ng Read the rules for hunting in state parks More info Camping at Wompatuck State Park is $17/night for Massachusetts residents and $54/nigh”
+  - map.date_how = "web page, no date in the link" · “link “Download a trail map””
+  - map.url = "https://www.mass.gov/doc/wompatuck-state-park-trail-map/dow · “link “Download a trail map” -> https://www.mass.gov/doc/wompatuck-state-park-trail-map/download”
+  - reservable = true · “tact info Online Wompatuck.park@mass.gov Wheelchair Accessible Dogs Allowed Historic site Reserve a campsite Download a trail map Recommende”
+  - rules.pets = "Dogs Allowed" · “617) 895-8245 more less contact info Online Wompatuck.park@mass.gov Wheelchair Accessible Dogs Allowed Historic site Reserve a campsite Down”
+  - sites.total = 250 · “iew Wompatuck State Park spans 3,526 acres of forest, streams and ponds. Offering an over 250 site campground, 12 miles of non-motorized roa”
 - **Otter River State Forest campground** (US-4745:hq0, state, status ok, 10 facts) · [www.mass.gov](https://www.mass.gov/locations/otter-river-state-forest)
   - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
   - booking.url = "https://massdcrcamping.reserveamerica.com/camping/otter-riv · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/otter-river-state-forest/r/campgroundDetails.do?co”
@@ -1971,54 +1989,14 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - sites.cabin = 4 · “me senior parking pass (MA residents) Activities Camping Otter River offers 76 campsites, 4 yurts, and 3 group sites. Swimming Take a dip in”
   - sites.group = 3 · “king pass (MA residents) Activities Camping Otter River offers 76 campsites, 4 yurts, and 3 group sites. Swimming Take a dip in Beaman Pond.”
   - sites.total = 76 · “s Get a lifetime senior parking pass (MA residents) Activities Camping Otter River offers 76 campsites, 4 yurts, and 3 group sites. Swimming”
-- **Clarksburg State Park campground** (US-2426:hq0, state, status ok, 16 facts) · [www.mass.gov](https://www.mass.gov/locations/clarksburg-state-park)
-  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
-  - booking.url = "https://massdcrcamping.reserveamerica.com/camping/clarksbur · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/clarksburg-state-park/r/campgroundDetails.do?contr”
-  - dump_station = false · “lable. Campsites accommodate tents, pop-up trailer and small RV. No electrical hook up or dump station. Hiking & walking 4.5 miles of foot t”
-  - features = "fire ring" · “awme Crowell State Forest. Each accessible campsite is equipped with a picnic table and a fire ring. The parking areas are crushed stone and”
-  - fees = "$17/night for Massachusetts residents and | $54/night for n · “cted to designated areas only Dogs on leash. Clean up after your pet More info Camping is $17/night for Massachusetts residents and $54/nigh”
-  - hookups.electric = false · “ilets and showers available. Campsites accommodate tents, pop-up trailer and small RV. No electrical hook up or dump station. Hiking & walki”
-  - hookups.water = true · “de paved area for parking, and a hard crushed stone surface in the rest of the camp site. Water and electricity hookups are provided on an a”
-  - map.date_how = "web page, no date in the link" · “link “Download a trail map””
-  - map.url = "https://www.mass.gov/doc/clarksburg-state-park-trail-map/do · “link “Download a trail map” -> https://www.mass.gov/doc/clarksburg-state-park-trail-map/download”
-  - reservable = true · “ass.gov Wheelchair Accessible Dogs Allowed Self-guided opportunities Download a trail map Reserve a campsite Get Directions to Clarksburg St”
-- **Mohawk Trail State Forest** (US-4747, state, status ok, 10 facts) · [www.mass.gov](https://www.mass.gov/locations/mohawk-trail-state-forest)
-  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a Campsite””
-  - booking.url = "https://massdcrcamping.reserveamerica.com/unifSearchResults · “link “Reserve a Campsite” -> https://massdcrcamping.reserveamerica.com/unifSearchResults.do”
-  - fees = "$17/night for Massachusetts residents and | $54/night non-r · “ough mid-October. Pets are prohibited from cabins. Reservations required. Tent camping is $17/night for Massachusetts residents and $54/nigh”
-  - map.date_how = "web page, no date in the link" · “link “Download a trail map””
-  - map.url = "https://www.mass.gov/doc/mohawk-trail-state-forest-trail-ma · “link “Download a trail map” -> https://www.mass.gov/doc/mohawk-trail-state-forest-trail-map/download”
-  - reservable = true · “lowed Historic site Download a trail map Self-guided opportunities Mohican - Mohawk Trail Reserve a Campsite Get Directions to Mohawk Trail ”
-  - rules.pets = "Dogs Allowed" · “13) 339-5504 more less contact info Online mohawk.trail@state.ma.us Wheelchair Accessible Dogs Allowed Historic site Download a trail map Se”
-  - season = "mid-May through mid-October" · “cabins Picnicking Restrooms Restrictions No alcohol No littering More info Campsites are available mid-May through mid-October. Pets are pro”
-  - sites.cabin = 6 · “rs Sunrise to sunset Parking Parking available Activities Camping 53 wooded campsites and 6 overnight log cabins available Fishing You can f”
-  - sites.total = 53 · “ant and animal life. Hours Sunrise to sunset Parking Parking available Activities Camping 53 wooded campsites and 6 overnight log cabins ava”
-- **DAR State Forest campground** (intake-US-4724, agency (outside research camping-us-oct31), status ok, 5 facts) · [massdcrcamping.reserveamerica.com](https://massdcrcamping.reserveamerica.com/)
-  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Sign In / Sign Up””
-  - booking.url = "https://massdcrcamping.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://massdcrcamping.reserveamerica.com/memberSignInSignUp.do”
-  - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
-  - hookups.electric = false · “Tents Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
-  - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins, Yurts or Lodgings Options Occ”
-- **Pearl Hill campground** (US-2452:hq0, state, status ok, 10 facts) · [www.mass.gov](https://www.mass.gov/locations/pearl-hill-state-park)
-  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
-  - booking.url = "https://massdcrcamping.reserveamerica.com/camping/pearl-hil · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/pearl-hill-state-park/r/campgroundDetails.do?contr”
-  - fees = "$17/night for Massachusetts residents and | $54/night for n · “Dogs must remain on-leash Read the rules for hunting in state parks More info Camping is $17/night for Massachusetts residents and $54/night”
-  - map.date_how = "web page, no date in the link" · “link “Download a trail map””
-  - map.url = "https://www.mass.gov/doc/willard-brook-state-forest-trail-m · “link “Download a trail map” -> https://www.mass.gov/doc/willard-brook-state-forest-trail-map/download”
-  - reservable = true · “ine willard.brook@state.ma.us Dogs Allowed Self-guided opportunities Download a trail map Reserve a campsite Get Directions to Pearl Hill St”
-  - restrooms = "yes (kind not stated)" · “Activities Camping Visitors can choose from more than 50 campsites, which are served by a bathhouse. Swimming Cool off with a dip in Pearl H”
-  - rules.pets = "Dogs Allowed" · “bor Day weekend 9 a.m. - 10 p.m.. more less contact info Online willard.brook@state.ma.us Dogs Allowed Self-guided opportunities Download a ”
-  - showers = true · “Activities Camping Visitors can choose from more than 50 campsites, which are served by a bathhouse. Swimming Cool off with a dip in Pearl H”
-  - sites.total = 50 · “to sunset Parking Parking available Activities Camping Visitors can choose from more than 50 campsites, which are served by a bathhouse. Swi”
-- **Nickerson State Park campground** (US-2451:hq0, state, status ok, 8 facts) · [www.mass.gov](https://www.mass.gov/locations/nickerson-state-park)
-  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
-  - booking.url = "https://massdcrcamping.reserveamerica.com/camping/nickerson · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/nickerson-state-park/r/campgroundDetails.do?contra”
-  - fees = "$22/night for Massachusetts residents and | $70/night for n · “ted to a 10 horsepower-maximum engine. No firewood from outside park More info Camping is $22/night for Massachusetts residents and $70/nigh”
-  - map.date_how = "web page, no date in the link" · “link “Download a Trail Map””
-  - map.url = "https://www.mass.gov/doc/nickerson-state-park-trail-map/dow · “link “Download a Trail Map” -> https://www.mass.gov/doc/nickerson-state-park-trail-map/download”
-  - reservable = true · “ate.ma.us Wheelchair Accessible Dogs Allowed Download a Trail Map Suggested Hikes & Rides Reserve a campsite Southeastern MA Adult Walking C”
-  - rules.pets = "Dogs Allowed" · “) 896-3491 more less contact info Online nickerson.park@state.ma.us Wheelchair Accessible Dogs Allowed Download a Trail Map Suggested Hikes ”
-  - sites.total = 400 · “There's plenty of wooded trails and ponds to explore, and Nickerson also offers more than 400 campsites. Hours Sunrise to sunset Parking Dai”
+- **Beartown State Forest** (US-4711, state, status ok, 7 facts) · [www.mass.gov](https://www.mass.gov/orgs/department-of-conservation-recreation)
+  - booking.how = "online: www.mass.gov" · “link “Mt. Greylock””
+  - booking.url = "https://www.mass.gov/locations/mount-greylock-state-reserva · “link “Mt. Greylock” -> https://www.mass.gov/locations/mount-greylock-state-reservation”
+  - hookups.electric = true · “ampgrounds vary in what they offer, from showers and flush toilets to R.V. sites offering electric and water hook-ups. You can also try isla”
+  - hookups.water = true · “ampgrounds vary in what they offer, from showers and flush toilets to R.V. sites offering electric and water hook-ups. You can also try isla”
+  - reservable = true · “Conservation & Recreation What would you like to do? Find a park Learn about Jobs at DCR Reserve a campsite Check DCR park alerts Pay a park”
+  - restrooms = "flush" · “res, or near the beach on Cape Cod. Campgrounds vary in what they offer, from showers and flush toilets to R.V. sites offering electric and ”
+  - showers = true · “the Berkshires, or near the beach on Cape Cod. Campgrounds vary in what they offer, from showers and flush toilets to R.V. sites offering el”
 - **Erving State Forest** (US-4744, state, status ok, 9 facts) · [www.mass.gov](https://www.mass.gov/locations/erving-state-forest)
   - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
   - booking.url = "https://massdcrcamping.reserveamerica.com/camping/erving-st · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/erving-state-forest/r/campgroundDetails.do?contrac”
@@ -2029,71 +2007,36 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - reservable = true · “ass.gov Wheelchair Accessible Dogs Allowed Self-guided opportunities Download a trail map Reserve a campsite Get Directions to Erving State ”
   - rules.pets = "Dogs Allowed" · “nd) 9am - 10pm more less contact info Online erving.forest@mass.gov Wheelchair Accessible Dogs Allowed Self-guided opportunities Download a ”
   - sites.total = 27 · “State Forest in Google Maps Details Overview Visit for a swim or hike, camp at one of our 27 sites, or kayak on Laurel Lake. Hours Sunrise t”
-- **Granville State Forest campground** (US-4703:hq0, state, status ok, 10 facts) · [www.mass.gov](https://www.mass.gov/locations/granville-state-forest)
+- **Savoy Mountain State Forest campground** (US-4743:hq0, state, status ok, 9 facts) · [www.mass.gov](https://www.mass.gov/locations/savoy-mountain-state-forest)
   - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
-  - booking.url = "https://massdcrcamping.reserveamerica.com/camping/granville · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/granville-state-forest/r/campgroundDetails.do?cont”
-  - fees = "$17/night for Massachusetts residents and | $54/night for n · “ed off-road vehicles No wilderness camping Dogs must remain on-leash More info Camping is $17/night for Massachusetts residents and $54/nigh”
-  - hookups.electric = false · “/night for Massachusetts residents and $54/night for non-residents. Campsites do not have electric hookups. Learn more about camping at Gran”
+  - booking.url = "https://massdcrcamping.reserveamerica.com/camping/savoy-mou · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/savoy-mountain-state-forest/r/campgroundDetails.do”
+  - fees = "$17/night for Massachusetts residents and | $54/night for n · “e park Read the rules for hunting in state parks More info Camping information Camping is $17/night for Massachusetts residents and $54/nigh”
   - map.date_how = "web page, no date in the link" · “link “Download a trail map””
-  - map.url = "https://www.mass.gov/doc/granville-state-forest-trail-map" · “link “Download a trail map” -> https://www.mass.gov/doc/granville-state-forest-trail-map”
+  - map.url = "https://www.mass.gov/doc/savoy-mountain-state-forest-trail- · “link “Download a trail map” -> https://www.mass.gov/doc/savoy-mountain-state-forest-trail-map/download”
   - phone_hint = "(781) 233-0834" · “about the local habitat. Explore a variety of nature and wildlife across 65 acres. Phone (781) 233-0834 Open Thursday, Friday, and Saturday ”
-  - reservable = true · “rections Phone (413) 357-6611 Dogs Allowed Download a trail map Self-guided opportunities Reserve a campsite Get Directions to Granville Sta”
-  - rules.pets = "Dogs Allowed" · “orest Address 323 West Hartland Road, Granville, MA 01034 Directions Phone (413) 357-6611 Dogs Allowed Download a trail map Self-guided oppo”
+  - reservable = true · “e.ma.us Wheelchair Accessible Dogs Allowed Self-guided opportunities Download a trail map Reserve a campsite Mohican - Mohawk Trail Busby Tr”
+  - rules.pets = "Dogs Allowed" · “) 663-8469 more less contact info Online savoy.mountain@state.ma.us Wheelchair Accessible Dogs Allowed Self-guided opportunities Download a ”
   - sites.total = 27 · “ng State Forest, Erving, MA 01344 Directions Visit for a swim or hike, camp at one of our 27 sites, or kayak on Laurel Lake. Phone (978) 544”
-- **Clarksburg State Park campground (adjacent)** (intake-US-4760, agency (outside research camping-us-oct31), status ok, 5 facts) · [massdcrcamping.reserveamerica.com](https://massdcrcamping.reserveamerica.com/)
+- **Willard Brook State Forest** (US-4752, state, status ok, 9 facts) · [www.mass.gov](https://www.mass.gov/locations/willard-brook-state-forest)
+  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
+  - booking.url = "https://massdcrcamping.reserveamerica.com/camping/willard-b · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/willard-brook-state-forest/r/campgroundDetails.do?”
+  - fees = "$14/night for Massachusetts residents and | $40/night for n · “allowed at yurt campsites Read the rules for hunting in state parks More info Camping is $14/night for Massachusetts residents and $40/night”
+  - map.date_how = "web page, no date in the link" · “link “Download a trail map””
+  - map.url = "https://www.mass.gov/doc/willard-brook-state-forest-trail-m · “link “Download a trail map” -> https://www.mass.gov/doc/willard-brook-state-forest-trail-map/download”
+  - reservable = true · “more less contact info Online willard.brook@state.ma.us Dogs Allowed Download a trail map Reserve a campsite Self-guided opportunities Get D”
+  - rules.pets = "Dogs Allowed" · “4 Directions Phone (978) 597-8802 more less contact info Online willard.brook@state.ma.us Dogs Allowed Download a trail map Reserve a campsi”
+  - season = "late May through early September" · “, including, hiking, and cross-country skiing. Hours Sunrise to sunset Campground office (late May to early September) Sunday - Saturday: 9:”
+  - sites.total = 21 · “urday: 9:00 am-10:00 pm Parking Parking available Activities Camping Willard Brook offers 21 campsites and one group yurt Hiking Try the Fri”
+- **Peddocks Island campground (DCR)** (intake-US-2421, agency (outside research camping-us-oct31), status ok, 5 facts) · [massdcrcamping.reserveamerica.com](https://massdcrcamping.reserveamerica.com/)
   - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Sign In / Sign Up””
   - booking.url = "https://massdcrcamping.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://massdcrcamping.reserveamerica.com/memberSignInSignUp.do”
   - hookups.amps = [20, 30, 50] · “V Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
   - hookups.electric = false · “Tents Trailer Sites Group Sites Horse Sites RV Sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Am”
   - rules.pets = "Pets allowed" · “Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Waterfront Pets allowed Cabins, Yurts or Lodgings Options Occ”
-- **Beartown State Forest** (US-4711, state, status ok, 7 facts) · [www.mass.gov](https://www.mass.gov/orgs/department-of-conservation-recreation)
-  - booking.how = "online: www.mass.gov" · “link “Mt. Greylock””
-  - booking.url = "https://www.mass.gov/locations/mount-greylock-state-reserva · “link “Mt. Greylock” -> https://www.mass.gov/locations/mount-greylock-state-reservation”
-  - hookups.electric = true · “ampgrounds vary in what they offer, from showers and flush toilets to R.V. sites offering electric and water hook-ups. You can also try isla”
-  - hookups.water = true · “ampgrounds vary in what they offer, from showers and flush toilets to R.V. sites offering electric and water hook-ups. You can also try isla”
-  - reservable = true · “Conservation & Recreation What would you like to do? Find a park Learn about Jobs at DCR Reserve a campsite Check DCR park alerts Pay a park”
-  - restrooms = "flush" · “res, or near the beach on Cape Cod. Campgrounds vary in what they offer, from showers and flush toilets to R.V. sites offering electric and ”
-  - showers = true · “the Berkshires, or near the beach on Cape Cod. Campgrounds vary in what they offer, from showers and flush toilets to R.V. sites offering el”
-- **Federated Women's Club State Forest** (US-4729, state, status ok, 6 facts) · [www.mass.gov](https://www.mass.gov/locations/federated-womens-club-state-forest)
-  - booking.url = "https://www.mass.gov/how-to/reserve-a-campsite" · “booking link from our campstate-manual row (official system www.mass.gov)”
-  - phone = "(978) 544-3939" · “. Before camping, contact park staff at Erving State Forest (978) 544-3939 Related parks Erving State Forest More parks Visit Massachu”
-  - phone_hint = "(978) 544-3939" · “s are first come, first served. Before camping, contact park staff at Erving State Forest (978) 544-3939 Related parks Erving State Forest M”
-  - reservable = false · “info Campground closed for the season. Primitive camping 15 campsites available Sites are first come, first served. Before camping, contact ”
-  - rules.pets = "No pets allowed on Department of Conservation and Recre" · “kiing Fishing Hunting Facilities Scenic viewing area Restrictions No alcohol No littering No pets allowed on Department of Conservation and ”
-  - sites.total = 15 · “operty No off-road vehicles More info Campground closed for the season. Primitive camping 15 campsites available Sites are first come, first”
-- **Lorraine Park Campground** (US-4746:hq1, state, status ok, 6 facts) · [www.mass.gov](https://www.mass.gov/locations/harold-parker-state-forest)
-  - booking.how = "online: massdcrcamping.reserveamerica.com" · “link “Reserve a campsite””
-  - booking.url = "https://massdcrcamping.reserveamerica.com/camping/harold-pa · “link “Reserve a campsite” -> https://massdcrcamping.reserveamerica.com/camping/harold-parker-state-forest/r/campgroundDetails.do?”
-  - fees = "$17/night for Massachusetts residents and | $54/night for n · “Beach wheelchairs available Restrictions No alcohol No littering More info Camping costs $17/night for Massachusetts residents and $54/night”
-  - map.date_how = "web page, no date in the link" · “link “Download a trail map””
-  - map.url = "https://www.mass.gov/doc/harold-parker-state-forest-trail-m · “link “Download a trail map” -> https://www.mass.gov/doc/harold-parker-state-forest-trail-map/download”
-  - sites.total = 89 · “The Lorraine Park Campground offers 89 campsites for tents, trailers, or R.V.s. All Activities Hiking Camping Canoeing and kayaking Fishin”
 
 ## US-VT: 12 random samples (records with facts; seed = the date)
 
-- **Little River State Park: Campsites area (1 sites, 27)** (US-3129:8, state, status ok, 22 facts) · [www.vtstateparks.com](https://www.vtstateparks.com/)
-  - booking.how = "online: www.vtstateparks.com" · “link “Reserve””
-  - booking.url = "https://www.vtstateparks.com/reservations" · “link “Reserve” -> https://www.vtstateparks.com/reservations”
-  - checkout = "11:00 AM" · “imes For campsites, lean-tos, cabins, and cottages: Check-in: Between 2:00 PM and 9:00 PM Check-out: By 11:00 AM Firewood Policy Don’t bring”
-  - drinking_water = "some" · “ies Most Vermont State Park campgrounds are shaped in loops. Along the loop, you’ll find: Water spigots every few campsites Restrooms in a c”
-  - dump_station = true · “for swimming Hiking trails Horseshoe pits Volleyball nets Nature centers Picnic shelters Dump stations for RVs Many parks also sell firewood”
-  - fees = "$20 | $38 Add | $2 | $8 per person, per night | $3 per pet, · “Type VT Residents Non-Residents Prime Sites Extra People Over 4 (max 8) Pets RV/Tent Site $20 $38 Add $2 $8 per person, per night $3 per pet”
-  - hookups.electric = "some" · “Make sure to bring your own bedding and towels! A table and chairs An overhead light and electric outlet A covered front porch, picnic table”
-  - hookups.sewer = false · “and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to see what each park o”
-  - hookups.water = false · “grams, performances, and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to”
-  - phone_hint = "(888) 409-7579" · “our Park Finder tool to pick the activities and features you want. Need help? Call us at 1-888-409-7579 between 9 am and 4pm, Monday through”
-- **Lake Carmi State Park: Lean-tos area (11 sites, Ash–Hemlock)** (US-3126:6, state, status ok, 22 facts) · [www.vtstateparks.com](https://www.vtstateparks.com/)
-  - booking.how = "online: www.vtstateparks.com" · “link “Reserve””
-  - booking.url = "https://www.vtstateparks.com/reservations" · “link “Reserve” -> https://www.vtstateparks.com/reservations”
-  - checkout = "11:00 AM" · “imes For campsites, lean-tos, cabins, and cottages: Check-in: Between 2:00 PM and 9:00 PM Check-out: By 11:00 AM Firewood Policy Don’t bring”
-  - drinking_water = "some" · “ies Most Vermont State Park campgrounds are shaped in loops. Along the loop, you’ll find: Water spigots every few campsites Restrooms in a c”
-  - dump_station = true · “for swimming Hiking trails Horseshoe pits Volleyball nets Nature centers Picnic shelters Dump stations for RVs Many parks also sell firewood”
-  - fees = "$20 | $38 Add | $2 | $8 per person, per night | $3 per pet, · “Type VT Residents Non-Residents Prime Sites Extra People Over 4 (max 8) Pets RV/Tent Site $20 $38 Add $2 $8 per person, per night $3 per pet”
-  - hookups.electric = "some" · “Make sure to bring your own bedding and towels! A table and chairs An overhead light and electric outlet A covered front porch, picnic table”
-  - hookups.sewer = false · “and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to see what each park o”
-  - hookups.water = false · “grams, performances, and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to”
-  - phone_hint = "(888) 409-7579" · “our Park Finder tool to pick the activities and features you want. Need help? Call us at 1-888-409-7579 between 9 am and 4pm, Monday through”
-- **Dorand SF primitive camping** (intake-US-5530, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 7 facts) · [fpr.vermont.gov](https://fpr.vermont.gov/recreation/activities/camping/primitive-camping)
+- **Washington SF primitive camping** (intake-US-5548, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 7 facts) · [fpr.vermont.gov](https://fpr.vermont.gov/recreation/activities/camping/primitive-camping)
   - booking.how = "online: vtstateparks.com" · “link “Make a Reservation””
   - booking.url = "https://vtstateparks.com/reservations.html" · “link “Make a Reservation” -> https://vtstateparks.com/reservations.html”
   - drinking_water = false · “t car camping. You must backpack in at least 1,000 feet from any road. There is no public drinking water or toilet facilities, no reservatio”
@@ -2101,18 +2044,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - phone_hint = "(802) 289-0603" · “Management Areas, please visit the Primitive Camping on WMAs page. Southeastern Vermont - (802) 289-0603 Coolidge State Forest Primitive Cam”
   - reservable = false · “t least 1,000 feet from any road. There is no public drinking water or toilet facilities, no reservations or assigned sites. Vermont does no”
   - restrooms = "none" · “must backpack in at least 1,000 feet from any road. There is no public drinking water or toilet facilities, no reservations or assigned site”
-- **50 tent/RV sites; 10 lean-to sites** (US-3114:hq0, state, status ok, 25 facts) · [www.vtstateparks.com](https://www.vtstateparks.com/parks/fort-dummer)
-  - booking.how = "online: www.vtstateparks.com" · “link “Reserve””
-  - booking.url = "https://www.vtstateparks.com/reservations" · “link “Reserve” -> https://www.vtstateparks.com/reservations”
-  - checkout = "11:00 AM" · “imes For campsites, lean-tos, cabins, and cottages: Check-in: Between 2:00 PM and 9:00 PM Check-out: By 11:00 AM Firewood Policy Don’t bring”
-  - drinking_water = "some" · “ies Most Vermont State Park campgrounds are shaped in loops. Along the loop, you’ll find: Water spigots every few campsites Restrooms in a c”
-  - dump_station = true · “and are served by two toilet buildings, both with token-operated hot showers. There is a sanitary dump station, but there are no hookups. Th”
-  - fees = "$20 | $38 Add | $2 | $8 per person, per night | $3 per pet, · “Type VT Residents Non-Residents Prime Sites Extra People Over 4 (max 8) Pets RV/Tent Site $20 $38 Add $2 $8 per person, per night $3 per pet”
-  - hookups.electric = false · “both with token-operated hot showers. There is a sanitary dump station, but there are no hookups. The park has a small picnic area, hiking t”
-  - hookups.sewer = false · “and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to see what each park o”
-  - hookups.water = false · “grams, performances, and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to”
-  - map.date_how = "PDF, no date in the link" · “link “Name Fort Dummer State Park Map and Guide””
-- **Gifford Woods State Park: Lean-tos area (20 sites, Ash–Hickory)** (US-3115:1, state, status ok, 22 facts) · [www.vtstateparks.com](https://www.vtstateparks.com/)
+- **Woodford State Park: Cabins area (4 sites, Gentian–Jack-in-the-pulpit)** (US-3152:1, state, status ok, 22 facts) · [www.vtstateparks.com](https://www.vtstateparks.com/)
   - booking.how = "online: www.vtstateparks.com" · “link “Reserve””
   - booking.url = "https://www.vtstateparks.com/reservations" · “link “Reserve” -> https://www.vtstateparks.com/reservations”
   - checkout = "11:00 AM" · “imes For campsites, lean-tos, cabins, and cottages: Check-in: Between 2:00 PM and 9:00 PM Check-out: By 11:00 AM Firewood Policy Don’t bring”
@@ -2123,7 +2055,95 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.sewer = false · “and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to see what each park o”
   - hookups.water = false · “grams, performances, and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to”
   - phone_hint = "(888) 409-7579" · “our Park Finder tool to pick the activities and features you want. Need help? Call us at 1-888-409-7579 between 9 am and 4pm, Monday through”
-- **West Rutland SF primitive camping** (intake-US-5542, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 7 facts) · [fpr.vermont.gov](https://fpr.vermont.gov/recreation/activities/camping/primitive-camping)
+- **Maidstone State Park: Tent/RV sites area (14 sites, 32–46)** (US-3131:4, state, status ok, 22 facts) · [www.vtstateparks.com](https://www.vtstateparks.com/)
+  - booking.how = "online: www.vtstateparks.com" · “link “Reserve””
+  - booking.url = "https://www.vtstateparks.com/reservations" · “link “Reserve” -> https://www.vtstateparks.com/reservations”
+  - checkout = "11:00 AM" · “imes For campsites, lean-tos, cabins, and cottages: Check-in: Between 2:00 PM and 9:00 PM Check-out: By 11:00 AM Firewood Policy Don’t bring”
+  - drinking_water = "some" · “ies Most Vermont State Park campgrounds are shaped in loops. Along the loop, you’ll find: Water spigots every few campsites Restrooms in a c”
+  - dump_station = true · “for swimming Hiking trails Horseshoe pits Volleyball nets Nature centers Picnic shelters Dump stations for RVs Many parks also sell firewood”
+  - fees = "$20 | $38 Add | $2 | $8 per person, per night | $3 per pet, · “Type VT Residents Non-Residents Prime Sites Extra People Over 4 (max 8) Pets RV/Tent Site $20 $38 Add $2 $8 per person, per night $3 per pet”
+  - hookups.electric = "some" · “Make sure to bring your own bedding and towels! A table and chairs An overhead light and electric outlet A covered front porch, picnic table”
+  - hookups.sewer = false · “and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to see what each park o”
+  - hookups.water = false · “grams, performances, and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to”
+  - phone_hint = "(888) 409-7579" · “our Park Finder tool to pick the activities and features you want. Need help? Call us at 1-888-409-7579 between 9 am and 4pm, Monday through”
+- **Emerald Lake State Park: Tent/RV sites area (19 sites, 1–3/Volunteer)** (US-3113:3, state, status ok, 22 facts) · [www.vtstateparks.com](https://www.vtstateparks.com/)
+  - booking.how = "online: www.vtstateparks.com" · “link “Reserve””
+  - booking.url = "https://www.vtstateparks.com/reservations" · “link “Reserve” -> https://www.vtstateparks.com/reservations”
+  - checkout = "11:00 AM" · “imes For campsites, lean-tos, cabins, and cottages: Check-in: Between 2:00 PM and 9:00 PM Check-out: By 11:00 AM Firewood Policy Don’t bring”
+  - drinking_water = "some" · “ies Most Vermont State Park campgrounds are shaped in loops. Along the loop, you’ll find: Water spigots every few campsites Restrooms in a c”
+  - dump_station = true · “for swimming Hiking trails Horseshoe pits Volleyball nets Nature centers Picnic shelters Dump stations for RVs Many parks also sell firewood”
+  - fees = "$20 | $38 Add | $2 | $8 per person, per night | $3 per pet, · “Type VT Residents Non-Residents Prime Sites Extra People Over 4 (max 8) Pets RV/Tent Site $20 $38 Add $2 $8 per person, per night $3 per pet”
+  - hookups.electric = "some" · “Make sure to bring your own bedding and towels! A table and chairs An overhead light and electric outlet A covered front porch, picnic table”
+  - hookups.sewer = false · “and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to see what each park o”
+  - hookups.water = false · “grams, performances, and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to”
+  - phone_hint = "(888) 409-7579" · “our Park Finder tool to pick the activities and features you want. Need help? Call us at 1-888-409-7579 between 9 am and 4pm, Monday through”
+- **Little River State Park: Campsites area (7 sites, 27)** (US-3129:3, state, status ok, 22 facts) · [www.vtstateparks.com](https://www.vtstateparks.com/)
+  - booking.how = "online: www.vtstateparks.com" · “link “Reserve””
+  - booking.url = "https://www.vtstateparks.com/reservations" · “link “Reserve” -> https://www.vtstateparks.com/reservations”
+  - checkout = "11:00 AM" · “imes For campsites, lean-tos, cabins, and cottages: Check-in: Between 2:00 PM and 9:00 PM Check-out: By 11:00 AM Firewood Policy Don’t bring”
+  - drinking_water = "some" · “ies Most Vermont State Park campgrounds are shaped in loops. Along the loop, you’ll find: Water spigots every few campsites Restrooms in a c”
+  - dump_station = true · “for swimming Hiking trails Horseshoe pits Volleyball nets Nature centers Picnic shelters Dump stations for RVs Many parks also sell firewood”
+  - fees = "$20 | $38 Add | $2 | $8 per person, per night | $3 per pet, · “Type VT Residents Non-Residents Prime Sites Extra People Over 4 (max 8) Pets RV/Tent Site $20 $38 Add $2 $8 per person, per night $3 per pet”
+  - hookups.electric = "some" · “Make sure to bring your own bedding and towels! A table and chairs An overhead light and electric outlet A covered front porch, picnic table”
+  - hookups.sewer = false · “and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to see what each park o”
+  - hookups.water = false · “grams, performances, and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to”
+  - phone_hint = "(888) 409-7579" · “our Park Finder tool to pick the activities and features you want. Need help? Call us at 1-888-409-7579 between 9 am and 4pm, Monday through”
+- **Ricker Pond State Park: Cabins area (5 sites, Knox Mtn–Devils Hill)** (US-3139:1, state, status ok, 22 facts) · [www.vtstateparks.com](https://www.vtstateparks.com/)
+  - booking.how = "online: www.vtstateparks.com" · “link “Reserve””
+  - booking.url = "https://www.vtstateparks.com/reservations" · “link “Reserve” -> https://www.vtstateparks.com/reservations”
+  - checkout = "11:00 AM" · “imes For campsites, lean-tos, cabins, and cottages: Check-in: Between 2:00 PM and 9:00 PM Check-out: By 11:00 AM Firewood Policy Don’t bring”
+  - drinking_water = "some" · “ies Most Vermont State Park campgrounds are shaped in loops. Along the loop, you’ll find: Water spigots every few campsites Restrooms in a c”
+  - dump_station = true · “for swimming Hiking trails Horseshoe pits Volleyball nets Nature centers Picnic shelters Dump stations for RVs Many parks also sell firewood”
+  - fees = "$20 | $38 Add | $2 | $8 per person, per night | $3 per pet, · “Type VT Residents Non-Residents Prime Sites Extra People Over 4 (max 8) Pets RV/Tent Site $20 $38 Add $2 $8 per person, per night $3 per pet”
+  - hookups.electric = "some" · “Make sure to bring your own bedding and towels! A table and chairs An overhead light and electric outlet A covered front porch, picnic table”
+  - hookups.sewer = false · “and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to see what each park o”
+  - hookups.water = false · “grams, performances, and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to”
+  - phone_hint = "(888) 409-7579" · “our Park Finder tool to pick the activities and features you want. Need help? Call us at 1-888-409-7579 between 9 am and 4pm, Monday through”
+- **Little River State Park: Cabins area (2 sites, Bear–Moose)** (US-3129:9, state, status ok, 22 facts) · [www.vtstateparks.com](https://www.vtstateparks.com/)
+  - booking.how = "online: www.vtstateparks.com" · “link “Reserve””
+  - booking.url = "https://www.vtstateparks.com/reservations" · “link “Reserve” -> https://www.vtstateparks.com/reservations”
+  - checkout = "11:00 AM" · “imes For campsites, lean-tos, cabins, and cottages: Check-in: Between 2:00 PM and 9:00 PM Check-out: By 11:00 AM Firewood Policy Don’t bring”
+  - drinking_water = "some" · “ies Most Vermont State Park campgrounds are shaped in loops. Along the loop, you’ll find: Water spigots every few campsites Restrooms in a c”
+  - dump_station = true · “for swimming Hiking trails Horseshoe pits Volleyball nets Nature centers Picnic shelters Dump stations for RVs Many parks also sell firewood”
+  - fees = "$20 | $38 Add | $2 | $8 per person, per night | $3 per pet, · “Type VT Residents Non-Residents Prime Sites Extra People Over 4 (max 8) Pets RV/Tent Site $20 $38 Add $2 $8 per person, per night $3 per pet”
+  - hookups.electric = "some" · “Make sure to bring your own bedding and towels! A table and chairs An overhead light and electric outlet A covered front porch, picnic table”
+  - hookups.sewer = false · “and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to see what each park o”
+  - hookups.water = false · “grams, performances, and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to”
+  - phone_hint = "(888) 409-7579" · “our Park Finder tool to pick the activities and features you want. Need help? Call us at 1-888-409-7579 between 9 am and 4pm, Monday through”
+- **Brighton State Park: Tent/RV sites area (17 sites, 42–62)** (US-3104:3, state, status ok, 22 facts) · [www.vtstateparks.com](https://www.vtstateparks.com/)
+  - booking.how = "online: www.vtstateparks.com" · “link “Reserve””
+  - booking.url = "https://www.vtstateparks.com/reservations" · “link “Reserve” -> https://www.vtstateparks.com/reservations”
+  - checkout = "11:00 AM" · “imes For campsites, lean-tos, cabins, and cottages: Check-in: Between 2:00 PM and 9:00 PM Check-out: By 11:00 AM Firewood Policy Don’t bring”
+  - drinking_water = "some" · “ies Most Vermont State Park campgrounds are shaped in loops. Along the loop, you’ll find: Water spigots every few campsites Restrooms in a c”
+  - dump_station = true · “for swimming Hiking trails Horseshoe pits Volleyball nets Nature centers Picnic shelters Dump stations for RVs Many parks also sell firewood”
+  - fees = "$20 | $38 Add | $2 | $8 per person, per night | $3 per pet, · “Type VT Residents Non-Residents Prime Sites Extra People Over 4 (max 8) Pets RV/Tent Site $20 $38 Add $2 $8 per person, per night $3 per pet”
+  - hookups.electric = "some" · “Make sure to bring your own bedding and towels! A table and chairs An overhead light and electric outlet A covered front porch, picnic table”
+  - hookups.sewer = false · “and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to see what each park o”
+  - hookups.water = false · “grams, performances, and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to”
+  - phone_hint = "(888) 409-7579" · “our Park Finder tool to pick the activities and features you want. Need help? Call us at 1-888-409-7579 between 9 am and 4pm, Monday through”
+- **Townshend SP campground (30 tent, 4 lean-to) within Townshend SF** (intake-US-5528, agency (outside research camping-us-oct31), status ok, 11 facts) · [vtstateparks.com](https://vtstateparks.com/townshend.html)
+  - booking.how = "online: www.vtstateparks.com" · “link “Reserve””
+  - booking.url = "https://www.vtstateparks.com/reservations" · “link “Reserve” -> https://www.vtstateparks.com/reservations”
+  - map.date_how = "PDF, no date in the link" · “link “Name Townshend State Park Map and Guide””
+  - map.url = "https://www.vtstateparks.com/sites/stateparks/files/documen · “link “Name Townshend State Park Map and Guide” -> https://www.vtstateparks.com/sites/stateparks/files/documents/Townshend%20Map%20Guide.pdf”
+  - restrooms = "flush" · “round is in a wooded area and has: 30 tent/trailer sites 4 lean-to sites 2 restrooms with flush toilets and hot and cold water Token-operate”
+  - rules.fires = "firewood into Vermont state parks from outside the state, u · “ashed out. The trail is temporarily closed until the bridge can be repaired. Do not bring firewood into Vermont state parks from outside the”
+  - rules.pets = "Pets are permitted throughout the park" · “es apply Day Use Hours 10am - official sunset Camping 30 tent sites, 4 lean-to sites Pets Pets are permitted throughout the park. Please cle”
+  - showers = true · “ites 4 lean-to sites 2 restrooms with flush toilets and hot and cold water Token-operated showers in one restroom A picnic shelter with a fi”
+  - sites.cabin = 4 · “rsection. Park is 2 miles ahead on right. Activities Camping: There are 30 tent sites and 4 lean-to sites available to rent. Hiking: The Bal”
+  - sites.rv = 30 · “or picnic area and enjoy the peace and quiet. The campground is in a wooded area and has: 30 tent/trailer sites 4 lean-to sites 2 restrooms ”
+- **Little River State Park: Campsites area (5 sites, 27)** (US-3129:5, state, status ok, 22 facts) · [www.vtstateparks.com](https://www.vtstateparks.com/)
+  - booking.how = "online: www.vtstateparks.com" · “link “Reserve””
+  - booking.url = "https://www.vtstateparks.com/reservations" · “link “Reserve” -> https://www.vtstateparks.com/reservations”
+  - checkout = "11:00 AM" · “imes For campsites, lean-tos, cabins, and cottages: Check-in: Between 2:00 PM and 9:00 PM Check-out: By 11:00 AM Firewood Policy Don’t bring”
+  - drinking_water = "some" · “ies Most Vermont State Park campgrounds are shaped in loops. Along the loop, you’ll find: Water spigots every few campsites Restrooms in a c”
+  - dump_station = true · “for swimming Hiking trails Horseshoe pits Volleyball nets Nature centers Picnic shelters Dump stations for RVs Many parks also sell firewood”
+  - fees = "$20 | $38 Add | $2 | $8 per person, per night | $3 per pet, · “Type VT Residents Non-Residents Prime Sites Extra People Over 4 (max 8) Pets RV/Tent Site $20 $38 Add $2 $8 per person, per night $3 per pet”
+  - hookups.electric = "some" · “Make sure to bring your own bedding and towels! A table and chairs An overhead light and electric outlet A covered front porch, picnic table”
+  - hookups.sewer = false · “and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to see what each park o”
+  - hookups.water = false · “grams, performances, and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to”
+  - phone_hint = "(888) 409-7579" · “our Park Finder tool to pick the activities and features you want. Need help? Call us at 1-888-409-7579 between 9 am and 4pm, Monday through”
+- **Camels Hump SF/SP: GMC shelters, Hump Brook tenting, primitive** (intake-US-5553, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 7 facts) · [fpr.vermont.gov](https://fpr.vermont.gov/recreation/activities/camping/primitive-camping)
   - booking.how = "online: vtstateparks.com" · “link “Make a Reservation””
   - booking.url = "https://vtstateparks.com/reservations.html" · “link “Make a Reservation” -> https://vtstateparks.com/reservations.html”
   - drinking_water = false · “t car camping. You must backpack in at least 1,000 feet from any road. There is no public drinking water or toilet facilities, no reservatio”
@@ -2131,28 +2151,6 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - phone_hint = "(802) 289-0603" · “Management Areas, please visit the Primitive Camping on WMAs page. Southeastern Vermont - (802) 289-0603 Coolidge State Forest Primitive Cam”
   - reservable = false · “t least 1,000 feet from any road. There is no public drinking water or toilet facilities, no reservations or assigned sites. Vermont does no”
   - restrooms = "none" · “must backpack in at least 1,000 feet from any road. There is no public drinking water or toilet facilities, no reservations or assigned site”
-- **Knight Island State Park: Tent/RV sites area (1 sites, Cottonwood)** (US-3124:1, state, status ok, 22 facts) · [www.vtstateparks.com](https://www.vtstateparks.com/)
-  - booking.how = "online: www.vtstateparks.com" · “link “Reserve””
-  - booking.url = "https://www.vtstateparks.com/reservations" · “link “Reserve” -> https://www.vtstateparks.com/reservations”
-  - checkout = "11:00 AM" · “imes For campsites, lean-tos, cabins, and cottages: Check-in: Between 2:00 PM and 9:00 PM Check-out: By 11:00 AM Firewood Policy Don’t bring”
-  - drinking_water = "some" · “ies Most Vermont State Park campgrounds are shaped in loops. Along the loop, you’ll find: Water spigots every few campsites Restrooms in a c”
-  - dump_station = true · “for swimming Hiking trails Horseshoe pits Volleyball nets Nature centers Picnic shelters Dump stations for RVs Many parks also sell firewood”
-  - fees = "$20 | $38 Add | $2 | $8 per person, per night | $3 per pet, · “Type VT Residents Non-Residents Prime Sites Extra People Over 4 (max 8) Pets RV/Tent Site $20 $38 Add $2 $8 per person, per night $3 per pet”
-  - hookups.electric = "some" · “Make sure to bring your own bedding and towels! A table and chairs An overhead light and electric outlet A covered front porch, picnic table”
-  - hookups.sewer = false · “and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to see what each park o”
-  - hookups.water = false · “grams, performances, and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to”
-  - phone_hint = "(888) 409-7579" · “our Park Finder tool to pick the activities and features you want. Need help? Call us at 1-888-409-7579 between 9 am and 4pm, Monday through”
-- **Bomoseen State Park: Cottages area (1 sites, HM Tall Timbers)** (US-3101:5, state, status ok, 22 facts) · [www.vtstateparks.com](https://www.vtstateparks.com/)
-  - booking.how = "online: www.vtstateparks.com" · “link “Reserve””
-  - booking.url = "https://www.vtstateparks.com/reservations" · “link “Reserve” -> https://www.vtstateparks.com/reservations”
-  - checkout = "11:00 AM" · “imes For campsites, lean-tos, cabins, and cottages: Check-in: Between 2:00 PM and 9:00 PM Check-out: By 11:00 AM Firewood Policy Don’t bring”
-  - drinking_water = "some" · “ies Most Vermont State Park campgrounds are shaped in loops. Along the loop, you’ll find: Water spigots every few campsites Restrooms in a c”
-  - dump_station = true · “for swimming Hiking trails Horseshoe pits Volleyball nets Nature centers Picnic shelters Dump stations for RVs Many parks also sell firewood”
-  - fees = "$20 | $38 Add | $2 | $8 per person, per night | $3 per pet, · “Type VT Residents Non-Residents Prime Sites Extra People Over 4 (max 8) Pets RV/Tent Site $20 $38 Add $2 $8 per person, per night $3 per pet”
-  - hookups.electric = "some" · “Make sure to bring your own bedding and towels! A table and chairs An overhead light and electric outlet A covered front porch, picnic table”
-  - hookups.sewer = false · “and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to see what each park o”
-  - hookups.water = false · “grams, performances, and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to”
-  - phone_hint = "(888) 409-7579" · “our Park Finder tool to pick the activities and features you want. Need help? Call us at 1-888-409-7579 between 9 am and 4pm, Monday through”
 - **Aitken SF primitive camping** (intake-US-5540, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 7 facts) · [fpr.vermont.gov](https://fpr.vermont.gov/recreation/activities/camping/primitive-camping)
   - booking.how = "online: vtstateparks.com" · “link “Make a Reservation””
   - booking.url = "https://vtstateparks.com/reservations.html" · “link “Make a Reservation” -> https://vtstateparks.com/reservations.html”
@@ -2161,86 +2159,10 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - phone_hint = "(802) 289-0603" · “Management Areas, please visit the Primitive Camping on WMAs page. Southeastern Vermont - (802) 289-0603 Coolidge State Forest Primitive Cam”
   - reservable = false · “t least 1,000 feet from any road. There is no public drinking water or toilet facilities, no reservations or assigned sites. Vermont does no”
   - restrooms = "none" · “must backpack in at least 1,000 feet from any road. There is no public drinking water or toilet facilities, no reservations or assigned site”
-- **Mollie Beattie SF primitive camping** (intake-US-5529, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 7 facts) · [fpr.vermont.gov](https://fpr.vermont.gov/recreation/activities/camping/primitive-camping)
-  - booking.how = "online: vtstateparks.com" · “link “Make a Reservation””
-  - booking.url = "https://vtstateparks.com/reservations.html" · “link “Make a Reservation” -> https://vtstateparks.com/reservations.html”
-  - drinking_water = false · “t car camping. You must backpack in at least 1,000 feet from any road. There is no public drinking water or toilet facilities, no reservatio”
-  - phone = "(802) 786-0060" · “est Primitive Camping Guide Southwestern Vermont - Contact: (802) 786-0060 Aitken State Forest Primitive Camping Guide West Rutland St”
-  - phone_hint = "(802) 289-0603" · “Management Areas, please visit the Primitive Camping on WMAs page. Southeastern Vermont - (802) 289-0603 Coolidge State Forest Primitive Cam”
-  - reservable = false · “t least 1,000 feet from any road. There is no public drinking water or toilet facilities, no reservations or assigned sites. Vermont does no”
-  - restrooms = "none" · “must backpack in at least 1,000 feet from any road. There is no public drinking water or toilet facilities, no reservations or assigned site”
-- **Brighton State Park: Lean-tos area (23 sites, Ash–Butternut)** (US-3104:1, state, status ok, 22 facts) · [www.vtstateparks.com](https://www.vtstateparks.com/)
-  - booking.how = "online: www.vtstateparks.com" · “link “Reserve””
-  - booking.url = "https://www.vtstateparks.com/reservations" · “link “Reserve” -> https://www.vtstateparks.com/reservations”
-  - checkout = "11:00 AM" · “imes For campsites, lean-tos, cabins, and cottages: Check-in: Between 2:00 PM and 9:00 PM Check-out: By 11:00 AM Firewood Policy Don’t bring”
-  - drinking_water = "some" · “ies Most Vermont State Park campgrounds are shaped in loops. Along the loop, you’ll find: Water spigots every few campsites Restrooms in a c”
-  - dump_station = true · “for swimming Hiking trails Horseshoe pits Volleyball nets Nature centers Picnic shelters Dump stations for RVs Many parks also sell firewood”
-  - fees = "$20 | $38 Add | $2 | $8 per person, per night | $3 per pet, · “Type VT Residents Non-Residents Prime Sites Extra People Over 4 (max 8) Pets RV/Tent Site $20 $38 Add $2 $8 per person, per night $3 per pet”
-  - hookups.electric = "some" · “Make sure to bring your own bedding and towels! A table and chairs An overhead light and electric outlet A covered front porch, picnic table”
-  - hookups.sewer = false · “and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to see what each park o”
-  - hookups.water = false · “grams, performances, and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to”
-  - phone_hint = "(888) 409-7579" · “our Park Finder tool to pick the activities and features you want. Need help? Call us at 1-888-409-7579 between 9 am and 4pm, Monday through”
-- **Molly Stark State Park: Lean-tos area (8 sites, Elm–Spruce)** (US-3132:1, state, status ok, 22 facts) · [www.vtstateparks.com](https://www.vtstateparks.com/)
-  - booking.how = "online: www.vtstateparks.com" · “link “Reserve””
-  - booking.url = "https://www.vtstateparks.com/reservations" · “link “Reserve” -> https://www.vtstateparks.com/reservations”
-  - checkout = "11:00 AM" · “imes For campsites, lean-tos, cabins, and cottages: Check-in: Between 2:00 PM and 9:00 PM Check-out: By 11:00 AM Firewood Policy Don’t bring”
-  - drinking_water = "some" · “ies Most Vermont State Park campgrounds are shaped in loops. Along the loop, you’ll find: Water spigots every few campsites Restrooms in a c”
-  - dump_station = true · “for swimming Hiking trails Horseshoe pits Volleyball nets Nature centers Picnic shelters Dump stations for RVs Many parks also sell firewood”
-  - fees = "$20 | $38 Add | $2 | $8 per person, per night | $3 per pet, · “Type VT Residents Non-Residents Prime Sites Extra People Over 4 (max 8) Pets RV/Tent Site $20 $38 Add $2 $8 per person, per night $3 per pet”
-  - hookups.electric = "some" · “Make sure to bring your own bedding and towels! A table and chairs An overhead light and electric outlet A covered front porch, picnic table”
-  - hookups.sewer = false · “and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to see what each park o”
-  - hookups.water = false · “grams, performances, and special events. Note: Vermont State Park campgrounds do not have electric, water, or sewer hookups for RVs. Want to”
-  - phone_hint = "(888) 409-7579" · “our Park Finder tool to pick the activities and features you want. Need help? Call us at 1-888-409-7579 between 9 am and 4pm, Monday through”
 
 ## US-NH: 12 random samples (records with facts; seed = the date)
 
-- **Moose Brook Campground** (US-2665:hq0, state, status ok, 11 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/find-parks-trails/moose-brook-state-park)
-  - booking.how = "online: newhampshirestateparks.reserveamerica.com" · “link “Camping Lotteries””
-  - booking.url = "https://newhampshirestateparks.reserveamerica.com/viewAllLo · “link “Camping Lotteries” -> https://newhampshirestateparks.reserveamerica.com/viewAllLotteries.do?tti=Lottery”
-  - hookups.electric = false · “full-time 5/8, last date 10/24 Park Office: 603-466-3860 Camping Rate Per Night: $29 (no hookups) Day Use Fees: Adults $4, Children 6-11 $2,”
-  - map.date_how = "PDF, year 2023 in the link" · “link “Moose Brook Campground Map Policies””
-  - map.url = "https://www.nhstateparks.org/NHStateParks/media/NHStatePark · “link “Moose Brook Campground Map Policies” -> https://www.nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/campground-maps/moose-brook-”
-  - phone = "(603) 466-3860" · “es Campground - full-time 5/8, last date 10/24 Park Office: 603-466-3860 Camping Rate Per Night: $29 (no hookups) Day Use Fees: Adul”
-  - phone_hint = "(603) 466-3860" · “Call Park Office Hours and Fees Campground - full-time 5/8, last date 10/24 Park Office: 603-466-3860 Camping Rate Per Night: $29 (no hookup”
-  - reservable = true · “r mountain bike. This is a pet-friendly campground. Moose Brook Campground Map & Policies Reserve a Campsite Youth Group Camping Let NH Stat”
-  - restrooms = "none" · “g. Off season use: During off hours and the off-season the park is typically not staffed, comfort stations are not available and gates may b”
-  - rules.pets = "pet-friendly campground" · “There many trails in the park are great for exploring on foot or mountain bike. This is a pet-friendly campground. Moose Brook Campground Ma”
-- **Tent sites - name not in layer** (US-2679:p2-1, state, status ok, 6 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/)
-  - booking.how = "online: newhampshirestateparks.reserveamerica.com" · “link “Camping Lotteries””
-  - booking.url = "https://newhampshirestateparks.reserveamerica.com/viewAllLo · “link “Camping Lotteries” -> https://newhampshirestateparks.reserveamerica.com/viewAllLotteries.do?tti=Lottery”
-  - checkin = "1 pm" · “ough ReserveAmerica or by calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campg”
-  - checkout = "11 am" · “calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campground Operating Schedules ”
-  - hookups.electric = true · “s camping experiences, such as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite onli”
-  - reservable = true · “uch as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite online through ReserveAmeric”
-- **Campground - name not in layer** (US-2657:p2-0, state, status ok, 6 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/)
-  - booking.how = "online: newhampshirestateparks.reserveamerica.com" · “link “Camping Lotteries””
-  - booking.url = "https://newhampshirestateparks.reserveamerica.com/viewAllLo · “link “Camping Lotteries” -> https://newhampshirestateparks.reserveamerica.com/viewAllLotteries.do?tti=Lottery”
-  - checkin = "1 pm" · “ough ReserveAmerica or by calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campg”
-  - checkout = "11 am" · “calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campground Operating Schedules ”
-  - hookups.electric = true · “s camping experiences, such as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite onli”
-  - reservable = true · “uch as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite online through ReserveAmeric”
-- **Tent sites - name not in layer** (US-2679:p2-2, state, status ok, 6 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/)
-  - booking.how = "online: newhampshirestateparks.reserveamerica.com" · “link “Camping Lotteries””
-  - booking.url = "https://newhampshirestateparks.reserveamerica.com/viewAllLo · “link “Camping Lotteries” -> https://newhampshirestateparks.reserveamerica.com/viewAllLotteries.do?tti=Lottery”
-  - checkin = "1 pm" · “ough ReserveAmerica or by calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campg”
-  - checkout = "11 am" · “calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campground Operating Schedules ”
-  - hookups.electric = true · “s camping experiences, such as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite onli”
-  - reservable = true · “uch as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite online through ReserveAmeric”
-- **Tent sites - name not in layer** (US-2679:p2-3, state, status ok, 6 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/)
-  - booking.how = "online: newhampshirestateparks.reserveamerica.com" · “link “Camping Lotteries””
-  - booking.url = "https://newhampshirestateparks.reserveamerica.com/viewAllLo · “link “Camping Lotteries” -> https://newhampshirestateparks.reserveamerica.com/viewAllLotteries.do?tti=Lottery”
-  - checkin = "1 pm" · “ough ReserveAmerica or by calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campg”
-  - checkout = "11 am" · “calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campground Operating Schedules ”
-  - hookups.electric = true · “s camping experiences, such as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite onli”
-  - reservable = true · “uch as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite online through ReserveAmeric”
-- **Tent sites - name not in layer** (US-2679:p2-13, state, status ok, 6 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/)
-  - booking.how = "online: newhampshirestateparks.reserveamerica.com" · “link “Camping Lotteries””
-  - booking.url = "https://newhampshirestateparks.reserveamerica.com/viewAllLo · “link “Camping Lotteries” -> https://newhampshirestateparks.reserveamerica.com/viewAllLotteries.do?tti=Lottery”
-  - checkin = "1 pm" · “ough ReserveAmerica or by calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campg”
-  - checkout = "11 am" · “calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campground Operating Schedules ”
-  - hookups.electric = true · “s camping experiences, such as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite onli”
-  - reservable = true · “uch as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite online through ReserveAmeric”
-- **Tent sites - name not in layer** (US-2679:p2-4, state, status ok, 6 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/)
+- **Campground - name not in layer** (US-2659:p2-1, state, status ok, 6 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/)
   - booking.how = "online: newhampshirestateparks.reserveamerica.com" · “link “Camping Lotteries””
   - booking.url = "https://newhampshirestateparks.reserveamerica.com/viewAllLo · “link “Camping Lotteries” -> https://newhampshirestateparks.reserveamerica.com/viewAllLotteries.do?tti=Lottery”
   - checkin = "1 pm" · “ough ReserveAmerica or by calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campg”
@@ -2254,24 +2176,34 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - checkout = "11 am" · “calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campground Operating Schedules ”
   - hookups.electric = true · “s camping experiences, such as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite onli”
   - reservable = true · “uch as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite online through ReserveAmeric”
-- **Cabins - name not in layer** (US-2643:p2-1, state, status ok, 6 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/)
+- **Tent sites - name not in layer** (US-2679:p2-4, state, status ok, 6 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/)
   - booking.how = "online: newhampshirestateparks.reserveamerica.com" · “link “Camping Lotteries””
   - booking.url = "https://newhampshirestateparks.reserveamerica.com/viewAllLo · “link “Camping Lotteries” -> https://newhampshirestateparks.reserveamerica.com/viewAllLotteries.do?tti=Lottery”
   - checkin = "1 pm" · “ough ReserveAmerica or by calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campg”
   - checkout = "11 am" · “calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campground Operating Schedules ”
   - hookups.electric = true · “s camping experiences, such as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite onli”
   - reservable = true · “uch as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite online through ReserveAmeric”
-- **Greenfield State Park** (US-2655, state, status ok, 15 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/explore/state-parks/greenfield-state-park.aspx)
+- **Group tent sites - name not in layer** (US-2672:p2-2, state, status ok, 6 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/)
   - booking.how = "online: newhampshirestateparks.reserveamerica.com" · “link “Camping Lotteries””
   - booking.url = "https://newhampshirestateparks.reserveamerica.com/viewAllLo · “link “Camping Lotteries” -> https://newhampshirestateparks.reserveamerica.com/viewAllLotteries.do?tti=Lottery”
-  - dump_station = true · “rrying out whatever you carry in. Thank you for your cooperation and remember to recycle. Dump Station is for use by registered campers only”
-  - fees = "$1 transaction fee) | $25 deposit will be required upon res · “asis. Reservations are still encouraged in the event a park reaches capacity (requiring a $1 transaction fee). NH Senior Citizens: To receiv”
-  - hookups.electric = false · “rently accommodate up to 10 people at a time. RVs are welcome in sites where they fit. No hook-ups are available. When the Park Office is no”
-  - map.date_how = "PDF, year 2026 in the link" · “link “Greenfield Campground Map””
-  - map.url = "https://www.nhstateparks.org/NHStateParks/media/NHStatePark · “link “Greenfield Campground Map” -> https://www.nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/Maps/greenfield_campground-map_202”
-  - phone = "(603) 547-3497" · “l the park directly if you have any questions. Park Office: 603-547-3497 Check out our other Parks: Park Operating Schedules Read ab”
-  - reservable = true · “d holidays). Walk-in spaces are available for visitors on a first come/first-serve basis. Reservations can be made up to 30 days prior to ar”
-  - restrooms = "flush + vault" · “: fall primitve 10/12, last date 10/24 Primitive Camping Season: Comfort stations such as flush toilets and running water may not be availab”
+  - checkin = "1 pm" · “ough ReserveAmerica or by calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campg”
+  - checkout = "11 am" · “calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campground Operating Schedules ”
+  - hookups.electric = true · “s camping experiences, such as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite onli”
+  - reservable = true · “uch as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite online through ReserveAmeric”
+- **Tent sites - name not in layer** (US-2679:p2-12, state, status ok, 6 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/)
+  - booking.how = "online: newhampshirestateparks.reserveamerica.com" · “link “Camping Lotteries””
+  - booking.url = "https://newhampshirestateparks.reserveamerica.com/viewAllLo · “link “Camping Lotteries” -> https://newhampshirestateparks.reserveamerica.com/viewAllLotteries.do?tti=Lottery”
+  - checkin = "1 pm" · “ough ReserveAmerica or by calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campg”
+  - checkout = "11 am" · “calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campground Operating Schedules ”
+  - hookups.electric = true · “s camping experiences, such as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite onli”
+  - reservable = true · “uch as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite online through ReserveAmeric”
+- **Tent sites - name not in layer** (US-2679:p2-9, state, status ok, 6 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/)
+  - booking.how = "online: newhampshirestateparks.reserveamerica.com" · “link “Camping Lotteries””
+  - booking.url = "https://newhampshirestateparks.reserveamerica.com/viewAllLo · “link “Camping Lotteries” -> https://newhampshirestateparks.reserveamerica.com/viewAllLotteries.do?tti=Lottery”
+  - checkin = "1 pm" · “ough ReserveAmerica or by calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campg”
+  - checkout = "11 am" · “calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campground Operating Schedules ”
+  - hookups.electric = true · “s camping experiences, such as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite onli”
+  - reservable = true · “uch as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite online through ReserveAmeric”
 - **Ellacoya RV Campground** (US-2651:hq0, state, status ok, 14 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/find-parks-trails/ellacoya-state-park)
   - booking.how = "online: newhampshirestateparks.reserveamerica.com" · “link “Camping Lotteries””
   - booking.url = "https://newhampshirestateparks.reserveamerica.com/viewAllLo · “link “Camping Lotteries” -> https://newhampshirestateparks.reserveamerica.com/viewAllLotteries.do?tti=Lottery”
@@ -2283,57 +2215,55 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - phone = "(603) 293-7821" · “only through 10/13 Campground: last date 10/24 Park Office: 603-293-7821 Day Use Fees: Adults: 12+yrs: $5.00 Children: 6-11yrs: $2.0”
   - phone_hint = "(603) 293-7821" · “ach: unstaffed 9/20, weekends only through 10/13 Campground: last date 10/24 Park Office: 603-293-7821 Day Use Fees: Adults: 12+yrs: $5.00 C”
   - reservable = true · “r a full day of swimming and picnicking. The RV Campground includes 37 sites available by reservation only, and offers three-way hook-ups. V”
-- **Wellington State Park** (US-2682, state, status ok, 6 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/)
+- **Tent sites - name not in layer** (US-2679:p2-13, state, status ok, 6 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/)
+  - booking.how = "online: newhampshirestateparks.reserveamerica.com" · “link “Camping Lotteries””
+  - booking.url = "https://newhampshirestateparks.reserveamerica.com/viewAllLo · “link “Camping Lotteries” -> https://newhampshirestateparks.reserveamerica.com/viewAllLotteries.do?tti=Lottery”
+  - checkin = "1 pm" · “ough ReserveAmerica or by calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campg”
+  - checkout = "11 am" · “calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campground Operating Schedules ”
+  - hookups.electric = true · “s camping experiences, such as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite onli”
+  - reservable = true · “uch as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite online through ReserveAmeric”
+- **Coleman State Park** (US-2646, state, status ok, 6 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/)
   - booking.how = "online: newhampshirestateparks.reserveamerica.com" · “link “Camping Lotteries””
   - booking.url = "https://newhampshirestateparks.reserveamerica.com/viewAllLo · “link “Camping Lotteries” -> https://newhampshirestateparks.reserveamerica.com/viewAllLotteries.do?tti=Lottery”
   - checkin = "1 pm" · “ough ReserveAmerica or by calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campg”
   - checkout = "11 am" · “calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campground Operating Schedules ”
   - hookups.electric = true · “s camping experiences, such as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite onli”
   - reservable = true · “will be used for operation and maintenance of NH State Parks. *Some exclusions apply and reservations are recommended Learn More Support the”
+- **Tent sites - name not in layer** (US-2679:p2-3, state, status ok, 6 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/)
+  - booking.how = "online: newhampshirestateparks.reserveamerica.com" · “link “Camping Lotteries””
+  - booking.url = "https://newhampshirestateparks.reserveamerica.com/viewAllLo · “link “Camping Lotteries” -> https://newhampshirestateparks.reserveamerica.com/viewAllLotteries.do?tti=Lottery”
+  - checkin = "1 pm" · “ough ReserveAmerica or by calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campg”
+  - checkout = "11 am" · “calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campground Operating Schedules ”
+  - hookups.electric = true · “s camping experiences, such as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite onli”
+  - reservable = true · “uch as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite online through ReserveAmeric”
+- **Campground - name not in layer** (US-2657:p2-0, state, status ok, 6 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/)
+  - booking.how = "online: newhampshirestateparks.reserveamerica.com" · “link “Camping Lotteries””
+  - booking.url = "https://newhampshirestateparks.reserveamerica.com/viewAllLo · “link “Camping Lotteries” -> https://newhampshirestateparks.reserveamerica.com/viewAllLotteries.do?tti=Lottery”
+  - checkin = "1 pm" · “ough ReserveAmerica or by calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campg”
+  - checkout = "11 am" · “calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campground Operating Schedules ”
+  - hookups.electric = true · “s camping experiences, such as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite onli”
+  - reservable = true · “uch as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite online through ReserveAmeric”
+- **Campground - name not in layer** (US-2663:p2-0, state, status ok, 6 facts) · [www.nhstateparks.org](https://www.nhstateparks.org/)
+  - booking.how = "online: newhampshirestateparks.reserveamerica.com" · “link “Camping Lotteries””
+  - booking.url = "https://newhampshirestateparks.reserveamerica.com/viewAllLo · “link “Camping Lotteries” -> https://newhampshirestateparks.reserveamerica.com/viewAllLotteries.do?tti=Lottery”
+  - checkin = "1 pm" · “ough ReserveAmerica or by calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campg”
+  - checkout = "11 am" · “calling 1-877-nhparks (1-877-647-2757). Please note: Campground check in time is 1 pm and checkout is 11 am. Campground Operating Schedules ”
+  - hookups.electric = true · “s camping experiences, such as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite onli”
+  - reservable = true · “uch as primitive camping, cabin and yurt rentals, full-service RV hookups, and lean-to's. Reserve your campsite online through ReserveAmeric”
+
+## US-ME: 12 random samples (records with facts; seed = the date)
+
 
 ## US-MD: 12 random samples (records with facts; seed = the date)
 
-- **Deep Creek Lake State Park** (US-1568, state, status ok, 17 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/publiclands/pages/western/deepcreek/camping.aspx)
-  - booking.how = "online: dnr.maryland.gov" · “link “Reservation Policies, Park Fees and Hours of Operation””
-  - booking.url = "https://dnr.maryland.gov/publiclands/Pages/oc.aspx" · “link “Reservation Policies, Park Fees and Hours of Operation” -> https://dnr.maryland.gov/publiclands/Pages/oc.aspx”
-  - features = "fire ring and lantern post" · “ds. Users must provide their own linens. Pets are not permitted. Includes a picnic table, fire ring and lantern post One Yurt - The yurt sle”
-  - fees = "$200 per night | $275 per day | $50.00 per night | $200 per · “ion, please call the Gunpowder Falls State Park Headquarters at 410-592-2897. The cost is $200 per night. There is a two-night minimum year ”
-  - hookups.electric = true · “th annually. Click here for Map of Camping Loops​ Features include: 82 basic sites and 23 electric sites Two Mini Cabins - The mini cabins s”
-  - hookups.sewer = true · “d's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to primitive ”
-  - hookups.water = true · “d's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to primitive ”
-  - map.date_how = "web page, no date in the link" · “link “Click here for Map of Camping Loops​””
-  - map.url = "https://dnr.maryland.gov/publiclands/Pages/parkmaps/deepcre · “link “Click here for Map of Camping Loops​” -> https://dnr.maryland.gov/publiclands/Pages/parkmaps/deepcreekmap.aspx”
-  - phone = "(301) 271-7012" · “, please contact the Maryland Association of Campgrounds at 301-271-7012, via e-mail at [email protected] , or on-line at: www.mdcam”
-- **Big Run; St. John’s Rock; Bear Pen Group Site; Blue Lick Road; Savage River Road; Elk Lick; Whitewater; Poplar Lick; Rab** (US-4770:hq0, state, status ok, 12 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/forests/Pages/publiclands/SavageRiver/recreation-trails.aspx)
-  - fees = "$10 per site per night | $25 per night | $10 per night, dep · “ation at the bulletin board in each camping area or at the headquarters kiosk. Camping is $10 per site per night. Cash or check payable to D”
-  - hookups.electric = "some" · “g​ The 230-acre Savage River Reservoir is open to kayaks, canoes, small paddle boats, and electric-powered boats. Gas-powered motors are pro”
-  - hookups.sewer = false · “ites across ten areas. Each site has a picnic table and fire ring. No electric, water, or sewer hookups at any site. Three areas require adv”
-  - hookups.water = false · “tive camping on 81 sites across ten areas. Each site has a picnic table and fire ring. No electric, water, or sewer hookups at any site. Thr”
-  - map.date_how = "PDF, year 2023 in the link" · “link “32 Mile ​Backpacker Loop ​””
-  - map.url = "https://dnr.maryland.gov/forests/Documents/2023-32-Mile-Bac · “link “32 Mile ​Backpacker Loop ​” -> https://dnr.maryland.gov/forests/Documents/2023-32-Mile-Backpacker-Loop-Map.pdf”
-  - reservable = "mixed" · “sewer hookups at any site. Three areas require advance reservations. All other sites are first-come, first-served and are available by self-”
-  - restrooms = "yes (kind not stated)" · “Road and is open to hunters, sightseers, and fuelwood cutters in addition to ORV riders. Restrooms are available on site. Eight campsites (4”
-  - rules.fires = "Campfires are permitted except during drought conditions" · “your vehicle dashboard. Camping is not permitted within 200 feet of any trail or stream. Campfires are permitted except during drought condi”
-  - season = "year-round" · “ess off I-68 Exit 19. ​St. John's Rock ORV Trail Camping Savage River State Forest offers year-round primitive camping on 81 sites across te”
-- **White Oak Loop; Pines Loop; glamping sites; Alpine Lodge site** (US-1584:hq0, state, status ok, 19 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/publiclands/Pages/western/NewGermany/Cabins-and-Campsites.aspx)
-  - booking.how = "online: dnr.maryland.gov" · “link “Reservation Policies, Park Fees and Hours of Operation””
-  - booking.url = "https://dnr.maryland.gov/publiclands/Pages/oc.aspx" · “link “Reservation Policies, Park Fees and Hours of Operation” -> https://dnr.maryland.gov/publiclands/Pages/oc.aspx”
-  - checkout = "11 a.m" · “linens, blankets, soap and food are not provided. Check in for cabin guests is 3 p.m. and check out is 11 a.m. To see cabin pictures please ”
-  - dump_station = true · “accommodate motorhomes, however only one site offers electric hook-ups (campsite #34). An RV dump station is also available. The White Oak L”
-  - features = "fire ring" · “are reserving seven (7) or more nights. Campsites have a picnic table and in most cases a fire ring. A central restroom facility with hot an”
-  - fees = "$200 per night | $275 per day | $50.00 per night | $200 per · “ion, please call the Gunpowder Falls State Park Headquarters at 410-592-2897. The cost is $200 per night. There is a two-night minimum year ”
-  - hookups.electric = true · “at several locations. Some sites can accommodate motorhomes, however only one site offers electric hook-ups (campsite #34). An RV dump stati”
-  - hookups.sewer = true · “d's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to primitive ”
-  - hookups.water = true · “d's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to primitive ”
-  - map.date_how = "PDF, no date in the link" · “link “​Map of Maryland State Parks with Amenities​””
-- **Primitive campsites distributed throughout forest; 3 group sites; backpack camping** (US-4766:hq0, state, status ok, 6 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/forests/Pages/publiclands/Greenridge/recreation-trails.aspx)
-  - fees = "$10 per night | $20 per nigh​t" · “l or dirt. Four-wheel drive may be required depending on conditions. Rates Standard site: $10 per night Group site: $20 per nigh​t Firewood ”
-  - phone = "(703) 260-0305" · “nditions before launching by calling NOAA River Forecast at 703-260-0305. If the combined air and water temperature totals less than”
-  - phone_hint = "(703) 451-0141" · “nal corridor. For paddling safety resources, contact the Am​erican ​Canoe ​Association at 703-451-0141. Center_Content Our Social Media Chan”
-  - reservable = false · “oric Paw Paw Tunnel. Take out at Bond's Landing, where a canoe campsite is available on a first-come, first-served basis. Bond's Landing to ”
-  - rules.fires = "Firewood for camping must be purchased from local vendors o · “ed depending on conditions. Rates Standard site: $10 per night Group site: $20 per nigh​t Firewood for camping must be purchased from local ”
-  - sites.primitive = 100 · “dg​e State Forest Driving Tour (PDF) ​ Camping Green Ridge State Forest has approximately 100 primitive campsites distributed throughout the”
-- **Wolf Den Run Campground** (intake-US-6397, agency (outside research camping-us-oct31), status ok, 17 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/publiclands/pages/western/wolf-den-run.aspx)
+- **Dans Mountain State Park (Group 1)** (intake-US-1567, agency (outside research camping-us-oct31), status ok, 6 facts) · [parkreservations.maryland.gov](https://parkreservations.maryland.gov/)
+  - booking.how = "online: parkreservations.maryland.gov" · “link “””
+  - booking.url = "https://parkreservations.maryland.gov/welcome.do" · “link “” -> https://parkreservations.maryland.gov/welcome.do”
+  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “es Group sites Youth Group Sites Horse sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - reservable = true · “and camping unit tag numbers ready. *Know the names of all occupants before booking. *New reservable inventory becomes available at 9 a.m. o”
+  - rules.pets = "Pets allowed" · “r more) 30 Amp (or more) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Pets allowed Cabins or lodgings Options Occupants ”
+- **Assateague State Park** (US-1559, state, status ok, 17 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/publiclands/Pages/default.aspx)
   - booking.how = "online: dnr.maryland.gov" · “link “Reservation Policies, Park Fees and Hours of Operation””
   - booking.url = "https://dnr.maryland.gov/publiclands/Pages/oc.aspx" · “link “Reservation Policies, Park Fees and Hours of Operation” -> https://dnr.maryland.gov/publiclands/Pages/oc.aspx”
   - features = "fire ring" · “are reserving seven (7) or more nights. Campsites have a picnic table and in most cases a fire ring. A central restroom facility with hot an”
@@ -2341,9 +2271,58 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.electric = "some" · “ns Maryland's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to ”
   - hookups.sewer = true · “d's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to primitive ”
   - hookups.water = true · “d's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to primitive ”
-  - map.date_how = "web page, no date in the link" · “link “Map​””
-  - map.url = "https://dnr.maryland.gov/publiclands/Pages/western/WolfDenR · “link “Map​” -> https://dnr.maryland.gov/publiclands/Pages/western/WolfDenRun/Map.aspx”
-  - phone = "(301) 334-1272" · “f Den Run State Park Office. Reservations and Fees Contact: 301-334-1272 (Office​) 301-616-3619 (On-Site Duty Ranger) E-mail: [email”
+  - map.date_how = "PDF, no date in the link" · “link “​Map of Maryland State Parks with Amenities​””
+  - map.url = "https://dnr.maryland.gov/publiclands/Documents/MD_StatePark · “link “​Map of Maryland State Parks with Amenities​” -> https://dnr.maryland.gov/publiclands/Documents/MD_StateParksMap-Amenities.pdf”
+  - phone = "(301) 271-7012" · “, please contact the Maryland Association of Campgrounds at 301-271-7012, via e-mail at [email protected] , or on-line at: www.mdcam”
+- **Potomac State Forest** (US-4768, state, status ok, 17 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/publiclands/Pages/default.aspx)
+  - booking.how = "online: dnr.maryland.gov" · “link “Reservation Policies, Park Fees and Hours of Operation””
+  - booking.url = "https://dnr.maryland.gov/publiclands/Pages/oc.aspx" · “link “Reservation Policies, Park Fees and Hours of Operation” -> https://dnr.maryland.gov/publiclands/Pages/oc.aspx”
+  - features = "fire ring" · “are reserving seven (7) or more nights. Campsites have a picnic table and in most cases a fire ring. A central restroom facility with hot an”
+  - fees = "$200 per night | $275 per day | $50.00 per night | $200 per · “ion, please call the Gunpowder Falls State Park Headquarters at 410-592-2897. The cost is $200 per night. There is a two-night minimum year ”
+  - hookups.electric = "some" · “ns Maryland's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to ”
+  - hookups.sewer = true · “d's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to primitive ”
+  - hookups.water = true · “d's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to primitive ”
+  - map.date_how = "PDF, no date in the link" · “link “​Map of Maryland State Parks with Amenities​””
+  - map.url = "https://dnr.maryland.gov/publiclands/Documents/MD_StatePark · “link “​Map of Maryland State Parks with Amenities​” -> https://dnr.maryland.gov/publiclands/Documents/MD_StateParksMap-Amenities.pdf”
+  - phone = "(301) 271-7012" · “, please contact the Maryland Association of Campgrounds at 301-271-7012, via e-mail at [email protected] , or on-line at: www.mdcam”
+- **Campground - name not in layer (layer: Rocky Gap State Park Campground)** (US-1593:p2-0, state, status ok, 17 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/publiclands/Pages/default.aspx)
+  - booking.how = "online: dnr.maryland.gov" · “link “Reservation Policies, Park Fees and Hours of Operation””
+  - booking.url = "https://dnr.maryland.gov/publiclands/Pages/oc.aspx" · “link “Reservation Policies, Park Fees and Hours of Operation” -> https://dnr.maryland.gov/publiclands/Pages/oc.aspx”
+  - features = "fire ring" · “are reserving seven (7) or more nights. Campsites have a picnic table and in most cases a fire ring. A central restroom facility with hot an”
+  - fees = "$200 per night | $275 per day | $50.00 per night | $200 per · “ion, please call the Gunpowder Falls State Park Headquarters at 410-592-2897. The cost is $200 per night. There is a two-night minimum year ”
+  - hookups.electric = "some" · “ns Maryland's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to ”
+  - hookups.sewer = true · “d's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to primitive ”
+  - hookups.water = true · “d's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to primitive ”
+  - map.date_how = "PDF, no date in the link" · “link “​Map of Maryland State Parks with Amenities​””
+  - map.url = "https://dnr.maryland.gov/publiclands/Documents/MD_StatePark · “link “​Map of Maryland State Parks with Amenities​” -> https://dnr.maryland.gov/publiclands/Documents/MD_StateParksMap-Amenities.pdf”
+  - phone = "(301) 271-7012" · “, please contact the Maryland Association of Campgrounds at 301-271-7012, via e-mail at [email protected] , or on-line at: www.mdcam”
+- **Indian Springs WMA camping** (intake-US-7772, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/wildlife/pages/publiclands/western/prathersneck.aspx)
+  - booking.url = "https://dnr.maryland.gov/wildlife/pages/publiclands/western · “booking link from our outside research (camping, nearby only) row (official system dnr.maryland.gov)”
+  - map.date_how = "web page, no date in the link" · “link “Click Here for Map””
+  - map.url = "https://dnr.maryland.gov/wildlife/Documents/PrathersNeck_Ma · “link “Click Here for Map” -> https://dnr.maryland.gov/wildlife/Documents/PrathersNeck_Map.jpg”
+  - phone = "(301) 842-2702" · “information, contact the Indian Springs Wildlife Office at (301) 842-2702. Click Here for Map ​ This area is a part of Maryland’s Dep”
+- **Tuckahoe State Park** (US-1603, state, status ok, 11 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/publiclands/Pages/eastern/Tuckahoe/Camping-and-Cabins.aspx)
+  - booking.how = "online: dnr.maryland.gov" · “link “Reservation Policies, Park Fees and Hours of Operation””
+  - booking.url = "https://dnr.maryland.gov/publiclands/Pages/oc.aspx" · “link “Reservation Policies, Park Fees and Hours of Operation” -> https://dnr.maryland.gov/publiclands/Pages/oc.aspx”
+  - drinking_water = true · “pped with a camping pad, picnic table and fire ring. No water hook-ups are available, but potable water is conveniently located around each ”
+  - dump_station = true · “ter hook-ups are available, but potable water is conveniently located around each loop. A dump station is available for trailer use. Pets ar”
+  - features = "fire ring" · “showers and toilet facilities. Each site is equipped with a camping pad, picnic table and fire ring. No water hook-ups are available, but po”
+  - hookups.electric = "some" · “_Content ​Camping and Cabins The park offers a family camping area with 54 sites, 33 with electric hookups, and a central bathhouse with sho”
+  - hookups.water = false · “ilet facilities. Each site is equipped with a camping pad, picnic table and fire ring. No water hook-ups are available, but potable water is”
+  - restrooms = "yes (kind not stated)" · “park offers a family camping area with 54 sites, 33 with electric hookups, and a central bathhouse with showers and toilet facilities. Each ”
+  - rules.pets = "Pets are allowed in the campground, but must remain on a le · “er is conveniently located around each loop. A dump station is available for trailer use. Pets are allowed in the campground, but must remai”
+  - showers = true · “park offers a family camping area with 54 sites, 33 with electric hookups, and a central bathhouse with showers and toilet facilities. Each ”
+- **Big Run State Park** (US-1560, state, status ok, 20 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/publiclands/pages/western/bigrun/camping.aspx)
+  - booking.how = "online: dnr.maryland.gov" · “link “Reservation Policies, Park Fees and Hours of Operation””
+  - booking.url = "https://dnr.maryland.gov/publiclands/Pages/oc.aspx" · “link “Reservation Policies, Park Fees and Hours of Operation” -> https://dnr.maryland.gov/publiclands/Pages/oc.aspx”
+  - checkout = "1 p.m" · “n one night must make a reservation. Campsite guests may set-up camp anytime after 3 p.m. Check-out time is 1 p.m.​ ​ ​​​ Center_Content Our”
+  - features = "fire ring" · “itive campsites available by reservation year-round. Each campsite has a picnic table and fire ring. Sites 63-75 are wooded, with stone-dust”
+  - fees = "$200 per night | $275 per day | $50.00 per night | $200 per · “ion, please call the Gunpowder Falls State Park Headquarters at 410-592-2897. The cost is $200 per night. There is a two-night minimum year ”
+  - hookups.electric = "some" · “ervation Corps) and three adjoining campsites. The shelter features a stone fireplace and electricity. The Creekside Group Campsite (formerl”
+  - hookups.sewer = true · “d's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to primitive ”
+  - hookups.water = true · “d's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to primitive ”
+  - map.date_how = "web page, year 2023 in the link" · “link “​Park Map​””
+  - map.url = "https://dnr.maryland.gov/publiclands/PublishingImages/brst- · “link “​Park Map​” -> https://dnr.maryland.gov/publiclands/PublishingImages/brst-camping-map-2023.jpg”
 - **Susquehanna State Park** (US-1601, state, status ok, 9 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/publiclands/Pages/central/Susquehanna/Camping.aspx)
   - booking.how = "online: dnr.maryland.gov" · “link “Reservation Policies, Park Fees and Hours of Operation””
   - booking.url = "https://dnr.maryland.gov/publiclands/Pages/oc.aspx" · “link “Reservation Policies, Park Fees and Hours of Operation” -> https://dnr.maryland.gov/publiclands/Pages/oc.aspx”
@@ -2354,29 +2333,24 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - rules.pets = "Pets are allowed in all areas of Susquehanna State Park, in · “Rules and Reservations: The campground is open May through the last weekend in October​. Pets are allowed in all areas of Susquehanna State ”
   - showers = true · “which are electric, and six camper cabins. Each loop has its own comfort station with hot showers. Click here for a map of the campground ​C”
   - sites.total = 69 · “rk Main_Content ​ Camping The Susquehanna State Park campground contains two loops with a total of 69 sites, six of which are electric, and ”
-- **Swallow Falls State Park** (US-1602, state, status ok, 21 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/publiclands/Pages/western/SwallowFalls/Camping.aspx)
-  - booking.how = "online: dnr.maryland.gov" · “link “Reservation Policies, Park Fees and Hours of Operation””
-  - booking.url = "https://dnr.maryland.gov/publiclands/Pages/oc.aspx" · “link “Reservation Policies, Park Fees and Hours of Operation” -> https://dnr.maryland.gov/publiclands/Pages/oc.aspx”
-  - checkin = "3 p.m" · “low parking is available nearby. All vehicles must remain on the paved or gravel surface. Check-in is 3 p.m. Check-in must be done before 10”
-  - checkout = "12 p.m" · “n on the paved or gravel surface. Check-in is 3 p.m. Check-in must be done before 10 p.m. Check-out is 12 p.m. Quiet hours are enforced betw”
-  - features = "fire ring" · “are reserving seven (7) or more nights. Campsites have a picnic table and in most cases a fire ring. A central restroom facility with hot an”
-  - fees = "$200 per night | $275 per day | $50.00 per night | $200 per · “ion, please call the Gunpowder Falls State Park Headquarters at 410-592-2897. The cost is $200 per night. There is a two-night minimum year ”
-  - hookups.electric = true · “sites are located near modern bath houses with hot and cold water. Three of the sites are full hook-up which includes electric, water and se”
-  - hookups.sewer = true · “sites are located near modern bath houses with hot and cold water. Three of the sites are full hook-up which includes electric, water and se”
-  - hookups.water = true · “sites are located near modern bath houses with hot and cold water. Three of the sites are full hook-up which includes electric, water and se”
-  - map.date_how = "PDF, no date in the link" · “link “””
-- **Savage Highlands lodge, cabins, yurts, hike-in rustic campsite** (intake-US-13564, agency (outside research camping-us-oct31), status ok, 17 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/publiclands/Pages/western/savagehighlands.aspx)
-  - booking.how = "online: dnr.maryland.gov" · “link “Reservation Policies, Park Fees and Hours of Operation””
-  - booking.url = "https://dnr.maryland.gov/publiclands/Pages/oc.aspx" · “link “Reservation Policies, Park Fees and Hours of Operation” -> https://dnr.maryland.gov/publiclands/Pages/oc.aspx”
-  - features = "fire ring" · “are reserving seven (7) or more nights. Campsites have a picnic table and in most cases a fire ring. A central restroom facility with hot an”
-  - fees = "$200 per night | $275 per day | $50.00 per night | $200 per · “ion, please call the Gunpowder Falls State Park Headquarters at 410-592-2897. The cost is $200 per night. There is a two-night minimum year ”
-  - hookups.electric = true · “h. The site offered substantial existing infrastructure, including cabins, yurts, trails, utilities, and a lodge that, while in need of upgr”
-  - hookups.sewer = true · “d's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to primitive ”
-  - hookups.water = true · “d's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to primitive ”
-  - map.date_how = "PDF, no date in the link" · “link “​Map of Maryland State Parks with Amenities​””
-  - map.url = "https://dnr.maryland.gov/publiclands/Documents/MD_StatePark · “link “​Map of Maryland State Parks with Amenities​” -> https://dnr.maryland.gov/publiclands/Documents/MD_StateParksMap-Amenities.pdf”
-  - phone = "(301) 271-7012" · “, please contact the Maryland Association of Campgrounds at 301-271-7012, via e-mail at [email protected] , or on-line at: www.mdcam”
-- **Hollofield Area campground** (US-1588:hq1, state, status ok, 17 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/publiclands/pages/central/patapscovalley/hilton/camping.aspx)
+- **Smallwood State Park** (US-1597, state, status ok, 16 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/publiclands/pages/southern/smallwood.aspx)
+  - drinking_water = true · “he rear room contains two sets of bunk beds. A wall A/C unit keeps the space comfortable. Potable water is available across the road, and 50”
+  - dump_station = true · “tents or RVs, and six cozy cabins. Campers have access to a bathhouse with hot showers, a dump station, and 50-amp electric and potable wate”
+  - fees = "$2 to the listed prices | $3 / person, Weekends and Holiday · “ng Policy No Hunting ​ Admission and Passes Admission Fees All non-Maryland residents add $2 to the listed prices. $3 / person, Weekends and”
+  - hookups.amps = [30, 50] · “d tents, while 2 are designated for tents only. Each site is equipped with a camping pad, 50-amp electric and water hookups, a picnic table,”
+  - hookups.electric = true · “, while 2 are designated for tents only. Each site is equipped with a camping pad, 50-amp electric and water hookups, a picnic table, a lant”
+  - hookups.water = true · “, while 2 are designated for tents only. Each site is equipped with a camping pad, 50-amp electric and water hookups, a picnic table, a lant”
+  - map.date_how = "PDF, no date in the link" · “link “Click here to view the Smallwood State Park Trail Map””
+  - map.url = "https://dnr.maryland.gov/publiclands/documents/SmallwoodMap · “link “Click here to view the Smallwood State Park Trail Map” -> https://dnr.maryland.gov/publiclands/documents/SmallwoodMap.pdf”
+  - phone = "(301) 743-7613" · “ood​ Events Calendar! ​ ​ Right_Content ​​ ​​ Information: ​301-743-7613​ (Office) E-mail Smallwood State Park Hours: ​5 a.m. to sun”
+  - reservable = true · “offers two designated youth group camping sites, available from April through October. To reserve a site, groups must hold a valid Maryland ”
+- **Green Ridge State Forest camping** (intake-US-7764, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/wildlife/Pages/publiclands/western/bellegrove.aspx)
+  - booking.url = "https://dnr.maryland.gov/wildlife/Pages/publiclands/western · “booking link from our outside research (camping, nearby only) row (official system dnr.maryland.gov)”
+  - map.date_how = "PDF, no date in the link" · “link “Click Here for Map””
+  - map.url = "https://dnr.maryland.gov/wildlife/Documents/bellegrovemap.p · “link “Click Here for Map” -> https://dnr.maryland.gov/wildlife/Documents/bellegrovemap.pdf”
+  - phone = "(301) 478-2525" · “ional information, contact the Billmeyer Wildlife Office at (301) 478-2525. Click Here for Map This area is a part of Maryland’s Depar”
+  - season = "year-round" · “uffed grouse, woodcock, gray squirrels, and cottontail rabbits. County roads are open for year-round access, however maintenance roads and w”
+- **Appalachian Trail designated camping areas/shelters** (intake-US-1598, agency (outside research camping-us-oct31), status ok, 17 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/publiclands/pages/western/southmountain.aspx)
   - booking.how = "online: dnr.maryland.gov" · “link “Reservation Policies, Park Fees and Hours of Operation””
   - booking.url = "https://dnr.maryland.gov/publiclands/Pages/oc.aspx" · “link “Reservation Policies, Park Fees and Hours of Operation” -> https://dnr.maryland.gov/publiclands/Pages/oc.aspx”
   - features = "fire ring" · “are reserving seven (7) or more nights. Campsites have a picnic table and in most cases a fire ring. A central restroom facility with hot an”
@@ -2386,40 +2360,16 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.water = true · “d's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to primitive ”
   - map.date_how = "PDF, no date in the link" · “link “​Map of Maryland State Parks with Amenities​””
   - map.url = "https://dnr.maryland.gov/publiclands/Documents/MD_StatePark · “link “​Map of Maryland State Parks with Amenities​” -> https://dnr.maryland.gov/publiclands/Documents/MD_StateParksMap-Amenities.pdf”
-  - phone = "(301) 271-7012" · “, please contact the Maryland Association of Campgrounds at 301-271-7012, via e-mail at [email protected] , or on-line at: www.mdcam”
-- **Manor Area Campground** (US-1566:hq1, state, status ok, 17 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/publiclands/Pages/western/CunninghamFalls/Camping.aspx)
-  - booking.how = "online: dnr.maryland.gov" · “link “Reservation Policies, Park Fees and Hours of Operation””
-  - booking.url = "https://dnr.maryland.gov/publiclands/Pages/oc.aspx" · “link “Reservation Policies, Park Fees and Hours of Operation” -> https://dnr.maryland.gov/publiclands/Pages/oc.aspx”
-  - features = "fire ring" · “are reserving seven (7) or more nights. Campsites have a picnic table and in most cases a fire ring. A central restroom facility with hot an”
-  - fees = "$200 per night | $275 per day | $50.00 per night | $200 per · “ion, please call the Gunpowder Falls State Park Headquarters at 410-592-2897. The cost is $200 per night. There is a two-night minimum year ”
-  - hookups.electric = "some" · “ns Maryland's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to ”
-  - hookups.sewer = true · “d's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to primitive ”
-  - hookups.water = true · “d's state parks offer a camping experience for everyone - from campgrounds with electric, sewer and water hookups and showers, to primitive ”
-  - map.date_how = "web page, no date in the link" · “link “Click here for William Houck Area Camping Map and Site Descriptions​””
-  - map.url = "https://dnr.maryland.gov/publiclands/Pages/parkmaps/houckma · “link “Click here for William Houck Area Camping Map and Site Descriptions​” -> https://dnr.maryland.gov/publiclands/Pages/parkmaps/houckmap.”
-  - phone = "(301) 271-7012" · “, please contact the Maryland Association of Campgrounds at 301-271-7012, via e-mail at [email protected] , or on-line at: www.mdcam”
-- **Mainland campground; primitive backcountry campsites; youth-group site** (US-1580:hq0, state, status ok, 12 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/publiclands/Pages/eastern/JanesIsland/Camping-and-Cabins.aspx)
-  - booking.how = "online: dnr.maryland.gov" · “link “Reservation Policies, Park Fees and Hours of Operation””
-  - booking.url = "https://dnr.maryland.gov/publiclands/Pages/oc.aspx" · “link “Reservation Policies, Park Fees and Hours of Operation” -> https://dnr.maryland.gov/publiclands/Pages/oc.aspx”
-  - checkout = "1 pm" · “uses have hot water showers and flush toilets. Check-in time for all campsites is 3pm and checkout time is 1 pm. Campers must arrive and che”
-  - features = "fire ring and lantern post" · “ommodate tent or vehicle campers. Each site is equipped with a camping pad, picnic table, fire ring and lantern post. Three centrally locate”
-  - hookups.electric = true · “he mainland portion of the park offers over 105 campsites, 50​ of which are equipped with electrical hook-ups to accommodate tent or vehicle”
-  - map.date_how = "PDF, no date in the link" · “link “””
-  - map.url = "https://dnr.maryland.gov/publiclands/Documents/Janes-Island · “link “” -> https://dnr.maryland.gov/publiclands/Documents/Janes-Island/Backcountry-site-map.pdf”
-  - phone = "(410) 968-1565" · “. If you have any questions, please call the park office at 410-968-1565, between 8:30 a.m. and 4:00 p.m. or email: [email protected”
-  - restrooms = "flush" · “ire ring and lantern post. Three centrally located bath houses have hot water showers and flush toilets. Check-in time for all campsites is ”
-  - showers = true · “ped with a camping pad, picnic table, fire ring and lantern post. Three centrally located bath houses have hot water showers and flush toile”
-- **Greenbelt Park Ranger Station** (intake-US-7973, agency (outside research camping-us-oct31), status ok, no campground facts in the page text: needs browser?, 6 facts) · [www.recreation.gov](https://www.recreation.gov/camping/poi/258850)
-  - booking.how = "online: www.recreation.gov" · “link “Greenbelt Park””
-  - booking.url = "https://www.recreation.gov/camping/gateways/2734" · “link “Greenbelt Park” -> https://www.recreation.gov/camping/gateways/2734”
-  - fees = "$20 per night" · “backcountry sites, there are options for every camping style. Greenbelt Campground Price: $20 per night Rating: 4.3 stars (630 reviews) Gree”
-  - map.date_how = "web page, no date in the link" · “link “Greenbelt Park Map””
-  - map.url = "https://www.nps.gov/gree/planyourvisit/maps.htm" · “link “Greenbelt Park Map” -> https://www.nps.gov/gree/planyourvisit/maps.htm”
-  - phone = "(771) 208-1588" · “328300000000, -76.89722100000000 Contact & Resources Phone: (771) 208-1588 Additional Information: Additional Information Greenbelt Pa”
+  - phone = "(301) 791-4767" · “leted in advance. Contact South Mountain Recreation Area at 301-791-4767 or by Email at [email protected] To learn more about hiking”
+- **Deal Island WMA primitive camping area** (intake-US-7736, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [dnr.maryland.gov](https://dnr.maryland.gov/wildlife/pages/publiclands/eastern/dealisland.aspx)
+  - booking.url = "https://dnr.maryland.gov/wildlife/pages/publiclands/eastern · “booking link from our outside research (camping, in the park) row (official system dnr.maryland.gov)”
+  - map.date_how = "PDF, no date in the link" · “link “Click Here for Map””
+  - map.url = "https://dnr.maryland.gov/wildlife/Documents/dealislandmap.p · “link “Click Here for Map” -> https://dnr.maryland.gov/wildlife/Documents/dealislandmap.pdf”
+  - phone = "(410) 651-2065" · “onal information, contact the Wellington Wildlife Office at (410) 651-2065. Click Here for Map Photograph of Great Blue Heron Courtesy”
 
 ## US-DE: 12 random samples (records with facts; seed = the date)
 
-- **Blackbird State Forest primitive campsites (16, Tybout Tract)** (intake-US-4609, agency (outside research camping-us-oct31), status ok, 14 facts) · [agriculture.delaware.gov](https://agriculture.delaware.gov/forest-service/camping/)
+- **Redden State Forest HQ Tract primitive campsites (18) + Redden Lodge** (intake-US-4610, agency (outside research camping-us-oct31), status ok, 14 facts) · [agriculture.delaware.gov](https://agriculture.delaware.gov/forest-service/camping/)
   - booking.how = "online: agriculture.delaware.gov" · “link “Land Preservation””
   - booking.url = "https://agriculture.delaware.gov/agland-preservation-planni · “link “Land Preservation” -> https://agriculture.delaware.gov/agland-preservation-planning/”
   - checkin = "1 p.m" · “ion Confirmation is your Camping permit. No formal check-in is required for tent camping. Check-in begins at 1 p.m., check-out is at 11 a.m.”
@@ -2430,7 +2380,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - map.url = "https://agriculture.delaware.gov/wp-content/uploads/sites/1 · “link “Blackbird Camping Map” -> https://agriculture.delaware.gov/wp-content/uploads/sites/108/2025/02/Blackbird-State-Forest_Updated”
   - phone_hint = "(302) 698-4547" · “kbird State Forest or Redden State Forest, email DDA_ForestService@delaware.gov , or call 302-698-4547. Pavilions at Blackbird and Redden O.”
   - reservable = "mixed" · “k-out is at 11 a.m. ADA sites and small-medium camper van accessible sites available at a first come first serve basis. State Forest Camping”
-- **Redden State Forest HQ Tract primitive campsites (18) + Redden Lodge** (intake-US-4610, agency (outside research camping-us-oct31), status ok, 14 facts) · [agriculture.delaware.gov](https://agriculture.delaware.gov/forest-service/camping/)
+- **Blackbird State Forest primitive campsites (16, Tybout Tract)** (intake-US-4609, agency (outside research camping-us-oct31), status ok, 14 facts) · [agriculture.delaware.gov](https://agriculture.delaware.gov/forest-service/camping/)
   - booking.how = "online: agriculture.delaware.gov" · “link “Land Preservation””
   - booking.url = "https://agriculture.delaware.gov/agland-preservation-planni · “link “Land Preservation” -> https://agriculture.delaware.gov/agland-preservation-planning/”
   - checkin = "1 p.m" · “ion Confirmation is your Camping permit. No formal check-in is required for tent camping. Check-in begins at 1 p.m., check-out is at 11 a.m.”
@@ -2444,115 +2394,143 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 
 ## US-AR: 12 random samples (records with facts; seed = the date)
 
-- **Designated WMA campsites** (intake-US-7356, agency (outside research camping-us-oct31), status ok, 6 facts) · [www.agfc.com](https://www.agfc.com/wma/st-francis-national-forest-wma/)
-  - booking.url = "https://www.agfc.com/wma/st-francis-national-forest-wma/" · “booking link from our outside research (camping, in the park) row (official system www.agfc.com)”
-  - hookups.electric = "some" · “torm Creek Lake campsites, but 14 sites at Beech Point Campground on Bear Creek Lake have electricity, seweage and water hookups. Descriptio”
-  - hookups.water = true · “, but 14 sites at Beech Point Campground on Bear Creek Lake have electricity, seweage and water hookups. Description It consists of upland h”
-  - restrooms = "yes (kind not stated)" · “ervice maintains them on a fee basis. These campsites are semi-private, meaning there are restrooms, tent pads, trailer areas, grills, picni”
-  - rules.pets = "Dogs allowed" · “Sept. 1, 2026-Feb. 28, 2027. Daily limit – 8 2026-27 Squirrel May 15, 2026-Feb. 28, 2027. Dogs allowed. Daily limit – 12 2027 Turkey Youth H”
-  - sites.total = 14 · “tables and water sources. No electricity is available at Storm Creek Lake campsites, but 14 sites at Beech Point Campground on Bear Creek La”
-- **Designated WMA campsites** (intake-US-7305, agency (outside research camping-us-oct31), status ok, 3 facts) · [www.agfc.com](https://www.agfc.com/wma/mike-freeze-wattensaw-wma/)
-  - booking.url = "https://www.agfc.com/wma/mike-freeze-wattensaw-wma/" · “booking link from our outside research (camping, in the park) row (official system www.agfc.com)”
-  - rules.pets = "Dogs allowed" · “Sept. 1, 2026-Feb. 28, 2027. Daily limit – 8 2026-27 Squirrel May 15, 2026-Feb. 28, 2027. Dogs allowed. Daily limit – 12 2027 Turkey Youth H”
-  - sites.primitive = 38 · “nd include features such as parking, types of road and land boundaries. Camping There are 38 primitive campsites maintained by area personne”
-- **Designated WMA campsites** (intake-US-7301, agency (outside research camping-us-oct31), status ok, 3 facts) · [www.agfc.com](https://www.agfc.com/wma/lake-greeson-wma/)
-  - booking.url = "https://www.agfc.com/wma/lake-greeson-wma/" · “booking link from our outside research (camping, in the park) row (official system www.agfc.com)”
-  - rules.pets = "Dogs Allowed (during a specific portion of deer season)" · “icenses” at agfc.com or by calling 833-345-0325 or any regional office . Three-point rule Dogs Allowed (during a specific portion of deer se”
-  - sites.total = 100 · “ores of the Lake Greeson and offers an ATV riding trail, a mountain bike trail, more than 100 campsites with a variety of options, a yurt re”
-- **Designated WMA campsites** (intake-US-7270, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [www.agfc.com](https://www.agfc.com/wma/buffalo-national-river-wma/)
-  - booking.url = "https://www.agfc.com/wma/buffalo-national-river-wma/" · “booking link from our outside research (camping, in the park) row (official system www.agfc.com)”
-  - rules.pets = "Dogs allowed" · “Sept. 1, 2026-Feb. 28, 2027. Daily limit – 8 2026-27 Squirrel May 15, 2026-Feb. 28, 2027. Dogs allowed. Daily limit – 12 2026 Bear Bear Arch”
+- **Designated WMA campsites** (intake-US-7333, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.agfc.com](https://www.agfc.com/wma/white-rock-wma/)
+  - booking.url = "https://www.agfc.com/wma/white-rock-wma/" · “booking link from our outside research (camping, in the park) row (official system www.agfc.com)”
+  - phone = ["(501) 667-2191", "(501) 754-2864"] · “the WMA. Contact the U.S. Forest Service offices at Ozark, 501-667-2191, or Clarksville, 501-754-2864, for additional information. | est Ser”
+  - phone_hint = "(501) 667-2191" · “ing areas scattered throughout the WMA. Contact the U.S. Forest Service offices at Ozark, 501-667-2191, or Clarksville, 501-754-2864, for ad”
+  - rules.pets = "No dogs allowed Nov" · “Sept. 1, 2026-Feb. 28, 2027. Daily limit – 8 2026-27 Squirrel May 15, 2026-Feb. 28, 2027. No dogs allowed Nov. 14-22. Daily limit – 12 2026 ”
 - **Designated WMA campsites** (intake-US-7300, agency (outside research camping-us-oct31), status ok, 3 facts) · [www.agfc.com](https://www.agfc.com/wma/lafayette-county-wma/)
   - booking.url = "https://www.agfc.com/wma/lafayette-county-wma/" · “booking link from our outside research (camping, in the park) row (official system www.agfc.com)”
   - hookups.electric = true · “ss Haven Restaurant and Lodge are located on Lake Erling. They have lodging as well as RV hookups and a boat launch. They can be reached at ”
   - rules.pets = "Dogs allowed" · “Sept. 1, 2026-Feb. 28, 2027. Daily limit – 8 2026-27 Squirrel May 15, 2026-Feb. 28, 2027. Dogs allowed. Daily limit – 12 2027 Turkey Youth H”
-- **Designated WMA campsites** (intake-US-11394, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [www.agfc.com](https://www.agfc.com/wma/muddy-creek-wma/)
-  - booking.url = "https://www.agfc.com/wma/muddy-creek-wma/" · “booking link from our outside research (camping, in the park) row (official system www.agfc.com)”
-  - rules.pets = "Dogs allowed" · “Sept. 1, 2026-Feb. 28, 2027. Daily limit – 8 2026-27 Squirrel May 15, 2026-Feb. 28, 2027. Dogs allowed. Daily limit – 12 2026 Bear Bear Arch”
-- **Designated WMA campsites** (intake-US-7315, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [www.agfc.com](https://www.agfc.com/wma/piney-creeks-wma/)
-  - booking.url = "https://www.agfc.com/wma/piney-creeks-wma/" · “booking link from our outside research (camping, in the park) row (official system www.agfc.com)”
-  - rules.pets = "No dogs allowed Nov" · “Sept. 1, 2026-Feb. 28, 2027. Daily limit – 8 2026-27 Squirrel May 15, 2026-Feb. 28, 2027. No dogs allowed Nov. 14-22. Daily limit – 12 2026 ”
-- **Designated WMA campsites** (intake-US-7328, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [www.agfc.com](https://www.agfc.com/wma/sulphur-river-wma/)
-  - booking.url = "https://www.agfc.com/wma/sulphur-river-wma/" · “booking link from our outside research (camping, in the park) row (official system www.agfc.com)”
-  - rules.pets = "Dogs allowed" · “Sept. 1, 2026-Feb. 28, 2027. Daily limit – 8 2026-27 Squirrel May 15, 2026-Feb. 28, 2027. Dogs allowed. Daily limit – 12 2026 Alligator Alli”
-- **Rick Evans Grandview Prarie Wildlife Management Area** (intake-US-7320, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.agfc.com](https://www.agfc.com/wma/rick-evans-grandview-prairie-wma/)
-  - booking.url = "https://www.agfc.com/wma/rick-evans-grandview-prairie-wma/" · “booking link from our outside research (camping, nearby only) row (official system www.agfc.com)”
-  - phone = "(870) 983-2790" · “onal information can be obtained by calling 800-983-4219 or 870-983-2790. Safety While visiting this area, care should be taken to m”
+- **Designated WMA campsites** (intake-US-7309, agency (outside research camping-us-oct31), status ok, 5 facts) · [www.agfc.com](https://www.agfc.com/wma/nimrod-lloyd-millwood-wma/)
+  - booking.url = "https://www.agfc.com/wma/nimrod-lloyd-millwood-wma/" · “booking link from our outside research (camping, in the park) row (official system www.agfc.com)”
+  - hookups.sewer = true · “. Hunting is not permitted within the posted park boundaries or administrative areas. The sewer pond area is closed to hunting and fishing. ”
+  - phone = "(501) 324-5675" · “-29 (contact Corps of Engineers Nimrod Lake Project office, 501-324-5675, or visit www.swl.usace.army.mil/Missions/Recreation/mobili”
   - reservable = false · “place to enjoy this exciting form of wingshooting. Dove fields on WMAs are available on a first-come, first-served basis. WMA acreage put in”
-  - rules.pets = "Dogs allowed" · “Sept. 1, 2026-Feb. 28, 2027. Daily limit – 8 2026-27 Squirrel May 15, 2026-Feb. 28, 2027. Dogs allowed. Daily limit – 12 2027 Turkey Youth H”
-- **Designated WMA campsites** (intake-US-7275, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.agfc.com](https://www.agfc.com/wma/cedar-mountain-wma/)
-  - booking.url = "https://www.agfc.com/wma/cedar-mountain-wma/" · “booking link from our outside research (camping, in the park) row (official system www.agfc.com)”
-  - phone_hint = "(833) 356-0871" · “rs. Creating a disturbance after 10 p.m. not allowed. Ownership Green Bay Packaging Phone 833-356-0871 Topographic Streets National Geograph”
+  - rules.pets = "Dogs Allowed (during a specific portion of deer season)" · “t Nimrod Lloyd Millwood WMA Zone County 470 Perry, Yell Mobility-Impaired Access CWD Zone Dogs Allowed (during a specific portion of deer se”
+- **Designated WMA campsites** (intake-US-7314, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 3 facts) · [www.agfc.com](https://www.agfc.com/wma/petit-jean-river-wma/)
+  - booking.url = "https://www.agfc.com/wma/petit-jean-river-wma/" · “booking link from our outside research (camping, in the park) row (official system www.agfc.com)”
+  - reservable = false · “place to enjoy this exciting form of wingshooting. Dove fields on WMAs are available on a first-come, first-served basis. WMA acreage put in”
+  - rules.pets = "Dogs allowed" · “Sept. 1, 2026-Feb. 28, 2027. Daily limit – 8 2026-27 Squirrel May 15, 2026-Feb. 28, 2027. Dogs allowed. Daily limit – 12 2026 Bear Bear Arch”
+- **Designated WMA campsites** (intake-US-7284, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 3 facts) · [www.agfc.com](https://www.agfc.com/wma/earl-buss-bayou-deview-wma/)
+  - booking.url = "https://www.agfc.com/wma/earl-buss-bayou-deview-wma/" · “booking link from our outside research (camping, in the park) row (official system www.agfc.com)”
+  - reservable = false · “place to enjoy this exciting form of wingshooting. Dove fields on WMAs are available on a first-come, first-served basis. WMA acreage put in”
+  - rules.pets = "Dogs allowed" · “Sept. 1, 2026-Feb. 28, 2027. Daily limit – 8 2026-27 Squirrel May 15, 2026-Feb. 28, 2027. Dogs allowed. Daily limit – 12 2026-27 Dove Sept. ”
+- **Designated WMA campsites** (intake-US-7297, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.agfc.com](https://www.agfc.com/wma/jack-mountain-wma/)
+  - booking.url = "https://www.agfc.com/wma/jack-mountain-wma/" · “booking link from our outside research (camping, in the park) row (official system www.agfc.com)”
+  - phone = "(870) 245-9881" · “g permit from the Ross Foundation is required to camp (call 870-245-9881). Ownership Jack Mountain WMA is owned by the Ross Foundati”
+  - phone_hint = "(870) 245-9881" · “end of turkey season. A camping permit from the Ross Foundation is required to camp (call 870-245-9881). Ownership Jack Mountain WMA is owne”
+  - rules.pets = "No dogs allowed Nov" · “Sept. 1, 2026-Feb. 28, 2027. Daily limit – 8 2026-27 Squirrel May 15, 2026-Feb. 28, 2027. No dogs allowed Nov. 14-22. Daily limit – 12 2026 ”
+- **Designated WMA campsites** (intake-US-7357, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 3 facts) · [www.agfc.com](https://www.agfc.com/wma/sylamore-wma/)
+  - booking.url = "https://www.agfc.com/wma/sylamore-wma/" · “booking link from our outside research (camping, in the park) row (official system www.agfc.com)”
+  - rules.fires = "burn bans on or any danger in building a camp fire" · “, it can get away from your control. Always ask Forest Service employees if there are any burn bans on or any danger in building a camp fire”
+  - rules.pets = "Dogs allowed" · “Sept. 1, 2026-Feb. 28, 2027. Daily limit – 8 2026-27 Squirrel May 15, 2026-Feb. 28, 2027. Dogs allowed. Daily limit – 12 2026 Bear Bear Arch”
+- **Designated WMA campsites** (intake-US-7324, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [www.agfc.com](https://www.agfc.com/wma/scott-henderson-gulf-mountain-wma/)
+  - booking.url = "https://www.agfc.com/wma/scott-henderson-gulf-mountain-wma/ · “booking link from our outside research (camping, in the park) row (official system www.agfc.com)”
+  - rules.pets = "Dogs allowed" · “Sept. 1, 2026-Feb. 28, 2027. Daily limit – 8 2026-27 Squirrel May 15, 2026-Feb. 28, 2027. Dogs allowed. Daily limit – 12 2026 Bear Bear Arch”
+- **Designated WMA campsites** (intake-US-7276, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.agfc.com](https://www.agfc.com/wma/cherokee-wma/)
+  - booking.url = "https://www.agfc.com/wma/cherokee-wma/" · “booking link from our outside research (camping, in the park) row (official system www.agfc.com)”
+  - phone_hint = "(833) 356-0879" · “ing a disturbance after 10 p.m. is not allowed. Ownership Green Bay Packaging, Inc. Phone 833-356-0879 Topographic Streets National Geograph”
   - rules.pets = "Dogs allowed" · “Sept. 1, 2026-Feb. 28, 2027. Daily limit – 8 2026-27 Squirrel May 15, 2026-Feb. 28, 2027. Dogs allowed. Daily limit – 12 2026 Bear Bear Arch”
   - rules.stay_limit = "14 consecutive days" · “the declared furbearer hunting season is open and firearms deer season is closed. Camping limited to 14 consecutive days or fewer (unlawful ”
-- **Designated WMA campsites** (intake-US-7335, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [www.agfc.com](https://www.agfc.com/wma/winona-wma/)
-  - booking.url = "https://www.agfc.com/wma/winona-wma/" · “booking link from our outside research (camping, in the park) row (official system www.agfc.com)”
-  - rules.pets = "Dogs allowed" · “Sept. 1, 2026-Feb. 28, 2027. Daily limit – 8 2026-27 Squirrel May 15, 2026-Feb. 28, 2027. Dogs allowed. Daily limit – 12 2026 Bear Bear Arch”
-- **Blevins Wildlife Management Area** (intake-US-7337, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [www.agfc.com](https://www.agfc.com/wma/blevins-wma/)
-  - booking.url = "https://www.agfc.com/wma/blevins-wma/" · “booking link from our outside research (camping, nearby only) row (official system www.agfc.com)”
-  - rules.pets = "Dogs allowed" · “Sept. 1, 2026-Feb. 28, 2027. Daily limit – 8 2026-27 Squirrel May 15, 2026-Feb. 28, 2027. Dogs allowed. Daily limit – 12 2027 Turkey Youth H”
+- **Primitive campsites around Bois D'Arc Lake** (intake-US-7439, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 3 facts) · [www.agfc.com](https://www.agfc.com/wma/dr-lester-sitzes-iii-bois-darc-wma/)
+  - booking.url = "https://www.agfc.com/wma/dr-lester-sitzes-iii-bois-darc-wma · “booking link from our outside research (camping, in the park) row (official system www.agfc.com)”
+  - reservable = false · “place to enjoy this exciting form of wingshooting. Dove fields on WMAs are available on a first-come, first-served basis. WMA acreage put in”
+  - rules.pets = "Dogs allowed" · “Sept. 1, 2026-Feb. 28, 2027. Daily limit – 8 2026-27 Squirrel May 15, 2026-Feb. 28, 2027. Dogs allowed. Daily limit – 12 2026 Alligator Alli”
+- **Designated WMA campsites** (intake-US-7346, agency (outside research camping-us-oct31), status ok, 3 facts) · [www.agfc.com](https://www.agfc.com/wma/little-bayou-wma/)
+  - booking.url = "https://www.agfc.com/wma/little-bayou-wma/" · “booking link from our outside research (camping, in the park) row (official system www.agfc.com)”
+  - hookups.electric = false · “WMA. There is one campsite on Ashley County Road 104 with pads for RVs, but there are no hookups for electricity or water. Description Forme”
+  - rules.pets = "Dogs allowed" · ““group” not to exceed 4 hunters, no more than 2 of which can be 16 years of age or older. Dogs allowed. Persons in the group actively taking”
+- **Blanchard Springs Campgrounds** (intake-US-7442, agency (outside research camping-us-oct31), status ok, 13 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/ozark-stfrancis/recreation/blanchard-springs-campgrounds)
+  - booking.how = "online: www.recreation.gov" · “link “https://www.recreation.gov/camping/campgrounds/250010””
+  - booking.url = "https://www.recreation.gov/camping/campgrounds/250010" · “link “https://www.recreation.gov/camping/campgrounds/250010” -> https://www.recreation.gov/camping/campgrounds/250010”
+  - drinking_water = true · “Longitude: -92.17756111 Facility and Amenity Information Restrooms Flush toilet(s) Water Potable water is available at this site. Picnic Tab”
+  - dump_station = true · “nds Seventeen individual campsites and two group sites available. Water available. Sewage dump station available. Sites suitable for smaller”
+  - fees = "$15 per night | $15/night | $60/night (8-50 people) | $35/n · “4 hours, Sunrise to Sunset in Day Use Areas Fee Site and Info Overnight Use: Single Site: $15 per night Individual campsites- $15/night Larg”
+  - hookups.electric = false · “r available. Sewage dump station available. Sites suitable for smaller RV's and tents. No electricity or other hook ups. Reservations Reserv”
+  - hookups.water = false · “e scenic North Sylamore Creek. Campsites are shady and private, but have no electrical or water hook-ups. This recreation area… Haw Creek Fa”
+  - reservable = true · “Sites suitable for smaller RV's and tents. No electricity or other hook ups. Reservations Reservations can be made at https://www.recreation”
+  - restrooms = "some" · “such as tables and fire pits, are provided. Some popular dispersed camping areas may have toilets. There are extra responsibilities and skil”
+  - rules.fires = "Campfires are allowed when you are dispersed camping unless · “ampsite. Pick a tent site that is already level with good drainage. Campfire Information: Campfires are allowed when you are dispersed campi”
 
 ## US-LA: 12 random samples (records with facts; seed = the date)
 
 
 ## US-OK: 12 random samples (records with facts; seed = the date)
 
-- **Beavers Bend Resort State Park** (US-2771, state, status ok, 10 facts) · [www.travelok.com](https://www.travelok.com/state-parks/beavers-bend-state-park)
+- **Osage Hills State Park** (US-2797, state, status ok, 15 facts) · [www.travelok.com](https://www.travelok.com/state-parks/osage-hills-state-park)
   - booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Campsite””
-  - booking.url = "https://okstateparks.reserveamerica.com/beavers-bend-state- · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/beavers-bend-state-park/r/facilityDetails.do?contractCode=OK”
-  - dump_station = true · “r eight camping areas. All RV and tent sites are available for online reservations. Waste dump stations are available. Leashed pets are welc”
-  - hookups.amps = [30] · “nt Amphitheater Camp Store Campsites Concessions Credit Cards Accepted Dump Station Elec. 30 Amp Full Hookups Gift Shop Lake Access Lake/Riv”
-  - hookups.electric = true · “nt Amphitheater Camp Store Campsites Concessions Credit Cards Accepted Dump Station Elec. 30 Amp Full Hookups Gift Shop Lake Access Lake/Riv”
-  - hookups.water = true · “ma is ready to provide a grand RV adventure. Whether searching for modern sites with full electric and water hookups, to rustic outdoor spac”
-  - reservable = true · “rk Office: 580-494-6300 Lodge: 580-494-6179 Golf Course: 580-494-6456 Email Hours Weather Book A Lodge Room Book a Cabin Book a Campsite Boo”
-  - rules.pets = "Leashed pets are welcome in the park and there are cabins w · “and tent sites are available for online reservations. Waste dump stations are available. Leashed pets are welcome in the park and there are ”
-  - sites.cabin = 482 · “These round, tent-like structures are located right near the Mountain Fork River. This 3,482-acre park offers 47 cabins with kitchenettes, p”
-  - sites.tent = 50 · “ver. This 3,482-acre park offers 47 cabins with kitchenettes, plus 393 campsites and over 50 tent sites spread over eight camping areas. All”
-- **Foss State Park campground** (US-2780:hq0, state, status ok, 14 facts) · [www.travelok.com](https://www.travelok.com/state-parks/foss-state-park)
-  - booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Campsite””
-  - booking.url = "https://okstateparks.reserveamerica.com/foss-state-park/r/f · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/foss-state-park/r/facilityDetails.do?contractCode=OK&parkId=”
-  - features = "fire rings, comfort stations with showers, playgrounds and  · “-conditioned enclosed shelter meeting space, picnic areas, group picnic shelters, grills, fire rings, comfort stations with showers, playgro”
-  - hookups.amps = [30, 50] · “camping. Facilities include RV campsites, 10 of which have full-hookups. All sites offer 30-amp or 50-amp service plus water. RV sites must ”
-  - hookups.electric = true · “horseback riding, fishing and camping. Facilities include RV campsites, 10 of which have full-hookups. All sites offer 30-amp or 50-amp serv”
-  - hookups.sewer = true · “horseback riding, fishing and camping. Facilities include RV campsites, 10 of which have full-hookups. All sites offer 30-amp or 50-amp serv”
-  - hookups.water = true · “horseback riding, fishing and camping. Facilities include RV campsites, 10 of which have full-hookups. All sites offer 30-amp or 50-amp serv”
+  - booking.url = "https://okstateparks.reserveamerica.com/osage-hills-state-p · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/osage-hills-state-park/r/facilityDetails.do?contractCode=OK&”
+  - drinking_water = true · “trails closing at sundown. Water is shut off to RV sites from November 1 through April 1. Potable water is available at the campground entra”
+  - dump_station = true · “Reservations for all tent and RV sites must be made online. The park also offers a waste dump station for RVs. Visitors can camp in canvas w”
+  - fees = "$4 for ages 7 & older or | $2 for ages 6 & under" · “a holiday The pool opens Memorial Day weekend and closes in early August. Pool rates are $4 for ages 7 & older or $2 for ages 6 & under. Cas”
+  - hookups.amps = [30, 50] · “Facility Amenities Facility Amenities Campsites Credit Cards Accepted Dump Station Elec. 30 Amp Elec. 50 Amp Outdoor Grills Park Ranger Pets”
+  - hookups.electric = true · “can be found. Fishing boats are available for rental at the lake. RV sites with water and electricity hookups, as well as tent sites are ava”
+  - hookups.water = true · “her fish, can be found. Fishing boats are available for rental at the lake. RV sites with water and electricity hookups, as well as tent sit”
   - lodging_booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Cabin””
-  - lodging_booking.url = "https://okstateparks.reserveamerica.com/foss-state-park/r/f · “link “Book a Cabin” -> https://okstateparks.reserveamerica.com/foss-state-park/r/facilityDetails.do?contractCode=OK&parkId=”
-  - reservable = true · “73647 Reservation Call Center: 877-657-2757 Park Office: 580-592-4433 Email Hours Weather Book a Cabin Book a Campsite Get a Parking Pass Ad”
-- **Little Blue area at Grand Lake State Park** (US-2778, state, status ok, 7 facts) · [www.travelok.com](https://www.travelok.com/state-parks/little-blue-area-at-grand-lake-state-park)
+  - lodging_booking.url = "https://okstateparks.reserveamerica.com/osage-hills-state-p · “link “Book a Cabin” -> https://okstateparks.reserveamerica.com/osage-hills-state-park/r/facilityDetails.do?contractCode=OK&”
+- **Sequoyah Bay State Park** (US-2802, state, status ok, 10 facts) · [www.travelok.com](https://www.travelok.com/state-parks/sequoyah-bay-state-park)
   - booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Campsite””
-  - booking.url = "https://okstateparks.reserveamerica.com/grand-cherokee-stat · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/grand-cherokee-state-park/r/facilityDetails.do?contractCode=”
+  - booking.url = "https://okstateparks.reserveamerica.com/sequoyah-state-park · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/sequoyah-state-park/r/facilityDetails.do?contractCode=OK&par”
+  - dump_station = true · “portunities abound with RV sites with water and 30-amp or 50-amp electric hookups and two dump stations. Tent sites are located throughout t”
+  - hookups.amps = [30, 50] · “tay at Sequoyah Bay State Park. Camping opportunities abound with RV sites with water and 30-amp or 50-amp electric hookups and two dump sta”
+  - hookups.electric = true · “ay State Park. Camping opportunities abound with RV sites with water and 30-amp or 50-amp electric hookups and two dump stations. Tent sites”
+  - hookups.water = true · “ma is ready to provide a grand RV adventure. Whether searching for modern sites with full electric and water hookups, to rustic outdoor spac”
+  - phone = "(918) 772-2046" · “rved and paid for through the Sequoyah State Park office at 918-772-2046. Read More Activities Water Skiing Boating Fishing Swimming”
+  - reservable = true · “ter: 877-657-2757 Park Office: 918-772-2545 Park Office: 918-772-2046 Email Hours Weather Book a Campsite Get a Parking Pass Add To Trip Vie”
+  - rules.pets = "Pets Allowed" · “edit Cards Accepted Dump Station Elec. 30 Amp Elec. 50 Amp Lake Access Marina Park Ranger Pets Allowed Pets Allowed in Park Picnic Area Play”
+  - rules.quiet_hours = "11pm-7am" · “0 pm Thursday: 7:00 am - 10:00 pm Friday: 7:00 am - 10:00 pm Saturday: 7:00 am - 10:00 pm Quiet hours are from 11pm-7am Gate closes 10pm-7am”
+- **Arrowhead State Park** (US-2770, state, status ok, 10 facts) · [www.travelok.com](https://www.travelok.com/ch/state-parks/arrowhead-area-at-lake-eufaula-state-park)
+  - booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Campsite””
+  - booking.url = "https://okstateparks.reserveamerica.com/arrowhead-state-par · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/arrowhead-state-park/r/facilityDetails.do?contractCode=OK&pa”
+  - dump_station = true · “able RV sites, some of which have full hookups. Tent sites are reserved online as well. A dump station is also located onsite. The equestria”
+  - hookups.amps = [30, 50] · “ities Facility Amenities ADA Compliant Campsites Credit Cards Accepted Dump Station Elec. 30 Amp Elec. 50 Amp Full Hookups Gift Shop Grills ”
+  - hookups.electric = "some" · “well-placed sand bunkers. Arrowhead offers online reservable RV sites, some of which have full hookups. Tent sites are reserved online as we”
+  - hookups.sewer = "some" · “well-placed sand bunkers. Arrowhead offers online reservable RV sites, some of which have full hookups. Tent sites are reserved online as we”
+  - hookups.water = "some" · “well-placed sand bunkers. Arrowhead offers online reservable RV sites, some of which have full hookups. Tent sites are reserved online as we”
+  - reservable = true · “ter: 877-657-2757 Park Office: 918-339-2204 Golf Course: 918-339-2769 Email Hours Weather Book a Campsite Book a Tee Time Get a Parking Pass”
+  - restrooms = "some" · “ater and electric hookups and can be reserved online. There are many conveniently-located comfort stations in the park, and the park offers ”
+  - rules.pets = "Pets Allowed" · “on Elec. 30 Amp Elec. 50 Amp Full Hookups Gift Shop Grills Lake Access Marina Park Ranger Pets Allowed Pets Allowed in Park Picnic Area Play”
+- **McGee Creek State Park** (US-2795, state, status ok, 12 facts) · [www.travelok.com](https://www.travelok.com/state-parks/mcgee-creek-state-park)
+  - booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Campsite””
+  - booking.url = "https://okstateparks.reserveamerica.com/mcgee-creek-state-p · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/mcgee-creek-state-park/r/facilityDetails.do?contractCode=OK&”
+  - dump_station = true · “electric service, a four-lane boat ramp, courtesy dock, comfort stations with showers, a dump station, fishing pier, playground and swim bea”
+  - hookups.amps = [30, 50] · “ities Facility Amenities ADA Compliant Campsites Credit Cards Accepted Dump Station Elec. 30 Amp Elec. 50 Amp Gift Shop Grills Handicapped P”
+  - hookups.electric = true · “ions being made online. The Buster Hight Area features paved camping sites with water and electric service, a four-lane boat ramp, courtesy ”
+  - hookups.water = true · “l reservations being made online. The Buster Hight Area features paved camping sites with water and electric service, a four-lane boat ramp,”
+  - reservable = true · “5798 S McGee Creek Lake Rd Atoka , OK 74525 Park Office: 580-889-5822 Email Hours Weather Book a Campsite Add To Trip View Your Trip Weather”
+  - restrooms = "yes (kind not stated)" · “aved camping sites with water and electric service, a four-lane boat ramp, courtesy dock, comfort stations with showers, a dump station, fis”
+  - rules.pets = "Pets are allowed to stay in the huts for a small fee" · “e available outside each hut. Restrooms with showers are located within walking distance. Pets are allowed to stay in the huts for a small f”
+  - season = "year-round" · “m Friday: 8:30 am - 4:30 pm Saturday: 8:30 am - 4:30 pm Park office hours listed. Park is open year round - seven days a week, 24 hours a da”
+- **Skipout Lake campground (USFS)** (intake-US-12739, agency (outside research camping-us-oct31), status ok, 8 facts) · [www.travelok.com](https://www.travelok.com/listings/view.profile/id.6901)
+  - booking.url = "https://www.travelok.com/listings/view.profile/id.6901" · “booking link from our outside research (camping, in the park) row (official system www.travelok.com)”
+  - drinking_water = true · “National Grasslands. Amenities include a boat ramp, picnic tables, two vault toilets and potable water. Free camping is allowed, but no hook”
+  - hookups.amps = [50] · “fit your needs. Park your big rig in a convenient pull-thru or back-in site, enjoy 30- or 50-amp service, and let your Oklahoma vacation beg”
+  - hookups.electric = false · “ramp, picnic tables, two vault toilets and potable water. Free camping is allowed, but no hookups are available. Read More Photos Amenities ”
+  - hookups.water = true · “ma is ready to provide a grand RV adventure. Whether searching for modern sites with full electric and water hookups, to rustic outdoor spac”
+  - reservable = true · “tate offer varied types of unconventional stays including yurts, teepees and tiny cabins. Reserve your spot and make your stay as unique as ”
+  - restrooms = "vault" · “f the Black Kettle National Grasslands. Amenities include a boat ramp, picnic tables, two vault toilets and potable water. Free camping is a”
+  - season = "year-round" · “y 47 Reydon , OK 73628 Phone: 580-497-2143 Website Hours Add To Trip View Your Trip Hours Open year round. Close The Skipout Lake Recreation”
+- **Natural Falls State Park** (US-2796, state, status ok, 7 facts) · [www.travelok.com](https://www.travelok.com/state-parks/natural-falls-state-park)
+  - booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Campsite””
+  - booking.url = "https://okstateparks.reserveamerica.com/natural-falls-state · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/natural-falls-state-park/r/facilityDetails.do?contractCode=O”
   - hookups.amps = [50] · “fit your needs. Park your big rig in a convenient pull-thru or back-in site, enjoy 30- or 50-amp service, and let your Oklahoma vacation beg”
   - hookups.electric = true · “ma is ready to provide a grand RV adventure. Whether searching for modern sites with full electric and water hookups, to rustic outdoor spac”
   - hookups.water = true · “ma is ready to provide a grand RV adventure. Whether searching for modern sites with full electric and water hookups, to rustic outdoor spac”
-  - reservable = true · “k Address: State Hwy 28 E Disney , OK 74340 Park Office: 918-435-8066 Email Hours Weather Book a Campsite Add To Trip View Your Trip Weather”
-  - rules.pets = "Leashed pets are welcome, and the park is open 24 hours a d · “ren, as well as 30 primitive tent camping spots nestled between the trees and Grand Lake. Leashed pets are welcome, and the park is open 24 ”
-- **Raymond Gary State Park** (US-2798, state, status ok, 14 facts) · [www.travelok.com](https://www.travelok.com/state-parks/raymond-gary-state-park)
-  - booking.how = "online: v2.reservationkey.com" · “link “Book a Campsite””
-  - booking.url = "https://v2.reservationkey.com/RGSP/" · “link “Book a Campsite” -> https://v2.reservationkey.com/RGSP/”
-  - hookups.amps = [30, 50] · “ities Facility Amenities ADA Compliant Campsites Credit Cards Accepted Dump Station Elec. 30 Amp Elec. 50 Amp Full Hookups Lake Access Lodgi”
-  - hookups.electric = true · “ng and swimming. Camping and picnic facilities are available and include 10 RV sites with full hookups, nine sites with water and electric h”
-  - hookups.sewer = true · “ng and swimming. Camping and picnic facilities are available and include 10 RV sites with full hookups, nine sites with water and electric h”
-  - hookups.water = true · “ng and swimming. Camping and picnic facilities are available and include 10 RV sites with full hookups, nine sites with water and electric h”
-  - lodging_booking.how = "online: v2.reservationkey.com" · “link “Book Cabins Lodge””
-  - lodging_booking.url = "https://v2.reservationkey.com/RGSP/" · “link “Book Cabins Lodge” -> https://v2.reservationkey.com/RGSP/”
-  - reservable = true · “wson , OK 74735 Park Office: 580-406-4847 Email Website Hours Weather Book Cabins & Lodge Book a Campsite Add To Trip View Your Trip Weather”
-  - restrooms = "some" · “ps and approximately 100 tent sites. Raymond Gary State Park also offers group pavilions, comfort stations with showers, a playground, swim ”
-- **Cedar Lake Recreation Area** (intake-US-11669, agency (outside research camping-us-oct31), status ok, 4 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/ouachita/recarea/?recid=10747)
-  - booking.url = "https://www.fs.usda.gov/recarea/ouachita/recarea/?recid=107 · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
-  - hookups.electric = true · “es can be found at developed campgrounds ranging from rustic tent pads to full-service RV hookups. Enjoy exceptional water-based recreation ”
-  - map.date_how = "web page, no date in the link" · “link “Arkansas County Burn Ban Map””
-  - map.url = "https://mip.agri.arkansas.gov/agtools/Forestry/Fire_Info" · “link “Arkansas County Burn Ban Map” -> https://mip.agri.arkansas.gov/agtools/Forestry/Fire_Info”
-- **Lake Eufaula State Park** (US-2789, state, status ok, 9 facts) · [www.travelok.com](https://www.travelok.com/at/state-parks/lake-eufaula-state-park)
-  - booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Campsite””
-  - booking.url = "https://okstateparks.reserveamerica.com/lake-eufaula-state- · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/lake-eufaula-state-park/r/facilityDetails.do?contractCode=OK”
-  - features = "fire pit and a lantern holder outdoors" · “Honeymoon yurt has a queen-sized log canopy bed indoors and two picnic tables, a grill, a fire pit and a lantern holder outdoors. Although t”
-  - hookups.amps = [30, 50] · “ADA Compliant Amphitheater Camp Store Campsites Credit Cards Accepted Dump Station Elec. 30 Amp Elec. 50 Amp Full Hookups Gift Shop Grills H”
-  - hookups.electric = true · “the park&rsquo;s three yurts, which come with heat/ac, bedding, a microwave, mini fridge, electrical outlets and an LED TV. The Longhorn Loo”
-  - hookups.water = true · “ma is ready to provide a grand RV adventure. Whether searching for modern sites with full electric and water hookups, to rustic outdoor spac”
-  - reservable = true · “74426 Reservation Call Center: 877-657-2757 Park Office: 918-689-5311 Email Hours Weather Book a Campsite Get a Parking Pass Add To Trip Vie”
-  - restrooms = "some" · “and 1000 yards from the Longhorn Loop Honeymoon yurt. Pets are not allowed inside yurts. Comfort stations are scattered throughout the park.”
-  - rules.pets = "Pets are not allowed inside yurts" · “n Loop and Hummingbird Beach yurts, and 1000 yards from the Longhorn Loop Honeymoon yurt. Pets are not allowed inside yurts. Comfort station”
+  - reservable = true · “74338 Reservation Call Center: 877-657-2757 Park Office: 918-422-5802 Email Hours Weather Book a Campsite Get a Parking Pass Add To Trip Vie”
+  - season = "year-round" · “seven days a week. Designated campers are allowed in the park 24 hours a day. The park is open year round. Close”
+- **Salt Plains State Park** (US-2783, state, status ok, 11 facts) · [okstateparks.reserveamerica.com](https://okstateparks.reserveamerica.com/camping/salt-plains-state-park/r/campgroundDetails.do?contractCode=OK&parkId=1260035)
+  - booking.how = "online: okstateparks.reserveamerica.com" · “link “””
+  - booking.url = "https://okstateparks.reserveamerica.com/welcome.do" · “link “” -> https://okstateparks.reserveamerica.com/welcome.do”
+  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = "some" · “ls. Nathan Boone Equestrian Camp features two sites with a double corral. High lining and electric fencing is permitted for the other sites ”
+  - hookups.water = false · “n $110.00 *Displayed rates do not reflect discounts, attribute fees (electrical hookups / water hookups), taxes or incremental charges **Wee”
+  - reservable = true · “can be made up to 11 Month(s) in advance. Parking Pass Tue Nov 03 2026 - Sat Oct 02 2027 Reservations can be made for today and can be made ”
+  - restrooms = "yes (kind not stated)" · “site. Online reservations must be made for all RV and tent campsites. Nearby Attractions: Comfort stations with showers are located near the”
+  - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Occupants m”
+  - season = "April 1 through October 15" · “lable six miles west of Jet or three miles south of Cherokee. The crystal digging area is open from April 1 to October 15 from sunrise to su”
+  - showers = true · “ons must be made for all RV and tent campsites. Nearby Attractions: Comfort stations with showers are located near the sites and throughout ”
 - **Keystone State Park campground** (US-2788:hq0, state, status ok, 15 facts) · [www.travelok.com](https://www.travelok.com/state-parks/keystone-state-park)
   - booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Campsite””
   - booking.url = "https://okstateparks.reserveamerica.com/keystone-state-park · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/keystone-state-park/r/facilityDetails.do?contractCode=OK&par”
@@ -2564,25 +2542,39 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - lodging_booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Cabin””
   - lodging_booking.url = "https://okstateparks.reserveamerica.com/keystone-state-park · “link “Book a Cabin” -> https://okstateparks.reserveamerica.com/keystone-state-park/r/facilityDetails.do?contractCode=OK&par”
   - reservable = true · “74063 Reservation Call Center: 877-657-2757 Park Office: 918-295-3310 Email Hours Weather Book a Cabin Book a Campsite Get a Parking Pass Ad”
-- **Cherokee Landing State Park campground** (US-2775:hq0, state, status ok, 8 facts) · [www.travelok.com](https://www.travelok.com/ch/state-parks/cherokee-landing-state-park)
+- **Lake Texoma State Park** (US-2791, state, status ok, 11 facts) · [www.travelok.com](https://www.travelok.com/state-parks/lake-texoma-state-park)
   - booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Campsite””
-  - booking.url = "https://okstateparks.reserveamerica.com/cherokee-landing-st · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/cherokee-landing-state-park/r/facilityDetails.do?contractCod”
-  - dump_station = true · “ature electric and water and can accommodate rigs up to 40 feet long. The park also has a dump station, rentable shelters and group RV camp.”
-  - hookups.amps = [30, 50] · “ity Amenities ADA Compliant Camp Store Campsites Credit Cards Accepted Dump Station Elec. 30 Amp Elec. 50 Amp Full Hookups Gift Shop Grills ”
-  - hookups.electric = true · “h water events, so RV camping is relegated to the north end of the park. RV sites feature electric and water and can accommodate rigs up to ”
-  - hookups.water = true · “h water events, so RV camping is relegated to the north end of the park. RV sites feature electric and water and can accommodate rigs up to ”
-  - reservable = true · “74451 Reservation Call Center: 877-657-2757 Park Office: 918-457-5716 Email Hours Weather Book a Campsite Get a Parking Pass Add To Trip Vie”
-  - rules.pets = "Pets Allowed" · “Amp Full Hookups Gift Shop Grills Handicapped Parking Lake Access Office WiFi Park Ranger Pets Allowed Pets Allowed in Park Picnic Area Play”
-- **Quartz Mountain State Park** (US-10203, state, status ok, 9 facts) · [okstateparks.reserveamerica.com](https://okstateparks.reserveamerica.com/camping/quartz-mountain-state-park/r/campgroundDetails.do?contractCode=OK&parkId=1260042)
+  - booking.url = "https://okstateparks.reserveamerica.com/lake-texoma-state-p · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/lake-texoma-state-park/r/facilityDetails.do?contractCode=OK&”
+  - hookups.amps = [30, 50] · “ers an open grass area with 16 electric clusters accommodating up to four units each with 30 amp electric and water service. Lake Texoma Sta”
+  - hookups.electric = "some" · “mpsites, both RV and tent, must be made online prior to occupying any site. RV sites have full hook-ups with water, sewer and electric and s”
+  - hookups.sewer = true · “mpsites, both RV and tent, must be made online prior to occupying any site. RV sites have full hook-ups with water, sewer and electric and s”
+  - hookups.water = "some" · “mpsites, both RV and tent, must be made online prior to occupying any site. RV sites have full hook-ups with water, sewer and electric and s”
+  - reservable = true · “73439 Reservation Call Center: 877-657-2757 Park Office: 580-564-2566 Email Hours Weather Book a Campsite Get a Parking Pass Add To Trip Vie”
+  - restrooms = "yes (kind not stated)" · “camping, picnic areas, wildlife viewing opportunities and hiking. The park also features comfort stations with showers, boat ramps and a sma”
+  - rules.pets = "Pets Allowed" · “. 50 Amp Full Hookups Gift Shop Grills Handicapped Parking Lake Access Marina Park Ranger Pets Allowed Pets Allowed in Park Picnic Area Pull”
+  - season = "year-round" · “:00 am - 5:00 pm Office hours are listed above. Campgrounds are open to 24 hours per day, year round. Park rangers or campground hosts will ”
+- **Black Mesa State Park** (US-2773, state, status ok, 14 facts) · [okstateparks.reserveamerica.com](https://okstateparks.reserveamerica.com/camping/black-mesa-state-park/r/campgroundDetails.do?contractCode=OK&parkId=1260033)
   - booking.how = "online: okstateparks.reserveamerica.com" · “link “””
   - booking.url = "https://okstateparks.reserveamerica.com/welcome.do" · “link “” -> https://okstateparks.reserveamerica.com/welcome.do”
+  - drinking_water = true · “ke Road. All sites have a grassy area for tents, some with small juniper trees for shade. Drinking water is nearby and a comfort station is ”
+  - dump_station = true · “nearby. RV sites are a mix of cement pads and gravel with water and electric amenities. A dump station is located near the comfort station. ”
+  - fees = "$16 per night for tent sites | $9 per night attribute fee a · “cial Policy Applicable to this Facility Base rate for camping at Black Mesa State Park is $16 per night for tent sites. RV Semi sites have a”
   - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
-  - hookups.electric = false · “ler sites Group sites Horse sites Boat sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
-  - hookups.water = false · “0-$225.00 *Displayed rates do not reflect discounts, attribute fees (electrical hookups / water hookups), taxes or incremental charges **Wee”
-  - reservable = true · “can be made up to 11 Month(s) in advance. Parking Pass Tue Nov 03 2026 - Sat Oct 02 2027 Reservations can be made for today and can be made ”
-  - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Occupants m”
-  - season = "year-round" · “mises an oasis of family fun in southwestern Oklahoma. From boating to ... [more] Status: Open year round. Season Dates Max Reservation Wind”
-  - sites.total = 152 · “needs Pets allowed Boat sites Options Common Attributes Group Apply Filter Campground Map 152 site(s) found ALL (152) Group Camp Area (2) RV”
+  - hookups.electric = "some" · “ation with showers is nearby. RV sites are a mix of cement pads and gravel with water and electric amenities. A dump station is located near”
+  - hookups.water = "some" · “State Park is adjacent to Lake Carl Etling and offers online reservable RV campsites with water and electric hookups, tent campsites, picnic”
+  - reservable = true · “ervation Window: View all Booking Window Primitive Tent Tue Nov 03 2026 - Sat Oct 02 2027 Reservations can be made for today and can be made”
+  - restrooms = "yes (kind not stated)" · “water and electric hookups, tent campsites, picnic facilities, boat ramps, playground and restrooms with showers. Black Mesa Nature Preserve”
+- **Greenleaf State Park campground** (US-2784:hq0, state, status ok, 13 facts) · [www.travelok.com](https://www.travelok.com/state-parks/greenleaf-state-park)
+  - booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Campsite””
+  - booking.url = "https://okstateparks.reserveamerica.com/greenleaf-state-par · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/greenleaf-state-park/r/facilityDetails.do?contractCode=OK&pa”
+  - checkin = "4pm" · “pm Friday: 9:00 am - 5:30 pm Saturday: 9:00 am - 5:30 pm Office hours posted above. Cabin check-in: 4pm Cabin check-out: 11am Splash pad is ”
+  - checkout = "11am" · “5:30 pm Saturday: 9:00 am - 5:30 pm Office hours posted above. Cabin check-in: 4pm Cabin check-out: 11am Splash pad is open daily from 11am-”
+  - hookups.amps = [30, 50] · “re not included with a cabin stay. In addition, the park features RV campsites, some with 50 amp electric and full hookups, as well as tent ”
+  - hookups.electric = "some" · “included with a cabin stay. In addition, the park features RV campsites, some with 50 amp electric and full hookups, as well as tent campsit”
+  - hookups.sewer = "some" · “a cabin stay. In addition, the park features RV campsites, some with 50 amp electric and full hookups, as well as tent campsites. All RV and”
+  - hookups.water = "some" · “a cabin stay. In addition, the park features RV campsites, some with 50 amp electric and full hookups, as well as tent campsites. All RV and”
+  - lodging_booking.how = "online: okstateparks.reserveamerica.com" · “link “Book Cabins Lodge””
+  - lodging_booking.url = "https://okstateparks.reserveamerica.com/greenleaf-state-par · “link “Book Cabins Lodge” -> https://okstateparks.reserveamerica.com/greenleaf-state-park/r/facilityDetails.do?contractCode=OK&pa”
 - **Fort Cobb State Park** (US-2779, state, status ok, 10 facts) · [www.travelok.com](https://www.travelok.com/state-parks/fort-cobb-state-park/maps-and-resources)
   - booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Campsite””
   - booking.url = "https://okstateparks.reserveamerica.com/fort-cobb-state-par · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/fort-cobb-state-park/r/facilityDetails.do?contractCode=OK&pa”
@@ -2594,26 +2586,6 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - map.date_how = "PDF, no date in the link" · “link “View Fort Cobb Lake Map””
   - map.url = "https://d1pk12b7bb81je.cloudfront.net/okdataengine/appmedia · “link “View Fort Cobb Lake Map” -> https://d1pk12b7bb81je.cloudfront.net/okdataengine/appmedia/documents/1/1883/Ft_Cobb.pdf”
   - reservable = true · “ll Center: 877-657-2757 Park Office: 405-643-2249 Golf Course: 405-643-2398 Email Weather Book a Cabin Book a Campsite Book a Tee Time Get a”
-- **Skipout Lake campground (USFS)** (intake-US-12739, agency (outside research camping-us-oct31), status ok, 8 facts) · [www.travelok.com](https://www.travelok.com/listings/view.profile/id.6901)
-  - booking.url = "https://www.travelok.com/listings/view.profile/id.6901" · “booking link from our outside research (camping, in the park) row (official system www.travelok.com)”
-  - drinking_water = true · “National Grasslands. Amenities include a boat ramp, picnic tables, two vault toilets and potable water. Free camping is allowed, but no hook”
-  - hookups.amps = [50] · “fit your needs. Park your big rig in a convenient pull-thru or back-in site, enjoy 30- or 50-amp service, and let your Oklahoma vacation beg”
-  - hookups.electric = false · “ramp, picnic tables, two vault toilets and potable water. Free camping is allowed, but no hookups are available. Read More Photos Amenities ”
-  - hookups.water = true · “ma is ready to provide a grand RV adventure. Whether searching for modern sites with full electric and water hookups, to rustic outdoor spac”
-  - reservable = true · “tate offer varied types of unconventional stays including yurts, teepees and tiny cabins. Reserve your spot and make your stay as unique as ”
-  - restrooms = "vault" · “f the Black Kettle National Grasslands. Amenities include a boat ramp, picnic tables, two vault toilets and potable water. Free camping is a”
-  - season = "year-round" · “y 47 Reydon , OK 73628 Phone: 580-497-2143 Website Hours Add To Trip View Your Trip Hours Open year round. Close The Skipout Lake Recreation”
-- **Sequoyah State Park** (US-2803, state, status ok, 11 facts) · [www.travelok.com](https://www.travelok.com/state-parks/sequoyah-state-park)
-  - booking.how = "online: okstateparks.reserveamerica.com" · “link “Book a Campsite””
-  - booking.url = "https://okstateparks.reserveamerica.com/sequoyah-state-park · “link “Book a Campsite” -> https://okstateparks.reserveamerica.com/sequoyah-state-park/r/facilityDetails.do?contractCode=OK&par”
-  - hookups.amps = [30, 50] · “lity Amenities ADA Compliant ADA Rooms Campsites Credit Cards Accepted Dump Station Elec. 30 Amp Elec. 50 Amp Full Hookups Grills Handicappe”
-  - hookups.electric = "some" · “ions. The Creek, Choctaw, and Paradise Cove areas offer tent camping. RV camping includes full hook-ups at the Choctaw and Seminole campgrou”
-  - hookups.sewer = true · “ions. The Creek, Choctaw, and Paradise Cove areas offer tent camping. RV camping includes full hook-ups at the Choctaw and Seminole campgrou”
-  - hookups.water = "some" · “ions. The Creek, Choctaw, and Paradise Cove areas offer tent camping. RV camping includes full hook-ups at the Choctaw and Seminole campgrou”
-  - phone = "(918) 772-2545" · “ee Forks Nature Center Open Tuesday - Sunday: 9am-4pm Phone (918) 772-2545 Address: 19460 Park 80 Park quiet hours are from 11pm to 6a”
-  - reservable = true · “OK 74441 Park Office: 918-772-2545 Email Booking Email Hours Weather Book Cabins & Lodge Book a Campsite Book a Tee Time Book an Event Get a”
-  - rules.pets = "Pets are allowed in select cottages for a small fee" · “odge at Sequoyah State Park include a bunkhouse with a great room and kitchen facilities. Pets are allowed in select cottages for a small fe”
-  - rules.quiet_hours = "11pm to 6am" · “re Center Open Tuesday - Sunday: 9am-4pm Phone (918) 772-2545 Address: 19460 Park 80 Park quiet hours are from 11pm to 6am. The swimming poo”
 
 ## US-TX: 12 random samples (records with facts; seed = the date)
 
@@ -2623,6 +2595,9 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 
 ## US-NE: 12 random samples (records with facts; seed = the date)
 
+- **Elkhorn Crossing State Park** (US-4012, state, status ok (browser), 2 facts) · [digital.outdoornebraska.gov](https://digital.outdoornebraska.gov/i/1542421-fishing-guide-2026/57)
+  - booking.url = "https://outdoornebraska.gov/parks/reservations/" · “booking link from our campstate-manual row (official system outdoornebraska.gov)”
+  - hookups.electric = true · “utlet Canal (Sheet 18), Sutherland Reservoir SRA (Sheet 18). Black Bass - Nebraska Public Power District Canal from Sutherland Reservoir out”
 - **Union Pacific State Recreation Area** (US-5677, state, status ok, 8 facts) · [digital.outdoornebraska.gov](https://digital.outdoornebraska.gov/i/1545147-state-parks-guide-2026/93)
   - booking.how = "online: digital.outdoornebraska.gov" · “link “Box Butte Reservoir STATE RECREATION AREA””
   - booking.url = "https://digital.outdoornebraska.gov/i/1545147/9" · “link “Box Butte Reservoir STATE RECREATION AREA” -> https://digital.outdoornebraska.gov/i/1545147/9”
@@ -2635,16 +2610,13 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 - **Walnut Creek State Recreation Area** (US-4036, state, status ok, 2 facts) · [digital.outdoornebraska.gov](https://digital.outdoornebraska.gov/i/1542421-fishing-guide-2026/51)
   - booking.url = "https://outdoornebraska.gov/parks/reservations/" · “booking link from our campstate-manual row (official system outdoornebraska.gov)”
   - hookups.electric = true · “D. Fish kill in 2025 BLG, CCF, CRP, LMB, RSF, SAE Wilson Creek 2X WMA Otoe (48) 15 acres. Electric motor or nonpowered boats only. Owned by ”
-- **Natick Campground; Steer Creek Campground; Toadstool Geological Park and Campground; Soldier Creek Campground; Roberts Tract Camping Area/Trailhead; Red Cloud Campground; French Creek Camping Area; Be** (intake-US-3372, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=10610)
+- **Natick Campground; Steer Creek Campground; Toadstool Geological Park and Campground; Soldier Creek Campground; Roberts Tract Camping Area/Trailhead; Red Cloud Campground; French Creek Camping Area; Be** (intake-US-3371, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=10610)
   - booking.url = "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=106 · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
   - features = "fire rings, and a vault toilet" · “Site Open This small, developed campground is located in a quiet area with picnic tables, fire rings, and a vault toilet. The campground pro”
   - reservable = true · “gov. Here is a a map of the Bessey Recreation Complex that illustrates the sites that are reservable. Please note that these are… Black Hill”
   - restrooms = "vault" · “ll, developed campground is located in a quiet area with picnic tables, fire rings, and a vault toilet. The campground provides access to th”
   - season = "year-round" · “Open This small pond, located just north of the Middle Loup River, is open to fishing all year round. It has ample parking. Nebraska Game an”
-- **Elkhorn Crossing State Park** (US-4012, state, status ok (browser), 2 facts) · [digital.outdoornebraska.gov](https://digital.outdoornebraska.gov/i/1542421-fishing-guide-2026/57)
-  - booking.url = "https://outdoornebraska.gov/parks/reservations/" · “booking link from our campstate-manual row (official system outdoornebraska.gov)”
-  - hookups.electric = true · “utlet Canal (Sheet 18), Sutherland Reservoir SRA (Sheet 18). Black Bass - Nebraska Public Power District Canal from Sutherland Reservoir out”
-- **Natick Campground; Steer Creek Campground; Toadstool Geological Park and Campground; Soldier Creek Campground; Roberts Tract Camping Area/Trailhead; Red Cloud Campground; French Creek Camping Area; Be** (intake-US-3371, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=10610)
+- **Natick Campground; Steer Creek Campground; Toadstool Geological Park and Campground; Soldier Creek Campground; Roberts Tract Camping Area/Trailhead; Red Cloud Campground; French Creek Camping Area; Be** (intake-US-3372, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=10610)
   - booking.url = "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=106 · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
   - features = "fire rings, and a vault toilet" · “Site Open This small, developed campground is located in a quiet area with picnic tables, fire rings, and a vault toilet. The campground pro”
   - reservable = true · “gov. Here is a a map of the Bessey Recreation Complex that illustrates the sites that are reservable. Please note that these are… Black Hill”
@@ -2653,34 +2625,19 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 
 ## US-CO: 12 random samples (records with facts; seed = the date)
 
-- **Campsite(s) 218** (US-1243:81, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+- **Cabin #4** (US-1219:13, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
   - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
   - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
   - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
-- **Campsite(s) 248** (US-1243:53, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+- **Campsite(s) 415** (US-1243:27, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
   - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
   - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
   - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
-- **Big Meadows Reservoir SWA designated camping area(s)** (intake-US-9614, agency (outside research camping-us-oct31), status ok, no campground facts in the page text: needs browser?, 6 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-wildlife-areas/big-meadows-reservoir-swa)
-  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
-  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
-  - map.date_how = "PDF, no date in the link" · “link “Download Map””
-  - map.url = "https://cpw.state.co.us/sites/default/files/dam/zhqdrzld8t/ · “link “Download Map” -> https://cpw.state.co.us/sites/default/files/dam/zhqdrzld8t/bigmeadowsreservoirswa_geo.pdf”
-  - phone = "(719) 587-6900" · “ing Guides Available Contact: Area CPW Office: Monte Vista, 719-587-6900 An image is coming soon. Big Meadows Reservoir SWA Mineral”
-  - phone_hint = "(719) 587-6900" · “menities: Fishing Camping Hunting Guides Available Contact: Area CPW Office: Monte Vista, 719-587-6900 An image is coming soon. Big Meadows ”
-- **Campsite(s) 237** (US-1243:60, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+- **Campsite(s) 205** (US-1243:40, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
   - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
   - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
   - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
-- **Agnes Creek** (US-1243:20, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
-  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
-  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
-  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
-- **Campsite(s) 243** (US-1243:49, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
-  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
-  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
-  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
-- **A Loop** (US-1212:3, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+- **Campsite(s) 421** (US-1243:28, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
   - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
   - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
   - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
@@ -2688,7 +2645,19 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
   - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
   - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
-- **Caddoa** (US-1224:1, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+- **Campsite(s) 214** (US-1243:82, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
+- **Cabin 4** (US-1249:8, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
+- **Aspen Meadow - Meadow Loop** (US-1219:11, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
+- **Arboles Point** (US-1231:4, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
   - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
   - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
   - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
@@ -2696,53 +2665,43 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
   - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
   - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
-- **Sage Campground** (intake-US-9596, agency (outside research camping-us-oct31), status ok, 7 facts) · [www.recreation.gov](https://www.recreation.gov/camping/poi/271732)
-  - booking.how = "online: www.recreation.gov" · “link “North Sand Hills Ohv Area””
-  - booking.url = "https://www.recreation.gov/camping/gateways/16697" · “link “North Sand Hills Ohv Area” -> https://www.recreation.gov/camping/gateways/16697”
-  - features = "fire ring, and tent pad" · “und has two vault toilets and 13 individual pull-through sites, each with a picnic table, fire ring, and tent pad. In addition to the develo”
-  - phone = "(970) 724-3000" · “15000000000, -106.22282000000000 Contact & Resources Phone: (970) 724-3000 Additional Information: Additional Information BLM North Sa”
-  - restrooms = "vault" · “d Hills Campground was installed in 2011 to accommodate large RVs. The campground has two vault toilets and 13 individual pull-through sites”
-  - season = "December 15 through April 15" · “is very popular, especially on holiday weekends during the summer. The area is seasonally closed to motorized use from December 15 to April ”
-  - sites.rv = 13 · “was installed in 2011 to accommodate large RVs. The campground has two vault toilets and 13 individual pull-through sites, each with a picni”
-- **Cabin #2** (US-1219:15, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+- **213 T** (US-1243:48, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
+- **Campsite(s) 432-439** (US-1243:30, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
   - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
   - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
   - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
 
 ## US-WY: 12 random samples (records with facts; seed = the date)
 
+- **North Boulder Lake Campground** (intake-US-6218, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [www.recreation.gov](https://www.recreation.gov/camping/poi/261703)
+  - booking.how = "online: www.recreation.gov" · “link “Boulder Lake Recreation Area””
+  - booking.url = "https://www.recreation.gov/camping/gateways/2238" · “link “Boulder Lake Recreation Area” -> https://www.recreation.gov/camping/gateways/2238”
+  - features = "fire rings, and five picnic tables" · “est end of Boulder Lake. The campground has five sites with one double vault toilet, five fire rings, and five picnic tables. Camp, RV, and ”
+  - phone = "(307) 367-5300" · “61800000000, -109.73174100000000 Contact & Resources Phone: 307-367-5300 Additional Information: Additional Information BLM Wyoming”
+  - restrooms = "vault" · “cated on the northwest end of Boulder Lake. The campground has five sites with one double vault toilet, five fire rings, and five picnic tab”
+- **WGFD primitive camping (no developed campground)** (intake-US-6110, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 3 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Rawhide)
+  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Rawhide" · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
+  - restrooms = "yes (kind not stated)" · “shing, Hunting, Camping, Hiking, Floating. Wildlife Viewing Amenities Handicap Accessible Comfort Stations, Hunting blinds with priority giv”
+  - season = "year-round" · “s: Walk in Hunting Species Profiles Wyoming Wildlife Story Rawhide Print GeoPDF Area Open Open year-round Fire Ban in Effect. Area-specific ”
+- **WGFD primitive camping (no developed campground)** (intake-US-6212, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Whiskey-Basin)
+  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Whiskey-Basin" · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
+  - season = "year-round" · “. 1 - May 15 Access Exceptions Closure is limited to vehicles only. Foot and horse access open year-round Recreation Fishing, Hunting, Trapp”
 - **WGFD primitive camping (no developed campground)** (intake-US-6179, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Ocean-Lake)
   - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Ocean-Lake" · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
   - season = "year-round" · “cies Profiles Wyoming Wildlife Story Ocean Lake Print GeoPDF Area Open Ocean Lake WHMA is open year-round Area-specific Regulations Please r”
-- **WGFD primitive camping (no developed campground)** (intake-US-6118, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Tom-Thorne-Beth-Williams)
-  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Tom-Thorne-Bet · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
-  - season = "year-round" · “ming Wildlife Story Tom Thorne/Beth Williams Print GeoPDF Area Open Foot and horse access open year-round THIS AREA OPENS TO MOTORIZED VEHIC”
-- **Miracle Mile primitive camping areas (11)** (intake-US-12718, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [www.usbr.gov](https://www.usbr.gov/gp/recreation/korrrec.html)
-  - booking.how = "online: www.usbr.gov" · “link “Reservoirs, Dams Hydropower””
-  - booking.url = "https://www.usbr.gov/gp/lakes_reservoirs/index.html" · “link “Reservoirs, Dams Hydropower” -> https://www.usbr.gov/gp/lakes_reservoirs/index.html”
-  - restrooms = "yes (kind not stated)" · “voir. Rainbow trout stocked annually in the Miracle Mile. A barrier-free fishing pier and restroom are located at the Miracle Mile Kortes Re”
-  - showers = true · “mpsites 0 Tent Only Campsites 0 RV Hookups 0 Mobile Home Parks 0 Mobile Home Sites 0 Camp Shower Facilities no Picnic Areas 0 Picnic Tables ”
-- **WGFD primitive camping (no developed campground)** (intake-US-6108, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Table-Mountain)
-  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Table-Mountain · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
-  - season = "year-round" · “ofiles Wyoming Wildlife Story Table Mountain Print GeoPDF Area Open Foot and horse access open year-round THIS AREA OPENS TO MOTORIZED VEHIC”
-- **WGFD primitive camping (no developed campground)** (intake-US-10808, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Soda-Lake)
-  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Soda-Lake" · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
-  - rules.fires = "firewood prohibited" · “ired. Soda Lake wetlands closed May 1 - July 1 for nesting/brooding waterfowl. Cutting of firewood prohibited Seasonal Closure Dec. 1- May 1”
-- **WGFD primitive camping (no developed campground)** (intake-US-6112, agency (outside research camping-us-oct31), status ok, 5 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Cottonwood-Draw)
-  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Cottonwood-Dra · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
-  - hookups.electric = true · “voir with a dam along the Laramie River that supplies cooling water for the Laramie River Power Plant. Through a cooperative agreement betwe”
-  - restrooms = "vault" · “fishing, boating, swimming and water skiing. Public facilities, including parking areas, vault toilets, and boat ramps, are provided on the ”
-  - rules.fires = "open fires and fireworks are prohibited" · “fe Habitat Management Area. No Recreational Shooting, Off Road Vehicle use is prohibited; open fires and fireworks are prohibited. Seasonal ”
-  - season = "year-round" · “in Hunting Species Profiles Wyoming Wildlife Story Cottonwood Draw Print GeoPDF Area Open Open year-round Open year round. Fire Ban in Effec”
-- **Wick/Beumee WHMA primitive camping sites (10)** (intake-US-6126, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 3 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/wick-brothers-beumee)
-  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/wick-brothers- · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
-  - restrooms = "yes (kind not stated)" · “are four parking and 10 camping sites at various spots. Two of the sites contain outdoor restroom facilities but no running water. Also, a r”
-  - season = "year-round" · “SOUTH OF I-80: opened to human presence May 16 @ 8 AM trough Nov 30. LANDS NORTH OF I-80: Open year-round Area-specific Regulations Please r”
-- **WGFD primitive camping (no developed campground)** (intake-US-6109, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 3 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Springer-Bump-Sullivan)
-  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Springer-Bump- · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
-  - restrooms = "yes (kind not stated)" · “ng, Wildlife Viewing, Boating Pheasant Release Dates Oct. 14 - Nov 12. Amenities Parking, Comfort Stations, Boat Ramp, Hunting blinds with p”
-  - season = "year-round" · “yoming Wildlife Story Springer/Bump Sullivan Print GeoPDF Area Open Foot and horse access open year-round. THIS AREA OPENS TO MOTORIZED VEHI”
-- **Teton Reservoir Campsite 5; Teton Reservoir Campground; Teton Reservoir Campsite 4; Teton Reservoir Campsite 1; Teton Reservoir Campsite 3; +1 more** (intake-US-10885, agency (outside research camping-us-oct31), status ok, 10 facts) · [www.blm.gov](https://www.blm.gov/visit/teton-reservoir-recreation-site)
+- **WGFD primitive camping (no developed campground)** (intake-US-6233, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Greys-River)
+  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Greys-River" · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
+  - rules.fires = "Firewood cutting is prohibited" · “otor vehicles are restricted to roads marked with a white arrow. Certified weed free hay. Firewood cutting is prohibited Seasonal Closure De”
+- **WGFD primitive camping (no developed campground)** (intake-US-10804, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Chain-Lakes)
+  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Chain-Lakes" · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
+  - season = "year-round" · “alk in Hunting Species Profiles Wyoming Wildlife Story Chain Lakes Print GeoPDF Area Open Open year-round Fire Ban in Effect. Area-specific ”
+- **WGFD primitive camping (no developed campground)** (intake-US-6123, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Forbes-Sheep-Mountain)
+  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Forbes-Sheep-M · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
+  - restrooms = "yes (kind not stated)" · “mitive camping areas. There is one parking and camping site. The site contains an outdoor restroom facility with no running water.”
+- **Teton Reservoir Campground** (intake-US-10891, agency (outside research camping-us-oct31), status ok, 10 facts) · [www.blm.gov](https://www.blm.gov/visit/teton-reservoir-recreation-site)
   - booking.how = "online: www.recreation.gov" · “link “””
   - booking.url = "https://www.recreation.gov/mobile-app" · “link “” -> https://www.recreation.gov/mobile-app”
   - drinking_water = true · “nds The BLM manages many developed campgrounds. Some include amenities such as restrooms, potable water, picnic tables, fire rings, garbage ”
@@ -2753,29 +2712,21 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - restrooms = "vault" · “akes and ducks, along with rainbow and brown trout. This is a free site with 5 campsites, vault toilets, boat ramp, and day use parking. Cam”
   - rules.fires = "fire ring/grills, and parking spurs with no pull-throughs,  · “5 campsites, vault toilets, boat ramp, and day use parking. Campsites have picnic tables, fire ring/grills, and parking spurs with no pull-t”
   - rules.stay_limit = "14 days" · “ons Part 8360 - Visitor Services for details. Stay Limit : Dispersed camping is generally limited to 14 days within any 28‑day period, thoug”
-- **WGFD primitive camping (no developed campground)** (intake-US-6212, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Whiskey-Basin)
-  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Whiskey-Basin" · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
-  - season = "year-round" · “. 1 - May 15 Access Exceptions Closure is limited to vehicles only. Foot and horse access open year-round Recreation Fishing, Hunting, Trapp”
-- **WGFD primitive camping (no developed campground)** (intake-US-10804, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Chain-Lakes)
-  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Chain-Lakes" · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
-  - season = "year-round" · “alk in Hunting Species Profiles Wyoming Wildlife Story Chain Lakes Print GeoPDF Area Open Open year-round Fire Ban in Effect. Area-specific ”
-- **Pathfinder Reservoir area camping (~6 mi)** (intake-US-6141, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Morgan-Creek)
-  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Morgan-Creek" · “booking link from our outside research (camping, nearby only) row (official system wgfd.wyo.gov)”
-  - season = "year-round" · “lk in Hunting Species Profiles Wyoming Wildlife Story Morgan Creek Print GeoPDF Area Open Open year-round to human presence. No unauthorized”
+- **WGFD primitive camping (no developed campground)** (intake-US-6156, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Red-Rim-Grizzly)
+  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Red-Rim-Grizzl · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
+  - season = "year-round" · “in Hunting Species Profiles Wyoming Wildlife Story Red Rim-Grizzly Print GeoPDF Area Open Open year-round Open year round. Area-specific Reg”
+- **WGFD primitive camping (no developed campground)** (intake-US-6135, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Pennock-Mountain)
+  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Pennock-Mounta · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
+  - season = "year-round" · “5 - April 30 Access Exceptions Closure is limited to vehicles only. Foot and horse access open year-round Shed Hunt Limitations No Collectio”
+- **WGFD primitive camping (no developed campground)** (intake-US-10808, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Soda-Lake)
+  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Soda-Lake" · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
+  - rules.fires = "firewood prohibited" · “ired. Soda Lake wetlands closed May 1 - July 1 for nesting/brooding waterfowl. Cutting of firewood prohibited Seasonal Closure Dec. 1- May 1”
+- **WGFD primitive camping (no developed campground)** (intake-US-6118, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [wgfd.wyo.gov](https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Tom-Thorne-Beth-Williams)
+  - booking.url = "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Tom-Thorne-Bet · “booking link from our outside research (camping, in the park) row (official system wgfd.wyo.gov)”
+  - season = "year-round" · “ming Wildlife Story Tom Thorne/Beth Williams Print GeoPDF Area Open Foot and horse access open year-round THIS AREA OPENS TO MOTORIZED VEHIC”
 
 ## US-ID: 12 random samples (records with facts; seed = the date)
 
-- **Standard/serviced campsites; Canyonview Campground; group camping areas** (US-2243:hq0, state, status ok, 17 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/massacre-rocks-state-park/)
-  - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
-  - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
-  - checkin = "2 p.m" · “eas within parks or campgrounds are open from 7 a.m. to 10 p.m., unless otherwise posted. Check-in time is 2 p.m. for campsites and 3 p.m. f”
-  - checkout = "1 p.m" · “osted. Check-in time is 2 p.m. for campsites and 3 p.m. for facilities (local park time). Checkout time is 1 p.m. for campsites and 12 p.m. ”
-  - features = "fire pit" · “oom cabins that sleep up to 5 on bunk beds, and futons. Cook outside on the grill-covered fire pit. Cabins are powered, heated, and air cond”
-  - fees = "$4 on camping | $10.00 for individual campsites, yurts, and · “mited income (Medicaid card) or who sign a limited income form will receive a discount of $4 on camping. Idaho Disabled Veterans Idaho Veter”
-  - hookups.electric = "some" · “are ADA friendly and support service animals. Per IDAPA Code 26.01.20, park services and utilities are for state park customer use only. IDP”
-  - hookups.sewer = "some" · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
-  - hookups.water = true · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
-  - lodging_booking.how = "online: parksandrecreation.idaho.gov" · “link “Reserve a Yurt””
 - **Smoky Mountain Campground; equestrian campsites; yurt; Ranch House; Almo Creek Cottage** (US-2230:hq0, state, status ok, 17 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/castle-rocks-state-park/)
   - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
   - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
@@ -2787,60 +2738,17 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.sewer = "some" · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
   - hookups.water = true · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
   - lodging_booking.how = "online: parksandrecreation.idaho.gov" · “link “Reserve a Yurt””
-- **Billingsley Creek Campground** (US-2248:hq0, state, status ok, 23 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/thousand-springs-state-park/)
+- **Three Island Crossing State Park** (US-2249, state, status ok, 21 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/three-island-crossing-state-park/)
   - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
   - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
-  - checkin = "2:00 p.m" · “online at parksandrecreation.id.gov or by calling our reservation desk at 1-888-922-6743. Check-in 2:00 p.m. Check-out 1:00 p.m. Idaho Parks”
-  - checkout = "1:00 p.m" · “ecreation.id.gov or by calling our reservation desk at 1-888-922-6743. Check-in 2:00 p.m. Check-out 1:00 p.m. Idaho Parks & Recreation Rules”
+  - checkin = "3 pm" · “the arrival date. The Cottonwood and Sage Cabins close November through mid-March. Cabin check-in time is 3 pm . And check-out time is 11 am”
+  - checkout = "11 am" · “nwood and Sage Cabins close November through mid-March. Cabin check-in time is 3 pm . And check-out time is 11 am . These times are being st”
+  - drinking_water = true · “unted in pioneer diaries. The rewards of a successful crossing were a shorter route, more potable water and better feed for the stock. The T”
   - features = "fire pit" · “oom cabins that sleep up to 5 on bunk beds, and futons. Cook outside on the grill-covered fire pit. Cabins are powered, heated, and air cond”
-  - fees = "$4 on camping | $10.00 for individual campsites, yurts, and · “mited income (Medicaid card) or who sign a limited income form will receive a discount of $4 on camping. Idaho Disabled Veterans Idaho Veter”
-  - hookups.electric = true · “lad Gorge (ADA) Overnight: 3 rental homes available for reservation on Ritter Island & 50 full hookup sites available for reservation at Bil”
-  - hookups.sewer = true · “lad Gorge (ADA) Overnight: 3 rental homes available for reservation on Ritter Island & 50 full hookup sites available for reservation at Bil”
-  - hookups.water = true · “lad Gorge (ADA) Overnight: 3 rental homes available for reservation on Ritter Island & 50 full hookup sites available for reservation at Bil”
-  - lodging_booking.how = "online: parksandrecreation.idaho.gov" · “link “Reserve a Yurt””
-- **Standard and serviced campsites; deluxe cabins; camper cabin** (US-2245:hq0, state, status ok, 22 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/ponderosa-state-park/)
-  - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
-  - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
-  - checkin = "3 PM" · “out, you have not met the requirements, a fee will be charged to the credit card on file. Check in time is after 3 PM on your arrival date. ”
-  - checkout = "11 AM" · “be charged to the credit card on file. Check in time is after 3 PM on your arrival date. Check out time is by 11 AM on your departure date. ”
-  - features = "fire pit" · “oom cabins that sleep up to 5 on bunk beds, and futons. Cook outside on the grill-covered fire pit. Cabins are powered, heated, and air cond”
-  - fees = "$4 on camping | $10.00 for individual campsites, yurts, and · “mited income (Medicaid card) or who sign a limited income form will receive a discount of $4 on camping. Idaho Disabled Veterans Idaho Veter”
-  - hookups.electric = true · “ic amenities: a table, couch, and a bunk bed. No water or restroom. It does have heat and power. There is a spigot outside. Customers will n”
+  - fees = "$7 Dump Station Fee | $10 | $25 per day use fee | $25 reser · “rk in the overflow parking area and visit the rest of the park Motor Vehicle Entrance Fee $7 Dump Station Fee $10 Park Features About Park P”
+  - hookups.amps = [20] · “t Campsites River View Shelter $25 per day use fee $25 reservation fee 200 people max Two 20-amp outlets Two standing charcoal grills 12 pic”
+  - hookups.electric = true · “es off Interstate 84 at the Glenn’s Ferry exit, the park offers campground with water and electrical service, eight cabins, picnic areas, hi”
   - hookups.sewer = "some" · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
-  - hookups.water = true · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
-  - lodging_booking.how = "online: parksandrecreation.idaho.gov" · “link “Reserve a Yurt””
-- **Crane Creek Reservoir** (intake-US-11257, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.blm.gov](https://www.blm.gov/programs/recreation/camping)
-  - booking.how = "online: www.recreation.gov" · “link “Plan Ahead and Play It Safe””
-  - booking.url = "https://www.recreation.gov/articles/list/plan-ahead-and-pla · “link “Plan Ahead and Play It Safe” -> https://www.recreation.gov/articles/list/plan-ahead-and-play-it-safe-on-your-next-trip/2259”
-  - drinking_water = true · “nds The BLM manages many developed campgrounds. Some include amenities such as restrooms, potable water, picnic tables, fire rings, garbage ”
-  - features = "fire rings, garbage receptacles, tent pads, electrical hook · “oped campgrounds. Some include amenities such as restrooms, potable water, picnic tables, fire rings, garbage receptacles, tent pads, electr”
-  - hookups.electric = true · “h as restrooms, potable water, picnic tables, fire rings, garbage receptacles, tent pads, electrical hookups, or group shelters, while other”
-  - map.date_how = "web page, no date in the link" · “link “Interactive Map””
-  - map.url = "https://webmaps.blm.gov/program_apps/BLM_Natl_Recreation_Op · “link “Interactive Map” -> https://webmaps.blm.gov/program_apps/BLM_Natl_Recreation_Opportunities/”
-  - restrooms = "vault" · “n, Pack It Out : Take all trash and belongings with you. Human Waste : If possible, use a portable toilet or pack out your waste. In some lo”
-  - rules.stay_limit = "14 days" · “ons Part 8360 - Visitor Services for details. Stay Limit : Dispersed camping is generally limited to 14 days within any 28‑day period, thoug”
-- **Indian Creek Campground; Lionhead Campground; Schaefer Cabin** (US-2246:hq0, state, status ok, 18 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/priest-lake-state-park/)
-  - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
-  - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
-  - dump_station = true · “r the season. Please bring plenty of your own water for drinking, cooking, and washing. • Dump station is Closed. Please plan your waste dis”
-  - fees = "$330 for non-residents | $300 for residents | $45 per night · “ed (with pullout trundle bed), a queen bed, and two futon couches No pets allowed Cost is $330 for non-residents, $300 for residents. Downlo”
-  - hookups.electric = true · “r IDAPA 26.01.20 and Title 49 of Idaho Code, prohibits motorized toys-including go-karts, electric scooter, toy cars, hoverboards, electric ”
-  - hookups.sewer = true · “n sleeps 12 and features cooking facilities 12 RV campsites include water, electrical and sewer hookups Central shower and restroom faciliti”
-  - lodging_booking.how = "online: parksandrecreation.idaho.gov" · “link “Reserve a Yurt””
-  - lodging_booking.url = "https://parksandrecreation.idaho.gov/park-activity/yurts/" · “link “Reserve a Yurt” -> https://parksandrecreation.idaho.gov/park-activity/yurts/”
-  - map.date_how = "PDF, year 2018 in the link" · “link “Bicycle Tourism Map””
-  - map.url = "https://parksandrecreation.idaho.gov/wp-content/uploads/act · “link “Bicycle Tourism Map” -> https://parksandrecreation.idaho.gov/wp-content/uploads/activities/biking/2018-05_IDStateParks-ACARo”
-- **Bear Lake State Park** (US-2228, state, status ok, 10 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/)
-  - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
-  - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
-  - lodging_booking.how = "online: parksandrecreation.idaho.gov" · “link “Reserve a Yurt””
-  - lodging_booking.url = "https://parksandrecreation.idaho.gov/park-activity/yurts/" · “link “Reserve a Yurt” -> https://parksandrecreation.idaho.gov/park-activity/yurts/”
-  - map.date_how = "PDF, year 2018 in the link" · “link “Bicycle Tourism Map””
-  - map.url = "https://parksandrecreation.idaho.gov/wp-content/uploads/act · “link “Bicycle Tourism Map” -> https://parksandrecreation.idaho.gov/wp-content/uploads/activities/biking/2018-05_IDStateParks-ACARo”
-  - phone = "(208) 939-0696" · “rk to Begin Nov 14, 2022 Contact: Eagle Island State Park | 208-939-0696 , EAG@idpr.idaho.gov Park staff will be conducting hazardou”
-  - restrooms = "yes (kind not stated)" · “te responsibly while having fun. In recent weeks, a few visitors have left trash, defaced restrooms, and damaged private property&hellip; Re”
-  - rules.fires = "Campfires Allowed for Labor Day Weekend!" · “e Safety Still Necessary Aug 30 2023 Fire Restrictions Eased at North Idaho Parks &mdash; Campfires Allowed for Labor Day Weekend! NORTH IDA”
-  - sites.total = 500 · “tment of Parks and Recreation manages across the state. The experience at the more than 2,500 campsites, yurts, cabins and&hellip; Read More”
 - **No public camping; overnight yurts and historic rental facilities** (US-2235:hq0, state, status ok, 23 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/harriman-state-park/)
   - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
   - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
@@ -2852,44 +2760,86 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.electric = "some" · “are ADA friendly and support service animals. Per IDAPA Code 26.01.20, park services and utilities are for state park customer use only. IDP”
   - hookups.sewer = "some" · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
   - hookups.water = true · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
-- **Mann Creek Campground** (intake-US-11380, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/payette/recarea/?recid=77588)
-  - booking.url = "https://www.fs.usda.gov/recarea/payette/recarea/?recid=7758 · “booking link from our outside research (camping, nearby only) row (official system www.fs.usda.gov)”
-  - restrooms = "vault" · “ad provides access to Upper Bear Creek Trail #228 and Mickey Creek Trail #230. There is a vault toilet at the site and a large parking area.”
-- **Gird Point Lookout; Boulder Point Lookout; Deep Creek Campground; Lake Como Campground; Fales Flat Group Campground; Indian Creek Campground; Rock Creek Horse Camp; Schumaker Campground; Magruder Cros** (intake-US-4500, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/bitterroot/recarea/?recid=60258)
-  - booking.url = "https://www.fs.usda.gov/recarea/bitterroot/recarea/?recid=6 · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
-  - drinking_water = true · “Explore Alta Campground in the Bitterroot National Forest: RV/tent sites, river fishing, potable water, vault toilets, host site & shaded sp”
-  - map.date_how = "web page, no date in the link" · “link “Bitterroot National Forest Prescribed Burn Map””
-  - map.url = "https://experience.arcgis.com/experience/4ac726fda3434b40bf · “link “Bitterroot National Forest Prescribed Burn Map” -> https://experience.arcgis.com/experience/4ac726fda3434b40bf59a127f1ddf380”
-  - restrooms = "vault" · “ampground in the Bitterroot National Forest: RV/tent sites, river fishing, potable water, vault toilets, host site & shaded spots near hikin”
-- **Challis Hot Springs Campground** (US-2241:hq0, state, status ok, 20 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/land-of-the-yankee-fork-state-park/)
+- **Lucky Peak State Park** (US-2242, state, status ok, 20 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/)
   - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
   - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
   - checkin = "2 p.m" · “eas within parks or campgrounds are open from 7 a.m. to 10 p.m., unless otherwise posted. Check-in time is 2 p.m. for campsites and 3 p.m. f”
   - checkout = "1 p.m" · “osted. Check-in time is 2 p.m. for campsites and 3 p.m. for facilities (local park time). Checkout time is 1 p.m. for campsites and 12 p.m. ”
-  - dump_station = true · “8:30am – 8:30pm Monday – Tuesday: CLOSED The Interpretive Center and Challis Hot Springs Dump Stations CLOSED for the season on October 26, ”
   - features = "fire pit" · “oom cabins that sleep up to 5 on bunk beds, and futons. Cook outside on the grill-covered fire pit. Cabins are powered, heated, and air cond”
-  - fees = "$1,037,322 in gold and silver at a cost of | $10 per person · “s of stream gravel, leaving behind 5 miles of dredge tailings and recovering an estimated $1,037,322 in gold and silver at a cost of $1,076,”
-  - hookups.electric = "some" · “and the Challis Hot Springs campgrounds. Camping opportunities range from primitive to RV hookups and B&B’s. The elevation at Custer is 6,50”
+  - fees = "$14 starting on June 10, 2021 &ndash | $5 to $7 per motoriz · “resident entry fee at Bear Lake, Farragut, Hells Gate, Priest Lake and Round Lake will be $14 starting on June 10, 2021 &ndash; twice the&he”
+  - hookups.electric = "some" · “are ADA friendly and support service animals. Per IDAPA Code 26.01.20, park services and utilities are for state park customer use only. IDP”
   - hookups.sewer = "some" · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
   - hookups.water = true · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
-- **Herd Lake Campground** (intake-US-11947, agency (outside research camping-us-oct31), status ok, 7 facts) · [www.recreation.gov](https://www.recreation.gov/camping/poi/202091)
-  - booking.how = "online: www.recreation.gov" · “link “Login””
-  - booking.url = "https://www.recreation.gov/log-in" · “link “Login” -> https://www.recreation.gov/log-in”
-  - drinking_water = false · “e ring, 1 vault toilet, trailhead to Herd Lake. This site has limited cell service and no potable water. Camp, RV, and Explore Outdoors Logi”
-  - features = "fire ring, 1 vault toilet, trailhead to Herd Lake" · “des non-motorized access to the lake. Amenities include: 1 campsite with picnic table and fire ring, 1 vault toilet, trailhead to Herd Lake.”
-  - reservable = false · “iew Herd Lake Campsite is adjacent to Jerry Peak-Jim McClure Wilderness. There is one (1) first come, first served campsite located 10 miles”
-  - restrooms = "vault" · “ized access to the lake. Amenities include: 1 campsite with picnic table and fire ring, 1 vault toilet, trailhead to Herd Lake. This site ha”
-  - sites.total = 1 · “tion with trailers. A trail provides non-motorized access to the lake. Amenities include: 1 campsite with picnic table and fire ring, 1 vaul”
+  - lodging_booking.how = "online: parksandrecreation.idaho.gov" · “link “Reserve a Yurt””
+- **Plowboy Campground; Navigation Campground; Trapper Creek Campground; Geisinger Campground; Sam Owen Campground; Green Bay Campground; Maiden Rock Campground; Whiskey Rock Bay Campground; Lunch Peak Lo** (intake-US-4477, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/ipnf/recarea/?recid=6774)
+  - booking.url = "https://www.fs.usda.gov/recarea/ipnf/recarea/?recid=6774" · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
+  - drinking_water = true · “Picnic Area Avery Creek Picnic Area is for day use only. Features include 5 picnic units, potable water, and a toilet. Attractions include f”
+  - map.date_how = "web page, no date in the link" · “link “Idaho Fire Restrictions Map””
+  - map.url = "https://gis1.idl.idaho.gov/portal/apps/webappviewer/index.h · “link “Idaho Fire Restrictions Map” -> https://gis1.idl.idaho.gov/portal/apps/webappviewer/index.html?id=b45e0d999f1d4985ae64079f8852ce11&a”
+  - restrooms = "yes (kind not stated)" · “ek Picnic Area is for day use only. Features include 5 picnic units, potable water, and a toilet. Attractions include fishing and floating o”
+- **Smith Lake Campground** (intake-US-10421, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/ipnf/recarea/?recid=6824)
+  - booking.url = "https://www.fs.usda.gov/recarea/ipnf/recarea/?recid=6824" · “booking link from our outside research (camping, nearby only) row (official system www.fs.usda.gov)”
+  - drinking_water = true · “Picnic Area Avery Creek Picnic Area is for day use only. Features include 5 picnic units, potable water, and a toilet. Attractions include f”
+  - map.date_how = "web page, no date in the link" · “link “Idaho Fire Restrictions Map””
+  - map.url = "https://gis1.idl.idaho.gov/portal/apps/webappviewer/index.h · “link “Idaho Fire Restrictions Map” -> https://gis1.idl.idaho.gov/portal/apps/webappviewer/index.html?id=b45e0d999f1d4985ae64079f8852ce11&a”
+  - restrooms = "yes (kind not stated)" · “ek Picnic Area is for day use only. Features include 5 picnic units, potable water, and a toilet. Attractions include fishing and floating o”
+- **Green Bay Campground; Sam Owen Campground; SAM OWEN; SPRINGY POINT** (intake-US-12298, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/ipnf/recarea/?recid=6799)
+  - booking.url = "https://www.fs.usda.gov/recarea/ipnf/recarea/?recid=6799" · “booking link from our outside research (camping, nearby only) row (official system www.fs.usda.gov)”
+  - drinking_water = true · “Picnic Area Avery Creek Picnic Area is for day use only. Features include 5 picnic units, potable water, and a toilet. Attractions include f”
+  - map.date_how = "web page, no date in the link" · “link “Idaho Fire Restrictions Map””
+  - map.url = "https://gis1.idl.idaho.gov/portal/apps/webappviewer/index.h · “link “Idaho Fire Restrictions Map” -> https://gis1.idl.idaho.gov/portal/apps/webappviewer/index.html?id=b45e0d999f1d4985ae64079f8852ce11&a”
+  - restrooms = "yes (kind not stated)" · “ek Picnic Area is for day use only. Features include 5 picnic units, potable water, and a toilet. Attractions include fishing and floating o”
+- **Bear Lake State Park** (US-2228, state, status ok, 10 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/)
+  - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
+  - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
+  - lodging_booking.how = "online: parksandrecreation.idaho.gov" · “link “Reserve a Yurt””
+  - lodging_booking.url = "https://parksandrecreation.idaho.gov/park-activity/yurts/" · “link “Reserve a Yurt” -> https://parksandrecreation.idaho.gov/park-activity/yurts/”
+  - map.date_how = "PDF, year 2018 in the link" · “link “Bicycle Tourism Map””
+  - map.url = "https://parksandrecreation.idaho.gov/wp-content/uploads/act · “link “Bicycle Tourism Map” -> https://parksandrecreation.idaho.gov/wp-content/uploads/activities/biking/2018-05_IDStateParks-ACARo”
+  - phone = "(208) 939-0696" · “rk to Begin Nov 14, 2022 Contact: Eagle Island State Park | 208-939-0696 , EAG@idpr.idaho.gov Park staff will be conducting hazardou”
+  - restrooms = "yes (kind not stated)" · “te responsibly while having fun. In recent weeks, a few visitors have left trash, defaced restrooms, and damaged private property&hellip; Re”
+  - rules.fires = "Campfires Allowed for Labor Day Weekend!" · “e Safety Still Necessary Aug 30 2023 Fire Restrictions Eased at North Idaho Parks &mdash; Campfires Allowed for Labor Day Weekend! NORTH IDA”
+  - sites.total = 500 · “tment of Parks and Recreation manages across the state. The experience at the more than 2,500 campsites, yurts, cabins and&hellip; Read More”
+- **Freeman Creek campsites; Three Meadows Group Camp; Aspen and Blackberry Group Camp** (US-2232:hq0, state, status ok, 17 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/dworshak-state-park/)
+  - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
+  - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
+  - drinking_water = true · “rned off for the winter season . This includes the closure of flush toilets, showers, and potable water sources . These amenities will remai”
+  - features = "Fire Pit, Basketball and Volleyball Courts, Horseshoe Pits" · “ood Stove 2 Restrooms and Shower Facilities Central to Cabins Recreation Field with Group Fire Pit, Basketball and Volleyball Courts, Horses”
+  - hookups.electric = true · “rd group camps, a large reservable shelter and amphitheater. Overnight: 103 Campsites, 46 Electric/Water, 11 Electric, 46 Central Water, 2 A”
+  - hookups.water = true · “rd group camps, a large reservable shelter and amphitheater. Overnight: 103 Campsites, 46 Electric/Water, 11 Electric, 46 Central Water, 2 A”
+  - lodging_booking.how = "online: parksandrecreation.idaho.gov" · “link “Reserve a Yurt””
+  - lodging_booking.url = "https://parksandrecreation.idaho.gov/park-activity/yurts/" · “link “Reserve a Yurt” -> https://parksandrecreation.idaho.gov/park-activity/yurts/”
+  - map.date_how = "PDF, year 2018 in the link" · “link “Bicycle Tourism Map””
+  - map.url = "https://parksandrecreation.idaho.gov/wp-content/uploads/act · “link “Bicycle Tourism Map” -> https://parksandrecreation.idaho.gov/wp-content/uploads/activities/biking/2018-05_IDStateParks-ACARo”
+- **Standard and serviced campsites; cabins** (US-2236:hq0, state, status ok, 12 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/hells-gate-state-park/)
+  - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
+  - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
+  - hookups.amps = [30] · “beautiful Snake River, is located within Hells Gate Sate Park and offers over 100 slips, 30 amp power, as well as a public boat launch, conv”
+  - hookups.electric = true · “ful Snake River, is located within Hells Gate Sate Park and offers over 100 slips, 30 amp power, as well as a public boat launch, convenienc”
+  - lodging_booking.how = "online: parksandrecreation.idaho.gov" · “link “Reserve a Yurt””
+  - lodging_booking.url = "https://parksandrecreation.idaho.gov/park-activity/yurts/" · “link “Reserve a Yurt” -> https://parksandrecreation.idaho.gov/park-activity/yurts/”
+  - map.date_how = "PDF, year 2018 in the link" · “link “Bicycle Tourism Map””
+  - map.url = "https://parksandrecreation.idaho.gov/wp-content/uploads/act · “link “Bicycle Tourism Map” -> https://parksandrecreation.idaho.gov/wp-content/uploads/activities/biking/2018-05_IDStateParks-ACARo”
+  - phone_hint = "(888) 922-6743" · “Jack O'Connor Hunting Heritage Education Center &times; Ready to visit? 1-888-9-CAMPID or 1-888-922-6743 Make A Reservation Upcoming Events ”
+  - restrooms = "yes (kind not stated)" · “offers over 100 slips, 30 amp power, as well as a public boat launch, convenience store, restrooms and plenty of parking. Slips are availabl”
+- **Appaloosa Loop; Bitterroot Loop; Camas Loop; yurts** (US-2250:hq0, state, status ok, 20 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/winchester-lake-state-park/)
+  - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
+  - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
+  - checkin = "3 p.m" · “Pets must be on leashes at all times & cannot be left alone in the yurts or on the decks Check in time is 3 p.m. & check out time is 11 a.m ”
+  - checkout = "11 a.m" · “t all times & cannot be left alone in the yurts or on the decks Check in time is 3 p.m. & check out time is 11 a.m No additional seasonal in”
+  - features = "fire ring outside, a gas propane BBQ on the deck (propane i · “ion, a futon that folds out to a full, microwave, a picnic table both inside & outside, a fire ring outside, a gas propane BBQ on the deck (”
+  - fees = "$12.00 per person over the base)" · “addles are provided) They all sleep the base occupancy of 5, but will hold up to 8 people($12.00 per person over the base) Dogs are welcome ”
+  - hookups.electric = true · “Lewiston, ID | 138 miles S of Spokane, WA | 234 miles N of Boise, ID Boating: Dock, ramp, electric boats only, no gas engines Winter Groomed”
+  - hookups.sewer = "some" · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
+  - hookups.water = true · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
+  - lodging_booking.how = "online: parksandrecreation.idaho.gov" · “link “Reserve a Yurt””
+- **Lost Valley Reservoir Camping Area** (intake-US-11419, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/payette/recarea/?recid=26921)
+  - booking.url = "https://www.fs.usda.gov/recarea/payette/recarea/?recid=2692 · “booking link from our outside research (camping, nearby only) row (official system www.fs.usda.gov)”
+  - restrooms = "vault" · “ad provides access to Upper Bear Creek Trail #228 and Mickey Creek Trail #230. There is a vault toilet at the site and a large parking area.”
 
 ## US-MT: 12 random samples (records with facts; seed = the date)
 
-- **Kintla Lake Campground; Logging Creek Campground; Quartz Creek Campground; Rising Sun Campground; Many Glacier Campground; Sprague Creek Campground; St. Mary Campground; Avalanche Campground; Apgar Ca** (intake-US-0028, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [www.nps.gov](https://www.nps.gov/glac/planyourvisit/camping.htm)
-  - booking.how = "online: www.nps.gov" · “link “Vehicle Reservations””
-  - booking.url = "https://www.nps.gov/glac/planyourvisit/camping.htm" · “booking link from our outside research (camping, in the park) row (official system www.nps.gov)”
-  - map.date_how = "web page, no date in the link" · “link “Campground Maps””
-  - map.url = "https://www.nps.gov/glac/planyourvisit/campgrounds-map.htm" · “link “Campground Maps” -> https://www.nps.gov/glac/planyourvisit/campgrounds-map.htm”
-  - reservable = "mixed" · “rounds Eight of Glacier National Park's 13 campgrounds are available by reservation only. First-Come, First-Served Campgrounds Learn how to ”
-- **Finley Point campground** (intake-US-2569, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
+- **Sluice Boxes campground** (intake-US-2596, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
   - booking.how = "online: montanastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
   - booking.url = "https://montanastateparks.reserveamerica.com/memberSignInSi · “link “Sign In / Sign Up” -> https://montanastateparks.reserveamerica.com/memberSignInSignUp.do”
   - fees = "$50 /vehicle and is valid for one year from month of issue" · “nce on an unlimited number of visits and discounted camping fees for a year. A pass costs $50 /vehicle and is valid for one year from month ”
@@ -2897,7 +2847,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.electric = false · “ay use Horse sites Boat sites Float-In Sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
   - reservable = true · “ay or family reunion? Reserve one of our Day Use group sites at your favorite state park. Reserve a Day Use Area Montana State Parks offer v”
   - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Number of O”
-- **Thompson Chain-of-Lakes campground** (intake-US-3387, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
+- **Tongue River Reservoir campground** (intake-US-2600, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
   - booking.how = "online: montanastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
   - booking.url = "https://montanastateparks.reserveamerica.com/memberSignInSi · “link “Sign In / Sign Up” -> https://montanastateparks.reserveamerica.com/memberSignInSignUp.do”
   - fees = "$50 /vehicle and is valid for one year from month of issue" · “nce on an unlimited number of visits and discounted camping fees for a year. A pass costs $50 /vehicle and is valid for one year from month ”
@@ -2910,7 +2860,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.electric = true · “arpers Lake and hand launch on Clearwater River; group use area and ADA fishing platform. Electric or manual powered craft only (no gas engi”
   - map.date_how = "PDF, no date in the link" · “link “Location Map””
   - map.url = "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources · “link “Location Map” -> https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/fas/39754115.pdf”
-- **Wayfarers campground** (intake-US-2603, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
+- **Smith River campground** (intake-US-2597, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
   - booking.how = "online: montanastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
   - booking.url = "https://montanastateparks.reserveamerica.com/memberSignInSi · “link “Sign In / Sign Up” -> https://montanastateparks.reserveamerica.com/memberSignInSignUp.do”
   - fees = "$50 /vehicle and is valid for one year from month of issue" · “nce on an unlimited number of visits and discounted camping fees for a year. A pass costs $50 /vehicle and is valid for one year from month ”
@@ -2918,7 +2868,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.electric = false · “ay use Horse sites Boat sites Float-In Sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
   - reservable = true · “ay or family reunion? Reserve one of our Day Use group sites at your favorite state park. Reserve a Day Use Area Montana State Parks offer v”
   - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Number of O”
-- **West Shore campground** (intake-US-2604, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
+- **Black Sandy campground** (intake-US-2562, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
   - booking.how = "online: montanastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
   - booking.url = "https://montanastateparks.reserveamerica.com/memberSignInSi · “link “Sign In / Sign Up” -> https://montanastateparks.reserveamerica.com/memberSignInSignUp.do”
   - fees = "$50 /vehicle and is valid for one year from month of issue" · “nce on an unlimited number of visits and discounted camping fees for a year. A pass costs $50 /vehicle and is valid for one year from month ”
@@ -2926,17 +2876,44 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.electric = false · “ay use Horse sites Boat sites Float-In Sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
   - reservable = true · “ay or family reunion? Reserve one of our Day Use group sites at your favorite state park. Reserve a Day Use Area Montana State Parks offer v”
   - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Number of O”
-- **Brown's Lake (FAS) camping** (intake-US-12826, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [myfwp.mt.gov](https://myfwp.mt.gov/fishMT/fas/39754193)
-  - booking.url = "https://myfwp.mt.gov/fishMT/fas/39754193" · “booking link from our outside research (camping, in the park) row (official system myfwp.mt.gov)”
-  - map.date_how = "PDF, no date in the link" · “link “Location Map””
-  - map.url = "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources · “link “Location Map” -> https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/fas/39754193.pdf”
-  - rules.stay_limit = "7 days" · “ap Contact Information Restrictions --> Vehicle Length Trailer Length is 20ft. Stay Limit Maximum stay of 7 days Weapons Discharge Prohibite”
-- **Dispersed camping on state trust land** (intake-US-4849, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [dnrc.mt.gov](https://dnrc.mt.gov/trustland/public-use/Camping)
-  - booking.url = "https://dnrc.mt.gov/trustland/public-use/Camping" · “booking link from our outside research (camping, in the park) row (official system dnrc.mt.gov)”
-  - map.date_how = "web page, no date in the link" · “link “Map Stats””
-  - map.url = "https://dnrc.mt.gov/Directors-Office/maps-and-data" · “link “Map Stats” -> https://dnrc.mt.gov/Directors-Office/maps-and-data”
-  - rules.fires = "Campfires and Firewood: Campfires are generally permitted w · “n any stream riparian zone for more than one hour. Feed must be certified weed seed free. Campfires and Firewood: Campfires are generally pe”
-  - rules.pets = "Pets must be on a leash or otherwise controlled" · “ntact the local DNRC field office to confirm if land is leased. Camping Guidelines Dogs : Pets must be on a leash or otherwise controlled. H”
+- **Ackley Lake campground** (intake-US-2556, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
+  - booking.how = "online: montanastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://montanastateparks.reserveamerica.com/memberSignInSi · “link “Sign In / Sign Up” -> https://montanastateparks.reserveamerica.com/memberSignInSignUp.do”
+  - fees = "$50 /vehicle and is valid for one year from month of issue" · “nce on an unlimited number of visits and discounted camping fees for a year. A pass costs $50 /vehicle and is valid for one year from month ”
+  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “ay use Horse sites Boat sites Float-In Sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - reservable = true · “ay or family reunion? Reserve one of our Day Use group sites at your favorite state park. Reserve a Day Use Area Montana State Parks offer v”
+  - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Number of O”
+- **Kintla Lake Campground; Logging Creek Campground; Quartz Creek Campground; Rising Sun Campground; Many Glacier Campground; Sprague Creek Campground; St. Mary Campground; Avalanche Campground; Apgar Ca** (intake-US-0028, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [www.nps.gov](https://www.nps.gov/glac/planyourvisit/camping.htm)
+  - booking.how = "online: www.nps.gov" · “link “Vehicle Reservations””
+  - booking.url = "https://www.nps.gov/glac/planyourvisit/camping.htm" · “booking link from our outside research (camping, in the park) row (official system www.nps.gov)”
+  - map.date_how = "web page, no date in the link" · “link “Campground Maps””
+  - map.url = "https://www.nps.gov/glac/planyourvisit/campgrounds-map.htm" · “link “Campground Maps” -> https://www.nps.gov/glac/planyourvisit/campgrounds-map.htm”
+  - reservable = "mixed" · “rounds Eight of Glacier National Park's 13 campgrounds are available by reservation only. First-Come, First-Served Campgrounds Learn how to ”
+- **Thompson Chain-of-Lakes campground** (intake-US-3387, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
+  - booking.how = "online: montanastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://montanastateparks.reserveamerica.com/memberSignInSi · “link “Sign In / Sign Up” -> https://montanastateparks.reserveamerica.com/memberSignInSignUp.do”
+  - fees = "$50 /vehicle and is valid for one year from month of issue" · “nce on an unlimited number of visits and discounted camping fees for a year. A pass costs $50 /vehicle and is valid for one year from month ”
+  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “ay use Horse sites Boat sites Float-In Sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - reservable = true · “ay or family reunion? Reserve one of our Day Use group sites at your favorite state park. Reserve a Day Use Area Montana State Parks offer v”
+  - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Number of O”
+- **Big Arm campground** (intake-US-2561, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
+  - booking.how = "online: montanastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://montanastateparks.reserveamerica.com/memberSignInSi · “link “Sign In / Sign Up” -> https://montanastateparks.reserveamerica.com/memberSignInSignUp.do”
+  - fees = "$50 /vehicle and is valid for one year from month of issue" · “nce on an unlimited number of visits and discounted camping fees for a year. A pass costs $50 /vehicle and is valid for one year from month ”
+  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “ay use Horse sites Boat sites Float-In Sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - reservable = true · “ay or family reunion? Reserve one of our Day Use group sites at your favorite state park. Reserve a Day Use Area Montana State Parks offer v”
+  - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Number of O”
+- **Lake Mary Ronan campground** (intake-US-2579, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
+  - booking.how = "online: montanastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://montanastateparks.reserveamerica.com/memberSignInSi · “link “Sign In / Sign Up” -> https://montanastateparks.reserveamerica.com/memberSignInSignUp.do”
+  - fees = "$50 /vehicle and is valid for one year from month of issue" · “nce on an unlimited number of visits and discounted camping fees for a year. A pass costs $50 /vehicle and is valid for one year from month ”
+  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = false · “ay use Horse sites Boat sites Float-In Sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
+  - reservable = true · “ay or family reunion? Reserve one of our Day Use group sites at your favorite state park. Reserve a Day Use Area Montana State Parks offer v”
+  - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Number of O”
 - **Thompson Falls campground** (intake-US-2599, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
   - booking.how = "online: montanastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
   - booking.url = "https://montanastateparks.reserveamerica.com/memberSignInSi · “link “Sign In / Sign Up” -> https://montanastateparks.reserveamerica.com/memberSignInSignUp.do”
@@ -2945,7 +2922,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.electric = false · “ay use Horse sites Boat sites Float-In Sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
   - reservable = true · “ay or family reunion? Reserve one of our Day Use group sites at your favorite state park. Reserve a Day Use Area Montana State Parks offer v”
   - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Number of O”
-- **Beavertail Hill campground** (intake-US-2560, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
+- **Logan campground** (intake-US-2582, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
   - booking.how = "online: montanastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
   - booking.url = "https://montanastateparks.reserveamerica.com/memberSignInSi · “link “Sign In / Sign Up” -> https://montanastateparks.reserveamerica.com/memberSignInSignUp.do”
   - fees = "$50 /vehicle and is valid for one year from month of issue" · “nce on an unlimited number of visits and discounted camping fees for a year. A pass costs $50 /vehicle and is valid for one year from month ”
@@ -2953,45 +2930,9 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.electric = false · “ay use Horse sites Boat sites Float-In Sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
   - reservable = true · “ay or family reunion? Reserve one of our Day Use group sites at your favorite state park. Reserve a Day Use Area Montana State Parks offer v”
   - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Number of O”
-- **Lost Creek campground** (intake-US-2584, agency (outside research camping-us-oct31), status ok, 7 facts) · [montanastateparks.reserveamerica.com](https://montanastateparks.reserveamerica.com/)
-  - booking.how = "online: montanastateparks.reserveamerica.com" · “link “Sign In / Sign Up””
-  - booking.url = "https://montanastateparks.reserveamerica.com/memberSignInSi · “link “Sign In / Sign Up” -> https://montanastateparks.reserveamerica.com/memberSignInSignUp.do”
-  - fees = "$50 /vehicle and is valid for one year from month of issue" · “nce on an unlimited number of visits and discounted camping fees for a year. A pass costs $50 /vehicle and is valid for one year from month ”
-  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
-  - hookups.electric = false · “ay use Horse sites Boat sites Float-In Sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
-  - reservable = true · “ay or family reunion? Reserve one of our Day Use group sites at your favorite state park. Reserve a Day Use Area Montana State Parks offer v”
-  - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Number of O”
-- **Dispersed camping on state trust land** (intake-US-4845, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [dnrc.mt.gov](https://dnrc.mt.gov/trustland/public-use/Camping)
-  - booking.url = "https://dnrc.mt.gov/trustland/public-use/Camping" · “booking link from our outside research (camping, in the park) row (official system dnrc.mt.gov)”
-  - map.date_how = "web page, no date in the link" · “link “Map Stats””
-  - map.url = "https://dnrc.mt.gov/Directors-Office/maps-and-data" · “link “Map Stats” -> https://dnrc.mt.gov/Directors-Office/maps-and-data”
-  - rules.fires = "Campfires and Firewood: Campfires are generally permitted w · “n any stream riparian zone for more than one hour. Feed must be certified weed seed free. Campfires and Firewood: Campfires are generally pe”
-  - rules.pets = "Pets must be on a leash or otherwise controlled" · “ntact the local DNRC field office to confirm if land is leased. Camping Guidelines Dogs : Pets must be on a leash or otherwise controlled. H”
 
 ## US-NV: 12 random samples (records with facts; seed = the date)
 
-- **Cathedral Gorge State Park** (US-2627, state, status ok, 13 facts) · [parks.nv.gov](https://parks.nv.gov/parks/cathedral-gorge)
-  - booking.how = "online: parks.nv.gov" · “link “Reservations””
-  - booking.url = "https://parks.nv.gov/about/reservations" · “link “Reservations” -> https://parks.nv.gov/about/reservations”
-  - fees = "$5.00 per vehicle (Non-NV Vehicles | $10.00 per vehicle) |  · “of Nevada's first four state parks in 1935. ( READ MORE ) Park Fees Day use entrance fee: $5.00 per vehicle (Non-NV Vehicles $10.00 per vehi”
-  - hookups.electric = true · “ith Map Camping : The campground has 22 sites, each with a table, grill and shade ramada. Electric hookups are also available. Water and flu”
-  - map.date_how = "PDF, year 2014 in the link" · “link “Trails / Map””
-  - map.url = "https://parks.nv.gov/forms/Cathedral_Gorge_Map_3_Nature_Loo · “link “Trails / Map” -> https://parks.nv.gov/forms/Cathedral_Gorge_Map_3_Nature_Loop_NET_otln_reduced_2014-02-09.pdf”
-  - restrooms = "flush" · “each with a table, grill and shade ramada. Electric hookups are also available. Water and flush restrooms with showers are open year-around.”
-  - rules.fires = "fire rings and grills provided" · “otect this area and its resources. Camp only in designated sites. Light fires only in the fire rings and grills provided. Quiet hours are 10”
-  - rules.pets = "Pets are welcome, but they must be kept on a leash of not m · “principles. Stay on trails. Drive only on designated roadways. Vehicles must be licensed. Pets are welcome, but they must be kept on a leash”
-  - rules.quiet_hours = "10 p.m. - 7 a.m" · “s. Camp only in designated sites. Light fires only in the fire rings and grills provided. Quiet hours are 10 p.m. - 7 a.m. The use of drones”
-- **Wild Horse State Recreation Area** (US-4446, state, status ok, 15 facts) · [parks.nv.gov](https://parks.nv.gov/parks/wild-horse)
-  - booking.how = "online: parks.nv.gov" · “link “Reservations””
-  - booking.url = "https://parks.nv.gov/about/reservations" · “link “Reservations” -> https://parks.nv.gov/about/reservations”
-  - dump_station = true · “but restrooms and showers are available year round. Centrally located water faucets and a dump station are available during summer months on”
-  - fees = "$5.00 per vehicle (Non-NV Vehicles | $10.00 per vehicle) |  · “nd on the Owyhee Desert west of Wild Horse. ( READ MORE ) Park Fees Day use entrance fee: $5.00 per vehicle (Non-NV Vehicles $10.00 per vehi”
-  - hookups.electric = false · “pground has 34 sites with a table, shade, a fire pit and a camp pad at each. There are no hookups, but restrooms and showers are available y”
-  - map.date_how = "PDF, year 2014 in the link" · “link “Trails / Map””
-  - map.url = "https://parks.nv.gov/forms/Wild_Horse_SRA_1_Beach_Trail_NET · “link “Trails / Map” -> https://parks.nv.gov/forms/Wild_Horse_SRA_1_Beach_Trail_NET_otln_reduced_2014-02-10.pdf”
-  - restrooms = "yes (kind not stated)" · “4 sites with a table, shade, a fire pit and a camp pad at each. There are no hookups, but restrooms and showers are available year round. Ce”
-  - rules.fires = "fire pits" · “s for the exit and re-entry of the park only. Ground fires are allowed only in designated fire pits. Removing, disturbing or damaging any hi”
-  - rules.pets = "Pets are welcome, but they must be kept on a leash of not m · “other feature is prohibited. State and federal laws protect this area and its resources. Pets are welcome, but they must be kept on a leash ”
 - **Fort Churchill State Park** (US-2631, state, status ok, 14 facts) · [parks.nv.gov](https://parks.nv.gov/parks/fort-churchill)
   - booking.how = "online: parks.nv.gov" · “link “Reservations””
   - booking.url = "https://parks.nv.gov/about/reservations" · “link “Reservations” -> https://parks.nv.gov/about/reservations”
@@ -3003,20 +2944,37 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - map.url = "https://parks.nv.gov/uploads/documents/Fort_Churchill_Hunti · “link “Hunting Boundary Map” -> https://parks.nv.gov/uploads/documents/Fort_Churchill_Hunting_Zone_Jan_2022.pdf”
   - reservable = true · “A group area accomodating up to 60 people for group camping or picnicking is available by reservation only. The area includes a covered pavi”
   - restrooms = "vault" · “rsed camping or day-use area that includes picnic tables, fire rings with grill tops, one vault toilet, and multiple horse corrals. Scout Ca”
-- **Mt. Watson 73E; Bayview Trailhead and Day-Use Area; Camp Richardson Resort; Fallen Leaf Campground; Echo Chalet; Nevada Beach Campground and Day Use Pavilion; Meeks Bay Campground; Meeks Bay Resort; Z** (intake-US-4458, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/ltbmu/recarea/?recid=11775)
-  - booking.url = "https://www.fs.usda.gov/recarea/ltbmu/recarea/?recid=11775" · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
-  - phone = "(530) 543-2600" · “holidays. Questions? Call the Forest Supervisor's Office at 530-543-2600, during open hours. If you reach the recording, we're helpi”
-  - rules.fires = "Campfires (wood, charcoal or any other solid fuels) only pe · “e check for fire restrictions before you goCamping is permitted only in designated sites. Campfires (wood, charcoal or any other solid fuels”
-  - season = "year-round" · “g, sightseeing and much more! The Forest Supervisor's Office in South Lake Tahoe provides year-round recreation information and is open Mond”
-- **Lake Mead NRA campgrounds (e.g. Las Vegas Bay, Boulder Beach)** (intake-US-13241, agency (outside research camping-us-oct31), status ok, 8 facts) · [www.nps.gov](https://www.nps.gov/lake/planyourvisit/campgrounds.htm)
-  - booking.url = "https://www.nps.gov/lake/planyourvisit/campgrounds.htm" · “booking link from our outside research (camping, nearby only) row (official system www.nps.gov)”
-  - dump_station = true · “veryone. Lake Mead National Recreation Area's campgrounds offer restrooms, running water, dump stations, grills, picnic tables and shade. RV”
-  - hookups.electric = "some" · “V's, trailers and tents welcome. Concessioner campgrounds, including recreational vehicle hook-ups, are also available within the park. Camp”
-  - hookups.sewer = true · “intedent's Compendium for a more detailed summary of rules and regulations. RV Sites with Full Hookups RVs may park at any National Park Ser”
-  - hookups.water = true · “intedent's Compendium for a more detailed summary of rules and regulations. RV Sites with Full Hookups RVs may park at any National Park Ser”
-  - reservable = true · “Callville Bay, Echo Bay, Temple Bar, Willow Beach, Cottonwood Cove and Katherine Landing. Reservations may be made by contacting the concess”
-  - restrooms = "yes (kind not stated)" · “andscapes sure to please everyone. Lake Mead National Recreation Area's campgrounds offer restrooms, running water, dump stations, grills, p”
-  - sites.rv = 900 · “Us Camping Start your Adventure Spend your next camping adventure on the lake. With over 900 camping and RV sites at 15 different locations,”
+- **Wild Horse State Recreation Area** (US-4446, state, status ok, 15 facts) · [parks.nv.gov](https://parks.nv.gov/parks/wild-horse)
+  - booking.how = "online: parks.nv.gov" · “link “Reservations””
+  - booking.url = "https://parks.nv.gov/about/reservations" · “link “Reservations” -> https://parks.nv.gov/about/reservations”
+  - dump_station = true · “but restrooms and showers are available year round. Centrally located water faucets and a dump station are available during summer months on”
+  - fees = "$5.00 per vehicle (Non-NV Vehicles | $10.00 per vehicle) |  · “nd on the Owyhee Desert west of Wild Horse. ( READ MORE ) Park Fees Day use entrance fee: $5.00 per vehicle (Non-NV Vehicles $10.00 per vehi”
+  - hookups.electric = false · “pground has 34 sites with a table, shade, a fire pit and a camp pad at each. There are no hookups, but restrooms and showers are available y”
+  - map.date_how = "PDF, year 2014 in the link" · “link “Trails / Map””
+  - map.url = "https://parks.nv.gov/forms/Wild_Horse_SRA_1_Beach_Trail_NET · “link “Trails / Map” -> https://parks.nv.gov/forms/Wild_Horse_SRA_1_Beach_Trail_NET_otln_reduced_2014-02-10.pdf”
+  - restrooms = "yes (kind not stated)" · “4 sites with a table, shade, a fire pit and a camp pad at each. There are no hookups, but restrooms and showers are available year round. Ce”
+  - rules.fires = "fire pits" · “s for the exit and re-entry of the park only. Ground fires are allowed only in designated fire pits. Removing, disturbing or damaging any hi”
+  - rules.pets = "Pets are welcome, but they must be kept on a leash of not m · “other feature is prohibited. State and federal laws protect this area and its resources. Pets are welcome, but they must be kept on a leash ”
+- **Spooner Lake and Backcountry State Park** (US-3389, state, status ok (browser), 9 facts) · [parks.nv.gov](https://parks.nv.gov/parks/spooner-lake)
+  - booking.how = "online: parks.nv.gov" · “link “Reservations””
+  - booking.url = "https://parks.nv.gov/about/reservations" · “link “Reservations” -> https://parks.nv.gov/about/reservations”
+  - fees = "$10.00 per vehicle (Non-NV Vehicles: | $15.00 per vehicle)  · “the original inverted siphons and is still in use today. Park Fees Day use entrance fee: $10.00 per vehicle (Non-NV Vehicles: $15.00 per veh”
+  - map.date_how = "PDF, no date in the link" · “link “Trails / Map””
+  - map.url = "https://parks.nv.gov/uploads/documents/Spooner_Trail_Closer · “link “Trails / Map” -> https://parks.nv.gov/uploads/documents/Spooner_Trail_Closers_Hobart_Dam_Repair.pdf”
+  - phone = ["(775) 831-0494", "(775) 588-0686"] · “eer opportunities are available. Contact the park office at (775) 831-0494 or the Tahoe Rim Trail Association at 775-588-0686. Program | ice”
+  - restrooms = "vault" · “people comfortably and Wildcat Cabin sleeps two. Both cabins have basic amenities such as composting toilets, beds, cook stoves and wood bur”
+  - rules.pets = "Pets are welcome, but they must be kept on a leash of not m · “other feature is prohibited. State and federal laws protect this area and its resources. Pets are welcome, but they must be kept on a leash ”
+  - season = "July 15 through September 30" · “e at ndow.org . At Spooner Lake, the limit is five and bait is allowed. The Marlette Lake season runs July 15 through September 30 and is ca”
+- **Dayton State Park** (US-2629, state, status ok, 9 facts) · [parks.nv.gov](https://parks.nv.gov/parks/dayton)
+  - booking.how = "online: parks.nv.gov" · “link “Reservations””
+  - booking.url = "https://parks.nv.gov/about/reservations" · “link “Reservations” -> https://parks.nv.gov/about/reservations”
+  - dump_station = true · “n campsites at the park that can accommodate 34' RVs, with picnic tables and barbecues. A dump station and restrooms with flush toilets are ”
+  - fees = "$5.00 per vehicle (Non-NV Vehicles | $10.00 per vehicle) |  · “a beckoned, Abner and his friends moved on. ( READ MORE ) Park Fees Day use entrance fee: $5.00 per vehicle (Non-NV Vehicles $10.00 per vehi”
+  - hookups.electric = true · “sh. Group Area : The park features a shaded group-use area with 10 picnic tables, a sink, electricity, a large barbecue, a lawn area and ple”
+  - restrooms = "flush" · “accommodate 34' RVs, with picnic tables and barbecues. A dump station and restrooms with flush toilets are also available. The camping limit”
+  - rules.fires = "firewood within the park is not allowed" · “come, but they must be kept on a leash of not more than six feet in length. Collection of firewood within the park is not allowed. Fires are”
+  - rules.pets = "Pets are welcome, but they must be kept on a leash of not m · “can be arranged for groups. Hours : Open seven days a week, 365 days a year. FIELD NOTES Pets are welcome, but they must be kept on a leash ”
+  - rules.quiet_hours = "10 p.m. to 7 a.m" · “d federal laws protect this area and its resources. Hunting is not permitted in the park. Quiet hours are from 10 p.m. to 7 a.m. The use of ”
 - **Berlin-Ichthyosaur State Park** (US-2626, state, status ok, 13 facts) · [parks.nv.gov](https://parks.nv.gov/parks/berlin-ichthyosaur)
   - booking.how = "online: parks.nv.gov" · “link “Reservations””
   - booking.url = "https://parks.nv.gov/about/reservations" · “link “Reservations” -> https://parks.nv.gov/about/reservations”
@@ -3028,34 +2986,39 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - map.url = "https://parks.nv.gov/forms/Berlin-Ichthyosaur_State_Park_Re · “link “Trails / Map” -> https://parks.nv.gov/forms/Berlin-Ichthyosaur_State_Park_Reduced_Pedestal_(002).pdf”
   - restrooms = "yes (kind not stated)" · “ables, drinking water (typically available from mid-April through the end of October) and restrooms nearby. An RV dump station is also avail”
   - rules.pets = "Pets are welcome, but they must be kept on a leash of not m · “ilable in the nearby town of Gabbs. No services are available at the nearby town of Ione. Pets are welcome, but they must be kept on a leash”
-- **Rye Patch campground** (US-4444:hq0, state, status ok, 12 facts) · [parks.nv.gov](https://parks.nv.gov/parks/rye-patch)
+- **Sand Mountain Recreation Area** (intake-US-12816, agency (outside research camping-us-oct31), status ok, 10 facts) · [www.blm.gov](https://www.blm.gov/visit/sand-mountain-recreation-area)
+  - booking.how = "online: www.recreation.gov" · “link “Purchase a Sand Mountain Recreation Pass.””
+  - booking.url = "https://www.recreation.gov/activitypass/3d9f8486-4f84-11eb- · “link “Purchase a Sand Mountain Recreation Pass.” -> https://www.recreation.gov/activitypass/3d9f8486-4f84-11eb-bc69-0ec2dd879acf”
+  - drinking_water = true · “nds The BLM manages many developed campgrounds. Some include amenities such as restrooms, potable water, picnic tables, fire rings, garbage ”
+  - features = "fire rings, garbage receptacles, tent pads, electrical hook · “oped campgrounds. Some include amenities such as restrooms, potable water, picnic tables, fire rings, garbage receptacles, tent pads, electr”
+  - fees = "$40 for 1-7 days and | $90 for an annual pass" · “vailable on site. Sand Mountain Recreation Area is a designated fee site. Fees are set at $40 for 1-7 days and $90 for an annual pass. When ”
+  - hookups.electric = true · “h as restrooms, potable water, picnic tables, fire rings, garbage receptacles, tent pads, electrical hookups, or group shelters, while other”
+  - map.date_how = "web page, no date in the link" · “link “Interactive Map””
+  - map.url = "https://webmaps.blm.gov/program_apps/BLM_Natl_Recreation_Op · “link “Interactive Map” -> https://webmaps.blm.gov/program_apps/BLM_Natl_Recreation_Opportunities/”
+  - restrooms = "none" · “ive camping is available at the base of the dunes and facilities are limited to six fault toilets. Water is not available on site. Sand Moun”
+  - rules.stay_limit = "14 days" · “ons Part 8360 - Visitor Services for details. Stay Limit : Dispersed camping is generally limited to 14 days within any 28‑day period, thoug”
+- **Kershaw-Ryan State Park** (US-2632, state, status ok, 16 facts) · [parks.nv.gov](https://parks.nv.gov/parks/kershaw-ryan)
   - booking.how = "online: parks.nv.gov" · “link “Reservations””
   - booking.url = "https://parks.nv.gov/about/reservations" · “link “Reservations” -> https://parks.nv.gov/about/reservations”
-  - drinking_water = true · “has 25 units, a restroom with flush toilets and hot showers. A sanitary dump station with potable water is located on the dam's west side. A”
-  - dump_station = true · “the reservoir's west side has 25 units, a restroom with flush toilets and hot showers. A sanitary dump station with potable water is located”
-  - fees = "$5.00 per vehicle (Non-NV Vehicles | $10.00 per vehicle) |  · “of water covering most of the Great Basin. ( READ MORE ) Park Fees Day use entrance fee: $5.00 per vehicle (Non-NV Vehicles $10.00 per vehic”
-  - map.date_how = "PDF, year 2012 in the link" · “link “Trails / Map””
-  - map.url = "https://parks.nv.gov/forms/Rye_Patch_State_Recreation_Area_ · “link “Trails / Map” -> https://parks.nv.gov/forms/Rye_Patch_State_Recreation_Area_1_Westside_Campground_NET_otln_reduced_20”
-  - restrooms = "flush" · “MENITIES Camping : The river campground below Rye Patch Dam has 22 units, a restroom with flush toilets and hot showers. The campground on t”
-  - rules.pets = "Pets are welcome, but they must be kept on a leash of not m · “e headgear. OHV use is allowed on existing roads to access adjacent federal public lands. Pets are welcome, but they must be kept on a leash”
-  - rules.quiet_hours = "10 p.m. - 7 a.m" · “sives are prohibited. The use of drones or any remote controlled aircraft is not allowed. Quiet hours are from 10 p.m. - 7 a.m. Visitors are”
-- **Wilson Reservoir Campground** (intake-US-13173, agency (outside research camping-us-oct31), status ok, 6 facts) · [www.blm.gov](https://www.blm.gov/visit/wilson-reservoir-recreation-management-area)
-  - booking.how = "online: www.recreation.gov" · “link “””
-  - booking.url = "https://www.recreation.gov/mobile-app" · “link “” -> https://www.recreation.gov/mobile-app”
-  - features = "fire rings" · “oad is not maintained during winter months. There are 24 campsites with picnic tables and fire rings. There are also vault toilets, a boat r”
-  - fees = "$10.00 per vehicle/night | $5.00 per vehicle" · “re also vault toilets, a boat ramp, accessible bathrooms, and picnic area. Camping fees - $10.00 per vehicle/night. Day use fee $5.00 per ve”
-  - restrooms = "vault" · “g winter months. There are 24 campsites with picnic tables and fire rings. There are also vault toilets, a boat ramp, accessible bathrooms, ”
-  - sites.total = 24 · “ugh vehicle access is poor and the road is not maintained during winter months. There are 24 campsites with picnic tables and fire rings. Th”
-- **Cave Lake State Park** (US-2628, state, status ok, 9 facts) · [parks.nv.gov](https://parks.nv.gov/parks/cave-lake)
+  - dump_station = true · “Camping : The park has a 16-unit campground with a restroom, coin-operated showers and an RV dump station. Each site has a shade ramada, pic”
+  - fees = "$5.00 per vehicle (Non-NV Vehicles | $10.00 per vehicle) |  · “;Kershaw Gardens&rdquo; by local residents. ( READ MORE ) Park Fees Day use entrance fee: $5.00 per vehicle (Non-NV Vehicles $10.00 per vehi”
+  - hookups.amps = [30, 50] · “site has a shade ramada, picnic table, fire ring and grill. Each of the 16 campsites has 30 amp and 50 amp power and water hookups. The camp”
+  - hookups.electric = true · “ramada, picnic table, fire ring and grill. Each of the 16 campsites has 30 amp and 50 amp power and water hookups. The camping limit is seve”
+  - hookups.water = true · “cnic table, fire ring and grill. Each of the 16 campsites has 30 amp and 50 amp power and water hookups. The camping limit is seven days in ”
+  - map.date_how = "PDF, no date in the link" · “link “Trails / Map””
+  - map.url = "https://parks.nv.gov/forms/KershawRyan_4.pdf" · “link “Trails / Map” -> https://parks.nv.gov/forms/KershawRyan_4.pdf”
+  - reservable = false · “rom frost free hydrants available all year long. RV Dump station available all year long. First Come, First Serve Camping : Within the campg”
+- **Fort Churchill State Historic Park campground (20 sites) + Scout Camp** (intake-US-4438, agency (outside research camping-us-oct31), status ok, 14 facts) · [parks.nv.gov](https://parks.nv.gov/parks/buckland-station)
   - booking.how = "online: parks.nv.gov" · “link “Reservations””
   - booking.url = "https://parks.nv.gov/about/reservations" · “link “Reservations” -> https://parks.nv.gov/about/reservations”
-  - map.date_how = "PDF, year 2014 in the link" · “link “Trails / Map””
-  - map.url = "https://parks.nv.gov/forms/Cave_Lake_1_Cave_Overlook_NET_ot · “link “Trails / Map” -> https://parks.nv.gov/forms/Cave_Lake_1_Cave_Overlook_NET_otln_reduced_2014-02-09.pdf”
-  - restrooms = "flush" · “he campground is open. The Lake View Campground is near the lake and open year-round with flush toilets and showers. In extremely cold condi”
-  - rules.fires = "firewood is prohibited" · “welcome, but they must be kept on a leash of not more than six feet in length. Gathering firewood is prohibited. Removing, disturbing or dam”
-  - rules.pets = "Pets are welcome, but they must be kept on a leash of not m · “d highways and must stay on established roadways. OHV use is allowed on divided highways. Pets are welcome, but they must be kept on a leash”
-  - season = "year-round" · “are available while the campground is open. The Lake View Campground is near the lake and open year-round with flush toilets and showers. In”
-  - showers = true · “93, 50 and 6. The campground opens early May and closes mid-October, weather permitting. Showers and flush-type toilets are available while ”
+  - drinking_water = true · “king : A tree-shaded picnic area along the Carson River provides tables, charcoal grills, drinking water and a restroom. Buckland Station Pi”
+  - dump_station = true · “ill, and all are shaded by large cottonwood trees. There are no hook-ups available, but a dump station is located near the entrance to the c”
+  - fees = "$5.00 per vehicle (Non-NV Vehicles | $10.00 per vehicle) |  · “om survived into adulthood. ( READ MORE) Park Fees Fort Churchill : Day use entrance fee: $5.00 per vehicle (Non-NV Vehicles $10.00 per vehi”
+  - hookups.electric = false · “fire ring and charcoal grill, and all are shaded by large cottonwood trees. There are no hook-ups available, but a dump station is located n”
+  - map.date_how = "PDF, year 2022 in the link" · “link “Hunting Boundary Map””
+  - map.url = "https://parks.nv.gov/uploads/documents/Fort_Churchill_Hunti · “link “Hunting Boundary Map” -> https://parks.nv.gov/uploads/documents/Fort_Churchill_Hunting_Zone_Jan_2022.pdf”
+  - reservable = true · “A group area accomodating up to 60 people for group camping or picnicking is available by reservation only. The area includes a covered pavi”
+  - restrooms = "vault" · “rsed camping or day-use area that includes picnic tables, fire rings with grill tops, one vault toilet, and multiple horse corrals. Scout Ca”
 - **CHIEF MOUNTAIN SOUTH TRAILHEAD** (intake-US-13192, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.blm.gov](https://www.blm.gov/visit/search-details/262693/1)
   - booking.how = "online: www.recreation.gov" · “link “””
   - booking.url = "https://www.recreation.gov/mobile-app" · “link “” -> https://www.recreation.gov/mobile-app”
@@ -3066,39 +3029,41 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - map.url = "https://webmaps.blm.gov/program_apps/BLM_Natl_Recreation_Op · “link “Interactive Map” -> https://webmaps.blm.gov/program_apps/BLM_Natl_Recreation_Opportunities/”
   - restrooms = "yes (kind not stated)" · “l Screen This recreation site that provides amenities for camping and picnicking, such as restrooms, fire pits, picnic tables, and shade str”
   - rules.stay_limit = "14 days" · “ons Part 8360 - Visitor Services for details. Stay Limit : Dispersed camping is generally limited to 14 days within any 28‑day period, thoug”
-- **Dayton State Park** (US-2629, state, status ok, 9 facts) · [parks.nv.gov](https://parks.nv.gov/parks/dayton)
+- **Echo Canyon State Park** (US-2630, state, status ok, 15 facts) · [parks.nv.gov](https://parks.nv.gov/parks/echo-canyon)
   - booking.how = "online: parks.nv.gov" · “link “Reservations””
   - booking.url = "https://parks.nv.gov/about/reservations" · “link “Reservations” -> https://parks.nv.gov/about/reservations”
-  - dump_station = true · “n campsites at the park that can accommodate 34' RVs, with picnic tables and barbecues. A dump station and restrooms with flush toilets are ”
-  - fees = "$5.00 per vehicle (Non-NV Vehicles | $10.00 per vehicle) |  · “a beckoned, Abner and his friends moved on. ( READ MORE ) Park Fees Day use entrance fee: $5.00 per vehicle (Non-NV Vehicles $10.00 per vehi”
-  - hookups.electric = true · “sh. Group Area : The park features a shaded group-use area with 10 picnic tables, a sink, electricity, a large barbecue, a lawn area and ple”
-  - restrooms = "flush" · “accommodate 34' RVs, with picnic tables and barbecues. A dump station and restrooms with flush toilets are also available. The camping limit”
-  - rules.fires = "firewood within the park is not allowed" · “come, but they must be kept on a leash of not more than six feet in length. Collection of firewood within the park is not allowed. Fires are”
-  - rules.pets = "Pets are welcome, but they must be kept on a leash of not m · “can be arranged for groups. Hours : Open seven days a week, 365 days a year. FIELD NOTES Pets are welcome, but they must be kept on a leash ”
-  - rules.quiet_hours = "10 p.m. to 7 a.m" · “d federal laws protect this area and its resources. Hunting is not permitted in the park. Quiet hours are from 10 p.m. to 7 a.m. The use of ”
-- **Spooner Lake and Backcountry State Park** (US-3389, state, status ok (browser), 9 facts) · [parks.nv.gov](https://parks.nv.gov/parks/spooner-lake)
+  - drinking_water = true · “thout a reservation the day of arrival are available on a first-come, first-served basis. Drinking water is available near each site. The RV”
+  - dump_station = true · “ated on a hill overlooking Dry Valley. Campground facilities include flush toilets and an RV dump station. A camping limit of 14 days in a 3”
+  - fees = "$5.00 per vehicle (Non-NV Vehicles | $10.00 per vehicle) |  · “ore temperate climate in the winter months. ( READ MORE ) Park Fees Day use entrance fee: $5.00 per vehicle (Non-NV Vehicles $10.00 per vehi”
+  - hookups.electric = true · “first-served basis. Drinking water is available near each site. The RV campground has 20 full hook-up sites situated on a hill overlooking D”
+  - hookups.sewer = true · “first-served basis. Drinking water is available near each site. The RV campground has 20 full hook-up sites situated on a hill overlooking D”
+  - hookups.water = true · “first-served basis. Drinking water is available near each site. The RV campground has 20 full hook-up sites situated on a hill overlooking D”
+  - phone = "(775) 684-2770" · “upport or accommodations, please call Nevada State Parks at (775) 684-2770. We continually seek ways to provide recreational opportuni”
+  - reservable = false · “ilable for reservation. Sites without a reservation the day of arrival are available on a first-come, first-served basis. Drinking water is ”
+- **Cathedral Gorge State Park** (US-2627, state, status ok, 13 facts) · [parks.nv.gov](https://parks.nv.gov/parks/cathedral-gorge)
   - booking.how = "online: parks.nv.gov" · “link “Reservations””
   - booking.url = "https://parks.nv.gov/about/reservations" · “link “Reservations” -> https://parks.nv.gov/about/reservations”
-  - fees = "$10.00 per vehicle (Non-NV Vehicles: | $15.00 per vehicle)  · “the original inverted siphons and is still in use today. Park Fees Day use entrance fee: $10.00 per vehicle (Non-NV Vehicles: $15.00 per veh”
-  - map.date_how = "PDF, no date in the link" · “link “Trails / Map””
-  - map.url = "https://parks.nv.gov/uploads/documents/Spooner_Trail_Closer · “link “Trails / Map” -> https://parks.nv.gov/uploads/documents/Spooner_Trail_Closers_Hobart_Dam_Repair.pdf”
-  - phone = ["(775) 831-0494", "(775) 588-0686"] · “eer opportunities are available. Contact the park office at (775) 831-0494 or the Tahoe Rim Trail Association at 775-588-0686. Program | ice”
-  - restrooms = "vault" · “people comfortably and Wildcat Cabin sleeps two. Both cabins have basic amenities such as composting toilets, beds, cook stoves and wood bur”
-  - rules.pets = "Pets are welcome, but they must be kept on a leash of not m · “other feature is prohibited. State and federal laws protect this area and its resources. Pets are welcome, but they must be kept on a leash ”
-  - season = "July 15 through September 30" · “e at ndow.org . At Spooner Lake, the limit is five and bait is allowed. The Marlette Lake season runs July 15 through September 30 and is ca”
-
-## US-AZ: 12 random samples (records with facts; seed = the date)
-
-- **Mittry Lake dispersed camping (BLM)** (intake-US-8298, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.blm.gov](https://www.blm.gov/visit/mittry-lake-wildlife-area)
-  - booking.how = "online: www.recreation.gov" · “link “””
-  - booking.url = "https://www.recreation.gov/mobile-app" · “link “” -> https://www.recreation.gov/mobile-app”
+  - fees = "$5.00 per vehicle (Non-NV Vehicles | $10.00 per vehicle) |  · “of Nevada's first four state parks in 1935. ( READ MORE ) Park Fees Day use entrance fee: $5.00 per vehicle (Non-NV Vehicles $10.00 per vehi”
+  - hookups.electric = true · “ith Map Camping : The campground has 22 sites, each with a table, grill and shade ramada. Electric hookups are also available. Water and flu”
+  - map.date_how = "PDF, year 2014 in the link" · “link “Trails / Map””
+  - map.url = "https://parks.nv.gov/forms/Cathedral_Gorge_Map_3_Nature_Loo · “link “Trails / Map” -> https://parks.nv.gov/forms/Cathedral_Gorge_Map_3_Nature_Loop_NET_otln_reduced_2014-02-09.pdf”
+  - restrooms = "flush" · “each with a table, grill and shade ramada. Electric hookups are also available. Water and flush restrooms with showers are open year-around.”
+  - rules.fires = "fire rings and grills provided" · “otect this area and its resources. Camp only in designated sites. Light fires only in the fire rings and grills provided. Quiet hours are 10”
+  - rules.pets = "Pets are welcome, but they must be kept on a leash of not m · “principles. Stay on trails. Drive only on designated roadways. Vehicles must be licensed. Pets are welcome, but they must be kept on a leash”
+  - rules.quiet_hours = "10 p.m. - 7 a.m" · “s. Camp only in designated sites. Light fires only in the fire rings and grills provided. Quiet hours are 10 p.m. - 7 a.m. The use of drones”
+- **Jean** (intake-US-13163, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.blm.gov](https://www.blm.gov/office/las-vegas-field-office)
+  - booking.how = "online: www.recreation.gov" · “link “Plan Ahead and Play It Safe””
+  - booking.url = "https://www.recreation.gov/articles/list/plan-ahead-and-pla · “link “Plan Ahead and Play It Safe” -> https://www.recreation.gov/articles/list/plan-ahead-and-play-it-safe-on-your-next-trip/2259”
   - drinking_water = true · “nds The BLM manages many developed campgrounds. Some include amenities such as restrooms, potable water, picnic tables, fire rings, garbage ”
   - features = "fire rings, garbage receptacles, tent pads, electrical hook · “oped campgrounds. Some include amenities such as restrooms, potable water, picnic tables, fire rings, garbage receptacles, tent pads, electr”
   - hookups.electric = true · “h as restrooms, potable water, picnic tables, fire rings, garbage receptacles, tent pads, electrical hookups, or group shelters, while other”
-  - map.date_how = "web page, no date in the link" · “link “Interactive Map””
-  - map.url = "https://webmaps.blm.gov/program_apps/BLM_Natl_Recreation_Op · “link “Interactive Map” -> https://webmaps.blm.gov/program_apps/BLM_Natl_Recreation_Opportunities/”
+  - map.date_how = "web page, no date in the link" · “link “View Interactive Map””
+  - map.url = "https://webmaps.blm.gov/program_apps/BLM_Natl_Recreation_Op · “link “View Interactive Map” -> https://webmaps.blm.gov/program_apps/BLM_Natl_Recreation_Opportunities/”
   - restrooms = "vault" · “n, Pack It Out : Take all trash and belongings with you. Human Waste : If possible, use a portable toilet or pack out your waste. In some lo”
-  - rules.stay_limit = "14 days" · “sistency in enforcement among the coordinating agencies. Starting then, visitors may camp up to 14 days within any 28-day period at Mittry L”
+  - rules.stay_limit = "14 days" · “ons Part 8360 - Visitor Services for details. Stay Limit : Dispersed camping is generally limited to 14 days within any 28‑day period, thoug”
+
+## US-AZ: 12 random samples (records with facts; seed = the date)
+
 - **Hazlett Hollow Campground; Mingus Mountain Campground; Potato Patch Campground; Groom Creek Horse Camp; Powell Springs Campground; Yavapai Campground; Lynx Campground; Hilltop Campground; Upper Wolf C** (intake-US-4431, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 9 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/prescott/recarea/?recid=67171)
   - booking.url = "https://www.fs.usda.gov/recarea/prescott/recarea/?recid=671 · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
   - map.date_how = "web page, no date in the link" · “link “National Interactive Visitors Map””
@@ -3109,10 +3074,20 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - rules.pets = "Dogs must be on a leash (6’ maximum)" · “ing in the area surrounding the City of Prescott.) Quiet hours between 10 p.m. and 6 a.m. Dogs must be on a leash (6’ maximum) Fireworks and”
   - rules.stay_limit = "7 days" · “n the forest near the City of Prescott is limited to designated dispersed sites and has a 7-day stay limit per 30-day period. Camping outsid”
   - season = "year-round" · “e RD Where the Desert Meets the Pines Central Arizona's mild climate makes the Prescott a year-round destination to camp, fish, picnic, hike”
+- **Mittry Lake dispersed camping (BLM)** (intake-US-8298, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.blm.gov](https://www.blm.gov/visit/mittry-lake-wildlife-area)
+  - booking.how = "online: www.recreation.gov" · “link “””
+  - booking.url = "https://www.recreation.gov/mobile-app" · “link “” -> https://www.recreation.gov/mobile-app”
+  - drinking_water = true · “nds The BLM manages many developed campgrounds. Some include amenities such as restrooms, potable water, picnic tables, fire rings, garbage ”
+  - features = "fire rings, garbage receptacles, tent pads, electrical hook · “oped campgrounds. Some include amenities such as restrooms, potable water, picnic tables, fire rings, garbage receptacles, tent pads, electr”
+  - hookups.electric = true · “h as restrooms, potable water, picnic tables, fire rings, garbage receptacles, tent pads, electrical hookups, or group shelters, while other”
+  - map.date_how = "web page, no date in the link" · “link “Interactive Map””
+  - map.url = "https://webmaps.blm.gov/program_apps/BLM_Natl_Recreation_Op · “link “Interactive Map” -> https://webmaps.blm.gov/program_apps/BLM_Natl_Recreation_Opportunities/”
+  - restrooms = "vault" · “n, Pack It Out : Take all trash and belongings with you. Human Waste : If possible, use a portable toilet or pack out your waste. In some lo”
+  - rules.stay_limit = "14 days" · “sistency in enforcement among the coordinating agencies. Starting then, visitors may camp up to 14 days within any 28-day period at Mittry L”
 
 ## US-NM: 12 random samples (records with facts; seed = the date)
 
-- **(no campground name in layer)** (US-2704:p2-0, state, status ok, 15 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/)
+- **(no campground name in layer)** (US-2700:p2-2, state, status ok, 15 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/)
   - booking.how = "online: newmexicostateparks.reserveamerica.com" · “link “Make Camping Reservations””
   - booking.url = "https://newmexicostateparks.reserveamerica.com/welcome.do?t · “link “Make Camping Reservations” -> https://newmexicostateparks.reserveamerica.com/welcome.do?tti=home”
   - checkout = "2:00 p.m" · “save or reserve camping spaces for others even by purchasing additional permits. Campsite check-out time is 2:00 p.m. Campers may not retain”
@@ -3123,17 +3098,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.sewer = "some" · “with electric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (”
   - hookups.water = true · “tric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (per day, ”
   - map.date_how = "web page, no date in the link" · “link “Forest Industry Map and Biomass/Utilization Information””
-- **Pancho Villa SP campground (41 reservable electric/non-electric sites + 19 first-come)** (intake-US-2710, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/find-a-park/pancho-villa-state-park/)
-  - booking.how = "online: newmexicostateparks.reserveamerica.com" · “link “””
-  - booking.url = "https://newmexicostateparks.reserveamerica.com/camping/panc · “link “” -> https://newmexicostateparks.reserveamerica.com/camping/pancho-villa/r/campgroundDetails.do?contractC”
-  - hookups.amps = [30, 50] · “ies Campground Facilities: Developed Campsites: (Reservation Only) 30 Electric Campsites (30 amp) 5 Electric Campsites (50 amp) 6 Non-Electr”
-  - hookups.electric = true · “is historical event Want to visit? This historical park offers a large campground with RV utility hookups, primitive tent camping, and oppor”
-  - hookups.water = true · “is historical event Want to visit? This historical park offers a large campground with RV utility hookups, primitive tent camping, and oppor”
-  - map.date_how = "PDF, year 2023 in the link" · “link “Park Map””
-  - map.url = "https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/PV_ · “link “Park Map” -> https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/PV_PARKMAP_20231010.pdf”
-  - reservable = "mixed" · “for birding, hiking, biking, and exploring the border community. We offer seven sites for first-come first-serve at the South Loop of the pa”
-  - sites.total = 30 · “Viewing: Birding Amenities Campground Facilities: Developed Campsites: (Reservation Only) 30 Electric Campsites (30 amp) 5 Electric Campsite”
-- **(no campground name in layer)** (US-2708:p2-0, state, status ok, 15 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/)
+- **(no campground name in layer)** (US-2707:p2-1, state, status ok, 15 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/)
   - booking.how = "online: newmexicostateparks.reserveamerica.com" · “link “Make Camping Reservations””
   - booking.url = "https://newmexicostateparks.reserveamerica.com/welcome.do?t · “link “Make Camping Reservations” -> https://newmexicostateparks.reserveamerica.com/welcome.do?tti=home”
   - checkout = "2:00 p.m" · “save or reserve camping spaces for others even by purchasing additional permits. Campsite check-out time is 2:00 p.m. Campers may not retain”
@@ -3144,73 +3109,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.sewer = "some" · “with electric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (”
   - hookups.water = true · “tric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (per day, ”
   - map.date_how = "web page, no date in the link" · “link “Forest Industry Map and Biomass/Utilization Information””
-- **(no campground name in layer)** (US-2718:p2-0, state, status ok, 15 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/)
-  - booking.how = "online: newmexicostateparks.reserveamerica.com" · “link “Make Camping Reservations””
-  - booking.url = "https://newmexicostateparks.reserveamerica.com/welcome.do?t · “link “Make Camping Reservations” -> https://newmexicostateparks.reserveamerica.com/welcome.do?tti=home”
-  - checkout = "2:00 p.m" · “save or reserve camping spaces for others even by purchasing additional permits. Campsite check-out time is 2:00 p.m. Campers may not retain”
-  - drinking_water = true · “ith running water Showers – some comfort stations feature showers Check specific park for drinking water availability Campsite Utilities Dev”
-  - fees = "$3.50 per night | $10.00 max | $5.00 | $30 or | $50) in add · “: Frequently Asked Questions (FAQ) (PDF) Reserve America Fees* Reservation Fee Per Night: $3.50 per night, $10.00 max. per reservation Cance”
-  - hookups.amps = [50] · “es Developed Campsites may feature the following utility hookups: Electric Hook-up (30 or 50 amps) Water Hook-up Sewer Hook-up Camping at a ”
-  - hookups.electric = "some" · “(per vehicle, per night, per walk-in/bicycle) $20 New Mexico Resident Developed Site with Electric Hookup (per vehicle, per night, per walk-”
-  - hookups.sewer = "some" · “with electric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (”
-  - hookups.water = true · “tric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (per day, ”
-  - map.date_how = "web page, no date in the link" · “link “Forest Industry Map and Biomass/Utilization Information””
-- **(no campground name in layer)** (US-2694:p2-0, state, status ok, 15 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/)
-  - booking.how = "online: newmexicostateparks.reserveamerica.com" · “link “Make Camping Reservations””
-  - booking.url = "https://newmexicostateparks.reserveamerica.com/welcome.do?t · “link “Make Camping Reservations” -> https://newmexicostateparks.reserveamerica.com/welcome.do?tti=home”
-  - checkout = "2:00 p.m" · “save or reserve camping spaces for others even by purchasing additional permits. Campsite check-out time is 2:00 p.m. Campers may not retain”
-  - drinking_water = true · “ith running water Showers – some comfort stations feature showers Check specific park for drinking water availability Campsite Utilities Dev”
-  - fees = "$3.50 per night | $10.00 max | $5.00 | $30 or | $50) in add · “: Frequently Asked Questions (FAQ) (PDF) Reserve America Fees* Reservation Fee Per Night: $3.50 per night, $10.00 max. per reservation Cance”
-  - hookups.amps = [50] · “es Developed Campsites may feature the following utility hookups: Electric Hook-up (30 or 50 amps) Water Hook-up Sewer Hook-up Camping at a ”
-  - hookups.electric = "some" · “(per vehicle, per night, per walk-in/bicycle) $20 New Mexico Resident Developed Site with Electric Hookup (per vehicle, per night, per walk-”
-  - hookups.sewer = "some" · “with electric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (”
-  - hookups.water = true · “tric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (per day, ”
-  - map.date_how = "web page, no date in the link" · “link “Forest Industry Map and Biomass/Utilization Information””
-- **(no campground name in layer)** (US-2694:p2-1, state, status ok, 15 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/)
-  - booking.how = "online: newmexicostateparks.reserveamerica.com" · “link “Make Camping Reservations””
-  - booking.url = "https://newmexicostateparks.reserveamerica.com/welcome.do?t · “link “Make Camping Reservations” -> https://newmexicostateparks.reserveamerica.com/welcome.do?tti=home”
-  - checkout = "2:00 p.m" · “save or reserve camping spaces for others even by purchasing additional permits. Campsite check-out time is 2:00 p.m. Campers may not retain”
-  - drinking_water = true · “ith running water Showers – some comfort stations feature showers Check specific park for drinking water availability Campsite Utilities Dev”
-  - fees = "$3.50 per night | $10.00 max | $5.00 | $30 or | $50) in add · “: Frequently Asked Questions (FAQ) (PDF) Reserve America Fees* Reservation Fee Per Night: $3.50 per night, $10.00 max. per reservation Cance”
-  - hookups.amps = [50] · “es Developed Campsites may feature the following utility hookups: Electric Hook-up (30 or 50 amps) Water Hook-up Sewer Hook-up Camping at a ”
-  - hookups.electric = "some" · “(per vehicle, per night, per walk-in/bicycle) $20 New Mexico Resident Developed Site with Electric Hookup (per vehicle, per night, per walk-”
-  - hookups.sewer = "some" · “with electric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (”
-  - hookups.water = true · “tric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (per day, ”
-  - map.date_how = "web page, no date in the link" · “link “Forest Industry Map and Biomass/Utilization Information””
-- **(no campground name in layer)** (US-2720:p2-0, state, status ok, 15 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/)
-  - booking.how = "online: newmexicostateparks.reserveamerica.com" · “link “Make Camping Reservations””
-  - booking.url = "https://newmexicostateparks.reserveamerica.com/welcome.do?t · “link “Make Camping Reservations” -> https://newmexicostateparks.reserveamerica.com/welcome.do?tti=home”
-  - checkout = "2:00 p.m" · “save or reserve camping spaces for others even by purchasing additional permits. Campsite check-out time is 2:00 p.m. Campers may not retain”
-  - drinking_water = true · “ith running water Showers – some comfort stations feature showers Check specific park for drinking water availability Campsite Utilities Dev”
-  - fees = "$3.50 per night | $10.00 max | $5.00 | $30 or | $50) in add · “: Frequently Asked Questions (FAQ) (PDF) Reserve America Fees* Reservation Fee Per Night: $3.50 per night, $10.00 max. per reservation Cance”
-  - hookups.amps = [50] · “es Developed Campsites may feature the following utility hookups: Electric Hook-up (30 or 50 amps) Water Hook-up Sewer Hook-up Camping at a ”
-  - hookups.electric = "some" · “(per vehicle, per night, per walk-in/bicycle) $20 New Mexico Resident Developed Site with Electric Hookup (per vehicle, per night, per walk-”
-  - hookups.sewer = "some" · “with electric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (”
-  - hookups.water = true · “tric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (per day, ”
-  - map.date_how = "web page, no date in the link" · “link “Forest Industry Map and Biomass/Utilization Information””
-- **(no campground name in layer)** (US-2707:p2-0, state, status ok, 15 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/)
-  - booking.how = "online: newmexicostateparks.reserveamerica.com" · “link “Make Camping Reservations””
-  - booking.url = "https://newmexicostateparks.reserveamerica.com/welcome.do?t · “link “Make Camping Reservations” -> https://newmexicostateparks.reserveamerica.com/welcome.do?tti=home”
-  - checkout = "2:00 p.m" · “save or reserve camping spaces for others even by purchasing additional permits. Campsite check-out time is 2:00 p.m. Campers may not retain”
-  - drinking_water = true · “ith running water Showers – some comfort stations feature showers Check specific park for drinking water availability Campsite Utilities Dev”
-  - fees = "$3.50 per night | $10.00 max | $5.00 | $30 or | $50) in add · “: Frequently Asked Questions (FAQ) (PDF) Reserve America Fees* Reservation Fee Per Night: $3.50 per night, $10.00 max. per reservation Cance”
-  - hookups.amps = [50] · “es Developed Campsites may feature the following utility hookups: Electric Hook-up (30 or 50 amps) Water Hook-up Sewer Hook-up Camping at a ”
-  - hookups.electric = "some" · “(per vehicle, per night, per walk-in/bicycle) $20 New Mexico Resident Developed Site with Electric Hookup (per vehicle, per night, per walk-”
-  - hookups.sewer = "some" · “with electric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (”
-  - hookups.water = true · “tric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (per day, ”
-  - map.date_how = "web page, no date in the link" · “link “Forest Industry Map and Biomass/Utilization Information””
-- **(no campground name in layer)** (US-2713:p2-0, state, status ok, 15 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/)
-  - booking.how = "online: newmexicostateparks.reserveamerica.com" · “link “Make Camping Reservations””
-  - booking.url = "https://newmexicostateparks.reserveamerica.com/welcome.do?t · “link “Make Camping Reservations” -> https://newmexicostateparks.reserveamerica.com/welcome.do?tti=home”
-  - checkout = "2:00 p.m" · “save or reserve camping spaces for others even by purchasing additional permits. Campsite check-out time is 2:00 p.m. Campers may not retain”
-  - drinking_water = true · “ith running water Showers – some comfort stations feature showers Check specific park for drinking water availability Campsite Utilities Dev”
-  - fees = "$3.50 per night | $10.00 max | $5.00 | $30 or | $50) in add · “: Frequently Asked Questions (FAQ) (PDF) Reserve America Fees* Reservation Fee Per Night: $3.50 per night, $10.00 max. per reservation Cance”
-  - hookups.amps = [50] · “es Developed Campsites may feature the following utility hookups: Electric Hook-up (30 or 50 amps) Water Hook-up Sewer Hook-up Camping at a ”
-  - hookups.electric = "some" · “(per vehicle, per night, per walk-in/bicycle) $20 New Mexico Resident Developed Site with Electric Hookup (per vehicle, per night, per walk-”
-  - hookups.sewer = "some" · “with electric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (”
-  - hookups.water = true · “tric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (per day, ”
-  - map.date_how = "web page, no date in the link" · “link “Forest Industry Map and Biomass/Utilization Information””
-- **(no campground name in layer)** (US-2691:p2-1, state, status ok, 15 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/)
+- **(no campground name in layer)** (US-2717:p2-0, state, status ok, 15 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/)
   - booking.how = "online: newmexicostateparks.reserveamerica.com" · “link “Make Camping Reservations””
   - booking.url = "https://newmexicostateparks.reserveamerica.com/welcome.do?t · “link “Make Camping Reservations” -> https://newmexicostateparks.reserveamerica.com/welcome.do?tti=home”
   - checkout = "2:00 p.m" · “save or reserve camping spaces for others even by purchasing additional permits. Campsite check-out time is 2:00 p.m. Campers may not retain”
@@ -3232,7 +3131,83 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.sewer = "some" · “with electric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (”
   - hookups.water = true · “tric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (per day, ”
   - map.date_how = "web page, no date in the link" · “link “Forest Industry Map and Biomass/Utilization Information””
+- **(no campground name in layer)** (US-2711:p2-0, state, status ok, 15 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/)
+  - booking.how = "online: newmexicostateparks.reserveamerica.com" · “link “Make Camping Reservations””
+  - booking.url = "https://newmexicostateparks.reserveamerica.com/welcome.do?t · “link “Make Camping Reservations” -> https://newmexicostateparks.reserveamerica.com/welcome.do?tti=home”
+  - checkout = "2:00 p.m" · “save or reserve camping spaces for others even by purchasing additional permits. Campsite check-out time is 2:00 p.m. Campers may not retain”
+  - drinking_water = true · “ith running water Showers – some comfort stations feature showers Check specific park for drinking water availability Campsite Utilities Dev”
+  - fees = "$3.50 per night | $10.00 max | $5.00 | $30 or | $50) in add · “: Frequently Asked Questions (FAQ) (PDF) Reserve America Fees* Reservation Fee Per Night: $3.50 per night, $10.00 max. per reservation Cance”
+  - hookups.amps = [50] · “es Developed Campsites may feature the following utility hookups: Electric Hook-up (30 or 50 amps) Water Hook-up Sewer Hook-up Camping at a ”
+  - hookups.electric = "some" · “(per vehicle, per night, per walk-in/bicycle) $20 New Mexico Resident Developed Site with Electric Hookup (per vehicle, per night, per walk-”
+  - hookups.sewer = "some" · “with electric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (”
+  - hookups.water = true · “tric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (per day, ”
+  - map.date_how = "web page, no date in the link" · “link “Forest Industry Map and Biomass/Utilization Information””
+- **Pancho Villa SP campground (41 reservable electric/non-electric sites + 19 first-come)** (intake-US-2710, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/find-a-park/pancho-villa-state-park/)
+  - booking.how = "online: newmexicostateparks.reserveamerica.com" · “link “””
+  - booking.url = "https://newmexicostateparks.reserveamerica.com/camping/panc · “link “” -> https://newmexicostateparks.reserveamerica.com/camping/pancho-villa/r/campgroundDetails.do?contractC”
+  - hookups.amps = [30, 50] · “ies Campground Facilities: Developed Campsites: (Reservation Only) 30 Electric Campsites (30 amp) 5 Electric Campsites (50 amp) 6 Non-Electr”
+  - hookups.electric = true · “is historical event Want to visit? This historical park offers a large campground with RV utility hookups, primitive tent camping, and oppor”
+  - hookups.water = true · “is historical event Want to visit? This historical park offers a large campground with RV utility hookups, primitive tent camping, and oppor”
+  - map.date_how = "PDF, year 2023 in the link" · “link “Park Map””
+  - map.url = "https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/PV_ · “link “Park Map” -> https://www.emnrd.nm.gov/spd/wp-content/uploads/sites/7/PV_PARKMAP_20231010.pdf”
+  - reservable = "mixed" · “for birding, hiking, biking, and exploring the border community. We offer seven sites for first-come first-serve at the South Loop of the pa”
+  - sites.total = 30 · “Viewing: Birding Amenities Campground Facilities: Developed Campsites: (Reservation Only) 30 Electric Campsites (30 amp) 5 Electric Campsite”
 - **(no campground name in layer)** (US-2689:p2-0, state, status ok, 15 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/)
+  - booking.how = "online: newmexicostateparks.reserveamerica.com" · “link “Make Camping Reservations””
+  - booking.url = "https://newmexicostateparks.reserveamerica.com/welcome.do?t · “link “Make Camping Reservations” -> https://newmexicostateparks.reserveamerica.com/welcome.do?tti=home”
+  - checkout = "2:00 p.m" · “save or reserve camping spaces for others even by purchasing additional permits. Campsite check-out time is 2:00 p.m. Campers may not retain”
+  - drinking_water = true · “ith running water Showers – some comfort stations feature showers Check specific park for drinking water availability Campsite Utilities Dev”
+  - fees = "$3.50 per night | $10.00 max | $5.00 | $30 or | $50) in add · “: Frequently Asked Questions (FAQ) (PDF) Reserve America Fees* Reservation Fee Per Night: $3.50 per night, $10.00 max. per reservation Cance”
+  - hookups.amps = [50] · “es Developed Campsites may feature the following utility hookups: Electric Hook-up (30 or 50 amps) Water Hook-up Sewer Hook-up Camping at a ”
+  - hookups.electric = "some" · “(per vehicle, per night, per walk-in/bicycle) $20 New Mexico Resident Developed Site with Electric Hookup (per vehicle, per night, per walk-”
+  - hookups.sewer = "some" · “with electric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (”
+  - hookups.water = true · “tric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (per day, ”
+  - map.date_how = "web page, no date in the link" · “link “Forest Industry Map and Biomass/Utilization Information””
+- **(no campground name in layer)** (US-2720:p2-0, state, status ok, 15 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/)
+  - booking.how = "online: newmexicostateparks.reserveamerica.com" · “link “Make Camping Reservations””
+  - booking.url = "https://newmexicostateparks.reserveamerica.com/welcome.do?t · “link “Make Camping Reservations” -> https://newmexicostateparks.reserveamerica.com/welcome.do?tti=home”
+  - checkout = "2:00 p.m" · “save or reserve camping spaces for others even by purchasing additional permits. Campsite check-out time is 2:00 p.m. Campers may not retain”
+  - drinking_water = true · “ith running water Showers – some comfort stations feature showers Check specific park for drinking water availability Campsite Utilities Dev”
+  - fees = "$3.50 per night | $10.00 max | $5.00 | $30 or | $50) in add · “: Frequently Asked Questions (FAQ) (PDF) Reserve America Fees* Reservation Fee Per Night: $3.50 per night, $10.00 max. per reservation Cance”
+  - hookups.amps = [50] · “es Developed Campsites may feature the following utility hookups: Electric Hook-up (30 or 50 amps) Water Hook-up Sewer Hook-up Camping at a ”
+  - hookups.electric = "some" · “(per vehicle, per night, per walk-in/bicycle) $20 New Mexico Resident Developed Site with Electric Hookup (per vehicle, per night, per walk-”
+  - hookups.sewer = "some" · “with electric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (”
+  - hookups.water = true · “tric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (per day, ”
+  - map.date_how = "web page, no date in the link" · “link “Forest Industry Map and Biomass/Utilization Information””
+- **(no campground name in layer)** (US-2718:p2-1, state, status ok, 15 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/)
+  - booking.how = "online: newmexicostateparks.reserveamerica.com" · “link “Make Camping Reservations””
+  - booking.url = "https://newmexicostateparks.reserveamerica.com/welcome.do?t · “link “Make Camping Reservations” -> https://newmexicostateparks.reserveamerica.com/welcome.do?tti=home”
+  - checkout = "2:00 p.m" · “save or reserve camping spaces for others even by purchasing additional permits. Campsite check-out time is 2:00 p.m. Campers may not retain”
+  - drinking_water = true · “ith running water Showers – some comfort stations feature showers Check specific park for drinking water availability Campsite Utilities Dev”
+  - fees = "$3.50 per night | $10.00 max | $5.00 | $30 or | $50) in add · “: Frequently Asked Questions (FAQ) (PDF) Reserve America Fees* Reservation Fee Per Night: $3.50 per night, $10.00 max. per reservation Cance”
+  - hookups.amps = [50] · “es Developed Campsites may feature the following utility hookups: Electric Hook-up (30 or 50 amps) Water Hook-up Sewer Hook-up Camping at a ”
+  - hookups.electric = "some" · “(per vehicle, per night, per walk-in/bicycle) $20 New Mexico Resident Developed Site with Electric Hookup (per vehicle, per night, per walk-”
+  - hookups.sewer = "some" · “with electric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (”
+  - hookups.water = true · “tric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (per day, ”
+  - map.date_how = "web page, no date in the link" · “link “Forest Industry Map and Biomass/Utilization Information””
+- **(no campground name in layer)** (US-2708:p2-0, state, status ok, 15 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/)
+  - booking.how = "online: newmexicostateparks.reserveamerica.com" · “link “Make Camping Reservations””
+  - booking.url = "https://newmexicostateparks.reserveamerica.com/welcome.do?t · “link “Make Camping Reservations” -> https://newmexicostateparks.reserveamerica.com/welcome.do?tti=home”
+  - checkout = "2:00 p.m" · “save or reserve camping spaces for others even by purchasing additional permits. Campsite check-out time is 2:00 p.m. Campers may not retain”
+  - drinking_water = true · “ith running water Showers – some comfort stations feature showers Check specific park for drinking water availability Campsite Utilities Dev”
+  - fees = "$3.50 per night | $10.00 max | $5.00 | $30 or | $50) in add · “: Frequently Asked Questions (FAQ) (PDF) Reserve America Fees* Reservation Fee Per Night: $3.50 per night, $10.00 max. per reservation Cance”
+  - hookups.amps = [50] · “es Developed Campsites may feature the following utility hookups: Electric Hook-up (30 or 50 amps) Water Hook-up Sewer Hook-up Camping at a ”
+  - hookups.electric = "some" · “(per vehicle, per night, per walk-in/bicycle) $20 New Mexico Resident Developed Site with Electric Hookup (per vehicle, per night, per walk-”
+  - hookups.sewer = "some" · “with electric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (”
+  - hookups.water = true · “tric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (per day, ”
+  - map.date_how = "web page, no date in the link" · “link “Forest Industry Map and Biomass/Utilization Information””
+- **(no campground name in layer)** (US-2699:p2-0, state, status ok, 15 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/)
+  - booking.how = "online: newmexicostateparks.reserveamerica.com" · “link “Make Camping Reservations””
+  - booking.url = "https://newmexicostateparks.reserveamerica.com/welcome.do?t · “link “Make Camping Reservations” -> https://newmexicostateparks.reserveamerica.com/welcome.do?tti=home”
+  - checkout = "2:00 p.m" · “save or reserve camping spaces for others even by purchasing additional permits. Campsite check-out time is 2:00 p.m. Campers may not retain”
+  - drinking_water = true · “ith running water Showers – some comfort stations feature showers Check specific park for drinking water availability Campsite Utilities Dev”
+  - fees = "$3.50 per night | $10.00 max | $5.00 | $30 or | $50) in add · “: Frequently Asked Questions (FAQ) (PDF) Reserve America Fees* Reservation Fee Per Night: $3.50 per night, $10.00 max. per reservation Cance”
+  - hookups.amps = [50] · “es Developed Campsites may feature the following utility hookups: Electric Hook-up (30 or 50 amps) Water Hook-up Sewer Hook-up Camping at a ”
+  - hookups.electric = "some" · “(per vehicle, per night, per walk-in/bicycle) $20 New Mexico Resident Developed Site with Electric Hookup (per vehicle, per night, per walk-”
+  - hookups.sewer = "some" · “with electric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (”
+  - hookups.water = true · “tric) $10 Sewage Hookup with Annual Camping Permit (per day, only at sites with sewer) $5 Water Hookup with Annual Camping Permit (per day, ”
+  - map.date_how = "web page, no date in the link" · “link “Forest Industry Map and Biomass/Utilization Information””
+- **(no campground name in layer)** (US-2700:p2-0, state, status ok, 15 facts) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/)
   - booking.how = "online: newmexicostateparks.reserveamerica.com" · “link “Make Camping Reservations””
   - booking.url = "https://newmexicostateparks.reserveamerica.com/welcome.do?t · “link “Make Camping Reservations” -> https://newmexicostateparks.reserveamerica.com/welcome.do?tti=home”
   - checkout = "2:00 p.m" · “save or reserve camping spaces for others even by purchasing additional permits. Campsite check-out time is 2:00 p.m. Campers may not retain”
@@ -3246,71 +3221,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
 
 ## US-CA: 12 random samples (records with facts; seed = the date)
 
-- **Liberty Glen campground and primitive campsites (Lake Sonoma)** (intake-US-10403, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [wildlife.ca.gov](https://wildlife.ca.gov/Lands/Places-to-Visit/Lake-Sonoma-WA)
-  - booking.how = "online: wildlife.ca.gov" · “link “Online Reservation Procedures for Waterfowl Hunters””
-  - booking.url = "https://wildlife.ca.gov/Lands/Places-to-Visit/Lake-Sonoma-W · “booking link from our outside research (camping, in the park) row (official system wildlife.ca.gov)”
-  - map.date_how = "web page, no date in the link" · “link “Printable Map (PDF)””
-  - map.url = "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=87831&in · “link “Printable Map (PDF)” -> https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=87831&inline”
-  - phone = "(707) 428-2002" · “ay: (530) 846-7505 --> Bay Delta Region's Fairfield Office: (707) 428-2002 Activities Wildlife Viewing Fishing Hiking Trails Limited C”
-  - phone_hint = "(530) 846-7500" · “parking lot near the kiosk. Wildlife Area Contact: Monday - Friday, 7 a.m. to 3:30 p.m.: (530) 846-7500 Saturday - Sunday: (530) 846-7505 --”
-  - restrooms = "vault" · “e. During hunting seasons, the Entrance Check Station on Rutherford Road is also staffed. Portable toilets, a taxidermy exhibit room and pic”
-  - season = "year-round" · “erfowl hunting seasons. Information on available parking areas and restroom facilities is available year-round at the Main Business Office, ”
-- **Sheep Camp; Peltier Bridge; Horse Camp; Brandy Creek; Brandy Creek RV; Crystal Creek; Dry Creek Group Campground** (intake-US-0649, agency (outside research camping-us-oct31), status ok, 13 facts) · [www.recreation.gov](https://www.recreation.gov/camping/sheep-camp-primitive-campground/r/campgroundDetails.do?contractCode=NRSO&parkId=156990)
-  - booking.how = "online: www.recreation.gov" · “link “Whiskeytown National Recreation Area””
-  - booking.url = "https://www.recreation.gov/gateways/2977" · “link “Whiskeytown National Recreation Area” -> https://www.recreation.gov/gateways/2977”
-  - checkin = "1:00 p.m" · “olcanic National Park and Lava Beds National Monument are also valid here at Whiskeytown. Check-in time is 1:00 p.m. and check-out time is 1”
-  - checkout = "12 p.m" · “Beds National Monument are also valid here at Whiskeytown. Check-in time is 1:00 p.m. and check-out time is 12 p.m. (noon). Maximum occupanc”
-  - drinking_water = false · “sistant storage locker, a metal fire pit with a swing-arm barbecue grill and a lamp pole. Drinking water and electricity are not available. ”
-  - hookups.electric = false · “ker, a metal fire pit with a swing-arm barbecue grill and a lamp pole. Drinking water and electricity are not available. The campground has ”
-  - hookups.water = false · “torage locker, a metal fire pit with a swing-arm barbecue grill and a lamp pole. Drinking water and electricity are not available. The campg”
-  - restrooms = "vault" · “ater and electricity are not available. The campground has four campsites which share one vault toilet. To access these tent-only sites, wal”
-  - rules.fires = "Campfires must be attended at all times and completely exti · “ead and down wood for firewood. Do not put nails in trees or damage or remove vegetation. Campfires must be attended at all times and comple”
-  - rules.generators = "Generators are not allowed" · “a bear-resistant locker or out of sight in your vehicle unless they are in immediate use. Generators are not allowed. Protect our natural re”
-- **Anderson Camp, Bear Harbor Camp, Jones Beach Camp, Little Jackass Creek Camp, Needle Rock Camp, Orchard Camp, Streamside Camp, Usal Beach Campground, Wheeler Camp** (intake-US-1197, agency (outside research camping-us-oct31), status ok, 13 facts) · [www.parks.ca.gov](https://www.parks.ca.gov/?page_id=429)
-  - booking.how = "online: www.parks.ca.gov" · “link “About Us””
-  - booking.url = "https://www.parks.ca.gov/?page_id=91" · “link “About Us” -> https://www.parks.ca.gov/?page_id=91”
-  - checkin = "2:00 p.m" · “lation policy for information on refund processing. Check In and Check Out At most parks, check-in begins at 2:00 p.m. on the reservation&rs”
-  - drinking_water = false · “eep crowds away. Its trails are steep and its campgrounds are primitive. There&rsquo;s no potable water, and you have to haul out your own t”
-  - fees = "$8.00" · “riods, and during weekends. Prices are subject to change without notice. Vehicle Day Use: $8.00 Close View the park accessibility informatio”
-  - hookups.electric = false · “rks&rsquo; reservation system, ReserveCalifornia. This includes camping (with and without hookups), equestrian camping, group camping, lodgi”
-  - lodging_booking.how = "online: www.parks.ca.gov" · “link “Parks Newsroom””
-  - lodging_booking.url = "https://www.parks.ca.gov/Newsroom" · “link “Parks Newsroom” -> https://www.parks.ca.gov/Newsroom”
-  - map.date_how = "web page, no date in the link" · “link “Explore map of the park (opens in new tab)””
-  - map.url = "https://csparks.maps.arcgis.com/apps/instant/basic/index.ht · “link “Explore map of the park (opens in new tab)” -> https://csparks.maps.arcgis.com/apps/instant/basic/index.html?appid=065b067caa204e8da48”
-- **Circle Group Campground, Family Walk-in Sites, Hillside Group Campground, Huckleberry Hike / Bike Campground, Point Group Campground, Portola Campground, Ravine Group Campground, Slate Creek Trail Cam** (intake-US-1187, agency (outside research camping-us-oct31), status ok, 11 facts) · [www.parks.ca.gov](https://www.parks.ca.gov/?page_id=539)
-  - booking.how = "online: www.parks.ca.gov" · “link “About Us””
-  - booking.url = "https://www.parks.ca.gov/?page_id=91" · “link “About Us” -> https://www.parks.ca.gov/?page_id=91”
-  - fees = "$10.00 | $10 vehicle day-use fee" · “riods, and during weekends. Prices are subject to change without notice. Vehicle Day Use: $10.00 Bus, Large: $100.00 Bus, Small: $50.00 Clos”
-  - lodging_booking.how = "online: www.parks.ca.gov" · “link “Parks Newsroom””
-  - lodging_booking.url = "https://www.parks.ca.gov/Newsroom" · “link “Parks Newsroom” -> https://www.parks.ca.gov/Newsroom”
-  - map.date_how = "PDF, year 2019 in the link" · “link “Campground Map (PDF)””
-  - map.url = "https://www.parks.ca.gov/pages/539/files/PortolaRedwoodsSP_ · “link “Campground Map (PDF)” -> https://www.parks.ca.gov/pages/539/files/PortolaRedwoodsSP_CampMap2019.pdf”
-  - reservable = true · “tions at this time. Additional Reservation Info Additional Reservation Information Online reservations are available 24 hours a day, seven d”
-  - rules.pets = "dogs allowed?" · “Visitor Center: Monday through Sunday 9 am to 5 pm Contact Information (650) 948-9098 Are dogs allowed? Yes: Dogs allowed only on campsites ”
-  - sites.group = 4 · “down mossy banks over rocks and woody debris. The park has a 55-site family campground , 4 group campsites , and a trail camp for backpacker”
-- **Albee Creek Campground, Baxter  Camp, Bull Creek Trail Camp, Burlington Campground, Burlington Campground Hike/Bike Camp, Cuneo Creek Family Horse Camp, Grasshopper Trail Camp, Hamilton Barn Environme** (intake-US-1163, agency (outside research camping-us-oct31), status ok, 13 facts) · [www.parks.ca.gov](https://www.parks.ca.gov/?page_id=425)
-  - booking.how = "online: www.parks.ca.gov" · “link “About Us””
-  - booking.url = "https://www.parks.ca.gov/?page_id=91" · “link “About Us” -> https://www.parks.ca.gov/?page_id=91”
-  - checkin = "2:00 p.m" · “lation policy for information on refund processing. Check In and Check Out At most parks, check-in begins at 2:00 p.m. on the reservation&rs”
-  - fees = "$8.00" · “riods, and during weekends. Prices are subject to change without notice. Vehicle Day Use: $8.00 Close View the park accessibility informatio”
-  - hookups.electric = false · “rks&rsquo; reservation system, ReserveCalifornia. This includes camping (with and without hookups), equestrian camping, group camping, lodgi”
-  - lodging_booking.how = "online: www.parks.ca.gov" · “link “Parks Newsroom””
-  - lodging_booking.url = "https://www.parks.ca.gov/Newsroom" · “link “Parks Newsroom” -> https://www.parks.ca.gov/Newsroom”
-  - map.date_how = "PDF, no date in the link" · “link “Campground Map (PDF)””
-  - map.url = "https://www.parks.ca.gov/pages/425/files/HumboldtRedwoodsSP · “link “Campground Map (PDF)” -> https://www.parks.ca.gov/pages/425/files/HumboldtRedwoodsSP_CampMap122914.pdf”
-  - reservable = "mixed" · “g only. Whether use of an accessible overnight facility is subject to reservation or on a first-come first-served basis, unoccupied accessib”
-- **Cleone Campground Hike/Bike Camp, East Cleone Group Camp, East Pinewood Campground, MacKerricher Walk-in Camp, Surfwood Campground, West Cleone Group Camp, West Pinewood Campground** (intake-US-1168, agency (outside research camping-us-oct31), status ok, 17 facts) · [www.parks.ca.gov](https://www.parks.ca.gov/?page_id=436)
-  - booking.how = "online: www.parks.ca.gov" · “link “About Us””
-  - booking.url = "https://www.parks.ca.gov/?page_id=91" · “link “About Us” -> https://www.parks.ca.gov/?page_id=91”
-  - checkin = "2:00 p.m" · “lation policy for information on refund processing. Check In and Check Out At most parks, check-in begins at 2:00 p.m. on the reservation&rs”
-  - fees = "$8.00" · “riods, and during weekends. Prices are subject to change without notice. Vehicle Day Use: $8.00 Close Max trailer: 35 feet Max camper/motorh”
-  - hookups.electric = false · “rks&rsquo; reservation system, ReserveCalifornia. This includes camping (with and without hookups), equestrian camping, group camping, lodgi”
-  - lodging_booking.how = "online: www.parks.ca.gov" · “link “Parks Newsroom””
-  - lodging_booking.url = "https://www.parks.ca.gov/Newsroom" · “link “Parks Newsroom” -> https://www.parks.ca.gov/Newsroom”
-  - map.date_how = "PDF, no date in the link" · “link “Campground Map (PDF)””
-  - map.url = "https://www.parks.ca.gov/pages/436/files/MacKerricherCampMa · “link “Campground Map (PDF)” -> https://www.parks.ca.gov/pages/436/files/MacKerricherCampMap_081926_FINAL.pdf”
-  - phone = "(707) 937-5804" · “tion please contact the Sonoma Mendocino District Office at (707) 937-5804 Monday - Friday 8:00 a.m. to 5:00 p.m. No Drones Allowed in”
-- **Corvina Beach Campground, Headquarters CG, Kayak Group Camp, Mecca Beach Campground, Mecca Campground, New Campground, Salt Creek Beach Campground, Salton Sea Discovery group campsite** (intake-US-3552, agency (outside research camping-us-oct31), status ok, 11 facts) · [www.parks.ca.gov](https://www.parks.ca.gov/?page_id=639)
+- **Bodega Dunes - Lower, Bodega Dunes - Upper, Bodega Dunes Walk-in site, Pomo Canyon Environmental Camp Area, Willow Creek Environmental Camp Area, Wright's Beach Campground, Wright's Beach Enroute Camp** (intake-US-1198, agency (outside research camping-us-oct31), status ok, 11 facts) · [www.parks.ca.gov](https://www.parks.ca.gov/?page_id=451)
   - booking.how = "online: www.parks.ca.gov" · “link “About Us””
   - booking.url = "https://www.parks.ca.gov/?page_id=91" · “link “About Us” -> https://www.parks.ca.gov/?page_id=91”
   - checkin = "2:00 p.m" · “lation policy for information on refund processing. Check In and Check Out At most parks, check-in begins at 2:00 p.m. on the reservation&rs”
@@ -3318,16 +3229,68 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - hookups.electric = false · “rks&rsquo; reservation system, ReserveCalifornia. This includes camping (with and without hookups), equestrian camping, group camping, lodgi”
   - lodging_booking.how = "online: www.parks.ca.gov" · “link “Parks Newsroom””
   - lodging_booking.url = "https://www.parks.ca.gov/Newsroom" · “link “Parks Newsroom” -> https://www.parks.ca.gov/Newsroom”
+  - map.date_how = "PDF, no date in the link" · “link “Campground Map - Willow Creek & Pomo Env. (PDF)””
+  - map.url = "https://www.parks.ca.gov/pages/451/files/SonomaCoast E Camp · “link “Campground Map - Willow Creek & Pomo Env. (PDF)” -> https://www.parks.ca.gov/pages/451/files/SonomaCoast E Camps063016.pdf”
+  - reservable = "mixed" · “g only. Whether use of an accessible overnight facility is subject to reservation or on a first-come first-served basis, unoccupied accessib”
+- **Azalea Campground, Wildcat Campground, Wildcat Hike/Bike** (intake-US-1159, agency (outside research camping-us-oct31), status ok, 11 facts) · [www.parks.ca.gov](https://www.parks.ca.gov/?page_id=438)
+  - booking.how = "online: www.parks.ca.gov" · “link “About Us””
+  - booking.url = "https://www.parks.ca.gov/?page_id=91" · “link “About Us” -> https://www.parks.ca.gov/?page_id=91”
+  - checkin = "2:00 p.m" · “lation policy for information on refund processing. Check In and Check Out At most parks, check-in begins at 2:00 p.m. on the reservation&rs”
+  - fees = "$8.25 to ReserveCalifornia for cancellations" · “e for other customers to reserve or purchase. There is an additional fee in the amount of $8.25 to ReserveCalifornia for cancellations. This”
+  - hookups.electric = false · “rks&rsquo; reservation system, ReserveCalifornia. This includes camping (with and without hookups), equestrian camping, group camping, lodgi”
+  - lodging_booking.how = "online: www.parks.ca.gov" · “link “Parks Newsroom””
+  - lodging_booking.url = "https://www.parks.ca.gov/Newsroom" · “link “Parks Newsroom” -> https://www.parks.ca.gov/Newsroom”
+  - map.date_how = "PDF, no date in the link" · “link “Campground Map (PDF)””
+  - map.url = "https://www.parks.ca.gov/pages/438/files/HendyWoodsSP_CampM · “link “Campground Map (PDF)” -> https://www.parks.ca.gov/pages/438/files/HendyWoodsSP_CampMap_8.5x11_030426_FINAL.pdf”
+  - reservable = "mixed" · “g only. Whether use of an accessible overnight facility is subject to reservation or on a first-come first-served basis, unoccupied accessib”
+- **Saddle Rock Environmental Camp** (intake-US-1165, agency (outside research camping-us-oct31), status ok, 12 facts) · [www.parks.ca.gov](https://www.parks.ca.gov/?page_id=578)
+  - booking.how = "online: www.parks.ca.gov" · “link “About Us””
+  - booking.url = "https://www.parks.ca.gov/?page_id=91" · “link “About Us” -> https://www.parks.ca.gov/?page_id=91”
+  - checkin = "2:00 p.m" · “lation policy for information on refund processing. Check In and Check Out At most parks, check-in begins at 2:00 p.m. on the reservation&rs”
+  - fees = "$10.00" · “riods, and during weekends. Prices are subject to change without notice. Vehicle Day Use: $10.00 Close View the park accessibility informati”
+  - hookups.electric = false · “rks&rsquo; reservation system, ReserveCalifornia. This includes camping (with and without hookups), equestrian camping, group camping, lodgi”
+  - lodging_booking.how = "online: www.parks.ca.gov" · “link “Parks Newsroom””
+  - lodging_booking.url = "https://www.parks.ca.gov/Newsroom" · “link “Parks Newsroom” -> https://www.parks.ca.gov/Newsroom”
+  - map.date_how = "PDF, year 2018 in the link" · “link “Campground Map (PDF)””
+  - map.url = "https://www.parks.ca.gov/pages/578/files/JuliaPfeifferBurns · “link “Campground Map (PDF)” -> https://www.parks.ca.gov/pages/578/files/JuliaPfeifferBurnsSP_CampMap2018.pdf”
+  - reservable = "mixed" · “g only. Whether use of an accessible overnight facility is subject to reservation or on a first-come first-served basis, unoccupied accessib”
+- **Beaver Creek Environmental Camp Area, Group Campground, Lone Snag, Memorial Parkway Environmental Camp Area, North Grove Campground, Oak Hollow Campground, Sugar Pine Environmental Camp, near rr 7 Nor** (intake-US-1134, agency (outside research camping-us-oct31), status ok, 12 facts) · [www.parks.ca.gov](https://www.parks.ca.gov/?page_id=551)
+  - booking.how = "online: www.parks.ca.gov" · “link “About Us””
+  - booking.url = "https://www.parks.ca.gov/?page_id=91" · “link “About Us” -> https://www.parks.ca.gov/?page_id=91”
+  - checkin = "2:00 p.m" · “lation policy for information on refund processing. Check In and Check Out At most parks, check-in begins at 2:00 p.m. on the reservation&rs”
+  - fees = "$10.00 | $12.00" · “during weekends. Prices are subject to change without notice. Vehicle Day Use (Regular): $10.00 Vehicle Day Use (Special Holiday/Seasonal/We”
+  - hookups.electric = false · “rks&rsquo; reservation system, ReserveCalifornia. This includes camping (with and without hookups), equestrian camping, group camping, lodgi”
+  - lodging_booking.how = "online: www.parks.ca.gov" · “link “Parks Newsroom””
+  - lodging_booking.url = "https://www.parks.ca.gov/Newsroom" · “link “Parks Newsroom” -> https://www.parks.ca.gov/Newsroom”
+  - map.date_how = "PDF, no date in the link" · “link “Ski Map (PDF)””
+  - map.url = "https://www.parks.ca.gov/pages/551/files/CalaverasSkiCampgr · “link “Ski Map (PDF)” -> https://www.parks.ca.gov/pages/551/files/CalaverasSkiCampgrdFlyerLR.pdf”
+  - reservable = "mixed" · “g only. Whether use of an accessible overnight facility is subject to reservation or on a first-come first-served basis, unoccupied accessib”
+- **Anacapa Island Campground; Scorpion Canyon Campground; Del Norte Backcountry Campground; Water Canyon Campground; Santa Rosa Island Backcountry Beach Camping; San Miguel Island Campground; Santa Barba** (intake-US-0014, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.recreation.gov](https://www.recreation.gov/camping/anacapa-island/r/campgroundDetails.do?contractCode=NRSO&parkId=70984)
+  - booking.how = "online: www.recreation.gov" · “link “Channel Islands National Park””
+  - booking.url = "https://www.recreation.gov/gateways/2631" · “link “Channel Islands National Park” -> https://www.recreation.gov/gateways/2631”
+  - hookups.electric = false · “/2 mile. Visitors must carry all their own gear. Primitive camping. Tent camping only, no electricity/water/sewer site hook-ups at this camp”
+  - hookups.sewer = false · “must carry all their own gear. Primitive camping. Tent camping only, no electricity/water/sewer site hook-ups at this campground. Bring low ”
+  - hookups.water = false · “/2 mile. Visitors must carry all their own gear. Primitive camping. Tent camping only, no electricity/water/sewer site hook-ups at this camp”
+  - reservable = true · “the park's authorized concessioner Island Packers or use your own private boat . Camping reservations are required prior to arriving on the ”
+  - restrooms = "vault" · “mpers must bring their own food, equipment and water. Picnic table, food storage box, and pit toilet are provided. Natural Features Waves ha”
+  - rules.fires = "campfires or charcoal fires" · “from animals. Visitors are required to pack out what they pack in, including garbage. No campfires or charcoal fires. Only enclosed gas camp”
+  - sites.total = 7 · “lity. One party or group may reserve a maximum of 2 individual sites per visit. There are 7 individual campsites. Max 4-6 people per site. U”
+- **West Ridge Trail Camp** (intake-US-1149, agency (outside research camping-us-oct31), status ok, 14 facts) · [www.parks.ca.gov](https://www.parks.ca.gov/?page_id=666)
+  - booking.how = "online: www.parks.ca.gov" · “link “About Us””
+  - booking.url = "https://www.parks.ca.gov/?page_id=91" · “link “About Us” -> https://www.parks.ca.gov/?page_id=91”
+  - checkin = "2:00 p.m" · “lation policy for information on refund processing. Check In and Check Out At most parks, check-in begins at 2:00 p.m. on the reservation&rs”
+  - fees = "$8.00 | $8 vehicle day-use fee" · “riods, and during weekends. Prices are subject to change without notice. Vehicle Day Use: $8.00 Bus, Large: $100.00 Bus, Small: $50.00 Close”
+  - hookups.electric = false · “rks&rsquo; reservation system, ReserveCalifornia. This includes camping (with and without hookups), equestrian camping, group camping, lodgi”
+  - lodging_booking.how = "online: www.parks.ca.gov" · “link “Parks Newsroom””
+  - lodging_booking.url = "https://www.parks.ca.gov/Newsroom" · “link “Parks Newsroom” -> https://www.parks.ca.gov/Newsroom”
   - map.date_how = "web page, no date in the link" · “link “Explore map of the park (opens in new tab)””
   - map.url = "https://csparks.maps.arcgis.com/apps/instant/basic/index.ht · “link “Explore map of the park (opens in new tab)” -> https://csparks.maps.arcgis.com/apps/instant/basic/index.html?appid=065b067caa204e8da48”
-  - reservable = "mixed" · “g only. Whether use of an accessible overnight facility is subject to reservation or on a first-come first-served basis, unoccupied accessib”
-- **Onyx Ranch SVRA camping** (intake-US-10635, agency (outside research camping-us-oct31), status ok, 6 facts) · [ohv.parks.ca.gov](https://ohv.parks.ca.gov/?page_id=28617)
-  - booking.how = "online: ohv.parks.ca.gov" · “link “About Us””
-  - booking.url = "https://ohv.parks.ca.gov/?page_id=1241" · “link “About Us” -> https://ohv.parks.ca.gov/?page_id=1241”
-  - hookups.electric = false · “Nighttime temperatures frequently drop below freezing in the winter, spring, and fall. No hook-ups or water for camping is available in the ”
-  - lodging_booking.how = "online: ohv.parks.ca.gov" · “link “Newsroom””
-  - lodging_booking.url = "https://ohv.parks.ca.gov/?page_id=26006" · “link “Newsroom” -> https://ohv.parks.ca.gov/?page_id=26006”
-  - restrooms = "vault" · “ping is available in the area so please plan to be self-contained if you will be camping. Pit toilets are available at several locations thr”
+  - phone = "(831) 400-8519" · “d anywhere in the park. SPECIAL EVENT PERMITS - Please call (831) 400-8519 or email SCD.specialevents@parks.ca.gov Community Groups Pl”
+- **Mt. Watson 73E; Bayview Trailhead and Day-Use Area; Camp Richardson Resort; Fallen Leaf Campground; Echo Chalet; Nevada Beach Campground and Day Use Pavilion; Meeks Bay Campground; Meeks Bay Resort; Z** (intake-US-4469, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/ltbmu/recarea/?recid=11775)
+  - booking.url = "https://www.fs.usda.gov/recarea/ltbmu/recarea/?recid=11775" · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
+  - phone = "(530) 543-2600" · “holidays. Questions? Call the Forest Supervisor's Office at 530-543-2600, during open hours. If you reach the recording, we're helpi”
+  - rules.fires = "Campfires (wood, charcoal or any other solid fuels) only pe · “e check for fire restrictions before you goCamping is permitted only in designated sites. Campfires (wood, charcoal or any other solid fuels”
+  - season = "year-round" · “g, sightseeing and much more! The Forest Supervisor's Office in South Lake Tahoe provides year-round recreation information and is open Mond”
 - **BACK OF SITE 49   -   BIKE CAMP SITES, Big Sycamore Canyon Campground, Danielson, La Jolla Canyon Group Camp, La Jolla Valley Hike In Camp, Thornhill Broome Beach Campground** (intake-US-1186, agency (outside research camping-us-oct31), status ok, 11 facts) · [www.parks.ca.gov](https://www.parks.ca.gov/?page_id=630)
   - booking.how = "online: www.parks.ca.gov" · “link “About Us””
   - booking.url = "https://www.parks.ca.gov/?page_id=91" · “link “About Us” -> https://www.parks.ca.gov/?page_id=91”
@@ -3339,136 +3302,64 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - map.date_how = "PDF, no date in the link" · “link “Campground Map (PDF)””
   - map.url = "https://www.parks.ca.gov/pages/630/files/PtMaguCampgroundHI · “link “Campground Map (PDF)” -> https://www.parks.ca.gov/pages/630/files/PtMaguCampgroundHIPDF051111.pdf”
   - reservable = "mixed" · “g only. Whether use of an accessible overnight facility is subject to reservation or on a first-come first-served basis, unoccupied accessib”
-- **Joshua Tree Campground, Joshua Tree Group Campground** (intake-US-1193, agency (outside research camping-us-oct31), status ok, 20 facts) · [www.parks.ca.gov](https://www.parks.ca.gov/?page_id=618)
+- **Back Ranch Meadows Group Camp, Back Ranch Meadows Hike/Bike, Back Ranch Meadows Walk-in Campground** (intake-US-1138, agency (outside research camping-us-oct31), status ok, 11 facts) · [www.parks.ca.gov](https://www.parks.ca.gov/?page_id=466)
   - booking.how = "online: www.parks.ca.gov" · “link “About Us””
   - booking.url = "https://www.parks.ca.gov/?page_id=91" · “link “About Us” -> https://www.parks.ca.gov/?page_id=91”
   - checkin = "2:00 p.m" · “lation policy for information on refund processing. Check In and Check Out At most parks, check-in begins at 2:00 p.m. on the reservation&rs”
-  - drinking_water = true · “le, BBQ grill, and fire ring. Most sites have a ramada to provide shade and a wind block. Potable water faucets and full restrooms with a fl”
-  - dump_station = true · “and many can accommodate longer rigs. Slots are angled for ease of backing in. Use of the RV dump station is $10 (credit card only). Group C”
-  - fees = "$6.00 | $100 per night | $3 per horse or | $6 per trailer ( · “riods, and during weekends. Prices are subject to change without notice. Vehicle Day Use: $6.00 Close Max trailer: 30 feet Max camper/motorh”
-  - hookups.electric = false · “rks&rsquo; reservation system, ReserveCalifornia. This includes camping (with and without hookups), equestrian camping, group camping, lodgi”
-  - lodging_booking.how = "online: www.parks.ca.gov" · “link “Parks Newsroom””
-  - lodging_booking.url = "https://www.parks.ca.gov/Newsroom" · “link “Parks Newsroom” -> https://www.parks.ca.gov/Newsroom”
-  - map.date_how = "web page, no date in the link" · “link “Explore map of the park (opens in new tab)””
-- **Campsites per park page** (intake-US-1180, agency (outside research camping-us-oct31), status ok, 14 facts) · [www.parks.ca.gov](https://www.parks.ca.gov/?page_id=560)
-  - booking.how = "online: www.parks.ca.gov" · “link “About Us””
-  - booking.url = "https://www.parks.ca.gov/?page_id=91" · “link “About Us” -> https://www.parks.ca.gov/?page_id=91”
-  - checkin = "2:00 p.m" · “lation policy for information on refund processing. Check In and Check Out At most parks, check-in begins at 2:00 p.m. on the reservation&rs”
-  - drinking_water = "some" · “moving eastward across the Pacheco Pass. Remember to bring a hat, sunscreen, and a lot of drinking water especially in the summer months. Pr”
-  - fees = "$10.00 | $10 day use fee per vehicle" · “riods, and during weekends. Prices are subject to change without notice. Vehicle Day Use: $10.00 Close View the park accessibility informati”
+  - fees = "$8.25 to ReserveCalifornia for cancellations" · “e for other customers to reserve or purchase. There is an additional fee in the amount of $8.25 to ReserveCalifornia for cancellations. This”
   - hookups.electric = false · “rks&rsquo; reservation system, ReserveCalifornia. This includes camping (with and without hookups), equestrian camping, group camping, lodgi”
   - lodging_booking.how = "online: www.parks.ca.gov" · “link “Parks Newsroom””
   - lodging_booking.url = "https://www.parks.ca.gov/Newsroom" · “link “Parks Newsroom” -> https://www.parks.ca.gov/Newsroom”
   - map.date_how = "web page, no date in the link" · “link “Explore map of the park (opens in new tab)””
   - map.url = "https://csparks.maps.arcgis.com/apps/instant/basic/index.ht · “link “Explore map of the park (opens in new tab)” -> https://csparks.maps.arcgis.com/apps/instant/basic/index.html?appid=065b067caa204e8da48”
-- **Campsites per park page** (intake-US-1196, agency (outside research camping-us-oct31), status ok, 14 facts) · [www.parks.ca.gov](https://www.parks.ca.gov/?page_id=518)
+  - reservable = "mixed" · “g only. Whether use of an accessible overnight facility is subject to reservation or on a first-come first-served basis, unoccupied accessib”
+- **Campsites per park page** (intake-US-1204, agency (outside research camping-us-oct31), status ok, 13 facts) · [www.parks.ca.gov](https://www.parks.ca.gov/?page_id=629)
   - booking.how = "online: www.parks.ca.gov" · “link “About Us””
   - booking.url = "https://www.parks.ca.gov/?page_id=91" · “link “About Us” -> https://www.parks.ca.gov/?page_id=91”
   - checkin = "2:00 p.m" · “lation policy for information on refund processing. Check In and Check Out At most parks, check-in begins at 2:00 p.m. on the reservation&rs”
-  - drinking_water = true · “r target. The park has family picnic sites near the park entrance. Tables, barbecue pits, drinking water and a restroom are also available. ”
-  - fees = "$6.00" · “riods, and during weekends. Prices are subject to change without notice. Vehicle Day Use: $6.00 Close View the park accessibility informatio”
+  - fees = "$10.00" · “hange without notice. Dead Horse Lot Hourly Parking: $3.00 Trippet Ranch Vehicle Day Use: $10.00 Dead Horse Lot Vehicle Day Use: $10.00 Clos”
   - hookups.electric = false · “rks&rsquo; reservation system, ReserveCalifornia. This includes camping (with and without hookups), equestrian camping, group camping, lodgi”
   - lodging_booking.how = "online: www.parks.ca.gov" · “link “Parks Newsroom””
   - lodging_booking.url = "https://www.parks.ca.gov/Newsroom" · “link “Parks Newsroom” -> https://www.parks.ca.gov/Newsroom”
   - map.date_how = "web page, no date in the link" · “link “Explore map of the park (opens in new tab)””
   - map.url = "https://csparks.maps.arcgis.com/apps/instant/basic/index.ht · “link “Explore map of the park (opens in new tab)” -> https://csparks.maps.arcgis.com/apps/instant/basic/index.html?appid=065b067caa204e8da48”
+  - reservable = "mixed" · “g only. Whether use of an accessible overnight facility is subject to reservation or on a first-come first-served basis, unoccupied accessib”
+- **Dumna Strand, Fort Miller, Meadows, Mono Campground, North Shore - Large Group Camp, North Shore - Small Group Camp, North Shore CG - Horse Camp, North Shore Horse Camp Area, Rocky Point Campground, T** (intake-US-8325, agency (outside research camping-us-oct31), status ok, 13 facts) · [www.parks.ca.gov](https://www.parks.ca.gov/?page_id=587)
+  - booking.how = "online: www.parks.ca.gov" · “link “About Us””
+  - booking.url = "https://www.parks.ca.gov/?page_id=91" · “link “About Us” -> https://www.parks.ca.gov/?page_id=91”
+  - checkin = "2:00 p.m" · “lation policy for information on refund processing. Check In and Check Out At most parks, check-in begins at 2:00 p.m. on the reservation&rs”
+  - fees = "$12.00 | $10.00" · “and during weekends. Prices are subject to change without notice. Vehicle Day Use (Peak): $12.00 Vehicle Day Use: $10.00 Close Max trailer: ”
+  - hookups.electric = false · “rks&rsquo; reservation system, ReserveCalifornia. This includes camping (with and without hookups), equestrian camping, group camping, lodgi”
+  - lodging_booking.how = "online: www.parks.ca.gov" · “link “Parks Newsroom””
+  - lodging_booking.url = "https://www.parks.ca.gov/Newsroom" · “link “Parks Newsroom” -> https://www.parks.ca.gov/Newsroom”
+  - map.date_how = "PDF, no date in the link" · “link “Campground Map (PDF)””
+  - map.url = "https://www.parks.ca.gov/pages/587/files/MillertonLakeSRA_H · “link “Campground Map (PDF)” -> https://www.parks.ca.gov/pages/587/files/MillertonLakeSRA_HighResMap_7-14-22.pdf”
+  - reservable = "mixed" · “g only. Whether use of an accessible overnight facility is subject to reservation or on a first-come first-served basis, unoccupied accessib”
+- **Deer Canyon EC, Lower Moro Ridge Environmental Campground, Moro Campground, Upper Moro Ridge Environmental Campground** (intake-US-1141, agency (outside research camping-us-oct31), status ok, 11 facts) · [www.parks.ca.gov](https://www.parks.ca.gov/?page_id=644)
+  - booking.how = "online: www.parks.ca.gov" · “link “About Us””
+  - booking.url = "https://www.parks.ca.gov/?page_id=91" · “link “About Us” -> https://www.parks.ca.gov/?page_id=91”
+  - checkin = "2:00 p.m" · “lation policy for information on refund processing. Check In and Check Out At most parks, check-in begins at 2:00 p.m. on the reservation&rs”
+  - fees = "$8.25 to ReserveCalifornia for cancellations" · “e for other customers to reserve or purchase. There is an additional fee in the amount of $8.25 to ReserveCalifornia for cancellations. This”
+  - hookups.electric = false · “rks&rsquo; reservation system, ReserveCalifornia. This includes camping (with and without hookups), equestrian camping, group camping, lodgi”
+  - lodging_booking.how = "online: www.parks.ca.gov" · “link “Parks Newsroom””
+  - lodging_booking.url = "https://www.parks.ca.gov/Newsroom" · “link “Parks Newsroom” -> https://www.parks.ca.gov/Newsroom”
+  - map.date_how = "PDF, year 2011 in the link" · “link “Campground Map (PDF)””
+  - map.url = "https://www.parks.ca.gov/pages/644/files/CrystalCoveMoroCam · “link “Campground Map (PDF)” -> https://www.parks.ca.gov/pages/644/files/CrystalCoveMoroCampMap2011Rev.pdf”
+  - reservable = "mixed" · “g only. Whether use of an accessible overnight facility is subject to reservation or on a first-come first-served basis, unoccupied accessib”
 
 ## US-OR: 12 random samples (records with facts; seed = the date)
 
-- **Duncan Reservoir Campground** (intake-US-10024, agency (outside research camping-us-oct31), status ok, 7 facts) · [www.recreation.gov](https://www.recreation.gov/camping/poi/262741)
-  - booking.how = "online: www.recreation.gov" · “link “Login””
-  - booking.url = "https://www.recreation.gov/log-in" · “link “Login” -> https://www.recreation.gov/log-in”
-  - drinking_water = false · “-31. Four individual campsites, 1 group site; first come, first serve. Vault restroom. No drinking water available. No food or gas at Duncan”
-  - reservable = false · “razing on the open range, especially near OR-31. Four individual campsites, 1 group site; first come, first serve. Vault restroom. No drinki”
-  - restrooms = "vault" · “reservoir, below the dam. Additional facilities at Duncan Reservoir include a boat ramp, vault toilet, covered picnic area, and several picn”
-  - season = "year-round" · “winter months, ice fishing is possible if the reservoir freezes over. Know Before You Go Open year-round. The 5-mile portion of County Road ”
-  - sites.group = 1 · “of livestock grazing on the open range, especially near OR-31. Four individual campsites, 1 group site; first come, first serve. Vault restr”
-- **Sunset Bay State Park** (US-2856, state, status ok, 15 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=70)
+- **Prineville Reservoir State Park** (US-2849, state, status ok, 15 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=26)
   - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
   - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
-  - drinking_water = false · “ctivity or event: The amphitheater has bench seating There is no electricity at the site, water spigot located nearby Gazebo reservation str”
-  - hookups.electric = "some" · “eparks.reserveamerica.com . Reservations required for yurt stays. 30 full-hookup sites 35 electrical sites with water 65 tent sites with wat”
+  - dump_station = "some" · “keside trail connects the two campgrounds. Dump Station Fee There is a $10 fee to use the dump station. You can pay by scanning the QR code ”
+  - fees = "$10 fee to use the dump station" · “ervable cabin. A lakeside trail connects the two campgrounds. Dump Station Fee There is a $10 fee to use the dump station. You can pay by sc”
+  - hookups.electric = true · “The viewpoint is open from 6 a.m. to 10 p.m. See the map on the brochure below. Drive an electric vehicle? EV charging stations will be avai”
   - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
   - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
-  - phone = "(541) 888-0982" · “of programs, visit the Interpretive Center on site or call 541-888-0982 for more info on planning your visit. Shore Acres Holiday L”
-  - reservable = "mixed" · “your plans and possible permits, fees or insurance requirements. Events on the beach are first-come, first-served. Depending on the event, y”
-  - restrooms = "flush" · “water nearby 8 yurts (4 pet-friendly) Reservations Required Meeting Hall Hiker/biker camp Flush toilets and hot showers (campers only) Firew”
-  - rules.pets = "pet-friendly) Reservations Required" · “ll-hookup sites 35 electrical sites with water 65 tent sites with water nearby 8 yurts (4 pet-friendly) Reservations Required Meeting Hall H”
-- **Smith Rock State Park** (US-2853, state, status ok, 14 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=36)
-  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
-  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
-  - drinking_water = false · “ber 15th (weather permitting) 70 standard campsites, no hookups or dumping facilities, no drinking water, on-site campground host. Can I mak”
-  - fees = "$12.00 per person per night" · “at the fee station located at the entrance to the Bivouac camping area. Camping fees are $12.00 per person per night. Are campfires allowed ”
-  - hookups.electric = false · “pen seasonally, March 15th - November 15th (weather permitting) 70 standard campsites, no hookups or dumping facilities, no drinking water, ”
-  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
-  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
-  - phone = "(541) 548-7501" · “at Smith Rock State Park, please call the state park office (541-548-7501) at least 24 hours in advance. Learn more in the FAQ 'Do I”
-  - phone_hint = "(800) 551-6949" · “parking permit (1-day purchased on-site) Buy 12-month permit mdi-cellphone Call for info: 800-551-6949 Call for park info: 541-548-7501 Curr”
-  - reservable = "mixed" · “s open early spring through late fall, as weather allows. Walk-in bivouac area for tents (No reservations) Showers (overnight guests only) R”
-- **Detroit Lake State Recreation Area** (US-9143, state, status ok, 20 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=65)
-  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
-  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
-  - dump_station = "some" · “le fee, paid upon arrival at the park. The extra vehicle fee is $10 per night. Is there a dump station at the campground&#x3f; No, there is ”
-  - fees = "$10 per night" · “s subject to a extra vehicle fee, paid upon arrival at the park. The extra vehicle fee is $10 per night. Is there a dump station at the camp”
-  - hookups.electric = "some" · “) Four open Oct. 1&ndash;April 30; two remain open until May 31. 107 full-hookup sites 68 electrical sites with water 96 tent sites with wat”
-  - hookups.sewer = true · “&#x3f; No, there is not a dump station at the campground. You will have to get one of the full hookup (power, sewer, water) sites if you nee”
-  - hookups.water = true · “&#x3f; No, there is not a dump station at the campground. You will have to get one of the full hookup (power, sewer, water) sites if you nee”
-  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
-  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
-  - phone = "(503) 854-3766" · “00-452-5687 Call for info: 800-551-6949 Call for park info: 503-854-3766 Current Conditions Directions Feedback Maps Access key maps”
-- **Fort Stevens State Park** (US-2829, state, status ok, 19 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=129)
-  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
-  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
-  - dump_station = "some" · “e accessible to campers with disabilities. Dump Station Fee There is a $10 fee to use the dump station. You can pay by scanning the QR code ”
-  - fees = "$10 fee to use the dump station" · “ins and 10 yurts are accessible to campers with disabilities. Dump Station Fee There is a $10 fee to use the dump station. You can pay by sc”
-  - hookups.electric = true · “arn more The campground is set to receive upgrades to the aging infrastructure, including utilities. The South Loops are currently closed wh”
-  - hookups.sewer = true · “months in advance at oregonstateparks.reserveamerica.com . Reservations are required. 174 full-hookup sites (36 pull-through) 302 electrical”
-  - hookups.water = true · “months in advance at oregonstateparks.reserveamerica.com . Reservations are required. 174 full-hookup sites (36 pull-through) 302 electrical”
-  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
-  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
-  - phone = "(503) 861-2000" · “r tour information, call the Friends of Old Fort Stevens at 503-861-2000. 2025 construction update General obligation bonds approved”
-- **Government Island dispersed shoreline camping** (intake-US-9551, agency (outside research camping-us-oct31), status ok (browser), 8 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=169)
-  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
-  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
-  - fees = "$10 per year for ninety-nine years" · “res to Metro, the regional government agency, and leased the remaining acreage to OPRD at $10 per year for ninety-nine years. Photos 0" titl”
-  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
-  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
-  - phone = ["(503) 281-0944", "(503) 695-2261"] · “i-cellphone Call for info: 800-551-6949 Call for park info: 503-281-0944, 503-695-2261 Current Conditions Directions Feedback Amenit | ll fo”
-  - restrooms = "vault" · “mitted below the vegetation line around the perimeter; there are no designated campsites. Pit toilets and picnic tables with barbecue grills”
-  - rules.fires = "firewood , must stay within the county where they were coll · “zone for all ash, olive, and white fringe tree materials. These tree materials, including firewood , must stay within the county where they ”
-- **Silver Falls State Park** (US-2852, state, status ok, 20 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=151)
-  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
-  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
-  - dump_station = "some" · “lls Group site for 24 people and 12 horses Dump Station Fee There is a $10 fee to use the dump station. You can pay by scanning the QR code ”
-  - fees = "$10 fee to use the dump station | $7.00 per bundle and ice  · “ites with horse stalls Group site for 24 people and 12 horses Dump Station Fee There is a $10 fee to use the dump station. You can pay by sc”
-  - hookups.electric = true · “evelopment of a campground at the North Gateway has been put on hold. Learn more Drive an electric vehicle? EV charging stations are availab”
-  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
-  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
-  - map.date_how = "web page, year 2024 in the link" · “link “trail map””
-  - map.url = "https://stateparks.oregon.gov/index.cfm?do=main.loadFile&am · “link “trail map” -> https://stateparks.oregon.gov/index.cfm?do=main.loadFile&amp;load=_siteFiles%2Fpublications%2F%2F202”
-  - phone = "(503) 873-8681" · “00-452-5687 Call for info: 800-551-6949 Call for park info: (503)873-8681 mdi-heart-outline You may also like Cascadia State Park Cur”
-- **L.L. Stub Stewart State Park** (US-2838, state, status ok, 18 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=75)
-  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
-  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
-  - checkin = "4 p.m" · “d in a cabin. When can we check-in to our campsite or cabin&#x3f; When is check-out&#x3f; Check-in is at 4 p.m. Check-out is at 1 p.m. for a”
-  - checkout = "1 p.m" · “we check-in to our campsite or cabin&#x3f; When is check-out&#x3f; Check-in is at 4 p.m. Check-out is at 1 p.m. for all reservations. If you”
-  - hookups.electric = "some" · “ote: Trails are multi-use and shared by equestrians, mountain bikers and hikers. Drive an electric vehicle? Three EV charging stations are a”
-  - hookups.sewer = "some" · “fits your style. The Dairy Creek Campground offers a typical camping experience with both full hook-up sites and non-hookup tent sites to ch”
-  - hookups.water = true · “fits your style. The Dairy Creek Campground offers a typical camping experience with both full hook-up sites and non-hookup tent sites to ch”
-  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
-  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
-  - phone = "(503) 324-0606" · “00-452-5687 Call for info: 800-551-6949 Call for park info: 503-324-0606 Current Conditions Directions Feedback Maps Access key maps”
-- **Nehalem Bay State Park** (US-2845, state, status ok, 18 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=142)
-  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
-  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
-  - drinking_water = true · “ith two separate stalls. Sites 3, 5, 15 and 17 feature corrals with four separate stalls. Drinking water is available at standpipes in the a”
-  - dump_station = "some" · “ion Playgrounds One extra vehicle per site Dump Station Fee There is a $10 fee to use the dump station. You can pay by scanning the QR code ”
-  - fees = "$10 fee to use the dump station" · “psites RV dump station Playgrounds One extra vehicle per site Dump Station Fee There is a $10 fee to use the dump station. You can pay by sc”
-  - hookups.electric = true · “Work was completed Fall 2025 to add a new restroom and shower building, upgrade existing utilities, improve accessible campsites and repave ”
-  - hookups.sewer = true · “of demand and keeping the park in service for the long run. Does everyone need to pay the sewer dump station fee&#x3f; There is a $10 fee, p”
-  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
-  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
-  - phone = "(503) 812-0650" · “00-452-5687 Call for info: 800-551-6949 Call for park info: 503-812-0650 mdi-heart-outline You may also like Cape Blanco State Park”
+  - phone = "(541) 447-4363" · “00-452-5687 Call for info: 800-551-6949 Call for park info: 541-447-4363 Current Conditions Current Reservoir Levels Directions Feed”
+  - reservable = "mixed" · “he main campground, Jasper Point is a small, quiet loop with 28 electrical sites that are first-come, first-served, and one reservable cabin”
+  - restrooms = "flush" · “ites with water 23 tent sites with water nearby Five deluxe log cabins (one pet-friendly) Flush toilets and hot showers Firewood and ice for”
 - **South Beach State Park** (US-2854, state, status ok, 13 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=149)
   - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
   - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
@@ -3480,17 +3371,94 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - phone = "(541) 867-4715" · “00-452-5687 Call for info: 800-551-6949 Call for park info: 541-867-4715 Current Conditions Directions Feedback Key destinations at”
   - reservable = true · “ping Book reservations up to 6 months in advance at oregonstateparks.reserveamerica.com . Reservations required for yurt stays. 227 electric”
   - restrooms = "flush" · “27 electrical sites with water 60 tent sites 27 yurts 3 group tent camps Hiker/Biker camp Flush toilets and showers Firewood for sale RV dum”
-- **Minam campground; Minam Station day-use area (not a campground)** (US-9564:hq0, state, status ok, 10 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=19)
+- **Carl G. Washburne Memorial State Park** (US-2820, state, status ok, 18 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=85)
   - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
   - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
+  - dump_station = true · “iker camp 2 yurts (one pet-friendly ) RESERVATIONS REQUIRED Flush toilets and hot showers RV dump station, located in the day-use area west ”
+  - hookups.electric = true · “ce. See our March 17 news release for details. The main campground features 55 sites with electrical and water hookups, and two yurts. Some ”
+  - hookups.sewer = true · “s are a short hike from the tent parking area and share a restroom with flush toilets. 50 full-hookup sites (electric, sewage, water) 5 elec”
+  - hookups.water = true · “ce. See our March 17 news release for details. The main campground features 55 sites with electrical and water hookups, and two yurts. Some ”
   - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
   - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
-  - phone = "(541) 432-8855" · “i-cellphone Call for info: 800-551-6949 Call for park info: 541-432-8855 Current Conditions Directions Feedback Maps Access key maps”
-  - phone_hint = "(800) 551-6949" · “&ndash; Nov 30 mdi-car-side First-come, first-served camping mdi-cellphone Call for info: 800-551-6949 Call for park info: 541-432-8855 Curr”
-  - reservable = false · “al host Vault toilets Trails mdi-tent Open for camping Mar 10 &ndash; Nov 30 mdi-car-side First-come, first-served camping mdi-cellphone Cal”
-  - restrooms = "flush + vault" · “am and Wallowa Rivers. This quiet campground is truly off the beaten path. You won't find flush restrooms or crowds; you will share the spac”
-  - rules.fires = "Campfires are allowed only in the overnight campground area · “g along the Wallowa River&#x3f; Fires of any kind are not allowed along the Wallowa River Campfires are allowed only in the overnight campgr”
-  - sites.primitive = 22 · “a national forests, the campground is gateway to miles of hiking trails. Seasonal Camping 22 primitive sites with water, water is available ”
+  - phone = "(541) 547-3416" · “00-452-5687 Call for info: 800-551-6949 Call for park info: 541-547-3416 mdi-heart-outline You may also like Alfred A. Loeb State Pa”
+  - reservable = "mixed" · “on Coast Trail ; backpackers can stop over in the campground's hiker/biker camp, which is first-come, first-served for those arriving on foo”
+- **Farewell Bend State Recreation Area** (US-9147, state, status ok, 14 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=4)
+  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
+  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
+  - dump_station = "some" · “cleaning station Fenced off-leash pet area Dump Station Fee There is a $10 fee to use the dump station. You can pay by scanning the QR code ”
+  - fees = "$10 fee to use the dump station" · “dump station Fish cleaning station Fenced off-leash pet area Dump Station Fee There is a $10 fee to use the dump station. You can pay by sca”
+  - hookups.electric = true · “the Oregon Department of Fish and Wildlife . Current water levels are posted on the Idaho Power website . The park is open for day-use year-”
+  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
+  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
+  - phone = "(541) 869-2365" · “00-452-5687 Call for info: 800-551-6949 Call for park info: 541-869-2365 mdi-heart-outline You may also like Unity Lake State Recrea”
+  - reservable = "mixed" · “from the second Thurs. in April until the last Tues. of Oct., weather permitting. Limited first-come, first-served camping may be available ”
+  - restrooms = "flush" · “Two accessible log cabins; one is pet-friendly . Reservations required. Other amenities: Flush toilets and hot showers Firewood and ice for ”
+- **Beverly Beach State Park** (US-2813, state, status ok, 14 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=164)
+  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
+  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
+  - dump_station = "some" · “shelters Welcome Center Yurt meeting hall Dump Station Fee There is a $10 fee to use the dump station. You can pay by scanning the QR code p”
+  - fees = "$10 fee to use the dump station" · “) Reservable picnic shelters Welcome Center Yurt meeting hall Dump Station Fee There is a $10 fee to use the dump station. You can pay by sc”
+  - hookups.electric = true · “to 6 months in advance at oregonstateparks.reserveamerica.com . 53 full-hook up sites 76 electrical sites with water (32 pull-through) 128 t”
+  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
+  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
+  - phone = "(541) 265-9278" · “00-452-5687 Call for info: 800-551-6949 Call for park info: 541-265-9278 mdi-heart-outline You may also like South Beach State Park”
+  - reservable = true · “icnic area is a grassy spot protected from summer winds. The day-use area also contains a reservable group meeting yurt. Year-round Camping ”
+  - restrooms = "flush" · “p sites 76 electrical sites with water (32 pull-through) 128 tent sites with water nearby Flush toilets and showers 21 Yurts 3 seasonal grou”
+- **Fort Stevens State Park** (US-2829, state, status ok, 19 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=129)
+  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
+  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
+  - dump_station = "some" · “e accessible to campers with disabilities. Dump Station Fee There is a $10 fee to use the dump station. You can pay by scanning the QR code ”
+  - fees = "$10 fee to use the dump station" · “ins and 10 yurts are accessible to campers with disabilities. Dump Station Fee There is a $10 fee to use the dump station. You can pay by sc”
+  - hookups.electric = true · “arn more The campground is set to receive upgrades to the aging infrastructure, including utilities. The South Loops are currently closed wh”
+  - hookups.sewer = true · “months in advance at oregonstateparks.reserveamerica.com . Reservations are required. 174 full-hookup sites (36 pull-through) 302 electrical”
+  - hookups.water = true · “months in advance at oregonstateparks.reserveamerica.com . Reservations are required. 174 full-hookup sites (36 pull-through) 302 electrical”
+  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
+  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
+  - phone = "(503) 861-2000" · “r tour information, call the Friends of Old Fort Stevens at 503-861-2000. 2025 construction update General obligation bonds approved”
+- **Collier Memorial State Park** (US-2824, state, status ok, 18 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=165)
+  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
+  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
+  - drinking_water = true · “that extends for 10+ miles The dump station is available when the campground is open. The potable water fill station at the dump station is ”
+  - dump_station = "some" · “in campground Trailhead for USFS Rd 390, a multi-use trail that extends for 10+ miles The dump station is available when the campground is o”
+  - features = "fire pit" · “over a grand adventure at Collier. Seasonal Camping All campsites have a picnic table and fire pit. Book reservations up to 6 months in adva”
+  - fees = "$10 fee to use the dump station" · “s A30, A27 & B15 are accessible to campers with disabilities. Dump Station Fee There is a $10 fee to use the dump station. You can pay by sc”
+  - hookups.electric = "some" · “non-hookup sites with water nearby Restroom with hot showers and flush toilets B Loop 30 full-hookup sites (nine pull-through) Restroom with”
+  - hookups.sewer = true · “non-hookup sites with water nearby Restroom with hot showers and flush toilets B Loop 30 full-hookup sites (nine pull-through) Restroom with”
+  - hookups.water = true · “non-hookup sites with water nearby Restroom with hot showers and flush toilets B Loop 30 full-hookup sites (nine pull-through) Restroom with”
+  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
+- **L.L. Stub Stewart State Park** (US-2838, state, status ok, 18 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=75)
+  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
+  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
+  - checkin = "4 p.m" · “d in a cabin. When can we check-in to our campsite or cabin&#x3f; When is check-out&#x3f; Check-in is at 4 p.m. Check-out is at 1 p.m. for a”
+  - checkout = "1 p.m" · “we check-in to our campsite or cabin&#x3f; When is check-out&#x3f; Check-in is at 4 p.m. Check-out is at 1 p.m. for all reservations. If you”
+  - hookups.electric = "some" · “ote: Trails are multi-use and shared by equestrians, mountain bikers and hikers. Drive an electric vehicle? Three EV charging stations are a”
+  - hookups.sewer = "some" · “fits your style. The Dairy Creek Campground offers a typical camping experience with both full hook-up sites and non-hookup tent sites to ch”
+  - hookups.water = true · “fits your style. The Dairy Creek Campground offers a typical camping experience with both full hook-up sites and non-hookup tent sites to ch”
+  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
+  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
+  - phone = "(503) 324-0606" · “00-452-5687 Call for info: 800-551-6949 Call for park info: 503-324-0606 Current Conditions Directions Feedback Maps Access key maps”
+- **The Cove Palisades State Park** (US-2857, state, status ok, 16 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=24)
+  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
+  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
+  - dump_station = true · “ervable picnic shelter 21 reservable boat moorages at oregonstateparks.reserveamerica.com RV dump station (E Loop) Marine pump-out station, ”
+  - hookups.electric = true · “h Loop are open seasonally (March through October). The North Loop is open year-round. 91 electrical sites with water Flush toilets and hot ”
+  - hookups.sewer = true · “River Campground (A, B, C Loops) Open seasonally (May 9 through mid-Sep) A and C Loop: 87 full hookup sites B Loop: 93 tent sites with water”
+  - hookups.water = true · “River Campground (A, B, C Loops) Open seasonally (May 9 through mid-Sep) A and C Loop: 87 full hookup sites B Loop: 93 tent sites with water”
+  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
+  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
+  - reservable = true · “k Crooked River arm of the lake (25 people max in each site) Reservable picnic shelter 21 reservable boat moorages at oregonstateparks.reser”
+  - restrooms = "flush" · “March through October). The North Loop is open year-round. 91 electrical sites with water Flush toilets and hot showers Deschutes River Camp”
+- **Jessie M. Honeyman Memorial State Park** (US-2837, state, status ok, 19 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=95)
+  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
+  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
+  - dump_station = "some" · “e accessible to campers with disabilities. Dump Station Fee There is a $10 fee to use the dump station. You can pay by scanning the QR code ”
+  - fees = "$10 fee to use the dump station" · “es and two yurts are accessible to campers with disabilities. Dump Station Fee There is a $10 fee to use the dump station. You can pay by sc”
+  - hookups.electric = true · “tes available. Book up to 6 months in advance at oregonstateparks.reserveamerica.com . 47 full-hookup sites -- reservations required 121 ele”
+  - hookups.sewer = true · “tes available. Book up to 6 months in advance at oregonstateparks.reserveamerica.com . 47 full-hookup sites -- reservations required 121 ele”
+  - hookups.water = true · “tes available. Book up to 6 months in advance at oregonstateparks.reserveamerica.com . 47 full-hookup sites -- reservations required 121 ele”
+  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
+  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
+  - phone = ["(541) 997-3641", "(541) 997-3851"] · “for info: 800-551-6949 Call for park info: Campground Booth 541-997-3641; Office 541-997-3851 mdi-heart-outline You may also like Wi | 9 Cal”
 - **Viento State Park** (US-2862, state, status ok, 16 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=123)
   - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
   - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
@@ -3502,77 +3470,29 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - phone = "(541) 374-8811" · “ces. For more information, please call Viento State Park at 541-374-8811. Resources Friends of the Columbia Gorge US Forest Service”
   - phone_hint = "(503) 695-2261" · “h through October 31 What&#x27;s Allowed Can I fly my drone in the park&#x3f; Please call 503-695-2261 for park specific rules Can I metal d”
   - reservable = true · “water 5 tent sites with water nearby Flush toilets and hot showers Universal Access: One reservable campsite accessible to campers with disa”
+- **Cape Blanco State Park** (US-2818, state, status ok, 13 facts) · [stateparks.oregon.gov](https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId=44)
+  - booking.how = "online: stateparks.oregon.gov" · “link “Reserve””
+  - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
+  - dump_station = false · “d 24 vehicles) CLOSED Hiker/biker camp Firewood for sale Flush toilets and hot showers No dump station Universal Access: two sites and one c”
+  - hookups.electric = true · “advance at our partner site, oregonstateparks.reserveamerica.com . 4 full-hookup sites 52 electrical sites with water Four reservable standa”
+  - lodging_booking.how = "online: stateparks.oregon.gov" · “link “Cabins and Yurts””
+  - lodging_booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-y · “link “Cabins and Yurts” -> https://stateparks.oregon.gov/index.cfm?do=reserve.cabins-yurts”
+  - phone = "(541) 332-6774" · “00-452-5687 Call for info: 800-551-6949 Call for park info: 541-332-6774 mdi-heart-outline You may also like Humbug Mountain State P”
+  - reservable = true · “accepted). The museum is not ADA accessible. Bring your Horse The horse camp offers eight reservable sites&mdash;six with dual corrals and t”
+  - restrooms = "flush" · “mp Group camp (up to 50 people and 24 vehicles) CLOSED Hiker/biker camp Firewood for sale Flush toilets and hot showers No dump station Univ”
+  - rules.pets = "pet-friendly" · “. 4 full-hookup sites 52 electrical sites with water Four reservable standard cabins (two pet-friendly; see our Pets in Parks FAQ for more i”
 
 ## US-WA: 12 random samples (records with facts; seed = the date)
 
-- **Big Creek Campground; Brown Creek Campground; Dungeness Forks Campground; Falls View Campground; Hamma Hamma Cabin; Hamma Hamma Campground; Interrorem Cabin; Lebar Horse Camp; Seal Rock Campground; Kl** (intake-US-4532, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/olympic/recarea/?recid=47789)
-  - booking.url = "https://www.fs.usda.gov/recarea/olympic/recarea/?recid=4778 · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
-  - restrooms = "vault" · “h Fork Skokomish River on north side of Lake Cushman Reservoir. A few picnic tables and a vault toilet are available.… Big Creek Campground ”
-- **Primitive campsites (first-come)** (intake-US-3210, agency (outside research camping-us-oct31), status ok (browser), 9 facts) · [www.parks.wa.gov](https://www.parks.wa.gov/528/Kinney-Point)
-  - booking.url = "https://www.parks.wa.gov/528/Kinney-Point" · “booking link from our outside research (camping, in the park) row (official system www.parks.wa.gov)”
-  - fees = "$12/night through self-registration onsite" · “by boat for human and wind powered watercraft users. Primitive/water trail campsites are $12/night through self-registration onsite. No garb”
-  - map.date_how = "PDF, year 2025 in the link" · “link “Map and Recreation Guide (PDF)””
-  - map.url = "https://parks.wa.gov/sites/default/files/2025-11/Washington · “link “Map and Recreation Guide (PDF)” -> https://parks.wa.gov/sites/default/files/2025-11/Washington%20State%20Parks%20Recreation%20Guide%20”
-  - phone = "(360) 902-8844" · “m. - Dusk year round Fees See more about fees Contact Phone (360) 902-8844 Get Directions Map & visitor guide Locate Map Satellite Key”
-  - reservable = false · “hrough the 67-acre park. Camping Three primitive/water trail campsites are available on a first-come, first-served basis. There is one vault”
-  - restrooms = "vault" · “ive/water trail campsites are available on a first-come, first-served basis. There is one vault toilet. Part of the Cascadia Marine Trail , ”
-  - rules.fires = "fire pits in designated areas" · “Level 2 Posted on: September 18, 2026 Ends on: December 31, 2026 Wood fires restricted to fire pits in designated areas. Gas and propane all”
-  - rules.pets = "Dogs Allowed on Leash" · “usk year round Fees See more about fees Contact Phone (360) 902-8844 Get Directions Rules Dogs Allowed on Leash Fires not Allowed Boat-in On”
-- **Primitive campsites (first-come)** (intake-US-3283, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [www.parks.wa.gov](https://www.parks.wa.gov/295/Turn-Island)
-  - booking.url = "https://www.parks.wa.gov/295/Turn-Island" · “booking link from our outside research (camping, in the park) row (official system www.parks.wa.gov)”
-  - drinking_water = false · “and dogs are not permitted on the island anytime due to the wildlife sensitive areas. No potable water is available. No garbage services on ”
-  - map.date_how = "PDF, year 2025 in the link" · “link “Map and Recreation Guide (PDF)””
-  - map.url = "https://parks.wa.gov/sites/default/files/2025-11/Washington · “link “Map and Recreation Guide (PDF)” -> https://parks.wa.gov/sites/default/files/2025-11/Washington%20State%20Parks%20Recreation%20Guide%20”
-  - phone = "(360) 378-2044" · “e more about fees Contact Email limekiln@parks.wa.gov Phone (360) 378-2044 Get Directions Map & visitor guide Locate Map Satellite Key”
-  - reservable = false · “es The park provides unsheltered picnic tables for day-use visitors. Tables are available first-come, first-served. Camping Primitive campsi”
-  - restrooms = "yes (kind not stated)" · “and Wildlife Service owns the land, and Washington State Parks manages the campsites and restrooms. Boating Turn Island offers two buoys. Ph”
-  - rules.pets = "Dogs not Allowed" · “about fees Contact Email limekiln@parks.wa.gov Phone (360) 378-2044 Get Directions Rules Dogs not Allowed Fires not Allowed Horses not Allow”
-- **Primitive campsites (first-come)** (intake-US-3233, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 7 facts) · [www.parks.wa.gov](https://www.parks.wa.gov/548/Mount-Pilchuck)
-  - booking.url = "https://www.parks.wa.gov/548/Mount-Pilchuck" · “booking link from our outside research (camping, in the park) row (official system www.parks.wa.gov)”
-  - map.date_how = "PDF, year 2023 in the link" · “link “Mount Pilchuck full color Map.pdf””
-  - map.url = "https://parks.wa.gov/sites/default/files/2023-03/Mount%20Pi · “link “Mount Pilchuck full color Map.pdf” -> https://parks.wa.gov/sites/default/files/2023-03/Mount%20Pilchuck%20full%20color%20Map.pdf”
-  - phone = "(360) 793-0420" · “e about fees Contact Email wallace.falls@parks.wa.gov Phone (360) 793-0420 Get Directions Map & visitor guide Locate Map Satellite Key”
-  - reservable = false · “mall camping area is located near the trailhead. Space is extremely limited and available first-come, first-served. Picnic and day use facil”
-  - restrooms = "yes (kind not stated)" · “uires a Northwest Forest or America the Beautiful pass . The Forest Service maintains the restroom and picnic area. The access road to the M”
-  - rules.pets = "Dogs Allowed on Leash" · “t Email wallace.falls@parks.wa.gov Phone (360) 793-0420 Get Directions Rules Day-Use Only Dogs Allowed on Leash Fires not Allowed See all ot”
-- **Primitive campsites (first-come)** (intake-US-3172, agency (outside research camping-us-oct31), status ok, 10 facts) · [parks.wa.gov](https://parks.wa.gov/find-parks/state-parks/clark-island-marine-state-park)
-  - booking.url = "https://parks.wa.gov/find-parks/state-parks/clark-island-ma · “booking link from our outside research (camping, in the park) row (official system parks.wa.gov)”
-  - map.date_how = "PDF, year 2025 in the link" · “link “Map and Recreation Guide (PDF)””
-  - map.url = "https://parks.wa.gov/sites/default/files/2025-11/Washington · “link “Map and Recreation Guide (PDF)” -> https://parks.wa.gov/sites/default/files/2025-11/Washington%20State%20Parks%20Recreation%20Guide%20”
-  - phone_hint = "(360) 376-2073" · “e - Buoys: $23 for buoy See more about fees Contact Email Sucia.Island@PARKS.WA.GOV Phone (360) 376-2073 Get Directions Rules Dogs Allowed o”
-  - reservable = false · “has 15 campsites, one composting toilet and two vault toilets. Camping is available on a first-come, first-served basis. Campsites are open ”
-  - restrooms = "vault" · “sunrises and sunsets from your tent pitched on the beach. The park has 15 campsites, one composting toilet and two vault toilets. Camping is”
+- **Primitive campsites (first-come)** (intake-US-3260, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [www.parks.wa.gov](https://www.parks.wa.gov/576/Saddlebag-Island)
+  - booking.url = "https://www.parks.wa.gov/576/Saddlebag-Island" · “booking link from our outside research (camping, in the park) row (official system www.parks.wa.gov)”
+  - drinking_water = false · “res Allowed in Designated Areas Boat-in Only See all other general park rules There is no potable water on the island. There is no garbage s”
+  - map.date_how = "PDF, year 2023 in the link" · “link “Saddlebag Island State Park Map.pdf””
+  - map.url = "https://parks.wa.gov/sites/default/files/2023-05/Saddlebag% · “link “Saddlebag Island State Park Map.pdf” -> https://parks.wa.gov/sites/default/files/2023-05/Saddlebag%20Island%20State%20Park%20Map.pdf”
+  - phone = "(360) 376-2073" · “re about fees Contact Email sucia.island@parks.wa.gov Phone (360) 376-2073 Get Directions Map & visitor guide Locate Map Satellite Key”
+  - reservable = false · “lable. Camping Four primitive campsites include a picnic table and firepit, are available first-come, first-served. One campsite is part of ”
   - rules.fires = "fire pits and grills" · “main content Menu Search Search Alerts Burn Ban - Level 1 Fires allowed in all designated fire pits and grills. Propane and gas grills allow”
-  - rules.pets = "Dogs Allowed on Leash" · “ut fees Contact Email Sucia.Island@PARKS.WA.GOV Phone (360) 376-2073 Get Directions Rules Dogs Allowed on Leash Fires Allowed in Designated ”
-  - season = "year-round" · “wo vault toilets. Camping is available on a first-come, first-served basis. Campsites are open year-round. Campsites 1-6, 14 and 15 can acco”
-  - sites.total = 15 · “ake in spectacular sunrises and sunsets from your tent pitched on the beach. The park has 15 campsites, one composting toilet and two vault ”
-- **Dispersed camping (WDFW land)** (intake-US-8666, agency (outside research camping-us-oct31), status ok, 8 facts) · [wdfw.wa.gov](https://wdfw.wa.gov/about/wdfw-lands/public-conduct)
-  - booking.url = "https://wdfw.wa.gov/about/wdfw-lands/public-conduct" · “booking link from our outside research (camping, in the park) row (official system wdfw.wa.gov)”
-  - hookups.electric = true · “ctronics, furniture, vehicles, signs, or built structures (e.g. buildings, fences, gates, power poles). Pack out what you pack in, including”
-  - map.date_how = "PDF, year 2021 in the link" · “link “Green dot map 11x17 (PDF)””
-  - map.url = "https://wdfw.wa.gov/sites/default/files/2021-05/11x17_green · “link “Green dot map 11x17 (PDF)” -> https://wdfw.wa.gov/sites/default/files/2021-05/11x17_greendot_lt_murray.pdf”
-  - reservable = false · “hunting season. Unattended, non-department owned blinds are available to the public on a first-come, first-served basis. Digging pits to cre”
-  - rules.fires = "Campfires must be limited in size to a maximum of up to 3 f · “ent's use of fire for habitat management, it is unlawful to start or tend any other fire. Campfires must be limited in size to a maximum of ”
-  - rules.pets = "pets must be leashed" · “ilities, pets may be prohibited or regulated. From April through July, all dogs and other pets must be leashed. It is unlawful to cause or a”
-  - rules.stay_limit = "21 days" · “s ( WAC 220-500-030 ). Camping Except when allowed by department notice, campsites have a 21-day limit within a 30-day period. Residence cam”
-- **Dispersed camping (WDFW land)** (intake-US-12548, agency (outside research camping-us-oct31), status ok, 8 facts) · [wdfw.wa.gov](https://wdfw.wa.gov/about/wdfw-lands/public-conduct)
-  - booking.url = "https://wdfw.wa.gov/about/wdfw-lands/public-conduct" · “booking link from our outside research (camping, in the park) row (official system wdfw.wa.gov)”
-  - hookups.electric = true · “ctronics, furniture, vehicles, signs, or built structures (e.g. buildings, fences, gates, power poles). Pack out what you pack in, including”
-  - map.date_how = "PDF, year 2021 in the link" · “link “Green dot map 11x17 (PDF)””
-  - map.url = "https://wdfw.wa.gov/sites/default/files/2021-05/11x17_green · “link “Green dot map 11x17 (PDF)” -> https://wdfw.wa.gov/sites/default/files/2021-05/11x17_greendot_lt_murray.pdf”
-  - reservable = false · “hunting season. Unattended, non-department owned blinds are available to the public on a first-come, first-served basis. Digging pits to cre”
-  - rules.fires = "Campfires must be limited in size to a maximum of up to 3 f · “ent's use of fire for habitat management, it is unlawful to start or tend any other fire. Campfires must be limited in size to a maximum of ”
-  - rules.pets = "pets must be leashed" · “ilities, pets may be prohibited or regulated. From April through July, all dogs and other pets must be leashed. It is unlawful to cause or a”
-  - rules.stay_limit = "21 days" · “s ( WAC 220-500-030 ). Camping Except when allowed by department notice, campsites have a 21-day limit within a 30-day period. Residence cam”
-- **Dispersed camping (WDFW land)** (intake-US-12244, agency (outside research camping-us-oct31), status ok, 8 facts) · [wdfw.wa.gov](https://wdfw.wa.gov/about/wdfw-lands/public-conduct)
-  - booking.url = "https://wdfw.wa.gov/about/wdfw-lands/public-conduct" · “booking link from our outside research (camping, in the park) row (official system wdfw.wa.gov)”
-  - hookups.electric = true · “ctronics, furniture, vehicles, signs, or built structures (e.g. buildings, fences, gates, power poles). Pack out what you pack in, including”
-  - map.date_how = "PDF, year 2021 in the link" · “link “Green dot map 11x17 (PDF)””
-  - map.url = "https://wdfw.wa.gov/sites/default/files/2021-05/11x17_green · “link “Green dot map 11x17 (PDF)” -> https://wdfw.wa.gov/sites/default/files/2021-05/11x17_greendot_lt_murray.pdf”
-  - reservable = false · “hunting season. Unattended, non-department owned blinds are available to the public on a first-come, first-served basis. Digging pits to cre”
-  - rules.fires = "Campfires must be limited in size to a maximum of up to 3 f · “ent's use of fire for habitat management, it is unlawful to start or tend any other fire. Campfires must be limited in size to a maximum of ”
-  - rules.pets = "pets must be leashed" · “ilities, pets may be prohibited or regulated. From April through July, all dogs and other pets must be leashed. It is unlawful to cause or a”
-  - rules.stay_limit = "21 days" · “s ( WAC 220-500-030 ). Camping Except when allowed by department notice, campsites have a 21-day limit within a 30-day period. Residence cam”
+  - rules.pets = "Dogs Allowed on Leash" · “ut fees Contact Email sucia.island@parks.wa.gov Phone (360) 376-2073 Get Directions Rules Dogs Allowed on Leash Fires Allowed in Designated ”
 - **Primitive campsites (first-come)** (intake-US-3204, agency (outside research camping-us-oct31), status ok, 10 facts) · [www.parks.wa.gov](https://www.parks.wa.gov/522/James-Island)
   - booking.url = "https://www.parks.wa.gov/522/James-Island" · “booking link from our outside research (camping, in the park) row (official system www.parks.wa.gov)”
   - drinking_water = false · “ed fire pits and grills. Propane and gas grills allowed. General Posted on: June 16, 2025 Drinking water is not available on James Island Ma”
@@ -3584,69 +3504,116 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - rules.fires = "fire pits and grills" · “main content Menu Search Search Alerts Burn Ban - Level 1 Fires allowed in all designated fire pits and grills. Propane and gas grills allow”
   - rules.pets = "Dogs Allowed on Leash" · “ut fees Contact Email sucia.island@parks.wa.gov Phone (360) 376-2073 Get Directions Rules Dogs Allowed on Leash Boat-in Only See all other g”
   - sites.primitive = 13 · “ands Brochure.pdf Things to do at this park Camping James Island is an ideal retreat with 13 primitive campsites available first-come, first”
-- **North Gorge Campground; Snag Cove Campground; Kettle River Campground; Evans Campground; Evans Group Site; Kamloops Island Campground; Marcus Island Campground; Kettle Falls Campground; Locust Grove G** (intake-US-0699, agency (outside research camping-us-oct31), status ok (browser), 6 facts) · [www.nps.gov](https://www.nps.gov/laro/planyourvisit/cg-northgorge.htm)
-  - booking.how = "online: www.nps.gov" · “link “Permits & Reservations””
-  - booking.url = "https://www.nps.gov/laro/planyourvisit/cg-northgorge.htm" · “booking link from our outside research (camping, in the park) row (official system www.nps.gov)”
-  - features = "fire pit, with view of lake" · “ve of pine trees a campsite with a large paved parking area, accessible picnic table, and fire pit, with view of lake Accessibility Informat”
-  - hookups.electric = "some" · “ide of the main loop. In the summer, North Gorge is busy on the weekends. TOTAL SITES: 12 Electric Hookups: 0 RV Only: 0 Tent Only: 6 Walk t”
-  - reservable = true · “ORMATION & DIRECTIONS ADDITIONAL INFORMATION & REGULATIONS RESERVATIONS All campsites are reservation only. IMAGE GALLERY a cement boat laun”
-  - restrooms = "vault" · “Campsite 1 is a designated ADA site with paved parking space and even ground. The closest pit toilet to Campsite 1 has a paved sidewalk path”
-- **Primitive campsites (first-come)** (intake-US-3278, agency (outside research camping-us-oct31), status ok, 12 facts) · [www.parks.wa.gov](https://www.parks.wa.gov/593/Stuart-Island)
-  - booking.url = "https://www.parks.wa.gov/593/Stuart-Island" · “booking link from our outside research (camping, in the park) row (official system www.parks.wa.gov)”
-  - drinking_water = "some" · “there are plenty of deep water anchorages available if the park buoys and dock are full. Drinking Water is available May through September. ”
-  - dump_station = true · “is a stationary pumpout located at Reid Harbor. This facility also has a portable toilet dump station located at the Reid Harbor barge. The ”
-  - fees = "$23 for buoy | $1 per vessel foot for dock" · “, you won't want to leave. Hours 8 a.m. - Dusk year round Fees Moorage - Docks and buoys: $23 for buoy, $1 per vessel foot for dock See more”
+- **Dispersed camping (WDFW land)** (intake-US-12548, agency (outside research camping-us-oct31), status ok, 8 facts) · [wdfw.wa.gov](https://wdfw.wa.gov/about/wdfw-lands/public-conduct)
+  - booking.url = "https://wdfw.wa.gov/about/wdfw-lands/public-conduct" · “booking link from our outside research (camping, in the park) row (official system wdfw.wa.gov)”
+  - hookups.electric = true · “ctronics, furniture, vehicles, signs, or built structures (e.g. buildings, fences, gates, power poles). Pack out what you pack in, including”
+  - map.date_how = "PDF, year 2021 in the link" · “link “Green dot map 11x17 (PDF)””
+  - map.url = "https://wdfw.wa.gov/sites/default/files/2021-05/11x17_green · “link “Green dot map 11x17 (PDF)” -> https://wdfw.wa.gov/sites/default/files/2021-05/11x17_greendot_lt_murray.pdf”
+  - reservable = false · “hunting season. Unattended, non-department owned blinds are available to the public on a first-come, first-served basis. Digging pits to cre”
+  - rules.fires = "Campfires must be limited in size to a maximum of up to 3 f · “ent's use of fire for habitat management, it is unlawful to start or tend any other fire. Campfires must be limited in size to a maximum of ”
+  - rules.pets = "pets must be leashed" · “ilities, pets may be prohibited or regulated. From April through July, all dogs and other pets must be leashed. It is unlawful to cause or a”
+  - rules.stay_limit = "21 days" · “s ( WAC 220-500-030 ). Camping Except when allowed by department notice, campsites have a 21-day limit within a 30-day period. Residence cam”
+- **Primitive campsites (first-come)** (intake-US-3172, agency (outside research camping-us-oct31), status ok, 10 facts) · [parks.wa.gov](https://parks.wa.gov/find-parks/state-parks/clark-island-marine-state-park)
+  - booking.url = "https://parks.wa.gov/find-parks/state-parks/clark-island-ma · “booking link from our outside research (camping, in the park) row (official system parks.wa.gov)”
   - map.date_how = "PDF, year 2025 in the link" · “link “Map and Recreation Guide (PDF)””
   - map.url = "https://parks.wa.gov/sites/default/files/2025-11/Washington · “link “Map and Recreation Guide (PDF)” -> https://parks.wa.gov/sites/default/files/2025-11/Washington%20State%20Parks%20Recreation%20Guide%20”
-  - reservable = false · “he park has 14 primitive campsites and four marine trail sites. Camping is available on a first-come, first-served basis. Most sites are loc”
-  - restrooms = "vault" · “mpsites are for the exclusive use of those arriving by human- or wind-powered watercraft. Composting toilets are near the dock at Reid Harbo”
+  - phone_hint = "(360) 376-2073" · “e - Buoys: $23 for buoy See more about fees Contact Email Sucia.Island@PARKS.WA.GOV Phone (360) 376-2073 Get Directions Rules Dogs Allowed o”
+  - reservable = false · “has 15 campsites, one composting toilet and two vault toilets. Camping is available on a first-come, first-served basis. Campsites are open ”
+  - restrooms = "vault" · “sunrises and sunsets from your tent pitched on the beach. The park has 15 campsites, one composting toilet and two vault toilets. Camping is”
   - rules.fires = "fire pits and grills" · “main content Menu Search Search Alerts Burn Ban - Level 1 Fires allowed in all designated fire pits and grills. Propane and gas grills allow”
-  - season = "year-round" · “ngitude: 123° 11' 34.97" W (-123.1930). Boat pumpout This facility is located on a barge, open year-round, 24 hours a day with a floating do”
+  - rules.pets = "Dogs Allowed on Leash" · “ut fees Contact Email Sucia.Island@PARKS.WA.GOV Phone (360) 376-2073 Get Directions Rules Dogs Allowed on Leash Fires Allowed in Designated ”
+  - season = "year-round" · “wo vault toilets. Camping is available on a first-come, first-served basis. Campsites are open year-round. Campsites 1-6, 14 and 15 can acco”
+  - sites.total = 15 · “ake in spectacular sunrises and sunsets from your tent pitched on the beach. The park has 15 campsites, one composting toilet and two vault ”
+- **Primitive campsites (first-come)** (intake-US-3229, agency (outside research camping-us-oct31), status ok (browser), 8 facts) · [www.parks.wa.gov](https://www.parks.wa.gov/544/Matia-Island)
+  - booking.url = "https://www.parks.wa.gov/544/Matia-Island" · “booking link from our outside research (camping, in the park) row (official system www.parks.wa.gov)”
+  - drinking_water = false · “re open for public access. All other areas are closed to protect habitat and wildlife. No potable water is available. There is no garbage se”
+  - fees = "$23 for buoy | $1 per vessel foot for dock" · “d accessible only by boat. Hours 8 a.m. - Dusk year round Fees Moorage - Docks and buoys: $23 for buoy, $1 per vessel foot for dock See more”
+  - map.date_how = "PDF, year 2023 in the link" · “link “Matia Island State Park Map.pdf””
+  - map.url = "https://parks.wa.gov/sites/default/files/2023-04/Matia%20Is · “link “Matia Island State Park Map.pdf” -> https://parks.wa.gov/sites/default/files/2023-04/Matia%20Island%20State%20Park%20Map.pdf”
+  - phone = "(360) 376-2073" · “e more about fees Contact Email limekiln@parks.wa.gov Phone (360) 376-2073 Get Directions Map & visitor guide Locate Map Satellite Key”
+  - reservable = false · “done here with advanced experience and gear. Camping Camping at Rolfe Cove campground is first-come, first-served. There are six sites avail”
+  - rules.pets = "Dogs not Allowed" · “about fees Contact Email limekiln@parks.wa.gov Phone (360) 376-2073 Get Directions Rules Dogs not Allowed Fires not Allowed Horses not Allow”
 - **Eagle Creek Overlook Group Campground; EAGLE CREEK OVERLOOK GRP SITE; EAGLE CREEK CAMPGROUND; Eagle Creek Campground** (intake-US-0580, agency (outside research camping-us-oct31), status ok, 3 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/crgnsa/recarea/?recid=29908)
   - booking.url = "https://www.fs.usda.gov/recarea/crgnsa/recarea/?recid=29908 · “booking link from our outside research (camping, nearby only) row (official system www.fs.usda.gov)”
+  - hookups.electric = true · “ail begins at Eagle Creek Campground between Site #5 and #6. It ends under the Bonneville Power Administration powerlines with a view of the”
+  - restrooms = "vault" · “s at Multnomah Falls Lodge are under renovation and closed through November 2026. Limited portable toilets are available on-site. Multnomah…”
+- **Coffeepot Lake Recreation Site** (intake-US-10695, agency (outside research camping-us-oct31), status ok, 12 facts) · [www.blm.gov](https://www.blm.gov/visit/coffeepot-lake-recreation-site)
+  - booking.how = "online: www.recreation.gov" · “link “””
+  - booking.url = "https://www.recreation.gov/mobile-app" · “link “” -> https://www.recreation.gov/mobile-app”
+  - drinking_water = false · “e is open year-round and on a first-come, first-served, no reservation basis. There is no potable water nor garbage service available; pleas”
+  - features = "fire ring" · “site has a graveled boat launch, fishing dock, 7 campsites each with a picnic table and a fire ring. One accessible vault toilet is located ”
+  - map.date_how = "PDF, no date in the link" · “link “Coffeepot Lake Map””
+  - map.url = "https://www.blm.gov/sites/default/files/documents/files/orw · “link “Coffeepot Lake Map” -> https://www.blm.gov/sites/default/files/documents/files/orwa-CoffeepotLake-map.pdf”
+  - phone = "(509) 536-1200" · “ns, boaters can check the Spokane District website, or call (509-536-1200), for updates on availability of the boat launch and dock.”
+  - reservable = false · “hrough May. Know Before You Go Coffeepot Lake Recreation Site is open year-round and on a first-come, first-served, no reservation basis. Th”
+  - restrooms = "vault" · “aunch, fishing dock, 7 campsites each with a picnic table and a fire ring. One accessible vault toilet is located onsite, but no services ar”
+  - rules.stay_limit = "14 days" · “and proceed another 0.2 miles to the site. External Map Coffeepot Lake Map Fees No fees. Stay Limit 14 days. Additional Information Spokane ”
+- **Dispersed camping (WDFW land)** (intake-US-8666, agency (outside research camping-us-oct31), status ok, 8 facts) · [wdfw.wa.gov](https://wdfw.wa.gov/about/wdfw-lands/public-conduct)
+  - booking.url = "https://wdfw.wa.gov/about/wdfw-lands/public-conduct" · “booking link from our outside research (camping, in the park) row (official system wdfw.wa.gov)”
+  - hookups.electric = true · “ctronics, furniture, vehicles, signs, or built structures (e.g. buildings, fences, gates, power poles). Pack out what you pack in, including”
+  - map.date_how = "PDF, year 2021 in the link" · “link “Green dot map 11x17 (PDF)””
+  - map.url = "https://wdfw.wa.gov/sites/default/files/2021-05/11x17_green · “link “Green dot map 11x17 (PDF)” -> https://wdfw.wa.gov/sites/default/files/2021-05/11x17_greendot_lt_murray.pdf”
+  - reservable = false · “hunting season. Unattended, non-department owned blinds are available to the public on a first-come, first-served basis. Digging pits to cre”
+  - rules.fires = "Campfires must be limited in size to a maximum of up to 3 f · “ent's use of fire for habitat management, it is unlawful to start or tend any other fire. Campfires must be limited in size to a maximum of ”
+  - rules.pets = "pets must be leashed" · “ilities, pets may be prohibited or regulated. From April through July, all dogs and other pets must be leashed. It is unlawful to cause or a”
+  - rules.stay_limit = "21 days" · “s ( WAC 220-500-030 ). Camping Except when allowed by department notice, campsites have a 21-day limit within a 30-day period. Residence cam”
+- **Dispersed / primitive camping** (intake-US-10694, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 6 facts) · [wdfw.wa.gov](https://wdfw.wa.gov/places-to-go/wildlife-areas/sun-lakes-wildlife-area-unit)
+  - booking.url = "https://wdfw.wa.gov/places-to-go/wildlife-areas/sun-lakes-w · “booking link from our outside research (camping, in the park) row (official system wdfw.wa.gov)”
+  - map.date_how = "PDF, year 2026 in the link" · “link “Lake Lenore Gun Range Map (PDF)””
+  - map.url = "https://wdfw.wa.gov/sites/default/files/2026-07/lenoregr-20 · “link “Lake Lenore Gun Range Map (PDF)” -> https://wdfw.wa.gov/sites/default/files/2026-07/lenoregr-2022-rco-lenore.pdf”
+  - restrooms = "vault" · “n. Public facility information Parking area with boat ramp, ADA loading platform, and ADA vault toilet on Blue Lake . One parking area with ”
+  - rules.fires = "campfires are allowed from October 1 through April" · “ess otherwise posted, dispersed camping is allowed for 14 days within a 30-day period and campfires are allowed from October 1 through April”
+  - season = "Oct. 1 through May 31" · “featuring; Shooting benches (uncovered). 100- and 200-yd backstops. 300-yd seasonal gong, available Oct. 1 through May 31, unless Emergency ”
+- **Dispersed / primitive camping** (intake-US-10655, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [wdfw.wa.gov](https://wdfw.wa.gov/places-to-go/wildlife-areas/banks-lake-wildlife-area-unit)
+  - booking.url = "https://wdfw.wa.gov/places-to-go/wildlife-areas/banks-lake- · “booking link from our outside research (camping, in the park) row (official system wdfw.wa.gov)”
+  - phone = "(509) 754-4624" · “unties, please call the Region 2 office customer service at 509-754-4624. The Banks Lake Unit is located north of Moses Lake and lie”
+  - restrooms = "some" · “s located north of Moses Lake and lies just south of Grand Coulee. Several boat launches, restrooms and campgrounds can be accessed from Hig”
+  - rules.fires = "Campfires are allowed from October 1 through April, unless  · “Water Access Site. Dispersed camping is also allowed for 14 days within a 30-day period. Campfires are allowed from October 1 through April,”
+  - season = "October 1 through April" · “ed camping is also allowed for 14 days within a 30-day period. Campfires are allowed from October 1 through April, unless othersise posted. ”
+- **Dispersed / primitive camping** (intake-US-10712, agency (outside research camping-us-oct31), status ok, 6 facts) · [wdfw.wa.gov](https://wdfw.wa.gov/places-to-go/wildlife-areas/quincy-lakes-wildlife-area-unit)
+  - booking.how = "online: wdfw.wa.gov" · “link “Evergreen Reservoir E””
+  - booking.url = "https://wdfw.wa.gov/places-to-go/water-access-sites/evergre · “link “Evergreen Reservoir E” -> https://wdfw.wa.gov/places-to-go/water-access-sites/evergreen-reservoir-e-1604”
+  - hookups.electric = true · “history The parcels making up this area were purchased between 1951 and 2023. Funder Fund Power, dike & irrigation districts Mitigation Fund”
+  - restrooms = "vault" · “e unit. Parking options are plentiful on this unit. Most of the larger parking areas have vault toilets or porta-potties. Many boat ramps ar”
+  - rules.fires = "Campfires are prohibited in the Ancient Lakes area, defined · “allowed year-round. Access passes can be purchased on site from an automated pay station. Campfires are prohibited in the Ancient Lakes area”
+  - season = "October 1 through April" · “rsed camping is allowed for 14 days within a 30-day period and campfires are allowed from October 1 through April. A Discover Pass is requir”
+- **Eagle Creek Campground; Eagle Creek Overlook Group Campground; Herman Creek Campground/Horse Camp; Wyeth Campground** (intake-US-0731, agency (outside research camping-us-oct31), status ok, 3 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/crgnsa/recarea/?recid=29906)
+  - booking.url = "https://www.fs.usda.gov/recarea/crgnsa/recarea/?recid=29906 · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
   - hookups.electric = true · “ail begins at Eagle Creek Campground between Site #5 and #6. It ends under the Bonneville Power Administration powerlines with a view of the”
   - restrooms = "vault" · “s at Multnomah Falls Lodge are under renovation and closed through November 2026. Limited portable toilets are available on-site. Multnomah…”
 
 ## US-AK: 12 random samples (records with facts; seed = the date)
 
-- **Chugach** (AK-58ec041f30, state, status ok, 7 facts, 77 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/boretidecabin.htm)
+- **Funny River campground** (intake-US-12709, agency (outside research camping-us-oct31), status ok, 4 facts, 131 ft) · [dnr.alaska.gov](https://dnr.alaska.gov/parks/units/campsitelist.htm)
+  - booking.how = "online: www.reserveamerica.com" · “link “YES””
+  - booking.url = "https://www.reserveamerica.com/camping/chena-river-state-re · “link “YES” -> https://www.reserveamerica.com/camping/chena-river-state-recreation-site/r/campgroundDetails.do?cont”
+  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
+  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
+- **Settlers Cove** (AK-f81eb9ba72, state, status ok, 5 facts, 34 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/settlerscovecabin.htm)
   - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
-  - booking.url = "https://reservealaskastateparks.com/park/9/30" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/9/30”
-  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
-  - map.date_how = "PDF, no date in the link" · “link “Map of Chugach State Park””
-  - map.url = "https://dnr.alaska.gov/parks/units/chugach/chugachstatepark · “link “Map of Chugach State Park” -> https://dnr.alaska.gov/parks/units/chugach/chugachstateparkmap.pdf”
-  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-  - rules.pets = "Pets Allowed: Yes**" · “; Winter - Walk, Ski, or Snowshoe* ★ Stay Limit: 3 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes** ★ Fees: ( see fee page ) ★ Cabi”
-- **Cowee Meadow Cabin** (AK-0be42a83c0, state, status ok, 7 facts, 16 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/coweemeadowcabin.htm)
-  - booking.how = "online: reservealaskastateparks.com" · “link “Check for Availability on the Reservation System””
-  - booking.url = "https://reservealaskastateparks.com/park/44/88" · “link “Check for Availability on the Reservation System” -> https://reservealaskastateparks.com/park/44/88”
-  - drinking_water = false · “th wooden sleeping platforms, a kerosene stove, chairs or benches, table and latrine. Non-potable water supply is from the creek. Please pur”
+  - booking.url = "https://reservealaskastateparks.com/park/46/96" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/46/96”
   - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
   - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-  - rules.pets = "Pets Allowed: Yes, always on leash" · “n ; Winter - Hike, Ski, or Snowshoe ★ Stay Limit: 3 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes, always on leash ★ Fees: ( see f”
-  - sites.cabin = 5 · “oint Bridget State Park Trailhead parking area at Mile 39 Glacier Highway. The trail is 2.5 miles to the cabin. Winter access: the same trai”
-- **Johnson Lake SRA campground** (intake-US-7199, agency (outside research camping-us-oct31), status ok, 4 facts, 129 ft) · [dnr.alaska.gov](https://dnr.alaska.gov/parks/units/campsitelist.htm)
-  - booking.how = "online: www.reserveamerica.com" · “link “YES””
-  - booking.url = "https://www.reserveamerica.com/camping/chena-river-state-re · “link “YES” -> https://www.reserveamerica.com/camping/chena-river-state-recreation-site/r/campgroundDetails.do?cont”
-  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
-  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-- **Kachemak Bay SP/MP campground** (intake-US-3392, agency (outside research camping-us-oct31), status ok, 4 facts, 1630 ft) · [dnr.alaska.gov](https://dnr.alaska.gov/parks/units/campsitelist.htm)
-  - booking.how = "online: www.reserveamerica.com" · “link “YES””
-  - booking.url = "https://www.reserveamerica.com/camping/chena-river-state-re · “link “YES” -> https://www.reserveamerica.com/camping/chena-river-state-recreation-site/r/campgroundDetails.do?cont”
-  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
-  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-- **Eagle Trail SRS * campground** (intake-US-7232, agency (outside research camping-us-oct31), status ok, 4 facts, 1981 ft) · [dnr.alaska.gov](https://dnr.alaska.gov/parks/units/campsitelist.htm)
-  - booking.how = "online: www.reserveamerica.com" · “link “YES””
-  - booking.url = "https://www.reserveamerica.com/camping/chena-river-state-re · “link “YES” -> https://www.reserveamerica.com/camping/chena-river-state-recreation-site/r/campgroundDetails.do?cont”
-  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
-  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-- **Lower Chatanika River** (AK-8c6ed0657f, state, status ok, 6 facts, 541 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/olnespondcabin.htm)
+  - rules.pets = "Pets Allowed: Yes, always on leash" · “s: 2 ★ Site Access Method: Drive-in ★ Stay Limit: 3 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes, always on leash ★ Fees: ( see f”
+- **Delta** (AK-dbc82a578f, state, status ok, 6 facts, 1139 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/deltacabin.htm)
   - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
-  - booking.url = "https://reservealaskastateparks.com/park/33/78" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/33/78”
-  - hookups.electric = true · “s include a wood stove, small table, kitchen counter, sleeping platform, and is wired for electricity. Guests will need to provide their own”
-  - phone = "(907) 450-5707" · “nes or RUG. To obtain one call Alyeska Pipeline Security at (907)450-5707. ** Pets must be under control at all times and you are res”
-  - rules.generators = "generator" · “latform, and is wired for electricity. Guests will need to provide their own firewood and generator. The cabin is available for reservation ”
-  - rules.pets = "Pets Allowed: Yes**" · “uests ★ Site Access Method: Vehicle ★ Stay Limit: 5 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes** ★ Fees: ( see fee page ) ★ Cab”
+  - booking.url = "https://reservealaskastateparks.com/park/29/47" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/29/47”
+  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
+  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
+  - rules.pets = "Pets Allowed: Yes, always on leash" · “s: 2 ★ Site Access Method: Drive-in ★ Stay Limit: 5 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes, always on leash ★ Fees: ( see f”
+  - sites.cabin = 100 · “4"W Special Notes: * The park road is not plowed in the winter. A highway pull-off within 100 feet of the cabin is plowed. The combination t”
+- **Derby Cove Cabin** (AK-ea01c849ab, state, status ok, 5 facts, 112 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/derbycovecabin.htm)
+  - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
+  - booking.url = "https://reservealaskastateparks.com/park/10/33" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/10/33”
+  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
+  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
+  - rules.pets = "Pets Allowed: Yes, always on leash" · “Float Plane or Boat-in ★ Stay Limit: 7 Consecutive Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes, always on leash ★ Fees: ( see fe”
+- **Dispersed camping** (intake-US-4594, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts, 3153 ft) · [forestry.alaska.gov](https://forestry.alaska.gov/stateforests.htm)
+  - booking.how = "online: dnr.alaska.gov" · “link “Alaska Chilkat Bald Eagle Preserve””
+  - booking.url = "https://dnr.alaska.gov/parks/plans/eaglpln/eaglepln.htm" · “link “Alaska Chilkat Bald Eagle Preserve” -> https://dnr.alaska.gov/parks/plans/eaglpln/eaglepln.htm”
+  - map.date_how = "PDF, no date in the link" · “link “Map of the Haines State Forest Resource Management Area””
+  - map.url = "https://forestry.alaska.gov/Assets/pdfs/stateforests/haines · “link “Map of the Haines State Forest Resource Management Area” -> https://forestry.alaska.gov/Assets/pdfs/stateforests/hainesmap.pdf”
+  - phone = "(907) 269-8467" · “tion 550 W. 7th Ave., Suite 1450 Anchorage, AK 99501 Phone: (907) 269-8467 Email: alison.arians@alaska.gov --> Forest Management Plans”
 - **Rainbow Trout Cabin** (AK-5b489fdf3c, state, status ok, 7 facts, 878 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/rainbowtroutcabin.htm)
   - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
   - booking.url = "https://reservealaskastateparks.com/park/8/57" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/8/57”
@@ -3655,50 +3622,50 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - map.url = "https://dnr.alaska.gov/parks/units/chugach/chugachstatepark · “link “Map of Chugach State Park” -> https://dnr.alaska.gov/parks/units/chugach/chugachstateparkmap.pdf”
   - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
   - rules.pets = "Pets Allowed: Yes**" · “; Winter - Walk, Ski, or Snowshoe* ★ Stay Limit: 3 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes** ★ Fees: ( see fee page ) ★ Cabi”
-- **Bird Creek; Bird Creek Overflow; Eagle River; Eklutna Lake campgrounds; public-use cabins** (intake-US-1637, agency (outside research camping-us-oct31), status ok, 4 facts, 3996 ft) · [dnr.alaska.gov](https://dnr.alaska.gov/parks/units/campsitelist.htm)
+- **Crooked Creek SRS campground** (intake-US-7196, agency (outside research camping-us-oct31), status ok, 4 facts, 58 ft) · [dnr.alaska.gov](https://dnr.alaska.gov/parks/units/campsitelist.htm)
   - booking.how = "online: www.reserveamerica.com" · “link “YES””
   - booking.url = "https://www.reserveamerica.com/camping/chena-river-state-re · “link “YES” -> https://www.reserveamerica.com/camping/chena-river-state-recreation-site/r/campgroundDetails.do?cont”
   - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
   - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-- **Granite Tors Cabin** (AK-867262575b, state, status ok, 6 facts, 746 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/granitetorscabin.htm)
+- **Bings Landing campground** (intake-US-11846, agency (outside research camping-us-oct31), status ok, 4 facts, 193 ft) · [dnr.alaska.gov](https://dnr.alaska.gov/parks/units/campsitelist.htm)
+  - booking.how = "online: www.reserveamerica.com" · “link “YES””
+  - booking.url = "https://www.reserveamerica.com/camping/chena-river-state-re · “link “YES” -> https://www.reserveamerica.com/camping/chena-river-state-recreation-site/r/campgroundDetails.do?cont”
+  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
+  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
+- **Upper Chatanika River SRS campground** (intake-US-11829, agency (outside research camping-us-oct31), status ok, 4 facts, 775 ft) · [dnr.alaska.gov](https://dnr.alaska.gov/parks/units/campsitelist.htm)
+  - booking.how = "online: www.reserveamerica.com" · “link “YES””
+  - booking.url = "https://www.reserveamerica.com/camping/chena-river-state-re · “link “YES” -> https://www.reserveamerica.com/camping/chena-river-state-recreation-site/r/campgroundDetails.do?cont”
+  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
+  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
+- **Denali** (AK-312785c2cd, state, status ok, 5 facts, 787 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/byerslakecabin1.htm)
+  - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
+  - booking.url = "https://reservealaskastateparks.com/park/20/32" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/20/32”
+  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
+  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
+  - rules.pets = "Pets Allowed: Yes**" · “ite Access Method: Drive up/walk in ★ Stay Limit: 5 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes** ★ Fees: ( see fee page ) ★ Cab”
+- **Chena River** (AK-a2c7288bb8, state, status ok, 7 facts, 727 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/chenarivercabin.htm)
   - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
   - booking.url = "https://reservealaskastateparks.com/park/28/22" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/28/22”
-  - hookups.electric = true · “dstove, small table, kitchen counter, bunk beds and a sleeping platform, and is wired for electricity. Guests will need to provide their own”
-  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-  - rules.generators = "generator" · “latform, and is wired for electricity. Guests will need to provide their own firewood and generator. The generator plug in requires a double”
-  - rules.pets = "Pets Allowed: Yes**" · “ite Access Method: Summer - Vehicle ★ Stay Limit: 5 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes** ★ Fees: ( see fee page ) ★ Cab”
-- **Beluga Cabin** (AK-00732d81da, state, status ok, 7 facts, 81 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/belugacabin.htm)
-  - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
-  - booking.url = "https://reservealaskastateparks.com/park/9/30" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/9/30”
-  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
-  - map.date_how = "PDF, no date in the link" · “link “Map of Chugach State Park””
-  - map.url = "https://dnr.alaska.gov/parks/units/chugach/chugachstatepark · “link “Map of Chugach State Park” -> https://dnr.alaska.gov/parks/units/chugach/chugachstateparkmap.pdf”
-  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-  - rules.pets = "Pets Allowed: No" · “; Winter - Walk, Ski, or Snowshoe* ★ Stay Limit: 3 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: No ★ Fees: ( see fee page ) ★ Cabin D”
-- **Kachemak Bay** (AK-29896ad812, state, status ok, 5 facts, 356 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/moosevalleycabin.htm)
-  - booking.how = "online: alaskastateparks.reserveamerica.com" · “link “Check Availability on Reserve America””
-  - booking.url = "https://alaskastateparks.reserveamerica.com/camping/Kachema · “link “Check Availability on Reserve America” -> https://alaskastateparks.reserveamerica.com/camping/Kachemak_Bay_State_Park/r/campsiteDetail”
   - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
   - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-  - rules.pets = "Pets Allowed: Yes*" · “uests ★ Site Access Method: Hike-in ★ Stay Limit: 7 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes* ★ Fees: ( see fee page ) ★ Cabi”
-- **Afognak Island** (AK-c2992d189c, state, status ok, 7 facts, 114 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/pillarlakecabin.htm)
+  - restrooms = "vault" · “he winter. The front porch has ramp access and there is a ramp to the accessibly-designed outhouse. The cabin looks out on the Chena River, ”
+  - rules.pets = "Pets Allowed: Yes, always on leash" · “s: 2 ★ Site Access Method: Drive-in ★ Stay Limit: 5 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes, always on leash ★ Fees: ( see f”
+  - sites.cabin = 300 · “. The turnoff to the cabin is 0.7 miles past the trailhead, on the RIGHT. It is less than 300 feet to the cabin from the locked gate. GPS W1”
+- **St. James Bay** (AK-992e8992d8, state, status ok, 5 facts, 0 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/bobhinmancabin.htm)
   - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
-  - booking.url = "https://reservealaskastateparks.com/park/1/26" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/1/26”
-  - hookups.electric = true · “ack-tailed deer, Roosevelt elk, and fox may be found in the area. Hunters should bring an electric fence to prevent bears gaining access to ”
-  - map.date_how = "PDF, no date in the link" · “link “Afognak Island SP Map””
-  - map.url = "https://dnr.alaska.gov/parks/aspunits/kodiak/maps/afognakis · “link “Afognak Island SP Map” -> https://dnr.alaska.gov/parks/aspunits/kodiak/maps/afognakislandspandsra.pdf”
+  - booking.url = "https://reservealaskastateparks.com/park/47/98" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/47/98”
+  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
   - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-  - rules.pets = "Pets Allowed: Yes**" · “ts ★ Site Access Method: Floatplane ★ Stay Limit: 7 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes** ★ Fees: ( see fee page ) ★ Cab”
+  - rules.pets = "Pets Allowed: Yes**" · “te Access Method: Boat, Float plane ★ Stay Limit: 7 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes** ★ Fees: ( see fee page ) ★ Cab”
 
 ## US-HI: 12 random samples (records with facts; seed = the date)
 
-- **Malaekahana SRA (Kalanai Point) campsites** (intake-US-6414, agency (outside research camping-us-oct31), status ok (browser), 6 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/oahu/)
+- **Napali Coast State Wilderness Park backcountry camps (Kalalau, Hanakoa)** (intake-US-3391, agency (outside research camping-us-oct31), status ok (browser), 5 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/kauai/)
   - booking.how = "online: explore.ehawaii.gov" · “link “Reserve Now””
-  - booking.url = "https://dlnr.hawaii.gov/dsp/camping-lodging/oahu/" · “booking link from our outside research (camping, in the park) row (official system dlnr.hawaii.gov)”
-  - fees = "$20 per campsite per night for up to 10 persons | $30 per c · “weekend campers. Reserve Now Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons Non”
-  - reservable = true · “overnight camping use on November 2, 2026. Day use hiking to Hanakapīʻāi reopened 11/15. Reservations required for day and overnight use. Wa”
+  - booking.url = "https://dlnr.hawaii.gov/dsp/camping-lodging/kauai/" · “booking link from our outside research (camping, in the park) row (official system dlnr.hawaii.gov)”
+  - fees = "$20 per campsite per night for up to 10 persons | $30 per c · “ge.com or The Cabins at Kokee Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons No”
+  - reservable = true · “amping reservation for February 1 and beyond. • Camping is offered at three Kaua’i parks. Reservations can be made 90 days in advance. Kōkeʻ”
   - restrooms = "yes (kind not stated)" · “and will REOPEN tomorrow, Sunday 11/1. OʻAHU: Keaīwa Heiau State Recreation Area – All 3 restrooms will be CLOSED for construction work thro”
-  - rules.stay_limit = "30 days" · “pen to camping Friday through Sunday nights. Permits for O‘ahu camping can be applied for no more than 30 days in advance. Camping is offere”
 - **Sand Island SRA campground (Fri-Sun nights only)** (intake-US-6415, agency (outside research camping-us-oct31), status ok (browser), 6 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/oahu/)
   - booking.how = "online: explore.ehawaii.gov" · “link “Reserve Now””
   - booking.url = "https://dlnr.hawaii.gov/dsp/camping-lodging/oahu/" · “booking link from our outside research (camping, in the park) row (official system dlnr.hawaii.gov)”
@@ -3706,13 +3673,14 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - reservable = true · “overnight camping use on November 2, 2026. Day use hiking to Hanakapīʻāi reopened 11/15. Reservations required for day and overnight use. Wa”
   - restrooms = "yes (kind not stated)" · “and will REOPEN tomorrow, Sunday 11/1. OʻAHU: Keaīwa Heiau State Recreation Area – All 3 restrooms will be CLOSED for construction work thro”
   - rules.stay_limit = "30 days" · “pen to camping Friday through Sunday nights. Permits for O‘ahu camping can be applied for no more than 30 days in advance. Camping is offere”
-- **Napali Coast State Wilderness Park backcountry camps (Kalalau, Hanakoa)** (intake-US-3391, agency (outside research camping-us-oct31), status ok (browser), 5 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/kauai/)
+- **Malaekahana SRA (Kalanai Point) campsites** (intake-US-6414, agency (outside research camping-us-oct31), status ok (browser), 6 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/oahu/)
   - booking.how = "online: explore.ehawaii.gov" · “link “Reserve Now””
-  - booking.url = "https://dlnr.hawaii.gov/dsp/camping-lodging/kauai/" · “booking link from our outside research (camping, in the park) row (official system dlnr.hawaii.gov)”
-  - fees = "$20 per campsite per night for up to 10 persons | $30 per c · “ge.com or The Cabins at Kokee Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons No”
-  - reservable = true · “amping reservation for February 1 and beyond. • Camping is offered at three Kaua’i parks. Reservations can be made 90 days in advance. Kōkeʻ”
+  - booking.url = "https://dlnr.hawaii.gov/dsp/camping-lodging/oahu/" · “booking link from our outside research (camping, in the park) row (official system dlnr.hawaii.gov)”
+  - fees = "$20 per campsite per night for up to 10 persons | $30 per c · “weekend campers. Reserve Now Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons Non”
+  - reservable = true · “overnight camping use on November 2, 2026. Day use hiking to Hanakapīʻāi reopened 11/15. Reservations required for day and overnight use. Wa”
   - restrooms = "yes (kind not stated)" · “and will REOPEN tomorrow, Sunday 11/1. OʻAHU: Keaīwa Heiau State Recreation Area – All 3 restrooms will be CLOSED for construction work thro”
-- **Hapuna Beach SRA A-frame shelters** (intake-US-6403, agency (outside research camping-us-oct31), status ok, 7 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/hawaii/)
+  - rules.stay_limit = "30 days" · “pen to camping Friday through Sunday nights. Permits for O‘ahu camping can be applied for no more than 30 days in advance. Camping is offere”
+- **Kalopa SRA campground + duplex cabins** (intake-US-6404, agency (outside research camping-us-oct31), status ok, 7 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/hawaii/)
   - booking.how = "online: dlnr.hawaii.gov" · “link “Kīholo State Park Reserve””
   - booking.url = "https://dlnr.hawaii.gov/dsp/parks/hawaii/kiholo-state-park- · “link “Kīholo State Park Reserve” -> https://dlnr.hawaii.gov/dsp/parks/hawaii/kiholo-state-park-reserve/”
   - fees = "$20 per campsite per night for up to 10 persons (Curr | $30 · “ell as restrooms. Reserve Now Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons (C”
@@ -3726,27 +3694,12 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - fees = "$20 per campsite per night for up to 10 persons | $30 per c · “ge.com or The Cabins at Kokee Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons No”
   - reservable = true · “amping reservation for February 1 and beyond. • Camping is offered at three Kaua’i parks. Reservations can be made 90 days in advance. Kōkeʻ”
   - restrooms = "yes (kind not stated)" · “and will REOPEN tomorrow, Sunday 11/1. OʻAHU: Keaīwa Heiau State Recreation Area – All 3 restrooms will be CLOSED for construction work thro”
-- **Napali Coast State Wilderness Park camping (permit; trailhead at Haena)** (intake-US-2210, agency (outside research camping-us-oct31), status ok (browser), 5 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/kauai/)
+- **Koke'e SP campground (adjacent)** (intake-US-2223, agency (outside research camping-us-oct31), status ok (browser), 5 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/kauai/)
   - booking.how = "online: explore.ehawaii.gov" · “link “Reserve Now””
   - booking.url = "https://dlnr.hawaii.gov/dsp/camping-lodging/kauai/" · “booking link from our outside research (camping, nearby only) row (official system dlnr.hawaii.gov)”
   - fees = "$20 per campsite per night for up to 10 persons | $30 per c · “ge.com or The Cabins at Kokee Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons No”
   - reservable = true · “amping reservation for February 1 and beyond. • Camping is offered at three Kaua’i parks. Reservations can be made 90 days in advance. Kōkeʻ”
   - restrooms = "yes (kind not stated)" · “and will REOPEN tomorrow, Sunday 11/1. OʻAHU: Keaīwa Heiau State Recreation Area – All 3 restrooms will be CLOSED for construction work thro”
-- **Kalopa SRA campground + duplex cabins** (intake-US-6404, agency (outside research camping-us-oct31), status ok, 7 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/hawaii/)
-  - booking.how = "online: dlnr.hawaii.gov" · “link “Kīholo State Park Reserve””
-  - booking.url = "https://dlnr.hawaii.gov/dsp/parks/hawaii/kiholo-state-park- · “link “Kīholo State Park Reserve” -> https://dlnr.hawaii.gov/dsp/parks/hawaii/kiholo-state-park-reserve/”
-  - fees = "$20 per campsite per night for up to 10 persons (Curr | $30 · “ell as restrooms. Reserve Now Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons (C”
-  - reservable = true · “ng reservation for February 1 and beyond. • Two Hawai’i Island State Parks allow camping. Reservations can be made 90 days in advance at Kal”
-  - restrooms = "yes (kind not stated)" · “d a picnic table. Centrally located is a pavilion with a range, refrigerator, and tables. Comfort Stations with cold showers and restrooms a”
-  - showers = true · “located is a pavilion with a range, refrigerator, and tables. Comfort Stations with cold showers and restrooms are available for shared use ”
-  - sites.cabin = 4 · “ger provided for any cabins in Hawaii State Parks. Hāpuna Beach State Recreation Area has 4-person A-Frame shelters. These shelters consist ”
-- **Ahupua'a 'O Kahana SP beach campsites** (intake-US-2209, agency (outside research camping-us-oct31), status ok (browser), 6 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/oahu/)
-  - booking.how = "online: explore.ehawaii.gov" · “link “Reserve Now””
-  - booking.url = "https://dlnr.hawaii.gov/dsp/camping-lodging/oahu/" · “booking link from our outside research (camping, in the park) row (official system dlnr.hawaii.gov)”
-  - fees = "$20 per campsite per night for up to 10 persons | $30 per c · “weekend campers. Reserve Now Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons Non”
-  - reservable = true · “overnight camping use on November 2, 2026. Day use hiking to Hanakapīʻāi reopened 11/15. Reservations required for day and overnight use. Wa”
-  - restrooms = "yes (kind not stated)" · “and will REOPEN tomorrow, Sunday 11/1. OʻAHU: Keaīwa Heiau State Recreation Area – All 3 restrooms will be CLOSED for construction work thro”
-  - rules.stay_limit = "30 days" · “pen to camping Friday through Sunday nights. Permits for O‘ahu camping can be applied for no more than 30 days in advance. Camping is offere”
 - **Keaiwa Heiau SRA campground** (intake-US-6413, agency (outside research camping-us-oct31), status ok (browser), 6 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/oahu/)
   - booking.how = "online: explore.ehawaii.gov" · “link “Reserve Now””
   - booking.url = "https://dlnr.hawaii.gov/dsp/camping-lodging/oahu/" · “booking link from our outside research (camping, in the park) row (official system dlnr.hawaii.gov)”
@@ -3754,15 +3707,47 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - reservable = true · “overnight camping use on November 2, 2026. Day use hiking to Hanakapīʻāi reopened 11/15. Reservations required for day and overnight use. Wa”
   - restrooms = "yes (kind not stated)" · “and will REOPEN tomorrow, Sunday 11/1. OʻAHU: Keaīwa Heiau State Recreation Area – All 3 restrooms will be CLOSED for construction work thro”
   - rules.stay_limit = "30 days" · “pen to camping Friday through Sunday nights. Permits for O‘ahu camping can be applied for no more than 30 days in advance. Camping is offere”
-- **Koke'e SP campground (adjacent)** (intake-US-2223, agency (outside research camping-us-oct31), status ok (browser), 5 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/kauai/)
+- **Ahupua'a 'O Kahana SP beach campsites** (intake-US-2209, agency (outside research camping-us-oct31), status ok (browser), 6 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/oahu/)
+  - booking.how = "online: explore.ehawaii.gov" · “link “Reserve Now””
+  - booking.url = "https://dlnr.hawaii.gov/dsp/camping-lodging/oahu/" · “booking link from our outside research (camping, in the park) row (official system dlnr.hawaii.gov)”
+  - fees = "$20 per campsite per night for up to 10 persons | $30 per c · “weekend campers. Reserve Now Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons Non”
+  - reservable = true · “overnight camping use on November 2, 2026. Day use hiking to Hanakapīʻāi reopened 11/15. Reservations required for day and overnight use. Wa”
+  - restrooms = "yes (kind not stated)" · “and will REOPEN tomorrow, Sunday 11/1. OʻAHU: Keaīwa Heiau State Recreation Area – All 3 restrooms will be CLOSED for construction work thro”
+  - rules.stay_limit = "30 days" · “pen to camping Friday through Sunday nights. Permits for O‘ahu camping can be applied for no more than 30 days in advance. Camping is offere”
+- **Napali Coast State Wilderness Park camping (permit; trailhead at Haena)** (intake-US-2210, agency (outside research camping-us-oct31), status ok (browser), 5 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/kauai/)
   - booking.how = "online: explore.ehawaii.gov" · “link “Reserve Now””
   - booking.url = "https://dlnr.hawaii.gov/dsp/camping-lodging/kauai/" · “booking link from our outside research (camping, nearby only) row (official system dlnr.hawaii.gov)”
   - fees = "$20 per campsite per night for up to 10 persons | $30 per c · “ge.com or The Cabins at Kokee Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons No”
   - reservable = true · “amping reservation for February 1 and beyond. • Camping is offered at three Kaua’i parks. Reservations can be made 90 days in advance. Kōkeʻ”
   - restrooms = "yes (kind not stated)" · “and will REOPEN tomorrow, Sunday 11/1. OʻAHU: Keaīwa Heiau State Recreation Area – All 3 restrooms will be CLOSED for construction work thro”
+- **Hapuna Beach SRA A-frame shelters** (intake-US-6403, agency (outside research camping-us-oct31), status ok, 7 facts) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/camping-lodging/hawaii/)
+  - booking.how = "online: dlnr.hawaii.gov" · “link “Kīholo State Park Reserve””
+  - booking.url = "https://dlnr.hawaii.gov/dsp/parks/hawaii/kiholo-state-park- · “link “Kīholo State Park Reserve” -> https://dlnr.hawaii.gov/dsp/parks/hawaii/kiholo-state-park-reserve/”
+  - fees = "$20 per campsite per night for up to 10 persons (Curr | $30 · “ell as restrooms. Reserve Now Fees Camping *New Fees Effective 10/9/20* Hawaii Residents: $20 per campsite per night for up to 10 persons (C”
+  - reservable = true · “ng reservation for February 1 and beyond. • Two Hawai’i Island State Parks allow camping. Reservations can be made 90 days in advance at Kal”
+  - restrooms = "yes (kind not stated)" · “d a picnic table. Centrally located is a pavilion with a range, refrigerator, and tables. Comfort Stations with cold showers and restrooms a”
+  - showers = true · “located is a pavilion with a range, refrigerator, and tables. Comfort Stations with cold showers and restrooms are available for shared use ”
+  - sites.cabin = 4 · “ger provided for any cabins in Hawaii State Parks. Hāpuna Beach State Recreation Area has 4-person A-Frame shelters. These shelters consist ”
 
 ## US-MI: 12 random samples (records with facts; seed = the date)
 
+- **Black River Harbor Recreation Area** (intake-US-13166, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/ottawa/recarea/?recid=12343)
+  - booking.url = "https://www.fs.usda.gov/recarea/ottawa/recarea/?recid=12343 · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
+  - fees = "$22 | $5/day or | $30/season | $100 | $10" · “Black River Harbor Camping Unit Per camping unit, per night $22 Day Use Per vehicle $5/day or $30/season Boat Launch Per vehicle Pavilion Pe”
+  - map.date_how = "web page, no date in the link" · “link “Get a Map””
+  - map.url = "https://www.fs.usda.gov/r09/ottawa/maps-guides" · “link “Get a Map” -> https://www.fs.usda.gov/r09/ottawa/maps-guides”
+- **Au Sable Loop Campground and Day Use Area; Buttercup Campground; South Branch Trail Campground and Trailhead; Cathedral Pines Campground; Gabions Campground and Day Use; Au Sable Area; Bowman Lake Are** (intake-US-4583, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/hmnf/recarea/?recid=18544)
+  - booking.url = "https://www.fs.usda.gov/recarea/hmnf/recarea/?recid=18544" · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
+  - map.date_how = "web page, no date in the link" · “link “Find a Map””
+  - map.url = "https://www.fs.usda.gov/r09/huron-manistee/maps-guides" · “link “Find a Map” -> https://www.fs.usda.gov/r09/huron-manistee/maps-guides”
+  - rules.pets = "Dogs are welcome on the Huron-Manistee National Forests (HM · “ow Before You Go Find a Map Find a Pass Find an Answer (FAQ) Find an Office Canine Camper Dogs are welcome on the Huron-Manistee National Fo”
+- **Beaver Island Campground; Belle Isle Campground; Birch Island Campground; Caribou Island Campground; East Chickenbone Campground; West Chickenbone Campground; Chippewa Harbor Campground; Daisy Farm Ca** (intake-US-0039, agency (outside research camping-us-oct31), status ok, 6 facts) · [www.nps.gov](https://www.nps.gov/isro/planyourvisit/boating-guide.htm)
+  - booking.url = "https://www.nps.gov/isro/planyourvisit/boating-guide.htm" · “booking link from our outside research (camping, in the park) row (official system www.nps.gov)”
+  - hookups.electric = true · “overnight use. The Rock Harbor Marina provides nightly slip rentals with utility service hook-ups. Get more information about boat-in campgr”
+  - reservable = false · “ing and Docks All dock space and small-party campsites (including shelters) are available first-come, first-served. They may not be reserved”
+  - rules.generators = "generators are not permitted except in developed and open-w · “d devices such as stereos, televisions, radios turned to commercial stations and portable generators are not permitted except in developed a”
+  - rules.pets = "No pets allowed" · “s 4-1/2 miles into Lake Superior from the outer islands or to the international boundary. No pets allowed. Boater Permits All boaters stayin”
+  - season = "July through September" · “are available first-come, first-served. They may not be reserved or held for others. From July to September, expect crowded conditions at do”
 - **Little Beaver Lake Campground; Twelvemile Beach Campground; Hurricane River Campground; Masse Homestead Group Backpacking Site; Au Sable East Group Backpacking Site; Sevenmile Creek Group Backpacking ** (intake-US-0766, agency (outside research camping-us-oct31), status ok (browser), 11 facts) · [www.nps.gov](https://www.nps.gov/piro/planyourvisit/camping.htm)
   - booking.how = "online: www.recreation.gov" · “link “All reservations are made on Recreation.gov.””
   - booking.url = "https://www.recreation.gov/gateways/2895" · “link “All reservations are made on Recreation.gov.” -> https://www.recreation.gov/gateways/2895”
@@ -3779,55 +3764,20 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - map.date_how = "web page, no date in the link" · “link “Find a Map””
   - map.url = "https://www.fs.usda.gov/r09/huron-manistee/maps-guides" · “link “Find a Map” -> https://www.fs.usda.gov/r09/huron-manistee/maps-guides”
   - rules.pets = "Dogs are welcome on the Huron-Manistee National Forests (HM · “ow Before You Go Find a Map Find a Pass Find an Answer (FAQ) Find an Office Canine Camper Dogs are welcome on the Huron-Manistee National Fo”
-- **Beaver Island Campground; Belle Isle Campground; Birch Island Campground; Caribou Island Campground; East Chickenbone Campground; West Chickenbone Campground; Chippewa Harbor Campground; Daisy Farm Ca** (intake-US-0039, agency (outside research camping-us-oct31), status ok, 6 facts) · [www.nps.gov](https://www.nps.gov/isro/planyourvisit/boating-guide.htm)
-  - booking.url = "https://www.nps.gov/isro/planyourvisit/boating-guide.htm" · “booking link from our outside research (camping, in the park) row (official system www.nps.gov)”
-  - hookups.electric = true · “overnight use. The Rock Harbor Marina provides nightly slip rentals with utility service hook-ups. Get more information about boat-in campgr”
-  - reservable = false · “ing and Docks All dock space and small-party campsites (including shelters) are available first-come, first-served. They may not be reserved”
-  - rules.generators = "generators are not permitted except in developed and open-w · “d devices such as stereos, televisions, radios turned to commercial stations and portable generators are not permitted except in developed a”
-  - rules.pets = "No pets allowed" · “s 4-1/2 miles into Lake Superior from the outer islands or to the international boundary. No pets allowed. Boater Permits All boaters stayin”
-  - season = "July through September" · “are available first-come, first-served. They may not be reserved or held for others. From July to September, expect crowded conditions at do”
-- **Black River Harbor Recreation Area** (intake-US-13166, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/ottawa/recarea/?recid=12343)
-  - booking.url = "https://www.fs.usda.gov/recarea/ottawa/recarea/?recid=12343 · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
-  - fees = "$22 | $5/day or | $30/season | $100 | $10" · “Black River Harbor Camping Unit Per camping unit, per night $22 Day Use Per vehicle $5/day or $30/season Boat Launch Per vehicle Pavilion Pe”
-  - map.date_how = "web page, no date in the link" · “link “Get a Map””
-  - map.url = "https://www.fs.usda.gov/r09/ottawa/maps-guides" · “link “Get a Map” -> https://www.fs.usda.gov/r09/ottawa/maps-guides”
-- **Au Sable Loop Campground and Day Use Area; Buttercup Campground; South Branch Trail Campground and Trailhead; Cathedral Pines Campground; Gabions Campground and Day Use; Au Sable Area; Bowman Lake Are** (intake-US-4583, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/hmnf/recarea/?recid=18544)
-  - booking.url = "https://www.fs.usda.gov/recarea/hmnf/recarea/?recid=18544" · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
-  - map.date_how = "web page, no date in the link" · “link “Find a Map””
-  - map.url = "https://www.fs.usda.gov/r09/huron-manistee/maps-guides" · “link “Find a Map” -> https://www.fs.usda.gov/r09/huron-manistee/maps-guides”
-  - rules.pets = "Dogs are welcome on the Huron-Manistee National Forests (HM · “ow Before You Go Find a Map Find a Pass Find an Answer (FAQ) Find an Office Canine Camper Dogs are welcome on the Huron-Manistee National Fo”
 
 ## US-UT: 12 random samples (records with facts; seed = the date)
 
-- **Red Fleet State Park campground** (intake-US-3087, agency (outside research camping-us-oct31), status ok, 7 facts) · [utahstateparks.reserveamerica.com](https://utahstateparks.reserveamerica.com/)
-  - booking.how = "online: utahstateparks.reserveamerica.com" · “link “Sign In / Sign Up””
-  - booking.url = "https://utahstateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://utahstateparks.reserveamerica.com/memberSignInSignUp.do”
-  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
-  - hookups.electric = "some" · “g for a more modern camping experience, be sure to look for RV sites with full or partial hookups, as well as nearby restrooms and showers. ”
-  - restrooms = "yes (kind not stated)" · “experience, be sure to look for RV sites with full or partial hookups, as well as nearby restrooms and showers. RV and Trailer Camping Tent ”
-  - rules.pets = "Pets allowed" · “ore) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Accessibility needs Pets allowed Trailer sites Options Length (ft) mor”
-  - showers = true · “e sure to look for RV sites with full or partial hookups, as well as nearby restrooms and showers. RV and Trailer Camping Tent Camping is a ”
-- **Dispersed camping on WMA** (intake-US-5991, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [wildlife.utah.gov](https://wildlife.utah.gov/wmas)
+- **Dispersed camping on WMA** (intake-US-5877, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [wildlife.utah.gov](https://wildlife.utah.gov/wmas)
   - booking.url = "https://wildlife.utah.gov/wmas" · “booking link from our outside research (camping, in the park) row (official system wildlife.utah.gov)”
   - map.date_how = "web page, no date in the link" · “link “Utah Wildlife and Waterfowl Management Areas map””
   - map.url = "https://experience.arcgis.com/experience/2cb690e760b444e7a2 · “link “Utah Wildlife and Waterfowl Management Areas map” -> https://experience.arcgis.com/experience/2cb690e760b444e7a280af164e6f6766/”
   - rules.pets = "no dogs are allowed between March 10 and Aug" · “? Annabella WMA Sevier Southern Upland game habitat No seasonal closure dates Per R657-6, no dogs are allowed between March 10 and Aug. 31 a”
-- **Dispersed camping on WMA** (intake-US-10062, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [wildlife.utah.gov](https://wildlife.utah.gov/wmas)
+- **Dispersed camping on WMA** (intake-US-11192, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [wildlife.utah.gov](https://wildlife.utah.gov/wmas)
   - booking.url = "https://wildlife.utah.gov/wmas" · “booking link from our outside research (camping, in the park) row (official system wildlife.utah.gov)”
   - map.date_how = "web page, no date in the link" · “link “Utah Wildlife and Waterfowl Management Areas map””
   - map.url = "https://experience.arcgis.com/experience/2cb690e760b444e7a2 · “link “Utah Wildlife and Waterfowl Management Areas map” -> https://experience.arcgis.com/experience/2cb690e760b444e7a280af164e6f6766/”
   - rules.pets = "no dogs are allowed between March 10 and Aug" · “? Annabella WMA Sevier Southern Upland game habitat No seasonal closure dates Per R657-6, no dogs are allowed between March 10 and Aug. 31 a”
-- **Dispersed camping on WMA** (intake-US-11103, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [wildlife.utah.gov](https://wildlife.utah.gov/wmas)
-  - booking.url = "https://wildlife.utah.gov/wmas" · “booking link from our outside research (camping, in the park) row (official system wildlife.utah.gov)”
-  - map.date_how = "web page, no date in the link" · “link “Utah Wildlife and Waterfowl Management Areas map””
-  - map.url = "https://experience.arcgis.com/experience/2cb690e760b444e7a2 · “link “Utah Wildlife and Waterfowl Management Areas map” -> https://experience.arcgis.com/experience/2cb690e760b444e7a280af164e6f6766/”
-  - rules.pets = "no dogs are allowed between March 10 and Aug" · “? Annabella WMA Sevier Southern Upland game habitat No seasonal closure dates Per R657-6, no dogs are allowed between March 10 and Aug. 31 a”
-- **Dispersed camping on WMA** (intake-US-11044, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [wildlife.utah.gov](https://wildlife.utah.gov/wmas)
-  - booking.url = "https://wildlife.utah.gov/wmas" · “booking link from our outside research (camping, in the park) row (official system wildlife.utah.gov)”
-  - map.date_how = "web page, no date in the link" · “link “Utah Wildlife and Waterfowl Management Areas map””
-  - map.url = "https://experience.arcgis.com/experience/2cb690e760b444e7a2 · “link “Utah Wildlife and Waterfowl Management Areas map” -> https://experience.arcgis.com/experience/2cb690e760b444e7a280af164e6f6766/”
-  - rules.pets = "no dogs are allowed between March 10 and Aug" · “? Annabella WMA Sevier Southern Upland game habitat No seasonal closure dates Per R657-6, no dogs are allowed between March 10 and Aug. 31 a”
-- **Dispersed camping on WMA** (intake-US-5949, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [wildlife.utah.gov](https://wildlife.utah.gov/wmas)
+- **Dispersed camping on WMA** (intake-US-11185, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [wildlife.utah.gov](https://wildlife.utah.gov/wmas)
   - booking.url = "https://wildlife.utah.gov/wmas" · “booking link from our outside research (camping, in the park) row (official system wildlife.utah.gov)”
   - map.date_how = "web page, no date in the link" · “link “Utah Wildlife and Waterfowl Management Areas map””
   - map.url = "https://experience.arcgis.com/experience/2cb690e760b444e7a2 · “link “Utah Wildlife and Waterfowl Management Areas map” -> https://experience.arcgis.com/experience/2cb690e760b444e7a280af164e6f6766/”
@@ -3840,12 +3790,12 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - restrooms = "yes (kind not stated)" · “experience, be sure to look for RV sites with full or partial hookups, as well as nearby restrooms and showers. RV and Trailer Camping Tent ”
   - rules.pets = "Pets allowed" · “ore) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Accessibility needs Pets allowed Trailer sites Options Length (ft) mor”
   - showers = true · “e sure to look for RV sites with full or partial hookups, as well as nearby restrooms and showers. RV and Trailer Camping Tent Camping is a ”
-- **Dispersed camping on WMA** (intake-US-11187, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [wildlife.utah.gov](https://wildlife.utah.gov/wmas)
+- **Dispersed camping on WMA** (intake-US-11190, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [wildlife.utah.gov](https://wildlife.utah.gov/wmas)
   - booking.url = "https://wildlife.utah.gov/wmas" · “booking link from our outside research (camping, in the park) row (official system wildlife.utah.gov)”
   - map.date_how = "web page, no date in the link" · “link “Utah Wildlife and Waterfowl Management Areas map””
   - map.url = "https://experience.arcgis.com/experience/2cb690e760b444e7a2 · “link “Utah Wildlife and Waterfowl Management Areas map” -> https://experience.arcgis.com/experience/2cb690e760b444e7a280af164e6f6766/”
   - rules.pets = "no dogs are allowed between March 10 and Aug" · “? Annabella WMA Sevier Southern Upland game habitat No seasonal closure dates Per R657-6, no dogs are allowed between March 10 and Aug. 31 a”
-- **Yuba State Park campground** (intake-US-3097, agency (outside research camping-us-oct31), status ok, 7 facts) · [utahstateparks.reserveamerica.com](https://utahstateparks.reserveamerica.com/)
+- **Steinaker State Park campground** (intake-US-3093, agency (outside research camping-us-oct31), status ok, 7 facts) · [utahstateparks.reserveamerica.com](https://utahstateparks.reserveamerica.com/)
   - booking.how = "online: utahstateparks.reserveamerica.com" · “link “Sign In / Sign Up””
   - booking.url = "https://utahstateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://utahstateparks.reserveamerica.com/memberSignInSignUp.do”
   - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
@@ -3853,12 +3803,7 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - restrooms = "yes (kind not stated)" · “experience, be sure to look for RV sites with full or partial hookups, as well as nearby restrooms and showers. RV and Trailer Camping Tent ”
   - rules.pets = "Pets allowed" · “ore) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Accessibility needs Pets allowed Trailer sites Options Length (ft) mor”
   - showers = true · “e sure to look for RV sites with full or partial hookups, as well as nearby restrooms and showers. RV and Trailer Camping Tent Camping is a ”
-- **Dispersed camping on WMA** (intake-US-11177, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [wildlife.utah.gov](https://wildlife.utah.gov/wmas)
-  - booking.url = "https://wildlife.utah.gov/wmas" · “booking link from our outside research (camping, in the park) row (official system wildlife.utah.gov)”
-  - map.date_how = "web page, no date in the link" · “link “Utah Wildlife and Waterfowl Management Areas map””
-  - map.url = "https://experience.arcgis.com/experience/2cb690e760b444e7a2 · “link “Utah Wildlife and Waterfowl Management Areas map” -> https://experience.arcgis.com/experience/2cb690e760b444e7a280af164e6f6766/”
-  - rules.pets = "no dogs are allowed between March 10 and Aug" · “? Annabella WMA Sevier Southern Upland game habitat No seasonal closure dates Per R657-6, no dogs are allowed between March 10 and Aug. 31 a”
-- **Bear Lake State Park campground** (intake-US-3063, agency (outside research camping-us-oct31), status ok, 7 facts) · [utahstateparks.reserveamerica.com](https://utahstateparks.reserveamerica.com/)
+- **Coral Pink Sand Dunes State Park campground** (intake-US-3065, agency (outside research camping-us-oct31), status ok, 7 facts) · [utahstateparks.reserveamerica.com](https://utahstateparks.reserveamerica.com/)
   - booking.how = "online: utahstateparks.reserveamerica.com" · “link “Sign In / Sign Up””
   - booking.url = "https://utahstateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://utahstateparks.reserveamerica.com/memberSignInSignUp.do”
   - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
@@ -3866,7 +3811,36 @@ Updated 2026-11-08. Every fact in <area>.json carries its source url, read date 
   - restrooms = "yes (kind not stated)" · “experience, be sure to look for RV sites with full or partial hookups, as well as nearby restrooms and showers. RV and Trailer Camping Tent ”
   - rules.pets = "Pets allowed" · “ore) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Accessibility needs Pets allowed Trailer sites Options Length (ft) mor”
   - showers = true · “e sure to look for RV sites with full or partial hookups, as well as nearby restrooms and showers. RV and Trailer Camping Tent Camping is a ”
-- **Jordanelle State Park campground** (intake-US-3080, agency (outside research camping-us-oct31), status ok, 7 facts) · [utahstateparks.reserveamerica.com](https://utahstateparks.reserveamerica.com/)
+- **Otter Creek State Park campground** (intake-US-3083, agency (outside research camping-us-oct31), status ok, 7 facts) · [utahstateparks.reserveamerica.com](https://utahstateparks.reserveamerica.com/)
+  - booking.how = "online: utahstateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://utahstateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://utahstateparks.reserveamerica.com/memberSignInSignUp.do”
+  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = "some" · “g for a more modern camping experience, be sure to look for RV sites with full or partial hookups, as well as nearby restrooms and showers. ”
+  - restrooms = "yes (kind not stated)" · “experience, be sure to look for RV sites with full or partial hookups, as well as nearby restrooms and showers. RV and Trailer Camping Tent ”
+  - rules.pets = "Pets allowed" · “ore) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Accessibility needs Pets allowed Trailer sites Options Length (ft) mor”
+  - showers = true · “e sure to look for RV sites with full or partial hookups, as well as nearby restrooms and showers. RV and Trailer Camping Tent Camping is a ”
+- **Willard Bay State Park campground** (intake-US-3096, agency (outside research camping-us-oct31), status ok, 7 facts) · [utahstateparks.reserveamerica.com](https://utahstateparks.reserveamerica.com/)
+  - booking.how = "online: utahstateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://utahstateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://utahstateparks.reserveamerica.com/memberSignInSignUp.do”
+  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = "some" · “g for a more modern camping experience, be sure to look for RV sites with full or partial hookups, as well as nearby restrooms and showers. ”
+  - restrooms = "yes (kind not stated)" · “experience, be sure to look for RV sites with full or partial hookups, as well as nearby restrooms and showers. RV and Trailer Camping Tent ”
+  - rules.pets = "Pets allowed" · “ore) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Accessibility needs Pets allowed Trailer sites Options Length (ft) mor”
+  - showers = true · “e sure to look for RV sites with full or partial hookups, as well as nearby restrooms and showers. RV and Trailer Camping Tent Camping is a ”
+- **Dispersed camping on WMA** (intake-US-11710, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [wildlife.utah.gov](https://wildlife.utah.gov/wmas)
+  - booking.url = "https://wildlife.utah.gov/wmas" · “booking link from our outside research (camping, in the park) row (official system wildlife.utah.gov)”
+  - map.date_how = "web page, no date in the link" · “link “Utah Wildlife and Waterfowl Management Areas map””
+  - map.url = "https://experience.arcgis.com/experience/2cb690e760b444e7a2 · “link “Utah Wildlife and Waterfowl Management Areas map” -> https://experience.arcgis.com/experience/2cb690e760b444e7a280af164e6f6766/”
+  - rules.pets = "no dogs are allowed between March 10 and Aug" · “? Annabella WMA Sevier Southern Upland game habitat No seasonal closure dates Per R657-6, no dogs are allowed between March 10 and Aug. 31 a”
+- **Hardware WMA designated camp areas (Wapiti, hunt camps A-D)** (intake-US-5933, agency (outside research camping-us-oct31), status ok (browser), 7 facts) · [wildlife.utah.gov](https://wildlife.utah.gov/hardware/visit)
+  - booking.url = "https://wildlife.utah.gov/hardware/visit" · “booking link from our outside research (camping, in the park) row (official system wildlife.utah.gov)”
+  - fees = "$3 per person" · “odate all grade levels. Programs typically last an hour and a half to two hours, and cost $3 per person. Email This email address is being p”
+  - map.date_how = "web page, year 2023 in the link" · “link “””
+  - map.url = "https://wildlife.utah.gov/images/hardware/2023-03-28-hardwa · “link “” -> https://wildlife.utah.gov/images/hardware/2023-03-28-hardware-wma-designated-camping-areas-map.jpg”
+  - phone = "(435) 753-6206" · “r you ride in a sleigh or wagon. You may call the center at 435-753-6206 during regular business hours for updates on weather and el”
+  - restrooms = "vault" · “ts &mdash; are offered every day the Education Center is open. Where are the restrooms? A pit toilet is located in the gravel parking lot ne”
+  - season = "Dec. 4, 2026 through Feb. 14, 2027" · “are Wildlife Education Center begin in December The Hardware Wildlife Education Center is open for the winter season Dec. 4, 2026 through Fe”
+- **Kodachrome Basin State Park campground** (intake-US-3081, agency (outside research camping-us-oct31), status ok, 7 facts) · [utahstateparks.reserveamerica.com](https://utahstateparks.reserveamerica.com/)
   - booking.how = "online: utahstateparks.reserveamerica.com" · “link “Sign In / Sign Up””
   - booking.url = "https://utahstateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://utahstateparks.reserveamerica.com/memberSignInSignUp.do”
   - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
