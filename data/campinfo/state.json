@@ -106,9 +106,9 @@
     "with_facts": 54,
     "with_sites": 4
    },
-   "left": 13,
-   "status": "partial",
-   "updated": "2026-11-06"
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-09"
   },
   "US-CO": {
    "camps": 676,
@@ -1211,7 +1211,7 @@
     "src": null,
     "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-11-06"
+   "read": "2026-11-09"
   },
   "US-CO": {
    "cell": {
@@ -2575,32 +2575,36 @@
  },
  "last": {
   "areas": [
-   "US-AZ"
+   "US-CA"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 169,
+   "dropped_queued": 767,
    "errors": 0,
    "for_person_urls": [
     [
      "https://epqs.nationalmap.gov/robots.txt",
      "robots.txt answered 403: nothing fetched from epqs.nationalmap.gov this run"
+    ],
+    [
+     "https://broadbandmap.fcc.gov/robots.txt",
+     "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 1,
+   "requests": 2,
    "rested": 0,
-   "robots": 1,
-   "robots_unreadable": 1,
+   "robots": 2,
+   "robots_unreadable": 2,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 170,
+   "camps": 768,
    "elevations": 0,
    "errors": 0,
    "needs_browser": 0,
-   "needs_key": 170,
+   "needs_key": 768,
    "no_page": 0,
    "not_official": 0,
    "ok": 0,
@@ -2608,7 +2612,7 @@
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 33
+   "skipped_fresh": 442
   },
   "when": "2026-11-09"
  },
