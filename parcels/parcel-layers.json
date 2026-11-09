@@ -1,107 +1,93 @@
 {
  "21111": {
-  "layer_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/Metro_Owned_Parcels202301/FeatureServer/0",
+  "layer_url": "https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1",
   "county": "Jefferson County, KY (21111)",
   "source_url": "https://www.arcgis.com/sharing/rest/search?q=Jefferson+County+parcels+AND+%28type%3A%22Feature+Service%22+OR+type%3A%22Map+Service%22%29&num=50&f=json",
-  "read_date": "2026-11-01",
-  "why": "\"Metro_Owned_Parcels202301\", published by \"Louisville/Jefferson County Information Consortium\"; the pin of TEST-KY-01 falls on one of its parcels"
- },
- "21067": {
-  "layer_url": "https://services1.arcgis.com/Mg7DLdfYcSWIaDnu/arcgis/rest/services/Parcel/FeatureServer/0",
-  "county": "Fayette County, KY (21067)",
-  "source_url": "https://www.arcgis.com/sharing/rest/search?q=Fayette+County+parcels+AND+%28type%3A%22Feature+Service%22+OR+type%3A%22Map+Service%22%29&num=50&f=json",
-  "read_date": "2026-11-01",
-  "why": "\"Parcel\", published by \"Lexington-Fayette Urban County Government\"; the pin of TEST-KY-02 falls on one of its parcels"
+  "read_date": "2026-11-09",
+  "why": "\"Jefferson County KY Parcels\", government host gis.lojic.org; published by \"Louisville/Jefferson County Information Consortium\"; the pin of TEST-KY-01 falls on one of its parcels"
  },
  "21093": {
-  "layer_url": "https://services1.arcgis.com/fYwcHOBzInDTQxh0/arcgis/rest/services/Hardin_Parcels_08_11_22/FeatureServer/0",
+  "layer_url": "https://gis.elizabethtownky.org/server/rest/services/PropertyBoundaries_Parcels/MapServer/0",
   "county": "Hardin County, KY (21093)",
   "source_url": "https://www.arcgis.com/sharing/rest/search?q=Hardin+County+parcels+AND+%28type%3A%22Feature+Service%22+OR+type%3A%22Map+Service%22%29&num=50&f=json",
-  "read_date": "2026-11-01",
-  "why": "\"Hardin County Parcels 23\", published by \"Hardin County Online GIS\"; the pin of TEST-KY-07 falls on one of its parcels"
+  "read_date": "2026-11-09",
+  "why": "\"Property Boundaries\", published by \"City of Elizabethtown\"; the pin of TEST-KY-07 falls on one of its parcels"
  },
  "21117": {
   "layer_url": "https://maps.linkgis.org/server/rest/services/CC_KC_PCTheme/MapServer/15",
   "county": "Kenton County, KY (21117)",
   "source_url": "https://www.arcgis.com/sharing/rest/search?q=Kenton+County+parcels+AND+%28type%3A%22Feature+Service%22+OR+type%3A%22Map+Service%22%29&num=50&f=json",
-  "read_date": "2026-11-01",
+  "read_date": "2026-11-09",
   "why": "\"Parcels - KY - Kenton County\", government host maps.linkgis.org; the pin of TEST-KY-08 falls on one of its parcels"
- },
- "21101": {
-  "layer_url": "https://services.arcgis.com/Iwwqwcdc5CWG2jt9/arcgis/rest/services/Parcels_231110/FeatureServer/0",
-  "county": "Henderson County, KY (21101)",
-  "source_url": "https://www.arcgis.com/sharing/rest/search?q=Henderson+County+parcels+AND+%28type%3A%22Feature+Service%22+OR+type%3A%22Map+Service%22%29&num=50&f=json",
-  "read_date": "2026-11-01",
-  "why": "\"Parcels_231110\", published by the organisation \"Henderson KY GIS\", named after this county / town; the pin of TEST-KY-10 falls on one of its parcels"
  },
  "48185": {
   "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
   "county": "Grimes County, TX (48185)",
   "source_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
-  "read_date": "2026-11-01",
+  "read_date": "2026-11-09",
   "why": "Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); it answered at a pin in this county"
  },
  "48073": {
   "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
   "county": "Cherokee County, TX (48073)",
   "source_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
-  "read_date": "2026-11-01",
+  "read_date": "2026-11-09",
   "why": "Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); it answered at a pin in this county"
  },
  "48029": {
   "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
   "county": "Bexar County, TX (48029)",
   "source_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
-  "read_date": "2026-11-01",
+  "read_date": "2026-11-09",
   "why": "Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); it answered at a pin in this county"
  },
  "48417": {
   "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
   "county": "Shackelford County, TX (48417)",
   "source_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
-  "read_date": "2026-11-01",
+  "read_date": "2026-11-09",
   "why": "Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); it answered at a pin in this county"
  },
  "48327": {
   "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
   "county": "Menard County, TX (48327)",
   "source_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
-  "read_date": "2026-11-01",
+  "read_date": "2026-11-09",
   "why": "Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); it answered at a pin in this county"
  },
  "48453": {
   "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
   "county": "Travis County, TX (48453)",
   "source_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
-  "read_date": "2026-11-01",
+  "read_date": "2026-11-09",
   "why": "Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); it answered at a pin in this county"
  },
  "48007": {
   "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
   "county": "Aransas County, TX (48007)",
   "source_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
-  "read_date": "2026-11-01",
+  "read_date": "2026-11-09",
   "why": "Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); it answered at a pin in this county"
  },
  "48141": {
   "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
   "county": "El Paso County, TX (48141)",
   "source_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
-  "read_date": "2026-11-01",
+  "read_date": "2026-11-09",
   "why": "Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); it answered at a pin in this county"
  },
  "48147": {
   "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
   "county": "Fannin County, TX (48147)",
   "source_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
-  "read_date": "2026-11-01",
+  "read_date": "2026-11-09",
   "why": "Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); it answered at a pin in this county"
  },
  "48039": {
   "layer_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
   "county": "Brazoria County, TX (48039)",
   "source_url": "https://feature.geographic.texas.gov/arcgis/rest/services/Parcels/stratmap_land_parcels_48_most_recent/MapServer/0",
-  "read_date": "2026-11-01",
+  "read_date": "2026-11-09",
   "why": "Texas StratMap statewide land parcels (Texas Geographic Information Office, TxGIO); it answered at a pin in this county"
  }
 }
