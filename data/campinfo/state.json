@@ -958,7 +958,7 @@
    },
    "left": 1,
    "status": "partial",
-   "updated": "2026-11-03"
+   "updated": "2026-11-09"
   },
   "US-UT": {
    "camps": 472,
@@ -1158,7 +1158,7 @@
   "US-SC": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-SD": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-TN": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
-  "US-TX": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
+  "US-TX": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-UT": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-VA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-VT": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1550,10 +1550,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
-    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+    "src": null,
+    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-11-03"
+   "read": "2026-11-09"
   },
   "US-UT": {
    "cell": {
@@ -2575,12 +2575,12 @@
  },
  "last": {
   "areas": [
-   "US-CO"
+   "US-TX"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 550,
+   "dropped_queued": 119,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2592,27 +2592,27 @@
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 106,
-   "rested": 100,
+   "requests": 2,
+   "rested": 0,
    "robots": 2,
    "robots_unreadable": 2,
-   "strikes": 3
+   "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 551,
+   "camps": 120,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 14,
-   "needs_key": 350,
+   "needs_browser": 0,
+   "needs_key": 120,
    "no_page": 0,
    "not_official": 0,
-   "ok": 100,
-   "pages_read": 100,
-   "resting": 101,
+   "ok": 0,
+   "pages_read": 0,
+   "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 125
+   "skipped_fresh": 364
   },
   "when": "2026-11-09"
  },
