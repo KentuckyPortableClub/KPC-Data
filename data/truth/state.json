@@ -464,21 +464,21 @@
    "checked": 206,
    "counts": {
     "agree": 16,
-    "handover_hints": 4,
+    "handover_hints": 5,
     "no_page": 51,
-    "no_size": 106,
+    "no_size": 105,
     "off": 10,
-    "ours_unknown": 2,
+    "ours_unknown": 5,
     "parks": 206,
     "retired": 0,
-    "unsure": 8,
-    "weak": 2,
-    "with_outline": 193
+    "unsure": 7,
+    "weak": 3,
+    "with_outline": 194
    },
    "left": 0,
    "parks": 206,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-09"
   },
   "US-NJ": {
    "checked": 134,
@@ -745,43 +745,50 @@
   "dep.nj.gov": 1794275828.9220152,
   "riparks.com": 1794280201.1004815,
   "www.alapark.com": 1794248619.2284882,
+  "www.arcgis.com": 1794286229.087196,
   "www.floridastateparks.org": 1794252193.2078493,
   "www.riparks.com": 1794280152.9954374,
   "www.swfwmd.state.fl.us": 1794252263.334702
  },
  "last": {
   "areas": [
-   "US-VT"
+   "US-NH"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 1,
+   "browser": 8,
+   "dropped_queued": 2,
    "errors": 0,
+   "for_person": 2,
    "for_person_urls": [
     [
-     "http://www.nae.usace.army.mil/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.nae.usace.army.mil this run"
+     "https://www.arcgis.com/itemdata/92d347a7683b26a11dab76ccf9a5cac2/58b36e66aa2a40669f43f3771f0514a3/BELLAMYRIVERWMAEAST.pdf",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.arcgis.com/itemdata/92d347a7683b26a11dab76ccf9a5cac2/422ca4604a4f414fb56e393bbd420f23/BRACKETTBROOKWMA.pdf?response-cache-control=max-age%3D0%2C+s-maxage%3D600%2C+v%3D1762188798000&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECcaCXVzLWVhc3QtMSJHM",
+     "HTTP 403 twice"
     ]
    ],
-   "requests": 192,
+   "requests": 207,
    "rested": 0,
+   "retry403": 2,
    "robots": 1,
-   "robots_unreadable": 1,
-   "strikes": 0
+   "strikes": 4
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 11,
-   "no_size": 12,
-   "ours_unknown": 2,
-   "pages_read": 151,
-   "parks": 109,
+   "handover_hints": 5,
+   "no_size": 156,
+   "ours_unknown": 5,
+   "pages_read": 110,
+   "parks": 206,
    "retired": 0,
-   "size_agree": 35,
-   "size_off": 32,
-   "size_unsure": 12,
+   "size_agree": 16,
+   "size_off": 10,
+   "size_unsure": 7,
    "skipped_fresh": 0,
-   "with_outline": 93
+   "with_outline": 194
   },
   "when": "2026-11-09"
  },

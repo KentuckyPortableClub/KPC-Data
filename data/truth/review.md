@@ -29,7 +29,7 @@ Updated 2026-11-09. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-RI | 61 | 58 | 1 | **3** | 9 | 41 | 2 | 2 | 0 | 13 |
 | US-MA | 421 | 410 | 73 | **169** | 37 | 122 | 9 | 3 | 0 | 7 |
 | US-VT | 109 | 93 | 35 | **32** | 12 | 12 | 2 | 11 | 0 | 6 |
-| US-NH | 206 | 193 | 16 | **10** | 8 | 106 | 2 | 4 | 0 | 2 |
+| US-NH | 206 | 194 | 16 | **10** | 7 | 105 | 5 | 5 | 0 | 3 |
 | US-ME | 148 | 139 | 15 | **17** | 8 | 93 | 3 | 9 | 0 | 8 |
 | US-MD | 186 | 169 | 41 | **50** | 30 | 34 | 14 | 17 | 0 | 10 |
 | US-DE | 89 | 79 | 2 | **1** | 2 | 66 | 8 | 2 | 0 | 0 |
@@ -2016,7 +2016,6 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 - US-2659 Lake Francis State Park: ours 3,303 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-2666 Mount Sunapee State Park: ours 3,082 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-2684 White Lake State Park: ours 749 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-4886 Connecticut Lakes State Forest: ours 2,550 ac · cause: the agency figure may cover several states; our outline may be this state's share only · [www.nhstateparks.org](https://www.nhstateparks.org/find-parks-trails/connecticut-lakes-headwaters-working-forest)
 - US-8027 Chesterfield Gorge State Natural Area: ours 7 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-8028 Madison Boulder State Natural Area: ours 185 ac · cause: no total-looking sentence: numbers found were parts or other units
 
@@ -2025,6 +2024,7 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 - US-0448 Great Bay National Wildlife Refuge · managed by: “visitors to watch wildlife, hike, bike, and hunt on the refuge. Great Bay National Wildlife Refuge is managed by Parker River National Wildlife Refuge. For more information, please contact Parker Rive” · owner now: Parker River National Wildlife Refuge · [www.fws.gov](https://www.fws.gov/refuge/great-bay)
 - US-0448 Great Bay National Wildlife Refuge · managed by: “ational wildlife refuge A national wildlife refuge is typically a contiguous area of land and water managed by the U.S. Fish and Wildlife Service for the conservation and, where appropriate, restorati” · owner now: Parker River National Wildlife Refuge · [www.fws.gov](https://www.fws.gov/refuge/great-bay)
 - US-0451 Wapack National Wildlife Refuge · managed by: “ational wildlife refuge A national wildlife refuge is typically a contiguous area of land and water managed by the U.S. Fish and Wildlife Service for the conservation and, where appropriate, restorati” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/wapack/about-us)
+- US-4556 Appalachian Trail National Scenic Trail · managed by: “ian Mountains. Conceived in 1921, built by private citizens, and completed in 1937, today the trail is managed by the National Park Service, US Forest Service, Appalachian Trail Conservancy, numerous ” · owner now: National Park Service · [www.nps.gov](https://www.nps.gov/appa/index.htm)
 - US-4935 Mount Major State Forest · managed by: “n the southern part of the state for the effort required. It's part of a 200-acre conservation area owned and managed by the Society for the Protection of New Hampshire Forests that will forever be pr” · owner now: Society for the Protection of New Hampshire · [www.forestsociety.org](https://www.forestsociety.org/property/mount-major-reservation)
 - US-8026 White Island State Historic Site · transfer: “s 85 feet above mean high water. In 1993, White Island and a couple other islands in the group were transferred to the New Hampshire State Parks system and is now managed by the Bureau of Historic Sit” · owner now: New Hampshire State Parks · [www.nhstateparks.org](https://www.nhstateparks.org/find-parks-trails/white-island-historical-site)
 
