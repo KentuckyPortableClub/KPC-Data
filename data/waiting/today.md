@@ -65,7 +65,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-05 | 4 | data/pile-solver/US-VT.json | HOLD | US-5538: pin 1920 m out without the POTA pin flag |
 | 2026-11-06 | 3 | data/campinfo/US-MS.json | HOLD | F-I3 the same site count on 4 camps of one agency (agency (outside research camping-us-oct31): 20): copied from a shared page? |
 | 2026-11-06 | 3 | data/campinfo/US-VT.json | HOLD | F-I3 the same site count on 101 camps of one agency (state: 27): copied from a shared page? |
-| 2026-11-06 | 3 | data/fers/CA-ON.json.gz | HOLD | F-2 candidates 13 -> 99 (over 30% change); F-2 NOT SURE 302 -> 44 (over 30% change); F-2 only 10 of 13 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 89 new cand |
+| 2026-11-06 | 3 | data/fers/CA-ON.json.gz | HOLD | F-2 candidates 13 -> 117 (over 30% change); F-2 NOT SURE 302 -> 26 (over 30% change); F-2 only 0 of 13 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 117 new can |
 | 2026-11-06 | 3 | data/fers/US-CA.json | HOLD | F-4 data/fers/US-CA.json replaces live data/fers/US-CA.json.gz (other format) with 75 rows for 1365 (over 10% fewer) |
 | 2026-11-06 | 3 | data/fers/US-DC.json | HOLD | F-K known 2-fer missing: US-0795 + US-0796 |
 | 2026-11-06 | 3 | data/fers/US-NM.json | HOLD | F-2 only 5 of 8 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 27 new candidate pairs since the live file (over 10% of 8): a person looks at them first, e.g. US- |
@@ -87,7 +87,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-09 | 0 | data/docs/US-FL.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-09 | 0 | data/docs/US-GA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-09 | 0 | data/docs/US-HI.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| 2026-11-09 | 0 | data/docs/US-IN.json | HOLD | F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/HE-WabashCA_Parke1.pdf |
+| 2026-11-09 | 0 | data/docs/US-IN.json | HOLD | F-D3 9 of 20 re-tested links dead, e.g. https://www.in.gov/dA/d828db331b/sp-salamonie_lostEW_bridge.pdf?langua |
 | 2026-11-09 | 0 | data/docs/US-KS.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-09 | 0 | data/docs/US-LA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-09 | 0 | data/docs/US-MA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
@@ -112,7 +112,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-09 | 0 | data/docs/US-SC.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-09 | 0 | data/docs/US-SD.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-09 | 0 | data/docs/US-TN.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| 2026-11-09 | 0 | data/docs/US-TX.json | HOLD | F-D3 15 of 20 re-tested links dead, e.g. https://tpwd.texas.gov/publications/pwdpubs/media/park_maps/pwd_mp_p45 |
+| 2026-11-09 | 0 | data/docs/US-TX.json | HOLD | F-D3 4 of 20 re-tested links dead, e.g. https://tpwd.texas.gov/publications/pwdpubs/media/park_maps/pwd_mp_p45 |
 | 2026-11-09 | 0 | data/docs/US-UT.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-09 | 0 | data/docs/US-VA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-09 | 0 | data/docs/US-VT.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
@@ -120,8 +120,8 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-09 | 0 | data/docs/US-WI.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-09 | 0 | data/docs/US-WV.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-09 | 0 | data/docs/US-WY.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| 2026-11-09 | 0 | data/fers/CA-AB.json.gz | HOLD | F-2 only 27 of 37 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 4 new candidate pairs since the live file (over 10% of 37): a person looks at them first, e.g. C |
-| 2026-11-09 | 0 | data/fers/CA-YT.json | HOLD | F-2 small area: all 2 live candidate pair(s) gone |
+| 2026-11-09 | 0 | data/fers/CA-NB.json.gz | HOLD | F-2 small area: all 2 live candidate pair(s) gone |
+| 2026-11-09 | 0 | data/fers/CA-NS.json | HOLD | F-2 only 0 of 6 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 4 new candidate pairs since the live file (over 10% of 6): a person looks at them first, e.g. CA-0 |
 | 2026-11-09 | 0 | data/fers/US-AZ.json.gz | HOLD | F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-0771+US-1055 135 km |
 | 2026-11-09 | 0 | data/fers/US-OR.json.gz | HOLD | F-2 NOT SURE 34 -> 16 (over 30% change); F-2 only 11 of 62 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 56 new candidate pairs since the live file (over 10% of |
 | 2026-11-09 | 0 | data/fers/US-WA.json.gz | HOLD | F-2 only 15 of 40 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 17 new candidate pairs since the live file (over 10% of 40): a person looks at them first, e.g.  |
@@ -200,13 +200,13 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/campstate/US-VT.json | PASS |  |
 | ? | ? | data/campstate/US-WA.json | PASS |  |
 | ? | ? | data/campstate/US-WY.json | PASS |  |
-| ? | ? | data/fers/CA-NB.json.gz | PASS |  |
+| ? | ? | data/fers/CA-AB.json.gz | HOLD | F-2 only 27 of 37 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 4 new candidate pairs since the live file (over 10% of 37): a person looks at them first, e.g. C |
 | ? | ? | data/fers/CA-NL.json | PASS |  |
-| ? | ? | data/fers/CA-NS.json | PASS |  |
 | ? | ? | data/fers/CA-NT.json | PASS |  |
 | ? | ? | data/fers/CA-NU.json.gz | PASS |  |
 | ? | ? | data/fers/CA-PE.json | PASS |  |
 | ? | ? | data/fers/CA-SP.json | PASS |  |
+| ? | ? | data/fers/CA-YT.json | HOLD | F-2 small area: all 2 live candidate pair(s) gone |
 | ? | ? | data/fers/US-AL.json | PASS |  |
 | ? | ? | data/fers/US-HI.json | PASS |  |
 | ? | ? | data/fers/US-KY.json.gz | PASS |  |
