@@ -171,7 +171,7 @@
    "Unit": "acres",
    "Agency": "Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data",
    "Source page": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?where=OBJECTID%3D1056&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3; read 2026-11-02"
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3; read 2026-11-09"
   },
   {
    "Park number (if matched)": "CA-5664",
@@ -180,7 +180,7 @@
    "Unit": "acres",
    "Agency": "Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data",
    "Source page": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?where=OBJECTID%3D1053&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3; read 2026-11-02"
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3; read 2026-11-09"
   },
   {
    "Park number (if matched)": "CA-5666",
@@ -189,7 +189,7 @@
    "Unit": "acres",
    "Agency": "Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data",
    "Source page": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?where=OBJECTID%3D972&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3; read 2026-11-02"
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3; read 2026-11-09"
   },
   {
    "Park number (if matched)": "US-10476",
@@ -500,20 +500,11 @@
   {
    "Park number (if matched)": "US-0731",
    "Park name (as the agency writes it)": "Columbia River Gorge National Scenic Area",
-   "Size": 209918,
+   "Size": 292690,
    "Unit": "acres",
-   "Agency": "USDA Forest Service",
-   "Source page": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D10&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "US-4385",
-   "Park name (as the agency writes it)": "Umatilla National Forest",
-   "Size": 1417667,
-   "Unit": "acres",
-   "Agency": "USDA Forest Service",
-   "Source page": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D148&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0; read 2026-11-02"
+   "Agency": "Forest Service national designated areas (monuments, NRAs, scenic areas)",
+   "Source page": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query?where=OBJECTID%3D76&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0; read 2026-11-09"
   },
   {
    "Park number (if matched)": "US-4477",
@@ -540,7 +531,7 @@
    "Unit": "acres",
    "Agency": "USDA Forest Service",
    "Source page": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D65&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0; read 2026-11-02"
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0; read 2026-11-09"
   },
   {
    "Park number (if matched)": "US-4477",
@@ -558,7 +549,7 @@
    "Unit": "acres",
    "Agency": "USDA Forest Service",
    "Source page": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D113&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0; read 2026-11-02"
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0; read 2026-11-09"
   },
   {
    "Park number (if matched)": "US-4514",
@@ -567,16 +558,7 @@
    "Unit": "acres",
    "Agency": "USDA Forest Service",
    "Source page": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D20&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "US-4501",
-   "Park name (as the agency writes it)": "Custer Gallatin National Forest",
-   "Size": 3042860,
-   "Unit": "acres",
-   "Agency": "USDA Forest Service",
-   "Source page": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D145&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0; read 2026-11-02"
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0; read 2026-11-09"
   },
   {
    "Park number (if matched)": "US-4514",
@@ -585,7 +567,7 @@
    "Unit": "acres",
    "Agency": "USDA Forest Service",
    "Source page": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D20&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0; read 2026-11-02"
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0; read 2026-11-09"
   },
   {
    "Park number (if matched)": "US-5967",
@@ -1653,10 +1635,10 @@
   },
   {
    "Host": "apps.fs.usda.gov",
-   "Agency/area": "USDA Forest Service",
+   "Agency/area": "Forest Service national designated areas (monuments, NRAs, scenic areas)",
    "Kind": "GIS layer",
-   "Example URL": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0",
-   "# times used": 10,
+   "Example URL": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+   "# times used": 8,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
