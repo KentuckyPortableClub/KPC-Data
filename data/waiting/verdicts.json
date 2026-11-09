@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-09T15:06Z",
+ "checked": "2026-11-09T15:39Z",
  "switched_on": false,
  "results": [
   {
@@ -785,7 +785,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 8 of 20 re-tested links dead, e.g. https://www.in.gov/dA/bad7f29779/sp-5MileChallengeBrochure.pdf?languag"
+    "F-D3 5 of 20 re-tested links dead, e.g. https://www.in.gov/dA/e7720fcb60/cagles_mill_lieber_poplargrove_electr"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1065,8 +1065,8 @@
    "path": "data/fers/CA-BC.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 NOT SURE 52 -> 22 (over 30% change)",
-    "F-2 6 new candidate pairs since the live file (over 10% of 39): a person looks at them first, e.g. CA-0736+CA-4096, CA-0737+CA-3551, CA-0742+US-4448"
+    "F-2 candidates 29 -> 45 (over 30% change)",
+    "F-2 16 new candidate pairs since the live file (over 10% of 29): a person looks at them first, e.g. CA-0018+CA-3362, CA-0045+CA-3829, CA-0066+CA-5344"
    ],
    "notes": [
     "replaces live data/fers/CA-BC.json (same file, other format): promotion removes the old name"
@@ -1153,7 +1153,8 @@
    "path": "data/fers/CA-SK.json",
    "kind": "fers",
    "why": [
-    "F-2 7 new candidate pairs since the live file (over 10% of 33): a person looks at them first, e.g. CA-0075+CA-6130, CA-0075+CA-6140, CA-0075+CA-6142"
+    "F-2 candidates 10 -> 37 (over 30% change)",
+    "F-2 27 new candidate pairs since the live file (over 10% of 10): a person looks at them first, e.g. CA-0051+CA-1118, CA-0075+CA-6128, CA-0075+CA-6130"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1195,9 +1196,7 @@
    "path": "data/fers/US-AR.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 12 -> 99 (over 30% change)",
-    "F-2 only 9 of 12 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 90 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0162+US-7342, US-0164+US-7158, US-0164+US-7279",
+    "F-2 92 new candidate pairs since the live file (over 10% of 7): a person looks at them first, e.g. US-0162+US-7342, US-0164+US-7158, US-0164+US-7279",
     "F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-7276+US-7298 102 km"
    ],
    "notes": [
@@ -1227,8 +1226,6 @@
    "path": "data/fers/US-CO.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 40 -> 5 (over 30% change)",
-    "F-2 only 3 of 40 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
     "F-K known 2-fer missing: US-0059 + US-4406",
     "F-K known 2-fer missing: US-12173 + US-4409",
     "F-K known 2-fer missing: US-11902 + US-4410",
@@ -1254,7 +1251,6 @@
    "path": "data/fers/US-DC.json",
    "kind": "fers",
    "why": [
-    "F-2 small area: all 1 live candidate pair(s) gone",
     "F-K known 2-fer missing: US-0795 + US-0796"
    ],
    "notes": [],
@@ -1301,7 +1297,7 @@
    "path": "data/fers/US-IA.json",
    "kind": "fers",
    "why": [
-    "F-2 3 new candidate pairs since the live file (over 10% of 10): a person looks at them first, e.g. US-11305+US-11323, US-11305+US-2283, US-11305+US-9348"
+    "F-2 3 new candidate pairs since the live file (over 10% of 9): a person looks at them first, e.g. US-11305+US-11323, US-11305+US-2283, US-11305+US-9348"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1319,8 +1315,8 @@
    "path": "data/fers/US-IL.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 12 -> 18 (over 30% change)",
-    "F-2 8 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0282+US-4482, US-0283+US-4130, US-1000+US-13298",
+    "F-2 candidates 11 -> 18 (over 30% change)",
+    "F-2 8 new candidate pairs since the live file (over 10% of 11): a person looks at them first, e.g. US-0282+US-4482, US-0283+US-4130, US-1000+US-13298",
     "F-K known 2-fer missing: US-1023 + US-10786"
    ],
    "notes": [],
@@ -1342,8 +1338,6 @@
    "path": "data/fers/US-KS.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 25 -> 16 (over 30% change)",
-    "F-2 only 16 of 25 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
     "F-K known 2-fer missing: US-2333 + US-7402",
     "F-K known 2-fer missing: US-7406 + US-7939"
    ],
@@ -1420,7 +1414,7 @@
    "path": "data/fers/US-MO.json",
    "kind": "fers",
    "why": [
-    "F-2 NOT SURE 16 -> 1 (over 30% change)",
+    "F-2 44 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US-0710+US-9757, US-0788+US-6491, US-0788+US-6498",
     "F-K known 2-fer missing: US-1795 + US-3368",
     "F-K known 2-fer missing: US-1772 + US-3356"
    ],
@@ -1431,8 +1425,8 @@
    "path": "data/fers/US-MS.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 13 -> 8 (over 30% change)",
-    "F-2 only 8 of 13 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
+    "F-2 candidates 12 -> 8 (over 30% change)",
+    "F-2 only 8 of 12 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
     "F-K known 2-fer missing: US-0642 + US-4560",
     "F-K known 2-fer missing: US-0642 + US-7113",
     "F-K known 2-fer missing: US-0642 + US-4498"
@@ -1473,9 +1467,7 @@
    "path": "data/fers/US-NE.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 15 -> 45 (over 30% change)",
-    "F-2 only 11 of 15 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 34 new candidate pairs since the live file (over 10% of 15): a person looks at them first, e.g. US-0675+US-10341, US-0675+US-10372, US-0675+US-2620"
+    "F-2 41 new candidate pairs since the live file (over 10% of 4): a person looks at them first, e.g. US-0443+US-5622, US-0445+US-5655, US-0675+US-10341"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1505,8 +1497,8 @@
    "path": "data/fers/US-NM.json",
    "kind": "fers",
    "why": [
-    "F-2 only 5 of 9 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 27 new candidate pairs since the live file (over 10% of 9): a person looks at them first, e.g. US-0012+US-4516, US-0458+US-4568, US-0462+US-4568",
+    "F-2 only 5 of 8 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
+    "F-2 27 new candidate pairs since the live file (over 10% of 8): a person looks at them first, e.g. US-0012+US-4516, US-0458+US-4568, US-0462+US-4568",
     "F-K known 2-fer missing: US-11822 + US-8227",
     "F-K known 2-fer missing: US-4558 + US-4575"
    ],
@@ -1531,9 +1523,7 @@
    "path": "data/fers/US-NY.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 32 -> 110 (over 30% change)",
-    "F-2 only 20 of 32 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 90 new candidate pairs since the live file (over 10% of 32): a person looks at them first, e.g. US-0062+US-8098, US-0456+US-4556, US-0476+US-8098",
+    "F-2 107 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US-0062+US-8098, US-0456+US-4556, US-0476+US-8098",
     "F-K known 2-fer missing: US-2028 + US-2128",
     "F-K known 2-fer missing: US-2028 + US-2061"
    ],
@@ -1591,11 +1581,9 @@
   {
    "path": "data/fers/US-RI.json",
    "kind": "fers",
-   "why": [
-    "F-2 8 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US-0789+US-4582, US-2872+US-4582, US-4556+US-4582"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/fers/US-SC.json",
@@ -2933,6 +2921,15 @@
    "kind": "truth",
    "why": [],
    "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/truth/US-ID.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
    "verdict": "PASS"
   },
   {
