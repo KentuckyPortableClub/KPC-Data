@@ -1,5 +1,5 @@
 {
- "made": "2026-11-09 07:58 UTC",
+ "made": "2026-11-09 10:13 UTC",
  "snap": {
   "date": "2026-11-09",
   "outlines": {
@@ -324,10 +324,10 @@
   },
   "Hard look reader": {
    "areas": "",
-   "last_run": "2026-11-08",
-   "made": " 2026-11-08; left 0",
+   "last_run": "2026-11-09",
+   "made": " 2026-11-09; left 0",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42460776050",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42582430368",
    "waiting_on": "chat 11 answers data/waiting/questions/hardlook.json"
   },
   "Intake: acres-engine.json": {
@@ -1044,10 +1044,10 @@
   },
   "Intake: hardlook-engine.xlsx": {
    "areas": "",
-   "last_run": "2026-11-08",
-   "made": "read by the hardlook bot (2026-11-08)",
+   "last_run": "2026-11-09",
+   "made": "read by the hardlook bot (2026-11-09)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42450776883",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42582430368",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: hardlook-mapping-bundle-nov1.json": {
@@ -1475,19 +1475,19 @@
    "waiting_on": "proposals: answer YES / NO / NOT SURE in an inbox batch"
   },
   "campground info bot": {
-   "areas": "left: 37",
+   "areas": "left: 25",
    "last_run": "2026-11-09",
-   "made": "US-ME: done; {\"camps\": 25, \"needs_browser\": 0, \"needs_key\": 4, \"no_page\": 0, \"not_official\": 1, \"ok\": 0, \"other\": 13, \"resting\": 0, \"robots\": 7, \"with_booking\": 20, \"with_elevation\": 0, \"with_sites\": 0}",
+   "made": "US-ND: done; {\"camps\": 92, \"needs_browser\": 0, \"needs_key\": 17, \"no_page\": 0, \"not_official\": 6, \"ok\": 12, \"other\": 57, \"resting\": 0, \"robots\": 0, \"with_booking\": 69, \"with_elevation\": 0, \"with_facts\": 13, \"with_s",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42557145409",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42582433755",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "closures super-bot": {
-   "areas": "1 done, 0 left",
+   "areas": "0 done, 0 left",
    "last_run": "2026-11-09",
-   "made": "1 areas read, 1 saved; see data/closures/review.md",
+   "made": "0 areas read, 0 saved; see data/closures/review.md",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42561797897",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42587329552",
    "waiting_on": "chat 11 grades the Kentucky side-by-side; Brandon GO before any merge (CL-5)"
   },
   "hours fees permits bot": {
@@ -1539,24 +1539,24 @@
    "waiting_on": "chat 8 grades the sample; chat 2 reads the name-mismatch list; nothing goes in a key by itself"
   },
   "park truth checker": {
-   "areas": "left: 35",
+   "areas": "left: 31",
    "last_run": "2026-11-09",
-   "made": "US-DC: done; {\"agree\": 1, \"handover_hints\": 1, \"no_page\": 0, \"no_size\": 16, \"off\": 1, \"ours_unknown\": 10, \"parks\": 35, \"retired\": 0, \"unsure\": 1, \"weak\": 15, \"with_outline\": 29}",
+   "made": "US-OK: done; {\"agree\": 47, \"handover_hints\": 10, \"no_page\": 0, \"no_size\": 23, \"off\": 53, \"ours_unknown\": 8, \"parks\": 205, \"retired\": 0, \"unsure\": 22, \"weak\": 10, \"with_outline\": 154}",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42557145409",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42589716871",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "scoreboard": {
    "areas": "",
-   "last_run": "2026-11-08",
+   "last_run": "2026-11-09",
    "made": "scoreboard.json + scoreboard-parks.json + scoreboard-check.md",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42460784989",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42582436717",
    "waiting_on": "nothing (facts only)"
   },
   "waiting room": {
    "last_run": "2026-11-09",
-   "made": "281 files waiting over 3 days in data/waiting/in/ (e.g. US-SD.json)",
+   "made": "286 files waiting over 3 days in data/waiting/in/ (e.g. US-SD.json)",
    "result": "red",
    "waiting_on": "chat 11 (look at the waiting room run)"
   },
