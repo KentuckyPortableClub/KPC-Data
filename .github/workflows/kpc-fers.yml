@@ -91,6 +91,7 @@ jobs:
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
+          KPC_ARCHIVE_TOKEN: ${{ secrets.KPC_ARCHIVE_TOKEN }}
         run: |
           pip install -q numpy opencv-python-headless || { kpc_rc=$?; echo "::warning title=install::an install step failed (exit $kpc_rc); the next steps may not work"; echo "install - an install step failed (exit $kpc_rc); the next steps may not work" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           mkdir -p cache/us cache/ca cache/world data/fers
@@ -104,7 +105,10 @@ jobs:
           fi
           # Nov 9 evening: this bot's own saved outlines for the area (read live once, saved on this repo's fers-cache release)
           mkdir -p cache/fers
-          gh release download fers-cache -R "$GITHUB_REPOSITORY" -p "saved-live-${{ matrix.r.tag || matrix.r.name }}.json.gz" -D cache/fers --clobber 2>/dev/null || echo "::notice title=2-fer saved outlines::no saved-live copy for ${{ matrix.r.name }} yet (first run reads live and saves)"
+          # Nov 9 evening (4:52 PM): KPC-Archive is the store; the fers-cache release is only the fallback when KPC_ARCHIVE_TOKEN is missing
+          bash .github/scripts/kpc_archive.sh get fers cache/fers "saved-live-${{ matrix.r.tag || matrix.r.name }}.json.gz" \
+            || gh release download fers-cache -R "$GITHUB_REPOSITORY" -p "saved-live-${{ matrix.r.tag || matrix.r.name }}.json.gz" -D cache/fers --clobber 2>/dev/null \
+            || echo "::notice title=2-fer saved outlines::no saved-live copy for ${{ matrix.r.name }} yet (first run reads live and saves)"
       - name: Refuse a stale or incomplete key for this region (Nov 8)
         # Root cause: run 42451234481 measured W-AU on world W-42410527148 while a newer world build was coming; bad output followed.
         id: key_gate
@@ -197,12 +201,15 @@ jobs:
           for f in data/fers/*.json.gz; do [ -f "$f" ] && rm -f "${f%.gz}"; done
           cd ..
           STRICT=1 bash .github/scripts/kpc_push_data.sh kpcdata "2-fer bot pass ${{ inputs.pass || 'all' }} (${{ matrix.r.name }}, hidden data)" data || exit 1   # Nov 8: no continue-on-error; never if: always()
-      - name: Keep the outlines read live for next time (fers-cache release, Nov 9 evening)
+      - name: Keep the outlines read live for next time (KPC-Archive; fers-cache release only as the fallback, Nov 9 evening)
         if: ${{ success() && steps.kept_green_3.outcome == 'success' }}
         env:
           GH_TOKEN: ${{ github.token }}
+          KPC_ARCHIVE_TOKEN: ${{ secrets.KPC_ARCHIVE_TOKEN }}
         run: |
           ls cache/fers/saved-live-*.json.gz >/dev/null 2>&1 || { echo "nothing read live"; exit 0; }
+          if bash .github/scripts/kpc_archive.sh put fers "2-fer saved outlines (${{ matrix.r.name }}, run $GITHUB_RUN_ID)" cache/fers/saved-live-*.json.gz; then exit 0; fi
+          echo "::warning title=KPC-Archive::2-fer saved outlines not saved to KPC-Archive (see above); saved to the fers-cache release instead"
           gh release view fers-cache -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || gh release create fers-cache -R "$GITHUB_REPOSITORY" --prerelease --title '2-fer saved outlines' --notes "Outlines the 2-fer bot had to read live (no saved copy in KPC-Links boundary-cache), one file per area; re-read about once a month."
           gh release upload fers-cache cache/fers/saved-live-*.json.gz -R "$GITHUB_REPOSITORY" --clobber
       - name: Report hidden failures (Nov 2 review, G8)
