@@ -21,11 +21,14 @@ def check(cond, msg):
 L = json.loads(gzip.open('data/waiting/outline-sources/ledger.json.gz').read())
 rows = L['rows']
 us = [k for k in rows if k.startswith('US-')]; ca = [k for k in rows if k.startswith('CA-')]
-check(len(us) == 1500 and len(ca) == 1488, f'every sheet park has a ledger row (US {len(us)}/1500, CA {len(ca)}/1488)')
+check(len(us) >= 1500 and len(ca) >= 1488, f'every Nov 7 sheet park is still in the ledger (US {len(us)}/≥1500, CA {len(ca)}/≥1488; later handoffs may add rows)')
 check(os.path.getsize('data/waiting/outline-sources/ledger.json.gz') < 1_000_000, 'ledger stays small (gz)')
 need = {'area', 'name', 'type', 'conf', 'verdict', 'src', 'date'}
-check(all(need <= set(v) for v in rows.values()), 'every ledger row has area, name, type, conf, verdict, src, date (outline / pdf / parcel only when the sheet had one)')
-check(all(v['date'] == '2026-11-07' for v in rows.values()), 'every row dated Nov 7 2026')
+sheet = [v for v in rows.values() if v.get('src') == 'outside-sheets-nov7' or v.get('date') == '2026-11-07']
+check(all(need <= set(v) for v in sheet), 'every Nov 7 sheet ledger row has area, name, type, conf, verdict, src, date')
+check(all({'name','src','date'} <= set(v) and ('area' in v or 'trail' in v or 'river' in v) for v in rows.values()), 'every ledger row has name, src, date, and area/trail/river')
+check(all(v.get('date') for v in rows.values()), 'every ledger row has a date')
+check(sum(1 for v in rows.values() if v.get('date') == '2026-11-07') >= 1500, 'the Nov 7 sheet rows keep their Nov 7 date')
 BAN = ('33toooklri9xpic7u', 'ncnhde.natureserve.org')
 wired = [o for v in rows.values() for o in v.get('outline', []) if 'wired' in (o.get('status') or '')]
 check(not any(b in (o.get('url') or '').lower() for o in wired for b in BAN), 'no banned host is marked wired in the ledger')

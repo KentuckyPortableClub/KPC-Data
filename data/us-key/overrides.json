@@ -13337,13 +13337,20 @@
     "sggaa184": [
      "TALLULAH GORGE WMA",
      2267
+    ],
+    "sggaa904": [
+     "TALLULAH GORGE WMA",
+     2267
     ]
    },
    "join": [
     "sggaa184"
    ],
-   "when": "2026-11-02",
-   "why": "a different place, not this park; no outline of its own on file (hand review Oct 22 (waiting list)) · 2026-11-02 12:49: layers row YES 'TALLULAH GORGE WMA' (chat 11; applied by kpc_key_answers) · 2026-11-03 18:41: the older 'none' (no outline of its own) is replaced by this YES join"
+   "when": "2026-11-08",
+   "why": "a different place, not this park; no outline of its own on file (hand review Oct 22 (waiting list)) · 2026-11-02 12:49: layers row YES 'TALLULAH GORGE WMA' (chat 11; applied by kpc_key_answers) · 2026-11-03 18:41: the older 'none' (no outline of its own) is replaced by this YES join · 2026-11-08: Tallulah Gorge WMA is not the state park: never join the GA DNR Tallulah Gorge State Park polygon (sggab12) to it · 2026-11-08 Quality should-fix: GA DNR WMA polygon in the hand download (OBJECTID 904, 2267 ac, pin 0 m) matches the existing WMA join; state park polygon sggab12 stays NO",
+   "no": [
+    "sggab12"
+   ]
   },
   "US-12419": {
    "fp": {
@@ -26487,9 +26494,9 @@
     "4183",
     "5138"
    ],
-   "none": true,
-   "when": "2026-10-29",
-   "why": "a different place, not this park; no outline of its own on file (hand review Oct 22 (waiting list)) · 2026-10-29 23:15: gis-hunter row NO 'Okefenokee National Wildlife Refuge' (chat 11 (Oct 29-30); applied by kpc_key_answers) · 2026-10-29 23:15: gis-hunter row NO 'Okefenokee National Wildlife Refuge' (chat 11 (Oct 29-30); applied by kpc_key_answers)"
+   "when": "2026-11-08",
+   "why": "a different place, not this park; no outline of its own on file (hand review Oct 22 (waiting list)) · 2026-10-29 23:15: gis-hunter row NO 'Okefenokee National Wildlife Refuge' (chat 11 (Oct 29-30); applied by kpc_key_answers) · 2026-10-29 23:15: gis-hunter row NO 'Okefenokee National Wildlife Refuge' (chat 11 (Oct 29-30); applied by kpc_key_answers) · 2026-11-08 Quality grade PR#50: unjoined sggab32 (Stephen C. Foster) — Rule 18 name mismatch with Okefenokee State Park; sent to pile solver",
+   "none": true
   },
   "US-2201": {
    "fp": {
@@ -40437,10 +40444,22 @@
   },
   "US-4370": {
    "join": [
-    "Caddo National Grassland"
+    "Caddo National Grassland",
+    "sgtxc143",
+    "sgtxc146"
    ],
-   "when": "2026-10-18",
-   "why": "Oct 18 review: same place, official name written differently"
+   "when": "2026-11-08",
+   "why": "Oct 18 review: same place, official name written differently · 2026-11-08: Research handoff (TPWD WMA_Boundaries_4PublicDistribution FeatureServer/0 (hand download by Brandon)), pin inside or within 150 m, name checked; joined sgtxc143, sgtxc146",
+   "fp": {
+    "sgtxc143": [
+     "Caddo National Grassland WMA - Bois D'Arc",
+     14618
+    ],
+    "sgtxc146": [
+     "Caddo National Grassland WMA - Ladonia",
+     3676
+    ]
+   }
   },
   "US-4372": {
    "fp": {
@@ -47894,10 +47913,17 @@
   },
   "US-6608": {
    "join": [
-    "Gene Howe WMA-W.A. (Pat) Murphy"
+    "Gene Howe WMA-W.A. (Pat) Murphy",
+    "sgtxc138"
    ],
-   "when": "2026-10-29",
-   "why": "Oct 29 noon: name-match bot PASS + chat 2 review (pin 1 m from the edge; 874.0 ac)"
+   "when": "2026-11-08",
+   "why": "Oct 29 noon: name-match bot PASS + chat 2 review (pin 1 m from the edge; 874.0 ac) · 2026-11-08: Research handoff (TPWD WMA_Boundaries_4PublicDistribution FeatureServer/0 (hand download by Brandon)), pin inside or within 150 m, name checked; joined sgtxc138",
+   "fp": {
+    "sgtxc138": [
+     "Gene Howe WMA - W.A. (Pat) Murphy",
+     880
+    ]
+   }
   },
   "US-6614": {
    "fp": {
@@ -62535,6 +62561,281 @@
    ],
    "when": "2026-11-02",
    "why": "2026-11-02 12:49: layers row YES 'Virgin Islands Coral Reef National Monum' (chat 11 (Oct 31); applied by kpc_key_answers)"
+  },
+  "US-3722": {
+   "join": [
+    "sggab44"
+   ],
+   "fp": {
+    "sggab44": [
+     "New Echtoa Historic Site",
+     204
+    ]
+   },
+   "why": "2026-11-08: Research handoff (Georgia DNR State_Parks_Boundary FeatureServer/0 (hand download by Brandon, data edited 3/31/2025)), pin inside or within 150 m, name checked; joined sggab44",
+   "when": "2026-11-08"
+  },
+  "US-2987": {
+   "join": [
+    "sgtxa62"
+   ],
+   "fp": {
+    "sgtxa62": [
+     "World Birding Center - Bentsen-Rio Grande Valley",
+     767
+    ]
+   },
+   "why": "2026-11-08: Research handoff (TPWD Texas_State_Parks_Boundaries FeatureServer/0 (hand download by Brandon)), pin inside or within 150 m, name checked; joined sgtxa62",
+   "when": "2026-11-08"
+  },
+  "US-3000": {
+   "join": [
+    "sgtxa116",
+    "sgtxa4143"
+   ],
+   "fp": {
+    "sgtxa116": [
+     "Cooper - South Sulphur",
+     2666
+    ],
+    "sgtxa4143": [
+     "Cooper - Doctors Creek",
+     502
+    ]
+   },
+   "why": "2026-11-08: Research handoff (TPWD Texas_State_Parks_Boundaries FeatureServer/0 (hand download by Brandon)), pin inside or within 150 m, name checked; joined sgtxa116, sgtxa4143",
+   "when": "2026-11-08"
+  },
+  "US-3006": {
+   "join": [
+    "sgtxa1334"
+   ],
+   "fp": {
+    "sgtxa1334": [
+     "World Birding Center - Estero Llano Grande",
+     228
+    ]
+   },
+   "why": "2026-11-08: Research handoff (TPWD Texas_State_Parks_Boundaries FeatureServer/0 (hand download by Brandon)), pin inside or within 150 m, name checked; joined sgtxa1334",
+   "when": "2026-11-08"
+  },
+  "US-3052": {
+   "join": [
+    "sgtxa1335"
+   ],
+   "fp": {
+    "sgtxa1335": [
+     "World Birding Center - Resaca de la Palma",
+     1407
+    ]
+   },
+   "why": "2026-11-08: Research handoff (TPWD Texas_State_Parks_Boundaries FeatureServer/0 (hand download by Brandon)), pin inside or within 150 m, name checked; joined sgtxa1335",
+   "when": "2026-11-08"
+  },
+  "US-3497": {
+   "join": [
+    "sgtxa12"
+   ],
+   "fp": {
+    "sgtxa12": [
+     "Devil's Sinkhole",
+     1877
+    ]
+   },
+   "why": "2026-11-08: Research handoff (TPWD Texas_State_Parks_Boundaries FeatureServer/0 (hand download by Brandon)), pin inside or within 150 m, name checked; joined sgtxa12",
+   "when": "2026-11-08"
+  },
+  "US-3498": {
+   "join": [
+    "sgtxa109",
+    "sgtxa536"
+   ],
+   "fp": {
+    "sgtxa109": [
+     "Devils River - Dan A. Hughes Unit",
+     17702
+    ],
+    "sgtxa536": [
+     "Devils River - Del Norte Unit",
+     19828
+    ]
+   },
+   "why": "2026-11-08: Research handoff (TPWD Texas_State_Parks_Boundaries FeatureServer/0 (hand download by Brandon)), pin inside or within 150 m, name checked; joined sgtxa109, sgtxa536",
+   "when": "2026-11-08"
+  },
+  "US-3499": {
+   "join": [
+    "sgtxa4943"
+   ],
+   "fp": {
+    "sgtxa4943": [
+     "Enchanted Rock",
+     5407
+    ]
+   },
+   "why": "2026-11-08: Research handoff (TPWD Texas_State_Parks_Boundaries FeatureServer/0 (hand download by Brandon)), pin inside or within 150 m, name checked; joined sgtxa4943",
+   "when": "2026-11-08"
+  },
+  "US-3501": {
+   "join": [
+    "sgtxa77"
+   ],
+   "fp": {
+    "sgtxa77": [
+     "Fort Leaton",
+     24
+    ]
+   },
+   "why": "2026-11-08: Research handoff (TPWD Texas_State_Parks_Boundaries FeatureServer/0 (hand download by Brandon)), pin inside or within 150 m, name checked; joined sgtxa77",
+   "when": "2026-11-08"
+  },
+  "US-3503": {
+   "join": [
+    "sgtxa4948"
+   ],
+   "fp": {
+    "sgtxa4948": [
+     "Government Canyon",
+     13620
+    ]
+   },
+   "why": "2026-11-08: Research handoff (TPWD Texas_State_Parks_Boundaries FeatureServer/0 (hand download by Brandon)), pin inside or within 150 m, name checked; joined sgtxa4948",
+   "when": "2026-11-08"
+  },
+  "US-3504": {
+   "join": [
+    "sgtxa22"
+   ],
+   "fp": {
+    "sgtxa22": [
+     "Hill Country - Louise Merrick Unit",
+     5403
+    ]
+   },
+   "why": "2026-11-08: Research handoff (TPWD Texas_State_Parks_Boundaries FeatureServer/0 (hand download by Brandon)), pin inside or within 150 m, name checked; joined sgtxa22 · 2026-11-08 Quality should-fix: TPWD Texas_State_Parks_Boundaries has only one Hill Country feature (Louise Merrick Unit, OBJECTID 22); no other units in that layer to add as tracts",
+   "when": "2026-11-08"
+  },
+  "US-3507": {
+   "join": [
+    "sgtxa941"
+   ],
+   "fp": {
+    "sgtxa941": [
+     "Lost Maples",
+     2888
+    ]
+   },
+   "why": "2026-11-08: Research handoff (TPWD Texas_State_Parks_Boundaries FeatureServer/0 (hand download by Brandon)), pin inside or within 150 m, name checked; joined sgtxa941",
+   "when": "2026-11-08"
+  },
+  "US-6606": {
+   "join": [
+    "sgtxc133"
+   ],
+   "fp": {
+    "sgtxc133": [
+     "Tony Houseman/Blue Elbow Swamp WMA",
+     4343
+    ]
+   },
+   "why": "2026-11-08: Research handoff (TPWD WMA_Boundaries_4PublicDistribution FeatureServer/0 (hand download by Brandon)), pin inside or within 150 m, name checked; joined sgtxc133",
+   "when": "2026-11-08"
+  },
+  "US-8745": {
+   "join": [
+    "sgpac2838"
+   ],
+   "fp": {
+    "sgpac2838": [
+     "46 - Middle Creek Wildlife Management Area",
+     6061
+    ]
+   },
+   "why": "2026-11-08: Research handoff (Pennsylvania Game Commission State Game Lands (hand download by Brandon)), pin inside or within 150 m, name checked; joined sgpac2838",
+   "when": "2026-11-08"
+  },
+  "US-8911": {
+   "join": [
+    "sgpac198"
+   ],
+   "fp": {
+    "sgpac198": [
+     "214 - Pymatuning Wildlife Management Area",
+     9716
+    ]
+   },
+   "why": "2026-11-08: Research handoff (Pennsylvania Game Commission State Game Lands (hand download by Brandon)), pin inside or within 150 m, name checked; joined sgpac198",
+   "when": "2026-11-08"
+  },
+  "US-3732": {
+   "join": [
+    "sggaa806",
+    "sggaa938"
+   ],
+   "fp": {
+    "sggaa806": [
+     "BARTRAM FOREST WMA",
+     876
+    ],
+    "sggaa938": [
+     "BARTRAM FOREST WMA",
+     474
+    ]
+   },
+   "why": "2026-11-08: Research handoff (Georgia DNR WRD WMA/PFA/hatchery lands (hand download by Brandon)), pin inside or within 150 m, name checked; joined sggaa806, sggaa938",
+   "when": "2026-11-08"
+  },
+  "US-7463": {
+   "join": [
+    "sggaa800"
+   ],
+   "fp": {
+    "sggaa800": [
+     "DODGE COUNTY PFA",
+     446
+    ]
+   },
+   "why": "2026-11-08: Research handoff (Georgia DNR WRD WMA/PFA/hatchery lands (hand download by Brandon)), pin inside or within 150 m, name checked; joined sggaa800",
+   "when": "2026-11-08"
+  },
+  "US-7464": {
+   "join": [
+    "sggaa799"
+   ],
+   "fp": {
+    "sggaa799": [
+     "EVANS COUNTY PFA",
+     377
+    ]
+   },
+   "why": "2026-11-08: Research handoff (Georgia DNR WRD WMA/PFA/hatchery lands (hand download by Brandon)), pin inside or within 150 m, name checked; joined sggaa799",
+   "when": "2026-11-08"
+  },
+  "US-7465": {
+   "join": [
+    "sggaa770"
+   ],
+   "fp": {
+    "sggaa770": [
+     "FLAT CREEK PFA",
+     850
+    ]
+   },
+   "why": "2026-11-08: Research handoff (Georgia DNR WRD WMA/PFA/hatchery lands (hand download by Brandon)), pin inside or within 150 m, name checked; joined sggaa770",
+   "when": "2026-11-08"
+  },
+  "US-7466": {
+   "join": [
+    "sggaa801"
+   ],
+   "fp": {
+    "sggaa801": [
+     "HUGH GILLIS PFA",
+     744
+    ]
+   },
+   "why": "2026-11-08: Research handoff (Georgia DNR WRD WMA/PFA/hatchery lands (hand download by Brandon)), pin inside or within 150 m, name checked; joined sggaa801",
+   "when": "2026-11-08"
   }
  }
 }
