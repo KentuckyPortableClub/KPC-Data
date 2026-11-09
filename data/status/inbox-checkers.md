@@ -246,6 +246,7 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM BOT campground info bot (2026-11-09): grade me: US-ID data/status/samples/campground-info-bot-US-ID-2026-11-09.md (+ review.md) — done; gate none; {"camps": 450, "needs_browser": 33, "needs_key": 311, "no_page": 0, "not_official": 35, "ok": 27, "other": 40, "resting": 0, "robots": 4, "w · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42630277639)
 - FROM BOT park truth checker (2026-11-09): grade me: US-MT data/status/samples/park-truth-checker-US-MT-2026-11-09.md (+ review.md) — done; gate none; {"agree": 36, "handover_hints": 6, "no_page": 1, "no_size": 137, "off": 36, "ours_unknown": 7, "parks": 254, "retired": 0, "unsure": 28, "we · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42630277639)
 - FROM BOT campground info bot (2026-11-09): grade me: US-MT data/status/samples/campground-info-bot-US-MT-2026-11-09.md (+ review.md) — done; gate none; {"camps": 389, "needs_browser": 0, "needs_key": 311, "no_page": 0, "not_official": 0, "ok": 30, "other": 48, "resting": 0, "robots": 0, "wit · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42630277639)
+- FROM BOT kpc_us_trails (2026-11-09): grade me: national trails data/trails/ — 44 national trails in the index, 42 rebuilt, 3 kept / failed · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42664501744)
 - FROM WAITING ROOM (held since 2026-11-04, 5 days): campinfo data/campinfo/US-AR.json held: F-I4 1 toll-free reservation numbers kept as a camp phone, e.g. Designated WMA campsites
 - FROM WAITING ROOM (held since 2026-10-31, 9 days): campinfo data/campinfo/US-MA.json held: F-I3 the same site count on 6 camps of one agency (state: 27): copied from a shared page?
 - FROM WAITING ROOM (held since 2026-11-05, 4 days): campinfo data/campinfo/US-MO.json held: F-I3 the same site count on 82 camps of one agency (state: 500): copied from a shared page?
@@ -253,12 +254,55 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-01, 8 days): campinfo data/campinfo/US-NC.json held: F-I3 the same site count on 4 camps of one agency (state: 579): copied from a shared page?
 - FROM WAITING ROOM (held since 2026-11-01, 8 days): campinfo data/campinfo/US-NY.json held: F-I3 the same site count on 4 camps of one agency (state: 56): copied from a shared page?
 - FROM WAITING ROOM (held since 2026-11-06, 3 days): campinfo data/campinfo/US-VT.json held: F-I3 the same site count on 101 camps of one agency (state: 27): copied from a shared page?
-- FROM WAITING ROOM (held since 2026-10-31, 9 days): docs data/docs/US-ID.json held: F-D1 one rules page on 63 of 362 parks: https://idfg.idaho.gov/sites/default/files/seasons-rules-big-game-2026.pdf
-- FROM WAITING ROOM (held since 2026-10-31, 9 days): docs data/docs/US-IL.json held: F-D2 3 map links on a banned host (fire news / map pins / social), e.g. https://www.google.com/maps/place/39%C2%B006'01.1%22N+88%C2%B047'57.1%
-- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-IN.json held: F-D3 8 of 20 re-tested links dead, e.g. https://www.in.gov/dA/f54f39eab4/monroe_camp_fairfax_sra.pdf?language_
-- FROM WAITING ROOM (held since 2026-10-31, 9 days): docs data/docs/US-ME.json held: F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml · F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml · F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/kaww/learn/management/lawsandpolicies.htm
-- FROM WAITING ROOM (held since 2026-10-31, 9 days): docs data/docs/US-MO.json held: F-D1 one rules page on 426 of 561 parks: https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp
-- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-MS.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/tupe/learn/management/lawsandpolicies.htm
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-AK.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-AL.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-AR.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-AZ.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-CA.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-CO.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-CT.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-DC.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-DE.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-FL.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-GA.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-HI.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-10-31, 9 days): docs data/docs/US-ID.json held: F-D1 one rules page on 63 of 362 parks: https://idfg.idaho.gov/sites/default/files/seasons-rules-big-game-2026.pdf · F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-10-31, 9 days): docs data/docs/US-IL.json held: F-D2 3 map links on a banned host (fire news / map pins / social), e.g. https://www.google.com/maps/place/39%C2%B006'01.1%22N+88%C2%B047'57.1% · F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-IN.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-KS.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-LA.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-MA.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-MD.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-10-31, 9 days): docs data/docs/US-ME.json held: F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml · F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml · F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-MI.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-MN.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-10-31, 9 days): docs data/docs/US-MO.json held: F-D1 one rules page on 426 of 561 parks: https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp · F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-MS.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-MT.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-NC.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-ND.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-NE.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-NH.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-NJ.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-NM.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-NV.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-NY.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-OH.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-OK.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-OR.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-PA.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-RI.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-SC.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-SD.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-TN.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-TX.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-UT.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-VA.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-VT.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-WA.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-WI.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-WV.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
+- FROM WAITING ROOM (held since 2026-11-09): docs data/docs/US-WY.json held: F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits
 - FROM WAITING ROOM (held since 2026-11-02, 7 days): fers data/fers/CA-BC.json.gz held: F-2 candidates 29 -> 45 (over 30% change) · F-2 16 new candidate pairs since the live file (over 10% of 29): a person looks at them first, e.g. CA-0018+CA-3362, CA-0045+CA-3829, CA-0066+CA-5344
 - FROM WAITING ROOM (held since 2026-11-05, 4 days): fers data/fers/CA-MB.json held: F-4 data/fers/CA-MB.json replaces live data/fers/CA-MB.json.gz (other format) with 70 rows for 79 (over 10% fewer)
 - FROM WAITING ROOM (held since 2026-11-06, 3 days): fers data/fers/CA-ON.json.gz held: F-2 candidates 13 -> 99 (over 30% change) · F-2 NOT SURE 302 -> 44 (over 30% change) · F-2 only 10 of 13 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand) · F-2 89 new candidate pairs since the live file (over 10% of 13): a person looks at them first, e.g. CA-0006+CA-6003, CA-0010+CA-0168, CA-0010+CA-0241
