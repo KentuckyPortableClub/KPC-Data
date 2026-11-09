@@ -4,6 +4,7 @@
            full='1' = this area is rebuilt in full this run (round-robin, one full rebuild per area per full_cycle_days;
            FULL=all = every job in full (emergency), FULL=none = no full area this run)
            (the KPC 2-fer bot's matrix; old values na / world / ky / both work as before)
+  finished STATES='US-NC ...' -> the live files of the states that fully finished every pass today (after a crash: only these are saved)
   status   one line per area: the states' last pass dates and any 'incomplete' mark, then the dispatch line for the areas that
            are not finished (run them again by name until every area has a good file). Read only. SINCE=2026-11-10 = a state
            counts as finished only when its pass 5 is that day or later.
@@ -65,8 +66,23 @@ def status(data=ROOT):
     return todo
 
 
+def finished(states, today, data=pathlib.Path('.')):
+    """Nov 9 evening (Brandon t926u, 5:03 PM CST): after a crash / time-out, the live 2-fer files that may still be saved: a state's file
+    only when that state FULLY finished every pass today (pass5 == today, not marked incomplete). A partly done state keeps its old file."""
+    import gzip
+    out = []
+    for st in states.split():
+        for f in (data / f'data/fers/{st}.json', data / f'data/fers/{st}.json.gz'):
+            if not f.exists(): continue
+            try: d = json.load(gzip.open(f, 'rt') if f.suffix == '.gz' else open(f))
+            except Exception: continue  # noqa: BLE001
+            if str(d.get('pass5') or '') == today and not d.get('incomplete'): out.append(str(f.relative_to(data)))
+    return out
+
+
 if __name__ == '__main__':
     a = sys.argv[1:] or ['plan']
     if a[0] == 'plan': print('list=' + json.dumps(plan(os.environ.get('REGION') or 'both', os.environ.get('STATES') or '')))
     elif a[0] == 'status': status(pathlib.Path(a[1]) if len(a) > 1 else ROOT)
+    elif a[0] == 'finished': print('\n'.join(finished(os.environ.get('STATES') or '', os.environ.get('TODAY') or __import__('time').strftime('%Y-%m-%d'))))
     else: print(__doc__)

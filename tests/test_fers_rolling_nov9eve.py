@@ -37,4 +37,16 @@ check('kpc_archive.sh put fers' in up[0]['run'] and up[0]['run'].index('kpc_arch
 check('kpc_archive.sh get fers-saved-live cache/fers' in txt and txt.index('kpc_archive.sh get fers') < txt.index('gh release download fers-cache'), 'saved-live is read from KPC-Archive first, the release as the fallback')
 sv = [x for x in steps if x.get('id') == 'kept_green_5'][0]['run']
 check('full-rebuild-${{ matrix.r.tag }}.txt' in sv and sv.index('full-rebuild') < sv.index('kpc_push_data.sh'), 'the full-rebuild date is saved with the results, only after success')
+# Nov 9 evening (Brandon t926u): a broken run saves only what finished
+with tempfile.TemporaryDirectory() as t:
+    t = pathlib.Path(t); (t / 'data/fers').mkdir(parents=True)
+    (t / 'data/fers/US-NC.json').write_text(json.dumps({'pass5': '2026-11-09'}))
+    (t / 'data/fers/US-SC.json').write_text(json.dumps({'pass5': '2026-11-09', 'incomplete': True}))
+    (t / 'data/fers/US-GA.json').write_text(json.dumps({'pass1': '2026-11-09', 'pass5': '2026-11-02'}))
+    check(A.finished('US-NC US-SC US-GA US-FL', '2026-11-09', t) == ['data/fers/US-NC.json'], 'after a break: only a state that finished every pass today is saved')
+bk = [x for x in steps if 'run broke' in str(x.get('name', ''))]
+check(len(bk) == 1 and "steps.kept_green_3.outcome == 'failure'" in bk[0]['if'] and '!cancelled()' in bk[0]['if'], 'a break (crash / time-out) runs the save-what-finished step; a cancel does not')
+r = bk[0]['run'] if bk else ''
+check('reuse-p*-' in r and 'kpc_fers_areas.py finished' in r and 'STRICT=1' in r and 'data/fers/*' not in r, 'it saves pair answers + fully finished states only (never every file)')
+check(txt.index('run broke') > txt.index('kept_green_5') and 'Report hidden failures' in txt[txt.index('run broke'):], 'the job still goes red after it (Report step runs after)')
 print('ALL PASS' if ok else 'FAILED'); sys.exit(0 if ok else 1)

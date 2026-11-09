@@ -201,8 +201,24 @@ jobs:
           for f in data/fers/*.json.gz; do [ -f "$f" ] && rm -f "${f%.gz}"; done
           cd ..
           STRICT=1 bash .github/scripts/kpc_push_data.sh kpcdata "2-fer bot pass ${{ inputs.pass || 'all' }} (${{ matrix.r.name }}, hidden data)" data || exit 1   # Nov 8: no continue-on-error; never if: always()
+      - name: The run broke - save only what finished (Nov 9 evening, Brandon t926u)
+        # a crash (1) or time-out (3) in Look: keep the pair answers that finished (reuse files: the next run skips those pairs) and the
+        # live file of a state ONLY if it finished every pass today; a partly done state keeps its previous file. The job stays red (Report).
+        if: ${{ !cancelled() && steps.kept_green_3.outcome == 'failure' && matrix.r.region != 'world' }}
+        env:
+          STATES: ${{ matrix.r.states }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p kpcdata/data/fers; n=0
+          for f in data/fers/reuse-p*-"${{ matrix.r.tag || matrix.r.region }}".json; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/ && n=$((n + 1)); done
+          if [ "${{ inputs.pass || 'all' }}" = all ] && [ -n "$STATES" ]; then
+            for f in $(python3 kpcdata/.github/scripts/kpc_fers_areas.py finished); do ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/ && n=$((n + 1)) && echo "::notice title=2-fer bot::$f finished every pass before the break: saved"; done
+          fi
+          echo "::warning title=2-fer bot::the run broke; saved $n finished file(s) (pair answers + fully finished states only). Partly done states keep their previous files."
+          [ "$n" -gt 0 ] || exit 0
+          STRICT=1 bash .github/scripts/kpc_push_data.sh kpcdata "2-fer bot: finished parts of a broken run (${{ matrix.r.name }}, hidden data)" data || exit 1
       - name: Keep the outlines read live for next time (KPC-Archive; fers-cache release only as the fallback, Nov 9 evening)
-        if: ${{ success() && steps.kept_green_3.outcome == 'success' }}
+        if: ${{ !cancelled() && (steps.kept_green_3.outcome == 'success' || steps.kept_green_3.outcome == 'failure') }}   # t926u: also after a break (only finished reads are in the file)
         env:
           GH_TOKEN: ${{ github.token }}
           KPC_ARCHIVE_TOKEN: ${{ secrets.KPC_ARCHIVE_TOKEN }}
