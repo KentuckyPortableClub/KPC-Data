@@ -6,7 +6,7 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
 | area | campgrounds | read ok | needs RIDB key | needs browser (403) | robots no | host resting | no page on file | not official host | other | with site count | with booking link | with elevation |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | US-KY | 100 | 32 | 35 | 26 | 0 | 0 | 0 | 0 | 7 | 16 | 51 | 0 |
-| US-TN | 394 | 2 | 78 | 4 | 0 | 38 | 267 | 0 | 5 | 2 | 49 | 0 |
+| US-TN | 394 | 2 | 78 | 0 | 42 | 0 | 267 | 0 | 5 | 2 | 49 | 0 |
 | US-NC | 141 | 66 | 66 | 0 | 0 | 0 | 0 | 0 | 9 | 23 | 75 | 0 |
 | US-VA | 163 | 2 | 74 | 0 | 0 | 0 | 40 | 30 | 17 | 2 | 19 | 0 |
 | US-WV | 101 | 1 | 47 | 26 | 0 | 0 | 0 | 0 | 27 | 0 | 54 | 0 |
@@ -71,11 +71,11 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
 - dnr.wisconsin.gov: 58 campgrounds · host resting
 - dec.ny.gov: 55 campgrounds · robots.txt says no
 - www.wlf.louisiana.gov: 31 campgrounds · host resting (robots.txt could not be read: next run)
-- reserve.tnstateparks.com: 25 campgrounds · host resting
+- reserve.tnstateparks.com: 25 campgrounds · host resting (robots.txt could not be read: next run)
 - www.fdacs.gov: 23 campgrounds · robots.txt says no
 - destateparks.com: 22 campgrounds · host resting
 - www.lastateparks.com: 21 campgrounds · host resting (robots.txt could not be read: next run)
-- www.tn.gov: 17 campgrounds · host resting
+- www.tn.gov: 17 campgrounds · host resting (robots.txt could not be read: next run)
 - dep.nj.gov: 17 campgrounds · host resting
 - mdc.mo.gov: 15 campgrounds · host resting (deferred: slow host, next run)
 - azstateparks.com: 15 campgrounds · host resting (robots.txt could not be read: next run)
@@ -315,16 +315,6 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
 
 ## US-TN: 12 random samples (records with facts; seed = the date)
 
-- **S-Tree Campground** (intake-US-11181, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 2 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/dbnf/recarea/?recid=39572)
-  - booking.url = "https://www.fs.usda.gov/recarea/dbnf/recarea/?recid=39572" · “booking link from our outside research (camping, nearby only) row (official system www.fs.usda.gov)”
-  - reservable = false · “g, family-friendly picnic getaway. The site has a number of individual picnic tables, two first-come, first-served picnic… Alpine Spur Trail”
-- **Jeff Busby Campground, Milepost 193.1** (intake-US-0642, agency (outside research camping-us-oct31), status ok, 6 facts) · [www.recreation.gov](https://www.recreation.gov/camping/poi/259043)
-  - booking.how = "online: www.recreation.gov" · “link “Natchez Trace Parkway””
-  - booking.url = "https://www.recreation.gov/camping/gateways/2872" · “link “Natchez Trace Parkway” -> https://www.recreation.gov/camping/gateways/2872”
-  - reservable = false · “strooms, trails, exhibits and an overlook atop Little Mountain. Campground sites are on a first come first served basis, no reservations. Pu”
-  - restrooms = "yes (kind not stated)" · “at milepost 193.1, midway on the parkway, includes an 18-site campground, picnic tables, restrooms, trails, exhibits and an overlook atop Li”
-  - rules.stay_limit = "14 days" · “ing and fall, especially during holiday weekends. There is no fee for camping. There is a 14 day stay limit. Photo Gallery Camp, RV, and Exp”
-  - sites.total = 18 · “sit! Overview Jeff Busby Campground at milepost 193.1, midway on the parkway, includes an 18-site campground, picnic tables, restrooms, trai”
 - **Bandy Creek Campground** (intake-US-5500, agency (outside research camping-us-oct31), status ok, 16 facts) · [www.nps.gov](https://www.nps.gov/biso/planyourvisit/bandycreekcampground.htm)
   - booking.how = "online: www.recreation.gov" · “link “Start Your Reservation””
   - booking.url = "https://www.recreation.gov/camping/campgrounds/232506" · “link “Start Your Reservation” -> https://www.recreation.gov/camping/campgrounds/232506”
@@ -336,6 +326,13 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
   - hookups.electric = "some" · “n. The campground offers a total of 181 campsites: 96 trailer sites which offer water and electric hook-ups, 49 sites for tent camping, and ”
   - hookups.sewer = false · “estrooms and showers. A dump station is located near the registration kiosk. There are no sewer hook-ups at individual trailer sites. The gr”
   - hookups.water = true · “f Jamestown. The campground offers a total of 181 campsites: 96 trailer sites which offer water and electric hook-ups, 49 sites for tent cam”
+- **Jeff Busby Campground, Milepost 193.1** (intake-US-0642, agency (outside research camping-us-oct31), status ok, 6 facts) · [www.recreation.gov](https://www.recreation.gov/camping/poi/259043)
+  - booking.how = "online: www.recreation.gov" · “link “Natchez Trace Parkway””
+  - booking.url = "https://www.recreation.gov/camping/gateways/2872" · “link “Natchez Trace Parkway” -> https://www.recreation.gov/camping/gateways/2872”
+  - reservable = false · “strooms, trails, exhibits and an overlook atop Little Mountain. Campground sites are on a first come first served basis, no reservations. Pu”
+  - restrooms = "yes (kind not stated)" · “at milepost 193.1, midway on the parkway, includes an 18-site campground, picnic tables, restrooms, trails, exhibits and an overlook atop Li”
+  - rules.stay_limit = "14 days" · “ing and fall, especially during holiday weekends. There is no fee for camping. There is a 14 day stay limit. Photo Gallery Camp, RV, and Exp”
+  - sites.total = 18 · “sit! Overview Jeff Busby Campground at milepost 193.1, midway on the parkway, includes an 18-site campground, picnic tables, restrooms, trai”
 
 ## US-NC: 12 random samples (records with facts; seed = the date)
 
