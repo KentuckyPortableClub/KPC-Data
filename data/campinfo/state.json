@@ -153,6 +153,27 @@
    "status": "done",
    "updated": "2026-11-08"
   },
+  "US-DC": {
+   "camps": 1,
+   "checked": 1,
+   "counts": {
+    "camps": 1,
+    "needs_browser": 0,
+    "needs_key": 0,
+    "no_page": 0,
+    "not_official": 0,
+    "ok": 0,
+    "other": 1,
+    "resting": 0,
+    "robots": 0,
+    "with_booking": 1,
+    "with_elevation": 0,
+    "with_sites": 0
+   },
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-09"
+  },
   "US-DE": {
    "camps": 24,
    "checked": 24,
@@ -1081,6 +1102,7 @@
   "US-CA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-CO": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-CT": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-DC": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-DE": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-FL": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-GA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1187,6 +1209,15 @@
     "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
    "read": "2026-11-08"
+  },
+  "US-DC": {
+   "cell": {
+    "carriers": null,
+    "files": [],
+    "src": null,
+    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+   },
+   "read": "2026-11-09"
   },
   "US-DE": {
    "cell": {
@@ -2523,18 +2554,13 @@
  },
  "last": {
   "areas": [
-   "US-ME"
+   "US-DC"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 29,
    "errors": 0,
    "for_person_urls": [
-    [
-     "https://www.maine.gov/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.maine.gov this run"
-    ],
     [
      "https://epqs.nationalmap.gov/robots.txt",
      "robots.txt answered 403: nothing fetched from epqs.nationalmap.gov this run"
@@ -2542,30 +2568,25 @@
     [
      "https://broadbandmap.fcc.gov/robots.txt",
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
-    ],
-    [
-     "https://apps.web.maine.gov/robots.txt",
-     "robots.txt answered 403: nothing fetched from apps.web.maine.gov this run"
     ]
    ],
-   "requests": 11,
+   "requests": 2,
    "rested": 0,
-   "robots": 4,
-   "robots_unreadable": 4,
+   "robots": 2,
+   "robots_unreadable": 2,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 2,
-   "camps": 25,
+   "camps": 1,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 2,
-   "needs_key": 4,
-   "no_page": 11,
-   "not_official": 1,
-   "ok": 2,
-   "pages_read": 3,
+   "needs_browser": 0,
+   "needs_key": 0,
+   "no_page": 1,
+   "not_official": 0,
+   "ok": 0,
+   "pages_read": 0,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,

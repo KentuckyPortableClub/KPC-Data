@@ -34,6 +34,7 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
 | US-ME | 25 | 0 | 4 | 0 | 7 | 0 | 0 | 1 | 13 | 0 | 20 | 0 |
 | US-MD | 77 | 40 | 30 | 1 | 0 | 0 | 0 | 0 | 6 | 10 | 43 | 0 |
 | US-DE | 24 | 2 | 0 | 2 | 0 | 20 | 0 | 0 | 0 | 0 | 24 | 0 |
+| US-DC | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 0 |
 | US-AR | 229 | 21 | 120 | 0 | 2 | 0 | 0 | 5 | 81 | 5 | 78 | 0 |
 | US-LA | 67 | 0 | 13 | 0 | 52 | 0 | 0 | 0 | 2 | 0 | 33 | 0 |
 | US-OK | 199 | 36 | 84 | 0 | 0 | 0 | 0 | 69 | 10 | 6 | 41 | 0 |
@@ -2391,6 +2392,9 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
   - map.url = "https://agriculture.delaware.gov/wp-content/uploads/sites/1 · “link “Blackbird Camping Map” -> https://agriculture.delaware.gov/wp-content/uploads/sites/108/2025/02/Blackbird-State-Forest_Updated”
   - phone_hint = "(302) 698-4547" · “kbird State Forest or Redden State Forest, email DDA_ForestService@delaware.gov , or call 302-698-4547. Pavilions at Blackbird and Redden O.”
   - reservable = "mixed" · “k-out is at 11 a.m. ADA sites and small-medium camper van accessible sites available at a first come first serve basis. State Forest Camping”
+
+## US-DC: 12 random samples (records with facts; seed = the date)
+
 
 ## US-AR: 12 random samples (records with facts; seed = the date)
 

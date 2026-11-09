@@ -1,0 +1,95 @@
+{
+ "about": "Campground info bot: facts from the agency that runs each campground, every fact with its source line. Gathers facts, decides nothing. Maps and park info are a planning aid, not a guarantee: always check the official agency page and rules before you go.",
+ "area": "US-DC",
+ "camps": {
+  "intake-US-0653": {
+   "agency": "agency (outside research camping-us-oct31)",
+   "booking": {
+    "how": "online: www.recreation.gov",
+    "url": "https://www.recreation.gov/camping/campgrounds/250017"
+   },
+   "cell": null,
+   "checked": "2026-11-09",
+   "checkin": null,
+   "checkout": null,
+   "drinking_water": null,
+   "dump_station": null,
+   "elevation_ft": {
+    "src": "https://epqs.nationalmap.gov/v1/json?x=-77.0436&y=38.8904&units=Feet&wkid=4326",
+    "status": "host resting (robots.txt could not be read: next run)",
+    "value": null
+   },
+   "facts_src": {
+    "booking.url": {
+     "date": "2026-11-09",
+     "line": "booking link from our outside research (camping, nearby only) row (official system www.recreation.gov)",
+     "url": "https://www.recreation.gov/camping/campgrounds/250017"
+    }
+   },
+   "features": null,
+   "fees": null,
+   "hookups": {
+    "amps": null,
+    "electric": null,
+    "sewer": null,
+    "water": null
+   },
+   "kind": "c",
+   "lat": 38.8904,
+   "list": "outside research (camping, nearby only)",
+   "lodging_booking": {
+    "how": null,
+    "url": null
+   },
+   "lon": -77.0436,
+   "map": {
+    "date_how": null,
+    "url": null
+   },
+   "name": "Fort Dupont Park Picnic Areas; Rock Creek Park Group Picnic Areas (DC)",
+   "official_page": "https://www.recreation.gov/camping/campgrounds/250017",
+   "park": "US-0653",
+   "phone": null,
+   "phone_hint": null,
+   "reservable": null,
+   "restrooms": null,
+   "rules": {
+    "fires": null,
+    "generators": null,
+    "pets": null,
+    "quiet_hours": null,
+    "stay_limit": null
+   },
+   "rv_max_ft": null,
+   "season": null,
+   "showers": null,
+   "sites": {
+    "cabin": null,
+    "group": null,
+    "primitive": null,
+    "rv": null,
+    "tent": null,
+    "total": null
+   },
+   "status": "the page on file is another campground's page: nothing read",
+   "ver": 8
+  }
+ },
+ "cell_status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+ "counts": {
+  "camps": 1,
+  "needs_browser": 0,
+  "needs_key": 0,
+  "no_page": 0,
+  "not_official": 0,
+  "ok": 0,
+  "other": 1,
+  "resting": 0,
+  "robots": 0,
+  "with_booking": 1,
+  "with_elevation": 0,
+  "with_sites": 0
+ },
+ "merged": 0,
+ "read": "2026-11-09"
+}
