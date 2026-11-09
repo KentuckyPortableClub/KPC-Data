@@ -227,6 +227,9 @@
  "Parks|CA-5052": [
   "https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/23"
  ],
+ "Parks|CA-5626": [
+  "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11"
+ ],
  "Parks|CA-6400": [
   "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4"
  ],
@@ -500,6 +503,15 @@
  "Parks|US-12230": [
   "https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0"
  ],
+ "Parks|US-4886": [
+  "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0"
+ ],
+ "Parks|US-11793": [
+  "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11"
+ ],
+ "Parks|US-4092": [
+  "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11"
+ ],
  "Parks|US-4481": [
   "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublishWithDataStatus_01/MapServer/0"
  ],
@@ -507,16 +519,13 @@
   "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1"
  ],
  "Parks|US-0731": [
-  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0"
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0"
  ],
  "Parks|US-10709": [
   "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0"
  ],
  "Parks|US-3385": [
   "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1"
- ],
- "Parks|US-4385": [
-  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0"
  ],
  "Parks|US-4477": [
   "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0"
@@ -534,9 +543,6 @@
   "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0"
  ],
  "Parks|US-4514": [
-  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0"
- ],
- "Parks|US-4501": [
   "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0"
  ],
  "Parks|US-10061": [
@@ -653,12 +659,6 @@
  "Parks|US-0980": [
   "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11"
  ],
- "Parks|US-11793": [
-  "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11"
- ],
- "Parks|US-4092": [
-  "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11"
- ],
  "Parks|US-4105": [
   "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11"
  ],
@@ -730,6 +730,12 @@
  ],
  "Parks|US-8666": [
   "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0"
+ ],
+ "Parks|CA-1922": [
+  "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1"
+ ],
+ "Parks|CA-2218": [
+  "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/11"
  ],
  "Parks|US-13179": [
   "https://services9.arcgis.com/FF3qnCUixr5w9JQi/ArcGIS/rest/services/USGS_Trails/FeatureServer/0"
@@ -898,9 +904,6 @@
  ],
  "Parks|CA-0956": [
   "https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/24"
- ],
- "Parks|CA-5626": [
-  "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11"
  ],
  "Parks|CA-6261": [
   "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/3"
@@ -1102,12 +1105,6 @@
  ],
  "Parks|CA-4924": [
   "https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0"
- ],
- "Parks|CA-1922": [
-  "https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1"
- ],
- "Parks|CA-2218": [
-  "https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/11"
  ],
  "Parks|US-7782": [
   "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0"
