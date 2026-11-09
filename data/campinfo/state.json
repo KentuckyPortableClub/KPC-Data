@@ -725,11 +725,11 @@
    "checked": 87,
    "counts": {
     "camps": 87,
-    "needs_browser": 1,
+    "needs_browser": 0,
     "needs_key": 34,
     "no_page": 0,
     "not_official": 7,
-    "ok": 23,
+    "ok": 24,
     "other": 22,
     "resting": 0,
     "robots": 0,
@@ -740,7 +740,7 @@
    },
    "left": 1,
    "status": "partial",
-   "updated": "2026-11-07"
+   "updated": "2026-11-09"
   },
   "US-NY": {
    "camps": 585,
@@ -1463,7 +1463,7 @@
     "src": null,
     "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-11-07"
+   "read": "2026-11-09"
   },
   "US-NY": {
    "cell": {
@@ -2575,32 +2575,36 @@
  },
  "last": {
   "areas": [
-   "US-ND"
+   "US-NV"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 16,
+   "dropped_queued": 33,
    "errors": 0,
    "for_person_urls": [
     [
      "https://epqs.nationalmap.gov/robots.txt",
      "robots.txt answered 403: nothing fetched from epqs.nationalmap.gov this run"
+    ],
+    [
+     "https://broadbandmap.fcc.gov/robots.txt",
+     "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 1,
+   "requests": 2,
    "rested": 0,
-   "robots": 1,
-   "robots_unreadable": 1,
+   "robots": 2,
+   "robots_unreadable": 2,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 17,
+   "camps": 34,
    "elevations": 0,
    "errors": 0,
    "needs_browser": 0,
-   "needs_key": 17,
+   "needs_key": 34,
    "no_page": 0,
    "not_official": 0,
    "ok": 0,
@@ -2608,7 +2612,7 @@
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 75
+   "skipped_fresh": 54
   },
   "when": "2026-11-09"
  },
