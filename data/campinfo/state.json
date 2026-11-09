@@ -84,9 +84,9 @@
     "with_facts": 2,
     "with_sites": 0
    },
-   "left": 1,
-   "status": "partial",
-   "updated": "2026-11-05"
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-09"
   },
   "US-CA": {
    "camps": 1210,
@@ -725,11 +725,11 @@
    "checked": 87,
    "counts": {
     "camps": 87,
-    "needs_browser": 1,
+    "needs_browser": 0,
     "needs_key": 34,
     "no_page": 0,
     "not_official": 7,
-    "ok": 23,
+    "ok": 24,
     "other": 22,
     "resting": 0,
     "robots": 0,
@@ -738,9 +738,9 @@
     "with_facts": 25,
     "with_sites": 11
    },
-   "left": 1,
-   "status": "partial",
-   "updated": "2026-11-07"
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-09"
   },
   "US-NY": {
    "camps": 585,
@@ -1088,8 +1088,8 @@
     "with_facts": 2,
     "with_sites": 0
    },
-   "left": 2,
-   "status": "partial",
+   "left": 0,
+   "status": "done",
    "updated": "2026-11-09"
   },
   "US-WY": {
@@ -1202,7 +1202,7 @@
     "src": null,
     "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-11-05"
+   "read": "2026-11-09"
   },
   "US-CA": {
    "cell": {
@@ -1463,7 +1463,7 @@
     "src": null,
     "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-11-07"
+   "read": "2026-11-09"
   },
   "US-NY": {
    "cell": {
@@ -2575,12 +2575,12 @@
  },
  "last": {
   "areas": [
-   "US-WV"
+   "US-AZ"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 46,
+   "dropped_queued": 169,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2596,11 +2596,11 @@
   },
   "ridb_key": false,
   "stat": {
-   "camps": 47,
+   "camps": 170,
    "elevations": 0,
    "errors": 0,
    "needs_browser": 0,
-   "needs_key": 47,
+   "needs_key": 170,
    "no_page": 0,
    "not_official": 0,
    "ok": 0,
@@ -2608,7 +2608,7 @@
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 58
+   "skipped_fresh": 33
   },
   "when": "2026-11-09"
  },
