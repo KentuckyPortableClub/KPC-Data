@@ -420,6 +420,26 @@
    "status": "done",
    "updated": "2026-11-08"
   },
+  "US-MT": {
+   "checked": 254,
+   "counts": {
+    "agree": 36,
+    "handover_hints": 6,
+    "no_page": 1,
+    "no_size": 137,
+    "off": 36,
+    "ours_unknown": 7,
+    "parks": 254,
+    "retired": 0,
+    "unsure": 28,
+    "weak": 6,
+    "with_outline": 245
+   },
+   "left": 0,
+   "parks": 254,
+   "status": "done",
+   "updated": "2026-11-09"
+  },
   "US-NC": {
    "checked": 253,
    "counts": {
@@ -796,69 +816,31 @@
  },
  "last": {
   "areas": [
-   "US-ID"
+   "US-MT"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 2,
-   "deferred": 52,
-   "dropped_queued": 7,
-   "errors": 0,
-   "for_person": 2,
-   "for_person_urls": [
-    [
-     "https://www.wildhorsesonline.blm.gov/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.wildhorsesonline.blm.gov this run"
-    ],
-    [
-     "https://www.fhwa.dot.gov",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.fhwa.dot.gov",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.idfg.id.gov/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.idfg.id.gov this run"
-    ],
-    [
-     "https://www.dfg.idaho.gov/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.dfg.idaho.gov this run"
-    ],
-    [
-     "https://www.idfg.idaho.goc/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.idfg.idaho.goc this run"
-    ],
-    [
-     "https://www.idfg.idah.gov/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.idfg.idah.gov this run"
-    ],
-    [
-     "https://idt.idaho.gov/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from idt.idaho.gov this run"
-    ]
-   ],
-   "requests": 179,
-   "rested": 46,
-   "retry403": 2,
-   "robots": 6,
-   "robots_unreadable": 6,
-   "strikes": 7
+   "browser": 103,
+   "errors": 1,
+   "for_person_urls": [],
+   "requests": 434,
+   "rested": 0,
+   "robots": 0,
+   "strikes": 1
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 2,
-   "no_size": 149,
-   "ours_unknown": 18,
-   "pages_read": 138,
-   "parks": 362,
+   "handover_hints": 6,
+   "no_size": 138,
+   "ours_unknown": 7,
+   "pages_read": 294,
+   "parks": 254,
    "retired": 0,
-   "size_agree": 2,
-   "size_off": 6,
-   "size_unsure": 52,
+   "size_agree": 36,
+   "size_off": 36,
+   "size_unsure": 28,
    "skipped_fresh": 0,
-   "with_outline": 227
+   "with_outline": 245
   },
   "when": "2026-11-09"
  },
