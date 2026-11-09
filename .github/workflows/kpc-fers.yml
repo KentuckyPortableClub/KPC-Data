@@ -11,6 +11,7 @@ name: KPC 2-fer bot (hidden)
 # batch): AREAS. region = one or more area names from .github/fers-areas.json (southeast, canadaeast, ...) or 'areas' for all of
 # them: one job per area, each with its own time budget, 3 at a time. An area out of time keeps its previous files; run it again
 # by name (python3 .github/scripts/kpc_fers_areas.py status prints the line). A time-out or a crash now shows RED, not green.
+# Nov 9 evening: every changed live 2-fer file goes through the waiting-room divert (held in data/waiting/in/, never live from here).
 # Nov 9 evening (Brandon t909u-t918u, 4:33-4:45 PM CST): ONE monthly cron (his t911u/t912u 'once a month'): pass all on every area.
 # Saved outlines first (the key's saved copy, then this bot's own saved-live copy on KPC-Data's fers-cache release; a live read is
 # saved for next time and re-read about once a month, a quarter of them per run). Only the pairs whose parks changed (outline,
@@ -200,6 +201,10 @@ jobs:
           cd kpcdata
           for f in data/fers/*.json.gz; do [ -f "$f" ] && rm -f "${f%.gz}"; done
           cd ..
+          # Nov 9 evening (KZ4CP 5:12 PM CST; Quality Nov 8 on Data #55): 2-fers are hidden beta, so a changed live 2-fer file never goes
+          # live from here: the waiting-room divert (the same one kpc-fers-line.yml uses) moves it to data/waiting/in/ and puts the live file
+          # back. The pair answers (reuse-*), reports and the full-rebuild dates are working files and stay. If the divert fails, nothing is pushed.
+          (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py divert data/fers) || { kpc_rc=$?; echo "::error title=kpc_waiting_room.py::divert failed (exit $kpc_rc): nothing pushed, no live 2-fer file written"; echo "kpc_waiting_room.py - divert failed (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit 1; }
           STRICT=1 bash .github/scripts/kpc_push_data.sh kpcdata "2-fer bot pass ${{ inputs.pass || 'all' }} (${{ matrix.r.name }}, hidden data)" data || exit 1   # Nov 8: no continue-on-error; never if: always()
       - name: The run broke - save only what finished (Nov 9 evening, Brandon t926u)
         # a crash (1) or time-out (3) in Look: keep the pair answers that finished (reuse files: the next run skips those pairs) and the
@@ -216,6 +221,10 @@ jobs:
           fi
           echo "::warning title=2-fer bot::the run broke; saved $n finished file(s) (pair answers + fully finished states only). Partly done states keep their previous files."
           [ "$n" -gt 0 ] || exit 0
+          # Nov 9 evening (KZ4CP 5:12 PM CST; Quality Nov 8 on Data #55): 2-fers are hidden beta, so a changed live 2-fer file never goes
+          # live from here: the waiting-room divert (the same one kpc-fers-line.yml uses) moves it to data/waiting/in/ and puts the live file
+          # back. The pair answers (reuse-*), reports and the full-rebuild dates are working files and stay. If the divert fails, nothing is pushed.
+          (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py divert data/fers) || { kpc_rc=$?; echo "::error title=kpc_waiting_room.py::divert failed (exit $kpc_rc): nothing pushed, no live 2-fer file written"; echo "kpc_waiting_room.py - divert failed (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit 1; }
           STRICT=1 bash .github/scripts/kpc_push_data.sh kpcdata "2-fer bot: finished parts of a broken run (${{ matrix.r.name }}, hidden data)" data || exit 1
       - name: Keep the outlines read live for next time (KPC-Archive; fers-cache release only as the fallback, Nov 9 evening)
         if: ${{ !cancelled() && (steps.kept_green_3.outcome == 'success' || steps.kept_green_3.outcome == 'failure') }}   # t926u: also after a break (only finished reads are in the file)

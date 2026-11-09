@@ -49,4 +49,12 @@ check(len(bk) == 1 and "steps.kept_green_3.outcome == 'failure'" in bk[0]['if'] 
 r = bk[0]['run'] if bk else ''
 check('reuse-p*-' in r and 'kpc_fers_areas.py finished' in r and 'STRICT=1' in r and 'data/fers/*' not in r, 'it saves pair answers + fully finished states only (never every file)')
 check(txt.index('run broke') > txt.index('kept_green_5') and 'Report hidden failures' in txt[txt.index('run broke'):], 'the job still goes red after it (Report step runs after)')
+# Nov 9 evening (KZ4CP 5:12 PM CST): hidden beta: never a public live 2-fer file from this workflow
+for x in steps:
+    r = str(x.get('run', ''))
+    if 'kpc_push_data.sh' in r:
+        check('kpc_waiting_room.py divert data/fers' in r and r.index('divert data/fers') < r.index('kpc_push_data.sh') and 'exit 1; }' in r[r.index('divert data/fers'):r.index('kpc_push_data.sh')],
+              f"{x.get('name', '?')[:40]}: changed live 2-fer files go to the waiting room before the push; a failed divert pushes nothing")
+import kpc_waiting_room as WR
+check(WR.kind_of('data/fers/US-NC.json')[0] == 'fers' and WR.kind_of('data/fers/reuse-p1-southeast.json')[0] is None, 'the divert holds the live state files; the pair answers stay as working files')
 print('ALL PASS' if ok else 'FAILED'); sys.exit(0 if ok else 1)

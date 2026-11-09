@@ -39,8 +39,8 @@ check(not (ROOT / '.github/scripts/kpc_fers_patch_world_ownership.py').exists(),
 check('ownership not checked' not in Y and 'designations-only' not in Y.lower(),
       'no designations-only=ok wording in workflow')
 
-# --- Waiting-room divert left out ---
-check('divert data/fers' not in Y, 'waiting-room divert left out (follow-up)')
+# --- Waiting-room divert: the Nov 8 follow-up, done Nov 9 evening (KZ4CP 5:12 PM CST: 2-fers are hidden beta, never public live files) ---
+check('kpc_waiting_room.py divert data/fers' in Y, 'changed live 2-fer files go to the waiting room (the Nov 8 follow-up, done Nov 9 evening)')
 
 if fails:
     print(f'SOME FAILED ({len(fails)})')
