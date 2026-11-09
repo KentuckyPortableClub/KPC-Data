@@ -44,10 +44,10 @@
   "NC": 15,
   "ND": 7,
   "NE": 2,
-  "NH": 2,
+  "NH": 3,
   "NJ": 1,
   "NM": 5,
-  "NV": 20,
+  "NV": 29,
   "NY": 12,
   "OH": 0,
   "OK": 3,
@@ -65,7 +65,7 @@
   "WV": 0,
   "WY": 18
  },
- "made": "2026-11-08",
+ "made": "2026-11-09",
  "parks": {
   "CA-0049": {
    "acts": 19,
@@ -7171,6 +7171,22 @@
    "site": false,
    "st": "WY"
   },
+  "US-10844": {
+   "acts": 2,
+   "leads": [
+    {
+     "acres": 322004.26580333,
+     "id": "hab279",
+     "km": 0.22,
+     "layer": "BLM herd areas",
+     "name": "Buck-Bald",
+     "why": "same kind of place (hma)"
+    }
+   ],
+   "n": "Diamond BLM Herd Management Area",
+   "site": false,
+   "st": "NV"
+  },
   "US-10862": {
    "acts": 5,
    "leads": [
@@ -9795,6 +9811,22 @@
    "site": true,
    "st": "OR"
   },
+  "US-13013": {
+   "acts": 9,
+   "leads": [
+    {
+     "acres": 6605.17711166,
+     "id": "hma92",
+     "km": 0.7,
+     "layer": "BLM herd management areas",
+     "name": "Dogskin Mountains",
+     "why": "shares dogskin"
+    }
+   ],
+   "n": "Dogskin Mountains BLM Herd Management Area",
+   "site": false,
+   "st": "NV"
+  },
   "US-13023": {
    "acts": 5,
    "leads": [
@@ -9816,6 +9848,102 @@
     }
    ],
    "n": "Artesia Lake State Wildlife Area",
+   "site": false,
+   "st": "NV"
+  },
+  "US-13029": {
+   "acts": 4,
+   "leads": [
+    {
+     "acres": 516.0,
+     "id": "230214",
+     "km": 0.28,
+     "layer": "State of Nevada",
+     "name": "Flanigan Area Grant Lands",
+     "why": "shares flanigan"
+    }
+   ],
+   "n": "Flanigan BLM Herd Management Area",
+   "site": false,
+   "st": "NV"
+  },
+  "US-13041": {
+   "acts": 0,
+   "leads": [
+    {
+     "acres": 517008.58978636,
+     "id": "hab12",
+     "km": 0.0,
+     "layer": "BLM herd areas",
+     "name": "Maverick-Butte",
+     "why": "shares maverick"
+    },
+    {
+     "acres": 324316.94066995,
+     "id": "hma31",
+     "km": 0.63,
+     "layer": "BLM herd management areas",
+     "name": "Maverick-Medicine",
+     "why": "shares maverick, medicine"
+    },
+    {
+     "acres": 1235921.5880484,
+     "id": "hma87",
+     "km": 0.0,
+     "layer": "BLM herd management areas",
+     "name": "Triple B",
+     "why": "same kind of place (hma)"
+    },
+    {
+     "acres": 481288.57328081,
+     "id": "hab172",
+     "km": 0.41,
+     "layer": "BLM herd areas",
+     "name": "Cherry Creek",
+     "why": "same kind of place (hma)"
+    }
+   ],
+   "n": "Maverick-Medicine BLM Herd Management Area",
+   "site": false,
+   "st": "NV"
+  },
+  "US-13043": {
+   "acts": 0,
+   "leads": [
+    {
+     "acres": 287948.4199666,
+     "id": "hma84",
+     "km": 0.87,
+     "layer": "BLM herd management areas",
+     "name": "New Pass-Ravenswood",
+     "why": "shares pass, ravenswood"
+    },
+    {
+     "acres": 67575.20466732,
+     "id": "hab228",
+     "km": 0.0,
+     "layer": "BLM herd areas",
+     "name": "Mount Airy",
+     "why": "same kind of place (hma)"
+    }
+   ],
+   "n": "New Pass-Ravenswood BLM Herd Management Area",
+   "site": false,
+   "st": "NV"
+  },
+  "US-13044": {
+   "acts": 1,
+   "leads": [
+    {
+     "acres": 119262.30942353,
+     "id": "hma70",
+     "km": 0.78,
+     "layer": "BLM herd management areas",
+     "name": "Palmetto",
+     "why": "shares palmetto"
+    }
+   ],
+   "n": "Palmetto BLM Herd Management Area",
    "site": false,
    "st": "NV"
   },
@@ -9859,6 +9987,38 @@
    "site": false,
    "st": "AL"
   },
+  "US-13119": {
+   "acts": 3,
+   "leads": [
+    {
+     "acres": 24059.41159765,
+     "id": "hma108",
+     "km": 0.84,
+     "layer": "BLM herd management areas",
+     "name": "Stonewall",
+     "why": "shares stonewall"
+    }
+   ],
+   "n": "Stonewall BLM Herd Management Area",
+   "site": false,
+   "st": "NV"
+  },
+  "US-13129": {
+   "acts": 2,
+   "leads": [
+    {
+     "acres": 9686.61091796,
+     "id": "hma1",
+     "km": 0.69,
+     "layer": "BLM herd management areas",
+     "name": "Lahontan",
+     "why": "shares lahontan"
+    }
+   ],
+   "n": "Lahontan BLM Herd Management Area",
+   "site": false,
+   "st": "NV"
+  },
   "US-13166": {
    "acts": 15,
    "leads": [
@@ -9890,6 +10050,46 @@
    "n": "Lake Ottawa National Recreation Area",
    "site": false,
    "st": "MI"
+  },
+  "US-13181": {
+   "acts": 0,
+   "leads": [
+    {
+     "acres": 16227.19405253,
+     "id": "sgakh1214",
+     "km": 0.0,
+     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+     "name": "Pine Forest",
+     "why": "shares pine"
+    },
+    {
+     "acres": 76970.26367442,
+     "id": "rst11394",
+     "km": 0.0,
+     "layer": "BLM recreation management areas · official (BLM planning area)",
+     "name": "Pine Forest Creeks RMZ",
+     "why": "shares pine"
+    },
+    {
+     "acres": 76970.26367442,
+     "id": "sgakg11394",
+     "km": 0.0,
+     "layer": "BLM recreation SITE polygons (national, 3,478) (land, state GIS table)",
+     "name": "Pine Forest Creeks RMZ",
+     "why": "shares pine"
+    },
+    {
+     "acres": 0.0,
+     "id": "wbl241",
+     "km": 0.2,
+     "layer": "BLM wilderness",
+     "name": "Pine Forest Range",
+     "why": "shares pine"
+    }
+   ],
+   "n": "Pine Forest BLM Recreation Management Area",
+   "site": true,
+   "st": "NV"
   },
   "US-13186": {
    "acts": 4,
@@ -11722,6 +11922,30 @@
    "n": "Pere Marquette State Forest",
    "site": false,
    "st": "MI"
+  },
+  "US-4886": {
+   "acts": 11,
+   "leads": [
+    {
+     "acres": 0.0,
+     "id": "nhc924",
+     "km": 0.0,
+     "layer": "NH GRANIT conservation and public lands",
+     "name": "Connecticut Lakes Headwaters",
+     "why": "shares connecticut"
+    },
+    {
+     "acres": 0.0,
+     "id": "sgnha924",
+     "km": 0.0,
+     "layer": "NH GRANIT (land, state GIS table)",
+     "name": "Connecticut Lakes Headwaters",
+     "why": "shares connecticut"
+    }
+   ],
+   "n": "Connecticut Lakes State Forest",
+   "site": false,
+   "st": "NH"
   },
   "US-5197": {
    "acts": 4,
@@ -14943,8 +15167,8 @@
  "skipped": [],
  "totals": {
   "canada": 257,
-  "name_word": 476,
-  "parks": 627,
-  "us": 372
+  "name_word": 485,
+  "parks": 637,
+  "us": 382
  }
 }
