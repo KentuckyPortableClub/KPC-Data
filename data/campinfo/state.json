@@ -115,22 +115,22 @@
    "checked": 653,
    "counts": {
     "camps": 653,
-    "needs_browser": 2,
+    "needs_browser": 16,
     "needs_key": 337,
     "no_page": 0,
     "not_official": 0,
-    "ok": 101,
+    "ok": 183,
     "other": 20,
-    "resting": 193,
+    "resting": 97,
     "robots": 0,
     "with_booking": 316,
     "with_elevation": 0,
-    "with_facts": 105,
+    "with_facts": 200,
     "with_sites": 2
    },
-   "left": 6,
-   "status": "partial",
-   "updated": "2026-11-07"
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-09"
   },
   "US-CT": {
    "camps": 32,
@@ -1220,7 +1220,7 @@
     "src": null,
     "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-11-07"
+   "read": "2026-11-09"
   },
   "US-CT": {
    "cell": {
@@ -1620,7 +1620,7 @@
   }
  },
  "hosts": {
-  "dnr.wisconsin.gov": 1794223285.5490434
+  "cpw.state.co.us": 1794314357.6662626
  },
  "ky_check": {
   "agree": 81,
@@ -2575,12 +2575,12 @@
  },
  "last": {
   "areas": [
-   "US-WV"
+   "US-CO"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 104,
+   "dropped_queued": 550,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2592,28 +2592,27 @@
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 93,
-   "rested": 0,
+   "requests": 106,
+   "rested": 100,
    "robots": 2,
    "robots_unreadable": 2,
-   "strikes": 0
+   "strikes": 3
   },
   "ridb_key": false,
   "stat": {
-   "browser": 25,
-   "camps": 105,
+   "camps": 551,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 53,
-   "needs_key": 51,
+   "needs_browser": 14,
+   "needs_key": 350,
    "no_page": 0,
    "not_official": 0,
-   "ok": 54,
-   "pages_read": 56,
-   "resting": 0,
+   "ok": 100,
+   "pages_read": 100,
+   "resting": 101,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 0
+   "skipped_fresh": 125
   },
   "when": "2026-11-09"
  },

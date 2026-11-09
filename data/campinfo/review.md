@@ -41,7 +41,7 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
 | US-TX | 483 | 0 | 120 | 1 | 3 | 0 | 329 | 0 | 30 | 0 | 34 | 0 |
 | US-KS | 117 | 0 | 52 | 0 | 65 | 0 | 0 | 0 | 0 | 0 | 63 | 0 |
 | US-NE | 232 | 3 | 11 | 2 | 0 | 185 | 6 | 23 | 2 | 0 | 74 | 0 |
-| US-CO | 653 | 101 | 337 | 2 | 0 | 193 | 0 | 0 | 20 | 2 | 316 | 0 |
+| US-CO | 653 | 183 | 337 | 16 | 0 | 97 | 0 | 0 | 20 | 2 | 316 | 0 |
 | US-WY | 301 | 5 | 162 | 1 | 0 | 0 | 79 | 0 | 54 | 0 | 41 | 0 |
 | US-ID | 450 | 27 | 311 | 33 | 4 | 0 | 0 | 35 | 40 | 8 | 100 | 0 |
 | US-MT | 389 | 30 | 311 | 0 | 0 | 0 | 0 | 0 | 48 | 0 | 78 | 0 |
@@ -64,9 +64,9 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
-- cpw.state.co.us: 193 campgrounds · host resting
 - outdoornebraska.gov: 187 campgrounds · host resting
 - dnr.alaska.gov: 113 campgrounds · robots.txt says no
+- cpw.state.co.us: 97 campgrounds · host resting
 - www.ksoutdoors.gov: 63 campgrounds · host resting (robots.txt could not be read: next run)
 - dnr.wisconsin.gov: 58 campgrounds · host resting
 - dec.ny.gov: 55 campgrounds · robots.txt says no
@@ -99,11 +99,11 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
 - parks.ky.gov: 26 campgrounds
 - reservations.wvstateparks.com: 26 campgrounds
 - southcarolinaparks.com: 22 campgrounds
+- cpw.state.co.us: 16 campgrounds
 - www.recreation.gov: 5 campgrounds
 - gastateparks.org: 3 campgrounds
 - wvdnr.gov: 2 campgrounds
 - www.fs.usda.gov: 2 campgrounds
-- cpw.state.co.us: 2 campgrounds
 - files.dfm.idaho.gov: 2 campgrounds
 - explore.gastateparks.org: 1 campgrounds
 - www.outdooralabama.com: 1 campgrounds
@@ -2629,51 +2629,57 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
 
 ## US-CO: 12 random samples (records with facts; seed = the date)
 
-- **Cabin #4** (US-1219:13, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+- **Aspen Meadow - Twin Creek Loop** (US-1219:10, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
   - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
   - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
   - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
-- **Campsite(s) 415** (US-1243:27, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+- **Cedar** (US-1237:3, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
+- **Cottonwood** (US-1237:4, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
+- **Campsite(s) 410-414** (US-1243:25, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
+- **Lakeview** (US-1237:5, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
+- **219 T** (US-1243:74, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
+- **Piñon Flats Campground; Medano Pass Primitive Road Campsites; Backpacking Campsites in the Dunes or Forest** (intake-US-0033, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [www.nps.gov](https://www.nps.gov/grsa/planyourvisit/pinonflatscampground.htm)
+  - booking.how = "online: www.nps.gov" · “link “Great Sand Dunes National Park & Preserve””
+  - booking.url = "https://www.nps.gov/grsa/index.htm" · “link “Great Sand Dunes National Park & Preserve” -> https://www.nps.gov/grsa/index.htm”
+  - map.date_how = "web page, no date in the link" · “link “View an Interactive Map of the campground on recreation.gov””
+  - map.url = "https://www.recreation.gov/camping/campgrounds/234685" · “link “View an Interactive Map of the campground on recreation.gov” -> https://www.recreation.gov/camping/campgrounds/234685”
+  - reservable = false · “ide of the park. High clearance 4WD vehicle based camping is available in up to 21 sites (first come, first served) in the Great Sand Dunes ”
+- **Bellaire Lake SWA designated camping area(s)** (intake-US-9612, agency (outside research camping-us-oct31), status ok, 7 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-wildlife-areas/bellaire-lake-swa)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - hookups.electric = false · “essel use prohibited, except for handlaunched vessles that are propelled by hand, wind or electric motor. B. Valid hunting or fishing or Col”
+  - map.date_how = "PDF, no date in the link" · “link “Download Map””
+  - map.url = "https://cpw.state.co.us/sites/default/files/dam/rlw1sxqmgh/ · “link “Download Map” -> https://cpw.state.co.us/sites/default/files/dam/rlw1sxqmgh/bellairelakeswa_geo.pdf”
+  - phone = "(970) 472-4300" · “ng Guides Available Contact: Area CPW Office: Fort Collins, (970) 472-4300 ​ An image is coming soon. Bellaire Lake SWA Larimer County”
+  - phone_hint = "(970) 472-4300" · “enities: Fishing Camping Hunting Guides Available Contact: Area CPW Office: Fort Collins, (970) 472-4300 ​ An image is coming soon. Bellaire”
+- **Lazy Boy** (US-1217:2, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
+- **Lathrop State Park: RV Campground - name not in layer** (US-1226:3, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
+- **Junction City** (US-1242:4, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
   - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
   - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
   - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
 - **Campsite(s) 205** (US-1243:40, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
-  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
-  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
-  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
-- **Campsite(s) 421** (US-1243:28, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
-  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
-  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
-  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
-- **Campsite(s) 231** (US-1243:65, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
-  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
-  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
-  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
-- **Campsite(s) 214** (US-1243:82, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
-  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
-  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
-  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
-- **Cabin 4** (US-1249:8, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
-  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
-  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
-  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
-- **Aspen Meadow - Meadow Loop** (US-1219:11, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
-  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
-  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
-  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
-- **Arboles Point** (US-1231:4, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
-  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
-  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
-  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
-- **Campsite(s) 441** (US-1243:32, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
-  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
-  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
-  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
-- **213 T** (US-1243:48, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
-  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
-  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
-  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
-- **Campsite(s) 432-439** (US-1243:30, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
   - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
   - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
   - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
