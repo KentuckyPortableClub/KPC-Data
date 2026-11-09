@@ -1,37 +1,37 @@
 # Hand-layer pile solver hand-run (Nov 8 2026) — SEPARATE from the Nov 4 full pile
 
-**Must-keep:** the Nov 4 full outputs in this folder (`solved-join.csv` 52 SOLVED-JOIN, `needs-person.csv`, `run-log.md`, area `*.json`, etc.) are **unchanged**. This hand run writes only the `hand-layers-*` files below.
+**Must-keep:** Nov 4 outputs (`solved-join.csv` 52, `needs-person.csv`, `run-log.md`, area `*.json` 1,381 parks) are **unchanged**. Hand run = `hand-layers-*` only.
 
-- **MODE=backfill**, 17 parks from PR #50 holds (+ Rule-18 unjoins). **auto stays false.**
-- Pins never moved. No cron. Proposals only.
-- File-aware pass: 5 robots-blocked parks re-checked against `#50` hand-layer GeoJSON (no live ArcGIS).
-- Quality NO on #51 @aa6975fd addressed: no overwrite of Nov 4 outputs; US-3729 is NEEDS-PERSON (Rule 18).
+- MODE=backfill, 17 parks, **auto stays false.** Pins never moved. Proposals only.
+- Research answers `super-questions-answers-20261108-1809-CST` folded in (solver categories, rules judged).
 
-## Files (this hand run only)
-| file | contents |
-|---|---|
-| `hand-layers-solved-join.csv` | 5 SOLVED-JOIN (file-aware Rule 3) |
-| `hand-layers-needs-person.csv` | US-3729 (Rule 18) + 8 other NEEDS-PERSON |
-| `hand-layers-untouched.csv` | 3 already decided in overrides |
-| `hand-layers-answer-sheet-proposals-US.csv` | YES proposals for the 5 |
-| `hand-layers-pile.csv` | input pile (if present) |
+## SOLVED-JOIN (12)
+### File-aware (5)
+US-3505, US-3751, US-6535, US-6565, US-9770 — Rule 3 + “POTA pin may be off” against #50 hand GeoJSON.
 
-## SOLVED-JOIN (5)
+### Research accept-polygon (4)
+| ref | record | m | why |
+|---|---|---|---|
+| US-2200 | FID:60 Stephen C. Foster → Okefenokee SP | 0 | rename eff. 2026-09-01 clears Rule 18; pin inside |
+| CA-2373 | OBJECTID:32 Primrose Provincial Park | 47 | no separate Wayside boundary; Rule 1 |
+| US-6571 | W211 Las Palomas WMA - Anacua Unit | 1363 | own labeled tract; Rule 18c cleared; Rule 3 |
+| US-6550 | W730 Cooper WMA | 1485 | land polygon; Rule 7 cleared (lake is USACE) |
+
+### Research pin_wrong (3) — accept polygon; never move pins
 | ref | record | m | flag |
 |---|---|---|---|
-| US-3505 | sgtxa4942 Honey Creek | 334.3 | POTA pin may be off |
-| US-3751 | sggaa882 GRAND BAY WMA | 638.6 | POTA pin may be off |
-| US-6535 | sgtxc140 Angelina Neches/Dam B WMA | 855.8 | POTA pin may be off |
-| US-6565 | sgtxc96 J. D. Murphree WMA | 808.8 | POTA pin may be off |
-| US-9770 | sggaa861 ALTAMA PLANTATION WMA | 648.3 | POTA pin may be off |
+| CA-0527 | OBJECTID:88 Birch Island PP | 158442 | POTA pin wrong |
+| CA-0558 | OBJECTID:22 North Steeprock Lake PP | 110743 | POTA pin wrong (lat ~1° typo) |
+| US-6551 | W717 Wintermann WMA | 4728 | POTA pin wrong |
 
-## NEEDS-PERSON
+## NEEDS-PERSON (2)
 | ref | why |
 |---|---|
-| **US-3729** | Rule 18: State Recreation Area vs Recreation & Public Fishing Area (PAD-US 194918) — not SOLVED-JOIN |
-| US-6571 | Rule 18 tract (Anacua Unit) |
-| US-6550 | Rule 7 water-only question |
-| US-6551, US-2200, CA-0527, CA-0558, CA-0551, CA-2373 | pin / no join / Rule-18 unjoin (see CSV) |
+| US-3729 | Rule 18: State Recreation Area vs Recreation & Public Fishing Area (PAD-US 194918) |
+| CA-0551 | Official corridor OK; pin 4,233 m N of edge — person to flag/report pin |
 
 ## UNTOUCHED (3)
-US-4650, US-6572, US-7896 — existing overrides joins (not Brandon sign-offs).
+US-4650, US-6572, US-7896.
+
+## Hashes
+US a066624520b4 / CA 8feccbb7d9ee / world 10e4092cc97f — unchanged.
