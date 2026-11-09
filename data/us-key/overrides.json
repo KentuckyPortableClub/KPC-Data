@@ -13337,13 +13337,17 @@
     "sggaa184": [
      "TALLULAH GORGE WMA",
      2267
+    ],
+    "sggaa904": [
+     "TALLULAH GORGE WMA",
+     2267
     ]
    },
    "join": [
     "sggaa184"
    ],
-   "when": "2026-11-02",
-   "why": "a different place, not this park; no outline of its own on file (hand review Oct 22 (waiting list)) · 2026-11-02 12:49: layers row YES 'TALLULAH GORGE WMA' (chat 11; applied by kpc_key_answers) · 2026-11-03 18:41: the older 'none' (no outline of its own) is replaced by this YES join · 2026-11-08: Tallulah Gorge WMA is not the state park: never join the GA DNR Tallulah Gorge State Park polygon (sggab12) to it",
+   "when": "2026-11-08",
+   "why": "a different place, not this park; no outline of its own on file (hand review Oct 22 (waiting list)) · 2026-11-02 12:49: layers row YES 'TALLULAH GORGE WMA' (chat 11; applied by kpc_key_answers) · 2026-11-03 18:41: the older 'none' (no outline of its own) is replaced by this YES join · 2026-11-08: Tallulah Gorge WMA is not the state park: never join the GA DNR Tallulah Gorge State Park polygon (sggab12) to it · 2026-11-08 Quality should-fix: GA DNR WMA polygon in the hand download (OBJECTID 904, 2267 ac, pin 0 m) matches the existing WMA join; state park polygon sggab12 stays NO",
    "no": [
     "sggab12"
    ]
@@ -26491,16 +26495,8 @@
     "5138"
    ],
    "when": "2026-11-08",
-   "why": "a different place, not this park; no outline of its own on file (hand review Oct 22 (waiting list)) · 2026-10-29 23:15: gis-hunter row NO 'Okefenokee National Wildlife Refuge' (chat 11 (Oct 29-30); applied by kpc_key_answers) · 2026-10-29 23:15: gis-hunter row NO 'Okefenokee National Wildlife Refuge' (chat 11 (Oct 29-30); applied by kpc_key_answers) · 2026-11-08: Research handoff (Georgia DNR State_Parks_Boundary FeatureServer/0 (hand download by Brandon, data edited 3/31/2025)), pin inside or within 150 m, name checked; joined sggab32",
-   "join": [
-    "sggab32"
-   ],
-   "fp": {
-    "sggab32": [
-     "Stephen C. Foster State Park",
-     321
-    ]
-   }
+   "why": "a different place, not this park; no outline of its own on file (hand review Oct 22 (waiting list)) · 2026-10-29 23:15: gis-hunter row NO 'Okefenokee National Wildlife Refuge' (chat 11 (Oct 29-30); applied by kpc_key_answers) · 2026-10-29 23:15: gis-hunter row NO 'Okefenokee National Wildlife Refuge' (chat 11 (Oct 29-30); applied by kpc_key_answers) · 2026-11-08 Quality grade PR#50: unjoined sggab32 (Stephen C. Foster) — Rule 18 name mismatch with Okefenokee State Park; sent to pile solver",
+   "none": true
   },
   "US-2201": {
    "fp": {
@@ -62716,7 +62712,7 @@
      5403
     ]
    },
-   "why": "2026-11-08: Research handoff (TPWD Texas_State_Parks_Boundaries FeatureServer/0 (hand download by Brandon)), pin inside or within 150 m, name checked; joined sgtxa22",
+   "why": "2026-11-08: Research handoff (TPWD Texas_State_Parks_Boundaries FeatureServer/0 (hand download by Brandon)), pin inside or within 150 m, name checked; joined sgtxa22 · 2026-11-08 Quality should-fix: TPWD Texas_State_Parks_Boundaries has only one Hill Country feature (Louise Merrick Unit, OBJECTID 22); no other units in that layer to add as tracts",
    "when": "2026-11-08"
   },
   "US-3507": {

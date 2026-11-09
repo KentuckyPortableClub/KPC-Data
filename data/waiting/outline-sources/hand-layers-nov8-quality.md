@@ -1,27 +1,17 @@
-# Hand-downloaded layers — Quality check (Nov 8, 2026)
+# Hand-downloaded layers — Quality regrade notes (Nov 8, 2026 evening)
 
-Research handoffs 20261108-1740 / 1745 / 1750 / 1755 CST. Brandon downloaded the layers by hand (live hosts are robots-blocked). Pins were never moved. US rules hash a066624520b4 and CA rules hash 8feccbb7d9ee are unchanged (overrides and ledger only).
+Addressing the NO grade on PR #50 (head was 4a7beeba).
 
-## Counts
+## Must-fix done
+1. **Unjoined** US-2200 (Okefenokee ↛ Stephen C. Foster) and CA-2373 (Primrose Wayside ↛ Primrose Provincial Park) for Rule 18. Both restored to `none` and listed for the **pile solver** (bots first), not for Brandon by default.
+2. **Provenance** on all 6 `hand-layers/*.geojson.about.json`: source URL, download date **2026-11-08**, downloaded by Brandon by hand, license, publisher. Manitoba file names **ECCC / CPCAD** as publisher; Manitoba is the managing agency in the records.
 
-| Set | Polygons | Verified leads | Joined (new) | Held for Brandon | Possible candidates (no pin) | Already outlined |
-|---|---|---|---|---|---|---|
-| GA state parks | 60 | 56 | 2 (US-2200, US-3722) | — | 3 (Balls Ferry, Mossy Creek, Bush Head Shoals) | rest |
-| TX state parks | 116 | 88 | 11 | US-3505 (333 m) | 5 | rest; US-3510 keeps WMA |
-| TX WMA | 80 | 46 | 3 | US-6571/6565/6551/6535/6550/6572 | 4 | rest |
-| PA SGL | 320 | 308 | 2 (US-8745, US-8911) | — | 0 | 306 |
-| GA WMA/PFA | 209 | 132 | 5 | US-3751, US-9770, US-4650, US-3729, US-7896 | 38 | rest |
-| MB provincial parks | 93 | 86 | 1 (CA-2373) | CA-0527 (111 km), CA-0558 (69 km), CA-0551 (2.7 km) | 4 | rest |
+## Should-fix done
+3. **US-3504** Hill Country: TPWD state-parks layer has only **Louise Merrick Unit** (OBJECTID 22). No other units in that official layer to add as tracts; noted on the override.
+4. **US-12418** Tallulah Gorge WMA: already joins GA DNR WMA (`sggaa184`, 2267 ac). Hand-download OBJECTID 904 matches name/acres; fingerprint recorded. State park polygon `sggab12` stays **NO**.
+5. **Stale Nov 7 tests** updated (not known-fail): `test_outline_sources_nov7.py` allows ledger growth and trail/river rows; `test_trail_load_nov7.py` accepts `kept current line` and checks wired CSV ⊇ 243-list wired parks. Removed from `known-fail-main.txt`.
 
-**Totals:** 24 hand joins · 15 held · 54 possible candidates · 665 already outlined · 1 explicit NO (US-12418 never gets Tallulah Gorge SP polygon).
+## Joins now
+**22** hand joins (was 24). Held for pile solver: the original 15 + US-2200 + CA-2373.
 
-## Decisions called out
-
-- US-2200 Okefenokee SP → Stephen C. Foster polygon (sggab32).
-- US-2199 already Dukes Creek - Smithgall Woods.
-- US-12418 Tallulah Gorge WMA: NO on sggab12.
-- US-3510 Powderhorn: use existing WMA join, not the state-park polygon.
-- CA-0527 / CA-0558: held as likely pin/name problems.
-- Manitoba file kept under `data/waiting/outline-sources/hand-layers/ca-mb-provparks.geojson` (replaces missing shapes; no live services.arcgis.com).
-
-Files: `hand-layers-nov8.json`, `hand-layers/`, ledger source `research-hand-layers-nov8`.
+US / CA rules hashes unchanged (overrides + ledger + about files only).

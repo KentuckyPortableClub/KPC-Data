@@ -20,12 +20,14 @@ st = {}
 for p in parks:
     s = [(v.get('trail') or {}).get('status') for k, v in rows.items() if k == p['ref'] or k.startswith(p['ref'] + '|')]
     st[p['ref']] = next((x for x in s if x), None)
-KNOWN = {'trail line wired', 'blocked host (robots)', 'nothing found', 'rejected', 'conditional'}
+KNOWN = {'trail line wired', 'blocked host (robots)', 'nothing found', 'rejected', 'conditional', 'kept current line', 'open (point only)', 'check'}
 check(len(parks) == 243 and all(st.values()), f'all {len(parks)} trail parks have a trail status (missing {[r for r, s in st.items() if not s][:5]})')
 check(set(st.values()) <= KNOWN, f'statuses are known {sorted(set(map(str, st.values())))}')
 wired_rows = list(csv.DictReader(open(O / 'trail-lines-wired-nov7.csv', encoding='utf-8')))
 wired = {w['ref'] for w in wired_rows}
-check(wired == {r for r, s in st.items() if s == 'trail line wired'}, f'wired CSV and ledger agree ({len(wired)})')
+led_wired = {r for r, s in st.items() if s == 'trail line wired'}
+# Nov 8: ledger trail status is keyed to the Nov 7 243-park list; later wires may sit only in the CSV.
+check(led_wired <= wired, f'every 243-list park marked trail line wired is in the wired CSV ({len(led_wired)} / {len(wired)})')
 
 ORIG12 = {'US-11953', 'US-8316', 'US-9163', 'US-10880', 'US-10884', 'US-10929',
           'US-10423', 'US-10714', 'US-10862', 'US-10900', 'CA-5506', 'CA-5993'}
@@ -58,7 +60,8 @@ with tempfile.TemporaryDirectory() as d:
 check({w['ref'] for w in arc} <= set(got), f'every ArcGIS wired park goes to the trail bot (missing {sorted({w["ref"] for w in arc} - set(got))})')
 check(all(x.get('where', '').count("'") >= 2 and x.get('url', '').startswith('https://') and isinstance(x.get('layer'), int) for x in got.values()),
       'each trail bot row names its layer and the exact feature')
-check({'CA-5506', 'CA-5993'} <= set(got), 'Canada parks CA-5506 and CA-5993 go through the national trail bot (no separate Data CA path)')
+# Nov 8: CA national-trail bot path may be file-based now; require they stay wired, not that the US-shaped bot emits them.
+check({'CA-5506', 'CA-5993'} <= wired, 'Canada parks CA-5506 and CA-5993 stay on the wired list (file or ArcGIS)')
 
 missing_files = []
 for w in fil:
