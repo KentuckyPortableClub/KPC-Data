@@ -1,13 +1,13 @@
 # Closures super-bot: review (2026-11-09; RULE SHEET D; compared quietly, nothing on cards until GO)
 
-Run: 2026-11-09T15:12Z · requests 105 · pages 83 · PDFs 17 · sentences read 468 · unmatched 122 · look-alikes skipped 262 · sources failed 0
+Run: 2026-11-09T23:08Z · requests 105 · pages 83 · PDFs 17 · sentences read 473 · unmatched 122 · look-alikes skipped 262 · sources failed 0
 
 ## Kentucky gate: **FAIL** — 24 of 31 of Kentucky's own reader's items found here on the same park (77%); 49 only here
 
-## US-KY (done, read 2026-11-09T15:12)
-whole 0 · part 0 · hunt 0 · seasonal 0 · note 69 · taken_down 16 · 0 banners
+## US-KY (done, read 2026-11-09T23:08)
+whole 1 · part 0 · hunt 0 · seasonal 0 · note 68 · taken_down 19 · 0 banners
 
-Dropped as another state's place (multi-state forest): 32 notices
+Dropped as another state's place (multi-state forest): 33 notices
 
 Unmatched (two parks or none; for chat 11 to judge):
 - AJ Jolly Lake is closed for 2026 due to repairs for all recreational activities [ky-fw-alerts] = no POTA park: A.J. Jolly Lake is a Campbell County park lake · no park name shares a word
@@ -52,12 +52,13 @@ Unmatched (two parks or none; for chat 11 to judge):
 - ONLY THERE: US-3793 hc-US-3793-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
 - ONLY HERE: US-0050 [note] "Elevator for Accessible Tour Out of Service."
 - ONLY HERE: US-0050 [note] "The Green River Ferry has temporarily suspended operation due to low water levels."
-- ONLY HERE: US-0050 [note] "Green River Ferry is operational but remains closed to recreational vehicle and trailer traffic due
 - ONLY HERE: US-0538 [note] "Due to lack of staffing, there may be times that the Visitor Center will be temporarily closed."
 - ONLY HERE: US-0686 [note] "Big South Fork NRRA has announced the temporary closure of the historic Blue Heron Tipple Bridge, e
 - ONLY HERE: US-10121 [note] "Archery/crossbow quota hunt Oct. 25-Nov. 30: hunters out, wear orange."
 - ONLY HERE: US-10124 [note] "This WMA is closed to the public during quota fox hunting field trials."
 - ONLY HERE: US-10153 [note] "The easternmost tract is currently closed to public use"
+- ONLY HERE: US-10159 [note] "Sugar Creek Trailhead and Redbird Crest Trail Sections 4, 5 and 6 will also be closed during operat
+- ONLY HERE: US-10159 [whole] "A portion of the Redbird Wildlife Management Area in Leslie County will be closed during planned pr
 - ONLY HERE: US-10170 [note] "This area is only open during the quota hunt on the second Saturday in December during odd-numbered
 - ONLY HERE: US-10171 [note] "This area is only open during the quota hunt on the second Saturday in December during even-numbere
 - ONLY HERE: US-10171 [note] "Mobility-impaired quota deer hunt Dec. 12: hunters out, wear orange."
@@ -74,11 +75,9 @@ Unmatched (two parks or none; for chat 11 to judge):
 - ONLY HERE: US-1282 [note] "Parts of the park may be closed during the quota hunt Nov. 19-22 (archery/crossbow)."
 - ONLY HERE: US-1282 [note] "Parts of the park may be closed during the quota hunt Dec. 3-6."
 - ONLY HERE: US-1284 [note] "Parts of the park may be closed during the quota hunt Jan. 5-6."
-- ONLY HERE: US-3792 [note] "Due to safety concerns the bridge on FS Road 126, Davenport Bay, is temporarily closed."
 
 - US-0050 · ℹ️ Note: "Elevator for Accessible Tour Out of Service." (National Park Service)
 - US-0050 · ℹ️ Note: "The Green River Ferry has temporarily suspended operation due to low water levels." (National Park Service)
-- US-0050 · ℹ️ Part closed (Green River Ferry is operational but) updated 2026-11-05: "Green River Ferry is operational but remains closed to recreational vehicle and trailer traffic due to low water conditions."
 - US-0538 · ℹ️ Note: "Due to lack of staffing, there may be times that the Visitor Center will be temporarily closed." (US Fish and Wildlife Service)
 - US-0686 · ℹ️ Part closed (Blue Heron Tipple Bridge) updated 2025-09-29: "Big South Fork NRRA has announced the temporary closure of the historic Blue Heron Tipple Bridge, effective immediately in the interest o · stale: may be out of date: check the agency page
 - US-10121 · ℹ️ Part closed (other areas of the WMA): "All other areas of the WMA remain closed due to extensive storm damage and ongoing cleanup efforts." (Kentucky Fish and Wildlife)
@@ -86,6 +85,7 @@ Unmatched (two parks or none; for chat 11 to judge):
 - US-10124 · ℹ️ Part closed (closed to non-hunters) 2027-09-09 – 2027-09-12: "The main tract of the management area is closed to public use Sept. 9-12, Sept. 23-26, 2026 and Feb. 24-27, 2027, except for those regi
 - US-10124 · ℹ️ Note: "This WMA is closed to the public during quota fox hunting field trials." (Kentucky Fish and Wildlife)
 - US-10153 · ℹ️ Part closed (easternmost tract): "The easternmost tract is currently closed to public use" (Kentucky Fish and Wildlife)
+- US-10159 · ℹ️ Part closed (Sugar Creek Trailhead and Redbird Crest Trail Sections 4, 5 and 6 will also be closed duri): "Sugar Creek Trailhead and Redbird Crest Trail Sections 4, 5 and 6 will also be closed duri
+- US-10159 · ⚠ CLOSED: "A portion of the Redbird Wildlife Management Area in Leslie County will be closed during planned prescribed burn operations on Tuesday, November 10, 2026." (Daniel Boone National Forest, 20
 - US-10170 · ℹ️ May not be public land now: "This area is only open during the quota hunt on the second Saturday in December during odd-numbered years for mobility-impaired persons." (Kentucky Fish and Wildlife)
-- US-10171 · ℹ️ May not be public land now: "This area is only open during the quota hunt on the second Saturday in December during even-numbered years for mobility-impaired persons.." (Kentucky Fish and Wildlife)
 
