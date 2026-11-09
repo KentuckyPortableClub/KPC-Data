@@ -7,12 +7,20 @@ name: KPC 2-fer post-line check (hidden)
 on:
   workflow_run:
     workflows: ['KPC 2-fer assembly line (hidden)', 'KPC 2-fer chain after a new key (hidden)']
+  # Nov 9 (Quality must-fix 4, run 42594981324): after a HAND-STARTED 2-fer bot run (kpc-fers.yml), one step, by hand:
+  #   gh workflow run kpc-fers-postline.yml -R KentuckyPortableClub/KPC-Data -f prev_ref=auto
+  # (auto = the parent of the newest '2-fer bot pass' save). Not a workflow_run on kpc-fers.yml: that job is red-on-caught-error
+  # (KPC_FAIL_SAFE), and a followed job may not be (tests/test_nextround_hidden_failures_nov5.py).
     types: [completed]
   # Nov 4 PM fix bundle item 3: a chain run started by dispatch fires no workflow_run, so the chain's 'postline' job starts this
   workflow_dispatch:
     inputs:
       run_url:
         description: 'The 2-fer chain or line run to report on (set by kpc-fers-chain.yml)'
+        required: false
+        default: ''
+      prev_ref:
+        description: 'Nov 9: after a hand-started kpc-fers.yml run, the KPC-Data commit to compare against (auto = the parent of the newest 2-fer bot save; blank = the waiting-room compare as before)'
         required: false
         default: ''
 permissions:
@@ -33,6 +41,20 @@ jobs:
           repository: KentuckyPortableClub/KPC-Links
           path: links
           persist-credentials: false
+      - name: The save before a hand-started 2-fer bot run (kpc-fers.yml saves live, no waiting room)
+        # Nov 9: the newest '2-fer bot pass' commit = the new output; its parent's data/fers = the previous one (PREV_DIR)
+        if: ${{ inputs.prev_ref != '' }}
+        continue-on-error: true
+        env:
+          PREV_REF: ${{ inputs.prev_ref }}
+        run: |
+          git fetch -q --deepen=200 origin || true
+          NEW=$(git log -1 --format=%H --grep='^2-fer bot pass' -- data/fers)
+          [ "$PREV_REF" = auto ] && PREV_REF=''
+          REF=${PREV_REF:-${NEW:+$NEW^}}
+          [ -n "$REF" ] || { echo "::warning title=post-line::no 2-fer bot save found"; exit 0; }
+          mkdir -p "$RUNNER_TEMP/prev" && git archive "$REF" data/fers | tar -x -C "$RUNNER_TEMP/prev"
+          echo "PREV_DIR=$RUNNER_TEMP/prev" >> "$GITHUB_ENV"; echo "post-line compares the live data/fers with $REF"
       - name: 2-fer post-line check (read-only report)
         continue-on-error: true
         env:
