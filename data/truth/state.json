@@ -526,19 +526,19 @@
     "agree": 47,
     "handover_hints": 10,
     "no_page": 0,
-    "no_size": 24,
+    "no_size": 23,
     "off": 53,
-    "ours_unknown": 4,
+    "ours_unknown": 8,
     "parks": 205,
     "retired": 0,
-    "unsure": 20,
-    "weak": 9,
-    "with_outline": 148
+    "unsure": 22,
+    "weak": 10,
+    "with_outline": 154
    },
    "left": 0,
    "parks": 205,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-09"
   },
   "US-PA": {
    "checked": 494,
@@ -752,41 +752,37 @@
  },
  "last": {
   "areas": [
-   "US-LA"
+   "US-OK"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 88,
+   "browser": 1,
    "errors": 0,
    "for_person_urls": [
     [
-     "https://www.wlf.louisiana.gov/robots.txt",
-     "robots.txt answered 405: nothing fetched from www.wlf.louisiana.gov this run"
-    ],
-    [
-     "https://www.lastateparks.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.lastateparks.com this run"
+     "http://www.swt.usace.army.mil/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.swt.usace.army.mil this run"
     ]
    ],
-   "requests": 111,
+   "requests": 317,
    "rested": 0,
-   "robots": 2,
-   "robots_unreadable": 2,
+   "robots": 1,
+   "robots_unreadable": 1,
    "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 5,
-   "no_size": 93,
-   "ours_unknown": 1,
-   "pages_read": 100,
-   "parks": 123,
+   "handover_hints": 10,
+   "no_size": 24,
+   "ours_unknown": 8,
+   "pages_read": 293,
+   "parks": 205,
    "retired": 0,
-   "size_agree": 9,
-   "size_off": 7,
-   "size_unsure": 6,
+   "size_agree": 47,
+   "size_off": 53,
+   "size_unsure": 22,
    "skipped_fresh": 0,
-   "with_outline": 116
+   "with_outline": 154
   },
   "when": "2026-11-09"
  },
