@@ -683,22 +683,22 @@
   "US-VT": {
    "checked": 109,
    "counts": {
-    "agree": 37,
-    "handover_hints": 10,
+    "agree": 35,
+    "handover_hints": 11,
     "no_page": 0,
     "no_size": 12,
-    "off": 31,
-    "ours_unknown": 0,
+    "off": 32,
+    "ours_unknown": 2,
     "parks": 109,
     "retired": 0,
     "unsure": 12,
-    "weak": 7,
-    "with_outline": 92
+    "weak": 6,
+    "with_outline": 93
    },
    "left": 0,
    "parks": 109,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-09"
   },
   "US-WI": {
    "checked": 348,
@@ -751,42 +751,37 @@
  },
  "last": {
   "areas": [
-   "US-MA"
+   "US-VT"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 8,
-   "dropped_queued": 18,
+   "browser": 1,
    "errors": 0,
    "for_person_urls": [
     [
      "http://www.nae.usace.army.mil/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.nae.usace.army.mil this run"
-    ],
-    [
-     "https://www.mass-trails.org/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.mass-trails.org this run"
+     "robots.txt answered 403: nothing fetched from www.nae.usace.army.mil this run"
     ]
    ],
-   "requests": 566,
+   "requests": 192,
    "rested": 0,
-   "robots": 2,
-   "robots_unreadable": 2,
+   "robots": 1,
+   "robots_unreadable": 1,
    "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 3,
-   "no_size": 122,
-   "ours_unknown": 9,
-   "pages_read": 522,
-   "parks": 421,
+   "handover_hints": 11,
+   "no_size": 12,
+   "ours_unknown": 2,
+   "pages_read": 151,
+   "parks": 109,
    "retired": 0,
-   "size_agree": 73,
-   "size_off": 169,
-   "size_unsure": 37,
+   "size_agree": 35,
+   "size_off": 32,
+   "size_unsure": 12,
    "skipped_fresh": 0,
-   "with_outline": 410
+   "with_outline": 93
   },
   "when": "2026-11-09"
  },

@@ -28,7 +28,7 @@ Updated 2026-11-09. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-CT | 157 | 149 | 39 | **26** | 33 | 47 | 4 | 3 | 0 | 5 |
 | US-RI | 61 | 58 | 1 | **3** | 9 | 41 | 2 | 2 | 0 | 13 |
 | US-MA | 421 | 410 | 73 | **169** | 37 | 122 | 9 | 3 | 0 | 7 |
-| US-VT | 109 | 92 | 37 | **31** | 12 | 12 | 0 | 10 | 0 | 7 |
+| US-VT | 109 | 93 | 35 | **32** | 12 | 12 | 2 | 11 | 0 | 6 |
 | US-NH | 206 | 193 | 16 | **10** | 8 | 106 | 2 | 4 | 0 | 2 |
 | US-ME | 148 | 139 | 15 | **17** | 8 | 93 | 3 | 9 | 0 | 8 |
 | US-MD | 186 | 169 | 41 | **50** | 30 | 34 | 14 | 17 | 0 | 10 |
@@ -1925,18 +1925,19 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 
 ## US-VT
 
-**Agree:** 37 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 37 agree (second agency).
+**Agree:** 35 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 35 agree (second agency).
 
 **Size more than 15% off (our outline vs the agency):**
 
 - US-3115 Gifford Woods State Park: ours 60 ac vs agency 285 acres (= 285 ac; 79% off) · cause: agency bigger: our outline may miss a tract · [vtstateparks.com](https://vtstateparks.com/gifford.html) · “untain Club to help protect the Long Trail corridor. With this addition, the park reached its current size of 285 acres. Today, Gifford Woods contains one of th”
 - US-3143 Silver Lake State Park: ours 23 ac vs agency 84 acre (= 84 ac; 73% off) · cause: agency bigger: our outline may miss a tract · [vtstateparks.com](https://vtstateparks.com/silver.html) · “ntral Vermont attractions makes it a great place for family vacations. The park borders the northern shore of 84-acre Silver Lake. The lake offers excellent fis”
-- US-5564 Essex Nursery State Forest: ours 10 ac vs agency 29 Acres (= 29 ac; 66% off) · cause: agency bigger: our outline may miss a tract · [fpr.vermont.gov](https://fpr.vermont.gov/west-street-complex) · “e Parks Recreation State Lands Agency Home Project Learning Tree West Street Complex Essex, Chittenden County 29 Acres General Description: The West Street Comp”
 - US-5537 Lord State Forest: ours 103 ac vs agency 64 Acres (= 64 ac; 61% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [fpr.vermont.gov](https://fpr.vermont.gov/lord-ac-state-forest) · “s Recreation State Lands Agency Home Project Learning Tree Lord (A.C.) State Forest Cavendish; Windsor County 64 Acres General Description: Located off Oscarson”
 - US-5529 Mollie Beattie State Forest: ours 92 ac vs agency 203 Acres (= 203 ac; 55% off) · cause: agency bigger: our outline may miss a tract · [fpr.vermont.gov](https://fpr.vermont.gov/mollie-beattie-state-forest) · “Recreation State Lands Agency Home Project Learning Tree Mollie Beattie State Forest Grafton; Windham County 203 Acres General Description: Located in a remote ”
-- US-11966 Mount Independence State Historic Site: ours 80 ac vs agency 167.7 acres (= 167 ac; 52% off) · cause: agency bigger: our outline may miss a tract · [historicsites.vermont.gov](https://historicsites.vermont.gov/mount-independence) · “iconderoga Association. In 1961, the State of Vermont began acquiring the southern parcels of the Mount, with 167.7 acres in total by 1998. Today, history and n”
 - US-3105 Burton Island State Park: ours 122 ac vs agency 253 acre (= 253 ac; 52% off) · cause: agency bigger: our outline may miss a tract · [vtstateparks.com](https://vtstateparks.com/burton.html) · “ean up after your pets. 24 2346 26 10 13 9 8 6 5 2341 15 1 16 2 18 3 Photo Gallery Welcome Burton Island is a 253-acre park off the southwestern tip of St. Alba”
+- US-11966 Mount Independence State Historic Site: ours 83 ac vs agency 167.7 acres (= 167 ac; 51% off) · cause: agency bigger: our outline may miss a tract · [historicsites.vermont.gov](https://historicsites.vermont.gov/mount-independence) · “iconderoga Association. In 1961, the State of Vermont began acquiring the southern parcels of the Mount, with 167.7 acres in total by 1998. Today, history and n”
+- US-3124 Knight Island State Park: ours 91 ac vs agency 185 acres (= 185 ac; 51% off) · cause: agency bigger: our outline may miss a tract · [vtstateparks.com](https://vtstateparks.com/knightisland.html) · “with Burton Island and Woods Island . The State of Vermont bought Knight Island in 1990. The island is about 185 acres. It is about one mile long and nearly hal”
 - US-3126 Lake Carmi State Park: ours 713 ac vs agency 1375 acre (= 1,375 ac; 48% off) · cause: agency bigger: our outline may miss a tract · [vtstateparks.com](https://vtstateparks.com/carmi.html) · “bins. Please clean up after your pets. 24 12 10 13 9 8 6 4 11 15 1 16 18 3 Photo Gallery Welcome Image With a 1375-acre surface area, Carmi is the fourth larges”
+- US-5563 Black Turn Brook State Forest: ours 310 ac vs agency 592 Acres (= 592 ac; 48% off) · cause: agency bigger: our outline may miss a tract · [fpr.vermont.gov](https://fpr.vermont.gov/black-turn-brook-state-forest) · “s Recreation State Lands Agency Home Project Learning Tree Black Turn Brook State Forest Norton, Essex County 592 Acres General Description: Black Turn Brook St”
 - US-5532 Hapgood State Forest: ours 62 ac vs agency 118 Acres (= 118 ac; 47% off) · cause: agency bigger: our outline may miss a tract · [fpr.vermont.gov](https://fpr.vermont.gov/hapgood-state-forest) · “e Parks Recreation State Lands Agency Home Project Learning Tree Hapgood State Forest Peru; Bennington County 118 Acres General Description: The 118-acre Hapgoo”
 - US-3113 Emerald Lake State Park: ours 732 ac vs agency 500 acres (= 500 ac; 46% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [vtstateparks.com](https://vtstateparks.com/emerald.html) · “now call Emerald Lake. After Shaw died, the State purchased about 1,000 acres from his estate in 1957. About 500 acres east of US Route 7 became Emerald Lake St”
 - US-3112 Elmore State Park: ours 995 ac vs agency 700 acres (= 700 ac; 42% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [vtstateparks.com](https://vtstateparks.com/elmore.html) · “lmore to the state of Vermont. With modest means, a picnic and beach area were created. Today, with more than 700 acres, Elmore State Park has become a popular,”
@@ -1965,13 +1966,13 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 
 - US-3103 Branbury State Park: ours 47 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-3107 Camels Hump State Park: ours 24,425 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-3109 Coolidge State Park: ours 5,260 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-3111 D.A.R. State Park: ours 59 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-3116 Grand Isle State Park: ours 171 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 226 acre, no total words near it) · [vtstateparks.com](https://vtstateparks.com/grandisle.html)
 - US-3125 Knight Point State Park: ours 35 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 54 acre, no total words near it) · [vtstateparks.com](https://vtstateparks.com/knightpoint.html)
 - US-3128 Lake Shaftsbury State Park: ours 99 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-3134 Mount Philo State Park: ours 194 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-3137 North Hero State Park: ours 306 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-4590 Muckross State Park: ours 89 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 1,000 acres, no total words near it) · [vtstateparks.com](https://vtstateparks.com/muckross.html)
 - US-5541 Calvin Coolidge State Forest: ours 12,456 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-5545 Thetford Hill State Forest: ours 212 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-5553 Camels Hump State Forest: ours 2,598 ac · cause: no total-looking sentence: numbers found were parts or other units
@@ -1985,6 +1986,7 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 - US-3120 Jamaica State Park · managed by: “The West River Trail follows the river upstream for about 2.5 miles to the Ball Mountain Dam, which is managed by the U.S. Army Corps of Engineers. The West River is also a favorite spot for many fish” · owner now: U.S · [vtstateparks.com](https://vtstateparks.com/jamaica.html)
 - US-3138 Quechee State Park · transfer: “f the campground and picnic areas began later, in the spring of 1962. In 1965, the State of Vermont leased the park from the Army Corps and turned over the management and operations of the property to” · owner now: Army Corps and · [vtstateparks.com](https://vtstateparks.com/quechee.html)
 - US-3148 Townshend State Park · managed by: “to the summit of the mountain. Swimming: Swimming is available at the Townshend Dam recreation area operated by the Army Corps of Engineers. Fishing: Fishing is permitted at the park. Picnicking: Ther” · owner now: Army Corps of Engineers · [vtstateparks.com](https://vtstateparks.com/townshend.html)
+- US-4556 Appalachian Trail National Scenic Trail · managed by: “ian Mountains. Conceived in 1921, built by private citizens, and completed in 1937, today the trail is managed by the National Park Service, US Forest Service, Appalachian Trail Conservancy, numerous ” · owner now: National Park Service · [www.nps.gov](https://www.nps.gov/appa/index.htm)
 - US-5528 Townshend State Forest · managed by: “opportunities for swimming and boating on the nearby Townshend Lake Project on the West River which is managed by the U.S. Army Corps of Engineers. Townshend State Forest Recreational Trails Guide Bal” · owner now: U.S · [fpr.vermont.gov](https://fpr.vermont.gov/townshend-state-forest)
 - US-5543 Mount Carmel State Forest · transfer: “Elevation of the forest range from 2380 to 3365 feet at the summit of Mt. Carmel. While there is no deeded access to the forest it can be accessed by the New Boston Trail, a side trail to the Long Tra” · owner now: New Boston Trail · [fpr.vermont.gov](https://fpr.vermont.gov/mt-carmel-state-forest)
 - US-5555 Mount Mansfield State Forest · managed by: “managed out of two District/Regional Offices. Most of the land in the Towns of Bolton and Underhill are managed by the Essex District Office. The remainder of the State Forest is managed by the Barre ” · owner now: Essex District Of · [fpr.vermont.gov](https://fpr.vermont.gov/mt-mansfield-state-forest-0)
