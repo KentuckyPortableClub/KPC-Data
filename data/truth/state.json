@@ -63,22 +63,22 @@
   "US-CT": {
    "checked": 157,
    "counts": {
-    "agree": 52,
-    "handover_hints": 2,
+    "agree": 39,
+    "handover_hints": 3,
     "no_page": 0,
-    "no_size": 48,
-    "off": 19,
-    "ours_unknown": 0,
+    "no_size": 47,
+    "off": 26,
+    "ours_unknown": 4,
     "parks": 157,
     "retired": 0,
-    "unsure": 27,
-    "weak": 0,
-    "with_outline": 146
+    "unsure": 33,
+    "weak": 5,
+    "with_outline": 149
    },
    "left": 0,
    "parks": 157,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-09"
   },
   "US-DC": {
    "checked": 35,
@@ -749,48 +749,38 @@
  },
  "last": {
   "areas": [
-   "US-NJ"
+   "US-CT"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 46,
-   "dropped_queued": 1,
+   "browser": 2,
+   "dropped_queued": 2,
    "errors": 0,
-   "for_person": 2,
    "for_person_urls": [
     [
-     "https://dep.nj.gov/njfw/wildlife/higbee-beach-wildlife-management-area/",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://dep.nj.gov/wp-content/uploads/njfw/peaslee.pdf",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.njpalisades.org/robots.txt",
-     "robots.txt answered 202: nothing fetched from www.njpalisades.org this run"
+     "http://www.nae.usace.army.mil/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.nae.usace.army.mil this run"
     ]
    ],
-   "requests": 367,
-   "rested": 23,
-   "retry403": 2,
+   "requests": 373,
+   "rested": 0,
    "robots": 1,
    "robots_unreadable": 1,
-   "strikes": 4
+   "strikes": 0
   },
   "stat": {
    "errors": 0,
    "handover_hints": 3,
-   "no_size": 81,
-   "ours_unknown": 2,
-   "pages_read": 209,
-   "parks": 134,
+   "no_size": 47,
+   "ours_unknown": 4,
+   "pages_read": 338,
+   "parks": 157,
    "retired": 0,
-   "size_agree": 25,
-   "size_off": 3,
-   "size_unsure": 17,
+   "size_agree": 39,
+   "size_off": 26,
+   "size_unsure": 33,
    "skipped_fresh": 0,
-   "with_outline": 128
+   "with_outline": 149
   },
   "when": "2026-11-09"
  },

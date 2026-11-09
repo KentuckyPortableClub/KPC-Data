@@ -2,41 +2,44 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-CT",
  "counts": {
-  "agree": 52,
-  "handover_hints": 2,
+  "agree": 39,
+  "handover_hints": 3,
   "no_page": 0,
-  "no_size": 48,
-  "off": 19,
-  "ours_unknown": 0,
+  "no_size": 47,
+  "off": 26,
+  "ours_unknown": 4,
   "parks": 157,
   "retired": 0,
-  "unsure": 27,
-  "weak": 0,
-  "with_outline": 146
+  "unsure": 33,
+  "weak": 5,
+  "with_outline": 149
  },
  "parks": {
   "US-0228": {
-   "checked": "2026-11-01",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Stewart B. Mckinney National Wildlife Refuge",
    "official": {
-    "acres": 1000.0,
-    "as": "1,000 acres",
+    "acres": 421.0,
+    "as": "421 acre",
     "clean": false,
-    "line": "abitat for brant, scoters, American black duck and other waterfowl. Overall, the refuge encompasses well over 1,000 acres of forest, barrier beach, tidal wetland and fragile island habitats. The Salt Meadow Unit in Westbrook, the F",
-    "read": "2026-11-01",
-    "sent": "Overall, the refuge encompasses well over 1,000 acres of forest, barrier beach, tidal wetland and fragile island habitats.",
-    "url": "https://www.fws.gov/refuge/stewart_b_mckinney/",
-    "why": "part (a lake, a purchase, a campground…)"
+    "line": "ess: 600 Long Beach Blvd Stratford, CT 06615-7169 One of the largest coastal wetlands left in the state, this 421-acre unit consists of salt marsh salt marsh Salt marshes are found in tidal areas near the coast, where freshwater",
+    "read": "2026-11-09",
+    "sent": "One of the largest coastal wetlands left in the state, this 421-acre unit consists of salt marsh salt marsh",
+    "url": "https://www.fws.gov/refuge/stewart-b-mckinney/visit-us",
+    "why": "total-looking"
    },
    "ours": {
-    "acres": 1015,
+    "acres": 639,
     "dissolved": {
      "after": 1015,
      "before": 2023,
      "copies": 1,
+     "key_union": 639,
      "parts": 0,
      "records": 2,
+     "summed": 1015,
      "tracts": 1
     },
     "manager": "",
@@ -87,13 +90,13 @@
      "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 2,
+   "pct": 52,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -154,10 +157,10 @@
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-0329": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Silvio O Conte National Wildlife Refuge",
    "ours": null,
@@ -167,7 +170,7 @@
    "verdict": "no outline"
   },
   "US-0873": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": null,
@@ -188,17 +191,17 @@
    ],
    "n": "Weir Farm National Historic Site",
    "official": {
-    "acres": 71.0,
-    "as": "71 acres",
+    "acres": 60.0,
+    "as": "60 acres",
     "clean": false,
-    "line": "or plein air painting and picnicking. Woodlands and Meadows Of the 238 acres once owned by Julian Alden Weir, 71 acres are managed by the National Park Service. Part of Weir Farm National Historical Park, Weir Pond has been a re",
-    "read": "2026-11-01",
-    "sent": "Of the 238 acres once owned by Julian Alden Weir, 71 acres are managed by the National Park Service.",
-    "url": "https://www.nps.gov/wefa/learn/historyculture/places.htm",
-    "why": "history"
+    "line": "o preserve his inspiring story and work. Cora Weir Burlingham (1892-1986) Weir's youngest child Cora received 60-acres of the farm from her sister Dorothy in 1931. She was instrumental in shaping the landscape. Sperry Andrews (1",
+    "read": "2026-11-09",
+    "sent": "Weir's youngest child Cora received 60-acres of the farm from her sister Dorothy in 1931.",
+    "url": "https://www.nps.gov/wefa/learn/historyculture/people.htm",
+    "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 66,
+    "acres": 55,
     "manager": "",
     "pieces": [
      [
@@ -208,7 +211,7 @@
       "reviewed"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 17
    },
@@ -230,12 +233,12 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 7,
+   "pct": 8,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 2,
     "source": 2
    },
@@ -300,7 +303,7 @@
    "verdict": "agree"
   },
   "US-0881": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Eightmile National Wild and Scenic River",
    "ours": null,
@@ -310,7 +313,7 @@
    "verdict": "no outline"
   },
   "US-0882": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Farmington National Wild and Scenic River",
    "ours": null,
@@ -320,21 +323,22 @@
    "verdict": "no outline"
   },
   "US-10073": {
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 60 acres, no total words near it)",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Whittemore Glen State Park Scenic Reserve",
    "official": {
-    "acres": 95.0,
-    "as": "95 acres",
+    "acres": 60.0,
+    "as": "60 acres",
     "clean": false,
-    "line": "r 4.9 miles. The entrance is on the left. Fee: There is no parking fee at this park. Bolton Notch State Park (95 acres) - Bolton Activities: Hiking, Rock Climbing Location: At the junction of Route 44 and Route 6 in Bolton. Head",
-    "read": "2026-11-01",
-    "sent": "Bolton Notch State Park (95 acres) - Bolton",
+    "line": "f Route 154 and turn right on Dish Mill Road. Fee: There is no parking fee at this park. Hopemead State Park (60 acres) - Bozrah/Montville. Learn more about this park on the new CTParks.com page. Activities: Fishing, Hiking Loca",
+    "read": "2026-11-09",
+    "sent": "Hopemead State Park (60 acres) - Bozrah/Montville.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 88,
+    "acres": 48,
     "family_fold": "layers {'sgcta': 88, 'padus': 7}: one land in 2 layers, the sgcta copy used (7 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -345,7 +349,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -379,13 +383,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 7,
+   "pct": 20,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
-    "size": 2,
+    "pin": 1,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -464,11 +468,11 @@
    ],
    "t": "Scenic Reserve",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-10075": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 401 acres, no total words near it)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Nepaug State Forest",
    "official": {
@@ -476,19 +480,21 @@
     "as": "401 acres",
     "clean": false,
     "line": "l-off for the White Trail on the right. Fee: There is no parking fee at this forest. Beaver Brook State Park (401 acres) - Chaplin, Windham Activities: Hunting Services: Walk-in Park (Undeveloped) Location: From the junction of R",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Beaver Brook State Park (401 acres) - Chaplin, Windham",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests#Nepaug",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 1555,
+    "acres": 1864,
     "dissolved": {
      "after": 1555,
      "before": 3219,
      "copies": 0,
+     "key_union": 1864,
      "parts": 14,
      "records": 17,
+     "summed": 1555,
      "tracts": 3
     },
     "manager": "",
@@ -546,7 +552,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 288,
+   "pct": 365,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -634,18 +640,20 @@
    "verdict": "unsure"
   },
   "US-10079": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Pootatuck State Forest",
    "official": null,
    "ours": {
-    "acres": 1099,
+    "acres": 1194,
     "dissolved": {
      "after": 1099,
      "before": 3186,
      "copies": 1,
+     "key_union": 1194,
      "parts": 4,
      "records": 7,
+     "summed": 1099,
      "tracts": 2
     },
     "manager": "",
@@ -696,13 +704,13 @@
    "verdict": "no size on page"
   },
   "US-10086": {
-   "cause": "a number 7 parks share from one page (401 ac): an agency total, not this park",
-   "checked": "2026-11-01",
+   "cause": "a number 5 parks share from one page (401 ac): an agency total, not this park",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Algonquin State Forest",
    "official": null,
    "ours": {
-    "acres": 2473,
+    "acres": 3264,
     "dissolved": {
      "after": 2783,
      "before": 7905,
@@ -713,8 +721,10 @@
      },
      "family_fold": 310,
      "family_used": "sgcta",
+     "key_union": 3264,
      "parts": 7,
      "records": 14,
+     "summed": 2473,
      "tracts": 6
     },
     "family_fold": "layers {'sgcta': 2473, 'padus': 310}: one land in 2 layers, the sgcta copy used (310 ac of copies not added)",
@@ -850,27 +860,29 @@
    "verdict": "unsure"
   },
   "US-10092": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Seaside State Park",
    "official": {
-    "acres": 31.0,
-    "as": "31 acres",
+    "acres": 25.0,
+    "as": "25 acres",
     "clean": false,
-    "line": "nnecticut Department of Energy & Environmental Protection Other State Parks and Forests Above All State Park (31 acres) Warren/Litchfield Services: Walk-in Park (Undeveloped) Location: From the junction of Route 45 and Route 341",
-    "read": "2026-11-01",
-    "sent": "Above All State Park (31 acres) Warren/Litchfield",
+    "line": "ssion.) Fee: There is no parking fee at this park. Bolton Notch State Park Map Brainard Homestead State Park (25 acres) - East Haddam. Learn more about this park on the new CTParks.com page. Activities: Bird Watching, Field Spor",
+    "read": "2026-11-09",
+    "sent": "Brainard Homestead State Park (25 acres) - East Haddam.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 32,
+    "acres": 22,
     "dissolved": {
      "after": 32,
      "before": 64,
      "copies": 1,
+     "key_union": 22,
      "parts": 0,
      "records": 2,
+     "summed": 32,
      "tracts": 1
     },
     "manager": "",
@@ -917,7 +929,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 3,
+   "pct": 12,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -1005,7 +1017,7 @@
    "verdict": "agree"
   },
   "US-10656": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Barn Island Wildlife Management Area",
    "official": {
@@ -1013,13 +1025,13 @@
     "as": "1022 acres",
     "clean": false,
     "line": "500 0 1,500 3,000 4,500 6,000750 Feet 06/2013 Barn Island Trails Map Aerial Photo-2012 Acreage: Approximately 1022 acres",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Acreage: Approximately 1022 acres",
     "url": "https://portal.ct.gov/-/media/DEEP/stateparks/maps/BarnIslandTrail2012pdf.pdf",
     "why": "a map label (no sentence)"
    },
    "ours": {
-    "acres": 1039,
+    "acres": 1168,
     "dissolved": {
      "after": 1583,
      "before": 2846,
@@ -1030,8 +1042,10 @@
      },
      "family_fold": 544,
      "family_used": "sgctc",
+     "key_union": 1168,
      "parts": 6,
      "records": 11,
+     "summed": 1039,
      "tracts": 5
     },
     "family_fold": "layers {'sgctc': 1039, 'padus': 544}: one land in 2 layers, the sgctc copy used (544 ac of copies not added)",
@@ -1063,7 +1077,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 2,
+   "pct": 14,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -1088,12 +1102,12 @@
    "verdict": "agree"
   },
   "US-10952": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Paugussett State Forest",
    "official": null,
    "ours": {
-    "acres": 2127,
+    "acres": 2414,
     "dissolved": {
      "after": 3261,
      "before": 6222,
@@ -1104,8 +1118,10 @@
      },
      "family_fold": 1134,
      "family_used": "sgcta",
+     "key_union": 2414,
      "parts": 7,
      "records": 13,
+     "summed": 2127,
      "tracts": 6
     },
     "family_fold": "layers {'sgcta': 2127, 'padus': 1134}: one land in 2 layers, the sgcta copy used (1,134 ac of copies not added)",
@@ -1119,7 +1135,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 10
    },
@@ -1138,10 +1154,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -1151,7 +1167,7 @@
    "verdict": "no size on page"
   },
   "US-10961": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mattatuck State Forest",
    "official": {
@@ -1159,13 +1175,13 @@
     "as": "4,510 acres",
     "clean": true,
     "line": "vation has been well respected, for in the 85 years since his original gift, Mattatuck has grown to encompass 4,510 acres in 20 different parcels within the towns of Waterbury, Plymouth, Thomaston, Watertown, Litchfield, and Harwin",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Roberts&rsquo;s vision of land conservation has been well respected, for in the 85 years since his original gift, Mattatuck has grown to encompass 4,510 acres in 20 different parcels within the towns of Waterbury, Plymouth, Thomaston, Watertown, Litchfield, and Harwinton.",
     "url": "https://portal.ct.gov/deep/state-parks/forests/mattatuck-state-forest/overview",
     "why": "clean total"
    },
    "ours": {
-    "acres": 4491,
+    "acres": 5010,
     "dissolved": {
      "after": 7081,
      "before": 13401,
@@ -1176,8 +1192,10 @@
      },
      "family_fold": 2590,
      "family_used": "sgctc",
+     "key_union": 5010,
      "parts": 16,
      "records": 24,
+     "summed": 4491,
      "tracts": 7
     },
     "family_fold": "layers {'sgctc': 4491, 'padus': 2590}: one land in 2 layers, the sgctc copy used (2,590 ac of copies not added)",
@@ -1219,7 +1237,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 0,
+   "pct": 11,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -1271,7 +1289,7 @@
    "verdict": "agree"
   },
   "US-10962": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Babcock Pond WMA Wildlife Management Area",
    "official": {
@@ -1279,7 +1297,7 @@
     "as": "1513 acres",
     "clean": false,
     "line": "t. - Hartford, CT 06106 - www.ct.gov/deep Babcock Pond WMA Location: Colchester and East Haddam Description: 1513 acres. Open to small game, waterfowl, pheasant, deer and turkey hunting. Access: Specially designed access trails f",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Description: 1513 acres.",
     "url": "https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/BabcockPondPheasantpdf.pdf",
     "why": "a map label (no sentence)"
@@ -1310,7 +1328,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 7
    },
@@ -1319,6 +1337,122 @@
     {
      "status": "ok",
      "url": "https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/BabcockPondPheasantpdf.pdf",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": 0,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 1513.0,
+     "as": "1513 acres",
+     "clean": false,
+     "line": "t. - Hartford, CT 06106 - www.ct.gov/deep Babcock Pond WMA Location: Colchester and East Haddam Description: 1513 acres. Open to small game, waterfowl, pheasant, deer and turkey hunting. Access: Specially designed access trails f",
+     "total_like": false,
+     "url": "https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/BabcockPondPheasantpdf.pdf",
+     "why": "a map label (no sentence)"
+    }
+   ],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-11013": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Bishop Swamp WMA Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 1205,
+    "family_fold": "layers {'sgctc': 1035, 'padus': 945, 'sgcta': 719}: one land in 3 layers, the sgctc copy used (1,664 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgctc16",
+      "Bishop Swamp WMA",
+      1035,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 6
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok, no readable text",
+     "url": "https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map51.pdf",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-11712": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Cromwell Meadows WMA Wildlife Management Area",
+   "official": {
+    "acres": 548.0,
+    "as": "548 acres",
+    "clean": false,
+    "line": "t. - Hartford, CT 06106 - www.ct.gov/dep Cromwell Meadows WMA Location: Cromwell and Middletown Description: 548 acres; mostly marsh, level ditching and some open upland area. Open for small game, waterfowl, pheasant, turkey and",
+    "read": "2026-11-09",
+    "sent": "Description: 548 acres;",
+    "url": "https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map110.pdf",
+    "why": "a map label (no sentence)"
+   },
+   "ours": {
+    "acres": 548,
+    "family_fold": "layers {'sgctc': 548, 'sgcta': 504}: one land in 2 layers, the sgctc copy used (504 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgctc125",
+      "Cromwell Meadows WMA",
+      548,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map110.pdf",
      "why": "the park's page (data/parkinfo)"
     },
     {
@@ -1339,122 +1473,6 @@
    },
    "sizes": [
     {
-     "acres": 1513.0,
-     "as": "1513 acres",
-     "clean": false,
-     "line": "t. - Hartford, CT 06106 - www.ct.gov/deep Babcock Pond WMA Location: Colchester and East Haddam Description: 1513 acres. Open to small game, waterfowl, pheasant, deer and turkey hunting. Access: Specially designed access trails f",
-     "total_like": false,
-     "url": "https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/BabcockPondPheasantpdf.pdf",
-     "why": "a map label (no sentence)"
-    }
-   ],
-   "t": "Wildlife Management Area",
-   "ver": 15,
-   "verdict": "agree"
-  },
-  "US-11013": {
-   "checked": "2026-11-01",
-   "handover": [],
-   "n": "Bishop Swamp WMA Wildlife Management Area",
-   "official": null,
-   "ours": {
-    "acres": 1035,
-    "family_fold": "layers {'sgctc': 1035, 'padus': 945, 'sgcta': 719}: one land in 3 layers, the sgctc copy used (1,664 ac of copies not added)",
-    "manager": "",
-    "pieces": [
-     [
-      "sgctc16",
-      "Bishop Swamp WMA",
-      1035,
-      "name"
-     ]
-    ],
-    "pin": "inside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 6
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "ok, no readable text",
-     "url": "https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map51.pdf",
-     "why": "the park's page (data/parkinfo)"
-    },
-    {
-     "other_unit": true,
-     "status": "ok",
-     "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
-     "why": "rules page (documents bot)"
-    }
-   ],
-   "pct": null,
-   "score": 7,
-   "score_parts": {
-    "name": 2,
-    "pin": 2,
-    "size": 1,
-    "source": 2
-   },
-   "sizes": [],
-   "t": "Wildlife Management Area",
-   "ver": 15,
-   "verdict": "no size on page"
-  },
-  "US-11712": {
-   "checked": "2026-11-01",
-   "handover": [],
-   "n": "Cromwell Meadows WMA Wildlife Management Area",
-   "official": {
-    "acres": 548.0,
-    "as": "548 acres",
-    "clean": false,
-    "line": "t. - Hartford, CT 06106 - www.ct.gov/dep Cromwell Meadows WMA Location: Cromwell and Middletown Description: 548 acres; mostly marsh, level ditching and some open upland area. Open for small game, waterfowl, pheasant, turkey and",
-    "read": "2026-11-01",
-    "sent": "Description: 548 acres;",
-    "url": "https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map110.pdf",
-    "why": "a map label (no sentence)"
-   },
-   "ours": {
-    "acres": 548,
-    "family_fold": "layers {'sgctc': 548, 'sgcta': 504}: one land in 2 layers, the sgctc copy used (504 ac of copies not added)",
-    "manager": "",
-    "pieces": [
-     [
-      "sgctc125",
-      "Cromwell Meadows WMA",
-      548,
-      "name"
-     ]
-    ],
-    "pin": "just outside",
-    "src": "",
-    "unknown_pieces": 0
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map110.pdf",
-     "why": "the park's page (data/parkinfo)"
-    },
-    {
-     "other_unit": true,
-     "status": "ok",
-     "url": "https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail-use-information",
-     "why": "rules page (documents bot)"
-    }
-   ],
-   "pct": 0,
-   "same_agency": false,
-   "score": 7,
-   "score_parts": {
-    "name": 2,
-    "pin": 1,
-    "size": 2,
-    "source": 2
-   },
-   "sizes": [
-    {
      "acres": 548.0,
      "as": "548 acres",
      "clean": false,
@@ -1469,7 +1487,8 @@
    "verdict": "agree"
   },
   "US-12092": {
-   "checked": "2026-11-01",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Nipmuck State Forest",
    "official": {
@@ -1477,13 +1496,13 @@
     "as": "9,400 acres",
     "clean": true,
     "line": "been purchased in the Stickney Hill area of Union in 1905 for $3.57 an acre. Today, Nipmuck totals more than 9,400 acres. This rugged, remote forest characteristic of Connecticut’s Last Green Valley lies within one of the largest",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Today, Nipmuck totals more than 9,400 acres.",
     "url": "https://portal.ct.gov/deep/state-parks/forests/nipmuck-state-forest-bigelow-hollow-state-park",
     "why": "clean total"
    },
    "ours": {
-    "acres": 9546,
+    "acres": 11341,
     "dissolved": {
      "after": 17062,
      "before": 28673,
@@ -1494,8 +1513,10 @@
      },
      "family_fold": 7516,
      "family_used": "sgctc",
+     "key_union": 11341,
      "parts": 20,
      "records": 52,
+     "summed": 9546,
      "tracts": 29
     },
     "family_fold": "layers {'sgctc': 9546, 'padus': 7516}: one land in 2 layers, the sgctc copy used (7,516 ac of copies not added)",
@@ -1509,7 +1530,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 56
    },
@@ -1521,13 +1542,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 2,
+   "pct": 21,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 2,
+    "pin": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -1579,16 +1600,16 @@
    ],
    "t": "State Forest",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-12459": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Housatonic River Southern Fields Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 585,
+    "acres": 659,
     "family_fold": "layers {'sgcta': 585, 'sgctc': 490}: one land in 2 layers, the sgcta copy used (490 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -1641,21 +1662,13 @@
    "verdict": "unsure"
   },
   "US-12460": {
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Suffield Wildlife Management Area",
-   "official": {
-    "acres": 265.0,
-    "as": "265 acres",
-    "clean": false,
-    "line": "Protection - 79 Elm St. - Hartford, CT 06106 - www.ct.gov/deep Suffield WMA Location: Suffield Description: 265 acres. Designated deer and fall turkey bowhunting area, no firearms deer hunting allowed. Also open to firearms: p",
-    "read": "2026-11-01",
-    "sent": "Description: 265 acres.",
-    "url": "https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map9157.pdf?rev=dc17cc1a159a47cab6f8954c612be46e&hash=53CE9D4D325155830B490A012A401CD0",
-    "why": "a map label (no sentence)"
-   },
+   "official": null,
    "ours": {
-    "acres": 265,
+    "acres": 160,
     "family_fold": "layers {'sgctc': 265, 'sgcta': 195}: one land in 2 layers, the sgctc copy used (195 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -1684,13 +1697,12 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 0,
-   "same_agency": false,
-   "score": 8,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -1706,15 +1718,15 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-12604": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Meshomasic State Forest",
    "official": null,
    "ours": {
-    "acres": 9665,
+    "acres": 12479,
     "dissolved": {
      "after": 17315,
      "before": 27725,
@@ -1725,8 +1737,10 @@
      },
      "family_fold": 7650,
      "family_used": "sgctc",
+     "key_union": 12479,
      "parts": 18,
      "records": 25,
+     "summed": 9665,
      "tracts": 7
     },
     "family_fold": "layers {'sgctc': 9665, 'padus': 7650}: one land in 2 layers, the sgctc copy used (7,650 ac of copies not added)",
@@ -1772,12 +1786,12 @@
    "verdict": "no size on page"
   },
   "US-12620": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Old New-Gate Prison & Copper Mine Historical Reserve",
    "official": null,
    "ours": {
-    "acres": 45,
+    "acres": 32,
     "manager": "",
     "pieces": [
      [
@@ -1825,18 +1839,20 @@
    "verdict": "no size on page"
   },
   "US-12628": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Sessions Woods Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 772,
+    "acres": 657,
     "dissolved": {
      "after": 772,
      "before": 2316,
      "copies": 1,
+     "key_union": 657,
      "parts": 2,
      "records": 4,
+     "summed": 772,
      "tracts": 1
     },
     "manager": "",
@@ -1887,7 +1903,7 @@
   },
   "US-12777": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Paugnut State Forest",
    "official": {
@@ -1895,13 +1911,13 @@
     "as": "1,200 acres",
     "clean": true,
     "line": "ntral Torrington and abut Burr Pond and Sunny Brook state parks. The main section of Paugnut totals more than 1,200 acres and is home to the 2.1 mile John Muir Trail which connects the two parks via the forest. Content last updated",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The main section of Paugnut totals more than 1,200 acres and is home to the 2.1 mile John Muir Trail which connects the two parks via the forest.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Forests/Paugnut-State-Forest",
-    "why": "clean total"
+    "why": "clean total; the agency's pages disagree: another of its pages says 1,702 acres (that one matches our outline)"
    },
    "ours": {
-    "acres": 1960,
+    "acres": 1836,
     "dissolved": {
      "after": 3164,
      "before": 5128,
@@ -1912,8 +1928,10 @@
      },
      "family_fold": 1204,
      "family_used": "sgctc",
+     "key_union": 1836,
      "parts": 6,
      "records": 12,
+     "summed": 1960,
      "tracts": 6
     },
     "family_fold": "layers {'sgctc': 1960, 'padus': 1204}: one land in 2 layers, the sgctc copy used (1,204 ac of copies not added)",
@@ -1945,7 +1963,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 63,
+   "pct": 53,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -1979,7 +1997,7 @@
    "verdict": "off"
   },
   "US-13483": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Humaston Brook State Park",
    "official": {
@@ -1987,13 +2005,13 @@
     "as": "141 acres",
     "clean": false,
     "line": "ed area on west side of road. Fee: There is no parking fee at this park. Trail Map Humaston Brook State Park (141 acres) - Litchfield Activities: Fishing, Hiking Services: Undeveloped Location: From Route 254 in Northfield, take",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Humaston Brook State Park (141 acres) - Litchfield",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 148,
+    "acres": 131,
     "family_fold": "layers {'sgcta': 148, 'padus': 17}: one land in 2 layers, the sgcta copy used (17 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2004,7 +2022,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -2023,12 +2041,12 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 5,
+   "pct": 7,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 2,
     "source": 2
    },
@@ -2111,12 +2129,12 @@
    "verdict": "agree"
   },
   "US-13487": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Seth Low Pierrepont State Park",
    "official": null,
    "ours": {
-    "acres": 310,
+    "acres": 269,
     "manager": "",
     "pieces": [
      [
@@ -2168,21 +2186,21 @@
    "verdict": "no size on page"
   },
   "US-1645": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Above All State Park",
    "official": {
-    "acres": 25.0,
-    "as": "25 acres",
+    "acres": 19.0,
+    "as": "19 acres",
     "clean": false,
-    "line": "ssion.) Fee: There is no parking fee at this park. Bolton Notch State Park Map Brainard Homestead State Park (25 acres) - East Haddam. Learn more about this park on the new CTParks.com page. Activities: Bird Watching, Field Spor",
-    "read": "2026-11-01",
-    "sent": "Brainard Homestead State Park (25 acres) - East Haddam.",
+    "line": "ad). Park on the right by the open fields. Fee: There is no parking fee at this park. Dart Island State Park (19 acres) - Middletown Activities: Bird Watching, Boating, Fishing Location: In the Connecticut river in Middletown; A",
+    "read": "2026-11-09",
+    "sent": "Dart Island State Park (19 acres) - Middletown",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 24,
+    "acres": 20,
     "family_fold": "layers {'sgcta': 24, 'padus': 23}: one land in 2 layers, the sgcta copy used (23 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2212,7 +2230,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 4,
+   "pct": 5,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -2300,7 +2318,7 @@
    "verdict": "agree"
   },
   "US-1646": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Beaver Brook State Park",
    "official": {
@@ -2308,7 +2326,7 @@
     "as": "401 acres",
     "clean": false,
     "line": "l-off for the White Trail on the right. Fee: There is no parking fee at this forest. Beaver Brook State Park (401 acres) - Chaplin, Windham Activities: Hunting Services: Walk-in Park (Undeveloped) Location: From the junction of R",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Beaver Brook State Park (401 acres) - Chaplin, Windham",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
     "why": "total-looking"
@@ -2340,7 +2358,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 7
    },
@@ -2361,10 +2379,10 @@
    ],
    "pct": 0,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 2,
     "source": 2
    },
@@ -2447,7 +2465,7 @@
    "verdict": "agree"
   },
   "US-1647": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Bennett's Pond State Park",
    "official": null,
@@ -2471,7 +2489,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 4
    },
@@ -2490,10 +2508,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -2503,8 +2521,7 @@
    "verdict": "no size on page"
   },
   "US-1648": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 419 acres, no total words near it)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Bigelow Hollow State Park",
    "official": {
@@ -2512,19 +2529,21 @@
     "as": "419 acres",
     "clean": false,
     "line": "ion, nature, and solitude. This rugged, remote forest characteristic of Connecticut’s Last Green Valley holds 419 acres of open water, including the secluded 97-acre Breakneck Pond for which the Block is named, the natural 25-acr",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "This rugged, remote forest characteristic of Connecticut’s Last Green Valley holds 419 acres of open water, including the secluded 97-acre Breakneck Pond for which the Block is named, the natural 25-acre Bigelow Pond, whose waters stem from the 297-acre Mashapaug Lake.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Bigelow-Hollow-State-Park-Nipmuck-State-Forest",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 527,
+    "acres": 367,
     "dissolved": {
      "after": 527,
      "before": 1052,
      "copies": 1,
+     "key_union": 367,
      "parts": 3,
      "records": 6,
+     "summed": 527,
      "tracts": 2
     },
     "manager": "",
@@ -2555,13 +2574,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 26,
+   "pct": 12,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -2640,16 +2659,16 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-1649": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Black Rock State Park",
    "official": null,
    "ours": {
-    "acres": 803,
+    "acres": 655,
     "family_fold": "layers {'padus': 803, 'sgcta': 479, 'sgctc': 400}: one land in 3 layers, the padus copy used (879 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2701,7 +2720,7 @@
      "why": "about / history page of the park's site"
     },
     {
-     "status": "HTTP 403",
+     "status": "robots-unreadable",
      "url": "http://www.nae.usace.army.mil/Portals/74/docs/Recreation/BRL/BRLRecMap.pdf",
      "why": "official map (parkinfo-web)"
     },
@@ -2736,21 +2755,13 @@
    "verdict": "unsure"
   },
   "US-1650": {
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Bluff Point State Park",
-   "official": {
-    "acres": 800.0,
-    "as": "800 acre",
-    "clean": false,
-    "line": "ing trails, coupled with spectacular wildlife viewing. Jutting out into the waters of Long Island Sound, this 800-acre wooded peninsula combines coastal woodlands, beach and dune grasslands, coastal plain ponds, coastal bluff, t",
-    "read": "2026-11-01",
-    "sent": "Jutting out into the waters of Long Island Sound, this 800-acre wooded peninsula combines coastal woodlands, beach and dune grasslands, coastal plain ponds, coastal bluff, tidal wetlands, intertidal mud flats, and offshore eelgrass beds.",
-    "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Bluff-Point-State-Park",
-    "why": "part (a lake, a purchase, a campground…)"
-   },
+   "official": null,
    "ours": {
-    "acres": 689,
+    "acres": 1167,
     "family_fold": "layers {'sgcta': 689, 'padus': 455}: one land in 2 layers, the sgcta copy used (455 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2779,13 +2790,12 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 14,
-   "same_agency": false,
-   "score": 8,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -2801,24 +2811,24 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-1651": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Bolton Notch State Park",
    "official": {
-    "acres": 141.0,
-    "as": "141 acres",
+    "acres": 95.0,
+    "as": "95 acres",
     "clean": false,
-    "line": "ed area on west side of road. Fee: There is no parking fee at this park. Trail Map Humaston Brook State Park (141 acres) - Litchfield Activities: Fishing, Hiking Services: Undeveloped Location: From Route 254 in Northfield, take",
-    "read": "2026-11-01",
-    "sent": "Humaston Brook State Park (141 acres) - Litchfield",
+    "line": "r 4.9 miles. The entrance is on the left. Fee: There is no parking fee at this park. Bolton Notch State Park (95 acres) - Bolton Activities: Hiking, Rock Climbing Location: At the junction of Route 44 and Route 6 in Bolton. Head",
+    "read": "2026-11-09",
+    "sent": "Bolton Notch State Park (95 acres) - Bolton",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
-    "why": "no total words near it"
+    "why": "total-looking"
    },
    "ours": {
-    "acres": 128,
+    "acres": 92,
     "dissolved": {
      "after": 182,
      "before": 209,
@@ -2829,8 +2839,10 @@
      },
      "family_fold": 54,
      "family_used": "sgcta",
+     "key_union": 92,
      "parts": 3,
      "records": 7,
+     "summed": 128,
      "tracts": 4
     },
     "family_fold": "layers {'sgcta': 128, 'padus': 54}: one land in 2 layers, the sgcta copy used (54 ac of copies not added)",
@@ -2869,7 +2881,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 9,
+   "pct": 3,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -2957,21 +2969,21 @@
    "verdict": "agree"
   },
   "US-1652": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Brainard Homestead State Park",
    "official": {
-    "acres": 31.0,
-    "as": "31 acres",
+    "acres": 19.0,
+    "as": "19 acres",
     "clean": false,
-    "line": "nnecticut Department of Energy & Environmental Protection Other State Parks and Forests Above All State Park (31 acres) Warren/Litchfield Services: Walk-in Park (Undeveloped) Location: From the junction of Route 45 and Route 341",
-    "read": "2026-11-01",
-    "sent": "Above All State Park (31 acres) Warren/Litchfield",
+    "line": "ad). Park on the right by the open fields. Fee: There is no parking fee at this park. Dart Island State Park (19 acres) - Middletown Activities: Bird Watching, Boating, Fishing Location: In the Connecticut river in Middletown; A",
+    "read": "2026-11-09",
+    "sent": "Dart Island State Park (19 acres) - Middletown",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 29,
+    "acres": 17,
     "manager": "",
     "pieces": [
      [
@@ -3000,7 +3012,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 6,
+   "pct": 11,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -3088,12 +3100,12 @@
    "verdict": "agree"
   },
   "US-1653": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Burr Pond State Park",
    "official": null,
    "ours": {
-    "acres": 461,
+    "acres": 282,
     "family_fold": "layers {'sgcta': 453, 'padus': 461}: one land in 2 layers, the padus copy used (453 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -3110,7 +3122,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -3123,10 +3135,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -3136,12 +3148,12 @@
    "verdict": "no size on page"
   },
   "US-1654": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Camp Columbia State Park",
    "official": null,
    "ours": {
-    "acres": 599,
+    "acres": 405,
     "family_fold": "layers {'padus': 599, 'sgcta': 72}: one land in 2 layers, the padus copy used (72 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -3196,12 +3208,12 @@
    "verdict": "no size on page"
   },
   "US-1655": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Campbell Falls State Park",
    "official": null,
    "ours": {
-    "acres": 140,
+    "acres": 109,
     "family_fold": "layers {'sgcta': 140, 'padus': 129}: one land in 2 layers, the sgcta copy used (129 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -3212,7 +3224,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 5
    },
@@ -3241,10 +3253,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -3254,19 +3266,24 @@
    "verdict": "no size on page"
   },
   "US-1656": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Chatfield Hollow State Park",
    "official": null,
    "ours": {
-    "acres": 399,
-    "family_fold": "layers {'sgcta': 399, 'padus': 169}: one land in 2 layers, the sgcta copy used (169 ac of copies not added)",
+    "acres": 1032,
     "manager": "",
     "pieces": [
      [
-      "sgcta4113",
-      "Chatfield Hollow State Park",
-      399,
+      54376,
+      "Chatfield Hollow State Park (Old Forest Management Area)",
+      156,
+      "name"
+     ],
+     [
+      52323,
+      "Chatfield Hollow State Park (Old Forest Management Area",
+      13,
       "name"
      ]
     ],
@@ -3301,7 +3318,7 @@
    "verdict": "no size on page"
   },
   "US-1657": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Collis P. Huntington State Park",
    "official": {
@@ -3309,7 +3326,7 @@
     "as": "1,017 acre",
     "clean": false,
     "line": "res of bears and wolves greet you as you enter the peaceful sanctuary of Collis P. Huntington State Park. The 1,017-acre park spreads across carefully preserved open fields and dense woodlands and features five ponds, a lagoon, 15",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The 1,017-acre park spreads across carefully preserved open fields and dense woodlands and features five ponds, a lagoon, 15-acre Lake Hopewell, and ten miles of trails, including the Aspectuck Valley Trail which leads to the Centennial Watershed State Forest.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Collis-P-Huntington-State-Park",
     "why": "part (a lake, a purchase, a campground…)"
@@ -3334,7 +3351,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 8
    },
@@ -3354,10 +3371,10 @@
    ],
    "pct": 3,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 2,
     "source": 2
    },
@@ -3386,12 +3403,12 @@
    "verdict": "agree"
   },
   "US-1658": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Connecticut Valley Railroad State Park",
    "official": null,
    "ours": {
-    "acres": 155,
+    "acres": 1449,
     "family_fold": "layers {'sgcta': 148, 'padus': 155}: one land in 2 layers, the padus copy used (148 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -3458,7 +3475,7 @@
    "verdict": "no size on page"
   },
   "US-1659": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Dart Island State Park",
    "official": {
@@ -3466,7 +3483,7 @@
     "as": "19 acres",
     "clean": false,
     "line": "ad). Park on the right by the open fields. Fee: There is no parking fee at this park. Dart Island State Park (19 acres) - Middletown Activities: Bird Watching, Boating, Fishing Location: In the Connecticut river in Middletown; A",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Dart Island State Park (19 acres) - Middletown",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
     "why": "total-looking"
@@ -3589,22 +3606,15 @@
    "verdict": "agree"
   },
   "US-1660": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Day Pond State Park",
    "official": null,
    "ours": {
-    "acres": 183,
+    "acres": 0,
     "manager": "",
-    "pieces": [
-     [
-      "sgcta4115",
-      "Day Pond State Park",
-      183,
-      "name"
-     ]
-    ],
-    "pin": "inside",
+    "pieces": [],
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 1
    },
@@ -3622,20 +3632,21 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 5,
    "score_parts": {
-    "name": 2,
-    "pin": 2,
+    "name": 1,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
    "sizes": [],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "ours unknown"
   },
   "US-1661": {
-   "checked": "2026-11-01",
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Dennis Hill State Park",
    "official": {
@@ -3643,19 +3654,21 @@
     "as": "240 acre",
     "clean": false,
     "line": "e all the way to Haystack Mountain, Mount Greylock, the Green Mountains, and even parts of New Hampshire. The 240-acre estate of Dennis Hill State Park was gifted to the State of Connecticut in 1935 by Dr. Frederic Shepard Denni",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The 240-acre estate of Dennis Hill State Park was gifted to the State of Connecticut in 1935 by Dr.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Dennis-Hill-State-Park",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 242,
+    "acres": 143,
     "dissolved": {
      "after": 242,
      "before": 480,
      "copies": 1,
+     "key_union": 143,
      "parts": 0,
      "records": 2,
+     "summed": 242,
      "tracts": 1
     },
     "manager": "",
@@ -3686,13 +3699,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 1,
+   "pct": 40,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -3708,15 +3721,15 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-1662": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Devil's Hopyard State Park",
    "official": null,
    "ours": {
-    "acres": 891,
+    "acres": 1096,
     "family_fold": "layers {'sgcta': 891, 'padus': 633}: one land in 2 layers, the sgcta copy used (633 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -3753,12 +3766,12 @@
    "verdict": "no size on page"
   },
   "US-1663": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Dinosaur State Park",
    "official": null,
    "ours": {
-    "acres": 82,
+    "acres": 67,
     "family_fold": "layers {'sgcta': 82, 'padus': 39}: one land in 2 layers, the sgcta copy used (39 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -3802,7 +3815,7 @@
   },
   "US-1664": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Eagle Landing State Park",
    "official": {
@@ -3810,7 +3823,7 @@
     "as": "255,000 acres",
     "clean": false,
     "line": "WELCOME TO CONNECTICUT STATE PARKS & FORESTS FIND A PARK With 142 state parks and forests covering more than 255,000 acres of pristine coastline, rolling hills, and enchanting forests, Connecticut’s natural beauty, historical treasu",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "With 142 state parks and forests covering more than 255,000 acres of pristine coastline, rolling hills, and enchanting forests, Connecticut’s natural beauty, historical treasures, and adventure are always in reach.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Eagle-Landing-State-Park",
     "why": "total-looking"
@@ -3870,7 +3883,7 @@
   },
   "US-1665": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Farm River State Park",
    "official": {
@@ -3878,13 +3891,13 @@
     "as": "255,000 acres",
     "clean": false,
     "line": "WELCOME TO CONNECTICUT STATE PARKS & FORESTS FIND A PARK With 142 state parks and forests covering more than 255,000 acres of pristine coastline, rolling hills, and enchanting forests, Connecticut’s natural beauty, historical treasu",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "With 142 state parks and forests covering more than 255,000 acres of pristine coastline, rolling hills, and enchanting forests, Connecticut’s natural beauty, historical treasures, and adventure are always in reach.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Farm-River-State-Park",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 61,
+    "acres": 66,
     "family_fold": "layers {'sgcta': 61, 'padus': 15}: one land in 2 layers, the sgcta copy used (15 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -3938,12 +3951,12 @@
    "verdict": "off"
   },
   "US-1666": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Fort Griswold Battlefield State Park",
    "official": null,
    "ours": {
-    "acres": 17,
+    "acres": 12,
     "manager": "",
     "pieces": [
      [
@@ -3985,12 +3998,12 @@
    "verdict": "no size on page"
   },
   "US-1667": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Fort Trumbull State Park",
    "official": null,
    "ours": {
-    "acres": 16,
+    "acres": 11,
     "family_fold": "layers {'sgcta': 16, 'padus': 4}: one land in 2 layers, the sgcta copy used (4 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4033,7 +4046,7 @@
    "verdict": "no size on page"
   },
   "US-1668": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Gardner Lake State Park",
    "official": {
@@ -4041,19 +4054,21 @@
     "as": "528 acre",
     "clean": false,
     "line": "orests Skip to main content Park Finder Park Maps Gardner Lake State Park Salem, CT Best known as home to the 528-acre Gardner Lake, this peaceful lake park is a popular day spot among fishing, boating, and swimming enthusiasts.",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Best known as home to the 528-acre Gardner Lake, this peaceful lake park is a popular day spot among fishing, boating, and swimming enthusiasts.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Gardner-Lake-State-Park",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 533,
+    "acres": 593,
     "dissolved": {
      "after": 533,
      "before": 1061,
      "copies": 1,
+     "key_union": 593,
      "parts": 0,
      "records": 4,
+     "summed": 533,
      "tracts": 3
     },
     "manager": "",
@@ -4078,7 +4093,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -4096,12 +4111,12 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 1,
+   "pct": 12,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 2,
     "source": 2
    },
@@ -4121,7 +4136,7 @@
    "verdict": "agree"
   },
   "US-1669": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Gay City State Park",
    "official": {
@@ -4129,7 +4144,7 @@
     "as": "1,500 acres",
     "clean": false,
     "line": "tent Park Finder Park Maps Gay City State Park Hebron, CT Recreation. Relaxation. Exploration. With more than 1,500 acres of parkland, you’ll discover Gay City State Park offers almost endless opportunities for outdoor fun and fami",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "With more than 1,500 acres of parkland, you’ll discover Gay City State Park offers almost endless opportunities for outdoor fun and family-friendly activities.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Gay-City-State-Park",
     "why": "total-looking"
@@ -4213,12 +4228,12 @@
    "verdict": "agree"
   },
   "US-1670": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "George Dudley Seymour State Park",
    "official": null,
    "ours": {
-    "acres": 334,
+    "acres": 244,
     "manager": "",
     "pieces": [
      [
@@ -4260,12 +4275,12 @@
    "verdict": "no size on page"
   },
   "US-1671": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "George Waldo State Park",
    "official": null,
    "ours": {
-    "acres": 153,
+    "acres": 139,
     "dissolved": {
      "after": 302,
      "before": 451,
@@ -4276,8 +4291,10 @@
      },
      "family_fold": 149,
      "family_used": "padus",
+     "key_union": 139,
      "parts": 0,
      "records": 3,
+     "summed": 153,
      "tracts": 2
     },
     "family_fold": "layers {'padus': 153, 'sgcta': 149}: one land in 2 layers, the padus copy used (149 ac of copies not added)",
@@ -4323,7 +4340,7 @@
    "verdict": "no size on page"
   },
   "US-1672": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Gillette Castle State Park",
    "official": {
@@ -4331,13 +4348,13 @@
     "as": "184 acres",
     "clean": false,
     "line": "iver. The castle lies atop the most southerly hill in a chain known as the Seven Sisters and is surrounded by 184-acres of woodlands. After his passing, the State of Connecticut purchased the castle and adjoining acreage to creat",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The castle lies atop the most southerly hill in a chain known as the Seven Sisters and is surrounded by 184-acres of woodlands.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Gillette-Castle-State-Park",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 190,
+    "acres": 160,
     "family_fold": "layers {'sgcta': 190, 'padus': 170}: one land in 2 layers, the sgcta copy used (170 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4366,7 +4383,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 3,
+   "pct": 13,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -4391,8 +4408,7 @@
    "verdict": "agree"
   },
   "US-1673": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Haddam Island State Park",
    "official": {
@@ -4400,13 +4416,13 @@
     "as": "14 acre",
     "clean": true,
     "line": "Calendars HADDAM ISLAND STATE PARK HADDAM ISLAND STATE PARK Phone: 860-424-3200 Haddam Island State Park is a 14-acre island park situated within the scenic Connecticut River. Accessible only by boat, it offers visitors an oppo",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Haddam Island State Park is a 14-acre island park situated within the scenic Connecticut River.",
     "url": "https://stateparks.com/haddam_island_state_park_in_connecticut.html",
     "why": "clean total"
    },
    "ours": {
-    "acres": 25,
+    "acres": 16,
     "manager": "",
     "pieces": [
      [
@@ -4428,13 +4444,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 79,
+   "pct": 14,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -4450,15 +4466,15 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-1674": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Haddam Meadows State Park",
    "official": null,
    "ours": {
-    "acres": 166,
+    "acres": 123,
     "manager": "",
     "pieces": [
      [
@@ -4507,7 +4523,7 @@
   },
   "US-1675": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Haley Farm State Park",
    "official": {
@@ -4515,13 +4531,13 @@
     "as": "255,000 acres",
     "clean": false,
     "line": "WELCOME TO CONNECTICUT STATE PARKS & FORESTS FIND A PARK With 142 state parks and forests covering more than 255,000 acres of pristine coastline, rolling hills, and enchanting forests, Connecticut’s natural beauty, historical treasu",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "With 142 state parks and forests covering more than 255,000 acres of pristine coastline, rolling hills, and enchanting forests, Connecticut’s natural beauty, historical treasures, and adventure are always in reach.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Haley-Farm-State-Park/Activities",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 275,
+    "acres": 248,
     "family_fold": "layers {'sgcta': 275, 'padus': 262}: one land in 2 layers, the sgcta copy used (262 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4575,20 +4591,14 @@
    "verdict": "off"
   },
   "US-1676": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Hammonasset Beach State Beach",
    "official": null,
    "ours": {
-    "acres": 596,
+    "acres": 616,
     "manager": "",
     "pieces": [
-     [
-      "sgcta4125",
-      "Hammonasset Beach State Park",
-      581,
-      "name"
-     ],
      [
       51787,
       "Hammonasset Beach State Park",
@@ -4647,12 +4657,12 @@
   },
   "US-1677": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Harkness Memorial State Park",
    "official": null,
    "ours": {
-    "acres": 378,
+    "acres": 257,
     "family_fold": "layers {'sgcta': 330, 'padus': 378, 'sgctc': 154}: one land in 3 layers, the padus copy used (484 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4675,7 +4685,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -4688,10 +4698,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -4711,12 +4721,12 @@
    "verdict": "unsure"
   },
   "US-1678": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Haystack Mountain State Park",
    "official": null,
    "ours": {
-    "acres": 386,
+    "acres": 334,
     "family_fold": "layers {'sgcta': 386, 'padus': 351}: one land in 2 layers, the sgcta copy used (351 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4759,21 +4769,13 @@
    "verdict": "no size on page"
   },
   "US-1679": {
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Higganum Reservoir State Park",
-   "official": {
-    "acres": 156.0,
-    "as": "156 acres",
-    "clean": false,
-    "line": "Æý !{ Haddam SV81 SV9 SV9 Dish Mill Rd Hull Ave Ü Higganum Reservoir State Park Location: Haddam Description: 156 acres; mixed hardwood forest and open water. Open for archery deer and fall archery turkey hunting only. Access: P",
-    "read": "2026-11-01",
-    "sent": "Description: 156 acres;",
-    "url": "https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/map215.pdf",
-    "why": "a map label (no sentence)"
-   },
+   "official": null,
    "ours": {
-    "acres": 137,
+    "acres": 239,
     "family_fold": "layers {'sgcta': 137, 'padus': 117}: one land in 2 layers, the sgcta copy used (117 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4802,13 +4804,12 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 12,
-   "same_agency": false,
-   "score": 8,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -4824,24 +4825,24 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-1680": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Hopemead State Park",
    "official": {
-    "acres": 60.0,
-    "as": "60 acres",
+    "acres": 31.0,
+    "as": "31 acres",
     "clean": false,
-    "line": "f Route 154 and turn right on Dish Mill Road. Fee: There is no parking fee at this park. Hopemead State Park (60 acres) - Bozrah/Montville. Learn more about this park on the new CTParks.com page. Activities: Fishing, Hiking Loca",
-    "read": "2026-11-01",
-    "sent": "Hopemead State Park (60 acres) - Bozrah/Montville.",
+    "line": "nnecticut Department of Energy & Environmental Protection Other State Parks and Forests Above All State Park (31 acres) Warren/Litchfield Services: Walk-in Park (Undeveloped) Location: From the junction of Route 45 and Route 341",
+    "read": "2026-11-09",
+    "sent": "Above All State Park (31 acres) Warren/Litchfield",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
-    "why": "total-looking"
+    "why": "no total words near it"
    },
    "ours": {
-    "acres": 59,
+    "acres": 33,
     "manager": "",
     "pieces": [
      [
@@ -4870,7 +4871,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 2,
+   "pct": 6,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -4959,12 +4960,12 @@
   },
   "US-1681": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Hopeville Pond State Park",
    "official": null,
    "ours": {
-    "acres": 490,
+    "acres": 849,
     "dissolved": {
      "after": 790,
      "before": 1330,
@@ -4975,8 +4976,10 @@
      },
      "family_fold": 300,
      "family_used": "sgcta",
+     "key_union": 849,
      "parts": 6,
      "records": 11,
+     "summed": 490,
      "tracts": 5
     },
     "family_fold": "layers {'sgcta': 490, 'padus': 300}: one land in 2 layers, the sgcta copy used (300 ac of copies not added)",
@@ -5032,12 +5035,12 @@
    "verdict": "unsure"
   },
   "US-1682": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Housatonic Meadows State Park",
    "official": null,
    "ours": {
-    "acres": 472,
+    "acres": 285,
     "family_fold": "layers {'sgcta': 472, 'padus': 181}: one land in 2 layers, the sgcta copy used (181 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -5080,7 +5083,7 @@
   },
   "US-1683": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Hurd State Park",
    "official": {
@@ -5088,13 +5091,13 @@
     "as": "130 acres",
     "clean": false,
     "line": "ges at the park. The court decision fortunately favored the state and averted the possible desolation of some 130 acres of land! Views from the Park Location 74 Hurd Park Road East Hampton, CT 06424 Get Directions Details Open Da",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The court decision fortunately favored the state and averted the possible desolation of some 130 acres of land!",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Hurd-State-Park",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 913,
+    "acres": 858,
     "dissolved": {
      "after": 1721,
      "before": 1809,
@@ -5105,8 +5108,10 @@
      },
      "family_fold": 808,
      "family_used": "sgcta",
+     "key_union": 858,
      "parts": 2,
      "records": 10,
+     "summed": 913,
      "tracts": 8
     },
     "family_fold": "layers {'sgcta': 913, 'padus': 808}: one land in 2 layers, the sgcta copy used (808 ac of copies not added)",
@@ -5132,7 +5137,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 602,
+   "pct": 560,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -5166,12 +5171,12 @@
    "verdict": "off"
   },
   "US-1684": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Indian Well State Park",
    "official": null,
    "ours": {
-    "acres": 166,
+    "acres": 179,
     "family_fold": "layers {'sgcta': 166, 'padus': 20}: one land in 2 layers, the sgcta copy used (20 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -5209,7 +5214,7 @@
   },
   "US-1685": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "John A. Minetto State Park",
    "official": {
@@ -5217,13 +5222,13 @@
     "as": "255,000 acres",
     "clean": false,
     "line": "WELCOME TO CONNECTICUT STATE PARKS & FORESTS FIND A PARK With 142 state parks and forests covering more than 255,000 acres of pristine coastline, rolling hills, and enchanting forests, Connecticut’s natural beauty, historical treasu",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "With 142 state parks and forests covering more than 255,000 acres of pristine coastline, rolling hills, and enchanting forests, Connecticut’s natural beauty, historical treasures, and adventure are always in reach.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/John-A-Minetto-State-Park/Activities",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 675,
+    "acres": 902,
     "dissolved": {
      "after": 1288,
      "before": 1964,
@@ -5235,8 +5240,10 @@
      },
      "family_fold": 613,
      "family_used": "sgcta",
+     "key_union": 902,
      "parts": 2,
      "records": 7,
+     "summed": 675,
      "tracts": 5
     },
     "family_fold": "layers {'sgcta': 675, 'sgctc': 576, 'padus': 37}: one land in 3 layers, the sgcta copy used (613 ac of copies not added)",
@@ -5293,12 +5300,12 @@
    "verdict": "off"
   },
   "US-1686": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Kent Falls State Park",
    "official": null,
    "ours": {
-    "acres": 526,
+    "acres": 821,
     "dissolved": {
      "after": 753,
      "before": 987,
@@ -5309,8 +5316,10 @@
      },
      "family_fold": 227,
      "family_used": "padus",
+     "key_union": 821,
      "parts": 5,
      "records": 10,
+     "summed": 526,
      "tracts": 5
     },
     "family_fold": "layers {'padus': 526, 'sgcta': 227}: one land in 2 layers, the padus copy used (227 ac of copies not added)",
@@ -5342,7 +5351,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 11
    },
@@ -5360,10 +5369,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -5373,7 +5382,7 @@
    "verdict": "no size on page"
   },
   "US-1687": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Kettletown State Park",
    "official": {
@@ -5381,13 +5390,13 @@
     "as": "605 acre",
     "clean": false,
     "line": "de campground. Located on the eastern shore of Lake Zoar, the fifth largest freshwater body in the state, the 605-acre park is popular four seasons a year. The area was originally inhabited by the Pootatucks, an advanced, indust",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Located on the eastern shore of Lake Zoar, the fifth largest freshwater body in the state, the 605-acre park is popular four seasons a year.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Kettletown-State-Park",
     "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 575,
+    "acres": 525,
     "dissolved": {
      "after": 990,
      "before": 1159,
@@ -5398,8 +5407,10 @@
      },
      "family_fold": 415,
      "family_used": "sgcta",
+     "key_union": 525,
      "parts": 3,
      "records": 7,
+     "summed": 575,
      "tracts": 4
     },
     "family_fold": "layers {'sgcta': 575, 'padus': 415}: one land in 2 layers, the sgcta copy used (415 ac of copies not added)",
@@ -5413,7 +5424,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 6
    },
@@ -5431,12 +5442,12 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 5,
+   "pct": 13,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 2,
     "source": 2
    },
@@ -5456,22 +5467,13 @@
    "verdict": "agree"
   },
   "US-1688": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 150 acres, no total words near it)",
-   "checked": "2026-11-01",
+   "cause": "a number 4 parks share from one page (150 ac): an agency total, not this park",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Killingly Pond State Park",
-   "official": {
-    "acres": 150.0,
-    "as": "150 acres",
-    "clean": false,
-    "line": "te 156, right onto Ferry Road. Follow to the end. Fee: There is no fee at this park. George Waldo State Park (150 acres) - Southbury Activities: Fishing, Hiking, Horseback Riding, Hunting, Mountain Biking, Additional Recreational",
-    "read": "2026-11-01",
-    "sent": "George Waldo State Park (150 acres) - Southbury",
-    "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
-    "why": "no total words near it"
-   },
+   "official": null,
    "ours": {
-    "acres": 174,
+    "acres": 190,
     "dissolved": {
      "after": 338,
      "before": 512,
@@ -5482,8 +5484,10 @@
      },
      "family_fold": 164,
      "family_used": "sgcta",
+     "key_union": 190,
      "parts": 0,
      "records": 7,
+     "summed": 174,
      "tracts": 6
     },
     "family_fold": "layers {'sgcta': 174, 'padus': 164}: one land in 2 layers, the sgcta copy used (164 ac of copies not added)",
@@ -5526,7 +5530,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 16,
+   "pct": null,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -5614,8 +5618,8 @@
    "verdict": "unsure"
   },
   "US-1689": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lake Waramaug State Park",
    "official": {
@@ -5623,20 +5627,31 @@
     "as": "95 acres",
     "clean": false,
     "line": "is mirrored in the unrippled lake surface, the park becomes a mecca for sightseers and photographers. At just 95 acres, the park packs a big punch despite its size with no shortage of opportunities to swim, camp, cycle, paddle,",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "At just 95 acres, the park packs a big punch despite its size with no shortage of opportunities to swim, camp, cycle, paddle, and more.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Lake-Waramaug-State-Park",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 80,
-    "family_fold": "layers {'sgcta': 80, 'padus': 73}: one land in 2 layers, the sgcta copy used (73 ac of copies not added)",
+    "acres": 221,
     "manager": "",
     "pieces": [
      [
-      "sgcta4138",
+      52618,
       "Lake Waramaug State Park",
-      80,
+      65,
+      "name"
+     ],
+     [
+      52616,
+      "Lake Waramaug State Park",
+      7,
+      "name"
+     ],
+     [
+      52617,
+      "Lake Waramaug State Park",
+      1,
       "name"
      ]
     ],
@@ -5658,7 +5673,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 16,
+   "pct": 133,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -5692,8 +5707,7 @@
    "verdict": "off"
   },
   "US-1690": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 60 acres, no total words near it)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lamentation Mountain State Park",
    "official": {
@@ -5701,13 +5715,13 @@
     "as": "60 acres",
     "clean": false,
     "line": "f Route 154 and turn right on Dish Mill Road. Fee: There is no parking fee at this park. Hopemead State Park (60 acres) - Bozrah/Montville. Learn more about this park on the new CTParks.com page. Activities: Fishing, Hiking Loca",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Hopemead State Park (60 acres) - Bozrah/Montville.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests#LamentationMountain",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 46,
+    "acres": 65,
     "manager": "",
     "pieces": [
      [
@@ -5745,13 +5759,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 23,
+   "pct": 8,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -5830,11 +5844,11 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-1691": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lovers Leap State Park",
    "official": {
@@ -5842,13 +5856,13 @@
     "as": "160 acre",
     "clean": false,
     "line": "icking Overview Body Lovers Leap is a walk-in park with hiking trails, scenic vistas, and historic ruins. The 160-acre park is divided into three sections, each featuring a different appreciation for the park history. KNOW BEFOR",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The 160-acre park is divided into three sections, each featuring a different appreciation for the park history.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Lovers-Leap-State-Park",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 189,
+    "acres": 450,
     "family_fold": "layers {'sgcta': 160, 'padus': 189}: one land in 2 layers, the padus copy used (160 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -5865,7 +5879,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 7
    },
@@ -5883,12 +5897,12 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 18,
+   "pct": 181,
    "same_agency": false,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 0,
     "source": 2
    },
@@ -5918,7 +5932,7 @@
   },
   "US-1692": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Macedonia Brook State Park",
    "official": {
@@ -5926,7 +5940,7 @@
     "as": "2,300 acre",
     "clean": false,
     "line": "content Park Finder Park Maps Book Campground Book Picnic Shelter Macedonia Brook State Park Kent, CT Head to 2,300-acre Macedonia Brook State Park for big hikes, big views, and big fish. And with camping available, keep the adven",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Head to 2,300-acre Macedonia Brook State Park for big hikes, big views, and big fish.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Macedonia-Brook-State-Park",
     "why": "total-looking"
@@ -5995,7 +6009,8 @@
    "verdict": "off"
   },
   "US-1693": {
-   "checked": "2026-11-01",
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Machimoodus State Park",
    "official": {
@@ -6003,13 +6018,13 @@
     "as": "300 acres",
     "clean": false,
     "line": "orests Skip to main content Park Finder Park Maps Machimoodus State Park Moodus, CT Machimoodus State Park is 300 acres of uplands, woodlands, meadows, river and cove waterfronts, hiking trails, and scenic vistas overlooking the",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Machimoodus State Park is 300 acres of uplands, woodlands, meadows, river and cove waterfronts, hiking trails, and scenic vistas overlooking the Salmon River and Salmon River Cove.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Machimoodus-State-Park",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 300,
+    "acres": 230,
     "family_fold": "layers {'sgcta': 300, 'padus': 144}: one land in 2 layers, the sgcta copy used (144 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6020,7 +6035,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -6032,13 +6047,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 0,
+   "pct": 23,
    "same_agency": false,
-   "score": 8,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 2,
-    "size": 2,
+    "pin": 1,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -6054,15 +6069,15 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-1694": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mansfield Hollow State Park",
    "official": null,
    "ours": {
-    "acres": 2643,
+    "acres": 3469,
     "manager": "",
     "pieces": [
      [
@@ -6090,7 +6105,7 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "HTTP 403",
+     "status": "robots-unreadable",
      "url": "http://www.nae.usace.army.mil/Portals/74/docs/Recreation/MHLMap.pdf",
      "why": "official map (parkinfo-web)"
     },
@@ -6115,7 +6130,7 @@
    "verdict": "no size on page"
   },
   "US-1695": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mashamoquet Brook State Park",
    "official": null,
@@ -6157,35 +6172,57 @@
    "verdict": "no size on page"
   },
   "US-1696": {
-   "cause": "a number 7 parks share from one page (401 ac): an agency total, not this park",
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 260 acres, no total words near it)",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mianus River State Park",
-   "official": null,
+   "official": {
+    "acres": 260.0,
+    "as": "260 acres",
+    "clean": false,
+    "line": "d is 2.5 miles north, on the left. Fee: There is no parking fee at this park. Becket Hill State Park Reserve (260 acres) - Lyme Services: Walk-In Park (Undeveloped) Location: From the junction of Route 82 and Route 156 in East Ha",
+    "read": "2026-11-09",
+    "sent": "Becket Hill State Park Reserve (260 acres) - Lyme",
+    "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
+    "why": "no total words near it"
+   },
    "ours": {
-    "acres": 329,
+    "acres": 201,
     "dissolved": {
-     "after": 479,
-     "before": 601,
+     "after": 150,
+     "before": 272,
      "copies": 0,
-     "families": {
-      "padus": 150,
-      "sgcta": 329
-     },
-     "family_fold": 150,
-     "family_used": "sgcta",
+     "key_union": 201,
      "parts": 2,
-     "records": 7,
-     "tracts": 5
+     "records": 6,
+     "summed": 150,
+     "tracts": 4
     },
-    "family_fold": "layers {'sgcta': 329, 'padus': 150}: one land in 2 layers, the sgcta copy used (150 ac of copies not added)",
     "manager": "",
-    "note": "7 joined records = 5 tracts: 0 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 601 -> 479 acres",
+    "note": "6 joined records = 4 tracts: 0 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 272 -> 150 acres",
     "pieces": [
      [
-      "sgcta4199",
+      51804,
       "Mianus River State Park Scenic Reserve",
-      329,
+      122,
+      "name"
+     ],
+     [
+      51805,
+      "Mianus River State Park Scenic Reserve",
+      16,
+      "name"
+     ],
+     [
+      51809,
+      "Mianus River State Park Scenic Reserve",
+      9,
+      "name"
+     ],
+     [
+      51806,
+      "Mianus River State Park Scenic Reserve",
+      3,
       "name"
      ]
     ],
@@ -6218,14 +6255,14 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
+   "pct": 23,
    "same_agency": false,
-   "score": 5,
+   "score": 4,
    "score_parts": {
     "name": 2,
     "pin": 0,
     "size": 1,
-    "source": 2
+    "source": 1
    },
    "sizes": [
     {
@@ -6307,12 +6344,12 @@
   },
   "US-1697": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Millers Pond State Park",
    "official": null,
    "ours": {
-    "acres": 298,
+    "acres": 232,
     "family_fold": "layers {'sgcta': 298, 'sgctc': 265, 'padus': 294}: one land in 3 layers, the sgcta copy used (559 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6360,7 +6397,7 @@
   },
   "US-1698": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 25 acres, no total words near it)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Minnie Island State Park",
    "official": {
@@ -6368,23 +6405,14 @@
     "as": "25 acres",
     "clean": false,
     "line": "ssion.) Fee: There is no parking fee at this park. Bolton Notch State Park Map Brainard Homestead State Park (25 acres) - East Haddam. Learn more about this park on the new CTParks.com page. Activities: Bird Watching, Field Spor",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Brainard Homestead State Park (25 acres) - East Haddam.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
     "why": "no total words near it"
    },
    "ours": {
     "acres": 1,
-    "dissolved": {
-     "after": 1,
-     "before": 2,
-     "copies": 1,
-     "parts": 0,
-     "records": 2,
-     "tracts": 1
-    },
     "manager": "",
-    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2 -> 1 acres",
     "pieces": [
      [
       157497,
@@ -6395,7 +6423,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -6511,7 +6539,7 @@
   },
   "US-1699": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 4,000 acres, no total words near it)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mohawk Mountain State Park",
    "official": {
@@ -6519,7 +6547,7 @@
     "as": "4,000 acres",
     "clean": false,
     "line": "d ridges, dense forests, wildlife sanctuary, and a black spruce bog with a unique plant community, the park’s 4,000 acres offer something for everyone in any season. Cast a line in one of the parks’ ponds or streams — or both. Bike",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Between the rugged ridges, dense forests, wildlife sanctuary, and a black spruce bog with a unique plant community, the park’s 4,000 acres offer something for everyone in any season.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Forests/Mohawk-Mountain-State-Forest-State-Park",
     "why": "no total words near it"
@@ -6587,12 +6615,12 @@
    "verdict": "unsure"
   },
   "US-1700": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mooween State Park",
    "official": null,
    "ours": {
-    "acres": 592,
+    "acres": 500,
     "family_fold": "layers {'sgcta': 592, 'padus': 575}: one land in 2 layers, the sgcta copy used (575 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6603,7 +6631,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 5
    },
@@ -6622,10 +6650,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -6635,8 +6663,7 @@
    "verdict": "no size on page"
   },
   "US-1701": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 260 acres, no total words near it)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mount Bushnell State Park",
    "official": {
@@ -6644,13 +6671,13 @@
     "as": "260 acres",
     "clean": false,
     "line": "d is 2.5 miles north, on the left. Fee: There is no parking fee at this park. Becket Hill State Park Reserve (260 acres) - Lyme Services: Walk-In Park (Undeveloped) Location: From the junction of Route 82 and Route 156 in East Ha",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Becket Hill State Park Reserve (260 acres) - Lyme",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 214,
+    "acres": 294,
     "family_fold": "layers {'sgcta': 214, 'padus': 120}: one land in 2 layers, the sgcta copy used (120 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6661,7 +6688,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 4
    },
@@ -6690,13 +6717,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 18,
+   "pct": 13,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 1,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -6775,16 +6802,16 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-1702": {
-   "cause": "a number 7 parks share from one page (401 ac): an agency total, not this park",
-   "checked": "2026-11-01",
+   "cause": "a number 5 parks share from one page (401 ac): an agency total, not this park",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mount Riga State Park",
    "official": null,
    "ours": {
-    "acres": 336,
+    "acres": 539,
     "family_fold": "layers {'sgcta': 322, 'sgctc': 301, 'padus': 336}: one land in 3 layers, the padus copy used (623 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6801,7 +6828,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -6832,10 +6859,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -6918,12 +6945,12 @@
    "verdict": "unsure"
   },
   "US-1703": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mount Tom State Park",
    "official": null,
    "ours": {
-    "acres": 243,
+    "acres": 197,
     "family_fold": "layers {'sgcta': 236, 'padus': 243}: one land in 2 layers, the padus copy used (236 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6979,7 +7006,7 @@
   },
   "US-1704": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Old Furnace State Park",
    "official": {
@@ -6987,7 +7014,7 @@
     "as": "255,000 acres",
     "clean": false,
     "line": "WELCOME TO CONNECTICUT STATE PARKS & FORESTS FIND A PARK With 142 state parks and forests covering more than 255,000 acres of pristine coastline, rolling hills, and enchanting forests, Connecticut’s natural beauty, historical treasu",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "With 142 state parks and forests covering more than 255,000 acres of pristine coastline, rolling hills, and enchanting forests, Connecticut’s natural beauty, historical treasures, and adventure are always in reach.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Old-Furnace-State-Park",
     "why": "total-looking"
@@ -7004,7 +7031,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 7
    },
@@ -7024,10 +7051,10 @@
    ],
    "pct": 100,
    "same_agency": false,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 0,
     "source": 2
    },
@@ -7047,13 +7074,21 @@
    "verdict": "off"
   },
   "US-1705": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Osborndale State Park",
-   "official": null,
+   "official": {
+    "acres": 350.0,
+    "as": "350 acre",
+    "clean": false,
+    "line": "uy land but never sell it, Mrs. Kellogg gradually acquired the numerous separate farms which now comprise the 350-acre Osbornedale State Park, an unusually large property in the Derby-Ansonia area. Within the park, Kellogg Envir",
+    "read": "2026-11-09",
+    "sent": "Kellogg gradually acquired the numerous separate farms which now comprise the 350-acre Osbornedale State Park, an unusually large property in the Derby-Ansonia area.",
+    "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Osbornedale-State-Park",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
-    "acres": 425,
+    "acres": 329,
     "family_fold": "layers {'sgcta': 425, 'padus': 48}: one land in 2 layers, the sgcta copy used (48 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -7082,12 +7117,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 5,
+   "pct": 6,
+   "same_agency": false,
+   "score": 6,
    "score_parts": {
     "name": 0,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -7103,10 +7139,11 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-1706": {
-   "checked": "2026-11-01",
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Penwood State Park",
    "official": {
@@ -7114,13 +7151,13 @@
     "as": "800 acres",
     "clean": false,
     "line": "ate Park Bloomfield, CT Penwood State Park, just twenty minutes from the capital city, offers visitors almost 800 acres and four seasons of natural scenery, wildlife, and recreation. Located across the street from Talcott Mountai",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Penwood State Park, just twenty minutes from the capital city, offers visitors almost 800 acres and four seasons of natural scenery, wildlife, and recreation.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Penwood-State-Park",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 801,
+    "acres": 582,
     "family_fold": "layers {'sgcta': 801, 'padus': 159}: one land in 2 layers, the sgcta copy used (159 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -7131,7 +7168,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 5
    },
@@ -7149,13 +7186,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 0,
+   "pct": 27,
    "same_agency": false,
-   "score": 8,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 2,
-    "size": 2,
+    "pin": 1,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -7171,11 +7208,10 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-1707": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 183 acres, no total words near it)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Putnam Memorial State Park",
    "official": {
@@ -7183,13 +7219,13 @@
     "as": "183 acres",
     "clean": false,
     "line": "walk along the interpretive trail. The trail brings you to all the key destinations tucked within the park’s 183 acres, including: A 44-foot-tall granite obelisk built in 1888 marks the site of the encampment and commemorates th",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The trail brings you to all the key destinations tucked within the park’s 183 acres, including:",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Putnam-Memorial-State-Park",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 214,
+    "acres": 192,
     "family_fold": "layers {'sgcta': 214, 'padus': 203}: one land in 2 layers, the sgcta copy used (203 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -7212,13 +7248,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 17,
+   "pct": 5,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -7243,11 +7279,11 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-1708": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Quaddick State Park",
    "official": {
@@ -7255,7 +7291,7 @@
     "as": "255,000 acres",
     "clean": false,
     "line": "WELCOME TO CONNECTICUT STATE PARKS & FORESTS FIND A PARK With 142 state parks and forests covering more than 255,000 acres of pristine coastline, rolling hills, and enchanting forests, Connecticut’s natural beauty, historical treasu",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "With 142 state parks and forests covering more than 255,000 acres of pristine coastline, rolling hills, and enchanting forests, Connecticut’s natural beauty, historical treasures, and adventure are always in reach.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Quaddick-State-Park",
     "why": "total-looking"
@@ -7330,39 +7366,33 @@
    "verdict": "off"
   },
   "US-1709": {
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Quinnipiac River State Park",
-   "official": {
-    "acres": 346.0,
-    "as": "346 acres",
-    "clean": false,
-    "line": "rd, CT 06106 - www.ct.gov/deep Quinnipiac River State Park Location: North Haven and Wallingford Description: 346 acres; This area is open to archery deer hunting, no firearms deer hunting allowed. Also open to firearms/archery",
-    "read": "2026-11-01",
-    "sent": "Description: 346 acres;",
-    "url": "https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map408.pdf?rev=d12a8540dfcc4152bf7ced8d17a51970&hash=E61CD0DE7A2467E1E78232BA3D9B9A27",
-    "why": "a map label (no sentence)"
-   },
+   "official": null,
    "ours": {
-    "acres": 346,
+    "acres": 420,
     "dissolved": {
-     "after": 714,
-     "before": 759,
+     "after": 733,
+     "before": 778,
      "copies": 0,
      "families": {
-      "padus": 45,
+      "padus": 64,
       "sgcta": 323,
       "sgctc": 346
      },
-     "family_fold": 368,
+     "family_fold": 387,
      "family_used": "sgctc",
+     "key_union": 420,
      "parts": 2,
-     "records": 5,
-     "tracts": 3
+     "records": 7,
+     "summed": 346,
+     "tracts": 5
     },
-    "family_fold": "layers {'sgctc': 346, 'sgcta': 323, 'padus': 45}: one land in 3 layers, the sgctc copy used (368 ac of copies not added)",
+    "family_fold": "layers {'sgctc': 346, 'sgcta': 323, 'padus': 64}: one land in 3 layers, the sgctc copy used (387 ac of copies not added)",
     "manager": "",
-    "note": "5 joined records = 3 tracts: 0 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 759 -> 714 acres",
+    "note": "7 joined records = 5 tracts: 0 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 778 -> 733 acres",
     "pieces": [
      [
       "sgctc183",
@@ -7389,13 +7419,12 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 0,
-   "same_agency": false,
-   "score": 8,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -7411,11 +7440,11 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-1710": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "River Highlands State Park",
    "official": {
@@ -7423,7 +7452,7 @@
     "as": "255,000 acres",
     "clean": false,
     "line": "WELCOME TO CONNECTICUT STATE PARKS & FORESTS FIND A PARK With 142 state parks and forests covering more than 255,000 acres of pristine coastline, rolling hills, and enchanting forests, Connecticut’s natural beauty, historical treasu",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "With 142 state parks and forests covering more than 255,000 acres of pristine coastline, rolling hills, and enchanting forests, Connecticut’s natural beauty, historical treasures, and adventure are always in reach.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/River-Highlands-State-Park",
     "why": "total-looking"
@@ -7482,7 +7511,7 @@
    "verdict": "off"
   },
   "US-1711": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Rocky Neck State Park",
    "official": {
@@ -7490,7 +7519,7 @@
     "as": "710 acres",
     "clean": false,
     "line": "something for all members of the family. Located on Long Island Sound in the town of East Lyme, Rocky Neck is 710 acres of pristine beach and coastal thicket situated between a salt marsh and tidal river. The park’s varied terrai",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Located on Long Island Sound in the town of East Lyme, Rocky Neck is 710 acres of pristine beach and coastal thicket situated between a salt marsh and tidal river.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Rocky-Neck-State-Park",
     "why": "part (a lake, a purchase, a campground…)"
@@ -7543,21 +7572,22 @@
    "verdict": "agree"
   },
   "US-1712": {
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 150 acres, no total words near it)",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Ross Pond State Park",
    "official": {
-    "acres": 401.0,
-    "as": "401 acres",
+    "acres": 150.0,
+    "as": "150 acres",
     "clean": false,
-    "line": "l-off for the White Trail on the right. Fee: There is no parking fee at this forest. Beaver Brook State Park (401 acres) - Chaplin, Windham Activities: Hunting Services: Walk-in Park (Undeveloped) Location: From the junction of R",
-    "read": "2026-11-01",
-    "sent": "Beaver Brook State Park (401 acres) - Chaplin, Windham",
+    "line": "te 156, right onto Ferry Road. Follow to the end. Fee: There is no fee at this park. George Waldo State Park (150 acres) - Southbury Activities: Fishing, Hiking, Horseback Riding, Hunting, Mountain Biking, Additional Recreational",
+    "read": "2026-11-09",
+    "sent": "George Waldo State Park (150 acres) - Southbury",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests#rosspond",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 372,
+    "acres": 204,
     "family_fold": "layers {'sgctc': 372, 'sgcta': 84, 'padus': 74}: one land in 3 layers, the sgctc copy used (158 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -7596,13 +7626,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 7,
+   "pct": 36,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -7681,10 +7711,10 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-1713": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Scantic River State Park",
    "official": null,
@@ -7715,7 +7745,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 25
    },
@@ -7734,10 +7764,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -7747,7 +7777,8 @@
    "verdict": "no size on page"
   },
   "US-1714": {
-   "checked": "2026-11-01",
+   "cause": "our union: one of our pieces alone matches the agency (double count?)",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Selden Neck State Park",
    "official": {
@@ -7755,19 +7786,21 @@
     "as": "607 acre",
     "clean": false,
     "line": "own as the largest island in the Connecticut River. Except for the tidal marshes, the roadless, uninhabited, 607-acre island is completely blanketed with lush woodland vegetation. The island tops out at nearly 230 feet in eleva",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Except for the tidal marshes, the roadless, uninhabited, 607-acre island is completely blanketed with lush woodland vegetation.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Selden-Neck-State-Park",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 566,
+    "acres": 405,
     "dissolved": {
      "after": 566,
      "before": 1686,
      "copies": 2,
+     "key_union": 405,
      "parts": 0,
      "records": 4,
+     "summed": 566,
      "tracts": 2
     },
     "manager": "",
@@ -7798,13 +7831,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 7,
+   "pct": 33,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -7820,22 +7853,24 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-1715": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Sherwood Island State Park",
    "official": null,
    "ours": {
-    "acres": 276,
+    "acres": 161,
     "dissolved": {
      "after": 276,
      "before": 550,
      "copies": 1,
+     "key_union": 161,
      "parts": 0,
      "records": 2,
+     "summed": 276,
      "tracts": 1
     },
     "manager": "",
@@ -7848,7 +7883,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -7861,10 +7896,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -7885,7 +7920,7 @@
   },
   "US-1716": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Silver Sands State Park",
    "official": {
@@ -7893,7 +7928,7 @@
     "as": "14 acre",
     "clean": false,
     "line": "at, and potentially even Captain Kidd’s buried treasure, the island is now—quite literally—for the birds. The 14-acre tuft of woodland and greenery, only a half mile away from shore, is an important wildlife sanctuary for a hos",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The 14-acre tuft of woodland and greenery, only a half mile away from shore, is an important wildlife sanctuary for a host of rare and treasured avian species.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Silver-Sands-State-Park",
     "why": "total-looking"
@@ -7909,7 +7944,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -7923,10 +7958,10 @@
    ],
    "pct": 2064,
    "same_agency": false,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 0,
     "source": 2
    },
@@ -7946,7 +7981,7 @@
    "verdict": "off"
   },
   "US-1717": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Sleeping Giant State Park",
    "official": {
@@ -7954,7 +7989,7 @@
     "as": "1,500 acre",
     "clean": false,
     "line": "icroclimates, particularly unusual in New England, comes together in a singular ecosystem unlike any other. A 1,500-acre wonderland of pristine woodlands, wetlands, cliffs, and talus, the park’s varied terrain is a welcoming habit",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "A 1,500-acre wonderland of pristine woodlands, wetlands, cliffs, and talus, the park’s varied terrain is a welcoming habitat for a menagerie of animals, birds, and plant life — many globally rare, many rare in Connecticut.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Sleeping-Giant-State-Park",
     "why": "total-looking"
@@ -8032,7 +8067,7 @@
    "verdict": "agree"
   },
   "US-1718": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Southford Falls State Park",
    "official": {
@@ -8040,7 +8075,7 @@
     "as": "169 acres",
     "clean": false,
     "line": "er Park Maps Book Picnic Shelter Southford Falls State Park Southbury, CT Within Southford Falls State Park's 169 acres, you’ll find its namesake tiered waterfall, a covered bridge, observation tower, picnic gazebo, two-mile trai",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Within Southford Falls State Park's 169 acres, you’ll find its namesake tiered waterfall, a covered bridge, observation tower, picnic gazebo, two-mile trail network, and Paper Mill Pond — one of the state’s regularly stocked designated trout parks.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Southford-Falls-State-Park",
     "why": "part (a lake, a purchase, a campground…)"
@@ -8056,7 +8091,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 4
    },
@@ -8075,10 +8110,10 @@
    ],
    "pct": 0,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 2,
     "source": 2
    },
@@ -8098,7 +8133,7 @@
    "verdict": "agree"
   },
   "US-1719": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Squantz Pond State Park",
    "official": {
@@ -8106,13 +8141,13 @@
     "as": "172 acres",
     "clean": true,
     "line": "nd State Park offers a prized backdrop for boating, swimming, fishing, hiking, and leaf peeping. Encompassing 172 acres on the shore of Squantz Pond, a natural lake off Candlewood Lake, the park is a rare public space on the othe",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Encompassing 172 acres on the shore of Squantz Pond, a natural lake off Candlewood Lake, the park is a rare public space on the otherwise private 75-mile shoreline.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Squantz-Pond-State-Park",
     "why": "clean total"
    },
    "ours": {
-    "acres": 170,
+    "acres": 183,
     "manager": "",
     "pieces": [
      [
@@ -8134,7 +8169,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 1,
+   "pct": 6,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -8168,13 +8203,13 @@
    "verdict": "agree"
   },
   "US-1720": {
-   "cause": "a number 7 parks share from one page (401 ac): an agency total, not this park",
-   "checked": "2026-11-01",
+   "cause": "a number 4 parks share from one page (150 ac): an agency total, not this park",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Stillwater Pond State Park",
    "official": null,
    "ours": {
-    "acres": 225,
+    "acres": 211,
     "family_fold": "layers {'sgcta': 225, 'padus': 44}: one land in 2 layers, the sgcta copy used (44 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -8185,7 +8220,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 4
    },
@@ -8216,10 +8251,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -8302,12 +8337,12 @@
    "verdict": "unsure"
   },
   "US-1721": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Stratton Brook State Park",
    "official": null,
    "ours": {
-    "acres": 189,
+    "acres": 359,
     "dissolved": {
      "after": 272,
      "before": 340,
@@ -8318,8 +8353,10 @@
      },
      "family_fold": 83,
      "family_used": "sgcta",
+     "key_union": 359,
      "parts": 3,
      "records": 7,
+     "summed": 189,
      "tracts": 4
     },
     "family_fold": "layers {'sgcta': 189, 'padus': 83}: one land in 2 layers, the sgcta copy used (83 ac of copies not added)",
@@ -8364,12 +8401,12 @@
    "verdict": "no size on page"
   },
   "US-1722": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Sunny Brook State Park",
    "official": null,
    "ours": {
-    "acres": 825,
+    "acres": 556,
     "family_fold": "layers {'sgcta': 825, 'sgctc': 447, 'padus': 2}: one land in 3 layers, the sgcta copy used (449 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -8380,7 +8417,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -8399,10 +8436,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -8412,7 +8449,7 @@
    "verdict": "no size on page"
   },
   "US-1723": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Sunrise State Park",
    "official": {
@@ -8420,7 +8457,7 @@
     "as": "146 acre",
     "clean": false,
     "line": "s — first Ted Hilton’s Hideway, then the Frank Davis Resort, and most recently the Sunrise Resort. Today, the 146-acre park is an idyllic spot to set up a picnic, kayak on the Salmon River, watch for bald eagles fly fish, or eve",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Today, the 146-acre park is an idyllic spot to set up a picnic, kayak on the Salmon River, watch for bald eagles fly fish, or even cross-country ski.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Sunrise-State-Park",
     "why": "part (a lake, a purchase, a campground…)"
@@ -8488,7 +8525,7 @@
    "verdict": "agree"
   },
   "US-1724": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Talcott Mountain State Park",
    "official": {
@@ -8496,13 +8533,13 @@
     "as": "557 acre",
     "clean": false,
     "line": "efforts of private conservationists and state and federal governments. The State of Connecticut purchased the 557-acre property in 1966, and after several years of renovation, opened the park to the public in 1974. The Tower was",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The State of Connecticut purchased the 557-acre property in 1966, and after several years of renovation, opened the park to the public in 1974.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Talcott-Mountain-State-Park",
     "why": "history"
    },
    "ours": {
-    "acres": 552,
+    "acres": 507,
     "family_fold": "layers {'sgcta': 552, 'padus': 134}: one land in 2 layers, the sgcta copy used (134 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -8531,7 +8568,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 1,
+   "pct": 9,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -8565,27 +8602,30 @@
    "verdict": "agree"
   },
   "US-1725": {
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 260 acres, no total words near it)",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Trimountain State Park",
    "official": {
-    "acres": 150.0,
-    "as": "150 acres",
+    "acres": 260.0,
+    "as": "260 acres",
     "clean": false,
-    "line": "te 156, right onto Ferry Road. Follow to the end. Fee: There is no fee at this park. George Waldo State Park (150 acres) - Southbury Activities: Fishing, Hiking, Horseback Riding, Hunting, Mountain Biking, Additional Recreational",
-    "read": "2026-11-01",
-    "sent": "George Waldo State Park (150 acres) - Southbury",
+    "line": "d is 2.5 miles north, on the left. Fee: There is no parking fee at this park. Becket Hill State Park Reserve (260 acres) - Lyme Services: Walk-In Park (Undeveloped) Location: From the junction of Route 82 and Route 156 in East Ha",
+    "read": "2026-11-09",
+    "sent": "Becket Hill State Park Reserve (260 acres) - Lyme",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 153,
+    "acres": 310,
     "dissolved": {
      "after": 153,
      "before": 305,
      "copies": 1,
+     "key_union": 310,
      "parts": 0,
      "records": 2,
+     "summed": 153,
      "tracts": 1
     },
     "manager": "",
@@ -8627,13 +8667,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 2,
+   "pct": 19,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -8712,15 +8752,15 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-1726": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Wadsworth Falls State Park",
    "official": null,
    "ours": {
-    "acres": 284,
+    "acres": 226,
     "family_fold": "layers {'sgcta': 284, 'padus': 177}: one land in 2 layers, the sgcta copy used (177 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -8758,7 +8798,7 @@
   },
   "US-1727": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "West Rock Ridge State Park",
    "official": {
@@ -8766,13 +8806,13 @@
     "as": "200 square miles",
     "clean": false,
     "line": "ark Finder Park Maps West Rock Ridge State Park Hamden/New Haven, CT West Rock Ridge State Park offers around 200 square miles of views from the summit, from New Haven Harbor to Long Island Sound to Sleeping Giant State Park to Lakes Da",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "West Rock Ridge State Park offers around 200 square miles of views from the summit, from New Haven Harbor to Long Island Sound to Sleeping Giant State Park to Lakes Dawson and Watrous.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/West-Rock-Ridge-State-Park",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1644,
+    "acres": 2110,
     "family_fold": "layers {'sgcta': 1644, 'padus': 105}: one land in 2 layers, the sgcta copy used (105 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -8795,7 +8835,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 99,
+   "pct": 98,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -8821,12 +8861,12 @@
   },
   "US-1728": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Wharton Brook State Park",
    "official": null,
    "ours": {
-    "acres": 45,
+    "acres": 35,
     "manager": "",
     "pieces": [
      [
@@ -8836,7 +8876,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 1
    },
@@ -8860,10 +8900,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -8884,7 +8924,7 @@
   },
   "US-1729": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Windsor Meadows State Park",
    "official": {
@@ -8892,13 +8932,13 @@
     "as": "88 acre",
     "clean": false,
     "line": "nus of the Bissell Bridge Walkway Trail and Windsor River Trail. The park is divided into three sections. The 88-acre south section is both the largest and the most popular, particularly with boaters and anglers, as it is home",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The 88-acre south section is both the largest and the most popular, particularly with boaters and anglers, as it is home to the Bissell Bridge Boat Launch and the Bissell Bridge Walkway Trailhead.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Windsor-Meadows-State-Park",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 154,
+    "acres": 142,
     "family_fold": "layers {'sgcta': 154, 'padus': 125}: one land in 2 layers, the sgcta copy used (125 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -8909,7 +8949,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 8
    },
@@ -8921,12 +8961,12 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 75,
+   "pct": 61,
    "same_agency": false,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 0,
     "source": 2
    },
@@ -8964,7 +9004,7 @@
    "verdict": "off"
   },
   "US-4369": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Shenipsit State Forest",
    "official": {
@@ -8972,13 +9012,13 @@
     "as": "7,170 acres",
     "clean": false,
     "line": "s/Ellington, CT There is an abundance of recreation opportunities and history within Shenipsit State Forest’s 7,170 acres sprawling across Ellington, Somers and Stafford. From hiking or mountain biking to horseback riding and hunti",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "There is an abundance of recreation opportunities and history within Shenipsit State Forest’s 7,170 acres sprawling across Ellington, Somers and Stafford.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Forests/Shenipsit-State-Forest",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 7170,
+    "acres": 8034,
     "dissolved": {
      "after": 13797,
      "before": 21829,
@@ -8989,8 +9029,10 @@
      },
      "family_fold": 6627,
      "family_used": "sgctc",
+     "key_union": 8034,
      "parts": 11,
      "records": 21,
+     "summed": 7170,
      "tracts": 8
     },
     "family_fold": "layers {'sgctc': 7170, 'padus': 6627}: one land in 2 layers, the sgctc copy used (6,627 ac of copies not added)",
@@ -9016,7 +9058,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 0,
+   "pct": 12,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -9077,42 +9119,237 @@
    "verdict": "agree"
   },
   "US-4556": {
-   "checked": "2026-11-01",
-   "handover": [],
+   "checked": "2026-11-09",
+   "handover": [
+    {
+     "date_hint": "1937",
+     "kind": "managed by",
+     "line": "ian Mountains. Conceived in 1921, built by private citizens, and completed in 1937, today the trail is managed by the National Park Service, US Forest Service, Appalachian Trail Conservancy, numerous state agencies and thousands of volunte",
+     "owner_now": "National Park Service",
+     "src": "https://www.nps.gov/appa/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
    "n": "Appalachian Trail National Scenic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-CT",
+     "US-VA",
+     "US-WV",
+     "US-MA",
+     "US-PA",
+     "US-ME",
+     "US-GA",
+     "US-TN",
+     "US-NY",
+     "US-VT",
+     "US-MD",
+     "US-NH",
+     "US-NJ",
+     "US-NC"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": "National Park Service",
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/appa/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/appa/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/appa/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/appa/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/appa/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
    "t": "National Scenic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-4561": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "New England Trail National Scenic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-CT",
+     "US-MA"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/neen/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/neen/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/neen/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/neen/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/neen/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National Scenic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-4582": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Washington-Rochambeau Revolutionary Route National Historic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-CT",
+     "US-VA",
+     "US-MA",
+     "US-PA",
+     "US-DE",
+     "US-DC",
+     "US-NY",
+     "US-MD",
+     "US-NJ",
+     "US-RI"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/waro/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/waro/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/waro/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/waro/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/waro/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National Historic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-6857": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "American Legion State Forest",
    "official": null,
    "ours": {
-    "acres": 1304,
+    "acres": 1212,
     "dissolved": {
      "after": 2489,
      "before": 3792,
@@ -9123,8 +9360,10 @@
      },
      "family_fold": 1185,
      "family_used": "sgctc",
+     "key_union": 1212,
      "parts": 0,
      "records": 3,
+     "summed": 1304,
      "tracts": 2
     },
     "family_fold": "layers {'sgctc': 1304, 'padus': 1185}: one land in 2 layers, the sgctc copy used (1,185 ac of copies not added)",
@@ -9138,7 +9377,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -9157,10 +9396,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -9170,19 +9409,21 @@
    "verdict": "no size on page"
   },
   "US-6858": {
-   "cause": "a number 7 parks share from one page (401 ac): an agency total, not this park",
-   "checked": "2026-11-01",
+   "cause": "a number 5 parks share from one page (401 ac): an agency total, not this park",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Beckett Hill Park Reserve",
    "official": null,
    "ours": {
-    "acres": 262,
+    "acres": 303,
     "dissolved": {
      "after": 262,
      "before": 524,
      "copies": 1,
+     "key_union": 303,
      "parts": 0,
      "records": 2,
+     "summed": 262,
      "tracts": 1
     },
     "manager": "",
@@ -9312,7 +9553,7 @@
    "verdict": "unsure"
   },
   "US-6859": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Enders State Forest",
    "official": {
@@ -9320,13 +9561,13 @@
     "as": "2,100 acres",
     "clean": true,
     "line": "ed to continuously as opportunities have presented themselves over the years so that the forest is now nearly 2,100 acres in size. As per the wishes of the Enders family and terms of the original deed, their gifted land did then, a",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The property has been added to continuously as opportunities have presented themselves over the years so that the forest is now nearly 2,100 acres in size.",
     "url": "https://portal.ct.gov/deep/state-parks/forests/enders-state-forest/overview",
     "why": "clean total"
    },
    "ours": {
-    "acres": 1959,
+    "acres": 2219,
     "dissolved": {
      "after": 2311,
      "before": 4270,
@@ -9337,8 +9578,10 @@
      },
      "family_fold": 352,
      "family_used": "sgcta",
+     "key_union": 2219,
      "parts": 2,
      "records": 4,
+     "summed": 1959,
      "tracts": 2
     },
     "family_fold": "layers {'sgcta': 1959, 'sgctc': 352}: one land in 2 layers, the sgcta copy used (352 ac of copies not added)",
@@ -9380,7 +9623,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 7,
+   "pct": 6,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -9423,7 +9666,7 @@
    "verdict": "agree"
   },
   "US-6860": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Ferry Landing State Park",
    "ours": null,
@@ -9433,7 +9676,8 @@
    "verdict": "no outline"
   },
   "US-6861": {
-   "checked": "2026-11-01",
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Great Pond / Massacoe State Forest",
    "official": {
@@ -9441,26 +9685,25 @@
     "as": "370 acres",
     "clean": false,
     "line": "Simsbury Massacoe State Forest consists of two separate blocks of woodland in Simsbury that combine to total 370 acres. The largest block, Great Pond, is home to the town’s biggest standing water body, while the 73 acre Massacoe",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Massacoe State Forest consists of two separate blocks of woodland in Simsbury that combine to total 370 acres.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Forests/Massacoe-State-Forest",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 372,
-    "family_fold": "layers {'sgcta': 372, 'padus': 217}: one land in 2 layers, the sgcta copy used (217 ac of copies not added)",
+    "acres": 142,
     "manager": "",
     "pieces": [
      [
-      "sgcta4081",
+      52999,
       "Massacoe State Forest",
-      372,
+      142,
       "words"
      ]
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 1
    },
    "owner_now": null,
    "pages": [
@@ -9476,13 +9719,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 1,
+   "pct": 62,
    "same_agency": false,
-   "score": 6,
+   "score": 4,
    "score_parts": {
     "name": 1,
     "pin": 1,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -9507,15 +9750,15 @@
    ],
    "t": "State Forest",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-6862": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Horse Guard State Park",
    "official": null,
    "ours": {
-    "acres": 106,
+    "acres": 73,
     "manager": "",
     "pieces": [
      [
@@ -9525,7 +9768,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 1
    },
@@ -9544,10 +9787,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -9557,7 +9800,7 @@
    "verdict": "no size on page"
   },
   "US-6863": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "James L. Goodwin State Forest",
    "official": {
@@ -9565,19 +9808,21 @@
     "as": "2,000 acres",
     "clean": false,
     "line": "Program Registration Form James L. Goodwin State Forest Hampton, CT Covering more than three square miles and 2,000 acres, the James L. Goodwin State Forest offers recreation for every season of the year. Fourteen miles of trails,",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Covering more than three square miles and 2,000 acres, the James L.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Forests/James-L-Goodwin-State-Forest",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1933,
+    "acres": 2192,
     "dissolved": {
      "after": 1933,
      "before": 3866,
      "copies": 0,
+     "key_union": 2192,
      "parts": 3,
      "records": 4,
+     "summed": 1933,
      "tracts": 1
     },
     "manager": "",
@@ -9602,7 +9847,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 3,
+   "pct": 10,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -9625,7 +9870,7 @@
      "acres": 135.0,
      "as": "135 acre",
      "clean": false,
-     "line": "very season of the year. Fourteen miles of trails, including an equestrian trail and the Air Line Trail , the 135-acre Pine Acres Lake, three large ponds, native plant wildlife gardens, and the Goodwin Conservation Center combin",
+     "line": "very season of the year. Fourteen miles of trails, including an equestrian trail and the Air Line Trail , the 135-acre Pine Acres Lake, three large ponds, native plant wildlife gardens, and the Goodwin Conservation Education Cen",
      "total_like": false,
      "url": "https://portal.ct.gov/DEEP/State-Parks/Forests/James-L-Goodwin-State-Forest",
      "why": "part (a lake, a purchase, a campground…)"
@@ -9652,7 +9897,7 @@
      "acres": 2000.0,
      "as": "2,000 acre",
      "clean": false,
-     "line": "nued to expand and improve his forest lands throughout his life, and in 1964, he generously gifted his nearly 2,000-acre personal forest to the state of Connecticut. Today, the land surrounding the Goodwin Conservation Center and",
+     "line": "nued to expand and improve his forest lands throughout his life, and in 1964, he generously gifted his nearly 2,000-acre personal forest to the state of Connecticut. Today, the land surrounding the Goodwin Conservation Education C",
      "total_like": false,
      "url": "https://portal.ct.gov/DEEP/State-Parks/Forests/James-L-Goodwin-State-Forest",
      "why": "no total words near it"
@@ -9690,25 +9935,24 @@
    "verdict": "agree"
   },
   "US-6864": {
-   "cause": "a number 7 parks share from one page (401 ac): an agency total, not this park",
-   "checked": "2026-11-01",
+   "cause": "a number 4 parks share from one page (150 ac): an agency total, not this park",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mono Pond State Park Preserve",
    "official": null,
    "ours": {
-    "acres": 687,
-    "family_fold": "layers {'sgctc': 687, 'padus': 282}: one land in 2 layers, the sgctc copy used (282 ac of copies not added)",
+    "acres": 209,
     "manager": "",
     "pieces": [
      [
       "sgctc6",
       "Mono Pond",
       687,
-      "name"
+      "reviewed"
      ]
     ],
-    "pin": "inside",
-    "src": "USGS PAD-US",
+    "pin": "just outside",
+    "src": "",
     "unknown_pieces": 1
    },
    "owner_now": null,
@@ -9738,10 +9982,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -9824,21 +10068,13 @@
    "verdict": "unsure"
   },
   "US-6865": {
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Nathan Hale State Forest",
-   "official": {
-    "acres": 1560.0,
-    "as": "1,560 acres",
-    "clean": false,
-    "line": "rmRestiction Zones Closed toHunting [« Pheasant AreaÆýAccessPoint Location: Coventry and Andover Description: 1,560 acres; mixed hardwoods, coniferous plantations, old fields, wetlands and grasslands. Open for small game, waterfowl",
-    "read": "2026-11-01",
-    "sent": "Description: 1,560 acres;",
-    "url": "https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/NathanHalePheasantpdf.pdf",
-    "why": "a map label (no sentence)"
-   },
+   "official": null,
    "ours": {
-    "acres": 1560,
+    "acres": 1840,
     "dissolved": {
      "after": 2431,
      "before": 4623,
@@ -9849,8 +10085,10 @@
      },
      "family_fold": 871,
      "family_used": "sgctc",
+     "key_union": 1840,
      "parts": 8,
      "records": 16,
+     "summed": 1560,
      "tracts": 7
     },
     "family_fold": "layers {'sgctc': 1560, 'padus': 871}: one land in 2 layers, the sgctc copy used (871 ac of copies not added)",
@@ -9882,13 +10120,12 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 0,
-   "same_agency": false,
-   "score": 8,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -9896,7 +10133,7 @@
      "acres": 1560.0,
      "as": "1,560 acres",
      "clean": false,
-     "line": "rmRestiction Zones Closed toHunting [« Pheasant AreaÆýAccessPoint Location: Coventry and Andover Description: 1,560 acres; mixed hardwoods, coniferous plantations, old fields, wetlands and grasslands. Open for small game, waterfowl",
+     "line": "estiction Zones Closed to Hunting [« Pheasant AreaÆý Access Point Location: Coventry and Andover Description: 1,560 acres; mixed hardwoods, coniferous plantations, old fields, wetlands and grasslands. Open for small game, waterfowl",
      "total_like": false,
      "url": "https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/NathanHalePheasantpdf.pdf",
      "why": "a map label (no sentence)"
@@ -9904,24 +10141,16 @@
    ],
    "t": "State Forest",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-6866": {
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Nehantic State Forest",
-   "official": {
-    "acres": 4400.0,
-    "as": "4,400 acres",
-    "clean": false,
-    "line": "Forests Skip to main content Park Finder Park Maps Nehantic State Forest Lyme, CT Nehantic State Forest spans 4,400 acres and offers visitors trout-stocked ponds and streams, 12 miles of trails of varying difficulty, including the",
-    "read": "2026-11-01",
-    "sent": "Nehantic State Forest spans 4,400 acres and offers visitors trout-stocked ponds and streams, 12 miles of trails of varying difficulty, including the blue-blazed Nayantaquit Trail , a pondside picnic area, bird-watching areas, and picturesque views at the top of Nickerson Hill off the blue-blazed tr",
-    "url": "https://portal.ct.gov/deep/state-parks/forests/nehantic-state-forest",
-    "why": "part (a lake, a purchase, a campground…)"
-   },
+   "official": null,
    "ours": {
-    "acres": 4923,
+    "acres": 5894,
     "dissolved": {
      "after": 6819,
      "before": 13275,
@@ -9932,8 +10161,10 @@
      },
      "family_fold": 1896,
      "family_used": "sgctc",
+     "key_union": 5894,
      "parts": 6,
      "records": 13,
+     "summed": 4923,
      "tracts": 7
     },
     "family_fold": "layers {'sgctc': 4923, 'padus': 1896}: one land in 2 layers, the sgctc copy used (1,896 ac of copies not added)",
@@ -9975,13 +10206,12 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 12,
-   "same_agency": false,
-   "score": 8,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -10015,16 +10245,16 @@
    ],
    "t": "State Forest",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-6867": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Nye Holman State Forest",
    "official": null,
    "ours": {
-    "acres": 925,
+    "acres": 979,
     "dissolved": {
      "after": 1195,
      "before": 2448,
@@ -10035,8 +10265,10 @@
      },
      "family_fold": 270,
      "family_used": "sgcta",
+     "key_union": 979,
      "parts": 12,
      "records": 17,
+     "summed": 925,
      "tracts": 5
     },
     "family_fold": "layers {'sgcta': 925, 'padus': 270}: one land in 2 layers, the sgcta copy used (270 ac of copies not added)",
@@ -10092,12 +10324,12 @@
    "verdict": "unsure"
   },
   "US-6868": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Pawcatuck River Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 28,
+    "acres": 25,
     "family_fold": "layers {'sgcta': 28, 'padus': 27}: one land in 2 layers, the sgcta copy used (27 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -10134,7 +10366,7 @@
    "verdict": "no size on page"
   },
   "US-6869": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Peoples State Forest",
    "official": null,
@@ -10190,21 +10422,21 @@
    "verdict": "no size on page"
   },
   "US-6870": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Quinebaug Lake State Park",
    "official": {
-    "acres": 150.0,
-    "as": "150 acres",
+    "acres": 105.0,
+    "as": "105 acres",
     "clean": false,
-    "line": "te 156, right onto Ferry Road. Follow to the end. Fee: There is no fee at this park. George Waldo State Park (150 acres) - Southbury Activities: Fishing, Hiking, Horseback Riding, Hunting, Mountain Biking, Additional Recreational",
-    "read": "2026-11-01",
-    "sent": "George Waldo State Park (150 acres) - Southbury",
+    "line": "age Road 0.8 mile to the Park on the left. Fee: There is no parking fee at this park. Horse Guard State Park (105 acres) - Avon Services: Walk-in Park (Undeveloped) Location: From the junction of Routes 167 and 44 in Avon, follow",
+    "read": "2026-11-09",
+    "sent": "Horse Guard State Park (105 acres) - Avon",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 171,
+    "acres": 112,
     "manager": "",
     "pieces": [
      [
@@ -10214,7 +10446,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 1
    },
@@ -10243,12 +10475,12 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 14,
+   "pct": 7,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 2,
     "source": 2
    },
@@ -10331,21 +10563,22 @@
    "verdict": "agree"
   },
   "US-6871": {
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 95 acres, no total words near it)",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Rocky Glen State Park",
    "official": {
-    "acres": 60.0,
-    "as": "60 acres",
+    "acres": 95.0,
+    "as": "95 acres",
     "clean": false,
-    "line": "f Route 154 and turn right on Dish Mill Road. Fee: There is no parking fee at this park. Hopemead State Park (60 acres) - Bozrah/Montville. Learn more about this park on the new CTParks.com page. Activities: Fishing, Hiking Loca",
-    "read": "2026-11-01",
-    "sent": "Hopemead State Park (60 acres) - Bozrah/Montville.",
+    "line": "r 4.9 miles. The entrance is on the left. Fee: There is no parking fee at this park. Bolton Notch State Park (95 acres) - Bolton Activities: Hiking, Rock Climbing Location: At the junction of Route 44 and Route 6 in Bolton. Head",
+    "read": "2026-11-09",
+    "sent": "Bolton Notch State Park (95 acres) - Bolton",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 55,
+    "acres": 78,
     "family_fold": "layers {'sgcta': 55, 'padus': 8}: one land in 2 layers, the sgcta copy used (8 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -10356,7 +10589,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 3
    },
@@ -10385,13 +10618,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 8,
+   "pct": 18,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
-    "size": 2,
+    "pin": 1,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -10470,11 +10703,11 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-6872": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": null,
@@ -10488,7 +10721,7 @@
    "n": "Salt Rock State Forest",
    "official": null,
    "ours": {
-    "acres": 138,
+    "acres": 87,
     "family_fold": "layers {'sgcta': 93, 'padus': 138}: one land in 2 layers, the padus copy used (93 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -10511,7 +10744,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -10524,10 +10757,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -10547,12 +10780,12 @@
    "verdict": "unsure"
   },
   "US-6873": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Stoddard Hill State Park",
    "official": null,
    "ours": {
-    "acres": 55,
+    "acres": 37,
     "manager": "",
     "pieces": [
      [
@@ -10562,7 +10795,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 2
    },
@@ -10581,10 +10814,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -10594,18 +10827,20 @@
    "verdict": "no size on page"
   },
   "US-6874": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Tunxis State Forest",
    "official": null,
    "ours": {
-    "acres": 10612,
+    "acres": 11203,
     "dissolved": {
      "after": 10612,
      "before": 30963,
      "copies": 1,
+     "key_union": 11203,
      "parts": 5,
      "records": 12,
+     "summed": 10612,
      "tracts": 6
     },
     "manager": "",
@@ -10680,7 +10915,7 @@
    "verdict": "no size on page"
   },
   "US-6875": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "The Preserve Essex Land Trust State Park Preserve",
    "ours": null,
@@ -10690,12 +10925,12 @@
    "verdict": "no outline"
   },
   "US-7520": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mansfield Hollow Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2391,
+    "acres": 3521,
     "dissolved": {
      "after": 4197,
      "before": 6584,
@@ -10706,8 +10941,10 @@
      },
      "family_fold": 1806,
      "family_used": "sgcta",
+     "key_union": 3521,
      "parts": 0,
      "records": 3,
+     "summed": 2391,
      "tracts": 2
     },
     "family_fold": "layers {'sgcta': 2391, 'sgctc': 1806}: one land in 2 layers, the sgcta copy used (1,806 ac of copies not added)",
@@ -10733,7 +10970,7 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "rest",
+     "status": "robots-unreadable",
      "url": "http://www.nae.usace.army.mil/Portals/74/docs/Recreation/MHLMap.pdf",
      "why": "official map (parkinfo-web)"
     },
@@ -10758,12 +10995,12 @@
    "verdict": "no size on page"
   },
   "US-7528": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Air Line State Trail",
    "official": null,
    "ours": {
-    "acres": 206,
+    "acres": 786,
     "dissolved": {
      "after": 274,
      "before": 559,
@@ -10774,8 +11011,10 @@
      },
      "family_fold": 68,
      "family_used": "sgcta",
+     "key_union": 786,
      "parts": 9,
      "records": 13,
+     "summed": 206,
      "tracts": 4
     },
     "family_fold": "layers {'sgcta': 206, 'padus': 68}: one land in 2 layers, the sgcta copy used (68 ac of copies not added)",
@@ -10821,7 +11060,7 @@
    "verdict": "no size on page"
   },
   "US-7529": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Beckley Iron Furnace State Park",
    "ours": null,
@@ -10832,7 +11071,7 @@
   },
   "US-7530": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Centennial Watershed State Forest",
    "official": {
@@ -10840,13 +11079,13 @@
     "as": "15,300 acres",
     "clean": false,
     "line": "tennial Watershed State Forest Welcome Centennial Watershed State Forest Easton, Newtown, Redding, Weston The 15,300 acres of Centennial Watershed State Forest offer diverse opportunities for hiking, fishing, cross-country skiing, s",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The 15,300 acres of Centennial Watershed State Forest offer diverse opportunities for hiking, fishing, cross-country skiing, snowshoeing and birding.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Forests/Centennial-Watershed-State-Forest",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 7905,
+    "acres": 9564,
     "family_fold": "layers {'sgcta': 5257, 'sgctc': 7905, 'padus': 12}: one land in 3 layers, the sgctc copy used (5,269 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -10871,7 +11110,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -10887,7 +11126,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 48,
+   "pct": 37,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -10912,7 +11151,7 @@
    "verdict": "off"
   },
   "US-7531": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Cockaponset State Forest",
    "official": {
@@ -10920,7 +11159,7 @@
     "as": "17,000 acres",
     "clean": true,
     "line": "ockaponset State Forest Haddam/Chester, CT Connecticut’s second largest state forest, Cockaponset, spans over 17,000 acres with parcels of protected land scattered across two counties and eleven towns. With more than 100 miles of hi",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Connecticut’s second largest state forest, Cockaponset, spans over 17,000 acres with parcels of protected land scattered across two counties and eleven towns.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Forests/Cockaponset-State-Forest",
     "why": "clean total"
@@ -11005,12 +11244,12 @@
    "verdict": "agree"
   },
   "US-7532": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Hop River State Trail",
    "official": null,
    "ours": {
-    "acres": 121,
+    "acres": 661,
     "dissolved": {
      "after": 185,
      "before": 242,
@@ -11021,8 +11260,10 @@
      },
      "family_fold": 64,
      "family_used": "sgcta",
+     "key_union": 661,
      "parts": 5,
      "records": 10,
+     "summed": 121,
      "tracts": 5
     },
     "family_fold": "layers {'sgcta': 121, 'padus': 64}: one land in 2 layers, the sgcta copy used (64 ac of copies not added)",
@@ -11068,7 +11309,8 @@
    "verdict": "no size on page"
   },
   "US-7533": {
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 110 acres, no total words near it)",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Larkin State Trail",
    "official": {
@@ -11076,13 +11318,13 @@
     "as": "110 acres",
     "clean": false,
     "line": "s 10.3-mile-long linear trail combines enough remarkable history, geography, and aesthetic beauty to rate its 110 acres as one of the biggest and prettiest parks in Connecticut’s system. Originally designated as a trail for horse",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "This 10.3-mile-long linear trail combines enough remarkable history, geography, and aesthetic beauty to rate its 110 acres as one of the biggest and prettiest parks in Connecticut’s system.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Larkin-State-Park-Trail",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 109,
+    "acres": 227,
     "family_fold": "layers {'sgcta': 109, 'padus': 48}: one land in 2 layers, the sgcta copy used (48 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -11111,13 +11353,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 1,
+   "pct": 106,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -11133,10 +11375,10 @@
    ],
    "t": "State Trail",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-7534": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mohegan State Forest",
    "official": null,
@@ -11167,7 +11409,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 19
    },
@@ -11186,10 +11428,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -11200,7 +11442,7 @@
   },
   "US-7535": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Moosup Valley State Trail",
    "official": {
@@ -11208,19 +11450,21 @@
     "as": "255,000 acres",
     "clean": false,
     "line": "WELCOME TO CONNECTICUT STATE PARKS & FORESTS FIND A PARK With 142 state parks and forests covering more than 255,000 acres of pristine coastline, rolling hills, and enchanting forests, Connecticut’s natural beauty, historical treasu",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "With 142 state parks and forests covering more than 255,000 acres of pristine coastline, rolling hills, and enchanting forests, Connecticut’s natural beauty, historical treasures, and adventure are always in reach.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Moosup-Valley-State-Park-Trail",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 65,
+    "acres": 240,
     "dissolved": {
      "after": 65,
      "before": 127,
      "copies": 0,
+     "key_union": 240,
      "parts": 2,
      "records": 4,
+     "summed": 65,
      "tracts": 2
     },
     "manager": "",
@@ -11282,7 +11526,7 @@
    "verdict": "off"
   },
   "US-7536": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Nassahegon State Forest",
    "official": {
@@ -11290,19 +11534,21 @@
     "as": "1,352 acres",
     "clean": false,
     "line": "- the 24th State Forest Nassahegon State Forest, located entirely in the town of Burlington, is approximately 1,352 acres. This forest was originally designated in 1926 to protect the watershed for the state fish hatchery, now call",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Nassahegon State Forest, located entirely in the town of Burlington, is approximately 1,352 acres.",
     "url": "https://portal.ct.gov/DEEP/Forestry/Letterboxing/Letterboxing-Clues-for-Nassahegon-State-Forest",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1150,
+    "acres": 1380,
     "dissolved": {
      "after": 1150,
      "before": 2290,
      "copies": 1,
+     "key_union": 1380,
      "parts": 0,
      "records": 2,
+     "summed": 1150,
      "tracts": 1
     },
     "manager": "",
@@ -11333,7 +11579,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 15,
+   "pct": 2,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -11358,12 +11604,12 @@
    "verdict": "agree"
   },
   "US-7537": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Natchaug State Forest",
    "official": null,
    "ours": {
-    "acres": 20098,
+    "acres": 21513,
     "dissolved": {
      "after": 32854,
      "before": 46077,
@@ -11375,8 +11621,10 @@
      },
      "family_fold": 12756,
      "family_used": "padus",
+     "key_union": 21513,
      "parts": 24,
      "records": 59,
+     "summed": 20098,
      "tracts": 34
     },
     "family_fold": "layers {'sgcta': 12596, 'padus': 20098, 'sgctc': 160}: one land in 3 layers, the padus copy used (12,756 ac of copies not added)",
@@ -11474,13 +11722,13 @@
    "verdict": "no size on page"
   },
   "US-7538": {
-   "cause": "a number 7 parks share from one page (401 ac): an agency total, not this park",
-   "checked": "2026-11-01",
+   "cause": "a number 5 parks share from one page (401 ac): an agency total, not this park",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Naugatuck State Forest",
    "official": null,
    "ours": {
-    "acres": 5120,
+    "acres": 5548,
     "dissolved": {
      "after": 6876,
      "before": 11981,
@@ -11491,8 +11739,10 @@
      },
      "family_fold": 1756,
      "family_used": "sgcta",
+     "key_union": 5548,
      "parts": 6,
      "records": 13,
+     "summed": 5120,
      "tracts": 7
     },
     "family_fold": "layers {'sgcta': 5120, 'padus': 1756}: one land in 2 layers, the sgcta copy used (1,756 ac of copies not added)",
@@ -11623,27 +11873,29 @@
    "verdict": "unsure"
   },
   "US-7539": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Platt Hill State Park",
    "official": {
-    "acres": 150.0,
-    "as": "150 acres",
+    "acres": 105.0,
+    "as": "105 acres",
     "clean": false,
-    "line": "te 156, right onto Ferry Road. Follow to the end. Fee: There is no fee at this park. George Waldo State Park (150 acres) - Southbury Activities: Fishing, Hiking, Horseback Riding, Hunting, Mountain Biking, Additional Recreational",
-    "read": "2026-11-01",
-    "sent": "George Waldo State Park (150 acres) - Southbury",
+    "line": "age Road 0.8 mile to the Park on the left. Fee: There is no parking fee at this park. Horse Guard State Park (105 acres) - Avon Services: Walk-in Park (Undeveloped) Location: From the junction of Routes 167 and 44 in Avon, follow",
+    "read": "2026-11-09",
+    "sent": "Horse Guard State Park (105 acres) - Avon",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 162,
+    "acres": 111,
     "dissolved": {
      "after": 162,
      "before": 321,
      "copies": 1,
+     "key_union": 111,
      "parts": 0,
      "records": 2,
+     "summed": 162,
      "tracts": 1
     },
     "manager": "",
@@ -11685,7 +11937,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 8,
+   "pct": 6,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -11773,22 +12025,13 @@
    "verdict": "agree"
   },
   "US-7540": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 260 acres, no total words near it)",
-   "checked": "2026-11-01",
+   "cause": "a number 4 parks share from one page (150 ac): an agency total, not this park",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Pomeroy State Reserve",
-   "official": {
-    "acres": 260.0,
-    "as": "260 acres",
-    "clean": false,
-    "line": "d is 2.5 miles north, on the left. Fee: There is no parking fee at this park. Becket Hill State Park Reserve (260 acres) - Lyme Services: Walk-In Park (Undeveloped) Location: From the junction of Route 82 and Route 156 in East Ha",
-    "read": "2026-11-01",
-    "sent": "Becket Hill State Park Reserve (260 acres) - Lyme",
-    "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
-    "why": "no total words near it"
-   },
+   "official": null,
    "ours": {
-    "acres": 203,
+    "acres": 187,
     "dissolved": {
      "after": 363,
      "before": 604,
@@ -11799,8 +12042,10 @@
      },
      "family_fold": 160,
      "family_used": "sgcta",
+     "key_union": 187,
      "parts": 2,
      "records": 8,
+     "summed": 203,
      "tracts": 5
     },
     "family_fold": "layers {'sgcta': 203, 'padus': 160}: one land in 2 layers, the sgcta copy used (160 ac of copies not added)",
@@ -11843,7 +12088,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 22,
+   "pct": null,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -11931,7 +12176,8 @@
    "verdict": "unsure"
   },
   "US-7541": {
-   "checked": "2026-11-01",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Salmon River State Forest",
    "official": {
@@ -11939,13 +12185,13 @@
     "as": "7,000 acres",
     "clean": false,
     "line": "a picnic along the Salmon River or walk through one of Connecticut's historical covered bridges. With nearly 7,000 acres sprawling across the towns of Hebron, Marlborough, Colchester, East Haddam, and East Hampton, Salmon River St",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "With nearly 7,000 acres sprawling across the towns of Hebron, Marlborough, Colchester, East Haddam, and East Hampton, Salmon River State Forest is a wonderland of adventure, solitude, nature, and recreation.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Forests/Salmon-River-State-Forest",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 6980,
+    "acres": 8846,
     "dissolved": {
      "after": 16686,
      "before": 19793,
@@ -11957,8 +12203,10 @@
      },
      "family_fold": 9706,
      "family_used": "sgctc",
+     "key_union": 8846,
      "parts": 45,
      "records": 52,
+     "summed": 6980,
      "tracts": 7
     },
     "family_fold": "layers {'sgctc': 6980, 'sgcta': 6623, 'padus': 3083}: one land in 3 layers, the sgctc copy used (9,706 ac of copies not added)",
@@ -11984,13 +12232,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 0,
+   "pct": 26,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -12015,10 +12263,10 @@
    ],
    "t": "State Forest",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-7542": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Satan's Kingdom State Recreation Area",
    "ours": null,
@@ -12028,7 +12276,7 @@
    "verdict": "no outline"
   },
   "US-7544": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Windsor Locks Canal State Trail",
    "ours": null,
@@ -12038,21 +12286,13 @@
    "verdict": "no outline"
   },
   "US-7545": {
-   "checked": "2026-11-01",
+   "cause": "a number 5 parks share from one page (401 ac): an agency total, not this park",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Wooster Mountain State Park",
-   "official": {
-    "acres": 401.0,
-    "as": "401 acres",
-    "clean": false,
-    "line": "l-off for the White Trail on the right. Fee: There is no parking fee at this forest. Beaver Brook State Park (401 acres) - Chaplin, Windham Activities: Hunting Services: Walk-in Park (Undeveloped) Location: From the junction of R",
-    "read": "2026-11-01",
-    "sent": "Beaver Brook State Park (401 acres) - Chaplin, Windham",
-    "url": "https://portal.ct.gov/DEEP/State-Parks/Locate-Park-Forest/Other-State-Parks-and-Forests",
-    "why": "no total words near it"
-   },
+   "official": null,
    "ours": {
-    "acres": 444,
+    "acres": 551,
     "dissolved": {
      "after": 625,
      "before": 1069,
@@ -12063,8 +12303,10 @@
      },
      "family_fold": 181,
      "family_used": "sgcta",
+     "key_union": 551,
      "parts": 0,
      "records": 7,
+     "summed": 444,
      "tracts": 6
     },
     "family_fold": "layers {'sgcta': 444, 'padus': 181}: one land in 2 layers, the sgcta copy used (181 ac of copies not added)",
@@ -12078,7 +12320,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 10
    },
@@ -12107,13 +12349,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 11,
+   "pct": null,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
-    "size": 2,
+    "pin": 1,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -12192,15 +12434,15 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-7546": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Wyantenock State Forest",
    "official": null,
    "ours": {
-    "acres": 4118,
+    "acres": 5112,
     "dissolved": {
      "after": 5788,
      "before": 12272,
@@ -12211,8 +12453,10 @@
      },
      "family_fold": 1670,
      "family_used": "sgctc",
+     "key_union": 5112,
      "parts": 14,
      "records": 23,
+     "summed": 4118,
      "tracts": 8
     },
     "family_fold": "layers {'sgctc': 4118, 'padus': 1670}: one land in 2 layers, the sgctc copy used (1,670 ac of copies not added)",
@@ -12258,7 +12502,7 @@
    "verdict": "no size on page"
   },
   "US-7547": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Captain George Comer Memorial State Park",
    "official": null,
@@ -12273,7 +12517,7 @@
       "reviewed"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -12286,10 +12530,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 1,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -12299,7 +12543,7 @@
    "verdict": "no size on page"
   },
   "US-7548": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Pachaug State Forest",
    "official": {
@@ -12307,7 +12551,7 @@
     "as": "26,477 acres",
     "clean": false,
     "line": "Maps Book Green Falls Campground Book Mount Misery Campground Pachaug State Forest Voluntown, CT Encompassing 26,477 acres of public lands, access roads, and trails across six towns, Pachaug State Forest is the largest in Connecticu",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Encompassing 26,477 acres of public lands, access roads, and trails across six towns, Pachaug State Forest is the largest in Connecticut.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Forests/Pachaug-State-Forest",
     "why": "part (a lake, a purchase, a campground…)"
@@ -12389,12 +12633,12 @@
    "verdict": "agree"
   },
   "US-7652": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Franklin Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 742,
+    "acres": 796,
     "family_fold": "layers {'sgctc': 742, 'sgcta': 689, 'padus': 646}: one land in 3 layers, the sgctc copy used (1,335 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -12442,8 +12686,7 @@
    "verdict": "no size on page"
   },
   "US-9894": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 510 acre, no total words near it)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Topsmead State Forest",
    "official": {
@@ -12451,13 +12694,13 @@
     "as": "510 acre",
     "clean": false,
     "line": "ted in 1925, the English Tudor Revival cottage was the country estate of Edith Morton Chase. Chase gifted the 510-acre state forest to the citizens of Connecticut. The exterior woodwork is of cypress, the downspouts are lead, th",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Chase gifted the 510-acre state forest to the citizens of Connecticut.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Forests/Topsmead-State-Forest",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 634,
+    "acres": 528,
     "dissolved": {
      "after": 828,
      "before": 1459,
@@ -12469,8 +12712,10 @@
      },
      "family_fold": 194,
      "family_used": "sgcta",
+     "key_union": 528,
      "parts": 3,
      "records": 6,
+     "summed": 634,
      "tracts": 3
     },
     "family_fold": "layers {'sgcta': 634, 'sgctc': 193, 'padus': 1}: one land in 3 layers, the sgcta copy used (194 ac of copies not added)",
@@ -12502,13 +12747,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 24,
+   "pct": 4,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -12533,11 +12778,11 @@
    ],
    "t": "State Forest",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-9896": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Auerfarm State Park Scenic Reserve",
    "official": {
@@ -12545,19 +12790,21 @@
     "as": "255,000 acres",
     "clean": false,
     "line": "WELCOME TO CONNECTICUT STATE PARKS & FORESTS FIND A PARK With 142 state parks and forests covering more than 255,000 acres of pristine coastline, rolling hills, and enchanting forests, Connecticut’s natural beauty, historical treasu",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "With 142 state parks and forests covering more than 255,000 acres of pristine coastline, rolling hills, and enchanting forests, Connecticut’s natural beauty, historical treasures, and adventure are always in reach.",
     "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Auerfarm-State-Park",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 40,
+    "acres": 30,
     "dissolved": {
      "after": 40,
      "before": 80,
      "copies": 1,
+     "key_union": 30,
      "parts": 0,
      "records": 2,
+     "summed": 40,
      "tracts": 1
     },
     "manager": "",
@@ -12570,7 +12817,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -12590,10 +12837,10 @@
    ],
    "pct": 100,
    "same_agency": false,
-   "score": 5,
+   "score": 4,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 0,
     "source": 1
    },
@@ -12613,5 +12860,5 @@
    "verdict": "off"
   }
  },
- "read": "2026-11-01"
+ "read": "2026-11-09"
 }
