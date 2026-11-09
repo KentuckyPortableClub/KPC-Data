@@ -36,6 +36,8 @@ jobs:
       matrix:
         region: ${{ fromJSON(inputs.region == 'na' && '["na"]' || inputs.region == 'world' && '["world"]' || inputs.region == 'ky' && '["ky"]' || '["na","world"]') }}
     steps:
+      - name: Note the job start (Nov 9 time budget)
+        run: echo "KPC_JOB_T0=$(date +%s)" >> "$GITHUB_ENV"
       - name: Get the scripts and park data (KPC-Links, read-only)
         uses: actions/checkout@v5
         with:
@@ -45,6 +47,19 @@ jobs:
         uses: actions/checkout@v5
         with:
           path: kpcdata
+      - name: Saved owned-land lines (KPC-Archive fers-sources, read-only)
+        # Nov 9 (Brandon 9:20 AM CST: the owned-land line belongs in the keys, built once; 9:22 AM: 'If it is saving a file, needs to go to
+        # archive and look it up there'; 9:25 AM: copy the useful saved files there): the 2-fer run reads the saved agency owned-land lines
+        # from KPC-Archive fers-sources/ (public, read-only, sparse; fers-sources/manifest.json lists each file, source, date, user) and
+        # makes no live owned-land calls. Missing folder or no file for a place = that agency park's spot is NOT SURE.
+        continue-on-error: true
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Archive
+          path: archive
+          persist-credentials: false
+          fetch-depth: 1
+          sparse-checkout: fers-sources
       - name: Lay KPC-Data's moved data over the KPC-Links checkout (Step B)
         run: bash .github/scripts/kpc_overlay.sh kpcdata
       - name: Tools + saved outlines + the last 2-fer files
@@ -89,15 +104,21 @@ jobs:
           MINUTES: ${{ inputs.minutes }}
           STATES: ${{ inputs.states }}
           REGION: ${{ matrix.region }}
+          OWNED_STORE: archive/fers-sources/owned
         run: |
           # Oct 27 (SAVE USAGE): pass 'all' = passes 1, 2 and 3 back to back in ONE run (no waiting between dispatches)
           # Oct 27 (Fable review #1, HQ GO): the passes SHARE the time: pass 1 at most a fifth, pass 2 half of what is left, pass 3
           # the rest; a pass out of time saves 'waiting for pass N' and the next run carries on (never a red run)
           if [ "$PASS" = all ]; then
             END=$(( $(date +%s) + ${MINUTES:-320} * 60 ))
+            # Nov 9 (Quality must-fix 1): never plan past this step's own 335-minute limit (a one-state run spends up to 45 minutes on
+            # the POTA history first, and the passes then hit the job limit mid-pass); 5 minutes are kept for the save
+            HARD=$(( ${KPC_JOB_T0:-$(date +%s)} + 335 * 60 - 300 )); [ $END -gt $HARD ] && END=$HARD
+            TOTAL=$(( (END - $(date +%s)) / 60 ))
             for p in 1 2 3 5; do   # 5 = re-check water + tidy the rows + 'same land' owner / pin (Oct 27)
               LEFT=$(( (END - $(date +%s)) / 60 ))
-              if [ $p = 1 ]; then CAP=$(( ${MINUTES:-320} / 5 )); elif [ $p = 2 ]; then CAP=$(( LEFT / 2 )); elif [ $p = 3 ]; then CAP=$(( LEFT * 4 / 5 )); else CAP=$LEFT; fi
+              # Nov 9: pass 1 tests every touching pair (46,261 in US + Canada) and was cut at 359 with a fifth: it now gets 2/5
+              if [ $p = 1 ]; then CAP=$(( TOTAL * 2 / 5 )); elif [ $p = 2 ]; then CAP=$(( LEFT / 2 )); elif [ $p = 3 ]; then CAP=$(( LEFT * 4 / 5 )); else CAP=$LEFT; fi
               [ $CAP -gt $LEFT ] && CAP=$LEFT
               [ $CAP -lt 5 ] && { echo "::notice title=2-fer bot::no time left for pass $p (next run carries on)"; break; }
               PASS=$p MINUTES=$CAP python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
