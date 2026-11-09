@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-09T10:56Z",
+ "checked": "2026-11-09T11:05Z",
  "switched_on": false,
  "results": [
   {
@@ -365,13 +365,6 @@
   },
   {
    "path": "data/campinfo/US-SD.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/campinfo/US-TN.json",
    "kind": "campinfo",
    "why": [],
    "notes": [],
@@ -785,7 +778,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 4 of 20 re-tested links dead, e.g. https://www.in.gov/dA/846dfeb0e5/harmonie_trail.pdf?language_id=1"
+    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dA/91a139f30e/fo-PikeSF_maps.pdf?language_id=1"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -3869,6 +3862,13 @@
   {
    "path": "data/wwff/PYFF.json",
    "kind": "wwff",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-TN.json",
+   "kind": "campinfo",
    "why": [],
    "notes": [],
    "verdict": "PASS"
