@@ -45,6 +45,7 @@ Updated 2026-11-09. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-ID | 362 | 227 | 2 | **6** | 52 | 146 | 18 | 2 | 0 | 16 |
 | US-MT | 254 | 245 | 36 | **36** | 28 | 137 | 7 | 6 | 0 | 6 |
 | US-NV | 367 | 194 | 63 | **20** | 21 | 52 | 36 | 8 | 0 | 12 |
+| US-AZ | 123 | 109 | 15 | **4** | 5 | 62 | 23 | 13 | 0 | 7 |
 
 ## US-KY
 
@@ -2949,6 +2950,41 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 - US-4392 Basin and Range National Monument · managed by: “er a large rock feature Welcome to BLM Nevada's First National Monument The first national monument managed by BLM in Nevada, the Basin and Range National Monument provides for all types of outdoor re” · owner now: BLM · [www.blm.gov](https://www.blm.gov/programs/national-conservation-lands/nevada/basin-and-range-national-monument)
 - US-9239 Black Rock Desert - High Rock Canyon Emigrant Trails National Conservation Area · managed by: “a is the vast Black Rock Desert - High Rock Canyon Emigrant Trails National Conservation Area (NCA) managed by the Black Rock Field Office. Congress established the NCA in 2000 to conserve, protect, a” · owner now: Black Rock Field Of · [www.blm.gov](https://www.blm.gov/programs/national-conservation-lands/nevada/black-rock-desert-high-rock-canyon-emigrant-trails-nca)
 - US-9285 Avi Kwa Ame (Spirit Mountain) National Monument · managed by: “t, Bureau of Reclamation and National Park Service. All of the land reserved by the proclamation is currently owned by the Federal government; existing State and private lands within the boundary are ” · owner now: Federal · [www.blm.gov](https://www.blm.gov/avi-kwa-ame-national-monument)
+
+## US-AZ
+
+**Agree:** 15 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 15 agree (second agency).
+
+**Size more than 15% off (our outline vs the agency):**
+
+- US-6090 Beaver Dam Mountain Wilderness Area: ours 4,846 ac vs agency 17,600 acres (= 17,600 ac; 72% off) · cause: agency bigger: our outline may miss a tract · [www.blm.gov](https://www.blm.gov/visit/beaver-dam-mountains-wilderness) · “untains Wilderness | Utah View Map In Full Screen The Beaver Dam Mountains Wilderness now contains a total of 17,600 acres and is managed by the Bureau of Land ”
+- US-0179 San Bernardino National Wildlife Refuge: ours 1,208 ac vs agency 2,369 acre (= 2,369 ac; 49% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/san-bernardino) · “o Laws & Regulations Contact Us Visit Us Activities Trails Rules & Policies Get Involved News Species Map The 2,369-acre refuge lies along the international bor”
+- US-0172 Bill Williams River National Wildlife Refuge: ours 4,372 ac vs agency 6,100 acres (= 6,100 ac; 28% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/bill-williams-river) · “River and is one of the last ecologically functioning river habitats in the southwest United States. In 1993, 6,100 acres of the Havasu Lake National Wildlife R”
+- US-0177 Kofa National Wildlife Refuge: ours 664,509 ac vs agency 547,719 acres (= 547,719 ac; 21% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/kofa/about-us) · “area’s most notable mines, the King of Arizona gold mine. Wilderness Area Kofa Wilderness Designated in 1990 547,719 acres The Wilderness Act of 1964 created th”
+
+**Unsure (no clean total found; the nearest number is only a guess):**
+
+- US-0175 Cibola National Wildlife Refuge: ours 14,482 ac · cause: whole park compared (POTA lists it in 2 states: {'US-AZ': 10745, 'US-CA': 3737}) · [www.fws.gov](https://www.fws.gov/refuge/cibola)
+- US-0176 Imperial National Wildlife Refuge: ours 31,475 ac · cause: the agency figure may cover several states; our outline may be this state's share only · [www.fws.gov](https://www.fws.gov/refuge/imperial)
+- US-1053 Boyce Thompson Arboretum State Park: ours 295 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-4431 Prescott National Forest: ours 1,257,131 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-4432 Tonto National Forest: ours 2,866,817 ac · cause: no total-looking sentence: numbers found were parts or other units
+
+**Handover / closure hints (a person decides; nothing applied):**
+
+- US-0172 Bill Williams River National Wildlife Refuge · managed by: “Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/bill-williams-river)
+- US-0173 Buenos Aires National Wildlife Refuge · managed by: “Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/buenos-aires)
+- US-0174 Cabeza Prieta National Wildlife Refuge · managed by: “ss areas can be part of national wildlife refuges, national parks, national forests or public lands managed by the Bureau of Land Management. Learn more about wilderness area , Cabeza Prieta National ” · owner now: Bureau of Land Management · [www.fws.gov](https://www.fws.gov/refuge/cabeza-prieta)
+- US-0176 Imperial National Wildlife Refuge · managed by: “ss areas can be part of national wildlife refuges, national parks, national forests or public lands managed by the Bureau of Land Management. Learn more about wilderness area and named it “Imperial Re” · owner now: Bureau of Land Management · [www.fws.gov](https://www.fws.gov/refuge/imperial/about-us)
+- US-0178 Leslie Canyon National Wildlife Refuge · managed by: “Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/leslie-canyon)
+- US-0179 San Bernardino National Wildlife Refuge · managed by: “Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/san-bernardino)
+- US-0911 Casa Grande Ruins National Monument · managed by: “pecial Events Check the calender to catch a special event. Online Park Bookstore The park bookstore is operated by Western National Parks. Virtually visit and shop online! Plants of the Sonoran Desert” · owner now: Western National Parks · [www.nps.gov](https://www.nps.gov/cagr/index.htm)
+- US-0917 Chiricahua National Park · transfer: “with adobe and board-and-batten walls. Two years after Neil finished the house, the Forest Service transferred him to Flagstaff. The house experienced another phase of a building when Neil and Emma's ” · owner now: Flagstaff · [www.nps.gov](https://www.nps.gov/chir/learn/historyculture/faraway-ranch.htm)
+- US-0972 Wupatki National Monument · managed by: “ia A selection of Images and a virtual tour of Wupatki National Monument. Park Store The Park Store is managed by Western National Parks Association. Education Review lesson plans and field trip infor” · owner now: Western National Parks Association · [www.nps.gov](https://www.nps.gov/wupa/learn/index.htm)
+- US-11047 Trigo Mountain Wilderness Area · managed by: “lderness | Arizona View Map In Full Screen The Trigo Mountain Wilderness (30,300 acres) in Arizona, is managed by the Bureau of Land Management. In 1990, the Trigo Mountain Wilderness became part of t” · owner now: Bureau of Land Management · [www.blm.gov](https://www.blm.gov/visit/trigo-mountain-wilderness)
+- US-11049 New Water Mountains Wilderness Area · managed by: “derness | Arizona View Map In Full Screen The 24,600-acre New Water Mountains Wilderness in Arizona is managed by the Bureau of Land Management. In 1990, the New Water Mountains Wilderness became part” · owner now: Bureau of Land Management · [www.blm.gov](https://www.blm.gov/visit/new-water-mountains-wilderness)
+- US-4434 Ironwood Forest National Monument · managed by: “A) There are no developed facilities at the Ironwood Forest National Monument. Contact Us This site is managed by Tucson Field Office ; visit their page for office hours and directions. blm_az_tfoweb@” · owner now: Tucson Field Of · [www.blm.gov](https://www.blm.gov/visit/ironwood)
+- US-8297 Muggins Mountain Wilderness Area · managed by: “Wilderness | Arizona View Map In Full Screen The 7,711-acre Muggins Mountain Wilderness in Arizona is managed by the Bureau of Land Management. In 1990, the Muggins Mountain Wilderness became part of ” · owner now: Bureau of Land Management · [www.blm.gov](https://www.blm.gov/visit/muggins-mountain-wilderness)
 
 ## Kentucky test gate
 

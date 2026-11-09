@@ -40,6 +40,26 @@
    "status": "done",
    "updated": "2026-11-09"
   },
+  "US-AZ": {
+   "checked": 123,
+   "counts": {
+    "agree": 15,
+    "handover_hints": 13,
+    "no_page": 0,
+    "no_size": 62,
+    "off": 4,
+    "ours_unknown": 23,
+    "parks": 123,
+    "retired": 0,
+    "unsure": 5,
+    "weak": 7,
+    "with_outline": 109
+   },
+   "left": 0,
+   "parks": 123,
+   "status": "done",
+   "updated": "2026-11-09"
+  },
   "US-CO": {
    "checked": 276,
    "counts": {
@@ -837,56 +857,42 @@
  },
  "last": {
   "areas": [
-   "US-NV"
+   "US-AZ"
   ],
   "manners": {
    "arcgis_exempt": 0,
    "browser": 2,
-   "dropped_queued": 6,
-   "errors": 0,
-   "for_person": 2,
+   "dropped_queued": 43,
+   "errors": 1,
    "for_person_urls": [
     [
-     "https://www.nevadawilderness.org/bad_lands_wilderness_study_area",
-     "HTTP 403 twice"
+     "https://azstateparks.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from azstateparks.com this run"
     ],
     [
-     "https://www.nevadawilderness.org/Bald_Mountain_Wilderness_trails",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://d3n8a8pro7vhmx.cloudfront.net/robots.txt",
-     "robots.txt answered 403: nothing fetched from d3n8a8pro7vhmx.cloudfront.net this run"
-    ],
-    [
-     "https://www.outdoorsy.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.outdoorsy.com this run"
-    ],
-    [
-     "http://www.sangres.com/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.sangres.com this run"
+     "https://www.azgfd.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.azgfd.com this run"
     ]
    ],
-   "requests": 244,
-   "rested": 18,
-   "retry403": 2,
-   "robots": 4,
-   "robots_unreadable": 3,
-   "strikes": 4
+   "requests": 169,
+   "rested": 0,
+   "robots": 2,
+   "robots_unreadable": 2,
+   "strikes": 1
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 8,
-   "no_size": 54,
-   "ours_unknown": 36,
-   "pages_read": 199,
-   "parks": 367,
+   "handover_hints": 13,
+   "no_size": 62,
+   "ours_unknown": 23,
+   "pages_read": 142,
+   "parks": 123,
    "retired": 0,
-   "size_agree": 63,
-   "size_off": 20,
-   "size_unsure": 21,
+   "size_agree": 15,
+   "size_off": 4,
+   "size_unsure": 5,
    "skipped_fresh": 0,
-   "with_outline": 194
+   "with_outline": 109
   },
   "when": "2026-11-09"
  },
