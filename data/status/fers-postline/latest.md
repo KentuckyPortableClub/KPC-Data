@@ -1,44 +1,44 @@
 # 2-fer post-line check (for Quality)
 
-2026-11-09 18:47 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
+2026-11-09 21:19 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
 
-## CA-AB: live pairs 40 -> 36 (+3 / -7)
-- gained: CA-0110+US-4558 CA-2956+CA-2958 CA-3008+CA-6112
-- lost: CA-0109+CA-0691 (gone); CA-0671+CA-3123 (dropped: two park numbers joined to one record by name, pins 9 km apart and not both insid); CA-1182+CA-3063 (gone); CA-2956+CA-2957 (gone); CA-2957+CA-2958 (gone); CA-5522+CA-6112 (not sure: no public owner on the ownership map (CPCAD) at any part of the spot: could be p); CA-6112+CA-6587 (not sure: no public owner on the ownership map (CPCAD) at any part of the spot: could be p)
+## CA-AB: live pairs 40 -> 34 (+4 / -10)
+- gained: CA-0110+US-4558 CA-2956+CA-2958 CA-3008+CA-6112 CA-6112+CA-6588
+- lost: CA-0109+CA-0691 (gone); CA-0636+CA-2949 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-0671+CA-3123 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-0683+CA-1197 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-1174+CA-2994 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-1182+CA-3063 (gone); CA-2956+CA-2957 (gone); CA-2957+CA-2958 (gone); CA-3026+CA-3027 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-3057+CA-5533 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand)
 - touching held parks: -
 - touching pin-only parks: -
 - water / bank: 2
-- one-record same land: CA-0636+CA-2949 CA-0636+CA-2949 CA-0683+CA-1197 CA-1174+CA-2994 CA-3026+CA-3027 CA-3057+CA-5533
+- one-record same land: CA-0636+CA-2949
 - near a size threshold: CA-0005+CA-0117 101 m ~ 100 yd (small); CA-0005+CA-0726 53 m ~ 50 yd (very tight); CA-0040+CA-3161 79 m ~ 100 yd (small); CA-0110+CA-0691 49 m ~ 50 yd (very tight)
 - stale inputs: -
 
-## CA-BC: live pairs 29 -> 57 (+28 / -0)
+## CA-BC: live pairs 29 -> 28 (+28 / -29)
 - gained: CA-0018+CA-3362 CA-0032+CA-3393 CA-0045+CA-3829 CA-0066+CA-5344 CA-0105+CA-4253 CA-0105+CA-4254 CA-0697+CA-4080 CA-0711+CA-4065 CA-0736+CA-4096 CA-0737+CA-3551 CA-0742+US-0029 CA-0742+US-12607 CA-0742+US-4448 CA-0742+US-4592 CA-3191+US-4448 CA-3193+CA-3194 CA-3228+CA-4214 CA-3228+CA-4215 CA-3245+CA-5497 CA-3327+US-0055 CA-3328+CA-5346 CA-3347+CA-4241 CA-3567+US-4448 CA-3615+CA-4243 CA-3724+CA-4065 CA-3766+CA-4289 CA-3791+CA-4239 CA-3871+CA-4212
-- lost: -
+- lost: CA-0748+CA-4282 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-3250+CA-3251 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-3261+CA-3262 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-3263+CA-3264 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-3320+CA-3321 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-3348+CA-3349 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-3410+CA-3411 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-3439+CA-3440 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-3465+CA-3466 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-3495+CA-3496 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-3504+CA-3505 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-3511+CA-3512 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-3522+CA-3523 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-3524+CA-3525 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-3684+CA-3685 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-3781+CA-3782 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-3789+CA-3790 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-3838+CA-3839 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-3840+CA-3841 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-3868+CA-3869 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand)
 - touching held parks: -
 - touching pin-only parks: -
 - water / bank: 16
-- one-record same land: CA-0748+CA-4282 CA-3250+CA-3251 CA-3261+CA-3262 CA-3263+CA-3264 CA-3320+CA-3321 CA-3348+CA-3349 CA-3410+CA-3411 CA-3439+CA-3440 CA-3465+CA-3466 CA-3495+CA-3496 CA-3504+CA-3505 CA-3511+CA-3512 CA-3522+CA-3523 CA-3524+CA-3525 CA-3684+CA-3685 CA-3781+CA-3782 CA-3789+CA-3790 CA-3838+CA-3839 CA-3840+CA-3841 CA-3868+CA-3869
+- one-record same land: -
 - near a size threshold: CA-0032+CA-3393 39 m ~ 50 yd (very tight); CA-0045+CA-3829 51 m ~ 50 yd (very tight); CA-0117+CA-4798 20 m ~ 25 yd (kept); CA-0742+US-4448 87 m ~ 100 yd (small); CA-0742+US-4592 37 m ~ 50 yd (very tight); CA-3245+CA-5497 23 m ~ 25 yd (kept); CA-3303+CA-3615 79 m ~ 100 yd (small); CA-3328+CA-5346 23 m ~ 25 yd (kept); CA-3347+CA-4241 39 m ~ 50 yd (very tight); CA-3359+CA-4024 20 m ~ 25 yd (kept); CA-3567+US-4448 27 m ~ 25 yd (kept); CA-3615+CA-4243 23 m ~ 25 yd (kept); CA-3766+CA-4289 25 m ~ 25 yd (kept); CA-3791+CA-4239 101 m ~ 100 yd (small); CA-3948+US-3246 20 m ~ 25 yd (kept); CA-4218+CA-4258 109 m ~ 100 yd (small); CA-4787+CA-4789 20 m ~ 25 yd (kept)
 - stale inputs: -
 
-## CA-MB: live pairs 4 -> 5 (+1 / -0)
+## CA-MB: live pairs 4 -> 4 (+1 / -1)
 - gained: CA-1087+CA-1536
-- lost: -
+- lost: CA-0113+CA-2540 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand)
 - touching held parks: -
 - touching pin-only parks: -
 - water / bank: 1
-- one-record same land: CA-0113+CA-2540
+- one-record same land: -
 - near a size threshold: -
 - stale inputs: -
 
-## CA-NB: live pairs 2 -> 13 (+11 / -0)
+## CA-NB: live pairs 2 -> 11 (+11 / -2)
 - gained: CA-0024+CA-4446 CA-0024+CA-4535 CA-0025+CA-4446 CA-0025+CA-4535 CA-0798+CA-4404 CA-1243+CA-4424 CA-4368+CA-6234 CA-4381+CA-6510 CA-4424+CA-4432 CA-4424+CA-4467 CA-4424+CA-4497
-- lost: -
+- lost: CA-1250+CA-6497 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-4471+CA-6103 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand)
 - touching held parks: -
 - touching pin-only parks: -
 - water / bank: 0
-- one-record same land: CA-0024+CA-0025 CA-1250+CA-6497 CA-4471+CA-6103
+- one-record same land: CA-0024+CA-0025
 - near a size threshold: CA-0024+CA-4535+CA-6503+CA-6535 20 m ~ 25 yd (kept); CA-0024+CA-4535+CA-6535 20 m ~ 25 yd (kept); CA-0024+CA-4535 45 m ~ 50 yd (very tight); CA-0024+CA-6503+CA-6535 20 m ~ 25 yd (kept); CA-0025+CA-4535+CA-6503+CA-6535 20 m ~ 25 yd (kept); CA-0025+CA-4535+CA-6535 20 m ~ 25 yd (kept); CA-0025+CA-4535 45 m ~ 50 yd (very tight); CA-0025+CA-6503+CA-6535 20 m ~ 25 yd (kept); CA-0073+CA-1238+CA-6539 20 m ~ 25 yd (kept); CA-0771+CA-6547+CA-6548 20 m ~ 25 yd (kept); CA-0771+CA-6547 20 m ~ 25 yd (kept); CA-0772+CA-4524+CA-6518 20 m ~ 25 yd (kept); CA-0772+CA-4525+CA-6518 20 m ~ 25 yd (kept); CA-0780+CA-1233+CA-6550 20 m ~ 25 yd (kept); CA-0780+CA-6542+CA-6550 20 m ~ 25 yd (kept); CA-0788+CA-6542+CA-6549 20 m ~ 25 yd (kept); CA-0788+CA-6549 20 m ~ 25 yd (kept); CA-0795+CA-6537+US-8484 20 m ~ 25 yd (kept); CA-1222+CA-4410+CA-6545 20 m ~ 25 yd (kept); CA-1225+CA-4425+CA-6503 20 m ~ 25 yd (kept)
 - stale inputs: -
 
@@ -52,13 +52,13 @@
 - near a size threshold: CA-0097+CA-4546 79 m ~ 100 yd (small); CA-4543+CA-4558 79 m ~ 100 yd (small)
 - stale inputs: -
 
-## CA-NS: live pairs 6 -> 9 (+3 / -0)
-- gained: CA-0013+CA-1818 CA-1822+CA-1824 CA-4837+CA-4849
-- lost: -
+## CA-NS: live pairs 6 -> 4 (+4 / -6)
+- gained: CA-0885+CA-5495 CA-1822+CA-1824 CA-1913+CA-6111 CA-4837+CA-4849
+- lost: CA-0016+CA-1718 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-0470+CA-1809 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-0899+CA-1741 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-0935+CA-1822 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-0935+CA-1824 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-1900+CA-1901 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand)
 - touching held parks: -
 - touching pin-only parks: -
 - water / bank: 1
-- one-record same land: CA-0016+CA-1718 CA-0470+CA-1809 CA-0899+CA-1741 CA-0935+CA-1822 CA-0935+CA-1824 CA-0952+CA-6437 CA-1900+CA-1901
+- one-record same land: CA-0952+CA-6437
 - near a size threshold: CA-0013+CA-1818 25 m ~ 25 yd (kept); CA-1913+CA-6111 101 m ~ 100 yd (small); CA-4837+CA-4849 89 m ~ 100 yd (small)
 - stale inputs: -
 
@@ -82,14 +82,14 @@
 - near a size threshold: CA-0070+CA-0127 39 m ~ 50 yd (very tight)
 - stale inputs: -
 
-## CA-ON: live pairs 13 -> 105 (+95 / -3)
-- gained: CA-0006+CA-6003 CA-0010+CA-0168 CA-0010+CA-0241 CA-0010+CA-0273 CA-0010+CA-5628 CA-0021+CA-5628 CA-0050+CA-0222 CA-0050+CA-0346 CA-0050+CA-0353 CA-0050+CA-0360 CA-0050+CA-0370 CA-0050+CA-0379 CA-0050+CA-0386 CA-0050+CA-0395 CA-0052+CA-6003 CA-0053+CA-0279 CA-0067+CA-6003 CA-0078+CA-0354 CA-0078+CA-0435 CA-0099+CA-6003 CA-0138+CA-1301 CA-0148+CA-5628 CA-0164+CA-5628 CA-0168+CA-5628 CA-0182+CA-6003 CA-0189+CA-6003 CA-0190+CA-5628 CA-0196+CA-5628 CA-0214+CA-5628 CA-0229+CA-5628
-- lost: CA-0052+CA-0053 (not sure: one record covers two parks ('Long Point Biosphere Reserve' is a biosphere, the ); CA-0052+CA-0279 (not sure: one record covers two parks ('Long Point Biosphere Reserve' is a biosphere, the ); CA-5633+CA-5942 (not sure: one record covers two parks (the record 'Bowmanville/Westside Conservation Area')
+## CA-ON: live pairs 13 -> 123 (+123 / -13)
+- gained: CA-0006+CA-6003 CA-0010+CA-0168 CA-0010+CA-0241 CA-0010+CA-0273 CA-0010+CA-5628 CA-0021+CA-5628 CA-0050+CA-0222 CA-0050+CA-0346 CA-0050+CA-0353 CA-0050+CA-0360 CA-0050+CA-0370 CA-0050+CA-0379 CA-0050+CA-0386 CA-0050+CA-0395 CA-0052+CA-6003 CA-0053+CA-0279 CA-0067+CA-6003 CA-0078+CA-0354 CA-0078+CA-0435 CA-0094+CA-6003 CA-0099+CA-6003 CA-0138+CA-1301 CA-0148+CA-5628 CA-0164+CA-5628 CA-0168+CA-5628 CA-0182+CA-6003 CA-0189+CA-6003 CA-0190+CA-5628 CA-0196+CA-5628 CA-0214+CA-5628
+- lost: CA-0052+CA-0053 (not sure: one record covers two parks ('Long Point Biosphere Reserve' is a biosphere, the ); CA-0052+CA-0279 (not sure: one record covers two parks ('Long Point Biosphere Reserve' is a biosphere, the ); CA-0057+CA-0307 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-0174+CA-6371 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-1303+CA-1304 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-1320+CA-1321 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-1361+CA-1362 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-1507+CA-1508 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-5143+CA-6003 (merged into one row: CA-5143+CA-6003@trail@44.220,-76.550 (the same not-sure pair, shown o); CA-5358+CA-5566 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-5565+CA-5628 (not sure: no park here owns land (designations only): no owner on the records); CA-5633+CA-5942 (not sure: one record covers two parks (the record 'Bowmanville/Westside Conservation Area'); CA-5991+CA-5992 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand)
 - touching held parks: -
 - touching pin-only parks: -
-- water / bank: 10
-- one-record same land: CA-0052+CA-0053 CA-0052+CA-0279 CA-0057+CA-0307 CA-0174+CA-6371 CA-1303+CA-1304 CA-1320+CA-1321 CA-1361+CA-1362 CA-1475+CA-1699 CA-1475+CA-1699 CA-1507+CA-1508 CA-5358+CA-5566 CA-5633+CA-5942 CA-5991+CA-5992
-- near a size threshold: CA-0050+CA-0222 25 m ~ 25 yd (kept); CA-0050+CA-0346 45 m ~ 50 yd (very tight); CA-0050+CA-0360 27 m ~ 25 yd (kept); CA-0050+CA-0379 53 m ~ 50 yd (very tight); CA-0050+CA-0386 25 m ~ 25 yd (kept); CA-0050+CA-1479 45 m ~ 50 yd (very tight); CA-0053+CA-0279 53 m ~ 50 yd (very tight); CA-0341+US-2489 27 m ~ 25 yd (kept)
+- water / bank: 12
+- one-record same land: CA-0052+CA-0053 CA-0052+CA-0279 CA-1475+CA-1699 CA-1475+CA-1699 CA-5633+CA-5942
+- near a size threshold: CA-0050+CA-0222 25 m ~ 25 yd (kept); CA-0050+CA-0346 45 m ~ 50 yd (very tight); CA-0050+CA-0360 27 m ~ 25 yd (kept); CA-0050+CA-0379 53 m ~ 50 yd (very tight); CA-0050+CA-0386 25 m ~ 25 yd (kept); CA-0050+CA-1479 45 m ~ 50 yd (very tight); CA-0053+CA-0279 53 m ~ 50 yd (very tight); CA-0341+US-2489 27 m ~ 25 yd (kept); CA-1473+US-4491 39 m ~ 50 yd (very tight)
 - stale inputs: -
 
 ## CA-PE: live pairs 0 -> 0 (+0 / -0)
@@ -102,23 +102,23 @@
 - near a size threshold: -
 - stale inputs: -
 
-## CA-QC: live pairs 11 -> 5 (+0 / -6)
+## CA-QC: live pairs 11 -> 1 (+0 / -10)
 - gained: -
-- lost: CA-0056+CA-1939 (gone); CA-0056+CA-2280 (gone); CA-0059+CA-2020 (dropped: private land at the spot (ownership map): counts only for its own park number, ne); CA-1032+CA-2040 (gone); CA-1940+CA-2231 (gone); CA-2020+CA-2151 (dropped: private land at the spot (ownership map): counts only for its own park number, ne)
+- lost: CA-0033+CA-1961 (not sure: no owner on the park record or in its name for Bonaventure Island and Perce Rock); CA-0037+CA-0086 (merged into one row: CA-0037+CA-0086@area@47.923,-69.677 (the same not-sure pair, shown on); CA-0056+CA-1939 (gone); CA-0056+CA-2280 (gone); CA-0059+CA-2020 (not sure: no owner on the park record or in its name for Mont Saint Hilaire Biosphere Rese); CA-0059+CA-2151 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-0086+CA-0495 (water only: boat or kayak); CA-1032+CA-2040 (gone); CA-1940+CA-2231 (gone); CA-2020+CA-2151 (not sure: no owner on the park record or in its name for Gault de l'Universite McGill Natu)
 - touching held parks: -
 - touching pin-only parks: -
 - water / bank: 1
-- one-record same land: CA-0059+CA-2151
+- one-record same land: -
 - near a size threshold: CA-0086+CA-0495 27 m ~ 25 yd (kept); CA-0497+CA-1023 20 m ~ 25 yd (kept); CA-0499+CA-1026 20 m ~ 25 yd (kept); CA-0500+CA-2315 20 m ~ 25 yd (kept); CA-1022+CA-5051 20 m ~ 25 yd (kept); CA-1029+CA-2292+CA-2301 108 m ~ 100 yd (small); CA-1918+CA-2342 20 m ~ 25 yd (kept); CA-1923+CA-2342 92 m ~ 100 yd (small); CA-2024+CA-4967 20 m ~ 25 yd (kept); CA-2073+CA-2365 100 m ~ 100 yd (small); CA-2211+CA-2290 20 m ~ 25 yd (kept); CA-2211+CA-2311 20 m ~ 25 yd (kept); CA-2285+CA-2315 20 m ~ 25 yd (kept); CA-2292+CA-2301 108 m ~ 100 yd (small); CA-2292+CA-2323+CA-2328 20 m ~ 25 yd (kept); CA-2292+CA-2323 20 m ~ 25 yd (kept); CA-2293+CA-2341 20 m ~ 25 yd (kept); CA-2296+CA-2305 20 m ~ 25 yd (kept); CA-2304+CA-2322 20 m ~ 25 yd (kept); CA-2304+CA-2342 20 m ~ 25 yd (kept)
 - stale inputs: -
 
-## CA-SK: live pairs 10 -> 37 (+27 / -0)
-- gained: CA-0051+CA-1118 CA-0075+CA-6128 CA-0075+CA-6130 CA-0075+CA-6140 CA-0075+CA-6142 CA-0075+CA-6143 CA-0075+CA-6144 CA-0075+CA-6145 CA-0075+CA-6146 CA-0075+CA-6147 CA-0075+CA-6148 CA-0075+CA-6149 CA-0075+CA-6150 CA-0075+CA-6151 CA-0075+CA-6152 CA-0075+CA-6153 CA-0081+CA-2717 CA-1117+CA-2605 CA-1118+CA-2711 CA-2653+CA-2654 CA-2653+CA-2677 CA-2676+CA-2677 CA-2740+CA-2741 CA-2838+CA-2839 CA-2894+CA-2896 CA-6146+CA-6147 CA-6152+CA-6153
-- lost: -
+## CA-SK: live pairs 10 -> 24 (+24 / -10)
+- gained: CA-0051+CA-1118 CA-0075+CA-6128 CA-0075+CA-6130 CA-0075+CA-6140 CA-0075+CA-6142 CA-0075+CA-6143 CA-0075+CA-6144 CA-0075+CA-6145 CA-0075+CA-6146 CA-0075+CA-6147 CA-0075+CA-6148 CA-0075+CA-6149 CA-0075+CA-6150 CA-0075+CA-6151 CA-0075+CA-6152 CA-0075+CA-6153 CA-1117+CA-2605 CA-1118+CA-2711 CA-2653+CA-2654 CA-2653+CA-2677 CA-2676+CA-2677 CA-2740+CA-2741 CA-2838+CA-2839 CA-2894+CA-2896
+- lost: CA-0051+CA-2711 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-0082+CA-1146 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-0082+CA-2819 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-0621+CA-2820 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-0630+CA-2916 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-1093+CA-2549 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-1127+CA-2747 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-1149+CA-2844 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-2644+CA-2645 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-2879+CA-2880 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand)
 - touching held parks: -
 - touching pin-only parks: -
 - water / bank: 0
-- one-record same land: CA-0051+CA-2711 CA-0082+CA-1146 CA-0082+CA-2819 CA-0591+CA-6057 CA-0600+CA-6064 CA-0621+CA-2820 CA-0624+CA-6072 CA-0630+CA-2916 CA-1093+CA-2549 CA-1127+CA-2747 CA-1149+CA-2844 CA-2644+CA-2645 CA-2879+CA-2880
+- one-record same land: CA-0591+CA-6057 CA-0600+CA-6064 CA-0624+CA-6072
 - near a size threshold: -
 - stale inputs: -
 
@@ -132,13 +132,13 @@
 - near a size threshold: -
 - stale inputs: -
 
-## CA-YT: live pairs 2 -> 6 (+4 / -0)
+## CA-YT: live pairs 2 -> 4 (+4 / -2)
 - gained: CA-0039+CA-0106 CA-0044+CA-0742 CA-0044+CA-0842 CA-0106+CA-4623
-- lost: -
+- lost: CA-0848+CA-4625 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand); CA-4635+CA-4636 (not sure: no ownership source for this row (an inside or overlapping pair needs one: Brand)
 - touching held parks: -
 - touching pin-only parks: -
 - water / bank: 1
-- one-record same land: CA-0848+CA-4625 CA-4635+CA-4636
+- one-record same land: -
 - near a size threshold: CA-0044+CA-0742 105 m ~ 100 yd (small); CA-0841+CA-3622 85 m ~ 100 yd (small)
 - stale inputs: -
 
