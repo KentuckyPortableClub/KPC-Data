@@ -503,22 +503,22 @@
   "US-NY": {
    "checked": 851,
    "counts": {
-    "agree": 287,
+    "agree": 285,
     "handover_hints": 58,
     "no_page": 8,
-    "no_size": 131,
+    "no_size": 121,
     "off": 262,
-    "ours_unknown": 9,
+    "ours_unknown": 12,
     "parks": 851,
     "retired": 0,
-    "unsure": 129,
-    "weak": 18,
+    "unsure": 138,
+    "weak": 17,
     "with_outline": 826
    },
    "left": 0,
    "parks": 851,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-09"
   },
   "US-OK": {
    "checked": 205,
@@ -748,31 +748,42 @@
  },
  "last": {
   "areas": [
-   "US-PA"
+   "US-NY"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 8,
+   "browser": 7,
+   "dropped_queued": 1,
    "errors": 0,
-   "for_person_urls": [],
-   "requests": 613,
+   "for_person_urls": [
+    [
+     "https://www.njpalisades.org/robots.txt",
+     "robots.txt answered 202: nothing fetched from www.njpalisades.org this run"
+    ],
+    [
+     "https://sojournertruthstatepark.info/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from sojournertruthstatepark.info this run"
+    ]
+   ],
+   "requests": 1779,
    "rested": 0,
-   "robots": 0,
+   "robots": 16,
+   "robots_unreadable": 2,
    "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 7,
-   "no_size": 37,
-   "ours_unknown": 9,
-   "pages_read": 580,
-   "parks": 494,
+   "handover_hints": 58,
+   "no_size": 129,
+   "ours_unknown": 12,
+   "pages_read": 1456,
+   "parks": 851,
    "retired": 0,
-   "size_agree": 71,
-   "size_off": 42,
-   "size_unsure": 328,
+   "size_agree": 285,
+   "size_off": 262,
+   "size_unsure": 138,
    "skipped_fresh": 0,
-   "with_outline": 487
+   "with_outline": 826
   },
   "when": "2026-11-09"
  },
