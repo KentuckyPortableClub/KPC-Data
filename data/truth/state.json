@@ -323,22 +323,22 @@
   "US-ME": {
    "checked": 148,
    "counts": {
-    "agree": 15,
-    "handover_hints": 9,
+    "agree": 17,
+    "handover_hints": 10,
     "no_page": 3,
-    "no_size": 93,
-    "off": 17,
-    "ours_unknown": 3,
+    "no_size": 92,
+    "off": 16,
+    "ours_unknown": 4,
     "parks": 148,
     "retired": 0,
-    "unsure": 8,
-    "weak": 8,
-    "with_outline": 139
+    "unsure": 7,
+    "weak": 6,
+    "with_outline": 141
    },
    "left": 0,
    "parks": 148,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-09"
   },
   "US-MN": {
    "checked": 319,
@@ -752,43 +752,50 @@
  },
  "last": {
   "areas": [
-   "US-NH"
+   "US-ME"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 8,
-   "dropped_queued": 2,
+   "browser": 28,
+   "dropped_queued": 125,
    "errors": 0,
-   "for_person": 2,
    "for_person_urls": [
     [
-     "https://www.arcgis.com/itemdata/92d347a7683b26a11dab76ccf9a5cac2/58b36e66aa2a40669f43f3771f0514a3/BELLAMYRIVERWMAEAST.pdf",
-     "HTTP 403 twice"
+     "https://apps.web.maine.gov/robots.txt",
+     "robots.txt answered 403: nothing fetched from apps.web.maine.gov this run"
     ],
     [
-     "https://www.arcgis.com/itemdata/92d347a7683b26a11dab76ccf9a5cac2/422ca4604a4f414fb56e393bbd420f23/BRACKETTBROOKWMA.pdf?response-cache-control=max-age%3D0%2C+s-maxage%3D600%2C+v%3D1762188798000&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECcaCXVzLWVhc3QtMSJHM",
-     "HTTP 403 twice"
+     "https://www.maine.gov/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.maine.gov this run"
+    ],
+    [
+     "https://maine.gov/robots.txt",
+     "robots.txt answered 403: nothing fetched from maine.gov this run"
+    ],
+    [
+     "https://www.mindat.org/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.mindat.org this run"
     ]
    ],
-   "requests": 207,
+   "requests": 156,
    "rested": 0,
-   "retry403": 2,
-   "robots": 1,
-   "strikes": 4
+   "robots": 5,
+   "robots_unreadable": 4,
+   "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 5,
-   "no_size": 156,
-   "ours_unknown": 5,
-   "pages_read": 110,
-   "parks": 206,
+   "handover_hints": 10,
+   "no_size": 97,
+   "ours_unknown": 4,
+   "pages_read": 99,
+   "parks": 148,
    "retired": 0,
-   "size_agree": 16,
-   "size_off": 10,
+   "size_agree": 17,
+   "size_off": 16,
    "size_unsure": 7,
    "skipped_fresh": 0,
-   "with_outline": 194
+   "with_outline": 141
   },
   "when": "2026-11-09"
  },
