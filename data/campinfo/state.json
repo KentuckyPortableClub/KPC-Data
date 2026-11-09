@@ -585,9 +585,9 @@
     "with_facts": 43,
     "with_sites": 0
    },
-   "left": 1,
-   "status": "partial",
-   "updated": "2026-11-07"
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-09"
   },
   "US-NC": {
    "camps": 147,
@@ -1400,7 +1400,7 @@
     "src": null,
     "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-11-07"
+   "read": "2026-11-09"
   },
   "US-NC": {
    "cell": {
@@ -2575,12 +2575,12 @@
  },
  "last": {
   "areas": [
-   "US-ID"
+   "US-MT"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 315,
+   "dropped_queued": 311,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2592,7 +2592,7 @@
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 12,
+   "requests": 2,
    "rested": 0,
    "robots": 2,
    "robots_unreadable": 2,
@@ -2600,11 +2600,11 @@
   },
   "ridb_key": false,
   "stat": {
-   "camps": 316,
+   "camps": 312,
    "elevations": 0,
    "errors": 0,
    "needs_browser": 0,
-   "needs_key": 316,
+   "needs_key": 312,
    "no_page": 0,
    "not_official": 0,
    "ok": 0,
@@ -2612,7 +2612,7 @@
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 148
+   "skipped_fresh": 79
   },
   "when": "2026-11-09"
  },
