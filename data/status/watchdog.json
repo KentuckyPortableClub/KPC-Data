@@ -1,22 +1,5 @@
 {
  "restarted": {
-  "kpc-camp-weekly.yml|2026-11-02T07:29:00+00:00": "2026-11-02T13:22+00:00 started",
-  "kpc-closures.yml|2026-11-02T12:37:00+00:00": "2026-11-02T13:22+00:00 started",
-  "kpc-collector.yml|2026-11-02T12:17:00+00:00": "2026-11-02T13:22+00:00 started",
-  "kpc-copy-from-links.yml|2026-11-02T12:11:00+00:00": "2026-11-02T13:22+00:00 started",
-  "kpc-detective.yml|2026-11-02T10:41:00+00:00": "2026-11-02T13:22+00:00 started",
-  "kpc-eu-alerts.yml|2026-11-02T12:41:00+00:00": "2026-11-02T13:22+00:00 started",
-  "kpc-fers-pending.yml|2026-11-02T10:23:00+00:00": "2026-11-02T13:22+00:00 started",
-  "kpc-fetch-files.yml|2026-11-02T10:41:00+00:00": "2026-11-02T13:22+00:00 started",
-  "kpc-flow.yml|2026-11-02T12:47:00+00:00": "2026-11-02T13:22+00:00 started",
-  "kpc-gis-hunter.yml|2026-11-02T07:13:00+00:00": "2026-11-02T13:22+00:00 started",
-  "kpc-gps-packs.yml|2026-11-02T08:29:00+00:00": "2026-11-02T13:22+00:00 started",
-  "kpc-helpers.yml|2026-11-02T10:23:00+00:00": "2026-11-02T13:22+00:00 started",
-  "kpc-tile-index.yml|2026-11-02T07:47:00+00:00": "2026-11-02T13:22+00:00 started",
-  "kpc-trial-outside-ky.yml|2026-11-02T06:51:00+00:00": "2026-11-02T13:22+00:00 started",
-  "kpc-waiting-room.yml|2026-11-02T12:43:00+00:00": "2026-11-02T13:22+00:00 started",
-  "kpc-watch.yml|2026-11-02T11:53:00+00:00": "2026-11-02T13:22+00:00 started",
-  "kpc-world-finder.yml|2026-11-02T12:23:00+00:00": "2026-11-02T13:22+00:00 started",
   "kpc-copy-from-links.yml|2026-11-02T15:11:00+00:00": "2026-11-02T16:06+00:00 started",
   "kpc-engine.yml|2026-11-02T15:37:00+00:00": "2026-11-02T16:06+00:00 started",
   "kpc-youtube-comments.yml|2026-11-02T13:37:00+00:00": "2026-11-02T16:06+00:00 skipped (not restarted)",
@@ -320,16 +303,23 @@
   "kpc-fetch-files.yml|2026-11-09T10:38:00+00:00": "2026-11-09T12:40+00:00 started",
   "kpc-helpers.yml|2026-11-09T10:23:00+00:00": "2026-11-09T12:40+00:00 started",
   "kpc-waiting-room.yml|2026-11-09T11:13:00+00:00": "2026-11-09T12:40+00:00 started",
-  "kpc-watch.yml|2026-11-09T11:53:00+00:00": "2026-11-09T12:40+00:00 started"
+  "kpc-watch.yml|2026-11-09T11:53:00+00:00": "2026-11-09T12:40+00:00 started",
+  "kpc-closures.yml|2026-11-09T13:38:00+00:00": "2026-11-09T15:11+00:00 started",
+  "kpc-copy-from-links.yml|2026-11-09T14:11:00+00:00": "2026-11-09T15:11+00:00 started",
+  "kpc-eu-alerts.yml|2026-11-09T12:40:00+00:00": "2026-11-09T15:11+00:00 started",
+  "kpc-flow.yml|2026-11-09T13:46:00+00:00": "2026-11-09T15:11+00:00 started",
+  "kpc-quality-sample.yml|2026-11-09T13:41:00+00:00": "2026-11-09T15:11+00:00 started",
+  "kpc-waiting-room.yml|2026-11-09T14:42:00+00:00": "2026-11-09T15:11+00:00 started",
+  "kpc-youtube-comments.yml|2026-11-09T13:36:00+00:00": "2026-11-09T15:11+00:00 skipped (not restarted)"
  },
- "last": "2026-11-09T12:40+00:00",
+ "last": "2026-11-09T15:11+00:00",
  "last_restarted": [
-  "kpc-copy-from-links.yml (missed Nov 09 12:11 UTC)",
-  "kpc-detective.yml (missed Nov 09 10:39 UTC)",
-  "kpc-fers-pending.yml (missed Nov 09 10:23 UTC)",
-  "kpc-fetch-files.yml (missed Nov 09 10:38 UTC)",
-  "kpc-helpers.yml (missed Nov 09 10:23 UTC)",
-  "kpc-waiting-room.yml (missed Nov 09 11:13 UTC)",
-  "kpc-watch.yml (missed Nov 09 11:53 UTC)"
+  "kpc-closures.yml (missed Nov 09 13:38 UTC)",
+  "kpc-copy-from-links.yml (missed Nov 09 14:11 UTC)",
+  "kpc-eu-alerts.yml (missed Nov 09 12:40 UTC)",
+  "kpc-flow.yml (missed Nov 09 13:46 UTC)",
+  "kpc-quality-sample.yml (missed Nov 09 13:41 UTC)",
+  "kpc-waiting-room.yml (missed Nov 09 14:42 UTC)",
+  "kpc-youtube-comments.yml (missed Nov 09 13:36 UTC, NOT restarted: its next scheduled run catches up)"
  ]
 }
