@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-09T21:41Z",
+ "checked": "2026-11-09T22:34Z",
  "switched_on": false,
  "results": [
   {
@@ -799,7 +799,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dA/91a139f30e/fo-PikeSF_maps.pdf?language_id=1"
+    "F-D3 2 of 20 re-tested links dead, e.g. https://www.in.gov/dA/846dfeb0e5/harmonie_trail.pdf?language_id=1"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1103,11 +1103,13 @@
   {
    "path": "data/fers/CA-NB.json.gz",
    "kind": "fers",
-   "why": [],
+   "why": [
+    "F-2 small area: all 2 live candidate pair(s) gone"
+   ],
    "notes": [
     "replaces live data/fers/CA-NB.json (same file, other format): promotion removes the old name"
    ],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/fers/CA-NL.json",
@@ -1119,9 +1121,12 @@
   {
    "path": "data/fers/CA-NS.json",
    "kind": "fers",
-   "why": [],
+   "why": [
+    "F-2 only 0 of 6 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
+    "F-2 4 new candidate pairs since the live file (over 10% of 6): a person looks at them first, e.g. CA-0885+CA-5495, CA-1822+CA-1824, CA-1913+CA-6111"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/fers/CA-NT.json",
@@ -1143,10 +1148,10 @@
    "path": "data/fers/CA-ON.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 13 -> 99 (over 30% change)",
-    "F-2 NOT SURE 302 -> 44 (over 30% change)",
-    "F-2 only 10 of 13 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 89 new candidate pairs since the live file (over 10% of 13): a person looks at them first, e.g. CA-0006+CA-6003, CA-0010+CA-0168, CA-0010+CA-0241"
+    "F-2 candidates 13 -> 117 (over 30% change)",
+    "F-2 NOT SURE 302 -> 26 (over 30% change)",
+    "F-2 only 0 of 13 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
+    "F-2 117 new candidate pairs since the live file (over 10% of 13): a person looks at them first, e.g. CA-0006+CA-6003, CA-0010+CA-0168, CA-0010+CA-0241"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -2893,6 +2898,15 @@
   },
   {
    "path": "data/truth/US-AZ.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/truth/US-CA.json",
    "kind": "truth",
    "why": [],
    "notes": [
