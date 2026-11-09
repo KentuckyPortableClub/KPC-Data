@@ -88,17 +88,17 @@
     "no_page": 0,
     "no_size": 16,
     "off": 1,
-    "ours_unknown": 4,
+    "ours_unknown": 10,
     "parks": 35,
     "retired": 0,
     "unsure": 1,
-    "weak": 3,
-    "with_outline": 23
+    "weak": 15,
+    "with_outline": 29
    },
    "left": 0,
    "parks": 35,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-09"
   },
   "US-DE": {
    "checked": 89,
@@ -752,46 +752,37 @@
  },
  "last": {
   "areas": [
-   "US-DE"
+   "US-DC"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 30,
-   "dropped_queued": 19,
+   "browser": 11,
    "errors": 0,
    "for_person_urls": [
     [
-     "https://destateparks.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from destateparks.com this run"
-    ],
-    [
-     "https://www.nrtdatabase.org/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.nrtdatabase.org this run"
-    ],
-    [
-     "https://www.destateparks.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.destateparks.com this run"
+     "https://www.usna.usda.gov/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.usna.usda.gov this run"
     ]
    ],
-   "requests": 129,
+   "requests": 143,
    "rested": 0,
-   "robots": 3,
-   "robots_unreadable": 3,
+   "robots": 1,
+   "robots_unreadable": 1,
    "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 2,
-   "no_size": 68,
-   "ours_unknown": 12,
-   "pages_read": 85,
-   "parks": 89,
+   "handover_hints": 1,
+   "no_size": 16,
+   "ours_unknown": 10,
+   "pages_read": 109,
+   "parks": 35,
    "retired": 0,
-   "size_agree": 2,
+   "size_agree": 1,
    "size_off": 1,
-   "size_unsure": 2,
+   "size_unsure": 1,
    "skipped_fresh": 0,
-   "with_outline": 85
+   "with_outline": 29
   },
   "when": "2026-11-09"
  },
