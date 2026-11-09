@@ -11,8 +11,14 @@ name: KPC 2-fer bot (hidden)
 # batch): AREAS. region = one or more area names from .github/fers-areas.json (southeast, canadaeast, ...) or 'areas' for all of
 # them: one job per area, each with its own time budget, 3 at a time. An area out of time keeps its previous files; run it again
 # by name (python3 .github/scripts/kpc_fers_areas.py status prints the line). A time-out or a crash now shows RED, not green.
-# No cron (a new cron needs Brandon's words).
+# Nov 9 evening (Brandon t909u-t918u, 4:33-4:45 PM CST): ONE monthly cron (his t911u/t912u 'once a month'): pass all on every area.
+# Saved outlines first (the key's saved copy, then this bot's own saved-live copy on KPC-Data's fers-cache release; a live read is
+# saved for next time and re-read about once a month, a quarter of them per run). Only the pairs whose parks changed (outline,
+# record ids, POTA entry, or a declared rule change in KPC-Links .github/fers-rule-scope.json) are tested again. Each run also
+# rebuilds the due areas in full, round-robin (one full rebuild per area per full_cycle_days = 90, Brandon confirmed t918u).
 on:
+  schedule:
+    - cron: '23 8 5 * *'   # monthly, the 5th, 2:23 AM CST (after the monthly US key on the 1st and Canada key on the 2nd)
   workflow_dispatch:
     inputs:
       pass:
@@ -27,6 +33,9 @@ on:
       region:
         description: 'Area name(s) from .github/fers-areas.json (e.g. "southeast canadaeast"), areas (all of them, one job each), or as before: both, na (US + Canada), world, ky'
         default: 'both'
+      full:
+        description: 'Full rebuild: blank = the due areas only (round-robin), all = every job (emergency), none = no full area'
+        default: ''
 permissions:
   contents: write
 concurrency:
@@ -42,11 +51,15 @@ jobs:
     steps:
       - uses: actions/checkout@v5
         with:
-          sparse-checkout: .github
+          sparse-checkout: |
+            .github
+            data/fers/full-rebuild-*.txt
+          sparse-checkout-cone-mode: false
       - id: p
         env:
-          REGION: ${{ inputs.region }}
+          REGION: ${{ inputs.region || 'areas' }}
           STATES: ${{ inputs.states }}
+          FULL: ${{ inputs.full }}
         run: python3 .github/scripts/kpc_fers_areas.py plan >> "$GITHUB_OUTPUT"
   fers:
     needs: plan
@@ -89,6 +102,9 @@ jobs:
             gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D cache/us --clobber || { kpc_rc=$?; echo "::warning title=download::a download failed (exit $kpc_rc); results may use old or missing files"; echo "download - a download failed (exit $kpc_rc); results may use old or missing files" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
             gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'CA-ALL.json.gz' -D cache/ca --clobber || { kpc_rc=$?; echo "::warning title=download::a download failed (exit $kpc_rc); results may use old or missing files"; echo "download - a download failed (exit $kpc_rc); results may use old or missing files" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           fi
+          # Nov 9 evening: this bot's own saved outlines for the area (read live once, saved on this repo's fers-cache release)
+          mkdir -p cache/fers
+          gh release download fers-cache -R "$GITHUB_REPOSITORY" -p "saved-live-${{ matrix.r.tag || matrix.r.name }}.json.gz" -D cache/fers --clobber 2>/dev/null || echo "::notice title=2-fer saved outlines::no saved-live copy for ${{ matrix.r.name }} yet (first run reads live and saves)"
       - name: Refuse a stale or incomplete key for this region (Nov 8)
         # Root cause: run 42451234481 measured W-AU on world W-42410527148 while a newer world build was coming; bad output followed.
         id: key_gate
@@ -111,11 +127,13 @@ jobs:
         continue-on-error: true
         timeout-minutes: 335
         env:
-          PASS: ${{ inputs.pass }}
-          MINUTES: ${{ inputs.minutes }}
+          PASS: ${{ inputs.pass || 'all' }}
+          MINUTES: ${{ inputs.minutes || '320' }}
           STATES: ${{ matrix.r.states }}
           REGION: ${{ matrix.r.region }}
           RUN_TAG: ${{ matrix.r.tag }}
+          KPC_FERS_FULL: ${{ matrix.r.full }}         # Nov 9 evening: '1' = this area's round-robin full rebuild (every pair again)
+          KPC_FERS_LIVE_DIR: cache/fers
           KPC_FERS_PARK_S: '600'   # Nov 9 PM: one park / pair / map request may take 10 minutes at most (skipped + listed after)
         run: |
           # Nov 9 PM (Quality NO on #57): every handler below ENDS the step with the script's own exit code (1 = crash, 3 = hard stop),
@@ -150,7 +168,7 @@ jobs:
         id: kept_green_4
         continue-on-error: true
         env:
-          OBS_RUN: 2-fer bot pass ${{ inputs.pass }} (${{ matrix.r.name }})
+          OBS_RUN: 2-fer bot pass ${{ inputs.pass || 'all' }} (${{ matrix.r.name }})
           OBS_FILE: kpcdata/data/observations/fers-${{ matrix.r.name }}.json
           OBS_DATA_DIR: kpcdata
         run: mkdir -p kpcdata/data/observations; python3 .github/scripts/kpc_map_observations.py || { kpc_rc=$?; echo "::error title=kpc_map_observations.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_map_observations.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }
@@ -171,10 +189,22 @@ jobs:
           else
             for f in data/fers/*; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
           fi
+          # Nov 9 evening: the round-robin full rebuild is recorded only after it finished and saved
+          if [ "${{ matrix.r.full }}" = 1 ] && [ -n "${{ matrix.r.tag }}" ]; then
+            date +%F > "kpcdata/data/fers/full-rebuild-${{ matrix.r.tag }}.txt"   # one small file per area (3 jobs push at once: no clashes)
+          fi
           cd kpcdata
           for f in data/fers/*.json.gz; do [ -f "$f" ] && rm -f "${f%.gz}"; done
           cd ..
-          STRICT=1 bash .github/scripts/kpc_push_data.sh kpcdata "2-fer bot pass ${{ inputs.pass }} (${{ matrix.r.name }}, hidden data)" data || exit 1   # Nov 8: no continue-on-error; never if: always()
+          STRICT=1 bash .github/scripts/kpc_push_data.sh kpcdata "2-fer bot pass ${{ inputs.pass || 'all' }} (${{ matrix.r.name }}, hidden data)" data || exit 1   # Nov 8: no continue-on-error; never if: always()
+      - name: Keep the outlines read live for next time (fers-cache release, Nov 9 evening)
+        if: ${{ success() && steps.kept_green_3.outcome == 'success' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ls cache/fers/saved-live-*.json.gz >/dev/null 2>&1 || { echo "nothing read live"; exit 0; }
+          gh release view fers-cache -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || gh release create fers-cache -R "$GITHUB_REPOSITORY" --prerelease --title '2-fer saved outlines' --notes "Outlines the 2-fer bot had to read live (no saved copy in KPC-Links boundary-cache), one file per area; re-read about once a month."
+          gh release upload fers-cache cache/fers/saved-live-*.json.gz -R "$GITHUB_REPOSITORY" --clobber
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:

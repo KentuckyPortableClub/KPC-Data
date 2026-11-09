@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """2-fer areas (Nov 9 2026, Brandon t905u/t906u): one job per area, each with its own time budget.
-  plan     REGION='southeast canadaeast' | 'areas' | na | world | ky | both  -> prints  list=[{name, region, states, tag}, ...]
+  plan     REGION='southeast canadaeast' | 'areas' | na | world | ky | both  -> prints  list=[{name, region, states, tag, full}, ...]
+           full='1' = this area is rebuilt in full this run (round-robin, one full rebuild per area per full_cycle_days;
+           FULL=all = every job in full (emergency), FULL=none = no full area this run)
            (the KPC 2-fer bot's matrix; old values na / world / ky / both work as before)
   status   one line per area: the states' last pass dates and any 'incomplete' mark, then the dispatch line for the areas that
            are not finished (run them again by name until every area has a good file). Read only. SINCE=2026-11-10 = a state
@@ -8,7 +10,20 @@
 Areas: .github/fers-areas.json. Kentucky is its own run (region 'ky'), as before."""
 import json, os, pathlib, sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent.parent
-AREAS = json.load(open(ROOT / '.github/fers-areas.json', encoding='utf-8'))['areas']
+CFG = json.load(open(ROOT / '.github/fers-areas.json', encoding='utf-8'))
+AREAS = CFG['areas']
+CYCLE = int(os.environ.get('KPC_FERS_FULL_CYCLE_DAYS') or CFG.get('full_cycle_days') or 90)
+
+
+def full_due(names, today=None, last=None):
+    """Nov 9 evening (Brandon t917u/t918u): the areas due for their one full rebuild per cycle (never done or older than the cycle),
+    oldest first, at most ceil(all areas x 30 / cycle) per run."""
+    import datetime as dt, math
+    t = dt.date.fromisoformat(today or dt.date.today().isoformat())
+    if last is None:
+        last = {f.stem[len('full-rebuild-'):]: f.read_text().strip()[:10] for f in (ROOT / 'data/fers').glob('full-rebuild-*.txt')}
+    due = sorted((last.get(n) or '', n) for n in names if not last.get(n) or (t - dt.date.fromisoformat(last[n])).days >= CYCLE)
+    return [n for _, n in due[:max(1, math.ceil(len(AREAS) * 30 / CYCLE))]]
 
 
 def plan(region, states=''):
@@ -23,6 +38,9 @@ def plan(region, states=''):
     seen, uniq = set(), []
     for x in out:
         if x['name'] not in seen: seen.add(x['name']); uniq.append(x)
+    full = os.environ.get('FULL', '').strip().lower()
+    pick = set(x['name'] for x in uniq) if full in ('all', '1', 'yes', 'true') else set() if full in ('none', 'no', '0') else set(full_due([x['name'] for x in uniq if x['tag']]))
+    for x in uniq: x['full'] = '1' if x['name'] in pick else ''
     return uniq
 
 

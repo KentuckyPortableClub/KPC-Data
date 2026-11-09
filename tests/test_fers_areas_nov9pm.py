@@ -35,7 +35,8 @@ check(len(json.loads(r.stdout.split('list=', 1)[1])) == len(A), "plan: 'areas' =
 check('needs: plan' in Y and 'fromJSON(needs.plan.outputs.list)' in Y and 'max-parallel: 3' in Y, 'one job per area from the plan, at most 3 at once')
 check('STATES: ${{ matrix.r.states }}' in Y and 'RUN_TAG: ${{ matrix.r.tag }}' in Y and 'inputs.states' not in Y.split('  fers:', 1)[1], 'each job uses its own area (states + tag), not the dispatch box')
 check('data/fers/*-"$TAG".json' in Y, "an area job saves its own report / looked / missing files")
-check(not re.search(r'^\s*schedule:', Y, re.M) and 'cron' not in Y.split('on:', 1)[1].split('permissions:', 1)[0], 'no cron (a new cron needs Brandon\'s words)')
+# Nov 9 evening: Brandon's t911u/t912u ('once a month') allow exactly ONE monthly cron (test_fers_rolling_nov9eve.py)
+check(re.findall(r"cron: '([^']+)'", Y.split('on:', 1)[1].split('permissions:', 1)[0]) == ['23 8 5 * *'], 'exactly one cron, the monthly one Brandon asked for')
 check("success() && steps.kept_green_3.outcome == 'success'" in Y, 'Save still needs a finished Look step (an out-of-time area keeps its previous file)')
 # 3 a time-out is red, never green
 check('KPC_HARD_END' in Y and '335 * 60 - 300' in Y, 'the bot gets the step\'s hard end and stops 5 minutes before it')
