@@ -45,7 +45,7 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
 | US-WY | 301 | 5 | 162 | 1 | 0 | 0 | 79 | 0 | 54 | 0 | 41 | 0 |
 | US-ID | 450 | 27 | 311 | 33 | 4 | 0 | 0 | 35 | 40 | 8 | 100 | 0 |
 | US-MT | 389 | 30 | 311 | 0 | 0 | 0 | 0 | 0 | 48 | 0 | 78 | 0 |
-| US-NV | 87 | 23 | 34 | 1 | 0 | 0 | 0 | 7 | 22 | 11 | 46 | 0 |
+| US-NV | 87 | 24 | 34 | 0 | 0 | 0 | 0 | 7 | 22 | 11 | 46 | 0 |
 | US-AZ | 198 | 1 | 168 | 0 | 16 | 0 | 0 | 2 | 11 | 0 | 28 | 0 |
 | US-NM | 136 | 51 | 78 | 0 | 0 | 0 | 0 | 0 | 7 | 1 | 58 | 0 |
 | US-CA | 1190 | 50 | 752 | 0 | 7 | 0 | 352 | 0 | 29 | 4 | 81 | 0 |
@@ -110,7 +110,6 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
 - dnr.wisconsin.gov: 1 campgrounds
 - tpwd.texas.gov: 1 campgrounds
 - wgfapps.wyo.gov: 1 campgrounds
-- parks.nv.gov: 1 campgrounds
 
 ## Kentucky answer-key check (R5: the bot vs kpc-campgrounds.json, hand-checked)
 
