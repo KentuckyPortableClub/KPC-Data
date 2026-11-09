@@ -543,22 +543,22 @@
   "US-PA": {
    "checked": 494,
    "counts": {
-    "agree": 67,
-    "handover_hints": 6,
+    "agree": 71,
+    "handover_hints": 7,
     "no_page": 0,
     "no_size": 37,
-    "off": 44,
-    "ours_unknown": 3,
+    "off": 42,
+    "ours_unknown": 9,
     "parks": 494,
     "retired": 0,
-    "unsure": 330,
-    "weak": 7,
-    "with_outline": 481
+    "unsure": 328,
+    "weak": 9,
+    "with_outline": 487
    },
    "left": 0,
    "parks": 494,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-09"
   },
   "US-RI": {
    "checked": 61,
@@ -748,32 +748,33 @@
  },
  "last": {
   "areas": [
-   "US-SD"
+   "US-PA"
   ],
   "manners": {
    "arcgis_exempt": 0,
+   "browser": 8,
    "errors": 0,
    "for_person_urls": [],
-   "requests": 0,
+   "requests": 613,
    "rested": 0,
    "robots": 0,
    "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 3,
-   "no_size": 0,
-   "ours_unknown": 0,
-   "pages_read": 0,
-   "parks": 0,
+   "handover_hints": 7,
+   "no_size": 37,
+   "ours_unknown": 9,
+   "pages_read": 580,
+   "parks": 494,
    "retired": 0,
-   "size_agree": 0,
-   "size_off": 0,
-   "size_unsure": 0,
-   "skipped_fresh": 120,
-   "with_outline": 0
+   "size_agree": 71,
+   "size_off": 42,
+   "size_unsure": 328,
+   "skipped_fresh": 0,
+   "with_outline": 487
   },
-  "when": "2026-11-08"
+  "when": "2026-11-09"
  },
  "news": {
   "https://dwr.virginia.gov/news/": {
