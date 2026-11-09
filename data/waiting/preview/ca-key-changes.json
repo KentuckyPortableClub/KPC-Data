@@ -1,124 +1,124 @@
 {
  "about": "ca-key: the HELD build (data/waiting/in/data/ca-key/) vs the LIVE key (data/ca-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'ca-key', 'build': the held build id from data/waiting/in/data/ca-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-06 17:40 UTC",
+ "made": "2026-11-09 20:42 UTC",
  "totals": {
   "gained": 0,
   "lost": 2,
-  "pieces_changed": 174,
+  "pieces_changed": 1,
   "grade_changed": 0
  },
  "per_area": {
-  "CA-AB": {
+  "CA-ON": {
    "gained": 0,
-   "lost": 1,
-   "pieces_changed": 0,
-   "grade_changed": 0
-  },
-  "CA-BC": {
-   "gained": 0,
-   "lost": 1,
-   "pieces_changed": 171,
-   "grade_changed": 0
-  },
-  "CA-NT": {
-   "gained": 0,
-   "lost": 0,
-   "pieces_changed": 3,
+   "lost": 2,
+   "pieces_changed": 1,
    "grade_changed": 0
   }
  },
  "gained": [],
  "lost": [
   {
-   "area": "CA-AB",
-   "ref": "CA-0109",
-   "name": "Waterton Biosphere Reserve",
+   "area": "CA-ON",
+   "ref": "CA-0208",
+   "name": "Fawn River Provincial Park",
    "old_grade": "official",
    "new_grade": "pin",
    "new_pieces": [],
    "old_pieces": [
     [
-     "Alberta Park:433",
-     "Waterton Lakes",
-     123216,
-     "name · Alberta Parks (Government of Alberta)"
+     "Ontario Park:38289",
+     "FAWN RIVER PROVINCIAL PARK",
+     31808,
+     "name · Ontario Parks (Land Information Ontario)"
+    ],
+    [
+     "16342",
+     "Fawn River Provincial Park",
+     29984,
+     "name"
     ]
    ],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-0109"
+   "pota": "https://pota.app/#/park/CA-0208"
   },
   {
-   "area": "CA-BC",
-   "ref": "CA-3408",
-   "name": "Denetiah Corridor Protected Area",
+   "area": "CA-ON",
+   "ref": "CA-1336",
+   "name": "Cache Bay Wetland Conservation Reserve",
    "old_grade": "official",
    "new_grade": "pin",
    "new_pieces": [],
    "old_pieces": [
     [
-     "20365",
-     "DENETIAH CORRIDOR PROTECTED AREA",
-     18387,
+     "15878",
+     "Cache Bay Wetland Conservation Reserve",
+     9701,
      "name"
     ],
     [
-     "BC BC Parks :727",
-     "DENETIAH CORRIDOR PROTECTED AREA",
-     15529,
-     "name · BC BC Parks EcoRes and PAs"
+     "Ontario cons:10721",
+     "CACHE BAY WETLAND CONSERVATION RESERVE",
+     8529,
+     "name · Ontario conservation reserves (Land Information Ontar"
     ]
    ],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-3408"
+   "pota": "https://pota.app/#/park/CA-1336"
   }
  ],
  "grade_changed": [],
  "sample": [
   {
-   "area": "CA-AB",
-   "ref": "CA-0109",
-   "name": "Waterton Biosphere Reserve",
+   "area": "CA-ON",
+   "ref": "CA-0208",
+   "name": "Fawn River Provincial Park",
    "old_grade": "official",
    "new_grade": "pin",
    "new_pieces": [],
    "old_pieces": [
     [
-     "Alberta Park:433",
-     "Waterton Lakes",
-     123216,
-     "name · Alberta Parks (Government of Alberta)"
+     "Ontario Park:38289",
+     "FAWN RIVER PROVINCIAL PARK",
+     31808,
+     "name · Ontario Parks (Land Information Ontario)"
+    ],
+    [
+     "16342",
+     "Fawn River Provincial Park",
+     29984,
+     "name"
     ]
    ],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-0109"
+   "pota": "https://pota.app/#/park/CA-0208"
   },
   {
-   "area": "CA-BC",
-   "ref": "CA-3408",
-   "name": "Denetiah Corridor Protected Area",
+   "area": "CA-ON",
+   "ref": "CA-1336",
+   "name": "Cache Bay Wetland Conservation Reserve",
    "old_grade": "official",
    "new_grade": "pin",
    "new_pieces": [],
    "old_pieces": [
     [
-     "20365",
-     "DENETIAH CORRIDOR PROTECTED AREA",
-     18387,
+     "15878",
+     "Cache Bay Wetland Conservation Reserve",
+     9701,
      "name"
     ],
     [
-     "BC BC Parks :727",
-     "DENETIAH CORRIDOR PROTECTED AREA",
-     15529,
-     "name · BC BC Parks EcoRes and PAs"
+     "Ontario cons:10721",
+     "CACHE BAY WETLAND CONSERVATION RESERVE",
+     8529,
+     "name · Ontario conservation reserves (Land Information Ontar"
     ]
    ],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/CA-3408"
+   "pota": "https://pota.app/#/park/CA-1336"
   }
  ]
 }
