@@ -540,6 +540,26 @@
    "status": "done",
    "updated": "2026-11-09"
   },
+  "US-NV": {
+   "checked": 367,
+   "counts": {
+    "agree": 63,
+    "handover_hints": 8,
+    "no_page": 2,
+    "no_size": 52,
+    "off": 20,
+    "ours_unknown": 36,
+    "parks": 367,
+    "retired": 0,
+    "unsure": 21,
+    "weak": 12,
+    "with_outline": 194
+   },
+   "left": 0,
+   "parks": 367,
+   "status": "done",
+   "updated": "2026-11-09"
+  },
   "US-NY": {
    "checked": 851,
    "counts": {
@@ -811,36 +831,62 @@
   "www.arcgis.com": 1794286229.087196,
   "www.fhwa.dot.gov": 1794323337.1319654,
   "www.floridastateparks.org": 1794252193.2078493,
+  "www.nevadawilderness.org": 1794330712.037567,
   "www.riparks.com": 1794280152.9954374,
   "www.swfwmd.state.fl.us": 1794252263.334702
  },
  "last": {
   "areas": [
-   "US-MT"
+   "US-NV"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 103,
-   "errors": 1,
-   "for_person_urls": [],
-   "requests": 434,
-   "rested": 0,
-   "robots": 0,
-   "strikes": 1
+   "browser": 2,
+   "dropped_queued": 6,
+   "errors": 0,
+   "for_person": 2,
+   "for_person_urls": [
+    [
+     "https://www.nevadawilderness.org/bad_lands_wilderness_study_area",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.nevadawilderness.org/Bald_Mountain_Wilderness_trails",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://d3n8a8pro7vhmx.cloudfront.net/robots.txt",
+     "robots.txt answered 403: nothing fetched from d3n8a8pro7vhmx.cloudfront.net this run"
+    ],
+    [
+     "https://www.outdoorsy.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.outdoorsy.com this run"
+    ],
+    [
+     "http://www.sangres.com/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.sangres.com this run"
+    ]
+   ],
+   "requests": 244,
+   "rested": 18,
+   "retry403": 2,
+   "robots": 4,
+   "robots_unreadable": 3,
+   "strikes": 4
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 6,
-   "no_size": 138,
-   "ours_unknown": 7,
-   "pages_read": 294,
-   "parks": 254,
+   "handover_hints": 8,
+   "no_size": 54,
+   "ours_unknown": 36,
+   "pages_read": 199,
+   "parks": 367,
    "retired": 0,
-   "size_agree": 36,
-   "size_off": 36,
-   "size_unsure": 28,
+   "size_agree": 63,
+   "size_off": 20,
+   "size_unsure": 21,
    "skipped_fresh": 0,
-   "with_outline": 245
+   "with_outline": 194
   },
   "when": "2026-11-09"
  },
