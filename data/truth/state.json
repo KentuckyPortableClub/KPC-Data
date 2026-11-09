@@ -739,6 +739,26 @@
    "parks": 172,
    "status": "done",
    "updated": "2026-11-08"
+  },
+  "US-WY": {
+   "checked": 294,
+   "counts": {
+    "agree": 47,
+    "handover_hints": 0,
+    "no_page": 0,
+    "no_size": 75,
+    "off": 24,
+    "ours_unknown": 35,
+    "parks": 294,
+    "retired": 0,
+    "unsure": 33,
+    "weak": 25,
+    "with_outline": 214
+   },
+   "left": 0,
+   "parks": 294,
+   "status": "done",
+   "updated": "2026-11-09"
   }
  },
  "hosts": {
@@ -754,38 +774,38 @@
  },
  "last": {
   "areas": [
-   "US-CO"
+   "US-WY"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 5,
+   "browser": 36,
    "errors": 0,
    "for_person": 1,
    "for_person_urls": [
     [
-     "https://www.colorado.com/articles/national-park-profile-great-sand-dunes-national-park-preserve",
+     "http://www.fortwiki.com/Fort_Bonneville_(1)",
      "HTTP 403 twice"
     ]
    ],
-   "requests": 244,
-   "rested": 120,
-   "retry403": 2,
-   "robots": 1,
-   "strikes": 6
+   "requests": 345,
+   "rested": 0,
+   "retry403": 1,
+   "robots": 0,
+   "strikes": 2
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 6,
-   "no_size": 146,
-   "ours_unknown": 15,
-   "pages_read": 187,
-   "parks": 276,
+   "handover_hints": 0,
+   "no_size": 75,
+   "ours_unknown": 35,
+   "pages_read": 277,
+   "parks": 294,
    "retired": 0,
-   "size_agree": 46,
-   "size_off": 17,
-   "size_unsure": 42,
+   "size_agree": 47,
+   "size_off": 24,
+   "size_unsure": 33,
    "skipped_fresh": 0,
-   "with_outline": 266
+   "with_outline": 214
   },
   "when": "2026-11-09"
  },
