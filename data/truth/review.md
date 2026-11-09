@@ -24,7 +24,7 @@ Updated 2026-11-09. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-SD | 120 | 116 | 13 | **3** | 49 | 46 | 4 | 3 | 0 | 6 |
 | US-PA | 494 | 487 | 71 | **42** | 328 | 37 | 9 | 7 | 0 | 9 |
 | US-NY | 851 | 826 | 285 | **262** | 138 | 121 | 12 | 58 | 0 | 17 |
-| US-NJ | 134 | 126 | 25 | **3** | 17 | 81 | 0 | 2 | 0 | 3 |
+| US-NJ | 134 | 128 | 25 | **3** | 17 | 81 | 2 | 3 | 0 | 3 |
 | US-CT | 157 | 146 | 52 | **19** | 27 | 48 | 0 | 2 | 0 | 0 |
 | US-RI | 61 | 57 | 1 | **3** | 10 | 41 | 1 | 2 | 0 | 13 |
 | US-MA | 421 | 409 | 74 | **169** | 37 | 122 | 7 | 2 | 0 | 5 |
@@ -1687,7 +1687,7 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 - US-12100 Amwell Lake Wildlife Management Area: ours 27 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-12102 Ken Lockwood Gorge Wildlife Management Area: ours 678 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-13061 Gum Tree Corner Wildlife Management Area: ours 946 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-3379 Delaware Water Gap National Recreation Area: ours 58,143 ac · cause: whole park compared (POTA lists it in 2 states: {'US-NJ': 31074, 'US-PA': 27069}) · [www.nps.gov](https://www.nps.gov/dewa/learn/management/compendium.htm)
+- US-3379 Delaware Water Gap National Recreation Area: ours 58,143 ac · cause: whole park compared (POTA lists it in 2 states: {'US-PA': 27069, 'US-NJ': 31074}) · [www.nps.gov](https://www.nps.gov/dewa/learn/management/compendium.htm)
 - US-8030 Absecon Wildlife Management Area: ours 2,835 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-8031 Bear Swamp Wildlife Management Area: ours 3,433 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-8032 Black River Wildlife Management Area: ours 2,554 ac · cause: no total-looking sentence: numbers found were parts or other units
@@ -1703,6 +1703,7 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 
 - US-0456 Wallkill River National Wildlife Refuge · managed by: “tate forests, the management priority at national wildlife refuges is "Wildlife First." These lands are managed by the U.S. Fish and Wildlife Service, which is the only agency of the U.S. Government w” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/wallkill-river/visit-us)
 - US-0746 Morristown National Historical Park · managed by: “mprovements, get links to detailed policies and regulations, and more. Bookstore The park bookstore is operated by Eastern National, a non-profit cooperating association which operates stores at over ” · owner now: Eastern National · [www.nps.gov](https://www.nps.gov/morr/learn/index.htm)
+- US-4556 Appalachian Trail National Scenic Trail · managed by: “ian Mountains. Conceived in 1921, built by private citizens, and completed in 1937, today the trail is managed by the National Park Service, US Forest Service, Appalachian Trail Conservancy, numerous ” · owner now: National Park Service · [www.nps.gov](https://www.nps.gov/appa/index.htm)
 
 ## US-CT
 

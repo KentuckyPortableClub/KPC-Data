@@ -484,21 +484,21 @@
    "checked": 134,
    "counts": {
     "agree": 25,
-    "handover_hints": 2,
+    "handover_hints": 3,
     "no_page": 0,
     "no_size": 81,
     "off": 3,
-    "ours_unknown": 0,
+    "ours_unknown": 2,
     "parks": 134,
     "retired": 0,
     "unsure": 17,
     "weak": 3,
-    "with_outline": 126
+    "with_outline": 128
    },
    "left": 0,
    "parks": 134,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-09"
   },
   "US-NY": {
    "checked": 851,
@@ -742,48 +742,55 @@
   }
  },
  "hosts": {
+  "dep.nj.gov": 1794275828.9220152,
   "www.alapark.com": 1794248619.2284882,
   "www.floridastateparks.org": 1794252193.2078493,
   "www.swfwmd.state.fl.us": 1794252263.334702
  },
  "last": {
   "areas": [
-   "US-NY"
+   "US-NJ"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 7,
+   "browser": 46,
    "dropped_queued": 1,
    "errors": 0,
+   "for_person": 2,
    "for_person_urls": [
+    [
+     "https://dep.nj.gov/njfw/wildlife/higbee-beach-wildlife-management-area/",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://dep.nj.gov/wp-content/uploads/njfw/peaslee.pdf",
+     "HTTP 403 twice"
+    ],
     [
      "https://www.njpalisades.org/robots.txt",
      "robots.txt answered 202: nothing fetched from www.njpalisades.org this run"
-    ],
-    [
-     "https://sojournertruthstatepark.info/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from sojournertruthstatepark.info this run"
     ]
    ],
-   "requests": 1779,
-   "rested": 0,
-   "robots": 16,
-   "robots_unreadable": 2,
-   "strikes": 0
+   "requests": 367,
+   "rested": 23,
+   "retry403": 2,
+   "robots": 1,
+   "robots_unreadable": 1,
+   "strikes": 4
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 58,
-   "no_size": 129,
-   "ours_unknown": 12,
-   "pages_read": 1456,
-   "parks": 851,
+   "handover_hints": 3,
+   "no_size": 81,
+   "ours_unknown": 2,
+   "pages_read": 209,
+   "parks": 134,
    "retired": 0,
-   "size_agree": 285,
-   "size_off": 262,
-   "size_unsure": 138,
+   "size_agree": 25,
+   "size_off": 3,
+   "size_unsure": 17,
    "skipped_fresh": 0,
-   "with_outline": 826
+   "with_outline": 128
   },
   "when": "2026-11-09"
  },
