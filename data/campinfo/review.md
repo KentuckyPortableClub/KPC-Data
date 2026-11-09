@@ -9,7 +9,7 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
 | US-TN | 394 | 2 | 78 | 0 | 42 | 0 | 267 | 0 | 5 | 2 | 49 | 0 |
 | US-NC | 141 | 66 | 66 | 0 | 0 | 0 | 0 | 0 | 9 | 23 | 75 | 0 |
 | US-VA | 163 | 2 | 74 | 0 | 0 | 0 | 40 | 30 | 17 | 2 | 19 | 0 |
-| US-WV | 101 | 1 | 47 | 26 | 0 | 0 | 0 | 0 | 27 | 0 | 54 | 0 |
+| US-WV | 101 | 1 | 47 | 28 | 0 | 0 | 0 | 0 | 25 | 0 | 54 | 0 |
 | US-GA | 205 | 61 | 64 | 4 | 0 | 0 | 0 | 8 | 68 | 8 | 131 | 0 |
 | US-AL | 100 | 12 | 34 | 1 | 0 | 0 | 0 | 4 | 49 | 6 | 60 | 7 |
 | US-SC | 77 | 19 | 26 | 24 | 0 | 0 | 0 | 7 | 1 | 16 | 31 | 0 |
@@ -97,7 +97,7 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
 
 - itd.idaho.gov: 30 campgrounds
 - parks.ky.gov: 26 campgrounds
-- reservations.wvstateparks.com: 24 campgrounds
+- reservations.wvstateparks.com: 26 campgrounds
 - southcarolinaparks.com: 22 campgrounds
 - www.recreation.gov: 5 campgrounds
 - gastateparks.org: 3 campgrounds
