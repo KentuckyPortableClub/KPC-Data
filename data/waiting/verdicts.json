@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-09T10:34Z",
+ "checked": "2026-11-09T10:43Z",
  "switched_on": false,
  "results": [
   {
@@ -310,15 +310,6 @@
     "no live copy: first time this file is published"
    ],
    "verdict": "HOLD"
-  },
-  {
-   "path": "data/campinfo/US-OH.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS"
   },
   {
    "path": "data/campinfo/US-OK.json",
@@ -778,7 +769,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dA/91a139f30e/fo-PikeSF_maps.pdf?language_id=1"
+    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dA/bad7f29779/sp-5MileChallengeBrochure.pdf?languag"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -3864,6 +3855,15 @@
    "kind": "wwff",
    "why": [],
    "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-OH.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
    "verdict": "PASS"
   }
  ]
