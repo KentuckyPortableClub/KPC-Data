@@ -23,22 +23,22 @@
   "US-AR": {
    "checked": 306,
    "counts": {
-    "agree": 40,
+    "agree": 37,
     "handover_hints": 12,
-    "no_page": 18,
-    "no_size": 64,
-    "off": 13,
+    "no_page": 17,
+    "no_size": 71,
+    "off": 18,
     "ours_unknown": 80,
     "parks": 306,
     "retired": 0,
-    "unsure": 36,
-    "weak": 4,
-    "with_outline": 251
+    "unsure": 41,
+    "weak": 20,
+    "with_outline": 268
    },
    "left": 0,
    "parks": 306,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-09"
   },
   "US-CO": {
    "checked": 118,
@@ -752,37 +752,41 @@
  },
  "last": {
   "areas": [
-   "US-DC"
+   "US-AR"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 11,
-   "errors": 0,
+   "browser": 7,
+   "errors": 2,
    "for_person_urls": [
     [
-     "https://www.usna.usda.gov/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.usna.usda.gov this run"
+     "https://apps.agfc.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from apps.agfc.com this run"
+    ],
+    [
+     "https://www.agfc/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.agfc this run"
     ]
    ],
-   "requests": 143,
+   "requests": 457,
    "rested": 0,
-   "robots": 1,
-   "robots_unreadable": 1,
-   "strikes": 0
+   "robots": 3,
+   "robots_unreadable": 2,
+   "strikes": 2
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 1,
-   "no_size": 16,
-   "ours_unknown": 10,
-   "pages_read": 109,
-   "parks": 35,
+   "handover_hints": 12,
+   "no_size": 92,
+   "ours_unknown": 80,
+   "pages_read": 395,
+   "parks": 306,
    "retired": 0,
-   "size_agree": 1,
-   "size_off": 1,
-   "size_unsure": 1,
+   "size_agree": 37,
+   "size_off": 18,
+   "size_unsure": 41,
    "skipped_fresh": 0,
-   "with_outline": 29
+   "with_outline": 268
   },
   "when": "2026-11-09"
  },
