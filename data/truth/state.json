@@ -568,17 +568,17 @@
     "no_page": 1,
     "no_size": 41,
     "off": 3,
-    "ours_unknown": 1,
+    "ours_unknown": 2,
     "parks": 61,
     "retired": 0,
-    "unsure": 10,
+    "unsure": 9,
     "weak": 13,
-    "with_outline": 57
+    "with_outline": 58
    },
    "left": 0,
    "parks": 61,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-09"
   },
   "US-SC": {
    "checked": 167,
@@ -743,44 +743,39 @@
  },
  "hosts": {
   "dep.nj.gov": 1794275828.9220152,
+  "riparks.com": 1794280201.1004815,
   "www.alapark.com": 1794248619.2284882,
   "www.floridastateparks.org": 1794252193.2078493,
+  "www.riparks.com": 1794280152.9954374,
   "www.swfwmd.state.fl.us": 1794252263.334702
  },
  "last": {
   "areas": [
-   "US-CT"
+   "US-RI"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 2,
-   "dropped_queued": 2,
-   "errors": 0,
-   "for_person_urls": [
-    [
-     "http://www.nae.usace.army.mil/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.nae.usace.army.mil this run"
-    ]
-   ],
-   "requests": 373,
-   "rested": 0,
+   "dropped_queued": 8,
+   "errors": 6,
+   "for_person_urls": [],
+   "requests": 113,
+   "rested": 16,
    "robots": 1,
-   "robots_unreadable": 1,
-   "strikes": 0
+   "strikes": 6
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 3,
-   "no_size": 47,
-   "ours_unknown": 4,
-   "pages_read": 338,
-   "parks": 157,
+   "handover_hints": 2,
+   "no_size": 43,
+   "ours_unknown": 2,
+   "pages_read": 74,
+   "parks": 61,
    "retired": 0,
-   "size_agree": 39,
-   "size_off": 26,
-   "size_unsure": 33,
+   "size_agree": 1,
+   "size_off": 3,
+   "size_unsure": 9,
    "skipped_fresh": 0,
-   "with_outline": 149
+   "with_outline": 58
   },
   "when": "2026-11-09"
  },

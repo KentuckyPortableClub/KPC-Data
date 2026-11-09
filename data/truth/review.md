@@ -26,7 +26,7 @@ Updated 2026-11-09. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-NY | 851 | 826 | 285 | **262** | 138 | 121 | 12 | 58 | 0 | 17 |
 | US-NJ | 134 | 128 | 25 | **3** | 17 | 81 | 2 | 3 | 0 | 3 |
 | US-CT | 157 | 149 | 39 | **26** | 33 | 47 | 4 | 3 | 0 | 5 |
-| US-RI | 61 | 57 | 1 | **3** | 10 | 41 | 1 | 2 | 0 | 13 |
+| US-RI | 61 | 58 | 1 | **3** | 9 | 41 | 2 | 2 | 0 | 13 |
 | US-MA | 421 | 409 | 74 | **169** | 37 | 122 | 7 | 2 | 0 | 5 |
 | US-VT | 109 | 92 | 37 | **31** | 12 | 12 | 0 | 10 | 0 | 7 |
 | US-NH | 206 | 193 | 16 | **10** | 8 | 106 | 2 | 4 | 0 | 2 |
@@ -1795,10 +1795,9 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 
 - US-0515 Ninigret National Wildlife Refuge: ours 575 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-0517 Trustom Pond National Wildlife Refuge: ours 598 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 52 acre, no total words near it) · [www.fws.gov](https://www.fws.gov/refuge/trustom-pond/about-us)
-- US-10541 Gull Cove State Recreation Area: ours 4 ac · cause: a number 3 parks share from one page (33 ac): an agency total, not this park
-- US-10542 Camp Cronin State Recreation Area: ours 14 ac · cause: a number 3 parks share from one page (33 ac): an agency total, not this park
+- US-10541 Gull Cove State Recreation Area: ours 4 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 33 acres, no total words near it) · [dem.ri.gov](https://dem.ri.gov/natural-resources-bureau/fish-wildlife/freshwater-fishing/public-boat-launching-sites#salt)
+- US-10542 Camp Cronin State Recreation Area: ours 14 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 33 acres, no total words near it) · [dem.ri.gov](https://dem.ri.gov/natural-resources-bureau/fish-wildlife/freshwater-fishing/public-boat-launching-sites#salt)
 - US-10546 Eight Rod Farm Wildlife Management Area: ours 81 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-10547 Silver Spring State Recreation Area: ours 15 ac · cause: a number 3 parks share from one page (33 ac): an agency total, not this park
 - US-10548 Barber Pond State Recreation Area: ours 1 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 38 acres, no total words near it) · [dem.ri.gov](https://dem.ri.gov/natural-resources-bureau/fish-wildlife/freshwater-fishing/public-boat-launching-sites#salt)
 - US-5483 Lincoln Woods State Forest: ours 25 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-6986 Simmons Mill Wildlife Management Area: ours 11 ac · cause: no total-looking sentence: numbers found were parts or other units
