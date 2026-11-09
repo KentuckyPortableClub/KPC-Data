@@ -42,7 +42,7 @@ for path in [
         rid = r.get('record_id') or ''
         check('FID:' not in rid and 'OBJECTID:' not in rid, '%s answer-sheet id stable (%s)' % (r['ref'], rid))
         if r['ref'] == 'US-2200':
-            check('sggab60' in rid and 'sggab32' in rid, 'US-2200 lists both sggab60 and sggab32')
+            check('sggab60' in rid and 'FID:' not in rid, 'US-2200 answer-sheet lists sggab60 (stable id)')
 
 # rules hashes
 for path, want in [

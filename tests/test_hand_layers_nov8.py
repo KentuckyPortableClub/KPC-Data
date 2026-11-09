@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Nov 8 hand-downloaded layers (Research 1740–1755 CST): GA SP, TX SP, TX WMA, PA SGL, GA WMA, MB provincial parks.
 Every lead is in the ledger; 22 hand joins; far/name-mismatch pins held; Tallulah Gorge WMA never gets the SP polygon;
-no-pin tracts are possible candidates only; no pin moved."""
+no-pin tracts are possible candidates only; no pin moved. Nov 8 follow-up: US-2200/CA-2373 re-applied unsigned after official rename/alias cleared Rule 18."""
 import gzip, json, pathlib, sys
 ROOT = pathlib.Path(__file__).resolve().parents[1]; bad = 0
 def check(ok, msg):
@@ -17,7 +17,7 @@ check(len(J) == 22, '22 hand joins (%d)' % len(J))
 for k, ids in J.items():
     O = Oc if k.startswith('CA-') else Ou
     check(set(ids) <= set(O[k]['join']) and all(i in O[k].get('fp', {}) for i in ids), k + ' join + fingerprint')
-check(Ou['US-2200'].get('none') is True and 'sggab32' not in Ou['US-2200'].get('join', []), 'US-2200 unjoined (Rule 18); none restored')
+check(list(Ou['US-2200'].get('join') or []) == ['sggab60'] and not Ou['US-2200'].get('none') and not str(Ou['US-2200'].get('decided_by') or '').strip() and 'sggab32' not in (Ou['US-2200'].get('join') or []), 'US-2200 applied unsigned sggab60 only (sggab32 labeled-tract proposal; no decided_by)')
 check('sggab12' in Ou['US-12418']['no'] and 'sggab12' not in Ou['US-12418'].get('join', []), 'US-12418 never joins Tallulah Gorge SP')
 check(dec['US-2199']['status'] == 'outline already', 'US-2199 already Dukes Creek / Smithgall Woods')
 check(dec['US-3510']['status'] == 'outline already', 'US-3510 Powderhorn keeps the WMA polygon')
@@ -26,6 +26,6 @@ need = {'US-6571','US-6565','US-6551','US-6535','US-6550','US-3505','US-6572','U
 check(need <= H and not any(k in J for k in H), 'far / name-mismatch pins held, not joined')
 C = {c['name'] for c in D['possible_candidates']}
 check({'Balls Ferry State Park','Mossy Creek State Park','Bush Head Shoals State Park','Indian Lodge','Chinati Mountains'} <= C, 'no-pin polygons are possible candidates')
-check(Oc['CA-2373'].get('none') is True and 'Manitoba Par:32' not in Oc['CA-2373'].get('join', []), 'CA-2373 unjoined (Rule 18)')
+check('Manitoba Par:32' in (Oc['CA-2373'].get('join') or []) and not Oc['CA-2373'].get('none') and not str(Oc['CA-2373'].get('decided_by') or '').strip(), 'CA-2373 applied unsigned (alias cleared Rule 18; Manitoba Par:32; no decided_by)')
 check((ROOT / 'data/waiting/outline-sources/hand-layers/ca-mb-provparks.geojson').is_file(), 'Manitoba shapes file kept (replaces missing)')
 print('ALL PASS' if not bad else 'SOME FAILED'); sys.exit(1 if bad else 0)
