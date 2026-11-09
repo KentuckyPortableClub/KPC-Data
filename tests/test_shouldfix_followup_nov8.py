@@ -18,14 +18,15 @@ for ref in eight:
 
 # Applied without decided_by
 for ref, parks, jid in [
-    ('US-2200', us, 'sggab60'),
+    ('US-2200', us, 'sggab60'),  # sggab32 dropped — labeled-tract proposal
     ('CA-2373', ca, 'Manitoba Par:32'),
 ]:
     e = parks[ref]
     check(jid in (e.get('join') or []), '%s joined %s' % (ref, jid))
     check(not str(e.get('decided_by') or '').strip(), '%s has no decided_by (unsigned apply)' % ref)
     check(not e.get('none'), '%s none cleared' % ref)
-check('sggab32' in us['US-2200']['join'], 'US-2200 also joins sggab32')
+check('sggab32' not in (us['US-2200'].get('join') or []), 'US-2200 does not unsigned-join sggab32 (~25 km)')
+check((ROOT / 'data/waiting/in/data/pile-solver/hand-layers-LABELED-TRACT-PROPOSALS.csv').is_file(), 'labeled-tract proposals file present')
 
 # Left as proposals
 for ref in ('US-6571', 'US-6550'):

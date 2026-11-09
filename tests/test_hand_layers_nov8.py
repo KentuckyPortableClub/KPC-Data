@@ -17,7 +17,7 @@ check(len(J) == 22, '22 hand joins (%d)' % len(J))
 for k, ids in J.items():
     O = Oc if k.startswith('CA-') else Ou
     check(set(ids) <= set(O[k]['join']) and all(i in O[k].get('fp', {}) for i in ids), k + ' join + fingerprint')
-check(set(['sggab60','sggab32']) <= set(Ou['US-2200'].get('join') or []) and not Ou['US-2200'].get('none') and not str(Ou['US-2200'].get('decided_by') or '').strip(), 'US-2200 applied unsigned (rename cleared Rule 18; sggab60+sggab32; no decided_by)')
+check(list(Ou['US-2200'].get('join') or []) == ['sggab60'] and not Ou['US-2200'].get('none') and not str(Ou['US-2200'].get('decided_by') or '').strip() and 'sggab32' not in (Ou['US-2200'].get('join') or []), 'US-2200 applied unsigned sggab60 only (sggab32 labeled-tract proposal; no decided_by)')
 check('sggab12' in Ou['US-12418']['no'] and 'sggab12' not in Ou['US-12418'].get('join', []), 'US-12418 never joins Tallulah Gorge SP')
 check(dec['US-2199']['status'] == 'outline already', 'US-2199 already Dukes Creek / Smithgall Woods')
 check(dec['US-3510']['status'] == 'outline already', 'US-3510 Powderhorn keeps the WMA polygon')
