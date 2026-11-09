@@ -1,0 +1,6151 @@
+{
+ "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
+ "area": "US-NM",
+ "counts": {
+  "agree": 19,
+  "handover_hints": 4,
+  "no_page": 1,
+  "no_size": 51,
+  "off": 9,
+  "ours_unknown": 7,
+  "parks": 113,
+  "retired": 0,
+  "unsure": 9,
+  "weak": 6,
+  "with_outline": 96
+ },
+ "parks": {
+  "US-0012": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Carlsbad Caverns National Park",
+   "official": null,
+   "ours": {
+    "acres": 46458,
+    "manager": "",
+    "pieces": [
+     [
+      3428,
+      "Carlsbad Caverns National Park",
+      46458,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cave/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cave/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cave/planyourvisit/tour_schedule.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/cave/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cave/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0013": {
+   "checked": "2026-11-09",
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "icies, and regulations related to Chaco Culture National Historical Park. Park Store The park store is operated by Western National Parks (wnpa.org), an official non-profit partner of the National Park Service. Last updated: January 26,",
+     "owner_now": "Western National Parks",
+     "src": "https://www.nps.gov/chcu/learn/index.htm",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "n": "Chaco Culture National Historical Park",
+   "official": null,
+   "ours": {
+    "acres": 33211,
+    "manager": "",
+    "pieces": [
+     [
+      3191,
+      "Chaco Culture National Historical Park",
+      33211,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": "Western National Parks",
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/chcu/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/chcu/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/chcu/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/chcu/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Historical Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0457": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Bitter Lake National Wildlife Refuge",
+   "official": {
+    "acres": 24563.0,
+    "as": "24,563 acre",
+    "clean": false,
+    "line": "dlife Refuge is a biologically significant wetland within the Pecos River watershed. Established in 1937, the 24,563-acre refuge serves as critical wintering habitat for migratory birds and supports a diverse range of species throu",
+    "read": "2026-11-09",
+    "sent": "Established in 1937, the 24,563-acre refuge serves as critical wintering habitat for migratory birds and supports a diverse range of species through its unique gypsum karst topography.",
+    "url": "https://www.fws.gov/refuge/bitter-lake",
+    "why": "history"
+   },
+   "ours": {
+    "acres": 24861,
+    "dissolved": {
+     "after": 24861,
+     "before": 49722,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 49722 -> 24861 acres",
+    "pieces": [
+     [
+      3638,
+      "Bitter Lake National Wildlife Refuge",
+      24861,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/bitter-lake",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/bitter-lake/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "pct": 1,
+   "same_agency": false,
+   "score": 8,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 9621.0,
+     "as": "9,621 acres",
+     "clean": false,
+     "line": "g to justify their distinction. Bitter Lake National Wildlife Refuge monitors the Salt Creek Wilderness Area, 9,621 acres within an overall 12,269 acres on the North Tract. Water Manipulation Managing water levels is an important m",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/bitter-lake",
+     "why": "total-looking"
+    },
+    {
+     "acres": 12269.0,
+     "as": "12,269 acres",
+     "clean": false,
+     "line": ". Bitter Lake National Wildlife Refuge monitors the Salt Creek Wilderness Area, 9,621 acres within an overall 12,269 acres on the North Tract. Water Manipulation Managing water levels is an important management tool utilized at Bitt",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/bitter-lake",
+     "why": "total-looking"
+    },
+    {
+     "acres": 24563.0,
+     "as": "24,563 acre",
+     "clean": false,
+     "line": "dlife Refuge is a biologically significant wetland within the Pecos River watershed. Established in 1937, the 24,563-acre refuge serves as critical wintering habitat for migratory birds and supports a diverse range of species throu",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/bitter-lake",
+     "why": "history"
+    },
+    {
+     "acres": 9621.0,
+     "as": "9,621 acre",
+     "clean": false,
+     "line": "topography. It is internationally recognized as a Ramsar Wetland of International Importance and contains the 9,621-acre Salt Creek Wilderness Area. Our Complex In eastern side of New Mexico, there are four National Wildlife Refug",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/bitter-lake",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 40000.0,
+     "as": "40,000 acres",
+     "clean": false,
+     "line": "rea. Our Complex In eastern side of New Mexico, there are four National Wildlife Refuges that encompass about 40,000 acres of land under one management team called a National Wildlife Refuge Complex. Bitter Lake National Wildlife Re",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/bitter-lake",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-0458": {
+   "checked": "2026-11-09",
+   "handover": [
+    {
+     "date_hint": "2008",
+     "kind": "transfer",
+     "line": "y (previously inholdings), were added to the refuge. 2008 - a 140-acre parcel on Chupadera Peak was donated to the U.S. Fish and Wildlife Service bringing the total acreage of fee title lands (lands owned by the government) on Bosque del Apache National Wildlife Refuge to 57,331. You are exiting the",
+     "owner_now": "U.S",
+     "src": "https://www.fws.gov/refuge/bosque-del-apache/about-us",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "n": "Bosque Del Apache National Wildlife Refuge",
+   "official": {
+    "acres": 57331.0,
+    "as": "57,331 acre",
+    "clean": false,
+    "line": "e System. Situated between the Chupadera Mountains to the west and the San Pascual Mountains to the east, the 57,331 acre Bosque del Apache was established in 1939 to provide a critical stopover site for migrating waterfowl. The re",
+    "read": "2026-11-09",
+    "sent": "Situated between the Chupadera Mountains to the west and the San Pascual Mountains to the east, the 57,331 acre Bosque del Apache was established in 1939 to provide a critical stopover site for migrating waterfowl.",
+    "url": "https://www.fws.gov/refuge/bosque-del-apache/about-us",
+    "why": "history"
+   },
+   "ours": {
+    "acres": 57049,
+    "dissolved": {
+     "after": 57049,
+     "before": 114098,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 114098 -> 57049 acres",
+    "pieces": [
+     [
+      3655,
+      "Bosque Del Apache National Wildlife Refuge",
+      57049,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": "U.S",
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/bosque-del-apache/about-us",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 4007.0,
+     "as": "3044 + 963 acres",
+     "clean": false,
+     "line": "ve Order 8289 to provide refuge and breeding grounds for migratory birds. 1941 and 1951 - Additional acreage, 3044 acres and 963 acres respectively (previously inholdings), were added to the refuge. 2008 - a 140-acre parcel on Chupadera Peak wa",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/bosque-del-apache/about-us",
+     "why": "sum of the pieces named in one sentence"
+    },
+    {
+     "acres": 57331.0,
+     "as": "57,331 acre",
+     "clean": false,
+     "line": "e System. Situated between the Chupadera Mountains to the west and the San Pascual Mountains to the east, the 57,331 acre Bosque del Apache was established in 1939 to provide a critical stopover site for migrating waterfowl. The re",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/bosque-del-apache/about-us",
+     "why": "history"
+    },
+    {
+     "acres": 30000.0,
+     "as": "30,000 acres",
+     "clean": false,
+     "line": "he refuge is well known for the tens of thousands of cranes, geese, and ducks who winter here each year. Over 30,000 acres of Bosque del Apache are designated wilderness. The Rio Grande may seem tame now, but for thousands of years",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/bosque-del-apache/about-us",
+     "why": "total-looking"
+    },
+    {
+     "acres": 30427.0,
+     "as": "30,427 acres",
+     "clean": false,
+     "line": "ople can observe and enjoy the natural world. Wilderness Area Bosque del Apache Wilderness Designated in 1975 30,427 acres The Wilderness Act of 1964 created the National Wilderness Preservation System \"in order to assure that an in",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/bosque-del-apache/about-us",
+     "why": "total-looking"
+    },
+    {
+     "acres": 3044.0,
+     "as": "3044 acres",
+     "clean": false,
+     "line": "ve Order 8289 to provide refuge and breeding grounds for migratory birds. 1941 and 1951 - Additional acreage, 3044 acres and 963 acres respectively (previously inholdings), were added to the refuge. 2008 - a 140-acre parcel on Chu",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/bosque-del-apache/about-us",
+     "why": "part of a sum"
+    },
+    {
+     "acres": 963.0,
+     "as": "963 acres",
+     "clean": false,
+     "line": "o provide refuge and breeding grounds for migratory birds. 1941 and 1951 - Additional acreage, 3044 acres and 963 acres respectively (previously inholdings), were added to the refuge. 2008 - a 140-acre parcel on Chupadera Peak wa",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/bosque-del-apache/about-us",
+     "why": "part of a sum"
+    },
+    {
+     "acres": 140.0,
+     "as": "140 acre",
+     "clean": false,
+     "line": "al acreage, 3044 acres and 963 acres respectively (previously inholdings), were added to the refuge. 2008 - a 140-acre parcel on Chupadera Peak was donated to the U.S. Fish and Wildlife Service bringing the total acreage of fee",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/bosque-del-apache/about-us",
+     "why": "no total words near it"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-0459": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Las Vegas National Wildlife Refuge",
+   "official": {
+    "acres": 8672.0,
+    "as": "8,672 acres",
+    "clean": false,
+    "line": "me since 1965. Sitting on a plateau, the prairies and playa lakes morph into timbered canyons surrounding the 8,672 acres on three sides and framing the playa lakes used by migratory waterfowl. Sitting on the Central Flyway, the re",
+    "read": "2026-11-09",
+    "sent": "Sitting on a plateau, the prairies and playa lakes morph into timbered canyons surrounding the 8,672 acres on three sides and framing the playa lakes used by migratory waterfowl.",
+    "url": "https://www.fws.gov/refuge/las-vegas",
+    "why": "no total words near it"
+   },
+   "ours": {
+    "acres": 9187,
+    "dissolved": {
+     "after": 8713,
+     "before": 17426,
+     "copies": 1,
+     "key_union": 9187,
+     "parts": 0,
+     "records": 2,
+     "summed": 8713,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 17426 -> 8713 acres",
+    "pieces": [
+     [
+      4035,
+      "Las Vegas National Wildlife Refuge",
+      8713,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/las-vegas/about-us",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/las-vegas",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "pct": 6,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 8672.0,
+     "as": "8,672 acres",
+     "clean": false,
+     "line": "me since 1965. Sitting on a plateau, the prairies and playa lakes morph into timbered canyons surrounding the 8,672 acres on three sides and framing the playa lakes used by migratory waterfowl. Sitting on the Central Flyway, the re",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/las-vegas",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 700.0,
+     "as": "700 acres",
+     "clean": false,
+     "line": "is includes managing impoundments for water birds, maintaining a 13-mile gravity-fed pipeline, and irrigating 700 acres of farm fields to provide food for migratory species. Educational Programming and Outreach: Our team would lo",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/las-vegas",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 40000.0,
+     "as": "40,000 acres",
+     "clean": false,
+     "line": "ife. Our Complex In eastern side of New Mexico, there are four National Wildlife Refuges that encompass about 40,000 acres of land under one management team called a National Wildlife Refuge Complex. Las Vegas National Wildlife Refu",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/las-vegas",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-0460": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Maxwell National Wildlife Refuge",
+   "official": {
+    "acres": 2800.0,
+    "as": "2,800 acres",
+    "clean": false,
+    "line": "d for the benefit of wildlife and has provided feeding and resting habitat for migratory birds. Approximately 2,800 acres of the lands that make up Maxwell National Wildlife Refuge are owned by the U.S. Fish and Wildlife Service an",
+    "read": "2026-11-09",
+    "sent": "Approximately 2,800 acres of the lands that make up Maxwell National Wildlife Refuge are owned by the U.S.",
+    "url": "https://www.fws.gov/refuge/maxwell/",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 2975,
+    "dissolved": {
+     "after": 2747,
+     "before": 5494,
+     "copies": 1,
+     "key_union": 2975,
+     "parts": 0,
+     "records": 2,
+     "summed": 2747,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 5494 -> 2747 acres",
+    "pieces": [
+     [
+      4090,
+      "Maxwell National Wildlife Refuge",
+      2747,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/maxwell/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/maxwell/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/maxwell",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "pct": 6,
+   "same_agency": false,
+   "score": 8,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 3700.0,
+     "as": "3,700 acres",
+     "clean": false,
+     "line": "xwell National Wildlife Refuge offers a unique landscape for visitors to observe wildlife. Encompassing about 3,700 acres of short grass prairie, playa lakes, wetlands, woodlots, and agricultural lands since 1965 and sitting at 605",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/maxwell/",
+     "why": "total-looking"
+    },
+    {
+     "acres": 3699.0,
+     "as": "3,699 acres",
+     "clean": true,
+     "line": "out Located in northeastern New Mexico at an elevation of 6050’, Maxwell National Wildlife Refuge encompasses 3,699 acres of short-grass prairie, playa lakes, woodlots, wetlands, and crop fields. The refuge sits in an open basin su",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/maxwell/",
+     "why": "clean total"
+    },
+    {
+     "acres": 2800.0,
+     "as": "2,800 acres",
+     "clean": false,
+     "line": "d for the benefit of wildlife and has provided feeding and resting habitat for migratory birds. Approximately 2,800 acres of the lands that make up Maxwell National Wildlife Refuge are owned by the U.S. Fish and Wildlife Service an",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/maxwell/",
+     "why": "total-looking"
+    },
+    {
+     "acres": 907.0,
+     "as": "907 acres",
+     "clean": false,
+     "line": "d purchased from willing landowners under the authority of the Migratory Bird Conservation Act. An additional 907 acres are leased from the Vermejo Conservancy District in the form of the playa lakes on the refuge (Lakes 12,13 an",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/maxwell/",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 40000.0,
+     "as": "40,000 acres",
+     "clean": false,
+     "line": "ds.\" Our Complex In eastern side of New Mexico, there are four National Wildlife Refuges that encompass about 40,000 acres of land under one management team called a National Wildlife Refuge Complex. Maxwell National Wildlife Refuge",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/maxwell/",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 3700.0,
+     "as": "3,700 acres",
+     "clean": false,
+     "line": "xwell National Wildlife Refuge offers a unique landscape for visitors to observe wildlife. Encompassing about 3,700 acres of short grass prairie, playa lakes, wetlands, woodlots, and agricultural lands since 1965 and sitting at 605",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/maxwell",
+     "why": "total-looking"
+    },
+    {
+     "acres": 3699.0,
+     "as": "3,699 acres",
+     "clean": true,
+     "line": "out Located in northeastern New Mexico at an elevation of 6050’, Maxwell National Wildlife Refuge encompasses 3,699 acres of short-grass prairie, playa lakes, woodlots, wetlands, and crop fields. The refuge sits in an open basin su",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/maxwell",
+     "why": "clean total"
+    },
+    {
+     "acres": 2800.0,
+     "as": "2,800 acres",
+     "clean": false,
+     "line": "d for the benefit of wildlife and has provided feeding and resting habitat for migratory birds. Approximately 2,800 acres of the lands that make up Maxwell National Wildlife Refuge are owned by the U.S. Fish and Wildlife Service an",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/maxwell",
+     "why": "total-looking"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-0462": {
+   "checked": "2026-11-09",
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the refuge system. It drives everything we do from the purpose a refuge is establis",
+     "owner_now": "U.S",
+     "src": "https://www.fws.gov/refuge/sevilleta/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "n": "Sevilleta National Wildlife Refuge",
+   "official": {
+    "acres": 230000.0,
+    "as": "230,000 acre",
+    "clean": false,
+    "line": "ons Contact Us Visit Us Activities Trails Rules & Policies Get Involved News Library Species Map About Us The 230,000-acre refuge includes four different biomes that intersect and support a wide array of biological diversity. The Ri",
+    "read": "2026-11-09",
+    "sent": "The 230,000-acre refuge includes four different biomes that intersect and support a wide array of biological diversity.",
+    "url": "https://www.fws.gov/refuge/sevilleta/about-us",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 227852,
+    "dissolved": {
+     "after": 227852,
+     "before": 455703,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 455703 -> 227852 acres",
+    "pieces": [
+     [
+      4325,
+      "Sevilleta National Wildlife Refuge",
+      227852,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": "U.S",
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/sevilleta/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/sevilleta/about-us",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": 1,
+   "same_agency": false,
+   "score": 8,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 230000.0,
+     "as": "230,000 acre",
+     "clean": false,
+     "line": "ons Contact Us Visit Us Activities Trails Rules & Policies Get Involved News Library Species Map About Us The 230,000-acre refuge includes four different biomes that intersect and support a wide array of biological diversity. The Ri",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/sevilleta/about-us",
+     "why": "total-looking"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-0547": {
+   "checked": "2026-11-09",
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the refuge system. It drives everything we do from the purpose a refuge is establis",
+     "owner_now": "U.S",
+     "src": "https://www.fws.gov/refuge/Grulla/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "date_hint": "1969",
+     "kind": "transfer",
+     "line": "About Us Grulla National Wildlife Refuge was officially established as a refuge when the lands were transferred to the U.S. Fish and Wildlife Service from the Bureau of Land Management in 1969. The refuge is 3,236 acres of which the majority is a salt lake. The refuge is a protected roost si",
+     "owner_now": "U.S",
+     "src": "https://www.fws.gov/refuge/grulla/about-us",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "n": "Grulla National Wildlife Refuge",
+   "official": {
+    "acres": 3236.0,
+    "as": "3,236 acres",
+    "clean": false,
+    "line": "e transferred to the U.S. Fish and Wildlife Service from the Bureau of Land Management in 1969. The refuge is 3,236 acres of which the majority is a salt lake. The refuge is a protected roost site for lesser sandhill cranes and pro",
+    "read": "2026-11-09",
+    "sent": "The refuge is 3,236 acres of which the majority is a salt lake.",
+    "url": "https://www.fws.gov/refuge/grulla/about-us",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 3231,
+    "dissolved": {
+     "after": 3231,
+     "before": 6462,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 6462 -> 3231 acres",
+    "pieces": [
+     [
+      3901,
+      "Grulla National Wildlife Refuge",
+      3231,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": "U.S",
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/Grulla/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/grulla/about-us",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": 0,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 3236.0,
+     "as": "3,236 acres",
+     "clean": false,
+     "line": "Policies Get Involved News Species Map Grulla National Wildlife Refuge was established in 1969 and consist of 3,236 acres. This salt lake is important as a roost site for lesser sandhill cranes during the winter. Visit Us At Grulla",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/Grulla/",
+     "why": "history"
+    },
+    {
+     "acres": 3236.0,
+     "as": "3,236 acres",
+     "clean": false,
+     "line": "ation and Contact Information About Us Grulla National Wildlife Refuge was established in 1969 and consist of 3,236 acres. This salt lake is important as a roost site for lesser sandhill cranes during the winter. Learn More About U",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/Grulla/",
+     "why": "history"
+    },
+    {
+     "acres": 3236.0,
+     "as": "3,236 acres",
+     "clean": false,
+     "line": "e transferred to the U.S. Fish and Wildlife Service from the Bureau of Land Management in 1969. The refuge is 3,236 acres of which the majority is a salt lake. The refuge is a protected roost site for lesser sandhill cranes and pro",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/grulla/about-us",
+     "why": "total-looking"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-0678": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Valles Caldera Preserve National Conservation Area",
+   "official": {
+    "acres": 88900.0,
+    "as": "88,900 acre",
+    "clean": false,
+    "line": "life NPS Valles Caldera National Preserve is located in the Jemez Mountains of north-central New Mexico. This 88,900-acre park encompasses almost all of the volcanic caldera created by a spectacular volcanic eruption about 1.2 mill",
+    "read": "2026-11-09",
+    "sent": "This 88,900-acre park encompasses almost all of the volcanic caldera created by a spectacular volcanic eruption about 1.2 million years ago.",
+    "url": "https://www.nps.gov/vall/learn/index.htm",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 88967,
+    "manager": "",
+    "pieces": [
+     [
+      3313,
+      "Valles Caldera National Preserve",
+      88967,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/vall/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/vall/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/vall/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/vall/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": 0,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 0
+   },
+   "sizes": [
+    {
+     "acres": 88900.0,
+     "as": "88,900 acre",
+     "clean": false,
+     "line": "life NPS Valles Caldera National Preserve is located in the Jemez Mountains of north-central New Mexico. This 88,900-acre park encompasses almost all of the volcanic caldera created by a spectacular volcanic eruption about 1.2 mill",
+     "total_like": true,
+     "url": "https://www.nps.gov/vall/learn/index.htm",
+     "why": "total-looking"
+    }
+   ],
+   "t": "National Conservation Area",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-0752": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Pecos National Historical Park",
+   "official": null,
+   "ours": {
+    "acres": 6451,
+    "manager": "",
+    "pieces": [
+     [
+      3237,
+      "Pecos National Historical Park",
+      6451,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/peco/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/peco/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/peco/learn/kidsyouth/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/peco/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/peco/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Historical Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0903": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Aztec Ruins National Monument",
+   "official": null,
+   "ours": {
+    "acres": 265,
+    "manager": "",
+    "pieces": [
+     [
+      3338,
+      "Aztec Ruins National Monument",
+      265,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/azru/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/azru/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/azru/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/azru/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Monument",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0904": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Bandelier National Monument",
+   "official": {
+    "acres": 33000.0,
+    "as": "33,000 acres",
+    "clean": false,
+    "line": "NPS Exiting nps.gov Cancel Bandelier National Monument • New Mexico Bandelier National Monument protects over 33,000 acres of ruggedly beautiful canyon and mesa country. Petroglyphs, dwellings carved into the soft rock cliffs, and s",
+    "read": "2026-11-09",
+    "sent": "Bandelier National Monument protects over 33,000 acres of ruggedly beautiful canyon and mesa country.",
+    "url": "https://www.nps.gov/band/index.htm",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 33661,
+    "manager": "",
+    "pieces": [
+     [
+      3339,
+      "Bandelier National Monument",
+      33661,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/band/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/band/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/band/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": 2,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 33000.0,
+     "as": "33,000 acres",
+     "clean": false,
+     "line": "NPS Exiting nps.gov Cancel Bandelier National Monument • New Mexico Bandelier National Monument protects over 33,000 acres of ruggedly beautiful canyon and mesa country. Petroglyphs, dwellings carved into the soft rock cliffs, and s",
+     "total_like": true,
+     "url": "https://www.nps.gov/band/index.htm",
+     "why": "total-looking"
+    }
+   ],
+   "t": "National Monument",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-0910": {
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Capulin Volcano National Monument",
+   "official": {
+    "acres": 10048.0,
+    "as": "15.7 square miles",
+    "clean": false,
+    "line": "Cartmell Map showing the Rio Grande Rift and the Jemez Lineament. NPS A. Buccanero Capulin Volcano blanketed 15.7 square miles with its lava flows, but it was not the only volcano to transform the New Mexico landscape. Capulin lies with",
+    "read": "2026-11-09",
+    "sent": "Capulin Volcano blanketed 15.7 square miles with its lava flows, but it was not the only volcano to transform the New Mexico landscape.",
+    "url": "https://www.nps.gov/cavo/learn/nature/volcanic-fields.htm",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 791,
+    "manager": "",
+    "pieces": [
+     [
+      3347,
+      "Capulin Volcano National Monument",
+      791,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cavo/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cavo/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cavo/learn/nature/volcanic-fields.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cavo/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cavo/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": 92,
+   "same_agency": false,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 0,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 5120000.0,
+     "as": "8,000 square mile",
+     "clean": false,
+     "line": "ch Search This Site All NPS Exiting nps.gov Cancel Capulin Volcano National Monument • New Mexico Part of the 8,000 square mile Raton-Clayton Volcanic Field, Capulin Volcano showcases the volcanic geology of northeastern New Mexico. The",
+     "total_like": false,
+     "url": "https://www.nps.gov/cavo/index.htm",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 10048.0,
+     "as": "15.7 square miles",
+     "clean": false,
+     "line": "Cartmell Map showing the Rio Grande Rift and the Jemez Lineament. NPS A. Buccanero Capulin Volcano blanketed 15.7 square miles with its lava flows, but it was not the only volcano to transform the New Mexico landscape. Capulin lies with",
+     "total_like": true,
+     "url": "https://www.nps.gov/cavo/learn/nature/volcanic-fields.htm",
+     "why": "total-looking"
+    },
+    {
+     "acres": 5120000.0,
+     "as": "8,000 square mile",
+     "clean": false,
+     "line": "ts lava flows, but it was not the only volcano to transform the New Mexico landscape. Capulin lies within the 8,000 square mile Raton-Clayton Volcanic Field (RCVF). Along with Capulin, there are many volcanic features including multiple",
+     "total_like": false,
+     "url": "https://www.nps.gov/cavo/learn/nature/volcanic-fields.htm",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "National Monument",
+   "ver": 15,
+   "verdict": "off"
+  },
+  "US-0923": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "El Malpais National Monument",
+   "official": null,
+   "ours": {
+    "acres": 109249,
+    "manager": "",
+    "pieces": [
+     [
+      3364,
+      "El Malpais National Monument",
+      109249,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/elma/planyourvisit/visitorcenters.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/elma/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/elma/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Monument",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0924": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "El Morro National Monument",
+   "official": null,
+   "ours": {
+    "acres": 1040,
+    "manager": "",
+    "pieces": [
+     [
+      3365,
+      "El Morro National Monument",
+      1040,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/elmo/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/elmo/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/elmo/learn/historyculture/atsinna.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/elmo/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/elmo/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Monument",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0933": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Fort Union National Monument",
+   "official": null,
+   "ours": {
+    "acres": 721,
+    "manager": "",
+    "pieces": [
+     [
+      3373,
+      "Fort Union National Monument",
+      721,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/foun/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/foun/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/foun/learn/historyculture/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/foun/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/foun/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Monument",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0937": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Gila Cliff Dwellings National Monument",
+   "official": null,
+   "ours": {
+    "acres": 605,
+    "manager": "",
+    "pieces": [
+     [
+      3378,
+      "Gila Cliff Dwellings National Monument",
+      605,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/gicl/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/gicl/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/gicl/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/gicl/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Monument",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0955": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Petroglyph National Monument",
+   "official": null,
+   "ours": {
+    "acres": 2949,
+    "manager": "",
+    "pieces": [
+     [
+      3397,
+      "Petroglyph National Monument",
+      2949,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/petr/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/petr/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/petr/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/petr/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Monument",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0961": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Salinas Pueblo Missions, Gran Quivira Unit, National Monument",
+   "official": null,
+   "ours": {
+    "acres": 352,
+    "manager": "",
+    "pieces": [
+     [
+      3403,
+      "Salinas Pueblo Missions NM, Gran Quivira tract (PAD-US fee piece)",
+      352,
+      "reviewed (official tract: Gran Quivira of Salinas Pueblo Mis"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/sapu/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/sapu/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/sapu/getinvolved/pathways-stories.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/sapu/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/sapu/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Monument",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0970": {
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "White Sands National Park",
+   "official": {
+    "acres": 176000.0,
+    "as": "275 square miles",
+    "clean": true,
+    "line": "t White Sands. Visitors can experience sunset every day of the year. NPS Photo The dunes at White Sands cover 275 square miles of the Tularosa Basin. NPS Photo The wind shapes and moves the dunes as a whole but gives each individual dun",
+    "read": "2026-11-09",
+    "sent": "The dunes at White Sands cover 275 square miles of the Tularosa Basin.",
+    "url": "https://www.nps.gov/whsa/index.htm",
+    "why": "clean total"
+   },
+   "ours": {
+    "acres": 148226,
+    "manager": "",
+    "pieces": [
+     [
+      3478,
+      "White Sands National Park",
+      148226,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/whsa/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/whsa/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/whsa/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": 16,
+   "same_agency": false,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 0,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 176000.0,
+     "as": "275 square miles",
+     "clean": false,
+     "line": "atural wonders - the glistening white sands of New Mexico. Great wave-like dunes of gypsum sand have engulfed 275 square miles of desert, creating the world's largest gypsum dunefield. White Sands National Park preserves a major portion",
+     "total_like": true,
+     "url": "https://www.nps.gov/whsa/index.htm",
+     "why": "total-looking"
+    },
+    {
+     "acres": 176000.0,
+     "as": "275 square miles",
+     "clean": true,
+     "line": "t White Sands. Visitors can experience sunset every day of the year. NPS Photo The dunes at White Sands cover 275 square miles of the Tularosa Basin. NPS Photo The wind shapes and moves the dunes as a whole but gives each individual dun",
+     "total_like": true,
+     "url": "https://www.nps.gov/whsa/index.htm",
+     "why": "clean total"
+    }
+   ],
+   "t": "National Park",
+   "ver": 15,
+   "verdict": "off"
+  },
+  "US-11779": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Bisti-De-Na-Zin Wilderness Area",
+   "official": {
+    "acres": 45000.0,
+    "as": "45,000 acre",
+    "clean": false,
+    "line": "scape of eroded badlands, colorful hoodoos, and fossil-bearing formations dating to the Late Cretaceous. This 45,000-acre wilderness protects unique geological features and paleontological resources, including petrified wood and ve",
+    "read": "2026-11-09",
+    "sent": "This 45,000-acre wilderness protects unique geological features and paleontological resources, including petrified wood and vertebrate fossils.",
+    "url": "https://www.blm.gov/visit/bisti-de-na-zin-wilderness",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/bisti-de-na-zin-wilderness",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "same_agency": false,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 45000.0,
+     "as": "45,000 acre",
+     "clean": false,
+     "line": "scape of eroded badlands, colorful hoodoos, and fossil-bearing formations dating to the Late Cretaceous. This 45,000-acre wilderness protects unique geological features and paleontological resources, including petrified wood and ve",
+     "total_like": true,
+     "url": "https://www.blm.gov/visit/bisti-de-na-zin-wilderness",
+     "why": "total-looking"
+    }
+   ],
+   "t": "Wilderness Area",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-11780": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Datil Well Campground BLM Recreation Management Area",
+   "official": null,
+   "ours": {
+    "acres": 599,
+    "dissolved": {
+     "after": 673,
+     "before": 679,
+     "copies": 3,
+     "key_union": 599,
+     "parts": 0,
+     "records": 5,
+     "summed": 673,
+     "tracts": 2
+    },
+    "manager": "",
+    "note": "5 joined records = 2 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 679 -> 673 acres",
+    "pieces": [
+     [
+      "rst13971",
+      "Datil Well",
+      671,
+      "reviewed"
+     ],
+     [
+      "rma14052",
+      "Datil Well Recreation Area Campground",
+      2,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/datil-well-recreation-area-campground",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "BLM Recreation Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-11782": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Dunes BLM Recreation Management Area",
+   "official": {
+    "acres": 800.0,
+    "as": "800 acres",
+    "clean": false,
+    "line": "ebook Instagram Flickr LinkedIn Dunes Off-Highway Vehicle Area | New Mexico View Map In Full Screen More than 800 acres of fun is waiting for off-road enthusiasts at the Dunes Vehicle Recreation Area south of Farmington. The off-",
+    "read": "2026-11-09",
+    "sent": "More than 800 acres of fun is waiting for off-road enthusiasts at the Dunes Vehicle Recreation Area south of Farmington.",
+    "url": "https://www.blm.gov/visit/dunes-ohv-area",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 812,
+    "manager": "",
+    "pieces": [
+     [
+      "rst14014",
+      "Dunes Vehicle Recreation Area",
+      812,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/dunes-ohv-area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 2,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 1,
+    "pin": 1,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 800.0,
+     "as": "800 acres",
+     "clean": false,
+     "line": "ebook Instagram Flickr LinkedIn Dunes Off-Highway Vehicle Area | New Mexico View Map In Full Screen More than 800 acres of fun is waiting for off-road enthusiasts at the Dunes Vehicle Recreation Area south of Farmington. The off-",
+     "total_like": true,
+     "url": "https://www.blm.gov/visit/dunes-ohv-area",
+     "why": "total-looking"
+    }
+   ],
+   "t": "BLM Recreation Management Area",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-11783": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Fort Craig BLM Historic Area",
+   "ours": null,
+   "score": null,
+   "t": "BLM Historic Area",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-11785": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Fort Stanton Historic Site",
+   "official": {
+    "acres": 25000.0,
+    "as": "25,000 acres",
+    "clean": false,
+    "line": "xico. Visit Fort Selden Fort Stanton Fort Stanton, NM Fort Stanton is situated on 240 acres and surrounded by 25,000 acres of undeveloped BLM land in south-central New Mexico. There are 88 buildings on this historic site, some datin",
+    "read": "2026-11-09",
+    "sent": "Fort Stanton is situated on 240 acres and surrounded by 25,000 acres of undeveloped BLM land in south-central New Mexico.",
+    "url": "https://nmhistoricsites.org/fort-stanton",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 26104,
+    "dissolved": {
+     "after": 24654,
+     "before": 73962,
+     "copies": 2,
+     "key_union": 26104,
+     "parts": 0,
+     "records": 3,
+     "summed": 24654,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 73962 -> 24654 acres",
+    "pieces": [
+     [
+      "sgakg14020",
+      "Fort Stanton",
+      24654,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://nmhistoricsites.org/fort-stanton",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 4,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 2,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 240.0,
+     "as": "240 acres",
+     "clean": false,
+     "line": "story and heritage of New Mexico. Visit Fort Selden Fort Stanton Fort Stanton, NM Fort Stanton is situated on 240 acres and surrounded by 25,000 acres of undeveloped BLM land in south-central New Mexico. There are 88 buildings on",
+     "total_like": true,
+     "url": "https://nmhistoricsites.org/fort-stanton",
+     "why": "total-looking"
+    },
+    {
+     "acres": 25000.0,
+     "as": "25,000 acres",
+     "clean": false,
+     "line": "xico. Visit Fort Selden Fort Stanton Fort Stanton, NM Fort Stanton is situated on 240 acres and surrounded by 25,000 acres of undeveloped BLM land in south-central New Mexico. There are 88 buildings on this historic site, some datin",
+     "total_like": true,
+     "url": "https://nmhistoricsites.org/fort-stanton",
+     "why": "total-looking"
+    }
+   ],
+   "t": "Historic Site",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-11789": {
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Fort Selden Historic Site",
+   "official": null,
+   "ours": {
+    "acres": 30,
+    "manager": "",
+    "pieces": [
+     [
+      229527,
+      "Fort Selden State Park",
+      30,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://nmhistoricsites.org/fort-selden",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [
+    {
+     "acres": 240.0,
+     "as": "240 acres",
+     "clean": false,
+     "line": "story and heritage of New Mexico. Visit Fort Selden Fort Stanton Fort Stanton, NM Fort Stanton is situated on 240 acres and surrounded by 25,000 acres of undeveloped BLM land in south-central New Mexico. There are 88 buildings on",
+     "total_like": false,
+     "url": "https://nmhistoricsites.org/fort-selden",
+     "why": "another park / unit named in the sentence"
+    },
+    {
+     "acres": 25000.0,
+     "as": "25,000 acres",
+     "clean": false,
+     "line": "xico. Visit Fort Selden Fort Stanton Fort Stanton, NM Fort Stanton is situated on 240 acres and surrounded by 25,000 acres of undeveloped BLM land in south-central New Mexico. There are 88 buildings on this historic site, some datin",
+     "total_like": false,
+     "url": "https://nmhistoricsites.org/fort-selden",
+     "why": "another park / unit named in the sentence"
+    }
+   ],
+   "t": "Historic Site",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-11791": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Santa Cruz Lake BLM Recreation Management Area",
+   "official": null,
+   "ours": {
+    "acres": 3583,
+    "dissolved": {
+     "after": 3351,
+     "before": 6702,
+     "copies": 1,
+     "key_union": 3583,
+     "parts": 0,
+     "records": 2,
+     "summed": 3351,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 6702 -> 3351 acres",
+    "pieces": [
+     [
+      "rst13979",
+      "Santa Cruz Lake",
+      3351,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/santa-cruz-lake-recreation-area",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "opened, not a PDF",
+     "url": "https://eplanning.blm.gov/public_projects/lup/68121/86178/103335/Map_08_SRMAs_+_ERMAs.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "BLM Recreation Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-11795": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Lake Valley Townsite BLM Historic Preservation Site",
+   "ours": null,
+   "score": null,
+   "t": "BLM Historic Preservation Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-11796": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Socorro Natural Area",
+   "official": {
+    "acres": 120.0,
+    "as": "120 acre",
+    "clean": true,
+    "line": "stagram Flickr LinkedIn Socorro Nature Area | New Mexico View Map In Full Screen The Socorro Nature Area is a 120-acre environmental education area in the Rio Grande Bosque. The area includes a 1/2-mile self-guiding nature walk",
+    "read": "2026-11-09",
+    "sent": "The Socorro Nature Area is a 120-acre environmental education area in the Rio Grande Bosque.",
+    "url": "https://www.blm.gov/visit/socorro-nature-area",
+    "why": "clean total"
+   },
+   "ours": {
+    "acres": 122,
+    "manager": "",
+    "pieces": [
+     [
+      "rst14041",
+      "Socorro Nature Area",
+      122,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/socorro-nature-area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 2,
+   "same_agency": false,
+   "score": 8,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 120.0,
+     "as": "120 acre",
+     "clean": true,
+     "line": "stagram Flickr LinkedIn Socorro Nature Area | New Mexico View Map In Full Screen The Socorro Nature Area is a 120-acre environmental education area in the Rio Grande Bosque. The area includes a 1/2-mile self-guiding nature walk",
+     "total_like": true,
+     "url": "https://www.blm.gov/visit/socorro-nature-area",
+     "why": "clean total"
+    }
+   ],
+   "t": "Natural Area",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-11797": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Los Luceros Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-11806": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Johnson (Gordy's) Hill BLM Recreation Management Area",
+   "official": null,
+   "ours": {
+    "acres": 8358,
+    "manager": "",
+    "pieces": [
+     [
+      "rst14034",
+      "Johnson (Gordy's) Hill North",
+      4583,
+      "name"
+     ],
+     [
+      "rst13973",
+      "Johnson (Gordy's) Hill South",
+      3155,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/johnson-gordys-hill-ohv-area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "BLM Recreation Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-11807": {
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Simon Canyon ACEC BLM Special Recreation Management Area",
+   "official": {
+    "acres": 3900.0,
+    "as": "3,900 acres",
+    "clean": false,
+    "line": "cern | New Mexico View Map In Full Screen Simon Canyon Area of Critical Environmental Concern (ACEC) is about 3,900 acres in size and is managed for semi-primitive forms of recreation including fishing, hiking, and backpacking. Dev",
+    "read": "2026-11-09",
+    "sent": "Simon Canyon Area of Critical Environmental Concern (ACEC) is about 3,900 acres in size and is managed for semi-primitive forms of recreation including fishing, hiking, and backpacking.",
+    "url": "https://www.blm.gov/visit/simon-canyon-acec",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 4543,
+    "dissolved": {
+     "after": 3959,
+     "before": 7866,
+     "copies": 1,
+     "key_union": 4543,
+     "parts": 0,
+     "records": 2,
+     "summed": 3959,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 7866 -> 3959 acres",
+    "pieces": [
+     [
+      "sgakh1693",
+      "Simon Canyon",
+      3959,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/simon-canyon-acec",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 16,
+   "same_agency": false,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 3900.0,
+     "as": "3,900 acres",
+     "clean": false,
+     "line": "cern | New Mexico View Map In Full Screen Simon Canyon Area of Critical Environmental Concern (ACEC) is about 3,900 acres in size and is managed for semi-primitive forms of recreation including fishing, hiking, and backpacking. Dev",
+     "total_like": true,
+     "url": "https://www.blm.gov/visit/simon-canyon-acec",
+     "why": "total-looking"
+    }
+   ],
+   "t": "BLM Special Recreation Management Area",
+   "ver": 15,
+   "verdict": "off"
+  },
+  "US-11813": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Salinas Pueblo Missions, Abo Unit National Monument",
+   "official": null,
+   "ours": {
+    "acres": 193,
+    "manager": "",
+    "pieces": [
+     [
+      3403,
+      "Salinas Pueblo Missions NM, Abo tract (PAD-US fee piece)",
+      193,
+      "reviewed (official tract: Abo of Salinas Pueblo Missions Nat"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/sapu/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/sapu/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/sapu/getinvolved/pathways-stories.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/sapu/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/sapu/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Monument",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-11814": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Salinas Pueblo Missions, Quarai unit, National Monument",
+   "official": null,
+   "ours": {
+    "acres": 48,
+    "manager": "",
+    "pieces": [
+     [
+      3403,
+      "Salinas Pueblo Missions NM, Quarai tract (PAD-US fee piece)",
+      48,
+      "reviewed (official tract: Quarai of Salinas Pueblo Missions "
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/sapu/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/sapu/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/sapu/getinvolved/pathways-stories.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/sapu/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/sapu/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Monument",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-11815": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "La Cueva Non-Motorized Trail System Recreation Site",
+   "official": {
+    "acres": 2200.0,
+    "as": "2,200 acres",
+    "clean": true,
+    "line": "rail System | New Mexico View Map In Full Screen The La Cueva Non-Motorized Trail System covers approximately 2,200 acres and contains more than 15 miles of maintained trails. The non-motorized trails are conveniently located near",
+    "read": "2026-11-09",
+    "sent": "The La Cueva Non-Motorized Trail System covers approximately 2,200 acres and contains more than 15 miles of maintained trails.",
+    "url": "https://www.blm.gov/visit/la-cueva-non-motorized-trail-system",
+    "why": "clean total"
+   },
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/la-cueva-non-motorized-trail-system",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "same_agency": false,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [
+    {
+     "acres": 2200.0,
+     "as": "2,200 acres",
+     "clean": true,
+     "line": "rail System | New Mexico View Map In Full Screen The La Cueva Non-Motorized Trail System covers approximately 2,200 acres and contains more than 15 miles of maintained trails. The non-motorized trails are conveniently located near",
+     "total_like": true,
+     "url": "https://www.blm.gov/visit/la-cueva-non-motorized-trail-system",
+     "why": "clean total"
+    }
+   ],
+   "t": "Recreation Site",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-11816": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Hackberry Lake OHV Use Area BLM Recreation Management Area",
+   "official": {
+    "acres": 55000.0,
+    "as": "55,000 acres",
+    "clean": false,
+    "line": "e Area | New Mexico View Map In Full Screen The Hackberry Lake Off-Highway Vehicle (OHV) Use Area offers over 55,000 acres of rolling stabilized dune lands and cliffs. The area is open for intensive use of motorcycles, sand dune bug",
+    "read": "2026-11-09",
+    "sent": "The Hackberry Lake Off-Highway Vehicle (OHV) Use Area offers over 55,000 acres of rolling stabilized dune lands and cliffs.",
+    "url": "https://www.blm.gov/visit/hackberry-lake-ohv-area",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
+   "ours": {
+    "acres": 57606,
+    "dissolved": {
+     "after": 57606,
+     "before": 230422,
+     "copies": 3,
+     "parts": 0,
+     "records": 4,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 230422 -> 57606 acres",
+    "pieces": [
+     [
+      "rma14053",
+      "Hackberry Lake OHV Area",
+      57606,
+      "words"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/hackberry-lake-ohv-area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 5,
+   "same_agency": false,
+   "score": 8,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 55000.0,
+     "as": "55,000 acres",
+     "clean": false,
+     "line": "e Area | New Mexico View Map In Full Screen The Hackberry Lake Off-Highway Vehicle (OHV) Use Area offers over 55,000 acres of rolling stabilized dune lands and cliffs. The area is open for intensive use of motorcycles, sand dune bug",
+     "total_like": false,
+     "url": "https://www.blm.gov/visit/hackberry-lake-ohv-area",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "BLM Recreation Management Area",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-11817": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Haystack Mountain OHV Area BLM Recreation Management Area",
+   "official": {
+    "acres": 1920.0,
+    "as": "1,920 acres",
+    "clean": false,
+    "line": "hed on the rugged breaks overlooking the Pecos River, Haystack Mountain Off-Highway Vehicle (OHV) Area offers 1,920 acres of trails to ride. From novices to experts, on bare rock and sandy washes, OHV enthusiasts can find terrain t",
+    "read": "2026-11-09",
+    "sent": "Perched on the rugged breaks overlooking the Pecos River, Haystack Mountain Off-Highway Vehicle (OHV) Area offers 1,920 acres of trails to ride.",
+    "url": "https://www.blm.gov/visit/haystack-mountain-ohv-area",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 1934,
+    "dissolved": {
+     "after": 1934,
+     "before": 9670,
+     "copies": 4,
+     "parts": 0,
+     "records": 5,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "5 joined records = 1 tracts: 4 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 9670 -> 1934 acres",
+    "pieces": [
+     [
+      "rma11066",
+      "Haystack Mountain OHV Area",
+      1934,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/haystack-mountain-ohv-area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 1,
+   "same_agency": false,
+   "score": 8,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 1920.0,
+     "as": "1,920 acres",
+     "clean": false,
+     "line": "hed on the rugged breaks overlooking the Pecos River, Haystack Mountain Off-Highway Vehicle (OHV) Area offers 1,920 acres of trails to ride. From novices to experts, on bare rock and sandy washes, OHV enthusiasts can find terrain t",
+     "total_like": true,
+     "url": "https://www.blm.gov/visit/haystack-mountain-ohv-area",
+     "why": "total-looking"
+    }
+   ],
+   "t": "BLM Recreation Management Area",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-11821": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Bosque Redondo Memorial/Fort Sumner Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-11822": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Jemez Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-11823": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Coronado Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-11838": {
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "The Box BLM Recreation Management Area",
+   "official": {
+    "acres": 640.0,
+    "as": "640 acre",
+    "clean": false,
+    "line": "r YouTube Facebook Instagram Flickr LinkedIn The Box Recreation Area | New Mexico View Map In Full Screen The 640-acre Box Recreation Area is a highly scenic, rugged area that is very popular for technical rock climbing and boul",
+    "read": "2026-11-09",
+    "sent": "The 640-acre Box Recreation Area is a highly scenic, rugged area that is very popular for technical rock climbing and bouldering.",
+    "url": "https://www.blm.gov/visit/box-recreation-area",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 968,
+    "dissolved": {
+     "after": 1093,
+     "before": 2186,
+     "copies": 1,
+     "key_union": 968,
+     "parts": 0,
+     "records": 2,
+     "summed": 1093,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2186 -> 1093 acres",
+    "pieces": [
+     [
+      "rst13999",
+      "The Box",
+      1093,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/box-recreation-area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 51,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 640.0,
+     "as": "640 acre",
+     "clean": false,
+     "line": "r YouTube Facebook Instagram Flickr LinkedIn The Box Recreation Area | New Mexico View Map In Full Screen The 640-acre Box Recreation Area is a highly scenic, rugged area that is very popular for technical rock climbing and boul",
+     "total_like": true,
+     "url": "https://www.blm.gov/visit/box-recreation-area",
+     "why": "total-looking"
+    }
+   ],
+   "t": "BLM Recreation Management Area",
+   "ver": 15,
+   "verdict": "off"
+  },
+  "US-11840": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "San Lorenzo Canyon BLM Recreation Management Area",
+   "ours": null,
+   "score": null,
+   "t": "BLM Recreation Management Area",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-11859": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Lincoln State Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "State Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-11866": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Rio Bonito Acquired Lands: Salazar Tract, BLM Recreation Management Area",
+   "official": null,
+   "ours": {
+    "acres": 1104,
+    "manager": "",
+    "pieces": [
+     [
+      "rst13994",
+      "Rio Bonito Acquired Lands Tract 4",
+      474,
+      "name"
+     ],
+     [
+      "rst14069",
+      "Rio Bonito Acquired Lands Tract 1",
+      261,
+      "name"
+     ],
+     [
+      "rst14010",
+      "Rio Bonito Acquired Lands Tract 2",
+      189,
+      "name"
+     ],
+     [
+      "rst14006",
+      "Rio Bonito Acquired Lands Tract 3",
+      180,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/programs-recreation-recreation-activities-new-mexico-salazar-tract",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "BLM Recreation Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-12111": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Tortugas Mountain BLM Recreation Management Area",
+   "ours": null,
+   "score": null,
+   "t": "BLM Recreation Management Area",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-12169": {
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "El Malpais BLM National Conservation Area",
+   "official": null,
+   "ours": {
+    "acres": 263158,
+    "manager": "",
+    "pieces": [],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 10
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/el-malpais-nca",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 6700.0,
+     "as": "6,700 acre",
+     "clean": false,
+     "line": "10 p.m. to 6 a.m. Hole-in-the-Wall A premier destination for avid hikers and backpackers, Hole-in-the-Wall is 6,700-acre kīpuka – a rare island of ponderosa pine forest and open rangeland surrounded by lava. Accessing Hole-in-the-",
+     "total_like": false,
+     "url": "https://www.blm.gov/visit/el-malpais-nca",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "BLM National Conservation Area",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-12590": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Alien Run Mountain Bike Trail BLM Recreation Management Area",
+   "official": null,
+   "ours": {
+    "acres": 2522,
+    "dissolved": {
+     "after": 3315,
+     "before": 9945,
+     "copies": 2,
+     "key_union": 2522,
+     "parts": 0,
+     "records": 3,
+     "summed": 3315,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 9945 -> 3315 acres",
+    "pieces": [
+     [
+      "rst14013",
+      "Alien Run",
+      3315,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/alien-run-mountain-bike-trail",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "BLM Recreation Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-12591": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Sunset Reef Campground BLM Recreation Management Area",
+   "official": null,
+   "ours": {
+    "acres": 1,
+    "dissolved": {
+     "after": 2,
+     "before": 8,
+     "copies": 3,
+     "key_union": 1,
+     "parts": 0,
+     "records": 4,
+     "summed": 2,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 8 -> 2 acres",
+    "pieces": [
+     [
+      "rma11412",
+      "Sunset Reef Campground",
+      2,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/sunset-reef-campground",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "BLM Recreation Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-12592": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Parks Ranch Cave BLM Recreation Management Area",
+   "ours": null,
+   "score": null,
+   "t": "BLM Recreation Management Area",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-12593": {
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Glade Run Recreation Area BLM Recreation Management Area",
+   "official": {
+    "acres": 19000.0,
+    "as": "19,000 acres",
+    "clean": false,
+    "line": "Map In Full Screen A great spot for the weekend warrior, the Glade Run Recreation Area (GRRA) is comprised of 19,000 acres of sandy arroyos, slick rock and rolling terrain. Vegetation is sparse, primarily consisting of common grasse",
+    "read": "2026-11-09",
+    "sent": "A great spot for the weekend warrior, the Glade Run Recreation Area (GRRA) is comprised of 19,000 acres of sandy arroyos, slick rock and rolling terrain.",
+    "url": "https://www.blm.gov/visit/glade-run",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 25136,
+    "dissolved": {
+     "after": 23339,
+     "before": 70017,
+     "copies": 2,
+     "key_union": 25136,
+     "parts": 0,
+     "records": 3,
+     "summed": 23339,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 70017 -> 23339 acres",
+    "pieces": [
+     [
+      "rst13982",
+      "Glade Run Recreation Area",
+      23339,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/glade-run",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 32,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 19000.0,
+     "as": "19,000 acres",
+     "clean": false,
+     "line": "Map In Full Screen A great spot for the weekend warrior, the Glade Run Recreation Area (GRRA) is comprised of 19,000 acres of sandy arroyos, slick rock and rolling terrain. Vegetation is sparse, primarily consisting of common grasse",
+     "total_like": true,
+     "url": "https://www.blm.gov/visit/glade-run",
+     "why": "total-looking"
+    },
+    {
+     "acres": 3800.0,
+     "as": "3,800 acres",
+     "clean": false,
+     "line": "off-highway vehicle use zones. The northern three-quarters of the Glade are managed for limited trail use and 3,800 acres on the south end are managed as an open OHV area. Approximately 42 miles of marked trails for motorized trail",
+     "total_like": true,
+     "url": "https://www.blm.gov/visit/glade-run",
+     "why": "total-looking"
+    }
+   ],
+   "t": "BLM Recreation Management Area",
+   "ver": 15,
+   "verdict": "off"
+  },
+  "US-12737": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Casamero Pueblo | New Mexico BLM Historic Area",
+   "ours": null,
+   "score": null,
+   "t": "BLM Historic Area",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-12746": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Aden Hills Off-Highway Vehicle Area BLM Recreation Management Area",
+   "official": {
+    "acres": 8700.0,
+    "as": "8,700 acres",
+    "clean": false,
+    "line": "| New Mexico View Map In Full Screen The Aden Hills Off-Highway Vehicle (OHV) Area encompasses approximately 8,700 acres of Chihuahuan Desert scrub environment characterized by low mesquite or creosote-stabilized coppice dunes, an",
+    "read": "2026-11-09",
+    "sent": "The Aden Hills Off-Highway Vehicle (OHV) Area encompasses approximately 8,700 acres of Chihuahuan Desert scrub environment characterized by low mesquite or creosote-stabilized coppice dunes, and a variety of dropseed grasses, yucca, and cacti.",
+    "url": "https://www.blm.gov/visit/aden-hills-ohv",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 8051,
+    "dissolved": {
+     "after": 8051,
+     "before": 32204,
+     "copies": 3,
+     "parts": 0,
+     "records": 4,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 32204 -> 8051 acres",
+    "pieces": [
+     [
+      "rma11071",
+      "Aden Hills",
+      8051,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/aden-hills-ohv",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 7,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 8700.0,
+     "as": "8,700 acres",
+     "clean": false,
+     "line": "| New Mexico View Map In Full Screen The Aden Hills Off-Highway Vehicle (OHV) Area encompasses approximately 8,700 acres of Chihuahuan Desert scrub environment characterized by low mesquite or creosote-stabilized coppice dunes, an",
+     "total_like": true,
+     "url": "https://www.blm.gov/visit/aden-hills-ohv",
+     "why": "total-looking"
+    }
+   ],
+   "t": "BLM Recreation Management Area",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-12785": {
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Rio Mora National Wildlife Refuge",
+   "official": {
+    "acres": 4224.0,
+    "as": "4,224 acres",
+    "clean": false,
+    "line": "located in the transition zone between the Great Plains and the Southern Rocky Mountains. The refuge contains 4,224 acres of shortgrass prairie, riparian wetlands, piñon/juniper, oak, and coniferous forests all surrounding a meande",
+    "read": "2026-11-09",
+    "sent": "The refuge contains 4,224 acres of shortgrass prairie, riparian wetlands, piñon/juniper, oak, and coniferous forests all surrounding a meandering five miles of the Mora River.",
+    "url": "https://www.fws.gov/refuge/rio-mora",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 3158,
+    "dissolved": {
+     "after": 4230,
+     "before": 8460,
+     "copies": 1,
+     "key_union": 3158,
+     "parts": 0,
+     "records": 2,
+     "summed": 4230,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 8460 -> 4230 acres",
+    "pieces": [
+     [
+      4271,
+      "Rio Mora National Wildlife Refuge And Conservation Area",
+      4230,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/rio-mora/visit-us",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/rio-mora/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/rio-mora",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "pct": 25,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 4224.0,
+     "as": "4,224 acre",
+     "clean": false,
+     "line": "ional zone of the Great Plains and the Southern Rocky Mountains Rio Mora National Wildlife Refuge is a unique 4,224-acre refuge surrounding a portion of the Mora River. Containing short grass prairies, riparian wetlands, piñon/jun",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/rio-mora",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 4224.0,
+     "as": "4,224 acres",
+     "clean": false,
+     "line": "located in the transition zone between the Great Plains and the Southern Rocky Mountains. The refuge contains 4,224 acres of shortgrass prairie, riparian wetlands, piñon/juniper, oak, and coniferous forests all surrounding a meande",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/rio-mora",
+     "why": "total-looking"
+    },
+    {
+     "acres": 952000.0,
+     "as": "952,000 acre",
+     "clean": false,
+     "line": "ing the ecological function and resiliency within the larger landscape. The Rio Mora Conservation Area is the 952,000-acre Mora River watershed. As the name suggests, the Mora River is the center and from it are tributaries such as",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/rio-mora",
+     "why": "total-looking"
+    },
+    {
+     "acres": 40000.0,
+     "as": "40,000 acres",
+     "clean": false,
+     "line": "age. Our Complex In eastern side of New Mexico, there are four National Wildlife Refuges that encompass about 40,000 acres of land under one management team called a National Wildlife Refuge Complex. Rio Mora National Wildlife Refug",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/rio-mora",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "Wildlife Refuge",
+   "ver": 15,
+   "verdict": "off"
+  },
+  "US-12804": {
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 60,000 acres, no total words near it)",
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Valle de Oro National Wildlife Refuge",
+   "official": {
+    "acres": 60000.0,
+    "as": "60,000 acres",
+    "clean": false,
+    "line": "OK Situated just outside the Lawton/Ft. Sill area, Wichita Mountains Wildlife Refuge preserves approximately 60,000 acres of mixed grass prairie, ancient granite mountains, and fresh water lakes and streams for the benefit of wildl",
+    "read": "2026-11-09",
+    "sent": "Sill area, Wichita Mountains Wildlife Refuge preserves approximately 60,000 acres of mixed grass prairie, ancient granite mountains, and fresh water lakes and streams for the benefit of wildlife and the American people.",
+    "url": "https://www.fws.gov/carp/refuge/valle-de-oro/visit-us",
+    "why": "no total words near it"
+   },
+   "ours": {
+    "acres": 277,
+    "dissolved": {
+     "after": 653,
+     "before": 1142,
+     "copies": 1,
+     "key_union": 277,
+     "parts": 0,
+     "records": 4,
+     "summed": 653,
+     "tracts": 3
+    },
+    "manager": "",
+    "note": "4 joined records = 3 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1142 -> 653 acres",
+    "pieces": [
+     [
+      4440,
+      "Valle De Oro National Wildlife Refuge",
+      489,
+      "name"
+     ],
+     [
+      4439,
+      "Valle De Oro National Wildlife Refuge",
+      82,
+      "name"
+     ],
+     [
+      5396,
+      "Valle De Oro National Wildlife Refuge",
+      82,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/carp/refuge/valle-de-oro/visit-us",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 100,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 60000.0,
+     "as": "60,000 acres",
+     "clean": false,
+     "line": "OK Situated just outside the Lawton/Ft. Sill area, Wichita Mountains Wildlife Refuge preserves approximately 60,000 acres of mixed grass prairie, ancient granite mountains, and fresh water lakes and streams for the benefit of wildl",
+     "total_like": false,
+     "url": "https://www.fws.gov/carp/refuge/valle-de-oro/visit-us",
+     "why": "no total words near it"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-13001": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Kilbourne Hole Volcanic Crater BLM National Conservation Area",
+   "ours": null,
+   "score": null,
+   "t": "BLM National Conservation Area",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-13159": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Quebradas Backcountry Byway BLM Wilderness Area",
+   "official": null,
+   "ours": {
+    "acres": 2324,
+    "dissolved": {
+     "after": 3834,
+     "before": 11502,
+     "copies": 2,
+     "key_union": 2324,
+     "parts": 0,
+     "records": 3,
+     "summed": 3834,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 11502 -> 3834 acres",
+    "pieces": [
+     [
+      "sgakg14015",
+      "Quebradas Backcountry Byway",
+      3834,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/quebradas-backcountry-byway",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "BLM Wilderness Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-13185": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Dow Canyon Tract BLM Recreation Management Area",
+   "ours": null,
+   "score": null,
+   "t": "BLM Recreation Management Area",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-13186": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Lincoln Tract BLM Recreation Management Area",
+   "ours": null,
+   "score": null,
+   "t": "BLM Recreation Management Area",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-13498": {
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Chosa Campground BLM Recreation Management Area",
+   "official": null,
+   "ours": {
+    "acres": 1,
+    "dissolved": {
+     "after": 4,
+     "before": 16,
+     "copies": 3,
+     "key_union": 1,
+     "parts": 0,
+     "records": 4,
+     "summed": 4,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 16 -> 4 acres",
+    "pieces": [
+     [
+      "rma11411",
+      "Chosa Campground",
+      4,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/chosa-campground",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 3.5,
+     "as": "3.5 acre",
+     "clean": false,
+     "line": "nstagram Flickr LinkedIn Chosa Campground | New Mexico View Map In Full Screen Chosa Campground consists of a 3.5-acre, pipe-rail fenced pad that offers a trash container and a safe parking space for your Recreational Vehicle pl",
+     "total_like": false,
+     "url": "https://www.blm.gov/visit/chosa-campground",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "BLM Recreation Management Area",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-2686": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Bluewater State Park",
+   "official": null,
+   "ours": {
+    "acres": 1889,
+    "family_fold": "layers {'sgnmb': 2108, 'padus': 1824}: one land in 2 layers, the sgnmb copy used (1,824 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb1",
+      "BLUEWATER LAKE",
+      2108,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/bluewater-lake-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2687": {
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Bottomless Lakes State Park",
+   "official": null,
+   "ours": {
+    "acres": 1936,
+    "family_fold": "layers {'sgnmb': 1537, 'padus': 1439}: one land in 2 layers, the sgnmb copy used (1,439 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb33",
+      "BOTTOMLESS LAKES",
+      1537,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/bottomless-lakes-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 10.0,
+     "as": "10 acres",
+     "clean": false,
+     "line": "(seasonal closure) Group Shelter 24 Picnic Shelters Historic Lea Lake Pavilion No Fishing allowed Lower Lakes Area: 10 Developed Campsites Vault Toilets Visitor Center Exhibits/Park Information Wildlife Viewing Blinds ADDRESS & P",
+     "total_like": false,
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/bottomless-lakes-state-park/",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-2688": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Brantley Lake State Park",
+   "official": null,
+   "ours": {
+    "acres": 5631,
+    "family_fold": "layers {'sgnmb': 4343, 'padus': 2664}: one land in 2 layers, the sgnmb copy used (2,664 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb2",
+      "BRANTLEY LAKE",
+      4343,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/brantley-lake-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2689": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Caballo Lake State Park",
+   "official": null,
+   "ours": {
+    "acres": 9111,
+    "family_fold": "layers {'sgnmb': 5817, 'padus': 4476}: one land in 2 layers, the sgnmb copy used (4,476 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb3",
+      "CABALLO LAKE",
+      5817,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/caballo-lake-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2690": {
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 50 acres, no total words near it)",
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Cerrillos Hills State Park",
+   "official": {
+    "acres": 50.0,
+    "as": "50 acres",
+    "clean": false,
+    "line": "turday & Sunday): Exhibits Restrooms Historic Sites: mines Group Facilities: Multi-purpose Room Maximum group size: 50 For Facility Rental, contact Park Manager for reservation details. Purchase Day-Use Pass HOURS Visitor Center",
+    "read": "2026-11-09",
+    "sent": "Maximum group size: 50 For Facility Rental, contact Park Manager for reservation details.",
+    "url": "https://www.emnrd.nm.gov/spd/find-a-park/cerrillos-hills-state-park/",
+    "why": "no total words near it"
+   },
+   "ours": {
+    "acres": 1086,
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb4",
+      "CERRILLOS HILLS",
+      1086,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/cerrillos-hills-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": 2072,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 50.0,
+     "as": "50 acres",
+     "clean": false,
+     "line": "turday & Sunday): Exhibits Restrooms Historic Sites: mines Group Facilities: Multi-purpose Room Maximum group size: 50 For Facility Rental, contact Park Manager for reservation details. Purchase Day-Use Pass HOURS Visitor Center",
+     "total_like": false,
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/cerrillos-hills-state-park/",
+     "why": "no total words near it"
+    }
+   ],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-2691": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Cimarron Canyon State Park",
+   "official": null,
+   "ours": {
+    "acres": 723,
+    "family_fold": "layers {'padus': 1231, 'sgnmb': 378}: one land in 2 layers, the padus copy used (378 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      229272,
+      "Cimarron Canyon State Park",
+      1231,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/cimarron-canyon-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2692": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "City of Rocks State Park",
+   "official": null,
+   "ours": {
+    "acres": 2915,
+    "family_fold": "layers {'sgnmb': 2915, 'padus': 681}: one land in 2 layers, the sgnmb copy used (681 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb6",
+      "CITY OF ROCKS",
+      2915,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/city-of-rocks-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2693": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Clayton Lake State Park",
+   "official": null,
+   "ours": {
+    "acres": 464,
+    "family_fold": "layers {'sgnmb': 417, 'padus': 315}: one land in 2 layers, the sgnmb copy used (315 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb7",
+      "CLAYTON LAKE",
+      417,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/clayton-lake-state-park-and-dinosaur-trackways/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2694": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Conchas Lake State Park",
+   "official": null,
+   "ours": {
+    "acres": 993,
+    "family_fold": "layers {'padus': 1398, 'sgnmb': 503}: one land in 2 layers, the padus copy used (503 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      229275,
+      "Conchas Lake State Park",
+      1398,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/conchas-lake-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2695": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Coyote Creek State Park",
+   "official": null,
+   "ours": {
+    "acres": 7761,
+    "family_fold": "layers {'padus': 7761, 'sgnmb': 601}: one land in 2 layers, the padus copy used (601 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      229276,
+      "Coyote Creek State Park",
+      7306,
+      "name"
+     ],
+     [
+      79461,
+      "Coyote Creek",
+      455,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/coyote-creek-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2696": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Eagle Nest Lake State Park",
+   "official": null,
+   "ours": {
+    "acres": 3488,
+    "family_fold": "layers {'sgnmb': 3488, 'padus': 1918}: one land in 2 layers, the sgnmb copy used (1,918 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb9",
+      "EAGLE NEST LAKE",
+      3488,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/eagle-nest-lake-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2697": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Elephant Butte Lake State Park",
+   "official": null,
+   "ours": {
+    "acres": 43533,
+    "family_fold": "layers {'sgnmb': 33356, 'padus': 20696}: one land in 2 layers, the sgnmb copy used (20,696 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb11",
+      "ELEPHANT BUTTE LAKE",
+      33356,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/elephant-butte-lake-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2698": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "El Vado Lake State Park",
+   "official": null,
+   "ours": {
+    "acres": 5206,
+    "family_fold": "layers {'sgnmb': 5206, 'padus': 1850}: one land in 2 layers, the sgnmb copy used (1,850 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb10",
+      "EL VADO LAKE",
+      5206,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/el-vado-lake-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2699": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Fenton Lake State Park",
+   "official": null,
+   "ours": {
+    "acres": 318,
+    "family_fold": "layers {'sgnmb': 291, 'padus': 260}: one land in 2 layers, the sgnmb copy used (260 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb29",
+      "FENTON LAKE",
+      291,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "pages": [],
+   "pct": null,
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no official page on file"
+  },
+  "US-2700": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Heron Lake State Park",
+   "official": null,
+   "ours": {
+    "acres": 9963,
+    "family_fold": "layers {'sgnmb': 9963, 'padus': 5233}: one land in 2 layers, the sgnmb copy used (5,233 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb12",
+      "HERON LAKE",
+      9963,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/heron-lake-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2701": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Hyde Memorial State Park",
+   "official": null,
+   "ours": {
+    "acres": 352,
+    "dissolved": {
+     "after": 352,
+     "before": 699,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 699 -> 352 acres",
+    "pieces": [
+     [
+      "sgnmb13",
+      "HYDE MEMORIAL",
+      352,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/hyde-memorial-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2702": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Leasburg Dam State Park",
+   "official": null,
+   "ours": {
+    "acres": 271,
+    "family_fold": "layers {'sgnmb': 288, 'padus': 271}: one land in 2 layers, the sgnmb copy used (271 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb14",
+      "LEASBURG DAM",
+      288,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/leasburg-dam-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2703": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Living Desert State Park",
+   "official": null,
+   "ours": {
+    "acres": 1020,
+    "family_fold": "layers {'sgnmb': 1551, 'padus': 374}: one land in 2 layers, the sgnmb copy used (374 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb34",
+      "LIVING DESERT ZOO",
+      1551,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/living-desert-zoo-and-gardens-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2704": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Manzano Mountains State Park",
+   "official": null,
+   "ours": {
+    "acres": 1375,
+    "family_fold": "layers {'padus': 1700, 'sgnmb': 188}: one land in 2 layers, the padus copy used (188 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      229284,
+      "Manzano Mountains State Park",
+      1700,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/manzano-mountains-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2705": {
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Mesilla Valley Bosque State Park",
+   "official": null,
+   "ours": {
+    "acres": 590,
+    "family_fold": "layers {'sgnmb': 272, 'padus': 237}: one land in 2 layers, the sgnmb copy used (237 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb16",
+      "MESILLA VALLEY BOSQUE",
+      272,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/mesilla-valley-bosque-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 305.0,
+     "as": "305 acres",
+     "clean": false,
+     "line": "located on the Rio Grande near Las Cruces and 1.5 miles from historic town of Mesilla. It spans approximately 305 acres and is situated along the Rio Grande (river), featuring river woodlands and restored wetlands. The park is a",
+     "total_like": false,
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/mesilla-valley-bosque-state-park/",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-2706": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Morphy Lake State Park",
+   "official": null,
+   "ours": {
+    "acres": 30,
+    "family_fold": "layers {'sgnmb': 48, 'padus': 18}: one land in 2 layers, the sgnmb copy used (18 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb17",
+      "MORPHY LAKE",
+      48,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/morphy-lake-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2707": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Navajo Lake State Park",
+   "official": null,
+   "ours": {
+    "acres": 25938,
+    "family_fold": "layers {'padus': 17478, 'sgnmb': 10424, 'sgnmc': 6765}: one land in 3 layers, the padus copy used (17,189 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      229286,
+      "Navajo Lake State Park",
+      17438,
+      "name"
+     ],
+     [
+      184876,
+      "Navajo State Park",
+      40,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/navajo-lake-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2708": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Oasis State Park",
+   "official": null,
+   "ours": {
+    "acres": 194,
+    "family_fold": "layers {'sgnmb': 194, 'padus': 178}: one land in 2 layers, the sgnmb copy used (178 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb19",
+      "OASIS",
+      194,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/oasis-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2709": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Oliver Lee Memorial State Park",
+   "official": null,
+   "ours": {
+    "acres": 587,
+    "family_fold": "layers {'padus': 720, 'sgnmb': 638}: one land in 2 layers, the padus copy used (638 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      229288,
+      "Oliver Lee State Park",
+      720,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/oliver-lee-memorial-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2710": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Pancho Villa State Park",
+   "official": null,
+   "ours": {
+    "acres": 58,
+    "family_fold": "layers {'sgnmb': 54, 'padus': 43}: one land in 2 layers, the sgnmb copy used (43 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb21",
+      "PANCHO VILLA",
+      54,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/pancho-villa-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2711": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Percha Dam State Park",
+   "official": null,
+   "ours": {
+    "acres": 228,
+    "family_fold": "layers {'padus': 315, 'sgnmb': 204}: one land in 2 layers, the padus copy used (204 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      229290,
+      "Percha Dam State Park",
+      315,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/percha-dam-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2712": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Rio Grande Nature Center State Park",
+   "official": null,
+   "ours": {
+    "acres": 57,
+    "family_fold": "layers {'sgnmb': 39, 'padus': 25}: one land in 2 layers, the sgnmb copy used (25 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb23",
+      "RIO GRANDE NATURE CENTER",
+      39,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/rio-grande-nature-center-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2713": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Rock Hound State Park",
+   "official": null,
+   "ours": {
+    "acres": 740,
+    "family_fold": "layers {'sgnmb': 913, 'padus': 234}: one land in 2 layers, the sgnmb copy used (234 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb24",
+      "ROCKHOUND",
+      913,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/rockhound-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2714": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Santa Rosa Lake State Park",
+   "official": null,
+   "ours": {
+    "acres": 285,
+    "family_fold": "layers {'padus': 364, 'sgnmb': 329}: one land in 2 layers, the padus copy used (329 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      229292,
+      "Santa Rosa Lake State Park",
+      364,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/santa-rosa-lake-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2715": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Storrie Lake State Park",
+   "official": null,
+   "ours": {
+    "acres": 242,
+    "family_fold": "layers {'padus': 130, 'sgnmb': 122}: one land in 2 layers, the padus copy used (122 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      229293,
+      "Storrie Lake State Park",
+      130,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/storrie-lake-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2716": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Sugarite Canyon State Park",
+   "official": null,
+   "ours": {
+    "acres": 5385,
+    "family_fold": "layers {'sgnmb': 4530, 'padus': 4115}: one land in 2 layers, the sgnmb copy used (4,115 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb32",
+      "SUGARITE CANYON",
+      4530,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/sugarite-canyon-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2717": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Sumner Lake State Park",
+   "official": null,
+   "ours": {
+    "acres": 1152,
+    "family_fold": "layers {'sgnmb': 1467, 'padus': 904}: one land in 2 layers, the sgnmb copy used (904 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb26",
+      "SUMNER LAKE",
+      1467,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/sumner-lake-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "robots-unreadable",
+     "url": "http://www.emnrd.state.nm.us/SPD/documents/SuLPARKMAP.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2718": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Ute Lake State Park",
+   "official": null,
+   "ours": {
+    "acres": 1083,
+    "dissolved": {
+     "after": 1632,
+     "before": 3246,
+     "copies": 1,
+     "key_union": 1083,
+     "parts": 0,
+     "records": 2,
+     "summed": 1632,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3246 -> 1632 acres",
+    "pieces": [
+     [
+      "sgnmb27",
+      "UTE LAKE",
+      1632,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/ute-lake-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2719": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Angel Fire Vietnam Veterans Memorial Park",
+   "ours": null,
+   "score": null,
+   "t": "Park",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-2720": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Villanueva State Park",
+   "official": null,
+   "ours": {
+    "acres": 2469,
+    "family_fold": "layers {'sgnmb': 1731, 'padus': 1604}: one land in 2 layers, the sgnmb copy used (1,604 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb28",
+      "VILLANUEVA",
+      1731,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/villanueva-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-4376": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Manhattan Project National Historical Park",
+   "ours": null,
+   "score": null,
+   "t": "National Historical Park",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-4513": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Carson National Forest",
+   "official": {
+    "acres": 1500000.0,
+    "as": "1.5 million acres",
+    "clean": true,
+    "line": "t peak in the state! Plan Your Visit T T T Welcome to Carson National Forest The Carson National Forest spans 1.5 million acres of Northern New Mexico, encompassing portions of the Sangre de Cristo Mountains, San Juan Mountains and the S",
+    "read": "2026-11-09",
+    "sent": "The Carson National Forest spans 1.5 million acres of Northern New Mexico, encompassing portions of the Sangre de Cristo Mountains, San Juan Mountains and the San Juan Basin.",
+    "url": "https://www.fs.usda.gov/carson",
+    "why": "clean total"
+   },
+   "ours": {
+    "acres": 1390444,
+    "manager": "",
+    "pieces": [
+     [
+      2738,
+      "Carson National Forest",
+      1390444,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/carson",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 7,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 1500000.0,
+     "as": "1.5 million acres",
+     "clean": true,
+     "line": "t peak in the state! Plan Your Visit T T T Welcome to Carson National Forest The Carson National Forest spans 1.5 million acres of Northern New Mexico, encompassing portions of the Sangre de Cristo Mountains, San Juan Mountains and the S",
+     "total_like": true,
+     "url": "https://www.fs.usda.gov/carson",
+     "why": "clean total"
+    }
+   ],
+   "t": "National Forest",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-4514": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Cibola National Forest",
+   "note": "whole park compared (POTA lists it in 1 states: {'US-NM': 1616282})",
+   "official": {
+    "acres": 1900000.0,
+    "as": "1.9 million acres",
+    "clean": true,
+    "line": "there is something you can't find! Contact Us The Cibola National Forest and National Grasslands encompasses 1.9 million acres. The four “sky island” ranger districts: Sandia, Mountainair, Magdalena, and Mt Taylor cover more than 1.6 mi",
+    "read": "2026-11-09",
+    "sent": "The Cibola National Forest and National Grasslands encompasses 1.9 million acres.",
+    "url": "https://www.fs.usda.gov/cibola",
+    "why": "clean total"
+   },
+   "ours": {
+    "acres": 1616282,
+    "acres_by_state": {
+     "US-NM": 1616282
+    },
+    "manager": "",
+    "pieces": [
+     [
+      2740,
+      "Cibola National Forest",
+      1616282,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "states": [
+     "US-NM",
+     "US-TX",
+     "US-OK"
+    ],
+    "unknown_pieces": 0,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/cibola",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 15,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 1900000.0,
+     "as": "1.9 million acres",
+     "clean": true,
+     "line": "there is something you can't find! Contact Us The Cibola National Forest and National Grasslands encompasses 1.9 million acres. The four “sky island” ranger districts: Sandia, Mountainair, Magdalena, and Mt Taylor cover more than 1.6 mi",
+     "total_like": true,
+     "url": "https://www.fs.usda.gov/cibola",
+     "why": "clean total"
+    },
+    {
+     "acres": 1600000.0,
+     "as": "1.6 million acres",
+     "clean": false,
+     "line": "acres. The four “sky island” ranger districts: Sandia, Mountainair, Magdalena, and Mt Taylor cover more than 1.6 million acres in New Mexico with elevations range up to 11,301 ft. The Cibola also has four wilderness areas: Sandia Mounta",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/cibola",
+     "why": "history"
+    },
+    {
+     "acres": 263261.0,
+     "as": "263,261 acres",
+     "clean": false,
+     "line": "e Kid and administers four National Grasslands: Black Kettle, McClellan Creek, Kiowa and Rita Blanca covering 263,261 acres in northeastern New Mexico, Oklahoma, and Texas. Top Photo: Rainbow over Sandia Crest. (USDA Forest Service)",
+     "total_like": true,
+     "url": "https://www.fs.usda.gov/cibola",
+     "why": "total-looking"
+    }
+   ],
+   "t": "National Forest",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-4515": {
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Gila National Forest",
+   "official": {
+    "acres": 202016.0,
+    "as": "202,016 acres",
+    "clean": false,
+    "line": "and remoteness. Wilderness on the Gila National Forest Aldo Leopold Wilderness The Aldo Leopold Wilderness is 202,016-acres and straddles the Black Range on the eastern side of the Forest B lue Range Wilderness The 29,304-acre Blue R",
+    "read": "2026-11-09",
+    "sent": "The Aldo Leopold Wilderness is 202,016-acres and straddles the Black Range on the eastern side of the Forest",
+    "url": "https://www.fs.usda.gov/gila",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 3270394,
+    "manager": "",
+    "pieces": [
+     [
+      2748,
+      "Gila National Forest",
+      2658824,
+      "name"
+     ],
+     [
+      2734,
+      "Gila National Forest (Apache National Forest)",
+      610049,
+      "name"
+     ],
+     [
+      2746,
+      "Gila National Forest (Ft. Bayard Mil. Res. Other)",
+      1521,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/gila",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 1519,
+   "same_agency": false,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 0,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 202016.0,
+     "as": "202,016 acres",
+     "clean": false,
+     "line": "and remoteness. Wilderness on the Gila National Forest Aldo Leopold Wilderness The Aldo Leopold Wilderness is 202,016-acres and straddles the Black Range on the eastern side of the Forest B lue Range Wilderness The 29,304-acre Blue R",
+     "total_like": true,
+     "url": "https://www.fs.usda.gov/gila",
+     "why": "total-looking"
+    },
+    {
+     "acres": 29304.0,
+     "as": "29,304 acre",
+     "clean": false,
+     "line": "s is 202,016-acres and straddles the Black Range on the eastern side of the Forest B lue Range Wilderness The 29,304-acre Blue Range Wilderness adjoins Arizona's rugged Blue Range Primitive Area. Gila Wilderness The 559,688-acre Gi",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/gila",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 559688.0,
+     "as": "559,688 acre",
+     "clean": false,
+     "line": "The 29,304-acre Blue Range Wilderness adjoins Arizona's rugged Blue Range Primitive Area. Gila Wilderness The 559,688-acre Gila Wilderness, created in June 1924 at the urging of the great conservation pioneer Aldo Leopold, was the w",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/gila",
+     "why": "history"
+    }
+   ],
+   "t": "National Forest",
+   "ver": 15,
+   "verdict": "off"
+  },
+  "US-4516": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Lincoln National Forest",
+   "official": {
+    "acres": 1100000.0,
+    "as": "1.1 million acres",
+    "clean": false,
+    "line": "day! Recreation Station T T T Welcome to Lincoln National Forest The Lincoln National Forest stretches across 1.1 million acres of southeastern New Mexico, covering three stunning mountain ranges, the Sacramento, Guadalupe, and Capitan.",
+    "read": "2026-11-09",
+    "sent": "The Lincoln National Forest stretches across 1.1 million acres of southeastern New Mexico, covering three stunning mountain ranges, the Sacramento, Guadalupe, and Capitan.",
+    "url": "https://www.fs.usda.gov/lincoln",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 1095525,
+    "manager": "",
+    "pieces": [
+     [
+      2750,
+      "Lincoln National Forest",
+      1095525,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/lincoln",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 0,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 1100000.0,
+     "as": "1.1 million acres",
+     "clean": false,
+     "line": "day! Recreation Station T T T Welcome to Lincoln National Forest The Lincoln National Forest stretches across 1.1 million acres of southeastern New Mexico, covering three stunning mountain ranges, the Sacramento, Guadalupe, and Capitan.",
+     "total_like": true,
+     "url": "https://www.fs.usda.gov/lincoln",
+     "why": "total-looking"
+    }
+   ],
+   "t": "National Forest",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-4517": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Santa Fe National Forest",
+   "official": {
+    "acres": 1600000.0,
+    "as": "1.6 million acres",
+    "clean": true,
+    "line": "Welcome to the Santa Fe National Forest The Santa Fe National Forest, located in northern New Mexico, covers 1.6 million acres of mountains, valleys and mesas ranging from 5,000 to 13,000 feet in elevation. Visitors don’t have to travel",
+    "read": "2026-11-09",
+    "sent": "The Santa Fe National Forest, located in northern New Mexico, covers 1.6 million acres of mountains, valleys and mesas ranging from 5,000 to 13,000 feet in elevation.",
+    "url": "https://www.fs.usda.gov/santafe/",
+    "why": "clean total"
+   },
+   "ours": {
+    "acres": 1546238,
+    "manager": "",
+    "pieces": [
+     [
+      2754,
+      "Santa Fe National Forest",
+      1545017,
+      "name"
+     ],
+     [
+      2735,
+      "Santa Fe National Forest (Baca Location Number 1 Other)",
+      973,
+      "name"
+     ],
+     [
+      2745,
+      "Santa Fe National Forest (Cuba-Rio Puerco Land Utilization Project)",
+      241,
+      "name"
+     ],
+     [
+      2753,
+      "Santa Fe National Forest (Ramon Vigil Grant Other)",
+      7,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/santafe/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 3,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 1600000.0,
+     "as": "1.6 million acres",
+     "clean": true,
+     "line": "Welcome to the Santa Fe National Forest The Santa Fe National Forest, located in northern New Mexico, covers 1.6 million acres of mountains, valleys and mesas ranging from 5,000 to 13,000 feet in elevation. Visitors don’t have to travel",
+     "total_like": true,
+     "url": "https://www.fs.usda.gov/santafe/",
+     "why": "clean total"
+    },
+    {
+     "acres": 412.0,
+     "as": "412 acre",
+     "clean": false,
+     "line": "trail opportunities offer a refuge in the cool mountain air. Recreation Recent Press Releases Crews complete 412-acre Paliza South prescribed fire Release Date: October 21, 2026 Jemez Ranger District Plans Prescribed Burning Re",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/santafe/",
+     "why": "no total words near it"
+    }
+   ],
+   "t": "National Forest",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-4551": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Organ Mountains-Desert Peaks National Monument",
+   "official": {
+    "acres": 496330.0,
+    "as": "496,330 acres",
+    "clean": true,
+    "line": "use. Flickr Album RECREATION Quick Facts Presidential Proclamation Establishment Date: May 21, 2014 Acreage: 496,330 acres Contact Us https://www.blm.gov/visit/omdp Brochures Organ Mountains-Desert Peaks National Monument Brochure A",
+    "read": "2026-11-09",
+    "sent": "Acreage: 496,330 acres",
+    "url": "https://www.blm.gov/programs/national-conservation-lands/new-mexico/organ-mountains-desert-peaks-national-monument",
+    "why": "clean total"
+   },
+   "ours": {
+    "acres": 568945,
+    "manager": "",
+    "pieces": [],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 6
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/programs/national-conservation-lands/new-mexico/organ-mountains-desert-peaks-national-monument",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 15,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 2,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 496330.0,
+     "as": "496,330 acres",
+     "clean": true,
+     "line": "use. Flickr Album RECREATION Quick Facts Presidential Proclamation Establishment Date: May 21, 2014 Acreage: 496,330 acres Contact Us https://www.blm.gov/visit/omdp Brochures Organ Mountains-Desert Peaks National Monument Brochure A",
+     "total_like": true,
+     "url": "https://www.blm.gov/programs/national-conservation-lands/new-mexico/organ-mountains-desert-peaks-national-monument",
+     "why": "clean total"
+    },
+    {
+     "acres": 496330.0,
+     "as": "496,330 acres",
+     "clean": false,
+     "line": "motorized use. Flickr Album RECREATION Quick Facts Presidential Proclamation Establishment Date: May 21, 2014 Acreage: 496,330 acres Contact Us https://www.blm.gov/visit/omdp Brochures Organ Mountains-Desert Peaks National Monument Brochure A",
+     "total_like": true,
+     "url": "https://www.blm.gov/programs/national-conservation-lands/new-mexico/organ-mountains-desert-peaks-national-monument",
+     "why": "total-looking"
+    }
+   ],
+   "t": "National Monument",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-4552": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Prehistoric Trackways National Monument",
+   "official": {
+    "acres": 5280.0,
+    "as": "5,280 acres",
+    "clean": false,
+    "line": "Trackways National Monument preserves one of the world’s most significant Early Permian megatracksites within 5,280 acres of the Robledo Mountains, north of Las Cruces, New Mexico. Visitors can hike along informal trails through ru",
+    "read": "2026-11-09",
+    "sent": "Prehistoric Trackways National Monument preserves one of the world’s most significant Early Permian megatracksites within 5,280 acres of the Robledo Mountains, north of Las Cruces, New Mexico.",
+    "url": "https://www.blm.gov/visit/ptnm",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/ptnm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "same_agency": false,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 5280.0,
+     "as": "5,280 acres",
+     "clean": false,
+     "line": "Trackways National Monument preserves one of the world’s most significant Early Permian megatracksites within 5,280 acres of the Robledo Mountains, north of Las Cruces, New Mexico. Visitors can hike along informal trails through ru",
+     "total_like": true,
+     "url": "https://www.blm.gov/visit/ptnm",
+     "why": "total-looking"
+    }
+   ],
+   "t": "National Monument",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-4553": {
+   "cause": "the agency figure may cover several states; our outline may be this state's share only",
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Rio Grande del Norte National Monument",
+   "note": "the agency figure may cover several states; our outline may be this state's share only",
+   "official": {
+    "acres": 243000.0,
+    "as": "243,000 acres",
+    "clean": true,
+    "line": "uman cultures. The Monument stretches from the border of Colorado to the village of Pilar, NM and spans about 243,000 acres, including 2 Congressionally Designated Wilderness Areas (Río San Antonio Wilderness and Cerro del Yuta Wilde",
+    "read": "2026-11-09",
+    "sent": "The Monument stretches from the border of Colorado to the village of Pilar, NM and spans about 243,000 acres, including 2 Congressionally Designated Wilderness Areas (Río San Antonio Wilderness and Cerro del Yuta Wilderness) and over 50 miles of Wild and Scenic River (Río Grande and Red River).",
+    "url": "https://www.blm.gov/visit/rgdnnm",
+    "why": "clean total"
+   },
+   "ours": {
+    "acres": 309331,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/rgdnnm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 27,
+   "same_agency": false,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 243000.0,
+     "as": "243,000 acres",
+     "clean": true,
+     "line": "uman cultures. The Monument stretches from the border of Colorado to the village of Pilar, NM and spans about 243,000 acres, including 2 Congressionally Designated Wilderness Areas (Río San Antonio Wilderness and Cerro del Yuta Wilde",
+     "total_like": true,
+     "url": "https://www.blm.gov/visit/rgdnnm",
+     "why": "clean total"
+    }
+   ],
+   "t": "National Monument",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-4558": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Continental Divide Trail National Scenic Trail",
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-WY",
+     "US-NM",
+     "US-ID",
+     "US-MT",
+     "US-CO"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/managing-land/trails/cdt",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "National Scenic Trail",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-4569": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "El Camino Real de Tierra Adentro National Historic Trail",
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-NM",
+     "US-TX"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/elca/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/elca/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/elca/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/elca/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "National Historic Trail",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-4575": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Old Spanish National Historic Trail",
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-NM",
+     "US-AZ",
+     "US-CA",
+     "US-CO",
+     "US-NV",
+     "US-UT"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/olsp/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/olsp/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/olsp/planyourvisit/upload/National-Park-Service-Old-Spanish-Brochure-Map-508.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/olsp/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/olsp/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "National Historic Trail",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-4579": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Santa Fe National Historic Trail",
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-KS",
+     "US-MO",
+     "US-NM",
+     "US-OK",
+     "US-CO"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/safe/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/safe/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/safe/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/safe/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "National Historic Trail",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-7479": {
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Kiowa National Grassland",
+   "official": null,
+   "ours": {
+    "acres": 137291,
+    "manager": "",
+    "pieces": [
+     [
+      2760,
+      "Kiowa National Grassland",
+      137291,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/detail/cibola/home/?cid=fsbdev3_065702",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 1900000.0,
+     "as": "1.9 million acres",
+     "clean": false,
+     "line": "there is something you can't find! Contact Us The Cibola National Forest and National Grasslands encompasses 1.9 million acres. The four “sky island” ranger districts: Sandia, Mountainair, Magdalena, and Mt Taylor cover more than 1.6 mi",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/detail/cibola/home/?cid=fsbdev3_065702",
+     "why": "another park / unit named in the sentence"
+    },
+    {
+     "acres": 1600000.0,
+     "as": "1.6 million acres",
+     "clean": false,
+     "line": "acres. The four “sky island” ranger districts: Sandia, Mountainair, Magdalena, and Mt Taylor cover more than 1.6 million acres in New Mexico with elevations range up to 11,301 ft. The Cibola also has four wilderness areas: Sandia Mounta",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/detail/cibola/home/?cid=fsbdev3_065702",
+     "why": "history"
+    },
+    {
+     "acres": 263261.0,
+     "as": "263,261 acres",
+     "clean": false,
+     "line": "e Kid and administers four National Grasslands: Black Kettle, McClellan Creek, Kiowa and Rita Blanca covering 263,261 acres in northeastern New Mexico, Oklahoma, and Texas. Top Photo: Rainbow over Sandia Crest. (USDA Forest Service)",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/detail/cibola/home/?cid=fsbdev3_065702",
+     "why": "another park / unit named in the sentence"
+    }
+   ],
+   "t": "National Grassland",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-7543": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Mescalero Sands Recreation Site",
+   "ours": null,
+   "score": null,
+   "t": "Recreation Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-7563": {
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Black River Recreation Site",
+   "official": {
+    "acres": 1200.0,
+    "as": "1,200 acre",
+    "clean": false,
+    "line": "Twitter YouTube Facebook Instagram Flickr LinkedIn Black River Recreation Area | View Map In Full Screen The 1,200-acre Black River Recreation Area is managed to provide low-impact recreation and environmental education opportuni",
+    "read": "2026-11-09",
+    "sent": "The 1,200-acre Black River Recreation Area is managed to provide low-impact recreation and environmental education opportunities while maintaining a healthy river system and riparian habitat.",
+    "url": "https://www.blm.gov/visit/black-river-recreation-area",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 1005,
+    "dissolved": {
+     "after": 1276,
+     "before": 2552,
+     "copies": 1,
+     "key_union": 1005,
+     "parts": 0,
+     "records": 2,
+     "summed": 1276,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2552 -> 1276 acres",
+    "pieces": [
+     [
+      "rma14054",
+      "Black River Recreation Area",
+      1276,
+      "words"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/black-river-recreation-area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 16,
+   "same_agency": false,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 1200.0,
+     "as": "1,200 acre",
+     "clean": false,
+     "line": "Twitter YouTube Facebook Instagram Flickr LinkedIn Black River Recreation Area | View Map In Full Screen The 1,200-acre Black River Recreation Area is managed to provide low-impact recreation and environmental education opportuni",
+     "total_like": true,
+     "url": "https://www.blm.gov/visit/black-river-recreation-area",
+     "why": "total-looking"
+    }
+   ],
+   "t": "Recreation Site",
+   "ver": 15,
+   "verdict": "off"
+  },
+  "US-7876": {
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Three Rivers Petroglyphs National Historic Site",
+   "official": {
+    "acres": 50.0,
+    "as": "50 acres",
+    "clean": false,
+    "line": "ans, animals, fish, insects and plants, as well as numerous geometric and abstract designs are scattered over 50 acres of New Mexico's northern Chihuahuan Desert. The petroglyphs at Three Rivers, dating back to between about 200",
+    "read": "2026-11-09",
+    "sent": "More than 21,000 glyphs of birds, humans, animals, fish, insects and plants, as well as numerous geometric and abstract designs are scattered over 50 acres of New Mexico's northern Chihuahuan Desert.",
+    "url": "https://www.blm.gov/visit/three-rivers-petroglyph-site",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 1043,
+    "manager": "",
+    "pieces": [
+     [
+      "sgakh1668",
+      "Three Rivers Petroglyph",
+      1043,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/three-rivers-petroglyph-site",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 1986,
+   "same_agency": false,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 50.0,
+     "as": "50 acres",
+     "clean": false,
+     "line": "ans, animals, fish, insects and plants, as well as numerous geometric and abstract designs are scattered over 50 acres of New Mexico's northern Chihuahuan Desert. The petroglyphs at Three Rivers, dating back to between about 200",
+     "total_like": true,
+     "url": "https://www.blm.gov/visit/three-rivers-petroglyph-site",
+     "why": "total-looking"
+    }
+   ],
+   "t": "National Historic Site",
+   "ver": 15,
+   "verdict": "off"
+  },
+  "US-7877": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Valley of Fires National Recreation Area",
+   "official": null,
+   "ours": {
+    "acres": 215,
+    "dissolved": {
+     "after": 463,
+     "before": 1389,
+     "copies": 2,
+     "key_union": 215,
+     "parts": 0,
+     "records": 3,
+     "summed": 463,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1389 -> 463 acres",
+    "pieces": [
+     [
+      "rst13990",
+      "Valley of Fires Recreation Area",
+      463,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://www.blm.gov/visit/valley-of-fires",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Recreation Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7878": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Red Sands National Recreation Area",
+   "official": null,
+   "ours": {
+    "acres": 33872,
+    "dissolved": {
+     "after": 33872,
+     "before": 135488,
+     "copies": 3,
+     "parts": 0,
+     "records": 4,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 135488 -> 33872 acres",
+    "pieces": [
+     [
+      "sgnmc11047",
+      "Red Sands OHV",
+      33872,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/red-sands-ohv-area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Recreation Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  }
+ },
+ "read": "2026-11-09"
+}

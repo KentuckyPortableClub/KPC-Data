@@ -560,6 +560,26 @@
    "status": "done",
    "updated": "2026-11-09"
   },
+  "US-NM": {
+   "checked": 113,
+   "counts": {
+    "agree": 19,
+    "handover_hints": 4,
+    "no_page": 1,
+    "no_size": 51,
+    "off": 9,
+    "ours_unknown": 7,
+    "parks": 113,
+    "retired": 0,
+    "unsure": 9,
+    "weak": 6,
+    "with_outline": 96
+   },
+   "left": 10,
+   "parks": 123,
+   "status": "partial",
+   "updated": "2026-11-09"
+  },
   "US-NV": {
    "checked": 367,
    "counts": {
@@ -847,7 +867,6 @@
   "idfg.idaho.gov": 1794323592.2610066,
   "outdoornebraska.gov": 1794310616.347082,
   "riparks.com": 1794280201.1004815,
-  "www.alapark.com": 1794248619.2284882,
   "www.arcgis.com": 1794286229.087196,
   "www.fhwa.dot.gov": 1794323337.1319654,
   "www.floridastateparks.org": 1794252193.2078493,
@@ -857,42 +876,43 @@
  },
  "last": {
   "areas": [
-   "US-AZ"
+   "US-NM"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 2,
-   "dropped_queued": 43,
-   "errors": 1,
+   "browser": 5,
+   "errors": 0,
+   "for_person": 1,
    "for_person_urls": [
     [
-     "https://azstateparks.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from azstateparks.com this run"
+     "http://www.emnrd.state.nm.us/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.emnrd.state.nm.us this run"
     ],
     [
-     "https://www.azgfd.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.azgfd.com this run"
+     "https://www.blm.gov/visit/valley-of-fires",
+     "HTTP 403 twice"
     ]
    ],
-   "requests": 169,
+   "requests": 215,
    "rested": 0,
-   "robots": 2,
-   "robots_unreadable": 2,
-   "strikes": 1
+   "retry403": 1,
+   "robots": 1,
+   "robots_unreadable": 1,
+   "strikes": 2
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 13,
-   "no_size": 62,
-   "ours_unknown": 23,
-   "pages_read": 142,
-   "parks": 123,
+   "handover_hints": 4,
+   "no_size": 52,
+   "ours_unknown": 7,
+   "pages_read": 175,
+   "parks": 113,
    "retired": 0,
-   "size_agree": 15,
-   "size_off": 4,
-   "size_unsure": 5,
+   "size_agree": 19,
+   "size_off": 9,
+   "size_unsure": 9,
    "skipped_fresh": 0,
-   "with_outline": 109
+   "with_outline": 96
   },
   "when": "2026-11-09"
  },

@@ -46,6 +46,7 @@ Updated 2026-11-09. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-MT | 254 | 245 | 36 | **36** | 28 | 137 | 7 | 6 | 0 | 6 |
 | US-NV | 367 | 194 | 63 | **20** | 21 | 52 | 36 | 8 | 0 | 12 |
 | US-AZ | 123 | 109 | 15 | **4** | 5 | 62 | 23 | 13 | 0 | 7 |
+| US-NM | 113 | 96 | 19 | **9** | 9 | 51 | 7 | 4 | 0 | 6 |
 
 ## US-KY
 
@@ -2985,6 +2986,42 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 - US-11049 New Water Mountains Wilderness Area · managed by: “derness | Arizona View Map In Full Screen The 24,600-acre New Water Mountains Wilderness in Arizona is managed by the Bureau of Land Management. In 1990, the New Water Mountains Wilderness became part” · owner now: Bureau of Land Management · [www.blm.gov](https://www.blm.gov/visit/new-water-mountains-wilderness)
 - US-4434 Ironwood Forest National Monument · managed by: “A) There are no developed facilities at the Ironwood Forest National Monument. Contact Us This site is managed by Tucson Field Office ; visit their page for office hours and directions. blm_az_tfoweb@” · owner now: Tucson Field Of · [www.blm.gov](https://www.blm.gov/visit/ironwood)
 - US-8297 Muggins Mountain Wilderness Area · managed by: “Wilderness | Arizona View Map In Full Screen The 7,711-acre Muggins Mountain Wilderness in Arizona is managed by the Bureau of Land Management. In 1990, the Muggins Mountain Wilderness became part of ” · owner now: Bureau of Land Management · [www.blm.gov](https://www.blm.gov/visit/muggins-mountain-wilderness)
+
+## US-NM
+
+**Agree:** 19 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 19 agree (second agency).
+
+**Size more than 15% off (our outline vs the agency):**
+
+- US-7876 Three Rivers Petroglyphs National Historic Site: ours 1,043 ac vs agency 50 acres (= 50 ac; 1986% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.blm.gov](https://www.blm.gov/visit/three-rivers-petroglyph-site) · “ans, animals, fish, insects and plants, as well as numerous geometric and abstract designs are scattered over 50 acres of New Mexico's northern Chihuahuan Deser”
+- US-4515 Gila National Forest: ours 3,270,394 ac vs agency 202,016 acres (= 202,016 ac; 1519% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fs.usda.gov](https://www.fs.usda.gov/gila) · “and remoteness. Wilderness on the Gila National Forest Aldo Leopold Wilderness The Aldo Leopold Wilderness is 202,016-acres and straddles the Black Range on the”
+- US-0910 Capulin Volcano National Monument: ours 791 ac vs agency 15.7 square miles (= 10,048 ac; 92% off) · cause: agency bigger: our outline may miss a tract · [www.nps.gov](https://www.nps.gov/cavo/learn/nature/volcanic-fields.htm) · “Cartmell Map showing the Rio Grande Rift and the Jemez Lineament. NPS A. Buccanero Capulin Volcano blanketed 15.7 square miles with its lava flows, but it was n”
+- US-11838 The Box BLM Recreation Management Area: ours 968 ac vs agency 640 acre (= 640 ac; 51% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.blm.gov](https://www.blm.gov/visit/box-recreation-area) · “r YouTube Facebook Instagram Flickr LinkedIn The Box Recreation Area | New Mexico View Map In Full Screen The 640-acre Box Recreation Area is a highly scenic, r”
+- US-12593 Glade Run Recreation Area BLM Recreation Management Area: ours 25,136 ac vs agency 19,000 acres (= 19,000 ac; 32% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.blm.gov](https://www.blm.gov/visit/glade-run) · “Map In Full Screen A great spot for the weekend warrior, the Glade Run Recreation Area (GRRA) is comprised of 19,000 acres of sandy arroyos, slick rock and roll”
+- US-12785 Rio Mora National Wildlife Refuge: ours 3,158 ac vs agency 4,224 acres (= 4,224 ac; 25% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/rio-mora) · “located in the transition zone between the Great Plains and the Southern Rocky Mountains. The refuge contains 4,224 acres of shortgrass prairie, riparian wetlan”
+- US-0970 White Sands National Park: ours 148,226 ac vs agency 275 square miles (= 176,000 ac; 16% off) · cause: agency bigger: our outline may miss a tract · [www.nps.gov](https://www.nps.gov/whsa/index.htm) · “t White Sands. Visitors can experience sunset every day of the year. NPS Photo The dunes at White Sands cover 275 square miles of the Tularosa Basin. NPS Photo ”
+- US-11807 Simon Canyon ACEC BLM Special Recreation Management Area: ours 4,543 ac vs agency 3,900 acres (= 3,900 ac; 16% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.blm.gov](https://www.blm.gov/visit/simon-canyon-acec) · “cern | New Mexico View Map In Full Screen Simon Canyon Area of Critical Environmental Concern (ACEC) is about 3,900 acres in size and is managed for semi-primit”
+- US-7563 Black River Recreation Site: ours 1,005 ac vs agency 1,200 acre (= 1,200 ac; 16% off) · cause: agency bigger: our outline may miss a tract · [www.blm.gov](https://www.blm.gov/visit/black-river-recreation-area) · “Twitter YouTube Facebook Instagram Flickr LinkedIn Black River Recreation Area | View Map In Full Screen The 1,200-acre Black River Recreation Area is managed t”
+
+**Unsure (no clean total found; the nearest number is only a guess):**
+
+- US-11789 Fort Selden Historic Site: ours 30 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-12169 El Malpais BLM National Conservation Area: ours 263,158 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-12804 Valle de Oro National Wildlife Refuge: ours 277 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 60,000 acres, no total words near it) · [www.fws.gov](https://www.fws.gov/carp/refuge/valle-de-oro/visit-us)
+- US-13498 Chosa Campground BLM Recreation Management Area: ours 1 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-2687 Bottomless Lakes State Park: ours 1,936 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-2690 Cerrillos Hills State Park: ours 1,086 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 50 acres, no total words near it) · [www.emnrd.nm.gov](https://www.emnrd.nm.gov/spd/find-a-park/cerrillos-hills-state-park/)
+- US-2705 Mesilla Valley Bosque State Park: ours 590 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-4553 Rio Grande del Norte National Monument: ours 309,331 ac · cause: the agency figure may cover several states; our outline may be this state's share only · [www.blm.gov](https://www.blm.gov/visit/rgdnnm)
+- US-7479 Kiowa National Grassland: ours 137,291 ac · cause: no total-looking sentence: numbers found were parts or other units
+
+**Handover / closure hints (a person decides; nothing applied):**
+
+- US-0013 Chaco Culture National Historical Park · managed by: “icies, and regulations related to Chaco Culture National Historical Park. Park Store The park store is operated by Western National Parks (wnpa.org), an official non-profit partner of the National Par” · owner now: Western National Parks · [www.nps.gov](https://www.nps.gov/chcu/learn/index.htm)
+- US-0458 Bosque Del Apache National Wildlife Refuge · transfer: “y (previously inholdings), were added to the refuge. 2008 - a 140-acre parcel on Chupadera Peak was donated to the U.S. Fish and Wildlife Service bringing the total acreage of fee title lands (lands o” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/bosque-del-apache/about-us)
+- US-0462 Sevilleta National Wildlife Refuge · managed by: “Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/sevilleta/)
+- US-0547 Grulla National Wildlife Refuge · managed by: “Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/Grulla/)
+- US-0547 Grulla National Wildlife Refuge · transfer: “About Us Grulla National Wildlife Refuge was officially established as a refuge when the lands were transferred to the U.S. Fish and Wildlife Service from the Bureau of Land Management in 1969. The re” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/grulla/about-us)
 
 ## Kentucky test gate
 
