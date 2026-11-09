@@ -4,56 +4,67 @@
   "US-KY": {
    "counts": {
     "hunt": 0,
-    "note": 82,
+    "note": 69,
     "part": 0,
     "seasonal": 0,
-    "taken_down": 3,
+    "taken_down": 16,
     "whole": 0
    },
    "failed": 0,
    "items": 85,
-   "read": "2026-11-09T04:27Z",
+   "read": "2026-11-09T15:12Z",
    "sources": 73,
    "status": "done"
   }
  },
  "hosts": {},
  "last": {
-  "areas": [],
+  "areas": [
+   "US-KY"
+  ],
   "browser": [],
-  "done": [],
+  "done": [
+   "US-KY"
+  ],
   "failed": [],
   "manners": {
    "arcgis_exempt": 0,
    "errors": 0,
    "for_person_urls": [],
-   "requests": 0,
+   "keyed_api": 1,
+   "requests": 111,
    "rested": 0,
    "robots": 0,
    "strikes": 0
   },
   "stat": {
    "items": 0,
-   "pages": 0,
-   "pdfs": 0,
-   "requests": 0,
-   "sentences": 0,
+   "pages": 83,
+   "pdfs": 17,
+   "requests": 105,
+   "sentences": 468,
    "sources_failed": 0,
-   "unmatched": 0,
-   "unreadable": 0
+   "unmatched": 122,
+   "unreadable": 262
   },
-  "when": "2026-11-09T08:38Z"
+  "when": "2026-11-09T15:12Z"
  },
  "proven": "2026-10-31 (Brandon GO Oct 30 6:07 AM 'Yes': KY closures live Sat Oct 31; dry runs clean Oct 30). The 6-hour schedule runs from now; the site keeps reading the old Kentucky reader until chat 11's side-by-side PASS (CL-5).",
  "test": {
-  "matched": 30,
-  "only_here": 56,
+  "matched": 24,
+  "only_here": 49,
   "only_there": [
-   "hc-US-3831-2026-11-15"
+   "hc-US-4687-2026-11-07",
+   "hc-US-3834-2026-11-07",
+   "hc-US-3831-2026-11-15",
+   "hc-US-3820-2026-11-07",
+   "hc-US-3806-2026-11-07",
+   "hc-US-3794-2026-11-07",
+   "hc-US-3793-2026-11-07"
   ],
   "own": 31,
-  "result": "PASS",
+  "result": "FAIL",
   "when": "2026-11-09",
-  "why": "30 of 31 of Kentucky's own reader's items found here on the same park (96%); 56 only here"
+  "why": "24 of 31 of Kentucky's own reader's items found here on the same park (77%); 49 only here"
  }
 }
