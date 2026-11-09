@@ -2,7 +2,9 @@ name: KPC 2-fer bot (hidden)
 # Oct 27 (storage plan Stage 2 step A): runs in KPC-Data. It checks out KPC-Links read-only (public: the scripts and the park data),
 # lays this repo's data/fers on top, runs, and saves data/fers + the observations log HERE. Files over 20 MB are kept gzipped.
 # Oct 26 2026 (Brandon via HQ: 'GO on the all-states 2-fer bot'; Brandon 5:37 AM: 'do the world'). Finds spots where
-# POTA parks share 100 yards of official ground. HIDDEN: writes data/fers/ only; nothing links to it. Three passes, run
+# POTA parks share 100 yards of official ground. HIDDEN: writes data/fers/ only; nothing links to it.
+# Nov 8: Save only on real success (never on cancel/fail). World ownership patch + stale-key gate before the bot runs.
+# Waiting-room divert for this workflow is a follow-up (2-fers not public yet). Three passes, run
 # one after another by hand (1 = saved outlines, 2 = fresh downloads, 3 = finest shapes + pins). Two jobs per pass:
 # North America (US + Canada) and the rest of the world. Never fails (a failed run emails Brandon). Chat 2 starts it.
 on:
@@ -61,6 +63,21 @@ jobs:
             gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D cache/us --clobber || { kpc_rc=$?; echo "::warning title=download::a download failed (exit $kpc_rc); results may use old or missing files"; echo "download - a download failed (exit $kpc_rc); results may use old or missing files" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
             gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'CA-ALL.json.gz' -D cache/ca --clobber || { kpc_rc=$?; echo "::warning title=download::a download failed (exit $kpc_rc); results may use old or missing files"; echo "download - a download failed (exit $kpc_rc); results may use old or missing files" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           fi
+      - name: Refuse a stale or incomplete key for this region (Nov 8)
+        # Root cause: run 42451234481 measured W-AU on world W-42410527148 while a newer world build was coming; bad output followed.
+        id: key_gate
+        env:
+          REGION: ${{ matrix.region }}
+          STATES: ${{ inputs.states }}
+        run: |
+          python3 kpcdata/.github/scripts/kpc_fers_key_gate.py || { kpc_rc=$?; echo "::error title=kpc_fers_key_gate.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_key_gate.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit 1; }
+      - name: Patch world ownership (designations-only must not mass-drop)
+        # Root cause: Nov 6 world branch of ownership_step marks every designations-only pair "not sure: no park owns land"
+        # when no land register exists (AU has none). That turned 528 live W-AU pairs into 0 on run 42451234481 (1,255 such rows).
+        # Applies a Data-owned fix onto the checked-out Links kpc_fers.py for this job only (until Links carries the same fix).
+        if: ${{ matrix.region == 'world' }}
+        run: |
+          python3 kpcdata/.github/scripts/kpc_fers_patch_world_ownership.py .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers_patch_world_ownership.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_patch_world_ownership.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit 1; }
       - name: POTA activation history (pairs worked the same day, counts only)
         if: ${{ matrix.region == 'ky' || (matrix.region == 'na' && inputs.states != '') }}
         id: kept_green_2
@@ -107,10 +124,10 @@ jobs:
           OBS_FILE: kpcdata/data/observations/fers-${{ matrix.region }}.json
           OBS_DATA_DIR: kpcdata
         run: mkdir -p kpcdata/data/observations; python3 .github/scripts/kpc_map_observations.py || { kpc_rc=$?; echo "::error title=kpc_map_observations.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_map_observations.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
-      - name: Save (once, at the end)
-        if: always()
+      - name: Save (once, at the end; never on cancel or failed Look)
+        # Nov 8: cancelled run 42543101862 still pushed W-AU because Save was if: always(). Require real success + Look outcome.
+        if: ${{ success() && steps.kept_green_3.outcome == 'success' }}
         id: kept_green_5
-        continue-on-error: true
         run: |
           # limits plan L-b: a file over 20 MB is kept gzipped (GitHub refuses 100 MB)
           for f in data/fers/*.json; do [ -f "$f" ] && [ $(stat -c %s "$f") -gt 20000000 ] && gzip -9nf "$f"; done
@@ -126,7 +143,7 @@ jobs:
           cd kpcdata
           for f in data/fers/*.json.gz; do [ -f "$f" ] && rm -f "${f%.gz}"; done
           cd ..
-          bash .github/scripts/kpc_push_data.sh kpcdata "2-fer bot pass ${{ inputs.pass }} (${{ matrix.region }}, hidden data)" data   # Oct 27: keeps only this job's files, no rebase (the KY run lost its save)
+          STRICT=1 bash .github/scripts/kpc_push_data.sh kpcdata "2-fer bot pass ${{ inputs.pass }} (${{ matrix.region }}, hidden data)" data || exit 1   # Nov 8: no continue-on-error; never if: always()
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:
