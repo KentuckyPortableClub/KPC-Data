@@ -1,6 +1,6 @@
 # 2-fer post-line check (for Quality)
 
-2026-11-08 21:51 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
+2026-11-09 02:15 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
 
 ## CA-AB: live pairs 40 -> 36 (+3 / -7)
 - gained: CA-0110+US-4558 CA-2956+CA-2958 CA-3008+CA-6112
@@ -122,6 +122,16 @@
 - near a size threshold: -
 - stale inputs: -
 
+## CA-SP: live pairs 0 -> 0 (+0 / -0)
+- gained: -
+- lost: -
+- touching held parks: -
+- touching pin-only parks: -
+- water / bank: 0
+- one-record same land: -
+- near a size threshold: -
+- stale inputs: -
+
 ## CA-YT: live pairs 4 -> 6 (+2 / -0)
 - gained: CA-0044+CA-0742 CA-0044+CA-0842
 - lost: -
@@ -132,15 +142,15 @@
 - near a size threshold: CA-0044+CA-0742 105 m ~ 100 yd (small); CA-0841+CA-3622 85 m ~ 100 yd (small)
 - stale inputs: -
 
-## US-AK: live pairs 31 -> 42 (+17 / -6)
-- gained: CA-0044+US-0069 CA-0742+US-0029 CA-0742+US-12607 CA-0742+US-4592 CA-3567+US-4448 US-0003+US-0878 US-0026+US-0889 US-0048+US-0880 US-0048+US-0893 US-0149+US-12708 US-0741+US-4448 US-0878+US-0902 US-0879+US-7886 US-12708+US-4447 US-12708+US-4570 US-12708+US-7884 US-4570+US-9701
-- lost: US-0003+US-0902 (gone); US-0029+US-12607 (gone); US-0143+US-0150 (gone); US-0150+US-1639 (gone); US-11862+US-4448 (gone); US-1638+US-3392 (gone)
+## US-AK: live pairs 31 -> 48 (+23 / -6)
+- gained: CA-0044+US-0069 CA-0742+US-0029 CA-0742+US-12607 CA-0742+US-4448 CA-0742+US-4592 CA-3191+US-4448 US-0003+US-0878 US-0026+US-0877 US-0026+US-0889 US-0026+US-0892 US-0026+US-3382 US-0048+US-0880 US-0048+US-0887 US-0048+US-0893 US-0149+US-12708 US-0157+US-11852 US-0741+US-4448 US-0878+US-0902 US-0879+US-7886 US-12708+US-4447 US-12708+US-4570 US-12708+US-7884 US-4570+US-9701
+- lost: US-0003+US-0902 (gone); US-0029+US-12607 (gone); US-11862+US-4448 (gone); US-1638+US-3392 (gone); US-4448+US-4592 (dropped: inside the federal boundary, but the Forest Service ownership map (Basic Ownershi); US-4448+US-7245 (dropped in pass 2: the finer official outlines show no shared patch here (the first, coars)
 - touching held parks: -
-- touching pin-only parks: US-0003+US-0878 US-0026+US-0889 US-0048+US-0880 US-0048+US-0893 US-0878+US-0902 US-0879+US-7886
-- water / bank: 14
+- touching pin-only parks: US-0003+US-0878 US-0026+US-0877 US-0026+US-0889 US-0026+US-0892 US-0026+US-3382 US-0048+US-0880 US-0048+US-0887 US-0048+US-0893 US-0157+US-11852 US-0878+US-0902 US-0879+US-7886
+- water / bank: 18
 - one-record same land: -
-- near a size threshold: CA-0106+US-0142 85 m ~ 100 yd (small); CA-0742+US-4448 87 m ~ 100 yd (small); CA-0742+US-4592 37 m ~ 50 yd (very tight); CA-3567+US-4448 27 m ~ 25 yd (kept); US-0143+US-0144 23 m ~ 25 yd (kept); US-4448+US-4593 45 m ~ 50 yd (very tight)
-- stale inputs: the key build US-42504172086 (2026-11-08 19:02 UTC) is newer than this output's last pass (2026-11-06)
+- near a size threshold: CA-0106+US-0142 85 m ~ 100 yd (small); CA-0742+US-4448 87 m ~ 100 yd (small); CA-0742+US-4592 37 m ~ 50 yd (very tight); US-0143+US-0144 23 m ~ 25 yd (kept); US-0150+US-1639 25 m ~ 25 yd (kept); US-4448+US-4593 45 m ~ 50 yd (very tight)
+- stale inputs: -
 
 ## US-AL: live pairs 25 -> 24 (+0 / -1)
 - gained: -
@@ -152,45 +162,45 @@
 - near a size threshold: US-0137+US-3713 23 m ~ 25 yd (kept); US-0141+US-9844 51 m ~ 50 yd (very tight); US-3683+US-4450+US-4595 25 m ~ 25 yd (kept); US-3685+US-4600 25 m ~ 25 yd (kept)
 - stale inputs: -
 
-## US-AR: live pairs 16 -> 94 (+80 / -2)
-- gained: US-0162+US-7342 US-0164+US-7158 US-0164+US-7279 US-0164+US-9757 US-0165+US-7264 US-0168+US-7273 US-0171+US-7358 US-0646+US-7270 US-0646+US-7288 US-0646+US-7347 US-0646+US-7357 US-0721+US-9757 US-0768+US-7358 US-0822+US-9757 US-10258+US-7307 US-10303+US-4425 US-10303+US-7333 US-10333+US-7316 US-1076+US-11127 US-1082+US-4425+US-7345 US-1082+US-7345 US-1085+US-11353 US-1085+US-7293 US-1102+US-7356 US-1104+US-4425+US-7306 US-1104+US-7306 US-1104+US-8322 US-1111+US-7316 US-1114+US-4424 US-1114+US-8321
-- lost: US-1096+US-12765 (not sure: one record covers two parks ('Logoly State Natural Area' is a natural area, the ); US-4425+US-7167 (dropped in pass 3: the finer official outlines show no shared patch here (the first, coars)
+## US-AR: live pairs 16 -> 112 (+99 / -3)
+- gained: US-0162+US-7342 US-0164+US-7158 US-0164+US-7279 US-0164+US-9757 US-0165+US-7264 US-0168+US-7273 US-0171+US-7358 US-0646+US-7270 US-0646+US-7288 US-0646+US-7347 US-0646+US-7357 US-0721+US-9757 US-0768+US-7358 US-0822+US-9757 US-10258+US-7307 US-10303+US-10508 US-10303+US-4425 US-10303+US-7333 US-10333+US-7316 US-10426+US-4424 US-10426+US-7343 US-10426+US-8321 US-10508+US-4425 US-10508+US-7288 US-10508+US-7315 US-10508+US-7333 US-10508+US-7336 US-10508+US-8323 US-1076+US-11127 US-1082+US-4425+US-7345
+- lost: US-10258+US-8321 (gone); US-1096+US-12765 (not sure: one record covers two parks ('Logoly State Natural Area' is a natural area, the ); US-4425+US-7167 (dropped in pass 3: the finer official outlines show no shared patch here (the first, coars)
 - touching held parks: -
 - touching pin-only parks: -
 - water / bank: 4
 - one-record same land: US-0171+US-11713 US-0646+US-7270 US-1085+US-7293 US-1096+US-12765 US-11165+US-7152 US-7163+US-7338 US-7170+US-7329 US-7170+US-7329 US-7180+US-7294 US-7183+US-7348
 - near a size threshold: US-0164+US-7279 85 m ~ 100 yd (small); US-0164+US-7319 45 m ~ 50 yd (very tight); US-0165+US-7264 45 m ~ 50 yd (very tight); US-0646+US-7347 39 m ~ 50 yd (very tight); US-1075+US-4424 39 m ~ 50 yd (very tight); US-12094+US-4424 25 m ~ 25 yd (kept); US-4424+US-7275 25 m ~ 25 yd (kept); US-4425+US-7288 105 m ~ 100 yd (small); US-7263+US-7271 25 m ~ 25 yd (kept); US-7270+US-7347 39 m ~ 50 yd (very tight); US-7276+US-7324 25 m ~ 25 yd (kept); US-7288+US-7336 25 m ~ 25 yd (kept)
-- stale inputs: the key build US-42504172086 (2026-11-08 19:02 UTC) is newer than this output's last pass (2026-11-06)
+- stale inputs: -
 
-## US-AZ: live pairs 36 -> 4 (+3 / -35)
-- gained: US-4562+US-4571 US-4562+US-4575 US-4562+US-9757
-- lost: US-0030+US-4430 (gone); US-0030+US-4557 (gone); US-0060+US-4557 (gone); US-0760+US-4571 (gone); US-0771+US-0917 (gone); US-0771+US-1055 (gone); US-0771+US-4557 (gone); US-0771+US-4571 (gone); US-0771+US-9757 (gone); US-0815+US-9757 (gone); US-0917+US-4429 (gone); US-0948+US-4428 (gone); US-0967+US-10512 (gone); US-0969+US-4557 (gone); US-1055+US-4429 (gone); US-1063+US-4557 (gone); US-1068+US-4428 (gone); US-1069+US-4432 (gone); US-11122+US-4427 (gone); US-11122+US-4428 (gone)
+## US-AZ: live pairs 36 -> 36 (+0 / -0)
+- gained: -
+- lost: -
 - touching held parks: -
 - touching pin-only parks: -
 - water / bank: 0
 - one-record same land: -
-- near a size threshold: -
-- stale inputs: the key build US-42504172086 (2026-11-08 19:02 UTC) is newer than this output's last pass (2026-11-06)
+- near a size threshold: US-1068+US-4428 83 m ~ 100 yd (small)
+- stale inputs: -
 
-## US-CA: live pairs 88 -> 5 (+0 / -83)
+## US-CA: live pairs 88 -> 12 (+0 / -76)
 - gained: -
-- lost: US-0046+US-0063 (gone); US-0046+US-0884 (gone); US-0046+US-0884+US-4466 (gone); US-0046+US-4456 (gone); US-0046+US-4464 (gone); US-0046+US-4466 (gone); US-0049+US-4459 (gone); US-0058+US-1143 (gone); US-0058+US-1162 (gone); US-0058+US-1164 (gone); US-0058+US-1188 (gone); US-0058+US-4467 (gone); US-0063+US-4456 (gone); US-0063+US-4464 (gone); US-0063+US-4464+US-4607 (gone); US-0063+US-4466 (gone); US-0063+US-4607 (gone); US-0071+US-0201 (gone); US-0071+US-0894 (gone); US-0071+US-4456 (gone)
+- lost: US-0046+US-0063 (gone); US-0046+US-0884 (gone); US-0046+US-0884+US-4466 (gone); US-0046+US-4456 (gone); US-0046+US-4464 (gone); US-0046+US-4466 (gone); US-0049+US-4459 (gone); US-0063+US-4456 (gone); US-0063+US-4464 (gone); US-0063+US-4464+US-4607 (gone); US-0063+US-4466 (gone); US-0063+US-4607 (gone); US-0071+US-0201 (gone); US-0071+US-0894 (gone); US-0071+US-4456 (gone); US-0071+US-4466 (gone); US-0071+US-4468 (gone); US-0181+US-0639 (gone); US-0193+US-3523 (gone); US-0201+US-4466 (gone)
 - touching held parks: -
 - touching pin-only parks: -
 - water / bank: 0
 - one-record same land: US-3406+US-3407 US-3462+US-3548 US-3462+US-3548 US-3476+US-3477 US-3476+US-3477 US-3476+US-3477 US-3580+US-3581 US-3594+US-3595 US-3594+US-3595
 - near a size threshold: -
-- stale inputs: the key build US-42504172086 (2026-11-08 19:02 UTC) is newer than this output's last pass (2026-11-06)
+- stale inputs: -
 
-## US-CO: live pairs 49 -> 4 (+1 / -46)
-- gained: US-11885+US-12185
+## US-CO: live pairs 49 -> 5 (+2 / -46)
+- gained: US-11885+US-12185 US-4575+US-8295
 - lost: US-0033+US-4405 (gone); US-0033+US-4407 (gone); US-0059+US-4400+US-9591 (gone); US-0059+US-4406 (gone); US-0059+US-4406+US-9591 (gone); US-0192+US-11897 (gone); US-0222+US-1239 (gone); US-0652+US-12190 (gone); US-0652+US-12682 (gone); US-0652+US-12683 (gone); US-0652+US-4402 (gone); US-10535+US-1237 (gone); US-11890+US-1223 (gone); US-11895+US-4404 (gone); US-11897+US-13110 (gone); US-11902+US-4410 (gone); US-11938+US-4406 (gone); US-1214+US-4404 (gone); US-1217+US-4404 (gone); US-12171+US-12172 (gone)
 - touching held parks: -
 - touching pin-only parks: -
 - water / bank: 0
 - one-record same land: US-0033+US-8295 US-0223+US-9625 US-10533+US-10540 US-10539+US-1236 US-11885+US-12185
 - near a size threshold: -
-- stale inputs: the key build US-42504172086 (2026-11-08 19:02 UTC) is newer than this output's last pass (2026-11-06)
+- stale inputs: -
 
 ## US-CT: live pairs 33 -> 43 (+14 / -4)
 - gained: US-10073+US-7533 US-12620+US-4561 US-1646+US-7528 US-1682+US-4556 US-1697+US-4561 US-1706+US-4561 US-1724+US-4561 US-1725+US-4561 US-4561+US-7531 US-4582+US-6871 US-4582+US-7548 US-6863+US-7528 US-7528+US-7537 US-7535+US-7548
@@ -250,7 +260,7 @@
 - water / bank: 0
 - one-record same land: -
 - near a size threshold: US-10905+US-2222 23 m ~ 25 yd (kept); US-2210+US-3391 25 m ~ 25 yd (kept)
-- stale inputs: the key build US-42504172086 (2026-11-08 19:02 UTC) is newer than this output's last pass (2026-11-06)
+- stale inputs: -
 
 ## US-IA: live pairs 16 -> 17 (+4 / -3)
 - gained: US-0268+US-3487 US-11305+US-11323 US-11305+US-2283 US-11305+US-9348
@@ -262,15 +272,15 @@
 - near a size threshold: US-0268+US-3487 25 m ~ 25 yd (kept); US-0922+US-4664 45 m ~ 50 yd (very tight); US-11875+US-9308 25 m ~ 25 yd (kept); US-2294+US-4661 85 m ~ 100 yd (small); US-2316+US-4659 45 m ~ 50 yd (very tight); US-9326+US-9327 25 m ~ 25 yd (kept)
 - stale inputs: -
 
-## US-ID: live pairs 49 -> 5 (+5 / -49)
-- gained: US-4566+US-5605 US-4566+US-7360 US-4576+US-5593 US-4576+US-5604 US-4576+US-5605
+## US-ID: live pairs 49 -> 6 (+6 / -49)
+- gained: US-3424+US-5603 US-4566+US-5605 US-4566+US-7360 US-4576+US-5593 US-4576+US-5604 US-4576+US-5605
 - lost: US-0890+US-10006 (gone); US-0890+US-10381 (gone); US-0890+US-10381+US-4478 (gone); US-0890+US-10381+US-4480 (gone); US-0890+US-10382 (gone); US-0890+US-4476 (gone); US-0890+US-4478 (gone); US-10006+US-10336 (gone); US-10006+US-10381 (gone); US-10006+US-10382 (gone); US-10006+US-10429 (gone); US-10006+US-4474 (gone); US-10006+US-4476 (gone); US-10006+US-4477 (gone); US-10006+US-4478 (gone); US-10006+US-4480 (gone); US-10006+US-4481 (gone); US-10006+US-4574 (gone); US-10006+US-7362 (gone); US-10336+US-12224 (gone)
 - touching held parks: -
 - touching pin-only parks: -
 - water / bank: 0
 - one-record same land: -
 - near a size threshold: -
-- stale inputs: the key build US-42504172086 (2026-11-08 19:02 UTC) is newer than this output's last pass (2026-11-06)
+- stale inputs: -
 
 ## US-IL: live pairs 19 -> 27 (+10 / -2)
 - gained: US-0990+US-0997 US-1000+US-13298 US-1015+US-4118 US-10777+US-4130 US-12184+US-7638 US-12314+US-4132 US-4113+US-4482 US-4116+US-9989 US-4134+US-4148 US-4136+US-4482
@@ -300,7 +310,7 @@
 - water / bank: 1
 - one-record same land: US-2339+US-7928 US-2343+US-7934 US-2352+US-7434 US-7411+US-7949
 - near a size threshold: US-2334+US-7945 37 m ~ 50 yd (very tight); US-2336+US-7925 49 m ~ 50 yd (very tight)
-- stale inputs: the key build US-42504172086 (2026-11-08 19:02 UTC) is newer than this output's last pass (2026-11-06)
+- stale inputs: -
 
 ## US-KY: live pairs 78 -> 75 (+0 / -3)
 - gained: -
@@ -320,7 +330,7 @@
 - water / bank: 1
 - one-record same land: -
 - near a size threshold: US-0297+US-0312 25 m ~ 25 yd (kept); US-0302+US-4071 25 m ~ 25 yd (kept); US-10456+US-4486 27 m ~ 25 yd (kept); US-2358+US-4047 95 m ~ 100 yd (small); US-4056+US-4065 25 m ~ 25 yd (kept)
-- stale inputs: the key build US-42504172086 (2026-11-08 19:02 UTC) is newer than this output's last pass (2026-11-06)
+- stale inputs: -
 
 ## US-MA: live pairs 85 -> 84 (+10 / -11)
 - gained: US-11446+US-8394 US-11638+US-8395 US-2428+US-8397 US-2451+US-8395 US-2456+US-4582 US-4582+US-4702 US-4582+US-8431 US-4701+US-7528 US-4704+US-8398 US-8395+US-8430
@@ -392,15 +402,15 @@
 - near a size threshold: US-4495+US-7079+US-7080 20 m ~ 25 yd (kept); US-4495+US-7079 20 m ~ 25 yd (kept)
 - stale inputs: -
 
-## US-MT: live pairs 28 -> 1 (+0 / -27)
-- gained: -
+## US-MT: live pairs 28 -> 5 (+4 / -27)
+- gained: US-3424+US-4502 US-3424+US-4505 US-3424+US-4507 US-3424+US-4844
 - lost: US-0028+US-4502 (gone); US-0028+US-4504 (gone); US-0028+US-4845 (gone); US-0399+US-12630 (gone); US-0407+US-4499 (gone); US-0701+US-4574 (gone); US-10006+US-4505 (gone); US-10006+US-4507 (gone); US-10006+US-7994 (gone); US-10429+US-7994 (gone); US-12630+US-12941 (gone); US-12654+US-4844 (gone); US-12698+US-4500 (gone); US-12878+US-4574 (gone); US-2574+US-4504 (gone); US-2584+US-4499 (gone); US-2596+US-4504 (gone); US-2597+US-4504 (gone); US-4499+US-4574 (gone); US-4499+US-7990 (gone)
 - touching held parks: -
 - touching pin-only parks: -
 - water / bank: 0
 - one-record same land: US-12646+US-12918 US-12646+US-12918
 - near a size threshold: -
-- stale inputs: the key build US-42504172086 (2026-11-08 19:02 UTC) is newer than this output's last pass (2026-11-06)
+- stale inputs: -
 
 ## US-NC: live pairs 92 -> 136 (+69 / -25)
 - gained: US-0411+US-8313 US-0415+US-8313 US-0682+US-3852 US-0682+US-6889 US-0682+US-8313 US-0706+US-8313 US-10262+US-8313 US-10397+US-4556 US-11019+US-8313 US-11020+US-8313 US-11856+US-2739 US-11856+US-4510 US-11856+US-6936 US-11856+US-6937 US-12320+US-2746 US-12320+US-2750 US-12320+US-4577 US-12320+US-8313 US-13002+US-2735 US-13002+US-6899 US-2725+US-8313 US-2733+US-8313 US-2735+US-8313 US-2737+US-8313 US-2738+US-8313 US-2747+US-4510+US-6936 US-2747+US-8313 US-2750+US-8313 US-2752+US-8313 US-2754+US-8313
@@ -422,15 +432,15 @@
 - near a size threshold: US-0065+US-7485 89 m ~ 100 yd (small)
 - stale inputs: -
 
-## US-NE: live pairs 15 -> 43 (+32 / -4)
-- gained: US-0268+US-3487 US-0675+US-2620 US-0675+US-2620+US-9360 US-0675+US-2622 US-0675+US-9360 US-0962+US-4566 US-0962+US-4578 US-13536+US-4566 US-13536+US-4576 US-13536+US-4578 US-13611+US-4566 US-13611+US-4573 US-2609+US-4566 US-2609+US-4576 US-2610+US-4566 US-2617+US-4566 US-2617+US-4578 US-2623+US-4566 US-2623+US-4576 US-2623+US-4578 US-4566+US-5628 US-4566+US-5646 US-4566+US-5657 US-4566+US-5665 US-4566+US-5671 US-4566+US-9366 US-4573+US-5657 US-4573+US-5665 US-4573+US-5671 US-4576+US-9366
+## US-NE: live pairs 15 -> 47 (+36 / -4)
+- gained: US-0268+US-3487 US-0675+US-10341 US-0675+US-10372 US-0675+US-2620 US-0675+US-2620+US-9360 US-0675+US-2622 US-0675+US-8174 US-0675+US-8187 US-0675+US-9360 US-0962+US-4566 US-0962+US-4578 US-13536+US-4566 US-13536+US-4576 US-13536+US-4578 US-13611+US-4566 US-13611+US-4573 US-2609+US-4566 US-2609+US-4576 US-2610+US-4566 US-2617+US-4566 US-2617+US-4578 US-2623+US-4566 US-2623+US-4576 US-2623+US-4578 US-4566+US-5628 US-4566+US-5646 US-4566+US-5657 US-4566+US-5665 US-4566+US-5671 US-4566+US-9366
 - lost: US-13434+US-9371 (not sure: one record covers two parks ('Wildcat Hills Wildlife Management Area' is a wma, ); US-13536+US-5659 (not sure: one record covers two parks ('Alexandria Wildlife Management Area' is a wma, the); US-13614+US-13615 (not sure: one record covers two parks (the record 'Kirkpatrick Basin Wildlife Management A); US-3372+US-5631 (gone)
 - touching held parks: -
 - touching pin-only parks: -
 - water / bank: 0
 - one-record same land: US-12362+US-2612 US-12362+US-2612 US-12362+US-2612 US-13378+US-5629 US-13434+US-9371 US-13536+US-5659 US-13614+US-13615 US-13628+US-5676 US-2617+US-5628 US-2617+US-5628 US-2617+US-5628 US-2623+US-9366 US-2623+US-9366
 - near a size threshold: US-0268+US-3487 25 m ~ 25 yd (kept); US-0675+US-2620+US-9360 23 m ~ 25 yd (kept); US-2613+US-3371 75 m ~ 100 yd (small)
-- stale inputs: the key build US-42504172086 (2026-11-08 19:02 UTC) is newer than this output's last pass (2026-11-06)
+- stale inputs: -
 
 ## US-NH: live pairs 28 -> 27 (+2 / -3)
 - gained: US-13595+US-4938 US-13595+US-4949
@@ -460,17 +470,17 @@
 - water / bank: 0
 - one-record same land: -
 - near a size threshold: US-11822+US-2699+US-4517 97 m ~ 100 yd (small); US-2699+US-4517+US-8227 97 m ~ 100 yd (small); US-2701+US-4517 83 m ~ 100 yd (small)
-- stale inputs: the key build US-42504172086 (2026-11-08 19:02 UTC) is newer than this output's last pass (2026-11-06)
+- stale inputs: -
 
-## US-NV: live pairs 49 -> 47 (+18 / -20)
-- gained: US-0071+US-4391 US-1144+US-4458 US-1147+US-4458 US-1156+US-4391 US-12614+US-4391 US-13139+US-9271 US-4391+US-4456 US-4391+US-4458 US-4391+US-4468 US-4391+US-4562 US-4391+US-9236 US-4391+US-9244 US-4391+US-9269 US-4458+US-4562 US-4562+US-4566 US-4566+US-4573 US-4566+US-4576 US-4576+US-4578
-- lost: US-0021+US-0464 (gone); US-0469+US-4566 (gone); US-0469+US-4578 (gone); US-0676+US-2637 (gone); US-0676+US-4575 (gone); US-10345+US-4578 (gone); US-2625+US-9287 (gone); US-2626+US-4391 (gone); US-2633+US-3389 (gone); US-2635+US-4391 (gone); US-2635+US-4575 (gone); US-2635+US-9261 (gone); US-2635+US-9266 (gone); US-2635+US-9278 (gone); US-3389+US-4391 (gone); US-3389+US-4458 (gone); US-4441+US-4566 (gone); US-4444+US-4566 (gone); US-4445+US-4566 (gone); US-4575+US-9278 (gone)
+## US-NV: live pairs 49 -> 46 (+18 / -21)
+- gained: US-0071+US-4391 US-1144+US-4458 US-1147+US-4458 US-1156+US-4391 US-12614+US-4391 US-13139+US-9271 US-4391+US-4456 US-4391+US-4458 US-4391+US-4468 US-4391+US-4562 US-4391+US-9236 US-4391+US-9244 US-4391+US-9269 US-4458+US-4562 US-9242+US-9246 US-9242+US-9255 US-9242+US-9263 US-9246+US-9254
+- lost: US-0021+US-0464 (gone); US-0469+US-4566 (gone); US-0469+US-4578 (gone); US-0676+US-2637 (gone); US-0676+US-4575 (gone); US-10345+US-4578 (gone); US-2625+US-9287 (gone); US-2626+US-4391 (gone); US-2633+US-3389 (gone); US-2635+US-4391 (gone); US-2635+US-4575 (gone); US-2635+US-9261 (gone); US-2635+US-9266 (gone); US-2635+US-9278 (gone); US-3389+US-4391 (gone); US-3389+US-4458 (gone); US-4441+US-4566 (gone); US-4444+US-4566 (gone); US-4445+US-4566 (gone); US-4566+US-4578 (gone)
 - touching held parks: -
 - touching pin-only parks: -
 - water / bank: 3
 - one-record same land: US-13115+US-4393 US-13139+US-9271
 - near a size threshold: US-0071+US-4391 23 m ~ 25 yd (kept); US-1147+US-4458 25 m ~ 25 yd (kept); US-13064+US-2640 85 m ~ 100 yd (small); US-2633+US-4391 37 m ~ 50 yd (very tight); US-2633+US-4458 95 m ~ 100 yd (small)
-- stale inputs: the key build US-42504172086 (2026-11-08 19:02 UTC) is newer than this output's last pass (2026-11-06)
+- stale inputs: -
 
 ## US-NY: live pairs 44 -> 119 (+91 / -16)
 - gained: US-0062+US-8098 US-0456+US-4556 US-0476+US-8098 US-0931+US-4239 US-10037+US-8098 US-10040+US-4582 US-10040+US-8098 US-10041+US-4239 US-10043+US-8098 US-10051+US-8098 US-10078+US-4582 US-10078+US-8098 US-10663+US-8098 US-12375+US-2102 US-12375+US-2156 US-12382+US-9045 US-13624+US-4239 US-2003+US-4239 US-2010+US-4556 US-2010+US-4582 US-2021+US-8098 US-2036+US-4556 US-2069+US-4556 US-2069+US-4582 US-2073+US-4582 US-2079+US-4556 US-2079+US-4582 US-2097+US-8098 US-2120+US-8098 US-2122+US-4239
@@ -492,25 +502,25 @@
 - near a size threshold: US-0482+US-9479 25 m ~ 25 yd (kept); US-0483+US-1944 25 m ~ 25 yd (kept); US-4521+US-5438 39 m ~ 50 yd (very tight); US-4521+US-9506 45 m ~ 50 yd (very tight)
 - stale inputs: the key build US-42504172086 (2026-11-08 19:02 UTC) is newer than this output's last pass (2026-11-07)
 
-## US-OK: live pairs 37 -> 34 (+0 / -3)
-- gained: -
+## US-OK: live pairs 37 -> 35 (+1 / -3)
+- gained: US-10258+US-8321
 - lost: US-0489+US-2783 (gone); US-6346+US-6347 (not sure: this spot is 324 km from Copan Wildlife Management Area's POTA pin: its outline ); US-6346+US-6347+US-8122 (not sure: this spot is 326 km from Copan Wildlife Management Area's POTA pin: its outline )
 - touching held parks: -
 - touching pin-only parks: -
 - water / bank: 4
 - one-record same land: US-2802+US-2803
 - near a size threshold: US-2784+US-6359 103 m ~ 100 yd (small); US-2802+US-6333 75 m ~ 100 yd (small); US-2803+US-6333 75 m ~ 100 yd (small); US-6341+US-6360 25 m ~ 25 yd (kept); US-6341+US-6360 25 m ~ 25 yd (kept); US-6346+US-6347+US-8122 75 m ~ 100 yd (small); US-6346+US-8122 85 m ~ 100 yd (small); US-6347+US-7923 25 m ~ 25 yd (kept); US-6352+US-6377 25 m ~ 25 yd (kept); US-6360+US-6367 25 m ~ 25 yd (kept); US-6367+US-6377 45 m ~ 50 yd (very tight)
-- stale inputs: the key build US-42504172086 (2026-11-08 19:02 UTC) is newer than this output's last pass (2026-11-06)
+- stale inputs: -
 
-## US-OR: live pairs 84 -> 4 (+0 / -80)
-- gained: -
-- lost: US-0018+US-4379 (gone); US-0018+US-4562 (gone); US-0199+US-12949 (gone); US-0501+US-4379 (gone); US-0505+US-12335 (gone); US-0505+US-2817 (gone); US-0505+US-2835 (gone); US-0505+US-2847 (gone); US-0505+US-2848 (gone); US-0505+US-2851 (gone); US-0505+US-2856 (gone); US-0505+US-4384 (gone); US-0505+US-9568 (gone); US-0505+US-9586 (gone); US-0505+US-9587 (gone); US-0731+US-4381 (gone); US-0953+US-4383 (gone); US-10003+US-4380 (gone); US-10003+US-4382 (gone); US-10011+US-4379 (gone)
+## US-OR: live pairs 84 -> 78 (+56 / -62)
+- gained: US-0495+US-10007 US-0505+US-10007 US-10007+US-10608 US-10007+US-11243 US-10007+US-12335 US-10007+US-12462 US-10007+US-12465 US-10007+US-2815 US-10007+US-2816 US-10007+US-2818 US-10007+US-2820 US-10007+US-2826 US-10007+US-2829 US-10007+US-2835 US-10007+US-2845 US-10007+US-2847 US-10007+US-2848 US-10007+US-2854 US-10007+US-2856 US-10007+US-9523 US-10007+US-9525 US-10007+US-9527 US-10007+US-9532 US-10007+US-9535 US-10007+US-9539 US-10007+US-9544 US-10007+US-9548 US-10007+US-9554 US-10007+US-9559 US-10007+US-9568
+- lost: US-0018+US-4379 (gone); US-0018+US-4562 (gone); US-0199+US-12949 (gone); US-0501+US-4379 (gone); US-0731+US-4381 (gone); US-0953+US-4383 (gone); US-10003+US-4380 (gone); US-10003+US-4382 (gone); US-10011+US-4379 (gone); US-10017+US-4388 (gone); US-10249+US-4381 (gone); US-10249+US-4562 (gone); US-10251+US-10503 (gone); US-10251+US-2865 (gone); US-10251+US-4381 (gone); US-10481+US-2840 (gone); US-10501+US-4384 (gone); US-10502+US-4387 (gone); US-10503+US-2865 (gone); US-10503+US-2865+US-4381 (gone)
 - touching held parks: -
 - touching pin-only parks: -
 - water / bank: 0
 - one-record same land: US-10482+US-12952 US-12951+US-2849 US-9143+US-9565 US-9586+US-9587 US-9992+US-9993
-- near a size threshold: -
-- stale inputs: the key build US-42504172086 (2026-11-08 19:02 UTC) is newer than this output's last pass (2026-11-06)
+- near a size threshold: US-0505+US-12335 39 m ~ 50 yd (very tight); US-0505+US-2817 27 m ~ 25 yd (kept); US-0505+US-2835 23 m ~ 25 yd (kept); US-0505+US-2847 23 m ~ 25 yd (kept); US-0505+US-2848 27 m ~ 25 yd (kept); US-0505+US-2851 39 m ~ 50 yd (very tight); US-0505+US-2856 37 m ~ 50 yd (very tight); US-0505+US-4384 45 m ~ 50 yd (very tight); US-0505+US-9568 45 m ~ 50 yd (very tight); US-4384+US-5457 25 m ~ 25 yd (kept)
+- stale inputs: -
 
 ## US-PA: live pairs 71 -> 209 (+144 / -6)
 - gained: US-0619+US-2003 US-0619+US-4239 US-0619+US-8743 US-0624+US-5468 US-0625+US-5468 US-0626+US-5463 US-0626+US-5463+US-8796 US-0627+US-5463 US-0628+US-5469 US-0681+US-9140 US-0684+US-1347 US-0684+US-1391 US-0684+US-1410 US-0684+US-6432 US-0738+US-4582 US-0834+US-1355 US-12235+US-1331 US-12235+US-1341 US-12235+US-1345 US-12664+US-1344 US-12664+US-1374 US-1331+US-8743 US-1333+US-8737 US-1334+US-5472 US-1335+US-8727 US-1337+US-4556 US-1337+US-5471 US-1340+US-5476 US-1343+US-5479 US-1344+US-1374
@@ -563,14 +573,14 @@
 - stale inputs: -
 
 ## US-TX: live pairs 13 -> 44 (+33 / -2)
-- gained: US-0006+US-6540 US-0035+US-9757 US-0541+US-6580 US-0549+US-0550 US-0549+US-0690 US-0550+US-3052 US-0550+US-6572 US-0551+US-6565 US-0553+US-6586 US-0689+US-3060 US-0756+US-4569 US-0816+US-9757 US-2986+US-4569 US-2994+US-6542 US-2997+US-6566 US-3011+US-9757 US-3015+US-4569 US-3018+US-9757 US-3030+US-4569 US-3037+US-6535 US-3040+US-4569 US-3502+US-4569 US-4371+US-9757 US-4414+US-6534 US-4414+US-6537 US-4415+US-4569 US-4415+US-6533 US-4415+US-6534 US-4416+US-4569 US-4416+US-6584
+- gained: US-0006+US-6540 US-0035+US-9757 US-0541+US-6580 US-0549+US-0550 US-0549+US-0690 US-0550+US-3052 US-0550+US-6572 US-0551+US-6565 US-0553+US-6586 US-0689+US-3060 US-0756+US-4568 US-0816+US-9757 US-2986+US-4568 US-2994+US-6542 US-2997+US-6566 US-3011+US-9757 US-3015+US-4568 US-3018+US-9757 US-3030+US-4568 US-3037+US-6535 US-3040+US-4568 US-3502+US-4568 US-4371+US-9757 US-4414+US-6534 US-4414+US-6537 US-4415+US-4568 US-4415+US-6533 US-4415+US-6534 US-4416+US-4568 US-4416+US-6584
 - lost: US-3000+US-6550 (not sure: one record covers two parks ('Cooper Wildlife Management Area' is a wma, the rec); US-3015+US-3502 (not sure: one record covers two parks ('Goliad State Historic Site' is a historic, the rec)
 - touching held parks: -
 - touching pin-only parks: US-0006+US-6597 US-6540+US-6597
 - water / bank: 3
 - one-record same land: US-0633+US-2994 US-0633+US-6542 US-10509+US-4417 US-3000+US-6550 US-3015+US-3502 US-6581+US-7483
 - near a size threshold: US-0550+US-6572 23 m ~ 25 yd (kept); US-0551+US-3054 27 m ~ 25 yd (kept); US-0553+US-6586 23 m ~ 25 yd (kept); US-0689+US-3060 25 m ~ 25 yd (kept)
-- stale inputs: the key build US-42504172086 (2026-11-08 19:02 UTC) is newer than this output's last pass (2026-11-06)
+- stale inputs: -
 
 ## US-UT: live pairs 75 -> 118 (+49 / -6)
 - gained: US-0072+US-6010 US-0072+US-6018 US-0558+US-4578 US-0645+US-4575 US-0914+US-4395 US-10966+US-5982 US-10971+US-6028 US-10975+US-6010 US-10987+US-6073 US-10987+US-6074 US-10990+US-6027 US-11104+US-4398 US-3064+US-4578 US-3065+US-5995 US-3068+US-4566 US-3068+US-4573 US-3068+US-4578 US-3077+US-4575 US-4395+US-4575 US-4395+US-6054 US-4395+US-6068 US-4396+US-4575 US-4397+US-4575 US-4566+US-5923 US-4566+US-5950 US-4566+US-5955 US-4566+US-5998 US-4566+US-6017 US-4573+US-5923 US-4573+US-5950
@@ -602,15 +612,15 @@
 - near a size threshold: -
 - stale inputs: -
 
-## US-WA: live pairs 50 -> 5 (+3 / -48)
-- gained: US-11142+US-12277 US-12525+US-3165 US-12552+US-12553
-- lost: US-0052+US-4529 (gone); US-0052+US-4530 (gone); US-0052+US-4562 (gone); US-0055+US-4530 (gone); US-0055+US-4562 (gone); US-0056+US-4532 (gone); US-0584+US-4528 (gone); US-0592+US-3229 (gone); US-0592+US-3283 (gone); US-0595+US-10407 (gone); US-0597+US-3220 (gone); US-0727+US-3280 (gone); US-10706+US-10709 (gone); US-10709+US-4529 (gone); US-12283+US-4531 (gone); US-12284+US-4531 (gone); US-12294+US-4530 (gone); US-12304+US-3239 (gone); US-12304+US-4530 (gone); US-12343+US-4529 (gone)
+## US-WA: live pairs 50 -> 34 (+17 / -33)
+- gained: US-0056+US-4563 US-11142+US-12277 US-12523+US-12524 US-12525+US-3165 US-12533+US-12575 US-12552+US-12553 US-12562+US-12575 US-12574+US-12575 US-12575+US-12576 US-12575+US-12577 US-12575+US-13404 US-12575+US-3424 US-3163+US-4563 US-3424+US-4529 US-3424+US-4555 US-3424+US-5640 US-4532+US-4563
+- lost: US-0052+US-4529 (gone); US-0052+US-4530 (gone); US-0052+US-4562 (gone); US-0055+US-4530 (gone); US-0055+US-4562 (gone); US-0584+US-4528 (gone); US-0592+US-3229 (gone); US-0592+US-3283 (gone); US-0595+US-10407 (gone); US-0727+US-3280 (gone); US-10706+US-10709 (gone); US-10709+US-4529 (gone); US-12283+US-4531 (gone); US-12284+US-4531 (gone); US-12294+US-4530 (gone); US-12304+US-3239 (gone); US-12304+US-4530 (gone); US-12343+US-4529 (gone); US-13333+US-3170+US-5640 (gone); US-13333+US-3289+US-3290 (gone)
 - touching held parks: -
 - touching pin-only parks: -
-- water / bank: 0
+- water / bank: 2
 - one-record same land: US-11142+US-12277 US-12285+US-12286 US-12525+US-3165 US-12552+US-12553 US-12846+US-3173 US-3199+US-3268
-- near a size threshold: -
-- stale inputs: the key build US-42504172086 (2026-11-08 19:02 UTC) is newer than this output's last pass (2026-11-06)
+- near a size threshold: US-0597+US-3220 25 m ~ 25 yd (kept); US-13333+US-3220 107 m ~ 100 yd (small); US-13333+US-3238 75 m ~ 100 yd (small); US-3286+US-3290 25 m ~ 25 yd (kept)
+- stale inputs: -
 
 ## US-WI: live pairs 29 -> 99 (+88 / -18)
 - gained: US-0598+US-4238 US-0601+US-4294 US-0603+US-4311 US-0605+US-1471 US-10054+US-4238 US-10558+US-4238 US-11927+US-9821 US-11931+US-4238 US-11934+US-4238 US-11935+US-4238 US-11937+US-4238 US-11976+US-12029 US-11976+US-12081 US-11976+US-4238 US-12029+US-4238 US-12066+US-9821 US-12213+US-4238 US-12776+US-4238 US-1441+US-9804 US-1442+US-4238 US-1446+US-4239 US-1448+US-4238 US-1449+US-4238 US-1455+US-4238 US-1461+US-9800 US-1464+US-4238 US-1469+US-4239 US-1471+US-8672 US-1472+US-4238 US-1474+US-4238
@@ -640,5 +650,5 @@
 - water / bank: 0
 - one-record same land: US-6130+US-6136
 - near a size threshold: -
-- stale inputs: the key build US-42504172086 (2026-11-08 19:02 UTC) is newer than this output's last pass (2026-11-06)
+- stale inputs: -
 
