@@ -35,3 +35,8 @@ US-4650, US-6572, US-7896.
 
 ## Hashes
 US a066624520b4 / CA 8feccbb7d9ee / world 10e4092cc97f — unchanged.
+
+## Brandon sign-off (t786u, Nov 8 2026) — applied in follow-on PR
+Name matches boundary; pins are tools not proof. Overrides with decided_by for:
+CA-0527, CA-0558, US-6551 (pin_wrong) and US-3505, US-3751, US-6535, US-6565, US-9770 (file-aware).
+Answer sheet uses stable key ids (sgtxa/sgtxc/sggaa/sggab/Manitoba Par:); US-2200 lists sggab60 + sggab32.
