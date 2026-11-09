@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 462 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 467 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -15,11 +15,11 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-01 | 8 | data/campinfo/US-NY.json | HOLD | F-I3 the same site count on 4 camps of one agency (state: 56): copied from a shared page? |
 | 2026-11-01 | 8 | data/fers/US-FL.json.gz | HOLD | F-2 candidates 145 -> 199 (over 30% change); F-2 NOT SURE 41 -> 23 (over 30% change); F-2 71 new candidate pairs since the live file (over 10% of 145): a person looks at them first, e.g. US-0235+US-6296, US-0237+US-1850, |
 | 2026-11-01 | 8 | data/fers/US-GA.json.gz | HOLD | F-2 7 new candidate pairs since the live file (over 10% of 52): a person looks at them first, e.g. US-2193+US-7139, US-4473+US-4556, US-4556+US-7135 |
-| 2026-11-01 | 8 | data/fers/US-IL.json | HOLD | F-2 candidates 12 -> 18 (over 30% change); F-2 8 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0282+US-4482, US-0283+US-4130, US-1000+US-13298; F-K known 2-fer missing: U |
+| 2026-11-01 | 8 | data/fers/US-IL.json | HOLD | F-2 candidates 11 -> 18 (over 30% change); F-2 8 new candidate pairs since the live file (over 10% of 11): a person looks at them first, e.g. US-0282+US-4482, US-0283+US-4130, US-1000+US-13298; F-K known 2-fer missing: U |
 | 2026-11-01 | 8 | data/fers/US-MA.json.gz | HOLD | F-2 11 new candidate pairs since the live file (over 10% of 75): a person looks at them first, e.g. US-0672+US-8395, US-11446+US-8394, US-11638+US-8395 |
 | 2026-11-01 | 8 | data/fers/US-MI.json.gz | HOLD | F-2 NOT SURE 9 -> 46 (over 30% change); F-2 only 57 of 82 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 41 new candidate pairs since the live file (over 10% of  |
 | 2026-11-01 | 8 | data/fers/US-NC.json.gz | HOLD | F-2 candidates 80 -> 123 (over 30% change); F-2 only 56 of 80 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 67 new candidate pairs since the live file (over 10% |
-| 2026-11-01 | 8 | data/fers/US-NE.json | HOLD | F-2 candidates 15 -> 45 (over 30% change); F-2 only 11 of 15 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 34 new candidate pairs since the live file (over 10%  |
+| 2026-11-01 | 8 | data/fers/US-NE.json | HOLD | F-2 41 new candidate pairs since the live file (over 10% of 4): a person looks at them first, e.g. US-0443+US-5622, US-0445+US-5655, US-0675+US-10341 |
 | 2026-11-01 | 8 | data/fers/US-PA.json.gz | HOLD | F-2 candidates 45 -> 152 (over 30% change); F-2 112 new candidate pairs since the live file (over 10% of 45): a person looks at them first, e.g. US-0619+US-4239, US-0624+US-5468, US-0625+US-5468 |
 | 2026-11-01 | 8 | data/fers/US-SD.json | HOLD | F-2 3 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0068+US-11905, US-11905+US-2916, US-11905+US-2917 |
 | 2026-11-01 | 8 | data/fers/US-TX.json.gz | HOLD | F-2 candidates 12 -> 40 (over 30% change); F-2 NOT SURE 20 -> 5 (over 30% change); F-2 30 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0006+US-6540, US-0035+US-9757, US- |
@@ -31,32 +31,31 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-01 | 8 | data/truth/US-NY.json | HOLD | F-R2 6 OFF rows share the size 46,000.0 ac |
 | 2026-11-01 | 8 | data/truth/US-OK.json | HOLD | F-R3 53 of 100 sized parks are OFF (over half: a reading problem?) |
 | 2026-11-01 | 8 | data/truth/US-TX.json | HOLD | F-R2 5 OFF rows share the size 675,000.0 ac |
-| 2026-11-02 | 7 | data/fers/CA-BC.json.gz | HOLD | F-2 NOT SURE 52 -> 22 (over 30% change); F-2 6 new candidate pairs since the live file (over 10% of 39): a person looks at them first, e.g. CA-0736+CA-4096, CA-0737+CA-3551, CA-0742+US-4448 |
+| 2026-11-02 | 7 | data/fers/CA-BC.json.gz | HOLD | F-2 candidates 29 -> 45 (over 30% change); F-2 16 new candidate pairs since the live file (over 10% of 29): a person looks at them first, e.g. CA-0018+CA-3362, CA-0045+CA-3829, CA-0066+CA-5344 |
 | 2026-11-02 | 7 | data/fers/US-AK.json.gz | HOLD | F-2 candidates 27 -> 42 (over 30% change); F-2 NOT SURE 5 -> 7 (over 30% change); F-2 20 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. CA-0044+US-0069, CA-0742+US-4448, CA-3 |
 | 2026-11-02 | 7 | data/fers/US-CT.json | HOLD | F-2 candidates 26 -> 37 (over 30% change); F-2 15 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-10073+US-7533, US-12620+US-4561, US-1646+US-7528; F-K known 2-fer missing: |
 | 2026-11-02 | 7 | data/fers/US-MN.json.gz | HOLD | F-2 NOT SURE 18 -> 26 (over 30% change); F-2 41 new candidate pairs since the live file (over 10% of 133): a person looks at them first, e.g. US-0673+US-10196, US-0673+US-10725, US-0673+US-11153; F-S3 2 live rows whose t |
 | 2026-11-02 | 7 | data/fers/US-ND.json | HOLD | F-4 data/fers/US-ND.json replaces live data/fers/US-ND.json.gz (other format) with 47 rows for 83 (over 10% fewer) |
 | 2026-11-02 | 7 | data/fers/US-NH.json | HOLD | F-2 3 new candidate pairs since the live file (over 10% of 23): a person looks at them first, e.g. US-13595+US-4938, US-13595+US-4949, US-4512+US-4958 |
-| 2026-11-02 | 7 | data/fers/US-NY.json.gz | HOLD | F-2 candidates 32 -> 110 (over 30% change); F-2 only 20 of 32 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 90 new candidate pairs since the live file (over 10% |
+| 2026-11-02 | 7 | data/fers/US-NY.json.gz | HOLD | F-2 107 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US-0062+US-8098, US-0456+US-4556, US-0476+US-8098; F-K known 2-fer missing: US-2028 + US-2128; F-K known 2-fer missing:  |
 | 2026-11-02 | 7 | data/fers/US-SC.json | HOLD | F-4 data/fers/US-SC.json replaces live data/fers/US-SC.json.gz (other format) with 163 rows for 234 (over 10% fewer) |
 | 2026-11-02 | 7 | data/fers/US-UT.json.gz | HOLD | F-2 candidates 62 -> 119 (over 30% change); F-2 63 new candidate pairs since the live file (over 10% of 62): a person looks at them first, e.g. US-0011+US-5935, US-0072+US-6010, US-0558+US-4578; F-K known 2-fer missing:  |
 | 2026-11-02 | 7 | data/fers/US-WV.json | HOLD | F-2 3 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-0735+US-4556, US-4526+US-4556, US-4526+US-9950 |
 | 2026-11-04 | 5 | data/campinfo/US-AR.json | HOLD | F-I4 1 toll-free reservation numbers kept as a camp phone, e.g. Designated WMA campsites |
 | 2026-11-04 | 5 | data/fers/US-DE.json | HOLD | F-4 data/fers/US-DE.json replaces live data/fers/US-DE.json.gz (other format) with 115 rows for 145 (over 10% fewer) |
-| 2026-11-04 | 5 | data/fers/US-IA.json | HOLD | F-2 3 new candidate pairs since the live file (over 10% of 10): a person looks at them first, e.g. US-11305+US-11323, US-11305+US-2283, US-11305+US-9348 |
+| 2026-11-04 | 5 | data/fers/US-IA.json | HOLD | F-2 3 new candidate pairs since the live file (over 10% of 9): a person looks at them first, e.g. US-11305+US-11323, US-11305+US-2283, US-11305+US-9348 |
 | 2026-11-04 | 5 | data/fers/US-IN.json | HOLD | F-K known 2-fer missing: US-2264 + US-4182; F-K known 2-fer missing: US-4164 + US-5691 |
-| 2026-11-04 | 5 | data/fers/US-MO.json | HOLD | F-2 NOT SURE 16 -> 1 (over 30% change); F-K known 2-fer missing: US-1795 + US-3368; F-K known 2-fer missing: US-1772 + US-3356 |
+| 2026-11-04 | 5 | data/fers/US-MO.json | HOLD | F-2 44 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US-0710+US-9757, US-0788+US-6491, US-0788+US-6498; F-K known 2-fer missing: US-1795 + US-3368; F-K known 2-fer missing: U |
 | 2026-11-04 | 5 | data/fers/US-NJ.json.gz | HOLD | F-2 only 18 of 24 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 10 new candidate pairs since the live file (over 10% of 24): a person looks at them first, e.g.  |
-| 2026-11-04 | 5 | data/fers/US-RI.json | HOLD | F-2 8 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US-0789+US-4582, US-2872+US-4582, US-4556+US-4582 |
 | 2026-11-04 | 5 | data/fers/US-WI.json.gz | HOLD | F-2 candidates 27 -> 96 (over 30% change); F-2 NOT SURE 8 -> 11 (over 30% change); F-2 only 10 of 27 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 86 new candid |
 | 2026-11-05 | 4 | data/campinfo/US-MO.json | HOLD | F-I3 the same site count on 82 camps of one agency (state: 500): copied from a shared page? |
 | 2026-11-05 | 4 | data/fers/CA-MB.json | HOLD | F-4 data/fers/CA-MB.json replaces live data/fers/CA-MB.json.gz (other format) with 70 rows for 79 (over 10% fewer) |
 | 2026-11-05 | 4 | data/fers/CA-QC.json | HOLD | F-4 data/fers/CA-QC.json replaces live data/fers/CA-QC.json.gz (other format) with 486 rows for 885 (over 10% fewer) |
-| 2026-11-05 | 4 | data/fers/CA-SK.json | HOLD | F-2 7 new candidate pairs since the live file (over 10% of 33): a person looks at them first, e.g. CA-0075+CA-6130, CA-0075+CA-6140, CA-0075+CA-6142 |
-| 2026-11-05 | 4 | data/fers/US-AR.json.gz | HOLD | F-2 candidates 12 -> 99 (over 30% change); F-2 only 9 of 12 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 90 new candidate pairs since the live file (over 10% o |
-| 2026-11-05 | 4 | data/fers/US-CO.json | HOLD | F-2 candidates 40 -> 5 (over 30% change); F-2 only 3 of 40 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-K known 2-fer missing: US-0059 + US-4406; F-K known 2-fer |
+| 2026-11-05 | 4 | data/fers/CA-SK.json | HOLD | F-2 candidates 10 -> 37 (over 30% change); F-2 27 new candidate pairs since the live file (over 10% of 10): a person looks at them first, e.g. CA-0051+CA-1118, CA-0075+CA-6128, CA-0075+CA-6130 |
+| 2026-11-05 | 4 | data/fers/US-AR.json.gz | HOLD | F-2 92 new candidate pairs since the live file (over 10% of 7): a person looks at them first, e.g. US-0162+US-7342, US-0164+US-7158, US-0164+US-7279; F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins),  |
+| 2026-11-05 | 4 | data/fers/US-CO.json | HOLD | F-K known 2-fer missing: US-0059 + US-4406; F-K known 2-fer missing: US-12173 + US-4409; F-K known 2-fer missing: US-11902 + US-4410; F-K known 2-fer missing: US-4407 + US-9590 |
 | 2026-11-05 | 4 | data/fers/US-ID.json | HOLD | F-4 data/fers/US-ID.json replaces live data/fers/US-ID.json.gz (other format) with 12 rows for 1220 (over 10% fewer) |
-| 2026-11-05 | 4 | data/fers/US-KS.json | HOLD | F-2 candidates 25 -> 16 (over 30% change); F-2 only 16 of 25 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-K known 2-fer missing: US-2333 + US-7402; F-K known 2-f |
+| 2026-11-05 | 4 | data/fers/US-KS.json | HOLD | F-K known 2-fer missing: US-2333 + US-7402; F-K known 2-fer missing: US-7406 + US-7939 |
 | 2026-11-05 | 4 | data/fers/US-MT.json | HOLD | F-4 data/fers/US-MT.json replaces live data/fers/US-MT.json.gz (other format) with 77 rows for 944 (over 10% fewer) |
 | 2026-11-05 | 4 | data/fers/US-NV.json.gz | HOLD | F-2 NOT SURE 45 -> 2 (over 30% change); F-2 only 27 of 46 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 16 new candidate pairs since the live file (over 10% of  |
 | 2026-11-05 | 4 | data/fers/US-OK.json | HOLD | F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-6347+US-8122 326 km; F-K known 2-fer missing: US-0489 + US-2783 |
@@ -68,15 +67,15 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-06 | 3 | data/campinfo/US-VT.json | HOLD | F-I3 the same site count on 101 camps of one agency (state: 27): copied from a shared page? |
 | 2026-11-06 | 3 | data/fers/CA-ON.json.gz | HOLD | F-2 candidates 13 -> 99 (over 30% change); F-2 NOT SURE 302 -> 44 (over 30% change); F-2 only 10 of 13 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 89 new cand |
 | 2026-11-06 | 3 | data/fers/US-CA.json | HOLD | F-4 data/fers/US-CA.json replaces live data/fers/US-CA.json.gz (other format) with 75 rows for 1365 (over 10% fewer) |
-| 2026-11-06 | 3 | data/fers/US-DC.json | HOLD | F-2 small area: all 1 live candidate pair(s) gone; F-K known 2-fer missing: US-0795 + US-0796 |
-| 2026-11-06 | 3 | data/fers/US-NM.json | HOLD | F-2 only 5 of 9 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 27 new candidate pairs since the live file (over 10% of 9): a person looks at them first, e.g. US- |
+| 2026-11-06 | 3 | data/fers/US-DC.json | HOLD | F-K known 2-fer missing: US-0795 + US-0796 |
+| 2026-11-06 | 3 | data/fers/US-NM.json | HOLD | F-2 only 5 of 8 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 27 new candidate pairs since the live file (over 10% of 8): a person looks at them first, e.g. US- |
 | 2026-11-06 | 3 | data/fers/US-OH.json.gz | HOLD | F-2 candidates 27 -> 62 (over 30% change); F-2 36 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. US-11673+US-4239, US-1935+US-4239, US-1939+US-4239 |
 | 2026-11-06 | 3 | data/fers/US-VT.json | HOLD | F-2 only 6 of 8 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-K known 2-fer missing: US-4239 + US-4556; F-K known 2-fer missing: US-4556 + US-5541 |
 | 2026-11-08 | 1 | data/fers/US-MD.json.gz | HOLD | F-2 NOT SURE 8 -> 19 (over 30% change); F-2 15 new candidate pairs since the live file (over 10% of 140): a person looks at them first, e.g. US-0333+US-4567, US-0333+US-4581, US-10751+US-7741 |
-| 2026-11-08 | 1 | data/fers/US-MS.json | HOLD | F-2 candidates 13 -> 8 (over 30% change); F-2 only 8 of 13 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-K known 2-fer missing: US-0642 + US-4560; F-K known 2-fer |
+| 2026-11-08 | 1 | data/fers/US-MS.json | HOLD | F-2 candidates 12 -> 8 (over 30% change); F-2 only 8 of 12 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-K known 2-fer missing: US-0642 + US-4560; F-K known 2-fer |
 | 2026-11-08 | 1 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
 | 2026-11-08 | 1 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
-| 2026-11-09 | 0 | data/docs/US-IN.json | HOLD | F-D3 8 of 20 re-tested links dead, e.g. https://www.in.gov/dA/bad7f29779/sp-5MileChallengeBrochure.pdf?languag |
+| 2026-11-09 | 0 | data/docs/US-IN.json | HOLD | F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dA/f54f39eab4/monroe_camp_fairfax_sra.pdf?language_ |
 | 2026-11-09 | 0 | data/docs/US-MS.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | 2026-11-09 | 0 | data/fers/US-AZ.json.gz | HOLD | F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-0771+US-1055 135 km |
 | 2026-11-09 | 0 | data/fers/US-OR.json.gz | HOLD | F-2 NOT SURE 34 -> 16 (over 30% change); F-2 only 11 of 62 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 56 new candidate pairs since the live file (over 10% of |
@@ -212,6 +211,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/fers/US-KY.json.gz | PASS |  |
 | ? | ? | data/fers/US-LA.json | PASS |  |
 | ? | ? | data/fers/US-ME.json | PASS |  |
+| ? | ? | data/fers/US-RI.json | PASS |  |
 | ? | ? | data/hours/US-KY.json | PASS |  |
 | ? | ? | data/pile-solver/CA-AB.json | PASS |  |
 | ? | ? | data/pile-solver/CA-BC.json | PASS |  |
@@ -291,12 +291,14 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/trails/US-9163.json | PASS |  |
 | ? | ? | data/truth/US-AL.json | PASS |  |
 | ? | ? | data/truth/US-AR.json | PASS |  |
+| ? | ? | data/truth/US-AZ.json | PASS |  |
 | ? | ? | data/truth/US-CO.json | PASS |  |
 | ? | ? | data/truth/US-DC.json | PASS |  |
 | ? | ? | data/truth/US-DE.json | PASS |  |
 | ? | ? | data/truth/US-FL.json | PASS |  |
 | ? | ? | data/truth/US-GA.json | PASS |  |
 | ? | ? | data/truth/US-IA.json | PASS |  |
+| ? | ? | data/truth/US-ID.json | PASS |  |
 | ? | ? | data/truth/US-IL.json | PASS |  |
 | ? | ? | data/truth/US-IN.json | PASS |  |
 | ? | ? | data/truth/US-KS.json | PASS |  |
@@ -304,11 +306,14 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/truth/US-LA.json | PASS |  |
 | ? | ? | data/truth/US-ME.json | PASS |  |
 | ? | ? | data/truth/US-MO.json | PASS |  |
+| ? | ? | data/truth/US-MT.json | PASS |  |
 | ? | ? | data/truth/US-NC.json | PASS |  |
 | ? | ? | data/truth/US-ND.json | PASS |  |
 | ? | ? | data/truth/US-NE.json | PASS |  |
 | ? | ? | data/truth/US-NH.json | PASS |  |
 | ? | ? | data/truth/US-NJ.json | PASS |  |
+| ? | ? | data/truth/US-NM.json | PASS |  |
+| ? | ? | data/truth/US-NV.json | PASS |  |
 | ? | ? | data/truth/US-PA.json | PASS |  |
 | ? | ? | data/truth/US-RI.json | PASS |  |
 | ? | ? | data/truth/US-SC.json | PASS |  |
