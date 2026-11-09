@@ -1,9 +1,11 @@
 {
  "source_url": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
  "publisher": "Georgia Department of Natural Resources, Wildlife Resources Division",
- "license": "Georgia DNR open GIS (agency published FeatureServer; terms of the GA DNR GIS distribution)",
+ "license": "Georgia DNR WRD open GIS — see GADNR Wildlife Resources Open Data Hub",
  "download_date": "2026-11-08",
  "downloaded_by": "Brandon (KZ4CP), by hand",
  "features": 209,
- "about": "Official GA DNR WRD WMA / PFA / hatchery land polygons. Hand copy only — no live fetch from this host in KPC automation."
+ "about": "Official GA DNR WRD WMA / PFA / hatchery land polygons. Hand copy only — no live fetch from this host in KPC automation.",
+ "license_url": "https://gis-gadnrwrd.opendata.arcgis.com/",
+ "layer_confirm": "CONFIRMED 2026-11-08: Georgia_Licenses_by_District/FeatureServer/9 is the WRD WMA/PFA/hatchery lands layer (not a hunting-license table). Hand GeoJSON: 169/209 features named WMA, 7 PFA, remainder VPA/state-park tracts on the same WRD lands service; fields include PropName, Acres, WRD_managed, Tract_Name, GM_Region. Layer name reflects WMA access organized by license district (see georgiawildlife.com/LandAccess)."
 }
