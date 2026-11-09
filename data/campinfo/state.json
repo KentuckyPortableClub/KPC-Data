@@ -18,8 +18,8 @@
     "with_facts": 11,
     "with_sites": 5
    },
-   "left": 0,
-   "status": "done",
+   "left": 5,
+   "status": "partial",
    "updated": "2026-11-09"
   },
   "US-AL": {
@@ -725,11 +725,11 @@
    "checked": 87,
    "counts": {
     "camps": 87,
-    "needs_browser": 0,
+    "needs_browser": 1,
     "needs_key": 34,
     "no_page": 0,
     "not_official": 7,
-    "ok": 24,
+    "ok": 23,
     "other": 22,
     "resting": 0,
     "robots": 0,
@@ -738,9 +738,9 @@
     "with_facts": 25,
     "with_sites": 11
    },
-   "left": 0,
-   "status": "done",
-   "updated": "2026-11-09"
+   "left": 1,
+   "status": "partial",
+   "updated": "2026-11-07"
   },
   "US-NY": {
    "camps": 585,
@@ -1463,7 +1463,7 @@
     "src": null,
     "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-11-09"
+   "read": "2026-11-07"
   },
   "US-NY": {
    "cell": {
@@ -2575,45 +2575,40 @@
  },
  "last": {
   "areas": [
-   "US-NV"
+   "US-AK"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 34,
+   "dropped_queued": 234,
    "errors": 0,
    "for_person_urls": [
     [
      "https://epqs.nationalmap.gov/robots.txt",
      "robots.txt answered 403: nothing fetched from epqs.nationalmap.gov this run"
-    ],
-    [
-     "https://broadbandmap.fcc.gov/robots.txt",
-     "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 4,
+   "requests": 1,
    "rested": 0,
-   "robots": 2,
-   "robots_unreadable": 2,
+   "robots": 1,
+   "robots_unreadable": 1,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 1,
-   "camps": 35,
+   "camps": 235,
    "elevations": 0,
    "errors": 0,
    "needs_browser": 0,
-   "needs_key": 35,
+   "needs_key": 235,
    "no_page": 0,
    "not_official": 0,
-   "ok": 1,
+   "ok": 0,
    "pages_read": 0,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 53
+   "skipped_fresh": 143
   },
   "when": "2026-11-09"
  },
