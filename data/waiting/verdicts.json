@@ -1,7 +1,14 @@
 {
- "checked": "2026-11-09T08:08Z",
+ "checked": "2026-11-09T08:20Z",
  "switched_on": false,
  "results": [
+  {
+   "path": "data/campinfo/US-AK.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
   {
    "path": "data/campinfo/US-AL.json",
    "kind": "campinfo",
@@ -52,15 +59,6 @@
    "kind": "campinfo",
    "why": [],
    "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/campinfo/US-DC.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
    "verdict": "PASS"
   },
   {
@@ -762,7 +760,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dA/bad7f29779/sp-5MileChallengeBrochure.pdf?languag"
+    "F-D3 3 of 20 re-tested links dead, e.g. https://www.in.gov/dA/d36fc5eae6/cagles_mill_Cataract-Falls-SRA.pdf?la"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -3732,6 +3730,15 @@
    "kind": "wwff",
    "why": [],
    "notes": [],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/campinfo/US-DC.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
    "verdict": "PASS"
   },
   {

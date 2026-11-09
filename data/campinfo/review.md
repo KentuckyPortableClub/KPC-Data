@@ -34,7 +34,6 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
 | US-ME | 25 | 0 | 4 | 0 | 7 | 0 | 0 | 1 | 13 | 0 | 20 | 0 |
 | US-MD | 77 | 40 | 30 | 1 | 0 | 0 | 0 | 0 | 6 | 10 | 43 | 0 |
 | US-DE | 24 | 2 | 0 | 2 | 0 | 20 | 0 | 0 | 0 | 0 | 24 | 0 |
-| US-DC | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 0 |
 | US-AR | 229 | 21 | 120 | 0 | 2 | 0 | 0 | 5 | 81 | 5 | 78 | 0 |
 | US-LA | 67 | 0 | 13 | 0 | 52 | 0 | 0 | 0 | 2 | 0 | 33 | 0 |
 | US-OK | 199 | 36 | 84 | 0 | 0 | 0 | 0 | 69 | 10 | 6 | 41 | 0 |
@@ -51,7 +50,7 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
 | US-CA | 1190 | 50 | 752 | 0 | 7 | 0 | 352 | 0 | 29 | 4 | 81 | 0 |
 | US-OR | 496 | 47 | 410 | 0 | 0 | 0 | 0 | 1 | 38 | 8 | 85 | 0 |
 | US-WA | 363 | 24 | 212 | 1 | 15 | 0 | 66 | 0 | 45 | 3 | 70 | 0 |
-| US-AK | 368 | 119 | 234 | 0 | 0 | 0 | 4 | 0 | 11 | 7 | 127 | 368 |
+| US-AK | 368 | 8 | 234 | 0 | 113 | 0 | 4 | 0 | 9 | 5 | 64 | 0 |
 | US-HI | 22 | 10 | 2 | 0 | 0 | 0 | 8 | 0 | 2 | 0 | 12 | 0 |
 | US-MI | 511 | 3 | 110 | 2 | 0 | 10 | 377 | 0 | 9 | 0 | 12 | 0 |
 | US-UT | 459 | 40 | 331 | 1 | 0 | 0 | 13 | 0 | 74 | 1 | 115 | 0 |
@@ -59,12 +58,13 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
 ## Needs a secret / not built yet
 
 - RIDB_API_KEY is not set in KPC-Data: every federal (Recreation.gov) row has status "needs RIDB_API_KEY secret in KPC-Data". Free key: ridb.recreation.gov, Profile. Add it under Settings -> Secrets and variables -> Actions.
-- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AL FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AR FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AZ FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CA FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CO FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CT FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-DE FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
+- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AL FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AR FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AZ FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CA FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CO FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CT FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-DE FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
 - cpw.state.co.us: 193 campgrounds · host resting
 - outdoornebraska.gov: 187 campgrounds · host resting
+- dnr.alaska.gov: 113 campgrounds · robots.txt says no
 - www.ksoutdoors.gov: 63 campgrounds · host resting (robots.txt could not be read: next run)
 - dnr.wisconsin.gov: 58 campgrounds · host resting
 - dec.ny.gov: 55 campgrounds · robots.txt says no
@@ -2393,9 +2393,6 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
   - phone_hint = "(302) 698-4547" · “kbird State Forest or Redden State Forest, email DDA_ForestService@delaware.gov , or call 302-698-4547. Pavilions at Blackbird and Redden O.”
   - reservable = "mixed" · “k-out is at 11 a.m. ADA sites and small-medium camper van accessible sites available at a first come first serve basis. State Forest Camping”
 
-## US-DC: 12 random samples (records with facts; seed = the date)
-
-
 ## US-AR: 12 random samples (records with facts; seed = the date)
 
 - **Designated WMA campsites** (intake-US-7333, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.agfc.com](https://www.agfc.com/wma/white-rock-wma/)
@@ -3588,79 +3585,99 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
 
 ## US-AK: 12 random samples (records with facts; seed = the date)
 
-- **Funny River campground** (intake-US-12709, agency (outside research camping-us-oct31), status ok, 4 facts, 131 ft) · [dnr.alaska.gov](https://dnr.alaska.gov/parks/units/campsitelist.htm)
-  - booking.how = "online: www.reserveamerica.com" · “link “YES””
-  - booking.url = "https://www.reserveamerica.com/camping/chena-river-state-re · “link “YES” -> https://www.reserveamerica.com/camping/chena-river-state-recreation-site/r/campgroundDetails.do?cont”
-  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
-  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-- **Settlers Cove** (AK-f81eb9ba72, state, status ok, 5 facts, 34 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/settlerscovecabin.htm)
-  - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
-  - booking.url = "https://reservealaskastateparks.com/park/46/96" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/46/96”
-  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
-  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-  - rules.pets = "Pets Allowed: Yes, always on leash" · “s: 2 ★ Site Access Method: Drive-in ★ Stay Limit: 3 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes, always on leash ★ Fees: ( see f”
-- **Delta** (AK-dbc82a578f, state, status ok, 6 facts, 1139 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/deltacabin.htm)
-  - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
-  - booking.url = "https://reservealaskastateparks.com/park/29/47" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/29/47”
-  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
-  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-  - rules.pets = "Pets Allowed: Yes, always on leash" · “s: 2 ★ Site Access Method: Drive-in ★ Stay Limit: 5 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes, always on leash ★ Fees: ( see f”
-  - sites.cabin = 100 · “4"W Special Notes: * The park road is not plowed in the winter. A highway pull-off within 100 feet of the cabin is plowed. The combination t”
-- **Derby Cove Cabin** (AK-ea01c849ab, state, status ok, 5 facts, 112 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/derbycovecabin.htm)
-  - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
-  - booking.url = "https://reservealaskastateparks.com/park/10/33" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/10/33”
-  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
-  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-  - rules.pets = "Pets Allowed: Yes, always on leash" · “Float Plane or Boat-in ★ Stay Limit: 7 Consecutive Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes, always on leash ★ Fees: ( see fe”
-- **Dispersed camping** (intake-US-4594, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts, 3153 ft) · [forestry.alaska.gov](https://forestry.alaska.gov/stateforests.htm)
+- **Dispersed camping** (intake-US-4592, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [forestry.alaska.gov](https://forestry.alaska.gov/stateforests.htm)
   - booking.how = "online: dnr.alaska.gov" · “link “Alaska Chilkat Bald Eagle Preserve””
   - booking.url = "https://dnr.alaska.gov/parks/plans/eaglpln/eaglepln.htm" · “link “Alaska Chilkat Bald Eagle Preserve” -> https://dnr.alaska.gov/parks/plans/eaglpln/eaglepln.htm”
   - map.date_how = "PDF, no date in the link" · “link “Map of the Haines State Forest Resource Management Area””
   - map.url = "https://forestry.alaska.gov/Assets/pdfs/stateforests/haines · “link “Map of the Haines State Forest Resource Management Area” -> https://forestry.alaska.gov/Assets/pdfs/stateforests/hainesmap.pdf”
   - phone = "(907) 269-8467" · “tion 550 W. 7th Ave., Suite 1450 Anchorage, AK 99501 Phone: (907) 269-8467 Email: alison.arians@alaska.gov --> Forest Management Plans”
-- **Rainbow Trout Cabin** (AK-5b489fdf3c, state, status ok, 7 facts, 878 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/rainbowtroutcabin.htm)
+- **Barber Cabin; Crescent Lake Cabin; Caribou Creek Cabin; Crescent Saddle Cabin; Romig Cabin; Swan Lake Cabin; Dale Clemens Cabin; Devil's Pass Cabin; Upper Paradise Cabin; West Swan Lake Cabin; +42 mor** (intake-US-4447, agency (outside research camping-us-oct31), status ok, 6 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/chugach/recarea/?recid=6623)
+  - booking.url = "https://www.fs.usda.gov/recarea/chugach/recarea/?recid=6623 · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
+  - drinking_water = false · “/camping sites, firepits, pit toilets, bear-proof garbage, and a boat launch. There is no potable water. The sites are… Alice Smith Intertie”
+  - restrooms = "vault" · “his is a primitive wayside site with 2 picnic sites, 1 covered picnic pavilion, firepits, pit toilet, bear-proof garbage, and boat launch. T”
+  - season = "June through October" · “oric Trail (INHT). This trail is moderate difficulty and is 7.5 miles (one way). The best season for use is June - October. It has… Begich, ”
+  - sites.cabin = 12 · “pper River Delta, and the surrounding Chugach Mountains. Aspen Flats Cabin Site Open This 12 x 14-foot rustic cabin sits along the Upper Rus”
+  - sites.total = 12 · “s imminent. However,… Bertha Creek Campground Site Open This small loop campground offers 12 sites suitable for small RV's and tents on the ”
+- **Dispersed camping** (intake-US-4594, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [forestry.alaska.gov](https://forestry.alaska.gov/stateforests.htm)
+  - booking.how = "online: dnr.alaska.gov" · “link “Alaska Chilkat Bald Eagle Preserve””
+  - booking.url = "https://dnr.alaska.gov/parks/plans/eaglpln/eaglepln.htm" · “link “Alaska Chilkat Bald Eagle Preserve” -> https://dnr.alaska.gov/parks/plans/eaglpln/eaglepln.htm”
+  - map.date_how = "PDF, no date in the link" · “link “Map of the Haines State Forest Resource Management Area””
+  - map.url = "https://forestry.alaska.gov/Assets/pdfs/stateforests/haines · “link “Map of the Haines State Forest Resource Management Area” -> https://forestry.alaska.gov/Assets/pdfs/stateforests/hainesmap.pdf”
+  - phone = "(907) 269-8467" · “tion 550 W. 7th Ave., Suite 1450 Anchorage, AK 99501 Phone: (907) 269-8467 Email: alison.arians@alaska.gov --> Forest Management Plans”
+- **Hasselborg Creek Cabin; Hasselborg Lake Shelter; Lake Alexander Shelter; Lake Guerin Shelter; Kegan Creek Cabin; Lake No. 3 Campground; Kathleen Lake Cabin; Big Shaheen Cabin; One Duck Shelter Site; P** (intake-US-4448, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/tongass/recarea/?recid=78633)
+  - booking.url = "https://www.fs.usda.gov/recarea/tongass/recarea/?recid=7863 · “booking link from our outside research (camping, in the park) row (official system www.fs.usda.gov)”
+  - features = "fire ring" · “Auk Tlingit Natives. There are 11 camping sites and each campsite has a picnic table and fire ring; most meet accessibility… Return to top”
+  - map.date_how = "web page, no date in the link" · “link “Tongass National Forest Fire Zones Map””
+  - map.url = "https://www.fs.usda.gov/media/265154" · “link “Tongass National Forest Fire Zones Map” -> https://www.fs.usda.gov/media/265154”
+  - restrooms = "yes (kind not stated)" · “l. Cabin is equipped with wooden bunks, table, benches, oil stove for heat and an outside toilet.… Anan Bay Cabin 16' x 20' cabin with loft ”
+- **Tangle Lakes Campground** (intake-US-11799, agency (outside research camping-us-oct31), status ok, 11 facts) · [www.blm.gov](https://www.blm.gov/visit/tangle-lakes-campground)
+  - booking.how = "online: www.recreation.gov" · “link “””
+  - booking.url = "https://www.recreation.gov/mobile-app" · “link “” -> https://www.recreation.gov/mobile-app”
+  - drinking_water = true · “ash receptacles and food lockers, parking for vehicles and trailers, a paved boat launch, potable water, accessible trails, picnic area, and”
+  - features = "fire rings" · “This recreation site provides 45 campsites (which includes a host site, picnic tables and fire rings. Other amenities within the facility in”
+  - map.date_how = "PDF, year 2017 in the link" · “link “Delta Wild and Scenic River Map Geo.pdf””
+  - map.url = "https://www.blm.gov/sites/blm.gov/files/documents/files/Map · “link “Delta Wild and Scenic River Map Geo.pdf” -> https://www.blm.gov/sites/blm.gov/files/documents/files/Maps_GeoPDF_Delta_Wild_Scenic_Rive”
+  - reservable = false · “ordinates 63.0518401 , -146.0073548 Fees FEE DESCRIPTION: $20 per site All sites are on a first come first serve basis. The Tangle Lakes Cam”
+  - restrooms = "vault" · “the entrance. Cell phone reception is poor at this site. The site has 4 accessible double vault toilets, 1 near the boat launch, 1 in each o”
+  - sites.group = 2 · “d, single-walled fire rings with grill attachments. To the north of the walk-in sites are 2 larger group campsites, with accessible tables a”
+  - sites.primitive = 4 · “rs of human use have been documented. The campground provides 45 accessible campsites and 4 walk-in sites and is equipped with water pumps, ”
+- **Exit Glacier Campground** (intake-US-0045, agency (outside research camping-us-oct31), status ok, 8 facts) · [www.nps.gov](https://www.nps.gov/kefj/planyourvisit/camping.htm)
+  - booking.url = "https://www.nps.gov/kefj/planyourvisit/camping.htm" · “booking link from our outside research (camping, in the park) row (official system www.nps.gov)”
+  - drinking_water = true · “is provided. Cooking and/or storing food in campsites is prohibited. There is a pump for drinking water and pit toilets are available. Pets ”
+  - reservable = false · “e can I camp? Exit Glacier has a 12-site, tent-only campground . Sites are available on a first-come, first-served basis. There is a fourtee”
+  - restrooms = "vault" · “campsites? Two of the campsites, #1 & #12, are accessible sites. Paths to the two sites, vault toilets, and cooking area are crushed rock or”
+  - rules.fires = "campfires allowed in the park?" · “nd dining shelter is provided. Cooking and/or storing food in campsites is prohibited Are campfires allowed in the park? Yes campfires are a”
+  - rules.pets = "Pets are not permitted in campsites" · “ampsites is prohibited. There is a pump for drinking water and pit toilets are available. Pets are not permitted in campsites. Backcountry c”
+  - sites.tent = 12 · “case by case basis through a Special Use Permit. Exit Glacier Campground Exit Glacier has 12 first-come first-served tent sites in summer. B”
+  - sites.total = 12 · “u Need to Know to Camp at Kenai Fjords National Park Where can I camp? Exit Glacier has a 12-site, tent-only campground . Sites are availabl”
+- **BLM Tangle Lakes Campground** (intake-US-11798, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.blm.gov](https://www.blm.gov/visit/tangle-lakes-campground)
+  - booking.how = "online: www.recreation.gov" · “link “””
+  - booking.url = "https://www.recreation.gov/mobile-app" · “link “” -> https://www.recreation.gov/mobile-app”
+  - drinking_water = true · “nds The BLM manages many developed campgrounds. Some include amenities such as restrooms, potable water, picnic tables, fire rings, garbage ”
+  - features = "fire rings, garbage receptacles, tent pads, electrical hook · “oped campgrounds. Some include amenities such as restrooms, potable water, picnic tables, fire rings, garbage receptacles, tent pads, electr”
+  - hookups.electric = true · “h as restrooms, potable water, picnic tables, fire rings, garbage receptacles, tent pads, electrical hookups, or group shelters, while other”
+  - map.date_how = "PDF, year 2017 in the link" · “link “Delta Wild and Scenic River Map Geo.pdf””
+  - map.url = "https://www.blm.gov/sites/blm.gov/files/documents/files/Map · “link “Delta Wild and Scenic River Map Geo.pdf” -> https://www.blm.gov/sites/blm.gov/files/documents/files/Maps_GeoPDF_Delta_Wild_Scenic_Rive”
+  - restrooms = "vault" · “n, Pack It Out : Take all trash and belongings with you. Human Waste : If possible, use a portable toilet or pack out your waste. In some lo”
+  - rules.stay_limit = "14 days" · “ons Part 8360 - Visitor Services for details. Stay Limit : Dispersed camping is generally limited to 14 days within any 28‑day period, thoug”
+- **Afognak Island** (AK-c2992d189c, state, status ok, 6 facts) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/pillarlakecabin.htm)
   - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
-  - booking.url = "https://reservealaskastateparks.com/park/8/57" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/8/57”
-  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
-  - map.date_how = "PDF, no date in the link" · “link “Map of Chugach State Park””
-  - map.url = "https://dnr.alaska.gov/parks/units/chugach/chugachstatepark · “link “Map of Chugach State Park” -> https://dnr.alaska.gov/parks/units/chugach/chugachstateparkmap.pdf”
-  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-  - rules.pets = "Pets Allowed: Yes**" · “; Winter - Walk, Ski, or Snowshoe* ★ Stay Limit: 3 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes** ★ Fees: ( see fee page ) ★ Cabi”
-- **Crooked Creek SRS campground** (intake-US-7196, agency (outside research camping-us-oct31), status ok, 4 facts, 58 ft) · [dnr.alaska.gov](https://dnr.alaska.gov/parks/units/campsitelist.htm)
-  - booking.how = "online: www.reserveamerica.com" · “link “YES””
-  - booking.url = "https://www.reserveamerica.com/camping/chena-river-state-re · “link “YES” -> https://www.reserveamerica.com/camping/chena-river-state-recreation-site/r/campgroundDetails.do?cont”
-  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
-  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-- **Bings Landing campground** (intake-US-11846, agency (outside research camping-us-oct31), status ok, 4 facts, 193 ft) · [dnr.alaska.gov](https://dnr.alaska.gov/parks/units/campsitelist.htm)
-  - booking.how = "online: www.reserveamerica.com" · “link “YES””
-  - booking.url = "https://www.reserveamerica.com/camping/chena-river-state-re · “link “YES” -> https://www.reserveamerica.com/camping/chena-river-state-recreation-site/r/campgroundDetails.do?cont”
-  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
-  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-- **Upper Chatanika River SRS campground** (intake-US-11829, agency (outside research camping-us-oct31), status ok, 4 facts, 775 ft) · [dnr.alaska.gov](https://dnr.alaska.gov/parks/units/campsitelist.htm)
-  - booking.how = "online: www.reserveamerica.com" · “link “YES””
-  - booking.url = "https://www.reserveamerica.com/camping/chena-river-state-re · “link “YES” -> https://www.reserveamerica.com/camping/chena-river-state-recreation-site/r/campgroundDetails.do?cont”
-  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
-  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-- **Denali** (AK-312785c2cd, state, status ok, 5 facts, 787 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/byerslakecabin1.htm)
-  - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
-  - booking.url = "https://reservealaskastateparks.com/park/20/32" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/20/32”
-  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
-  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-  - rules.pets = "Pets Allowed: Yes**" · “ite Access Method: Drive up/walk in ★ Stay Limit: 5 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes** ★ Fees: ( see fee page ) ★ Cab”
-- **Chena River** (AK-a2c7288bb8, state, status ok, 7 facts, 727 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/chenarivercabin.htm)
-  - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
-  - booking.url = "https://reservealaskastateparks.com/park/28/22" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/28/22”
-  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
-  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-  - restrooms = "vault" · “he winter. The front porch has ramp access and there is a ramp to the accessibly-designed outhouse. The cabin looks out on the Chena River, ”
-  - rules.pets = "Pets Allowed: Yes, always on leash" · “s: 2 ★ Site Access Method: Drive-in ★ Stay Limit: 5 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes, always on leash ★ Fees: ( see f”
-  - sites.cabin = 300 · “. The turnoff to the cabin is 0.7 miles past the trailhead, on the RIGHT. It is less than 300 feet to the cabin from the locked gate. GPS W1”
-- **St. James Bay** (AK-992e8992d8, state, status ok, 5 facts, 0 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/bobhinmancabin.htm)
-  - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
-  - booking.url = "https://reservealaskastateparks.com/park/47/98" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/47/98”
-  - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
-  - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
-  - rules.pets = "Pets Allowed: Yes**" · “te Access Method: Boat, Float plane ★ Stay Limit: 7 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes** ★ Fees: ( see fee page ) ★ Cab”
+  - booking.url = "https://reservealaskastateparks.com/park/1/26" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/1/26”
+  - hookups.electric = true · “ack-tailed deer, Roosevelt elk, and fox may be found in the area. Hunters should bring an electric fence to prevent bears gaining access to ”
+  - map.date_how = "PDF, no date in the link" · “link “Afognak Island SP Map””
+  - map.url = "https://dnr.alaska.gov/parks/aspunits/kodiak/maps/afognakis · “link “Afognak Island SP Map” -> https://dnr.alaska.gov/parks/aspunits/kodiak/maps/afognakislandspandsra.pdf”
+  - rules.pets = "Pets Allowed: Yes**" · “ts ★ Site Access Method: Floatplane ★ Stay Limit: 7 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes** ★ Fees: ( see fee page ) ★ Cab”
+- **Paxson Lake Campground** (intake-US-11803, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.blm.gov](https://www.blm.gov/visit/paxson-lake-campground)
+  - booking.how = "online: www.recreation.gov" · “link “””
+  - booking.url = "https://www.recreation.gov/mobile-app" · “link “” -> https://www.recreation.gov/mobile-app”
+  - drinking_water = true · “ash receptacles and food lockers, parking for vehicles and trailers, a paved boat launch, potable water, a sanitary dump station, accessible”
+  - dump_station = true · “d parking area for 70 vehicles, toilet, boater registration stand and information panels. RV Dump station – $10 fee for non-campers. 50 camp”
+  - features = "fire rings" · “s a host site, two accessible campsites and ten walk-in camping sites), picnic tables and fire rings. Other amenities within the facility in”
+  - reservable = false · “ites, including 2 accessible sites and 10 walk-in sites. All campsites are available on a first-come, first-served basis and have access to ”
+  - restrooms = "vault" · “users. Some cell phone reception is available at this site. There is 1 accessible double vault toilet in each of the 2 camping loops, as wel”
+  - sites.primitive = 10 · “rules/map panels and bulletin boards, and boardwalk to lake. Second Loop: 20 camp sites, 10 walk in sites, toilets (1 universally accessible”
+  - sites.total = 50 · “ter registration stand and information panels. RV Dump station – $10 fee for non-campers. 50 campsites First Loop: 20 camp sites, universall”
+- **NPS Priest Rock Public Use Cabin** (intake-US-0048, agency (outside research camping-us-oct31), status ok, 9 facts) · [www.nps.gov](https://www.nps.gov/lacl/planyourvisit/priest-rock-cabin.htm)
+  - booking.how = "online: www.nps.gov" · “link “Lake Clark National Park & Preserve””
+  - booking.url = "https://www.nps.gov/lacl/index.htm" · “link “Lake Clark National Park & Preserve” -> https://www.nps.gov/lacl/index.htm”
+  - drinking_water = true · “or bringing your own cook stove, lighter, utensils, sleeping pads, bedding, toilet paper, drinking water, and/or means of treating drinking ”
+  - fees = "$65 per night" · “e are no mooring buoys at this location. For information, see our Directions page. Price: $65 per night. Stay Limit: The maximum consecutive”
+  - hookups.electric = false · “ping accomodations include wooden bunks--three single beds and one queen bed. There is no electricity or running water at the cabin. Fresh w”
+  - reservable = true · “ecutive stay limit is 5 nights for a limit of 21 nights in a calendar year. Reservations: Reservations are required. Reserve online at www.r”
+  - restrooms = "vault" · “ccomodates up to six people. It is equipped with a wood stove, table, chairs and a nearby outhouse. Sleeping accomodations include wooden bu”
+  - rules.pets = "Dogs are allowed at the cabin" · “s are required. Reserve online at www.recreation.gov Cabin Rules and Other Considerations Dogs are allowed at the cabin. Please use wood spa”
+  - rules.stay_limit = "5 nights" · “ation, see our Directions page. Price: $65 per night. Stay Limit: The maximum consecutive stay limit is 5 nights for a limit of 21 nights in”
+- **Kendesnii Campground** (intake-US-0069, agency (outside research camping-us-oct31), status ok, 10 facts) · [www.nps.gov](https://www.nps.gov/wrst/planyourvisit/camping-along-the-nabesna-road.htm)
+  - booking.how = "online: www.nps.gov" · “link “Wrangell - St Elias National Park & Preserve””
+  - booking.url = "https://www.nps.gov/wrst/index.htm" · “link “Wrangell - St Elias National Park & Preserve” -> https://www.nps.gov/wrst/index.htm”
+  - drinking_water = false · “an fill up your gas tank in Chistochina (28 miles south) or Mentasta (18 miles north). No potable water is available after leaving Slana. We”
+  - features = "fire ring" · “ce campground in the park. It has 10 designated campsites, each with a picnic table and a fire ring. There are two vault toilets. Each site ”
+  - map.date_how = "PDF, no date in the link" · “link “Map of Local Public Campgrounds””
+  - map.url = "https://www.nps.gov/wrst/planyourvisit/upload/Campgrounds-S · “link “Map of Local Public Campgrounds” -> https://www.nps.gov/wrst/planyourvisit/upload/Campgrounds-Southcentral-AK.pdf”
+  - reservable = "mixed" · “y points about camping along the Nabesna Road: All sites are primitive and available on a first come, first served basis. Reservations are n”
+  - restrooms = "vault" · “tundra to a small lake. Dead Dog Hill, Mile Post 17.8 This site has a picnic table and a vault toilet. There are views of the Mentasta Mount”
+  - season = "year-round" · “toilets. Each site can accommodate a small to medium RV or other vehicles. It is free and open year-round. No reservations are required and ”
+  - sites.total = 10 · “which was constructed in 2012, is the only National Park Service campground in the park. It has 10 designated campsites, each with a picnic ”
 
 ## US-HI: 12 random samples (records with facts; seed = the date)
 

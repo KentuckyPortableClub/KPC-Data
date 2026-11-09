@@ -9,18 +9,18 @@
     "needs_key": 234,
     "no_page": 4,
     "not_official": 0,
-    "ok": 119,
-    "other": 11,
+    "ok": 8,
+    "other": 9,
     "resting": 0,
-    "robots": 0,
-    "with_booking": 127,
-    "with_elevation": 368,
-    "with_facts": 122,
-    "with_sites": 7
+    "robots": 113,
+    "with_booking": 64,
+    "with_elevation": 0,
+    "with_facts": 11,
+    "with_sites": 5
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-02"
+   "updated": "2026-11-09"
   },
   "US-AL": {
    "camps": 100,
@@ -152,27 +152,6 @@
    "left": 0,
    "status": "done",
    "updated": "2026-11-08"
-  },
-  "US-DC": {
-   "camps": 1,
-   "checked": 1,
-   "counts": {
-    "camps": 1,
-    "needs_browser": 0,
-    "needs_key": 0,
-    "no_page": 0,
-    "not_official": 0,
-    "ok": 0,
-    "other": 1,
-    "resting": 0,
-    "robots": 0,
-    "with_booking": 1,
-    "with_elevation": 0,
-    "with_sites": 0
-   },
-   "left": 0,
-   "status": "done",
-   "updated": "2026-11-09"
   },
   "US-DE": {
    "camps": 24,
@@ -1095,14 +1074,13 @@
   }
  },
  "cell_status": {
-  "US-AK": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
+  "US-AK": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-AL": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-AR": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-AZ": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-CA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-CO": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-CT": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
-  "US-DC": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-DE": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-FL": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-GA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1151,10 +1129,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
-    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+    "src": null,
+    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-11-02"
+   "read": "2026-11-09"
   },
   "US-AL": {
    "cell": {
@@ -1209,15 +1187,6 @@
     "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
    "read": "2026-11-08"
-  },
-  "US-DC": {
-   "cell": {
-    "carriers": null,
-    "files": [],
-    "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
-   },
-   "read": "2026-11-09"
   },
   "US-DE": {
    "cell": {
@@ -2554,11 +2523,12 @@
  },
  "last": {
   "areas": [
-   "US-DC"
+   "US-AK"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
+   "dropped_queued": 491,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2570,7 +2540,7 @@
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 2,
+   "requests": 31,
    "rested": 0,
    "robots": 2,
    "robots_unreadable": 2,
@@ -2578,18 +2548,19 @@
   },
   "ridb_key": false,
   "stat": {
-   "camps": 1,
+   "browser": 6,
+   "camps": 378,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 0,
-   "needs_key": 0,
-   "no_page": 1,
+   "needs_browser": 6,
+   "needs_key": 244,
+   "no_page": 7,
    "not_official": 0,
-   "ok": 0,
-   "pages_read": 0,
+   "ok": 14,
+   "pages_read": 17,
    "resting": 0,
    "ridb_calls": 0,
-   "robots": 0,
+   "robots": 113,
    "skipped_fresh": 0
   },
   "when": "2026-11-09"
