@@ -41,24 +41,24 @@
    "updated": "2026-11-09"
   },
   "US-CO": {
-   "checked": 118,
+   "checked": 276,
    "counts": {
-    "agree": 50,
-    "handover_hints": 5,
-    "no_page": 0,
-    "no_size": 20,
-    "off": 9,
-    "ours_unknown": 8,
-    "parks": 118,
+    "agree": 46,
+    "handover_hints": 6,
+    "no_page": 1,
+    "no_size": 145,
+    "off": 17,
+    "ours_unknown": 15,
+    "parks": 276,
     "retired": 0,
-    "unsure": 26,
-    "weak": 0,
-    "with_outline": 113
+    "unsure": 42,
+    "weak": 10,
+    "with_outline": 266
    },
-   "left": 158,
+   "left": 0,
    "parks": 276,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-09"
   },
   "US-CT": {
    "checked": 157,
@@ -742,6 +742,7 @@
   }
  },
  "hosts": {
+  "cpw.state.co.us": 1794312565.459541,
   "dep.nj.gov": 1794275828.9220152,
   "outdoornebraska.gov": 1794310616.347082,
   "riparks.com": 1794280201.1004815,
@@ -753,42 +754,38 @@
  },
  "last": {
   "areas": [
-   "US-NE"
+   "US-CO"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 6,
+   "browser": 5,
    "errors": 0,
-   "for_person": 2,
+   "for_person": 1,
    "for_person_urls": [
     [
-     "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+     "https://www.colorado.com/articles/national-park-profile-great-sand-dunes-national-park-preserve",
      "HTTP 403 twice"
     ]
    ],
-   "requests": 130,
+   "requests": 244,
    "rested": 120,
    "retry403": 2,
-   "robots": 0,
-   "strikes": 4
+   "robots": 1,
+   "strikes": 6
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 2,
-   "no_size": 165,
-   "ours_unknown": 6,
-   "pages_read": 61,
-   "parks": 201,
+   "handover_hints": 6,
+   "no_size": 146,
+   "ours_unknown": 15,
+   "pages_read": 187,
+   "parks": 276,
    "retired": 0,
-   "size_agree": 4,
-   "size_off": 4,
-   "size_unsure": 4,
+   "size_agree": 46,
+   "size_off": 17,
+   "size_unsure": 42,
    "skipped_fresh": 0,
-   "with_outline": 183
+   "with_outline": 266
   },
   "when": "2026-11-09"
  },
