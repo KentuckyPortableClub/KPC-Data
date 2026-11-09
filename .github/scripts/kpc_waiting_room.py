@@ -854,6 +854,8 @@ def mode_divert(paths):
     """Brandon Oct 29 7:55 PM ('fire them up if you trust them to run and put stuff in waiting room'): a bot's CHANGED files of a kind
     the waiting room checks are moved into data/waiting/in/ and the live file is put back as it was (git HEAD), so nothing new goes
     live; then every waiting file is judged (verdicts written, NOTHING promoted). State / review files stay with the bot."""
+    if not paths:   # Nov 9 PM (run 42666223956): 0 files = nothing to divert, a clean no-op (and never 'every changed file in the repo')
+        print('::notice title=Waiting room (hold)::0 files given: nothing to divert'); return
     out = subprocess.run(['git', '-C', str(DATA), 'status', '--porcelain', '--', *paths], capture_output=True, text=True).stdout.splitlines()
     moved = []
     for ln in out:
