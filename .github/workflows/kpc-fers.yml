@@ -118,6 +118,8 @@ jobs:
           RUN_TAG: ${{ matrix.r.tag }}
           KPC_FERS_PARK_S: '600'   # Nov 9 PM: one park / pair / map request may take 10 minutes at most (skipped + listed after)
         run: |
+          # Nov 9 PM (Quality NO on #57): every handler below ENDS the step with the script's own exit code (1 = crash, 3 = hard stop),
+          # so this step's outcome is 'failure' and Save (if: steps.kept_green_3.outcome == 'success') does not run; Report then goes red.
           # Nov 9 PM: the bot stops by itself 5 minutes before this step's limit (exit 3 = red), so it never hits the 335-minute cut
           export KPC_HARD_END=$(( ${KPC_JOB_T0:-$(date +%s)} + 335 * 60 - 300 ))
           # Oct 27 (SAVE USAGE): pass 'all' = passes 1, 2 and 3 back to back in ONE run (no waiting between dispatches)
@@ -135,14 +137,14 @@ jobs:
               if [ $p = 1 ]; then CAP=$(( TOTAL * 2 / 5 )); elif [ $p = 2 ]; then CAP=$(( LEFT / 2 )); elif [ $p = 3 ]; then CAP=$(( LEFT * 4 / 5 )); else CAP=$LEFT; fi
               [ $CAP -gt $LEFT ] && CAP=$LEFT
               [ $CAP -lt 5 ] && { echo "::notice title=2-fer bot::no time left for pass $p (next run carries on)"; break; }
-              PASS=$p MINUTES=$CAP python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+              PASS=$p MINUTES=$CAP python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }
             done
-          else python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; fi
+          else python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }; fi
           # Oct 27 (HQ): Kentucky's known river + trail pairs must come out before any big run
-          if [ "$REGION" = ky ]; then python3 .github/scripts/kpc_fers_known.py || { kpc_rc=$?; echo "::error title=kpc_fers_known.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_known.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; fi
+          if [ "$REGION" = ky ]; then python3 .github/scripts/kpc_fers_known.py || { kpc_rc=$?; echo "::error title=kpc_fers_known.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_known.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }; fi
           # Oct 27 (HQ 3:46 PM): MISSING CHECK = every pair we have outside reason to expect: FOUND / DROPPED / NEVER LOOKED AT
-          if [ "$REGION" = ky ]; then AREA=ky python3 .github/scripts/kpc_fers_expected.py || { kpc_rc=$?; echo "::error title=kpc_fers_expected.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_expected.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
-          elif [ -n "$STATES" ] && [ "$REGION" = na ]; then python3 .github/scripts/kpc_fers_expected.py || { kpc_rc=$?; echo "::error title=kpc_fers_expected.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_expected.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; fi
+          if [ "$REGION" = ky ]; then AREA=ky python3 .github/scripts/kpc_fers_expected.py || { kpc_rc=$?; echo "::error title=kpc_fers_expected.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_expected.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }
+          elif [ -n "$STATES" ] && [ "$REGION" = na ]; then python3 .github/scripts/kpc_fers_expected.py || { kpc_rc=$?; echo "::error title=kpc_fers_expected.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_expected.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }; fi
       - name: Observations log (new possible overlaps)
         if: ${{ matrix.r.region != 'world' }}
         id: kept_green_4
@@ -151,7 +153,7 @@ jobs:
           OBS_RUN: 2-fer bot pass ${{ inputs.pass }} (${{ matrix.r.name }})
           OBS_FILE: kpcdata/data/observations/fers-${{ matrix.r.name }}.json
           OBS_DATA_DIR: kpcdata
-        run: mkdir -p kpcdata/data/observations; python3 .github/scripts/kpc_map_observations.py || { kpc_rc=$?; echo "::error title=kpc_map_observations.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_map_observations.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+        run: mkdir -p kpcdata/data/observations; python3 .github/scripts/kpc_map_observations.py || { kpc_rc=$?; echo "::error title=kpc_map_observations.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_map_observations.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }
       - name: Save (once, at the end; never on cancel or failed Look)
         # Nov 8: cancelled run 42543101862 still pushed W-AU because Save was if: always(). Require real success + Look outcome.
         if: ${{ success() && steps.kept_green_3.outcome == 'success' }}
