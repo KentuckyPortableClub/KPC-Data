@@ -32,7 +32,7 @@ Updated 2026-11-09. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-NH | 206 | 194 | 16 | **10** | 7 | 105 | 5 | 5 | 0 | 3 |
 | US-ME | 148 | 141 | 17 | **16** | 7 | 92 | 4 | 10 | 0 | 6 |
 | US-MD | 186 | 176 | 41 | **48** | 30 | 33 | 24 | 18 | 0 | 15 |
-| US-DE | 89 | 79 | 2 | **1** | 2 | 66 | 8 | 2 | 0 | 0 |
+| US-DE | 89 | 85 | 2 | **1** | 2 | 66 | 12 | 2 | 0 | 4 |
 | US-DC | 35 | 23 | 1 | **1** | 1 | 16 | 4 | 1 | 0 | 3 |
 | US-AR | 306 | 251 | 40 | **13** | 36 | 64 | 80 | 12 | 0 | 4 |
 | US-LA | 123 | 115 | 9 | **7** | 6 | 93 | 0 | 5 | 0 | 2 |
@@ -2190,12 +2190,12 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 
 **Size more than 15% off (our outline vs the agency):**
 
-- US-10531 Fork Branch State Nature Preserve: ours 290 ac vs agency 236 acres (= 236 ac; 23% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [dnrec.delaware.gov](https://dnrec.delaware.gov/parks/planning/fork-branch-preserve/) · “Nature Preserve, in Dover. Contact Us Benjamin Schlusser Manager, Office of Nature Preserves 302-739-9039 At 236 acres, the Anne McClements Woods Tract of the F”
+- US-10531 Fork Branch State Nature Preserve: ours 363 ac vs agency 236 acres (= 236 ac; 54% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [dnrec.delaware.gov](https://dnrec.delaware.gov/parks/planning/fork-branch-preserve/) · “Nature Preserve, in Dover. Contact Us Benjamin Schlusser Manager, Office of Nature Preserves 302-739-9039 At 236 acres, the Anne McClements Woods Tract of the F”
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
-- US-10659 Augustine State Beach: ours 3,259 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 68,000 acres, no total words near it) · [dnrec.delaware.gov](https://dnrec.delaware.gov/fish-wildlife/wildlife-areas/)
-- US-9891 Blackbird Creek National Reserve: ours 522 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-10659 Augustine State Beach: ours 2,273 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 68,000 acres, no total words near it) · [dnrec.delaware.gov](https://dnrec.delaware.gov/fish-wildlife/wildlife-areas/)
+- US-9891 Blackbird Creek National Reserve: ours 817 ac · cause: no total-looking sentence: numbers found were parts or other units
 
 **Handover / closure hints (a person decides; nothing applied):**
 

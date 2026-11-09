@@ -108,17 +108,17 @@
     "no_page": 0,
     "no_size": 66,
     "off": 1,
-    "ours_unknown": 8,
+    "ours_unknown": 12,
     "parks": 89,
     "retired": 0,
     "unsure": 2,
-    "weak": 0,
-    "with_outline": 79
+    "weak": 4,
+    "with_outline": 85
    },
    "left": 0,
    "parks": 89,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-09"
   },
   "US-FL": {
    "checked": 460,
@@ -752,31 +752,46 @@
  },
  "last": {
   "areas": [
-   "US-MD"
+   "US-DE"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 12,
+   "browser": 30,
+   "dropped_queued": 19,
    "errors": 0,
-   "for_person_urls": [],
-   "requests": 364,
+   "for_person_urls": [
+    [
+     "https://destateparks.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from destateparks.com this run"
+    ],
+    [
+     "https://www.nrtdatabase.org/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.nrtdatabase.org this run"
+    ],
+    [
+     "https://www.destateparks.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.destateparks.com this run"
+    ]
+   ],
+   "requests": 129,
    "rested": 0,
-   "robots": 0,
+   "robots": 3,
+   "robots_unreadable": 3,
    "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 18,
-   "no_size": 33,
-   "ours_unknown": 24,
-   "pages_read": 308,
-   "parks": 186,
+   "handover_hints": 2,
+   "no_size": 68,
+   "ours_unknown": 12,
+   "pages_read": 85,
+   "parks": 89,
    "retired": 0,
-   "size_agree": 41,
-   "size_off": 48,
-   "size_unsure": 30,
+   "size_agree": 2,
+   "size_off": 1,
+   "size_unsure": 2,
    "skipped_fresh": 0,
-   "with_outline": 176
+   "with_outline": 85
   },
   "when": "2026-11-09"
  },
