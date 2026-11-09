@@ -446,19 +446,19 @@
     "agree": 4,
     "handover_hints": 2,
     "no_page": 3,
-    "no_size": 161,
+    "no_size": 159,
     "off": 4,
-    "ours_unknown": 1,
+    "ours_unknown": 6,
     "parks": 201,
     "retired": 0,
     "unsure": 4,
-    "weak": 10,
-    "with_outline": 177
+    "weak": 14,
+    "with_outline": 183
    },
    "left": 0,
    "parks": 201,
-   "status": "queued",
-   "updated": "2026-11-01"
+   "status": "done",
+   "updated": "2026-11-09"
   },
   "US-NH": {
    "checked": 206,
@@ -743,6 +743,7 @@
  },
  "hosts": {
   "dep.nj.gov": 1794275828.9220152,
+  "outdoornebraska.gov": 1794310616.347082,
   "riparks.com": 1794280201.1004815,
   "www.alapark.com": 1794248619.2284882,
   "www.arcgis.com": 1794286229.087196,
@@ -752,50 +753,42 @@
  },
  "last": {
   "areas": [
-   "US-KS"
+   "US-NE"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 5,
-   "dropped_queued": 116,
+   "browser": 6,
    "errors": 0,
+   "for_person": 2,
    "for_person_urls": [
     [
-     "https://www.ksoutdoors.gov/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.ksoutdoors.gov this run"
+     "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+     "HTTP 403 twice"
     ],
     [
-     "https://ksoutdoors.gov/robots.txt",
-     "robots.txt answered 403: nothing fetched from ksoutdoors.gov this run"
-    ],
-    [
-     "http://www.nwk.usace.army.mil/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.nwk.usace.army.mil this run"
-    ],
-    [
-     "https://ksoutdoors.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from ksoutdoors.com this run"
+     "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
+     "HTTP 403 twice"
     ]
    ],
-   "requests": 95,
-   "rested": 0,
-   "robots": 4,
-   "robots_unreadable": 4,
-   "strikes": 0
+   "requests": 130,
+   "rested": 120,
+   "retry403": 2,
+   "robots": 0,
+   "strikes": 4
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 0,
-   "no_size": 108,
-   "ours_unknown": 9,
-   "pages_read": 67,
-   "parks": 145,
+   "handover_hints": 2,
+   "no_size": 165,
+   "ours_unknown": 6,
+   "pages_read": 61,
+   "parks": 201,
    "retired": 0,
-   "size_agree": 3,
-   "size_off": 3,
-   "size_unsure": 1,
+   "size_agree": 4,
+   "size_off": 4,
+   "size_unsure": 4,
    "skipped_fresh": 0,
-   "with_outline": 124
+   "with_outline": 183
   },
   "when": "2026-11-09"
  },
