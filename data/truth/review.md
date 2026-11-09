@@ -38,7 +38,7 @@ Updated 2026-11-09. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-LA | 123 | 116 | 9 | **7** | 6 | 93 | 1 | 5 | 0 | 3 |
 | US-OK | 205 | 154 | 47 | **53** | 22 | 23 | 8 | 10 | 0 | 10 |
 | US-TX | 222 | 207 | 47 | **33** | 47 | 74 | 6 | 15 | 0 | 5 |
-| US-KS | 145 | 118 | 4 | **2** | 1 | 107 | 4 | 0 | 0 | 2 |
+| US-KS | 145 | 124 | 3 | **3** | 1 | 105 | 9 | 0 | 0 | 7 |
 | US-NE | 201 | 177 | 4 | **4** | 4 | 161 | 1 | 2 | 0 | 10 |
 | US-CO | 118 | 113 | 50 | **9** | 26 | 20 | 8 | 5 | 0 | 0 |
 
@@ -2543,11 +2543,12 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 
 ## US-KS
 
-**Agree:** 4 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 4 agree (second agency).
+**Agree:** 3 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 3 agree (second agency).
 
 **Size more than 15% off (our outline vs the agency):**
 
 - US-0291 Flint Hills National Wildlife Refuge: ours 20,191 ac vs agency 614.7 acres (= 614 ac; 3185% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/flint_hills/) · “e in Coffey and Lyon Counties, Kansas has a Cooperative Agricultural Agreement opportunity for the farming of 614.7 acres on the Refuge starting in March 2027 a”
+- US-0292 Kirwin National Wildlife Refuge: ours 10,778 ac vs agency 5,000 acres (= 5,000 ac; 116% off) · cause: boundary vs owned: our line may be the authorized boundary, the agency counts owned land (rule 1: use owned land) · [www.fws.gov](https://www.fws.gov/refuge/kirwin) · “ar-round activity at Kirwin NWR, especially in spring and early summer. Kirwin Reservoir covers approximately 5,000 acres, although water levels can vary consid”
 - US-3673 Tallgrass Prairie Preserve National Conservation Area: ours 33 ac vs agency 11,000 acres (= 11,000 ac; 100% off) · cause: agency bigger: our outline may miss a tract · [www.nps.gov](https://www.nps.gov/tapr/index.htm) · “n the spring and early summer NPS Contact Us Begin Your Tallgrass Prairie Visit Today The preserve has nearly 11,000 acres to be explored. Take a tour of the hi”
 
 **Unsure (no clean total found; the nearest number is only a guess):**
