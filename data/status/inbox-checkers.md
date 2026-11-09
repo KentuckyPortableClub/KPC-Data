@@ -229,6 +229,7 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM BOT park truth checker (2026-11-09): grade me: US-MD data/status/samples/park-truth-checker-US-MD-2026-11-09.md (+ review.md) — done; gate none; {"agree": 41, "handover_hints": 18, "no_page": 0, "no_size": 33, "off": 48, "ours_unknown": 24, "parks": 186, "retired": 0, "unsure": 30, "w · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42557145409)
 - FROM BOT park truth checker (2026-11-09): grade me: US-DE data/status/samples/park-truth-checker-US-DE-2026-11-09.md (+ review.md) — done; gate none; {"agree": 2, "handover_hints": 2, "no_page": 0, "no_size": 66, "off": 1, "ours_unknown": 12, "parks": 89, "retired": 0, "unsure": 2, "weak": · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42557145409)
 - FROM BOT park truth checker (2026-11-09): grade me: US-DC data/status/samples/park-truth-checker-US-DC-2026-11-09.md (+ review.md) — done; gate none; {"agree": 1, "handover_hints": 1, "no_page": 0, "no_size": 16, "off": 1, "ours_unknown": 10, "parks": 35, "retired": 0, "unsure": 1, "weak": · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42557145409)
+- FROM BOT kpc_us_trails (2026-11-09): grade me: national trails data/trails/ — 44 national trails in the index, 42 rebuilt, 3 kept / failed · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42582442510)
 - FROM WAITING ROOM (held since 2026-11-04, 5 days): campinfo data/campinfo/US-AR.json held: F-I4 1 toll-free reservation numbers kept as a camp phone, e.g. Designated WMA campsites
 - FROM WAITING ROOM (held since 2026-10-31, 9 days): campinfo data/campinfo/US-MA.json held: F-I3 the same site count on 6 camps of one agency (state: 27): copied from a shared page?
 - FROM WAITING ROOM (held since 2026-11-05, 4 days): campinfo data/campinfo/US-MO.json held: F-I3 the same site count on 82 camps of one agency (state: 500): copied from a shared page?
@@ -339,6 +340,7 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-05, 4 days): pilesolver data/pile-solver/US-VT.json held: US-5538: pin 1920 m out without the POTA pin flag
 - FROM WAITING ROOM (held since 2026-11-08, 1 days): trails data/trails/US-13626.json held: F-T3 length 16 -> 114 km (outside -25% / +50%)
 - FROM WAITING ROOM (held since 2026-11-08, 1 days): trails data/trails/US-9203.json held: F-T2 points 19246 -> 1822 (under half the saved line) · F-T3 length 138 -> 88 km (outside -25% / +50%)
+- FROM WAITING ROOM (held since 2026-11-09): trails data/trails/index.json held: F-T4 trail index 139 -> 102 lines (under 80% of the saved list)
 - FROM WAITING ROOM (held since 2026-11-04, 5 days): trails data/trails/state-report.json held: F-T1 the line has no points
 - FROM WAITING ROOM (held since 2026-11-01, 8 days): truth data/truth/US-CT.json held: F-R2 9 OFF rows share the size 255,000.0 ac
 - FROM WAITING ROOM (held since 2026-11-01, 8 days): truth data/truth/US-MA.json held: F-R2 6 OFF rows share the size 1,000.0 ac · F-R3 169 of 242 sized parks are OFF (over half: a reading problem?)

@@ -164,19 +164,30 @@ Rows the same as the live (already graded) copy keep their old YES: check only t
 - **data/pile-solver/UY.json** (pilesolver, PASS; grader chat 11): 1 new, 0 changed, 0 gone, 0 same (carried); check: UY-0049
 - **data/pile-solver/VI.json** (pilesolver, PASS; grader chat 11): 1 new, 0 changed, 0 gone, 0 same (carried); check: VI-0006
 - **data/pile-solver/ZA.json** (pilesolver, PASS; grader chat 11): 4 new, 0 changed, 0 gone, 0 same (carried); check: ZA-0075, ZA-0085, ZA-0156, ZA-0157
+- **data/trails/CA-5993.json** (trails, PASS; grader chat 11): new file (no live copy), no rows to list
 - **data/trails/CA-6339.json** (trails, PASS; grader chat 11): whole file changed, no rows to list: look at the whole file
 - **data/trails/CA-6381.json** (trails, PASS; grader chat 11): whole file changed, no rows to list: look at the whole file
+- **data/trails/US-10423.json** (trails, PASS; grader chat 11): new file (no live copy), no rows to list
 - **data/trails/US-10660.json** (trails, PASS; grader chat 11): whole file changed, no rows to list: look at the whole file
+- **data/trails/US-10714.json** (trails, PASS; grader chat 11): new file (no live copy), no rows to list
+- **data/trails/US-10862.json** (trails, PASS; grader chat 11): new file (no live copy), no rows to list
+- **data/trails/US-10880.json** (trails, PASS; grader chat 11): new file (no live copy), no rows to list
+- **data/trails/US-10884.json** (trails, PASS; grader chat 11): new file (no live copy), no rows to list
+- **data/trails/US-10900.json** (trails, PASS; grader chat 11): new file (no live copy), no rows to list
 - **data/trails/US-10914.json** (trails, PASS; grader chat 11): whole file changed, no rows to list: look at the whole file
 - **data/trails/US-10915.json** (trails, PASS; grader chat 11): whole file changed, no rows to list: look at the whole file
 - **data/trails/US-10917.json** (trails, PASS; grader chat 11): whole file changed, no rows to list: look at the whole file
+- **data/trails/US-10929.json** (trails, PASS; grader chat 11): new file (no live copy), no rows to list
 - **data/trails/US-13195.json** (trails, PASS; grader chat 11): whole file changed, no rows to list: look at the whole file
 - **data/trails/US-13624.json** (trails, PASS; grader chat 11): new file (no live copy), no rows to list
+- **data/trails/US-4559.json** (trails, PASS; grader chat 11): whole file changed, no rows to list: look at the whole file
+- **data/trails/US-4564.json** (trails, PASS; grader chat 11): whole file changed, no rows to list: look at the whole file
 - **data/trails/US-7544.json** (trails, PASS; grader chat 11): whole file changed, no rows to list: look at the whole file
 - **data/trails/US-8292.json** (trails, PASS; grader chat 11): whole file changed, no rows to list: look at the whole file
 - **data/trails/US-8437.json** (trails, PASS; grader chat 11): whole file changed, no rows to list: look at the whole file
 - **data/trails/US-8617.json** (trails, PASS; grader chat 11): whole file changed, no rows to list: look at the whole file
-- **data/trails/index-state.json** (trails, PASS; grader chat 11): 3 new, 13 changed, 10 gone, 286 same (carried); check: |||US-13626, |||US-13624, |||US-9203, |||US-13622, |||CA-6381, |||CA-6339, |||US-7544, |||US-10914, |||US-10915, |||US-10917, |||US-10660, |||US-8437, |||US-8292, |||US-8617, |||US-13195, |||US-10019
+- **data/trails/US-9163.json** (trails, PASS; grader chat 11): new file (no live copy), no rows to list
+- **data/trails/index-state.json** (trails, PASS; grader chat 11): 3 new, 23 changed, 0 gone, 286 same (carried); check: |||US-13624, |||US-9203, |||US-13626, |||US-0877, |||US-11852, |||US-10107, |||US-0646, |||US-10660, |||US-3382, |||US-13195, |||US-10914, |||US-8437, |||US-10019, |||US-8292, |||US-0887, |||US-10915, |||US-8617, |||US-10104, |||CA-6339, |||CA-6381, |||US-10430, |||US-4237, |||US-13622, |||US-0892, |||US-7544 ...
 - **data/truth/US-AL.json** (truth, PASS; grader chat 11): 0 new, 46 changed, 0 gone, 109 same (carried); check: US-1037, US-1038, US-1039, US-10396, US-1040, US-1041, US-1042, US-1043, US-1044, US-1045, US-1046, US-1047, US-1048, US-1049, US-1050, US-1051, US-13004, US-13005, US-13081, US-3600, US-3676, US-3677, US-3678, US-3683, US-3690 ...
 - **data/truth/US-DC.json** (truth, PASS; grader chat 11): 0 new, 35 changed, 0 gone, 0 same (carried); check: US-0015, US-0653, US-0654, US-0655, US-0656, US-0657, US-0670, US-0776, US-0780, US-0783, US-0784, US-0785, US-0791, US-0792, US-0793, US-0794, US-0795, US-0796, US-0805, US-0814, US-0825, US-0848, US-0853, US-13543, US-13597 ...
 - **data/truth/US-DE.json** (truth, PASS; grader chat 11): 0 new, 89 changed, 0 gone, 0 same (carried); check: US-0229, US-0230, US-0733, US-0898, US-10531, US-10659, US-10667, US-10668, US-10669, US-10670, US-10671, US-10672, US-10673, US-10674, US-10675, US-10676, US-10677, US-10678, US-10679, US-10680, US-10681, US-10682, US-10683, US-10684, US-10685 ...
@@ -350,6 +361,7 @@ Rows the same as the live (already graded) copy keep their old YES: check only t
 - **data/pile-solver/US-VT.json** (pilesolver, HOLD; grader chat 11): 3 new, 0 changed, 0 gone, 0 same (carried); check: US-5532, US-5538, US-5553; why held: US-5538: pin 1920 m out without the POTA pin flag
 - **data/trails/US-13626.json** (trails, HOLD; grader chat 11): whole file changed, no rows to list: look at the whole file; why held: F-T3 length 16 -> 114 km (outside -25% / +50%)
 - **data/trails/US-9203.json** (trails, HOLD; grader chat 11): whole file changed, no rows to list: look at the whole file; why held: F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%)
+- **data/trails/index.json** (trails, HOLD; grader chat 11): 9 new, 1 changed, 46 gone, 92 same (carried); check: |||CA-5993, |||US-10929, |||US-10862, |||US-10714, |||US-10880, |||US-10423, |||US-10884, |||US-9163, |||US-10900, |||US-4559; why held: F-T4 trail index 139 -> 102 lines (under 80% of the saved list)
 - **data/trails/state-report.json** (trails, HOLD; grader chat 11): whole file changed, no rows to list: look at the whole file; why held: F-T1 the line has no points
 - **data/truth/US-CT.json** (truth, HOLD; grader chat 11): 157 new, 0 changed, 0 gone, 0 same (carried); check: US-0228, US-0329, US-0873, US-0881, US-0882, US-10073, US-10075, US-10079, US-10086, US-10092, US-10656, US-10952, US-10961, US-10962, US-11013, US-11712, US-12092, US-12459, US-12460, US-12604, US-12620, US-12628, US-12777, US-13483, US-13487 ...; why held: F-R2 9 OFF rows share the size 255,000.0 ac
 - **data/truth/US-MA.json** (truth, HOLD; grader chat 11): 421 new, 0 changed, 0 gone, 0 same (carried); check: US-0320, US-0321, US-0322, US-0324, US-0325, US-0327, US-0328, US-0329, US-0330, US-0672, US-0725, US-0728, US-0742, US-0745, US-0748, US-0802, US-0826, US-0838, US-0843, US-0859, US-0862, US-0863, US-0891, US-0897, US-11395 ...; why held: F-R2 6 OFF rows share the size 1,000.0 ac; F-R3 169 of 242 sized parks are OFF (over half: a reading problem?)
