@@ -106,7 +106,7 @@ jobs:
           # Nov 9 evening: this bot's own saved outlines for the area (read live once, saved on this repo's fers-cache release)
           mkdir -p cache/fers
           # Nov 9 evening (4:52 PM): KPC-Archive is the store; the fers-cache release is only the fallback when KPC_ARCHIVE_TOKEN is missing
-          bash .github/scripts/kpc_archive.sh get fers cache/fers "saved-live-${{ matrix.r.tag || matrix.r.name }}.json.gz" \
+          bash .github/scripts/kpc_archive.sh get fers-saved-live cache/fers "saved-live-${{ matrix.r.tag || matrix.r.name }}.json.gz" \
             || gh release download fers-cache -R "$GITHUB_REPOSITORY" -p "saved-live-${{ matrix.r.tag || matrix.r.name }}.json.gz" -D cache/fers --clobber 2>/dev/null \
             || echo "::notice title=2-fer saved outlines::no saved-live copy for ${{ matrix.r.name }} yet (first run reads live and saves)"
       - name: Refuse a stale or incomplete key for this region (Nov 8)
@@ -208,7 +208,7 @@ jobs:
           KPC_ARCHIVE_TOKEN: ${{ secrets.KPC_ARCHIVE_TOKEN }}
         run: |
           ls cache/fers/saved-live-*.json.gz >/dev/null 2>&1 || { echo "nothing read live"; exit 0; }
-          if bash .github/scripts/kpc_archive.sh put fers "2-fer saved outlines (${{ matrix.r.name }}, run $GITHUB_RUN_ID)" cache/fers/saved-live-*.json.gz; then exit 0; fi
+          if bash .github/scripts/kpc_archive.sh put fers-saved-live "2-fer saved outlines (${{ matrix.r.name }}, run $GITHUB_RUN_ID)" cache/fers/saved-live-*.json.gz; then exit 0; fi
           echo "::warning title=KPC-Archive::2-fer saved outlines not saved to KPC-Archive (see above); saved to the fers-cache release instead"
           gh release view fers-cache -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || gh release create fers-cache -R "$GITHUB_REPOSITORY" --prerelease --title '2-fer saved outlines' --notes "Outlines the 2-fer bot had to read live (no saved copy in KPC-Links boundary-cache), one file per area; re-read about once a month."
           gh release upload fers-cache cache/fers/saved-live-*.json.gz -R "$GITHUB_REPOSITORY" --clobber

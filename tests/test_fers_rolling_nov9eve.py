@@ -34,7 +34,7 @@ up = [x for x in steps if 'fers-cache' in str(x.get('run', '')) and 'upload' in 
 check(len(up) == 1 and "steps.kept_green_3.outcome == 'success'" in up[0]['if'], 'saved-live is uploaded only after a good Look')
 check('kpc_archive.sh put fers' in up[0]['run'] and up[0]['run'].index('kpc_archive.sh put fers') < up[0]['run'].index('gh release upload fers-cache')
       and 'KPC_ARCHIVE_TOKEN' in str(up[0].get('env')), 'saved-live goes to KPC-Archive first; the release only when the archive is not available')
-check('kpc_archive.sh get fers cache/fers' in txt and txt.index('kpc_archive.sh get fers') < txt.index('gh release download fers-cache'), 'saved-live is read from KPC-Archive first, the release as the fallback')
+check('kpc_archive.sh get fers-saved-live cache/fers' in txt and txt.index('kpc_archive.sh get fers') < txt.index('gh release download fers-cache'), 'saved-live is read from KPC-Archive first, the release as the fallback')
 sv = [x for x in steps if x.get('id') == 'kept_green_5'][0]['run']
 check('full-rebuild-${{ matrix.r.tag }}.txt' in sv and sv.index('full-rebuild') < sv.index('kpc_push_data.sh'), 'the full-rebuild date is saved with the results, only after success')
 print('ALL PASS' if ok else 'FAILED'); sys.exit(0 if ok else 1)
