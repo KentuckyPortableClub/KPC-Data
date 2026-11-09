@@ -3,7 +3,7 @@ name: KPC 2-fer bot (hidden)
 # lays this repo's data/fers on top, runs, and saves data/fers + the observations log HERE. Files over 20 MB are kept gzipped.
 # Oct 26 2026 (Brandon via HQ: 'GO on the all-states 2-fer bot'; Brandon 5:37 AM: 'do the world'). Finds spots where
 # POTA parks share 100 yards of official ground. HIDDEN: writes data/fers/ only; nothing links to it.
-# Nov 8: Save only on real success (never on cancel/fail). World ownership patch + stale-key gate before the bot runs.
+# Nov 8: Save only on real success (never on cancel/fail). Stale/failed-key gate before the bot runs.
 # Waiting-room divert for this workflow is a follow-up (2-fers not public yet). Three passes, run
 # one after another by hand (1 = saved outlines, 2 = fresh downloads, 3 = finest shapes + pins). Two jobs per pass:
 # North America (US + Canada) and the rest of the world. Never fails (a failed run emails Brandon). Chat 2 starts it.
@@ -71,13 +71,6 @@ jobs:
           STATES: ${{ inputs.states }}
         run: |
           python3 kpcdata/.github/scripts/kpc_fers_key_gate.py || { kpc_rc=$?; echo "::error title=kpc_fers_key_gate.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_key_gate.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit 1; }
-      - name: Patch world ownership (designations-only must not mass-drop)
-        # Root cause: Nov 6 world branch of ownership_step marks every designations-only pair "not sure: no park owns land"
-        # when no land register exists (AU has none). That turned 528 live W-AU pairs into 0 on run 42451234481 (1,255 such rows).
-        # Applies a Data-owned fix onto the checked-out Links kpc_fers.py for this job only (until Links carries the same fix).
-        if: ${{ matrix.region == 'world' }}
-        run: |
-          python3 kpcdata/.github/scripts/kpc_fers_patch_world_ownership.py .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers_patch_world_ownership.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_patch_world_ownership.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit 1; }
       - name: POTA activation history (pairs worked the same day, counts only)
         if: ${{ matrix.region == 'ky' || (matrix.region == 'na' && inputs.states != '') }}
         id: kept_green_2
