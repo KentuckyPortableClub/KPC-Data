@@ -54,6 +54,7 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
 | US-AK | 368 | 8 | 234 | 0 | 113 | 0 | 4 | 0 | 9 | 5 | 64 | 0 |
 | US-HI | 22 | 10 | 2 | 0 | 0 | 0 | 8 | 0 | 2 | 0 | 12 | 0 |
 | US-MI | 511 | 3 | 110 | 2 | 0 | 10 | 377 | 0 | 9 | 0 | 12 | 0 |
+| US-OH | 96 | 0 | 11 | 0 | 12 | 0 | 62 | 0 | 11 | 0 | 11 | 0 |
 | US-UT | 459 | 40 | 331 | 1 | 0 | 0 | 13 | 0 | 74 | 1 | 115 | 0 |
 
 ## Needs a secret / not built yet
@@ -80,6 +81,7 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
 - azstateparks.com: 15 campgrounds · host resting (robots.txt could not be read: next run)
 - washington.goingtocamp.com: 15 campgrounds · host resting (robots.txt could not be read: next run)
 - midnrreservations.com: 12 campgrounds · host resting
+- reserveohio.com: 12 campgrounds · host resting (robots.txt could not be read: next run)
 - www.reservecalifornia.com: 5 campgrounds · host resting (robots.txt could not be read: next run)
 - apps.web.maine.gov: 4 campgrounds · host resting (robots.txt could not be read: next run)
 - getoutside.idaho.gov: 4 campgrounds · host resting (robots.txt could not be read: next run)
@@ -3789,6 +3791,9 @@ Updated 2026-11-09. Every fact in <area>.json carries its source url, read date 
   - map.date_how = "web page, no date in the link" · “link “Find a Map””
   - map.url = "https://www.fs.usda.gov/r09/huron-manistee/maps-guides" · “link “Find a Map” -> https://www.fs.usda.gov/r09/huron-manistee/maps-guides”
   - rules.pets = "Dogs are welcome on the Huron-Manistee National Forests (HM · “ow Before You Go Find a Map Find a Pass Find an Answer (FAQ) Find an Office Canine Camper Dogs are welcome on the Huron-Manistee National Fo”
+
+## US-OH: 12 random samples (records with facts; seed = the date)
+
 
 ## US-UT: 12 random samples (records with facts; seed = the date)
 
