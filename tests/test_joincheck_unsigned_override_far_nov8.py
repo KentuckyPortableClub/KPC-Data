@@ -68,34 +68,26 @@ check(ca['CA-2373']['join'] == ['Manitoba Par:32'], 'CA-2373 unsigned join kept'
 check(not str(us['US-2200'].get('decided_by') or '').strip(), 'US-2200 remains unsigned')
 check(not str(ca['CA-2373'].get('decided_by') or '').strip(), 'CA-2373 remains unsigned')
 
-# --- Far-join inventory after Research 20261108-1845: 2 signed, CA-2450 held ---
-for ref in ('US-0329', 'US-1208'):
-    v = us[ref]
-    check(bool(str(v.get('decided_by') or '').strip()) and 't786u' in v['decided_by'],
-          '%s signed (t786u general ruling)' % ref)
-    check('general ruling' in (v.get('why') or ''), '%s why cites general ruling' % ref)
-    om2, _ = J.approvals(str(ROOT), 'us', {'ANSWER_SHEET': '/nonexistent'})
-    p = {'m': [[x, (v.get('fp') or {}).get(x, ['?'])[0], 0, 'name'] for x in v.get('join') or []
-               if str(x) in (v.get('fp') or {}) or True]}
-    # build m from join ids present
-    m = []
-    for x in v.get('join') or []:
-        fp = (v.get('fp') or {}).get(x) or (v.get('fp') or {}).get(str(x))
-        nm = fp[0] if isinstance(fp, list) and fp else str(x)
-        m.append([x, nm, 0, 'name'])
-    why = J.exempt(ref, {'m': m}, om2)
-    check(why.startswith('signed override'),
-          '%s stays joined under #100 (%s)' % (ref, why or 'HELD'))
+# --- Far-join inventory: all 3 awaiting Brandon by name (NOT signed) ---
+# Research 20261108-1845 evidence recorded; Brandon has not named these parks.
+for ref, parks, jid, jname in [
+    ('US-0329', us, '5300', 'Silvio O. Conte National Fish And Wildlife Refuge'),
+    ('US-1208', us, '184168', 'Arkansas Headwaters'),
+    ('CA-2450', ca, '17890', 'Little Grand Rapids First Nation Traditional Use Planning Area'),
+]:
+    v = parks[ref]
+    check(not str(v.get('decided_by') or '').strip(), '%s NOT signed (awaiting Brandon by name)' % ref)
+    check(jid in [str(x) for x in (v.get('join') or [])], '%s still has join %s in overrides' % (ref, jid))
+    kind = 'us' if ref.startswith('US-') else 'ca'
+    om, _ = J.approvals(str(ROOT), kind, {'ANSWER_SHEET': '/nonexistent'})
+    why = J.exempt(ref, {'m': [[jid, jname, 0, 'name']]}, om)
+    check(why == '', '%s held under #100 until Brandon by name — got %r' % (ref, why))
 
-v2450 = ca['CA-2450']
-check(not str(v2450.get('decided_by') or '').strip(), 'CA-2450 NOT signed (partial TUPA vs WMA)')
-check('17890' in (v2450.get('join') or []), 'CA-2450 still has join 17890 (held pending Brandon)')
-om_c, _ = J.approvals(str(ROOT), 'ca', {'ANSWER_SHEET': '/nonexistent'})
-why2450 = J.exempt('CA-2450', {'m': [['17890', 'Little Grand Rapids First Nation Traditional Use Planning Area', 0, 'name']]}, om_c)
-check(why2450 == '', 'CA-2450 held under #100 (unsigned far join) — got %r' % why2450)
 inv = (ROOT / 'data/waiting/in/data/pile-solver/hand-layers-UNSIGNED-FAR-JOIN-INVENTORY.md').read_text(encoding='utf-8')
-check('Held pending Brandon' in inv and 'CA-2450' in inv, 'inventory lists CA-2450 held pending Brandon')
-check('US-0329' in inv and 'US-1208' in inv and 'Signed 2026-11-08' in inv, 'inventory lists US-0329/US-1208 as signed')
+check('Awaiting Brandon by name' in inv, 'inventory section is awaiting Brandon by name')
+for ref in ('US-0329', 'US-1208', 'CA-2450'):
+    check(ref in inv, 'inventory lists %s' % ref)
+check('far-join-check-20261108-1845' in inv or 'Research' in inv, 'inventory cites Research evidence')
 
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)
