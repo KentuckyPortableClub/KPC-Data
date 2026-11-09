@@ -2,55 +2,153 @@
 
 Source file: `data/truth/US-NM.json`
 
-## US-4569 El Camino Real de Tierra Adentro National Historic Trail
+## US-0547 Grulla National Wildlife Refuge
 ```json
 {
  "checked": "2026-11-09",
- "handover": [],
- "n": "El Camino Real de Tierra Adentro National Historic Trail",
- "note": "whole park compared (POTA lists it in 0 states: {})",
- "official": null,
- "ours": {
-  "acres": 0,
-  "acres_by_state": {},
-  "manager": "",
-  "pieces": [],
-  "pin": "inside",
-  "src": "",
-  "states": [
-   "US-NM",
-   "US-TX"
-  ],
-  "unknown_pieces": 1,
-  "whole_park": true
+ "handover": [
+  {
+   "date_hint": null,
+   "kind": "managed by",
+   "line": "Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the refuge system. It drives everything we do from the purpose a refuge is establis",
+   "owner_now": "U.S",
+   "src": "https://www.fws.gov/refuge/Grulla/",
+   "why": "the park's page (data/parkinfo)"
+  },
+  {
+   "date_hint": "1969",
+   "kind": "transfer",
+   "line": "About Us Grulla National Wildlife Refuge was officially established as a refuge when the lands were transferred to the U.S. Fish and Wildlife Service from the Bureau of Land Management in 1969. The refuge is 3,236 acres of which the majority is a salt lake. The refuge is a protected roost si",
+   "owner_now": "U.S",
+   "src": "https://www.fws.gov/refuge/grulla/about-us",
+   "why": "about / history page of the park's site"
+  }
+ ],
+ "n": "Grulla National Wildlife Refuge",
+ "official": {
+  "acres": 3236.0,
+  "as": "3,236 acres",
+  "clean": false,
+  "line": "e transferred to the U.S. Fish and Wildlife Service from the Bureau of Land Management in 1969. The refuge is 3,236 acres of which the majority is a salt lake. The refuge is a protected roost site for lesser sandhill cranes and pro",
+  "read": "2026-11-09",
+  "sent": "The refuge is 3,236 acres of which the majority is a salt lake.",
+  "url": "https://www.fws.gov/refuge/grulla/about-us",
+  "why": "total-looking"
  },
- "owner_now": null,
- "pct": null,
- "score": 4,
- "t": "National Historic Trail",
- "verdict": "ours unknown"
-}
-```
-
-## US-0924 El Morro National Monument
-```json
-{
- "checked": "2026-11-09",
- "handover": [],
- "n": "El Morro National Monument",
- "official": null,
  "ours": {
-  "acres": 1040,
+  "acres": 3231,
+  "dissolved": {
+   "after": 3231,
+   "before": 6462,
+   "copies": 1,
+   "parts": 0,
+   "records": 2,
+   "tracts": 1
+  },
   "manager": "",
+  "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 6462 -> 3231 acres",
   "pieces": [
    [
-    3365,
-    "El Morro National Monument",
-    1040,
+    3901,
+    "Grulla National Wildlife Refuge",
+    3231,
     "name"
    ]
   ],
   "pin": "just outside",
+  "src": "USGS PAD-US",
+  "unknown_pieces": 0
+ },
+ "owner_now": "U.S",
+ "pct": 0,
+ "same_agency": false,
+ "score": 7,
+ "t": "National Wildlife Refuge",
+ "verdict": "agree"
+}
+```
+
+## US-8227 Jemez National Recreation Area
+```json
+{
+ "cause": "no total-looking sentence: numbers found were parts or other units",
+ "checked": "2026-11-09",
+ "handover": [],
+ "n": "Jemez National Recreation Area",
+ "official": null,
+ "ours": {
+  "acres": 57753,
+  "manager": "",
+  "pieces": [
+   [
+    "fsod53",
+    "Jemez National Recreation Area",
+    57753,
+    "name"
+   ]
+  ],
+  "pin": "inside",
+  "src": "",
+  "unknown_pieces": 0
+ },
+ "owner_now": null,
+ "pct": null,
+ "score": 7,
+ "t": "National Recreation Area",
+ "verdict": "unsure"
+}
+```
+
+## US-7479 Kiowa National Grassland
+```json
+{
+ "cause": "no total-looking sentence: numbers found were parts or other units",
+ "checked": "2026-11-09",
+ "handover": [],
+ "n": "Kiowa National Grassland",
+ "official": null,
+ "ours": {
+  "acres": 137291,
+  "manager": "",
+  "pieces": [
+   [
+    2760,
+    "Kiowa National Grassland",
+    137291,
+    "name"
+   ]
+  ],
+  "pin": "inside",
+  "src": "USGS PAD-US",
+  "unknown_pieces": 0
+ },
+ "owner_now": null,
+ "pct": null,
+ "score": 6,
+ "t": "National Grassland",
+ "verdict": "unsure"
+}
+```
+
+## US-11814 Salinas Pueblo Missions, Quarai unit, National Monument
+```json
+{
+ "checked": "2026-11-09",
+ "handover": [],
+ "n": "Salinas Pueblo Missions, Quarai unit, National Monument",
+ "official": null,
+ "ours": {
+  "acres": 48,
+  "manager": "",
+  "pieces": [
+   [
+    3403,
+    "Salinas Pueblo Missions NM, Quarai tract (PAD-US fee piece)",
+    48,
+    "reviewed (official tract: Quarai of Salinas Pueblo Missions "
+   ]
+  ],
+  "pin": "inside",
   "src": "USGS PAD-US",
   "unknown_pieces": 0
  },
@@ -62,27 +160,184 @@ Source file: `data/truth/US-NM.json`
 }
 ```
 
-## US-12169 El Malpais BLM National Conservation Area
+## US-11807 Simon Canyon ACEC BLM Special Recreation Management Area
 ```json
 {
- "cause": "no total-looking sentence: numbers found were parts or other units",
+ "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
  "checked": "2026-11-09",
  "handover": [],
- "n": "El Malpais BLM National Conservation Area",
- "official": null,
+ "n": "Simon Canyon ACEC BLM Special Recreation Management Area",
+ "official": {
+  "acres": 3900.0,
+  "as": "3,900 acres",
+  "clean": false,
+  "line": "cern | New Mexico View Map In Full Screen Simon Canyon Area of Critical Environmental Concern (ACEC) is about 3,900 acres in size and is managed for semi-primitive forms of recreation including fishing, hiking, and backpacking. Dev",
+  "read": "2026-11-09",
+  "sent": "Simon Canyon Area of Critical Environmental Concern (ACEC) is about 3,900 acres in size and is managed for semi-primitive forms of recreation including fishing, hiking, and backpacking.",
+  "url": "https://www.blm.gov/visit/simon-canyon-acec",
+  "why": "total-looking"
+ },
  "ours": {
-  "acres": 263158,
+  "acres": 4543,
+  "dissolved": {
+   "after": 3959,
+   "before": 7866,
+   "copies": 1,
+   "key_union": 4543,
+   "parts": 0,
+   "records": 2,
+   "summed": 3959,
+   "tracts": 1
+  },
   "manager": "",
-  "pieces": [],
+  "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 7866 -> 3959 acres",
+  "pieces": [
+   [
+    "sgakh1693",
+    "Simon Canyon",
+    3959,
+    "reviewed"
+   ]
+  ],
   "pin": "just outside",
   "src": "",
-  "unknown_pieces": 10
+  "unknown_pieces": 0
+ },
+ "owner_now": null,
+ "pct": 16,
+ "same_agency": false,
+ "score": 5,
+ "t": "BLM Special Recreation Management Area",
+ "verdict": "off"
+}
+```
+
+## US-2717 Sumner Lake State Park
+```json
+{
+ "checked": "2026-11-09",
+ "handover": [],
+ "n": "Sumner Lake State Park",
+ "official": null,
+ "ours": {
+  "acres": 1152,
+  "family_fold": "layers {'sgnmb': 1467, 'padus': 904}: one land in 2 layers, the sgnmb copy used (904 ac of copies not added)",
+  "manager": "",
+  "pieces": [
+   [
+    "sgnmb26",
+    "SUMNER LAKE",
+    1467,
+    "reviewed"
+   ]
+  ],
+  "pin": "inside",
+  "src": "USGS PAD-US",
+  "unknown_pieces": 0
+ },
+ "owner_now": null,
+ "pct": null,
+ "score": 7,
+ "t": "State Park",
+ "verdict": "no size on page"
+}
+```
+
+## US-11806 Johnson (Gordy's) Hill BLM Recreation Management Area
+```json
+{
+ "checked": "2026-11-09",
+ "handover": [],
+ "n": "Johnson (Gordy's) Hill BLM Recreation Management Area",
+ "official": null,
+ "ours": {
+  "acres": 8358,
+  "manager": "",
+  "pieces": [
+   [
+    "rst14034",
+    "Johnson (Gordy's) Hill North",
+    4583,
+    "name"
+   ],
+   [
+    "rst13973",
+    "Johnson (Gordy's) Hill South",
+    3155,
+    "name"
+   ]
+  ],
+  "pin": "inside",
+  "src": "",
+  "unknown_pieces": 0
  },
  "owner_now": null,
  "pct": null,
  "score": 6,
- "t": "BLM National Conservation Area",
- "verdict": "unsure"
+ "t": "BLM Recreation Management Area",
+ "verdict": "no size on page"
+}
+```
+
+## US-2701 Hyde Memorial State Park
+```json
+{
+ "checked": "2026-11-09",
+ "handover": [],
+ "n": "Hyde Memorial State Park",
+ "official": null,
+ "ours": {
+  "acres": 352,
+  "dissolved": {
+   "after": 352,
+   "before": 699,
+   "copies": 1,
+   "parts": 0,
+   "records": 2,
+   "tracts": 1
+  },
+  "manager": "",
+  "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 699 -> 352 acres",
+  "pieces": [
+   [
+    "sgnmb13",
+    "HYDE MEMORIAL",
+    352,
+    "reviewed"
+   ]
+  ],
+  "pin": "inside",
+  "src": "USGS PAD-US",
+  "unknown_pieces": 0
+ },
+ "owner_now": null,
+ "pct": null,
+ "score": 7,
+ "t": "State Park",
+ "verdict": "no size on page"
+}
+```
+
+## US-8621 Cabezon Wilderness Area
+```json
+{
+ "checked": "2026-11-09",
+ "handover": [],
+ "n": "Cabezon Wilderness Area",
+ "official": null,
+ "ours": {
+  "acres": 0,
+  "manager": "",
+  "pieces": [],
+  "pin": "inside",
+  "src": "",
+  "unknown_pieces": 1
+ },
+ "owner_now": null,
+ "pct": null,
+ "score": 6,
+ "t": "Wilderness Area",
+ "verdict": "ours unknown"
 }
 ```
 
@@ -134,52 +389,21 @@ Source file: `data/truth/US-NM.json`
 }
 ```
 
-## US-11814 Salinas Pueblo Missions, Quarai unit, National Monument
+## US-0752 Pecos National Historical Park
 ```json
 {
  "checked": "2026-11-09",
  "handover": [],
- "n": "Salinas Pueblo Missions, Quarai unit, National Monument",
+ "n": "Pecos National Historical Park",
  "official": null,
  "ours": {
-  "acres": 48,
+  "acres": 6451,
   "manager": "",
   "pieces": [
    [
-    3403,
-    "Salinas Pueblo Missions NM, Quarai tract (PAD-US fee piece)",
-    48,
-    "reviewed (official tract: Quarai of Salinas Pueblo Missions "
-   ]
-  ],
-  "pin": "inside",
-  "src": "USGS PAD-US",
-  "unknown_pieces": 0
- },
- "owner_now": null,
- "pct": null,
- "score": 5,
- "t": "National Monument",
- "verdict": "no size on page"
-}
-```
-
-## US-2715 Storrie Lake State Park
-```json
-{
- "checked": "2026-11-09",
- "handover": [],
- "n": "Storrie Lake State Park",
- "official": null,
- "ours": {
-  "acres": 242,
-  "family_fold": "layers {'padus': 130, 'sgnmb': 122}: one land in 2 layers, the padus copy used (122 ac of copies not added)",
-  "manager": "",
-  "pieces": [
-   [
-    229293,
-    "Storrie Lake State Park",
-    130,
+    3237,
+    "Pecos National Historical Park",
+    6451,
     "name"
    ]
   ],
@@ -189,226 +413,47 @@ Source file: `data/truth/US-NM.json`
  },
  "owner_now": null,
  "pct": null,
- "score": 7,
- "t": "State Park",
+ "score": 6,
+ "t": "National Historical Park",
  "verdict": "no size on page"
 }
 ```
 
-## US-4558 Continental Divide Trail National Scenic Trail
+## US-7878 Red Sands National Recreation Area
 ```json
 {
  "checked": "2026-11-09",
  "handover": [],
- "n": "Continental Divide Trail National Scenic Trail",
- "note": "whole park compared (POTA lists it in 0 states: {})",
+ "n": "Red Sands National Recreation Area",
  "official": null,
  "ours": {
-  "acres": 0,
-  "acres_by_state": {},
-  "manager": "",
-  "pieces": [],
-  "pin": "inside",
-  "src": "",
-  "states": [
-   "US-WY",
-   "US-NM",
-   "US-ID",
-   "US-MT",
-   "US-CO"
-  ],
-  "unknown_pieces": 1,
-  "whole_park": true
- },
- "owner_now": null,
- "pct": null,
- "score": 4,
- "t": "National Scenic Trail",
- "verdict": "ours unknown"
-}
-```
-
-## US-2689 Caballo Lake State Park
-```json
-{
- "checked": "2026-11-09",
- "handover": [],
- "n": "Caballo Lake State Park",
- "official": null,
- "ours": {
-  "acres": 9111,
-  "family_fold": "layers {'sgnmb': 5817, 'padus': 4476}: one land in 2 layers, the sgnmb copy used (4,476 ac of copies not added)",
-  "manager": "",
-  "pieces": [
-   [
-    "sgnmb3",
-    "CABALLO LAKE",
-    5817,
-    "reviewed"
-   ]
-  ],
-  "pin": "inside",
-  "src": "USGS PAD-US",
-  "unknown_pieces": 0
- },
- "owner_now": null,
- "pct": null,
- "score": 7,
- "t": "State Park",
- "verdict": "no size on page"
-}
-```
-
-## US-2716 Sugarite Canyon State Park
-```json
-{
- "checked": "2026-11-09",
- "handover": [],
- "n": "Sugarite Canyon State Park",
- "official": null,
- "ours": {
-  "acres": 5385,
-  "family_fold": "layers {'sgnmb': 4530, 'padus': 4115}: one land in 2 layers, the sgnmb copy used (4,115 ac of copies not added)",
-  "manager": "",
-  "pieces": [
-   [
-    "sgnmb32",
-    "SUGARITE CANYON",
-    4530,
-    "reviewed"
-   ]
-  ],
-  "pin": "inside",
-  "src": "USGS PAD-US",
-  "unknown_pieces": 0
- },
- "owner_now": null,
- "pct": null,
- "score": 7,
- "t": "State Park",
- "verdict": "no size on page"
-}
-```
-
-## US-4516 Lincoln National Forest
-```json
-{
- "checked": "2026-11-09",
- "handover": [],
- "n": "Lincoln National Forest",
- "official": {
-  "acres": 1100000.0,
-  "as": "1.1 million acres",
-  "clean": false,
-  "line": "day! Recreation Station T T T Welcome to Lincoln National Forest The Lincoln National Forest stretches across 1.1 million acres of southeastern New Mexico, covering three stunning mountain ranges, the Sacramento, Guadalupe, and Capitan.",
-  "read": "2026-11-09",
-  "sent": "The Lincoln National Forest stretches across 1.1 million acres of southeastern New Mexico, covering three stunning mountain ranges, the Sacramento, Guadalupe, and Capitan.",
-  "url": "https://www.fs.usda.gov/lincoln",
-  "why": "total-looking"
- },
- "ours": {
-  "acres": 1095525,
-  "manager": "",
-  "pieces": [
-   [
-    2750,
-    "Lincoln National Forest",
-    1095525,
-    "name"
-   ]
-  ],
-  "pin": "inside",
-  "src": "USGS PAD-US",
-  "unknown_pieces": 0
- },
- "owner_now": null,
- "pct": 0,
- "same_agency": false,
- "score": 7,
- "t": "National Forest",
- "verdict": "agree"
-}
-```
-
-## US-0910 Capulin Volcano National Monument
-```json
-{
- "cause": "agency bigger: our outline may miss a tract",
- "checked": "2026-11-09",
- "handover": [],
- "n": "Capulin Volcano National Monument",
- "official": {
-  "acres": 10048.0,
-  "as": "15.7 square miles",
-  "clean": false,
-  "line": "Cartmell Map showing the Rio Grande Rift and the Jemez Lineament. NPS A. Buccanero Capulin Volcano blanketed 15.7 square miles with its lava flows, but it was not the only volcano to transform the New Mexico landscape. Capulin lies with",
-  "read": "2026-11-09",
-  "sent": "Capulin Volcano blanketed 15.7 square miles with its lava flows, but it was not the only volcano to transform the New Mexico landscape.",
-  "url": "https://www.nps.gov/cavo/learn/nature/volcanic-fields.htm",
-  "why": "total-looking"
- },
- "ours": {
-  "acres": 791,
-  "manager": "",
-  "pieces": [
-   [
-    3347,
-    "Capulin Volcano National Monument",
-    791,
-    "name"
-   ]
-  ],
-  "pin": "inside",
-  "src": "USGS PAD-US",
-  "unknown_pieces": 0
- },
- "owner_now": null,
- "pct": 92,
- "same_agency": false,
- "score": 5,
- "t": "National Monument",
- "verdict": "off"
-}
-```
-
-## US-13498 Chosa Campground BLM Recreation Management Area
-```json
-{
- "cause": "no total-looking sentence: numbers found were parts or other units",
- "checked": "2026-11-09",
- "handover": [],
- "n": "Chosa Campground BLM Recreation Management Area",
- "official": null,
- "ours": {
-  "acres": 1,
+  "acres": 33872,
   "dissolved": {
-   "after": 4,
-   "before": 16,
+   "after": 33872,
+   "before": 135488,
    "copies": 3,
-   "key_union": 1,
    "parts": 0,
    "records": 4,
-   "summed": 4,
    "tracts": 1
   },
   "manager": "",
-  "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 16 -> 4 acres",
+  "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 135488 -> 33872 acres",
   "pieces": [
    [
-    "rma11411",
-    "Chosa Campground",
-    4,
-    "name"
+    "sgnmc11047",
+    "Red Sands OHV",
+    33872,
+    "reviewed"
    ]
   ],
-  "pin": "just outside",
+  "pin": "inside",
   "src": "",
   "unknown_pieces": 0
  },
  "owner_now": null,
  "pct": null,
  "score": 6,
- "t": "BLM Recreation Management Area",
- "verdict": "unsure"
+ "t": "National Recreation Area",
+ "verdict": "no size on page"
 }
 ```

@@ -2,17 +2,17 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-NM",
  "counts": {
-  "agree": 19,
+  "agree": 20,
   "handover_hints": 4,
   "no_page": 1,
-  "no_size": 51,
-  "off": 9,
-  "ours_unknown": 7,
-  "parks": 113,
+  "no_size": 53,
+  "off": 10,
+  "ours_unknown": 11,
+  "parks": 123,
   "retired": 0,
-  "unsure": 9,
-  "weak": 6,
-  "with_outline": 96
+  "unsure": 10,
+  "weak": 8,
+  "with_outline": 105
  },
  "parks": {
   "US-0012": {
@@ -6145,6 +6145,464 @@
    "t": "National Recreation Area",
    "ver": 15,
    "verdict": "no size on page"
+  },
+  "US-8227": {
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Jemez National Recreation Area",
+   "official": null,
+   "ours": {
+    "acres": 57753,
+    "manager": "",
+    "pieces": [
+     [
+      "fsod53",
+      "Jemez National Recreation Area",
+      57753,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/recarea/santafe/recarea/?recid=75444",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 265100.0,
+     "as": "265,100 acres",
+     "clean": false,
+     "line": "r District The Coyote Ranger District, the northernmost district of the Santa Fe National Forest, encompasses 265,100 acres. The Chama River Canyon Wilderness… Cuba Ranger District The Cuba Ranger District is located in the western p",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/recarea/santafe/recarea/?recid=75444",
+     "why": "another park / unit named in the sentence"
+    }
+   ],
+   "t": "National Recreation Area",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-8228": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Fort Stanton Snowy River National Conservation Area",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/fort-stanton-snowy-river-cave-nca",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Conservation Area",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-8273": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Angel Peak Scenic National Recreation Area",
+   "official": {
+    "acres": 10000.0,
+    "as": "10,000 acres",
+    "clean": true,
+    "line": "Instagram Flickr LinkedIn Angel Peak Scenic Area | View Map In Full Screen Angel Peak Scenic Area covers over 10,000 acres of rugged badlands and features dramatic views of Angel Peak—a nearly 7,000-foot sandstone landmark. A short",
+    "read": "2026-11-09",
+    "sent": "Angel Peak Scenic Area covers over 10,000 acres of rugged badlands and features dramatic views of Angel Peak—a nearly 7,000-foot sandstone landmark.",
+    "url": "https://www.blm.gov/visit/angel-peak-scenic-area",
+    "why": "clean total"
+   },
+   "ours": {
+    "acres": 10216,
+    "dissolved": {
+     "after": 10216,
+     "before": 30648,
+     "copies": 2,
+     "parts": 0,
+     "records": 3,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 30648 -> 10216 acres",
+    "pieces": [
+     [
+      "sgakg13981",
+      "Angel Peak Scenic Area",
+      10216,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/angel-peak-scenic-area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 2,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 10000.0,
+     "as": "10,000 acres",
+     "clean": true,
+     "line": "Instagram Flickr LinkedIn Angel Peak Scenic Area | View Map In Full Screen Angel Peak Scenic Area covers over 10,000 acres of rugged badlands and features dramatic views of Angel Peak—a nearly 7,000-foot sandstone landmark. A short",
+     "total_like": true,
+     "url": "https://www.blm.gov/visit/angel-peak-scenic-area",
+     "why": "clean total"
+    }
+   ],
+   "t": "National Recreation Area",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-8617": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Perea Nature National Recreation Trail",
+   "ours": null,
+   "score": null,
+   "t": "National Recreation Trail",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-8618": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "White Ridge National Recreation Trail",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/white-ridge-bike-trails",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "National Recreation Trail",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-8619": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "San Ysidro Trials Area BLM Recreation Management Area",
+   "official": null,
+   "ours": {
+    "acres": 4439,
+    "dissolved": {
+     "after": 4439,
+     "before": 13317,
+     "copies": 2,
+     "parts": 0,
+     "records": 3,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 13317 -> 4439 acres",
+    "pieces": [
+     [
+      "rst14080",
+      "San Ysidro Trails Area",
+      4439,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/san-ysidro-trials-area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "BLM Recreation Management Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-8620": {
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Ojito Wilderness Area",
+   "official": {
+    "acres": 11000.0,
+    "as": "11,000 acres",
+    "clean": false,
+    "line": "o Wilderness Area | New Mexico Plan Your Visit View Map In Full Screen Ojito Wilderness encompasses more than 11,000 acres of rugged high desert southwest of San Ysidro, New Mexico. Visitors will encounter steep mesas, box canyons,",
+    "read": "2026-11-09",
+    "sent": "Ojito Wilderness encompasses more than 11,000 acres of rugged high desert southwest of San Ysidro, New Mexico.",
+    "url": "https://www.blm.gov/visit/ojito-wilderness-area",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 14906,
+    "manager": "",
+    "pieces": [
+     [
+      "sgakh1729",
+      "Ojito",
+      3887,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/ojito-wilderness-area",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 36,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 11000.0,
+     "as": "11,000 acres",
+     "clean": false,
+     "line": "o Wilderness Area | New Mexico Plan Your Visit View Map In Full Screen Ojito Wilderness encompasses more than 11,000 acres of rugged high desert southwest of San Ysidro, New Mexico. Visitors will encounter steep mesas, box canyons,",
+     "total_like": true,
+     "url": "https://www.blm.gov/visit/ojito-wilderness-area",
+     "why": "total-looking"
+    }
+   ],
+   "t": "Wilderness Area",
+   "ver": 15,
+   "verdict": "off"
+  },
+  "US-8621": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Cabezon Wilderness Area",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.blm.gov/visit/cabezon-wsa",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Wilderness Area",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-9679": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Pecos Canyon State Park",
+   "official": null,
+   "ours": {
+    "acres": 378,
+    "manager": "",
+    "pieces": [
+     [
+      "sgnmb22",
+      "PECOS CANYON",
+      378,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/find-a-park/pecos-canyon-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.emnrd.nm.gov/spd/about-spd/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-9757": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Butterfield Overland National Historic Trail",
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-MO",
+     "US-AR",
+     "US-NM",
+     "US-TX",
+     "US-AZ",
+     "US-OK",
+     "US-CA"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/buov/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/buov/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/buov/learn/historyculture/stories.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/buov/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/buov/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "National Historic Trail",
+   "ver": 15,
+   "verdict": "ours unknown"
   }
  },
  "read": "2026-11-09"

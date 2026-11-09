@@ -46,7 +46,7 @@ Updated 2026-11-09. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-MT | 254 | 245 | 36 | **36** | 28 | 137 | 7 | 6 | 0 | 6 |
 | US-NV | 367 | 194 | 63 | **20** | 21 | 52 | 36 | 8 | 0 | 12 |
 | US-AZ | 123 | 109 | 15 | **4** | 5 | 62 | 23 | 13 | 0 | 7 |
-| US-NM | 113 | 96 | 19 | **9** | 9 | 51 | 7 | 4 | 0 | 6 |
+| US-NM | 123 | 105 | 20 | **10** | 10 | 53 | 11 | 4 | 0 | 8 |
 
 ## US-KY
 
@@ -2989,7 +2989,7 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 
 ## US-NM
 
-**Agree:** 19 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 19 agree (second agency).
+**Agree:** 20 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 20 agree (second agency).
 
 **Size more than 15% off (our outline vs the agency):**
 
@@ -2997,6 +2997,7 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 - US-4515 Gila National Forest: ours 3,270,394 ac vs agency 202,016 acres (= 202,016 ac; 1519% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fs.usda.gov](https://www.fs.usda.gov/gila) · “and remoteness. Wilderness on the Gila National Forest Aldo Leopold Wilderness The Aldo Leopold Wilderness is 202,016-acres and straddles the Black Range on the”
 - US-0910 Capulin Volcano National Monument: ours 791 ac vs agency 15.7 square miles (= 10,048 ac; 92% off) · cause: agency bigger: our outline may miss a tract · [www.nps.gov](https://www.nps.gov/cavo/learn/nature/volcanic-fields.htm) · “Cartmell Map showing the Rio Grande Rift and the Jemez Lineament. NPS A. Buccanero Capulin Volcano blanketed 15.7 square miles with its lava flows, but it was n”
 - US-11838 The Box BLM Recreation Management Area: ours 968 ac vs agency 640 acre (= 640 ac; 51% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.blm.gov](https://www.blm.gov/visit/box-recreation-area) · “r YouTube Facebook Instagram Flickr LinkedIn The Box Recreation Area | New Mexico View Map In Full Screen The 640-acre Box Recreation Area is a highly scenic, r”
+- US-8620 Ojito Wilderness Area: ours 14,906 ac vs agency 11,000 acres (= 11,000 ac; 36% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.blm.gov](https://www.blm.gov/visit/ojito-wilderness-area) · “o Wilderness Area | New Mexico Plan Your Visit View Map In Full Screen Ojito Wilderness encompasses more than 11,000 acres of rugged high desert southwest of Sa”
 - US-12593 Glade Run Recreation Area BLM Recreation Management Area: ours 25,136 ac vs agency 19,000 acres (= 19,000 ac; 32% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.blm.gov](https://www.blm.gov/visit/glade-run) · “Map In Full Screen A great spot for the weekend warrior, the Glade Run Recreation Area (GRRA) is comprised of 19,000 acres of sandy arroyos, slick rock and roll”
 - US-12785 Rio Mora National Wildlife Refuge: ours 3,158 ac vs agency 4,224 acres (= 4,224 ac; 25% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/rio-mora) · “located in the transition zone between the Great Plains and the Southern Rocky Mountains. The refuge contains 4,224 acres of shortgrass prairie, riparian wetlan”
 - US-0970 White Sands National Park: ours 148,226 ac vs agency 275 square miles (= 176,000 ac; 16% off) · cause: agency bigger: our outline may miss a tract · [www.nps.gov](https://www.nps.gov/whsa/index.htm) · “t White Sands. Visitors can experience sunset every day of the year. NPS Photo The dunes at White Sands cover 275 square miles of the Tularosa Basin. NPS Photo ”
@@ -3014,6 +3015,7 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 - US-2705 Mesilla Valley Bosque State Park: ours 590 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-4553 Rio Grande del Norte National Monument: ours 309,331 ac · cause: the agency figure may cover several states; our outline may be this state's share only · [www.blm.gov](https://www.blm.gov/visit/rgdnnm)
 - US-7479 Kiowa National Grassland: ours 137,291 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-8227 Jemez National Recreation Area: ours 57,753 ac · cause: no total-looking sentence: numbers found were parts or other units
 
 **Handover / closure hints (a person decides; nothing applied):**
 
