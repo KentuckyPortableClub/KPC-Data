@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-10T00:07Z",
+ "checked": "2026-11-10T00:51Z",
  "switched_on": false,
  "results": [
   {
@@ -799,7 +799,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dA/f54f39eab4/monroe_camp_fairfax_sra.pdf?language_"
+    "F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dA/4ed90eb9f3/shades_trail.pdf?language_id=1"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -838,7 +838,7 @@
    "why": [
     "F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
     "F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
-    "F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/kaww/learn/management/lawsandpolicies.htm"
+    "F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/roca/learn/management/lawsandpolicies.htm"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -872,7 +872,7 @@
    "path": "data/docs/US-MS.json",
    "kind": "docs",
    "why": [
-    "F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/tupe/learn/management/lawsandpolicies.htm"
+    "F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/brcr/learn/management/lawsandpolicies.htm"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -3275,7 +3275,9 @@
    "path": "data/world-key/AU.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -3430,7 +3432,7 @@
    "kind": "key",
    "why": [],
    "notes": [
-    "F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
    ],
    "verdict": "PASS"
   },
@@ -3558,9 +3560,11 @@
   {
    "path": "data/world-key/HU.json",
    "kind": "key",
-   "why": [],
+   "why": [
+    "F-O2 8 of 23 outlines carry a layer name that shares no word with the park (35%; live 8/27): outlines swapped to other parks?"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/world-key/ID.json",

@@ -825,9 +825,9 @@
     "with_facts": 52,
     "with_sites": 8
    },
-   "left": 1,
-   "status": "partial",
-   "updated": "2026-11-04"
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-10"
   },
   "US-PA": {
    "camps": 161,
@@ -1499,7 +1499,7 @@
     "src": null,
     "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-11-04"
+   "read": "2026-11-10"
   },
   "US-PA": {
    "cell": {
@@ -2575,12 +2575,12 @@
  },
  "last": {
   "areas": [
-   "US-CA"
+   "US-OR"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 767,
+   "dropped_queued": 412,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2600,11 +2600,11 @@
   },
   "ridb_key": false,
   "stat": {
-   "camps": 768,
+   "camps": 413,
    "elevations": 0,
    "errors": 0,
    "needs_browser": 0,
-   "needs_key": 768,
+   "needs_key": 413,
    "no_page": 0,
    "not_official": 0,
    "ok": 0,
@@ -2612,9 +2612,9 @@
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 442
+   "skipped_fresh": 91
   },
-  "when": "2026-11-09"
+  "when": "2026-11-10"
  },
  "test": {
   "result": "PASS",
