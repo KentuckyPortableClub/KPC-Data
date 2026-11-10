@@ -26,7 +26,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   run:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # Nov 9: Playwright has no build for ubuntu 26.04 (Guide PDFs run 42637107981)
     timeout-minutes: 75   # Nov 1 chat 10: was 60; runs of 16:19 + 17:17 UTC hit it and lost all their saves
     env:
       KPC_CONTACT: 'https://github.com/KentuckyPortableClub (Kentucky Portable Club ham radio club)'

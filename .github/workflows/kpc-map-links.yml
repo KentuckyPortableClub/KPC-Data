@@ -21,7 +21,7 @@ concurrency:
 # PR2 (Nov 2): a push to tools-out that loses a race with another bot pulls --rebase and tries again (5 tries; no force).
 jobs:
   run:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # Nov 9: Playwright has no build for ubuntu 26.04 (Guide PDFs run 42637107981)
     timeout-minutes: 60
     env:
       KPC_CONTACT: 'https://github.com/KentuckyPortableClub (Kentucky Portable Club ham radio club)'

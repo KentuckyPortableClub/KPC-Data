@@ -854,6 +854,8 @@ def mode_divert(paths):
     """Brandon Oct 29 7:55 PM ('fire them up if you trust them to run and put stuff in waiting room'): a bot's CHANGED files of a kind
     the waiting room checks are moved into data/waiting/in/ and the live file is put back as it was (git HEAD), so nothing new goes
     live; then every waiting file is judged (verdicts written, NOTHING promoted). State / review files stay with the bot."""
+    if not paths:   # Nov 9 PM (run 42666223956): 0 files = nothing to divert, a clean no-op (and never 'every changed file in the repo')
+        print('::notice title=Waiting room (hold)::0 files given: nothing to divert'); return
     out = subprocess.run(['git', '-C', str(DATA), 'status', '--porcelain', '--', *paths], capture_output=True, text=True).stdout.splitlines()
     moved = []
     for ln in out:
@@ -1015,10 +1017,46 @@ def mode_check(promote):
     print(f'::notice title=Waiting room::{len(out)} files: {sum(r["verdict"] != "HOLD" for r in out)} pass, {len(held)} held' + ('' if on else ' (NOT switched on: nothing promoted)'))
 
 
+def keep_newer_overrides(live_d, new_d):
+    """Nov 9 2026 weekly batch (lost Nov 8 edits): an overrides.json release must not wipe hand edits made on this copy that the
+    incoming copy (built from KPC-Links) never saw. Release f2a68a32 (Nov 8, 2:06 PM CST) dropped 14 WSR corridor joins this way.
+    Per park: missing from the incoming copy -> this copy's entry is carried; this copy's 'when' is NEWER -> its join/no/fp/nofp
+    are merged in (the incoming copy wins on a clash; an id the incoming copy has on the opposite list is not brought back).
+    A park the incoming copy changed later (its 'when' is the same or newer) is taken as is, so a real removal still lands.
+    Returns (merged, [refs carried]); never blocks, only adds back."""
+    lp = (live_d or {}).get('parks') or {}; npk = (new_d or {}).get('parks')
+    if not isinstance(npk, dict): return new_d, []
+    kept = []
+    for ref, le in lp.items():
+        if not isinstance(le, dict): continue
+        ne = npk.get(ref)
+        if ne is None: npk[ref] = le; kept.append(ref); continue
+        if not isinstance(ne, dict) or str(le.get('when') or '') <= str(ne.get('when') or ''): continue
+        moved = False
+        for key, opp in (('join', 'no'), ('no', 'join')):
+            for i in le.get(key) or []:
+                if i in (ne.get(key) or []) or i in (ne.get(opp) or []): continue
+                ne.setdefault(key, []).append(i); moved = True
+                fk = 'fp' if key == 'join' else 'nofp'
+                if i in (le.get(fk) or {}): ne.setdefault(fk, {}).setdefault(i, le[fk][i])
+        if moved: ne['when'] = le['when']; ne['why'] = ((ne.get('why') or '') + ' | kept from the KPC-Data copy: ' + (le.get('why') or ''))[:2000]; kept.append(ref)
+    return new_d, kept
+
+
 def promote_file(rel, content=None, raw=None):
     """Fable c: the file goes live EXACTLY as the bot wrote it (its own bytes: indent, gzip), so git sees only real changes. Only a
     closures file with rows taken out is rewritten (indented, like the bot writes it)."""
     live = DATA / rel
+    if str(rel).endswith('overrides.json') and live.exists():   # Nov 9: never lose a newer hand edit (see keep_newer_overrides)
+        try:
+            new_d = content if content is not None else json.load(open(raw, encoding='utf-8'))
+            merged, kept = keep_newer_overrides(json.load(open(live, encoding='utf-8')), new_d)
+            if kept:
+                print(f'::warning title=Overrides kept::{rel}: {len(kept)} park(s) had newer edits here than the incoming copy and were '
+                      f'kept: {", ".join(kept[:40])}{" ..." if len(kept) > 40 else ""}. Copy them into KPC-Links data/us-key/overrides.json.')
+                content, raw = merged, None
+        except Exception as e:  # noqa: BLE001  (a broken file is promoted as before; the check is reported, never blocks)
+            print(f'::warning title=Overrides kept::check skipped for {rel}: {e}')
     if live.exists(): keep_generation(rel)
     live.parent.mkdir(parents=True, exist_ok=True)
     _tw = DATA / (str(rel)[:-3] if str(rel).endswith('.gz') else str(rel) + '.gz')   # Nov 1 (storage, 1 MB gzip): the other name goes, so x.json + x.json.gz are never both live

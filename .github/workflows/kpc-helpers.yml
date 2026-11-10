@@ -180,7 +180,7 @@ jobs:
           PY
   sitecheck:
     if: ${{ ((github.event_name == 'schedule' || inputs.as_schedule) && (github.event.schedule || inputs.as_schedule) == '37 5 * * 0') || contains(inputs.jobs, 'sitecheck') }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # Nov 9: Playwright has no build for ubuntu 26.04 (Guide PDFs run 42637107981)
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v5

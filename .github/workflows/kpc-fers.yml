@@ -7,7 +7,19 @@ name: KPC 2-fer bot (hidden)
 # Waiting-room divert for this workflow is a follow-up (2-fers not public yet). Three passes, run
 # one after another by hand (1 = saved outlines, 2 = fresh downloads, 3 = finest shapes + pins). Two jobs per pass:
 # North America (US + Canada) and the rest of the world. Never fails (a failed run emails Brandon). Chat 2 starts it.
+# Nov 9 PM (run 42649544758 never finished; Brandon t905u 'get a good run on all that', regions are fine; t906u into the weekly
+# batch): AREAS. region = one or more area names from .github/fers-areas.json (southeast, canadaeast, ...) or 'areas' for all of
+# them: one job per area, each with its own time budget, 3 at a time. An area out of time keeps its previous files; run it again
+# by name (python3 .github/scripts/kpc_fers_areas.py status prints the line). A time-out or a crash now shows RED, not green.
+# Nov 9 evening: every changed live 2-fer file goes through the waiting-room divert (held in data/waiting/in/, never live from here).
+# Nov 9 evening (Brandon t909u-t918u, 4:33-4:45 PM CST): ONE monthly cron (his t911u/t912u 'once a month'): pass all on every area.
+# Saved outlines first (the key's saved copy, then this bot's own saved-live copy on KPC-Data's fers-cache release; a live read is
+# saved for next time and re-read about once a month, a quarter of them per run). Only the pairs whose parks changed (outline,
+# record ids, POTA entry, or a declared rule change in KPC-Links .github/fers-rule-scope.json) are tested again. Each run also
+# rebuilds the due areas in full, round-robin (one full rebuild per area per full_cycle_days = 90, Brandon confirmed t918u).
 on:
+  schedule:
+    - cron: '23 8 5 * *'   # monthly, the 5th, 2:23 AM CST (after the monthly US key on the 1st and Canada key on the 2nd)
   workflow_dispatch:
     inputs:
       pass:
@@ -20,21 +32,47 @@ on:
         description: 'Only these (e.g. "US-OH CA-ON W-GB"; blank = all)'
         default: ''
       region:
-        description: 'both, na (US + Canada), world, or ky (Kentucky only, from its official files)'
+        description: 'Area name(s) from .github/fers-areas.json (e.g. "southeast canadaeast"), areas (all of them, one job each), or as before: both, na (US + Canada), world, ky'
         default: 'both'
+      full:
+        description: 'Full rebuild: blank = the due areas only (round-robin), all = every job (emergency), none = no full area'
+        default: ''
 permissions:
   contents: write
 concurrency:
   group: kpc-fers
   cancel-in-progress: false
 jobs:
+  plan:
+    # Nov 9 PM: which jobs to run (one per area, or the old na / world / ky / both)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      list: ${{ steps.p.outputs.list }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          sparse-checkout: |
+            .github
+            data/fers/full-rebuild-*.txt
+          sparse-checkout-cone-mode: false
+      - id: p
+        env:
+          REGION: ${{ inputs.region || 'areas' }}
+          STATES: ${{ inputs.states }}
+          FULL: ${{ inputs.full }}
+        run: python3 .github/scripts/kpc_fers_areas.py plan >> "$GITHUB_OUTPUT"
   fers:
+    needs: plan
+    if: ${{ needs.plan.outputs.list != '[]' }}
+    name: fers (${{ matrix.r.name }})
     runs-on: ubuntu-latest
     timeout-minutes: 345
     strategy:
       fail-fast: false
+      max-parallel: 3   # never more than 3 jobs at the agency servers (Oct 27 rule)
       matrix:
-        region: ${{ fromJSON(inputs.region == 'na' && '["na"]' || inputs.region == 'world' && '["world"]' || inputs.region == 'ky' && '["ky"]' || '["na","world"]') }}
+        r: ${{ fromJSON(needs.plan.outputs.list) }}
     steps:
       - name: Note the job start (Nov 9 time budget)
         run: echo "KPC_JOB_T0=$(date +%s)" >> "$GITHUB_ENV"
@@ -54,32 +92,39 @@ jobs:
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
+          KPC_ARCHIVE_TOKEN: ${{ secrets.KPC_ARCHIVE_TOKEN }}
         run: |
           pip install -q numpy opencv-python-headless || { kpc_rc=$?; echo "::warning title=install::an install step failed (exit $kpc_rc); the next steps may not work"; echo "install - an install step failed (exit $kpc_rc); the next steps may not work" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           mkdir -p cache/us cache/ca cache/world data/fers
           rm -rf data/fers && cp -r kpcdata/data/fers data/fers 2>/dev/null || mkdir -p data/fers
           for f in data/fers/*.json.gz; do [ -f "$f" ] && gunzip -f "$f"; done
-          if [ "${{ matrix.region }}" = world ]; then
+          if [ "${{ matrix.r.region }}" = world ]; then
             gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'W-*.json.gz' -D cache/world --clobber || { kpc_rc=$?; echo "::warning title=download::a download failed (exit $kpc_rc); results may use old or missing files"; echo "download - a download failed (exit $kpc_rc); results may use old or missing files" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           else
             gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -D cache/us --clobber || { kpc_rc=$?; echo "::warning title=download::a download failed (exit $kpc_rc); results may use old or missing files"; echo "download - a download failed (exit $kpc_rc); results may use old or missing files" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
             gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'CA-ALL.json.gz' -D cache/ca --clobber || { kpc_rc=$?; echo "::warning title=download::a download failed (exit $kpc_rc); results may use old or missing files"; echo "download - a download failed (exit $kpc_rc); results may use old or missing files" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           fi
+          # Nov 9 evening: this bot's own saved outlines for the area (read live once, saved on this repo's fers-cache release)
+          mkdir -p cache/fers
+          # Nov 9 evening (4:52 PM): KPC-Archive is the store; the fers-cache release is only the fallback when KPC_ARCHIVE_TOKEN is missing
+          bash .github/scripts/kpc_archive.sh get fers-saved-live cache/fers "saved-live-${{ matrix.r.tag || matrix.r.name }}.json.gz" \
+            || gh release download fers-cache -R "$GITHUB_REPOSITORY" -p "saved-live-${{ matrix.r.tag || matrix.r.name }}.json.gz" -D cache/fers --clobber 2>/dev/null \
+            || echo "::notice title=2-fer saved outlines::no saved-live copy for ${{ matrix.r.name }} yet (first run reads live and saves)"
       - name: Refuse a stale or incomplete key for this region (Nov 8)
         # Root cause: run 42451234481 measured W-AU on world W-42410527148 while a newer world build was coming; bad output followed.
         id: key_gate
         env:
-          REGION: ${{ matrix.region }}
-          STATES: ${{ inputs.states }}
+          REGION: ${{ matrix.r.region }}
+          STATES: ${{ matrix.r.states }}
         run: |
           python3 kpcdata/.github/scripts/kpc_fers_key_gate.py || { kpc_rc=$?; echo "::error title=kpc_fers_key_gate.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_key_gate.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit 1; }
       - name: POTA activation history (pairs worked the same day, counts only)
-        if: ${{ matrix.region == 'ky' || (matrix.region == 'na' && inputs.states != '') }}
+        if: ${{ matrix.r.region == 'ky' || (matrix.r.region == 'na' && matrix.r.states != '') }}
         id: kept_green_2
         continue-on-error: true
         timeout-minutes: 45
         env:
-          STATES: ${{ matrix.region == 'ky' && 'US-KY' || inputs.states }}
+          STATES: ${{ matrix.r.region == 'ky' && 'US-KY' || matrix.r.states }}
           PAIR_MINUTES: '40'
         run: python3 .github/scripts/kpc_pota_pairs.py || { kpc_rc=$?; echo "::error title=kpc_pota_pairs.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_pota_pairs.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Look for shared ground
@@ -87,11 +132,19 @@ jobs:
         continue-on-error: true
         timeout-minutes: 335
         env:
-          PASS: ${{ inputs.pass }}
-          MINUTES: ${{ inputs.minutes }}
-          STATES: ${{ inputs.states }}
-          REGION: ${{ matrix.region }}
+          PASS: ${{ inputs.pass || 'all' }}
+          MINUTES: ${{ inputs.minutes || '320' }}
+          STATES: ${{ matrix.r.states }}
+          REGION: ${{ matrix.r.region }}
+          RUN_TAG: ${{ matrix.r.tag }}
+          KPC_FERS_FULL: ${{ matrix.r.full }}         # Nov 9 evening: '1' = this area's round-robin full rebuild (every pair again)
+          KPC_FERS_LIVE_DIR: cache/fers
+          KPC_FERS_PARK_S: '600'   # Nov 9 PM: one park / pair / map request may take 10 minutes at most (skipped + listed after)
         run: |
+          # Nov 9 PM (Quality NO on #57): every handler below ENDS the step with the script's own exit code (1 = crash, 3 = hard stop),
+          # so this step's outcome is 'failure' and Save (if: steps.kept_green_3.outcome == 'success') does not run; Report then goes red.
+          # Nov 9 PM: the bot stops by itself 5 minutes before this step's limit (exit 3 = red), so it never hits the 335-minute cut
+          export KPC_HARD_END=$(( ${KPC_JOB_T0:-$(date +%s)} + 335 * 60 - 300 ))
           # Oct 27 (SAVE USAGE): pass 'all' = passes 1, 2 and 3 back to back in ONE run (no waiting between dispatches)
           # Oct 27 (Fable review #1, HQ GO): the passes SHARE the time: pass 1 at most a fifth, pass 2 half of what is left, pass 3
           # the rest; a pass out of time saves 'waiting for pass N' and the next run carries on (never a red run)
@@ -107,23 +160,23 @@ jobs:
               if [ $p = 1 ]; then CAP=$(( TOTAL * 2 / 5 )); elif [ $p = 2 ]; then CAP=$(( LEFT / 2 )); elif [ $p = 3 ]; then CAP=$(( LEFT * 4 / 5 )); else CAP=$LEFT; fi
               [ $CAP -gt $LEFT ] && CAP=$LEFT
               [ $CAP -lt 5 ] && { echo "::notice title=2-fer bot::no time left for pass $p (next run carries on)"; break; }
-              PASS=$p MINUTES=$CAP python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+              PASS=$p MINUTES=$CAP python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }
             done
-          else python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; fi
+          else python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }; fi
           # Oct 27 (HQ): Kentucky's known river + trail pairs must come out before any big run
-          if [ "$REGION" = ky ]; then python3 .github/scripts/kpc_fers_known.py || { kpc_rc=$?; echo "::error title=kpc_fers_known.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_known.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; fi
+          if [ "$REGION" = ky ]; then python3 .github/scripts/kpc_fers_known.py || { kpc_rc=$?; echo "::error title=kpc_fers_known.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_known.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }; fi
           # Oct 27 (HQ 3:46 PM): MISSING CHECK = every pair we have outside reason to expect: FOUND / DROPPED / NEVER LOOKED AT
-          if [ "$REGION" = ky ]; then AREA=ky python3 .github/scripts/kpc_fers_expected.py || { kpc_rc=$?; echo "::error title=kpc_fers_expected.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_expected.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
-          elif [ -n "$STATES" ] && [ "$REGION" = na ]; then python3 .github/scripts/kpc_fers_expected.py || { kpc_rc=$?; echo "::error title=kpc_fers_expected.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_expected.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; fi
+          if [ "$REGION" = ky ]; then AREA=ky python3 .github/scripts/kpc_fers_expected.py || { kpc_rc=$?; echo "::error title=kpc_fers_expected.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_expected.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }
+          elif [ -n "$STATES" ] && [ "$REGION" = na ]; then python3 .github/scripts/kpc_fers_expected.py || { kpc_rc=$?; echo "::error title=kpc_fers_expected.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_expected.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }; fi
       - name: Observations log (new possible overlaps)
-        if: ${{ matrix.region != 'world' }}
+        if: ${{ matrix.r.region != 'world' }}
         id: kept_green_4
         continue-on-error: true
         env:
-          OBS_RUN: 2-fer bot pass ${{ inputs.pass }} (${{ matrix.region }})
-          OBS_FILE: kpcdata/data/observations/fers-${{ matrix.region }}.json
+          OBS_RUN: 2-fer bot pass ${{ inputs.pass || 'all' }} (${{ matrix.r.name }})
+          OBS_FILE: kpcdata/data/observations/fers-${{ matrix.r.name }}.json
           OBS_DATA_DIR: kpcdata
-        run: mkdir -p kpcdata/data/observations; python3 .github/scripts/kpc_map_observations.py || { kpc_rc=$?; echo "::error title=kpc_map_observations.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_map_observations.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+        run: mkdir -p kpcdata/data/observations; python3 .github/scripts/kpc_map_observations.py || { kpc_rc=$?; echo "::error title=kpc_map_observations.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_map_observations.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }
       - name: Save (once, at the end; never on cancel or failed Look)
         # Nov 8: cancelled run 42543101862 still pushed W-AU because Save was if: always(). Require real success + Look outcome.
         if: ${{ success() && steps.kept_green_3.outcome == 'success' }}
@@ -134,16 +187,56 @@ jobs:
           mkdir -p kpcdata/data/fers
           # only the files THIS job changed (the two jobs share the folder)
           # Fable review A6: only THIS run's files go back (own states + the run's own report/looked/expected/missing files); all states only when STATES is blank
-          if [ -n "${{ inputs.states }}" ] || [ "${{ matrix.region }}" = ky ]; then
-            for st in ${{ inputs.states }} ${{ matrix.region == 'ky' && 'US-KY' || '' }}; do for f in data/fers/$st.json data/fers/$st.json.gz data/fers/pota-pairs-$st.json; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/ && case "$f" in *.json.gz) rm -f "kpcdata/${f%.gz}";; data/fers/US-*|data/fers/CA-*|data/fers/W-*) rm -f "kpcdata/$f.gz";; esac; done; done   # Nov 1: the new copy replaces the other name (.json vs .json.gz), so a stale twin never wins
+          if [ -n "${{ matrix.r.states }}" ] || [ "${{ matrix.r.region }}" = ky ]; then
+            for st in ${{ matrix.r.states }} ${{ matrix.r.region == 'ky' && 'US-KY' || '' }}; do for f in data/fers/$st.json data/fers/$st.json.gz data/fers/pota-pairs-$st.json; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/ && case "$f" in *.json.gz) rm -f "kpcdata/${f%.gz}";; data/fers/US-*|data/fers/CA-*|data/fers/W-*) rm -f "kpcdata/$f.gz";; esac; done; done   # Nov 1: the new copy replaces the other name (.json vs .json.gz), so a stale twin never wins
+            TAG="${{ matrix.r.tag }}"; [ -n "$TAG" ] && for f in data/fers/*-"$TAG".json; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done   # Nov 9 PM: the area's own report / looked / missing files
             for f in data/fers/*-ky.json data/fers/known-answers.json data/fers/ky-outline-drift.json data/fers/report.json data/fers/same-outline.json data/fers/missing-na.json data/fers/looked-*.json data/fers/expected-*.json; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
           else
             for f in data/fers/*; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
           fi
+          # Nov 9 evening: the round-robin full rebuild is recorded only after it finished and saved
+          if [ "${{ matrix.r.full }}" = 1 ] && [ -n "${{ matrix.r.tag }}" ]; then
+            date +%F > "kpcdata/data/fers/full-rebuild-${{ matrix.r.tag }}.txt"   # one small file per area (3 jobs push at once: no clashes)
+          fi
           cd kpcdata
           for f in data/fers/*.json.gz; do [ -f "$f" ] && rm -f "${f%.gz}"; done
           cd ..
-          STRICT=1 bash .github/scripts/kpc_push_data.sh kpcdata "2-fer bot pass ${{ inputs.pass }} (${{ matrix.region }}, hidden data)" data || exit 1   # Nov 8: no continue-on-error; never if: always()
+          # Nov 9 evening (KZ4CP 5:12 PM CST; Quality Nov 8 on Data #55): 2-fers are hidden beta, so a changed live 2-fer file never goes
+          # live from here: the waiting-room divert (the same one kpc-fers-line.yml uses) moves it to data/waiting/in/ and puts the live file
+          # back. The pair answers (reuse-*), reports and the full-rebuild dates are working files and stay. If the divert fails, nothing is pushed.
+          (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py divert data/fers) || { kpc_rc=$?; echo "::error title=kpc_waiting_room.py::divert failed (exit $kpc_rc): nothing pushed, no live 2-fer file written"; echo "kpc_waiting_room.py - divert failed (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit 1; }
+          STRICT=1 bash .github/scripts/kpc_push_data.sh kpcdata "2-fer bot pass ${{ inputs.pass || 'all' }} (${{ matrix.r.name }}, hidden data)" data || exit 1   # Nov 8: no continue-on-error; never if: always()
+      - name: The run broke - save only what finished (Nov 9 evening, Brandon t926u)
+        # a crash (1) or time-out (3) in Look: keep the pair answers that finished (reuse files: the next run skips those pairs) and the
+        # live file of a state ONLY if it finished every pass today; a partly done state keeps its previous file. The job stays red (Report).
+        if: ${{ !cancelled() && steps.kept_green_3.outcome == 'failure' && matrix.r.region != 'world' }}
+        env:
+          STATES: ${{ matrix.r.states }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p kpcdata/data/fers; n=0
+          for f in data/fers/reuse-p*-"${{ matrix.r.tag || matrix.r.region }}".json; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/ && n=$((n + 1)); done
+          if [ "${{ inputs.pass || 'all' }}" = all ] && [ -n "$STATES" ]; then
+            for f in $(python3 kpcdata/.github/scripts/kpc_fers_areas.py finished); do ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/ && n=$((n + 1)) && echo "::notice title=2-fer bot::$f finished every pass before the break: saved"; done
+          fi
+          echo "::warning title=2-fer bot::the run broke; saved $n finished file(s) (pair answers + fully finished states only). Partly done states keep their previous files."
+          [ "$n" -gt 0 ] || exit 0
+          # Nov 9 evening (KZ4CP 5:12 PM CST; Quality Nov 8 on Data #55): 2-fers are hidden beta, so a changed live 2-fer file never goes
+          # live from here: the waiting-room divert (the same one kpc-fers-line.yml uses) moves it to data/waiting/in/ and puts the live file
+          # back. The pair answers (reuse-*), reports and the full-rebuild dates are working files and stay. If the divert fails, nothing is pushed.
+          (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py divert data/fers) || { kpc_rc=$?; echo "::error title=kpc_waiting_room.py::divert failed (exit $kpc_rc): nothing pushed, no live 2-fer file written"; echo "kpc_waiting_room.py - divert failed (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit 1; }
+          STRICT=1 bash .github/scripts/kpc_push_data.sh kpcdata "2-fer bot: finished parts of a broken run (${{ matrix.r.name }}, hidden data)" data || exit 1
+      - name: Keep the outlines read live for next time (KPC-Archive; fers-cache release only as the fallback, Nov 9 evening)
+        if: ${{ !cancelled() && (steps.kept_green_3.outcome == 'success' || steps.kept_green_3.outcome == 'failure') }}   # t926u: also after a break (only finished reads are in the file)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          KPC_ARCHIVE_TOKEN: ${{ secrets.KPC_ARCHIVE_TOKEN }}
+        run: |
+          ls cache/fers/saved-live-*.json.gz >/dev/null 2>&1 || { echo "nothing read live"; exit 0; }
+          if bash .github/scripts/kpc_archive.sh put fers-saved-live "2-fer saved outlines (${{ matrix.r.name }}, run $GITHUB_RUN_ID)" cache/fers/saved-live-*.json.gz; then exit 0; fi
+          echo "::warning title=KPC-Archive::2-fer saved outlines not saved to KPC-Archive (see above); saved to the fers-cache release instead"
+          gh release view fers-cache -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || gh release create fers-cache -R "$GITHUB_REPOSITORY" --prerelease --title '2-fer saved outlines' --notes "Outlines the 2-fer bot had to read live (no saved copy in KPC-Links boundary-cache), one file per area; re-read about once a month."
+          gh release upload fers-cache cache/fers/saved-live-*.json.gz -R "$GITHUB_REPOSITORY" --clobber
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:
@@ -175,5 +268,10 @@ jobs:
               print(f"::warning title=Hidden failures::{len(errs)} error(s) and {len(said) - len(errs)} warning(s) caught inside steps, {len(bad)} step(s) failed but kept green (job {os.environ.get('GITHUB_JOB', '?')})")
           if errs and os.environ.get('KPC_FAIL_SAFE') == '1':
               print(f'::error title=Fail where safe::{len(errs)} error(s) were caught inside steps, so this job is red (it starts nothing after it). The repo variable KPC_HIDDEN_RED=off turns this off.')
+              sys.exit(1)
+          # Nov 9 PM (run 42649544758 showed a green check after 'Look for shared ground' timed out at 335 minutes): a Look step that
+          # failed or timed out makes the job RED, always (nothing was saved; the areas keep their previous files)
+          if (s.get('kept_green_3') or {}).get('outcome') in ('failure', 'cancelled'):
+              print("::error title=2-fer bot::'Look for shared ground' did not finish (time-out or error): nothing was saved, the areas keep their previous files. Run this area again.")
               sys.exit(1)
           PY
