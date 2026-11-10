@@ -440,6 +440,26 @@
    "status": "done",
    "updated": "2026-11-09"
   },
+  "US-MI": {
+   "checked": 388,
+   "counts": {
+    "agree": 8,
+    "handover_hints": 5,
+    "no_page": 1,
+    "no_size": 322,
+    "off": 6,
+    "ours_unknown": 7,
+    "parks": 388,
+    "retired": 0,
+    "unsure": 11,
+    "weak": 10,
+    "with_outline": 355
+   },
+   "left": 0,
+   "parks": 388,
+   "status": "done",
+   "updated": "2026-11-10"
+  },
   "US-MN": {
    "checked": 319,
    "counts": {
@@ -968,35 +988,61 @@
   "outdoornebraska.gov": 1794310616.347082,
   "www.arcgis.com": 1794286229.087196,
   "www.fhwa.dot.gov": 1794323337.1319654,
-  "www.nevadawilderness.org": 1794330712.037567
+  "www.nevadawilderness.org": 1794330712.037567,
+  "www2.dnr.state.mi.us": 1794371193.383787
  },
  "last": {
   "areas": [
-   "US-HI"
+   "US-MI"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 3,
+   "browser": 2,
+   "dropped_queued": 19,
    "errors": 0,
-   "for_person_urls": [],
-   "requests": 191,
-   "rested": 0,
-   "robots": 0,
-   "strikes": 0
+   "for_person": 3,
+   "for_person_urls": [
+    [
+     "https://www.michigan.gov/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.michigan.gov this run"
+    ],
+    [
+     "https://www2.dnr.state.mi.us/parksandtrails/Details.aspx?id=433&type=SPRK",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www2.dnr.state.mi.us/parksandtrails/details.aspx?id=434&type=SPRK",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.michigan.org/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.michigan.org this run"
+    ],
+    [
+     "http://www.michigandnr.com/parksandtrails/Details.aspx?id=437&type=SPRK",
+     "HTTP 403 twice"
+    ]
+   ],
+   "requests": 253,
+   "rested": 231,
+   "retry403": 3,
+   "robots": 2,
+   "robots_unreadable": 2,
+   "strikes": 6
   },
   "stat": {
    "errors": 0,
    "handover_hints": 5,
-   "no_size": 50,
-   "ours_unknown": 3,
-   "pages_read": 154,
-   "parks": 102,
+   "no_size": 323,
+   "ours_unknown": 7,
+   "pages_read": 161,
+   "parks": 388,
    "retired": 0,
-   "size_agree": 14,
-   "size_off": 7,
-   "size_unsure": 14,
+   "size_agree": 8,
+   "size_off": 6,
+   "size_unsure": 11,
    "skipped_fresh": 0,
-   "with_outline": 88
+   "with_outline": 355
   },
   "when": "2026-11-10"
  },

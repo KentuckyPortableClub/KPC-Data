@@ -52,6 +52,7 @@ Updated 2026-11-10. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-WA | 536 | 492 | 31 | **157** | 108 | 166 | 29 | 20 | 0 | 17 |
 | US-AK | 179 | 136 | 18 | **6** | 3 | 99 | 10 | 14 | 0 | 6 |
 | US-HI | 102 | 88 | 14 | **7** | 14 | 50 | 3 | 5 | 0 | 4 |
+| US-MI | 388 | 355 | 8 | **6** | 11 | 322 | 7 | 5 | 0 | 10 |
 
 ## US-KY
 
@@ -3547,6 +3548,43 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 - US-0124 James Campbell National Wildlife Refuge · managed by: “ut Us View Our Tours What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of th” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/james_campbell/)
 - US-0126 Kealia Pond National Wildlife Refuge · managed by: “Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/kealia_pond/)
 - US-0129 Pearl Harbor National Wildlife Refuge · managed by: “Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/pearl_harbor/)
+
+## US-MI
+
+**Agree:** 8 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 8 agree (second agency).
+
+**Size more than 15% off (our outline vs the agency):**
+
+- US-0349 Kirtlands Warbler Wildlife Management Area: ours 4,281 ac vs agency 80 acres (= 80 ac; 5251% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/kirtlands-warbler-wildlife-management-area/visit-us) · “t, mainly Michigan, and winters in the Bahamas. It needs young jack pine forests (4 to 25 years old) at least 80 acres in size with a number of small grassy ope”
+- US-0348 Huron National Wildlife Refuge: ours 90 ac vs agency 22 acres (= 22 ac; 309% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/huron/about-us) · “Refuge. The refuge’s main purpose was to conserve migratory birds. It also moved the primary jurisdiction of 22 acres of land and secondary jurisdiction of the ”
+- US-0347 Harbor Island National Wildlife Refuge: ours 214 ac vs agency 720 acres (= 720 ac; 70% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/harbor-island/about-us) · “rchased Standerson Island, a 25-acre landmass located northwest of Harbor Island. This expanded the refuge to 720-acres. Refuge habitats include a marsh-lined h”
+- US-10716 McCormick Wilderness Area: ours 17,184 ac vs agency 50,000 acres (= 50,000 ac; 66% off) · cause: agency bigger: our outline may miss a tract · [www.fs.usda.gov](https://www.fs.usda.gov/r09/ottawa/about-area) · “485 miles of groomed snowmobile trails and numerous cross-country ski trails. Wilderness The Ottawa has over 50,000 acres in three wildernesses - Sturgeon Gorge”
+- US-0350 Michigan Wetland Management District: ours 229 ac vs agency 160 acres (= 160 ac; 43% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [www.fws.gov](https://www.fws.gov/refuge/michigan-wetland-management-district/visit-us) · “bout waterfowl production area is open for public use throughout the year. The areas range in size from 77 to 160 acres. We encourage you to take an hour or two”
+- US-10519 Jordan River National Fish Hatchery: ours 54 ac vs agency 74 acres (= 74 ac; 27% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/fish-hatchery/jordan-river) · “Traverse Band of Ottawa and Chippewa Indians. Jordan River National Fish Hatchery is also open for hunting on 74 acres of the hatchery consistent with state of ”
+
+**Unsure (no clean total found; the nearest number is only a guess):**
+
+- US-0346 Detroit River International Wildlife Refuge: ours 1,396 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 780 acres, no total words near it) · [www.fws.gov](https://www.fws.gov/refuge/detroit-river/about-us)
+- US-0767 Sleeping Bear Dunes National Lakeshore: ours 56,717 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 71,318 acres, no total words near it) · [www.nps.gov](https://www.nps.gov/slbe/learn/management/statistics.htm)
+- US-10087 Windsor Township State Game Land: ours 275 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-10088 Headquarters Lake Flooding State Wildlife Area: ours 500 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-10718 Sturgeon River Gorge Wilderness Area: ours 16,725 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-4263 Piers Gorge Unit of Menominee River State Recreation Area: ours 5,794 ac · cause: whole park compared (POTA lists it in 2 states: {'US-MI': 596, 'US-WI': 5198})
+- US-4264 Quiver Falls Unit of Menominee River State Recreation Area: ours 1 ac · cause: whole park compared (POTA lists it in 1 states: {'US-MI': 1})
+- US-6623 Beaver Islands Wildlife Management Area: ours 43,438 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-6641 Cass City State Game Land: ours 793 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-6648 Cornish State Game Land: ours 2,025 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-6651 Crow Island State Game Land: ours 4,807 ac · cause: no total-looking sentence: numbers found were parts or other units
+
+**Handover / closure hints (a person decides; nothing applied):**
+
+- US-0346 Detroit River International Wildlife Refuge · transfer: “Unit added as a cooperatively managed unit to the refuge (December 20). In 2017, it was officially donated to the refuge by Consumers Energy. 2008: Plum Creek Bay Unit added to refuge (July 24) Gibral” · owner now: Consumers Energy · [www.fws.gov](https://www.fws.gov/refuge/detroit-river/about-us)
+- US-0346 Detroit River International Wildlife Refuge · transfer: “ke Erie. Navigable waters are open to the public. Taylor Unit The Clive and Clarice Taylor Unit was donated to the refuge in 2016 by the late Clive Taylor and his wife, Clarice. The 43-acre property i” · owner now: Consumers Energy · [www.fws.gov](https://www.fws.gov/refuge/detroit-river/about-us)
+- US-0349 Kirtlands Warbler Wildlife Management Area · managed by: “d on their websites. What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife management areas are part of the r” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/kirtlands_warbler/)
+- US-13170 Bay De Noc/Grand Island National Recreation Trail · transfer: “cutive order dated February 9, 1962 all lands within the Marquette National Forest (East Unit) were transferred to the Hiawatha National Forest (West Unit), basically establishing the Forest’s configu” · owner now: Hiawatha National Forest · [www.fs.usda.gov](https://www.fs.usda.gov/r09/hiawatha/recreation/discover-history)
+- US-1517 Mackinac Island State Park · transfer: “reated in 1895 to supervise Mackinac Island State Park, Michigan’s first state park, which had been transferred to the state by the United States government. For 20 years prior to this, the federal go” · owner now: United States · [www.mackinacparks.com](https://www.mackinacparks.com/explore/history/)
+- US-1517 Mackinac Island State Park · transfer: “British and moved to Mackinac Island, Michilimackinac had been a thriving fur-trade community. When deeded to the Commission, the 27-acre site was a popular trailer park and camp site. Dousman’s Mill ” · owner now: United States · [www.mackinacparks.com](https://www.mackinacparks.com/explore/history/)
+- US-6666 Edger Waterfowl National Wildlife Management Area · managed by: “operating Federal Land) in Barry County E C Ave Waterfowl Production Areas (WPAs) are Federal lands managed by the U.S. Fish and Wildlife Service (USFWS) in partnership and cooperation with the Michig” · owner now: U.S · [www.michigandnr.com](http://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Edgar_WPA_map.pdf)
 
 ## Kentucky test gate
 

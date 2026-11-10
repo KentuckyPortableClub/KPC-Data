@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-10T04:21Z",
+ "checked": "2026-11-10T05:17Z",
  "switched_on": false,
  "results": [
   {
@@ -3063,6 +3063,15 @@
   },
   {
    "path": "data/truth/US-ME.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/truth/US-MI.json",
    "kind": "truth",
    "why": [],
    "notes": [
