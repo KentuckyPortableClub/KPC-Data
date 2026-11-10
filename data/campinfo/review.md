@@ -2532,7 +2532,7 @@ Updated 2026-11-10. Every fact in <area>.json carries its source url, read date 
   - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
   - hookups.electric = "some" · “ls. Nathan Boone Equestrian Camp features two sites with a double corral. High lining and electric fencing is permitted for the other sites ”
   - hookups.water = false · “n $110.00 *Displayed rates do not reflect discounts, attribute fees (electrical hookups / water hookups), taxes or incremental charges **Wee”
-  - reservable = true · “can be made up to 11 Month(s) in advance. Parking Pass Tue Nov 03 2026 - Sat Oct 02 2027 Reservations can be made for today and can be made ”
+  - reservable = true · “can be made up to 11 Month(s) in advance. Parking Pass Tue Nov 10 2026 - Sat Oct 09 2027 Reservations can be made for today and can be made ”
   - restrooms = "yes (kind not stated)" · “site. Online reservations must be made for all RV and tent campsites. Nearby Attractions: Comfort stations with showers are located near the”
   - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Occupants m”
   - season = "April 1 through October 15" · “lable six miles west of Jet or three miles south of Cherokee. The crystal digging area is open from April 1 to October 15 from sunrise to su”
@@ -2559,7 +2559,7 @@ Updated 2026-11-10. Every fact in <area>.json carries its source url, read date 
   - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
   - hookups.electric = false · “ler sites Group sites Horse sites Boat sites RV sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 A”
   - hookups.water = false · “0-$225.00 *Displayed rates do not reflect discounts, attribute fees (electrical hookups / water hookups), taxes or incremental charges **Wee”
-  - reservable = true · “can be made up to 11 Month(s) in advance. Parking Pass Tue Nov 03 2026 - Sat Oct 02 2027 Reservations can be made for today and can be made ”
+  - reservable = true · “can be made up to 11 Month(s) in advance. Parking Pass Tue Nov 10 2026 - Sat Oct 09 2027 Reservations can be made for today and can be made ”
   - rules.pets = "Pets allowed" · “(or more) Water hookup Sewer hookup Pull-through driveway Waterfront Accessibility needs Pets allowed Cabins or lodgings Options Occupants m”
   - season = "year-round" · “mises an oasis of family fun in southwestern Oklahoma. From boating to ... [more] Status: Open year round. Season Dates Max Reservation Wind”
   - sites.total = 152 · “needs Pets allowed Boat sites Options Common Attributes Group Apply Filter Campground Map 152 site(s) found ALL (152) Group Camp Area (2) RV”

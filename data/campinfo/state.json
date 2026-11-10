@@ -805,7 +805,7 @@
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-03"
+   "updated": "2026-11-10"
   },
   "US-OR": {
    "camps": 504,
@@ -1151,7 +1151,7 @@
   "US-NV": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-NY": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-OH": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
-  "US-OK": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
+  "US-OK": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-OR": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-PA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-RI": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1487,10 +1487,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
-    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+    "src": null,
+    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-11-03"
+   "read": "2026-11-10"
   },
   "US-OR": {
    "cell": {
@@ -2576,19 +2576,14 @@
  },
  "last": {
   "areas": [
-   "US-NE"
+   "US-OK"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 235,
+   "dropped_queued": 200,
    "errors": 0,
-   "for_person": 2,
    "for_person_urls": [
-    [
-     "https://outdoornebraska.gov/parks/",
-     "HTTP 403 twice"
-    ],
     [
      "https://epqs.nationalmap.gov/robots.txt",
      "robots.txt answered 403: nothing fetched from epqs.nationalmap.gov this run"
@@ -2596,32 +2591,27 @@
     [
      "https://broadbandmap.fcc.gov/robots.txt",
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
-    ],
-    [
-     "https://outdoornebraska.gov/parks/",
-     "HTTP 403 twice"
     ]
    ],
-   "requests": 20,
-   "rested": 189,
-   "retry403": 2,
+   "requests": 80,
+   "rested": 0,
    "robots": 2,
    "robots_unreadable": 2,
-   "strikes": 4
+   "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 3,
-   "camps": 236,
+   "browser": 1,
+   "camps": 201,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 4,
-   "needs_key": 11,
-   "no_page": 6,
-   "not_official": 23,
-   "ok": 6,
-   "pages_read": 8,
-   "resting": 189,
+   "needs_browser": 1,
+   "needs_key": 85,
+   "no_page": 4,
+   "not_official": 70,
+   "ok": 37,
+   "pages_read": 68,
+   "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0
