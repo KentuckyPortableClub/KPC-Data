@@ -53,7 +53,7 @@ Updated 2026-11-10. Every fact in <area>.json carries its source url, read date 
 | US-WA | 363 | 24 | 212 | 1 | 15 | 0 | 66 | 0 | 45 | 3 | 70 | 0 |
 | US-AK | 368 | 8 | 234 | 0 | 113 | 0 | 4 | 0 | 9 | 5 | 64 | 0 |
 | US-HI | 22 | 10 | 2 | 0 | 0 | 0 | 8 | 0 | 2 | 0 | 12 | 0 |
-| US-MI | 511 | 3 | 110 | 2 | 0 | 10 | 377 | 0 | 9 | 0 | 12 | 0 |
+| US-MI | 511 | 3 | 110 | 2 | 10 | 0 | 377 | 0 | 9 | 0 | 12 | 0 |
 | US-OH | 96 | 0 | 11 | 0 | 12 | 0 | 62 | 0 | 11 | 0 | 11 | 0 |
 | US-UT | 459 | 40 | 331 | 1 | 0 | 0 | 13 | 0 | 74 | 1 | 115 | 0 |
 
@@ -80,7 +80,7 @@ Updated 2026-11-10. Every fact in <area>.json carries its source url, read date 
 - mdc.mo.gov: 15 campgrounds · host resting (deferred: slow host, next run)
 - azstateparks.com: 15 campgrounds · host resting (robots.txt could not be read: next run)
 - washington.goingtocamp.com: 15 campgrounds · host resting (robots.txt could not be read: next run)
-- midnrreservations.com: 12 campgrounds · host resting
+- midnrreservations.com: 12 campgrounds · host resting (robots.txt could not be read: next run)
 - reserveohio.com: 12 campgrounds · host resting (robots.txt could not be read: next run)
 - www.reservecalifornia.com: 5 campgrounds · host resting (robots.txt could not be read: next run)
 - apps.web.maine.gov: 4 campgrounds · host resting (robots.txt could not be read: next run)
