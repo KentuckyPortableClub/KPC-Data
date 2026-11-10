@@ -1,7 +1,7 @@
 {
- "made": "2026-11-09 23:43 UTC",
+ "made": "2026-11-10 02:43 UTC",
  "snap": {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "outlines": {
    "US": {
     "official": 11223,
@@ -143,16 +143,16 @@
   }
  },
  "first": {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "outlines": {
    "US": {
-    "official": 11149,
-    "approximate": 445,
-    "pin": 1492
+    "official": 11199,
+    "approximate": 434,
+    "pin": 1474
    },
    "Canada": {
-    "pin": 1563,
-    "official": 4297,
+    "pin": 1560,
+    "official": 4302,
     "approximate": 39
    },
    "World": {
@@ -172,7 +172,7 @@
    },
    "gis-hunter": {
     "- YES": 84,
-    "rows": 534,
+    "rows": 650,
     "- NO": 339,
     "- NOT SURE": 16,
     "SURE YES": 8,
@@ -181,7 +181,10 @@
     "LIKELY YES": 12,
     "LIKELY NOT SURE": 8,
     "SURE NO": 2,
-    "SURE bot YES": 42
+    "SURE bot YES": 136,
+    "SURE open": 7,
+    "LIKELY open": 13,
+    "LIKELY bot YES": 2
    },
    "hardlook": {},
    "key-pieces": {
@@ -192,21 +195,24 @@
    },
    "layers": {
     "LIKELY YES": 2131,
-    "rows": 25863,
+    "rows": 26398,
     "LIKELY NO": 213,
     "SURE NO": 8,
     "LIKELY NOT SURE": 6711,
     "SURE YES": 15607,
     "SURE NOT SURE": 526,
     "LIKELY bot YES": 12,
-    "SURE bot YES": 476,
-    "SURE open": 44,
-    "LIKELY open": 135
+    "SURE bot YES": 720,
+    "SURE open": 72,
+    "LIKELY open": 398
    },
    "lost-finds-nov1": {},
    "map-audit": {
-    "audit open": 87,
-    "rows": 87
+    "audit other": 526,
+    "rows": 2096,
+    "audit YES": 1028,
+    "audit NO": 410,
+    "audit open": 132
    },
    "nearmiss-nov2": {
     "LIKELY open": 17,
@@ -236,30 +242,30 @@
     "SURE YES": 984,
     "SURE NOT SURE": 50,
     "LIKELY YES": 57,
-    "SURE bot YES": 4,
     "SURE NO": 72,
     "- YES": 15,
-    "- NOT SURE": 27
+    "- NOT SURE": 27,
+    "SURE bot YES": 4
    }
   },
   "layers": {
    "intake": {
-    "REJECT": 1652,
+    "REJECT": 1654,
     "WATER-ONLY": 41,
-    "ASK-THE-PUBLISHER": 416,
+    "ASK-THE-PUBLISHER": 423,
     "LIVE-ONLY": 5,
-    "RETRY": 364,
+    "RETRY": 365,
     "READY": 2,
     "approved": 2
    },
-   "queue rows": 2115,
+   "queue rows": 2140,
    "collector": {
-    "asked": 113,
+    "asked": 661,
     "failed": 196,
     "evidence": 9,
-    "no match": 417,
-    "no hit": 222291,
-    "UNLIKELY": 21619,
+    "no match": 1402,
+    "no hit": 222297,
+    "UNLIKELY": 21621,
     "LIKELY": 6404,
     "SURE": 1092
    },
@@ -270,7 +276,7 @@
    "world countries started": 233,
    "world candidates": 1652,
    "hunter areas": 63,
-   "hunter last pass": "2026-11-02"
+   "hunter last pass": "auto-202611031355"
   }
  },
  "board": {
@@ -348,34 +354,34 @@
   },
   "Intake: camping-ca-nov1.json": {
    "areas": "",
-   "last_run": "2026-11-09",
-   "made": "read by the camping bot (2026-11-09)",
+   "last_run": "2026-11-10",
+   "made": "read by the camping bot (2026-11-10)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42557145409",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42731491247",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: camping-engine.json": {
    "areas": "",
-   "last_run": "2026-11-09",
-   "made": "read by the camping bot (2026-11-09)",
+   "last_run": "2026-11-10",
+   "made": "read by the camping bot (2026-11-10)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42557145409",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42731491247",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: camping-mapping-bundle-nov1.json": {
    "areas": "",
-   "last_run": "2026-11-09",
-   "made": "read by the camping bot (2026-11-09)",
+   "last_run": "2026-11-10",
+   "made": "read by the camping bot (2026-11-10)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42557145409",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42731491247",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: camping-us-oct31.json": {
    "areas": "",
-   "last_run": "2026-11-09",
-   "made": "read by the camping bot (2026-11-09)",
+   "last_run": "2026-11-10",
+   "made": "read by the camping bot (2026-11-10)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42557145409",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42731491247",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: docs-found-carib-nov1.json": {
@@ -1475,9 +1481,9 @@
    "waiting_on": "proposals: answer YES / NO / NOT SURE in an inbox batch"
   },
   "campground info bot": {
-   "areas": "left: 20",
-   "last_run": "2026-11-09",
-   "made": "US-CA: done; {\"camps\": 1190, \"needs_browser\": 0, \"needs_key\": 752, \"no_page\": 352, \"not_official\": 0, \"ok\": 50, \"other\": 29, \"resting\": 0, \"robots\": 7, \"with_booking\": 81, \"with_elevation\": 0, \"with_facts\": 54, \"w",
+   "areas": "left: 19",
+   "last_run": "2026-11-10",
+   "made": "US-OR: done; {\"camps\": 496, \"needs_browser\": 0, \"needs_key\": 410, \"no_page\": 0, \"not_official\": 1, \"ok\": 47, \"other\": 38, \"resting\": 0, \"robots\": 0, \"with_booking\": 85, \"with_elevation\": 0, \"with_facts\": 52, \"with",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42682701079",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
@@ -1500,10 +1506,10 @@
   },
   "key-doctor": {
    "areas": "",
-   "last_run": "2026-11-09",
-   "made": "NOs: 434 of 723 NOs landed; 289 missing (re-applied to overrides.fixed.json); 1034 came back in the key release: 0 parks pass, 0 held, 0 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-09.md ",
+   "last_run": "2026-11-10",
+   "made": "NOs: 434 of 723 NOs landed; 289 missing (re-applied to overrides.fixed.json); 1034 came back in the key release: 0 parks pass, 0 held, 0 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-10.md ",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42548038925",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42744474162",
    "waiting_on": "chat 10 (came-back NOs / stuck areas); per-park release in release-approved"
   },
   "layer intake": {
@@ -1539,11 +1545,11 @@
    "waiting_on": "chat 8 grades the sample; chat 2 reads the name-mismatch list; nothing goes in a key by itself"
   },
   "park truth checker": {
-   "areas": "left: 21",
-   "last_run": "2026-11-09",
-   "made": "US-CA: done; {\"agree\": 83, \"handover_hints\": 42, \"no_page\": 1, \"no_size\": 185, \"off\": 32, \"ours_unknown\": 12, \"parks\": 410, \"retired\": 0, \"unsure\": 78, \"weak\": 18, \"with_outline\": 391}",
+   "areas": "left: 18",
+   "last_run": "2026-11-10",
+   "made": "US-WA: done; {\"agree\": 31, \"handover_hints\": 20, \"no_page\": 1, \"no_size\": 166, \"off\": 157, \"ours_unknown\": 29, \"parks\": 536, \"retired\": 0, \"unsure\": 108, \"weak\": 17, \"with_outline\": 492}",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42682701079",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42731491247",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "scoreboard": {
@@ -1555,8 +1561,8 @@
    "waiting_on": "nothing (facts only)"
   },
   "waiting room": {
-   "last_run": "2026-11-09",
-   "made": "288 files waiting over 3 days in data/waiting/in/ (e.g. US-SD.json)",
+   "last_run": "2026-11-10",
+   "made": "287 files waiting over 3 days in data/waiting/in/ (e.g. US-SD.json)",
    "result": "red",
    "waiting_on": "chat 11 (look at the waiting room run)"
   },
