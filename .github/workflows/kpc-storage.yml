@@ -39,7 +39,10 @@ jobs:
           REPO: ${{ github.repository }}
         run: |
           python3 .github/scripts/kpc_storage_keeper.py measure | tee /tmp/m.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { kpc_rc=$?; echo "::warning title=kpc_storage_keeper.py::stopped with an error (exit $rc), see the log above"; echo "kpc_storage_keeper.py - stopped with an error (exit $rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
-          L=$(grep '^LINE=' /tmp/m.txt | cut -d= -f2-); O=$(grep '^OVER=' /tmp/m.txt | cut -d= -f2); echo "OVER=$O" >> "$GITHUB_ENV"
+          L=$(grep '^LINE=' /tmp/m.txt | cut -d= -f2-); O=$(grep '^OVER=' /tmp/m.txt | cut -d= -f2)
+          # Nov 10 (quiet runs): a measure that errored (GitHub API hiccup, timeout) is NOT 'over the line': only a clean measure that reads over can use the one intentional red step below
+          { [ "$rc" = 0 ] && [ -n "$O" ]; } || { O=0; echo "::notice title=Storage keeper::the measure did not finish cleanly (exit $rc): no over-the-line verdict this week, the next run measures again"; }
+          echo "OVER=$O" >> "$GITHUB_ENV"
           C=green; [ "$O" = 1 ] && C=amber   # over the line = HQ decides (amber); red is only for a broken bot
           { echo "KPC_BOARD_C=$C"; echo "KPC_BOARD_L=$L"; } >> "$GITHUB_ENV"   # Nov 8: kept for a re-write of the board line on a save conflict
           python3 .github/scripts/kpc_status.py board "Storage keeper (weekly)" "$C" "$L" "HQ: over the line = decide (squash / move files); the keeper never rewrites main" || true   # ok: a status-board line (reporting only)
@@ -80,7 +83,7 @@ jobs:
         if: always()
         env:
           KPC_STEPS: ${{ toJSON(steps) }}
-          KPC_FAIL_SAFE: ${{ vars.KPC_HIDDEN_RED != 'off' && '1' || '0' }}   # next round C4: red on a caught error (safe: this job starts nothing after it)
+          KPC_FAIL_SAFE: ${{ vars.KPC_HIDDEN_RED == 'all' && '1' || '0' }}   # Nov 10 (quiet runs): caught errors go to the job summary and the job ends green; red only when a person has to act (KPC_HIDDEN_RED=all = the old red-on-any-caught-error)
         run: |
           python3 - <<'PY'
           import json, os

@@ -3,10 +3,16 @@ name: KPC site copy for GitHub Pages (main -> site, at most every 20 min)
 # push, most cancelled (GitHub's Pages soft limit is ~10 builds an hour), which may also be why GitHub starved this repo's timers.
 # Now Pages publishes the branch 'site', and this bot moves 'site' to main's newest commit when it has changed (no new files: the
 # same commit, so no extra storage). Started by its own timer, the watchdog and the two self-chained bots (engine, map audit).
-# Never red. 'switch=yes' (one time, by hand) points Pages at the 'site' branch; 'switch=main' puts it back.
+# Nov 10 (quiet runs): GitHub's own 'pages build and deployment' runs for the branch 'site' failed 9x in 2 days after ~11 minutes: each
+# move of 'site' starts a Pages build and new moves landed on top of a build that was still running. So now: the timer is hourly (was
+# 3 a time an hour; the name above is kept because other files refer to it), 'site' moves only when a file the SITE reads changed
+# (not .github/, .claude/, tests/, data/status/, data/waiting/ - bookkeeping; a bookkeeping-only difference still moves it once it is
+# 6 h old, because the site's status page reads data/status), and never while a Pages build is still running. A skipped move is a green
+# run with a summary line. Red only if the site would stay stale (could not move 'site' AND it is behind a site change).
+# Never red otherwise. 'switch=yes' (one time, by hand) points Pages at the 'site' branch; 'switch=main' puts it back.
 on:
   schedule:
-    - cron: '9,29,49 * * * *'
+    - cron: '9 * * * *'   # Nov 10 (quiet runs): hourly (was '9,29,49 * * * *')
   workflow_dispatch:
     inputs:
       switch:
@@ -25,18 +31,44 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Move 'site' to main (only when main changed)
+      - name: Move 'site' to main (only when a file the site reads changed)
         id: kept_green_1
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
           R: ${{ github.repository }}
+          SWITCH: ${{ inputs.switch }}
         run: |
+          say() { echo "$1"; [ -z "${GITHUB_STEP_SUMMARY:-}" ] || echo "- $1" >> "$GITHUB_STEP_SUMMARY"; }
+          stale() { echo "::error title=Pages copy::$1 (the site would stay stale)"; echo "Pages copy - $1 (the site would stay stale)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           M=$(gh api repos/$R/git/ref/heads/main --jq .object.sha)
           S=$(gh api repos/$R/git/ref/heads/site --jq .object.sha 2>/dev/null) || S=none; case "$S" in [0-9a-f]*) ;; *) S=none ;; esac
-          if [ "$M" = "$S" ]; then echo "::notice title=Pages copy::site is already main (${M:0:8}): nothing to publish"
-          elif [ "$S" = none ]; then o=$(gh api -X POST repos/$R/git/refs -f ref=refs/heads/site -f sha=$M 2>&1) && echo "::notice title=Pages copy::branch site made at ${M:0:8}" || { kpc_rc=$?; echo "::error title=Pages copy::could not make branch site (PR3: an error, so the watchdog sweep shows it red): $(echo $o | head -c 300)"; echo "Pages copy - could not make branch site (PR3: an error, so the watchdog sweep shows it red): $(echo $o | head -c 300)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
-          else o=$(gh api -X PATCH repos/$R/git/refs/heads/site -f sha=$M -F force=true 2>&1) && echo "::notice title=Pages copy::site moved ${S:0:8} -> ${M:0:8} (one Pages build)" || { kpc_rc=$?; echo "::error title=Pages copy::could not move site (PR3: an error, so the watchdog sweep shows it red): $(echo $o | head -c 300)"; echo "Pages copy - could not move site (PR3: an error, so the watchdog sweep shows it red): $(echo $o | head -c 300)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; fi
+          if [ "$M" = "$S" ]; then say "Pages copy: site is already main (${M:0:8}): nothing to publish"; exit 0; fi
+          if [ "$S" = none ]; then
+            o=$(gh api -X POST repos/$R/git/refs -f ref=refs/heads/site -f sha=$M 2>&1) && say "Pages copy: branch site made at ${M:0:8}" || stale "could not make branch site: $(echo $o | head -c 300)"
+            exit 0
+          fi
+          GO=no; WHY=""
+          if [ -n "$SWITCH" ]; then GO=yes; WHY="by-hand switch run"
+          else
+            # which files differ between the live site and main; bookkeeping does not count (same idea as KPC-Links' Pages filter)
+            if gh api "repos/$R/compare/$S...$M?per_page=300" --jq '.files[].filename' > /tmp/files.txt 2>/dev/null && [ -s /tmp/files.txt ]; then
+              N=$(wc -l < /tmp/files.txt)
+              SITE=$(grep -v -E '^(\.claude/|\.github/|tests/|data/status/|data/waiting/)' /tmp/files.txt | wc -l)
+              if [ "$N" -ge 300 ] || [ "$SITE" -gt 0 ]; then GO=yes; WHY="$SITE site file(s) changed"
+              else
+                # bookkeeping only: the status page reads data/status, so a site that is 6 h or more behind still moves
+                SD=$(gh api repos/$R/commits/$S --jq .commit.committer.date 2>/dev/null || true)
+                AGE=999999; [ -n "$SD" ] && AGE=$(( $(date -u +%s) - $(date -u -d "$SD" +%s 2>/dev/null || echo 0) ))
+                if [ "$AGE" -ge 21600 ]; then GO=yes; WHY="only bookkeeping changed but the site copy is $((AGE/3600)) h old"; fi
+              fi
+            else GO=yes; WHY="could not compare ${S:0:8}...${M:0:8}"; fi
+          fi
+          if [ "$GO" = no ]; then say "Pages copy: only bookkeeping changed since the live copy (${S:0:8}): site left as it is"; exit 0; fi
+          # never stack a move on a Pages build that is still running
+          ST=$(gh api repos/$R/pages/builds/latest --jq .status 2>/dev/null || echo unknown)
+          if [ "$ST" = building ] || [ "$ST" = queued ]; then say "Pages copy: a Pages build is still running ($ST): the next hourly run moves site ($WHY)"; exit 0; fi
+          o=$(gh api -X PATCH repos/$R/git/refs/heads/site -f sha=$M -F force=true 2>&1) && say "Pages copy: site moved ${S:0:8} -> ${M:0:8} ($WHY; one Pages build)" || stale "could not move site: $(echo $o | head -c 300)"
           true   # ok: the next run tries again
       - name: Point Pages at the branch (one time, by hand)
         if: ${{ inputs.switch == 'yes' || inputs.switch == 'main' }}

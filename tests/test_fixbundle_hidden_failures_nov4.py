@@ -56,7 +56,7 @@ check('the G8 report lists the caught error in the summary', ('Errors caught ins
 # Crons Brandon OK'd himself (the only way a new cron gets in): Brandon, 7:11 AM CST Nov 6 2026 (relayed by the parent agent, his
 # words): "Yes, put the Quality sample on a weekly schedule" -> kpc-quality-sample.yml Mondays 7:41 AM CST.
 # Nov 7 2026 2:19 PM CST (Brandon, own words: "release fcc ridb"): the cell coverage bot's pre-PR1 monthly cron is back.
-BRANDON_OK_CRONS = {('kpc-quality-sample.yml', '41 13 * * 1'), ('kpc-cell.yml', '16 9 3 * *'), ('kpc-archive-rotate.yml', '27 15 * * 3'), ('kpc-fers.yml', '23 8 5 * *')}  # archive weekly: Brandon Nov 7 4:02 PM CST; 2-fer monthly: Brandon Nov 9 t911u/t912u 4:35-4:36 PM CST ('once a month', relayed)
+BRANDON_OK_CRONS = {('kpc-quality-sample.yml', '41 13 * * 1'), ('kpc-cell.yml', '16 9 3 * *'), ('kpc-archive-rotate.yml', '27 15 * * 3'), ('kpc-fers.yml', '23 8 5 * *'), ('kpc-pages-sync.yml', '9 * * * *')}  # Nov 10 quiet runs: site copy hourly instead of 9,29,49 (less often, not a new schedule)  # archive weekly: Brandon Nov 7 4:02 PM CST; 2-fer monthly: Brandon Nov 9 t911u/t912u 4:35-4:36 PM CST ('once a month', relayed)
 crons = lambda t: re.findall(r"^\s*-\s*cron:.*$", t, re.M)
 base = subprocess.run(['git', '-C', str(R), 'cat-file', '-e', 'a569c9b35'], capture_output=True).returncode == 0
 if base:
