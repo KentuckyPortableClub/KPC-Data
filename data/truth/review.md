@@ -54,6 +54,7 @@ Updated 2026-11-10. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-HI | 102 | 88 | 14 | **7** | 14 | 50 | 3 | 5 | 0 | 4 |
 | US-MI | 388 | 355 | 8 | **6** | 11 | 322 | 7 | 5 | 0 | 10 |
 | US-OH | 276 | 275 | 6 | **1** | 1 | 262 | 4 | 1 | 0 | 2 |
+| US-UT | 692 | 419 | 14 | **13** | 2 | 262 | 119 | 4 | 0 | 61 |
 
 ## US-KY
 
@@ -3602,6 +3603,38 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 **Handover / closure hints (a person decides; nothing applied):**
 
 - US-13539 Fernald National Preserve · transfer: “omprehensive Environmental Response, Compensation, and Liability Act (CERCLA) regulations. The site transferred to the Office of Legacy Management in 2006 and requires operation and maintenance of rem” · owner now: Office of Legacy Management · [www.energy.gov](https://www.energy.gov/lm/fernald-preserve-ohio-site)
+
+## US-UT
+
+**Agree:** 14 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 14 agree (second agency).
+
+**Size more than 15% off (our outline vs the agency):**
+
+- US-10991 Mud Spring Canyon WSA BLM Wilderness Area: ours 39,959 ac vs agency 200 acres (= 200 ac; 19880% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.blm.gov](https://www.blm.gov/visit/mud-spring-canyon) · “rance to Dry Valley Creek Canyon, which remains in its natural condition and may be a relect ecosystem. About 200 acres are within this area, which may have imp”
+- US-4395 Dixie National Forest: ours 1,632,927 ac vs agency 150,000 acres (= 150,000 ac; 989% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fs.usda.gov](https://www.fs.usda.gov/dixie) · “t encompasses 250,000 acres in the Pine Valley Ranger District of the Dixie National Forest. There is another 150,000 acres of other ownership including private”
+- US-11112 Factory Butte BLM Recreation Management Area: ours 24,355 ac vs agency 5,400 acres (= 5,400 ac; 351% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.blm.gov](https://www.blm.gov/visit/factory-butte-recreation-area) · “utte Georeferenced Map Factory Butte Brochure Press Release: After 10 years of extensive monitoring BLM opens 5,400 acres to OHV recreation Endangered Species T”
+- US-5942 Mount Olympus USFS Wilderness Area: ours 15,443 ac vs agency 2.2 million acres (= 2,200,000 ac; 99% off) · cause: agency bigger: our outline may miss a tract · [www.fs.usda.gov](https://www.fs.usda.gov/detail/uwcnf/about-forest/districts/?cid=fsem_035478) · “picting Fire Danger Rating Areas. T T T Welcome to Uinta-Wasatch-Cache National Forest The Forest encompasses 2.2 million acres in Northern Utah and southwester”
+- US-5944 Twin Peaks USFS Wilderness Area: ours 11,485 ac vs agency 2.2 million acres (= 2,200,000 ac; 99% off) · cause: agency bigger: our outline may miss a tract · [www.fs.usda.gov](https://www.fs.usda.gov/detail/uwcnf/about-forest/districts/?cid=fsem_035482) · “picting Fire Danger Rating Areas. T T T Welcome to Uinta-Wasatch-Cache National Forest The Forest encompasses 2.2 million acres in Northern Utah and southwester”
+- US-5963 Wellsville Mountain USFS Wilderness Area: ours 22,843 ac vs agency 2.2 million acres (= 2,200,000 ac; 99% off) · cause: agency bigger: our outline may miss a tract · [www.fs.usda.gov](https://www.fs.usda.gov/detail/uwcnf/recreation/wintersports/?cid=fsem_035479) · “picting Fire Danger Rating Areas. T T T Welcome to Uinta-Wasatch-Cache National Forest The Forest encompasses 2.2 million acres in Northern Utah and southwester”
+- US-5994 Deseret Peak USFS Wilderness Area: ours 25,078 ac vs agency 2.2 million acres (= 2,200,000 ac; 99% off) · cause: agency bigger: our outline may miss a tract · [www.fs.usda.gov](https://www.fs.usda.gov/detail/uwcnf/about-forest/districts/?cid=stelprdb5043523) · “picting Fire Danger Rating Areas. T T T Welcome to Uinta-Wasatch-Cache National Forest The Forest encompasses 2.2 million acres in Northern Utah and southwester”
+- US-3063 Bear Lake State Park: ours 1,401 ac vs agency 112 square miles (= 71,680 ac; 98% off) · cause: agency bigger: our outline may miss a tract · [stateparks.utah.gov](https://stateparks.utah.gov/parks/bear-lake/history/) · “ation of 5,923 feet, Bear Lake is approximately 20 miles long and eight miles wide, 208 feet deep, and covers 112 square miles. Originally Bear Lake was called ”
+- US-11101 Fish Springs WSA BLM Wilderness Area: ours 55,193 ac vs agency 28,000 acres (= 28,000 ac; 97% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.blm.gov](https://www.blm.gov/visit/fish-springs) · “h Creek Range is a tilted fault block of sedimentary rocks, and includes bedding plane faults visible in over 28,000 acres in the central part of the WSA. Bald ”
+- US-5779 Willard Spur State Waterfowl Management Area: ours 13,441 ac vs agency 140,000 acre (= 140,000 ac; 90% off) · cause: agency bigger: our outline may miss a tract · [www.audubon.org](https://www.audubon.org/news/willard-spur-waterfowl-management-area-utahs-serengeti-waterbirds) · “the lake’s peak numbers. The Spur is a significant contributor, both ecologically and hydrologically, to the 140,000 acre designated Bear River Bay Globally Imp”
+- US-4398 Uinta-Wasatch-Cache National Forest: ours 436,739 ac vs agency 2.2 million acres (= 2,200,000 ac; 80% off) · cause: agency bigger: our outline may miss a tract · [www.fs.usda.gov](https://www.fs.usda.gov/r04/uinta-wasatch-cache) · “picting Fire Danger Rating Areas. T T T Welcome to Uinta-Wasatch-Cache National Forest The Forest encompasses 2.2 million acres in Northern Utah and southwester”
+- US-5856 High Uintas Wilderness Area: ours 453,864 ac vs agency 2.2 million acres (= 2,200,000 ac; 79% off) · cause: agency bigger: our outline may miss a tract · [www.fs.usda.gov](https://www.fs.usda.gov/detail/uwcnf/about-forest/districts/?cid=fsem_035477) · “picting Fire Danger Rating Areas. T T T Welcome to Uinta-Wasatch-Cache National Forest The Forest encompasses 2.2 million acres in Northern Utah and southwester”
+- US-5756 Browns Park National Wildlife Management Area: ours 2,896 ac vs agency 12,150 acre (= 12,150 ac; 76% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/browns_park/) · “essons to school and conservation groups if an event is planned in advance. Activities Get Involved About The 12,150-acre Browns Park National Wildlife Refuge i”
+
+**Unsure (no clean total found; the nearest number is only a guess):**
+
+- US-11098 Burning Hills WSA BLM Wilderness Area: ours 63,967 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-5774 Canyon Rims BLM Recreation Management Area: ours 95,879 ac · cause: no total-looking sentence: numbers found were parts or other units
+
+**Handover / closure hints (a person decides; nothing applied):**
+
+- US-0557 Bear River Migratory Bird Refuge National Wildlife Refuge · managed by: “eral Recreational Lands Passes cover the entrance fees and standard amenity (day-use) fees at lands managed by the U.S. Fish and Wildlife Service, National Park Service, U.S. Forest Service, Bureau of” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/bear-river-migratory-bird)
+- US-0950 Natural Bridges National Monument · renamed: “to the bridges. First named "President," "Senator" and "Congressman" by Cass Hite, the bridges were renamed "Augusta," "Caroline" and "Edwin" by later explorer groups. As the park was expanded to prot” · owner now: Cass Hite · [www.nps.gov](https://www.nps.gov/nabr/learn/historyculture/index.htm)
+- US-0959 Rainbow Bridge National Monument · managed by: “s, rocks, and water that make up the national monument. Management Rainbow Bridge National Monument is managed by Glen Canyon National Recreation Area. Read the current and historic policies here. Las” · owner now: Glen Canyon National Recreation Area · [www.nps.gov](https://www.nps.gov/rabr/learn/index.htm)
+- US-0965 Timpanogos Cave National Monument · managed by: “l NPS Exiting nps.gov Cancel Timpanogos Cave National Monument Contact Us Park Store The park store is operated by Western National Parks (WNP), an official nonprofit partner of the National Park Serv” · owner now: Western National Parks · [www.nps.gov](https://www.nps.gov/tica/learn/bookstore.htm)
 
 ## Kentucky test gate
 

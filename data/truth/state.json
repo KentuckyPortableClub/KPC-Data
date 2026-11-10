@@ -880,6 +880,26 @@
    "status": "done",
    "updated": "2026-11-09"
   },
+  "US-UT": {
+   "checked": 692,
+   "counts": {
+    "agree": 14,
+    "handover_hints": 4,
+    "no_page": 9,
+    "no_size": 262,
+    "off": 13,
+    "ours_unknown": 119,
+    "parks": 692,
+    "retired": 0,
+    "unsure": 2,
+    "weak": 61,
+    "with_outline": 419
+   },
+   "left": 0,
+   "parks": 692,
+   "status": "done",
+   "updated": "2026-11-10"
+  },
   "US-VA": {
    "checked": 184,
    "counts": {
@@ -1006,37 +1026,72 @@
   "idfg.idaho.gov": 1794323592.2610066,
   "ohv.parks.ca.gov": 1794347944.1865897,
   "outdoornebraska.gov": 1794310616.347082,
+  "www.blm.gov": 1794381737.2364364,
   "www.fhwa.dot.gov": 1794323337.1319654,
   "www.nevadawilderness.org": 1794330712.037567,
   "www2.dnr.state.mi.us": 1794371193.383787
  },
  "last": {
   "areas": [
-   "US-OH"
+   "US-UT"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 3,
+   "browser": 11,
+   "crawl_delay_skip": 3,
+   "deferred": 44,
    "errors": 0,
-   "for_person_urls": [],
-   "requests": 355,
-   "rested": 0,
-   "robots": 0,
-   "strikes": 0
+   "for_person": 2,
+   "for_person_urls": [
+    [
+     "https://www.mitigationcommission.gov/hatchery/hatchery_fountain.html",
+     "Crawl-delay 300 s is over 120 s: not read"
+    ],
+    [
+     "https://www.mitigationcommission.gov/hatchery/hatchery_whiterocks.html",
+     "Crawl-delay 300 s is over 120 s: not read"
+    ],
+    [
+     "https://www.flaminggorgecountry.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.flaminggorgecountry.com this run"
+    ],
+    [
+     "https://www.blm.gov/visit/mancos-mesa",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.mitigationcommission.gov/wetlands/wetlands_ulwp.html",
+     "Crawl-delay 300 s is over 120 s: not read"
+    ],
+    [
+     "https://www.wildlife.utah.gov/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.wildlife.utah.gov this run"
+    ],
+    [
+     "https://www.blm.gov/visit/fantasy-canyon-geologic-site",
+     "HTTP 403 twice"
+    ]
+   ],
+   "requests": 360,
+   "rested": 127,
+   "retry403": 2,
+   "robots": 2,
+   "robots_unreadable": 2,
+   "strikes": 4
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 1,
-   "no_size": 263,
-   "ours_unknown": 4,
-   "pages_read": 63,
-   "parks": 276,
+   "handover_hints": 4,
+   "no_size": 271,
+   "ours_unknown": 119,
+   "pages_read": 280,
+   "parks": 692,
    "retired": 0,
-   "size_agree": 6,
-   "size_off": 1,
-   "size_unsure": 1,
+   "size_agree": 14,
+   "size_off": 13,
+   "size_unsure": 2,
    "skipped_fresh": 0,
-   "with_outline": 275
+   "with_outline": 419
   },
   "when": "2026-11-10"
  },
