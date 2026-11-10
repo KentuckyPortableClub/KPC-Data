@@ -297,10 +297,6 @@ jobs:
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY
-  # Nov 4 PM fix bundle item 3 (Brandon's yes relayed via Super Head Bot 4:53 PM CST): the 2-fer chain must start right after each
-  # key copy. A scheduled run fires kpc-fers-chain.yml by workflow_run; a run a bot started (the watchdog's restart passes
-  # as_schedule, other dispatches) fires none, so this job starts the chain itself. No new cron. The chain's plan skips areas it
-  # already ran (data/status/fers-chain/seen.json), so a start with no new key build does nothing.
   needs-list:
     # Nov 10: the ONE needs-download list. The KPC-Links US key's master step cannot push here, so its rows go up as the release
     # asset needs-download.json (boundary-cache, public, same schema); this job merges them into data/needs-download.json and
@@ -347,7 +343,7 @@ jobs:
           if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
               open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
           PY
-  # Nov 4 PM fix bundle item 3 (Brandon's yes relayed via Super Head Bot 4:53 PM CST): the 2-fer chain must start right after each
+  # Nov 4 PM fix bundle item 3 (owner rule, Nov 4): the 2-fer chain must start right after each
   # key copy. A scheduled run fires kpc-fers-chain.yml by workflow_run; a run a bot started (the watchdog's restart passes
   # as_schedule, other dispatches) fires none, so this job starts the chain itself. No new cron. The chain's plan skips areas it
   # already ran (data/status/fers-chain/seen.json), so a start with no new key build does nothing.

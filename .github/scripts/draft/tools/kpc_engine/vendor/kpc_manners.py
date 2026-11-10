@@ -383,7 +383,7 @@ def pdf_text(body, pages=2):
 
 # Nov 10: the ONE needs-download list. With KPC_NEEDS_FILE set (the hunter / finder / harvester / collector / engine workflows set it to
 # data/needs-download.json and commit it with their other files), every layer url a Manners refused this run is added there as a
-# row (who = brandon / never from the host rules, or brandon for a robots Disallow). Bots never save a layer; they only add rows.
+# row (who = person / never from the host rules, or person for a robots Disallow). Bots never save a layer; they only add rows.
 _ALL = []
 
 
@@ -396,7 +396,7 @@ def write_needs(path=None):
     nd = importlib.util.module_from_spec(ND); ND.loader.exec_module(nd)
     for m in _ALL:
         for area, u, st, why in m.needs:
-            rows.append(nd.row(area, u, f'{m.job}: {why}', m.job, who=None if st == 'host-rule' else 'brandon'))
+            rows.append(nd.row(area, u, f'{m.job}: {why}', m.job, who=None if st == 'host-rule' else 'person'))
     if not rows: return 0
     a, upd, saved = nd.add(rows, path)
     print(f'::notice title=needs-download::{len(rows)} layer(s) this run may not fetch -> {path} ({a} new, {upd} updated)', flush=True)

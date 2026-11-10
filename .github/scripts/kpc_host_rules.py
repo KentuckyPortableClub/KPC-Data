@@ -43,11 +43,11 @@ def host_ok(url):
 
 
 def who_for(url, robots_ok=None):
-    """('bot' | 'brandon' | 'never', why), the same words as the needs-download list."""
+    """('bot' | 'person' | 'never', why), the same words as the needs-download list."""
     host, path = parts(url)
     for h, p in NEVER_CONTACT:
         if host == h and path.lower().startswith(p.lower()): return 'never', f'never contact {h}{p}: no request of any kind, by a bot or a person'
     ok, why = host_ok(url)
-    if not ok: return 'brandon', why + ': a person downloads it in a browser'
-    if robots_ok is not None and not robots_ok(url): return 'brandon', f'{host}: robots.txt does not allow a bot to read it (a 403 counts as no): a person downloads it'
+    if not ok: return 'person', why + ': a person downloads it in a browser'
+    if robots_ok is not None and not robots_ok(url): return 'person', f'{host}: robots.txt does not allow a bot to read it (a 403 counts as no): a person downloads it'
     return 'bot', ''

@@ -146,7 +146,7 @@ def write_needs(path=None):
     path = path or os.environ.get('KPC_NEEDS_FILE')
     if not path or not NEEDS: return 0
     import kpc_needs_download as ND
-    a, u, _ = ND.add([ND.row(ar, url, f'world harvester / finder: {why}', 'world harvester', who=None if not HR.host_ok(url)[0] else 'brandon') for ar, url, why in NEEDS], path)
+    a, u, _ = ND.add([ND.row(ar, url, f'world harvester / finder: {why}', 'world harvester', who=None if not HR.host_ok(url)[0] else 'person') for ar, url, why in NEEDS], path)
     notice(f'{len(NEEDS)} layer(s) this run may not fetch -> {path} ({a} new, {u} updated)'); return len(NEEDS)
 
 

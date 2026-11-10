@@ -3,12 +3,12 @@
 
 The hunters, finders, the collector and the engine ONLY add rows here (a layer they may not or could not fetch); they never save
 a layer. The master step in the KPC-Links US key workflow is the one that downloads what a bot may read (who=bot) and merges it
-into the saved copies; the PC helper (KPC-Links tools/kpc_pc_helper.py) walks a person through the who=brandon rows;
+into the saved copies; the PC helper (KPC-Links tools/kpc_pc_helper.py) walks a person through the who=person rows;
 who=never rows are never contacted by anybody. The master step's own rows come from the KPC-Links release asset
 needs-download.json (same schema), merged here by kpc-copy-from-links.
 
 Row: id (area|layer), area (US-XX / CA-.. / W-.. or ''), layer (the key's prefix when known, else url:<hash>), url, page, host,
-     who (bot|brandon|never), why, expected, have, source (the bot), added (date), status (open|done|held), note,
+     who (bot|person|never), why, expected, have, source (the bot), added (date), status (open|done|held), note,
      src (the download source in KPC-Links data/outlines/download-sources.json), check (bot = a bot may check it for a change; person).
 
   python3 kpc_needs_download.py merge <rows.json ...>   # add rows from files (a release asset, a bot's run) into the list
@@ -22,7 +22,7 @@ LIST = pathlib.Path(os.environ.get('KPC_NEEDS_FILE') or 'data/needs-download.jso
 FORMAT = 1   # the same as KPC-Links kpc_master.NEEDS_FORMAT
 FIELDS = ('id', 'area', 'layer', 'url', 'page', 'host', 'who', 'why', 'expected', 'have', 'source', 'added', 'status', 'note',
           'src', 'check')   # Nov 10: src = the download source id (KPC-Links data/outlines/download-sources.json); check = bot | person
-ABOUT = ('Layers somebody must download for the saved copies. who=bot: the master step downloads it; who=brandon: the PC helper '
+ABOUT = ('Layers somebody must download for the saved copies. who=bot: the master step downloads it; who=person: the PC helper '
          '(KPC-Links tools/kpc_pc_helper.py) opens the official page in a browser; who=never: nobody contacts it. Hunters and the '
          'engine only add rows here; only the master step saves layers. One row per area|layer.')
 

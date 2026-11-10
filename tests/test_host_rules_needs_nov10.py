@@ -38,8 +38,8 @@ def test_host_rules_allow(u): assert HR.host_ok(u)[0]
 
 def test_who_for():
     assert HR.who_for(BLOCKED[8])[0] == 'never' and HR.who_for(BLOCKED[6])[0] == 'never'
-    assert HR.who_for(BLOCKED[0])[0] == 'brandon' and HR.who_for(BLOCKED[5])[0] == 'brandon'
-    assert HR.who_for(ALLOWED[2], lambda u: False)[0] == 'brandon' and HR.who_for(ALLOWED[2], lambda u: True)[0] == 'bot'
+    assert HR.who_for(BLOCKED[0])[0] == 'person' and HR.who_for(BLOCKED[5])[0] == 'person'
+    assert HR.who_for(ALLOWED[2], lambda u: False)[0] == 'person' and HR.who_for(ALLOWED[2], lambda u: True)[0] == 'bot'
 
 
 def test_manners_host_rule_before_any_request(no_net, monkeypatch, tmp_path):
@@ -60,7 +60,7 @@ def test_manners_host_rule_before_any_request(no_net, monkeypatch, tmp_path):
     assert all(set(r) == set(ND.FIELDS) for r in rows.values())
     nc = [r for r in rows.values() if r['area'] == 'US-NC']
     assert nc and nc[0]['who'] == 'never' and nc[0]['url'].endswith('/MapServer/0')
-    assert any(r['who'] == 'brandon' and r['host'] == 'services-eu1.arcgis.com' for r in rows.values())
+    assert any(r['who'] == 'person' and r['host'] == 'services-eu1.arcgis.com' for r in rows.values())
     assert any(r['page'].startswith('https://hub.arcgis.com/search?q=') for r in rows.values())
 
 
@@ -103,7 +103,7 @@ def test_world_harvest_robots_status(monkeypatch):
 def test_needs_list_merge_and_no_noise(tmp_path):
     p = tmp_path / 'n.json'
     r = ND.row('US-AZ', 'https://apps.fs.usda.gov/arcx/rest/services/EDW/X/MapServer/0/query', 'short', 'test', date='2026-11-10')
-    assert r['who'] == 'brandon' and set(r) == set(ND.FIELDS)
+    assert r['who'] == 'person' and set(r) == set(ND.FIELDS)
     assert ND.add([r, dict(r)], p) == (1, 0, True)
     assert ND.add([dict(r)], p)[2] is False                      # the same row again: no change, not saved
     ND.add([dict(r, status='done')], p)
@@ -135,7 +135,7 @@ def test_seeded_list_from_the_hand_filled_sources():
 def test_seeded_list_schema():
     d = json.load(open(ROOT / 'data/needs-download.json'))
     assert d['rows'] and all(set(r) == set(ND.FIELDS) for r in d['rows'])
-    assert all(r['who'] in ('bot', 'brandon', 'never') and r['status'] in ('open', 'done', 'held') for r in d['rows'])
+    assert all(r['who'] in ('bot', 'person', 'never') and r['status'] in ('open', 'done', 'held') for r in d['rows'])
     assert all(r['who'] == 'never' for r in d['rows'] if r['host'] == 'ncnhde.natureserve.org')
 
 
