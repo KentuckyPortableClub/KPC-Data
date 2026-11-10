@@ -1,5 +1,25 @@
 {
  "areas": {
+  "CA-NB": {
+   "checked": 548,
+   "counts": {
+    "agree": 34,
+    "handover_hints": 16,
+    "no_page": 1,
+    "no_size": 256,
+    "off": 22,
+    "ours_unknown": 2,
+    "parks": 548,
+    "retired": 0,
+    "unsure": 6,
+    "weak": 45,
+    "with_outline": 321
+   },
+   "left": 0,
+   "parks": 548,
+   "status": "done",
+   "updated": "2026-11-10"
+  },
   "CA-ON": {
    "checked": 1180,
    "counts": {
@@ -1074,48 +1094,32 @@
  },
  "last": {
   "areas": [
-   "CA-QC"
+   "CA-NB"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 6,
-   "dropped_queued": 1,
+   "browser": 26,
+   "deferred": 5,
    "errors": 0,
-   "for_person": 2,
-   "for_person_urls": [
-    [
-     "https://www.sepaq.com/pq/bon/information.dot",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.sepaq.com/pq/pan/information.dot",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.legisquebec.gouv.qc.ca/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.legisquebec.gouv.qc.ca this run"
-    ]
-   ],
-   "requests": 517,
-   "rested": 32,
-   "retry403": 2,
-   "robots": 1,
-   "robots_unreadable": 1,
-   "strikes": 5
+   "for_person_urls": [],
+   "requests": 686,
+   "rested": 0,
+   "robots": 2,
+   "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 0,
-   "no_size": 349,
-   "ours_unknown": 3,
-   "pages_read": 364,
-   "parks": 834,
+   "handover_hints": 16,
+   "no_size": 257,
+   "ours_unknown": 2,
+   "pages_read": 311,
+   "parks": 548,
    "retired": 0,
-   "size_agree": 68,
-   "size_off": 16,
+   "size_agree": 34,
+   "size_off": 22,
    "size_unsure": 6,
    "skipped_fresh": 0,
-   "with_outline": 442
+   "with_outline": 321
   },
   "when": "2026-11-10"
  },
