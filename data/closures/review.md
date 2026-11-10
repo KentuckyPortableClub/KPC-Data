@@ -1,11 +1,11 @@
 # Closures super-bot: review (2026-11-10; RULE SHEET D; compared quietly, nothing on cards until GO)
 
-Run: 2026-11-10T15:17Z · requests 105 · pages 83 · PDFs 17 · sentences read 473 · unmatched 122 · look-alikes skipped 262 · sources failed 0
+Run: 2026-11-10T20:36Z · requests 105 · pages 83 · PDFs 17 · sentences read 476 · unmatched 122 · look-alikes skipped 262 · sources failed 0
 
-## Kentucky gate: **FAIL** — 24 of 31 of Kentucky's own reader's items found here on the same park (77%); 49 only here
+## Kentucky gate: **FAIL** — 24 of 31 of Kentucky's own reader's items found here on the same park (77%); 50 only here
 
-## US-KY (done, read 2026-11-10T15:17)
-whole 1 · part 0 · hunt 0 · seasonal 0 · note 68 · taken_down 19 · 0 banners
+## US-KY (done, read 2026-11-10T20:36)
+whole 1 · part 0 · hunt 0 · seasonal 0 · note 69 · taken_down 19 · 0 banners
 
 Dropped as another state's place (multi-state forest): 34 notices
 
@@ -41,7 +41,7 @@ Unmatched (two parks or none; for chat 11 to judge):
 - BLIND RESTRICTIONS [ky-fw-public-land] · no park name shares a word
 - Big Rivers WMA (noon Central to 5 p.m.) in Union County and at the Roberts Tract [ky-fw-public-land] · nearest park name: Big Rivers Wildlife Management Area (US-3796)
 
-### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 24 · only here 49 · only there 7
+### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 24 · only here 50 · only there 7
 
 - ONLY THERE: US-4687 hc-US-4687-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
 - ONLY THERE: US-3834 hc-US-3834-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
