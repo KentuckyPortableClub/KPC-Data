@@ -41,6 +41,7 @@ class Engine:
         self.registry = Registry(regs)
         self.agencies = agencies.AgencyBook(self.out, regs, (pathlib.Path(a.links) / '.claude/build/research/agency-atlas') if a.links else None)
         self.deadline = time.time() + a.max_minutes * 60 if a.max_minutes else None
+        self.P.deadline = self.deadline   # Nov 10: no request past the budget (rows), then POST_GRACE more for the checks and writes
         self.n_workers, self.resume = a.workers, a.resume
         self.steps = set((a.steps or 'L0,L1,L2,L3,L4,L5').split(','))
         self.org_cache, self.picture_maps, self.parcels, self.typos, self.fixes = {}, [], [], [], []
@@ -186,10 +187,12 @@ def cmd_run(a):
             sd = priority.seed_of(r, k)[1]
             if sd: r.setdefault('work_order_seed', sd)
         print(f'[{k}] {len(mine)} rows in {len(groups)} agency groups', flush=True)
+        eng.P.deadline = eng.deadline   # Nov 10: the rows' own budget (the checks below get POST_GRACE_S more)
         final, st = passes.two_passes(eng, pl, groups)
         final = [r for r in final if r]
         postprocess(k, final)
         if k == 'trail': write_fers(eng.out)
+        if eng.deadline: eng.P.deadline = max(eng.deadline, time.time()) + POST_GRACE_S   # Nov 10: the URL checks get a short, fixed grace past the budget
         kept, problems = checks.check_rows(eng.P, [dict(r, park=r.get('park')) for r in final if r.get('status') in ('found', 'candidate')], eng.parks_all,
                                            check_urls=not a.offline)
         rest = [r for r in final if r.get('status') not in ('found', 'candidate')]
@@ -203,6 +206,9 @@ def cmd_run(a):
         if timed: break
     finish(eng, G, prev, results, stats)
     return 3 if timed else 0
+
+
+POST_GRACE_S = 300   # Nov 10: after the rows' budget, at most 5 min of URL checks per kind (a check not made is 'not checked', never 'dead')
 
 
 FER_WAITING = []      # 2-fer / 3-fer suggestions from the last postprocess('trail'): waiting room only, never automatic

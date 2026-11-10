@@ -83,8 +83,8 @@ Use the server roots that the agency atlas already lists for that host. The stan
 `registry/relisted.json`. On Nov 1:
 - `gis.blm.gov` re-listed fine (8 + 11 folders) and gave new park-like services.
 - `geohub.gov.si` gave **404 on both standard roots**. Its services moved somewhere we have not found; ask ARSO / GURS.
-- AGOL hosts (`servicesN.arcgis.com`) cannot be listed without the org id. Take the id from an approved layer's URL; never
-  guess it.
+- AGOL hosts (`servicesN.arcgis.com`, `services-eu1.arcgis.com` and the like) are **never read by a bot** (Nov 10 host
+  rules, robots.txt included). Their layers come from saved copies; a person downloads them (the needs-download list).
 
 ## 5. ArcGIS Online search: keep only government owners  [checked, with care]
 Use `https://www.arcgis.com/sharing/rest/search?q=<words> type:"Feature Service"&f=json`. Keep a result only when its

@@ -301,6 +301,56 @@ jobs:
   # key copy. A scheduled run fires kpc-fers-chain.yml by workflow_run; a run a bot started (the watchdog's restart passes
   # as_schedule, other dispatches) fires none, so this job starts the chain itself. No new cron. The chain's plan skips areas it
   # already ran (data/status/fers-chain/seen.json), so a start with no new key build does nothing.
+  needs-list:
+    # Nov 10: the ONE needs-download list. The KPC-Links US key's master step cannot push here, so its rows go up as the release
+    # asset needs-download.json (boundary-cache, public, same schema); this job merges them into data/needs-download.json and
+    # saves ONLY when something changed. Read only on KPC-Links; no new cron (the hourly look above); touches nothing else.
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+          sparse-checkout: |
+            .github/scripts/kpc_push_data.sh
+          sparse-checkout-cone-mode: false
+      - name: Merge the master step's rows (push only on a change)
+        id: kept_green_needs
+        continue-on-error: true
+        run: |
+          curl -fsSL -o /tmp/needs-links.json https://github.com/KentuckyPortableClub/KPC-Links/releases/download/boundary-cache/needs-download.json \
+            || { echo "no needs-download.json on the KPC-Links release yet: nothing to merge"; exit 0; }
+          cd kpcdata && python3 .github/scripts/kpc_needs_download.py merge /tmp/needs-links.json || { kpc_rc=$?; echo "::error title=needs-download::the merge stopped (exit $kpc_rc)"; echo "needs-download - the merge stopped (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit 0; }
+          bash ../links/.github/scripts/kpc_push_data.sh . "needs-download: the master step's rows (KPC-Links release asset)" data/needs-download.json || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          PY
+  # Nov 4 PM fix bundle item 3 (Brandon's yes relayed via Super Head Bot 4:53 PM CST): the 2-fer chain must start right after each
+  # key copy. A scheduled run fires kpc-fers-chain.yml by workflow_run; a run a bot started (the watchdog's restart passes
+  # as_schedule, other dispatches) fires none, so this job starts the chain itself. No new cron. The chain's plan skips areas it
+  # already ran (data/status/fers-chain/seen.json), so a start with no new key build does nothing.
   chain:
     needs: copy
     if: ${{ needs.copy.result == 'success' && github.event_name != 'schedule' }}

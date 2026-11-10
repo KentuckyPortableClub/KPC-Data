@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """KPC BOT MANNERS (Fable, chat 10 'bot workshop', Oct 28 2026). ONE small module every workshop bot imports, so the house
-rules are written once: robots.txt obeyed (exemptions: ArcGIS's documented REST API by path, /rest/services/ and /sharing/rest/,
-HQ Oct 27), 1 request / 2 s per host, back-off on 429 / 5xx, three strikes
+rules are written once: the host rules first (kpc_host_rules.py, Nov 10: never-contact hosts, every services*.arcgis.com host
+and the saved-copy-only list get no request of any kind, robots.txt included), robots.txt obeyed with NO exemption (the old ArcGIS
+REST exemption is gone, Nov 10; a robots.txt 401 / 403 is a Disallow), 1 request / 2 s per host, back-off on 429 / 5xx, three strikes
 = that host rests a day (remembered across runs in the bot's state file), range reads for PDFs, a User-Agent that names the club
 site and never an email. Nothing here decides anything about a park: it only fetches politely.
 
@@ -9,17 +10,25 @@ Use:  M = Manners('KPC park truth checker', state.get('hosts'))   # a name for t
       st, headers, body, final_url = M.get(url)                   # st = int HTTP status, or 'rest' / 'robots' / 'err:...'
       state['hosts'] = M.resting()                                 # save before the run ends
 """
-import hashlib, json, os, re, threading, time, urllib.error, urllib.parse, urllib.request, urllib.robotparser
+import atexit, hashlib, importlib.util, json, os, re, threading, time, urllib.error, urllib.parse, urllib.request, urllib.robotparser
+
+
+def _load_host_rules():
+    """kpc_host_rules.py next to this file (the engine loads this module by path, so no sys.path is assumed)."""
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'kpc_host_rules.py')
+    spec = importlib.util.spec_from_file_location('kpc_host_rules', p); m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
+    return m
+
+
+HR = _load_host_rules()   # no fallback: a fetch module without the host rules must not run
 
 SITE = 'https://kentuckyportableclub.github.io/KPC-Links/'
-ARCGIS_API = re.compile(r'/(rest/services|sharing/rest)/', re.I)
 # Oct 29 9:34 + 9:37 AM (Brandon, CLAUDE.md 'KEYED GOVERNMENT APIS'): the API key is permission for ONLY these two documented API
 # paths (never their web pages), well under their rate limits; robots.txt is obeyed everywhere else (ArcGIS REST as before).
 KEYED_API = {'ridb.recreation.gov': '/api/', 'developer.nps.gov': '/api/'}
-# Nov 3 (Mapping, bots-first review): house rule is now "never bypass robots.txt". The ArcGIS REST exemption is OFF unless a
-# person turns it back on with KPC_ARCGIS_ROBOTS_EXEMPT=1. Crawl-delay is obeyed (longer of it and our 2 s gap). A 403 is
-# retried once after a pause, then handed to a person (no strike-and-forget, no third try).
-ARCGIS_EXEMPT = os.environ.get('KPC_ARCGIS_ROBOTS_EXEMPT', '0') == '1'
+# Nov 3 (Mapping, bots-first review): house rule is "never bypass robots.txt". Nov 10: the ArcGIS REST exemption (opt-in since
+# Nov 3 through KPC_ARCGIS_ROBOTS_EXEMPT) is DELETED; no variable turns it back on. Crawl-delay is obeyed (longer of it and our 2 s
+# gap). A 403 on a page is retried once after a pause, then handed to a person (no strike-and-forget, no third try).
 MAX_CRAWL_DELAY = 120   # a host asking for more than this is skipped for the run and listed for a person
 # Nov 3 (Super, answer-sheet task): ArcGIS Hub asks for Crawl-delay 60. Obeying it must not stall a nightly run, so:
 #  * KPC_MANNERS_CACHE=<dir> keeps plain 200 GET answers on disk (the workflow saves the dir with actions/cache). A cached answer
@@ -37,14 +46,15 @@ SLOW_BUDGET = int(os.environ.get('KPC_SLOW_HOST_BUDGET') or 10)
 # Nov 3 (Quality grade-bots-first A4): statuses that mean "not this run, try again next run" - never a failure, never a strike.
 # 'rest' = the host struck out today; 'deferred' = a slow host's live budget is used up; 'crawl-delay' = the host asks for more
 # than MAX_CRAWL_DELAY s between requests (also listed for a person). Callers use next_run(st).
-# Nov 3 re-cut (Quality A13): 'robots-unreadable' = robots.txt answered 5xx / 401 / 403 or could not be reached. That is NOT a
-# Disallow ('robots'): nothing is fetched this run, but the next run asks again, so one bad night never writes a layer off.
+# Nov 3 re-cut (Quality A13): 'robots-unreadable' = robots.txt answered 5xx or could not be reached. That is NOT a Disallow
+# ('robots'): nothing is fetched this run, but the next run asks again. Nov 10: a robots.txt 401 / 403 IS a Disallow ('robots').
 NEXT_RUN = ('rest', 'deferred', 'crawl-delay', 'robots-unreadable')
 def next_run(st): return isinstance(st, str) and st in NEXT_RUN
 # Nov 3 addendum (Quality spot-check, 7:05 PM CST): the two robots statuses. 'robots' = robots.txt says no (a Disallow for this URL,
 # or for the whole site); 'robots-unreadable' = robots.txt could not be read (A13, retried next run). A caller (or a grader) that
 # only wants to know "robots stopped this read" uses robots_block(st), which is True for BOTH words; 'robots' alone is a Disallow.
-ROBOTS_BLOCK = ('robots', 'robots-unreadable')
+# Nov 10: 'host-rule' = kpc_host_rules.py says no request of any kind (counted as a robots block, never retried next run).
+ROBOTS_BLOCK = ('robots', 'robots-unreadable', 'host-rule')
 def robots_block(st): return isinstance(st, str) and st in ROBOTS_BLOCK
 # Nov 3 (A3): query parameters that carry a secret. They never reach the cache key or the stored url.
 SECRET_Q = re.compile(r'^(key|api_key|apikey|api-key|token|access_token|auth|signature|sig|client_secret|password)$', re.I)
@@ -65,7 +75,11 @@ class Manners:
         self.gap, self.strikes_out, self.rest_s, self.read_max = gap, strikes_out, rest_s, read_max
         self.last, self.robots, self.strike = {}, {}, {}
         self.dead = {h: t for h, t in (resting or {}).items() if t > time.time()}
-        self.stat = {'requests': 0, 'robots': 0, 'strikes': 0, 'errors': 0, 'rested': 0, 'arcgis_exempt': 0}
+        self.stat = {'requests': 0, 'robots': 0, 'strikes': 0, 'errors': 0, 'rested': 0, 'host_rule': 0}
+        self.job = job
+        self.area = ''                # Nov 10: the bot sets the area it works on; a refused layer goes on the needs-download list with it
+        self.needs = []               # Nov 10: [(area, url, status, why)] a layer url this run may not or could not fetch
+        _ALL.append(self)
         self.refused = {}
         self.slow_used = {}
         self.blocked = {}             # addendum: host:port -> (status, why) once robots.txt says no to the whole site or is unreadable
@@ -92,8 +106,7 @@ class Manners:
         a time-out, no connection) = we cannot know the rules, so this run does NOT fetch from that host:port, and the failure is
         never cached. The cache keeps the real status (200/404/410). The robots read is a request like any other (A5)."""
         h = self.host(u)
-        if ARCGIS_EXEMPT and ARCGIS_API.search(urllib.parse.urlparse(u).path or ''):
-            self.stat['arcgis_exempt'] += 1; return True      # HQ Oct 27 10:57 PM exemption, now opt-in only (Nov 3)
+        if not HR.host_ok(u)[0]: return False                # Nov 10: the host rules first; robots.txt of a blocked host is never read
         if self.keyed(u):
             self.stat['keyed_api'] = self.stat.get('keyed_api', 0) + 1; return True   # Brandon Oct 29 9:34 AM: key = permission, /api/ only
         rk = self.rkey(u)
@@ -129,11 +142,23 @@ class Manners:
             except Exception: all_no = True  # noqa: BLE001
             if all_no: self.blocked[rk] = ('robots', 'robots.txt disallows the whole site for us')
         elif st in (404, 410): self.robots[rk] = None          # no rules
+        elif st in (401, 403):                                  # Nov 10: a robots.txt 401 / 403 counts as a Disallow (not retried as unreadable)
+            self.robots[rk] = False; self.robots_disallow = getattr(self, 'robots_disallow', set()) | {rk}
+            self.blocked[rk] = ('robots', f'robots.txt answered {st}: counted as a Disallow')
+            self.for_person.append((ru, f'robots.txt answered {st} (counted as a Disallow): a person downloads what is needed from {rk}'))
         else:
             self.robots[rk] = False                             # unknown rules: refuse this run (not cached)
             self.blocked[rk] = ('robots-unreadable', f'robots.txt answered {st}')   # addendum: every queued request to it is dropped
             self.stat['robots_unreadable'] = self.stat.get('robots_unreadable', 0) + 1
             self.for_person.append((ru, f'robots.txt answered {st}: nothing fetched from {rk} this run'))
+
+    def need(self, u, status, why):
+        """Nov 10: a layer url this run may not fetch -> the needs-download list (only layer urls: ArcGIS REST, a data download)."""
+        if not re.search(r'/(rest/services|FeatureServer|MapServer)/|\.(geojson|json|zip|kml|kmz|gpkg)(\?|$)', str(u), re.I): return
+        su = safe_url(u).split('?')[0]
+        su = re.sub(r'/query/?$', '', su)
+        if any(x[1] == su for x in self.needs): return
+        self.needs.append((self.area or '', su, status, why))
 
     @staticmethod
     def _cache_path(key): return os.path.join(CACHE_DIR, hashlib.sha256(key.encode()).hexdigest()[:40] + '.json')
@@ -183,15 +208,23 @@ class Manners:
         status = int HTTP status, or 'rest' / 'robots' / 'robots-unreadable' / 'deferred' / 'crawl-delay' / 'err:...' (next_run() tells which mean
         'try again next run')."""
         h = self.host(u)
+        hok, hwhy = HR.host_ok(u)
+        if not hok:   # Nov 10: the ONE pre-request check (kpc_host_rules.py), before rest / robots / pacing / cache: no request of any kind
+            self.stat['host_rule'] += 1; self.need(u, 'host-rule', hwhy)
+            return 'host-rule', {}, b'', u
         if self.dead.get(h, 0) > time.time(): self.stat['rested'] += 1; return 'rest', {}, b'', u
         bl = self.blocked.get(self.rkey(u))
-        if bl and not self.keyed(u) and not (ARCGIS_EXEMPT and ARCGIS_API.search(urllib.parse.urlparse(u).path or '')):
+        if bl and not self.keyed(u):
             # addendum (Quality's api.pota.app slip, Nov 3): once robots.txt said no to the site or could not be read, a request
             # already queued for that host is dropped here, before any pacing or network
             self.stat['dropped_queued'] = self.stat.get('dropped_queued', 0) + 1; self.dropped.append((safe_url(u), bl[0]))
+            if bl[0] == 'robots': self.need(u, 'robots', bl[1])
             return bl[0], {}, b'', u
-        if not self.robots_ok(u):   # A13: a robots.txt we could not read is a next-run status, not a Disallow
-            return ('robots-unreadable' if self.robots.get(self.rkey(u)) is False else 'robots'), {}, b'', u
+        if not self.robots_ok(u):   # A13: a robots.txt we could not read (5xx / unreachable) is a next-run status; 401 / 403 / a Disallow is 'robots'
+            rk = self.rkey(u)
+            st = 'robots-unreadable' if self.robots.get(rk) is False and rk not in getattr(self, 'robots_disallow', set()) else 'robots'
+            if st == 'robots': self.need(u, 'robots', 'robots.txt does not allow it (a 403 counts as no)')
+            return st, {}, b'', u
         cd = self.crawl_delay(u)
         if cd > MAX_CRAWL_DELAY:
             self.stat['crawl_delay_skip'] = self.stat.get('crawl_delay_skip', 0) + 1
@@ -346,3 +379,28 @@ def pdf_text(body, pages=2):
     if len(txt.strip()) < 20:
         txt = ' '.join(re.findall(r'\(([^()\\]{2,120})\)', body.decode('latin-1', 'replace'))[:800])
     return '' if looks_binary(txt) else txt   # Oct 28: never hand compressed bytes on as text
+
+
+# Nov 10: the ONE needs-download list. With KPC_NEEDS_FILE set (the hunter / finder / harvester / collector / engine workflows set it to
+# data/needs-download.json and commit it with their other files), every layer url a Manners refused this run is added there as a
+# row (who = brandon / never from the host rules, or brandon for a robots Disallow). Bots never save a layer; they only add rows.
+_ALL = []
+
+
+def write_needs(path=None):
+    path = path or os.environ.get('KPC_NEEDS_FILE')
+    if not path: return 0
+    rows = []
+    try: ND = importlib.util.spec_from_file_location('kpc_needs_download', os.path.join(os.path.dirname(os.path.abspath(__file__)), 'kpc_needs_download.py'))
+    except Exception: return 0  # noqa: BLE001
+    nd = importlib.util.module_from_spec(ND); ND.loader.exec_module(nd)
+    for m in _ALL:
+        for area, u, st, why in m.needs:
+            rows.append(nd.row(area, u, f'{m.job}: {why}', m.job, who=None if st == 'host-rule' else 'brandon'))
+    if not rows: return 0
+    a, upd, saved = nd.add(rows, path)
+    print(f'::notice title=needs-download::{len(rows)} layer(s) this run may not fetch -> {path} ({a} new, {upd} updated)', flush=True)
+    return len(rows)
+
+
+atexit.register(lambda: write_needs())

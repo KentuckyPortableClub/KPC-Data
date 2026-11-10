@@ -75,7 +75,9 @@ check('next run: /a still from the disk cache and robots.txt not re-read', a3[0]
 # --- A1: robots.txt that fails = do not fetch; never cached; only 404/410 = no rules ---
 for base, code in ((B503, '503'), (B403, '403'), (B401, '401')):
     Mx = K.Manners('a1'); Mx.gap = 0.1; r = Mx.get(base + '/x')
-    check(f'A1 robots.txt {code} -> nothing fetched, listed for a person', r[0] == 'robots-unreadable' and Mx.for_person and 'robots.txt answered ' + code in Mx.for_person[-1][1], str(Mx.for_person))
+    # Nov 10: a robots.txt 401 / 403 counts as a Disallow ('robots'); only 5xx / unreachable stays 'robots-unreadable' (next run)
+    want = 'robots' if code in ('401', '403') else 'robots-unreadable'
+    check(f'A1 robots.txt {code} -> nothing fetched ({want}), listed for a person', r[0] == want and Mx.for_person and 'robots.txt answered ' + code in Mx.for_person[-1][1], str((r[0], Mx.for_person)))
 check('A1 a failed robots.txt is never cached', not any(c['key'].startswith('robots ') and c['st'] not in (200, 404, 410) for c in cache_files()), str([(c['key'], c['st']) for c in cache_files()]))
 Mx = K.Manners('a1 404'); Mx.gap = 0.1; r = Mx.get(B404 + '/x')
 check('A1 robots.txt 404 -> no rules, allowed; cached with the real status 404', r[0] == 200 and any(c['key'] == 'robots ' + B404 + '/robots.txt' and c['st'] == 404 for c in cache_files()))
@@ -152,11 +154,11 @@ before = dict(hits)
 out = list(MQ.fetch_all([BQ403 + '/q/park/CA-2123', BQ403 + '/q/park/CA-2359', B + '/q/ok1', BQ403 + '/q/park/CA-2131']))
 st = [r[0] for _, r in out]
 check('Q-drop robots.txt 403: the first read and the 2 queued reads to that host make NO request',
-      not any(k.startswith('/q/park') for k in hits) and st[0] == 'robots-unreadable' and st[1] == st[3] == 'robots-unreadable', str(st))
+      not any(k.startswith('/q/park') for k in hits) and st[0] == 'robots' and st[1] == st[3] == 'robots', str(st))   # Nov 10: a 403 robots.txt = a Disallow
 check('Q-drop another host in the same queue is still read', st[2] == 200 and hits.get('/q/ok1') == 1)
 check('Q-drop the dropped reads are listed for a person with the count', len(MQ.dropped) >= 2 and any('2 queued request(s) dropped' in w for _, w in MQ.for_person), str(MQ.for_person[-1:]))
 r = MQ.get(BQ403 + '/q/park/CA-9999')
-check('Q-drop a later single get() to the same host is dropped before any pacing (status robots-unreadable)', r[0] == 'robots-unreadable' and '/q/park/CA-9999' not in hits and MQ.stat.get('dropped_queued', 0) >= 3)
+check('Q-drop a later single get() to the same host is dropped before any pacing (status robots: a 403 = a Disallow)', r[0] == 'robots' and '/q/park/CA-9999' not in hits and MQ.stat.get('dropped_queued', 0) >= 3)
 out = list(MQ.fetch_all([BQNO + '/q/x1', BQNO + '/q/x2']))
 check('Q-drop robots.txt "Disallow: /" blocks the whole site: status robots, no request', [r[0] for _, r in out] == ['robots', 'robots'] and '/q/x1' not in hits and '/q/x2' not in hits)
 out = list(MQ.fetch_all([B + '/private/q1', B + '/q/ok2', B + '/q/ok3']))

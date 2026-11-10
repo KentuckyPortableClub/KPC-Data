@@ -19,7 +19,7 @@ Per country:
            (open, candidates, layers tried, 'no-layer' agency groups for chat 8) + a COUNT line 'covered before -> after'.
 Env: COUNTRIES (blank = the whole world list in gap order, skipping countries finished in this stage) · LINKS · MINUTES (55)
      · PER_COUNTRY_MIN (25: a big country carries on next chunk) · W9=0 · W2=0 (stage 2 / 3 flags: leave OFF)
-Manners: the harvester's (robots.txt, ArcGIS REST exempt, 2 s per host, a day's rest after 3 strikes). Never fails (exit 0)."""
+Manners: the harvester's (Nov 10: the host rules first, then robots.txt with no exemption and a 403 = no, 2 s per host, a day's rest after 3 strikes). Never fails (exit 0)."""
 import copy, glob, json, os, pathlib, re, sys, time, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from kpc_json_any import load_json_any, save_json_gz, save_text_gz  # noqa: E402
@@ -128,6 +128,7 @@ def layer_urls(cc):
 
 
 def run_country(cc, open_, K, P, cfg, table, hstate, Q):
+    H.AREA[0] = 'W-' + str(cc).upper()   # Nov 10: needs-download rows carry the country
     t0 = time.time()
     rec = {'cc': cc, 'run': TODAY, 'parks': len(P), 'open': len(open_), 'key_candidates': 0, 'layer_candidates': 0, 'layers_tried': [], 'no_layer_groups': {}}
     kc = key_candidates(cc, open_, K, P)

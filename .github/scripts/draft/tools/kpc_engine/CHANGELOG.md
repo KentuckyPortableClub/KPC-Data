@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.5.1: 2026-11-10 (host rules, no robots exemption, time budget)
+
+### Changed
+- **Host rules first.** Every read goes through the club's `kpc_host_rules.py` (through `kpc_manners`) before robots.txt and
+  before any request. Never-contact hosts, every `services*.arcgis.com` host (`services-eu1` too) and the saved-copy-only
+  list get no request of any kind. Those layers become rows on `data/needs-download.json`, and the engine never saves a layer.
+- **No ArcGIS REST robots exemption.** It is gone from `kpc_manners` and from `vendor/`. A 401 / 403 robots.txt counts as a Disallow.
+- **Time budget.** `Polite.deadline`: past `--max-minutes` no request is made, and a row that ran into the budget is not kept
+  (it is redone with `--resume`). The URL checks get at most 5 minutes more. The workflow also stages the output and keeps it
+  only on exit 0 / 3, so a killed run writes nothing.
+
 ## 0.5.0: 2026-11-02 (key doctor, bot fixes as patches, storage guard)
 
 ### Added

@@ -656,7 +656,10 @@ Some things to keep in mind:
 4. **Every link must open. Never guess a URL.** Copy text **word for word**, in its own language.
 5. **Blocked is not "not found."** Blocked rows are logged in `blocked.csv` and retried.
 6. **Be polite:** at most 1 request every 2 seconds per website, and never more than 2 workers on one agency's site. Obey
-   robots.txt (ArcGIS REST API paths are the documented exception).
+   robots.txt with no exception (Nov 10: the old ArcGIS REST exemption is gone; a 401 / 403 robots.txt is a no). Before any
+   request, the club's host rules (`kpc_host_rules.py`) apply. Never-contact hosts, every `services*.arcgis.com` host
+   (`services-eu1` too) and `apps.fs.usda.gov` get no request at all, robots.txt included. Those layers go on the one
+   needs-download list (`data/needs-download.json`), and the engine never saves a layer.
 7. **Write only inside `--out`.** Never edit the club's data.
 8. **POTA pins never move.**
    - **R-G12:** a record whose edge is within 150 m of the pin is a candidate only.

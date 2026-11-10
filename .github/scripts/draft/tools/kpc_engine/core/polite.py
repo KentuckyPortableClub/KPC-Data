@@ -1,6 +1,10 @@
 """Polite reading for every plug-in (spec PART 3.1). A thin layer over the club's kpc_manners (imported, never copied):
 
-- robots.txt obeyed (a 403 robots.txt = no rules); ArcGIS REST (/rest/services/, /sharing/rest/) exempt, as kpc_manners says;
+- the club's host rules first (kpc_host_rules.py through kpc_manners, Nov 10): never-contact hosts, every services*.arcgis.com host
+  and the saved-copy-only list get no request of any kind, robots.txt included ('blocked (host rule ...)');
+- robots.txt obeyed with NO exemption (Nov 10: the old ArcGIS REST exemption is gone); a 401 / 403 robots.txt is a Disallow;
+- a time budget (Nov 10): past Polite.deadline no request is made (the read is 'not read: time budget used up', never 'dead'),
+  so a run ends inside its budget instead of being killed half way;
 - 1 request / 2 s per host (kpc_manners) + a per-host lock, so this process never has 2 requests on one host at once;
 - 429 / 5xx back-off and three strikes = a day's rest (kpc_manners; the rest list is saved in state.json);
 - an honest User-Agent naming the club site (kpc_manners; KPC_CONTACT is appended when set). Never spoofed;
@@ -37,7 +41,7 @@ DEFAULT_CONTACT = 'https://github.com/KentuckyPortableClub (Kentucky Portable Cl
 
 
 class Polite:
-    def __init__(self, job='KPC park-info engine', cache_dir=None, resting=None, offline=False, gap=2.0):
+    def __init__(self, job='KPC park-info engine', cache_dir=None, resting=None, offline=False, gap=2.0, deadline=None):
         M = ref.manners()
         self.m = M.Manners(job, resting, gap=gap)
         contact = os.environ.get('KPC_CONTACT') or DEFAULT_CONTACT
@@ -45,6 +49,7 @@ class Polite:
         self.cache = pathlib.Path(cache_dir) if cache_dir else None
         if self.cache: self.cache.mkdir(parents=True, exist_ok=True)
         self.offline = offline
+        self.deadline = deadline   # Nov 10: time.time() after which no request is made (the engine sets it from --max-minutes)
         self.locks, self._lk = {}, threading.Lock()
         self.blocked = []          # dicts: domain, ref, kind, reason, date, url
         self.hosts_used = {}
@@ -83,6 +88,8 @@ class Polite:
         """None when readable, else the BLOCKED reason (never 'not found')."""
         s = str(status)
         if s == 'robots': return 'blocked (robots)'
+        if s == 'robots-unreadable': return 'blocked (robots.txt not readable this run)'
+        if s == 'host-rule': return 'blocked (host rule: saved copies only or never contact; on the needs-download list)'
         if s == 'rest': return 'blocked (host resting: 3 strikes)'
         if s.startswith('err'):
             if re.search(r'SSL|CERTIFICATE|TLS|EOF occurred', s, re.I): return 'blocked (TLS failure)'
@@ -102,6 +109,8 @@ class Polite:
         c = self._cache_read(u, ttl_days)
         if c: return c
         if self.offline: return Resp(u, 'offline', blocked='blocked (offline: no cache)')
+        if self.deadline and time.time() > self.deadline:   # Nov 10: past the time budget: no request, not 'dead', not logged as blocked
+            return Resp(u, 'deadline', blocked='not read (time budget used up; the next run reads it)')
         h = self.host(u)
         self.hosts_used[h] = self.hosts_used.get(h, 0) + 1
         with self._lock(h):
