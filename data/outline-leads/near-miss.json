@@ -37,8 +37,8 @@
   "MA": 6,
   "MD": 5,
   "ME": 3,
-  "MI": 11,
-  "MN": 4,
+  "MI": 12,
+  "MN": 2,
   "MO": 3,
   "MS": 5,
   "MT": 5,
@@ -6338,17 +6338,17 @@
     },
     {
      "acres": 1209.74,
-     "id": "wid712642",
+     "id": "sgwia712642",
      "km": 0.0,
-     "layer": "Wisconsin DNR managed properties",
+     "layer": "Wisconsin DNR (land, state GIS table)",
      "name": "Kinnickinnic River Fishery Area",
      "why": "same kind of place (wma)"
     },
     {
      "acres": 1209.74,
-     "id": "sgwia712642",
+     "id": "wid712642",
      "km": 0.0,
-     "layer": "Wisconsin DNR (land, state GIS table)",
+     "layer": "Wisconsin DNR managed properties",
      "name": "Kinnickinnic River Fishery Area",
      "why": "same kind of place (wma)"
     },
@@ -6410,17 +6410,17 @@
     },
     {
      "acres": 1209.74,
-     "id": "wid712642",
+     "id": "sgwia712642",
      "km": 0.0,
-     "layer": "Wisconsin DNR managed properties",
+     "layer": "Wisconsin DNR (land, state GIS table)",
      "name": "Kinnickinnic River Fishery Area",
      "why": "same kind of place (wma)"
     },
     {
      "acres": 1209.74,
-     "id": "sgwia712642",
+     "id": "wid712642",
      "km": 0.0,
-     "layer": "Wisconsin DNR (land, state GIS table)",
+     "layer": "Wisconsin DNR managed properties",
      "name": "Kinnickinnic River Fishery Area",
      "why": "same kind of place (wma)"
     },
@@ -6962,17 +6962,17 @@
     },
     {
      "acres": 578.03,
-     "id": "wid712780",
+     "id": "sgwia712780",
      "km": 0.0,
-     "layer": "Wisconsin DNR managed properties",
+     "layer": "Wisconsin DNR (land, state GIS table)",
      "name": "Rem-Love Creek",
      "why": "shares love"
     },
     {
      "acres": 578.03,
-     "id": "sgwia712780",
+     "id": "wid712780",
      "km": 0.0,
-     "layer": "Wisconsin DNR (land, state GIS table)",
+     "layer": "Wisconsin DNR managed properties",
      "name": "Rem-Love Creek",
      "why": "shares love"
     }
@@ -6980,46 +6980,6 @@
    "n": "Love and Strutt Creeks State Fish and Wildlife Area",
    "site": false,
    "st": "WI"
-  },
-  "US-10723": {
-   "acts": 28,
-   "leads": [
-    {
-     "acres": 38.08541147,
-     "id": "sgmnc215",
-     "km": 0.26,
-     "layer": "Minnesota DNR (preserve, state GIS table)",
-     "name": "Crystal Spring",
-     "why": "shares crystal"
-    },
-    {
-     "acres": 0.0,
-     "id": "sgmnf4456",
-     "km": 0.26,
-     "layer": "DNR Management Units (forest, state GIS table)",
-     "name": "Crystal Spring",
-     "why": "shares crystal"
-    },
-    {
-     "acres": 138.79314902,
-     "id": "sgmnc132",
-     "km": 0.97,
-     "layer": "Minnesota DNR (preserve, state GIS table)",
-     "name": "Falls Creek",
-     "why": "same kind of place (snp)"
-    },
-    {
-     "acres": 139.0,
-     "id": "207680",
-     "km": 0.97,
-     "layer": "DNR Ecologic and Water Resources",
-     "name": "Falls Creek State Scientific and Natural Area",
-     "why": "same kind of place (snp)"
-    }
-   ],
-   "n": "Crystal Spring SNA Scenic Reserve",
-   "site": false,
-   "st": "MN"
   },
   "US-10744": {
    "acts": 3,
@@ -8300,30 +8260,6 @@
    "n": "Juneau Channel Islands State Park",
    "site": false,
    "st": "AK"
-  },
-  "US-11872": {
-   "acts": 6,
-   "leads": [
-    {
-     "acres": 135.65313898,
-     "id": "sgmnc88",
-     "km": 0.0,
-     "layer": "Minnesota DNR (preserve, state GIS table)",
-     "name": "Lost 40",
-     "why": "shares lost"
-    },
-    {
-     "acres": 0.0,
-     "id": "sgmnf4277",
-     "km": 0.0,
-     "layer": "DNR Management Units (forest, state GIS table)",
-     "name": "Lost 40",
-     "why": "shares lost"
-    }
-   ],
-   "n": "Lost 40 SNA State Natural Area",
-   "site": false,
-   "st": "MN"
   },
   "US-11944": {
    "acts": 17,
@@ -11378,14 +11314,6 @@
    "leads": [
     {
      "acres": 663.0,
-     "id": "ind3171",
-     "km": 0.0,
-     "layer": "Indiana DNR properties",
-     "name": "Brookville Lake",
-     "why": "shares brookville"
-    },
-    {
-     "acres": 663.0,
      "id": "sgina3171",
      "km": 0.0,
      "layer": "Indiana DNR (land, state GIS table)",
@@ -11397,6 +11325,14 @@
      "id": "sginc3171",
      "km": 0.0,
      "layer": "Indiana DNR + INHD (all managed lands) (land, state GIS table)",
+     "name": "Brookville Lake",
+     "why": "shares brookville"
+    },
+    {
+     "acres": 663.0,
+     "id": "ind3171",
+     "km": 0.0,
+     "layer": "Indiana DNR properties",
      "name": "Brookville Lake",
      "why": "shares brookville"
     },
@@ -11514,17 +11450,17 @@
     },
     {
      "acres": 3138.17,
-     "id": "wid713547",
+     "id": "sgwia713547",
      "km": 0.0,
-     "layer": "Wisconsin DNR managed properties",
+     "layer": "Wisconsin DNR (land, state GIS table)",
      "name": "Wolf River Bottoms Wildlife Area",
      "why": "shares bottoms, wolf"
     },
     {
      "acres": 3138.17,
-     "id": "sgwia713547",
+     "id": "wid713547",
      "km": 0.0,
-     "layer": "Wisconsin DNR (land, state GIS table)",
+     "layer": "Wisconsin DNR managed properties",
      "name": "Wolf River Bottoms Wildlife Area",
      "why": "shares bottoms, wolf"
     },
@@ -11802,7 +11738,7 @@
    "leads": [
     {
      "acres": 0.0,
-     "id": "sgwac3529377",
+     "id": "sgwac3555869",
      "km": 0.07,
      "layer": "Washington State Department of Natural Resources (preserve, state GIS table)",
      "name": "Teanaway Com Forest",
@@ -11810,7 +11746,7 @@
     },
     {
      "acres": 0.0,
-     "id": "sgwac3526365",
+     "id": "sgwac3552864",
      "km": 0.57,
      "layer": "Washington State Department of Natural Resources (preserve, state GIS table)",
      "name": "Teanaway Com Forest",
@@ -11818,7 +11754,7 @@
     },
     {
      "acres": 0.0,
-     "id": "sgwac3515064",
+     "id": "sgwac3541571",
      "km": 0.58,
      "layer": "Washington State Department of Natural Resources (preserve, state GIS table)",
      "name": "Teanaway Com Forest",
@@ -11826,7 +11762,7 @@
     },
     {
      "acres": 0.0,
-     "id": "sgwac3526370",
+     "id": "sgwac3552869",
      "km": 0.71,
      "layer": "Washington State Department of Natural Resources (preserve, state GIS table)",
      "name": "Teanaway Com Forest",
@@ -13037,6 +12973,38 @@
    "site": false,
    "st": "TX"
   },
+  "US-6816": {
+   "acts": 5,
+   "leads": [
+    {
+     "acres": 916.0,
+     "id": "mid342",
+     "km": 0.0,
+     "layer": "Michigan DNR project boundaries",
+     "name": "Lime Island State Recreation Area",
+     "why": "shares lime"
+    },
+    {
+     "acres": 933.1095996,
+     "id": "sgmia30",
+     "km": 0.0,
+     "layer": "Michigan DNR Parks & Recreation (park, state GIS table)",
+     "name": "Lime Island Recreation Area",
+     "why": "shares lime"
+    },
+    {
+     "acres": 940.75282609,
+     "id": "sgmic41",
+     "km": 0.0,
+     "layer": "Michigan State Park Boundaries (park, state GIS table)",
+     "name": "Lime Island Recreation Area",
+     "why": "shares lime"
+    }
+   ],
+   "n": "Lime Island State Harbor",
+   "site": false,
+   "st": "MI"
+  },
   "US-6875": {
    "acts": 81,
    "leads": [
@@ -13170,17 +13138,17 @@
    "leads": [
     {
      "acres": 2.0,
-     "id": "ind4648",
+     "id": "sgina4648",
      "km": 0.39,
-     "layer": "Indiana DNR properties",
+     "layer": "Indiana DNR (land, state GIS table)",
      "name": "New Harmony Public Access Site",
      "why": "shares harmony"
     },
     {
      "acres": 2.0,
-     "id": "sgina4648",
+     "id": "ind4648",
      "km": 0.39,
-     "layer": "Indiana DNR (land, state GIS table)",
+     "layer": "Indiana DNR properties",
      "name": "New Harmony Public Access Site",
      "why": "shares harmony"
     },
@@ -14794,7 +14762,7 @@
     },
     {
      "acres": 6122.29275635,
-     "id": "sgcoc365",
+     "id": "sgcoc366",
      "km": 0.85,
      "layer": "Colorado Parks & Wildlife (CPW AGOL org ttNGmDvKQA7oeDQ3) (wild, state GIS table)",
      "name": "Granada SWA",
@@ -14937,8 +14905,8 @@
  "skipped": [],
  "totals": {
   "canada": 257,
-  "name_word": 476,
-  "parks": 627,
-  "us": 371
+  "name_word": 475,
+  "parks": 626,
+  "us": 370
  }
 }
