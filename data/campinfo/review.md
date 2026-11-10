@@ -11,7 +11,7 @@ Updated 2026-11-10. Every fact in <area>.json carries its source url, read date 
 | US-VA | 163 | 2 | 74 | 0 | 0 | 0 | 40 | 30 | 17 | 2 | 19 | 0 |
 | US-WV | 101 | 1 | 47 | 28 | 0 | 0 | 0 | 0 | 25 | 0 | 54 | 0 |
 | US-GA | 205 | 61 | 64 | 4 | 0 | 0 | 0 | 8 | 68 | 8 | 131 | 0 |
-| US-AL | 100 | 12 | 34 | 1 | 0 | 0 | 0 | 4 | 49 | 6 | 60 | 7 |
+| US-AL | 100 | 12 | 34 | 1 | 0 | 0 | 0 | 4 | 49 | 6 | 60 | 0 |
 | US-SC | 77 | 19 | 26 | 24 | 0 | 0 | 0 | 7 | 1 | 16 | 31 | 0 |
 | US-FL | 299 | 60 | 38 | 0 | 23 | 0 | 147 | 8 | 23 | 0 | 106 | 0 |
 | US-MS | 196 | 21 | 45 | 0 | 2 | 0 | 0 | 6 | 122 | 6 | 59 | 0 |
@@ -60,8 +60,7 @@ Updated 2026-11-10. Every fact in <area>.json carries its source url, read date 
 ## Needs a secret / not built yet
 
 - RIDB_API_KEY is not set in KPC-Data: every federal (Recreation.gov) row has status "needs RIDB_API_KEY secret in KPC-Data". Free key: ridb.recreation.gov, Profile. Add it under Settings -> Secrets and variables -> Actions.
-- Canada: no campground rows exist in KPC-Data yet (no campfed / campstate file for CA-xx; parkinfo/CA.json lists activities only), so the Canadian areas are marked done with nothing read. Parks Canada camping needs its own list first.
-- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AL FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AR FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AZ FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CA FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CO FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CT FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-DE FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
+- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AL FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AR FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AZ FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CA FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CO FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CT FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-DE FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
@@ -717,7 +716,7 @@ Updated 2026-11-10. Every fact in <area>.json carries its source url, read date 
   - map.date_how = "web page, no date in the link" · “link “Interactive Map””
   - map.url = "https://conservationgis.alabama.gov/alapark" · “link “Interactive Map” -> https://conservationgis.alabama.gov/alapark”
   - rules.pets = "pet-friendly options , spacious pads, and more! Whet" · “Gulf Coast beaches to scenic mountain vistas at our campgrounds. Enjoy modern amenities, pet-friendly options , spacious pads, and more! Whe”
-- **Blue Springs State Park: Cabins (3 units)** (US-1034:1, state, status ok, no campground facts even in a browser, 5 facts, 303 ft) · [www.alapark.com](https://www.alapark.com/camping)
+- **Blue Springs State Park: Cabins (3 units)** (US-1034:1, state, status ok, no campground facts even in a browser, 5 facts) · [www.alapark.com](https://www.alapark.com/camping)
   - booking.how = "online: reserve.alapark.com" · “link “Educational Programs””
   - booking.url = "https://reserve.alapark.com/register/" · “link “Educational Programs” -> https://reserve.alapark.com/register/”
   - map.date_how = "web page, no date in the link" · “link “Interactive Map””
