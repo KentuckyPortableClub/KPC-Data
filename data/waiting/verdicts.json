@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-10T00:51Z",
+ "checked": "2026-11-10T01:47Z",
  "switched_on": false,
  "results": [
   {
@@ -799,7 +799,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dA/4ed90eb9f3/shades_trail.pdf?language_id=1"
+    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dA/80c135b486/lincoln_trail.pdf?language_id=1"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1048,9 +1048,11 @@
   {
    "path": "data/docs/US-WI.json",
    "kind": "docs",
-   "why": [],
+   "why": [
+    "F-D3 15 of 20 re-tested links dead, e.g. https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=BIG%20SWA"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/docs/US-WV.json",
@@ -3222,6 +3224,18 @@
    "why": [],
    "notes": [],
    "verdict": "PASS"
+  },
+  {
+   "path": "data/truth/US-WA.json",
+   "kind": "truth",
+   "why": [
+    "F-R2 5 OFF rows share the size 564.0 ac",
+    "F-R3 157 of 188 sized parks are OFF (over half: a reading problem?)"
+   ],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "HOLD"
   },
   {
    "path": "data/truth/US-WI.json",

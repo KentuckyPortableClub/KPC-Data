@@ -840,6 +840,26 @@
    "status": "done",
    "updated": "2026-11-09"
   },
+  "US-WA": {
+   "checked": 536,
+   "counts": {
+    "agree": 31,
+    "handover_hints": 20,
+    "no_page": 1,
+    "no_size": 166,
+    "off": 157,
+    "ours_unknown": 29,
+    "parks": 536,
+    "retired": 0,
+    "unsure": 108,
+    "weak": 17,
+    "with_outline": 492
+   },
+   "left": 0,
+   "parks": 536,
+   "status": "done",
+   "updated": "2026-11-10"
+  },
   "US-WI": {
    "checked": 348,
    "counts": {
@@ -915,47 +935,44 @@
  },
  "last": {
   "areas": [
-   "US-OR"
+   "US-WA"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 12,
-   "deferred": 1,
-   "dropped_queued": 10,
+   "browser": 9,
+   "dropped_queued": 1,
    "errors": 0,
-   "for_person": 1,
    "for_person_urls": [
     [
-     "https://maps.app.goo.gl/robots.txt",
-     "robots.txt answered 400: nothing fetched from maps.app.goo.gl this run"
+     "https://www.fws.org/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.fws.org this run"
     ],
     [
-     "https://www.blm.gov/sites/default/files/documents/files/nwo_whittakercrk_brochure.pdf",
-     "HTTP 403 twice"
+     "https://www.nww.usace.army.mil/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.nww.usace.army.mil this run"
     ]
    ],
-   "requests": 497,
+   "requests": 580,
    "rested": 0,
-   "retry403": 1,
-   "robots": 3,
-   "robots_unreadable": 1,
-   "strikes": 2
+   "robots": 2,
+   "robots_unreadable": 2,
+   "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 28,
-   "no_size": 231,
-   "ours_unknown": 26,
-   "pages_read": 435,
-   "parks": 440,
+   "handover_hints": 20,
+   "no_size": 167,
+   "ours_unknown": 29,
+   "pages_read": 526,
+   "parks": 536,
    "retired": 0,
-   "size_agree": 51,
-   "size_off": 30,
-   "size_unsure": 46,
+   "size_agree": 31,
+   "size_off": 157,
+   "size_unsure": 108,
    "skipped_fresh": 0,
-   "with_outline": 384
+   "with_outline": 492
   },
-  "when": "2026-11-09"
+  "when": "2026-11-10"
  },
  "news": {
   "https://dwr.virginia.gov/news/": {
