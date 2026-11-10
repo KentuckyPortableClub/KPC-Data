@@ -1,12 +1,12 @@
 {
- "made": "2026-11-10 15:18 UTC",
+ "made": "2026-11-10 18:41 UTC",
  "snap": {
   "date": "2026-11-10",
   "outlines": {
    "US": {
-    "official": 11262,
-    "pin": 1424,
-    "approximate": 419
+    "official": 11261,
+    "pin": 1435,
+    "approximate": 410
    },
    "Canada": {
     "official": 4372,
@@ -1481,11 +1481,11 @@
    "waiting_on": "proposals: answer YES / NO / NOT SURE in an inbox batch"
   },
   "campground info bot": {
-   "areas": "left: 14",
+   "areas": "left: 13",
    "last_run": "2026-11-10",
-   "made": "US-WY: done; {\"camps\": 301, \"needs_browser\": 3, \"needs_key\": 162, \"no_page\": 79, \"not_official\": 0, \"ok\": 5, \"other\": 52, \"resting\": 0, \"robots\": 0, \"with_booking\": 41, \"with_elevation\": 0, \"with_facts\": 20, \"with",
+   "made": "US-OK: done; {\"camps\": 199, \"needs_browser\": 0, \"needs_key\": 84, \"no_page\": 0, \"not_official\": 69, \"ok\": 36, \"other\": 10, \"resting\": 0, \"robots\": 0, \"with_booking\": 41, \"with_elevation\": 0, \"with_facts\": 36, \"with",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42791424421",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42846926687",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "closures super-bot": {
@@ -1507,9 +1507,9 @@
   "key-doctor": {
    "areas": "",
    "last_run": "2026-11-10",
-   "made": "NOs: 434 of 723 NOs landed; 289 missing (re-applied to overrides.fixed.json); 1026 came back in the key release: 12286 parks pass, 359 held, 49 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-10.md ",
+   "made": "NOs: 434 of 723 NOs landed; 289 missing (re-applied to overrides.fixed.json); 1019 came back in the key release: 12287 parks pass, 359 held, 49 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-10.md ",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42820412810",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42877383832",
    "waiting_on": "chat 10 (came-back NOs / stuck areas); per-park release in release-approved"
   },
   "layer intake": {
@@ -1562,7 +1562,7 @@
   },
   "waiting room": {
    "last_run": "2026-11-10",
-   "made": "284 files waiting over 3 days in data/waiting/in/ (e.g. US-SD.json)",
+   "made": "285 files waiting over 3 days in data/waiting/in/ (e.g. US-SD.json)",
    "result": "red",
    "waiting_on": "chat 11 (look at the waiting room run)"
   },
