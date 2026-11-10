@@ -20,6 +20,8 @@ permissions:
 concurrency:
   group: kpc-collector
   cancel-in-progress: false
+env:
+  KPC_NEEDS_FILE: data/needs-download.json   # Nov 10: a layer this bot may not fetch becomes a row on the ONE needs-download list (bots never save layers)
 jobs:
   collect:
     runs-on: ubuntu-latest
@@ -57,7 +59,7 @@ jobs:
           MINUTES: '40'
         run: |
           cd kpcdata && (python3 .github/scripts/kpc_intake_reader.py portals || { kpc_rc=$?; echo "::error title=kpc_intake_reader.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_intake_reader.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }) && python3 .github/scripts/kpc_gis_finders.py viewers portals || { kpc_rc=$?; echo "::error title=kpc_gis_finders.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_gis_finders.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
-          bash ../links/.github/scripts/kpc_push_data.sh . "GIS finders: map-viewer + portal layers (leads)" data/intake/found-layers.json data/intake/finders-seen.json || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          bash ../links/.github/scripts/kpc_push_data.sh . "GIS finders: map-viewer + portal layers (leads)" data/intake/found-layers.json data/intake/finders-seen.json data/needs-download.json || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: New work? (fingerprint of the Fable + atlas files + the layer files on branch intake-files)
         id: fp
         continue-on-error: true
@@ -84,7 +86,7 @@ jobs:
           echo "${{ steps.fp.outputs.fp }}" > data/intake/collector-seen.txt
           python3 .github/scripts/kpc_week_numbers.py || { kpc_rc=$?; echo "::error title=kpc_week_numbers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_week_numbers.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # the control panel's numbers, fresh after each collector run
           python3 .github/scripts/kpc_status.py board "Layer collector" green "LAYER lines + crawler layers pin-tested" "chat 11 answers data/waiting/questions/layers.json" || true   # ok: a status-board line (reporting only)
-          bash ../links/.github/scripts/kpc_push_data.sh . "layer collector: LAYER lines + crawler layers (questions for chat 11)" data/intake data/waiting/questions data/status || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          bash ../links/.github/scripts/kpc_push_data.sh . "layer collector: LAYER lines + crawler layers (questions for chat 11)" data/intake data/waiting/questions data/status data/needs-download.json || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Straight through (Brandon Oct 30 7:43 PM) - outside-research pairs left = start the next run now
         id: kept_green_4
         continue-on-error: true

@@ -42,6 +42,7 @@ def main():
     reads = load(NR, {}) or {}
     total, docs = 0, []
     for area in areas:
+        if M is not None: M.area = area   # Nov 10: needs-download rows carry the area
         R = ((load(OUT / f'{area}.json', {}) or {}).get('parks') or {})
         left = [r for r, x in R.items() if not str(x.get('verdict', '')).startswith('candidate')]
         if left: docs.append(area)

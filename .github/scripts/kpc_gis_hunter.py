@@ -357,6 +357,7 @@ def main():
     done_R = {}
     for area in areas:
         if late(): break
+        M.area = area   # Nov 10: a refused layer goes on the needs-download list with its area
         P = pins(area); todo = [r for r, _ in pool[area]]
         R = {r: {'park': (P.get(r) or (0, 0, ''))[2], 'area': area, 'why_not': t, 'hits': [], 'leads': [], 'tried': []} for r, t in pool[area]}
         step_a(area, todo, P, R)

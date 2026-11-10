@@ -142,7 +142,8 @@ spec's bands.
 | retries / back-off | kpc_manners | 429/5xx back-off; 3 strikes = host rests a day (saved in `state.json`) | never lower |
 | timeout | `Polite.get(timeout=40)` | 40 s | 30-90 |
 | cache TTLs | `ttl_days` per call: pages 7, layer info / fields 30, `REREAD_DAYS` 30 | 7-60 |
-| robots.txt | obeyed; ArcGIS REST exempt as kpc_manners says | locked |
+| robots.txt | obeyed, no exemption (Nov 10); a 401 / 403 robots.txt = no; host rules first (`kpc_host_rules.py`) | locked |
+| time budget | `--max-minutes`: no request past it (`Polite.deadline`), a row cut by it is redone next run; URL checks get 5 min more (`POST_GRACE_S`) | locked |
 | User-Agent | names the job + `KPC_CONTACT` | **LOCKED** |
 
 Symptom: many "blocked (host resting: 3 strikes)" → do NOT speed up; rerun tomorrow with `--resume`.

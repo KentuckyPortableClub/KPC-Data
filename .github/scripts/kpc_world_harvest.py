@@ -29,13 +29,13 @@ MAX_LAYERS = 40           # layers read per service
 STAT = {'requests': 0, 'hits': 0, 'leads': 0, 'already_read': 0, 'skipped': 0, 'not_official': 0, 'robots': 0, 'strikes': 0, 'errors': 0}
 LAST, ROBOTS, DEAD = {}, {}, {}
 ROBOTS_SAID = {}          # host -> the first lines of its robots.txt (so HQ can see what refused us)
-# HQ RULING Oct 27 10:57 PM (narrow, by PATH, not by host): ArcGIS's documented REST API only — the ArcGIS Online search / sharing
-# API (/sharing/rest/) and the hosted services' /rest/services/ metadata (?f=json) on arcgis.com hosts — may be read although those
-# hosts carry a blanket robots.txt. Metadata only, 1 request / 2 s, back-off and three strikes as everywhere. EVERY other host obeys
-# robots.txt. Each exempted host is logged in the run report.
-ROBOTS_API = re.compile(r'(^|\.)arcgis\.com$')
-ROBOTS_API_PATH = re.compile(r'^/sharing/rest/|/rest/services(/|$)')
-ROBOTS_EXEMPTED = {}
+# Nov 10: the Oct 27 arcgis.com robots exemption is DELETED. Every host obeys robots.txt (a 401 / 403 robots.txt counts as a
+# Disallow, a 5xx or no answer = not this run), and BEFORE robots.txt the one host check (kpc_host_rules.py): never-contact hosts,
+# every services*.arcgis.com host (services-eu1 too) and the saved-copy-only list get no request of any kind, robots.txt included.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import kpc_host_rules as HR  # noqa: E402
+NEEDS = []             # Nov 10: [(area, url, why)] layer urls this run may not fetch -> data/needs-download.json (KPC_NEEDS_FILE)
+AREA = ['']            # the country the run works on (W-xx), set by the caller when it knows
 RUN = time.strftime('%Y-%m-%d')
 
 SKIP = re.compile(r'historic|heritage site|monument\b|castle|schloss|château|castillo|castello|zamek|cemeter|friedhof|cimeti|church|kirche|'
@@ -67,22 +67,35 @@ def save(p, obj):
 def host_of(u): return urllib.parse.urlparse(u).netloc.lower()
 
 
+def need(u, why):
+    if re.search(r'/(rest/services|FeatureServer|MapServer)/', str(u), re.I):
+        su = re.sub(r'/query/?$', '', str(u).split('?')[0])
+        if not any(x[1] == su for x in NEEDS): NEEDS.append((AREA[0], su, why))
+
+
 def robots_ok(u):
     h = host_of(u)
+    hok, hwhy = HR.host_ok(u)
+    if not hok:   # Nov 10: the host rules first: no robots.txt read, no request
+        STAT['host_rule'] = STAT.get('host_rule', 0) + 1; ROBOTS_REFUSED[h] = ROBOTS_REFUSED.get(h, 0) + 1; need(u, hwhy); return False
     if h not in ROBOTS:
         rp = urllib.robotparser.RobotFileParser()
+        ru = f'{urllib.parse.urlparse(u).scheme}://{h}/robots.txt'
         try:
-            ru = f'{urllib.parse.urlparse(u).scheme}://{h}/robots.txt'
-            with urllib.request.urlopen(urllib.request.Request(ru, headers={'User-Agent': UA}), timeout=15) as r: txt = r.read(20000).decode('utf-8', 'replace')
+            with urllib.request.urlopen(urllib.request.Request(ru, headers={'User-Agent': UA}), timeout=15) as r: txt = r.read(512_000).decode('utf-8', 'replace')
             rp.parse(txt.splitlines()); ROBOTS[h] = rp
             ROBOTS_SAID[h] = ' | '.join(l.strip() for l in txt.splitlines() if l.strip() and not l.startswith('#'))[:160]
-        except Exception as e: ROBOTS[h] = None; ROBOTS_SAID[h] = 'no robots.txt (' + str(e)[:30] + ')'  # noqa: BLE001  (no robots file = allowed)
+        except urllib.error.HTTPError as e:   # Nov 10 (RFC 9309): 404 / 410 = no rules (allowed); 401 / 403 = a Disallow; anything else = not this run
+            ROBOTS[h] = None if e.code in (404, 410) else False
+            ROBOTS_SAID[h] = f'robots.txt answered {e.code}' + (' (no rules)' if e.code in (404, 410) else ' (counted as no)')
+        except Exception as e: ROBOTS[h] = False; ROBOTS_SAID[h] = 'robots.txt not read (' + str(e)[:30] + '): nothing fetched this run'  # noqa: BLE001
     rp = ROBOTS[h]
-    try: ok = rp is None or rp.can_fetch(UA, u) or rp.can_fetch('*', u)
-    except Exception: ok = True  # noqa: BLE001
-    if not ok and ROBOTS_API.search(h) and ROBOTS_API_PATH.search(urllib.parse.urlparse(u).path):
-        ok = True; STAT['robots_exempt'] = STAT.get('robots_exempt', 0) + 1; ROBOTS_EXEMPTED[h] = ROBOTS_EXEMPTED.get(h, 0) + 1
+    if rp is False: ok = False
+    else:
+        try: ok = rp is None or rp.can_fetch(UA, u)
+        except Exception: ok = False  # noqa: BLE001  (rules we cannot apply = do not fetch)
     if not ok:
+        need(u, 'robots.txt does not allow it (' + ROBOTS_SAID.get(h, '')[:60] + ')')
         STAT['robots'] += 1
         ROBOTS_REFUSED[h] = ROBOTS_REFUSED.get(h, 0) + 1
     return ok
@@ -127,6 +140,18 @@ def get(u, params=None, timeout=30, raw=False, plain=False):
 
 
 STRIKE = {}
+
+
+def write_needs(path=None):
+    path = path or os.environ.get('KPC_NEEDS_FILE')
+    if not path or not NEEDS: return 0
+    import kpc_needs_download as ND
+    a, u, _ = ND.add([ND.row(ar, url, f'world harvester / finder: {why}', 'world harvester', who=None if not HR.host_ok(url)[0] else 'person') for ar, url, why in NEEDS], path)
+    notice(f'{len(NEEDS)} layer(s) this run may not fetch -> {path} ({a} new, {u} updated)'); return len(NEEDS)
+
+
+import atexit  # noqa: E402
+atexit.register(lambda: write_needs())
 
 
 # ------------------------------------------------------------------ what a layer is
@@ -451,6 +476,7 @@ NOT_EU = ('GB', 'NO', 'CH', 'AU', 'JP', 'NZ', 'AR', 'BR', 'CL', 'CN', 'CO', 'DO'
 
 
 def run_country(cc, c, cfg, state, known):
+    AREA[0] = 'W-' + str(cc).upper()   # Nov 10: needs-download rows carry the country
     govwords = cfg['govwords']
     TRUSTED_ORGS.clear(); TRUSTED_ORGS.update(c.get('official_orgs') or [])
     st = state['countries'].setdefault(cc, {'status': 'started', 'started': RUN, 'done': [], 'log': [], 'steps': []})
@@ -561,7 +587,7 @@ def main():
     except Exception as e: notice(f'last_run.json not written: {e}')  # noqa: BLE001
     state['last_run'] = {'date': RUN, 'stats': STAT, 'countries': done_now, 'dead_servers': sorted(DEAD),
                          'robots_refused': ROBOTS_REFUSED, 'robots_said': {h: ROBOTS_SAID.get(h, '') for h in ROBOTS_REFUSED},
-                         'robots_exempted_hosts (HQ ruling Oct 27: ArcGIS REST API paths only)': ROBOTS_EXEMPTED}
+                         'host_rule_refused (Nov 10: kpc_host_rules.py, no request of any kind)': STAT.get('host_rule', 0)}
     save(OUT / 'state.json', state)
     # the people-readable top list across every country
     rows = []

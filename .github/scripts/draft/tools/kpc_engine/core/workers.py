@@ -67,6 +67,8 @@ def run(groups, fn, out_dir, tag, n=8, resume=False, deadline=None, log=None):
                     except Exception as ex:  # noqa: BLE001  never stop for one row
                         res = {'ref': row['ref'], 'area': row['area'], 'error': f'{type(ex).__name__}: {ex}'[:300],
                                'trace': traceback.format_exc()[-600:]}
+                    if deadline and time.time() > deadline:   # Nov 10: this row ran into the time budget (its reads stopped): not kept, not marked done, redone on --resume
+                        timed.set(); st.save(); return mine
                     if res is not None:
                         mine.append(res); f.write(json.dumps(res, ensure_ascii=False) + '\n'); f.flush()
                     st.mark(key)

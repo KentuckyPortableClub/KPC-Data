@@ -27,6 +27,8 @@ permissions:
 concurrency:
   group: kpc-world-finder
   cancel-in-progress: false
+env:
+  KPC_NEEDS_FILE: data/needs-download.json   # Nov 10: a layer this bot may not fetch becomes a row on the ONE needs-download list (bots never save layers)
 jobs:
   find:
     runs-on: ubuntu-latest
@@ -63,7 +65,7 @@ jobs:
             MINUTES=55 python3 .github/scripts/kpc_world_finder.py | tee /tmp/w.log; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { kpc_rc=$?; echo "::warning title=kpc_world_finder.py::stopped with an error (exit $rc), see the log above"; echo "kpc_world_finder.py - stopped with an error (exit $rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
             python3 .github/scripts/kpc_status.py board "world finder v2" green "chunk $i: data/world-finder + questions" "chat 11 answers data/waiting/questions/world-finder.json" || true   # ok: a status-board line (reporting only)
             python3 .github/scripts/kpc_keep_answers.py questions data/waiting/questions/world-finder.json || { kpc_rc=$?; echo "::error title=kpc_keep_answers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_keep_answers.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; python3 .github/scripts/kpc_keep_answers.py state data/world-finder/state.json || { kpc_rc=$?; echo "::error title=kpc_keep_answers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_keep_answers.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # Oct 30: never save over chat 11's answers (chunk 2 of the world run did)
-            [ "${KPC_SAVE_EACH_CHUNK:-no}" != yes ] || bash ../links/.github/scripts/kpc_push_data.sh . "world finder v2: chunk $i (hidden)" data/world-finder data/harvest data/waiting/questions data/status data/intake/found-layers-stage2.json || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+            [ "${KPC_SAVE_EACH_CHUNK:-no}" != yes ] || bash ../links/.github/scripts/kpc_push_data.sh . "world finder v2: chunk $i (hidden)" data/world-finder data/harvest data/waiting/questions data/status data/intake/found-layers-stage2.json data/needs-download.json || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
             L=$(grep -o '^LEFT=[0-9]*' /tmp/w.log | tail -1 | cut -d= -f2); echo "LEFT=$L" >> "$GITHUB_ENV"
             [ "${L:-0}" = 0 ] && break
           done
@@ -74,7 +76,7 @@ jobs:
         run: |
           cd kpcdata
           [ "${{ vars.KPC_SAVE_EACH_CHUNK || 'no' }}" = yes ] && { echo 'saved after every chunk (KPC_SAVE_EACH_CHUNK=yes)'; exit 0; }
-          bash ../links/.github/scripts/kpc_push_data.sh . "world finder v2: one save for the run (hidden)" data/world-finder data/harvest data/waiting/questions data/status data/intake/found-layers-stage2.json || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          bash ../links/.github/scripts/kpc_push_data.sh . "world finder v2: one save for the run (hidden)" data/world-finder data/harvest data/waiting/questions data/status data/intake/found-layers-stage2.json data/needs-download.json || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Countries remain, so the next job starts itself (until the stop time)
         if: ${{ env.STOP != '1' && env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.countries == '' }}
         id: kept_green_2

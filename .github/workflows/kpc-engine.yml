@@ -31,6 +31,7 @@ jobs:
     env:
       KPC_CONTACT: 'https://github.com/KentuckyPortableClub (Kentucky Portable Club ham radio club)'
       KPC_TOOLS_DIR: .github/scripts   # the club's own kpc_manners.py (the engine asked for it)
+      KPC_NEEDS_FILE: data/needs-download.json   # Nov 10: a layer the engine may not fetch becomes a row on the ONE needs-download list (it never saves a layer)
     steps:
       - uses: actions/checkout@v5
         with:
@@ -61,9 +62,10 @@ jobs:
       - name: Run
         id: r
         continue-on-error: true
+        timeout-minutes: 66   # Nov 10: the step stops before the 75-minute job limit, so the steps after it still run
         run: |
           cd kpcdata; set +e   # never stop half way: every step below reports and goes on
-          T0=$(date +%s)   # time budget: the engine gets what is left of 50 min after setup, so the saves below always run
+          T0=$(date +%s)   # time budget: the engine gets what is left of 40 min after setup (Nov 10: was 50), so the saves below always run
           D=.github/scripts/draft/tools/kpc_engine
           if [ ! -d $D ]; then echo "::notice title=Engine::not delivered yet (waiting for $D): nothing to do"; exit 0; fi
           F=$(git log --diff-filter=A --format=%ct -- $D | tail -1); NOW=$(date +%s)
@@ -111,25 +113,34 @@ jobs:
           ); A="${SA:+$SA,}$ALL"
           fi
           AR="--areas $A"
-          MM=$(( 50 - ($(date +%s) - T0) / 60 )); [ $MM -lt 15 ] && MM=15; echo "::notice title=Engine budget::$MM min for the engine after setup"
-          python3 $P run $AR --data . --links ../links --out ../out/engine --cache .engine_cache --max-minutes $MM --resume > ../out/engine/run-log.txt 2>&1
-          E=$?; tail -15 ../out/engine/run-log.txt
+          # Nov 10 (run 42816453516: a 49-min budget at 12:33 UTC, cancelled at the 75-min job limit at 13:46 UTC, nothing saved): the
+          # budget was checked only between rows, and one row (many reads, 60 s hub delays) plus the URL checks ran on past it. Now:
+          # no request past the budget (Polite.deadline), a row cut by it is not kept, 5 min of URL checks at most, the budget is
+          # 40 min minus setup, and a hard stop (timeout) 12 min after the budget. The engine writes into a STAGED copy of its
+          # output; only exit 0 / 3 puts it back, so a killed run leaves the last good output and saves nothing half-written.
+          MM=$(( 40 - ($(date +%s) - T0) / 60 )); [ $MM -lt 10 ] && MM=10; echo "::notice title=Engine budget::$MM min for the engine after setup (hard stop at $((MM + 12)) min)"
+          rm -rf ../stage-engine && cp -a ../out/engine ../stage-engine
+          timeout --signal=TERM --kill-after=60 $(( (MM + 12) * 60 )) python3 $P run $AR --data . --links ../links --out ../stage-engine --cache .engine_cache --max-minutes $MM --resume > "$RUNNER_TEMP/engine-run-log.txt" 2>&1
+          E=$?; tail -15 "$RUNNER_TEMP/engine-run-log.txt"
+          if [ "$E" = 0 ] || [ "$E" = 3 ]; then cp "$RUNNER_TEMP/engine-run-log.txt" ../stage-engine/run-log.txt; rm -rf ../out/engine && mv ../stage-engine ../out/engine
+          else rm -rf ../stage-engine; echo "::warning title=Engine::exit $E: this run's output is DISCARDED (staged copy), the last good output is kept; nothing half-written is saved"; fi
           echo "::notice title=Engine::exit $E (${A:-every area}); board: tools-out engine/board.md"
           [ "$E" = 0 ] || [ "$E" = 3 ] || { kpc_rc=$?; echo "::error title=Engine::the engine stopped with exit $E (0 = done, 3 = time ran out are normal); see run-log.txt above"; echo "Engine - the engine stopped with exit $E (0 = done, 3 = time ran out are normal); see run-log.txt above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # PR3: was green on the board whatever the exit
           # HAND BACK = the bots' drop-off (Brandon 4:42 AM 'go to waiting room'): export the finds in the club's shapes and put them on
           # branch intake-files; the readers that already exist take them from there to the waiting room for chat 11 (hard look reader,
           # collector, converter, docs merge, parking + camping bots, acres). Same names each run = the newest finds replace the last.
-          python3 $P export --out ../out/engine --name engine > /dev/null 2>&1 || { kpc_rc=$?; echo "::error title=Engine export::the hand-back export stopped with an error (exit $kpc_rc): no new finds go to the waiting room"; echo "Engine export - the hand-back export stopped with an error (exit $kpc_rc): no new finds go to the waiting room" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # PR3: was a ::warning
+          if [ "$E" = 0 ] || [ "$E" = 3 ]; then python3 $P export --out ../out/engine --name engine > /dev/null 2>&1 || { kpc_rc=$?; echo "::error title=Engine export::the hand-back export stopped with an error (exit $kpc_rc): no new finds go to the waiting room"; echo "Engine export - the hand-back export stopped with an error (exit $kpc_rc): no new finds go to the waiting room" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # PR3: was a ::warning
           if [ -d ../out/engine/handback ]; then
             git fetch -q origin +refs/heads/intake-files:refs/remotes/origin/intake-files && git worktree add -q -B intake-files ../ib origin/intake-files \
               && cp ../out/engine/handback/*.json ../out/engine/handback/*.xlsx ../out/engine/handback/*.csv ../ib/ 2>/dev/null; \
               (cd ../ib && git add -A && git commit -qm "engine finds (run ${{ github.run_id }}): handback for the readers -> waiting room" && git push -q origin HEAD:intake-files) || { kpc_rc=$?; echo "::error title=git push::a push failed (exit $kpc_rc); this run is NOT saved"; echo "git push - a push failed (exit $kpc_rc); this run is NOT saved" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
             echo "::notice title=Engine::handback: $(ls ../out/engine/handback | tr '\n' ' ' | cut -c1-300)"
           fi
+          fi   # Nov 10: no export / hand-back from a killed run
           [ "$E" = 3 ] && echo "more=yes" >> $GITHUB_OUTPUT
           python3 .github/scripts/kpc_status.py board 'Park-info engine' $([ "$E" = 0 ] || [ "$E" = 3 ] && echo green || echo red) "exit $E $(date -u +%F) ($A)" 'chat 11 grades tools-out engine/ per kind' || true   # ok: a status-board line (reporting only)
           [ -f ../out/engine/board.md ] && cp ../out/engine/board.md data/status/engine-board.md   # the Bot Control Panel reads it (small)
-          bash ../links/.github/scripts/kpc_push_data.sh . "board: engine" data/status data/engine && echo '::notice title=Engine save::board saved on main' || { kpc_rc=$?; echo "::error title=Save::a save or push failed; this run is NOT saved, the next run tries again (exit $kpc_rc)"; echo "Save - a save or push failed; this run is NOT saved, the next run tries again (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # Nov 1: the club's safe save (fresh main + only these files); the rebase loop failed every run
+          [ -f data/needs-download.json ] && NDL=data/needs-download.json || NDL=""; bash ../links/.github/scripts/kpc_push_data.sh . "board: engine" data/status data/engine $NDL && echo '::notice title=Engine save::board saved on main' || { kpc_rc=$?; echo "::error title=Save::a save or push failed; this run is NOT saved, the next run tries again (exit $kpc_rc)"; echo "Save - a save or push failed; this run is NOT saved, the next run tries again (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # Nov 1: the club's safe save (fresh main + only these files); the rebase loop failed every run
           cd ../out && find engine -size +40M -delete; echo "::notice title=Engine out::$(du -sh engine | cut -f1), $(find engine -type f | wc -l) files"; git add -A engine && git commit -qm "engine (run ${{ github.run_id }})" && { { saved=0; for i in 1 2 3 4 5 6; do git push -q origin HEAD:tools-out && { echo '::notice title=Engine save::tools-out saved'; saved=1; break; }; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep $((RANDOM % 15 + 5)); done; [ "$saved" = 1 ] || { kpc_rc=$?; echo "::error title=Save::not saved after every try; the next run tries again"; echo "Save - not saved after every try; the next run tries again" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; }; } || true   # ok: nothing new to commit; a lost save is reported by the loop itself
           true
       - name: Next run
