@@ -1,4 +1,5 @@
 {
+ "about": "Layers somebody must download for the saved copies. who=bot: the master step downloads it; who=person: the PC helper (KPC-Links tools/kpc_pc_helper.py) opens the official page in a browser; who=never: nobody contacts it. Hunters and the engine only add rows here; only the master step saves layers. One row per area|layer.",
  "format": 1,
  "rows": [
   {
@@ -6,7 +7,7 @@
    "area": "CA-BC",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 929,
    "host": "services6.arcgis.com",
    "id": "CA-BC|h151",
    "layer": "h151",
@@ -14,17 +15,17 @@
    "page": "https://catalogue.data.gov.bc.ca/dataset/bc-parks-ecological-reserves-and-protected-areas",
    "source": "hand-filled list (Nov 10)",
    "src": "h151",
-   "status": "open",
+   "status": "done",
    "url": "https://services6.arcgis.com/ubm4tcTYICKBpist/arcgis/rest/services/British_Columbia_Parks_Ecological_Reserves_and_Protected_Areas/FeatureServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (929 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-BC",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 33,
    "host": "services6.arcgis.com",
    "id": "CA-BC|h152",
    "layer": "h152",
@@ -32,17 +33,17 @@
    "page": "https://open-data-portal-metrovancouver.hub.arcgis.com/datasets/regional-parks-boundaries-open-data",
    "source": "hand-filled list (Nov 10)",
    "src": "h152",
-   "status": "open",
+   "status": "done",
    "url": "https://services6.arcgis.com/56eqCzQ5SZhBaDST/arcgis/rest/services/RegionalParksBoundaries_OpenData/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (33 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-MB",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 142,
    "host": "services.arcgis.com",
    "id": "CA-MB|MB-wildlife",
    "layer": "MB-wildlife",
@@ -50,17 +51,17 @@
    "page": "https://geoportal.gov.mb.ca/apps/manitoba::manitoba-wildlife-lands",
    "source": "hand-filled list (Nov 10)",
    "src": "h147",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (142 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-MB",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 93,
    "host": "services.arcgis.com",
    "id": "CA-MB|h145",
    "layer": "h145",
@@ -68,17 +69,17 @@
    "page": "https://geoportal.gov.mb.ca/datasets/manitoba::manitoba-parks",
    "source": "hand-filled list (Nov 10)",
    "src": "h145",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (93 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-MB",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 57,
    "host": "services.arcgis.com",
    "id": "CA-MB|h146",
    "layer": "h146",
@@ -86,53 +87,53 @@
    "page": "https://geoportal.gov.mb.ca/datasets/manitoba-provincial-forests-version-6/about",
    "source": "hand-filled list (Nov 10)",
    "src": "h146",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Provincial_Forests___Version_6/FeatureServer/1",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (57 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-MB",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 7,
    "host": "services.arcgis.com",
    "id": "CA-MB|h148",
    "layer": "h148",
-   "note": "",
+   "note": "existing download: CA_MB_wildlife_lands_layer1 (7 records)",
    "page": "https://geoportal.gov.mb.ca/apps/manitoba::manitoba-wildlife-lands",
    "source": "hand-filled list (Nov 10)",
    "src": "h148",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/1",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (7 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-MB",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 129,
    "host": "services.arcgis.com",
    "id": "CA-MB|h149",
    "layer": "h149",
-   "note": "",
+   "note": "existing download: CA_MB_wildlife_lands_layer2 (129 records)",
    "page": "https://geoportal.gov.mb.ca/apps/manitoba::manitoba-wildlife-lands",
    "source": "hand-filled list (Nov 10)",
    "src": "h149",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/2",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (129 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-NB",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 262,
    "host": "services.arcgis.com",
    "id": "CA-NB|h153",
    "layer": "h153",
@@ -140,17 +141,17 @@
    "page": "https://www.gnb.ca/en/campaign/geonb/data-catalogue/provincial-parks.html",
    "source": "hand-filled list (Nov 10)",
    "src": "h153",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (262 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-NB",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 224,
    "host": "services2.arcgis.com",
    "id": "CA-NB|h154",
    "layer": "h154",
@@ -158,17 +159,17 @@
    "page": "https://www.gnb.ca/en/campaign/geonb/data-catalogue/provincial-parks.html",
    "source": "hand-filled list (Nov 10)",
    "src": "h154",
-   "status": "open",
+   "status": "done",
    "url": "https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (224 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-NL",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 79,
    "host": "services5.arcgis.com",
    "id": "CA-NL|h155",
    "layer": "h155",
@@ -176,17 +177,17 @@
    "page": "https://www.gov.nl.ca/eccc/natural-areas/gis-data/",
    "source": "hand-filled list (Nov 10)",
    "src": "h155",
-   "status": "open",
+   "status": "done",
    "url": "https://services5.arcgis.com/khIMcsNnPXZQg2Ef/arcgis/rest/services/Provincial_Protected_Areas_NL/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (79 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-NS",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 1273,
    "host": "services1.arcgis.com",
    "id": "CA-NS|NS-parks",
    "layer": "NS-parks",
@@ -194,17 +195,17 @@
    "page": "https://data.novascotia.ca/Environment-and-Energy/The-Nova-Scotia-Protected-Areas-System/ticv-5du5",
    "source": "hand-filled list (Nov 10)",
    "src": "h150",
-   "status": "open",
+   "status": "done",
    "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System_V1/FeatureServer/1",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (1273 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-NS",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 1273,
    "host": "services1.arcgis.com",
    "id": "CA-NS|h156",
    "layer": "h156",
@@ -212,17 +213,17 @@
    "page": "https://open.canada.ca/data/en/dataset/21a1cbdc-7a9d-cdf0-d272-6dbb965e97dc",
    "source": "hand-filled list (Nov 10)",
    "src": "h156",
-   "status": "open",
+   "status": "done",
    "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/1",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (1273 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-NS",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 927,
    "host": "services2.arcgis.com",
    "id": "CA-NS|h157",
    "layer": "h157",
@@ -230,17 +231,17 @@
    "page": "https://data-hrm.hub.arcgis.com/items/3df29a3d088a42d890f11d027ea1c0be",
    "source": "hand-filled list (Nov 10)",
    "src": "h157",
-   "status": "open",
+   "status": "done",
    "url": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/HRM_Parks_2/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (927 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-NS",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 184,
    "host": "services1.arcgis.com",
    "id": "CA-NS|h158",
    "layer": "h158",
@@ -248,17 +249,17 @@
    "page": "https://open.canada.ca/data/en/dataset/21a1cbdc-7a9d-cdf0-d272-6dbb965e97dc",
    "source": "hand-filled list (Nov 10)",
    "src": "h158",
-   "status": "open",
+   "status": "done",
    "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (184 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-NS",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 184,
    "host": "services1.arcgis.com",
    "id": "CA-NS|h159",
    "layer": "h159",
@@ -266,17 +267,17 @@
    "page": "https://open.canada.ca/data/en/dataset/21a1cbdc-7a9d-cdf0-d272-6dbb965e97dc",
    "source": "hand-filled list (Nov 10)",
    "src": "h159",
-   "status": "open",
+   "status": "done",
    "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System_V1/FeatureServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (184 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-ON",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 114,
    "host": "services1.arcgis.com",
    "id": "CA-ON|h160",
    "layer": "h160",
@@ -284,17 +285,17 @@
    "page": "https://open.canada.ca/data/en/dataset/6c343726-1e92-451a-876a-76e17d398a1c",
    "source": "hand-filled list (Nov 10)",
    "src": "h160",
-   "status": "held",
+   "status": "done",
    "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/ABCA_Properties/FeatureServer/0",
-   "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (114 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-ON",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 52,
    "host": "services3.arcgis.com",
    "id": "CA-ON|h161",
    "layer": "h161",
@@ -302,17 +303,17 @@
    "page": "https://open.canada.ca/data/en/dataset/6c343726-1e92-451a-876a-76e17d398a1c",
    "source": "hand-filled list (Nov 10)",
    "src": "h161",
-   "status": "held",
+   "status": "done",
    "url": "https://services3.arcgis.com/DkDI7U7oNtqFwb5V/arcgis/rest/services/Conservation_Areas_Dissolved/FeatureServer/0",
-   "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (52 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-ON",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 31,
    "host": "services1.arcgis.com",
    "id": "CA-ON|h162",
    "layer": "h162",
@@ -320,17 +321,17 @@
    "page": "https://open.canada.ca/data/en/dataset/6c343726-1e92-451a-876a-76e17d398a1c",
    "source": "hand-filled list (Nov 10)",
    "src": "h162",
-   "status": "held",
+   "status": "done",
    "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/ERCA_Property/FeatureServer/0",
-   "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (31 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-ON",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 9,
    "host": "services1.arcgis.com",
    "id": "CA-ON|h163",
    "layer": "h163",
@@ -338,17 +339,17 @@
    "page": "https://open.canada.ca/data/en/dataset/6c343726-1e92-451a-876a-76e17d398a1c",
    "source": "hand-filled list (Nov 10)",
    "src": "h163",
-   "status": "held",
+   "status": "done",
    "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/KRCA_Conservation_Areas/FeatureServer/6",
-   "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (9 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-ON",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 19,
    "host": "services1.arcgis.com",
    "id": "CA-ON|h164",
    "layer": "h164",
@@ -356,17 +357,17 @@
    "page": "https://ltvca-maps-camaps.hub.arcgis.com/datasets/ltvca-public-conservation-areas-2022",
    "source": "hand-filled list (Nov 10)",
    "src": "h164",
-   "status": "open",
+   "status": "done",
    "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/Conservation_Areas_(Public)/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (19 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-ON",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 45,
    "host": "services1.arcgis.com",
    "id": "CA-ON|h165",
    "layer": "h165",
@@ -374,17 +375,17 @@
    "page": "https://open.canada.ca/data/en/dataset/6c343726-1e92-451a-876a-76e17d398a1c",
    "source": "hand-filled list (Nov 10)",
    "src": "h165",
-   "status": "held",
+   "status": "done",
    "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/Conservation_Areas/FeatureServer/2",
-   "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (45 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-ON",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 64,
    "host": "services1.arcgis.com",
    "id": "CA-ON|h166",
    "layer": "h166",
@@ -392,17 +393,17 @@
    "page": "https://open.canada.ca/data/en/dataset/6c343726-1e92-451a-876a-76e17d398a1c",
    "source": "hand-filled list (Nov 10)",
    "src": "h166",
-   "status": "held",
+   "status": "done",
    "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/Properties_CVC_2023_NAD/FeatureServer/0",
-   "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (64 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-ON",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 17,
    "host": "services1.arcgis.com",
    "id": "CA-ON|h167",
    "layer": "h167",
@@ -410,17 +411,17 @@
    "page": "https://open.canada.ca/data/en/dataset/6c343726-1e92-451a-876a-76e17d398a1c",
    "source": "hand-filled list (Nov 10)",
    "src": "h167",
-   "status": "held",
+   "status": "done",
    "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/LTC_Conservation_Areas/FeatureServer/0",
-   "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (17 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-ON",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 4,
    "host": "services1.arcgis.com",
    "id": "CA-ON|h168",
    "layer": "h168",
@@ -428,17 +429,17 @@
    "page": "https://open.canada.ca/data/en/dataset/6c343726-1e92-451a-876a-76e17d398a1c",
    "source": "hand-filled list (Nov 10)",
    "src": "h168",
-   "status": "held",
+   "status": "done",
    "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/MVC_Conservation_Areas/FeatureServer/0",
-   "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (4 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-ON",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 1023,
    "host": "services1.arcgis.com",
    "id": "CA-ON|h169",
    "layer": "h169",
@@ -446,17 +447,17 @@
    "page": "https://data.trca.ca/dataset/property-trca",
    "source": "hand-filled list (Nov 10)",
    "src": "h169",
-   "status": "open",
+   "status": "done",
    "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/Property_TRCA/FeatureServer/250",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (1023 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-PE",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 117,
    "host": "services.arcgis.com",
    "id": "CA-PE|h170",
    "layer": "h170",
@@ -464,17 +465,17 @@
    "page": "https://open.canada.ca/data/en/dataset/6c343726-1e92-451a-876a-76e17d398a1c",
    "source": "hand-filled list (Nov 10)",
    "src": "h170",
-   "status": "held",
+   "status": "done",
    "url": "https://services.arcgis.com/etzrVYxPRxn7Nirj/arcgis/rest/services/NCC_AT_Nature_Reserves_20220908/FeatureServer/0",
-   "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (117 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA-QC",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 9,
    "host": "services5.arcgis.com",
    "id": "CA-QC|h171",
    "layer": "h171",
@@ -482,17 +483,17 @@
    "page": "https://open.canada.ca/data/en/dataset/6c343726-1e92-451a-876a-76e17d398a1c",
    "source": "hand-filled list (Nov 10)",
    "src": "h171",
-   "status": "held",
+   "status": "done",
    "url": "https://services5.arcgis.com/wxzmuDTkTCuXv90n/arcgis/rest/services/Parcs_naturels_int%C3%A9r%C3%AAt_m%C3%A9tropolitain/FeatureServer/0",
-   "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (9 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 142,
    "host": "services.arcgis.com",
    "id": "CA|MB-wildlife",
    "layer": "MB-wildlife",
@@ -500,17 +501,17 @@
    "page": "https://geoportal.gov.mb.ca/apps/manitoba::manitoba-wildlife-lands",
    "source": "hand-filled list (Nov 10)",
    "src": "h147",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (142 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 1273,
    "host": "services1.arcgis.com",
    "id": "CA|NS-parks",
    "layer": "NS-parks",
@@ -518,10 +519,10 @@
    "page": "https://data.novascotia.ca/Environment-and-Energy/The-Nova-Scotia-Protected-Areas-System/ticv-5du5",
    "source": "hand-filled list (Nov 10)",
    "src": "h150",
-   "status": "open",
+   "status": "done",
    "url": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System_V1/FeatureServer/1",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (1273 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -538,7 +539,7 @@
    "src": "h135",
    "status": "held",
    "url": "https://services.arcgis.com/aji2lCmjXt0KpGzI/arcgis/rest/services/FacilitySites_Select_Merge/FeatureServer/0",
-   "who": "person",
+   "who": "bot",
    "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
   },
   {
@@ -556,7 +557,7 @@
    "src": "h136",
    "status": "held",
    "url": "https://services7.arcgis.com/7xVQ8rKWOtAFBw48/arcgis/rest/services/Frontenac_Arch_Biosphere_Region_Boundary/FeatureServer/0",
-   "who": "person",
+   "who": "bot",
    "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
   },
   {
@@ -574,7 +575,7 @@
    "src": "h137",
    "status": "held",
    "url": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0",
-   "who": "person",
+   "who": "bot",
    "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
   },
   {
@@ -592,7 +593,7 @@
    "src": "h138",
    "status": "held",
    "url": "https://services2.arcgis.com/WLyMuW006nKOfa5Z/arcgis/rest/services/NCC_Parks/FeatureServer/0",
-   "who": "person",
+   "who": "bot",
    "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
   },
   {
@@ -604,14 +605,14 @@
    "host": "services2.arcgis.com",
    "id": "CA|h139",
    "layer": "h139",
-   "note": "",
+   "note": "existing download: CA_parks_canada_places.zip (53 records) checked hand file: hand-CA.ParksCanada.geojson.gz",
    "page": "https://open.canada.ca/data/dataset/e1f0c975-f40c-4313-9be2-beb951e35f4e",
-   "source": "hand-filled list (Nov 10)",
+   "source": "existing download",
    "src": "h139",
-   "status": "open",
+   "status": "done",
    "url": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "an existing download covers this layer (raw facts in data/outlines/raw-manifest.json); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -628,7 +629,7 @@
    "src": "h140",
    "status": "held",
    "url": "https://services.arcgis.com/rYz782eMbySr2srL/arcgis/rest/services/Parks_OD/FeatureServer/6",
-   "who": "person",
+   "who": "bot",
    "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
   },
   {
@@ -646,7 +647,7 @@
    "src": "h141",
    "status": "held",
    "url": "https://services8.arcgis.com/aCyQID5qQcyrJMm2/arcgis/rest/services/Provincial_Protected_Areas/FeatureServer/0",
-   "who": "person",
+   "who": "bot",
    "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
   },
   {
@@ -664,7 +665,7 @@
    "src": "h142",
    "status": "held",
    "url": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/Trails_Sentiers_TIMS_SGIS_ln_vw/FeatureServer/0",
-   "who": "person",
+   "who": "bot",
    "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
   },
   {
@@ -682,7 +683,7 @@
    "src": "h143",
    "status": "held",
    "url": "https://services2.arcgis.com/9LnN9037wYhPG904/arcgis/rest/services/VAUGHAN_PARKS/FeatureServer/0",
-   "who": "person",
+   "who": "bot",
    "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
   },
   {
@@ -700,7 +701,7 @@
    "src": "h144",
    "status": "held",
    "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/WebMap_ConservationLands/FeatureServer/0",
-   "who": "person",
+   "who": "bot",
    "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
   },
   {
@@ -708,7 +709,7 @@
    "area": "CA",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 93,
    "host": "services.arcgis.com",
    "id": "CA|h145",
    "layer": "h145",
@@ -716,17 +717,17 @@
    "page": "https://geoportal.gov.mb.ca/datasets/manitoba::manitoba-parks",
    "source": "hand-filled list (Nov 10)",
    "src": "h145",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (93 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 57,
    "host": "services.arcgis.com",
    "id": "CA|h146",
    "layer": "h146",
@@ -734,53 +735,53 @@
    "page": "https://geoportal.gov.mb.ca/datasets/manitoba-provincial-forests-version-6/about",
    "source": "hand-filled list (Nov 10)",
    "src": "h146",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Provincial_Forests___Version_6/FeatureServer/1",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (57 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 7,
    "host": "services.arcgis.com",
    "id": "CA|h148",
    "layer": "h148",
-   "note": "",
+   "note": "existing download: CA_MB_wildlife_lands_layer1 (7 records)",
    "page": "https://geoportal.gov.mb.ca/apps/manitoba::manitoba-wildlife-lands",
    "source": "hand-filled list (Nov 10)",
    "src": "h148",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/1",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (7 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "CA",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 129,
    "host": "services.arcgis.com",
    "id": "CA|h149",
    "layer": "h149",
-   "note": "",
+   "note": "existing download: CA_MB_wildlife_lands_layer2 (129 records)",
    "page": "https://geoportal.gov.mb.ca/apps/manitoba::manitoba-wildlife-lands",
    "source": "hand-filled list (Nov 10)",
    "src": "h149",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/2",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (129 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-AK",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 149,
    "host": "services1.arcgis.com",
    "id": "US-AK|sgakc",
    "layer": "sgakc",
@@ -788,10 +789,10 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h007",
-   "status": "held",
+   "status": "done",
    "url": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (149 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -808,8 +809,8 @@
    "src": "h133",
    "status": "done",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (1 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -827,103 +828,67 @@
    "status": "done",
    "url": "https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/lakes/FeatureServer/11",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (271 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-AZ",
    "check": "bot",
-   "expected": 12,
-   "have": 12,
-   "host": "apps.fs.usda.gov",
-   "id": "US-AZ|fsod",
-   "layer": "fsod",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_OtherNationalDesignatedArea.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h002",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-AZ is still short after the bot refill (830 of 901); this layer may hold the missing records"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-AZ",
-   "check": "bot",
-   "expected": 4,
-   "have": 4,
-   "host": "apps.fs.usda.gov",
-   "id": "US-AZ|fwsr",
-   "layer": "fwsr",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_WildScenicRiver.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h003",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-AZ is still short after the bot refill (830 of 901); this layer may hold the missing records"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-AZ",
-   "check": "bot",
-   "expected": 30,
+   "expected": null,
    "have": 30,
    "host": "services6.arcgis.com",
    "id": "US-AZ|sgaza",
    "layer": "sgaza",
-   "note": "services6.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h011",
-   "status": "held",
+   "status": "done",
    "url": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (30 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-AZ",
    "check": "bot",
-   "expected": 37,
+   "expected": null,
    "have": 37,
    "host": "services2.arcgis.com",
    "id": "US-AZ|sgazb",
    "layer": "sgazb",
-   "note": "services2.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h010",
-   "status": "held",
+   "status": "done",
    "url": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (37 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-AZ",
    "check": "bot",
-   "expected": 6,
+   "expected": null,
    "have": 6,
    "host": "services2.arcgis.com",
    "id": "US-AZ|sgazc",
    "layer": "sgazc",
-   "note": "services2.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h009",
-   "status": "held",
+   "status": "done",
    "url": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Hatchery_Polys/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (6 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-AZ",
    "check": "bot",
-   "expected": 1,
+   "expected": null,
    "have": 1,
    "host": "services.arcgis.com",
    "id": "US-AZ|sgazd",
@@ -932,64 +897,46 @@
    "page": "https://iris.fws.gov/APPS/ServCat/Reference/Profile/192833",
    "source": "hand-filled list (Nov 10)",
    "src": "h014",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (1 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-AZ",
    "check": "bot",
-   "expected": 32,
+   "expected": null,
    "have": 32,
    "host": "services2.arcgis.com",
    "id": "US-AZ|sgaze",
    "layer": "sgaze",
-   "note": "services2.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h012",
-   "status": "held",
+   "status": "done",
    "url": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (32 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-AZ",
    "check": "person",
-   "expected": 15,
+   "expected": null,
    "have": 15,
    "host": "services1.arcgis.com",
    "id": "US-AZ|sgazf",
    "layer": "sgazf",
-   "note": "services1.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://www.blm.gov/services/geospatial/GISData",
    "source": "hand-filled list (Nov 10)",
    "src": "h013",
-   "status": "open",
+   "status": "done",
    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_NLCS_National_Monuments_National_Conservation_Areas_Polygons/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-AZ",
-   "check": "bot",
-   "expected": 37,
-   "have": 37,
-   "host": "apps.fs.usda.gov",
-   "id": "US-AZ|wld",
-   "layer": "wld",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_Wilderness.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h005",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-AZ is still short after the bot refill (830 of 901); this layer may hold the missing records"
+   "why": "the saved copy already holds this layer (15 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1006,8 +953,8 @@
    "src": "h014",
    "status": "done",
    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (1 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1024,8 +971,8 @@
    "src": "h015",
    "status": "done",
    "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds3077_fpu/FeatureServer/0",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (295 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1043,7 +990,7 @@
    "status": "done",
    "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/ArcGIS/rest/services/ParkBoundaries/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (466 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1060,26 +1007,26 @@
    "src": "h016",
    "status": "done",
    "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds3092_fpu/FeatureServer/0",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (1479 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-CO",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 886,
    "host": "services5.arcgis.com",
    "id": "US-CO|couscocpwa",
    "layer": "couscocpwa",
-   "note": "",
+   "note": "existing download: query (7).json (921 records) checked hand file: hand-US-CO.sgcoc.geojson.gz",
    "page": "https://cpw.state.co.us/maps-and-gis",
    "source": "hand-filled list (Nov 10)",
    "src": "h018",
-   "status": "open",
+   "status": "done",
    "url": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/5",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (886 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1096,15 +1043,15 @@
    "src": "h133",
    "status": "done",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (1 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-CT",
    "check": "bot",
-   "expected": 488,
-   "have": 488,
+   "expected": null,
+   "have": 490,
    "host": "services1.arcgis.com",
    "id": "US-CT|ctd",
    "layer": "ctd",
@@ -1112,34 +1059,16 @@
    "page": "https://geodata.ct.gov/datasets/CTDEEP::deep-property-3",
    "source": "hand-filled list (Nov 10)",
    "src": "h019",
-   "status": "open",
+   "status": "done",
    "url": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/Connecticut_DEEP_Property/FeatureServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-CT",
-   "check": null,
-   "expected": 490,
-   "have": 490,
-   "host": "services1.arcgis.com",
-   "id": "US-CT|sgcta",
-   "layer": "sgcta",
-   "note": "services1.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
-   "page": "https://hub.arcgis.com/search?q=Connecticut%20DEEP%20Property",
-   "source": "master",
-   "src": null,
-   "status": "open",
-   "url": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/ArcGIS/rest/services/Connecticut_DEEP_Property/FeatureServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-CT is still short after the bot refill (18653 of 18654); this layer may hold the missing records"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (490 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-CT",
    "check": "bot",
-   "expected": 15205,
+   "expected": null,
    "have": 15205,
    "host": "services1.arcgis.com",
    "id": "US-CT|sgctb",
@@ -1148,16 +1077,16 @@
    "page": "https://geodata.ct.gov/datasets/CTDEEP::deep-property-3",
    "source": "hand-filled list (Nov 10)",
    "src": "h021",
-   "status": "open",
+   "status": "done",
    "url": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/2011_Protected_Open_Space_Mapping/FeatureServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (15205 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-CT",
    "check": "bot",
-   "expected": 177,
+   "expected": null,
    "have": 177,
    "host": "services1.arcgis.com",
    "id": "US-CT|sgctc",
@@ -1166,64 +1095,28 @@
    "page": "https://geodata.ct.gov/datasets/CTDEEP::deep-property-3",
    "source": "hand-filled list (Nov 10)",
    "src": "h020",
-   "status": "open",
+   "status": "done",
    "url": "https://services1.arcgis.com/FjPcSmEFuDYlIdKC/arcgis/rest/services/Connecticut_Open_for_Hunting_New_Schema/FeatureServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-DE",
-   "check": "person",
-   "expected": 2,
-   "have": 2,
-   "host": "services1.arcgis.com",
-   "id": "US-DE|wsrc",
-   "layer": "wsrc",
-   "note": "services1.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
-   "page": "https://www.rivers.gov/maps-graphics",
-   "source": "master",
-   "src": "h006",
-   "status": "open",
-   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-DE is still short after the bot refill (1802 of 2003); this layer may hold the missing records"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (177 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-FL",
    "check": "person",
-   "expected": 1842,
+   "expected": null,
    "have": 1842,
    "host": "services.arcgis.com",
    "id": "US-FL|fnl",
    "layer": "fnl",
-   "note": "services.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://www.fnai.org/publications/gis-data",
    "source": "hand-filled list (Nov 10)",
    "src": "h023",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-FL",
-   "check": "bot",
-   "expected": 3,
-   "have": 3,
-   "host": "apps.fs.usda.gov",
-   "id": "US-FL|fsod",
-   "layer": "fsod",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_OtherNationalDesignatedArea.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h002",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-FL is still short after the bot refill (5198 of 21993); this layer may hold the missing records"
+   "why": "the saved copy already holds this layer (1842 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1240,87 +1133,69 @@
    "src": "h014",
    "status": "done",
    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (1 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-FL",
    "check": "person",
-   "expected": 39,
+   "expected": null,
    "have": 39,
    "host": "services3.arcgis.com",
    "id": "US-FL|sgflb",
    "layer": "sgflb",
-   "note": "services3.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://geodata.fdacs.gov/maps/florida-state-forests-",
    "source": "hand-filled list (Nov 10)",
    "src": "h022",
-   "status": "open",
+   "status": "done",
    "url": "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/Florida_State_Forests/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (39 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-FL",
    "check": "bot",
-   "expected": 1573,
+   "expected": null,
    "have": 1573,
    "host": "services1.arcgis.com",
    "id": "US-FL|sgfld",
    "layer": "sgfld",
-   "note": "services1.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h025",
-   "status": "held",
+   "status": "done",
    "url": "https://services1.arcgis.com/59dBAbzYnRk8johU/arcgis/rest/services/SRWMD_LM_Ownership/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (1573 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-FL",
    "check": "person",
-   "expected": 133,
+   "expected": null,
    "have": 133,
    "host": "services.arcgis.com",
    "id": "US-FL|sgfle",
    "layer": "sgfle",
-   "note": "services.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://www.sjrwmd.com/data/gis/",
    "source": "hand-filled list (Nov 10)",
    "src": "h024",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/s8wtJX9suxFen6TA/arcgis/rest/services/SJRWMD_Management_Area_viewLayer/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-FL",
-   "check": "bot",
-   "expected": 7,
-   "have": 7,
-   "host": "apps.fs.usda.gov",
-   "id": "US-FL|wld",
-   "layer": "wld",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_Wilderness.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h005",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-FL is still short after the bot refill (5198 of 21993); this layer may hold the missing records"
+   "why": "the saved copy already holds this layer (133 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-GA",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 203,
    "host": "services6.arcgis.com",
    "id": "US-GA|sggaa",
    "layer": "sggaa",
@@ -1328,17 +1203,17 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h027",
-   "status": "held",
+   "status": "done",
    "url": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/Georgia_Licenses_by_District/FeatureServer/9",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (203 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-GA",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 60,
    "host": "services6.arcgis.com",
    "id": "US-GA|sggab",
    "layer": "sggab",
@@ -1346,17 +1221,17 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h029",
-   "status": "held",
+   "status": "done",
    "url": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/ArcGIS/rest/services/State_Parks_Boundary/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (60 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-GA",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 222,
    "host": "services6.arcgis.com",
    "id": "US-GA|sggac",
    "layer": "sggac",
@@ -1364,10 +1239,10 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h028",
-   "status": "held",
+   "status": "done",
    "url": "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/14",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (222 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1384,8 +1259,8 @@
    "src": "h026",
    "status": "done",
    "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_SpecialInterestManagementArea_01/MapServer/0",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (10 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1403,7 +1278,7 @@
    "status": "done",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Heritage_Areas_Updated2023/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (8 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1421,7 +1296,7 @@
    "status": "done",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Ala_Kahakai_National_Historic_Trail_Official_Corridor/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (1 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1438,8 +1313,8 @@
    "src": "h133",
    "status": "done",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (1 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1456,44 +1331,8 @@
    "src": "h031",
    "status": "done",
    "url": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-ID",
-   "check": "bot",
-   "expected": 17,
-   "have": 17,
-   "host": "apps.fs.usda.gov",
-   "id": "US-ID|fsod",
-   "layer": "fsod",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_OtherNationalDesignatedArea.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h002",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-ID is still short after the bot refill (7125 of 7135); this layer may hold the missing records"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-ID",
-   "check": "bot",
-   "expected": 22,
-   "have": 22,
-   "host": "apps.fs.usda.gov",
-   "id": "US-ID|fwsr",
-   "layer": "fwsr",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_WildScenicRiver.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h003",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-ID is still short after the bot refill (7125 of 7135); this layer may hold the missing records"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (72 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1504,74 +1343,56 @@
    "host": "services.arcgis.com",
    "id": "US-ID|idusidfish",
    "layer": "idusidfish",
-   "note": "",
+   "note": "existing download: US_ID_fishing_boating_access (358 records)",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
-   "source": "hand-filled list (Nov 10)",
+   "source": "existing download",
    "src": "h035",
-   "status": "held",
+   "status": "done",
    "url": "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/IDFG_Fishing_and_Boating_Access_FFW_App/FeatureServer/1",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "an existing download covers this layer (raw facts in data/outlines/raw-manifest.json); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-ID",
    "check": "person",
-   "expected": 6,
-   "have": 6,
+   "expected": null,
+   "have": 31,
    "host": "services.arcgis.com",
    "id": "US-ID|idw",
    "layer": "idw",
-   "note": "services.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://data.gis.idaho.gov/datasets/IDFGgis::wildlife-management-areas",
    "source": "hand-filled list (Nov 10)",
    "src": "h037",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-ID",
-   "check": null,
-   "expected": 31,
-   "have": 31,
-   "host": "services.arcgis.com",
-   "id": "US-ID|sgida",
-   "layer": "sgida",
-   "note": "services.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
-   "page": "https://hub.arcgis.com/search?q=WildlifeManagementAreas",
-   "source": "master",
-   "src": null,
-   "status": "open",
-   "url": "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-ID is still short after the bot refill (7125 of 7135); this layer may hold the missing records"
+   "why": "the saved copy already holds this layer (31 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-ID",
    "check": "bot",
-   "expected": 4995,
+   "expected": null,
    "have": 4995,
    "host": "services.arcgis.com",
    "id": "US-ID|sgidb",
    "layer": "sgidb",
-   "note": "services.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h034",
-   "status": "held",
+   "status": "done",
    "url": "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (4995 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-ID",
    "check": "bot",
-   "expected": 51,
+   "expected": null,
    "have": 51,
    "host": "apps.fs.usda.gov",
    "id": "US-ID|sgidd",
@@ -1580,71 +1401,35 @@
    "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
    "source": "hand-filled list (Nov 10)",
    "src": "h033",
-   "status": "open",
+   "status": "done",
    "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (51 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-ID",
    "check": "bot",
-   "expected": 68,
+   "expected": null,
    "have": 68,
    "host": "services7.arcgis.com",
    "id": "US-ID|sgide",
    "layer": "sgide",
-   "note": "services7.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h036",
-   "status": "held",
+   "status": "done",
    "url": "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-ID",
-   "check": "bot",
-   "expected": 22,
-   "have": 22,
-   "host": "apps.fs.usda.gov",
-   "id": "US-ID|wld",
-   "layer": "wld",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_Wilderness.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h005",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-ID is still short after the bot refill (7125 of 7135); this layer may hold the missing records"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-ID",
-   "check": "person",
-   "expected": 1,
-   "have": 1,
-   "host": "services1.arcgis.com",
-   "id": "US-ID|wsrc",
-   "layer": "wsrc",
-   "note": "services1.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
-   "page": "https://www.rivers.gov/maps-graphics",
-   "source": "master",
-   "src": "h006",
-   "status": "open",
-   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-ID is still short after the bot refill (7125 of 7135); this layer may hold the missing records"
+   "why": "the saved copy already holds this layer (68 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-IL",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 3218,
    "host": "services.arcgis.com",
    "id": "US-IL|sgila",
    "layer": "sgila",
@@ -1652,10 +1437,10 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h038",
-   "status": "held",
+   "status": "done",
    "url": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (3218 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1673,7 +1458,7 @@
    "status": "done",
    "url": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/3",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (1025 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1686,19 +1471,19 @@
    "layer": "sgilc",
    "note": "services.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
    "page": "https://clearinghouse.isgs.illinois.edu/outmeta/IL_ADMIN_Conservation_Areas_Py.html",
-   "source": "hand-filled list (Nov 10)",
+   "source": "master",
    "src": "h040",
    "status": "open",
-   "url": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/HolmanConservationPropertiesUpdate_7_18/FeatureServer/2",
+   "url": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/HolmanConservationPropertiesUpdate_7_18/FeatureServer/2/query",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy has no records from this layer (a new layer, or never read)"
   },
   {
    "added": "2026-11-10",
    "area": "US-KS",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 206,
    "host": "services1.arcgis.com",
    "id": "US-KS|sgksb",
    "layer": "sgksb",
@@ -1706,17 +1491,17 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h041",
-   "status": "held",
+   "status": "done",
    "url": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/KDWPT_Wildlife_Areas/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (206 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-KS",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 182,
    "host": "services1.arcgis.com",
    "id": "US-KS|sgksc",
    "layer": "sgksc",
@@ -1724,10 +1509,10 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h042",
-   "status": "held",
+   "status": "done",
    "url": "https://services1.arcgis.com/q2CglofYX6ACNEeu/arcgis/rest/services/protected_areas/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (182 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1744,8 +1529,8 @@
    "src": "h045",
    "status": "done",
    "url": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LDWF_WildlifeRefuge/FeatureServer/0",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (3 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1756,21 +1541,21 @@
    "host": "services5.arcgis.com",
    "id": "US-LA|lauslastat",
    "layer": "lauslastat",
-   "note": "",
+   "note": "existing download: query (21).json (16 records)",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
-   "source": "hand-filled list (Nov 10)",
+   "source": "existing download",
    "src": "h047",
-   "status": "held",
+   "status": "done",
    "url": "https://services5.arcgis.com/c87u7O5UKiyM87q5/arcgis/rest/services/Louisiana_Public_Lands_WFL1/FeatureServer/17",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "an existing download covers this layer (raw facts in data/outlines/raw-manifest.json); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-LA",
    "check": "bot",
    "expected": null,
-   "have": 17,
+   "have": 59,
    "host": "services1.arcgis.com",
    "id": "US-LA|law",
    "layer": "law",
@@ -1780,8 +1565,8 @@
    "src": "h046",
    "status": "done",
    "url": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LDWF_WMA_Refuge/FeatureServer/0",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (59 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1798,8 +1583,8 @@
    "src": "h043",
    "status": "done",
    "url": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LOE_LDWF_WMAs_09262025_WGS84_WMAS/FeatureServer/0",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (54 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1816,8 +1601,8 @@
    "src": "h044",
    "status": "done",
    "url": "https://services1.arcgis.com/6euNCaGPCgCzgAVF/arcgis/rest/services/LDWF_WMAs_Refuges_Conservation_Areas_04262024/FeatureServer/0",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (62 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1834,8 +1619,8 @@
    "src": "h049",
    "status": "done",
    "url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/MassWildlifeLands/FeatureServer/0",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (277 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1852,8 +1637,8 @@
    "src": "h133",
    "status": "done",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (1 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1870,8 +1655,8 @@
    "src": "h048",
    "status": "done",
    "url": "https://services1.arcgis.com/7iJyYTjCtKsZS1LR/arcgis/rest/services/Search_DCRownManOS_SitenameDiss/FeatureServer/0",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (432 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1889,7 +1674,7 @@
    "status": "done",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Park_Property_Boundaries/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (17 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1906,8 +1691,8 @@
    "src": "h051",
    "status": "done",
    "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/Maine_Conserved_Lands_Fee/FeatureServer/0",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (2234 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1925,14 +1710,14 @@
    "status": "done",
    "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MDIFWWildlifeManagementAreas/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (69 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-MI",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 708,
    "host": "services3.arcgis.com",
    "id": "US-MI|mid",
    "layer": "mid",
@@ -1940,10 +1725,10 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h055",
-   "status": "held",
+   "status": "done",
    "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRLOTSParcelsOPENDATA/FeatureServer/13",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (708 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1961,14 +1746,14 @@
    "status": "done",
    "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRManagementBoundariesOPENDATA/FeatureServer/8",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (109 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-MI",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 234,
    "host": "services3.arcgis.com",
    "id": "US-MI|sgmib",
    "layer": "sgmib",
@@ -1976,10 +1761,10 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h053",
-   "status": "held",
+   "status": "done",
    "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRWILDLandsOPENDATA/FeatureServer/2",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (234 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -1997,7 +1782,7 @@
    "status": "done",
    "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/dnrParksAndRecreation/FeatureServer/5",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (108 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2015,7 +1800,7 @@
    "status": "done",
    "url": "https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/MN_State_Parks_and_Recreation_Areas/FeatureServer/2",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (84 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2032,8 +1817,8 @@
    "src": "h134",
    "status": "done",
    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/National_Wildlife_Refuge_System_Boundaries/FeatureServer/0",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (122 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2051,198 +1836,72 @@
    "status": "done",
    "url": "https://services2.arcgis.com/kNS2ppBA4rwAQQZy/arcgis/rest/services/MO_Missouri_Department_of_Conservation_Lands/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-MT",
-   "check": "bot",
-   "expected": 14,
-   "have": 14,
-   "host": "apps.fs.usda.gov",
-   "id": "US-MT|fsod",
-   "layer": "fsod",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_OtherNationalDesignatedArea.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h002",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-MT is still short after the bot refill (3267 of 3658); this layer may hold the missing records"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-MT",
-   "check": "bot",
-   "expected": 15,
-   "have": 15,
-   "host": "apps.fs.usda.gov",
-   "id": "US-MT|fwsr",
-   "layer": "fwsr",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_WildScenicRiver.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h003",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-MT is still short after the bot refill (3267 of 3658); this layer may hold the missing records"
+   "why": "the saved copy already holds this layer (1000 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-MT",
    "check": "person",
-   "expected": 55,
+   "expected": null,
    "have": 55,
    "host": "services3.arcgis.com",
    "id": "US-MT|sgmta",
    "layer": "sgmta",
-   "note": "services3.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://ftpgeoinfo.msl.mt.gov/data/spatial/msdi/AdministrativeBoundaries/MontanaManagedAreas.xml",
    "source": "hand-filled list (Nov 10)",
    "src": "h060",
-   "status": "open",
+   "status": "done",
    "url": "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_STATEPARKS/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (55 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-MT",
    "check": "person",
-   "expected": 70,
+   "expected": null,
    "have": 70,
    "host": "services3.arcgis.com",
    "id": "US-MT|sgmtb",
    "layer": "sgmtb",
-   "note": "services3.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://ftpgeoinfo.msl.mt.gov/data/spatial/msdi/AdministrativeBoundaries/MontanaManagedAreas.xml",
    "source": "hand-filled list (Nov 10)",
    "src": "h061",
-   "status": "open",
+   "status": "done",
    "url": "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_WMA/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (70 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-MT",
    "check": "person",
-   "expected": 333,
+   "expected": null,
    "have": 333,
    "host": "services3.arcgis.com",
    "id": "US-MT|sgmtc",
    "layer": "sgmtc",
-   "note": "services3.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://ftpgeoinfo.msl.mt.gov/data/spatial/msdi/AdministrativeBoundaries/MontanaManagedAreas.xml",
    "source": "hand-filled list (Nov 10)",
    "src": "h059",
-   "status": "open",
+   "status": "done",
    "url": "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_FAS/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-MT",
-   "check": "bot",
-   "expected": 17,
-   "have": 17,
-   "host": "apps.fs.usda.gov",
-   "id": "US-MT|wld",
-   "layer": "wld",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_Wilderness.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h005",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-MT is still short after the bot refill (3267 of 3658); this layer may hold the missing records"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-MT",
-   "check": "person",
-   "expected": 1,
-   "have": 1,
-   "host": "services1.arcgis.com",
-   "id": "US-MT|wsrc",
-   "layer": "wsrc",
-   "note": "services1.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
-   "page": "https://www.rivers.gov/maps-graphics",
-   "source": "master",
-   "src": "h006",
-   "status": "open",
-   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-MT is still short after the bot refill (3267 of 3658); this layer may hold the missing records"
+   "why": "the saved copy already holds this layer (333 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-NC",
    "check": "bot",
-   "expected": 10,
-   "have": 10,
-   "host": "apps.fs.usda.gov",
-   "id": "US-NC|fsod",
-   "layer": "fsod",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_OtherNationalDesignatedArea.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h002",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-NC is still short after the bot refill (18237 of 18238); this layer may hold the missing records"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-NC",
-   "check": "bot",
-   "expected": 8,
-   "have": 8,
-   "host": "apps.fs.usda.gov",
-   "id": "US-NC|fwsr",
-   "layer": "fwsr",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_WildScenicRiver.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h003",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-NC is still short after the bot refill (18237 of 18238); this layer may hold the missing records"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-NC",
-   "check": null,
-   "expected": 32,
-   "have": 32,
-   "host": "services1.arcgis.com",
-   "id": "US-NC|ncg",
-   "layer": "ncg",
-   "note": "services1.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
-   "page": "https://hub.arcgis.com/search?q=gamelands%20general",
-   "source": "master",
-   "src": null,
-   "status": "open",
-   "url": "svc:https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/gamelands_general/FeatureServer|.",
-   "who": "person",
-   "why": "the saved copy of US-NC is still short after the bot refill (18237 of 18238); this layer may hold the missing records"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-NC",
-   "check": "bot",
-   "expected": 15464,
+   "expected": null,
    "have": 15464,
    "host": "ncnhde.natureserve.org",
    "id": "US-NC|sgnca",
    "layer": "sgnca",
-   "note": "never contact ncnhde.natureserve.org: no request of any kind, by a bot or a person",
+   "note": "",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h001",
@@ -2255,91 +1914,73 @@
    "added": "2026-11-10",
    "area": "US-NC",
    "check": "person",
-   "expected": 94,
+   "expected": null,
    "have": 94,
    "host": "services1.arcgis.com",
    "id": "US-NC|sgncb",
    "layer": "sgncb",
-   "note": "services1.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://www.nconemap.gov/datasets/ncwrc::ncwrc-game-lands-general",
    "source": "hand-filled list (Nov 10)",
    "src": "h063",
-   "status": "open",
+   "status": "done",
    "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/gamelands_general/FeatureServer/21",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (94 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-NC",
    "check": "person",
-   "expected": 1664,
+   "expected": null,
    "have": 1664,
    "host": "services1.arcgis.com",
    "id": "US-NC|sgncc",
    "layer": "sgncc",
-   "note": "services1.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://www.nconemap.gov/datasets/ncwrc::ncwrc-game-lands-detail/about",
    "source": "hand-filled list (Nov 10)",
    "src": "h062",
-   "status": "open",
+   "status": "done",
    "url": "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/gamelands_detail/FeatureServer/22",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (1664 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-NC",
    "check": "bot",
-   "expected": 347,
+   "expected": null,
    "have": 347,
    "host": "services6.arcgis.com",
    "id": "US-NC|sgncd",
    "layer": "sgncd",
-   "note": "services6.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h064",
-   "status": "held",
+   "status": "done",
    "url": "https://services6.arcgis.com/nRIB86xC7kq6wavB/arcgis/rest/services/NC_State_Parks_System/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-NC",
-   "check": "bot",
-   "expected": 24,
-   "have": 24,
-   "host": "apps.fs.usda.gov",
-   "id": "US-NC|wld",
-   "layer": "wld",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_Wilderness.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h005",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-NC is still short after the bot refill (18237 of 18238); this layer may hold the missing records"
+   "why": "the saved copy already holds this layer (347 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-ND",
    "check": "person",
    "expected": null,
-   "have": 384,
+   "have": 395,
    "host": "services1.arcgis.com",
    "id": "US-ND|ndw",
    "layer": "ndw",
-   "note": "",
+   "note": "existing download: US_ND_wildlife_management_areas (395 records)",
    "page": "https://www.gis.nd.gov/data",
    "source": "hand-filled list (Nov 10)",
    "src": "h065",
    "status": "done",
    "url": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wildlife_Management_Areas/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (395 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2357,7 +1998,7 @@
    "status": "done",
    "url": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_State_Parks/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (21 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2375,14 +2016,14 @@
    "status": "done",
    "url": "https://services3.arcgis.com/G9FKQ0xH9VagrUos/arcgis/rest/services/NDPRD_Boundaries/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (39 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-NE",
    "check": "person",
    "expected": null,
-   "have": 70,
+   "have": 74,
    "host": "services5.arcgis.com",
    "id": "US-NE|nep",
    "layer": "nep",
@@ -2393,7 +2034,7 @@
    "status": "done",
    "url": "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Park_Areas/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (74 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2410,8 +2051,8 @@
    "src": "h133",
    "status": "done",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (1 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2429,7 +2070,7 @@
    "status": "done",
    "url": "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Conservation_Partner_Lands/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (68 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2447,205 +2088,97 @@
    "status": "done",
    "url": "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/NPGCProperties2023_2024/FeatureServer/268",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (364 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-NH",
    "check": "bot",
-   "expected": 2,
-   "have": 2,
-   "host": "apps.fs.usda.gov",
-   "id": "US-NH|fwsr",
-   "layer": "fwsr",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_WildScenicRiver.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h003",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-NH is still short after the bot refill (27883 of 40687); this layer may hold the missing records"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-NH",
-   "check": "bot",
-   "expected": 127,
+   "expected": null,
    "have": 127,
    "host": "services8.arcgis.com",
    "id": "US-NH|sgnhb",
    "layer": "sgnhb",
-   "note": "services8.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h071",
-   "status": "held",
+   "status": "done",
    "url": "https://services8.arcgis.com/hg1B9Egwk1I5p300/arcgis/rest/services/NHFG_WMA_online/FeatureServer/2",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-NH",
-   "check": "bot",
-   "expected": 6,
-   "have": 6,
-   "host": "apps.fs.usda.gov",
-   "id": "US-NH|wld",
-   "layer": "wld",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_Wilderness.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h005",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-NH is still short after the bot refill (27883 of 40687); this layer may hold the missing records"
+   "why": "the saved copy already holds this layer (127 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-NJ",
    "check": "person",
-   "expected": 354,
+   "expected": null,
    "have": 354,
    "host": "services1.arcgis.com",
    "id": "US-NJ|sgnjb",
    "layer": "sgnjb",
-   "note": "services1.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://gisdata-njdep.opendata.arcgis.com/datasets/njdep::state-local-and-nonprofit-open-space-of-new-jersey/about",
    "source": "hand-filled list (Nov 10)",
    "src": "h072",
-   "status": "open",
+   "status": "done",
    "url": "https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/ArcGIS/rest/services/Open_Space__State_Owned__Generalized_h/FeatureServer/67",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-NJ",
-   "check": "person",
-   "expected": 5,
-   "have": 5,
-   "host": "services1.arcgis.com",
-   "id": "US-NJ|wsrc",
-   "layer": "wsrc",
-   "note": "services1.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
-   "page": "https://www.rivers.gov/maps-graphics",
-   "source": "master",
-   "src": "h006",
-   "status": "open",
-   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-NJ is still short after the bot refill (4008 of 4011); this layer may hold the missing records"
+   "why": "the saved copy already holds this layer (354 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-NM",
    "check": "bot",
-   "expected": 9,
-   "have": 9,
-   "host": "apps.fs.usda.gov",
-   "id": "US-NM|fsod",
-   "layer": "fsod",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_OtherNationalDesignatedArea.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h002",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-NM is still short after the bot refill (1124 of 1125); this layer may hold the missing records"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-NM",
-   "check": "bot",
-   "expected": 9,
-   "have": 9,
-   "host": "apps.fs.usda.gov",
-   "id": "US-NM|fwsr",
-   "layer": "fwsr",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_WildScenicRiver.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h003",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-NM is still short after the bot refill (1124 of 1125); this layer may hold the missing records"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-NM",
-   "check": "bot",
-   "expected": 105,
+   "expected": null,
    "have": 105,
    "host": "services2.arcgis.com",
    "id": "US-NM|sgnma",
    "layer": "sgnma",
-   "note": "services2.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h074",
-   "status": "held",
+   "status": "done",
    "url": "https://services2.arcgis.com/CjbW1bVhK4dB3WOa/arcgis/rest/services/State_Game_Commission_Lands_view/FeatureServer/6",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (105 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-NM",
    "check": "person",
-   "expected": 35,
+   "expected": null,
    "have": 35,
    "host": "services7.arcgis.com",
    "id": "US-NM|sgnmb",
    "layer": "sgnmb",
-   "note": "services7.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://catalog-bsp.data.gov/dataset/new-mexico-state-parks/resource/8dd90dc2-ce58-4e09-b51b-ddf4a0252871",
    "source": "hand-filled list (Nov 10)",
    "src": "h075",
-   "status": "open",
+   "status": "done",
    "url": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (35 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-NM",
    "check": "person",
-   "expected": 144,
+   "expected": null,
    "have": 144,
    "host": "services1.arcgis.com",
    "id": "US-NM|sgnmc",
    "layer": "sgnmc",
-   "note": "services1.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "existing download: US_blm_natl_recreation_site_polygons.zip (3478 records)",
    "page": "https://www.blm.gov/services/geospatial/GISData",
    "source": "hand-filled list (Nov 10)",
    "src": "h073",
-   "status": "open",
+   "status": "done",
    "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-NM",
-   "check": "bot",
-   "expected": 17,
-   "have": 17,
-   "host": "apps.fs.usda.gov",
-   "id": "US-NM|wld",
-   "layer": "wld",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_Wilderness.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h005",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-NM is still short after the bot refill (1124 of 1125); this layer may hold the missing records"
+   "why": "the saved copy already holds this layer (144 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2656,14 +2189,14 @@
    "host": "services.arcgis.com",
    "id": "US-NV|nvusnvfish",
    "layer": "nvusnvfish",
-   "note": "",
+   "note": "existing download: query (30).json (4 records) checked hand file: hand-US-NV.nvusnvfish.geojson.gz",
    "page": "https://www.ndow.org/blog/gis-data/",
-   "source": "hand-filled list (Nov 10)",
+   "source": "existing download",
    "src": "h080",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Nevada_Department_of_Wildlife_Fish_Hatchery_Locations/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "points (no outline): a checked hand file for the point tier; the outline key has no outline to take from it"
   },
   {
    "added": "2026-11-10",
@@ -2674,14 +2207,14 @@
    "host": "services.arcgis.com",
    "id": "US-NV|nvusnvndow",
    "layer": "nvusnvndow",
-   "note": "",
+   "note": "existing download: query (5).json (18 records) checked hand file: hand-US-NV.sgnvj.geojson.gz",
    "page": "https://www.ndow.org/blog/gis-data/",
-   "source": "hand-filled list (Nov 10)",
+   "source": "existing download",
    "src": "h079",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/RyxlXSfFi87rAosq/ArcGIS/rest/services/NDOWWMAs/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "an existing download covers this layer (raw facts in data/outlines/raw-manifest.json); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2699,14 +2232,14 @@
    "status": "done",
    "url": "https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (17 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-NV",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 1,
    "host": "services7.arcgis.com",
    "id": "US-NV|sgnvc",
    "layer": "sgnvc",
@@ -2714,10 +2247,10 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h078",
-   "status": "held",
+   "status": "done",
    "url": "https://services7.arcgis.com/5hLFVlePaucIMGhw/arcgis/rest/services/VS_Boundary_Map_2_WFL1/FeatureServer/2",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (1 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2734,8 +2267,26 @@
    "src": "h076",
    "status": "done",
    "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_ForestSystemBoundaries_01/MapServer/0",
+   "who": "bot",
+   "why": "the saved copy already holds this layer (10 records); a change at the source reopens it"
+  },
+  {
+   "added": "2026-11-10",
+   "area": "US-NV",
+   "check": "",
+   "expected": null,
+   "have": 0,
+   "host": "services.arcgis.com",
+   "id": "US-NV|sgnvj",
+   "layer": "sgnvj",
+   "note": "services.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser existing download: query (5).json (18 records) checked hand file: hand-US-NV.sgnvj.geojson.gz",
+   "page": "https://hub.arcgis.com/search?q=NDOWWMAs",
+   "source": "existing download",
+   "src": "",
+   "status": "done",
+   "url": "https://services.arcgis.com/RyxlXSfFi87rAosq/ArcGIS/rest/services/NDOWWMAs/FeatureServer/0/query",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "an existing download covers this layer (raw facts in data/outlines/raw-manifest.json); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2752,8 +2303,8 @@
    "src": "h133",
    "status": "done",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (1 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2771,7 +2322,7 @@
    "status": "done",
    "url": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/ArcGIS/rest/services/NYS_DEC_Lands/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (3216 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2789,7 +2340,7 @@
    "status": "done",
    "url": "https://services.arcgis.com/1xFZPtKn1wKC6POA/ArcGIS/rest/services/NYS_Park_Polygons/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (827 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2806,33 +2357,33 @@
    "src": "h133",
    "status": "done",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (1 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-OK",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 105,
    "host": "services1.arcgis.com",
    "id": "US-OK|odw",
    "layer": "odw",
-   "note": "",
+   "note": "existing download: US_public_wma_boundaries (105 records)",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h084",
-   "status": "held",
+   "status": "done",
    "url": "https://services1.arcgis.com/jRf8jjFwxedITdFe/arcgis/rest/services/Public_WMA_Boundaries/FeatureServer/1",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (105 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-OK",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 50,
    "host": "services6.arcgis.com",
    "id": "US-OK|sgoka",
    "layer": "sgoka",
@@ -2840,17 +2391,17 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h085",
-   "status": "held",
+   "status": "done",
    "url": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/3",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (50 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-OK",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 111,
    "host": "services6.arcgis.com",
    "id": "US-OK|sgokb",
    "layer": "sgokb",
@@ -2858,10 +2409,10 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h083",
-   "status": "held",
+   "status": "done",
    "url": "https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (111 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2878,15 +2429,15 @@
    "src": "h087",
    "status": "done",
    "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/OPRD_Rec_Parks_view/FeatureServer/0",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (422 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-OR",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 75,
    "host": "services.arcgis.com",
    "id": "US-OR|sgorc",
    "layer": "sgorc",
@@ -2894,10 +2445,10 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h086",
-   "status": "held",
+   "status": "done",
    "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/ODFW_Wildlife_Areas/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (75 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2915,7 +2466,7 @@
    "status": "done",
    "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/All_State_Owned_and_Managed_Lands/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (3483 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2932,8 +2483,8 @@
    "src": "h133",
    "status": "done",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (1 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2950,8 +2501,8 @@
    "src": "h089",
    "status": "done",
    "url": "https://services1.arcgis.com/k8yxvICm95iIFicb/arcgis/rest/services/State_Game_Lands_Boundaries/FeatureServer/300",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (319 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2968,8 +2519,8 @@
    "src": "h133",
    "status": "done",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (1 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -2987,14 +2538,14 @@
    "status": "done",
    "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (1032 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-SC",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 210,
    "host": "services.arcgis.com",
    "id": "US-SC|sgsca",
    "layer": "sgsca",
@@ -3002,17 +2553,17 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h093",
-   "status": "held",
+   "status": "done",
    "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (210 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-SC",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 55,
    "host": "services5.arcgis.com",
    "id": "US-SC|sgscb",
    "layer": "sgscb",
@@ -3020,17 +2571,17 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h094",
-   "status": "held",
+   "status": "done",
    "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/ArcGIS/rest/services/South_Carolina_State_Parks/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (55 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-SC",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 118,
    "host": "services.arcgis.com",
    "id": "US-SC|sgscc",
    "layer": "sgscc",
@@ -3038,17 +2589,17 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h092",
-   "status": "held",
+   "status": "done",
    "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/HeritagePreserve_Map2_WFL1/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (118 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-SC",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 572,
    "host": "services.arcgis.com",
    "id": "US-SC|sgscd",
    "layer": "sgscd",
@@ -3056,10 +2607,10 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h091",
-   "status": "held",
+   "status": "done",
    "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (572 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3076,8 +2627,8 @@
    "src": "h133",
    "status": "done",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (1 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3095,14 +2646,14 @@
    "status": "done",
    "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TN_State_Parks_Boundaries/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (66 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-TN",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 6,
    "host": "services5.arcgis.com",
    "id": "US-TN|sgtnb",
    "layer": "sgtnb",
@@ -3110,17 +2661,17 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h100",
-   "status": "held",
+   "status": "done",
    "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TN_State_Natural_Area_Boundaries_(Public_View)/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (6 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-TN",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 224,
    "host": "services3.arcgis.com",
    "id": "US-TN|sgtnc",
    "layer": "sgtnc",
@@ -3128,10 +2679,10 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h103",
-   "status": "held",
+   "status": "done",
    "url": "https://services3.arcgis.com/PWXNAH2YKmZY7lBq/arcgis/rest/services/Hunting_Allowed/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (224 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3149,14 +2700,14 @@
    "status": "done",
    "url": "https://services.arcgis.com/lvPBAGXeSupVUvx2/arcgis/rest/services/Tennessee_State_Forest_Boundaries/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (16 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-TN",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 603,
    "host": "services5.arcgis.com",
    "id": "US-TN|sgtne",
    "layer": "sgtne",
@@ -3164,10 +2715,10 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h104",
-   "status": "held",
+   "status": "done",
    "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/Tennessee_State_and_Federal_Lands_WFL1/FeatureServer/49",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (603 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3185,7 +2736,7 @@
    "status": "done",
    "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TDEC_Public_Lands/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (182 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3203,14 +2754,14 @@
    "status": "done",
    "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TNStatePark_boundaries/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (94 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-TN",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 45,
    "host": "services5.arcgis.com",
    "id": "US-TN|sgtnh",
    "layer": "sgtnh",
@@ -3218,10 +2769,10 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h099",
-   "status": "held",
+   "status": "done",
    "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/Non_State_Park_Natural_Areas_June_2023/FeatureServer/10",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (45 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3239,25 +2790,25 @@
    "status": "done",
    "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/State_Park_Boundaries_Primary_March_2024_view2/FeatureServer/331",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (70 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-TN",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 96,
    "host": "services5.arcgis.com",
    "id": "US-TN|tnd",
    "layer": "tnd",
-   "note": "",
+   "note": "existing download: query.json (183 records)",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h095",
-   "status": "held",
+   "status": "done",
    "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TDEC_Public_Access_Lands/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (96 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3268,14 +2819,14 @@
    "host": "services1.arcgis.com",
    "id": "US-TX|sgtxa",
    "layer": "sgtxa",
-   "note": "",
+   "note": "existing download: query (1).json (116 records)",
    "page": "https://tpwd.texas.gov/gis/data/baselayers/state-park-boundaries-zip/view",
    "source": "hand-filled list (Nov 10)",
    "src": "h105",
    "status": "done",
    "url": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Boundaries/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (116 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3292,8 +2843,8 @@
    "src": "h107",
    "status": "done",
    "url": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer/0",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (80 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3311,97 +2862,79 @@
    "status": "done",
    "url": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Public_ConservationLands/FeatureServer/0",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-UT",
-   "check": "bot",
-   "expected": 4,
-   "have": 4,
-   "host": "apps.fs.usda.gov",
-   "id": "US-UT|fsod",
-   "layer": "fsod",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_OtherNationalDesignatedArea.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h002",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-UT is still short after the bot refill (6689 of 6692); this layer may hold the missing records"
+   "why": "the saved copy already holds this layer (11817 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-UT",
    "check": "person",
-   "expected": 77,
+   "expected": null,
    "have": 77,
    "host": "services.arcgis.com",
    "id": "US-UT|sguta",
    "layer": "sguta",
-   "note": "services.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://gis.utah.gov/documentation/sgid/",
    "source": "hand-filled list (Nov 10)",
    "src": "h112",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Utah_State_Park_Management_Areas/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (77 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-UT",
    "check": "bot",
-   "expected": 222,
+   "expected": null,
    "have": 222,
    "host": "services.arcgis.com",
    "id": "US-UT|sgutb",
    "layer": "sgutb",
-   "note": "services.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "existing download: US_UT_wmas_wfl1 (266 records)",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h110",
-   "status": "held",
+   "status": "done",
    "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (222 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-UT",
    "check": "bot",
-   "expected": 20,
+   "expected": null,
    "have": 20,
    "host": "services1.arcgis.com",
    "id": "US-UT|sgutc",
    "layer": "sgutc",
-   "note": "services1.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h109",
-   "status": "held",
+   "status": "done",
    "url": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/Utah_National_Historic_Landmarks/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (20 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-UT",
    "check": "person",
-   "expected": 46,
+   "expected": null,
    "have": 46,
    "host": "services1.arcgis.com",
    "id": "US-UT|sgutf",
    "layer": "sgutf",
-   "note": "services1.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
+   "note": "existing download: UT_state_parks_all.geojson (47 records)",
    "page": "https://gis.utah.gov/documentation/sgid/",
    "source": "hand-filled list (Nov 10)",
    "src": "h108",
-   "status": "open",
+   "status": "done",
    "url": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/state_park_boundaries_dissolved/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (46 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3412,14 +2945,14 @@
    "host": "services.arcgis.com",
    "id": "US-UT|utusutgeoh",
    "layer": "utusutgeoh",
-   "note": "",
+   "note": "existing download: query (25).json (129 records)",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
-   "source": "hand-filled list (Nov 10)",
+   "source": "existing download",
    "src": "h111",
-   "status": "held",
+   "status": "done",
    "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Geoheritage_Sites_v6/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "an existing download covers this layer (raw facts in data/outlines/raw-manifest.json); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3430,93 +2963,39 @@
    "host": "services.arcgis.com",
    "id": "US-UT|utusutstat",
    "layer": "utusutstat",
-   "note": "",
+   "note": "existing download: query (24).json (56 records)",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
-   "source": "hand-filled list (Nov 10)",
+   "source": "existing download",
    "src": "h113",
-   "status": "held",
+   "status": "done",
    "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Utah_State_Parks/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "an existing download covers this layer (raw facts in data/outlines/raw-manifest.json); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-UT",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 254,
    "host": "services.arcgis.com",
    "id": "US-UT|utusutultr",
    "layer": "utusutultr",
-   "note": "",
+   "note": "existing download: query (17).json (346 records)",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h114",
-   "status": "held",
+   "status": "done",
    "url": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/ULTRA_Properties_2_view/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-UT",
-   "check": null,
-   "expected": 254,
-   "have": 254,
-   "host": "services.arcgis.com",
-   "id": "US-UT|utw",
-   "layer": "utw",
-   "note": "services.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
-   "page": "https://hub.arcgis.com/search?q=ULTRA%20Properties%202%20view",
-   "source": "master",
-   "src": null,
-   "status": "open",
-   "url": "svc:https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/ULTRA_Properties_2_view/FeatureServer|.",
-   "who": "person",
-   "why": "the saved copy of US-UT is still short after the bot refill (6689 of 6692); this layer may hold the missing records"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-UT",
-   "check": "bot",
-   "expected": 15,
-   "have": 15,
-   "host": "apps.fs.usda.gov",
-   "id": "US-UT|wld",
-   "layer": "wld",
-   "note": "apps.fs.usda.gov: saved copies only, no live read: a person downloads it in a browser direct file: https://data.fs.usda.gov/geodata/edw/edw_resources/shp/BdyDesg_LSRS_Wilderness.zip",
-   "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
-   "source": "master",
-   "src": "h005",
-   "status": "open",
-   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-UT is still short after the bot refill (6689 of 6692); this layer may hold the missing records"
-  },
-  {
-   "added": "2026-11-10",
-   "area": "US-UT",
-   "check": "person",
-   "expected": 1,
-   "have": 1,
-   "host": "services1.arcgis.com",
-   "id": "US-UT|wsrc",
-   "layer": "wsrc",
-   "note": "services1.arcgis.com: services*.arcgis.com is never contacted, robots.txt included: a person downloads it in a browser",
-   "page": "https://www.rivers.gov/maps-graphics",
-   "source": "master",
-   "src": "h006",
-   "status": "open",
-   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0/query",
-   "who": "person",
-   "why": "the saved copy of US-UT is still short after the bot refill (6689 of 6692); this layer may hold the missing records"
+   "why": "the saved copy already holds this layer (254 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-VA",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 26,
    "host": "services1.arcgis.com",
    "id": "US-VA|sgvaa",
    "layer": "sgvaa",
@@ -3524,10 +3003,10 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h119",
-   "status": "held",
+   "status": "done",
    "url": "https://services1.arcgis.com/zdPnl7ASQIo6PX54/arcgis/rest/services/VDOF_State_Forests/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (26 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3544,8 +3023,8 @@
    "src": "h117",
    "status": "done",
    "url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VSP_Natural_Area_Preserves/FeatureServer/1",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (69 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3562,8 +3041,8 @@
    "src": "h120",
    "status": "done",
    "url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/bclsp_State_Parks/FeatureServer/0",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (39 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3580,8 +3059,8 @@
    "src": "h118",
    "status": "done",
    "url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/SP_Boundary_-_Tracts/FeatureServer/0",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (352 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3598,15 +3077,15 @@
    "src": "h116",
    "status": "done",
    "url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/VAConservationLands/FeatureServer/0",
-   "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (10443 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-VA",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 4013,
    "host": "services1.arcgis.com",
    "id": "US-VA|sgvaf",
    "layer": "sgvaf",
@@ -3614,10 +3093,10 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h115",
-   "status": "held",
+   "status": "done",
    "url": "https://services1.arcgis.com/PxUNqSbaWFvFgHnJ/arcgis/rest/services/Local_Parks_2023/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (4013 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3635,7 +3114,7 @@
    "status": "done",
    "url": "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/ParkBoundaries/FeatureServer/2",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (207 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3653,14 +3132,14 @@
    "status": "done",
    "url": "https://services.arcgis.com/6lCKYNJLvwTXqrmp/arcgis/rest/services/NHD/FeatureServer/6",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (4033 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-WA",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 1,
    "host": "services9.arcgis.com",
    "id": "US-WA|sgwah",
    "layer": "sgwah",
@@ -3668,10 +3147,10 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h121",
-   "status": "held",
+   "status": "done",
    "url": "https://services9.arcgis.com/EGheeB0VDT6EarZv/ArcGIS/rest/services/MonumentParks1_WFL1/FeatureServer/29",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (1 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3689,7 +3168,7 @@
    "status": "done",
    "url": "https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/1",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (118 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3707,7 +3186,7 @@
    "status": "done",
    "url": "https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/West_Virginia_State_Forests/FeatureServer/16",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (8 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3718,21 +3197,21 @@
    "host": "services9.arcgis.com",
    "id": "US-WV|wvuswvfish",
    "layer": "wvuswvfish",
-   "note": "",
+   "note": "existing download: query (27).json (33 records)",
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
-   "source": "hand-filled list (Nov 10)",
+   "source": "existing download",
    "src": "h125",
-   "status": "held",
+   "status": "done",
    "url": "https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/Fish_Hatcheries_view/FeatureServer/25",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "an existing download covers this layer (raw facts in data/outlines/raw-manifest.json); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-WY",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 12,
    "host": "services6.arcgis.com",
    "id": "US-WY|sgwya",
    "layer": "sgwya",
@@ -3740,17 +3219,17 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h131",
-   "status": "held",
+   "status": "done",
    "url": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WyomingStateParks/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (12 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US-WY",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 56,
    "host": "services1.arcgis.com",
    "id": "US-WY|sgwyb",
    "layer": "sgwyb",
@@ -3758,10 +3237,10 @@
    "page": "https://www.sciencebase.gov/catalog/item/6759abcfd34edfeb8710a004",
    "source": "hand-filled list (Nov 10)",
    "src": "h132",
-   "status": "held",
+   "status": "done",
    "url": "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/SiteBoundaries/FeatureServer/0",
    "who": "person",
-   "why": "fallback only (PAD-US or CPCAD, which the keys already read): no first-party download found yet"
+   "why": "the saved copy already holds this layer (56 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3779,7 +3258,7 @@
    "status": "done",
    "url": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/WHMA_Boundaries/FeatureServer/4",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (109 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3797,7 +3276,7 @@
    "status": "done",
    "url": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/PAA_Boundaries/FeatureServer/1",
    "who": "person",
-   "why": "the saved copy already holds this layer (read before the bots were limited to saved copies); a change at the source reopens it"
+   "why": "the saved copy already holds this layer (229 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3808,14 +3287,14 @@
    "host": "services6.arcgis.com",
    "id": "US-WY|wyuswyhatc",
    "layer": "wyuswyhatc",
-   "note": "",
+   "note": "existing download: query (28).json (10 records) checked hand file: hand-US-WY.wyuswyhatc.geojson.gz",
    "page": "http://wyoming-wgfd.opendata.arcgis.com/",
-   "source": "hand-filled list (Nov 10)",
+   "source": "existing download",
    "src": "h129",
-   "status": "open",
+   "status": "done",
    "url": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/Hatchery_Locations/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "points (no outline): a checked hand file for the point tier; the outline key has no outline to take from it"
   },
   {
    "added": "2026-11-10",
@@ -3826,21 +3305,21 @@
    "host": "services6.arcgis.com",
    "id": "US-WY|wyuswyrive",
    "layer": "wyuswyrive",
-   "note": "",
+   "note": "existing download: query (32).json (185 records) checked hand file: hand-US-WY.wyuswyrive.geojson.gz",
    "page": "http://wyoming-wgfd.opendata.arcgis.com/",
-   "source": "hand-filled list (Nov 10)",
+   "source": "existing download",
    "src": "h130",
-   "status": "open",
+   "status": "done",
    "url": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "points (no outline): a checked hand file for the point tier; the outline key has no outline to take from it"
   },
   {
    "added": "2026-11-10",
    "area": "US",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 329,
    "host": "apps.fs.usda.gov",
    "id": "US|fsod",
    "layer": "fsod",
@@ -3848,17 +3327,17 @@
    "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
    "source": "hand-filled list (Nov 10)",
    "src": "h002",
-   "status": "open",
+   "status": "done",
    "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (329 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 352,
    "host": "apps.fs.usda.gov",
    "id": "US|fwsr",
    "layer": "fwsr",
@@ -3866,17 +3345,17 @@
    "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
    "source": "hand-filled list (Nov 10)",
    "src": "h003",
-   "status": "open",
+   "status": "done",
    "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiver_01/MapServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (352 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 890,
    "host": "services.arcgis.com",
    "id": "US|h004",
    "layer": "h004",
@@ -3884,17 +3363,17 @@
    "page": "https://iris.fws.gov/APPS/ServCat/Reference/Profile/194089",
    "source": "hand-filled list (Nov 10)",
    "src": "h004",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (890 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 620,
    "host": "apps.fs.usda.gov",
    "id": "US|wld",
    "layer": "wld",
@@ -3902,28 +3381,28 @@
    "page": "https://data.fs.usda.gov/geodata/edw/datasets.php",
    "source": "hand-filled list (Nov 10)",
    "src": "h005",
-   "status": "open",
+   "status": "done",
    "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (620 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "US",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 59,
    "host": "services1.arcgis.com",
    "id": "US|wsrc",
    "layer": "wsrc",
-   "note": "",
+   "note": "existing download: US_wild_scenic_river_segments.zip (1051 records)",
    "page": "https://www.rivers.gov/maps-graphics",
    "source": "hand-filled list (Nov 10)",
    "src": "h006",
-   "status": "open",
+   "status": "done",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (59 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -3940,8 +3419,8 @@
    "src": "h172",
    "status": "open",
    "url": "https://services1.arcgis.com/KNdRU5cN6ENqCTjk/ArcGIS/rest/services/US_Fish_and_Wildlife_Service/FeatureServer/7",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "an official direct file a bot may fetch exists for a layer a bot may not read: the fresh-start run downloads it"
   },
   {
    "added": "2026-11-10",
@@ -3952,21 +3431,21 @@
    "host": "services1.arcgis.com",
    "id": "W-AS|sgakd",
    "layer": "sgakd",
-   "note": "direct file: https://irma.nps.gov/DataStore/DownloadFile/761368?Reference=2319366",
+   "note": "direct file: https://irma.nps.gov/DataStore/DownloadFile/761368?Reference=2319366 checked hand file: hand-W-AS.sgakd.geojson.gz",
    "page": "https://irma.nps.gov/DataStore/Reference/Profile/2319366",
    "source": "hand-filled list (Nov 10)",
    "src": "h133",
    "status": "open",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "an official direct file a bot may fetch exists for a layer a bot may not read: the fresh-start run downloads it"
   },
   {
    "added": "2026-11-10",
    "area": "W-AT",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 10,
    "host": "services7.arcgis.com",
    "id": "W-AT|h173",
    "layer": "h173",
@@ -3974,10 +3453,10 @@
    "page": "https://hub.arcgis.com/search?q=SG%20AT%202025%20v%20April",
    "source": "hand-filled list (Nov 10)",
    "src": "h173",
-   "status": "held",
+   "status": "done",
    "url": "https://services7.arcgis.com/JhrnFQUbVgiJfOG5/ArcGIS/rest/services/SG_AT_2025_v_April/FeatureServer/6",
    "who": "person",
-   "why": "no official download found yet (needs research)"
+   "why": "the saved copy already holds this layer (10 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -4110,7 +3589,7 @@
    "area": "W-AU",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 26386,
    "host": "services1.arcgis.com",
    "id": "W-AU|h181",
    "layer": "h181",
@@ -4118,17 +3597,17 @@
    "page": "https://www.data.act.gov.au/dataset/ACTGOV-Urban-Open-Space-Asset/8rwg-v63s",
    "source": "hand-filled list (Nov 10)",
    "src": "h181",
-   "status": "open",
+   "status": "done",
    "url": "https://services1.arcgis.com/E5n4f1VY84i0xSjy/arcgis/rest/services/ACTGOV_Urban_Open_Space_Asset/FeatureServer/1",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (26386 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "W-AU",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 2771,
    "host": "services2.arcgis.com",
    "id": "W-AU|h182",
    "layer": "h182",
@@ -4136,17 +3615,17 @@
    "page": "https://data.nsw.gov.au/data/dataset/state-forest",
    "source": "hand-filled list (Nov 10)",
    "src": "h182",
-   "status": "open",
+   "status": "done",
    "url": "https://services2.arcgis.com/iCBB4zKDwkw2iwDD/arcgis/rest/services/NSW_Dedicated_State_Forests/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (2771 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "W-AU",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 144,
    "host": "services2.arcgis.com",
    "id": "W-AU|h183",
    "layer": "h183",
@@ -4154,17 +3633,17 @@
    "page": "https://datasets.seed.nsw.gov.au/dataset/flora-reserves",
    "source": "hand-filled list (Nov 10)",
    "src": "h183",
-   "status": "open",
+   "status": "done",
    "url": "https://services2.arcgis.com/iCBB4zKDwkw2iwDD/arcgis/rest/services/NSW_Flora_Reserves/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (144 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "W-AU",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 80,
    "host": "services1.arcgis.com",
    "id": "W-AU|h184",
    "layer": "h184",
@@ -4172,10 +3651,10 @@
    "page": "https://hub.arcgis.com/search?q=Public%20Land%20Reserves",
    "source": "hand-filled list (Nov 10)",
    "src": "h184",
-   "status": "held",
+   "status": "done",
    "url": "https://services1.arcgis.com/E5n4f1VY84i0xSjy/arcgis/rest/services/Public_Land_Reserves/FeatureServer/0",
    "who": "person",
-   "why": "no official download found yet (needs research)"
+   "why": "the saved copy already holds this layer (80 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -4254,7 +3733,7 @@
    "area": "W-FR",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 17626,
    "host": "services.arcgis.com",
    "id": "W-FR|h189",
    "layer": "h189",
@@ -4262,17 +3741,17 @@
    "page": "https://www.data.gouv.fr/datasets/inpn-donnees-du-programme-znieff",
    "source": "hand-filled list (Nov 10)",
    "src": "h189",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/d3voDfTFbHOCRwVR/arcgis/rest/services/ZNIEFF_2021/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (17626 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "W-FR",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 2271,
    "host": "services.arcgis.com",
    "id": "W-FR|h190",
    "layer": "h190",
@@ -4280,17 +3759,17 @@
    "page": "https://www.data.gouv.fr/datasets/inpn-donnees-du-programme-znieff",
    "source": "hand-filled list (Nov 10)",
    "src": "h190",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/d3voDfTFbHOCRwVR/arcgis/rest/services/ZNIEFF_2021/FeatureServer/1",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (2271 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "W-GB",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 1654,
    "host": "services2.arcgis.com",
    "id": "W-GB|h191",
    "layer": "h191",
@@ -4298,17 +3777,17 @@
    "page": "https://www.data.gov.uk/dataset/aa06f3af-3882-4516-a8a9-f840f590a352/forestry-england-ownership2025",
    "source": "hand-filled list (Nov 10)",
    "src": "h191",
-   "status": "open",
+   "status": "done",
    "url": "https://services2.arcgis.com/mHXjwgl3OARRqqD4/arcgis/rest/services/Forestry_England_Ownership_2024_/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (1654 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "W-GB",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 1398,
    "host": "services2.arcgis.com",
    "id": "W-GB|h192",
    "layer": "h192",
@@ -4316,35 +3795,35 @@
    "page": "https://data.gov.uk/dataset/3d279869-555d-45c2-a859-d029dab1fc39/national-forest-estate-recreation-areas-england-2016",
    "source": "hand-filled list (Nov 10)",
    "src": "h192",
-   "status": "open",
+   "status": "done",
    "url": "https://services2.arcgis.com/mHXjwgl3OARRqqD4/arcgis/rest/services/Forestry_England_Recreation_Areas/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (1398 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "W-GB",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 481,
    "host": "services6.arcgis.com",
    "id": "W-GB|h193",
    "layer": "h193",
-   "note": "",
+   "note": "existing download: GB_forest_blocks (481 records)",
    "page": "https://hub.arcgis.com/search?q=Forest%20Blocks%20WFS",
    "source": "hand-filled list (Nov 10)",
    "src": "h193",
-   "status": "held",
+   "status": "done",
    "url": "https://services6.arcgis.com/JF5BD4Y14a3LnPcJ/arcgis/rest/services/Forest_Blocks_WFS/FeatureServer/0",
    "who": "person",
-   "why": "no official download found yet (needs research)"
+   "why": "the saved copy already holds this layer (481 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "W-GB",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 1493,
    "host": "services7.arcgis.com",
    "id": "W-GB|h194",
    "layer": "h194",
@@ -4352,17 +3831,17 @@
    "page": "https://hub.arcgis.com/search?q=Greenspace%203%20view",
    "source": "hand-filled list (Nov 10)",
    "src": "h194",
-   "status": "held",
+   "status": "done",
    "url": "https://services7.arcgis.com/rVwbcvflURVxkV6s/arcgis/rest/services/Greenspace_3_view/FeatureServer/4",
    "who": "person",
-   "why": "no official download found yet (needs research)"
+   "why": "the saved copy already holds this layer (1493 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "W-GB",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 350,
    "host": "services2.arcgis.com",
    "id": "W-GB|h195",
    "layer": "h195",
@@ -4370,35 +3849,35 @@
    "page": "https://hub.arcgis.com/search?q=Blocks",
    "source": "hand-filled list (Nov 10)",
    "src": "h195",
-   "status": "held",
+   "status": "done",
    "url": "https://services2.arcgis.com/mHXjwgl3OARRqqD4/arcgis/rest/services/Blocks/FeatureServer/0",
    "who": "person",
-   "why": "no official download found yet (needs research)"
+   "why": "the saved copy already holds this layer (350 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "W-GB",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 1728,
    "host": "services.arcgis.com",
    "id": "W-GB|h196",
    "layer": "h196",
-   "note": "",
+   "note": "existing download: GB_local_nature_reserves_england (1728 records)",
    "page": "https://www.data.gov.uk/dataset/acdf4a9e-a115-41fb-bbe9-603c819aa7f7/local-nature-reserves-england1",
    "source": "hand-filled list (Nov 10)",
    "src": "h196",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (1728 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "W-GB",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 225,
    "host": "services.arcgis.com",
    "id": "W-GB|h197",
    "layer": "h197",
@@ -4406,17 +3885,17 @@
    "page": "https://www.data.gov.uk/dataset/726484b0-d14e-44a3-9621-29e79fc47bfc/national-nature-reserves-england",
    "source": "hand-filled list (Nov 10)",
    "src": "h197",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Nature_Reserves_England/FeatureServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (225 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "W-GB",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 415,
    "host": "services.arcgis.com",
    "id": "W-GB|h198",
    "layer": "h198",
@@ -4424,17 +3903,17 @@
    "page": "https://www.data.gov.uk/dataset/e729abb9-aa6c-42c5-baec-b6673e2b3a62/country-parks-england2",
    "source": "hand-filled list (Nov 10)",
    "src": "h198",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Country_Parks_England/FeatureServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (415 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "W-GB",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 34,
    "host": "services.arcgis.com",
    "id": "W-GB|h199",
    "layer": "h199",
@@ -4442,17 +3921,17 @@
    "page": "https://www.data.gov.uk/dataset/8e3ae3b9-a827-47f1-b025-f08527a4e84e/areas-of-outstanding-natural-beauty-england",
    "source": "hand-filled list (Nov 10)",
    "src": "h199",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Areas_of_Outstanding_Natural_Beauty_England/FeatureServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (34 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "W-GB",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 10,
    "host": "services.arcgis.com",
    "id": "W-GB|h200",
    "layer": "h200",
@@ -4460,17 +3939,17 @@
    "page": "https://www.data.gov.uk/dataset/334e1b27-e193-4ef5-b14e-696b58bb7e95/national-parks-england1",
    "source": "hand-filled list (Nov 10)",
    "src": "h200",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Parks_England/FeatureServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (10 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "W-GB",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 215,
    "host": "services1.arcgis.com",
    "id": "W-GB|h201",
    "layer": "h201",
@@ -4478,17 +3957,17 @@
    "page": "https://opendata-rspb.opendata.arcgis.com/",
    "source": "hand-filled list (Nov 10)",
    "src": "h201",
-   "status": "open",
+   "status": "done",
    "url": "https://services1.arcgis.com/h1C9f6qsGKmqXsVs/arcgis/rest/services/RSPB_Public_Reserves/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (215 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "W-GB",
    "check": "bot",
    "expected": null,
-   "have": null,
+   "have": 4128,
    "host": "services.arcgis.com",
    "id": "W-GB|h202",
    "layer": "h202",
@@ -4496,10 +3975,10 @@
    "page": "https://www.data.gov.uk/dataset/5b632bd7-9838-4ef2-9101-ea9384421b0d/sites-of-special-scientific-interest-england3",
    "source": "hand-filled list (Nov 10)",
    "src": "h202",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/SSSI_England/FeatureServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "the saved copy already holds this layer (4128 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -4524,7 +4003,7 @@
    "area": "W-IE",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 17,
    "host": "services7.arcgis.com",
    "id": "W-IE|h204",
    "layer": "h204",
@@ -4532,17 +4011,17 @@
    "page": "https://hub.arcgis.com/search?q=Coillte%20Recreation%20Information",
    "source": "hand-filled list (Nov 10)",
    "src": "h204",
-   "status": "held",
+   "status": "done",
    "url": "https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Recreation_Information/FeatureServer/4",
    "who": "person",
-   "why": "no official download found yet (needs research)"
+   "why": "the saved copy already holds this layer (17 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
    "area": "W-JP",
    "check": "person",
    "expected": null,
-   "have": null,
+   "have": 11227,
    "host": "services.arcgis.com",
    "id": "W-JP|h205",
    "layer": "h205",
@@ -4550,10 +4029,10 @@
    "page": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A10-v4_0.html",
    "source": "hand-filled list (Nov 10)",
    "src": "h205",
-   "status": "open",
+   "status": "done",
    "url": "https://services.arcgis.com/wlVTGRSYTzAbjjiC/arcgis/rest/services/nps_all/FeatureServer/0",
    "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "why": "the saved copy already holds this layer (11227 records); a change at the source reopens it"
   },
   {
    "added": "2026-11-10",
@@ -4678,8 +4157,8 @@
    "src": "h172",
    "status": "open",
    "url": "https://services1.arcgis.com/KNdRU5cN6ENqCTjk/ArcGIS/rest/services/US_Fish_and_Wildlife_Service/FeatureServer/7",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "an official direct file a bot may fetch exists for a layer a bot may not read: the fresh-start run downloads it"
   },
   {
    "added": "2026-11-10",
@@ -4696,8 +4175,8 @@
    "src": "h172",
    "status": "open",
    "url": "https://services1.arcgis.com/KNdRU5cN6ENqCTjk/ArcGIS/rest/services/US_Fish_and_Wildlife_Service/FeatureServer/7",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "an official direct file a bot may fetch exists for a layer a bot may not read: the fresh-start run downloads it"
   },
   {
    "added": "2026-11-10",
@@ -4708,14 +4187,14 @@
    "host": "services1.arcgis.com",
    "id": "W-VI|sgakd",
    "layer": "sgakd",
-   "note": "direct file: https://irma.nps.gov/DataStore/DownloadFile/761368?Reference=2319366",
+   "note": "direct file: https://irma.nps.gov/DataStore/DownloadFile/761368?Reference=2319366 checked hand file: hand-W-VI.sgakd.geojson.gz",
    "page": "https://irma.nps.gov/DataStore/Reference/Profile/2319366",
    "source": "hand-filled list (Nov 10)",
    "src": "h133",
    "status": "open",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "an official direct file a bot may fetch exists for a layer a bot may not read: the fresh-start run downloads it"
   },
   {
    "added": "2026-11-10",
@@ -4732,8 +4211,8 @@
    "src": "h134",
    "status": "open",
    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/National_Wildlife_Refuge_System_Boundaries/FeatureServer/0",
-   "who": "person",
-   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+   "who": "bot",
+   "why": "an official direct file a bot may fetch exists for a layer a bot may not read: the fresh-start run downloads it"
   }
  ]
 }

@@ -42,12 +42,15 @@ def host_ok(url):
     return True, ''
 
 
-def who_for(url, robots_ok=None):
-    """('bot' | 'person' | 'never', why), the same words as the needs-download list."""
+def who_for(url, robots_ok=None, file_url=None):
+    """('bot' | 'person' | 'never', why), the same words as the needs-download list. Nov 10 (the same rule as KPC-Links
+    kpc_master.who_for): a layer a bot may not read whose OFFICIAL DIRECT FILE sits on a host a bot may fetch is a bot's row."""
     host, path = parts(url)
     for h, p in NEVER_CONTACT:
         if host == h and path.lower().startswith(p.lower()): return 'never', f'never contact {h}{p}: no request of any kind, by a bot or a person'
     ok, why = host_ok(url)
-    if not ok: return 'person', why + ': a person downloads it in a browser'
-    if robots_ok is not None and not robots_ok(url): return 'person', f'{host}: robots.txt does not allow a bot to read it (a 403 counts as no): a person downloads it'
-    return 'bot', ''
+    if ok and (robots_ok is None or robots_ok(url)): return 'bot', ''
+    why = why + ': a person downloads it in a browser' if not ok else f'{host}: robots.txt does not allow a bot to read it (a 403 counts as no): a person downloads it'
+    if file_url and host_ok(file_url)[0] and (robots_ok is None or robots_ok(file_url)):
+        return 'bot', f'the official direct file is on {parts(file_url)[0]}, which a bot may fetch: the master step downloads it'
+    return 'person', why
