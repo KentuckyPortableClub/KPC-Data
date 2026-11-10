@@ -484,21 +484,21 @@
    "checked": 511,
    "counts": {
     "camps": 511,
-    "needs_browser": 2,
+    "needs_browser": 0,
     "needs_key": 110,
     "no_page": 377,
     "not_official": 0,
     "ok": 3,
     "other": 9,
     "resting": 0,
-    "robots": 10,
+    "robots": 12,
     "with_booking": 12,
     "with_elevation": 0,
     "with_facts": 5,
     "with_sites": 0
    },
-   "left": 0,
-   "status": "done",
+   "left": 1,
+   "status": "partial",
    "updated": "2026-11-10"
   },
   "US-MN": {
@@ -2575,12 +2575,12 @@
  },
  "last": {
   "areas": [
-   "US-IN"
+   "US-MI"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 95,
+   "dropped_queued": 516,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2588,11 +2588,11 @@
      "robots.txt answered 403: nothing fetched from epqs.nationalmap.gov this run"
     ],
     [
-     "https://broadbandmap.fcc.gov/robots.txt",
-     "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
+     "https://midnrreservations.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from midnrreservations.com this run"
     ]
    ],
-   "requests": 87,
+   "requests": 32,
    "rested": 0,
    "robots": 2,
    "robots_unreadable": 2,
@@ -2600,20 +2600,20 @@
   },
   "ridb_key": false,
   "stat": {
-   "browser": 7,
-   "camps": 96,
+   "browser": 9,
+   "camps": 510,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 6,
-   "needs_key": 14,
-   "no_page": 4,
-   "not_official": 8,
-   "ok": 69,
-   "pages_read": 69,
+   "needs_browser": 7,
+   "needs_key": 113,
+   "no_page": 379,
+   "not_official": 0,
+   "ok": 12,
+   "pages_read": 19,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 0
+   "skipped_fresh": 11
   },
   "when": "2026-11-10"
  },

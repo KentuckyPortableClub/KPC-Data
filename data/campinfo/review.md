@@ -33,7 +33,7 @@ Updated 2026-11-10. Every fact in <area>.json carries its source url, read date 
 | US-NH | 79 | 41 | 24 | 0 | 0 | 0 | 12 | 0 | 2 | 3 | 43 | 0 |
 | US-ME | 25 | 0 | 4 | 0 | 7 | 0 | 0 | 1 | 13 | 0 | 20 | 0 |
 | US-MD | 77 | 40 | 30 | 1 | 0 | 0 | 0 | 0 | 6 | 10 | 43 | 0 |
-| US-DE | 24 | 2 | 0 | 2 | 0 | 20 | 0 | 0 | 0 | 0 | 24 | 0 |
+| US-DE | 24 | 2 | 0 | 0 | 22 | 0 | 0 | 0 | 0 | 0 | 24 | 0 |
 | US-DC | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 0 |
 | US-AR | 229 | 21 | 120 | 0 | 2 | 0 | 0 | 5 | 81 | 5 | 78 | 0 |
 | US-LA | 67 | 0 | 13 | 0 | 52 | 0 | 0 | 0 | 2 | 0 | 33 | 0 |
@@ -53,15 +53,14 @@ Updated 2026-11-10. Every fact in <area>.json carries its source url, read date 
 | US-WA | 363 | 24 | 212 | 1 | 15 | 0 | 66 | 0 | 45 | 3 | 70 | 0 |
 | US-AK | 368 | 8 | 234 | 0 | 113 | 0 | 4 | 0 | 9 | 5 | 64 | 0 |
 | US-HI | 22 | 10 | 2 | 0 | 0 | 0 | 8 | 0 | 2 | 0 | 12 | 0 |
-| US-MI | 511 | 3 | 110 | 2 | 10 | 0 | 377 | 0 | 9 | 0 | 12 | 0 |
+| US-MI | 511 | 3 | 110 | 0 | 12 | 0 | 377 | 0 | 9 | 0 | 12 | 0 |
 | US-OH | 96 | 0 | 11 | 0 | 12 | 0 | 62 | 0 | 11 | 0 | 11 | 0 |
 | US-UT | 459 | 40 | 331 | 1 | 0 | 0 | 13 | 0 | 74 | 1 | 115 | 0 |
 
 ## Needs a secret / not built yet
 
 - RIDB_API_KEY is not set in KPC-Data: every federal (Recreation.gov) row has status "needs RIDB_API_KEY secret in KPC-Data". Free key: ridb.recreation.gov, Profile. Add it under Settings -> Secrets and variables -> Actions.
-- Canada: no campground rows exist in KPC-Data yet (no campfed / campstate file for CA-xx; parkinfo/CA.json lists activities only), so the Canadian areas are marked done with nothing read. Parks Canada camping needs its own list first.
-- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AL FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AR FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AZ FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CA FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CO FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CT FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-DE FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
+- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AL FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AR FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AZ FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CA FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CO FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CT FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-DE FCC listAsOfDates: host resting (robots.txt could not be read: next run)
 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
@@ -74,7 +73,7 @@ Updated 2026-11-10. Every fact in <area>.json carries its source url, read date 
 - www.wlf.louisiana.gov: 31 campgrounds · host resting (robots.txt could not be read: next run)
 - reserve.tnstateparks.com: 25 campgrounds · host resting (robots.txt could not be read: next run)
 - www.fdacs.gov: 23 campgrounds · robots.txt says no
-- destateparks.com: 22 campgrounds · host resting
+- destateparks.com: 22 campgrounds · host resting (robots.txt could not be read: next run)
 - www.lastateparks.com: 21 campgrounds · host resting (robots.txt could not be read: next run)
 - www.tn.gov: 17 campgrounds · host resting (robots.txt could not be read: next run)
 - dep.nj.gov: 17 campgrounds · host resting

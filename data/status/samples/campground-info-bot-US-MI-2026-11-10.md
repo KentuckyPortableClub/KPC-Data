@@ -11,14 +11,14 @@ Source file: `data/campinfo/US-MI.json`
   "url": null
  },
  "cell": null,
- "checked": "2026-11-03",
+ "checked": "2026-11-10",
  "checkin": null,
  "checkout": null,
  "drinking_water": null,
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-85.98652&y=46.18144&units=Feet&wkid=4326",
-  "status": "host resting",
+  "status": "host resting (robots.txt could not be read: next run)",
   "value": null
  },
  "features": null,
@@ -79,14 +79,14 @@ Source file: `data/campinfo/US-MI.json`
   "url": null
  },
  "cell": null,
- "checked": "2026-11-03",
+ "checked": "2026-11-10",
  "checkin": null,
  "checkout": null,
  "drinking_water": null,
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-84.24154&y=42.32524&units=Feet&wkid=4326",
-  "status": "host resting",
+  "status": "host resting (robots.txt could not be read: next run)",
   "value": null
  },
  "features": null,
@@ -147,14 +147,14 @@ Source file: `data/campinfo/US-MI.json`
   "url": null
  },
  "cell": null,
- "checked": "2026-11-03",
+ "checked": "2026-11-10",
  "checkin": null,
  "checkout": null,
  "drinking_water": null,
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-83.29717&y=44.64651&units=Feet&wkid=4326",
-  "status": "host resting",
+  "status": "host resting (robots.txt could not be read: next run)",
   "value": null
  },
  "features": null,
@@ -215,14 +215,14 @@ Source file: `data/campinfo/US-MI.json`
   "url": null
  },
  "cell": null,
- "checked": "2026-11-03",
+ "checked": "2026-11-10",
  "checkin": null,
  "checkout": null,
  "drinking_water": null,
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-86.50093&y=44.03848&units=Feet&wkid=4326",
-  "status": "host resting",
+  "status": "host resting (robots.txt could not be read: next run)",
   "value": null
  },
  "features": null,
@@ -351,14 +351,14 @@ Source file: `data/campinfo/US-MI.json`
   "url": null
  },
  "cell": null,
- "checked": "2026-11-03",
+ "checked": "2026-11-10",
  "checkin": null,
  "checkout": null,
  "drinking_water": null,
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-83.52518&y=42.82257&units=Feet&wkid=4326",
-  "status": "host resting",
+  "status": "host resting (robots.txt could not be read: next run)",
   "value": null
  },
  "features": null,
@@ -419,14 +419,14 @@ Source file: `data/campinfo/US-MI.json`
   "url": null
  },
  "cell": null,
- "checked": "2026-11-03",
+ "checked": "2026-11-10",
  "checkin": null,
  "checkout": null,
  "drinking_water": null,
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-85.57898&y=46.35101&units=Feet&wkid=4326",
-  "status": "host resting",
+  "status": "host resting (robots.txt could not be read: next run)",
   "value": null
  },
  "features": null,
@@ -491,14 +491,14 @@ Source file: `data/campinfo/US-MI.json`
   "url": null
  },
  "cell": null,
- "checked": "2026-11-03",
+ "checked": "2026-11-10",
  "checkin": null,
  "checkout": null,
  "drinking_water": null,
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-84.69083&y=44.92893&units=Feet&wkid=4326",
-  "status": "host resting",
+  "status": "host resting (robots.txt could not be read: next run)",
   "value": null
  },
  "features": null,
@@ -627,14 +627,14 @@ Source file: `data/campinfo/US-MI.json`
   "url": null
  },
  "cell": null,
- "checked": "2026-11-03",
+ "checked": "2026-11-10",
  "checkin": null,
  "checkout": null,
  "drinking_water": null,
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-86.24616&y=43.05762&units=Feet&wkid=4326",
-  "status": "host resting",
+  "status": "host resting (robots.txt could not be read: next run)",
   "value": null
  },
  "features": null,
@@ -763,14 +763,14 @@ Source file: `data/campinfo/US-MI.json`
   "url": null
  },
  "cell": null,
- "checked": "2026-11-03",
+ "checked": "2026-11-10",
  "checkin": null,
  "checkout": null,
  "drinking_water": null,
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-84.05589&y=45.39419&units=Feet&wkid=4326",
-  "status": "host resting",
+  "status": "host resting (robots.txt could not be read: next run)",
   "value": null
  },
  "features": null,
