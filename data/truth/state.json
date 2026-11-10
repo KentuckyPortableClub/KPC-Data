@@ -20,6 +20,26 @@
    "status": "done",
    "updated": "2026-11-10"
   },
+  "CA-QC": {
+   "checked": 834,
+   "counts": {
+    "agree": 68,
+    "handover_hints": 0,
+    "no_page": 113,
+    "no_size": 236,
+    "off": 16,
+    "ours_unknown": 3,
+    "parks": 834,
+    "retired": 0,
+    "unsure": 6,
+    "weak": 27,
+    "with_outline": 442
+   },
+   "left": 0,
+   "parks": 834,
+   "status": "done",
+   "updated": "2026-11-10"
+  },
   "US-AK": {
    "checked": 179,
    "counts": {
@@ -1049,64 +1069,53 @@
   "www.blm.gov": 1794381737.2364364,
   "www.fhwa.dot.gov": 1794323337.1319654,
   "www.nevadawilderness.org": 1794330712.037567,
+  "www.sepaq.com": 1794390052.9418306,
   "www2.dnr.state.mi.us": 1794371193.383787
  },
  "last": {
   "areas": [
-   "CA-ON"
+   "CA-QC"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 5,
-   "dropped_queued": 20,
+   "browser": 6,
+   "dropped_queued": 1,
    "errors": 0,
-   "for_person": 1,
+   "for_person": 2,
    "for_person_urls": [
     [
-     "http://www.chapel-hill-north-forest-trails.ca/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.chapel-hill-north-forest-trails.ca this run"
-    ],
-    [
-     "https://waterfalls.hamilton.ca/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from waterfalls.hamilton.ca this run"
-    ],
-    [
-     "https://birdinghotspots.org/robots.txt",
-     "robots.txt answered 403: nothing fetched from birdinghotspots.org this run"
-    ],
-    [
-     "https://inaturalist.ca/check_lists/159530-Pointe-Au-Baril-Forests-And-Wetlands-Check-List",
+     "https://www.sepaq.com/pq/bon/information.dot",
      "HTTP 403 twice"
     ],
     [
-     "https://trcaca.s3.ca-central-1.amazonaws.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from trcaca.s3.ca-central-1.amazonaws.com this run"
+     "https://www.sepaq.com/pq/pan/information.dot",
+     "HTTP 403 twice"
     ],
     [
-     "https://cvc.ca/robots.txt",
-     "robots.txt answered 403: nothing fetched from cvc.ca this run"
+     "https://www.legisquebec.gouv.qc.ca/robots.txt",
+     "robots.txt answered 403: nothing fetched from www.legisquebec.gouv.qc.ca this run"
     ]
    ],
-   "requests": 1368,
-   "rested": 0,
-   "retry403": 1,
-   "robots": 6,
-   "robots_unreadable": 5,
-   "strikes": 2
+   "requests": 517,
+   "rested": 32,
+   "retry403": 2,
+   "robots": 1,
+   "robots_unreadable": 1,
+   "strikes": 5
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 22,
-   "no_size": 171,
-   "ours_unknown": 7,
-   "pages_read": 1175,
-   "parks": 1180,
+   "handover_hints": 0,
+   "no_size": 349,
+   "ours_unknown": 3,
+   "pages_read": 364,
+   "parks": 834,
    "retired": 0,
-   "size_agree": 647,
-   "size_off": 88,
-   "size_unsure": 53,
+   "size_agree": 68,
+   "size_off": 16,
+   "size_unsure": 6,
    "skipped_fresh": 0,
-   "with_outline": 966
+   "with_outline": 442
   },
   "when": "2026-11-10"
  },
