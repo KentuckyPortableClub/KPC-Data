@@ -36,4 +36,4 @@ KPC-Data key copy vs KPC-Links under the same build stamp (kpc_key_reconcile.py 
   - SI.json: KPC-Links 137 outlined, KPC-Data 140; approved adds 3 (label missing 0); unexplained 0
   - ZA.json: KPC-Links 69 outlined, KPC-Data 76; approved adds 7 (label missing 0); unexplained 0
 - ca-key: build CA-42252274247 (KPC-Links CA-42689962177): ok, 0 unexplained
-- us-key: build US-42504172086 (KPC-Links US-42879248840): ok, 0 unexplained
+- us-key: build US-42504172086 (KPC-Links US-42891101784): ok, 0 unexplained
