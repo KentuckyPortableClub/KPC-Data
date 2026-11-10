@@ -1,5 +1,25 @@
 {
  "areas": {
+  "CA-ON": {
+   "checked": 1180,
+   "counts": {
+    "agree": 647,
+    "handover_hints": 22,
+    "no_page": 8,
+    "no_size": 163,
+    "off": 88,
+    "ours_unknown": 7,
+    "parks": 1180,
+    "retired": 0,
+    "unsure": 53,
+    "weak": 94,
+    "with_outline": 966
+   },
+   "left": 0,
+   "parks": 1180,
+   "status": "done",
+   "updated": "2026-11-10"
+  },
   "US-AK": {
    "checked": 179,
    "counts": {
@@ -1033,65 +1053,60 @@
  },
  "last": {
   "areas": [
-   "US-UT"
+   "CA-ON"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 11,
-   "crawl_delay_skip": 3,
-   "deferred": 44,
+   "browser": 5,
+   "dropped_queued": 20,
    "errors": 0,
-   "for_person": 2,
+   "for_person": 1,
    "for_person_urls": [
     [
-     "https://www.mitigationcommission.gov/hatchery/hatchery_fountain.html",
-     "Crawl-delay 300 s is over 120 s: not read"
+     "http://www.chapel-hill-north-forest-trails.ca/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.chapel-hill-north-forest-trails.ca this run"
     ],
     [
-     "https://www.mitigationcommission.gov/hatchery/hatchery_whiterocks.html",
-     "Crawl-delay 300 s is over 120 s: not read"
+     "https://waterfalls.hamilton.ca/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from waterfalls.hamilton.ca this run"
     ],
     [
-     "https://www.flaminggorgecountry.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.flaminggorgecountry.com this run"
+     "https://birdinghotspots.org/robots.txt",
+     "robots.txt answered 403: nothing fetched from birdinghotspots.org this run"
     ],
     [
-     "https://www.blm.gov/visit/mancos-mesa",
+     "https://inaturalist.ca/check_lists/159530-Pointe-Au-Baril-Forests-And-Wetlands-Check-List",
      "HTTP 403 twice"
     ],
     [
-     "https://www.mitigationcommission.gov/wetlands/wetlands_ulwp.html",
-     "Crawl-delay 300 s is over 120 s: not read"
+     "https://trcaca.s3.ca-central-1.amazonaws.com/robots.txt",
+     "robots.txt answered 403: nothing fetched from trcaca.s3.ca-central-1.amazonaws.com this run"
     ],
     [
-     "https://www.wildlife.utah.gov/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.wildlife.utah.gov this run"
-    ],
-    [
-     "https://www.blm.gov/visit/fantasy-canyon-geologic-site",
-     "HTTP 403 twice"
+     "https://cvc.ca/robots.txt",
+     "robots.txt answered 403: nothing fetched from cvc.ca this run"
     ]
    ],
-   "requests": 360,
-   "rested": 127,
-   "retry403": 2,
-   "robots": 2,
-   "robots_unreadable": 2,
-   "strikes": 4
+   "requests": 1368,
+   "rested": 0,
+   "retry403": 1,
+   "robots": 6,
+   "robots_unreadable": 5,
+   "strikes": 2
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 4,
-   "no_size": 271,
-   "ours_unknown": 119,
-   "pages_read": 280,
-   "parks": 692,
+   "handover_hints": 22,
+   "no_size": 171,
+   "ours_unknown": 7,
+   "pages_read": 1175,
+   "parks": 1180,
    "retired": 0,
-   "size_agree": 14,
-   "size_off": 13,
-   "size_unsure": 2,
+   "size_agree": 647,
+   "size_off": 88,
+   "size_unsure": 53,
    "skipped_fresh": 0,
-   "with_outline": 419
+   "with_outline": 966
   },
   "when": "2026-11-10"
  },
@@ -1131,6 +1146,11 @@
    "read": "2026-11-10",
    "status": "HTTP 404"
   },
+  "https://parks.canada.ca/agence-agency/bib-lib/nouvelles-news": {
+   "links": 0,
+   "read": "2026-11-10",
+   "status": "HTTP 404"
+  },
   "https://parks.ky.gov/news": {
    "links": 0,
    "read": "2026-11-08",
@@ -1164,6 +1184,11 @@
   "https://www.ncparks.gov/news": {
    "links": 139,
    "read": "2026-11-08",
+   "status": "ok"
+  },
+  "https://www.ontarioparks.ca/parksblog/": {
+   "links": 90,
+   "read": "2026-11-10",
    "status": "ok"
   },
   "https://www.tn.gov/twra/news.html": {
