@@ -1,11 +1,11 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key', 'build': the held build id from data/waiting/in/data/us-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-10 18:11 UTC",
+ "made": "2026-11-10 21:00 UTC",
  "totals": {
   "gained": 60,
   "lost": 7,
-  "pieces_changed": 1053,
-  "grade_changed": 40
+  "pieces_changed": 702,
+  "grade_changed": 32
  },
  "per_area": {
   "US-AL": {
@@ -17,7 +17,7 @@
   "US-AR": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 120,
+   "pieces_changed": 1,
    "grade_changed": 0
   },
   "US-CA": {
@@ -77,8 +77,8 @@
   "US-IN": {
    "gained": 1,
    "lost": 0,
-   "pieces_changed": 50,
-   "grade_changed": 8
+   "pieces_changed": 24,
+   "grade_changed": 0
   },
   "US-KS": {
    "gained": 1,
@@ -149,7 +149,7 @@
   "US-NE": {
    "gained": 4,
    "lost": 0,
-   "pieces_changed": 63,
+   "pieces_changed": 11,
    "grade_changed": 0
   },
   "US-NH": {
@@ -221,7 +221,7 @@
   "US-TN": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 36,
+   "pieces_changed": 13,
    "grade_changed": 1
   },
   "US-TX": {
@@ -251,7 +251,7 @@
   "US-WI": {
    "gained": 1,
    "lost": 0,
-   "pieces_changed": 207,
+   "pieces_changed": 76,
    "grade_changed": 2
   },
   "US-WY": {
@@ -1838,214 +1838,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-0894"
-  },
-  {
-   "area": "US-IN",
-   "ref": "US-4172",
-   "name": "Jackson on Patoka Lake State Recreation Area",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "ind4773",
-     "Patoka Lake",
-     26122,
-     "reviewed-approx"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "ind4773",
-     "Patoka Lake",
-     26122,
-     "reviewed-approx"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4172"
-  },
-  {
-   "area": "US-IN",
-   "ref": "US-4173",
-   "name": "Lick Fork on Patoka Lake State Recreation Area",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "ind4773",
-     "Patoka Lake",
-     26122,
-     "reviewed-approx"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "ind4773",
-     "Patoka Lake",
-     26122,
-     "reviewed-approx"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4173"
-  },
-  {
-   "area": "US-IN",
-   "ref": "US-4174",
-   "name": "Newton-Stewart on Patoka Lake State Recreation Area",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "ind4773",
-     "Patoka Lake",
-     26122,
-     "reviewed-approx"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "ind4773",
-     "Patoka Lake",
-     26122,
-     "reviewed-approx"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4174"
-  },
-  {
-   "area": "US-IN",
-   "ref": "US-4175",
-   "name": "Tillery Hill on Patoka Lake State Recreation Area",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "ind4773",
-     "Patoka Lake",
-     26122,
-     "reviewed-approx"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "ind4773",
-     "Patoka Lake",
-     26122,
-     "reviewed-approx"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4175"
-  },
-  {
-   "area": "US-IN",
-   "ref": "US-4177",
-   "name": "Dora-New Holland on Salamonie Lake State Recreation Area",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "ind5037",
-     "Salamonie Lake",
-     10768,
-     "reviewed-approx"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "ind5037",
-     "Salamonie Lake",
-     10768,
-     "reviewed-approx"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4177"
-  },
-  {
-   "area": "US-IN",
-   "ref": "US-4178",
-   "name": "Lost Bridge on Salamonie Lake State Recreation Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "ind5036",
-     "Salamonie Lake",
-     556,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "ind5036",
-     "Salamonie Lake",
-     556,
-     "reviewed"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4178"
-  },
-  {
-   "area": "US-IN",
-   "ref": "US-4179",
-   "name": "Mt Etna on Salamonie Lake State Recreation Area",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "ind5037",
-     "Salamonie Lake",
-     10768,
-     "reviewed-approx"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "ind5037",
-     "Salamonie Lake",
-     10768,
-     "reviewed-approx"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4179"
-  },
-  {
-   "area": "US-IN",
-   "ref": "US-4180",
-   "name": "Mt Hope on Salamonie Lake State Recreation Area",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [
-    [
-     "ind5037",
-     "Salamonie Lake",
-     10768,
-     "reviewed-approx"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "ind5037",
-     "Salamonie Lake",
-     10768,
-     "reviewed-approx"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4180"
   },
   {
    "area": "US-MI",
