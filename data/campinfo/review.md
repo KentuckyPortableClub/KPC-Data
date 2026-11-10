@@ -60,6 +60,7 @@ Updated 2026-11-10. Every fact in <area>.json carries its source url, read date 
 ## Needs a secret / not built yet
 
 - RIDB_API_KEY is not set in KPC-Data: every federal (Recreation.gov) row has status "needs RIDB_API_KEY secret in KPC-Data". Free key: ridb.recreation.gov, Profile. Add it under Settings -> Secrets and variables -> Actions.
+- Canada: no campground rows exist in KPC-Data yet (no campfed / campstate file for CA-xx; parkinfo/CA.json lists activities only), so the Canadian areas are marked done with nothing read. Parks Canada camping needs its own list first.
 - Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AL FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AR FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AZ FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CA FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CO FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-CT FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-DE FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting

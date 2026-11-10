@@ -1,5 +1,11 @@
 {
  "areas": {
+  "CA-ON": {
+   "camps": 0,
+   "note": "no campground rows on file (Canada: no Parks Canada / provincial campground list in KPC-Data yet)",
+   "status": "done",
+   "updated": "2026-11-10"
+  },
   "US-AK": {
    "camps": 378,
    "checked": 368,
@@ -2575,36 +2581,25 @@
  },
  "last": {
   "areas": [
-   "US-UT"
+   "CA-ON"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 338,
    "errors": 0,
-   "for_person_urls": [
-    [
-     "https://epqs.nationalmap.gov/robots.txt",
-     "robots.txt answered 403: nothing fetched from epqs.nationalmap.gov this run"
-    ],
-    [
-     "https://broadbandmap.fcc.gov/robots.txt",
-     "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
-    ]
-   ],
-   "requests": 4,
+   "for_person_urls": [],
+   "requests": 0,
    "rested": 0,
-   "robots": 2,
-   "robots_unreadable": 2,
+   "robots": 0,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 339,
+   "camps": 0,
    "elevations": 0,
    "errors": 0,
    "needs_browser": 0,
-   "needs_key": 339,
+   "needs_key": 0,
    "no_page": 0,
    "not_official": 0,
    "ok": 0,
@@ -2612,7 +2607,7 @@
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 133
+   "skipped_fresh": 0
   },
   "when": "2026-11-10"
  },
