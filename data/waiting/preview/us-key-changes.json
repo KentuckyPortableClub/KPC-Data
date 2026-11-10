@@ -1,11 +1,11 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key', 'build': the held build id from data/waiting/in/data/us-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-10 12:17 UTC",
+ "made": "2026-11-10 17:49 UTC",
  "totals": {
   "gained": 60,
-  "lost": 8,
-  "pieces_changed": 195,
-  "grade_changed": 27
+  "lost": 7,
+  "pieces_changed": 1053,
+  "grade_changed": 40
  },
  "per_area": {
   "US-AL": {
@@ -13,6 +13,12 @@
    "lost": 0,
    "pieces_changed": 3,
    "grade_changed": 1
+  },
+  "US-AR": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 120,
+   "grade_changed": 0
   },
   "US-CA": {
    "gained": 1,
@@ -23,7 +29,7 @@
   "US-CO": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 57,
+   "pieces_changed": 52,
    "grade_changed": 0
   },
   "US-CT": {
@@ -71,8 +77,8 @@
   "US-IN": {
    "gained": 1,
    "lost": 0,
-   "pieces_changed": 2,
-   "grade_changed": 0
+   "pieces_changed": 50,
+   "grade_changed": 8
   },
   "US-KS": {
    "gained": 1,
@@ -100,21 +106,21 @@
   },
   "US-MI": {
    "gained": 3,
-   "lost": 0,
-   "pieces_changed": 0,
-   "grade_changed": 6
+   "lost": 1,
+   "pieces_changed": 23,
+   "grade_changed": 7
   },
   "US-MN": {
    "gained": 0,
-   "lost": 3,
-   "pieces_changed": 51,
+   "lost": 1,
+   "pieces_changed": 53,
    "grade_changed": 6
   },
   "US-MO": {
    "gained": 0,
    "lost": 1,
-   "pieces_changed": 2,
-   "grade_changed": 0
+   "pieces_changed": 376,
+   "grade_changed": 4
   },
   "US-MS": {
    "gained": 0,
@@ -143,7 +149,7 @@
   "US-NE": {
    "gained": 4,
    "lost": 0,
-   "pieces_changed": 0,
+   "pieces_changed": 63,
    "grade_changed": 0
   },
   "US-NH": {
@@ -215,7 +221,7 @@
   "US-TN": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 2,
+   "pieces_changed": 36,
    "grade_changed": 1
   },
   "US-TX": {
@@ -239,13 +245,13 @@
   "US-WA": {
    "gained": 2,
    "lost": 0,
-   "pieces_changed": 4,
+   "pieces_changed": 1,
    "grade_changed": 0
   },
   "US-WI": {
    "gained": 1,
    "lost": 0,
-   "pieces_changed": 5,
+   "pieces_changed": 207,
    "grade_changed": 2
   },
   "US-WY": {
@@ -1575,6 +1581,25 @@
    "pota": "https://pota.app/#/park/US-0270"
   },
   {
+   "area": "US-MI",
+   "ref": "US-6816",
+   "name": "Lime Island State Harbor",
+   "old_grade": "official",
+   "new_grade": "official",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "mid342",
+     "Lime Island State Recreation Area",
+     916,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6816"
+  },
+  {
    "area": "US-MN",
    "ref": "US-0365",
    "name": "Minnesota Valley Wetland Management District",
@@ -1634,44 +1659,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-0365"
-  },
-  {
-   "area": "US-MN",
-   "ref": "US-10723",
-   "name": "Crystal Spring SNA Scenic Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "sgmnc178",
-     "Crystal Spring",
-     38,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-10723"
-  },
-  {
-   "area": "US-MN",
-   "ref": "US-11872",
-   "name": "Lost 40 SNA State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "sgmnc198",
-     "Lost 40",
-     136,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11872"
   },
   {
    "area": "US-MO",
@@ -1853,6 +1840,214 @@
    "pota": "https://pota.app/#/park/US-0894"
   },
   {
+   "area": "US-IN",
+   "ref": "US-4172",
+   "name": "Jackson on Patoka Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "ind4773",
+     "Patoka Lake",
+     26122,
+     "reviewed-approx"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "ind4773",
+     "Patoka Lake",
+     26122,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4172"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4173",
+   "name": "Lick Fork on Patoka Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "ind4773",
+     "Patoka Lake",
+     26122,
+     "reviewed-approx"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "ind4773",
+     "Patoka Lake",
+     26122,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4173"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4174",
+   "name": "Newton-Stewart on Patoka Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "ind4773",
+     "Patoka Lake",
+     26122,
+     "reviewed-approx"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "ind4773",
+     "Patoka Lake",
+     26122,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4174"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4175",
+   "name": "Tillery Hill on Patoka Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "ind4773",
+     "Patoka Lake",
+     26122,
+     "reviewed-approx"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "ind4773",
+     "Patoka Lake",
+     26122,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4175"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4177",
+   "name": "Dora-New Holland on Salamonie Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "ind5037",
+     "Salamonie Lake",
+     10768,
+     "reviewed-approx"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "ind5037",
+     "Salamonie Lake",
+     10768,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4177"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4178",
+   "name": "Lost Bridge on Salamonie Lake State Recreation Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "ind5036",
+     "Salamonie Lake",
+     556,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "ind5036",
+     "Salamonie Lake",
+     556,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4178"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4179",
+   "name": "Mt Etna on Salamonie Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "ind5037",
+     "Salamonie Lake",
+     10768,
+     "reviewed-approx"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "ind5037",
+     "Salamonie Lake",
+     10768,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4179"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4180",
+   "name": "Mt Hope on Salamonie Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "ind5037",
+     "Salamonie Lake",
+     10768,
+     "reviewed-approx"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "ind5037",
+     "Salamonie Lake",
+     10768,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4180"
+  },
+  {
    "area": "US-MI",
    "ref": "US-0350",
    "name": "Michigan Wetland Management District",
@@ -1901,6 +2096,32 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-0350"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-11392",
+   "name": "Paw Paw State Game Land",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "mid1019",
+     "Paw Paw River State Game Area",
+     1577,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "mid1019",
+     "Paw Paw River State Game Area",
+     1577,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11392"
   },
   {
    "area": "US-MI",
@@ -2715,6 +2936,110 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-0373"
+  },
+  {
+   "area": "US-MO",
+   "ref": "US-10143",
+   "name": "Lake City Range State Recreation Site",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "mol500",
+     "Lake City Shooting Range and Outdoor Education Center",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "mol500",
+     "Lake City Shooting Range and Outdoor Education Center",
+     0,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10143"
+  },
+  {
+   "area": "US-MO",
+   "ref": "US-6472",
+   "name": "Anita B Gorman Discovery Center State Conservation Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "mol936",
+     "Gorman (The Anita B) Conservation Discovery Center",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "mol936",
+     "Gorman (The Anita B) Conservation Discovery Center",
+     0,
+     "reviewed"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6472"
+  },
+  {
+   "area": "US-MO",
+   "ref": "US-6529",
+   "name": "Truman Reservoir Management Lands State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "mol967",
+     "Truman Reservoir ML (Deepwater Creek)",
+     0,
+     "reviewed-approx"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "mol967",
+     "Truman Reservoir ML (Deepwater Creek)",
+     0,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6529"
+  },
+  {
+   "area": "US-MO",
+   "ref": "US-7189",
+   "name": "Beaver Creek State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "mol123",
+     "USACE (Bull Shoals Lake, Beaver Creek PA)",
+     0,
+     "reviewed-approx"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "mol123",
+     "USACE (Bull Shoals Lake, Beaver Creek PA)",
+     0,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7189"
   },
   {
    "area": "US-ND",
