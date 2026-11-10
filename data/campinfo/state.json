@@ -978,9 +978,9 @@
     "with_facts": 98,
     "with_sites": 1
    },
-   "left": 7,
-   "status": "partial",
-   "updated": "2026-11-04"
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-10"
   },
   "US-VA": {
    "camps": 166,
@@ -1562,7 +1562,7 @@
     "src": null,
     "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-11-04"
+   "read": "2026-11-10"
   },
   "US-VA": {
    "cell": {
@@ -2575,12 +2575,12 @@
  },
  "last": {
   "areas": [
-   "US-MI"
+   "US-UT"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 130,
+   "dropped_queued": 338,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2590,25 +2590,21 @@
     [
      "https://broadbandmap.fcc.gov/robots.txt",
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
-    ],
-    [
-     "https://midnrreservations.com/robots.txt",
-     "robots.txt answered 403: nothing fetched from midnrreservations.com this run"
     ]
    ],
-   "requests": 3,
+   "requests": 4,
    "rested": 0,
-   "robots": 5,
-   "robots_unreadable": 3,
+   "robots": 2,
+   "robots_unreadable": 2,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 122,
+   "camps": 339,
    "elevations": 0,
    "errors": 0,
    "needs_browser": 0,
-   "needs_key": 112,
+   "needs_key": 339,
    "no_page": 0,
    "not_official": 0,
    "ok": 0,
@@ -2616,7 +2612,7 @@
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 399
+   "skipped_fresh": 133
   },
   "when": "2026-11-10"
  },
