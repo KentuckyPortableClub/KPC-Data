@@ -958,7 +958,7 @@
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-09"
+   "updated": "2026-11-10"
   },
   "US-UT": {
    "camps": 472,
@@ -1553,7 +1553,7 @@
     "src": null,
     "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-11-09"
+   "read": "2026-11-10"
   },
   "US-UT": {
    "cell": {
@@ -2576,12 +2576,12 @@
  },
  "last": {
   "areas": [
-   "US-OK"
+   "US-TX"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
-   "dropped_queued": 200,
+   "dropped_queued": 483,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2593,27 +2593,27 @@
      "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
     ]
    ],
-   "requests": 80,
+   "requests": 93,
    "rested": 0,
-   "robots": 2,
+   "robots": 5,
    "robots_unreadable": 2,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 1,
-   "camps": 201,
+   "browser": 30,
+   "camps": 484,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 1,
-   "needs_key": 85,
-   "no_page": 4,
-   "not_official": 70,
-   "ok": 37,
-   "pages_read": 68,
+   "needs_browser": 31,
+   "needs_key": 121,
+   "no_page": 329,
+   "not_official": 0,
+   "ok": 31,
+   "pages_read": 57,
    "resting": 0,
    "ridb_calls": 0,
-   "robots": 0,
+   "robots": 3,
    "skipped_fresh": 0
   },
   "when": "2026-11-10"
