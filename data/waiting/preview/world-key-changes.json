@@ -1,9 +1,9 @@
 {
  "about": "world-key: the HELD build (data/waiting/in/data/world-key/) vs the LIVE key (data/world-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'world-key', 'build': the held build id from data/waiting/in/data/world-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-10 08:48 UTC",
+ "made": "2026-11-10 12:17 UTC",
  "totals": {
   "gained": 816,
-  "lost": 64,
+  "lost": 60,
   "pieces_changed": 4309,
   "grade_changed": 12019
  },
@@ -142,7 +142,7 @@
   },
   "HU": {
    "gained": 0,
-   "lost": 4,
+   "lost": 0,
    "pieces_changed": 0,
    "grade_changed": 23
   },
@@ -17237,82 +17237,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-6536"
-  },
-  {
-   "area": "HU",
-   "ref": "HU-0043",
-   "name": "Csongrád-bokrosi Salt Lake National Preserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "15504",
-     "Csongrád-bokrosi Sóstó",
-     "EEA Natura 2000",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/HU-0043"
-  },
-  {
-   "area": "HU",
-   "ref": "HU-0049",
-   "name": "Péteritói Madárrezervátum National Park",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "871",
-     "Péteri-tavi madárrezervátum TT",
-     "HU: Országos védett természeti területek (approved layer 17)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/HU-0049"
-  },
-  {
-   "area": "HU",
-   "ref": "HU-0076",
-   "name": "Kelet-Mecsek National Conservation Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "274",
-     "Kelet-Mecsek TK",
-     "HU: Országos védett természeti területek (approved layer 17)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/HU-0076"
-  },
-  {
-   "area": "HU",
-   "ref": "HU-0090",
-   "name": "Soproni State Forest Park",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "74",
-     "Soproni TK",
-     "HU: Országos védett természeti területek (approved layer 17)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/HU-0090"
   },
   {
    "area": "JP",

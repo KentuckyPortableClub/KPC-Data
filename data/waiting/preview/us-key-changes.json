@@ -1,102 +1,162 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key', 'build': the held build id from data/waiting/in/data/us-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-08 20:03 UTC",
+ "made": "2026-11-10 12:17 UTC",
  "totals": {
-  "gained": 30,
-  "lost": 7,
-  "pieces_changed": 1126,
-  "grade_changed": 4
+  "gained": 60,
+  "lost": 8,
+  "pieces_changed": 195,
+  "grade_changed": 27
  },
  "per_area": {
-  "US-AK": {
-   "gained": 0,
+  "US-AL": {
+   "gained": 1,
+   "lost": 0,
+   "pieces_changed": 3,
+   "grade_changed": 1
+  },
+  "US-CA": {
+   "gained": 1,
    "lost": 0,
    "pieces_changed": 2,
+   "grade_changed": 1
+  },
+  "US-CO": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 57,
    "grade_changed": 0
   },
-  "US-AR": {
-   "gained": 5,
+  "US-CT": {
+   "gained": 1,
    "lost": 0,
    "pieces_changed": 0,
    "grade_changed": 0
   },
-  "US-AZ": {
+  "US-DE": {
    "gained": 0,
-   "lost": 0,
-   "pieces_changed": 1,
+   "lost": 1,
+   "pieces_changed": 12,
    "grade_changed": 0
-  },
-  "US-CO": {
-   "gained": 1,
-   "lost": 0,
-   "pieces_changed": 137,
-   "grade_changed": 0
-  },
-  "US-FL": {
-   "gained": 0,
-   "lost": 0,
-   "pieces_changed": 116,
-   "grade_changed": 2
   },
   "US-GA": {
-   "gained": 0,
+   "gained": 2,
    "lost": 0,
-   "pieces_changed": 1,
+   "pieces_changed": 6,
+   "grade_changed": 0
+  },
+  "US-HI": {
+   "gained": 2,
+   "lost": 0,
+   "pieces_changed": 0,
    "grade_changed": 0
   },
   "US-IA": {
    "gained": 0,
-   "lost": 0,
+   "lost": 1,
    "pieces_changed": 1,
    "grade_changed": 0
   },
   "US-ID": {
+   "gained": 5,
+   "lost": 0,
+   "pieces_changed": 4,
+   "grade_changed": 0
+  },
+  "US-IL": {
+   "gained": 1,
+   "lost": 0,
+   "pieces_changed": 2,
+   "grade_changed": 0
+  },
+  "US-IN": {
+   "gained": 1,
+   "lost": 0,
+   "pieces_changed": 2,
+   "grade_changed": 0
+  },
+  "US-KS": {
    "gained": 1,
    "lost": 0,
    "pieces_changed": 0,
    "grade_changed": 0
   },
   "US-MA": {
-   "gained": 0,
+   "gained": 1,
    "lost": 0,
-   "pieces_changed": 5,
+   "pieces_changed": 4,
    "grade_changed": 0
   },
   "US-MD": {
-   "gained": 1,
+   "gained": 2,
+   "lost": 0,
+   "pieces_changed": 2,
+   "grade_changed": 0
+  },
+  "US-ME": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 1,
+   "grade_changed": 0
+  },
+  "US-MI": {
+   "gained": 3,
    "lost": 0,
    "pieces_changed": 0,
-   "grade_changed": 0
+   "grade_changed": 6
   },
   "US-MN": {
    "gained": 0,
-   "lost": 0,
-   "pieces_changed": 71,
-   "grade_changed": 0
+   "lost": 3,
+   "pieces_changed": 51,
+   "grade_changed": 6
   },
   "US-MO": {
    "gained": 0,
+   "lost": 1,
+   "pieces_changed": 2,
+   "grade_changed": 0
+  },
+  "US-MS": {
+   "gained": 0,
    "lost": 0,
-   "pieces_changed": 392,
+   "pieces_changed": 2,
    "grade_changed": 0
   },
   "US-MT": {
    "gained": 1,
    "lost": 0,
-   "pieces_changed": 144,
+   "pieces_changed": 1,
    "grade_changed": 0
   },
   "US-NC": {
    "gained": 1,
    "lost": 0,
+   "pieces_changed": 1,
+   "grade_changed": 0
+  },
+  "US-ND": {
+   "gained": 5,
+   "lost": 0,
+   "pieces_changed": 0,
+   "grade_changed": 5
+  },
+  "US-NE": {
+   "gained": 4,
+   "lost": 0,
    "pieces_changed": 0,
    "grade_changed": 0
   },
   "US-NH": {
-   "gained": 1,
-   "lost": 2,
-   "pieces_changed": 172,
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 4,
    "grade_changed": 0
+  },
+  "US-NJ": {
+   "gained": 2,
+   "lost": 0,
+   "pieces_changed": 1,
+   "grade_changed": 1
   },
   "US-NM": {
    "gained": 1,
@@ -105,19 +165,37 @@
    "grade_changed": 0
   },
   "US-NV": {
+   "gained": 4,
+   "lost": 0,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
+  "US-NY": {
    "gained": 2,
-   "lost": 3,
-   "pieces_changed": 53,
-   "grade_changed": 1
+   "lost": 0,
+   "pieces_changed": 2,
+   "grade_changed": 0
   },
   "US-OK": {
-   "gained": 0,
+   "gained": 5,
    "lost": 0,
-   "pieces_changed": 1,
+   "pieces_changed": 0,
    "grade_changed": 0
   },
   "US-OR": {
    "gained": 2,
+   "lost": 0,
+   "pieces_changed": 1,
+   "grade_changed": 0
+  },
+  "US-PA": {
+   "gained": 3,
+   "lost": 0,
+   "pieces_changed": 2,
+   "grade_changed": 1
+  },
+  "US-RI": {
+   "gained": 0,
    "lost": 0,
    "pieces_changed": 2,
    "grade_changed": 0
@@ -128,1610 +206,4740 @@
    "pieces_changed": 1,
    "grade_changed": 0
   },
+  "US-SD": {
+   "gained": 0,
+   "lost": 1,
+   "pieces_changed": 1,
+   "grade_changed": 2
+  },
   "US-TN": {
-   "gained": 1,
+   "gained": 0,
    "lost": 0,
-   "pieces_changed": 0,
+   "pieces_changed": 2,
+   "grade_changed": 1
+  },
+  "US-TX": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 14,
    "grade_changed": 0
   },
   "US-UT": {
-   "gained": 10,
-   "lost": 2,
-   "pieces_changed": 0,
+   "gained": 4,
+   "lost": 0,
+   "pieces_changed": 2,
    "grade_changed": 0
   },
-  "US-WA": {
+  "US-VT": {
    "gained": 1,
    "lost": 0,
-   "pieces_changed": 3,
+   "pieces_changed": 1,
+   "grade_changed": 1
+  },
+  "US-WA": {
+   "gained": 2,
+   "lost": 0,
+   "pieces_changed": 4,
    "grade_changed": 0
   },
   "US-WI": {
-   "gained": 0,
-   "lost": 0,
-   "pieces_changed": 24,
-   "grade_changed": 1
-  },
-  "US-WY": {
    "gained": 1,
    "lost": 0,
+   "pieces_changed": 5,
+   "grade_changed": 2
+  },
+  "US-WY": {
+   "gained": 0,
+   "lost": 1,
    "pieces_changed": 0,
    "grade_changed": 0
   }
  },
  "gained": [
   {
-   "area": "US-AR",
-   "ref": "US-10426",
-   "name": "West-Northwest State Trail",
+   "area": "US-AL",
+   "ref": "US-0042",
+   "name": "Fort Gaines National Historic Site",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "trl10426",
-     "West-Northwest State Trail",
+     "166719",
+     "Historic Fort Gaines",
+     17,
+     "reviewed"
+    ],
+    [
+     "sgaki379681",
+     "Fort Gaines",
      0,
-     "official trail line (Arkansas Department of Transportation ("
+     "reviewed"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-10426"
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0042"
   },
   {
-   "area": "US-AR",
-   "ref": "US-10508",
-   "name": "Ozark Highlands Trail (OHT) National Historic Trail",
+   "area": "US-CA",
+   "ref": "US-0197",
+   "name": "Kern National Wild and Scenic River",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "trl10508",
-     "Ozark Highlands Trail (OHT) National Historic Trail",
-     0,
-     "official trail line (U.S. Forest Service National Forest Sys"
+     "fwsr208",
+     "Kern, California National Wild and Scenic River",
+     20356,
+     "reviewed"
+    ],
+    [
+     "fwsr41",
+     "Kern, California National Wild and Scenic River",
+     3447,
+     "reviewed"
+    ],
+    [
+     "fwsr118",
+     "Kern, California National Wild and Scenic River",
+     1660,
+     "reviewed"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-10508"
+   "pota": "https://pota.app/#/park/US-0197"
   },
   {
-   "area": "US-AR",
-   "ref": "US-13622",
-   "name": "The Razorback Regional Greenway National Recreation Trail",
+   "area": "US-CT",
+   "ref": "US-0329",
+   "name": "Silvio O Conte National Wildlife Refuge",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "trl13622",
-     "The Razorback Regional Greenway National Recreation Trail",
-     0,
-     "official trail line (City of Rogers and City of Fayetteville"
+     "5300",
+     "Silvio O. Conte National Fish And Wildlife Refuge",
+     7893,
+     "reviewed"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-13622"
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0329"
   },
   {
-   "area": "US-AR",
-   "ref": "US-13623",
-   "name": "Alum Cove Natural Bridge Trail National Recreation Trail",
+   "area": "US-GA",
+   "ref": "US-7456",
+   "name": "Dahlonega Gold Museum State Historic Site",
    "old_grade": "pin",
-   "new_grade": "official",
+   "new_grade": "approximate",
    "new_pieces": [
     [
-     "trl13623",
-     "Alum Cove Natural Bridge Trail National Recreation Trail",
-     0,
-     "official trail line (U.S. Forest Service National Forest Sys"
+     "195096",
+     "Dahlonega Museum Historic Site",
+     1,
+     "words"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-13623"
+   "pota": "https://pota.app/#/park/US-7456"
   },
   {
-   "area": "US-AR",
-   "ref": "US-9681",
-   "name": "Camden Expedition Scenic Highway State Trail",
+   "area": "US-GA",
+   "ref": "US-9758",
+   "name": "Chattooga National Wild and Scenic River",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "trl9681",
-     "Camden Expedition Scenic Highway State Trail",
-     0,
-     "official trail line (Arkansas Department of Transportation ("
+     "fwsr180",
+     "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+     10971,
+     "reviewed"
+    ],
+    [
+     "fwsr6",
+     "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+     4651,
+     "reviewed"
+    ],
+    [
+     "fwsr95",
+     "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+     906,
+     "reviewed"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-9681"
+   "pota": "https://pota.app/#/park/US-9758"
   },
   {
-   "area": "US-CO",
-   "ref": "US-5749",
-   "name": "Kokopelli's Trail National Recreation Area",
+   "area": "US-HI",
+   "ref": "US-10921",
+   "name": "Hawaii Capital National Historic District",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "trl5749",
-     "Kokopelli's Trail National Recreation Area",
+     "sgaki395518",
+     "Hawaii Capital Historic District",
      0,
-     "official trail line (Bureau of Land Management and Utah stat"
+     "reviewed"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-5749"
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-10921"
+  },
+  {
+   "area": "US-HI",
+   "ref": "US-10922",
+   "name": "Marconi Wireless Telegraphy Station Kahuku National Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgaki400944",
+     "Marconi Wireless Telegraphy Station",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-10922"
   },
   {
    "area": "US-ID",
-   "ref": "US-3424",
-   "name": "Ice Age Floods National Geologic Trail",
+   "ref": "US-10431",
+   "name": "Cabinet Gorge State Fish Hatchery",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "trl3424",
-     "Ice Age Floods National Geologic Trail",
-     0,
-     "official trail line (NPS official (carto iafl_tour_routes, R"
+     "199838",
+     "Cabinet Gorge Hatchery",
+     29,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-10431"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-11089",
+   "name": "Ted Trueblood Wildlife Habitat Area State Wildlife Habitat Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "199756",
+     "Ted Trueblood Wildlife Habitat Area",
+     342,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-11089"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-11308",
+   "name": "Blackfoot Reservoir Recreation Site BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgakg13878",
+     "Blackfoot",
+     41391,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-11308"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-11316",
+   "name": "Pipeline Recreation Site BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgakg13903",
+     "Campground - Pipeline",
+     18,
+     "reviewed"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-3424"
+   "pota": "https://pota.app/#/park/US-11316"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-2238",
+   "name": "Heyburn State Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "199938",
+     "Heyburn State Park",
+     8094,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-2238"
+  },
+  {
+   "area": "US-IL",
+   "ref": "US-4236",
+   "name": "Upper Mississippi River National Wildlife Refuge",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "5387",
+     "Upper Mississippi River National Wildlife And Fish Refuge",
+     21280,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4236"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-10237",
+   "name": "Mongoquinong State Nature Preserve",
+   "old_grade": "pin",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "200897",
+     "Mongoquinong Nature Preserve Sawmill Fen",
+     38,
+     "reviewed-approx"
+    ],
+    [
+     "200896",
+     "Mongoquinong Nature Preserve Buckbean Fen",
+     37,
+     "reviewed-approx"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10237"
+  },
+  {
+   "area": "US-KS",
+   "ref": "US-9190",
+   "name": "Marais des Cygnes Massacre State Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgaki400284",
+     "Marais des Cygnes Massacre Site",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-9190"
+  },
+  {
+   "area": "US-MA",
+   "ref": "US-0329",
+   "name": "Silvio O Conte National Wildlife Refuge",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "5300",
+     "Silvio O. Conte National Fish And Wildlife Refuge",
+     7893,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0329"
   },
   {
    "area": "US-MD",
-   "ref": "US-7973",
-   "name": "Baltimore-Washington National Parkway",
+   "ref": "US-7768",
+   "name": "Frederick City Watershed Cooperative Wildlife Management Area",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "trl7973",
-     "Baltimore-Washington National Parkway",
-     0,
-     "official trail line (National Park Service via USGS National"
+     "16458",
+     "Frederick Municipal Forest",
+     5186,
+     "reviewed"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-7973"
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-7768"
+  },
+  {
+   "area": "US-MD",
+   "ref": "US-7974",
+   "name": "Harmony Hall National Heritage Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgaki382060",
+     "Harmony Hall",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-7974"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12786",
+   "name": "Au Sable National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr88",
+     "Au Sable, Michigan National Wild and Scenic River",
+     7011,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-12786"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12794",
+   "name": "Paint National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr51",
+     "Paint, Michigan National Wild and Scenic River",
+     16070,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-12794"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12796",
+   "name": "Pine National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr143",
+     "Pine, Michigan National Wild and Scenic River",
+     5388,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-12796"
   },
   {
    "area": "US-MT",
-   "ref": "US-3424",
-   "name": "Ice Age Floods National Geologic Trail",
+   "ref": "US-4475",
+   "name": "Caribou-Targhee National Forest",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "trl3424",
-     "Ice Age Floods National Geologic Trail",
-     0,
-     "official trail line (NPS official (carto iafl_tour_routes, R"
+     "2809",
+     "Caribou-Targhee National Forest (Targhee National Forest)",
+     294438,
+     "reviewed"
+    ],
+    [
+     "2781",
+     "Caribou-Targhee National Forest (Caribou National Forest)",
+     7838,
+     "reviewed"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-3424"
+   "pota": "https://pota.app/#/park/US-4475"
   },
   {
    "area": "US-NC",
-   "ref": "US-10398",
-   "name": "Chatuge Dam Trail Recreation Park",
+   "ref": "US-3863",
+   "name": "Palmetto-Peartree State Preserve",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "trl10398",
-     "Chatuge Dam Trail Recreation Park",
-     0,
-     "official trail line (Tennessee Valley Authority (federal age"
+     "214405",
+     "The Conservation Fund - Palmetto-Peartree Preserve",
+     11051,
+     "reviewed"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-10398"
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3863"
   },
   {
-   "area": "US-NH",
-   "ref": "US-13626",
-   "name": "Sugar River State Trail",
+   "area": "US-ND",
+   "ref": "US-8532",
+   "name": "Chateau De Mores State Historic Site",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "trl13626",
-     "Sugar River State Trail",
+     "sgaki379041",
+     "Chateau de Mores",
      0,
-     "official trail line (New Hampshire GRANIT (state agency GIS "
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8532"
+  },
+  {
+   "area": "US-ND",
+   "ref": "US-8536",
+   "name": "Fort Buford State Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgaki400132",
+     "Fort Buford State Historic Site",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8536"
+  },
+  {
+   "area": "US-ND",
+   "ref": "US-8544",
+   "name": "Huff Indian Village State Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgaki400204",
+     "Huff State Historic Site (32MO11)",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8544"
+  },
+  {
+   "area": "US-ND",
+   "ref": "US-8555",
+   "name": "Oscar-Zero Missile Alert Facility State Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgaki383579",
+     "Oscar-Zero Missile Alert Facility",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8555"
+  },
+  {
+   "area": "US-ND",
+   "ref": "US-8559",
+   "name": "Welk Homestead State Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgaki379181",
+     "Welk, Ludwig and Christina, Homestead",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8559"
+  },
+  {
+   "area": "US-NE",
+   "ref": "US-3375",
+   "name": "Stolley National Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "103429",
+     "Stolley Park",
+     39,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3375"
+  },
+  {
+   "area": "US-NE",
+   "ref": "US-3492",
+   "name": "Willa Cather Memorial Prairie State Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgaki400205",
+     "Willa Cather Memorial Prairie",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3492"
+  },
+  {
+   "area": "US-NE",
+   "ref": "US-4036",
+   "name": "Walnut Creek State Recreation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "118464",
+     "Walnut Creek Recreation Area",
+     383,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-4036"
+  },
+  {
+   "area": "US-NE",
+   "ref": "US-5656",
+   "name": "Flanagan Lake State Recreation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "117508",
+     "Flanagan Lake & Recreation Area",
+     721,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-5656"
+  },
+  {
+   "area": "US-NJ",
+   "ref": "US-0684",
+   "name": "Lower Delaware National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "wsrc20",
+     "Delaware Wild and Scenic River",
+     21333,
+     "reviewed"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-13626"
+   "pota": "https://pota.app/#/park/US-0684"
+  },
+  {
+   "area": "US-NJ",
+   "ref": "US-6462",
+   "name": "Garret Mountain Reservation State Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "225338",
+     "Garret Mountain Reservation",
+     185,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-6462"
   },
   {
    "area": "US-NM",
-   "ref": "US-11815",
-   "name": "La Cueva Non-Motorized Trail System Recreation Site",
+   "ref": "US-11823",
+   "name": "Coronado Historic Site",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "trl11815",
-     "La Cueva Non-Motorized Trail System Recreation Site",
-     0,
-     "official trail line (Bureau of Land Management via USGS Nati"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11815"
-  },
-  {
-   "area": "US-NV",
-   "ref": "US-13206",
-   "name": "Barnes Canyon Trailhead BLM Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl13206",
-     "Barnes Canyon Trailhead BLM Recreation Management Area",
-     0,
-     "official trail line (Bureau of Land Management via USGS Nati"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-13206"
-  },
-  {
-   "area": "US-NV",
-   "ref": "US-13214",
-   "name": "Logandale Trails BLM Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl13214",
-     "Logandale Trails BLM Recreation Management Area",
-     0,
-     "official trail line (Bureau of Land Management via USGS Nati"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-13214"
-  },
-  {
-   "area": "US-OR",
-   "ref": "US-12959",
-   "name": "Quartzville BC Byway Kiosk BLM Special Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl12959",
-     "Quartzville BC Byway Kiosk BLM Special Recreation Management Area",
-     0,
-     "official trail line (Bureau of Land Management (Oregon/Washi"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-12959"
-  },
-  {
-   "area": "US-OR",
-   "ref": "US-3424",
-   "name": "Ice Age Floods National Geologic Trail",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl3424",
-     "Ice Age Floods National Geologic Trail",
-     0,
-     "official trail line (NPS official (carto iafl_tour_routes, R"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-3424"
-  },
-  {
-   "area": "US-SC",
-   "ref": "US-9203",
-   "name": "Palmetto State Trail",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl9203",
-     "Palmetto State Trail",
-     0,
-     "official trail line (U.S. Forest Service and U.S. Fish and W"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-9203"
-  },
-  {
-   "area": "US-TN",
-   "ref": "US-0642",
-   "name": "Natchez Trace Parkway National Parkway",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl0642",
-     "Natchez Trace Parkway National Parkway",
-     0,
-     "official trail line (National Park Service via USGS National"
+     "80742",
+     "Coronado Historic Site",
+     104,
+     "reviewed"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": true,
-   "pota": "https://pota.app/#/park/US-0642"
-  },
-  {
-   "area": "US-UT",
-   "ref": "US-10964",
-   "name": "Cathedral Valley Scenic Backway BLM Special Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl10964",
-     "Cathedral Valley Scenic Backway BLM Special Recreation Management Area",
-     0,
-     "official trail line (BLM GTLF public roads (official); named"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-10964"
-  },
-  {
-   "area": "US-UT",
-   "ref": "US-11004",
-   "name": "Hurricane Cliffs Trail System BLM Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl11004",
-     "Hurricane Cliffs Trail System BLM Recreation Management Area",
-     0,
-     "official trail line (Bureau of Land Management via USGS Nati"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11004"
-  },
-  {
-   "area": "US-UT",
-   "ref": "US-11176",
-   "name": "Rojo Mountain Bike Trail BLM Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl11176",
-     "Rojo Mountain Bike Trail BLM Recreation Management Area",
-     0,
-     "official trail line (Bureau of Land Management via USGS Nati"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-11176"
-  },
-  {
-   "area": "US-UT",
-   "ref": "US-11661",
-   "name": "Bar M Trail System BLM Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl11661",
-     "Bar M Trail System BLM Recreation Management Area",
-     0,
-     "official trail line (BLM official recreation trails (gis.blm"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11661"
-  },
-  {
-   "area": "US-UT",
-   "ref": "US-11730",
-   "name": "Paiute  ATV Trail BLM Special Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl11730",
-     "Paiute  ATV Trail BLM Special Recreation Management Area",
-     0,
-     "official trail line (U.S. Forest Service National Forest Sys"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11730"
-  },
-  {
-   "area": "US-UT",
-   "ref": "US-11750",
-   "name": "Cottonwood Canyons Scenic Backway BLM Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl11750",
-     "Cottonwood Canyons Scenic Backway BLM Recreation Management Area",
-     0,
-     "official trail line (BLM GTLF public roads (official); named"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11750"
-  },
-  {
-   "area": "US-UT",
-   "ref": "US-5749",
-   "name": "Kokopelli's Trail National Recreation Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl5749",
-     "Kokopelli's Trail National Recreation Area",
-     0,
-     "official trail line (Bureau of Land Management and Utah stat"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-5749"
-  },
-  {
-   "area": "US-UT",
-   "ref": "US-5841",
-   "name": "Moonshine Arch Trailhead BLM Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl5841",
-     "Moonshine Arch Trailhead BLM Recreation Management Area",
-     0,
-     "official trail line (Bureau of Land Management via USGS Nati"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-5841"
-  },
-  {
-   "area": "US-UT",
-   "ref": "US-5935",
-   "name": "Canyons Of Escalante/ Burr Trail BLM Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl5935",
-     "Canyons Of Escalante/ Burr Trail BLM Recreation Management Area",
-     0,
-     "official trail line (BLM GTLF public roads (official); Burr "
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-5935"
-  },
-  {
-   "area": "US-UT",
-   "ref": "US-5993",
-   "name": "Transcontinental Railroad BCB National Historic Trail",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl5993",
-     "Transcontinental Railroad BCB National Historic Trail",
-     0,
-     "official trail line (National Park Service (Golden Spike NHP"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-5993"
-  },
-  {
-   "area": "US-WA",
-   "ref": "US-3424",
-   "name": "Ice Age Floods National Geologic Trail",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl3424",
-     "Ice Age Floods National Geologic Trail",
-     0,
-     "official trail line (NPS official (carto iafl_tour_routes, R"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-3424"
-  },
-  {
-   "area": "US-WY",
-   "ref": "US-10877",
-   "name": "Mallo Trail BLM Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl10877",
-     "Mallo Trail",
-     0,
-     "official trail line (USFS Black Hills NF trails (official) ("
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-10877"
-  }
- ],
- "lost": [
-  {
-   "area": "US-NH",
-   "ref": "US-4868",
-   "name": "Annett State Forest",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "sgnhc2522",
-     "Annett State Forest",
-     1353,
-     "name"
-    ],
-    [
-     "sgnhc2651",
-     "Annett State Forest",
-     186,
-     "name"
-    ],
-    [
-     "sgnhc2610",
-     "Annett State Forest",
-     126,
-     "name"
-    ],
-    [
-     "sgnhc2298",
-     "Annett State Forest",
-     27,
-     "name"
-    ],
-    [
-     "sgnhc2607",
-     "Annett State Forest",
-     3,
-     "name"
-    ],
-    [
-     "sgnha10009",
-     "Annett State Forest",
-     0,
-     "name"
-    ],
-    [
-     "sgnha10010",
-     "Annett State Forest",
-     0,
-     "name"
-    ],
-    [
-     "sgnha10011",
-     "Annett State Forest",
-     0,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4868"
-  },
-  {
-   "area": "US-NH",
-   "ref": "US-4886",
-   "name": "Connecticut Lakes State Forest",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "sgnhc66",
-     "Connecticut Lakes State Forest",
-     1813,
-     "name"
-    ],
-    [
-     "sgnha3",
-     "Connecticut Lakes State Forest",
-     0,
-     "name"
-    ],
-    [
-     "sgnha138",
-     "Connecticut Lakes State Forest",
-     0,
-     "name"
-    ],
-    [
-     "sgnha345",
-     "Connecticut Lakes State Forest",
-     0,
-     "name"
-    ],
-    [
-     "sgnha346",
-     "Connecticut Lakes State Forest",
-     0,
-     "name"
-    ],
-    [
-     "sgnha347",
-     "Connecticut Lakes State Forest",
-     0,
-     "name"
-    ],
-    [
-     "sgnha495",
-     "Connecticut Lakes State Forest",
-     0,
-     "name"
-    ],
-    [
-     "sgnha510",
-     "Connecticut Lakes State Forest",
-     0,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4886"
-  },
-  {
-   "area": "US-NV",
-   "ref": "US-13132",
-   "name": "Seven Mile BLM Herd Management Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "hma104",
-     "Seven Mile",
-     98149,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-13132"
+   "pota": "https://pota.app/#/park/US-11823"
   },
   {
    "area": "US-NV",
    "ref": "US-13134",
    "name": "Rock Creek BLM Herd Management Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
     [
      "hma113",
      "Rock Creek",
      122085,
      "name"
+    ],
+    [
+     "sgnvi407",
+     "Rock Creek",
+     121434,
+     "name"
     ]
    ],
+   "old_pieces": [],
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-13134"
   },
   {
    "area": "US-NV",
-   "ref": "US-13138",
-   "name": "Wassuk BLM Herd Management Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
+   "ref": "US-13135",
+   "name": "Seven Troughs BLM Herd Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
     [
-     "hma127",
-     "Wassuk",
-     52310,
+     "sgnvi420",
+     "Seven Troughs",
+     150397,
      "name"
     ]
    ],
+   "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-13138"
+   "pota": "https://pota.app/#/park/US-13135"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13181",
+   "name": "Pine Forest BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgnvh1214",
+     "Pine Forest",
+     16227,
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13181"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13251",
+   "name": "Virginia City Historic District (Comstock Lode) National Historic District",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgaki397680",
+     "Virginia City Historic District",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-13251"
+  },
+  {
+   "area": "US-NY",
+   "ref": "US-12060",
+   "name": "Crystal Lake State Forest",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgnya64818",
+     "Crystal Lake Wild Forest",
+     502,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12060"
+  },
+  {
+   "area": "US-NY",
+   "ref": "US-5308",
+   "name": "Split Rock State Forest",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgnya66353",
+     "Split Rock Wild Forest",
+     3542,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-5308"
+  },
+  {
+   "area": "US-OK",
+   "ref": "US-0822",
+   "name": "Fort Smith National Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgaki387660",
+     "Fort Smith National Historic Site",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0822"
+  },
+  {
+   "area": "US-OK",
+   "ref": "US-11222",
+   "name": "Stinchcomb Wildlife Refuge",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "116910",
+     "Stinchcomb Wildlife Refuge",
+     965,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-11222"
+  },
+  {
+   "area": "US-OK",
+   "ref": "US-11778",
+   "name": "Fort Sill National Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgaki386929",
+     "Fort Sill",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-11778"
+  },
+  {
+   "area": "US-OK",
+   "ref": "US-6335",
+   "name": "Cabin Creek Battlefield State Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgaki400286",
+     "Cabin Creek Battlefield",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-6335"
+  },
+  {
+   "area": "US-OK",
+   "ref": "US-6336",
+   "name": "Honey Springs Battlefield State Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgaki400282",
+     "Honey Springs Battlefield",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-6336"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-10008",
+   "name": "Klamath Hills BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgakg12225",
+     "Lower Klamath Hills",
+     1596,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-10008"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-12837",
+   "name": "East Shore BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "rma11252",
+     "East Shore Campground",
+     2,
+     "words"
+    ],
+    [
+     "rst11252",
+     "East Shore Campground",
+     2,
+     "words"
+    ],
+    [
+     "sgakg11252",
+     "East Shore Campground",
+     2,
+     "words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12837"
+  },
+  {
+   "area": "US-PA",
+   "ref": "US-0621",
+   "name": "Todd Sanctuary State Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "249819",
+     "Todd Nature Reserve",
+     182,
+     "reviewed"
+    ],
+    [
+     "74544",
+     "Todd Nature Reserve",
+     180,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0621"
+  },
+  {
+   "area": "US-PA",
+   "ref": "US-0623",
+   "name": "Powdermill State Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "249881",
+     "Powdermill Nature Reserve",
+     1998,
+     "reviewed"
+    ],
+    [
+     "74602",
+     "Powdermill Nature Reserve",
+     1720,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0623"
+  },
+  {
+   "area": "US-PA",
+   "ref": "US-0684",
+   "name": "Lower Delaware National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "wsrc20",
+     "Delaware Wild and Scenic River",
+     21333,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0684"
+  },
+  {
+   "area": "US-SC",
+   "ref": "US-9758",
+   "name": "Chattooga National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr180",
+     "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+     10971,
+     "reviewed"
+    ],
+    [
+     "fwsr6",
+     "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+     4651,
+     "reviewed"
+    ],
+    [
+     "fwsr95",
+     "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+     906,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9758"
   },
   {
    "area": "US-UT",
-   "ref": "US-11748",
-   "name": "Cedar Mesa BLM Special Recreation Management Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
+   "ref": "US-11003",
+   "name": "Glenwood Open OHV Area BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
     [
-     "rst14459",
-     "Cedar Mesa",
-     0,
-     "name"
+     "sgakg9736",
+     "Glenwood",
+     1043,
+     "reviewed"
     ]
    ],
+   "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11748"
+   "pota": "https://pota.app/#/park/US-11003"
   },
   {
    "area": "US-UT",
-   "ref": "US-5782",
-   "name": "Indian Creek BLM Special Recreation Management Area",
+   "ref": "US-11092",
+   "name": "Midway Utah State Fish Hatchery",
+   "old_grade": "pin",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "sgutb151",
+     "Midway Hatchery",
+     0,
+     "words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11092"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-13000",
+   "name": "Spiral Jetty NPS National Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgaki401149",
+     "Spiral Jetty",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-13000"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-4475",
+   "name": "Caribou-Targhee National Forest",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "2809",
+     "Caribou-Targhee National Forest (Targhee National Forest)",
+     294438,
+     "reviewed"
+    ],
+    [
+     "2781",
+     "Caribou-Targhee National Forest (Caribou National Forest)",
+     7838,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4475"
+  },
+  {
+   "area": "US-VT",
+   "ref": "US-3140",
+   "name": "Sand Bar State Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgvta430",
+     "Sandbar State Park",
+     20,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3140"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-12830",
+   "name": "Old Ruby State Park State Heritage Area",
+   "old_grade": "pin",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "271501",
+     "Old Ruby",
+     7,
+     "words"
+    ],
+    [
+     "sgwaa128",
+     "Old Ruby",
+     7,
+     "words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12830"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-8663",
+   "name": "Plymouth Park National Recreation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "138321",
+     "Plymouth Park",
+     199,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8663"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-4264",
+   "name": "Quiver Falls Unit of Menominee River State Recreation Area",
+   "old_grade": "pin",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "272354",
+     "Menominee River State Recreation Area",
+     1,
+     "reviewed-approx"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4264"
+  }
+ ],
+ "lost": [
+  {
+   "area": "US-DE",
+   "ref": "US-11812",
+   "name": "Trap Pond State Fishing Lake",
    "old_grade": "official",
-   "new_grade": "pin",
+   "new_grade": "official",
    "new_pieces": [],
    "old_pieces": [
     [
-     "rst14458",
-     "Indian Creek",
-     0,
+     "sgdea380",
+     "Trap Pond State Park",
+     517,
      "name"
     ]
    ],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-5782"
+   "pota": "https://pota.app/#/park/US-11812"
+  },
+  {
+   "area": "US-IA",
+   "ref": "US-0270",
+   "name": "Iowa Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "fws2489",
+     "Lower Morse Lake WPA WPA, Wright County Waterfowl Production Area Of Ia",
+     1804,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2403",
+     "Spring Run WPA WPA, Dickinson County Waterfowl Production Area",
+     1233,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2405",
+     "Welsh Lake WPA WPA, Dickinson County Waterfowl Production Area",
+     962,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2485",
+     "Harlontown Slough WPA WPA, Worth County Waterfowl Production Area",
+     939,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2421",
+     "Dunbar Slough WPA WPA, Greene County Waterfowl Production Area",
+     887,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2392",
+     "Dugout Creek WPA WPA, Dickinson County Waterfowl Production Area",
+     788,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2412",
+     "Ingham Lake WPA WPA, Emmet County Waterfowl Production Area",
+     775,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2471",
+     "Kiowa Marsh WPA WPA, Sac County Waterfowl Production Area",
+     756,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0270"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-0365",
+   "name": "Minnesota Valley Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "fws3906",
+     "Pauley WPA WPA, Blue Earth County Waterfowl Production Area",
+     663,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3951",
+     "Mud Lake WPA WPA, Sibley County Waterfowl Production Area",
+     603,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3899",
+     "Howard Farm WPA WPA, Blue Earth County Waterfowl Production Area",
+     502,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3892",
+     "Cobb River WPA-Duncanson WPA, Blue Earth County Waterfowl Production Area",
+     398,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3959",
+     "Straight River Marsh WPA WPA, Steele County Waterfowl Production Area",
+     380,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3950",
+     "High Island WPA WPA, Sibley County Waterfowl Production Area",
+     361,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3958",
+     "Straight Creek WPA WPA, Steele County Waterfowl Production Area",
+     346,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3917",
+     "Carver County WPA WPA, Carver County Waterfowl Production Area",
+     304,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0365"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-10723",
+   "name": "Crystal Spring SNA Scenic Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgmnc178",
+     "Crystal Spring",
+     38,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10723"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-11872",
+   "name": "Lost 40 SNA State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgmnc198",
+     "Lost 40",
+     136,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11872"
+  },
+  {
+   "area": "US-MO",
+   "ref": "US-0374",
+   "name": "Big Muddy National Wildlife Refuge",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "3632",
+     "Big Muddy National Fish And Wildlife Refuge",
+     10926,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0374"
+  },
+  {
+   "area": "US-SD",
+   "ref": "US-0529",
+   "name": "Madison Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "fws3706",
+     "Buffalo Lake WPA, Minnehaha County Waterfowl Production Area",
+     1116,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3475",
+     "Brush Lake WPA, Brookings County Waterfowl Production Area",
+     686,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3630",
+     "Lake Henry WPA, Lake County Waterfowl Production Area",
+     639,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3632",
+     "Long Lake WPA, Lake County Waterfowl Production Area",
+     600,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3605",
+     "Silver Lake WPA, Kingsbury County Waterfowl Production Area",
+     593,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3479",
+     "Errington WPA, Brookings County Waterfowl Production Area",
+     568,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3472",
+     "Bjornlie WPA, Brookings County Waterfowl Production Area",
+     540,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3586",
+     "Holland WPA, Kingsbury County Waterfowl Production Area",
+     532,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0529"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-6221",
+   "name": "Fontenelle Creek BLM Recreation Management Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "2319",
+     "Fontenelle Reservoir",
+     8131,
+     "name + Recreation.gov point inside (G-1, id 2243)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6221"
   }
  ],
  "grade_changed": [
   {
-   "area": "US-FL",
-   "ref": "US-3635",
-   "name": "Madira Bickel Mound State Historic Site",
-   "old_grade": "approximate",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "191800",
-     "Madira Bickel Mound State Archaeological Site",
-     10,
-     "words"
-    ],
-    [
-     "sgfla81",
-     "Madira Bickel Mound State Archaeological Site",
-     9,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "191800",
-     "Madira Bickel Mound State Archaeological Site",
-     10,
-     "words"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-3635"
-  },
-  {
-   "area": "US-FL",
-   "ref": "US-6327",
-   "name": "Tenoroc Wildlife Area",
-   "old_grade": "approximate",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "sgflf10761",
-     "Tenoroc State Reserve",
-     27,
-     "name"
-    ],
-    [
-     "sgflf8115",
-     "Tenoroc Fish Management Area",
-     13,
-     "words"
-    ],
-    [
-     "sgflf5903",
-     "Tenoroc Fish Management Area",
-     0,
-     "words"
-    ],
-    [
-     "sgflf5998",
-     "Tenoroc Fish Management Area",
-     0,
-     "words"
-    ],
-    [
-     "sgflf5999",
-     "Tenoroc Fish Management Area",
-     0,
-     "words"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "191721",
-     "Tenoroc Fish Management Area",
-     7528,
-     "words"
-    ]
-   ],
-   "held_now": [
-    "check (rule R-G8): bigger than the park's own record",
-    "check (rule R-G8): bigger than the park's own record"
-   ],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-6327"
-  },
-  {
-   "area": "US-NV",
-   "ref": "US-13178",
-   "name": "Mt. Irish Archaeological Site Archeological Reserve",
-   "old_grade": "pin",
+   "area": "US-AL",
+   "ref": "US-4560",
+   "name": "Natchez Trace Trail National Scenic Trail",
+   "old_grade": "official",
    "new_grade": "approximate",
    "new_pieces": [
     [
-     "sgnvh1238",
-     "Mount Irish",
-     15075,
+     "3552",
+     "Natchez Trace Parkway",
+     31527,
      "reviewed-approx"
     ]
    ],
    "old_pieces": [
     [
-     "wbl4778",
-     "Mount Irish",
+     "trl4560",
+     "Natchez Trace National Scenic Trail",
      0,
-     "reviewed-approx"
+     "official trail line (National Park Service): the park is the"
     ]
    ],
    "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-13178"
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4560"
   },
   {
-   "area": "US-WI",
-   "ref": "US-8667",
-   "name": "Haskell Noyes Memorial Woods State Natural Area",
+   "area": "US-CA",
+   "ref": "US-0894",
+   "name": "Tuolumne National Wild and Scenic River",
    "old_grade": "approximate",
    "new_grade": "official",
    "new_pieces": [
     [
-     "sgwic6755",
-     "Haskell Noyes Woods",
-     62,
-     "words"
+     "fwsr252",
+     "Tuolumne, California National Wild and Scenic River",
+     7057,
+     "reviewed"
     ],
     [
-     "sgwif23571",
-     "Haskell Noyes Woods",
-     62,
+     "fwsr149",
+     "Tuolumne, California National Wild and Scenic River",
+     1233,
+     "reviewed"
+    ],
+    [
+     "fwsr79",
+     "Tuolumne, California National Wild and Scenic River",
+     89,
      "reviewed"
     ]
    ],
    "old_pieces": [
     [
-     "sgwic6755",
-     "Haskell Noyes Woods",
-     62,
+     "fwsr252",
+     "Tuolumne, California National Wild and Scenic River",
+     7057,
+     "words"
+    ],
+    [
+     "fwsr149",
+     "Tuolumne, California National Wild and Scenic River",
+     1233,
+     "words"
+    ],
+    [
+     "fwsr79",
+     "Tuolumne, California National Wild and Scenic River",
+     89,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0894"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-0350",
+   "name": "Michigan Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "fws3864",
+     "Edger WPA WPA, Barry County Waterfowl Production Area",
+     158,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3872",
+     "Malan WPA WPA, Jackson County Waterfowl Production Area Of Mi",
+     138,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3879",
+     "Kinney WPA WPA, Van Buren County Waterfowl Production Area",
+     108,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fws3864",
+     "Edger WPA WPA, Barry County Waterfowl Production Area",
+     158,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3872",
+     "Malan WPA WPA, Jackson County Waterfowl Production Area Of Mi",
+     138,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3879",
+     "Kinney WPA WPA, Van Buren County Waterfowl Production Area",
+     108,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0350"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12787",
+   "name": "Bear Creek National Wild and Scenic River",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr89",
+     "Bear Creek, Michigan National Wild and Scenic River",
+     1902,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fwsr89",
+     "Bear Creek, Michigan National Wild and Scenic River",
+     1902,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12787"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12791",
+   "name": "Indian National Wild and Scenic River",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr40",
+     "Indian, Michigan National Wild and Scenic River",
+     8796,
+     "reviewed"
+    ],
+    [
+     "fwsr116",
+     "Indian, Michigan National Wild and Scenic River",
+     2749,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fwsr40",
+     "Indian, Michigan National Wild and Scenic River",
+     8796,
+     "words"
+    ],
+    [
+     "fwsr116",
+     "Indian, Michigan National Wild and Scenic River",
+     2749,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12791"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12797",
+   "name": "Presque Isle National Wild and Scenic River",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr63",
+     "Presque Isle, Michigan National Wild and Scenic River",
+     12744,
+     "reviewed"
+    ],
+    [
+     "fwsr144",
+     "Presque Isle, Michigan National Wild and Scenic River",
+     7483,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fwsr63",
+     "Presque Isle, Michigan National Wild and Scenic River",
+     12744,
+     "words"
+    ],
+    [
+     "fwsr144",
+     "Presque Isle, Michigan National Wild and Scenic River",
+     7483,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12797"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12800",
+   "name": "Whitefish National Wild and Scenic River",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr168",
+     "Whitefish, Michigan National Wild and Scenic River",
+     9404,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fwsr168",
+     "Whitefish, Michigan National Wild and Scenic River",
+     9404,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12800"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12801",
+   "name": "Yellow Dog National Wild and Scenic River",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr231",
+     "Yellow Dog, Michigan National Wild and Scenic River",
+     1097,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fwsr231",
+     "Yellow Dog, Michigan National Wild and Scenic River",
+     1097,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12801"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-0356",
+   "name": "Big Stone Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "fws998",
+     "Gislason Lake WPA WPA, Lincoln County Waterfowl Production Area",
+     409,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1012",
+     "Arends WPA WPA, Lyon County Waterfowl Production Area",
+     319,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1019",
+     "Peterson WPA WPA, Lyon County Waterfowl Production Area",
+     239,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1020",
+     "Redwood River WPA WPA, Lyon County Waterfowl Production Area",
+     225,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1002",
+     "Kragh Farms WPA WPA, Lincoln County Waterfowl Production Area",
+     224,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1007",
+     "Rochel WPA WPA, Lincoln County Waterfowl Production Area",
+     164,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1022",
+     "Yellow Medicine River WPA WPA, Lyon County Waterfowl Production Area",
+     163,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1001",
+     "Kontz WPA WPA, Lincoln County Waterfowl Production Area",
+     162,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fws998",
+     "Gislason Lake WPA WPA, Lincoln County Waterfowl Production Area",
+     409,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1012",
+     "Arends WPA WPA, Lyon County Waterfowl Production Area",
+     319,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1019",
+     "Peterson WPA WPA, Lyon County Waterfowl Production Area",
+     239,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1020",
+     "Redwood River WPA WPA, Lyon County Waterfowl Production Area",
+     225,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1002",
+     "Kragh Farms WPA WPA, Lincoln County Waterfowl Production Area",
+     224,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1007",
+     "Rochel WPA WPA, Lincoln County Waterfowl Production Area",
+     164,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1022",
+     "Yellow Medicine River WPA WPA, Lyon County Waterfowl Production Area",
+     163,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1001",
+     "Kontz WPA WPA, Lincoln County Waterfowl Production Area",
+     162,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0356"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-0358",
+   "name": "Detroit Lakes Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "fws1643",
+     "Winger WPA WPA, Polk County Waterfowl Production Area Of Mn",
+     1758,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1458",
+     "Hellicksen Prairie WPA WPA, Becker County Waterfowl Production Area",
+     1385,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1605",
+     "Erskine Complex WPA WPA, Polk County Waterfowl Production Area Of Mn",
+     1348,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1624",
+     "Melvin Slough WPA WPA, Polk County Waterfowl Production Area Of Mn",
+     1212,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1510",
+     "Flickertail Prairie WPA WPA, Clay County Waterfowl Production Area Of Mn",
+     978,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1443",
+     "Bay Lake WPA WPA, Becker County Waterfowl Production Area",
+     949,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1604",
+     "Clarke WPA WPA, Polk County Waterfowl Production Area Of Mn",
+     868,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1529",
+     "Kenyon WPA WPA, Clay County Waterfowl Production Area Of Mn",
+     779,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fws1643",
+     "Winger WPA WPA, Polk County Waterfowl Production Area Of Mn",
+     1758,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1458",
+     "Hellicksen Prairie WPA WPA, Becker County Waterfowl Production Area",
+     1385,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1605",
+     "Erskine Complex WPA WPA, Polk County Waterfowl Production Area Of Mn",
+     1348,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1624",
+     "Melvin Slough WPA WPA, Polk County Waterfowl Production Area Of Mn",
+     1212,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1510",
+     "Flickertail Prairie WPA WPA, Clay County Waterfowl Production Area Of Mn",
+     978,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1443",
+     "Bay Lake WPA WPA, Becker County Waterfowl Production Area",
+     949,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1604",
+     "Clarke WPA WPA, Polk County Waterfowl Production Area Of Mn",
+     868,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1529",
+     "Kenyon WPA WPA, Clay County Waterfowl Production Area Of Mn",
+     779,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0358"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-0359",
+   "name": "Fergus Falls Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "fws2231",
+     "Meadows WPA WPA, Wilkin County Waterfowl Production Area",
+     1305,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2177",
+     "Nicholson WPA WPA, Otter Tail County Waterfowl Production Area",
+     1234,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2149",
+     "Julsrud WPA WPA, Otter Tail County Waterfowl Production Area",
+     987,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2086",
+     "Pomme De Terre WPA WPA, Grant County Waterfowl Production Area",
+     956,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2094",
+     "Spink WPA WPA, Grant County Waterfowl Production Area",
+     758,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2210",
+     "Townsend WPA WPA, Otter Tail County Waterfowl Production Area",
+     741,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2065",
+     "Haseman WPA WPA, Grant County Waterfowl Production Area",
+     722,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2112",
+     "Backstrom WPA WPA, Otter Tail County Waterfowl Production Area",
+     699,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fws2231",
+     "Meadows WPA WPA, Wilkin County Waterfowl Production Area",
+     1305,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2177",
+     "Nicholson WPA WPA, Otter Tail County Waterfowl Production Area",
+     1234,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2149",
+     "Julsrud WPA WPA, Otter Tail County Waterfowl Production Area",
+     987,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2086",
+     "Pomme De Terre WPA WPA, Grant County Waterfowl Production Area",
+     956,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2094",
+     "Spink WPA WPA, Grant County Waterfowl Production Area",
+     758,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2210",
+     "Townsend WPA WPA, Otter Tail County Waterfowl Production Area",
+     741,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2065",
+     "Haseman WPA WPA, Grant County Waterfowl Production Area",
+     722,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2112",
+     "Backstrom WPA WPA, Otter Tail County Waterfowl Production Area",
+     699,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0359"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-0362",
+   "name": "Litchfield Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "fws3281",
+     "Pelican Lake WPA WPA, Wright County Waterfowl Production Area Of Mn",
+     1264,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3233",
+     "Lovell Lake WPA WPA, Stearns County Waterfowl Production Area",
+     914,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3100",
+     "Big Kandiyohi Lake WPA WPA, Kandiyohi County Waterfowl Production Area",
+     910,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3105",
+     "Burbank WPA WPA, Kandiyohi County Waterfowl Production Area",
+     898,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3212",
+     "Ashley WPA WPA, Stearns County Waterfowl Production Area",
+     856,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3160",
+     "Yarmon WPA WPA, Kandiyohi County Waterfowl Production Area",
+     818,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3147",
+     "Randall WPA WPA, Kandiyohi County Waterfowl Production Area",
+     747,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3155",
+     "Swan Lake WPA WPA, Kandiyohi County Waterfowl Production Area",
+     740,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fws3281",
+     "Pelican Lake WPA WPA, Wright County Waterfowl Production Area Of Mn",
+     1264,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3233",
+     "Lovell Lake WPA WPA, Stearns County Waterfowl Production Area",
+     914,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3100",
+     "Big Kandiyohi Lake WPA WPA, Kandiyohi County Waterfowl Production Area",
+     910,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3105",
+     "Burbank WPA WPA, Kandiyohi County Waterfowl Production Area",
+     898,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3212",
+     "Ashley WPA WPA, Stearns County Waterfowl Production Area",
+     856,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3160",
+     "Yarmon WPA WPA, Kandiyohi County Waterfowl Production Area",
+     818,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3147",
+     "Randall WPA WPA, Kandiyohi County Waterfowl Production Area",
+     747,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3155",
+     "Swan Lake WPA WPA, Kandiyohi County Waterfowl Production Area",
+     740,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0362"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-0366",
+   "name": "Morris Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "fws4026",
+     "Rothi WPA WPA, Big Stone County Waterfowl Production Area",
+     1231,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws4103",
+     "Krantz Lake WPA WPA, Pope County Waterfowl Production Area",
+     1152,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3996",
+     "Hillman WPA WPA, Big Stone County Waterfowl Production Area",
+     1087,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws4117",
+     "Nelson Lake WPA WPA, Pope County Waterfowl Production Area",
+     1083,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws4218",
+     "Loen WPA WPA, Swift County Waterfowl Production Area",
+     1056,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws4054",
+     "Hastad WPA WPA, Lac Qui Parle County Waterfowl Production Area",
+     984,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws4182",
+     "Pepperton WPA WPA, Stevens County Waterfowl Production Area",
+     918,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws4240",
+     "Welsh WPA WPA, Swift County Waterfowl Production Area",
+     900,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fws4026",
+     "Rothi WPA WPA, Big Stone County Waterfowl Production Area",
+     1231,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws4103",
+     "Krantz Lake WPA WPA, Pope County Waterfowl Production Area",
+     1152,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3996",
+     "Hillman WPA WPA, Big Stone County Waterfowl Production Area",
+     1087,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws4117",
+     "Nelson Lake WPA WPA, Pope County Waterfowl Production Area",
+     1083,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws4218",
+     "Loen WPA WPA, Swift County Waterfowl Production Area",
+     1056,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws4054",
+     "Hastad WPA WPA, Lac Qui Parle County Waterfowl Production Area",
+     984,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws4182",
+     "Pepperton WPA WPA, Stevens County Waterfowl Production Area",
+     918,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws4240",
+     "Welsh WPA WPA, Swift County Waterfowl Production Area",
+     900,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0366"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-0373",
+   "name": "Windom Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "fws6164",
+     "Big Slough WPA WPA, Murray County Waterfowl Production Area",
+     812,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws6088",
+     "Martin J. Baker WPA WPA, Cottonwood County Waterfowl Production Area",
+     716,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws6176",
+     "Slaughter Slough WPA WPA, Murray County Waterfowl Production Area",
+     641,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws6150",
+     "Timber Lake WPA WPA, Jackson County Waterfowl Production Area Of Mn",
+     532,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws6100",
+     "Wolf Lake WPA WPA, Cottonwood County Waterfowl Production Area",
+     494,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws6112",
+     "Goose Creek WPA WPA, Freeborn County Waterfowl Production Area",
+     474,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws6096",
+     "Storden WPA WPA, Cottonwood County Waterfowl Production Area",
+     442,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws6171",
+     "Mason WPA WPA, Murray County Waterfowl Production Area",
+     436,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fws6164",
+     "Big Slough WPA WPA, Murray County Waterfowl Production Area",
+     812,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws6088",
+     "Martin J. Baker WPA WPA, Cottonwood County Waterfowl Production Area",
+     716,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws6176",
+     "Slaughter Slough WPA WPA, Murray County Waterfowl Production Area",
+     641,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws6150",
+     "Timber Lake WPA WPA, Jackson County Waterfowl Production Area Of Mn",
+     532,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws6100",
+     "Wolf Lake WPA WPA, Cottonwood County Waterfowl Production Area",
+     494,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws6112",
+     "Goose Creek WPA WPA, Freeborn County Waterfowl Production Area",
+     474,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws6096",
+     "Storden WPA WPA, Cottonwood County Waterfowl Production Area",
+     442,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws6171",
+     "Mason WPA WPA, Murray County Waterfowl Production Area",
+     436,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0373"
+  },
+  {
+   "area": "US-ND",
+   "ref": "US-0421",
+   "name": "Arrowwood Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "fws810",
+     "Wallace WPA, Eddy County Waterfowl Production Area",
+     913,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws800",
+     "Haven WPA, Eddy County Waterfowl Production Area",
+     653,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws808",
+     "Sheyenne WPA, Eddy County Waterfowl Production Area",
+     514,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws812",
+     "Ziebart WPA, Eddy County Waterfowl Production Area",
+     314,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws815",
+     "Barlow WPA, Foster County Waterfowl Production Area",
+     282,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws811",
+     "Wood WPA, Eddy County Waterfowl Production Area",
+     240,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws821",
+     "Okert WPA, Foster County Waterfowl Production Area",
+     228,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws801",
+     "Hegland WPA, Eddy County Waterfowl Production Area",
+     191,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fws810",
+     "Wallace WPA, Eddy County Waterfowl Production Area",
+     913,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws800",
+     "Haven WPA, Eddy County Waterfowl Production Area",
+     653,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws808",
+     "Sheyenne WPA, Eddy County Waterfowl Production Area",
+     514,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws812",
+     "Ziebart WPA, Eddy County Waterfowl Production Area",
+     314,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws815",
+     "Barlow WPA, Foster County Waterfowl Production Area",
+     282,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws811",
+     "Wood WPA, Eddy County Waterfowl Production Area",
+     240,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws821",
+     "Okert WPA, Foster County Waterfowl Production Area",
+     228,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws801",
+     "Hegland WPA, Eddy County Waterfowl Production Area",
+     191,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0421"
+  },
+  {
+   "area": "US-ND",
+   "ref": "US-0425",
+   "name": "Devils Lake Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "fws1767",
+     "Stewart Lake WPA, Grand Forks County Waterfowl Production Area",
+     1491,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1834",
+     "Martinson WPA, Ramsey County Waterfowl Production Area",
+     1276,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1807",
+     "Pembina Prarie WPA, Pembina County Waterfowl Production Area",
+     1074,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1663",
+     "Hofstrand WPA, Benson County Waterfowl Production Area",
+     1045,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1769",
+     "Turtle River WPA, Grand Forks County Waterfowl Production Area",
+     1019,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1715",
+     "Billings Lake WPA, Cavalier County Waterfowl Production Area",
+     992,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1750",
+     "Wengeler WPA, Cavalier County Waterfowl Production Area",
+     936,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1766",
+     "Pender WPA, Grand Forks County Waterfowl Production Area",
+     859,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fws1767",
+     "Stewart Lake WPA, Grand Forks County Waterfowl Production Area",
+     1491,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1834",
+     "Martinson WPA, Ramsey County Waterfowl Production Area",
+     1276,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1807",
+     "Pembina Prarie WPA, Pembina County Waterfowl Production Area",
+     1074,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1663",
+     "Hofstrand WPA, Benson County Waterfowl Production Area",
+     1045,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1769",
+     "Turtle River WPA, Grand Forks County Waterfowl Production Area",
+     1019,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1715",
+     "Billings Lake WPA, Cavalier County Waterfowl Production Area",
+     992,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1750",
+     "Wengeler WPA, Cavalier County Waterfowl Production Area",
+     936,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1766",
+     "Pender WPA, Grand Forks County Waterfowl Production Area",
+     859,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0425"
+  },
+  {
+   "area": "US-ND",
+   "ref": "US-0428",
+   "name": "J. Clark Salyer Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "fws2580",
+     "Horseshoe Lake WPA, Pierce County Waterfowl Production Area",
+     1482,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2631",
+     "LaFromboise WPA, Rolette County Waterfowl Production Area",
+     959,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2567",
+     "Christenson Lake WPA, Pierce County Waterfowl Production Area",
+     907,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2543",
+     "Mikes Peak WPA, Mchenry County Waterfowl Production Area",
+     858,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2620",
+     "Baxstrom WPA, Rolette County Waterfowl Production Area",
+     839,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2609",
+     "Wolford WPA, Pierce County Waterfowl Production Area",
+     757,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2683",
+     "Rovig WPA, Ward County Waterfowl Production Area",
+     720,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2593",
+     "Rush Lake WPA, Pierce County Waterfowl Production Area",
+     649,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fws2580",
+     "Horseshoe Lake WPA, Pierce County Waterfowl Production Area",
+     1482,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2631",
+     "LaFromboise WPA, Rolette County Waterfowl Production Area",
+     959,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2567",
+     "Christenson Lake WPA, Pierce County Waterfowl Production Area",
+     907,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2543",
+     "Mikes Peak WPA, Mchenry County Waterfowl Production Area",
+     858,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2620",
+     "Baxstrom WPA, Rolette County Waterfowl Production Area",
+     839,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2609",
+     "Wolford WPA, Pierce County Waterfowl Production Area",
+     757,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2683",
+     "Rovig WPA, Ward County Waterfowl Production Area",
+     720,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2593",
+     "Rush Lake WPA, Pierce County Waterfowl Production Area",
+     649,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0428"
+  },
+  {
+   "area": "US-ND",
+   "ref": "US-0430",
+   "name": "Kulm Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "fws2812",
+     "Grohne WPA, Logan County Waterfowl Production Area",
+     1380,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2923",
+     "Wolf WPA, Mcintosh County Waterfowl Production Area",
+     1366,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2864",
+     "Brinkman WPA, Mcintosh County Waterfowl Production Area",
+     1244,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2846",
+     "Roesler Lake WPA, Logan County Waterfowl Production Area",
+     1214,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2859",
+     "Berlin Church WPA, Mcintosh County Waterfowl Production Area",
+     1110,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2867",
+     "Denning WPA, Mcintosh County Waterfowl Production Area",
+     808,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2818",
+     "Kautz WPA, Logan County Waterfowl Production Area",
+     802,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2739",
+     "Lee WPA, Dickey County Waterfowl Production Area",
+     795,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fws2812",
+     "Grohne WPA, Logan County Waterfowl Production Area",
+     1380,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2923",
+     "Wolf WPA, Mcintosh County Waterfowl Production Area",
+     1366,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2864",
+     "Brinkman WPA, Mcintosh County Waterfowl Production Area",
+     1244,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2846",
+     "Roesler Lake WPA, Logan County Waterfowl Production Area",
+     1214,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2859",
+     "Berlin Church WPA, Mcintosh County Waterfowl Production Area",
+     1110,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2867",
+     "Denning WPA, Mcintosh County Waterfowl Production Area",
+     808,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2818",
+     "Kautz WPA, Logan County Waterfowl Production Area",
+     802,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2739",
+     "Lee WPA, Dickey County Waterfowl Production Area",
+     795,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0430"
+  },
+  {
+   "area": "US-ND",
+   "ref": "US-0440",
+   "name": "Valley City Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "fws5756",
+     "Stoney Slough WPA, Barnes County Waterfowl Production Area",
+     1261,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5799",
+     "Fuller's Lake WPA, Steele County Waterfowl Production Area",
+     1129,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5777",
+     "Cook-Ustipak WPA, Griggs County Waterfowl Production Area",
+     953,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5768",
+     "Kemmer WPA, Cass County Waterfowl Production Area",
+     794,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5784",
+     "Johnson WPA, Griggs County Waterfowl Production Area",
+     647,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5802",
+     "Shaw WPA, Steele County Waterfowl Production Area",
+     639,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5780",
+     "Evers WPA, Griggs County Waterfowl Production Area",
+     567,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5732",
+     "Getchell WPA, Barnes County Waterfowl Production Area",
+     507,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fws5756",
+     "Stoney Slough WPA, Barnes County Waterfowl Production Area",
+     1261,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5799",
+     "Fuller's Lake WPA, Steele County Waterfowl Production Area",
+     1129,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5777",
+     "Cook-Ustipak WPA, Griggs County Waterfowl Production Area",
+     953,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5768",
+     "Kemmer WPA, Cass County Waterfowl Production Area",
+     794,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5784",
+     "Johnson WPA, Griggs County Waterfowl Production Area",
+     647,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5802",
+     "Shaw WPA, Steele County Waterfowl Production Area",
+     639,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5780",
+     "Evers WPA, Griggs County Waterfowl Production Area",
+     567,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5732",
+     "Getchell WPA, Barnes County Waterfowl Production Area",
+     507,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0440"
+  },
+  {
+   "area": "US-NJ",
+   "ref": "US-0886",
+   "name": "Maurice River National Wild and Scenic River",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "wsrc23",
+     "Maurice Wild and Scenic River",
+     13983,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "wsrc23",
+     "Maurice Wild and Scenic River",
+     13983,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0886"
+  },
+  {
+   "area": "US-PA",
+   "ref": "US-12235",
+   "name": "Clarion National Wild and Scenic River",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr16",
+     "Clarion, Pennsylvania National Wild and Scenic River",
+     10878,
+     "reviewed"
+    ],
+    [
+     "fwsr98",
+     "Clarion, Pennsylvania National Wild and Scenic River",
+     5589,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fwsr16",
+     "Clarion, Pennsylvania National Wild and Scenic River",
+     10878,
+     "words"
+    ],
+    [
+     "fwsr98",
+     "Clarion, Pennsylvania National Wild and Scenic River",
+     5589,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12235"
+  },
+  {
+   "area": "US-SD",
+   "ref": "US-0525",
+   "name": "Huron Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "fws2330",
+     "Harter WPA, Hyde County Waterfowl Production Area",
+     1417,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2329",
+     "Cowan WPA, Hyde County Waterfowl Production Area",
+     967,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2337",
+     "Jackson WPA, Jerauld County Waterfowl Production Area",
+     958,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2295",
+     "Mills WPA, Buffalo County Waterfowl Production Area",
+     919,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2268",
+     "Bauer WPA, Beadle County Waterfowl Production Area",
+     795,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2289",
+     "Weaver WPA, Beadle County Waterfowl Production Area",
+     646,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2317",
+     "Spring Lake WPA, Hand County Waterfowl Production Area",
+     620,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2273",
+     "Ingle WPA, Beadle County Waterfowl Production Area",
+     618,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fws2330",
+     "Harter WPA, Hyde County Waterfowl Production Area",
+     1417,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2329",
+     "Cowan WPA, Hyde County Waterfowl Production Area",
+     967,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2337",
+     "Jackson WPA, Jerauld County Waterfowl Production Area",
+     958,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2295",
+     "Mills WPA, Buffalo County Waterfowl Production Area",
+     919,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2268",
+     "Bauer WPA, Beadle County Waterfowl Production Area",
+     795,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2289",
+     "Weaver WPA, Beadle County Waterfowl Production Area",
+     646,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2317",
+     "Spring Lake WPA, Hand County Waterfowl Production Area",
+     620,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2273",
+     "Ingle WPA, Beadle County Waterfowl Production Area",
+     618,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0525"
+  },
+  {
+   "area": "US-SD",
+   "ref": "US-0532",
+   "name": "Waubay Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "fws5831",
+     "Dry Lake WPA, Clark County Waterfowl Production Area",
+     1489,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5954",
+     "Meyer Lake WPA, Grant County Waterfowl Production Area",
+     1315,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5971",
+     "Cottonwood Lake WPA, Marshall County Waterfowl Production Area",
+     1278,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5979",
+     "Jensen WPA, Marshall County Waterfowl Production Area",
+     1151,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5980",
+     "Lake Emma WPA, Marshall County Waterfowl Production Area",
+     1024,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5987",
+     "North Red Iron Lake WPA, Marshall County Waterfowl Production Area",
+     928,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5918",
+     "Lardy WPA, Day County Waterfowl Production Area",
+     841,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5993",
+     "Ruckdaschel WPA, Marshall County Waterfowl Production Area",
+     823,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fws5831",
+     "Dry Lake WPA, Clark County Waterfowl Production Area",
+     1489,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5954",
+     "Meyer Lake WPA, Grant County Waterfowl Production Area",
+     1315,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5971",
+     "Cottonwood Lake WPA, Marshall County Waterfowl Production Area",
+     1278,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5979",
+     "Jensen WPA, Marshall County Waterfowl Production Area",
+     1151,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5980",
+     "Lake Emma WPA, Marshall County Waterfowl Production Area",
+     1024,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5987",
+     "North Red Iron Lake WPA, Marshall County Waterfowl Production Area",
+     928,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5918",
+     "Lardy WPA, Day County Waterfowl Production Area",
+     841,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5993",
+     "Ruckdaschel WPA, Marshall County Waterfowl Production Area",
+     823,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0532"
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-4560",
+   "name": "Natchez Trace Trail National Scenic Trail",
+   "old_grade": "official",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "3552",
+     "Natchez Trace Parkway",
+     31527,
+     "reviewed-approx"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "trl4560",
+     "Natchez Trace National Scenic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4560"
+  },
+  {
+   "area": "US-VT",
+   "ref": "US-0329",
+   "name": "Silvio O Conte National Wildlife Refuge",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "4344",
+     "Silvio O. Conte National Fish And Wildlife Refuge",
+     27090,
+     "words"
+    ],
+    [
+     "5301",
+     "Silvio O. Conte National Fish And Wildlife Refuge",
+     27090,
+     "words"
+    ],
+    [
+     "5300",
+     "Silvio O. Conte National Fish And Wildlife Refuge",
+     7893,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "4344",
+     "Silvio O. Conte National Fish And Wildlife Refuge",
+     27090,
+     "words"
+    ],
+    [
+     "5301",
+     "Silvio O. Conte National Fish And Wildlife Refuge",
+     27090,
      "words"
     ]
    ],
    "held_now": [],
    "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8667"
+   "pota": "https://pota.app/#/park/US-0329"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-0602",
+   "name": "Leopold Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "fws3093",
+     "Uihlein WPA WPA, Winnebago County Waterfowl Production Area Of Wi",
+     2436,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3019",
+     "Baraboo River WPA WPA, Columbia County Waterfowl Production Area",
+     950,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3028",
+     "Schoeneberg Marsh WPA WPA, Columbia County Waterfowl Production Area",
+     735,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3034",
+     "Harvey's Marsh WPA WPA, Dane County Waterfowl Production Area",
+     585,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3049",
+     "Trenton WPA WPA, Dodge County Waterfowl Production Area",
+     514,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3053",
+     "Oakfield WPA WPA, Fond Du Lac County Waterfowl Production Area",
+     430,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3021",
+     "Becker WPA WPA, Columbia County Waterfowl Production Area",
+     357,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3025",
+     "Manthey WPA WPA, Columbia County Waterfowl Production Area",
+     352,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fws3093",
+     "Uihlein WPA WPA, Winnebago County Waterfowl Production Area Of Wi",
+     2436,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3019",
+     "Baraboo River WPA WPA, Columbia County Waterfowl Production Area",
+     950,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3028",
+     "Schoeneberg Marsh WPA WPA, Columbia County Waterfowl Production Area",
+     735,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3034",
+     "Harvey's Marsh WPA WPA, Dane County Waterfowl Production Area",
+     585,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3049",
+     "Trenton WPA WPA, Dodge County Waterfowl Production Area",
+     514,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3053",
+     "Oakfield WPA WPA, Fond Du Lac County Waterfowl Production Area",
+     430,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3021",
+     "Becker WPA WPA, Columbia County Waterfowl Production Area",
+     357,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3025",
+     "Manthey WPA WPA, Columbia County Waterfowl Production Area",
+     352,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0602"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-0604",
+   "name": "St. Croix Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "fws5522",
+     "Rock Creek WPA WPA, Dunn County Waterfowl Production Area",
+     672,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5555",
+     "Oak Ridge WPA WPA, St. Croix County Waterfowl Production Area",
+     632,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5565",
+     "Ten Mile WPA WPA, St. Croix County Waterfowl Production Area",
+     516,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5559",
+     "Prairie Flats - South WPA WPA, St. Croix County Waterfowl Production Area",
+     501,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5543",
+     "Betterly WPA WPA, St. Croix County Waterfowl Production Area",
+     485,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5547",
+     "Erickson WPA WPA, St. Croix County Waterfowl Production Area",
+     476,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5542",
+     "Bass Lake WPA WPA, St. Croix County Waterfowl Production Area",
+     423,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5563",
+     "Stanton Prairie WPA WPA, St. Croix County Waterfowl Production Area",
+     353,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fws5522",
+     "Rock Creek WPA WPA, Dunn County Waterfowl Production Area",
+     672,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5555",
+     "Oak Ridge WPA WPA, St. Croix County Waterfowl Production Area",
+     632,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5565",
+     "Ten Mile WPA WPA, St. Croix County Waterfowl Production Area",
+     516,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5559",
+     "Prairie Flats - South WPA WPA, St. Croix County Waterfowl Production Area",
+     501,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5543",
+     "Betterly WPA WPA, St. Croix County Waterfowl Production Area",
+     485,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5547",
+     "Erickson WPA WPA, St. Croix County Waterfowl Production Area",
+     476,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5542",
+     "Bass Lake WPA WPA, St. Croix County Waterfowl Production Area",
+     423,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws5563",
+     "Stanton Prairie WPA WPA, St. Croix County Waterfowl Production Area",
+     353,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0604"
   }
  ],
  "sample": [
   {
-   "area": "US-FL",
-   "ref": "US-3635",
-   "name": "Madira Bickel Mound State Historic Site",
+   "area": "US-VT",
+   "ref": "US-0329",
+   "name": "Silvio O Conte National Wildlife Refuge",
    "old_grade": "approximate",
    "new_grade": "official",
    "new_pieces": [
     [
-     "191800",
-     "Madira Bickel Mound State Archaeological Site",
-     10,
+     "4344",
+     "Silvio O. Conte National Fish And Wildlife Refuge",
+     27090,
      "words"
     ],
     [
-     "sgfla81",
-     "Madira Bickel Mound State Archaeological Site",
-     9,
+     "5301",
+     "Silvio O. Conte National Fish And Wildlife Refuge",
+     27090,
+     "words"
+    ],
+    [
+     "5300",
+     "Silvio O. Conte National Fish And Wildlife Refuge",
+     7893,
      "reviewed"
     ]
    ],
    "old_pieces": [
     [
-     "191800",
-     "Madira Bickel Mound State Archaeological Site",
-     10,
+     "4344",
+     "Silvio O. Conte National Fish And Wildlife Refuge",
+     27090,
+     "words"
+    ],
+    [
+     "5301",
+     "Silvio O. Conte National Fish And Wildlife Refuge",
+     27090,
      "words"
     ]
    ],
    "held_now": [],
    "by_answer": true,
-   "pota": "https://pota.app/#/park/US-3635"
+   "pota": "https://pota.app/#/park/US-0329"
+  },
+  {
+   "area": "US-AL",
+   "ref": "US-0042",
+   "name": "Fort Gaines National Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "166719",
+     "Historic Fort Gaines",
+     17,
+     "reviewed"
+    ],
+    [
+     "sgaki379681",
+     "Fort Gaines",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0042"
+  },
+  {
+   "area": "US-PA",
+   "ref": "US-0621",
+   "name": "Todd Sanctuary State Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "249819",
+     "Todd Nature Reserve",
+     182,
+     "reviewed"
+    ],
+    [
+     "74544",
+     "Todd Nature Reserve",
+     180,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0621"
+  },
+  {
+   "area": "US-CT",
+   "ref": "US-0329",
+   "name": "Silvio O Conte National Wildlife Refuge",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "5300",
+     "Silvio O. Conte National Fish And Wildlife Refuge",
+     7893,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0329"
+  },
+  {
+   "area": "US-HI",
+   "ref": "US-10921",
+   "name": "Hawaii Capital National Historic District",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgaki395518",
+     "Hawaii Capital Historic District",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-10921"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-10431",
+   "name": "Cabinet Gorge State Fish Hatchery",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "199838",
+     "Cabinet Gorge Hatchery",
+     29,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-10431"
+  },
+  {
+   "area": "US-KS",
+   "ref": "US-9190",
+   "name": "Marais des Cygnes Massacre State Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgaki400284",
+     "Marais des Cygnes Massacre Site",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-9190"
+  },
+  {
+   "area": "US-MA",
+   "ref": "US-0329",
+   "name": "Silvio O Conte National Wildlife Refuge",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "5300",
+     "Silvio O. Conte National Fish And Wildlife Refuge",
+     7893,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0329"
+  },
+  {
+   "area": "US-MD",
+   "ref": "US-7768",
+   "name": "Frederick City Watershed Cooperative Wildlife Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "16458",
+     "Frederick Municipal Forest",
+     5186,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-7768"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12786",
+   "name": "Au Sable National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr88",
+     "Au Sable, Michigan National Wild and Scenic River",
+     7011,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-12786"
+  },
+  {
+   "area": "US-NC",
+   "ref": "US-3863",
+   "name": "Palmetto-Peartree State Preserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "214405",
+     "The Conservation Fund - Palmetto-Peartree Preserve",
+     11051,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3863"
+  },
+  {
+   "area": "US-ND",
+   "ref": "US-8532",
+   "name": "Chateau De Mores State Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgaki379041",
+     "Chateau de Mores",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8532"
+  },
+  {
+   "area": "US-NE",
+   "ref": "US-3375",
+   "name": "Stolley National Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "103429",
+     "Stolley Park",
+     39,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3375"
+  },
+  {
+   "area": "US-NJ",
+   "ref": "US-6462",
+   "name": "Garret Mountain Reservation State Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "225338",
+     "Garret Mountain Reservation",
+     185,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-6462"
+  },
+  {
+   "area": "US-NM",
+   "ref": "US-11823",
+   "name": "Coronado Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "80742",
+     "Coronado Historic Site",
+     104,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-11823"
+  },
+  {
+   "area": "US-MN",
+   "ref": "US-0356",
+   "name": "Big Stone Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "fws998",
+     "Gislason Lake WPA WPA, Lincoln County Waterfowl Production Area",
+     409,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1012",
+     "Arends WPA WPA, Lyon County Waterfowl Production Area",
+     319,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1019",
+     "Peterson WPA WPA, Lyon County Waterfowl Production Area",
+     239,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1020",
+     "Redwood River WPA WPA, Lyon County Waterfowl Production Area",
+     225,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1002",
+     "Kragh Farms WPA WPA, Lincoln County Waterfowl Production Area",
+     224,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1007",
+     "Rochel WPA WPA, Lincoln County Waterfowl Production Area",
+     164,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1022",
+     "Yellow Medicine River WPA WPA, Lyon County Waterfowl Production Area",
+     163,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1001",
+     "Kontz WPA WPA, Lincoln County Waterfowl Production Area",
+     162,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fws998",
+     "Gislason Lake WPA WPA, Lincoln County Waterfowl Production Area",
+     409,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1012",
+     "Arends WPA WPA, Lyon County Waterfowl Production Area",
+     319,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1019",
+     "Peterson WPA WPA, Lyon County Waterfowl Production Area",
+     239,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1020",
+     "Redwood River WPA WPA, Lyon County Waterfowl Production Area",
+     225,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1002",
+     "Kragh Farms WPA WPA, Lincoln County Waterfowl Production Area",
+     224,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1007",
+     "Rochel WPA WPA, Lincoln County Waterfowl Production Area",
+     164,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1022",
+     "Yellow Medicine River WPA WPA, Lyon County Waterfowl Production Area",
+     163,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws1001",
+     "Kontz WPA WPA, Lincoln County Waterfowl Production Area",
+     162,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0356"
+  },
+  {
+   "area": "US-ND",
+   "ref": "US-0421",
+   "name": "Arrowwood Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "fws810",
+     "Wallace WPA, Eddy County Waterfowl Production Area",
+     913,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws800",
+     "Haven WPA, Eddy County Waterfowl Production Area",
+     653,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws808",
+     "Sheyenne WPA, Eddy County Waterfowl Production Area",
+     514,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws812",
+     "Ziebart WPA, Eddy County Waterfowl Production Area",
+     314,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws815",
+     "Barlow WPA, Foster County Waterfowl Production Area",
+     282,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws811",
+     "Wood WPA, Eddy County Waterfowl Production Area",
+     240,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws821",
+     "Okert WPA, Foster County Waterfowl Production Area",
+     228,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws801",
+     "Hegland WPA, Eddy County Waterfowl Production Area",
+     191,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fws810",
+     "Wallace WPA, Eddy County Waterfowl Production Area",
+     913,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws800",
+     "Haven WPA, Eddy County Waterfowl Production Area",
+     653,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws808",
+     "Sheyenne WPA, Eddy County Waterfowl Production Area",
+     514,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws812",
+     "Ziebart WPA, Eddy County Waterfowl Production Area",
+     314,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws815",
+     "Barlow WPA, Foster County Waterfowl Production Area",
+     282,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws811",
+     "Wood WPA, Eddy County Waterfowl Production Area",
+     240,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws821",
+     "Okert WPA, Foster County Waterfowl Production Area",
+     228,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws801",
+     "Hegland WPA, Eddy County Waterfowl Production Area",
+     191,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0421"
+  },
+  {
+   "area": "US-SD",
+   "ref": "US-0525",
+   "name": "Huron Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "fws2330",
+     "Harter WPA, Hyde County Waterfowl Production Area",
+     1417,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2329",
+     "Cowan WPA, Hyde County Waterfowl Production Area",
+     967,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2337",
+     "Jackson WPA, Jerauld County Waterfowl Production Area",
+     958,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2295",
+     "Mills WPA, Buffalo County Waterfowl Production Area",
+     919,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2268",
+     "Bauer WPA, Beadle County Waterfowl Production Area",
+     795,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2289",
+     "Weaver WPA, Beadle County Waterfowl Production Area",
+     646,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2317",
+     "Spring Lake WPA, Hand County Waterfowl Production Area",
+     620,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2273",
+     "Ingle WPA, Beadle County Waterfowl Production Area",
+     618,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fws2330",
+     "Harter WPA, Hyde County Waterfowl Production Area",
+     1417,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2329",
+     "Cowan WPA, Hyde County Waterfowl Production Area",
+     967,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2337",
+     "Jackson WPA, Jerauld County Waterfowl Production Area",
+     958,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2295",
+     "Mills WPA, Buffalo County Waterfowl Production Area",
+     919,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2268",
+     "Bauer WPA, Beadle County Waterfowl Production Area",
+     795,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2289",
+     "Weaver WPA, Beadle County Waterfowl Production Area",
+     646,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2317",
+     "Spring Lake WPA, Hand County Waterfowl Production Area",
+     620,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws2273",
+     "Ingle WPA, Beadle County Waterfowl Production Area",
+     618,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0525"
   },
   {
    "area": "US-WI",
-   "ref": "US-8667",
-   "name": "Haskell Noyes Memorial Woods State Natural Area",
-   "old_grade": "approximate",
-   "new_grade": "official",
+   "ref": "US-0602",
+   "name": "Leopold Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
    "new_pieces": [
     [
-     "sgwic6755",
-     "Haskell Noyes Woods",
-     62,
-     "words"
+     "fws3093",
+     "Uihlein WPA WPA, Winnebago County Waterfowl Production Area Of Wi",
+     2436,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
     ],
     [
-     "sgwif23571",
-     "Haskell Noyes Woods",
-     62,
-     "reviewed"
+     "fws3019",
+     "Baraboo River WPA WPA, Columbia County Waterfowl Production Area",
+     950,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3028",
+     "Schoeneberg Marsh WPA WPA, Columbia County Waterfowl Production Area",
+     735,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3034",
+     "Harvey's Marsh WPA WPA, Dane County Waterfowl Production Area",
+     585,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3049",
+     "Trenton WPA WPA, Dodge County Waterfowl Production Area",
+     514,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3053",
+     "Oakfield WPA WPA, Fond Du Lac County Waterfowl Production Area",
+     430,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3021",
+     "Becker WPA WPA, Columbia County Waterfowl Production Area",
+     357,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3025",
+     "Manthey WPA WPA, Columbia County Waterfowl Production Area",
+     352,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
     ]
    ],
    "old_pieces": [
     [
-     "sgwic6755",
-     "Haskell Noyes Woods",
-     62,
-     "words"
+     "fws3093",
+     "Uihlein WPA WPA, Winnebago County Waterfowl Production Area Of Wi",
+     2436,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3019",
+     "Baraboo River WPA WPA, Columbia County Waterfowl Production Area",
+     950,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3028",
+     "Schoeneberg Marsh WPA WPA, Columbia County Waterfowl Production Area",
+     735,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3034",
+     "Harvey's Marsh WPA WPA, Dane County Waterfowl Production Area",
+     585,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3049",
+     "Trenton WPA WPA, Dodge County Waterfowl Production Area",
+     514,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3053",
+     "Oakfield WPA WPA, Fond Du Lac County Waterfowl Production Area",
+     430,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3021",
+     "Becker WPA WPA, Columbia County Waterfowl Production Area",
+     357,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3025",
+     "Manthey WPA WPA, Columbia County Waterfowl Production Area",
+     352,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
     ]
    ],
    "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8667"
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0602"
   },
   {
-   "area": "US-TN",
-   "ref": "US-0642",
-   "name": "Natchez Trace Parkway National Parkway",
+   "area": "US-CA",
+   "ref": "US-0197",
+   "name": "Kern National Wild and Scenic River",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "trl0642",
-     "Natchez Trace Parkway National Parkway",
-     0,
-     "official trail line (National Park Service via USGS National"
+     "fwsr208",
+     "Kern, California National Wild and Scenic River",
+     20356,
+     "reviewed"
+    ],
+    [
+     "fwsr41",
+     "Kern, California National Wild and Scenic River",
+     3447,
+     "reviewed"
+    ],
+    [
+     "fwsr118",
+     "Kern, California National Wild and Scenic River",
+     1660,
+     "reviewed"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-0642"
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0197"
   },
   {
-   "area": "US-UT",
-   "ref": "US-11176",
-   "name": "Rojo Mountain Bike Trail BLM Recreation Management Area",
+   "area": "US-GA",
+   "ref": "US-9758",
+   "name": "Chattooga National Wild and Scenic River",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "trl11176",
-     "Rojo Mountain Bike Trail BLM Recreation Management Area",
-     0,
-     "official trail line (Bureau of Land Management via USGS Nati"
+     "fwsr180",
+     "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+     10971,
+     "reviewed"
+    ],
+    [
+     "fwsr6",
+     "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+     4651,
+     "reviewed"
+    ],
+    [
+     "fwsr95",
+     "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+     906,
+     "reviewed"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-11176"
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9758"
   },
   {
-   "area": "US-NV",
-   "ref": "US-13178",
-   "name": "Mt. Irish Archaeological Site Archeological Reserve",
+   "area": "US-OR",
+   "ref": "US-12837",
+   "name": "East Shore BLM Recreation Management Area",
    "old_grade": "pin",
    "new_grade": "approximate",
    "new_pieces": [
     [
-     "sgnvh1238",
-     "Mount Irish",
-     15075,
-     "reviewed-approx"
+     "rma11252",
+     "East Shore Campground",
+     2,
+     "words"
+    ],
+    [
+     "rst11252",
+     "East Shore Campground",
+     2,
+     "words"
+    ],
+    [
+     "sgakg11252",
+     "East Shore Campground",
+     2,
+     "words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12837"
+  },
+  {
+   "area": "US-SC",
+   "ref": "US-9758",
+   "name": "Chattooga National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr180",
+     "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+     10971,
+     "reviewed"
+    ],
+    [
+     "fwsr6",
+     "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+     4651,
+     "reviewed"
+    ],
+    [
+     "fwsr95",
+     "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+     906,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9758"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-0350",
+   "name": "Michigan Wetland Management District",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "fws3864",
+     "Edger WPA WPA, Barry County Waterfowl Production Area",
+     158,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3872",
+     "Malan WPA WPA, Jackson County Waterfowl Production Area Of Mi",
+     138,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3879",
+     "Kinney WPA WPA, Van Buren County Waterfowl Production Area",
+     108,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
     ]
    ],
    "old_pieces": [
     [
-     "wbl4778",
-     "Mount Irish",
-     0,
-     "reviewed-approx"
+     "fws3864",
+     "Edger WPA WPA, Barry County Waterfowl Production Area",
+     158,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3872",
+     "Malan WPA WPA, Jackson County Waterfowl Production Area Of Mi",
+     138,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
+    ],
+    [
+     "fws3879",
+     "Kinney WPA WPA, Van Buren County Waterfowl Production Area",
+     108,
+     "reviewed: the district = FWS fee (owned) tracts only, easeme"
     ]
    ],
    "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-13178"
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0350"
   },
   {
-   "area": "US-FL",
-   "ref": "US-6327",
-   "name": "Tenoroc Wildlife Area",
+   "area": "US-IN",
+   "ref": "US-10237",
+   "name": "Mongoquinong State Nature Preserve",
+   "old_grade": "pin",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "200897",
+     "Mongoquinong Nature Preserve Sawmill Fen",
+     38,
+     "reviewed-approx"
+    ],
+    [
+     "200896",
+     "Mongoquinong Nature Preserve Buckbean Fen",
+     37,
+     "reviewed-approx"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10237"
+  },
+  {
+   "area": "US-MT",
+   "ref": "US-4475",
+   "name": "Caribou-Targhee National Forest",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "2809",
+     "Caribou-Targhee National Forest (Targhee National Forest)",
+     294438,
+     "reviewed"
+    ],
+    [
+     "2781",
+     "Caribou-Targhee National Forest (Caribou National Forest)",
+     7838,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4475"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13134",
+   "name": "Rock Creek BLM Herd Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "hma113",
+     "Rock Creek",
+     122085,
+     "name"
+    ],
+    [
+     "sgnvi407",
+     "Rock Creek",
+     121434,
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13134"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-4475",
+   "name": "Caribou-Targhee National Forest",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "2809",
+     "Caribou-Targhee National Forest (Targhee National Forest)",
+     294438,
+     "reviewed"
+    ],
+    [
+     "2781",
+     "Caribou-Targhee National Forest (Caribou National Forest)",
+     7838,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4475"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-12830",
+   "name": "Old Ruby State Park State Heritage Area",
+   "old_grade": "pin",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "271501",
+     "Old Ruby",
+     7,
+     "words"
+    ],
+    [
+     "sgwaa128",
+     "Old Ruby",
+     7,
+     "words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12830"
+  },
+  {
+   "area": "US-PA",
+   "ref": "US-12235",
+   "name": "Clarion National Wild and Scenic River",
    "old_grade": "approximate",
    "new_grade": "official",
    "new_pieces": [
     [
-     "sgflf10761",
-     "Tenoroc State Reserve",
-     27,
-     "name"
+     "fwsr16",
+     "Clarion, Pennsylvania National Wild and Scenic River",
+     10878,
+     "reviewed"
     ],
     [
-     "sgflf8115",
-     "Tenoroc Fish Management Area",
-     13,
-     "words"
-    ],
-    [
-     "sgflf5903",
-     "Tenoroc Fish Management Area",
-     0,
-     "words"
-    ],
-    [
-     "sgflf5998",
-     "Tenoroc Fish Management Area",
-     0,
-     "words"
-    ],
-    [
-     "sgflf5999",
-     "Tenoroc Fish Management Area",
-     0,
-     "words"
+     "fwsr98",
+     "Clarion, Pennsylvania National Wild and Scenic River",
+     5589,
+     "reviewed"
     ]
    ],
    "old_pieces": [
     [
-     "191721",
-     "Tenoroc Fish Management Area",
-     7528,
+     "fwsr16",
+     "Clarion, Pennsylvania National Wild and Scenic River",
+     10878,
+     "words"
+    ],
+    [
+     "fwsr98",
+     "Clarion, Pennsylvania National Wild and Scenic River",
+     5589,
      "words"
     ]
    ],
-   "held_now": [
-    "check (rule R-G8): bigger than the park's own record",
-    "check (rule R-G8): bigger than the park's own record"
-   ],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-6327"
-  },
-  {
-   "area": "US-AR",
-   "ref": "US-10426",
-   "name": "West-Northwest State Trail",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl10426",
-     "West-Northwest State Trail",
-     0,
-     "official trail line (Arkansas Department of Transportation ("
-    ]
-   ],
-   "old_pieces": [],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-10426"
-  },
-  {
-   "area": "US-CO",
-   "ref": "US-5749",
-   "name": "Kokopelli's Trail National Recreation Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl5749",
-     "Kokopelli's Trail National Recreation Area",
-     0,
-     "official trail line (Bureau of Land Management and Utah stat"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-5749"
-  },
-  {
-   "area": "US-ID",
-   "ref": "US-3424",
-   "name": "Ice Age Floods National Geologic Trail",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl3424",
-     "Ice Age Floods National Geologic Trail",
-     0,
-     "official trail line (NPS official (carto iafl_tour_routes, R"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-3424"
-  },
-  {
-   "area": "US-MD",
-   "ref": "US-7973",
-   "name": "Baltimore-Washington National Parkway",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl7973",
-     "Baltimore-Washington National Parkway",
-     0,
-     "official trail line (National Park Service via USGS National"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-7973"
-  },
-  {
-   "area": "US-MT",
-   "ref": "US-3424",
-   "name": "Ice Age Floods National Geologic Trail",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl3424",
-     "Ice Age Floods National Geologic Trail",
-     0,
-     "official trail line (NPS official (carto iafl_tour_routes, R"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-3424"
-  },
-  {
-   "area": "US-NC",
-   "ref": "US-10398",
-   "name": "Chatuge Dam Trail Recreation Park",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl10398",
-     "Chatuge Dam Trail Recreation Park",
-     0,
-     "official trail line (Tennessee Valley Authority (federal age"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-10398"
-  },
-  {
-   "area": "US-NH",
-   "ref": "US-13626",
-   "name": "Sugar River State Trail",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl13626",
-     "Sugar River State Trail",
-     0,
-     "official trail line (New Hampshire GRANIT (state agency GIS "
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-13626"
-  },
-  {
-   "area": "US-NM",
-   "ref": "US-11815",
-   "name": "La Cueva Non-Motorized Trail System Recreation Site",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl11815",
-     "La Cueva Non-Motorized Trail System Recreation Site",
-     0,
-     "official trail line (Bureau of Land Management via USGS Nati"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11815"
-  },
-  {
-   "area": "US-NV",
-   "ref": "US-13206",
-   "name": "Barnes Canyon Trailhead BLM Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl13206",
-     "Barnes Canyon Trailhead BLM Recreation Management Area",
-     0,
-     "official trail line (Bureau of Land Management via USGS Nati"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-13206"
-  },
-  {
-   "area": "US-OR",
-   "ref": "US-12959",
-   "name": "Quartzville BC Byway Kiosk BLM Special Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl12959",
-     "Quartzville BC Byway Kiosk BLM Special Recreation Management Area",
-     0,
-     "official trail line (Bureau of Land Management (Oregon/Washi"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-12959"
-  },
-  {
-   "area": "US-SC",
-   "ref": "US-9203",
-   "name": "Palmetto State Trail",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl9203",
-     "Palmetto State Trail",
-     0,
-     "official trail line (U.S. Forest Service and U.S. Fish and W"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-9203"
-  },
-  {
-   "area": "US-UT",
-   "ref": "US-10964",
-   "name": "Cathedral Valley Scenic Backway BLM Special Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl10964",
-     "Cathedral Valley Scenic Backway BLM Special Recreation Management Area",
-     0,
-     "official trail line (BLM GTLF public roads (official); named"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-10964"
-  },
-  {
-   "area": "US-WA",
-   "ref": "US-3424",
-   "name": "Ice Age Floods National Geologic Trail",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl3424",
-     "Ice Age Floods National Geologic Trail",
-     0,
-     "official trail line (NPS official (carto iafl_tour_routes, R"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-3424"
-  },
-  {
-   "area": "US-WY",
-   "ref": "US-10877",
-   "name": "Mallo Trail BLM Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl10877",
-     "Mallo Trail",
-     0,
-     "official trail line (USFS Black Hills NF trails (official) ("
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-10877"
-  },
-  {
-   "area": "US-AR",
-   "ref": "US-10508",
-   "name": "Ozark Highlands Trail (OHT) National Historic Trail",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl10508",
-     "Ozark Highlands Trail (OHT) National Historic Trail",
-     0,
-     "official trail line (U.S. Forest Service National Forest Sys"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-10508"
-  },
-  {
-   "area": "US-AR",
-   "ref": "US-13622",
-   "name": "The Razorback Regional Greenway National Recreation Trail",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl13622",
-     "The Razorback Regional Greenway National Recreation Trail",
-     0,
-     "official trail line (City of Rogers and City of Fayetteville"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-13622"
-  },
-  {
-   "area": "US-AR",
-   "ref": "US-13623",
-   "name": "Alum Cove Natural Bridge Trail National Recreation Trail",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl13623",
-     "Alum Cove Natural Bridge Trail National Recreation Trail",
-     0,
-     "official trail line (U.S. Forest Service National Forest Sys"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-13623"
-  },
-  {
-   "area": "US-AR",
-   "ref": "US-9681",
-   "name": "Camden Expedition Scenic Highway State Trail",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl9681",
-     "Camden Expedition Scenic Highway State Trail",
-     0,
-     "official trail line (Arkansas Department of Transportation ("
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-9681"
-  },
-  {
-   "area": "US-NV",
-   "ref": "US-13214",
-   "name": "Logandale Trails BLM Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl13214",
-     "Logandale Trails BLM Recreation Management Area",
-     0,
-     "official trail line (Bureau of Land Management via USGS Nati"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-13214"
-  },
-  {
-   "area": "US-OR",
-   "ref": "US-3424",
-   "name": "Ice Age Floods National Geologic Trail",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl3424",
-     "Ice Age Floods National Geologic Trail",
-     0,
-     "official trail line (NPS official (carto iafl_tour_routes, R"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-3424"
-  },
-  {
-   "area": "US-UT",
-   "ref": "US-11004",
-   "name": "Hurricane Cliffs Trail System BLM Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl11004",
-     "Hurricane Cliffs Trail System BLM Recreation Management Area",
-     0,
-     "official trail line (Bureau of Land Management via USGS Nati"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11004"
-  },
-  {
-   "area": "US-UT",
-   "ref": "US-11661",
-   "name": "Bar M Trail System BLM Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl11661",
-     "Bar M Trail System BLM Recreation Management Area",
-     0,
-     "official trail line (BLM official recreation trails (gis.blm"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11661"
-  },
-  {
-   "area": "US-UT",
-   "ref": "US-11730",
-   "name": "Paiute  ATV Trail BLM Special Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl11730",
-     "Paiute  ATV Trail BLM Special Recreation Management Area",
-     0,
-     "official trail line (U.S. Forest Service National Forest Sys"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11730"
-  },
-  {
-   "area": "US-UT",
-   "ref": "US-11750",
-   "name": "Cottonwood Canyons Scenic Backway BLM Recreation Management Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl11750",
-     "Cottonwood Canyons Scenic Backway BLM Recreation Management Area",
-     0,
-     "official trail line (BLM GTLF public roads (official); named"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11750"
+   "pota": "https://pota.app/#/park/US-12235"
   }
  ]
 }
