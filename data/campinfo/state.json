@@ -1,11 +1,5 @@
 {
  "areas": {
-  "CA-QC": {
-   "camps": 0,
-   "note": "no campground rows on file (Canada: no Parks Canada / provincial campground list in KPC-Data yet)",
-   "status": "done",
-   "updated": "2026-11-10"
-  },
   "US-AK": {
    "camps": 378,
    "checked": 368,
@@ -185,14 +179,14 @@
    "checked": 24,
    "counts": {
     "camps": 24,
-    "needs_browser": 2,
+    "needs_browser": 0,
     "needs_key": 0,
     "no_page": 0,
     "not_official": 0,
     "ok": 2,
     "other": 0,
-    "resting": 20,
-    "robots": 0,
+    "resting": 0,
+    "robots": 22,
     "with_booking": 24,
     "with_elevation": 0,
     "with_facts": 2,
@@ -200,7 +194,7 @@
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-03"
+   "updated": "2026-11-10"
   },
   "US-FL": {
    "camps": 302,
@@ -354,7 +348,7 @@
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-03"
+   "updated": "2026-11-10"
   },
   "US-KS": {
    "camps": 117,
@@ -1129,14 +1123,14 @@
   "US-CA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-CO": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-CT": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
-  "US-DE": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
+  "US-DE": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-FL": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-GA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-HI": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-IA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-ID": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-IL": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
-  "US-IN": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
+  "US-IN": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-KS": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-KY": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-LA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1241,10 +1235,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
-    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+    "src": null,
+    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-11-03"
+   "read": "2026-11-10"
   },
   "US-FL": {
    "cell": {
@@ -1304,10 +1298,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
-    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+    "src": null,
+    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
    },
-   "read": "2026-11-03"
+   "read": "2026-11-10"
   },
   "US-KS": {
    "cell": {
@@ -2581,29 +2575,41 @@
  },
  "last": {
   "areas": [
-   "CA-QC"
+   "US-IN"
   ],
   "fcc_token": true,
   "manners": {
    "arcgis_exempt": 0,
+   "dropped_queued": 95,
    "errors": 0,
-   "for_person_urls": [],
-   "requests": 0,
+   "for_person_urls": [
+    [
+     "https://epqs.nationalmap.gov/robots.txt",
+     "robots.txt answered 403: nothing fetched from epqs.nationalmap.gov this run"
+    ],
+    [
+     "https://broadbandmap.fcc.gov/robots.txt",
+     "robots.txt answered 403: nothing fetched from broadbandmap.fcc.gov this run"
+    ]
+   ],
+   "requests": 87,
    "rested": 0,
-   "robots": 0,
+   "robots": 2,
+   "robots_unreadable": 2,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 0,
+   "browser": 7,
+   "camps": 96,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 0,
-   "needs_key": 0,
-   "no_page": 0,
-   "not_official": 0,
-   "ok": 0,
-   "pages_read": 0,
+   "needs_browser": 6,
+   "needs_key": 14,
+   "no_page": 4,
+   "not_official": 8,
+   "ok": 69,
+   "pages_read": 69,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
