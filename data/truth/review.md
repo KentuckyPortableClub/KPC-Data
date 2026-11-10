@@ -51,6 +51,7 @@ Updated 2026-11-10. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-OR | 440 | 384 | 51 | **30** | 46 | 229 | 26 | 28 | 0 | 19 |
 | US-WA | 536 | 492 | 31 | **157** | 108 | 166 | 29 | 20 | 0 | 17 |
 | US-AK | 179 | 136 | 18 | **6** | 3 | 99 | 10 | 14 | 0 | 6 |
+| US-HI | 102 | 88 | 14 | **7** | 14 | 50 | 3 | 5 | 0 | 4 |
 
 ## US-KY
 
@@ -3506,6 +3507,46 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 - US-4592 Haines State Forest · transfer: “sting in pre-commercial thinning of previously harvested lands that were logged before the land was conveyed to the State. This investment will reduce the amount of time required for timber stands to ” · owner now: State · [forestry.alaska.gov](http://forestry.alaska.gov/stateforests.htm#haines)
 - US-4593 Southeast State Forest · transfer: “sting in pre-commercial thinning of previously harvested lands that were logged before the land was conveyed to the State. This investment will reduce the amount of time required for timber stands to ” · owner now: State · [forestry.alaska.gov](http://forestry.alaska.gov/stateforests.htm#sesf)
 - US-4594 Tanana Valley State Forest · transfer: “sting in pre-commercial thinning of previously harvested lands that were logged before the land was conveyed to the State. This investment will reduce the amount of time required for timber stands to ” · owner now: State · [forestry.alaska.gov](http://forestry.alaska.gov/stateforests.htm#tanana)
+
+## US-HI
+
+**Agree:** 14 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 14 agree (second agency).
+
+**Size more than 15% off (our outline vs the agency):**
+
+- US-6415 Sand Island State Recreation Area: ours 269 ac vs agency 14.0 acres (= 14 ac; 1821% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/parks/oahu/sand-island-state-recreation-area/) · “ing and board surfing. It fronts a small sand beach and has good views of Honolulu Harbor and ocean sunsets. (14.0 acres) Project Description UPDATE 12/18/25: A”
+- US-6403 Hapuna Beach State Recreation Area: ours 435 ac vs agency 61.8 acres (= 61 ac; 604% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/parks/hawaii/hapuna-beach-state-recreation-area/) · “ut of the water and away from the shoreline! Lifeguard services. Hiking opportunity along the coastal trail. (61.8 acres) Lodging Information Hāpuna Beach State”
+- US-0117 Hakalau Forest National Wildlife Refuge: ours 51,263 ac vs agency 12,000 acres (= 12,000 ac; 327% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/hakalau_forest/) · “nal Wildlife Refuge has worked alongside dedicated partners and an army of community volunteers to transform ~12,000 acres of former pasture into thriving nativ”
+- US-6411 Polipoli State Recreation Area: ours 1 ac vs agency 10.0 acres (= 10 ac; 90% off) · cause: agency bigger: our outline may miss a tract · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/parks/maui/polipoli-spring-state-recreation-area/) · “Nights are generally cold; winter nights frequently have below freezing temperatures. No campground showers. (10.0 acres). PLEASE NOTE: The Polipoli Cabin canno”
+- US-6425 Diamond Head State Preserve: ours 284 ac vs agency 475 acres (= 475 ac; 40% off) · cause: agency bigger: our outline may miss a tract · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/parks/oahu/diamond-head-state-monument/) · “oric hiking trail, stunning coastal views, and military history. Diamond Head State Monument encompasses over 475 acres, including the interior and outer slopes”
+- US-6402 Lava Tree State Park: ours 14 ac vs agency 17.1 acres (= 17 ac; 18% off) · cause: agency bigger: our outline may miss a tract · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/parks/hawaii/lava-tree-state-monument/) · “at swept through this forested area and left behind lava molds of the tree trunks. Picnicking opportunities. (17.1 acres) Activities Facilities Hazards Prohibit”
+- US-2217 Makena State Park: ours 193 ac vs agency 164.4 acres (= 164 ac; 17% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/parks/maui/makena-state-park/) · “seas, bodysurfing, board surfing, shore fishing, and beach- related activities. No drinking water available. (164.4 acres) Parking Info Makena State Park is now”
+
+**Unsure (no clean total found; the nearest number is only a guess):**
+
+- US-0123 Huleia National Wildlife Refuge: ours 202 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 241 acres, no total words near it) · [www.fws.gov](https://www.fws.gov/refuge/huleia/about-us)
+- US-10908 Pupukea Forest Reserve: ours 3,303 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-10924 Kuaokala Game Reserve: ours 1,828 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 500 acres, no total words near it) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/recreation/hunting/gma/kuaokala/)
+- US-12062 Old Kona Airport State Recreation Area: ours 110 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-2213 Kaumahina Wayside State Park: ours 5 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 7.8 acres, no total words near it) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/parks/maui/kaumahina-state-wayside/)
+- US-2221 Puaa Kaa Wayside State Park: ours 2 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 5.0 acres, no total words near it) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/parks/maui/puaa-kaa-state-wayside/)
+- US-2225 Wailuku River State Park: ours 26 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 16.3 acres, no total words near it) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/parks/hawaii/wailuku-river-state-park/)
+- US-2227 Wailua Valley Wayside State Park: ours 1 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 1.5 acres, a tiny number without size wording) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/parks/maui/wailua-valley-state-wayside/)
+- US-6404 Kalopa State Recreation Area: ours 44 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 100.0 acres, no total words near it) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/parks/hawaii/kalopa-state-recreation-area/)
+- US-6405 Kealakekua Bay State Historical Park: ours 417 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 4.0 acres, a tiny number without size wording) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/parks/hawaii/kealakekua-bay-state-historical-park/)
+- US-6406 Mackenzie State Recreation Area: ours 11 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 13.1 acres, no total words near it) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/parks/hawaii/mackenzie-state-recreation-area/)
+- US-6429 Pu'u O Mahuka Heiau State Historic Site: ours 3 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 4 acre, a tiny number without size wording) · [dlnr.hawaii.gov](https://dlnr.hawaii.gov/dsp/parks/oahu/puu-o-mahuka-heiau-state-historic-site/)
+- US-7690 Nounou Forest Reserve: ours 485 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-7691 Kalepa Forest Reserve: ours 664 ac · cause: no total-looking sentence: numbers found were parts or other units
+
+**Handover / closure hints (a person decides; nothing applied):**
+
+- US-0037 Hawai'i Volcanoes National Park · managed by: “lcanism, rich Hawaiian traditions, and a fascinating history of ranching. Park Store The park store is operated by Hawaiʻi Pacific Parks Association, which supports park programs and projects Last upd” · owner now: Hawaiʻi Pacific Parks Association · [www.nps.gov](https://www.nps.gov/havo/index.htm)
+- US-0037 Hawai'i Volcanoes National Park · managed by: “c data Management Park planning, laws and policies, management documents. Park Store The park store is operated by Hawaiʻi Pacific Parks Association, which supports park programs and projects Last upd” · owner now: Hawaiʻi Pacific Parks Association · [www.nps.gov](https://www.nps.gov/havo/learn/index.htm)
+- US-0118 Hanalei National Wildlife Refuge · managed by: “i National Wildlife Refuge. Kauaʻi has three wildlife refuges, Hanalei, Hulēʻia, and Kīlauea Point, managed by the U.S. Fish & Wildlife Service. Hanalei National Wildlife Refuge, established in 1972, ” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/hanalei/about-us)
+- US-0124 James Campbell National Wildlife Refuge · managed by: “ut Us View Our Tours What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of th” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/james_campbell/)
+- US-0126 Kealia Pond National Wildlife Refuge · managed by: “Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/kealia_pond/)
+- US-0129 Pearl Harbor National Wildlife Refuge · managed by: “Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/pearl_harbor/)
 
 ## Kentucky test gate
 

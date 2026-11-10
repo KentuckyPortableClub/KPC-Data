@@ -220,6 +220,26 @@
    "status": "done",
    "updated": "2026-11-08"
   },
+  "US-HI": {
+   "checked": 102,
+   "counts": {
+    "agree": 14,
+    "handover_hints": 5,
+    "no_page": 0,
+    "no_size": 50,
+    "off": 7,
+    "ours_unknown": 3,
+    "parks": 102,
+    "retired": 0,
+    "unsure": 14,
+    "weak": 4,
+    "with_outline": 88
+   },
+   "left": 0,
+   "parks": 102,
+   "status": "done",
+   "updated": "2026-11-10"
+  },
   "US-IA": {
    "checked": 181,
    "counts": {
@@ -943,44 +963,40 @@
  },
  "hosts": {
   "cpw.state.co.us": 1794312565.459541,
-  "dep.nj.gov": 1794275828.9220152,
   "idfg.idaho.gov": 1794323592.2610066,
   "ohv.parks.ca.gov": 1794347944.1865897,
   "outdoornebraska.gov": 1794310616.347082,
-  "riparks.com": 1794280201.1004815,
   "www.arcgis.com": 1794286229.087196,
   "www.fhwa.dot.gov": 1794323337.1319654,
-  "www.nevadawilderness.org": 1794330712.037567,
-  "www.riparks.com": 1794280152.9954374
+  "www.nevadawilderness.org": 1794330712.037567
  },
  "last": {
   "areas": [
-   "US-AK"
+   "US-HI"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 10,
-   "dropped_queued": 76,
+   "browser": 3,
    "errors": 0,
    "for_person_urls": [],
-   "requests": 182,
+   "requests": 191,
    "rested": 0,
    "robots": 0,
    "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 14,
-   "no_size": 99,
-   "ours_unknown": 10,
-   "pages_read": 146,
-   "parks": 179,
+   "handover_hints": 5,
+   "no_size": 50,
+   "ours_unknown": 3,
+   "pages_read": 154,
+   "parks": 102,
    "retired": 0,
-   "size_agree": 18,
-   "size_off": 6,
-   "size_unsure": 3,
+   "size_agree": 14,
+   "size_off": 7,
+   "size_unsure": 14,
    "skipped_fresh": 0,
-   "with_outline": 136
+   "with_outline": 88
   },
   "when": "2026-11-10"
  },

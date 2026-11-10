@@ -1,0 +1,5961 @@
+{
+ "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
+ "area": "US-HI",
+ "counts": {
+  "agree": 14,
+  "handover_hints": 5,
+  "no_page": 0,
+  "no_size": 50,
+  "off": 7,
+  "ours_unknown": 3,
+  "parks": 102,
+  "retired": 0,
+  "unsure": 14,
+  "weak": 4,
+  "with_outline": 88
+ },
+ "parks": {
+  "US-0036": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Haleakala National Park",
+   "official": null,
+   "ours": {
+    "acres": 33915,
+    "dissolved": {
+     "after": 33915,
+     "before": 67727,
+     "copies": 1,
+     "parts": 0,
+     "records": 4,
+     "tracts": 3
+    },
+    "manager": "",
+    "note": "4 joined records = 3 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 67727 -> 33915 acres",
+    "pieces": [
+     [
+      "sghib78",
+      "HALEAKALA NATIONAL PARK",
+      33892,
+      "reviewed"
+     ],
+     [
+      "sghib189",
+      "HALEAKALA NATIONAL PARK",
+      17,
+      "name"
+     ],
+     [
+      "sghib190",
+      "HALEAKALA NATIONAL PARK",
+      6,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/hale/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/hale/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/hale/learn/historyculture",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/hale/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/hale/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "National Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0037": {
+   "checked": "2026-11-10",
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "lcanism, rich Hawaiian traditions, and a fascinating history of ranching. Park Store The park store is operated by Hawaiʻi Pacific Parks Association, which supports park programs and projects Last updated: December 8, 2025 Basic Information Learn A",
+     "owner_now": "Hawaiʻi Pacific Parks Association",
+     "src": "https://www.nps.gov/havo/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "c data Management Park planning, laws and policies, management documents. Park Store The park store is operated by Hawaiʻi Pacific Parks Association, which supports park programs and projects Last updated: March 20, 2024 Park footer Contact Info Ma",
+     "owner_now": "Hawaiʻi Pacific Parks Association",
+     "src": "https://www.nps.gov/havo/learn/index.htm",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "n": "Hawai'i Volcanoes National Park",
+   "official": null,
+   "ours": {
+    "acres": 389611,
+    "dissolved": {
+     "after": 389611,
+     "before": 768335,
+     "copies": 1,
+     "parts": 0,
+     "records": 5,
+     "tracts": 4
+    },
+    "manager": "",
+    "note": "5 joined records = 4 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 768335 -> 389611 acres",
+    "pieces": [
+     [
+      "sghib328",
+      "HAWAII VOLCANOES NATIONAL PARK",
+      379701,
+      "name"
+     ],
+     [
+      "sghib134",
+      "HAWAII VOLCANOES NATIONAL PARK",
+      9706,
+      "name"
+     ],
+     [
+      "sghib339",
+      "HAWAII VOLCANOES NATIONAL PARK",
+      145,
+      "name"
+     ],
+     [
+      "sghib340",
+      "HAWAII VOLCANOES NATIONAL PARK",
+      59,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": "Hawaiʻi Pacific Parks Association",
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/havo/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/havo/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/havo/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/havo/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "National Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0043": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Kalaupapa National Historical Park",
+   "official": null,
+   "ours": {
+    "acres": 10698,
+    "manager": "",
+    "pieces": [
+     [
+      "sghib367",
+      "KALAUPAPA NATIONAL HISTORICAL PARK",
+      5672,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/kala/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/kala/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/kala/getinvolved/donate.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/kala/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/kala/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "National Historical Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0117": {
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Hakalau Forest National Wildlife Refuge",
+   "official": {
+    "acres": 12000.0,
+    "as": "12,000 acres",
+    "clean": false,
+    "line": "nal Wildlife Refuge has worked alongside dedicated partners and an army of community volunteers to transform ~12,000 acres of former pasture into thriving native forest. More than 600,000 plants have been planted since 1985; the ove",
+    "read": "2026-11-10",
+    "sent": "Since its inception, Hakalau Forest National Wildlife Refuge has worked alongside dedicated partners and an army of community volunteers to transform ~12,000 acres of former pasture into thriving native forest.",
+    "url": "https://www.fws.gov/refuge/hakalau_forest/",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 51263,
+    "dissolved": {
+     "after": 48741,
+     "before": 145433,
+     "copies": 1,
+     "key_union": 51263,
+     "parts": 3,
+     "records": 5,
+     "summed": 48741,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "5 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 3 fee tracts under a designation record folded; summed 145433 -> 48741 acres",
+    "pieces": [
+     [
+      4857,
+      "Hakalau Forest National Wildlife Refuge",
+      48741,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/hakalau_forest/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/hakalau/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/hakalau",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "pct": 327,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 32700.0,
+     "as": "32,700 acres",
+     "clean": false,
+     "line": "for some of the rarest native species in the Hawaiian archipelago. Established in 1985, the refuge spans over 32,700 acres of montane rainforest, providing critical habitat for endangered native birds, as well as numerous endemic pl",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/hakalau_forest/",
+     "why": "history"
+    },
+    {
+     "acres": 12000.0,
+     "as": "12,000 acres",
+     "clean": false,
+     "line": "nal Wildlife Refuge has worked alongside dedicated partners and an army of community volunteers to transform ~12,000 acres of former pasture into thriving native forest. More than 600,000 plants have been planted since 1985; the ove",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/hakalau_forest/",
+     "why": "total-looking"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "off"
+  },
+  "US-0118": {
+   "checked": "2026-11-10",
+   "handover": [
+    {
+     "date_hint": "1972",
+     "kind": "managed by",
+     "line": "i National Wildlife Refuge. Kauaʻi has three wildlife refuges, Hanalei, Hulēʻia, and Kīlauea Point, managed by the U.S. Fish & Wildlife Service. Hanalei National Wildlife Refuge, established in 1972, is the oldest and largest (917 acres) of the three wildlife refuges th",
+     "owner_now": "U.S",
+     "src": "https://www.fws.gov/refuge/hanalei/about-us",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "n": "Hanalei National Wildlife Refuge",
+   "official": {
+    "acres": 917.0,
+    "as": "917 acre",
+    "clean": false,
+    "line": "n stilt, Himantopus mexicanus ) and nēnē (Hawaiian goose, Branta sandvicensis, now listed as Threatened). The 917-acre refuge was purchased by the U.S. Fish and Wildlife Service from the Eagle County Development Corporation with",
+    "read": "2026-11-10",
+    "sent": "The 917-acre refuge was purchased by the U.S.",
+    "url": "https://www.fws.gov/refuge/hanalei/",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
+   "ours": {
+    "acres": 784,
+    "dissolved": {
+     "after": 919,
+     "before": 2756,
+     "copies": 2,
+     "key_union": 784,
+     "parts": 0,
+     "records": 3,
+     "summed": 919,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2756 -> 919 acres",
+    "pieces": [
+     [
+      3919,
+      "Hanalei National Wildlife Refuge",
+      919,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": "U.S",
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/hanalei/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/hanalei/about-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/hanalei/visit-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/hanalei/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/hanalei",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "pct": 15,
+   "same_agency": false,
+   "score": 8,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 917.0,
+     "as": "917 acre",
+     "clean": false,
+     "line": "n stilt, Himantopus mexicanus ) and nēnē (Hawaiian goose, Branta sandvicensis, now listed as Threatened). The 917-acre refuge was purchased by the U.S. Fish and Wildlife Service from the Eagle County Development Corporation with",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/hanalei/",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 917.0,
+     "as": "917 acres",
+     "clean": false,
+     "line": "S. Fish & Wildlife Service. Hanalei National Wildlife Refuge, established in 1972, is the oldest and largest (917 acres) of the three wildlife refuges that make up the Kauai National Wildlife Refuge Complex. It was established to",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/hanalei/about-us",
+     "why": "history"
+    },
+    {
+     "acres": 917.0,
+     "as": "917 acres",
+     "clean": false,
+     "line": "S. Fish & Wildlife Service. Hanalei National Wildlife Refuge, established in 1972, is the oldest and largest (917 acres) of the three wildlife refuges that make up the Kauai National Wildlife Refuge Complex. It was established to",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/hanalei/about-us",
+     "why": "history"
+    },
+    {
+     "acres": 917.0,
+     "as": "917 acre",
+     "clean": false,
+     "line": "n stilt, Himantopus mexicanus ) and nēnē (Hawaiian goose, Branta sandvicensis, now listed as Threatened). The 917-acre refuge was purchased by the U.S. Fish and Wildlife Service from the Eagle County Development Corporation with",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/hanalei",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-0119": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Hawaiian Islands National Wildlife Refuge",
+   "ours": null,
+   "score": null,
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-0123": {
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 241 acres, no total words near it)",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Huleia National Wildlife Refuge",
+   "official": {
+    "acres": 241.0,
+    "as": "241 acres",
+    "clean": false,
+    "line": "ls Image Details Image Details About Us Image Details Hulē‘ia National Wildlife Refuge (NWR) is approximately 241 acres and was established in 1973 under the Endangered Species Act to recover threatened and endangered species inc",
+    "read": "2026-11-10",
+    "sent": "Hulē‘ia National Wildlife Refuge (NWR) is approximately 241 acres and was established in 1973 under the Endangered Species Act to recover threatened and endangered species including the koloa maoli ( Hawaiian duck, Anas wyvilliana ), ‘alae ke‘oke‘o ( Hawaiian coot, Fulica alai ), ‘alae ‘ula ( Hawaii",
+    "url": "https://www.fws.gov/refuge/huleia/about-us",
+    "why": "no total words near it"
+   },
+   "ours": {
+    "acres": 202,
+    "dissolved": {
+     "after": 480,
+     "before": 720,
+     "copies": 1,
+     "key_union": 202,
+     "parts": 0,
+     "records": 3,
+     "summed": 480,
+     "tracts": 2
+    },
+    "manager": "",
+    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 720 -> 480 acres",
+    "pieces": [
+     [
+      3950,
+      "Huleia National Wildlife Refuge",
+      240,
+      "name"
+     ],
+     [
+      4897,
+      "Huleia National Wildlife Refuge",
+      240,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/huleia/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/huleia/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/huleia",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "pct": 16,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 241.0,
+     "as": "241 acres",
+     "clean": false,
+     "line": "ls Image Details Image Details About Us Image Details Hulē‘ia National Wildlife Refuge (NWR) is approximately 241 acres and was established in 1973 under the Endangered Species Act to recover threatened and endangered species inc",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/huleia/about-us",
+     "why": "no total words near it"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-0124": {
+   "checked": "2026-11-10",
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "ut Us View Our Tours What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the refuge system. It drives everything we do from the purpose a refuge is establis",
+     "owner_now": "U.S",
+     "src": "https://www.fws.gov/refuge/james_campbell/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "n": "James Campbell National Wildlife Refuge",
+   "official": {
+    "acres": 1100.0,
+    "as": "1,100 acres",
+    "clean": false,
+    "line": "h the Estate of James Campbell. By 2005, Public Law 109-225 authorized expansion of the James Campbell NWR by 1,100 acres and identified management focus areas for the Refuge expansion lands. Other Facilities in this Complex James",
+    "read": "2026-11-10",
+    "sent": "By 2005, Public Law 109-225 authorized expansion of the James Campbell NWR by 1,100 acres and identified management focus areas for the Refuge expansion lands.",
+    "url": "https://www.fws.gov/refuge/james-campbell/about-us",
+    "why": "history"
+   },
+   "ours": {
+    "acres": 1070,
+    "dissolved": {
+     "after": 1070,
+     "before": 3208,
+     "copies": 2,
+     "parts": 0,
+     "records": 3,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3208 -> 1070 acres",
+    "pieces": [
+     [
+      "sghib318",
+      "JAMES CAMPBELL NATIONAL WILDLIFE REFUGE",
+      1070,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": "U.S",
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/james_campbell/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/james-campbell/about-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/james-campbell/visit-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/james/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/james",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "pct": 3,
+   "same_agency": false,
+   "score": 8,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 150.0,
+     "as": "150 acres",
+     "clean": false,
+     "line": "ds (U.S. Bureau of Sport Fisheries and Wildlife 1971*). The Refuge was established in 1976 with approximately 150 acres under a lease with the Estate of James Campbell. By 2005, Public Law 109-225 authorized expansion of the Jame",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/james-campbell/about-us",
+     "why": "history"
+    },
+    {
+     "acres": 1100.0,
+     "as": "1,100 acres",
+     "clean": false,
+     "line": "h the Estate of James Campbell. By 2005, Public Law 109-225 authorized expansion of the James Campbell NWR by 1,100 acres and identified management focus areas for the Refuge expansion lands. Other Facilities in this Complex James",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/james-campbell/about-us",
+     "why": "history"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-0125": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Kakahaia National Wildlife Refuge",
+   "official": null,
+   "ours": {
+    "acres": 32,
+    "dissolved": {
+     "after": 90,
+     "before": 135,
+     "copies": 1,
+     "key_union": 32,
+     "parts": 0,
+     "records": 3,
+     "summed": 90,
+     "tracts": 2
+    },
+    "manager": "",
+    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 135 -> 90 acres",
+    "pieces": [
+     [
+      3987,
+      "Kakahaia National Wildlife Refuge",
+      45,
+      "name"
+     ],
+     [
+      4933,
+      "Kakahaia National Wildlife Refuge",
+      45,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/kakahaia/map",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/kakahaia/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/kakahaia",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0126": {
+   "checked": "2026-11-10",
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the refuge system. It drives everything we do from the purpose a refuge is establis",
+     "owner_now": "U.S",
+     "src": "https://www.fws.gov/refuge/kealia_pond/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "n": "Kealia Pond National Wildlife Refuge",
+   "official": {
+    "acres": 700.0,
+    "as": "700 acres",
+    "clean": false,
+    "line": "tland habitat of two endangered wetland birds, Keālia Pond National Wildlife Refuge encompasses approximately 700 acres and is one of the few natural wetlands remaining in the Hawaiian Islands. It is the largest lowland wetland r",
+    "read": "2026-11-10",
+    "sent": "Established in 1992 to protect the wetland habitat of two endangered wetland birds, Keālia Pond National Wildlife Refuge encompasses approximately 700 acres and is one of the few natural wetlands remaining in the Hawaiian Islands.",
+    "url": "https://www.fws.gov/refuge/kealia-pond/about-us",
+    "why": "history"
+   },
+   "ours": {
+    "acres": 704,
+    "manager": "",
+    "pieces": [
+     [
+      "sghib325",
+      "KEALIA POND NATIONAL WILDLIFE REFUGE",
+      704,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": "U.S",
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/kealia_pond/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/kealia-pond/about-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/kealia-pond/visit-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/kealia/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/kealia",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "pct": 1,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 2,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 700.0,
+     "as": "700 acres",
+     "clean": false,
+     "line": "tland habitat of two endangered wetland birds, Keālia Pond National Wildlife Refuge encompasses approximately 700 acres and is one of the few natural wetlands remaining in the Hawaiian Islands. It is the largest lowland wetland r",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/kealia-pond/about-us",
+     "why": "history"
+    },
+    {
+     "acres": 35840.0,
+     "as": "56 square mile",
+     "clean": false,
+     "line": "s located along the south-central coast, between the towns of Kīhei and Mā‘alaea, it is a natural basin for a 56-square mile watershed from the West Maui Mountains. The Keālia Coastal Boardwalk is a beautiful tranquil walkway and bird",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/kealia-pond/about-us",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-0127": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Kilauea Point National Wildlife Refuge",
+   "official": null,
+   "ours": {
+    "acres": 307,
+    "dissolved": {
+     "after": 355,
+     "before": 532,
+     "copies": 1,
+     "key_union": 307,
+     "parts": 0,
+     "records": 3,
+     "summed": 355,
+     "tracts": 2
+    },
+    "manager": "",
+    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 532 -> 355 acres",
+    "pieces": [
+     [
+      4948,
+      "Kilauea Point National Wildlife Refuge",
+      178,
+      "name"
+     ],
+     [
+      4000,
+      "Kilauea Point National Wildlife Refuge",
+      177,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/kilauea_point/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/kilauea-point/about-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/kilauea-point/visit-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/kilauea/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/kilauea",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0128": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "O'ahu Forest National Wildlife Refuge",
+   "official": null,
+   "ours": {
+    "acres": 4594,
+    "dissolved": {
+     "after": 4594,
+     "before": 13780,
+     "copies": 2,
+     "parts": 0,
+     "records": 3,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 13780 -> 4594 acres",
+    "pieces": [
+     [
+      4175,
+      "Oahu Forest National Wildlife Refuge",
+      4594,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/oahu_forest/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/oahu-forest/about-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/oahu-forest/visit-us",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0129": {
+   "checked": "2026-11-10",
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the refuge system. It drives everything we do from the purpose a refuge is establis",
+     "owner_now": "U.S",
+     "src": "https://www.fws.gov/refuge/pearl_harbor/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "n": "Pearl Harbor National Wildlife Refuge",
+   "official": null,
+   "ours": {
+    "acres": 89,
+    "dissolved": {
+     "after": 153,
+     "before": 191,
+     "copies": 1,
+     "families": {
+      "padus": 76,
+      "sghib": 77
+     },
+     "family_fold": 76,
+     "family_used": "sghib",
+     "key_union": 89,
+     "parts": 0,
+     "records": 6,
+     "summed": 77,
+     "tracts": 5
+    },
+    "family_fold": "layers {'padus': 76, 'sghib': 77}: one land in 2 layers, the sghib copy used (76 ac of copies not added)",
+    "manager": "",
+    "note": "6 joined records = 5 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 191 -> 153 acres",
+    "pieces": [
+     [
+      "sghib321",
+      "PEARL HARBOR NATIONAL WILDLIFE REFUGE (HONOULIULI)",
+      37,
+      "name"
+     ],
+     [
+      "sghib322",
+      "PEARL HARBOR NATIONAL WILDLIFE REFUGE (WAIAWA)",
+      28,
+      "name"
+     ],
+     [
+      "sghib323",
+      "PEARL HARBOR NATIONAL WILDLIFE REFUGE",
+      12,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": "U.S",
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/pearl_harbor/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/pearl-harbor/about-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/pearl-harbor/visit-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/pearl/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/pearl",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "National Wildlife Refuge",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0739": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Kaloko-Honokohau National Historical Park",
+   "official": null,
+   "ours": {
+    "acres": 1254,
+    "family_fold": "layers {'sghib': 1254, 'padus': 631}: one land in 2 layers, the sghib copy used (631 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sghib327",
+      "KALOKO-HONOKOHAU NATIONAL HISTORICAL PARK",
+      1254,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/kaho/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/kaho/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/kaho/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/kaho/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "National Historical Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0753": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Pu'uhonua o Honaunau National Historical Park",
+   "official": null,
+   "ours": {
+    "acres": 420,
+    "manager": "",
+    "pieces": [
+     [
+      3238,
+      "Pu'uhonua o Honaunau National Historical Park",
+      420,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/puho/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/puho/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/puho/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/puho/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Historical Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0855": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Pu'ukohola Heiau National Historic Site",
+   "official": null,
+   "ours": {
+    "acres": 50,
+    "family_fold": "layers {'sghib': 86, 'padus': 62}: one land in 2 layers, the sghib copy used (62 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sghib326",
+      "PUUKOHOLA HEIAU NATIONAL HISTORIC SITE",
+      86,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/puhe/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/puhe/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/puhe/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/puhe/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "National Historic Site",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-0971": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "World War II Valor in the Pacific National Monument",
+   "ours": null,
+   "score": null,
+   "t": "National Monument",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-10904": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "ʻEwa Forest Reserve",
+   "official": null,
+   "ours": {
+    "acres": 8340,
+    "dissolved": {
+     "after": 10588,
+     "before": 13358,
+     "copies": 1,
+     "families": {
+      "padus": 2770,
+      "sghib": 7818
+     },
+     "family_fold": 2770,
+     "family_used": "sghib",
+     "key_union": 8340,
+     "parts": 0,
+     "records": 5,
+     "summed": 7818,
+     "tracts": 4
+    },
+    "family_fold": "layers {'sghib': 7818, 'padus': 2770}: one land in 2 layers, the sghib copy used (2,770 ac of copies not added)",
+    "manager": "",
+    "note": "5 joined records = 4 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 13358 -> 10588 acres",
+    "pieces": [
+     [
+      "sghib19",
+      "EWA FOREST RESERVE (POAMOHO SEC.)",
+      4623,
+      "name"
+     ],
+     [
+      "sghib25",
+      "EWA FOREST RESERVE (WAIMANO SEC.)",
+      2549,
+      "reviewed"
+     ],
+     [
+      "sghib242",
+      "EWA FOREST RESERVE (KALAUAO SEC)",
+      646,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Forest Reserve",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-10905": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Honolulu Watershed Forest Reserve",
+   "official": null,
+   "ours": {
+    "acres": 9540,
+    "manager": "",
+    "pieces": [
+     [
+      "sghib261",
+      "HONOLULU WATERSHED FOREST RESERVE",
+      10503,
+      "reviewed"
+     ],
+     [
+      "sghib357",
+      "HONOLULU WATERSHED FOREST RESERVE",
+      763,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Forest Reserve",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-10906": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Round Top Forest Reserve",
+   "official": null,
+   "ours": {
+    "acres": 84,
+    "family_fold": "layers {'sghib': 99, 'padus': 26}: one land in 2 layers, the sghib copy used (26 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sghib260",
+      "ROUND TOP FOREST RESERVE",
+      99,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Forest Reserve",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-10907": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Mokuleia Forest Reserve",
+   "official": null,
+   "ours": {
+    "acres": 3656,
+    "family_fold": "layers {'padus': 2960, 'sghib': 3377}: one land in 2 layers, the sghib copy used (2,960 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sghib253",
+      "MOKULEIA FOREST RESERVE",
+      2813,
+      "reviewed"
+     ],
+     [
+      "sghib17",
+      "MOKULEIA FOREST RESERVE",
+      564,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Forest Reserve",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-10908": {
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Pupukea Forest Reserve",
+   "official": null,
+   "ours": {
+    "acres": 3303,
+    "family_fold": "layers {'sghib': 4529, 'padus': 848}: one land in 2 layers, the sghib copy used (848 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sghib332",
+      "PUPUKEA-PAUMALU FOREST RESERVE",
+      3747,
+      "reviewed"
+     ],
+     [
+      "sghib356",
+      "PUPUKEA FOREST RESERVE",
+      782,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/pupukea-forest-reserve/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 782.0,
+     "as": "782 acres",
+     "clean": false,
+     "line": "System » Pūpūkea Forest Reserve Pūpūkea Forest Reserve NEW! Pūpūkea Forest Reserve consists of approximately 782 acres of public land located on the north shore of Oʻahu. The reserve was established by Governor’s Proclamation in",
+     "total_like": false,
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/pupukea-forest-reserve/",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "Forest Reserve",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-10909": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Kuliʻouʻou Forest Reserve",
+   "official": null,
+   "ours": {
+    "acres": 215,
+    "dissolved": {
+     "after": 215,
+     "before": 430,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 430 -> 215 acres",
+    "pieces": [
+     [
+      195247,
+      "Kuliouou Forest Reserve",
+      215,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Forest Reserve",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-10910": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Waimanalo Forest Reserve",
+   "official": null,
+   "ours": {
+    "acres": 1667,
+    "manager": "",
+    "pieces": [
+     [
+      "sghib310",
+      "WAIMANALO FOREST RESERVE",
+      1688,
+      "reviewed"
+     ],
+     [
+      "sghib311",
+      "WAIMANALO FOREST RESERVE",
+      485,
+      "reviewed"
+     ],
+     [
+      157563,
+      "Waimanalo Forest Reserve",
+      2,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Forest Reserve",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-10911": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Ke’ehi Lagoon Memorial State Park",
+   "official": null,
+   "ours": {
+    "acres": 40,
+    "family_fold": "layers {'padus': 72, 'sghib': 11}: one land in 2 layers, the padus copy used (11 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      158432,
+      "Keehi Lagoon Memorial State Park",
+      72,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/keehi-lagoon-memorial-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-10912": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "'Ualaka'a State Trail",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/hiking/oahu/ualakaa-trail/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "State Trail",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-10913": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Diamond Head Summit State Trail",
+   "official": null,
+   "ours": {
+    "acres": 503,
+    "manager": "",
+    "pieces": [
+     [
+      195365,
+      "Diamond Head State Monument",
+      503,
+      "reviewed-approx"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/hiking/oahu/diamond-head-summit-trail/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Trail",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-10914": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Ka‘ena Point State Trail",
+   "ours": null,
+   "score": null,
+   "t": "State Trail",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-10915": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Nakoa State Trail",
+   "ours": null,
+   "score": null,
+   "t": "State Trail",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-10916": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Kapaʻeleʻele State Trail",
+   "ours": null,
+   "score": null,
+   "t": "State Trail",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-10917": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "ʻAiea Loop State Trail",
+   "ours": null,
+   "score": null,
+   "t": "State Trail",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-10918": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Waʻahila Ridge State Trail",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/hiking/oahu/waahila-ridge-trail/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "State Trail",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-10919": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Na Ala Hele State Trail",
+   "ours": null,
+   "score": null,
+   "t": "State Trail",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-10920": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Kawainui Marsh Wildlife Reserve",
+   "official": {
+    "acres": 830.0,
+    "as": "830 acres",
+    "clean": false,
+    "line": "Importance in 2005 for its historical, biological, and cultural significance. The wetland encompasses around 830 acres of land and is the largest remaining wetland in the state of Hawai‘i. The marsh is located in Kailua on the i",
+    "read": "2026-11-10",
+    "sent": "The wetland encompasses around 830 acres of land and is the largest remaining wetland in the state of Hawai‘i.",
+    "url": "https://dlnr.hawaii.gov/wildlife/sanctuaries/kawainui/",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 797,
+    "manager": "",
+    "pieces": [
+     [
+      "sghib238",
+      "KAWAINUI MARSH WILDLIFE SANCTUARY",
+      797,
+      "alias name (pin inside): KAWAINUI MARSH WILDLIFE SANCTUARY"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/wildlife/sanctuaries/kawainui/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 4,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 2,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 830.0,
+     "as": "830 acres",
+     "clean": false,
+     "line": "Importance in 2005 for its historical, biological, and cultural significance. The wetland encompasses around 830 acres of land and is the largest remaining wetland in the state of Hawai‘i. The marsh is located in Kailua on the i",
+     "total_like": true,
+     "url": "https://dlnr.hawaii.gov/wildlife/sanctuaries/kawainui/",
+     "why": "total-looking"
+    }
+   ],
+   "t": "Wildlife Reserve",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-10921": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Hawaii Capital National Historic District",
+   "ours": null,
+   "score": null,
+   "t": "National Historic District",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-10922": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Marconi Wireless Telegraphy Station Kahuku National Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "National Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-10923": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Artillery District of Honolulu Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "Historic Site",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-10924": {
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 500 acres, no total words near it)",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Kuaokala Game Reserve",
+   "official": {
+    "acres": 500.0,
+    "as": "500 acres",
+    "clean": false,
+    "line": "ing lot is the entrance for the “Ranch Side” section of the GMA, an area grazed by cattle to maintain roughly 500 acres of suitable habitat. Large grass fields, steep coastal cliffs, and rolling gulches paint the backdrop of this",
+    "read": "2026-11-10",
+    "sent": "This parking lot is the entrance for the “Ranch Side” section of the GMA, an area grazed by cattle to maintain roughly 500 acres of suitable habitat.",
+    "url": "https://dlnr.hawaii.gov/recreation/hunting/gma/kuaokala/",
+    "why": "no total words near it"
+   },
+   "ours": {
+    "acres": 1828,
+    "family_fold": "layers {'sghib': 2277, 'padus': 1719}: one land in 2 layers, the sghib copy used (1,719 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sghib377",
+      "KUAOKALA GAME MANAGEMENT AREA",
+      1905,
+      "reviewed"
+     ],
+     [
+      "sghib16",
+      "KUAOKALA FOREST RESERVE",
+      372,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/recreation/hunting/gma/kuaokala/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 266,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 500.0,
+     "as": "500 acres",
+     "clean": false,
+     "line": "ing lot is the entrance for the “Ranch Side” section of the GMA, an area grazed by cattle to maintain roughly 500 acres of suitable habitat. Large grass fields, steep coastal cliffs, and rolling gulches paint the backdrop of this",
+     "total_like": false,
+     "url": "https://dlnr.hawaii.gov/recreation/hunting/gma/kuaokala/",
+     "why": "no total words near it"
+    }
+   ],
+   "t": "Game Reserve",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-10925": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "HI State Game Reserve",
+   "ours": null,
+   "score": null,
+   "t": "Game Reserve",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-12062": {
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Old Kona Airport State Recreation Area",
+   "official": null,
+   "ours": {
+    "acres": 110,
+    "manager": "",
+    "pieces": [
+     [
+      195398,
+      "Old Kona Airport State Recreation Area",
+      110,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dar/marine-managed-areas/hawaii-marine-life-conservation-districts/hawaii-old-kona-airport/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dar/habitat/about-streams/",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dar/marine-managed-areas/about-marine-managed-areas/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 217.0,
+     "as": "217 acres",
+     "clean": false,
+     "line": "Hawai‘i Marine Life Conservation Districts » Hawai‘i – Old Kona Airport Hawai‘i – Old Kona Airport HAR 13-37 217 acres, Established 1992 Old Kona Airport is located on the western coast of Hawai‘i just west of Kailua-Kona town.",
+     "total_like": false,
+     "url": "https://dlnr.hawaii.gov/dar/marine-managed-areas/hawaii-marine-life-conservation-districts/hawaii-old-kona-airport/",
+     "why": "history"
+    }
+   ],
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-12095": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Halele'a Forest Reserve",
+   "official": {
+    "acres": 15000.0,
+    "as": "15,000 acres",
+    "clean": false,
+    "line": "05 for the purpose of forest and watershed protection. The forest reserve currently consists of approximately 15,000 acres of public land. Halele‘a Forest Reserve Management Plan (September 2010) The area is characterized by deep, w",
+    "read": "2026-11-10",
+    "sent": "The forest reserve currently consists of approximately 15,000 acres of public land.",
+    "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/kauai/halelea",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
+   "ours": {
+    "acres": 15030,
+    "dissolved": {
+     "after": 15030,
+     "before": 30024,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 30024 -> 15030 acres",
+    "pieces": [
+     [
+      195223,
+      "Halele'a Forest Reserve",
+      15030,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/kauai/halelea",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 0,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 15000.0,
+     "as": "15,000 acres",
+     "clean": false,
+     "line": "05 for the purpose of forest and watershed protection. The forest reserve currently consists of approximately 15,000 acres of public land. Halele‘a Forest Reserve Management Plan (September 2010) The area is characterized by deep, w",
+     "total_like": false,
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/kauai/halelea",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "Forest Reserve",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-2208": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Akaka Falls State Park",
+   "official": {
+    "acres": 65.4,
+    "as": "65.4 acres",
+    "clean": false,
+    "line": "ich plunges 442 feet into a stream-eroded gorge. The 0.4-mile loop footpath requires some physical exertion. (65.4 acres) Route The trailhead is located just off the parking lot. The paved route, which includes multiple steps in p",
+    "read": "2026-11-10",
+    "sent": "(65.4 acres)",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/akaka-falls-state-park/",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 66,
+    "dissolved": {
+     "after": 66,
+     "before": 264,
+     "copies": 3,
+     "parts": 0,
+     "records": 4,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 264 -> 66 acres",
+    "pieces": [
+     [
+      195370,
+      "'Akaka Falls State Park",
+      66,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/akaka-falls-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 1,
+   "same_agency": false,
+   "score": 8,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 65.4,
+     "as": "65.4 acres",
+     "clean": false,
+     "line": "ich plunges 442 feet into a stream-eroded gorge. The 0.4-mile loop footpath requires some physical exertion. (65.4 acres) Route The trailhead is located just off the parking lot. The paved route, which includes multiple steps in p",
+     "total_like": true,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/akaka-falls-state-park/",
+     "why": "total-looking"
+    }
+   ],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-2209": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Ahupua'a O Kahana State Park",
+   "official": {
+    "acres": 5300.0,
+    "as": "5,300 acres",
+    "clean": false,
+    "line": "ai), encompassing all of the resource zones needed for subsistence. The ahupuaʻa of Kahana encompasses almost 5,300 acres, ranging from sea level at Kahana Bay to 2,670 feet at Puʻu Pauao on the crest of the Koʻolau mountains. Kaha",
+    "read": "2026-11-10",
+    "sent": "The ahupuaʻa of Kahana encompasses almost 5,300 acres, ranging from sea level at Kahana Bay to 2,670 feet at Puʻu Pauao on the crest of the Koʻolau mountains.",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/ahupuaa-o-kahana-state-park/",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 5734,
+    "dissolved": {
+     "after": 5233,
+     "before": 20867,
+     "copies": 3,
+     "key_union": 5734,
+     "parts": 0,
+     "records": 5,
+     "summed": 5233,
+     "tracts": 2
+    },
+    "manager": "",
+    "note": "5 joined records = 2 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 20867 -> 5233 acres",
+    "pieces": [
+     [
+      "sghia5",
+      "AHUPUAA O KAHANA STATE PARK",
+      5221,
+      "reviewed"
+     ],
+     [
+      195372,
+      "Ahupuaa O Kahana State Park",
+      12,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/ahupuaa-o-kahana-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 8,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 5300.0,
+     "as": "5,300 acres",
+     "clean": false,
+     "line": "ai), encompassing all of the resource zones needed for subsistence. The ahupuaʻa of Kahana encompasses almost 5,300 acres, ranging from sea level at Kahana Bay to 2,670 feet at Puʻu Pauao on the crest of the Koʻolau mountains. Kaha",
+     "total_like": true,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/ahupuaa-o-kahana-state-park/",
+     "why": "total-looking"
+    }
+   ],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-2210": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Ha'ena State Park",
+   "official": null,
+   "ours": {
+    "acres": 296,
+    "dissolved": {
+     "after": 236,
+     "before": 944,
+     "copies": 4,
+     "key_union": 296,
+     "parts": 2,
+     "records": 7,
+     "summed": 236,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "7 joined records = 1 tracts: 4 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 944 -> 236 acres",
+    "pieces": [
+     [
+      195375,
+      "Ha'ena State Park",
+      236,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/haena-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2211": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Heeia State Park",
+   "official": null,
+   "ours": {
+    "acres": 16,
+    "dissolved": {
+     "after": 31,
+     "before": 67,
+     "copies": 2,
+     "families": {
+      "padus": 13,
+      "sghia": 18
+     },
+     "family_fold": 13,
+     "family_used": "sghia",
+     "key_union": 16,
+     "parts": 0,
+     "records": 4,
+     "summed": 18,
+     "tracts": 2
+    },
+    "family_fold": "layers {'sghia': 18, 'padus': 13}: one land in 2 layers, the sghia copy used (13 ac of copies not added)",
+    "manager": "",
+    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 67 -> 31 acres",
+    "pieces": [
+     [
+      "sghia8",
+      "HEEIA STATE PARK",
+      18,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/heeia-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2212": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Ka'ena Point State Park",
+   "official": null,
+   "ours": {
+    "acres": 1509,
+    "dissolved": {
+     "after": 2647,
+     "before": 5664,
+     "copies": 2,
+     "families": {
+      "padus": 1138,
+      "sghia": 1509
+     },
+     "family_fold": 1138,
+     "family_used": "sghia",
+     "parts": 0,
+     "records": 4,
+     "tracts": 2
+    },
+    "family_fold": "layers {'sghia': 1509, 'padus': 1138}: one land in 2 layers, the sghia copy used (1,138 ac of copies not added)",
+    "manager": "",
+    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 5664 -> 2647 acres",
+    "pieces": [
+     [
+      "sghia6",
+      "KAENA POINT STATE PARK",
+      1509,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/kaena-point-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2213": {
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 7.8 acres, no total words near it)",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Kaumahina Wayside State Park",
+   "official": {
+    "acres": 7.8,
+    "as": "7.8 acres",
+    "clean": false,
+    "line": "est stop with exotic plants. Picnicking and scenic viewpoint of northeast Maui coastline. No drinking water. (7.8 acres) Activities Facilities Hazards Prohibited Park Rules Area Weather Forecast ABOUT US Contact Us Partners Broch",
+    "read": "2026-11-10",
+    "sent": "(7.8 acres)",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/maui/kaumahina-state-wayside/",
+    "why": "no total words near it"
+   },
+   "ours": {
+    "acres": 5,
+    "dissolved": {
+     "after": 7,
+     "before": 21,
+     "copies": 2,
+     "key_union": 5,
+     "parts": 0,
+     "records": 3,
+     "summed": 7,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 21 -> 7 acres",
+    "pieces": [
+     [
+      195382,
+      "Kaumahina State Wayside",
+      7,
+      "words"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/maui/kaumahina-state-wayside/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": 36,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 7.8,
+     "as": "7.8 acres",
+     "clean": false,
+     "line": "est stop with exotic plants. Picnicking and scenic viewpoint of northeast Maui coastline. No drinking water. (7.8 acres) Activities Facilities Hazards Prohibited Park Rules Area Weather Forecast ABOUT US Contact Us Partners Broch",
+     "total_like": false,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/maui/kaumahina-state-wayside/",
+     "why": "no total words near it"
+    }
+   ],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-2214": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Kekaha Kai State Park",
+   "official": null,
+   "ours": {
+    "acres": 1668,
+    "dissolved": {
+     "after": 3308,
+     "before": 6584,
+     "copies": 4,
+     "families": {
+      "padus": 1668,
+      "sghib": 1640
+     },
+     "family_fold": 1640,
+     "family_used": "padus",
+     "parts": 0,
+     "records": 7,
+     "tracts": 3
+    },
+    "family_fold": "layers {'padus': 1668, 'sghib': 1640}: one land in 2 layers, the padus copy used (1,640 ac of copies not added)",
+    "manager": "",
+    "note": "7 joined records = 3 tracts: 4 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 6584 -> 3308 acres",
+    "pieces": [
+     [
+      195384,
+      "Kekaha Kai State Park",
+      1668,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kekaha-kai-kona-coast-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2215": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Koke`e State Park",
+   "official": null,
+   "ours": {
+    "acres": 4700,
+    "dissolved": {
+     "after": 4373,
+     "before": 17446,
+     "copies": 3,
+     "key_union": 4700,
+     "parts": 0,
+     "records": 4,
+     "summed": 4373,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 17446 -> 4373 acres",
+    "pieces": [
+     [
+      195387,
+      "Koke'e State Park",
+      4373,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/kokee-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2216": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Makapuʻu  Point Wayside State Trail",
+   "official": null,
+   "ours": {
+    "acres": 39,
+    "manager": "",
+    "pieces": [
+     [
+      195390,
+      "Makapuu Point State Wayside",
+      39,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/hiking/oahu/makapuu-point-lighthouse-trail/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Trail",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2217": {
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Makena State Park",
+   "official": {
+    "acres": 164.4,
+    "as": "164.4 acres",
+    "clean": false,
+    "line": "seas, bodysurfing, board surfing, shore fishing, and beach- related activities. No drinking water available. (164.4 acres) Parking Info Makena State Park is now subject to paid-parking. Park visitors can pay for parking upon arriva",
+    "read": "2026-11-10",
+    "sent": "(164.4 acres)",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/maui/makena-state-park/",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 193,
+    "dissolved": {
+     "after": 171,
+     "before": 679,
+     "copies": 3,
+     "key_union": 193,
+     "parts": 0,
+     "records": 4,
+     "summed": 171,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 679 -> 171 acres",
+    "pieces": [
+     [
+      "sghib282",
+      "MAKENA STATE PARK",
+      171,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/maui/makena-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 17,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 164.4,
+     "as": "164.4 acres",
+     "clean": false,
+     "line": "seas, bodysurfing, board surfing, shore fishing, and beach- related activities. No drinking water available. (164.4 acres) Parking Info Makena State Park is now subject to paid-parking. Park visitors can pay for parking upon arriva",
+     "total_like": true,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/maui/makena-state-park/",
+     "why": "total-looking"
+    }
+   ],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "off"
+  },
+  "US-2218": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Nu'uanu Pali Wayside State Park",
+   "official": null,
+   "ours": {
+    "acres": 6,
+    "dissolved": {
+     "after": 5,
+     "before": 9,
+     "copies": 1,
+     "families": {
+      "padus": 1,
+      "sghia": 4
+     },
+     "family_fold": 1,
+     "family_used": "sghia",
+     "key_union": 6,
+     "parts": 0,
+     "records": 3,
+     "summed": 4,
+     "tracts": 2
+    },
+    "family_fold": "layers {'sghia': 4, 'padus': 1}: one land in 2 layers, the sghia copy used (1 ac of copies not added)",
+    "manager": "",
+    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 9 -> 5 acres",
+    "pieces": [
+     [
+      "sghia12",
+      "NUUANU PALI STATE WAYSIDE",
+      4,
+      "words"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/nuuanu-pali-state-wayside/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2219": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Palaau State Park",
+   "official": {
+    "acres": 233.7,
+    "as": "233.7 acres",
+    "clean": false,
+    "line": "ort trail leads to a phallic stone thought to enhance fertility. Picnicking and camping in a ironwood grove. (233.7 acres) Activities Facilities Hazards Prohibited Park Rules Area Weather Forecast ABOUT US Contact Us Partners Broch",
+    "read": "2026-11-10",
+    "sent": "(233.7 acres)",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/molokai/palaau-state-park/",
+    "why": "no total words near it"
+   },
+   "ours": {
+    "acres": 219,
+    "dissolved": {
+     "after": 407,
+     "before": 872,
+     "copies": 2,
+     "families": {
+      "padus": 174,
+      "sghia": 233
+     },
+     "family_fold": 174,
+     "family_used": "sghia",
+     "key_union": 219,
+     "parts": 0,
+     "records": 4,
+     "summed": 233,
+     "tracts": 2
+    },
+    "family_fold": "layers {'sghia': 233, 'padus': 174}: one land in 2 layers, the sghia copy used (174 ac of copies not added)",
+    "manager": "",
+    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 872 -> 407 acres",
+    "pieces": [
+     [
+      "sghia22",
+      "PALAAU STATE PARK",
+      233,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/molokai/palaau-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": 6,
+   "same_agency": false,
+   "score": 8,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 233.7,
+     "as": "233.7 acres",
+     "clean": false,
+     "line": "ort trail leads to a phallic stone thought to enhance fertility. Picnicking and camping in a ironwood grove. (233.7 acres) Activities Facilities Hazards Prohibited Park Rules Area Weather Forecast ABOUT US Contact Us Partners Broch",
+     "total_like": false,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/molokai/palaau-state-park/",
+     "why": "no total words near it"
+    }
+   ],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-2220": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Polihale State Park",
+   "official": null,
+   "ours": {
+    "acres": 87,
+    "dissolved": {
+     "after": 148,
+     "before": 592,
+     "copies": 3,
+     "key_union": 87,
+     "parts": 0,
+     "records": 4,
+     "summed": 148,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 592 -> 148 acres",
+    "pieces": [
+     [
+      195400,
+      "Polihale State Park",
+      148,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/polihale-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2221": {
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 5.0 acres, no total words near it)",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Puaa Kaa Wayside State Park",
+   "official": {
+    "acres": 5.0,
+    "as": "5.0 acres",
+    "clean": false,
+    "line": "ription Rest stop and picnicking in the rain forest. An idyllic area with small scenic waterfalls and pools. (5.0 acres) Activities Facilities Hazards Prohibited Park Rules Area Weather Forecast ABOUT US Contact Us Partners Broch",
+    "read": "2026-11-10",
+    "sent": "(5.0 acres)",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/maui/puaa-kaa-state-wayside/",
+    "why": "no total words near it"
+   },
+   "ours": {
+    "acres": 2,
+    "dissolved": {
+     "after": 2,
+     "before": 8,
+     "copies": 3,
+     "parts": 0,
+     "records": 4,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 8 -> 2 acres",
+    "pieces": [
+     [
+      195402,
+      "Pua'a Ka'a State Wayside",
+      2,
+      "words"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/maui/puaa-kaa-state-wayside/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": 60,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 5.0,
+     "as": "5.0 acres",
+     "clean": false,
+     "line": "ription Rest stop and picnicking in the rain forest. An idyllic area with small scenic waterfalls and pools. (5.0 acres) Activities Facilities Hazards Prohibited Park Rules Area Weather Forecast ABOUT US Contact Us Partners Broch",
+     "total_like": false,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/maui/puaa-kaa-state-wayside/",
+     "why": "no total words near it"
+    }
+   ],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-2222": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Pu'u 'Ualakaa State Park",
+   "official": null,
+   "ours": {
+    "acres": 66,
+    "dissolved": {
+     "after": 140,
+     "before": 223,
+     "copies": 1,
+     "families": {
+      "padus": 57,
+      "sghia": 83
+     },
+     "family_fold": 57,
+     "family_used": "sghia",
+     "key_union": 66,
+     "parts": 0,
+     "records": 3,
+     "summed": 83,
+     "tracts": 2
+    },
+    "family_fold": "layers {'sghia': 83, 'padus': 57}: one land in 2 layers, the sghia copy used (57 ac of copies not added)",
+    "manager": "",
+    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 223 -> 140 acres",
+    "pieces": [
+     [
+      "sghia14",
+      "PUU UALAKAA STATE WAYSIDE",
+      83,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/puu-ualakaa-state-wayside/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2223": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Waimea Canyon State Park",
+   "official": null,
+   "ours": {
+    "acres": 2434,
+    "dissolved": {
+     "after": 3652,
+     "before": 7256,
+     "copies": 2,
+     "families": {
+      "padus": 1845,
+      "sghib": 1807
+     },
+     "family_fold": 1807,
+     "family_used": "padus",
+     "key_union": 2434,
+     "parts": 0,
+     "records": 4,
+     "summed": 1845,
+     "tracts": 2
+    },
+    "family_fold": "layers {'padus': 1845, 'sghib': 1807}: one land in 2 layers, the padus copy used (1,807 ac of copies not added)",
+    "manager": "",
+    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 7256 -> 3652 acres",
+    "pieces": [
+     [
+      195415,
+      "Waimea Canyon State Park",
+      1845,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/waimea-canyon-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2224": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Waianapanapa State Park",
+   "official": null,
+   "ours": {
+    "acres": 74,
+    "dissolved": {
+     "after": 210,
+     "before": 428,
+     "copies": 2,
+     "families": {
+      "padus": 101,
+      "sghia": 109
+     },
+     "family_fold": 101,
+     "family_used": "sghia",
+     "key_union": 74,
+     "parts": 0,
+     "records": 4,
+     "summed": 109,
+     "tracts": 2
+    },
+    "family_fold": "layers {'sghia': 109, 'padus': 101}: one land in 2 layers, the sghia copy used (101 ac of copies not added)",
+    "manager": "",
+    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 428 -> 210 acres",
+    "pieces": [
+     [
+      "sghia27",
+      "WAIANAPANAPA STATE PARK",
+      109,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/maui/waianapanapa-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2225": {
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 16.3 acres, no total words near it)",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Wailuku River State Park",
+   "official": {
+    "acres": 16.3,
+    "as": "16.3 acres",
+    "clean": false,
+    "line": "mornings. Legends say that the cave beneath the waterfall was the home of Hina, mother of the demigod Maui. (16.3 acres) Location Both park sections are accessed via Waiānuenue Avenue, downtown Hilo; Boiling Pots Area at the end",
+    "read": "2026-11-10",
+    "sent": "(16.3 acres)",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/wailuku-river-state-park/",
+    "why": "no total words near it"
+   },
+   "ours": {
+    "acres": 26,
+    "dissolved": {
+     "after": 26,
+     "before": 67,
+     "copies": 4,
+     "families": {
+      "padus": 23,
+      "sghia": 3
+     },
+     "family_fold": 3,
+     "family_used": "padus",
+     "key_union": 26,
+     "parts": 2,
+     "records": 9,
+     "summed": 23,
+     "tracts": 3
+    },
+    "family_fold": "layers {'padus': 23, 'sghia': 3}: one land in 2 layers, the padus copy used (3 ac of copies not added)",
+    "manager": "",
+    "note": "9 joined records = 3 tracts: 4 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 67 -> 26 acres",
+    "pieces": [
+     [
+      157597,
+      "Wailuku River State Park",
+      21,
+      "name"
+     ],
+     [
+      195202,
+      "Wailuku River State Park",
+      2,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/wailuku-river-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": 60,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 16.3,
+     "as": "16.3 acres",
+     "clean": false,
+     "line": "mornings. Legends say that the cave beneath the waterfall was the home of Hina, mother of the demigod Maui. (16.3 acres) Location Both park sections are accessed via Waiānuenue Avenue, downtown Hilo; Boiling Pots Area at the end",
+     "total_like": false,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/wailuku-river-state-park/",
+     "why": "no total words near it"
+    }
+   ],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-2226": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Wailua River State Park",
+   "official": null,
+   "ours": {
+    "acres": 1201,
+    "dissolved": {
+     "after": 2183,
+     "before": 4429,
+     "copies": 2,
+     "families": {
+      "padus": 1060,
+      "sghia": 1123
+     },
+     "family_fold": 1060,
+     "family_used": "sghia",
+     "key_union": 1201,
+     "parts": 0,
+     "records": 4,
+     "summed": 1123,
+     "tracts": 2
+    },
+    "family_fold": "layers {'sghia': 1123, 'padus': 1060}: one land in 2 layers, the sghia copy used (1,060 ac of copies not added)",
+    "manager": "",
+    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 4429 -> 2183 acres",
+    "pieces": [
+     [
+      "sghia52",
+      "WAILUA RIVER STATE PARK",
+      1123,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/wailua-river-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-2227": {
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1.5 acres, a tiny number without size wording)",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Wailua Valley Wayside State Park",
+   "official": {
+    "acres": 1.5,
+    "as": "1.5 acres",
+    "clean": false,
+    "line": "Viewpoint of Ke‘anae Valley and Ko‘olau Gap in Haleakala’s rim, and of Wailua Village with taro lo‘i fields. (1.5 acres) Activities Facilities Hazards Prohibited Park Rules Area Weather Forecast ABOUT US Contact Us Partners Broch",
+    "read": "2026-11-10",
+    "sent": "(1.5 acres)",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/maui/wailua-valley-state-wayside/",
+    "why": "a tiny number without size wording"
+   },
+   "ours": {
+    "acres": 1,
+    "dissolved": {
+     "after": 1,
+     "before": 3,
+     "copies": 2,
+     "parts": 0,
+     "records": 3,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3 -> 1 acres",
+    "pieces": [
+     [
+      195413,
+      "Wailua Valley State Wayside",
+      1,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/maui/wailua-valley-state-wayside/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": 33,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 1.5,
+     "as": "1.5 acres",
+     "clean": false,
+     "line": "Viewpoint of Ke‘anae Valley and Ko‘olau Gap in Haleakala’s rim, and of Wailua Village with taro lo‘i fields. (1.5 acres) Activities Facilities Hazards Prohibited Park Rules Area Weather Forecast ABOUT US Contact Us Partners Broch",
+     "total_like": false,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/maui/wailua-valley-state-wayside/",
+     "why": "a tiny number without size wording"
+    }
+   ],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-3391": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Na Pali Coast State Park",
+   "official": null,
+   "ours": {
+    "acres": 5630,
+    "dissolved": {
+     "after": 6021,
+     "before": 18079,
+     "copies": 2,
+     "key_union": 5630,
+     "parts": 2,
+     "records": 5,
+     "summed": 6021,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "5 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 18079 -> 6021 acres",
+    "pieces": [
+     [
+      195396,
+      "Na Pali Coast State Park",
+      6021,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/napali-coast-state-wilderness-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/napali-coast-state-wilderness-park/park-info/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-4565": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Ala Kahakai National Historic Trail",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/alka/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/alka/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/alka/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/alka/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "National Historic Trail",
+   "ver": 15,
+   "verdict": "ours unknown"
+  },
+  "US-6401": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Mauna Kea State Recreation Area",
+   "official": null,
+   "ours": {
+    "acres": 7667,
+    "manager": "",
+    "pieces": [
+     [
+      195252,
+      "Mauna Kea Forest Reserve",
+      8205,
+      "name"
+     ],
+     [
+      195395,
+      "Mauna Kea State Park",
+      95,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/mauna-kea-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-6402": {
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Lava Tree State Park",
+   "official": {
+    "acres": 17.1,
+    "as": "17.1 acres",
+    "clean": false,
+    "line": "at swept through this forested area and left behind lava molds of the tree trunks. Picnicking opportunities. (17.1 acres) Activities Facilities Hazards Prohibited Park Rules Area Weather Forecast ABOUT US Contact Us Partners Broch",
+    "read": "2026-11-10",
+    "sent": "(17.1 acres)",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/lava-tree-state-monument/",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 14,
+    "dissolved": {
+     "after": 18,
+     "before": 72,
+     "copies": 3,
+     "key_union": 14,
+     "parts": 0,
+     "records": 4,
+     "summed": 18,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 72 -> 18 acres",
+    "pieces": [
+     [
+      "sghia47",
+      "LAVA TREE STATE MONUMENT",
+      18,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/lava-tree-state-monument/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 18,
+   "same_agency": false,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 17.1,
+     "as": "17.1 acres",
+     "clean": false,
+     "line": "at swept through this forested area and left behind lava molds of the tree trunks. Picnicking opportunities. (17.1 acres) Activities Facilities Hazards Prohibited Park Rules Area Weather Forecast ABOUT US Contact Us Partners Broch",
+     "total_like": true,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/lava-tree-state-monument/",
+     "why": "total-looking"
+    }
+   ],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "off"
+  },
+  "US-6403": {
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Hapuna Beach State Recreation Area",
+   "official": {
+    "acres": 61.8,
+    "as": "61.8 acres",
+    "clean": false,
+    "line": "ut of the water and away from the shoreline! Lifeguard services. Hiking opportunity along the coastal trail. (61.8 acres) Lodging Information Hāpuna Beach State Recreation Area rents 4-person A-Frame shelters. These shelters consi",
+    "read": "2026-11-10",
+    "sent": "(61.8 acres)",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/hapuna-beach-state-recreation-area/",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 435,
+    "dissolved": {
+     "after": 587,
+     "before": 1637,
+     "copies": 4,
+     "families": {
+      "padus": 62,
+      "sghib": 525
+     },
+     "family_fold": 62,
+     "family_used": "sghib",
+     "key_union": 435,
+     "parts": 2,
+     "records": 9,
+     "summed": 525,
+     "tracts": 3
+    },
+    "family_fold": "layers {'sghib': 525, 'padus': 62}: one land in 2 layers, the sghib copy used (62 ac of copies not added)",
+    "manager": "",
+    "note": "9 joined records = 3 tracts: 4 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 1637 -> 587 acres",
+    "pieces": [
+     [
+      "sghib290",
+      "HAPUNA BEACH STATE RECREATION AREA",
+      525,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/hapuna-beach-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 604,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 61.8,
+     "as": "61.8 acres",
+     "clean": false,
+     "line": "ut of the water and away from the shoreline! Lifeguard services. Hiking opportunity along the coastal trail. (61.8 acres) Lodging Information Hāpuna Beach State Recreation Area rents 4-person A-Frame shelters. These shelters consi",
+     "total_like": true,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/hapuna-beach-state-recreation-area/",
+     "why": "total-looking"
+    }
+   ],
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "off"
+  },
+  "US-6404": {
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 100.0 acres, no total words near it)",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Kalopa State Recreation Area",
+   "official": {
+    "acres": 100.0,
+    "as": "100.0 acres",
+    "clean": false,
+    "line": "and’s native plants. Additional trails in the adjoining forest reserve, including a 2-mile horse loop trail. (100.0 acres) Lodging Information Kalōpā State Recreation Area rents duplex cabins. Cabin accommodations consist of 8-pers",
+    "read": "2026-11-10",
+    "sent": "(100.0 acres)",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kalopa-state-recreation-area/",
+    "why": "no total words near it"
+   },
+   "ours": {
+    "acres": 44,
+    "manager": "",
+    "pieces": [
+     [
+      195381,
+      "Kalopa State Recreation Area",
+      44,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kalopa-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": 56,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 100.0,
+     "as": "100.0 acres",
+     "clean": false,
+     "line": "and’s native plants. Additional trails in the adjoining forest reserve, including a 2-mile horse loop trail. (100.0 acres) Lodging Information Kalōpā State Recreation Area rents duplex cabins. Cabin accommodations consist of 8-pers",
+     "total_like": false,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kalopa-state-recreation-area/",
+     "why": "no total words near it"
+    }
+   ],
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-6405": {
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 4.0 acres, a tiny number without size wording)",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Kealakekua Bay State Historical Park",
+   "official": {
+    "acres": 4.0,
+    "as": "4.0 acres",
+    "clean": false,
+    "line": "ikiau Heiau, a traditional religious site, and the Captain Cook monument at a distance across Kealakekua Bay (4.0 acres). * Restroom facilities are only found on the Nāpōʻopoʻo section of the park. Nāpōʻopoʻo The beach of Nāpōʻop",
+    "read": "2026-11-10",
+    "sent": "Viewing of Hikiau Heiau, a traditional religious site, and the Captain Cook monument at a distance across Kealakekua Bay (4.0 acres).",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kealakekua-bay-state-historical-park/",
+    "why": "a tiny number without size wording"
+   },
+   "ours": {
+    "acres": 417,
+    "dissolved": {
+     "after": 761,
+     "before": 1837,
+     "copies": 2,
+     "families": {
+      "padus": 222,
+      "sghib": 539
+     },
+     "family_fold": 222,
+     "family_used": "sghib",
+     "key_union": 417,
+     "parts": 0,
+     "records": 4,
+     "summed": 539,
+     "tracts": 2
+    },
+    "family_fold": "layers {'sghib': 539, 'padus': 222}: one land in 2 layers, the sghib copy used (222 ac of copies not added)",
+    "manager": "",
+    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1837 -> 761 acres",
+    "pieces": [
+     [
+      "sghib294",
+      "KEALAKEKUA BAY STATE HISTORICAL PARK",
+      539,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kealakekua-bay-state-historical-park/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": 10325,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 4.0,
+     "as": "4.0 acres",
+     "clean": false,
+     "line": "ikiau Heiau, a traditional religious site, and the Captain Cook monument at a distance across Kealakekua Bay (4.0 acres). * Restroom facilities are only found on the Nāpōʻopoʻo section of the park. Nāpōʻopoʻo The beach of Nāpōʻop",
+     "total_like": false,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kealakekua-bay-state-historical-park/",
+     "why": "a tiny number without size wording"
+    }
+   ],
+   "t": "State Historical Park",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-6406": {
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 13.1 acres, no total words near it)",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Mackenzie State Recreation Area",
+   "official": {
+    "acres": 13.1,
+    "as": "13.1 acres",
+    "clean": false,
+    "line": "ine with picnicking in an ironwood grove. Good shore fishing. Old Hawaiian coastal trail traverses the park. (13.1 acres) Activities Facilities Hazards Prohibited Park Rules Area Weather Forecast ABOUT US Contact Us Partners Broch",
+    "read": "2026-11-10",
+    "sent": "(13.1 acres)",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/mackenzie-state-recreation-area/",
+    "why": "no total words near it"
+   },
+   "ours": {
+    "acres": 11,
+    "dissolved": {
+     "after": 27,
+     "before": 55,
+     "copies": 2,
+     "families": {
+      "padus": 13,
+      "sghia": 14
+     },
+     "family_fold": 13,
+     "family_used": "sghia",
+     "key_union": 11,
+     "parts": 0,
+     "records": 4,
+     "summed": 14,
+     "tracts": 2
+    },
+    "family_fold": "layers {'sghia': 14, 'padus': 13}: one land in 2 layers, the sghia copy used (13 ac of copies not added)",
+    "manager": "",
+    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 55 -> 27 acres",
+    "pieces": [
+     [
+      "sghia34",
+      "MACKENZIE STATE RECREATION AREA",
+      14,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/mackenzie-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": 16,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 13.1,
+     "as": "13.1 acres",
+     "clean": false,
+     "line": "ine with picnicking in an ironwood grove. Good shore fishing. Old Hawaiian coastal trail traverses the park. (13.1 acres) Activities Facilities Hazards Prohibited Park Rules Area Weather Forecast ABOUT US Contact Us Partners Broch",
+     "total_like": false,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/mackenzie-state-recreation-area/",
+     "why": "no total words near it"
+    }
+   ],
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-6407": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Wailoa River State Recreation Area",
+   "official": {
+    "acres": 131.9,
+    "as": "131.9 acres",
+    "clean": false,
+    "line": "ions. Information services and cultural displays at Wailoa Center which is accessible through Piopio street. (131.9 acres) Wailoa Center Wailoa Center, located within Wailoa River SRA, contains two galleries which host month-long a",
+    "read": "2026-11-10",
+    "sent": "(131.9 acres)",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/wailoa-river-state-recreation-area/",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 144,
+    "dissolved": {
+     "after": 241,
+     "before": 465,
+     "copies": 2,
+     "families": {
+      "padus": 129,
+      "sghia": 112
+     },
+     "family_fold": 112,
+     "family_used": "padus",
+     "key_union": 144,
+     "parts": 0,
+     "records": 4,
+     "summed": 129,
+     "tracts": 2
+    },
+    "family_fold": "layers {'padus': 129, 'sghia': 112}: one land in 2 layers, the padus copy used (112 ac of copies not added)",
+    "manager": "",
+    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 465 -> 241 acres",
+    "pieces": [
+     [
+      195411,
+      "Wailoa River State Recreation Area",
+      129,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/wailoa-river-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 9,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 131.9,
+     "as": "131.9 acres",
+     "clean": false,
+     "line": "ions. Information services and cultural displays at Wailoa Center which is accessible through Piopio street. (131.9 acres) Wailoa Center Wailoa Center, located within Wailoa River SRA, contains two galleries which host month-long a",
+     "total_like": true,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/wailoa-river-state-recreation-area/",
+     "why": "total-looking"
+    }
+   ],
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-6408": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Ahukini State Recreation Area",
+   "official": null,
+   "ours": {
+    "acres": 1,
+    "manager": "",
+    "pieces": [
+     [
+      195371,
+      "Ahukini State Recreation Pier",
+      1,
+      "words"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/ahukini-state-recreational-pier/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-6409": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Waimea State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-6410": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Iao Valley State Preserve",
+   "ours": null,
+   "score": null,
+   "t": "State Preserve",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-6411": {
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Polipoli State Recreation Area",
+   "official": {
+    "acres": 10.0,
+    "as": "10.0 acres",
+    "clean": false,
+    "line": "Nights are generally cold; winter nights frequently have below freezing temperatures. No campground showers. (10.0 acres). PLEASE NOTE: The Polipoli Cabin cannot be reserved through our online system. Visitors must walk-in or call",
+    "read": "2026-11-10",
+    "sent": "(10.0 acres).",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/maui/polipoli-spring-state-recreation-area/",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 1,
+    "dissolved": {
+     "after": 10,
+     "before": 18,
+     "copies": 1,
+     "families": {
+      "padus": 2,
+      "sghia": 8
+     },
+     "family_fold": 2,
+     "family_used": "sghia",
+     "key_union": 1,
+     "parts": 0,
+     "records": 3,
+     "summed": 8,
+     "tracts": 2
+    },
+    "family_fold": "layers {'sghia': 8, 'padus': 2}: one land in 2 layers, the sghia copy used (2 ac of copies not added)",
+    "manager": "",
+    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 18 -> 10 acres",
+    "pieces": [
+     [
+      "sghia28",
+      "POLIPOLI SPRING STATE RECREATION AREA",
+      8,
+      "words"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/maui/polipoli-spring-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 90,
+   "same_agency": false,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 1,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 10.0,
+     "as": "10.0 acres",
+     "clean": false,
+     "line": "Nights are generally cold; winter nights frequently have below freezing temperatures. No campground showers. (10.0 acres). PLEASE NOTE: The Polipoli Cabin cannot be reserved through our online system. Visitors must walk-in or call",
+     "total_like": true,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/maui/polipoli-spring-state-recreation-area/",
+     "why": "total-looking"
+    }
+   ],
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "off"
+  },
+  "US-6412": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Aiea Bay State Recreation Area",
+   "official": null,
+   "ours": {
+    "acres": 4,
+    "dissolved": {
+     "after": 6,
+     "before": 24,
+     "copies": 3,
+     "key_union": 4,
+     "parts": 0,
+     "records": 4,
+     "summed": 6,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 24 -> 6 acres",
+    "pieces": [
+     [
+      195374,
+      "Aiea Bay State Recreation Area",
+      6,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/aiea-bay-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-6413": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Keawa Heiau State Recreation Area",
+   "official": {
+    "acres": 384.0,
+    "as": "384 acre",
+    "clean": false,
+    "line": "on Explore Outdoor Hawaiʻi to make a camping reservation. Description Keaiwa Heiau State Recreation Area is a 384-acre park located approximately 12 miles from Waikiki. Keaïwa Heiau is located at the park entry. Continue along t",
+    "read": "2026-11-10",
+    "sent": "Keaiwa Heiau State Recreation Area is a 384-acre park located approximately 12 miles from Waikiki.",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/keaiwa-heiau-state-recreation-area/",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 334,
+    "dissolved": {
+     "after": 385,
+     "before": 1540,
+     "copies": 3,
+     "key_union": 334,
+     "parts": 0,
+     "records": 4,
+     "summed": 385,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1540 -> 385 acres",
+    "pieces": [
+     [
+      195383,
+      "Keaiwa Heiau State Recreation Area",
+      385,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/keaiwa-heiau-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 13,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 384.0,
+     "as": "384 acre",
+     "clean": false,
+     "line": "on Explore Outdoor Hawaiʻi to make a camping reservation. Description Keaiwa Heiau State Recreation Area is a 384-acre park located approximately 12 miles from Waikiki. Keaïwa Heiau is located at the park entry. Continue along t",
+     "total_like": true,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/keaiwa-heiau-state-recreation-area/",
+     "why": "total-looking"
+    }
+   ],
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-6414": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Malaekahana State Recreation Area",
+   "official": null,
+   "ours": {
+    "acres": 71,
+    "dissolved": {
+     "after": 110,
+     "before": 440,
+     "copies": 4,
+     "key_union": 71,
+     "parts": 2,
+     "records": 7,
+     "summed": 110,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "7 joined records = 1 tracts: 4 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 440 -> 110 acres",
+    "pieces": [
+     [
+      195393,
+      "Malaekahana State Recreation Area",
+      110,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/malaekahana-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-6415": {
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Sand Island State Recreation Area",
+   "official": {
+    "acres": 14.0,
+    "as": "14.0 acres",
+    "clean": false,
+    "line": "ing and board surfing. It fronts a small sand beach and has good views of Honolulu Harbor and ocean sunsets. (14.0 acres) Project Description UPDATE 12/18/25: A third community meeting date for this project was added for January 1",
+    "read": "2026-11-10",
+    "sent": "(14.0 acres)",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/sand-island-state-recreation-area/",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 269,
+    "dissolved": {
+     "after": 277,
+     "before": 543,
+     "copies": 2,
+     "families": {
+      "padus": 144,
+      "sghia": 133
+     },
+     "family_fold": 133,
+     "family_used": "padus",
+     "key_union": 269,
+     "parts": 0,
+     "records": 4,
+     "summed": 144,
+     "tracts": 2
+    },
+    "family_fold": "layers {'padus': 144, 'sghia': 133}: one land in 2 layers, the padus copy used (133 ac of copies not added)",
+    "manager": "",
+    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 543 -> 277 acres",
+    "pieces": [
+     [
+      195407,
+      "Sand Island State Recreation Area",
+      144,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/sand-island-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 1821,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 14.0,
+     "as": "14.0 acres",
+     "clean": false,
+     "line": "ing and board surfing. It fronts a small sand beach and has good views of Honolulu Harbor and ocean sunsets. (14.0 acres) Project Description UPDATE 12/18/25: A third community meeting date for this project was added for January 1",
+     "total_like": true,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/sand-island-state-recreation-area/",
+     "why": "total-looking"
+    }
+   ],
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "off"
+  },
+  "US-6416": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Wa'ahila Ridge State Recreation Area",
+   "official": null,
+   "ours": {
+    "acres": 64,
+    "dissolved": {
+     "after": 121,
+     "before": 219,
+     "copies": 2,
+     "families": {
+      "padus": 72,
+      "sghia": 49
+     },
+     "family_fold": 49,
+     "family_used": "padus",
+     "key_union": 64,
+     "parts": 0,
+     "records": 4,
+     "summed": 72,
+     "tracts": 2
+    },
+    "family_fold": "layers {'padus': 72, 'sghia': 49}: one land in 2 layers, the padus copy used (49 ac of copies not added)",
+    "manager": "",
+    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 219 -> 121 acres",
+    "pieces": [
+     [
+      195408,
+      "Waahila Ridge State Recreation Area",
+      72,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/waahila-ridge-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-6417": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Wahiawa Freshwater State Recreation Area",
+   "official": null,
+   "ours": {
+    "acres": 60,
+    "dissolved": {
+     "after": 67,
+     "before": 268,
+     "copies": 3,
+     "key_union": 60,
+     "parts": 0,
+     "records": 4,
+     "summed": 67,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 268 -> 67 acres",
+    "pieces": [
+     [
+      195409,
+      "Wahiawa Freshwater State Recreation Area",
+      67,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/wahiawa-freshwater-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-6419": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Hulihe'e Palace State Park",
+   "official": null,
+   "ours": {
+    "acres": 1,
+    "manager": "",
+    "pieces": [
+     [
+      157564,
+      "Hulihe'E Palace",
+      1,
+      "name (designation code ignored)"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/hulihee-palace/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-6420": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Kiholo  Reserve State Reserve",
+   "official": null,
+   "ours": {
+    "acres": 4214,
+    "dissolved": {
+     "after": 3,
+     "before": 9,
+     "copies": 2,
+     "key_union": 4214,
+     "parts": 0,
+     "records": 3,
+     "summed": 3,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 9 -> 3 acres",
+    "pieces": [
+     [
+      "sghia65",
+      "KIHOLO STATE PARK RESERVE",
+      3,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kiholo-state-park-reserve/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Reserve",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-6421": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Kohala Historical Sites State Preserve",
+   "official": {
+    "acres": 6.7,
+    "as": "6.7 acres",
+    "clean": false,
+    "line": ". The birthsite is a memorial to Hawaiʻi’s greatest king who united all the island chiefdoms into a kingdom. (6.7 acres) Malama Hawaii-Culture from Hawaii DLNR on Vimeo . Activities Facilities Hazards Prohibited Park Rules Area W",
+    "read": "2026-11-10",
+    "sent": "(6.7 acres)",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kohala-historical-sites-state-monument/",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 7,
+    "manager": "",
+    "pieces": [
+     [
+      195367,
+      "Kohala Historical Sites State Monument",
+      7,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kohala-historical-sites-state-monument/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 4,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 2,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 6.7,
+     "as": "6.7 acres",
+     "clean": false,
+     "line": ". The birthsite is a memorial to Hawaiʻi’s greatest king who united all the island chiefdoms into a kingdom. (6.7 acres) Malama Hawaii-Culture from Hawaii DLNR on Vimeo . Activities Facilities Hazards Prohibited Park Rules Area W",
+     "total_like": true,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kohala-historical-sites-state-monument/",
+     "why": "total-looking"
+    }
+   ],
+   "t": "State Preserve",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-6422": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Lapakahi State Historical Park",
+   "official": {
+    "acres": 262.0,
+    "as": "262.0 acres",
+    "clean": false,
+    "line": "waiian coastal settlement. Nearby ocean waters comprise a marine preserve with various activities regulated. (262.0 acres) Malama Hawaii-Culture from Hawaii DLNR on Vimeo . Activities Facilities Hazards Prohibited Park Rules Area W",
+    "read": "2026-11-10",
+    "sent": "(262.0 acres)",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/lapakahi-state-historical-park/",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 265,
+    "dissolved": {
+     "after": 565,
+     "before": 1151,
+     "copies": 2,
+     "families": {
+      "padus": 271,
+      "sghib": 294
+     },
+     "family_fold": 271,
+     "family_used": "sghib",
+     "key_union": 265,
+     "parts": 0,
+     "records": 4,
+     "summed": 294,
+     "tracts": 2
+    },
+    "family_fold": "layers {'sghib': 294, 'padus': 271}: one land in 2 layers, the sghib copy used (271 ac of copies not added)",
+    "manager": "",
+    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1151 -> 565 acres",
+    "pieces": [
+     [
+      "sghib289",
+      "LAPAKAHI STATE HISTORICAL PARK",
+      294,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/lapakahi-state-historical-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 1,
+   "same_agency": false,
+   "score": 8,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 262.0,
+     "as": "262.0 acres",
+     "clean": false,
+     "line": "waiian coastal settlement. Nearby ocean waters comprise a marine preserve with various activities regulated. (262.0 acres) Malama Hawaii-Culture from Hawaii DLNR on Vimeo . Activities Facilities Hazards Prohibited Park Rules Area W",
+     "total_like": true,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/lapakahi-state-historical-park/",
+     "why": "total-looking"
+    }
+   ],
+   "t": "State Historical Park",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-6423": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Manuka State Preserve",
+   "official": null,
+   "ours": {
+    "acres": 27187,
+    "dissolved": {
+     "after": 25714,
+     "before": 51415,
+     "copies": 1,
+     "key_union": 27187,
+     "parts": 0,
+     "records": 2,
+     "summed": 25714,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 51415 -> 25714 acres",
+    "pieces": [
+     [
+      "sghib207",
+      "MANUKA NATURAL AREA RESERVE",
+      25714,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/manuka-state-wayside/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Preserve",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-6424": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Pāʻulaʻula State Historic Site",
+   "official": null,
+   "ours": {
+    "acres": 19,
+    "manager": "",
+    "pieces": [
+     [
+      "sghib266",
+      "PAULAULA STATE HISTORIC SITE",
+      19,
+      "alias name (pin inside): PAULAULA STATE HISTORIC SITE"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/pa'ula'ula-state-historic-site",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 0,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Historic Site",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-6425": {
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Diamond Head State Preserve",
+   "official": {
+    "acres": 475.0,
+    "as": "475 acres",
+    "clean": true,
+    "line": "oric hiking trail, stunning coastal views, and military history. Diamond Head State Monument encompasses over 475 acres, including the interior and outer slopes of the crater. This broad, saucer-shaped crater was formed about 300",
+    "read": "2026-11-10",
+    "sent": "Diamond Head State Monument encompasses over 475 acres, including the interior and outer slopes of the crater.",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/diamond-head-state-monument/",
+    "why": "clean total"
+   },
+   "ours": {
+    "acres": 284,
+    "dissolved": {
+     "after": 503,
+     "before": 2012,
+     "copies": 3,
+     "key_union": 284,
+     "parts": 0,
+     "records": 4,
+     "summed": 503,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2012 -> 503 acres",
+    "pieces": [
+     [
+      195365,
+      "Diamond Head State Monument",
+      503,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/diamond-head-state-monument/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 40,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 475.0,
+     "as": "475 acres",
+     "clean": true,
+     "line": "oric hiking trail, stunning coastal views, and military history. Diamond Head State Monument encompasses over 475 acres, including the interior and outer slopes of the crater. This broad, saucer-shaped crater was formed about 300",
+     "total_like": true,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/diamond-head-state-monument/",
+     "why": "clean total"
+    }
+   ],
+   "t": "State Preserve",
+   "ver": 15,
+   "verdict": "off"
+  },
+  "US-6426": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Iolani Palace State Preserve",
+   "ours": null,
+   "score": null,
+   "t": "State Preserve",
+   "ver": 15,
+   "verdict": "no outline"
+  },
+  "US-6427": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Kaiwi State Scenic Site",
+   "official": null,
+   "ours": {
+    "acres": 324,
+    "manager": "",
+    "pieces": [
+     [
+      158433,
+      "Kaiwi State Scenic Shoreline",
+      324,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/kaiwi-state-scenic-shoreline/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Scenic Site",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-6428": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "La'ie Point State Park",
+   "official": null,
+   "ours": {
+    "acres": 4,
+    "dissolved": {
+     "after": 5,
+     "before": 6,
+     "copies": 1,
+     "families": {
+      "padus": 4,
+      "sghia": 1
+     },
+     "family_fold": 1,
+     "family_used": "padus",
+     "parts": 0,
+     "records": 3,
+     "tracts": 2
+    },
+    "family_fold": "layers {'padus': 4, 'sghia': 1}: one land in 2 layers, the padus copy used (1 ac of copies not added)",
+    "manager": "",
+    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 6 -> 5 acres",
+    "pieces": [
+     [
+      195388,
+      "Laie Point State Wayside",
+      4,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/laie-point-state-wayside/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-6429": {
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 4 acre, a tiny number without size wording)",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Pu'u O Mahuka Heiau State Historic Site",
+   "official": {
+    "acres": 4.0,
+    "as": "4 acre",
+    "clean": false,
+    "line": "Historic Landmark in 1962 in recognition of its importance to Hawaiian culture and history. Also in 1962, the 4-acre property encompassing the heiau was placed under the jurisdiction of State Parks to preserve this significant",
+    "read": "2026-11-10",
+    "sent": "Also in 1962, the 4-acre property encompassing the heiau was placed under the jurisdiction of State Parks to preserve this significant site for future generations.",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/puu-o-mahuka-heiau-state-historic-site/",
+    "why": "a tiny number without size wording"
+   },
+   "ours": {
+    "acres": 3,
+    "dissolved": {
+     "after": 4,
+     "before": 12,
+     "copies": 2,
+     "key_union": 3,
+     "parts": 0,
+     "records": 3,
+     "summed": 4,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 12 -> 4 acres",
+    "pieces": [
+     [
+      "sghia3",
+      "PUU O MAHUKA HEIAU STATE HISTORIC SITE",
+      4,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/puu-o-mahuka-heiau-state-historic-site/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": 25,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 2.0,
+     "as": "2 acres",
+     "clean": false,
+     "line": "onument History Puʻu o Mahuka Heiau is the largest heiau (religious site or temple) on Oʻahu, covering almost 2 acres. The name is translated as “hill of escape”. Undoubtedly, this heiau played an important role in the social,",
+     "total_like": false,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/puu-o-mahuka-heiau-state-historic-site/",
+     "why": "a tiny number without size wording"
+    },
+    {
+     "acres": 4.0,
+     "as": "4 acre",
+     "clean": false,
+     "line": "Historic Landmark in 1962 in recognition of its importance to Hawaiian culture and history. Also in 1962, the 4-acre property encompassing the heiau was placed under the jurisdiction of State Parks to preserve this significant",
+     "total_like": false,
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/puu-o-mahuka-heiau-state-historic-site/",
+     "why": "a tiny number without size wording"
+    }
+   ],
+   "t": "State Historic Site",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-6430": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Queen Emma Summer Palace State Park",
+   "official": null,
+   "ours": {
+    "acres": 6,
+    "dissolved": {
+     "after": 8,
+     "before": 16,
+     "copies": 1,
+     "key_union": 6,
+     "parts": 0,
+     "records": 2,
+     "summed": 8,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 16 -> 8 acres",
+    "pieces": [
+     [
+      "sghia66",
+      "QUEEN EMMA SUMMER PALACE",
+      8,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/queen-emma-summer-palace/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-6431": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Royal Mausoleum State Preserve",
+   "official": null,
+   "ours": {
+    "acres": 2,
+    "dissolved": {
+     "after": 3,
+     "before": 9,
+     "copies": 2,
+     "key_union": 2,
+     "parts": 0,
+     "records": 3,
+     "summed": 3,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 9 -> 3 acres",
+    "pieces": [
+     [
+      "sghib302",
+      "ROYAL MAUSOLEUM STATE MONUMENT",
+      3,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/royal-mausoleum-state-monument/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/archaeology-history/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Preserve",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7690": {
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Nounou Forest Reserve",
+   "official": null,
+   "ours": {
+    "acres": 485,
+    "dissolved": {
+     "after": 723,
+     "before": 1442,
+     "copies": 1,
+     "key_union": 485,
+     "parts": 0,
+     "records": 2,
+     "summed": 723,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1442 -> 723 acres",
+    "pieces": [
+     [
+      "sghib248",
+      "NOUNOU FOREST RESERVE",
+      723,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/kauai/nounou-and-kalepa-forest-reserves/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 1393.0,
+     "as": "1,393 acres",
+     "clean": false,
+     "line": "rves Nounou and Kālepa Forest Reserves Nounou and Kālepa Forest Reserves (FR) together comprise approximately 1,393 acres of public land, and are located on the eastern side of Kaua‘i. Nounou FR lies to the north of Kālepa FR, sepa",
+     "total_like": false,
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/kauai/nounou-and-kalepa-forest-reserves/",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "Forest Reserve",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-7691": {
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Kalepa Forest Reserve",
+   "official": null,
+   "ours": {
+    "acres": 664,
+    "family_fold": "layers {'padus': 709, 'sghib': 673}: one land in 2 layers, the padus copy used (673 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      195236,
+      "Kalepa Mountain Forest Reserve",
+      709,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/kauai/nounou-and-kalepa-forest-reserves/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 1393.0,
+     "as": "1,393 acres",
+     "clean": false,
+     "line": "rves Nounou and Kālepa Forest Reserves Nounou and Kālepa Forest Reserves (FR) together comprise approximately 1,393 acres of public land, and are located on the eastern side of Kaua‘i. Nounou FR lies to the north of Kālepa FR, sepa",
+     "total_like": false,
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/kauai/nounou-and-kalepa-forest-reserves/",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "Forest Reserve",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-7692": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Kaneohe Forest Reserve",
+   "official": null,
+   "ours": {
+    "acres": 65,
+    "family_fold": "layers {'padus': 65, 'sghib': 20}: one land in 2 layers, the padus copy used (20 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      195237,
+      "Kaneohe Forest Reserve",
+      64,
+      "name"
+     ],
+     [
+      157430,
+      "Kaneohe Beach Park",
+      1,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Forest Reserve",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7693": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Hanauma Bay Nature Reserve",
+   "official": null,
+   "ours": {
+    "acres": 60,
+    "dissolved": {
+     "after": 195,
+     "before": 387,
+     "copies": 2,
+     "families": {
+      "padus": 99,
+      "sghia": 96
+     },
+     "family_fold": 96,
+     "family_used": "padus",
+     "key_union": 60,
+     "parts": 0,
+     "records": 4,
+     "summed": 99,
+     "tracts": 2
+    },
+    "family_fold": "layers {'padus': 99, 'sghia': 96}: one land in 2 layers, the padus copy used (96 ac of copies not added)",
+    "manager": "",
+    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 387 -> 195 acres",
+    "pieces": [
+     [
+      158431,
+      "Hanauma Bay State Underwater Park",
+      99,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://www.honolulu.gov/parks-hbay.html",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "Nature Reserve",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7694": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Kohala Forest Reserve",
+   "official": null,
+   "ours": {
+    "acres": 22542,
+    "family_fold": "layers {'padus': 17787, 'sghib': 17420}: one land in 2 layers, the padus copy used (17,420 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      195243,
+      "Kohala Forest Reserve",
+      17787,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/hawaii-island/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Forest Reserve",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7695": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Hilo Forest Reserve",
+   "official": {
+    "acres": 64000.0,
+    "as": "64,000 acres",
+    "clean": false,
+    "line": "ve System » Hilo Forest Reserve Hilo Forest Reserve The Hilo Forest Reserve(FR) is comprised of approximately 64,000 acres of public land and was established by Governor’s Proclamation on July 24,1905 for the purpose of watershed pr",
+    "read": "2026-11-10",
+    "sent": "The Hilo Forest Reserve(FR) is comprised of approximately 64,000 acres of public land and was established by Governor’s Proclamation on July 24,1905 for the purpose of watershed protection.",
+    "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/hawaii-island/hilo/",
+    "why": "history"
+   },
+   "ours": {
+    "acres": 60659,
+    "family_fold": "layers {'sghib': 53579, 'padus': 21497}: one land in 2 layers, the sghib copy used (21,497 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sghib118",
+      "HILO FOREST RESERVE (WATERSHED RESERVE SEC.)",
+      41972,
+      "name"
+     ],
+     [
+      "sghib112",
+      "HILO FOREST RESERVE (KAIWIKI SEC.)",
+      5158,
+      "name"
+     ],
+     [
+      "sghib108",
+      "HILO FOREST RESERVE (PIHA SEC.)",
+      4574,
+      "name"
+     ],
+     [
+      "sghib111",
+      "HILO FOREST RESERVE (KAMAEE SEC.)",
+      1545,
+      "name"
+     ],
+     [
+      "sghib109",
+      "HILO FOREST RESERVE (OPEA SEC.)",
+      262,
+      "name"
+     ],
+     [
+      "sghib113",
+      "HILO FOREST RESERVE (KAUKU SEC.)",
+      68,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/hawaii-island/hilo/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 5,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 2,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 64000.0,
+     "as": "64,000 acres",
+     "clean": false,
+     "line": "ve System » Hilo Forest Reserve Hilo Forest Reserve The Hilo Forest Reserve(FR) is comprised of approximately 64,000 acres of public land and was established by Governor’s Proclamation on July 24,1905 for the purpose of watershed pr",
+     "total_like": false,
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/hawaii-island/hilo/",
+     "why": "history"
+    },
+    {
+     "acres": 4449.0,
+     "as": "4,449 acres",
+     "clean": false,
+     "line": "ision of Forestry and Wildlife (DOFAW), the Laupāhoehoe Forest consists of two state-managed parcels of land: 4,449 acres of land designated as Forest Reserve (FR), and 7,894 acres designated as a Natural Area Reserve (NAR). The ex",
+     "total_like": true,
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/hawaii-island/hilo/",
+     "why": "total-looking"
+    },
+    {
+     "acres": 7894.0,
+     "as": "7,894 acres",
+     "clean": false,
+     "line": "est consists of two state-managed parcels of land: 4,449 acres of land designated as Forest Reserve (FR), and 7,894 acres designated as a Natural Area Reserve (NAR). The extent is also designated as a demonstration forest for the H",
+     "total_like": true,
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/hawaii-island/hilo/",
+     "why": "total-looking"
+    }
+   ],
+   "t": "Forest Reserve",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-7696": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Malama-ki Forest Reserve",
+   "official": null,
+   "ours": {
+    "acres": 968,
+    "manager": "",
+    "pieces": [
+     [
+      "sghib85",
+      "MALAMA KI FOREST RESERVE",
+      1441,
+      "reviewed"
+     ],
+     [
+      195200,
+      "Malama-ki Forest Reserve",
+      6,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://mapcarta.com/24047090",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Forest Reserve",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7915": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Honouliuli National Historic Site",
+   "official": {
+    "acres": 160.0,
+    "as": "160 acres",
+    "clean": false,
+    "line": "st and longest-run incarceration and internment site on the Hawaiian Islands during WWII. The camp itself was 160 acres, but the park service maintains and preserves 123 of those acres. It is located on the island of O‘ahu within",
+    "read": "2026-11-10",
+    "sent": "The camp itself was 160 acres, but the park service maintains and preserves 123 of those acres.",
+    "url": "https://www.nps.gov/hono/learn/index.htm",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 168,
+    "family_fold": "layers {'sghib': 155, 'padus': 123}: one land in 2 layers, the sghib copy used (123 ac of copies not added)",
+    "manager": "",
+    "pieces": [
+     [
+      "sghib259",
+      "HONOULIULI NATIONAL HISTORIC SITE",
+      155,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/hono/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/hono/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/hono/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/hono/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": 5,
+   "same_agency": false,
+   "score": 8,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 160.0,
+     "as": "160 acres",
+     "clean": false,
+     "line": "st and longest-run incarceration and internment site on the Hawaiian Islands during WWII. The camp itself was 160 acres, but the park service maintains and preserves 123 of those acres. It is located on the island of O‘ahu within",
+     "total_like": true,
+     "url": "https://www.nps.gov/hono/learn/index.htm",
+     "why": "total-looking"
+    }
+   ],
+   "t": "National Historic Site",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-7916": {
+   "checked": "2026-11-10",
+   "handover": [],
+   "n": "Pearl Harbor National Memorial",
+   "official": null,
+   "ours": {
+    "acres": 20,
+    "manager": "",
+    "pieces": [
+     [
+      "sghib330",
+      "PEARL HARBOR NATIONAL MEMORIAL",
+      22,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/perl/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "National Memorial",
+   "ver": 15,
+   "verdict": "no size on page"
+  }
+ },
+ "read": "2026-11-10"
+}
