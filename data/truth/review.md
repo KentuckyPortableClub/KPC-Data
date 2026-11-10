@@ -53,6 +53,7 @@ Updated 2026-11-10. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-AK | 179 | 136 | 18 | **6** | 3 | 99 | 10 | 14 | 0 | 6 |
 | US-HI | 102 | 88 | 14 | **7** | 14 | 50 | 3 | 5 | 0 | 4 |
 | US-MI | 388 | 355 | 8 | **6** | 11 | 322 | 7 | 5 | 0 | 10 |
+| US-OH | 276 | 275 | 6 | **1** | 1 | 262 | 4 | 1 | 0 | 2 |
 
 ## US-KY
 
@@ -3585,6 +3586,22 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 - US-1517 Mackinac Island State Park · transfer: “reated in 1895 to supervise Mackinac Island State Park, Michigan’s first state park, which had been transferred to the state by the United States government. For 20 years prior to this, the federal go” · owner now: United States · [www.mackinacparks.com](https://www.mackinacparks.com/explore/history/)
 - US-1517 Mackinac Island State Park · transfer: “British and moved to Mackinac Island, Michilimackinac had been a thriving fur-trade community. When deeded to the Commission, the 27-acre site was a popular trailer park and camp site. Dousman’s Mill ” · owner now: United States · [www.mackinacparks.com](https://www.mackinacparks.com/explore/history/)
 - US-6666 Edger Waterfowl National Wildlife Management Area · managed by: “operating Federal Land) in Barry County E C Ave Waterfowl Production Areas (WPAs) are Federal lands managed by the U.S. Fish and Wildlife Service (USFWS) in partnership and cooperation with the Michig” · owner now: U.S · [www.michigandnr.com](http://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Edgar_WPA_map.pdf)
+
+## US-OH
+
+**Agree:** 6 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 6 agree (second agency).
+
+**Size more than 15% off (our outline vs the agency):**
+
+- US-1942 Cleveland Lakefront State Park: ours 105 ac vs agency 147 acre (= 147 ac; 29% off) · cause: agency bigger: our outline may miss a tract · [www.clevelandmetroparks.com](https://www.clevelandmetroparks.com/parks/visit/parks/lakefront-reservation) · “orite Cleveland Metroparks merchandise. In addition, this location rents beach umbrella... Edgewater Park The 147 acre Edgewater Park is the westernmost park in”
+
+**Unsure (no clean total found; the nearest number is only a guess):**
+
+- US-9491 Parkersburg State Wildlife Area: ours 112 ac · cause: no total-looking sentence: numbers found were parts or other units
+
+**Handover / closure hints (a person decides; nothing applied):**
+
+- US-13539 Fernald National Preserve · transfer: “omprehensive Environmental Response, Compensation, and Liability Act (CERCLA) regulations. The site transferred to the Office of Legacy Management in 2006 and requires operation and maintenance of rem” · owner now: Office of Legacy Management · [www.energy.gov](https://www.energy.gov/lm/fernald-preserve-ohio-site)
 
 ## Kentucky test gate
 
