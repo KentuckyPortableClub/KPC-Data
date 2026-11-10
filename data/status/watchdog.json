@@ -1,10 +1,5 @@
 {
  "restarted": {
-  "kpc-collector.yml|2026-11-03T03:16:00+00:00": "2026-11-03T06:00+00:00 started",
-  "kpc-convert-layers.yml|2026-11-03T03:53:00+00:00": "2026-11-03T06:00+00:00 started",
-  "kpc-copy-from-links.yml|2026-11-03T05:11:00+00:00": "2026-11-03T06:00+00:00 started",
-  "kpc-engine.yml|2026-11-03T04:08:00+00:00": "2026-11-03T06:00+00:00 started",
-  "kpc-waiting-room.yml|2026-11-03T04:42:00+00:00": "2026-11-03T06:00+00:00 started",
   "kpc-camp-weekly.yml|2026-11-03T07:29:00+00:00": "2026-11-03T08:35+00:00 started",
   "kpc-docs-merge.yml|2026-11-03T06:26:00+00:00": "2026-11-03T08:35+00:00 started",
   "kpc-engine-discover.yml|2026-11-03T06:19:00+00:00": "2026-11-03T08:35+00:00 started",
@@ -307,10 +302,19 @@
   "kpc-eu-alerts.yml|2026-11-10T00:40:00+00:00": "2026-11-10T02:41+00:00 started",
   "kpc-flow.yml|2026-11-10T01:46:00+00:00": "2026-11-10T02:41+00:00 started",
   "kpc-waiting-room.yml|2026-11-10T00:42:00+00:00": "2026-11-10T02:41+00:00 started",
-  "kpc-copy-from-links.yml|2026-11-10T03:11:00+00:00": "2026-11-10T04:17+00:00 started"
+  "kpc-copy-from-links.yml|2026-11-10T03:11:00+00:00": "2026-11-10T04:17+00:00 started",
+  "kpc-convert-layers.yml|2026-11-10T03:53:00+00:00": "2026-11-10T07:01+00:00 started",
+  "kpc-copy-from-links.yml|2026-11-10T06:11:00+00:00": "2026-11-10T07:01+00:00 started",
+  "kpc-engine.yml|2026-11-10T04:08:00+00:00": "2026-11-10T07:01+00:00 started",
+  "kpc-hardlook.yml|2026-11-10T06:13:00+00:00": "2026-11-10T07:01+00:00 started",
+  "kpc-waiting-room.yml|2026-11-10T04:42:00+00:00": "2026-11-10T07:01+00:00 started"
  },
- "last": "2026-11-10T04:17+00:00",
+ "last": "2026-11-10T07:01+00:00",
  "last_restarted": [
-  "kpc-copy-from-links.yml (missed Nov 10 03:11 UTC)"
+  "kpc-convert-layers.yml (missed Nov 10 03:53 UTC)",
+  "kpc-copy-from-links.yml (missed Nov 10 06:11 UTC)",
+  "kpc-engine.yml (missed Nov 10 04:08 UTC)",
+  "kpc-hardlook.yml (missed Nov 10 06:13 UTC)",
+  "kpc-waiting-room.yml (missed Nov 10 04:42 UTC)"
  ]
 }

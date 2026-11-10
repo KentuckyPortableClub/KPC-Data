@@ -14,7 +14,7 @@
    "last_run": "2026-11-10",
    "made": "1068 audit rows not clean in 43 areas; waiting for audit 65, waiting for key 1",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42754809330",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42772275009",
    "waiting_on": "chat 11 / 12 (audit answers), chat 2 (fixes)"
   },
   "Cell coverage (FCC)": {
@@ -1076,9 +1076,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-10",
-   "made": "2026-11-10 04:17 UTC: 1 skipped run(s) started again: kpc-copy-from-links.yml (missed Nov 10 03:11 UTC)",
+   "made": "2026-11-10 07:01 UTC: 5 skipped run(s) started again: kpc-convert-layers.yml (missed Nov 10 03:53 UTC); kpc-copy-from-links.yml (missed Nov 10 06:11 UTC); kpc-engine.yml (missed Nov 10 04:08 UTC); kpc-hardlook.yml (missed Nov 10 06:13 UTC); kpc-waiting-room.yml (missed Nov 10 04:42 UTC)",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42754809330",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42772275009",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1190,7 +1190,7 @@
    "last_run": "2026-11-10",
    "made": "site = main: the website has the newest data",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42754809330",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42772275009",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "answer-sheet-check": {
@@ -1202,9 +1202,9 @@
    "waiting_on": "proposals: answer YES / NO / NOT SURE in an inbox batch"
   },
   "campground info bot": {
-   "areas": "left: 17",
+   "areas": "left: 15",
    "last_run": "2026-11-10",
-   "made": "US-AK: done; {\"camps\": 368, \"needs_browser\": 0, \"needs_key\": 234, \"no_page\": 4, \"not_official\": 0, \"ok\": 8, \"other\": 9, \"resting\": 0, \"robots\": 113, \"with_booking\": 64, \"with_elevation\": 0, \"with_facts\": 11, \"with",
+   "made": "US-MI: done; {\"camps\": 511, \"needs_browser\": 2, \"needs_key\": 110, \"no_page\": 377, \"not_official\": 0, \"ok\": 3, \"other\": 9, \"resting\": 0, \"robots\": 10, \"with_booking\": 12, \"with_elevation\": 0, \"with_facts\": 5, \"with",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42731491247",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
@@ -1266,9 +1266,9 @@
    "waiting_on": "chat 8 grades the sample; chat 2 reads the name-mismatch list; nothing goes in a key by itself"
   },
   "park truth checker": {
-   "areas": "left: 18",
+   "areas": "left: 16",
    "last_run": "2026-11-10",
-   "made": "US-AK: done; {\"agree\": 18, \"handover_hints\": 14, \"no_page\": 0, \"no_size\": 99, \"off\": 6, \"ours_unknown\": 10, \"parks\": 179, \"retired\": 0, \"unsure\": 3, \"weak\": 6, \"with_outline\": 136}",
+   "made": "US-MI: done; {\"agree\": 8, \"handover_hints\": 5, \"no_page\": 1, \"no_size\": 322, \"off\": 6, \"ours_unknown\": 7, \"parks\": 388, \"retired\": 0, \"unsure\": 11, \"weak\": 10, \"with_outline\": 355}",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42731491247",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
@@ -1283,7 +1283,7 @@
   },
   "waiting room": {
    "last_run": "2026-11-10",
-   "made": "heartbeat 0 h old, 475 files waiting",
+   "made": "heartbeat 0 h old, 477 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
