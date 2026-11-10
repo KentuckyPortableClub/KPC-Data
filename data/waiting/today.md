@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 474 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 475 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -291,6 +291,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/trails/US-8437.json | PASS |  |
 | ? | ? | data/trails/US-8617.json | PASS |  |
 | ? | ? | data/trails/US-9163.json | PASS |  |
+| ? | ? | data/truth/US-AK.json | PASS |  |
 | ? | ? | data/truth/US-AL.json | PASS |  |
 | ? | ? | data/truth/US-AR.json | PASS |  |
 | ? | ? | data/truth/US-AZ.json | PASS |  |
