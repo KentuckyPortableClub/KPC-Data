@@ -660,6 +660,26 @@
    "status": "done",
    "updated": "2026-11-09"
   },
+  "US-OR": {
+   "checked": 440,
+   "counts": {
+    "agree": 51,
+    "handover_hints": 28,
+    "no_page": 2,
+    "no_size": 229,
+    "off": 30,
+    "ours_unknown": 26,
+    "parks": 440,
+    "retired": 0,
+    "unsure": 46,
+    "weak": 19,
+    "with_outline": 384
+   },
+   "left": 0,
+   "parks": 440,
+   "status": "done",
+   "updated": "2026-11-09"
+  },
   "US-PA": {
    "checked": 494,
    "counts": {
@@ -895,51 +915,45 @@
  },
  "last": {
   "areas": [
-   "US-CA"
+   "US-OR"
   ],
   "manners": {
    "arcgis_exempt": 0,
-   "browser": 6,
-   "dropped_queued": 5,
-   "errors": 3,
+   "browser": 12,
+   "deferred": 1,
+   "dropped_queued": 10,
+   "errors": 0,
+   "for_person": 1,
    "for_person_urls": [
     [
-     "http://parks.ca.gov/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from parks.ca.gov this run"
+     "https://maps.app.goo.gl/robots.txt",
+     "robots.txt answered 400: nothing fetched from maps.app.goo.gl this run"
     ],
     [
-     "https://files.santaclaracounty.gov/robots.txt",
-     "robots.txt answered 403: nothing fetched from files.santaclaracounty.gov this run"
-    ],
-    [
-     "http://dbw.parks.ca.gov/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from dbw.parks.ca.gov this run"
-    ],
-    [
-     "https://www.fire.ca.gov/robots.txt",
-     "robots.txt answered 403: nothing fetched from www.fire.ca.gov this run"
+     "https://www.blm.gov/sites/default/files/documents/files/nwo_whittakercrk_brochure.pdf",
+     "HTTP 403 twice"
     ]
    ],
-   "requests": 843,
-   "rested": 5,
-   "retry403": 2,
-   "robots": 4,
-   "robots_unreadable": 4,
-   "strikes": 5
+   "requests": 497,
+   "rested": 0,
+   "retry403": 1,
+   "robots": 3,
+   "robots_unreadable": 1,
+   "strikes": 2
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 42,
-   "no_size": 186,
-   "ours_unknown": 12,
-   "pages_read": 674,
-   "parks": 410,
+   "handover_hints": 28,
+   "no_size": 231,
+   "ours_unknown": 26,
+   "pages_read": 435,
+   "parks": 440,
    "retired": 0,
-   "size_agree": 83,
-   "size_off": 32,
-   "size_unsure": 78,
+   "size_agree": 51,
+   "size_off": 30,
+   "size_unsure": 46,
    "skipped_fresh": 0,
-   "with_outline": 391
+   "with_outline": 384
   },
   "when": "2026-11-09"
  },
