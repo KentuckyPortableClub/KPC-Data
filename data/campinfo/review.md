@@ -42,7 +42,7 @@ Updated 2026-11-10. Every fact in <area>.json carries its source url, read date 
 | US-KS | 117 | 0 | 52 | 0 | 65 | 0 | 0 | 0 | 0 | 0 | 63 | 0 |
 | US-NE | 232 | 3 | 11 | 2 | 0 | 185 | 6 | 23 | 2 | 0 | 74 | 0 |
 | US-CO | 653 | 183 | 337 | 16 | 0 | 97 | 0 | 0 | 20 | 2 | 316 | 0 |
-| US-WY | 301 | 5 | 162 | 1 | 0 | 0 | 79 | 0 | 54 | 0 | 41 | 0 |
+| US-WY | 301 | 5 | 162 | 3 | 0 | 0 | 79 | 0 | 52 | 0 | 41 | 0 |
 | US-ID | 450 | 27 | 311 | 33 | 4 | 0 | 0 | 35 | 40 | 8 | 100 | 0 |
 | US-MT | 389 | 30 | 311 | 0 | 0 | 0 | 0 | 0 | 48 | 0 | 78 | 0 |
 | US-NV | 87 | 24 | 34 | 0 | 0 | 0 | 0 | 7 | 22 | 11 | 46 | 0 |
@@ -100,7 +100,7 @@ Updated 2026-11-10. Every fact in <area>.json carries its source url, read date 
 - reservations.wvstateparks.com: 26 campgrounds
 - southcarolinaparks.com: 22 campgrounds
 - cpw.state.co.us: 16 campgrounds
-- www.recreation.gov: 5 campgrounds
+- www.recreation.gov: 6 campgrounds
 - gastateparks.org: 3 campgrounds
 - wvdnr.gov: 2 campgrounds
 - www.fs.usda.gov: 2 campgrounds
@@ -110,6 +110,7 @@ Updated 2026-11-10. Every fact in <area>.json carries its source url, read date 
 - dnr.wisconsin.gov: 1 campgrounds
 - tpwd.texas.gov: 1 campgrounds
 - wgfapps.wyo.gov: 1 campgrounds
+- www.nps.gov: 1 campgrounds
 
 ## Kentucky answer-key check (R5: the bot vs kpc-campgrounds.json, hand-checked)
 
