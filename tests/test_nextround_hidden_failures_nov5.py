@@ -42,7 +42,7 @@ for n, (t, d) in docs.items():
                 why = [w for w, c in (('followed', (d.get('name') or n) in listened), ('needed', jn in needed), ('dispatches', bool(re.search(r'gh workflow run|/dispatches', t))),
                        ('matrix', bool(stg.get('matrix')) and stg.get('fail-fast', True) is not False), ('watchdog', n == 'kpc-watchdog.yml'),
                        ('not last', not (j['steps'][-1].get('name') or '').startswith(G8)),
-                       ('no off switch', st['env']['KPC_FAIL_SAFE'] != "${{ vars.KPC_HIDDEN_RED != 'off' && '1' || '0' }}")) if c]
+                       ('no off switch', st['env']['KPC_FAIL_SAFE'] not in ("${{ vars.KPC_HIDDEN_RED != 'off' && '1' || '0' }}", "${{ vars.KPC_HIDDEN_RED == 'all' && '1' || '0' }}"))) if c]   # Nov 10 (quiet runs): retry / scoreboard / storage / measure jobs are narrowed to red-only-with-KPC_HIDDEN_RED=all
                 if why: beh.append(f'{n}:{jn} marked safe but {why}')
             py = r.split("<<'PY'\n", 1)[1].rsplit('PY', 1)[0]
             with tempfile.TemporaryDirectory() as tmp:
