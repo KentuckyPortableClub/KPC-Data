@@ -55,7 +55,7 @@ Updated 2026-11-11. Every fact in <area>.json carries its source url, read date 
 | US-HI | 22 | 10 | 2 | 0 | 0 | 0 | 8 | 0 | 2 | 0 | 12 | 0 |
 | US-MI | 511 | 3 | 110 | 0 | 12 | 0 | 377 | 0 | 9 | 0 | 12 | 0 |
 | US-OH | 96 | 0 | 11 | 0 | 12 | 0 | 62 | 0 | 11 | 0 | 11 | 0 |
-| US-UT | 459 | 40 | 331 | 1 | 0 | 0 | 13 | 0 | 74 | 1 | 115 | 0 |
+| US-UT | 459 | 39 | 331 | 8 | 0 | 4 | 13 | 0 | 64 | 1 | 115 | 0 |
 
 ## Needs a secret / not built yet
 
@@ -73,9 +73,9 @@ Updated 2026-11-11. Every fact in <area>.json carries its source url, read date 
 - reserve.floridastateparks.org: 55 campgrounds · robots.txt says no
 - dec.ny.gov: 55 campgrounds · robots.txt says no
 - www.wlf.louisiana.gov: 31 campgrounds · host resting (robots.txt could not be read: next run)
+- www.fs.usda.gov: 26 campgrounds · host resting
 - reserve.tnstateparks.com: 25 campgrounds · host resting (robots.txt could not be read: next run)
 - www.fdacs.gov: 23 campgrounds · robots.txt says no
-- www.fs.usda.gov: 22 campgrounds · host resting
 - destateparks.com: 22 campgrounds · host resting (robots.txt could not be read: next run)
 - www.lastateparks.com: 21 campgrounds · host resting (robots.txt could not be read: next run)
 - www.tn.gov: 17 campgrounds · host resting (robots.txt could not be read: next run)
@@ -103,6 +103,7 @@ Updated 2026-11-11. Every fact in <area>.json carries its source url, read date 
 - reservations.wvstateparks.com: 26 campgrounds
 - southcarolinaparks.com: 22 campgrounds
 - cpw.state.co.us: 16 campgrounds
+- wildlife.utah.gov: 7 campgrounds
 - www.recreation.gov: 6 campgrounds
 - gastateparks.org: 3 campgrounds
 - wvdnr.gov: 2 campgrounds
@@ -3857,11 +3858,14 @@ Updated 2026-11-11. Every fact in <area>.json carries its source url, read date 
   - restrooms = "yes (kind not stated)" · “experience, be sure to look for RV sites with full or partial hookups, as well as nearby restrooms and showers. RV and Trailer Camping Tent ”
   - rules.pets = "Pets allowed" · “ore) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Accessibility needs Pets allowed Trailer sites Options Length (ft) mor”
   - showers = true · “e sure to look for RV sites with full or partial hookups, as well as nearby restrooms and showers. RV and Trailer Camping Tent Camping is a ”
-- **Dispersed camping on WMA** (intake-US-5838, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [wildlife.utah.gov](https://wildlife.utah.gov/wmas)
-  - booking.url = "https://wildlife.utah.gov/wmas" · “booking link from our outside research (camping, in the park) row (official system wildlife.utah.gov)”
-  - map.date_how = "web page, no date in the link" · “link “Utah Wildlife and Waterfowl Management Areas map””
-  - map.url = "https://experience.arcgis.com/experience/2cb690e760b444e7a2 · “link “Utah Wildlife and Waterfowl Management Areas map” -> https://experience.arcgis.com/experience/2cb690e760b444e7a280af164e6f6766/”
-  - rules.pets = "no dogs are allowed between March 10 and Aug" · “? Annabella WMA Sevier Southern Upland game habitat No seasonal closure dates Per R657-6, no dogs are allowed between March 10 and Aug. 31 a”
+- **Echo State Park campground** (intake-US-5922, agency (outside research camping-us-oct31), status ok, 7 facts) · [utahstateparks.reserveamerica.com](https://utahstateparks.reserveamerica.com/)
+  - booking.how = "online: utahstateparks.reserveamerica.com" · “link “Sign In / Sign Up””
+  - booking.url = "https://utahstateparks.reserveamerica.com/memberSignInSignU · “link “Sign In / Sign Up” -> https://utahstateparks.reserveamerica.com/memberSignInSignUp.do”
+  - hookups.amps = [20, 30, 50] · “V sites Options Length (ft) more options... Electric hookup Not Required 15 Amp (or more) 20 Amp (or more) 30 Amp (or more) 50 Amp (or more)”
+  - hookups.electric = "some" · “g for a more modern camping experience, be sure to look for RV sites with full or partial hookups, as well as nearby restrooms and showers. ”
+  - restrooms = "yes (kind not stated)" · “experience, be sure to look for RV sites with full or partial hookups, as well as nearby restrooms and showers. RV and Trailer Camping Tent ”
+  - rules.pets = "Pets allowed" · “ore) 50 Amp (or more) Water hookup Sewer hookup Pull-through driveway Accessibility needs Pets allowed Trailer sites Options Length (ft) mor”
+  - showers = true · “e sure to look for RV sites with full or partial hookups, as well as nearby restrooms and showers. RV and Trailer Camping Tent Camping is a ”
 - **Dispersed camping on WMA** (intake-US-11158, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [wildlife.utah.gov](https://wildlife.utah.gov/wmas)
   - booking.url = "https://wildlife.utah.gov/wmas" · “booking link from our outside research (camping, in the park) row (official system wildlife.utah.gov)”
   - map.date_how = "web page, no date in the link" · “link “Utah Wildlife and Waterfowl Management Areas map””

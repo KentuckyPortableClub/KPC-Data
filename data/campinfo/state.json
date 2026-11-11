@@ -965,22 +965,22 @@
    "checked": 459,
    "counts": {
     "camps": 459,
-    "needs_browser": 1,
+    "needs_browser": 8,
     "needs_key": 331,
     "no_page": 13,
     "not_official": 0,
-    "ok": 40,
-    "other": 74,
-    "resting": 0,
+    "ok": 39,
+    "other": 64,
+    "resting": 4,
     "robots": 0,
     "with_booking": 115,
     "with_elevation": 0,
-    "with_facts": 98,
+    "with_facts": 91,
     "with_sites": 1
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-10"
+   "updated": "2026-11-11"
   },
   "US-VA": {
    "camps": 166,
@@ -1159,7 +1159,7 @@
   "US-SD": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-TN": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-TX": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
-  "US-UT": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-UT": "FCC listAsOfDates: robots.txt says no",
   "US-VA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-VT": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-WA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1560,9 +1560,9 @@
     "carriers": null,
     "files": [],
     "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "status": "FCC listAsOfDates: robots.txt says no"
    },
-   "read": "2026-11-10"
+   "read": "2026-11-11"
   },
   "US-VA": {
    "cell": {
@@ -2576,11 +2576,11 @@
  },
  "last": {
   "areas": [
-   "US-OR"
+   "US-UT"
   ],
   "fcc_token": true,
   "manners": {
-   "dropped_queued": 503,
+   "dropped_queued": 471,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2593,24 +2593,24 @@
     ]
    ],
    "host_rule": 0,
-   "requests": 76,
-   "rested": 14,
+   "requests": 161,
+   "rested": 4,
    "robots": 2,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 11,
-   "camps": 504,
+   "browser": 53,
+   "camps": 472,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 10,
-   "needs_key": 418,
-   "no_page": 12,
-   "not_official": 1,
-   "ok": 58,
-   "pages_read": 57,
-   "resting": 14,
+   "needs_browser": 60,
+   "needs_key": 344,
+   "no_page": 25,
+   "not_official": 0,
+   "ok": 100,
+   "pages_read": 101,
+   "resting": 4,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0
