@@ -8,24 +8,24 @@
   "US-HI"
  ],
  "key_source": "build",
- "checked": "2026-11-08 22:24 UTC",
+ "checked": "2026-11-11 21:38 UTC",
  "areas": {
   "US-CA": {
    "hold": [],
    "warn": [
-    "4 review-pile HOLD row(s) still outlines: US-0211 US-3523 US-4383 US-4457 (their 2-fers are 'not sure')",
+    "3 review-pile HOLD row(s) still outlines: US-0211 US-4383 US-4457 (their 2-fers are 'not sure')",
     "7 rule 18 row(s): US-0215 US-1126 US-1161 US-1167 US-1177 US-1197 US-3524 (a person decides)",
     "2 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-0211 US-3523",
-    "4 outline(s) with no area: US-3406 US-3459 US-3572 US-3589"
+    "2 outline(s) with no area: US-3572 US-3589"
    ],
    "key_file": "data/us-key/US-CA.json",
-   "build": "US-42504172086",
-   "built": "2026-11-08 19:02 UTC",
-   "rules": "a066624520b4",
-   "parks": 410,
-   "outlines": 391,
-   "held_key": "HELD KEY: build US-42504172086 has no person's sign-off yet; the 2-fers measured on it are held with it",
-   "postcheck": "us-US-42504172086.json",
+   "build": "US-43056604383",
+   "built": "2026-11-11 16:50 UTC",
+   "rules": "46ef34a04ab0",
+   "parks": 411,
+   "outlines": 393,
+   "held_key": "HELD KEY: build US-43056604383 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "us-US-43056604383.json",
    "bad_pins": 2,
    "overrides_no_still": 0
   },
@@ -35,34 +35,35 @@
     "2 review-pile HOLD row(s) still outlines: US-9159 US-9993 (their 2-fers are 'not sure')",
     "1 rule 18 row(s): US-9146 (a person decides)",
     "4 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-4383 US-4457 US-9159 US-9993",
-    "2 outline(s) with no area: US-10605 US-13067"
+    "2 outline(s) with no area: US-10029 US-9991"
    ],
    "key_file": "data/us-key/US-OR.json",
-   "build": "US-42504172086",
-   "built": "2026-11-08 19:02 UTC",
-   "rules": "a066624520b4",
+   "build": "US-43056604383",
+   "built": "2026-11-11 16:50 UTC",
+   "rules": "46ef34a04ab0",
    "parks": 440,
-   "outlines": 384,
-   "held_key": "HELD KEY: build US-42504172086 has no person's sign-off yet; the 2-fers measured on it are held with it",
-   "postcheck": "us-US-42504172086.json",
+   "outlines": 388,
+   "held_key": "HELD KEY: build US-43056604383 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "us-US-43056604383.json",
    "bad_pins": 4,
    "overrides_no_still": 0
   },
   "US-WA": {
-   "hold": [],
+   "hold": [
+    "US-WA is still on the key's rebuild list (answers-states.txt): new answers are not in this key yet"
+   ],
    "warn": [
     "1 review-pile HOLD row(s) still outlines: US-13446 (their 2-fers are 'not sure')",
-    "9 rule 18 row(s): US-10627 US-12285 US-12286 US-12306 US-12538 US-12556 US-12643 US-3168 US-3182 (a person decides)",
-    "1 outline(s) with no area: US-3269"
+    "9 rule 18 row(s): US-10627 US-12285 US-12286 US-12306 US-12538 US-12556 US-12643 US-3168 US-3182 (a person decides)"
    ],
    "key_file": "data/us-key/US-WA.json",
-   "build": "US-42504172086",
-   "built": "2026-11-08 19:02 UTC",
-   "rules": "a066624520b4",
+   "build": "US-43056604383",
+   "built": "2026-11-11 16:50 UTC",
+   "rules": "46ef34a04ab0",
    "parks": 536,
-   "outlines": 492,
-   "held_key": "HELD KEY: build US-42504172086 has no person's sign-off yet; the 2-fers measured on it are held with it",
-   "postcheck": "us-US-42504172086.json",
+   "outlines": 494,
+   "held_key": "HELD KEY: build US-43056604383 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "us-US-43056604383.json",
    "bad_pins": 0,
    "overrides_no_still": 0
   },
@@ -70,38 +71,40 @@
    "hold": [],
    "warn": [
     "5 review-pile HOLD row(s) still outlines: US-0150 US-10281 US-6332 US-7191 US-7242 (their 2-fers are 'not sure')",
-    "5 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-0150 US-10281 US-6332 US-7191 US-7242"
+    "5 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-0150 US-10281 US-6332 US-7191 US-7242",
+    "1 outline(s) with no area: US-7246"
    ],
    "key_file": "data/us-key/US-AK.json",
-   "build": "US-42504172086",
-   "built": "2026-11-08 19:02 UTC",
-   "rules": "a066624520b4",
+   "build": "US-43056604383",
+   "built": "2026-11-11 16:50 UTC",
+   "rules": "46ef34a04ab0",
    "parks": 179,
    "outlines": 136,
-   "held_key": "HELD KEY: build US-42504172086 has no person's sign-off yet; the 2-fers measured on it are held with it",
-   "postcheck": "us-US-42504172086.json",
+   "held_key": "HELD KEY: build US-43056604383 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "us-US-43056604383.json",
    "bad_pins": 5,
    "overrides_no_still": 0
   },
   "US-HI": {
    "hold": [],
-   "warn": [
-    "2 outline(s) with no area: US-2227 US-6419"
-   ],
+   "warn": [],
    "key_file": "data/us-key/US-HI.json",
-   "build": "US-42504172086",
-   "built": "2026-11-08 19:02 UTC",
-   "rules": "a066624520b4",
-   "parks": 102,
-   "outlines": 88,
-   "held_key": "HELD KEY: build US-42504172086 has no person's sign-off yet; the 2-fers measured on it are held with it",
-   "postcheck": "us-US-42504172086.json",
+   "build": "US-43056604383",
+   "built": "2026-11-11 16:50 UTC",
+   "rules": "46ef34a04ab0",
+   "parks": 103,
+   "outlines": 90,
+   "held_key": "HELD KEY: build US-43056604383 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "us-US-43056604383.json",
    "bad_pins": 0,
    "overrides_no_still": 0
   }
  },
  "about": "2-fer pre-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4). HOLD = the line does not build. Read-only; nothing is moved or released.",
- "verdict": "GO",
- "holds": [],
+ "fers_rules": "aa7561256260",
+ "verdict": "HOLD",
+ "holds": [
+  "US-WA: US-WA is still on the key's rebuild list (answers-states.txt): new answers are not in this key yet"
+ ],
  "held_key": true
 }
