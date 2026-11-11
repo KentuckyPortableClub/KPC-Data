@@ -15,50 +15,52 @@
   "US-DE",
   "US-DC"
  ],
- "since": "2026-11-08",
- "date": "2026-11-08 21:49 UTC",
+ "since": "2026-11-11",
+ "date": "2026-11-11 17:19 UTC",
  "verdict": "STOPPED",
  "why": [
-  "missing check: 5705 of 12549 expected pairs were never looked at (45%; 2809 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (5698); not tested: the official outline of <park> could not be read in pass 1 (one of its map rec (4); <park>: not in this run (another state, retired, or no POTA pin) (3)"
+  "missing check: 5934 of 12267 expected pairs were never looked at (48%; 2072 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (5927); not tested: the official outline of <park> could not be read in pass 1 (one of its map rec (4); <park>: not in this run (another state, retired, or no POTA pin) (3)",
+  "water not checked: US-PA: 2 rows (the USGS water map / files had no answer there): never READY with one",
+  "water not checked: US-NY: 2 rows (the USGS water map / files had no answer there): never READY with one"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 713,
-  "DROPPED": 3322,
-  "NEVER LOOKED AT": 8514
+  "FOUND": 878,
+  "DROPPED": 3383,
+  "NEVER LOOKED AT": 8006
  },
  "never_looked_at": {
-  "counted": 5705,
-  "no_official_outline": 2809,
-  "expected": 12549,
+  "counted": 5934,
+  "no_official_outline": 2072,
+  "expected": 12267,
   "limit": "10%",
   "by_reason": {
-   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 5698,
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 5927,
    "not tested: the official outline of <park> could not be read in pass 1 (one of its map rec": 4,
    "<park>: not in this run (another state, retired, or no POTA pin)": 3
   }
  },
  "report": {
   "pass1": {
-   "date": "2026-11-08",
-   "pairs tested": 14691,
-   "pairs whose boxes touch": 14691
+   "date": "2026-11-11",
+   "pairs tested": 15222,
+   "pairs whose boxes touch": 15222
   },
   "pass2": {
-   "agree with the pass before": 3451,
-   "date": "2026-11-08",
-   "pairs tested": 1216
+   "agree with the pass before": 3559,
+   "date": "2026-11-11",
+   "pairs tested": 1249
   },
   "pass3": {
-   "agree with the pass before": 2326,
-   "date": "2026-11-08",
-   "pairs tested": 1165
+   "agree with the pass before": 2661,
+   "date": "2026-11-11",
+   "pairs tested": 1202
   },
   "pass5": {
-   "checked": 300,
-   "date": "2026-11-08",
+   "checked": 467,
+   "date": "2026-11-11",
    "pairs tested": 0,
-   "still not checked": 0
+   "still not checked": 4
   }
  },
  "files": {
@@ -76,130 +78,132 @@
   "US-DC": "data/fers/US-DC.json"
  },
  "US-PA": {
-  "rows": 1297,
-  "live": 213,
+  "rows": 1301,
+  "live": 250,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 1,
+   "water not checked": 2,
    "this spot is 289 km from PA 086 State Game Land's POTA pin": 1,
    "this spot is 118 km from PA 231 State Game Land's POTA pin": 1,
    "this spot is 128 km from PA 326 State Game Land's POTA pin": 1
   },
-  "dropped": 697,
-  "merged": 383
+  "dropped": 629,
+  "merged": 417
+ },
+ "water_weak": {
+  "US-PA": 2,
+  "US-NY": 2
  },
  "US-NY": {
-  "rows": 491,
-  "live": 121,
+  "rows": 716,
+  "live": 174,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 2
+   "the official outline of Adirondack State Park could not be r": 51,
+   "water not checked": 2,
+   "both parks join the same official records and both POTA pins": 1
   },
-  "dropped": 255,
-  "merged": 113
+  "dropped": 184,
+  "merged": 304
  },
  "US-NJ": {
-  "rows": 202,
-  "live": 32,
+  "rows": 194,
+  "live": 52,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {
-   "key outline is approximate": 6
-  },
-  "dropped": 96,
-  "merged": 68
+  "not_sure": {},
+  "dropped": 70,
+  "merged": 72
  },
  "US-CT": {
-  "rows": 94,
-  "live": 44,
+  "rows": 100,
+  "live": 54,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 2,
    "one record covers two parks": 1
   },
-  "dropped": 17,
-  "merged": 30
+  "dropped": 12,
+  "merged": 33
  },
  "US-RI": {
-  "rows": 58,
-  "live": 13,
+  "rows": 59,
+  "live": 19,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {
-   "no public owner on the ownership map": 6
-  },
-  "dropped": 26,
-  "merged": 13
+  "not_sure": {},
+  "dropped": 23,
+  "merged": 17
  },
  "US-MA": {
-  "rows": 506,
-  "live": 86,
+  "rows": 501,
+  "live": 118,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 4,
    "one record covers two parks": 1,
    "low-confidence outline for Nashua River Rail Trail State Tra": 2
   },
-  "dropped": 205,
-  "merged": 208
+  "dropped": 147,
+  "merged": 233
  },
  "US-VT": {
-  "rows": 89,
-  "live": 7,
+  "rows": 102,
+  "live": 9,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {},
-  "dropped": 56,
-  "merged": 26
+  "not_sure": {
+   "one record covers two parks": 1
+  },
+  "dropped": 61,
+  "merged": 31
  },
  "US-NH": {
-  "rows": 160,
-  "live": 27,
+  "rows": 133,
+  "live": 31,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {},
-  "dropped": 62,
-  "merged": 71
+  "not_sure": {
+   "both parks join the same official records and both POTA pins": 1
+  },
+  "dropped": 44,
+  "merged": 57
  },
  "US-ME": {
-  "rows": 32,
-  "live": 4,
+  "rows": 33,
+  "live": 5,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the official outline of New Brunswick #15 Wildlife Managemen": 3
   },
-  "dropped": 16,
-  "merged": 9
+  "dropped": 15,
+  "merged": 10
  },
  "US-MD": {
-  "rows": 918,
-  "live": 135,
+  "rows": 963,
+  "live": 146,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the official outline of Baltimore-Washington National Parkwa": 3,
-   "no public owner on the ownership map": 14,
    "one record covers two parks": 2
   },
-  "dropped": 282,
-  "merged": 482
+  "dropped": 292,
+  "merged": 520
  },
  "US-DE": {
-  "rows": 115,
-  "live": 31,
+  "rows": 132,
+  "live": 33,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 2,
    "one record covers two parks": 1
   },
-  "dropped": 48,
-  "merged": 33
+  "dropped": 58,
+  "merged": 40
  },
  "US-DC": {
   "rows": 70,
