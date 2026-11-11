@@ -1,4 +1,4 @@
-# Waiting for a grader (2026-11-11 22:51Z, written by the waiting room)
+# Waiting for a grader (2026-11-11 22:56Z, written by the waiting room)
 Rows the same as the live (already graded) copy keep their old YES: check only the NEW + CHANGED rows listed. Held = a check failed: fix first.
 
 - **data/campinfo/US-AK.json** (campinfo, PASS; grader chat 11): 0 new, 368 changed, 0 gone, 0 same (carried); check: 10009273, 10165135, 10165160, 10165215, 10165561, 10191011, 10276314, 10296828, 10300370, 10300372, 10322643, 10325233, 10325252, 10325266, 10328148, 10328150, 10328154, 10341414, 10344823, 10362407, 10382456, 120890, 14534, 14536, 14550 ...
