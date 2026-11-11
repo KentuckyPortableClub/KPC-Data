@@ -49,7 +49,7 @@ Updated 2026-11-11. Every fact in <area>.json carries its source url, read date 
 | US-AZ | 198 | 1 | 168 | 0 | 16 | 0 | 0 | 2 | 11 | 0 | 28 | 0 |
 | US-NM | 136 | 51 | 78 | 0 | 0 | 0 | 0 | 0 | 7 | 1 | 58 | 0 |
 | US-CA | 1190 | 50 | 752 | 0 | 7 | 0 | 352 | 0 | 29 | 4 | 81 | 0 |
-| US-OR | 496 | 47 | 410 | 0 | 0 | 0 | 0 | 1 | 38 | 8 | 85 | 0 |
+| US-OR | 496 | 47 | 410 | 0 | 0 | 14 | 0 | 1 | 24 | 8 | 85 | 0 |
 | US-WA | 363 | 24 | 212 | 1 | 15 | 0 | 66 | 0 | 45 | 3 | 70 | 0 |
 | US-AK | 368 | 8 | 234 | 0 | 113 | 0 | 4 | 0 | 9 | 5 | 64 | 0 |
 | US-HI | 22 | 10 | 2 | 0 | 0 | 0 | 8 | 0 | 2 | 0 | 12 | 0 |
@@ -75,6 +75,7 @@ Updated 2026-11-11. Every fact in <area>.json carries its source url, read date 
 - www.wlf.louisiana.gov: 31 campgrounds · host resting (robots.txt could not be read: next run)
 - reserve.tnstateparks.com: 25 campgrounds · host resting (robots.txt could not be read: next run)
 - www.fdacs.gov: 23 campgrounds · robots.txt says no
+- www.fs.usda.gov: 22 campgrounds · host resting
 - destateparks.com: 22 campgrounds · host resting (robots.txt could not be read: next run)
 - www.lastateparks.com: 21 campgrounds · host resting (robots.txt could not be read: next run)
 - www.tn.gov: 17 campgrounds · host resting (robots.txt could not be read: next run)
@@ -84,7 +85,6 @@ Updated 2026-11-11. Every fact in <area>.json carries its source url, read date 
 - washington.goingtocamp.com: 15 campgrounds · host resting (robots.txt could not be read: next run)
 - midnrreservations.com: 12 campgrounds · host resting (robots.txt could not be read: next run)
 - reserveohio.com: 12 campgrounds · host resting (robots.txt could not be read: next run)
-- www.fs.usda.gov: 8 campgrounds · host resting
 - www.reservecalifornia.com: 5 campgrounds · host resting (robots.txt could not be read: next run)
 - apps.web.maine.gov: 4 campgrounds · host resting (robots.txt could not be read: next run)
 - getoutside.idaho.gov: 4 campgrounds · host resting (robots.txt could not be read: next run)
@@ -3528,7 +3528,7 @@ Updated 2026-11-11. Every fact in <area>.json carries its source url, read date 
   - booking.url = "https://stateparks.oregon.gov/index.cfm?do=reserve.make" · “link “Reserve” -> https://stateparks.oregon.gov/index.cfm?do=reserve.make”
   - checkin = "4PM" · “52-5687 or reserve online at: ReserveAmerica What are check-in&#x2f;check-out times&#x3f; Check-in is 4PM and check-out is 1PM. What site ty”
   - checkout = "1PM" · “nline at: ReserveAmerica What are check-in&#x2f;check-out times&#x3f; Check-in is 4PM and check-out is 1PM. What site types are offered, and”
-  - drinking_water = true · “mping is limited to A-Loop electric sites and is first-come-first served until April 1st. Potable water is available at the campsites. Flush”
+  - drinking_water = true · “ping is limited to A-Loop electric sites and is first-come, first-served until April 1st. Potable water is available at the campsites. Flush”
   - dump_station = "some" · “ril through October. This is a small but popular park. We often fill up daily. Is there a dump station at the park&#x3f; No, there is no dum”
   - fees = "$2/per person/per day) | $1/per person/per day) Also, a | $ · “een the campground & Heritage Landing) and available for purchase at the self-pay kiosks ($2/per person/per day). 3. Heritage to Columbia Bo”
   - hookups.electric = "some" · “. A Loop (open year-round, sites are first-come, first-served from Nov. 1 to March 31) 34 electrical sites with water for RV or tent camping”

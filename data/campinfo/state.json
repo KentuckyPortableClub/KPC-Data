@@ -817,8 +817,8 @@
     "no_page": 0,
     "not_official": 1,
     "ok": 47,
-    "other": 38,
-    "resting": 0,
+    "other": 24,
+    "resting": 14,
     "robots": 0,
     "with_booking": 85,
     "with_elevation": 0,
@@ -827,7 +827,7 @@
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-10"
+   "updated": "2026-11-11"
   },
   "US-PA": {
    "camps": 161,
@@ -1152,7 +1152,7 @@
   "US-NY": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-OH": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-OK": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
-  "US-OR": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-OR": "FCC listAsOfDates: robots.txt says no",
   "US-PA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-RI": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-SC": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1497,9 +1497,9 @@
     "carriers": null,
     "files": [],
     "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "status": "FCC listAsOfDates: robots.txt says no"
    },
-   "read": "2026-11-10"
+   "read": "2026-11-11"
   },
   "US-PA": {
    "cell": {
@@ -2576,11 +2576,11 @@
  },
  "last": {
   "areas": [
-   "US-NH"
+   "US-OR"
   ],
   "fcc_token": true,
   "manners": {
-   "dropped_queued": 78,
+   "dropped_queued": 503,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2593,23 +2593,24 @@
     ]
    ],
    "host_rule": 0,
-   "requests": 82,
-   "rested": 2,
+   "requests": 76,
+   "rested": 14,
    "robots": 2,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 79,
+   "browser": 11,
+   "camps": 504,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 0,
-   "needs_key": 24,
+   "needs_browser": 10,
+   "needs_key": 418,
    "no_page": 12,
-   "not_official": 0,
-   "ok": 41,
-   "pages_read": 79,
-   "resting": 2,
+   "not_official": 1,
+   "ok": 58,
+   "pages_read": 57,
+   "resting": 14,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0
