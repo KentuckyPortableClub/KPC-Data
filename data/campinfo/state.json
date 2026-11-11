@@ -53,18 +53,18 @@
     "needs_key": 120,
     "no_page": 0,
     "not_official": 5,
-    "ok": 21,
+    "ok": 20,
     "other": 81,
-    "resting": 0,
+    "resting": 1,
     "robots": 2,
     "with_booking": 78,
     "with_elevation": 0,
-    "with_facts": 61,
+    "with_facts": 60,
     "with_sites": 5
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-04"
+   "updated": "2026-11-11"
   },
   "US-AZ": {
    "camps": 203,
@@ -1118,7 +1118,7 @@
  "cell_status": {
   "US-AK": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-AL": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
-  "US-AR": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-AR": "FCC listAsOfDates: robots.txt says no",
   "US-AZ": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-CA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-CO": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1191,9 +1191,9 @@
     "carriers": null,
     "files": [],
     "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "status": "FCC listAsOfDates: robots.txt says no"
    },
-   "read": "2026-11-04"
+   "read": "2026-11-11"
   },
   "US-AZ": {
    "cell": {
@@ -1620,7 +1620,8 @@
   }
  },
  "hosts": {
-  "outdoornebraska.gov": 1794395651.087551
+  "outdoornebraska.gov": 1794395651.087551,
+  "www.fs.usda.gov": 1794471621.309258
  },
  "ky_check": {
   "agree": 81,
@@ -2575,42 +2576,50 @@
  },
  "last": {
   "areas": [
-   "US-WY"
+   "US-AR"
   ],
   "fcc_token": true,
   "manners": {
-   "arcgis_exempt": 0,
-   "dropped_queued": 161,
-   "errors": 0,
+   "dropped_queued": 241,
+   "errors": 3,
    "for_person_urls": [
     [
      "https://epqs.nationalmap.gov/robots.txt",
-     "robots.txt answered 403: nothing fetched from epqs.nationalmap.gov this run"
+     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from epqs.nationalmap.gov"
+    ],
+    [
+     "https://broadbandmap.fcc.gov/robots.txt",
+     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from broadbandmap.fcc.gov"
+    ],
+    [
+     "https://reserve.arkansasstateparks.com/robots.txt",
+     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from reserve.arkansasstateparks.com"
     ]
    ],
-   "requests": 1,
+   "host_rule": 0,
+   "requests": 143,
    "rested": 0,
-   "robots": 1,
-   "robots_unreadable": 1,
-   "strikes": 0
+   "robots": 3,
+   "strikes": 3
   },
   "ridb_key": false,
   "stat": {
-   "camps": 162,
+   "browser": 43,
+   "camps": 241,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 0,
-   "needs_key": 162,
-   "no_page": 0,
-   "not_official": 0,
-   "ok": 0,
-   "pages_read": 0,
-   "resting": 0,
+   "needs_browser": 43,
+   "needs_key": 131,
+   "no_page": 12,
+   "not_official": 5,
+   "ok": 63,
+   "pages_read": 64,
+   "resting": 1,
    "ridb_calls": 0,
-   "robots": 0,
-   "skipped_fresh": 152
+   "robots": 2,
+   "skipped_fresh": 0
   },
-  "when": "2026-11-10"
+  "when": "2026-11-11"
  },
  "test": {
   "result": "PASS",
