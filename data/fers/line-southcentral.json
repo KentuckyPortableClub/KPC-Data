@@ -10,25 +10,25 @@
   "US-NE"
  ],
  "since": "2026-11-11",
- "date": "2026-11-11 06:48 UTC",
+ "date": "2026-11-11 21:36 UTC",
  "verdict": "STOPPED",
  "why": [
-  "missing check: 3743 of 8157 expected pairs were never looked at (46%; 3186 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (2823); <park>: lake surface only (not a land outline) (639); <park>: lake surface only (not a land outline); <park>: no official boundary (171)",
+  "missing check: 3744 of 8142 expected pairs were never looked at (46%; 3168 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (2824); <park>: lake surface only (not a land outline) (639); <park>: lake surface only (not a land outline); <park>: no official boundary (171)",
   "US-AR: 1 live 'same land' rows with pins over 30 km apart (a wrong join in the key): US-0646+US-7270@same land@36.027,-92.892"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
   "FOUND": 290,
-  "DROPPED": 938,
-  "NEVER LOOKED AT": 6929
+  "DROPPED": 940,
+  "NEVER LOOKED AT": 6912
  },
  "never_looked_at": {
-  "counted": 3743,
-  "no_official_outline": 3186,
-  "expected": 8157,
+  "counted": 3744,
+  "no_official_outline": 3168,
+  "expected": 8142,
   "limit": "10%",
   "by_reason": {
-   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 2823,
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 2824,
    "<park>: lake surface only (not a land outline)": 639,
    "<park>: lake surface only (not a land outline); <park>: no official boundary": 171,
    "<park>: lake surface only (not a land outline); <park>: lake surface only (not a land outl": 64,
@@ -38,18 +38,18 @@
  "report": {
   "pass1": {
    "date": "2026-11-11",
-   "pairs tested": 5924,
-   "pairs whose boxes touch": 5924
+   "pairs tested": 5926,
+   "pairs whose boxes touch": 5926
   },
   "pass2": {
-   "agree with the pass before": 1292,
+   "agree with the pass before": 1293,
    "date": "2026-11-11",
-   "pairs tested": 375
+   "pairs tested": 376
   },
   "pass3": {
-   "agree with the pass before": 906,
+   "agree with the pass before": 901,
    "date": "2026-11-11",
-   "pairs tested": 362
+   "pairs tested": 363
   },
   "pass5": {
    "checked": 195,
@@ -81,8 +81,8 @@
    "this spot is 154 km from Cherokee Wildlife Management Area's": 1,
    "both parks join the same official records but a POTA pin is": 1
   },
-  "dropped": 411,
-  "merged": 351
+  "dropped": 416,
+  "merged": 346
  },
  "US-LA": {
   "rows": 46,
@@ -94,7 +94,7 @@
   "merged": 7
  },
  "US-OK": {
-  "rows": 164,
+  "rows": 165,
   "live": 45,
   "waiting": 0,
   "unfinished": 0,
@@ -103,7 +103,7 @@
    "this spot is 326 km from Copan Wildlife Management Area's PO": 1,
    "this spot is 324 km from Copan Wildlife Management Area's PO": 1
   },
-  "dropped": 56,
+  "dropped": 57,
   "merged": 60
  },
  "US-TX": {
