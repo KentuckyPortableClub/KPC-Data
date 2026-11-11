@@ -1,15 +1,15 @@
 # Closures super-bot: review (2026-11-11; RULE SHEET D; compared quietly, nothing on cards until GO)
 
-Run: 2026-11-11T08:19Z · requests 105 · pages 81 · PDFs 17 · sentences read 359 · unmatched 122 · look-alikes skipped 206 · sources failed 2
+Run: 2026-11-11T16:54Z · requests 105 · pages 81 · PDFs 17 · sentences read 359 · unmatched 122 · look-alikes skipped 206 · sources failed 2
 
-## Kentucky gate: **FAIL** — 24 of 31 of Kentucky's own reader's items found here on the same park (77%); 50 only here
+## Kentucky gate: **FAIL** — 21 of 28 of Kentucky's own reader's items found here on the same park (75%); 52 only here
 
 ## Sources that failed this run
 
 - US-KY fs-gwj: rest (host resting after an earlier strike; last items kept) (https://www.fs.usda.gov/alerts/gwj/alerts-notices)
 - US-KY ky-fs-dbnf: rest (host resting after an earlier strike; last items kept) (https://www.fs.usda.gov/alerts/dbnf/alerts-notices)
 
-## US-KY (done, read 2026-11-11T08:19)
+## US-KY (done, read 2026-11-11T16:54)
 whole 1 · part 0 · hunt 0 · seasonal 0 · note 69 · taken_down 19 · 0 banners
 
 Sources that failed (last items kept): ky-fs-dbnf (rest (host resting after an earlier strike; last items kept)); fs-gwj (rest (host resting after an earlier strike; last items kept))
@@ -48,7 +48,7 @@ Unmatched (two parks or none; for chat 11 to judge):
 - BLIND RESTRICTIONS [ky-fw-public-land] · no park name shares a word
 - Big Rivers WMA (noon Central to 5 p.m.) in Union County and at the Roberts Tract [ky-fw-public-land] · nearest park name: Big Rivers Wildlife Management Area (US-3796)
 
-### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 24 · only here 50 · only there 7
+### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 21 · only here 52 · only there 7
 
 - ONLY THERE: US-4687 hc-US-4687-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
 - ONLY THERE: US-3834 hc-US-3834-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
