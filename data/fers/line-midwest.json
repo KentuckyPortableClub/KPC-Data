@@ -11,50 +11,50 @@
   "US-ND",
   "US-SD"
  ],
- "since": "2026-11-08",
- "date": "2026-11-08 20:52 UTC",
+ "since": "2026-11-11",
+ "date": "2026-11-11 07:26 UTC",
  "verdict": "STOPPED",
  "why": [
-  "missing check: 8096 of 13059 expected pairs were never looked at (62%; 2989 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (8068); <park>: not in this run (another state, retired, or no POTA pin) (25); <park>: not in this run (another state, retired, or no POTA pin); <park>: not in this run  (3)"
+  "missing check: 8093 of 12686 expected pairs were never looked at (64%; 2411 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (8075); <park>: not in this run (another state, retired, or no POTA pin) (18)",
+  "water not checked: US-MN: 1 rows (the USGS water map / files had no answer there): never READY with one"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 457,
-  "DROPPED": 1517,
-  "NEVER LOOKED AT": 11085
+  "FOUND": 536,
+  "DROPPED": 1646,
+  "NEVER LOOKED AT": 10504
  },
  "never_looked_at": {
-  "counted": 8096,
-  "no_official_outline": 2989,
-  "expected": 13059,
+  "counted": 8093,
+  "no_official_outline": 2411,
+  "expected": 12686,
   "limit": "10%",
   "by_reason": {
-   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 8068,
-   "<park>: not in this run (another state, retired, or no POTA pin)": 25,
-   "<park>: not in this run (another state, retired, or no POTA pin); <park>: not in this run ": 3
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 8075,
+   "<park>: not in this run (another state, retired, or no POTA pin)": 18
   }
  },
  "report": {
   "pass1": {
-   "date": "2026-11-08",
-   "pairs tested": 7601,
-   "pairs whose boxes touch": 7601
+   "date": "2026-11-11",
+   "pairs tested": 8158,
+   "pairs whose boxes touch": 8158
   },
   "pass2": {
-   "agree with the pass before": 2318,
-   "date": "2026-11-08",
-   "pairs tested": 668
+   "agree with the pass before": 2580,
+   "date": "2026-11-11",
+   "pairs tested": 730
   },
   "pass3": {
-   "agree with the pass before": 1643,
-   "date": "2026-11-08",
-   "pairs tested": 648
+   "agree with the pass before": 1851,
+   "date": "2026-11-11",
+   "pairs tested": 708
   },
   "pass5": {
-   "checked": 250,
-   "date": "2026-11-08",
+   "checked": 313,
+   "date": "2026-11-11",
    "pairs tested": 0,
-   "still not checked": 0
+   "still not checked": 1
   }
  },
  "files": {
@@ -68,63 +68,75 @@
   "US-SD": "data/fers/US-SD.json"
  },
  "US-IN": {
-  "rows": 214,
-  "live": 55,
+  "rows": 505,
+  "live": 87,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "one record covers two parks": 4
+   "one record covers two parks": 4,
+   "both parks join the same official records but a POTA pin is": 1,
+   "both parks join the same official records and both POTA pins": 15
   },
-  "dropped": 127,
-  "merged": 28
+  "dropped": 201,
+  "merged": 197
  },
  "US-IL": {
-  "rows": 99,
-  "live": 28,
+  "rows": 140,
+  "live": 34,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {},
-  "dropped": 51,
-  "merged": 20
+  "not_sure": {
+   "both parks join the same official records and both POTA pins": 1,
+   "this spot is 110 km from Upper Mississippi Conservation Rese": 1
+  },
+  "dropped": 52,
+  "merged": 52
  },
  "US-MO": {
-  "rows": 254,
-  "live": 58,
+  "rows": 242,
+  "live": 60,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "low-confidence outline for Katy Trail Rock Island Spur State": 1
+   "both parks join the same official records but a POTA pin is": 1,
+   "low-confidence outline for Katy Trail Rock Island Spur State": 1,
+   "both parks join the same official records and both POTA pins": 1
   },
-  "dropped": 120,
-  "merged": 75
+  "dropped": 114,
+  "merged": 65
  },
  "US-WI": {
-  "rows": 388,
-  "live": 101,
+  "rows": 568,
+  "live": 119,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no public owner on the ownership map": 11
+   "2-fer self-check": 1,
+   "one record covers two parks": 4
   },
-  "dropped": 155,
-  "merged": 121
+  "dropped": 176,
+  "merged": 268
  },
  "US-MN": {
-  "rows": 1382,
-  "live": 208,
+  "rows": 1273,
+  "live": 215,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "low-confidence outline for Brown's Creek AMA Aquatic Reserve": 2,
-   "no public owner on the ownership map": 23,
-   "this spot is 130 km from Richard J. Dorer Memorial Hardwood": 1
+   "water not checked": 1,
+   "no park here owns land": 3,
+   "this spot is 130 km from Richard J. Dorer Memorial Hardwood": 1,
+   "one record covers two parks": 1
   },
-  "dropped": 516,
-  "merged": 632
+  "dropped": 484,
+  "merged": 568
+ },
+ "water_weak": {
+  "US-MN": 1
  },
  "US-IA": {
-  "rows": 60,
-  "live": 18,
+  "rows": 58,
+  "live": 20,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -132,29 +144,28 @@
    "the official outline of Wilson Island State Recreation Area": 1,
    "the official outline of Nobles Lake Wildlife Management Area": 1,
    "2-fer self-check": 1,
-   "no public owner on the ownership map": 2,
    "the official outline of Wapsi Wildlife Area could not be rea": 1
   },
   "dropped": 20,
-  "merged": 15
+  "merged": 13
  },
  "US-ND": {
-  "rows": 47,
-  "live": 9,
+  "rows": 52,
+  "live": 12,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {},
-  "dropped": 21,
-  "merged": 17
+  "dropped": 22,
+  "merged": 18
  },
  "US-SD": {
-  "rows": 76,
-  "live": 16,
+  "rows": 81,
+  "live": 17,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {},
-  "dropped": 51,
-  "merged": 9
+  "dropped": 53,
+  "merged": 11
  },
  "states_ready": [],
  "states_held": [
