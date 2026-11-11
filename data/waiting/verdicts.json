@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-11T06:12Z",
+ "checked": "2026-11-11T06:49Z",
  "switched_on": false,
  "results": [
   {
@@ -1325,7 +1325,8 @@
    "path": "data/fers/US-AR.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 92 new candidate pairs since the live file (over 10% of 7): a person looks at them first, e.g. US-0162+US-7342, US-0164+US-7158, US-0164+US-7279",
+    "F-2 only 5 of 7 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
+    "F-2 111 new candidate pairs since the live file (over 10% of 7): a person looks at them first, e.g. US-0162+US-7342, US-0164+US-7158, US-0164+US-7279",
     "F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-7276+US-7298 102 km"
    ],
    "notes": [
@@ -1596,7 +1597,8 @@
    "path": "data/fers/US-NE.json",
    "kind": "fers",
    "why": [
-    "F-2 41 new candidate pairs since the live file (over 10% of 4): a person looks at them first, e.g. US-0443+US-5622, US-0445+US-5655, US-0675+US-10341"
+    "F-2 NOT SURE 9 -> 12 (over 30% change)",
+    "F-2 43 new candidate pairs since the live file (over 10% of 4): a person looks at them first, e.g. US-0443+US-5622, US-0445+US-5655, US-0675+US-10341"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1675,8 +1677,8 @@
    "path": "data/fers/US-OK.json",
    "kind": "fers",
    "why": [
-    "F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-6347+US-8122 326 km",
-    "F-K known 2-fer missing: US-0489 + US-2783"
+    "F-2 5 new candidate pairs since the live file (over 10% of 32): a person looks at them first, e.g. US-0822+US-9757, US-10258+US-8321, US-11321+US-12684+US-6366",
+    "F-S3 1 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-6347+US-8122 326 km"
    ],
    "notes": [
     "replaces live data/fers/US-OK.json.gz (same file, other format): promotion removes the old name"
@@ -1745,10 +1747,12 @@
    "path": "data/fers/US-TX.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 12 -> 40 (over 30% change)",
-    "F-2 NOT SURE 20 -> 5 (over 30% change)",
-    "F-2 30 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0006+US-6540, US-0035+US-9757, US-0541+US-6580",
-    "F-K known 2-fer missing: US-3015 + US-3502"
+    "F-2 candidates 12 -> 51 (over 30% change)",
+    "F-2 NOT SURE 20 -> 4 (over 30% change)",
+    "F-2 only 8 of 12 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
+    "F-2 43 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0006+US-6540, US-0035+US-9757, US-0541+US-6580",
+    "F-K known 2-fer missing: US-3015 + US-3502",
+    "F-K known 2-fer missing: US-6581 + US-7483"
    ],
    "notes": [],
    "verdict": "HOLD"
