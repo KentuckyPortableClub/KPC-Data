@@ -510,7 +510,7 @@
    "sources": {
     "US-4146": "read from the agency 2026-11-11",
     "US-7680": "read from the agency 2026-10-28",
-    "USGS water": "USGS NHDPlus HR file 2020-04-01 (the same NHDPlus HR water, from USGS's download files)"
+    "USGS water": "saved copy of the USGS map, read 2026-11-11"
    },
    "checked": "2026-11-11"
   },
@@ -606,7 +606,7 @@
    "sources": {
     "US-4170": "read from the agency 2026-11-11",
     "US-4483": "read from the agency 2026-11-11",
-    "USGS water": "USGS NHDPlus HR file 2020-04-16 (the same NHDPlus HR water, from USGS's download files)"
+    "USGS water": "saved copy of the USGS map, read 2026-11-11"
    },
    "checked": "2026-11-11"
   },
@@ -630,7 +630,7 @@
    "sources": {
     "US-4171": "read from the agency 2026-11-11",
     "US-4483": "read from the agency 2026-11-11",
-    "USGS water": "USGS NHDPlus HR file 2020-04-16 (the same NHDPlus HR water, from USGS's download files)"
+    "USGS water": "saved copy of the USGS map, read 2026-11-11"
    },
    "checked": "2026-11-11"
   },
@@ -1099,6 +1099,54 @@
   },
   {
    "area": "midwest",
+   "state": "US-IN",
+   "refs": [
+    "US-4170",
+    "US-5686"
+   ],
+   "names": {
+    "US-4170": "Hardin Ridge on Monroe Lake State Recreation Area",
+    "US-5686": "Fairfax State Recreation Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "909.6 ac",
+   "sort": 909.6,
+   "reason": "candidate \u00b7 ['FED:USACE', 'STAT']",
+   "id": "US-4170+US-5686@area@39.022,-86.490",
+   "sources": {
+    "US-4170": "read from the agency 2026-11-11",
+    "US-5686": "read from the agency 2026-11-11",
+    "USGS water": "USGS NHDPlus HR file 2020-04-16 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "US-IN",
+   "refs": [
+    "US-4171",
+    "US-5686"
+   ],
+   "names": {
+    "US-4171": "Paynetown on Monroe Lake State Recreation Area",
+    "US-5686": "Fairfax State Recreation Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "909.6 ac",
+   "sort": 909.6,
+   "reason": "candidate \u00b7 ['FED:USACE', 'STAT']",
+   "id": "US-4171+US-5686@area@39.022,-86.490",
+   "sources": {
+    "US-4171": "read from the agency 2026-11-11",
+    "US-5686": "read from the agency 2026-11-11",
+    "USGS water": "USGS NHDPlus HR file 2020-04-16 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
    "state": "US-MN",
    "refs": [
     "US-4491",
@@ -1142,54 +1190,6 @@
     "US-12458": "read from the agency 2026-11-04",
     "US-4823": "read from the agency 2026-11-08",
     "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
-   },
-   "checked": "2026-11-11"
-  },
-  {
-   "area": "midwest",
-   "state": "US-IN",
-   "refs": [
-    "US-4170",
-    "US-5686"
-   ],
-   "names": {
-    "US-4170": "Hardin Ridge on Monroe Lake State Recreation Area",
-    "US-5686": "Fairfax State Recreation Area"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "744.8 ac",
-   "sort": 744.8,
-   "reason": "candidate \u00b7 ['FED:USACE', 'STATE']",
-   "id": "US-4170+US-5686@area@39.022,-86.490",
-   "sources": {
-    "US-4170": "read from the agency 2026-11-11",
-    "US-5686": "read from the agency 2026-11-11",
-    "USGS water": "USGS NHDPlus HR file 2020-04-16 (the same NHDPlus HR water, from USGS's download files)"
-   },
-   "checked": "2026-11-11"
-  },
-  {
-   "area": "midwest",
-   "state": "US-IN",
-   "refs": [
-    "US-4171",
-    "US-5686"
-   ],
-   "names": {
-    "US-4171": "Paynetown on Monroe Lake State Recreation Area",
-    "US-5686": "Fairfax State Recreation Area"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "744.8 ac",
-   "sort": 744.8,
-   "reason": "candidate \u00b7 ['FED:USACE', 'STATE']",
-   "id": "US-4171+US-5686@area@39.022,-86.490",
-   "sources": {
-    "US-4171": "read from the agency 2026-11-11",
-    "US-5686": "read from the agency 2026-11-11",
-    "USGS water": "USGS NHDPlus HR file 2020-04-16 (the same NHDPlus HR water, from USGS's download files)"
    },
    "checked": "2026-11-11"
   },
@@ -1310,6 +1310,30 @@
   },
   {
    "area": "midwest",
+   "state": "US-IL",
+   "refs": [
+    "US-12368",
+    "US-4132"
+   ],
+   "names": {
+    "US-12368": "Hooper Branch Savanna State Nature Preserve",
+    "US-4132": "Iroquois County State Wildlife Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "552.8 ac",
+   "sort": 552.8,
+   "reason": "candidate \u00b7 ['STAT', 'STATE']",
+   "id": "US-12368+US-4132@area@41.001,-87.554",
+   "sources": {
+    "US-12368": "saved copy (answer key)",
+    "US-4132": "read from the agency 2026-11-04",
+    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
    "state": "US-IN",
    "refs": [
     "US-4235",
@@ -1328,30 +1352,6 @@
    "sources": {
     "US-4235": "read from the agency 2026-11-11",
     "US-7369": "read from the agency 2026-11-11",
-    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
-   },
-   "checked": "2026-11-11"
-  },
-  {
-   "area": "midwest",
-   "state": "US-IL",
-   "refs": [
-    "US-12368",
-    "US-4132"
-   ],
-   "names": {
-    "US-12368": "Hooper Branch Savanna State Nature Preserve",
-    "US-4132": "Iroquois County State Wildlife Area"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "479.4 ac",
-   "sort": 479.4,
-   "reason": "candidate \u00b7 ['STAT', 'STATE']",
-   "id": "US-12368+US-4132@area@41.001,-87.554",
-   "sources": {
-    "US-12368": "saved copy (answer key)",
-    "US-4132": "read from the agency 2026-11-04",
     "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
    },
    "checked": "2026-11-11"
@@ -1492,6 +1492,54 @@
   },
   {
    "area": "midwest",
+   "state": "US-IN",
+   "refs": [
+    "US-4168",
+    "US-7842"
+   ],
+   "names": {
+    "US-4168": "Frances Slocum on Mississinewa Lake State Recreation Area",
+    "US-7842": "Red Bridge State Recreation Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "348.7 ac",
+   "sort": 348.7,
+   "reason": "candidate \u00b7 ['FED:USACE', 'STAT']",
+   "id": "US-4168+US-7842@area@40.678,-85.898",
+   "sources": {
+    "US-4168": "read from the agency 2026-11-11",
+    "US-7842": "read from the agency 2026-11-11",
+    "USGS water": "USGS NHDPlus HR file 2020-04-16 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "US-IN",
+   "refs": [
+    "US-4169",
+    "US-7842"
+   ],
+   "names": {
+    "US-4169": "Miami on Mississinewa Lake State Recreation Area",
+    "US-7842": "Red Bridge State Recreation Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "348.7 ac",
+   "sort": 348.7,
+   "reason": "candidate \u00b7 ['FED:USACE', 'STAT']",
+   "id": "US-4169+US-7842@area@40.678,-85.898",
+   "sources": {
+    "US-4169": "read from the agency 2026-11-11",
+    "US-7842": "read from the agency 2026-11-11",
+    "USGS water": "USGS NHDPlus HR file 2020-04-16 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
    "state": "US-MN",
    "refs": [
     "US-2520",
@@ -1527,9 +1575,9 @@
    },
    "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
-   "size": "312.7 ac",
-   "sort": 312.7,
-   "reason": "candidate \u00b7 ['FED:USACE', 'STATE']",
+   "size": "313.5 ac",
+   "sort": 313.5,
+   "reason": "candidate \u00b7 ['FED:USACE', 'STAT']",
    "id": "US-4170+US-5688@area@39.007,-86.506",
    "sources": {
     "US-4170": "read from the agency 2026-11-11",
@@ -1551,14 +1599,62 @@
    },
    "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
-   "size": "312.7 ac",
-   "sort": 312.7,
-   "reason": "candidate \u00b7 ['FED:USACE', 'STATE']",
+   "size": "313.5 ac",
+   "sort": 313.5,
+   "reason": "candidate \u00b7 ['FED:USACE', 'STAT']",
    "id": "US-4171+US-5688@area@39.007,-86.506",
    "sources": {
     "US-4171": "read from the agency 2026-11-11",
     "US-5688": "read from the agency 2026-11-11",
     "USGS water": "USGS NHDPlus HR file 2020-04-16 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "US-IN",
+   "refs": [
+    "US-4170",
+    "US-5684"
+   ],
+   "names": {
+    "US-4170": "Hardin Ridge on Monroe Lake State Recreation Area",
+    "US-5684": "Allens Creek State Recreation Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "304.7 ac",
+   "sort": 304.7,
+   "reason": "candidate \u00b7 ['FED:USACE', 'STAT']",
+   "id": "US-4170+US-5684@area@39.037,-86.450",
+   "sources": {
+    "US-4170": "read from the agency 2026-11-11",
+    "US-5684": "read from the agency 2026-11-11",
+    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "US-IN",
+   "refs": [
+    "US-4171",
+    "US-5684"
+   ],
+   "names": {
+    "US-4171": "Paynetown on Monroe Lake State Recreation Area",
+    "US-5684": "Allens Creek State Recreation Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "304.7 ac",
+   "sort": 304.7,
+   "reason": "candidate \u00b7 ['FED:USACE', 'STAT']",
+   "id": "US-4171+US-5684@area@39.037,-86.450",
+   "sources": {
+    "US-4171": "read from the agency 2026-11-11",
+    "US-5684": "read from the agency 2026-11-11",
+    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
    },
    "checked": "2026-11-11"
   },
@@ -1607,48 +1703,24 @@
   },
   {
    "area": "midwest",
-   "state": "US-IN",
+   "state": "US-IL",
    "refs": [
-    "US-4170",
-    "US-5684"
+    "US-4120",
+    "US-7256"
    ],
    "names": {
-    "US-4170": "Hardin Ridge on Monroe Lake State Recreation Area",
-    "US-5684": "Allens Creek State Recreation Area"
+    "US-4120": "Des Plaines State Fish and Wildlife Area",
+    "US-7256": "Midewin National Grassland"
    },
    "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
-   "size": "292.0 ac",
-   "sort": 292.0,
-   "reason": "candidate \u00b7 ['FED:USACE', 'STATE']",
-   "id": "US-4170+US-5684@area@39.037,-86.450",
+   "size": "288.7 ac",
+   "sort": 288.7,
+   "reason": "candidate \u00b7 ['FED:USFS', 'STAT']",
+   "id": "US-4120+US-7256@area@41.338,-88.180",
    "sources": {
-    "US-4170": "read from the agency 2026-11-11",
-    "US-5684": "read from the agency 2026-11-11",
-    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
-   },
-   "checked": "2026-11-11"
-  },
-  {
-   "area": "midwest",
-   "state": "US-IN",
-   "refs": [
-    "US-4171",
-    "US-5684"
-   ],
-   "names": {
-    "US-4171": "Paynetown on Monroe Lake State Recreation Area",
-    "US-5684": "Allens Creek State Recreation Area"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "292.0 ac",
-   "sort": 292.0,
-   "reason": "candidate \u00b7 ['FED:USACE', 'STATE']",
-   "id": "US-4171+US-5684@area@39.037,-86.450",
-   "sources": {
-    "US-4171": "read from the agency 2026-11-11",
-    "US-5684": "read from the agency 2026-11-11",
+    "US-4120": "read from the agency 2026-11-04",
+    "US-7256": "read from the agency 2026-11-11",
     "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
    },
    "checked": "2026-11-11"
@@ -1679,24 +1751,48 @@
   },
   {
    "area": "midwest",
-   "state": "US-IL",
+   "state": "US-IN",
    "refs": [
-    "US-4120",
-    "US-7256"
+    "US-4170",
+    "US-5687"
    ],
    "names": {
-    "US-4120": "Des Plaines State Fish and Wildlife Area",
-    "US-7256": "Midewin National Grassland"
+    "US-4170": "Hardin Ridge on Monroe Lake State Recreation Area",
+    "US-5687": "Cutright State Recreation Area"
    },
    "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
-   "size": "280.5 ac",
-   "sort": 280.5,
-   "reason": "candidate \u00b7 ['FED:USFS', 'STAT']",
-   "id": "US-4120+US-7256@area@41.338,-88.180",
+   "size": "272.0 ac",
+   "sort": 272.0,
+   "reason": "candidate \u00b7 ['FED:USACE', 'STATE']",
+   "id": "US-4170+US-5687@area@39.068,-86.413",
    "sources": {
-    "US-4120": "read from the agency 2026-11-04",
-    "US-7256": "read from the agency 2026-11-11",
+    "US-4170": "read from the agency 2026-11-11",
+    "US-5687": "read from the agency 2026-11-11",
+    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "US-IN",
+   "refs": [
+    "US-4171",
+    "US-5687"
+   ],
+   "names": {
+    "US-4171": "Paynetown on Monroe Lake State Recreation Area",
+    "US-5687": "Cutright State Recreation Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "272.0 ac",
+   "sort": 272.0,
+   "reason": "candidate \u00b7 ['FED:USACE', 'STATE']",
+   "id": "US-4171+US-5687@area@39.068,-86.413",
+   "sources": {
+    "US-4171": "read from the agency 2026-11-11",
+    "US-5687": "read from the agency 2026-11-11",
     "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
    },
    "checked": "2026-11-11"
@@ -1722,54 +1818,6 @@
     "US-10349": "read from the agency 2026-11-11",
     "US-8174": "read from the agency 2026-11-11",
     "USGS water": "USGS NHDPlus HR file 2020-04-01 (the same NHDPlus HR water, from USGS's download files)"
-   },
-   "checked": "2026-11-11"
-  },
-  {
-   "area": "midwest",
-   "state": "US-IN",
-   "refs": [
-    "US-4170",
-    "US-5687"
-   ],
-   "names": {
-    "US-4170": "Hardin Ridge on Monroe Lake State Recreation Area",
-    "US-5687": "Cutright State Recreation Area"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "259.0 ac",
-   "sort": 259.0,
-   "reason": "candidate \u00b7 ['FED:USACE', 'JNT']",
-   "id": "US-4170+US-5687@area@39.068,-86.413",
-   "sources": {
-    "US-4170": "read from the agency 2026-11-11",
-    "US-5687": "read from the agency 2026-11-11",
-    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
-   },
-   "checked": "2026-11-11"
-  },
-  {
-   "area": "midwest",
-   "state": "US-IN",
-   "refs": [
-    "US-4171",
-    "US-5687"
-   ],
-   "names": {
-    "US-4171": "Paynetown on Monroe Lake State Recreation Area",
-    "US-5687": "Cutright State Recreation Area"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "259.0 ac",
-   "sort": 259.0,
-   "reason": "candidate \u00b7 ['FED:USACE', 'JNT']",
-   "id": "US-4171+US-5687@area@39.068,-86.413",
-   "sources": {
-    "US-4171": "read from the agency 2026-11-11",
-    "US-5687": "read from the agency 2026-11-11",
-    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
    },
    "checked": "2026-11-11"
   },
@@ -2033,49 +2081,25 @@
   },
   {
    "area": "midwest",
-   "state": "US-IN",
+   "state": "US-IL",
    "refs": [
-    "US-4168",
-    "US-7842"
+    "US-1000",
+    "US-13298"
    ],
    "names": {
-    "US-4168": "Frances Slocum on Mississinewa Lake State Recreation Area",
-    "US-7842": "Red Bridge State Recreation Area"
+    "US-1000": "Illinois Beach State Park",
+    "US-13298": "North Point Marina State Recreation Area"
    },
    "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
-   "size": "205.9 ac",
-   "sort": 205.9,
-   "reason": "candidate \u00b7 ['FED:USACE', 'STATE']",
-   "id": "US-4168+US-7842@area@40.678,-85.898",
+   "size": "200.6 ac",
+   "sort": 200.6,
+   "reason": "candidate \u00b7 ['STAT', 'STATE']",
+   "id": "US-1000+US-13298@area@42.485,-87.803",
    "sources": {
-    "US-4168": "read from the agency 2026-11-11",
-    "US-7842": "read from the agency 2026-11-11",
-    "USGS water": "USGS NHDPlus HR file 2020-04-16 (the same NHDPlus HR water, from USGS's download files)"
-   },
-   "checked": "2026-11-11"
-  },
-  {
-   "area": "midwest",
-   "state": "US-IN",
-   "refs": [
-    "US-4169",
-    "US-7842"
-   ],
-   "names": {
-    "US-4169": "Miami on Mississinewa Lake State Recreation Area",
-    "US-7842": "Red Bridge State Recreation Area"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "205.9 ac",
-   "sort": 205.9,
-   "reason": "candidate \u00b7 ['FED:USACE', 'STATE']",
-   "id": "US-4169+US-7842@area@40.678,-85.898",
-   "sources": {
-    "US-4169": "read from the agency 2026-11-11",
-    "US-7842": "read from the agency 2026-11-11",
-    "USGS water": "USGS NHDPlus HR file 2020-04-16 (the same NHDPlus HR water, from USGS's download files)"
+    "US-1000": "read from the agency 2026-11-11",
+    "US-13298": "read from the agency 2026-11-04",
+    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
    },
    "checked": "2026-11-11"
   },
@@ -2118,30 +2142,6 @@
    "sources": {
     "US-0271": "read from the agency 2026-11-11",
     "US-0367": "read from the agency 2026-11-11",
-    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
-   },
-   "checked": "2026-11-11"
-  },
-  {
-   "area": "midwest",
-   "state": "US-IL",
-   "refs": [
-    "US-1000",
-    "US-13298"
-   ],
-   "names": {
-    "US-1000": "Illinois Beach State Park",
-    "US-13298": "North Point Marina State Recreation Area"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "195.9 ac",
-   "sort": 195.9,
-   "reason": "candidate \u00b7 ['STAT', 'STATE']",
-   "id": "US-1000+US-13298@area@42.485,-87.803",
-   "sources": {
-    "US-1000": "read from the agency 2026-11-11",
-    "US-13298": "read from the agency 2026-11-04",
     "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
    },
    "checked": "2026-11-11"
@@ -2229,6 +2229,30 @@
     "US-0673": "saved copy (answer key)",
     "US-2530": "read from the agency 2026-11-04",
     "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "US-IN",
+   "refs": [
+    "US-4208",
+    "US-5681"
+   ],
+   "names": {
+    "US-4208": "J. E. Roush Lake State Fish and Wildlife Area",
+    "US-5681": "Little Turtle State Recreation Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "185.0 ac",
+   "sort": 185.0,
+   "reason": "candidate \u00b7 ['FED:USACE', 'STAT']",
+   "id": "US-4208+US-5681@area@40.842,-85.461",
+   "sources": {
+    "US-4208": "read from the agency 2026-11-11",
+    "US-5681": "saved copy (answer key)",
+    "USGS water": "USGS NHDPlus HR file 2020-04-16 (the same NHDPlus HR water, from USGS's download files)"
    },
    "checked": "2026-11-11"
   },
@@ -2393,9 +2417,9 @@
    },
    "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
-   "size": "155.3 ac",
-   "sort": 155.3,
-   "reason": "candidate \u00b7 ['FED:USACE', 'STATE']",
+   "size": "159.8 ac",
+   "sort": 159.8,
+   "reason": "candidate \u00b7 ['FED:USACE', 'STAT']",
    "id": "US-4170+US-5682@area@39.071,-86.456",
    "sources": {
     "US-4170": "read from the agency 2026-11-11",
@@ -2417,9 +2441,9 @@
    },
    "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
-   "size": "155.3 ac",
-   "sort": 155.3,
-   "reason": "candidate \u00b7 ['FED:USACE', 'STATE']",
+   "size": "159.8 ac",
+   "sort": 159.8,
+   "reason": "candidate \u00b7 ['FED:USACE', 'STAT']",
    "id": "US-4171+US-5682@area@39.071,-86.456",
    "sources": {
     "US-4171": "read from the agency 2026-11-11",
@@ -3479,6 +3503,25 @@
    "area": "midwest",
    "state": "",
    "refs": [
+    "US-4179",
+    "US-5681"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "85 same-day activations",
+   "sort": 85.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4179+US-5681@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (85x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
     "US-4168",
     "US-4169"
    ],
@@ -3570,6 +3613,25 @@
    "sort": 82.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-0987+US-7256@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (82x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-4178",
+    "US-5681"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "82 same-day activations",
+   "sort": 82.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4178+US-5681@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (82x, POTA history)"
    },
@@ -3814,6 +3876,25 @@
    "area": "midwest",
    "state": "",
    "refs": [
+    "US-7842",
+    "US-7843"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "75 same-day activations",
+   "sort": 75.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-7842+US-7843@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (75x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
     "US-4196",
     "US-4223"
    ],
@@ -3925,7 +4006,7 @@
    "sources": {
     "US-0282": "read from the agency 2026-11-11",
     "US-4482": "read from the agency 2026-11-11",
-    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
+    "USGS water": "saved copy of the USGS map, read 2026-11-11"
    },
    "checked": "2026-11-11"
   },
@@ -4333,6 +4414,25 @@
    "sort": 63.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-6975+US-7713@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (63x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-7841",
+    "US-7843"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "63 same-day activations",
+   "sort": 63.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-7841+US-7843@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (63x, POTA history)"
    },
@@ -5956,6 +6056,25 @@
    "area": "midwest",
    "state": "",
    "refs": [
+    "US-4180",
+    "US-5681"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "43 same-day activations",
+   "sort": 43.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4180+US-5681@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (43x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
     "US-4218",
     "US-6971"
    ],
@@ -5966,6 +6085,25 @@
    "sort": 43.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-4218+US-6971@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (43x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-4224",
+    "US-5681"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "43 same-day activations",
+   "sort": 43.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4224+US-5681@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (43x, POTA history)"
    },
@@ -6066,6 +6204,25 @@
    "sort": 42.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-11266+US-4572@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (42x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-4177",
+    "US-5681"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "42 same-day activations",
+   "sort": 42.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4177+US-5681@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (42x, POTA history)"
    },
@@ -6730,6 +6887,25 @@
    "area": "midwest",
    "state": "",
    "refs": [
+    "US-5687",
+    "US-5689"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "38 same-day activations",
+   "sort": 38.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-5687+US-5689@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (38x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
     "US-9834",
     "US-9857"
    ],
@@ -6911,6 +7087,25 @@
    "sort": 37.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-5682+US-5688@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (37x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-5690",
+    "US-6976"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "37 same-day activations",
+   "sort": 37.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-5690+US-6976@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (37x, POTA history)"
    },
@@ -7326,7 +7521,7 @@
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "id": "US-0995+US-10660@pota",
    "sources": {
-    "POTA history": "activated together by the same call on the same day (34x, POTA history) / outlines come within 30 m of each other"
+    "POTA history": "activated together by the same call on the same day (34x, POTA history) / outlines come within 20 m of each other"
    },
    "checked": "2026-11-11"
   },
@@ -7363,25 +7558,6 @@
    "sort": 34.0,
    "reason": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "id": "US-2271+US-4234@pota",
-   "sources": {
-    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (34x, POTA history)"
-   },
-   "checked": "2026-11-11"
-  },
-  {
-   "area": "midwest",
-   "state": "",
-   "refs": [
-    "US-4483",
-    "US-5684"
-   ],
-   "names": {},
-   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-   "kind": "pair",
-   "size": "34 same-day activations",
-   "sort": 34.0,
-   "reason": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
-   "id": "US-4483+US-5684@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (34x, POTA history)"
    },
@@ -7548,6 +7724,25 @@
    "area": "midwest",
    "state": "",
    "refs": [
+    "US-4483",
+    "US-5689"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "33 same-day activations",
+   "sort": 33.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-4483+US-5689@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (33x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
     "US-10181",
     "US-2255"
    ],
@@ -7634,6 +7829,25 @@
    "sort": 33.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-4168+US-4224@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (33x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-4224",
+    "US-7843"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "33 same-day activations",
+   "sort": 33.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4224+US-7843@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (33x, POTA history)"
    },
@@ -7748,6 +7962,25 @@
    "sort": 32.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-4572+US-8185@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (32x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-5684",
+    "US-5689"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "32 same-day activations",
+   "sort": 32.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-5684+US-5689@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (32x, POTA history)"
    },
@@ -7933,6 +8166,25 @@
    "area": "midwest",
    "state": "",
    "refs": [
+    "US-2251",
+    "US-5690"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "31 same-day activations",
+   "sort": 31.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2251+US-5690@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (31x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
     "US-4169",
     "US-4178"
    ],
@@ -8026,6 +8278,30 @@
     "US-13160": "read from the agency 2026-11-11",
     "US-4492": "read from the agency 2026-11-11",
     "USGS water": "USGS NHDPlus HR file 2020-04-01 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "US-IN",
+   "refs": [
+    "US-4483",
+    "US-5687"
+   ],
+   "names": {
+    "US-4483": "Hoosier National Forest",
+    "US-5687": "Cutright State Recreation Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "30.7 ac",
+   "sort": 30.7,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:USFS', 'STATE']",
+   "id": "US-4483+US-5687@area@39.065,-86.419",
+   "sources": {
+    "US-4483": "read from the agency 2026-11-11",
+    "US-5687": "read from the agency 2026-11-11",
+    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
    },
    "checked": "2026-11-11"
   },
@@ -8261,6 +8537,25 @@
    "area": "midwest",
    "state": "",
    "refs": [
+    "US-4179",
+    "US-7843"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "30 same-day activations",
+   "sort": 30.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4179+US-7843@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (30x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
     "US-4216",
     "US-4229"
    ],
@@ -8271,6 +8566,25 @@
    "sort": 30.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-4216+US-4229@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (30x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-4235",
+    "US-5690"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "30 same-day activations",
+   "sort": 30.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4235+US-5690@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (30x, POTA history)"
    },
@@ -8335,30 +8649,6 @@
   },
   {
    "area": "midwest",
-   "state": "US-IN",
-   "refs": [
-    "US-4483",
-    "US-5687"
-   ],
-   "names": {
-    "US-4483": "Hoosier National Forest",
-    "US-5687": "Cutright State Recreation Area"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "29.4 ac",
-   "sort": 29.4,
-   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:USFS', 'JNT']",
-   "id": "US-4483+US-5687@area@39.065,-86.419",
-   "sources": {
-    "US-4483": "read from the agency 2026-11-11",
-    "US-5687": "read from the agency 2026-11-11",
-    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
-   },
-   "checked": "2026-11-11"
-  },
-  {
-   "area": "midwest",
    "state": "US-IL",
    "refs": [
     "US-0287",
@@ -8377,7 +8667,7 @@
    "sources": {
     "US-0287": "read from the agency 2026-11-11",
     "US-4146": "read from the agency 2026-11-11",
-    "USGS water": "USGS NHDPlus HR file 2020-04-16 (the same NHDPlus HR water, from USGS's download files)"
+    "USGS water": "saved copy of the USGS map, read 2026-11-11"
    },
    "checked": "2026-11-11"
   },
@@ -8623,6 +8913,44 @@
    "sort": 29.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-5687+US-5688@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (29x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-5688",
+    "US-5689"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "29 same-day activations",
+   "sort": 29.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-5688+US-5689@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (29x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-5689",
+    "US-5690"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "29 same-day activations",
+   "sort": 29.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-5689+US-5690@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (29x, POTA history)"
    },
@@ -9162,6 +9490,25 @@
    "sort": 28.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-4178+US-7841@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (28x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-4178",
+    "US-7843"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "28 same-day activations",
+   "sort": 28.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4178+US-7843@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (28x, POTA history)"
    },
@@ -9741,6 +10088,25 @@
    "area": "midwest",
    "state": "",
    "refs": [
+    "US-4180",
+    "US-7843"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "27 same-day activations",
+   "sort": 27.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4180+US-7843@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (27x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
     "US-4183",
     "US-7369"
    ],
@@ -9874,6 +10240,44 @@
    "area": "midwest",
    "state": "",
    "refs": [
+    "US-5686",
+    "US-5689"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "27 same-day activations",
+   "sort": 27.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-5686+US-5689@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (27x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-5689",
+    "US-6976"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "27 same-day activations",
+   "sort": 27.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-5689+US-6976@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (27x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
     "US-8156",
     "US-8157"
    ],
@@ -9886,6 +10290,54 @@
    "id": "US-8156+US-8157@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (27x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "US-IN",
+   "refs": [
+    "US-4170",
+    "US-5689"
+   ],
+   "names": {
+    "US-4170": "Hardin Ridge on Monroe Lake State Recreation Area",
+    "US-5689": "Pine Grove State Recreation Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "26.4 ac",
+   "sort": 26.4,
+   "reason": "candidate \u00b7 ['FED:USACE', 'STAT']",
+   "id": "US-4170+US-5689@area@39.106,-86.406",
+   "sources": {
+    "US-4170": "read from the agency 2026-11-11",
+    "US-5689": "saved copy (answer key)",
+    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "US-IN",
+   "refs": [
+    "US-4171",
+    "US-5689"
+   ],
+   "names": {
+    "US-4171": "Paynetown on Monroe Lake State Recreation Area",
+    "US-5689": "Pine Grove State Recreation Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "26.4 ac",
+   "sort": 26.4,
+   "reason": "candidate \u00b7 ['FED:USACE', 'STAT']",
+   "id": "US-4171+US-5689@area@39.106,-86.406",
+   "sources": {
+    "US-4171": "read from the agency 2026-11-11",
+    "US-5689": "saved copy (answer key)",
+    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
    },
    "checked": "2026-11-11"
   },
@@ -10297,6 +10749,25 @@
    "area": "midwest",
    "state": "",
    "refs": [
+    "US-4177",
+    "US-7843"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "26 same-day activations",
+   "sort": 26.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4177+US-7843@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (26x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
     "US-4180",
     "US-7842"
    ],
@@ -10345,6 +10816,44 @@
    "sort": 26.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-5682+US-5684@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (26x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-5682",
+    "US-5689"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "26 same-day activations",
+   "sort": 26.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-5682+US-5689@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (26x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-5687",
+    "US-5690"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "26 same-day activations",
+   "sort": 26.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-5687+US-5690@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (26x, POTA history)"
    },
@@ -10564,6 +11073,25 @@
    "sort": 25.0,
    "reason": "not sure: both parks join the same official records and both POTA pins are inside it, but the pins are more than 1 km apart (separate units of one big record): likely a join to fix (US-4172 and US-417",
    "id": "US-4172+US-4175@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (25x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-4483",
+    "US-5690"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "25 same-day activations",
+   "sort": 25.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-4483+US-5690@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (25x, POTA history)"
    },
@@ -12353,6 +12881,54 @@
   },
   {
    "area": "midwest",
+   "state": "US-IN",
+   "refs": [
+    "US-4168",
+    "US-7843"
+   ],
+   "names": {
+    "US-4168": "Frances Slocum on Mississinewa Lake State Recreation Area",
+    "US-7843": "Pearson Mill State Recreation Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "22.2 ac",
+   "sort": 22.2,
+   "reason": "candidate \u00b7 ['FED:USACE', 'STAT']",
+   "id": "US-4168+US-7843@area@40.669,-85.849",
+   "sources": {
+    "US-4168": "read from the agency 2026-11-11",
+    "US-7843": "saved copy (answer key)",
+    "USGS water": "USGS NHDPlus HR file 2020-04-16 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "US-IN",
+   "refs": [
+    "US-4169",
+    "US-7843"
+   ],
+   "names": {
+    "US-4169": "Miami on Mississinewa Lake State Recreation Area",
+    "US-7843": "Pearson Mill State Recreation Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "22.2 ac",
+   "sort": 22.2,
+   "reason": "candidate \u00b7 ['FED:USACE', 'STAT']",
+   "id": "US-4169+US-7843@area@40.669,-85.849",
+   "sources": {
+    "US-4169": "read from the agency 2026-11-11",
+    "US-7843": "saved copy (answer key)",
+    "USGS water": "USGS NHDPlus HR file 2020-04-16 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
    "state": "",
    "refs": [
     "US-0999",
@@ -12735,6 +13311,25 @@
    "area": "midwest",
    "state": "",
    "refs": [
+    "US-2251",
+    "US-5689"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "22 same-day activations",
+   "sort": 22.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-2251+US-5689@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (22x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
     "US-2255",
     "US-6970"
    ],
@@ -12916,6 +13511,44 @@
    "sort": 22.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-4572+US-7485@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (22x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-5684",
+    "US-5690"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "22 same-day activations",
+   "sort": 22.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-5684+US-5690@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (22x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-5688",
+    "US-5690"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "22 same-day activations",
+   "sort": 22.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-5688+US-5690@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (22x, POTA history)"
    },
@@ -13172,6 +13805,25 @@
    "sort": 21.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-0999+US-1032@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (21x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-10178",
+    "US-5690"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "21 same-day activations",
+   "sort": 21.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-10178+US-5690@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (21x, POTA history)"
    },
@@ -14302,6 +14954,25 @@
    "area": "midwest",
    "state": "",
    "refs": [
+    "US-4235",
+    "US-5689"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "20 same-day activations",
+   "sort": 20.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4235+US-5689@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
     "US-4274",
     "US-4293"
    ],
@@ -14388,6 +15059,44 @@
    "sort": 20.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-4572+US-7368@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-5682",
+    "US-5690"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "20 same-day activations",
+   "sort": 20.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-5682+US-5690@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-5686",
+    "US-5690"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "20 same-day activations",
+   "sort": 20.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-5686+US-5690@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (20x, POTA history)"
    },
@@ -14749,6 +15458,25 @@
    "area": "midwest",
    "state": "",
    "refs": [
+    "US-1033",
+    "US-4154"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "19 same-day activations",
+   "sort": 19.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-1033+US-4154@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (19x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
     "US-10404",
     "US-2258"
    ],
@@ -14968,6 +15696,25 @@
    "sort": 19.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-3348+US-7984@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (19x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-4094",
+    "US-4154"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "19 same-day activations",
+   "sort": 19.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4094+US-4154@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (19x, POTA history)"
    },
@@ -17547,6 +18294,25 @@
    "area": "midwest",
    "state": "",
    "refs": [
+    "US-5690",
+    "US-7369"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "17 same-day activations",
+   "sort": 17.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-5690+US-7369@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (17x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
     "US-7513",
     "US-8281"
    ],
@@ -17795,25 +18561,6 @@
    "sort": 16.0,
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "id": "US-11366+US-7655@pota",
-   "sources": {
-    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
-   },
-   "checked": "2026-11-11"
-  },
-  {
-   "area": "midwest",
-   "state": "",
-   "refs": [
-    "US-12314",
-    "US-12368"
-   ],
-   "names": {},
-   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
-   "kind": "pair",
-   "size": "16 same-day activations",
-   "sort": 16.0,
-   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
-   "id": "US-12314+US-12368@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (16x, POTA history)"
    },
@@ -19714,6 +20461,25 @@
    "sort": 15.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-10143+US-6470@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-10178",
+    "US-5689"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "15 same-day activations",
+   "sort": 15.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-10178+US-5689@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (15x, POTA history)"
    },
@@ -22535,6 +23301,25 @@
    "area": "midwest",
    "state": "",
    "refs": [
+    "US-4184",
+    "US-5681"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "14 same-day activations",
+   "sort": 14.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4184+US-5681@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
     "US-4243",
     "US-4304"
    ],
@@ -22640,6 +23425,25 @@
    "sort": 14.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-4587+US-8255@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-5689",
+    "US-7369"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "14 same-day activations",
+   "sort": 14.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-5689+US-7369@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (14x, POTA history)"
    },
@@ -23592,6 +24396,25 @@
    "sort": 13.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-10238+US-2252@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-1026",
+    "US-4154"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "13 same-day activations",
+   "sort": 13.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-1026+US-4154@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
    },
@@ -24637,6 +25460,25 @@
    "sort": 13.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-4181+US-4204@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-4183",
+    "US-5690"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "13 same-day activations",
+   "sort": 13.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4183+US-5690@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (13x, POTA history)"
    },
@@ -27141,6 +27983,25 @@
    "state": "",
    "refs": [
     "US-4183",
+    "US-5689"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4183+US-5689@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-4183",
     "US-6976"
    ],
    "names": {},
@@ -27416,6 +28277,25 @@
    "sort": 12.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-4839+US-8261@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-5681",
+    "US-7841"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "12 same-day activations",
+   "sort": 12.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-5681+US-7841@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (12x, POTA history)"
    },
@@ -30594,6 +31474,25 @@
    "sort": 11.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-4208+US-7842@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-4208",
+    "US-7843"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "11 same-day activations",
+   "sort": 11.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4208+US-7843@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (11x, POTA history)"
    },
@@ -34332,6 +35231,25 @@
    "area": "midwest",
    "state": "",
    "refs": [
+    "US-4168",
+    "US-5681"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-4168+US-5681@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
     "US-4171",
     "US-7369"
    ],
@@ -34760,6 +35678,25 @@
    "sort": 10.0,
    "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
    "id": "US-4842+US-8264@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-5681",
+    "US-7843"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "10 same-day activations",
+   "sort": 10.0,
+   "reason": "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)",
+   "id": "US-5681+US-7843@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (10x, POTA history)"
    },
@@ -36169,6 +37106,25 @@
    "sort": 9.0,
    "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
    "id": "US-4203+US-4483@pota",
+   "sources": {
+    "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (9x, POTA history)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "",
+   "refs": [
+    "US-4215",
+    "US-5689"
+   ],
+   "names": {},
+   "what": "HINT only (look here): POTA history shows people activating these together; logs have mistakes, it never decides",
+   "kind": "pair",
+   "size": "9 same-day activations",
+   "sort": 9.0,
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "id": "US-4215+US-5689@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (9x, POTA history)"
    },
@@ -38914,6 +39870,29 @@
   },
   {
    "area": "midwest",
+   "state": "US-IL",
+   "refs": [
+    "US-12314",
+    "US-4132"
+   ],
+   "names": {
+    "US-12314": "Kankakee National Wildlife Refuge",
+    "US-4132": "Iroquois County State Wildlife Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "6.0 ac",
+   "sort": 6.0,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED', 'STAT']",
+   "id": "US-12314+US-4132@area@41.010,-87.531",
+   "sources": {
+    "US-12314": "read from the agency 2026-11-11",
+    "US-4132": "read from the agency 2026-11-04"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
    "state": "US-IA",
    "refs": [
     "US-11307",
@@ -40415,6 +41394,54 @@
    "id": "US-8230+US-8231@pota",
    "sources": {
     "POTA history": "activated together by the same call on the same day (6x, POTA history) / outlines about 0 m apart"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "US-IN",
+   "refs": [
+    "US-4170",
+    "US-5690"
+   ],
+   "names": {
+    "US-4170": "Hardin Ridge on Monroe Lake State Recreation Area",
+    "US-5690": "Crooked Creek State Recreation Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "5.7 ac",
+   "sort": 5.7,
+   "reason": "candidate \u00b7 ['FED:USACE', 'STAT']",
+   "id": "US-4170+US-5690@area@39.094,-86.328",
+   "sources": {
+    "US-4170": "read from the agency 2026-11-11",
+    "US-5690": "saved copy (answer key)",
+    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "US-IN",
+   "refs": [
+    "US-4171",
+    "US-5690"
+   ],
+   "names": {
+    "US-4171": "Paynetown on Monroe Lake State Recreation Area",
+    "US-5690": "Crooked Creek State Recreation Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "5.7 ac",
+   "sort": 5.7,
+   "reason": "candidate \u00b7 ['FED:USACE', 'STAT']",
+   "id": "US-4171+US-5690@area@39.094,-86.328",
+   "sources": {
+    "US-4171": "read from the agency 2026-11-11",
+    "US-5690": "saved copy (answer key)",
+    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
    },
    "checked": "2026-11-11"
   },
@@ -42422,6 +43449,30 @@
   },
   {
    "area": "midwest",
+   "state": "US-IN",
+   "refs": [
+    "US-4483",
+    "US-5684"
+   ],
+   "names": {
+    "US-4483": "Hoosier National Forest",
+    "US-5684": "Allens Creek State Recreation Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "4.7 ac",
+   "sort": 4.7,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:USFS', 'STAT']",
+   "id": "US-4483+US-5684@area@39.032,-86.445",
+   "sources": {
+    "US-4483": "read from the agency 2026-11-11",
+    "US-5684": "read from the agency 2026-11-11",
+    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
    "state": "US-IL",
    "refs": [
     "US-4157",
@@ -42580,29 +43631,6 @@
    "area": "midwest",
    "state": "US-IL",
    "refs": [
-    "US-12314",
-    "US-4132"
-   ],
-   "names": {
-    "US-12314": "Kankakee National Wildlife Refuge",
-    "US-4132": "Iroquois County State Wildlife Area"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "3.4 ac",
-   "sort": 3.4,
-   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED', 'STAT']",
-   "id": "US-12314+US-4132@area@41.010,-87.542",
-   "sources": {
-    "US-12314": "read from the agency 2026-11-11",
-    "US-4132": "read from the agency 2026-11-04"
-   },
-   "checked": "2026-11-11"
-  },
-  {
-   "area": "midwest",
-   "state": "US-IL",
-   "refs": [
     "US-4482",
     "US-7257"
    ],
@@ -42634,16 +43662,16 @@
     "CA-0359": "Quetico Provincial Park",
     "US-4491": "Superior National Forest"
    },
-   "what": "water map weak here (fix later: a better water source)",
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "3.4 ac",
    "sort": 3.4,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5 \u00b7 ['FED:USFS', 'STATE']",
+   "reason": "candidate \u00b7 ['FED:USFS', 'STATE']",
    "id": "CA-0359+US-4491@area@48.190,-91.036",
    "sources": {
     "CA-0359": "read from the agency 2026-11-04",
     "US-4491": "read from the agency 2026-11-11",
-    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
+    "USGS water": "USGS NHDPlus HR file 2020-04-16 (the same NHDPlus HR water, from USGS's download files)"
    },
    "checked": "2026-11-11"
   },
@@ -42913,7 +43941,7 @@
    "kind": "area",
    "size": "1.8 ac",
    "sort": 1.8,
-   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:USACE', 'FED:USFS', 'JNT']",
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:USACE', 'FED:USFS', 'STATE']",
    "id": "US-4170+US-4483+US-5687@area@39.066,-86.412",
    "sources": {
     "US-4170": "read from the agency 2026-11-11",
@@ -42940,12 +43968,36 @@
    "kind": "area",
    "size": "1.8 ac",
    "sort": 1.8,
-   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:USACE', 'FED:USFS', 'JNT']",
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:USACE', 'FED:USFS', 'STATE']",
    "id": "US-4171+US-4483+US-5687@area@39.066,-86.412",
    "sources": {
     "US-4171": "read from the agency 2026-11-11",
     "US-4483": "read from the agency 2026-11-11",
     "US-5687": "read from the agency 2026-11-11",
+    "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
+   },
+   "checked": "2026-11-11"
+  },
+  {
+   "area": "midwest",
+   "state": "US-IL",
+   "refs": [
+    "US-12314",
+    "US-12368"
+   ],
+   "names": {
+    "US-12314": "Kankakee National Wildlife Refuge",
+    "US-12368": "Hooper Branch Savanna State Nature Preserve"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "1.5 ac",
+   "sort": 1.5,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED', 'STATE']",
+   "id": "US-12314+US-12368@area@41.003,-87.544",
+   "sources": {
+    "US-12314": "read from the agency 2026-11-11",
+    "US-12368": "saved copy (answer key)",
     "USGS water": "USGS NHDPlus HR file 2020-09-11 (the same NHDPlus HR water, from USGS's download files)"
    },
    "checked": "2026-11-11"
