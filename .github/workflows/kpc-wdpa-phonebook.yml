@@ -1,8 +1,11 @@
-name: KPC WDPA phone book - who runs the parks we still miss (every 6 h, leads only)
-# Nov 1 2026 (chat 10; Brandon 7:30 PM 'use them as a phone book ... yes use it like that'). kpc_wdpa_phonebook.py asks WDPA live at
-# each pin of a park with no official outline: managing authority, local name, designation, data provider. No shapes kept (W-10
-# terms). The park-info engine then searches by that agency (core/adapters.py agency()). data/intake/phonebook.json + .md.
-# Chains itself while parks are left (about 1,300 lookups a run at one request per 2 s). Never red, never emails.
+name: KPC WDPA phone book - who runs the parks we still miss (by hand, saved copy only)
+# Nov 1 2026 (chat 10; Brandon 7:30 PM 'use them as a phone book ... yes use it like that'). Managing authority, local name,
+# designation and data provider of the protected area at each pin of a park with no official outline. No shapes kept (W-10 terms).
+# Nov 11 2026 (host rules, review package A): SAVED COPY ONLY. WDPA sits on a services*.arcgis.com host, which no bot contacts (no
+# request of any kind, robots.txt included). kpc_wdpa_phonebook.py makes no request: it reads a saved WDPA copy a person put OUTSIDE
+# the repo (KPC_WDPA_SAVED) and writes the phone book outside the repo (KPC_WDPA_OUT): KPC-Data main is published whole to Pages, so
+# nothing WDPA is committed here. On a runner there is no saved copy: the run ends green with a visible 'needs the saved WDPA copy'
+# warning and status board line. ONE job with a time budget; it never starts another run (the old self-start chain is gone).
 on:
   # Nov 2 review (G11): a watchdog restart passes as_schedule=<the missed cron>, so it runs exactly like that scheduled run.
   workflow_dispatch:
@@ -16,7 +19,6 @@ on:
     # - cron: '53 9 * * *'   # PR2 (Nov 2): daily (was every 6 h, '53 */6 * * *'); WDPA's agency names change rarely. Chain brake: 6 runs a day
 permissions:
   contents: write
-  actions: write
 concurrency:
   group: kpc-wdpa-phonebook
   cancel-in-progress: false
@@ -25,7 +27,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 60
     env:
-      KPC_CONTACT: 'https://github.com/KentuckyPortableClub (Kentucky Portable Club ham radio club)'
       LINKS: ../links
       MINUTES: '45'
     steps:
@@ -43,29 +44,14 @@ jobs:
             /data/ca-key/
             /data/world-key/
           sparse-checkout-cone-mode: false
-      - name: Look up the parks we still miss
+      - name: Look up the parks we still miss (saved WDPA copy only; no request of any kind)
         id: b
         continue-on-error: true
         run: |
           cd kpcdata
           python3 .github/scripts/kpc_wdpa_phonebook.py | tee /tmp/pb.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { kpc_rc=$?; echo "::warning title=kpc_wdpa_phonebook.py::stopped with an error (exit $rc), see the log above"; echo "kpc_wdpa_phonebook.py - stopped with an error (exit $rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
-          python3 .github/scripts/kpc_status.py board 'WDPA phone book' green "$(grep -o '[0-9]* parks looked up[^;]*' /tmp/pb.txt | head -1) $(date -u +%F)" 'the park-info engine searches by these agencies' || true   # ok: a pipeline (its exit status is the last command; follow-up: pipefail)
-          bash ../links/.github/scripts/kpc_push_data.sh . "WDPA phone book (leads: who runs the parks we still miss)" data/intake/phonebook.json data/intake/phonebook.md data/status || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
-          echo "left=$(grep -o '^LEFT=[0-9]*' /tmp/pb.txt | cut -d= -f2)" >> "$GITHUB_OUTPUT"
-      - name: Next run while parks are left
-        if: steps.b.outputs.left != '' && steps.b.outputs.left != '0' && (github.event_name == 'workflow_dispatch' && !inputs.as_schedule)
-        id: kept_green_1
-        continue-on-error: true
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          # PR2 (fewer runs, Nov 2): CHAIN BRAKE. A self-starting chain stops for the day after 6 runs in 24 h (Nov 2: the hard look
-          # reader chained 187 times and the WDPA phone book 178 times in one day, each one a commit and a site rebuild). The next
-          # scheduled run picks the work up again. Raise the number here if a backlog really needs more.
-          kpc_brake() { n=$(gh api "repos/${{ github.repository }}/actions/workflows/kpc-wdpa-phonebook.yml/runs?created=>=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)&per_page=1" --jq .total_count 2>/dev/null || echo 0); if [ "${n:-0}" -ge 6 ]; then echo "::notice title=Chain brake::kpc-wdpa-phonebook.yml ran $n times in 24 h (limit 6): no next run now; the next scheduled run goes on"; return 1; fi; return 0; }
-          kpc_brake || exit 0
-          # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): was: gh workflow run kpc-wdpa-phonebook.yml -R ${{ github.repository }} || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"
-          echo "::warning title=Paused bot::kpc-wdpa-phonebook.yml is paused (Nov 4 fix bundle) - its next run was NOT started, start it by hand (workflow_dispatch) if it is needed"
+          # only the status board line is saved here: the phone book itself is private (outside the repo), never committed
+          bash ../links/.github/scripts/kpc_push_data.sh . "WDPA phone book: status line" data/status || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:

@@ -34,6 +34,7 @@ ROBOTS_SAID = {}          # host -> the first lines of its robots.txt (so HQ can
 # every services*.arcgis.com host (services-eu1 too) and the saved-copy-only list get no request of any kind, robots.txt included.
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kpc_host_rules as HR  # noqa: E402
+HR.install()   # Nov 11 (review package A): also every urllib redirect hop of this process goes through the host rules
 NEEDS = []             # Nov 10: [(area, url, why)] layer urls this run may not fetch -> data/needs-download.json (KPC_NEEDS_FILE)
 AREA = ['']            # the country the run works on (W-xx), set by the caller when it knows
 RUN = time.strftime('%Y-%m-%d')

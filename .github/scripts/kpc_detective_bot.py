@@ -27,7 +27,7 @@ Output (review material, never a key): data/detective/<area>.json + review.md (t
 answers.md (questions: answered first, then 'not found' with what was tried; unanswered -> chats 8 / 11 -> Brandon), one row
 per layer found APPENDED to data/intake/queue.json (from: 'gap-filler', closes: [refs]), a 'grade me' line per batch
 (kpc_status.py). A park checked within REFRESH_DAYS (30) is skipped; a question is answered once (ask again with a new id).
-Manners: kpc_manners.py (robots.txt with the ArcGIS REST exemption, 1 request / 2 s per host, three strikes = a day's rest).
+Manners: kpc_manners.py (host rules first, then robots.txt with no exemption (the ArcGIS REST exemption is gone since Nov 10), 1 request / 2 s per host, three strikes = a day's rest).
 MINUTES per chunk; never fails (exit 0 always). kpc_gapfill_bot.py is a shim that runs this.
 
 Env: AREAS='US-KY US-NV' (blank = the next unfinished areas in GAP_QUEUE order) · MINUTES (55) · LINKS (KPC-Links checkout,

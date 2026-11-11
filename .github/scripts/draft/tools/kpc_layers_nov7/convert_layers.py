@@ -25,6 +25,13 @@ from urllib.parse import urlparse, urlencode, parse_qsl, urlunparse
 from urllib import robotparser
 
 import requests
+import importlib.util as _ilu  # noqa: E402
+# Nov 11 2026 (host rules, review package A): the club's ONE pre-request host check (.github/scripts/kpc_host_rules.py), loaded by path
+# like tools/kpc_convert_layers does, no fallback. services*.arcgis.com, apps.fs.usda.gov and the never-contact hosts get NO request of
+# any kind, robots.txt included: _blocked() below asks it before robots.txt and before every redirect hop; install() also wraps
+# requests' adapter, so no other call in this process can reach those hosts either.
+_hs = _ilu.spec_from_file_location("kpc_host_rules", os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "kpc_host_rules.py"))
+HR = _ilu.module_from_spec(_hs); _hs.loader.exec_module(HR); HR.install()
 
 UA = "KPC-Data-layer-converter/1.0 (+https://github.com/KentuckyPortableClub/KPC-Data)"
 # Nov 7 review (Grok Bot): the club's never-request list (Grant County NM parcels, NC NHP MAREA) plus the do-not-ingest items
@@ -54,7 +61,7 @@ _robots, _last = {}, {}
 
 def _blocked(url):
     u = (url or "").lower()
-    return any(b.lower() in u for b in BLOCKED)
+    return not HR.host_ok(url)[0] or any(b.lower() in u for b in BLOCKED)   # Nov 11: the host rules first (no robots.txt read either)
 
 
 def _robots_for(url):
@@ -90,7 +97,8 @@ def polite_get(url, stream=False, token_host=None, _depth=0):
     if _depth > 5:
         raise RuntimeError("too many redirects")
     if _blocked(url):
-        raise RuntimeError("URL is on the blocked list")
+        hok, hwhy = HR.host_ok(url)
+        raise RuntimeError(f"BLOCKED host, saved copy only, not asked: {hwhy}" if not hok else "URL is on the blocked list")
     rp = _robots_for(url)
     if not rp.can_fetch(UA, url):
         raise RuntimeError("robots.txt disallows this URL (or robots.txt answered 401/403/5xx)")
