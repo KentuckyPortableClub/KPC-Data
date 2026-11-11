@@ -57,7 +57,7 @@ with tempfile.TemporaryDirectory() as td:
     # every allowed source blocked: nothing to match, no crash
     h4 = FakeHttp(block_all=True)
     d4 = TP.fetch_basemap(h4, 'US-9998', 38.0, -85.0, 2.0, cache, use_cache=True)
-    check(d4['points'] == [] and set(d4['skipped']) == {'road', 'water', 'land survey'}, f'all blocked -> empty basemap, all three skipped: {d4["skipped"]}')
+    check(d4['points'] == [] and set(d4['skipped']) == {'road', 'water', 'census water', 'land survey'}, f'all blocked -> empty basemap, all four skipped: {d4["skipped"]}')
     # any OTHER error still stops the map as before
     class Boom(FakeHttp):
         def get_json(self, url, params): raise RuntimeError('request failed after retries: x')
