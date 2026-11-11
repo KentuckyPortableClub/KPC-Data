@@ -19,7 +19,8 @@ OUT  data/gis-hunter/<area>.json (per park: hits, verdict, tried) · data/gis-hu
      each, answers kept across runs) · COUNT line per area · status board + 'grade me' line.
 Env: AREAS ('US-IA US-RI' / 'CA-PE'; blank = every US area with open parks, fewest first) · COUNTRY (US | CA, used when AREAS is
      blank) · LINKS (KPC-Links checkout: the Fable pools + keys) · MINUTES (55) · BMAX (searches per area per run, 40) · NET=1
-Manners: kpc_manners.py (robots.txt; ArcGIS REST exempt; 2 s per host; three strikes = a day's rest). Never fails (exit 0)."""
+Manners: kpc_manners.py (host rules first: services*.arcgis.com and the never-contact hosts get no request of any kind, robots.txt
+     included; then robots.txt obeyed with no exemption; 2 s per host; three strikes = a day's rest). Never fails (exit 0)."""
 import json, math, os, pathlib, re, sys, time, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from kpc_manners import Manners  # noqa: E402
@@ -137,6 +138,8 @@ def acres(rings):
 def arc(u, params):
     q = urllib.parse.urlencode({**params, 'f': 'json'})
     st, hd, body, final = M.get(u.rstrip('/') + '/query?' + q, accept='application/json', timeout=120)
+    if st == 'host-rule': raise RuntimeError('BLOCKED: never-contact host, saved copy only (not asked; on the needs-download list)')   # Nov 11: never shown as "no answer"
+    if st in ('robots', 'robots-unreadable'): raise RuntimeError(f'not asked: {st} (robots.txt)')
     if not (isinstance(st, int) and st < 400): raise RuntimeError(f'no answer ({st})')
     j = json.loads(body.decode('utf-8', 'replace'))
     if isinstance(j, dict) and j.get('error'): raise RuntimeError(str(j['error'])[:140])

@@ -46,8 +46,28 @@ HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from kpc_manners import Manners, page_text, links_in, pdf_text  # noqa: E402
 import kpc_host_rules; kpc_host_rules.install()
-try: from kpc_manners import browser_text  # noqa: E402
-except Exception: browser_text = lambda u, M: ''  # noqa: E731,E722
+try: from kpc_manners import browser_text as _manners_browser_text  # noqa: E402
+except Exception: _manners_browser_text = lambda u, M: ''  # noqa: E731,E722
+import kpc_manners as _KMB  # noqa: E402
+
+
+def browser_text(u, M):
+    """Nov 11 (host rules, review package A): the headless browser asks nothing of a never-contact host either. A script-built
+    agency page can embed a map widget that loads from services*.arcgis.com; the browser context is made HERE with a route that
+    aborts every request kpc_host_rules refuses, before it is sent. No guarded browser = no browser read at all."""
+    if os.environ.get('BROWSER') != '1': return ''
+    if 'pw' not in _KMB._BROWSER:
+        try:
+            from playwright.sync_api import sync_playwright
+            _KMB._BROWSER['pw'] = sync_playwright().start(); _KMB._BROWSER['b'] = _KMB._BROWSER['pw'].chromium.launch()
+            ctx = _KMB._BROWSER['b'].new_context(user_agent=M.ua)
+            ctx.route('**/*', lambda rt: rt.abort() if not kpc_host_rules.host_ok(rt.request.url)[0] else rt.continue_())
+            _KMB._BROWSER['ctx'] = ctx; _KMB._BROWSER['routed'] = True
+        except Exception as e:  # noqa: BLE001
+            _KMB._BROWSER.setdefault('pw', None); _KMB._BROWSER['why'] = f'{type(e).__name__}: {str(e)[:200]}'
+            print('::notice title=Browser read::no guarded browser on this runner (' + _KMB._BROWSER['why'].replace('\n', ' ') + '): script-built pages are not read', flush=True)
+    if not _KMB._BROWSER.get('routed'): return ''
+    return _manners_browser_text(u, M)
 
 BOT = 'closures super-bot'
 OUT = pathlib.Path(os.environ.get('OUT') or 'data/closures')
@@ -754,9 +774,23 @@ def rss(url):
 
 
 # ---- the 10 state feeds: copied from KPC-Links .github/scripts/kpc_us_closures.py (chat 2, Oct 25-28 2026), credit there.
+# Nov 11 2026 (host rules, review package A): five of these feeds sit on services*.arcgis.com hosts, which no bot contacts (no request
+# of any kind, robots.txt included). They are NOT read (feed_blocked() below, before any request): the state's last items are kept and
+# marked STALE since the last good read, the source is listed as blocked in the area file, the review and the log. No saved copy of a
+# live status feed exists; a state's own closures PAGE (KPC-Links data/closure-pages.json) is read as usual when the area is queued.
+CA_FEED = 'https://services2.arcgis.com/AhxrK3F6WM8ECvDi/arcgis/rest/services/CSPParkUnit_CurrentStatus/FeatureServer/0'
+WI_FEED = 'https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/WI_Park_Closures_PUBLIC_VIEW/FeatureServer/0'
+FL_FEED = 'https://services1.arcgis.com/nRHtyn3uE1kyzoYc/arcgis/rest/services/Florida_State_Parks_Operational_Status/FeatureServer/{}'
+MT_FEED = 'https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_LANDS_CLOSURES_RESTRICTIONS/FeatureServer/0'
+MO_FEED = 'https://gis.dnr.mo.gov/server/rest/services/parks/State_Parks_Status_Viewer/MapServer/0'
+NJ_FEED = 'https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/New_Jersey_State_Park_Service_Live_Status_Updates_(Public_View)/FeatureServer/0'
+OR_FEED = 'https://nrimp.dfw.state.or.us/arcgis/rest/services/ORHAM/ORHAM/MapServer/6'
+CO_FEED = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQv8-zuZoYsA6jhM2l76icNnlVKK6NR36qeamBg_6s2f0POK6-nA0s66Nt_TcanQeClTXBvBvZGJls9/pub?gid=0&single=true&output=csv'
+AR_FEED = 'https://www.agfc.com/category/wma-closure/feed/'
+NC_FEED = 'https://www.ncparks.gov/blog-category/alerts/feed'
 def src_ca():
     rows = []
-    for f in arcgis('https://services2.arcgis.com/AhxrK3F6WM8ECvDi/arcgis/rest/services/CSPParkUnit_CurrentStatus/FeatureServer/0'):
+    for f in arcgis(CA_FEED):
         a = f.get('attributes') or {}
         st = str(F(a, 'Status', 'STATUS', 'CurrentStatus', 'Unit_Status', 'ParkStatus') or '')
         if not st or st.strip().upper() == 'OPEN': continue
@@ -768,7 +802,7 @@ def src_ca():
 
 def src_wi():
     rows = []
-    for f in arcgis('https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/WI_Park_Closures_PUBLIC_VIEW/FeatureServer/0'):
+    for f in arcgis(WI_FEED):
         a = f.get('attributes') or {}
         if str(F(a, 'Active_Flag') or 'Y').strip().upper() in ('N', 'NO', '0', 'FALSE', 'INACTIVE'): continue
         end = day(F(a, 'Exp_End_Date'))
@@ -781,7 +815,7 @@ def src_wi():
 def src_fl():
     rows = []
     for lid, what in ((6, ''), (5, 'Campground: ')):
-        for f in arcgis(f'https://services1.arcgis.com/nRHtyn3uE1kyzoYc/arcgis/rest/services/Florida_State_Parks_Operational_Status/FeatureServer/{lid}'):
+        for f in arcgis(FL_FEED.format(lid)):
             a = f.get('attributes') or {}
             st = str(F(a, 'PARK_STATUS', 'STATUS', 'CAMP_STATUS') or '')
             if not st or st.strip().lower().startswith('open'): continue
@@ -793,7 +827,7 @@ def src_fl():
 
 def src_mt():
     rows = []
-    for f in arcgis('https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_LANDS_CLOSURES_RESTRICTIONS/FeatureServer/0'):
+    for f in arcgis(MT_FEED):
         a = f.get('attributes') or {}
         end = day(F(a, 'DATE_END'))
         if end and end < TODAY: continue
@@ -806,7 +840,7 @@ def src_mt():
 
 def src_mo():
     rows = []
-    for f in arcgis('https://gis.dnr.mo.gov/server/rest/services/parks/State_Parks_Status_Viewer/MapServer/0'):
+    for f in arcgis(MO_FEED):
         a = f.get('attributes') or {}
         st = str(F(a, 'STATUS') or '').strip()
         adv = []
@@ -822,7 +856,7 @@ def src_mo():
 
 def src_nj():
     rows = []
-    for f in arcgis('https://services1.arcgis.com/QWdNfRs7lkPq4g4Q/arcgis/rest/services/New_Jersey_State_Park_Service_Live_Status_Updates_(Public_View)/FeatureServer/0'):
+    for f in arcgis(NJ_FEED):
         a = f.get('attributes') or {}
         st = str(F(a, 'Status') or '').strip()
         if not st or st.lower().startswith('open'): continue
@@ -833,7 +867,7 @@ def src_nj():
 
 def src_or():
     rows = []
-    for f in arcgis('https://nrimp.dfw.state.or.us/arcgis/rest/services/ORHAM/ORHAM/MapServer/6', 'alert_enabled=1'):
+    for f in arcgis(OR_FEED, 'alert_enabled=1'):
         a = f.get('attributes') or {}
         end = day(F(a, 'alert_end'))
         if end and end < TODAY: continue
@@ -843,7 +877,7 @@ def src_or():
 
 
 def src_co():
-    ok, kind, body, st = read('https://docs.google.com/spreadsheets/d/e/2PACX-1vQv8-zuZoYsA6jhM2l76icNnlVKK6NR36qeamBg_6s2f0POK6-nA0s66Nt_TcanQeClTXBvBvZGJls9/pub?gid=0&single=true&output=csv')
+    ok, kind, body, st = read(CO_FEED)
     if not ok: raise RuntimeError(st)
     rows = []
     for r in csv.DictReader(io.StringIO(body)):
@@ -867,8 +901,8 @@ def _rss_rows(url, keep=r'.'):
     return rows
 
 
-def src_ar(): return _rss_rows('https://www.agfc.com/category/wma-closure/feed/')
-def src_nc(): return _rss_rows('https://www.ncparks.gov/blog-category/alerts/feed', r'clos|status|open|restrict|alert')
+def src_ar(): return _rss_rows(AR_FEED)
+def src_nc(): return _rss_rows(NC_FEED, r'clos|status|open|restrict|alert')
 
 
 FEEDS = {  # area: (id, agency, page for people, reader)   (the 10 feed states of kpc_us_closures.py)
@@ -883,6 +917,20 @@ FEEDS = {  # area: (id, agency, page for people, reader)   (the 10 feed states o
     'US-AR': ('ar-agfc', 'Arkansas Game & Fish', 'https://www.agfc.com/category/wma-closure/', src_ar),
     'US-NC': ('nc-parks', 'NC State Parks', 'https://www.ncparks.gov/', src_nc),
 }
+FEED_URLS = {'ca-parks': [CA_FEED], 'wi-dnr': [WI_FEED], 'fl-parks': [FL_FEED.format(6), FL_FEED.format(5)], 'mt-fwp': [MT_FEED],
+             'mo-parks': [MO_FEED], 'nj-parks': [NJ_FEED], 'or-odfw': [OR_FEED], 'co-cpw': [CO_FEED], 'ar-agfc': [AR_FEED], 'nc-parks': [NC_FEED]}
+
+
+def feed_blocked(sid):
+    """'' when the feed may be read, else why not (Nov 11): the host rules (kpc_host_rules.py) refuse its host, so it is not even asked."""
+    for u in FEED_URLS.get(sid) or []:
+        ok, why = kpc_host_rules.host_ok(u)
+        if not ok: return f'blocked host ({why})'
+    return ''
+
+
+def stale_words(last_ok):
+    return f"STALE since {last_ok or 'unknown (no good read on file)'}"
 
 
 # ---- Kentucky State Parks' own alert list (the same list kpc_park_alerts.ky_state_parks reads)
@@ -1497,12 +1545,25 @@ def process_area(K, area, state, review):
         parks = park_list(area, scope if not home else 'all')
         ps = prev_src.get(sid) or {}
         old = [it for it in prev_items.values() if it['src'] == sid]
-        try:
-            rows = rows_of(sid, agency, url, kind, how, refs, area, parks, home)
-            ok = True; why = ''
-        except Exception as e:  # noqa: BLE001
-            rows, ok, why = [], False, str(e)[:160]
+        blocked = feed_blocked(sid) if kind == 'feed' else ''
+        if blocked:                                                                  # Nov 11: a blocked host is never asked (no request of any kind)
+            rows, ok, why = [], False, f"{stale_words(ps.get('last_ok'))}: {blocked}; no saved copy of this live feed, last items kept and marked stale"
+            STAT['sources_blocked'] = STAT.get('sources_blocked', 0) + 1
+            notice(f'{area} {sid}: {why}')
+        else:
+            try:
+                rows = rows_of(sid, agency, url, kind, how, refs, area, parks, home)
+                ok = True; why = ''
+            except Exception as e:  # noqa: BLE001
+                rows, ok, why = [], False, str(e)[:160]
         if not ok:                                                                   # keep the last items: a failed read never reopens a park
+            if blocked:
+                items += [dict(o, stale=f"{stale_words(ps.get('last_ok'))}: the agency's feed is on a host the bots may not read; check the agency page")
+                          for o in old if still_valid(o, area)]
+                srcs[sid] = {'agency': agency, 'url': url, 'kind': kind, 'ok': False, 'skipped': False, 'blocked': True, 'why': why, 'n': len(old),
+                             'n_prev': ps.get('n', 0), 'unmatched': ps.get('unmatched', []), 'last_ok': ps.get('last_ok'),
+                             'stale_since': ps.get('last_ok') or 'unknown', 'fails': (ps.get('fails') or 0) + 1}
+                continue
             skipped = why.startswith('needs ') or why.startswith('D-R8')
             if why == 'rest': why = 'rest (host resting after an earlier strike; last items kept)'
             if why in ('deferred', 'crawl-delay', 'robots-unreadable'): why = f'{why} (read again next run; last items kept)'; skipped = True   # Nov 3 (A4): not a failure

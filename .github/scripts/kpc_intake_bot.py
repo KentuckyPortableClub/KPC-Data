@@ -26,7 +26,7 @@ every map-layer LEAD anyone finds (the world harvester, the discovery bot, the g
 
 Nothing here decides anything for members and nothing is stored but metadata and counts (never geometry). Chat 9 reads
 data/intake/review.md, sets approved: true on the rows it wants in data/intake/ready.json, and the nightly key rebuild reads
-approved rows later. Manners: kpc_manners.py (robots obeyed with the ArcGIS REST API path exemption, 1 request / 2 s per
+approved rows later. Manners: kpc_manners.py (host rules first; robots obeyed with no exemption, the ArcGIS REST one is gone since Nov 10; 1 request / 2 s per
 host, back-off, three strikes = a day's rest). About 70 requests per row at most. A row probed within 30 days is skipped
 unless its queue row changed (url, title, publisher, licence or note). MINUTES per chunk; never fails (exit 0 always).
 
