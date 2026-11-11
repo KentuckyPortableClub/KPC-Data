@@ -10,14 +10,16 @@
     "taken_down": 19,
     "whole": 1
    },
-   "failed": 0,
+   "failed": 2,
    "items": 89,
-   "read": "2026-11-11T02:11Z",
+   "read": "2026-11-11T08:19Z",
    "sources": 73,
    "status": "done"
   }
  },
- "hosts": {},
+ "hosts": {
+  "www.fs.usda.gov": 1794471688.4121273
+ },
  "last": {
   "areas": [
    "US-KY"
@@ -26,28 +28,41 @@
   "done": [
    "US-KY"
   ],
-  "failed": [],
+  "failed": [
+   {
+    "area": "US-KY",
+    "src": "fs-gwj",
+    "url": "https://www.fs.usda.gov/alerts/gwj/alerts-notices",
+    "why": "rest (host resting after an earlier strike; last items kept)"
+   },
+   {
+    "area": "US-KY",
+    "src": "ky-fs-dbnf",
+    "url": "https://www.fs.usda.gov/alerts/dbnf/alerts-notices",
+    "why": "rest (host resting after an earlier strike; last items kept)"
+   }
+  ],
   "manners": {
-   "errors": 0,
+   "errors": 3,
    "for_person_urls": [],
    "host_rule": 0,
    "keyed_api": 1,
-   "requests": 111,
-   "rested": 0,
+   "requests": 112,
+   "rested": 1,
    "robots": 0,
-   "strikes": 0
+   "strikes": 3
   },
   "stat": {
    "items": 0,
-   "pages": 83,
+   "pages": 81,
    "pdfs": 17,
    "requests": 105,
-   "sentences": 476,
-   "sources_failed": 0,
+   "sentences": 359,
+   "sources_failed": 2,
    "unmatched": 122,
-   "unreadable": 262
+   "unreadable": 206
   },
-  "when": "2026-11-11T02:11Z"
+  "when": "2026-11-11T08:19Z"
  },
  "proven": "2026-10-31 (Brandon GO Oct 30 6:07 AM 'Yes': KY closures live Sat Oct 31; dry runs clean Oct 30). The 6-hour schedule runs from now; the site keeps reading the old Kentucky reader until chat 11's side-by-side PASS (CL-5).",
  "test": {

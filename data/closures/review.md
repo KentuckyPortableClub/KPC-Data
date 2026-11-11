@@ -1,13 +1,20 @@
 # Closures super-bot: review (2026-11-11; RULE SHEET D; compared quietly, nothing on cards until GO)
 
-Run: 2026-11-11T02:11Z · requests 105 · pages 83 · PDFs 17 · sentences read 476 · unmatched 122 · look-alikes skipped 262 · sources failed 0
+Run: 2026-11-11T08:19Z · requests 105 · pages 81 · PDFs 17 · sentences read 359 · unmatched 122 · look-alikes skipped 206 · sources failed 2
 
 ## Kentucky gate: **FAIL** — 24 of 31 of Kentucky's own reader's items found here on the same park (77%); 50 only here
 
-## US-KY (done, read 2026-11-11T02:11)
+## Sources that failed this run
+
+- US-KY fs-gwj: rest (host resting after an earlier strike; last items kept) (https://www.fs.usda.gov/alerts/gwj/alerts-notices)
+- US-KY ky-fs-dbnf: rest (host resting after an earlier strike; last items kept) (https://www.fs.usda.gov/alerts/dbnf/alerts-notices)
+
+## US-KY (done, read 2026-11-11T08:19)
 whole 1 · part 0 · hunt 0 · seasonal 0 · note 69 · taken_down 19 · 0 banners
 
-Dropped as another state's place (multi-state forest): 34 notices
+Sources that failed (last items kept): ky-fs-dbnf (rest (host resting after an earlier strike; last items kept)); fs-gwj (rest (host resting after an earlier strike; last items kept))
+
+Dropped as another state's place (multi-state forest): 2 notices
 
 Unmatched (two parks or none; for chat 11 to judge):
 - AJ Jolly Lake is closed for 2026 due to repairs for all recreational activities [ky-fw-alerts] = no POTA park: A.J. Jolly Lake is a Campbell County park lake · no park name shares a word
