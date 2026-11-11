@@ -5,13 +5,13 @@
    "verdict": "FAIL",
    "bar": "Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.",
    "measured": {
-    "rows": 8543,
+    "rows": 8587,
     "parks": 3853,
     "parks_with_hit": 493,
-    "SURE": 321,
-    "LIKELY": 516,
-    "UNLIKELY_evidence": 2987,
-    "strong": 176,
+    "SURE": 326,
+    "LIKELY": 518,
+    "UNLIKELY_evidence": 3000,
+    "strong": 180,
     "already_approved": 497,
     "open_without_whynot": 456,
     "non_official_candidates": 1,
@@ -31,11 +31,11 @@
     },
     {
      "reason": "evidence: UNLIKELY only : name: none word in common",
-     "parks": 1282
+     "parks": 1289
     },
     {
      "reason": "evidence: UNLIKELY only : pin not inside nor within m with a name match",
-     "parks": 671
+     "parks": 672
     },
     {
      "reason": "blocked: host resting",
@@ -108,19 +108,19 @@
     "the finder bars need the side-by-side run (95% re-found, +25% parks) and a 40-row sample (85% YES)"
    ],
    "details": {
-    "rows": 8543,
-    "found_or_candidate": 811,
-    "blocked": 1277,
+    "rows": 8587,
+    "found_or_candidate": 818,
+    "blocked": 1301,
     "hit_rate": 0.095,
     "bands": {
-     "STRONG": 176,
-     "WEAK": 621,
+     "STRONG": 180,
+     "WEAK": 624,
      "CONFLICT": 14
     },
     "tiers": {
      "T-1": 52,
-     "T-2": 273,
-     "T-3": 387,
+     "T-2": 277,
+     "T-3": 390,
      "T-4": 47,
      "T-6": 52
     },
@@ -297,10 +297,10 @@
    "pass1": {
     "error": 430,
     "already approved": 497,
-    "found": 189,
-    "candidate": 699,
-    "evidence": 2933,
-    "blocked": 1277,
+    "found": 193,
+    "candidate": 702,
+    "evidence": 2946,
+    "blocked": 1301,
     "not found": 2514,
     "pin only": 4
    },
