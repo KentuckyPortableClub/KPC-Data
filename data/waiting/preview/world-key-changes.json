@@ -1,9 +1,9 @@
 {
  "about": "world-key: the HELD build (data/waiting/in/data/world-key/) vs the LIVE key (data/world-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'world-key', 'build': the held build id from data/waiting/in/data/world-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-11 13:55 UTC",
+ "made": "2026-11-11 16:37 UTC",
  "totals": {
-  "gained": 701,
-  "lost": 120,
+  "gained": 835,
+  "lost": 96,
   "pieces_changed": 4325,
   "grade_changed": 12018
  },
@@ -28,7 +28,7 @@
   },
   "BE": {
    "gained": 0,
-   "lost": 10,
+   "lost": 0,
    "pieces_changed": 0,
    "grade_changed": 164
   },
@@ -123,8 +123,8 @@
    "grade_changed": 7
   },
   "GB": {
-   "gained": 410,
-   "lost": 15,
+   "gained": 544,
+   "lost": 14,
    "pieces_changed": 232,
    "grade_changed": 0
   },
@@ -154,7 +154,7 @@
   },
   "IE": {
    "gained": 2,
-   "lost": 13,
+   "lost": 0,
    "pieces_changed": 6,
    "grade_changed": 90
   },
@@ -1968,6 +1968,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-0002",
+   "name": "Walton Moss SAC (inc Walton Moss NNR) Conservation Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1391",
+     "Walton Moss",
+     "GB: Special Areas of Conservation (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0002"
+  },
+  {
+   "area": "GB",
    "ref": "GB-0004",
    "name": "Snettisham RSPB Reserve",
    "old_grade": "pin",
@@ -1984,6 +2003,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-0004"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-0014",
+   "name": "Chiltern Hills National Landscape",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "12",
+     "Chilterns",
+     "Natural England National Landscapes",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0014"
   },
   {
    "area": "GB",
@@ -2098,6 +2136,44 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-0057"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-0077",
+   "name": "West Midlands Mosses SAC Conservation Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1153",
+     "West Midlands Mosses",
+     "GB: Special Areas of Conservation (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0077"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-0081",
+   "name": "Gibralter Point National Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "39",
+     "GIBRALTAR POINT",
+     "GB: National Nature Reserves (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0081"
   },
   {
    "area": "GB",
@@ -2253,6 +2329,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-0172",
+   "name": "Thames Basin Heaths SPA - Bagshot Heaths Protected Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "482",
+     "Thames Basin Heaths",
+     "GB: Special Protection Areas (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0172"
+  },
+  {
+   "area": "GB",
    "ref": "GB-0179",
    "name": "Farnham Heath RSPB Reserve",
    "old_grade": "pin",
@@ -2345,6 +2440,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-0202"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-0205",
+   "name": "Breney Common and Goss and Tregoss Moors Conservation Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1874",
+     "Breney Common and Goss & Tregoss Moors",
+     "GB: Special Areas of Conservation (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0205"
   },
   {
    "area": "GB",
@@ -2462,6 +2576,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-0256",
+   "name": "North Norfolk Coast SPA - Blakeney Point National Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "157",
+     "BLAKENEY",
+     "GB: National Nature Reserves (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0256"
+  },
+  {
+   "area": "GB",
    "ref": "GB-0260",
    "name": "Solway Mosses SAC - Campfield Marsh RSPB (inc South Solway Mosses) National Nature Reserve",
    "old_grade": "pin",
@@ -2538,6 +2671,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-0279",
+   "name": "Ribble and Alt Estuaries SPA Protected Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "480",
+     "Ribble & Alt Estuaries",
+     "GB: Special Protection Areas (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0279"
+  },
+  {
+   "area": "GB",
    "ref": "GB-0282",
    "name": "Sandlings SPA - North Warren RSPB Reserve",
    "old_grade": "pin",
@@ -2576,6 +2728,44 @@
   },
   {
    "area": "GB",
+   "ref": "GB-0296",
+   "name": "Lee Valley SPA (including Rye Meads RSPB) Protected Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "219",
+     "Lee Valley",
+     "GB: Special Protection Areas (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0296"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-0304",
+   "name": "Oxford Meadows SAC Conservation Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "158",
+     "Oxford Meadows",
+     "GB: Special Areas of Conservation (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0304"
+  },
+  {
+   "area": "GB",
    "ref": "GB-0306",
    "name": "South Essex Marshes RSPB Reserve",
    "old_grade": "pin",
@@ -2592,6 +2782,82 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-0306"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-0309",
+   "name": "Thames Basin Heaths SPA - Wisley and Ockham Common SPA/SSSI Protected Area",
+   "old_grade": "pin",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "784",
+     "OCKHAM AND WISLEY",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0309"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-0311",
+   "name": "Fenn's Whixall & Bettisfield Mosses SAC (England only) Conservation Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "190",
+     "FENN'S, WHIXALL & BETTISFIELD MOSSES",
+     "Natural England NNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0311"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-0317",
+   "name": "Lydden & Tempell Ewell Downs National Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "102",
+     "LYDDEN TEMPLE EWELL",
+     "GB: National Nature Reserves (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0317"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-0319",
+   "name": "Broadland SPA - Hinkling Broad National Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "131",
+     "HICKLING BROAD",
+     "GB: National Nature Reserves (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0319"
   },
   {
    "area": "GB",
@@ -2639,6 +2905,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-0332",
+   "name": "South West London Waterbodies Protected Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "461",
+     "South West London Waterbodies",
+     "GB: Special Protection Areas (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0332"
+  },
+  {
+   "area": "GB",
    "ref": "GB-0336",
    "name": "Fen Drayton Lakes RSPB Reserve",
    "old_grade": "pin",
@@ -2655,6 +2940,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-0336"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-0339",
+   "name": "Norfolk Valley Fens Conservation Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1640",
+     "Norfolk Valley Fens",
+     "GB: Special Areas of Conservation (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0339"
   },
   {
    "area": "GB",
@@ -3037,6 +3341,63 @@
   },
   {
    "area": "GB",
+   "ref": "GB-0529",
+   "name": "Lydiard House Country Park",
+   "old_grade": "pin",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "197",
+     "LYDIARD PARK",
+     "Natural England Country Parks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0529"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-0538",
+   "name": "Moulden Country Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "243",
+     "MOULDON HILL",
+     "Natural England Country Parks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0538"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-0540",
+   "name": "Burton Dasset Hills Country Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "40",
+     "BURTON DASSETT",
+     "Natural England Country Parks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0540"
+  },
+  {
+   "area": "GB",
    "ref": "GB-0548",
    "name": "Bradgate Country Park",
    "old_grade": "pin",
@@ -3053,6 +3414,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-0548"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-0565",
+   "name": "Sidmouth/West Bay SAC -Axmouth To Lyme Regis Undercliffs National Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "213",
+     "AXMOUTH TO LYME REGIS UNDERCLIFFS",
+     "GB: National Nature Reserves (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0565"
   },
   {
    "area": "GB",
@@ -3132,6 +3512,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-0626",
+   "name": "Bath and Bradford on Avon Bats SAC Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1859",
+     "Bath & Bradford on Avon Bats",
+     "GB: Special Areas of Conservation (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0626"
+  },
+  {
+   "area": "GB",
    "ref": "GB-0634",
    "name": "St Aidan's RSPB Reserve",
    "old_grade": "pin",
@@ -3148,6 +3547,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-0634"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-0639",
+   "name": "Borrowdale Woodland Complex Special Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1498",
+     "Borrowdale Woodland Complex",
+     "GB: Special Areas of Conservation (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0639"
   },
   {
    "area": "GB",
@@ -3170,6 +3588,44 @@
   },
   {
    "area": "GB",
+   "ref": "GB-0676",
+   "name": "The Ridgeway National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "5",
+     "The Ridgeway",
+     "GB: National Trails (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0676"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-0729",
+   "name": "Thames Path National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "10",
+     "Thames Path",
+     "GB: National Trails (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0729"
+  },
+  {
+   "area": "GB",
    "ref": "GB-0751",
    "name": "Quarry Park",
    "old_grade": "pin",
@@ -3189,6 +3645,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-0766",
+   "name": "Hadrian’s Wall Path National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "11",
+     "Hadrian's Wall Path",
+     "GB: National Trails (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0766"
+  },
+  {
+   "area": "GB",
    "ref": "GB-0769",
    "name": "Lowther Castle & Gardens Park",
    "old_grade": "pin",
@@ -3205,6 +3680,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-0769"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-0771",
+   "name": "Stanney Woods National Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "340",
+     "STANNEY WOODS",
+     "Natural England Country Parks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0771"
   },
   {
    "area": "GB",
@@ -3619,6 +4113,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-0866",
+   "name": "Deeside and Lochnagar Scenic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "11",
+     "Deeside and Lochnagar",
+     "NationalScenicAreas",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-0866"
+  },
+  {
+   "area": "GB",
    "ref": "GB-0897",
    "name": "Glencripesdale National Nature Reserve",
    "old_grade": "pin",
@@ -4030,6 +4543,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-1122",
+   "name": "Offas Dyke National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "3",
+     "Offa's Dyke Path",
+     "GB: National Trails (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-1122"
+  },
+  {
+   "area": "GB",
    "ref": "GB-1218",
    "name": "Tollymore Forest Reserve",
    "old_grade": "pin",
@@ -4065,6 +4597,158 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-1222"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-1230",
+   "name": "Rosliston Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "152",
+     "Rosliston",
+     "INV_BLKDATA",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-1230"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-1231",
+   "name": "Pennine Way National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1",
+     "Pennine Way",
+     "GB: National Trails (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-1231"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-1237",
+   "name": "Cotswold Way National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "12",
+     "Cotswold Way",
+     "GB: National Trails (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-1237"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-1263",
+   "name": "Pennine Bridleway National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "13",
+     "Pennine Bridleway",
+     "GB: National Trails (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-1263"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-1264",
+   "name": "South Downs Way National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "4",
+     "South Downs Way",
+     "GB: National Trails (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-1264"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-1265",
+   "name": "South West Coast Path National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "6",
+     "South West Coast Path",
+     "GB: National Trails (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-1265"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-1266",
+   "name": "North Downs Way National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "7",
+     "North Downs Way",
+     "GB: National Trails (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-1266"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-1267",
+   "name": "Peddar's Way and North Norfolk Coast Path National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "9",
+     "Peddars Way and Norfolk Coast Path",
+     "GB: National Trails (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-1267"
   },
   {
    "area": "GB",
@@ -4299,6 +4983,44 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-1511"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-1664",
+   "name": "Arrow Valley Country Park",
+   "old_grade": "pin",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "6",
+     "ARROW",
+     "Natural England Country Parks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-1664"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-1671",
+   "name": "Spion Kop Cemetery Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1231",
+     "SPION COP CEMETERY",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-1671"
   },
   {
    "area": "GB",
@@ -4780,6 +5502,44 @@
   },
   {
    "area": "GB",
+   "ref": "GB-2229",
+   "name": "Bishop's Wood Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "286",
+     "BISHOPS WOOD",
+     "FE_Ownership_160726",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-2229"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-2286",
+   "name": "Tintagel-Marsland-Clovelly Coast SAC Conservation Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "475",
+     "Tintagel-Marsland-Clovelly Coast",
+     "GB: Special Areas of Conservation (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-2286"
+  },
+  {
+   "area": "GB",
    "ref": "GB-2295",
    "name": "Trelissick Garden Park",
    "old_grade": "pin",
@@ -4909,6 +5669,44 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-2399"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-2407",
+   "name": "Gooseholme Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "5644",
+     "Gooseholme (Westmorland)",
+     "GB: CRoW Conclusive Registered Common Land © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-2407"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-2418",
+   "name": "Winkleigh Wood Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1593",
+     "Winkleigh Wood",
+     "FE_Ownership_160726",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-2418"
   },
   {
    "area": "GB",
@@ -5270,6 +6068,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-2726"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-2900",
+   "name": "Todmorden Moor National Heritage Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "2989",
+     "Todmorden Moor",
+     "GB: CRoW Conclusive Registered Common Land © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-2900"
   },
   {
    "area": "GB",
@@ -5805,6 +6622,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-3002",
+   "name": "River Tay (Dunkeld) Scenic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "20",
+     "River Tay (Dunkeld)",
+     "NationalScenicAreas",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-3002"
+  },
+  {
+   "area": "GB",
    "ref": "GB-3003",
    "name": "Loch Tummel Scenic Site",
    "old_grade": "pin",
@@ -6014,6 +6850,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-3019",
+   "name": "Shetland Scenic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1",
+     "Shetland",
+     "NationalScenicAreas",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-3019"
+  },
+  {
+   "area": "GB",
    "ref": "GB-3026",
    "name": "Castle Park",
    "old_grade": "pin",
@@ -6030,6 +6885,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-3026"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-3032",
+   "name": "Wardley Wood Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1343",
+     "WARDLEY WOOD",
+     "FE_Ownership_160726",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-3032"
   },
   {
    "area": "GB",
@@ -6182,6 +7056,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-3197"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-3218",
+   "name": "Blunts Wood and Paige's Wood Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "142",
+     "BLUNTS AND PAIGES WOOD",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-3218"
   },
   {
    "area": "GB",
@@ -6356,6 +7249,63 @@
   },
   {
    "area": "GB",
+   "ref": "GB-3381",
+   "name": "Whitwell Wood Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "110",
+     "Whitwell",
+     "INV_BLKDATA",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-3381"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-3386",
+   "name": "Cropton Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "12",
+     "Cropton",
+     "INV_BLKDATA",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-3386"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-3396",
+   "name": "Bleasdale Circle Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "9835",
+     "Bleasdale Circle enclosed Bronze Age urnfield",
+     "Scheduled Monuments",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-3396"
+  },
+  {
+   "area": "GB",
    "ref": "GB-3401",
    "name": "Thompson Park",
    "old_grade": "pin",
@@ -6467,6 +7417,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-3441"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-3447",
+   "name": "Hazelborough Wood Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1335",
+     "HAZELBOROUGH WOODS",
+     "FE_Ownership_160726",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-3447"
   },
   {
    "area": "GB",
@@ -6600,6 +7569,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-3530"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-3541",
+   "name": "Sun Lane Local Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "1180",
+     "SUN LANE, BURLEY IN WHARFEDALE",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-3541"
   },
   {
    "area": "GB",
@@ -6831,6 +7819,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-3655",
+   "name": "South Common Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "14285",
+     "South Common (Lincoln City)",
+     "GB: CRoW Conclusive Registered Common Land © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-3655"
+  },
+  {
+   "area": "GB",
    "ref": "GB-3661",
    "name": "Moor Park",
    "old_grade": "pin",
@@ -6885,6 +7892,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-3670"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-3673",
+   "name": "Rowthorne Nature Reserve and National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1366",
+     "ROWTHORNE TRAIL",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-3673"
   },
   {
    "area": "GB",
@@ -6980,6 +8006,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-3748"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-3773",
+   "name": "Fenlake Meadowns Local Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "458",
+     "FENLAKE MEADOWS",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-3773"
   },
   {
    "area": "GB",
@@ -7304,6 +8349,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-4082",
+   "name": "Stenner Woods and Millgate Fields Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1057",
+     "STENNER WOODS AND MILGATE FIELDS, DIDSBURY",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-4082"
+  },
+  {
+   "area": "GB",
    "ref": "GB-4101",
    "name": "Queen's Park",
    "old_grade": "pin",
@@ -7339,6 +8403,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-4102"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-4120",
+   "name": "West Walk (Forest of Bere) Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "105",
+     "West Walk",
+     "INV_BLKDATA",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-4120"
   },
   {
    "area": "GB",
@@ -7399,6 +8482,44 @@
   },
   {
    "area": "GB",
+   "ref": "GB-4213",
+   "name": "North Downs Woodlands Special Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "141",
+     "North Downs Woodlands",
+     "GB: Special Areas of Conservation (England) © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-4213"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-4230",
+   "name": "Hesketh Out Marsh Nature and RSPB Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "383",
+     "HESKETH OUT MARSH, RIBBLE ESTUARY",
+     "RSPB_Reserves_20102025_BNG",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-4230"
+  },
+  {
+   "area": "GB",
    "ref": "GB-4246",
    "name": "Snibston Colliery Country Park",
    "old_grade": "pin",
@@ -7415,6 +8536,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-4246"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-4260",
+   "name": "Sutton Bonington Meadow & Spinney Local Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1213",
+     "SUTTON BONNINGTON SPINNEY & MEADOWS",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-4260"
   },
   {
    "area": "GB",
@@ -7472,6 +8612,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-4304"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-4308",
+   "name": "Townend Common Local Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1572",
+     "TOWN END COMMON",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-4308"
   },
   {
    "area": "GB",
@@ -7567,6 +8726,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-4379"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-4426",
+   "name": "Castle Gresley (Castle Knob) Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "9366",
+     "Castle Gresley motte and bailey castle",
+     "Scheduled Monuments",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-4426"
   },
   {
    "area": "GB",
@@ -7671,6 +8849,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-4499",
+   "name": "Phoenix & Phoenix Parkway Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "1575",
+     "PHOENIX PARKWAY",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-4499"
+  },
+  {
+   "area": "GB",
    "ref": "GB-4541",
    "name": "Limpsfield Common National Park",
    "old_grade": "pin",
@@ -7751,6 +8948,44 @@
   },
   {
    "area": "GB",
+   "ref": "GB-4565",
+   "name": "Stapleford Woods Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "182",
+     "Stapleford",
+     "INV_BLKDATA",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-4565"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-4569",
+   "name": "Haughmond Hill Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "244",
+     "Haughmond Hill",
+     "FE_Ownership_160726",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-4569"
+  },
+  {
+   "area": "GB",
    "ref": "GB-4594",
    "name": "Alport Heights Scenic Site",
    "old_grade": "pin",
@@ -7776,6 +9011,82 @@
   },
   {
    "area": "GB",
+   "ref": "GB-4605",
+   "name": "Allean Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1249",
+     "Allean",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-4605"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-4618",
+   "name": "Cruach Tairbeirt Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1164",
+     "Cruach Tairbeirt",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-4618"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-4620",
+   "name": "Callander Crags Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1026",
+     "Callander Crags",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-4620"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-4625",
+   "name": "Loch Ard Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1344",
+     "East Loch Ard",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-4625"
+  },
+  {
+   "area": "GB",
    "ref": "GB-4638",
    "name": "Taylor Park Nature Recreation Area",
    "old_grade": "pin",
@@ -7792,6 +9103,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-4638"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-4668",
+   "name": "Beacon Hill Iron Age Hillfort Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "6194",
+     "Large univallate hillfort at Beacon Hill",
+     "Scheduled Monuments",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-4668"
   },
   {
    "area": "GB",
@@ -7830,6 +9160,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-4695"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-4702",
+   "name": "Hazelton Common Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "540",
+     "HAZLETON COMMON LNR",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-4702"
   },
   {
    "area": "GB",
@@ -7909,6 +9258,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-4832",
+   "name": "Clun Castle Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "9178",
+     "Clun Castle: a motte and bailey castle and formal garden earthworks",
+     "Scheduled Monuments",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-4832"
+  },
+  {
+   "area": "GB",
    "ref": "GB-4845",
    "name": "Helman Tor Nature Reserve",
    "old_grade": "pin",
@@ -7982,6 +9350,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-4872"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-4896",
+   "name": "Sandal Castle and Gardens Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "10232",
+     "Sandal Castle: motte and bailey castle and shell keep castle",
+     "Scheduled Monuments",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-4896"
   },
   {
    "area": "GB",
@@ -8193,6 +9580,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-4979",
+   "name": "Wheldrake Wood Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "120",
+     "Wheldrake",
+     "INV_BLKDATA",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-4979"
+  },
+  {
+   "area": "GB",
    "ref": "GB-5007",
    "name": "Victoria Park",
    "old_grade": "pin",
@@ -8389,6 +9795,44 @@
   },
   {
    "area": "GB",
+   "ref": "GB-5111",
+   "name": "Wykebeck Woods & Asket Hill Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1530",
+     "WYKEBECK WOODS AND ASKETT HILL NATURE RESERVE",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-5111"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-5191",
+   "name": "Broaks Wood Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1105",
+     "BROAKS WOOD",
+     "FE_Ownership_160726",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-5191"
+  },
+  {
+   "area": "GB",
    "ref": "GB-5193",
    "name": "Arger Fen,Tiger Hill & Spouse's Vale Nature Reserve & Site of Significant Scientific Interest",
    "old_grade": "pin",
@@ -8405,6 +9849,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-5193"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-5203",
+   "name": "Ashover Rock AKA The Fabrick Local Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1559",
+     "ASHOVER ROCK - THE FABRIC",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-5203"
   },
   {
    "area": "GB",
@@ -8560,6 +10023,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-5507",
+   "name": "Bradley Brook Local Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "801",
+     "MONKS POOL & BRADLEY BROOK",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-5507"
+  },
+  {
+   "area": "GB",
    "ref": "GB-5516",
    "name": "Randalstown Forest Reserve",
    "old_grade": "pin",
@@ -8614,6 +10096,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-5519"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-5532",
+   "name": "Rayleigh Mount & Castle Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "476",
+     "Rayleigh Castle",
+     "Scheduled Monuments",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-5532"
   },
   {
    "area": "GB",
@@ -8807,6 +10308,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-5663",
+   "name": "Coopers Hill Local Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "325",
+     "COOPERS HILL, GLOUCESTER",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-5663"
+  },
+  {
+   "area": "GB",
    "ref": "GB-5681",
    "name": "Temple Newsam Country Park",
    "old_grade": "pin",
@@ -8863,6 +10383,63 @@
   },
   {
    "area": "GB",
+   "ref": "GB-5683",
+   "name": "Heath Common Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "14447",
+     "Heath Common",
+     "GB: CRoW Conclusive Registered Common Land © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-5683"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-5704",
+   "name": "Dalby Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "35",
+     "Dalby",
+     "INV_BLKDATA",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-5704"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-5714",
+   "name": "Northumberland Coast Path National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "7",
+     "Northumberland Coast",
+     "Natural England National Landscapes",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-5714"
+  },
+  {
+   "area": "GB",
    "ref": "GB-5735",
    "name": "Workington Hall Parklands Park",
    "old_grade": "pin",
@@ -8901,6 +10478,44 @@
   },
   {
    "area": "GB",
+   "ref": "GB-5756",
+   "name": "Castle Stede Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "15832",
+     "Castle Stede motte and bailey, Hornby",
+     "Scheduled Monuments",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-5756"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-5767",
+   "name": "Lomeshaye Marsh Local Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "674",
+     "LOMESHAY MARSH",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-5767"
+  },
+  {
+   "area": "GB",
    "ref": "GB-5769",
    "name": "Roberts Park",
    "old_grade": "pin",
@@ -8917,6 +10532,44 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-5769"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-5791",
+   "name": "Kingfisher (East Staffs) National Scenic Trail",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "994",
+     "KINGFISHER TRAIL",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-5791"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-5803",
+   "name": "Western Heights Heritage Site & Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "1510",
+     "WESTERN HEIGHTS",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-5803"
   },
   {
    "area": "GB",
@@ -8958,6 +10611,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-5836",
+   "name": "Chopwell Wood Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "973",
+     "CHOPWELL WOOD",
+     "FE_Ownership_160726",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-5836"
+  },
+  {
+   "area": "GB",
    "ref": "GB-5855",
    "name": "Holmwood Common Country Park",
    "old_grade": "pin",
@@ -8980,6 +10652,44 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-5855"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-5894",
+   "name": "Wombwell Wood Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "268",
+     "Wombwell",
+     "INV_BLKDATA",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-5894"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-5912",
+   "name": "Booker Common Wildlife Scenic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "9178",
+     "Booker Common",
+     "GB: CRoW Conclusive Registered Common Land © Natural England (approved layer 0)",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-5912"
   },
   {
    "area": "GB",
@@ -9037,6 +10747,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-5931"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-5942",
+   "name": "Boughton Brake Woodland Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1308",
+     "BOUGHTON BRAKE",
+     "FE_Ownership_160726",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-5942"
   },
   {
    "area": "GB",
@@ -9287,6 +11016,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-6052",
+   "name": "Borough Gardens Historic Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1452",
+     "BOROUGH GARDENS, DORCHESTER",
+     "Parks and Gardens",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6052"
+  },
+  {
+   "area": "GB",
    "ref": "GB-6054",
    "name": "Clitheroe Castle and Grounds Historic Site",
    "old_grade": "pin",
@@ -9303,6 +11051,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-6054"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-6064",
+   "name": "Monk Bretton Priory Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "8214",
+     "Monk Bretton Priory Cluniac and Benedictine monastery: monastic precinct and two fishponds",
+     "Scheduled Monuments",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6064"
   },
   {
    "area": "GB",
@@ -9382,6 +11149,44 @@
   },
   {
    "area": "GB",
+   "ref": "GB-6146",
+   "name": "Old Lodge Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "804",
+     "OLD LODGE, NUTLEY",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6146"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-6157",
+   "name": "Park Wood & Goulding's Wood Local Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "907",
+     "PARK WOODS, GOULDINGS WOOD",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6157"
+  },
+  {
+   "area": "GB",
    "ref": "GB-6159",
    "name": "Maidenhead/Cookham Commons & Pinkneys Green/Drive National Park",
    "old_grade": "pin",
@@ -9439,6 +11244,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-6220",
+   "name": "Tunstall Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "42",
+     "Tunstall",
+     "INV_BLKDATA",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6220"
+  },
+  {
+   "area": "GB",
    "ref": "GB-6259",
    "name": "Princes Park",
    "old_grade": "pin",
@@ -9458,6 +11282,82 @@
   },
   {
    "area": "GB",
+   "ref": "GB-6260",
+   "name": "Wavertree Botanical Gardens",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1431",
+     "Wavertree Botanic Garden and Park",
+     "Parks and Gardens",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6260"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-6269",
+   "name": "Berkhamsted Castle & Grounds Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "8913",
+     "Berkhamsted motte and bailey castle",
+     "Scheduled Monuments",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6269"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-6276",
+   "name": "Thurstaston Common Heathland & Grassland SSSI & Country Park",
+   "old_grade": "pin",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "1184",
+     "THURSTASTON COMMON",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6276"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-6290",
+   "name": "Poulton Wood Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "793",
+     "POULTON WOOD, ALDINGTON",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6290"
+  },
+  {
+   "area": "GB",
    "ref": "GB-6305",
    "name": "Flitwick Manor Country Park",
    "old_grade": "pin",
@@ -9474,6 +11374,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-6305"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-6314",
+   "name": "The Walks Historic Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1268",
+     "THE WALKS, KING'S LYNN",
+     "Parks and Gardens",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6314"
   },
   {
    "area": "GB",
@@ -9512,6 +11431,44 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-6341"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-6359",
+   "name": "Owlet Wood Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "pin",
+   "new_pieces": [
+    [
+     "825",
+     "OWLET",
+     "Natural England LNR",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6359"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-6387",
+   "name": "Bugsworth Basin Historical Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "19500",
+     "Bugsworth canal basin, tramway, quarry and limekilns",
+     "Scheduled Monuments",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6387"
   },
   {
    "area": "GB",
@@ -9591,6 +11548,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-6420",
+   "name": "Pontefract Castle & Grounds Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "8284",
+     "Pontefract Castle: part of late Saxon cemetery and town ditch, Norman motte and bailey castle and later medieval enclosu",
+     "Scheduled Monuments",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6420"
+  },
+  {
+   "area": "GB",
    "ref": "GB-6421",
    "name": "Friarwood Valley Gardens Park",
    "old_grade": "pin",
@@ -9635,6 +11611,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-6444",
+   "name": "Broomfield Nature Conservation Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "411",
+     "BROOMFIELD HOUSE",
+     "Parks and Gardens",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6444"
+  },
+  {
+   "area": "GB",
    "ref": "GB-6445",
    "name": "Grovelands Country Park",
    "old_grade": "pin",
@@ -9651,6 +11646,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-6445"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-6448",
+   "name": "Twyford Wood Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1367",
+     "TWYFORD FOREST",
+     "FE_Ownership_160726",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6448"
   },
   {
    "area": "GB",
@@ -9692,6 +11706,25 @@
   },
   {
    "area": "GB",
+   "ref": "GB-6514",
+   "name": "Poppy Wood Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "29",
+     "Poppy Wood",
+     "FE_Ownership_160726",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6514"
+  },
+  {
+   "area": "GB",
    "ref": "GB-6520",
    "name": "Flaybrick Memorial Gardens & Arboretum Reserve",
    "old_grade": "pin",
@@ -9727,6 +11760,63 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-6531"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-6637",
+   "name": "Mabie Forest Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1109",
+     "Mabie",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6637"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-6638",
+   "name": "Dalbeattie Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1349",
+     "Dalbeattie",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6638"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-6711",
+   "name": "Hagg Wood Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "133",
+     "Hagg Wood",
+     "INV_BLKDATA",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6711"
   },
   {
    "area": "GB",
@@ -9784,6 +11874,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-6800"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-6824",
+   "name": "Wykeham Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "45",
+     "Wykeham",
+     "INV_BLKDATA",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6824"
   },
   {
    "area": "GB",
@@ -9875,6 +11984,158 @@
   },
   {
    "area": "GB",
+   "ref": "GB-6926",
+   "name": "Kilsture Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1111",
+     "Kilsture",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6926"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-6999",
+   "name": "Jervaulx Abbey Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "18622",
+     "Jervaulx Cistercian Abbey, site of post-Dissolution grand house and gardens and World War II storage structures",
+     "Scheduled Monuments",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-6999"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-7087",
+   "name": "Newcastleton Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1340",
+     "Newcastleton",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7087"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-7096",
+   "name": "Mark Hill Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1058",
+     "Mark Hill",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7096"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-7116",
+   "name": "East Lussa Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1194",
+     "East Lussa",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7116"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-7117",
+   "name": "Beinn Ghuilean Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1097",
+     "Beinn Ghuilean",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7117"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-7118",
+   "name": "Dalbuie Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1060",
+     "Dalbuie",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7118"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-7152",
+   "name": "Sibster Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1235",
+     "Sibster",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7152"
+  },
+  {
+   "area": "GB",
    "ref": "GB-7163",
    "name": "Golden Cap Hillside & Meadowland National Park",
    "old_grade": "pin",
@@ -9929,6 +12190,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-7181"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-7183",
+   "name": "Glenrickard Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1122",
+     "Glenrickard",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7183"
   },
   {
    "area": "GB",
@@ -10008,6 +12288,44 @@
   },
   {
    "area": "GB",
+   "ref": "GB-7202",
+   "name": "Achnashellach Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1271",
+     "Achnashellach",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7202"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-7205",
+   "name": "An Lèanachan Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1105",
+     "Leanachan",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7205"
+  },
+  {
+   "area": "GB",
    "ref": "GB-7214",
    "name": "Orangefield National Park",
    "old_grade": "pin",
@@ -10024,6 +12342,234 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-7214"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-7232",
+   "name": "Roseisle Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1412",
+     "Roseisle",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7232"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-7235",
+   "name": "Bennachie Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1250",
+     "Bennachie",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7235"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-7237",
+   "name": "Dunnottar Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1006",
+     "Dunnottar",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7237"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-7244",
+   "name": "Selm Muir Wood Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1074",
+     "Selm Muir",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7244"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-7249",
+   "name": "Limerigg Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1147",
+     "Limerigg",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7249"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-7255",
+   "name": "Fearnoch Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1099",
+     "Fearnoch",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7255"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-7260",
+   "name": "Glen Lochy Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "984",
+     "Glen Lochy North",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7260"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-7263",
+   "name": "Glenbranter Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1375",
+     "Glenbranter",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7263"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-7270",
+   "name": "Doach Woods Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1118",
+     "The Doach",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7270"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-7277",
+   "name": "Slattadale Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "988",
+     "Slattadale",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7277"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-7279",
+   "name": "Torrachilty Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1020",
+     "Torrachilty",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7279"
+  },
+  {
+   "area": "GB",
+   "ref": "GB-7286",
+   "name": "Daviot Wood Forest Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1156",
+     "Daviot",
+     "Forest_Blocks",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/GB-7286"
   },
   {
    "area": "GB",
@@ -14158,196 +16704,6 @@
    "pota": "https://pota.app/#/park/AU-8945"
   },
   {
-   "area": "BE",
-   "ref": "BE-0387",
-   "name": "Valée de la Burdinale Park",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "381",
-     "Vallée de la Burdinale",
-     "EEA Natura 2000",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/BE-0387"
-  },
-  {
-   "area": "BE",
-   "ref": "BE-0396",
-   "name": "Ru de Chawion Park",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "275",
-     "Chawion (Ru de)",
-     "BE: Réserves naturelles domaniales (approved layer 2)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/BE-0396"
-  },
-  {
-   "area": "BE",
-   "ref": "BE-0412",
-   "name": "Vallée de l'Eisch et Clarefontaine Park",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "594",
-     "Vallées de l'Eisch et de Clairefontaine",
-     "EEA Natura 2000",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/BE-0412"
-  },
-  {
-   "area": "BE",
-   "ref": "BE-0414",
-   "name": "Marais de Sampont Park",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "132257",
-     "Sampont",
-     "EEA nationally designated areas",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/BE-0414"
-  },
-  {
-   "area": "BE",
-   "ref": "BE-0424",
-   "name": "Virée de Grosse National Forest",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "231",
-     "Virée de Grosse",
-     "BE: Réserves naturelles domaniales (approved layer 2)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/BE-0424"
-  },
-  {
-   "area": "BE",
-   "ref": "BE-0428",
-   "name": "Fange de Mirenne National Forest",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "178",
-     "Fange de Mirenne",
-     "BE: Réserves naturelles agréées (approved layer 3)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/BE-0428"
-  },
-  {
-   "area": "BE",
-   "ref": "BE-0441",
-   "name": "Marais du Ton Park",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "123476",
-     "Marais du Ton",
-     "EEA nationally designated areas",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/BE-0441"
-  },
-  {
-   "area": "BE",
-   "ref": "BE-0442",
-   "name": "Ruisseau du Cron National Forest",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "124473",
-     "Cron (Ruisseau du ) (Vallée de Laclaireau)",
-     "EEA nationally designated areas",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/BE-0442"
-  },
-  {
-   "area": "BE",
-   "ref": "BE-0448",
-   "name": "Carriere de 'Aloutte Park",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "122108",
-     "Alouette (Carrière de l') à Hotton",
-     "EEA nationally designated areas",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/BE-0448"
-  },
-  {
-   "area": "BE",
-   "ref": "BE-0449",
-   "name": "Vague des Gomhets Park",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "132201",
-     "Vague des Gomhets",
-     "EEA nationally designated areas",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/BE-0449"
-  },
-  {
    "area": "CH",
    "ref": "CH-0225",
    "name": "Unteres Ghögg Wetland Reserve",
@@ -15668,25 +18024,6 @@
   },
   {
    "area": "GB",
-   "ref": "GB-1836",
-   "name": "Rivington Terraced Gardens Country Park",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "358",
-     "TERRACED GARDENS RIVINGTON",
-     "Natural England Country Parks",
-     "pin inside + shared name words"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/GB-1836"
-  },
-  {
-   "area": "GB",
    "ref": "GB-1944",
    "name": "Skipsea Withow Gap Site of Significant Scientific Interest",
    "old_grade": "official",
@@ -15855,253 +18192,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GB-6698"
-  },
-  {
-   "area": "IE",
-   "ref": "IE-0011",
-   "name": "Lough Hyne Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "19",
-     "Lough Hyne Nature Reserve and Environs SAC",
-     "IE: Special Area of Conservation (approved layer 3)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/IE-0011"
-  },
-  {
-   "area": "IE",
-   "ref": "IE-0026",
-   "name": "Dunboy Forest National Forest",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "817",
-     "DUNBOY",
-     "IE: services7.arcgis.com (approved layer 2)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/IE-0026"
-  },
-  {
-   "area": "IE",
-   "ref": "IE-0032",
-   "name": "Rossacroo Wood National Forest",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "2805",
-     "ROSSACROO",
-     "IE: services7.arcgis.com (approved layer 2)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/IE-0032"
-  },
-  {
-   "area": "IE",
-   "ref": "IE-0033",
-   "name": "Kimego National Forest",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "2713",
-     "KIMEGO",
-     "IE: services7.arcgis.com (approved layer 2)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/IE-0033"
-  },
-  {
-   "area": "IE",
-   "ref": "IE-0037",
-   "name": "Ballygamboon National Forest",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "2648",
-     "BALLYGAMBOON",
-     "IE: services7.arcgis.com (approved layer 2)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/IE-0037"
-  },
-  {
-   "area": "IE",
-   "ref": "IE-0047",
-   "name": "Bansha Wood National Forest",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "1119",
-     "Bansha Wood",
-     "IE: Proposed Natural Heritage Areas (approved layer 1)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/IE-0047"
-  },
-  {
-   "area": "IE",
-   "ref": "IE-0052",
-   "name": "Ballykeeffe Wood Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "217",
-     "Ballykeefe Wood",
-     "IE: Proposed Natural Heritage Areas (approved layer 1)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/IE-0052"
-  },
-  {
-   "area": "IE",
-   "ref": "IE-0073",
-   "name": "Ballyteigue Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "581",
-     "Ballyteige (Clare)",
-     "IE: Proposed Natural Heritage Areas (approved layer 1)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/IE-0073"
-  },
-  {
-   "area": "IE",
-   "ref": "IE-0121",
-   "name": "Derkmore Wood Nature Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "83",
-     "Derkmore Wood Nature Reserve",
-     "IE: Proposed Natural Heritage Areas (approved layer 1)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/IE-0121"
-  },
-  {
-   "area": "IE",
-   "ref": "IE-0147",
-   "name": "Boggeragh Mountains NHA National Heritage Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "160",
-     "Boggeragh Mountains NHA",
-     "IE: Natural Heritage Areas (approved layer 2)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/IE-0147"
-  },
-  {
-   "area": "IE",
-   "ref": "IE-0161",
-   "name": "Macgillycuddy's Reeks and Caragh River Natura 2000",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "90",
-     "Killarney National Park, Macgillycuddy's Reeks and Caragh River Catchment SAC",
-     "IE: Special Area of Conservation (approved layer 3)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/IE-0161"
-  },
-  {
-   "area": "IE",
-   "ref": "IE-0237",
-   "name": "The Devil’s Glen National Park",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "439",
-     "Devil's Glen",
-     "IE: Proposed Natural Heritage Areas (approved layer 1)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/IE-0237"
-  },
-  {
-   "area": "IE",
-   "ref": "IE-0275",
-   "name": "Ards Forest Park National Park",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "15",
-     "Ards",
-     "IE: Forest Park (approved layer 4)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/IE-0275"
   },
   {
    "area": "JP",
