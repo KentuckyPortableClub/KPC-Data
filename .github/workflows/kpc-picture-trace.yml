@@ -87,6 +87,7 @@ jobs:
             E=$?
           fi
           tail -12 ../out/picture-trace/run-log.txt
+          cp ../pm/not-maps.json ../out/picture-trace/not-maps.json 2>/dev/null || true   # ok: Nov 11 (KPC owner, 2026-11-11): parks not traced because the saver found no map page
           rm -rf ../out/picture-trace/traced; cp -r ../pm/traced ../out/picture-trace/ 2>/dev/null; [ -d ../pm/debug ] && rm -rf ../out/picture-trace/debug && cp -r ../pm/debug ../out/picture-trace/ ; [ -d ../pm/cache ] && rm -rf .pic_cache && cp -r ../pm/cache .pic_cache
           S=$(python3 -c "import csv,collections;r=list(csv.DictReader(open('../out/picture-trace/traced/report.csv')));print(len(r),'maps:',dict(collections.Counter(x['status'] for x in r)))" 2>/dev/null)
           echo "::notice title=Picture tracer::exit $E; $S"
