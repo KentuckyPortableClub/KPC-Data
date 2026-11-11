@@ -1,6 +1,6 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key', 'build': the held build id from data/waiting/in/data/us-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-11 16:37 UTC",
+ "made": "2026-11-11 18:01 UTC",
  "totals": {
   "gained": 72,
   "lost": 10,
@@ -2220,6 +2220,12 @@
      "Indian Key Historic State Park",
      111,
      "reviewed"
+    ],
+    [
+     "sgflf48195",
+     "Indian Key",
+     0,
+     "name"
     ]
    ],
    "old_pieces": [
@@ -4297,6 +4303,44 @@
  ],
  "sample": [
   {
+   "area": "US-FL",
+   "ref": "US-3630",
+   "name": "Indian Key State Park",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "191809",
+     "Indian Key Historic State Park",
+     111,
+     "words"
+    ],
+    [
+     "sgfla20",
+     "Indian Key Historic State Park",
+     111,
+     "reviewed"
+    ],
+    [
+     "sgflf48195",
+     "Indian Key",
+     0,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "191809",
+     "Indian Key Historic State Park",
+     111,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3630"
+  },
+  {
    "area": "US-VT",
    "ref": "US-0329",
    "name": "Silvio O Conte National Wildlife Refuge",
@@ -4414,38 +4458,6 @@
    "held_now": [],
    "by_answer": true,
    "pota": "https://pota.app/#/park/US-0621"
-  },
-  {
-   "area": "US-FL",
-   "ref": "US-3630",
-   "name": "Indian Key State Park",
-   "old_grade": "approximate",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "191809",
-     "Indian Key Historic State Park",
-     111,
-     "words"
-    ],
-    [
-     "sgfla20",
-     "Indian Key Historic State Park",
-     111,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "191809",
-     "Indian Key Historic State Park",
-     111,
-     "words"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-3630"
   },
   {
    "area": "US-CT",
