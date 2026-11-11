@@ -205,18 +205,18 @@
     "needs_key": 38,
     "no_page": 147,
     "not_official": 8,
-    "ok": 60,
-    "other": 23,
-    "resting": 0,
-    "robots": 23,
+    "ok": 5,
+    "other": 20,
+    "resting": 3,
+    "robots": 78,
     "with_booking": 106,
     "with_elevation": 0,
-    "with_facts": 64,
+    "with_facts": 9,
     "with_sites": 0
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-04"
+   "updated": "2026-11-11"
   },
   "US-GA": {
    "camps": 212,
@@ -1124,7 +1124,7 @@
   "US-CO": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-CT": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-DE": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
-  "US-FL": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-FL": "FCC listAsOfDates: robots.txt says no",
   "US-GA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-HI": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-IA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1245,9 +1245,9 @@
     "carriers": null,
     "files": [],
     "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "status": "FCC listAsOfDates: robots.txt says no"
    },
-   "read": "2026-11-04"
+   "read": "2026-11-11"
   },
   "US-GA": {
    "cell": {
@@ -2576,12 +2576,12 @@
  },
  "last": {
   "areas": [
-   "US-AR"
+   "US-FL"
   ],
   "fcc_token": true,
   "manners": {
-   "dropped_queued": 241,
-   "errors": 3,
+   "dropped_queued": 377,
+   "errors": 0,
    "for_person_urls": [
     [
      "https://epqs.nationalmap.gov/robots.txt",
@@ -2592,31 +2592,31 @@
      "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from broadbandmap.fcc.gov"
     ],
     [
-     "https://reserve.arkansasstateparks.com/robots.txt",
-     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from reserve.arkansasstateparks.com"
+     "https://reserve.floridastateparks.org/robots.txt",
+     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from reserve.floridastateparks.org"
     ]
    ],
    "host_rule": 0,
-   "requests": 143,
-   "rested": 0,
-   "robots": 3,
-   "strikes": 3
+   "requests": 54,
+   "rested": 3,
+   "robots": 4,
+   "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 43,
-   "camps": 241,
+   "browser": 20,
+   "camps": 302,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 43,
-   "needs_key": 131,
-   "no_page": 12,
-   "not_official": 5,
-   "ok": 63,
-   "pages_read": 64,
-   "resting": 1,
+   "needs_browser": 19,
+   "needs_key": 39,
+   "no_page": 150,
+   "not_official": 8,
+   "ok": 25,
+   "pages_read": 27,
+   "resting": 3,
    "ridb_calls": 0,
-   "robots": 2,
+   "robots": 78,
    "skipped_fresh": 0
   },
   "when": "2026-11-11"

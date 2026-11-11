@@ -13,7 +13,7 @@ Updated 2026-11-11. Every fact in <area>.json carries its source url, read date 
 | US-GA | 205 | 61 | 64 | 4 | 0 | 0 | 0 | 8 | 68 | 8 | 131 | 0 |
 | US-AL | 100 | 12 | 34 | 1 | 0 | 0 | 0 | 4 | 49 | 6 | 60 | 0 |
 | US-SC | 77 | 19 | 26 | 24 | 0 | 0 | 0 | 7 | 1 | 16 | 31 | 0 |
-| US-FL | 299 | 60 | 38 | 0 | 23 | 0 | 147 | 8 | 23 | 0 | 106 | 0 |
+| US-FL | 299 | 5 | 38 | 0 | 78 | 3 | 147 | 8 | 20 | 0 | 106 | 0 |
 | US-MS | 196 | 21 | 45 | 0 | 2 | 0 | 0 | 6 | 122 | 6 | 59 | 0 |
 | US-IN | 94 | 61 | 13 | 0 | 0 | 0 | 2 | 8 | 10 | 8 | 68 | 0 |
 | US-IL | 252 | 15 | 28 | 0 | 0 | 0 | 0 | 4 | 205 | 2 | 220 | 0 |
@@ -69,6 +69,7 @@ Updated 2026-11-11. Every fact in <area>.json carries its source url, read date 
 - cpw.state.co.us: 97 campgrounds · host resting
 - www.ksoutdoors.gov: 63 campgrounds · host resting (robots.txt could not be read: next run)
 - dnr.wisconsin.gov: 58 campgrounds · host resting
+- reserve.floridastateparks.org: 55 campgrounds · robots.txt says no
 - dec.ny.gov: 55 campgrounds · robots.txt says no
 - www.wlf.louisiana.gov: 31 campgrounds · host resting (robots.txt could not be read: next run)
 - reserve.tnstateparks.com: 25 campgrounds · host resting (robots.txt could not be read: next run)
@@ -83,6 +84,7 @@ Updated 2026-11-11. Every fact in <area>.json carries its source url, read date 
 - midnrreservations.com: 12 campgrounds · host resting (robots.txt could not be read: next run)
 - reserveohio.com: 12 campgrounds · host resting (robots.txt could not be read: next run)
 - www.reservecalifornia.com: 5 campgrounds · host resting (robots.txt could not be read: next run)
+- www.fs.usda.gov: 4 campgrounds · host resting
 - apps.web.maine.gov: 4 campgrounds · host resting (robots.txt could not be read: next run)
 - getoutside.idaho.gov: 4 campgrounds · host resting (robots.txt could not be read: next run)
 - www.maine.gov: 3 campgrounds · host resting (robots.txt could not be read: next run)
@@ -91,7 +93,6 @@ Updated 2026-11-11. Every fact in <area>.json carries its source url, read date 
 - reserve.arkansasstateparks.com: 2 campgrounds · robots.txt says no
 - ksoutdoors.gov: 2 campgrounds · host resting (robots.txt could not be read: next run)
 - www.fire.ca.gov: 2 campgrounds · host resting (robots.txt could not be read: next run)
-- www.fs.usda.gov: 1 campgrounds · host resting
 - azprtl.azstateparks.com: 1 campgrounds · host resting (robots.txt could not be read: next run)
 
 ## Needs a browser pass (the page opened but its text holds no campground facts: filled by script, most likely)
@@ -846,68 +847,77 @@ Updated 2026-11-11. Every fact in <area>.json carries its source url, read date 
 
 ## US-FL: 12 random samples (records with facts; seed = the date)
 
-- **Fred Gannon Rocky Bayou State Park** (intake-US-1873, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
-  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
-  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
-  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
-- **Naval Live Oaks Youth Group Camping** (intake-US-0661, agency (outside research camping-us-oct31), status ok, 5 facts) · [www.recreation.gov](https://www.recreation.gov/camping/poi/10008747)
-  - booking.how = "online: www.recreation.gov" · “link “Gulf Islands National Seashore””
-  - booking.url = "https://www.recreation.gov/camping/gateways/2743" · “link “Gulf Islands National Seashore” -> https://www.recreation.gov/camping/gateways/2743”
-  - features = "campfire ring" · “ter recreation. The campsite features restrooms, outdoor showers, a picnic shelter, and a campfire ring. The Naval Live Oaks Area has over 7”
-  - restrooms = "yes (kind not stated)" · “lorida and has direct access to Pensacola Bay for water recreation. The campsite features restrooms, outdoor showers, a picnic shelter, and ”
-  - showers = true · “ct access to Pensacola Bay for water recreation. The campsite features restrooms, outdoor showers, a picnic shelter, and a campfire ring. Th”
-- **Alafia River State Park** (intake-US-1829, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
-  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
-  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
-  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
-- **Silver Springs State Park** (intake-US-1915, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
-  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
-  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
-  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
-- **Henderson Beach State Park** (intake-US-1876, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
-  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
-  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
-  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
-- **St. Andrews State Park** (intake-US-1917, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
-  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
-  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
-  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
-- **Faver-Dykes State Park** (intake-US-1866, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
-  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
-  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
-  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
+- **Canaveral National Seashore Backcountry Island Camping** (intake-US-0660, agency (outside research camping-us-oct31), status ok (browser), 10 facts) · [www.nps.gov](https://www.nps.gov/cana/planyourvisit/camping.htm)
+  - booking.how = "online: www.nps.gov" · “link “Permits & Reservations””
+  - booking.url = "https://www.nps.gov/cana/planyourvisit/camping.htm" · “booking link from our outside research (camping, in the park) row (official system www.nps.gov)”
+  - checkin = "11:00am" · “re your reservation date and cannont make changes to the permit once you have printed it. Check-in time is 11:00am; check-out time is 11:00 ”
+  - checkout = "11:00 am" · “nd cannont make changes to the permit once you have printed it. Check-in time is 11:00am; check-out time is 11:00 am. Plan your trip in adva”
+  - fees = "$25 per night and up to six months in advance | $1.99 at th · “tes are available by reservation only and require a permit. You may reserve campsites for $25 per night and up to six months in advance. RV ”
+  - hookups.electric = "some" · “ion. Sites 6-14 may only be reached with a personal boat, canoe or kayak. TOTAL SITES: 14 Electric Hookups: 0 RV Only: 0 Tent Only: 14 Walk ”
+  - phone = "(386) 428-3384" · “, please inquire at the Apollo Beach Visitor Center or call (386) 428-3384 for more information. If you are interested in making a cam”
+  - reservable = true · “hroughout the Intracoastal Waterway and Mosquito Lagoon. These campsites are available by reservation only and require a permit. You may res”
+  - restrooms = "yes (kind not stated)" · “friend or family other than those in your party. Practice "Leave-No-Trace." Biodegradable toilet paper is available for $1.99 at the Visitor”
+  - rules.fires = "firewood locally and bring it with you and/or bring your ow · “ted by dialing 911. Firewood: Firewood is not available at the campsites. Please purchase firewood locally and bring it with you and/or brin”
+- **Garden Key Campground** (intake-US-0023, agency (outside research camping-us-oct31), status ok, 10 facts) · [www.nps.gov](https://www.nps.gov/drto/planyourvisit/camping.htm)
+  - booking.how = "online: www.recreation.gov" · “link “Learn more about Recreation.gov Scan & Pay””
+  - booking.url = "https://www.recreation.gov/camping/poi/258728" · “link “Learn more about Recreation.gov Scan & Pay” -> https://www.recreation.gov/camping/poi/258728”
+  - fees = "$15 per night, per individual site | $30 per night for the  · “ite fees are not included in transportation fees (such as the ferry or permitted guides). $15 per night, per individual site $30 per night f”
+  - hookups.electric = "some" · “ked at Garden Key, visitors are welcome to use their fresh water rinse (no soap allowed). Electricity / Internet / Cell Service : There are ”
+  - phone_hint = "(800) 634-0939" · “check with the ferry operator for details on what they will transport by calling them at 1-800-634-0939. Once you arrive, there are wheeled ”
+  - reservable = "mixed" · “rry are limited and sell out months in advance. Once you arrive at Garden Key, camping is first come, first served for all regular sites (up”
+  - restrooms = "vault" · “s for charcoal fires Hooks to keep items above the ground Campground Facilities: Toilets: Composting toilets are located in the campground. ”
+  - rules.fires = "firewood" · “of bringing charcoal? No. No wood fires are allowed from collecting driftwood or bringing firewood. Charcoal briquettes placed in campsite B”
+  - rules.quiet_hours = "10 p.m. to 6 a.m" · “ket at all times while boating. Quiet Hours . Please be considerate of others and observe quiet hours from 10 p.m. to 6 a.m. The use of brig”
+  - showers = "some" · “ing these hours, please use the facilities aboard the commercial ferry boats at the dock. Showers: There are no public showers in Dry Tortug”
+- **High Bluff Campground** (intake-US-6312, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [myfwc.com](https://myfwc.com/recreation/lead/joe-budd/things-to-do/)
+  - booking.how = "online: floridastateforests.reserveamerica.com" · “link “Florida Forest Service Reserve America””
+  - booking.url = "https://floridastateforests.reserveamerica.com/camping/high · “link “Florida Forest Service Reserve America” -> https://floridastateforests.reserveamerica.com/camping/high-bluff-campground-lake-talquin-s”
+  - map.date_how = "web page, no date in the link" · “link “Explore by map””
+  - map.url = "http://ocean.floridamarine.org/wma/entrances/" · “link “Explore by map” -> http://ocean.floridamarine.org/wma/entrances/”
+  - reservable = true · “ife and unique plants. Camping Camping is permitted only at the High Bluff Campground. To reserve a camp site, visit the Florida Forest Serv”
 - **Two primitive campgrounds (FFS-regulated)** (intake-US-6318, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [myfwc.com](https://myfwc.com/recreation/lead/ok-slough/things-to-do/)
   - booking.url = "https://myfwc.com/recreation/lead/ok-slough/things-to-do/" · “booking link from our outside research (camping, in the park) row (official system myfwc.com)”
   - drinking_water = false · “s permitted year-round at two campgrounds and is regulated by the Florida Forest Service. Potable water is not available. Check with the Flo”
   - map.date_how = "web page, no date in the link" · “link “Explore by map””
   - map.url = "http://ocean.floridamarine.org/wma/entrances/" · “link “Explore by map” -> http://ocean.floridamarine.org/wma/entrances/”
   - season = "year-round" · “Service to see their designated equestrian trail. Camping Primitive camping is permitted year-round at two campgrounds and is regulated by t”
-- **Sebastian Inlet State Park** (intake-US-1914, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
-  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
-  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
-  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
-- **Suwannee River State Park** (intake-US-1921, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
-  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
-  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
-  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
-- **Ochlockonee River State Park** (intake-US-1907, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
-  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
-  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
-  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
-- **Falling Waters State Park** (intake-US-1864, agency (outside research camping-us-oct31), status ok (browser), 4 facts) · [reserve.floridastateparks.org](https://reserve.floridastateparks.org/Web/)
-  - booking.how = "online: reserve.floridastateparks.org" · “link “Forgot Password?””
-  - booking.url = "https://reserve.floridastateparks.org/Web/Customers/Recover · “link “Forgot Password?” -> https://reserve.floridastateparks.org/Web/Customers/Recover.aspx”
-  - reservable = true · “s empty. Will be redirect within few seconds. Close Information × You must have a pass to reserve a campsite. Would you like to add a pass? ”
-  - sites.cabin = 50 · “ventures to Florida’s 175 award-winning state parks, trails and historic sites. More than 50 parks offer campgrounds or cabins. Search by Ci”
+- **Long Pine Key Campground; Flamingo Campground** (intake-US-0024, agency (outside research camping-us-oct31), status ok, 13 facts) · [www.nps.gov](https://www.nps.gov/ever/planyourvisit/camping.htm)
+  - booking.how = "online: www.recreation.gov" · “link “purchased online””
+  - booking.url = "https://www.recreation.gov/sitepass/74278" · “link “purchased online” -> https://www.recreation.gov/sitepass/74278”
+  - drinking_water = true · “as raccoons often chew through soft-sided containers (such as “milk jugs”) to get to your drinking water. In addition to ruining your trip, ”
+  - fees = "$21 administrative fee plus an additional | $2 per person,  · “you during your trip. You are no longer required to pick up a physical permit. There is a $21 administrative fee plus an additional $2 per p”
+  - phone = "(305) 242-7700" · “ey Visitor Center. For the Gulf Coast District, please call 305-242-7700 . Safely exploring a wilderness by water requires careful p”
+  - phone_hint = "(305) 242-7700" · “equire assistance planning your trip, call or stop by the Flamingo Visitor Center or call 305-242-7700. Questions on Permits and Reservation”
+  - reservable = true · “ing aboard boats. Campers can make advanced reservations through Recreation.gov. Advanced reservations are available on a rolling basis, thr”
+  - restrooms = "some" · “y are elevated 10' x 12' wooden platforms with roofs. A walkway leads to a self-contained toilet. You'll need a free-standing tent, since st”
+  - rules.fires = "campfires are allowed on chickees" · “ained toilet. You'll need a free-standing tent, since stakes or nails are not allowed. No campfires are allowed on chickees. Some paddlers h”
+  - rules.generators = "Generators, chain saws and other portable motors are prohib · “nal Park follows State of Florida regulations. Fireworks are prohibited. Portable Motors :Generators, chain saws and other portable motors a”
+- **Florida Trail primitive campsite; Equestrian Center campsite** (intake-US-12097, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [myfwc.com](https://myfwc.com/recreation/cooperative/hickory-hammock/)
+  - booking.url = "https://myfwc.com/recreation/cooperative/hickory-hammock/" · “booking link from our outside research (camping, in the park) row (official system myfwc.com)”
+  - map.date_how = "web page, no date in the link" · “link “Explore by map””
+  - map.url = "http://ocean.floridamarine.org/wma/entrances/" · “link “Explore by map” -> http://ocean.floridamarine.org/wma/entrances/”
+  - season = "year-round" · “iles past the Kissimmee River Bridge and Fort Basinger. The area is open to public access year round. Access is only allowed by foot or bicy”
+- **Naval Live Oaks Youth Group Camping** (intake-US-0661, agency (outside research camping-us-oct31), status ok, 5 facts) · [www.recreation.gov](https://www.recreation.gov/camping/poi/10008747)
+  - booking.how = "online: www.recreation.gov" · “link “Gulf Islands National Seashore””
+  - booking.url = "https://www.recreation.gov/camping/gateways/2743" · “link “Gulf Islands National Seashore” -> https://www.recreation.gov/camping/gateways/2743”
+  - features = "campfire ring" · “ter recreation. The campsite features restrooms, outdoor showers, a picnic shelter, and a campfire ring. The Naval Live Oaks Area has over 7”
+  - restrooms = "yes (kind not stated)" · “lorida and has direct access to Pensacola Bay for water recreation. The campsite features restrooms, outdoor showers, a picnic shelter, and ”
+  - showers = true · “ct access to Pensacola Bay for water recreation. The campsite features restrooms, outdoor showers, a picnic shelter, and a campfire ring. Th”
+- **CRWMA - Check Station Camping Area** (intake-US-6295, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 6 facts) · [myfwc.com](https://myfwc.com/recreation/lead/caravelle-ranch/)
+  - booking.url = "https://myfwc.com/recreation/lead/caravelle-ranch/" · “booking link from our outside research (camping, in the park) row (official system myfwc.com)”
+  - map.date_how = "web page, no date in the link" · “link “Explore by map””
+  - map.url = "http://ocean.floridamarine.org/wma/entrances/" · “link “Explore by map” -> http://ocean.floridamarine.org/wma/entrances/”
+  - restrooms = "none" · “mmary brochure . What It Costs to Visit No fee or daily-use permit is required. Restrooms Restrooms are not available at this location. Camp”
+  - rules.pets = "Dogs are permitted but must be kept under physical restrain · “n dates for dove hunts only). For hunt dates, see the regulations summary brochure . Dogs Dogs are permitted but must be kept under physical”
+  - season = "year-round" · “es and blooming scarlet hibiscus line the banks. Hours of Operation Open to public access year-round by foot, horseback or bicycle. Vehicle ”
+- **Boca Chita Campground; Elliott Key Campground** (intake-US-0007, agency (outside research camping-us-oct31), status ok, 7 facts) · [www.nps.gov](https://www.nps.gov/bisc/planyourvisit/bocachita.htm)
+  - booking.how = "online: www.recreation.gov" · “link “Mobile App - Recreation.gov””
+  - booking.url = "https://www.recreation.gov/mobile-app" · “link “Mobile App - Recreation.gov” -> https://www.recreation.gov/mobile-app”
+  - drinking_water = false · “oca Chita is the most visited island in the park. Please pack out all trash . There is no drinking water or electricity, sales facilities, s”
+  - fees = "$25 day use fee Friday - Monday and Federal Holidays | $60" · “ater or electricity, sales facilities, sinks or showers. As of January 1, 2024 there is a $25 day use fee Friday - Monday and Federal Holida”
+  - hookups.electric = false · “ost visited island in the park. Please pack out all trash . There is no drinking water or electricity, sales facilities, sinks or showers. A”
+  - restrooms = "yes (kind not stated)" · “o open the observation deck for viewing. A half mile hiking trail starts just east of the restrooms. The trail continues to the south end of”
+  - showers = false · “ack out all trash . There is no drinking water or electricity, sales facilities, sinks or showers. As of January 1, 2024 there is a $25 day ”
 
 ## US-MS: 12 random samples (records with facts; seed = the date)
 
