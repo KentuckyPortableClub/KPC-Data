@@ -81,7 +81,7 @@ env:
   WATER_ASSET: water-${{ inputs.tag }}.tar.gz
   PARKS: ${{ inputs.parks }}   # Oct 28: a small batch (kpc_fers.py PARKS); empty = the whole area
   KEY_SOURCE: ${{ inputs.key == 'build' && 'build' || 'live' }}   # Nov 4: live (default) or build (the chain)
-  BUILD_KIND: ${{ startsWith(inputs.states, 'CA-') && 'ca-key' || 'us-key' }}
+  BUILD_KIND: ${{ startsWith(inputs.states, 'CA-') && 'ca-key' || startsWith(inputs.states, 'W-') && 'world-key' || 'us-key' }}   # Nov 11: W-* = world-key (same rule as kind_of() in kpc_fers_chain_plan.py; a test checks both)
 jobs:
   preline:
     # Nov 4 (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4: "2fer line review? Plan and install any pre and post line bots for
@@ -442,7 +442,8 @@ jobs:
             # KPC-Data's copy (chat 10's waiting room holds unapproved builds in data/waiting/in/; KPC-Links data/us-key may be a build
             # chat 11 has not passed yet). The 7:05 PM 'KPC-Links first' line was for the one evening the live copy was frozen.
             [ "$KEY_SOURCE" = build ] || cp -f kpcdata/data/us-key/$st.json data/us-key/ 2>/dev/null || true   # ok: nothing to do is fine (Nov 4: KEY_SOURCE=build keeps the new build)
-            gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p "$st.json.gz" -D cache/us --clobber || { kpc_rc=$?; echo "::warning title=download::a download failed (exit $kpc_rc); results may use old or missing files"; echo "download - a download failed (exit $kpc_rc); results may use old or missing files" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+            SAVED_DIR=cache/us; [ "$REGION" = world ] && SAVED_DIR=cache/world; mkdir -p "$SAVED_DIR"   # Nov 11: a world country's saved copy W-XX.json.gz belongs in cache/world (the saved boundary-cache copy, never a live map)
+            gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p "$st.json.gz" -D "$SAVED_DIR" --clobber || { kpc_rc=$?; echo "::warning title=download::a download failed (exit $kpc_rc); results may use old or missing files"; echo "download - a download failed (exit $kpc_rc); results may use old or missing files" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           done
       - name: Check
         id: kept_green_10

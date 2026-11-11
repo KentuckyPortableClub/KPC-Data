@@ -31,6 +31,27 @@ a line that held / failed / was cancelled may start again, at most TRIES times),
 At most MAX (3) areas per start; the rest come on the next hourly copy. Kentucky (its own key) is never in the chain.
 CA and world finishing later: each key's 2-fers wait for THAT key's own new build (the US areas do not wait for Canada); inside a
 line the other keys are the live (last good) ones. Nov 8: the world key has its own areas (worldwest/north/east, W-* countries).
+TWO LISTS, ON PURPOSE (Nov 11): R below (the chain; also copied inline in kpc-fers-lines.yml / -pending.yml / -water.yml) and
+.github/fers-areas.json (the monthly kpc-fers.yml bot, kpc_fers_areas.py) cut US / Canada differently (bigger chain areas for one
+280-minute line each; the bot's are 400-1,600 parks). Both are LIVE FILE CONTRACTS keyed by the area tag: the chain's tags name
+seen.json entries, line-<tag> / report-<tag> / fers-holds-<tag> / looked / missing files, fers-preline/<tag>, and KPC-Links'
+kpc-fers-regions.json reads missing-midwest / -southeast / -southcentral; the bot's tags name its own full-rebuild-<tag>.txt, expected-
+and report- files. Merging them would orphan one set or restart every finished area, so they stay two, and the disagreement is written
+down and checked: .github/fers-area-map.json (made by `python3 .github/scripts/kpc_fers_chain_plan.py map`) and
+tests/test_world_fers_line_nov11.py (fails if either list, the map, or an inline copy changes without the other).
+WORLD (Nov 11, test only, beta, hidden, members-only; nothing here publishes). THIS file (the dict R below) is the ONE list of the
+chain's areas, world included; .github/fers-areas.json belongs to the older kpc-fers.yml bot and must not hold W-* areas (a test
+checks it). A world area starts only when ALL hold, on top of the checks above (every unknown = wait):
+  * every country of the area is on KPC-Links' .github/fers-ready-areas.json (ownership AND management wired for it). Today NO
+    country is: the world key files hold no owner / manager data and kpc_fers.py's world ownership step answers 'no land register
+    read for this country yet', so the world areas are skipped and this wiring is inert until a person opens a country there.
+  * US and Canada are OK first (us_ca_ok below): every US / CA area of R that is on the ready list has a line that finished with a
+    READY verdict on the CURRENT key files, and its report-<tag>.json records fers_rules == KPC-Links' current 2-fer rules hash
+    (kpc_key_freeze.rules_hash('fers')). One unfinished, held, stale or unreadable US / CA area, or no ready US / CA area at all,
+    means world waits. US / CA areas are planned before world in the same run (KEYS order) and take the 3 slots first.
+Map-audit gate for world (audit_clean, the one place): while NO audit evidence exists for any country of a world area, the gate is
+not applied to it (logged 'no world audit rows yet: audit gate not applied'); once any country has a row / stamp the gate applies
+to the whole area exactly as for US / Canada. US / Canada areas are never passed through.
 Remembered in data/status/fers-chain/seen.json {key: {build, ran: [tags], areas: {tag: {fp, planned, tries}}, waiting: {tag: why}}}; while PENDING both answers are
 printed as notices in the run log (nothing is saved: nothing started). The gate state: data/status/fers-chain/gate.json.
 env  DATA=. LINKS=links GATE=<repo variable: on|off|empty> MAX=3 GITHUB_OUTPUT (writes run, areas, gate_changed)"""
@@ -46,7 +67,17 @@ R = {'southeast': 'US-TN US-NC US-VA US-WV US-GA US-AL US-SC US-FL US-MS', 'midw
      'worldnorth': 'W-AT W-IT W-DK W-NO W-SE W-FI W-EE W-LV W-LT W-PL',
      'worldeast': 'W-CZ W-SK W-HU W-SI W-HR W-RO W-AU W-JP'}
 KEYS = {'us-key': 'us', 'ca-key': 'ca', 'world-key': 'world'}
-KIND_OF = lambda sts: 'ca-key' if sts.startswith('CA-') else 'world-key' if sts.startswith('W-') else 'us-key'   # an area's key
+KEY_ORDER = tuple(KEYS)   # US first, then Canada, then world: the planning order (world is only ever planned behind US and Canada)
+
+
+def kind_of(sts):
+    """The key an area (or a state list) is measured on: CA-* = ca-key, W-* = world-key, anything else = us-key. The same rule as the
+    BUILD_KIND line of kpc-fers-line.yml (tests/test_world_fers_line_nov11.py checks the two agree)."""
+    s = str(sts or '').strip()
+    return 'ca-key' if s.startswith('CA-') else 'world-key' if s.startswith('W-') else 'us-key'
+
+
+KIND_OF = kind_of
 GATE_DEFAULT = 'off'   # <-- THE GATE DEFAULT (per Brandon via Super Head Bot (relayed), 5:48 AM CST Nov 4: off for testing; it turns on by itself: kpc_fers_chain_gate.py)
 
 
@@ -74,8 +105,11 @@ def gate_mode(v, data=None):
     return _gate().effective(v, data, GATE_DEFAULT)[0]
 
 
-def audit_clean(data):
-    """{area: why-not} for every area whose map audit is NOT clean (missing = clean). Uses kpc_fers_gate's own row rules
+def audit_clean(data, passed=None):
+    """{area: why-not} for every area whose map audit is NOT clean (missing = clean). THE one place the audit gate decides.
+    World exception (Nov 11, owner): a world (W-*) chain area with NO audit evidence at all for any of its countries (no audit
+    row, no source-down row, no audited.json stamp) is passed through (its tag is appended to `passed` for the log); as soon as
+    any country of it has evidence, the gate applies to the whole area exactly as for US / Canada. US / CA are never passed. Uses kpc_fers_gate's own row rules
     (row_clean / clean_answer, source-down rows) and its audited.json stamps; never the 'waiting for key' status."""
     data = pathlib.Path(data)
     sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))   # this repo's own kpc_fers_gate.py (its row rules)
@@ -87,6 +121,11 @@ def audit_clean(data):
         if str(r.get('auto') or '').startswith('source down'): down[r.get('area')] = down.get(r.get('area'), 0) + 1
     bad = {}
     areas = {x for v in R.values() for x in v.split()}
+    seen_codes = {r.get('area') for r in Q} | set(down) | {k for k in A}
+    for tag, v in R.items():
+        if kind_of(v) == 'world-key' and not (set(v.split()) & seen_codes):
+            areas -= set(v.split())
+            if passed is not None: passed.append(tag)
     for a in areas:
         mine = [r for r in Q if r.get('area') == a]
         op = sum(1 for r in mine if not G.row_clean(r))
@@ -160,6 +199,51 @@ def parks_of(links, kind, st):
     return set((k.get('parks') or {}) if isinstance(k, dict) else ())
 
 
+def _fers_file(data, name):
+    """data/fers/<name> or its waiting-room copy (a line's checker diverts its output into data/waiting/in until a person releases it)."""
+    for f in (f'data/fers/{name}', f'data/waiting/in/data/fers/{name}'):
+        v = load(pathlib.Path(data) / f, None)
+        if isinstance(v, dict): return v
+    return {}
+
+
+def us_ca_ok(data, links, fers, seen):
+    """(True, '') when the US and Canada 2-fers are OK on the current rules, else (False, why). World waits on this. Honest and narrow:
+    for EVERY US / CA area of R that is on KPC-Links' ready list (the areas the chain really runs):
+      1 seen.json holds the area with the fingerprint of its CURRENT key files + the current 2-fer rules hash (so no key file changed since),
+      2 its line wrote a READY verdict after that start (line_done: 'PART READY', 'STOPPED', held, missing = not OK),
+      3 data/fers/report-<tag>.json (or its waiting-room copy) records fers_rules equal to the current 2-fer rules hash.
+    It does not say the 2-fers are right; a person still grades them. No current rules hash, no ready US / CA area, an unreadable
+    file = not OK (unknown = wait)."""
+    if not fers: return False, 'the current 2-fer rules hash is unknown'
+    need, bad = 0, []
+    for tag, sts in R.items():
+        kind = kind_of(sts)
+        if kind == 'world-key' or not area_ready(links, sts.split()): continue
+        need += 1
+        a = ((seen.get(kind) or {}).get('areas') or {}).get(tag) or {}
+        if not a.get('fp'): bad.append(f'{tag} (never started on these key files)'); continue
+        if a['fp'] != area_fp(links, kind, sts.split(), fers): bad.append(f'{tag} (key files or 2-fer rules changed since its line)'); continue
+        if not line_done(data, tag, a.get('planned')): bad.append(f'{tag} (line not READY yet)'); continue
+        if str(_fers_file(data, f'report-{tag}.json').get('fers_rules') or '') != str(fers): bad.append(f'{tag} (its report is not on the current 2-fer rules)')
+    if not need: return False, 'no US or Canada area is on the ready list'
+    return (False, f'{len(bad)} of {need} US / Canada areas not OK: ' + '; '.join(bad[:8])) if bad else (True, '')
+
+
+def area_map(data='.'):
+    """The explicit, checked mapping between the chain's US / CA list (R) and the monthly bot's .github/fers-areas.json."""
+    bot = json.load(open(pathlib.Path(data) / '.github/fers-areas.json', encoding='utf-8'))['areas']
+    chain = {t: v for t, v in R.items() if kind_of(v) != 'world-key'}
+    cm = {x: t for t, v in chain.items() for x in v.split()}; bm = {x: t for t, v in bot.items() for x in v.split()}
+    return {'about': 'GENERATED by `python3 .github/scripts/kpc_fers_chain_plan.py map` from R (kpc_fers_chain_plan.py) and .github/fers-areas.json; a test fails when it is stale. The two lists are separate live contracts (see the planner docstring); this file only makes their difference explicit.',
+            'chain': chain, 'bot': bot,
+            'by_state': {x: {'chain': cm.get(x), 'bot': bm.get(x)} for x in sorted(set(cm) | set(bm))},
+            'same_tag_same_members': sorted(t for t in chain if t in bot and chain[t].split() and set(chain[t].split()) == set(bot[t].split())),
+            'same_tag_different_members': sorted(t for t in chain if t in bot and set(chain[t].split()) != set(bot[t].split())),
+            'chain_only_tags': sorted(set(chain) - set(bot)), 'bot_only_tags': sorted(set(bot) - set(chain)),
+            'states_only_in_bot': sorted(set(bm) - set(cm)), 'states_only_in_chain': sorted(set(cm) - set(bm))}
+
+
 def plan(data='.', links='links', gate='', mx=3, now=None):
     data, links = pathlib.Path(data), pathlib.Path(links)
     sys.path.insert(0, str(links / '.github/scripts'))
@@ -171,7 +255,8 @@ def plan(data='.', links='links', gate='', mx=3, now=None):
     seen_f = data / 'data/status/fers-chain/seen.json'; seen = load(seen_f, {}) or {}
     gsrc = _gate().effective(gate, data, GATE_DEFAULT)[1]
     gate = gate_mode(gate, data)
-    notclean = audit_clean(data) if gate != 'off' else {}
+    wpass = []
+    notclean = audit_clean(data, wpass) if gate != 'off' else {}
     run, notes = [], []
     would = {'on': [], 'off': []}   # PENDING: what each answer would start now (reported, not started)
     notes.append(f'map-audit gate {gate} ({gsrc}); the 2-fers stay held either way')
@@ -179,7 +264,9 @@ def plan(data='.', links='links', gate='', mx=3, now=None):
     try: fers = KF.rules_hash('fers', links)
     except Exception: fers = ''  # noqa: BLE001
     stamp = time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime(now))
-    for kind, short in KEYS.items():
+    wcache = []   # us_ca_ok, worked out once, and only if a world area is otherwise ready to start
+    for kind in KEY_ORDER:
+        short = KEYS[kind]
         li = load(links / f'data/{kind}/index.json', {}) or {}; bid = str(li.get('build') or '')
         cur = KF.rules_hash(kind, links)
         if not bid: notes.append(f'{kind}: no build stamp in KPC-Links'); continue
@@ -204,10 +291,10 @@ def plan(data='.', links='links', gate='', mx=3, now=None):
         # and is done only when its line wrote a READY verdict; a held / failed / cancelled line may start again (at most TRIES)
         if s.get('build') != bid: s = {'build': bid, 'first_seen': stamp, 'areas': s.get('areas') or {}}
         s['areas'] = s.get('areas') or {}; s['waiting'] = {}
-        s['ran'] = []
+        s['ran'] = []; unready = []
         for tag, sts in R.items():
             if KIND_OF(sts) != kind: continue
-            if not area_ready(links, sts.split()): continue   # 2-fers are US + Canada only (fers-ready-areas.json)
+            if not area_ready(links, sts.split()): unready.append(tag); continue   # only countries on fers-ready-areas.json (US + Canada today)
             if green.get(tag):
                 s['waiting'][tag] = 'not a full build on the current rules for: ' + '; '.join(f'{x} ({w})' for x, w in green[tag][:6]); continue
             hit = sorted({x for x in sts.split() if worse & parks_of(links, kind, x)}) if worse else []
@@ -218,7 +305,11 @@ def plan(data='.', links='links', gate='', mx=3, now=None):
                 if int(a.get('tries') or 0) >= TRIES: s['waiting'][tag] = f"the line did not finish READY after {a.get('tries')} starts on these key files (see data/fers/line-{tag}.json): a person looks"; continue
                 if a.get('planned') and time.mktime(time.strptime(a['planned'], '%Y-%m-%d %H:%M UTC')) > time.mktime(time.gmtime(now)) - RETRY_H * 3600:
                     s['ran'].append(tag); s['waiting'][tag] = f"line started {a['planned']}: waiting for its result"; continue
+            if kind == 'world-key':   # behind US and Canada: world starts only when their 2-fers on the same rules are OK
+                if not wcache: wcache.append(us_ca_ok(data, links, fers, seen))
+                if not wcache[0][0]: s['waiting'][tag] = 'waits for US and Canada 2-fers on the same rules: ' + wcache[0][1]; continue
             nr = [f'{x} ({notclean[x]})' for x in sts.split() if x in notclean]
+            if kind == 'world-key' and tag in wpass: print(f'::notice title=2-fer chain::{tag}: no world audit rows yet: audit gate not applied')
             if gate == 'PENDING':
                 (would['off'] if len(would['off']) < mx else []).append(tag)
                 if not nr and len(would['on']) < mx: would['on'].append(tag)
@@ -228,6 +319,7 @@ def plan(data='.', links='links', gate='', mx=3, now=None):
             run.append({'states': sts, 'tag': tag, 'key': kind, 'build': bid}); s['ran'].append(tag)
             s['areas'][tag] = {'fp': fp, 'planned': stamp, 'tries': (int(a.get('tries') or 0) if a.get('fp') == fp else 0) + 1}
         seen[kind] = s
+        if unready: notes.append(f"{kind}: not on KPC-Links' fers-ready-areas.json (skipped): {' '.join(unready)}")
         notes.append(f"{kind}: build {bid}: gate {gate}: {len([r for r in run if r['key'] == kind])} area(s) start now; waiting: {len(s['waiting'])}"
                      + (f"; if 'on': {' '.join(would['on']) or 'none'}; if 'off': {' '.join(would['off']) or 'none'}" if gate == 'PENDING' else ''))
         would = {'on': [], 'off': []}
@@ -248,6 +340,8 @@ def main(env=os.environ):
 
 
 if __name__ == '__main__':
+    if sys.argv[1:2] == ['map']:
+        json.dump(area_map('.'), open('.github/fers-area-map.json', 'w', encoding='utf-8'), indent=1, sort_keys=True); sys.exit(0)
     try: main()
     except Exception as e:  # noqa: BLE001
         print(f'::warning title=2-fer chain::plan stopped ({str(e)[:200]}): nothing starts')
