@@ -14,7 +14,7 @@
    "last_run": "2026-11-11",
    "made": "1068 audit rows not clean in 43 areas; waiting for audit 16, waiting for key 50 (a key build is saving: nothing started)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42966565069",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42998162203",
    "waiting_on": "chat 11 / 12 (audit answers), chat 2 (fixes)"
   },
   "Cell coverage (FCC)": {
@@ -51,10 +51,10 @@
   },
   "Hard look reader": {
    "areas": "",
-   "last_run": "2026-11-10",
-   "made": " 2026-11-10; left 0",
+   "last_run": "2026-11-11",
+   "made": " 2026-11-11; left 0",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42772393417",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42985712560",
    "waiting_on": "chat 11 answers data/waiting/questions/hardlook.json"
   },
   "Intake: acres-engine.json": {
@@ -123,10 +123,10 @@
   },
   "Intake: docs-pagefix-ca-engine.csv": {
    "areas": "",
-   "last_run": "2026-11-07",
-   "made": "read by the docs bot (2026-11-07)",
+   "last_run": "2026-11-11",
+   "made": "read by the docs bot (2026-11-11)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42340220911",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42970485480",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: docs-pagefix-us-engine.csv": {
@@ -771,10 +771,10 @@
   },
   "Intake: hardlook-engine.xlsx": {
    "areas": "",
-   "last_run": "2026-11-09",
-   "made": "read by the hardlook bot (2026-11-09)",
+   "last_run": "2026-11-11",
+   "made": "read by the hardlook bot (2026-11-11)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42582430368",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42965416101",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: hardlook-mapping-bundle-nov1.json": {
@@ -1065,6 +1065,14 @@
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42460781600",
    "waiting_on": "chat 11 grades tools-out picture-trace/ (approximate only, R-G9)"
   },
+  "Repo size (daily)": {
+   "areas": "",
+   "last_run": "2026-11-11",
+   "made": "KPC-Data is 1186 MB (fresh copy), +0 MB a day over the last week -> TOO FAST / TOO BIG: find the bot that rewrites a big file (git log --stat on main)",
+   "result": "amber",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42985585883",
+   "waiting_on": "HQ (alarm: >600 MB or >25 MB a day)"
+  },
   "Retry list (GitHub try)": {
    "areas": "",
    "last_run": "2026-11-03",
@@ -1076,9 +1084,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-11",
-   "made": "nothing skipped",
-   "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42966565069",
+   "made": "2026-11-11 09:48 UTC: 3 skipped run(s) started again: kpc-answer-sheet-check.yml (missed Nov 11 08:41 UTC); kpc-copy-from-links.yml (missed Nov 11 09:11 UTC); kpc-waiting-room.yml (missed Nov 11 08:42 UTC)",
+   "result": "amber",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42998162203",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1188,9 +1196,9 @@
   "Website copy (site branch)": {
    "areas": "",
    "last_run": "2026-11-11",
-   "made": "site = main: the website has the newest data",
+   "made": "site is under 60 min behind main: the copy bot will catch up",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42966565069",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42998162203",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "answer-sheet-check": {
@@ -1203,10 +1211,10 @@
   },
   "campground info bot": {
    "areas": "left: 15",
-   "last_run": "2026-11-10",
-   "made": "US-WY: partial; {\"camps\": 301, \"needs_browser\": 3, \"needs_key\": 162, \"no_page\": 79, \"not_official\": 0, \"ok\": 5, \"other\": 52, \"resting\": 0, \"robots\": 0, \"with_booking\": 41, \"with_elevation\": 0, \"with_facts\": 20, \"with",
+   "last_run": "2026-11-11",
+   "made": "US-KS: done; {\"camps\": 117, \"needs_browser\": 0, \"needs_key\": 52, \"no_page\": 0, \"not_official\": 0, \"ok\": 0, \"other\": 0, \"resting\": 0, \"robots\": 65, \"with_booking\": 63, \"with_elevation\": 0, \"with_sites\": 0}",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42846926687",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42985716631",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "closures super-bot": {
@@ -1228,9 +1236,9 @@
   "key-doctor": {
    "areas": "",
    "last_run": "2026-11-11",
-   "made": "NOs: 434 of 723 NOs landed; 289 missing (re-applied to overrides.fixed.json); 1034 came back in the key release: 12282 parks pass, 365 held, 49 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-11.md ",
+   "made": "NOs: 434 of 723 NOs landed; 289 missing (re-applied to overrides.fixed.json); 1249 came back in the key release: 12286 parks pass, 361 held, 49 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-11.md ",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42960329914",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42985731836",
    "waiting_on": "chat 10 (came-back NOs / stuck areas); per-park release in release-approved"
   },
   "layer intake": {
@@ -1275,10 +1283,10 @@
   },
   "scoreboard": {
    "areas": "",
-   "last_run": "2026-11-10",
+   "last_run": "2026-11-11",
    "made": "scoreboard.json + scoreboard-parks.json + scoreboard-check.md",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42791417834",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42985720833",
    "waiting_on": "nothing (facts only)"
   },
   "waiting room": {
