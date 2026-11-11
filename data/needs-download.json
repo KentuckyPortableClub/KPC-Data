@@ -1023,10 +1023,10 @@
    "page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "source": "master",
    "src": "",
-   "status": "held",
+   "status": "done",
    "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query",
    "who": "bot",
-   "why": "US-AL sgaki: read 1 of 200 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
+   "why": "refilled and checked by the master step"
   },
   {
    "added": "2026-11-10",
@@ -1818,7 +1818,7 @@
    "status": "held",
    "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query",
    "who": "bot",
-   "why": "US-CO rst: read 264 of 265 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
+   "why": "US-CO rst: read 0 of 265 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
   },
   {
    "added": "2026-11-10",
@@ -1854,7 +1854,7 @@
    "status": "held",
    "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query",
    "who": "bot",
-   "why": "US-CO sgakg: read 264 of 265 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
+   "why": "US-CO sgakg: read 0 of 265 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
   },
   {
    "added": "2026-11-10",
@@ -2049,10 +2049,10 @@
    "page": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
    "source": "master",
    "src": "",
-   "status": "held",
+   "status": "done",
    "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query",
    "who": "bot",
-   "why": "US-DE sgdea: the layer did not report its own total, so the read cannot be checked: not merged; the bot re-reads this layer itself (allowed host): nobody downloads it"
+   "why": "refilled and checked by the master step"
   },
   {
    "added": "2026-11-10",
@@ -2256,7 +2256,7 @@
    "added": "2026-11-10",
    "area": "US-FL",
    "check": "",
-   "expected": null,
+   "expected": 77144,
    "have": null,
    "host": "ca.dep.state.fl.us",
    "id": "US-FL|sgflf",
@@ -2427,10 +2427,10 @@
    "page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "source": "master",
    "src": "",
-   "status": "held",
+   "status": "done",
    "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query",
    "who": "bot",
-   "why": "US-HI sgaki: read 2 of 84 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
+   "why": "refilled and checked by the master step"
   },
   {
    "added": "2026-11-10",
@@ -2985,10 +2985,10 @@
    "page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "source": "master",
    "src": "",
-   "status": "held",
+   "status": "done",
    "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query",
    "who": "bot",
-   "why": "US-KS sgaki: read 1 of 200 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
+   "why": "refilled and checked by the master step"
   },
   {
    "added": "2026-11-10",
@@ -3201,10 +3201,10 @@
    "page": "https://gis.eea.mass.gov/server/rest/services/Protected_and_Recreational_OpenSpace_Polygons/MapServer/0",
    "source": "master",
    "src": "",
-   "status": "held",
+   "status": "done",
    "url": "https://gis.eea.mass.gov/server/rest/services/Protected_and_Recreational_OpenSpace_Polygons/MapServer/0/query",
    "who": "bot",
-   "why": "US-MA sgmad: read 198 of 59508 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
+   "why": "refilled and checked by the master step"
   },
   {
    "added": "2026-11-10",
@@ -3237,10 +3237,10 @@
    "page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "source": "master",
    "src": "",
-   "status": "held",
+   "status": "done",
    "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query",
    "who": "bot",
-   "why": "US-MD sgaki: read 1 of 200 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
+   "why": "refilled and checked by the master step"
   },
   {
    "added": "2026-11-10",
@@ -4101,10 +4101,10 @@
    "page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "source": "master",
    "src": "",
-   "status": "held",
+   "status": "done",
    "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query",
    "who": "bot",
-   "why": "US-ND sgaki: read 5 of 68 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
+   "why": "refilled and checked by the master step"
   },
   {
    "added": "2026-11-10",
@@ -4227,10 +4227,10 @@
    "page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "source": "master",
    "src": "",
-   "status": "held",
+   "status": "done",
    "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query",
    "who": "bot",
-   "why": "US-NE sgaki: read 1 of 200 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
+   "why": "refilled and checked by the master step"
   },
   {
    "added": "2026-11-10",
@@ -4785,10 +4785,10 @@
    "page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "source": "master",
    "src": "",
-   "status": "held",
+   "status": "done",
    "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query",
    "who": "bot",
-   "why": "US-NV sgaki: read 1 of 130 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
+   "why": "refilled and checked by the master step"
   },
   {
    "added": "2026-11-10",
@@ -5163,10 +5163,10 @@
    "page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "source": "master",
    "src": "",
-   "status": "held",
+   "status": "done",
    "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query",
    "who": "bot",
-   "why": "US-OK sgaki: read 4 of 200 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
+   "why": "refilled and checked by the master step"
   },
   {
    "added": "2026-11-10",
@@ -6423,10 +6423,10 @@
    "page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "source": "master",
    "src": "",
-   "status": "held",
+   "status": "done",
    "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query",
    "who": "bot",
-   "why": "US-UT sgaki: read 1 of 161 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
+   "why": "refilled and checked by the master step"
   },
   {
    "added": "2026-11-10",
