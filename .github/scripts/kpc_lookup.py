@@ -278,6 +278,34 @@ def pick_link(links, hint):
     return best
 
 
+def pick_page(kind, body, pages, q):
+    """Nov 11 (KPC owner, 2026-11-11): which page of a PDF is the map (kpc_map_page.py). Only when the request asks for the default single
+    page 1 (AUTO-3 always does) and does not say "pick_page": false; a person who names other pages gets exactly those. Never worse than
+    before: with no map page found, or the chooser unavailable, the page asked for is kept. A single picture: nothing to choose."""
+    import io, tempfile
+    try:
+        import kpc_map_page as MP
+    except Exception as e:  # noqa: BLE001  (Pillow missing: the page asked for, as before)
+        return {'kept': None, 'map_page_found': None, 'how': f'chooser not available ({type(e).__name__}): the page asked for'}
+    if kind == 'img':
+        try:
+            from PIL import Image
+            return MP.judge_picture(Image.open(io.BytesIO(body)))
+        except Exception as e:  # noqa: BLE001
+            return {'kept': None, 'map_page_found': None, 'how': f'a single picture ({type(e).__name__} while looking)'}
+    if kind != 'pdf':
+        return None
+    if pages != [1] or q.get('pick_page') is False:
+        return {'kept': None, 'map_page_found': None, 'how': f'page(s) {pages} named in the request: kept as asked'}
+    with tempfile.TemporaryDirectory() as td:
+        f = pathlib.Path(td) / 'in.pdf'
+        f.write_bytes(body)
+        try:
+            return MP.choose_pdf_page(f, today=1)
+        except Exception as e:  # noqa: BLE001  (one odd PDF never stops a save: page 1, as before)
+            return {'kept': 1, 'map_page_found': None, 'how': f'page 1: the chooser stopped ({type(e).__name__})'}
+
+
 def save_map(q, rid):
     import subprocess, tempfile
     ref = str(q.get('ref') or '').strip(); name = q.get('name') or ''
@@ -294,6 +322,9 @@ def save_map(q, rid):
     if err or kind not in ('pdf', 'img'): return {'url': u, 'error': err or 'not a PDF or picture', 'looked': seen}
     pages = q.get('pages') or 1
     pages = [int(p) for p in re.findall(r'\d+', str(pages))][:3] if not isinstance(pages, int) else [pages]
+    pick = pick_page(kind, body, pages, q)   # Nov 11 (KPC owner, 2026-11-11): the MAP page, not always page 1
+    if pick and pick.get('kept'):
+        pages = [int(pick['kept'])]
     base = f'{ref}_{slug(name)}'
     (PIC / 'maps').mkdir(parents=True, exist_ok=True); (PIC / 'rows').mkdir(parents=True, exist_ok=True)
     saved = []
@@ -315,8 +346,32 @@ def save_map(q, rid):
     if not saved: return {'url': u, 'map_url': final, 'error': f'could not render page(s) {pages} under {PIC_MAX // 1_000_000} MB'}
     row = {'ref': ref, 'name': name, 'agency': q.get('agency') or '', 'source_url': final, 'asked_url': u, 'page': pages if kind == 'pdf' else None,
            'files': saved, 'date': time.strftime('%Y-%m-%d'), 'chat': q.get('chat'), 'request': rid}
+    if pick:
+        row['page_pick'] = pick   # which page was kept and why; map_page_found false = 'no map page found' (the tracer's prep skips it)
     json.dump(row, open(PIC / 'rows' / f'{base}.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
     return {'url': u, 'map_url': final, 'saved': saved, 'bytes': sum((PIC / s).stat().st_size for s in saved), 'branch': 'picture-maps'}
+
+
+def resave(refs):
+    """Nov 11 (KPC owner, 2026-11-11): save these parks' picture maps again from the same source address, with the page chooser (a person's
+    run on a picture-maps checkout: PIC_ROOT=<checkout> python3 kpc_lookup.py resave US-3390 CA-4909 ...). Only rows that kept page 1 (or
+    a single picture) are redone; a page a person named is left alone. The same polite reader and host rules as every save; then the
+    index is rebuilt. Prints one line per park: the page kept and why."""
+    done = 0
+    for ref in refs:
+        for f in sorted((PIC / 'rows').glob(f'{ref}_*.json')):
+            row = json.load(open(f, encoding='utf-8'))
+            if row.get('page') not in (None, [1], 1):
+                print(f'{ref}: page {row.get("page")} was named by a person: left alone'); continue
+            q = {'ref': ref, 'name': row.get('name') or '', 'agency': row.get('agency') or '', 'url': row.get('asked_url') or row.get('source_url'),
+                 'pages': 1, 'chat': row.get('chat')}
+            r = save_map(q, f'resave-{ref}')
+            new = json.load(open(f, encoding='utf-8')) if f.exists() else {}
+            pp = new.get('page_pick') or {}
+            print(f"{ref}: {r.get('error') or 'saved'}; page {new.get('page')}; {pp.get('how', '')}; map page found: {pp.get('map_page_found')}")
+            done += 1
+    map_index()
+    notice(f'resave: {done} picture map(s) saved again')
 
 
 def map_index():
@@ -392,6 +447,7 @@ if __name__ == '__main__':
         elif a[0] == 'tidy': tidy()
         elif a[0] == 'map-index': map_index()
         elif a[0] == 'map-cleanup': map_cleanup()
+        elif a[0] == 'resave': resave(a[1:])
     except Exception as e:  # noqa: BLE001
         notice(f'stopped ({type(e).__name__}: {str(e)[:200]})')
     sys.exit(0)

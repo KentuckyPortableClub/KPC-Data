@@ -34,12 +34,16 @@ for r, v in (_ad.items() if isinstance(_ad, dict) else []):
 for f in glob.glob('data/docs/*.json'):
     for r, v in ((load(f, {}) or {}).get('parks') or {}).items():
         if isinstance(v, dict) and v.get('agency'): ag[r] = v['agency']
-out, used = {}, {}
+out, used, not_maps = {}, {}, {}
 for m in rows or []:
     ref = m.get('ref') or ''
     if not ref.startswith(('US-', 'CA-')) or ref not in pins: continue
     files = [x for x in m.get('files') or [] if (base / x).exists()]
     if not files: continue
+    pp = m.get('page_pick') or {}
+    if pp.get('map_page_found') is False:   # Nov 11 (KPC owner, 2026-11-11): the saver found no map page in the document: not traced
+        not_maps[ref] = f"no map page found in {m.get('source_url')}: {pp.get('why') or ''}"[:400]
+        continue
     pg = m.get('page'); pg = pg[0] if isinstance(pg, list) and pg else (pg or 1)
     out[ref] = {'name': m.get('name') or names.get(ref) or ref, 'agency': m.get('agency') or ag.get(ref) or urllib.parse.urlsplit(m.get('source_url') or '').hostname or '',
                 'source_url': m.get('source_url'), 'page': pg, 'date': m.get('date'), 'source_type': 'official', 'image': files[0],
@@ -49,4 +53,6 @@ for m in rows or []:
     used[ref] = pins[ref]
 json.dump(out, open(base / 'index.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
 json.dump(used, open(base / 'pins.json', 'w'), indent=0)
-print(f'::notice title=Picture tracer input::{len(out)} US + Canada picture maps with a pin (of {len(rows or [])} saved)')
+json.dump(not_maps, open(base / 'not-maps.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)   # the honest reason, per park
+print(f'::notice title=Picture tracer input::{len(out)} US + Canada picture maps with a pin (of {len(rows or [])} saved)'
+      + (f'; {len(not_maps)} not traced: the saver found no map page in their document (not-maps.json)' if not_maps else ''))
