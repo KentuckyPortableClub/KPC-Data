@@ -1,6 +1,6 @@
 {
  "about": "Counts from the 2-fer bot (kpc_fers.py). Hidden: data only.",
- "fers_rules": "0361802fe00e",
+ "fers_rules": "aa7561256260",
  "pass1": {
   "bad POTA pin: tested by saved record ids": [
    "CA-1930",
@@ -194,9 +194,9 @@
   "pairs tested": 7293,
   "pairs whose boxes touch": 7293,
   "parks done by the box test": 0,
-  "parks from saved outlines (2-fer bot's own copy)": 0,
+  "parks from saved outlines (2-fer bot's own copy)": 3,
   "parks from saved outlines (answer key copy)": 1534,
-  "parks read live (saved for next time)": 3,
+  "parks read live (saved for next time)": 0,
   "parks whose outline could not be read": 1,
   "pass": 1,
   "problems": [
@@ -451,24 +451,24 @@
   "US-DC": {
    "candidates": 0,
    "candidates (saved outline only)": 0,
-   "lines": 72,
-   "n-fers": 0,
+   "lines": 64,
+   "n-fers": 10,
    "not sure": 1,
-   "pass1": 73,
+   "pass1": 65,
    "pass2": 1,
-   "spots": 73,
+   "spots": 65,
    "very tight": 0,
    "water only": 0
   },
   "US-DE": {
    "candidates": 5,
    "candidates (saved outline only)": 0,
-   "lines": 48,
+   "lines": 52,
    "n-fers": 5,
    "not sure": 2,
-   "pass1": 134,
+   "pass1": 138,
    "pass2": 7,
-   "spots": 134,
+   "spots": 138,
    "very tight": 0,
    "water only": 0
   },
@@ -595,12 +595,12 @@
   "US-MD": {
    "candidates": 20,
    "candidates (saved outline only)": 0,
-   "lines": 551,
-   "n-fers": 9,
+   "lines": 668,
+   "n-fers": 21,
    "not sure": 4,
-   "pass1": 697,
+   "pass1": 814,
    "pass2": 24,
-   "spots": 697,
+   "spots": 814,
    "very tight": 0,
    "water only": 0
   },
@@ -751,12 +751,12 @@
   "US-NY": {
    "candidates": 0,
    "candidates (saved outline only)": 0,
-   "lines": 54,
+   "lines": 39,
    "n-fers": 1,
    "not sure": 4,
-   "pass1": 76,
+   "pass1": 61,
    "pass2": 4,
-   "spots": 76,
+   "spots": 61,
    "very tight": 0,
    "water only": 0
   },
@@ -799,12 +799,12 @@
   "US-PA": {
    "candidates": 0,
    "candidates (saved outline only)": 0,
-   "lines": 390,
+   "lines": 400,
    "n-fers": 71,
    "not sure": 0,
-   "pass1": 1273,
+   "pass1": 1283,
    "pass2": 0,
-   "spots": 1273,
+   "spots": 1283,
    "very tight": 0,
    "water only": 0
   },
@@ -859,12 +859,12 @@
   "US-VA": {
    "candidates": 0,
    "candidates (saved outline only)": 0,
-   "lines": 331,
-   "n-fers": 6,
+   "lines": 335,
+   "n-fers": 8,
    "not sure": 5,
-   "pass1": 391,
+   "pass1": 395,
    "pass2": 5,
-   "spots": 391,
+   "spots": 395,
    "very tight": 0,
    "water only": 0
   },
@@ -907,12 +907,12 @@
   "US-WV": {
    "candidates": 0,
    "candidates (saved outline only)": 0,
-   "lines": 48,
+   "lines": 46,
    "n-fers": 8,
    "not sure": 0,
-   "pass1": 281,
+   "pass1": 279,
    "pass2": 0,
-   "spots": 281,
+   "spots": 279,
    "very tight": 0,
    "water only": 0
   },
