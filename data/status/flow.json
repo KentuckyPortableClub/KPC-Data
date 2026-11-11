@@ -1,6 +1,6 @@
 {
  "about": "FLOW BOARD (chat 10, Nov 1 2026; Brandon 2:01 PM: 'stuff seems to get dropped a lot ... where you can see for example 900",
- "built": "2026-11-11 04:37Z",
+ "built": "2026-11-11 08:25Z",
  "stuck_days": 2,
  "piles": [
   {
@@ -49,7 +49,7 @@
    "n": 0,
    "owner": "chat 10 (the reader of that kind)",
    "note": "",
-   "date": "2026-11-09",
+   "date": "2026-11-11",
    "first_seen": "2026-11-01",
    "moved": "2026-11-02",
    "still_days": 9,
@@ -74,13 +74,13 @@
    "what": "engine finds handed to the collector (last hand-back)",
    "n": 0,
    "owner": "layer collector (every 2 h)",
-   "note": "engine results last saved 2026-11-09",
-   "date": "2026-11-09",
-   "engine_saved": "2026-11-09",
+   "note": "engine results last saved 2026-11-11",
+   "date": "2026-11-11",
+   "engine_saved": "2026-11-11",
    "first_seen": "2026-11-01",
    "moved": "2026-11-01",
    "still_days": 10,
-   "stuck": true
+   "stuck": false
   },
   {
    "id": "collector-left",
@@ -324,7 +324,7 @@
    "what": "HELD fers files (a check failed; data/waiting/today.md says why)",
    "n": 54,
    "owner": "chat 2 (fix) + chat 11",
-   "note": "US-FL, US-GA, US-IL, US-MA, US-MI, US-NC, US-NE, US-PA, US-SD, US-TX, CA-BC, US-AK, US-CT, US-MN, US-ND, US-NH, US-NY, US-SC, US-UT, US-WV, US-DE, US-IA, US-IN, …",
+   "note": "US-FL, US-GA, US-IL, US-MA, US-MI, US-NC, US-NE, US-PA, US-SD, US-TX, CA-BC, US-AK, US-CT, US-MN, US-ND, US-NH, US-NY, US-SC, US-UT, US-WV, US-DE, US-IA, US-MO, …",
    "date": "2026-11-01",
    "since": "2026-11-01",
    "first_seen": "2026-11-01",
@@ -378,9 +378,9 @@
    "id": "held-us-key",
    "stage": "7 waiting room",
    "what": "HELD us-key files (a check failed; data/waiting/today.md says why)",
-   "n": 2,
+   "n": 1,
    "owner": "chat 2 (fix) + chat 11",
-   "note": "US-AZ, US-DE",
+   "note": "US-AZ",
    "date": "2026-11-10",
    "since": "2026-11-10",
    "first_seen": "2026-11-10",
@@ -423,7 +423,7 @@
    "n": 453,
    "owner": "chat 11",
    "note": "",
-   "date": "2026-11-10",
+   "date": "2026-11-11",
    "first_seen": "2026-11-01",
    "moved": "2026-11-11",
    "still_days": 0,
@@ -508,6 +508,19 @@
    "stuck": true
   },
   {
+   "id": "bot-Repo size (daily)",
+   "stage": "8 bots",
+   "what": "Repo size (daily): found work",
+   "n": 1,
+   "owner": "HQ",
+   "note": "KPC-Data is 1186 MB (fresh copy), +0 MB a day over the last week -> TOO FAST / TOO BIG: find the bot · HQ (alarm: >600 MB or >25 MB a day)",
+   "date": "2026-11-11",
+   "first_seen": "2026-11-11",
+   "moved": "2026-11-11",
+   "still_days": 0,
+   "stuck": false
+  },
+  {
    "id": "bot-Retry list (GitHub try)",
    "stage": "8 bots",
    "what": "Retry list (GitHub try): not run for 8 days",
@@ -526,7 +539,7 @@
    "what": "Skipped-run watchdog: found work",
    "n": 1,
    "owner": "HQ",
-   "note": "2026-11-11 01:36 UTC: 3 skipped run(s) started again: kpc-copy-from-links.yml (missed Nov 11 01:11 U · nobody (it restarts them itself)",
+   "note": "2026-11-11 08:16 UTC: 8 skipped run(s) started again: kpc-camp-weekly.yml (missed Nov 11 07:29 UTC); · nobody (it restarts them itself)",
    "date": "2026-11-11",
    "first_seen": "2026-11-04",
    "moved": "2026-11-03",
@@ -573,19 +586,6 @@
    "stuck": true
   },
   {
-   "id": "bot-Website copy (site branch)",
-   "stage": "8 bots",
-   "what": "Website copy (site branch): RED (the bot is broken)",
-   "n": 1,
-   "owner": "chat 10",
-   "note": "site is 137 min behind main (1 commits, 2 website files): the copy bot did not catch up, so the watc · HQ: look at kpc-pages-sync.yml runs",
-   "date": "2026-11-11",
-   "first_seen": "2026-11-11",
-   "moved": "2026-11-11",
-   "still_days": 0,
-   "stuck": false
-  },
-  {
    "id": "bot-hours fees permits bot",
    "stage": "8 bots",
    "what": "hours fees permits bot: not run for 12 days",
@@ -604,7 +604,7 @@
    "what": "key-doctor: found work",
    "n": 1,
    "owner": "chat 10",
-   "note": "NOs: 434 of 723 NOs landed; 289 missing (re-applied to overrides.fixed.json); 1027 came back in the  · chat 10 (came-back NOs / stuck areas); per-park release in release-approved",
+   "note": "NOs: 434 of 723 NOs landed; 289 missing (re-applied to overrides.fixed.json); 1249 came back in the  · chat 10 (came-back NOs / stuck areas); per-park release in release-approved",
    "date": "2026-11-11",
    "first_seen": "2026-11-02",
    "moved": "2026-11-02",
@@ -623,19 +623,6 @@
    "moved": "2026-11-03",
    "still_days": 8,
    "stuck": true
-  },
-  {
-   "id": "bot-waiting room",
-   "stage": "8 bots",
-   "what": "waiting room: RED (the bot is broken)",
-   "n": 1,
-   "owner": "chat 10",
-   "note": "285 files waiting over 3 days in data/waiting/in/ (e.g. US-SD.json) · chat 11 (look at the waiting room run)",
-   "date": "2026-11-11",
-   "first_seen": "2026-11-11",
-   "moved": "2026-11-11",
-   "still_days": 0,
-   "stuck": false
   }
  ]
 }
