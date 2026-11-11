@@ -1,11 +1,11 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key', 'build': the held build id from data/waiting/in/data/us-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-11 04:37 UTC",
+ "made": "2026-11-11 06:12 UTC",
  "totals": {
   "gained": 60,
-  "lost": 8,
-  "pieces_changed": 634,
-  "grade_changed": 27
+  "lost": 10,
+  "pieces_changed": 675,
+  "grade_changed": 33
  },
  "per_area": {
   "US-AL": {
@@ -40,8 +40,8 @@
   },
   "US-DE": {
    "gained": 0,
-   "lost": 1,
-   "pieces_changed": 12,
+   "lost": 0,
+   "pieces_changed": 40,
    "grade_changed": 0
   },
   "US-GA": {
@@ -54,7 +54,7 @@
    "gained": 2,
    "lost": 0,
    "pieces_changed": 0,
-   "grade_changed": 0
+   "grade_changed": 1
   },
   "US-IA": {
    "gained": 0,
@@ -84,12 +84,12 @@
    "gained": 1,
    "lost": 0,
    "pieces_changed": 0,
-   "grade_changed": 0
+   "grade_changed": 2
   },
   "US-MA": {
    "gained": 1,
    "lost": 0,
-   "pieces_changed": 4,
+   "pieces_changed": 17,
    "grade_changed": 0
   },
   "US-MD": {
@@ -106,13 +106,13 @@
   },
   "US-MI": {
    "gained": 3,
-   "lost": 0,
+   "lost": 2,
    "pieces_changed": 8,
    "grade_changed": 6
   },
   "US-MN": {
    "gained": 0,
-   "lost": 3,
+   "lost": 1,
    "pieces_changed": 3,
    "grade_changed": 6
   },
@@ -126,7 +126,7 @@
    "gained": 0,
    "lost": 0,
    "pieces_changed": 2,
-   "grade_changed": 0
+   "grade_changed": 1
   },
   "US-MT": {
    "gained": 1,
@@ -138,7 +138,7 @@
    "gained": 1,
    "lost": 0,
    "pieces_changed": 1,
-   "grade_changed": 0
+   "grade_changed": 2
   },
   "US-ND": {
    "gained": 5,
@@ -154,7 +154,7 @@
   },
   "US-NH": {
    "gained": 0,
-   "lost": 0,
+   "lost": 1,
    "pieces_changed": 4,
    "grade_changed": 0
   },
@@ -196,7 +196,7 @@
   },
   "US-PA": {
    "gained": 3,
-   "lost": 0,
+   "lost": 1,
    "pieces_changed": 2,
    "grade_changed": 1
   },
@@ -244,7 +244,7 @@
   },
   "US-WA": {
    "gained": 2,
-   "lost": 0,
+   "lost": 1,
    "pieces_changed": 1,
    "grade_changed": 0
   },
@@ -1501,25 +1501,6 @@
  ],
  "lost": [
   {
-   "area": "US-DE",
-   "ref": "US-11812",
-   "name": "Trap Pond State Fishing Lake",
-   "old_grade": "official",
-   "new_grade": "official",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "sgdea380",
-     "Trap Pond State Park",
-     517,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11812"
-  },
-  {
    "area": "US-IA",
    "ref": "US-0270",
    "name": "Iowa Wetland Management District",
@@ -1579,6 +1560,50 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-0270"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12792",
+   "name": "Manistee National Wild and Scenic River",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "fwsr44",
+     "Manistee, Michigan National Wild and Scenic River",
+     8919,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12792"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12798",
+   "name": "Sturgeon (Hiawatha) National Wild and Scenic River",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "fwsr163",
+     "Sturgeon, Michigan (Hiawatha NF) National Wild and Scenic River",
+     4860,
+     "words"
+    ],
+    [
+     "fwsr61",
+     "Sturgeon, Michigan (Hiawatha NF) National Wild and Scenic River",
+     3532,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12798"
   },
   {
    "area": "US-MN",
@@ -1642,44 +1667,6 @@
    "pota": "https://pota.app/#/park/US-0365"
   },
   {
-   "area": "US-MN",
-   "ref": "US-10723",
-   "name": "Crystal Spring SNA Scenic Reserve",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "sgmnc178",
-     "Crystal Spring",
-     38,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-10723"
-  },
-  {
-   "area": "US-MN",
-   "ref": "US-11872",
-   "name": "Lost 40 SNA State Natural Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "sgmnc198",
-     "Lost 40",
-     136,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11872"
-  },
-  {
    "area": "US-MO",
    "ref": "US-0374",
    "name": "Big Muddy National Wildlife Refuge",
@@ -1699,6 +1686,50 @@
    ],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-0374"
+  },
+  {
+   "area": "US-NH",
+   "ref": "US-8015",
+   "name": "Wildcat National Wild and Scenic River",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "fwsr175",
+     "Wildcat, New Hampshire National Wild and Scenic River",
+     1351,
+     "words"
+    ],
+    [
+     "fwsr86",
+     "Wildcat, New Hampshire National Wild and Scenic River",
+     13,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8015"
+  },
+  {
+   "area": "US-PA",
+   "ref": "US-12234",
+   "name": "Allegheny National Wild and Scenic River",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "fwsr1",
+     "Allegheny, Pennsylvania National Wild and Scenic River",
+     35107,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12234"
   },
   {
    "area": "US-SD",
@@ -1760,6 +1791,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-0529"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-10709",
+   "name": "Klickitat National Wild and Scenic River",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "fwsr35",
+     "Klickitat, Washington National Wild and Scenic River",
+     4815,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10709"
   },
   {
    "area": "US-WY",
@@ -1857,6 +1907,42 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-0894"
+  },
+  {
+   "area": "US-HI",
+   "ref": "US-10914",
+   "name": "Ka‘ena Point State Trail",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10914"
+  },
+  {
+   "area": "US-KS",
+   "ref": "US-7402",
+   "name": "Crawford State Fishing Lake",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7402"
+  },
+  {
+   "area": "US-KS",
+   "ref": "US-7406",
+   "name": "Mined Land State Fishing Lake",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7406"
   },
   {
    "area": "US-MI",
@@ -2721,6 +2807,42 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-0373"
+  },
+  {
+   "area": "US-MS",
+   "ref": "US-7119",
+   "name": "Natchez Wildlife Management Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7119"
+  },
+  {
+   "area": "US-NC",
+   "ref": "US-6882",
+   "name": "Bladen Lakes State Game Land",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6882"
+  },
+  {
+   "area": "US-NC",
+   "ref": "US-6910",
+   "name": "Headwaters State Game Land",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6910"
   },
   {
    "area": "US-ND",
