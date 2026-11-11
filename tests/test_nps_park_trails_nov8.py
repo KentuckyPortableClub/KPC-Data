@@ -12,6 +12,7 @@ def check(c, m):
     if not c: FAILS.append(m)
 
 
+sys.path.insert(0, str(ROOT / '.github/scripts'))   # the script imports its sibling kpc_host_rules
 spec = importlib.util.spec_from_file_location('n', ROOT / '.github/scripts/kpc_nps_park_trails.py'); n = importlib.util.module_from_spec(spec); spec.loader.exec_module(n)
 check(not n.keep({'MAPSOURCE': 'OpenStreetMap contributors'}) and not n.keep({'MAPSOURCE': 'OSM 2019'}), 'OSM-sourced lines are dropped')
 check(n.keep({'MAPSOURCE': 'GPS survey'}) and n.keep({}), 'NPS-surveyed lines are kept')

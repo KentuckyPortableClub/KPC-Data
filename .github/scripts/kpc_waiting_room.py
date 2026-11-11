@@ -25,6 +25,7 @@ import copy, datetime as dt, glob, json, math, os, pathlib, random, re, shutil, 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from kpc_json_any import append_jsonl_gz  # noqa: E402
 import kpc_archive as KA  # noqa: E402  (Nov 7: undo copies older than 14 days live on KPC-Archive; data/archive-manifest.json lists them)
+import kpc_host_rules; kpc_host_rules.install()
 
 DATA = pathlib.Path(os.environ.get('DATA') or '.')
 LINKS = pathlib.Path(os.environ.get('LINKS') or '../links')

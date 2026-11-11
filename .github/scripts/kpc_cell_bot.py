@@ -10,6 +10,7 @@ Refresh only when the FCC publishes a new as-of date (data/cell/state.json). Pol
   python3 kpc_cell_bot.py [--states KY] [--test]   (out: data/cell/US-KY.json + data/cell/test-parks.json; work files: $OUT_WORK)"""
 import csv, datetime as dt, io, json, os, pathlib, re, sys, time, zipfile
 import requests
+import kpc_host_rules; kpc_host_rules.install()
 
 API = 'https://broadbandmap.fcc.gov/api/public'
 UA = 'KPC-cell-bot (Kentucky Portable Club ham radio club; https://github.com/KentuckyPortableClub)'

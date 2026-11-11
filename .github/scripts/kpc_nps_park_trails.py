@@ -10,6 +10,7 @@ The NPS DataStore (irma.nps.gov /DataStore/DownloadFile/, irmaservices.nps.gov: 
   python3 kpc_nps_park_trails.py --out /tmp/nps-trails    (no --units = every NPS unit, ~1 request a second)
   python3 kpc_nps_park_trails.py --list            (unit codes + names the service holds)"""
 import argparse, gzip, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request, urllib.robotparser
+import kpc_host_rules; kpc_host_rules.install()
 
 HOST = 'https://mapservices.nps.gov'
 LAYER = HOST + '/arcgis/rest/services/NationalDatasets/NPS_Public_Trails_Geographic/FeatureServer/0'

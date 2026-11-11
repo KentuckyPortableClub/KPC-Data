@@ -1023,10 +1023,10 @@
    "page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "source": "master",
    "src": "",
-   "status": "open",
+   "status": "held",
    "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query",
    "who": "bot",
-   "why": "US-AL sgaki: read 1 of 200 records: SHORT, not merged (fail closed)"
+   "why": "US-AL sgaki: read 1 of 200 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
   },
   {
    "added": "2026-11-10",
@@ -1815,10 +1815,10 @@
    "page": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
    "source": "master",
    "src": "",
-   "status": "open",
+   "status": "held",
    "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query",
    "who": "bot",
-   "why": "US-CO rst: read 264 of 265 records: SHORT, not merged (fail closed)"
+   "why": "US-CO rst: read 264 of 265 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
   },
   {
    "added": "2026-11-10",
@@ -1851,10 +1851,10 @@
    "page": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
    "source": "master",
    "src": "",
-   "status": "open",
+   "status": "held",
    "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query",
    "who": "bot",
-   "why": "US-CO sgakg: read 264 of 265 records: SHORT, not merged (fail closed)"
+   "why": "US-CO sgakg: read 264 of 265 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
   },
   {
    "added": "2026-11-10",
@@ -1925,7 +1925,7 @@
    "src": "",
    "status": "done",
    "url": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/CPWAdminData/FeatureServer/5/query",
-   "who": "bot",
+   "who": "person",
    "why": "refilled and checked by the master step"
   },
   {
@@ -2049,10 +2049,10 @@
    "page": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
    "source": "master",
    "src": "",
-   "status": "open",
+   "status": "held",
    "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query",
    "who": "bot",
-   "why": "US-DE sgdea: the layer did not report its own total, so the read cannot be checked: not merged"
+   "why": "US-DE sgdea: the layer did not report its own total, so the read cannot be checked: not merged; the bot re-reads this layer itself (allowed host): nobody downloads it"
   },
   {
    "added": "2026-11-10",
@@ -2427,10 +2427,10 @@
    "page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "source": "master",
    "src": "",
-   "status": "open",
+   "status": "held",
    "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query",
    "who": "bot",
-   "why": "US-HI sgaki: read 2 of 84 records: SHORT, not merged (fail closed)"
+   "why": "US-HI sgaki: read 2 of 84 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
   },
   {
    "added": "2026-11-10",
@@ -2985,10 +2985,10 @@
    "page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "source": "master",
    "src": "",
-   "status": "open",
+   "status": "held",
    "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query",
    "who": "bot",
-   "why": "US-KS sgaki: read 1 of 200 records: SHORT, not merged (fail closed)"
+   "why": "US-KS sgaki: read 1 of 200 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
   },
   {
    "added": "2026-11-10",
@@ -3201,10 +3201,10 @@
    "page": "https://gis.eea.mass.gov/server/rest/services/Protected_and_Recreational_OpenSpace_Polygons/MapServer/0",
    "source": "master",
    "src": "",
-   "status": "open",
+   "status": "held",
    "url": "https://gis.eea.mass.gov/server/rest/services/Protected_and_Recreational_OpenSpace_Polygons/MapServer/0/query",
    "who": "bot",
-   "why": "US-MA sgmad: read 198 of 59508 records: SHORT, not merged (fail closed)"
+   "why": "US-MA sgmad: read 198 of 59508 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
   },
   {
    "added": "2026-11-10",
@@ -3237,10 +3237,10 @@
    "page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "source": "master",
    "src": "",
-   "status": "open",
+   "status": "held",
    "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query",
    "who": "bot",
-   "why": "US-MD sgaki: read 1 of 200 records: SHORT, not merged (fail closed)"
+   "why": "US-MD sgaki: read 1 of 200 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
   },
   {
    "added": "2026-11-10",
@@ -4101,10 +4101,10 @@
    "page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "source": "master",
    "src": "",
-   "status": "open",
+   "status": "held",
    "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query",
    "who": "bot",
-   "why": "US-ND sgaki: read 5 of 68 records: SHORT, not merged (fail closed)"
+   "why": "US-ND sgaki: read 5 of 68 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
   },
   {
    "added": "2026-11-10",
@@ -4227,10 +4227,10 @@
    "page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "source": "master",
    "src": "",
-   "status": "open",
+   "status": "held",
    "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query",
    "who": "bot",
-   "why": "US-NE sgaki: read 1 of 200 records: SHORT, not merged (fail closed)"
+   "why": "US-NE sgaki: read 1 of 200 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
   },
   {
    "added": "2026-11-10",
@@ -4785,10 +4785,10 @@
    "page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "source": "master",
    "src": "",
-   "status": "open",
+   "status": "held",
    "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query",
    "who": "bot",
-   "why": "US-NV sgaki: read 1 of 130 records: SHORT, not merged (fail closed)"
+   "why": "US-NV sgaki: read 1 of 130 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
   },
   {
    "added": "2026-11-10",
@@ -4967,7 +4967,7 @@
    "src": "",
    "status": "done",
    "url": "https://services.arcgis.com/RyxlXSfFi87rAosq/ArcGIS/rest/services/NDOWWMAs/FeatureServer/0/query",
-   "who": "bot",
+   "who": "person",
    "why": "refilled and checked by the master step"
   },
   {
@@ -5163,10 +5163,10 @@
    "page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "source": "master",
    "src": "",
-   "status": "open",
+   "status": "held",
    "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query",
    "who": "bot",
-   "why": "US-OK sgaki: read 4 of 200 records: SHORT, not merged (fail closed)"
+   "why": "US-OK sgaki: read 4 of 200 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
   },
   {
    "added": "2026-11-10",
@@ -6423,10 +6423,10 @@
    "page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
    "source": "master",
    "src": "",
-   "status": "open",
+   "status": "held",
    "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query",
    "who": "bot",
-   "why": "US-UT sgaki: read 1 of 161 records: SHORT, not merged (fail closed)"
+   "why": "US-UT sgaki: read 1 of 161 records: SHORT, not merged (fail closed); the bot re-reads this layer itself (allowed host): nobody downloads it"
   },
   {
    "added": "2026-11-10",
@@ -7629,10 +7629,10 @@
    "page": "https://iris.fws.gov/APPS/ServCat/Reference/Profile/194090",
    "source": "hand-filled list (Nov 10)",
    "src": "h172",
-   "status": "open",
+   "status": "held",
    "url": "https://services1.arcgis.com/KNdRU5cN6ENqCTjk/ArcGIS/rest/services/US_Fish_and_Wildlife_Service/FeatureServer/7",
-   "who": "bot",
-   "why": "an official direct file a bot may fetch exists for a layer a bot may not read: the fresh-start run downloads it"
+   "who": "person",
+   "why": "a national FWS file for several areas: a person packs one checked file per area (hand-W-XX.<layer>); the world builder does not read hand files yet"
   },
   {
    "added": "2026-11-10",
@@ -7647,10 +7647,10 @@
    "page": "https://irma.nps.gov/DataStore/Reference/Profile/2319366",
    "source": "hand-filled list (Nov 10)",
    "src": "h133",
-   "status": "open",
+   "status": "held",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
-   "who": "bot",
-   "why": "an official direct file a bot may fetch exists for a layer a bot may not read: the fresh-start run downloads it"
+   "who": "person",
+   "why": "checked file saved; the world builder does not read hand files yet"
   },
   {
    "added": "2026-11-10",
@@ -8367,10 +8367,10 @@
    "page": "https://iris.fws.gov/APPS/ServCat/Reference/Profile/194090",
    "source": "hand-filled list (Nov 10)",
    "src": "h172",
-   "status": "open",
+   "status": "held",
    "url": "https://services1.arcgis.com/KNdRU5cN6ENqCTjk/ArcGIS/rest/services/US_Fish_and_Wildlife_Service/FeatureServer/7",
-   "who": "bot",
-   "why": "an official direct file a bot may fetch exists for a layer a bot may not read: the fresh-start run downloads it"
+   "who": "person",
+   "why": "a national FWS file for several areas: a person packs one checked file per area (hand-W-XX.<layer>); the world builder does not read hand files yet"
   },
   {
    "added": "2026-11-10",
@@ -8385,10 +8385,10 @@
    "page": "https://iris.fws.gov/APPS/ServCat/Reference/Profile/194090",
    "source": "hand-filled list (Nov 10)",
    "src": "h172",
-   "status": "open",
+   "status": "held",
    "url": "https://services1.arcgis.com/KNdRU5cN6ENqCTjk/ArcGIS/rest/services/US_Fish_and_Wildlife_Service/FeatureServer/7",
-   "who": "bot",
-   "why": "an official direct file a bot may fetch exists for a layer a bot may not read: the fresh-start run downloads it"
+   "who": "person",
+   "why": "a national FWS file for several areas: a person packs one checked file per area (hand-W-XX.<layer>); the world builder does not read hand files yet"
   },
   {
    "added": "2026-11-10",
@@ -8403,10 +8403,10 @@
    "page": "https://irma.nps.gov/DataStore/Reference/Profile/2319366",
    "source": "hand-filled list (Nov 10)",
    "src": "h133",
-   "status": "open",
+   "status": "held",
    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
-   "who": "bot",
-   "why": "an official direct file a bot may fetch exists for a layer a bot may not read: the fresh-start run downloads it"
+   "who": "person",
+   "why": "checked file saved; the world builder does not read hand files yet"
   },
   {
    "added": "2026-11-10",
@@ -8421,10 +8421,10 @@
    "page": "https://iris.fws.gov/APPS/ServCat/Reference/Profile/194090",
    "source": "hand-filled list (Nov 10)",
    "src": "h134",
-   "status": "open",
+   "status": "held",
    "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/National_Wildlife_Refuge_System_Boundaries/FeatureServer/0",
-   "who": "bot",
-   "why": "an official direct file a bot may fetch exists for a layer a bot may not read: the fresh-start run downloads it"
+   "who": "person",
+   "why": "a national FWS file for several areas: a person packs one checked file per area (hand-W-XX.<layer>); the world builder does not read hand files yet"
   }
  ]
 }

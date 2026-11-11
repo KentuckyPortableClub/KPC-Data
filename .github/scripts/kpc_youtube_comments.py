@@ -7,6 +7,7 @@ Nothing new = no post. data/status/youtube-seen.json remembers what was sent (60
 DRY_RUN=1 prints instead of posting and saves nothing. A missing secret = a notice and a quiet exit, never red.
 Quota: commentThreads/comments/videos/channels calls are 1 unit each; a day is ~5-10 units of the free 10,000."""
 import datetime as dt, json, os, sys, time, urllib.parse, urllib.request
+import kpc_host_rules; kpc_host_rules.install()
 
 HANDLES = ['@ky.pota.campout', '@kpc-n4kpc']
 SEEN_F = 'data/status/youtube-seen.json'

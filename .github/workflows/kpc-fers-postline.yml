@@ -2,17 +2,17 @@ name: KPC 2-fer post-line check (hidden)
 # Nov 4 (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4: "2fer line review? Plan and install any pre and post line bots for the
 # 2fer system."; chain step 6: per Brandon via Super Head Bot (relayed), 4:55 AM CST Nov 4): after every 2-fer run (a line started by hand / the small batches / 'next', or the chain's lines,
 # which run inside the chain workflow), compare the HELD new 2-fer output with the previous one and write a report for Quality.
-# workflow_run only, no cron. Read-only on the 2-fers; never fails; saves only data/status/fers-postline/ and the chain gate state
+# workflow_run on a stand-alone line, or a dispatch from the chain (owner rule, 2026-11-10: not on the chain's own completion), no cron. Read-only on the 2-fers; never fails; saves only data/status/fers-postline/ and the chain gate state
 # (data/status/fers-chain/gate.json + gate-log.md). Releases nothing.
 on:
   workflow_run:
-    workflows: ['KPC 2-fer assembly line (hidden)', 'KPC 2-fer chain after a new key (hidden)']
+    workflows: ['KPC 2-fer assembly line (hidden)']
   # Nov 9 (Quality must-fix 4, run 42594981324): after a HAND-STARTED 2-fer bot run (kpc-fers.yml), one step, by hand:
   #   gh workflow run kpc-fers-postline.yml -R KentuckyPortableClub/KPC-Data -f prev_ref=auto
   # (auto = the parent of the newest '2-fer bot pass' save). Not a workflow_run on kpc-fers.yml: that job is red-on-caught-error
   # (KPC_FAIL_SAFE), and a followed job may not be (tests/test_nextround_hidden_failures_nov5.py).
     types: [completed]
-  # Nov 4 PM fix bundle item 3: a chain run started by dispatch fires no workflow_run, so the chain's 'postline' job starts this
+  # the chain's 'postline' job starts this once per chain run
   workflow_dispatch:
     inputs:
       run_url:

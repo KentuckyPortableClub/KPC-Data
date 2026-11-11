@@ -39,6 +39,9 @@ from shapely.geometry import (GeometryCollection, LineString, MultiLineString,
                               MultiPolygon, Point, Polygon, box, mapping, shape)
 from shapely.ops import unary_union
 from shapely.validation import make_valid
+import importlib.util as _ilu, os as _os   # noqa: E402  (owner rule, 2026-11-10: the club's one host check, before any request)
+_hs = _ilu.spec_from_file_location("kpc_host_rules", _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "..", "..", "kpc_host_rules.py"))
+_hr = _ilu.module_from_spec(_hs); _hs.loader.exec_module(_hr); _hr.install()
 
 TOOL = "river-banks"
 USER_AGENT = f"KPC-{TOOL} (https://github.com/KentuckyPortableClub)"

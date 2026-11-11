@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Oct 31 2026 (HQ, Brandon 'yes'): glue for the outside coder's three tools while Fable's review waits (Nov 6).
-The tools stay in .github/scripts/draft/tools/ untouched; this file only feeds them the club's files and turns their
+The tools stay in .github/scripts/tools/ untouched; this file only feeds them the club's files and turns their
 answers into REVIEW files. Nothing here edits data/fers, data/docs, a key or a card.
 
   prep-convert TEST OUT   archive/2026-10/leads-oct31.json 'other_layer' ([ref, status, url]) -> OUT (list of dicts),

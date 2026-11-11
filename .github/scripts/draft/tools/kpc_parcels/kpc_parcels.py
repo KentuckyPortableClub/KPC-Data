@@ -37,7 +37,11 @@ BANNED_HOSTS = re.compile(
 # Nov 7: services.arcgis.com/33TOOklri9xpic7U (Grant County, NM) is never used (standing rule)
 BANNED_URL = re.compile(r'google\.[a-z.]+/maps|/maps/d/|protectedplanet|wdpa|'
                         r'services\.arcgis\.com/33TOOklri9xpic7U(/|$|\?)', re.I)
+# Nov 10 (owner rule, 2026-11-10): every services*.arcgis.com host and apps.fs.usda.gov are saved-copy only: no request of any
+# kind, robots.txt and redirect hops included. KPC_SAVED_ONLY_HOSTS adds hosts; it never drops these.
+NEVER_LIVE = re.compile(r'^(services(\d+|-[a-z0-9]+)?\.arcgis\.com|apps\.fs\.usda\.gov|ncnhde\.natureserve\.org)$', re.I)
 from urllib.parse import urljoin as _polite_urljoin
+from urllib.parse import unquote as _polite_unquote
 
 
 def _no_net(*a, **k):
@@ -46,8 +50,18 @@ def _no_net(*a, **k):
 
 
 def banned(url):
-    """True for the sources the club never uses (KPC rules 1 + handoff Part A.6)."""
-    h = (urlparse(url).hostname or '').lower()
+    """True for the sources the club never uses (KPC rules 1 + handoff Part A.6) and the saved-copy-only hosts. Fail closed:
+    not a plain http(s) address with a host = banned. The host is the one really dialled (no port, user@ or trailing dot)."""
+    try:
+        p = urlparse(str(url or '').strip())
+        h = _polite_unquote(p.hostname or '').lower().rstrip('.')
+    except ValueError:
+        return True
+    if p.scheme.lower() not in ('http', 'https') or not h:
+        return True
+    extra = {x.strip().lower().rstrip('.') for x in (os.environ.get('KPC_SAVED_ONLY_HOSTS') or '').split(',') if x.strip()}
+    if NEVER_LIVE.match(h) or h in extra:
+        return True
     if h == 'storage.googleapis.com':          # a government's own file on cloud storage is allowed
         return False
     return bool(BANNED_HOSTS.search(h) or BANNED_URL.search(url))
@@ -355,9 +369,9 @@ def polite_selftest():
         problems.append('a blocked host was asked again')
     if not w.blocked.get('blocked.example.gov', '').startswith('403 Forbidden on https://blocked.example.gov/'):
         problems.append(f'blocked host not marked with the reason: {w.blocked}')
-    w.get('https://services9.arcgis.com/x/arcgis/rest/services/A/FeatureServer/0')
+    w.get('https://tiles.arcgis.com/x/arcgis/rest/services/A/FeatureServer/0')
     n2 = len(calls)
-    w.get('https://services9.arcgis.com/x/arcgis/rest/services/B/FeatureServer/0')
+    w.get('https://tiles.arcgis.com/x/arcgis/rest/services/B/FeatureServer/0')
     if len(calls) == n2:
         problems.append('on a shared ArcGIS host only the one refused address may be dropped')
 
@@ -374,9 +388,9 @@ def polite_selftest():
         if st != 200 or w2.blocked or len(calls2) != 2:
             problems.append(f'a {code} on robots.txt means no robots file: the data must be read ({st}, {calls2})')
 
-    # robots.txt 401 / 403 (any host, services*.arcgis.com included), 5xx, 429 or no answer = STOP, no data request
+    # robots.txt 401 / 403 (any host), 5xx, 429 or no answer = STOP, no data request
     for code in (401, 403, 500, 503, 429, 'err:ConnectionError'):
-        for host in ('services1.arcgis.com', 'services9.arcgis.com', 'services.arcgis.com', 'gis.example.gov'):
+        for host in ('tiles.arcgis.com', 'www.arcgis.com', 'gis.example.gov'):
             w2, calls2 = Polite(cache=None, gap=1.0), []
             w2.gap = 0
 
@@ -403,26 +417,30 @@ def polite_selftest():
     if w4.get('https://gis.example.gov/arcgis/rest/services/P/MapServer/0?f=json')[0] != 'robots' or len(calls4) != 1:
         problems.append(f'a robots Disallow on an ArcGIS REST path must be obeyed (no REST exemption): {calls4}')
 
-    # banned: NC NHDE (not even robots.txt) and the Grant County, NM ArcGIS org
+    # banned: NC NHDE, the Grant County, NM ArcGIS org, every services*.arcgis.com host and apps.fs.usda.gov (any port /
+    # user@ / trailing-dot form), not even robots.txt; an address with no plain http(s) host fails closed
     w5, calls5 = Polite(cache=None, gap=1.0), []
     w5.gap = 0
     w5._raw = lambda url, method='GET', data=None, headers=None: (calls5.append(url), (200, {}, b'', url))[1]
     for u in ('https://ncnhde.natureserve.org/arcgis/rest/services/x/MapServer/0',
               'https://NCNHDE.natureserve.org/robots.txt',
               'https://services.arcgis.com/33TOOklri9xpic7U/arcgis/rest/services/P/FeatureServer/0',
-              'https://services.arcgis.com/33TOOklri9xpic7U?f=json'):
+              'https://services.arcgis.com/33TOOklri9xpic7U?f=json',
+              'https://services.arcgis.com/OtherOrg/arcgis/rest/services/P/FeatureServer/0',
+              'https://services1.arcgis.com:443/x/arcgis/rest/services/P/FeatureServer/0',
+              'https://u@services9.arcgis.com/x', 'https://services-eu1.arcgis.com./x', 'https://apps.fs.usda.gov./arcx/rest/services',
+              '//services2.arcgis.com/x', 'ftp://gis.example.gov/x'):
         if w5.get(u)[0] != 'banned':
             problems.append(f'{u} must be banned')
     if calls5:
         problems.append(f'a banned source must get no request at all, robots.txt included: {calls5}')
-    if banned('https://services.arcgis.com/33TOOklri9xpic7Uabc/arcgis/rest/services') or \
-            banned('https://services.arcgis.com/OtherOrg/arcgis/rest/services'):
-        problems.append('only the Grant County org path is banned on services.arcgis.com, not the whole host')
+    if banned('https://www.arcgis.com/sharing/rest/content/items/x') or banned('https://hub.arcgis.com/datasets/x'):
+        problems.append('www.arcgis.com / hub.arcgis.com are not saved-copy-only hosts')
 
     # redirects: a hop to a banned or robots-blocked address is never requested
     w6, calls6 = Polite(cache=None, gap=1.0), []
     w6.gap = 0
-    hops = {'https://a.example.gov/x': 'https://ncnhde.natureserve.org/x',
+    hops = {'https://a.example.gov/x': 'https://services3.arcgis.com:443/x',
             'https://a.example.gov/y': 'https://b.example.gov/private/y',
             'https://a.example.gov/z': 'https://c.example.gov/z'}
 

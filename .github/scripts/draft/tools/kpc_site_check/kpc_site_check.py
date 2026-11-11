@@ -8,6 +8,9 @@ information notice on the page, does the card fit the phone, any console errors.
 The steps for each tool are data (tests/recipes.json), not code. It never edits the site.
 """
 import argparse, asyncio
+import importlib.util as _ilu, os as _os   # noqa: E402  (owner rule, 2026-11-10: the club's one host check, before any request)
+_hs = _ilu.spec_from_file_location("kpc_host_rules", _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "..", "..", "kpc_host_rules.py"))
+_hr = _ilu.module_from_spec(_hs); _hs.loader.exec_module(_hr); _hr.install()
 
 __version__ = "0.1.0"
 TOOL = "site-check"

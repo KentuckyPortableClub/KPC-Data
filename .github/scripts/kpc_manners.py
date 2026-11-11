@@ -22,6 +22,30 @@ def _load_host_rules():
 
 HR = _load_host_rules()   # no fallback: a fetch module without the host rules must not run
 
+
+class HostRuleRefused(urllib.error.URLError):
+    """A redirect hop onto a host the host rules refuse (or from https to a plain address): it is never requested."""
+
+
+def _install_hop_check():
+    """Nov 10: every redirect hop of every urllib request in this process goes through the host rules BEFORE it is followed."""
+    H = urllib.request.HTTPRedirectHandler
+    if getattr(H.redirect_request, '_kpc_hop_check', False): return
+    orig = H.redirect_request
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        newurl = urllib.parse.urljoin(req.full_url, newurl)
+        ok, why = HR.host_ok(newurl)
+        if ok and urllib.parse.urlsplit(req.full_url).scheme.lower() == 'https' and urllib.parse.urlsplit(newurl).scheme.lower() != 'https':
+            ok, why = False, f'{newurl[:80]}: redirect from https to a plain address'
+        if not ok: raise HostRuleRefused(f'redirect refused: {why}')
+        return orig(self, req, fp, code, msg, headers, newurl)
+    redirect_request._kpc_hop_check = True
+    H.redirect_request = redirect_request
+
+
+_install_hop_check()
+
 SITE = 'https://kentuckyportableclub.github.io/KPC-Links/'
 # Oct 29 9:34 + 9:37 AM (Brandon, CLAUDE.md 'KEYED GOVERNMENT APIS'): the API key is permission for ONLY these two documented API
 # paths (never their web pages), well under their rate limits; robots.txt is obeyed everywhere else (ArcGIS REST as before).
@@ -271,6 +295,9 @@ class Manners:
                     time.sleep(min(max(ra, 20 * (attempt + 1)), max(120, cd))); continue
                 if e.code == 416 and rng: return self.get(u, None, timeout, head, accept)
                 return e.code, ehd, b'', u
+            except HostRuleRefused as e:   # a redirect hop the host rules refuse: no request to it, no strike, never retried
+                self.stat['host_rule'] += 1; self.need(u, 'host-rule', str(e.reason))
+                return 'host-rule', {}, b'', u
             except (urllib.error.URLError, TimeoutError, OSError, ValueError) as e:
                 self.strike[h] = self.strike.get(h, 0) + 1; self.stat['strikes'] += 1; self.stat['errors'] += 1
                 if self.strike[h] >= self.strikes_out: self.dead[h] = time.time() + self.rest_s; return 'rest', {}, b'', u

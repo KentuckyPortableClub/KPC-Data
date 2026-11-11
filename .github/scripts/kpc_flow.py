@@ -87,7 +87,7 @@ def main():
     # the readers run inside other bots that do not always save the seen list: a file is also read when its bot ran AFTER the file came
     USES = {'camping': ['kpc-camp-layers', 'kpc-workshop'], 'parking': ['kpc-us-access'], 'docs': ['kpc-docs-merge'], 'convert': ['kpc-convert-layers'],
             'external-sources': ['kpc-collector'], 'world-sources': ['kpc-collector', 'kpc-convert-layers'], 'questions': ['kpc-waiting-room'],
-            'hours': ['kpc-waiting-room', 'kpc-trial-outside-ky'], 'acres': ['kpc-tool-trial'], 'portals': ['kpc-collector'], 'hardlook': ['kpc-hardlook']}
+            'hours': ['kpc-waiting-room'], 'acres': ['kpc-tool-trial'], 'portals': ['kpc-collector'], 'hardlook': ['kpc-hardlook']}
     _last = {}
 
 

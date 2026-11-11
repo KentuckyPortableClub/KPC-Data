@@ -8,6 +8,7 @@ time, stream link + the ready reply staff paste as themselves). Never repeats a 
 Missing secret / quota used up / any error = a notice, never a red run. DRY_RUN=1 prints instead of posting."""
 import datetime as dt, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
 from zoneinfo import ZoneInfo
+import kpc_host_rules; kpc_host_rules.install()
 
 KEY = os.environ.get('YOUTUBE_API_KEY', '').strip()
 HOOK = os.environ.get('KPC_DISCORD_STAFF_WEBHOOK', '').strip()

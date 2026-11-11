@@ -3,23 +3,19 @@ name: KPC 2-fer chain after a new key (hidden)
 #   1 KPC-Links 'KPC US answer key' (its own nightly; builds ALL states on new rules: links-04)
 #   2 KPC-Links 'KPC key check (after a key build)' (links-01, kpc-key-postcheck.yml; workflow_run on the 3 keys)
 #   3 KPC-Data 'KPC copy site data to KPC-Data (Step B3)' (its own hourly cron) brings the build over, HELD in data/waiting/in
-#   4 THIS workflow (workflow_run on 3): kpc_fers_chain_plan.py picks the areas of a NEW current-rules, post-checked build
+#   4 THIS workflow (dispatched by 3, only when it copied a key): kpc_fers_chain_plan.py picks the areas of a NEW current-rules, post-checked build
 #     (map-audit gate KPC_FERS_CHAIN_GATE: default OFF for testing, it turns ON by itself and stays on: kpc_fers_chain_gate.py;
 #     per Brandon via Super Head Bot (relayed), 5:48 AM CST Nov 4)
 #   5 kpc-fers-line.yml (workflow_call, key=build): its 'preline' job = the 2-fer pre-line check (Brandon, directly (Mapping chat),
 #     4:52 AM CST Nov 4); HOLD = the line does not build;
 #     GO = fetcher -> worker -> checker; the checker diverts the 2-fers into data/waiting/in (HELD, kpc_waiting_room.py divert)
-#   6 kpc-fers-postline.yml (workflow_run on this workflow + the line): the read-only post-line check for Quality
+#   6 kpc-fers-postline.yml (dispatched by this workflow; workflow_run on a stand-alone line): the read-only post-line check for Quality
 # Nothing here releases or publishes: no kpc_release_approved.py, no approved.json, no KPC-Links kpc-fers-publish.yml (and it could
 # not: that workflow is in another repo and this token cannot start it). The release hold stays: a person (Brandon / KZ4CP) signs off first.
 on:
-  workflow_run:
-    workflows: ['KPC copy site data to KPC-Data (Step B3)']
-    types: [completed]
-  # Nov 4 PM fix bundle item 3 (Brandon's yes relayed via Super Head Bot 4:53 PM CST): a B3 run that a bot started (the watchdog's
-  # restart, any dispatch with the GITHUB_TOKEN) fires NO workflow_run, so B3's own 'chain' job starts this right after its copy
-  # (kpc-copy-from-links.yml). No new cron. A double start is harmless: the concurrency group queues it and
-  # kpc_fers_chain_plan.py skips areas already in data/status/fers-chain/seen.json.
+  # owner rule, 2026-11-10: dispatch only (no workflow_run). kpc-copy-from-links.yml's 'chain' job starts this once per copy that
+  # really copied a key. A double start is harmless: the concurrency group queues it and kpc_fers_chain_plan.py skips areas
+  # already in data/status/fers-chain/seen.json.
   workflow_dispatch:
 permissions:
   contents: write
@@ -29,7 +25,6 @@ concurrency:
   cancel-in-progress: false
 jobs:
   plan:
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     outputs:
@@ -104,11 +99,11 @@ jobs:
       next: ''
       key: build
       force: 'no'
-  # Nov 4 PM fix bundle item 3: a dispatched chain run (above) fires no workflow_run either, so the post-line check for Quality is
-  # started here; a chain started by workflow_run still gets it from kpc-fers-postline.yml's own workflow_run, so never twice.
+  # owner rule, 2026-11-10: the post-line check for Quality is started here, once per chain run (kpc-fers-postline.yml does not
+  # listen to this workflow).
   postline:
     needs: [plan, line]
-    if: ${{ always() && github.event_name == 'workflow_dispatch' && needs.plan.outputs.run == 'yes' }}
+    if: ${{ !cancelled() && needs.plan.outputs.run == 'yes' }}
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:

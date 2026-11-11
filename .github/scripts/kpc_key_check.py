@@ -12,6 +12,7 @@ Never fails.
 PR1 (Nov 2): KPC-Data keeps its OWN copy of this file (it used to download it from KPC-Links main on every run) and runs it
 in its own job, separate from the YouTube comments bot. Keep the two copies the same when one is changed."""
 import datetime as dt, json, os, pathlib, sys, urllib.error, urllib.parse, urllib.request
+import kpc_host_rules; kpc_host_rules.install()
 
 NOW = dt.datetime.now(dt.timezone.utc)
 OUT = os.environ.get('KEYS_OUT', 'checkup-out/keys.json')
