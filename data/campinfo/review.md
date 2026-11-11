@@ -30,7 +30,7 @@ Updated 2026-11-11. Every fact in <area>.json carries its source url, read date 
 | US-RI | 5 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 2 | 4 | 0 |
 | US-MA | 36 | 25 | 8 | 0 | 0 | 0 | 0 | 0 | 3 | 18 | 28 | 0 |
 | US-VT | 280 | 105 | 9 | 0 | 0 | 0 | 146 | 0 | 20 | 103 | 125 | 0 |
-| US-NH | 79 | 41 | 24 | 0 | 0 | 0 | 12 | 0 | 2 | 3 | 43 | 0 |
+| US-NH | 79 | 41 | 24 | 0 | 0 | 2 | 12 | 0 | 0 | 3 | 43 | 0 |
 | US-ME | 25 | 0 | 4 | 0 | 7 | 0 | 0 | 1 | 13 | 0 | 20 | 0 |
 | US-MD | 77 | 40 | 30 | 1 | 0 | 0 | 0 | 0 | 6 | 10 | 43 | 0 |
 | US-DE | 24 | 2 | 0 | 0 | 22 | 0 | 0 | 0 | 0 | 0 | 24 | 0 |
@@ -84,7 +84,7 @@ Updated 2026-11-11. Every fact in <area>.json carries its source url, read date 
 - washington.goingtocamp.com: 15 campgrounds · host resting (robots.txt could not be read: next run)
 - midnrreservations.com: 12 campgrounds · host resting (robots.txt could not be read: next run)
 - reserveohio.com: 12 campgrounds · host resting (robots.txt could not be read: next run)
-- www.fs.usda.gov: 6 campgrounds · host resting
+- www.fs.usda.gov: 8 campgrounds · host resting
 - www.reservecalifornia.com: 5 campgrounds · host resting (robots.txt could not be read: next run)
 - apps.web.maine.gov: 4 campgrounds · host resting (robots.txt could not be read: next run)
 - getoutside.idaho.gov: 4 campgrounds · host resting (robots.txt could not be read: next run)

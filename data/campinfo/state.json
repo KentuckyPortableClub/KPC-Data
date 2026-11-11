@@ -665,8 +665,8 @@
     "no_page": 12,
     "not_official": 0,
     "ok": 41,
-    "other": 2,
-    "resting": 0,
+    "other": 0,
+    "resting": 2,
     "robots": 0,
     "with_booking": 43,
     "with_elevation": 0,
@@ -675,7 +675,7 @@
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-04"
+   "updated": "2026-11-11"
   },
   "US-NJ": {
    "camps": 23,
@@ -1145,7 +1145,7 @@
   "US-NC": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-ND": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-NE": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
-  "US-NH": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-NH": "FCC listAsOfDates: robots.txt says no",
   "US-NJ": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-NM": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-NV": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1434,9 +1434,9 @@
     "carriers": null,
     "files": [],
     "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "status": "FCC listAsOfDates: robots.txt says no"
    },
-   "read": "2026-11-04"
+   "read": "2026-11-11"
   },
   "US-NJ": {
    "cell": {
@@ -2576,17 +2576,13 @@
  },
  "last": {
   "areas": [
-   "US-MN"
+   "US-NH"
   ],
   "fcc_token": true,
   "manners": {
-   "dropped_queued": 323,
+   "dropped_queued": 78,
    "errors": 0,
    "for_person_urls": [
-    [
-     "https://reservemn.usedirect.com/robots.txt",
-     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from reservemn.usedirect.com"
-    ],
     [
      "https://epqs.nationalmap.gov/robots.txt",
      "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from epqs.nationalmap.gov"
@@ -2597,25 +2593,25 @@
     ]
    ],
    "host_rule": 0,
-   "requests": 72,
+   "requests": 82,
    "rested": 2,
-   "robots": 3,
+   "robots": 2,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 231,
+   "camps": 79,
    "elevations": 0,
    "errors": 0,
    "needs_browser": 0,
-   "needs_key": 46,
-   "no_page": 55,
+   "needs_key": 24,
+   "no_page": 12,
    "not_official": 0,
-   "ok": 34,
-   "pages_read": 68,
+   "ok": 41,
+   "pages_read": 79,
    "resting": 2,
    "ridb_calls": 0,
-   "robots": 94,
+   "robots": 0,
    "skipped_fresh": 0
   },
   "when": "2026-11-11"
