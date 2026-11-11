@@ -5,14 +5,14 @@
    "verdict": "FAIL",
    "bar": "Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.",
    "measured": {
-    "rows": 8496,
+    "rows": 8543,
     "parks": 3853,
     "parks_with_hit": 493,
-    "SURE": 320,
-    "LIKELY": 515,
-    "UNLIKELY_evidence": 2980,
+    "SURE": 321,
+    "LIKELY": 516,
+    "UNLIKELY_evidence": 2987,
     "strong": 176,
-    "already_approved": 494,
+    "already_approved": 497,
     "open_without_whynot": 456,
     "non_official_candidates": 1,
     "unlikely_as_questions": 0,
@@ -31,11 +31,11 @@
     },
     {
      "reason": "evidence: UNLIKELY only : name: none word in common",
-     "parks": 1278
+     "parks": 1282
     },
     {
      "reason": "evidence: UNLIKELY only : pin not inside nor within m with a name match",
-     "parks": 670
+     "parks": 671
     },
     {
      "reason": "blocked: host resting",
@@ -43,7 +43,7 @@
     },
     {
      "reason": "already approved: already approved",
-     "parks": 494
+     "parks": 497
     }
    ],
    "examples": [
@@ -108,19 +108,19 @@
     "the finder bars need the side-by-side run (95% re-found, +25% parks) and a 40-row sample (85% YES)"
    ],
    "details": {
-    "rows": 8496,
-    "found_or_candidate": 809,
-    "blocked": 1242,
+    "rows": 8543,
+    "found_or_candidate": 811,
+    "blocked": 1277,
     "hit_rate": 0.095,
     "bands": {
      "STRONG": 176,
-     "WEAK": 619,
+     "WEAK": 621,
      "CONFLICT": 14
     },
     "tiers": {
      "T-1": 52,
      "T-2": 273,
-     "T-3": 385,
+     "T-3": 387,
      "T-4": 47,
      "T-6": 52
     },
@@ -296,11 +296,11 @@
   "outline": {
    "pass1": {
     "error": 430,
-    "already approved": 494,
+    "already approved": 497,
     "found": 189,
-    "candidate": 697,
-    "evidence": 2926,
-    "blocked": 1242,
+    "candidate": 699,
+    "evidence": 2933,
+    "blocked": 1277,
     "not found": 2514,
     "pin only": 4
    },
