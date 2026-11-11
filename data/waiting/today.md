@@ -74,7 +74,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-08 | 3 | data/fers/US-MS.json | HOLD | F-2 candidates 12 -> 8 (over 30% change); F-2 only 8 of 12 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-K known 2-fer missing: US-0642 + US-4560; F-K known 2-fer |
 | 2026-11-08 | 3 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
 | 2026-11-08 | 3 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
-| 2026-11-09 | 2 | data/docs/US-IN.json | HOLD | F-D3 8 of 20 re-tested links dead, e.g. https://www.in.gov/dA/f54f39eab4/monroe_camp_fairfax_sra.pdf?language_ |
+| 2026-11-09 | 2 | data/docs/US-IN.json | HOLD | F-D3 5 of 20 re-tested links dead, e.g. https://www.in.gov/dA/e9adf9e3cb/fo-selmier-state-forest-trail-map.pdf |
 | 2026-11-09 | 2 | data/docs/US-MS.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/tupe/learn/management/lawsandpolicies.htm |
 | 2026-11-09 | 2 | data/fers/CA-AB.json.gz | HOLD | F-2 only 27 of 37 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 4 new candidate pairs since the live file (over 10% of 37): a person looks at them first, e.g. C |
 | 2026-11-09 | 2 | data/fers/CA-NB.json.gz | HOLD | F-2 small area: all 2 live candidate pair(s) gone |
