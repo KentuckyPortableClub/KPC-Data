@@ -15,67 +15,52 @@
     "fit_m": 0.6,
     "fit_loo_m": null,
     "n_points": 0,
-    "method": "boundary by Lab k-means (cluster4 Lab=(113,205,83), filled, ~45 ac, 16 m from the pin, 1 shape(s) in this colour); placed by GeoPDF (ISO 32000 /GPTS); Douglas-Peucker 3 m",
+    "method": "boundary by Lab k-means (cluster5 Lab=(212,70,208), filled, ~25 ac, 149 m from the pin, 2 shape(s) in this colour); placed by GeoPDF (ISO 32000 /GPTS); Douglas-Peucker 3 m",
     "model": "GeoPDF",
     "source_url": "https://www.catfishcreek.ca/wp-content/uploads/2016/10/Calton-Swamp-Wetland-Complex-trail-Map.pdf",
     "page": 1,
     "basemap_sources": [
      "GeoPDF (ISO 32000 /GPTS)"
     ],
-    "date": "2026-11-09",
-    "area_acres": 45.0,
+    "date": "2026-11-11",
+    "area_acres": 24.8,
     "flags": [
-     "boundary colour chosen at the POTA pin (1 of 1 shapes in that colour are at the pin)",
-     "placed by the map's own coordinates (GeoPDF (ISO 32000 /GPTS)), no basemap matching"
+     "boundary colour chosen at the POTA pin (1 of 2 shapes in that colour are at the pin)",
+     "placed by the map's own coordinates (GeoPDF (ISO 32000 /GPTS)), no basemap matching",
+     "picture shows 2 shapes in the boundary colour; kept 1 (nearest the POTA pin); 1 more shape(s) in the park colour at 617 m not joined; they may be other units of this park or a neighbouring park: check by hand"
     ],
     "use_for_2fer": false,
     "official": false,
     "control_points": [],
-    "tool": "kpc_trace_picture.py 0.2.0"
+    "tool": "kpc_trace_picture.py 0.3.0"
    },
    "geometry": {
     "type": "Polygon",
     "coordinates": [
      [
       [
-       -80.8861991,
-       42.7296168
+       -80.8836672,
+       42.7240615
       ],
       [
-       -80.8863562,
-       42.720737
+       -80.8811952,
+       42.7239969
       ],
       [
-       -80.8840948,
-       42.7207243
+       -80.8813158,
+       42.7196102
       ],
       [
-       -80.8840105,
-       42.7207657
+       -80.8837318,
+       42.719592
       ],
       [
-       -80.8838125,
-       42.7289313
+       -80.883816,
+       42.7196335
       ],
       [
-       -80.8839248,
-       42.7289728
-      ],
-      [
-       -80.8853996,
-       42.7290053
-      ],
-      [
-       -80.8855399,
-       42.7290986
-      ],
-      [
-       -80.885553,
-       42.7296058
-      ],
-      [
-       -80.8861991,
-       42.7296168
+       -80.8836672,
+       42.7240615
       ]
      ]
     ]
