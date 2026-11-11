@@ -1,0 +1,40 @@
+{
+ "request": "requests/10-auto-CA-4508.json",
+ "id": "10-auto-CA-4508",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "CA-4508",
+  "name": "Shikatehawk Stream Protected Area",
+  "agency": "government agency (gnb.ca)",
+  "url": "https://www2.gnb.ca/content/dam/gnb/Departments/nr-rn/pdf/ProtectedAreas-ZonesNaturellesProtegees/Class2/ShikatehawkStream.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-11 12:18Z",
+ "results": [
+  {
+   "url": "https://www2.gnb.ca/content/dam/gnb/Departments/nr-rn/pdf/ProtectedAreas-ZonesNaturellesProtegees/Class2/ShikatehawkStream.pdf",
+   "map_url": "https://www2.gnb.ca/content/dam/gnb/Departments/nr-rn/pdf/ProtectedAreas-ZonesNaturellesProtegees/Class2/ShikatehawkStream.pdf",
+   "saved": [
+    "maps/CA-4508_shikatehawk-stream-protected-are.jpg"
+   ],
+   "bytes": 286965,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 5,
+ "manners": {
+  "requests": 2,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "host_rule": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 1 read OK"
+}
