@@ -1,19 +1,37 @@
 {
  "us-key": {
-  "build": "US-42504172086",
+  "build": "US-42956018092",
+  "first_seen": "2026-11-11 06:13 UTC",
+  "areas": {
+   "midwest": {
+    "fp": "e170a500904f1d3b",
+    "planned": "2026-11-11 06:13 UTC",
+    "tries": 1
+   },
+   "southcentral": {
+    "fp": "4d96b631be5ad8af",
+    "planned": "2026-11-11 06:13 UTC",
+    "tries": 1
+   },
+   "mountain": {
+    "fp": "d4d667acc12bcccc",
+    "planned": "2026-11-11 06:13 UTC",
+    "tries": 1
+   }
+  },
+  "waiting": {
+   "southeast": "not a full build on the current rules for: US-FL (failed in this build)",
+   "northeast": "the post-key check lists parks with a worse grade / outline -> pin in US-NH US-PA: a person checks them first",
+   "pacific": "the post-key check lists parks with a worse grade / outline -> pin in US-WA: a person checks them first",
+   "oh": "next start (at most 3 areas at a time)",
+   "mi": "the post-key check lists parks with a worse grade / outline -> pin in US-MI: a person checks them first",
+   "ut": "next start (at most 3 areas at a time)"
+  },
   "ran": [
-   "southeast",
    "midwest",
-   "northeast",
    "southcentral",
-   "mountain",
-   "pacific",
-   "oh",
-   "mi",
-   "ut"
-  ],
-  "waiting": {},
-  "first_seen": "2026-11-08 20:04 UTC"
+   "mountain"
+  ]
  },
  "ca-key": {
   "build": "CA-42689962177",
