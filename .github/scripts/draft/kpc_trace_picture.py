@@ -74,10 +74,18 @@ try:   # Nov 2 review: tracer limits (switches + defaults in kpc_trace_limits.py
 except Exception:  # noqa: BLE001
     TL = None
 HONOR_IMAGE = TL is not None and TL.on("KPC_TRACE_HONOR_IMAGE")
+try:
+    import kpc_trace_edges as LE   # Nov 11: line agreement (numpy + OpenCV only)
+except ImportError:  # noqa
+    LE = None
 CHANCE_RATIO = TL.num("KPC_TRACE_CHANCE_RATIO") if TL else 1.5
 CHANCE_MARGIN = TL.num("KPC_TRACE_CHANCE_MARGIN") if TL else 2.0
+# Nov 11: the match score = junction score + LINE_WEIGHT x line-agreement z (kpc_trace_edges.py), measured the same way on the real
+# basemap and on each rotated decoy; the better-than-chance gate above is unchanged. 0 = the junction score alone (the Nov 2 behaviour).
+LINE_WEIGHT = (TL.num("KPC_TRACE_LINE_WEIGHT") if TL else 0.25) if LE is not None else 0.0
+LINE_MIN_Z = 2.0          # Nov 11 (a NEW gate, stricter only): when the picture box holds line evidence, a fit whose basemap lines do not sit on the picture's lines is refused
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"   # Nov 11: line agreement + TIGERweb water (a cached basemap of 0.2.0 is re-read once)
 
 # ---------------------------------------------------------------- hard rules
 BANNED_ORG_WORDS = ("openstreetmap", "google", "alltrails", "gaiagps", "strava", "ioverlander",
@@ -102,7 +110,7 @@ AREA_RATIO_RANGE = (0.2, 5.0)  # Step 5 / Nov 6: vs known acreage -> NEEDS A PER
 
 # Rule 6: only these basemap hosts may ever be queried.
 ALLOWED_BASEMAP_HOSTS = {
-    "tigerweb.geo.census.gov",   # US Census TIGERweb (roads)
+    "tigerweb.geo.census.gov",   # US Census TIGERweb (roads; Nov 11: also its hydrography, the water lines and shores)
     "hydro.nationalmap.gov",     # USGS NHD
     "gis.blm.gov",               # BLM CadNSDI PLSS
     "geo.statcan.gc.ca",         # Canada National Road Network (NRN)
@@ -111,6 +119,10 @@ FORBIDDEN_HOST_WORDS = ("openstreetmap", "osm", "overpass", "google", "googleapi
                         "mapbox", "bing", "here.com", "arcgisonline")
 
 TIGER = "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
+# Nov 11: the water lines and lake / river shores from the Census (same host as the roads, same robots.txt check). hydro.nationalmap.gov
+# (NHD) says no to bots (robots.txt; Quality, Nov 9) and is still only asked through the same robots check as before: never another way.
+TIGER_HYDRO = "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Hydro/MapServer"
+TIGER_HYDRO_LAYERS = (("water", "linear hydrography"), ("shore", "areal hydrography"))   # the service's own names (layers 0 and 1 today), found by name; a "... Labels" layer is never read
 NHD = "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer"
 PLSS = "https://gis.blm.gov/arcgis/rest/services/Cadastral/BLM_Natl_PLSS_CadNSDI/MapServer"
 NRN = "https://geo.statcan.gc.ca/geo_wa/rest/services/NRN-RRN/nrn_rrn/MapServer"
@@ -124,7 +136,8 @@ REPORT_FIELDS = ["ref", "status", "fit_m", "n_points", "why",
                  "fit_loo_m", "model", "n_search", "decoy_best", "search_tol_m", "flags", "source_url", "page", "date",
                  "source_type", "source_org", "notes",
                  "acres_traced", "acres_known", "ceiling_acres", "edge_share", "pin_dist_m",   # Nov 7: every gate's input in the report
-                 "geo_m_per_px", "geo_page_km2", "geo_lat_down", "pin_px"]
+                 "geo_m_per_px", "geo_page_km2", "geo_lat_down", "pin_px",
+                 "line_share", "line_z", "decoy_line_z", "score_points"]   # Nov 11: the line-agreement inputs of the chance gate
 
 
 def log(msg: str) -> None:
@@ -442,6 +455,31 @@ def fetch_basemap(http: PoliteHttp, ref: str, lat: float, lon: float, half_km: f
         log(f"   NHD flowlines: {len(rivers)}")
         if "water" not in skipped:
             sources.append("USGS NHD flowlines (large scale)")
+        water, shore = [], []
+        try:   # Nov 11: TIGERweb hydrography; a failure here is logged and the map goes on with roads (it never stops a map)
+            info = http.get_json(TIGER_HYDRO, {"f": "json"})
+            ids = {}
+            for lay in info.get("layers") or []:
+                nm_ = str(lay.get("name") or "").lower()
+                for kind_, want in TIGER_HYDRO_LAYERS:
+                    if want in nm_ and 'label' not in nm_ and kind_ not in ids:
+                        ids[kind_] = lay.get("id")
+            for kind_, _w in TIGER_HYDRO_LAYERS:
+                if ids.get(kind_) is None:
+                    log(f"   TIGERweb hydrography: no '{_w}' layer listed")
+                    continue
+                fs = ask("census water", f"{TIGER_HYDRO}/{ids[kind_]}")
+                log(f"   TIGERweb {_w}: {len(fs)}")
+                (water if kind_ == "water" else shore).extend(fs)
+        except RuntimeError as e:
+            if str(e).startswith("robots:"):
+                if "census water" not in skipped:
+                    skipped.append("census water")
+                log(f"   census water source skipped (robots): {e}")
+            else:
+                log(f"   TIGERweb hydrography not read ({str(e)[:160]}): matched without it")
+        if water or shore:
+            sources.append("US Census TIGERweb hydrography (water lines, shores)")
         plss = ask("land survey", f"{PLSS}/2")
         log(f"   BLM PLSS sections: {len(plss)}")
         if plss:
@@ -449,6 +487,9 @@ def fetch_basemap(http: PoliteHttp, ref: str, lat: float, lon: float, half_km: f
         for kind, fs, pts in (("road", roads, line_network_nodes(roads)),
                               ("stream", rivers, line_network_nodes(rivers)),
                               ("road-stream", [], line_crossings(roads, rivers)),
+                              ("water", water, line_network_nodes(water)),
+                              ("shore", shore, []),
+                              ("road-water", [], line_crossings(roads, water + shore)),
                               ("plss", plss, polygon_corners(plss))):
             for f in fs:
                 g = f.get("geometry")
@@ -1017,7 +1058,10 @@ def search_tol(z, cap):
     return max(20.0, min(cap, 8.0 * abs(z)))
 
 
-def match(P, Q, c_img, prior: Prior, tol_cap):
+def match(P, Q, c_img, prior: Prior, tol_cap, line=None):
+    """line: None, or f(z, t) -> (share, z_score, n) (kpc_trace_edges.LineEvidence.score on this basemap's line samples). With it, each
+    refined candidate is scored junctions + LINE_WEIGHT x line z (the same on the real basemap and on a decoy); 'score_points' keeps the
+    junction part alone."""
     if len(P) < MIN_POINTS or len(Q) < MIN_POINTS:
         return None
     tree = KDTree(Q)
@@ -1052,8 +1096,9 @@ def match(P, Q, c_img, prior: Prior, tol_cap):
         # significance: inliers above what chance would give at this radius
         lam = len(P) * rho * math.pi * tol_m ** 2
         score = (len(pairs) - lam) / math.sqrt(lam + 1.0)
+        ls, lz, ln_ = line(z2, t2) if (line is not None and LINE_WEIGHT > 0) else (0.0, 0.0, 0)
         cand = dict(pairs=pairs, z=z2, t=t2, n=len(pairs), rms=rms, votes=votes, tol=tol_m,
-                    chance=lam, score=score)
+                    chance=lam, score=score + LINE_WEIGHT * lz, score_points=score, line_share=ls, line_z=lz, line_n=ln_)
         if best is None or (cand["score"], -cand["rms"]) > (best["score"], -best["rms"]):
             best = cand
     return best
@@ -1425,19 +1470,40 @@ def process_one(ref, row, base: Path, out: Path, pins, http, args):
         # below the 50 m gate by construction.
         cap = args.match_tol_m
         prior_search = prior
-        best = match(P, Q, c_img, prior, cap)
+        # Nov 11: line agreement - the basemap's road and water lines (metres) against the picture's own line segments in the search box
+        line_ev, LS = None, np.zeros((0, 2))
+        if LE is not None and LINE_WEIGHT > 0:
+            lm = []
+            for kind_, ln in bm.get("lines") or []:
+                if kind_ in LE.LINE_KINDS and len(ln) >= 2:
+                    ll = np.array(ln, float); xm, ym = proj.to_m(ll[:, 0], ll[:, 1]); lm.append(np.c_[xm, ym])
+            lm = LE.clip_lines(lm, 1.2 * half_km * 1000.0)   # a big lake / long river: only its part in the search box
+            if lm:
+                step = max(1.0, smin * LE.CELL_PX / 2.0)
+                LS = LE.sample_lines(lm, step)
+                if len(LS) > 400000:   # a very dense box: coarser samples (still under one per cell at the largest scale)
+                    LS = LE.sample_lines(lm, step * len(LS) / 400000.0)
+                line_ev = LE.LineEvidence(img.shape, segs, roi=roi, exclude=row.get("exclude_px"))
+
+        def _line_fn(samples):
+            return (lambda z_, t_: line_ev.score(z_, t_, samples)) if line_ev is not None and len(samples) else None
+        best = match(P, Q, c_img, prior, cap, line=_line_fn(LS))
         tol_m = best["tol"] if best else search_tol(math.sqrt(smin * smax), cap)
         res["search_tol_m"] = round(tol_m, 1)
         # decoy test: same matcher against the basemap rotated 90/180/270 deg about the pin
-        decoy_best, decoy_score = 0, 0.0
-        for ang in (90, 180, 270):
+        decoy_best, decoy_score, decoy_lz = 0, 0.0, 0.0
+        for ang in (90, 180, 270):   # Nov 11: the decoy's lines are rotated with its points, so a decoy gets the same line credit a real fit would
             rot = np.exp(1j * math.radians(ang)) * (Q[:, 0] + 1j * Q[:, 1])
-            d = match(P, np.c_[rot.real, rot.imag], c_img, prior_search, cap)
+            d = match(P, np.c_[rot.real, rot.imag], c_img, prior_search, cap,
+                      line=_line_fn(LE.rotate(LS, ang) if len(LS) else LS))
             if d and d["score"] > decoy_score:
-                decoy_best, decoy_score = d["n"], d["score"]
+                decoy_best, decoy_score, decoy_lz = d["n"], d["score"], d.get("line_z", 0.0)
         res["decoy_best"] = f"{decoy_best} (score {decoy_score:.1f})"
         res["n_search"] = f"{best['n']} (score {best['score']:.1f}, chance {best['chance']:.1f})" if best else 0
         real_score = best["score"] if best else 0.0
+        if line_ev is not None:
+            res.update(line_share=round(best["line_share"], 3) if best else "", line_z=round(best["line_z"], 1) if best else "",
+                       decoy_line_z=round(decoy_lz, 1), score_points=round(best["score_points"], 1) if best else "")
 
         # ---- debug image 2: picture candidates, inliers and basemap drawn back on the picture
         im2 = img.copy()
@@ -1475,7 +1541,7 @@ def process_one(ref, row, base: Path, out: Path, pins, http, args):
                     continue
                 xm, ym = proj.to_m(ll[:, 0], ll[:, 1])
                 pix = inv(np.c_[xm, ym])
-                col = {"road": (0, 0, 255), "stream": (255, 0, 0), "plss": (0, 160, 0)}.get(kind_, (0, 0, 255))
+                col = {"road": (0, 0, 255), "stream": (255, 0, 0), "water": (255, 0, 0), "shore": (255, 120, 0), "plss": (0, 160, 0)}.get(kind_, (0, 0, 255))
                 draw_poly(im2, pix, col, 1, closed=False)
             for k, (a, b) in enumerate(best["pairs"]):
                 x, y = P[a]
@@ -1499,10 +1565,13 @@ def process_one(ref, row, base: Path, out: Path, pins, http, args):
             if real_score < max(CHANCE_RATIO * decoy_score, decoy_score + CHANCE_MARGIN):   # Nov 2: tunable, today 1.5 / 2.0
                 why.append(f"match not better than chance ({n_search} points, score {real_score:.1f} vs "
                            f"{decoy_best} points, score {decoy_score:.1f} on a rotated decoy basemap)")
+            if best is not None and best.get("line_n", 0) >= (LE.MIN_SAMPLES if LE else 1) and best.get("line_z", 0.0) < LINE_MIN_Z:
+                why.append(f"the basemap's roads and water do not sit on the picture's lines (line z {best['line_z']:.1f}, "
+                           f"{100 * best['line_share']:.0f}% on a line; need z >= {LINE_MIN_Z:.0f})")
         status = "NO FIT" if why else "DRAWN"
         put(im2, f"{ref} {status}: n={n} fit_m={res['fit_m']} loo={res['fit_loo_m']} score={real_score:.1f} decoy={decoy_score:.1f}", 30,
             (0, 120, 0) if status == "DRAWN" else (0, 0, 255))
-        put(im2, "cyan=picture candidates  green=matched  red=TIGER roads  blue=NHD streams (back-projected)", 60)
+        put(im2, "cyan=picture candidates  green=matched  red=TIGER roads  blue=water / shores (back-projected)", 60)
         _dbg_write(dbg / f"{sref}_2_controlpoints.jpg", im2)
         if why:
             res.update(status="NO FIT", why="; ".join(why), flags="; ".join(flags))
@@ -1760,6 +1829,10 @@ def picture_selftest():
         if not (AREA_RATIO_RANGE == (TL.PICTURE_ACRES_LO, TL.PICTURE_ACRES_HI) or AREA_RATIO_RANGE == (0.2, 5.0)):
             problems.append('AREA_RATIO_RANGE must stay 0.2..5')
     problems += _http_selftest()
+    if LE is None:
+        problems.append('kpc_trace_edges.py must import')
+    elif LE.selftest() != 0:
+        problems.append('kpc_trace_edges.py selftest failed')
     if TL is not None:      # Nov 7 gates (kpc_trace_limits.hold_reasons): a GeoPDF residual / pin outside / clipped / oversize trace is held
         if not TL.hold_reasons(geopdf_why=["geopdf residual: 6580 m is over 100 m"], traced_acres=10, park_type="State Park"):
             problems.append("a bad GeoPDF residual must be held as NEEDS A PERSON")

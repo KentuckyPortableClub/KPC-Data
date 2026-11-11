@@ -66,9 +66,18 @@ jobs:
           pip install -q -r .github/scripts/draft/requirements.txt pypdf 2>&1 | tail -1
           # Nov 6: always run the sharp page + GeoPDF step BEFORE the tracer; do not trace without it
           set +e
+          # Nov 11 (KPC owner, 2026-11-11): the tracer's offline checks first (line agreement, TIGERweb water, gates unchanged); no trace if they fail
+          python3 .github/scripts/draft/kpc_trace_picture.py --selftest > /tmp/kpc-trace-selftest.txt 2>&1 && python3 .github/scripts/draft/dev/line_score_test.py >> /tmp/kpc-trace-selftest.txt 2>&1
+          ST_RC=$?
           python3 .github/scripts/draft/kpc_picture_geo.py ../pm /tmp/kpc-pdf
           GEO_RC=$?
-          if [ "$GEO_RC" != 0 ]; then
+          if [ "$ST_RC" != 0 ]; then
+            tail -20 /tmp/kpc-trace-selftest.txt
+            echo "::error title=Tracer offline checks::failed (exit $ST_RC); tracer not started"
+            echo "Tracer offline checks - failed (exit $ST_RC); tracer not started" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"
+            cp /tmp/kpc-trace-selftest.txt ../out/picture-trace/run-log.txt
+            E=$ST_RC
+          elif [ "$GEO_RC" != 0 ]; then
             echo "::error title=kpc_picture_geo.py::stopped with an error (exit $GEO_RC); tracer not started (Nov 6: geo is required before trace)"
             echo "kpc_picture_geo.py - stopped with an error (exit $GEO_RC); tracer not started" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"
             echo "picture geo failed (exit $GEO_RC); tracer not started" > ../out/picture-trace/run-log.txt

@@ -8,6 +8,8 @@ Switches (env; the picture tracer also has command-line flags):
                              not the first <ref>_*.jpg on disk. 0 = old first-jpg pick.
   KPC_TRACE_ACRES_FILE    '' an official acres list ({ref: acres} or {ref: {acres}}; data/acres.json) for rows with no acres.
   KPC_TRACE_CHANCE_RATIO  1.5 and KPC_TRACE_CHANCE_MARGIN 2.0: the 'better than chance' gate.
+  KPC_TRACE_LINE_WEIGHT   0.25 (Nov 11) weight of the line-agreement z in the match score (kpc_trace_edges.py), real and decoy alike.
+                          0 = the junction score alone (the Nov 2 behaviour).
   KPC_PARCEL_ADJ_M        30  (Nov 6 default; was 200) parcel adjacency in metres. 200 jumps roads onto the neighbour.
   KPC_PARCEL_GROW_CAP     1.25 (Nov 6 default; was 0) stop growing at this many times the official acres; 0 = no cap.
   KPC_PARCEL_SUBTRACT     1  (Nov 6 default; was 0) cut other POTA parks' official outlines out of the result.
@@ -16,7 +18,7 @@ Switches (env; the picture tracer also has command-line flags):
 """
 import glob, json, os, re
 
-DEFAULTS = {'KPC_TRACE_HONOR_IMAGE': '1', 'KPC_TRACE_ACRES_FILE': '', 'KPC_TRACE_CHANCE_RATIO': '1.5', 'KPC_TRACE_CHANCE_MARGIN': '2.0',
+DEFAULTS = {'KPC_TRACE_HONOR_IMAGE': '1', 'KPC_TRACE_ACRES_FILE': '', 'KPC_TRACE_CHANCE_RATIO': '1.5', 'KPC_TRACE_CHANCE_MARGIN': '2.0', 'KPC_TRACE_LINE_WEIGHT': '0.25',
             'KPC_PARCEL_ADJ_M': '30', 'KPC_PARCEL_GROW_CAP': '1.25', 'KPC_PARCEL_SUBTRACT': '1',
             'KPC_PARCEL_PARK_MIN': '8', 'KPC_PARCEL_REQ_TIMEOUT': '30'}
 
