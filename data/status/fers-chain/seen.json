@@ -9,13 +9,13 @@
     "tries": 1
    },
    "southcentral": {
-    "fp": "4d96b631be5ad8af",
-    "planned": "2026-11-11 06:13 UTC",
+    "fp": "ecc47844f6dcf8ee",
+    "planned": "2026-11-11 21:08 UTC",
     "tries": 1
    },
    "mountain": {
-    "fp": "d4d667acc12bcccc",
-    "planned": "2026-11-11 06:13 UTC",
+    "fp": "42e9a0c0e19c9b8c",
+    "planned": "2026-11-11 21:08 UTC",
     "tries": 1
    },
    "southeast": {
@@ -27,12 +27,17 @@
     "fp": "6841f26d424691db",
     "planned": "2026-11-11 18:02 UTC",
     "tries": 1
+   },
+   "pacific": {
+    "fp": "a2d1c727fc20f77f",
+    "planned": "2026-11-11 21:08 UTC",
+    "tries": 1
    }
   },
   "waiting": {
-   "southcentral": "next start (at most 3 areas at a time)",
-   "mountain": "next start (at most 3 areas at a time)",
-   "pacific": "next start (at most 3 areas at a time)",
+   "southeast": "line started 2026-11-11 18:02 UTC: waiting for its result",
+   "midwest": "line started 2026-11-11 18:02 UTC: waiting for its result",
+   "northeast": "line started 2026-11-11 18:02 UTC: waiting for its result",
    "oh": "next start (at most 3 areas at a time)",
    "mi": "next start (at most 3 areas at a time)",
    "ut": "next start (at most 3 areas at a time)"
@@ -40,7 +45,10 @@
   "ran": [
    "southeast",
    "midwest",
-   "northeast"
+   "northeast",
+   "southcentral",
+   "mountain",
+   "pacific"
   ]
  },
  "ca-key": {
