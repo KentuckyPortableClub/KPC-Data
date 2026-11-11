@@ -1,12 +1,5 @@
 {
  "restarted": {
-  "kpc-closures.yml|2026-11-04T13:38:00+00:00": "2026-11-04T14:20+00:00 started",
-  "kpc-copy-from-links.yml|2026-11-04T13:11:00+00:00": "2026-11-04T14:20+00:00 started",
-  "kpc-eu-alerts.yml|2026-11-04T12:40:00+00:00": "2026-11-04T14:20+00:00 started",
-  "kpc-flow.yml|2026-11-04T13:46:00+00:00": "2026-11-04T14:20+00:00 started",
-  "kpc-waiting-room.yml|2026-11-04T12:42:00+00:00": "2026-11-04T14:20+00:00 started",
-  "kpc-watch.yml|2026-11-04T11:53:00+00:00": "2026-11-04T14:20+00:00 started",
-  "kpc-youtube-comments.yml|2026-11-04T13:36:00+00:00": "2026-11-04T14:20+00:00 skipped (not restarted)",
   "kpc-collector.yml|2026-11-04T15:16:00+00:00": "2026-11-04T16:41+00:00 started",
   "kpc-copy-from-links.yml|2026-11-04T16:11:00+00:00": "2026-11-04T16:41+00:00 started",
   "kpc-copy-from-links.yml|2026-11-04T17:11:00+00:00": "2026-11-04T17:53+00:00 started",
@@ -275,13 +268,21 @@
   "kpc-copy-from-links.yml|2026-11-11T13:11:00+00:00": "2026-11-11T13:53+00:00 started",
   "kpc-eu-alerts.yml|2026-11-11T12:40:00+00:00": "2026-11-11T13:53+00:00 started",
   "kpc-waiting-room.yml|2026-11-11T12:42:00+00:00": "2026-11-11T13:53+00:00 started",
-  "kpc-watch.yml|2026-11-11T11:53:00+00:00": "2026-11-11T13:53+00:00 started"
+  "kpc-watch.yml|2026-11-11T11:53:00+00:00": "2026-11-11T13:53+00:00 started",
+  "kpc-archive-rotate.yml|2026-11-11T15:27:00+00:00": "2026-11-11T16:36+00:00 started",
+  "kpc-closures.yml|2026-11-11T13:38:00+00:00": "2026-11-11T16:36+00:00 started",
+  "kpc-copy-from-links.yml|2026-11-11T16:11:00+00:00": "2026-11-11T16:36+00:00 started",
+  "kpc-flow.yml|2026-11-11T13:46:00+00:00": "2026-11-11T16:36+00:00 started",
+  "kpc-waiting-room.yml|2026-11-11T14:42:00+00:00": "2026-11-11T16:36+00:00 started",
+  "kpc-youtube-comments.yml|2026-11-11T13:36:00+00:00": "2026-11-11T16:36+00:00 skipped (not restarted)"
  },
- "last": "2026-11-11T13:53+00:00",
+ "last": "2026-11-11T16:36+00:00",
  "last_restarted": [
-  "kpc-copy-from-links.yml (missed Nov 11 13:11 UTC)",
-  "kpc-eu-alerts.yml (missed Nov 11 12:40 UTC)",
-  "kpc-waiting-room.yml (missed Nov 11 12:42 UTC)",
-  "kpc-watch.yml (missed Nov 11 11:53 UTC)"
+  "kpc-archive-rotate.yml (missed Nov 11 15:27 UTC)",
+  "kpc-closures.yml (missed Nov 11 13:38 UTC)",
+  "kpc-copy-from-links.yml (missed Nov 11 16:11 UTC)",
+  "kpc-flow.yml (missed Nov 11 13:46 UTC)",
+  "kpc-waiting-room.yml (missed Nov 11 14:42 UTC)",
+  "kpc-youtube-comments.yml (missed Nov 11 13:36 UTC, NOT restarted: its next scheduled run catches up)"
  ]
 }
