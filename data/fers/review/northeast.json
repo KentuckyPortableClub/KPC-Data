@@ -1169,29 +1169,6 @@
   },
   {
    "area": "northeast",
-   "state": "US-PA",
-   "refs": [
-    "US-0684",
-    "US-1347"
-   ],
-   "names": {
-    "US-0684": "Lower Delaware National Wild and Scenic River",
-    "US-1347": "Delaware Canal State Park"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "384.6 ac",
-   "sort": 384.6,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "US-0684+US-1347@area@40.310,-74.891",
-   "sources": {
-    "US-0684": "saved copy (answer key)",
-    "US-1347": "read from the agency 2026-11-11"
-   },
-   "checked": "2026-11-11"
-  },
-  {
-   "area": "northeast",
    "state": "",
    "refs": [
     "US-0654",
@@ -2119,11 +2096,11 @@
     "US-2144": "Sterling Forest State Park",
     "US-8319": "Palisades Interstate Park"
    },
-   "what": "water map weak here (fix later: a better water source)",
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
    "size": "118.8 ac",
    "sort": 118.8,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5 \u00b7 ['STAT', 'STATE']",
+   "reason": "candidate \u00b7 ['STAT', 'STATE']",
    "id": "US-2144+US-8319@area@41.265,-74.184",
    "sources": {
     "US-2144": "read from the agency 2026-11-11",
@@ -3810,7 +3787,7 @@
    "size": "59.3 ac",
    "sort": 59.3,
    "reason": "candidate \u00b7 ['FED:FWS', 'STAT']",
-   "id": "US-0453+US-4992@area@39.575,-74.405",
+   "id": "US-0453+US-4992@area@39.575,-74.403",
    "sources": {
     "US-0453": "read from the agency 2026-11-11",
     "US-4992": "read from the agency 2026-11-11",
@@ -4881,7 +4858,7 @@
    "size": "44.7 ac",
    "sort": 44.7,
    "reason": "candidate \u00b7 ['FED:NPS', 'STAT']",
-   "id": "US-0742+US-2444@area@42.641,-71.348",
+   "id": "US-0742+US-2444@area@42.641,-71.351",
    "sources": {
     "US-0742": "read from the agency 2026-11-11",
     "US-2444": "read from the agency 2026-11-11",
@@ -5076,30 +5053,6 @@
    "id": "US-6390+US-7768@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (43x, POTA history)"
-   },
-   "checked": "2026-11-11"
-  },
-  {
-   "area": "northeast",
-   "state": "US-NY",
-   "refs": [
-    "US-5119",
-    "US-5329"
-   ],
-   "names": {
-    "US-5119": "Berlin State Forest",
-    "US-5329": "Taconic Ridge State Forest"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "42.5 ac",
-   "sort": 42.5,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "US-5119+US-5329@area@42.679,-73.324",
-   "sources": {
-    "US-5119": "read from the agency 2026-11-11",
-    "US-5329": "read from the agency 2026-11-11",
-    "USGS water": "USGS NHDPlus HR file 2023-07-13 (the same NHDPlus HR water, from USGS's download files)"
    },
    "checked": "2026-11-11"
   },
@@ -8871,7 +8824,7 @@
    "kind": "pair",
    "size": "27 same-day activations",
    "sort": 27.0,
-   "reason": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
+   "reason": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coarse look overlapped by drawing error only)",
    "id": "US-1408+US-5462@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (27x, POTA history)"
@@ -12301,30 +12254,6 @@
    "id": "US-2873+US-7720@pota",
    "sources": {
     "POTA history": "POTA shows one session logged both parks / activated together by the same call on the same day (22x, POTA history)"
-   },
-   "checked": "2026-11-11"
-  },
-  {
-   "area": "northeast",
-   "state": "US-PA",
-   "refs": [
-    "US-5474",
-    "US-8811"
-   ],
-   "names": {
-    "US-5474": "Rothrock State Forest",
-    "US-8811": "PA 112 State Game Land"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "21.3 ac",
-   "sort": 21.3,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "US-5474+US-8811@area@40.537,-77.860",
-   "sources": {
-    "US-5474": "read from the agency 2026-11-04",
-    "US-8811": "read from the agency 2026-11-11",
-    "USGS water": "USGS NHDPlus HR file 2023-07-13 (the same NHDPlus HR water, from USGS's download files)"
    },
    "checked": "2026-11-11"
   },
@@ -30278,7 +30207,7 @@
    "size": "10.8 ac",
    "sort": 10.8,
    "reason": "water only: boat or kayak",
-   "id": "US-1364+US-5475@area@41.427,-77.920",
+   "id": "US-1364+US-5475@area@41.425,-77.920",
    "sources": {
     "US-1364": "read from the agency 2026-11-11",
     "US-5475": "read from the agency 2026-11-04",
@@ -46261,7 +46190,7 @@
    "size": "0.1 ac",
    "sort": 0.1,
    "reason": "the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again)",
-   "id": "CA-0795+CA-6537+US-8484@area@45.687,-67.726",
+   "id": "CA-0795+CA-6537+US-8484@area@45.686,-67.725",
    "sources": {},
    "checked": "2026-11-11"
   },
@@ -46279,7 +46208,7 @@
    "size": "0.1 ac",
    "sort": 0.1,
    "reason": "the official outline of New Brunswick #15 Wildlife Management Area could not be read in pass 2 (the next run tries again)",
-   "id": "CA-4517+CA-6537+US-8484@area@45.687,-67.726",
+   "id": "CA-4517+CA-6537+US-8484@area@45.686,-67.725",
    "sources": {},
    "checked": "2026-11-11"
   },

@@ -16,12 +16,10 @@
   "US-DC"
  ],
  "since": "2026-11-11",
- "date": "2026-11-11 17:19 UTC",
+ "date": "2026-11-11 19:15 UTC",
  "verdict": "STOPPED",
  "why": [
-  "missing check: 5934 of 12267 expected pairs were never looked at (48%; 2072 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (5927); not tested: the official outline of <park> could not be read in pass 1 (one of its map rec (4); <park>: not in this run (another state, retired, or no POTA pin) (3)",
-  "water not checked: US-PA: 2 rows (the USGS water map / files had no answer there): never READY with one",
-  "water not checked: US-NY: 2 rows (the USGS water map / files had no answer there): never READY with one"
+  "missing check: 5934 of 12267 expected pairs were never looked at (48%; 2072 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (5927); not tested: the official outline of <park> could not be read in pass 1 (one of its map rec (4); <park>: not in this run (another state, retired, or no POTA pin) (3)"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
@@ -60,7 +58,7 @@
    "checked": 467,
    "date": "2026-11-11",
    "pairs tested": 0,
-   "still not checked": 4
+   "still not checked": 0
   }
  },
  "files": {
@@ -79,11 +77,10 @@
  },
  "US-PA": {
   "rows": 1301,
-  "live": 250,
+  "live": 252,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 2,
    "this spot is 289 km from PA 086 State Game Land's POTA pin": 1,
    "this spot is 118 km from PA 231 State Game Land's POTA pin": 1,
    "this spot is 128 km from PA 326 State Game Land's POTA pin": 1
@@ -91,18 +88,13 @@
   "dropped": 629,
   "merged": 417
  },
- "water_weak": {
-  "US-PA": 2,
-  "US-NY": 2
- },
  "US-NY": {
   "rows": 716,
-  "live": 174,
+  "live": 176,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
    "the official outline of Adirondack State Park could not be r": 51,
-   "water not checked": 2,
    "both parks join the same official records and both POTA pins": 1
   },
   "dropped": 184,
