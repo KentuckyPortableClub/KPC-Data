@@ -51,3 +51,7 @@ Manners: same polite reader as the other KPC tools (robots.txt, at least 2 s per
 ## Shared source (`_common`)
 
 The polite web reader (User-Agent, 2 s per host, robots.txt, 403 handling, cache) is one shared file, `_common/polite.py`, built into this tool from `_common/t4_src.py` by `_common/build.py`. The zip carries `_common/`. Edit the source there, never the built `kpc_parcels.py`, then run `python3 _common/build.py` (or `--check` to only compare) and this tool's `--selftest`.
+
+## Nov 11 (KPC owner, 2026-11-11)
+- The never-contact guard of Data #63 (services*.arcgis.com, apps.fs.usda.gov: no request of any kind, robots.txt included) now lives in the shared `_common/polite.py`, so `_common/build.py` keeps it, and kpc_sitemaps, kpc_inspire and kpc_trail_lines have it too.
+- A search hit on a never-contact host is dropped before it is tried, so it no longer uses up `--max-tries`; a hit (or a service in a government server's list) whose own title / name / address names only another state is dropped the same way (Indiana's statewide parcels for a Kentucky county). A "no layer" reason says how many of each were skipped. What counts as a parcel layer is unchanged: a government publisher, not zoning, and the pin falls on one of its parcels.

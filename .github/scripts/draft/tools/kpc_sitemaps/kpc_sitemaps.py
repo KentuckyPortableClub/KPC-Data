@@ -217,6 +217,10 @@ class Polite:
         return 'err:TooManyRedirects', {}, b'', url
 
     def _one(self, url, method='GET', data=None, headers=None):
+        if banned(url):   # Nov 11 (owner rule, 2026-11-11): the last door before the socket. get() and every redirect hop refuse first; this
+            #                makes services*.arcgis.com / apps.fs.usda.gov (NEVER_LIVE) unreachable even for a future caller that skips get(), robots.txt included
+            self.stats['banned'] += 1
+            return 'banned', {}, b'', url
         host = (urlparse(url).hostname or '').lower()
         tries = 0
         while True:
@@ -254,6 +258,9 @@ class Polite:
     def robots_for(self, url):
         p = urlparse(url)
         host = (p.hostname or '').lower()
+        if banned(url):   # Nov 11: a never-live host is not even asked for robots.txt; it reads as Disallow: / for this run
+            self.robots_stop.setdefault(host, 'saved-copy only host (never contacted)')
+            return Robots(self.STOP_ROBOTS)
         if host not in self.robots:
             self.robots[host] = None  # placeholder while reading
             st, hd, body, _ = self._cached(f'{p.scheme or "https"}://{p.netloc}/robots.txt', robots=False)
@@ -515,6 +522,31 @@ def polite_selftest():
     finally:
         if old is None: os.environ.pop('KPC_NO_NET', None)
         else: os.environ['KPC_NO_NET'] = old
+    # Nov 11 (owner rule, 2026-11-11): services*.arcgis.com and apps.fs.usda.gov get NO request of any kind - not the data, not robots.txt,
+    # not a redirect hop - even from a caller that skips get() (robots_for, _cached, _raw, _one called directly).
+    sent = []
+
+    class _R:
+        def __init__(self, st, hd=None): self.status_code, self.headers, self.url = st, hd or {}, ''
+        def iter_content(self, n): return [b'']
+        def close(self): pass
+
+    def _rec(method, url, **k):
+        sent.append(url)
+        if 'hop.example.invalid' in url and not url.endswith('/robots.txt'):
+            return _R(302, {'Location': 'https://services2.arcgis.com/x/arcgis/rest/services/P/FeatureServer/0?f=json'})
+        return _R(404)
+    wn = Polite(cache=None, log=lambda m: None); wn.s.request = _rec; wn._wait = lambda *a, **k: None
+    never = ['https://services1.arcgis.com/a/arcgis/rest/services/P/FeatureServer/0/query?f=json', 'https://services.arcgis.com/b/x',
+             'https://SERVICES9.arcgis.com./c/x', 'https://services-eu1.arcgis.com/d/x', 'https://apps.fs.usda.gov/arcx/rest/services/x']
+    for u in never:
+        if wn.get(u)[0] != 'banned': problems.append(f'get() must refuse {u} before any request')
+        wn.robots_for(u); wn._cached(u); wn._raw(u); wn._one(u)
+    wn.get('https://hop.example.invalid/layer')
+    if [x for x in sent if banned(x)]:
+        problems.append(f'a never-live host was contacted (robots.txt / data / redirect hop): {[x for x in sent if banned(x)]}')
+    if any('arcgis.com' in x or 'fs.usda.gov' in x for x in sent):
+        problems.append(f'no request may reach services*.arcgis.com / apps.fs.usda.gov: {sent}')
     return problems
 # ---------------------------------------------------------------- end of polite web reader
 

@@ -29,6 +29,7 @@ BASELINE = 'tests/known-fail-main.txt'
 # that is missing is a FAILURE, never a skip. They need the tracer dependencies (shapely, pyproj, scikit-learn, opencv, rapidfuzz); if the gate
 # runner lacks them the row fails with ModuleNotFoundError - install .github/scripts/draft/requirements.txt, do not baseline it away.
 NESTED_SELFTESTS = ['.github/scripts/draft/kpc_trace_picture.py',
+                    '.github/scripts/draft/kpc_trace_marks.py',   # Nov 11 (later): numpy + OpenCV only
                     '.github/scripts/draft/tools/kpc_parcel_trace/kpc_parcel_trace.py',
                     '.github/scripts/draft/tools/kpc_parcels/kpc_parcels.py']
 

@@ -173,3 +173,22 @@ silently dropped.
 - **Report columns:** `line_share`, `line_z`, `decoy_line_z`, `score_points` (the junction part alone). Cached basemaps of version 0.2.0 are read again once (they hold no water).
 - **Checks:** `python3 kpc_trace_edges.py --selftest`, `python3 dev/line_score_test.py`; the workflow runs both (and `--selftest`) before it traces and does not trace if they fail. Synthetic dev run (60 irregular towns, sparse pictures): right place drawn 37 -> 57, drawn at a wrong transform 1 -> 0, a picture of another town drawn 0 -> 0. A perfect square grid stays refused (it looks the same turned 90 degrees).
 - **Compare a run:** `python3 dev/compare_reports.py before.csv after.csv --md compare.md` (newly drawn maps listed with every gate input, maps that were drawn and are not now listed first).
+
+## Nov 11 (later): `--offline` replay (KPC owner, 2026-11-11)
+- `--offline`: no web request of any kind (the session's `get` is replaced); every basemap comes from `<base>/cache/<REF>_basemap.json`. A map with no saved basemap for the same pin, box size and tracer version is an `ERROR` row starting `offline:`. GeoPDF maps need no basemap. `--offline --refresh` is refused.
+- A normal run still never reuses a *partial* saved basemap (Nov 7 call; asked again). With `--offline` a partial one is used as it is, and its robots-skipped sources still go into the flags exactly as on the run that fetched it. The decision is `kpc_trace_limits.cached_basemap_ok`; no gate depends on where the basemap came from.
+- Use: run once with the network (it saves every basemap in `<base>/cache`), then replay a tracer change with `--offline` on the same saved basemaps, and compare with `dev/compare_reports.py` (it now also lists the NO LINE and ERROR reasons).
+
+## Nov 11 (later): matcher inputs, hosts list (KPC owner, 2026-11-11)
+Three switches, each ON by default, each turned off alone with `--off <name>` (comma list; `--off all` = the earlier inputs) or its
+environment variable = 0, so a before / after run can measure each. None is a gate: every gate is unchanged.
+- `band_junctions` (`KPC_TRACE_BAND_JUNCTIONS`): junctions of roads drawn as bands (white / grey strips: campground and day-use maps).
+  LSD sees only a band's two edges, which never cross at a junction, so those junctions were never found. `kpc_trace_marks.band_marks`
+  finds points with 3+ arms of even road width, and the bands' middle lines are added to the picture lines used by the line agreement
+  (a basemap road falls on a band's middle, half a band away from its edges). They rank first among the 70 junctions.
+- `box_mask` (`KPC_TRACE_BOX_MASK`): no junctions inside legend / title / inset / photo / icon boxes the park outline does not run
+  through (letters and symbols gave 'junctions' with nothing on the ground under them).
+- `dark_ring` (`KPC_TRACE_DARK_RING`): when no colour gives a boundary, a thick black boundary line (New Brunswick protected-area
+  sheets) is tried, as a closed ring only, not touching the picture edge; flagged in the report.
+`python3 kpc_trace_marks.py --selftest` and `python3 dev/marks_match_test.py` (end to end through the tracer's own matcher and gates)
+run in the workflow before tracing. `--list-hosts --base <folder>` prints every host a run would contact and makes no request.

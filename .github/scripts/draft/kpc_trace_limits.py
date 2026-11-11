@@ -8,6 +8,9 @@ Switches (env; the picture tracer also has command-line flags):
                              not the first <ref>_*.jpg on disk. 0 = old first-jpg pick.
   KPC_TRACE_ACRES_FILE    '' an official acres list ({ref: acres} or {ref: {acres}}; data/acres.json) for rows with no acres.
   KPC_TRACE_CHANCE_RATIO  1.5 and KPC_TRACE_CHANCE_MARGIN 2.0: the 'better than chance' gate.
+  KPC_TRACE_BAND_JUNCTIONS 1 (Nov 11, later) junctions of roads drawn as bands, and the bands' middle lines for the line agreement.
+  KPC_TRACE_BOX_MASK      1  no junctions in legend / title / inset / icon boxes the park outline does not run through.
+  KPC_TRACE_DARK_RING     1  a thick black boundary RING, tried only when no colour gave a boundary.
   KPC_TRACE_LINE_WEIGHT   0.25 (Nov 11) weight of the line-agreement z in the match score (kpc_trace_edges.py), real and decoy alike.
                           0 = the junction score alone (the Nov 2 behaviour).
   KPC_PARCEL_ADJ_M        30  (Nov 6 default; was 200) parcel adjacency in metres. 200 jumps roads onto the neighbour.
@@ -20,7 +23,9 @@ import glob, json, os, re
 
 DEFAULTS = {'KPC_TRACE_HONOR_IMAGE': '1', 'KPC_TRACE_ACRES_FILE': '', 'KPC_TRACE_CHANCE_RATIO': '1.5', 'KPC_TRACE_CHANCE_MARGIN': '2.0', 'KPC_TRACE_LINE_WEIGHT': '0.25',
             'KPC_PARCEL_ADJ_M': '30', 'KPC_PARCEL_GROW_CAP': '1.25', 'KPC_PARCEL_SUBTRACT': '1',
-            'KPC_PARCEL_PARK_MIN': '8', 'KPC_PARCEL_REQ_TIMEOUT': '30'}
+            'KPC_PARCEL_PARK_MIN': '8', 'KPC_PARCEL_REQ_TIMEOUT': '30',
+            # Nov 11 (later): picture-tracer matcher inputs, each on by default; 0 = off (also --off on the tracer's command line)
+            'KPC_TRACE_BAND_JUNCTIONS': '1', 'KPC_TRACE_BOX_MASK': '1', 'KPC_TRACE_DARK_RING': '1'}
 
 # Picture tracer: traced acres vs known acres (Nov 6: hold back as NEEDS A PERSON, not DRAWN+flag).
 PICTURE_ACRES_LO, PICTURE_ACRES_HI = 0.2, 5.0
@@ -410,3 +415,24 @@ def is_ssl_status(st):
     """True when a Polite/jget status string is an SSL failure (err:SSLError / err:SSLCertVerificationError / ...)."""
     s = str(st or '')
     return bool(re.search(r'(?i)ssl|certificate', s))
+
+
+def cached_basemap_ok(d, lat, lon, half_km, version, offline=False):
+    """Nov 11 (KPC owner, 2026-11-11): may the picture tracer use this cached basemap (the dict fetch_basemap saved)?
+    Returns (ok, why). Same box (pin + half_km) and same tracer basemap version are always needed. A PARTIAL basemap (a source was
+    robots-skipped when it was fetched) is never reused by a normal run (owner call, Nov 7: the next run asks again); with --offline
+    (no web request at all, e.g. a before / after replay on the same saved basemaps) it is used as it is, and its 'skipped' list still
+    goes into the map's flags exactly as on the run that fetched it. The match gates never depend on where the basemap came from."""
+    if not isinstance(d, dict):
+        return False, 'no cached basemap'
+    try:
+        same_box = abs(float(d.get('half_km', 0)) - float(half_km)) < 1e-6 and list(d.get('pin') or []) == [lat, lon]
+    except (TypeError, ValueError):
+        same_box = False
+    if not same_box:
+        return False, 'cached basemap is for another box (pin or size changed)'
+    if d.get('version') != version:
+        return False, f"cached basemap is version {d.get('version')}, the tracer is {version}"
+    if d.get('skipped') and not offline:
+        return False, 'cached basemap is partial (' + ', '.join(map(str, d['skipped'])) + ' skipped); a normal run asks again'
+    return True, 'basemap from cache' + (' (partial: ' + ', '.join(map(str, d['skipped'])) + ' skipped when it was fetched)' if d.get('skipped') else '')
