@@ -1,4 +1,4 @@
-# Spot check: all kinds (20 random rows of 8332)
+# Spot check: all kinds (20 random rows of 8400)
 
 For chat 11: open each link and say YES / NO. The engine decides nothing.
 
@@ -26,16 +26,16 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Bellamy River WMA - East' (PACK-US-NH-land-204); pin inside; about 21.2 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## CA-4842 Marconi National Historic Site (CA-NS)
+## CA-5857 Banc de Pêche de Paspébiac National Historic Site (CA-QC)
 - status: candidate
-- tier: T-3
+- tier: T-2
 - band: WEAK
-- record_name: Marconi Wireless Station
-- url: https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29?f=html
-- record_link: https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29/query?where=OBJECTID%3D26&outFields=%2A&f=html
-- source_url: https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29/query?geometry=-59.9528%2C46.211&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 8
-- why: record 'Marconi Wireless Station' (PACK-CA-NS-land-66); pin 8 m from the edge; about 4.1 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- record_name: Site patrimonial du Banc-de-Pêche-de-Paspébiac
+- url: https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson
+- record_link: https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson
+- source_url: https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson
+- pin_m: 0
+- why: record 'Site patrimonial du Banc-de-Pêche-de-Paspébiac' (PACK-CA-QC-land-392); pin inside; about 36.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## US-7973 Baltimore-Washington National Parkway (US-MD)
