@@ -936,7 +936,7 @@
    "Unit": "acres",
    "Agency": "Wisconsin DNR (land, state GIS table)",
    "Source page": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?where=OBJECTID%3D713376&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0; read 2026-11-07"
+   "Notes": "computed from the official outline polygon (approx); layer https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0; read 2026-11-11"
   },
   {
    "Park number (if matched)": "US-11165",
@@ -1026,7 +1026,7 @@
    "Unit": "acres",
    "Agency": "Tennessee Wildlife Resources Agency (credit: TWRA) (wild, state GIS table)",
    "Source page": "https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3/query?where=OBJECTID%3D29&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3; read 2026-11-07"
+   "Notes": "computed from the official outline polygon (approx); layer https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3; read 2026-11-11"
   },
   {
    "Park number (if matched)": "CA-4899",
@@ -2191,6 +2191,26 @@
    "# times used": 0,
    "Status": "BLOCKED",
    "Detail": "blocked (robots.txt not readable this run)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.tn.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "openmaps.gov.bc.ca",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
    "Retry?": "YES"
   }
  ]
