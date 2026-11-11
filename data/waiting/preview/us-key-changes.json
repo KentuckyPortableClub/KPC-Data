@@ -1,10 +1,10 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key', 'build': the held build id from data/waiting/in/data/us-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-11 08:19 UTC",
+ "made": "2026-11-11 12:18 UTC",
  "totals": {
-  "gained": 60,
-  "lost": 10,
-  "pieces_changed": 675,
+  "gained": 61,
+  "lost": 11,
+  "pieces_changed": 806,
   "grade_changed": 33
  },
  "per_area": {
@@ -42,6 +42,12 @@
    "gained": 0,
    "lost": 0,
    "pieces_changed": 40,
+   "grade_changed": 0
+  },
+  "US-FL": {
+   "gained": 1,
+   "lost": 1,
+   "pieces_changed": 131,
    "grade_changed": 0
   },
   "US-GA": {
@@ -336,6 +342,67 @@
    "held_now": [],
    "by_answer": true,
    "pota": "https://pota.app/#/park/US-0329"
+  },
+  {
+   "area": "US-FL",
+   "ref": "US-6281",
+   "name": "Loxahatchee River National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgflf6661",
+     "Loxahatchee River",
+     582,
+     "name"
+    ],
+    [
+     "sgflf29113",
+     "Loxahatchee River",
+     492,
+     "name"
+    ],
+    [
+     "sgflf40492",
+     "Loxahatchee River",
+     322,
+     "name"
+    ],
+    [
+     "sgflf59813",
+     "Loxahatchee River",
+     43,
+     "name"
+    ],
+    [
+     "sgflf72321",
+     "Loxahatchee River",
+     42,
+     "name"
+    ],
+    [
+     "sgflf10308",
+     "Loxahatchee River",
+     19,
+     "name"
+    ],
+    [
+     "sgflf68083",
+     "Loxahatchee River",
+     18,
+     "name"
+    ],
+    [
+     "sgflf60496",
+     "Loxahatchee River",
+     10,
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6281"
   },
   {
    "area": "US-GA",
@@ -1500,6 +1567,52 @@
   }
  ],
  "lost": [
+  {
+   "area": "US-FL",
+   "ref": "US-6327",
+   "name": "Tenoroc Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgflf10761",
+     "Tenoroc State Reserve",
+     27,
+     "name"
+    ],
+    [
+     "sgflf8115",
+     "Tenoroc Fish Management Area",
+     13,
+     "words"
+    ],
+    [
+     "sgflf5903",
+     "Tenoroc Fish Management Area",
+     0,
+     "words"
+    ],
+    [
+     "sgflf5998",
+     "Tenoroc Fish Management Area",
+     0,
+     "words"
+    ],
+    [
+     "sgflf5999",
+     "Tenoroc Fish Management Area",
+     0,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "check (rule R-G8): bigger than the park's own record",
+    "check (rule R-G8): bigger than the park's own record"
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6327"
+  },
   {
    "area": "US-IA",
    "ref": "US-0270",
@@ -4293,6 +4406,67 @@
    "pota": "https://pota.app/#/park/US-11823"
   },
   {
+   "area": "US-FL",
+   "ref": "US-6281",
+   "name": "Loxahatchee River National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgflf6661",
+     "Loxahatchee River",
+     582,
+     "name"
+    ],
+    [
+     "sgflf29113",
+     "Loxahatchee River",
+     492,
+     "name"
+    ],
+    [
+     "sgflf40492",
+     "Loxahatchee River",
+     322,
+     "name"
+    ],
+    [
+     "sgflf59813",
+     "Loxahatchee River",
+     43,
+     "name"
+    ],
+    [
+     "sgflf72321",
+     "Loxahatchee River",
+     42,
+     "name"
+    ],
+    [
+     "sgflf10308",
+     "Loxahatchee River",
+     19,
+     "name"
+    ],
+    [
+     "sgflf68083",
+     "Loxahatchee River",
+     18,
+     "name"
+    ],
+    [
+     "sgflf60496",
+     "Loxahatchee River",
+     10,
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6281"
+  },
+  {
    "area": "US-MN",
    "ref": "US-0356",
    "name": "Big Stone Wetland Management District",
@@ -5030,44 +5204,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-12830"
-  },
-  {
-   "area": "US-PA",
-   "ref": "US-12235",
-   "name": "Clarion National Wild and Scenic River",
-   "old_grade": "approximate",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "fwsr16",
-     "Clarion, Pennsylvania National Wild and Scenic River",
-     10878,
-     "reviewed"
-    ],
-    [
-     "fwsr98",
-     "Clarion, Pennsylvania National Wild and Scenic River",
-     5589,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "fwsr16",
-     "Clarion, Pennsylvania National Wild and Scenic River",
-     10878,
-     "words"
-    ],
-    [
-     "fwsr98",
-     "Clarion, Pennsylvania National Wild and Scenic River",
-     5589,
-     "words"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-12235"
   }
  ]
 }
