@@ -53,6 +53,12 @@ def host_ok(url):
     return True, ''
 
 
+def downgrade(old_url, new_url):
+    """True when a redirect goes from an https address to a plain http one (refused, like kpc_manners)."""
+    new = urllib.parse.urljoin(str(old_url or ''), str(new_url or ''))
+    return urllib.parse.urlsplit(str(old_url or '')).scheme.lower() == 'https' and urllib.parse.urlsplit(new).scheme.lower() == 'http'
+
+
 class HostRefused(urllib.error.URLError):
     """A request the host rules forbid (an OSError, so a caller's ordinary 'read failed' handling applies)."""
 
@@ -62,7 +68,7 @@ _INSTALLED = []
 
 def install():
     """Owner rule, 2026-11-10: refuse, before any request, a url host_ok() forbids. Wraps urllib's opener (urlopen, every redirect hop)
-    and requests' adapter (every hop) once per process. For the fetchers that do not go through kpc_manners. Fails closed."""
+    and requests' adapter (every hop) once per process, and refuses an https -> http redirect hop. For the fetchers that do not go through kpc_manners. Fails closed."""
     if _INSTALLED: return
     _INSTALLED.append(1)
     o_open = urllib.request.OpenerDirector.open
@@ -72,7 +78,13 @@ def install():
         if not ok: raise HostRefused(why)
         return o_open(self, fullurl, *a, **k)
     urllib.request.OpenerDirector.open = open_
-    try: import requests.adapters as _ra
+    o_redir = urllib.request.HTTPRedirectHandler.redirect_request
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):   # no https -> http downgrade on a redirect hop
+        if downgrade(req.full_url, newurl): raise HostRefused(f'redirect from https to http refused: {str(newurl)[:80]}')
+        return o_redir(self, req, fp, code, msg, headers, newurl)
+    urllib.request.HTTPRedirectHandler.redirect_request = redirect_request
+    try: import requests.adapters as _ra, requests.sessions as _rs
     except Exception: return   # noqa: BLE001  (requests is not installed: nothing to wrap)
     o_send = _ra.HTTPAdapter.send
 
@@ -84,6 +96,13 @@ def install():
         if not ok: raise _ReqRefused(why)
         return o_send(self, request, *a, **k)
     _ra.HTTPAdapter.send = send
+    o_target = _rs.SessionRedirectMixin.get_redirect_target
+
+    def get_redirect_target(self, resp):
+        t = o_target(self, resp)
+        if t and downgrade(resp.url, t): raise _ReqRefused(f'redirect from https to http refused: {str(t)[:80]}')
+        return t
+    _rs.SessionRedirectMixin.get_redirect_target = get_redirect_target
 
 
 def who_for(url, robots_ok=None, file_url=None):

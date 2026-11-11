@@ -29,11 +29,20 @@ for p in sorted(S.glob('*.py')):
     if not covered: bad.append(p.name)
 check(f'every fetcher in .github/scripts uses the host check ({bad})', not bad)
 bad = []
-for p in sorted((S / 'tools').glob('*/*.py')) + sorted((S / 'draft/tools').glob('kpc_*/kpc_*.py')):
+# case-insensitive: the weekly KPC_9/KPC_10/KPC_11/KPC_13 draft tools are named KPC_*, not kpc_* (Quality, Nov 10)
+TOOLS = sorted((S / 'tools').glob('*/*.py')) + sorted(p for p in (S / 'draft/tools').glob('*/*.py')
+                                                     if re.match(r'kpc_', p.parent.name, re.I) and re.match(r'kpc_', p.name, re.I))
+check('the tool scan includes the KPC_* draft tools (KPC_10_map_audit, KPC_11_boundary_watch, KPC_13_same_land)',
+      {'KPC_10_map_audit', 'KPC_11_boundary_watch', 'KPC_13_same_land'} <= {p.parent.name for p in TOOLS})
+for p in TOOLS:
     src = p.read_text(encoding='utf-8', errors='replace')
     if FETCH.search('\n'.join(l for l in src.split('\n') if not l.lstrip().startswith('#'))) and 'kpc_host_rules' not in src and 'NEVER_LIVE' not in src and 'host_ok' not in src:
         bad.append(str(p.relative_to(S)))
 check(f'every tool that fetches has the host check (kpc_host_rules, host_ok or the polite reader\'s NEVER_LIVE) ({bad})', not bad)
+# a tool that loads kpc_host_rules must also install it or ask host_ok (an import string alone is not a guard)
+weak = [str(p.relative_to(S)) for p in TOOLS if 'kpc_host_rules' in (t := p.read_text(encoding='utf-8', errors='replace'))
+        and 'install()' not in t and 'host_ok(' not in t and 'NEVER_LIVE' not in t]
+check(f'every tool that loads kpc_host_rules installs it or calls host_ok ({weak})', not weak)
 # the installer really refuses, offline
 sys.path.insert(0, str(S))
 import kpc_host_rules as HR
@@ -48,4 +57,22 @@ try:
     except HR.HostRefused: r = True
     check('install(): requests refuses a services*.arcgis.com host before any request', r)
 except ImportError: print('NOTE: requests not installed here')
+# https -> http redirect hops are refused (urllib and requests), offline
+import email.message, io
+h = urllib.request.HTTPRedirectHandler()
+req = urllib.request.Request('https://example.org/a')
+try: h.redirect_request(req, io.BytesIO(), 302, 'Found', email.message.Message(), 'http://example.org/b'); r = False
+except HR.HostRefused: r = True
+check('install(): urllib refuses an https -> http redirect hop', r)
+check('install(): urllib keeps an https -> https redirect hop', h.redirect_request(req, io.BytesIO(), 302, 'Found', email.message.Message(), 'https://example.org/b') is not None)
+try:
+    import requests
+    class _R:
+        url = 'https://example.org/a'; is_redirect = True; headers = {'location': 'http://example.org/b'}
+    try: requests.Session().get_redirect_target(_R()); r = False
+    except HR.HostRefused: r = True
+    check('install(): requests refuses an https -> http redirect hop', r)
+    _R.headers = {'location': '/b'}
+    check('install(): requests keeps a same-scheme relative redirect hop', requests.Session().get_redirect_target(_R()) == '/b')
+except ImportError: pass
 print('ALL PASS' if ok else 'SOME FAILED'); sys.exit(0 if ok else 1)
