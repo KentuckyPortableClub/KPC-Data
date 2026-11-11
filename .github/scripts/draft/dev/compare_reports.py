@@ -29,6 +29,13 @@ def bucket(why):
     return ' + '.join(out) or (w[:60] if w else '(none)')
 
 
+def nl_bucket(why):
+    w = why or ''
+    if 'of the POTA pin on this page' in w: return 'GeoPDF page: no shape in any colour at the pin'
+    if 'no closed boundary colour' in w: return 'no closed boundary colour / route line on the picture'
+    return w[:60] or '(none)'
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(); ap.add_argument('before'); ap.add_argument('after'); ap.add_argument('--md')
     a = ap.parse_args(argv)
@@ -44,6 +51,14 @@ def main(argv=None):
     L.append(''); L.append('| NO FIT reason | before | after |'); L.append('|---|---|---|')
     for k in sorted(set(nf_b) | set(nf_a), key=lambda k: -(nf_b.get(k, 0) + nf_a.get(k, 0))):
         L.append(f'| {k} | {nf_b.get(k, 0)} | {nf_a.get(k, 0)} |')
+    # Nov 11: the NO LINE and ERROR reasons too (an 'offline:' ERROR = no saved basemap for that map in an --offline replay)
+    for st, fn in (('NO LINE', nl_bucket), ('ERROR', lambda w: 'offline: no saved basemap' if (w or '').startswith('offline:') else (w or '(none)')[:60])):
+        xb = collections.Counter(fn(r['why']) for r in B.values() if r['status'] == st)
+        xa = collections.Counter(fn(r['why']) for r in A.values() if r['status'] == st)
+        if xb or xa:
+            L.append(''); L.append(f'| {st} reason | before | after |'); L.append('|---|---|---|')
+            for k in sorted(set(xb) | set(xa), key=lambda k: -(xb.get(k, 0) + xa.get(k, 0))):
+                L.append(f'| {k} | {xb.get(k, 0)} | {xa.get(k, 0)} |')
     moved = collections.Counter((B[r]['status'], A[r]['status']) for r in set(B) & set(A) if B[r]['status'] != A[r]['status'])
     L.append(''); L.append('status changes: ' + (', '.join(f'{x} -> {y}: {n}' for (x, y), n in sorted(moved.items())) or 'none'))
     lost = sorted(r for r in set(B) & set(A) if B[r]['status'] == 'DRAWN' and A[r]['status'] != 'DRAWN')

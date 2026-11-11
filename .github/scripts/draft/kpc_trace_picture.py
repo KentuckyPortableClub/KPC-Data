@@ -75,6 +75,10 @@ except Exception:  # noqa: BLE001
     TL = None
 HONOR_IMAGE = TL is not None and TL.on("KPC_TRACE_HONOR_IMAGE")
 try:
+    import kpc_trace_marks as TM   # Nov 11 (later): band-road junctions, box masks, dark boundary rings (numpy + OpenCV only)
+except ImportError:  # noqa
+    TM = None
+try:
     import kpc_trace_edges as LE   # Nov 11: line agreement (numpy + OpenCV only)
 except ImportError:  # noqa
     LE = None
@@ -83,6 +87,15 @@ CHANCE_MARGIN = TL.num("KPC_TRACE_CHANCE_MARGIN") if TL else 2.0
 # Nov 11: the match score = junction score + LINE_WEIGHT x line-agreement z (kpc_trace_edges.py), measured the same way on the real
 # basemap and on each rotated decoy; the better-than-chance gate above is unchanged. 0 = the junction score alone (the Nov 2 behaviour).
 LINE_WEIGHT = (TL.num("KPC_TRACE_LINE_WEIGHT") if TL else 0.25) if LE is not None else 0.0
+# Nov 11 (later): matcher input improvements, each ON by default, each switched off alone with --off <name> or its env variable = 0
+# (kpc_trace_limits.DEFAULTS), so a before / after run can measure each one. None is a gate; the gates below are unchanged.
+SWITCHES = {"band_junctions": "KPC_TRACE_BAND_JUNCTIONS",   # junctions of roads drawn as bands (campground maps)
+            "box_mask": "KPC_TRACE_BOX_MASK",               # no junctions in legend / title / inset / icon boxes away from the park
+            "dark_ring": "KPC_TRACE_DARK_RING"}             # a thick black boundary RING, tried only when no colour gave a boundary
+BAND_JUNCTIONS = TM is not None and (TL.on("KPC_TRACE_BAND_JUNCTIONS") if TL else True)
+BOX_MASK = TM is not None and (TL.on("KPC_TRACE_BOX_MASK") if TL else True)
+DARK_RING = TM is not None and (TL.on("KPC_TRACE_DARK_RING") if TL else True)
+RING_ONLY = "thick dark line"
 LINE_MIN_Z = 2.0          # Nov 11 (a NEW gate, stricter only): when the picture box holds line evidence, a fit whose basemap lines do not sit on the picture's lines is refused
 
 __version__ = "0.3.0"   # Nov 11: line agreement + TIGERweb water (a cached basemap of 0.2.0 is re-read once)
@@ -108,24 +121,12 @@ PIN_MIN_SHAPE_PX = 150.0  # Nov 7 (pin mode): the smallest shape at the pin stil
 PIN_PICK = os.environ.get("KPC_TRACE_PIN_PICK", "1") != "0"   # Nov 7: choose the boundary colour by the pin on a GeoPDF page (0 = old behaviour)
 AREA_RATIO_RANGE = (0.2, 5.0)  # Step 5 / Nov 6: vs known acreage -> NEEDS A PERSON (no outline)
 
-# Rule 6: only these basemap hosts may ever be queried.
-ALLOWED_BASEMAP_HOSTS = {
-    "tigerweb.geo.census.gov",   # US Census TIGERweb (roads; Nov 11: also its hydrography, the water lines and shores)
-    "hydro.nationalmap.gov",     # USGS NHD
-    "gis.blm.gov",               # BLM CadNSDI PLSS
-    "geo.statcan.gc.ca",         # Canada National Road Network (NRN)
-}
-FORBIDDEN_HOST_WORDS = ("openstreetmap", "osm", "overpass", "google", "googleapis",
-                        "mapbox", "bing", "here.com", "arcgisonline")
-
-TIGER = "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer"
-# Nov 11: the water lines and lake / river shores from the Census (same host as the roads, same robots.txt check). hydro.nationalmap.gov
-# (NHD) says no to bots (robots.txt; Quality, Nov 9) and is still only asked through the same robots check as before: never another way.
-TIGER_HYDRO = "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Hydro/MapServer"
+# Rule 6: only these basemap hosts may ever be queried. Nov 11: the host list and the source addresses live in kpc_trace_hosts.py (standard
+# library only), so `--list-hosts` can print every host a run would contact without importing the map libraries or making a request.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from kpc_trace_hosts import (ALLOWED_BASEMAP_HOSTS, FORBIDDEN_HOST_WORDS, TIGER, TIGER_HYDRO, NHD, PLSS, NRN)  # noqa: E402
+import kpc_trace_hosts as TH  # noqa: E402
 TIGER_HYDRO_LAYERS = (("water", "linear hydrography"), ("shore", "areal hydrography"))   # the service's own names (layers 0 and 1 today), found by name; a "... Labels" layer is never read
-NHD = "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer"
-PLSS = "https://gis.blm.gov/arcgis/rest/services/Cadastral/BLM_Natl_PLSS_CadNSDI/MapServer"
-NRN = "https://geo.statcan.gc.ca/geo_wa/rest/services/NRN-RRN/nrn_rrn/MapServer"
 NRN_PROVINCES = ["AB", "BC", "MB", "NB", "NL", "NS", "NT", "NU", "ON", "PE", "QC", "SK", "YT"]
 NRN_ROAD_GROUP_BASES = {"trans-canada": 34, "national-highway": 48, "major": 62, "local": 76}
 
@@ -417,15 +418,28 @@ def polygon_corners(features, min_shared=3):
 
 
 def fetch_basemap(http: PoliteHttp, ref: str, lat: float, lon: float, half_km: float,
-                  cache_dir: Path, use_cache: bool = True) -> dict:
-    """Government basemap features + control-point candidates near the pin."""
+                  cache_dir: Path, use_cache: bool = True, offline: bool = False) -> dict:
+    """Government basemap features + control-point candidates near the pin.
+    offline (Nov 11, --offline): the cached basemap only, never a web request; a map with none raises 'offline: ...' (an ERROR row)."""
     cache = cache_dir / f"{safe_name(ref)}_basemap.json"
-    if use_cache and cache.exists():
-        d = json.loads(cache.read_text())
-        if (abs(d.get("half_km", 0) - half_km) < 1e-6 and d.get("pin") == [lat, lon]
-                and d.get("version") == __version__ and not d.get("skipped")):   # a partial basemap is never reused from an older run
-            log("   basemap from cache")
-            return d
+    d, why = None, "no cached basemap"
+    if (use_cache or offline) and cache.exists():
+        try:
+            d = json.loads(cache.read_text())
+        except ValueError:
+            d, why = None, "cached basemap is not readable JSON"
+        if d is not None:
+            if TL is not None:
+                ok, why = TL.cached_basemap_ok(d, lat, lon, half_km, __version__, offline=offline)
+            else:
+                ok = (abs(d.get("half_km", 0) - half_km) < 1e-6 and d.get("pin") == [lat, lon]
+                      and d.get("version") == __version__ and not d.get("skipped"))   # a partial basemap is never reused from an older run
+                why = "basemap from cache"
+            if ok:
+                log(f"   {why}")
+                return d
+    if offline:
+        raise RuntimeError(f"offline: {why} ({cache}); fill <base>/cache with one run that has the network, then replay with --offline")
     bbox = bbox_around(lat, lon, half_km)
     prefix = ref.split("-")[0].upper()
     lines, points, sources, skipped = [], [], [], []
@@ -601,6 +615,14 @@ def detect_boundary(img, row, k=8, pin_px=None, m_per_px=None, expected_acres=No
                 continue
             masks.append((f"cluster{c} Lab=({L:.0f},{a:.0f},{b:.0f})", m))
     best = None
+
+    def _all_masks():
+        """The colour masks; then (Nov 11, only when none of them gave a boundary and no boundary_rgb is set) a thick dark line
+        (DARK_RING), through the same shape tests below and accepted only as a closed ring."""
+        for x in masks:
+            yield x
+        if best is None and not row.get("boundary_rgb") and kind != "trail" and TM is not None and DARK_RING:
+            yield (RING_ONLY + " (no colour gave a boundary)", TM.dark_ring_mask(img))
     # a colour picked by a person (boundary_rgb) may be a small parcel on a large regional map
     min_parcel, min_largest = (0.0005, 0.001) if row.get("boundary_rgb") else (0.002, 0.01)
     if pin_mode:
@@ -609,13 +631,14 @@ def detect_boundary(img, row, k=8, pin_px=None, m_per_px=None, expected_acres=No
         # while the park is 21,000. A shape AT THE PIN is judged on the shape itself, with only an absolute floor to keep out speckle.
         min_parcel, min_largest = PIN_MIN_SHAPE_PX / float(w * h), 0.0
     ks = max(5, int(round(diag * 0.006)))
-    for name, m in masks:
+    for name, m in _all_masks():
         if kind == "trail":
             cand = _longest_open_line(m, diag)
             if cand is not None and (best is None or cand[1] > best["score"]):
                 best = dict(kind="trail", pts_px=cand[0], score=cand[1], mask_name=name)
         else:
-            mc = cv2.morphologyEx(m, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (ks, ks)))
+            _k = 3 if name.startswith(RING_ONLY) else ks   # Nov 11: a dark boundary line is solid; closing wider would join it to road remnants
+            mc = cv2.morphologyEx(m, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (_k, _k)))
             cnts, hier = cv2.findContours(mc, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_NONE)
             if not cnts:
                 continue
@@ -639,7 +662,14 @@ def detect_boundary(img, row, k=8, pin_px=None, m_per_px=None, expected_acres=No
                 if holes and _is_rectangle(cnts[hole_ids[int(np.argmax(holes))]]):
                     continue                     # frame/inset box with a leader line attached
                 width = 2.0 * area / max(cv2.arcLength(cnts[oi], True), 1.0)   # mean thickness
-                if fill >= 0.5 and width >= 0.01 * diag:
+                if name.startswith(RING_ONLY):        # Nov 11: a dark-line fallback mask counts only as a closed RING (a dark filled
+                    #                                    area is a photo, a lake on an aerial, a drawing or a title bar, never a boundary);
+                    #                                    a boundary drawn as two lobes that touch encloses two holes: their sum counts
+                    _x, _y, _bw, _bh = cv2.boundingRect(cnts[oi])
+                    if sum(holes) / max(area, 1.0) < 0.6 or _x <= 3 or _y <= 3 or _x + _bw >= w - 3 or _y + _bh >= h - 3:
+                        continue                       # ... and one that runs off the picture is a road or a frame piece, not a ring
+                    how = "ring"
+                elif fill >= 0.5 and width >= 0.01 * diag:
                     how = "filled"
                 elif ring >= 0.6:
                     how = "ring"
@@ -773,8 +803,8 @@ def _longest_open_line(mask, diag):
 
 
 # ================================================== picture: junctions
-def detect_junctions(img, max_points=70, exclude=None, roi=None):
-    """Road-junction-like points: LSD segments -> pairwise crossings -> DBSCAN.
+def _lsd_candidates(img, exclude=None, roi=None):
+    """Road-junction-like points (all of them, unordered): LSD segments -> pairwise crossings -> DBSCAN. Returns (points, weights, arms, segs).
     Crossings of two exactly horizontal/vertical segments are skipped: on picture
     maps those are almost always frames, photo boxes, legends and insets."""
     h, w = img.shape[:2]
@@ -784,7 +814,7 @@ def detect_junctions(img, max_points=70, exclude=None, roi=None):
     lsd = cv2.createLineSegmentDetector(cv2.LSD_REFINE_STD)
     segs = lsd.detect(gray)[0]
     if segs is None:
-        return np.zeros((0, 2)), np.zeros(0), np.zeros((0, 4))
+        return np.zeros((0, 2)), np.zeros(0), np.zeros(0), np.zeros((0, 4))
     segs = segs.reshape(-1, 4).astype(np.float64)
     ln = np.hypot(segs[:, 2] - segs[:, 0], segs[:, 3] - segs[:, 1])
     segs = segs[ln >= 0.006 * diag]
@@ -792,7 +822,7 @@ def detect_junctions(img, max_points=70, exclude=None, roi=None):
         ln = np.hypot(segs[:, 2] - segs[:, 0], segs[:, 3] - segs[:, 1])
         segs = segs[np.argsort(-ln)[:6000]]
     if len(segs) < 2:
-        return np.zeros((0, 2)), np.zeros(0), segs
+        return np.zeros((0, 2)), np.zeros(0), np.zeros(0), segs
     p1 = segs[:, :2]
     d = segs[:, 2:] - segs[:, :2]
     L = np.hypot(d[:, 0], d[:, 1])
@@ -818,7 +848,7 @@ def detect_junctions(img, max_points=70, exclude=None, roi=None):
         if ok.any():
             pts.append(p1[i] + ti[ok, None] * d[i])
     if not pts:
-        return np.zeros((0, 2)), np.zeros(0), segs
+        return np.zeros((0, 2)), np.zeros(0), np.zeros(0), segs
     pts = np.vstack(pts)
     if roi is not None:
         x0, y0, x1, y1 = roi
@@ -829,7 +859,7 @@ def detect_junctions(img, max_points=70, exclude=None, roi=None):
             keep &= ~((pts[:, 0] >= x0) & (pts[:, 0] <= x1) & (pts[:, 1] >= y0) & (pts[:, 1] <= y1))
         pts = pts[keep]
     if len(pts) == 0:
-        return np.zeros((0, 2)), np.zeros(0), segs
+        return np.zeros((0, 2)), np.zeros(0), np.zeros(0), segs
     lab = DBSCAN(eps=6.0, min_samples=2).fit(pts).labels_
     cents, wts = [], []
     for c in set(lab) - {-1}:
@@ -837,7 +867,7 @@ def detect_junctions(img, max_points=70, exclude=None, roi=None):
         cents.append(sel.mean(0))
         wts.append(len(sel))
     if not cents:
-        return np.zeros((0, 2)), np.zeros(0), segs
+        return np.zeros((0, 2)), np.zeros(0), np.zeros(0), segs
     cents, wts = np.array(cents), np.array(wts, float)
     # A junction needs >= 3 arms leaving it in different directions (T = 3, X = 4).
     # A bend of one road (2 arms) or a line touching a label is rejected.
@@ -845,8 +875,38 @@ def detect_junctions(img, max_points=70, exclude=None, roi=None):
     sel = arms >= 3
     cents, wts, arms = cents[sel], wts[sel], arms[sel]
     if len(cents) == 0:
+        return np.zeros((0, 2)), np.zeros(0), np.zeros(0), segs
+    return cents, wts, arms, segs
+
+
+def detect_junctions(img, max_points=70, exclude=None, roi=None, band=None, box_exclude=None):
+    """Road-junction-like points for the matcher, best first: LSD crossings with >= 3 arms (as before), plus (Nov 11, BAND_JUNCTIONS) the
+    junctions of roads drawn as bands (kpc_trace_marks.band_junctions), which go first; points in exclude boxes (index.json exclude_px)
+    and (Nov 11, BOX_MASK) in box_exclude (legend / title / inset / icon boxes the park outline does not run through) are dropped.
+    Then non-maximum suppression (15 px) and at most max_points. Returns (points, weights, segs)."""
+    band = BAND_JUNCTIONS if band is None else band
+    cents, wts, arms, segs = _lsd_candidates(img, exclude=exclude, roi=roi)
+    first = np.zeros(len(cents), bool)
+    if band and TM is not None:
+        bp, ba, _bh, rsegs = TM.band_marks(img, roi=roi)
+        if len(rsegs):
+            segs = np.vstack([np.asarray(segs, float).reshape(-1, 4), rsegs])   # the bands' middle lines count as picture lines too
+        for x0, y0, x1, y1 in (exclude or []):          # the LSD points had index.json's exclude_px applied already
+            k_ = ~((bp[:, 0] >= x0) & (bp[:, 0] <= x1) & (bp[:, 1] >= y0) & (bp[:, 1] <= y1)) if len(bp) else np.zeros(0, bool)
+            bp, ba = bp[k_], ba[k_]
+        if len(bp):
+            cents = np.vstack([cents.reshape(-1, 2), bp]) if len(cents) else bp
+            wts = np.r_[wts, np.full(len(bp), 1000.0)]
+            arms = np.r_[arms, ba.astype(float)]
+            first = np.r_[first, np.ones(len(bp), bool)]
+    if len(cents) and box_exclude:
+        keep = np.ones(len(cents), bool)
+        for x0, y0, x1, y1 in box_exclude:
+            keep &= ~((cents[:, 0] >= x0) & (cents[:, 0] <= x1) & (cents[:, 1] >= y0) & (cents[:, 1] <= y1))
+        cents, wts, arms, first = cents[keep], wts[keep], arms[keep], first[keep]
+    if len(cents) == 0:
         return np.zeros((0, 2)), np.zeros(0), segs
-    order = np.lexsort((-wts, -arms))
+    order = np.lexsort((-wts, -arms, ~first))
     keep = []
     for o in order:          # non-maximum suppression, 15 px
         if all(np.hypot(*(cents[o] - cents[k])) >= 15 for k in keep):
@@ -1395,6 +1455,8 @@ def process_one(ref, row, base: Path, out: Path, pins, http, args):
         return res
     if bnd["touches_edge"]:
         flags.append("boundary touches picture edge (map may be clipped)")
+    if str(bnd.get("mask_name", "")).startswith(RING_ONLY):
+        flags.append("boundary = a thick dark ring line (no colour gave one; Nov 11 dark_ring)")
     bpts = bnd["pts_px"]
 
     # ---- Nov 2 (review): a GeoPDF page carries its own coordinates (kpc_picture_geo.py wrote row['geo']): place the outline by
@@ -1420,7 +1482,10 @@ def process_one(ref, row, base: Path, out: Path, pins, http, args):
         roi = (bx - 1.0 * bw, by - 1.0 * bh, bx + 2.0 * bw, by + 2.0 * bh) if bnd["kind"] == "area" else None
         if row.get("roi_px"):
             roi = tuple(row["roi_px"])
-        P, wts, segs = detect_junctions(img, max_points=args.max_img_points, exclude=row.get("exclude_px"), roi=roi)
+        boxes_ex = TM.junction_exclusions(img, allp) if (BOX_MASK and TM is not None) else None
+        P, wts, segs = detect_junctions(img, max_points=args.max_img_points, exclude=row.get("exclude_px"), roi=roi, box_exclude=boxes_ex)
+        if boxes_ex:
+            flags.append(f"junctions in {len(boxes_ex)} legend / title / inset / icon box(es) not used")
         log(f"   picture junction candidates: {len(P)} (from {len(segs)} LSD segments)")
 
         # ---- step 2b: government basemap
@@ -1429,7 +1494,8 @@ def process_one(ref, row, base: Path, out: Path, pins, http, args):
         half_km = args.box_km / 2.0
         if acres:
             half_km = max(half_km, 1.5 * math.sqrt(acres * 4046.86) / 1000.0)
-        bm = fetch_basemap(http, ref, lat, lon, half_km, base / "cache", use_cache=not args.refresh)
+        bm = fetch_basemap(http, ref, lat, lon, half_km, base / "cache", use_cache=not args.refresh,
+                           offline=bool(getattr(args, "offline", False)))
         for _sk in bm.get("skipped") or []:
             flags.append(f"{_sk} source skipped (robots): partial basemap, matched on the allowed sources only")
         if not bm["points"]:
@@ -1858,10 +1924,57 @@ def picture_selftest():
         problems.append('process_one must call TL.geopdf_plausible and TL.hold_reasons (Nov 7 gates)')
     if 'NEEDS A PERSON' not in src or 'acres_held' not in src:
         problems.append('process_one must hold back as NEEDS A PERSON when acres are outside 0.2x-5x')
+    problems += _offline_selftest()
     for p_ in problems:
         print(p_)
     print('PASS' if not problems else 'FAIL')
     return 0 if not problems else 1
+
+
+def _offline_selftest():
+    """Nov 11 (--offline): the cached basemap is the only source; no web request of any kind; a missing basemap is an 'offline:' error."""
+    import tempfile
+    problems = []
+
+    class _Http:
+        calls = []
+
+        def get_json(self, url, params):
+            self.calls.append(url)
+            raise RuntimeError("test: a web request was asked for")      # stops fetch_basemap at its first request
+    with tempfile.TemporaryDirectory() as td:
+        cdir = Path(td)
+        h = _Http()
+        try:
+            fetch_basemap(h, "US-0001", 38.0, -85.0, 5.0, cdir, use_cache=True, offline=True)
+            problems.append("--offline with no cached basemap must raise")
+        except RuntimeError as e:
+            if not str(e).startswith("offline:"):
+                problems.append(f"--offline with no cached basemap must say offline: ({e})")
+        part = dict(ref="US-0001", version=__version__, pin=[38.0, -85.0], half_km=5.0, skipped=["water"], sources=["roads"],
+                    lines=[], points=[["road", -85.0, 38.0]])
+        (cdir / "US-0001_basemap.json").write_text(json.dumps(part))
+        got = fetch_basemap(h, "US-0001", 38.0, -85.0, 5.0, cdir, use_cache=True, offline=True)
+        if got.get("skipped") != ["water"] or got.get("points") != part["points"]:
+            problems.append("--offline must use a partial cached basemap as it is (skipped list kept for the flags)")
+        for args_ in (dict(lat=38.0, half_km=5.0), dict(lat=38.5, half_km=5.0), dict(lat=38.0, half_km=7.0)):
+            try:
+                fetch_basemap(h, "US-0001", args_["lat"], -85.0, args_["half_km"], cdir, use_cache=True, offline=True)
+                if args_ != dict(lat=38.0, half_km=5.0):
+                    problems.append(f"--offline must refuse a cached basemap for another box {args_}")
+            except RuntimeError as e:
+                if args_ == dict(lat=38.0, half_km=5.0) or not str(e).startswith("offline:"):
+                    problems.append(f"--offline cache check wrong for {args_}: {e}")
+        if h.calls:
+            problems.append(f"--offline made a web request: {h.calls}")
+        # a normal run still never reuses a partial basemap (owner call, Nov 7): it asks the web again
+        try:
+            fetch_basemap(h, "US-0001", 38.0, -85.0, 5.0, cdir, use_cache=True, offline=False)
+        except RuntimeError:
+            pass
+        if not h.calls:
+            problems.append("a normal run must not reuse a partial cached basemap (it must ask again)")
+    return problems
 
 
 # ================================================================ main
@@ -1870,6 +1983,9 @@ def main(argv=None):
     argv = list(sys.argv[1:] if argv is None else argv)
     if '--selftest' in argv:
         return picture_selftest()
+    if '--list-hosts' in argv:      # Nov 11: no request of any kind; reads index.json, pins.json and cache/ only
+        b = argv[argv.index('--base') + 1] if '--base' in argv and argv.index('--base') + 1 < len(argv) else '.'
+        return TH.main([b] + (['--offline'] if '--offline' in argv else []))
     ap = argparse.ArgumentParser(description="KPC Picture-Map Tracer (approximate outlines from agency picture maps)")
     g = ap.add_mutually_exclusive_group(required=True)
     g.add_argument("--refs", nargs="+", help="park references to process, e.g. US-10172")
@@ -1883,6 +1999,9 @@ def main(argv=None):
                     help="stop starting new maps after this many minutes (GitHub Actions ~55 min)")
     ap.add_argument("--max-maps", type=int, default=0, help="process at most N maps this run (0 = no limit)")
     ap.add_argument("--refresh", action="store_true", help="ignore cached basemap downloads")
+    ap.add_argument("--offline", action="store_true",
+                    help="no web request at all: basemaps only from <base>/cache (a before / after replay on the same saved basemaps); "
+                         "a map with no cached basemap is an ERROR row. GeoPDF maps need no basemap")
     ap.add_argument("--min-interval", type=float, default=1.0, help="seconds between web requests")
     ap.add_argument("--box-km", type=float, default=10.0, help="basemap box size around the pin (km)")
     ap.add_argument("--k", type=int, default=8, help="k-means colour clusters")
@@ -1899,9 +2018,22 @@ def main(argv=None):
     ap.add_argument("--chance-ratio", type=float, default=CHANCE_RATIO, help="better-than-chance gate: real >= ratio x decoy")
     ap.add_argument("--chance-margin", type=float, default=CHANCE_MARGIN, help="better-than-chance gate: real >= decoy + margin")
     ap.add_argument("--no-honor-image", action="store_true", help="old behaviour: take the first <ref>_*.jpg, not the chosen image")
+    ap.add_argument("--off", default="", help="matcher-input switches to turn off, comma list: " + ", ".join(SWITCHES) +
+                    " (each is also an environment variable, e.g. KPC_TRACE_BAND_JUNCTIONS=0); 'all' = every one (the earlier inputs)")
+    ap.add_argument("--list-hosts", action="store_true", help="print every host a run on --base would contact, and stop (no request)")
     args = ap.parse_args(argv)
     CHANCE_RATIO, CHANCE_MARGIN = args.chance_ratio, args.chance_margin
     if args.no_honor_image: HONOR_IMAGE = False
+    offs = [x.strip() for x in str(args.off or "").split(",") if x.strip()]
+    if offs == ["all"]:
+        offs = list(SWITCHES)
+    bad_off = [x for x in offs if x not in SWITCHES]
+    if bad_off:
+        print(f"--off: unknown switch(es) {bad_off}; known: {', '.join(SWITCHES)}", file=sys.stderr)
+        return 2
+    for x in offs:
+        globals()[x.upper()] = False
+    log("matcher inputs: " + ", ".join(f"{k} {'on' if globals()[k.upper()] else 'OFF'}" for k in SWITCHES))
 
     base = Path(args.base)
     out = Path(args.out) if args.out else base / "traced"
@@ -1918,6 +2050,15 @@ def main(argv=None):
         log(f"official acres filled in for {n_ac} map row(s) from {args.acres_file}")
     ua = os.environ.get("KPC_TRACER_UA") or DEFAULT_UA
     http = PoliteHttp(ua, min_interval=args.min_interval)
+    if args.offline:
+        if args.refresh:
+            print("--offline and --refresh cannot go together (--refresh asks the web again)", file=sys.stderr)
+            return 2
+
+        def _offline(*a, **k):
+            raise RuntimeError("offline: no web request is made with --offline")
+        http.s.get = _offline          # every request path of PoliteHttp goes through s.get
+        log("offline: no web request; basemaps from " + str(base / "cache"))
     report_path = out / "report.csv"
     report = read_report(report_path)
     report_u_path = out_unoff / "report.csv"          # R-G9U: unofficial results kept separately

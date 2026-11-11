@@ -970,6 +970,33 @@ ZONING = re.compile(r'(?<![a-z])zon(e|es|ing)(?![a-z])', re.I)   # zoning is not
 PARCEL_NAME = re.compile(r'parcel|tax ?(map|lot|parcel)|pva|propert(y|ies)|cadast|ownership|land ?records|lots?\b', re.I)
 
 
+# Nov 11 (KPC owner, 2026-11-11): a search hit whose own title / name / address names ANOTHER state (e.g. Indiana's statewide parcels for a
+# Kentucky county near the river) is not this county's layer; it only used up --max-tries. '<State> County / City / Parish ...' is a place
+# name, not the state (Ohio County KY, Washington County, Kansas City), so those words are taken out before looking.
+_PLACE_WORDS = r'\s+(county|co|city|parish|township|twp|borough|lake|river)(?![a-z])'
+
+
+def states_named(text):
+    """The US state names written in text (letters only; 'West Virginia' is not also 'Virginia'; '<State> County' etc. not counted)."""
+    t = ' ' + re.sub(r'[^a-z]+', ' ', str(text or '').lower()) + ' '
+    found = set()
+    for _f, (_p, nm) in sorted(STATES.items(), key=lambda kv: -len(kv[1][1])):
+        n = nm.lower()
+        if n == 'district of columbia':
+            continue
+        rx = re.compile(r'(?<![a-z])' + re.escape(n) + r'(?![a-z])(?!' + _PLACE_WORDS + ')')
+        if rx.search(t):
+            found.add(nm)
+            t = rx.sub(' ', t)
+    return found
+
+
+def other_state_only(text, own_state_name):
+    """True when text names a US state and none of the states it names is this county's own."""
+    named = states_named(text)
+    return bool(named) and own_state_name not in named
+
+
 def county_at(web, lat, lon):
     p = {'geometry': f'{lon},{lat}', 'geometryType': 'esriGeometryPoint', 'inSR': '4326',
          'spatialRel': 'esriSpatialRelIntersects', 'outFields': 'GEOID,NAME,STATE,BASENAME',
@@ -996,6 +1023,8 @@ class Finder:
         self.web, self.log = web, log
         self.orgs = {}
         self.zoning_skipped = []
+        self.saved_only_skipped = []    # Nov 11: hits on never-contact hosts (services*.arcgis.com ...): not asked, not counted as a try
+        self.other_state_skipped = []   # Nov 11: hits that name another state only
 
     def org_name(self, org_id):
         if not org_id:
@@ -1019,8 +1048,8 @@ class Finder:
         """ArcGIS Online / Hub search with the county name + 'parcels' (and the town name), kept only when the
         item covers the pin, is county-sized, and belongs to a government (host or organisation name).
         Also returns the government servers / organisations seen there, for a look at their own service list."""
-        self.zoning_skipped = []
-        st_name = STATES.get(cty['state'], ('', ''))[1]
+        self.zoning_skipped, self.saved_only_skipped, self.other_state_skipped = [], [], []
+        st_name = self.st_name = STATES.get(cty['state'], ('', ''))[1]
         base = cty['base']
         qs = [f'{base} County parcels', f'parcels "{base} County" {st_name}']
         if place and place.lower() != base.lower():
@@ -1042,6 +1071,12 @@ class Finder:
                 if not (x1 - 0.01 <= lon <= x2 + 0.01 and y1 - 0.01 <= lat <= y2 + 0.01):
                     continue
                 if (x2 - x1) * (y2 - y1) > 25:     # bigger than a big state: not a county layer
+                    continue
+                if banned(url):                    # Nov 11 (#63 rule): a saved-copy-only host is never asked, so it must not use up a try
+                    self.saved_only_skipped.append(f'"{it.get("title")}" ({url})')
+                    continue
+                if st_name and other_state_only(' '.join(str(it.get(k) or '') for k in ('title', 'name')) + ' ' + url, st_name):
+                    self.other_state_skipped.append(f'"{it.get("title")}" ({url})')
                     continue
                 text = ' '.join(str(it.get(k) or '') for k in ('title', 'snippet', 'tags', 'name'))
                 host = (urlparse(url).hostname or '').lower()
@@ -1097,6 +1132,9 @@ class Finder:
             nm = sv.get('name') or ''
             if sv.get('type') in ('MapServer', 'FeatureServer') and PARCEL_NAME.search(nm.split('/')[-1]) and \
                     not NOT_OWNERSHIP.search(nm) and not ZONING.search(nm):
+                if getattr(self, 'st_name', '') and other_state_only(nm, self.st_name):   # Nov 11: another state's parcels
+                    self.other_state_skipped.append(f'{root}/{nm}')
+                    continue
                 out.append(f"{root}/{nm}/{sv['type']}")
         return out
 
@@ -1313,6 +1351,11 @@ def do_park(pk, web, finder, known, layers, no_layer, read_date, args, areas, lo
             zs = finder.zoning_skipped
             if zs:
                 tried.insert(0, f'{len(zs)} zoning layer(s) skipped because zoning is not ownership ({"; ".join(zs[:2])})')
+            if finder.other_state_skipped:
+                tried.insert(0, f'{len(finder.other_state_skipped)} layer(s) of another state skipped ({"; ".join(finder.other_state_skipped[:2])})')
+            if finder.saved_only_skipped:
+                tried.insert(0, f'{len(finder.saved_only_skipped)} hit(s) on saved-copy-only hosts not contacted (services*.arcgis.com / '
+                                f'apps.fs.usda.gov rule; a saved copy can be given with --known) ({"; ".join(finder.saved_only_skipped[:2])})')
             no_layer[fips] = (f'searched ArcGIS Online ({len(cands)} government candidate(s) covering the pin, '
                               f'{len(roots)} government server(s) listed); '
                               + ('; '.join(tried[:4]) if tried else 'none answered'))

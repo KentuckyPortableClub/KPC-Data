@@ -67,7 +67,8 @@ jobs:
           # Nov 6: always run the sharp page + GeoPDF step BEFORE the tracer; do not trace without it
           set +e
           # Nov 11 (KPC owner, 2026-11-11): the tracer's offline checks first (line agreement, TIGERweb water, gates unchanged); no trace if they fail
-          python3 .github/scripts/draft/kpc_trace_picture.py --selftest > /tmp/kpc-trace-selftest.txt 2>&1 && python3 .github/scripts/draft/dev/line_score_test.py >> /tmp/kpc-trace-selftest.txt 2>&1
+          # Nov 11 (later): + the matcher-input checks (band-road junctions, box masks, dark boundary rings), synthetic, no network
+          python3 .github/scripts/draft/kpc_trace_picture.py --selftest > /tmp/kpc-trace-selftest.txt 2>&1 && python3 .github/scripts/draft/dev/line_score_test.py >> /tmp/kpc-trace-selftest.txt 2>&1 && python3 .github/scripts/draft/kpc_trace_marks.py --selftest >> /tmp/kpc-trace-selftest.txt 2>&1 && python3 .github/scripts/draft/dev/marks_match_test.py >> /tmp/kpc-trace-selftest.txt 2>&1
           ST_RC=$?
           python3 .github/scripts/draft/kpc_picture_geo.py ../pm /tmp/kpc-pdf
           GEO_RC=$?
