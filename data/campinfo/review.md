@@ -67,7 +67,7 @@ Updated 2026-11-11. Every fact in <area>.json carries its source url, read date 
 - outdoornebraska.gov: 187 campgrounds · host resting
 - dnr.alaska.gov: 113 campgrounds · robots.txt says no
 - cpw.state.co.us: 97 campgrounds · host resting
-- www.ksoutdoors.gov: 63 campgrounds · host resting (robots.txt could not be read: next run)
+- www.ksoutdoors.gov: 63 campgrounds · robots.txt says no
 - dnr.wisconsin.gov: 58 campgrounds · host resting
 - reserve.floridastateparks.org: 55 campgrounds · robots.txt says no
 - dec.ny.gov: 55 campgrounds · robots.txt says no
@@ -91,7 +91,7 @@ Updated 2026-11-11. Every fact in <area>.json carries its source url, read date 
 - tpwd.texas.gov: 3 campgrounds · robots.txt says no
 - reserve.mdwfp.com: 2 campgrounds · robots.txt says no
 - reserve.arkansasstateparks.com: 2 campgrounds · robots.txt says no
-- ksoutdoors.gov: 2 campgrounds · host resting (robots.txt could not be read: next run)
+- ksoutdoors.gov: 2 campgrounds · robots.txt says no
 - www.fire.ca.gov: 2 campgrounds · host resting (robots.txt could not be read: next run)
 - azprtl.azstateparks.com: 1 campgrounds · host resting (robots.txt could not be read: next run)
 
