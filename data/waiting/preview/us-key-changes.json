@@ -1,11 +1,11 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key', 'build': the held build id from data/waiting/in/data/us-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-11 12:18 UTC",
+ "made": "2026-11-11 13:55 UTC",
  "totals": {
-  "gained": 61,
-  "lost": 11,
-  "pieces_changed": 806,
-  "grade_changed": 33
+  "gained": 72,
+  "lost": 10,
+  "pieces_changed": 868,
+  "grade_changed": 34
  },
  "per_area": {
   "US-AL": {
@@ -46,9 +46,9 @@
   },
   "US-FL": {
    "gained": 1,
-   "lost": 1,
-   "pieces_changed": 131,
-   "grade_changed": 0
+   "lost": 0,
+   "pieces_changed": 140,
+   "grade_changed": 1
   },
   "US-GA": {
    "gained": 2,
@@ -75,15 +75,15 @@
    "grade_changed": 0
   },
   "US-IL": {
-   "gained": 1,
+   "gained": 2,
    "lost": 0,
-   "pieces_changed": 2,
+   "pieces_changed": 24,
    "grade_changed": 0
   },
   "US-IN": {
-   "gained": 1,
+   "gained": 5,
    "lost": 0,
-   "pieces_changed": 24,
+   "pieces_changed": 31,
    "grade_changed": 0
   },
   "US-KS": {
@@ -107,7 +107,7 @@
   "US-ME": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 1,
+   "pieces_changed": 3,
    "grade_changed": 0
   },
   "US-MI": {
@@ -131,7 +131,7 @@
   "US-MS": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 2,
+   "pieces_changed": 4,
    "grade_changed": 1
   },
   "US-MT": {
@@ -149,7 +149,7 @@
   "US-ND": {
    "gained": 5,
    "lost": 0,
-   "pieces_changed": 0,
+   "pieces_changed": 2,
    "grade_changed": 5
   },
   "US-NE": {
@@ -183,21 +183,27 @@
    "grade_changed": 0
   },
   "US-NY": {
-   "gained": 2,
+   "gained": 4,
    "lost": 0,
    "pieces_changed": 2,
    "grade_changed": 0
   },
+  "US-OH": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 5,
+   "grade_changed": 0
+  },
   "US-OK": {
-   "gained": 5,
+   "gained": 6,
    "lost": 0,
    "pieces_changed": 0,
    "grade_changed": 0
   },
   "US-OR": {
-   "gained": 2,
+   "gained": 4,
    "lost": 0,
-   "pieces_changed": 1,
+   "pieces_changed": 3,
    "grade_changed": 0
   },
   "US-PA": {
@@ -221,19 +227,19 @@
   "US-SD": {
    "gained": 0,
    "lost": 1,
-   "pieces_changed": 1,
+   "pieces_changed": 2,
    "grade_changed": 2
   },
   "US-TN": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 13,
+   "pieces_changed": 18,
    "grade_changed": 1
   },
   "US-TX": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 14,
+   "pieces_changed": 15,
    "grade_changed": 0
   },
   "US-UT": {
@@ -249,9 +255,9 @@
    "grade_changed": 1
   },
   "US-WA": {
-   "gained": 2,
+   "gained": 3,
    "lost": 1,
-   "pieces_changed": 1,
+   "pieces_changed": 3,
    "grade_changed": 0
   },
   "US-WI": {
@@ -259,6 +265,12 @@
    "lost": 0,
    "pieces_changed": 76,
    "grade_changed": 2
+  },
+  "US-WV": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 2,
+   "grade_changed": 0
   },
   "US-WY": {
    "gained": 0,
@@ -589,6 +601,31 @@
   },
   {
    "area": "US-IL",
+   "ref": "US-4154",
+   "name": "West Okaw unit of Shelbyville State Fish and Wildlife Area",
+   "old_grade": "pin",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "sgide2108",
+     "WEST OKAW WILDLIFE MANAGEMENT AREA",
+     0,
+     "words"
+    ],
+    [
+     "sgide2118",
+     "WEST OKAW WILDLIFE MANAGEMENT AREA",
+     0,
+     "words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-4154"
+  },
+  {
+   "area": "US-IL",
    "ref": "US-4236",
    "name": "Upper Mississippi River National Wildlife Refuge",
    "old_grade": "pin",
@@ -630,6 +667,82 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-10237"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-5681",
+   "name": "Little Turtle State Recreation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgide3258",
+     "LITTLE TURTLE BEACH",
+     0,
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-5681"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-5689",
+   "name": "Pine Grove State Recreation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgide2439",
+     "PINEGROVE",
+     0,
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-5689"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-5690",
+   "name": "Crooked Creek State Recreation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgide2418",
+     "CROOKED CREEK",
+     0,
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-5690"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-7843",
+   "name": "Pearson Mill State Recreation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgide2900",
+     "PEARSON MILL",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-7843"
   },
   {
    "area": "US-KS",
@@ -1139,6 +1252,25 @@
   },
   {
    "area": "US-NY",
+   "ref": "US-2001",
+   "name": "Adirondack State Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgnycNone",
+     "Adirondack Park",
+     0,
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-2001"
+  },
+  {
+   "area": "US-NY",
    "ref": "US-5308",
    "name": "Split Rock State Forest",
    "old_grade": "pin",
@@ -1155,6 +1287,44 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-5308"
+  },
+  {
+   "area": "US-NY",
+   "ref": "US-8070",
+   "name": "Catskill State Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgnyd1",
+     "Catskill Park",
+     0,
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8070"
+  },
+  {
+   "area": "US-OK",
+   "ref": "US-0491",
+   "name": "Tishomingo National Wildlife Refuge",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgide998",
+     "TISHOMING NATIONAL WILDLIFE REFUGE",
+     0,
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0491"
   },
   {
    "area": "US-OK",
@@ -1272,6 +1442,25 @@
   },
   {
    "area": "US-OR",
+   "ref": "US-10610",
+   "name": "South Santiam State Fish Hatchery",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgide837",
+     "SOUTH SANTIAM HATCHERY",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-10610"
+  },
+  {
+   "area": "US-OR",
    "ref": "US-12837",
    "name": "East Shore BLM Recreation Management Area",
    "old_grade": "pin",
@@ -1300,6 +1489,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-12837"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-12979",
+   "name": "Bonneville State Fish Hatchery",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgide861",
+     "BONNEVILLE FISH HATCHERY",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-12979"
   },
   {
    "area": "US-PA",
@@ -1529,6 +1737,25 @@
   },
   {
    "area": "US-WA",
+   "ref": "US-8662",
+   "name": "Chestnut Beach National Recreation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgide2279",
+     "CHESTNUT BEACH PARK",
+     0,
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8662"
+  },
+  {
+   "area": "US-WA",
    "ref": "US-8663",
    "name": "Plymouth Park National Recreation Area",
    "old_grade": "pin",
@@ -1567,52 +1794,6 @@
   }
  ],
  "lost": [
-  {
-   "area": "US-FL",
-   "ref": "US-6327",
-   "name": "Tenoroc Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "sgflf10761",
-     "Tenoroc State Reserve",
-     27,
-     "name"
-    ],
-    [
-     "sgflf8115",
-     "Tenoroc Fish Management Area",
-     13,
-     "words"
-    ],
-    [
-     "sgflf5903",
-     "Tenoroc Fish Management Area",
-     0,
-     "words"
-    ],
-    [
-     "sgflf5998",
-     "Tenoroc Fish Management Area",
-     0,
-     "words"
-    ],
-    [
-     "sgflf5999",
-     "Tenoroc Fish Management Area",
-     0,
-     "words"
-    ]
-   ],
-   "held_now": [
-    "check (rule R-G8): bigger than the park's own record",
-    "check (rule R-G8): bigger than the park's own record"
-   ],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-6327"
-  },
   {
    "area": "US-IA",
    "ref": "US-0270",
@@ -2020,6 +2201,38 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-0894"
+  },
+  {
+   "area": "US-FL",
+   "ref": "US-3630",
+   "name": "Indian Key State Park",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "191809",
+     "Indian Key Historic State Park",
+     111,
+     "words"
+    ],
+    [
+     "sgfla20",
+     "Indian Key Historic State Park",
+     111,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "191809",
+     "Indian Key Historic State Park",
+     111,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3630"
   },
   {
    "area": "US-HI",
@@ -4153,6 +4366,31 @@
    "pota": "https://pota.app/#/park/US-0042"
   },
   {
+   "area": "US-IL",
+   "ref": "US-4154",
+   "name": "West Okaw unit of Shelbyville State Fish and Wildlife Area",
+   "old_grade": "pin",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "sgide2108",
+     "WEST OKAW WILDLIFE MANAGEMENT AREA",
+     0,
+     "words"
+    ],
+    [
+     "sgide2118",
+     "WEST OKAW WILDLIFE MANAGEMENT AREA",
+     0,
+     "words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-4154"
+  },
+  {
    "area": "US-PA",
    "ref": "US-0621",
    "name": "Todd Sanctuary State Conservation Area",
@@ -4176,6 +4414,38 @@
    "held_now": [],
    "by_answer": true,
    "pota": "https://pota.app/#/park/US-0621"
+  },
+  {
+   "area": "US-FL",
+   "ref": "US-3630",
+   "name": "Indian Key State Park",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "191809",
+     "Indian Key Historic State Park",
+     111,
+     "words"
+    ],
+    [
+     "sgfla20",
+     "Indian Key Historic State Park",
+     111,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "191809",
+     "Indian Key Historic State Park",
+     111,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3630"
   },
   {
    "area": "US-CT",
@@ -4233,6 +4503,25 @@
    "held_now": [],
    "by_answer": true,
    "pota": "https://pota.app/#/park/US-10431"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-7843",
+   "name": "Pearson Mill State Recreation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgide2900",
+     "PEARSON MILL",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-7843"
   },
   {
    "area": "US-KS",
@@ -4347,63 +4636,6 @@
    "held_now": [],
    "by_answer": true,
    "pota": "https://pota.app/#/park/US-8532"
-  },
-  {
-   "area": "US-NE",
-   "ref": "US-3375",
-   "name": "Stolley National Historic Site",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "103429",
-     "Stolley Park",
-     39,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-3375"
-  },
-  {
-   "area": "US-NJ",
-   "ref": "US-6462",
-   "name": "Garret Mountain Reservation State Park",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "225338",
-     "Garret Mountain Reservation",
-     185,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-6462"
-  },
-  {
-   "area": "US-NM",
-   "ref": "US-11823",
-   "name": "Coronado Historic Site",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "80742",
-     "Coronado Historic Site",
-     104,
-     "reviewed"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-11823"
   },
   {
    "area": "US-FL",

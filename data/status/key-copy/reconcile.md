@@ -2,10 +2,9 @@
 
 KPC-Data key copy vs KPC-Links under the same build stamp (kpc_key_reconcile.py check; fails closed)
 
-- world-key: build W-42693026407 (KPC-Links W-42693026407): FAILED CLOSED, 8065 unexplained
+- world-key: build W-43006330573 (KPC-Links W-43006330573): FAILED CLOSED, 8065 unexplained
   - AE.json: KPC-Links 8 outlined, KPC-Data 9; approved adds 1 (label missing 0); unexplained 0
   - AU.json: KPC-Links 8155 outlined, KPC-Data 8843; approved adds 867 (label missing 0); unexplained 8065
-  - BE.json: KPC-Links 164 outlined, KPC-Data 174; approved adds 10 (label missing 0); unexplained 0
   - BZ.json: KPC-Links 53 outlined, KPC-Data 54; approved adds 1 (label missing 0); unexplained 0
   - CD.json: KPC-Links 9 outlined, KPC-Data 13; approved adds 4 (label missing 0); unexplained 0
   - CL.json: KPC-Links 167 outlined, KPC-Data 169; approved adds 2 (label missing 0); unexplained 0
@@ -15,11 +14,9 @@ KPC-Data key copy vs KPC-Links under the same build stamp (kpc_key_reconcile.py 
   - DK.json: KPC-Links 106 outlined, KPC-Data 108; approved adds 2 (label missing 0); unexplained 0
   - ES.json: KPC-Links 1789 outlined, KPC-Data 1790; approved adds 1 (label missing 0); unexplained 0
   - FO.json: KPC-Links 2 outlined, KPC-Data 3; approved adds 1 (label missing 0); unexplained 0
-  - GB.json: KPC-Links 3673 outlined, KPC-Data 3818; approved adds 145 (label missing 0); unexplained 0
   - GR.json: KPC-Links 229 outlined, KPC-Data 263; approved adds 34 (label missing 0); unexplained 0
   - HU.json: KPC-Links 23 outlined, KPC-Data 27; approved adds 4 (label missing 0); unexplained 0
   - ID.json: KPC-Links 18 outlined, KPC-Data 26; approved adds 8 (label missing 0); unexplained 0
-  - IE.json: KPC-Links 103 outlined, KPC-Data 116; approved adds 13 (label missing 0); unexplained 0
   - IT.json: KPC-Links 1919 outlined, KPC-Data 1940; approved adds 21 (label missing 0); unexplained 0
   - KE.json: KPC-Links 24 outlined, KPC-Data 27; approved adds 3 (label missing 0); unexplained 0
   - LK.json: KPC-Links 12 outlined, KPC-Data 16; approved adds 4 (label missing 0); unexplained 0
@@ -36,4 +33,4 @@ KPC-Data key copy vs KPC-Links under the same build stamp (kpc_key_reconcile.py 
   - SI.json: KPC-Links 137 outlined, KPC-Data 140; approved adds 3 (label missing 0); unexplained 0
   - ZA.json: KPC-Links 69 outlined, KPC-Data 76; approved adds 7 (label missing 0); unexplained 0
 - ca-key: build CA-42252274247 (KPC-Links CA-43003880140): ok, 0 unexplained
-- us-key: build US-42504172086 (KPC-Links US-42996829343): ok, 0 unexplained
+- us-key: build US-42504172086 (KPC-Links US-43021462438): ok, 0 unexplained
