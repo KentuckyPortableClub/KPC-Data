@@ -12,6 +12,9 @@ A new link is only given when it opens (HTTP 200) and its PDF first page or page
 park. Otherwise new_url is null with the reason. It decides nothing and never edits club files.
 """
 import argparse, glob, unicodedata
+import importlib.util as _ilu, os as _os   # noqa: E402  (owner rule, 2026-11-10: the club's one host check, before any request)
+_hs = _ilu.spec_from_file_location("kpc_host_rules", _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "..", "..", "kpc_host_rules.py"))
+_hr = _ilu.module_from_spec(_hs); _hs.loader.exec_module(_hr); _hr.install()
 
 __version__ = "0.1.0"
 TOOL = "link-fix"

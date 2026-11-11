@@ -45,6 +45,7 @@ import xml.etree.ElementTree as ET
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from kpc_manners import Manners, page_text, links_in, pdf_text  # noqa: E402
+import kpc_host_rules; kpc_host_rules.install()
 try: from kpc_manners import browser_text  # noqa: E402
 except Exception: browser_text = lambda u, M: ''  # noqa: E731,E722
 

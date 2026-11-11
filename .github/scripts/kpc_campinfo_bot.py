@@ -43,6 +43,7 @@ Env: AREAS='US-KY US-TN' (blank = next unfinished in queue order) · BROWSER=1 (
 import json, os, pathlib, re, sys, time, urllib.parse, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from kpc_manners import Manners, page_text, links_in  # noqa: E402
+import kpc_host_rules; kpc_host_rules.install()
 
 OUT = pathlib.Path(os.environ.get('OUT') or 'data/campinfo')
 LINKS = pathlib.Path(os.environ.get('LINKS') or 'links')

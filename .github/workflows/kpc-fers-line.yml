@@ -91,6 +91,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     outputs:
+      wait: ${{ steps.wait.outputs.wait }}
       go: ${{ steps.check.outputs.go }}
       verdict: ${{ steps.check.outputs.verdict }}
     steps:
@@ -103,7 +104,19 @@ jobs:
       - uses: actions/checkout@v5
         with:
           path: kpcdata
+      - name: Wait for the saved-copy reader (the 2-fer run waits for it)
+        id: wait
+        run: |
+          # owner decision, 2026-11-10: the finder reads the saved-copy-only map layers only after its saved-copy reader is in
+          # KPC-Links (the literal text held_saved_missing in kpc_fers.py). Until then no pairs are tested and nothing is saved.
+          if grep -qF held_saved_missing .github/scripts/kpc_fers.py 2>/dev/null; then
+            echo "wait=0" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice title=2-fers waiting::the 2-fer run waits for the saved-copy reader in KPC-Links (held_saved_missing is not in kpc_fers.py yet): no pairs are tested this run, nothing is saved"
+            echo "wait=1" >> "$GITHUB_OUTPUT"
+          fi
       - name: 2-fer pre-line check (GO / HOLD)
+        if: ${{ steps.wait.outputs.wait != '1' }}
         id: check
         env:
           FORCE: ${{ inputs.force }}
@@ -116,7 +129,7 @@ jobs:
           grep -q '^go=yes' "$GITHUB_OUTPUT" || { kpc_rc=$?; echo "::warning title=2-fer pre-line check::HOLD: the 2-fer line for $STATES ($RUN_TAG) does not build; see kpcdata/data/status/fers-preline/$RUN_TAG.md"; echo "2-fer pre-line check - HOLD: the 2-fer line for $STATES ($RUN_TAG) does not build; see kpcdata/data/status/fers-preline/$RUN_TAG.md" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           [ -f "kpcdata/data/status/fers-preline/$RUN_TAG.md" ] && cat "kpcdata/data/status/fers-preline/$RUN_TAG.md" >> "$GITHUB_STEP_SUMMARY"; true
       - name: Save the pre-line report (only data/status/fers-preline)
-        if: always()
+        if: ${{ always() && steps.wait.outputs.wait != '1' }}
         run: bash .github/scripts/kpc_push_data.sh kpcdata "2-fer pre-line check ${{ inputs.tag }}" data/status/fers-preline || { kpc_rc=$?; echo "::warning title=2-fer pre-line check::report not saved (the verdict above still holds)"; echo "2-fer pre-line check - report not saved (the verdict above still holds)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Report hidden failures (Nov 2 review, G8; Nov 4 PM fix bundle item 7)
         if: always()
@@ -152,7 +165,7 @@ jobs:
           PY
   fetcher:
     needs: preline
-    if: ${{ needs.preline.outputs.go == 'yes' && inputs.stage == 'all' }}
+    if: ${{ needs.preline.outputs.wait != '1' && (needs.preline.outputs.go == 'yes' && inputs.stage == 'all') }}
     runs-on: ubuntu-latest
     timeout-minutes: 355
     steps:
@@ -283,7 +296,7 @@ jobs:
           PY
   worker:
     needs: [preline, fetcher]
-    if: ${{ always() && needs.preline.outputs.go == 'yes' && inputs.stage != 'checker' && (inputs.stage == 'worker' || needs.fetcher.result == 'success') }}
+    if: ${{ needs.preline.outputs.wait != '1' && (always() && needs.preline.outputs.go == 'yes' && inputs.stage != 'checker' && (inputs.stage == 'worker' || needs.fetcher.result == 'success')) }}
     runs-on: ubuntu-latest
     timeout-minutes: 355
     steps:
@@ -393,7 +406,7 @@ jobs:
           PY
   checker:
     needs: [preline, fetcher, worker]
-    if: ${{ always() && needs.preline.outputs.go == 'yes' && (inputs.stage == 'checker' || needs.worker.result == 'success') }}
+    if: ${{ needs.preline.outputs.wait != '1' && (always() && needs.preline.outputs.go == 'yes' && (inputs.stage == 'checker' || needs.worker.result == 'success')) }}
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:

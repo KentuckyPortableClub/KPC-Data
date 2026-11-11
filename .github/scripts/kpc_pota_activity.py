@@ -6,6 +6,7 @@ the same calls kpc_state_links / kpc_northam already make) -> data/pota/activity
 A location that fails keeps last week's numbers. One request at a time, 0.5 s apart. Weekly. Never fails.
   python3 .github/scripts/kpc_pota_activity.py"""
 import json, pathlib, time, urllib.request
+import kpc_host_rules; kpc_host_rules.install()
 
 OUT = pathlib.Path('data/pota/activity.json')
 UA = 'KPC-Bot/1.0 (Kentucky Portable Club ham radio club; https://github.com/KentuckyPortableClub)'

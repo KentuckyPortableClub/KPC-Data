@@ -31,13 +31,12 @@ def y(name):
 
 line, chain, post, copy = y('kpc-fers-line.yml'), y('kpc-fers-chain.yml'), y('kpc-fers-postline.yml'), y('kpc-copy-from-links.yml')
 # ---- trigger wiring
-check(set(chain['on']) == {'workflow_run'} and chain['on']['workflow_run']['workflows'] == [copy['name']] and chain['on']['workflow_run']['types'] == ['completed'],
-      f"chain: only workflow_run on '{copy['name']}' (the copy's real name), completed")
-check(chain['jobs']['plan']['if'].replace(' ', '') == "${{github.event.workflow_run.conclusion=='success'}}", 'chain: only after a SUCCESSFUL copy')
+check(set(chain['on']) == {'workflow_dispatch'}, 'chain: dispatch only (the copy workflow\'s chain job starts it; owner rule, 2026-11-10)')
+check('if' not in chain['jobs']['plan'], 'chain: the plan job has no event condition (only a dispatch can start it)')
 L = chain['jobs']['line']
 check(L['uses'] == './.github/workflows/kpc-fers-line.yml' and L['with']['key'] == 'build' and L['with']['force'] == 'no' and L['with']['next'] == '' and L['strategy']['max-parallel'] <= 2,
       'chain: calls kpc-fers-line.yml (workflow_call) with key=build, force=no, no next, at most 2 at a time')
-check(set(post['on']) == {'workflow_run'} and post['on']['workflow_run']['workflows'] == [line['name'], chain['name']], f"post-line: only workflow_run on '{line['name']}' + '{chain['name']}' (a called line fires only its caller's name)")
+check(set(post['on']) == {'workflow_run', 'workflow_dispatch'} and post['on']['workflow_run']['workflows'] == [line['name']], f"post-line: workflow_run on '{line['name']}' only (a stand-alone line) + the chain's dispatch, never on the chain's own completion")
 check(post['jobs']['postline'].get('continue-on-error') is True and all(s.get('continue-on-error') for s in post['jobs']['postline']['steps'] if 'run' in s), 'post-line: never fails (job + steps continue on error)')
 check(post['permissions'] == {'contents': 'write'} and all(re.sub(r'\s+', ' ', s['run'].split('"', 2)[2]).strip().startswith('data/status/fers-postline data/status/fers-chain ||') for s in post['jobs']['postline']['steps'] if 'kpc_push_data' in s.get('run', '')), 'post-line: saves only data/status/fers-postline + the gate state (data/status/fers-chain)')
 for trig in ('workflow_dispatch', 'workflow_call'):
@@ -148,7 +147,9 @@ with tempfile.TemporaryDirectory() as t:
     check(len(s['us-key']['waiting']) == 8 and all('map audit not clean' in v and 'not audited' in v for v in s['us-key']['waiting'].values()), 'plan (gate on): every other US area waits, naming its unaudited states')
     r2, s2, _ = run(D, Lk, 'on'); check(r2 == [], 'plan: the same build never starts an area twice (seen.json)')
     w(Lk / 'data/us-key/index.json', {'build': 'US-201', 'rules': 'rules-us-key'}); w(Lk / 'data/status/key-check/last-us.json', {'build': 'US-201'}); w(D / 'data/waiting/in/data/us-key/index.json', {'build': 'US-201'})
-    r3, s3, _ = run(D, Lk, 'on'); check([x['tag'] for x in r3] == ['southeast'] and s3['us-key']['build'] == 'US-201', 'plan: a NEW build runs its areas again')
+    r3, s3, _ = run(D, Lk, 'on'); check(r3 == [] and s3['us-key']['build'] == 'US-201', 'plan: a NEW build with the same key files does not run the area again (fingerprint)')
+    w(Lk / 'data/us-key/US-TN.json', {'parks': {'US-1': {}}})
+    r4, s4, _ = run(D, Lk, 'on'); check([x['tag'] for x in r4] == ['southeast'], 'plan: a build that changed an area key file runs that area again')
 for name, dirty in [('an open row (no answer)', {'US-TN': None}), ("a row answered NO", {'US-TN': 'NO: outline wrong'}), ('a row answered only by a pattern', None)]:
     with tempfile.TemporaryDirectory() as t:
         D, Lk = repo(t, ready=SE, dirty=dirty)

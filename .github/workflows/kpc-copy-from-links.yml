@@ -62,6 +62,8 @@ jobs:
     if: ${{ needs.gate.outputs.work == '1' }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    outputs:
+      keys: ${{ steps.kept_green_1.outputs.keys }}
     steps:
       - uses: actions/checkout@v5
         with:
@@ -186,6 +188,7 @@ jobs:
           )
           echo "$KD" | grep '^::' || true   # ok: a pipeline (its exit status is the last command; follow-up: pipefail)
           KDIRS=$(echo "$KD" | grep '^DIRS=' | cut -d= -f2-)
+          echo "keys=$(echo $KDIRS)" >> "$GITHUB_OUTPUT"   # owner rule, 2026-11-10: the 2-fer chain starts only when a key really came over
           for k in data/us-key data/ca-key data/world-key; do case " $KDIRS " in *" $k "*) ;; *) (cd kpcdata && git checkout -q HEAD -- "$k" 2>/dev/null; git clean -qfd -- "$k" 2>/dev/null) ;; esac; done
           # a key build made before the stamp existed gets an id from its content fingerprint (same build = same id every hour)
           # Nov 2 review (Mapping #7): the fingerprint is now THIS key's own (kpc_key_id.py one), not one sha1 over all three keys,
@@ -349,7 +352,7 @@ jobs:
   # already ran (data/status/fers-chain/seen.json), so a start with no new key build does nothing.
   chain:
     needs: copy
-    if: ${{ needs.copy.result == 'success' && github.event_name != 'schedule' }}
+    if: ${{ needs.copy.result == 'success' && needs.copy.outputs.keys != '' }}
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:

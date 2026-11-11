@@ -60,6 +60,9 @@ from shapely.geometry import Point, shape
 import numpy as np
 import shapely
 from shapely.ops import unary_union
+import importlib.util as _ilu, os as _os   # noqa: E402  (owner rule, 2026-11-10: the club's one host check, before any request)
+_hs = _ilu.spec_from_file_location("kpc_host_rules", _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "..", "..", "kpc_host_rules.py"))
+_hr = _ilu.module_from_spec(_hs); _hs.loader.exec_module(_hr); _hr.install()
 
 VERSION = "0.1.0"
 USER_AGENT = "KPC-no-recheck (https://github.com/KentuckyPortableClub)"

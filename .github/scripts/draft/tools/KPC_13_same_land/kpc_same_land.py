@@ -28,6 +28,9 @@ import urllib.parse
 import urllib.robotparser
 
 import requests
+import importlib.util as _ilu, os as _os   # noqa: E402  (owner rule, 2026-11-10: the club's one host check, before any request)
+_hs = _ilu.spec_from_file_location("kpc_host_rules", _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "..", "..", "kpc_host_rules.py"))
+_hr = _ilu.module_from_spec(_hs); _hs.loader.exec_module(_hr); _hr.install()
 from pyproj import Geod, Transformer
 from shapely import make_valid
 from shapely.geometry import (GeometryCollection, LineString, MultiLineString,
@@ -153,6 +156,8 @@ class Polite:
 
     def robots_ok(self, url):
         """robots.txt is obeyed for web pages (APIs are not web pages)."""
+        if not _hr.host_ok(url)[0]:   # saved-copy-only / never-contact host: no robots.txt request either
+            return False
         if self.is_api(url):
             return True
         parts = urllib.parse.urlsplit(url)
@@ -178,6 +183,9 @@ class Polite:
                 return rec["data"]
         if self.offline:
             raise SourceProblem("SOURCE DOWN", "offline mode and nothing saved in the cache for this address")
+        ok, why = _hr.host_ok(url)
+        if not ok:   # owner rule, 2026-11-10: refused before any request; only a saved copy (the cache above) is read
+            raise SourceProblem("SOURCE DOWN", f"refused, no request made: {why}")
         if not self.robots_ok(url):
             raise SourceProblem("BLOCKED BY ROBOTS", "the site's robots.txt asks bots not to read this page")
         host = urllib.parse.urlsplit(url).netloc

@@ -80,8 +80,21 @@ def merge(doc, rows):
         for f in FIELDS:
             if f != 'added' and r.get(f) not in (None, ''): new[f] = r[f]
         if new != old: have[k] = new; updated += 1
-    doc['rows'] = [have[k] for k in sorted(have)]; doc['format'] = FORMAT; doc.setdefault('about', ABOUT)
+    doc['rows'] = [honest_who(have[k]) for k in sorted(have)]; doc['format'] = FORMAT; doc.setdefault('about', ABOUT)
     return doc, added, updated
+
+
+def honest_who(r):
+    """Same rule as kpc_master.honest_who (KPC-Links), on every merge so an older list cannot bring a wrong row back: a bot row whose
+    layer a bot may not read and with no direct file a bot may fetch is a person's; an OPEN bot row on an allowed host with no direct
+    file is a layer the bot re-reads itself, not a download: held. Never turns a person's or a never row into a bot's."""
+    if r.get('who') != 'bot': return r
+    m = re.search(r'direct file:\s*(\S+)', str(r.get('note') or '')); f = m.group(1) if m else None
+    w, _ = HR.who_for(r.get('url') or '', file_url=f)
+    if w != 'bot': return dict(r, who=w)
+    if r.get('status') == 'open' and not f:
+        return dict(r, status='held', why=(str(r.get('why') or '') + '; the bot re-reads this layer itself (allowed host): nobody downloads it').lstrip('; '))
+    return r
 
 
 def save(doc, path=None):

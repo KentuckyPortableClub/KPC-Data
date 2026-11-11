@@ -18,6 +18,9 @@ Python 3.12, standard library only (pypdf optional, for PDF tables).  python kpc
 import argparse, csv, datetime, hashlib, html.parser, io, json, math, os, re, shutil, sys, tempfile
 import time, unicodedata, urllib.error, urllib.parse, urllib.request, urllib.robotparser, zipfile
 import xml.etree.ElementTree as ET
+import importlib.util as _ilu, os as _os   # noqa: E402  (owner rule, 2026-11-10: the club's one host check, before any request)
+_hs = _ilu.spec_from_file_location("kpc_host_rules", _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "..", "..", "kpc_host_rules.py"))
+_hr = _ilu.module_from_spec(_hs); _hs.loader.exec_module(_hr); _hr.install()
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)

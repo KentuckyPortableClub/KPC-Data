@@ -26,6 +26,9 @@ from urllib.robotparser import RobotFileParser
 
 import numpy as np
 import requests
+import importlib.util as _ilu, os as _os   # noqa: E402  (owner rule, 2026-11-10: the club's one host check, before any request)
+_hs = _ilu.spec_from_file_location("kpc_host_rules", _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "..", "..", "kpc_host_rules.py"))
+_hr = _ilu.module_from_spec(_hs); _hs.loader.exec_module(_hr); _hr.install()
 import shapely
 from pyproj import Geod, Transformer
 from rapidfuzz import fuzz
@@ -105,6 +108,8 @@ class Http:
         self.last[host] = self.clock()
 
     def robots_ok(self, url: str) -> bool:
+        if not _hr.host_ok(url)[0]:   # saved-copy-only / never-contact host: no robots.txt request either
+            return False
         u = urlparse(url)
         base = f"{u.scheme}://{u.netloc}"
         if base not in self.robots:
@@ -143,6 +148,9 @@ class Http:
                 return (f.read_bytes() if kind == "bytes" else json.loads(f.read_text())), read
         if self.offline:
             raise SourceDown(f"offline and not in the cache: {url}")
+        ok, why = _hr.host_ok(url)
+        if not ok:   # owner rule, 2026-11-10: refused before any request; only a saved copy (the cache above) is read
+            raise SourceDown(f"refused, no request made: {why}")
         host = urlparse(url).netloc
         if self.failed_hosts[host] >= 3:   # this host already failed 3 times this run: don't keep knocking
             raise SourceDown(f"{host}: down for this run (failed 3 times)")

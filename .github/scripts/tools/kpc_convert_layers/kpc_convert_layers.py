@@ -26,6 +26,7 @@ import time
 import traceback
 import urllib.robotparser
 import zipfile
+import importlib.util
 from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 
 import requests
@@ -99,6 +100,30 @@ def reg_domain(host: str) -> str:
     return ".".join(parts[-2:])
 
 
+def _load_host_rules():
+    """Nov 10: the club's ONE pre-request host check (.github/scripts/kpc_host_rules.py). No fallback: without it nothing is fetched."""
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "kpc_host_rules.py")
+    spec = importlib.util.spec_from_file_location("kpc_host_rules", p)
+    m = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(m)
+    return m
+
+
+HR = _load_host_rules()
+MAX_HOPS = 5
+STOP_ROBOTS = ["User-agent: *", "Disallow: /"]
+
+
+def refusal(url: str, hop_from: str | None = None) -> str | None:
+    """Why this address may get no request of any kind (robots.txt included), or None. Asked before every request and every hop."""
+    ok, why = HR.host_ok(url)
+    if not ok:
+        return "host rule: " + why
+    if hop_from and urlparse(hop_from).scheme.lower() == "https" and urlparse(url).scheme.lower() != "https":
+        return f"redirect from https to a plain address ({url[:80]})"
+    return banned(url)
+
+
 # ---------------------------------------------------------------- polite HTTP
 class PoliteSession:
     """One request at a time (the tool is single-threaded), per-host minimum
@@ -111,21 +136,44 @@ class PoliteSession:
         self.robots = {}
 
     def allowed_by_robots(self, url: str) -> bool:
+        if refusal(url):   # Nov 10: the host rules first; a refused host's robots.txt is never asked for
+            return False
         p = urlparse(url)
         root = f"{p.scheme}://{p.netloc}"
         if root not in self.robots:
             rp = urllib.robotparser.RobotFileParser()
             try:
-                self._wait(p.netloc)
-                r = self.s.get(root + "/robots.txt", timeout=20)
+                r = self._follow(root + "/robots.txt", timeout=20)
                 if r.status_code == 200 and "text/html" not in r.headers.get("content-type", ""):
                     rp.parse(r.text.splitlines())
+                elif r.status_code in (200, 404, 410):
+                    rp.parse([])  # no robots file (or an HTML page) = no rules
                 else:
-                    rp.parse([])  # 4xx/5xx/HTML -> no rules
-            except requests.RequestException:
-                rp.parse([])
+                    rp.parse(STOP_ROBOTS)  # Nov 10: 401 / 403 / other 4xx / 5xx = disallow (fail closed)
+            except (requests.RequestException, Refused):
+                rp.parse(STOP_ROBOTS)  # no answer, or a refused redirect = disallow
             self.robots[root] = rp
         return self.robots[root].can_fetch(USER_AGENT, url)
+
+    def _follow(self, url, *, params=None, stream=False, timeout=90, headers=None, robots=False):
+        """One GET, redirects followed one hop at a time: each hop is checked (host rules, https downgrade, banned list and,
+        for data, that host's robots.txt) BEFORE it is requested."""
+        self._wait(urlparse(url).netloc)
+        r = self.s.get(url, params=params, stream=stream, timeout=timeout, headers=headers or {}, allow_redirects=False)
+        for _ in range(MAX_HOPS):
+            if not r.is_redirect:
+                return r
+            nxt = urljoin(r.url, r.headers.get("location", ""))
+            r.close()
+            why = refusal(nxt, hop_from=r.url)
+            if not why and robots and not self.allowed_by_robots(nxt):
+                why = f"robots.txt on {host_of(nxt)} disallows {urlparse(nxt).path}"
+            if why:
+                raise Refused("redirect not followed: " + why)
+            self._wait(urlparse(nxt).netloc)
+            r = self.s.get(nxt, stream=stream, timeout=timeout, headers=headers or {}, allow_redirects=False)
+        r.close()
+        raise Refused(f"more than {MAX_HOPS} redirects from {url[:80]}")
 
     def _wait(self, netloc):
         t = self.last.get(netloc, 0) + MIN_DELAY_S - time.time()
@@ -134,16 +182,15 @@ class PoliteSession:
         self.last[netloc] = time.time()
 
     def get(self, url, *, params=None, stream=False, timeout=90, headers=None, tries=4, check_robots=True):
-        b = banned(url)
+        b = refusal(url)
         if b:
             raise Refused(b)
         if check_robots and not self.allowed_by_robots(url):
             raise Refused(f"robots.txt on {host_of(url)} disallows {urlparse(url).path}")
         delay = 3.0
         for i in range(tries):
-            self._wait(urlparse(url).netloc)
             try:
-                r = self.s.get(url, params=params, stream=stream, timeout=timeout, headers=headers or {})
+                r = self._follow(url, params=params, stream=stream, timeout=timeout, headers=headers, robots=check_robots)
             except requests.RequestException as e:
                 if i == tries - 1:
                     raise

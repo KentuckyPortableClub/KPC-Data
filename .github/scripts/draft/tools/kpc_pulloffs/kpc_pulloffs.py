@@ -34,6 +34,9 @@ from scipy import ndimage
 from shapely import contains_xy
 from shapely.geometry import (LineString, MultiLineString, MultiPoint, Point, Polygon, box, shape)
 from shapely.ops import transform as shp_transform, unary_union
+import importlib.util as _ilu, os as _os   # noqa: E402  (owner rule, 2026-11-10: the club's one host check, before any request)
+_hs = _ilu.spec_from_file_location("kpc_host_rules", _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "..", "..", "kpc_host_rules.py"))
+_hr = _ilu.module_from_spec(_hs); _hs.loader.exec_module(_hr); _hr.install()
 
 VERSION = "1.0.0"
 TOOL_DIR = os.path.dirname(os.path.abspath(__file__))

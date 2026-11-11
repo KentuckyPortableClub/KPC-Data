@@ -1,6 +1,6 @@
 name: KPC outside tools (2-fer checker, map-format converter, map-page links) - REVIEW ONLY
 # Oct 31 2026 (HQ, Brandon 4:44 PM 'yes'): the outside coder's three tools, used NOW as review tools until Fable reviews,
-# fixes and wires them properly (scheduled Nov 6). They run from .github/scripts/draft/tools/ unchanged; glue =
+# fixes and wires them properly (scheduled Nov 6). They run from .github/scripts/tools/ unchanged; glue =
 # .github/scripts/kpc_outside_tools.py. NOTHING here edits data/fers, data/docs, a key or a card:
 #   fers     -> data/fers-check/<area>.json + .summary.md (KY first, then every US + Canada area)  -> chat 2 rechecks, chat 11 grades
 #   convert  -> branch tools-out convert/ (GeoJSON near each pin + report.csv)                     -> chat 11 grades, chat 9 LAYER lines
@@ -34,7 +34,7 @@ jobs:
       T: ${{ github.event.inputs.tools }}
       TEST: ${{ github.event.inputs.test }}
       KPC_CONTACT: 'https://github.com/KentuckyPortableClub (Kentucky Portable Club ham radio club)'
-      DR: .github/scripts/draft/tools
+      DR: .github/scripts/tools
     steps:
       - uses: actions/checkout@v5
         with:

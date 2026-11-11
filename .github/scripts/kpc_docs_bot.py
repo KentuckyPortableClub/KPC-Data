@@ -27,6 +27,7 @@ Env: AREAS='US-MO US-FL' (blank = the next unfinished areas in queue order) · M
      · LINKS (the KPC-Links checkout, default 'links') · OUT (default data/docs) · SAMPLE=25 (Kentucky finder check size)
 """
 import io, json, os, pathlib, re, sys, time, urllib.error, urllib.parse, urllib.request, urllib.robotparser
+import kpc_host_rules; kpc_host_rules.install()
 
 OUT = pathlib.Path(os.environ.get('OUT') or 'data/docs')
 LINKS = pathlib.Path(os.environ.get('LINKS') or 'links')

@@ -11,6 +11,7 @@ The network is used ONLY for a path the manifest lists, so before the first move
 no reader changes behaviour. KPC_ARCHIVE_FETCH=off turns the fetch off. Every download is checked against the manifest's sha256.
 Never raises."""
 import hashlib, json, os, pathlib, urllib.request
+import kpc_host_rules; kpc_host_rules.install()
 
 REPO = 'KentuckyPortableClub/KPC-Archive'
 RAW = f'https://raw.githubusercontent.com/{REPO}/main/'

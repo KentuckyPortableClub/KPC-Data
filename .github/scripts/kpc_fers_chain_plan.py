@@ -6,9 +6,12 @@ pre and post line bots for the 2fer system."). The 2-fers stay HELD until a pers
 (workflow_run on the hourly copy). Decides which 2-fer areas get a line on a NEW key build. Starts nothing itself, releases nothing:
 it prints the area list for the workflow's matrix.
 
-An area of a key runs once per key build, when ALL hold:
-  * KPC-Links' build of that key is a FULL build on the CURRENT rules (index 'rules' == kpc_key_freeze.rules_hash: links-04)
-  * the links-01 post-key check ran on that build (KPC-Links data/status/key-check/last-<us|ca>.json names it)
+An area of a key runs once per area fingerprint (its key files + the 2-fer rules hash; done = its line wrote a READY verdict,
+a line that held / failed / was cancelled may start again, at most TRIES times), when ALL hold:
+  * the area is on KPC-Links' .github/fers-ready-areas.json (2-fers are US + Canada only)
+  * every state of the area was built green on the CURRENT rules in that build (US: its own index 'states' row carries the
+    rules hash and it is not 'failed'; keys without per-state rows: a FULL build on the current rules)
+  * the links-01 post-key check ran on that build and lists no park of the area as a worse grade or outline -> pin
   * the build has come over to KPC-Data (data/waiting/in/data/<key>/index.json or data/<key>/index.json carries its id)
   * nobody graded the build NO / FAIL / WITHDRAWN (kpc_key_freeze.graded_no: a person, Quality or old chat 11; a NO only holds)
   * the CHAIN GATE = the repo variable KPC_FERS_CHAIN_GATE when set BY HAND (always wins: Brandon's off), else 'on' once it turned
@@ -28,10 +31,10 @@ An area of a key runs once per key build, when ALL hold:
 At most MAX (3) areas per start; the rest come on the next hourly copy. Kentucky (its own key) is never in the chain.
 CA and world finishing later: each key's 2-fers wait for THAT key's own new build (the US areas do not wait for Canada); inside a
 line the other keys are the live (last good) ones. Nov 8: the world key has its own areas (worldwest/north/east, W-* countries).
-Remembered in data/status/fers-chain/seen.json {key: {build, ran: [tags], waiting: {tag: why}}}; while PENDING both answers are
+Remembered in data/status/fers-chain/seen.json {key: {build, ran: [tags], areas: {tag: {fp, planned, tries}}, waiting: {tag: why}}}; while PENDING both answers are
 printed as notices in the run log (nothing is saved: nothing started). The gate state: data/status/fers-chain/gate.json.
 env  DATA=. LINKS=links GATE=<repo variable: on|off|empty> MAX=3 GITHUB_OUTPUT (writes run, areas, gate_changed)"""
-import json, os, pathlib, re, sys, time
+import hashlib, json, os, pathlib, re, sys, time
 
 R = {'southeast': 'US-TN US-NC US-VA US-WV US-GA US-AL US-SC US-FL US-MS', 'midwest': 'US-IN US-IL US-MO US-WI US-MN US-IA US-ND US-SD',
      'northeast': 'US-PA US-NY US-NJ US-CT US-RI US-MA US-VT US-NH US-ME US-MD US-DE US-DC', 'southcentral': 'US-AR US-LA US-OK US-TX US-KS US-NE',
@@ -92,6 +95,71 @@ def audit_clean(data):
     return bad
 
 
+RETRY_H = 6      # a planned line with no result after this many hours may start again
+TRIES = 2        # at most this many starts per area fingerprint; then a person looks
+
+
+def states_not_green(idx, kind, sts, cur):
+    """[(state, why)]: the states of an area NOT built green on the current rules in this key build (owner rule, 2026-11-10).
+    US: the state's own row in index 'states' carries the rules it was built on; a state named failed, a row still marked
+    not built, or no row at all never feeds 2-fers. Keys without per-state rows: the key-wide full-build 'rules'."""
+    rows = idx.get('states') if isinstance(idx.get('states'), dict) and idx.get('states') else None
+    failed = {str(x) for x in idx.get('failed') or []}
+    out = []
+    for st in sts:
+        a = st.split('-', 1)[1] if '-' in st else st
+        if a in failed or st in failed: out.append((st, 'failed in this build')); continue
+        if rows is None:
+            if str(idx.get('rules') or '') != cur: out.append((st, f"not a full build on the current rules ({idx.get('rules') or 'none'} vs {cur})"))
+            continue
+        r = rows.get(a)
+        if not isinstance(r, dict) or r.get('_not_built'): out.append((st, 'not built in this build')); continue
+        rr = r.get('rules') if 'rules' in r else (idx.get('rules') or None)
+        if str(rr or '') != cur: out.append((st, f"not built on the current rules ({rr or 'none'} vs {cur})"))
+    return out
+
+
+def area_ready(links, sts):
+    """2-fers are US + Canada only: an area runs only when every state is on KPC-Links' fers-ready-areas.json."""
+    try:
+        import kpc_fers_ready as FR
+        rd = FR.load_ready(links)
+        return all(FR.area_ready(x, rd) for x in sts)
+    except Exception:  # noqa: BLE001
+        return all(x.startswith(('US-', 'CA-')) for x in sts)
+
+
+def area_fp(links, kind, sts, fers):
+    """sha256 of the area's key files + the 2-fer rules hash: the same files and rules = the same 2-fer answer."""
+    h = hashlib.sha256(str(fers).encode())
+    for st in sts:
+        f = pathlib.Path(links) / f"data/{kind}/{st if kind != 'world-key' else st.replace('W-', '')}.json"
+        h.update(st.encode() + b'\0' + (f.read_bytes() if f.exists() else b'missing'))
+    return h.hexdigest()[:16]
+
+
+def line_done(data, tag, since):
+    """The line's checker wrote a READY verdict (data/fers/line-<tag>.json, or its waiting-room copy) after `since`."""
+    for f in ('data/fers/line-%s.json', 'data/waiting/in/data/fers/line-%s.json'):
+        v = load(pathlib.Path(data) / (f % tag), {}) or {}
+        if str(v.get('verdict') or '').startswith('READY') and str(v.get('date') or '') >= str(since or '~'): return True
+    return False
+
+
+def postcheck_parks(links, last):
+    """(parks the post-key check lists as worse grade or outline -> pin for this build, why-not-read)."""
+    if not last.get('report'): return set(), ''
+    rep = load(pathlib.Path(links) / 'data/status/key-check' / str(last['report']))
+    if not isinstance(rep, dict): return None, f"the post-key check report {last['report']} could not be read"
+    ch = rep.get('changes') or {}
+    return {str(r) for k in ('grade_worse', 'outline_to_pin') for r in ch.get(k) or []}, ''
+
+
+def parks_of(links, kind, st):
+    k = load(pathlib.Path(links) / f"data/{kind}/{st if kind != 'world-key' else st.replace('W-', '')}.json", {}) or {}
+    return set((k.get('parks') or {}) if isinstance(k, dict) else ())
+
+
 def plan(data='.', links='links', gate='', mx=3, now=None):
     data, links = pathlib.Path(data), pathlib.Path(links)
     sys.path.insert(0, str(links / '.github/scripts'))
@@ -108,13 +176,21 @@ def plan(data='.', links='links', gate='', mx=3, now=None):
     would = {'on': [], 'off': []}   # PENDING: what each answer would start now (reported, not started)
     notes.append(f'map-audit gate {gate} ({gsrc}); the 2-fers stay held either way')
     if gate == 'PENDING': notes.append(f"KPC_FERS_CHAIN_GATE is PENDING ({gsrc}): the plan is reported, NOTHING starts")
+    try: fers = KF.rules_hash('fers', links)
+    except Exception: fers = ''  # noqa: BLE001
+    stamp = time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime(now))
     for kind, short in KEYS.items():
         li = load(links / f'data/{kind}/index.json', {}) or {}; bid = str(li.get('build') or '')
         cur = KF.rules_hash(kind, links)
         if not bid: notes.append(f'{kind}: no build stamp in KPC-Links'); continue
-        if str(li.get('rules') or '') != cur: notes.append(f'{kind}: build {bid} is not a full build on the current rules ({li.get("rules") or "none"} vs {cur}): waits for the rebuild'); continue
+        mine = {tag: sts.split() for tag, sts in R.items() if KIND_OF(sts) == kind}
+        green = {tag: states_not_green(li, kind, sts, cur) for tag, sts in mine.items()}
+        if all(green.values()):   # owner rule, 2026-11-10: an AREA starts when each of its states is built green on the current rules
+            notes.append(f'{kind}: build {bid} is not a full build on the current rules for any area ({li.get("rules") or "none"} vs {cur}): waits for the rebuild'); continue
         last = load(links / f'data/status/key-check/last-{short}.json', {}) or {}
         if str(last.get('build') or '') != bid: notes.append(f'{kind}: the post-key check (links-01) has not run on {bid} yet'); continue
+        worse, pwhy = postcheck_parks(links, last)
+        if worse is None: notes.append(f'{kind}: {pwhy}: no area starts'); continue
         here = {str((load(data / f'data/waiting/in/data/{kind}/index.json', {}) or {}).get('build') or ''), str((load(data / f'data/{kind}/index.json', {}) or {}).get('build') or '')}
         if bid not in here: notes.append(f'{kind}: build {bid} has not come over to KPC-Data yet'); continue
         items = (load(data / 'data/waiting/approved.json', {}) or {}).get('items')
@@ -124,10 +200,24 @@ def plan(data='.', links='links', gate='', mx=3, now=None):
             v = KF.verdict(kind, bid, items, links); v = v if v and re.match(r'\W*(KEY\s+)?(NO|FAIL|WITHDRAWN)', v[0].upper()) else None
         if v: notes.append(f'{kind}: build {bid} was graded {v[0][:20]} by {v[1]}: no 2-fers on it'); continue
         s = seen.get(kind) or {}
-        if s.get('build') != bid: s = {'build': bid, 'ran': [], 'waiting': {}, 'first_seen': time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime(now))}
-        s['waiting'] = {}
+        # owner rule, 2026-11-10: an area is remembered by its fingerprint (its key files + the 2-fer rules), not by the build id,
+        # and is done only when its line wrote a READY verdict; a held / failed / cancelled line may start again (at most TRIES)
+        if s.get('build') != bid: s = {'build': bid, 'first_seen': stamp, 'areas': s.get('areas') or {}}
+        s['areas'] = s.get('areas') or {}; s['waiting'] = {}
+        s['ran'] = []
         for tag, sts in R.items():
-            if KIND_OF(sts) != kind or tag in s['ran']: continue
+            if KIND_OF(sts) != kind: continue
+            if not area_ready(links, sts.split()): continue   # 2-fers are US + Canada only (fers-ready-areas.json)
+            if green.get(tag):
+                s['waiting'][tag] = 'not a full build on the current rules for: ' + '; '.join(f'{x} ({w})' for x, w in green[tag][:6]); continue
+            hit = sorted({x for x in sts.split() if worse & parks_of(links, kind, x)}) if worse else []
+            if hit: s['waiting'][tag] = f"the post-key check lists parks with a worse grade / outline -> pin in {' '.join(hit)}: a person checks them first"; continue
+            fp = area_fp(links, kind, sts.split(), fers); a = s['areas'].get(tag) or {}
+            if a.get('fp') == fp:
+                if line_done(data, tag, a.get('planned')): s['ran'].append(tag); continue
+                if int(a.get('tries') or 0) >= TRIES: s['waiting'][tag] = f"the line did not finish READY after {a.get('tries')} starts on these key files (see data/fers/line-{tag}.json): a person looks"; continue
+                if a.get('planned') and time.mktime(time.strptime(a['planned'], '%Y-%m-%d %H:%M UTC')) > time.mktime(time.gmtime(now)) - RETRY_H * 3600:
+                    s['ran'].append(tag); s['waiting'][tag] = f"line started {a['planned']}: waiting for its result"; continue
             nr = [f'{x} ({notclean[x]})' for x in sts.split() if x in notclean]
             if gate == 'PENDING':
                 (would['off'] if len(would['off']) < mx else []).append(tag)
@@ -136,6 +226,7 @@ def plan(data='.', links='links', gate='', mx=3, now=None):
             if gate == 'on' and nr: s['waiting'][tag] = f"map audit not clean: {'; '.join(nr[:6])}"; continue
             if len(run) >= mx: s['waiting'][tag] = 'next start (at most 3 areas at a time)'; continue
             run.append({'states': sts, 'tag': tag, 'key': kind, 'build': bid}); s['ran'].append(tag)
+            s['areas'][tag] = {'fp': fp, 'planned': stamp, 'tries': (int(a.get('tries') or 0) if a.get('fp') == fp else 0) + 1}
         seen[kind] = s
         notes.append(f"{kind}: build {bid}: gate {gate}: {len([r for r in run if r['key'] == kind])} area(s) start now; waiting: {len(s['waiting'])}"
                      + (f"; if 'on': {' '.join(would['on']) or 'none'}; if 'off': {' '.join(would['off']) or 'none'}" if gate == 'PENDING' else ''))
