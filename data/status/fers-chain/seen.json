@@ -1,11 +1,11 @@
 {
  "us-key": {
-  "build": "US-42956018092",
-  "first_seen": "2026-11-11 06:13 UTC",
+  "build": "US-43056604383",
+  "first_seen": "2026-11-11 18:02 UTC",
   "areas": {
    "midwest": {
-    "fp": "e170a500904f1d3b",
-    "planned": "2026-11-11 06:13 UTC",
+    "fp": "27bed89c2ab11acb",
+    "planned": "2026-11-11 18:02 UTC",
     "tries": 1
    },
    "southcentral": {
@@ -17,20 +17,30 @@
     "fp": "d4d667acc12bcccc",
     "planned": "2026-11-11 06:13 UTC",
     "tries": 1
+   },
+   "southeast": {
+    "fp": "a868a868657e8e73",
+    "planned": "2026-11-11 18:02 UTC",
+    "tries": 1
+   },
+   "northeast": {
+    "fp": "6841f26d424691db",
+    "planned": "2026-11-11 18:02 UTC",
+    "tries": 1
    }
   },
   "waiting": {
-   "southeast": "not a full build on the current rules for: US-FL (failed in this build)",
-   "northeast": "the post-key check lists parks with a worse grade / outline -> pin in US-NH US-PA: a person checks them first",
-   "pacific": "the post-key check lists parks with a worse grade / outline -> pin in US-WA: a person checks them first",
+   "southcentral": "next start (at most 3 areas at a time)",
+   "mountain": "next start (at most 3 areas at a time)",
+   "pacific": "next start (at most 3 areas at a time)",
    "oh": "next start (at most 3 areas at a time)",
-   "mi": "the post-key check lists parks with a worse grade / outline -> pin in US-MI: a person checks them first",
+   "mi": "next start (at most 3 areas at a time)",
    "ut": "next start (at most 3 areas at a time)"
   },
   "ran": [
+   "southeast",
    "midwest",
-   "southcentral",
-   "mountain"
+   "northeast"
   ]
  },
  "ca-key": {
