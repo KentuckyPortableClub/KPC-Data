@@ -7184,6 +7184,81 @@
    "pass": 1
   },
   {
+   "ref": "CA-3334",
+   "area": "CA-BC",
+   "park": "Chukachida Protected Area",
+   "agency_group": "bcparks.ca",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "found",
+   "st": "CA-BC",
+   "url": "https://openmaps.gov.bc.ca/geo/pub/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW",
+   "service_url": "https://openmaps.gov.bc.ca/geo/pub/wfs",
+   "name_field": "PROTECTED_LANDS_NAME",
+   "agency": "BC Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-1",
+   "band": "STRONG",
+   "step": "L0",
+   "record": "WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW.fid-7e3ee5a5_1a1a62f97d4_2d00",
+   "record_name": "CHUKACHIDA PROTECTED AREA",
+   "layer": "CA-BC-parks",
+   "record_link": "https://openmaps.gov.bc.ca/geo/pub/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3EPROTECTED_LANDS_NAME%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Achukachida%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E",
+   "where": "id=WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW.fid-7e3ee5a5_1a1a62f97d4_2d00",
+   "pin_m": 0,
+   "acres_approx": null,
+   "grade": "official",
+   "envelope": null,
+   "rule": null,
+   "others": [
+    {
+     "record_name": "CHU CHUA COTTONWOOD PARK",
+     "layer": "CA-BC-parks",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://openmaps.gov.bc.ca/geo/pub/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3EPROTECTED_LANDS_NAME%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Achukachida%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E",
+   "read_date": "2026-11-07",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-1 STRONG: 'CHUKACHIDA PROTECTED AREA' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-BC-park-72",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-BC-trail-75",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-CA-BC-park-76",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "CA-BC-parks",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'CHUKACHIDA PROTECTED AREA' (CA-BC-parks); pin inside; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
    "ref": "CA-3408",
    "area": "CA-BC",
    "park": "Denetiah Corridor Protected Area",
@@ -11617,7 +11692,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -45881,6 +45957,94 @@
    }
   },
   {
+   "ref": "US-3813",
+   "area": "US-KY",
+   "park": "Griffith Woods Wildlife Management Area",
+   "agency_group": "WMA",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "found",
+   "st": "US-KY",
+   "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0?f=html",
+   "service_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0",
+   "name_field": "MANAME",
+   "agency": "Kentucky Heritage Land Conservation Fund",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-1",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 162,
+   "record_name": "Griffith Woods Wildlife Management Area",
+   "layer": "US-KY-heritage-land",
+   "record_link": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0/query?where=OBJECTID%3D162&outFields=%2A&f=html",
+   "where": "OBJECTID=162",
+   "pin_m": 0,
+   "acres_approx": 377.3,
+   "grade": "official",
+   "envelope": [
+    -84.36035,
+    38.32285,
+    -84.34304,
+    38.33824
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Griffith Woods Wildlife Management Area",
+     "layer": "US-KY-heritage-land",
+     "tier": "T-3",
+     "pin_m": 96
+    }
+   ],
+   "source_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0/query?geometry=-84.356%2C38.332&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-1 STRONG: 'Griffith Woods Wildlife Management Area' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "US-KY-stateparks",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-stateforests",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-snp",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-wild-rivers",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-heritage-land",
+      "gave": "hit (2 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Griffith Woods Wildlife Management Area' (US-KY-heritage-land); pin inside; about 377.3 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
    "ref": "US-4481",
    "area": "US-UT",
    "park": "Sawtooth National Forest",
@@ -72017,6 +72181,290 @@
    "pass": 1
   },
   {
+   "ref": "CA-6012",
+   "area": "CA-ON",
+   "park": "Morrison Dam Conservation Area",
+   "agency_group": "ontarioconservationareas.ca",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "candidate",
+   "st": "CA-ON",
+   "url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/ABCA_Properties/FeatureServer/0?f=html",
+   "service_url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/ABCA_Properties/FeatureServer/0",
+   "name_field": "prop_nam",
+   "agency": "Ausable Bayfield Conservation Authority",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 23,
+   "record_name": "Morrison Dam CA",
+   "layer": "PACK-CA-ON-land-397",
+   "record_link": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/ABCA_Properties/FeatureServer/0/query?where=OBJECTID%3D23&outFields=%2A&f=html",
+   "where": "OBJECTID=23",
+   "pin_m": 8,
+   "acres_approx": 24.6,
+   "grade": "official",
+   "envelope": [
+    -81.46389,
+    43.3573,
+    -81.4572,
+    43.3604
+   ],
+   "rule": "R-G12",
+   "others": [
+    {
+     "record_name": "Morrison Dam CA",
+     "layer": "PACK-CA-ON-land-397",
+     "tier": "T-3",
+     "pin_m": 12
+    },
+    {
+     "record_name": "Ausable Bayfield Conservation Authority",
+     "layer": "CA-ON-ca-admin",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/ABCA_Properties/FeatureServer/0/query?geometry=-81.4577%2C43.3602&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Morrison Dam CA' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-ON-preserve-67",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-preserve-68",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-CA-ON-park-86",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-trail-87",
+      "gave": "no hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-wildlife-88",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-pp",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-cr",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "CA-ON-municipal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-396",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-397",
+      "gave": "hit (3 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-398",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-399",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-400",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-401",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-402",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-403",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-404",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-405",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-406",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-407",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-408",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-409",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-410",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-411",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-412",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-434",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-435",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-436",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-437",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-nwa",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-CANAD-88",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-CANAD-90",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-ca-admin",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "pin just outside (8 m): candidate only (G-F1)",
+    "why_this_record": "same land also in CA-ON-ca-admin 'Ausable Bayfield Conservation Authority': merged, counted once; record 'Morrison Dam CA' (PACK-CA-ON-land-397); pin 8 m from the edge; about 24.6 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-13486",
+   "area": "US-NH",
+   "park": "Bellamy River Wildlife Management Area - East Wildlife Management Area",
+   "agency_group": "arcgis.com",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "found",
+   "st": "US-NH",
+   "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0?f=html",
+   "service_url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0",
+   "name_field": "name",
+   "agency": "NH GRANIT conservation and public lands",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 5894,
+   "record_name": "Bellamy River WMA - East",
+   "layer": "PACK-US-NH-land-204",
+   "record_link": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0/query?where=OBJECTID%3D5894&outFields=%2A&f=html",
+   "where": "OBJECTID=5894",
+   "pin_m": 0,
+   "acres_approx": 21.2,
+   "grade": "official",
+   "envelope": [
+    -70.84679,
+    43.12857,
+    -70.84115,
+    43.13194
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0/query?geometry=-70.8419%2C43.1294&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'Bellamy River WMA - East' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-NH-land-16",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NH-land-204",
+      "gave": "hit (1 at pin, 25 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Bellamy River WMA - East' (PACK-US-NH-land-204); pin inside; about 21.2 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
    "ref": "US-13259",
    "area": "US-NV",
    "park": "Great Basin Highway Scenic Byway Scenic Site",
@@ -97541,7 +97989,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -103642,7 +104091,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -116225,7 +116675,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -133447,6 +133898,380 @@
    }
   },
   {
+   "ref": "US-0724",
+   "area": "US-KY",
+   "park": "Abraham Lincoln Birthplace National Historic Site",
+   "agency_group": "National / NPS",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "candidate",
+   "st": "US-KY",
+   "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0?f=html",
+   "service_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0",
+   "name_field": "MANAME",
+   "agency": "Kentucky Heritage Land Conservation Fund",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-4",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 118,
+   "record_name": "Abraham Lincoln Birthplace National Historic Park - Boyhood Home Unit",
+   "layer": "US-KY-heritage-land",
+   "record_link": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0/query?where=OBJECTID%3D118&outFields=%2A&f=html",
+   "where": "OBJECTID=118",
+   "pin_m": 3,
+   "acres_approx": 11.8,
+   "grade": "official",
+   "envelope": [
+    -85.63958,
+    37.6055,
+    -85.63551,
+    37.61207
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Abraham Lincoln Birthplace National Historic Park - Boyhood Home Unit",
+     "layer": "US-KY-heritage-land",
+     "tier": "T-4",
+     "pin_m": 17
+    }
+   ],
+   "source_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0/query?geometry=-85.6371%2C37.6115&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-4 WEAK: 'Abraham Lincoln Birthplace National Historic Park - Boyhood Home Unit' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "US-KY-stateparks",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-stateforests",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-snp",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-wild-rivers",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-heritage-land",
+      "gave": "hit (2 at pin, 2 by name)"
+     },
+     {
+      "source": "US-KY-state_park-Kentucky_State_Park_Boundaries-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_park-Public_Hunting_Areas_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_park-Kentucky_Heritage_Land_Conservation_Fund-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_park-KYStateParkBoundaries-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_park-Wildlife_Management_Areas_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-nature_preserve-State_Nature_Preserves_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_forest-Kentucky_State_Forest_Boundaries-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-trail-Kentucky_s_Recreational_Trails-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-natural-areas",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-nature_preserve-State_Natural_Areas_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-nature_preserve-USFWS_Critical_Habitat_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-trail-KYTC_Multi_Use_Paths-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-trail-KYTC_Rail_Plan_Rails_to_Trails-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-KY in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a historic, record is a park",
+    "why_this_record": "record 'Abraham Lincoln Birthplace National Historic Park - Boyhood Home Unit' (US-KY-heritage-land); pin 3 m from the edge; about 11.8 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-3790",
+   "area": "US-KY",
+   "park": "Fort Heiman National Battlefield",
+   "agency_group": "National / NPS",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "candidate",
+   "st": "US-KY",
+   "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0?f=html",
+   "service_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0",
+   "name_field": "MANAME",
+   "agency": "Kentucky Heritage Land Conservation Fund",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 203,
+   "record_name": "Fort Donelson National Battlefield (Fort Heiman Unit)",
+   "layer": "US-KY-heritage-land",
+   "record_link": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0/query?where=OBJECTID%3D203&outFields=%2A&f=html",
+   "where": "OBJECTID=203",
+   "pin_m": 0,
+   "acres_approx": 0.8,
+   "grade": "official",
+   "envelope": [
+    -88.05628,
+    36.50089,
+    -88.05526,
+    36.50171
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Fort Donelson National Battlefield (Fort Heiman Unit)",
+     "layer": "US-KY-heritage-land",
+     "tier": "T-3",
+     "pin_m": 1
+    },
+    {
+     "record_name": "Fort Donelson National Battlefield (Fort Heiman Unit)",
+     "layer": "US-KY-heritage-land",
+     "tier": "T-3",
+     "pin_m": 22
+    },
+    {
+     "record_name": "Fort Donelson National Battlefield (Fort Heiman Unit)",
+     "layer": "US-KY-heritage-land",
+     "tier": "T-3",
+     "pin_m": 31
+    },
+    {
+     "record_name": "Fort Donelson National Battlefield (Fort Heiman Unit)",
+     "layer": "US-KY-heritage-land",
+     "tier": "T-3",
+     "pin_m": 100
+    }
+   ],
+   "source_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0/query?geometry=-88.0562%2C36.5016&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-2 WEAK: 'Fort Donelson National Battlefield (Fort Heiman Unit)' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "US-KY-stateparks",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-stateforests",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-snp",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-wild-rivers",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-heritage-land",
+      "gave": "hit (5 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Fort Donelson National Battlefield (Fort Heiman Unit)",
+    "why_this_record": "record 'Fort Donelson National Battlefield (Fort Heiman Unit)' (US-KY-heritage-land); pin inside; about 0.8 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
    "ref": "CA-4898",
    "area": "CA-QC",
    "park": "Carillon Barracks National Historic Site",
@@ -147639,7 +148464,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
