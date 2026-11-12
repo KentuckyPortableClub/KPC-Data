@@ -705,33 +705,6 @@
    "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0; read 2026-11-09"
   },
   {
-   "Park number (if matched)": "US-5967",
-   "Park name (as the agency writes it)": "Ogden Bay WMA",
-   "Size": 16665,
-   "Unit": "acres",
-   "Agency": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
-   "Source page": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D170&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "US-5968",
-   "Park name (as the agency writes it)": "Howard Slough WMA",
-   "Size": 2548,
-   "Unit": "acres",
-   "Agency": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
-   "Source page": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D100&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "US-5971",
-   "Park name (as the agency writes it)": "Harold Crane WMA",
-   "Size": 9852,
-   "Unit": "acres",
-   "Agency": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
-   "Source page": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D89&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0; read 2026-11-02"
-  },
-  {
    "Park number (if matched)": "US-13324",
    "Park name (as the agency writes it)": "City of Sparks",
    "Size": 3,
@@ -1958,7 +1931,7 @@
    "Agency/area": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
    "Kind": "GIS layer",
    "Example URL": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0",
-   "# times used": 22,
+   "# times used": 19,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -2735,6 +2708,26 @@
   },
   {
    "Host": "www.fs.usda.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host rule: saved copies only or never contact; on the needs-download list)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "tpwd.texas.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots.txt not readable this run)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "services-eu1.arcgis.com",
    "Agency/area": null,
    "Kind": "GIS layer",
    "Example URL": null,
