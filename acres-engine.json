@@ -1740,6 +1740,33 @@
    "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0; read 2026-11-12"
   },
   {
+   "Park number (if matched)": "US-10105",
+   "Park name (as the agency writes it)": "Green River Wild River",
+   "Size": 7019,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves (Kentucky Wild Rivers)",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Wild_River_Corridors_WGS84WM/MapServer/0/query?where=OBJECTID%3D4&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Wild_River_Corridors_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-10111",
+   "Park name (as the agency writes it)": "Rock Creek Wild River",
+   "Size": 6236,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves (Kentucky Wild Rivers)",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Wild_River_Corridors_WGS84WM/MapServer/0/query?where=OBJECTID%3D8&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Wild_River_Corridors_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-10112",
+   "Park name (as the agency writes it)": "Bad Branch Wild River",
+   "Size": 1347,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves (Kentucky Wild Rivers)",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Wild_River_Corridors_WGS84WM/MapServer/0/query?where=OBJECTID%3D1&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Wild_River_Corridors_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
    "Park number (if matched)": "US-3616",
    "Park name (as the agency writes it)": "Dudley Farm Historic State Park",
    "Size": 333,
@@ -2070,7 +2097,7 @@
    "Agency/area": "Kentucky Department of Parks",
    "Kind": "GIS layer",
    "Example URL": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8",
-   "# times used": 51,
+   "# times used": 54,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
