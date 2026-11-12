@@ -19,7 +19,7 @@ One queue for every map-layer lead anyone finds; one polite bot (`.github/script
  "licence": "licence text if known", "from": "harvester | discovery | gap-filler | chat 8 | chat 9", "added": "2026-10-28",
  "note": "why it is here", "expect": "READY or already read"}
 ```
-`area` = `US-XX`, `CA-XX` or a country code (`GB`). A service url without a layer number is split into its polygon layers. `expect` is only for known-answer test rows. A row probed within 30 days is skipped unless its text changed.
+`area` = `US-XX`, `CA-XX` or a country code (`GB`). Writers (Nov 12): queue.json is at the 1 MB cap, so each bot appends to its own `queue-<bot>-<n>.json` (gis-hunter, detective, retry-hosts, layer-collector, intake-feed; `.github/scripts/kpc_queue_files.py` rolls to the next number before 900,000 bytes, never writes `queue.json` or a `*hold*` file, and skips a url that is in any queue file, hold files included). A service url without a layer number is split into its polygon layers. `expect` is only for known-answer test rows. A row probed within 30 days is skipped unless its text changed.
 
 ## Verdicts
 - **READY**: official publisher + OPEN / CREDIT / NON-COMMERCIAL terms + named polygons + closes at least one park with no outline (or a chat 8 / 9 request).

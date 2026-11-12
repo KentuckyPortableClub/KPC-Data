@@ -16,6 +16,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import kpc_tiers as T  # noqa: E402
 from kpc_json_any import load_json_any, save_json_gz  # noqa: E402
 import kpc_order as O  # noqa: E402
+import kpc_queue_files as QFILES  # noqa: E402  (Nov 12: queue.json is at the 1 MB cap; new rows go in data/intake/queue-layer-collector-<n>.json)
 try:
     from kpc_manners import Manners
     M = Manners('KPC layer collector (chat 10)')
@@ -25,7 +26,7 @@ LINKS = pathlib.Path(os.environ.get('LINKS') or '../links')
 LOG = pathlib.Path('data/intake/collector.json.gz')   # Nov 2 (storage): was an 80 MB indented file rewritten every 2 h
 OLDLOG = pathlib.Path('data/intake/collector.json')
 QF = pathlib.Path('data/waiting/questions/layers.json')   # chat 2 (Oct 30 8:20 AM): kpc_key_layers.py wires every YES row into state-gis.json
-QUEUE = pathlib.Path('data/intake/queue.json')
+# Nov 12: the layer collector no longer writes data/intake/queue.json (1 MB cap): this run's new rows go to data/intake/queue-layer-collector-<n>.json
 TODAY = dt.date.today().isoformat()
 LINE = re.compile(r'^LAYER\s*\|\s*([A-Z0-9]{1,4}-\d{4,5})\s*\|\s*([^|]*)\|\s*(\S+)\s*\|\s*name field:\s*([^|]*)\|?(.*)$', re.I)
 
@@ -627,8 +628,8 @@ def main():
     except Exception: log = load(OLDLOG, {}) or {}  # noqa: BLE001
     D = load(QF, {}) or {}
     qs = D.get('questions') or []
-    queue = load(QUEUE, {'rows': []}) or {'rows': []}
-    seen = {r.get('url') for r in queue.get('rows') or []}
+    queue = {'rows': []}   # Nov 12: this run's NEW rows only; 'seen' = every url in any queue*.json (hold files too: a held url is not queued again)
+    seen = QFILES.known_keys()
     n = {'new': 0, 'asked': 0, 'queued': 0, 'failed': 0, 'evidence': 0}
     for f in sorted((LINKS / '.claude' / 'build' / 'research' / 'fable').glob('*.md'), key=lambda f: (O.rank(f.stem), f.stem)):
         if want and f.stem not in want: continue
@@ -657,7 +658,7 @@ def main():
     LOG.parent.mkdir(parents=True, exist_ok=True)
     LOG.write_bytes(gzip.compress(json.dumps(log, ensure_ascii=False, separators=(',', ':'), sort_keys=True).encode('utf-8'), 6, mtime=0))
     OLDLOG.unlink(missing_ok=True)
-    json.dump(queue, open(QUEUE, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    if queue['rows']: QFILES.append_rows(queue['rows'], 'layer-collector')
     save_json_gz(QF, {'about': "Layers chat 8 wrote as LAYER lines in the Fable files, pin-tested by the layer collector (Rule G: pin inside, name tier, size). Chat 11 answers YES / NO; BOT A joins a YES.",
                       'built': TODAY, 'open': sum(1 for q in qs if not q.get('answer')), 'questions': qs}, indent=1, ensure_ascii=False)
     print(f"::notice title=Layer collector::{crawled} crawler layers tested; {n['new']} new LAYER lines: {n['asked']} asked (chat 11), {n['queued']} queued for the intake only, {n['evidence']} evidence, {n['failed']} failed (reason in data/intake/collector.json)")

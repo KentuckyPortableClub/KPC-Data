@@ -1,7 +1,7 @@
 name: KPC retry list - the research's blocked servers, one honest try from GitHub (monthly)
 # Nov 1 2026 (chat 10; Brandon 6:11 PM 'try the blocked list try again list in the notes'). kpc_retry_hosts.py asks each address on
 # the outside research's 'RETRY FROM ANOTHER NETWORK' list once (robots.txt obeyed; a 403 / robot check / sign-in is never bypassed).
-# Answering layer services go on the club layer list (data/intake/queue.json) -> engine pin test -> collector -> chat 11.
+# Answering layer services go on the club layer list (data/intake/queue-retry-hosts-<n>.json) -> engine pin test -> collector -> chat 11.
 # Results in data/intake/retry-github.json. Monthly (the 3rd) or by hand. Never red, never emails.
 on:
   workflow_dispatch:
@@ -37,7 +37,7 @@ jobs:
           cd kpcdata
           python3 .github/scripts/kpc_retry_hosts.py || { kpc_rc=$?; echo "::error title=kpc_retry_hosts.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_retry_hosts.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           python3 .github/scripts/kpc_status.py board 'Retry list (GitHub try)' green "$(python3 -c "import json;d=json.load(open('data/intake/retry-github.json'));print(sum(1 for r in d['tries'] if isinstance(r['answer'],int) and r['answer']<400),'of',len(d['tries']),'answered;',d['added_to_layer_list'],'layers to the list',d['date'])" 2>/dev/null)" 'the engine tests the new layers; a person follows the pages that answered' || true   # ok: a status-board line (reporting only)
-          bash ../links/.github/scripts/kpc_push_data.sh . "retry list: one try from GitHub" data/intake/retry-github.json data/intake/queue.json data/status || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          bash ../links/.github/scripts/kpc_push_data.sh . "retry list: one try from GitHub" data/intake/retry-github.json 'data/intake/queue-retry-hosts-*.json' data/status || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:

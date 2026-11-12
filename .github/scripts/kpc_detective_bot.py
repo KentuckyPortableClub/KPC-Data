@@ -25,7 +25,7 @@ B. QUESTIONS (data/detective/questions.json; any chat or HQ adds one: {id, ref, 
 
 Output (review material, never a key): data/detective/<area>.json + review.md (the gap filler), data/detective/answers.json +
 answers.md (questions: answered first, then 'not found' with what was tried; unanswered -> chats 8 / 11 -> Brandon), one row
-per layer found APPENDED to data/intake/queue.json (from: 'gap-filler', closes: [refs]), a 'grade me' line per batch
+per layer found APPENDED to data/intake/queue-detective-<n>.json (Nov 12: queue.json is at its 1 MB cap; from: 'gap-filler', closes: [refs]), a 'grade me' line per batch
 (kpc_status.py). A park checked within REFRESH_DAYS (30) is skipped; a question is answered once (ask again with a new id).
 Manners: kpc_manners.py (host rules first, then robots.txt with no exemption (the ArcGIS REST exemption is gone since Nov 10), 1 request / 2 s per host, three strikes = a day's rest).
 MINUTES per chunk; never fails (exit 0 always). kpc_gapfill_bot.py is a shim that runs this.
@@ -39,6 +39,7 @@ Env: AREAS='US-KY US-NV' (blank = the next unfinished areas in GAP_QUEUE order) 
 import json, os, pathlib, re, subprocess, sys, time, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from kpc_manners import Manners, page_text, links_in, pdf_text  # noqa: E402
+import kpc_queue_files as QF  # noqa: E402  (Nov 12: queue.json is at the 1 MB cap; new rows go in data/intake/queue-detective-<n>.json)
 try: from kpc_truth_bot import QUEUE as TRUTH_QUEUE, STATE_NAMES  # noqa: E402
 except Exception:  # noqa: BLE001
     TRUTH_QUEUE, STATE_NAMES = [], {}
@@ -574,8 +575,10 @@ def run_area(area, state, P):
 
 # ---- outputs for other people / bots
 def queue_append(area, D):
-    """One row per layer found APPENDED to data/intake/queue.json (de-duplicated by url) for the intake bot."""
-    qp = pathlib.Path('data/intake/queue.json') if in_repo(OUT) else OUT / 'intake-queue.json'   # at RUN time only, inside the repo
+    """One row per layer found APPENDED to data/intake/queue-detective-<n>.json (Nov 12: queue.json is at the 1 MB cap) for the intake bot,
+    de-duplicated by url across every queue*.json. A url already in a *hold* file is not added or touched; a url already in another queue
+    file gets its 'closes' / note updated in the file it came from."""
+    qp = OUT / 'intake-queue.json'   # outside the repo (a test run): the old single file
     per = {}
     for ref, p in D['parks'].items():
         for x in p.get('finds') or []:
@@ -585,6 +588,7 @@ def queue_append(area, D):
             if ref not in row['closes']: row['closes'].append(ref)
             if x.get('sure') == 'YES': row['title'] = row['title'] or f"{x.get('publisher') or host_of(x['layer'])} polygons ({x.get('field') or 'name'})"
     if not per: return
+    if in_repo(OUT): return queue_split(per, D, area)
     Q = load(qp, None) or {'about': 'KPC intake queue: layers to read (one row per url). Rows from the gap filler carry closes: the parks they would close. Review only.', 'rows': []}
     rows = Q.setdefault('rows', [])
     byurl = {r.get('url'): r for r in rows if isinstance(r, dict)}
@@ -598,6 +602,27 @@ def queue_append(area, D):
             if old.get('from') == 'gap-filler': old['note'] = row['note']; old['added'] = old.get('added') or TODAY
         else: rows.append(row); byurl[u] = row
     save(qp, Q)
+
+
+def queue_split(per, D, area, folder=None):
+    """Nov 12: the in-repo path of queue_append -> (new rows, rows updated). A hold file is never touched; an update is written back to the
+    file the row came from (skipped with a notice if that file would reach the 1 MB cap); new rows go in queue-detective-<n>.json."""
+    idx, new, dirty, upd = QF.index(folder), [], {}, 0
+    for u, row in per.items():
+        row['note'] = f"would close {len(row['closes'])} missing park(s) in {area}; sure finds: {sum(1 for r in row['closes'] if (D['parks'].get(r) or {}).get('sure') == 'YES')}"
+        if u not in idx: new.append(row); continue
+        path, doc, old = idx[u]
+        if QF.is_hold(path): continue                      # held on purpose: not added again, not touched
+        old.setdefault('closes', [])
+        for r in row['closes']:
+            if r not in old['closes']: old['closes'].append(r)
+        if old.get('from') == 'gap-filler': old['note'] = row['note']; old['added'] = old.get('added') or TODAY
+        dirty[path] = doc; upd += 1
+    for path, doc in dirty.items():
+        if not QF.save_in_place(path, doc): notice(f'{path.name}: row update skipped (it would reach the 1 MB cap)')
+    added = QF.append_rows(new, 'detective', folder) if new else []
+    if added: notice(f"{len(new)} new layer row(s) -> {', '.join(f.name for f in added)}")
+    return len(new), upd
 
 
 def grade_me(area, f, counts):
