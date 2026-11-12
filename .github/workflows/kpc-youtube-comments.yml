@@ -7,6 +7,10 @@ name: KPC YouTube comments
 # this repo's own copy of kpc_key_check.py (no more download from KPC-Links main). A bad YouTube key stops only 'comments'
 # (yellow warning on the run); the keys job still runs and reports it on the check-up.
 # Memory: data/status/youtube-seen.json (60 days). Never fails. Tick 'dry_run' to print instead of posting.
+# Nov 11 2026 (bots review, package E): each job checks out only what it reads and writes (the scripts folder + its one status file),
+# not the whole repo (about 23,000 files); the memory is written after every message that went out, so a failure half way never
+# sends a comment twice. NOTE for later: data/status/ is where the quiet-save gate (kpc_quiet_gate.py) treats files as bookkeeping and may
+# skip them; this memory is NOT bookkeeping (skipping its save would repeat posts), so do not move this save onto the shared helper.
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '36 13 * * *'    # 7:36 AM Central (winter) / 8:36 AM (summer); once a day   # G9 Nov 2: was '37 13 * * *' (spread the start times; now 1 min earlier)
@@ -31,6 +35,11 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
+        with:
+          sparse-checkout: |
+            .github/scripts/
+            data/status/youtube-seen.json
+          sparse-checkout-cone-mode: false
       - name: Read comments, post to the staff room
         id: kept_green_1
         continue-on-error: true
@@ -90,6 +99,11 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
+        with:
+          sparse-checkout: |
+            .github/scripts/
+            data/status/keys.json
+          sparse-checkout-cone-mode: false
       - name: Keys answer (KPC-Data's secrets; a key is never printed)
         id: kept_green_2
         continue-on-error: true
