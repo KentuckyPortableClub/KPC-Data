@@ -49,7 +49,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-08 | 4 | data/fers/US-MS.json | HOLD | F-2 candidates 12 -> 0 (over 30% change); F-2 NOT SURE 9 -> 0 (over 30% change); F-2 pass2 missing: the 2-fer passes did not all run; F-2 pass3 missing: the 2-fer passes did not all run |
 | 2026-11-08 | 4 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
 | 2026-11-08 | 4 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
-| 2026-11-09 | 3 | data/docs/US-IN.json | HOLD | F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dA/bad7f29779/sp-5MileChallengeBrochure.pdf?languag |
+| 2026-11-09 | 3 | data/docs/US-IN.json | HOLD | F-D3 9 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/state-parks/files/falls_of_the_ohio_trail.pdf |
 | 2026-11-09 | 3 | data/docs/US-MS.json | HOLD | F-D3 3 of 20 re-tested links dead, e.g. https://www.nps.gov/brcr/learn/management/lawsandpolicies.htm |
 | 2026-11-09 | 3 | data/fers/CA-NS.json | HOLD | F-2 pass2 missing: the 2-fer passes did not all run; F-2 pass3 missing: the 2-fer passes did not all run; F-2 only 4 of 6 live candidate pairs are still there (under 80%): a person looks (a rule change is released by han |
 | 2026-11-09 | 3 | data/fers/CA-YT.json | HOLD | F-2 pass2 missing: the 2-fer passes did not all run; F-2 pass3 missing: the 2-fer passes did not all run |
@@ -65,7 +65,6 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-11 | 1 | data/docs/US-NJ.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/supawna-meadows/visit-us/rules-policies |
 | 2026-11-11 | 1 | data/docs/US-OH.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/ottawa/visit-us/rules-policies |
 | 2026-11-11 | 1 | data/docs/US-RI.json | HOLD | F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/sachuest-point/visit-us/rules-policies |
-| 2026-11-11 | 1 | data/docs/US-TX.json | HOLD | F-D3 17 of 20 re-tested links dead, e.g. https://tpwd.texas.gov/huntwild/hunt/wma/images/Kerr-WMA-DrivingTour-B |
 | 2026-11-11 | 1 | data/docs/US-VA.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/back-bay/visit-us/rules-policies |
 | 2026-11-11 | 1 | data/docs/US-WI.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/hackmatack/visit-us/rules-policies |
 | 2026-11-11 | 1 | data/fers/US-AL.json | HOLD | F-2 pass2 missing: the 2-fer passes did not all run; F-2 pass3 missing: the 2-fer passes did not all run; F-K known 2-fer missing: US-1037 + US-4450; F-K known 2-fer missing: US-3690 + US-4596 |
@@ -207,6 +206,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/docs/US-SC.json | PASS |  |
 | ? | ? | data/docs/US-SD.json | PASS |  |
 | ? | ? | data/docs/US-TN.json | PASS |  |
+| ? | ? | data/docs/US-TX.json | PASS |  |
 | ? | ? | data/docs/US-UT.json | PASS |  |
 | ? | ? | data/docs/US-VT.json | PASS |  |
 | ? | ? | data/docs/US-WA.json | PASS |  |
