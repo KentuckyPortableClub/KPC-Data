@@ -255,6 +255,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0; read 2026-11-12"
   },
   {
+   "Park number (if matched)": "US-10237",
+   "Park name (as the agency writes it)": "Mongoquinong Nature Preserve",
+   "Size": 160,
+   "Unit": "acres",
+   "Agency": "Indiana DNR properties",
+   "Source page": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D4818&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0; read 2026-11-04"
+  },
+  {
    "Park number (if matched)": "CA-6251",
    "Park name (as the agency writes it)": "GRAND PARADE",
    "Size": 2,
@@ -417,15 +426,6 @@
    "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
   },
   {
-   "Park number (if matched)": "US-10237",
-   "Park name (as the agency writes it)": "Mongoquinong Nature Preserve",
-   "Size": 160,
-   "Unit": "acres",
-   "Agency": "Indiana DNR properties",
-   "Source page": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D4818&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0; read 2026-11-04"
-  },
-  {
    "Park number (if matched)": "CA-6564",
    "Park name (as the agency writes it)": "Blanche Provincial Park",
    "Size": 63,
@@ -586,6 +586,42 @@
    "Agency": "",
    "Source page": "https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json",
    "Notes": "computed from the official outline polygon (approx); layer https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13395",
+   "Park name (as the agency writes it)": "County Line",
+   "Size": 5,
+   "Unit": "acres",
+   "Agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+   "Source page": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.255%2C45.618&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "Notes": "computed from the official outline polygon (approx); layer https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13397",
+   "Park name (as the agency writes it)": "Modrow Bridge",
+   "Size": 2,
+   "Unit": "acres",
+   "Agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+   "Source page": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.837%2C46.0474&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "Notes": "computed from the official outline polygon (approx); layer https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13398",
+   "Park name (as the agency writes it)": "Beginners' Hole",
+   "Size": 2,
+   "Unit": "acres",
+   "Agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+   "Source page": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.807%2C46.0469&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "Notes": "computed from the official outline polygon (approx); layer https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13399",
+   "Park name (as the agency writes it)": "Hand",
+   "Size": 6,
+   "Unit": "acres",
+   "Agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+   "Source page": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.798%2C46.0442&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "Notes": "computed from the official outline polygon (approx); layer https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0; read 2026-11-04"
   },
   {
    "Park number (if matched)": "US-0731",
@@ -856,42 +892,6 @@
    "Agency": "US Fish and Wildlife Service",
    "Source page": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0/query?where=OBJECTID%3D1602&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "US-13395",
-   "Park name (as the agency writes it)": "County Line",
-   "Size": 5,
-   "Unit": "acres",
-   "Agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
-   "Source page": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.255%2C45.618&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
-   "Notes": "computed from the official outline polygon (approx); layer https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0; read 2026-11-04"
-  },
-  {
-   "Park number (if matched)": "US-13397",
-   "Park name (as the agency writes it)": "Modrow Bridge",
-   "Size": 2,
-   "Unit": "acres",
-   "Agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
-   "Source page": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.837%2C46.0474&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
-   "Notes": "computed from the official outline polygon (approx); layer https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0; read 2026-11-04"
-  },
-  {
-   "Park number (if matched)": "US-13398",
-   "Park name (as the agency writes it)": "Beginners' Hole",
-   "Size": 2,
-   "Unit": "acres",
-   "Agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
-   "Source page": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.807%2C46.0469&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
-   "Notes": "computed from the official outline polygon (approx); layer https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0; read 2026-11-04"
-  },
-  {
-   "Park number (if matched)": "US-13399",
-   "Park name (as the agency writes it)": "Hand",
-   "Size": 6,
-   "Unit": "acres",
-   "Agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
-   "Source page": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.798%2C46.0442&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
-   "Notes": "computed from the official outline polygon (approx); layer https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0; read 2026-11-04"
   },
   {
    "Park number (if matched)": "US-7893",
@@ -1299,6 +1299,87 @@
    "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
   },
   {
+   "Park number (if matched)": "US-1280",
+   "Park name (as the agency writes it)": "Greenbo Lake",
+   "Size": 3439,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D11&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1281",
+   "Park name (as the agency writes it)": "Jenny Wiley",
+   "Size": 1483,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D26&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1282",
+   "Park name (as the agency writes it)": "Kenlake",
+   "Size": 1526,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D29&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1283",
+   "Park name (as the agency writes it)": "Kentucky Dam Village",
+   "Size": 1493,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D47&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1284",
+   "Park name (as the agency writes it)": "Lake Barkley",
+   "Size": 3356,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D40&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1285",
+   "Park name (as the agency writes it)": "Lake Cumberland",
+   "Size": 3642,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D42&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1286",
+   "Park name (as the agency writes it)": "Natural Bridge",
+   "Size": 2490,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D20&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1287",
+   "Park name (as the agency writes it)": "Pennyrile Forest",
+   "Size": 930,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D7&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1288",
+   "Park name (as the agency writes it)": "Pine Mountain",
+   "Size": 1765,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D17&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
    "Park number (if matched)": "US-5756",
    "Park name (as the agency writes it)": "Browns Park WMA",
    "Size": 3134,
@@ -1531,6 +1612,33 @@
    "Agency": "Alaska State Parks (DNR) (park, state GIS table)",
    "Source page": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2/query?where=OBJECTID%3D50&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-7953",
+   "Park name (as the agency writes it)": "Metropolis Lake State Nature Preserve",
+   "Size": 123,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D24&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-7955",
+   "Park name (as the agency writes it)": "Six Mile Island State Nature Preserve",
+   "Size": 86,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D29&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-7956",
+   "Park name (as the agency writes it)": "Beargrass Creek State Nature Preserve",
+   "Size": 41,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D3&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0; read 2026-11-12"
   },
   {
    "Park number (if matched)": "US-3616",
@@ -1863,7 +1971,7 @@
    "Agency/area": "Kentucky Department of Parks",
    "Kind": "GIS layer",
    "Example URL": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8",
-   "# times used": 25,
+   "# times used": 37,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -1874,6 +1982,16 @@
    "Kind": "GIS layer",
    "Example URL": "https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json",
    "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "geodataservices.wdfw.wa.gov",
+   "Agency/area": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
+   "# times used": 6,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -1924,16 +2042,6 @@
    "Kind": "GIS layer",
    "Example URL": "https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0",
    "# times used": 1,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
-   "Host": "geodataservices.wdfw.wa.gov",
-   "Agency/area": "Washington Department of Fish and Wildlife (wild, state GIS table)",
-   "Kind": "GIS layer",
-   "Example URL": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
-   "# times used": 6,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
