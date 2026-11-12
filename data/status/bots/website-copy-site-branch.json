@@ -1,9 +1,9 @@
 {
- "last_run": "2026-11-11",
- "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42985585883",
- "result": "green",
- "made": "site = main: the website has the newest data",
- "waiting_on": "nobody (the watchdog restarts the copy bot itself)",
+ "last_run": "2026-11-12",
+ "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43143744063",
+ "result": "red",
+ "made": "site is 106 min behind main (3 commits, 43 website files): started the copy bot (kpc-pages-sync) once",
+ "waiting_on": "HQ: look at kpc-pages-sync.yml runs",
  "areas": "",
  "bot": "Website copy (site branch)"
 }
