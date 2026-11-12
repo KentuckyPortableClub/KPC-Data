@@ -25,7 +25,7 @@ def new_source_dates(folder='data/intake'):
     """area -> newest 'added' date of a probe-able queue row (queue.json + split files, never the hold file)."""
     out = {}
     for f in sorted(pathlib.Path(folder).glob('queue*.json')):
-        if 'hold' in f.name: continue
+        if 'hold' in f.name.lower(): continue
         for r in ((_load(f) or {}).get('rows') or []):
             a, d = str((r or {}).get('area') or ''), _day((r or {}).get('added')) if isinstance(r, dict) else None
             if a and d and d > out.get(a, datetime.date.min): out[a] = d

@@ -15,10 +15,12 @@ W = lambda n, rows: (tmp / n).write_text(json.dumps({'rows': rows}), encoding='u
 W('queue.json', [{'url': 'https://a.gov/x/MapServer/1', 'area': 'US-KY', 'added': '2026-10-01'}])
 W('queue-nov12.json', [{'url': 'https://b.gov/wfs', 'area': 'GB', 'added': '2026-11-12'}, {'url': 'https://a.gov/x/MapServer/1?f=json', 'area': 'US-KY'}])
 W('queue-hold-nov12.json', [{'url': 'https://c.gov/never', 'area': 'SE', 'added': '2026-11-12'}])
+W('queue-HOLD-x.json', [{'url': 'https://d.gov/never', 'area': 'SE', 'added': '2026-11-12'}])
+W('queue-Hold-y.json', [{'url': 'https://e.gov/never', 'area': 'SE', 'added': '2026-11-12'}])
 os.environ['QUEUE'] = str(tmp / 'queue.json')
 import kpc_intake_bot as IB
 got = [r['url'] for r in IB.split_queue_rows(json.loads((tmp / 'queue.json').read_text())['rows'])]
-check(got == ['https://b.gov/wfs'], f'split file read, hold file never, duplicate url skipped: {got}')
+check(got == ['https://b.gov/wfs'], f'split file read, hold file never (any case: hold / HOLD / Hold), duplicate url skipped: {got}')
 
 import kpc_searched as KS
 (tmp / 'searched-parks.json').write_text(json.dumps({'parks': {
@@ -29,7 +31,7 @@ import kpc_searched as KS
     'areas': {'RU': [{'date': '2026-11-11', 'result': 'nothing-found', 'search': 'outline', 'where': 't'}],
               'US': [{'date': '2026-11-11', 'result': 'nothing-found', 'search': 'outline', 'where': 't'}]}}), encoding='utf-8')
 S = KS.Searched(file=tmp / 'searched-parks.json', folder=tmp, today=datetime.date(2026, 11, 20))
-check(S.skip('SE-0001', 'SE') != '', 'searched 9 days ago, the only new row is in the hold file: skipped')
+check(S.skip('SE-0001', 'SE') != '', 'searched 9 days ago, the only new rows are in hold files (any case): skipped')
 check(S.skip('GB-0001', 'GB') == '', 'a newer probe-able queue row for GB: searched again')
 check(S.skip('NO-0001', 'NO') == '', 'searched over 90 days ago: searched again')
 check(S.skip('TH-0001', 'TH') == '' and S.skip('TH-0001', 'TH', kind='pin') != '', 'a pin hunt never blocks an outline hunt')
@@ -46,13 +48,15 @@ check(sorted(OP.fills(tmp)) == ['CA-1'], 'only a pin-fill for a park with no POT
 
 D = R / 'data' / 'intake'
 bad = re.compile(r'services\d*\.arcgis\.com|apps\.fs\.usda\.gov|33TOOklri9xpic7U|ncnhde\.natureserve\.org', re.I)
-for f in sorted(D.glob('queue-*.json')) + sorted(D.glob('official-pins-*.json')) + sorted(D.glob('searched-parks*.json')):
+for f in sorted(D.glob('queue-*.json')) + sorted(D.glob('official-pins-*.json')) + sorted(D.glob('searched-parks*.json')) + sorted(D.glob('park-source-links-*.json')):
     t = f.read_text(encoding='utf-8'); d = json.loads(t)
     check(len(t.encode()) < 1048576, f'{f.name}: under 1 MB ({len(t.encode())} bytes)')
-    check(not re.search(r'wdpa|protected ?planet|phone ?book', t, re.I), f'{f.name}: no WDPA text')
+    check(not re.search(r'wdpa|protected ?planet|protectedplanet|phone ?book|sprep|pacific-?data', t, re.I), f'{f.name}: no WDPA / SPREP / pacificdata text')
     if f.name.startswith('queue-') and 'hold' not in f.name:
         check(not [r for r in d['rows'] if bad.search(r.get('url') or '')], f'{f.name}: no never-contact host in a probe-able row')
 real = KS.Searched(); fl = OP.fills()
 check(len(real.parks) > 0 and all(isinstance(v, list) for v in real.parks.values()), f'searched-parks.json loads ({len(real.parks)} parks)')
 check(all(r.startswith(('CA-', 'AU-', 'US-', 'PF-', 'SE-', 'SI-')) for r in fl), f'official pin fills load ({len(fl)})')
+wf = (R / '.github' / 'workflows' / 'kpc-intake.yml').read_text(encoding='utf-8')
+check("'hold' in _f.lower()" in wf, 'nightly gate: the hold exclusion is case-insensitive too')
 print('ALL PASS' if ok else 'SOME FAILED'); sys.exit(0 if ok else 1)

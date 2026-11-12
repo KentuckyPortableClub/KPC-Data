@@ -295,7 +295,7 @@ def split_queue_rows(main_rows, folder=None):
     have = {strip_query(r.get('url')) for r in main_rows if isinstance(r, dict) and r.get('url')}
     out = []
     for f in sorted(folder.glob('queue*.json')):
-        if f.name == QUEUE_FILE.name or 'hold' in f.name: continue
+        if f.name == QUEUE_FILE.name or 'hold' in f.name.lower(): continue   # *hold* / *HOLD*: never probed
         for r in (load(f, {}) or {}).get('rows') or []:
             u = strip_query((r or {}).get('url')) if isinstance(r, dict) else ''
             if not u or u in have: continue
