@@ -4,7 +4,7 @@ watchdog both force-move 'site'; if one of them (or a new workflow) moved it to 
 and the filter would be silently undone. This scans every workflow and script of KPC-Data (and of KPC-Links when LINKS points at a
 checkout, or ../links / ../KPC-Links exists) for a WRITE to 'site': an API ref PATCH / POST / DELETE, a git push to it, update-ref,
 branch -f / checkout -B. Reading 'site' is fine. Offline, read-only."""
-import os, pathlib, re, sys, tempfile
+import os, pathlib, re, sys, tempfile, yaml
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 ALLOWED = {'.github/scripts/kpc_site_publish.sh'}
@@ -45,6 +45,20 @@ check('kpc_site_publish.sh pushes only the commit the filter built (filter first
 check("kpc_site_publish.sh moves site to main's commit only with FILTER=off", re.search(r'if \[ "\$FILTER" = off \]; then\n  if \[ "\$S" = none \]', pub) is not None)
 check('kpc-pages-sync.yml publishes through kpc_site_publish.sh', 'bash .github/scripts/kpc_site_publish.sh' in (ROOT / '.github/workflows/kpc-pages-sync.yml').read_text())
 check("the watchdog's repair path publishes through kpc_site_publish.sh", "'.github/scripts/kpc_site_publish.sh'" in (ROOT / '.github/scripts/kpc_watchdog.py').read_text())
+off = pub[pub.find('if [ "$FILTER" = off ]'):pub.find('kpc_site_filter.py build')]
+check("kpc_site_publish.sh FILTER=off path does not request pages/builds (the API move already starts a build, unchanged)",
+      'pages/builds' not in off and 'git/refs/heads/site' in off and '-f sha="$M"' in off)
+pb = pub.find('gh api -X POST "repos/$REPO/pages/builds"')
+check('kpc_site_publish.sh requests POST pages/builds only after a successful filtered push (PUBLISH=yes)',
+      0 <= pu < pb and '[ "$P" != yes ]' in pub[:pu] and 'GH_TOKEN' in pub[pu:pb])
+ps = yaml.safe_load(open(ROOT / '.github/workflows/kpc-pages-sync.yml', encoding='utf-8'))
+sync_step = next(s for s in ps['jobs']['sync']['steps'] if s.get('id') == 'kept_green_1')
+check('kpc-pages-sync.yml publish step sets GH_TOKEN and has pages: write',
+      (sync_step.get('env') or {}).get('GH_TOKEN') == '${{ github.token }}' and (ps.get('permissions') or {}).get('pages') == 'write')
+wd = yaml.safe_load(open(ROOT / '.github/workflows/kpc-watchdog.yml', encoding='utf-8'))
+look_step = next(s for s in wd['jobs']['look']['steps'] if 'kpc_watchdog.py' in str(s.get('run', '')))
+check("kpc-watchdog.yml start step sets GH_TOKEN and the job has pages: write (so a repair can request a Pages build)",
+      (look_step.get('env') or {}).get('GH_TOKEN') == '${{ github.token }}' and (wd.get('permissions') or {}).get('pages') == 'write')
 links = os.environ.get('LINKS') or next((str(p) for p in (ROOT.parent / 'links', ROOT.parent / 'KPC-Links') if (p / '.github').is_dir()), '')
 if links:
     lw = writers(links)

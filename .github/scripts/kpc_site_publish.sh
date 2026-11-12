@@ -1,13 +1,18 @@
 #!/usr/bin/env bash
-# THE ONE PLACE that moves the Pages branch 'site' (KPC owner, 2026-11-11). kpc-pages-sync.yml and the watchdog's repair path
-# (kpc_watchdog.py) both call it, so they cannot drift; tests/test_site_writers_nov11.py fails if anything else writes 'site'.
+# THE ONE PLACE that moves the Pages branch 'site' (KPC owner, 2026-11-11; Nov 12: request a Pages build after a filtered push).
+# kpc-pages-sync.yml and the watchdog's repair path (kpc_watchdog.py) both call it, so they cannot drift;
+# tests/test_site_writers_nov11.py fails if anything else writes 'site'.
 #   bash .github/scripts/kpc_site_publish.sh "<why>"
-# env: GH_TOKEN, R (owner/repo), FILTER (on = default | off), RUNNER_TEMP, GITHUB_STEP_SUMMARY (both optional)
+# env: GH_TOKEN, R (owner/repo), GITHUB_REPOSITORY (same, set by Actions), FILTER (on = default | off), RUNNER_TEMP, GITHUB_STEP_SUMMARY (both optional)
 # FILTER=on : builds the filtered commit (kpc_site_filter.py: only .github/site-allow-list.txt paths, one commit on top of main's
 #             commit) and force-pushes it to 'site'. Run inside a checkout of this repo (any depth; blobless is fine).
 #             If the filter refuses, NOTHING is published: 'site' stays the last good copy and an error is written (red run).
-# FILTER=off: the old way, 'site' = main's newest commit (everything published). The rollback switch: repo variable KPC_SITE_FILTER=off.
-# Exit 0 = published or nothing to do; 3 = the filter refused; 1 = could not read main / could not push.
+#             A GITHUB_TOKEN workflow push does not start a legacy Pages build, so after a successful filtered push
+#             (PUBLISH=yes and the push landed) this script requests one: gh api -X POST repos/$GITHUB_REPOSITORY/pages/builds.
+#             If that request fails, the run is red (the site ref already moved; live Pages must not stay stale silently).
+# FILTER=off: the old way, 'site' = main's newest commit (everything published), moved through the API as today (that move already
+#             starts a Pages build). The rollback switch: repo variable KPC_SITE_FILTER=off. This path is unchanged.
+# Exit 0 = published or nothing to do; 3 = the filter refused; 1 = could not read main / could not push / could not request a build.
 set -u
 WHY=${1:-}; FILTER=${FILTER:-on}; T=${RUNNER_TEMP:-/tmp}
 say() { echo "$1"; [ -z "${GITHUB_STEP_SUMMARY:-}" ] || echo "- $1" >> "$GITHUB_STEP_SUMMARY"; }
@@ -26,9 +31,19 @@ PREV=""
 if [ "$S" != none ] && git fetch -q --depth 1 $F_ origin "+refs/heads/site:refs/remotes/origin/site"; then PREV=origin/site; fi
 python3 .github/scripts/kpc_site_filter.py build --repo . --rev "$M" --previous "$PREV" | tee "$T/site-filter.txt"; rc=${PIPESTATUS[0]}
 C=$(grep '^COMMIT=' "$T/site-filter.txt" | cut -d= -f2)
+P=$(grep '^PUBLISH=' "$T/site-filter.txt" | cut -d= -f2)
 if [ "$rc" != 0 ] || [ -z "$C" ]; then stale "the site filter refused (exit $rc, see the log): site left as it was (${S:0:8})"; exit 3; fi
 if [ "$C" = "$S" ]; then say "Pages copy: the filtered site of ${M:0:8} is already live: nothing to publish"; exit 0; fi
+if [ "$P" != yes ]; then stale "the site filter did not print PUBLISH=yes: nothing pushed, site left as it was (${S:0:8})"; exit 3; fi
 if git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' push -q --force origin "$C:refs/heads/site"; then
-  say "Pages copy: site = filtered copy of main ${M:0:8} ($WHY; $(head -1 "$T/site-filter.txt"))"; exit 0
+  say "Pages copy: site = filtered copy of main ${M:0:8} ($WHY; $(head -1 "$T/site-filter.txt"))"
+  # only after a successful filtered push: a GITHUB_TOKEN push does not start a legacy Pages build
+  if [ -z "${GH_TOKEN:-}" ]; then stale "filtered site was pushed (${C:0:8}) but GH_TOKEN is not set, so a Pages build could not be requested"; exit 1; fi
+  REPO="${GITHUB_REPOSITORY:-$R}"
+  if [ -z "$REPO" ]; then stale "filtered site was pushed (${C:0:8}) but GITHUB_REPOSITORY is not set, so a Pages build could not be requested"; exit 1; fi
+  if o=$(gh api -X POST "repos/$REPO/pages/builds" 2>&1); then
+    say "Pages copy: a Pages build was requested after the filtered push"; exit 0
+  fi
+  stale "filtered site was pushed (${C:0:8}) but requesting a Pages build failed: $(echo $o | head -c 300)"; exit 1
 fi
 stale "could not push the filtered site ${C:0:8}"; exit 1

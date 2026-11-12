@@ -18,7 +18,7 @@ permissions:
   contents: write
   actions: write
   checks: read   # PR3: read the key bots' error notes (annotations)
-  pages: read    # PR3: the site check reads whether Pages has a custom domain (CNAME)
+  pages: write   # Nov 12: a filtered publish requests POST pages/builds (a GITHUB_TOKEN push does not start a build). Still covers the CNAME read.
 concurrency:
   group: kpc-watchdog
   cancel-in-progress: false

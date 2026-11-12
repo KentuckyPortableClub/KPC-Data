@@ -32,8 +32,10 @@ jobs:
     timeout-minutes: 5
     steps:
       # Nov 11 (KPC owner, storage round 2): 'site' carries only the paths the pages read (.github/site-allow-list.txt), built by
-      # .github/scripts/kpc_site_filter.py as ONE commit on top of main's commit (same files, no new content), force-pushed to 'site'
-      # as the ref moves today. The repo variable KPC_SITE_FILTER=off goes back to the old way (site = main's commit, everything).
+      # .github/scripts/kpc_site_filter.py as ONE commit on top of main's commit (same files, no new content), force-pushed to 'site'.
+      # A GITHUB_TOKEN push does not start a legacy Pages build, so kpc_site_publish.sh requests one after a successful filtered
+      # push (POST repos/$GITHUB_REPOSITORY/pages/builds; this job has pages: write and GH_TOKEN). A failed request makes the run red.
+      # The repo variable KPC_SITE_FILTER=off goes back to the old way (site = main's commit, everything, moved through the API as today).
       - uses: actions/checkout@v5
         with:
           fetch-depth: 1
