@@ -23,7 +23,7 @@ Updated 2026-11-12. Every fact in <area>.json carries its source url, read date 
 | US-IA | 222 | 27 | 32 | 0 | 0 | 0 | 93 | 0 | 70 | 0 | 97 | 0 |
 | US-ND | 92 | 12 | 17 | 0 | 0 | 0 | 0 | 6 | 57 | 11 | 69 | 0 |
 | US-SD | 126 | 36 | 29 | 0 | 0 | 0 | 0 | 0 | 61 | 30 | 60 | 0 |
-| US-PA | 161 | 101 | 45 | 1 | 0 | 0 | 0 | 0 | 14 | 1 | 115 | 0 |
+| US-PA | 161 | 37 | 45 | 1 | 0 | 1 | 0 | 0 | 77 | 1 | 115 | 0 |
 | US-NY | 584 | 95 | 5 | 0 | 55 | 0 | 1 | 0 | 428 | 37 | 572 | 0 |
 | US-NJ | 23 | 0 | 3 | 2 | 0 | 15 | 0 | 0 | 3 | 0 | 4 | 0 |
 | US-CT | 32 | 0 | 2 | 0 | 0 | 0 | 0 | 29 | 1 | 0 | 3 | 0 |
@@ -72,7 +72,7 @@ Updated 2026-11-12. Every fact in <area>.json carries its source url, read date 
 - dnr.wisconsin.gov: 58 campgrounds · host resting
 - reserve.floridastateparks.org: 55 campgrounds · robots.txt says no
 - dec.ny.gov: 55 campgrounds · robots.txt says no
-- www.fs.usda.gov: 47 campgrounds · host resting
+- www.fs.usda.gov: 48 campgrounds · host resting
 - www.wlf.louisiana.gov: 31 campgrounds · host resting (robots.txt could not be read: next run)
 - parks.ky.gov: 29 campgrounds · host resting
 - reserve.tnstateparks.com: 25 campgrounds · host resting (robots.txt could not be read: next run)
@@ -1806,14 +1806,52 @@ Updated 2026-11-12. Every fact in <area>.json carries its source url, read date 
 
 ## US-PA: 12 random samples (records with facts; seed = the date)
 
-- **Gifford Pinchot Campground** (PA-68e4d68901, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_004649.pdf)
+- **Gerard Trail shelter areas (Cow Run, Wolfkiel Run); Wildcat group tenting** (intake-US-1393, agency (outside research camping-us-oct31), status ok, 6 facts) · [www.pa.gov](https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/oil-creek-state-park/stay)
   - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
-  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
-  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
-- **Black Moshannon Campground** (PA-2dee1f3dcc, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_004914.pdf)
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/camping/o · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/camping/oil-creek-state-park/r/campgroundDetails.d”
+  - reservable = true · “roups.&lt;/p>\n &lt;p class=\"ms-rteElement-P\" style=\"\tfont-size: 1.0em;\r\n\">Advance reservations are required.&lt;/p>\n&lt;/div>"}}"> ”
+  - restrooms = "vault" · “t-P\">\n Fire circle\n &lt;/div>&lt;/li>\n &lt;li>\n &lt;div class=\"ms-rteElement-P\">\n Composting toilets\n &lt;/div>&lt;/li>\n &lt;li>\n”
+  - rules.pets = "Pets are permitted at the shelter areas" · “not be defaced.&lt;/p>\n&lt;p class=\"ms-rteElement-P\" style=\"\tfont-size: 1.0em;\r\n\">Pets are permitted at the shelter areas. Please co”
+  - showers = false · “&lt;/div>&lt;/li>\n &lt;li>\n &lt;div class=\"ms-rteElement-P\">\n Seasonal water, but no showers\n &lt;/div>&lt;/li>\n &lt;li>\n &lt;div cl”
+- **Pymatuning State Park** (PA-b6b89375db, state, status ok, 5 facts) · [www.dcnr.pa.gov](https://www.dcnr.pa.gov/StateParks/FindAPark/PymatuningStatePark)
   - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
-  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
-  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/camping/p · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/camping/pymatuning-state-park/r/campgroundDetails.”
+  - hookups.electric = true · “anges and yellows for those postcard shots. Electric Vehicle Charging Station A two-plug, electric-vehicle charging station is available for”
+  - map.date_how = "web page, no date in the link" · “link “download the park map””
+  - map.url = "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/sta · “link “download the park map” -> https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/pymatuning-state-par”
+- **Nockamixon State Park** (PA-50fdbf5540, state, status ok, 5 facts) · [www.dcnr.pa.gov](https://www.dcnr.pa.gov/StateParks/FindAPark/NockamixonStatePark)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/camping/n · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/camping/nockamixon-state-park/r/campgroundDetails.”
+  - hookups.electric = true · “lendar of Events for the lastest offerings. Electric Vehicle Charging Station A two-plug, electric vehicle charging station is available for”
+  - map.date_how = "web page, no date in the link" · “link “download the park map””
+  - map.url = "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/sta · “link “download the park map” -> https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/nockamixon-state-par”
+- **Codorus State Park** (PA-067f8a6ba8, state, status ok, 5 facts) · [www.dcnr.pa.gov](https://www.dcnr.pa.gov/StateParks/FindAPark/CodorusStatePark)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/camping/c · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/camping/codorus-state-park/r/campgroundDetails.do?”
+  - hookups.electric = true · “alendar of Events for the latest offerings. Electric Vehicle Charging Station A two-plug, electric-vehicle charging station is available for”
+  - map.date_how = "web page, no date in the link" · “link “download the park map””
+  - map.url = "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/sta · “link “download the park map” -> https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/codorus-state-park/m”
+- **State forest primitive and motorized (roadside) campsites** (intake-US-5464, agency (outside research camping-us-oct31), status ok, 13 facts) · [www.pa.gov](https://www.pa.gov/agencies/dcnr/recreation/what-to-do/stay-overnight/backpacking-and-primitive-camping)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation Online””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation Online” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
+  - dump_station = false · “find endless opportunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest”
+  - hookups.electric = false · “tunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest lands; however, t”
+  - hookups.water = false · “tunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest lands; however, t”
+  - map.date_how = "web page, no date in the link" · “link “State Forest Camping Locations Map””
+  - map.url = "https://maps.dcnr.pa.gov/bof/camping/" · “link “State Forest Camping Locations Map” -> https://maps.dcnr.pa.gov/bof/camping/”
+  - reservable = true · “nities not available: check in at park office for availability of water Pets allowed: Yes Reserve sites: up to 11 months in advance Explore ”
+  - restrooms = "some" · “rk) Number of shelters per site: 3 Number of tent spaces per site: 0 Amenities available: restroom and fire ring Amenities not available: fi”
+  - rules.fires = "campfire is desired during spring wildfire season -- you mu · “nline;\">d.”&lt;/span>&lt;/div>\r\n&lt;/li>\r\n&lt;li>&lt;div class=\"ms-rteElement-P\">A campfire is desired during spring wildfire season ”
+- **Organized group tenting area** (intake-US-4361, agency (outside research camping-us-oct31), status ok, 3 facts) · [www.pa.gov](https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/kings-gap-environmental-education-center/stay)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/camping/k · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/camping/kings-gap-environmental-education-center/r”
+  - showers = true · “li>\r\n&lt;li>Queen sofa bed&lt;/li>\r\n&lt;li>Private full bathroom with clawfoot tub or shower&lt;/li>\r\n&lt;li>Mini fridge&lt;/li>\r\n&l”
+- **Canoe Creek State Park** (PA-d1e82461dd, state, status ok, no campground facts even in a browser, 5 facts) · [www.dcnr.pa.gov](https://www.dcnr.pa.gov/StateParks/FindAPark/CanoeCreekStatePark)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/camping/c · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/camping/canoe-creek-state-park/r/campgroundDetails”
+  - map.date_how = "web page, no date in the link" · “link “download the park map””
+  - map.url = "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/sta · “link “download the park map” -> https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/canoe-creek-state-pa”
+  - season = "year-round" · “s the historical and natural resources of the park. Near the modern cabins, the center is open year-round and provides brochures about the e”
 - **State forest primitive and motorized (roadside) campsites** (intake-US-5475, agency (outside research camping-us-oct31), status ok, 13 facts) · [www.pa.gov](https://www.pa.gov/agencies/dcnr/recreation/what-to-do/stay-overnight/backpacking-and-primitive-camping)
   - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation Online””
   - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation Online” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
@@ -1825,49 +1863,40 @@ Updated 2026-11-12. Every fact in <area>.json carries its source url, read date 
   - reservable = true · “nities not available: check in at park office for availability of water Pets allowed: Yes Reserve sites: up to 11 months in advance Explore ”
   - restrooms = "some" · “rk) Number of shelters per site: 3 Number of tent spaces per site: 0 Amenities available: restroom and fire ring Amenities not available: fi”
   - rules.fires = "campfire is desired during spring wildfire season -- you mu · “nline;\">d.”&lt;/span>&lt;/div>\r\n&lt;/li>\r\n&lt;li>&lt;div class=\"ms-rteElement-P\">A campfire is desired during spring wildfire season ”
-- **Salt Springs rustic campground, camping cottages, group tenting** (intake-US-1417, agency (outside research camping-us-oct31), status ok, 6 facts) · [www.pa.gov](https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/salt-springs-state-park/stay)
-  - booking.how = "online: parkwith.us" · “link “Make a Reservation””
-  - booking.url = "https://parkwith.us/camps/salt-springs-park?camping_style=t · “link “Make a Reservation” -> https://parkwith.us/camps/salt-springs-park?camping_style=tent”
-  - features = "fire ring and picnic table" · “tenting sites are privately situated along the banks of Silver Creek. All sites include a fire ring and picnic table. The campground has a r”
-  - hookups.electric = true · “;The cottages have:&lt;/p>\r\n&lt;ul>\r\n&lt;li>Wooden walls and floors&lt;/li>\r\n&lt;li>Electric lights and outlets&lt;/li>\r\n&lt;li>Porc”
-  - restrooms = "some" · “nks of Silver Creek. All sites include a fire ring and picnic table. The campground has a restroom with non-flush toilets. Water is availabl”
-  - rules.pets = "Pets are permitted in the campground" · “nd from a faucet in front of the restrooms in the parking lot.&lt;br>\r\n&lt;/p>\r\n&lt;p>Pets are permitted in the campground.&lt;br>\r\n&l”
-- **Trough Creek Campground** (PA-07e92f82fe, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_003036.pdf)
-  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
-  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
-  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
-- **Gerard Trail shelter areas (Cow Run, Wolfkiel Run); Wildcat group tenting** (intake-US-1393, agency (outside research camping-us-oct31), status ok, 6 facts) · [www.pa.gov](https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/oil-creek-state-park/stay)
-  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
-  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/camping/o · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/camping/oil-creek-state-park/r/campgroundDetails.d”
-  - reservable = true · “roups.&lt;/p>\n &lt;p class=\"ms-rteElement-P\" style=\"\tfont-size: 1.0em;\r\n\">Advance reservations are required.&lt;/p>\n&lt;/div>"}}"> ”
-  - restrooms = "vault" · “t-P\">\n Fire circle\n &lt;/div>&lt;/li>\n &lt;li>\n &lt;div class=\"ms-rteElement-P\">\n Composting toilets\n &lt;/div>&lt;/li>\n &lt;li>\n”
-  - rules.pets = "Pets are permitted at the shelter areas" · “not be defaced.&lt;/p>\n&lt;p class=\"ms-rteElement-P\" style=\"\tfont-size: 1.0em;\r\n\">Pets are permitted at the shelter areas. Please co”
-  - showers = false · “&lt;/div>&lt;/li>\n &lt;li>\n &lt;div class=\"ms-rteElement-P\">\n Seasonal water, but no showers\n &lt;/div>&lt;/li>\n &lt;li>\n &lt;div cl”
-- **Moraine modern cabins (11); Link Road Overnight Shelter (NCT)** (intake-US-1387, agency (outside research camping-us-oct31), status ok, 7 facts) · [www.pa.gov](https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/moraine-state-park/stay)
-  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
-  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/camping/m · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/camping/moraine-state-park/r/campgroundDetails.do?”
-  - hookups.electric = true · “n Dining/living area\n &lt;/div>&lt;/li>\n &lt;li>\n &lt;div class=\"ms-rteElement-P\">\n Electric heat\n &lt;/div>&lt;/li>\n &lt;li>\n &lt;”
-  - reservable = true · “ernight Shelter on the North Country National Scenic Trail is available to backpackers by reservation only.&lt;/p>\n &lt;h2 class=\"ms-rteEl”
-  - restrooms = "yes (kind not stated)" · “tic camping areas have:&lt;/p>\n &lt;ul>\n &lt;li>\n &lt;div class=\"ms-rteElement-P\">\n Restrooms\n &lt;/div>&lt;/li>\n &lt;li>\n &lt;div ”
-  - rules.pets = "Dogs are permitted in Cabins #7 and #11 for a fee" · “y equipment for children is in a central area.&lt;/p>\n &lt;p style=\"font-size: 1.0em;\">Dogs are permitted in Cabins #7 and #11 for a fee.”
-  - showers = "some" · “lt;li>Two bedrooms&lt;/li>\n &lt;li>\n &lt;div class=\"ms-rteElement-P\">\n Bathroom with shower\n &lt;/div>&lt;/li>\n &lt;li>\n &lt;div cla”
-- **Colton Point Campground** (PA-01409dd158, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_20026365.pdf)
-  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
-  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
-  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
-- **Hills Creek Campground** (PA-92b9cb462b, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_004619.pdf)
-  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
-  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
-  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
-- **Ole Bull Campground** (PA-79cbb85fdf, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_003471.pdf)
-  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
-  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
-  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
-- **French Creek Campground** (PA-35d4a79093, state, status ok (browser), 3 facts) · [www.dcnr.state.pa.us](http://www.dcnr.state.pa.us/cs/groups/public/documents/document/dcnr_004689.rtf)
-  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation””
-  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
-  - fees = "$16 in Economic Impact for Every | $1 Invested by the Commo · “local infrastructure. October 29, 2026 NEW DATA: Pennsylvania’s Free State Parks Generate $16 in Economic Impact for Every $1 Invested by th”
-- **State forest primitive and motorized (roadside) campsites** (intake-US-5468, agency (outside research camping-us-oct31), status ok, 13 facts) · [www.pa.gov](https://www.pa.gov/agencies/dcnr/recreation/what-to-do/stay-overnight/backpacking-and-primitive-camping)
+- **State forest primitive and motorized (roadside) campsites** (intake-US-5473, agency (outside research camping-us-oct31), status ok, 13 facts) · [www.pa.gov](https://www.pa.gov/agencies/dcnr/recreation/what-to-do/stay-overnight/backpacking-and-primitive-camping)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation Online””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation Online” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
+  - dump_station = false · “find endless opportunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest”
+  - hookups.electric = false · “tunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest lands; however, t”
+  - hookups.water = false · “tunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest lands; however, t”
+  - map.date_how = "web page, no date in the link" · “link “State Forest Camping Locations Map””
+  - map.url = "https://maps.dcnr.pa.gov/bof/camping/" · “link “State Forest Camping Locations Map” -> https://maps.dcnr.pa.gov/bof/camping/”
+  - reservable = true · “nities not available: check in at park office for availability of water Pets allowed: Yes Reserve sites: up to 11 months in advance Explore ”
+  - restrooms = "some" · “rk) Number of shelters per site: 3 Number of tent spaces per site: 0 Amenities available: restroom and fire ring Amenities not available: fi”
+  - rules.fires = "campfire is desired during spring wildfire season -- you mu · “nline;\">d.”&lt;/span>&lt;/div>\r\n&lt;/li>\r\n&lt;li>&lt;div class=\"ms-rteElement-P\">A campfire is desired during spring wildfire season ”
+- **State forest primitive and motorized (roadside) campsites** (intake-US-5479, agency (outside research camping-us-oct31), status ok, 13 facts) · [www.pa.gov](https://www.pa.gov/agencies/dcnr/recreation/what-to-do/stay-overnight/backpacking-and-primitive-camping)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation Online””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation Online” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
+  - dump_station = false · “find endless opportunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest”
+  - hookups.electric = false · “tunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest lands; however, t”
+  - hookups.water = false · “tunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest lands; however, t”
+  - map.date_how = "web page, no date in the link" · “link “State Forest Camping Locations Map””
+  - map.url = "https://maps.dcnr.pa.gov/bof/camping/" · “link “State Forest Camping Locations Map” -> https://maps.dcnr.pa.gov/bof/camping/”
+  - reservable = true · “nities not available: check in at park office for availability of water Pets allowed: Yes Reserve sites: up to 11 months in advance Explore ”
+  - restrooms = "some" · “rk) Number of shelters per site: 3 Number of tent spaces per site: 0 Amenities available: restroom and fire ring Amenities not available: fi”
+  - rules.fires = "campfire is desired during spring wildfire season -- you mu · “nline;\">d.”&lt;/span>&lt;/div>\r\n&lt;/li>\r\n&lt;li>&lt;div class=\"ms-rteElement-P\">A campfire is desired during spring wildfire season ”
+- **State forest primitive and motorized (roadside) campsites** (intake-US-5467, agency (outside research camping-us-oct31), status ok, 13 facts) · [www.pa.gov](https://www.pa.gov/agencies/dcnr/recreation/what-to-do/stay-overnight/backpacking-and-primitive-camping)
+  - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation Online””
+  - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation Online” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
+  - dump_station = false · “find endless opportunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest”
+  - hookups.electric = false · “tunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest lands; however, t”
+  - hookups.water = false · “tunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest lands; however, t”
+  - map.date_how = "web page, no date in the link" · “link “State Forest Camping Locations Map””
+  - map.url = "https://maps.dcnr.pa.gov/bof/camping/" · “link “State Forest Camping Locations Map” -> https://maps.dcnr.pa.gov/bof/camping/”
+  - reservable = true · “nities not available: check in at park office for availability of water Pets allowed: Yes Reserve sites: up to 11 months in advance Explore ”
+  - restrooms = "some" · “rk) Number of shelters per site: 3 Number of tent spaces per site: 0 Amenities available: restroom and fire ring Amenities not available: fi”
+  - rules.fires = "campfire is desired during spring wildfire season -- you mu · “nline;\">d.”&lt;/span>&lt;/div>\r\n&lt;/li>\r\n&lt;li>&lt;div class=\"ms-rteElement-P\">A campfire is desired during spring wildfire season ”
+- **State forest primitive and motorized (roadside) campsites** (intake-US-5481, agency (outside research camping-us-oct31), status ok, 13 facts) · [www.pa.gov](https://www.pa.gov/agencies/dcnr/recreation/what-to-do/stay-overnight/backpacking-and-primitive-camping)
   - booking.how = "online: pennsylvaniastateparks.reserveamerica.com" · “link “Make a Reservation Online””
   - booking.url = "https://pennsylvaniastateparks.reserveamerica.com/welcome.d · “link “Make a Reservation Online” -> https://pennsylvaniastateparks.reserveamerica.com/welcome.do”
   - dump_station = false · “find endless opportunities for hiking and camping. There are no modern facilities, water, dump stations, or utility hook-ups on state forest”

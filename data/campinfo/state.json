@@ -838,18 +838,18 @@
     "needs_key": 45,
     "no_page": 0,
     "not_official": 0,
-    "ok": 101,
-    "other": 14,
-    "resting": 0,
+    "ok": 37,
+    "other": 77,
+    "resting": 1,
     "robots": 0,
     "with_booking": 115,
     "with_elevation": 0,
-    "with_facts": 105,
+    "with_facts": 41,
     "with_sites": 1
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-05"
+   "updated": "2026-11-12"
   },
   "US-RI": {
    "camps": 5,
@@ -1153,7 +1153,7 @@
   "US-OH": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-OK": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-OR": "FCC listAsOfDates: robots.txt says no",
-  "US-PA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-PA": "FCC listAsOfDates: robots.txt says no",
   "US-RI": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-SC": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-SD": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1506,9 +1506,9 @@
     "carriers": null,
     "files": [],
     "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "status": "FCC listAsOfDates: robots.txt says no"
    },
-   "read": "2026-11-05"
+   "read": "2026-11-12"
   },
   "US-RI": {
    "cell": {
@@ -2577,13 +2577,12 @@
  },
  "last": {
   "areas": [
-   "US-NJ"
+   "US-PA"
   ],
   "fcc_token": true,
   "manners": {
-   "dropped_queued": 22,
+   "dropped_queued": 160,
    "errors": 0,
-   "for_person": 2,
    "for_person_urls": [
     [
      "https://epqs.nationalmap.gov/robots.txt",
@@ -2592,36 +2591,27 @@
     [
      "https://broadbandmap.fcc.gov/robots.txt",
      "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from broadbandmap.fcc.gov"
-    ],
-    [
-     "https://dep.nj.gov/parksandforests/state-park/wharton-state-forest/",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://dep.nj.gov/parksandforests/state-park/bass-river-state-forest/",
-     "HTTP 403 twice"
     ]
    ],
    "host_rule": 0,
-   "requests": 15,
-   "rested": 15,
-   "retry403": 2,
+   "requests": 219,
+   "rested": 1,
    "robots": 2,
-   "strikes": 4
+   "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 3,
-   "camps": 23,
+   "browser": 76,
+   "camps": 161,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 5,
-   "needs_key": 3,
-   "no_page": 0,
+   "needs_browser": 77,
+   "needs_key": 45,
+   "no_page": 1,
    "not_official": 0,
-   "ok": 3,
-   "pages_read": 3,
-   "resting": 15,
+   "ok": 114,
+   "pages_read": 136,
+   "resting": 1,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0
