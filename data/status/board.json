@@ -12,9 +12,9 @@
   "2-fer gate (areas ready / waiting)": {
    "areas": "",
    "last_run": "2026-11-12",
-   "made": "1068 audit rows not clean in 43 areas; waiting for audit 66 (a key build is saving: nothing started)",
+   "made": "1068 audit rows not clean in 43 areas; waiting for audit 66",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43309608466",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43143744063",
    "waiting_on": "chat 11 / 12 (audit answers), chat 2 (fixes)"
   },
   "Cell coverage (FCC)": {
@@ -1084,9 +1084,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-12",
-   "made": "2026-11-12 21:23 UTC: 1 skipped run(s) started again: kpc-waiting-room.yml (missed Nov 12 20:42 UTC)",
+   "made": "2026-11-12 23:50 UTC: 2 skipped run(s) started again: kpc-copy-from-links.yml (missed Nov 12 23:11 UTC); kpc-waiting-room.yml (missed Nov 12 22:42 UTC)",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43309608466",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43332141386",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1196,9 +1196,9 @@
   "Website copy (site branch)": {
    "areas": "",
    "last_run": "2026-11-12",
-   "made": "site is under 60 min behind main: the copy bot will catch up",
+   "made": "site = main: the website has the newest data",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43309608466",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43332141386",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "answer-sheet-check": {
@@ -1291,7 +1291,7 @@
   },
   "waiting room": {
    "last_run": "2026-11-12",
-   "made": "heartbeat 0 h old, 480 files waiting",
+   "made": "heartbeat 3 h old, 480 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
