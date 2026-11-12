@@ -1,13 +1,15 @@
 {
- "checked": "2026-11-12T17:56Z",
+ "checked": "2026-11-12T18:21Z",
  "switched_on": false,
  "results": [
   {
    "path": "data/campinfo/US-AK.json",
    "kind": "campinfo",
-   "why": [],
+   "why": [
+    "F-I6 campgrounds with source-lined facts 122 -> 11 (more than 30% lost: a blocked read emptied them?)"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/campinfo/US-AL.json",
@@ -150,9 +152,11 @@
   {
    "path": "data/campinfo/US-KY.json",
    "kind": "campinfo",
-   "why": [],
+   "why": [
+    "F-I6 campgrounds with source-lined facts 60 -> 22 (more than 30% lost: a blocked read emptied them?)"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/campinfo/US-LA.json",
@@ -425,9 +429,11 @@
   {
    "path": "data/campinfo/US-WI.json",
    "kind": "campinfo",
-   "why": [],
+   "why": [
+    "F-I6 campgrounds with source-lined facts 12 -> 4 (more than 30% lost: a blocked read emptied them?)"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/campinfo/US-WV.json",
