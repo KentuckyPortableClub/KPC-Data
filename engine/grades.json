@@ -5,12 +5,12 @@
    "verdict": "FAIL",
    "bar": "Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.",
    "measured": {
-    "rows": 10156,
-    "parks": 4007,
+    "rows": 10206,
+    "parks": 4012,
     "parks_with_hit": 556,
-    "SURE": 416,
-    "LIKELY": 610,
-    "UNLIKELY_evidence": 3697,
+    "SURE": 417,
+    "LIKELY": 613,
+    "UNLIKELY_evidence": 3714,
     "strong": 225,
     "already_approved": 563,
     "open_without_whynot": 456,
@@ -31,15 +31,15 @@
     },
     {
      "reason": "evidence: UNLIKELY only : name: none word in common",
-     "parks": 1679
+     "parks": 1682
     },
     {
      "reason": "blocked: source could not be read",
-     "parks": 830
+     "parks": 858
     },
     {
      "reason": "evidence: UNLIKELY only : pin not inside nor within m with a name match",
-     "parks": 810
+     "parks": 816
     },
     {
      "reason": "already approved: already approved",
@@ -108,19 +108,19 @@
     "the finder bars need the side-by-side run (95% re-found, +25% parks) and a 40-row sample (85% YES)"
    ],
    "details": {
-    "rows": 10156,
-    "found_or_candidate": 1000,
-    "blocked": 1867,
+    "rows": 10206,
+    "found_or_candidate": 1004,
+    "blocked": 1896,
     "hit_rate": 0.098,
     "bands": {
      "STRONG": 225,
-     "WEAK": 757,
+     "WEAK": 761,
      "CONFLICT": 18
     },
     "tiers": {
      "T-1": 70,
-     "T-2": 325,
-     "T-3": 479,
+     "T-2": 326,
+     "T-3": 482,
      "T-4": 61,
      "T-6": 65
     },
@@ -298,9 +298,9 @@
     "error": 430,
     "already approved": 563,
     "found": 238,
-    "candidate": 849,
-    "evidence": 3633,
-    "blocked": 1867,
+    "candidate": 857,
+    "evidence": 3646,
+    "blocked": 1896,
     "not found": 2571,
     "pin only": 5
    },
