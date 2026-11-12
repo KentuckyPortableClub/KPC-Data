@@ -198,7 +198,7 @@
    "Unit": "acres",
    "Agency": "State of Oregon (Oregon parklands) (park, state GIS table)",
    "Source page": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0/query?where=OBJECTID%3D5132&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0; read 2026-11-04"
+   "Notes": "computed from the official outline polygon (approx); layer https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0; read 2026-11-12"
   },
   {
    "Park number (if matched)": "US-3630",
@@ -622,6 +622,15 @@
    "Agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
    "Source page": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.798%2C46.0442&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
    "Notes": "computed from the official outline polygon (approx); layer https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-3797",
+   "Park name (as the agency writes it)": "Boatwright Wildlife Management Area",
+   "Size": 256,
+   "Unit": "acres",
+   "Agency": "Kentucky Heritage Land Conservation Fund",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0/query?where=OBJECTID%3D99&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0; read 2026-11-12"
   },
   {
    "Park number (if matched)": "US-0731",
@@ -2079,7 +2088,7 @@
    "Agency/area": "Kentucky Department of Parks",
    "Kind": "GIS layer",
    "Example URL": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8",
-   "# times used": 49,
+   "# times used": 50,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
