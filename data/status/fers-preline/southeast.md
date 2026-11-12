@@ -1,6 +1,6 @@
 # 2-fer pre-line check: southeast (US-TN US-NC US-VA US-WV US-GA US-AL US-SC US-FL US-MS): GO
 
-Key source: build · checked 2026-11-12 05:19 UTC
+Key source: build · checked 2026-11-12 11:04 UTC
 
 ## US-TN: GO (HELD KEY: build US-43056604383 has no person's sign-off yet; the 2-fers measured on it are held with it)
 - warn: 2 review-pile HOLD row(s) still outlines: US-12070 US-12715 (their 2-fers are 'not sure')
