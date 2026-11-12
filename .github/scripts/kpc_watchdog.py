@@ -125,6 +125,12 @@ def site_check():
     if rc == 0 and cn.strip():
         rc, f = gh(f'repos/{REPO}/contents/CNAME?ref=site', '--jq', '.name')
         if rc != 0: probs.append(f"Pages has the custom domain {cn.strip()} but 'site' has no CNAME file")
+    # Nov 11 (KPC owner, storage round 2): a filtered 'site' is one commit ON TOP of the main commit it was made from
+    # (kpc_site_filter.py); compare that main commit, not the site commit itself
+    rc3, msg = gh(f'repos/{REPO}/git/commits/{S}', '--jq', '.message')
+    if rc3 == 0 and msg.startswith('site: published copy of main '):
+        rc3, par = gh(f'repos/{REPO}/git/commits/{S}', '--jq', '.parents[0].sha')
+        if rc3 == 0 and par.strip(): S = par.strip()
     if M == S:
         return ('red', '; '.join(probs)) if probs else ('green', "site = main: the website has the newest data")
     rc, cmp_ = gh(f'repos/{REPO}/compare/{S}...{M}', '--jq',
@@ -140,10 +146,13 @@ def site_check():
     if lag <= SITE_LAG_MIN:
         return ('red', '; '.join(probs)) if probs else ('green', f'site is under {SITE_LAG_MIN} min behind main: the copy bot will catch up')
     words = f"site is {lag:.0f} min behind main ({c.get('ahead_by', '?')} commits, {len(relevant)} website files): "
-    if lag > SITE_FORCE_MIN and not os.environ.get('DRY'):   # same as the copy bot does: site = main's newest commit
-        rc, _ = gh('-X', 'PATCH', f'repos/{REPO}/git/refs/heads/site', '-f', f'sha={M}', '-F', 'force=true')
-        words += ('the copy bot did not catch up, so the watchdog moved site to main itself' if rc == 0
-                  else 'the watchdog could not move site either: look at kpc-pages-sync.yml')
+    if lag > SITE_FORCE_MIN and not os.environ.get('DRY'):
+        # Nov 11 (KPC owner): the repair goes through the same script as the copy bot (kpc_site_publish.sh): the filtered site,
+        # or site = main only when the repo variable KPC_SITE_FILTER=off. The watchdog never writes 'site' any other way.
+        env = dict(os.environ, R=REPO, FILTER='off' if os.environ.get('KPC_SITE_FILTER') == 'off' else 'on')
+        rc = subprocess.run(['bash', '.github/scripts/kpc_site_publish.sh', 'watchdog repair: the copy bot did not catch up'], env=env).returncode
+        words += ('the copy bot did not catch up, so the watchdog published site itself (kpc_site_publish.sh)' if rc == 0
+                  else f'the watchdog could not publish site either (kpc_site_publish.sh exit {rc}): look at kpc-pages-sync.yml')
     else:
         rc, _ = (0, '') if os.environ.get('DRY') else gh('-X', 'POST', f'repos/{REPO}/actions/workflows/kpc-pages-sync.yml/dispatches', '-f', 'ref=main')
         words += 'started the copy bot (kpc-pages-sync) once' if rc == 0 else 'could NOT start the copy bot'

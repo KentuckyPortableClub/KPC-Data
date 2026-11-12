@@ -18,7 +18,7 @@ permissions:
   contents: write
   actions: write
   checks: read   # PR3: read the key bots' error notes (annotations)
-  pages: read    # PR3: the site check reads whether Pages has a custom domain (CNAME)
+  pages: write   # Nov 12: a filtered publish requests POST pages/builds (a GITHUB_TOKEN push does not start a build). Still covers the CNAME read.
 concurrency:
   group: kpc-watchdog
   cancel-in-progress: false
@@ -35,6 +35,7 @@ jobs:
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
+          KPC_SITE_FILTER: ${{ vars.KPC_SITE_FILTER || 'on' }}   # Nov 11: 'off' = the old way (the watchdog may move site to main itself)
         run: python3 .github/scripts/kpc_watchdog.py   # PR3: also checks the website copy (branch 'site' vs main) and restarts it
       - name: Key bots - errors and silence, both repos (PR3; read-only, one board line)
         id: kept_green_4

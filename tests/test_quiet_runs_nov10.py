@@ -111,9 +111,11 @@ if '-X PATCH' in a: sys.exit(1 if sc.get('patch_fails') else 0)
 sys.exit(0)
 ''')
     (binp / 'gh').chmod(0o755)
-    def run_sync(scen, switch=''):
+    def run_sync(scen, switch='', filt='off'):
+        # Nov 11 (site filter): these cases are the old way (FILTER=off: site = main's commit, moved with PATCH); the filtered way
+        # (FILTER=on) is tested with real repos in tests/test_site_filter_sync_nov11.py
         calls = t / 'calls.txt'; calls.write_text(''); summ = t / 'summary.md'; summ.write_text('')
-        env = dict(ENV, PATH=f'{binp}:{os.environ["PATH"]}', SCEN=json.dumps(scen), CALLS=str(calls), R='o/r', RUNNER_TEMP=str(t), GITHUB_STEP_SUMMARY=str(summ), SWITCH=switch, GH_TOKEN='x')
+        env = dict(ENV, PATH=f'{binp}:{os.environ["PATH"]}', SCEN=json.dumps(scen), CALLS=str(calls), R='o/r', RUNNER_TEMP=str(t), GITHUB_STEP_SUMMARY=str(summ), SWITCH=switch, GH_TOKEN='x', FILTER=filt)
         r = subprocess.run(['bash', '-c', script], capture_output=True, text=True, env=env)
         return r, calls.read_text(), summ.read_text()
     recent = '2099-01-01T00:00:00Z'; old = '2020-01-01T00:00:00Z'
@@ -127,6 +129,10 @@ sys.exit(0)
     check('-X PATCH' in calls, 'bookkeeping only but the site copy is over 6 h old: moves (the status page reads data/status)')
     r, calls, summ = run_sync({'files': ['data/campinfo/US-TX.json'], 'site_date': recent, 'build': 'built', 'patch_fails': True})
     check('stay stale' in r.stdout and (t / 'kpc-hidden-errors.txt').exists(), 'a move that fails while the site is behind a real change is reported as an error (the only red reason)')
+    (t / 'kpc-hidden-errors.txt').unlink(missing_ok=True)
+    r, calls, summ = run_sync({'files': ['data/campinfo/US-TX.json'], 'site_date': recent, 'build': 'built'}, filt='on')
+    check('-X PATCH' not in calls and 'stay stale' in r.stdout and (t / 'kpc-hidden-errors.txt').exists(),
+          'filter on and the filter cannot run: site is NOT moved to main (nothing unfiltered is published) and it is an error')
 check("KPC_HIDDEN_RED != 'off'" in json.dumps(ps), 'kpc-pages-sync.yml: its fail-safe red (site would stay stale) is kept')
 
 # 4. quiet-save gate on real local repos (Data keeps a copy for the flow board)
