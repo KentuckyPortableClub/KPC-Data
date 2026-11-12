@@ -136,6 +136,10 @@ def audit_clean(data, passed=None):
 
 
 RETRY_H = 6      # a planned line with no result after this many hours may start again
+try:   # KPC owner, 2026-11-12: a line stopped by the memory guard (kpc_mem_guard.py) is not started again on the same cut
+    from kpc_mem_guard import stopped_for_memory as MEM_STOP
+except Exception:  # noqa: BLE001
+    def MEM_STOP(data, tag, since=None): return False
 TRIES = 2        # at most this many starts per area fingerprint; then a person looks
 
 
@@ -339,6 +343,7 @@ def plan(data='.', links='links', gate='', mx=3, now=None):
             if a.get('fp') == fp:
                 if line_done(data, tag, a.get('planned')): s['ran'].append(tag); continue
                 if int(a.get('tries') or 0) >= TRIES: s['waiting'][tag] = f"the line did not finish READY after {a.get('tries')} starts on these key files (see data/fers/line-{tag}.json): a person looks"; continue
+                if MEM_STOP(data, tag, a.get('planned')): s['waiting'][tag] = 'the memory guard stopped its line on these key files: needs a smaller cut or more memory (not started again on the same cut): a person looks'; continue   # KPC owner, 2026-11-12
                 if a.get('planned') and time.mktime(time.strptime(a['planned'], '%Y-%m-%d %H:%M UTC')) > time.mktime(time.gmtime(now)) - RETRY_H * 3600:
                     s['ran'].append(tag); s['waiting'][tag] = f"line started {a['planned']}: waiting for its result"; continue
             if kind == 'world-key':   # behind US and Canada: world starts only when their 2-fers on the same rules are OK
