@@ -76,17 +76,17 @@
     "no_page": 0,
     "not_official": 2,
     "ok": 1,
-    "other": 11,
-    "resting": 0,
+    "other": 4,
+    "resting": 7,
     "robots": 16,
     "with_booking": 28,
     "with_elevation": 0,
-    "with_facts": 2,
+    "with_facts": 1,
     "with_sites": 0
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-09"
+   "updated": "2026-11-12"
   },
   "US-CA": {
    "camps": 1210,
@@ -1119,7 +1119,7 @@
   "US-AK": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-AL": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-AR": "FCC listAsOfDates: robots.txt says no",
-  "US-AZ": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-AZ": "FCC listAsOfDates: robots.txt says no",
   "US-CA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-CO": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-CT": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1200,9 +1200,9 @@
     "carriers": null,
     "files": [],
     "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "status": "FCC listAsOfDates: robots.txt says no"
    },
-   "read": "2026-11-09"
+   "read": "2026-11-12"
   },
   "US-CA": {
    "cell": {
@@ -1620,7 +1620,7 @@
   }
  },
  "hosts": {
-  "www.fs.usda.gov": 1794471621.309258
+  "www.fs.usda.gov": 1794564793.8127542
  },
  "ky_check": {
   "agree": 81,
@@ -2575,41 +2575,54 @@
  },
  "last": {
   "areas": [
-   "US-UT"
+   "US-AZ"
   ],
   "fcc_token": true,
   "manners": {
-   "dropped_queued": 335,
-   "errors": 0,
+   "dropped_queued": 216,
+   "errors": 3,
    "for_person_urls": [
     [
      "https://epqs.nationalmap.gov/robots.txt",
      "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from epqs.nationalmap.gov"
+    ],
+    [
+     "https://broadbandmap.fcc.gov/robots.txt",
+     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from broadbandmap.fcc.gov"
+    ],
+    [
+     "https://azstateparks.com/robots.txt",
+     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from azstateparks.com"
+    ],
+    [
+     "https://azprtl.azstateparks.com/robots.txt",
+     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from azprtl.azstateparks.com"
     ]
    ],
    "host_rule": 0,
-   "requests": 1,
-   "rested": 4,
-   "robots": 1,
-   "strikes": 0
+   "requests": 16,
+   "rested": 6,
+   "robots": 4,
+   "strikes": 3
   },
   "ridb_key": false,
   "stat": {
-   "camps": 336,
+   "browser": 2,
+   "camps": 203,
    "elevations": 0,
-   "errors": 1,
-   "needs_browser": 0,
-   "needs_key": 332,
-   "no_page": 0,
-   "not_official": 0,
-   "ok": 0,
-   "pages_read": 0,
-   "resting": 4,
+   "errors": 0,
+   "needs_browser": 2,
+   "needs_key": 173,
+   "no_page": 2,
+   "not_official": 2,
+   "ok": 3,
+   "pages_read": 4,
+   "resting": 7,
    "ridb_calls": 0,
-   "robots": 0,
-   "skipped_fresh": 136
+   "robots": 16,
+   "skipped_fresh": 0
   },
-  "when": "2026-11-11"
+  "when": "2026-11-12"
  },
  "test": {
   "result": "PASS",
