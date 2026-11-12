@@ -11,16 +11,16 @@
   "US-ND",
   "US-SD"
  ],
- "since": "2026-11-11",
- "date": "2026-11-11 18:43 UTC",
+ "since": "2026-11-12",
+ "date": "2026-11-12 06:05 UTC",
  "verdict": "STOPPED",
  "why": [
   "missing check: 8166 of 12580 expected pairs were never looked at (65%; 2219 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (8148); <park>: not in this run (another state, retired, or no POTA pin) (18)"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 545,
-  "DROPPED": 1650,
+  "FOUND": 542,
+  "DROPPED": 1653,
   "NEVER LOOKED AT": 10385
  },
  "never_looked_at": {
@@ -35,23 +35,23 @@
  },
  "report": {
   "pass1": {
-   "date": "2026-11-11",
+   "date": "2026-11-12",
    "pairs tested": 8177,
    "pairs whose boxes touch": 8177
   },
   "pass2": {
    "agree with the pass before": 2590,
-   "date": "2026-11-11",
+   "date": "2026-11-12",
    "pairs tested": 738
   },
   "pass3": {
-   "agree with the pass before": 1860,
-   "date": "2026-11-11",
+   "agree with the pass before": 1856,
+   "date": "2026-11-12",
    "pairs tested": 716
   },
   "pass5": {
    "checked": 322,
-   "date": "2026-11-11",
+   "date": "2026-11-12",
    "pairs tested": 0,
    "still not checked": 0
   }
@@ -113,25 +113,26 @@
    "2-fer self-check": 1,
    "one record covers two parks": 4
   },
-  "dropped": 176,
-  "merged": 268
+  "dropped": 177,
+  "merged": 267
  },
  "US-MN": {
   "rows": 1273,
-  "live": 216,
+  "live": 214,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
+   "our saved copy of the official line for US-11904 is only 10": 2,
    "no park here owns land": 3,
    "this spot is 130 km from Richard J. Dorer Memorial Hardwood": 1,
    "one record covers two parks": 1
   },
-  "dropped": 484,
-  "merged": 568
+  "dropped": 486,
+  "merged": 566
  },
  "US-IA": {
   "rows": 58,
-  "live": 20,
+  "live": 19,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -141,7 +142,7 @@
    "2-fer self-check": 1,
    "the official outline of Wapsi Wildlife Area could not be rea": 1
   },
-  "dropped": 20,
+  "dropped": 21,
   "merged": 13
  },
  "US-ND": {

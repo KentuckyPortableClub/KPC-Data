@@ -1,6 +1,6 @@
 {
  "about": "Counts from the 2-fer bot (kpc_fers.py). Hidden: data only.",
- "fers_rules": "0361802fe00e",
+ "fers_rules": "aa7561256260",
  "pass1": {
   "bad POTA pin: tested by saved record ids": [
    "CA-1930",
@@ -176,7 +176,7 @@
    "CA-2538"
   ],
   "cell_m": 20.0,
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 186,
@@ -184,14 +184,14 @@
    "bad POTA pin (0,0 / impossible, listed)": 0,
    "bad POTA pin, tested by its saved record ids (pin not used)": 171,
    "every joined piece is in the overrides no list (key not rebuilt yet)": 0,
-   "no outline": 2767,
+   "no outline": 2793,
    "no pin": 0,
    "pin well outside": 0,
    "point circle (100 ft, not a boundary)": 143
   },
   "missing boundary": 37,
   "official parks": 2942,
-  "pairs reused (nothing changed)": 8177,
+  "pairs reused (nothing changed)": 2328,
   "pairs tested": 8177,
   "pairs whose boxes touch": 8177,
   "parks done by the box test": 181,
@@ -390,7 +390,7 @@
    "CA-2538"
   ],
   "cell_m": 10.0,
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 186,
@@ -398,14 +398,14 @@
    "bad POTA pin (0,0 / impossible, listed)": 0,
    "bad POTA pin, tested by its saved record ids (pin not used)": 171,
    "every joined piece is in the overrides no list (key not rebuilt yet)": 0,
-   "no outline": 2767,
+   "no outline": 2793,
    "no pin": 0,
    "pin well outside": 0,
    "point circle (100 ft, not a boundary)": 143
   },
   "new here only (not counted)": 733,
   "official parks": 2942,
-  "pairs reused (nothing changed)": 737,
+  "pairs reused (nothing changed)": 490,
   "pairs tested": 738,
   "parks whose outline could not be read": 0,
   "parks with a saved copy only (no fresh download possible)": 0,
@@ -419,7 +419,7 @@
   "with official lines": 111
  },
  "pass3": {
-  "agree with the pass before": 1860,
+  "agree with the pass before": 1856,
   "bad POTA pin: tested by saved record ids": [
    "CA-1930",
    "CA-1932",
@@ -595,7 +595,7 @@
   ],
   "candidates held: no ownership source": 0,
   "cell_m": 5.0,
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 186,
@@ -603,14 +603,14 @@
    "bad POTA pin (0,0 / impossible, listed)": 0,
    "bad POTA pin, tested by its saved record ids (pin not used)": 171,
    "every joined piece is in the overrides no list (key not rebuilt yet)": 0,
-   "no outline": 2767,
+   "no outline": 2793,
    "no pin": 0,
    "pin well outside": 0,
    "point circle (100 ft, not a boundary)": 143
   },
-  "new here only (not counted)": 539,
+  "new here only (not counted)": 536,
   "official parks": 2942,
-  "pairs reused (nothing changed)": 716,
+  "pairs reused (nothing changed)": 470,
   "pairs tested": 716,
   "parks whose outline could not be read": 4,
   "parks with a saved copy only (no fresh download possible)": 0,
@@ -800,7 +800,7 @@
   "candidates held: no ownership source": 0,
   "cell_m": 5.0,
   "checked": 322,
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 186,
@@ -808,13 +808,13 @@
    "bad POTA pin (0,0 / impossible, listed)": 0,
    "bad POTA pin, tested by its saved record ids (pin not used)": 171,
    "every joined piece is in the overrides no list (key not rebuilt yet)": 0,
-   "no outline": 2767,
+   "no outline": 2793,
    "no pin": 0,
    "pin well outside": 0,
    "point circle (100 ft, not a boundary)": 143
   },
   "live rows held: spot far from a state park pin (rule B13)": 2,
-  "memory (MB now / cap; caches dropped for memory)": "3291 / 5000; 7",
+  "memory (MB now / cap; caches dropped for memory)": "3293 / 5000; 7",
   "official parks": 2942,
   "pairs tested": 0,
   "pass": 5,
@@ -827,7 +827,7 @@
   "river channels listed as water only (boat spots)": 0,
   "spots given their boundary lines": 928,
   "still not checked": 0,
-  "trail stretches given their true zone": 595,
+  "trail stretches given their true zone": 592,
   "water only": 0,
   "water retries (won / tries)": "0 / 0",
   "with official lines": 111
@@ -882,7 +882,7 @@
    "water only": 0
   },
   "US-IA": {
-   "candidates": 15,
+   "candidates": 14,
    "candidates (saved outline only)": 0,
    "lines": 24,
    "n-fers": 1,
@@ -942,11 +942,11 @@
    "water only": 0
   },
   "US-MN": {
-   "candidates": 189,
+   "candidates": 187,
    "candidates (saved outline only)": 0,
    "lines": 590,
    "n-fers": 66,
-   "not sure": 5,
+   "not sure": 7,
    "pass1": 1273,
    "pass2": 1198,
    "spots": 1273,
