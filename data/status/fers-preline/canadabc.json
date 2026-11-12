@@ -1,0 +1,83 @@
+{
+ "tag": "canadabc",
+ "states": [
+  "CA-BC",
+  "CA-YT",
+  "CA-NT",
+  "CA-NU"
+ ],
+ "key_source": "build",
+ "checked": "2026-11-12 23:54 UTC",
+ "areas": {
+  "CA-BC": {
+   "hold": [],
+   "warn": [
+    "5 review-pile HOLD row(s) still outlines: CA-3900 CA-3905 CA-3937 CA-4094 CA-6131 (their 2-fers are 'not sure')",
+    "5 rule 18 row(s): CA-3328 CA-3534 CA-3899 CA-3900 CA-4030 (a person decides)",
+    "6 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): CA-3408 CA-3900 CA-3905 CA-3937 CA-4094 CA-6131"
+   ],
+   "key_file": "data/ca-key/CA-BC.json",
+   "build": "CA-43311979456",
+   "built": "2026-11-12 21:54 UTC",
+   "rules": "2a4d0154d95c",
+   "parks": 1254,
+   "outlines": 1219,
+   "held_key": "HELD KEY: build CA-43311979456 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "ca-CA-43311979456.json",
+   "bad_pins": 6,
+   "overrides_no_still": 0
+  },
+  "CA-YT": {
+   "hold": [],
+   "warn": [
+    "1 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): CA-4623"
+   ],
+   "key_file": "data/ca-key/CA-YT.json",
+   "build": "CA-43311979456",
+   "built": "2026-11-12 21:54 UTC",
+   "rules": "2a4d0154d95c",
+   "parks": 112,
+   "outlines": 26,
+   "held_key": "HELD KEY: build CA-43311979456 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "ca-CA-43311979456.json",
+   "bad_pins": 1,
+   "overrides_no_still": 0
+  },
+  "CA-NT": {
+   "hold": [],
+   "warn": [
+    "1 review-pile HOLD row(s) still outlines: CA-4344 (their 2-fers are 'not sure')",
+    "1 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): CA-4344"
+   ],
+   "key_file": "data/ca-key/CA-NT.json",
+   "build": "CA-43311979456",
+   "built": "2026-11-12 21:54 UTC",
+   "rules": "2a4d0154d95c",
+   "parks": 68,
+   "outlines": 18,
+   "held_key": "HELD KEY: build CA-43311979456 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "ca-CA-43311979456.json",
+   "bad_pins": 1,
+   "overrides_no_still": 0
+  },
+  "CA-NU": {
+   "hold": [],
+   "warn": [],
+   "key_file": "data/ca-key/CA-NU.json",
+   "build": "CA-43311979456",
+   "built": "2026-11-12 21:54 UTC",
+   "rules": "2a4d0154d95c",
+   "parks": 48,
+   "outlines": 34,
+   "held_key": "HELD KEY: build CA-43311979456 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "ca-CA-43311979456.json",
+   "bad_pins": 0,
+   "overrides_no_still": 0
+  }
+ },
+ "about": "2-fer pre-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4). HOLD = the line does not build. Read-only; nothing is moved or released.",
+ "fers_rules": "cef323de4c9a",
+ "verdict": "GO",
+ "holds": [],
+ "held_key": true
+}
