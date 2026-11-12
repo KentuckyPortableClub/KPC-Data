@@ -129,7 +129,7 @@ jobs:
           grep -q '^go=yes' "$GITHUB_OUTPUT" || { kpc_rc=$?; echo "::warning title=2-fer pre-line check::HOLD: the 2-fer line for $STATES ($RUN_TAG) does not build; see kpcdata/data/status/fers-preline/$RUN_TAG.md"; echo "2-fer pre-line check - HOLD: the 2-fer line for $STATES ($RUN_TAG) does not build; see kpcdata/data/status/fers-preline/$RUN_TAG.md" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           [ -f "kpcdata/data/status/fers-preline/$RUN_TAG.md" ] && cat "kpcdata/data/status/fers-preline/$RUN_TAG.md" >> "$GITHUB_STEP_SUMMARY"; true
       - name: Save the pre-line report (only data/status/fers-preline)
-        if: ${{ always() && steps.wait.outputs.wait != '1' }}
+        if: ${{ !cancelled() && steps.wait.outputs.wait != '1' }}   # Nov 12: saved after a failed check too (it says HOLD), never on a cancel
         run: bash .github/scripts/kpc_push_data.sh kpcdata "2-fer pre-line check ${{ inputs.tag }}" data/status/fers-preline || { kpc_rc=$?; echo "::warning title=2-fer pre-line check::report not saved (the verdict above still holds)"; echo "2-fer pre-line check - report not saved (the verdict above still holds)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Report hidden failures (Nov 2 review, G8; Nov 4 PM fix bundle item 7)
         if: always()
@@ -243,7 +243,7 @@ jobs:
           STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_bulk.py || { kpc_rc=$?; echo "::error title=kpc_water_bulk.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_water_bulk.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           pip install -q pyshp 2>/dev/null || { kpc_rc=$?; echo "::warning title=install::an install step failed (exit $kpc_rc); the next steps may not work"; echo "install - an install step failed (exit $kpc_rc); the next steps may not work" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_ca.py || { kpc_rc=$?; echo "::error title=kpc_water_ca.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_water_ca.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Bundle up (a lost bundle = a red run)
-        if: always()
+        if: always()   # Nov 12: kept on purpose: a release-asset cache (not git) that carries a job cut by its time limit to the next run
         run: |
           for st in $STATES; do [ -f "data/fers/$st.json" ] || { echo "::error title=2-fer line::fetcher made no data/fers/$st.json"; exit 1; }; done
           echo "{\"stage\":\"fetcher\",\"tag\":\"$RUN_TAG\",\"states\":\"$STATES\",\"date\":\"$(date -u +%FT%TZ)\",\"run\":\"$GITHUB_RUN_ID\"}" > bundle/stamp.json
@@ -296,7 +296,8 @@ jobs:
           PY
   worker:
     needs: [preline, fetcher]
-    if: ${{ needs.preline.outputs.wait != '1' && (always() && needs.preline.outputs.go == 'yes' && inputs.stage != 'checker' && (inputs.stage == 'worker' || needs.fetcher.result == 'success')) }}
+    # Nov 12: !cancelled() (was always(): a run cancelled after the fetcher still started the worker and uploaded its bundle)
+    if: ${{ needs.preline.outputs.wait != '1' && (!cancelled() && needs.preline.result == 'success' && needs.preline.outputs.go == 'yes' && inputs.stage != 'checker' && (inputs.stage == 'worker' || needs.fetcher.result == 'success')) }}
     runs-on: ubuntu-latest
     timeout-minutes: 355
     steps:
@@ -360,7 +361,7 @@ jobs:
         continue-on-error: true
         run: REPORT=1 STATES="$STATES" WATER_STORE=bundle/water DATA=data/fers python3 .github/scripts/kpc_water_bulk.py || { kpc_rc=$?; echo "::error title=kpc_water_bulk.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_water_bulk.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Bundle up (a lost bundle = a red run)
-        if: always()
+        if: always()   # Nov 12: kept on purpose: a release-asset cache (not git) that carries a job cut by its time limit to the next run
         run: |
           echo "{\"stage\":\"worker\",\"tag\":\"$RUN_TAG\",\"states\":\"$STATES\",\"date\":\"$(date -u +%FT%TZ)\",\"run\":\"$GITHUB_RUN_ID\"}" > bundle/stamp.json
           find bundle/http -type f -mtime +60 -delete 2>/dev/null || true   # ok: an optional file or tidy step (B1 (Oct 30): 60 days (an older answer is re-read; the layer-edit check keeps unchanged ones cheap))
@@ -406,7 +407,8 @@ jobs:
           PY
   checker:
     needs: [preline, fetcher, worker]
-    if: ${{ needs.preline.outputs.wait != '1' && (always() && needs.preline.outputs.go == 'yes' && (inputs.stage == 'checker' || needs.worker.result == 'success')) }}
+    # Nov 12: !cancelled() (was always(): a run cancelled after the worker still started the checker, and its Save committed)
+    if: ${{ needs.preline.outputs.wait != '1' && (!cancelled() && needs.preline.result == 'success' && needs.preline.outputs.go == 'yes' && (inputs.stage == 'checker' || needs.worker.result == 'success')) }}
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
@@ -450,6 +452,8 @@ jobs:
         continue-on-error: true
         run: |
           SINCE=$(cat data/fers/.since-$RUN_TAG 2>/dev/null || date -u -d '-36 hours' +%F)
+          # Nov 12: the bundle carries the LAST run's line-<tag>.json; it goes first, so a line check that crashed (it exits 0) leaves no verdict and Save does not run
+          rm -f "data/fers/line-$RUN_TAG.json"
           if [ "$REGION" = ky ]; then python3 .github/scripts/kpc_fers_known.py || { kpc_rc=$?; echo "::error title=kpc_fers_known.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_known.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; AREA=ky python3 .github/scripts/kpc_fers_expected.py || { kpc_rc=$?; echo "::error title=kpc_fers_expected.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_expected.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           else python3 .github/scripts/kpc_fers_expected.py || { kpc_rc=$?; echo "::error title=kpc_fers_expected.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_expected.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; fi
           case " $STATES" in *" CA-"*) CANADA=1 python3 .github/scripts/kpc_fers_known.py || { kpc_rc=$?; echo "::error title=kpc_fers_known.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_known.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; };; esac   # Canada's known answers (chat 8, reported only for now)
@@ -463,8 +467,11 @@ jobs:
           TAG=$RUN_TAG STATES="$STATES" DATA=data/fers OUT=data/fers python3 .github/scripts/kpc_fers_review.py || { kpc_rc=$?; echo "::error title=kpc_fers_review.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_review.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           mkdir -p kpcdata/data/observations
           OBS_RUN="2-fer line $RUN_TAG" OBS_FILE=kpcdata/data/observations/fers-line-$RUN_TAG.json OBS_DATA_DIR=kpcdata python3 .github/scripts/kpc_map_observations.py || { kpc_rc=$?; echo "::error title=kpc_map_observations.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_map_observations.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          [ -s "data/fers/line-$RUN_TAG.json" ] && echo "verdict=written" >> "$GITHUB_OUTPUT" || { echo "::error title=2-fer line::no verdict (data/fers/line-$RUN_TAG.json) from this run: nothing is saved"; echo "2-fer line - no verdict from this run: nothing is saved" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Save (once; a failed save = a red run)
-        if: always()
+        # Nov 12 (world run cancelled and still committed, KPC-Links): was if: always(). Never on a cancel, and only after the verdict
+        # (Check) finished and wrote this run's line-<tag>.json; a STOPPED / PART READY verdict is still saved (data goes to the waiting room)
+        if: ${{ !cancelled() && success() && steps.kept_green_10.outcome == 'success' && steps.kept_green_10.outputs.verdict == 'written' }}
         run: |
           set +e
           rm -f data/fers/.since-*
@@ -549,7 +556,7 @@ jobs:
     # breaks in a row (different areas, within 6 h) = something that would repeat (bad bundle, a server down for everyone):
     # the whole run is cancelled and Brandon gets the one red mail.
     needs: [fetcher, worker]
-    if: ${{ always() && (needs.fetcher.result == 'failure' || needs.worker.result == 'failure') }}
+    if: ${{ !cancelled() && (needs.fetcher.result == 'failure' || needs.worker.result == 'failure') }}   # Nov 12: was always(); a cancelled run records no break
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:

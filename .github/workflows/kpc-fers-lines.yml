@@ -107,7 +107,9 @@ jobs:
     # then tried ONCE more at the end from its own bundle (@worker: the saved water tiles + answers are reused, only the missing
     # tiles are asked). Round 1 never starts another round.
     needs: [plan, line]
-    if: ${{ always() && inputs.round == '0' }}
+    # Nov 12: !cancelled() (was always()): a cancelled run (by hand, or broke's stop after two breaks in a row) saves nothing here and
+    # starts no retry round; a FAILED line still lets it run (a broken area is recorded, the queue moves on, the water retry is intended)
+    if: ${{ !cancelled() && needs.plan.result == 'success' && inputs.round == '0' }}
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}
