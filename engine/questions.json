@@ -9617,7 +9617,11 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1
+   "pass": 1,
+   "url_check": {
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
   },
   {
    "ref": "US-3635",
@@ -9686,7 +9690,11 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1
+   "pass": 1,
+   "url_check": {
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
   },
   {
    "ref": "US-1080",
@@ -9800,6 +9808,7 @@
    },
    "pass": 1,
    "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -10033,6 +10042,7 @@
    },
    "pass": 1,
    "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -14008,6 +14018,1288 @@
     ],
     "solved": "NAME SOLVED: agency calls it Round Lake Wetland Nature Preserve",
     "why_this_record": "record 'Round Lake Wetland Nature Preserve' (PACK-US-IN-land-191); pin inside; about 138.0 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-12025",
+   "area": "US-IN",
+   "park": "Goose Creek State Game Land",
+   "agency_group": "in.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "candidate",
+   "st": "US-IN",
+   "url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html",
+   "service_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
+   "name_field": "unitname",
+   "agency": "Indiana DNR properties",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-4",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 3804,
+   "record_name": "Goose Creek Gamebird Habitat Area",
+   "layer": "PACK-US-IN-land-191",
+   "record_link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D3804&outFields=%2A&f=html",
+   "where": "OBJECTID=3804",
+   "pin_m": 0,
+   "acres_approx": 376.9,
+   "grade": "official",
+   "envelope": [
+    -87.35983,
+    40.50191,
+    -87.33894,
+    40.513
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-87.3503%2C40.5114&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-4 WEAK: 'Goose Creek Gamebird Habitat Area' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-IN-land-191",
+      "gave": "hit (1 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-IN-preserve-263",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-IN-land-387",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "https://www.in.gov/dnr/fish-and-wildlife/files/fw-gba-goosecreek.pdf",
+      "gave": "page read (pdf); 0 file candidates"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-IN in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a wildlife, record is a river",
+    "why_this_record": "record 'Goose Creek Gamebird Habitat Area' (PACK-US-IN-land-191); pin inside; about 376.9 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-12026",
+   "area": "US-IN",
+   "park": "Pine Creek State Game Land",
+   "agency_group": "in.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "candidate",
+   "st": "US-IN",
+   "url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html",
+   "service_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
+   "name_field": "unitname",
+   "agency": "Indiana DNR properties",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-4",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 4825,
+   "record_name": "Pine Creek Bottoms Gamebird Habitat Area",
+   "layer": "PACK-US-IN-land-191",
+   "record_link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D4825&outFields=%2A&f=html",
+   "where": "OBJECTID=4825",
+   "pin_m": 0,
+   "acres_approx": 809.8,
+   "grade": "official",
+   "envelope": [
+    -87.1656,
+    40.62789,
+    -87.13457,
+    40.64944
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-87.1585%2C40.6404&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-4 WEAK: 'Pine Creek Bottoms Gamebird Habitat Area' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-IN-land-191",
+      "gave": "hit (1 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-IN-preserve-263",
+      "gave": "no hit (0 at pin, 10 by name)"
+     },
+     {
+      "source": "PACK-US-IN-land-387",
+      "gave": "no hit (0 at pin, 5 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 16 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 18 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "https://www.in.gov/dnr/fish-and-wildlife/files/fw-gba-pinecreek.pdf",
+      "gave": "page read (pdf); 0 file candidates"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-IN in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a wildlife, record is a river",
+    "why_this_record": "record 'Pine Creek Bottoms Gamebird Habitat Area' (PACK-US-IN-land-191); pin inside; about 809.8 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-4161",
+   "area": "US-IN",
+   "park": "Quakertown on Brookville Lake State Recreation Area",
+   "agency_group": "in.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "candidate",
+   "st": "US-IN",
+   "url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html",
+   "service_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
+   "name_field": "unitname",
+   "agency": "Indiana DNR properties",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 3171,
+   "record_name": "Brookville Lake",
+   "layer": "PACK-US-IN-land-191",
+   "record_link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D3171&outFields=%2A&f=html",
+   "where": "OBJECTID=3171",
+   "pin_m": 0,
+   "acres_approx": 662.8,
+   "grade": "official",
+   "envelope": [
+    -85.00772,
+    39.57808,
+    -84.9895,
+    39.60471
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Brookville Lake",
+     "layer": "PACK-US-IN-land-387",
+     "tier": "T-3",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-84.9963%2C39.5874&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Brookville Lake' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-IN-land-191",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-IN-preserve-263",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-IN-land-387",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Brookville Lake",
+    "why_this_record": "same land also in PACK-US-IN-land-387 'Brookville Lake': merged, counted once; record 'Brookville Lake' (PACK-US-IN-land-191); pin inside; about 662.8 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-4162",
+   "area": "US-IN",
+   "park": "Mounds on Brookville Lake State Recreation Area",
+   "agency_group": "in.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "candidate",
+   "st": "US-IN",
+   "url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html",
+   "service_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
+   "name_field": "unitname",
+   "agency": "Indiana DNR properties",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 3170,
+   "record_name": "Brookville Lake",
+   "layer": "PACK-US-IN-land-191",
+   "record_link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D3170&outFields=%2A&f=html",
+   "where": "OBJECTID=3170",
+   "pin_m": 0,
+   "acres_approx": 2734.6,
+   "grade": "official",
+   "envelope": [
+    -84.99468,
+    39.47234,
+    -84.94743,
+    39.50937
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Brookville Lake",
+     "layer": "PACK-US-IN-land-387",
+     "tier": "T-3",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-84.9633%2C39.4949&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Brookville Lake' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-IN-land-191",
+      "gave": "hit (1 at pin, 4 by name)"
+     },
+     {
+      "source": "PACK-US-IN-preserve-263",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-IN-land-387",
+      "gave": "hit (1 at pin, 3 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Brookville Lake",
+    "why_this_record": "same land also in PACK-US-IN-land-387 'Brookville Lake': merged, counted once; record 'Brookville Lake' (PACK-US-IN-land-191); pin inside; about 2734.6 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-4167",
+   "area": "US-IN",
+   "park": "Interlake State Recreation Area",
+   "agency_group": "in.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "candidate",
+   "st": "US-IN",
+   "url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html",
+   "service_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
+   "name_field": "unitname",
+   "agency": "Indiana DNR properties",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 4061,
+   "record_name": "Interlake Off-Road State Recreation Area",
+   "layer": "PACK-US-IN-land-191",
+   "record_link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D4061&outFields=%2A&f=html",
+   "where": "OBJECTID=4061",
+   "pin_m": 0,
+   "acres_approx": 3652.4,
+   "grade": "official",
+   "envelope": [
+    -87.25437,
+    38.20201,
+    -87.19314,
+    38.24581
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-87.2215%2C38.2278&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-2 WEAK: 'Interlake Off-Road State Recreation Area' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-IN-land-191",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Interlake Off-Road State Recreation Area",
+    "why_this_record": "record 'Interlake Off-Road State Recreation Area' (PACK-US-IN-land-191); pin inside; about 3652.4 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-4168",
+   "area": "US-IN",
+   "park": "Frances Slocum on Mississinewa Lake State Recreation Area",
+   "agency_group": "in.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "candidate",
+   "st": "US-IN",
+   "url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html",
+   "service_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
+   "name_field": "unitname",
+   "agency": "Indiana DNR properties",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 4563,
+   "record_name": "Mississinewa Lake",
+   "layer": "PACK-US-IN-land-191",
+   "record_link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D4563&outFields=%2A&f=html",
+   "where": "OBJECTID=4563",
+   "pin_m": 0,
+   "acres_approx": 13068.9,
+   "grade": "official",
+   "envelope": [
+    -85.96909,
+    40.59439,
+    -85.67455,
+    40.72302
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Mississinewa Lake",
+     "layer": "PACK-US-IN-land-387",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Mississinewa Lake",
+     "layer": "PACK-US-IN-land-191",
+     "tier": "T-6",
+     "pin_m": 1035
+    },
+    {
+     "record_name": "Mississinewa Lake",
+     "layer": "PACK-US-IN-land-387",
+     "tier": "T-6",
+     "pin_m": 1035
+    }
+   ],
+   "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-85.923%2C40.7126&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Mississinewa Lake' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-IN-land-191",
+      "gave": "hit (1 at pin, 6 by name)"
+     },
+     {
+      "source": "PACK-US-IN-preserve-263",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-IN-land-387",
+      "gave": "hit (1 at pin, 6 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Mississinewa Lake",
+    "why_this_record": "same land also in PACK-US-IN-land-387 'Mississinewa Lake': merged, counted once; record 'Mississinewa Lake' (PACK-US-IN-land-191); pin inside; about 13068.9 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-4169",
+   "area": "US-IN",
+   "park": "Miami on Mississinewa Lake State Recreation Area",
+   "agency_group": "in.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "candidate",
+   "st": "US-IN",
+   "url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html",
+   "service_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
+   "name_field": "unitname",
+   "agency": "Indiana DNR properties",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 4562,
+   "record_name": "Mississinewa Lake",
+   "layer": "PACK-US-IN-land-191",
+   "record_link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D4562&outFields=%2A&f=html",
+   "where": "OBJECTID=4562",
+   "pin_m": 0,
+   "acres_approx": 797.5,
+   "grade": "official",
+   "envelope": [
+    -85.95476,
+    40.68964,
+    -85.92574,
+    40.70978
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Mississinewa Lake",
+     "layer": "PACK-US-IN-land-387",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Mississinewa Lake",
+     "layer": "PACK-US-IN-land-191",
+     "tier": "T-6",
+     "pin_m": 1619
+    },
+    {
+     "record_name": "Mississinewa Lake",
+     "layer": "PACK-US-IN-land-387",
+     "tier": "T-6",
+     "pin_m": 1619
+    }
+   ],
+   "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-85.9381%2C40.7029&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Mississinewa Lake' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-IN-land-191",
+      "gave": "hit (1 at pin, 6 by name)"
+     },
+     {
+      "source": "PACK-US-IN-preserve-263",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-IN-land-387",
+      "gave": "hit (1 at pin, 6 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Mississinewa Lake",
+    "why_this_record": "same land also in PACK-US-IN-land-387 'Mississinewa Lake': merged, counted once; record 'Mississinewa Lake' (PACK-US-IN-land-191); pin inside; about 797.5 acres; Rule G: LIKELY (names overlap); size unknown",
     "confidence": {
      "level": "likely",
      "double_check": "check the kind of place and the size"
@@ -42507,7 +43799,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -42583,7 +43877,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -42659,7 +43955,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -42735,7 +44033,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -42986,7 +44286,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -43233,6 +44535,289 @@
     "confidence": {
      "level": "likely",
      "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-8666",
+   "area": "US-WA",
+   "park": "Whatcom Wildlife Area/Lake Terrell State Wildlife Area",
+   "agency_group": "wdfw.wa.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "candidate",
+   "st": "US-WA",
+   "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0?f=html",
+   "service_url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
+   "name_field": "ManagedPlaceName",
+   "agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-4",
+   "band": "WEAK",
+   "step": "L0",
+   "record": null,
+   "record_name": "Lake Terrell",
+   "layer": "PACK-US-WA-wildlife-364",
+   "record_link": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.685%2C48.864&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "where": "id=None",
+   "pin_m": 0,
+   "acres_approx": 1178.9,
+   "grade": "official",
+   "envelope": [
+    -122.75428,
+    48.84853,
+    -122.67142,
+    48.89747
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Lake Terrell",
+     "layer": "PACK-US-WA-wildlife-368",
+     "tier": "T-4",
+     "pin_m": null
+    },
+    {
+     "record_name": "Whatcom",
+     "layer": "PACK-US-WA-wildlife-364",
+     "tier": "T-6",
+     "pin_m": null
+    },
+    {
+     "record_name": "Whatcom Wildlife Area",
+     "layer": "PACK-US-WA-land-366",
+     "tier": "T-6",
+     "pin_m": null
+    },
+    {
+     "record_name": "Whatcom",
+     "layer": "PACK-US-WA-wildlife-369",
+     "tier": "T-6",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.685%2C48.864&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-4 WEAK: 'Lake Terrell' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WA-land-19",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Trails-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-WA-park-363",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-364",
+      "gave": "hit (2 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-WA-preserve-365",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-366",
+      "gave": "hit (1 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-367",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-368",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-369",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "US-WA-trail-Trails_in_King_County-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-WA-trail-Generalized_Regional_Trails_for_Online_P-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Motorized_Trails-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Non_Motorized_Trails-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-475",
+      "gave": "hit (1 at pin, 8 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-OR-land-323",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "https://wdfw.wa.gov",
+      "gave": "page read (fetch); 0 file candidates"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-WA in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a wildlife, record is a lake",
+    "why_this_record": "same land also in PACK-US-WA-wildlife-368 'Lake Terrell', PACK-US-WA-wildlife-364 'Whatcom', PACK-US-WA-land-366 'Whatcom Wildlife Area': merged, counted once; record 'Lake Terrell' (PACK-US-WA-wildlife-364); pin inside; about 1178.9 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
     }
    },
    "pass": 1,
@@ -56884,7 +58469,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -56960,7 +58547,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -57036,7 +58625,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -57112,7 +58703,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -57363,7 +58956,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -57614,7 +59209,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -57895,9 +59492,7 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -79579,6 +81174,7 @@
    },
    "pass": 1,
    "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -79812,6 +81408,7 @@
    },
    "pass": 1,
    "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -84541,7 +86138,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -84617,7 +86216,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -84693,7 +86294,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -84769,7 +86372,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -85020,7 +86625,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -85271,7 +86878,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -85552,9 +87161,7 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -90512,7 +92119,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -90577,7 +92185,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -90642,7 +92251,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -90903,7 +92513,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -91152,7 +92763,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -91401,7 +93013,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -91466,7 +93079,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -91740,7 +93354,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -91805,7 +93420,1835 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-1289",
+   "area": "US-KY",
+   "park": "Rough River Dam State Park",
+   "agency_group": "State Park",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "candidate",
+   "st": "US-KY",
+   "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8?f=html",
+   "service_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8",
+   "name_field": "PUBLIC_NAM",
+   "agency": "Kentucky Department of Parks",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 32,
+   "record_name": "Rough River Dam",
+   "layer": "US-KY-stateparks",
+   "record_link": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D32&outFields=%2A&f=html",
+   "where": "OBJECTID=32",
+   "pin_m": 0,
+   "acres_approx": 252.8,
+   "grade": "official",
+   "envelope": [
+    -86.51163,
+    37.59784,
+    -86.49748,
+    37.61676
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?geometry=-86.5053%2C37.6104&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Rough River Dam' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "US-KY-stateparks",
+      "gave": "hit (1 at pin, 2 by name)"
+     },
+     {
+      "source": "US-KY-stateforests",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-snp",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-wild-rivers",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-heritage-land",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-state_park-Kentucky_State_Park_Boundaries-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_park-Public_Hunting_Areas_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_park-Kentucky_Heritage_Land_Conservation_Fund-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_park-KYStateParkBoundaries-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_park-Wildlife_Management_Areas_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-nature_preserve-State_Nature_Preserves_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_forest-Kentucky_State_Forest_Boundaries-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-trail-Kentucky_s_Recreational_Trails-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-natural-areas",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-nature_preserve-State_Natural_Areas_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-nature_preserve-USFWS_Critical_Habitat_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-trail-KYTC_Multi_Use_Paths-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-trail-KYTC_Rail_Plan_Rails_to_Trails-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a park, record is a lake",
+    "why_this_record": "record 'Rough River Dam' (US-KY-stateparks); pin inside; about 252.8 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-4481",
+   "area": "US-UT",
+   "park": "Sawtooth National Forest",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "found",
+   "st": "US-UT",
+   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublishWithDataStatus_01/MapServer/0?f=html",
+   "service_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublishWithDataStatus_01/MapServer/0",
+   "name_field": "trail_name",
+   "agency": "National Forest System Trails",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 10996636,
+   "record_name": "SAWTOOTH",
+   "layer": "PACK-US-AR-trail-0",
+   "record_link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublishWithDataStatus_01/MapServer/0/query?where=OBJECTID%3D10996636&outFields=%2A&f=html",
+   "where": "OBJECTID=10996636",
+   "pin_m": 0,
+   "acres_approx": null,
+   "grade": "official",
+   "envelope": null,
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Sawtooth Scenic Byway",
+     "layer": "PACK-US-UT-trail-56",
+     "tier": "T-4",
+     "pin_m": 28616
+    },
+    {
+     "record_name": "SOUTH SAWTOOTH CONNECTOR",
+     "layer": "PACK-US-AR-trail-0",
+     "tier": "T-4",
+     "pin_m": 40083
+    },
+    {
+     "record_name": "N. FK BARON-SAWTOOTH LK.",
+     "layer": "PACK-US-AR-trail-0",
+     "tier": "T-4",
+     "pin_m": 71410
+    },
+    {
+     "record_name": "N. FK BARON-SAWTOOTH LK.",
+     "layer": "PACK-US-AR-trail-0",
+     "tier": "T-4",
+     "pin_m": 73134
+    }
+   ],
+   "source_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_TrailNFSPublishWithDataStatus_01/MapServer/0/query?where=trail_name%20LIKE%20%27%25SAWTOOTH%25%27&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=0.0002&geometryPrecision=6&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'SAWTOOTH' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-UT-park-7",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-8",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-18",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-trail-28",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-trail-37",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-40",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-trail-56",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-57",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-351",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-352",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-353",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-381",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-UT-trail-DPRTrails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-0",
+      "gave": "hit (0 at pin, 22 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'SAWTOOTH' (PACK-US-AR-trail-0); pin inside; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-5992",
+   "area": "US-UT",
+   "park": "Big Creek USFS Wild Horse Territory & BLM Herd Management Area",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "candidate",
+   "st": "US-UT",
+   "url": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+   "name_field": "HA_NAME",
+   "agency": "BLM herd areas",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-6",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 164,
+   "record_name": "Big Creek",
+   "layer": "PACK-US-land-188",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1/query?where=OBJECTID%3D164&outFields=%2A&f=html",
+   "where": "OBJECTID=164",
+   "pin_m": 0,
+   "acres_approx": 3449.7,
+   "grade": "official",
+   "envelope": [
+    -112.70599,
+    40.43572,
+    -112.66834,
+    40.5141
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Bureau of Land Management",
+     "layer": "US-BLM-sma",
+     "tier": "T-6",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1/query?geometry=-112.704%2C40.4908&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-6 WEAK: 'Big Creek' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-UT-park-7",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-8",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-18",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-trail-28",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-trail-37",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-40",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-trail-56",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-57",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-351",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-352",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-353",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-381",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-UT-trail-DPRTrails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AR-trail-3",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-41",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-UT in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA-last-resort-WDPA_v0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Big Creek' (PACK-US-land-188); pin inside; about 3449.7 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-0731",
+   "area": "US-WA",
+   "park": "Columbia River Gorge National Forest",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "candidate",
+   "st": "US-WA",
+   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0?f=html",
+   "service_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+   "name_field": "fullname",
+   "agency": "Forest Service national designated areas (monuments, NRAs, scenic areas)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 76,
+   "record_name": "Columbia River Gorge National Scenic Area",
+   "layer": "PACK-US-land-187",
+   "record_link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query?where=OBJECTID%3D76&outFields=%2A&f=html",
+   "where": "OBJECTID=76",
+   "pin_m": 0,
+   "acres_approx": 292689.6,
+   "grade": "official",
+   "envelope": [
+    -122.40128,
+    45.51055,
+    -120.87111,
+    45.80472
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Columbia River Gorge National Scenic Area",
+     "layer": "PACK-US-WA-land-366",
+     "tier": "T-4",
+     "pin_m": 104
+    },
+    {
+     "record_name": "Columbia Hills",
+     "layer": "PACK-US-WA-park-363",
+     "tier": "T-6",
+     "pin_m": 13298
+    },
+    {
+     "record_name": "Gates Of The Columbia River Gorge Special Management Area",
+     "layer": "PACK-US-land-187",
+     "tier": "T-6",
+     "pin_m": 22746
+    },
+    {
+     "record_name": "Columbia River Gorge National Scenic Area",
+     "layer": "PACK-US-WA-land-366",
+     "tier": "T-6",
+     "pin_m": 57828
+    }
+   ],
+   "source_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query?geometry=-121.29%2C45.6967&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Columbia River Gorge National Scenic Area' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WA-land-19",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Trails-0",
+      "gave": "no hit (1 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-WA-park-363",
+      "gave": "hit (1 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-364",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-WA-preserve-365",
+      "gave": "no hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-366",
+      "gave": "hit (2 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-367",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-368",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-369",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "US-WA-trail-Trails_in_King_County-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-Generalized_Regional_Trails_for_Online_P-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Motorized_Trails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Non_Motorized_Trails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-475",
+      "gave": "no hit (0 at pin, 14 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "no hit (0 at pin, 18 by name)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "no hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "no hit (0 at pin, 15 by name)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "hit (1 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-OR-land-323",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "no hit (0 at pin, 4 by name)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a forest, record is a river",
+    "why_this_record": "same land also in PACK-US-WA-land-366 'Columbia River Gorge National Scenic Area', PACK-US-WA-park-363 'Columbia Hills', PACK-US-WA-land-366 'Columbia River Gorge National Scenic Area': merged, counted once; record 'Columbia River Gorge National Scenic Area' (PACK-US-land-187); pin inside; about 292689.6 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-10709",
+   "area": "US-WA",
+   "park": "Klickitat National Wild and Scenic River",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "candidate",
+   "st": "US-WA",
+   "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0?f=html",
+   "service_url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
+   "name_field": "ManagedPlaceName",
+   "agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": null,
+   "record_name": "Klickitat",
+   "layer": "PACK-US-WA-wildlife-364",
+   "record_link": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-121.26%2C45.7159&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "where": "id=None",
+   "pin_m": 0,
+   "acres_approx": 27794.0,
+   "grade": "official",
+   "envelope": [
+    -121.3266,
+    45.70298,
+    -120.47004,
+    45.99087
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Klickitat",
+     "layer": "PACK-US-WA-wildlife-368",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Klickitat",
+     "layer": "PACK-US-WA-wildlife-369",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Klickitat",
+     "layer": "WB-US-475",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Klickitat Wild and Scenic River",
+     "layer": "PACK-US-WA-land-366",
+     "tier": "T-4",
+     "pin_m": 576
+    }
+   ],
+   "source_url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-121.26%2C45.7159&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Klickitat' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WA-land-19",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Trails-0",
+      "gave": "no hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-WA-park-363",
+      "gave": "no hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-364",
+      "gave": "hit (2 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-WA-preserve-365",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-366",
+      "gave": "hit (3 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-367",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-368",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-369",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "US-WA-trail-Trails_in_King_County-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-Generalized_Regional_Trails_for_Online_P-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Motorized_Trails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Non_Motorized_Trails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-475",
+      "gave": "hit (1 at pin, 7 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-OR-land-323",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Klickitat",
+    "why_this_record": "same land also in PACK-US-WA-wildlife-368 'Klickitat', PACK-US-WA-wildlife-369 'Klickitat', WB-US-475 'Klickitat': merged, counted once; record 'Klickitat' (PACK-US-WA-wildlife-364); pin inside; about 27794.0 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-3385",
+   "area": "US-WA",
+   "park": "Mt. St. Helens National Monument",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "candidate",
+   "st": "US-WA",
+   "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1?f=html",
+   "service_url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1",
+   "name_field": "NAME",
+   "agency": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks) (land, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 2698,
+   "record_name": "Mount Saint Helens National Volcanic Monument",
+   "layer": "PACK-US-WA-land-366",
+   "record_link": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/query?where=OBJECTID%3D2698&outFields=%2A&f=html",
+   "where": "OBJECTID=2698",
+   "pin_m": 0,
+   "acres_approx": 112634.3,
+   "grade": "official",
+   "envelope": [
+    -122.38572,
+    46.06394,
+    -122.04279,
+    46.4439
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Mount Saint Helens",
+     "layer": "PACK-US-WA-wildlife-364",
+     "tier": "T-4",
+     "pin_m": 12702
+    },
+    {
+     "record_name": "Mt St Helens",
+     "layer": "PACK-US-WA-preserve-365",
+     "tier": "T-4",
+     "pin_m": 19170
+    },
+    {
+     "record_name": "Mt St Helens",
+     "layer": "PACK-US-WA-preserve-365",
+     "tier": "T-4",
+     "pin_m": 19590
+    },
+    {
+     "record_name": "Mt St Helens",
+     "layer": "PACK-US-WA-preserve-365",
+     "tier": "T-4",
+     "pin_m": 21213
+    }
+   ],
+   "source_url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/query?geometry=-122.217%2C46.2769&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-2 WEAK: 'Mount Saint Helens National Volcanic Monument' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WA-land-19",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Trails-0",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-park-363",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-364",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-WA-preserve-365",
+      "gave": "hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-366",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Mount Saint Helens National Volcanic Monument' (PACK-US-WA-land-366); pin inside; about 112634.3 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-11902",
+   "area": "US-CO",
+   "park": "Camp Hale National Monument",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "candidate",
+   "st": "US-CO",
+   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0?f=html",
+   "service_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+   "name_field": "fullname",
+   "agency": "Forest Service national designated areas (monuments, NRAs, scenic areas)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 36,
+   "record_name": "Camp Hale - Continental Divide National Monument",
+   "layer": "PACK-US-land-187",
+   "record_link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query?where=OBJECTID%3D36&outFields=%2A&f=html",
+   "where": "OBJECTID=36",
+   "pin_m": 13,
+   "acres_approx": 53635.3,
+   "grade": "official",
+   "envelope": [
+    -106.3451,
+    39.35335,
+    -106.0425,
+    39.57462
+   ],
+   "rule": "R-G12",
+   "others": [
+    {
+     "record_name": "Haleakala National Park",
+     "layer": "PACK-US-AZ-land-44",
+     "tier": "T-6",
+     "pin_m": 5149006
+    },
+    {
+     "record_name": "White River National Forest",
+     "layer": "US-USFS-ownership",
+     "tier": "T-5",
+     "pin_m": null
+    },
+    {
+     "record_name": "White River National Forest",
+     "layer": "US-USFS-admin",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query?geometry=-106.325%2C39.4352&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Camp Hale - Continental Divide National Monument' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-CO-wildlife-46",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-CO-wildlife-231",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-CO-park-232",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-CO-land-233",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-land-44",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "pin just outside (13 m): candidate only (G-F1); NAME SOLVED: agency calls it Camp Hale - Continental Divide National Monument",
+    "why_this_record": "same land also in US-USFS-ownership 'White River National Forest', US-USFS-admin 'White River National Forest': merged, counted once; record 'Camp Hale - Continental Divide National Monument' (PACK-US-land-187); pin 13 m from the edge; about 53635.3 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-4397",
+   "area": "US-CO",
+   "park": "Manti-La Sal National Forest",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "found",
+   "st": "US-CO",
+   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0?f=html",
+   "service_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0",
+   "name_field": null,
+   "agency": "USDA Forest Service",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-1",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 65,
+   "record_name": "Manti-La Sal National Forest",
+   "layer": "US-USFS-ownership",
+   "record_link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D65&outFields=%2A&f=html",
+   "where": "OBJECTID=65",
+   "pin_m": 0,
+   "acres_approx": 1340004.4,
+   "grade": "official",
+   "envelope": [
+    -111.88474,
+    37.57724,
+    -108.92418,
+    39.98115
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?geometry=-111.425%2C39.2833&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-1 STRONG: 'Manti-La Sal National Forest' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-CO-wildlife-46",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-CO-wildlife-231",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-CO-park-232",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-CO-land-233",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-land-44",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Manti-La Sal National Forest' (US-USFS-ownership); pin inside; about 1340004.4 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-4424",
+   "area": "US-OK",
+   "park": "Ouachita National Forest",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "found",
+   "st": "US-OK",
+   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0?f=html",
+   "service_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0",
+   "name_field": null,
+   "agency": "USDA Forest Service",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-1",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 113,
+   "record_name": "Ouachita National Forest",
+   "layer": "US-USFS-ownership",
+   "record_link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D113&outFields=%2A&f=html",
+   "where": "OBJECTID=113",
+   "pin_m": 0,
+   "acres_approx": 1784193.4,
+   "grade": "official",
+   "envelope": [
+    -95.04062,
+    33.70695,
+    -92.75538,
+    35.07553
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Ouachita County Training School",
+     "layer": "PACK-US-AK-land-41",
+     "tier": "T-4",
+     "pin_m": 153465
+    },
+    {
+     "record_name": "Ouachita River Lock and Dam No. 8",
+     "layer": "PACK-US-AK-land-41",
+     "tier": "T-6",
+     "pin_m": 197851
+    },
+    {
+     "record_name": "Ouachita Wildlife Management Area - Leflore",
+     "layer": "PACK-US-OK-land-205",
+     "tier": "T-6",
+     "pin_m": 58820
+    },
+    {
+     "record_name": "Ouachita Wildlife Management Area -  LeFlore Unit",
+     "layer": "PACK-US-OK-wildlife-318",
+     "tier": "T-6",
+     "pin_m": 58824
+    }
+   ],
+   "source_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?geometry=-93.8138%2C34.6854&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-1 STRONG: 'Ouachita National Forest' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-OK-trail-55",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-OK-land-205",
+      "gave": "hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-OK-park-317",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-OK-wildlife-318",
+      "gave": "hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-MN-wildlife-29",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-41",
+      "gave": "hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Ouachita National Forest' (US-USFS-ownership); pin inside; about 1784193.4 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-4514",
+   "area": "US-OK",
+   "park": "Cibola National Forest",
+   "agency_group": "fs.usda.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "found",
+   "st": "US-OK",
+   "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0?f=html",
+   "service_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0",
+   "name_field": null,
+   "agency": "USDA Forest Service",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-1",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 20,
+   "record_name": "Cibola National Forest",
+   "layer": "US-USFS-ownership",
+   "record_link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D20&outFields=%2A&f=html",
+   "where": "OBJECTID=20",
+   "pin_m": 0,
+   "acres_approx": 1883163.2,
+   "grade": "official",
+   "envelope": [
+    -108.636,
+    33.43395,
+    -99.53996,
+    36.69824
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "CIBOLA NATIONAL WILDLIFE REFUGE",
+     "layer": "PACK-US-MN-wildlife-29",
+     "tier": "T-6",
+     "pin_m": 781140
+    }
+   ],
+   "source_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?geometry=-106.475%2C35.2021&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-1 STRONG: 'Cibola National Forest' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-OK-trail-55",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-OK-land-205",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-OK-park-317",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-OK-wildlife-318",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-MN-wildlife-29",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-41",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Cibola National Forest' (US-USFS-ownership); pin inside; about 1883163.2 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -125313,7 +128756,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -125386,7 +128830,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -125459,7 +128904,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -125703,6 +129149,1121 @@
     "confidence": {
      "level": "likely",
      "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-7959",
+   "area": "US-KY",
+   "park": "Quiet Trails State Nature Preserve",
+   "agency_group": "Nature Preserve",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "found",
+   "st": "US-KY",
+   "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0?f=html",
+   "service_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0",
+   "name_field": null,
+   "agency": "Office of Kentucky Nature Preserves",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-1",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 28,
+   "record_name": "Quiet Trails State Nature Preserve",
+   "layer": "US-KY-snp",
+   "record_link": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D28&outFields=%2A&f=html",
+   "where": "OBJECTID=28",
+   "pin_m": 0,
+   "acres_approx": 177.1,
+   "grade": "official",
+   "envelope": [
+    -84.2312,
+    38.55387,
+    -84.21623,
+    38.56279
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?geometry=-84.2273%2C38.5571&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-1 STRONG: 'Quiet Trails State Nature Preserve' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "US-KY-stateparks",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-stateforests",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-snp",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Quiet Trails State Nature Preserve' (US-KY-snp); pin inside; about 177.1 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-7960",
+   "area": "US-KY",
+   "park": "Crooked Creek State Nature Preserve",
+   "agency_group": "Nature Preserve",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "candidate",
+   "st": "US-KY",
+   "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0?f=html",
+   "service_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0",
+   "name_field": null,
+   "agency": "Office of Kentucky Nature Preserves",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 10,
+   "record_name": "Crooked Creek State Nature Preserve",
+   "layer": "US-KY-snp",
+   "record_link": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D10&outFields=%2A&f=html",
+   "where": "OBJECTID=10",
+   "pin_m": 89,
+   "acres_approx": 728.3,
+   "grade": "official",
+   "envelope": [
+    -83.581,
+    38.63901,
+    -83.54241,
+    38.66318
+   ],
+   "rule": "R-G12",
+   "others": [
+    {
+     "record_name": "Crooked Creek State Nature Preserve",
+     "layer": "US-KY-heritage-land",
+     "tier": "T-3",
+     "pin_m": 89
+    },
+    {
+     "record_name": "Crooked Creek State Nature Preserve",
+     "layer": "US-KY-heritage-land",
+     "tier": "T-4",
+     "pin_m": 246
+    },
+    {
+     "record_name": "Crooked Creek State Nature Preserve",
+     "layer": "US-KY-heritage-land",
+     "tier": "T-4",
+     "pin_m": 894
+    },
+    {
+     "record_name": "Crooked Creek State Nature Preserve",
+     "layer": "US-KY-heritage-land",
+     "tier": "T-4",
+     "pin_m": 1131
+    }
+   ],
+   "source_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?geometry=-83.5723%2C38.6411&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped (R-G12: pin within 150 m)",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Crooked Creek State Nature Preserve' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "US-KY-stateparks",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-stateforests",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-snp",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "US-KY-wild-rivers",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-heritage-land",
+      "gave": "hit (1 at pin, 6 by name)"
+     },
+     {
+      "source": "US-KY-state_park-Kentucky_State_Park_Boundaries-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_park-Public_Hunting_Areas_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_park-Kentucky_Heritage_Land_Conservation_Fund-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_park-KYStateParkBoundaries-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_park-Wildlife_Management_Areas_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-nature_preserve-State_Nature_Preserves_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_forest-Kentucky_State_Forest_Boundaries-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-trail-Kentucky_s_Recreational_Trails-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-natural-areas",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-nature_preserve-State_Natural_Areas_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-nature_preserve-USFWS_Critical_Habitat_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-trail-KYTC_Multi_Use_Paths-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-trail-KYTC_Rail_Plan_Rails_to_Trails-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "hit (0 at pin, 5 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "pin just outside (89 m): candidate only (G-F1)",
+    "why_this_record": "same land also in US-KY-heritage-land 'Crooked Creek State Nature Preserve', US-KY-heritage-land 'Crooked Creek State Nature Preserve', US-KY-heritage-land 'Crooked Creek State Nature Preserve': merged, counted once; record 'Crooked Creek State Nature Preserve' (US-KY-snp); pin 89 m from the edge; about 728.3 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-7961",
+   "area": "US-KY",
+   "park": "Jesse Stuart State Nature Preserve",
+   "agency_group": "Nature Preserve",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "found",
+   "st": "US-KY",
+   "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0?f=html",
+   "service_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0",
+   "name_field": null,
+   "agency": "Office of Kentucky Nature Preserves",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-1",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 16,
+   "record_name": "Jesse Stuart State Nature Preserve",
+   "layer": "US-KY-snp",
+   "record_link": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D16&outFields=%2A&f=html",
+   "where": "OBJECTID=16",
+   "pin_m": 0,
+   "acres_approx": 711.0,
+   "grade": "official",
+   "envelope": [
+    -82.85496,
+    38.53841,
+    -82.81597,
+    38.56404
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?geometry=-82.8415%2C38.547&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-1 STRONG: 'Jesse Stuart State Nature Preserve' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "US-KY-stateparks",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-stateforests",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-snp",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Jesse Stuart State Nature Preserve' (US-KY-snp); pin inside; about 711.0 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-7962",
+   "area": "US-KY",
+   "park": "Little South Fork State Natural Area",
+   "agency_group": "Nature Preserve",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "candidate",
+   "st": "US-KY",
+   "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Natural_Areas_WGS84WM/MapServer/0?f=html",
+   "service_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Natural_Areas_WGS84WM/MapServer/0",
+   "name_field": null,
+   "agency": "Office of Kentucky Nature Preserves",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 4,
+   "record_name": "Little South Fork State Natural Area (Steele Hollow SNA)",
+   "layer": "US-KY-natural-areas",
+   "record_link": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Natural_Areas_WGS84WM/MapServer/0/query?where=OBJECTID%3D4&outFields=%2A&f=html",
+   "where": "OBJECTID=4",
+   "pin_m": 30,
+   "acres_approx": 2230.9,
+   "grade": "official",
+   "envelope": [
+    -84.76304,
+    36.65361,
+    -84.67783,
+    36.70223
+   ],
+   "rule": "R-G12",
+   "others": [
+    {
+     "record_name": "Little South Fork State Natural Area (Steele Hollow SNA)",
+     "layer": "US-KY-heritage-land",
+     "tier": "T-4",
+     "pin_m": 329
+    },
+    {
+     "record_name": "Little South Fork State Natural Area (Steele Hollow SNA)",
+     "layer": "US-KY-heritage-land",
+     "tier": "T-4",
+     "pin_m": 757
+    },
+    {
+     "record_name": "Little South Fork State Natural Area (Steele Hollow SNA)",
+     "layer": "US-KY-heritage-land",
+     "tier": "T-4",
+     "pin_m": 2051
+    },
+    {
+     "record_name": "Little South Fork State Natural Area (Steele Hollow SNA)",
+     "layer": "US-KY-heritage-land",
+     "tier": "T-4",
+     "pin_m": 2917
+    }
+   ],
+   "source_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Natural_Areas_WGS84WM/MapServer/0/query?geometry=-84.7149%2C36.6981&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Little South Fork State Natural Area (Steele Hollow SNA)' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "US-KY-stateparks",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-stateforests",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-snp",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-wild-rivers",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "US-KY-heritage-land",
+      "gave": "hit (1 at pin, 4 by name)"
+     },
+     {
+      "source": "US-KY-state_park-Kentucky_State_Park_Boundaries-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_park-Public_Hunting_Areas_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_park-Kentucky_Heritage_Land_Conservation_Fund-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_park-KYStateParkBoundaries-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_park-Wildlife_Management_Areas_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-nature_preserve-State_Nature_Preserves_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_forest-Kentucky_State_Forest_Boundaries-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-trail-Kentucky_s_Recreational_Trails-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-natural-areas",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "US-KY-nature_preserve-State_Natural_Areas_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-nature_preserve-USFWS_Critical_Habitat_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-trail-KYTC_Multi_Use_Paths-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-trail-KYTC_Rail_Plan_Rails_to_Trails-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 7 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 5 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 5 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 7 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 21 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "pin just outside (30 m): candidate only (G-F1); NAME SOLVED: agency calls it Little South Fork State Natural Area (Steele Hollow SNA)",
+    "why_this_record": "same land also in US-KY-heritage-land 'Little South Fork State Natural Area (Steele Hollow SNA)', US-KY-heritage-land 'Little South Fork State Natural Area (Steele Hollow SNA)', US-KY-heritage-land 'Little South Fork State Natural Area (Steele Hollow SNA)': merged, counted once; record 'Little South Fork State Natural Area (Steele Hollow SNA)' (US-KY-natural-areas); pin 30 m from the edge; about 2230.9 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-7963",
+   "area": "US-KY",
+   "park": "Pilot Knob State Nature Preserve",
+   "agency_group": "Nature Preserve",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "candidate",
+   "st": "US-KY",
+   "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0?f=html",
+   "service_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0",
+   "name_field": null,
+   "agency": "Office of Kentucky Nature Preserves",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 26,
+   "record_name": "Pilot Knob State Nature Preserve",
+   "layer": "US-KY-snp",
+   "record_link": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D26&outFields=%2A&f=html",
+   "where": "OBJECTID=26",
+   "pin_m": 81,
+   "acres_approx": 742.2,
+   "grade": "official",
+   "envelope": [
+    -83.94685,
+    37.8957,
+    -83.92469,
+    37.92045
+   ],
+   "rule": "R-G12",
+   "others": [
+    {
+     "record_name": "Pilot Knob State Nature Preserve",
+     "layer": "US-KY-heritage-land",
+     "tier": "T-4",
+     "pin_m": 543
+    },
+    {
+     "record_name": "Pilot Knob State Nature Preserve",
+     "layer": "US-KY-heritage-land",
+     "tier": "T-4",
+     "pin_m": 728
+    },
+    {
+     "record_name": "Pilot Knob State Nature Preserve",
+     "layer": "US-KY-heritage-land",
+     "tier": "T-4",
+     "pin_m": 1274
+    },
+    {
+     "record_name": "Pilot Knob State Nature Preserve",
+     "layer": "US-KY-heritage-land",
+     "tier": "T-4",
+     "pin_m": 1472
+    }
+   ],
+   "source_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?geometry=-83.945%2C37.9121&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped (R-G12: pin within 150 m)",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Pilot Knob State Nature Preserve' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "US-KY-stateparks",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-stateforests",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-snp",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "US-KY-wild-rivers",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-heritage-land",
+      "gave": "hit (0 at pin, 4 by name)"
+     },
+     {
+      "source": "US-KY-state_park-Kentucky_State_Park_Boundaries-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_park-Public_Hunting_Areas_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_park-Kentucky_Heritage_Land_Conservation_Fund-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_park-KYStateParkBoundaries-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_park-Wildlife_Management_Areas_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-nature_preserve-State_Nature_Preserves_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-state_forest-Kentucky_State_Forest_Boundaries-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-trail-Kentucky_s_Recreational_Trails-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-natural-areas",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-nature_preserve-State_Natural_Areas_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-nature_preserve-USFWS_Critical_Habitat_in_Kentucky-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-trail-KYTC_Multi_Use_Paths-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-KY-trail-KYTC_Rail_Plan_Rails_to_Trails-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "pin just outside (81 m): candidate only (G-F1)",
+    "why_this_record": "same land also in US-KY-heritage-land 'Pilot Knob State Nature Preserve', US-KY-heritage-land 'Pilot Knob State Nature Preserve', US-KY-heritage-land 'Pilot Knob State Nature Preserve': merged, counted once; record 'Pilot Knob State Nature Preserve' (US-KY-snp); pin 81 m from the edge; about 742.2 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-7965",
+   "area": "US-KY",
+   "park": "Brigadoon State Nature Preserve",
+   "agency_group": "Nature Preserve",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "found",
+   "st": "US-KY",
+   "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0?f=html",
+   "service_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0",
+   "name_field": null,
+   "agency": "Office of Kentucky Nature Preserves",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-1",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 8,
+   "record_name": "Brigadoon State Nature Preserve",
+   "layer": "US-KY-snp",
+   "record_link": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D8&outFields=%2A&f=html",
+   "where": "OBJECTID=8",
+   "pin_m": 0,
+   "acres_approx": 187.3,
+   "grade": "official",
+   "envelope": [
+    -85.99747,
+    36.89507,
+    -85.97984,
+    36.90792
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?geometry=-85.9811%2C36.8978&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-1 STRONG: 'Brigadoon State Nature Preserve' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "US-KY-stateparks",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-stateforests",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-snp",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Brigadoon State Nature Preserve' (US-KY-snp); pin inside; about 187.3 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+   }
+  },
+  {
+   "ref": "US-7966",
+   "area": "US-KY",
+   "park": "Bad Branch State Nature Preserve",
+   "agency_group": "Nature Preserve",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "found",
+   "st": "US-KY",
+   "url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0?f=html",
+   "service_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0",
+   "name_field": null,
+   "agency": "Office of Kentucky Nature Preserves",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-1",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 1,
+   "record_name": "Bad Branch State Nature Preserve",
+   "layer": "US-KY-snp",
+   "record_link": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D1&outFields=%2A&f=html",
+   "where": "OBJECTID=1",
+   "pin_m": 0,
+   "acres_approx": 2830.2,
+   "grade": "official",
+   "envelope": [
+    -82.8057,
+    37.06725,
+    -82.73539,
+    37.11846
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?geometry=-82.7719%2C37.0676&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-1 STRONG: 'Bad Branch State Nature Preserve' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "US-KY-stateparks",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-stateforests",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-KY-snp",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Bad Branch State Nature Preserve' (US-KY-snp); pin inside; about 2830.2 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
     }
    },
    "pass": 1,
@@ -136835,7 +141396,11 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1
+   "pass": 1,
+   "url_check": {
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
   },
   {
    "ref": "US-3635",
@@ -136904,7 +141469,11 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1
+   "pass": 1,
+   "url_check": {
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+   }
   },
   {
    "ref": "US-3643",
@@ -161377,7 +165946,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -161531,7 +166102,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -161607,7 +166180,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -161683,7 +166258,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -161934,7 +166511,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -162185,7 +166764,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)",
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -162719,9 +167300,7 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -166287,7 +170866,8 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)",
+    "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
