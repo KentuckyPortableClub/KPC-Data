@@ -230,7 +230,11 @@ def run_area(area, state, web, docs_all, ky):
                 new = old   # every page failed (403 / rest): keep what we knew
             D['parks'][ref] = new
         except Exception as e:  # noqa: BLE001
-            STAT['errors'] += 1; D['parks'][ref] = {'n': parks[ref]['n'], 'status': 'bot error: ' + str(e)[:80], 'checked': TODAY, 'ver': VER, 'hours': [], 'fees': [], 'permits': []}
+            STAT['errors'] += 1
+            if old and old.get('status') == 'ok':   # Nov 11: a bot error on the re-read must not replace a good record with an empty one (it kept what it knew when every page failed, but not here)
+                D['parks'][ref] = dict(old, last_read_failed=TODAY, last_read_error='bot error: ' + str(e)[:80])
+            else:
+                D['parks'][ref] = {'n': parks[ref]['n'], 'status': 'bot error: ' + str(e)[:80], 'checked': TODAY, 'ver': VER, 'hours': [], 'fees': [], 'permits': []}
         done += 1
     _old = T.load(f, {}) or {}; before = {'hours_lines': sum(len(r.get('hours') or []) for r in (_old.get('parks') or {}).values())}
     D['read'] = TODAY; D['counts'] = counts(D)

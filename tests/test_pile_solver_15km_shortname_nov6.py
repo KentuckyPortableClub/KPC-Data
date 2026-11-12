@@ -3,7 +3,7 @@
 import os, pathlib, sys, tempfile
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / '.github/scripts'))
-os.environ.setdefault('LINKS', '/tmp/fers/L')
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); import _links_checkout; _links_checkout.use(ROOT)   # Nov 11: any KPC-Links checkout, any start folder
 os.environ.setdefault('DATA', str(ROOT))
 import kpc_pile_solver as S
 import kpc_agreement_ledger as AL

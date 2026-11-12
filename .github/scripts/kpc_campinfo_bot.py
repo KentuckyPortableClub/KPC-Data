@@ -1014,6 +1014,18 @@ def has_facts(r):
     return any(not k.startswith(('booking', 'lodging_booking', 'map', 'phone_hint', 'features')) for k in (r.get('facts_src') or {}))
 
 
+def keep_known(old, new):
+    """Nov 11: a re-read that found NO campground facts (page blocked, robots, host resting, soft 404, script-built page, a bot error, a
+    missing key) must not wipe the facts and source lines an earlier read found: the old record stays, marked with the day and the reason
+    the re-read failed (last_read_failed / last_read_status), and its own 'checked' date stays so it is tried again next run. The record
+    is rebuilt blank on every read, so before this a single 403 on the monthly re-read emptied a good record. Returns the record to keep."""
+    if not old or not has_facts(old) or has_facts(new): return new
+    kept = dict(old)
+    kept['last_read_failed'] = TODAY
+    kept['last_read_status'] = new.get('status') or 'no facts read'
+    return kept
+
+
 def counts(D):
     c = {'camps': len(D['camps']), 'ok': 0, 'needs_key': 0, 'needs_browser': 0, 'robots': 0, 'resting': 0, 'no_page': 0, 'not_official': 0, 'other': 0, 'with_sites': 0, 'with_booking': 0, 'with_elevation': 0}
     for r in D['camps'].values():
@@ -1021,6 +1033,7 @@ def counts(D):
         c['ok' if s.startswith('ok') and 'needs browser' not in s and 'even in a browser' not in s else 'needs_key' if 'RIDB' in s else 'needs_browser' if ('403' in s or 'needs browser' in s) else 'robots' if 'robots' in s else 'resting' if 'resting' in s else 'no_page' if 'no official page' in s else 'not_official' if 'not on an official' in s else 'other'] += 1
         if (r.get('sites') or {}).get('total') is not None: c['with_sites'] += 1
         if has_facts(r): c['with_facts'] = c.get('with_facts', 0) + 1
+        if r.get('last_read_failed') and r.get('last_read_failed') >= time.strftime('%Y-%m-%d', time.gmtime(time.time() - 14 * 86400)): c['kept_after_failed_read'] = c.get('kept_after_failed_read', 0) + 1   # Nov 11: old facts kept because the re-read found none
         if (r.get('booking') or {}).get('url'): c['with_booking'] += 1
         if (r.get('elevation_ft') or {}).get('value') is not None: c['with_elevation'] += 1
     return c
@@ -1093,9 +1106,9 @@ def run_area(area, state):
         if old and old.get('ver', 0) >= VER and old.get('checked', '') >= fresh_cut and not stale_status:
             fresh += 1; STAT['skipped_fresh'] += 1; continue
         STAT['camps'] += 1
-        try: D['camps'][cid] = one_camp(area, rows[cid], state)
+        try: D['camps'][cid] = keep_known(old, one_camp(area, rows[cid], state))
         except Exception as e:  # noqa: BLE001
-            STAT['errors'] += 1; rec = blank_record(rows[cid]); rec['status'] = 'bot error: ' + str(e)[:80]; D['camps'][cid] = rec
+            STAT['errors'] += 1; rec = blank_record(rows[cid]); rec['status'] = 'bot error: ' + str(e)[:80]; D['camps'][cid] = keep_known(old, rec)
         done += 1
     try: browser_pass(area, D, rows)
     except Exception as e:  # noqa: BLE001

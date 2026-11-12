@@ -711,6 +711,14 @@ def one_park(ref, park, ours, web, docs, ky, retired, bs):
         if len(found) >= 4 and 'news' not in why: continue
     r['sizes'] = [{'acres': s['acres'], 'as': s['as'], 'line': s['line'], 'total_like': s['total'], 'clean': s['clean'], 'why': s['why'], 'url': s['url'], **({'stale_year': s['stale']} if s.get('stale') else {})} for s in found[:8]]
     v, chosen, pct = judge(ours['acres'] if ours else 0, found)
+    # Nov 11: 'no size on page' says the agency's page was read and holds no size. When NO page was read at all (403, robots.txt, host
+    # resting, soft 404, PDF with no text, or the time ran out before the first page) that is not what happened: the verdict is 'not read'
+    # with the statuses as its cause, so a blocked agency never looks like an agency with no number.
+    if not any(p.get('status') in ('ok', 'ok (browser)') for p in r['pages']):
+        v, chosen, pct = 'not read', None, None
+        sts = {}
+        for p in r['pages']: sts[str(p.get('status'))] = sts.get(str(p.get('status')), 0) + 1
+        r['cause'] = 'no page could be read: ' + (', '.join(f'{k} x{n}' if n > 1 else k for k, n in sts.items()) if sts else 'the time for this chunk ran out before the first page')
     if v == 'off' and chosen and MULTI.get('area', '').startswith('US-') and STATES_RX.search(chosen['line']) and not re.search(MULTI.get('state', 'zzz'), chosen['line'], re.I):
         v = 'unsure'; r['note'] = 'the agency figure may cover several states; our outline may be this state\'s share only'
     elif v == 'off' and chosen and re.search(r'national (forest|park|refuge|river|recreation|trail|seashore|lakeshore|monument|battlefield)', park.get('t', '') + ' ' + park['n'], re.I) and MULTI.get('ky') and abs(chosen['acres']) > 1.8 * (ours['acres'] or 1):
@@ -806,7 +814,10 @@ def run_area(area, state, web, docs_all, ky, ak, retired, bscore, news):
             D['parks'][ref] = new
         except Exception as e:  # noqa: BLE001
             STAT['errors'] += 1
-            D['parks'][ref] = {'n': park['n'], 'ours': ours, 'verdict': 'bot error: ' + str(e)[:80], 'checked': TODAY, 'ver': VER, 'handover': [], 'score': None}
+            if old and old.get('verdict') not in (None, 'not read', 'no official page on file', 'no outline') and not str(old.get('verdict')).startswith('bot error'):
+                D['parks'][ref] = dict(old, last_read_failed=TODAY, last_read_error='bot error: ' + str(e)[:80], ours=ours)   # Nov 11: a bot error on the re-read keeps the row it had (with today's outline numbers); 'checked' stays so it is tried again
+            else:
+                D['parks'][ref] = {'n': park['n'], 'ours': ours, 'verdict': 'bot error: ' + str(e)[:80], 'checked': TODAY, 'ver': VER, 'handover': [], 'score': None}
         v = D['parks'][ref].get('verdict')
         STAT['size_agree' if v == 'agree' else 'size_off' if v == 'off' else 'size_unsure' if v == 'unsure' else 'ours_unknown' if v == 'ours unknown' else 'no_size'] += 1
         done += 1
@@ -849,11 +860,11 @@ def run_area(area, state, web, docs_all, ky, ak, retired, bscore, news):
 
 
 def counts(D):
-    c = {'parks': len(D['parks']), 'with_outline': 0, 'agree': 0, 'off': 0, 'unsure': 0, 'no_size': 0, 'ours_unknown': 0, 'no_page': 0, 'handover_hints': 0, 'retired': 0, 'weak': 0}
+    c = {'parks': len(D['parks']), 'with_outline': 0, 'agree': 0, 'off': 0, 'unsure': 0, 'no_size': 0, 'not_read': 0, 'ours_unknown': 0, 'no_page': 0, 'handover_hints': 0, 'retired': 0, 'weak': 0}
     for r in D['parks'].values():
         if r.get('ours'): c['with_outline'] += 1
         v = r.get('verdict', '')
-        c['agree' if v == 'agree' else 'off' if v == 'off' else 'unsure' if v == 'unsure' else 'ours_unknown' if v == 'ours unknown' else 'no_page' if 'no official page' in v else 'no_size'] += 1 if v != 'no outline' else 0
+        c['agree' if v == 'agree' else 'off' if v == 'off' else 'unsure' if v == 'unsure' else 'ours_unknown' if v == 'ours unknown' else 'not_read' if v == 'not read' else 'no_page' if 'no official page' in v else 'no_size'] += 1 if v != 'no outline' else 0
         if r.get('handover'): c['handover_hints'] += 1
         if r.get('retired'): c['retired'] += 1
         if r.get('score') is not None and r['score'] <= 4: c['weak'] += 1

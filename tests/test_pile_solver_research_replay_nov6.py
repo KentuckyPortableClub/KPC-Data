@@ -14,9 +14,11 @@ import builtins, hashlib, json, os, pathlib, shutil, sys, tempfile, urllib.reque
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 os.chdir(ROOT)
-os.environ.setdefault('LINKS', '/tmp/kpc-links')
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); import _links_checkout; _links_checkout.use(ROOT)   # Nov 11: any KPC-Links checkout, any start folder
 os.environ.pop('KPC_RESEARCH_SOURCES', None)
 sys.path.insert(0, str(ROOT / '.github' / 'scripts'))
+import kpc_research_sources as _RS0   # Nov 11: load THIS repo's copy first. A Links checkout has a same-named older file, and its kpc_precheck puts its own folder first on sys.path, so the solver would otherwise read the Links copy (whatever the checkout is called).
+assert pathlib.Path(_RS0.__file__).resolve().is_relative_to(ROOT.resolve()), 'kpc_research_sources must come from this repo, not a Links checkout'
 
 import kpc_pile_solver as S
 import kpc_agreement_ledger as AL
