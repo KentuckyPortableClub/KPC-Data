@@ -109,7 +109,9 @@ def install_files(trails_dir=None):
         entry = {'ref': w['ref'], 'name': w['park'], 'kind': w.get('kind') or 'trail',
                  'bbox': bb, 'by': w.get('by') or f"reviewed file extract Nov 7: {w['feature']}",
                  'kb': dest.stat().st_size // 1024}
-        idx_name = 'index-state.json' if (w.get('kind') or '') == 'WSR' else 'index.json'
+        # Nov 11 (KPC owner, 2026-11-11): a Canadian trail line goes to index-state.json too (official: true): the CA key reads only
+        # index-state.json for trail lines (kpc_ca_key.py _CTRL), so a CA row in index.json alone stayed a pin (CA-5506)
+        idx_name = 'index-state.json' if (w.get('kind') or '') == 'WSR' or str(w.get('ref') or '').startswith('CA-') else 'index.json'
         idx_path = cwd_trails / idx_name
         try: idx = {x['ref']: x for x in json.loads(idx_path.read_text())}
         except Exception: idx = {}  # noqa: BLE001
