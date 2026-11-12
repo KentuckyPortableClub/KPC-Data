@@ -1,0 +1,50 @@
+{
+ "tag": "newyork",
+ "states": [
+  "US-NY",
+  "US-NJ"
+ ],
+ "key_source": "build",
+ "checked": "2026-11-12 19:24 UTC",
+ "areas": {
+  "US-NY": {
+   "hold": [],
+   "warn": [
+    "6 review-pile HOLD row(s) still outlines: US-10083 US-10295 US-5694 US-8073 US-8074 US-8075 (their 2-fers are 'not sure')",
+    "1 rule 18 row(s): US-13270 (a person decides)",
+    "2 outline(s) with no area: US-10038 US-10039"
+   ],
+   "key_file": "data/us-key/US-NY.json",
+   "build": "US-43056604383",
+   "built": "2026-11-11 16:50 UTC",
+   "rules": "46ef34a04ab0",
+   "parks": 851,
+   "outlines": 830,
+   "held_key": "HELD KEY: build US-43056604383 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "us-US-43056604383.json",
+   "bad_pins": 0,
+   "overrides_no_still": 0
+  },
+  "US-NJ": {
+   "hold": [],
+   "warn": [
+    "1 rule 18 row(s): US-0454 (a person decides)"
+   ],
+   "key_file": "data/us-key/US-NJ.json",
+   "build": "US-43056604383",
+   "built": "2026-11-11 16:50 UTC",
+   "rules": "46ef34a04ab0",
+   "parks": 134,
+   "outlines": 130,
+   "held_key": "HELD KEY: build US-43056604383 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "us-US-43056604383.json",
+   "bad_pins": 0,
+   "overrides_no_still": 0
+  }
+ },
+ "about": "2-fer pre-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4). HOLD = the line does not build. Read-only; nothing is moved or released.",
+ "fers_rules": "cef323de4c9a",
+ "verdict": "GO",
+ "holds": [],
+ "held_key": true
+}
