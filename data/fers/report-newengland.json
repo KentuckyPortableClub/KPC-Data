@@ -1,6 +1,6 @@
 {
  "about": "Counts from the 2-fer bot (kpc_fers.py). Hidden: data only.",
- "fers_rules": "aa7561256260",
+ "fers_rules": "cef323de4c9a",
  "pass1": {
   "bad POTA pin: tested by saved record ids": [
    "CA-1930",
@@ -176,7 +176,7 @@
    "CA-2538"
   ],
   "cell_m": 20.0,
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 186,
@@ -191,6 +191,7 @@
   },
   "missing boundary": 63,
   "official parks": 1378,
+  "pairs reused (nothing changed)": 3727,
   "pairs tested": 3730,
   "pairs whose boxes touch": 3730,
   "parks done by the box test": 51,
@@ -204,7 +205,6 @@
    "W&S river corridors joined as area parks: 14 (saved copy: 32 corridors)",
    "284 trail parks tested by their official line (R5), not their polygon: CA-1301, CA-1599, CA-3546, CA-4786, CA-5344, CA-5536, CA-5565, CA-5595, CA-5628, CA-5688",
    "340 parks filed under another state but crossing / at the edge of this area kept: US-0062, US-0472, US-0473, US-0474, US-0477, US-0480, US-0847, US-0856",
-   "full rebuild (KPC_FERS_FULL): every pair is tested again",
    "12 spots outside this area left for their own area",
    "same land left out (pins far apart): US-3109+US-5541 10.8 km; US-3109+US-5541 10.8 km; CA-2201+CA-2205 30.4 km; CA-2201+CA-2205 30.4 km; CA-6135+CA-6476 16.5 km"
   ],
