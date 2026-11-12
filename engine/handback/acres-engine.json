@@ -642,6 +642,24 @@
    "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0; read 2026-11-12"
   },
   {
+   "Park number (if matched)": "US-3828",
+   "Park name (as the agency writes it)": "Peabody Wildlife Management Area",
+   "Size": 7991,
+   "Unit": "acres",
+   "Agency": "Kentucky Heritage Land Conservation Fund",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0/query?where=OBJECTID%3D129&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-3832",
+   "Park name (as the agency writes it)": "Stone Mountain Wildlife Management Area and State Natural Area",
+   "Size": 1025,
+   "Unit": "acres",
+   "Agency": "Kentucky Heritage Land Conservation Fund",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0/query?where=OBJECTID%3D58&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
    "Park number (if matched)": "US-0731",
    "Park name (as the agency writes it)": "Columbia River Gorge National Scenic Area",
    "Size": 292690,
@@ -783,7 +801,7 @@
    "Unit": "acres",
    "Agency": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
    "Source page": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?where=OBJECTID%3D12&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16; read 2026-11-07"
+   "Notes": "computed from the official outline polygon (approx); layer https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16; read 2026-11-12"
   },
   {
    "Park number (if matched)": "US-2221",
@@ -801,7 +819,7 @@
    "Unit": "acres",
    "Agency": "National Register of Historic Places Polygons",
    "Source page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D384329&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-07"
+   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-12"
   },
   {
    "Park number (if matched)": "US-0980",
@@ -883,6 +901,15 @@
    "Agency": "US Fish and Wildlife Service",
    "Source page": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0/query?where=OBJECTID%3D1602&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-12830",
+   "Park name (as the agency writes it)": "Old Ruby State Park Heritage Site",
+   "Size": 7,
+   "Unit": "acres",
+   "Agency": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks) (land, state GIS table)",
+   "Source page": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/query?where=OBJECTID%3D4052&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1; read 2026-11-04"
   },
   {
    "Park number (if matched)": "US-7893",
@@ -1405,15 +1432,6 @@
    "Agency": "Tennessee Wildlife Resources Agency (credit: TWRA) (wild, state GIS table)",
    "Source page": "https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3/query?where=OBJECTID%3D29&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3; read 2026-11-11"
-  },
-  {
-   "Park number (if matched)": "US-12830",
-   "Park name (as the agency writes it)": "Old Ruby State Park Heritage Site",
-   "Size": 7,
-   "Unit": "acres",
-   "Agency": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks) (land, state GIS table)",
-   "Source page": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/query?where=OBJECTID%3D4052&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1; read 2026-11-04"
   },
   {
    "Park number (if matched)": "US-13631",
@@ -2097,7 +2115,7 @@
    "Agency/area": "Kentucky Department of Parks",
    "Kind": "GIS layer",
    "Example URL": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8",
-   "# times used": 54,
+   "# times used": 56,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -2173,6 +2191,16 @@
    "Retry?": "NO"
   },
   {
+   "Host": "gis.dnr.wa.gov",
+   "Agency/area": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks) (land, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "gisservice.mt.gov",
    "Agency/area": null,
    "Kind": "GIS layer",
@@ -2227,16 +2255,6 @@
    "Agency/area": "Tennessee Wildlife Resources Agency (credit: TWRA) (wild, state GIS table)",
    "Kind": "GIS layer",
    "Example URL": "https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3",
-   "# times used": 1,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
-   "Host": "gis.dnr.wa.gov",
-   "Agency/area": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks) (land, state GIS table)",
-   "Kind": "GIS layer",
-   "Example URL": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1",
    "# times used": 1,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
