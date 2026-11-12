@@ -59,7 +59,7 @@ jobs:
             [ "$REM" -lt "$MINUTES" ] && export MINUTES=$REM
             python3 .github/scripts/kpc_hardlook.py | tee /tmp/h.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { BAD=$rc; echo "::warning title=kpc_hardlook.py::stopped with an error (exit $rc), see the log above"; }
             grep -q 'title=Hard look reader::stopped' /tmp/h.txt && BAD=1   # the reader says 'stopped (...)' and exits 0 on a crash
-            L=$(grep -o '^LEFT=[0-9]*' /tmp/h.txt | cut -d= -f2 || true); D=$(grep -o '^DONE=[0-9]*' /tmp/h.txt | cut -d= -f2 || true); W=$(grep -o '^WAITING=[0-9]*' /tmp/h.txt | cut -d= -f2 || true)
+            L=$(sed -n 's/^LEFT=\([0-9]*\).*/\1/p' /tmp/h.txt); D=$(sed -n 's/^DONE=\([0-9]*\).*/\1/p' /tmp/h.txt); W=$(sed -n 's/^WAITING=\([0-9]*\).*/\1/p' /tmp/h.txt)
             DONE_ALL=$(( DONE_ALL + ${D:-0} )); WAIT=${W:-0}
             [ "${D:-0}" -gt 0 ] && [ -n "$L" ] && [ "$L" != 0 ] && kpc_save   # progress is saved as it goes (a cancelled run loses nothing)
             [ -z "$L" ] || [ "$L" = 0 ] && break
@@ -86,7 +86,7 @@ jobs:
           RUNS24=$(gh api "repos/$R/actions/workflows/kpc-hardlook.yml/runs?created=>=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)&per_page=1" --jq .total_count 2>/dev/null) || RUNS24=''
           export RUNS24
           python3 kpcdata/.github/scripts/kpc_chain.py 'Hard look reader' | tee /tmp/chain.txt
-          NEXT=$(grep -o '^NEXT=.*' /tmp/chain.txt | tail -1 | cut -d= -f2 || true); NC=$(grep -o '^CHAIN=[0-9]*' /tmp/chain.txt | tail -1 | cut -d= -f2 || true)
+          NEXT=$(sed -n 's/^NEXT=\([^=]*\).*/\1/p' /tmp/chain.txt | tail -1); NC=$(sed -n 's/^CHAIN=\([0-9]*\).*/\1/p' /tmp/chain.txt | tail -1)   # Nov 12: sed exits 0 when nothing matches, so a missing line never stops the step (bash -e, with or without pipefail)
           [ "$NEXT" = yes ] || exit 0
           gh workflow run kpc-hardlook.yml -R "$R" -f chain="$NC" || { kpc_rc=$?; echo "::error title=start the next run::could not start the next run (exit $kpc_rc); the chain stops here"; echo "start the next run - could not start the next run (exit $kpc_rc); the chain stops here" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Save what a cancelled run read (Nov 11)

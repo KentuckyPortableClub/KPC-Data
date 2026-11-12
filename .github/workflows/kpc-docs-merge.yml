@@ -56,7 +56,7 @@ jobs:
             LINKS=../links python3 .github/scripts/kpc_waiting_room.py resume data/docs || { kpc_rc=$?; echo "::error title=kpc_waiting_room.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_waiting_room.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
             python3 .github/scripts/kpc_docs_merge.py | tee /tmp/merge.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { kpc_rc=$?; echo "::warning title=kpc_docs_merge.py::stopped with an error (exit $rc), see the log above"; echo "kpc_docs_merge.py - stopped with an error (exit $rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
             LINKS=../links python3 .github/scripts/kpc_waiting_room.py divert data/docs || { kpc_rc=$?; echo "::error title=kpc_waiting_room.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_waiting_room.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
-            L=$(grep -o '^LEFT=[0-9]*' /tmp/merge.txt | cut -d= -f2 || true); D=$(grep -o '^DONE=[0-9]*' /tmp/merge.txt | cut -d= -f2 || true); DONE_ALL=$(( DONE_ALL + ${D:-0} ))
+            L=$(sed -n 's/^LEFT=\([0-9]*\).*/\1/p' /tmp/merge.txt); D=$(sed -n 's/^DONE=\([0-9]*\).*/\1/p' /tmp/merge.txt); DONE_ALL=$(( DONE_ALL + ${D:-0} ))
             [ -z "$L" ] || [ "$L" = 0 ] && break
             [ "${D:-0}" -gt 0 ] || { echo "::notice title=Documents merge::chunk $chunk merged nothing new ($L left: links that timed out or hosts resting): this run stops here"; break; }
             kpc_save   # Nov 11: progress saved as it goes (after the divert: nothing skips the waiting room)
@@ -83,7 +83,7 @@ jobs:
           RUNS24=$(gh api "repos/$R/actions/workflows/kpc-docs-merge.yml/runs?created=>=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)&per_page=1" --jq .total_count 2>/dev/null) || RUNS24=''
           export RUNS24
           python3 kpcdata/.github/scripts/kpc_chain.py 'Documents merge' | tee /tmp/chain.txt
-          NEXT=$(grep -o '^NEXT=.*' /tmp/chain.txt | tail -1 | cut -d= -f2 || true); NC=$(grep -o '^CHAIN=[0-9]*' /tmp/chain.txt | tail -1 | cut -d= -f2 || true)
+          NEXT=$(sed -n 's/^NEXT=\([^=]*\).*/\1/p' /tmp/chain.txt | tail -1); NC=$(sed -n 's/^CHAIN=\([0-9]*\).*/\1/p' /tmp/chain.txt | tail -1)   # Nov 12: sed exits 0 when nothing matches, so a missing line never stops the step (bash -e, with or without pipefail)
           [ "$NEXT" = yes ] || exit 0
           # PAUSED Nov 4: the start line stays commented out while the bot is paused (tests/test_fixbundle_pause_nov4.py). To resume: PAUSED '0' above AND this line back:
           # gh workflow run kpc-docs-merge.yml -R "$R" --ref main -f chain="$NC" || echo "::error title=start the next run::could not start the next run (exit $?); the chain stops here"

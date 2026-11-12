@@ -298,6 +298,23 @@ for wf, read_name, next_name in (('kpc-hardlook.yml', 'Read', 'Next run'), ('kpc
             else:
                 check(rc == 0 and not started and want in log, f'{wf} {case}: no next run, the log says "{want}"')
 
+# ---------------------------------------------------------------- Nov 12 (Quality must-fix): no unmarked '|| true' on the LEFT/DONE/NEXT parsing
+for wf in ('kpc-hardlook.yml', 'kpc-docs-merge.yml'):
+    txt = (HERE / '.github/workflows' / wf).read_text(encoding='utf-8')
+    bare = [i for i, l in enumerate(txt.splitlines(), 1) if '|| true' in l and '# ok:' not in l]
+    check(not bare, f"{wf}: every '|| true' left is marked '# ok: <why>' (lines {bare})")
+    parse = [l.strip().split('   #')[0] for l in txt.splitlines() if "sed -n 's/^" in l and '.txt' in l]
+    check(len(parse) == 2, f'{wf}: the LEFT/DONE and NEXT/CHAIN lines read the chunk / chain output with sed ({len(parse)})')
+    for content, want in (('', {'L': '', 'D': '', 'NEXT': '', 'NC': ''}), ('LEFT=12\nDONE=3\nWAITING=1\nNEXT=yes\nCHAIN=2\n', {'L': '12', 'D': '3', 'NEXT': 'yes', 'NC': '2'})):
+        with tempfile.TemporaryDirectory() as t:
+            script = '; '.join(l.replace('/tmp/', t + '/') for l in parse)
+            prep = ' '.join(f"printf '{content}' > {t}/{n};" for n in ('h.txt', 'merge.txt', 'chain.txt'))
+            r = subprocess.run(['bash', '--noprofile', '--norc', '-eo', 'pipefail', '-c', f'DONE_ALL=0; {prep} {script}; echo "L=$L D=$D NEXT=$NEXT NC=$NC"'],
+                               capture_output=True, text=True, timeout=30)
+            got = dict(x.split('=', 1) for x in (r.stdout.strip().splitlines() or ['L=?'])[-1].split(' ') if '=' in x)
+            check(r.returncode == 0 and all(got.get(k) == v for k, v in want.items()),
+                  f"{wf}: {'no LEFT/NEXT line (a no-match)' if not content else 'the usual lines'} under bash -e + pipefail: rc={r.returncode} {got}")
+
 # ---------------------------------------------------------------- the files themselves
 base = 'origin/main' if subprocess.run(['git', 'rev-parse', '-q', '--verify', 'origin/main'], cwd=HERE, capture_output=True).returncode == 0 else 'HEAD~1'
 for wf in ('kpc-hardlook.yml', 'kpc-docs-merge.yml'):
