@@ -35,6 +35,7 @@ jobs:
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
+          KPC_SITE_FILTER: ${{ vars.KPC_SITE_FILTER || 'on' }}   # Nov 11: 'off' = the old way (the watchdog may move site to main itself)
         run: python3 .github/scripts/kpc_watchdog.py   # PR3: also checks the website copy (branch 'site' vs main) and restarts it
       - name: Key bots - errors and silence, both repos (PR3; read-only, one board line)
         id: kept_green_4

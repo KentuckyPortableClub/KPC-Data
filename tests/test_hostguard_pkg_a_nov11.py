@@ -97,8 +97,13 @@ check(book.get('US-0001', {}).get('h') == [{'id': 1, 'name': 'Test Park', 'auth'
 check(not re.search(r'coordinates|geometry|GIS_AREA|-85\.0|37\.0', txt), 'phone book, saved copy: no geometry, coordinates or other fields stored')
 
 # the published paths: KPC-Data main is copied whole to the site branch (Pages); the phone book must not be in the repo at all
+# Nov 11 (site filter): the move now lives in .github/scripts/kpc_site_publish.sh; with the filter on, only allow-listed paths are
+# published, but with KPC_SITE_FILTER=off (the rollback) every tracked path is again: so the phone book must still never be in the repo
 ps = (R / '.github' / 'workflows' / 'kpc-pages-sync.yml').read_text(encoding='utf-8')
-check('git/refs/heads/site -f sha=$M' in ps and (R / '.nojekyll').exists(), 'Pages copy: the site branch is moved to main (every tracked path is published)')
+pub = R / '.github' / 'scripts' / 'kpc_site_publish.sh'
+pubt = pub.read_text(encoding='utf-8') if pub.exists() else ''
+check((('git/refs/heads/site -f sha=$M' in ps) or ('kpc_site_publish.sh' in ps and 'git/refs/heads/site" -f sha="$M"' in pubt)) and (R / '.nojekyll').exists(),
+      'Pages copy: the site branch can be moved to main (every tracked path published: the filter-off rollback)')
 tracked = subprocess.run(['git', 'ls-files', 'data/intake'], cwd=R, capture_output=True, text=True).stdout.split()
 check(not [f for f in tracked if 'phonebook' in f or 'wdpa' in f.lower()], f'no WDPA phone book file is tracked in the repo (published paths): {[f for f in tracked if "phonebook" in f]}')
 wf_txt = (R / '.github' / 'workflows' / 'kpc-wdpa-phonebook.yml').read_text(encoding='utf-8')

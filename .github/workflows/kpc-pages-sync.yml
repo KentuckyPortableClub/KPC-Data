@@ -31,6 +31,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      # Nov 11 (KPC owner, storage round 2): 'site' carries only the paths the pages read (.github/site-allow-list.txt), built by
+      # .github/scripts/kpc_site_filter.py as ONE commit on top of main's commit (same files, no new content), force-pushed to 'site'
+      # as the ref moves today. The repo variable KPC_SITE_FILTER=off goes back to the old way (site = main's commit, everything).
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+          filter: blob:none            # names and ids only: the filter never needs file contents
+          sparse-checkout: .github
       - name: Move 'site' to main (only when a file the site reads changed)
         id: kept_green_1
         continue-on-error: true
@@ -38,37 +46,53 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           R: ${{ github.repository }}
           SWITCH: ${{ inputs.switch }}
+          FILTER: ${{ vars.KPC_SITE_FILTER != 'off' && 'on' || 'off' }}
         run: |
           say() { echo "$1"; [ -z "${GITHUB_STEP_SUMMARY:-}" ] || echo "- $1" >> "$GITHUB_STEP_SUMMARY"; }
           stale() { echo "::error title=Pages copy::$1 (the site would stay stale)"; echo "Pages copy - $1 (the site would stay stale)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           M=$(gh api repos/$R/git/ref/heads/main --jq .object.sha)
           S=$(gh api repos/$R/git/ref/heads/site --jq .object.sha 2>/dev/null) || S=none; case "$S" in [0-9a-f]*) ;; *) S=none ;; esac
-          if [ "$M" = "$S" ]; then say "Pages copy: site is already main (${M:0:8}): nothing to publish"; exit 0; fi
-          if [ "$S" = none ]; then
-            o=$(gh api -X POST repos/$R/git/refs -f ref=refs/heads/site -f sha=$M 2>&1) && say "Pages copy: branch site made at ${M:0:8}" || stale "could not make branch site: $(echo $o | head -c 300)"
-            exit 0
+          # the main commit the live site was made from: 'site' itself (the old way) or the parent of a filtered site commit
+          SRC=$S
+          if [ "$S" != none ]; then
+            case "$(gh api repos/$R/git/commits/$S --jq .message 2>/dev/null)" in
+              "site: published copy of main "*) SRC=$(gh api repos/$R/git/commits/$S --jq '.parents[0].sha' 2>/dev/null) || SRC=$S ;;
+            esac
           fi
+          # what 'site' becomes: one shared script (also the watchdog's repair path), so the two cannot drift
+          publish() { bash .github/scripts/kpc_site_publish.sh "$1" || true; }   # ok: it reports its own error (stale = red)
+          if [ "$S" = none ]; then publish "branch site made"; exit 0; fi
+          FILTERED_LIVE=no; [ "$SRC" != "$S" ] && FILTERED_LIVE=yes
+          UP=no
+          if [ "$M" = "$SRC" ]; then
+            if [ "$FILTER" = on ] && [ "$FILTERED_LIVE" = yes ]; then UP=yes; fi
+            if [ "$FILTER" = off ] && [ "$FILTERED_LIVE" = no ]; then UP=yes; fi
+          fi
+          if [ "$UP" = yes ]; then say "Pages copy: site is already main (${M:0:8}): nothing to publish"; exit 0; fi
           GO=no; WHY=""
           if [ -n "$SWITCH" ]; then GO=yes; WHY="by-hand switch run"
+          elif [ "$FILTER" = on ] && [ "$FILTERED_LIVE" = no ]; then GO=yes; WHY="first filtered publish"
+          elif [ "$FILTER" = off ] && [ "$FILTERED_LIVE" = yes ]; then GO=yes; WHY="filter switched off: everything published again"
           else
-            # which files differ between the live site and main; bookkeeping does not count (same idea as KPC-Links' Pages filter)
-            if gh api "repos/$R/compare/$S...$M?per_page=300" --jq '.files[].filename' > /tmp/files.txt 2>/dev/null && [ -s /tmp/files.txt ]; then
+            # which files differ between the live site's main commit and main; bookkeeping does not count (same idea as KPC-Links' Pages filter)
+            if gh api "repos/$R/compare/$SRC...$M?per_page=300" --jq '.files[].filename' > /tmp/files.txt 2>/dev/null && [ -s /tmp/files.txt ]; then
               N=$(wc -l < /tmp/files.txt)
               SITE=$(grep -v -E '^(\.claude/|\.github/|tests/|data/status/|data/waiting/)' /tmp/files.txt | wc -l)
+              grep -q -x '.github/site-allow-list.txt' /tmp/files.txt && SITE=$((SITE + 1))   # a changed allow-list changes the site
               if [ "$N" -ge 300 ] || [ "$SITE" -gt 0 ]; then GO=yes; WHY="$SITE site file(s) changed"
               else
                 # bookkeeping only: the status page reads data/status, so a site that is 6 h or more behind still moves
-                SD=$(gh api repos/$R/commits/$S --jq .commit.committer.date 2>/dev/null || true)
+                SD=$(gh api repos/$R/commits/$SRC --jq .commit.committer.date 2>/dev/null || true)
                 AGE=999999; [ -n "$SD" ] && AGE=$(( $(date -u +%s) - $(date -u -d "$SD" +%s 2>/dev/null || echo 0) ))
                 if [ "$AGE" -ge 21600 ]; then GO=yes; WHY="only bookkeeping changed but the site copy is $((AGE/3600)) h old"; fi
               fi
-            else GO=yes; WHY="could not compare ${S:0:8}...${M:0:8}"; fi
+            else GO=yes; WHY="could not compare ${SRC:0:8}...${M:0:8}"; fi
           fi
-          if [ "$GO" = no ]; then say "Pages copy: only bookkeeping changed since the live copy (${S:0:8}): site left as it is"; exit 0; fi
+          if [ "$GO" = no ]; then say "Pages copy: only bookkeeping changed since the live copy (${SRC:0:8}): site left as it is"; exit 0; fi
           # never stack a move on a Pages build that is still running
           ST=$(gh api repos/$R/pages/builds/latest --jq .status 2>/dev/null || echo unknown)
           if [ "$ST" = building ] || [ "$ST" = queued ]; then say "Pages copy: a Pages build is still running ($ST): the next hourly run moves site ($WHY)"; exit 0; fi
-          o=$(gh api -X PATCH repos/$R/git/refs/heads/site -f sha=$M -F force=true 2>&1) && say "Pages copy: site moved ${S:0:8} -> ${M:0:8} ($WHY; one Pages build)" || stale "could not move site: $(echo $o | head -c 300)"
+          publish "$WHY"
           true   # ok: the next run tries again
       - name: Point Pages at the branch (one time, by hand)
         if: ${{ inputs.switch == 'yes' || inputs.switch == 'main' }}
