@@ -1,6 +1,6 @@
 # 2-fer pre-line check: midwest (US-IN US-IL US-MO US-WI US-MN US-IA US-ND US-SD): GO
 
-Key source: build · checked 2026-11-12 05:19 UTC
+Key source: build · checked 2026-11-12 11:04 UTC
 
 ## US-IN: GO (HELD KEY: build US-43056604383 has no person's sign-off yet; the 2-fers measured on it are held with it)
 - warn: 1 review-pile HOLD row(s) still outlines: US-5691 (their 2-fers are 'not sure')
