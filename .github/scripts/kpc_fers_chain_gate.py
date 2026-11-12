@@ -80,12 +80,15 @@ def person_good(data, links, now=None):
     return ''
 
 
-def postline_clean(rep):
-    """(counts, clean, why). counts=False: no new held 2-fer output in the report (not counted either way)."""
+def postline_clean(rep, only=None):
+    """(counts, clean, why). counts=False: no new held 2-fer output in the report (not counted either way).
+    KPC owner, 2026-11-12 (per state): only=<set of states> judges only those states (the ones whose held file changed since the
+    last counted check); a state that did not change is neither counted nor allowed to make another line's check dirty."""
     if not isinstance(rep, dict): return False, False, 'no post-line report'
     if rep.get('error'): return True, False, f"post-line check error: {str(rep['error'])[:80]}"
     areas = rep.get('areas') or {}
-    if not areas: return False, False, 'the report compared no held area'
+    if only is not None: areas = {a: r for a, r in areas.items() if a in only}
+    if not areas: return False, False, 'the report compared no held area' + (' that changed' if only is not None else '')
     bad = []
     for a, r in areas.items():
         if 'error' in r: bad.append(f'{a}: could not compare'); continue
@@ -169,6 +172,18 @@ def _flip(s, data, why, now):
     return line
 
 
+def held_states(data):
+    """{state: sha256 of its held 2-fer file} (data/waiting/in/data/fers/<ST>.json[.gz])"""
+    import hashlib
+    out = {}
+    for f in sorted(glob.glob(str(pathlib.Path(data) / 'data/waiting/in/data/fers/*.json*'))):
+        st = re.sub(r'\.json(\.gz)?$', '', os.path.basename(f))
+        if not re.match(r'^(US|CA|W)-[A-Z0-9]+$', st): continue
+        try: out[st] = hashlib.sha256(open(f, 'rb').read()).hexdigest()[:16]
+        except OSError: continue
+    return out
+
+
 def held_fp(data):
     """FINAL-v2 self-check: a fingerprint of the HELD 2-fer output (data/waiting/in/data/fers/*.json[.gz]: names + bytes), '' when none.
     The post-line check runs after EVERY chain completion (the chain runs after every hourly copy, most of them start nothing), so
@@ -194,7 +209,18 @@ def update(data='.', links='links', now=None):
         rid = str((rep or {}).get('run') or (rep or {}).get('checked') or '')
         fp = held_fp(data)
         if rid and rid not in s['counted'] and fp and fp != s.get('last_fp'):   # FINAL-v2 self-check: only a NEW held output counts
-            counts, ok, why = postline_clean(rep)
+            now_h = held_states(data); before_h = s.get('held_states')
+            # KPC owner, 2026-11-12 (per state): judge only the states whose held file changed since the last counted check; the first
+            # check after this change (no 'held_states' yet) judges every state, as before
+            changed = None if before_h is None else {a for a, h in now_h.items() if before_h.get(a) != h}
+            counts, ok, why = postline_clean(rep, changed)
+            dirty = dict(s.get('dirty') or {})
+            for a, r in ((rep or {}).get('areas') or {}).items():
+                if changed is not None and a not in changed: continue
+                c_, ok_a, why_a = postline_clean({'areas': {a: r}})
+                if ok_a: dirty.pop(a, None)
+                else: dirty[a] = why_a
+            s['dirty'] = dirty; s['held_states'] = now_h
             if counts:
                 s['last_fp'] = fp
                 keys = sorted({'ca' if a.startswith('CA-') else 'us' for a in (rep.get('areas') or {}) if a[:3] in ('US-', 'CA-')})

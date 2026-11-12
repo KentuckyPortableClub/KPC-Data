@@ -68,7 +68,13 @@ else: check(f'pending: every other step, the job, triggers, permissions and conc
 O = old('kpc-fers-pending.yml')
 if O is not None:
     orun = O['jobs']['look']['steps'][PI]['run']
-    check('pending: the step is main\'s step with only the new look in front (the rest of it byte-for-byte the same)', run.endswith(orun) and len(run) > len(orun))
+    # KPC owner, 2026-11-12 (2-fers per state): the one later change to this step is the area list, now read from .github/fers-areas.json
+    # (the inline copy of the chain's old list is retired; OH / MI / UT are in their areas): normalised here, everything else byte for byte
+    def _norm(x):
+        x = re.sub(r"( *)R = \{'southeast'.*?\}\n", lambda m: m.group(1) + "R = <area list>\n", x, flags=re.S)
+        x = re.sub(r"( *)R = json\.load\(open\('\.github/fers-areas\.json'.*?\n", lambda m: m.group(1) + "R = <area list>\n", x)
+        return re.sub(r"( *)OWN = \{'US-KY'.*?\n", lambda m: m.group(1) + "OWN = <own-state runs>\n", x)
+    check('pending: the step is main\'s step with only the new look in front (the rest of it byte-for-byte the same, the area list aside)', _norm(run).endswith(_norm(orun)) and len(run) > len(orun) - 2000)
 block = expr_free(run[:run.find('if [ -n "$(gh run list -R ${{ github.repository }} --workflow kpc-fers-lines.yml')])
 
 

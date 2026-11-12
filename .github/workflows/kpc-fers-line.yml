@@ -37,6 +37,9 @@ on:
       force:
         description: 'yes = build even when the pre-line check says HOLD (by hand only; the report says FORCED)'
         default: 'no'
+      skip_pass1:
+        description: 'yes = pass 1 is already done on these inputs (the chain proved it from the per-state stamps): the fetcher starts at pass 2'
+        default: 'no'
   workflow_call:
     inputs:
       states:
@@ -63,6 +66,9 @@ on:
       force:
         type: string
         default: 'no'
+      skip_pass1:
+        type: string
+        default: 'no'
 permissions:
   contents: write
   actions: write
@@ -80,6 +86,7 @@ env:
   WATER_STORE: bundle/water   # Oct 28 (HQ): the saved USGS water copy (kept between nights as release asset water-<tag>.tar.gz)
   WATER_ASSET: water-${{ inputs.tag }}.tar.gz
   PARKS: ${{ inputs.parks }}   # Oct 28: a small batch (kpc_fers.py PARKS); empty = the whole area
+  SKIP_PASS1: ${{ inputs.skip_pass1 == 'yes' && 'yes' || 'no' }}   # KPC owner, 2026-11-12: a finished kpc-fers.yml pass 1 counts (chain plan)
   KEY_SOURCE: ${{ inputs.key == 'build' && 'build' || 'live' }}   # Nov 4: live (default) or build (the chain)
   BUILD_KIND: ${{ startsWith(inputs.states, 'CA-') && 'ca-key' || startsWith(inputs.states, 'W-') && 'world-key' || 'us-key' }}   # Nov 11: W-* = world-key (same rule as kind_of() in kpc_fers_chain_plan.py; a test checks both)
 jobs:
@@ -233,7 +240,9 @@ jobs:
           MINUTES: ${{ inputs.minutes }}
         run: |
           M=${MINUTES:-280}; [ $M -gt 225 ] && M=225
+          if [ "$SKIP_PASS1" = yes ]; then echo "::notice title=2-fer line::pass 1 already done by the 2-fer bot on the same per-state 2-fer hash (chain plan): starting at pass 2"; else
           PASS=1 MINUTES=$(( M / 3 )) python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          fi
           PASS=2 MINUTES=$(( M * 2 / 3 )) python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: USGS water from the BULK FILES up front (HU4 files on USGS's Amazon storage, never the live map; HQ Oct 28 6:57 PM)
         id: kept_green_5
@@ -246,7 +255,7 @@ jobs:
         if: always()   # Nov 12: kept on purpose: a release-asset cache (not git) that carries a job cut by its time limit to the next run
         run: |
           for st in $STATES; do [ -f "data/fers/$st.json" ] || { echo "::error title=2-fer line::fetcher made no data/fers/$st.json"; exit 1; }; done
-          echo "{\"stage\":\"fetcher\",\"tag\":\"$RUN_TAG\",\"states\":\"$STATES\",\"date\":\"$(date -u +%FT%TZ)\",\"run\":\"$GITHUB_RUN_ID\"}" > bundle/stamp.json
+          echo "{\"stage\":\"fetcher\",\"tag\":\"$RUN_TAG\",\"states\":\"$STATES\",\"date\":\"$(date -u +%FT%TZ)\",\"run\":\"$GITHUB_RUN_ID\",\"data_sha\":\"$(git -C kpcdata rev-parse HEAD)\"}" > bundle/stamp.json   # data_sha: the KPC-Data commit this line started from (the per-state save never overwrites a state saved by another run since)
           tar czf "$BUNDLE" bundle data/fers
           gh release view fers-bundles -R "$REPO" >/dev/null 2>&1 || gh release create fers-bundles -R "$REPO" --title 'Hidden 2-fer bundles' --notes 'Assembly-line bundles (bot use only).'
           bash kpcdata/.github/scripts/kpc_keep2.sh "$REPO" fers-bundles "$BUNDLE"   # the copy already up becomes .prev (last 2 kept per area)
@@ -363,7 +372,8 @@ jobs:
       - name: Bundle up (a lost bundle = a red run)
         if: always()   # Nov 12: kept on purpose: a release-asset cache (not git) that carries a job cut by its time limit to the next run
         run: |
-          echo "{\"stage\":\"worker\",\"tag\":\"$RUN_TAG\",\"states\":\"$STATES\",\"date\":\"$(date -u +%FT%TZ)\",\"run\":\"$GITHUB_RUN_ID\"}" > bundle/stamp.json
+          DS=$(python3 -c "import json; print(json.load(open('bundle/stamp.json')).get('data_sha') or '')" 2>/dev/null)   # the fetcher's start commit travels on
+          echo "{\"stage\":\"worker\",\"tag\":\"$RUN_TAG\",\"states\":\"$STATES\",\"date\":\"$(date -u +%FT%TZ)\",\"run\":\"$GITHUB_RUN_ID\",\"data_sha\":\"$DS\"}" > bundle/stamp.json
           find bundle/http -type f -mtime +60 -delete 2>/dev/null || true   # ok: an optional file or tidy step (B1 (Oct 30): 60 days (an older answer is re-read; the layer-edit check keeps unchanged ones cheap))
           # B1: and at most ~300 MB of saved answers: the oldest go first (a 1 GB bundle made tar + upload push jobs past their time limit)
           find bundle/http -type f -printf '%T@ %s %p\n' 2>/dev/null | sort -n | awk -v cap=$((300*1024*1024)) '{t+=$2; a[NR]=$3; s[NR]=$2} END{for(i=1;i<=NR&&t>cap;i++){print a[i]; t-=s[i]}}' | xargs -r rm -f || true   # ok: a pipeline (its exit status is the last command; follow-up: pipefail)
@@ -484,10 +494,16 @@ jobs:
             mkdir -p to/fers && cp "$f" to/fers/ && cd to && git add fers && git commit -qm "2-fer expected list ($RUN_TAG)" && { saved=0; for i in 1 2 3 4 5; do git push -q origin HEAD:tools-out && { saved=1; break; }; git fetch -q origin +refs/heads/tools-out:refs/remotes/origin/tools-out && git rebase -q origin/tools-out; sleep $((RANDOM % 15 + 5)); done; [ "$saved" = 1 ] || { kpc_rc=$?; echo "::error title=Save::not saved after every try; the next run tries again"; echo "Save - not saved after every try; the next run tries again" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; } ) || true   # ok: nothing new to commit; a lost save is reported by the loop itself
           mkdir -p kpcdata/data/fers
           # A6: only this area's files go back: own states, the tag's files, POTA pairs, known answers (ky)
-          for st in $STATES; do for f in data/fers/$st.json data/fers/$st.json.gz data/fers/pota-pairs-$st.json; do [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/ && case "$f" in *.json.gz) rm -f "kpcdata/${f%.gz}";; data/fers/US-*|data/fers/CA-*|data/fers/W-*) rm -f "kpcdata/$f.gz";; esac; done; done   # Nov 1: the new copy replaces the other name (.json vs .json.gz), so a stale twin never wins
+          # KPC owner, 2026-11-12 (per state): each state is saved on its own; a failed / short state, or one another run saved since this
+          # line started (data_sha in the bundle stamp), keeps its previous saved file byte for byte and is listed red; the others save.
+          for st in $STATES; do f=data/fers/pota-pairs-$st.json; [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
+          BASE=$(python3 -c "import json; print(json.load(open('bundle/stamp.json')).get('data_sha') or '')" 2>/dev/null)
+          [ -n "$BASE" ] && git -C kpcdata fetch -q --depth=1 origin "$BASE" 2>/dev/null || { echo "::warning title=2-fer line::the bundle names no start commit (an older bundle): the per-state check compares with this checker's own checkout"; BASE=HEAD; }
+          prc=0; STATES="$STATES" KPCDATA=kpcdata LINKS=. BASE_REF="$BASE" KEY_SOURCE="$KEY_SOURCE" JOB="line $RUN_TAG" python3 kpcdata/.github/scripts/kpc_fers_states.py pick || prc=$?
+          [ "$prc" = 2 ] && { echo "::error title=2-fer line::two states of this line hold the same pair: nothing saved (fail closed)"; exit 1; }
           for f in data/fers/*-$RUN_TAG.json; do case "$f" in data/fers/reuse-p*|data/fers/expected-*) continue;; esac; [ -f "$f" ] && ! cmp -s "$f" "kpcdata/$f" && cp "$f" kpcdata/data/fers/; done
-          git -C kpcdata rm -q --cached --ignore-unmatch "data/fers/reuse-p1-$RUN_TAG.json" "data/fers/reuse-p2-$RUN_TAG.json" "data/fers/reuse-p3-$RUN_TAG.json" 2>/dev/null || true   # ok: optional git step; the next step reports
-          rm -f kpcdata/data/fers/reuse-p*-$RUN_TAG.json
+          # KPC owner, 2026-11-12: the pair-answer files (reuse-p*-<tag>) are no longer deleted from git here: with one area list the bot's
+          # committed reuse-p1-<tag>.json is the same area's cache, and this line must not remove another workflow's file
           git -C kpcdata rm -q --cached --ignore-unmatch "data/fers/expected-$RUN_TAG.json" "data/fers/expected-$RUN_TAG.json.gz" 2>/dev/null || true   # ok: an optional file or tidy step (Nov 1: kept on tools-out only)
           rm -f kpcdata/data/fers/expected-$RUN_TAG.json kpcdata/data/fers/expected-$RUN_TAG.json.gz
           # only Kentucky's own run may write the known-answers file (Oct 28)
@@ -519,6 +535,8 @@ jobs:
           PY
           (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py divert data/fers) || { kpc_rc=$?; echo "::error title=kpc_waiting_room.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_waiting_room.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # Oct 29 (chat 2 + Brandon 10:22 PM): changed 2-fer files wait in data/waiting/in/ (checked, chat 11 approves), the live ones stay
           STRICT=1 bash .github/scripts/kpc_push_data.sh kpcdata "2-fer line ${{ inputs.tag }} (hidden data)" data || exit 1
+          # KPC owner, 2026-11-12: the green states are saved above; a red state makes this line red AFTER the save (it blocks nobody)
+          if [ -s "$RUNNER_TEMP/kpc-fers-red.txt" ]; then echo "::error title=2-fer line::$(wc -l < "$RUNNER_TEMP/kpc-fers-red.txt") state(s) kept their previous file (see the table): $(tr '\n' ';' < "$RUNNER_TEMP/kpc-fers-red.txt" | cut -c1-400)"; exit 1; fi
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:

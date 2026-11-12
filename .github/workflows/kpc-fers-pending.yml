@@ -70,11 +70,8 @@ jobs:
           wait = P['parks']; sunday = time.gmtime().tm_wday == 6
           if not wait or not (len(wait) >= 5 or sunday or key_changed or os.environ.get('FORCE') == 'yes'):
               print(f'::notice title=2-fer small batches::{len(wait)} park(s) waiting: nothing to run today'); json.dump(P, open('data/fers/pending.json', 'w'), indent=1); raise SystemExit
-          R = {'southeast': 'US-TN US-NC US-VA US-WV US-GA US-AL US-SC US-FL US-MS', 'midwest': 'US-IN US-IL US-MO US-WI US-MN US-IA US-ND US-SD',
-               'northeast': 'US-PA US-NY US-NJ US-CT US-RI US-MA US-VT US-NH US-ME US-MD US-DE US-DC', 'southcentral': 'US-AR US-LA US-OK US-TX US-KS US-NE',
-               'mountain': 'US-CO US-WY US-ID US-MT US-NV US-AZ US-NM', 'pacific': 'US-CA US-OR US-WA US-AK US-HI',
-               'canadaeast': 'CA-ON CA-QC CA-NB CA-NS CA-PE CA-NL', 'canadawest': 'CA-MB CA-SK CA-AB CA-BC CA-YT CA-NT CA-NU'}
-          OWN = {'US-KY': ('US-KY', 'ky'), 'US-OH': ('US-OH', 'oh'), 'US-MI': ('US-MI', 'mi'), 'US-UT': ('US-UT', 'ut')}
+          R = json.load(open('.github/fers-areas.json', encoding='utf-8'))['areas']   # KPC owner, 2026-11-12: the ONE area list (the chain's old inline copy is retired)
+          OWN = {'US-KY': ('US-KY', 'ky')}   # KPC owner, 2026-11-12: OH / MI / UT are in their fers-areas.json areas (greatlakes, mountain)
           def area_of(ref):
               st = None
               try:

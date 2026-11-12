@@ -31,14 +31,14 @@ a line that held / failed / was cancelled may start again, at most TRIES times),
 At most MAX (3) areas per start; the rest come on the next hourly copy. Kentucky (its own key) is never in the chain.
 CA and world finishing later: each key's 2-fers wait for THAT key's own new build (the US areas do not wait for Canada); inside a
 line the other keys are the live (last good) ones. Nov 8: the world key has its own areas (worldwest/north/east, W-* countries).
-TWO LISTS, ON PURPOSE (Nov 11): R below (the chain; also copied inline in kpc-fers-lines.yml / -pending.yml / -water.yml) and
-.github/fers-areas.json (the monthly kpc-fers.yml bot, kpc_fers_areas.py) cut US / Canada differently (bigger chain areas for one
-280-minute line each; the bot's are 400-1,600 parks). Both are LIVE FILE CONTRACTS keyed by the area tag: the chain's tags name
-seen.json entries, line-<tag> / report-<tag> / fers-holds-<tag> / looked / missing files, fers-preline/<tag>, and KPC-Links'
-kpc-fers-regions.json reads missing-midwest / -southeast / -southcentral; the bot's tags name its own full-rebuild-<tag>.txt, expected-
-and report- files. Merging them would orphan one set or restart every finished area, so they stay two, and the disagreement is written
-down and checked: .github/fers-area-map.json (made by `python3 .github/scripts/kpc_fers_chain_plan.py map`) and
-tests/test_world_fers_line_nov11.py (fails if either list, the map, or an inline copy changes without the other).
+ONE LIST (KPC owner, 2026-11-12, part C of the per-area design): the chain's US / Canada areas ARE .github/fers-areas.json (the
+same 14 areas the kpc-fers.yml bot runs, read by kpc_fers_states.areas()); the old hard-coded list (a 9-state southeast with VA / WV,
+the old midwest / northeast, oh / mi / ut) is retired, so a chain line can never write a state set the bot does not, and a waiting-room
+state file is never rewritten under a different cut. The unit that is saved, kept and stamped is the STATE (kpc_fers_states.py pick:
+data/fers/stamps/<ST>.json). Retired tags still in seen.json are moved to seen[key]['retired'] (kept for the record, never planned).
+A kpc-fers.yml pass that finished on the same per-state 2-fer hash counts for the chain: every pass done = the area is done (no line);
+pass 1 done = the line starts with skip_pass1=yes (bot_passes below). WORLD below is the one home of the world (W-*) areas
+(fers-areas.json must not hold W-* areas: a test checks it).
 WORLD (Nov 11, test only, beta, hidden, members-only; nothing here publishes). THIS file (the dict R below) is the ONE list of the
 chain's areas, world included; .github/fers-areas.json belongs to the older kpc-fers.yml bot and must not hold W-* areas (a test
 checks it). A world area starts only when ALL hold, on top of the checks above (every unknown = wait):
@@ -57,15 +57,16 @@ printed as notices in the run log (nothing is saved: nothing started). The gate 
 env  DATA=. LINKS=links GATE=<repo variable: on|off|empty> MAX=3 GITHUB_OUTPUT (writes run, areas, gate_changed)"""
 import hashlib, json, os, pathlib, re, sys, time
 
-R = {'southeast': 'US-TN US-NC US-VA US-WV US-GA US-AL US-SC US-FL US-MS', 'midwest': 'US-IN US-IL US-MO US-WI US-MN US-IA US-ND US-SD',
-     'northeast': 'US-PA US-NY US-NJ US-CT US-RI US-MA US-VT US-NH US-ME US-MD US-DE US-DC', 'southcentral': 'US-AR US-LA US-OK US-TX US-KS US-NE',
-     'mountain': 'US-CO US-WY US-ID US-MT US-NV US-AZ US-NM', 'pacific': 'US-CA US-OR US-WA US-AK US-HI',
-     'oh': 'US-OH', 'mi': 'US-MI', 'ut': 'US-UT',
-     'canadaeast': 'CA-ON CA-QC CA-NB CA-NS CA-PE CA-NL', 'canadawest': 'CA-MB CA-SK CA-AB CA-BC CA-YT CA-NT CA-NU',   # = kpc-fers-pending.yml's areas
-     # Nov 8 (Brandon: 'if quality approves something it is good to run'): the world key's 2-fer areas (the W-* countries in data/fers)
-     'worldwest': 'W-GB W-IE W-FR W-ES W-PT W-BE W-NL W-LU W-DE W-CH',
-     'worldnorth': 'W-AT W-IT W-DK W-NO W-SE W-FI W-EE W-LV W-LT W-PL',
-     'worldeast': 'W-CZ W-SK W-HU W-SI W-HR W-RO W-AU W-JP'}
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import kpc_fers_states as FS   # noqa: E402  (the one area list, the per-state hash and stamps)
+
+# Nov 8 (Brandon: 'if quality approves something it is good to run'): the world key's 2-fer areas (the W-* countries in data/fers)
+WORLD = {'worldwest': 'W-GB W-IE W-FR W-ES W-PT W-BE W-NL W-LU W-DE W-CH',
+         'worldnorth': 'W-AT W-IT W-DK W-NO W-SE W-FI W-EE W-LV W-LT W-PL',
+         'worldeast': 'W-CZ W-SK W-HU W-SI W-HR W-RO W-AU W-JP'}
+R = {**FS.areas(), **WORLD}   # KPC owner, 2026-11-12: US / Canada = .github/fers-areas.json, the bot's own 14 areas
+RETIRED = ('midwest', 'northeast', 'oh', 'mi', 'ut')   # tags of the old chain list that no longer exist (canadaeast / canadawest /
+# southeast / southcentral / mountain / pacific are kept as names, with the bot's members)
 KEYS = {'us-key': 'us', 'ca-key': 'ca', 'world-key': 'world'}
 KEY_ORDER = tuple(KEYS)   # US first, then Canada, then world: the planning order (world is only ever planned behind US and Canada)
 
@@ -230,12 +231,44 @@ def us_ca_ok(data, links, fers, seen):
     return (False, f'{len(bad)} of {need} US / Canada areas not OK: ' + '; '.join(bad[:8])) if bad else (True, '')
 
 
+def migrate(s):
+    """seen.json of one key: entries under a retired tag (the old chain list) move to s['retired'] (kept for the record, never planned)"""
+    s = dict(s); ret = dict(s.get('retired') or {})
+    for k in ('areas', 'waiting'):
+        d = dict(s.get(k) or {})
+        for t in [t for t in d if t not in R]: ret[t] = d.pop(t)
+        if k in s or d: s[k] = d
+    if 'ran' in s: s['ran'] = [t for t in s['ran'] if t in R]
+    if ret: s['retired'] = ret
+    return s
+
+
+def bot_passes(data, links, sts):
+    """how many passes (0-4) EVERY state of the area has finished on the inputs the chain would use now (KPC owner, 2026-11-12):
+    the state's stamp (data/fers/stamps/<ST>.json, written by kpc_fers_states.py pick) has the same per-state 2-fer hash as
+    computed now with LINKS' key files, its out_sha is the saved file's bytes, and the saved file is not marked incomplete.
+    Anything missing or different = 0 (the line runs every pass, as before)."""
+    try:
+        st_of = FS.park_states(data); nb = FS.neighbours(data, st_of); code = FS.code_hash(links)
+        hand = {f: FS._ref_rows(FS.load(pathlib.Path(links) / f)) for f in FS.HAND}
+        n = 4
+        for st in sts:
+            stp = load(FS.stamp_path(data, st), {}) or {}
+            _, sp, sd = FS.saved_copy(data, st)
+            if not stp or sd is None or sd.get('incomplete') or stp.get('out_sha') != FS.sha(sp.read_bytes()): return 0
+            if stp.get('area_hash') != FS.state_hash(st, links, data, nb, st_of, code, hand)[0]: return 0
+            n = min(n, FS.n_passes(sd))
+        return n
+    except Exception:  # noqa: BLE001
+        return 0
+
+
 def area_map(data='.'):
     """The explicit, checked mapping between the chain's US / CA list (R) and the monthly bot's .github/fers-areas.json."""
     bot = json.load(open(pathlib.Path(data) / '.github/fers-areas.json', encoding='utf-8'))['areas']
     chain = {t: v for t, v in R.items() if kind_of(v) != 'world-key'}
     cm = {x: t for t, v in chain.items() for x in v.split()}; bm = {x: t for t, v in bot.items() for x in v.split()}
-    return {'about': 'GENERATED by `python3 .github/scripts/kpc_fers_chain_plan.py map` from R (kpc_fers_chain_plan.py) and .github/fers-areas.json; a test fails when it is stale. The two lists are separate live contracts (see the planner docstring); this file only makes their difference explicit.',
+    return {'about': 'GENERATED by `python3 .github/scripts/kpc_fers_chain_plan.py map` from R (kpc_fers_chain_plan.py) and .github/fers-areas.json; a test fails when it is stale. KPC owner, 2026-11-12: ONE list (the chain reads fers-areas.json), so chain == bot and every difference list is empty; a test fails otherwise.',
             'chain': chain, 'bot': bot,
             'by_state': {x: {'chain': cm.get(x), 'bot': bm.get(x)} for x in sorted(set(cm) | set(bm))},
             'same_tag_same_members': sorted(t for t in chain if t in bot and chain[t].split() and set(chain[t].split()) == set(bot[t].split())),
@@ -286,7 +319,7 @@ def plan(data='.', links='links', gate='', mx=3, now=None):
         else:   # links-04 from before FINAL-v2: its verdict() + the NO words
             v = KF.verdict(kind, bid, items, links); v = v if v and re.match(r'\W*(KEY\s+)?(NO|FAIL|WITHDRAWN)', v[0].upper()) else None
         if v: notes.append(f'{kind}: build {bid} was graded {v[0][:20]} by {v[1]}: no 2-fers on it'); continue
-        s = seen.get(kind) or {}
+        s = migrate(seen.get(kind) or {})
         # owner rule, 2026-11-10: an area is remembered by its fingerprint (its key files + the 2-fer rules), not by the build id,
         # and is done only when its line wrote a READY verdict; a held / failed / cancelled line may start again (at most TRIES)
         if s.get('build') != bid: s = {'build': bid, 'first_seen': stamp, 'areas': s.get('areas') or {}}
@@ -300,6 +333,9 @@ def plan(data='.', links='links', gate='', mx=3, now=None):
             hit = sorted({x for x in sts.split() if worse & parks_of(links, kind, x)}) if worse else []
             if hit: s['waiting'][tag] = f"the post-key check lists parks with a worse grade / outline -> pin in {' '.join(hit)}: a person checks them first"; continue
             fp = area_fp(links, kind, sts.split(), fers); a = s['areas'].get(tag) or {}
+            bp = bot_passes(data, links, sts.split()) if kind != 'world-key' else 0
+            if bp >= 4:   # KPC owner, 2026-11-12: a kpc-fers.yml run that finished every pass on these inputs counts as done
+                s['ran'].append(tag); s['waiting'][tag] = 'done by the 2-fer bot (every pass, same per-state 2-fer hash)'; continue
             if a.get('fp') == fp:
                 if line_done(data, tag, a.get('planned')): s['ran'].append(tag); continue
                 if int(a.get('tries') or 0) >= TRIES: s['waiting'][tag] = f"the line did not finish READY after {a.get('tries')} starts on these key files (see data/fers/line-{tag}.json): a person looks"; continue
@@ -316,7 +352,7 @@ def plan(data='.', links='links', gate='', mx=3, now=None):
                 s['waiting'][tag] = 'KPC_FERS_CHAIN_GATE is PENDING (not on / off): nothing starts' + (f"; map audit not clean: {'; '.join(nr[:4])}" if nr else '; map audit clean'); continue
             if gate == 'on' and nr: s['waiting'][tag] = f"map audit not clean: {'; '.join(nr[:6])}"; continue
             if len(run) >= mx: s['waiting'][tag] = 'next start (at most 3 areas at a time)'; continue
-            run.append({'states': sts, 'tag': tag, 'key': kind, 'build': bid}); s['ran'].append(tag)
+            run.append({'states': sts, 'tag': tag, 'key': kind, 'build': bid, 'skip_pass1': 'yes' if bp >= 1 else 'no'}); s['ran'].append(tag)
             s['areas'][tag] = {'fp': fp, 'planned': stamp, 'tries': (int(a.get('tries') or 0) if a.get('fp') == fp else 0) + 1}
         seen[kind] = s
         if unready: notes.append(f"{kind}: not on KPC-Links' fers-ready-areas.json (skipped): {' '.join(unready)}")
