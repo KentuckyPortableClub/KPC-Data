@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 476 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 480 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -133,9 +133,9 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-12 | 0 | data/fers/US-MD.json.gz | HOLD | F-2 NOT SURE 8 -> 5 (over 30% change); F-2 25 new candidate pairs since the live file (over 10% of 140): a person looks at them first, e.g. US-0333+US-4567, US-0333+US-4581, US-10751+US-7741 |
 | 2026-11-12 | 0 | data/fers/US-MN.json.gz | HOLD | F-2 candidates 133 -> 187 (over 30% change); F-2 NOT SURE 18 -> 7 (over 30% change); F-2 62 new candidate pairs since the live file (over 10% of 133): a person looks at them first, e.g. CA-0359+US-4491, US-0673+US-10196, |
 | 2026-11-12 | 0 | data/fers/US-MT.json | HOLD | F-2 candidates 23 -> 0 (over 30% change); F-2 pass2 missing: the 2-fer passes did not all run; F-2 pass3 missing: the 2-fer passes did not all run; F-2 only 0 of 23 live candidate pairs are still there (under 80%): a per |
-| 2026-11-12 | 0 | data/fers/US-NJ.json.gz | HOLD | F-2 candidates 24 -> 43 (over 30% change); F-2 19 new candidate pairs since the live file (over 10% of 24): a person looks at them first, e.g. US-0453+US-4992, US-0746+US-4582, US-11337+US-8051 |
+| 2026-11-12 | 0 | data/fers/US-NJ.json.gz | HOLD | F-2 candidates 24 -> 45 (over 30% change); F-2 21 new candidate pairs since the live file (over 10% of 24): a person looks at them first, e.g. US-0453+US-4992, US-0684+US-1347+US-1613, US-0684+US-1634 |
 | 2026-11-12 | 0 | data/fers/US-NV.json | HOLD | F-2 candidates 46 -> 8 (over 30% change); F-2 NOT SURE 45 -> 1 (over 30% change); F-2 pass2 missing: the 2-fer passes did not all run; F-2 pass3 missing: the 2-fer passes did not all run |
-| 2026-11-12 | 0 | data/fers/US-NY.json.gz | HOLD | F-2 only 2 of 3 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 145 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US |
+| 2026-11-12 | 0 | data/fers/US-NY.json.gz | HOLD | F-2 only 2 of 3 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 147 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US |
 | 2026-11-12 | 0 | data/fers/US-OR.json | HOLD | F-2 candidates 62 -> 20 (over 30% change); F-2 NOT SURE 34 -> 3 (over 30% change); F-2 pass2 missing: the 2-fer passes did not all run; F-2 pass3 missing: the 2-fer passes did not all run |
 | 2026-11-12 | 0 | data/fers/US-PA.json.gz | HOLD | F-2 candidates 45 -> 167 (over 30% change); F-2 127 new candidate pairs since the live file (over 10% of 45): a person looks at them first, e.g. US-0511+US-8784, US-0619+US-4239, US-0624+US-5468 |
 | 2026-11-12 | 0 | data/fers/US-WA.json | HOLD | F-2 pass2 missing: the 2-fer passes did not all run; F-2 pass3 missing: the 2-fer passes did not all run; F-2 only 2 of 40 live candidate pairs are still there (under 80%): a person looks (a rule change is released by ha |
@@ -337,7 +337,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-07 | 5 | data/world-key/ZA.json | HOLD | F-O2 4 of 75 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
 | 2026-11-08 | 4 | data/wwff/CTFF.json | HOLD | F-W2 rows 702 -> 280 (under 80% of the saved list) |
 | 2026-11-09 | 3 | data/trails/index.json | HOLD | F-T4 trail index 139 -> 102 lines (under 80% of the saved list) |
-| 2026-11-11 | 1 | data/world-key/FR.json | HOLD | F-O1 outlines 13877 -> 13381 (more than 1% lost); F-O3 retired parks still outlined: FR-5063, FR-5106, FR-5115, FR-5171, FR-5396 |
+| 2026-11-11 | 1 | data/world-key/FR.json | HOLD | F-O1 outlines 13877 -> 13388 (more than 1% lost) |
 | 2026-11-11 | 1 | data/world-key/JP.json | HOLD | F-O2 101 of 185 outlines carry a layer name that shares no word with the park (55%; live 97/185): outlines swapped to other parks? |
 | 2026-11-11 | 1 | data/world-key/LU.json | HOLD | F-O1 outlines 49 -> 46 (more than 1% lost) |
 | ? | ? | data/pile-solver/AS.json | PASS |  |
@@ -395,6 +395,10 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/pile-solver/solved-join.csv | ? |  |
 | ? | ? | data/pile-solver/solved-pin.csv | ? |  |
 | ? | ? | data/trails/index-state.json | PASS |  |
+| ? | ? | data/us-key/area-tables.json | PASS |  |
+| ? | ? | data/us-key/overrides-parks-01.json | PASS |  |
+| ? | ? | data/us-key/overrides-parks-02.json | PASS |  |
+| ? | ? | data/us-key/overrides.json | PASS |  |
 | ? | ? | data/world-key/AE.json | PASS |  |
 | ? | ? | data/world-key/AS.json | PASS |  |
 | ? | ? | data/world-key/AT.json | PASS |  |
