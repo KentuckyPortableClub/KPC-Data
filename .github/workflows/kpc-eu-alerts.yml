@@ -2,6 +2,10 @@ name: KPC Europe weather warnings
 # Moved here from KPC-Links Oct 27 (storage plan Stage 2, step B5; chat 5). Every 6 h: copy MeteoAlarm's warnings for each
 # European country into data/alerts/eu.json for the Field Weather page (pages read KPC-Data first). Commits only when the
 # warnings really changed (a new time stamp alone is not a change). Never fails. No secrets.
+# Nov 11 2026 (bots review, package E): (1) the run no longer checks out ALL of KPC-Links and ALL of KPC-Data and copies the whole
+# data tree across: it takes only the scripts + the host list from KPC-Links and only data/alerts from KPC-Data (the script reads and
+# writes nothing else), (2) a country whose feed stays down is marked stale and, after 3 failed runs, left out so the page says it did
+# not load (see kpc_eu_alerts.py), and the quiet-save test below counts that as a change.
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '40 */6 * * *'   # G9 Nov 2: was '41 */6 * * *' (spread the start times; now 1 min earlier)
@@ -16,21 +20,26 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Get the scripts (KPC-Links, read-only; public, no token)
+      - name: Get the scripts (KPC-Links, read-only; public, no token; only the scripts and the never-contact host list)
         uses: actions/checkout@v5
         with:
           repository: KentuckyPortableClub/KPC-Links
           persist-credentials: false
-      - name: Get this repo (KPC-Data) and lay its fresh data on top
+          sparse-checkout: |
+            .github/scripts/
+            data/outlines/layers.json
+          sparse-checkout-cone-mode: false
+      - name: Get this repo (KPC-Data), only the folder the warnings live in
         uses: actions/checkout@v5
         with:
           path: kpcdata
-      - name: Lay KPC-Data's moved data over the KPC-Links checkout (Step B; stops red on empty input)
-        run: bash .github/scripts/kpc_overlay.sh kpcdata
-      - name: Fresh data first
+          sparse-checkout: |
+            data/alerts/
+          sparse-checkout-cone-mode: false
+      - name: Fresh data first (the saved warnings the script compares with)
         run: |
-          rsync -a kpcdata/data/ data/ 2>/dev/null || true   # ok: nothing to do is fine
-          cp kpcdata/locations.json kpcdata/locations-ky.json . 2>/dev/null || true   # ok: nothing to do is fine
+          mkdir -p data/alerts
+          cp kpcdata/data/alerts/eu.json data/alerts/eu.json 2>/dev/null || true   # ok: no saved copy yet is fine (the first run writes it)
       - name: Copy the warnings
         id: kept_green_1
         continue-on-error: true
@@ -49,7 +58,10 @@ jobs:
           # until the saved copy is 12 h old; a warning that appears, goes or changes level is saved at once.
           python3 - <<'PY' || true   # ok: any doubt = save as before
           import json, subprocess, datetime as dt
-          def sig(d): return sorted((c, i.get('area'), i.get('event'), i.get('level')) for c, v in (d.get('countries') or {}).items() for i in v.get('items') or [])
+          def sig(d):   # Nov 11: also which countries are there and which are stale (a stale mark must be saved, a time stamp alone must not)
+              cs = d.get('countries') or {}
+              return (sorted((c, i.get('area'), i.get('event'), i.get('level')) for c, v in cs.items() for i in v.get('items') or []),
+                      sorted((c, bool(v.get('stale')), int(v.get('failed_runs') or 0)) for c, v in cs.items()))
           old = json.loads(subprocess.run(['git', 'show', 'HEAD:data/alerts/eu.json'], capture_output=True, text=True, check=True).stdout)
           new = json.load(open('data/alerts/eu.json'))
           if sig(old) == sig(new):

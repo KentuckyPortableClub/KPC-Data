@@ -6,7 +6,7 @@ needs it) to the staff room (secret KPC_DISCORD_STAFF_WEBHOOK; never the public 
 Nothing new = no post. data/status/youtube-seen.json remembers what was sent (60 days) so nothing posts twice.
 DRY_RUN=1 prints instead of posting and saves nothing. A missing secret = a notice and a quiet exit, never red.
 Quota: commentThreads/comments/videos/channels calls are 1 unit each; a day is ~5-10 units of the free 10,000."""
-import datetime as dt, json, os, sys, time, urllib.parse, urllib.request
+import datetime as dt, json, os, re, sys, time, urllib.parse, urllib.request
 import kpc_host_rules; kpc_host_rules.install()
 
 HANDLES = ['@ky.pota.campout', '@kpc-n4kpc']
@@ -20,8 +20,19 @@ DRY = os.environ.get('DRY_RUN', '') in ('1', 'true', 'yes')
 NOW = dt.datetime.now(dt.timezone.utc)
 
 
+def scrub(msg):
+    """Nov 11 2026 (bots review): no secret in a log line. The API key sits in the request address (?key=) and the staff-room
+    webhook IS the address, so both exact values, their URL-encoded copies and the usual patterns are replaced by ***."""
+    s = str(msg)
+    for v in (KEY, HOOK, HOOK.rstrip('/').rsplit('/', 1)[-1] if HOOK else ''):
+        if v and len(v) >= 8:
+            s = s.replace(v, '***').replace(urllib.parse.quote(v, safe=''), '***')
+    s = re.sub(r'https?://(?:[\w-]+\.)?discord(?:app)?\.com/api(?:/v\d+)?/webhooks/\S+', 'https://discord.com/api/webhooks/***', s, flags=re.I)
+    return re.sub(r'(key|access_token|token)=[^&\s"\']+', r'\1=***', s, flags=re.I)
+
+
 def note(title, msg):
-    print(f'::notice title={title}::{msg}')
+    print(f'::notice title={title}::' + scrub(msg).replace('%', '%25').replace('\n', '%0A'))
 
 
 def yt(path, **q):
@@ -108,16 +119,27 @@ def main():
             blocks.append(f"**{c['ch']}** · {titles.get(c['vid'], 'video')}\n"
                           f"{'↪️ reply' if c['reply'] else '💬'} **{c['who']}**: {t}\n<{link}>")
         head = f"📺 **YouTube comments** ({len(new)} new{f', last {FIRST_DAYS} days' if first else ''})"
-        msgs, cur = [], head
-        for b in blocks:
-            if len(cur) + len(b) + 2 > 1900: msgs.append(cur); cur = ''
+        msgs, cur, cur_ids = [], head, []
+        for c, b in zip(new, blocks):
+            if len(cur) + len(b) + 2 > 1900: msgs.append((cur, cur_ids)); cur, cur_ids = '', []
             cur = (cur + '\n\n' + b) if cur else b
-        msgs.append(cur)
-        for m in msgs:
+            cur_ids.append(c['id'])
+        msgs.append((cur, cur_ids))
+        cutoff = (NOW - dt.timedelta(days=KEEP_DAYS)).date().isoformat()
+
+        def remember():
+            mem['seen'] = {k: v for k, v in seen.items() if v >= cutoff}
+            os.makedirs(os.path.dirname(SEEN_F), exist_ok=True)
+            json.dump(mem, open(SEEN_F, 'w'), indent=0, sort_keys=True)
+        for m, ids in msgs:
             if DRY: print(m); print('-----'); continue
             body = json.dumps({'content': m, 'username': 'KPC YouTube', 'allowed_mentions': {'parse': []}}).encode()
             req = urllib.request.Request(HOOK, data=body, headers={'Content-Type': 'application/json', 'User-Agent': 'KPC-bot'})
             urllib.request.urlopen(req, timeout=30).read()
+            # Nov 11: the comments of a message that went out are written down at once. If message 2 of 3 fails, the next run sends
+            # only 2 and 3; it used to send all three again (the memory was only written after the last one).
+            for i in ids: seen[i] = NOW.date().isoformat()
+            remember()
             time.sleep(1.5)
         for c in new: seen[c['id']] = NOW.date().isoformat()
         note('YouTube comments', f"{'DRY RUN, would post' if DRY else 'posted'} {len(new)} comment(s) in {len(msgs)} message(s)")
@@ -133,5 +155,4 @@ if __name__ == '__main__':
     except Exception as e:
         # PR1 (Nov 2): a bad or missing key stops only this bot. It shows as a yellow warning on the run (visible), never a red
         # failure, and the key value is scrubbed from the message.
-        msg = str(e).replace(KEY, '***') if KEY else str(e)
-        print(f'::warning title=YouTube comments PROBLEM::{msg[:400]}'); sys.exit(0)
+        print(f'::warning title=YouTube comments PROBLEM::{scrub(e)[:400]}'); sys.exit(0)
