@@ -84,8 +84,8 @@
     "with_facts": 1,
     "with_sites": 0
    },
-   "left": 0,
-   "status": "done",
+   "left": 2,
+   "status": "partial",
    "updated": "2026-11-12"
   },
   "US-CA": {
@@ -2577,44 +2577,39 @@
  },
  "last": {
   "areas": [
-   "US-VA"
+   "US-AZ"
   ],
   "fcc_token": true,
   "manners": {
-   "dropped_queued": 165,
+   "dropped_queued": 175,
    "errors": 0,
    "for_person_urls": [
     [
      "https://epqs.nationalmap.gov/robots.txt",
      "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from epqs.nationalmap.gov"
-    ],
-    [
-     "https://broadbandmap.fcc.gov/robots.txt",
-     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from broadbandmap.fcc.gov"
     ]
    ],
    "host_rule": 0,
-   "requests": 12,
-   "rested": 4,
-   "robots": 2,
+   "requests": 1,
+   "rested": 7,
+   "robots": 1,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 2,
-   "camps": 166,
+   "camps": 176,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 2,
-   "needs_key": 76,
-   "no_page": 52,
-   "not_official": 30,
-   "ok": 4,
-   "pages_read": 6,
-   "resting": 4,
+   "needs_browser": 0,
+   "needs_key": 169,
+   "no_page": 0,
+   "not_official": 0,
+   "ok": 0,
+   "pages_read": 0,
+   "resting": 7,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 0
+   "skipped_fresh": 27
   },
   "when": "2026-11-12"
  },
