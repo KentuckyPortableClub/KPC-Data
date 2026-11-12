@@ -1,0 +1,815 @@
+{
+ "filter": {
+  "rule": "pairs expected only from POTA history are kept when the outlines are within 1000 m (box to box), or a park has no outline, or one session logged both",
+  "left_out_far": 0,
+  "kept_no_outline": 0,
+  "kept_same_session": 0,
+  "kept_not_measured": 0,
+  "outlines_measured": 2725
+ },
+ "about": "MISSING CHECK (chat 2, Oct 27 2026; HQ 3:46 PM, Brandon: 'chat 8 can't verify what's missing'). For each area of a 2-fer run, every See kpc_fers_expected.py. Chat 8 reviews DROPPED + NEVER LOOKED AT.",
+ "area": "CA-BC-CA-NT-CA-NU-CA-YT",
+ "date": "2026-11-12",
+ "pass": true,
+ "counts": {
+  "FOUND": 0,
+  "DROPPED": 72,
+  "NEVER LOOKED AT": 0
+ },
+ "FOUND": [],
+ "DROPPED": [
+  {
+   "refs": [
+    "CA-0031",
+    "CA-4079"
+   ],
+   "why_expected": [
+    "outlines come within 44 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0050",
+    "CA-1462"
+   ],
+   "why_expected": [
+    "outlines come within 80 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0083",
+    "CA-2472"
+   ],
+   "why_expected": [
+    "outlines come within 50 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0113",
+    "CA-1087"
+   ],
+   "why_expected": [
+    "outlines come within 80 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0392",
+    "CA-1477"
+   ],
+   "why_expected": [
+    "outlines come within 58 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0411",
+    "CA-6626"
+   ],
+   "why_expected": [
+    "outlines come within 14 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0438",
+    "CA-1474"
+   ],
+   "why_expected": [
+    "outlines come within 28 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0523",
+    "CA-1483"
+   ],
+   "why_expected": [
+    "outlines come within 0 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0534",
+    "CA-2522"
+   ],
+   "why_expected": [
+    "outlines come within 14 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0567",
+    "CA-2510"
+   ],
+   "why_expected": [
+    "outlines come within 30 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0603",
+    "CA-2651"
+   ],
+   "why_expected": [
+    "outlines come within 14 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0609",
+    "CA-2729"
+   ],
+   "why_expected": [
+    "outlines come within 36 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0636",
+    "CA-6112"
+   ],
+   "why_expected": [
+    "outlines come within 44 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0636",
+    "CA-6588"
+   ],
+   "why_expected": [
+    "outlines come within 36 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0646",
+    "CA-2946"
+   ],
+   "why_expected": [
+    "outlines come within 50 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0647",
+    "CA-0656"
+   ],
+   "why_expected": [
+    "outlines come within 50 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0656",
+    "CA-6112"
+   ],
+   "why_expected": [
+    "outlines come within 20 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0691",
+    "US-0028"
+   ],
+   "why_expected": [
+    "outlines come within 10 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0730",
+    "US-4448"
+   ],
+   "why_expected": [
+    "outlines come within 20 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0730",
+    "US-4538"
+   ],
+   "why_expected": [
+    "outlines come within 20 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0736",
+    "US-0055"
+   ],
+   "why_expected": [
+    "outlines come within 30 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0737",
+    "CA-4183"
+   ],
+   "why_expected": [
+    "outlines come within 80 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0744",
+    "CA-3524"
+   ],
+   "why_expected": [
+    "outlines come within 20 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0744",
+    "CA-3525"
+   ],
+   "why_expected": [
+    "outlines come within 20 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-0839",
+    "CA-0840"
+   ],
+   "why_expected": [
+    "outlines come within 28 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-1075",
+    "CA-2434"
+   ],
+   "why_expected": [
+    "outlines come within 54 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-1087",
+    "CA-2540"
+   ],
+   "why_expected": [
+    "outlines come within 80 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-1171",
+    "CA-5494"
+   ],
+   "why_expected": [
+    "outlines come within 10 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-1219",
+    "CA-4181"
+   ],
+   "why_expected": [
+    "outlines come within 30 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-1409",
+    "CA-1430"
+   ],
+   "why_expected": [
+    "outlines come within 22 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-1429",
+    "CA-1680"
+   ],
+   "why_expected": [
+    "outlines come within 32 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-2571",
+    "CA-2572"
+   ],
+   "why_expected": [
+    "outlines come within 52 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-2949",
+    "CA-6112"
+   ],
+   "why_expected": [
+    "outlines come within 44 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-2949",
+    "CA-6588"
+   ],
+   "why_expected": [
+    "outlines come within 36 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-2963",
+    "CA-3133"
+   ],
+   "why_expected": [
+    "outlines come within 40 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-2995",
+    "CA-6112"
+   ],
+   "why_expected": [
+    "outlines come within 30 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3010",
+    "CA-3017"
+   ],
+   "why_expected": [
+    "outlines come within 60 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3010",
+    "CA-5534"
+   ],
+   "why_expected": [
+    "outlines come within 58 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3021",
+    "CA-3153"
+   ],
+   "why_expected": [
+    "outlines come within 50 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3208",
+    "US-0693"
+   ],
+   "why_expected": [
+    "outlines come within 14 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3220",
+    "CA-3537"
+   ],
+   "why_expected": [
+    "outlines come within 30 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3243",
+    "US-4448"
+   ],
+   "why_expected": [
+    "outlines come within 42 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3243",
+    "US-4538"
+   ],
+   "why_expected": [
+    "outlines come within 42 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3245",
+    "CA-3948"
+   ],
+   "why_expected": [
+    "outlines come within 54 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3277",
+    "CA-3300"
+   ],
+   "why_expected": [
+    "outlines come within 54 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3370",
+    "CA-3777"
+   ],
+   "why_expected": [
+    "outlines come within 56 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3382",
+    "US-4448"
+   ],
+   "why_expected": [
+    "outlines come within 56 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3412",
+    "CA-4788"
+   ],
+   "why_expected": [
+    "outlines come within 36 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3415",
+    "CA-4797"
+   ],
+   "why_expected": [
+    "outlines come within 88 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3422",
+    "CA-3514"
+   ],
+   "why_expected": [
+    "outlines come within 70 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3434",
+    "CA-4263"
+   ],
+   "why_expected": [
+    "outlines come within 42 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3444",
+    "CA-4233"
+   ],
+   "why_expected": [
+    "outlines come within 60 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3453",
+    "CA-4106"
+   ],
+   "why_expected": [
+    "outlines come within 10 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3511",
+    "CA-3547"
+   ],
+   "why_expected": [
+    "outlines come within 94 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3511",
+    "CA-3548"
+   ],
+   "why_expected": [
+    "outlines come within 94 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3512",
+    "CA-3547"
+   ],
+   "why_expected": [
+    "outlines come within 94 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3512",
+    "CA-3548"
+   ],
+   "why_expected": [
+    "outlines come within 94 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3561",
+    "CA-3610"
+   ],
+   "why_expected": [
+    "outlines come within 36 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3659",
+    "CA-3996"
+   ],
+   "why_expected": [
+    "outlines come within 30 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3687",
+    "CA-3949"
+   ],
+   "why_expected": [
+    "outlines come within 94 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3699",
+    "CA-5498"
+   ],
+   "why_expected": [
+    "outlines come within 10 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3773",
+    "CA-4173"
+   ],
+   "why_expected": [
+    "outlines come within 10 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3781",
+    "CA-4249"
+   ],
+   "why_expected": [
+    "outlines come within 98 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3782",
+    "CA-4249"
+   ],
+   "why_expected": [
+    "outlines come within 98 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3799",
+    "CA-3869"
+   ],
+   "why_expected": [
+    "outlines come within 94 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-3859",
+    "CA-4023"
+   ],
+   "why_expected": [
+    "outlines come within 44 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-4122",
+    "CA-4253"
+   ],
+   "why_expected": [
+    "outlines come within 98 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-4122",
+    "CA-4254"
+   ],
+   "why_expected": [
+    "outlines come within 98 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "CA-4184",
+    "CA-4260"
+   ],
+   "why_expected": [
+    "outlines come within 42 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-0592",
+    "US-3260"
+   ],
+   "why_expected": [
+    "outlines come within 82 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-1642",
+    "US-4448"
+   ],
+   "why_expected": [
+    "outlines come within 30 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  },
+  {
+   "refs": [
+    "US-4448",
+    "US-7250"
+   ],
+   "why_expected": [
+    "outlines come within 36 m of each other"
+   ],
+   "reason": "looked: no shared ground on the official outlines (no patch 25 yards across; not within 100 ft of a trail / river line)",
+   "rule": "rule 4 / rule 5"
+  }
+ ],
+ "NEVER LOOKED AT": []
+}
