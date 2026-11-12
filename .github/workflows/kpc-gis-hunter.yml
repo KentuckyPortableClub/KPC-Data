@@ -1,7 +1,7 @@
 name: KPC GIS hunter (Fable lists, hidden)
 # Oct 29 2026 (chat 10, Opus; Fable's design KPC-Links .claude/build/research/KPC_GisHunter_Design_Fable.md; Brandon 9:32 PM 'build
 # it run US 1st ... then run Canada'). Searches the US / Canada Fable lists for OFFICIAL GIS layers (Rule G R-G7 steps 2-3).
-# Decides nothing: candidates -> data/waiting/questions/gis-hunter.json (chat 11 YES / NO), new layers -> data/intake/queue.json,
+# Decides nothing: candidates -> data/waiting/questions/gis-hunter.json (chat 11 YES / NO), new layers -> data/intake/queue-gis-hunter-<n>.json,
 # rows -> data/gis-hunter/worklog-<area>.md. Hidden data only (freeze). Dispatch only; chains itself; never goes red.
 on:
   # Nov 2 review (G11): a watchdog restart passes as_schedule=<the missed cron>, so it runs exactly like that scheduled run.
@@ -83,7 +83,7 @@ jobs:
             MINUTES=55 python3 .github/scripts/kpc_gis_hunter.py | tee /tmp/h.log; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { kpc_rc=$?; echo "::warning title=kpc_gis_hunter.py::stopped with an error (exit $rc), see the log above"; echo "kpc_gis_hunter.py - stopped with an error (exit $rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
             python3 .github/scripts/kpc_status.py board "GIS hunter" green "chunk $i: data/gis-hunter + questions" "chat 11 answers data/waiting/questions/gis-hunter.json" || true   # ok: a status-board line (reporting only)
             python3 .github/scripts/kpc_keep_answers.py questions data/waiting/questions/gis-hunter.json || { kpc_rc=$?; echo "::error title=kpc_keep_answers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_keep_answers.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; python3 .github/scripts/kpc_keep_answers.py state data/gis-hunter/state.json || { kpc_rc=$?; echo "::error title=kpc_keep_answers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_keep_answers.py - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # Oct 30: never save over chat 11's answers (chunk 2 of the world run did)
-            bash ../links/.github/scripts/kpc_push_data.sh . "GIS hunter: chunk $i (hidden)" data/gis-hunter data/intake/queue.json data/waiting/questions data/status data/needs-download.json || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+            bash ../links/.github/scripts/kpc_push_data.sh . "GIS hunter: chunk $i (hidden)" data/gis-hunter 'data/intake/queue-gis-hunter-*.json' data/waiting/questions data/status data/needs-download.json || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
             L=$(grep -o '^LEFT=[0-9]*' /tmp/h.log | tail -1 | cut -d= -f2); echo "LEFT=$L" >> "$GITHUB_ENV"
             [ "${L:-0}" = 0 ] && break
           done

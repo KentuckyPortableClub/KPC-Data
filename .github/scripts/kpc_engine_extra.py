@@ -3,7 +3,7 @@
 Ties the club's finders into the park-info engine: writes <engine>/registry/club_extra.json = {'sources': [...]} from
   (1) the engine's own crawler finds (registry/us_ca_discovered.json + us_ca_trails_discovered.json, key 'found'), which the
       engine never loaded (its registry list left them out), and
-  (2) every layer in data/intake/queue.json (GIS hunter, world harvester, discovery bot, outside research, chats 8 + 9).
+  (2) every layer in data/intake/queue.json and its split files queue-*.json, never a *hold* file (GIS hunter, world harvester, discovery bot, outside research, chats 8 + 9).
 The engine still decides nothing: these are places to LOOK; what it finds goes through the waiting room to chat 11.
 Rows chat 11 said NO to stay out (the engine's own no_rows / deny lists still apply on top).
   python3 .github/scripts/kpc_engine_extra.py <engine dir> [queue.json]"""
@@ -34,7 +34,9 @@ for f in pathlib.Path('data/parkinfo').glob('US-*.json'):
     for ref in (load(f, {}).get('parks') or {}): AREA.setdefault(ref, []).append(f.stem)
 for ref, v in (load('data/parkinfo/CA.json', {}).get('parks') or {}).items():
     if isinstance(v, list) and len(v) > 10 and v[10]: AREA.setdefault(ref, []).append('CA-' + v[10])
-for i, r in enumerate(load(Q, {}).get('rows') or []):
+import kpc_queue_files as QF   # Nov 12: queue.json is at the 1 MB cap, so rows also live in data/intake/queue-*.json (a *hold* file is never read)
+QROWS = QF.rows(Q.parent) if Q.name == 'queue.json' else (load(Q, {}).get('rows') or [])   # queue.json first, so the Q-<n> ids of its rows do not move
+for i, r in enumerate(QROWS):
     u = r.get('url') or ''
     if not u.startswith('http') or key(u) in seen: continue
     if str(r.get('status') or r.get('verdict') or '').upper().startswith(('NO', 'REJECT', 'DEAD')): continue

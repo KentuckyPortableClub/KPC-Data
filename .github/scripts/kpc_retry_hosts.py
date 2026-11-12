@@ -3,8 +3,8 @@
 The outside research's 'RETRY FROM A BROWSER OR OTHER NETWORK' list (engine registry/retry.json, 24 country servers: Turkey,
 Argentina, Japan, Thailand, Romania, ...) failed from the researcher's box. This asks every address ONCE from GitHub's network,
 the honest way (kpc_manners: robots.txt obeyed, slow per host; a 403 / robot check / sign-in is reported, never bypassed).
-  - an ArcGIS REST layer / service that answers  -> its polygon layers go on the club layer list (data/intake/queue.json,
-    from 'retry list (GitHub try)'); the park-info engine tests them at the POTA pins on its next run -> collector -> chat 11
+  - an ArcGIS REST layer / service that answers  -> its polygon layers go on the club layer list (data/intake/queue-retry-hosts-<n>.json,
+    from 'retry list (GitHub try)'; Nov 12: queue.json is at its 1 MB cap); the park-info engine tests them at the POTA pins on its next run -> collector -> chat 11
   - an OGC WFS that answers GetCapabilities       -> the same, as a WFS lead (the map-format converter reads WFS)
   - anything else that answers (a catalog / download page) -> listed for a person (data/intake/retry-github.json)
 Writes data/intake/retry-github.json (what each address answered, dated). Decides nothing; never fails.
@@ -13,10 +13,11 @@ import json, pathlib, re, sys, time, urllib.parse
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 from kpc_manners import Manners  # noqa: E402
+import kpc_queue_files as QF  # noqa: E402
 
 M = Manners('KPC retry list (chat 10): one honest try from GitHub')
 SRC = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else '.github/scripts/draft/tools/kpc_engine/registry/retry.json')
-OUT, QUEUE = pathlib.Path('data/intake/retry-github.json'), pathlib.Path('data/intake/queue.json')
+OUT = pathlib.Path('data/intake/retry-github.json')   # its own result file, rewritten whole each run; the queue rows are appended only (Nov 12: split file, never queue.json)
 TODAY = time.strftime('%Y-%m-%d')
 
 
@@ -32,8 +33,8 @@ def get(u):
 
 def main():
     items = (load(SRC, {}) or {}).get('items') or []
-    Q = load(QUEUE, {}) or {}; rows = Q.setdefault('rows', [])
-    have = {str(r.get('url') or '').rstrip('/').lower() for r in rows}
+    rows = []   # this run's NEW queue rows; 'have' = every url in any queue*.json (hold files too: a held url is not added again)
+    have = {str(u or '').rstrip('/').lower() for u in QF.known_keys()}
     res, added = [], 0
     for it in items:
         urls = re.findall(r'https?://[^\s;|,)]+', str(it.get('address') or ''))
@@ -76,7 +77,7 @@ def main():
                 r['result'] = 'answered (a page, not a layer service): a person follows it'
                 r['title'] = (re.search(r'<title>([^<]{1,120})', body, re.I) or [None, ''])[1].strip()
             res.append(r)
-    if added: json.dump(Q, open(QUEUE, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    if rows: QF.append_rows(rows, 'retry-hosts')
     json.dump({'about': __doc__.split('\n')[0], 'date': TODAY, 'added_to_layer_list': added, 'tries': res}, open(OUT, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
     ok = sum(1 for r in res if isinstance(r['answer'], int) and r['answer'] < 400)
     print(f'::notice title=Retry list (GitHub try)::{len(items)} servers, {len(res)} addresses asked: {ok} answered, {added} layers added to the layer list; '

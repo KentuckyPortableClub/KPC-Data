@@ -12,7 +12,7 @@ STEP A (polygons first): for each area, every layer we already know (data/state-
     name mismatch  park-type layer, no shared word (the BLM / state name differs from POTA's) -> candidate for chat 11
     inside-other   PAD-US / land layer with another name (a bigger area: R-G7 step 4 ownership later) -> noted, never offered
 STEP B (layers we do not have): a park with no candidate after A gets ONE ArcGIS Online search by its name (feature / map services);
-  results whose title shares 2+ core words are LEADS appended to data/intake/queue.json (from 'gis-hunter'), which the intake bot
+  results whose title shares 2+ core words are LEADS appended to data/intake/queue-gis-hunter-<n>.json (from 'gis-hunter'; Nov 12: queue.json is at its 1 MB cap), which the intake bot
   probes and judges (READY rules). Capped per area per run.
 OUT  data/gis-hunter/<area>.json (per park: hits, verdict, tried) · data/gis-hunter/worklog-<area>.md (rows in the Fable file's
      WORK LOG format, for chats 3 / 8 / HQ to paste) · data/waiting/questions/gis-hunter.json + .md (candidates, one YES / NO question
@@ -25,6 +25,7 @@ import json, math, os, pathlib, re, sys, time, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from kpc_manners import Manners  # noqa: E402
 import kpc_tiers as T  # noqa: E402  (Oct 30: SURE / LIKELY / UNLIKELY, learned answers)
+import kpc_queue_files as QF  # noqa: E402  (Nov 12: queue.json is at the 1 MB cap; new leads go in data/intake/queue-gis-hunter-<n>.json)
 from kpc_json_any import load_json_any, save_json_gz, save_text_gz  # noqa: E402
 
 LINKS = pathlib.Path(os.environ.get('LINKS') or '../links')
@@ -367,8 +368,7 @@ def main():
     PASS = os.environ.get('PASS') or ''   # Oct 30 (Brandon 11:42 PM rerun; key rebuild auto-start): a named pass = every area again once, whatever day it last ran
     def fresh(a): s = state.get(a) or {}; return (s.get('pass') != PASS) if PASS else (s.get('run') != TODAY)
     areas = [a for a in want if a in pool] if want else sorted((a for a in pool if fresh(a)), key=lambda a: len(pool[a]))
-    queue = load('data/intake/queue.json', {'rows': []}) or {'rows': []}
-    queue['seen'] = {r.get('url') for r in queue.get('rows') or []}
+    queue = {'rows': [], 'seen': QF.known_keys()}   # Nov 12: this run's NEW rows only; 'seen' = every url in any queue*.json (hold files too: a held url is not queued again)
     done_R = {}
     for area in areas:
         if late(): break
@@ -389,7 +389,7 @@ def main():
         state[area] = {'run': TODAY, 'open': len(R), 'candidates': nm + mm, **({'pass': PASS} if PASS else {})}
     if done_R: write_questions(done_R)
     queue.pop('seen', None)
-    json.dump(queue, open('data/intake/queue.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    if queue['rows']: notice(f"{len(queue['rows'])} new layer lead(s) -> {', '.join(f.name for f in QF.append_rows(queue['rows'], 'gis-hunter'))}")   # Nov 12: queue.json is at the 1 MB cap
     OUT.mkdir(parents=True, exist_ok=True); json.dump(state, open(OUT / 'state.json', 'w'), indent=1)
     left = [a for a in (pool if not want else want) if a in pool and fresh(a)]
     print(f'LEFT={len(left)}')

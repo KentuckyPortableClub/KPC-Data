@@ -37,6 +37,7 @@ Env: ROWS='url url' (blank = every unprobed queue row) · MINUTES (55) · LINKS 
 import json, math, os, pathlib, re, sys, time, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from kpc_manners import Manners  # noqa: E402
+import kpc_queue_files as QF  # noqa: E402  (Nov 12: the feed's new rows go in a split file, never the full queue.json)
 from kpc_json_any import load_json_any, save_json_gz  # noqa: E402
 
 OUT = pathlib.Path(os.environ.get('OUT') or 'data/intake')
@@ -301,6 +302,15 @@ def split_queue_rows(main_rows, folder=None):
             if not u or u in have: continue
             have.add(u); out.append(r)
     return out
+
+
+def feed_split(folder):
+    """Nov 12: queue.json is at the 1 MB cap. The two feeds below see every row of every queue*.json (hold files too, so a held lead is not
+    queued again) and only their NEW rows are written, to data/intake/queue-intake-feed-<n>.json; the full queue.json is not rewritten."""
+    doc = {'rows': QF.rows(folder, hold=True)}; n0 = len(doc['rows'])
+    fed = feed_from_harvester(doc) + feed_from_discovery(doc)
+    if fed: QF.append_rows(doc['rows'][n0:], 'intake-feed', folder)
+    return fed
 
 
 def feed_from_harvester(queue_doc):
@@ -763,9 +773,7 @@ def main():
                                        'read': ['data/intake/queue.json', 'data/us-key/layers.json', 'data/ca-key/layers.json', 'KPC-Links data/state-gis.json', 'data/harvest/countries.json', 'data/parkinfo', 'data/us-key', 'data/ca-key', 'data/world-key', 'KPC-Links data/ky-answer-key.json'], 'rows': []})
     M = Manners('layer intake line (probes map-layer leads: metadata and counts only)', state.get('hosts'))
     qdoc = load(QUEUE_FILE, {}) or {}
-    fed = feed_from_harvester(qdoc) if os.environ.get('FEED', '1') != '0' and not TEST else 0
-    fed += feed_from_discovery(qdoc) if os.environ.get('FEED', '1') != '0' and not TEST else 0
-    if fed: save(QUEUE_FILE, qdoc)
+    fed = feed_split(QUEUE_FILE.parent) if os.environ.get('FEED', '1') != '0' and not TEST else 0
     queue = (qdoc.get('rows') or []) + split_queue_rows(qdoc.get('rows') or [])
     want = [strip_query(u) for u in (os.environ.get('ROWS') or '').split() if u.strip()]
     old = {r['url']: r for r in ready.get('rows') or [] if isinstance(r, dict) and r.get('url')}
