@@ -17,16 +17,16 @@ jobs:
     outputs:
       lines: ${{ steps.p.outputs.lines }}
     steps:
+      - uses: actions/checkout@v5   # KPC owner, 2026-11-12: only to read .github/fers-areas.json (the one area list)
+        with:
+          sparse-checkout: .github
       - id: p
         env:
           AREAS: ${{ inputs.areas }}
         run: |
           python3 - <<'PY' >> "$GITHUB_OUTPUT"
           import json, os, re
-          R = {'southeast': 'US-TN US-NC US-VA US-WV US-GA US-AL US-SC US-FL US-MS', 'midwest': 'US-IN US-IL US-MO US-WI US-MN US-IA US-ND US-SD',
-               'northeast': 'US-PA US-NY US-NJ US-CT US-RI US-MA US-VT US-NH US-ME US-MD US-DE US-DC', 'southcentral': 'US-AR US-LA US-OK US-TX US-KS US-NE',
-               'mountain': 'US-CO US-WY US-ID US-MT US-NV US-AZ US-NM', 'pacific': 'US-CA US-OR US-WA US-AK US-HI',
-               'canadaeast': 'CA-ON CA-QC CA-NB CA-NS CA-PE CA-NL', 'canadawest': 'CA-MB CA-SK CA-AB CA-BC CA-YT CA-NT CA-NU'}
+          R = json.load(open('.github/fers-areas.json', encoding='utf-8'))['areas']   # KPC owner, 2026-11-12: the ONE area list (the chain's old inline copy is retired)
           out = []
           for e in [x.strip() for x in os.environ['AREAS'].split(';') if x.strip()]:
               e = e.split('@')[0].strip()

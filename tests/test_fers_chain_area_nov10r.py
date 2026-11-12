@@ -61,6 +61,9 @@ def _plan(D, Lk, now):
 
 
 green = lambda *sts, rules='cur-us-key': {s: {'parks': 1, 'rules': rules} for s in sts}
+# KPC owner, 2026-11-12: the chain reads the ONE area list (.github/fers-areas.json); the old one-state chain areas (oh / mi / ut) are
+# retired, so these cases use whole areas: greatlakes (OH MI IN IL WI) and newyork (NY NJ)
+GL = ('OH', 'MI', 'IN', 'IL', 'WI'); NYA = ('NY', 'NJ')
 # ---- the per-state test
 idx = {'rules': 'old', 'failed': ['FL'], 'states': {'OH': {'rules': 'cur'}, 'TN': {'rules': 'old'}, 'FL': {'rules': 'cur'}, 'GA': {'rules': 'cur', '_not_built': 1}}}
 bad = dict(P.states_not_green(idx, 'us-key', ['US-OH', 'US-TN', 'US-FL', 'US-GA', 'US-MS'], 'cur'))
@@ -70,42 +73,42 @@ check(P.states_not_green({'rules': 'cur'}, 'ca-key', ['CA-ON'], 'cur') == [] and
       'a key without per-state rows: the key-wide full-build rules decide')
 # ---- a partial US build: the green area starts, the others wait (one short state no longer blocks all)
 with tempfile.TemporaryDirectory() as t:
-    D, Lk = repo(t, {**green('OH', 'MI'), 'UT': {'rules': 'old'}}, failed=['DE'])
+    D, Lk = repo(t, {**green(*GL, *NYA), 'UT': {'rules': 'old'}}, failed=['DE'])
     r, s, n = run(D, Lk)
     tags = [x['tag'] for x in r]
-    check(tags == ['oh', 'mi'], f'a partial build on new rules starts the areas whose states are all green ({tags})')
+    check(tags == ['newyork', 'greatlakes'], f'a partial build on new rules starts the areas whose states are all green ({tags})')
     wt = s['us-key']['waiting']
-    check('southeast' in wt and 'not built' in wt['southeast'] and 'ut' in wt and 'not built on the current rules' in wt['ut'], 'an area with a state not built green waits and says which')
+    check('southeast' in wt and 'not built' in wt['southeast'] and 'mountain' in wt and 'US-UT (not built on the current rules' in wt['mountain'] and 'US-DE (failed' in wt.get('midatlantic', ''), 'an area with a state not built green waits and says which')
     check(not any(x['key'] == 'world-key' for x in r) and 'world-key' not in s or not (s.get('world-key') or {}).get('ran'), 'world areas never start (2-fers are US + Canada only)')
 with tempfile.TemporaryDirectory() as t:
-    D, Lk = repo(t, green('OH'), ready_module=True)
+    D, Lk = repo(t, green(*GL), ready_module=True)
     r, s, n = run(D, Lk)
-    check([x['tag'] for x in r] == ['oh'] and not (s.get('world-key') or {}).get('ran'), "with KPC-Links' fers-ready-areas.json: OH starts, the world areas are skipped")
+    check([x['tag'] for x in r] == ['greatlakes'] and not (s.get('world-key') or {}).get('ran'), "with KPC-Links' fers-ready-areas.json: greatlakes starts, the world areas are skipped")
 # ---- fingerprint + done only on a READY line + retry
 with tempfile.TemporaryDirectory() as t:
-    D, Lk = repo(t, green('OH'))
+    D, Lk = repo(t, green(*GL))
     t0 = 1794300000
-    r, s, _ = _plan(D, Lk, t0); check([x['tag'] for x in r] == ['oh'] and s['us-key']['areas']['oh']['tries'] == 1, 'first plan starts OH')
-    r, s, _ = _plan(D, Lk, t0 + 3600); check(r == [] and 'waiting for its result' in s['us-key']['waiting'].get('oh', ''), 'an hour later: OH waits for its line result (not started twice)')
-    w(D / 'data/fers/line-oh.json', {'verdict': 'STOPPED', 'date': time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime(t0 + 7200))})
-    r, s, _ = _plan(D, Lk, t0 + 7 * 3600); check([x['tag'] for x in r] == ['oh'] and s['us-key']['areas']['oh']['tries'] == 2, 'a line that held (STOPPED) is started again later')
-    r, s, _ = _plan(D, Lk, t0 + 14 * 3600); check(r == [] and 'a person looks' in s['us-key']['waiting'].get('oh', ''), 'after two starts without READY: a person looks (no endless reruns)')
-    w(D / 'data/waiting/in/data/fers/line-oh.json', {'verdict': 'READY FOR CHAT 8', 'date': time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime(t0 + 8 * 3600))})
-    r, s, _ = _plan(D, Lk, t0 + 15 * 3600); check(r == [] and 'oh' in s['us-key']['ran'] and 'oh' not in s['us-key']['waiting'], 'a READY line (its waiting-room copy) marks the area done')
-    w(Lk / 'data/us-key/index.json', {'build': 'US-10', 'rules': 'old', 'states': green('OH')}); w(Lk / 'data/status/key-check/last-us.json', {'build': 'US-10'}); w(D / 'data/us-key/index.json', {'build': 'US-10'})
-    r, s, _ = _plan(D, Lk, t0 + 16 * 3600); check(r == [], 'a new build id with the same OH key file does not rerun OH')
+    r, s, _ = _plan(D, Lk, t0); check([x['tag'] for x in r] == ['greatlakes'] and s['us-key']['areas']['greatlakes']['tries'] == 1, 'first plan starts greatlakes')
+    r, s, _ = _plan(D, Lk, t0 + 3600); check(r == [] and 'waiting for its result' in s['us-key']['waiting'].get('greatlakes', ''), 'an hour later: greatlakes waits for its line result (not started twice)')
+    w(D / 'data/fers/line-greatlakes.json', {'verdict': 'STOPPED', 'date': time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime(t0 + 7200))})
+    r, s, _ = _plan(D, Lk, t0 + 7 * 3600); check([x['tag'] for x in r] == ['greatlakes'] and s['us-key']['areas']['greatlakes']['tries'] == 2, 'a line that held (STOPPED) is started again later')
+    r, s, _ = _plan(D, Lk, t0 + 14 * 3600); check(r == [] and 'a person looks' in s['us-key']['waiting'].get('greatlakes', ''), 'after two starts without READY: a person looks (no endless reruns)')
+    w(D / 'data/waiting/in/data/fers/line-greatlakes.json', {'verdict': 'READY FOR CHAT 8', 'date': time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime(t0 + 8 * 3600))})
+    r, s, _ = _plan(D, Lk, t0 + 15 * 3600); check(r == [] and 'greatlakes' in s['us-key']['ran'] and 'greatlakes' not in s['us-key']['waiting'], 'a READY line (its waiting-room copy) marks the area done')
+    w(Lk / 'data/us-key/index.json', {'build': 'US-10', 'rules': 'old', 'states': green(*GL)}); w(Lk / 'data/status/key-check/last-us.json', {'build': 'US-10'}); w(D / 'data/us-key/index.json', {'build': 'US-10'})
+    r, s, _ = _plan(D, Lk, t0 + 16 * 3600); check(r == [], 'a new build id with the same OH key file does not rerun greatlakes')
     w(Lk / 'data/us-key/US-OH.json', {'parks': {'US-0001': {'m': [[1, 'x']]}}})
-    r, s, _ = _plan(D, Lk, t0 + 17 * 3600); check([x['tag'] for x in r] == ['oh'] and s['us-key']['areas']['oh']['tries'] == 1, 'a changed OH key file runs OH again (new fingerprint)')
+    r, s, _ = _plan(D, Lk, t0 + 17 * 3600); check([x['tag'] for x in r] == ['greatlakes'] and s['us-key']['areas']['greatlakes']['tries'] == 1, 'a changed OH key file runs greatlakes again (new fingerprint)')
 # ---- the post-key check must be clean for the area
 with tempfile.TemporaryDirectory() as t:
-    D, Lk = repo(t, green('OH', 'MI'), report={'grade_worse': ['US-0002'], 'outline_to_pin': []})
+    D, Lk = repo(t, green(*GL, *NYA), report={'grade_worse': ['US-0002'], 'outline_to_pin': []})
     r, s, _ = run(D, Lk)
-    check([x['tag'] for x in r] == ['mi'] and 'worse grade' in s['us-key']['waiting'].get('oh', ''), 'a park with a worse grade in the post-key check holds its area (OH), others start')
+    check([x['tag'] for x in r] == ['newyork'] and 'worse grade' in s['us-key']['waiting'].get('greatlakes', ''), 'a park with a worse grade in the post-key check holds its area (greatlakes, US-OH), others start')
 with tempfile.TemporaryDirectory() as t:
-    D, Lk = repo(t, green('OH'), report={'outline_to_pin': ['US-0001']})
-    r, s, _ = run(D, Lk); check(r == [] and 'outline -> pin' in s['us-key']['waiting'].get('oh', ''), 'a park gone outline -> pin holds its area')
+    D, Lk = repo(t, green(*GL), report={'outline_to_pin': ['US-0001']})
+    r, s, _ = run(D, Lk); check(r == [] and 'outline -> pin' in s['us-key']['waiting'].get('greatlakes', ''), 'a park gone outline -> pin holds its area')
 with tempfile.TemporaryDirectory() as t:
-    D, Lk = repo(t, green('OH'), report={}); (Lk / 'data/status/key-check/us-X.json').write_text('{not json')
+    D, Lk = repo(t, green(*GL), report={}); (Lk / 'data/status/key-check/us-X.json').write_text('{not json')
     r, s, n = run(D, Lk); check(r == [] and any('could not be read' in x for x in n), 'a post-key check report that cannot be read starts nothing')
 # ---- the key gate: same per-state test
 G = HERE / '.github/scripts/kpc_fers_key_gate.py'

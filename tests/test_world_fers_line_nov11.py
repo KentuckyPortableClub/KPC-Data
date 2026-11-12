@@ -237,32 +237,38 @@ try:
 finally: urllib.request.OpenerDirector.open = real_open
 check(not calls, 'planning world areas makes no web request of any kind')
 
-# ---- 6 the two US / Canada lists: kept apart on purpose, the difference written down and checked (.github/fers-area-map.json)
+# ---- 6 ONE US / Canada list (KPC owner, 2026-11-12, part C): the chain reads .github/fers-areas.json; the old list R is retired
 import ast
 mp = json.load(open(HERE / '.github/fers-area-map.json'))
 check(mp == json.loads(json.dumps(P.area_map(str(HERE)), sort_keys=True)) or mp == json.loads(json.dumps(P.area_map(str(HERE)))), 'fers-area-map.json is current (regenerate: python3 .github/scripts/kpc_fers_chain_plan.py map)')
 for name, lst in (('chain (R)', mp['chain']), ('bot (fers-areas.json)', mp['bot'])):
     sts = [x for v in lst.values() for x in v.split()]
     check(len(sts) == len(set(sts)) and 'US-KY' not in sts, f'{name}: no state twice, Kentucky in neither')
-check(mp['states_only_in_chain'] == [] and mp['states_only_in_bot'] == ['CA-SI', 'CA-SP'], 'same US / Canada states in both lists, except CA-SI / CA-SP that only the bot lists')
-check(mp['same_tag_different_members'] == ['canadaeast', 'canadawest', 'mountain', 'southcentral', 'southeast'] and mp['same_tag_same_members'] == ['pacific'],
-      'known overlap of tag NAMES with different members (their data/fers files share names): pinned, so a change is a decision')
-inl = {}
+check(mp['chain'] == mp['bot'], 'the chain areas ARE the bot areas (one list): a chain line can never write a state set the bot does not')
+check(all(mp[k] == [] for k in ('states_only_in_chain', 'states_only_in_bot', 'same_tag_different_members', 'chain_only_tags', 'bot_only_tags')),
+      'no difference left between the two maps (CA-SI / CA-SP are in the chain now; no tag names two member sets)')
+check({t: v for t, v in P.R.items() if P.kind_of(v) != 'world-key'} == json.load(open(HERE / '.github/fers-areas.json'))['areas'], "the planner's US / CA areas are read from .github/fers-areas.json")
+src = (HERE / '.github/scripts/kpc_fers_chain_plan.py').read_text(encoding='utf-8')
+check(not re.search(r"\bR = \{'southeast'", src) and 'US-VA US-WV US-GA' not in src, 'the old hard-coded chain list (9-state southeast with VA / WV) is gone from the planner')
 for wf in ('kpc-fers-lines.yml', 'kpc-fers-pending.yml', 'kpc-fers-water.yml'):
     txt = (HERE / '.github/workflows' / wf).read_text(encoding='utf-8')
-    m_ = re.search(r"\bR = (\{.*?\})\n", txt, re.S)
-    inl[wf] = ast.literal_eval(m_.group(1))
-chain_main = {t: v for t, v in mp['chain'].items() if t not in ('oh', 'mi', 'ut')}
-check(all(v == chain_main for v in inl.values()), 'the inline copies of the chain list in kpc-fers-lines / -pending / -water.yml equal R (minus oh / mi / ut, their own-state runs)')
-# live state is not orphaned: every area tag in the real seen.json is a chain tag, and an area with an existing READY line under its tag is recognised
+    check(not re.search(r"\bR = \{", txt) and "R = json.load(open('.github/fers-areas.json'" in txt, f'{wf}: no inline copy of an area list; it reads .github/fers-areas.json')
+    if wf != 'kpc-fers-pending.yml':
+        import yaml
+        jb = yaml.safe_load(txt)['jobs']['plan']['steps']
+        check(any(str(x.get('uses', '')).startswith('actions/checkout') for x in jb[:1]), f'{wf}: the plan job checks out the repo first, so the list can be read')
+# live state is not orphaned: every area tag left in seen.json after the migration is a chain tag; retired tags are kept aside
 seen_real = json.load(open(HERE / 'data/status/fers-chain/seen.json'))
-tags_seen = {t for k in ('us-key', 'ca-key') for t in (seen_real.get(k, {}).get('areas') or {})} | {t for k in ('us-key', 'ca-key') for t in (seen_real.get(k, {}).get('ran') or [])}
-check(tags_seen and tags_seen <= set(mp['chain']), f'every area tag in data/status/fers-chain/seen.json is a chain tag ({sorted(tags_seen)})')
+mig = {k: P.migrate(seen_real.get(k) or {}) for k in ('us-key', 'ca-key')}
+tags_seen = {t for k in mig for t in (mig[k].get('areas') or {})} | {t for k in mig for t in (mig[k].get('ran') or [])}
+check(tags_seen <= set(mp['chain']), f'after the migration every area tag in data/status/fers-chain/seen.json is a chain tag ({sorted(tags_seen)})')
+old_tags = {t for k in ('us-key', 'ca-key') for t in (seen_real.get(k, {}).get('areas') or {})} - set(mp['chain'])
+check(old_tags <= {t for k in mig for t in (mig[k].get('retired') or {})}, f'retired tags are kept in seen[key][retired], not dropped ({sorted(old_tags)})')
 with tempfile.TemporaryDirectory() as t:
     D, Lk = fixture(t, READY_US_CA); r, s_, n = plan(D, Lk)
-    check('midwest' in [x['tag'] for x in r] or 'midwest' in s_['us-key']['areas'], 'midwest is planned under its existing tag')
-    finish_all(D, Lk, s_, ['midwest'])
+    check('plains' in [x['tag'] for x in r] or 'plains' in s_['us-key']['areas'], 'plains (a bot area) is planned under its own tag')
+    finish_all(D, Lk, s_, ['plains'])
     r2, s2, _ = plan(D, Lk, now=NOW + 8 * 3600)
-    check('midwest' not in [x['tag'] for x in r2] and 'midwest' in s2['us-key']['ran'], 'an area with a READY line under its existing tag is recognised as done (not restarted)')
+    check('plains' not in [x['tag'] for x in r2] and 'plains' in s2['us-key']['ran'], 'an area with a READY line under its tag is recognised as done (not restarted)')
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)

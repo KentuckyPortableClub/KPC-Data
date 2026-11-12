@@ -47,7 +47,9 @@ with tempfile.TemporaryDirectory() as t:
 bk = [x for x in steps if 'run broke' in str(x.get('name', ''))]
 check(len(bk) == 1 and "steps.kept_green_3.outcome == 'failure'" in bk[0]['if'] and '!cancelled()' in bk[0]['if'], 'a break (crash / time-out) runs the save-what-finished step; a cancel does not')
 r = bk[0]['run'] if bk else ''
-check('reuse-p*-' in r and 'kpc_fers_areas.py finished' in r and 'STRICT=1' in r and 'data/fers/*' not in r, 'it saves pair answers + fully finished states only (never every file)')
+# KPC owner, 2026-11-12: the fully-finished test now runs inside the per-state save (kpc_fers_states.py pick with ONLY_FINISHED=1: the same
+# rule as kpc_fers_areas.py finished, pass5 == today and not incomplete; tests/test_fers_per_state_nov12.py checks it on files)
+check('reuse-p*-' in r and ('kpc_fers_areas.py finished' in r or ('ONLY_FINISHED=1' in r and 'kpc_fers_states.py pick' in r)) and 'STRICT=1' in r and 'data/fers/*' not in r, 'it saves pair answers + fully finished states only (never every file)')
 check(txt.index('run broke') > txt.index('kept_green_5') and 'Report hidden failures' in txt[txt.index('run broke'):], 'the job still goes red after it (Report step runs after)')
 # Nov 9 evening (KZ4CP 5:12 PM CST): hidden beta: never a public live 2-fer file from this workflow
 for x in steps:

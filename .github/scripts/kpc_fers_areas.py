@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """2-fer areas (Nov 9 2026, Brandon t905u/t906u): one job per area, each with its own time budget.
-  plan     REGION='southeast canadaeast' | 'areas' | na | world | ky | both  -> prints  list=[{name, region, states, tag, full}, ...]
+  plan     REGION='southeast canadaeast' | 'areas' | 'US-FL CA-ON' (one state alone) | na | world | ky | both
+           -> prints  list=[{name, region, states, tag, full, seed}, ...]
            full='1' = this area is rebuilt in full this run (round-robin, one full rebuild per area per full_cycle_days;
            FULL=all = every job in full (emergency), FULL=none = no full area this run)
            (the KPC 2-fer bot's matrix; old values na / world / ky / both work as before)
@@ -9,7 +10,7 @@
            are not finished (run them again by name until every area has a good file). Read only. SINCE=2026-11-10 = a state
            counts as finished only when its pass 5 is that day or later.
 Areas: .github/fers-areas.json. Kentucky is its own run (region 'ky'), as before."""
-import json, os, pathlib, sys
+import json, os, pathlib, re, sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent.parent
 CFG = json.load(open(ROOT / '.github/fers-areas.json', encoding='utf-8'))
 AREAS = CFG['areas']
@@ -33,6 +34,11 @@ def plan(region, states=''):
     for w in words:
         if w == 'areas': out += [{'name': n, 'region': 'na', 'states': s, 'tag': n} for n, s in AREAS.items()]
         elif w in AREAS: out.append({'name': w, 'region': 'na', 'states': AREAS[w], 'tag': w})
+        elif re.fullmatch(r'(us|ca)-[a-z]{2}', w) and any(w.upper() in v.split() for v in AREAS.values()):
+            # KPC owner, 2026-11-12 (KISS, per state): one state / province alone, its own job; its tag is its own (US-FL -> fl), and it
+            # starts from its area's saved pair answers (seed). It writes only its own state file (+ its tag's report files).
+            st = w.upper(); area = next(a for a, v in AREAS.items() if st in v.split())
+            out.append({'name': st, 'region': 'na', 'states': st, 'tag': st.lower().replace('us-', '').replace('-', ''), 'seed': area})
         elif w in ('na', 'world', 'ky'): out.append({'name': w, 'region': w, 'states': states if w != 'ky' else '', 'tag': ''})
         elif w == 'both': out += [{'name': 'na', 'region': 'na', 'states': states, 'tag': ''}, {'name': 'world', 'region': 'world', 'states': states, 'tag': ''}]
         else: print(f'::warning title=2-fer areas::unknown area {w!r} (known: {" ".join(AREAS)} areas na world ky both): skipped', file=sys.stderr)
@@ -40,7 +46,7 @@ def plan(region, states=''):
     for x in out:
         if x['name'] not in seen: seen.add(x['name']); uniq.append(x)
     full = os.environ.get('FULL', '').strip().lower()
-    pick = set(x['name'] for x in uniq) if full in ('all', '1', 'yes', 'true') else set() if full in ('none', 'no', '0') else set(full_due([x['name'] for x in uniq if x['tag']]))
+    pick = set(x['name'] for x in uniq) if full in ('all', '1', 'yes', 'true') else set() if full in ('none', 'no', '0') else set(full_due([x['name'] for x in uniq if x['tag'] and x['name'] in AREAS]))   # a one-state job is never a round-robin full rebuild (FULL=all still is)
     for x in uniq: x['full'] = '1' if x['name'] in pick else ''
     return uniq
 

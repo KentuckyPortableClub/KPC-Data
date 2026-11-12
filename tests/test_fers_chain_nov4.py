@@ -126,6 +126,8 @@ def run(D, Lk, gate='on'):
 
 
 SE = P.R['southeast'].split()
+NUS = sum(1 for v in P.R.values() if v.startswith('US-'))   # KPC owner, 2026-11-12: the US areas of the ONE list (.github/fers-areas.json)
+CAA = sorted(t for t, v in P.R.items() if v.startswith('CA-'))
 ALLUS = [a for k, v in P.R.items() if not v.startswith('CA-') for a in v.split()]
 # ---- FINAL-v2 (Brandon's choice, per Brandon via Super Head Bot (relayed), 5:48 AM CST Nov 4): the one default line = OFF
 dl = [l for l in open(HERE / '.github/scripts/kpc_fers_chain_plan.py').read().splitlines() if l.startswith('GATE_DEFAULT')]
@@ -144,7 +146,7 @@ for g in ('on', 'off'):
 with tempfile.TemporaryDirectory() as t:
     D, Lk = repo(t, ready=SE); r, s, n = run(D, Lk, 'on')
     check([x['tag'] for x in r] == ['southeast'] and r[0]['key'] == 'us-key' and r[0]['build'] == 'US-200', "plan (gate on): the area whose map audit is clean starts, although fers-ready.json says 'waiting for key' (the chain CAN start)")
-    check(len(s['us-key']['waiting']) == 8 and all('map audit not clean' in v and 'not audited' in v for v in s['us-key']['waiting'].values()), 'plan (gate on): every other US area waits, naming its unaudited states')
+    check(len(s['us-key']['waiting']) == NUS - 1 and all('map audit not clean' in v and 'not audited' in v for v in s['us-key']['waiting'].values()), 'plan (gate on): every other US area waits, naming its unaudited states')
     r2, s2, _ = run(D, Lk, 'on'); check(r2 == [], 'plan: the same build never starts an area twice (seen.json)')
     w(Lk / 'data/us-key/index.json', {'build': 'US-201', 'rules': 'rules-us-key'}); w(Lk / 'data/status/key-check/last-us.json', {'build': 'US-201'}); w(D / 'data/waiting/in/data/us-key/index.json', {'build': 'US-201'})
     r3, s3, _ = run(D, Lk, 'on'); check(r3 == [] and s3['us-key']['build'] == 'US-201', 'plan: a NEW build with the same key files does not run the area again (fingerprint)')
@@ -161,7 +163,7 @@ with tempfile.TemporaryDirectory() as t:
     r, s, n = run(D, Lk, 'on'); check(r == [] and 'source down' in s['us-key']['waiting']['southeast'], 'plan (gate on): a source-down row keeps the area waiting')
 with tempfile.TemporaryDirectory() as t:
     D, Lk = repo(t); r, s, n = run(D, Lk, 'on')
-    check(r == [] and len(s['us-key']['waiting']) == 9, 'plan (gate on): nothing audited = every US area waits')
+    check(r == [] and len(s['us-key']['waiting']) == NUS, 'plan (gate on): nothing audited = every US area waits')
 # ---- gate OFF: the map audit is not read
 with tempfile.TemporaryDirectory() as t:
     D, Lk = repo(t); tags = []
@@ -172,7 +174,7 @@ with tempfile.TemporaryDirectory() as t:
     check(not any(P.R[x].startswith('CA-') for x in flat), 'plan: a US build starts no Canada area (Canada waits for its own build)')
 with tempfile.TemporaryDirectory() as t:
     D, Lk = repo(t, kind='ca-key', short='ca', bid='CA-300'); r, s, n = run(D, Lk, gate='off')
-    check({x['tag'] for x in r} == {'canadaeast', 'canadawest'} and 'us-key' not in s, 'plan: a new Canada build starts the Canada areas only')
+    check(len(r) == 3 and {x['tag'] for x in r} <= set(CAA) and 'us-key' not in s, f'plan: a new Canada build starts the Canada areas only (3 of {CAA} at a time)')
 # ---- unset (the default) = off: the areas start without the map audit (still at most 3, still HELD by the line)
 with tempfile.TemporaryDirectory() as t:
     D, Lk = repo(t); r, s, n = run(D, Lk, '')
@@ -182,7 +184,7 @@ for g in ('PENDING', 'maybe'):
     with tempfile.TemporaryDirectory() as t:
         D, Lk = repo(t, ready=SE); r, s, n = run(D, Lk, g)
         msg = ' '.join(n)
-        check(r == [] and 'run=no' in (D / 'gho').read_text() and s['us-key']['ran'] == [] and 'PENDING' in msg and "if 'on': southeast;" in msg and "if 'off': southeast midwest northeast" in msg,
+        check(r == [] and 'run=no' in (D / 'gho').read_text() and s['us-key']['ran'] == [] and 'PENDING' in msg and "if 'on': southeast;" in msg and "if 'off': southeast midatlantic newyork" in msg,
               f'plan (gate {g or "unset"} = PENDING): nothing starts; the run log says what on / off would start')
         r2, s2, _ = run(D, Lk, 'on'); check([x['tag'] for x in r2] == ['southeast'], f'plan: after PENDING ({g or "unset"}), setting the gate on starts the clean area (PENDING remembered nothing)')
 with tempfile.TemporaryDirectory() as t:

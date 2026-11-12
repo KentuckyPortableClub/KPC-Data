@@ -99,6 +99,7 @@ jobs:
       next: ''
       key: build
       force: 'no'
+      skip_pass1: ${{ matrix.area.skip_pass1 || 'no' }}   # KPC owner, 2026-11-12: a kpc-fers.yml pass 1 on the same per-state 2-fer hash counts
   # owner rule, 2026-11-10: the post-line check for Quality is started here, once per chain run (kpc-fers-postline.yml does not
   # listen to this workflow).
   postline:
