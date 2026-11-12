@@ -389,8 +389,8 @@
     "with_facts": 22,
     "with_sites": 11
    },
-   "left": 0,
-   "status": "done",
+   "left": 1,
+   "status": "partial",
    "updated": "2026-11-12"
   },
   "US-LA": {
@@ -1626,7 +1626,7 @@
  },
  "ky_check": {
   "agree": 53,
-  "bot_blank": 251,
+  "bot_blank": 247,
   "campgrounds": 67,
   "differ": 5,
   "fact_tally": {
@@ -1975,15 +1975,9 @@
     "status": "host resting"
    },
    {
-    "fields": {
-     "electric": "bot blank (key: True)",
-     "phone": "bot blank (key: (606) 768-2722)",
-     "sewer": "bot blank (key: False)",
-     "showers": "bot blank (key: True)"
-    },
     "id": "zilpo-campground",
     "name": "Zilpo Campground",
-    "status": "host resting"
+    "status": "not in output"
    },
    {
     "fields": {
@@ -2577,11 +2571,11 @@
  },
  "last": {
   "areas": [
-   "US-GA"
+   "US-KY"
   ],
   "fcc_token": true,
   "manners": {
-   "dropped_queued": 64,
+   "dropped_queued": 80,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2591,25 +2585,25 @@
    ],
    "host_rule": 0,
    "requests": 1,
-   "rested": 1,
+   "rested": 42,
    "robots": 1,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 65,
+   "camps": 81,
    "elevations": 0,
    "errors": 0,
    "needs_browser": 0,
-   "needs_key": 64,
+   "needs_key": 39,
    "no_page": 0,
    "not_official": 0,
    "ok": 0,
    "pages_read": 0,
-   "resting": 1,
+   "resting": 42,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 147
+   "skipped_fresh": 28
   },
   "when": "2026-11-12"
  },

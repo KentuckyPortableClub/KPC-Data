@@ -235,8 +235,7 @@ Source file: `data/campinfo/US-KY.json`
  },
  "ids": [
   "232370",
-  "us-10171-zilpo-campground",
-  "zilpo-campground"
+  "us-10171-zilpo-campground"
  ],
  "kind": "c",
  "lat": 38.07090892,
@@ -252,7 +251,7 @@ Source file: `data/campinfo/US-KY.json`
  },
  "name": "Zilpo Campground",
  "official_page": "https://www.fs.usda.gov/r08/danielboone/recreation/zilpo-campground",
- "park": "US-10171 US-4484",
+ "park": "US-10171",
  "phone": null,
  "phone_hint": null,
  "reservable": null,
