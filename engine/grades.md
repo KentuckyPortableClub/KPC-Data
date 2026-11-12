@@ -8,17 +8,17 @@ The engine decides nothing; this is its self-check against the bar.
 
 **Bar:** Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.
 
-**Measured:** rows 9847, parks 3961, parks_with_hit 547, SURE 405, LIKELY 590, UNLIKELY_evidence 3610, strong 218, already_approved 539, open_without_whynot 456, non_official_candidates 1, unlikely_as_questions 0, strong_but_not_sure 0, questions_beyond_150m 0, size_way_off_questions 0
+**Measured:** rows 9919, parks 3969, parks_with_hit 547, SURE 405, LIKELY 597, UNLIKELY_evidence 3632, strong 217, already_approved 541, open_without_whynot 457, non_official_candidates 1, unlikely_as_questions 0, strong_but_not_sure 0, questions_beyond_150m 0, size_way_off_questions 0
 
 **Top reasons for misses:**
 - not found: no-layer: no official record at the pin or by name (2571)
-- evidence: UNLIKELY only : name: none word in common (1650)
-- evidence: UNLIKELY only : pin not inside nor within m with a name match (786)
-- blocked: source could not be read (700)
-- already approved: already approved (539)
+- evidence: UNLIKELY only : name: none word in common (1657)
+- evidence: UNLIKELY only : pin not inside nor within m with a name match (790)
+- blocked: source could not be read (727)
+- already approved: already approved (541)
 
 **Why it fails:**
-- open parks without a why-not: 456
+- open parks without a why-not: 457
 - non-official publishers: 1
 
 **5 example parks:**

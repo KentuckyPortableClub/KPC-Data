@@ -58337,6 +58337,682 @@
    "pass": 1
   },
   {
+   "ref": "US-5683",
+   "area": "US-IN",
+   "park": "Kil-So-Quah State Recreation Area",
+   "agency_group": "in.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "US-IN",
+   "url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html",
+   "service_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
+   "name_field": "unitname",
+   "agency": "Indiana DNR properties",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-5",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 4078,
+   "record_name": "J. Edward Roush Fish and Wildlife Area",
+   "layer": "PACK-US-IN-land-191",
+   "record_link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D4078&outFields=%2A&f=html",
+   "where": "OBJECTID=4078",
+   "pin_m": 0,
+   "acres_approx": 8238.6,
+   "grade": "official",
+   "envelope": [
+    -85.46723,
+    40.80016,
+    -85.29752,
+    40.85624
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-85.4453%2C40.8463&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "other kind of place (state_rec_area vs wma)",
+   "size_band": "unknown",
+   "why": "T-5 WEAK: 'J. Edward Roush Fish and Wildlife Area' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-IN-land-191",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-IN-preserve-263",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-IN-land-387",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "https://www.in.gov/dnr/fish-and-wildlife/files/fw-roush_property_map.pdf",
+      "gave": "page read (pdf); 0 file candidates"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-IN in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'J. Edward Roush Fish and Wildlife Area' (PACK-US-IN-land-191); pin inside; about 8238.6 acres; Rule G: UNLIKELY (other kind of place (state_rec_area vs wma)); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): other kind of place (state_rec_area vs wma)",
+    "step_reached": "L5",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-5692",
+   "area": "US-IN",
+   "park": "Cartop State Recreation Area",
+   "agency_group": "in.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "US-IN",
+   "url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html",
+   "service_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
+   "name_field": "unitname",
+   "agency": "Indiana DNR properties",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-5",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 4576,
+   "record_name": "Monroe Lake",
+   "layer": "PACK-US-IN-land-191",
+   "record_link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D4576&outFields=%2A&f=html",
+   "where": "OBJECTID=4576",
+   "pin_m": 0,
+   "acres_approx": 18328.5,
+   "grade": "official",
+   "envelope": [
+    -86.52155,
+    38.99118,
+    -86.2102,
+    39.12781
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Monroe Lake",
+     "layer": "PACK-US-IN-land-387",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-86.4642%2C39.0983&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-5 WEAK: 'Monroe Lake' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-IN-land-191",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-IN-preserve-263",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-IN-land-387",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-IN in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "same land also in PACK-US-IN-land-387 'Monroe Lake': merged, counted once; record 'Monroe Lake' (PACK-US-IN-land-191); pin inside; about 18328.5 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-12831",
+   "area": "US-WA",
+   "park": "Ruby BLM Special Recreation Management Area",
+   "agency_group": "tinyurl.com",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "US-WA",
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7",
+   "name_field": null,
+   "agency": "Bureau of Land Management",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-6",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 10,
+   "record_name": "Bureau of Land Management",
+   "layer": "US-BLM-sma",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7/query?where=OBJECTID%3D10&outFields=%2A&f=html",
+   "where": "OBJECTID=10",
+   "pin_m": 0,
+   "acres_approx": 16371258.3,
+   "grade": "official",
+   "envelope": [
+    -124.69639,
+    41.99208,
+    -116.52759,
+    49.00011
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": " ",
+     "layer": "PACK-US-WA-land-366",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7/query?geometry=-119.725%2C48.4981&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "surface-manager layer: never matched against parks",
+   "size_band": "unknown",
+   "why": "T-6 WEAK: 'Bureau of Land Management' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WA-land-19",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Trails-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-WA-park-363",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-364",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-preserve-365",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-366",
+      "gave": "hit (2 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-land-367",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-368",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-WA-wildlife-369",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-WA-trail-Trails_in_King_County-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-WA-trail-Generalized_Regional_Trails_for_Online_P-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Motorized_Trails-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-WA-trail-PARKS_Winter_Rec_Non_Motorized_Trails-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-475",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-OR-land-323",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-WA in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Bureau of Land Management' (US-BLM-sma); pin inside; about 16371258.3 acres; Rule G: UNLIKELY (surface-manager layer: never matched against parks); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks",
+    "step_reached": "L5",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
    "ref": "CA-6381",
    "area": "CA-BC",
    "park": "Semiahmoo National Historic Trail",
@@ -334519,6 +335195,1289 @@
    "pass": 1
   },
   {
+   "ref": "US-4376",
+   "area": "US-TN",
+   "park": "Manhattan Project National Historical Park",
+   "agency_group": "nps.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "US-TN",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2?f=html",
+   "service_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+   "name_field": "UNIT_NAME",
+   "agency": "National Park Service",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-4",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 1232,
+   "record_name": "Manhattan Project National Historical Park",
+   "layer": "US-NPS-boundary",
+   "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?where=OBJECTID%3D1232&outFields=%2A&f=html",
+   "where": "OBJECTID=1232",
+   "pin_m": 4377,
+   "acres_approx": 114.9,
+   "grade": "official",
+   "envelope": [
+    -119.71776,
+    35.83963,
+    -84.25518,
+    46.66213
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?where=UNIT_NAME%20LIKE%20%27%25Manhattan%25%27&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=0.0002&geometryPrecision=6&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "pin not inside nor within 150 m with a name match (distance check)",
+   "size_band": "unknown",
+   "why": "T-4 WEAK: 'Manhattan Project National Historical Park' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-TN-park-337",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-TN-preserve-338",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-TN-wildlife-339",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-TN-forest-340",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-TN-wildlife-341",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-TN-land-342",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-TN-park-343",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-TN-preserve-344",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-TN-wildlife-345",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-TN-park-346",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-TN-land-380",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "https://www.nps.gov/mapr/index.htm",
+      "gave": "page read (fetch); 0 file candidates"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-TN in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Manhattan Project National Historical Park' (US-NPS-boundary); pin 4377 m from the edge; about 114.9 acres; Rule G: UNLIKELY (pin not inside nor within 150 m with a name match (distance check)); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+    "step_reached": "L5",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-4560",
+   "area": "US-TN",
+   "park": "Natchez Trace Trail National Scenic Trail",
+   "agency_group": "nps.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "US-TN",
+   "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2?f=html",
+   "service_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+   "name_field": "UNIT_NAME",
+   "agency": "National Park Service",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 1062,
+   "record_name": "Natchez Trace Parkway",
+   "layer": "US-NPS-boundary",
+   "record_link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?where=OBJECTID%3D1062&outFields=%2A&f=html",
+   "where": "OBJECTID=1062",
+   "pin_m": 0,
+   "acres_approx": 52848.9,
+   "grade": "official",
+   "envelope": [
+    -91.37323,
+    31.54408,
+    -86.95799,
+    36.03737
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "MISSISSIPPI",
+     "layer": "US-NPS-tracts",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?geometry=-88.71%2C34.3305&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "line park vs polygon record (or the other way round)",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Natchez Trace Parkway' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-TN-park-337",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-TN-preserve-338",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-TN-wildlife-339",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-TN-forest-340",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-TN-wildlife-341",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-TN-land-342",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-TN-park-343",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-TN-preserve-344",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-TN-wildlife-345",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-TN-park-346",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-TN-land-380",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "hit (1 at pin, 2 by name)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Natchez Trace Parkway",
+    "why_this_record": "same land also in US-NPS-tracts 'MISSISSIPPI': merged, counted once; record 'Natchez Trace Parkway' (US-NPS-boundary); pin inside; about 52848.9 acres; Rule G: UNLIKELY (line park vs polygon record (or the other way round)); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): line park vs polygon record (or the other way round)",
+    "step_reached": "L0",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-8204",
+   "area": "US-VA",
+   "park": "Yorktown National Battlefield",
+   "agency_group": "nps.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "US-VA",
+   "url": "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3?f=html",
+   "service_url": "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3",
+   "name_field": "PropertyNames",
+   "agency": "Virginia Dept. of Historic Resources (credit) (land, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 1599328,
+   "record_name": "Colonial National Historical Park, Yorktown Unit (NRHP Listing), Yorktown Historic District (Historic/Current)",
+   "layer": "PACK-US-VA-land-361",
+   "record_link": "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3/query?where=OBJECTID%3D1599328&outFields=%2A&f=html",
+   "where": "OBJECTID=1599328",
+   "pin_m": 0,
+   "acres_approx": 4490.3,
+   "grade": "official",
+   "envelope": [
+    -76.54708,
+    37.19319,
+    -76.48342,
+    37.24322
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Colonial National Historical Park (NRHP Listing), Colonial National Monument (Historic), Yorktown and Yorktown Battlefield (Descriptive)",
+     "layer": "PACK-US-VA-land-361",
+     "tier": "T-3",
+     "pin_m": 76
+    }
+   ],
+   "source_url": "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3/query?geometry=-76.5106%2C37.2393&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "container: one record under several parks (or a management district)",
+   "size_band": "unknown",
+   "why": "T-2 WEAK: 'Colonial National Historical Park, Yorktown Unit (NRHP Listing), Yorktown Historic District (Historic/Current)' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-VA-trail-1",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-VA-trail-5",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-trail-6",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-trail-23",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-trail-58",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-forest-354",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-preserve-355",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-park-356",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-park-357",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-land-358",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-park-359",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-wildlife-360",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-VA-land-361",
+      "gave": "hit (2 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Colonial National Historical Park, Yorktown Unit (NRHP Listing), Yorktown Historic District (Historic/Current)",
+    "why_this_record": "same land also in PACK-US-VA-land-361 'Colonial National Historical Park (NRHP Listing), Colonial National Monument (Historic), Yorktown and Yorktown Battlefield (Descriptive)': merged, counted once; record 'Colonial National Historical Park, Yorktown Unit (NRHP Listing), Yorktown Historic District (Historic/Current)' (PACK-US-VA-land-361); pin inside; about 4490.3 acres; Rule G: UNLIKELY (container: one record under several parks (or a management district)); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "other names at the pin: colonial national historical park nrhp listing colonial national monument historic yorktown and yorktown battlefield descriptive; check the kind of place and the size"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): container: one record under several parks (or a management district)",
+    "step_reached": "L0",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-9902",
+   "area": "US-VA",
+   "park": "Colonial National Parkway",
+   "agency_group": "nps.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "US-VA",
+   "url": "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3?f=html",
+   "service_url": "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3",
+   "name_field": "PropertyNames",
+   "agency": "Virginia Dept. of Historic Resources (credit) (land, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 1738905,
+   "record_name": "Colonial National Historic Park (Historic/Current), Colonial Parkway (NRHP Listing), Colonial Parkway Historic District (Historic/Current)",
+   "layer": "PACK-US-VA-land-361",
+   "record_link": "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3/query?where=OBJECTID%3D1738905&outFields=%2A&f=html",
+   "where": "OBJECTID=1738905",
+   "pin_m": 0,
+   "acres_approx": 4760.6,
+   "grade": "official",
+   "envelope": [
+    -76.7833,
+    37.19006,
+    -76.52526,
+    37.29922
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Colonial National Historical Park (NRHP Listing), Colonial National Monument (Historic), Yorktown and Yorktown Battlefield (Descriptive)",
+     "layer": "PACK-US-VA-land-361",
+     "tier": "T-3",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://vcris.dhr.virginia.gov/arcgis/rest/services/dhr/dhr_public/MapServer/3/query?geometry=-76.5565%2C37.2688&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "container: one record under several parks (or a management district)",
+   "size_band": "unknown",
+   "why": "T-2 WEAK: 'Colonial National Historic Park (Historic/Current), Colonial Parkway (NRHP Listing), Colonial Parkway Historic District (Historic/Current)' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-VA-trail-1",
+      "gave": "no hit (0 at pin, 5 by name)"
+     },
+     {
+      "source": "PACK-US-VA-trail-5",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-trail-6",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-trail-23",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-trail-58",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-forest-354",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-preserve-355",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-park-356",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-park-357",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-land-358",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-park-359",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-wildlife-360",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-VA-land-361",
+      "gave": "hit (2 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Colonial National Historic Park (Historic/Current), Colonial Parkway (NRHP Listing), Colonial Parkway Historic District (Historic/Current)",
+    "why_this_record": "same land also in PACK-US-VA-land-361 'Colonial National Historical Park (NRHP Listing), Colonial National Monument (Historic), Yorktown and Yorktown Battlefield (Descriptive)': merged, counted once; record 'Colonial National Historic Park (Historic/Current), Colonial Parkway (NRHP Listing), Colonial Parkway Historic District (Historic/Current)' (PACK-US-VA-land-361); pin inside; about 4760.6 acres; Rule G: UNLIKELY (container: one record under several parks (or a management district)); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "other names at the pin: colonial national historical park nrhp listing colonial national monument historic yorktown and yorktown battlefield descriptive; check the kind of place and the size"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): container: one record under several parks (or a management district)",
+    "step_reached": "L0",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-9957",
+   "area": "US-VA",
+   "park": "Shenandoah Wilderness Area",
+   "agency_group": "nps.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "US-VA",
+   "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Trails/FeatureServer/0?f=html",
+   "service_url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Trails/FeatureServer/0",
+   "name_field": "TRLNAME",
+   "agency": "Trails",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 11150,
+   "record_name": "Shenandoah National Park",
+   "layer": "PACK-US-VA-trail-1",
+   "record_link": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Trails/FeatureServer/0/query?where=OBJECTID%3D11150&outFields=%2A&f=html",
+   "where": "OBJECTID=11150",
+   "pin_m": 116,
+   "acres_approx": null,
+   "grade": "official",
+   "envelope": [
+    -78.35591,
+    38.57814,
+    -78.31096,
+    38.58694
+   ],
+   "rule": "R-G12",
+   "others": [
+    {
+     "record_name": "Office, 201 Maryland Avenue (Function/Location), Shenandoah Land and Improvement Company Office (Historic), Stevens Cottage (Historic)",
+     "layer": "PACK-US-VA-land-361",
+     "tier": "T-4",
+     "pin_m": 27742
+    },
+    {
+     "record_name": "Shen-va-lee (Alternate Spelling), Shenandoah Estates (Historic), Shenvalee (Historic), Shenvalee Club (Historic), Shenvalee Golf Resort (NRHP Listing), Shenvalee Hotel (Historic), Shenvalee Hotel and Golf Course (Historic), Shenvalee Lodge (Historic)",
+     "layer": "PACK-US-VA-land-361",
+     "tier": "T-4",
+     "pin_m": 30159
+    },
+    {
+     "record_name": "Shenandoah County Courthouse (NRHP Listing)",
+     "layer": "PACK-US-VA-land-361",
+     "tier": "T-4",
+     "pin_m": 37178
+    },
+    {
+     "record_name": "Beckford Parish Glebe Farm (Historic), Shenandoah County Almshouse (Historic), Shenandoah County Poor Farm (Historic/Current)",
+     "layer": "PACK-US-VA-land-361",
+     "tier": "T-4",
+     "pin_m": 40251
+    }
+   ],
+   "source_url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Trails/FeatureServer/0/query?geometry=-78.3275%2C38.5774&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "line park vs polygon record (or the other way round)",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Shenandoah National Park' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-VA-trail-1",
+      "gave": "hit (1 at pin, 7 by name)"
+     },
+     {
+      "source": "PACK-US-VA-trail-5",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-trail-6",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-trail-23",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-trail-58",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-forest-354",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-preserve-355",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-park-356",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-park-357",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-land-358",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-park-359",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-wildlife-360",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-VA-land-361",
+      "gave": "hit (0 at pin, 8 by name)"
+     },
+     {
+      "source": "US-VA-state_park-Potomac_Heritage_National_Scenic_Trail_o-18",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-VA-state_park-Potomac_Heritage_National_Scenic_Trail_o-19",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-VA-trail-Virginia_Rails_to_Trails-23",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AR-trail-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AZ-land-2",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AR-trail-3",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AZ-trail-22",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "pin just outside (116 m): candidate only (G-F1)",
+    "why_this_record": "record 'Shenandoah National Park' (PACK-US-VA-trail-1); pin 116 m from the edge; Rule G: UNLIKELY (line park vs polygon record (or the other way round)); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): line park vs polygon record (or the other way round)",
+    "step_reached": "L0",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-9961",
+   "area": "US-VA",
+   "park": "Dyke Marsh Wildlife Reserve",
+   "agency_group": "nps.gov",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "US-VA",
+   "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Trails/FeatureServer/0?f=html",
+   "service_url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Trails/FeatureServer/0",
+   "name_field": "TRLNAME",
+   "agency": "Trails",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-4",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 29056,
+   "record_name": "MVT Bridge 23  (Long Dyke Marsh Bridge)",
+   "layer": "PACK-US-VA-trail-1",
+   "record_link": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Trails/FeatureServer/0/query?where=OBJECTID%3D29056&outFields=%2A&f=html",
+   "where": "OBJECTID=29056",
+   "pin_m": 268,
+   "acres_approx": null,
+   "grade": "official",
+   "envelope": [
+    -77.05313,
+    38.76675,
+    -77.05308,
+    38.76966
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Dyke Marsh Boardwalk",
+     "layer": "PACK-US-VA-trail-1",
+     "tier": "T-4",
+     "pin_m": 370
+    },
+    {
+     "record_name": "Dyke Marsh Boardwalk",
+     "layer": "PACK-US-VA-trail-1",
+     "tier": "T-4",
+     "pin_m": 376
+    },
+    {
+     "record_name": "MVT Bridge 19  (Across frm Dyke Marsh overlook)",
+     "layer": "PACK-US-VA-trail-1",
+     "tier": "T-4",
+     "pin_m": 966
+    },
+    {
+     "record_name": "Dyke Marsh Trail",
+     "layer": "PACK-US-VA-trail-1",
+     "tier": "T-6",
+     "pin_m": 268
+    }
+   ],
+   "source_url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_Trails/FeatureServer/0/query?where=TRLNAME%20LIKE%20%27%25Marsh%25%27&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=0.0002&geometryPrecision=6&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "pin not inside nor within 150 m with a name match (distance check)",
+   "size_band": "unknown",
+   "why": "T-4 WEAK: 'MVT Bridge 23  (Long Dyke Marsh Bridge)' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-VA-trail-1",
+      "gave": "hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-VA-trail-5",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-trail-6",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-trail-23",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-trail-58",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-forest-354",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-preserve-355",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-park-356",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-park-357",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-land-358",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-park-359",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-VA-wildlife-360",
+      "gave": "no hit (0 at pin, 9 by name)"
+     },
+     {
+      "source": "PACK-US-VA-land-361",
+      "gave": "no hit (0 at pin, 13 by name)"
+     },
+     {
+      "source": "US-VA-state_park-Potomac_Heritage_National_Scenic_Trail_o-18",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-VA-state_park-Potomac_Heritage_National_Scenic_Trail_o-19",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-VA-trail-Virginia_Rails_to_Trails-23",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AR-trail-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AZ-land-2",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AR-trail-3",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AZ-trail-22",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "https://www.nps.gov/gwmp/planyourvisit/dykemarsh.htm",
+      "gave": "page read (fetch); 0 file candidates"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-VA in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'MVT Bridge 23  (Long Dyke Marsh Bridge)' (PACK-US-VA-trail-1); pin 268 m from the edge; Rule G: UNLIKELY (pin not inside nor within 150 m with a name match (distance check)); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+    "step_reached": "L5",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
    "ref": "US-5787",
    "area": "US-UT",
    "park": "Hidden Valley Trail State Recreation Area",
@@ -425696,6 +427655,1626 @@
     ],
     "solved": "",
     "why_this_record": "record 'Bureau of Land Management' (US-BLM-sma); pin inside; about 22835882.9 acres; Rule G: UNLIKELY (surface-manager layer: never matched against parks); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks",
+    "step_reached": "L5",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-6050",
+   "area": "US-UT",
+   "park": "Ibex / Tule Valley Hardpan BLM Backcountry Airstrip",
+   "agency_group": "utahbackcountrypilots.org",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "US-UT",
+   "url": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1",
+   "name_field": "HA_NAME",
+   "agency": "BLM herd areas",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-6",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 63,
+   "record_name": "Kingtop",
+   "layer": "PACK-US-land-188",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1/query?where=OBJECTID%3D63&outFields=%2A&f=html",
+   "where": "OBJECTID=63",
+   "pin_m": 0,
+   "acres_approx": 171401.6,
+   "grade": "official",
+   "envelope": [
+    -113.72269,
+    38.78615,
+    -113.36024,
+    39.08473
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Kingtop",
+     "layer": "PACK-US-land-189",
+     "tier": "T-6",
+     "pin_m": null
+    },
+    {
+     "record_name": "Bureau of Land Management",
+     "layer": "US-BLM-sma",
+     "tier": "T-6",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1/query?geometry=-113.367%2C38.9834&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-6 WEAK: 'Kingtop' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-UT-park-7",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-8",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-18",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-UT-trail-28",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-UT-trail-37",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-UT-land-40",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-trail-56",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-57",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-UT-land-351",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-UT-land-352",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-UT-land-353",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-381",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-UT-trail-DPRTrails-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AR-trail-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AR-trail-3",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AK-land-41",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-UT in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "same land also in PACK-US-land-189 'Kingtop', US-BLM-sma 'Bureau of Land Management': merged, counted once; record 'Kingtop' (PACK-US-land-188); pin inside; about 171401.6 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5621",
+   "area": "CA-ON",
+   "park": "Dalewood Conservation Area",
+   "agency_group": "kettlecreekconservation.on.ca",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "CA-ON",
+   "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11?f=html",
+   "service_url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11",
+   "name_field": null,
+   "agency": "Conservation authorities (admin areas: NOT the CA land)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-5",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 417,
+   "record_name": "Kettle Creek Conservation Authority",
+   "layer": "CA-ON-ca-admin",
+   "record_link": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11/query?where=OBJECTID%3D417&outFields=%2A&f=html",
+   "where": "OBJECTID=417",
+   "pin_m": 0,
+   "acres_approx": 126642.9,
+   "grade": "approximate",
+   "envelope": [
+    -81.37515,
+    42.6484,
+    -80.91255,
+    42.93174
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11/query?geometry=-81.1798%2C42.8025&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-5 WEAK: 'Kettle Creek Conservation Authority' at the POTA pin (approximate source)",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-ON-preserve-67",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-preserve-68",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-CA-ON-park-86",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-trail-87",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-wildlife-88",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-pp",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-cr",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-municipal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-396",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-397",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-398",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-399",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-400",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-401",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-402",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-403",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-404",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-405",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-406",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-407",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-408",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-409",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-410",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-411",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-412",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-park-434",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-435",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-436",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-437",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-nwa",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-CANAD-88",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-CANAD-90",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "CA-ON-ca-admin",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-ON in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Kettle Creek Conservation Authority' (CA-ON-ca-admin); pin inside; about 126642.9 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "approximate source: never a full YES"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5622",
+   "area": "CA-ON",
+   "park": "Lake Whittaker Conservation Area",
+   "agency_group": "kettlecreekconservation.on.ca",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "CA-ON",
+   "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11?f=html",
+   "service_url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11",
+   "name_field": null,
+   "agency": "Conservation authorities (admin areas: NOT the CA land)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-5",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 417,
+   "record_name": "Kettle Creek Conservation Authority",
+   "layer": "CA-ON-ca-admin",
+   "record_link": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11/query?where=OBJECTID%3D417&outFields=%2A&f=html",
+   "where": "OBJECTID=417",
+   "pin_m": 0,
+   "acres_approx": 126642.9,
+   "grade": "approximate",
+   "envelope": [
+    -81.37515,
+    42.6484,
+    -80.91255,
+    42.93174
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11/query?geometry=-80.956%2C42.9087&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-5 WEAK: 'Kettle Creek Conservation Authority' at the POTA pin (approximate source)",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-ON-preserve-67",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-preserve-68",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-CA-ON-park-86",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-trail-87",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-wildlife-88",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-pp",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-cr",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-municipal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-396",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-397",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-398",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-399",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-400",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-401",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-402",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-403",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-404",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-405",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-406",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-407",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-408",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-409",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-410",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-411",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-412",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-park-434",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-435",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-436",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-437",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-nwa",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-CANAD-88",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-CANAD-90",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "CA-ON-ca-admin",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-ON in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "WRONG KIND?: park is a lake, record is a river",
+    "why_this_record": "record 'Kettle Creek Conservation Authority' (CA-ON-ca-admin); pin inside; about 126642.9 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "approximate source: never a full YES"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5623",
+   "area": "CA-ON",
+   "park": "Dan Patterson Conservation Area",
+   "agency_group": "kettlecreekconservation.on.ca",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "CA-ON",
+   "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11?f=html",
+   "service_url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11",
+   "name_field": null,
+   "agency": "Conservation authorities (admin areas: NOT the CA land)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-5",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 417,
+   "record_name": "Kettle Creek Conservation Authority",
+   "layer": "CA-ON-ca-admin",
+   "record_link": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11/query?where=OBJECTID%3D417&outFields=%2A&f=html",
+   "where": "OBJECTID=417",
+   "pin_m": 0,
+   "acres_approx": 126642.9,
+   "grade": "approximate",
+   "envelope": [
+    -81.37515,
+    42.6484,
+    -80.91255,
+    42.93174
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11/query?geometry=-81.1491%2C42.8236&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-5 WEAK: 'Kettle Creek Conservation Authority' at the POTA pin (approximate source)",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-ON-preserve-67",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-preserve-68",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-CA-ON-park-86",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-trail-87",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-wildlife-88",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-pp",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-cr",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-municipal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-396",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-397",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-398",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-399",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-400",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-401",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-402",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-403",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-404",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-405",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-406",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-407",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-408",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-409",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-410",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-411",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-412",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-park-434",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-435",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-436",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-437",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-nwa",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-CANAD-88",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-CANAD-90",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "CA-ON-ca-admin",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-ON in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Kettle Creek Conservation Authority' (CA-ON-ca-admin); pin inside; about 126642.9 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "approximate source: never a full YES"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5624",
+   "area": "CA-ON",
+   "park": "Kirk-Cousins Management Area",
+   "agency_group": "kettlecreekconservation.on.ca",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "CA-ON",
+   "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11?f=html",
+   "service_url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11",
+   "name_field": null,
+   "agency": "Conservation authorities (admin areas: NOT the CA land)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-5",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 417,
+   "record_name": "Kettle Creek Conservation Authority",
+   "layer": "CA-ON-ca-admin",
+   "record_link": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11/query?where=OBJECTID%3D417&outFields=%2A&f=html",
+   "where": "OBJECTID=417",
+   "pin_m": 0,
+   "acres_approx": 126642.9,
+   "grade": "approximate",
+   "envelope": [
+    -81.37515,
+    42.6484,
+    -80.91255,
+    42.93174
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11/query?geometry=-81.1949%2C42.8906&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-5 WEAK: 'Kettle Creek Conservation Authority' at the POTA pin (approximate source)",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-ON-preserve-67",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-preserve-68",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-CA-ON-park-86",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-trail-87",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-wildlife-88",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-pp",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-cr",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-municipal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-396",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-397",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-398",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-399",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-400",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-401",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-402",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-403",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-404",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-405",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-406",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-407",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-408",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-409",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-410",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-411",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-412",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-park-434",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-435",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-436",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-437",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-nwa",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-CANAD-88",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-CANAD-90",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "CA-ON-ca-admin",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-ON in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Kettle Creek Conservation Authority' (CA-ON-ca-admin); pin inside; about 126642.9 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "approximate source: never a full YES"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-5625",
+   "area": "CA-ON",
+   "park": "Union Pond Conservation Area",
+   "agency_group": "kettlecreekconservation.on.ca",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "CA-ON",
+   "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11?f=html",
+   "service_url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11",
+   "name_field": null,
+   "agency": "Conservation authorities (admin areas: NOT the CA land)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-5",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 417,
+   "record_name": "Kettle Creek Conservation Authority",
+   "layer": "CA-ON-ca-admin",
+   "record_link": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11/query?where=OBJECTID%3D417&outFields=%2A&f=html",
+   "where": "OBJECTID=417",
+   "pin_m": 0,
+   "acres_approx": 126642.9,
+   "grade": "approximate",
+   "envelope": [
+    -81.37515,
+    42.6484,
+    -80.91255,
+    42.93174
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11/query?geometry=-81.1972%2C42.7058&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "name: none word(s) in common",
+   "size_band": "unknown",
+   "why": "T-5 WEAK: 'Kettle Creek Conservation Authority' at the POTA pin (approximate source)",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-ON-preserve-67",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-preserve-68",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-CA-ON-park-86",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-trail-87",
+      "gave": "no hit (0 at pin, 4 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-wildlife-88",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-pp",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-cr",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-municipal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-396",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-397",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-398",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-399",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-400",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-401",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-402",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-403",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-404",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-405",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-406",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-407",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-408",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-409",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-410",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-411",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-412",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-park-434",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-435",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-436",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-437",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-nwa",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-CANAD-88",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-CANAD-90",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "CA-ON-ca-admin",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-ON in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Kettle Creek Conservation Authority' (CA-ON-ca-admin); pin inside; about 126642.9 acres; Rule G: UNLIKELY (name: none word(s) in common); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "approximate source: never a full YES"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+    "step_reached": "L5",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-13230",
+   "area": "US-NV",
+   "park": "Fairview Peak Earthquake Faults BLM Interpretive Site",
+   "agency_group": "hmdb.org",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "US-NV",
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7",
+   "name_field": null,
+   "agency": "Bureau of Land Management",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-6",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 9,
+   "record_name": "Bureau of Land Management",
+   "layer": "US-BLM-sma",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7/query?where=OBJECTID%3D9&outFields=%2A&f=html",
+   "where": "OBJECTID=9",
+   "pin_m": 0,
+   "acres_approx": 45391758.4,
+   "grade": "official",
+   "envelope": [
+    -120.00112,
+    35.0671,
+    -114.03946,
+    42.00191
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Numu Newe Special Management Area",
+     "layer": "PACK-US-NV-land-45",
+     "tier": "T-5",
+     "pin_m": null
+    },
+    {
+     "record_name": "Numu Newe Special Management Area",
+     "layer": "PACK-US-AK-land-215",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7/query?geometry=-118.13%2C39.2811&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "surface-manager layer: never matched against parks",
+   "size_band": "unknown",
+   "why": "T-6 WEAK: 'Bureau of Land Management' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-NV-trail-9",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NV-land-45",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-trail-54",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-wildlife-302",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NV-land-303",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-park-304",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NV-land-305",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-park-306",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-NV-land-307",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-land-2",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AK-land-41",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 4 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 4 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-NV in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Bureau of Land Management' (US-BLM-sma); pin inside; about 45391758.4 acres; Rule G: UNLIKELY (surface-manager layer: never matched against parks); size unknown",
     "confidence": {
      "level": "weak",
      "double_check": "name or pin only: read the agency map"
@@ -517020,6 +520599,456 @@
     "confidence": {
      "level": "weak",
      "double_check": "record is only 0.1 acres for a big kind of park; name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+    "step_reached": "L5",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-0208",
+   "area": "CA-ON",
+   "park": "Fawn River Provincial Park",
+   "agency_group": "ontarioparks.com",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "CA-ON",
+   "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/4?f=html",
+   "service_url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/4",
+   "name_field": null,
+   "agency": "Ontario Parks (MNR)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-4",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 38289,
+   "record_name": "FAWN RIVER PROVINCIAL PARK",
+   "layer": "CA-ON-pp",
+   "record_link": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/4/query?where=OBJECTID%3D38289&outFields=%2A&f=html",
+   "where": "OBJECTID=38289",
+   "pin_m": 17405,
+   "acres_approx": 29236.6,
+   "grade": "official",
+   "envelope": [
+    -90.78559,
+    53.74663,
+    -89.29613,
+    54.12738
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "FAWN RIVER PROVINCIAL PARK",
+     "layer": "PACK-CA-ON-park-434",
+     "tier": "T-4",
+     "pin_m": 17405
+    }
+   ],
+   "source_url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/4/query?where=PROTECTED_AREA_NAME_ENG%20LIKE%20%27%25RIVER%25%27&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=0.0002&geometryPrecision=6&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "pin not inside nor within 150 m with a name match (distance check)",
+   "size_band": "unknown",
+   "why": "T-4 WEAK: 'FAWN RIVER PROVINCIAL PARK' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-ON-preserve-67",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-preserve-68",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-CA-ON-park-86",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-trail-87",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-wildlife-88",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-pp",
+      "gave": "hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "CA-ON-cr",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "CA-ON-municipal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-396",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-397",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-398",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-399",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-400",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-401",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-402",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-403",
+      "gave": "no hit (0 at pin, 22 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-404",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-405",
+      "gave": "no hit (0 at pin, 7 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-406",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-407",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-408",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-409",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-410",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-411",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-412",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-park-434",
+      "gave": "hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-435",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-436",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-437",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-nwa",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "WB-CANAD-88",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-CANAD-90",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "CA-ON-ca-admin",
+      "gave": "no hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-ON in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "same land also in PACK-CA-ON-park-434 'FAWN RIVER PROVINCIAL PARK': merged, counted once; record 'FAWN RIVER PROVINCIAL PARK' (CA-ON-pp); pin 17405 m from the edge; about 29236.6 acres; Rule G: UNLIKELY (pin not inside nor within 150 m with a name match (distance check)); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+    "step_reached": "L5",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-1336",
+   "area": "CA-ON",
+   "park": "Cache Bay Wetland Conservation Reserve",
+   "agency_group": "ontarioparks.com",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "CA-ON",
+   "url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2?f=html",
+   "service_url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2",
+   "name_field": null,
+   "agency": "Ontario MNR",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-4",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 10721,
+   "record_name": "CACHE BAY WETLAND CONSERVATION RESERVE",
+   "layer": "CA-ON-cr",
+   "record_link": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2/query?where=OBJECTID%3D10721&outFields=%2A&f=html",
+   "where": "OBJECTID=10721",
+   "pin_m": 24874,
+   "acres_approx": 9739.5,
+   "grade": "official",
+   "envelope": [
+    -80.05111,
+    46.28771,
+    -79.95364,
+    46.37337
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "CACHE BAY WETLAND CONSERVATION RESERVE",
+     "layer": "PACK-CA-ON-park-435",
+     "tier": "T-4",
+     "pin_m": 24874
+    }
+   ],
+   "source_url": "https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2/query?where=PROTECTED_AREA_NAME_ENG%20LIKE%20%27%25WETLAND%25%27&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=0.0002&geometryPrecision=6&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "pin not inside nor within 150 m with a name match (distance check)",
+   "size_band": "unknown",
+   "why": "T-4 WEAK: 'CACHE BAY WETLAND CONSERVATION RESERVE' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-ON-preserve-67",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-preserve-68",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-CA-ON-park-86",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-trail-87",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-wildlife-88",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-pp",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "CA-ON-cr",
+      "gave": "hit (0 at pin, 16 by name)"
+     },
+     {
+      "source": "CA-ON-municipal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-396",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-397",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-398",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-399",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-400",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-401",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-402",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-403",
+      "gave": "no hit (0 at pin, 22 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-404",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-405",
+      "gave": "no hit (0 at pin, 5 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-406",
+      "gave": "no hit (0 at pin, 14 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-407",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-408",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-409",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-land-410",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-411",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-land-412",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-ON-park-434",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-435",
+      "gave": "hit (0 at pin, 16 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-436",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-ON-park-437",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-ON-nwa",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-CANAD-88",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-CANAD-90",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "CA-ON-ca-admin",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for CA-ON in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "same land also in PACK-CA-ON-park-435 'CACHE BAY WETLAND CONSERVATION RESERVE': merged, counted once; record 'CACHE BAY WETLAND CONSERVATION RESERVE' (CA-ON-cr); pin 24874 m from the edge; about 9739.5 acres; Rule G: UNLIKELY (pin not inside nor within 150 m with a name match (distance check)); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
     }
    },
    "whynot": {
@@ -704118,6 +708147,1070 @@
    "whynot": {
     "tag": "UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks",
     "step_reached": "L5",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-10480",
+   "area": "US-OR",
+   "park": "Chukar Park BLM Recreation Management Area",
+   "agency_group": "maps.app.goo.gl",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "US-OR",
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7",
+   "name_field": null,
+   "agency": "Bureau of Land Management",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 10,
+   "record_name": "BLM",
+   "layer": "US-BLM-sma",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7/query?where=OBJECTID%3D10&outFields=%2A&f=html",
+   "where": "OBJECTID=10",
+   "pin_m": 0,
+   "acres_approx": 16371258.3,
+   "grade": "official",
+   "envelope": [
+    -124.69639,
+    41.99208,
+    -116.52759,
+    49.00011
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Chukar Park Recreation Site",
+     "layer": "PACK-US-land-207",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Chukar Park Recreation Site",
+     "layer": "PACK-US-land-208",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Chukar Park Recreation Site",
+     "layer": "PACK-US-AK-land-214",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "<Null>",
+     "layer": "PACK-US-OR-land-323",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7/query?geometry=-118.155%2C43.8034&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "surface-manager layer: never matched against parks",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'BLM' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-OR-land-206",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-OR-park-319",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-OR-wildlife-320",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-OR-land-321",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-OR-park-322",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-OR-land-323",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-499",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AR-trail-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AR-trail-3",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NV-trail-9",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AZ-trail-22",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-MI-land-26",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AZ-land-44",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NV-land-45",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "hit (2 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "hit (2 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it BLM",
+    "why_this_record": "same land also in PACK-US-land-207 'Chukar Park Recreation Site', PACK-US-land-208 'Chukar Park Recreation Site', PACK-US-AK-land-214 'Chukar Park Recreation Site': merged, counted once; record 'BLM' (US-BLM-sma); pin inside; about 16371258.3 acres; Rule G: UNLIKELY (surface-manager layer: never matched against parks); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "other names at the pin: chukar park recreation site; check the kind of place and the size"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks",
+    "step_reached": "L0",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-10484",
+   "area": "US-OR",
+   "park": "Antelope Reservoir BLM Recreation Management Area",
+   "agency_group": "maps.app.goo.gl",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "US-OR",
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7",
+   "name_field": null,
+   "agency": "Bureau of Land Management",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-6",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 10,
+   "record_name": "Bureau of Land Management",
+   "layer": "US-BLM-sma",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7/query?where=OBJECTID%3D10&outFields=%2A&f=html",
+   "where": "OBJECTID=10",
+   "pin_m": 0,
+   "acres_approx": 16371258.3,
+   "grade": "official",
+   "envelope": [
+    -124.69639,
+    41.99208,
+    -116.52759,
+    49.00011
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "<Null>",
+     "layer": "PACK-US-OR-land-323",
+     "tier": "T-5",
+     "pin_m": null
+    },
+    {
+     "record_name": "NA",
+     "layer": "PACK-US-land-208",
+     "tier": "T-5",
+     "pin_m": null
+    },
+    {
+     "record_name": "NA",
+     "layer": "PACK-US-AK-land-214",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7/query?geometry=-117.237%2C42.9086&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "surface-manager layer: never matched against parks",
+   "size_band": "unknown",
+   "why": "T-6 WEAK: 'Bureau of Land Management' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-OR-land-206",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-OR-park-319",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-OR-wildlife-320",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-OR-land-321",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-OR-park-322",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-OR-land-323",
+      "gave": "hit (1 at pin, 4 by name)"
+     },
+     {
+      "source": "WB-US-499",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AR-trail-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AR-trail-3",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NV-trail-9",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AZ-trail-22",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-MI-land-26",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AZ-land-44",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NV-land-45",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 11 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "hit (1 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "hit (1 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-OR in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "same land also in PACK-US-OR-land-323 '<Null>', PACK-US-land-208 'NA', PACK-US-AK-land-214 'NA': merged, counted once; record 'Bureau of Land Management' (US-BLM-sma); pin inside; about 16371258.3 acres; Rule G: UNLIKELY (surface-manager layer: never matched against parks); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks",
+    "step_reached": "L5",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-10491",
+   "area": "US-OR",
+   "park": "Radar Hill BLM Recreation Management Area",
+   "agency_group": "maps.app.goo.gl",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "US-OR",
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7",
+   "name_field": null,
+   "agency": "Bureau of Land Management",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-6",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 10,
+   "record_name": "Bureau of Land Management",
+   "layer": "US-BLM-sma",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7/query?where=OBJECTID%3D10&outFields=%2A&f=html",
+   "where": "OBJECTID=10",
+   "pin_m": 0,
+   "acres_approx": 16371258.3,
+   "grade": "official",
+   "envelope": [
+    -124.69639,
+    41.99208,
+    -116.52759,
+    49.00011
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Radar Hill OHV Area",
+     "layer": "PACK-US-land-207",
+     "tier": "T-6",
+     "pin_m": 41
+    },
+    {
+     "record_name": "Radar Hill OHV Area",
+     "layer": "PACK-US-land-208",
+     "tier": "T-6",
+     "pin_m": 41
+    },
+    {
+     "record_name": "Radar Hill OHV Area",
+     "layer": "PACK-US-AK-land-214",
+     "tier": "T-6",
+     "pin_m": 41
+    }
+   ],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7/query?geometry=-119.136%2C43.5609&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "surface-manager layer: never matched against parks",
+   "size_band": "unknown",
+   "why": "T-6 WEAK: 'Bureau of Land Management' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-OR-land-206",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-OR-park-319",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-OR-wildlife-320",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-OR-land-321",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-OR-park-322",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-OR-land-323",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-499",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AR-trail-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AR-trail-3",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NV-trail-9",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AZ-trail-22",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-MI-land-26",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AZ-land-44",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NV-land-45",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "L4 park page",
+      "gave": "no official page known"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-OR in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "same land also in PACK-US-land-207 'Radar Hill OHV Area', PACK-US-land-208 'Radar Hill OHV Area', PACK-US-AK-land-214 'Radar Hill OHV Area': merged, counted once; record 'Bureau of Land Management' (US-BLM-sma); pin inside; about 16371258.3 acres; Rule G: UNLIKELY (surface-manager layer: never matched against parks); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks",
+    "step_reached": "L5",
+    "date": "2026-11-12"
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-10494",
+   "area": "US-OR",
+   "park": "Millpond BLM Recreation Management Area",
+   "agency_group": "maps.app.goo.gl",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "evidence",
+   "st": "US-OR",
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7",
+   "name_field": null,
+   "agency": "Bureau of Land Management",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 10,
+   "record_name": "BLM",
+   "layer": "US-BLM-sma",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7/query?where=OBJECTID%3D10&outFields=%2A&f=html",
+   "where": "OBJECTID=10",
+   "pin_m": 0,
+   "acres_approx": 16371258.3,
+   "grade": "official",
+   "envelope": [
+    -124.69639,
+    41.99208,
+    -116.52759,
+    49.00011
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Millpond/Lone Pine Recreation Site",
+     "layer": "PACK-US-OR-land-323",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Millpond Recreation Site",
+     "layer": "PACK-US-land-207",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Millpond Recreation Site",
+     "layer": "PACK-US-land-208",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Millpond/Lone Pine Recreation Site",
+     "layer": "PACK-US-land-208",
+     "tier": "T-3",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_SMA_LimitedScale/MapServer/7/query?geometry=-122.949%2C43.3806&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-12",
+   "rule_g": "UNLIKELY",
+   "rule_g_why": "surface-manager layer: never matched against parks",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'BLM' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-OR-land-206",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-OR-park-319",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-OR-wildlife-320",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-OR-land-321",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-OR-park-322",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-OR-land-323",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "WB-US-499",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AR-trail-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AR-trail-3",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NV-trail-9",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AZ-trail-22",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-MI-land-26",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AZ-land-44",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NV-land-45",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "hit (2 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "hit (3 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "hit (3 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it BLM",
+    "why_this_record": "same land also in PACK-US-OR-land-323 'Millpond/Lone Pine Recreation Site', PACK-US-land-207 'Millpond Recreation Site', PACK-US-land-208 'Millpond Recreation Site': merged, counted once; record 'BLM' (US-BLM-sma); pin inside; about 16371258.3 acres; Rule G: UNLIKELY (surface-manager layer: never matched against parks); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "other names at the pin: millpond lone pine recreation site; millpond recreation site; check the kind of place and the size"
+    }
+   },
+   "whynot": {
+    "tag": "UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks",
+    "step_reached": "L0",
     "date": "2026-11-12"
    },
    "pass": 1
