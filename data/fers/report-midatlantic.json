@@ -1,6 +1,6 @@
 {
  "about": "Counts from the 2-fer bot (kpc_fers.py). Hidden: data only.",
- "fers_rules": "aa7561256260",
+ "fers_rules": "cef323de4c9a",
  "pass1": {
   "bad POTA pin: tested by saved record ids": [
    "CA-1930",
@@ -176,7 +176,7 @@
    "CA-2538"
   ],
   "cell_m": 20.0,
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 186,
@@ -191,6 +191,7 @@
   },
   "missing boundary": 13,
   "official parks": 1599,
+  "pairs reused (nothing changed)": 7289,
   "pairs tested": 7293,
   "pairs whose boxes touch": 7293,
   "parks done by the box test": 0,
@@ -204,9 +205,9 @@
    "W&S river corridors joined as area parks: 14 (saved copy: 32 corridors)",
    "284 trail parks tested by their official line (R5), not their polygon: CA-1301, CA-1599, CA-3546, CA-4786, CA-5344, CA-5536, CA-5565, CA-5595, CA-5628, CA-5688",
    "508 parks filed under another state but crossing / at the edge of this area kept: US-0346, US-0714, US-10063, US-1487, US-1522, US-1542, US-6636, US-6669",
-   "full rebuild (KPC_FERS_FULL): every pair is tested again",
    "US-4567: water route with no water/land split: bank test only, centre-line test skipped (not sure)",
    "NHD water (one try): The read operation timed out",
+   "US-4567: water route with no water/land split: bank test only, centre-line test skipped (not sure)",
    "NHD water (one try): The read operation timed out",
    "NHD water (one try): The read operation timed out",
    "US-4581: water route with no water/land split: bank test only, centre-line test skipped (not sure)",
