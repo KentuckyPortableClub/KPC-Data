@@ -1,10 +1,10 @@
 {
  "about": "world-key: the HELD build (data/waiting/in/data/world-key/) vs the LIVE key (data/world-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'world-key', 'build': the held build id from data/waiting/in/data/world-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-12 18:55 UTC",
+ "made": "2026-11-12 20:57 UTC",
  "totals": {
   "gained": 903,
   "lost": 103,
-  "pieces_changed": 4723,
+  "pieces_changed": 4727,
   "grade_changed": 12319
  },
  "per_area": {
@@ -251,7 +251,7 @@
   "NZ": {
    "gained": 29,
    "lost": 1,
-   "pieces_changed": 6,
+   "pieces_changed": 10,
    "grade_changed": 0
   },
   "PA": {
@@ -16990,6 +16990,69 @@
   },
   {
    "area": "NZ",
+   "ref": "NZ-0001",
+   "name": "Ambury Regional Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1994",
+     "Te Ara i Tautahi/Ambury Regional Park",
+     "Park Extents",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NZ-0001"
+  },
+  {
+   "area": "NZ",
+   "ref": "NZ-0002",
+   "name": "Atiu Regional Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "894",
+     "Atiu Creek Regional Park",
+     "Park Extents",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NZ-0002"
+  },
+  {
+   "area": "NZ",
+   "ref": "NZ-0004",
+   "name": "Awhitu Regional Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1993",
+     "Awhitu Regional Park",
+     "Park Extents",
+     "name"
+    ],
+    [
+     "3828",
+     "Awhitu Regional Park",
+     "Park Extents",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NZ-0004"
+  },
+  {
+   "area": "NZ",
    "ref": "NZ-0005",
    "name": "Duder Regional Park",
    "old_grade": "pin",
@@ -16999,7 +17062,7 @@
      "1210",
      "Duder Regional Park",
      "Park Extents",
-     "name (chat 11 YES)"
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -17018,13 +17081,51 @@
      "3274",
      "Glenfern Regional Park",
      "Park Extents",
-     "name (chat 11 YES)"
+     "pin inside + shared name words"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/NZ-0006"
+  },
+  {
+   "area": "NZ",
+   "ref": "NZ-0007",
+   "name": "Hunua Regional Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "3563",
+     "Hunua Ranges Regional Park",
+     "Park Extents",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NZ-0007"
+  },
+  {
+   "area": "NZ",
+   "ref": "NZ-0011",
+   "name": "Muriwai Regional Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1284",
+     "Muriwai Regional Park",
+     "Park Extents",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NZ-0011"
   },
   {
    "area": "NZ",
@@ -17035,7 +17136,7 @@
    "new_pieces": [
     [
      "3235",
-     "Hauraki Gulf Maritime Pk (Motukorea Is)",
+     "Browns Island (Motukorea) Regional Park",
      "Park Extents",
      "name"
     ]
@@ -17053,8 +17154,14 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "1829",
-     "Orere Point Road",
+     "888",
+     "Orere Point Regional Park",
+     "Park Extents",
+     "name"
+    ],
+    [
+     "2360",
+     "Orere Point Beach Reserve",
      "Park Extents",
      "name"
     ]
@@ -17073,7 +17180,7 @@
    "new_pieces": [
     [
      "3545",
-     "Scandrett Road",
+     "Scandrett Regional Park",
      "Park Extents",
      "name"
     ]
@@ -17091,16 +17198,10 @@
    "new_grade": "official",
    "new_pieces": [
     [
-     "507",
-     "Shakespear Road",
+     "3562",
+     "Te Haruhi/Shakespear Regional Park",
      "Park Extents",
-     "name"
-    ],
-    [
-     "645",
-     "Shakespear Road",
-     "Park Extents",
-     "name"
+     "pin inside + shared name words"
     ]
    ],
    "old_pieces": [],
@@ -17119,13 +17220,32 @@
      "3270",
      "Tapapakanga Regional Park",
      "Park Extents",
-     "name (chat 11 YES)"
+     "name"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/NZ-0019"
+  },
+  {
+   "area": "NZ",
+   "ref": "NZ-0021",
+   "name": "Tawhitokino Regional Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "930",
+     "Tawhitokino Regional Park",
+     "Park Extents",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NZ-0021"
   },
   {
    "area": "NZ",
@@ -17138,7 +17258,7 @@
      "1225",
      "Te Muri Regional Park",
      "Park Extents",
-     "name (chat 11 YES)"
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -17157,7 +17277,19 @@
      "1350",
      "Te Rau Puriri Regional Park",
      "Park Extents",
-     "name (chat 11 YES)"
+     "name"
+    ],
+    [
+     "1495",
+     "Te Rau Puriri Regional Park",
+     "Park Extents",
+     "name"
+    ],
+    [
+     "2042",
+     "Te Rau Puriri Regional Park",
+     "Park Extents",
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -17176,7 +17308,7 @@
      "1358",
      "Waharau Regional Park",
      "Park Extents",
-     "name (chat 11 YES)"
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -17195,13 +17327,32 @@
      "3438",
      "Waitawa Regional Park",
      "Park Extents",
-     "name (chat 11 YES)"
+     "name"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/NZ-0027"
+  },
+  {
+   "area": "NZ",
+   "ref": "NZ-0028",
+   "name": "Wenderholm Regional Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "3295",
+     "Maungatauhoro/Wenderholm Regional Park",
+     "Park Extents",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NZ-0028"
   },
   {
    "area": "NZ",
@@ -17214,13 +17365,32 @@
      "1457",
      "Whakanewha Regional Park",
      "Park Extents",
-     "name (chat 11 YES)"
+     "name"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/NZ-0029"
+  },
+  {
+   "area": "NZ",
+   "ref": "NZ-0030",
+   "name": "Whakatiwai Regional Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1290",
+     "Whakatiwai Regional Park",
+     "Park Extents",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NZ-0030"
   },
   {
    "area": "NZ",
@@ -17300,44 +17470,6 @@
   },
   {
    "area": "NZ",
-   "ref": "NZ-0173",
-   "name": "Mt.Thomas Forest Conservation Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "130571",
-     "Mt. Thomas Forest Conservation Area",
-     "Public conservation land",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0173"
-  },
-  {
-   "area": "NZ",
-   "ref": "NZ-0236",
-   "name": "Waitotara Conservation Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "41102",
-     "Waitōtara Forest Conservation Area",
-     "Public conservation land",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0236"
-  },
-  {
-   "area": "NZ",
    "ref": "NZ-0241",
    "name": "Musick Point Esplanade Reserve",
    "old_grade": "pin",
@@ -17347,7 +17479,7 @@
      "939",
      "Musick Point Esplanade Reserve",
      "Park Extents",
-     "name (chat 11 YES)"
+     "name"
     ]
    ],
    "old_pieces": [],
@@ -17395,63 +17527,6 @@
   },
   {
    "area": "NZ",
-   "ref": "NZ-0321",
-   "name": "Te Matai Forest Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "210122",
-     "Te Matai Forest",
-     "Public conservation land",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0321"
-  },
-  {
-   "area": "NZ",
-   "ref": "NZ-0347",
-   "name": "Inline Downs Conservation Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "33483",
-     "Tinline Downs Conservation Area",
-     "Public conservation land",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0347"
-  },
-  {
-   "area": "NZ",
-   "ref": "NZ-0560",
-   "name": "Horohoro Forest Reserve",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "97684",
-     "Horohoro Forest",
-     "Public conservation land",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0560"
-  },
-  {
-   "area": "NZ",
    "ref": "NZ-0624",
    "name": "Atuanui Forest Recreation Site",
    "old_grade": "pin",
@@ -17471,44 +17546,6 @@
   },
   {
    "area": "NZ",
-   "ref": "NZ-0670",
-   "name": "The Wolds Conservation Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "324605",
-     "Conservation Area A- The Wolds",
-     "Public conservation land",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0670"
-  },
-  {
-   "area": "NZ",
-   "ref": "NZ-0675",
-   "name": "The Wolds (B) Conservation Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "324604",
-     "Conservation Area B - The Wolds",
-     "Public conservation land",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0675"
-  },
-  {
-   "area": "NZ",
    "ref": "NZ-0676",
    "name": "Lake Alexandrina / Tekapo Ecological Park",
    "old_grade": "pin",
@@ -17525,25 +17562,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/NZ-0676"
-  },
-  {
-   "area": "NZ",
-   "ref": "NZ-0786",
-   "name": "Robertson FHF Acquisition Conservation Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "130300",
-     "Conservation Area - Robertson FHF Aquisition",
-     "Public conservation land",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0786"
   },
   {
    "area": "PA",
@@ -25751,6 +25769,37 @@
    "pota": "https://pota.app/#/park/FR-15823"
   },
   {
+   "area": "NZ",
+   "ref": "NZ-0024",
+   "name": "Te Rau Puriri Regional Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "1350",
+     "Te Rau Puriri Regional Park",
+     "Park Extents",
+     "name"
+    ],
+    [
+     "1495",
+     "Te Rau Puriri Regional Park",
+     "Park Extents",
+     "name"
+    ],
+    [
+     "2042",
+     "Te Rau Puriri Regional Park",
+     "Park Extents",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NZ-0024"
+  },
+  {
    "area": "ES",
    "ref": "ES-0983",
    "name": "Sierra de Salinas Natura 2000",
@@ -26074,31 +26123,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/GR-0225"
-  },
-  {
-   "area": "NZ",
-   "ref": "NZ-0018",
-   "name": "Shakespear Regional Park",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "507",
-     "Shakespear Road",
-     "Park Extents",
-     "name"
-    ],
-    [
-     "645",
-     "Shakespear Road",
-     "Park Extents",
-     "name"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/NZ-0018"
   },
   {
    "area": "VI",

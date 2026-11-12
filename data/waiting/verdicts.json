@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-12T20:07Z",
+ "checked": "2026-11-12T20:57Z",
  "switched_on": false,
  "results": [
   {
@@ -3596,6 +3596,44 @@
    "verdict": "PASS"
   },
   {
+   "path": "data/us-key/area-tables.json",
+   "kind": "key",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/us-key/overrides-parks-01.json",
+   "kind": "key",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published",
+    "override set read whole: 5038 parks in 3 file(s) (live: 5038 parks); this part goes live with data/us-key/overrides.json"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/us-key/overrides-parks-02.json",
+   "kind": "key",
+   "why": [],
+   "notes": [
+    "no live copy: first time this file is published",
+    "override set read whole: 5038 parks in 3 file(s) (live: 5038 parks); this part goes live with data/us-key/overrides.json"
+   ],
+   "verdict": "PASS"
+  },
+  {
+   "path": "data/us-key/overrides.json",
+   "kind": "key",
+   "why": [],
+   "notes": [
+    "override set read whole: 5038 parks in 3 file(s) (live: 5038 parks)"
+   ],
+   "verdict": "PASS"
+  },
+  {
    "path": "data/world-key/AE.json",
    "kind": "key",
    "why": [],
@@ -3802,8 +3840,7 @@
    "path": "data/world-key/FR.json",
    "kind": "key",
    "why": [
-    "F-O1 outlines 13877 -> 13381 (more than 1% lost)",
-    "F-O3 retired parks still outlined: FR-5063, FR-5106, FR-5115, FR-5171, FR-5396"
+    "F-O1 outlines 13877 -> 13388 (more than 1% lost)"
    ],
    "notes": [],
    "verdict": "HOLD"

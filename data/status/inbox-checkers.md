@@ -434,7 +434,7 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-01, 11 days): truth data/truth/US-TX.json held: F-R2 5 OFF rows share the size 675,000.0 ac
 - FROM WAITING ROOM (held since 2026-11-10, 2 days): truth data/truth/US-UT.json held: F-R2 6 OFF rows share the size 2,200,000.0 ac
 - FROM WAITING ROOM (held since 2026-11-10, 2 days): truth data/truth/US-WA.json held: F-R2 5 OFF rows share the size 564.0 ac · F-R3 157 of 188 sized parks are OFF (over half: a reading problem?)
-- FROM WAITING ROOM (held since 2026-11-11, 1 days): key data/world-key/FR.json held: F-O1 outlines 13877 -> 13381 (more than 1% lost) · F-O3 retired parks still outlined: FR-5063, FR-5106, FR-5115, FR-5171, FR-5396
+- FROM WAITING ROOM (held since 2026-11-11, 1 days): key data/world-key/FR.json held: F-O1 outlines 13877 -> 13388 (more than 1% lost)
 - FROM WAITING ROOM (held since 2026-11-11, 1 days): key data/world-key/JP.json held: F-O2 101 of 185 outlines carry a layer name that shares no word with the park (55%; live 97/185): outlines swapped to other parks?
 - FROM WAITING ROOM (held since 2026-11-11, 1 days): key data/world-key/LU.json held: F-O1 outlines 49 -> 46 (more than 1% lost)
 - FROM WAITING ROOM (held since 2026-11-07, 5 days): key data/world-key/ZA.json held: F-O2 4 of 75 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?
