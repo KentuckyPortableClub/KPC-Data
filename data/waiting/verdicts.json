@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-12T12:07Z",
+ "checked": "2026-11-12T12:32Z",
  "switched_on": false,
  "results": [
   {
@@ -1350,14 +1350,8 @@
    "path": "data/fers/US-CT.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 26 -> 1 (over 30% change)",
-    "F-2 pass2 missing: the 2-fer passes did not all run",
-    "F-2 pass3 missing: the 2-fer passes did not all run",
-    "F-2 only 1 of 26 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-K known 2-fer missing: US-0881 + US-1662",
-    "F-K known 2-fer missing: US-7528 + US-7541",
-    "F-K known 2-fer missing: US-0882 + US-6869",
-    "F-K known 2-fer missing: US-1681 + US-7548"
+    "F-2 candidates 26 -> 48 (over 30% change)",
+    "F-2 23 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-10073+US-7533, US-11013+US-1669, US-12620+US-4561"
    ],
    "notes": [
     "replaces live data/fers/US-CT.json.gz (same file, other format): promotion removes the old name"
@@ -1368,8 +1362,6 @@
    "path": "data/fers/US-DC.json",
    "kind": "fers",
    "why": [
-    "F-2 pass2 missing: the 2-fer passes did not all run",
-    "F-2 pass3 missing: the 2-fer passes did not all run",
     "F-K known 2-fer missing: US-0795 + US-0796"
    ],
    "notes": [],
@@ -1379,14 +1371,7 @@
    "path": "data/fers/US-DE.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 28 -> 5 (over 30% change)",
-    "F-2 pass2 missing: the 2-fer passes did not all run",
-    "F-2 pass3 missing: the 2-fer passes did not all run",
-    "F-2 only 2 of 28 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-K known 2-fer missing: US-0898 + US-1743",
-    "F-K known 2-fer missing: US-1731 + US-4582",
-    "F-K known 2-fer missing: US-4567 + US-5727",
-    "F-K known 2-fer missing: US-1730 + US-9878"
+    "F-2 5 new candidate pairs since the live file (over 10% of 28): a person looks at them first, e.g. US-0229+US-7653, US-0898+US-4582, US-0898+US-9881"
    ],
    "notes": [
     "replaces live data/fers/US-DE.json.gz (same file, other format): promotion removes the old name"
@@ -1524,53 +1509,30 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-MA.json",
+   "path": "data/fers/US-MA.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 75 -> 112 (over 30% change)",
-    "F-2 pass2 missing: the 2-fer passes did not all run",
-    "F-2 pass3 missing: the 2-fer passes did not all run",
-    "F-2 only 1 of 75 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-K known 2-fer missing: US-0891 + US-2430",
-    "F-K known 2-fer missing: US-0672 + US-11638",
-    "F-K known 2-fer missing: US-4556 + US-5635",
-    "F-K known 2-fer missing: US-4556 + US-4717",
-    "F-K known 2-fer missing: US-0327 + US-8014"
+    "F-2 30 new candidate pairs since the live file (over 10% of 75): a person looks at them first, e.g. US-0672+US-11686, US-0672+US-8395, US-0728+US-4582"
    ],
-   "notes": [
-    "replaces live data/fers/US-MA.json.gz (same file, other format): promotion removes the old name"
-   ],
+   "notes": [],
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-MD.json",
+   "path": "data/fers/US-MD.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 140 -> 20 (over 30% change)",
-    "F-2 NOT SURE 8 -> 4 (over 30% change)",
-    "F-2 pass2 missing: the 2-fer passes did not all run",
-    "F-2 pass3 missing: the 2-fer passes did not all run",
-    "F-2 only 5 of 140 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-K known 2-fer missing: US-0654 + US-4567",
-    "F-K known 2-fer missing: US-1598 + US-1604",
-    "F-K known 2-fer missing: US-1577 + US-4582"
+    "F-2 NOT SURE 8 -> 5 (over 30% change)",
+    "F-2 25 new candidate pairs since the live file (over 10% of 140): a person looks at them first, e.g. US-0333+US-4567, US-0333+US-4581, US-10751+US-7741"
    ],
-   "notes": [
-    "replaces live data/fers/US-MD.json.gz (same file, other format): promotion removes the old name"
-   ],
+   "notes": [],
    "verdict": "HOLD"
   },
   {
    "path": "data/fers/US-ME.json",
    "kind": "fers",
-   "why": [
-    "F-2 pass2 missing: the 2-fer passes did not all run",
-    "F-2 pass3 missing: the 2-fer passes did not all run",
-    "F-K known 2-fer missing: US-4556 + US-8435",
-    "F-K known 2-fer missing: US-2381 + US-4556"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/fers/US-MI.json",
@@ -1702,20 +1664,13 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-NJ.json",
+   "path": "data/fers/US-NJ.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 24 -> 0 (over 30% change)",
-    "F-2 pass2 missing: the 2-fer passes did not all run",
-    "F-2 pass3 missing: the 2-fer passes did not all run",
-    "F-2 only 0 of 24 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-K known 2-fer missing: US-0888 + US-1608",
-    "F-K known 2-fer missing: US-0888 + US-1631",
-    "F-K known 2-fer missing: US-1619 + US-4999"
+    "F-2 candidates 24 -> 43 (over 30% change)",
+    "F-2 19 new candidate pairs since the live file (over 10% of 24): a person looks at them first, e.g. US-0453+US-4992, US-0746+US-4582, US-11337+US-8051"
    ],
-   "notes": [
-    "replaces live data/fers/US-NJ.json.gz (same file, other format): promotion removes the old name"
-   ],
+   "notes": [],
    "verdict": "HOLD"
   },
   {
@@ -1751,19 +1706,18 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-NY.json",
+   "path": "data/fers/US-NY.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 pass2 missing: the 2-fer passes did not all run",
-    "F-2 pass3 missing: the 2-fer passes did not all run",
     "F-2 only 2 of 3 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-K known 2-fer missing: US-0680 + US-8068",
+    "F-2 145 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US-0062+US-8098, US-0456+US-4556, US-0476+US-8098",
+    "F-S3 20 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-2001+US-5208 105 km, US-2001+US-5240 100 km, US-2001+US-5309 111 km",
     "F-K known 2-fer missing: US-2028 + US-2128",
-    "F-K known 2-fer missing: US-2079 + US-5161",
-    "F-K known 2-fer missing: US-2034 + US-9082",
     "F-K known 2-fer missing: US-2028 + US-2061"
    ],
-   "notes": [],
+   "notes": [
+    "replaces live data/fers/US-NY.json (same file, other format): promotion removes the old name"
+   ],
    "verdict": "HOLD"
   },
   {
@@ -1819,35 +1773,21 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-PA.json",
+   "path": "data/fers/US-PA.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 45 -> 0 (over 30% change)",
-    "F-2 pass2 missing: the 2-fer passes did not all run",
-    "F-2 pass3 missing: the 2-fer passes did not all run",
-    "F-2 only 0 of 45 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-K known 2-fer missing: US-8745 + US-8854",
-    "F-K known 2-fer missing: US-12664 + US-5478",
-    "F-K known 2-fer missing: US-0684 + US-8755",
-    "F-K known 2-fer missing: US-0619 + US-12234",
-    "F-K known 2-fer missing: US-0798 + US-8895"
+    "F-2 candidates 45 -> 167 (over 30% change)",
+    "F-2 127 new candidate pairs since the live file (over 10% of 45): a person looks at them first, e.g. US-0511+US-8784, US-0619+US-4239, US-0624+US-5468"
    ],
-   "notes": [
-    "replaces live data/fers/US-PA.json.gz (same file, other format): promotion removes the old name"
-   ],
+   "notes": [],
    "verdict": "HOLD"
   },
   {
    "path": "data/fers/US-RI.json",
    "kind": "fers",
-   "why": [
-    "F-2 pass2 missing: the 2-fer passes did not all run",
-    "F-2 pass3 missing: the 2-fer passes did not all run",
-    "F-K known 2-fer missing: US-0515 + US-7865",
-    "F-K known 2-fer missing: US-2869 + US-7971"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/fers/US-SC.json",
@@ -1935,14 +1875,7 @@
    "path": "data/fers/US-VT.json",
    "kind": "fers",
    "why": [
-    "F-2 pass2 missing: the 2-fer passes did not all run",
-    "F-2 pass3 missing: the 2-fer passes did not all run",
-    "F-2 only 0 of 8 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-K known 2-fer missing: US-4527 + US-4556",
-    "F-K known 2-fer missing: US-3115 + US-4556",
-    "F-K known 2-fer missing: US-4239 + US-4556",
-    "F-K known 2-fer missing: US-4556 + US-5541",
-    "F-K known 2-fer missing: US-4239 + US-4527"
+    "F-K known 2-fer missing: US-4239 + US-4556"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -4336,60 +4269,6 @@
    "why": [],
    "notes": [],
    "verdict": "PASS"
-  },
-  {
-   "path": "data/fers/US-MA.json.gz",
-   "kind": "fers",
-   "why": [
-    "F-2 30 new candidate pairs since the live file (over 10% of 75): a person looks at them first, e.g. US-0672+US-11686, US-0672+US-8395, US-0728+US-4582"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/fers/US-MD.json.gz",
-   "kind": "fers",
-   "why": [
-    "F-2 NOT SURE 8 -> 5 (over 30% change)",
-    "F-2 25 new candidate pairs since the live file (over 10% of 140): a person looks at them first, e.g. US-0333+US-4567, US-0333+US-4581, US-10751+US-7741"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/fers/US-NJ.json.gz",
-   "kind": "fers",
-   "why": [
-    "F-2 candidates 24 -> 43 (over 30% change)",
-    "F-2 19 new candidate pairs since the live file (over 10% of 24): a person looks at them first, e.g. US-0453+US-4992, US-0746+US-4582, US-11337+US-8051"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/fers/US-NY.json.gz",
-   "kind": "fers",
-   "why": [
-    "F-2 only 2 of 3 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 145 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US-0062+US-8098, US-0456+US-4556, US-0476+US-8098",
-    "F-S3 20 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-2001+US-5208 105 km, US-2001+US-5240 100 km, US-2001+US-5309 111 km",
-    "F-K known 2-fer missing: US-2028 + US-2128",
-    "F-K known 2-fer missing: US-2028 + US-2061"
-   ],
-   "notes": [
-    "replaces live data/fers/US-NY.json (same file, other format): promotion removes the old name"
-   ],
-   "verdict": "HOLD"
-  },
-  {
-   "path": "data/fers/US-PA.json.gz",
-   "kind": "fers",
-   "why": [
-    "F-2 candidates 45 -> 167 (over 30% change)",
-    "F-2 127 new candidate pairs since the live file (over 10% of 45): a person looks at them first, e.g. US-0511+US-8784, US-0619+US-4239, US-0624+US-5468"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
   }
  ]
 }
