@@ -228,8 +228,8 @@
     "no_page": 0,
     "not_official": 8,
     "ok": 61,
-    "other": 68,
-    "resting": 0,
+    "other": 67,
+    "resting": 1,
     "robots": 0,
     "with_booking": 131,
     "with_elevation": 0,
@@ -238,7 +238,7 @@
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-08"
+   "updated": "2026-11-12"
   },
   "US-HI": {
    "camps": 22,
@@ -1125,7 +1125,7 @@
   "US-CT": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-DE": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-FL": "FCC listAsOfDates: robots.txt says no",
-  "US-GA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-GA": "FCC listAsOfDates: robots.txt says no",
   "US-HI": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-IA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-ID": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1254,9 +1254,9 @@
     "carriers": null,
     "files": [],
     "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "status": "FCC listAsOfDates: robots.txt says no"
    },
-   "read": "2026-11-08"
+   "read": "2026-11-12"
   },
   "US-HI": {
    "cell": {
@@ -2575,12 +2575,12 @@
  },
  "last": {
   "areas": [
-   "US-AZ"
+   "US-GA"
   ],
   "fcc_token": true,
   "manners": {
-   "dropped_queued": 216,
-   "errors": 3,
+   "dropped_queued": 211,
+   "errors": 0,
    "for_person_urls": [
     [
      "https://epqs.nationalmap.gov/robots.txt",
@@ -2589,37 +2589,29 @@
     [
      "https://broadbandmap.fcc.gov/robots.txt",
      "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from broadbandmap.fcc.gov"
-    ],
-    [
-     "https://azstateparks.com/robots.txt",
-     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from azstateparks.com"
-    ],
-    [
-     "https://azprtl.azstateparks.com/robots.txt",
-     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from azprtl.azstateparks.com"
     ]
    ],
    "host_rule": 0,
-   "requests": 16,
-   "rested": 6,
-   "robots": 4,
-   "strikes": 3
+   "requests": 211,
+   "rested": 1,
+   "robots": 2,
+   "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 2,
-   "camps": 203,
+   "browser": 66,
+   "camps": 212,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 2,
-   "needs_key": 173,
-   "no_page": 2,
-   "not_official": 2,
-   "ok": 3,
-   "pages_read": 4,
-   "resting": 7,
+   "needs_browser": 69,
+   "needs_key": 68,
+   "no_page": 3,
+   "not_official": 8,
+   "ok": 132,
+   "pages_read": 133,
+   "resting": 1,
    "ridb_calls": 0,
-   "robots": 16,
+   "robots": 0,
    "skipped_fresh": 0
   },
   "when": "2026-11-12"
