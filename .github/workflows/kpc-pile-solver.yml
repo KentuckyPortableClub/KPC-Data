@@ -74,7 +74,10 @@ jobs:
         if: steps.gate.outputs.skip != '1'
         run: |
           cd links
-          OUT="$RUNNER_TEMP/precheck" DATA=../kpcdata python3 .github/scripts/kpc_precheck.py
+          # Nov 12 2026 (KPC-Links #151 split): kpc_precheck_whole.py = the pre-check with the US overrides read whole (manifest + parts);
+          # a KPC-Links checkout from before the split has only kpc_precheck.py, which reads the single file whole
+          PRE=.github/scripts/kpc_precheck_whole.py; [ -f "$PRE" ] || PRE=.github/scripts/kpc_precheck.py
+          OUT="$RUNNER_TEMP/precheck" DATA=../kpcdata python3 "$PRE"
           echo "PILE=$RUNNER_TEMP/precheck/review-pile.csv" >> "$GITHUB_ENV"
           echo "KEY_BUILD=links-$(git rev-parse --short HEAD)" >> "$GITHUB_ENV"
       - name: Solve in chunks, then one save
@@ -151,7 +154,8 @@ jobs:
           MINUTES: '45'
         run: |
           mkdir -p "$RUNNER_TEMP/m1"
-          cd links && OUT="$RUNNER_TEMP/precheck" DATA=../kpcdata python3 .github/scripts/kpc_precheck.py && cd ../kpcdata
+          PRE=.github/scripts/kpc_precheck_whole.py; [ -f "links/$PRE" ] || PRE=.github/scripts/kpc_precheck.py   # Nov 12: overrides read whole (as above)
+          cd links && OUT="$RUNNER_TEMP/precheck" DATA=../kpcdata python3 "$PRE" && cd ../kpcdata
           OUT_DIR="$RUNNER_TEMP/m1" FREEZE="$RUNNER_TEMP/m1/fixtures" PILE="$RUNNER_TEMP/precheck/review-pile.csv" \
             python3 .github/scripts/kpc_pile_solver.py | tee "$RUNNER_TEMP/m1/run.log"
       - name: Outputs, run log and frozen web answers

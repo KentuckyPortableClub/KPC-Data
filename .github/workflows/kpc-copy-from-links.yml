@@ -123,9 +123,19 @@ jobs:
                   h = hashes[rel] = hashlib.sha1(open('../links/' + rel, 'rb').read()).hexdigest()
                   if not first and f != 'index.json' and seen.get(rel) != h: newk.setdefault(k, []).append(f)
               if first: seen.update({r: h for r, h in hashes.items() if r.startswith(f'data/{k}/')})
+          # Nov 12 2026 (KPC owner; KPC-Links #151 split): overrides.json and its parts overrides-parks-NN.json are ONE set. When any file of it
+          # changed, every file of the set comes over together (a part kept from this copy would not match the new manifest's digests);
+          # the waiting room checks and releases them as one set and takes away a part the new manifest no longer names.
+          import fnmatch
+          def ovpart(f): return fnmatch.fnmatch(f, 'overrides-parks-*.json')
+          for k, n0 in list(newk.items()):
+              d = f'../links/data/{k}'
+              if any(f == 'overrides.json' or ovpart(f) for f in n0):
+                  newk[k] = sorted(set(n0) | {f for f in os.listdir(d) if (f == 'overrides.json' or ovpart(f)) and os.path.isfile(f'{d}/{f}')})
           for k in ('us-key', 'ca-key', 'world-key'):
               n = newk.get(k, [])
-              print(f'::notice title=Copy::{k}: {len(n)} key file(s) changed by a build since the last copy' + (f' ({" ".join(n[:12])})' if n else ': nothing comes over (keys flow KPC-Data -> website)'), flush=True)
+              shown = [f for f in n if not ovpart(f)]   # the parts are counted with their overrides.json, not as key files
+              print(f'::notice title=Copy::{k}: {len(shown)} key file(s) changed by a build since the last copy' + (f' ({" ".join(shown[:12])})' if n else ': nothing comes over (keys flow KPC-Data -> website)') + (f' + {len(n) - len(shown)} overrides part file(s) of the same set' if len(n) > len(shown) else ''), flush=True)
               if not n: continue
               try: hb = json.load(open(f'data/waiting/in/data/{k}/index.json')).get('build')
               except Exception: hb = None

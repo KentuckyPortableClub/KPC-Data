@@ -26,6 +26,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from kpc_json_any import append_jsonl_gz  # noqa: E402
 import kpc_archive as KA  # noqa: E402  (Nov 7: undo copies older than 14 days live on KPC-Archive; data/archive-manifest.json lists them)
 import kpc_host_rules; kpc_host_rules.install()
+import kpc_overrides_whole as OVW  # noqa: E402  (Nov 12 2026: a key's overrides.json + its parts overrides-parks-NN.json are ONE set)
 
 DATA = pathlib.Path(os.environ.get('DATA') or '.')
 LINKS = pathlib.Path(os.environ.get('LINKS') or '../links')
@@ -461,6 +462,11 @@ def padus_boxes(ids):
 
 
 def c_key(path, new, live, ctx):
+    if ov_member(path) and ov_split(path): return c_overrides_set(path)   # Nov 12: a split override set is judged whole (below)
+    return c_key_file(path, new, live, ctx)
+
+
+def c_key_file(path, new, live, ctx):
     holds, notes = [], []
     retired = set(((load(LINKS / 'data' / 'retired-refs.json', {}) or {}).get('refs') or {}) if isinstance((load(LINKS / 'data' / 'retired-refs.json', {}) or {}).get('refs'), (dict, list)) else [])
     retired |= set(known('key').get('never_outlined') or [])
@@ -928,7 +934,14 @@ def grade_queue(out):
     paused = []
     for r in sorted(out, key=lambda r: (r['verdict'] != 'PASS', r['path'])):
         if fers_paused(r['path']): paused.append(r['path']); continue
-        new = load(W / 'in' / r['path']); live = live_of(r['path'])[0]
+        if ov_member(r['path']) and ov_split(r['path']):   # Nov 12: a split override set is counted whole, on its manifest's line
+            if pathlib.PurePosixPath(r['path']).name != OVW.MANIFEST:
+                lines.append(f"- **{r['path']}** ({r['kind']}, {r['verdict']}): a part of the override set, counted with "
+                             f"{ov_folder(r['path'])}/{OVW.MANIFEST}" + (f"; why held: {'; '.join(r.get('why') or [])[:300]}" if r['verdict'] == 'HOLD' else '')); continue
+            try: new = ov_incoming(ov_folder(r['path']))[0]
+            except OVW.OverridesError: new = None
+            live = ov_live(ov_folder(r['path']))
+        else: new = load(W / 'in' / r['path']); live = live_of(r['path'])[0]
         a, b = row_map(new), row_map(live) if live else {}
         nw = [k for k in a if k not in b]; ch = [k for k in a if k in b and a[k] != b[k]]; gone = [k for k in b if k not in a]
         same = len(a) - len(nw) - len(ch)
@@ -984,8 +997,8 @@ def mode_check(promote):
         r = judge(rel, new, *live_of(rel), ctx=ctx); out.append(r)
         allowed = [k for k in (os.environ.get('PROMOTE_KINDS') or '').split(',') if k]   # only the bots Brandon switched on promote; held bots wait for chat 11
         if on and r['verdict'] in ('PASS', 'LIVE-FILTERED') and allowed and r['kind'] in allowed and r['kind'] not in NEVER_AUTO:
-            promote_file(rel, r.get('out'), raw=(W / 'in' / rel))
-            (W / 'in' / rel).unlink()
+            if promote_file(rel, r.get('out'), raw=(W / 'in' / rel)) is False: continue   # Nov 12: an override set that does not read whole stays held
+            (W / 'in' / rel).unlink(missing_ok=True)   # Nov 12: an override part already went live (and left) with its set
             tw = live_of(rel)[1]
             if tw and tw not in ('both', rel) and (DATA / tw).exists(): keep_generation(tw); (DATA / tw).unlink()   # one name only (chat 8 attack 5)
     held = [r for r in out if r['verdict'] == 'HOLD']
@@ -1044,9 +1057,150 @@ def keep_newer_overrides(live_d, new_d):
     return new_d, kept
 
 
+# ------------------------------------------------------------------------------------------------ override SETS (Nov 12 2026)
+# KPC-Links #151 / E4 (KPC owner, 2026-11-12): data/us-key/overrides.json is a manifest now and the other parks live in
+# overrides-parks-NN.json beside it. The files are ONE set: a part alone means nothing, and the set is read, judged, merged and
+# released whole. While neither side is split (KPC-Links before E4) nothing below runs: overrides.json goes the old way, byte for byte.
+def ov_member(rel):
+    return bool(re.match(r'^data/[a-z]+-key/[^/]+$', str(rel).replace('\\', '/'))) and OVW.is_member(rel)
+
+
+def ov_folder(rel): return pathlib.PurePosixPath(str(rel).replace('\\', '/')).parent.as_posix()
+
+
+def ov_split(rel, content=None, raw=None):
+    """True when the set of rel's folder is split on any side: a part file held or live, a held / live / incoming manifest with
+    'parts', or rel is itself a part."""
+    if pathlib.PurePosixPath(str(rel)).name != OVW.MANIFEST: return True
+    folder = ov_folder(rel)
+    for d in (W / 'in' / folder, DATA / folder):
+        if d.is_dir() and any(d.glob(OVW.PART_GLOB)): return True
+        m = load(d / OVW.MANIFEST) if (d / OVW.MANIFEST).is_file() else None
+        if isinstance(m, dict) and m.get('parts'): return True
+    x = content if content is not None else (load(raw) if raw is not None else None)
+    return isinstance(x, dict) and bool(x.get('parts'))
+
+
+def _ov_bytes(folder, name, first=None):
+    """the bytes of one file of the set as it would go live: `first` = (name, path) of the file being released, then the held copy
+    (data/waiting/in), then the live copy; None when there is none."""
+    if first and first[0] == name and first[1] is not None and pathlib.Path(first[1]).is_file(): return pathlib.Path(first[1]).read_bytes()
+    for p in (W / 'in' / folder / name, DATA / folder / name):
+        if p.is_file(): return p.read_bytes()
+    return None
+
+
+def ov_incoming(folder, first=None):
+    """-> (whole document, {file name: bytes}) of the set that would go live: the held manifest over the live one, each part it names
+    held over live. Strict (KPC-Links' kpc_overrides rules): a missing part, a digest that does not match, a ref in two files or a
+    'no' in a part raises OverridesError. Never a partial set."""
+    mb = _ov_bytes(folder, OVW.MANIFEST, first)
+    if mb is None: raise OVW.OverridesError(f'{folder}/{OVW.MANIFEST} is neither held nor live')
+    try: man = json.loads(mb)
+    except ValueError as e: raise OVW.OverridesError(f'{folder}/{OVW.MANIFEST} is not readable JSON: {e}') from e
+    src = {OVW.MANIFEST: mb}
+
+    def part(name):
+        b = _ov_bytes(folder, name, first)
+        if b is None: raise OVW.OverridesError(f'override part {folder}/{name} named in {OVW.MANIFEST} is neither held nor live: refusing a partial set')
+        try: d = json.loads(b)
+        except ValueError as e: raise OVW.OverridesError(f'{folder}/{name} is not readable JSON: {e}') from e
+        src[name] = b
+        return d
+    doc = OVW.merge_whole(man, part, links=LINKS)
+    return doc, src
+
+
+def ov_live(folder):
+    """the whole LIVE set of this copy (hand edits taken in, as kpc_overrides.py split does: strict=False), or None when there is none
+    or it does not read whole. Part files the live manifest does not name are left out (they are taken away on the next release)."""
+    m = DATA / folder / OVW.MANIFEST
+    if not m.is_file(): return None
+    def part(name):
+        p = DATA / folder / name
+        if not p.is_file(): raise OVW.OverridesError(f'live override part {folder}/{name} is missing')
+        return json.loads(p.read_bytes())
+    try: return OVW.merge_whole(json.loads(m.read_bytes()), part, strict=False, links=LINKS)
+    except (OVW.OverridesError, ValueError) as e:
+        print(f'::warning title=Overrides kept::the live override set {folder} does not read whole ({str(e)[:200]})'); return None
+
+
+def c_overrides_set(path):
+    """The waiting-room check of a split override set: it must read WHOLE (held over live), else HOLD. A part is judged with its set."""
+    folder, name = ov_folder(path), pathlib.PurePosixPath(str(path)).name
+    try: doc, src = ov_incoming(folder)
+    except OVW.OverridesError as e: return [f'F-4 the override set {folder} does not read whole: {str(e)[:300]}'], []
+    if name != OVW.MANIFEST and name not in src:
+        return [], [f'an old override part: the held {folder}/{OVW.MANIFEST} does not name it; it leaves the waiting room when the set goes live']
+    lv = ov_live(folder)
+    return [], [f"override set read whole: {len(doc.get('parks') or {})} parks in {len(src)} file(s)"
+                + (f" (live: {len(lv.get('parks') or {})} parks)" if lv else ' (no live set that reads whole)')
+                + ('' if name == OVW.MANIFEST else f'; this part goes live with {folder}/{OVW.MANIFEST}')]
+
+
+def promote_overrides_set(rel, content=None, raw=None):
+    """A split override set goes live as ONE set (KPC-Links #151; KPC owner, 2026-11-12). The incoming set (held over live) and this
+    copy's live set are each read WHOLE; keep_newer_overrides merges them by its Nov 9 rule (newer hand edits here are kept); the
+    result is written in the INCOMING set's layout: its files byte for byte when nothing was kept, else what kpc_overrides.save
+    writes (a park stays in its part; a park with a 'no' goes to the manifest; one park, one place), or ONE file when the incoming
+    set is one file. A part file the result does not name is taken away (its last copy kept for undo); the held files of the set leave
+    data/waiting/in. The result is checked whole BEFORE anything is written. Returns False (nothing written, held files stay) when
+    the incoming set does not read whole, True otherwise."""
+    folder, name = ov_folder(rel), pathlib.PurePosixPath(str(rel)).name
+    first = (name, raw) if content is None else None
+    if content is not None:   # (never for an override file today: only closures pass content) the same, from the content
+        tmp = W / '.ov-content.json'; W.mkdir(parents=True, exist_ok=True); tmp.write_text(json.dumps(content, indent=1, ensure_ascii=False), encoding='utf-8'); first = (name, tmp)
+    if raw is not None and content is None and not pathlib.Path(raw).is_file():
+        print(f'::notice title=Overrides set::{rel} already went live with its set'); return True
+    try:
+        inc, src = ov_incoming(folder, first)
+        if name != OVW.MANIFEST and name not in src:
+            print(f'::notice title=Overrides set::{rel} is not named in the incoming {folder}/{OVW.MANIFEST}: an old part, not released'); return False
+        local = ov_live(folder)
+        merged, kept = keep_newer_overrides(local, json.loads(json.dumps(inc))) if local else (inc, [])
+        if not kept: files = dict(src)                                   # exactly the incoming files (Fable c)
+        elif inc.get('parts'): files = OVW.layout_like(src, merged, links=LINKS)
+        else: files = {OVW.MANIFEST: json.dumps({k: v for k, v in merged.items() if k != 'parts'}, indent=1, ensure_ascii=False).encode('utf-8')}
+        def written(n):
+            if n not in files: raise OVW.OverridesError(f'{n} is named but would not be written')
+            return json.loads(files[n])
+        chk = OVW.merge_whole(json.loads(files[OVW.MANIFEST]), written, links=LINKS)
+        if OVW.canon_sha(chk.get('parks') or {}) != OVW.canon_sha(merged.get('parks') or {}) or set(files) != {OVW.MANIFEST, *(chk.get('parts') or [])}:
+            raise OVW.OverridesError('the merged set does not read back whole')
+    except (OVW.OverridesError, ValueError) as e:
+        print(f'::error title=Overrides set::{folder}: the incoming override set does not read whole ({str(e)[:300]}): NOTHING of it goes live, its held files stay'); return False
+    finally:
+        if content is not None: (W / '.ov-content.json').unlink(missing_ok=True)
+    d = DATA / folder; d.mkdir(parents=True, exist_ok=True)
+    live_now = sorted(f.name for f in d.iterdir() if f.is_file() and OVW.is_member(f.name)) if d.is_dir() else []
+    for n in live_now: keep_generation(f'{folder}/{n}')                  # one undo copy of the whole set as it was
+    g1 = gen_dir(1) / folder
+    for f in sorted(g1.glob(OVW.PART_GLOB)) if g1.is_dir() else []:
+        if f.name not in live_now: f.unlink()                            # the undo copy is one set too (no part of an older one)
+    for n, b in sorted(files.items()):
+        if not (d / n).is_file() or (d / n).read_bytes() != b: (d / n).write_bytes(b)
+    gone = [n for n in live_now if n not in files]
+    for n in gone: (d / n).unlink()
+    hd = W / 'in' / folder
+    stray = []
+    for f in sorted(hd.iterdir()) if hd.is_dir() else []:
+        if f.is_file() and OVW.is_member(f.name):
+            if f.name not in files: stray.append(f.name)
+            f.unlink()
+    if kept:
+        print(f'::warning title=Overrides kept::{folder}/{OVW.MANIFEST}: {len(kept)} park(s) had newer edits here than the incoming copy and were '
+              f'kept: {", ".join(kept[:40])}{" ..." if len(kept) > 40 else ""}. Copy them into KPC-Links {folder} (kpc_overrides.py where / split).')
+    print(f"::notice title=Overrides set::{folder}: {len(merged.get('parks') or {})} parks live in {', '.join(sorted(files))}"
+          + (f'; stale part file(s) taken away (undo copy kept): {", ".join(gone)}' if gone else '')
+          + (f'; old held part(s) the new set does not name left the waiting room: {", ".join(stray)}' if stray else ''))
+    return True
+
+
 def promote_file(rel, content=None, raw=None):
     """Fable c: the file goes live EXACTLY as the bot wrote it (its own bytes: indent, gzip), so git sees only real changes. Only a
-    closures file with rows taken out is rewritten (indented, like the bot writes it)."""
+    closures file with rows taken out is rewritten (indented, like the bot writes it). Nov 12: a split override set goes live as ONE
+    set (promote_overrides_set; False = nothing went live)."""
+    if ov_member(rel) and ov_split(rel, content, raw): return promote_overrides_set(rel, content, raw)
     live = DATA / rel
     if str(rel).endswith('overrides.json') and live.exists():   # Nov 9: never lose a newer hand edit (see keep_newer_overrides)
         try:
@@ -1134,7 +1288,9 @@ def mode_release(rel):
         g = (load(src) or {}).get('geometry') if isinstance(load(src), dict) else None
         if length_km(g) < .98 * float(kl.get('km') or 0) or len(coords(g)) < int(kl.get('points') or 0):
             print(f"::notice title=Waiting room release::refused: {rel} is shorter than the official line a person chose to keep ({kl.get('by')}); see data/waiting/known/trails.json"); return
-    promote_file(rel, None, raw=src); src.unlink(); log_action('release', rel)
+    if promote_file(rel, None, raw=src) is False:   # Nov 12: a split override set that does not read whole: nothing goes live, it stays held
+        print(f'::notice title=Waiting room release::refused: {rel} is part of an override set that does not read whole (see the error above)'); return
+    src.unlink(missing_ok=True); log_action('release', rel)   # missing_ok: an override set takes its held files out itself
     print(f'::notice title=Waiting room release::{rel} released by a person (previous copy kept for undo)')
 
 

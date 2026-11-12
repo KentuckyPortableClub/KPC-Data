@@ -179,8 +179,11 @@ def type_penalty(row, kp, W, key_join=None):
 
 
 def key_join_of(links_root):
-    """overrides.json parks[ref].join from the Links key (person-signed joins)."""
-    return {r: (v or {}).get('join') or [] for r, v in (_ld(pathlib.Path(links_root) / 'data/us-key/overrides.json').get('parks') or {}).items()}
+    """overrides.json parks[ref].join from the Links key (person-signed joins). Nov 12 2026 (KPC owner; KPC-Links #151 split): the
+    WHOLE set, manifest + parts (kpc_overrides_whole); a part that is missing or does not match raises, never a partial set."""
+    if str(HERE) not in sys.path: sys.path.insert(0, str(HERE))
+    import kpc_overrides_whole as OVW
+    return {r: (v or {}).get('join') or [] for r, v in OVW.parks_whole(pathlib.Path(links_root) / 'data/us-key/overrides.json', missing_ok=True, links=links_root).items()}
 
 
 def report(rows, key_row_fn, W, key_join):

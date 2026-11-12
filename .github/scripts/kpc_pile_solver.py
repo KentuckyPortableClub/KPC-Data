@@ -240,8 +240,11 @@ def override_by_brandon(o):
 
 
 def decisions():
+    # Nov 12 2026 (KPC owner; KPC-Links #151 split): each overrides set read WHOLE (manifest + parts, kpc_overrides_whole). A part that
+    # is missing or does not match stops the run (raises): a partial set would re-propose parks a person already decided.
+    import kpc_overrides_whole as OVW
     ov = {}
-    for f in ('data/us-key/overrides.json', 'data/ca-key/overrides.json'): ov.update(load(LINKS / f, {}).get('parks') or {})
+    for f in ('data/us-key/overrides.json', 'data/ca-key/overrides.json'): ov.update(OVW.parks_whole(LINKS / f, missing_ok=True, links=LINKS))
     sheet = {}
     for f in sorted(glob.glob(str(DATA / 'data/answer-sheet/*.csv'))):
         with open(f, newline='', encoding='utf-8') as fh:
@@ -777,7 +780,10 @@ def pile_path():
     if os.environ.get('PILE'): return pathlib.Path(os.environ['PILE'])
     out = pathlib.Path(os.environ.get('RUNNER_TEMP') or '/tmp') / 'kpc-precheck'
     env = dict(os.environ, OUT=str(out.resolve()), DATA=str(DATA.resolve()))
-    subprocess.run([sys.executable, '.github/scripts/kpc_precheck.py'], cwd=LINKS, env=env, check=True)
+    # Nov 12 2026 (KPC-Links #151): kpc_precheck_whole.py = kpc_precheck.py with the US overrides read whole (manifest + parts);
+    # a KPC-Links checkout from before the split has only kpc_precheck.py (then the single file is whole already)
+    pre = '.github/scripts/kpc_precheck_whole.py' if (LINKS / '.github/scripts/kpc_precheck_whole.py').is_file() else '.github/scripts/kpc_precheck.py'
+    subprocess.run([sys.executable, pre], cwd=LINKS, env=env, check=True)
     return out / 'review-pile.csv'
 
 
@@ -857,8 +863,8 @@ def run(root, pile_rows, F, areas=None, max_parks=0, mode='backfill'):
             import kpc_pile_penalty as TP
             W = load(DATA / TP.WEIGHTS_FILE, {})
             if W: written.append(TP.write_side(root, TP.report(rows, key_row, W, TP.key_join_of(LINKS)), W))
-        except Exception:  # noqa: BLE001
-            pass
+        except Exception as e:  # noqa: BLE001
+            print(f'::warning title=Type penalty::not written ({type(e).__name__}: {str(e)[:200]})')   # Nov 12: say why (an unreadable overrides part, ...)
     nov, novp = override_report(root, ov, inpile, written)
     stats.update(overrides_not_from_brandon=nov, of_them_in_pile=novp)
     nq = add_questions(root, done_now)
