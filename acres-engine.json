@@ -633,6 +633,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0; read 2026-11-12"
   },
   {
+   "Park number (if matched)": "US-3813",
+   "Park name (as the agency writes it)": "Griffith Woods Wildlife Management Area",
+   "Size": 377,
+   "Unit": "acres",
+   "Agency": "Kentucky Heritage Land Conservation Fund",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0/query?where=OBJECTID%3D162&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
    "Park number (if matched)": "US-0731",
    "Park name (as the agency writes it)": "Columbia River Gorge National Scenic Area",
    "Size": 292690,
@@ -2061,7 +2070,7 @@
    "Agency/area": "Kentucky Department of Parks",
    "Kind": "GIS layer",
    "Example URL": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8",
-   "# times used": 50,
+   "# times used": 51,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
