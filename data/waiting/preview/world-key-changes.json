@@ -1,11 +1,11 @@
 {
  "about": "world-key: the HELD build (data/waiting/in/data/world-key/) vs the LIVE key (data/world-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'world-key', 'build': the held build id from data/waiting/in/data/world-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-12 18:34 UTC",
+ "made": "2026-11-12 18:55 UTC",
  "totals": {
-  "gained": 835,
-  "lost": 101,
-  "pieces_changed": 4329,
-  "grade_changed": 12018
+  "gained": 903,
+  "lost": 103,
+  "pieces_changed": 4723,
+  "grade_changed": 12319
  },
  "per_area": {
   "AE": {
@@ -117,10 +117,10 @@
    "grade_changed": 0
   },
   "FR": {
-   "gained": 16,
-   "lost": 52,
-   "pieces_changed": 14,
-   "grade_changed": 7
+   "gained": 84,
+   "lost": 54,
+   "pieces_changed": 408,
+   "grade_changed": 308
   },
   "GB": {
    "gained": 544,
@@ -1652,15 +1652,977 @@
   },
   {
    "area": "FR",
+   "ref": "FR-10137",
+   "name": "La cote des Alberes Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.40",
+     "La côte des Albères",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10137"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10180",
+   "name": "Banc rocheux du Barcares Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.101",
+     "Banc rocheux du Barcarès",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10180"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10190",
+   "name": "Roche de Leucate Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.62",
+     "Roche de Leucate",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10190"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10477",
+   "name": "Zone marine agathoise Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.111",
+     "Zone marine agathoise",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10477"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10478",
+   "name": "Les Aresquiers Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.75",
+     "Les Aresquiers",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10478"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10479",
+   "name": "Le Coulombray Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.28",
+     "Le Coulombray",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10479"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10480",
+   "name": "Plateau rocheux de Palavas-Carnon Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.81",
+     "Plateau rocheux de Palavas-Carnon",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10480"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10481",
+   "name": "DU RHONE VIF A BEAUDUC Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.90",
+     "DU RHÔNE VIF À BEAUDUC",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10481"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10482",
+   "name": "FOND DU GOLFE DE BEAUDUC Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.113",
+     "FOND DU GOLFE DE BEAUDUC",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10482"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10483",
+   "name": "DE BEAUDUC AU GRAND RHONE Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.76",
+     "DE BEAUDUC AU GRAND RHÔNE",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10483"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10484",
+   "name": "THEY DE LA GRACIEUSE 2 Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.57",
+     "THEY DE LA GRACIEUSE",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10484"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10486",
+   "name": "DE PORT DE BOUC A PONTEAU Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.64",
+     "DE PORT DE BOUC A PONTEAU",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10486"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10494",
+   "name": "POINTE DE BANC ET GRAND SALAMAN Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.77",
+     "POINTE DE BANC ET GRAND SALAMAN",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10494"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10496",
+   "name": "SUD POMEGUES (GROS ESTEOU-CALANQUE DES CAMBRETTES) Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.69",
+     "SUD POMÈGUES (GROS ESTÉOU-CALANQUE DES CAMBRETTES)",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10496"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10497",
+   "name": "HERBIER DE POSIDONIES DE LA BAIE DU PRADO Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.82",
+     "HERBIER DE POSIDONIES DE LA BAIE DU PRADO",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10497"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10503",
+   "name": "CAP CANAILLE-CALANQUE DE FIGUEROLLES Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.20",
+     "CAP CANAILLE-CALANQUE DE FIGUEROLLES",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10503"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10504",
+   "name": "TETE DU CANYON DE LA CASSIDAIGNE Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.54",
+     "TÊTE DU CANYON DE LA CASSIDAIGNE",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10504"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10505",
+   "name": "BANC DE L'ESQUINE Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.13",
+     "BANC DE L'ESQUINE",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10505"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10506",
+   "name": "BANC DES BLAUQUIERES Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.52",
+     "BANC DES BLAUQUIÈRES",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10506"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10510",
+   "name": "BAIES DE LA CIOTAT ET DES LECQUES(13) Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.84",
+     "BAIES DE LA CIOTAT ET DES LECQUES(13)",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ],
+    [
+     "znieff2_mer.100",
+     "BAIES DE LA CIOTAT ET DES LECQUES(83)",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10510"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10511",
+   "name": "BAIES DE LA CIOTAT ET DES LECQUES(83) Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.84",
+     "BAIES DE LA CIOTAT ET DES LECQUES(13)",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ],
+    [
+     "znieff2_mer.100",
+     "BAIES DE LA CIOTAT ET DES LECQUES(83)",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10511"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10513",
+   "name": "POINTE DU DEFENS Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.55",
+     "POINTE DU DEFENS",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10513"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10515",
+   "name": "ILE ROUSSE, ILE DE BENDOR Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.97",
+     "ILE ROUSSE, ILE DE BENDOR",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10515"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10518",
+   "name": "FALAISES DE LA LECQUE DU BRUSC Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.112",
+     "FALAISES DE LA LECQUE DU BRUSC",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10518"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10520",
+   "name": "HERBIER DE POSIDONIES DE L'ANSE DES SABLETTES Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.67",
+     "HERBIER DE POSIDONIES DE L'ANSE DES SABLETTES",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10520"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10521",
+   "name": "DU MOURILLON À LA POINTE DE CARQUEIRANNE (HERBIER DE POSIDONIES) Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.83",
+     "DU MOURILLON À LA POINTE DE CARQUEIRANNE (HERBIER DE POSIDONIES)",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10521"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10528",
+   "name": "SUD ET OUEST DE PORQUEROLLES Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.24",
+     "SUD ET OUEST DE PORQUEROLLES",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10528"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10529",
+   "name": "ILOTS DES SARANIERS Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.78",
+     "ILOTS DES SARANIERS",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10529"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10532",
+   "name": "CAP DES MEDES Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.53",
+     "CAP DES MEDES",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10532"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10536",
+   "name": "BANC DU MAGAUD Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.45",
+     "BANC DU MAGAUD",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10536"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10537",
+   "name": "TETE DU CANYON DES STOECHADES Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.116",
+     "TÊTE DU CANYON DES STOECHADES",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10537"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10539",
+   "name": "DU CAP BENAT À LA POINTE DE L'ESQUILLETTE Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.8",
+     "DU CAP BÉNAT À LA POINTE DE L'ESQUILLETTE",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10539"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10541",
+   "name": "HERBIER DE POSIDONIES DU LAVANDOU ET DE BORMES-LES-MIMOSAS Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.92",
+     "HERBIER DE POSIDONIES DU LAVANDOU ET DE BORMES-LES-MIMOSAS",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10541"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10542",
+   "name": "EBOULIS PROFOND DU SUD-EST DU LAVANDOU Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.29",
+     "EBOULIS PROFOND DU SUD-EST DU LAVANDOU",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10542"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10545",
+   "name": "HERBIER DE POSIDONIES DE LA BAIE DE CAVALAIRE Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.86",
+     "HERBIER DE POSIDONIES DE LA BAIE DE CAVALAIRE",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10545"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10547",
+   "name": "PLAGE ET HERBIER DE POSIDONIES DE PAMPELONNE Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.95",
+     "PLAGE ET HERBIER DE POSIDONIES DE PAMPELONNE",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10547"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10550",
+   "name": "BANC DU MOURRENEGRE Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.47",
+     "BANC DU MOURRENÉGRE",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10550"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10551",
+   "name": "HERBIER DE CYMODOCEES DE FREJUS Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.93",
+     "HERBIER DE CYMODOCÉES DE FRÉJUS",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10551"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10564",
+   "name": "BANC DE FREJUS Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.58",
+     "BANC DE FRÉJUS",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10564"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10566",
+   "name": "DE LA POINTE DE LA PAUME A LA POINTE DE L'AIGUILLE Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.79",
+     "DE LA POINTE DE LA PAUME À LA POINTE DE L'AIGUILLE",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10566"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10567",
+   "name": "GOLFE DE LA NAPOULE Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.71",
+     "GOLFE DE LA NAPOULE",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10567"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10573",
+   "name": "GOLFE JUAN ET ANSE DU CROUTON Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.14",
+     "GOLFE JUAN ET ANSE DU CROUTON",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10573"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10575",
+   "name": "BASSES DE LA FOURMIGUE Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.63",
+     "BASSES DE LA FOURMIGUE",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10575"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10577",
+   "name": "DU CAP D'ANTIBES A LA POINTE BACON Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.56",
+     "DU CAP D'ANTIBES À LA POINTE BACON",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10577"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10578",
+   "name": "Du Cap de Nice à la Pointe Madame Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.88",
+     "DU CAP DE NICE À LA POINTE MADAME",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10578"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10579",
+   "name": "DE LA POINTE PILONE À LA POINTE CAUSINIERE Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.80",
+     "DE LA POINTE PILONE À LA POINTE CAUSINIÈRE",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10579"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10580",
+   "name": "DE LA POINTE COLOMBIER A LA POINTE SAINTE-HOSPICE Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.74",
+     "DE LA POINTE COLOMBIER À LA POINTE SAINTE-HOSPICE",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10580"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10581",
+   "name": "MER D'EZE Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.110",
+     "MER D'EZE",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10581"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10582",
+   "name": "POINTE MALA ET PLATEAU DU CAP D'AIL Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.107",
+     "POINTE MALA ET PLATEAU DU CAP D'AIL",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10582"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10583",
+   "name": "ETABLISSEMENT DE PECHE DE ROQUEBRUNE Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.68",
+     "ETABLISSEMENT DE PÊCHE DE ROQUEBRUNE",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10583"
+  },
+  {
+   "area": "FR",
    "ref": "FR-10584",
    "name": "CAP MARTIN 3 Marine Conservation Area",
    "old_grade": "pin",
-   "new_grade": "approx",
+   "new_grade": "official",
    "new_pieces": [
     [
-     "13498",
-     "Cap Martin",
-     "EEA Natura 2000",
+     "znieff2_mer.66",
+     "CAP MARTIN",
+     "IGN Géoplateforme ZNIEFF type II sea",
      "pin inside + shared name words"
     ]
    ],
@@ -1668,6 +2630,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/FR-10584"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-10585",
+   "name": "LA SAINTE-DEVOTE ET LES SCUGLIETTI Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.48",
+     "LA SAINTE-DÉVOTE ET LES SCUGLIETTI",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-10585"
   },
   {
    "area": "FR",
@@ -1681,12 +2662,56 @@
      "CAP MARTIN",
      "IGN Géoplateforme ZNIEFF type II",
      "pin inside + shared name words"
+    ],
+    [
+     "cdl.530",
+     "Cap martin",
+     "IGN Géoplateforme Conservatoire du littoral",
+     "pin inside + shared name words"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/FR-11539"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-15571",
+   "name": "nord-est de la rade de villefranche Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.102",
+     "NORD-EST DE LA RADE DE VILLEFRANCHE",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-15571"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-15625",
+   "name": "sables propres a nephtys cirrosa de manche orientale Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.119",
+     "Sables propres à Nephtys cirrosa de Manche orientale",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-15625"
   },
   {
    "area": "FR",
@@ -1705,6 +2730,12 @@
      "znieff2.2003",
      "PLAINE DES MAURES (Type 2)",
      "IGN Géoplateforme ZNIEFF type II",
+     "pin inside + shared name words"
+    ],
+    [
+     "cdl.323",
+     "Plaine des maures",
+     "IGN Géoplateforme Conservatoire du littoral",
      "pin inside + shared name words"
     ]
    ],
@@ -1725,6 +2756,12 @@
      "Marais de l'Enfer",
      "IGN Géoplateforme ZNIEFF type I",
      "pin inside + shared name words"
+    ],
+    [
+     "cdl.361",
+     "Marais de l'enfer",
+     "IGN Géoplateforme Conservatoire du littoral",
+     "pin inside + shared name words"
     ]
    ],
    "old_pieces": [],
@@ -1744,12 +2781,56 @@
      "BAIE D'AUDIERNE",
      "IGN Géoplateforme ZNIEFF type II",
      "pin inside + shared name words"
+    ],
+    [
+     "cdl.38",
+     "BAIE D'AUDIERNE",
+     "IGN Géoplateforme Conservatoire du littoral",
+     "pin inside + shared name words"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/FR-15946"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-4586",
+   "name": "HERBIER DE CYMODOCÉES DE FREJUS Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.93",
+     "HERBIER DE CYMODOCÉES DE FRÉJUS",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-4586"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-5426",
+   "name": "BAIE DE SAINT-MALO DINARD Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.3",
+     "BAIE DE SAINT-MALO DINARD",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-5426"
   },
   {
    "area": "FR",
@@ -1769,6 +2850,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/FR-5977"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-6336",
+   "name": "BORDURE SUD DU PLATIER ROCHEUX DE PENMARCH - MEN HIR AR BLEIZ BASSE LARGE BASSE PERENESSE Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.117",
+     "BORDURE SUD DU PLATIER ROCHEUX DE PENMARCH - MEN HIR  AR BLEIZ  BASSE LARGE  BASSE PERENESSE",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-6336"
   },
   {
    "area": "FR",
@@ -1839,6 +2939,12 @@
      "LAC DE GRAND-LIEU",
      "IGN Géoplateforme ZNIEFF type I",
      "pin inside + shared name words"
+    ],
+    [
+     "cdl.203",
+     "Lac de grand lieu",
+     "IGN Géoplateforme Conservatoire du littoral",
+     "pin inside + shared name words"
     ]
    ],
    "old_pieces": [],
@@ -1858,6 +2964,12 @@
      "LAC DE GRAND-LIEU",
      "IGN Géoplateforme ZNIEFF type I",
      "pin inside + shared name words"
+    ],
+    [
+     "cdl.203",
+     "Lac de grand lieu",
+     "IGN Géoplateforme Conservatoire du littoral",
+     "pin inside + shared name words"
     ]
    ],
    "old_pieces": [],
@@ -1876,6 +2988,12 @@
      "znieff1.8580",
      "LAC DE GRAND-LIEU",
      "IGN Géoplateforme ZNIEFF type I",
+     "pin inside + shared name words"
+    ],
+    [
+     "cdl.203",
+     "Lac de grand lieu",
+     "IGN Géoplateforme Conservatoire du littoral",
      "pin inside + shared name words"
     ]
    ],
@@ -1902,12 +3020,56 @@
      "LE CAP D'AILLY",
      "IGN Géoplateforme ZNIEFF type II",
      "pin inside + shared name words"
+    ],
+    [
+     "cdl.352",
+     "Cap d'ailly",
+     "IGN Géoplateforme Conservatoire du littoral",
+     "pin inside + shared name words"
     ]
    ],
    "old_pieces": [],
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/FR-8118"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-8133",
+   "name": "Platiers rocheux du littoral cauchois de Senneville au Treport Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.6",
+     "Platiers rocheux du littoral cauchois de Senneville au Tréport",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-8133"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-8532",
+   "name": "ILE MILLAU - ILE GRANDE Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.30",
+     "ÎLE MILLAU - ÎLE GRANDE",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-8532"
   },
   {
    "area": "FR",
@@ -1927,6 +3089,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/FR-8568"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-8838",
+   "name": "Pointe du hoc Flora and Fauna Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "cdl.587",
+     "Pointe du hoc",
+     "IGN Géoplateforme Conservatoire du littoral",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-8838"
   },
   {
    "area": "FR",
@@ -1965,6 +3146,177 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/FR-8905"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-8929",
+   "name": "Platier rocheux subtidal de Barfleur a Saint Vaast Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.43",
+     "Platier rocheux subtidal de Barfleur à Saint Vaast",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-8929"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-8941",
+   "name": "Large du Nord Cotentin Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.120",
+     "Large du Nord Cotentin",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-8941"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-8951",
+   "name": "Grande Rade de Cherbourg et baie du Becquet Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.98",
+     "Grande Rade de Cherbourg et baie du Becquet",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-8951"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-8962",
+   "name": "Large de la Hague Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.23",
+     "Large de la Hague",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-8962"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-9182",
+   "name": "Cailloutis a epibiose sessile du littoral cauchois Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.91",
+     "Cailloutis à épibiose sessile du littoral cauchois",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-9182"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-9183",
+   "name": "Bancs d'Ophiothrix fragilis de la Manche orientale Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.34",
+     "Bancs d'Ophiothrix fragilis de la Manche orientale",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-9183"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-9648",
+   "name": "QUELHUIT - PORT MELIN Marine Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.94",
+     "QUELHUIT - PORT MELIN",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-9648"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-9668",
+   "name": "HOUAT Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.18",
+     "HOUAT",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-9668"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-9675",
+   "name": "CHENAUX ROCHEUX DU GOLFE DU MORBIHAN Biological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff2_mer.5",
+     "CHENAUX ROCHEUX DU GOLFE DU MORBIHAN",
+     "IGN Géoplateforme ZNIEFF type II sea",
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-9675"
   },
   {
    "area": "GB",
@@ -16925,41 +18277,28 @@
   },
   {
    "area": "FR",
-   "ref": "FR-10522",
-   "name": "PRESQU'ILE DE GIENS 2 Marine Conservation Area",
+   "ref": "FR-10570",
+   "name": "ILES DE LERINS 2 Biological Reserve",
    "old_grade": "official",
    "new_grade": "pin",
    "new_pieces": [],
    "old_pieces": [
     [
-     "znieff2.1973",
-     "PRESQU'ÎLE DE GIENS",
+     "znieff2.2020",
+     "ÎLES DE LÉRINS",
      "IGN Géoplateforme ZNIEFF type II",
      "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/FR-10522"
-  },
-  {
-   "area": "FR",
-   "ref": "FR-10548",
-   "name": "CAP DE SAINT-TROPEZ 2 Marine Conservation Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
+    ],
     [
-     "znieff1.16597",
-     "CAP DE SAINT-TROPEZ",
-     "IGN Géoplateforme ZNIEFF type I",
+     "znieff1_mer.66",
+     "ILES DE LÉRINS (SUD SAINT-HONORAT)",
+     "IGN Géoplateforme ZNIEFF type I sea",
      "name"
     ]
    ],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/FR-10548"
+   "pota": "https://pota.app/#/park/FR-10570"
   },
   {
    "area": "FR",
@@ -17248,6 +18587,25 @@
   },
   {
    "area": "FR",
+   "ref": "FR-14979",
+   "name": "VALLEE DU COUSIN AVAL, ROMANEE ET LEURS ABORDS Biological Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff2.828",
+     "VALLEE DU COUSIN AVAL, ROMANEE ET LEURS ABORDS",
+     "IGN Géoplateforme ZNIEFF type II",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-14979"
+  },
+  {
+   "area": "FR",
    "ref": "FR-16528",
    "name": "la dordogne 2 Biological Reserve",
    "old_grade": "official",
@@ -17267,6 +18625,25 @@
   },
   {
    "area": "FR",
+   "ref": "FR-16532",
+   "name": "agriates Biological Reserve",
+   "old_grade": "approx",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "10623",
+     "AGRIATE",
+     "EEA nationally designated areas",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-16532"
+  },
+  {
+   "area": "FR",
    "ref": "FR-16626",
    "name": "massif de villefermoy 2 Biological Reserve",
    "old_grade": "official",
@@ -17283,6 +18660,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/FR-16626"
+  },
+  {
+   "area": "FR",
+   "ref": "FR-2475",
+   "name": "Parc du Vinaigrier Nature Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "znieff2.2126",
+     "MONT VINAIGRIER - OBSERVATOIRE",
+     "IGN Géoplateforme ZNIEFF type II",
+     "pin inside + shared name words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-2475"
   },
   {
    "area": "FR",
@@ -24324,6 +25720,37 @@
    "pota": "https://pota.app/#/park/LU-0026"
   },
   {
+   "area": "FR",
+   "ref": "FR-15823",
+   "name": "plaine des maures 4 Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "znieff1.16937",
+     "PLAINE DES MAURES (Type 1)",
+     "IGN Géoplateforme ZNIEFF type I",
+     "pin inside + shared name words"
+    ],
+    [
+     "znieff2.2003",
+     "PLAINE DES MAURES (Type 2)",
+     "IGN Géoplateforme ZNIEFF type II",
+     "pin inside + shared name words"
+    ],
+    [
+     "cdl.323",
+     "Plaine des maures",
+     "IGN Géoplateforme Conservatoire du littoral",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/FR-15823"
+  },
+  {
    "area": "ES",
    "ref": "ES-0983",
    "name": "Sierra de Salinas Natura 2000",
@@ -24622,31 +26049,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/CL-0157"
-  },
-  {
-   "area": "FR",
-   "ref": "FR-15823",
-   "name": "plaine des maures 4 Conservation Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "znieff1.16937",
-     "PLAINE DES MAURES (Type 1)",
-     "IGN Géoplateforme ZNIEFF type I",
-     "pin inside + shared name words"
-    ],
-    [
-     "znieff2.2003",
-     "PLAINE DES MAURES (Type 2)",
-     "IGN Géoplateforme ZNIEFF type II",
-     "pin inside + shared name words"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/FR-15823"
   },
   {
    "area": "GR",
