@@ -246,6 +246,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82; read 2026-11-12"
   },
   {
+   "Park number (if matched)": "CA-6253",
+   "Park name (as the agency writes it)": "Moirs Ltd. Power House",
+   "Size": 3,
+   "Unit": "acres",
+   "Agency": "Heritage Properties",
+   "Source page": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0/query?where=OBJECTID%3D102&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0; read 2026-11-12"
+  },
+  {
    "Park number (if matched)": "CA-6251",
    "Park name (as the agency writes it)": "GRAND PARADE",
    "Size": 2,
@@ -262,15 +271,6 @@
    "Agency": "HRM Parks",
    "Source page": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/HRM_Parks_2/FeatureServer/0/query?where=OBJECTID%3D384&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/HRM_Parks_2/FeatureServer/0; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "CA-6253",
-   "Park name (as the agency writes it)": "Moirs Ltd. Power House",
-   "Size": 3,
-   "Unit": "acres",
-   "Agency": "Heritage Properties",
-   "Source page": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0/query?where=OBJECTID%3D102&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0; read 2026-11-12"
   },
   {
    "Park number (if matched)": "CA-5258",
@@ -568,6 +568,24 @@
    "Agency": "",
    "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D529&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-1253",
+   "Park name (as the agency writes it)": "Dawkins Line Rail Trail",
+   "Size": 455,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D38&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "CA-4960",
+   "Park name (as the agency writes it)": "Michel-Chartrand, Parc",
+   "Size": 410,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json",
+   "Notes": "computed from the official outline polygon (approx); layer https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json; read 2026-11-04"
   },
   {
    "Park number (if matched)": "US-0731",
@@ -1038,15 +1056,6 @@
    "Notes": "computed from the official outline polygon (approx); layer https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0; read 2026-11-05"
   },
   {
-   "Park number (if matched)": "CA-4960",
-   "Park name (as the agency writes it)": "Michel-Chartrand, Parc",
-   "Size": 410,
-   "Unit": "acres",
-   "Agency": "",
-   "Source page": "https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json",
-   "Notes": "computed from the official outline polygon (approx); layer https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json; read 2026-11-04"
-  },
-  {
    "Park number (if matched)": "US-7238",
    "Park name (as the agency writes it)": "Salcha River State Recreation Site",
    "Size": 62,
@@ -1072,6 +1081,141 @@
    "Agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
    "Source page": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?where=OBJECTID%3D3364&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-1251",
+   "Park name (as the agency writes it)": "Carr Creek",
+   "Size": 42,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D12&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1252",
+   "Park name (as the agency writes it)": "Columbus-Belmont",
+   "Size": 160,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D25&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1254",
+   "Park name (as the agency writes it)": "E.P. Tom Sawyer",
+   "Size": 545,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D8&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1256",
+   "Park name (as the agency writes it)": "Fort Boonesborough",
+   "Size": 159,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D45&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1258",
+   "Park name (as the agency writes it)": "Grayson Lake",
+   "Size": 1204,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D31&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1259",
+   "Park name (as the agency writes it)": "Green River Lake",
+   "Size": 1313,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D30&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1260",
+   "Park name (as the agency writes it)": "John James Audubon",
+   "Size": 1295,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D1&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1261",
+   "Park name (as the agency writes it)": "Kincaid Lake",
+   "Size": 477,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D21&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1262",
+   "Park name (as the agency writes it)": "Kingdom Come",
+   "Size": 1461,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D33&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1263",
+   "Park name (as the agency writes it)": "Lake Malone",
+   "Size": 376,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D4&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1265",
+   "Park name (as the agency writes it)": "Lincoln Homestead",
+   "Size": 212,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D16&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1266",
+   "Park name (as the agency writes it)": "Mineral Mound",
+   "Size": 536,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D23&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1267",
+   "Park name (as the agency writes it)": "My Old Kentucky Home",
+   "Size": 298,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D15&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1268",
+   "Park name (as the agency writes it)": "Nolin Lake",
+   "Size": 155,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D27&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1269",
+   "Park name (as the agency writes it)": "Old Fort Harrod",
+   "Size": 22,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D43&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
   },
   {
    "Park number (if matched)": "US-5756",
@@ -1634,6 +1778,26 @@
    "Retry?": "NO"
   },
   {
+   "Host": "kygisserver.ky.gov",
+   "Agency/area": "Kentucky Department of Parks",
+   "Kind": "GIS layer",
+   "Example URL": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8",
+   "# times used": 16,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "www.donneesquebec.ca",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": "https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "apps.fs.usda.gov",
    "Agency/area": "Forest Service national designated areas (monuments, NRAs, scenic areas)",
    "Kind": "GIS layer",
@@ -1718,16 +1882,6 @@
    "Agency/area": "Arkansas Natural Heritage Commission (preserve, state GIS table)",
    "Kind": "GIS layer",
    "Example URL": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21",
-   "# times used": 1,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
-   "Host": "www.donneesquebec.ca",
-   "Agency/area": null,
-   "Kind": "GIS layer",
-   "Example URL": "https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json",
    "# times used": 1,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
