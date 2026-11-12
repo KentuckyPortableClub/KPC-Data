@@ -62,6 +62,11 @@ jobs:
           def sig(r): return '|'.join(str(r.get(k) or '') for k in ('url', 'title', 'publisher', 'licence', 'note', 'expect'))
           try: q = json.load(open('data/intake/queue.json')).get('rows') or []
           except Exception: q = []
+          import glob as _g   # KPC owner, 2026-11-12: split queue files count too (never a *hold* file)
+          for _f in sorted(_g.glob('data/intake/queue*.json')):
+              if _f.endswith('/queue.json') or 'hold' in _f: continue
+              try: q += json.load(open(_f)).get('rows') or []
+              except Exception: pass
           try: s = json.load(open('data/intake/state.json')).get('rows') or {}
           except Exception: s = {}
           def old(p):

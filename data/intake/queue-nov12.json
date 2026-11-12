@@ -1,0 +1,175 @@
+{
+ "about": "SPLIT QUEUE (KPC owner, 2026-11-12): queue.json is at the 1 MB file cap, so new probe-able leads go here. Same row shape as queue.json. kpc_intake_bot.py reads every data/intake/queue*.json except a *hold* file.",
+ "rows": [
+  {
+   "added": "2026-11-12",
+   "area": "GB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "ows:Fees NONE, ows:AccessConstraints NONE (stated in the service)",
+   "note": "LIVE-OK: GetCapabilities read in a browser Nov 11; EPSG:27700; pa30x30 has a PA_Type column; largest GB managing agency in the W-9 list; gain: 3395 of 7079 parks in GB without an outline; source: search-b/world-gis-nov11-findings.md SERVICES VERIFIED",
+   "publisher": "NatureScot (Scottish Government agency)",
+   "title": "NatureScot protected areas WFS (start with protectedareas:pa30x30; also cpk country parks, rp regional parks, lnr, nnr)",
+   "url": "https://ogc.nature.scot/geoserver/protectedareas/wfs"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "GB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Fees NONE; Defra: made freely available as GIS download or WFS",
+   "note": "LIVE-OK: layer National_Nature_Reserves_England; EPSG:27700 (4326 too); gain: 3395 of 7079 parks in GB without an outline; source: search-b/world-gis-nov11-findings.md SERVICES VERIFIED",
+   "publisher": "Natural England / Defra",
+   "title": "Natural England National Nature Reserves (England) WFS",
+   "url": "https://environment.data.gov.uk/spatialdata/national-nature-reserves-england/wfs"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "GB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Fees NONE; Defra: made freely available as GIS download or WFS",
+   "note": "LIVE-OK: layer Sites_of_Special_Scientific_Interest_England (an overlay: only parks named as an SSSI); gain: 3395 of 7079 parks in GB without an outline; source: search-b/world-gis-nov11-findings.md SERVICES VERIFIED",
+   "publisher": "Natural England / Defra",
+   "title": "Natural England SSSI (England) WFS",
+   "url": "https://environment.data.gov.uk/spatialdata/sites-of-special-scientific-interest-england/wfs"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "GB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Fees NONE; Defra: made freely available as GIS download or WFS",
+   "note": "LIVE-OK: layer Local_Nature_Reserves_England; was a Hub hand download, it is live WFS; gain: 3395 of 7079 parks in GB without an outline; source: search-b/world-gis-nov11-findings.md SERVICES VERIFIED",
+   "publisher": "Natural England / Defra",
+   "title": "Natural England Local Nature Reserves (England) WFS",
+   "url": "https://environment.data.gov.uk/spatialdata/local-nature-reserves-england/wfs"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "GB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Fees NONE; Defra: made freely available as GIS download or WFS",
+   "note": "LIVE-OK: layer Country_Parks_England; was a Hub hand download, it is live WFS; gain: 3395 of 7079 parks in GB without an outline; source: search-b/world-gis-nov11-findings.md SERVICES VERIFIED",
+   "publisher": "Natural England / Defra",
+   "title": "Natural England Country Parks (England) WFS",
+   "url": "https://environment.data.gov.uk/spatialdata/country-parks-england/wfs"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "NO",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "NLOD 2.0, credit Miljodirektoratet",
+   "note": "LIVE-OK: Geonorge download / REST-API / Atom; covers Svalbard and Jan Mayen; the adopted vernekart is the legal boundary (the data may deviate). world-gis-sources.json names only geonorge.no; gain: 356 of 3366 parks in NO without an outline; source: search-b/world-gis-nov11-findings.md SERVICES VERIFIED",
+   "publisher": "Miljodirektoratet (Norwegian Environment Agency)",
+   "title": "Miljodirektoratet Naturvernomrader (Geonorge dataset naturvernomrader)",
+   "url": "https://kartkatalog.geonorge.no/metadata/5857ec0a-8d2c-4cd8-baa2-0dc54ae213b4"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "TH",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "nothing stated in our notes",
+   "note": "LIVE-OK: 361 features; path as recorded (FeatureServer assumed); Brandon has a saved copy (D:/json2); gain: 859 of 859 parks in TH without an outline; source: search-b/world-gis-nov11-findings.md HAND-DOWNLOADS (CAR/KR/TH segment)",
+   "publisher": "Ministry of Natural Resources and Environment / GISTDA",
+   "title": "Thailand protected areas 1:50k (MNRE) on the GISTDA portal",
+   "url": "https://gistdaportal.gistda.or.th/arcgis/rest/services/Hosted/L10_ProtectedArea_MNRE_50k/FeatureServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "EE",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "nothing stated in our notes (EELIS KRATT viewer is login-restricted; the WFS answered)",
+   "note": "LIVE-OK: layer kr_kaitseala; 7.55 MB pull; Brandon has a saved copy; gain: 155 of 155 parks in EE without an outline; source: search-b/world-gis-nov11-findings.md HAND-DOWNLOADS segment",
+   "publisher": "Estonian Environment Agency (Keskkonnaagentuur)",
+   "title": "Estonia EELIS protected areas WFS (kr_kaitseala)",
+   "url": "https://gsavalik.envir.ee/geoserver/eelis/ows"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "IM",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "nothing stated in our notes",
+   "note": "LIVE-OK: the queue already holds layers 3 and 9; this whole-service row lets the bot split the other polygon layers; gain: 4 of 8 parks in IM without an outline; source: search-b/world-gis-nov11-findings.md HAND-DOWNLOADS",
+   "publisher": "Isle of Man Government DEFA",
+   "title": "Isle of Man DEFA designations (glens, bird sanctuaries, NNRs, Ramsar, marine nature reserves, Manx National Trust land)",
+   "url": "https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "KR",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "nothing stated in our notes",
+   "note": "HAND-DOWNLOAD: no-login zip; one county only; gain: 1287 of 1287 parks in KR without an outline; source: search-b/world-gis-nov11-findings.md HAND-DOWNLOADS",
+   "publisher": "Hamyang-gun / KLIP via data.go.kr",
+   "title": "Hamyang-gun natural park district (KLIP shapefile)",
+   "url": "https://www.data.go.kr/data/15159364/fileData.do"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "DE",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "nothing stated in our notes",
+   "note": "LIVE-OK: the only live DE row on Nov 11; BfN national WFS was in maintenance; gain: 582 of 1265 parks in DE without an outline; source: search-b/world-gis-nov11-findings.md DEAD ENDS (DE)",
+   "publisher": "Land Berlin (SenUVK)",
+   "title": "Berlin protected sites (INSPIRE PS Atom feed)",
+   "url": "https://gdi.berlin.de/data/ps_natur/atom/"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "DE",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "dl-de/by-2.0 (unverified)",
+   "note": "LIVE-OK: was \"under maintenance\" Nov 11: retry; bot probes politely; gain: 582 of 1265 parks in DE without an outline; source: search-b/world-gis-nov11-findings.md DEAD ENDS (DE)",
+   "publisher": "Bundesamt fur Naturschutz",
+   "title": "BfN protected areas WFS (Schutzgebiete)",
+   "url": "https://geodienste.bfn.de/ogc/wfs/schutzgebiet"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-QC",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC-BY 4.0",
+   "note": "LIVE-OK: polygons in WGS84; Ile Sainte-Helene is named Jean-Drapeau in the layer; parks: CA-1974 CA-1997 CA-2241; gain: 3/3 named parks without an outline; source: search-b/world-gis-nov11-findings.md LATE NOV 11 MONTREAL",
+   "publisher": "Ville de Montreal",
+   "title": "Montreal large parks, borough parks and public spaces (GeoJSON)",
+   "url": "https://donnees.montreal.ca/dataset/grands-parcs-parcs-d-arrondissements-et-espaces-publics"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "BR",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC-BY",
+   "note": "LIVE-OK: EPSG:31983 polygons in a CSV column; parks: BR-0577 BR-0579; gain: 2/2 named parks without an outline; source: search-b/world-gis-nov11-findings.md PBH/FPMZB",
+   "publisher": "Prefeitura de Belo Horizonte / Prodabel",
+   "title": "Belo Horizonte municipal parks (GEOMETRIA polygons, CSV)",
+   "url": "https://dados.pbh.gov.br/dataset/parques-municipais"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-NJ",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "nothing stated in our notes",
+   "note": "LIVE-OK: 94,011 features; layers 5 and 63 of the same service are queued already; gain: 3 of 128 parks in US-NJ without an outline; source: search-b/world-gis-nov11-findings.md batch-of-34 round 2",
+   "publisher": "New Jersey DEP",
+   "title": "NJ DEP Open Space (statewide)",
+   "url": "https://mapsdep.nj.gov/arcgis/rest/services/Features/Land/MapServer/65"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "FM",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Licence Ouverte 2.0",
+   "note": "LIVE-OK: FR already reads cdl (#158); this row is for the overseas prefixes FM/FG/FS/FJ/FP; gain: 45 of 45 parks in FM without an outline; source: search-b/world-gis-nov11-findings.md WHAT THE OUTSIDE PASSES PRODUCED",
+   "publisher": "Conservatoire du littoral / PatriNat",
+   "title": "Conservatoire du littoral land holdings (MQ GP MF BL PM)",
+   "url": "https://data.geopf.fr/wfs/ows?typeName=patrinat_cdl:cdl"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-FL",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "nothing stated",
+   "note": "LIVE-OK: record OBJECTID 135 (fee); parks: US-7374; gain: 1/1 named parks without an outline; source: search-a/kpc-nov11-all-handbacks/job2",
+   "publisher": "Southwest Florida Water Management District",
+   "title": "SWFWMD land resources (fee lands)",
+   "url": "https://www25.swfwmd.state.fl.us/arcgis12/rest/services/OpenData/LandResources/MapServer/0"
+  }
+ ]
+}
