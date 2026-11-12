@@ -1,9 +1,20 @@
 name: KPC hard look reader (outside research rows -> questions for chat 11)
 # Nov 1 2026 (chat 10; Brandon's Canada Hard Look, AUTOMATION FIRST): the intake reader pulls hardlook-*.json from branch intake-files,
 # kpc_hardlook.py asks each layer for the park's own record, measures the POTA pin (R-G12 / R-G13) and writes
-# data/waiting/questions/hardlook.json (+ pin-typos.json). Daily, chains until every row is read. Never red.
+# data/waiting/questions/hardlook.json (+ pin-typos.json). Daily. Never red.
+# Nov 11 (fewer runs: 570 runs in two weeks, 560 of them self-starts): ONE run reads through the backlog under a time budget
+# (BUDGET_MIN, well under the job's 330 min), saving after every chunk that read something (and the reader writes its files every
+# minute and when it is stopped), so a cancelled run loses nothing. It starts ONE more run only when rows are left AND this run
+# made progress AND the chain is under its cap (input 'chain', passed along; CAP continuations per chain) AND fewer than BRAKE runs
+# started in 24 h (a count that cannot be read = no next run). Else one line says why ('backlog N left, cap reached ...') and
+# the daily cron continues. Rows on a never-contact host get no request (robots.txt included): 'blocked host: needs a saved copy'.
 on:
   workflow_dispatch:
+    inputs:
+      chain:
+        description: 'Set by the reader itself: how many times this chain has continued (leave 0 for a fresh start)'
+        required: false
+        default: '0'
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '13 6 * * *'
 permissions:
@@ -33,36 +44,58 @@ jobs:
         id: r
         continue-on-error: true
         env:
-          MINUTES: '40'
+          MINUTES: '40'        # one chunk (one reader process); the reader also writes its files every minute
+          BUDGET_MIN: '240'    # Nov 11: the whole run's reading time (job timeout 330 min); no new chunk starts past it
           LINKS: ../links
         run: |
           cd kpcdata
           python3 .github/scripts/kpc_intake_reader.py hardlook || { kpc_rc=$?; echo "::error title=kpc_intake_reader.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_intake_reader.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
-          BAD=0
-          for chunk in 1 2 3 4 5 6 7; do   # Nov 1 storage fix: up to 7 chunks in ONE job, ONE save (was 276 commits a week)
-            python3 .github/scripts/kpc_hardlook.py | tee /tmp/h.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { BAD=$rc; echo "::warning title=kpc_hardlook.py::stopped with an error (exit $rc), see the log above"; }
-            grep -q 'title=Hard look reader::stopped' /tmp/h.txt && BAD=1   # the reader says 'stopped (...)' and exits 0 on a crash
-            L=$(grep -o '^LEFT=[0-9]*' /tmp/h.txt | cut -d= -f2); [ -z "$L" ] || [ "$L" = 0 ] && break
-          done
+          BAD=0; DONE_ALL=0; WAIT=0; L=''; T0=$(date +%s); : > /tmp/h.txt
           # Nov 2 bot fixes (Quality 4a): carry the answers chats wrote on main while this job ran into our copy before the save
           # (the save overwrote the whole question file). A failed merge does not save over main.
-          MERGED=1; python3 .github/scripts/kpc_hardlook.py merge-main || { MERGED=0; BAD=1; echo "::error title=Hard look reader::could not merge main's answers: NOT saved this time (the next run reads again)"; }
-          python3 .github/scripts/kpc_status.py board 'Hard look reader' $([ "$BAD" = 0 ] && echo green || echo amber) "$(grep -o 'record found [0-9]*' /tmp/h.txt | head -1) $(date -u +%F); left $(grep -o '^LEFT=[0-9]*' /tmp/h.txt | cut -d= -f2)" 'chat 11 answers data/waiting/questions/hardlook.json' || true   # ok: a pipeline (its exit status is the last command; follow-up: pipefail)
-          if [ "$MERGED" = 1 ]; then bash ../links/.github/scripts/kpc_push_data.sh . "hard look reader (questions for chat 11)" data/waiting/questions data/intake/intake-seen.json data/status || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; fi
-          echo "left=$(grep -o '^LEFT=[0-9]*' /tmp/h.txt | cut -d= -f2)" >> "$GITHUB_OUTPUT"
+          kpc_save() { if python3 .github/scripts/kpc_hardlook.py merge-main; then bash ../links/.github/scripts/kpc_push_data.sh . "hard look reader (questions for chat 11)" data/waiting/questions data/intake/intake-seen.json data/status || { kpc_rc=$?; echo "::error title=kpc_push_data.sh::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_push_data.sh - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; else BAD=1; echo "::error title=Hard look reader::could not merge main's answers: NOT saved this time (the next run reads again)"; fi; }
+          for chunk in $(seq 1 12); do   # Nov 11: chunks until the budget is used, the backlog is empty or a chunk read nothing
+            REM=$(( BUDGET_MIN - ($(date +%s) - T0) / 60 )); [ "$REM" -ge 5 ] || { echo "::notice title=Hard look reader::time budget used (${BUDGET_MIN} min): this run stops here"; break; }
+            [ "$REM" -lt "$MINUTES" ] && export MINUTES=$REM
+            python3 .github/scripts/kpc_hardlook.py | tee /tmp/h.txt; rc=${PIPESTATUS[0]}; [ "$rc" = 0 ] || { BAD=$rc; echo "::warning title=kpc_hardlook.py::stopped with an error (exit $rc), see the log above"; }
+            grep -q 'title=Hard look reader::stopped' /tmp/h.txt && BAD=1   # the reader says 'stopped (...)' and exits 0 on a crash
+            L=$(grep -o '^LEFT=[0-9]*' /tmp/h.txt | cut -d= -f2 || true); D=$(grep -o '^DONE=[0-9]*' /tmp/h.txt | cut -d= -f2 || true); W=$(grep -o '^WAITING=[0-9]*' /tmp/h.txt | cut -d= -f2 || true)
+            DONE_ALL=$(( DONE_ALL + ${D:-0} )); WAIT=${W:-0}
+            [ "${D:-0}" -gt 0 ] && [ -n "$L" ] && [ "$L" != 0 ] && kpc_save   # progress is saved as it goes (a cancelled run loses nothing)
+            [ -z "$L" ] || [ "$L" = 0 ] && break
+            [ "${D:-0}" -gt 0 ] || { echo "::notice title=Hard look reader::chunk $chunk read nothing new ($L left, $WAIT waiting on a host): this run stops here"; break; }
+          done
+          python3 .github/scripts/kpc_status.py board 'Hard look reader' $([ "$BAD" = 0 ] && echo green || echo amber) "$(grep -o 'record found [0-9]*' /tmp/h.txt | head -1) $(date -u +%F); left ${L:-?}; done $DONE_ALL; waiting on a host $WAIT; blocked $(grep -o 'blocked host: needs a saved copy [0-9]*' /tmp/h.txt | grep -o '[0-9]*$' | head -1)" 'chat 11 answers data/waiting/questions/hardlook.json' || true   # ok: a pipeline (its exit status is the last command; follow-up: pipefail)
+          kpc_save
+          { echo "left=$L"; echo "done=$DONE_ALL"; } >> "$GITHUB_OUTPUT"
       - name: Next run
         if: steps.r.outputs.left != '' && steps.r.outputs.left != '0'
         id: kept_green_1
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
+          R: ${{ github.repository }}
+          LEFT: ${{ steps.r.outputs.left }}
+          DONE: ${{ steps.r.outputs.done }}
+          CHAIN: ${{ inputs.chain || '0' }}
+          CAP: '3'        # Nov 11: continuations per chain (the daily cron starts a chain at 0): at most 1 + 3 runs a day from the cron
+          BRAKE: '6'      # PR2 (Nov 2) chain brake kept as a second guard: no next run after 6 runs of this workflow in 24 h
+          NEXT_BY: 'the daily cron continues tomorrow'
         run: |
-          # PR2 (fewer runs, Nov 2): CHAIN BRAKE. A self-starting chain stops for the day after 8 runs in 24 h (Nov 2: the hard look
-          # reader chained 187 times and the WDPA phone book 178 times in one day, each one a commit and a site rebuild). The next
-          # scheduled run picks the work up again. Raise the number here if a backlog really needs more.
-          kpc_brake() { n=$(gh api "repos/${{ github.repository }}/actions/workflows/kpc-hardlook.yml/runs?created=>=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)&per_page=1" --jq .total_count 2>/dev/null || echo 0); if [ "${n:-0}" -ge 8 ]; then echo "::notice title=Chain brake::kpc-hardlook.yml ran $n times in 24 h (limit 8): no next run now; the next scheduled run goes on"; return 1; fi; return 0; }
-          kpc_brake || exit 0
-          gh workflow run kpc-hardlook.yml -R ${{ github.repository }} || { kpc_rc=$?; echo "::error title=start the next run::could not start the next run (exit $kpc_rc); the chain stops here"; echo "start the next run - could not start the next run (exit $kpc_rc); the chain stops here" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          # Nov 11: the old brake counted 0 runs when the count could not be read ('|| echo 0') and so never braked; now an unreadable count stops the chain.
+          RUNS24=$(gh api "repos/$R/actions/workflows/kpc-hardlook.yml/runs?created=>=$(date -u -d '24 hours ago' +%Y-%m-%dT%H:%M:%SZ)&per_page=1" --jq .total_count 2>/dev/null) || RUNS24=''
+          export RUNS24
+          python3 kpcdata/.github/scripts/kpc_chain.py 'Hard look reader' | tee /tmp/chain.txt
+          NEXT=$(grep -o '^NEXT=.*' /tmp/chain.txt | tail -1 | cut -d= -f2 || true); NC=$(grep -o '^CHAIN=[0-9]*' /tmp/chain.txt | tail -1 | cut -d= -f2 || true)
+          [ "$NEXT" = yes ] || exit 0
+          gh workflow run kpc-hardlook.yml -R "$R" -f chain="$NC" || { kpc_rc=$?; echo "::error title=start the next run::could not start the next run (exit $kpc_rc); the chain stops here"; echo "start the next run - could not start the next run (exit $kpc_rc); the chain stops here" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+      - name: Save what a cancelled run read (Nov 11)
+        if: cancelled()
+        env:
+          LINKS: ../links
+        run: |
+          cd kpcdata
+          python3 .github/scripts/kpc_hardlook.py merge-main && bash ../links/.github/scripts/kpc_push_data.sh . "hard look reader (questions for chat 11, run stopped part way)" data/waiting/questions data/intake/intake-seen.json || { echo "::warning title=Hard look reader::the cancelled run's rows were not saved; the next run reads them again"; echo "Hard look reader - the cancelled run's rows were not saved; the next run reads them again" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:

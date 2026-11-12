@@ -9,7 +9,10 @@ link extractor's two files use the same shape) and merges them into the document
   - 'possible' rows (docs-found-*-possible.json) need the same checks; nothing is taken on trust.
 Run inside the waiting-room pattern (resume data/docs -> this -> divert data/docs): nothing goes live without chat 11's YES.
 Kentucky first, then the US by state, then Canada. Resumable (data/intake/docs-merge-done.json); MINUTES per run. Never fails.
-Areas the documents bot is still reading are left for later (no two writers on one file)."""
+Areas the documents bot is still reading are left for later (no two writers on one file).
+Nov 11 2026 (fewer runs; 594 self-starts in a week): the last lines say LEFT=<rows still to merge> and DONE=<rows that got a final
+answer this run>. A row whose link timed out / whose host rests stays LEFT but is not DONE, so a run that only met such rows
+starts no other run (kpc_chain.py in the workflow: next run only when LEFT > 0 AND DONE > 0, under a cap)."""
 import datetime as dt, glob, json, os, pathlib, re, sys, time
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
@@ -56,8 +59,9 @@ def main():
             if isinstance(v, dict) and (v.get('map') or v.get('page')):
                 old = rows.get(ref)   # a later file (v2, Canada) wins over an older one, unless it has no map and the older does
                 if old is None or v.get('map') or not old.get('map'): rows[ref] = dict(v, _from=pathlib.Path(f).name, _possible=possible)
-    if not rows: note('no docs-found files with rows'); return
+    if not rows: note('no docs-found files with rows'); print('LEFT=0'); return
     done = load(DONE_F, {}) or {}
+    done0 = len(done)
     uses = {}
     for v in rows.values():
         if v.get('map'): uses[v['map']] = uses.get(v['map'], 0) + 1
@@ -106,8 +110,9 @@ def main():
     DONE_F.parent.mkdir(parents=True, exist_ok=True)
     json.dump(done, open(DONE_F, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
     left = sum(1 for ref in rows if f"{ref}|{rows[ref].get('map') or ''}|{rows[ref].get('page') or ''}" not in done and area_of(ref, rows[ref]) not in busy)
-    note('; '.join(f'{k} {v}' for k, v in n.items() if v) + f'; rows left {left}')
+    note('; '.join(f'{k} {v}' for k, v in n.items() if v) + f'; rows left {left}; done this run {len(done) - done0}')
     print(f'LEFT={left}')
+    print(f'DONE={len(done) - done0}')
 
 
 if __name__ == '__main__':

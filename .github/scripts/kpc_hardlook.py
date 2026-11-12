@@ -7,16 +7,30 @@ against it, and writes one question per park for chat 11 in data/waiting/questio
   PARCEL                  -> candidate APPROXIMATE (agency parcels) outline, never a 2-fer
   rules: R-G12 (record edge within 150 m of the pin = candidate 'pin N m outside'), R-G13 (PIN OFF in the notes + name/kind/size
   match = outline usable, POTA pin never moves: also listed in data/waiting/questions/pin-typos.json).
-Answers already given are kept. Resumable (rows done are skipped). MINUTES (40). Never fails."""
-import glob, json, math, os, pathlib, re, sys, time, urllib.parse
+Answers already given are kept. Resumable (rows done are skipped). MINUTES (40). Never fails.
+Nov 11 2026 (fewer runs; the reader had started itself 560 times in two weeks):
+  * every request goes through kpc_manners (which asks kpc_host_rules first). A row whose layer is on a never-contact / saved-copy-
+    only host (every services*.arcgis.com, apps.fs.usda.gov, ncnhde.natureserve.org) gets NO request of any kind (robots.txt
+    included): it is recorded 'blocked host: needs a saved copy (...)' and marked read, so it never holds the queue. Retry rule: it
+    is looked at again (still no request) only when its research row brings a different layer address, or the host rules stop
+    blocking that host; then it is read like a new row.
+  * progress is saved as it goes: the question files are written every CHECKPOINT_S seconds (60) and when the run stops
+    (an error, Ctrl-C, or the runner's stop signal), so a cancelled run loses nothing it has read.
+  * the last lines say LEFT=<rows still to read or re-ask>, DONE=<rows that got a final answer or one more try this run> and
+    WAITING=<rows put off because their host is resting / slow / robots.txt unreadable>. The workflow starts one more run only when
+    LEFT > 0 AND DONE > 0, under a cap (kpc_chain.py); rows that only wait on a host never start another run.
+It never moves a POTA pin: pins are read, measured and (R-G13) listed in pin-typos.json, never written."""
+import glob, json, math, os, pathlib, re, signal, sys, time, urllib.parse
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
-from kpc_manners import Manners  # noqa: E402
+from kpc_manners import Manners, HR  # noqa: E402  (HR = kpc_host_rules, the one pre-request host check)
 from kpc_json_any import load_json_any, save_json_gz  # noqa: E402
 
 M = Manners('KPC hard look reader (chat 10)')
 QF = pathlib.Path('data/waiting/questions/hardlook.json'); PT = pathlib.Path('data/waiting/questions/pin-typos.json')
 LIMIT = float(os.environ.get('MINUTES') or 40) * 60; T0 = time.time(); TODAY = time.strftime('%Y-%m-%d')
+CHECKPOINT_S = float(os.environ.get('KPC_CHECKPOINT_S') or 60)   # Nov 11: the question files are written at least this often
+BLOCKED = 'blocked host: needs a saved copy'
 LAY = re.compile(r'^(https?://\S+?/(?:MapServer|FeatureServer))/(\d+)', re.I)
 IDS = re.compile(r'\b(OBJECTID(?:_1)?|objectid|FID|OGF_ID|fid)\b\s*[#:=]?\s*((?:\d+\s*(?:\+|,|and|&)?\s*)+)')
 
@@ -29,9 +43,24 @@ def load(p, d):
     except Exception: return d  # noqa: BLE001
 
 
+def blocked_why(u):
+    """'' when the host rules allow a request to the layer address u, else why not (no request of any kind is made then)."""
+    ok, why = HR.host_ok(str(u or '').strip())
+    return '' if ok else (why or 'host rules say no')
+
+
+def unblocked(old, v):
+    """Nov 11 retry rule for a 'blocked host' row: look again only when the research row brings another layer address, or the
+    host rules no longer block it. Both checks are made here, offline: no request."""
+    if not (old or {}).get('blocked_host'): return False
+    u = str(v.get('url') or '').strip()
+    return u != str(old.get('url') or '').strip() or not blocked_why(u)
+
+
 def get_json(u, params):
     try:
         st, hd, body, final = M.get(u + '?' + urllib.parse.urlencode(params), accept='application/json', timeout=60)
+        if st == 'host-rule': return None, f'{BLOCKED} ({blocked_why(u) or "a redirect onto a blocked host"})'   # Nov 11: no request was made
         if st in ('deferred', 'crawl-delay', 'rest', 'robots-unreadable'): return None, f'next run ({st})'   # A13: robots.txt not readable = next run   # Nov 3 (A4): not a failed try
         if not (isinstance(st, int) and st < 400 and body): return None, f'HTTP {st}'
         j = json.loads(body.decode('utf-8', 'replace'))
@@ -144,6 +173,9 @@ def reask(rows, R):
         except (TypeError, ValueError): lat = lon = 0
         q['reasked'] = TODAY
         if not m or not (lat or lon): q['reask_result'] = 'not asked again: no layer address or no pin'; continue
+        bw = blocked_why(m.group(1))
+        if bw:   # Nov 11: never-contact / saved-copy-only host: no request of any kind, robots.txt included
+            q.update(reask_result=f'not asked again: {BLOCKED} ({bw})', blocked_host=HR.parts(m.group(1))[0]); n['blocked'] = n.get('blocked', 0) + 1; continue
         base = f'{m.group(1)}/{m.group(2)}/query'; n['asked'] += 1
         j, err = get_json(base, {'geometry': f'{lon},{lat}', 'geometryType': 'esriGeometryPoint', 'inSR': 4326, 'spatialRel': 'esriSpatialRelIntersects',
                                  'distance': 150, 'units': 'esriSRUnit_Meter', 'outFields': '*', 'returnGeometry': 'true', 'outSR': 4326,
@@ -262,11 +294,35 @@ def main():
         if not ok and ref in PINS: v['lat'], v['lon'] = PINS[ref]
     Q = load(QF, {'about': 'Canada Hard Look rows (outside research) read back from the layer by chat 10\'s reader: one question per park for chat 11 (answer YES / NO / NOT SURE). GIS = candidate outline, PARCEL = candidate APPROXIMATE (agency parcels). R-G12 / R-G13 noted per row.', 'rows': {}}) or {}
     R = Q.setdefault('rows', {}); P = load(PT, {'about': 'R-G13: POTA pins that official sources show are typos (POTA pin never moved; Brandon reports to POTA if he wants).', 'rows': {}}) or {}
-    n = {'asked': 0, 'record found': 0, 'record not found': 0, 'layer did not answer': 0, 'no record id / name': 0, 'skipped (status)': 0, 'next run (slow host)': 0}
+    n = {'asked': 0, 'record found': 0, 'record not found': 0, 'layer did not answer': 0, 'no record id / name': 0, 'skipped (status)': 0, 'next run (slow host)': 0, BLOCKED: 0}
+    sig = lambda q: (q.get('read'), q.get('reasked'), q.get('tries'), q.get('result'), q.get('reask_result'))
+    before = {r: sig(q) for r, q in R.items()}
+    last_save = [time.time()]
+
+    def save(final=False):
+        QF.parent.mkdir(parents=True, exist_ok=True)
+        save_json_gz(QF, Q, indent=1, ensure_ascii=False); save_json_gz(PT, P, indent=1, ensure_ascii=False)
+        last_save[0] = time.time()
+    try:
+        n2 = _read_rows(rows, R, P, n, save, last_save)
+    finally:
+        save(True)   # Nov 11: also when the run is stopped part way (the rows read so far are kept)
+    left = sum(1 for r, v in rows.items() if v.get('status') in ('GIS FOUND', 'NAME SOLVED', 'PARCEL') and not (R.get(r) or {}).get('read'))
+    left += sum(1 for q in R.values() if not str(q.get('answer') or '').strip() and not q.get('reasked') and REASK.match(str(q.get('result') or '')))   # re-asks still to do keep the chain going
+    done = sum(1 for r, q in R.items() if before.get(r) != sig(q))
+    note('; '.join(f'{k} {x}' for k, x in n.items() if x) + f'; re-asked by place + name: {n2}; rows left {left}; done this run {done}; questions {len(R)}, pin typos {len(P["rows"])}')
+    print(f'LEFT={left}')
+    print(f'DONE={done}')
+    print(f"WAITING={n['next run (slow host)']}")
+
+
+def _read_rows(rows, R, P, n, save, last_save):
+    """The reading loop of main() (Nov 11: split out so the files are saved on the way and when the run stops)."""
     for ref in sorted(rows, key=lambda r: (rows[r].get('st') or '', r)):
         v = rows[ref]
         if time.time() - T0 > LIMIT: break
-        if ref in R and R[ref].get('read') and not redo(R[ref]): continue
+        if time.time() - last_save[0] > CHECKPOINT_S: save()
+        if ref in R and R[ref].get('read') and not redo(R[ref]) and not unblocked(R[ref], v): continue
         if v.get('status') not in ('GIS FOUND', 'NAME SOLVED', 'PARCEL'): n['skipped (status)'] += 1; continue
         m = LAY.match(str(v.get('url') or '').strip())
         w = where_of(v.get('record'), v.get('field'))
@@ -275,6 +331,11 @@ def main():
              'answer': (R.get(ref) or {}).get('answer', ''), 'checked_by': (R.get(ref) or {}).get('checked_by', '')}
         if ref in R and redo(R[ref]):   # Nov 2 (chat 12): a reader gap is read again ONCE; its old grade is kept as first_answer and the row is asked again
             q.update(reread=TODAY, first_answer=R[ref].get('answer'), first_result=R[ref].get('result'), answer='', checked_by='')
+        bw = blocked_why(m.group(1)) if m else ''
+        if bw:   # Nov 11: fail closed BEFORE any request (robots.txt included); visible on the row, read once, never holds the queue
+            q.update(read=TODAY, result=f'{BLOCKED} ({bw})', blocked_host=HR.parts(m.group(1))[0])
+            n[BLOCKED] += 1; R[ref] = keep_old(R.get(ref), q); continue
+        if R.get(ref, {}).get('blocked_host'): q['blocked_host'] = None   # the row's new address may be read
         if not m or not w:
             q.update(read=TODAY, result='no record id / name the reader can ask (chat 11 reads the notes)'); n['no record id / name'] += 1; R[ref] = keep_old(R.get(ref), q); continue
         n['asked'] += 1
@@ -283,6 +344,8 @@ def main():
         if j is not None and not (j.get('features') or []) and not w.startswith('OBJECTID'):
             j2, err2 = name_words_query(base, re.split(r'[\s/,;(]', w.replace('UPPER(', ''))[0].rstrip(')'), v.get('name'))
             if j2 and j2.get('features'): j, w = j2, w + ' (then a name-word search)'
+        if j is None and err.startswith(BLOCKED):   # a redirect hop onto a blocked host (no request was made to it)
+            q.update(read=TODAY, result=err, blocked_host=HR.parts(m.group(1))[0]); n[BLOCKED] += 1; R[ref] = keep_old(R.get(ref), q); continue
         if j is None and err.startswith('next run'):   # Nov 3 (A4): slow host budget / Crawl-delay / host resting: asked again next run, no try counted
             n['next run (slow host)'] += 1; continue
         if j is None:
@@ -307,19 +370,14 @@ def main():
         if pin and pin > 150 and 'PIN OFF' in str(v.get('notes')):
             P['rows'][ref] = {'name': v.get('name'), 'pota_pin': [lat, lon], 'km_to_record': round(pin / 1000, 1), 'evidence': str(v.get('notes'))[:400], 'source': v.get('url'), 'date': TODAY}
         n['record found'] += 1; R[ref] = keep_old(R.get(ref), q)
-    n2 = reask(rows, R)   # chat 11 (Nov 1 3 PM): the rows with no record read back are asked again by place + name
-    QF.parent.mkdir(parents=True, exist_ok=True)
-    save_json_gz(QF, Q, indent=1, ensure_ascii=False); save_json_gz(PT, P, indent=1, ensure_ascii=False)
-    left = sum(1 for r, v in rows.items() if v.get('status') in ('GIS FOUND', 'NAME SOLVED', 'PARCEL') and not (R.get(r) or {}).get('read'))
-    left += sum(1 for q in R.values() if not str(q.get('answer') or '').strip() and not q.get('reasked') and REASK.match(str(q.get('result') or '')))   # re-asks still to do keep the chain going
-    note('; '.join(f'{k} {x}' for k, x in n.items() if x) + f'; re-asked by place + name: {n2}; rows left {left}; questions {len(R)}, pin typos {len(P["rows"])}')
-    print(f'LEFT={left}')
+    return reask(rows, R)   # chat 11 (Nov 1 3 PM): the rows with no record read back are asked again by place + name
 
 
 if __name__ == '__main__':
     if sys.argv[1:2] == ['merge-main']:
         try: sys.exit(merge_main())
         except Exception as e: note(f'merge-main stopped ({type(e).__name__}: {e})'); sys.exit(1)  # noqa: BLE001
+    signal.signal(signal.SIGTERM, lambda *_: sys.exit(143))   # Nov 11: the runner's stop signal ends main() through its save
     try: main()
     except Exception as e: note(f'stopped ({type(e).__name__}: {e})')  # noqa: BLE001
     sys.exit(0)
