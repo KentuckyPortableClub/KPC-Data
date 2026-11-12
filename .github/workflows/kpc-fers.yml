@@ -158,6 +158,13 @@ jobs:
           KPC_FERS_FULL: ${{ matrix.r.full }}         # Nov 9 evening: '1' = this area's round-robin full rebuild (every pair again)
           KPC_FERS_LIVE_DIR: cache/fers
           KPC_FERS_PARK_S: '600'   # Nov 9 PM: one park / pair / map request may take 10 minutes at most (skipped + listed after)
+          KPC_MEM_GUARD_MB: ${{ vars.KPC_MEM_GUARD_MB }}               # KPC owner, 2026-11-12: memory guard limits (blank = from MemTotal)
+          KPC_MEM_GUARD_FLOOR_MB: ${{ vars.KPC_MEM_GUARD_FLOOR_MB }}
+          KPC_MEM_GUARD: ${{ vars.KPC_MEM_GUARD }}
+        # KPC owner, 2026-11-12 (run 43205747757: the runner was lost in pass 2): the whole step runs under the memory guard. Past its
+        # limit the passes are stopped cleanly (exit 86): this step fails, so Save does not run and the break save keeps only what
+        # finished; the area's other states and the other jobs go on. A 'memory guard:' line every minute.
+        shell: python3 kpcdata/.github/scripts/kpc_mem_guard.py -- bash -e {0}
         run: |
           # Nov 9 PM (Quality NO on #57): every handler below ENDS the step with the script's own exit code (1 = crash, 3 = hard stop),
           # so this step's outcome is 'failure' and Save (if: steps.kept_green_3.outcome == 'success') does not run; Report then goes red.

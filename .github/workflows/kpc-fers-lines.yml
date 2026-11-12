@@ -150,7 +150,15 @@ jobs:
           python3 - <<'PY' > again.txt
           import json, os
           out = []
+          # KPC owner, 2026-11-12: a line the memory guard stopped in THIS run is never retried on the same cut (it would die the same
+          # way): it is listed as 'needs a smaller cut or more memory' (data/status/line-breaks.json, written by the line's 'broke' job)
+          try: B = [x for x in json.load(open('data/status/line-breaks.json')) if isinstance(x, dict) and x.get('why') == 'memory' and str(x.get('run')) == os.environ.get('GITHUB_RUN_ID')]
+          except Exception: B = []
+          mem = sorted({x.get('tag') for x in B})
+          if mem and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Stopped by the memory guard (needs a smaller cut or more memory; not retried):** ' + ', '.join(mem) + '\n')
           for l in json.loads(os.environ['LINES']):
+              if l['tag'] in mem: continue
               try: v = json.load(open(f"data/fers/line-{l['tag']}.json"))
               except Exception: continue
               why = v.get('why') or []

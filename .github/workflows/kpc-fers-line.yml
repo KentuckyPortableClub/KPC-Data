@@ -175,6 +175,8 @@ jobs:
     if: ${{ needs.preline.outputs.wait != '1' && (needs.preline.outputs.go == 'yes' && inputs.stage == 'all') }}
     runs-on: ubuntu-latest
     timeout-minutes: 355
+    outputs:
+      mem: ${{ steps.memstop.outputs.mem }}   # KPC owner, 2026-11-12: '1' = the memory guard stopped this job (read by 'broke')
     steps:
       - uses: actions/checkout@v5
         with:
@@ -236,7 +238,14 @@ jobs:
         id: kept_green_4
         continue-on-error: true
         timeout-minutes: 275
+        # KPC owner, 2026-11-12 (run 43205747757: pass 2 went silent 30 min, then the runner was lost): the whole step runs under the
+        # memory guard (a 'memory guard:' line every minute; past its limit the passes are stopped cleanly, exit 86, and the job goes
+        # red below, after 'Bundle up' kept the finished downloads)
+        shell: python3 kpcdata/.github/scripts/kpc_mem_guard.py -- bash -e {0}
         env:
+          KPC_MEM_GUARD_MB: ${{ vars.KPC_MEM_GUARD_MB }}               # memory guard limits (blank = from MemTotal)
+          KPC_MEM_GUARD_FLOOR_MB: ${{ vars.KPC_MEM_GUARD_FLOOR_MB }}
+          KPC_MEM_GUARD: ${{ vars.KPC_MEM_GUARD }}
           MINUTES: ${{ inputs.minutes }}
         run: |
           M=${MINUTES:-280}; [ $M -gt 225 ] && M=225
@@ -271,6 +280,20 @@ jobs:
         run: |
           set -- ${{ inputs.next }}
           [ -n "$2" ] && gh workflow run kpc-fers-line.yml -R "$REPO" -f "states=$1" -f "tag=$2" -f stage=all -f minutes=${{ inputs.minutes }} && echo "::notice title=2-fer line::next area started: $1 ($2)"
+      - name: Did the memory guard stop this fetcher? (KPC owner, 2026-11-12)
+        id: memstop
+        if: ${{ !cancelled() }}
+        run: |
+          if [ -s "$RUNNER_TEMP/kpc-mem-stop.txt" ]; then echo "mem=1" >> "$GITHUB_OUTPUT"; cat "$RUNNER_TEMP/kpc-mem-stop.txt"; else echo "mem=0" >> "$GITHUB_OUTPUT"; echo "memory guard: no stop in this fetcher"; fi
+      - name: A memory stop ends this line here (red; no worker and no checker run)
+        if: ${{ !cancelled() && steps.memstop.outputs.mem == '1' }}
+        run: |
+          # the bundle (finished downloads, saved water) is already up; the fetcher is red, so no worker and no checker run: nothing of this line is
+          # saved and its states keep their previous files. Other lines go on ('broke' records it as a memory stop, never as one of
+          # 'two breaks in a row'), and the same cut is not started again by the retry round or the chain: it needs a smaller cut or more memory
+          echo "::error title=2-fer line::the memory guard stopped the fetcher of $RUN_TAG ($STATES): no worker and no checker run; this line saves nothing and its states keep their previous files. Needs a smaller cut or more memory."
+          echo "**2-fer line $RUN_TAG: stopped by the memory guard in the fetcher.** Needs a smaller cut or more memory (not retried on the same cut)." >> "$GITHUB_STEP_SUMMARY"
+          exit 1
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:
@@ -309,6 +332,8 @@ jobs:
     if: ${{ needs.preline.outputs.wait != '1' && (!cancelled() && needs.preline.result == 'success' && needs.preline.outputs.go == 'yes' && inputs.stage != 'checker' && (inputs.stage == 'worker' || needs.fetcher.result == 'success')) }}
     runs-on: ubuntu-latest
     timeout-minutes: 355
+    outputs:
+      mem: ${{ steps.memstop.outputs.mem }}   # KPC owner, 2026-11-12: '1' = the memory guard stopped this job (read by 'broke')
     steps:
       - uses: actions/checkout@v5
         with:
@@ -354,7 +379,14 @@ jobs:
         id: kept_green_8
         continue-on-error: true
         timeout-minutes: 320
+        # KPC owner, 2026-11-12 (run 43205747757: pass 2 went silent 30 min, then the runner was lost): the whole step runs under the
+        # memory guard (a 'memory guard:' line every minute; past its limit the passes are stopped cleanly, exit 86, and the job goes
+        # red below, after 'Bundle up' kept the finished downloads)
+        shell: python3 kpcdata/.github/scripts/kpc_mem_guard.py -- bash -e {0}
         env:
+          KPC_MEM_GUARD_MB: ${{ vars.KPC_MEM_GUARD_MB }}               # memory guard limits (blank = from MemTotal)
+          KPC_MEM_GUARD_FLOOR_MB: ${{ vars.KPC_MEM_GUARD_FLOOR_MB }}
+          KPC_MEM_GUARD: ${{ vars.KPC_MEM_GUARD }}
           MINUTES: ${{ inputs.minutes }}
         run: |
           M=${MINUTES:-280}; [ $M -gt 300 ] && M=300
@@ -383,6 +415,20 @@ jobs:
           # the water copy is kept between nights; an empty one never replaces a good one
           if [ "$(ls bundle/water 2>/dev/null | wc -l)" -gt 0 ]; then tar czf "$WATER_ASSET" bundle/water && bash kpcdata/.github/scripts/kpc_keep2.sh "$REPO" fers-bundles "$WATER_ASSET" && gh release upload fers-bundles "$WATER_ASSET" --clobber -R "$REPO" && echo "::notice title=2-fer line::water copy $(ls bundle/water | wc -l) tiles ($(du -h "$WATER_ASSET" | cut -f1)) kept as $WATER_ASSET" || { kpc_rc=$?; echo "::warning title=2-fer line::water copy not uploaded (the bundle still has it)"; echo "2-fer line - water copy not uploaded (the bundle still has it)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; fi
           echo "::notice title=2-fer line::worker bundle $(du -h "$BUNDLE" | cut -f1) uploaded"
+      - name: Did the memory guard stop this worker? (KPC owner, 2026-11-12)
+        id: memstop
+        if: ${{ !cancelled() }}
+        run: |
+          if [ -s "$RUNNER_TEMP/kpc-mem-stop.txt" ]; then echo "mem=1" >> "$GITHUB_OUTPUT"; cat "$RUNNER_TEMP/kpc-mem-stop.txt"; else echo "mem=0" >> "$GITHUB_OUTPUT"; echo "memory guard: no stop in this worker"; fi
+      - name: A memory stop ends this line here (red; no checker runs)
+        if: ${{ !cancelled() && steps.memstop.outputs.mem == '1' }}
+        run: |
+          # the bundle (finished downloads, saved water) is already up; the worker is red, so no checker runs: nothing of this line is
+          # saved and its states keep their previous files. Other lines go on ('broke' records it as a memory stop, never as one of
+          # 'two breaks in a row'), and the same cut is not started again by the retry round or the chain: it needs a smaller cut or more memory
+          echo "::error title=2-fer line::the memory guard stopped the worker of $RUN_TAG ($STATES): no checker runs; this line saves nothing and its states keep their previous files. Needs a smaller cut or more memory."
+          echo "**2-fer line $RUN_TAG: stopped by the memory guard in the worker.** Needs a smaller cut or more memory (not retried on the same cut)." >> "$GITHUB_STEP_SUMMARY"
+          exit 1
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:
@@ -577,6 +623,8 @@ jobs:
     if: ${{ !cancelled() && (needs.fetcher.result == 'failure' || needs.worker.result == 'failure') }}   # Nov 12: was always(); a cancelled run records no break
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    env:
+      MEM: ${{ (needs.fetcher.outputs.mem == '1' || needs.worker.outputs.mem == '1') && '1' || '0' }}   # KPC owner, 2026-11-12: a memory-guard stop
     steps:
       - uses: actions/checkout@v5
         with:
@@ -594,12 +642,15 @@ jobs:
           try: L = json.load(open(f))
           except Exception: L = []
           now = time.time()
-          L.append({'tag': os.environ['RUN_TAG'], 'states': os.environ['STATES'], 'stage': os.environ['STAGE'], 'run': os.environ['GITHUB_RUN_ID'], 'date': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime(now)), 't': now})
+          mem = os.environ.get('MEM') == '1'
+          L.append({'tag': os.environ['RUN_TAG'], 'states': os.environ['STATES'], 'stage': os.environ['STAGE'], 'run': os.environ['GITHUB_RUN_ID'], 'date': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime(now)), 't': now, **({'why': 'memory'} if mem else {})})
           L = L[-50:]
           os.makedirs(os.path.dirname(f), exist_ok=True); json.dump(L, open(f, 'w'), indent=1)
-          line = f"- FROM BOT 2-fer line (chat 2; {time.strftime('%Y-%m-%d')}): BROKE in the {os.environ['STAGE']} (not for grading): {os.environ['STATES']} ({os.environ['RUN_TAG']}) · [run](https://github.com/{os.environ['REPO']}/actions/runs/{os.environ['GITHUB_RUN_ID']})"
+          line = f"- FROM BOT 2-fer line (chat 2; {time.strftime('%Y-%m-%d')}): BROKE in the {os.environ['STAGE']}{' (STOPPED BY THE MEMORY GUARD: needs a smaller cut or more memory; not retried on the same cut)' if mem else ''} (not for grading): {os.environ['STATES']} ({os.environ['RUN_TAG']}) · [run](https://github.com/{os.environ['REPO']}/actions/runs/{os.environ['GITHUB_RUN_ID']})"
           open('kpcdata/data/status/inbox-checkers.md', 'a').write(line + '\n')
-          prev = [x for x in L[:-1] if now - x.get('t', 0) < 6 * 3600 and x.get('tag') != os.environ['RUN_TAG']]
+          # KPC owner, 2026-11-12: a memory-guard stop is about that cut's size, not something that would repeat for everyone: it is
+          # never one of 'two breaks in a row' (it neither stops the queue nor counts as the earlier break of a later one)
+          prev = [] if mem else [x for x in L[:-1] if now - x.get('t', 0) < 6 * 3600 and x.get('tag') != os.environ['RUN_TAG'] and x.get('why') != 'memory']
           open('stop.flag', 'w').write('1' if prev else '')
           print('::notice title=2-fer line::' + line + (' · SECOND BREAK IN A ROW: the queue is stopped' if prev else ''))
           PY
