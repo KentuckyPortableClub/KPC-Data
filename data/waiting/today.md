@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 480 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 506 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -141,6 +141,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-12 | 0 | data/fers/US-WA.json | HOLD | F-2 pass2 missing: the 2-fer passes did not all run; F-2 pass3 missing: the 2-fer passes did not all run; F-2 only 2 of 40 live candidate pairs are still there (under 80%): a person looks (a rule change is released by ha |
 | 2026-11-12 | 0 | data/fers/US-WI.json.gz | HOLD | F-2 candidates 27 -> 111 (over 30% change); F-2 NOT SURE 8 -> 5 (over 30% change); F-2 only 12 of 27 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 99 new candid |
 | 2026-11-12 | 0 | data/fers/US-WY.json | HOLD | F-2 candidates 45 -> 0 (over 30% change); F-2 NOT SURE 46 -> 4 (over 30% change); F-2 pass2 missing: the 2-fer passes did not all run; F-2 pass3 missing: the 2-fer passes did not all run |
+| ? | ? | data/ca-key/CA-QC.json | RELEASE |  |
 | ? | ? | data/campinfo/US-AL.json | PASS |  |
 | ? | ? | data/campinfo/US-AZ.json | PASS |  |
 | ? | ? | data/campinfo/US-CA.json | PASS |  |
@@ -333,6 +334,27 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/truth/US-WI.json | PASS |  |
 | ? | ? | data/truth/US-WV.json | PASS |  |
 | ? | ? | data/truth/US-WY.json | PASS |  |
+| ? | ? | data/us-key/US-AK.json | RELEASE |  |
+| ? | ? | data/us-key/US-AZ.json | PASS |  |
+| ? | ? | data/us-key/US-CA.json | RELEASE |  |
+| ? | ? | data/us-key/US-CO.json | RELEASE |  |
+| ? | ? | data/us-key/US-DE.json | RELEASE |  |
+| ? | ? | data/us-key/US-IA.json | RELEASE |  |
+| ? | ? | data/us-key/US-ID.json | RELEASE |  |
+| ? | ? | data/us-key/US-IN.json | RELEASE |  |
+| ? | ? | data/us-key/US-MD.json | RELEASE |  |
+| ? | ? | data/us-key/US-MN.json | RELEASE |  |
+| ? | ? | data/us-key/US-MO.json | RELEASE |  |
+| ? | ? | data/us-key/US-NH.json | RELEASE |  |
+| ? | ? | data/us-key/US-NM.json | RELEASE |  |
+| ? | ? | data/us-key/US-NV.json | RELEASE |  |
+| ? | ? | data/us-key/US-OH.json | RELEASE |  |
+| ? | ? | data/us-key/US-OR.json | RELEASE |  |
+| ? | ? | data/us-key/US-TN.json | RELEASE |  |
+| ? | ? | data/us-key/US-UT.json | RELEASE |  |
+| ? | ? | data/us-key/US-VT.json | RELEASE |  |
+| ? | ? | data/us-key/US-WA.json | RELEASE |  |
+| ? | ? | data/us-key/US-WY.json | RELEASE |  |
 | 2026-11-04 | 8 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
 | 2026-11-07 | 5 | data/world-key/ZA.json | HOLD | F-O2 4 of 75 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
 | 2026-11-08 | 4 | data/wwff/CTFF.json | HOLD | F-W2 rows 702 -> 280 (under 80% of the saved list) |
@@ -340,6 +362,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-11 | 1 | data/world-key/FR.json | HOLD | F-O1 outlines 13877 -> 13388 (more than 1% lost) |
 | 2026-11-11 | 1 | data/world-key/JP.json | HOLD | F-O2 101 of 185 outlines carry a layer name that shares no word with the park (55%; live 97/185): outlines swapped to other parks? |
 | 2026-11-11 | 1 | data/world-key/LU.json | HOLD | F-O1 outlines 49 -> 46 (more than 1% lost) |
+| ? | ? | data/ca-key/index.json | RELEASE |  |
 | ? | ? | data/pile-solver/AS.json | PASS |  |
 | ? | ? | data/pile-solver/AT.json | PASS |  |
 | ? | ? | data/pile-solver/AU.json | PASS |  |
@@ -396,6 +419,9 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/pile-solver/solved-pin.csv | ? |  |
 | ? | ? | data/trails/index-state.json | PASS |  |
 | ? | ? | data/us-key/area-tables.json | PASS |  |
+| ? | ? | data/us-key/changed-parks.json | RELEASE |  |
+| ? | ? | data/us-key/index.json | RELEASE |  |
+| ? | ? | data/us-key/lost-finds.json | RELEASE |  |
 | ? | ? | data/us-key/overrides-parks-01.json | PASS |  |
 | ? | ? | data/us-key/overrides-parks-02.json | PASS |  |
 | ? | ? | data/us-key/overrides.json | PASS |  |
