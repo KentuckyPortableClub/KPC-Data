@@ -1,6 +1,6 @@
 # Closures super-bot: review (2026-11-12; RULE SHEET D; compared quietly, nothing on cards until GO)
 
-Run: 2026-11-12T15:07Z · requests 105 · pages 81 · PDFs 17 · sentences read 359 · unmatched 122 · look-alikes skipped 206 · sources failed 2
+Run: 2026-11-12T21:04Z · requests 105 · pages 81 · PDFs 17 · sentences read 358 · unmatched 118 · look-alikes skipped 206 · sources failed 2
 
 ## Kentucky gate: **FAIL** — 21 of 28 of Kentucky's own reader's items found here on the same park (75%); 52 only here
 
@@ -9,7 +9,7 @@ Run: 2026-11-12T15:07Z · requests 105 · pages 81 · PDFs 17 · sentences read 
 - US-KY fs-gwj: rest (host resting after an earlier strike; last items kept) (https://www.fs.usda.gov/alerts/gwj/alerts-notices)
 - US-KY ky-fs-dbnf: rest (host resting after an earlier strike; last items kept) (https://www.fs.usda.gov/alerts/dbnf/alerts-notices)
 
-## US-KY (done, read 2026-11-12T15:07)
+## US-KY (done, read 2026-11-12T21:04)
 whole 1 · part 0 · hunt 0 · seasonal 0 · note 69 · taken_down 19 · 0 banners
 
 Sources that failed (last items kept): ky-fs-dbnf (rest (host resting after an earlier strike; last items kept)); fs-gwj (rest (host resting after an earlier strike; last items kept))
@@ -17,10 +17,6 @@ Sources that failed (last items kept): ky-fs-dbnf (rest (host resting after an e
 Dropped as another state's place (multi-state forest): 2 notices
 
 Unmatched (two parks or none; for chat 11 to judge):
-- AJ Jolly Lake is closed for 2026 due to repairs for all recreational activities [ky-fw-alerts] = no POTA park: A.J. Jolly Lake is a Campbell County park lake · no park name shares a word
-- Laurel Bridge Boat Ramp on Laurel River Lake Temporarily Closed [ky-fw-alerts] = not tied: Laurel River Lake lies inside Daniel Boone NF (US-4484) but is not its own park; the ramp's land owner is not known here (NOT SURE = kept out) · nearest park name: Ed Mabry-Laurel Gorge Wildlife Management Area (US-3811)
-- Sympson Lake will be closed to all boating activity in 2026 [ky-fw-alerts] = no POTA park: Sympson Lake is a KDFWR lake (Nelson County) · no park name shares a word
-- West Point Boat Ramp Closure [ky-fw-alerts] = no POTA park: the West Point ramp is a KDFWR Ohio River ramp · no park name shares a word
 - 1. Cave Run Lake [ky-fw-quota] · nearest park name: Mammoth Cave National Park (US-0050)
 - ARCHERY SEASON [ky-fw-quota] · no park name shares a word
 - BLIND RESTRICTIONS [ky-fw-quota] · no park name shares a word
@@ -47,6 +43,10 @@ Unmatched (two parks or none; for chat 11 to judge):
 - Accessible/ Mobility-Impaired WMA | [ky-fw-public-land] · no park name shares a word
 - BLIND RESTRICTIONS [ky-fw-public-land] · no park name shares a word
 - Big Rivers WMA (noon Central to 5 p.m.) in Union County and at the Roberts Tract [ky-fw-public-land] · nearest park name: Big Rivers Wildlife Management Area (US-3796)
+- Clay WMA & Yellowbank WMA [ky-fw-public-land] · nearest park name: Yellowbank Wildlife Management Area (US-3840)
+- Daniel Boone National Forest | [ky-fw-public-land] · nearest park name: Daniel Boone National Forest (US-4484)
+- Day of the hunt requirements [ky-fw-public-land] · no park name shares a word
+- EXCEPTIONS [ky-fw-public-land] · no park name shares a word
 
 ### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 21 · only here 52 · only there 7
 
