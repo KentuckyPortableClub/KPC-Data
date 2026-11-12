@@ -186,6 +186,25 @@ def _ref_rows(obj):
 
 
 HAND = ('data/fers-approx-outlines.json', 'data/point-circles.json', 'data/us-key/overrides.json', 'data/ca-key/overrides.json')
+UNREADABLE = '!unreadable'
+
+
+def hand_rows(links):
+    """{hand file: its ref rows}. Nov 12 2026 (KPC owner; KPC-Links #151 split): an overrides.json is read WHOLE (manifest + its parts,
+    kpc_overrides_whole), so a state's 'data:' part is the same in both layouts and an edit in a part file still moves it. A set that
+    cannot be read whole gives {UNREADABLE: why}: state_hash then stamps a value no readable set has (every state differs; never a
+    partial slice that looks current)."""
+    out = {}
+    for f in HAND:
+        if f.endswith('/overrides.json'):
+            sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+            import kpc_overrides_whole as OVW
+            try: out[f] = _ref_rows(OVW.load_whole(pathlib.Path(links) / f, missing_ok=True, links=links))
+            except OVW.OverridesError as e:
+                print(f'::warning title=2-fer hash::{f} cannot be read whole ({str(e)[:200]}): its part of every state hash is marked unreadable', file=sys.stderr)
+                out[f] = {UNREADABLE: str(e)}
+        else: out[f] = _ref_rows(load(pathlib.Path(links) / f))
+    return out
 
 
 def _mod(links, name):
@@ -241,8 +260,9 @@ def state_hash(st, links, kpcdata, nb=None, st_of=None, code=None, hand=None):
         parts[f'up:key:{s}'] = _key_part(links, s)
         parts[f'up:outline:{s}'] = _outline_part(links, s)
     refs = {r for r in st_of if _sts(st_of, r) & ({st} | set(mine))}
-    hand = hand if hand is not None else {f: _ref_rows(load(links / f)) for f in HAND}
+    hand = hand if hand is not None else hand_rows(links)
     for f, rows in hand.items():
+        if UNREADABLE in rows: parts[f'data:{f}'] = sha(UNREADABLE); continue
         parts[f'data:{f}'] = sha(canon({r: {k: v for k, v in rows[r].items() if k not in HEADER} if isinstance(rows[r], dict) else rows[r]
                                        for r in sorted(refs & set(rows))}))
     pf = kpcdata / ('data/parkinfo/CA.json' if st.startswith('CA-') else f'data/parkinfo/{st}.json')
@@ -295,7 +315,7 @@ def pick(env=os.environ, out=sys.stdout):
     st_of = park_states(kpcdata)
     nb = neighbours(kpcdata, st_of)
     code = code_hash(links); rules = fers_rules(links)
-    hand = {f: _ref_rows(load(links / f)) for f in HAND}
+    hand = hand_rows(links)
     rows, new_files = {}, {}
     # 1 read every new file and its saved copy
     for st in states:
@@ -399,7 +419,7 @@ def proof(links, frm, to):
 def plan(env=os.environ, out=sys.stdout):
     links = pathlib.Path(env.get('LINKS') or 'links'); kpcdata = pathlib.Path(env.get('KPCDATA') or '.')
     st_of = park_states(kpcdata); nb = neighbours(kpcdata, st_of); code = code_hash(links); cur = fers_rules(links)
-    hand = {f: _ref_rows(load(links / f)) for f in HAND}
+    hand = hand_rows(links)
     want = [s for s in (env.get('STATES') or '').split() if STATE_RX.match(s)] or sorted(area_of_state(kpcdata if (kpcdata / '.github/fers-areas.json').exists() else ROOT))
     mode = (env.get('KPC_AREA_HASH') or 'shadow').strip().lower()   # the shared switch: shadow (default) | add | reuse
     reuse = mode == 'reuse' and (env.get('FORCE') or '').lower() != 'full'

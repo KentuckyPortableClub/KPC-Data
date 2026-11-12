@@ -280,7 +280,12 @@ def per_park_release(A, log, U):
     if not it.get('build') and changed_since_yes(it, 'data/us-key/'):
         print('::notice title=Per-park release::the held US key changed after the KEY NO: waits for chat 11 to grade the new build'); return
     fail = set(KD.REF_RX.findall(str(it.get('chat11'))))
-    ovr = ((W.load(W.LINKS / 'data/us-key/overrides.json', {}) or {}).get('parks') or {})
+    # Nov 12 2026 (KPC owner; KPC-Links #151 split): the WHOLE override set (manifest + parts). A missing / bad part = nothing released
+    # per park (a partial set would treat a person's signed join in a part file as unsigned)
+    import kpc_overrides_whole as OVW
+    try: ovr = OVW.parks_whole(W.LINKS / 'data/us-key/overrides.json', missing_ok=True, links=W.LINKS)
+    except OVW.OverridesError as e:
+        print(f'::error title=Per-park release::the US overrides cannot be read whole ({str(e)[:300]}): nothing released per park'); return
     n_go, n_held, files, why_all = 0, 0, [], {}
     for f in KD.key_files(held_dir):
         new = W.load(f, None)
@@ -348,9 +353,13 @@ def main():
                 hold = held_refs(it)
                 for f in sorted((W.W / 'in' / rel).rglob('*.json*')):
                     r2 = str(f.relative_to(W.W / 'in'))
-                    kept = keep_held(f, r2, hold) if hold and item_kind(it) == 'key' else 0
+                    # Nov 12 (KPC owner): an overrides file holds a person's signed decisions, not map rows: a verdict's hold never makes
+                    # it a pin (that rewrote override rows; in a split set it would also break the parts' digests)
+                    kept = keep_held(f, r2, hold) if hold and item_kind(it) == 'key' and not W.ov_member(r2) else 0
                     if not DRY: W.mode_release(r2)
                     if not DRY and refused(r2): log.append({'item': r2, 'result': REFUSED}); continue
+                    if not DRY and W.ov_member(r2) and f.exists():   # Nov 12: a split override set that does not read whole stays held
+                        log.append({'item': r2, 'result': 'not released: the override set does not read whole (see the error in the log)'}); continue
                     log.append({'item': r2, 'result': 'released (approved folder)' + (f'; {kept} park(s) the verdict holds kept as live / pins' if kept else '')})
                 continue
             if (W.W / 'in' / rel).exists():

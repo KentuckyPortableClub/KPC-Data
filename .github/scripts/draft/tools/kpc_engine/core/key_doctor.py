@@ -181,9 +181,19 @@ def came_back(key, ovr_parks):
     return out
 
 
+def overrides_whole(links):
+    """Nov 12 2026 (KPC owner; KPC-Links #151 split): KPC-Links' US overrides read WHOLE (manifest + parts) through KPC-Data's
+    kpc_overrides_whole, in the single-file shape ('parts' dropped). A missing / bad part raises: never a partial set."""
+    sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[4]))
+    import kpc_overrides_whole as OVW
+    d = dict(OVW.load_whole(pathlib.Path(links) / 'data/us-key/overrides.json', missing_ok=True, links=links))
+    d.pop('parts', None)
+    return d
+
+
 def task_nos(links, data, out):
     key = pathlib.Path(links) / 'data/us-key'
-    ovr = load(key / 'overrides.json', {'parks': {}}) or {'parks': {}}
+    ovr = overrides_whole(links) or {'parks': {}}
     P = ovr.setdefault('parks', {})
     lmap = layer_map(load(key / 'layers.json', {}) or {})
     ans = latest_answers(question_rows(data), lmap) if data else {}
@@ -267,7 +277,7 @@ def task_release(links, data, out):
     data = pathlib.Path(data); held_dir = data / 'data/waiting/in/data/us-key'
     approved = load(data / 'data/waiting/approved.json', {}) or {}
     fail, item = key_no_refs(approved, 'us-key')
-    ovr_parks = ((load(pathlib.Path(links) / 'data/us-key/overrides.json', {}) or {}).get('parks') or {}) if links else {}
+    ovr_parks = (overrides_whole(links).get('parks') or {}) if links else {}
     if links:   # chat 11's NO answers that never reached overrides.json count too (BOT A's lost saves)
         lmap = layer_map(load(pathlib.Path(links) / 'data/us-key/layers.json', {}) or {})
         import copy
