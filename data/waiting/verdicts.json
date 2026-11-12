@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-12T18:54Z",
+ "checked": "2026-11-12T20:07Z",
  "switched_on": false,
  "results": [
   {
@@ -1735,8 +1735,8 @@
    "path": "data/fers/US-NJ.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 24 -> 43 (over 30% change)",
-    "F-2 19 new candidate pairs since the live file (over 10% of 24): a person looks at them first, e.g. US-0453+US-4992, US-0746+US-4582, US-11337+US-8051"
+    "F-2 candidates 24 -> 45 (over 30% change)",
+    "F-2 21 new candidate pairs since the live file (over 10% of 24): a person looks at them first, e.g. US-0453+US-4992, US-0684+US-1347+US-1613, US-0684+US-1634"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1778,7 +1778,7 @@
    "kind": "fers",
    "why": [
     "F-2 only 2 of 3 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 145 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US-0062+US-8098, US-0456+US-4556, US-0476+US-8098",
+    "F-2 147 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US-0062+US-8098, US-0456+US-4556, US-0476+US-8098",
     "F-S3 20 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-2001+US-5208 105 km, US-2001+US-5240 100 km, US-2001+US-5309 111 km",
     "F-K known 2-fer missing: US-2028 + US-2128",
     "F-K known 2-fer missing: US-2028 + US-2061"
@@ -3802,7 +3802,8 @@
    "path": "data/world-key/FR.json",
    "kind": "key",
    "why": [
-    "F-O1 outlines 13877 -> 13388 (more than 1% lost)"
+    "F-O1 outlines 13877 -> 13381 (more than 1% lost)",
+    "F-O3 retired parks still outlined: FR-5063, FR-5106, FR-5115, FR-5171, FR-5396"
    ],
    "notes": [],
    "verdict": "HOLD"
