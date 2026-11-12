@@ -65,12 +65,32 @@
   }
  },
  "ca-key": {
-  "build": "CA-42689962177",
+  "build": "CA-43311979456",
+  "first_seen": "2026-11-12 23:53 UTC",
+  "areas": {
+   "canadabc": {
+    "fp": "050fc500c14fb358",
+    "planned": "2026-11-12 23:53 UTC",
+    "tries": 1
+   },
+   "canadawest": {
+    "fp": "51e58089d7cbb925",
+    "planned": "2026-11-12 23:53 UTC",
+    "tries": 1
+   },
+   "canadaon": {
+    "fp": "366c53b49b9925a2",
+    "planned": "2026-11-12 23:53 UTC",
+    "tries": 1
+   }
+  },
+  "waiting": {
+   "canadaeast": "next start (at most 3 areas at a time)"
+  },
   "ran": [
-   "canadaeast",
-   "canadawest"
-  ],
-  "waiting": {},
-  "first_seen": "2026-11-09 20:43 UTC"
+   "canadabc",
+   "canadawest",
+   "canadaon"
+  ]
  }
 }
