@@ -1,17 +1,50 @@
-# Layer intake review (2026-11-04)
+# Layer intake review (2026-11-12)
 
 Every lead in data/intake/queue.json, probed politely (metadata and counts only, never geometry). Chat 9 approves a READY row by setting `approved: true` in ready.json; the nightly key rebuild reads approved rows later. LIVE-ONLY = read live, never stored. ASK = the publisher must be asked (nothing stated, or hosted for an agency). WATER-ONLY = lakes / reservoirs: for the 2-fer owner step only, never a park outline. RETRY = the probe did not open (error, rest, robots, 403): probed again next run, three failures → chat 9 checks the url. Terms are read on the publisher's OWN item page first (the Nevada lesson).
 
 | verdict | rows |
 |---|---|
-| READY | 2 |
-| WATER-ONLY | 41 |
+| READY | 11 |
+| WATER-ONLY | 42 |
 | LIVE-ONLY | 5 |
-| ASK-THE-PUBLISHER | 421 |
-| RETRY | 367 |
-| REJECT | 1658 |
+| ASK-THE-PUBLISHER | 441 |
+| RETRY | 449 |
+| REJECT | 1882 |
 
-## READY (2)
+## READY (11)
+
+### Ministerio de Ambiente y Desarrollo Sostenible (publisher of service); Parques Nacionales Naturales (RUNAP administrator) — National parks, regional parks, other RUNAP categories | Layer 0 ap_ue_areap  ·  CO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geo.minambiente.gov.co/server/rest/services/OTL/OTL_Area_Protegida/MapServer/0
+- WHY: official, credit terms, named polygons; closes 46 (name + pin 38, pin only 8): a pin inside a designation polygon is not a sure match
+- publisher: Ministerio de Ambiente y Desarrollo Sostenible (publisher of service); Parques Nacionales Naturales (RUNAP administrator → official (government host geo.minambiente.gov.co)
+- terms: CREDIT · source item page · "MADS MADS" · item https://geo.minambiente.gov.co/server/rest/services/OTL/OTL_Area_Protegida/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field uab_nombre_area_protegida · 1773 records · sample Cueva de los Guácharos / Nukak / Dinaboy
+- closes: 46 of 60 tested missing parks (by name 38, pin only 8; 166 of the area's 166 missing parks lie in the layer's extent)
+  - CO-0026 Old Providence McBean Lagoon National Natural Park Marine National Park → polygon "Old Providence Mc Bean Lagoon"
+  - CO-0028 Cinaruco National Conservation Area → polygon "Cinaruco"
+  - CO-0060 Cuchilla de San Antonio State Conservation Area → polygon "Cuchilla de San Antonio y Laguna El Coco"
+  - CO-0075 Del Complejo de  Humedales de Ayapel State Conservation Area → polygon "Distrito Regional de Manejo Integrado - Sitio Ramsar del Complejo de Humedales d"
+  - CO-0097 Juaitoque State Conservation Area → polygon "Juaitoque"
+  - CO-0099 La Selva State Conservation Area → polygon "La Selva"
+  - CO-0114 Páramo de Cristales, Castillejo o Gauchaneque State Conservation Area → polygon "Páramo de Cristales, Castillejo o Guachaneque"
+  - CO-0127 Rut Nativos State Conservation Area → polygon "BRUT Nativos"
+  - CO-0190 Cerro Pintao - Serraniía del Perijá State Natural Reserve → polygon "Cerro Pintao - Serranía del Perijá"
+  - CO-0195 Del Sistema Manglárico de la Boca de Guacamaya State Natural Reserve → polygon "Del Sistema Manglarico del Sector de la Boca de Guacamaya"
+  - CO-0202 HumedalesRios Leon y Suriqui State Natural Reserve → polygon "Humedales entre los Ríos Leon y Suriquí"
+  - CO-0211 Cerro el Volador State Natural Reserve → polygon "Metropolitano Cerro el Volador"
+  - CO-0212 Miraflores Picachos State Natural Reserve → polygon "Miraflores Picachos"
+  - CO-0213 Mutiscua Pamplona State Natural Reserve → polygon "Santurbán Mutiscua Pamplona"
+  - CO-0217 Paramo de Paja Blanca Territorio Sagrado del los Pastos State Natural Reserve → polygon "Páramo de Paja Blanca Territorio Sagrado del Pueblo de los Pastos"
+  - CO-0236 Siscunci Oceta State Natural Reserve → polygon "Unidad Biogeográfica de Siscuncí Oceta"
+  - CO-0257 Cuenca del Rio las Ceibas National Forest → polygon "Siberia Ceibas"
+  - CO-0260 Darien National Forest → polygon "Darién"
+  - CO-0261 Cuenca de los Rios Escalarete y San Cipriano National Forest → polygon "De la Cuenca Hidrográfica de los Ríos Escalerete y San Cipriano"
+  - CO-0273 Parque El Higueron National Forest → polygon "Parque el Higuerón"
+  - CO-0274 Quebrada Guadualito y El Negrito National Forest → polygon "Yotoco"
+  - CO-0276 Quebrada La Nona National Forest → polygon "Quebrada La Nona"
+  - CO-0278 Quebrada Teneria National Forest → polygon "Los Estoraques"
+  - CO-0282 Rio Anchicaya National Forest → polygon "Río Anchicayá"
+  - CO-0283 Rio Blanco y Quebrada Olivares National Forest → polygon "Las Cuencas Hidrográficas del Río Blanco y Quebrada Olivares"
 
 ### Local and Regional Greenspaces (bcgw_pub_whse_basemapping layer 39)  ·  CA-BC  ·  from chat 9
 - url: https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39
@@ -81,7 +114,132 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - GB-0198 Thames Basin Heaths SPA - Yateley Heath Woods Site of Significant Scientific Interest → polygon "Castle Bottom to Yateley and Hawley Commons"
 - TEST: ok
 
-## WATER-ONLY (41)
+### EEA Nationally Designated Areas (NatDA/CDDA) MapServer - fallback | CDDAv21_Dyna_WM  ·  PT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDAv21_Dyna_WM/MapServer/1
+- WHY: official, credit terms, named polygons; closes 22 (name + pin 7, pin only 15): a pin inside a designation polygon is not a sure match
+- publisher: EEA Nationally Designated Areas (NatDA/CDDA) MapServer - fallback → official (government words: Environment Agency)
+- terms: CREDIT · source item page · "European Environment Agency © European environment Agency" · item https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDAv21_Dyna_WM/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field siteName · 121693 records · sample Park Krajobrazowy Beskidu Malego / Gochelberg-Toter Berg / Atlaszedernreihe
+- closes: 22 of 60 tested missing parks (by name 7, pin only 15; 174 of the area's 174 missing parks lie in the layer's extent)
+  - PT-0023 Nogueira Natura 2000 → polygon "Montesinho"
+  - PT-0032 Erges e Ponsul Natura 2000 → polygon "Tejo Internacional"
+  - PT-0070 Reserva da Biosfera Transfronteirica Geres-Xures UNESCO Biosphere Reserve → polygon "Peneda-Geres"
+  - PT-0089 Acudes da Agolada Protected Landscape → polygon "Acude da Agolada"
+  - PT-0101 Vale do agueda Natura 2000 → polygon "Douro Internacional"
+  - PT-0134 Terceira Island Nature Park → polygon "Caldeira de Guilherme Moniz"
+  - PT-0143 Ilheus das Cabras Protected Area → polygon "Ilheus das Cabras"
+  - PT-0159 Reserva Natural da Alagoa da Fajazinha Nature Reserve → polygon "Quatro Ribeiras"
+  - PT-0161 Reserva Florestal Lagoa das Patas Forest Reserve → polygon "Serra de Santa Barbara e dos Misterios Negros"
+  - PT-0162 Reserva Florestal da Serreta Forest Reserve → polygon "Planalto Central e Costa Noroeste"
+  - PT-0167 Reserva Florestal Natural Parcial do Pico da Vara. Forest Reserve → polygon "Tronqueira e Planalto dos Graminhais"
+  - PT-0168 Reserva Florestal de Recreio das de agua Retorta Forest Reserve → polygon "Faial da Terra"
+  - PT-0170 Reserva Florestal de Recreio da Cancela do Cinzeiro Forest Reserve → polygon "Tronqueira e Planalto dos Graminhais"
+  - PT-0180 Zona de Proteccao Especial do Pico da Vara e Ribeira do Guilherme Natura 2000 → polygon "Tronqueira e Planalto dos Graminhais"
+  - PT-0182 Mata do Canario Nature Park → polygon "Sete Cidades"
+  - PT-0184 Parque Terra Nostra Nature Park → polygon "Tronqueira e Planalto dos Graminhais"
+  - PT-0197 Area Protegida de Gestao de Recursos da Costa Norte Protected Area → polygon "Costa Norte (Ilha de Santa Maria)"
+  - PT-0198 Area Protegida de Gestao de Recursos da Costa Sul Protected Area → polygon "Costa Sul (Ilha de Santa Maria)"
+  - PT-0206 Area Protegida para a Gestao de Habitats ou Especies da Costa das Velas Protected Area → polygon "Entre Morros"
+  - PT-0215 Area Protegida de Gestao de Recursos do Topo Protected Area → polygon "Costa do Topo"
+  - PT-0226 Area Protegida para a Gestao de Habitats ou Especies da Ponta da Restinga Protected Area → polygon "Costa Sudeste (Ilha Graciosa)"
+  - PT-0230 Area Protegida de Gestao de Recursos da Costa Noroeste Protected Area → polygon "Costa Noroeste (Ilha Graciosa)"
+
+### Ministerio de Bienes Nacionales (data owner), served by Superintendencia del Medio Ambiente IDE — SNASPE state units (reference copy of boundaries) | Sistema Nacional de Areas Silvestres Protegidas de  ·  CL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Areas_proteccion_oficial2/MapServer/6
+- WHY: official, credit terms, named polygons; closes 11 (name + pin 3, pin only 8): a pin inside a designation polygon is not a sure match
+- publisher: Ministerio de Bienes Nacionales (data owner), served by Superintendencia del Medio Ambiente IDE — SNASPE state units (re → official (government words: Ministerio)
+- terms: CREDIT · source item page · "Superintendencia del Medio Ambiente (2019) Superintendencia del Medio Ambiente (2020)" · item https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Areas_proteccion_oficial2/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NOMBRE · 24 records
+- closes: 11 of 48 tested missing parks (by name 3, pin only 8; 56 of the area's 254 missing parks lie in the layer's extent)
+  - CL-0115 El Panul State Park → polygon "Áreas de Preservación Ecológica"
+  - CL-0138 Altos de Chicauma Regional Reserve → polygon "Áreas de Preservación Ecológica"
+  - CL-0195 El Arrayán Sanctuary → polygon "Áreas de Preservación Ecológica"
+  - CL-0227 Geopark vizcachas Recreation Park → polygon "Áreas de Preservación Ecológica"
+  - CL-0230 Mirador de Condores Reserve → polygon "Áreas de Preservación Ecológica"
+  - CL-0256 Quebrada de Macul National Park → polygon "Áreas de Preservación Ecológica"
+  - CL-0257 Parque Natural Cantalao Nature Park → polygon "Áreas de Preservación Ecológica"
+  - CL-0266 Parque Natural La Plaza Norte Nature Recreation Area → polygon "Áreas de Preservación Ecológica"
+  - CL-0298 La engorda Mountain Park → polygon "Áreas de Preservación Ecológica"
+  - CL-0302 Parque Rio Colorado Protected Area → polygon "Áreas de Preservación Ecológica"
+  - CL-0324 Las Hualtatas Natural Area → polygon "Áreas de Preservación Ecológica"
+
+### EEA Nationally Designated Areas CDDA v19 (fallback only) | Nationally designated areas (CDDA) - Large scale viewing (layer 4)  ·  SK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDAv19_Dyna_LAEA/MapServer/1
+- WHY: official, credit terms, named polygons; closes 10 (name + pin 6, pin only 4): a pin inside a designation polygon is not a sure match
+- publisher: EEA Nationally Designated Areas CDDA v19 (fallback only) → official (government words: Environment Agency)
+- terms: CREDIT · source item page · "© European Environment Agency © European environment Agency" · item https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDAv19_Dyna_LAEA/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field siteName · 100677 records · sample Rohrbacher Kogel / Teichwiesen / Zhej
+- closes: 10 of 60 tested missing parks (by name 6, pin only 4; 120 of the area's 120 missing parks lie in the layer's extent)
+  - SK-0001 Tatra National Park → polygon "Tatransky"
+  - SK-0002 Nízke Tatry National Park → polygon "Skalka"
+  - SK-0003 Slovenský raj National Park → polygon "Slovensky raj"
+  - SK-0005 Malá Fatra National Park → polygon "Mala Fatra"
+  - SK-0006 Veľká Fatra National Park → polygon "Velka Fatra"
+  - SK-0007 Muránska planina National Park → polygon "Muranska planina"
+  - SK-0008 Slovenský kras National Park → polygon "Slovensky kras- OP"
+  - SK-0009 Poloniny National Park → polygon "Poloniny"
+  - SK-0038 Bábsky park - Protected Area → polygon "Babsky park"
+  - SK-0060 Košúty - Protected Area → polygon "Park pri ihrisku"
+
+### ARSO Atlas voda / geohub: Zavarovana in varovana območja po ZON (ArcGIS Server REST, Slovenian Environment Agency) | Državna zavarovana območja (5661); Državna zavarovana območja (točke) (5659); Lokal  ·  SI  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geohub.gov.si/ags/rest/services/DRSV/Zavarovana_in_varovana_obmocja_po_ZON/MapServer/5660
+- WHY: official, credit terms, named polygons; closes 10 (name + pin 4, pin only 6): a pin inside a designation polygon is not a sure match
+- publisher: ARSO Atlas voda / geohub: Zavarovana in varovana območja po ZON (ArcGIS Server REST, Slovenian Environment Agency) → official (government host geohub.gov.si)
+- terms: CREDIT · source item page · "ARSO ARSO" · item https://geohub.gov.si/ags/rest/services/DRSV/Zavarovana_in_varovana_obmocja_po_ZON/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field IME_ZNAMEN · 407 records · sample Podova - ribniki v Grajevniku - zoološki naravni spomenik / Pivola - Ribniki - zoološki naravni spomenik / Maribor - nasad kostanjev ob Vrbanski cesti
+- closes: 10 of 60 tested missing parks (by name 4, pin only 6; 637 of the area's 637 missing parks lie in the layer's extent)
+  - SI-0018 BEKA - soteska Glinščice z dolino Griže Landscape Park → polygon "Beka - soteska Glinščice z dolino Griža, ponornimi jamami in arheološkimi lokali"
+  - SI-0032 GOLAKI IN SMREKOVA DRAGA Forest Reserve → polygon "Golaki in Smrekova draga - botanična lokaliteta, mrazišče in gozdni rezervat"
+  - SI-0034 PANOVEC National Forest → polygon "Nova Gorica, Gozd Panovec"
+  - SI-0039 VITOVSKO JEZERO Nature Park → polygon "Južni obronki Trnovskega gozda"
+  - SI-0074 Fabianijeva pot - Fabiani Trail Scenic Site → polygon "Štanjel"
+  - SI-0076 Sveta Gora Sanctuary → polygon "Skalnica - območje gore z Marijinim svetiščem"
+  - SI-0083 Slovenska Bistrica Grajski park Park → polygon "Park ob gradu v Slovenski Bistrici"
+  - SI-0120 GUP Panovec - trail Forest Reserve → polygon "Nova Gorica, Gozd Panovec"
+  - SI-0125 Jesenkova pot - Tivoli Ljubljana Flora and Fauna Reserve → polygon "Tivoli, Rožnik in Šišenski hrib"
+  - SI-0143 Vipavski park (Park Lanthierijeve graščine) National Historic Site → polygon "Vipava - območje jedra s spomeniki in znamenitostmi"
+
+### MD iMAP Protected Lands (DNR Owned Lands) | DNR Owned Lands and Conservation Easements (0); Protected Federal Lands (8)  ·  US-MD  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/MapServer/0
+- WHY: official, credit terms, named polygons; closes 4 (name + pin 3, pin only 1): a pin inside a designation polygon is not a sure match
+- publisher: MD iMAP Protected Lands (DNR Owned Lands) → official (government host mdgeodata.md.gov)
+- terms: CREDIT · source item page · "MD iMAP, DNR, MDP, MDA MD iMAP, DNR" · item https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field DNRName · 580 records · sample BOHEMIA RIVER SP / DNR Held Conservation Easements - Central / DNR Held Conservation Easements - Central
+- overlap: same publisher as mdd
+- closes: 4 of 8 tested missing parks (by name 3, pin only 1; 8 of the area's 8 missing parks lie in the layer's extent)
+  - US-11231 Sideling Hill Creek State Park → polygon "SIDELING HILL WMA"
+  - US-13564 Savage Highlands State Park → polygon "SAVAGE RIVER SF"
+  - US-7769 Heaters Island Wildlife Management Area → polygon "ISLANDS OF THE POTOMAC WMA"
+  - US-7782 Ben Doane Parcel of Nanjemoy Wildlife Management Area → polygon "NANJEMOY WMA"
+
+### EEA NatDA MapServer v22 (fallback; countries report official national data) | NatDA polygons (layers 1,3,4)  ·  RO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/NatDAv22_Dyna_WM/MapServer/1
+- WHY: official, credit terms, named polygons; closes 3 (name + pin 3, pin only 0): a pin inside a designation polygon is not a sure match
+- publisher: EEA NatDA MapServer v22 (fallback; countries report official national data) → official (government words: Environment Agency)
+- terms: CREDIT · source item page · "© European Environment Agency © European environment Agency" · item https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/NatDAv22_Dyna_WM/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field siteName · 124718 records · sample Sutjeska / Bijambare / Peliny
+- closes: 3 of 60 tested missing parks (by name 3, pin only 0; 857 of the area's 857 missing parks lie in the layer's extent)
+  - RO-0010 Văcăraști National Park → polygon "Parcul Natural Văcărești"
+  - RO-0016 Arboretum Bazoș Park → polygon "Arboretumul Bazoș"
+  - RO-0051 Pietricica Hill Park → polygon "Locul fosilifer Pietricica"
+
+### SYKE downloadable spatial datasets: Nature protected areas (state, private, wilderness reserves), Natura 2000, other state protected areas | luonnonsuojelualueet_valtio.zip; luonnonsuojelualueet_yksit  ·  FI  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://syke.fi/en/environmental-data/downloadable-spatial-datasets
+- WHY: a file: needs a download by a person (polygons and name field not probed)
+- publisher: SYKE downloadable spatial datasets: Nature protected areas (state, private, wilderness reserves), Natura 2000, other sta → official (a government word of the country: SYKE)
+- terms: OPEN · source queue row · "SYKE open data licence (details on 'Use licence and responsibilities' page, not opened)"
+- facts: file · 249657 bytes · modified Thu, 12 Nov 2026 12:23:04 GMT
+- closes: not probed: needs a download
+
+### NPWS - Designated site boundary data | SAC, SPA, NHA, pNHA shapefiles  ·  IE  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.npws.ie/maps-and-data/designated-site-data/download-boundary-data
+- WHY: a file: needs a download by a person (polygons and name field not probed)
+- publisher: NPWS - Designated site boundary data → official (a government word of the country: NPWS)
+- terms: OPEN · source queue row · "Not stated on page (links to Open Data Policy, Data Usage and Copyright pages)"
+- facts: file
+- closes: not probed: needs a download
+
+## WATER-ONLY (42)
 
 ### ogc_services/Ramsar_Wetlands  ·  AU  ·  from harvester
 - url: https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Ramsar_Wetlands/FeatureServer/0
@@ -470,6 +628,16 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - overlap: same publisher as sgohf
 - closes: 0 of 1 tested missing parks (by name 0, pin only 0; 1 of the area's 1 missing parks lie in the layer's extent)
 
+### County Parcels in Nevada (Nevada State Demographer / Div of Water Resources) | County Parcels (layer 0)  ·  US-NV  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://arcgis.water.nv.gov/arcgis/rest/services/BaseLayers/County_Parcels_in_Nevada/MapServer/0
+- WHY: water only: for the 2-fer owner step only (lakes / reservoirs / water bodies never go in the key as a park outline); otherwise LIVE-ONLY: terms allow viewing only: read live, never stored
+- publisher: County Parcels in Nevada (Nevada State Demographer / Div of Water Resources) → official (government host arcgis.water.nv.gov)
+- FLAG: water only: for the 2-fer owner step only
+- terms: LIVE-ONLY · source item page · "This dataset cannot be downloaded per NRS 250. Nevada State Demographer Nevada State Demographer" · item https://arcgis.water.nv.gov/arcgis/rest/services/BaseLayers/County_Parcels_in_Nevada/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Website · 1394188 records · sample https://carsoncitynv.devnetwedge.com/parcel/view/01028143/20 / https://carsoncitynv.devnetwedge.com/parcel/view/01028149/20 / https://carsoncitynv.devnetwedge.com/parcel/view/00702114/20
+- overlap: same publisher as sgnvb
+- closes: not probed
+
 ## LIVE-ONLY (5)
 
 ### Czechia natural parks (AOPK CR, gis.nature.cz, Prirodni park)  ·  CZ  ·  from chat 9
@@ -537,7 +705,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field NAZEV · 1111 records · sample Blatov a Xaverovský háj / Lochkovský profil / Milíčovský les
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
 
-## ASK-THE-PUBLISHER (421)
+## ASK-THE-PUBLISHER (441)
 
 ### AerialPhotoViewer/Orthophoto_Coverage_Area  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/AerialPhotoViewer/Orthophoto_Coverage_Area/MapServer/0
@@ -596,9 +764,14 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field SPECIES_NAME · 5186 records · sample Rubus fruticosus / Ulex europaeus / Hypericum perforatum subsp. veronense
-- closes: 2 of 60 tested missing parks (by name 0, pin only 2; 60 of the area's 1796 missing parks lie in the layer's extent)
+- closes: 7 of 60 tested missing parks (by name 0, pin only 7; 60 of the area's 1796 missing parks lie in the layer's extent)
   - AU-10758 Pardoe Northdown Conservation Area → polygon "Asparagus asparagoides"
   - AU-11304 Pipe Clay Lagoon - Water Management Area → polygon "Brachionichthys hirsutus"
+  - AU-8812 Nutgrove Beach - State Beach → polygon "Brachionichthys hirsutus"
+  - AU-8858 Howrah Beach - State Beach → polygon "Brachionichthys hirsutus"
+  - AU-8865 Shelly Beach - State Beach → polygon "Brachionichthys hirsutus"
+  - AU-8866 Opossum Bay Beach - State Beach → polygon "Brachionichthys hirsutus"
+  - AU-8867 Glenvar Beach - State Beach → polygon "Brachionichthys hirsutus"
 
 ### SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/DPIRD_Fisheries_Guide_WFS/MapServer/0
@@ -650,6 +823,15 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - closes: 1 of 1 tested missing parks (by name 0, pin only 1; 1 of the area's 1 missing parks lie in the layer's extent)
   - US-3514 Fort Miamis Fallen Timbers Battlefield National Historic Site → polygon "TWELVE-MILES SQUARE RESERVATION"
 
+### Georgia DNR Lands 2015 (GCAMP Fisheries mirror; GADNRLands2015) | GADNRLands2015  ·  US-GA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geospat.gatech.edu/arcgis/rest/services/Coast/GCAMP_Fisheries/MapServer/20
+- WHY: hosted for an agency on another account: ask who owns and licenses it
+- publisher: Georgia DNR Lands 2015 (GCAMP Fisheries mirror; GADNRLands2015) → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "NARSAL, GA DNR" · item https://geospat.gatech.edu/arcgis/rest/services/Coast/GCAMP_Fisheries/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name · 119 records · sample STEPHEN C. FOSTER SP / ALTAMA PLANTATION WMA / ALTAMAHA WMA
+- closes: 1 of 1 tested missing parks (by name 0, pin only 1; 1 of the area's 10 missing parks lie in the layer's extent)
+  - US-2200 Okefenokee State Park → polygon "STEPHEN C. FOSTER SP"
+
 ### PEI provincial parks (GeoLinc, ENV polygon layer)  ·  CA-PE  ·  from chat 9
 - url: https://gis.princeedwardisland.ca/server/rest/services/GeoLincData/GeoLinc_provincial_park_polygon_ENV/MapServer/0
 - WHY: nothing stated about use on the item page or the service
@@ -683,6 +865,14 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/CadastreAndAdministrativeV2/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 44 records · sample Kanamaluka / Taypalaka / Luemerrernanner
 - closes: not probed
+
+### Public/NVAdata  ·  AU  ·  from harvester
+- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/7
+- WHY: nothing stated about use on the item page or the service
+- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
+- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SPECIES_NAME · 14 records · sample Digitalis purpurea / Ulex europaeus / Ulex europaeus
+- closes: 0 of 2 tested missing parks (by name 0, pin only 0; 18 of the area's 1796 missing parks lie in the layer's extent)
 
 ### Public/NaturalEnvironmentV2  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NaturalEnvironmentV2/MapServer/12
@@ -1919,15 +2109,6 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME · 1329 records · sample Angola Neck Nature Preserve / Fork Branch Nature Preserve / Fork Branch Nature Preserve
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
 
-### Recreation Area (outside research Oct 30)  ·    ·  from outside research Oct 30
-- url: https://gis.blm.gov/akarcgis/rest/services/Recreation/BLM_AK_Recreation/MapServer/100
-- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
-- publisher: ? → official (government host gis.blm.gov)
-- terms: CREDIT · source item page · "These data are provided by BLM "as is" and may contain errors or omissions. The User assumes the entire risk associa" · item https://gis.blm.gov/akarcgis/rest/services/Recreation/BLM_AK_Recreation/MapServer/info/iteminfo
-- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 43 records · sample Mount Prindle RNA / None / White Mountains SRMA
-- overlap: same publisher as hab
-- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
-
 ### BLM AZ Recreation Sites (Polygon) (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://gis.blm.gov/azarcgis/rest/services/recreation/BLM_AZ_RECS/FeatureServer/1
 - WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
@@ -3154,11 +3335,11 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - overlap: same publisher as hab
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
 
-### WVParcels (outside research Oct 30)  ·    ·  from outside research Oct 30
+### WV Parcels (WVGISTC services) | WVParcels (layer 0)  ·  US-WV  ·  from outside search Nov 11 (Brandon, Nov 12)
 - url: https://services.wvgis.wvu.edu/arcgis/rest/services/Planning_Cadastre/WV_Parcels/MapServer/0
 - WHY: hosted for an agency on another account: ask who owns and licenses it
-- publisher: ? → hosted for an agency (a university account holds an agency layer)
-- terms: CREDIT · source item page · "WV County Assessor, WV Property Tax Division, WVDHSEM, WVGISTC" · item https://services.wvgis.wvu.edu/arcgis/rest/services/Planning_Cadastre/WV_Parcels/MapServer/info/iteminfo
+- publisher: WV Parcels (WVGISTC services) → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "WV County Assessor, WV Property Tax Division, WVDHSEM, WVGISTC WV County Assessor, WV Property Tax Division, WVDHSEM, WVGISTC" · item https://services.wvgis.wvu.edu/arcgis/rest/services/Planning_Cadastre/WV_Parcels/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field Label · 1394081 records · sample 1-1 / 1-2 / 1-2.2
 - closes: not probed
 
@@ -3788,14 +3969,6 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field SITE_NAME · 6 records · last edit 2025-02-12 · sample Wicklow Mountains National Park / Wild Nephin National Park / Killarney National Park
 - closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
 
-### Glens (outside research Oct 30)  ·    ·  from outside research Oct 30
-- url: https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/3
-- WHY: publisher unsure: no government word found, ask who publishes it
-- publisher: ? → unsure (no government word in the publisher, owner, organisation or credit)
-- terms: CREDIT · source item page · "Public Access DEFA" · item https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/info/iteminfo
-- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 22 records · sample Port Soderick / Colby Glen / Silverdale Glen
-- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
-
 ### National Nature Reserves (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/9
 - WHY: publisher unsure: no government word found, ask who publishes it
@@ -4075,22 +4248,182 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: wfs
 - closes: not probed: WFS point query not built
 
-## RETRY (367)
+### WV Parcels (WVGISTC services) | WVParcels (layer 0)  ·  US-WV  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://services.wvgis.wvu.edu/arcgis/rest/services/Planning_Cadastre/WV_Parcels/MapServer/1
+- WHY: hosted for an agency on another account: ask who owns and licenses it
+- publisher: WV Parcels (WVGISTC services) → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "WV County Assessor, WV Property Tax Division, WVDHSEM, WVGISTC WVGISTC" · item https://services.wvgis.wvu.edu/arcgis/rest/services/Planning_Cadastre/WV_Parcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field LABEL · 600 records · sample Beaver Pond / Elkhorn / Big Creek
+- closes: not probed
+
+### MARIS Statewide Parcels (Aug 2024)  ·  US-MS  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.mississippi.edu/server/rest/services/Cadastral/MS_Parcels_August_2024/MapServer/1
+- WHY: hosted for an agency on another account: ask who owns and licenses it
+- publisher: MARIS Statewide Parcels (Aug 2024) → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "none County Tax assessor's offices of each county, Tristate Consulting,TabMap, Spatial Net, Sanders and Associates County Tax assessor's offices of each county," · item https://gis.mississippi.edu/server/rest/services/Cadastral/MS_Parcels_August_2024/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field STNAME · 878999 records
+- closes: not probed
+
+### MARIS Statewide Parcels (Aug 2024)  ·  US-MS  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.mississippi.edu/server/rest/services/Cadastral/MS_Parcels_August_2024/MapServer/2
+- WHY: hosted for an agency on another account: ask who owns and licenses it
+- publisher: MARIS Statewide Parcels (Aug 2024) → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "none County Tax assessor's offices of each county, Tristate Consulting,TabMap, Spatial Net, Sanders and Associates County Tax assessor's offices of each county," · item https://gis.mississippi.edu/server/rest/services/Cadastral/MS_Parcels_August_2024/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field STNAME · 1127050 records
+- closes: not probed
+
+### NL DNR GeoAtlas Land_Use MapServer (Protected Areas Plan 2020) | Protected Areas Plan 2020  ·  CA-NL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://dnrmaps.gov.nl.ca/arcgis/rest/services/GeoAtlas/Land_Use/MapServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: NL DNR GeoAtlas Land_Use MapServer (Protected Areas Plan 2020) → official (government host dnrmaps.gov.nl.ca)
+- terms: CREDIT · source item page · "Natural Areas Program, Land Management Division, Department of Fisheries and Land Management" · item https://dnrmaps.gov.nl.ca/arcgis/rest/services/GeoAtlas/Land_Use/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Label · 34 records · sample Mare Cove / Cape Norman / Watt's Point Extension
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 60 missing parks lie in the layer's extent)
+
+### ICMBio Limites das Unidades de Conservação Federais (INDE GeoServer WFS) | Limites de Unidades de Conservação Federais, exceto RPPN federais (WFS/WMS layer names not listed on page; check GetCapabilit  ·  BR  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geoservicos.inde.gov.br/geoserver/ICMBio/ows
+- WHY: WFS: official, but polygons and name field need a second read
+- publisher: ICMBio Limites das Unidades de Conservação Federais (INDE GeoServer WFS) → official (government host geoservicos.inde.gov.br)
+- terms: OPEN · source GetCapabilities + queue row · "NONE Site content CC BY-ND 3.0 (site-wide per gov.br/icmbio); dataset-specific terms not stated"
+- facts: wfs
+- closes: not probed: WFS point query not built
+
+### NatureScot protected areas WFS (start with protectedareas:pa30x30; also cpk country parks, rp regional parks, lnr, nnr)  ·  GB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ogc.nature.scot/geoserver/protectedareas/wfs
+- WHY: WFS: official, but polygons and name field need a second read
+- publisher: NatureScot (Scottish Government agency) → official (government words: NatureScot)
+- terms: CREDIT · source GetCapabilities + queue row · "NONE ows:Fees NONE, ows:AccessConstraints NONE (stated in the service)"
+- facts: wfs
+- closes: not probed: WFS point query not built
+
+### Natural England National Nature Reserves (England) WFS  ·  GB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://environment.data.gov.uk/spatialdata/national-nature-reserves-england/wfs
+- WHY: WFS: official, but polygons and name field need a second read
+- publisher: Natural England / Defra → official (government host environment.data.gov.uk)
+- terms: OPEN · source GetCapabilities + queue row · "NONE Fees NONE; Defra: made freely available as GIS download or WFS"
+- facts: wfs
+- closes: not probed: WFS point query not built
+
+### Natural England SSSI (England) WFS  ·  GB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://environment.data.gov.uk/spatialdata/sites-of-special-scientific-interest-england/wfs
+- WHY: WFS: official, but polygons and name field need a second read
+- publisher: Natural England / Defra → official (government host environment.data.gov.uk)
+- terms: OPEN · source GetCapabilities + queue row · "NONE Fees NONE; Defra: made freely available as GIS download or WFS"
+- facts: wfs
+- closes: not probed: WFS point query not built
+
+### Natural England Local Nature Reserves (England) WFS  ·  GB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://environment.data.gov.uk/spatialdata/local-nature-reserves-england/wfs
+- WHY: WFS: official, but polygons and name field need a second read
+- publisher: Natural England / Defra → official (government host environment.data.gov.uk)
+- terms: OPEN · source GetCapabilities + queue row · "NONE Fees NONE; Defra: made freely available as GIS download or WFS"
+- facts: wfs
+- closes: not probed: WFS point query not built
+
+### Natural England Country Parks (England) WFS  ·  GB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://environment.data.gov.uk/spatialdata/country-parks-england/wfs
+- WHY: WFS: official, but polygons and name field need a second read
+- publisher: Natural England / Defra → official (government host environment.data.gov.uk)
+- terms: OPEN · source GetCapabilities + queue row · "NONE Fees NONE; Defra: made freely available as GIS download or WFS"
+- facts: wfs
+- closes: not probed: WFS point query not built
+
+### Thailand protected areas 1:50k (MNRE) on the GISTDA portal  ·  TH  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gistdaportal.gistda.or.th/arcgis/rest/services/Hosted/L10_ProtectedArea_MNRE_50k/FeatureServer/0
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: Ministry of Natural Resources and Environment / GISTDA → official (government words: Ministry)
+- terms: CREDIT · source queue row (not the publisher's page) · "nothing stated in our notes" · item https://gistdaportal.gistda.or.th/arcgis/rest/services/Hosted/L10_ProtectedArea_MNRE_50k/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field name_th · 361 records · sample ห้วยน้ำซับ / ห้วยน้ำช้าง / น้ำตกห้วยแม่แสด
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 0 missing parks lie in the layer's extent)
+
+### Estonia EELIS protected areas WFS (kr_kaitseala)  ·  EE  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gsavalik.envir.ee/geoserver/eelis/ows
+- WHY: WFS: official, but polygons and name field need a second read
+- publisher: Estonian Environment Agency (Keskkonnaagentuur) → official (government words: Environment Agency)
+- terms: CREDIT · source GetCapabilities + queue row · "NONE nothing stated in our notes (EELIS KRATT viewer is login-restricted; the WFS answered)"
+- facts: wfs
+- closes: not probed: WFS point query not built
+
+### BfN protected areas WFS (Schutzgebiete)  ·  DE  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geodienste.bfn.de/ogc/wfs/schutzgebiet
+- WHY: WFS: official, but polygons and name field need a second read
+- publisher: Bundesamt fur Naturschutz → official (a government word of the country: Bund)
+- terms: CREDIT · source GetCapabilities + queue row · "Dieser Dienst und die darin verfügbaren Daten können gemäß der "Nutzungsbestimmungen für die Bereitstellung von Geodaten des Bundes" (http://www.gesetze-im-inte"
+- facts: wfs
+- closes: not probed: WFS point query not built
+
+### EEA Nationally Designated Areas CDDA v19 (fallback only) | Nationally designated areas (CDDA) - Large scale viewing (layer 4)  ·  SK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDAv19_Dyna_LAEA/MapServer/3
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: EEA Nationally Designated Areas CDDA v19 (fallback only) → official (government words: Environment Agency)
+- terms: CREDIT · source item page · "© European Environment Agency © European Environment Agency" · item https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDAv19_Dyna_LAEA/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field siteName · 100677 records · sample Rohrbacher Kogel / Teichwiesen / Zhej
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 120 of the area's 120 missing parks lie in the layer's extent)
+
+### EEA NatDA MapServer v22 (fallback; countries report official national data) | NatDA polygons (layers 1,3,4)  ·  RO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/NatDAv22_Dyna_WM/MapServer/3
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: EEA NatDA MapServer v22 (fallback; countries report official national data) → official (government words: Environment Agency)
+- terms: CREDIT · source item page · "© European Environment Agency © European Environment Agency" · item https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/NatDAv22_Dyna_WM/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field siteName · 124718 records · sample Sutjeska / Bijambare / Peliny
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 857 of the area's 857 missing parks lie in the layer's extent)
+
+### Naturvårdsverket Natura 2000 WFS | N2000_WFS:N2000 (Birds and Habitats Directives)  ·  SE  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geodata.naturvardsverket.se/n2000/wfs
+- WHY: WFS: official, but polygons and name field need a second read
+- publisher: Naturvårdsverket Natura 2000 WFS → official (a government word of the country: Natur)
+- terms: OPEN · source GetCapabilities + queue row · "CC0"
+- facts: wfs
+- closes: not probed: WFS point query not built
+
+### ARSO Atlas voda / geohub: Zavarovana in varovana območja po ZON (ArcGIS Server REST, Slovenian Environment Agency) | Državna zavarovana območja (5661); Državna zavarovana območja (točke) (5659); Lokal  ·  SI  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geohub.gov.si/ags/rest/services/DRSV/Zavarovana_in_varovana_obmocja_po_ZON/MapServer/5661
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: ARSO Atlas voda / geohub: Zavarovana in varovana območja po ZON (ArcGIS Server REST, Slovenian Environment Agency) → official (government host geohub.gov.si)
+- terms: CREDIT · source item page · "ARSO ARSO" · item https://geohub.gov.si/ags/rest/services/DRSV/Zavarovana_in_varovana_obmocja_po_ZON/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field IME_ZNAMEN · 114 records · sample Naravni spomenik Zadlaščica (korita) / Naravni spomenik Peričnik - zgornji in spodnji slap ter nara / Naravni spomenik Okno v južni steni Škrlatice
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 637 of the area's 637 missing parks lie in the layer's extent)
+
+### EEA Nationally Designated Areas (NatDA/CDDA) MapServer - fallback | CDDAv21_Dyna_WM  ·  PT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDAv21_Dyna_WM/MapServer/3
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: EEA Nationally Designated Areas (NatDA/CDDA) MapServer - fallback → official (government words: Environment Agency)
+- terms: CREDIT · source item page · "European Environment Agency European Environment Agency" · item https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDAv21_Dyna_WM/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field siteName · 121693 records · sample Park Krajobrazowy Beskidu Malego / Gochelberg-Toter Berg / Atlaszedernreihe
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 174 of the area's 174 missing parks lie in the layer's extent)
+
+### Ministerio de Bienes Nacionales (data owner), served by Superintendencia del Medio Ambiente IDE — SNASPE state units (reference copy of boundaries) | Sistema Nacional de Areas Silvestres Protegidas de  ·  CL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Areas_proteccion_oficial2/MapServer/5
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: Ministerio de Bienes Nacionales (data owner), served by Superintendencia del Medio Ambiente IDE — SNASPE state units (re → official (government words: Ministerio)
+- terms: CREDIT · source item page · "Superintendencia del Medio Ambiente (2019) Superintendencia del Medio Ambiente (2020)" · item https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Areas_proteccion_oficial2/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NOMBRE · 1 records
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 0 of the area's 254 missing parks lie in the layer's extent)
+
+### Ministerio del Medio Ambiente (recognises private protected areas) — Private protected areas and conservation reserves (e.g. Altos de Chicauma, El Panul, Alerzales) | Private-property protected areas   ·  CL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Otras_bajo_proteccion/MapServer/2
+- WHY: official and usable, but no missing parks were tested (none listed for the area or no time)
+- publisher: Ministerio del Medio Ambiente (recognises private protected areas) — Private protected areas and conservation reserves ( → official (government words: Ministerio)
+- terms: CREDIT · source item page · "Superintendencia del Medio Ambiente (2024) Ministerio del Medio Ambiente (2015)" · item https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Otras_bajo_proteccion/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field TIP_PROP · 377 records
+- closes: 0 of 0 tested missing parks (by name 0, pin only 0; 242 of the area's 254 missing parks lie in the layer's extent)
+
+## RETRY (449)
 
 ### Millenium Greens (Polygons) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### My favorite camping spots (a hobby map)  ·  US-KY  ·  from chat 9
 - url: https://services9.arcgis.com/abc123hobby/arcgis/rest/services/My_Favorite_Camping_Spots/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: hobby account (personal map) → not official (hobby in the publisher words)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 - TEST: ok
 
@@ -4152,43 +4485,35 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - closes: not probed
 
 ### Public/NVAdata  ·  AU  ·  from harvester
-- url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/7
-- WHY: did not open 3 times (rest): chat 9 checks the url
-- publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
-- terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
-- facts: status rest
-- closes: not probed
-
-### Public/NVAdata  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/10
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
-- facts: status rest
+- facts: status budget
 - closes: not probed
 
 ### Public/NVAdata  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/11
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
-- facts: status rest
+- facts: status budget
 - closes: not probed
 
 ### Public/NVAdata  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/13
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
-- facts: status rest
+- facts: status budget
 - closes: not probed
 
 ### Public/NVAdata  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/17
-- WHY: did not open 3 times (rest): chat 9 checks the url
+- WHY: did not open 3 times (budget): chat 9 checks the url
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: NOTHING STATED · source item page · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/NVAdata/MapServer/info/iteminfo
-- facts: status rest
+- facts: status budget
 - closes: not probed
 
 ### Public/NaturalEnvironment  ·  AU  ·  from harvester
@@ -4632,52 +4957,52 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Cypremort_Point_State_Park  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/p1YcgwPVVSqE29MG/arcgis/rest/services/Cypremort_Point_State_Park/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Jimmie_Davis_State_Park  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/p1YcgwPVVSqE29MG/arcgis/rest/services/Jimmie_Davis_State_Park/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Bog Brook Road to Bog Pond Snowmobile Trail 35 Foot Right-Of-Way  ·    ·  from gis-hunter
 - url: https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Bog Pond Snowmobile Trail 35 Foot Right-Of-Way/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Bog Brook Road to Lost River Self Storage 35 Foot Right-Of-Way  ·    ·  from gis-hunter
 - url: https://services4.arcgis.com/ctnv3S90gv4qdwQ1/arcgis/rest/services/Bog Brook Road to Lost River Self Storage 35 Foot Right-Of-Way/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Civil War Battlefields  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields Plus/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Civil War Battlefields (time-enabled)  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/iFGeGXTAJXnjq0YN/arcgis/rest/services/Civil War Battlefields (time-enabled)/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Walnut Woods Park JWT  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/XORNS2fPFySPlBgy/arcgis/rest/services/Walnut_Woods_Park_JWT/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Canyon De Chelly National Monument, AZ (Data Basin Dataset)  ·    ·  from gis-hunter
 - url: http://biology.usgs.gov/arcgis/rest/services/nvcp/Canyon_De_Chelly_NM/MapServer
@@ -4688,31 +5013,31 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Iceland Honeymoon 2024_WFL1  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL1/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Iceland Honeymoon 2024_WFL  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/v4iVHCxJx9aueHAS/arcgis/rest/services/Iceland_Honeymoon_2024_WFL/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Spencer_Ramp_Sidewalk  ·    ·  from gis-hunter
 - url: https://services9.arcgis.com/BPqQmonW4XsiPHS3/arcgis/rest/services/Spencer_Ramp_Sidewalk/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Little Turtle_WFL1  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WFL1/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Little Turtle_WTL1  ·    ·  from gis-hunter
 - url: https://tiles.arcgis.com/tiles/V2n9y2bh8WyGKmfd/arcgis/rest/services/Little_Turtle_WTL1/MapServer
@@ -4723,24 +5048,24 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Lieber  ·    ·  from gis-hunter
 - url: https://services2.arcgis.com/eEZvYWeDAf8dVYvQ/arcgis/rest/services/Lieber/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Florida National Scenic Trail Line  ·    ·  from gis-hunter
 - url: https://services9.arcgis.com/soy9dtLUh5hYXg8U/arcgis/rest/services/FNST Master/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Lincoln_forestplan_alts_wilderness_AltE  ·    ·  from gis-hunter
 - url: https://services9.arcgis.com/4ikJ2iF3itbByOVD/arcgis/rest/services/Lincoln_forestplan_alts_wilderness_AltE/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Flint River Access  ·    ·  from gis-hunter
 - url: https://geoengine.utc.edu:6443/arcgis/rest/services/UTC/TVAwaterAccess/FeatureServer
@@ -4751,17 +5076,17 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Captain John Smith Chesapeake National Historic Trail  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/UbKyMceXgEVeTOEF/arcgis/rest/services/Captain_John_Smith_Chesapeake_National_Historic_Trail/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Red Rocks Insta360 Oriented Imagery Video  ·    ·  from gis-hunter
 - url: https://services1.arcgis.com/uujCiiEZAflDbdxE/arcgis/rest/services/Red Rocks Insta360 Video/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### State Aquatic Management Area (AMA) Aquisitions  ·    ·  from gis-hunter
 - url: https://enterprise-dev.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/plan_mndnr_fisheries_acquisition/FeatureServer
@@ -4772,59 +5097,59 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Travel from Jessie's Office (45 Minutes - Mon@1730)  ·    ·  from gis-hunter
 - url: https://services2.arcgis.com/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - Mon@1730)/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Travel from Jessie's Office (45 Minutes - no traffic)  ·    ·  from gis-hunter
 - url: https://services2.arcgis.com/VNo0ht0YPXJoI4oE/arcgis/rest/services/Travel from Jessie's Office (45 Minutes - no traffic)/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Watershed of the Blanchard River  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/0c8NSBwqhllp50N7/arcgis/rest/services/Watershed of the Blanchard River/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Flint River  ·    ·  from gis-hunter
 - url: https://services8.arcgis.com/KGBGlBOYYCt9pths/arcgis/rest/services/Flint_River/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Escanaba_RSX  ·    ·  from gis-hunter
 - url: https://services8.arcgis.com/hXvEEDqm4wdlfwhu/arcgis/rest/services/Escanaba_RSX/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Eagle Harbor Township Recreation Area  ·    ·  from gis-hunter
 - url: https://services5.arcgis.com/xrfXlDMHLr5elsRb/arcgis/rest/services/Eagle_Harbor_Township_Recreation_Area/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Sugarloaf Mountain Trails  ·    ·  from gis-hunter
 - url: https://services9.arcgis.com/yLH7EZZOcLJAgxVh/arcgis/rest/services/alltrailsshp/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Trails_Connected_to_the_Razorback_Regional_Greenway  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/TI8AEdeaqI5HEMqo/arcgis/rest/services/Trails_Connected_to_the_Razorback_Regional_Greenway/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### 2005 US Civil War Map (Web Mercator)  ·    ·  from gis-hunter
 - url: https://tiles.arcgis.com/tiles/YpWVqIbOT80sKVHP/arcgis/rest/services/2005_US_Civil_War_Map_WM/MapServer
@@ -4835,87 +5160,87 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Layer: Southwest Asia All Data  ·    ·  from gis-hunter
 - url: https://services4.arcgis.com/9lICIlhSEuRFezSF/arcgis/rest/services/Southwest Asia All data/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Little Missouri River  ·    ·  from gis-hunter
 - url: https://services2.arcgis.com/tq962RLzFDqUbUrN/arcgis/rest/services/LittleMissouriRiver_Analysis_line/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### 040723 Hwy_ 271 – Hwy_ 64 _Towson Ave__ _Fort Smith__WFL1  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/7cbqsWqMe170dJ3k/arcgis/rest/services/040723_Hwy__271_–_Hwy__64__Towson_Ave____Fort_Smith__WFL1/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Oklahoma Tribal Statistical Areas  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/Oklahoma_Tribal_Statistical_Areas__DOC___EPA_2023_/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Chickasaw Nation  ·    ·  from gis-hunter
 - url: https://services2.arcgis.com/1RKb5IC5HFxsUYMS/arcgis/rest/services/Chickasaw Nation/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Climate Indicator First Leaf Dates (EPA 2021)  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/CLM___Climate_Indicator_First_Leaf_Dates__EPA_/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Leaf_Collection_Areas  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Leaf_Collection_Areas/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Area_Caney_Fork_Fields  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Area_Caney_Fork_Fields/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Caney_Fork_Bulk_Density_2020_data_Prediction  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_data_Prediction/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Caney_Fork_Bulk_Density_2020_Prediction  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_Prediction/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### DDAC_DR_384_26_Enid_OK_0426_TOR_Partner_Vew  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pGfbNJoYypmNq86F/arcgis/rest/services/DDAC_DR_384_26_Enid_OK_0426_TOR_Partner_Vew/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Routes from Columbus State Community College to National Parks ASC  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/Kky1VmxJleu73HxO/arcgis/rest/services/Columbus_State_Community_College_(Points)_to_National_Parks/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Amory  ·    ·  from gis-hunter
 - url: https://arcgisdv.bnsf.com/arcgis/rest/services/UAS_Products/Amory/MapServer
@@ -4926,81 +5251,81 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Amory Port South- property Outline  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port SouthProperty Outline Publish185/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Amory Port North- property Outline  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/BAJNi3EgCdtQ1BCG/arcgis/rest/services/Amory Port NorthProperty Outline Publish185/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Antelope Reservoir Fish Advisory  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Antelope_Reservoir_Fish_Advisory/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgorb
 
 ### PARCELS Lone Rock Ranch  ·    ·  from gis-hunter
 - url: https://services8.arcgis.com/jyRjbKRFHP2c3g5n/arcgis/rest/services/PARCELS_Lone_Rock_Ranch/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### East Bay North Shore Impacted Census Tracts  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/EastBayNorthShoreImpactedCTs/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### East Bay North Shore Marine Terminals  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/EastBayNorthShoreMarineTerminals/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Bear Gulch Dam Failure Area  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/yq3FgOI44hYHAFVZ/arcgis/rest/services/Bear_Gulch_Dam_Failure_Area/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Clatsop County, Oregon (MOC) - Draft Floodplains (2024.01.31) - Feature Service  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_MOC_Web_Draft_20240131/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Clatsop County, Oregon - Effective Floodplains (2018.09.23) - Feature Service  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_Web_Effective/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Clatsop County, Oregon (Mouth of the Columbia) - Flood Risk Products (2024.12.02) - FS  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/OR_Clatsop_Web_Draft_FRP_20241217/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### North_Santiam_Tour_POI  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/kIA6yS9KDGqZL7U3/arcgis/rest/services/North_Santiam_Tour_POI/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Oregon Dept of Forestry - Santiam Aerials  ·    ·  from gis-hunter
 - url: https://utility.arcgis.com/usrsvcs/servers/18b2fd714fb74dbab4891e71f9120aea/rest/services/Basemaps/SantiamAerial/MapServer
@@ -5012,133 +5337,133 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Dugway Proving Grounds  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Dugway_Proving_Grounds/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sguta
 
 ### Schools Buffer Mallo  ·    ·  from gis-hunter
 - url: https://services1.arcgis.com/utVR6GjejYAZciWt/arcgis/rest/services/Schools Buffer Mallo/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Nashvilles Highland Rim Forest  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Nashvilles_Highland_Rim_Forest/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgazd
 
 ### Cottonwood Canyon Weather Monitoring Data  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Cottonwood_Canyon_Weather_FME/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Cottonwood Canyons Route Travel Times  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/CottonwoodCanyonRoutes/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### R1 Morgan State St Study Segments  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/R1_Morgan_State_St_Study_Segments/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Morgan State St Active Transportation  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Active_Transportation/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### R1 Morgan State St Intersections  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/R1_Morgan_State_St_Intersections/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### MP RV Lot Hammer Head View Layer  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/3cD3npevdeqC4ysX/arcgis/rest/services/MP_RV_Lot_Hammer_Head_View_Layer/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Wildfire Smoke Forecast in Canada - Feature Service  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/wjcPoefzjpzCgffS/arcgis/rest/services/Wildfire_Smoke_Forecast_in_Canada_(Feature_Service)_-ServiceDefinition/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### SlidingWindows_ARTESIA_view_V1  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/SlidingWindows_ARTESIA_view_33808/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Dixie Valley Toad Distribution in Nevada  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/a86e58/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgnva
 
 ### Tui Chub in Dixie Valley Distribution in Nevada  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/a31962/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgnva
 
 ### NI Areas of Outstanding Natural Beauty AONB  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/vj9gtZvrLEtbnUyw/arcgis/rest/services/NI_Areas_of_Outstanding_Natural_Beauty_AONB/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Region Four South Parowan Pine Canyon Drive Alt Model 1  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_1/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Region Four South Parowan Pine Canyon Drive Alt Model 2  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_2/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Region Four South Parowan Pine Canyon Drive Alt Model 3  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Region_Four_South_Parowan_Pine_Canyon_Drive_Alt_Model_3/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### The Wash and North Norfolk Coast SAC  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/zmBQLV64TsFvEpV0/arcgis/rest/services/The_Wash_and_North_Norfolk_Coast_SAC/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### SLIP_Public_Services/Farming_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Farming_WFS/MapServer/3
@@ -5454,123 +5779,123 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Utah Desert Bighorn Sheep Habitat  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Utah_Desert_Bighorn_Sheep_Habitat/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sguta
 
 ### Caney_Fork_Bulk_Density_2020_Prediction_equal_12_classes  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/M7jfYoTaLM0yE75d/arcgis/rest/services/Caney_Fork_Bulk_Density_2020_Prediction_equal_12_classes/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Belmont, ON - July 19, 2020 - Drone Photos  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Belmont_GeoTaggedPhotosToPoints/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Belmont, ON - June 10, 2020 - Drone Flight Paths  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Belmont/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Belmont, ON - June 10, 2020 - Drone Photos  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Belmont_ON_Drone_Photos/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Travel Time from Fort McPherson (30, 60, 90 Minutes)  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/LT9qt2fqxnAQ174b/arcgis/rest/services/Travel Time from Fort McPherson (30, 60, 90 Minutes)/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Travel from Fort McPherson (30, 60, 90 Minutes)  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/LT9qt2fqxnAQ174b/arcgis/rest/services/Travel from Fort McPherson (30, 60, 90 Minutes)/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Nose_Hill_WFL1  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/xYjDUN35YwdCEcMm/arcgis/rest/services/Nose_Hill_WFL1/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### OR_Deschutes_Client _ David Cale  _ Property Profile _ K Bar J Ranch LLC _ 2_2024  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/VYsrLd1WbPJ93eyz/arcgis/rest/services/OR_Deschutes_Client___David_Cale____Property_Profile___K_Bar_J_Ranch_LLC___2_2024/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Beaver_Hills_Biosphere  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/LYLybGgpUDJN7hG1/arcgis/rest/services/Beaver_Hills_Biosphere/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Périmètre projeté Rennes Beaulieu 2040 (vue)  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/w6NthAjz2I62jeb8/arcgis/rest/services/Périmètre_projeté_Rennes_Beaulieu_2040_(vue)/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### SHELTER The Church of Jesus Christ of Latter_day Saints  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/NummVBqZSIJKUeVR/arcgis/rest/services/SHELTER_The_Church_of_Jesus_Christ_of_Latter_day_Saints/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### L'Anse Aux Meadows  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/ld3ZUQ1nPsV3RdE7/arcgis/rest/services/LAnse_Aux_Meadows/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Signal Hill Oil and Gas Sites_WFL1  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/jDGuO8tYggdCCnUJ/arcgis/rest/services/Signal_Hill_Oil_and_Gas_Sites_WFL1/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### FIVE MILE DRIVE DISTANCE FROM CONWAY SC FIRE STATIONS  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/hnx6Tshv9A7VucmF/arcgis/rest/services/FIVE_MILE_DRIVE_DISTANCE_FROM_CONWAY_SC_FIRE_STATIONS/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Five Mile Reach of All Snoco Fire Stations  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/JL4XvjbjMVWH4R8h/arcgis/rest/services/FiveMile_All_Stations/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Conrad_Zoning  ·    ·  from gis-hunter
 - url: https://services5.arcgis.com/IxTFx7t7oe2NViid/arcgis/rest/services/Conrad_Zoning/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### BLM ID Craters of the Moon and Morley Nelson Birds of Prey  ·    ·  from gis-hunter
 - url: https://gis.blm.gov/idarcgis/rest/services/nlcs/BLM_ID_Craters_of_the_Moon_and_Morley_Nelson_Birds_of_Prey/FeatureServer
@@ -5582,208 +5907,208 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Laberge caribou herd range  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/bwohQix8s7zRvYC9/arcgis/rest/services/Laberge_Herd_Range/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Lucky_Star_ALTA_SurveyPoints  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/eDGut86ch1ami1yK/arcgis/rest/services/Lucky_Star_ALTA_SurveyPoints/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Twin Lakes Watershed  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/0ahKkMERRbqrhR00/arcgis/rest/services/Twin_Lakes_Watershed/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Watson Grinding Manufacturing B  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/NummVBqZSIJKUeVR/arcgis/rest/services/Watson_Grinding_Manufacturing_B/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### FWS R2 ES Mexican Wolf Project  2020 Occupied Range Map  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/2020_Occupied_Range/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgazd
 
 ### Gray Wolf and Eastern Wolf Historical Range  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/RCbhhjhpPZMzteoU/arcgis/rest/services/Gray Wolf and Eastern Wolf Historical Range/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Provencher_classification  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/Provencher_classification/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Vimy Ridge Battle Map_WFL1  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Vimy_Ridge_Battle_Map_WFL1/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Vimy_Ridge  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Vimy_Ridge/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Detroit_Demographics_Hannah_Buhler  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/uEH09Hfm70zI2ZxR/arcgis/rest/services/Detroit_Demographics_Hannah_Buhler/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Maple_Grove_Planting_Sites  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/nD1JmvAORRtTorXS/arcgis/rest/services/Maple_Grove_Planting_Sites/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Fisher Habitat Connectivity Feature  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/Fisher_Habitat_Connectivity/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgazd
 
 ### Beacon Hill Home Zone Boundary Line  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/BeaconHillHZ_Boundary/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Find Locations in Beacon Hill 2 (Areas)  ·    ·  from gis-hunter
 - url: https://services5.arcgis.com/LGTJWfnE6CJdd5tX/arcgis/rest/services/Find Locations in Beacon Hill 2 (Areas)/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Beacon Hill (Areas)  ·    ·  from gis-hunter
 - url: https://services5.arcgis.com/LGTJWfnE6CJdd5tX/arcgis/rest/services/Find Locations in Beacon Hill (Areas)/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Bitter Choices map  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/iEMmryaM5E3wkdnU/arcgis/rest/services/Bitter_Choices_map/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### BRV_Cenotaph_FriendsMemorial  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/Q04ork8YjhJM33BZ/arcgis/rest/services/BRV_Cenotaph/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Map of Surface Mines mmis mine data locations in the E_ KY Coalfields_WFL1  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/K4fN7yNby2Elaqgr/arcgis/rest/services/Map_of_Surface_Mines_mmis_mine_data_locations_in_the_E__KY_Coalfields_WFL1/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Palestra Elaine Terceiro_fieldworker  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/AyCBzKtPcinRzhMG/arcgis/rest/services/survey123_0f2029d16cfc452698f731146bc48378_fieldworker/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Arts Employment Alex Hackett_WFL1  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/WLhB60Nqwp4NnHz3/arcgis/rest/services/Arts_Employment_Alex_Hackett_WFL1/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Neely Yates Travelogue Story Map_WFL1  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/8vL8ZFWfQxhb4uIP/arcgis/rest/services/Neely_Yates_Travelogue_Story_Map_WFL1/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Nisga’a Memorial Lava Bed Park Comments_fieldworker  ·    ·  from gis-hunter
 - url: https://services3.arcgis.com/V6CSJCQOs0jUJNOw/arcgis/rest/services/survey123_3e63cb512c644486a9dd5e51818f1317_fieldworker/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### OR_Tillamook_Client _ Tracy Chung _ Property Profile _ 14050 Riverview Meadows Ln _ 9_2024  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/VYsrLd1WbPJ93eyz/arcgis/rest/services/OR_Tillamook_Client___Tracy_Chung___Property_Profile___14050_Riverview_Meadows_Ln___9_2024/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Uplands_to_Wetlands_2100_Polygon  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/Uplands_to_Wetlands_2100_Polygon/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### RD_AllCO  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/vQ8kO5zdqETeirEL/arcgis/rest/services/AllCO/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Crown Castle Small Cell Sites  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/HJ6NuXYZF6fDjms9/arcgis/rest/services/Customer_Small_Cell_Site_Locations_View/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Cates Landing Transmission Lines  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/Cates_Landing_Transmission_Lines/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Cates Landing Substations  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/Cates_Landing_Substations/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Cates Landing Tax Parcels  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/Cates_Landing_Tax_Parcels/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Servidão Rádio Eléctrica (Rádio Marconi) - Telecomunicações  ·    ·  from gis-hunter
 - url: http://geoportal.cm-amadora.pt/ArcGIS/rest/services/5_PMOTS_PDM_condicionantes/MapServer/21
@@ -5809,591 +6134,591 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Immaculate Conception to Vatican St Peters Basillica  ·    ·  from gis-hunter
 - url: https://services4.arcgis.com/XFJPoGkgEm6C1oy0/arcgis/rest/services/Immaculate Conception to Vatican St Peters Basillica/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Shubenacadie Aquifer Protection Overlay Zone  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/mrvsguor7fEXSaqM/arcgis/rest/services/Shubenacadie_Aquifer/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### ZONAGE_BEAUBASSIN  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/ixihoGz4QXyz0Lzr/arcgis/rest/services/ZONAGE_BEAUBASSIN/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Perceptions of The Piece Hall Halifax_fieldworker  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/LQBWfNRGL1xivDEV/arcgis/rest/services/survey123_111c587100984e129ee5c7e075f771e4_fieldworker/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Piece Hall and Halifax Town Centre Perceptions questionnaire. - Copy_fieldworker  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/LQBWfNRGL1xivDEV/arcgis/rest/services/survey123_d653b32dc13344b4af0240de42d541a8_fieldworker/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Halifax Public Gardens Damaged Trees  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/AJbWLzAgoYuSYK87/arcgis/rest/services/HPG_Damaged_Trees/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### All Halifax Public Gardens Trees  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/AJbWLzAgoYuSYK87/arcgis/rest/services/Public_Trees/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Lakeside, ON - May 16, 2025 - Drone Flight Paths  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Lakeside_Drone_Flight_Paths/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Lakeside, ON - May 16, 2025 - Drone Photos  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/Lakeside_ON_Drone_Photos/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Lakeside, ON - May 16, 2025 - Survey Route  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/rGKxabTU9mcXMw7k/arcgis/rest/services/LakesideON_Survey_Route/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Shea_Hamblin_Health_Index  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/QI0dObYawrKkuwDp/arcgis/rest/services/Shea_Hamblin_Health_Index/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Daly_Point_Areas_of_Interest  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Daly_Point_Areas_of_Interest/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Daly_Point_Trails  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Daly_Point_Trails/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Daly_Point_Boundary  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Daly_Point_Boundary/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Gray Treefrog (Hyla versicolor)  ·    ·  from gis-hunter
 - url: https://services1.arcgis.com/O7h3OCRVxKceyg19/arcgis/rest/services/Gray Treefrog (Hyla versicolor)/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Rockwood Sensitive Area  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/RSA/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as Manitoba Par
 
 ### Social Pinpoint O Connell ST Traffic Consultation  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/BzylpWnjWP0tW4nL/arcgis/rest/services/Social_Pinpoint_O_Connell_ST_Traffic_Consultation/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Thurne Parish  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/NXULfNGIlsKmpCJD/arcgis/rest/services/Thurne_Parish/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Thurne Affordable Housing Stock  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/NXULfNGIlsKmpCJD/arcgis/rest/services/Thurne_Affordable_Housing_Stock/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### FWS Midwest and Northeast Regions FAC Bighead and Silver Carp eDNA Data Feature Layer View  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/USFWS_Great_Lakes_Region_3_Bighead_and_Silver_Carp_eDNA_Data_Feature_Layer_View/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgazd
 
 ### Bighead_Carp  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/M7jYqE3B2GGmwJ5C/arcgis/rest/services/Bighead_Carp/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Frontenac Arch Biosphere Region Boundary  ·    ·  from gis-hunter
 - url: https://services6.arcgis.com/sMxDdLiczOFCdYFP/arcgis/rest/services/Frontenac_Arch_Biosphere_Region_Boundary/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Frontenac Arch Biosphere Region Boundary  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/7xVQ8rKWOtAFBw48/arcgis/rest/services/Frontenac_Arch_Biosphere_Region_Boundary/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same service as Hard look~5 (another layer of it)
 
 ### Pate_Nelson_1358_Hundley_Road_Slocomb_AL_36375_to_Lee_County_Line  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/jF2q3LPxL7PETdYk/arcgis/rest/services/Pate_Nelson_1358_Hundley_Road_Slocomb_AL_36375_to_Lee_County_Line/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Cedar Valley College Disabilities Services  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/6dxqrE38upDMg1va/arcgis/rest/services/CVC_DSM_MapSvc/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Cedar Valley Highway _ Scenario Model Results  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Cedar_Valley_Highway___Scenario_Model_Results/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Cedar Valley Highway _ Sensitivity Compare Nets  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Cedar_Valley_Highway___Sensitivity_Compare_Nets/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Merge Sunnidale_Playground Sunnidale Park Facilities  ·    ·  from gis-hunter
 - url: https://services3.arcgis.com/C964zBpHgJUpj4d0/arcgis/rest/services/Merge Sunnidale_Playground Sunnidale Park Facilities/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Dumfries & Galloway TTG Management Plans  ·    ·  from gis-hunter
 - url: https://services7.arcgis.com/VtA8FmgpdQAUxVEF/ArcGIS/rest/services/ARM_310817/FeatureServer/7/7
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/VtA8FmgpdQAUxVEF/ArcGIS/rest/services/ARM_310817/FeatureServer/7/7
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/VtA8FmgpdQAUxVEF/ArcGIS/rest/services/ARM_310817/FeatureServer/7/7
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/VtA8FmgpdQAUxVEF/ArcGIS/rest/services/ARM_310817/FeatureServer/7/7
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### Buffer_of_Edenvale_Hospitals  ·    ·  from gis-hunter
 - url: https://services-eu1.arcgis.com/183O4es8xCoQDsBe/arcgis/rest/services/Buffer_of_Edenvale_Hospitals/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Travel_from_Edenvale_Hospitals_(2_3_Kilometers)  ·    ·  from gis-hunter
 - url: https://services-eu1.arcgis.com/183O4es8xCoQDsBe/arcgis/rest/services/Travel_from_Edenvale_Hospitals_(2_3_Kilometers)/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Edenvale Shopping Centres  ·    ·  from gis-hunter
 - url: https://services-eu1.arcgis.com/183O4es8xCoQDsBe/arcgis/rest/services/Edenvale_Shopping_Centres/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Little Tennessee Conservation Priority Areas by HUC12  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/LittleT_watershed_boundaries/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgazd
 
 ### Spencer Town Boundary  ·    ·  from gis-hunter
 - url: https://services9.arcgis.com/BPqQmonW4XsiPHS3/arcgis/rest/services/Spencer_Town_Boundary/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Inland Empire Utilities Agency Divisions  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/Inland_Empire_Utilities_Agency_Divisions/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### FWS WSFR Nevada Bighorn Sheep Herds   ·    ·  from gis-hunter
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/BHS_Herds_March_16_vers/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgazd
 
 ### Rim of the World Recreation and Park Divisions  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/RimWrld_PrkRec_Divisions/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 
 ### Manitoba Par (LAYER line, CA-MB)  ·    ·  from chat 8 LAYER line
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_FMUs_Version_6/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_FMUs_Version_6/FeatureServer/0
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_FMUs_Version_6/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_FMUs_Version_6/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as Manitoba Par
 - closes: not probed
 
 ### Refuges (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: already read as Manitoba wil
 - closes: not probed
 
 ### Manitoba wil~2 (LAYER line, CA-MB)  ·    ·  from chat 8 LAYER line
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/2
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/2
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/2
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/2
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same service as Manitoba Par (another layer of it)
 - closes: not probed
 
 ### Trail (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/bDAhvQYMG4WL8O5o/arcgis/rest/services/Virginia_Trails/FeatureServer/2
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### TDEC_Public_Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/lpTX3280urZ21frb/arcgis/rest/services/TN_Natural_Areas_and_State_Parks_WFL1/FeatureServer/3
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### NYS_Park_Polygon (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Hunting_Areas_2_view/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgnyb
 - closes: not probed
 
 ### Utah State Park Management Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Utah_State_Park_Management_Areas/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: already read as sguta
 - closes: not probed
 
 ### Hiking Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/Hiking_Trails_Composite/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### Historic Sites (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/ParksCanadaRevised/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### StateParks (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/F7DSX1DSNSiWmOqh/arcgis/rest/services/StateParks_NeabyParcels/FeatureServer/4
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### FWSBoundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/National_Wildlife_Refuge_System_Boundaries/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
-- overlap: already read as state-gis MN wild
+- facts: status host-rule
+- overlap: already read as sgmng
 - closes: not probed
 
 ### FL_Conservation_Lands_web (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: already read as fnl
 - closes: not probed
 
 ### Wildlife Management Areas Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: already read as sgnva
 - closes: not probed
 
 ### Manitoba Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: already read as Manitoba Par
 - closes: not probed
 
 ### Wildlife_Management_Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Management_Areas_Official_Trails_and_Points_of_Interest/FeatureServer/2
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as Manitoba Par
 - closes: not probed
 
 ### Protected_Areas_Project (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/oEazpvC7G00gPDRM/arcgis/rest/services/Protected_Areas/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### Utah Scenic Byways (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/pA2nEVnB6tquxgOW/arcgis/rest/services/Utah_Scenic_Byways/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### National Nature Reserves (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer/0
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer/0
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Local_Nature_Reserves_England/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### National Parks (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Parks_England/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### National Trails (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/National_Trails_England/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### Areas of Outstanding Natural Beauty (England) © Natural Engl (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Areas_of_Outstanding_Natural_Beauty_England/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### Country Parks (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Country_Parks_England/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### Sites of Special Scientific Interest (England) © Natural Eng (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/SSSI_England/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### ESG_FFH_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/1
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### S_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/10
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### main.IUCN_Ia_AT_2025 (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/11
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### main.IUCN_Ib_AT_2025 (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/12
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### ESG_VSR_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/2
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### NP_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/3
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### ESG_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/4
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### NSG_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/5
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### BP_AT_2025 (exkl. St - Untere Mur) (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/6
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### LSG_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/7
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### GLT_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/8
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### NAP_AT (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services7.arcgis.com/JhrnFQUbVgiJfOG5/arcgis/rest/services/SG_AT_2025_v_April/FeatureServer/9
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### Protected Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/bL1WyMoaiBW4etad/arcgis/rest/services/protected_areas/FeatureServer/1
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### SLIP_Public_Services/Water  ·  AU  ·  from harvester
@@ -6430,335 +6755,335 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### PADUS4_1FeeManagers (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Fee_Managers_PADUS/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### TVA Undeveloped Recreation Lands (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TVA_Recreation_Data/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TVA_Recreation_Data/FeatureServer/0
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TVA_Recreation_Data/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/w8auYAijfGK1Mydj/arcgis/rest/services/TVA_Recreation_Data/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### WMABoundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/WMABoundaries/FeatureServer/13
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgarc
 - closes: not probed
 
 ### lakes (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/lakes/FeatureServer/11
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: already read as sgarc
 - closes: not probed
 
 ### waterTrails (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/5bMc8SlGDYGINZr5/arcgis/rest/services/waterTrails/FeatureServer/12
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgarc
 - closes: not probed
 
 ### Ice Age Floods National Geologic Trail (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/4x406oNViizbGo13/arcgis/rest/services/Ice_Age_Floods_National_Geologic_Trail_and_Sites/FeatureServer/1
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### FWSInterest_Simplified (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgazd
 - closes: not probed
 
 ### ndow_hatcheries (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Nevada_Department_of_Wildlife_Fish_Hatchery_Locations/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
-- overlap: same publisher as sgnva
+- facts: status host-rule
+- overlap: already read as state-gis NV points
 - closes: not probed
 
 ### ESTLeg (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/EST_Public/FeatureServer/3
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgnyb
 - closes: not probed
 
 ### TR_REC_TRAILS (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/OPRD_Rec_Trails_Hosted_view/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgorb
 - closes: not probed
 
 ### SCDNR Properties Public Dissolved (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/4
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org acgZYxoN5Oj8pDLa = South Carolina DNR's own ArcGIS Online organisation)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: already read as sgsca
 - closes: not probed
 
 ### Historic_Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/KTcxiTD9dsQw4r7Z/arcgis/rest/services/Historic_Trails/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### Polygon layer (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/GSLPumpAreaFeatures/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/GSLPumpAreaFeatures/FeatureServer/0
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/GSLPumpAreaFeatures/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/GSLPumpAreaFeatures/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sguta
 - closes: not probed
 
 ### Park (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/g5PyWjvBbQnqjM1q/arcgis/rest/services/Parks/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### Manitoba Provincial Forests - Version 6 (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Provincial_Forests___Version_6/FeatureServer/1
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: already read as Manitoba pro
 - closes: not probed
 
 ### Nepisiguit_Mi_Gmaq_Trail (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Nepisiguit_Mi_Gmaq_Trail/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parking_Lots/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parking_Lots/FeatureServer/0
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parking_Lots/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parking_Lots/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
-- overlap: same publisher as state-gis NB park
+- facts: status host-rule
+- overlap: same publisher as NB Parks
 - closes: not probed
 
 ### GBMGB_Boundary (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/zDM7FT1DAx3jnRiA/arcgis/rest/services/GBMGB_Boundary/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### INT_NaturalAreas_ForWebsite (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/R021c2tizs65xROe/arcgis/rest/services/INT_NAProps_ForSite/FeatureServer/587
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### NCC_AT_Nature_Reserves_Public_Map (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/etzrVYxPRxn7Nirj/arcgis/rest/services/NCC_AT_Nature_Reserves_20220908/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
-- overlap: already read as state-gis PE preserve
+- facts: status host-rule
+- overlap: already read as PE NCC_AT_Na
 - closes: not probed
 
 ### Doorstep Greens (Polygons) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_England/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_England/FeatureServer/0
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_England/FeatureServer/0
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - did not open; found by item search on the publisher: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Doorstep_Greens_England/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### CRoW Conclusive Registered Common Land © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/CRoW_Act_2000_Section_4_Conclusive_Registered_Common_Land/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### Special Areas of Conservation (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Special_Areas_of_Conservation_England/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### Special Protection Areas (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Special_Protection_Areas_England/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### Properties (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Boundaries_Consultation/FeatureServer/2
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### Forest Park (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/6LSAdqgf43oKRpP6/arcgis/rest/services/Coillte_Recreation_Information/FeatureServer/4
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### Empire State Trail  ·    ·  from gis-hunter
 - url: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/EST_Public/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgnyb
 
 ### Millennium Greens (England) polygons  ·  GB  ·  from harvester
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Millennium_Greens_England_Polygons/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: Defra group ArcGIS Online organisation → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - TEST: MISS READY or REJECT vs RETRY
 
 ### Recreation Area (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org n1YM8pTrFmm7L4hs = U.S. Army Corps of Engineers)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
-- overlap: already read as state-gis ID park
+- facts: status host-rule
+- overlap: already read as sgide
 - closes: not probed
 
 ### Transportation (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Trails/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgnyb
 - closes: not probed
 
 ### Signature Trails (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Oregon_Signature_Trails_Feature_Layer/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgorb
 - closes: not probed
 
 ### WMAs (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: already read as sgutb
 - closes: not probed
 
 ### Ramsar (England) © Natural England (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/Ramsar_England/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### Protected_Areas_and_Other_Effective_Conservation_Measures (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/mbEujVpJG0aE29fS/arcgis/rest/services/Protected_Areas_and_Other_Effective_Conservation_Measures/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### marine_protected_areas (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/qchgHH9IIeiivY5M/arcgis/rest/services/CNMI_Marine_Protected_Areas/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### Protected_Areas_of_Maldives_EPA_V4_1 (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/yvCbn3q8PPtPLZIM/arcgis/rest/services/ProtectedArea/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### PGEM_Aires_marines_protégées_(TeFenua)_0 (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/L4H4rU26VyhEF588/arcgis/rest/services/PGEM_Aires_marines_protégées_(TeFenua)/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/L4H4rU26VyhEF588/arcgis/rest/services/PGEM_Aires_marines_protégées_(TeFenua)/FeatureServer/0
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/L4H4rU26VyhEF588/arcgis/rest/services/PGEM_Aires_marines_protégées_(TeFenua)/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/L4H4rU26VyhEF588/arcgis/rest/services/PGEM_Aires_marines_protégées_(TeFenua)/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### GovernmentParcelsV2 (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/GaT8GzOa0Kqi9sL7/arcgis/rest/services/GovernmentParcels2025_WithoutLandtax/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### Greenspace_Phase2_06052022 (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/rVwbcvflURVxkV6s/arcgis/rest/services/Greenspace_3_view/FeatureServer/4
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### Public/WildFisheries  ·  AU  ·  from harvester
@@ -6805,142 +7130,806 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 
 ### Wildlife Management Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/WildlifeManagementAreas/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: already read as idw
 - closes: not probed
 
 ### Public Sector (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/IllinoisProtectedLandsDH_1_22/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: already read as sgila
 - closes: not probed
 
 ### Illinois Nature Preserves Commission (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/INPC_Update_Holman_10_9_20/FeatureServer/3
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/INPC_Update_Holman_10_9_20/FeatureServer/3
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/INPC_Update_Holman_10_9_20/FeatureServer/3
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/INPC_Update_Holman_10_9_20/FeatureServer/3
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgila
 - closes: not probed
 
 ### Minnesota State Parks, Recreation Areas, & Waysides - Statut (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/MN_State_Parks_and_Recreation_Areas/FeatureServer/2
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: already read as sgmnd
 - closes: not probed
 
 ### NM_State_Parks (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: already read as sgnmb
 - closes: not probed
 
 ### All State Owned & Managed Lands (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/State_Land_Inventory_System_Static/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/State_Land_Inventory_System_Static/FeatureServer/0
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/State_Land_Inventory_System_Static/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/State_Land_Inventory_System_Static/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgorb
 - closes: not probed
 
 ### Wildlife Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Priority_Wildlife_Connectivity_Areas/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Priority_Wildlife_Connectivity_Areas/FeatureServer/0
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Priority_Wildlife_Connectivity_Areas/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Priority_Wildlife_Connectivity_Areas/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgorb
 - closes: not probed
 
 ### SCDNR Public Properties View (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org acgZYxoN5Oj8pDLa = South Carolina DNR's own ArcGIS Online organisation)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: already read as sgscd
 - closes: not probed
 
 ### Heritage_Preserve_Layer_CopyFeatures (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/HeritagePreserve_Map2_WFL1/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org acgZYxoN5Oj8pDLa = South Carolina DNR's own ArcGIS Online organisation)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: already read as sgscc
 - closes: not probed
 
 ### Tennessee State Forest Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/lvPBAGXeSupVUvx2/arcgis/rest/services/Tennessee_State_Forest_Boundaries/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: already read as sgtnd
 - closes: not probed
 
 ### King Charles III England Coast Path Coastal Route © Natural  (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/England_Coast_Path_Route/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → official (ArcGIS Online org JJzESW51TqeY9uat = Defra group (Natural England / Environment Agency / Forestry Commission))
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - closes: not probed
 
 ### FWSApproved (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0
 - publisher: ? → unsure (no publisher words at all)
 - did not open; found by item search on the publisher: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SALS_Tool_final_patch_ranks_MARCH2020_FWSApproved/FeatureServer/0
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgazd
 - closes: not probed
 
 ### FWS_NWRS_HQ_PubHuntUnits (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgazd
 - closes: not probed
 
 ### Lakes and Reservoirs - Public (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Hydrography_Public/FeatureServer/0
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (no publisher words at all)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: already read as sgidb
 - closes: not probed
 
 ### MaineDMR - Burnt Island Trails  ·    ·  from gis-hunter
 - url: https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMR_-_Burnt_Island_Trails/FeatureServer
-- WHY: did not open 3 times (robots-unreadable): chat 9 checks the url
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
 - publisher: ? → unsure (did not open)
 - terms: NOTHING STATED · source none
-- facts: status robots-unreadable
+- facts: status host-rule
 - overlap: same publisher as sgmea
 
-## REJECT (1658)
+### NY State Park Property (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Park_Properties/FeatureServer/0
+- WHY: did not open 3 times (host-rule): chat 9 checks the url
+- publisher: ? → unsure (no publisher words at all)
+- terms: NOTHING STATED · source none
+- facts: status host-rule
+- overlap: same publisher as sgnyb
+- closes: not probed
+
+### Montreal large parks, borough parks and public spaces (GeoJSON)  ·  CA-QC  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://donnees.montreal.ca/dataset/grands-parcs-parcs-d-arrondissements-et-espaces-publics
+- WHY: did not open (robots): probed again next run (failed 2 of 3)
+- publisher: Ville de Montreal → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### Delaware State Parks  ·  US-DE  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.destateparks.com
+- WHY: did not open (robots): probed again next run (failed 2 of 3)
+- publisher: Delaware State Parks → official (government words: State Parks)
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### Nebraska Statewide Parcels 2023 (OCIO/NebraskaMap) | Statewide Parcels 2023  ·  US-NE  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://giscat.ne.gov/Enterprise/rest/services/TaxParcels2023/MapServer/0
+- WHY: did not open (error Service TaxParcels2023/MapServer not found ): probed again next run (failed 2 of 3)
+- publisher: Nebraska Statewide Parcels 2023 (OCIO/NebraskaMap) → official (government host giscat.ne.gov)
+- terms: CREDIT · source queue row (not the publisher's page) · "Snapshot for general use within state; authority lies with counties"
+- facts: status error Service TaxParcels2023/MapServer not found 
+- closes: not probed
+
+### Municipal Parks (Ontario Open Data aggregate) | Municipal parks  ·  CA-ON  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://data2.ontario.ca/dataset/municipal-parks
+- WHY: did not open (robots): probed again next run (failed 2 of 3)
+- publisher: Municipal Parks (Ontario Open Data aggregate) → official (government host data2.ontario.ca)
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### Niagara Open Data | Parks and trail lands (e.g. Niagara Falls community parks)  ·  CA-ON  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://niagaraopendata.ca
+- WHY: did not open (robots): probed again next run (failed 2 of 3)
+- publisher: Niagara Open Data → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### Michigan DNR Public Land / state forest maps | Maps  ·  US-MI  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.michigan.gov/publiclands
+- WHY: did not open (robots): probed again next run (failed 2 of 3)
+- publisher: Michigan DNR Public Land / state forest maps → official (government host www.michigan.gov)
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### BLM NM Surface Management Agency | Surface Management Agency  ·  US-NM  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.blm.gov/nmarcgis/rest/services/Base/BLM_NM_Surface_Management_Agency/FeatureServer/3
+- WHY: did not open (error Service not found): probed again next run (failed 2 of 3)
+- publisher: BLM NM Surface Management Agency → official (government host gis.blm.gov)
+- terms: CREDIT · source queue row (not the publisher's page) · "US Gov work; BLM GIS data disclaimer"
+- facts: status error Service not found
+- overlap: same publisher as hab
+- closes: not probed
+
+### NM Protected Areas Database (RGIS) | Protected Areas Database for New Mexico  ·  US-NM  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gstore.unm.edu/apps/rgis/datasets/a8b934f4-4377-402d-b455-5e0ccc65ee36/metadata/ISO-19115:2003.html
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
+- publisher: NM Protected Areas Database (RGIS) → not official (a university account)
+- terms: NOTHING STATED · source none
+- facts: file · status rest
+- closes: not probed: unknown url kind
+
+### VGIN Virginia parcels | VA_Parcels  ·  US-VA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://vginmaps.vdem.virginia.gov/arcgis/rest/services/VA_Base_Layers/VA_Parcels/MapServer
+- WHY: did not open (robots): probed again next run (failed 2 of 3)
+- publisher: VGIN Virginia parcels → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status robots
+
+### SD Game, Fish and Parks Land Stewardship reference layers | Land Stewardship (state and federal lands)  ·  US-SD  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ert.gfp.sd.gov/arcgis/rest/services/SD_Public/ReferenceLayers_LandStewardship/MapServer/2
+- WHY: did not open (deferred): probed again next run (failed 2 of 3)
+- publisher: SD Game, Fish and Parks Land Stewardship reference layers → official (government host ert.gfp.sd.gov)
+- terms: CREDIT · source item page · "South Dakota Game, Fish and Parks South Dakota Game, Fish and Parks" · item https://ert.gfp.sd.gov/arcgis/rest/services/SD_Public/ReferenceLayers_LandStewardship/MapServer/info/iteminfo
+- facts: status deferred
+- closes: not probed
+
+### SD Game, Fish and Parks Land Stewardship reference layers | Land Stewardship (state and federal lands)  ·  US-SD  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ert.gfp.sd.gov/arcgis/rest/services/SD_Public/ReferenceLayers_LandStewardship/MapServer/3
+- WHY: did not open (deferred): probed again next run (failed 2 of 3)
+- publisher: SD Game, Fish and Parks Land Stewardship reference layers → official (government host ert.gfp.sd.gov)
+- terms: CREDIT · source item page · "South Dakota Game, Fish and Parks South Dakota Game, Fish and Parks" · item https://ert.gfp.sd.gov/arcgis/rest/services/SD_Public/ReferenceLayers_LandStewardship/MapServer/info/iteminfo
+- facts: status deferred
+- closes: not probed
+
+### SD Game, Fish and Parks Land Stewardship reference layers | Land Stewardship (state and federal lands)  ·  US-SD  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ert.gfp.sd.gov/arcgis/rest/services/SD_Public/ReferenceLayers_LandStewardship/MapServer/4
+- WHY: did not open (deferred): probed again next run (failed 2 of 3)
+- publisher: SD Game, Fish and Parks Land Stewardship reference layers → official (government host ert.gfp.sd.gov)
+- terms: CREDIT · source item page · "South Dakota Game, Fish and Parks South Dakota Game, Fish and Parks" · item https://ert.gfp.sd.gov/arcgis/rest/services/SD_Public/ReferenceLayers_LandStewardship/MapServer/info/iteminfo
+- facts: status deferred
+- closes: not probed
+
+### BLM Utah Recreation Sites (Polygon) - BLM REST | BLM UT Recreation Sites (Polygon)  ·  US-UT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.blm.gov/utarcgis/rest/services/Recreation/BLM_UT_RECS/FeatureServer/1
+- WHY: did not open (error Service not found): probed again next run (failed 2 of 3)
+- publisher: BLM Utah Recreation Sites (Polygon) - BLM REST → official (government host gis.blm.gov)
+- terms: OPEN · source queue row (not the publisher's page) · "Public domain (usa.gov publicdomain label 1.0) per data.gov; BLM no-warranty disclaimer"
+- facts: status error Service not found
+- overlap: same publisher as hab
+- closes: not probed
+
+### BLM Utah GIS data library (geodatabase + web service) | Recreation Sites (points and polygons); Congressionally-Designated Recreation Areas  ·  US-UT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.blm.gov/services/geospatial/GISData/utah
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
+- publisher: BLM Utah GIS data library (geodatabase + web service) → official (government host www.blm.gov)
+- terms: NOTHING STATED · source none
+- facts: file · status rest
+- closes: not probed: unknown url kind
+
+### Utah State Parks park publications (per-park maps) | Per-park /parks/<slug>/publications pages  ·  US-UT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://stateparks.utah.gov/parks/jordanelle/publications
+- WHY: did not open (404): probed again next run (failed 2 of 3)
+- publisher: Utah State Parks park publications (per-park maps) → official (government host stateparks.utah.gov)
+- terms: NOTHING STATED · source none
+- facts: file · status 404
+- closes: not probed: unknown url kind
+
+### BLM Nevada GIS data download page | NLCS Wilderness Area; NLCS National Monuments and NCAs; ACEC; HMA shapefile (6/30/2017)  ·  US-NV  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.blm.gov/services/geospatial/GISData/nevada
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
+- publisher: BLM Nevada GIS data download page → official (government host www.blm.gov)
+- terms: NOTHING STATED · source none
+- facts: file · status rest
+- closes: not probed: unknown url kind
+
+### Public Land Use Zone (Alberta) | Public Land Use Zone  ·  CA-AB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geospatial.alberta.ca/mimas/rest/services/boundaries/land_public_land_use_zone_public/FeatureServer/0
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
+- publisher: Public Land Use Zone (Alberta) → official (government host geospatial.alberta.ca)
+- terms: OPEN · source queue row (not the publisher's page) · "No license stated; copyright blank; presumed OGL-Alberta"
+- facts: status rest
+- overlap: same publisher as AB Public La
+- closes: not probed
+
+### ND State Forest lands (ND Forest Service, hosted by ND DMR) | ND_State_Forest (layer 0)  ·  US-ND  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.dmr.nd.gov/dmrpublicservices/rest/services/OilGasPublicMapDataVectorTiles/ND_State_Forest/MapServer/0
+- WHY: did not open (error Service OilGasPublicMapDataVectorTiles/ND_State_Forest/MapServer not found ): probed again next run (failed 2 of 3)
+- publisher: ND State Forest lands (ND Forest Service, hosted by ND DMR) → official (government host gis.dmr.nd.gov)
+- terms: CREDIT · source queue row (not the publisher's page) · "State disclaimer: not final publication, no liability; data updated 8/1/2011"
+- facts: status error Service OilGasPublicMapDataVectorTiles/ND_State_Forest/MapServer not found 
+- overlap: same publisher as sgndd
+- closes: not probed
+
+### State Historical Society of ND historic sites page | 60 sites list + Google My Map; Museums brochure PDF https://www.history.nd.gov/book/shsnd/MuseumsHistoricSitesBrochure/pdf/MuseumsHistoricSitesBroc  ·  US-ND  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://history.nd.gov/historicsites
+- WHY: did not open (host-rule): probed again next run (failed 2 of 3)
+- publisher: State Historical Society of ND historic sites page → official (government host history.nd.gov)
+- terms: NOTHING STATED · source none
+- facts: file · status host-rule
+- closes: not probed: unknown url kind
+
+### Arizona State Land Dept / AZGeo server State Trust Parcels | State_Trust_Parcels  ·  US-AZ  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://server.azgeo.az.gov/arcgis/rest/services/azland/State_Trust_Parcels/MapServer
+- WHY: did not open (error Service azland/State_Trust_Parcels/MapServer not started ): probed again next run (failed 2 of 3)
+- publisher: Arizona State Land Dept / AZGeo server State Trust Parcels → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status error Service azland/State_Trust_Parcels/MapServer not started 
+
+### TDEC Tennessee Natural Areas | TN_Natural_Areas (layer 0)  ·  US-TN  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://tdeconline.tn.gov/arcgis/rest/services/TN_Natural_Areas/MapServer
+- WHY: did not open (robots): probed again next run (failed 2 of 3)
+- publisher: TDEC Tennessee Natural Areas → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status robots
+
+### Louisiana State Parks (lastateparks.com) | Park pages and trail maps  ·  US-LA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.lastateparks.com/all-parks
+- WHY: did not open (robots): probed again next run (failed 2 of 3)
+- publisher: Louisiana State Parks (lastateparks.com) → official (government words: State Parks)
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### NS Open Data Portal Open Government Licence | n/a  ·  CA-NS  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://support.novascotia.ca/node/141
+- WHY: did not open (robots): probed again next run (failed 2 of 3)
+- publisher: NS Open Data Portal Open Government Licence → official (government host support.novascotia.ca)
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### Wyoming State Parks maps (GeoPDF per park) | n/a  ·  US-WY  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://wyoparks.wyo.gov/index.php/files/453/Glendo/1218/Glendo-GeoPDF.pdf
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
+- publisher: Wyoming State Parks maps (GeoPDF per park) → official (government host wyoparks.wyo.gov)
+- terms: NOTHING STATED · source none
+- facts: file · status rest
+- closes: not probed: unknown url kind
+
+### KDWP Fishing Atlas and bathymetric lake KMZ maps | n/a  ·  US-KS  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://kdwpt.ks.gov/KDWP-Info/Locations/Hunting-Fishing-Atlases/Fishing-Atlas
+- WHY: did not open (robots-unreadable): probed again next run (failed 2 of 3)
+- publisher: KDWP Fishing Atlas and bathymetric lake KMZ maps → official (government host kdwpt.ks.gov)
+- terms: NOTHING STATED · source none
+- facts: file · status robots-unreadable
+- closes: not probed: unknown url kind
+
+### PASDA DCNR MapServer | DCNR layers (state parks, forests)  ·  US-PA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://maps.pasda.psu.edu/server/rest/services/pasda/DCNR/MapServer
+- WHY: did not open (error Service pasda/DCNR/MapServer not started ): probed again next run (failed 2 of 3)
+- publisher: PASDA DCNR MapServer → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status error Service pasda/DCNR/MapServer not started 
+
+### BLM Idaho Geospatial/GIS data page  ·  US-ID  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.blm.gov/site-page/services-geospatial-gis-data-idaho
+- WHY: did not open (rest): probed again next run (failed 2 of 3)
+- publisher: BLM Idaho Geospatial/GIS data page → official (government host www.blm.gov)
+- terms: NOTHING STATED · source none
+- facts: file · status rest
+- closes: not probed: unknown url kind
+
+### PAD-US 4.0 (USGS GAP) national fallback | PAD-US 4.0  ·  US-ID  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://sciencebase.gov/catalog/item/652d4c46d34e44db0e2ee447
+- WHY: did not open (404): probed again next run (failed 2 of 3)
+- publisher: PAD-US 4.0 (USGS GAP) national fallback → official (government host sciencebase.gov)
+- terms: NOTHING STATED · source none
+- facts: file · status 404
+- closes: not probed: unknown url kind
+
+### Parks and Campgrounds - Surveyed (Geomatics Yukon / GeoYukon) | Parks and Campgrounds - Surveyed  ·  CA-YT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://open.yukon.ca/data/parks-and-campgrounds-surveyed
+- WHY: did not open (robots): probed again next run (failed 2 of 3)
+- publisher: Parks and Campgrounds - Surveyed (Geomatics Yukon / GeoYukon) → official (a government word of the country: Parks)
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### Parks and Protected Areas Polygon - Surveyed  ·  CA-YT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://open.yukon.ca/data/b06ba0b5-e07d-493a-b74c-a48438ef661c
+- WHY: did not open (robots): probed again next run (failed 2 of 3)
+- publisher: Parks and Protected Areas Polygon - Surveyed → official (a government word of the country: Parks)
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### Park and Protected Areas - 250k  ·  CA-YT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://open.yukon.ca/data/park-and-protected-areas-250k
+- WHY: did not open (robots): probed again next run (failed 2 of 3)
+- publisher: Park and Protected Areas - 250k → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### Yukon Parks campground and recreation site maps  ·  CA-YT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://open.yukon.ca/information/yukon-parks-campground-and-recreation-site-maps
+- WHY: did not open (robots): probed again next run (failed 2 of 3)
+- publisher: Yukon Parks campground and recreation site maps → official (a government word of the country: Parks)
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### Land Parcels Polygon - Surveyed  ·  CA-YT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://open.yukon.ca/data/land-parcels-polygon-surveyed
+- WHY: did not open (robots): probed again next run (failed 2 of 3)
+- publisher: Land Parcels Polygon - Surveyed → official (a government word of the country: Land )
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### MDWFP GIS program  ·  US-MS  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.mdwfp.com/wildlife-hunting/gis-program
+- WHY: did not open (404): probed again next run (failed 2 of 3)
+- publisher: MDWFP GIS program → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source none
+- facts: file · status 404
+- closes: not probed: unknown url kind
+
+### Manitoba Land Initiative cadastral (mli2.gov.mb.ca) | All Cadastral Polygons (SHP, 2016-01-05); Cadastral Index  ·  CA-MB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://mli2.gov.mb.ca/cadastral/index.html
+- WHY: did not open (robots-unreadable): probed again next run (failed 2 of 3)
+- publisher: Manitoba Land Initiative cadastral (mli2.gov.mb.ca) → official (government host mli2.gov.mb.ca)
+- terms: NOTHING STATED · source none
+- facts: file · status robots-unreadable
+- closes: not probed: unknown url kind
+
+### WA DNR Recreation Sites | DNR_Recreation_Sites  ·  US-WA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.dnr.wa.gov/site2/rest/services/Public_Recreation/DNR_Recreation_Sites/FeatureServer
+- WHY: did not open (error Token Required): probed again next run (failed 2 of 3)
+- publisher: WA DNR Recreation Sites → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status error Token Required
+- overlap: same publisher as sgwac
+
+### WI DNR Managed Recreation Opportunities  ·  US-WI  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_MGD_Recreational_Opp_WTM_Ext/MapServer
+- WHY: did not open (error Service LF_DML/LF_DNR_MGD_Recreational_Opp_WTM_Ext/MapServer not found ): probed again next run (failed 2 of 3)
+- publisher: WI DNR Managed Recreation Opportunities → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status error Service LF_DML/LF_DNR_MGD_Recreational_Opp_WTM_Ext/MapServer not found 
+- overlap: same publisher as sgwia
+
+### Arizona NG911 Statewide Development Parcel Feature Class (AZGeo) | Arizona NG911 Statewide Development Parcel Feature Class  ·  US-AZ  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://server.azgeo.az.gov/arcgis/rest/services/az911/Arizona_NG911_Statewide_Development_Parcel_Feature_Class/MapServer
+- WHY: did not open (error Service az911/Arizona_NG911_Statewide_Development_Parcel_Feature_Class/MapServer): probed again next run (failed 2 of 3)
+- publisher: Arizona NG911 Statewide Development Parcel Feature Class (AZGeo) → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status error Service az911/Arizona_NG911_Statewide_Development_Parcel_Feature_Class/MapServer
+
+### LDWF WMA/Refuge boundaries download page | WMA/Refuge boundaries (Shapefile ZIP and KMZ)  ·  US-LA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.wlf.louisiana.gov/page/wma-gis-data-download
+- WHY: did not open (robots-unreadable): probed again next run (failed 2 of 3)
+- publisher: LDWF WMA/Refuge boundaries download page → official (government host www.wlf.louisiana.gov)
+- terms: NOTHING STATED · source none
+- facts: file · status robots-unreadable
+- closes: not probed: unknown url kind
+
+### LDWF WMAs, Refuges and Conservation Areas (Data Basin copy) | LDWF WMAs, Refuges and Conservation Areas  ·  US-LA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://databasin.org/datasets/2c140c5c8c534f52856557a49722c024
+- WHY: did not open (405): probed again next run (failed 2 of 3)
+- publisher: LDWF WMAs, Refuges and Conservation Areas (Data Basin copy) → official (government words: Conservation)
+- terms: NOTHING STATED · source none
+- facts: file · status 405
+- closes: not probed: unknown url kind
+
+### Oklahoma Biological Survey, Univ of Oklahoma (ONHI) | Protected Areas of Oklahoma (PAD-OK)  ·  US-OK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://obsgis.csa.ou.edu:6443/arcgis/rest/services/ONHI/PAD_OK/MapServer/0
+- WHY: did not open (robots-unreadable): probed again next run (failed 2 of 3)
+- publisher: Oklahoma Biological Survey, Univ of Oklahoma (ONHI) → not official (a university account)
+- terms: CREDIT · source queue row (not the publisher's page) · "License listed as Public"
+- facts: status robots-unreadable
+- closes: not probed
+
+### Belo Horizonte municipal parks (GEOMETRIA polygons, CSV)  ·  BR  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://dados.pbh.gov.br/dataset/parques-municipais
+- WHY: did not open (robots): probed again next run (failed 2 of 3)
+- publisher: Prefeitura de Belo Horizonte / Prodabel → official (government host dados.pbh.gov.br)
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### National Parks and National Park Reserves Legislative Boundaries (NRCan) | Legislative boundaries  ·  CA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://donnees.iriu.ca/dataset/national-parks-and-national-park-reserves-of-canada-legislative-boundaries-4734
+- WHY: did not open (404): probed again next run (failed 2 of 3)
+- publisher: National Parks and National Park Reserves Legislative Boundaries (NRCan) → official (a government word of the country: National)
+- terms: NOTHING STATED · source none
+- facts: file · status 404
+- closes: not probed: unknown url kind
+
+### Natural England - Sites of Special Scientific Interest (England) and SSSI Units | Sites of Special Scientific Interest (England); Sites of Special Scientific Interest Units (England)  ·  GB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ckan.publishing.service.gov.uk/dataset/sites-of-special-scientific-interest-england3
+- WHY: did not open (robots): probed again next run (failed 2 of 3)
+- publisher: Natural England - Sites of Special Scientific Interest (England) and SSSI Units → official (government host ckan.publishing.service.gov.uk)
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### EEA Nationally Designated Areas CDDA v19 (fallback only) | Nationally designated areas (CDDA) - Large scale viewing (layer 4)  ·  SK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDAv19_Dyna_LAEA/MapServer/4
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- publisher: EEA Nationally Designated Areas CDDA v19 (fallback only) → official (government words: Environment Agency)
+- terms: CREDIT · source item page · "© European Environment Agency © European Environment Agency" · item https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDAv19_Dyna_LAEA/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Miljostyrelsen INSPIRE Protected Sites - DK INSPIRE PS Natura 2000 Habitat Areas (EF-habitatomraader) | DK INSPIRE PS Natura 2000 Habitat Areas (EF-habitatomraader)  ·  DK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://inspire-geoportal.ec.europa.eu/srv/api/records/2abe4eca-e755-4586-809e-44c648f056b2
+- WHY: did not open (robots-unreadable): probed again next run (failed 2 of 3)
+- publisher: Miljostyrelsen INSPIRE Protected Sites - DK INSPIRE PS Natura 2000 Habitat Areas (EF-habitatomraader) → official (a government word of the country: Natur)
+- terms: NOTHING STATED · source none
+- facts: file · status robots-unreadable
+- closes: not probed: unknown url kind
+
+### Miljostyrelsen INSPIRE Protected Sites - DK INSPIRE PS Natura 2000 Bird Protection Areas | DK INSPIRE PS Natura 2000 Bird Protection Areas  ·  DK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://inspire-geoportal.ec.europa.eu/srv/api/records/59af29ff-e5a9-4aee-a923-e903faed674f
+- WHY: did not open (robots-unreadable): probed again next run (failed 2 of 3)
+- publisher: Miljostyrelsen INSPIRE Protected Sites - DK INSPIRE PS Natura 2000 Bird Protection Areas → official (a government word of the country: Natur)
+- terms: NOTHING STATED · source none
+- facts: file · status robots-unreadable
+- closes: not probed: unknown url kind
+
+### Miljostyrelsen INSPIRE Protected Sites - DK INSPIRE PS Ramsar | DK INSPIRE PS Ramsar  ·  DK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://inspire-geoportal.ec.europa.eu/srv/api/records/1e6174df-861b-4911-ba6b-36297fdaea06
+- WHY: did not open (robots-unreadable): probed again next run (failed 2 of 3)
+- publisher: Miljostyrelsen INSPIRE Protected Sites - DK INSPIRE PS Ramsar → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source none
+- facts: file · status robots-unreadable
+- closes: not probed: unknown url kind
+
+### Miljostyrelsen INSPIRE Protected Sites - DK INSPIRE PS Conservation Orders (fredninger) | DK INSPIRE PS Conservation Orders (fredninger)  ·  DK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://inspire-geoportal.ec.europa.eu/srv/api/records/d73884e8-55d5-45d8-8a93-b4569fdc42ed
+- WHY: did not open (robots-unreadable): probed again next run (failed 2 of 3)
+- publisher: Miljostyrelsen INSPIRE Protected Sites - DK INSPIRE PS Conservation Orders (fredninger) → official (government words: Conservation)
+- terms: NOTHING STATED · source none
+- facts: file · status robots-unreadable
+- closes: not probed: unknown url kind
+
+### Miljostyrelsen INSPIRE Protected Sites - DK INSPIRE PS Conservation Orders (Proposals) | DK INSPIRE PS Conservation Orders (Proposals)  ·  DK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://inspire-geoportal.ec.europa.eu/srv/api/records/46cf3857-e017-47c4-9af7-6d8a32780581
+- WHY: did not open (robots-unreadable): probed again next run (failed 2 of 3)
+- publisher: Miljostyrelsen INSPIRE Protected Sites - DK INSPIRE PS Conservation Orders (Proposals) → official (government words: Conservation)
+- terms: NOTHING STATED · source none
+- facts: file · status robots-unreadable
+- closes: not probed: unknown url kind
+
+### Danmarks Miljoeportal - Arealdata (WMS/WFS/WMTS and SHAPE/TAB/GDB extracts) | Protected natural areas (layer names not listed)  ·  DK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://miljoeportal.dk/en/danmarks-miljoeportal-s-systems/arealdata
+- WHY: did not open (robots): probed again next run (failed 2 of 3)
+- publisher: Danmarks Miljoeportal - Arealdata (WMS/WFS/WMTS and SHAPE/TAB/GDB extracts) → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### GDOS Central Register of Nature Protection Forms - download service (WFS) | INSPIRE Protected Sites / Formy ochrony przyrody (https://sdi.gdos.gov.pl/wfs)  ·  PL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: http://bankdanych.gdos.gov.pl/geonetwork/srv/api/records/5eded3ca-5d17-47a3-ad30-3a0c5ff47aa2
+- WHY: did not open (robots): probed again next run (failed 2 of 3)
+- publisher: GDOS Central Register of Nature Protection Forms - download service (WFS) → official (government host bankdanych.gdos.gov.pl)
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### EEA NatDA MapServer v22 (fallback; countries report official national data) | NatDA polygons (layers 1,3,4)  ·  RO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/NatDAv22_Dyna_WM/MapServer/4
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- publisher: EEA NatDA MapServer v22 (fallback; countries report official national data) → official (government words: Environment Agency)
+- terms: CREDIT · source item page · "© European Environment Agency © European Environment Agency" · item https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/NatDAv22_Dyna_WM/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Regione Lombardia - Rete Natura 2000 | ambiente/Rete_Natura_2000 (WMS/ArcGIS MapServer, shapefile)  ·  IT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://inspire-geoportal.ec.europa.eu/srv/api/records/r_lombar:43ac3aac-250e-48fe-917d-5b4cf34d4afc
+- WHY: did not open (robots-unreadable): probed again next run (failed 2 of 3)
+- publisher: Regione Lombardia - Rete Natura 2000 → official (a government word of the country: Regione)
+- terms: NOTHING STATED · source none
+- facts: file · status robots-unreadable
+- closes: not probed: unknown url kind
+
+### ARSO Atlas voda / geohub: Zavarovana in varovana območja po ZON (ArcGIS Server REST, Slovenian Environment Agency) | Državna zavarovana območja (5661); Državna zavarovana območja (točke) (5659); Lokal  ·  SI  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geohub.gov.si/ags/rest/services/DRSV/Zavarovana_in_varovana_obmocja_po_ZON/MapServer/5662
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- publisher: ARSO Atlas voda / geohub: Zavarovana in varovana območja po ZON (ArcGIS Server REST, Slovenian Environment Agency) → official (government host geohub.gov.si)
+- terms: CREDIT · source item page · "ARSO ARSO" · item https://geohub.gov.si/ags/rest/services/DRSV/Zavarovana_in_varovana_obmocja_po_ZON/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### ARSO Atlas voda / geohub: Zavarovana in varovana območja po ZON (ArcGIS Server REST, Slovenian Environment Agency) | Državna zavarovana območja (5661); Državna zavarovana območja (točke) (5659); Lokal  ·  SI  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geohub.gov.si/ags/rest/services/DRSV/Zavarovana_in_varovana_obmocja_po_ZON/MapServer/5665
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- publisher: ARSO Atlas voda / geohub: Zavarovana in varovana območja po ZON (ArcGIS Server REST, Slovenian Environment Agency) → official (government host geohub.gov.si)
+- terms: CREDIT · source item page · "ARSO ARSO" · item https://geohub.gov.si/ags/rest/services/DRSV/Zavarovana_in_varovana_obmocja_po_ZON/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### ARSO Atlas voda / geohub: Zavarovana in varovana območja po ZON (ArcGIS Server REST, Slovenian Environment Agency) | Državna zavarovana območja (5661); Državna zavarovana območja (točke) (5659); Lokal  ·  SI  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geohub.gov.si/ags/rest/services/DRSV/Zavarovana_in_varovana_obmocja_po_ZON/MapServer/5667
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- publisher: ARSO Atlas voda / geohub: Zavarovana in varovana območja po ZON (ArcGIS Server REST, Slovenian Environment Agency) → official (government host geohub.gov.si)
+- terms: CREDIT · source item page · "ARSO ARSO" · item https://geohub.gov.si/ags/rest/services/DRSV/Zavarovana_in_varovana_obmocja_po_ZON/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### ARSO Atlas voda / geohub: Zavarovana in varovana območja po ZON (ArcGIS Server REST, Slovenian Environment Agency) | Državna zavarovana območja (5661); Državna zavarovana območja (točke) (5659); Lokal  ·  SI  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geohub.gov.si/ags/rest/services/DRSV/Zavarovana_in_varovana_obmocja_po_ZON/MapServer/5668
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- publisher: ARSO Atlas voda / geohub: Zavarovana in varovana območja po ZON (ArcGIS Server REST, Slovenian Environment Agency) → official (government host geohub.gov.si)
+- terms: CREDIT · source item page · "ARSO ARSO" · item https://geohub.gov.si/ags/rest/services/DRSV/Zavarovana_in_varovana_obmocja_po_ZON/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### ARSO Atlas voda / geohub: Zavarovana in varovana območja po ZON (ArcGIS Server REST, Slovenian Environment Agency) | Državna zavarovana območja (5661); Državna zavarovana območja (točke) (5659); Lokal  ·  SI  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geohub.gov.si/ags/rest/services/DRSV/Zavarovana_in_varovana_obmocja_po_ZON/MapServer/5669
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- publisher: ARSO Atlas voda / geohub: Zavarovana in varovana območja po ZON (ArcGIS Server REST, Slovenian Environment Agency) → official (government host geohub.gov.si)
+- terms: CREDIT · source item page · "ARSO ARSO" · item https://geohub.gov.si/ags/rest/services/DRSV/Zavarovana_in_varovana_obmocja_po_ZON/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### ARSO Atlas voda / geohub: Zavarovana in varovana območja po ZON (ArcGIS Server REST, Slovenian Environment Agency) | Državna zavarovana območja (5661); Državna zavarovana območja (točke) (5659); Lokal  ·  SI  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geohub.gov.si/ags/rest/services/DRSV/Zavarovana_in_varovana_obmocja_po_ZON/MapServer/5673
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- publisher: ARSO Atlas voda / geohub: Zavarovana in varovana območja po ZON (ArcGIS Server REST, Slovenian Environment Agency) → official (government host geohub.gov.si)
+- terms: CREDIT · source item page · "ARSO ARSO" · item https://geohub.gov.si/ags/rest/services/DRSV/Zavarovana_in_varovana_obmocja_po_ZON/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### EEA Nationally Designated Areas (NatDA/CDDA) MapServer - fallback | CDDAv21_Dyna_WM  ·  PT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDAv21_Dyna_WM/MapServer/4
+- WHY: did not open (budget): probed again next run (failed 2 of 3)
+- publisher: EEA Nationally Designated Areas (NatDA/CDDA) MapServer - fallback → official (government words: Environment Agency)
+- terms: CREDIT · source item page · "European Environment Agency European Environment Agency" · item https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDAv21_Dyna_WM/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Nepisiguit_Mi_Gmaq_Trail (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Combined_Trails_June_2019/FeatureServer/0
+- WHY: did not open 3 times (host-rule): chat 9 checks the url; did not open; found by item search on the publisher: https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Combined_Trails_June_2019/FeatureServer/0
+- publisher: ? → unsure (no publisher words at all)
+- did not open; found by item search on the publisher: https://services.arcgis.com/036S6vZ8Km7lO7Hl/arcgis/rest/services/Combined_Trails_June_2019/FeatureServer/0
+- terms: NOTHING STATED · source none
+- facts: status host-rule
+- closes: not probed
+
+### PDOK / RVO - Natura 2000 | natura2000 (OGC API Features, also WFS)  ·  NL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://api.pdok.nl/rvo/natura2000/ogc/v1/collections/natura2000
+- WHY: did not open (404): probed again next run (failed 1 of 3)
+- publisher: PDOK / RVO - Natura 2000 → official (a government word of the country: PDOK)
+- terms: NOTHING STATED · source none
+- facts: file · status 404
+- closes: not probed: unknown url kind
+
+### AOPK CR INSPIRE Protected sites - nature (ATOM) | INSPIRE Protected sites - nature  ·  CZ  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: http://gis.nature.cz/inspire/atom/atom.xml
+- WHY: did not open (robots): probed again next run (failed 1 of 3)
+- publisher: AOPK CR INSPIRE Protected sites - nature (ATOM) → official (government host gis.nature.cz)
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### INPN / MNHN - Parcs nationaux Reunion | Parcs nationaux - Reunion  ·  RE  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://inpn-inspire.mnhn.fr/catalogue/srv/api/records/3df0cc9c-d10e-4a8b-b4ff-a1157c6c558a
+- WHY: did not open (robots): probed again next run (failed 1 of 3)
+- publisher: INPN / MNHN - Parcs nationaux Reunion → official (a government word of the country: INPN)
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### KLHK/MoEF geoportal ArcGIS Server REST (SIGAP Interaktif) | Peta kawasan hutan  ·  ID  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geoportal.menlhk.go.id/server/rest/services/SIGAP_Interaktif/Kawasan_Hutan/MapServer/layers
+- WHY: did not open (robots-unreadable): probed again next run (failed 1 of 3)
+- publisher: KLHK/MoEF geoportal ArcGIS Server REST (SIGAP Interaktif) → unsure (did not open)
+- terms: NOTHING STATED · source none
+- facts: status robots-unreadable
+
+### Provincial GeoNode, Sumatera Barat Forestry (Kawasan Hutan SK 6599) | geonode:sk_kh_sumbar_6599  ·  ID  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://katalog.data.go.id/spasial/kawasan-hutan
+- WHY: did not open (robots-unreadable): probed again next run (failed 1 of 3)
+- publisher: Provincial GeoNode, Sumatera Barat Forestry (Kawasan Hutan SK 6599) → official (government words: Forestry)
+- terms: NOTHING STATED · source none
+- facts: file · status robots-unreadable
+- closes: not probed: unknown url kind
+
+### Zasticena podrucja RH - INSPIRE (MINGOR / Bioportal) on data.gov.hr | Zasticena podrucja Republike Hrvatske - INSPIRE  ·  HR  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://data.gov.hr/ckan/en/dataset/e42c2038-b7b8-4229-9118-f907a3c515a6
+- WHY: did not open (404): probed again next run (failed 1 of 3)
+- publisher: Zasticena podrucja RH - INSPIRE (MINGOR / Bioportal) on data.gov.hr → official (government host data.gov.hr)
+- terms: NOTHING STATED · source none
+- facts: file · status 404
+- closes: not probed: unknown url kind
+
+### Ålands landskapsregering: Skyddsområden på Åland (WFS via kartor.ax) | Skyddsomraden pa Aland  ·  AX  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ckanmtp.ymparisto.fi/en/dataset/skyddsomraden-pa-aland-wfs
+- WHY: did not open (robots-unreadable): probed again next run (failed 1 of 3)
+- publisher: Ålands landskapsregering: Skyddsområden på Åland (WFS via kartor.ax) → official (a government word of the country: land )
+- terms: OPEN · source GetCapabilities + queue row · "CC BY 4.0"
+- facts: wfs · status robots-unreadable
+- closes: not probed: WFS point query not built
+
+### Umhverfis- og orkustofnun (Environment and Energy Agency) via Landupplysingagatt metadata | fridlyst_svaedi (also _haf, _vatn)  ·  IS  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gatt.natt.is/geonetwork/srv/api/records/{6D940937-15DB-4D50-833B-37D2F2AB1207}
+- WHY: did not open (400): probed again next run (failed 1 of 3)
+- publisher: Umhverfis- og orkustofnun (Environment and Energy Agency) via Landupplysingagatt metadata → official (government words: Agency)
+- terms: NOTHING STATED · source none
+- facts: file · status 400
+- closes: not probed: unknown url kind
+
+### INPN (MNHN) - reference GIS layers national parks and other protected areas | Parcs nationaux (Guadeloupe version 09/2023); sister pages rnn, apb, rb, ramsar  ·  GP  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://inpn.mnhn.fr/telechargement/cartes-et-information-geographique/ep/pn
+- WHY: did not open (robots): probed again next run (failed 1 of 3)
+- publisher: INPN (MNHN) - reference GIS layers national parks and other protected areas → official (a government word of the country: INPN)
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### Land Niederoesterreich INSPIRE Protected Sites | Protected Sites (INSPIRE Anhang I) Niederoesterreich  ·  AT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://inspire-geoportal.ec.europa.eu/srv/api/records/03d595d8-8c77-4d02-8a3b-a9cea2313778
+- WHY: did not open (robots-unreadable): probed again next run (failed 1 of 3)
+- publisher: Land Niederoesterreich INSPIRE Protected Sites → official (a government word of the country: Land )
+- terms: NOTHING STATED · source none
+- facts: file · status robots-unreadable
+- closes: not probed: unknown url kind
+
+### INPN (MNHN) Aire protegee de ressources naturelles gerees - Polynesie francaise | Aire protegee de ressources naturelles gerees (also pyf_pgem, pyf_apia pages)  ·  PF  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://inpn.mnhn.fr/telechargement/cartes-et-information-geographique/ap/pyf_ap_rng
+- WHY: did not open (robots): probed again next run (failed 1 of 3)
+- publisher: INPN (MNHN) Aire protegee de ressources naturelles gerees - Polynesie francaise → official (a government word of the country: INPN)
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### Ministerio de Bienes Nacionales (data owner), served by Superintendencia del Medio Ambiente IDE — SNASPE state units (reference copy of boundaries) | Sistema Nacional de Areas Silvestres Protegidas de  ·  CL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Areas_proteccion_oficial2/MapServer/7
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: Ministerio de Bienes Nacionales (data owner), served by Superintendencia del Medio Ambiente IDE — SNASPE state units (re → official (government words: Ministerio)
+- terms: CREDIT · source item page · "Superintendencia del Medio Ambiente (2019) Superintendencia del Medio Ambiente (2019)" · item https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Areas_proteccion_oficial2/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Ministerio de Bienes Nacionales (data owner), served by Superintendencia del Medio Ambiente IDE — SNASPE state units (reference copy of boundaries) | Sistema Nacional de Areas Silvestres Protegidas de  ·  CL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Areas_proteccion_oficial2/MapServer/8
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: Ministerio de Bienes Nacionales (data owner), served by Superintendencia del Medio Ambiente IDE — SNASPE state units (re → official (government words: Ministerio)
+- terms: CREDIT · source item page · "Superintendencia del Medio Ambiente (2019) Superintendencia del Medio Ambiente (2019)" · item https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Areas_proteccion_oficial2/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Ministerio del Medio Ambiente (recognises private protected areas) — Private protected areas and conservation reserves (e.g. Altos de Chicauma, El Panul, Alerzales) | Private-property protected areas   ·  CL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Otras_bajo_proteccion/MapServer/3
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: Ministerio del Medio Ambiente (recognises private protected areas) — Private protected areas and conservation reserves ( → official (government words: Ministerio)
+- terms: CREDIT · source item page · "Superintendencia del Medio Ambiente (2024) Superintendencia del Medio Ambiente (2024)" · item https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Otras_bajo_proteccion/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Ministerio del Medio Ambiente (recognises private protected areas) — Private protected areas and conservation reserves (e.g. Altos de Chicauma, El Panul, Alerzales) | Private-property protected areas   ·  CL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Otras_bajo_proteccion/MapServer/4
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: Ministerio del Medio Ambiente (recognises private protected areas) — Private protected areas and conservation reserves ( → official (government words: Ministerio)
+- terms: CREDIT · source item page · "Superintendencia del Medio Ambiente (2024) Superintendencia del Medio Ambiente (2024)" · item https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Otras_bajo_proteccion/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Ministerio del Medio Ambiente (recognises private protected areas) — Private protected areas and conservation reserves (e.g. Altos de Chicauma, El Panul, Alerzales) | Private-property protected areas   ·  CL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Otras_bajo_proteccion/MapServer/5
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: Ministerio del Medio Ambiente (recognises private protected areas) — Private protected areas and conservation reserves ( → official (government words: Ministerio)
+- terms: CREDIT · source item page · "Superintendencia del Medio Ambiente (2024) Superintendencia del Medio Ambiente (2024)" · item https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Otras_bajo_proteccion/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Ministerio del Medio Ambiente (recognises private protected areas) — Private protected areas and conservation reserves (e.g. Altos de Chicauma, El Panul, Alerzales) | Private-property protected areas   ·  CL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Otras_bajo_proteccion/MapServer/6
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: Ministerio del Medio Ambiente (recognises private protected areas) — Private protected areas and conservation reserves ( → official (government words: Ministerio)
+- terms: CREDIT · source item page · "Superintendencia del Medio Ambiente (2024) Superintendencia del Medio Ambiente (2024)" · item https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Otras_bajo_proteccion/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Ministerio del Medio Ambiente (recognises private protected areas) — Private protected areas and conservation reserves (e.g. Altos de Chicauma, El Panul, Alerzales) | Private-property protected areas   ·  CL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Otras_bajo_proteccion/MapServer/7
+- WHY: did not open (budget): probed again next run (failed 1 of 3)
+- publisher: Ministerio del Medio Ambiente (recognises private protected areas) — Private protected areas and conservation reserves ( → official (government words: Ministerio)
+- terms: CREDIT · source item page · "Superintendencia del Medio Ambiente (2024) Superintendencia del Medio Ambiente (2024)" · item https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Otras_bajo_proteccion/MapServer/info/iteminfo
+- facts: status budget
+- closes: not probed
+
+### Conservatoire du littoral — Conservatoire du littoral | Terrains du Conservatoire du Littoral; mtq_inpn WMS/WFS (https://ws.carmencarto.fr/WFS/119/mtq_inpn?)  ·  MQ  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://inpn.mnhn.fr/telechargement/cartes-et-information-geographique/ep/cl
+- WHY: did not open (robots): probed again next run (failed 1 of 3)
+- publisher: Conservatoire du littoral — Conservatoire du littoral → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source none
+- facts: file · status robots
+- closes: not probed: unknown url kind
+
+### Puerto Rico Planning Board (SIGE) — Junta de Planificacion (government SDI) | Areas_Protegidas_2015 (polygon)  ·  PR  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://sige.pr.gov/server/rest/services/Advisory_Maps/areas_protegidas/MapServer/0
+- WHY: did not open (robots-unreadable): probed again next run (failed 1 of 3)
+- publisher: Puerto Rico Planning Board (SIGE) — Junta de Planificacion (government SDI) → official (government host sige.pr.gov)
+- terms: CREDIT · source queue row (not the publisher's page) · "None stated; cite Caribbean LCC 2015 Puerto Rico Protected Areas Database"
+- facts: status robots-unreadable
+- closes: not probed
+
+## REJECT (1882)
 
 ### SLIP_Public_Services/Boundaries  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Boundaries/MapServer/0
@@ -7130,6 +8119,90 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - AU-0162 Brooking Gorge Conservation Park → polygon "DERBY/WEST KIMBERLEY, SHIRE OF"
   - AU-0506 McCorkill State Forest → polygon "NANNUP, SHIRE OF"
 
+### BLM Alaska Recreation (BLM REST) | Layer 100 Recreation Area; others  ·  US-AK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.blm.gov/akarcgis/rest/services/Recreation/BLM_AK_Recreation/MapServer/100
+- WHY: NOT A PARK LAYER (coverage): closes 10 but only 2 by name (READY needs 3+ name matches and 25%+ of the closes)
+- publisher: BLM Alaska Recreation (BLM REST) → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by BLM "as is" and may contain errors or omissions. The User assumes the entire risk associa" · item https://gis.blm.gov/akarcgis/rest/services/Recreation/BLM_AK_Recreation/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 43 records · sample Mount Prindle RNA / None / White Mountains SRMA
+- overlap: same publisher as hab
+- closes: 10 of 14 tested missing parks (by name 2, pin only 8; 14 of the area's 15 missing parks lie in the layer's extent)
+  - US-11798 Tangle Lakes Archeological Reserve → polygon "Denali Highway SRMA"
+  - US-11825 Eagle Campground BLM Recreation Management Area → polygon "Fortymile SRMA - Eagle"
+  - US-11826 Walker Fork Campground BLM Recreation Management Area → polygon "Fotymile SRMA - Fortymile WSR"
+  - US-11827 West Fork Campground BLM Recreation Management Area → polygon "Fotymile SRMA - Fortymile WSR"
+  - US-11830 Five Mile Campground BLM Recreation Management Area → polygon ""
+  - US-11831 Arctic Circle Campground BLM Recreation Management Area → polygon ""
+  - US-11833 Galbraith Lake Campground BLM Recreation Management Area → polygon ""
+  - US-11850 Mount Prindle Campground BLM Recreation Management Area → polygon "White Mountains SRMA"
+  - US-11851 Ophir Creek Campground BLM Recreation Management Area → polygon "White Mountains SRMA"
+  - US-11853 Cripple Creek Campground BLM Recreation Management Area → polygon "White Mountains SRMA - Cripple Creek Campground"
+
+### Ministerio del Medio Ambiente (recognises private protected areas) — Private protected areas and conservation reserves (e.g. Altos de Chicauma, El Panul, Alerzales) | Private-property protected areas   ·  CL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Otras_bajo_proteccion/MapServer/1
+- WHY: closes only 2 park(s) by name (READY needs 3+ name matches): a park layer, but too little to gain yet
+- publisher: Ministerio del Medio Ambiente (recognises private protected areas) — Private protected areas and conservation reserves ( → official (government words: Ministerio)
+- terms: CREDIT · source item page · "Superintendencia del Medio Ambiente (2024) Servicio Agrícola y Ganadero (2018)" · item https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Otras_bajo_proteccion/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NOMBRE · 23 records
+- closes: 8 of 60 tested missing parks (by name 2, pin only 6; 240 of the area's 254 missing parks lie in the layer's extent)
+  - CL-0108 Alto Huemul Sanctuary → polygon "Sierra de Bellavista"
+  - CL-0115 El Panul State Park → polygon "Santiago Andino"
+  - CL-0126 Parque del Estrecho de Magallanes Protected Landscape Area → polygon "San Juan de la Península de Brunswick"
+  - CL-0127 PARQUE CERRO LA VIRGEN Recreation Park → polygon "Entreríos"
+  - CL-0139 Santuario de aves de Caulín Sanctuary → polygon "Canal de Chacao"
+  - CL-0160 Alto de Cantillana Reserve → polygon "Laguna de Aculeo, Altos de Cantillana y Tantahue"
+  - CL-0182 Pedro del rio Zañartu Park → polygon "Entreríos"
+  - CL-0195 El Arrayán Sanctuary → polygon "Santiago Andino"
+
+### BLM Nevada Wild Horse and Burro HMA polygons | BLM_NV_Wild_Horse_and_Burro_Herd_Management_Areas (layer 0)  ·  US-NV  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_Wild_Horse_Burro/BLM_NV_Wild_Horse_and_Burro_Herd_Management_Areas/MapServer/0
+- WHY: NOT A PARK LAYER (coverage): closes 7 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)
+- publisher: BLM Nevada Wild Horse and Burro HMA polygons → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by BLM "as is" and may contain errors or omissions. The User assumes the entire risk associa" · item https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_Wild_Horse_Burro/BLM_NV_Wild_Horse_and_Burro_Herd_Management_Areas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field HMA_NAME · 86 records · sample Little Owyhee / Owyhee / McGee Mountain
+- overlap: same publisher as hab
+- closes: 7 of 60 tested missing parks (by name 0, pin only 7; 75 of the area's 75 missing parks lie in the layer's extent)
+  - US-13020 Smoke Creek BLM National Conservation Area → polygon "Buffalo Hills"
+  - US-13041 Maverick-Medicine BLM Herd Management Area → polygon "Triple B"
+  - US-13196 Stampede-Nevada BLM Recreation Management Area → polygon "Silver King"
+  - US-13209 Goldfield Trail BLM Historic Area → polygon "Montezuma Peak"
+  - US-13210 Goshute Canyon and Goshute Cave BLM Recreation Management Area → polygon "Antelope"
+  - US-13217 Panaca Charcoal Kilns BLM Historic Area → polygon "Eagle"
+  - US-13227 White River Narrows BLM Historic Preservation Site → polygon "Silver King"
+
+### SWFWMD land resources (fee lands)  ·  US-FL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www25.swfwmd.state.fl.us/arcgis12/rest/services/OpenData/LandResources/MapServer/0
+- WHY: closes only 2 park(s) by name (READY needs 3+ name matches): a park layer, but too little to gain yet
+- publisher: Southwest Florida Water Management District → official (government host www25.swfwmd.state.fl.us)
+- terms: CREDIT · source item page · "Southwest Florida Water Management District Southwest Florida Water Management District" · item https://www25.swfwmd.state.fl.us/arcgis12/rest/services/OpenData/LandResources/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PROJECTNAME · 195 records · sample Alafia River Corridor / Alafia River Corridor / Alafia River Reserve
+- closes: 3 of 22 tested missing parks (by name 2, pin only 1; 22 of the area's 22 missing parks lie in the layer's extent)
+  - US-3656 Beker - South Fork State Park → polygon "Little Manatee River Corridor - Southfork"
+  - US-7475 Starkey Wilderness/Serenova Preserve State Conservation Area → polygon "Starkey Wilderness Preserve"
+  - US-8719 Horse Creek State Conservation Area → polygon "Lake Marion Creek Horseshoe Scrub Tract"
+
+### OPRHP Boundary (NYS Parks, Recreation and Historic Preservation) | OPRHP Boundary  ·  US-NY  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gisportaldev.dot.ny.gov/server/rest/services/CulturalResources/Cultural_Resources/MapServer/16
+- WHY: closes only 1 park(s) by name (READY needs 3+ name matches): a park layer, but too little to gain yet
+- publisher: OPRHP Boundary (NYS Parks, Recreation and Historic Preservation) → official (government host gisportaldev.dot.ny.gov)
+- terms: CREDIT · source queue row (not the publisher's page) · "Copyright blank; no terms stated" · item https://gisportaldev.dot.ny.gov/server/rest/services/CulturalResources/Cultural_Resources/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 805 records · sample Robert Moses / Robert Moses / Robert Moses
+- closes: 3 of 20 tested missing parks (by name 1, pin only 2; 20 of the area's 20 missing parks lie in the layer's extent)
+  - US-2081 Iona Island Wildlife Management Area → polygon "Iona Island"
+  - US-2151 Thompsons Lake State Park → polygon "John Boyd Thacher (Thompson's Lake Campground)"
+  - US-8064 Barcelona Neck Cooperative State Forest → polygon "Sag Harbor"
+
+### Ministerio de Bienes Nacionales (data owner), served by Superintendencia del Medio Ambiente IDE — SNASPE state units (reference copy of boundaries) | Sistema Nacional de Areas Silvestres Protegidas de  ·  CL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Areas_proteccion_oficial2/MapServer/3
+- WHY: NOT A PARK LAYER (coverage): closes 3 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)
+- publisher: Ministerio de Bienes Nacionales (data owner), served by Superintendencia del Medio Ambiente IDE — SNASPE state units (re → official (government words: Ministerio)
+- terms: CREDIT · source item page · "Superintendencia del Medio Ambiente (2019) Dirección General de Aguas (2012)" · item https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Areas_proteccion_oficial2/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Nombre · 217 records
+- closes: 3 of 5 tested missing parks (by name 0, pin only 3; 5 of the area's 254 missing parks lie in the layer's extent)
+  - CL-0413 Laguna de los Patos Wetland Reserve → polygon "Calama, Yalquincha"
+  - CL-0417 El Loa Recreation Park → polygon "Calama, Yalquincha"
+  - CL-0427 Humedal Urbano Rio Loa Wetland Reserve → polygon "Calama, Yalquincha"
+
 ### ogc_services/Australian_Marine_Parks  ·  AU  ·  from harvester
 - url: https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/Australian_Marine_Parks/MapServer/0
 - WHY: judged again by the Oct 29 READY rule: closes 2, by name 0 (READY needs 3+ name matches and 25%+; never a coverage layer)
@@ -7180,6 +8253,71 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
   - AU-11291 Great Lake Water Management Area → polygon "Great Lake"
   - AU-11292 Arthurs Lake - Water Management Area → polygon "Lake"
 
+### NJ DEP Open Space (statewide)  ·  US-NJ  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Land/MapServer/65
+- WHY: NOT A PARK LAYER (coverage): closes 2 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)
+- publisher: New Jersey DEP → official (government host mapsdep.nj.gov)
+- terms: CREDIT · source item page · "NJDEP NJDEP" · item https://mapsdep.nj.gov/arcgis/rest/services/Features/Land/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field USE_LABEL · 94011 records · sample None / None / None
+- overlap: same publisher as sgnja
+- closes: 2 of 3 tested missing parks (by name 0, pin only 2; 3 of the area's 3 missing parks lie in the layer's extent)
+  - US-6609 Pinelands Preserve National Conservation Area → polygon "State Forest"
+  - US-8061 Ellis Island National Historic Site → polygon ""
+
+### DNREC Managed Lands (FirstMap DE_State_Lands) | DNREC Managed Lands (layer 0)  ·  US-DE  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/MapServer/0
+- WHY: NOT A PARK LAYER (coverage): closes 2 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)
+- publisher: DNREC Managed Lands (FirstMap DE_State_Lands) → official (government host enterprise.firstmap.delaware.gov)
+- terms: CREDIT · source item page · "The State of Delaware makes no warranty or representation, expressed or implied, with respect to the quality, content, accuracy," · item https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 1329 records · sample Fork Branch Nature Preserve / Fork Branch Nature Preserve / Kesselring Property
+- overlap: same publisher as sgdea
+- closes: 2 of 3 tested missing parks (by name 0, pin only 2; 3 of the area's 3 missing parks lie in the layer's extent)
+  - US-9885 Indian River Life-Saving Station State Historic Site → polygon "Delaware Seashore State Park"
+  - US-9886 Dupont Nature Center State Conservation Area → polygon "Mispillion Marine Reserve"
+
+### WDFW Wildlife Areas MapServer | AreaBoundaries (1); UnitBoundaries (0)  ·  US-WA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WildlifeAreas/MapServer/1
+- WHY: closes only 1 park(s) by name (READY needs 3+ name matches): a park layer, but too little to gain yet
+- publisher: WDFW Wildlife Areas MapServer → official (government host geodataservices.wdfw.wa.gov)
+- terms: CREDIT · source item page · "Washington Department of Fish and Wildlife Washington Department of Fish and Wildlife" · item https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WildlifeAreas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field WildlifeAreaName · 33 records · sample Asotin Creek / Big Bend / Chehalis
+- overlap: same publisher as sgwab
+- closes: 2 of 31 tested missing parks (by name 1, pin only 1; 31 of the area's 31 missing parks lie in the layer's extent)
+  - US-11145 Naneum Ridge State Forest → polygon "Colockum"
+  - US-6473 Chief Joesph State Wildlife Area → polygon "Chief Joseph"
+
+### WDFW Wildlife Areas MapServer | AreaBoundaries (1); UnitBoundaries (0)  ·  US-WA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WildlifeAreas/MapServer/0
+- WHY: closes only 1 park(s) by name (READY needs 3+ name matches): a park layer, but too little to gain yet
+- publisher: WDFW Wildlife Areas MapServer → official (government host geodataservices.wdfw.wa.gov)
+- terms: CREDIT · source item page · "Washington Department of Fish and Wildlife Washington Department of Fish and Wildlife" · item https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WildlifeAreas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field WildlifeAreaName · 218 records · sample Chief Joseph / Mount Saint Helens / Mount Saint Helens
+- overlap: same publisher as sgwab
+- closes: 2 of 31 tested missing parks (by name 1, pin only 1; 31 of the area's 31 missing parks lie in the layer's extent)
+  - US-11145 Naneum Ridge State Forest → polygon "Colockum"
+  - US-6473 Chief Joesph State Wildlife Area → polygon "Chief Joseph"
+
+### BLM Colorado Recreation / NLCS  ·  US-CO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.blm.gov/coarcgis/rest/services/recreation/BLM_CO_Recreation/MapServer/4
+- WHY: NOT A PARK LAYER (coverage): closes 2 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)
+- publisher: BLM Colorado Recreation / NLCS → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) 'as is' and might contain errors or omissions. The User a" · item https://gis.blm.gov/coarcgis/rest/services/recreation/BLM_CO_Recreation/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 278 records · sample None / None / None
+- overlap: same publisher as hab
+- closes: 2 of 10 tested missing parks (by name 0, pin only 2; 10 of the area's 10 missing parks lie in the layer's extent)
+  - US-11907 Calamity Camp BLM Historic Preservation Site → polygon ""
+  - US-9598 Hardscrabble-East Eagle BLM National Recreation Area → polygon ""
+
+### DC GIS - Recreation (National Parks / NPS Map A) | National Parks  ·  US-DC  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://maps2.dcgis.dc.gov/DCGIS/rest/services/DCGIS_DATA/Recreation_WebMercator/MapServer/10
+- WHY: closes only 2 park(s) by name (READY needs 3+ name matches): a park layer, but too little to gain yet
+- publisher: DC GIS - Recreation (National Parks / NPS Map A) → official (government host maps2.dcgis.dc.gov)
+- terms: CREDIT · source item page · "DC GIS Office of the Chief Technology Officer" · item https://maps2.dcgis.dc.gov/DCGIS/rest/services/DCGIS_DATA/Recreation_WebMercator/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 456 records · sample Beach Parkway / North Portal / Piney Branch Portal
+- closes: 2 of 2 tested missing parks (by name 2, pin only 0; 2 of the area's 3 missing parks lie in the layer's extent)
+  - US-0655 National Mall and Memorial Parks National Park → polygon "The Mall, Smithsonian Grounds"
+  - US-0657 President's Park (White House) Park → polygon "President's Park, White House Ground, Exec. Office, Treasury Bldg."
+
 ### Public/OpenDataWFS  ·  AU  ·  from harvester
 - url: https://services.thelist.tas.gov.au/arcgis/rest/services/Public/OpenDataWFS/MapServer/2
 - WHY: NOT A PARK LAYER (coverage): closes 1 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)
@@ -7188,6 +8326,45 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field O_NAME · 57540 records · sample Landslide Hazard Area / Landslide Hazard Area / Landslide Hazard Area
 - closes: 1 of 45 tested missing parks (by name 0, pin only 1; 45 of the area's 1796 missing parks lie in the layer's extent)
   - AU-8859 Kingston Beach - State Beach → polygon "Heritage Precinct"
+
+### Missouri State Parks Boundaries (MoDNR) | Missouri_State_Parks_Boundaries  ·  US-MO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/MapServer/0
+- WHY: NOT A PARK LAYER (coverage): closes 1 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)
+- publisher: Missouri State Parks Boundaries (MoDNR) → official (government host gis.dnr.mo.gov)
+- terms: CREDIT · source item page · "Missouri Department of Natural Resources, Division of State Parks, Planning and Development Program and Missouri Office of Administration, Information Technolog" · item https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field LOC_NAME · 207 records · sample Ha Ha Tonka State Park / Arrow Rock State Historic Site / Arrow Rock State Historic Site
+- overlap: same publisher as sgmoa
+- closes: 1 of 6 tested missing parks (by name 0, pin only 1; 6 of the area's 6 missing parks lie in the layer's extent)
+  - US-5715 Roger Pryor Pioneer Backcountry State Park → polygon "Echo Bluff State Park"
+
+### RIDEM Outdoor Recreation Map v4 - DEM Managed Recreational Land | DEM Managed Recreational Land  ·  US-RI  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://risegis.ri.gov/hosting/rest/services/RIDEM/Outdoor_Recreation_Map_v4/MapServer/21
+- WHY: NOT A PARK LAYER (coverage): closes 1 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)
+- publisher: RIDEM Outdoor Recreation Map v4 - DEM Managed Recreational Land → official (government host risegis.ri.gov)
+- terms: CREDIT · source queue row (not the publisher's page) · "Copyright field blank; no terms seen" · item https://risegis.ri.gov/hosting/rest/services/RIDEM/Outdoor_Recreation_Map_v4/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 535 records · sample Round Top / High Rocks Gorge / Mary C Donovan Marsh
+- overlap: same publisher as sgria
+- closes: 1 of 3 tested missing parks (by name 0, pin only 1; 3 of the area's 3 missing parks lie in the layer's extent)
+  - US-10545 Hillsdale Preserve Management Area → polygon "deCoppett"
+
+### NJDEP Features/Land MapServer layer 67 Open Space (State Owned) Generalized | Open Space (State Owned) Generalized (67)  ·  US-NJ  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Land/MapServer/67
+- WHY: NOT A PARK LAYER (coverage): closes 1 but only 0 by name (READY needs 3+ name matches and 25%+ of the closes)
+- publisher: NJDEP Features/Land MapServer layer 67 Open Space (State Owned) Generalized → official (government host mapsdep.nj.gov)
+- terms: CREDIT · source item page · "NJDEP NJDEP" · item https://mapsdep.nj.gov/arcgis/rest/services/Features/Land/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PARKING · 373 records · sample None / None / None
+- overlap: same publisher as sgnja
+- closes: 1 of 3 tested missing parks (by name 0, pin only 1; 3 of the area's 3 missing parks lie in the layer's extent)
+  - US-6609 Pinelands Preserve National Conservation Area → polygon "Yes"
+
+### Isle of Man DEFA designations (glens, bird sanctuaries, NNRs, Ramsar, marine nature reserves, Manx National Trust land)  ·  IM  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/7
+- WHY: closes only 1 park(s) by name (READY needs 3+ name matches): a park layer, but too little to gain yet
+- publisher: Isle of Man Government DEFA → official (government words: Government)
+- terms: CREDIT · source item page · "Public Access DEFA DEFA" · item https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 23 records · sample Jurby Airfield / Langness, Sandwick and Derbyhaven / Ballacrye Meadow
+- closes: 1 of 5 tested missing parks (by name 1, pin only 0; 5 of the area's 5 missing parks lie in the layer's extent)
+  - IM-0008 The Ayres National Nature Reserve → polygon "Central Ayres"
 
 ### Nevada State Parks boundaries (Division of State Parks, VS Boundary Map)  ·  US-NV  ·  from chat 9
 - url: https://services7.arcgis.com/5hLFVlePaucIMGhw/arcgis/rest/services/VS_Boundary_Map_2_WFL1/FeatureServer/2
@@ -7903,7 +9080,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
 - publisher: services.thelist.tas.gov.au → official (government host services.thelist.tas.gov.au)
 - terms: CREDIT · source item page · "the LIST State of Tasmania the LIST &copy; State of Tasmania" · item https://services.thelist.tas.gov.au/arcgis/rest/services/Public/TopographyAndRelief/MapServer/info/iteminfo
-- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 17966 records · sample None / None / None
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 17957 records · sample None / None / None
 - closes: 0 of 60 tested missing parks (by name 0, pin only 0; 64 of the area's 1796 missing parks lie in the layer's extent)
 
 ### Public/TopographyAndRelief  ·  AU  ·  from harvester
@@ -7952,7 +9129,7 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - publisher: public-services.slip.wa.gov.au → official (government host public-services.slip.wa.gov.au)
 - terms: NON-COMMERCIAL · source item page · "sing this data, you agree to only use this data for your personal and non-commercial use. You are not permitted to, in any form, reprodu" · item https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field name · 6 records · sample Point Quobba Fish Habitat Protection Area / Abrolhos Islands Fish Habitat Protection Area / Cottesloe Reef Fish Habitat Protection Area
-- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
+- closes: 0 of 50 tested missing parks (by name 0, pin only 0; 1796 of the area's 1796 missing parks lie in the layer's extent)
 
 ### SLIP_Public_Services/Environment_WFS  ·  AU  ·  from harvester
 - url: https://public-services.slip.wa.gov.au/public/rest/services/SLIP_Public_Services/Environment_WFS/MapServer/0
@@ -16094,13 +17271,13 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - overlap: already read as Alberta Park
 - closes: not probed
 
-### cpcad (LAYER line, CA-AB)  ·    ·  from chat 8 LAYER line
+### ECCC CPCAD (protected and conserved areas, includes National Wildlife Areas) | Protected and conserved area (0)  ·  CA-SK  ·  from outside search Nov 11 (Brandon, Nov 12)
 - url: https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0
-- WHY: already read as cpcad: nothing new to take
-- publisher: ? → official (government host maps-cartes.ec.gc.ca)
+- WHY: already read as Hard look~17: nothing new to take
+- publisher: ECCC CPCAD (protected and conserved areas, includes National Wildlife Areas) → official (government host maps-cartes.ec.gc.ca)
 - terms: OPEN · source item page · "Open Government Licence - Canada (http://open.canada.ca/en/open-government-licence-canada) CPCAD is compiled and" · item https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field NAME_E · 22438 records · sample Sir Richard Squires Memorial Provincial Park / Butter Pot Provincial Park / J. T. Cheeseman Provincial Park
-- overlap: already read as cpcad
+- overlap: already read as Hard look~17
 - closes: not probed
 
 ### NB-PP Govern (LAYER line, CA-NB)  ·    ·  from chat 8 LAYER line
@@ -18657,10 +19834,10 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field PROP_ID · 2559749 records · last edit 2026-10-30 · sample 79_17 / 66_36 / 60_215
 - closes: not probed
 
-### Parcel Boundaries (outside research Oct 30)  ·    ·  from outside research Oct 30
+### MD iMAP Parcel Boundaries | Parcel Boundaries (0)  ·  US-MD  ·  from outside search Nov 11 (Brandon, Nov 12)
 - url: https://mdgeodata.md.gov/imap/rest/services/PlanningCadastre/MD_ParcelBoundaries/MapServer/0
 - WHY: no name field: an outline needs a name to match a park
-- publisher: ? → official (government host mdgeodata.md.gov)
+- publisher: MD iMAP Parcel Boundaries → official (government host mdgeodata.md.gov)
 - terms: CREDIT · source item page · "MD iMAP, MDP, SDAT MD iMAP, MDP, SDAT" · item https://mdgeodata.md.gov/imap/rest/services/PlanningCadastre/MD_ParcelBoundaries/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · 2293824 records
 - overlap: same publisher as mdd
@@ -18711,12 +19888,13 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - overlap: same publisher as akht
 - closes: not probed
 
-### Montana Parcels (outside research Oct 30)  ·    ·  from outside research Oct 30
+### Montana State Library Cadastral (MSDI) map service | Montana Parcels (layer 1)  ·  US-MT  ·  from outside search Nov 11 (Brandon, Nov 12)
 - url: https://gisservice.mt.gov/ArcGIS/rest/services/msdi_cadastral_map_v1/MapServer/1
 - WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
-- publisher: ? → official (government host gisservice.mt.gov)
+- publisher: Montana State Library Cadastral (MSDI) map service → official (government host gisservice.mt.gov)
 - terms: CREDIT · source item page · "the permission of those on the list; and prohibits a list of persons prepared by a public agency from being used as a distribution list without first securing the permiss" · item https://gisservice.mt.gov/ArcGIS/rest/services/msdi_cadastral_map_v1/MapServer/info/iteminfo
 - facts: arcgis-layer · esriGeometryPolygon · name field DbaName · 921301 records · sample None / None / None
+- overlap: same publisher as sgmtd
 - closes: not probed
 
 ### Parcels (polys) (outside research Oct 30)  ·    ·  from outside research Oct 30
@@ -19934,6 +21112,14 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · 467 records
 - closes: not probed
 
+### Isle of Man DEFA designations (glens, bird sanctuaries, NNRs, Ramsar, marine nature reserves, Manx National Trust land)  ·  IM  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/3
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: Isle of Man Government DEFA → official (government words: Government)
+- terms: CREDIT · source item page · "Public Access DEFA DEFA" · item https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 22 records · sample Port Soderick / Colby Glen / Silverdale Glen
+- closes: 0 of 5 tested missing parks (by name 0, pin only 0; 5 of the area's 5 missing parks lie in the layer's extent)
+
 ### N2K Special Area of Conservation (outside research Oct 30)  ·    ·  from outside research Oct 30
 - url: https://services-eu1.arcgis.com/XSelLE0xRyexHDpW/arcgis/rest/services/Base_data_Ambjent_Malta_2022_WFL1_view/FeatureServer/36
 - WHY: nothing stated about use on the item page or the service
@@ -20788,6 +21974,1700 @@ Every lead in data/intake/queue.json, probed politely (metadata and counts only,
 - facts: arcgis-layer · esriGeometryPolygon · name field LANDS_NAME · 585 records · sample AWMarionSP / AcdClffsWA / AdamsLakeSP
 - overlap: same publisher as sgohf
 - closes: 0 of 1 tested missing parks (by name 0, pin only 0; 1 of the area's 1 missing parks lie in the layer's extent)
+
+### BLM ID Recreation Area Poly (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/0
+- WHY: already read as sgidc: nothing new to take
+- publisher: ? → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) "as is" and might contain errors or omissions. The User a" · item https://gis.blm.gov/idarcgis/rest/services/recreation/BLM_ID_Recreation_Area_Poly/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNIT_NAME · 76 records · sample North Junipers Motorized Closure / Red Road Open Campfire Area / Egin Lakes Recreation Access
+- overlap: already read as sgidc
+- closes: not probed
+
+### Oregon Parklands (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0
+- WHY: already read as sgore: nothing new to take
+- publisher: ? → official (government host maps.prd.state.or.us)
+- terms: NOTHING STATED · source item page · item https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PARK_NAME · 6345 records · sample Historic Sumpter Valley Rail Road Park / Fizz Spring / Harry M Hewitt Memorial Park
+- overlap: already read as sgore
+- closes: not probed
+
+### FL-SOLARIS/LITS State Owned Lands (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/STATE_OWNED_LANDS/MapServer/0
+- WHY: already read as sgflf: nothing new to take
+- publisher: ? → official (government host ca.dep.state.fl.us)
+- terms: CREDIT · source item page · "FDEP-DSL All Florida Agencies, except the Department of Transportation, are responsible for submitting and maintaining current land ownership data." · item https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/STATE_OWNED_LANDS/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PROJECT_NAME · 79690 records · sample Blackwater River State Forest / Cayo Costa Island / Non-Project Acquisition
+- overlap: already read as sgflf
+- closes: not probed
+
+### Maryland Natural Areas (outside research Oct 30)  ·    ·  from outside research Oct 30
+- url: https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0
+- WHY: already read as sgmdb: nothing new to take
+- publisher: ? → official (government host dnr.geodata.md.gov)
+- terms: CREDIT · source item page · "Maryland DNR" · item https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field AREA_NAME · 34 records · sample Allens Fresh / Andover Flatwoods / Battle Creek Cypress Swamp
+- overlap: already read as sgmdb
+- closes: not probed
+
+### Registre des aires protégées et des AMCE au Québec (MELCCFP) | Registre aires protégées (SHP/FGDB/GPKG, plus WMS and EsriREST resources)  ·  CA-QC  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.donneesquebec.ca/recherche/dataset/aires-protegees-au-quebec
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Registre des aires protégées et des AMCE au Québec (MELCCFP) → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source none
+- facts: file · 88236 bytes
+- closes: not probed: unknown url kind
+
+### Couche des territoires récréatifs du Québec (MRNF) | Territoires récréatifs (FGDB, WMS, REST; REST layer 6 = Parc régional at servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServ  ·  CA-QC  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Couche des territoires récréatifs du Québec (MRNF) → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source none
+- facts: file · 71354 bytes
+- closes: not probed: unknown url kind
+
+### National Parks and National Park Reserves of Canada Legislative Boundaries (NRCan CLSS / Parks Canada) | CLSS Administrative Boundaries MapServer layer 1 (WMS/ESRI REST at proxyinternet.nrcan-rncan.gc  ·  CA-QC  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://open.canada.ca/data/en/dataset/9e1507cd-f25c-4c64-995b-6563bf9d65bd
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: National Parks and National Park Reserves of Canada Legislative Boundaries (NRCan CLSS / Parks Canada) → official (a federal / national agency named)
+- terms: NOTHING STATED · source none
+- facts: file · 88045 bytes
+- closes: not probed: unknown url kind
+
+### Places administered by Parks Canada (open.canada.ca / Parks Canada) | Places administered by Parks Canada (SHP, Esri REST, CSV, KML, GeoJSON)  ·  CA-QC  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://donnees.iriu.ca/dataset/e1f0c975-f40c-4313-9be2-beb951e35f4e
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Places administered by Parks Canada (open.canada.ca / Parks Canada) → official (a federal / national agency named)
+- terms: NOTHING STATED · source none
+- facts: file · 28106 bytes
+- closes: not probed: unknown url kind
+
+### Ville de Montréal - Grands parcs, parcs d'arrondissements et espaces publics | Grands parcs, parcs d'arrondissements et espaces publics (SHP, GeoJSON, CSV; also donnees.montreal.ca mirror)  ·  CA-QC  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.donneesquebec.ca/recherche/dataset/vmtl-grands-parcs-parcs-d-arrondissements-et-espaces-publics
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Ville de Montréal - Grands parcs, parcs d'arrondissements et espaces publics → official (a government word of the country: parcs)
+- terms: NOTHING STATED · source none
+- facts: file · 60223 bytes
+- closes: not probed: unknown url kind
+
+### Ville de Saguenay - Parcs et espaces verts | Parcs et espaces verts (SHP)  ·  CA-QC  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.donneesquebec.ca/recherche/dataset/sag_parcs-et-espaces-verts/resource/26006508-d15a-4c7f-93be-453bf3f48b0a
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Ville de Saguenay - Parcs et espaces verts → official (a government word of the country: Parcs)
+- terms: NOTHING STATED · source none
+- facts: file · 33589 bytes
+- closes: not probed: unknown url kind
+
+### Lots du cadastre rénové du Québec (MERN/Foncier Québec, hosted by MELCCFP geo server) | Lots du cadastre rénové (Cadastre_allege MapServer layer 0)  ·  CA-QC  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Reference/Cadastre_allege/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: Lots du cadastre rénové du Québec (MERN/Foncier Québec, hosted by MELCCFP geo server) → official (government host geo.environnement.gouv.qc.ca)
+- terms: CREDIT · source item page · "s de dommages pouvant résulter de l’utilisation de cette information. © Gouvernement du Québec © Gouvernement du Québec" · item https://geo.environnement.gouv.qc.ca/home/item.html?id=fb46af97179a4767acdd2d29eb9aee41 · owner environnement-qc · org Portail de collaboration en géomatique du MELCCFP
+- facts: arcgis-layer · esriGeometryPolygon · 4651039 records
+- overlap: same publisher as Québec ecolo
+- closes: not probed
+
+### Rôles d'évaluation foncière du Québec géoréférencés (MAMH) | Rôles d'évaluation foncière géoréférencés 2026 (FGDB, GPKG, GeoJSON, SHP, CSV)  ·  CA-QC  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://donneesquebec.ca/recherche/dataset/roles-d-evaluation-fonciere-du-quebec
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Rôles d'évaluation foncière du Québec géoréférencés (MAMH) → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source none
+- facts: file · 315412 bytes
+- closes: not probed: unknown url kind
+
+### Sépaq - Parc national map PDF (carte Sépaq) | carte_sepaq.pdf (network overview map)  ·  CA-QC  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.sepaq.com:443/resources/docs/voyage/carte_sepaq.pdf
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Sépaq - Parc national map PDF (carte Sépaq) → official (a government word of the country: national)
+- terms: NOTHING STATED · source none
+- facts: file · 3614275 bytes · modified Tue, 20 Nov 2018 16:50:30 GMT
+- closes: not probed: unknown url kind
+
+### GNB Dept of Natural Resources and Energy Development (ERD) Open Data - Conservation of Biodiversity | Protected Natural Areas / Nature Legacy protected areas  ·  CA-NB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www2.gnb.ca/content/gnb/en/departments/erd/open-data/conservation-biodiversity.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: GNB Dept of Natural Resources and Energy Development (ERD) Open Data - Conservation of Biodiversity → official (government host www2.gnb.ca)
+- terms: NOTHING STATED · source none
+- facts: file · modified Tue, 10 Nov 2026 19:49:47 GMT
+- closes: not probed: unknown url kind
+
+### GNB Open Data direct access index (Conservation, Fish & Wildlife, Crown Lands) | Fish & Wildlife (WMAs); Crown Lands  ·  CA-NB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www2.gnb.ca/content/gnb/en/departments/erd/open-data/direct_access.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: GNB Open Data direct access index (Conservation, Fish & Wildlife, Crown Lands) → official (government host www2.gnb.ca)
+- terms: NOTHING STATED · source none
+- facts: file · modified Tue, 10 Nov 2026 18:09:08 GMT
+- closes: not probed: unknown url kind
+
+### GeoNB Data Catalogue - Provincial Parks | Provincial Parks  ·  CA-NB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://snb.ca/geonb1/e/DC/ProParks.asp
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: GeoNB Data Catalogue - Provincial Parks → official (a government word of the country: Provincia)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### Provincial Parks (GeoJSON) via Canada federal geospatial portal mirror | Provincial Parks  ·  CA-NB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://donnees.iriu.ca/en/dataset/31f1830a-b55b-4ef5-33b3-b2a490aa520b
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Provincial Parks (GeoJSON) via Canada federal geospatial portal mirror → official (a government word of the country: Provincia)
+- terms: NOTHING STATED · source none
+- facts: file · 38162 bytes
+- closes: not probed: unknown url kind
+
+### Canadian Protected and Conserved Areas Database (CPCAD), ECCC | CPCAD protected & conserved areas  ·  CA-NB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/protected-conserved-areas-database.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Canadian Protected and Conserved Areas Database (CPCAD), ECCC → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source none
+- facts: file · modified Thu, 12 Nov 2026 05:40:14 GMT
+- closes: not probed: unknown url kind
+
+### PEI Dept of Environment, Energy and Climate Action / Communities, Land and Environment - GIS Free Products | Free GIS products; Resource Data  ·  CA-PE  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.princeedwardisland.ca/en/information/finance/geographic-information-systems
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: PEI Dept of Environment, Energy and Climate Action / Communities, Land and Environment - GIS Free Products → official (government host www.princeedwardisland.ca)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### Parks Canada - Places administered (PEI National Park etc.) and PEI National Park cadastral | Cadastral Information for Prince Edward Island National Park of Canada  ·  CA-PE  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://open.canada.ca/data/en/dataset/d0f1f672-38c3-4ee8-87f2-16233ebe3e95
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Parks Canada - Places administered (PEI National Park etc.) and PEI National Park cadastral → official (a federal / national agency named)
+- terms: NOTHING STATED · source none
+- facts: file · 41082 bytes
+- closes: not probed: unknown url kind
+
+### Delaware State Parcels with Ownership (FirstMap DE_StateParcels) | State of Delaware Parcels  ·  US-DE  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://enterprise.firstmap.delaware.gov/arcgis/rest/services/PlanningCadastre/DE_StateParcels/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: Delaware State Parcels with Ownership (FirstMap DE_StateParcels) → official (government host enterprise.firstmap.delaware.gov)
+- terms: CREDIT · source queue row (not the publisher's page) · "License field empty in item info" · item https://enterprise.firstmap.delaware.gov/arcgis/rest/services/PlanningCadastre/DE_StateParcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 454893 records
+- overlap: same publisher as sgdea
+- closes: not probed
+
+### FNAI Florida Conservation Lands (FLMA) | Florida Conservation Lands - Sept 2026 (metadata https://www.fnai.org/shapefiles/flma_meta.htm)  ·  US-FL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.fnai.org/publications/gis-data
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: FNAI Florida Conservation Lands (FLMA) → official (government words: Conservation)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### FNAI ArcGIS Server FLMA service | FLMA (layers incl. 5)  ·  US-FL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://fnaigis.fsu.edu/arcgis/rest/services/CONLANDS/FLMA_FFBOT_gs/MapServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: FNAI ArcGIS Server FLMA service → not official (a university account)
+- terms: CREDIT · source item page · "Florida Natural Areas Inventory Florida Natural Areas Inventory" · item https://fnaigis.fsu.edu/arcgis/rest/services/CONLANDS/FLMA_FFBOT_gs/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITENAME · 391 records · sample Adams Ranch Florida Forever BOT Project / Annutteliga Hammock Florida Forever BOT Project / Apalachicola River Florida Forever BOT Project
+- closes: not probed
+
+### FNAI ArcGIS Server FLMA service | FLMA (layers incl. 5)  ·  US-FL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://fnaigis.fsu.edu/arcgis/rest/services/CONLANDS/FLMA_FFBOT_gs/MapServer/5
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: FNAI ArcGIS Server FLMA service → not official (a university account)
+- terms: CREDIT · source item page · "Florida Natural Areas Inventory Florida Natural Areas Inventory" · item https://fnaigis.fsu.edu/arcgis/rest/services/CONLANDS/FLMA_FFBOT_gs/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field MANAME · 3435 records · sample 101 Ranch Conservation Easement / 123 NW Highway 19 Conservation Easement / 25th and Midway
+- closes: not probed
+
+### FNAI ArcGIS Server FLMA service | FLMA (layers incl. 5)  ·  US-FL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://fnaigis.fsu.edu/arcgis/rest/services/CONLANDS/FLMA_FFBOT_gs/MapServer/8
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: FNAI ArcGIS Server FLMA service → not official (a university account)
+- terms: CREDIT · source item page · "Florida Natural Areas Inventory Florida Natural Areas Inventory" · item https://fnaigis.fsu.edu/arcgis/rest/services/CONLANDS/FLMA_FFBOT_gs/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field MANAME · 3435 records · sample 101 Ranch Conservation Easement / 123 NW Highway 19 Conservation Easement / 25th and Midway
+- closes: not probed
+
+### SCDNR Wildlife Management Areas index  ·  US-SC  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.dnr.sc.gov/wma/index.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: SCDNR Wildlife Management Areas index → official (government host www.dnr.sc.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 16970 bytes · modified Wed, 01 Oct 2025 15:38:54 GMT
+- closes: not probed: unknown url kind
+
+### TxGIO StratMap Land Parcels | StratMap land parcels (most recent)  ·  US-TX  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.geographic.texas.gov/stratmap/land-parcels.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: TxGIO StratMap Land Parcels → official (government host www.geographic.texas.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 30059 bytes · modified Tue, 06 Oct 2026 16:41:30 GMT
+- closes: not probed: unknown url kind
+
+### Provincial Park Regulated (Ontario Parks, MECP) | Provincial Park Regulated  ·  CA-ON  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://data.ontario.ca/en/dataset/provincial-park-regulated
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Provincial Park Regulated (Ontario Parks, MECP) → official (government host data.ontario.ca)
+- terms: NOTHING STATED · source none
+- facts: file · 39908 bytes
+- closes: not probed: unknown url kind
+
+### Conservation Reserve Regulated (Ontario) | Conservation Reserve Regulated  ·  CA-ON  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://data.ontario.ca/en/dataset/conservation-reserve-land
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Conservation Reserve Regulated (Ontario) → official (government host data.ontario.ca)
+- terms: NOTHING STATED · source none
+- facts: file · 36627 bytes
+- closes: not probed: unknown url kind
+
+### Provincial Park Administration Zones | Provincial Park Administration Zones  ·  CA-ON  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://data.ontario.ca/en/dataset/provincial-park-administration-zones
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Provincial Park Administration Zones → official (government host data.ontario.ca)
+- terms: NOTHING STATED · source none
+- facts: file · 40972 bytes
+- closes: not probed: unknown url kind
+
+### Conservation Authority Administrative Area | Conservation Authority Administrative Area  ·  CA-ON  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://data.ontario.ca/en/dataset/conservation-authority-administrative-area
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Conservation Authority Administrative Area → official (government host data.ontario.ca)
+- terms: NOTHING STATED · source none
+- facts: file · 38655 bytes
+- closes: not probed: unknown url kind
+
+### City of Toronto Open Data | Parks and Recreation Facilities; Green Spaces  ·  CA-ON  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://open.toronto.ca
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: City of Toronto Open Data → official (government words: City of)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### Parks Canada national historic site pages and visitor maps | Per-site PDF maps / designation plaques  ·  CA-ON  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://parks.canada.ca/culture/designation/lieu-site
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Parks Canada national historic site pages and visitor maps → official (a federal / national agency named)
+- terms: NOTHING STATED · source none
+- facts: file · 154447 bytes
+- closes: not probed: unknown url kind
+
+### Ontario Parks park maps (per-park /maps pages) | Park map PDFs (pattern: ontarioparks.ca/park/<id>/maps; ontarioparks.ca/pdf/maps/<id>/park_map.pdf)  ·  CA-ON  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.ontarioparks.ca/park/lionshead/maps
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Ontario Parks park maps (per-park /maps pages) → official (a government word of the country: Parks)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### Ontario Parks guide map | Overview map  ·  CA-ON  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ontarioparks.ca/pdf/guide/op-guide-map.pdf
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Ontario Parks guide map → official (a government word of the country: Parks)
+- terms: NOTHING STATED · source none
+- facts: file · 603947 bytes · modified Fri, 16 Aug 2024 15:38:12 GMT
+- closes: not probed: unknown url kind
+
+### ODWC fishing lake / hatchery pages | Lake maps  ·  US-OK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://wildlifedepartment.com/fishing/wheretofish/odwc-lakes
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: ODWC fishing lake / hatchery pages → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source none
+- facts: file · 69045 bytes · modified Thu, 12 Nov 2026 11:27:20 GMT
+- closes: not probed: unknown url kind
+
+### TravelOK / Oklahoma State Parks | State park pages and maps  ·  US-OK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://travelok.com/state-parks/search
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: TravelOK / Oklahoma State Parks → official (government words: State Parks)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### NM State Parks (RGIS / EDAC) | New Mexico State Parks  ·  US-NM  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gstore.unm.edu/apps/rgis/datasets/057d2f19-4ec6-47d5-82a4-f03309ef94fb/metadata/ISO-19115:2003.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: NM State Parks (RGIS / EDAC) → hosted for an agency (a university account holds an agency layer)
+- terms: NOTHING STATED · source none
+- facts: file · 25582 bytes
+- closes: not probed: unknown url kind
+
+### NPS Boundaries (RGIS copy) | National Park Service Boundaries  ·  US-NM  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gstore.unm.edu/apps/rgis/datasets/558fe3fb-5a6a-4728-bdfa-53f40543d7e8/metadata/ISO-19115:2003.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: NPS Boundaries (RGIS copy) → hosted for an agency (a university account holds an agency layer)
+- terms: NOTHING STATED · source none
+- facts: file · 34434 bytes
+- closes: not probed: unknown url kind
+
+### IndianaMap Nature Preserves (Coastal area service) | Nature Preserves  ·  US-IN  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gisdata.in.gov/server/rest/services/Hosted/NaturePreservesCoastalArea/FeatureServer/0
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: IndianaMap Nature Preserves (Coastal area service) → official (government host gisdata.in.gov)
+- terms: CREDIT · source service copyrightText · "Indiana Department of Natural Resources, Indiana Natural Heritage Data Center, Indiana State Land Office, US Department of Agriculture, US Department of Interio"
+- facts: arcgis-layer · esriGeometryPolygon · name field unitname · 325 records · last edit 2026-06-16 · sample 200 East Park / 25th Avenue Park / 34 Acre Wetland Tract
+- overlap: same publisher as ind
+- closes: 0 of 12 tested missing parks (by name 0, pin only 0; 12 of the area's 12 missing parks lie in the layer's extent)
+
+### IDNR property maps | Park and property maps  ·  US-IN  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.in.gov/dnr
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: IDNR property maps → official (government host www.in.gov)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### Hawaii Statewide GIS - Reserves (DOFAW) | reserves  ·  US-HI  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://files.hawaii.gov/dbedt/op/gis/data/reserves.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Hawaii Statewide GIS - Reserves (DOFAW) → official (government host files.hawaii.gov)
+- terms: NOTHING STATED · source none
+- facts: file · modified Sun, 12 Apr 2026 00:11:54 GMT
+- closes: not probed: unknown url kind
+
+### Hawaii Statewide TMK parcels | Statewide TMKs  ·  US-HI  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geodata.hawaii.gov/arcgis/rest/services/ParcelsZoning/MapServer/25
+- WHY: no name field: an outline needs a name to match a park
+- publisher: Hawaii Statewide TMK parcels → official (government host geodata.hawaii.gov)
+- terms: CREDIT · source item page · "DISCLAIMER: Information contained in these files is derived from public records that are constantly" · item https://geodata.hawaii.gov/arcgis/rest/services/ParcelsZoning/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 384035 records
+- overlap: same publisher as sghia
+- closes: not probed
+
+### VA DCR Natural Heritage conservation lands | Conservation Lands (conslands PDF/data)  ·  US-VA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://dcr.virginia.gov/natural-heritage/clinfo
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: VA DCR Natural Heritage conservation lands → official (government host dcr.virginia.gov)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### SD Game, Fish and Parks Land Stewardship reference layers | Land Stewardship (state and federal lands)  ·  US-SD  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ert.gfp.sd.gov/arcgis/rest/services/SD_Public/ReferenceLayers_LandStewardship/MapServer/0
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: SD Game, Fish and Parks Land Stewardship reference layers → official (government host ert.gfp.sd.gov)
+- terms: CREDIT · source item page · "South Dakota Game, Fish and Parks South Dakota Game, Fish and Parks" · item https://ert.gfp.sd.gov/arcgis/rest/services/SD_Public/ReferenceLayers_LandStewardship/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field AreaName · 743 records · sample Fish Lake / Hanson Lake / Humphries Slough
+- closes: 0 of 1 tested missing parks (by name 0, pin only 0; 1 of the area's 2 missing parks lie in the layer's extent)
+
+### SD Game, Fish and Parks Land Stewardship reference layers | Land Stewardship (state and federal lands)  ·  US-SD  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ert.gfp.sd.gov/arcgis/rest/services/SD_Public/ReferenceLayers_LandStewardship/MapServer/1
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: SD Game, Fish and Parks Land Stewardship reference layers → official (government host ert.gfp.sd.gov)
+- terms: CREDIT · source item page · "South Dakota Game, Fish and Parks South Dakota Game, Fish and Parks" · item https://ert.gfp.sd.gov/arcgis/rest/services/SD_Public/ReferenceLayers_LandStewardship/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field ParkName · 133 records · sample Wall Lake / Fisher Grove / Hugh Glass
+- closes: 0 of 1 tested missing parks (by name 0, pin only 0; 1 of the area's 2 missing parks lie in the layer's extent)
+
+### BLM UT Congressionally Designated Recreation Areas (Arc/Polygon) | BLM UT Congressionally Designated Recreation Areas  ·  US-UT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.blm.gov/utarcgis/rest/services/Recreation/BLM_UT_RecAreas/MapServer/1
+- WHY: already read as sgutd: nothing new to take
+- publisher: BLM UT Congressionally Designated Recreation Areas (Arc/Polygon) → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by Bureau of Land Management (BLM) “as is” and may contain errors or omissions. The User ass" · item https://gis.blm.gov/utarcgis/rest/services/Recreation/BLM_UT_RecAreas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field RECS_NAME · 26 records · sample San Rafael Swell / San Rafael Swell / San Rafael Swell
+- overlap: already read as sgutd
+- closes: not probed
+
+### BLM UT Designated Wilderness / WSA (BLM; also UGRC mirrors) | BLM UT Designated Wilderness  ·  US-UT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://catalog.data.gov/dataset/blm-ut-designated-wilderness-arc
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: BLM UT Designated Wilderness / WSA (BLM; also UGRC mirrors) → official (government host catalog.data.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 164664 bytes
+- closes: not probed: unknown url kind
+
+### UGRC SGID Utah Land Ownership (SITLA/BLM) incl. state parks & DWR owner classes | Land_Ownership (FeatureServer 0 at gis.trustlands.utah.gov/mapping/rest/services/Land_Ownership/FeatureServer/0)  ·  US-UT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.utah.gov/data/cadastre/land-ownership
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: UGRC SGID Utah Land Ownership (SITLA/BLM) incl. state parks & DWR owner classes → official (government host gis.utah.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 78230 bytes
+- closes: not probed: unknown url kind
+
+### Oregon Dept of Fish and Wildlife (NRIMP) | Hatchery and Hatchery Facilities (layer 0)  ·  US-OR  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://nrimp.dfw.state.or.us/arcgis/rest/services/Hatchery/Hatchery_and_Hatchery_Facilities/MapServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: Oregon Dept of Fish and Wildlife (NRIMP) → official (government host nrimp.dfw.state.or.us)
+- terms: CREDIT · source item page · "This dataset is intended for use by ODFW staff, partner agencies, and authorized collaborators for fisheries managemen" · item https://nrimp.dfw.state.or.us/arcgis/rest/services/Hatchery/Hatchery_and_Hatchery_Facilities/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field Name · 137 records
+- closes: not probed
+
+### BLM Alaska Recreation (BLM REST) | Layer 100 Recreation Area; others  ·  US-AK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.blm.gov/akarcgis/rest/services/Recreation/BLM_AK_Recreation/MapServer/200
+- WHY: no name field: an outline needs a name to match a park
+- publisher: BLM Alaska Recreation (BLM REST) → official (government host gis.blm.gov)
+- terms: CREDIT · source item page · "These data are provided by BLM "as is" and may contain errors or omissions. The User assumes the entire risk associa" · item https://gis.blm.gov/akarcgis/rest/services/Recreation/BLM_AK_Recreation/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 983 records
+- overlap: same publisher as hab
+- closes: not probed
+
+### Alaska State Parks brochures and maps | Brochure PDFs by unit  ·  US-AK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://dnr.alaska.gov/parks/brochures.htm
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Alaska State Parks brochures and maps → official (government host dnr.alaska.gov)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### NOAA ESI Georgia 2015 Parks-Managed Areas | ESI PARKS-MANAGED AREAS  ·  US-GA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://catalog.data.gov/dataset/georgia-2015-esi-parks-managed-areas-polygons-points
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: NOAA ESI Georgia 2015 Parks-Managed Areas → official (government host catalog.data.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 150664 bytes
+- closes: not probed: unknown url kind
+
+### MDC Lands (Conservation Areas) | MDC Lands (Area_Name, OFF_Name, County)  ·  US-MO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gisblue.mdc.mo.gov/arcgis/rest/services/Boundaries/MDC_Administrative_Boundaries/MapServer/0
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: MDC Lands (Conservation Areas) → official (government host gisblue.mdc.mo.gov)
+- terms: CREDIT · source item page · "Although all data in this data set have been compiled by the Missouri Department of Conservation, no warranty, expressed or implied, is made by th" · item https://gisblue.mdc.mo.gov/arcgis/rest/services/Boundaries/MDC_Administrative_Boundaries/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Area_Name · 1049 records · sample Fountain Grove CA / Chesapeake Fish Hatchery / Daniel Boone CA
+- overlap: same publisher as sgmoc
+- closes: 0 of 6 tested missing parks (by name 0, pin only 0; 6 of the area's 6 missing parks lie in the layer's extent)
+
+### Missouri State Parks Boundaries (MoDNR) | Missouri_State_Parks_Boundaries  ·  US-MO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/MapServer/3
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: Missouri State Parks Boundaries (MoDNR) → official (government host gis.dnr.mo.gov)
+- terms: CREDIT · source queue row (not the publisher's page) · "No license/access info in item" · item https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 36 records · sample Bennett Spring Hanging Fen NA / Montauk Upland Forest NA / Elk River Breaks Woodland NA
+- overlap: same publisher as sgmoa
+- closes: 0 of 6 tested missing parks (by name 0, pin only 0; 6 of the area's 6 missing parks lie in the layer's extent)
+
+### Missouri State Parks Boundaries (MoDNR) | Missouri_State_Parks_Boundaries  ·  US-MO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/MapServer/2
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: Missouri State Parks Boundaries (MoDNR) → official (government host gis.dnr.mo.gov)
+- terms: CREDIT · source queue row (not the publisher's page) · "No license/access info in item" · item https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field WA_NAME · 13 records · sample Mudlick Mountain Wild Area / East Fork Wild Area / Goggins Mountain Wild Area
+- overlap: same publisher as sgmoa
+- closes: 0 of 6 tested missing parks (by name 0, pin only 0; 6 of the area's 6 missing parks lie in the layer's extent)
+
+### WVGISTC West Virginia State Parks (UTM83) | state_park_utm83  ·  US-WV  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://wvgis.wvu.edu/metadata_waf/state_park_utm83.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: WVGISTC West Virginia State Parks (UTM83) → hosted for an agency (a university account holds an agency layer)
+- terms: NOTHING STATED · source none
+- facts: file · 14728 bytes · modified Wed, 10 Aug 2005 14:28:28 GMT
+- closes: not probed: unknown url kind
+
+### Nevada Statewide Parcels (Division of State Lands via DOT) | All Parcels -2018-12-31  ·  US-NV  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.dot.nv.gov/agsphs/rest/services/Reference/Statewide_Parcels/MapServer/0
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: Nevada Statewide Parcels (Division of State Lands via DOT) → official (government host gis.dot.nv.gov)
+- terms: CREDIT · source item page · "Nevada Division of State Lands" · item https://gis.dot.nv.gov/agsphs/rest/services/Reference/Statewide_Parcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Website · 1293373 records · sample http://legacy.hcnv.us:1401/cgi-bin/asw101?Parcel=16068113 / http://legacy.hcnv.us:1401/cgi-bin/asw101?Parcel=16068102 / http://legacy.hcnv.us:1401/cgi-bin/asw101?Parcel=16068101
+- closes: not probed
+
+### SHPO Nevada Historical Markers lists and booklet | Markers sorted by number / county PDFs; marker booklet 2022  ·  US-NV  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://shpo.nv.gov/nevadas-historical-markers/historical-markers
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: SHPO Nevada Historical Markers lists and booklet → official (government host shpo.nv.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 0 bytes · modified Thu, 12 Nov 2026 12:19:28 GMT
+- closes: not probed: unknown url kind
+
+### Nevada State Parks park pages (maps/brochures) | Park brochure/map PDFs  ·  US-NV  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://parks.nv.gov/parks/fort-churchill-state-historic-park
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Nevada State Parks park pages (maps/brochures) → official (government host parks.nv.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 0 bytes · modified Thu, 12 Nov 2026 12:19:32 GMT
+- closes: not probed: unknown url kind
+
+### Parks and Protected Areas of Alberta (AEP) | Layer 0 (also FeatureServer/0)  ·  CA-AB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/MapServer/0
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: Parks and Protected Areas of Alberta (AEP) → official (government host geospatial.alberta.ca)
+- terms: CREDIT · source service copyrightText · "Alberta Parks, Government of Alberta"
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 469 records · sample Demmitt / Chain Lakes / Pembina River
+- overlap: same publisher as AB Public La
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 64 of the area's 64 missing parks lie in the layer's extent)
+
+### Listing of Historic Resources (Alberta Culture) | Historic resource polygons (shapefile)  ·  CA-AB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://open.canada.ca/data/en/dataset/03ec47c6-d5de-4ab5-afb6-546009c93282
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Listing of Historic Resources (Alberta Culture) → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source none
+- facts: file · 64988 bytes
+- closes: not probed: unknown url kind
+
+### Parks Canada Directory of Federal Heritage Designations | NHS entries (point/text), no polygons  ·  CA-AB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://parks.canada.ca/culture/adpf-dfhd
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Parks Canada Directory of Federal Heritage Designations → official (a federal / national agency named)
+- terms: NOTHING STATED · source none
+- facts: file · 89127 bytes
+- closes: not probed: unknown url kind
+
+### NC OneMap Parcels (NC1Map_Parcels) | Parcels (polys); points layer 0  ·  US-NC  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://services.nconemap.gov/secure/rest/services/NC1Map_Parcels/MapServer/1
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: NC OneMap Parcels (NC1Map_Parcels) → official (government host services.nconemap.gov)
+- terms: CREDIT · source item page · "https://www.nconemap.gov/pages/terms NC Center for Geographic Information and Analysis (NCCGIA), NC County Governments, US EPA This dataset was transformed by t" · item https://services.nconemap.gov/secure/rest/services/NC1Map_Parcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field munit · 5938804 records · sample  /  / 
+- closes: not probed
+
+### NCWRC Game Lands boundaries (KMZ) and per-game-land PDF maps | Statewide game lands KMZ (Aug 2025); regional PDFs; interactive map  ·  US-NC  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ncwildlife.gov/gamelands
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: NCWRC Game Lands boundaries (KMZ) and per-game-land PDF maps → official (government host ncwildlife.gov)
+- terms: NOTHING STATED · source none
+- facts: file · modified Thu, 12 Nov 2026 03:15:26 GMT
+- closes: not probed: unknown url kind
+
+### NCWRC hatcheries and fishing lakes pages | Hatchery pages  ·  US-NC  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.ncwildlife.gov/fishing/hatcheries-and-stocking/ncwrc-hatcheries
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: NCWRC hatcheries and fishing lakes pages → official (government host www.ncwildlife.gov)
+- terms: NOTHING STATED · source none
+- facts: file · modified Thu, 12 Nov 2026 03:29:28 GMT
+- closes: not probed: unknown url kind
+
+### Arizona Water Resources statewide parcels (azwatermaps) | Parcels  ·  US-AZ  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://azwatermaps.azwater.gov/arcgis/rest/services/General/Parcels/MapServer/0
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: Arizona Water Resources statewide parcels (azwatermaps) → official (government host azwatermaps.azwater.gov)
+- terms: CREDIT · source item page · "Arizona Department of Water Resources" · item https://azwatermaps.azwater.gov/arcgis/rest/services/General/Parcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_ZIP · 57679 records · sample   /   /  
+- closes: not probed
+
+### Arizona Water Resources statewide parcels (azwatermaps) | Parcels  ·  US-AZ  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://azwatermaps.azwater.gov/arcgis/rest/services/General/Parcels/MapServer/1
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: Arizona Water Resources statewide parcels (azwatermaps) → official (government host azwatermaps.azwater.gov)
+- terms: CREDIT · source item page · "Arizona Department of Water Resources" · item https://azwatermaps.azwater.gov/arcgis/rest/services/General/Parcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_ZIP · 122935 records · sample 85603 / 85603 / 85603
+- closes: not probed
+
+### Arizona Water Resources statewide parcels (azwatermaps) | Parcels  ·  US-AZ  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://azwatermaps.azwater.gov/arcgis/rest/services/General/Parcels/MapServer/2
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: Arizona Water Resources statewide parcels (azwatermaps) → official (government host azwatermaps.azwater.gov)
+- terms: CREDIT · source item page · "Arizona Department of Water Resources" · item https://azwatermaps.azwater.gov/arcgis/rest/services/General/Parcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_ZIP · 78368 records · sample   /   /  
+- closes: not probed
+
+### Arizona Water Resources statewide parcels (azwatermaps) | Parcels  ·  US-AZ  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://azwatermaps.azwater.gov/arcgis/rest/services/General/Parcels/MapServer/3
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: Arizona Water Resources statewide parcels (azwatermaps) → official (government host azwatermaps.azwater.gov)
+- terms: CREDIT · source item page · "Arizona Department of Water Resources" · item https://azwatermaps.azwater.gov/arcgis/rest/services/General/Parcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_ZIP · 39656 records · sample 85541 / 85541 / 85541
+- closes: not probed
+
+### Arizona Water Resources statewide parcels (azwatermaps) | Parcels  ·  US-AZ  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://azwatermaps.azwater.gov/arcgis/rest/services/General/Parcels/MapServer/4
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: Arizona Water Resources statewide parcels (azwatermaps) → official (government host azwatermaps.azwater.gov)
+- terms: CREDIT · source item page · "Arizona Department of Water Resources" · item https://azwatermaps.azwater.gov/arcgis/rest/services/General/Parcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_ZIP · 18821 records · sample   /   /  
+- closes: not probed
+
+### Arizona Water Resources statewide parcels (azwatermaps) | Parcels  ·  US-AZ  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://azwatermaps.azwater.gov/arcgis/rest/services/General/Parcels/MapServer/5
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: Arizona Water Resources statewide parcels (azwatermaps) → official (government host azwatermaps.azwater.gov)
+- terms: CREDIT · source item page · "Arizona Department of Water Resources" · item https://azwatermaps.azwater.gov/arcgis/rest/services/General/Parcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_ZIP · 4706 records · sample   /   /  
+- closes: not probed
+
+### Arizona Water Resources statewide parcels (azwatermaps) | Parcels  ·  US-AZ  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://azwatermaps.azwater.gov/arcgis/rest/services/General/Parcels/MapServer/6
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: Arizona Water Resources statewide parcels (azwatermaps) → official (government host azwatermaps.azwater.gov)
+- terms: CREDIT · source item page · "Arizona Department of Water Resources" · item https://azwatermaps.azwater.gov/arcgis/rest/services/General/Parcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_ZIP · 19336 records · sample   /   /  
+- closes: not probed
+
+### Arizona Water Resources statewide parcels (azwatermaps) | Parcels  ·  US-AZ  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://azwatermaps.azwater.gov/arcgis/rest/services/General/Parcels/MapServer/7
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: Arizona Water Resources statewide parcels (azwatermaps) → official (government host azwatermaps.azwater.gov)
+- terms: CREDIT · source item page · "Arizona Department of Water Resources" · item https://azwatermaps.azwater.gov/arcgis/rest/services/General/Parcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field SITE_ZIP · 1751155 records · sample   /   /  
+- closes: not probed
+
+### TN Comptroller county parcel data | County parcel shapefiles by request form  ·  US-TN  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://comptroller.tn.gov/office-functions/pa/gisredistricting/redistricting-and-land-use-maps/parcel-data.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: TN Comptroller county parcel data → official (government host comptroller.tn.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 36393 bytes · modified Tue, 10 Nov 2026 21:44:52 GMT
+- closes: not probed: unknown url kind
+
+### Nova Scotia Protected Areas System (open data, NS Environment) | The Nova Scotia Protected Areas System  ·  CA-NS  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://donnees.iriu.ca/dataset/21a1cbdc-7a9d-cdf0-d272-6dbb965e97dc
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Nova Scotia Protected Areas System (open data, NS Environment) → official (a government word of the country: Environment)
+- terms: NOTHING STATED · source none
+- facts: file · 38790 bytes
+- closes: not probed: unknown url kind
+
+### Nova Scotia Crown Land (open data) | Crown Land  ·  CA-NS  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://donnees.iriu.ca/dataset/faef7b10-6357-8918-ad93-26d64ad82c83
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Nova Scotia Crown Land (open data) → official (a government word of the country: Crown)
+- terms: NOTHING STATED · source none
+- facts: file · 38543 bytes
+- closes: not probed: unknown url kind
+
+### NS Provincial Parks (parks.novascotia.ca) all-parks index and 2026 guide PDF | n/a  ·  CA-NS  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://parks.novascotia.ca/parks/all/all
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: NS Provincial Parks (parks.novascotia.ca) all-parks index and 2026 guide PDF → official (government host parks.novascotia.ca)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### NS Parks and Protected Areas Map Index (Dec 2015 new designations) | n/a  ·  CA-NS  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://novascotia.ca/parksandprotectedareas/pdf/Parks-and-Protected-Areas-Map-Index-New-Designations-Dec_2015.pdf
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: NS Parks and Protected Areas Map Index (Dec 2015 new designations) → official (government words: Dec)
+- terms: NOTHING STATED · source none
+- facts: file · 4876399 bytes · modified Tue, 29 Dec 2015 16:07:29 GMT
+- closes: not probed: unknown url kind
+
+### BC Parks, Ecological Reserves, and Protected Areas | WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW (WMS pub: namespace; KML)  ·  CA-BC  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://open.canada.ca/data/dataset/1130248f-f1a3-4956-8b2e-38d29d3e4af7
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: BC Parks, Ecological Reserves, and Protected Areas → official (a government word of the country: Parks)
+- terms: NOTHING STATED · source none
+- facts: file · 60743 bytes
+- closes: not probed: unknown url kind
+
+### TANTALIS Conservancy Areas | Conservancy Areas  ·  CA-BC  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://donnees.iriu.ca/en/dataset/550b3133-2004-468f-ba1f-b95d0e281e78
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: TANTALIS Conservancy Areas → not official (Conservancy in the publisher words)
+- terms: NOTHING STATED · source none
+- facts: file · 26807 bytes
+- closes: not probed: unknown url kind
+
+### NWT Centre for Geomatics data resources | n/a  ·  CA-NT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.geomatics.gov.nt.ca/en/resources
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: NWT Centre for Geomatics data resources → official (government host www.geomatics.gov.nt.ca)
+- terms: NOTHING STATED · source none
+- facts: file · modified Thu, 12 Nov 2026 12:02:57 GMT
+- closes: not probed: unknown url kind
+
+### Nunavut Parks master/management plans (nunavutparks.com) | n/a  ·  CA-NU  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://nunavutparks.com/faqs
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Nunavut Parks master/management plans (nunavutparks.com) → official (a government word of the country: Parks)
+- terms: NOTHING STATED · source none
+- facts: file · 226084 bytes
+- closes: not probed: unknown url kind
+
+### Wyoming State Lands Parcels (OSLI) | Parcels2022  ·  US-WY  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis2.statelands.wyo.gov/arcgis/rest/services/Parcels2022/MapServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: Wyoming State Lands Parcels (OSLI) → official (government host gis2.statelands.wyo.gov)
+- terms: CREDIT · source queue row (not the publisher's page) · "Not stated in search snippet; check service metadata" · item https://www.arcgis.com/home/item.html?id=201d8a10552c4014bbb7b4f2af87f83b · owner shianne.fornstrom
+- facts: arcgis-layer · esriGeometryPolygon · 381846 records
+- closes: not probed
+
+### Wyoming State Parks historic sites points (WYDEQ-hosted) | WYSPHST_pts  ·  US-WY  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.deq.wyo.gov/arcgis/rest/services/WYSPHST_pts/MapServer/1
+- WHY: no polygons (esriGeometryPoint)
+- publisher: Wyoming State Parks historic sites points (WYDEQ-hosted) → official (government host gis.deq.wyo.gov)
+- terms: CREDIT · source item page · "None at this time WYSPHST, DEQ WYSPHST, DEQ" · item https://gis.deq.wyo.gov/arcgis/rest/services/WYSPHST_pts/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field NAME · 11 records
+- closes: not probed
+
+### Wyoming State Parks historic sites points (WYDEQ-hosted) | WYSPHST_pts  ·  US-WY  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.deq.wyo.gov/arcgis/rest/services/WYSPHST_pts/MapServer/2
+- WHY: no polygons (esriGeometryPoint)
+- publisher: Wyoming State Parks historic sites points (WYDEQ-hosted) → official (government host gis.deq.wyo.gov)
+- terms: CREDIT · source item page · "None at this time WYSPHST, DEQ WYSPHST, DEQ" · item https://gis.deq.wyo.gov/arcgis/rest/services/WYSPHST_pts/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field NAME · 11 records
+- closes: not probed
+
+### Wyoming State Parks historic sites points (WYDEQ-hosted) | WYSPHST_pts  ·  US-WY  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.deq.wyo.gov/arcgis/rest/services/WYSPHST_pts/MapServer/3
+- WHY: no polygons (esriGeometryPoint)
+- publisher: Wyoming State Parks historic sites points (WYDEQ-hosted) → official (government host gis.deq.wyo.gov)
+- terms: CREDIT · source item page · "None at this time WYSPHST, DEQ WYSPHST, DEQ" · item https://gis.deq.wyo.gov/arcgis/rest/services/WYSPHST_pts/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field NAME · 10 records
+- closes: not probed
+
+### Wyoming State Parks historic sites points (WYDEQ-hosted) | WYSPHST_pts  ·  US-WY  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.deq.wyo.gov/arcgis/rest/services/WYSPHST_pts/MapServer/4
+- WHY: no polygons (esriGeometryPoint)
+- publisher: Wyoming State Parks historic sites points (WYDEQ-hosted) → official (government host gis.deq.wyo.gov)
+- terms: CREDIT · source item page · "None at this time WYSPHST, DEQ WYSPHST, DEQ" · item https://gis.deq.wyo.gov/arcgis/rest/services/WYSPHST_pts/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field NAME · 20 records
+- closes: not probed
+
+### Wyoming State Parks historic sites points (WYDEQ-hosted) | WYSPHST_pts  ·  US-WY  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.deq.wyo.gov/arcgis/rest/services/WYSPHST_pts/MapServer/5
+- WHY: no polygons (esriGeometryPoint)
+- publisher: Wyoming State Parks historic sites points (WYDEQ-hosted) → official (government host gis.deq.wyo.gov)
+- terms: CREDIT · source item page · "None at this time WYSPHST, DEQ WYSPHST, DEQ" · item https://gis.deq.wyo.gov/arcgis/rest/services/WYSPHST_pts/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field NAME · 7 records
+- closes: not probed
+
+### Wyoming State Parks historic sites points (WYDEQ-hosted) | WYSPHST_pts  ·  US-WY  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.deq.wyo.gov/arcgis/rest/services/WYSPHST_pts/MapServer/6
+- WHY: no polygons (esriGeometryPoint)
+- publisher: Wyoming State Parks historic sites points (WYDEQ-hosted) → official (government host gis.deq.wyo.gov)
+- terms: CREDIT · source item page · "None at this time WYSPHST, DEQ WYSPHST, DEQ" · item https://gis.deq.wyo.gov/arcgis/rest/services/WYSPHST_pts/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field NAME · 27 records
+- closes: not probed
+
+### Wyoming State Parks historic sites points (WYDEQ-hosted) | WYSPHST_pts  ·  US-WY  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.deq.wyo.gov/arcgis/rest/services/WYSPHST_pts/MapServer/7
+- WHY: no polygons (esriGeometryPoint)
+- publisher: Wyoming State Parks historic sites points (WYDEQ-hosted) → official (government host gis.deq.wyo.gov)
+- terms: CREDIT · source item page · "None at this time WYSPHST, DEQ WYSPHST, DEQ" · item https://gis.deq.wyo.gov/arcgis/rest/services/WYSPHST_pts/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field NAME · 20 records
+- closes: not probed
+
+### Wyoming State Parks historic sites points (WYDEQ-hosted) | WYSPHST_pts  ·  US-WY  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.deq.wyo.gov/arcgis/rest/services/WYSPHST_pts/MapServer/8
+- WHY: no polygons (esriGeometryPoint)
+- publisher: Wyoming State Parks historic sites points (WYDEQ-hosted) → official (government host gis.deq.wyo.gov)
+- terms: CREDIT · source item page · "None at this time WYSPHST, DEQ WYSPHST, DEQ" · item https://gis.deq.wyo.gov/arcgis/rest/services/WYSPHST_pts/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field NAME · 18 records
+- closes: not probed
+
+### BLM national recreation site and RMA polygons (data.gov catalog / gis.blm.gov) | BLM National Recreation Site Polygons; state RMAs vary  ·  US-WY  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://catalog.data.gov/dataset/blm-natl-recreation-site-polygons
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: BLM national recreation site and RMA polygons (data.gov catalog / gis.blm.gov) → official (government host catalog.data.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 177842 bytes
+- closes: not probed: unknown url kind
+
+### MassGIS Protected and Recreational OpenSpace | OPENSPACE_POLY  ·  US-MA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.mass.gov/info-details/massgis-data-protected-and-recreational-openspace
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: MassGIS Protected and Recreational OpenSpace → official (government host www.mass.gov)
+- terms: NOTHING STATED · source none
+- facts: file · modified Tue, 10 Nov 2026 21:41:00 GMT
+- closes: not probed: unknown url kind
+
+### MassGIS Property Tax Parcels (Level 3) | Level 3 Assessors Parcels  ·  US-MA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.mass.gov/info-details/massgis-data-property-tax-parcels
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: MassGIS Property Tax Parcels (Level 3) → official (government host www.mass.gov)
+- terms: NOTHING STATED · source none
+- facts: file · modified Tue, 10 Nov 2026 21:12:59 GMT
+- closes: not probed: unknown url kind
+
+### Montana State Library Cadastral (MSDI) map service | Montana Parcels (layer 1)  ·  US-MT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gisservice.mt.gov/ArcGIS/rest/services/msdi_cadastral_map_v1/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: Montana State Library Cadastral (MSDI) map service → official (government host gisservice.mt.gov)
+- terms: CREDIT · source item page · "the permission of those on the list; and prohibits a list of persons prepared by a public agency from being used as a distribution list without first securing the permiss" · item https://gisservice.mt.gov/ArcGIS/rest/services/msdi_cadastral_map_v1/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 2785 records
+- overlap: same publisher as sgmtd
+- closes: not probed
+
+### Montana State Library Cadastral (MSDI) map service | Montana Parcels (layer 1)  ·  US-MT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gisservice.mt.gov/ArcGIS/rest/services/msdi_cadastral_map_v1/MapServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: Montana State Library Cadastral (MSDI) map service → official (government host gisservice.mt.gov)
+- terms: CREDIT · source item page · "the permission of those on the list; and prohibits a list of persons prepared by a public agency from being used as a distribution list without first securing the permiss" · item https://gisservice.mt.gov/ArcGIS/rest/services/msdi_cadastral_map_v1/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 31091 records
+- overlap: same publisher as sgmtd
+- closes: not probed
+
+### Montana Managed Areas (MSDI Administrative Boundaries) | Montana Managed Areas  ·  US-MT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ftpgeoinfo.msl.mt.gov/data/Spatial/MSDI/AdministrativeBoundaries/MontanaManagedAreas.xml
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Montana Managed Areas (MSDI Administrative Boundaries) → official (government host ftpgeoinfo.msl.mt.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 44913 bytes · modified Tue, 30 Dec 2025 18:20:09 GMT
+- closes: not probed: unknown url kind
+
+### INSIDE Idaho (Univ. of Idaho clearinghouse)  ·  US-ID  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://insideidaho.org
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: INSIDE Idaho (Univ. of Idaho clearinghouse) → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source none
+- facts: file · 34938 bytes · modified Wed, 26 Jun 2024 15:40:40 GMT
+- closes: not probed: unknown url kind
+
+### Idaho county parcels (Parcel Technical Working Group / Access Idaho parcel portal)  ·  US-ID  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.idaho.gov/parcel-technical-working-group-standard
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Idaho county parcels (Parcel Technical Working Group / Access Idaho parcel portal) → official (government host gis.idaho.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 0 bytes
+- closes: not probed: unknown url kind
+
+### Idaho Backcountry Airport Map (ITD Aeronautics)  ·  US-ID  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://itd.idaho.gov/wp-content/uploads/2023/06/ID_Backcountry_Airport_Map.pdf
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Idaho Backcountry Airport Map (ITD Aeronautics) → official (government host itd.idaho.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 2529297 bytes · modified Thu, 01 May 2025 00:36:07 GMT
+- closes: not probed: unknown url kind
+
+### MARIS State Parks (MDWFP) 2019 | MS_StateParks  ·  US-MS  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://maris.mississippi.edu/METAdata/METAdata_Cultural/MS_StateParks_2019_meta.pdf
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: MARIS State Parks (MDWFP) 2019 → hosted for an agency (a university account holds an agency layer)
+- terms: NOTHING STATED · source none
+- facts: file · 635262 bytes · modified Wed, 16 Jan 2019 15:54:02 GMT
+- closes: not probed: unknown url kind
+
+### MARIS Wildlife Management Areas | WMA (REST 2019, download 2026)  ·  US-MS  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://maris.mississippi.edu/HTML/DATA/Boundaries.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: MARIS Wildlife Management Areas → hosted for an agency (a university account holds an agency layer)
+- terms: NOTHING STATED · source none
+- facts: file · 42114 bytes · modified Mon, 26 Oct 2026 19:17:51 GMT
+- closes: not probed: unknown url kind
+
+### MARIS Statewide Parcels (Aug 2024)  ·  US-MS  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.mississippi.edu/server/rest/services/Cadastral/MS_Parcels_August_2024/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: MARIS Statewide Parcels (Aug 2024) → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "none County Tax assessor's offices of each county, Tristate Consulting,TabMap, Spatial Net, Sanders and Associates U.S. Census, MS Department of Environmental Q" · item https://gis.mississippi.edu/server/rest/services/Cadastral/MS_Parcels_August_2024/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 2 records
+- closes: not probed
+
+### MDWFP park finder  ·  US-MS  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://mdwfp.com/parks-destinations/park-finder
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: MDWFP park finder → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source none
+- facts: file · modified Thu, 12 Nov 2026 08:15:13 GMT
+- closes: not probed: unknown url kind
+
+### AGFC WMA boundary via Arkansas GIS Office | ST_WILDLIFE_MNGMNT_AGFC  ·  US-AR  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.arkansas.gov/metadata/HTML/asdi.boundaries.ST_WILDLIFE_MNGMNT_AGFC_export.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: AGFC WMA boundary via Arkansas GIS Office → official (government host gis.arkansas.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 105371 bytes · modified Thu, 13 Jun 2024 19:24:33 GMT
+- closes: not probed: unknown url kind
+
+### Public Land Boundaries (AHTD export), Arkansas GIS Office | PUBLIC_LAND_BOUNDARIES_AHTD  ·  US-AR  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.arkansas.gov/metadata/HTML/asdi.planning_cadastre.PUBLIC_LAND_BOUNDARIES_AHTD_export.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Public Land Boundaries (AHTD export), Arkansas GIS Office → official (government host gis.arkansas.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 86120 bytes · modified Thu, 13 Jun 2024 19:24:36 GMT
+- closes: not probed: unknown url kind
+
+### Arkansas Trails (GeoStor) | ARKANSAS_TRAILS  ·  US-AR  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.arkansas.gov/Metadata/HTML/asdi.Environment.ARKANSAS_TRAILS_export.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Arkansas Trails (GeoStor) → official (government host gis.arkansas.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 65467 bytes · modified Thu, 13 Jun 2024 19:24:34 GMT
+- closes: not probed: unknown url kind
+
+### Arkansas county parcels on GeoStor  ·  US-AR  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.arkansas.gov/category/parcel
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Arkansas county parcels on GeoStor → official (government host gis.arkansas.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 71857 bytes
+- closes: not probed: unknown url kind
+
+### ANR Lands Dataset (Parcel) | ANR Lands Dataset (Parcel)  ·  US-VT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/39
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: ANR Lands Dataset (Parcel) → official (government host anrmaps.vermont.gov)
+- terms: CREDIT · source item page · "ANR" · item https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 2895 records · sample Dead Creek WMA / Keeler Bay Access / Victory State Forest
+- overlap: same service as sgvta (another layer of it)
+- closes: not probed
+
+### VCGI statewide standardized parcel data | VTPARCELS  ·  US-VT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://maps.vcgi.vermont.gov/gisdata/metadata/CadastralParcels_VTPARCELS.htm
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: VCGI statewide standardized parcel data → official (government host maps.vcgi.vermont.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 230316 bytes · modified Mon, 17 Nov 2025 16:17:20 GMT
+- closes: not probed: unknown url kind
+
+### Vermont State Parks publications and maps  ·  US-VT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://vtstateparks.com/publications.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Vermont State Parks publications and maps → official (government words: State Parks)
+- terms: NOTHING STATED · source none
+- facts: file · modified Thu, 12 Nov 2026 12:27:15 GMT
+- closes: not probed: unknown url kind
+
+### NH GRANIT Conservation/Public Lands | consnh  ·  US-NH  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ftp.granit.unh.edu/GRANIT_Data/Vector_Data/Environment_and_Conservation/d-conservation/consnh_Lite.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: NH GRANIT Conservation/Public Lands → hosted for an agency (a university account holds an agency layer)
+- terms: NOTHING STATED · source none
+- facts: file · 1750 bytes · modified Thu, 09 Jul 2026 17:49:48 GMT
+- closes: not probed: unknown url kind
+
+### NH State Parks map and guide  ·  US-NH  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.nhstateparks.org/find-parks-trails
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: NH State Parks map and guide → official (government words: State Parks)
+- terms: NOTHING STATED · source none
+- facts: file · 65452 bytes
+- closes: not probed: unknown url kind
+
+### MN DNR State Parks, Recreation Areas and Waysides | bdry_dnr_lrs_prk  ·  US-MN  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gisdata.mn.gov/ru/dataset/bdry-dnr-lrs-prk
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: MN DNR State Parks, Recreation Areas and Waysides → official (government host gisdata.mn.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 59238 bytes
+- closes: not probed: unknown url kind
+
+### MN Parcels, compiled from opt-in open data counties  ·  US-MN  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gisdata.mn.gov/pl/dataset/plan-parcels-open
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: MN Parcels, compiled from opt-in open data counties → official (government host gisdata.mn.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 59238 bytes
+- closes: not probed: unknown url kind
+
+### Illinois Natural Resources Geospatial Data Clearinghouse (ISGS)  ·  US-IL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://clearinghouse.isgs.illinois.edu/about
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Illinois Natural Resources Geospatial Data Clearinghouse (ISGS) → hosted for an agency (a university account holds an agency layer)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### IDNR statewide properties map and site map PDFs  ·  US-IL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://dnr.illinois.gov/content/dam/soi/en/web/dnr/parks/documents/statewidepropertiesmap.pdf
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: IDNR statewide properties map and site map PDFs → official (government host dnr.illinois.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 27965458 bytes · modified Wed, 11 Jan 2023 15:08:49 GMT
+- closes: not probed: unknown url kind
+
+### RIDEM Tax Parcels / RIGIS municipal parcels  ·  US-RI  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://risegis.ri.gov/hosting/rest/services/RIDEM/Tax_Parcels/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: RIDEM Tax Parcels / RIGIS municipal parcels → official (government host risegis.ri.gov)
+- terms: CREDIT · source item page · "semi-restricted RI State, 37 Towns RI State, 37 Towns" · item https://risegis.ri.gov/hosting/rest/services/RIDEM/Tax_Parcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 394167 records
+- overlap: same publisher as sgria
+- closes: not probed
+
+### City of Winnipeg Open Data / Park Maps (Winnipeg recreation parks: Fort Douglas, King Edward, Whittier, Provencher, Vimy Ridge, etc.) | Parks dataset on data.winnipeg.ca (tx3d-pfxq per search)  ·  CA-MB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://parkmaps.winnipeg.ca/TermsConditions.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: City of Winnipeg Open Data / Park Maps (Winnipeg recreation parks: Fort Douglas, King Edward, Whittier, Provencher, Vimy → official (government words: City of)
+- terms: NOTHING STATED · source none
+- facts: file · 27621 bytes · modified Thu, 01 Aug 2024 16:35:07 GMT
+- closes: not probed: unknown url kind
+
+### Manitoba Park Maps and Locations  ·  CA-MB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gov.mb.ca/sd/parks/park-maps-and-locations/index.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Manitoba Park Maps and Locations → official (government host gov.mb.ca)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### NL Environment, Conservation & Climate Change - Provincial Protected Areas shapefile | GNL_Provincial_Protected_Areas (shp zip/KMZ)  ·  CA-NL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.gov.nl.ca/eccc/natural-areas/gis-data
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: NL Environment, Conservation & Climate Change - Provincial Protected Areas shapefile → official (government host www.gov.nl.ca)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### WA DNR Managed Land Parcels (Public_Boundaries Cadastre OpenData) | DNR Managed Land Parcels (6)  ·  US-WA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/FeatureServer/6
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: WA DNR Managed Land Parcels (Public_Boundaries Cadastre OpenData) → official (government host gis.dnr.wa.gov)
+- terms: CREDIT · source item page · "Department of Natural Resources (DNR) provides these geographic data "as is." DNR makes no guarantee or warranty concerning the accuracy of information contained in" · item https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/FeatureServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PARCEL_NM · 18844 records · sample None / None / None
+- overlap: same publisher as sgwac
+- closes: not probed
+
+### Washington statewide parcel database (WAGIS / WA Geospatial Open Data)  ·  US-WA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://depts.washington.edu/wagis/projects/parcels
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Washington statewide parcel database (WAGIS / WA Geospatial Open Data) → not official (a university account)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### WDFW Green Dot maps / WA State Parks statewide map / DNR map resources  ·  US-WA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://wdfw.wa.gov/about/wdfw-lands/green-dot
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: WDFW Green Dot maps / WA State Parks statewide map / DNR map resources → official (government host wdfw.wa.gov)
+- terms: NOTHING STATED · source none
+- facts: file · 47736 bytes · modified Thu, 12 Nov 2026 12:30:58 GMT
+- closes: not probed: unknown url kind
+
+### Wisconsin Statewide Parcel Map Initiative (V9) | V9 parcels  ·  US-WI  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.sco.wisc.edu/parcels/data
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Wisconsin Statewide Parcel Map Initiative (V9) → not official (a university account)
+- terms: NOTHING STATED · source none
+- facts: file · 93849 bytes · modified Mon, 02 Nov 2026 22:37:38 GMT
+- closes: not probed: unknown url kind
+
+### CPW Areas (CPW_admin) | CPW Areas (1)  ·  US-CO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://codex.cnhp.colostate.edu/arcgis/rest/services/CO_Public/CPW_admin/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: CPW Areas (CPW_admin) → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "CPW Biologists, District Wildlife Managers and CPW Biologists, District Wildlife Managers and CPW Biologists, District Wildlife Managers and Researchers" · item https://codex.cnhp.colostate.edu/arcgis/rest/services/CO_Public/CPW_admin/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 4 records
+- closes: not probed
+
+### CPW Areas (CPW_admin) | CPW Areas (1)  ·  US-CO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://codex.cnhp.colostate.edu/arcgis/rest/services/CO_Public/CPW_admin/MapServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: CPW Areas (CPW_admin) → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "CPW Biologists, District Wildlife Managers and CPW Biologists, District Wildlife Managers and CPW Biologists, District Wildlife Managers and Researchers" · item https://codex.cnhp.colostate.edu/arcgis/rest/services/CO_Public/CPW_admin/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 18 records
+- closes: not probed
+
+### CPW Areas (CPW_admin) | CPW Areas (1)  ·  US-CO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://codex.cnhp.colostate.edu/arcgis/rest/services/CO_Public/CPW_admin/MapServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: CPW Areas (CPW_admin) → hosted for an agency (a university account holds an agency layer)
+- terms: CREDIT · source item page · "CPW Biologists, District Wildlife Managers and CPW Biologists, District Wildlife Managers and CPW Biologists, District Wildlife Managers and Researchers" · item https://codex.cnhp.colostate.edu/arcgis/rest/services/CO_Public/CPW_admin/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 138 records
+- closes: not probed
+
+### Colorado Public Parcel Composite (OIT) | Colorado_Public_Parcel_Composite  ·  US-CO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.colorado.gov/Public/rest/services/Address_and_Parcel/Colorado_Public_Parcels/MapServer/0
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: Colorado Public Parcel Composite (OIT) → official (government host gis.colorado.gov)
+- terms: CREDIT · source item page · "Colorado makes no representations or warranty as to the completeness, accuracy, timeliness, or content of any da This dataset is created and maintained by the Governor'" · item https://gis.colorado.gov/Public/rest/services/Address_and_Parcel/Colorado_Public_Parcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field subName · 2599937 records · sample WOODGLEN / LEGACY VILLAS CONDOMINIUMS / LEGACY VILLAS CONDOMINIUMS
+- overlap: same publisher as sgcoa
+- closes: not probed
+
+### MD iMAP Protected Lands (DNR Owned Lands) | DNR Owned Lands and Conservation Easements (0); Protected Federal Lands (8)  ·  US-MD  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/MapServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: MD iMAP Protected Lands (DNR Owned Lands) → official (government host mdgeodata.md.gov)
+- terms: CREDIT · source item page · "MD iMAP, DNR, MDP, MDA MD iMAP, DNR" · item https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 1451 records
+- overlap: same publisher as mdd
+- closes: not probed
+
+### MD iMAP Protected Lands (DNR Owned Lands) | DNR Owned Lands and Conservation Easements (0); Protected Federal Lands (8)  ·  US-MD  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/MapServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: MD iMAP Protected Lands (DNR Owned Lands) → official (government host mdgeodata.md.gov)
+- terms: CREDIT · source item page · "MD iMAP, DNR, MDP, MDA MD iMAP, DNR, MET" · item https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 1358 records
+- overlap: same publisher as mdd
+- closes: not probed
+
+### MD iMAP Protected Lands (DNR Owned Lands) | DNR Owned Lands and Conservation Easements (0); Protected Federal Lands (8)  ·  US-MD  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/MapServer/3
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: MD iMAP Protected Lands (DNR Owned Lands) → official (government host mdgeodata.md.gov)
+- terms: CREDIT · source item page · "MD iMAP, DNR, MDP, MDA MD iMAP, DNR" · item https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Name · 26334 records · sample ACCOKEEK ROAD SURFACE MINING / DOBSON PROPERTY / Edelen Estates
+- overlap: same publisher as mdd
+- closes: 0 of 7 tested missing parks (by name 0, pin only 0; 7 of the area's 8 missing parks lie in the layer's extent)
+
+### MD iMAP Protected Lands (DNR Owned Lands) | DNR Owned Lands and Conservation Easements (0); Protected Federal Lands (8)  ·  US-MD  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/MapServer/4
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: MD iMAP Protected Lands (DNR Owned Lands) → official (government host mdgeodata.md.gov)
+- terms: CREDIT · source item page · "MD iMAP, DNR, MDP, MDA Maryland Department of Planning, Maryland Department of Agriculture" · item https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Loc_Nm · 2849 records · sample WISNOM / MORRIS / HARMAN
+- overlap: same publisher as mdd
+- closes: 0 of 8 tested missing parks (by name 0, pin only 0; 8 of the area's 8 missing parks lie in the layer's extent)
+
+### MD iMAP Protected Lands (DNR Owned Lands) | DNR Owned Lands and Conservation Easements (0); Protected Federal Lands (8)  ·  US-MD  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/MapServer/5
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: MD iMAP Protected Lands (DNR Owned Lands) → official (government host mdgeodata.md.gov)
+- terms: CREDIT · source item page · "MD iMAP, DNR, MDP, MDA Maryland, Department of Planning, Geospatial Data and Analysis Unit" · item https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field Loc_Nm · 19763 records · sample PARCEL K OPEN SPACE - PHASE II  SECT V - WESTBURY / PARCEL E OPEN SPACE - PLAT 39/04 - BAY MEADOWS / OPEN SPACE B - SECTION 4B - LAUREL RIDGE
+- overlap: same publisher as mdd
+- closes: 0 of 8 tested missing parks (by name 0, pin only 0; 8 of the area's 8 missing parks lie in the layer's extent)
+
+### MD iMAP Protected Lands (DNR Owned Lands) | DNR Owned Lands and Conservation Easements (0); Protected Federal Lands (8)  ·  US-MD  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/MapServer/6
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: MD iMAP Protected Lands (DNR Owned Lands) → official (government host mdgeodata.md.gov)
+- terms: CREDIT · source item page · "MD iMAP, DNR, MDP, MDA MD iMAP, DNR" · item https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PropName · 13 records · sample Grove Farm / Downey / Petrie-Chaney (Wayson's Corner)
+- overlap: same publisher as mdd
+- closes: 0 of 5 tested missing parks (by name 0, pin only 0; 5 of the area's 8 missing parks lie in the layer's extent)
+
+### MD iMAP Protected Lands (DNR Owned Lands) | DNR Owned Lands and Conservation Easements (0); Protected Federal Lands (8)  ·  US-MD  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/MapServer/7
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: MD iMAP Protected Lands (DNR Owned Lands) → official (government host mdgeodata.md.gov)
+- terms: CREDIT · source item page · "MD iMAP, DNR, MDP, MDA MD iMAP, DNR, MDP" · item https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field AREA_NAME · 604 records · sample Unknown / Savage River area / Seymor B. Cooper Wildlife area
+- overlap: same publisher as mdd
+- closes: 0 of 8 tested missing parks (by name 0, pin only 0; 8 of the area's 8 missing parks lie in the layer's extent)
+
+### Georgia DNR Wildlife Resources Division property boundaries (KMZ) | WMA_Boundaries_2022.kmz (link https://georgiawildlife.com/sites/default/files/WMA_Boundaries_2022.kmz)  ·  US-GA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://georgiawildlife.com/land
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Georgia DNR Wildlife Resources Division property boundaries (KMZ) → official (government words: DNR)
+- terms: NOTHING STATED · source none
+- facts: file · 93125 bytes · modified Thu, 12 Nov 2026 08:49:36 GMT
+- closes: not probed: unknown url kind
+
+### USFWS Iowa Wetland Management District refuge page | Map page https://www.fws.gov/refuge/iowa-wetland-management-district/map  ·  US-IA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.fws.gov/refuge/iowa-wetland-management-district
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: USFWS Iowa Wetland Management District refuge page → official (government host www.fws.gov)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### ODFW Oregon Fish Hatcheries data page (NRIMP) | Oregon Fish Hatcheries (12/21/01 shapefile/coverage)  ·  US-OR  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://nrimp.dfw.state.or.us/NRIMP/information/hatchdata.htm
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: ODFW Oregon Fish Hatcheries data page (NRIMP) → official (government host nrimp.dfw.state.or.us)
+- terms: NOTHING STATED · source none
+- facts: file · 14844 bytes · modified Thu, 18 Dec 2003 03:54:39 GMT
+- closes: not probed: unknown url kind
+
+### NJDEP Features/Land MapServer layer 68 Open Space (State Owned) Facility | Open Space (State Owned) Facility (68)  ·  US-NJ  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://mapsdep.nj.gov/arcgis/rest/services/Features/Land/MapServer/68
+- WHY: no polygons (esriGeometryPoint)
+- publisher: NJDEP Features/Land MapServer layer 68 Open Space (State Owned) Facility → official (government host mapsdep.nj.gov)
+- terms: CREDIT · source item page · "NJDEP NJDEP" · item https://mapsdep.nj.gov/arcgis/rest/services/Features/Land/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field PARKING · 409 records
+- overlap: same publisher as sgnja
+- closes: not probed
+
+### Property - Alberta Township System (ATS) grid | Alberta Township System (LSD, quarter section, section, township)  ·  CA-AB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://open.canada.ca/data/en/dataset/76874ae6-373f-4371-bc99-e319a4fb84a3
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Property - Alberta Township System (ATS) grid → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source none
+- facts: file · 39220 bytes
+- closes: not probed: unknown url kind
+
+### Alaska DNR (hosts borough tax parcel archive on its own server) | Borough parcels: Juneau (3), Sitka (10), Denali (1), North Slope (8), Fairbanks North Star (9), Skagway (11)  ·  US-AK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Administrative_BoroughParcels/MapServer/3
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: Alaska DNR (hosts borough tax parcel archive on its own server) → official (government host arcgis.dnr.alaska.gov)
+- terms: CREDIT · source item page · "Alaska Department of Natural Resources Alaska Department of Natural Resources" · item https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Administrative_BoroughParcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field ASSN_PARK · 13119 records · sample   /   /  
+- overlap: same publisher as sgaka
+- closes: not probed
+
+### Alaska DNR (hosts borough tax parcel archive on its own server) | Borough parcels: Juneau (3), Sitka (10), Denali (1), North Slope (8), Fairbanks North Star (9), Skagway (11)  ·  US-AK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Administrative_BoroughParcels/MapServer/10
+- WHY: no name field: an outline needs a name to match a park
+- publisher: Alaska DNR (hosts borough tax parcel archive on its own server) → official (government host arcgis.dnr.alaska.gov)
+- terms: CREDIT · source item page · "Alaska Department of Natural Resources Alaska Department of Natural Resources" · item https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Administrative_BoroughParcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 3679 records
+- overlap: same publisher as sgaka
+- closes: not probed
+
+### Alaska DNR (hosts borough tax parcel archive on its own server) | Borough parcels: Juneau (3), Sitka (10), Denali (1), North Slope (8), Fairbanks North Star (9), Skagway (11)  ·  US-AK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Administrative_BoroughParcels/MapServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: Alaska DNR (hosts borough tax parcel archive on its own server) → official (government host arcgis.dnr.alaska.gov)
+- terms: CREDIT · source item page · "Alaska Department of Natural Resources Alaska Department of Natural Resources" · item https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Administrative_BoroughParcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 3127 records
+- overlap: same publisher as sgaka
+- closes: not probed
+
+### Alaska DNR (hosts borough tax parcel archive on its own server) | Borough parcels: Juneau (3), Sitka (10), Denali (1), North Slope (8), Fairbanks North Star (9), Skagway (11)  ·  US-AK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Administrative_BoroughParcels/MapServer/8
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: Alaska DNR (hosts borough tax parcel archive on its own server) → official (government host arcgis.dnr.alaska.gov)
+- terms: CREDIT · source item page · "Alaska Department of Natural Resources Alaska Department of Natural Resources" · item https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Administrative_BoroughParcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field PLANNAME · 7056 records · sample USS 11595 / None / USS 8041
+- overlap: same publisher as sgaka
+- closes: not probed
+
+### Alaska DNR (hosts borough tax parcel archive on its own server) | Borough parcels: Juneau (3), Sitka (10), Denali (1), North Slope (8), Fairbanks North Star (9), Skagway (11)  ·  US-AK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Administrative_BoroughParcels/MapServer/9
+- WHY: NOT A PARK LAYER (coverage: parcels / census / index / planning / fire): it covers the whole land, so every pin falls inside (chat 11, Oct 29)
+- publisher: Alaska DNR (hosts borough tax parcel archive on its own server) → official (government host arcgis.dnr.alaska.gov)
+- terms: CREDIT · source item page · "Alaska Department of Natural Resources Alaska Department of Natural Resources" · item https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Administrative_BoroughParcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field UNITS · 57685 records · sample AC / AC / AC
+- overlap: same publisher as sgaka
+- closes: not probed
+
+### Alaska DNR (hosts borough tax parcel archive on its own server) | Borough parcels: Juneau (3), Sitka (10), Denali (1), North Slope (8), Fairbanks North Star (9), Skagway (11)  ·  US-AK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Administrative_BoroughParcels/MapServer/11
+- WHY: no name field: an outline needs a name to match a park
+- publisher: Alaska DNR (hosts borough tax parcel archive on its own server) → official (government host arcgis.dnr.alaska.gov)
+- terms: CREDIT · source item page · "Alaska Department of Natural Resources Alaska Department of Natural Resources" · item https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Administrative_BoroughParcels/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 1775 records
+- overlap: same publisher as sgaka
+- closes: not probed
+
+### Ministry of Environment and Energy (YPEN); NECCA — National wildlife refuges; Natura 2000 areas | YPEN GeoNetwork/GeoServer (INSPIRE); protected sites layer not confirmed  ·  GR  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: http://geoportal.ypen.gr/geonetwork/srv/eng/csw
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Ministry of Environment and Energy (YPEN); NECCA — National wildlife refuges; Natura 2000 areas → official (government words: Ministry)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### Miljodirektoratet Naturvernomrader (Geonorge dataset naturvernomrader)  ·  NO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://kartkatalog.geonorge.no/metadata/5857ec0a-8d2c-4cd8-baa2-0dc54ae213b4
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Miljodirektoratet (Norwegian Environment Agency) → official (government words: Environment Agency)
+- terms: NOTHING STATED · source none
+- facts: file · 4665 bytes · modified Fri, 30 Oct 2026 21:05:22 GMT
+- closes: not probed: unknown url kind
+
+### Isle of Man DEFA designations (glens, bird sanctuaries, NNRs, Ramsar, marine nature reserves, Manx National Trust land)  ·  IM  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: Isle of Man Government DEFA → official (government words: Government)
+- terms: CREDIT · source item page · "Public Access DEFA DEFA" · item https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 19845 records
+- closes: not probed
+
+### Isle of Man DEFA designations (glens, bird sanctuaries, NNRs, Ramsar, marine nature reserves, Manx National Trust land)  ·  IM  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: Isle of Man Government DEFA → official (government words: Government)
+- terms: CREDIT · source item page · "Public Access DEFA DEFA" · item https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 1611 records
+- closes: not probed
+
+### Isle of Man DEFA designations (glens, bird sanctuaries, NNRs, Ramsar, marine nature reserves, Manx National Trust land)  ·  IM  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/4
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: Isle of Man Government DEFA → official (government words: Government)
+- terms: CREDIT · source item page · "Public Access DEFA DEFA" · item https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 52 records · sample Injaigyn / Ennemona / Glion Gill Phase 2
+- closes: 0 of 5 tested missing parks (by name 0, pin only 0; 5 of the area's 5 missing parks lie in the layer's extent)
+
+### Isle of Man DEFA designations (glens, bird sanctuaries, NNRs, Ramsar, marine nature reserves, Manx National Trust land)  ·  IM  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/5
+- WHY: no name field: an outline needs a name to match a park
+- publisher: Isle of Man Government DEFA → official (government words: Government)
+- terms: CREDIT · source item page · "Public Access DEFA DEFA" · item https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 7 records
+- closes: not probed
+
+### Isle of Man DEFA designations (glens, bird sanctuaries, NNRs, Ramsar, marine nature reserves, Manx National Trust land)  ·  IM  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/6
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: Isle of Man Government DEFA → official (government words: Government)
+- terms: CREDIT · source item page · "Public Access DEFA DEFA" · item https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 5 records · sample Ballamoar Reservoir, Patrick / The Willows (Ballamodha, Malew) / Tynwald National Park and Arboretum
+- closes: 0 of 5 tested missing parks (by name 0, pin only 0; 5 of the area's 5 missing parks lie in the layer's extent)
+
+### Isle of Man DEFA designations (glens, bird sanctuaries, NNRs, Ramsar, marine nature reserves, Manx National Trust land)  ·  IM  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/8
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: Isle of Man Government DEFA → official (government words: Government)
+- terms: CREDIT · source item page · "Public Access DEFA Department of Environment, Food and Agriculture" · item https://ppmaps.gov.im/manngispubserver/rest/services/CorporateDynamicServices/PPDEFA/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NAME · 1 records · sample Ayres Gravel Pits
+- closes: 0 of 5 tested missing parks (by name 0, pin only 0; 5 of the area's 5 missing parks lie in the layer's extent)
+
+### Hamyang-gun natural park district (KLIP shapefile)  ·  KR  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.data.go.kr/data/15159364/fileData.do
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Hamyang-gun / KLIP via data.go.kr → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### Berlin protected sites (INSPIRE PS Atom feed)  ·  DE  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gdi.berlin.de/data/ps_natur/atom
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Land Berlin (SenUVK) → official (a government word of the country: Land )
+- terms: NOTHING STATED · source none
+- facts: file · 2742 bytes · modified Fri, 26 Sep 2025 05:54:10 GMT
+- closes: not probed: unknown url kind
+
+### Conservatoire du littoral land holdings (MQ GP MF BL PM)  ·  FM  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://data.geopf.fr/wfs/ows
+- WHY: WFS from an unsure publisher
+- publisher: Conservatoire du littoral / PatriNat → unsure (no government word in the publisher, owner, organisation or credit)
+- terms: OPEN · source GetCapabilities + queue row · "none Licence Ouverte 2.0"
+- facts: wfs
+- closes: not probed: WFS point query not built
+
+### Places administered by Parks Canada | Places administered by Parks Canada  ·  CA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://donnees.iriu.ca/dataset/a69983f0-5be0-4faa-9efd-0540eb69ac81
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Places administered by Parks Canada → official (a federal / national agency named)
+- terms: NOTHING STATED · source none
+- facts: file · 28106 bytes
+- closes: not probed: unknown url kind
+
+### Natural England - National Nature Reserves (England) via Defra Data Services Platform | National Nature Reserves (England); WFS https://environment.data.gov.uk/spatialdata/national-nature-reserves-eng  ·  GB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.data.gov.uk/dataset/national-nature-reserves-england1
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Natural England - National Nature Reserves (England) via Defra Data Services Platform → official (government host www.data.gov.uk)
+- terms: NOTHING STATED · source none
+- facts: file · 35578 bytes
+- closes: not probed: unknown url kind
+
+### NatureScot / SpatialData.gov.scot - SSSI Scotland (WFS) | protectedareas:sssi (WFS https://ogc.nature.scot/geoserver/protectedareas/wfs)  ·  GB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://data.gov.uk/dataset/d64bf689-4ce8-465b-b00e-6a57dec94a22/site-of-special-scientific-interest-scotland
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: NatureScot / SpatialData.gov.scot - SSSI Scotland (WFS) → official (government host data.gov.uk)
+- terms: NOTHING STATED · source none
+- facts: file · 31337 bytes
+- closes: not probed: unknown url kind
+
+### Natural Resources Wales via DataMapWales - NNR | inspire-nrw:NRW_NNR  ·  GB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://datamap.gov.wales/layers/inspire-nrw:NRW_NNR
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Natural Resources Wales via DataMapWales - NNR → official (government words: Natural Resources)
+- terms: NOTHING STATED · source none
+- facts: file · 96119 bytes
+- closes: not probed: unknown url kind
+
+### Natural Resources Wales via DataMapWales - SSSI | inspire-nrw:NRW_SSSI  ·  GB  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://datamap.gov.wales/layers/inspire-nrw:NRW_SSSI
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Natural Resources Wales via DataMapWales - SSSI → official (government words: Natural Resources)
+- terms: NOTHING STATED · source none
+- facts: file · 97665 bytes
+- closes: not probed: unknown url kind
+
+### EEA Nationally Designated Areas CDDA v19 (fallback only) | Nationally designated areas (CDDA) - Large scale viewing (layer 4)  ·  SK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDAv19_Dyna_LAEA/MapServer/2
+- WHY: no polygons (no geometry)
+- publisher: EEA Nationally Designated Areas CDDA v19 (fallback only) → official (government words: Environment Agency)
+- terms: CREDIT · source item page · "© European Environment Agency © European Environment Agency" · item https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDAv19_Dyna_LAEA/MapServer/info/iteminfo
+- facts: arcgis-layer
+- closes: not probed
+
+### Vejdirektoratet kort.vd.dk - Fredede omraader MapServer (mirror, owner unstated) | Bekendtgoerelsesfredninger; Fredede omraader; Fredede omraader - forslag; Natur/vildt reservater  ·  DK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://kort.vd.dk/server/rest/services/Grunddata/Fredede_omr%C3%A5der/MapServer/1
+- WHY: no name field: an outline needs a name to match a park
+- publisher: Vejdirektoratet kort.vd.dk - Fredede omraader MapServer (mirror, owner unstated) → official (a government word of the country: Miljø)
+- terms note: KNOWN_TERMS override: CREDIT read on the service → NOTHING STATED. Danish Nature Agency (kort.vd.dk): no terms stated on the service → ask, or read live only
+- terms: NOTHING STATED · source known-terms table (the agency states its terms elsewhere) · "Miljøstyrelsen (MST) / Danmarks Miljø Portal (DMP) Miljøstyrelsen (MST) / Danmarks Miljø Portal (DMP)" · item https://kort.vd.dk/server/rest/services/Grunddata/Fredede_omr%C3%A5der/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 34 records
+- closes: not probed
+
+### Vejdirektoratet kort.vd.dk - Fredede omraader MapServer (mirror, owner unstated) | Bekendtgoerelsesfredninger; Fredede omraader; Fredede omraader - forslag; Natur/vildt reservater  ·  DK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://kort.vd.dk/server/rest/services/Grunddata/Fredede_omr%C3%A5der/MapServer/2
+- WHY: no name field: an outline needs a name to match a park
+- publisher: Vejdirektoratet kort.vd.dk - Fredede omraader MapServer (mirror, owner unstated) → official (a government word of the country: Miljø)
+- terms note: KNOWN_TERMS override: CREDIT read on the service → NOTHING STATED. Danish Nature Agency (kort.vd.dk): no terms stated on the service → ask, or read live only
+- terms: NOTHING STATED · source known-terms table (the agency states its terms elsewhere) · "Miljøstyrelsen (MST) / Danmarks Miljø Portal (DMP) Miljøstyrelsen (MST) / Danmarks Miljø Portal (DMP)" · item https://kort.vd.dk/server/rest/services/Grunddata/Fredede_omr%C3%A5der/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 4176 records
+- closes: not probed
+
+### Vejdirektoratet kort.vd.dk - Fredede omraader MapServer (mirror, owner unstated) | Bekendtgoerelsesfredninger; Fredede omraader; Fredede omraader - forslag; Natur/vildt reservater  ·  DK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://kort.vd.dk/server/rest/services/Grunddata/Fredede_omr%C3%A5der/MapServer/3
+- WHY: no name field: an outline needs a name to match a park
+- publisher: Vejdirektoratet kort.vd.dk - Fredede omraader MapServer (mirror, owner unstated) → official (a government word of the country: Miljø)
+- terms note: KNOWN_TERMS override: CREDIT read on the service → NOTHING STATED. Danish Nature Agency (kort.vd.dk): no terms stated on the service → ask, or read live only
+- terms: NOTHING STATED · source known-terms table (the agency states its terms elsewhere) · "Miljøstyrelsen (MST) / Danmarks Miljø Portal (DMP) Miljøstyrelsen (MST) / Danmarks Miljø Portal (DMP)" · item https://kort.vd.dk/server/rest/services/Grunddata/Fredede_omr%C3%A5der/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 28 records
+- closes: not probed
+
+### Vejdirektoratet kort.vd.dk - Fredede omraader MapServer (mirror, owner unstated) | Bekendtgoerelsesfredninger; Fredede omraader; Fredede omraader - forslag; Natur/vildt reservater  ·  DK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://kort.vd.dk/server/rest/services/Grunddata/Fredede_omr%C3%A5der/MapServer/4
+- WHY: no name field: an outline needs a name to match a park
+- publisher: Vejdirektoratet kort.vd.dk - Fredede omraader MapServer (mirror, owner unstated) → official (a government word of the country: Miljø)
+- terms note: KNOWN_TERMS override: CREDIT read on the service → NOTHING STATED. Danish Nature Agency (kort.vd.dk): no terms stated on the service → ask, or read live only
+- terms: NOTHING STATED · source known-terms table (the agency states its terms elsewhere) · "Miljøstyrelsen (MST) / Danmarks Miljø Portal (DMP) Miljøstyrelsen (MST) / Danmarks Miljø Portal (DMP)" · item https://kort.vd.dk/server/rest/services/Grunddata/Fredede_omr%C3%A5der/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 94 records
+- closes: not probed
+
+### WA DBCA Legislated Lands and Waters (DBCA-011) via SLIP | DBCA-011 (REST layer 15; WFS Property_and_Planning_WFS)  ·  AU  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://catalogue.data.wa.gov.au/dataset/dbca-legislated-lands-and-waters
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: WA DBCA Legislated Lands and Waters (DBCA-011) via SLIP → official (government host catalogue.data.wa.gov.au)
+- terms: NOTHING STATED · source none
+- facts: file · 65124 bytes
+- closes: not probed: unknown url kind
+
+### Victoria Parks and Conservation Reserves (PARKRES) | PARKRES (WFS on opendata.maps.vic.gov.au)  ·  AU  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://discover.data.vic.gov.au/dataset/parks-and-conservation-reserves-parkres
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Victoria Parks and Conservation Reserves (PARKRES) → official (government host discover.data.vic.gov.au)
+- terms: NOTHING STATED · source none
+- facts: file · 36573 bytes
+- closes: not probed: unknown url kind
+
+### NSW NPWS Estate Boundary (SEED) | NPWS Estate (EDP/Estate MapServer; WFS/WMS/KML)  ·  AU  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://data.nsw.gov.au/data/dataset/nsw-national-parks-and-wildlife-service-npws-estate3f9e7
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: NSW NPWS Estate Boundary (SEED) → official (government host data.nsw.gov.au)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### EEA NatDA MapServer v22 (fallback; countries report official national data) | NatDA polygons (layers 1,3,4)  ·  RO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/NatDAv22_Dyna_WM/MapServer/2
+- WHY: no polygons (no geometry)
+- publisher: EEA NatDA MapServer v22 (fallback; countries report official national data) → official (government words: Environment Agency)
+- terms: CREDIT · source item page · "© European Environment Agency © European Environment Agency" · item https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/NatDAv22_Dyna_WM/MapServer/info/iteminfo
+- facts: arcgis-layer
+- closes: not probed
+
+### MITECO Banco de Datos de la Naturaleza - Espacios Naturales Protegidos (ENP) | Enp2025_shp.zip (also geojson, kmz; PS_Natda2025_gml.zip NatDA)  ·  ES  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.miteco.gob.es/eu/biodiversidad/servicios/banco-datos-naturaleza/informacion-disponible/enp_descargas.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: MITECO Banco de Datos de la Naturaleza - Espacios Naturales Protegidos (ENP) → official (government host www.miteco.gob.es)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### MITECO Red Natura 2000 downloads | PS.Natura2000_2025_gml.zip (INSPIRE GML)  ·  ES  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/informacion-disponible/rednatura2000_descargas.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: MITECO Red Natura 2000 downloads → official (government host www.miteco.gob.es)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### MITECO OAPN Red de Parques Nacionales - SIG descargas | Limites de los parques nacionales  ·  ES  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.miteco.gob.es/es/parques-nacionales-oapn/red-parques-nacionales/sig/sig-descargas.html
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: MITECO OAPN Red de Parques Nacionales - SIG descargas → official (government host www.miteco.gob.es)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### MMA Cadastro Nacional de Unidades de Conservação (CNUC) polygons, Portal de Dados Abertos do MMA | Polígono CNUC 2025_08 (shapefiles of UCs with active CNUC registration in Aug 2025)  ·  BR  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://dados.mma.gov.br/en/dataset/unidadesdeconservacao/resource/6ba9a557-87e8-4882-acb7-b3e0f0ea192d
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: MMA Cadastro Nacional de Unidades de Conservação (CNUC) polygons, Portal de Dados Abertos do MMA → official (government host dados.mma.gov.br)
+- terms: NOTHING STATED · source none
+- facts: file · 26521 bytes
+- closes: not probed: unknown url kind
+
+### ICNF Planos de Ordenamento de Áreas Protegidas (POAP) MapServer | Áreas de Intervenção Específica; Regimes de Proteção; Matriz; Atividades  ·  PT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://sigservices.icnf.pt/server/rest/services/BDG/POAP/MapServer/5
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ICNF Planos de Ordenamento de Áreas Protegidas (POAP) MapServer → not official (esri in the publisher words)
+- terms: CREDIT · source item page · "A informação geográfica dos POAP não está isenta de erros ou de inconsistências com a informação oficial que consta nos ficheiros PDF das respetivas Plantas Sín" · item https://www.arcgis.com/home/item.html?id=223014ac6f4d4e69bfbc2f74ccbb7d02 · owner admin.esri
+- facts: arcgis-layer · esriGeometryPolygon · 859 records
+- closes: not probed
+
+### ICNF Planos de Ordenamento de Áreas Protegidas (POAP) MapServer | Áreas de Intervenção Específica; Regimes de Proteção; Matriz; Atividades  ·  PT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://sigservices.icnf.pt/server/rest/services/BDG/POAP/MapServer/7
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ICNF Planos de Ordenamento de Áreas Protegidas (POAP) MapServer → not official (esri in the publisher words)
+- terms: CREDIT · source item page · "A informação geográfica dos POAP não está isenta de erros ou de inconsistências com a informação oficial que consta nos ficheiros PDF das respetivas Plantas Sín" · item https://www.arcgis.com/home/item.html?id=223014ac6f4d4e69bfbc2f74ccbb7d02 · owner admin.esri
+- facts: arcgis-layer · esriGeometryPolygon · 9756 records
+- closes: not probed
+
+### ICNF Planos de Ordenamento de Áreas Protegidas (POAP) MapServer | Áreas de Intervenção Específica; Regimes de Proteção; Matriz; Atividades  ·  PT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://sigservices.icnf.pt/server/rest/services/BDG/POAP/MapServer/8
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ICNF Planos de Ordenamento de Áreas Protegidas (POAP) MapServer → not official (esri in the publisher words)
+- terms: CREDIT · source item page · "A informação geográfica dos POAP não está isenta de erros ou de inconsistências com a informação oficial que consta nos ficheiros PDF das respetivas Plantas Sín" · item https://www.arcgis.com/home/item.html?id=223014ac6f4d4e69bfbc2f74ccbb7d02 · owner admin.esri
+- facts: arcgis-layer · esriGeometryPolygon · 135 records
+- closes: not probed
+
+### ICNF Planos de Ordenamento de Áreas Protegidas (POAP) MapServer | Áreas de Intervenção Específica; Regimes de Proteção; Matriz; Atividades  ·  PT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://sigservices.icnf.pt/server/rest/services/BDG/POAP/MapServer/9
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: ICNF Planos de Ordenamento de Áreas Protegidas (POAP) MapServer → not official (esri in the publisher words)
+- terms: CREDIT · source item page · "A informação geográfica dos POAP não está isenta de erros ou de inconsistências com a informação oficial que consta nos ficheiros PDF das respetivas Plantas Sín" · item https://www.arcgis.com/home/item.html?id=223014ac6f4d4e69bfbc2f74ccbb7d02 · owner admin.esri
+- facts: arcgis-layer · esriGeometryPolygon · 884 records
+- closes: not probed
+
+### EEA Nationally Designated Areas (NatDA/CDDA) MapServer - fallback | CDDAv21_Dyna_WM  ·  PT  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDAv21_Dyna_WM/MapServer/2
+- WHY: no polygons (no geometry)
+- publisher: EEA Nationally Designated Areas (NatDA/CDDA) MapServer - fallback → official (government words: Environment Agency)
+- terms: CREDIT · source item page · "European Environment Agency European Environment Agency" · item https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDAv21_Dyna_WM/MapServer/info/iteminfo
+- facts: arcgis-layer
+- closes: not probed
+
+### Miljodirektoratet / Geonorge - Naturvernomrader (Protected sites) | Naturvernomrader (vern MapServer)  ·  NO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://kartkatalog.geonorge.no/metadata/uuid/5857ec0a-8d2c-4cd8-baa2-0dc54ae213b4
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Miljodirektoratet / Geonorge - Naturvernomrader (Protected sites) → official (a government word of the country: Natur)
+- terms: NOTHING STATED · source none
+- facts: file · 4665 bytes · modified Fri, 30 Oct 2026 21:05:22 GMT
+- closes: not probed: unknown url kind
+
+### EEA NatDA - Nationally designated areas (fallback) | NatDA polygons (MapServer NatDAv22_Dyna_WM / LAEA)  ·  NO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://sdi.eea.europa.eu/catalogue/srv/api/records/616ef48f-7196-4e30-b201-6c97808fa68a
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: EEA NatDA - Nationally designated areas (fallback) → official (a government word of the country: National)
+- terms: NOTHING STATED · source none
+- facts: file · 96837 bytes
+- closes: not probed: unknown url kind
+
+### Flanders ANB - Gebieden van het VEN en het IVON | ps:ps_ven (WMS); GeoPackage download  ·  BE  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.vlaanderen.be/datavindplaats/catalogus/gebieden-van-het-ven-en-het-ivon
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Flanders ANB - Gebieden van het VEN en het IVON → official (a government word of the country: ANB)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### Wallonia SPW geoservices - Natura 2000 sites (SDF reporting) | Layer 0: Perimetres des sites du reseau Natura 2000 (Rapportage SDF)  ·  BE  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geoservices.wallonie.be/arcgis/rest/services/FAUNE_FLORE/NATURA2000_SDF/MapServer/0
+- WHY: official and usable, but it closes none of the area's missing parks (nothing to gain yet)
+- publisher: Wallonia SPW geoservices - Natura 2000 sites (SDF reporting) → official (a government word of the country: Natur)
+- terms: CREDIT · source item page · "Les conditions dutilisation sont décrites au niveau de la fiche descriptive de la donnée : https://geoportail.wallonie.be/catalogue/4b2f7774-7907-4d1a-aae6-7ab" · item https://geoservices.wallonie.be/arcgis/rest/services/FAUNE_FLORE/NATURA2000_SDF/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NOM · 240 records
+- closes: 0 of 60 tested missing parks (by name 0, pin only 0; 418 of the area's 418 missing parks lie in the layer's extent)
+
+### Brussels Environment - INSPIRE Natura 2000 sites | INSPIRE Natura 2000 stations (Protected Sites)  ·  BE  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://geobru-geonetwork.irisnet.be/geonetwork/srv/api/records/905d53f2-082d-41ea-a80e-9c61c7f172e7
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Brussels Environment - INSPIRE Natura 2000 sites → official (a government word of the country: Environment)
+- terms: NOTHING STATED · source none
+- facts: file · 55845 bytes · modified Thu, 11 Dec 2025 22:42:39 GMT
+- closes: not probed: unknown url kind
+
+### PDOK / RVO - Nationaal Beschermde Gebieden (CDDA) | cdda (Natura 2000, national parks, Natuur Netwerk Nederland)  ·  NL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: PDOK / RVO - Nationaal Beschermde Gebieden (CDDA) → official (a government word of the country: PDOK)
+- terms: NOTHING STATED · source none
+- facts: file · 199 bytes · modified Fri, 16 Oct 2026 08:58:53 GMT
+- closes: not probed: unknown url kind
+
+### Miljodirektoratet - Naturvernomrader (verneomrader) | Protected sites (Vern)  ·  SJ  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://data.norge.no/en/datasets/65392b86-0c24-4ee1-824e-78c2a421f342/naturvernomrader
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Miljodirektoratet - Naturvernomrader (verneomrader) → official (a government word of the country: Natur)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### EEA Nationally designated areas (CDDA/NatDA), fallback | Nationally designated areas (DAT-24-en)  ·  CY  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.eea.europa.eu/data-and-maps/data/nationally-designated-areas-cdda-1
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: EEA Nationally designated areas (CDDA/NatDA), fallback → official (a government word of the country: National)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### DFFE ConservationSites MapServer hosted by Western Cape Government | DFFE Protected Areas (SAPAD)  ·  ZA  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.westerncape.gov.za/server2/rest/services/SpatialDataWarehouse/DFFE_ConservationSites/MapServer/0
+- WHY: no name field: an outline needs a name to match a park
+- publisher: DFFE ConservationSites MapServer hosted by Western Cape Government → official (government host gis.westerncape.gov.za)
+- terms: CREDIT · source item page · "DWS, SANBI, DFFE, NGI, CSIR, CapeNature, CoCT Department of Forestry, Fisheries and the Environment (DFFE)" · item https://gis.westerncape.gov.za/server2/rest/services/SpatialDataWarehouse/DFFE_ConservationSites/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · 384 records
+- closes: not probed
+
+### FOEN/BAFU Swiss National Park and parks of national importance (Zones) via geo.admin.ch STAC | ch.bafu.schutzgebiete-paerke_nationaler_bedeutung  ·  CH  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bafu.schutzgebiete-paerke_nationaler_bedeutung
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: FOEN/BAFU Swiss National Park and parks of national importance (Zones) via geo.admin.ch STAC → official (government host data.geo.admin.ch)
+- terms: NOTHING STATED · source none
+- facts: file · 2321 bytes
+- closes: not probed: unknown url kind
+
+### Falkland Islands Government via SAERI Data Portal: Natural Nature Reserves | Falkland Islands Natural Nature Reserves  ·  FK  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://dataportal.saeri.org/dataset/falkland-islands-natural-nature-reserves
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Falkland Islands Government via SAERI Data Portal: Natural Nature Reserves → official (government words: Government)
+- terms: NOTHING STATED · source none
+- facts: file · 24478 bytes
+- closes: not probed: unknown url kind
+
+### TCI Government Data Portal (DECR): Protected Areas in the Turks and Caicos, 2020 | Accepted / Proposed protected areas  ·  TC  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://dataportal.gov.tc/dataset/protected-areas-tci
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: TCI Government Data Portal (DECR): Protected Areas in the Turks and Caicos, 2020 → official (government words: Government)
+- terms: NOTHING STATED · source none
+- facts: file · 29418 bytes
+- closes: not probed: unknown url kind
+
+### Geoportail.lu INSPIRE Protected Sites - CDDA nationally designated areas | ps.protectedsites-cdda  ·  LU  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://data.public.lu/en/datasets/inspire-annex-i-theme-protected-sites-cdda-nationally-designated-areas
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: Geoportail.lu INSPIRE Protected Sites - CDDA nationally designated areas → official (a government word of the country: national)
+- terms: NOTHING STATED · source none
+- facts: file · 241128 bytes
+- closes: not probed: unknown url kind
+
+### NParks Parks and Nature Reserves (data.gov.sg) | NParks Parks and Nature Reserves  ·  SG  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://data.gov.sg/dataset/nparks-parks-and-nature-reserves
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: NParks Parks and Nature Reserves (data.gov.sg) → official (government host data.gov.sg)
+- terms: NOTHING STATED · source none
+- facts: file
+- closes: not probed: unknown url kind
+
+### Ministerio de Bienes Nacionales (data owner), served by Superintendencia del Medio Ambiente IDE — SNASPE state units (reference copy of boundaries) | Sistema Nacional de Areas Silvestres Protegidas de  ·  CL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Areas_proteccion_oficial2/MapServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: Ministerio de Bienes Nacionales (data owner), served by Superintendencia del Medio Ambiente IDE — SNASPE state units (re → official (government words: Ministerio)
+- terms: CREDIT · source item page · "Superintendencia del Medio Ambiente (2019) Superintendencia del Medio Ambiente (2024) con base en capa del Consejo de Monumentos Nacionales (2023)" · item https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Areas_proteccion_oficial2/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field Name · 1097 records
+- closes: not probed
+
+### Ministerio de Bienes Nacionales (data owner), served by Superintendencia del Medio Ambiente IDE — SNASPE state units (reference copy of boundaries) | Sistema Nacional de Areas Silvestres Protegidas de  ·  CL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Areas_proteccion_oficial2/MapServer/1
+- WHY: no polygons (esriGeometryPoint)
+- publisher: Ministerio de Bienes Nacionales (data owner), served by Superintendencia del Medio Ambiente IDE — SNASPE state units (re → official (government words: Ministerio)
+- terms: CREDIT · source item page · "Superintendencia del Medio Ambiente (2019) Superintendencia del Medio Ambiente (2024) con base en capa del Consejo de Monumentos Nacionales (2023)" · item https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Areas_proteccion_oficial2/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field Name · 93 records
+- closes: not probed
+
+### Ministerio de Bienes Nacionales (data owner), served by Superintendencia del Medio Ambiente IDE — SNASPE state units (reference copy of boundaries) | Sistema Nacional de Areas Silvestres Protegidas de  ·  CL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Areas_proteccion_oficial2/MapServer/2
+- WHY: no polygons (esriGeometryPoint)
+- publisher: Ministerio de Bienes Nacionales (data owner), served by Superintendencia del Medio Ambiente IDE — SNASPE state units (re → official (government words: Ministerio)
+- terms: CREDIT · source item page · "Superintendencia del Medio Ambiente (2019) Superintendencia del Medio Ambiente (2024) con base en capa del Consejo de Monumentos Nacionales (2023)" · item https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Areas_proteccion_oficial2/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field Name · 149 records
+- closes: not probed
+
+### Ministerio del Medio Ambiente (recognises private protected areas) — Private protected areas and conservation reserves (e.g. Altos de Chicauma, El Panul, Alerzales) | Private-property protected areas   ·  CL  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Otras_bajo_proteccion/MapServer/0
+- WHY: no polygons (esriGeometryPoint)
+- publisher: Ministerio del Medio Ambiente (recognises private protected areas) — Private protected areas and conservation reserves ( → official (government words: Ministerio)
+- terms: CREDIT · source item page · "Superintendencia del Medio Ambiente (2024) Dirección General de Aguas (2010)" · item https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Otras_bajo_proteccion/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPoint · name field NOMBRE · 419 records
+- closes: not probed
+
+### INVEMAR (research institute under Minambiente) — Marine/coastal protected areas | Layer 0 Areas protegidas (RUNAP 2020)  ·  CO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.invemar.org.co/ArcGIS/rest/services/MapaBase/Areas_protegidas/MapServer/0
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: INVEMAR (research institute under Minambiente) — Marine/coastal protected areas → not official (institute in the publisher words)
+- terms: CREDIT · source queue row (not the publisher's page) · "Not stated" · item https://gis.invemar.org.co/ArcGIS/rest/services/MapaBase/Areas_protegidas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field nombre · 62 records · sample Malpelo / Zona de Biodiversidad La Vega / Corales de Profundidad
+- closes: not probed
+
+### INVEMAR (research institute under Minambiente) — Marine/coastal protected areas | Layer 0 Areas protegidas (RUNAP 2020)  ·  CO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.invemar.org.co/ArcGIS/rest/services/MapaBase/Areas_protegidas/MapServer/1
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: INVEMAR (research institute under Minambiente) — Marine/coastal protected areas → not official (institute in the publisher words)
+- terms: CREDIT · source queue row (not the publisher's page) · "Not stated" · item https://gis.invemar.org.co/ArcGIS/rest/services/MapaBase/Areas_protegidas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NOMBRE · 4 records · sample Sistema Delta Estuarino del Río Magdalena, Ciénaga Grande de / Laguna de La Cocha / Complejo de Humedales Lagos de Tarapoto
+- closes: not probed
+
+### INVEMAR (research institute under Minambiente) — Marine/coastal protected areas | Layer 0 Areas protegidas (RUNAP 2020)  ·  CO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.invemar.org.co/ArcGIS/rest/services/MapaBase/Areas_protegidas/MapServer/2
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: INVEMAR (research institute under Minambiente) — Marine/coastal protected areas → not official (institute in the publisher words)
+- terms: CREDIT · source queue row (not the publisher's page) · "Not stated" · item https://gis.invemar.org.co/ArcGIS/rest/services/MapaBase/Areas_protegidas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NOMBRE · 3 records · sample SIERRA NEVADA DE SANTA MARTA / CIENAGA GRANDE DE SANTA MARTA / SEAFLOWER
+- closes: not probed
+
+### INVEMAR (research institute under Minambiente) — Marine/coastal protected areas | Layer 0 Areas protegidas (RUNAP 2020)  ·  CO  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://gis.invemar.org.co/ArcGIS/rest/services/MapaBase/Areas_protegidas/MapServer/3
+- WHY: not an official publisher: we take outlines only from the managing agency
+- publisher: INVEMAR (research institute under Minambiente) — Marine/coastal protected areas → not official (institute in the publisher words)
+- terms: CREDIT · source queue row (not the publisher's page) · "Not stated" · item https://gis.invemar.org.co/ArcGIS/rest/services/MapaBase/Areas_protegidas/MapServer/info/iteminfo
+- facts: arcgis-layer · esriGeometryPolygon · name field NOMBRE · 1 records · sample ZEPA
+- closes: not probed
+
+### DEAL Guadeloupe — Deal Guadeloupe (State environment service) | cdl_domaine_protege (shapefile)  ·  GP  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.data.gouv.fr/datasets/cdl-domaine-protege
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: DEAL Guadeloupe — Deal Guadeloupe (State environment service) → official (government host www.data.gouv.fr)
+- terms: NOTHING STATED · source none
+- facts: file · 106688 bytes
+- closes: not probed: unknown url kind
+
+### DEAL Guadeloupe — Deal Guadeloupe (State environment service) | L_FORET_DEP_S_971 (shapefile)  ·  GP  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://www.data.gouv.fr/datasets/l-foret-dep-s-971
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: DEAL Guadeloupe — Deal Guadeloupe (State environment service) → official (government host www.data.gouv.fr)
+- terms: NOTHING STATED · source none
+- facts: file · 106238 bytes
+- closes: not probed: unknown url kind
+
+### DEAL Guadeloupe — Deal Guadeloupe (State environment service) | L_PERIMETRE_FORET_S (shapefile)  ·  GP  ·  from outside search Nov 11 (Brandon, Nov 12)
+- url: https://data.gouv.fr/es/datasets/l-perimetre-foret-s
+- WHY: unknown url kind: not a layer, service, WFS or file
+- publisher: DEAL Guadeloupe — Deal Guadeloupe (State environment service) → official (government host data.gouv.fr)
+- terms: NOTHING STATED · source none
+- facts: file · 108098 bytes
+- closes: not probed: unknown url kind
 
 ## Known-answer test rows
 
