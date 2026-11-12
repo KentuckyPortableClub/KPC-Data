@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-12T10:36Z",
+ "checked": "2026-11-12T10:37Z",
  "switched_on": false,
  "results": [
   {
@@ -1144,34 +1144,38 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/CA-AB.json.gz",
+   "path": "data/fers/CA-AB.json",
    "kind": "fers",
    "why": [
-    "F-2 only 27 of 37 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 4 new candidate pairs since the live file (over 10% of 37): a person looks at them first, e.g. CA-0110+US-4558, CA-2956+CA-2958, CA-3008+CA-6112"
+    "F-4 data/fers/CA-AB.json replaces live data/fers/CA-AB.json.gz (other format) with 536 rows for 836 (over 10% fewer)"
    ],
    "notes": [],
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/CA-BC.json",
+   "path": "data/fers/CA-BC.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 29 -> 48 (over 30% change)",
-    "F-2 pass2 missing: the 2-fer passes did not all run",
-    "F-2 pass3 missing: the 2-fer passes did not all run",
-    "F-2 only 16 of 29 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
+    "F-2 candidates 29 -> 16 (over 30% change)",
+    "F-2 only 0 of 29 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
+    "F-2 16 new candidate pairs since the live file (over 10% of 29): a person looks at them first, e.g. CA-0018+CA-3362, CA-0045+CA-3829, CA-0066+CA-5344"
    ],
-   "notes": [],
+   "notes": [
+    "replaces live data/fers/CA-BC.json (same file, other format): promotion removes the old name"
+   ],
    "verdict": "HOLD"
   },
   {
    "path": "data/fers/CA-MB.json",
    "kind": "fers",
    "why": [
-    "F-4 data/fers/CA-MB.json replaces live data/fers/CA-MB.json.gz (other format) with 70 rows for 79 (over 10% fewer)"
+    "F-2 pass2 missing: the 2-fer passes did not all run",
+    "F-2 pass3 missing: the 2-fer passes did not all run",
+    "F-2 only 0 of 4 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
    ],
-   "notes": [],
+   "notes": [
+    "replaces live data/fers/CA-MB.json.gz (same file, other format): promotion removes the old name"
+   ],
    "verdict": "HOLD"
   },
   {
@@ -1205,22 +1209,18 @@
   {
    "path": "data/fers/CA-NT.json",
    "kind": "fers",
-   "why": [
-    "F-2 pass2 missing: the 2-fer passes did not all run",
-    "F-2 pass3 missing: the 2-fer passes did not all run"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
-   "path": "data/fers/CA-NU.json",
+   "path": "data/fers/CA-NU.json.gz",
    "kind": "fers",
-   "why": [
-    "F-2 pass2 missing: the 2-fer passes did not all run",
-    "F-2 pass3 missing: the 2-fer passes did not all run"
+   "why": [],
+   "notes": [
+    "replaces live data/fers/CA-NU.json (same file, other format): promotion removes the old name"
    ],
-   "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/fers/CA-ON.json.gz",
@@ -1254,9 +1254,10 @@
    "path": "data/fers/CA-SK.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 10 -> 24 (over 30% change)",
-    "F-2 only 0 of 10 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 24 new candidate pairs since the live file (over 10% of 10): a person looks at them first, e.g. CA-0051+CA-1118, CA-0075+CA-6128, CA-0075+CA-6130"
+    "F-2 candidates 10 -> 6 (over 30% change)",
+    "F-2 pass2 missing: the 2-fer passes did not all run",
+    "F-2 pass3 missing: the 2-fer passes did not all run",
+    "F-2 only 5 of 10 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1272,8 +1273,7 @@
    "path": "data/fers/CA-YT.json",
    "kind": "fers",
    "why": [
-    "F-2 pass2 missing: the 2-fer passes did not all run",
-    "F-2 pass3 missing: the 2-fer passes did not all run"
+    "F-2 small area: all 2 live candidate pair(s) gone"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -4154,6 +4154,28 @@
    "why": [],
    "notes": [],
    "verdict": "PASS"
+  },
+  {
+   "path": "data/fers/CA-BC.json",
+   "kind": "fers",
+   "why": [
+    "F-2 candidates 29 -> 48 (over 30% change)",
+    "F-2 pass2 missing: the 2-fer passes did not all run",
+    "F-2 pass3 missing: the 2-fer passes did not all run",
+    "F-2 only 16 of 29 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/CA-NU.json",
+   "kind": "fers",
+   "why": [
+    "F-2 pass2 missing: the 2-fer passes did not all run",
+    "F-2 pass3 missing: the 2-fer passes did not all run"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
   },
   {
    "path": "data/fers/US-CO.json",
