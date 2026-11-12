@@ -1,0 +1,121 @@
+{
+ "tag": "midatlantic",
+ "states": [
+  "US-PA",
+  "US-MD",
+  "US-DE",
+  "US-DC",
+  "US-VA",
+  "US-WV"
+ ],
+ "key_source": "build",
+ "checked": "2026-11-12 18:37 UTC",
+ "areas": {
+  "US-PA": {
+   "hold": [],
+   "warn": [
+    "1 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-0733"
+   ],
+   "key_file": "data/us-key/US-PA.json",
+   "build": "US-43056604383",
+   "built": "2026-11-11 16:50 UTC",
+   "rules": "46ef34a04ab0",
+   "parks": 494,
+   "outlines": 489,
+   "held_key": "HELD KEY: build US-43056604383 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "us-US-43056604383.json",
+   "bad_pins": 1,
+   "overrides_no_still": 0
+  },
+  "US-MD": {
+   "hold": [],
+   "warn": [
+    "3 review-pile HOLD row(s) still outlines: US-0015 US-7749 US-7760 (their 2-fers are 'not sure')",
+    "1 rule 18 row(s): US-1583 (a person decides)",
+    "2 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-7749 US-7760"
+   ],
+   "key_file": "data/us-key/US-MD.json",
+   "build": "US-43056604383",
+   "built": "2026-11-11 16:50 UTC",
+   "rules": "46ef34a04ab0",
+   "parks": 186,
+   "outlines": 178,
+   "held_key": "HELD KEY: build US-43056604383 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "us-US-43056604383.json",
+   "bad_pins": 2,
+   "overrides_no_still": 0
+  },
+  "US-DE": {
+   "hold": [],
+   "warn": [
+    "1 outline(s) with no area: US-9883"
+   ],
+   "key_file": "data/us-key/US-DE.json",
+   "build": "US-43056604383",
+   "built": "2026-11-11 16:50 UTC",
+   "rules": "46ef34a04ab0",
+   "parks": 89,
+   "outlines": 85,
+   "held_key": "HELD KEY: build US-43056604383 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "us-US-43056604383.json",
+   "bad_pins": 0,
+   "overrides_no_still": 0
+  },
+  "US-DC": {
+   "hold": [],
+   "warn": [
+    "2 rule 18 row(s): US-0654 US-0796 (a person decides)"
+   ],
+   "key_file": "data/us-key/US-DC.json",
+   "build": "US-43056604383",
+   "built": "2026-11-11 16:50 UTC",
+   "rules": "46ef34a04ab0",
+   "parks": 35,
+   "outlines": 29,
+   "held_key": "HELD KEY: build US-43056604383 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "us-US-43056604383.json",
+   "bad_pins": 0,
+   "overrides_no_still": 0
+  },
+  "US-VA": {
+   "hold": [],
+   "warn": [
+    "1 review-pile HOLD row(s) still outlines: US-0573 (their 2-fers are 'not sure')",
+    "2 rule 18 row(s): US-9940 US-9941 (a person decides)",
+    "1 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-0573"
+   ],
+   "key_file": "data/us-key/US-VA.json",
+   "build": "US-43056604383",
+   "built": "2026-11-11 16:50 UTC",
+   "rules": "46ef34a04ab0",
+   "parks": 184,
+   "outlines": 177,
+   "held_key": "HELD KEY: build US-43056604383 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "us-US-43056604383.json",
+   "bad_pins": 1,
+   "overrides_no_still": 0
+  },
+  "US-WV": {
+   "hold": [],
+   "warn": [
+    "2 review-pile HOLD row(s) still outlines: US-7027 US-7043 (their 2-fers are 'not sure')",
+    "3 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-0015 US-7027 US-7043"
+   ],
+   "key_file": "data/us-key/US-WV.json",
+   "build": "US-43056604383",
+   "built": "2026-11-11 16:50 UTC",
+   "rules": "46ef34a04ab0",
+   "parks": 172,
+   "outlines": 165,
+   "held_key": "HELD KEY: build US-43056604383 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "us-US-43056604383.json",
+   "bad_pins": 3,
+   "overrides_no_still": 0
+  }
+ },
+ "about": "2-fer pre-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4). HOLD = the line does not build. Read-only; nothing is moved or released.",
+ "fers_rules": "cef323de4c9a",
+ "verdict": "GO",
+ "holds": [],
+ "held_key": true
+}
