@@ -53,13 +53,20 @@ def words(s): return {w for w in re.findall(r'[a-zà-ÿ0-9]+', str(s or '').lowe
 
 
 # ------------------------------------------------------------------------------------------------ inputs
+def _not_searched(pool):
+    """KPC owner, 2026-11-12: a park in data/intake/searched-parks.json searched within 90 days (no new source since) is left out."""
+    import kpc_searched
+    S = kpc_searched.Searched()
+    return {a: [x for x in v if not S.skip(x[0], a)] for a, v in pool.items()}
+
+
 def us_pool():
     W = (load(LINKS / 'data' / 'us-key' / 'why-not.json', {}) or {}).get('parks') or {}
     out = {}
     for ref, v in W.items():
         if v.get('tag') in ('private', 'picture-map-only'): continue
         out.setdefault('US-' + v['st'], []).append((ref, v.get('tag')))
-    return out
+    return _not_searched(out)
 
 
 def ca_pool():
@@ -71,7 +78,7 @@ def ca_pool():
     out = {}
     for r, k in refs.items():
         if prov.get(r): out.setdefault(prov[r], []).append((r, k.lower()))
-    return out
+    return _not_searched(out)
 
 
 def pins(area):
@@ -82,7 +89,12 @@ def pins(area):
             for x in (load(LINKS / 'kpc-ky-data.json', {}) or {}).get('parks', []):
                 if x.get('c') and x.get('la') is not None: out.setdefault(x['c'], (x['la'], x['lo'], x.get('n', '')))
         return out
-    return {r[1]: (r[3], r[4], r[2]) for r in (load('data/canada.json', {}) or {}).get('rows') or [] if r[0] == 'POTA' and (r[3], r[4]) != (0, 0)}
+    out = {r[1]: (r[3], r[4], r[2]) for r in (load('data/canada.json', {}) or {}).get('rows') or [] if r[0] == 'POTA' and (r[3], r[4]) != (0, 0)}
+    import kpc_official_pins   # KPC owner, 2026-11-12: an official agency point fills a 0,0 / missing CA pin (never moves one)
+    names = {r[1]: r[2] for r in (load('data/canada.json', {}) or {}).get('rows') or [] if r[0] == 'POTA'}
+    for r, (la, lo, _u) in kpc_official_pins.fills().items():
+        if r.startswith('CA-') and r not in out and r in names: out[r] = (la, lo, names[r])
+    return out
 
 
 def approved_layers(area):

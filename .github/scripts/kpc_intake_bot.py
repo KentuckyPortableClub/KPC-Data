@@ -287,6 +287,22 @@ def lead_key(u):
 FEED_MAX = int(os.environ.get('FEED_MAX') or 40)   # new harvester rows probed per night (a 162-row GB batch must not run 3 h)
 
 
+def split_queue_rows(main_rows, folder=None):
+    """KPC owner, 2026-11-12: queue.json is at the 1 MB file cap, so new leads also go in split files data/intake/queue-*.json.
+    Every queue*.json beside queue.json is read too, except a *hold* file (hand-download / saved-copy-only / held rows are never
+    probed). A url already in the main queue (or an earlier split file) is skipped. The bot never writes these files."""
+    folder = pathlib.Path(folder or QUEUE_FILE.parent)
+    have = {strip_query(r.get('url')) for r in main_rows if isinstance(r, dict) and r.get('url')}
+    out = []
+    for f in sorted(folder.glob('queue*.json')):
+        if f.name == QUEUE_FILE.name or 'hold' in f.name.lower(): continue   # *hold* / *HOLD*: never probed
+        for r in (load(f, {}) or {}).get('rows') or []:
+            u = strip_query((r or {}).get('url')) if isinstance(r, dict) else ''
+            if not u or u in have: continue
+            have.add(u); out.append(r)
+    return out
+
+
 def feed_from_harvester(queue_doc):
     """Fable's note (Oct 29): every A-band lead of the world harvester that is not in the queue yet becomes a queue row
     (from: harvester); B-band only when chat 8 asks. Returns the number added."""
@@ -750,7 +766,7 @@ def main():
     fed = feed_from_harvester(qdoc) if os.environ.get('FEED', '1') != '0' and not TEST else 0
     fed += feed_from_discovery(qdoc) if os.environ.get('FEED', '1') != '0' and not TEST else 0
     if fed: save(QUEUE_FILE, qdoc)
-    queue = qdoc.get('rows') or []
+    queue = (qdoc.get('rows') or []) + split_queue_rows(qdoc.get('rows') or [])
     want = [strip_query(u) for u in (os.environ.get('ROWS') or '').split() if u.strip()]
     old = {r['url']: r for r in ready.get('rows') or [] if isinstance(r, dict) and r.get('url')}
     known, hosts = known_layers(); trusted, govwords = trusted_orgs(); miss_cache = {}

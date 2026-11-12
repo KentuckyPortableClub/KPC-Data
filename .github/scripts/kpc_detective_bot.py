@@ -78,6 +78,8 @@ NOT_OFFICIAL = re.compile(r'county|city of|town of|village|township|borough|pari
 OFFICIAL_ORG = re.compile(r'department|dept|division|\bdnr\b|\bdcr\b|\bdep\b|\bdec\b|\bdeq\b|state parks?|parks (?:and|&) (?:recreation|wildlife|tourism)|natural resources|fish (?:and|&) (?:game|wildlife)|game (?:and|&) fish|wildlife|forestry|commission|agency|ministry|ministère|government|gouvernement|commonwealth|state of|province|parcs|gis office|geographic information|geospatial|open data|national park service|forest service|bureau of land|fish and wildlife service|usgs|army corps', re.I)
 FED_ORG = re.compile(r'national park service|\bnps\b|forest service|\busfs\b|bureau of land management|\bblm\b|fish (?:and|&) wildlife service|\bfws\b|army corps|\busace\b|bureau of reclamation|tennessee valley authority|\btva\b|parks canada|environment and climate change canada', re.I)
 PAD_NEVER = re.compile(r'proclamation|easement', re.I)
+import kpc_searched  # noqa: E402
+SEARCHED = kpc_searched.Searched()   # KPC owner, 2026-11-12: data/intake/searched-parks.json (skip a park searched in the last 90 days)
 STAT = {'parks': 0, 'checked': 0, 'skipped_fresh': 0, 'finds': 0, 'sure': 0, 'mismatch': 0, 'different_land': 0, 'padus_only': 0, 'nothing': 0, 'requests': 0, 'errors': 0}
 M = None
 ITEM_CACHE = {}
@@ -231,6 +233,9 @@ def pins():
                     P[r] = _nopin((v[0], v[2] if len(v) > 2 else '', v[5], v[6], v[1] if len(v) > 1 else '', 0))
                 elif isinstance(v, dict):
                     P[r] = _nopin((v.get('n') or v.get('name') or '', v.get('t') or v.get('type') or '', v.get('la') or v.get('lat'), v.get('lo') or v.get('lon'), v.get('url') or v.get('page') or '', v.get('a') or 0))
+    import kpc_official_pins   # KPC owner, 2026-11-12: an official agency point fills a park with NO usable pin (never moves one)
+    for r, (la, lo, _u) in kpc_official_pins.fills().items():
+        if r in P and P[r][2] is None: P[r] = (P[r][0], P[r][1], la, lo, P[r][4], P[r][5])
     if not P:   # last resort: the POTA pin list
         for row in (load('data/northam.json', {}) or load(LINKS / 'data/northam.json', {})).get('rows') or []:
             if len(row) >= 5 and row[0] == 'POTA': P[row[1]] = (row[2], '', row[3], row[4], '', 0)
@@ -532,6 +537,8 @@ def run_area(area, state, P):
     for park in miss:
         if late(): break
         if PARK_CAP and done >= PARK_CAP: break
+        if SEARCHED.skip(park['ref'], area):   # KPC owner, 2026-11-12: searched within 90 days and no new source since
+            fresh += 1; continue
         old = D['parks'].get(park['ref']) or {}
         if old.get('read') and (time.time() - time.mktime(time.strptime(old['read'], '%Y-%m-%d'))) < REFRESH_DAYS * 86400 and old.get('ver') == VER:
             fresh += 1; continue
