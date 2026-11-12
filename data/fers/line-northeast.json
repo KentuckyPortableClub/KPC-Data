@@ -15,22 +15,22 @@
   "US-DE",
   "US-DC"
  ],
- "since": "2026-11-11",
- "date": "2026-11-11 19:15 UTC",
+ "since": "2026-11-12",
+ "date": "2026-11-12 07:54 UTC",
  "verdict": "STOPPED",
  "why": [
-  "missing check: 5934 of 12267 expected pairs were never looked at (48%; 2072 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (5927); not tested: the official outline of <park> could not be read in pass 1 (one of its map rec (4); <park>: not in this run (another state, retired, or no POTA pin) (3)"
+  "missing check: 5934 of 12270 expected pairs were never looked at (48%; 2072 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (5927); not tested: the official outline of <park> could not be read in pass 1 (one of its map rec (4); <park>: not in this run (another state, retired, or no POTA pin) (3)"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 878,
-  "DROPPED": 3383,
+  "FOUND": 876,
+  "DROPPED": 3388,
   "NEVER LOOKED AT": 8006
  },
  "never_looked_at": {
   "counted": 5934,
   "no_official_outline": 2072,
-  "expected": 12267,
+  "expected": 12270,
   "limit": "10%",
   "by_reason": {
    "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 5927,
@@ -40,23 +40,23 @@
  },
  "report": {
   "pass1": {
-   "date": "2026-11-11",
-   "pairs tested": 15222,
-   "pairs whose boxes touch": 15222
+   "date": "2026-11-12",
+   "pairs tested": 15238,
+   "pairs whose boxes touch": 15238
   },
   "pass2": {
    "agree with the pass before": 3559,
-   "date": "2026-11-11",
+   "date": "2026-11-12",
    "pairs tested": 1249
   },
   "pass3": {
-   "agree with the pass before": 2661,
-   "date": "2026-11-11",
+   "agree with the pass before": 2645,
+   "date": "2026-11-12",
    "pairs tested": 1202
   },
   "pass5": {
    "checked": 467,
-   "date": "2026-11-11",
+   "date": "2026-11-12",
    "pairs tested": 0,
    "still not checked": 0
   }
@@ -85,8 +85,8 @@
    "this spot is 118 km from PA 231 State Game Land's POTA pin": 1,
    "this spot is 128 km from PA 326 State Game Land's POTA pin": 1
   },
-  "dropped": 629,
-  "merged": 417
+  "dropped": 634,
+  "merged": 412
  },
  "US-NY": {
   "rows": 716,
@@ -97,8 +97,8 @@
    "the official outline of Adirondack State Park could not be r": 51,
    "both parks join the same official records and both POTA pins": 1
   },
-  "dropped": 184,
-  "merged": 304
+  "dropped": 185,
+  "merged": 303
  },
  "US-NJ": {
   "rows": 194,
@@ -106,8 +106,8 @@
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {},
-  "dropped": 70,
-  "merged": 72
+  "dropped": 71,
+  "merged": 71
  },
  "US-CT": {
   "rows": 100,
@@ -117,16 +117,16 @@
   "not_sure": {
    "one record covers two parks": 1
   },
-  "dropped": 12,
-  "merged": 33
+  "dropped": 11,
+  "merged": 34
  },
  "US-RI": {
   "rows": 59,
-  "live": 19,
+  "live": 18,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {},
-  "dropped": 23,
+  "dropped": 24,
   "merged": 17
  },
  "US-MA": {
@@ -138,8 +138,8 @@
    "one record covers two parks": 1,
    "low-confidence outline for Nashua River Rail Trail State Tra": 2
   },
-  "dropped": 147,
-  "merged": 233
+  "dropped": 149,
+  "merged": 231
  },
  "US-VT": {
   "rows": 102,
@@ -183,16 +183,17 @@
    "the official outline of Baltimore-Washington National Parkwa": 3,
    "one record covers two parks": 2
   },
-  "dropped": 292,
-  "merged": 520
+  "dropped": 296,
+  "merged": 516
  },
  "US-DE": {
   "rows": 132,
-  "live": 33,
+  "live": 32,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "one record covers two parks": 1
+   "one record covers two parks": 1,
+   "our saved copy of the official line for US-9879 is only 1 m": 1
   },
   "dropped": 58,
   "merged": 40
@@ -205,8 +206,8 @@
   "not_sure": {
    "one record covers two parks": 1
   },
-  "dropped": 28,
-  "merged": 26
+  "dropped": 30,
+  "merged": 24
  },
  "states_ready": [],
  "states_held": [

@@ -1,6 +1,6 @@
 {
  "about": "Counts from the 2-fer bot (kpc_fers.py). Hidden: data only.",
- "fers_rules": "0361802fe00e",
+ "fers_rules": "aa7561256260",
  "pass1": {
   "bad POTA pin: tested by saved record ids": [
    "CA-1930",
@@ -176,7 +176,7 @@
    "CA-2538"
   ],
   "cell_m": 20.0,
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 186,
@@ -184,16 +184,16 @@
    "bad POTA pin (0,0 / impossible, listed)": 0,
    "bad POTA pin, tested by its saved record ids (pin not used)": 171,
    "every joined piece is in the overrides no list (key not rebuilt yet)": 0,
-   "no outline": 2767,
+   "no outline": 2793,
    "no pin": 0,
    "pin well outside": 0,
    "point circle (100 ft, not a boundary)": 143
   },
-  "missing boundary": 98,
-  "official parks": 3691,
-  "pairs reused (nothing changed)": 15182,
-  "pairs tested": 15222,
-  "pairs whose boxes touch": 15222,
+  "missing boundary": 102,
+  "official parks": 3677,
+  "pairs reused (nothing changed)": 3704,
+  "pairs tested": 15238,
+  "pairs whose boxes touch": 15238,
   "parks done by the box test": 51,
   "parks from saved outlines (2-fer bot's own copy)": 0,
   "parks from saved outlines (answer key copy)": 2840,
@@ -204,7 +204,7 @@
    "US-11181 live line: saved-copy-only map, saved copy kept",
    "W&S river corridors joined as area parks: 14 (saved copy: 32 corridors)",
    "284 trail parks tested by their official line (R5), not their polygon: CA-1301, CA-1599, CA-3546, CA-4786, CA-5344, CA-5536, CA-5565, CA-5595, CA-5628, CA-5688",
-   "946 parks filed under another state but crossing / at the edge of this area kept: US-0670, US-0015, US-0671, US-0735, US-1935, US-1986, US-5435, US-9431",
+   "932 parks filed under another state but crossing / at the edge of this area kept: US-0670, US-0015, US-0671, US-0735, US-1935, US-1986, US-5435, US-9431",
    "US-4567: water route with no water/land split: bank test only, centre-line test skipped (not sure)",
    "US-4581: water route with no water/land split: bank test only, centre-line test skipped (not sure)",
    "13 spots outside this area left for their own area",
@@ -392,7 +392,7 @@
    "CA-2538"
   ],
   "cell_m": 10.0,
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 186,
@@ -400,14 +400,14 @@
    "bad POTA pin (0,0 / impossible, listed)": 0,
    "bad POTA pin, tested by its saved record ids (pin not used)": 171,
    "every joined piece is in the overrides no list (key not rebuilt yet)": 0,
-   "no outline": 2767,
+   "no outline": 2793,
    "no pin": 0,
    "pin well outside": 0,
    "point circle (100 ft, not a boundary)": 143
   },
   "new here only (not counted)": 833,
-  "official parks": 3691,
-  "pairs reused (nothing changed)": 1249,
+  "official parks": 3677,
+  "pairs reused (nothing changed)": 755,
   "pairs tested": 1249,
   "parks whose outline could not be read": 3,
   "parks with a saved copy only (no fresh download possible)": 0,
@@ -416,14 +416,14 @@
    "US-11181 live line: saved-copy-only map, saved copy kept",
    "W&S river corridors joined as area parks: 14 (saved copy: 32 corridors)",
    "284 trail parks tested by their official line (R5), not their polygon: CA-1301, CA-1599, CA-3546, CA-4786, CA-5344, CA-5536, CA-5565, CA-5595, CA-5628, CA-5688",
-   "946 parks filed under another state but crossing / at the edge of this area kept: US-0670, US-0015, US-0671, US-0735, US-1935, US-1986, US-5435, US-9431",
+   "932 parks filed under another state but crossing / at the edge of this area kept: US-0670, US-0015, US-0671, US-0735, US-1935, US-1986, US-5435, US-9431",
    "US-4567: water route with no water/land split: bank test only, centre-line test skipped (not sure)",
    "US-4581: water route with no water/land split: bank test only, centre-line test skipped (not sure)"
   ],
   "with official lines": 52
  },
  "pass3": {
-  "agree with the pass before": 2661,
+  "agree with the pass before": 2645,
   "bad POTA pin: tested by saved record ids": [
    "CA-1930",
    "CA-1932",
@@ -599,7 +599,7 @@
   ],
   "candidates held: no ownership source": 0,
   "cell_m": 5.0,
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 186,
@@ -607,14 +607,14 @@
    "bad POTA pin (0,0 / impossible, listed)": 0,
    "bad POTA pin, tested by its saved record ids (pin not used)": 171,
    "every joined piece is in the overrides no list (key not rebuilt yet)": 0,
-   "no outline": 2767,
+   "no outline": 2793,
    "no pin": 0,
    "pin well outside": 0,
    "point circle (100 ft, not a boundary)": 143
   },
-  "new here only (not counted)": 622,
-  "official parks": 3691,
-  "pairs reused (nothing changed)": 1202,
+  "new here only (not counted)": 617,
+  "official parks": 3677,
+  "pairs reused (nothing changed)": 725,
   "pairs tested": 1202,
   "parks whose outline could not be read": 0,
   "parks with a saved copy only (no fresh download possible)": 0,
@@ -623,7 +623,7 @@
    "US-11181 live line: saved-copy-only map, saved copy kept",
    "W&S river corridors joined as area parks: 14 (saved copy: 32 corridors)",
    "284 trail parks tested by their official line (R5), not their polygon: CA-1301, CA-1599, CA-3546, CA-4786, CA-5344, CA-5536, CA-5565, CA-5595, CA-5628, CA-5688",
-   "946 parks filed under another state but crossing / at the edge of this area kept: US-0670, US-0015, US-0671, US-0735, US-1935, US-1986, US-5435, US-9431",
+   "932 parks filed under another state but crossing / at the edge of this area kept: US-0670, US-0015, US-0671, US-0735, US-1935, US-1986, US-5435, US-9431",
    "US-4567: water route with no water/land split: bank test only, centre-line test skipped (not sure)",
    "US-4581: water route with no water/land split: bank test only, centre-line test skipped (not sure)"
   ],
@@ -806,7 +806,7 @@
   "candidates held: no ownership source": 0,
   "cell_m": 5.0,
   "checked": 467,
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 186,
@@ -814,26 +814,26 @@
    "bad POTA pin (0,0 / impossible, listed)": 0,
    "bad POTA pin, tested by its saved record ids (pin not used)": 171,
    "every joined piece is in the overrides no list (key not rebuilt yet)": 0,
-   "no outline": 2767,
+   "no outline": 2793,
    "no pin": 0,
    "pin well outside": 0,
    "point circle (100 ft, not a boundary)": 143
   },
   "live rows held: spot far from a state park pin (rule B13)": 3,
-  "memory (MB now / cap; caches dropped for memory)": "3616 / 5000; 4",
-  "official parks": 3691,
+  "memory (MB now / cap; caches dropped for memory)": "3428 / 5000; 4",
+  "official parks": 3677,
   "pairs tested": 0,
   "pass": 5,
   "problems": [
    "US-11181 live line: saved-copy-only map, saved copy kept",
    "W&S river corridors joined as area parks: 14 (saved copy: 32 corridors)",
    "284 trail parks tested by their official line (R5), not their polygon: CA-1301, CA-1599, CA-3546, CA-4786, CA-5344, CA-5536, CA-5565, CA-5595, CA-5628, CA-5688",
-   "946 parks filed under another state but crossing / at the edge of this area kept: US-0670, US-0015, US-0671, US-0735, US-1935, US-1986, US-5435, US-9431"
+   "932 parks filed under another state but crossing / at the edge of this area kept: US-0670, US-0015, US-0671, US-0735, US-1935, US-1986, US-5435, US-9431"
   ],
   "river channels listed as water only (boat spots)": 0,
   "spots given their boundary lines": 889,
   "still not checked": 0,
-  "trail stretches given their true zone": 768,
+  "trail stretches given their true zone": 756,
   "water only": 0,
   "water retries (won / tries)": "0 / 0",
   "with official lines": 52
@@ -845,21 +845,21 @@
    "lines": 5,
    "n-fers": 15,
    "not sure": 0,
-   "pass1": 138,
+   "pass1": 135,
    "pass2": 5,
-   "spots": 138,
+   "spots": 135,
    "very tight": 0,
    "water only": 0
   },
   "CA-ON": {
    "candidates": 4,
    "candidates (saved outline only)": 0,
-   "lines": 212,
+   "lines": 215,
    "n-fers": 0,
    "not sure": 16,
-   "pass1": 317,
+   "pass1": 331,
    "pass2": 20,
-   "spots": 317,
+   "spots": 331,
    "very tight": 0,
    "water only": 0
   },
@@ -900,11 +900,11 @@
    "water only": 0
   },
   "US-DE": {
-   "candidates": 29,
+   "candidates": 28,
    "candidates (saved outline only)": 0,
    "lines": 46,
    "n-fers": 5,
-   "not sure": 1,
+   "not sure": 2,
    "pass1": 132,
    "pass2": 110,
    "spots": 132,
@@ -1020,7 +1020,7 @@
    "water only": 4
   },
   "US-RI": {
-   "candidates": 17,
+   "candidates": 16,
    "candidates (saved outline only)": 0,
    "lines": 29,
    "n-fers": 4,
