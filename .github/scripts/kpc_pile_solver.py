@@ -652,8 +652,12 @@ def solve(p, F, ov, sheet):
         rc, why = F.counties_of(r['rings'])
         if rc is None: bad.append(f"{r['id']}: {why}"); continue
         if not set(pin_c) & set(rc): bad.append(f"{r['id']} lies in {', '.join(sorted(v for v in rc.values() if v)) or '?'}; the pin is in {', '.join(v for v in pin_c.values() if v)}")
-    km = round((best['d'] or 0) / 1000, 1)
-    d_m = best['d'] or 0
+    # Nov 11: the distance rule 3 reasons about (the 15 km line, the km in the text and in the ledger proposal) is the FARTHEST joined record
+    # that is past NEAR_M, not the closest one: a park joined to a record that holds the pin and to another 20 km out used to read '0.0 km'
+    # and take the join (and a ledger proposal) with the far record riding along.
+    d_far = [r['d'] for r in far if r['d'] is not None]
+    d_m = max(d_far) if d_far else (best['d'] or 0)
+    km = round(d_m / 1000, 1)
     if bad:
         return done(row, 'NEEDS-PERSON', f"the pin is {km} km from the outline and the county does not back the match: " + '; '.join(bad[:2]),
                     f"a person to say whether '{best['name']}' is {p['ref']} (pin {km} km out, other county), or report the POTA pin to POTA")

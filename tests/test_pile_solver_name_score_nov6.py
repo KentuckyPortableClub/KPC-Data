@@ -5,11 +5,11 @@ Node scores the shared 1,600 name pairs. Python must return the same score for e
 Sourced round-3 abbreviations (SHS, HP, SPA) rank. from_memory rows are not on the list.
 'game' stays a distinguishing word. Offline. Does not write this repo.
 """
-import csv, json, os, pathlib, subprocess, sys
+import csv, json, os, pathlib, subprocess, sys, tempfile
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 os.chdir(ROOT)
-os.environ.setdefault('LINKS', '/tmp/kpc-links')
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); import _links_checkout; _links_checkout.use(ROOT)   # Nov 11: any KPC-Links checkout, any start folder
 os.environ['KPC_RESEARCH_SOURCES'] = 'report'
 sys.path.insert(0, str(ROOT / '.github' / 'scripts'))
 import kpc_research_sources as RS
@@ -30,7 +30,7 @@ def main():
     RS.reset_matcher()
     pairs = json.loads(PAIRS.read_text(encoding='utf-8'))
     check(len(pairs) == 1600, f'shared fixture has 1,600 name pairs ({len(pairs)})')
-    rows_path = pathlib.Path('/tmp/kpc-name-score-rows.json')
+    rows_path = pathlib.Path(tempfile.mkdtemp(prefix='kpc-name-score-')) / 'rows.json'   # Nov 11: a private temp folder, not a fixed /tmp name
     rows_path.write_text(json.dumps({'rows': RS.table_rows(), 'alts': RS.alternate_expansions()}), encoding='utf-8')
     # Same rule as Python: try the Tool Box expansion and each extra meaning, keep the higher score.
     node = (

@@ -12,7 +12,7 @@ import inspect, json, os, pathlib, re, sys, tempfile
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 os.chdir(ROOT)
-os.environ.setdefault('LINKS', '/tmp/kpc-links')
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); import _links_checkout; _links_checkout.use(ROOT)   # Nov 11: any KPC-Links checkout, any start folder
 os.environ.pop('KPC_TYPE_PENALTY', None)
 os.environ.pop('KPC_DESIGNATION_CLASH', None)
 sys.path.insert(0, str(ROOT / '.github' / 'scripts'))

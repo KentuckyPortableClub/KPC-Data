@@ -257,6 +257,12 @@ def c_campinfo(path, new, live, ctx):
     if ph: holds.append(f'F-I4 {len(ph)} toll-free reservation numbers kept as a camp phone, e.g. {ph[0]}')
     fee = [c.get('name') for c in camps if re.search(r'million|renovat|\bgrant\b', json.dumps(c.get('fees') or ''), re.I)]
     if fee: holds.append(f'F-I5 {len(fee)} fees that read like news / money totals, e.g. {fee[0]}')
+    # F-I6 (Nov 11): facts the live file has and the new file lost. A blocked day (403s, robots, resting hosts) used to empty the records
+    # it could not read and the file still passed. Counted on the same fields on both sides: camps with a sites total / a source line.
+    live_camps = list((live_dict(live, 'live file').get('camps') or {}).values()) if isinstance(live_dict(live, 'live file').get('camps'), dict) else []
+    def _with_facts(cs): return sum(1 for c in cs if isinstance(c, dict) and any(not k.startswith(('booking', 'lodging_booking', 'map', 'phone_hint', 'features')) for k in (c.get('facts_src') or {})))
+    n_old, n_new = _with_facts(live_camps), _with_facts(camps)
+    if drop(n_old, n_new, .7): holds.append(f'F-I6 campgrounds with source-lined facts {n_old} -> {n_new} (more than 30% lost: a blocked read emptied them?)')
     return holds, notes
 
 

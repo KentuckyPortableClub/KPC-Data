@@ -32,6 +32,18 @@ def main():
         time.sleep(0.5)
     for ref, v in old.items():   # a location that failed keeps last week's numbers
         if ref not in parks and v[2] in failed: parks[ref] = v
+    # Nov 11: a location that ANSWERED with an empty list (a 200 with nothing in it) is not a failure, so its parks used to lose their
+    # numbers without a word. Same rule as the world POTA bot: a location of 10+ parks that came back under half its size keeps last week's
+    # numbers, and a whole answer under 80% of last week's is refused (the file stays as it was, and the log says so).
+    oc, nc = {}, {}
+    for ref, v in old.items(): oc[v[2]] = oc.get(v[2], 0) + 1
+    for ref, v in parks.items(): nc[v[2]] = nc.get(v[2], 0) + 1
+    short = sorted(k for k, n in oc.items() if n >= 10 and nc.get(k, 0) < 0.5 * n)
+    for ref, v in old.items():
+        if ref not in parks and v[2] in short: parks[ref] = v
+    if short: print(f'::notice title=POTA activity::{len(short)} location(s) came back much smaller: kept last week\'s numbers for {", ".join(short[:10])}')
+    if len(old) >= 1000 and len(parks) < 0.8 * len(old):
+        print(f'::warning title=POTA activity::only {len(parks)} parks read vs {len(old)} last week: the answer looks short. Nothing was changed; last week\'s file stays.'); return
     OUT.parent.mkdir(parents=True, exist_ok=True)
     json.dump({'about': 'POTA activations per park (api.pota.app location lists), weekly: {ref: [activations, attempts, location]}',
                'built': time.strftime('%Y-%m-%d'), 'parks': parks}, open(OUT, 'w'), separators=(',', ':'), ensure_ascii=False)
