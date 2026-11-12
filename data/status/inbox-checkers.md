@@ -401,3 +401,4 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-07, 5 days): key data/world-key/ZA.json held: F-O2 4 of 75 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?
 - FROM WAITING ROOM (held since 2026-11-08, 4 days): wwff data/wwff/CTFF.json held: F-W2 rows 702 -> 280 (under 80% of the saved list)
 - FROM BOT layer intake (2026-11-12): grade me: queue data/intake/review.md — READY rows first; chat 9 approves in ready.json · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43213782238)
+- FROM WAITING ROOM HEALTH (2026-11-12): RED: 331 files waiting over 3 days in data/waiting/in/ (e.g. US-WY.json)
