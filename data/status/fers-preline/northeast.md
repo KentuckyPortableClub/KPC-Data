@@ -1,6 +1,6 @@
 # 2-fer pre-line check: northeast (US-PA US-NY US-NJ US-CT US-RI US-MA US-VT US-NH US-ME US-MD US-DE US-DC): GO
 
-Key source: build · checked 2026-11-12 06:07 UTC
+Key source: build · checked 2026-11-12 11:38 UTC
 
 ## US-PA: GO (HELD KEY: build US-43056604383 has no person's sign-off yet; the 2-fers measured on it are held with it)
 - warn: 1 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-0733
