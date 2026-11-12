@@ -34,6 +34,14 @@ jobs:
         env:
           FORCE: ${{ inputs.force }}
         run: |
+          # Nov 12 (KPC owner, 2026-11-11; Quality's #72 follow-up): no small batches while a 2-fer run (kpc-fers.yml) is in progress or
+          # queued, so a batch never races that run's Save. Green with a notice when one is. The look itself fails CLOSED: when gh cannot
+          # answer (or answers something that is not a count), nothing starts and this step is red.
+          for kpc_st in in_progress queued; do
+            kpc_n=$(gh run list -R "${{ github.repository }}" --workflow kpc-fers.yml --status "$kpc_st" --limit 20 --json databaseId --jq 'length') || { echo "::error title=2-fer small batches::could not ask GitHub whether a 2-fer run (kpc-fers.yml) is $kpc_st: nothing started (fail closed)"; exit 1; }
+            case "$kpc_n" in ''|*[!0-9]*) echo "::error title=2-fer small batches::unreadable answer from GitHub for kpc-fers.yml $kpc_st runs ('$kpc_n'): nothing started (fail closed)"; exit 1;; esac
+            if [ "$kpc_n" -gt 0 ]; then echo "::notice title=2-fer small batches::a 2-fer run (kpc-fers.yml) is $kpc_st: nothing started, the waiting parks stay waiting"; exit 0; fi
+          done
           if [ -n "$(gh run list -R ${{ github.repository }} --workflow kpc-fers-lines.yml --status in_progress --json databaseId --jq '.[].databaseId' 2>/dev/null)" ]; then echo "::notice title=2-fer small batches::the full queue is running: nothing started"; exit 0; fi
           python3 - <<'PY'
           import json, os, subprocess, time

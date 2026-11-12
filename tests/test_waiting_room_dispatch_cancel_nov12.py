@@ -138,8 +138,10 @@ r = subprocess.run(['git', 'show', f'{BASE}:.github/workflows/{NAME}'], cwd=ROOT
 if r.returncode == 0:
     O = yaml.safe_load(r.stdout)
     os_ = O['jobs']['waiting']['steps']
-    same = len(os_) == len(steps) and all(a == b for i, (a, b) in enumerate(zip(os_, steps)) if i != DI)
-    check('every other step, the job settings, the triggers, permissions and concurrency are byte-for-byte the same as on main (da499ab)',
+    # Nov 12 follow-up (KPC owner, 2026-11-11): Save (SI) now runs kpc_push_data.sh with STRICT=1 and exits 1 on a failed save;
+    # that change is checked in tests/test_waiting_room_followups_nov12.py, so Save is left out of this compare too.
+    same = len(os_) == len(steps) and all(a == b for i, (a, b) in enumerate(zip(os_, steps)) if i not in (DI, SI))
+    check('every other step (but Save, see test_waiting_room_followups_nov12), the job settings, the triggers, permissions and concurrency are byte-for-byte the same as on main (da499ab)',
           same and {k: v for k, v in O['jobs']['waiting'].items() if k != 'steps'} == {k: v for k, v in J.items() if k != 'steps'}
           and all(O.get(k) == W.get(k) for k in (True, 'permissions', 'concurrency', 'name', 'run-name')))
     check('the old step was if: always() (the hole this fixes)', os_[DI].get('if') == 'always()')

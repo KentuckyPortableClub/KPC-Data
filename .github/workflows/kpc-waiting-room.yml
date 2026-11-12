@@ -139,7 +139,9 @@ jobs:
           cd kpcdata
           D="data/waiting data/status"
           if [ "${{ inputs.mode || 'release-approved' }}" != replay ]; then D="data"; fi
-          bash ../links/.github/scripts/kpc_push_data.sh . "waiting room: ${{ inputs.mode || 'release-approved (nightly)' }} ${{ inputs.target }}" $D || { kpc_rc=$?; echo "::error title=Save::a save or push failed; this run is NOT saved, the next run tries again (exit $kpc_rc)"; echo "Save - a save or push failed; this run is NOT saved, the next run tries again (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          # Nov 12 (KPC owner, 2026-11-11; Quality's #72 follow-up): STRICT=1 as in kpc-fers.yml, so a push that did not land exits 1 and
+          # this step goes red (its outcome is failure, so the 2-fer rerun below never starts). Without it the script only printed a notice.
+          STRICT=1 bash ../links/.github/scripts/kpc_push_data.sh . "waiting room: ${{ inputs.mode || 'release-approved (nightly)' }} ${{ inputs.target }}" $D || { kpc_rc=$?; echo "::error title=Save::a save or push failed; this run is NOT saved, the next run tries again (exit $kpc_rc)"; echo "Save - a save or push failed; this run is NOT saved, the next run tries again (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit 1; }
       - name: A key went live -> the 2-fers rerun for those states (chat 2 BOT E reads data/waiting/released-key.json)
         # Nov 12 (a cancelled world key run still committed, KPC-Links): was if: always(), so a CANCELLED run, or a run whose Save never
         # reached main, still started kpc-fers-pending (force=yes) for a key that was not live. Now: never on a cancel, only after Save
@@ -152,7 +154,8 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           [ -f /tmp/kpc-key-released ] || exit 0
-          # kpc_push_data.sh never fails (a save that did not land is only a notice), so check main itself: no saved release = no 2-fer rerun
+          # Save runs with STRICT=1 (Nov 12), so a save that did not land makes it red and skips this step; main is still checked here as a
+          # second lock: no saved release = no 2-fer rerun
           if ! { git -C kpcdata fetch -q origin main && git -C kpcdata diff --quiet FETCH_HEAD -- data/waiting/released-key.json; }; then
             echo "::error title=Waiting room::the key release for $(cat /tmp/kpc-key-released) is not on main (the save did not land): no 2-fer rerun started; the next run releases it again and starts it"
             echo "Waiting room - the key release is not on main: no 2-fer rerun started" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"
