@@ -6,6 +6,8 @@ One queue for every map-layer lead anyone finds; one polite bot (`.github/script
 - `queue.json`: the leads. Anyone (harvester, discovery bot, gap-filler, chat 8, chat 9) adds a row; the bot never edits rows.
 - `ready.json.gz`: one result row per probed layer (`approved: null` until chat 9 decides). Same JSON as the old `ready.json`; readers take either name and prefer `.gz`.
 - `review.md`: the human page: verdict counts, READY rows first with the parks each would close, then LIVE-ONLY, ASK, REJECT; the test table + `GATE=PASS/FAIL` at the end.
+- `queue-hold-nov12.json`: leads kept but NOT probed (same row shape + `status`: hand-download, saved-copy-only, held). No fetchable official url yet, a never-contact host (services*.arcgis.com, apps.fs.usda.gov: saved copies only), or an owner call. Move a row to `queue.json` once its url is confirmed; a saved file goes through the KPC-Links layer intake bot (KPC-Archive release `layer-intake`).
+- `official-pins-nov12.json`: official agency points from the Nov 11 search, staged (no bot reads them yet). `pin-fill` = POTA has no usable pin; `point-circle-candidate` = within 0.5 km of the POTA pin, no outline; `held` = farther away (never moves a pin). Never a boundary.
 - `state.json`: resume data (per url: date probed + a signature of the queue row), resting hosts, last stats.
 
 ## Queue row
