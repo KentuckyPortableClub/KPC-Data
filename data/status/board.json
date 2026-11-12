@@ -51,10 +51,10 @@
   },
   "Hard look reader": {
    "areas": "",
-   "last_run": "2026-11-11",
-   "made": " 2026-11-11; left 0",
+   "last_run": "2026-11-12",
+   "made": " 2026-11-12; left 0",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42985712560",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43177723209",
    "waiting_on": "chat 11 answers data/waiting/questions/hardlook.json"
   },
   "Intake: acres-engine.json": {
@@ -1283,17 +1283,17 @@
   },
   "scoreboard": {
    "areas": "",
-   "last_run": "2026-11-11",
+   "last_run": "2026-11-12",
    "made": "scoreboard.json + scoreboard-parks.json + scoreboard-check.md",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/42985720833",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43177728516",
    "waiting_on": "nothing (facts only)"
   },
   "waiting room": {
    "last_run": "2026-11-12",
-   "made": "318 files waiting over 3 days in data/waiting/in/ (e.g. US-WY.json)",
-   "result": "red",
-   "waiting_on": "chat 11 (look at the waiting room run)"
+   "made": "heartbeat 1 h old, 475 files waiting",
+   "result": "green",
+   "waiting_on": "nothing"
   },
   "world finder v2": {
    "areas": "",
