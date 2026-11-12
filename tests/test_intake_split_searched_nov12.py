@@ -25,13 +25,16 @@ import kpc_searched as KS
     'GB-0001': [{'date': '2026-11-11', 'result': 'nothing-found', 'search': 'outline', 'where': 't'}],
     'SE-0001': [{'date': '2026-11-11', 'result': 'nothing-found', 'search': 'outline', 'where': 't'}],
     'NO-0001': [{'date': '2026-06-01', 'result': 'nothing-found', 'search': 'outline', 'where': 't'}],
-    'TH-0001': [{'date': '2026-11-11', 'result': 'nothing-found', 'search': 'pin', 'where': 't'}]}}), encoding='utf-8')
+    'TH-0001': [{'date': '2026-11-11', 'result': 'nothing-found', 'search': 'pin', 'where': 't'}]},
+    'areas': {'RU': [{'date': '2026-11-11', 'result': 'nothing-found', 'search': 'outline', 'where': 't'}],
+              'US': [{'date': '2026-11-11', 'result': 'nothing-found', 'search': 'outline', 'where': 't'}]}}), encoding='utf-8')
 S = KS.Searched(file=tmp / 'searched-parks.json', folder=tmp, today=datetime.date(2026, 11, 20))
 check(S.skip('SE-0001', 'SE') != '', 'searched 9 days ago, the only new row is in the hold file: skipped')
 check(S.skip('GB-0001', 'GB') == '', 'a newer probe-able queue row for GB: searched again')
 check(S.skip('NO-0001', 'NO') == '', 'searched over 90 days ago: searched again')
 check(S.skip('TH-0001', 'TH') == '' and S.skip('TH-0001', 'TH', kind='pin') != '', 'a pin hunt never blocks an outline hunt')
-check(S.skip('US-9999', 'US-KY') == '', 'never searched: searched')
+check(S.skip('US-9999', 'US-KY') == '', 'never searched: searched (a US/CA park never falls back to an area entry)')
+check(S.skip('RU-0001', 'RU') != '', 'world list: a park in a country searched as a whole is skipped')
 
 import kpc_official_pins as OP
 (tmp / 'official-pins-x.json').write_text(json.dumps({'rows': [
@@ -43,7 +46,7 @@ check(sorted(OP.fills(tmp)) == ['CA-1'], 'only a pin-fill for a park with no POT
 
 D = R / 'data' / 'intake'
 bad = re.compile(r'services\d*\.arcgis\.com|apps\.fs\.usda\.gov|33TOOklri9xpic7U|ncnhde\.natureserve\.org', re.I)
-for f in sorted(D.glob('queue-*.json')) + sorted(D.glob('official-pins-*.json')) + [D / 'searched-parks.json']:
+for f in sorted(D.glob('queue-*.json')) + sorted(D.glob('official-pins-*.json')) + sorted(D.glob('searched-parks*.json')):
     t = f.read_text(encoding='utf-8'); d = json.loads(t)
     check(len(t.encode()) < 1048576, f'{f.name}: under 1 MB ({len(t.encode())} bytes)')
     check(not re.search(r'wdpa|protected ?planet|phone ?book', t, re.I), f'{f.name}: no WDPA text')

@@ -170,6 +170,2316 @@
    "publisher": "Southwest Florida Water Management District",
    "title": "SWFWMD land resources (fee lands)",
    "url": "https://www25.swfwmd.state.fl.us/arcgis12/rest/services/OpenData/LandResources/MapServer/0"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-QC",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC-BY 4.0 (Attribution)",
+   "note": "LIVE-OK: agency_gis; covers: Nature Reserve (private, réserve naturelle en milieu privé), Ecological Reserve, Provincial/National Park, Wildlife Refuge, Forest Reserve (if registered), Biosphere/Geopark only if registered as prot; parks: CA-0515 CA-0985 CA-1031 CA-1922 CA-1966; gain: 378 of 834 parks in CA-QC without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group1; Data files modified 2026-03-31; metadata 2026-09-23. Best first source for registered protected areas. Municipal parks are generally NOT in it. WMS resource: .../resource/a69aed5c-ebe1-4501-bc7e-9f4401b9cab7 ; EsriREST: .../resource/777a2117-e7ae-4db",
+   "publisher": "Registre des aires protégées et des AMCE au Québec (MELCCFP)",
+   "title": "Registre des aires protégées et des AMCE au Québec (MELCCFP) | Registre aires protégées (SHP/FGDB/GPKG, plus WMS and EsriREST resources)",
+   "url": "https://www.donneesquebec.ca/recherche/dataset/aires-protegees-au-quebec"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-QC",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC-BY 4.0 (Attribution)",
+   "note": "LIVE-OK: agency_gis; covers: Parcs régionaux (only those in MRNF register, e.g. Rivière-du-Nord CA-1007, Chutes Monte-à-Peine CA-1009, Bras-du-Nord CA-1036, Sainte-Anne CA-1015, Beauharnois-Salaberry CA-1004), parcs nationaux QC/; parks: CA-1004 CA-1007 CA-1009 CA-1015 CA-1036; gain: 378 of 834 parks in CA-QC without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group1; Resources modified 2026-08-25; metadata 2026-09-02. Scale 1:100000 variant exists (7c9fff9f-c7c0-4267-a287-f86299796aea). Coverage of regional parks is partial; verify per park. Not downloaded.",
+   "publisher": "Couche des territoires récréatifs du Québec (MRNF)",
+   "title": "Couche des territoires récréatifs du Québec (MRNF) | Territoires récréatifs (FGDB, WMS, REST; REST layer 6 = Parc régional at servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServ",
+   "url": "https://www.donneesquebec.ca/recherche/dataset/couche-des-territoires-recreatifs-du-quebec"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-QC",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - Canada",
+   "note": "LIVE-OK: agency_gis; covers: National Park: Ulittaniujalik CA-0129 (and any federal national park); parks: CA-0129; gain: 378 of 834 parks in CA-QC without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group1; Record modified 2022-07-22; check REST service for current Ulittaniujalik (established 2023-ish) feature. Not downloaded.",
+   "publisher": "National Parks and National Park Reserves of Canada Legislative Boundaries (NRCan CLSS / Parks Canada)",
+   "title": "National Parks and National Park Reserves of Canada Legislative Boundaries (NRCan CLSS / Parks Canada) | CLSS Administrative Boundaries MapServer layer 1 (WMS/ESRI REST at proxyinternet.nrcan-rncan.gc",
+   "url": "https://open.canada.ca/data/en/dataset/9e1507cd-f25c-4c64-995b-6563bf9d65bd"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-QC",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - Canada (ca-ogl-lgo)",
+   "note": "LIVE-OK: agency_gis; covers: National Parks, National Park Reserves, NMCAs only; Ulittaniujalik CA-0129; parks: CA-0129; gain: 378 of 834 parks in CA-QC without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group1; Weekly update frequency. Dataset states it does NOT cover national historic sites and must not define legal boundaries. Mirror portal donnees.iriu.ca; canonical record on open.canada.ca.",
+   "publisher": "Places administered by Parks Canada (open.canada.ca / Parks Canada)",
+   "title": "Places administered by Parks Canada (open.canada.ca / Parks Canada) | Places administered by Parks Canada (SHP, Esri REST, CSV, KML, GeoJSON)",
+   "url": "https://donnees.iriu.ca/dataset/e1f0c975-f40c-4313-9be2-beb951e35f4e"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-QC",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC-BY 4.0 (Attribution)",
+   "note": "LIVE-OK: agency_gis; covers: Montreal island parks: CA-0511 Mont-Royal, CA-0962 Angrignon, CA-0986 Frédéric-Back, CA-0990 Jarry, CA-0992 La Fontaine, CA-0994 Maisonneuve, CA-0995 Île-de-la-Visitation, CA-1000 Ruisseau-De Montigny; parks: CA-0511 CA-0961 CA-0962 CA-0986 CA-0990 CA-0992 CA-0994 CA-0995 CA-1000 CA-1974 CA-1997 CA-2176 CA-2196; gain: 378 of 834 parks in CA-QC without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group1; Updated 2026-08-28. Verify West Island municipalities (Pointe-Claire, Beaconsfield, Kirkland) are included; many are separate municipalities not on the Montreal agglomeration open-data set. Dorchester Square (CA-1997) and Champ de Mars (CA-1974) are ",
+   "publisher": "Ville de Montréal - Grands parcs, parcs d'arrondissements et espaces publics",
+   "title": "Ville de Montréal - Grands parcs, parcs d'arrondissements et espaces publics | Grands parcs, parcs d'arrondissements et espaces publics (SHP, GeoJSON, CSV; also donnees.montreal.ca mirror)",
+   "url": "https://www.donneesquebec.ca/recherche/dataset/vmtl-grands-parcs-parcs-d-arrondissements-et-espaces-publics"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-QC",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC-BY 4.0 (Attribution)",
+   "note": "LIVE-OK: agency_gis; covers: Chicoutimi/Saguenay municipal parks: CA-0983 Mont-Fortin, CA-0984 Mont-Jacob, CA-0979 du Bassin, CA-1016 Rosaire-Gauthier, CA-1017 Sir William Price, CA-0988, CA-1037, CA-1944 (sites, if included), CA; parks: CA-0973 CA-0979 CA-0983 CA-0984 CA-0988 CA-1016 CA-1017 CA-1037 CA-1944; gain: 378 of 834 parks in CA-QC without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group1; Updated 2025-03-10. Only municipality with a confirmed park layer among the many in the input besides Montreal.",
+   "publisher": "Ville de Saguenay - Parcs et espaces verts",
+   "title": "Ville de Saguenay - Parcs et espaces verts | Parcs et espaces verts (SHP)",
+   "url": "https://www.donneesquebec.ca/recherche/dataset/sag_parcs-et-espaces-verts/resource/26006508-d15a-4c7f-93be-453bf3f48b0a"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-QC",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated: item info shows '© Gouvernement du Québec', license field blank; confirm terms with Foncier Québec before reuse",
+   "note": "LIVE-OK: parcel; covers: Province-wide lot polygons; use for all municipal parks / reserves lacking a park layer (all 393 refs by pin); gain: 378 of 834 parks in CA-QC without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group1; Only metadata page (iteminfo) read; no query run. Government-hosted ArcGIS Server, not ArcGIS Online. Licence unclear: treat as reference only until confirmed. Cadastre portal: portail-info.foncier.gouv.qc.ca",
+   "publisher": "Lots du cadastre rénové du Québec (MERN/Foncier Québec, hosted by MELCCFP geo server)",
+   "title": "Lots du cadastre rénové du Québec (MERN/Foncier Québec, hosted by MELCCFP geo server) | Lots du cadastre rénové (Cadastre_allege MapServer layer 0)",
+   "url": "https://geo.environnement.gouv.qc.ca/donnees/rest/services/Reference/Cadastre_allege/MapServer/0"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-QC",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC-BY 4.0 (Attribution); owner names redacted, re-identification prohibited",
+   "note": "LIVE-OK: parcel; covers: All municipalities; property units with land use codes (useful to find park/reserve lots); gain: 378 of 834 parks in CA-QC without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group1; Released 2026-04-01. Geometry type (point vs parcel polygon) not stated on page; probably unit points or lot-linked: verify before relying on it for boundaries.",
+   "publisher": "Rôles d'évaluation foncière du Québec géoréférencés (MAMH)",
+   "title": "Rôles d'évaluation foncière du Québec géoréférencés (MAMH) | Rôles d'évaluation foncière géoréférencés 2026 (FGDB, GPKG, GeoJSON, SHP, CSV)",
+   "url": "https://donneesquebec.ca/recherche/dataset/roles-d-evaluation-fonciere-du-quebec"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-QC",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Sépaq copyright; not verified",
+   "note": "LIVE-OK: pdf_index; covers: CA-0515 Parc de la Chute-Montmorency (Sépaq managed), CA-0129 Ulittaniujalik adjacent context; parks: CA-0129 CA-0515; gain: 378 of 834 parks in CA-QC without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group1; Overview map only, not boundary quality; seen via search result, not fetched. Quebec national park boundaries are in registre aires protégées / territoires récréatifs layers.",
+   "publisher": "Sépaq - Parc national map PDF (carte Sépaq)",
+   "title": "Sépaq - Parc national map PDF (carte Sépaq) | carte_sepaq.pdf (network overview map)",
+   "url": "https://www.sepaq.com:443/resources/docs/voyage/carte_sepaq.pdf"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-NB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Content (c) Government of New Brunswick, all rights reserved; map-file disclaimer (not a survey). Check GNB Open Data licence before reuse",
+   "note": "LIVE-OK: agency_gis; covers: NB Protected Natural Areas, Protected Areas, Ecological areas, Nature Reserves, Wilderness Area, Natural Areas (CA-4350, CA-4355, CA-4357, CA-4380, CA-4438, CA-4443, CA-4444, CA-4493, CA-4508, CA-4522; parks: CA-0783 CA-0794 CA-4350 CA-4355 CA-4357 CA-4380 CA-4438 CA-4443 CA-4444 CA-4493 CA-4508 CA-4522 CA-5237; gain: 234 of 548 parks in CA-NB without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group2; URL surfaced by search; direct fetch of this page was blocked by the tool allowlist so layer names and format unverified. Service host seen: gis-erd-der.gnb.ca/server/rest/services/OpenData (Peatland layers listed); confirm a protected-areas service ",
+   "publisher": "GNB Dept of Natural Resources and Energy Development (ERD) Open Data - Conservation of Biodiversity",
+   "title": "GNB Dept of Natural Resources and Energy Development (ERD) Open Data - Conservation of Biodiversity | Protected Natural Areas / Nature Legacy protected areas",
+   "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/open-data/conservation-biodiversity.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-NB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "All content (c) Government of New Brunswick; disclaimer: not surveys, not for legal descriptions",
+   "note": "LIVE-OK: agency_gis; covers: Wildlife Management Areas, Crown land context; Provincial Park (Wildlife) refs; gain: 234 of 548 parks in CA-NB without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group2; Fetched. Index only; per-dataset formats not listed.",
+   "publisher": "GNB Open Data direct access index (Conservation, Fish & Wildlife, Crown Lands)",
+   "title": "GNB Open Data direct access index (Conservation, Fish & Wildlife, Crown Lands) | Fish & Wildlife (WMAs); Crown Lands",
+   "url": "https://www2.gnb.ca/content/gnb/en/departments/erd/open-data/direct_access.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-NB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not verified (old catalogue site is being retired to gnb.ca/en/campaign/geonb)",
+   "note": "LIVE-OK: agency_gis; covers: Provincial Park, Recreation Parks (provincial), Parks; gain: 234 of 548 parks in CA-NB without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group2; Found in search; the sibling ProtectedA.asp page is only a redirect splash to https://www.gnb.ca/en/campaign/geonb.html. Also on geo.ca record 31f1830a-b55b-4ef5-33b3-b2a490aa520b (Provincial Parks GeoJSON mirror at donnees.iriu.ca).",
+   "publisher": "GeoNB Data Catalogue - Provincial Parks",
+   "title": "GeoNB Data Catalogue - Provincial Parks | Provincial Parks",
+   "url": "https://snb.ca/geonb1/e/DC/ProParks.asp"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-NB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Typically Open Government Licence - Canada / GNB; verify on record page",
+   "note": "LIVE-OK: agency_gis; covers: Provincial parks, recreation parks where agency-managed (provincial); gain: 234 of 548 parks in CA-NB without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group2; Link from search results only; license unverified.",
+   "publisher": "Provincial Parks (GeoJSON) via Canada federal geospatial portal mirror",
+   "title": "Provincial Parks (GeoJSON) via Canada federal geospatial portal mirror | Provincial Parks",
+   "url": "https://donnees.iriu.ca/en/dataset/31f1830a-b55b-4ef5-33b3-b2a490aa520b"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-NB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - Canada",
+   "note": "LIVE-OK: agency_gis; covers: National cross-check for NB Ramsar, nature reserves, conservation areas, protected areas, Geopark-adjacent, trails buffer (CA-0785, CA-4526, CA-1231..CA-1255, CA-5153, CA-5171, CA-5205); parks: CA-0785 CA-1231 CA-1255 CA-4526 CA-5153 CA-5171 CA-5205; gain: 234 of 548 parks in CA-NB without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group2; Page found via search, not fetched in detail; use as fallback polygon source for conservation-trust nature reserves.",
+   "publisher": "Canadian Protected and Conserved Areas Database (CPCAD), ECCC",
+   "title": "Canadian Protected and Conserved Areas Database (CPCAD), ECCC | CPCAD protected & conserved areas",
+   "url": "https://www.canada.ca/en/environment-climate-change/services/national-wildlife-areas/protected-conserved-areas-database.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-PE",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Free products downloadable; licensing agreement required for priced data",
+   "note": "LIVE-OK: agency_gis; covers: Provincial Parks (14), Natural Areas, Protected Area; gain: 33 of 54 parks in CA-PE without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group2; Fetched; page lists Property Data and Resource Data but gives no layer names or links. Price list https://www.princeedwardisland.ca/en/information/finance/gis-products-and-price-list",
+   "publisher": "PEI Dept of Environment, Energy and Climate Action / Communities, Land and Environment - GIS Free Products",
+   "title": "PEI Dept of Environment, Energy and Climate Action / Communities, Land and Environment - GIS Free Products | Free GIS products; Resource Data",
+   "url": "https://www.princeedwardisland.ca/en/information/finance/geographic-information-systems"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-PE",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - Canada",
+   "note": "LIVE-OK: agency_gis; covers: PEI National Historic Sites and National Heritage Sites administered by Parks Canada; gain: 33 of 54 parks in CA-PE without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group2; Found in search results; also use Parks Canada boundaries record from NB rows.",
+   "publisher": "Parks Canada - Places administered (PEI National Park etc.) and PEI National Park cadastral",
+   "title": "Parks Canada - Places administered (PEI National Park etc.) and PEI National Park cadastral | Cadastral Information for Prince Edward Island National Park of Canada",
+   "url": "https://open.canada.ca/data/en/dataset/d0f1f672-38c3-4ee8-87f2-16233ebe3e95"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-DE",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No formal license; accuracy/general-reference disclaimer in metadata; published 2025-03-11",
+   "note": "LIVE-OK: agency_gis; covers: US-4367 First State Heritage Park, US-9885 Indian River Life-Saving Station, US-9886 Dupont Nature Center, US-10687 Trussum Pond; parks: US-10687 US-4367 US-9885 US-9886; gain: 4 of 85 parks in US-DE without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group2; Self-hosted ArcGIS Server (not AGOL); metadata page fetched only. Published by DNREC, contact Delaware State Parks planner. Also DE_Protected_Natural_Resources MapServer.",
+   "publisher": "DNREC Managed Lands (FirstMap DE_State_Lands)",
+   "title": "DNREC Managed Lands (FirstMap DE_State_Lands) | DNREC Managed Lands (layer 0)",
+   "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-DE",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "License field empty in item info",
+   "note": "LIVE-OK: parcel; covers: Statewide: Sussex County (Indian River, Trussum Pond), New Castle (First State); gain: 4 of 85 parks in US-DE without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group2; Metadata fetched; no date given.",
+   "publisher": "Delaware State Parcels with Ownership (FirstMap DE_StateParcels)",
+   "title": "Delaware State Parcels with Ownership (FirstMap DE_StateParcels) | State of Delaware Parcels",
+   "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/PlanningCadastre/DE_StateParcels/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-DE",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated",
+   "note": "LIVE-OK: pdf_index; covers: DE State Parks park maps; gain: 4 of 85 parks in US-DE without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group2; Found via annual report PDF hit only; map index page not verified.",
+   "publisher": "Delaware State Parks",
+   "title": "Delaware State Parks",
+   "url": "https://www.destateparks.com/"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-FL",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "As-is, no warranty; cite FNAI",
+   "note": "LIVE-OK: agency_gis; covers: All FL rows: state parks (US-3656), state conservation areas (WMD/FWC lands), WMA (US-7879 Citrus WMA), historic site (US-3621); MAJORMA field nests sub-areas; parks: US-3621 US-3656 US-7879; gain: 23 of 459 parks in US-FL without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group2; Metadata fetched: created 2026-09-30, quarterly updates. Metadata shows 0 feature count; verify the file loads. Names like 'Purvis Landing, Otter Springs, Shingle Lndg' are composite multi-site entries and will need splitting by MANAME.",
+   "publisher": "FNAI Florida Conservation Lands (FLMA)",
+   "title": "FNAI Florida Conservation Lands (FLMA) | Florida Conservation Lands - Sept 2026 (metadata https://www.fnai.org/shapefiles/flma_meta.htm)",
+   "url": "https://www.fnai.org/publications/gis-data"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-FL",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "As above",
+   "note": "LIVE-OK: agency_gis; covers: Same; gain: 23 of 459 parks in US-FL without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group2; Self-hosted server; seen in search only, not queried.",
+   "publisher": "FNAI ArcGIS Server FLMA service",
+   "title": "FNAI ArcGIS Server FLMA service | FLMA (layers incl. 5)",
+   "url": "https://fnaigis.fsu.edu/arcgis/rest/services/CONLANDS/FLMA_FFBOT_gs/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-NE",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Snapshot for general use within state; authority lies with counties",
+   "note": "LIVE-OK: parcel; covers: Counties: Dixon, Dakota, Cass, Lancaster (Nine Mile Prairie), Scotts Bluff (Chimney Rock), Knox (Neligh Mill: Antelope); gain: 14 of 195 parks in US-NE without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group2; Self-hosted state ArcGIS Server; metadata fetched. Also StatewideParcelsExternal MapServer.",
+   "publisher": "Nebraska Statewide Parcels 2023 (OCIO/NebraskaMap)",
+   "title": "Nebraska Statewide Parcels 2023 (OCIO/NebraskaMap) | Statewide Parcels 2023",
+   "url": "https://giscat.ne.gov/Enterprise/rest/services/TaxParcels2023/MapServer/0"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-SC",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "SCDNR copyright",
+   "note": "LIVE-OK: pdf_index; covers: Nine Times WMA, Wild Turkey WMA; gain: 5 of 166 parks in US-SC without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group2; Found via search; map PDFs per WMA presumably linked.",
+   "publisher": "SCDNR Wildlife Management Areas index",
+   "title": "SCDNR Wildlife Management Areas index",
+   "url": "https://www.dnr.sc.gov/wma/index.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-TX",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "TxGIO open data terms; verify at page",
+   "note": "LIVE-OK: parcel; covers: Counties: Washington, Goliad, Cameron, Brooks/Starr, Brazoria etc.; gain: 9 of 218 parks in US-TX without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group2; Page found via search; not fetched. Same family as the existing TxGIO hand download.",
+   "publisher": "TxGIO StratMap Land Parcels",
+   "title": "TxGIO StratMap Land Parcels | StratMap land parcels (most recent)",
+   "url": "https://www.geographic.texas.gov/stratmap/land-parcels.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-ON",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - Ontario",
+   "note": "LIVE-OK: agency_gis; covers: Provincial Parks incl. Nature Reserve class: CA-0195, CA-0208, CA-0259, CA-0268, CA-5099 (verify park status); parks: CA-0195 CA-0208 CA-0259 CA-0268 CA-5099; gain: 204 of 1180 parks in CA-ON without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; Shapefile; metadata page requires name/org/email form to download (no fetch done). Page shows last updated 2018, data to 2013 - stale. Many wilderness-area and nature-reserve names may actually be provincial parks",
+   "publisher": "Provincial Park Regulated (Ontario Parks, MECP)",
+   "title": "Provincial Park Regulated (Ontario Parks, MECP) | Provincial Park Regulated",
+   "url": "https://data.ontario.ca/en/dataset/provincial-park-regulated"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-ON",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - Ontario",
+   "note": "LIVE-OK: agency_gis; covers: Conservation Reserves: CA-1298, 1300, 1336, 1340, 1386, 1439, 1573, 1574, 1596, 1620, 1621, 1651, 1668, 1692, 5118 and others typed Conservation Reserve; parks: CA-1298; gain: 204 of 1180 parks in CA-ON without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; Resource last updated 2015 on data.ontario.ca; open.canada.ca mirror (5fb7cb08-f91e-4cb5-bd71-4cfd84db91e1) lists geohub-extracted GDB/SHP, which are ArcGIS Hub extracts, so treat those as hand_download. LIO REST mirror ws.lioservices.lrc.gov.on.ca L",
+   "publisher": "Conservation Reserve Regulated (Ontario)",
+   "title": "Conservation Reserve Regulated (Ontario) | Conservation Reserve Regulated",
+   "url": "https://data.ontario.ca/en/dataset/conservation-reserve-land"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-ON",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - Ontario",
+   "note": "LIVE-OK: agency_gis; covers: Provincial parks (zone-level detail); gain: 204 of 1180 parks in CA-ON without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; Found in search; not fetched. Secondary to Provincial Park Regulated",
+   "publisher": "Provincial Park Administration Zones",
+   "title": "Provincial Park Administration Zones | Provincial Park Administration Zones",
+   "url": "https://data.ontario.ca/en/dataset/provincial-park-administration-zones"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-ON",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - Ontario",
+   "note": "LIVE-OK: agency_gis; covers: Locates which CA (TRCA, Conservation Halton, HCA, GRCA, NPCA, Lake Simcoe RCA, CLOCA, Credit Valley, Ganaraska, Kawartha, Nottawasaga Valley, Saugeen, Long Point, Catfish Creek, Mississippi, Rideau Va; gain: 204 of 1180 parks in CA-ON without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; Administrative areas only, not CA-owned land boundaries",
+   "publisher": "Conservation Authority Administrative Area",
+   "title": "Conservation Authority Administrative Area | Conservation Authority Administrative Area",
+   "url": "https://data.ontario.ca/en/dataset/conservation-authority-administrative-area"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-ON",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - Ontario (verify on page)",
+   "note": "LIVE-OK: agency_gis; covers: Municipal parks: CA-1368 North Maple Regional Park (Vaughan), CA-5528 Mackenzie Glen (Vaughan), CA-5114 Pier 4 Park (Hamilton), CA-1349 Remic Rapids/Bate Island (Ottawa/NCC); parks: CA-1349 CA-1368 CA-5114 CA-5528; gain: 204 of 1180 parks in CA-ON without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; Found in search, not fetched; check coverage and age",
+   "publisher": "Municipal Parks (Ontario Open Data aggregate)",
+   "title": "Municipal Parks (Ontario Open Data aggregate) | Municipal parks",
+   "url": "https://data2.ontario.ca/dataset/municipal-parks"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-ON",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - Toronto",
+   "note": "LIVE-OK: agency_gis; covers: Toronto: CA-5304 Fort York, CA-5309 Kensington Market, Toronto-area CA parks (TRCA); parks: CA-5304 CA-5309; gain: 204 of 1180 parks in CA-ON without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; CKAN portal; found via search, not fetched in detail; licence page: https://www.toronto.ca/city-government/accountability-operations-customer-service/access-city-information/open-data/open-data-licence/",
+   "publisher": "City of Toronto Open Data",
+   "title": "City of Toronto Open Data | Parks and Recreation Facilities; Green Spaces",
+   "url": "https://open.toronto.ca/"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-ON",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Check dataset page (not fetched)",
+   "note": "LIVE-OK: agency_gis; covers: Niagara: CA-4866/4875 Fort Mississauga, CA-4881 Queenston Heights, CA-4883 Ridgeway, CA-5302 Fort Erie, CA-4854, CA-1366 Decew Falls; parks: CA-1366 CA-4854 CA-4866 CA-4881 CA-4883 CA-5302; gain: 204 of 1180 parks in CA-ON without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; Found via search; not fetched",
+   "publisher": "Niagara Open Data",
+   "title": "Niagara Open Data | Parks and trail lands (e.g. Niagara Falls community parks)",
+   "url": "https://niagaraopendata.ca/"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-ON",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Parks Canada website terms (non-commercial reproduction)",
+   "note": "LIVE-OK: pdf_index; covers: All 80 National Historic Site rows (in Ontario) administered by Parks Canada; many NHS are privately/municipally owned so site maps may not exist; gain: 204 of 1180 parks in CA-ON without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; No consolidated NHS polygon dataset found in search; for many NHS the designated place is a parcel, so use municipal parcel layers",
+   "publisher": "Parks Canada national historic site pages and visitor maps",
+   "title": "Parks Canada national historic site pages and visitor maps | Per-site PDF maps / designation plaques",
+   "url": "https://parks.canada.ca/culture/designation/lieu-site"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-ON",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Ontario Parks website terms (not stated in search)",
+   "note": "LIVE-OK: pdf_index; covers: Provincial parks CA-0208, 0259, 0268 and operating parks; parks: CA-0208; gain: 204 of 1180 parks in CA-ON without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; Pattern seen in search results; no single index page found",
+   "publisher": "Ontario Parks park maps (per-park /maps pages)",
+   "title": "Ontario Parks park maps (per-park /maps pages) | Park map PDFs (pattern: ontarioparks.ca/park/<id>/maps; ontarioparks.ca/pdf/maps/<id>/park_map.pdf)",
+   "url": "https://www.ontarioparks.ca/park/lionshead/maps"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-ON",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Ontario Parks website terms",
+   "note": "LIVE-OK: pdf_index; covers: Province-wide overview only; gain: 204 of 1180 parks in CA-ON without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; Overview only, not boundary quality",
+   "publisher": "Ontario Parks guide map",
+   "title": "Ontario Parks guide map | Overview map",
+   "url": "https://ontarioparks.ca/pdf/guide/op-guide-map.pdf"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-OK",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "ODWC website terms",
+   "note": "LIVE-OK: pdf_index; covers: Doc Hollis, Sardis, Birch, Field Station SFLs; Holdenville, Byron, J A Manning hatcheries; gain: 41 of 195 parks in US-OK without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; Hatcheries have no published boundary found; use Holdenville/Byron/Manning county parcels",
+   "publisher": "ODWC fishing lake / hatchery pages",
+   "title": "ODWC fishing lake / hatchery pages | Lake maps",
+   "url": "https://wildlifedepartment.com/fishing/wheretofish/odwc-lakes"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-OK",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Oklahoma Tourism website terms",
+   "note": "LIVE-OK: pdf_index; covers: Spavinaw State Park (Mayes Co); gain: 41 of 195 parks in US-OK without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; No state park GIS found in search; check Oklahoma Tourism & Recreation Dept",
+   "publisher": "TravelOK / Oklahoma State Parks",
+   "title": "TravelOK / Oklahoma State Parks | State park pages and maps",
+   "url": "https://travelok.com/state-parks/search"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-MI",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "State of Michigan website terms",
+   "note": "LIVE-OK: pdf_index; covers: State forests, state parks, harbors; gain: 22 of 383 parks in US-MI without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; Found via search; not fetched in detail",
+   "publisher": "Michigan DNR Public Land / state forest maps",
+   "title": "Michigan DNR Public Land / state forest maps | Maps",
+   "url": "https://www.michigan.gov/publiclands"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-NM",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No access restrictions; not for defining legal boundaries; no named licence",
+   "note": "LIVE-OK: agency_gis; covers: NM state parks and state monuments/historic sites incl. Lincoln SHS, Jemez Historic Site, Bosque Redondo, Los Luceros (check inclusion); gain: 18 of 123 parks in US-NM without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; Published 2025-01-22; owner EMNRD. Download via RGIS gstore",
+   "publisher": "NM State Parks (RGIS / EDAC)",
+   "title": "NM State Parks (RGIS / EDAC) | New Mexico State Parks",
+   "url": "https://gstore.unm.edu/apps/rgis/datasets/057d2f19-4ec6-47d5-82a4-f03309ef94fb/metadata/ISO-19115:2003.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-NM",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "US Gov work; BLM GIS data disclaimer",
+   "note": "LIVE-OK: agency_gis; covers: BLM rows: Fort Craig, Lake Valley, San Lorenzo Canyon, Tortugas Mtn, Parks Ranch Cave, Casamero Pueblo, Kilbourne Hole, Dow Canyon Tract, Lincoln Tract; gain: 18 of 123 parks in US-NM without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; URL surfaced in search; not fetched. Use BLM NM Geospatial page https://www.blm.gov/site-page/services-geospatial-gis-data-new-mexico. Recreation-site polygons on BLM national hub would be hand_download",
+   "publisher": "BLM NM Surface Management Agency",
+   "title": "BLM NM Surface Management Agency | Surface Management Agency",
+   "url": "https://gis.blm.gov/nmarcgis/rest/services/Base/BLM_NM_Surface_Management_Agency/FeatureServer/3"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-NM",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "US Gov work",
+   "note": "LIVE-OK: agency_gis; covers: Manhattan Project National Historical Park (Los Alamos); gain: 18 of 123 parks in US-NM without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; From search; not fetched in detail. Alternative NPS data.gov: https://catalog.data.gov/dataset/national-parks3",
+   "publisher": "NPS Boundaries (RGIS copy)",
+   "title": "NPS Boundaries (RGIS copy) | National Park Service Boundaries",
+   "url": "https://gstore.unm.edu/apps/rgis/datasets/558fe3fb-5a6a-4728-bdfa-53f40543d7e8/metadata/ISO-19115:2003.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-NM",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not fetched",
+   "note": "LIVE-OK: agency_gis; covers: Cross-check for all NM rows; gain: 18 of 123 parks in US-NM without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; ",
+   "publisher": "NM Protected Areas Database (RGIS)",
+   "title": "NM Protected Areas Database (RGIS) | Protected Areas Database for New Mexico",
+   "url": "https://gstore.unm.edu/apps/rgis/datasets/a8b934f4-4377-402d-b455-5e0ccc65ee36/metadata/ISO-19115:2003.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-IN",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not fetched",
+   "note": "LIVE-OK: agency_gis; covers: Nature preserves; gain: 11 of 228 parks in US-IN without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; Coastal area only; found via search",
+   "publisher": "IndianaMap Nature Preserves (Coastal area service)",
+   "title": "IndianaMap Nature Preserves (Coastal area service) | Nature Preserves",
+   "url": "https://gisdata.in.gov/server/rest/services/Hosted/NaturePreservesCoastalArea/FeatureServer/layers"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-IN",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "State of Indiana site terms",
+   "note": "LIVE-OK: pdf_index; covers: SRAs and nature preserves; gain: 11 of 228 parks in US-IN without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; Index page not located; lookup by property",
+   "publisher": "IDNR property maps",
+   "title": "IDNR property maps | Park and property maps",
+   "url": "https://www.in.gov/dnr/"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-HI",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No access constraints; no warranty; planning use",
+   "note": "LIVE-OK: agency_gis; covers: Forest reserves, NARS, NWRs (incl. Hawaiian Islands NWR), Kure Atoll, game management areas, HI State Game Reserve; gain: 13 of 103 parks in US-HI without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; 381 features; metadata date 2026-04-08. Also lists NWR and National Parks (WWII Valor unit may be NPS)",
+   "publisher": "Hawaii Statewide GIS - Reserves (DOFAW)",
+   "title": "Hawaii Statewide GIS - Reserves (DOFAW) | reserves",
+   "url": "https://files.hawaii.gov/dbedt/op/gis/data/reserves.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-HI",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Copyright counties/Statewide GIS Program; no separate licence; visual reference only",
+   "note": "LIVE-OK: parcel; covers: All Hawaii rows needing parcels (Oahu: Iolani Palace, Artillery District; Maui: Iao Valley; Kauai: Waimea); gain: 13 of 103 parks in US-HI without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; Layer has a qpub_link field to county qPublic; do not use those links",
+   "publisher": "Hawaii Statewide TMK parcels",
+   "title": "Hawaii Statewide TMK parcels | Statewide TMKs",
+   "url": "https://geodata.hawaii.gov/arcgis/rest/services/ParcelsZoning/MapServer/25"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-VA",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Cartographic/spatial analysis only, not legal descriptions; no licence named",
+   "note": "LIVE-OK: parcel; covers: Counties/cities: Virginia Beach (Cape Henry), York (Yorktown, Jamestown area James City), Arlington (Fort Marcy), Fairfax (Dyke Marsh, Alexandria), Staunton (Frontier Culture Museum); gain: 7 of 172 parks in US-VA without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; State-run ArcGIS Server; max 2000 records per query",
+   "publisher": "VGIN Virginia parcels",
+   "title": "VGIN Virginia parcels | VA_Parcels",
+   "url": "https://vginmaps.vdem.virginia.gov/arcgis/rest/services/VA_Base_Layers/VA_Parcels/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-VA",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not fetched",
+   "note": "LIVE-OK: agency_gis; covers: Virginia Bird & Wildlife State Trail (DWR), others; gain: 7 of 172 parks in US-VA without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; Found via search; not fetched. DWR trail: no polygon expected",
+   "publisher": "VA DCR Natural Heritage conservation lands",
+   "title": "VA DCR Natural Heritage conservation lands | Conservation Lands (conslands PDF/data)",
+   "url": "https://dcr.virginia.gov/natural-heritage/clinfo"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-SD",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Licence field blank; State lands managed by SDGFP; federal lands refreshed each April",
+   "note": "LIVE-OK: agency_gis; covers: Cross-check WPAs/federal public land for the 3 WMDs; gain: 3 of 118 parks in US-SD without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group3; Layer list not seen; federal layers obtained from agencies",
+   "publisher": "SD Game, Fish and Parks Land Stewardship reference layers",
+   "title": "SD Game, Fish and Parks Land Stewardship reference layers | Land Stewardship (state and federal lands)",
+   "url": "https://ert.gfp.sd.gov/arcgis/rest/services/SD_Public/ReferenceLayers_LandStewardship/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-UT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Public domain (usa.gov publicdomain label 1.0) per data.gov; BLM no-warranty disclaimer",
+   "note": "LIVE-OK: agency_gis; covers: BLM RMA/SRMA/interpretive/historic/airstrip sites; n=181; refs: US-5754,US-5760,US-5762,US-5763,US-5764,US-5765,US-5766,US-5767,... (181 refs total); parks: US-5754 US-5760 US-5762 US-5763 US-5764 US-5765 US-5766 US-5767; gain: 258 of 688 parks in US-UT without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group4; Fetched layer metadata only on BLM server (gis.blm.gov): polygon, MaxRecordCount 2000, fields FET_NAME/FET_TYPE/FET_SUBTYPE/UNIT_NAME/ADM_UNIT_CD. Many named sites are recreation SITES not RMA polygons; match by FET_NAME. Pin-only rows need point-in-",
+   "publisher": "BLM Utah Recreation Sites (Polygon) - BLM REST",
+   "title": "BLM Utah Recreation Sites (Polygon) - BLM REST | BLM UT Recreation Sites (Polygon)",
+   "url": "https://gis.blm.gov/utarcgis/rest/services/Recreation/BLM_UT_RECS/FeatureServer/1"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-UT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "BLM: no warranty; see dataset metadata",
+   "note": "LIVE-OK: agency_gis; covers: All BLM UT sites above; San Rafael Swell Recreation Area; gain: 258 of 688 parks in US-UT without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group4; Page lists geodatabase and web-service options; no direct URLs scraped.",
+   "publisher": "BLM Utah GIS data library (geodatabase + web service)",
+   "title": "BLM Utah GIS data library (geodatabase + web service) | Recreation Sites (points and polygons); Congressionally-Designated Recreation Areas",
+   "url": "https://www.blm.gov/services/geospatial/GISData/utah"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-UT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "BLM no-warranty; check metadata",
+   "note": "LIVE-OK: agency_gis; covers: San Rafael Swell RA - candidates for Mexican Mountain/Crack Canyon/Little Wild Horse/Head of Sinbad area refs; gain: 258 of 688 parks in US-UT without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group4; Not fetched; URL from search result.",
+   "publisher": "BLM UT Congressionally Designated Recreation Areas (Arc/Polygon)",
+   "title": "BLM UT Congressionally Designated Recreation Areas (Arc/Polygon) | BLM UT Congressionally Designated Recreation Areas",
+   "url": "https://gis.blm.gov/utarcgis/rest/services/Recreation/BLM_UT_RecAreas/MapServer/layers"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-UT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Public domain (usa.gov publicdomain label 1.0) per data.gov; BLM no-warranty disclaimer (assumed standard BLM); verify",
+   "note": "LIVE-OK: agency_gis; covers: Wilderness Area refs (Lone Mesa Viewpoint, Crack Canyon, Link Flats); also UGRC Utah Wilderness Areas https://gis.utah.gov/products/sgid/boundaries/wilderness; gain: 258 of 688 parks in US-UT without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group4; Wilderness polygons are named wilderness units (e.g. San Rafael Swell WAs); input names are trailhead/viewpoints not wilderness units.",
+   "publisher": "BLM UT Designated Wilderness / WSA (BLM; also UGRC mirrors)",
+   "title": "BLM UT Designated Wilderness / WSA (BLM; also UGRC mirrors) | BLM UT Designated Wilderness",
+   "url": "https://catalog.data.gov/dataset/blm-ut-designated-wilderness-arc"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-UT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No license stated on page; UGRC default CC BY 4.0 unless metadata says otherwise; contact TLA-GIS@utah.gov",
+   "note": "LIVE-OK: agency_gis; covers: All UT state-managed refs (state recreation areas/sites, WMAs, hatcheries, Old Iron Town, Butch Cassidy monument) as owner polygons; also federal tracts; gain: 258 of 688 parks in US-UT without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group4; Weekly updates, 1:24,000 best-effort. Best statewide stand-in because no standalone Utah State Parks or DWR WMA boundary layer found in SGID recreation index.",
+   "publisher": "UGRC SGID Utah Land Ownership (SITLA/BLM) incl. state parks & DWR owner classes",
+   "title": "UGRC SGID Utah Land Ownership (SITLA/BLM) incl. state parks & DWR owner classes | Land_Ownership (FeatureServer 0 at gis.trustlands.utah.gov/mapping/rest/services/Land_Ownership/FeatureServer/0)",
+   "url": "https://gis.utah.gov/data/cadastre/land-ownership"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-UT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Utah State Parks website terms; not stated on page",
+   "note": "LIVE-OK: pdf_index; covers: Old Iron Town SHP US-12069 and any true state park refs; parks: US-12069; gain: 258 of 688 parks in US-UT without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group4; Pattern: stateparks.utah.gov/parks/<slug>/publications; PDFs under wp-content/uploads/sites/13/. Spot check done on Jordanelle only.",
+   "publisher": "Utah State Parks park publications (per-park maps)",
+   "title": "Utah State Parks park publications (per-park maps) | Per-park /parks/<slug>/publications pages",
+   "url": "https://stateparks.utah.gov/parks/jordanelle/publications"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-OR",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Copyright ODFW NRIMP; StreamNet; terms not stated",
+   "note": "LIVE-OK: agency_gis; covers: State Fish Hatchery; n=16; refs: US-10612,US-10613,US-12082,US-12977,US-12978,US-12980,US-12981,US-12983,US-12985,US-12986,US-12988,US-12990,US-12993,US-12994,US-12995,US-13078; parks: US-10612 US-10613 US-12082 US-12977 US-12978 US-12980 US-12981 US-12983 US-12985 US-12986 US-12988 US-12990 US-12993 US-12994 US-12995 US-13078; gain: 45 of 423 parks in US-OR without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group4; POINT layer only: no boundaries. Hatchery polygons need Oregon tax lots / parcels.",
+   "publisher": "ODFW Hatchery and Hatchery Facilities (points)",
+   "title": "ODFW Hatchery and Hatchery Facilities (points) | Hatchery and Hatchery Facilities",
+   "url": "https://nrimp.dfw.state.or.us/arcgis/rest/services/Hatchery/Hatchery_and_Hatchery_Facilities/MapServer/0"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-AK",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "BLM no-warranty; check metadata",
+   "note": "LIVE-OK: agency_gis; covers: BLM RMA / Recreation Sites (Tangle Lakes, Delta, Paxson etc.); n=19; refs: US-10464,US-11798,US-11799,US-11800,US-11801,US-11802,US-11803,US-11805,US-11825,US-11826,US-11827,US-11830,US-11831,US-11832; parks: US-10464 US-11798 US-11799 US-11800 US-11801 US-11802 US-11803 US-11805 US-11825 US-11826 US-11827 US-11830 US-11831 US-11832 US-11833 US-11836 US-11850 US-11851 US-11853; gain: 43 of 179 parks in US-AK without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group4; Not fetched; URL from search result. Gulkana/Delta WSR area sites are BLM Glennallen FO.",
+   "publisher": "BLM Alaska Recreation (BLM REST)",
+   "title": "BLM Alaska Recreation (BLM REST) | Layer 100 Recreation Area; others",
+   "url": "https://gis.blm.gov/akarcgis/rest/services/Recreation/BLM_AK_Recreation/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-AK",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Alaska DNR website; not stated",
+   "note": "LIVE-OK: pdf_index; covers: State parks and recreation sites above; gain: 43 of 179 parks in US-AK without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group4; Index page located via search, not fetched. Alt index https://dnr.alaska.gov/parks/aspunits/southeast/seindex.htm",
+   "publisher": "Alaska State Parks brochures and maps",
+   "title": "Alaska State Parks brochures and maps | Brochure PDFs by unit",
+   "url": "https://dnr.alaska.gov/parks/brochures.htm"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-NY",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Copyright blank; no terms stated",
+   "note": "LIVE-OK: agency_gis; covers: State Park/state recreation area refs: Thompsons Lake SP, Miller Field, Great Kills, Canarsie Pier, Breezy Point Tip, etc.; gain: 21 of 847 parks in US-NY without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group4; This is a NYS DOT DEV mirror, not the OPRHP publishing host: treat as secondary. Primary OPRHP boundary dataset on data.gis.ny.gov not located.",
+   "publisher": "OPRHP Boundary (NYS Parks, Recreation and Historic Preservation)",
+   "title": "OPRHP Boundary (NYS Parks, Recreation and Historic Preservation) | OPRHP Boundary",
+   "url": "https://gisportaldev.dot.ny.gov/server/rest/services/CulturalResources/Cultural_Resources/MapServer/16"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-GA",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated; 2015 vintage",
+   "note": "LIVE-OK: agency_gis; covers: State parks/historic sites/natural areas/WMA: US-2200,US-3724,US-7471,US-7858,US-7861,US-13652,US-7467; parks: US-13652 US-2200 US-3724 US-7467 US-7471 US-7858 US-7861; gain: 11 of 232 parks in US-GA without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group4; Not fetched; secondary mirror, old data.",
+   "publisher": "Georgia DNR Lands 2015 (GCAMP Fisheries mirror; GADNRLands2015)",
+   "title": "Georgia DNR Lands 2015 (GCAMP Fisheries mirror; GADNRLands2015) | GADNRLands2015",
+   "url": "https://geospat.gatech.edu/arcgis/rest/services/Coast/GCAMP_Fisheries/MapServer/20"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-GA",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC0 1.0",
+   "note": "LIVE-OK: agency_gis; covers: Coastal GA only (Okefenokee not coastal); gain: 11 of 232 parks in US-GA without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group4; Outdated (2015); fallback only.",
+   "publisher": "NOAA ESI Georgia 2015 Parks-Managed Areas",
+   "title": "NOAA ESI Georgia 2015 Parks-Managed Areas | ESI PARKS-MANAGED AREAS",
+   "url": "https://catalog.data.gov/dataset/georgia-2015-esi-parks-managed-areas-polygons-points"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-MO",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Copyright Missouri Dept of Conservation; terms not stated",
+   "note": "LIVE-OK: agency_gis; covers: State Conservation Areas; n=2; refs: US-10575,US-10576; parks: US-10575 US-10576; gain: 8 of 554 parks in US-MO without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group4; Fetched layer info. Fields incl. Area_ID and County.",
+   "publisher": "MDC Lands (Conservation Areas)",
+   "title": "MDC Lands (Conservation Areas) | MDC Lands (Area_Name, OFF_Name, County)",
+   "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Boundaries/MDC_Administrative_Boundaries/MapServer/0"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-MO",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No license/access info in item",
+   "note": "LIVE-OK: agency_gis; covers: US-5715 Roger Pryor Pioneer Backcountry SP; US-5716 Bruce R. Watkins Cultural Heritage Center SHS; parks: US-5715 US-5716; gain: 8 of 554 parks in US-MO without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group4; Fetched iteminfo only. Covers parks and state historic sites.",
+   "publisher": "Missouri State Parks Boundaries (MoDNR)",
+   "title": "Missouri State Parks Boundaries (MoDNR) | Missouri_State_Parks_Boundaries",
+   "url": "https://gis.dnr.mo.gov/server/rest/services/parks/Missouri_State_Parks_Boundaries/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-WV",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Access/Use constraints: none stated; published 2000, last meta update 2005",
+   "note": "LIVE-OK: agency_gis; covers: US-9915 Cedar Lakes SRA; US-9739 Forks of the Coal SNA (may be newer); parks: US-9739 US-9915; gain: 5 of 170 parks in US-WV without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group4; Very old (2000) and 1:24000. Verify park boundaries against parcels.",
+   "publisher": "WVGISTC West Virginia State Parks (UTM83)",
+   "title": "WVGISTC West Virginia State Parks (UTM83) | state_park_utm83",
+   "url": "https://wvgis.wvu.edu/metadata_waf/state_park_utm83.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-WV",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Provided as-is, Tax Year 2023; MapWV terms: free, as-is, may copy",
+   "note": "LIVE-OK: parcel; covers: Counties: Jackson (Cedar Lakes), Kanawha (Forks of the Coal), Hatchery counties; gain: 5 of 170 parks in US-WV without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group4; Fetched layer list. Statewide polygon.",
+   "publisher": "WV Parcels (WVGISTC services)",
+   "title": "WV Parcels (WVGISTC services) | WVParcels (layer 0)",
+   "url": "https://services.wvgis.wvu.edu/arcgis/rest/services/Planning_Cadastre/WV_Parcels/MapServer/layers"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-NV",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Public federal data; acknowledge BLM Nevada State Office in derived products; no warranty",
+   "note": "LIVE-OK: agency_gis; covers: 26 BLM Herd Management Areas (US-10844,10851,13013,13017,13019,13024,13029,13031,13034,13035,13041-13053,13119,13122,13123,13128-13138); parks: US-10844; gain: 165 of 357 parks in US-NV without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group5; BLM-hosted REST (not ArcGIS Online). Also FeatureServer at same path. Spot-check by name not done.",
+   "publisher": "BLM Nevada Wild Horse and Burro HMA polygons",
+   "title": "BLM Nevada Wild Horse and Burro HMA polygons | BLM_NV_Wild_Horse_and_Burro_Herd_Management_Areas (layer 0)",
+   "url": "https://gis.blm.gov/nvarcgis/rest/services/BLM_Nevada_Wild_Horse_Burro/BLM_NV_Wild_Horse_and_Burro_Herd_Management_Areas/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-NV",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "BLM makes no warranty for unintended uses; consult metadata; Surface Management Agency layer has known alignment errors",
+   "note": "LIVE-OK: agency_gis; covers: BLM wilderness (US-9247 Eldorado, US-9258 Ireteba Peaks); NCA (US-13020 Smoke Creek); HMAs; ACEC; parks: US-13020 US-9247 US-9258; gain: 165 of 357 parks in US-NV without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group5; Page lists shapefile/FGDB downloads; recreation, historic sites and airstrips not listed there. Do not bulk download; hand pick.",
+   "publisher": "BLM Nevada GIS data download page",
+   "title": "BLM Nevada GIS data download page | NLCS Wilderness Area; NLCS National Monuments and NCAs; ACEC; HMA shapefile (6/30/2017)",
+   "url": "https://www.blm.gov/services/geospatial/GISData/nevada"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-NV",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Data provided by each county; (c) Nevada Division of State Lands; no license text",
+   "note": "LIVE-OK: parcel; covers: 16 counties (no Esmeralda); stale 2018; gain: 165 of 357 parks in US-NV without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group5; Fallback only; older.",
+   "publisher": "Nevada Statewide Parcels (Division of State Lands via DOT)",
+   "title": "Nevada Statewide Parcels (Division of State Lands via DOT) | All Parcels -2018-12-31",
+   "url": "https://gis.dot.nv.gov/agsphs/rest/services/Reference/Statewide_Parcels/MapServer/0"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-NV",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Use restrictions apply (not specified); (c) Nevada State Demographer",
+   "note": "LIVE-OK: parcel; covers: 17 counties incl. Esmeralda (Regrid-sourced); most updated 10/22/2024. Key counties: Clark, Washoe, Lincoln, Nye, Elko, White Pine, Pershing, Churchill, Lyon, Mineral, Humboldt, Eureka, Lander, Carson; gain: 165 of 357 parks in US-NV without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group5; Best parcel source for hatcheries, state/national historic sites, recreation sites, State Historical Monuments (small lots).",
+   "publisher": "County Parcels in Nevada (Nevada State Demographer / Div of Water Resources)",
+   "title": "County Parcels in Nevada (Nevada State Demographer / Div of Water Resources) | County Parcels (layer 0)",
+   "url": "https://arcgis.water.nv.gov/arcgis/rest/services/BaseLayers/County_Parcels_in_Nevada/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-NV",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No terms stated on page; privacy policy only",
+   "note": "LIVE-OK: pdf_index; covers: ~67 State Historical Monuments (markers); US-13274..13465 range; parks: US-13274; gain: 165 of 357 parks in US-NV without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group5; Markers are points; no polygons. Maintained by NV State Parks. PDFs: https://shpo.nv.gov/uploads/documents/Markers_Sorted_by_Number_current.pdf and Markers_Sorted_by_County_current.pdf",
+   "publisher": "SHPO Nevada Historical Markers lists and booklet",
+   "title": "SHPO Nevada Historical Markers lists and booklet | Markers sorted by number / county PDFs; marker booklet 2022",
+   "url": "https://shpo.nv.gov/nevadas-historical-markers/historical-markers"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-NV",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not read",
+   "note": "LIVE-OK: pdf_index; covers: US-4438 Buckland Station; other NDSP-run historic sites; parks: US-4438; gain: 165 of 357 parks in US-NV without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group5; Seen in search; Buckland Station is a unit/site of Fort Churchill SHP, not standalone.",
+   "publisher": "Nevada State Parks park pages (maps/brochures)",
+   "title": "Nevada State Parks park pages (maps/brochures) | Park brochure/map PDFs",
+   "url": "https://parks.nv.gov/parks/fort-churchill-state-historic-park"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-AB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - Alberta; record modified 2026-08-19",
+   "note": "LIVE-OK: agency_gis; covers: Provincial recreation areas, natural areas, ecological reserves, provincial parks etc.: CA-2938,2982,2991,3018,5491 (PRAs); CA-0663,2969,3076,3089?,3111,5145,5933 (Natural Areas); parks: CA-0663 CA-2938 CA-3089; gain: 64 of 459 parks in CA-AB without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group5; Replaces older PRA/Natural Area datasets. KML: https://www.albertaparks.ca/media/6492787/protected-area-kmz-outline.zip. Nose Hill Park (CA-3089) is City of Calgary, check.",
+   "publisher": "Parks and Protected Areas of Alberta (AEP)",
+   "title": "Parks and Protected Areas of Alberta (AEP) | Layer 0 (also FeatureServer/0)",
+   "url": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-AB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No license stated; copyright blank; presumed OGL-Alberta",
+   "note": "LIVE-OK: agency_gis; covers: CA-6126 Livingston, CA-6134 Athabasca Ranch (PLUZ rec parks); parks: CA-6126 CA-6134; gain: 64 of 459 parks in CA-AB without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group5; Name match likely under Livingstone PLUZ; Athabasca Ranch PLUZ. Info page https://www.alberta.ca/public-land-use-zones",
+   "publisher": "Public Land Use Zone (Alberta)",
+   "title": "Public Land Use Zone (Alberta) | Public Land Use Zone",
+   "url": "https://geospatial.alberta.ca/mimas/rest/services/boundaries/land_public_land_use_zone_public/FeatureServer/0"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-AB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - Alberta; modified 2026-04-17",
+   "note": "LIVE-OK: agency_gis; covers: CA-6396 Leitch Collieries, CA-6094 Big Rock (provincial sites) only as HRV sections; parks: CA-6094 CA-6396; gain: 64 of 459 parks in CA-AB without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group5; Polygons are land sections with historic resource value, not site boundaries. Weak fit.",
+   "publisher": "Listing of Historic Resources (Alberta Culture)",
+   "title": "Listing of Historic Resources (Alberta Culture) | Historic resource polygons (shapefile)",
+   "url": "https://open.canada.ca/data/en/dataset/03ec47c6-d5de-4ab5-afb6-546009c93282"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-AB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - Canada (Federal Heritage Designations CSV dataset)",
+   "note": "LIVE-OK: pdf_index; covers: ~46 National Historic Sites (CA-4771..6395) incl. Banff/Jasper/Waterton in-park sites; parks: CA-4771; gain: 64 of 459 parks in CA-AB without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group5; CSV: https://donnees.iriu.ca/dataset/49d5ba7d-d860-40d9-9183-892979e4acbe (no polygons confirmed). Banff/Jasper NHS lie inside national park legislative boundaries.",
+   "publisher": "Parks Canada Directory of Federal Heritage Designations",
+   "title": "Parks Canada Directory of Federal Heritage Designations | NHS entries (point/text), no polygons",
+   "url": "https://parks.canada.ca/culture/adpf-dfhd"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-ND",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "State disclaimer: not final publication, no liability; data updated 8/1/2011",
+   "note": "LIVE-OK: agency_gis; covers: US-5741..5746 State Forests; Turtle Mountain, Homen, Mouse River, Tetrault Woods, Nowesta, Sheyenne River; parks: US-5741; gain: 41 of 152 parks in US-ND without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group5; Old (2011); also ND_State_Parks layer on same server. Hub equivalent at services1.arcgis.com NDGISHUB_State_Forest not fetched.",
+   "publisher": "ND State Forest lands (ND Forest Service, hosted by ND DMR)",
+   "title": "ND State Forest lands (ND Forest Service, hosted by ND DMR) | ND_State_Forest (layer 0)",
+   "url": "https://gis.dmr.nd.gov/dmrpublicservices/rest/services/OilGasPublicMapDataVectorTiles/ND_State_Forest/MapServer/0"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-ND",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No terms stated",
+   "note": "LIVE-OK: pdf_index; covers: Historic Sites (Fort Totten, Fort Abercrombie, Whitestone Hill etc.); gain: 41 of 152 parks in US-ND without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group5; No boundary GIS; use statewide parcels.",
+   "publisher": "State Historical Society of ND historic sites page",
+   "title": "State Historical Society of ND historic sites page | 60 sites list + Google My Map; Museums brochure PDF https://www.history.nd.gov/book/shsnd/MuseumsHistoricSitesBrochure/pdf/MuseumsHistoricSitesBroc",
+   "url": "https://history.nd.gov/historicsites"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-NC",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No licence named; (c) NC Integrated Cadastral Data Exchange (EPA funded)",
+   "note": "LIVE-OK: parcel; covers: All 100 counties + EBCI lands; state historic sites, hatcheries, fishing lake, historic sites; gain: 25 of 244 parks in US-NC without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group5; State-hosted REST.",
+   "publisher": "NC OneMap Parcels (NC1Map_Parcels)",
+   "title": "NC OneMap Parcels (NC1Map_Parcels) | Parcels (polys); points layer 0",
+   "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Parcels/MapServer/1"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-NC",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No warranty; boundaries approximate, not for regulatory use",
+   "note": "LIVE-OK: agency_gis; covers: US-6882 Bladen Lakes, 6910 Headwaters, 10511 Jessups Mill Pond (State Game Lands); US-6963 Nutbush? US-12662 Harmon Den WMA; parks: US-12662 US-6882 US-6963; gain: 25 of 244 parks in US-NC without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group5; KMZ not shapefile. Do not download zips per rules. Region pages: https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands-maps/mountain-game-land-maps",
+   "publisher": "NCWRC Game Lands boundaries (KMZ) and per-game-land PDF maps",
+   "title": "NCWRC Game Lands boundaries (KMZ) and per-game-land PDF maps | Statewide game lands KMZ (Aug 2025); regional PDFs; interactive map",
+   "url": "https://ncwildlife.gov/gamelands"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-NC",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not read",
+   "note": "LIVE-OK: pdf_index; covers: US-8010 McKinney Lake, US-8011 Bobby N. Setzer hatcheries; US-8226 Upchurch Lake; parks: US-8010 US-8011 US-8226; gain: 25 of 244 parks in US-NC without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group5; No boundary GIS found; use NC OneMap parcels.",
+   "publisher": "NCWRC hatcheries and fishing lakes pages",
+   "title": "NCWRC hatcheries and fishing lakes pages | Hatchery pages",
+   "url": "https://www.ncwildlife.gov/fishing/hatcheries-and-stocking/ncwrc-hatcheries"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-AZ",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not read",
+   "note": "LIVE-OK: agency_gis; covers: State-owned trust parcels; gain: 11 of 110 parks in US-AZ without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group5; Surfaced via search only. Not a parcel layer for private/county.",
+   "publisher": "Arizona State Land Dept / AZGeo server State Trust Parcels",
+   "title": "Arizona State Land Dept / AZGeo server State Trust Parcels | State_Trust_Parcels",
+   "url": "https://server.azgeo.az.gov/arcgis/rest/services/azland/State_Trust_Parcels/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-AZ",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not read",
+   "note": "LIVE-OK: parcel; covers: Statewide parcels incl. La Paz (River Island SP), Graham (Dankworth Pond SP), Coconino/Mohave (Stateline Campground area); gain: 11 of 110 parks in US-AZ without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group5; From search listing; not fetched/verified. Mohave/Coconino for BLM sites.",
+   "publisher": "Arizona Water Resources statewide parcels (azwatermaps)",
+   "title": "Arizona Water Resources statewide parcels (azwatermaps) | Parcels",
+   "url": "https://azwatermaps.azwater.gov/arcgis/rest/services/General/Parcels/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-TN",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No description or constraints listed; credits TDEC Div. of Natural Areas",
+   "note": "LIVE-OK: agency_gis; covers: US-3941 Grundy Forest, 6237 Carter, 6247 Hawkins Cove, 6259 Ozone Falls, 6261 Pogue Creek, 6273 Vine Cedar Glade, 6280 Windows Cliffs; Sellars Farm Archaeological Reserve?; parks: US-3941; gain: 13 of 272 parks in US-TN without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group5; State-hosted REST. Points layer TN_Natural_Areas_points also exists.",
+   "publisher": "TDEC Tennessee Natural Areas",
+   "title": "TDEC Tennessee Natural Areas | TN_Natural_Areas (layer 0)",
+   "url": "https://tdeconline.tn.gov/arcgis/rest/services/TN_Natural_Areas/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-TN",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Free to use incl commercial; approximate, tax purposes only; no bulk/automated",
+   "note": "LIVE-OK: parcel; covers: Excludes Chester, Davidson, Hamilton, Hickman, Knox, Montgomery, Rutherford, Shelby, Williamson; gain: 13 of 272 parks in US-TN without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group5; Per-county request. Relevant: Lauderdale, Franklin/Grundy, Cannon/Warren, Henderson (Davy Crockett), Carroll (Lake Halford?).",
+   "publisher": "TN Comptroller county parcel data",
+   "title": "TN Comptroller county parcel data | County parcel shapefiles by request form",
+   "url": "https://comptroller.tn.gov/office-functions/pa/gisredistricting/redistricting-and-land-use-maps/parcel-data.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-LA",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not read",
+   "note": "LIVE-OK: pdf_index; covers: US-2360,2365,2373,2374 State Parks; US-10354,10447 State Historic Sites; parks: US-10354 US-2360; gain: 5 of 122 parks in US-LA without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group5; Search only; per-park map PDFs unverified.",
+   "publisher": "Louisiana State Parks (lastateparks.com)",
+   "title": "Louisiana State Parks (lastateparks.com) | Park pages and trail maps",
+   "url": "https://www.lastateparks.com/all-parks"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-NS",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Nova Scotia Open Government Licence (ns-oglns)",
+   "note": "LIVE-OK: agency_gis; covers: Nature Reserves, wilderness/protected areas, likely some provincial parks; CA-1851, CA-6224, CA-3053(if protected); parks: CA-1851 CA-3053 CA-6224; gain: 125 of 489 parks in CA-NS without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group6; Mirror of NS open data record; formats SHP/GeoJSON/KML; published 2020-06-11, no modified date; confirm provincial park polygons present (esp. Lawrencetown, Rainbow Haven, McCormacks, Scots Bay, Fort Point) before use",
+   "publisher": "Nova Scotia Protected Areas System (open data, NS Environment)",
+   "title": "Nova Scotia Protected Areas System (open data, NS Environment) | The Nova Scotia Protected Areas System",
+   "url": "https://donnees.iriu.ca/dataset/21a1cbdc-7a9d-cdf0-d272-6dbb965e97dc"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-NS",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Nova Scotia Open Government Licence",
+   "note": "LIVE-OK: agency_gis; covers: Licence text for NS open datasets; gain: 125 of 489 parks in CA-NS without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group6; Reference for licence terms",
+   "publisher": "NS Open Data Portal Open Government Licence",
+   "title": "NS Open Data Portal Open Government Licence | n/a",
+   "url": "https://support.novascotia.ca/node/141"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-NS",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "NS Open Government Licence (assumed; confirm on record)",
+   "note": "LIVE-OK: agency_gis; covers: Provincial wildlife area, provincial park land held as Crown land (CA-1849 Shubenacadie, CA-0461 etc.); parks: CA-0461 CA-1849; gain: 125 of 489 parks in CA-NS without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group6; Not opened; from search result. Use as ownership proxy for provincial parks/wildlife areas",
+   "publisher": "Nova Scotia Crown Land (open data)",
+   "title": "Nova Scotia Crown Land (open data) | Crown Land",
+   "url": "https://donnees.iriu.ca/dataset/faef7b10-6357-8918-ad93-26d64ad82c83"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-NS",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Crown copyright; no explicit reuse licence seen",
+   "note": "LIVE-OK: pdf_index; covers: Provincial Park refs CA-0461, 0465, 0478, 0941, 1799; parks: CA-0461; gain: 125 of 489 parks in CA-NS without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group6; Per-park pages and guide https://parks.novascotia.ca/sites/default/files/NS%20Parks%20Guide%202026%20ENG.pdf (map-level only)",
+   "publisher": "NS Provincial Parks (parks.novascotia.ca) all-parks index and 2026 guide PDF",
+   "title": "NS Provincial Parks (parks.novascotia.ca) all-parks index and 2026 guide PDF | n/a",
+   "url": "https://parks.novascotia.ca/parks/all/all?page=2"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-NS",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Crown copyright",
+   "note": "LIVE-OK: pdf_index; covers: Nature Reserves, wilderness areas, wildlife areas; also novascotia.ca/nse/protectedareas/map.asp; gain: 125 of 489 parks in CA-NS without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group6; Dated; use for tract name confirmation (pin-inside-differently-named-area flags)",
+   "publisher": "NS Parks and Protected Areas Map Index (Dec 2015 new designations)",
+   "title": "NS Parks and Protected Areas Map Index (Dec 2015 new designations) | n/a",
+   "url": "https://novascotia.ca/parksandprotectedareas/pdf/Parks-and-Protected-Areas-Map-Index-New-Designations-Dec_2015.pdf"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "ca-ogl-lgo (Open Government Licence - Canada)",
+   "note": "LIVE-OK: agency_gis; covers: National Parks, NPRs, NMCAs only; no NHS; gain: country-wide; source: sources-merged-892-nov11.xlsx / US-Canada sources / group6; Checked: description does not include national historic sites",
+   "publisher": "Places administered by Parks Canada",
+   "title": "Places administered by Parks Canada | Places administered by Parks Canada",
+   "url": "https://donnees.iriu.ca/dataset/a69983f0-5be0-4faa-9efd-0540eb69ac81"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-BC",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - British Columbia",
+   "note": "LIVE-OK: agency_gis; covers: Provincial Parks, Ecological Reserves, Protected Areas, Conservancies: CA-3186, 3211, 3778, 3493, 5547, 3334, 3408, 3888; parks: CA-3186; gain: 33 of 1254 parks in CA-BC without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group6; Record modified 2026-01-28; custom download via BC Geographic Warehouse (catalogue.data.gov.bc.ca)",
+   "publisher": "BC Parks, Ecological Reserves, and Protected Areas",
+   "title": "BC Parks, Ecological Reserves, and Protected Areas | WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW (WMS pub: namespace; KML)",
+   "url": "https://open.canada.ca/data/dataset/1130248f-f1a3-4956-8b2e-38d29d3e4af7"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-BC",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - British Columbia (assumed; confirm)",
+   "note": "LIVE-OK: agency_gis; covers: CA-3888 Negiy/Nekite Estuary Conservancy etc.; parks: CA-3888; gain: 33 of 1254 parks in CA-BC without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group6; Not opened; also covered by TA_PARK_ECORES_PA_SVW",
+   "publisher": "TANTALIS Conservancy Areas",
+   "title": "TANTALIS Conservancy Areas | Conservancy Areas",
+   "url": "https://donnees.iriu.ca/en/dataset/550b3133-2004-468f-ba1f-b95d0e281e78"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-NT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "See opendata.gov.nt.ca/about (GNWT open data terms)",
+   "note": "LIVE-OK: agency_gis; covers: Parcels/land tenure/NT parks downloads; gain: 50 of 68 parks in CA-NT without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group6; Index page seen in search only",
+   "publisher": "NWT Centre for Geomatics data resources",
+   "title": "NWT Centre for Geomatics data resources | n/a",
+   "url": "https://www.geomatics.gov.nt.ca/en/resources"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-NU",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Government of Nunavut website; no data licence",
+   "note": "LIVE-OK: pdf_index; covers: CA-0831 Inuujarvik, CA-4585 Northwest Passage Trail, other territorial parks; parks: CA-0831 CA-4585; gain: 14 of 48 parks in CA-NU without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group6; Master plan PDFs contain park maps (e.g. https://nunavutparks.com/wp-content/uploads/2022/03/20200325-Final-Katannilik-Management-Plan.pdf)",
+   "publisher": "Nunavut Parks master/management plans (nunavutparks.com)",
+   "title": "Nunavut Parks master/management plans (nunavutparks.com) | n/a",
+   "url": "https://nunavutparks.com/faqs/"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-WY",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated in search snippet; check service metadata",
+   "note": "LIVE-OK: agency_gis; covers: Statewide parcel layer (2022); county priority: Fremont, Sweetwater, Carbon, Natrona, Park, Sublette, Johnson, Converse; gain: 79 of 281 parks in US-WY without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group6; From search result, not fetched; vintage 2022",
+   "publisher": "Wyoming State Lands Parcels (OSLI)",
+   "title": "Wyoming State Lands Parcels (OSLI) | Parcels2022",
+   "url": "https://gis2.statelands.wyo.gov/arcgis/rest/services/Parcels2022/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-WY",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated",
+   "note": "LIVE-OK: agency_gis; covers: State Historic Sites points: US-6119, 6219, 13244, US-6232 Big Sandy Crossing, etc.; parks: US-6119 US-6232; gain: 79 of 281 parks in US-WY without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group6; Points not polygons",
+   "publisher": "Wyoming State Parks historic sites points (WYDEQ-hosted)",
+   "title": "Wyoming State Parks historic sites points (WYDEQ-hosted) | WYSPHST_pts",
+   "url": "https://gis.deq.wyo.gov/arcgis/rest/services/WYSPHST_pts/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-WY",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "US Government public domain (BLM data disclaimer)",
+   "note": "LIVE-OK: agency_gis; covers: 30 BLM RMAs, 13 interpretive sites, 8 historic preservation, 4 SRMAs, 3 historic areas, herd mgmt area in WY; gain: 79 of 281 parks in US-WY without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group6; Wyoming-specific recreation layer not confirmed; many BLM interpretive/point sites may be points; NSMA SMA polygons for ownership fallback",
+   "publisher": "BLM national recreation site and RMA polygons (data.gov catalog / gis.blm.gov)",
+   "title": "BLM national recreation site and RMA polygons (data.gov catalog / gis.blm.gov) | BLM National Recreation Site Polygons; state RMAs vary",
+   "url": "https://catalog.data.gov/dataset/blm-natl-recreation-site-polygons"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-WY",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "State of Wyoming website terms",
+   "note": "LIVE-OK: pdf_index; covers: Lake Cameahwait SRA and state park/historic sites; gain: 79 of 281 parks in US-WY without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group6; Example GeoPDF only",
+   "publisher": "Wyoming State Parks maps (GeoPDF per park)",
+   "title": "Wyoming State Parks maps (GeoPDF per park) | n/a",
+   "url": "https://wyoparks.wyo.gov/index.php/files/453/Glendo/1218/Glendo-GeoPDF.pdf"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-KS",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "KDWP website terms",
+   "note": "LIVE-OK: pdf_index; covers: US-7386, 7402, 7405 State Fishing Lakes; hatcheries; parks: US-7386; gain: 18 of 140 parks in US-KS without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group6; KMZ page: ksoutdoors.gov/Fishing/Where-to-Fish-in-Kansas/Bathymetric-Lake-Maps/KMZ-Google-Earth-Version-of-the-Maps (water polygons only)",
+   "publisher": "KDWP Fishing Atlas and bathymetric lake KMZ maps",
+   "title": "KDWP Fishing Atlas and bathymetric lake KMZ maps | n/a",
+   "url": "https://kdwpt.ks.gov/KDWP-Info/Locations/Hunting-Fishing-Atlases/Fishing-Atlas"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-MA",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No licence stated; caveat not a legal record of ownership; updated Aug 2026",
+   "note": "LIVE-OK: agency_gis; covers: State parks/reserves/rec areas (DCR), WMA (MassWildlife): all 7 MA refs; gain: 9 of 414 parks in US-MA without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group6; MassGIS-hosted service gis.eea.mass.gov Protected_and_Recreational_OpenSpace_Polygons MapServer layer 0 (from search); ArcGIS Online items listed on the page are hand_download. Zip downloads not fetched",
+   "publisher": "MassGIS Protected and Recreational OpenSpace",
+   "title": "MassGIS Protected and Recreational OpenSpace | OPENSPACE_POLY",
+   "url": "https://www.mass.gov/info-details/massgis-data-protected-and-recreational-openspace"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-MA",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "MassGIS data terms (not stated in snippet); parcels not survey-grade",
+   "note": "LIVE-OK: parcel; covers: Statewide by municipality: Lynn, Nahant, Turners Falls/Montague, etc.; gain: 9 of 414 parks in US-MA without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group6; Page only",
+   "publisher": "MassGIS Property Tax Parcels (Level 3)",
+   "title": "MassGIS Property Tax Parcels (Level 3) | Level 3 Assessors Parcels",
+   "url": "https://www.mass.gov/info-details/massgis-data-property-tax-parcels"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-MT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "MSL public data; no restriction seen, confirm",
+   "note": "LIVE-OK: parcel; covers: Statewide parcels: Brownes Lake FWA, BLM Garnet Ghost Town, Devils Elbow, Judith Landing; gain: 8 of 254 parks in US-MT without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group6; From search result, not fetched",
+   "publisher": "Montana State Library Cadastral (MSDI) map service",
+   "title": "Montana State Library Cadastral (MSDI) map service | Montana Parcels (layer 1)",
+   "url": "https://gisservice.mt.gov/ArcGIS/rest/services/msdi_cadastral_map_v1/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-MT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "MSL; see metadata XML",
+   "note": "LIVE-OK: agency_gis; covers: Federal/state managed lands incl. FWP, BLM, FWS (Halfbreed Lake NWR, Bison Range); gain: 8 of 254 parks in US-MT without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group6; Metadata XML only; data not downloaded",
+   "publisher": "Montana Managed Areas (MSDI Administrative Boundaries)",
+   "title": "Montana Managed Areas (MSDI Administrative Boundaries) | Montana Managed Areas",
+   "url": "https://ftpgeoinfo.msl.mt.gov/data/Spatial/MSDI/AdministrativeBoundaries/MontanaManagedAreas.xml"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-PA",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "PASDA terms; Commonwealth data generally open, confirm per layer",
+   "note": "LIVE-OK: agency_gis; covers: Pennsylvania state park boundaries (none of the 3 refs are state parks); gain: 4 of 484 parks in US-PA without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group6; From search result",
+   "publisher": "PASDA DCNR MapServer",
+   "title": "PASDA DCNR MapServer | DCNR layers (state parks, forests)",
+   "url": "https://maps.pasda.psu.edu/server/rest/services/pasda/DCNR/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-ID",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not retrieved; no terms on gis.idaho.gov page",
+   "note": "LIVE-OK: agency_gis; covers: Statewide; fallback for ITD, IDL, IDFG, BLM layers; gain: 126 of 341 parks in US-ID without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Linked from https://gis.idaho.gov/ ; portal itself not fetched",
+   "publisher": "INSIDE Idaho (Univ. of Idaho clearinghouse)",
+   "title": "INSIDE Idaho (Univ. of Idaho clearinghouse)",
+   "url": "https://insideidaho.org/"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-ID",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No statewide license seen; per-county terms",
+   "note": "LIVE-OK: parcel; covers: Counties by pin: Franklin (Oxford Slough), Cassia (Castle Rocks), Bonner (Priest Lake, Cavanaugh Bay), Benewah (St. Maries WMA), Latah (Floodwood), Ada (Eagle Hatchery), Bannock (Lava Hot Springs), Bu; gain: 126 of 341 parks in US-ID without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Page links standard only, no dataset link; Access Idaho parcel portal announced at https://edacafe.com/nbc/articles/1/1311985/Access-Idaho-Launches-Online-Parcel-Data-Portal (unverified current). County-by-county otherwise",
+   "publisher": "Idaho county parcels (Parcel Technical Working Group / Access Idaho parcel portal)",
+   "title": "Idaho county parcels (Parcel Technical Working Group / Access Idaho parcel portal)",
+   "url": "https://gis.idaho.gov/parcel-technical-working-group-standard"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-ID",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "BLM page; terms not retrieved",
+   "note": "LIVE-OK: agency_gis; covers: BLM Idaho recreation, SMA, ACEC; gain: 126 of 341 parks in US-ID without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Index to BLM Idaho layers; not fetched",
+   "publisher": "BLM Idaho Geospatial/GIS data page",
+   "title": "BLM Idaho Geospatial/GIS data page",
+   "url": "https://www.blm.gov/site-page/services-geospatial-gis-data-idaho"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-ID",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "ITD publication; no terms seen",
+   "note": "LIVE-OK: pdf_index; covers: US-7805..7834, US-10268, US-10427 '... Airstrip State Recreation Area' rows; parks: US-10268 US-10427 US-7805; gain: 126 of 341 parks in US-ID without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; These airstrips are ITD Aeronautics backcountry airports, not IDPR parks. No boundary layer found; use BLM/USFS surface-management or county parcels",
+   "publisher": "Idaho Backcountry Airport Map (ITD Aeronautics)",
+   "title": "Idaho Backcountry Airport Map (ITD Aeronautics)",
+   "url": "https://itd.idaho.gov/wp-content/uploads/2023/06/ID_Backcountry_Airport_Map.pdf"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-ID",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "USGS open data (public domain per USGS; verify on item)",
+   "note": "LIVE-OK: agency_gis; covers: All jurisdictions; fallback for federal/state designations incl. state parks, WMAs, BLM; gain: 126 of 341 parks in US-ID without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Listed by search, not fetched; do not bulk download here. Overview https://www.usgs.gov/programs/gap-analysis-project/science/pad-us-data-overview",
+   "publisher": "PAD-US 4.0 (USGS GAP) national fallback",
+   "title": "PAD-US 4.0 (USGS GAP) national fallback | PAD-US 4.0",
+   "url": "https://sciencebase.gov/catalog/item/652d4c46d34e44db0e2ee447"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-YT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - Yukon",
+   "note": "LIVE-OK: agency_gis; covers: Recreation Parks, Territorial Parks, campgrounds (US/CA refs CA-0844, CA-4602, CA-4610.. CA-5746 etc.); parks: CA-0844 CA-4602 CA-4610 CA-5746; gain: 66 of 112 parks in CA-YT without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Updated 2023-09-27; page says spatial extent of parks only, not for defining legal boundaries; formats not listed on page",
+   "publisher": "Parks and Campgrounds - Surveyed (Geomatics Yukon / GeoYukon)",
+   "title": "Parks and Campgrounds - Surveyed (Geomatics Yukon / GeoYukon) | Parks and Campgrounds - Surveyed",
+   "url": "https://open.yukon.ca/data/parks-and-campgrounds-surveyed"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-YT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - Yukon (assumed, same publisher; not verified)",
+   "note": "LIVE-OK: agency_gis; covers: Habitat Protection Areas, Special Management Areas, Nature Reserve (CA-4607, CA-4623, CA-4626, CA-4633, CA-5451); parks: CA-4607 CA-4623 CA-4626 CA-4633 CA-5451; gain: 66 of 112 parks in CA-YT without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Listed by search, not fetched",
+   "publisher": "Parks and Protected Areas Polygon - Surveyed",
+   "title": "Parks and Protected Areas Polygon - Surveyed",
+   "url": "https://open.yukon.ca/data/b06ba0b5-e07d-493a-b74c-a48438ef661c"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-YT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - Yukon",
+   "note": "LIVE-OK: agency_gis; covers: Generalized 1:250,000; low precision fallback; gain: 66 of 112 parks in CA-YT without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Updated 2023-09-27",
+   "publisher": "Park and Protected Areas - 250k",
+   "title": "Park and Protected Areas - 250k",
+   "url": "https://open.yukon.ca/data/park-and-protected-areas-250k"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-YT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - Yukon (verify per resource)",
+   "note": "LIVE-OK: pdf_index; covers: CA-6258..CA-6289 campgrounds / recreation sites; parks: CA-6258 CA-6289; gain: 66 of 112 parks in CA-YT without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Per-campground map PDFs; also brochure https://open.yukon.ca/sites/default/files/campground_brochure_map_2022.pdf",
+   "publisher": "Yukon Parks campground and recreation site maps",
+   "title": "Yukon Parks campground and recreation site maps",
+   "url": "https://open.yukon.ca/information/yukon-parks-campground-and-recreation-site-maps"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-YT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - Yukon (not verified on page)",
+   "note": "LIVE-OK: parcel; covers: Municipal/historic site parcels in Dawson, Whitehorse, Mayo, Watson Lake; gain: 66 of 112 parks in CA-YT without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Yukon has no counties; use for NHS and Historic Site rows with 'cadastral' look_for",
+   "publisher": "Land Parcels Polygon - Surveyed",
+   "title": "Land Parcels Polygon - Surveyed",
+   "url": "https://open.yukon.ca/data/land-parcels-polygon-surveyed"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-MS",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No access/use limitations per metadata",
+   "note": "LIVE-OK: agency_gis; covers: US-2545 Legion SP; US-9849 Deer Island; Dancing Rabbit/Grand Village SHS (maybe); parks: US-2545 US-9849; gain: 56 of 151 parks in US-MS without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; 53 polygons, published 2019-01-16; metadata PDF - data via MARIS cultural data page",
+   "publisher": "MARIS State Parks (MDWFP) 2019",
+   "title": "MARIS State Parks (MDWFP) 2019 | MS_StateParks",
+   "url": "https://maris.mississippi.edu/METAdata/METAdata_Cultural/MS_StateParks_2019_meta.pdf"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-MS",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Terms at https://maris.mississippi.edu/HTML/RESOURCES/Liability.html (not retrieved)",
+   "note": "LIVE-OK: agency_gis; covers: US-7072..US-7120 WMAs, US-11394; parks: US-11394 US-7072 US-7120; gain: 56 of 151 parks in US-MS without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Metadata https://maris.mississippi.edu/METAdata/METAdata_Boundaries/MS_WildlifeManagementAreas_2019_meta.pdf",
+   "publisher": "MARIS Wildlife Management Areas",
+   "title": "MARIS Wildlife Management Areas | WMA (REST 2019, download 2026)",
+   "url": "https://maris.mississippi.edu/HTML/DATA/Boundaries.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-MS",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not retrieved",
+   "note": "LIVE-OK: agency_gis; covers: WMAs, state fishing lakes; gain: 56 of 151 parks in US-MS without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Listed by search, not fetched",
+   "publisher": "MDWFP GIS program",
+   "title": "MDWFP GIS program",
+   "url": "https://www.mdwfp.com/wildlife-hunting/gis-program/"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-MS",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "MARIS data disclaimer https://maris.mississippi.edu/MARISdata/Parcels/DataDisclaimer.docx (not read)",
+   "note": "LIVE-OK: parcel; covers: State fishing lakes US-12193..12208; SHS US-11881..11883; SRAs; Lee, Tippah, Neshoba, Simpson, Walthall, Monroe etc.; parks: US-11881 US-12193; gain: 56 of 151 parks in US-MS without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Listed by search, not fetched; sample metadata at maris.mississippi.edu/METAdata/METAdata_CadastralPLSS/MS_CountyParcels_24_Sample_meta.pdf",
+   "publisher": "MARIS Statewide Parcels (Aug 2024)",
+   "title": "MARIS Statewide Parcels (Aug 2024)",
+   "url": "https://gis.mississippi.edu/server/rest/services/Cadastral/MS_Parcels_August_2024/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-MS",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not retrieved",
+   "note": "LIVE-OK: pdf_index; covers: State parks / fishing lakes; gain: 56 of 151 parks in US-MS without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Listed by search; not fetched",
+   "publisher": "MDWFP park finder",
+   "title": "MDWFP park finder",
+   "url": "https://mdwfp.com/parks-destinations/park-finder"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-AR",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "'For reference purposes only', as is; no license named",
+   "note": "LIVE-OK: agency_gis; covers: US-11214 Highway 7 Rec Area; US-11394 style WMAs; parks: US-11214 US-11394; gain: 38 of 304 parks in US-AR without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Metadata dated 2005; AGFC-owned WMAs only (co-op areas excluded). Data may be stale; newer updates posted at https://gis.arkansas.gov/?p=73011",
+   "publisher": "AGFC WMA boundary via Arkansas GIS Office",
+   "title": "AGFC WMA boundary via Arkansas GIS Office | ST_WILDLIFE_MNGMNT_AGFC",
+   "url": "https://gis.arkansas.gov/metadata/HTML/asdi.boundaries.ST_WILDLIFE_MNGMNT_AGFC_export.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-AR",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not retrieved",
+   "note": "LIVE-OK: agency_gis; covers: State/federal public lands incl. state recreation areas; gain: 38 of 304 parks in US-AR without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Product page redirected to hub; metadata only",
+   "publisher": "Public Land Boundaries (AHTD export), Arkansas GIS Office",
+   "title": "Public Land Boundaries (AHTD export), Arkansas GIS Office | PUBLIC_LAND_BOUNDARIES_AHTD",
+   "url": "https://gis.arkansas.gov/metadata/HTML/asdi.planning_cadastre.PUBLIC_LAND_BOUNDARIES_AHTD_export.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-AR",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not retrieved",
+   "note": "LIVE-OK: agency_gis; covers: US-7435, US-7436, US-9161, US-9163 State Trails; parks: US-7435 US-7436 US-9161 US-9163; gain: 38 of 304 parks in US-AR without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Metadata page; lines",
+   "publisher": "Arkansas Trails (GeoStor)",
+   "title": "Arkansas Trails (GeoStor) | ARKANSAS_TRAILS",
+   "url": "https://gis.arkansas.gov/Metadata/HTML/asdi.Environment.ARKANSAS_TRAILS_export.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-AR",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not retrieved; county-dependent",
+   "note": "LIVE-OK: parcel; covers: Counties by state recreation area; coverage not statewide; gain: 38 of 304 parks in US-AR without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Per-county updates",
+   "publisher": "Arkansas county parcels on GeoStor",
+   "title": "Arkansas county parcels on GeoStor",
+   "url": "https://gis.arkansas.gov/category/parcel"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-VT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC BY-SA 4.0",
+   "note": "LIVE-OK: agency_gis; covers: All 13 VT state parks, Essex Nursery SF, Kesick Swamp WHMA; gain: 15 of 107 parks in US-VT without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Modified 2022-06-10 per data.gov; hub page https://geodata.vermont.gov/datasets/VTANR::anr-lands-dataset-parcel (hub, do not fetch). Units layer: catalog.data.gov/dataset/anr-land-dataset-unit",
+   "publisher": "ANR Lands Dataset (Parcel)",
+   "title": "ANR Lands Dataset (Parcel) | ANR Lands Dataset (Parcel)",
+   "url": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/39"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-VT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No open license named; planning use only; free download by request",
+   "note": "LIVE-OK: parcel; covers: All VT rows; gain: 15 of 107 parks in US-VT without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Weekly updates, metadata updated 2025-11-17; request via vcgi@vermont.gov",
+   "publisher": "VCGI statewide standardized parcel data",
+   "title": "VCGI statewide standardized parcel data | VTPARCELS",
+   "url": "https://maps.vcgi.vermont.gov/gisdata/metadata/CadastralParcels_VTPARCELS.htm"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-VT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not retrieved",
+   "note": "LIVE-OK: pdf_index; covers: All VT state parks; gain: 15 of 107 parks in US-VT without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Per-park PDFs e.g. https://www.vtstateparks.com/assets/pdf/waterbury.pdf",
+   "publisher": "Vermont State Parks publications and maps",
+   "title": "Vermont State Parks publications and maps",
+   "url": "https://vtstateparks.com/publications.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-NH",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Use constraints not on page; see full metadata",
+   "note": "LIVE-OK: agency_gis; covers: State parks and forests US-2642, 2654, 2685, 4868, 4886, 4931, 4936, 4980; SHS US-8024; parks: US-2642 US-8024; gain: 13 of 206 parks in US-NH without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Published 2026-06-30; parcels of 2+ acres; REST: https://nhgeodata.unh.edu/nhgeodata/rest/services/EC/Conservation/MapServer",
+   "publisher": "NH GRANIT Conservation/Public Lands",
+   "title": "NH GRANIT Conservation/Public Lands | consnh",
+   "url": "https://ftp.granit.unh.edu/GRANIT_Data/Vector_Data/Environment_and_Conservation/d-conservation/consnh_Lite.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-NH",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not retrieved",
+   "note": "LIVE-OK: pdf_index; covers: NH state parks; guide PDF https://www.nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/Find%20Parks%20and%20Trails/26_NHSP_MapAndGuide_v7-2026.pdf; gain: 13 of 206 parks in US-NH without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; State forests (DNCR Forests & Lands) have no separate PDF index found",
+   "publisher": "NH State Parks map and guide",
+   "title": "NH State Parks map and guide",
+   "url": "https://www.nhstateparks.org/find-parks-trails"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-MN",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not retrieved (portal redirected to https://gis.data.mn.gov/)",
+   "note": "LIVE-OK: agency_gis; covers: US-6468 Iron Range OHV SRA; Protected/Marine areas if state; parks: US-6468; gain: 13 of 315 parks in US-MN without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Fetch redirected to portal home; REST: https://gis.dnr.state.mn.us/appserver/rest/services/webGDRS/bdry_dnr_lrs_prk/MapServer",
+   "publisher": "MN DNR State Parks, Recreation Areas and Waysides",
+   "title": "MN DNR State Parks, Recreation Areas and Waysides | bdry_dnr_lrs_prk",
+   "url": "https://gisdata.mn.gov/ru/dataset/bdry-dnr-lrs-prk"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-MN",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not retrieved (redirect); open-data counties only",
+   "note": "LIVE-OK: parcel; covers: Counties: Lake, St. Louis, Otter Tail, Grant, Kandiyohi, Stevens etc. for WMD tracts; gain: 13 of 315 parks in US-MN without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Not statewide; Government-Owned Lands derivative: https://gisdata.mn.gov/sl/dataset/plan-gov-own-open",
+   "publisher": "MN Parcels, compiled from opt-in open data counties",
+   "title": "MN Parcels, compiled from opt-in open data counties",
+   "url": "https://gisdata.mn.gov/pl/dataset/plan-parcels-open"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-IL",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Terms of Use page linked, not read",
+   "note": "LIVE-OK: agency_gis; covers: US-10787 Weinberg-King SP; US-4153, 10788 FWAs; US-12640 Rauchfuss Hill SRA; parks: US-10787 US-12640 US-4153; gain: 6 of 212 parks in US-IL without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Specific IDNR land layer not located; dataset names not verified",
+   "publisher": "Illinois Natural Resources Geospatial Data Clearinghouse (ISGS)",
+   "title": "Illinois Natural Resources Geospatial Data Clearinghouse (ISGS)",
+   "url": "https://clearinghouse.isgs.illinois.edu/about"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-IL",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not retrieved",
+   "note": "LIVE-OK: pdf_index; covers: All IDNR rows; gain: 6 of 212 parks in US-IL without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Site PDFs under dnr.illinois.gov/content/dam/soi/en/web/dnr/publications/documents/",
+   "publisher": "IDNR statewide properties map and site map PDFs",
+   "title": "IDNR statewide properties map and site map PDFs",
+   "url": "https://dnr.illinois.gov/content/dam/soi/en/web/dnr/parks/documents/statewidepropertiesmap.pdf"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-RI",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Copyright field blank; no terms seen",
+   "note": "LIVE-OK: agency_gis; covers: US-6980 Beach Pond WMA; US-10545 Hillsdale Preserve; US-10547 Silver Spring SRA; parks: US-10545 US-10547 US-6980; gain: 3 of 60 parks in US-RI without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Approximate boundaries; fee, easement, deed; fields incl. Poly_Src, SurvURL/DeedURL",
+   "publisher": "RIDEM Outdoor Recreation Map v4 - DEM Managed Recreational Land",
+   "title": "RIDEM Outdoor Recreation Map v4 - DEM Managed Recreational Land | DEM Managed Recreational Land",
+   "url": "https://risegis.ri.gov/hosting/rest/services/RIDEM/Outdoor_Recreation_Map_v4/MapServer/21"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-RI",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not retrieved",
+   "note": "LIVE-OK: parcel; covers: Exeter/West Greenwich/Providence area per pin; gain: 3 of 60 parks in US-RI without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group7; Listed by search, not fetched; municipal parcel survey progress service also exists",
+   "publisher": "RIDEM Tax Parcels / RIGIS municipal parcels",
+   "title": "RIDEM Tax Parcels / RIGIS municipal parcels",
+   "url": "https://risegis.ri.gov/hosting/rest/services/RIDEM/Tax_Parcels/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-SK",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - Canada",
+   "note": "LIVE-OK: agency_gis; covers: NWAs CA-6203 (Unit 13), CA-6315 (Unit 27); also usable for Wildlife Refuge CA-2554, Regional Park CA-1156, NL/MB protected areas; parks: CA-1156 CA-2554 CA-6203 CA-6315; gain: 91 of 411 parks in CA-SK without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group8; Federal ECCC server. Dec 2025 release; FGDB at data-donnees.az.ec.gc.ca. Filter by name/type for NWA.",
+   "publisher": "ECCC CPCAD (protected and conserved areas, includes National Wildlife Areas)",
+   "title": "ECCC CPCAD (protected and conserved areas, includes National Wildlife Areas) | Protected and conserved area (0)",
+   "url": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-MB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated on page; check OpenMB licence",
+   "note": "LIVE-OK: parcel; covers: Rural/RM parcels for recreation parks, Conservation Areas CA-2443, CA-2444, historic sites; parks: CA-2443 CA-2444; gain: 85 of 308 parks in CA-MB without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group8; Dated 2016; Winnipeg included in index. Page is download-index only, not fetched files.",
+   "publisher": "Manitoba Land Initiative cadastral (mli2.gov.mb.ca)",
+   "title": "Manitoba Land Initiative cadastral (mli2.gov.mb.ca) | All Cadastral Polygons (SHP, 2016-01-05); Cadastral Index",
+   "url": "https://mli2.gov.mb.ca/cadastral/index.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-MB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "City of Winnipeg Open Data licence (not read)",
+   "note": "LIVE-OK: agency_gis; covers: Recreation Parks CA-0572, 1048, 2408, 2411, 2431, 2433, 2475, 2496, 2527; parks: CA-0572; gain: 85 of 308 parks in CA-MB without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group8; These rows are Winnipeg city parks, not provincial 'Recreation Parks'; municipal source is correct. Dataset id from search result only; verify.",
+   "publisher": "City of Winnipeg Open Data / Park Maps (Winnipeg recreation parks: Fort Douglas, King Edward, Whittier, Provencher, Vimy",
+   "title": "City of Winnipeg Open Data / Park Maps (Winnipeg recreation parks: Fort Douglas, King Edward, Whittier, Provencher, Vimy Ridge, etc.) | Parks dataset on data.winnipeg.ca (tx3d-pfxq per search)",
+   "url": "https://parkmaps.winnipeg.ca/TermsConditions.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-MB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Province of Manitoba website terms",
+   "note": "LIVE-OK: pdf_index; covers: Provincial parks (Birch Island, North Steeprock Lake, Narcisse, York Factory); gain: 85 of 308 parks in CA-MB without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group8; Official PDF map index by region (eastern/central pages). Protected areas wall map: https://web40.gov.mb.ca/sd/pubs/maps/protected_areas/protected_areas_map.pdf",
+   "publisher": "Manitoba Park Maps and Locations",
+   "title": "Manitoba Park Maps and Locations",
+   "url": "https://gov.mb.ca/sd/parks/park-maps-and-locations/index.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-NL",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Copyright GNL all rights reserved; site disclaimer https://www.gov.nl.ca/disclaimer/ ; older tcar page said no redistribution of original data",
+   "note": "LIVE-OK: agency_gis; covers: Provincial Park, Provincial Historic Site, Ramsar Site, Geopark rows; gain: 55 of 134 parks in CA-NL without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group8; Page updated 2026-10-02. Direct zip links on page; not downloaded. Redistribution restricted.",
+   "publisher": "NL Environment, Conservation & Climate Change - Provincial Protected Areas shapefile",
+   "title": "NL Environment, Conservation & Climate Change - Provincial Protected Areas shapefile | GNL_Provincial_Protected_Areas (shp zip/KMZ)",
+   "url": "https://www.gov.nl.ca/eccc/natural-areas/gis-data/"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-NL",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated",
+   "note": "LIVE-OK: agency_gis; covers: Planned protected areas only; gain: 55 of 134 parks in CA-NL without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group8; Only Land_Use and Mineral_Lands services found; no parks or parcel service.",
+   "publisher": "NL DNR GeoAtlas Land_Use MapServer (Protected Areas Plan 2020)",
+   "title": "NL DNR GeoAtlas Land_Use MapServer (Protected Areas Plan 2020) | Protected Areas Plan 2020",
+   "url": "https://dnrmaps.gov.nl.ca/arcgis/rest/services/GeoAtlas/Land_Use/MapServer/0"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-WA",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated (copyright WA DNR)",
+   "note": "LIVE-OK: agency_gis; covers: State forests CA/US-5565..5576, 10711, 11145, 12296; DNR rec sites; parks: US-5565; gain: 38 of 529 parks in US-WA without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group8; Agency server. Parcels (not named forest boundaries); filter by trust/PARCEL_NM. Forest names may need DNR Forest/Trust Lands page.",
+   "publisher": "WA DNR Managed Land Parcels (Public_Boundaries Cadastre OpenData)",
+   "title": "WA DNR Managed Land Parcels (Public_Boundaries Cadastre OpenData) | DNR Managed Land Parcels (6)",
+   "url": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Cadastre_OpenData/FeatureServer/6"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-WA",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated",
+   "note": "LIVE-OK: agency_gis; covers: State Recreation Site/Area rows (Dragoon Creek, Sherry Creek, Beverly Dunes, Skookum Creek, Sheep Creek, Douglas Falls, Olequa Crossing, County Line, Hand); gain: 38 of 529 parks in US-WA without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group8; Fetch returned sign-in page (possibly needs auth); points likely, not polygons. Verify.",
+   "publisher": "WA DNR Recreation Sites",
+   "title": "WA DNR Recreation Sites | DNR_Recreation_Sites",
+   "url": "https://gis.dnr.wa.gov/site2/rest/services/Public_Recreation/DNR_Recreation_Sites/FeatureServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-WA",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated (copyright WDFW)",
+   "note": "LIVE-OK: agency_gis; covers: State Wildlife Area US-6473; WDFW fishing lake US-12426 and hatchery US-12403 may be in DFWOwnedParcels (MapServer/0 under WP_Misc/DNR_ForestFireProtectionAssessment); parks: US-12403 US-12426 US-6473; gain: 38 of 529 parks in US-WA without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group8; ",
+   "publisher": "WDFW Wildlife Areas MapServer",
+   "title": "WDFW Wildlife Areas MapServer | AreaBoundaries (1); UnitBoundaries (0)",
+   "url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WildlifeAreas/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-WA",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated",
+   "note": "LIVE-OK: parcel; covers: County parcels; key: Skamania, Klickitat, Kittitas, Yakima, Stevens, Grant, Adams, Franklin, Benton, Okanogan; gain: 38 of 529 parks in US-WA without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group8; Informational page. Statewide parcel layer also at https://wisaard.dahp.wa.gov/server/rest/services/County_Parcels/MapServer/0 (DAHP). Ongoing and incomplete.",
+   "publisher": "Washington statewide parcel database (WAGIS / WA Geospatial Open Data)",
+   "title": "Washington statewide parcel database (WAGIS / WA Geospatial Open Data)",
+   "url": "https://depts.washington.edu/wagis/projects/parcels"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-WA",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Agency website terms",
+   "note": "LIVE-OK: pdf_index; covers: WDFW lands; also https://dnr.wa.gov/maps ; https://parks.wa.gov (statewide map PDF); gain: 38 of 529 parks in US-WA without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group8; From search only.",
+   "publisher": "WDFW Green Dot maps / WA State Parks statewide map / DNR map resources",
+   "title": "WDFW Green Dot maps / WA State Parks statewide map / DNR map resources",
+   "url": "https://wdfw.wa.gov/about/wdfw-lands/green-dot"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-WI",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated",
+   "note": "LIVE-OK: agency_gis; covers: SRAs: US-4242, 4260, 4261; SWAs and SFWAs; parks: US-4242; gain: 15 of 346 parks in US-WI without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group8; Layers not enumerated; WI DNR Managed Land Parcels (hand download) preferred per brief.",
+   "publisher": "WI DNR Managed Recreation Opportunities",
+   "title": "WI DNR Managed Recreation Opportunities",
+   "url": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_DNR_MGD_Recreational_Opp_WTM_Ext/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-WI",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Free of charge; no formal licence; feedback form requested",
+   "note": "LIVE-OK: parcel; covers: County-level: Burnett, Polk, St. Croix, Dane, Wood, Marathon, Waukesha, etc.; gain: 15 of 346 parks in US-WI without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group8; FGDB (statewide) or county shp. Not downloaded.",
+   "publisher": "Wisconsin Statewide Parcel Map Initiative (V9)",
+   "title": "Wisconsin Statewide Parcel Map Initiative (V9) | V9 parcels",
+   "url": "https://www.sco.wisc.edu/parcels/data"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-CO",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated",
+   "note": "LIVE-OK: agency_gis; covers: State Wildlife Area US-9652 Grenada; parks: US-9652; gain: 9 of 265 parks in US-CO without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group8; Layer is management areas not SWA property polygons. Managed properties data at https://databasin.org/datasets/2591c70e5b2a4783869b9e2aeb38ae93 and CPWAdminData FeatureServer (AGOL, hand_download).",
+   "publisher": "CPW Areas (CPW_admin)",
+   "title": "CPW Areas (CPW_admin) | CPW Areas (1)",
+   "url": "https://codex.cnhp.colostate.edu/arcgis/rest/services/CO_Public/CPW_admin/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-CO",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated; annual updates",
+   "note": "LIVE-OK: parcel; covers: Prowers (Granada, Amache), Boulder/Larimer region, Eagle, Grand, Teller/Park; gain: 9 of 265 parks in US-CO without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group8; Layer extent covers whole state but county completeness unconfirmed.",
+   "publisher": "Colorado Public Parcel Composite (OIT)",
+   "title": "Colorado Public Parcel Composite (OIT) | Colorado_Public_Parcel_Composite",
+   "url": "https://gis.colorado.gov/Public/rest/services/Address_and_Parcel/Colorado_Public_Parcels/MapServer/0"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-CO",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Public domain US Gov",
+   "note": "LIVE-OK: agency_gis; covers: US-9597, 9598, 11907, 11910, 11911; parks: US-9597; gain: 9 of 265 parks in US-CO without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group8; From search metadata link only.",
+   "publisher": "BLM Colorado Recreation / NLCS",
+   "title": "BLM Colorado Recreation / NLCS",
+   "url": "https://gis.blm.gov/coarcgis/rest/services/recreation/BLM_CO_Recreation/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-MD",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Maryland open data (licence not stated)",
+   "note": "LIVE-OK: agency_gis; covers: State Parks US-6388, 11231, 13564; WMAs US-7769, 7782; Glen Echo; NHP Oxon Cove; parks: US-6388 US-7769; gain: 8 of 175 parks in US-MD without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group8; ",
+   "publisher": "MD iMAP Protected Lands (DNR Owned Lands)",
+   "title": "MD iMAP Protected Lands (DNR Owned Lands) | DNR Owned Lands and Conservation Easements (0); Protected Federal Lands (8)",
+   "url": "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-MD",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated; MDP Open Data Hub for downloads",
+   "note": "LIVE-OK: parcel; covers: Allegany/Washington/Prince George's/Montgomery/Charles; gain: 8 of 175 parks in US-MD without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group8; ",
+   "publisher": "MD iMAP Parcel Boundaries",
+   "title": "MD iMAP Parcel Boundaries | Parcel Boundaries (0)",
+   "url": "https://mdgeodata.md.gov/imap/rest/services/PlanningCadastre/MD_ParcelBoundaries/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-DC",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Creative Commons Attribution 4.0",
+   "note": "LIVE-OK: agency_gis; covers: DC National Mall, President's Park, memorials; gain: 5 of 34 parks in US-DC without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / group8; District server. Not all memorials polygons; Reservations at maps2.dcgis.dc.gov/DCGIS/rest/services/DDOT/Reservations/MapServer/0",
+   "publisher": "DC GIS - Recreation (National Parks / NPS Map A)",
+   "title": "DC GIS - Recreation (National Parks / NPS Map A) | National Parks",
+   "url": "https://maps2.dcgis.dc.gov/DCGIS/rest/services/DCGIS_DATA/Recreation_WebMercator/MapServer/10"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-GA",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No license stated; WRD says boundaries are general reference, not guaranteed accurate; questions 706-557-3333",
+   "note": "LIVE-OK: agency_gis; covers: GA WMAs, public fishing areas, hatcheries, ranges (DNR-managed properties); not State Parks; gain: 11 of 232 parks in US-GA without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / rerun4; Verified by opening page (KMZ link seen, file not downloaded). Date inferred from filename (2022).",
+   "publisher": "Georgia DNR Wildlife Resources Division property boundaries (KMZ)",
+   "title": "Georgia DNR Wildlife Resources Division property boundaries (KMZ) | WMA_Boundaries_2022.kmz (link https://georgiawildlife.com/sites/default/files/WMA_Boundaries_2022.kmz)",
+   "url": "https://georgiawildlife.com/land"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-IA",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No terms on page; FWS general policies",
+   "note": "LIVE-OK: pdf_index; covers: US-0270 Iowa WMD (scattered Waterfowl Production Areas); parks: US-0270; gain: 2 of 179 parks in US-IA without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / rerun4; Verified by opening page: no GIS/boundary data on it, only brochure PDF and a map link (content not seen). No single WMD polygon; WPAs are separate tracts. FWS approved boundary data stays hand_download (ServCat, see group4_sources).",
+   "publisher": "USFWS Iowa Wetland Management District refuge page",
+   "title": "USFWS Iowa Wetland Management District refuge page | Map page https://www.fws.gov/refuge/iowa-wetland-management-district/map",
+   "url": "https://www.fws.gov/refuge/iowa-wetland-management-district"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-OR",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Provided as-is, no warranty; copyright ODFW 2000-2004",
+   "note": "LIVE-OK: agency_gis; covers: OR State Fish Hatcheries; gain: 45 of 423 parks in US-OR without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / rerun4; Verified by opening page: geometry not stated on page, probably points; page dated 08/25/03, data 2001. No polygons found. Hatchery polygons need ORMAP tax lots.",
+   "publisher": "ODFW Oregon Fish Hatcheries data page (NRIMP)",
+   "title": "ODFW Oregon Fish Hatcheries data page (NRIMP) | Oregon Fish Hatcheries (12/21/01 shapefile/coverage)",
+   "url": "https://nrimp.dfw.state.or.us/NRIMP/information/hatchdata.htm"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-NJ",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Copyright NJDEP; no license text",
+   "note": "LIVE-OK: agency_gis; covers: NJDEP-run parks/open space facilities as points with FEATURE_NAME, LAND_MANAGER, ACRES, FACILITY_URL; gain: 3 of 128 parks in US-NJ without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / rerun5; Point layer, verified by opening page. State server, not AGOL.",
+   "publisher": "NJDEP Features/Land MapServer layer 68 Open Space (State Owned) Facility",
+   "title": "NJDEP Features/Land MapServer layer 68 Open Space (State Owned) Facility | Open Space (State Owned) Facility (68)",
+   "url": "https://mapsdep.nj.gov/arcgis/rest/services/Features/Land/MapServer/68"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-NJ",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not read",
+   "note": "LIVE-OK: agency_gis; covers: State-owned open space polygons (presumed) incl. parks, forests, WMAs; gain: 3 of 128 parks in US-NJ without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / rerun5; Layer name seen in search; direct fetch refused by allowlist. search result only. Check polygon geometry before use.",
+   "publisher": "NJDEP Features/Land MapServer layer 67 Open Space (State Owned) Generalized",
+   "title": "NJDEP Features/Land MapServer layer 67 Open Space (State Owned) Generalized | Open Space (State Owned) Generalized (67)",
+   "url": "https://mapsdep.nj.gov/arcgis/rest/services/Features/Land/MapServer/67"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-AZ",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No license stated (licenseInfo empty); no date",
+   "note": "LIVE-OK: parcel; covers: Statewide parcel aggregate supported by 15 counties; best statewide candidate for River Island (La Paz) and Dankworth Pond (Graham); gain: 11 of 110 parks in US-AZ without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / rerun5; Item info verified by opening page; geometry/field check not done. Replaces unverified azwater layer.",
+   "publisher": "Arizona NG911 Statewide Development Parcel Feature Class (AZGeo)",
+   "title": "Arizona NG911 Statewide Development Parcel Feature Class (AZGeo) | Arizona NG911 Statewide Development Parcel Feature Class",
+   "url": "https://server.azgeo.az.gov/arcgis/rest/services/az911/Arizona_NG911_Statewide_Development_Parcel_Feature_Class/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-LA",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No data license on page; site disclaimer at /page/site-disclaimer (not read); LDWF no-warranty on Data Basin copy",
+   "note": "LIVE-OK: agency_gis; covers: LDWF WMAs, refuges, conservation areas statewide; gain: 5 of 122 parks in US-LA without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / rerun5; Page verified by opening page. Direct files: https://www.wlf.louisiana.gov/assets/Conservation/WMAs_Refuges_Conservation_Areas/Files/LDWF_WMA_Boundaries_Shapefile.zip (not downloaded). No date on page.",
+   "publisher": "LDWF WMA/Refuge boundaries download page",
+   "title": "LDWF WMA/Refuge boundaries download page | WMA/Refuge boundaries (Shapefile ZIP and KMZ)",
+   "url": "https://www.wlf.louisiana.gov/page/wma-gis-data-download"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-LA",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "LDWF no warranty; Data Basin Terms of Use; no named license",
+   "note": "LIVE-OK: agency_gis; covers: Louisiana WMAs; content date 2018-03-05; uploaded 2020-12-17; gain: 5 of 122 parks in US-LA without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / rerun5; Page verified by opening page. Secondary copy; older than LDWF page.",
+   "publisher": "LDWF WMAs, Refuges and Conservation Areas (Data Basin copy)",
+   "title": "LDWF WMAs, Refuges and Conservation Areas (Data Basin copy) | LDWF WMAs, Refuges and Conservation Areas",
+   "url": "https://databasin.org/datasets/2c140c5c8c534f52856557a49722c024/"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA-AB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence - Alberta; modified 2026-05-13",
+   "note": "LIVE-OK: agency_gis; covers: Province-wide survey grid, NOT parcels; useful as proxy for rural site location; gain: 64 of 459 parks in CA-AB without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / rerun5; Page verified by opening page. Distributed via AltaLIS.",
+   "publisher": "Property - Alberta Township System (ATS) grid",
+   "title": "Property - Alberta Township System (ATS) grid | Alberta Township System (LSD, quarter section, section, township)",
+   "url": "https://open.canada.ca/data/en/dataset/76874ae6-373f-4371-bc99-e319a4fb84a3"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CA",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No license stated on this mirror (OGL-Canada on open.canada.ca record); last updated 2026-01-16",
+   "note": "LIVE-OK: agency_gis; covers: National parks only; no historic sites; gain: country-wide; source: sources-merged-892-nov11.xlsx / US-Canada sources / rerun5; Page verified by opening page.",
+   "publisher": "National Parks and National Park Reserves Legislative Boundaries (NRCan)",
+   "title": "National Parks and National Park Reserves Legislative Boundaries (NRCan) | Legislative boundaries",
+   "url": "https://donnees.iriu.ca/dataset/national-parks-and-national-park-reserves-of-canada-legislative-boundaries-4734"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-OR",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Copyright credit: ODFW NRIMP; StreamNet; no licence text",
+   "note": "LIVE-OK: agency_gis; covers: Statewide hatcheries and facilities; geometry unconfirmed, probably points; gain: 45 of 423 parks in US-OR without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / agency_us; verified by opening page (service root). Point inventory, not site polygons; use county parcels (ODFW owner) for boundaries. Wizard Falls, Cole Rivers, Roaring River, Salmon River, Willamette, Trask River are ODFW",
+   "publisher": "Oregon Dept of Fish and Wildlife (NRIMP)",
+   "title": "Oregon Dept of Fish and Wildlife (NRIMP) | Hatchery and Hatchery Facilities (layer 0)",
+   "url": "https://nrimp.dfw.state.or.us/arcgis/rest/services/Hatchery/Hatchery_and_Hatchery_Facilities/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-AK",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "licenseInfo blank; described as an archive, seek more current source",
+   "note": "LIVE-OK: agency_gis; covers: Juneau, Fairbanks North Star and other listed boroughs; gain: 43 of 179 parks in US-AK without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / agency_us; verified by opening page (legend and item info). Archive of tax parcels, not authoritative",
+   "publisher": "Alaska DNR (hosts borough tax parcel archive on its own server)",
+   "title": "Alaska DNR (hosts borough tax parcel archive on its own server) | Borough parcels: Juneau (3), Sitka (10), Denali (1), North Slope (8), Fairbanks North Star (9), Skagway (11)",
+   "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Administrative_BoroughParcels/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "US-OK",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "License listed as Public",
+   "note": "LIVE-OK: agency_gis; covers: Public land ownership and conservation lands with owner/manager fields; undated; gain: 41 of 195 parks in US-OK without an outline; source: sources-merged-892-nov11.xlsx / US-Canada sources / agency_us; verified by opening page (item info). University compilation, not the state park agency; best polygon fallback for OK parks, WMAs, fishing lakes",
+   "publisher": "Oklahoma Biological Survey, Univ of Oklahoma (ONHI)",
+   "title": "Oklahoma Biological Survey, Univ of Oklahoma (ONHI) | Protected Areas of Oklahoma (PAD-OK)",
+   "url": "https://obsgis.csa.ou.edu:6443/arcgis/rest/services/ONHI/PAD_OK/MapServer/0"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "GB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence",
+   "note": "LIVE-OK: national_gis; covers: England (nation: England; owner type: Natural England/NNR managers); gain: 3395 of 7079 parks in GB without an outline; source: sources-merged-892-nov11.xlsx / World sources / world2; Verified by opening data.gov.uk page: WFS, OGC API Features, WMS listed; page updated 29 Apr 2026. Page also lists ArcGIS REST and Natural England Hub links, deliberately not used. No files downloaded.",
+   "publisher": "Natural England - National Nature Reserves (England) via Defra Data Services Platform",
+   "title": "Natural England - National Nature Reserves (England) via Defra Data Services Platform | National Nature Reserves (England); WFS https://environment.data.gov.uk/spatialdata/national-nature-reserves-eng",
+   "url": "https://www.data.gov.uk/dataset/national-nature-reserves-england1"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "GB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CKAN page says 'No Licence Provided'; data.gov.uk footer OGL v3.0 unless stated; check Natural England OGL",
+   "note": "LIVE-OK: national_gis; covers: England; gain: 3395 of 7079 parks in GB without an outline; source: sources-merged-892-nov11.xlsx / World sources / world2; Verified by opening CKAN page: WFS and download resources (GDB/GeoJSON/GPKG/SHP zip) listed, updated 9 Oct 2025. Raw WFS endpoint not shown on that page (resource page only); follow the pattern of the NNR service on environment.data.gov.uk after chec",
+   "publisher": "Natural England - Sites of Special Scientific Interest (England) and SSSI Units",
+   "title": "Natural England - Sites of Special Scientific Interest (England) and SSSI Units | Sites of Special Scientific Interest (England); Sites of Special Scientific Interest Units (England)",
+   "url": "https://ckan.publishing.service.gov.uk/dataset/sites-of-special-scientific-interest-england3"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "GB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Dataset field 'Not set'; site footer OGL v3.0; NatureScot attribution",
+   "note": "LIVE-OK: national_gis; covers: Scotland; gain: 3395 of 7079 parks in GB without an outline; source: sources-merged-892-nov11.xlsx / World sources / world2; Verified by opening data.gov.uk page (updated 2 Feb 2026): WFS, WMS and zipped downloads at gis-downloads.nature.scot listed. Not downloaded.",
+   "publisher": "NatureScot / SpatialData.gov.scot - SSSI Scotland (WFS)",
+   "title": "NatureScot / SpatialData.gov.scot - SSSI Scotland (WFS) | protectedareas:sssi (WFS https://ogc.nature.scot/geoserver/protectedareas/wfs)",
+   "url": "https://data.gov.uk/dataset/d64bf689-4ce8-465b-b00e-6a57dec94a22/site-of-special-scientific-interest-scotland"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "GB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Open Government Licence",
+   "note": "LIVE-OK: national_gis; covers: Wales; gain: 3395 of 7079 parks in GB without an outline; source: sources-merged-892-nov11.xlsx / World sources / world2; Verified by opening layer page: WMS and WFS endpoints, GeoJSON/GPKG/Shapefile formats, published 28 Nov 2022.",
+   "publisher": "Natural Resources Wales via DataMapWales - NNR",
+   "title": "Natural Resources Wales via DataMapWales - NNR | inspire-nrw:NRW_NNR",
+   "url": "https://datamap.gov.wales/layers/inspire-nrw:NRW_NNR"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "GB",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Presumed OGL as for NRW layers; not confirmed on this page",
+   "note": "LIVE-OK: national_gis; covers: Wales; gain: 3395 of 7079 parks in GB without an outline; source: sources-merged-892-nov11.xlsx / World sources / world2; Seen in search result only (page not opened). Sibling NNR layer verified. Also NRW marine protected areas layer group exists on datamap.gov.wales (search result).",
+   "publisher": "Natural Resources Wales via DataMapWales - SSSI",
+   "title": "Natural Resources Wales via DataMapWales - SSSI | inspire-nrw:NRW_SSSI",
+   "url": "https://datamap.gov.wales/layers/inspire-nrw:NRW_SSSI"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "SK",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "(c) European Environment Agency; dataset record CC-BY 4.0",
+   "note": "LIVE-OK: compilation; covers: Slovakia included; data reported to March 2021; gain: 351 of 351 parks in SK without an outline; source: sources-merged-892-nov11.xlsx / World sources / world2; Fallback per CSV, not national. Verified by opening MapServer page. Older CDDA v12 SDI download is marked Superseded (2014).",
+   "publisher": "EEA Nationally Designated Areas CDDA v19 (fallback only)",
+   "title": "EEA Nationally Designated Areas CDDA v19 (fallback only) | Nationally designated areas (CDDA) - Large scale viewing (layer 4)",
+   "url": "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDAv19_Dyna_LAEA/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "DK",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC BY 4.0",
+   "note": "LIVE-OK: national_gis; covers: Denmark national, revised 2025-04-03; gain: 291 of 291 parks in DK without an outline; source: sources-merged-892-nov11.xlsx / World sources / world2; Verified by opening INSPIRE geoportal record: WFS/WMS/Atom via https://haleconnect.com/ows/services/org.223.7076850c-232f-4611-a829-941dbd2b688d_wfs?SERVICE=WFS&Request=GetCapabilities (also _wms). Not queried.",
+   "publisher": "Miljostyrelsen INSPIRE Protected Sites - DK INSPIRE PS Natura 2000 Habitat Areas (EF-habitatomraader)",
+   "title": "Miljostyrelsen INSPIRE Protected Sites - DK INSPIRE PS Natura 2000 Habitat Areas (EF-habitatomraader) | DK INSPIRE PS Natura 2000 Habitat Areas (EF-habitatomraader)",
+   "url": "https://inspire-geoportal.ec.europa.eu/srv/api/records/2abe4eca-e755-4586-809e-44c648f056b2"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "DK",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC BY 4.0",
+   "note": "LIVE-OK: national_gis; covers: Denmark national, revised 2025-04-03; gain: 291 of 291 parks in DK without an outline; source: sources-merged-892-nov11.xlsx / World sources / world2; Verified by opening INSPIRE geoportal record: WFS/WMS/Atom via https://haleconnect.com/ows/services/org.223.436762f4-ce4a-4d33-9995-24fa52294744_wfs?SERVICE=WFS&Request=GetCapabilities (also _wms). Not queried.",
+   "publisher": "Miljostyrelsen INSPIRE Protected Sites - DK INSPIRE PS Natura 2000 Bird Protection Areas",
+   "title": "Miljostyrelsen INSPIRE Protected Sites - DK INSPIRE PS Natura 2000 Bird Protection Areas | DK INSPIRE PS Natura 2000 Bird Protection Areas",
+   "url": "https://inspire-geoportal.ec.europa.eu/srv/api/records/59af29ff-e5a9-4aee-a923-e903faed674f"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "DK",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC BY 4.0",
+   "note": "LIVE-OK: national_gis; covers: Denmark national, revised 2025-04-03; gain: 291 of 291 parks in DK without an outline; source: sources-merged-892-nov11.xlsx / World sources / world2; Verified by opening INSPIRE geoportal record: WFS/WMS/Atom via https://haleconnect.com/ows/services/org.223.5219df50-27c1-4a13-8305-b588ab936bda_wfs?SERVICE=WFS&Request=GetCapabilities (also _wms). Not queried.",
+   "publisher": "Miljostyrelsen INSPIRE Protected Sites - DK INSPIRE PS Ramsar",
+   "title": "Miljostyrelsen INSPIRE Protected Sites - DK INSPIRE PS Ramsar | DK INSPIRE PS Ramsar",
+   "url": "https://inspire-geoportal.ec.europa.eu/srv/api/records/1e6174df-861b-4911-ba6b-36297fdaea06"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "DK",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC BY 4.0",
+   "note": "LIVE-OK: national_gis; covers: Denmark national, revised 2025-04-03; gain: 291 of 291 parks in DK without an outline; source: sources-merged-892-nov11.xlsx / World sources / world2; Verified by opening INSPIRE geoportal record: WFS/WMS/Atom via https://haleconnect.com/ows/services/org.223.83720cf7-d03d-4a67-8d15-ae5a071d5e3b_wfs?SERVICE=WFS&Request=GetCapabilities (also _wms). Not queried.",
+   "publisher": "Miljostyrelsen INSPIRE Protected Sites - DK INSPIRE PS Conservation Orders (fredninger)",
+   "title": "Miljostyrelsen INSPIRE Protected Sites - DK INSPIRE PS Conservation Orders (fredninger) | DK INSPIRE PS Conservation Orders (fredninger)",
+   "url": "https://inspire-geoportal.ec.europa.eu/srv/api/records/d73884e8-55d5-45d8-8a93-b4569fdc42ed"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "DK",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No licence named; use conditions unknown",
+   "note": "LIVE-OK: national_gis; covers: Denmark national, revised 2024-12-10; gain: 291 of 291 parks in DK without an outline; source: sources-merged-892-nov11.xlsx / World sources / world2; Verified by opening INSPIRE geoportal record: WFS/WMS/Atom via https://haleconnect.com/ows/services/org.223.99908fe3-cc4b-4e69-b8a4-e68a8957721e_wfs?SERVICE=WFS&Request=GetCapabilities (also _wms). Not queried.",
+   "publisher": "Miljostyrelsen INSPIRE Protected Sites - DK INSPIRE PS Conservation Orders (Proposals)",
+   "title": "Miljostyrelsen INSPIRE Protected Sites - DK INSPIRE PS Conservation Orders (Proposals) | DK INSPIRE PS Conservation Orders (Proposals)",
+   "url": "https://inspire-geoportal.ec.europa.eu/srv/api/records/46cf3857-e017-47c4-9af7-6d8a32780581"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "DK",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated on page; see data set documentation",
+   "note": "LIVE-OK: national_gis; covers: Denmark national; gain: 291 of 291 parks in DK without an outline; source: sources-merged-892-nov11.xlsx / World sources / world2; Verified by opening page: services and file extraction described; licence and update frequency not given; specific layers not named.",
+   "publisher": "Danmarks Miljoeportal - Arealdata (WMS/WFS/WMTS and SHAPE/TAB/GDB extracts)",
+   "title": "Danmarks Miljoeportal - Arealdata (WMS/WFS/WMTS and SHAPE/TAB/GDB extracts) | Protected natural areas (layer names not listed)",
+   "url": "https://miljoeportal.dk/en/danmarks-miljoeportal-s-systems/arealdata"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "DK",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Copyright field empty",
+   "note": "LIVE-OK: regional_gis; covers: Denmark; gain: 291 of 291 parks in DK without an outline; source: sources-merged-892-nov11.xlsx / World sources / world2; Verified by opening layer list. Secondary mirror; prefer the Miljostyrelsen services above.",
+   "publisher": "Vejdirektoratet kort.vd.dk - Fredede omraader MapServer (mirror, owner unstated)",
+   "title": "Vejdirektoratet kort.vd.dk - Fredede omraader MapServer (mirror, owner unstated) | Bekendtgoerelsesfredninger; Fredede omraader; Fredede omraader - forslag; Natur/vildt reservater",
+   "url": "https://kort.vd.dk/server/rest/services/Grunddata/Fredede_omr%C3%A5der/MapServer/layers"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "AU",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC BY-NC 4.0 (non-commercial)",
+   "note": "LIVE-OK: regional_gis; covers: Western Australia; parks: 10-2026; gain: 3151 of 11307 parks in AU without an outline; source: sources-merged-892-nov11.xlsx / World sources / world3; Open WFS/WMS/REST at public-services.slip.wa.gov.au; data updated 06-10-2026. Bulk shp/gdb/gpkg need SLIP login. Use with DBCA Lands of Interest (DBCA-011 alone omits some). Verified from catalogue page.",
+   "publisher": "WA DBCA Legislated Lands and Waters (DBCA-011) via SLIP",
+   "title": "WA DBCA Legislated Lands and Waters (DBCA-011) via SLIP | DBCA-011 (REST layer 15; WFS Property_and_Planning_WFS)",
+   "url": "https://catalogue.data.wa.gov.au/dataset/dbca-legislated-lands-and-waters"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "AU",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC BY 4.0",
+   "note": "LIVE-OK: regional_gis; covers: Victoria; gain: 3151 of 11307 parks in AU without an outline; source: sources-merged-892-nov11.xlsx / World sources / world3; WMS/WFS plus GDB/SHP/TAB listed; page shows last updated 10/11/2026 (odd vs metadata 27/03/2025). Verified from page.",
+   "publisher": "Victoria Parks and Conservation Reserves (PARKRES)",
+   "title": "Victoria Parks and Conservation Reserves (PARKRES) | PARKRES (WFS on opendata.maps.vic.gov.au)",
+   "url": "https://discover.data.vic.gov.au/dataset/parks-and-conservation-reserves-parkres"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "AU",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC BY (Creative Commons Attribution)",
+   "note": "LIVE-OK: regional_gis; covers: New South Wales NPWS estate; quarterly update; gain: 3151 of 11307 parks in AU without an outline; source: sources-merged-892-nov11.xlsx / World sources / world3; Updated 21/10/2026. WFS at mapprod3.environment.nsw.gov.au (govt server, not AGOL). Marine parks and aquatic reserves (DPI Fisheries) not confirmed here.",
+   "publisher": "NSW NPWS Estate Boundary (SEED)",
+   "title": "NSW NPWS Estate Boundary (SEED) | NPWS Estate (EDP/Estate MapServer; WFS/WMS/KML)",
+   "url": "https://data.nsw.gov.au/data/dataset/nsw-national-parks-and-wildlife-service-npws-estate3f9e7"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "PL",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Metadata: no access/use conditions (Brak warunkow dostepu i uzytkowania); no formal licence named",
+   "note": "LIVE-OK: national_gis; covers: Poland, all forms (parks, reserves, landscape parks, N2000, Ramsar etc.); gain: 2964 of 2992 parks in PL without an outline; source: sources-merged-892-nov11.xlsx / World sources / world3; Metadata stamp 2023-07-20. RDOS Bydgoszcz page lists WMS https://sdi.gdos.gov.pl/wms and WFS https://sdi.gdos.gov.pl/wfs and per-form shapefile ZIPs (page 15 Dec 2021). Data not a legal boundary determination. Services not queried, verified by metada",
+   "publisher": "GDOS Central Register of Nature Protection Forms - download service (WFS)",
+   "title": "GDOS Central Register of Nature Protection Forms - download service (WFS) | INSPIRE Protected Sites / Formy ochrony przyrody (https://sdi.gdos.gov.pl/wfs)",
+   "url": "http://bankdanych.gdos.gov.pl/geonetwork/srv/api/records/5eded3ca-5d17-47a3-ad30-3a0c5ff47aa2"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "RO",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "(c) European Environment Agency; no specific licence stated on service page",
+   "note": "LIVE-OK: national_gis; covers: Europe, 38 countries; data reported to May 2024; gain: 1334 of 1334 parks in RO without an outline; source: sources-merged-892-nov11.xlsx / World sources / world4; Service page opened. Use for protected-area polygons until ministry PS service is confirmed. Fallback only; not a national-agency source. Per-country inclusion not individually verified.",
+   "publisher": "EEA NatDA MapServer v22 (fallback; countries report official national data)",
+   "title": "EEA NatDA MapServer v22 (fallback; countries report official national data) | NatDA polygons (layers 1,3,4)",
+   "url": "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/NatDAv22_Dyna_WM/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "ES",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No licence on page; links to general Aviso legal",
+   "note": "LIVE-OK: national_gis; covers: Spain, 1,785 spaces to Dec 2025; EPSG:25830 (Iberia/Baleares), 32628 (Canarias); gain: 2498 of 2498 parks in ES without an outline; source: sources-merged-892-nov11.xlsx / World sources / world4; Page opened. Direct file links on official site (not ArcGIS Online); not downloaded. No WMS/WFS stated on page. Includes autonomous-community designations nationally compiled.",
+   "publisher": "MITECO Banco de Datos de la Naturaleza - Espacios Naturales Protegidos (ENP)",
+   "title": "MITECO Banco de Datos de la Naturaleza - Espacios Naturales Protegidos (ENP) | Enp2025_shp.zip (also geojson, kmz; PS_Natda2025_gml.zip NatDA)",
+   "url": "https://www.miteco.gob.es/eu/biodiversidad/servicios/banco-datos-naturaleza/informacion-disponible/enp_descargas.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "ES",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated on page; see Aviso legal",
+   "note": "LIVE-OK: national_gis; covers: Spain, Natura 2000 (Dec 2025 release by filename); gain: 2498 of 2498 parks in ES without an outline; source: sources-merged-892-nov11.xlsx / World sources / world4; Page opened; WMS endpoint URL not shown on page.",
+   "publisher": "MITECO Red Natura 2000 downloads",
+   "title": "MITECO Red Natura 2000 downloads | PS.Natura2000_2025_gml.zip (INSPIRE GML)",
+   "url": "https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/informacion-disponible/rednatura2000_descargas.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "ES",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated; Aviso legal linked",
+   "note": "LIVE-OK: national_gis; covers: Spain national parks only; gain: 2498 of 2498 parks in ES without an outline; source: sources-merged-892-nov11.xlsx / World sources / world4; Page opened; park limits updated Feb 2023. Not downloaded.",
+   "publisher": "MITECO OAPN Red de Parques Nacionales - SIG descargas",
+   "title": "MITECO OAPN Red de Parques Nacionales - SIG descargas | Limites de los parques nacionales",
+   "url": "https://www.miteco.gob.es/es/parques-nacionales-oapn/red-parques-nacionales/sig/sig-descargas.html"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "IT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No licence named; no public access limitation",
+   "note": "LIVE-OK: regional_gis; covers: Lombardy only; revised 2022-10-13; gain: 2167 of 2167 parks in IT without an outline; source: sources-merged-892-nov11.xlsx / World sources / world4; INSPIRE record opened. Example regional source only.",
+   "publisher": "Regione Lombardia - Rete Natura 2000",
+   "title": "Regione Lombardia - Rete Natura 2000 | ambiente/Rete_Natura_2000 (WMS/ArcGIS MapServer, shapefile)",
+   "url": "https://inspire-geoportal.ec.europa.eu/srv/api/records/r_lombar:43ac3aac-250e-48fe-917d-5b4cf34d4afc"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "SE",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC0",
+   "note": "LIVE-OK: national_gis; covers: Nationwide Sweden, Natura 2000 only; gain: 2258 of 2258 parks in SE without an outline; source: sources-merged-892-nov11.xlsx / World sources / world5; Supplementary to Naturvårdsregistret; same description PDF.",
+   "publisher": "Naturvårdsverket Natura 2000 WFS",
+   "title": "Naturvårdsverket Natura 2000 WFS | N2000_WFS:N2000 (Birds and Habitats Directives)",
+   "url": "https://geodata.naturvardsverket.se/n2000/wfs"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "SI",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Copyright ARSO; open-data terms not stated on service page (linked eProstor ATOM record says 'Ni omejitev' no restrictions)",
+   "note": "LIVE-OK: national_gis; covers: Whole Slovenia, EPSG:3794; national and local protected areas, ecologically important areas, Natura 2000, natural values; gain: 1180 of 1180 parks in SI without an outline; source: sources-merged-892-nov11.xlsx / World sources / world5; Verified by fetching service root (GeoJSON/JSON query, max 2000 records). Self-hosted Slovenian ArcGIS Server, not ArcGIS Online. Date of data not on page.",
+   "publisher": "ARSO Atlas voda / geohub: Zavarovana in varovana območja po ZON (ArcGIS Server REST, Slovenian Environment Agency)",
+   "title": "ARSO Atlas voda / geohub: Zavarovana in varovana območja po ZON (ArcGIS Server REST, Slovenian Environment Agency) | Državna zavarovana območja (5661); Državna zavarovana območja (točke) (5659); Lokal",
+   "url": "https://geohub.gov.si/ags/rest/services/DRSV/Zavarovana_in_varovana_obmocja_po_ZON/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "BR",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Site content CC BY-ND 3.0 (site-wide per gov.br/icmbio); dataset-specific terms not stated",
+   "note": "LIVE-OK: national_gis; covers: Federal UCs only (not state/municipal), excludes federal RPPNs; updated 2026-08-08; gain: 813 of 813 parks in BR without an outline; source: sources-merged-892-nov11.xlsx / World sources / world5; Page https://www.gov.br/icmbio/pt-br/dados-icmbio/dados_geoespaciais/mapa-tematico-e-dados-geoestatisticos-das-unidades-de-conservacao-federais. Static shapefile zip (limite_ucs_federais_082026.zip) also listed; not downloaded. Note CC BY-ND may rest",
+   "publisher": "ICMBio Limites das Unidades de Conservação Federais (INDE GeoServer WFS)",
+   "title": "ICMBio Limites das Unidades de Conservação Federais (INDE GeoServer WFS) | Limites de Unidades de Conservação Federais, exceto RPPN federais (WFS/WMS layer names not listed on page; check GetCapabilit",
+   "url": "https://geoservicos.inde.gov.br/geoserver/ICMBio/ows?service=wfs&version=2.0.0&request=GetCapabilities"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "BR",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Creative Commons Atribuição (CC BY)",
+   "note": "LIVE-OK: national_gis; covers: All Brazilian UCs registered in CNUC: federal, state, municipal; best fit for state/municipal gaps; gain: 813 of 813 parks in BR without an outline; source: sources-merged-892-nov11.xlsx / World sources / world5; Resource page opened, last updated 2025-09-03, zip+shp. Newer releases may exist on parent dataset https://dados.mma.gov.br/dataset/unidadesdeconservacao (parent not fetchable here, off allowlist). Zip not downloaded. State layers not needed because ",
+   "publisher": "MMA Cadastro Nacional de Unidades de Conservação (CNUC) polygons, Portal de Dados Abertos do MMA",
+   "title": "MMA Cadastro Nacional de Unidades de Conservação (CNUC) polygons, Portal de Dados Abertos do MMA | Polígono CNUC 2025_08 (shapefiles of UCs with active CNUC registration in Aug 2025)",
+   "url": "https://dados.mma.gov.br/en/dataset/unidadesdeconservacao/resource/6ba9a557-87e8-4882-acb7-b3e0f0ea192d"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "FI",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "SYKE open data licence (details on 'Use licence and responsibilities' page, not opened)",
+   "note": "LIVE-OK: national_gis; covers: All Finland; state and private nature reserves and wilderness reserves updated daily, Natura 2000 and other state areas 2026-06-02; gain: 1838 of 1838 parks in FI without an outline; source: sources-merged-892-nov11.xlsx / World sources / world5; Static shapefile packages under https://wwwd3.ymparisto.fi/d3/gis_data/spesific/ (not downloaded). No WFS mentioned on the page. Caveat: Finnish national parks sit inside the state nature reserve package; not separately verified.",
+   "publisher": "SYKE downloadable spatial datasets: Nature protected areas (state, private, wilderness reserves), Natura 2000, other sta",
+   "title": "SYKE downloadable spatial datasets: Nature protected areas (state, private, wilderness reserves), Natura 2000, other state protected areas | luonnonsuojelualueet_valtio.zip; luonnonsuojelualueet_yksit",
+   "url": "https://syke.fi/en/environmental-data/downloadable-spatial-datasets"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "PT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Copyright field empty; dados.gov.pt synthesis dataset is CC BY 4.0",
+   "note": "LIVE-OK: national_gis; covers: 25 mainland RNAP areas (1 national park, 13 natural parks, 9 natural reserves, 2 protected landscapes) with POAP; no Azores/Madeira, no plain RNAP outline layer verified; gain: 381 of 410 parks in PT without an outline; source: sources-merged-892-nov11.xlsx / World sources / world5; Service root opened (ArcGIS Server, JSON/GeoJSON query). Zoning layers, not pure boundary layer. dados.gov.pt record https://dados.gov.pt/en/datasets/planos-de-ordenamento-de-areas-protegidas (updated 2025-03-11, no resources listed). An official RNA",
+   "publisher": "ICNF Planos de Ordenamento de Áreas Protegidas (POAP) MapServer",
+   "title": "ICNF Planos de Ordenamento de Áreas Protegidas (POAP) MapServer | Áreas de Intervenção Específica; Regimes de Proteção; Matriz; Atividades",
+   "url": "https://sigservices.icnf.pt/server/rest/services/BDG/POAP/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "PT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "EEA reuse policy; not verified",
+   "note": "LIVE-OK: compilation; covers: National designations reported by Portugal; gain: 381 of 410 parks in PT without an outline; source: sources-merged-892-nov11.xlsx / World sources / world5; Fallback. ICNF is the reporting body (EEA indicator page, 52 RNAP areas, 746,296 ha mainland).",
+   "publisher": "EEA Nationally Designated Areas (NatDA/CDDA) MapServer - fallback",
+   "title": "EEA Nationally Designated Areas (NatDA/CDDA) MapServer - fallback | CDDAv21_Dyna_WM",
+   "url": "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDAv21_Dyna_WM/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "NO",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "NLOD 2.0 (open data; credit Miljodirektoratet)",
+   "note": "LIVE-OK: national_gis; covers: Mainland Norway, Svalbard, Jan Mayen; revision 2021-01-01, metadata 2025-04-24; gain: 356 of 3366 parks in NO without an outline; source: sources-merged-892-nov11.xlsx / World sources / world6; Listed endpoints: REST https://kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver, Atom https://nedlasting.miljodirektoratet.no/miljodata/ATOM/Datasett/Vern.xml, export http://karteksport.miljodirektoratet.no. No WFS listed (WMS only). dat",
+   "publisher": "Miljodirektoratet / Geonorge - Naturvernomrader (Protected sites)",
+   "title": "Miljodirektoratet / Geonorge - Naturvernomrader (Protected sites) | Naturvernomrader (vern MapServer)",
+   "url": "https://kartkatalog.geonorge.no/metadata/uuid/5857ec0a-8d2c-4cd8-baa2-0dc54ae213b4"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "NO",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC-BY 4.0",
+   "note": "LIVE-OK: compilation; covers: EEA38 incl. Norway; edition v22 (May 2024), marked Superseded; gain: 356 of 3366 parks in NO without an outline; source: sources-merged-892-nov11.xlsx / World sources / world6; Fallback only. Record is superseded; newer edition expected at sdi.eea.europa.eu. MapServer https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/NatDAv22_Dyna_WM/MapServer.",
+   "publisher": "EEA NatDA - Nationally designated areas (fallback)",
+   "title": "EEA NatDA - Nationally designated areas (fallback) | NatDA polygons (MapServer NatDAv22_Dyna_WM / LAEA)",
+   "url": "https://sdi.eea.europa.eu/catalogue/srv/api/records/616ef48f-7196-4e30-b201-6c97808fa68a"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "BE",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No named licence; free for public-interest tasks per Flemish decree; no legal value",
+   "note": "LIVE-OK: regional_gis; covers: Flemish Region; modified 2025-11-06; gain: 596 of 596 parks in BE without an outline; source: sources-merged-892-nov11.xlsx / World sources / world6; GeoPackage: https://dataplatform.omgeving.vlaanderen.be/public/mercatornet/ps_ven ; WMS https://www.mercator.vlaanderen.be/raadpleegdienstenmercatorpubliek/ows ; no WFS listed. Covers VEN only; Flemish Natura 2000/nature reserves are separate catalog",
+   "publisher": "Flanders ANB - Gebieden van het VEN en het IVON",
+   "title": "Flanders ANB - Gebieden van het VEN en het IVON | ps:ps_ven (WMS); GeoPackage download",
+   "url": "https://www.vlaanderen.be/datavindplaats/catalogus/gebieden-van-het-ven-en-het-ivon"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "BE",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not shown on service page; copyright SPW (2026), IGN, SPF (AGDP)",
+   "note": "LIVE-OK: regional_gis; covers: Wallonia; polygon, EPSG:3812; gain: 596 of 596 parks in BE without an outline; source: sources-merged-892-nov11.xlsx / World sources / world6; Region's own ArcGIS Server (not AGOL). Natura 2000 only; other Walloon protected areas (reserves) not located. Metadata in geoportail.wallonie.be not opened.",
+   "publisher": "Wallonia SPW geoservices - Natura 2000 sites (SDF reporting)",
+   "title": "Wallonia SPW geoservices - Natura 2000 sites (SDF reporting) | Layer 0: Perimetres des sites du reseau Natura 2000 (Rapportage SDF)",
+   "url": "https://geoservices.wallonie.be/arcgis/rest/services/FAUNE_FLORE/NATURA2000_SDF/MapServer/layers"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "BE",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC-BY 4.0",
+   "note": "LIVE-OK: regional_gis; covers: Brussels-Capital Region; revision 2017-11-21, metadata 2025-12-11; gain: 596 of 596 parks in BE without an outline; source: sources-merged-892-nov11.xlsx / World sources / world6; GML via ATOM download service record 3de2dd57-fbb1-43b0-bafc-0579d457097a; actual service URL not extracted. Other Brussels protected sites (reserves, Sonian Forest) exist as separate records.",
+   "publisher": "Brussels Environment - INSPIRE Natura 2000 sites",
+   "title": "Brussels Environment - INSPIRE Natura 2000 sites | INSPIRE Natura 2000 stations (Protected Sites)",
+   "url": "https://geobru-geonetwork.irisnet.be/geonetwork/srv/api/records/905d53f2-082d-41ea-a80e-9c61c7f172e7"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "NL",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated on collection page (PDOK/RVO open data)",
+   "note": "LIVE-OK: national_gis; covers: Netherlands Natura 2000; storage CRS EPSG:28992; gain: 313 of 313 parks in NL without an outline; source: sources-merged-892-nov11.xlsx / World sources / world6; OGC API Features GeoJSON items. Licence to be confirmed on dataset page.",
+   "publisher": "PDOK / RVO - Natura 2000",
+   "title": "PDOK / RVO - Natura 2000 | natura2000 (OGC API Features, also WFS)",
+   "url": "https://api.pdok.nl/rvo/natura2000/ogc/v1/collections/natura2000"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "NL",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Public Domain Mark 1.0",
+   "note": "LIVE-OK: national_gis; covers: Netherlands; annual EEA CDDA reporting set; gain: 313 of 313 parks in NL without an outline; source: sources-merged-892-nov11.xlsx / World sources / world6; Broader than Natura 2000 alone; preferred NL layer. Collections endpoint listed, not itemised.",
+   "publisher": "PDOK / RVO - Nationaal Beschermde Gebieden (CDDA)",
+   "title": "PDOK / RVO - Nationaal Beschermde Gebieden (CDDA) | cdda (Natura 2000, national parks, Natuur Netwerk Nederland)",
+   "url": "https://api.pdok.nl/rvo/nationaal-beschermde-gebieden-cdda/ogc/v1"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "IE",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated on page (links to Open Data Policy, Data Usage and Copyright pages)",
+   "note": "LIVE-OK: national_gis; covers: Ireland; SAC/SPA updated 2026-03-03, NHA 2019-06-28, pNHA 2015-11-01; gain: 301 of 315 parks in IE without an outline; source: sources-merged-892-nov11.xlsx / World sources / world6; Direct ZIP shapefile links, no login. Page also mentions WFS and ArcGIS REST FeatureServer (URLs not captured). EEA does not distribute Irish sites in NatDA.",
+   "publisher": "NPWS - Designated site boundary data",
+   "title": "NPWS - Designated site boundary data | SAC, SPA, NHA, pNHA shapefiles",
+   "url": "https://www.npws.ie/maps-and-data/designated-site-data/download-boundary-data"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CZ",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC BY 4.0, no access limitations",
+   "note": "LIVE-OK: national_gis; covers: Czech Republic; gain: 232 of 232 parks in CZ without an outline; source: sources-merged-892-nov11.xlsx / World sources / worldB1; Opened geoportal.gov.cz record: created 2019-10-03, metadata updated 2026-10-19, data range to 2024-03-18. ATOM feed itself not fetched. Resource id https://data.nature.cz/ATOM/INSPIRE-PS/ . AOPK web page lists no data links.",
+   "publisher": "AOPK CR INSPIRE Protected sites - nature (ATOM)",
+   "title": "AOPK CR INSPIRE Protected sites - nature (ATOM) | INSPIRE Protected sites - nature",
+   "url": "http://gis.nature.cz/inspire/atom/atom.xml"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "RE",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Licence Ouverte Etalab 2.0",
+   "note": "LIVE-OK: national_gis; covers: Reunion national park (820 objects, 1:25000); gain: 20 of 20 parks in RE without an outline; source: sources-merged-892-nov11.xlsx / World sources / worldB1; Opened: revision 2022-12-31. Shapefile https://inpn.mnhn.fr/docs/Shape/reu_pn.zip , WFS https://ws.carmencarto.fr/WFS/119/reu_inpn? (not fetched). National parks only; reserves (RNN etc.) at inpn.mnhn.fr/telechargement/cartes-et-information-geographi",
+   "publisher": "INPN / MNHN - Parcs nationaux Reunion",
+   "title": "INPN / MNHN - Parcs nationaux Reunion | Parcs nationaux - Reunion",
+   "url": "https://inpn-inspire.mnhn.fr/catalogue/srv/api/records/3df0cc9c-d10e-4a8b-b4ff-a1157c6c558a"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "SJ",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "NLOD 2.0",
+   "note": "LIVE-OK: national_gis; covers: Norway incl. Svalbard and Jan Mayen; gain: 1 of 2 parks in SJ without an outline; source: sources-merged-892-nov11.xlsx / World sources / worldB1; Opened: formats GML, GeoJSON, GDB; Atom https://nedlasting.miljodirektoratet.no/miljodata/ATOM/Datasett/Vern.xml ; REST kart.miljodirektoratet.no/arcgis/rest/services/vern/mapserver ; Geonorge uuid 5857ec0a-8d2c-4cd8-baa2-0dc54ae213b4. data.norge.no ",
+   "publisher": "Miljodirektoratet - Naturvernomrader (verneomrader)",
+   "title": "Miljodirektoratet - Naturvernomrader (verneomrader) | Protected sites (Vern)",
+   "url": "https://data.norge.no/en/datasets/65392b86-0c24-4ee1-824e-78c2a421f342/naturvernomrader"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CY",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated on page",
+   "note": "LIVE-OK: regional_gis; covers: Europe-wide incl. national designations; Cyprus coverage assumed, not confirmed; gain: 151 of 151 parks in CY without an outline; source: sources-merged-892-nov11.xlsx / World sources / worldB2; Page opened. July 2026 release (published 2026-07-10). Direct Geopackage/GDB download plus OGC WMS. Nothing downloaded. Official Cyprus Dept of Forests/Environment portal not located.",
+   "publisher": "EEA Nationally designated areas (CDDA/NatDA), fallback",
+   "title": "EEA Nationally designated areas (CDDA/NatDA), fallback | Nationally designated areas (DAT-24-en)",
+   "url": "https://www.eea.europa.eu/data-and-maps/data/nationally-designated-areas-cdda-1"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "ID",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated; (c) Dit. Pengukuhan dan Penatagunaan Kawasan Hutan, DJ Planologi, KLHK",
+   "note": "LIVE-OK: national_gis; covers: Indonesia forest estate (includes forest function; no distinct conservation layer named); gain: 89 of 107 parks in ID without an outline; source: sources-merged-892-nov11.xlsx / World sources / worldB2; Page opened. No dated metadata. Service item ID 320886dc203742c295c4696a210ef1ac. Conservation-area (KSDAE) polygons not confirmed as a separate layer; check other services under same server.",
+   "publisher": "KLHK/MoEF geoportal ArcGIS Server REST (SIGAP Interaktif)",
+   "title": "KLHK/MoEF geoportal ArcGIS Server REST (SIGAP Interaktif) | Peta kawasan hutan",
+   "url": "https://geoportal.menlhk.go.id/server/rest/services/SIGAP_Interaktif/Kawasan_Hutan/MapServer/layers"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "ID",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Public Domain (PD) per access constraints",
+   "note": "LIVE-OK: regional_gis; covers: West Sumatra forest areas only; gain: 89 of 107 parks in ID without an outline; source: sources-merged-892-nov11.xlsx / World sources / worldB2; Page opened. Published 2024-10-31; SHP/GeoJSON via WFS. Provincial, not national.",
+   "publisher": "Provincial GeoNode, Sumatera Barat Forestry (Kawasan Hutan SK 6599)",
+   "title": "Provincial GeoNode, Sumatera Barat Forestry (Kawasan Hutan SK 6599) | geonode:sk_kh_sumbar_6599",
+   "url": "https://katalog.data.go.id/spasial/kawasan-hutan"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "ZA",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Unknown",
+   "note": "LIVE-OK: national_gis; covers: South Africa (as hosted); gain: 74 of 143 parks in ZA without an outline; source: sources-merged-892-nov11.xlsx / World sources / worldB2; Search result only; not opened. Live REST service, likely mirror of SAPAD.",
+   "publisher": "DFFE ConservationSites MapServer hosted by Western Cape Government",
+   "title": "DFFE ConservationSites MapServer hosted by Western Cape Government | DFFE Protected Areas (SAPAD)",
+   "url": "https://gis.westerncape.gov.za/server2/rest/services/SpatialDataWarehouse/DFFE_ConservationSites/MapServer/0"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "HR",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not specified; access Public",
+   "note": "LIVE-OK: national_gis; covers: Croatia; gain: 381 of 381 parks in HR without an outline; source: sources-merged-892-nov11.xlsx / World sources / worldB2; Page opened. Metadata 2023-11-19, revision 2016-02-25, monthly update. WFS and WMS resources listed (URLs not exposed).",
+   "publisher": "Zasticena podrucja RH - INSPIRE (MINGOR / Bioportal) on data.gov.hr",
+   "title": "Zasticena podrucja RH - INSPIRE (MINGOR / Bioportal) on data.gov.hr | Zasticena podrucja Republike Hrvatske - INSPIRE",
+   "url": "https://data.gov.hr/ckan/en/dataset/e42c2038-b7b8-4229-9118-f907a3c515a6"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CH",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Swiss OGD terms (STAC says Proprietary; opendata.swiss page states none; check geocat)",
+   "note": "LIVE-OK: national_gis; covers: national (parks only); gain: 95 of 319 parks in CH without an outline; source: sources-merged-892-nov11.xlsx / World sources / worldB3; Opened STAC collection: updated 2026-03-19; assets empty so files via items/ browser. Other BAFU layers (Smaragd opendata.swiss/dataset/smaragd-gebiete, federal inventories) in search results only. EEA NatDA fallback not checked",
+   "publisher": "FOEN/BAFU Swiss National Park and parks of national importance (Zones) via geo.admin.ch STAC",
+   "title": "FOEN/BAFU Swiss National Park and parks of national importance (Zones) via geo.admin.ch STAC | ch.bafu.schutzgebiete-paerke_nationaler_bedeutung",
+   "url": "https://data.geo.admin.ch/api/stac/v0.9/collections/ch.bafu.schutzgebiete-paerke_nationaler_bedeutung"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "FK",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC BY (Open)",
+   "note": "LIVE-OK: national_gis; covers: Falkland Islands (NNRs); gain: 9 of 9 parks in FK without an outline; source: sources-merged-892-nov11.xlsx / World sources / worldB3; Opened. FIG data; ref 2020 (July 2020 file), portal updated 2023-11-23; SHP zip and GeoJSON. Ramsar sites layer also on portal (search result only)",
+   "publisher": "Falkland Islands Government via SAERI Data Portal: Natural Nature Reserves",
+   "title": "Falkland Islands Government via SAERI Data Portal: Natural Nature Reserves | Falkland Islands Natural Nature Reserves",
+   "url": "https://dataportal.saeri.org/dataset/falkland-islands-natural-nature-reserves"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "TC",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC BY-NC 2.0 (open access)",
+   "note": "LIVE-OK: national_gis; covers: Turks and Caicos; gain: 7 of 7 parks in TC without an outline; source: sources-merged-892-nov11.xlsx / World sources / worldB3; Opened. Created 2020-10-29, updated 2024-09-06; Shapefile zip and GeoJSON. National Parks Ordinance zones dataset: https://dataportal.gov.tc/dataset/zones-ordinance-np (search result only)",
+   "publisher": "TCI Government Data Portal (DECR): Protected Areas in the Turks and Caicos, 2020",
+   "title": "TCI Government Data Portal (DECR): Protected Areas in the Turks and Caicos, 2020 | Accepted / Proposed protected areas",
+   "url": "https://dataportal.gov.tc/dataset/protected-areas-tci"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "AX",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC BY 4.0",
+   "note": "LIVE-OK: regional_gis; covers: Aland; gain: 5 of 14 parks in AX without an outline; source: sources-merged-892-nov11.xlsx / World sources / worldB3; Opened CKAN record: ref 2019-11-13, updated 2022-08-31; WFS, EPSG:3067; service URL not shown in page text (check kartor.ax)",
+   "publisher": "Ålands landskapsregering: Skyddsområden på Åland (WFS via kartor.ax)",
+   "title": "Ålands landskapsregering: Skyddsområden på Åland (WFS via kartor.ax) | Skyddsomraden pa Aland",
+   "url": "https://ckanmtp.ymparisto.fi/en/dataset/skyddsomraden-pa-aland-wfs"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "IS",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No use limitations; cite source; do not modify boundaries",
+   "note": "LIVE-OK: national_gis; covers: Iceland national (land, marine, freshwater); gain: 116 of 116 parks in IS without an outline; source: sources-merged-892-nov11.xlsx / World sources / worldB4; Opened. WFS https://gis.ust.is/geoserver/wfs and WMS gis.ust.is/geoserver/ows; listed distribution format Shapefile. Dataset revision 2014-09-23, metadata stamp 2026-01-09. Contact gis@ust.is.",
+   "publisher": "Umhverfis- og orkustofnun (Environment and Energy Agency) via Landupplysingagatt metadata",
+   "title": "Umhverfis- og orkustofnun (Environment and Energy Agency) via Landupplysingagatt metadata | fridlyst_svaedi (also _haf, _vatn)",
+   "url": "https://gatt.natt.is/geonetwork/srv/api/records/{6D940937-15DB-4D50-833B-37D2F2AB1207}"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "GP",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Free download subject to INPN conditions of use (licence not named on page)",
+   "note": "LIVE-OK: national_gis; covers: Guadeloupe (also Guyane, Reunion, Metropole); gain: 29 of 29 parks in GP without an outline; source: sources-merged-892-nov11.xlsx / World sources / worldB4; Opened. Shapefile and MapInfo plus WMS/WFS by territory. Also data.gouv.fr DEAL Guadeloupe 'Espaces naturels proteges de Guadeloupe' (Licence Ouverte 2.0, updated 2024-11-15) but only PNG maps.",
+   "publisher": "INPN (MNHN) - reference GIS layers national parks and other protected areas",
+   "title": "INPN (MNHN) - reference GIS layers national parks and other protected areas | Parcs nationaux (Guadeloupe version 09/2023); sister pages rnn, apb, rb, ramsar",
+   "url": "https://inpn.mnhn.fr/telechargement/cartes-et-information-geographique/ep/pn?lg=en"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "LU",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC0",
+   "note": "LIVE-OK: national_gis; covers: Luxembourg national; gain: 46 of 46 parks in LU without an outline; source: sources-merged-892-nov11.xlsx / World sources / worldB4; Opened. GML 16.8 MB (updated 2026-11-05) and WMS wms.inspire.geoportail.lu/geoserver/ps/wms. Flagged-failed, now resolved. Also ZPIN dataset on data.public.lu.",
+   "publisher": "Geoportail.lu INSPIRE Protected Sites - CDDA nationally designated areas",
+   "title": "Geoportail.lu INSPIRE Protected Sites - CDDA nationally designated areas | ps.protectedsites-cdda",
+   "url": "https://data.public.lu/en/datasets/inspire-annex-i-theme-protected-sites-cdda-nationally-designated-areas/"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "AT",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No access/use conditions stated; no named license",
+   "note": "LIVE-OK: regional_gis; covers: Lower Austria only; gain: 220 of 420 parks in AT without an outline; source: sources-merged-892-nov11.xlsx / World sources / worldB5; Opened INSPIRE record: download feed geo.noe.gv.at/inspire-download/download_service_feed.xml + WMS; created 2018-12-18, metadata 2022-10-10. Other Laender have own records (e.g. OOe DORIS) - search result only. No single national Austria layer found",
+   "publisher": "Land Niederoesterreich INSPIRE Protected Sites",
+   "title": "Land Niederoesterreich INSPIRE Protected Sites | Protected Sites (INSPIRE Anhang I) Niederoesterreich",
+   "url": "https://inspire-geoportal.ec.europa.eu/srv/api/records/03d595d8-8c77-4d02-8a3b-a9cea2313778"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "SG",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Singapore Open Data Licence (free personal/commercial use)",
+   "note": "LIVE-OK: national_gis; covers: Singapore: Bukit Timah, Central Catchment, Labrador, Sungei Buloh reserves + managed parks (indicative managed areas); gain: 64 of 64 parks in SG without an outline; source: sources-merged-892-nov11.xlsx / World sources / worldB5; Opened page. GeoJSON ~3 MB via data.gov.sg; updated every 6 months, data Nov 2025. Boundaries indicative.",
+   "publisher": "NParks Parks and Nature Reserves (data.gov.sg)",
+   "title": "NParks Parks and Nature Reserves (data.gov.sg) | NParks Parks and Nature Reserves",
+   "url": "https://data.gov.sg/dataset/nparks-parks-and-nature-reserves"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "PF",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "No license stated on page",
+   "note": "LIVE-OK: national_gis; covers: French Polynesia (territorial PA categories); gain: 36 of 40 parks in PF without an outline; source: sources-merged-892-nov11.xlsx / World sources / worldB5; Opened: version 12/2022; WMS/WFS listed. Other PF categories on sibling INPN pages (search result only). Territory agency DIREN (service-public.pf/diren) not opened.",
+   "publisher": "INPN (MNHN) Aire protegee de ressources naturelles gerees - Polynesie francaise",
+   "title": "INPN (MNHN) Aire protegee de ressources naturelles gerees - Polynesie francaise | Aire protegee de ressources naturelles gerees (also pyf_pgem, pyf_apia pages)",
+   "url": "https://inpn.mnhn.fr/telechargement/cartes-et-information-geographique/ap/pyf_ap_rng?lg=en"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CL",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Copyright line only (MBN 2024); no licence; reference only",
+   "note": "LIVE-OK: agency_gis; covers: SNASPE units incl. national parks/reserves; gain: 251 of 418 parks in CL without an outline; source: sources-merged-892-nov11.xlsx / World sources / agency_b; Own ArcGIS Server (not AGOL) REST services directory opened; layer list read, no query run, no data downloaded; official decree is in MBN cadastre; verified by opening page",
+   "publisher": "Ministerio de Bienes Nacionales (data owner), served by Superintendencia del Medio Ambiente IDE — SNASPE state units (re",
+   "title": "Ministerio de Bienes Nacionales (data owner), served by Superintendencia del Medio Ambiente IDE — SNASPE state units (reference copy of boundaries) | Sistema Nacional de Areas Silvestres Protegidas de",
+   "url": "https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Areas_proteccion_oficial2/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CL",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Copyright line only; no licence",
+   "note": "LIVE-OK: agency_gis; covers: Private reserves, some Parks/Reserves; gain: 251 of 418 parks in CL without an outline; source: sources-merged-892-nov11.xlsx / World sources / agency_b; REST layer listing opened (2015 vintage, possibly stale); also lists Sitios prioritarios (MMA 2020); verified by opening page",
+   "publisher": "Ministerio del Medio Ambiente (recognises private protected areas) — Private protected areas and conservation reserves (",
+   "title": "Ministerio del Medio Ambiente (recognises private protected areas) — Private protected areas and conservation reserves (e.g. Altos de Chicauma, El Panul, Alerzales) | Private-property protected areas ",
+   "url": "https://ideserver.sma.gob.cl/arcgis/rest/services/IDE/Otras_bajo_proteccion/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CO",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated on service page",
+   "note": "LIVE-OK: agency_gis; covers: National, RUNAP categories (Nacional/Regional/Local); gain: 174 of 546 parks in CO without an outline; source: sources-merged-892-nov11.xlsx / World sources / agency_c; Own ArcGIS Server REST (not AGOL); page opened, categories incl. Parque_Natural_Regional. Terms to confirm. verified by opening page",
+   "publisher": "Ministerio de Ambiente y Desarrollo Sostenible (publisher of service); Parques Nacionales Naturales (RUNAP administrator",
+   "title": "Ministerio de Ambiente y Desarrollo Sostenible (publisher of service); Parques Nacionales Naturales (RUNAP administrator) — National parks, regional parks, other RUNAP categories | Layer 0 ap_ue_areap",
+   "url": "https://geo.minambiente.gov.co/server/rest/services/OTL/OTL_Area_Protegida/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "CO",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Not stated",
+   "note": "LIVE-OK: agency_gis; covers: Colombia, 2020 snapshot; gain: 174 of 546 parks in CO without an outline; source: sources-merged-892-nov11.xlsx / World sources / agency_c; Older RUNAP 2020 copy; owner not named on page. verified by opening page",
+   "publisher": "INVEMAR (research institute under Minambiente) — Marine/coastal protected areas",
+   "title": "INVEMAR (research institute under Minambiente) — Marine/coastal protected areas | Layer 0 Areas protegidas (RUNAP 2020)",
+   "url": "https://gis.invemar.org.co/ArcGIS/rest/services/MapaBase/Areas_protegidas/MapServer"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "GR",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "CC BY-SA 4.0 stated (not formally adopted by administrative act)",
+   "note": "LIVE-OK: agency_gis; covers: Greece; gain: 64 of 293 parks in GR without an outline; source: sources-merged-892-nov11.xlsx / World sources / agency_c; YPEN INSPIRE record (WFS on geoportal.ypen.gr, water-body theme) opened and confirms national GeoServer and CC BY-SA 4.0. Wildlife refuge/Natura layer itself NOT confirmed; check catalogue. verified by opening page",
+   "publisher": "Ministry of Environment and Energy (YPEN); NECCA — National wildlife refuges; Natura 2000 areas",
+   "title": "Ministry of Environment and Energy (YPEN); NECCA — National wildlife refuges; Natura 2000 areas | YPEN GeoNetwork/GeoServer (INSPIRE); protected sites layer not confirmed",
+   "url": "http://geoportal.ypen.gr/geonetwork/srv/eng/csw?SERVICE=CSW&VERSION=2.0.2&REQUEST=GetCapabilities"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "MQ",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Freely downloadable subject to stated conditions of use (conditions not detailed on page)",
+   "note": "LIVE-OK: agency_gis; covers: Martinique; gain: 10 of 10 parks in MQ without an outline; source: sources-merged-892-nov11.xlsx / World sources / agency_e; verified by opening page. Shapefile and MapInfo plus WMS/WFS; version 02/2024. Land-holdings layer only; coastal sites held by the agency. Not downloaded.",
+   "publisher": "Conservatoire du littoral — Conservatoire du littoral",
+   "title": "Conservatoire du littoral — Conservatoire du littoral | Terrains du Conservatoire du Littoral; mtq_inpn WMS/WFS (https://ws.carmencarto.fr/WFS/119/mtq_inpn?)",
+   "url": "https://inpn.mnhn.fr/telechargement/cartes-et-information-geographique/ep/cl?lg=en"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "GP",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Licence Ouverte 2.0",
+   "note": "LIVE-OK: agency_gis; covers: Guadeloupe coastal conservancy domain; gain: 29 of 29 parks in GP without an outline; source: sources-merged-892-nov11.xlsx / World sources / agency_e; verified by opening page. Two shapefile resources, resources dated 2024-11-15. Not downloaded.",
+   "publisher": "DEAL Guadeloupe — Deal Guadeloupe (State environment service)",
+   "title": "DEAL Guadeloupe — Deal Guadeloupe (State environment service) | cdl_domaine_protege (shapefile)",
+   "url": "https://www.data.gouv.fr/datasets/cdl-domaine-protege"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "GP",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Licence Ouverte 2.0",
+   "note": "LIVE-OK: agency_gis; covers: Guadeloupe state/departmental forest; gain: 29 of 29 parks in GP without an outline; source: sources-merged-892-nov11.xlsx / World sources / agency_e; verified by opening page. Two shapefile resources. Not downloaded.",
+   "publisher": "DEAL Guadeloupe — Deal Guadeloupe (State environment service)",
+   "title": "DEAL Guadeloupe — Deal Guadeloupe (State environment service) | L_FORET_DEP_S_971 (shapefile)",
+   "url": "https://www.data.gouv.fr/datasets/l-foret-dep-s-971"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "GP",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "Licence Ouverte 2.0",
+   "note": "LIVE-OK: agency_gis; covers: Guadeloupe forest perimeters (territory inferred from publisher); gain: 29 of 29 parks in GP without an outline; source: sources-merged-892-nov11.xlsx / World sources / agency_e; verified by opening page. Two shapefile resources; dataset date conflicts (2022 vs 2024). Not downloaded.",
+   "publisher": "DEAL Guadeloupe — Deal Guadeloupe (State environment service)",
+   "title": "DEAL Guadeloupe — Deal Guadeloupe (State environment service) | L_PERIMETRE_FORET_S (shapefile)",
+   "url": "https://data.gouv.fr/es/datasets/l-perimetre-foret-s"
+  },
+  {
+   "added": "2026-11-12",
+   "area": "PR",
+   "from": "outside search Nov 11 (Brandon, Nov 12)",
+   "licence": "None stated; cite Caribbean LCC 2015 Puerto Rico Protected Areas Database",
+   "note": "LIVE-OK: agency_gis; covers: Puerto Rico protected areas as of 2015-12-15; not legal boundaries; gain: 44 of 90 parks in PR without an outline; source: sources-merged-892-nov11.xlsx / World sources / agency_e; verified by opening page. Government ArcGIS Server REST (not AGOL). Older than layer 5 (2018) recorded earlier.",
+   "publisher": "Puerto Rico Planning Board (SIGE) — Junta de Planificacion (government SDI)",
+   "title": "Puerto Rico Planning Board (SIGE) — Junta de Planificacion (government SDI) | Areas_Protegidas_2015 (polygon)",
+   "url": "https://sige.pr.gov/server/rest/services/Advisory_Maps/areas_protegidas/MapServer/0"
   }
  ]
 }
