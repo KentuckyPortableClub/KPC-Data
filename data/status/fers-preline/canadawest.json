@@ -1,52 +1,13 @@
 {
  "tag": "canadawest",
  "states": [
-  "CA-MB",
-  "CA-SK",
   "CA-AB",
-  "CA-BC",
-  "CA-YT",
-  "CA-NT",
-  "CA-NU"
+  "CA-SK",
+  "CA-MB"
  ],
  "key_source": "build",
- "checked": "2026-11-09 20:44 UTC",
+ "checked": "2026-11-12 23:54 UTC",
  "areas": {
-  "CA-MB": {
-   "hold": [],
-   "warn": [
-    "3 review-pile HOLD row(s) still outlines: CA-2439 CA-2441 CA-2506 (their 2-fers are 'not sure')",
-    "3 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): CA-2439 CA-2441 CA-2506"
-   ],
-   "key_file": "data/ca-key/CA-MB.json",
-   "build": "CA-42689962177",
-   "built": "2026-11-09 20:26 UTC",
-   "rules": "8feccbb7d9ee",
-   "parks": 308,
-   "outlines": 219,
-   "held_key": "HELD KEY: build CA-42689962177 has no person's sign-off yet; the 2-fers measured on it are held with it",
-   "postcheck": "ca-CA-42689962177.json",
-   "bad_pins": 3,
-   "overrides_no_still": 0
-  },
-  "CA-SK": {
-   "hold": [],
-   "warn": [
-    "18 review-pile HOLD row(s) still outlines: CA-0625 CA-2547 CA-2550 CA-2554 CA-2581 CA-2582 CA-2633 CA-2656 CA-2658 CA-2679 (their 2-fers are 'not sure')",
-    "1 rule 18 row(s): CA-4932 (a person decides)",
-    "17 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): CA-0625 CA-2547 CA-2550 CA-2554 CA-2581 CA-2582 CA-2633 CA-2658 CA-2679 CA-2687 CA-2713 CA-2778 CA-2816 CA-2826 CA-2846"
-   ],
-   "key_file": "data/ca-key/CA-SK.json",
-   "build": "CA-42689962177",
-   "built": "2026-11-09 20:26 UTC",
-   "rules": "8feccbb7d9ee",
-   "parks": 411,
-   "outlines": 318,
-   "held_key": "HELD KEY: build CA-42689962177 has no person's sign-off yet; the 2-fers measured on it are held with it",
-   "postcheck": "ca-CA-42689962177.json",
-   "bad_pins": 17,
-   "overrides_no_still": 0
-  },
   "CA-AB": {
    "hold": [],
    "warn": [
@@ -54,85 +15,54 @@
     "5 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): CA-0109 CA-1164 CA-1197 CA-3085 CA-6112"
    ],
    "key_file": "data/ca-key/CA-AB.json",
-   "build": "CA-42689962177",
-   "built": "2026-11-09 20:26 UTC",
-   "rules": "8feccbb7d9ee",
+   "build": "CA-43311979456",
+   "built": "2026-11-12 21:54 UTC",
+   "rules": "2a4d0154d95c",
    "parks": 459,
    "outlines": 394,
-   "held_key": "HELD KEY: build CA-42689962177 has no person's sign-off yet; the 2-fers measured on it are held with it",
-   "postcheck": "ca-CA-42689962177.json",
+   "held_key": "HELD KEY: build CA-43311979456 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "ca-CA-43311979456.json",
    "bad_pins": 5,
    "overrides_no_still": 0
   },
-  "CA-BC": {
+  "CA-SK": {
    "hold": [],
    "warn": [
-    "5 review-pile HOLD row(s) still outlines: CA-3900 CA-3905 CA-3937 CA-4094 CA-6131 (their 2-fers are 'not sure')",
-    "5 rule 18 row(s): CA-3328 CA-3534 CA-3899 CA-3900 CA-4030 (a person decides)",
-    "6 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): CA-3408 CA-3900 CA-3905 CA-3937 CA-4094 CA-6131"
+    "16 review-pile HOLD row(s) still outlines: CA-0625 CA-2547 CA-2550 CA-2581 CA-2582 CA-2633 CA-2656 CA-2658 CA-2679 CA-2687 (their 2-fers are 'not sure')",
+    "1 rule 18 row(s): CA-4932 (a person decides)",
+    "17 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): CA-0625 CA-2547 CA-2550 CA-2554 CA-2581 CA-2582 CA-2633 CA-2658 CA-2679 CA-2687 CA-2713 CA-2778 CA-2816 CA-2826 CA-2846"
    ],
-   "key_file": "data/ca-key/CA-BC.json",
-   "build": "CA-42689962177",
-   "built": "2026-11-09 20:26 UTC",
-   "rules": "8feccbb7d9ee",
-   "parks": 1254,
-   "outlines": 1219,
-   "held_key": "HELD KEY: build CA-42689962177 has no person's sign-off yet; the 2-fers measured on it are held with it",
-   "postcheck": "ca-CA-42689962177.json",
-   "bad_pins": 6,
+   "key_file": "data/ca-key/CA-SK.json",
+   "build": "CA-43311979456",
+   "built": "2026-11-12 21:54 UTC",
+   "rules": "2a4d0154d95c",
+   "parks": 411,
+   "outlines": 317,
+   "held_key": "HELD KEY: build CA-43311979456 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "ca-CA-43311979456.json",
+   "bad_pins": 17,
    "overrides_no_still": 0
   },
-  "CA-YT": {
+  "CA-MB": {
    "hold": [],
    "warn": [
-    "1 review-pile HOLD row(s) still outlines: CA-4623 (their 2-fers are 'not sure')",
-    "1 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): CA-4623"
+    "2 review-pile HOLD row(s) still outlines: CA-2439 CA-2441 (their 2-fers are 'not sure')",
+    "3 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): CA-2439 CA-2441 CA-2506"
    ],
-   "key_file": "data/ca-key/CA-YT.json",
-   "build": "CA-42689962177",
-   "built": "2026-11-09 20:26 UTC",
-   "rules": "8feccbb7d9ee",
-   "parks": 112,
-   "outlines": 29,
-   "held_key": "HELD KEY: build CA-42689962177 has no person's sign-off yet; the 2-fers measured on it are held with it",
-   "postcheck": "ca-CA-42689962177.json",
-   "bad_pins": 1,
-   "overrides_no_still": 0
-  },
-  "CA-NT": {
-   "hold": [],
-   "warn": [
-    "1 review-pile HOLD row(s) still outlines: CA-4344 (their 2-fers are 'not sure')",
-    "1 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): CA-4344"
-   ],
-   "key_file": "data/ca-key/CA-NT.json",
-   "build": "CA-42689962177",
-   "built": "2026-11-09 20:26 UTC",
-   "rules": "8feccbb7d9ee",
-   "parks": 68,
-   "outlines": 18,
-   "held_key": "HELD KEY: build CA-42689962177 has no person's sign-off yet; the 2-fers measured on it are held with it",
-   "postcheck": "ca-CA-42689962177.json",
-   "bad_pins": 1,
-   "overrides_no_still": 0
-  },
-  "CA-NU": {
-   "hold": [],
-   "warn": [],
-   "key_file": "data/ca-key/CA-NU.json",
-   "build": "CA-42689962177",
-   "built": "2026-11-09 20:26 UTC",
-   "rules": "8feccbb7d9ee",
-   "parks": 48,
-   "outlines": 34,
-   "held_key": "HELD KEY: build CA-42689962177 has no person's sign-off yet; the 2-fers measured on it are held with it",
-   "postcheck": "ca-CA-42689962177.json",
-   "bad_pins": 0,
+   "key_file": "data/ca-key/CA-MB.json",
+   "build": "CA-43311979456",
+   "built": "2026-11-12 21:54 UTC",
+   "rules": "2a4d0154d95c",
+   "parks": 308,
+   "outlines": 218,
+   "held_key": "HELD KEY: build CA-43311979456 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "ca-CA-43311979456.json",
+   "bad_pins": 3,
    "overrides_no_still": 0
   }
  },
  "about": "2-fer pre-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4). HOLD = the line does not build. Read-only; nothing is moved or released.",
- "fers_rules": "94b7d25d0769",
+ "fers_rules": "cef323de4c9a",
  "verdict": "GO",
  "holds": [],
  "held_key": true
