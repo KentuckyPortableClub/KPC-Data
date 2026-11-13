@@ -5,13 +5,13 @@
    "verdict": "FAIL",
    "bar": "Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.",
    "measured": {
-    "rows": 10566,
-    "parks": 4116,
+    "rows": 10622,
+    "parks": 4126,
     "parks_with_hit": 579,
-    "SURE": 444,
-    "LIKELY": 647,
-    "UNLIKELY_evidence": 3838,
-    "strong": 245,
+    "SURE": 446,
+    "LIKELY": 654,
+    "UNLIKELY_evidence": 3851,
+    "strong": 246,
     "already_approved": 568,
     "open_without_whynot": 456,
     "non_official_candidates": 1,
@@ -31,15 +31,15 @@
     },
     {
      "reason": "evidence: UNLIKELY only : name: none word in common",
-     "parks": 1729
+     "parks": 1733
     },
     {
      "reason": "blocked: source could not be read",
-     "parks": 1019
+     "parks": 1053
     },
     {
      "reason": "evidence: UNLIKELY only : pin not inside nor within m with a name match",
-     "parks": 852
+     "parks": 854
     },
     {
      "reason": "already approved: already approved",
@@ -108,21 +108,21 @@
     "the finder bars need the side-by-side run (95% re-found, +25% parks) and a 40-row sample (85% YES)"
    ],
    "details": {
-    "rows": 10566,
-    "found_or_candidate": 1065,
-    "blocked": 2066,
+    "rows": 10622,
+    "found_or_candidate": 1074,
+    "blocked": 2100,
     "hit_rate": 0.101,
     "bands": {
-     "STRONG": 245,
-     "WEAK": 802,
+     "STRONG": 246,
+     "WEAK": 810,
      "CONFLICT": 18
     },
     "tiers": {
-     "T-1": 75,
-     "T-2": 350,
-     "T-3": 509,
-     "T-4": 66,
-     "T-6": 65
+     "T-1": 76,
+     "T-2": 351,
+     "T-3": 514,
+     "T-4": 67,
+     "T-6": 66
     },
     "every_open_park_has_whynot": false,
     "non_official_publishers": []
@@ -297,10 +297,10 @@
    "pass1": {
     "error": 430,
     "already approved": 568,
-    "found": 258,
-    "candidate": 900,
-    "evidence": 3768,
-    "blocked": 2066,
+    "found": 259,
+    "candidate": 908,
+    "evidence": 3781,
+    "blocked": 2100,
     "not found": 2571,
     "pin only": 5
    },
