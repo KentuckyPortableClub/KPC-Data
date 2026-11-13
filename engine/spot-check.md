@@ -1,4 +1,4 @@
-# Spot check: all kinds (20 random rows of 10273)
+# Spot check: all kinds (20 random rows of 10322)
 
 For chat 11: open each link and say YES / NO. The engine decides nothing.
 
@@ -14,16 +14,16 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Michel-Chartrand, Parc' (PACK-CA-QC-park-91); pin inside; about 410.4 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## CA-4896 Battle of the Chateauguay National Historic Site (CA-QC)
+## US-9561 Luckiamute Landing State Natural Area (US-OR)
 - status: candidate
-- tier: T-2
+- tier: T-3
 - band: WEAK
-- record_name: Battle of the Châteauguay National Historic Site CNPA
-- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2042&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-73.929%2C45.1587&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Luckiamute
+- url: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_State_Parks/FeatureServer/0?f=html
+- record_link: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_State_Parks/FeatureServer/0/query?where=OBJECTID%3D220&outFields=%2A&f=html
+- source_url: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_State_Parks/FeatureServer/0/query?geometry=-123.163%2C44.7153&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Battle of the Châteauguay National Historic Site CNPA' (Q-1781); pin inside; about 3.3 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: same land also in PACK-US-OR-park-322 'Luckiamute': merged, counted once; record 'Luckiamute' (PACK-US-OR-land-206); pin inside; about 943.3 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## US-7618 Rankin Wildlife Management Area (US-TN)
@@ -38,40 +38,40 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Rankin Bottom WMA' (PACK-US-TN-wildlife-345); pin 14 m from the edge; about 711.7 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## CA-5095 Central Experimental Farm National Historic Site (CA-ON)
+## CA-4868 Fort Wellington National Historic Site (CA-ON)
+- status: candidate
+- tier: T-2
+- band: CONFLICT
+- record_name: Fort Wellington NHS - Lots 13 to 28, CLSR 56466
+- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1791&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-75.5105%2C44.7126&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Fort Wellington NHS - Lots 13 to 28, CLSR 56466' (PACK-CA-NB-land-73); pin inside; about 5.7 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- answer: 
+
+## CA-2335 Zec Onatchiway Nature Reserve (CA-QC)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Experimental Farm
-- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2152&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-75.7088%2C45.3877&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: same land also in CA-ON-ca-admin 'Rideau Valley Conservation Authority': merged, counted once; record 'Experimental Farm' (PACK-CA-NB-land-73); pin inside; about 1014.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- record_name: Zec Onatchiway-Est
+- url: https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/16?f=html
+- record_link: https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/16/query?geometry=-70.8544%2C48.7749&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- source_url: https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/16/query?geometry=-70.8544%2C48.7749&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 41
+- why: record 'Zec Onatchiway-Est' (PACK-CA-QC-park-445); pin 41 m from the edge; about 363410.3 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## US-12025 Goose Creek State Game Land (US-IN)
-- status: candidate
-- tier: T-4
-- band: WEAK
-- record_name: Goose Creek Gamebird Habitat Area
-- url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html
-- record_link: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D3804&outFields=%2A&f=html
-- source_url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-87.3503%2C40.5114&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Goose Creek Gamebird Habitat Area' (PACK-US-IN-land-191); pin inside; about 376.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
-- answer: 
-
-## US-0474 Elizabeth A. Morton National Wildlife Refuge (US-NY)
-- status: candidate
+## US-0374 Big Muddy National Wildlife Refuge (US-MO)
+- status: found
 - tier: T-2
-- band: WEAK
-- record_name: ELIZABETH ALEXANDRA MORTON NATIONAL WILDLIFE REFUGE
+- band: STRONG
+- record_name: BIG MUDDY NATIONAL FISH AND WILDLIFE REFUGE
 - url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0?f=html
-- record_link: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?where=OBJECTID%3D3290&outFields=%2A&f=html
-- source_url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?geometry=-72.3684%2C40.9884&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?where=OBJECTID%3D4297&outFields=%2A&f=html
+- source_url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?geometry=-92.5721%2C38.9615&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'ELIZABETH ALEXANDRA MORTON NATIONAL WILDLIFE REFUGE' (US-FWS-interest); pin inside; about 176.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'BIG MUDDY NATIONAL FISH AND WILDLIFE REFUGE' (US-FWS-interest); pin inside; about 5326.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
 ## US-3692 Heron Bay and Portersville Bay State Fish and Wildlife Area (US-AL)
@@ -110,16 +110,16 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Pennyrile Forest' (US-KY-stateparks); pin inside; about 929.9 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: likely
 - answer: 
 
-## CA-4866 Fort Mississauga National Historic Site (CA-ON)
+## CA-4864 Fort Henry National Historic Site (CA-ON)
 - status: found
 - tier: T-1
 - band: STRONG
-- record_name: Fort Mississauga National Historic Site
+- record_name: Fort Henry National Historic Site
 - url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2309&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-79.0767%2C43.2616&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2269&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-76.4604%2C44.2305&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Fort Mississauga National Historic Site' (PACK-CA-NB-land-73); pin inside; about 55.6 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: record 'Fort Henry National Historic Site' (PACK-CA-NB-land-73); pin inside; about 62.4 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
 ## US-6409 Waimea State Recreation Area (US-HI)
@@ -158,16 +158,16 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Coon Creek Tract' (PACK-US-AL-preserve-217); pin inside; about 315.7 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: likely
 - answer: 
 
-## US-10763 Fishing Bay Marshes Natural Area (US-MD)
+## US-10751 Idylwild Natural Area (US-MD)
 - status: found
 - tier: T-2
 - band: STRONG
-- record_name: Fishing Bay Marshes
+- record_name: Idywild
 - url: https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0?f=html
-- record_link: https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0/query?where=OBJECTID%3D12&outFields=%2A&f=html
-- source_url: https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0/query?geometry=-75.9458%2C38.322&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0/query?where=OBJECTID%3D16&outFields=%2A&f=html
+- source_url: https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0/query?geometry=-75.7606%2C38.733&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: same land also in PACK-US-MD-land-195 'FISHING BAY WMA': merged, counted once; record 'Fishing Bay Marshes' (PACK-US-MD-preserve-272); pin inside; about 16870.0 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: same land also in PACK-US-MD-land-195 'IDYLWILD WMA': merged, counted once; record 'Idywild' (PACK-US-MD-preserve-272); pin inside; about 1494.8 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
 ## US-5992 Big Creek USFS Wild Horse Territory & BLM Herd Management Area (US-UT)
@@ -194,40 +194,40 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Carr Creek' (US-KY-stateparks); pin inside; about 42.4 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: likely
 - answer: 
 
-## CA-6012 Morrison Dam Conservation Area (CA-ON)
+## CA-6253 Moirs Ltd. Power House Historic Site (CA-NS)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Morrison Dam CA
-- url: https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/ABCA_Properties/FeatureServer/0?f=html
-- record_link: https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/ABCA_Properties/FeatureServer/0/query?where=OBJECTID%3D23&outFields=%2A&f=html
-- source_url: https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/ABCA_Properties/FeatureServer/0/query?geometry=-81.4577%2C43.3602&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 8
-- why: same land also in CA-ON-ca-admin 'Ausable Bayfield Conservation Authority': merged, counted once; record 'Morrison Dam CA' (PACK-CA-ON-land-397); pin 8 m from the edge; about 24.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- record_name: Moirs Ltd. Power House
+- url: https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0?f=html
+- record_link: https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0/query?where=OBJECTID%3D102&outFields=%2A&f=html
+- source_url: https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0/query?geometry=-63.6781%2C44.7142&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 6
+- why: record 'Moirs Ltd. Power House' (PACK-CA-NS-land-83); pin 6 m from the edge; about 3.3 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
-## US-7893 Augusta Canal National Heritage Area (US-GA)
-- status: found
-- tier: T-1
-- band: STRONG
-- record_name: Augusta Canal National Heritage Area
-- url: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Heritage_Areas_Updated2023/FeatureServer/0?f=html
-- record_link: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Heritage_Areas_Updated2023/FeatureServer/0/query?where=OBJECTID%3D1&outFields=%2A&f=html
-- source_url: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Heritage_Areas_Updated2023/FeatureServer/0/query?geometry=-82.0029%2C33.512&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Augusta Canal National Heritage Area' (PACK-US-GA-land-48); pin inside; about 133.2 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
-- answer: 
-
-## US-12988 North Nehalem State Fish Hatchery (US-OR)
+## US-0658 Timucuan Preserve National Conservation Area (US-FL)
 - status: candidate
-- tier: T-4
+- tier: T-2
 - band: WEAK
-- record_name: North Fork Nehalem Park
-- url: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0?f=html
-- record_link: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0/query?where=OBJECTID%3D2418&outFields=%2A&f=html
-- source_url: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0/query?geometry=-123.772%2C45.8123&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Timucuan Preserve Federally Managed Lands
+- url: https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9?f=html
+- record_link: https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9/query?where=OBJECTID%3D3006&outFields=%2A&f=html
+- source_url: https://services.arcgis.com/9Jk4Zl9KofTtvg3x/arcgis/rest/services/FL_Conservation_Lands_web/FeatureServer/9/query?geometry=-81.4639%2C30.4443&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'North Fork Nehalem Park' (PACK-US-OR-park-322); pin inside; about 2.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
+- why: record 'Timucuan Preserve Federally Managed Lands' (PACK-US-FL-land-186); pin inside; about 14568.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- answer: 
+
+## US-8143 Boggy Depot National Historical Site (US-OK)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: Boggy Depot Site
+- url: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1?f=html
+- record_link: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D400187&outFields=%2A&f=html
+- source_url: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?geometry=-96.3101%2C34.3206&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 93
+- why: record 'Boggy Depot Site' (PACK-US-AK-land-41); pin 93 m from the edge; about 58.2 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
 ## US-12938 Laurel Industrial Forest Land State Wildlife Area (US-DE)
