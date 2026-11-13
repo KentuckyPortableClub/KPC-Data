@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-13T18:11Z",
+ "checked": "2026-11-13T18:52Z",
  "switched_on": false,
  "results": [
   {
@@ -3829,11 +3829,11 @@
   {
    "path": "data/world-key/BZ.json",
    "kind": "key",
-   "why": [
-    "F-4 unsure: PAD-US did not answer the shape test (HTTPError)"
+   "why": [],
+   "notes": [
+    "F-O4 shape test: 43 changed outlines read from PAD-US, 0 far from the park pin"
    ],
-   "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/CC.json",
@@ -3918,11 +3918,11 @@
   {
    "path": "data/world-key/DE.json",
    "kind": "key",
-   "why": [
-    "F-4 unsure: PAD-US did not answer the shape test (HTTPError)"
+   "why": [],
+   "notes": [
+    "F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"
    ],
-   "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/DK.json",
@@ -3975,11 +3975,11 @@
   {
    "path": "data/world-key/FO.json",
    "kind": "key",
-   "why": [
-    "F-4 unsure: PAD-US did not answer the shape test (HTTPError)"
+   "why": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
    ],
-   "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/FR.json",
