@@ -873,7 +873,7 @@
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-06"
+   "updated": "2026-11-13"
   },
   "US-SC": {
    "camps": 77,
@@ -1156,7 +1156,7 @@
   "US-OK": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-OR": "FCC listAsOfDates: robots.txt says no",
   "US-PA": "FCC listAsOfDates: robots.txt says no",
-  "US-RI": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-RI": "FCC listAsOfDates: robots.txt says no",
   "US-SC": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-SD": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-TN": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1517,9 +1517,9 @@
     "carriers": null,
     "files": [],
     "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "status": "FCC listAsOfDates: robots.txt says no"
    },
-   "read": "2026-11-06"
+   "read": "2026-11-13"
   },
   "US-SC": {
    "cell": {
@@ -2572,11 +2572,11 @@
  },
  "last": {
   "areas": [
-   "US-NM"
+   "US-RI"
   ],
   "fcc_token": true,
   "manners": {
-   "dropped_queued": 136,
+   "dropped_queued": 4,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2589,24 +2589,23 @@
     ]
    ],
    "host_rule": 0,
-   "requests": 108,
-   "rested": 4,
+   "requests": 8,
+   "rested": 0,
    "robots": 2,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 1,
-   "camps": 137,
+   "camps": 5,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 1,
-   "needs_key": 79,
+   "needs_browser": 0,
+   "needs_key": 0,
    "no_page": 2,
    "not_official": 0,
-   "ok": 52,
-   "pages_read": 102,
-   "resting": 4,
+   "ok": 3,
+   "pages_read": 4,
+   "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0
