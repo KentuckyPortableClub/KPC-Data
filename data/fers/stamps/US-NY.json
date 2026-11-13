@@ -1,5 +1,5 @@
 {
- "area_hash": "f7cfec0e94ff",
+ "area_hash": "ddfdc2b597ee",
  "area_parts": {
   "code": "6253c37bcede",
   "data:data/ca-key/overrides.json": "44136fa355b3",
@@ -38,28 +38,32 @@
   "up:outline:US-MD": "e33946cc70c4",
   "up:outline:US-ME": "b6757a82c36f",
   "up:outline:US-MI": "afea0f08844b",
-  "up:outline:US-MN": "28e6fe88c729",
+  "up:outline:US-MN": "8f3e0b180896",
   "up:outline:US-NC": "9cfb470f4479",
   "up:outline:US-ND": "baec08e08768",
-  "up:outline:US-NH": "0a6d48f8373f",
+  "up:outline:US-NH": "ff48ad57f1fd",
   "up:outline:US-NJ": "34c87c5b54ff",
   "up:outline:US-NY": "01e485f4bab6",
   "up:outline:US-OH": "ba7b66f87f44",
   "up:outline:US-PA": "6cf81add6163",
   "up:outline:US-RI": "b6e35bf7c28f",
   "up:outline:US-SC": "f37523d8d4b6",
-  "up:outline:US-TN": "53e83c2b372d",
+  "up:outline:US-TN": "55d3b094d8eb",
   "up:outline:US-VA": "886e9efa9206",
   "up:outline:US-VT": "f095e5b48e41",
   "up:outline:US-WI": "b02b8778c899",
   "up:outline:US-WV": "c4873297baa4",
   "version": "3bc980f4abb3"
  },
- "built_sha": "5737aca3bd98caa34c40248bfbf09d306b32816f",
+ "built_sha": "fa48c85c3c598c7ba3c0b72bcd7e79963e0c0190",
  "composition": "ah1",
- "data_sha": "20caac348ea35b132299fffb6cf695e4c052c2fe",
+ "data_sha": "480439697b529ab3151705d2420f066105c27c83",
  "format": 1,
  "job": "line newyork",
+ "key_builds": {
+  "CA": "CA-43049790907",
+  "US": "US-43293787778"
+ },
  "key_source": "build",
  "neighbours": [
   "US-CT",
@@ -85,7 +89,7 @@
   "US-WI",
   "US-WV"
  ],
- "out_sha": "b075d85b9c6c2f911fcc12e6a0b3c6212d01c944489b9a51e2f1047d7ab38d30",
+ "out_sha": "cb7b802ceda8761cdc0c48b928254aae963f45de952e582cc08a846a2a87b03e",
  "passes": {
   "pass1": "2026-11-13",
   "pass2": "2026-11-13",
@@ -93,7 +97,7 @@
   "pass5": "2026-11-13"
  },
  "rules": "cef323de4c9a",
- "run": "43408359385",
+ "run": "43515596321",
  "st": "US-NY",
  "why": "built"
 }
