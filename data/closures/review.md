@@ -1,15 +1,15 @@
-# Closures super-bot: review (2026-11-12; RULE SHEET D; compared quietly, nothing on cards until GO)
+# Closures super-bot: review (2026-11-13; RULE SHEET D; compared quietly, nothing on cards until GO)
 
-Run: 2026-11-12T21:04Z · requests 105 · pages 81 · PDFs 17 · sentences read 358 · unmatched 118 · look-alikes skipped 206 · sources failed 2
+Run: 2026-11-13T02:30Z · requests 105 · pages 81 · PDFs 17 · sentences read 358 · unmatched 118 · look-alikes skipped 206 · sources failed 2
 
-## Kentucky gate: **FAIL** — 21 of 28 of Kentucky's own reader's items found here on the same park (75%); 52 only here
+## Kentucky gate: **FAIL** — 20 of 27 of Kentucky's own reader's items found here on the same park (74%); 53 only here
 
 ## Sources that failed this run
 
 - US-KY fs-gwj: rest (host resting after an earlier strike; last items kept) (https://www.fs.usda.gov/alerts/gwj/alerts-notices)
 - US-KY ky-fs-dbnf: rest (host resting after an earlier strike; last items kept) (https://www.fs.usda.gov/alerts/dbnf/alerts-notices)
 
-## US-KY (done, read 2026-11-12T21:04)
+## US-KY (done, read 2026-11-13T02:30)
 whole 1 · part 0 · hunt 0 · seasonal 0 · note 69 · taken_down 19 · 0 banners
 
 Sources that failed (last items kept): ky-fs-dbnf (rest (host resting after an earlier strike; last items kept)); fs-gwj (rest (host resting after an earlier strike; last items kept))
@@ -48,7 +48,7 @@ Unmatched (two parks or none; for chat 11 to judge):
 - Day of the hunt requirements [ky-fw-public-land] · no park name shares a word
 - EXCEPTIONS [ky-fw-public-land] · no park name shares a word
 
-### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 21 · only here 52 · only there 7
+### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 20 · only here 53 · only there 7
 
 - ONLY THERE: US-4687 hc-US-4687-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
 - ONLY THERE: US-3834 hc-US-3834-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
@@ -74,6 +74,7 @@ Unmatched (two parks or none; for chat 11 to judge):
 - ONLY HERE: US-1261 [note] "Parts of the park may be closed during the quota hunt Dec. 3-6."
 - ONLY HERE: US-1261 [note] "Parts of the park may be closed during the quota hunt Dec. 11-14."
 - ONLY HERE: US-1273 [note] "Barren River State Resort Park lodge is closed through spring of 2027."
+- ONLY HERE: US-1275 [note] "Buckhorn Lake Dam Ramp Access closed until Feb. 2027"
 - ONLY HERE: US-1277 [note] "Cumberland Falls State Resort Park lodge is closed through Spring/Summer of 2027 for renovation (ca
 - ONLY HERE: US-1278 [note] "Parts of the park may be closed during the quota hunt Nov. 20-22."
 - ONLY HERE: US-1278 [note] "Parts of the park may be closed during the quota hunt Dec. 4-6 (youth only)."
@@ -81,7 +82,6 @@ Unmatched (two parks or none; for chat 11 to judge):
 - ONLY HERE: US-1281 [note] "Jenny Wiley State Resort Park lodge is closed for critical structural integrity renovations."
 - ONLY HERE: US-1282 [note] "Parts of the park may be closed during the quota hunt Nov. 19-22 (archery/crossbow)."
 - ONLY HERE: US-1282 [note] "Parts of the park may be closed during the quota hunt Dec. 3-6."
-- ONLY HERE: US-1284 [note] "Parts of the park may be closed during the quota hunt Jan. 5-6."
 
 - US-0050 · ℹ️ Note: "Elevator for Accessible Tour Out of Service." (National Park Service)
 - US-0050 · ℹ️ Note: "The Green River Ferry has temporarily suspended operation due to low water levels." (National Park Service)

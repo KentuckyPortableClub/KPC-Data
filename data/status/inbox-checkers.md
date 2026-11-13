@@ -440,4 +440,4 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-11, 2 days): key data/world-key/LU.json held: F-O1 outlines 49 -> 46 (more than 1% lost)
 - FROM WAITING ROOM (held since 2026-11-07, 6 days): key data/world-key/ZA.json held: F-O2 4 of 75 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?
 - FROM WAITING ROOM (held since 2026-11-08, 5 days): wwff data/wwff/CTFF.json held: F-W2 rows 702 -> 280 (under 80% of the saved list)
-- FROM WAITING ROOM HEALTH (2026-11-13): RED: 342 files waiting over 3 days in data/waiting/in/ (e.g. US-WY.json)
+- FROM BOT closures super-bot (2026-11-13): FAILED its gate: US-KY — 20 of 27 of Kentucky's own reader's items found here on the same park (74%); 53 only here · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43352562708)
