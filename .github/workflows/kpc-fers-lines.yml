@@ -12,7 +12,7 @@ on:
     inputs:
       areas:
         description: 'Lines, one per entry "STATES|tag" separated by ";" (e.g. "US-MI|mi; US-UT|ut"); or an area name of .github/fers-areas.json per entry (southeast; plains; …); "@worker" after an entry = start from its saved fetcher bundle'
-        default: 'southeast; midatlantic; newyork; newengland; greatlakes; plains; southcentral; mountain; southwest; pacific; southinland; appalachia; canadabc; canadawest; canadaon; canadaeast'   # KPC owner, 2026-11-13: the 16 areas of .github/fers-areas.json (southeast and midatlantic split so a line stays under the memory guard)
+        default: 'southeast; midatlantic; newyork; newengland; greatlakes; plains; southcentral; mountain; southwest; pacific; southinland; appalachia; lakeswest; canadabc; canadawest; canadaon; canadaeast'   # KPC owner, 2026-11-13: the 17 areas of .github/fers-areas.json (southeast, midatlantic and greatlakes split so a line stays under the memory guard)
       minutes:
         description: 'Minutes for each of fetcher and worker per line (default 280)'
         default: '280'

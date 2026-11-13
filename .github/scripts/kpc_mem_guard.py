@@ -298,7 +298,16 @@ def stopped_for_memory(data, tag, since=None):
                 import calendar
                 t0 = calendar.timegm(time.strptime(since, f)); break
             except ValueError: continue
-    return any(isinstance(x, dict) and x.get('tag') == tag and x.get('why') == 'memory' and float(x.get('t') or 0) >= t0 for x in L)
+    # Nov 13 (KPC owner): "the same cut" means the same states. When the line has been cut smaller since the stop (fers-areas.json
+    # now lists other states under this tag), the old stop no longer holds it back. A stop with no states on record, or a tag
+    # that is not an area name, counts as before.
+    cur = None
+    try: cur = (json.load(open(os.path.join(data, '.github/fers-areas.json'), encoding='utf-8')).get('areas') or {}).get(tag)
+    except (OSError, ValueError, AttributeError): cur = None
+    def same_cut(x):
+        st = x.get('states')
+        return not (isinstance(st, str) and st.split() and isinstance(cur, str) and cur.split()) or set(st.split()) == set(cur.split())
+    return any(isinstance(x, dict) and x.get('tag') == tag and x.get('why') == 'memory' and float(x.get('t') or 0) >= t0 and same_cut(x) for x in L)
 
 
 def main(argv):
