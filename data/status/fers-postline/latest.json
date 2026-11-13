@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-13 11:10 UTC",
- "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43408359385",
+ "checked": "2026-11-13 16:57 UTC",
+ "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43441416232",
  "areas": {
   "CA-AB": {
    "gained": [
@@ -2719,30 +2719,26 @@
    ],
    "lost": [
     {
+     "pair": "US-0881+US-1662",
+     "now": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coars"
+    },
+    {
+     "pair": "US-0882+US-10075",
+     "now": "gone"
+    },
+    {
      "pair": "US-1694+US-7520",
      "now": "not sure: one record covers two parks ('Mansfield Hollow State Park' is a state park, the "
     }
    ],
    "live_before": 33,
-   "live_now": 54,
+   "live_now": 52,
    "touch_held": [],
    "touch_pin_only": [
-    "US-0881+US-1662",
-    "US-0882+US-10075",
     "US-0882+US-6857",
     "US-0882+US-6869"
    ],
    "water_bank": [
-    {
-     "pair": "US-0881+US-1662",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-0882+US-10075",
-     "kind": "river",
-     "status": "candidate"
-    },
     {
      "pair": "US-0882+US-6857",
      "kind": "river",
@@ -2803,7 +2799,7 @@
     }
    ],
    "preline": {
-    "tag": "northeast",
+    "tag": "newengland",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -4255,26 +4251,29 @@
     "US-0268+US-3487",
     "US-11305+US-11307",
     "US-11305+US-11323",
+    "US-11305+US-11324",
     "US-11305+US-2283",
-    "US-11307+US-4236"
+    "US-11307+US-4236",
+    "US-4236+US-4664"
    ],
    "lost": [
-    {
-     "pair": "US-0268+US-9310",
-     "now": "not sure: the official outline of Nobles Lake Wildlife Management Area could not be read i"
-    },
     {
      "pair": "US-12192+US-2316",
      "now": "gone"
     }
    ],
    "live_before": 15,
-   "live_now": 18,
+   "live_now": 21,
    "touch_held": [],
    "touch_pin_only": [],
    "water_bank": [
     {
      "pair": "US-2284+US-2306",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    },
+    {
+     "pair": "US-4236+US-4664",
      "kind": "area",
      "status": "water only: boat or kayak"
     }
@@ -4283,6 +4282,12 @@
    "near_threshold": [
     {
      "pair": "US-0268+US-3487",
+     "wide_m": 25,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "US-0268+US-9310",
      "wide_m": 25,
      "near": "25 yd (kept)",
      "status": "very tight: could be map error: check bo"
@@ -4318,6 +4323,12 @@
      "status": "very tight: could be map error: check bo"
     },
     {
+     "pair": "US-4236+US-4664",
+     "wide_m": 85,
+     "near": "100 yd (small)",
+     "status": "candidate"
+    },
+    {
      "pair": "US-9326+US-9327",
      "wide_m": 25,
      "near": "25 yd (kept)",
@@ -4325,7 +4336,7 @@
     }
    ],
    "preline": {
-    "tag": "midwest",
+    "tag": "plains",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -4677,7 +4688,7 @@
     }
    ],
    "preline": {
-    "tag": "midwest",
+    "tag": "greatlakes",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -4894,7 +4905,7 @@
     }
    ],
    "preline": {
-    "tag": "midwest",
+    "tag": "greatlakes",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -4902,10 +4913,35 @@
    "stale_inputs": []
   },
   "US-KS": {
-   "gained": [],
+   "gained": [
+    "US-0293+US-7935",
+    "US-0818+US-4579",
+    "US-2331+US-7920",
+    "US-2332+US-7922",
+    "US-2333+US-7939",
+    "US-2334+US-7945",
+    "US-2336+US-7925",
+    "US-2337+US-7926",
+    "US-2340+US-7929",
+    "US-2342+US-7944",
+    "US-2345+US-7938",
+    "US-2347+US-7941",
+    "US-2349+US-7940",
+    "US-2350+US-5718",
+    "US-2353+US-7946",
+    "US-2354+US-7947",
+    "US-2355+US-7948",
+    "US-4579+US-7409",
+    "US-4579+US-7477",
+    "US-4579+US-9188",
+    "US-6347+US-7923",
+    "US-7399+US-7946",
+    "US-7416+US-7918",
+    "US-7424+US-7932"
+   ],
    "lost": [],
    "live_before": 0,
-   "live_now": 0,
+   "live_now": 24,
    "touch_held": [],
    "touch_pin_only": [],
    "water_bank": [],
@@ -4923,29 +4959,42 @@
      "status": "not sure: one record covers two parks ('Scott State Fishing Lake' is a lake, the record a "
     },
     {
-     "pair": "US-2352+US-7434",
-     "status": "not sure: one record covers two parks ('Scott State Fishing Lake' is a lake, the record a "
-    },
-    {
-     "pair": "US-2352+US-7434",
-     "status": "not sure: one record covers two parks ('Scott State Fishing Lake' is a lake, the record a "
-    },
-    {
      "pair": "US-2353+US-7399",
      "status": "not sure: one record covers two parks (the record 'Tuttle Creek State Parks' does not name"
     },
     {
      "pair": "US-7411+US-7949",
      "status": "not sure: one record covers two parks ('Woodson State Wildlife Area' is a wma, the record "
-    },
-    {
-     "pair": "US-7411+US-7949",
-     "status": "not sure: one record covers two parks ('Woodson State Wildlife Area' is a wma, the record "
     }
    ],
-   "near_threshold": [],
+   "near_threshold": [
+    {
+     "pair": "US-0293+US-7935",
+     "wide_m": 87,
+     "near": "100 yd (small)",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-2336+US-7925",
+     "wide_m": 47,
+     "near": "50 yd (very tight)",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-6347+US-7923",
+     "wide_m": 25,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "US-7399+US-7946",
+     "wide_m": 75,
+     "near": "100 yd (small)",
+     "status": "candidate"
+    }
+   ],
    "preline": {
-    "tag": "southcentral",
+    "tag": "plains",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -5255,6 +5304,7 @@
     "US-11678+US-4698",
     "US-11691+US-4700",
     "US-11697+US-4736",
+    "US-2148+US-4709",
     "US-2418+US-4709",
     "US-2428+US-8397",
     "US-2451+US-8395",
@@ -5270,6 +5320,42 @@
     "US-8402+US-8421"
    ],
    "lost": [
+    {
+     "pair": "US-0891+US-11695",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0891+US-2430",
+     "now": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coars"
+    },
+    {
+     "pair": "US-0897+US-11395",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0897+US-11439",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0897+US-11453",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0897+US-2423",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0897+US-4714",
+     "now": "dropped in pass 2: the finer official outlines show no shared patch here (the first, coars"
+    },
+    {
+     "pair": "US-0897+US-4717",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0897+US-4733",
+     "now": "gone"
+    },
     {
      "pair": "US-11476+US-8417",
      "now": "not sure: one record covers two parks (the record 'Mount Tom State Reservation' does not n"
@@ -5291,11 +5377,27 @@
      "now": "gone"
     },
     {
+     "pair": "US-11600+US-8014",
+     "now": "gone"
+    },
+    {
      "pair": "US-11601+US-4556",
      "now": "gone"
     },
     {
+     "pair": "US-11601+US-8014",
+     "now": "gone"
+    },
+    {
      "pair": "US-11603+US-4556",
+     "now": "gone"
+    },
+    {
+     "pair": "US-11605+US-8014",
+     "now": "gone"
+    },
+    {
+     "pair": "US-11607+US-8014",
      "now": "gone"
     },
     {
@@ -5312,64 +5414,26 @@
     }
    ],
    "live_before": 85,
-   "live_now": 118,
+   "live_now": 106,
    "touch_held": [],
    "touch_pin_only": [
     "US-0327+US-8014",
-    "US-0891+US-11695",
-    "US-0891+US-2430",
     "US-0891+US-2446",
-    "US-0897+US-11395",
     "US-0897+US-11401",
     "US-0897+US-11409",
     "US-0897+US-11438",
-    "US-0897+US-11439",
     "US-0897+US-11443",
     "US-0897+US-11445",
-    "US-0897+US-11453",
     "US-0897+US-11454",
     "US-0897+US-13237",
-    "US-0897+US-2423",
-    "US-0897+US-4714",
-    "US-0897+US-4717",
     "US-0897+US-4718",
     "US-0897+US-4722",
-    "US-0897+US-4733",
     "US-0897+US-4743",
     "US-11499+US-8014",
-    "US-11600+US-8014",
-    "US-11601+US-8014",
     "US-11604+US-8014",
-    "US-11605+US-8014",
-    "US-11607+US-8014",
     "US-12781+US-8014"
    ],
    "water_bank": [
-    {
-     "pair": "US-0327+US-8014",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-0891+US-11695",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-0891+US-2430",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-0891+US-2446",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-0897+US-11395",
-     "kind": "river",
-     "status": "candidate"
-    },
     {
      "pair": "US-0897+US-11401",
      "kind": "river",
@@ -5386,22 +5450,12 @@
      "status": "candidate"
     },
     {
-     "pair": "US-0897+US-11439",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
      "pair": "US-0897+US-11443",
      "kind": "river",
      "status": "candidate"
     },
     {
      "pair": "US-0897+US-11445",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-0897+US-11453",
      "kind": "river",
      "status": "candidate"
     },
@@ -5416,21 +5470,6 @@
      "status": "candidate"
     },
     {
-     "pair": "US-0897+US-2423",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-0897+US-4714",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-0897+US-4717",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
      "pair": "US-0897+US-4718",
      "kind": "river",
      "status": "candidate"
@@ -5441,12 +5480,22 @@
      "status": "candidate"
     },
     {
-     "pair": "US-0897+US-4733",
+     "pair": "US-0897+US-4743",
      "kind": "river",
      "status": "candidate"
     },
     {
-     "pair": "US-0897+US-4743",
+     "pair": "US-12781+US-8014",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-0327+US-8014",
+     "kind": "river",
+     "status": "candidate"
+    },
+    {
+     "pair": "US-0891+US-2446",
      "kind": "river",
      "status": "candidate"
     },
@@ -5456,32 +5505,7 @@
      "status": "candidate"
     },
     {
-     "pair": "US-11600+US-8014",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-11601+US-8014",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
      "pair": "US-11604+US-8014",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-11605+US-8014",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-11607+US-8014",
-     "kind": "river",
-     "status": "candidate"
-    },
-    {
-     "pair": "US-12781+US-8014",
      "kind": "river",
      "status": "candidate"
     }
@@ -5654,6 +5678,12 @@
      "status": "candidate"
     },
     {
+     "pair": "US-2148+US-4709",
+     "wide_m": 45,
+     "near": "50 yd (very tight)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
      "pair": "US-2418+US-4709",
      "wide_m": 45,
      "near": "50 yd (very tight)",
@@ -5685,7 +5715,7 @@
     }
    ],
    "preline": {
-    "tag": "northeast",
+    "tag": "newengland",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -6230,28 +6260,9 @@
      "status": "candidate"
     }
    ],
-   "near_threshold": [
-    {
-     "pair": "CA-0795+CA-6537+US-8484",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of New Br"
-    },
-    {
-     "pair": "CA-4517+CA-6537+US-8484",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of New Br"
-    },
-    {
-     "pair": "CA-6537+US-8484",
-     "wide_m": 20,
-     "near": "25 yd (kept)",
-     "status": "not sure: the official outline of New Br"
-    }
-   ],
+   "near_threshold": [],
    "preline": {
-    "tag": "northeast",
+    "tag": "newengland",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -6774,7 +6785,7 @@
    ],
    "near_threshold": [],
    "preline": {
-    "tag": "mi",
+    "tag": "greatlakes",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -6783,9 +6794,6 @@
   },
   "US-MN": {
    "gained": [
-    "CA-0341+US-2489",
-    "CA-0359+US-4491",
-    "CA-1473+US-4491",
     "US-0364+US-2482+US-7145",
     "US-0673+US-10196",
     "US-0673+US-10721",
@@ -6803,7 +6811,6 @@
     "US-0673+US-4238",
     "US-0673+US-4239",
     "US-0673+US-4249",
-    "US-0673+US-4308",
     "US-0673+US-4350",
     "US-0673+US-4533",
     "US-0673+US-4790",
@@ -6825,12 +6832,7 @@
     "US-12389+US-4491",
     "US-12393+US-4491",
     "US-12457+US-13502",
-    "US-13171+US-4239",
-    "US-13172+US-4239",
-    "US-13176+US-4239",
-    "US-13184+US-4239",
     "US-13545+US-4801",
-    "US-1555+US-4239",
     "US-2477+US-4792",
     "US-2489+US-4801",
     "US-2500+US-4781",
@@ -6890,20 +6892,10 @@
     }
    ],
    "live_before": 144,
-   "live_now": 207,
+   "live_now": 198,
    "touch_held": [],
    "touch_pin_only": [],
    "water_bank": [
-    {
-     "pair": "CA-0341+US-2489",
-     "kind": "area",
-     "status": "water only: boat or kayak"
-    },
-    {
-     "pair": "CA-0359+US-4491",
-     "kind": "area",
-     "status": "water only: boat or kayak"
-    },
     {
      "pair": "US-0364+US-7145",
      "kind": "area",
@@ -6913,21 +6905,6 @@
      "pair": "US-0367+US-9327",
      "kind": "area",
      "status": "water only: boat or kayak"
-    },
-    {
-     "pair": "US-12788+US-4239",
-     "kind": "river",
-     "status": "not sure: no park here owns land (designations only): no owner on the records"
-    },
-    {
-     "pair": "US-12789+US-4239",
-     "kind": "river",
-     "status": "not sure: no park here owns land (designations only): no owner on the records"
-    },
-    {
-     "pair": "US-12792+US-4239",
-     "kind": "river",
-     "status": "not sure: no park here owns land (designations only): no owner on the records"
     },
     {
      "pair": "US-2468+US-4782",
@@ -6953,18 +6930,6 @@
    ],
    "near_threshold": [
     {
-     "pair": "CA-0341+US-2489",
-     "wide_m": 25,
-     "near": "25 yd (kept)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "CA-1473+US-4491",
-     "wide_m": 39,
-     "near": "50 yd (very tight)",
-     "status": "very tight: could be map error: check bo"
-    },
-    {
      "pair": "US-0067+US-4491",
      "wide_m": 85,
      "near": "100 yd (small)",
@@ -6975,12 +6940,6 @@
      "wide_m": 45,
      "near": "50 yd (very tight)",
      "status": "very tight: could be map error: check bo"
-    },
-    {
-     "pair": "US-0673+US-4308",
-     "wide_m": 47,
-     "near": "50 yd (very tight)",
-     "status": "candidate"
     },
     {
      "pair": "US-0673+US-8216",
@@ -7074,7 +7033,7 @@
     }
    ],
    "preline": {
-    "tag": "midwest",
+    "tag": "plains",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -7135,7 +7094,6 @@
     "US-6491+US-6498",
     "US-6491+US-7836",
     "US-6499+US-7836",
-    "US-7190+US-8254",
     "US-7664+US-7665",
     "US-7836+US-8252",
     "US-7836+US-8282",
@@ -7149,7 +7107,7 @@
     }
    ],
    "live_before": 3,
-   "live_now": 60,
+   "live_now": 59,
    "touch_held": [],
    "touch_pin_only": [],
    "water_bank": [],
@@ -7238,7 +7196,7 @@
     }
    ],
    "preline": {
-    "tag": "midwest",
+    "tag": "plains",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -7931,7 +7889,7 @@
     }
    ],
    "preline": {
-    "tag": "midwest",
+    "tag": "plains",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -7939,22 +7897,59 @@
    "stale_inputs": []
   },
   "US-NE": {
-   "gained": [],
+   "gained": [
+    "US-0443+US-5622",
+    "US-0445+US-5655",
+    "US-0675+US-10341",
+    "US-0675+US-10372",
+    "US-0675+US-2620",
+    "US-0675+US-2620+US-9360",
+    "US-0675+US-2622",
+    "US-0675+US-5645",
+    "US-0675+US-8161+US-8174",
+    "US-0675+US-8174",
+    "US-0675+US-8187",
+    "US-0675+US-9360",
+    "US-0962+US-4566",
+    "US-0962+US-4578",
+    "US-13433+US-5655",
+    "US-13536+US-4566",
+    "US-13536+US-4576",
+    "US-13536+US-4578",
+    "US-13611+US-4566",
+    "US-13611+US-4573",
+    "US-2609+US-4566",
+    "US-2609+US-4576",
+    "US-2610+US-4566",
+    "US-2613+US-3371",
+    "US-2617+US-4566",
+    "US-2617+US-4578",
+    "US-2618+US-3371",
+    "US-2620+US-9360",
+    "US-2623+US-4566",
+    "US-2623+US-4576",
+    "US-2623+US-4578",
+    "US-2624+US-5622",
+    "US-4566+US-5628",
+    "US-4566+US-5646",
+    "US-4566+US-5657",
+    "US-4566+US-5665",
+    "US-4566+US-5671",
+    "US-4566+US-9366",
+    "US-4573+US-5657",
+    "US-4573+US-5665",
+    "US-4573+US-5671",
+    "US-4576+US-9366",
+    "US-4578+US-5628",
+    "US-4578+US-9366"
+   ],
    "lost": [],
    "live_before": 4,
-   "live_now": 4,
+   "live_now": 48,
    "touch_held": [],
    "touch_pin_only": [],
    "water_bank": [],
    "same_land_one_record": [
-    {
-     "pair": "US-12362+US-2612",
-     "status": "not sure: one record covers two parks ('Buffalo Bill Ranch State Historical Park' is a his"
-    },
-    {
-     "pair": "US-12362+US-2612",
-     "status": "not sure: one record covers two parks ('Buffalo Bill Ranch State Historical Park' is a his"
-    },
     {
      "pair": "US-12362+US-2612",
      "status": "not sure: one record covers two parks ('Buffalo Bill Ranch State Historical Park' is a his"
@@ -7976,10 +7971,6 @@
      "status": "not sure: one record covers two parks ('Wildcat Hills Wildlife Management Area' is a wma, "
     },
     {
-     "pair": "US-13434+US-9371",
-     "status": "not sure: one record covers two parks ('Wildcat Hills Wildlife Management Area' is a wma, "
-    },
-    {
      "pair": "US-13536+US-5659",
      "status": "not sure: one record covers two parks ('Alexandria Wildlife Management Area' is a wma, the"
     },
@@ -7988,36 +7979,8 @@
      "status": "not sure: one record covers two parks (the record 'Kirkpatrick Basin Wildlife Management A"
     },
     {
-     "pair": "US-13614+US-13615",
-     "status": "not sure: one record covers two parks (the record 'Kirkpatrick Basin Wildlife Management A"
-    },
-    {
-     "pair": "US-13614+US-13615",
-     "status": "not sure: one record covers two parks (the record 'Kirkpatrick Basin Wildlife Management A"
-    },
-    {
-     "pair": "US-13614+US-13615",
-     "status": "not sure: one record covers two parks (the record 'Kirkpatrick Basin Wildlife Management A"
-    },
-    {
      "pair": "US-13628+US-5676",
      "status": "not sure: one record covers two parks ('Two Rivers Wildlife Management Area' is a wma, the"
-    },
-    {
-     "pair": "US-13628+US-5676",
-     "status": "not sure: one record covers two parks ('Two Rivers Wildlife Management Area' is a wma, the"
-    },
-    {
-     "pair": "US-2617+US-5628",
-     "status": "not sure: one record covers two parks ('Fort Kearny State Historical Park' is a historic, "
-    },
-    {
-     "pair": "US-2617+US-5628",
-     "status": "not sure: one record covers two parks ('Fort Kearny State Historical Park' is a historic, "
-    },
-    {
-     "pair": "US-2617+US-5628",
-     "status": "not sure: one record covers two parks ('Fort Kearny State Historical Park' is a historic, "
     },
     {
      "pair": "US-2617+US-5628",
@@ -8030,14 +7993,6 @@
     {
      "pair": "US-2617+US-5628",
      "status": "candidate"
-    },
-    {
-     "pair": "US-2617+US-5628",
-     "status": "not sure: one record covers two parks ('Fort Kearny State Historical Park' is a historic, "
-    },
-    {
-     "pair": "US-2617+US-5628",
-     "status": "not sure: one record covers two parks ('Fort Kearny State Recreation Area' is a recreation"
     },
     {
      "pair": "US-2623+US-9366",
@@ -8046,23 +8001,24 @@
     {
      "pair": "US-2623+US-9366",
      "status": "not sure: one record covers two parks ('Rock Creek Station State Recreation Area' is a rec"
-    },
-    {
-     "pair": "US-2623+US-9366",
-     "status": "not sure: one record covers two parks ('Rock Creek Station State Historical Park' is a his"
-    },
-    {
-     "pair": "US-2623+US-9366",
-     "status": "not sure: one record covers two parks ('Rock Creek Station State Historical Park' is a his"
-    },
-    {
-     "pair": "US-2623+US-9366",
-     "status": "not sure: one record covers two parks ('Rock Creek Station State Historical Park' is a his"
     }
    ],
-   "near_threshold": [],
+   "near_threshold": [
+    {
+     "pair": "US-0675+US-2620+US-9360",
+     "wide_m": 23,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "US-2613+US-3371",
+     "wide_m": 75,
+     "near": "100 yd (small)",
+     "status": "candidate"
+    }
+   ],
    "preline": {
-    "tag": "southcentral",
+    "tag": "plains",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -8167,7 +8123,7 @@
     }
    ],
    "preline": {
-    "tag": "northeast",
+    "tag": "newengland",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -9813,7 +9769,7 @@
    ],
    "near_threshold": [],
    "preline": {
-    "tag": "oh",
+    "tag": "greatlakes",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -11502,20 +11458,16 @@
     "US-2869+US-7971",
     "US-2871+US-7518",
     "US-2872+US-4582",
-    "US-4556+US-4582",
     "US-4582+US-6990",
     "US-4582+US-7532",
     "US-4582+US-7535",
-    "US-4582+US-8098",
-    "US-4582+US-9878",
-    "US-4582+US-9901",
     "US-5484+US-7508",
     "US-6990+US-7535",
     "US-6990+US-7548"
    ],
    "lost": [],
    "live_before": 1,
-   "live_now": 18,
+   "live_now": 14,
    "touch_held": [],
    "touch_pin_only": [],
    "water_bank": [],
@@ -11540,7 +11492,7 @@
     }
    ],
    "preline": {
-    "tag": "northeast",
+    "tag": "newengland",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -11706,11 +11658,30 @@
   "US-SD": {
    "gained": [
     "US-0068+US-11905",
-    "US-0675+US-8161+US-8174",
     "US-11905+US-2916",
     "US-11905+US-2917"
    ],
    "lost": [
+    {
+     "pair": "US-0675+US-10341",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0675+US-10372",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0675+US-5645",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0675+US-8174",
+     "now": "gone"
+    },
+    {
+     "pair": "US-0675+US-8187",
+     "now": "gone"
+    },
     {
      "pair": "US-10329+US-8192",
      "now": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coars"
@@ -11721,14 +11692,14 @@
     }
    ],
    "live_before": 15,
-   "live_now": 17,
+   "live_now": 11,
    "touch_held": [],
    "touch_pin_only": [],
    "water_bank": [],
    "same_land_one_record": [],
    "near_threshold": [],
    "preline": {
-    "tag": "midwest",
+    "tag": "plains",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -13645,7 +13616,7 @@
    ],
    "near_threshold": [],
    "preline": {
-    "tag": "northeast",
+    "tag": "newengland",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -14320,7 +14291,7 @@
     }
    ],
    "preline": {
-    "tag": "midwest",
+    "tag": "greatlakes",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
