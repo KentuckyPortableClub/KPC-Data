@@ -921,6 +921,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1; read 2026-11-04"
   },
   {
+   "Park number (if matched)": "US-12678",
+   "Park name (as the agency writes it)": "Little Nelchina State Recreation Site",
+   "Size": 22,
+   "Unit": "acres",
+   "Agency": "Alaska State Parks (DNR) (park, state GIS table)",
+   "Source page": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2/query?where=OBJECTID%3D50&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2; read 2026-11-05"
+  },
+  {
    "Park number (if matched)": "US-7893",
    "Park name (as the agency writes it)": "Augusta Canal National Heritage Area",
    "Size": 133,
@@ -1776,15 +1785,6 @@
    "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
   },
   {
-   "Park number (if matched)": "US-12678",
-   "Park name (as the agency writes it)": "Little Nelchina State Recreation Site",
-   "Size": 22,
-   "Unit": "acres",
-   "Agency": "Alaska State Parks (DNR) (park, state GIS table)",
-   "Source page": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2/query?where=OBJECTID%3D50&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2; read 2026-11-05"
-  },
-  {
    "Park number (if matched)": "US-7953",
    "Park name (as the agency writes it)": "Metropolis Lake State Nature Preserve",
    "Size": 123,
@@ -2354,6 +2354,16 @@
    "Retry?": "NO"
   },
   {
+   "Host": "arcgis.dnr.alaska.gov",
+   "Agency/area": "Alaska State Parks (DNR) (park, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+   "# times used": 3,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "gisservice.mt.gov",
    "Agency/area": null,
    "Kind": "GIS layer",
@@ -2379,16 +2389,6 @@
    "Kind": "GIS layer",
    "Example URL": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21",
    "# times used": 1,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
-   "Host": "arcgis.dnr.alaska.gov",
-   "Agency/area": "Alaska State Parks (DNR) (park, state GIS table)",
-   "Kind": "GIS layer",
-   "Example URL": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
-   "# times used": 3,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"

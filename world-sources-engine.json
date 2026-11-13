@@ -34,6 +34,11 @@
    "agency": "Wales - National Forest for Wales sites (DataMapWales geonode:nrw_national_forest)",
    "status": "POSSIBLE MATCH (engine 2026-11-13)"
   },
+  "GB-2331": {
+   "url": "https://ogc.nature.scot/geoserver/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=scottishforestry%3ANational_Forest_Estate_Ownership_Scotland",
+   "agency": "Forestry and Land Scotland - National Forest Estate Ownership Scotland (scottishforestry: on NatureScot geoserver)",
+   "status": "FOUND (engine 2026-11-13)"
+  },
   "GB-3090": {
    "url": "https://datamap.gov.wales/geoserver/ows?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=inspire-nrw%3ANRW_FORESTRY_OWNERSHIP_GB",
    "agency": "Natural Resources Wales - NRW_FORESTRY_OWNERSHIP_GB (DataMapWales)",
