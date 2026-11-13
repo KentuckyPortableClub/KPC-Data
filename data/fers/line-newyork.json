@@ -5,12 +5,11 @@
   "US-NY",
   "US-NJ"
  ],
- "since": "2026-11-12",
- "date": "2026-11-12 20:06 UTC",
+ "since": "2026-11-13",
+ "date": "2026-11-13 11:08 UTC",
  "verdict": "STOPPED",
  "why": [
-  "missing check: 1936 of 4199 expected pairs were never looked at (46%; 891 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (1936)",
-  "water not checked: US-NJ: 1 rows (the USGS water map / files had no answer there): never READY with one"
+  "missing check: 1936 of 4199 expected pairs were never looked at (46%; 891 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (1936)"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
@@ -29,25 +28,25 @@
  },
  "report": {
   "pass1": {
-   "date": "2026-11-12",
+   "date": "2026-11-13",
    "pairs tested": 11589,
    "pairs whose boxes touch": 11589
   },
   "pass2": {
    "agree with the pass before": 722,
-   "date": "2026-11-12",
+   "date": "2026-11-13",
    "pairs tested": 343
   },
   "pass3": {
    "agree with the pass before": 531,
-   "date": "2026-11-12",
+   "date": "2026-11-13",
    "pairs tested": 337
   },
   "pass5": {
    "checked": 125,
-   "date": "2026-11-12",
+   "date": "2026-11-13",
    "pairs tested": 0,
-   "still not checked": 1
+   "still not checked": 0
   }
  },
  "files": {
@@ -68,17 +67,12 @@
  },
  "US-NJ": {
   "rows": 204,
-  "live": 55,
+  "live": 56,
   "waiting": 0,
   "unfinished": 0,
-  "not_sure": {
-   "water not checked": 1
-  },
+  "not_sure": {},
   "dropped": 72,
   "merged": 76
- },
- "water_weak": {
-  "US-NJ": 1
  },
  "states_ready": [],
  "states_held": [

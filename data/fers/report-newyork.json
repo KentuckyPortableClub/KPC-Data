@@ -176,7 +176,7 @@
    "CA-2538"
   ],
   "cell_m": 20.0,
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 186,
@@ -191,7 +191,7 @@
   },
   "missing boundary": 45,
   "official parks": 2396,
-  "pairs reused (nothing changed)": 11589,
+  "pairs reused (nothing changed)": 11571,
   "pairs tested": 11589,
   "pairs whose boxes touch": 11589,
   "parks done by the box test": 0,
@@ -210,6 +210,8 @@
    "NHD water (one try): The read operation timed out",
    "NHD water (one try): The read operation timed out",
    "US-4567: water route with no water/land split: bank test only, centre-line test skipped (not sure)",
+   "US-4567: water route with no water/land split: bank test only, centre-line test skipped (not sure)",
+   "US-4581: water route with no water/land split: bank test only, centre-line test skipped (not sure)",
    "US-4581: water route with no water/land split: bank test only, centre-line test skipped (not sure)",
    "112 spots outside this area left for their own area",
    "same land left out (pins far apart): US-0335+US-1601 13.9 km; US-0335+US-1601 13.9 km; US-0335+US-1601 13.9 km; US-0335+US-1601 13.9 km; US-1586+US-4365 8.1 km; US-1569+US-4764 13.3 km; US-1569+US-4764 13.3 km; US-1569+US-4764 13.3 km"
@@ -396,7 +398,7 @@
    "CA-2538"
   ],
   "cell_m": 10.0,
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 186,
@@ -411,6 +413,7 @@
   },
   "new here only (not counted)": 128,
   "official parks": 2396,
+  "pairs reused (nothing changed)": 343,
   "pairs tested": 343,
   "parks whose outline could not be read": 1,
   "parks with a saved copy only (no fresh download possible)": 0,
@@ -604,7 +607,7 @@
   ],
   "candidates held: no ownership source": 0,
   "cell_m": 5.0,
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 186,
@@ -619,6 +622,7 @@
   },
   "new here only (not counted)": 98,
   "official parks": 2396,
+  "pairs reused (nothing changed)": 337,
   "pairs tested": 337,
   "parks whose outline could not be read": 0,
   "parks with a saved copy only (no fresh download possible)": 0,
@@ -809,7 +813,7 @@
   "candidates held: no ownership source": 0,
   "cell_m": 5.0,
   "checked": 125,
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "left out": {
    "Kentucky (own list)": "all (ky-overlaps.geojson)",
    "approximate": 186,
@@ -823,7 +827,7 @@
    "point circle (100 ft, not a boundary)": 143
   },
   "live rows held: spot far from a state park pin (rule B13)": 0,
-  "memory (MB now / cap; caches dropped for memory)": "4671 / 5000; 1",
+  "memory (MB now / cap; caches dropped for memory)": "4622 / 5000; 1",
   "official parks": 2396,
   "pairs tested": 0,
   "pass": 5,
@@ -831,14 +835,11 @@
    "US-11181 live line: saved-copy-only map, saved copy kept",
    "W&S river corridors joined as area parks: 14 (saved copy: 32 corridors)",
    "284 trail parks tested by their official line (R5), not their polygon: CA-1301, CA-1599, CA-3546, CA-4786, CA-5344, CA-5536, CA-5565, CA-5595, CA-5628, CA-5688",
-   "1448 parks filed under another state but crossing / at the edge of this area kept: US-0228, US-0329, US-0873, US-10073, US-10075, US-10079, US-10086, US-10092",
-   "NHD water (one try): The read operation timed out",
-   "NHD water (one try): The read operation timed out"
+   "1448 parks filed under another state but crossing / at the edge of this area kept: US-0228, US-0329, US-0873, US-10073, US-10075, US-10079, US-10086, US-10092"
   ],
-  "re-checked at the end": 1,
   "river channels listed as water only (boat spots)": 0,
   "spots given their boundary lines": 250,
-  "still not checked": 1,
+  "still not checked": 0,
   "trail stretches given their true zone": 211,
   "water only": 0,
   "water retries (won / tries)": "0 / 0",
@@ -968,11 +969,11 @@
    "water only": 0
   },
   "US-NJ": {
-   "candidates": 45,
+   "candidates": 46,
    "candidates (saved outline only)": 0,
    "lines": 34,
    "n-fers": 6,
-   "not sure": 1,
+   "not sure": 0,
    "pass1": 204,
    "pass2": 181,
    "spots": 204,
