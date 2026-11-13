@@ -32,12 +32,27 @@
     "fp": "fe99adc49ee23864",
     "planned": "2026-11-13 10:21 UTC",
     "tries": 2
+   },
+   "newengland": {
+    "fp": "239b1b4b49db6d5b",
+    "planned": "2026-11-13 14:18 UTC",
+    "tries": 1
+   },
+   "greatlakes": {
+    "fp": "46126cdec196eec0",
+    "planned": "2026-11-13 14:18 UTC",
+    "tries": 1
+   },
+   "plains": {
+    "fp": "782ddd804bee4ef2",
+    "planned": "2026-11-13 14:18 UTC",
+    "tries": 1
    }
   },
   "waiting": {
-   "newengland": "next start (at most 3 areas at a time)",
-   "greatlakes": "next start (at most 3 areas at a time)",
-   "plains": "next start (at most 3 areas at a time)",
+   "southeast": "line started 2026-11-13 10:21 UTC: waiting for its result",
+   "midatlantic": "the memory guard stopped its line on these key files: needs a smaller cut or more memory (not started again on the same cut): a person looks",
+   "newyork": "the line did not finish READY after 2 starts on these key files (see data/fers/line-newyork.json): a person looks",
    "southcentral": "next start (at most 3 areas at a time)",
    "mountain": "next start (at most 3 areas at a time)",
    "southwest": "next start (at most 3 areas at a time)",
@@ -45,8 +60,9 @@
   },
   "ran": [
    "southeast",
-   "midatlantic",
-   "newyork"
+   "newengland",
+   "greatlakes",
+   "plains"
   ]
  },
  "ca-key": {
