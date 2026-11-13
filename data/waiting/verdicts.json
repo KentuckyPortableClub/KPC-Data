@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-13T16:56Z",
+ "checked": "2026-11-13T17:03Z",
  "switched_on": false,
  "results": [
   {
@@ -691,7 +691,7 @@
    "path": "data/docs/US-AK.json",
    "kind": "docs",
    "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+    "F-D3 4 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/arctic/visit-us/rules-policies"
    ],
    "notes": [
     "no live copy: first time this file is published"
@@ -701,26 +701,22 @@
   {
    "path": "data/docs/US-AL.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-AR.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-AZ.json",
    "kind": "docs",
    "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+    "F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/nava/learn/management/lawsandpolicies.htm"
    ],
    "notes": [
     "no live copy: first time this file is published"
@@ -730,48 +726,40 @@
   {
    "path": "data/docs/US-CA.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-CO.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-CT.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-DC.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-DE.json",
    "kind": "docs",
    "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+    "F-D3 2 of 13 re-tested links dead, e.g. https://www.fws.gov/refuge/bombay-hook/visit-us/rules-policies"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -779,26 +767,22 @@
   {
    "path": "data/docs/US-FL.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-GA.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-HI.json",
    "kind": "docs",
    "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+    "F-D3 5 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/hawaiian-islands/visit-us/rules-policies"
    ],
    "notes": [
     "no live copy: first time this file is published"
@@ -809,8 +793,7 @@
    "path": "data/docs/US-ID.json",
    "kind": "docs",
    "why": [
-    "F-D1 one rules page on 63 of 362 parks: https://idfg.idaho.gov/sites/default/files/seasons-rules-big-game-2026.pdf",
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+    "F-D1 one rules page on 63 of 362 parks: https://idfg.idaho.gov/sites/default/files/seasons-rules-big-game-2026.pdf"
    ],
    "notes": [
     "no live copy: first time this file is published"
@@ -822,7 +805,7 @@
    "kind": "docs",
    "why": [
     "F-D2 3 map links on a banned host (fire news / map pins / social), e.g. https://www.google.com/maps/place/39%C2%B006'01.1%22N+88%C2%B047'57.1%",
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+    "F-D3 4 of 20 re-tested links dead, e.g. https://www.nps.gov/pull/learn/management/lawsandpolicies.htm"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -831,7 +814,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+    "F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dA/846dfeb0e5/harmonie_trail.pdf?language_id=1"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -840,7 +823,7 @@
    "path": "data/docs/US-KS.json",
    "kind": "docs",
    "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+    "F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/marais-des-cygnes/visit-us/rules-policies"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -849,7 +832,7 @@
    "path": "data/docs/US-LA.json",
    "kind": "docs",
    "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+    "F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/upper-ouachita/visit-us/rules-policies"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -857,20 +840,16 @@
   {
    "path": "data/docs/US-MA.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-MD.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-ME.json",
@@ -878,7 +857,7 @@
    "why": [
     "F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
     "F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+    "F-D3 4 of 20 re-tested links dead, e.g. https://www.nps.gov/roca/learn/management/lawsandpolicies.htm"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -886,19 +865,17 @@
   {
    "path": "data/docs/US-MI.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-MN.json",
    "kind": "docs",
    "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+    "F-D3 6 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/sherburne/visit-us/rules-policies"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -907,8 +884,7 @@
    "path": "data/docs/US-MO.json",
    "kind": "docs",
    "why": [
-    "F-D1 one rules page on 426 of 561 parks: https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp",
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+    "F-D1 one rules page on 426 of 561 parks: https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -916,55 +892,45 @@
   {
    "path": "data/docs/US-MS.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-MT.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-NC.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-ND.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-NE.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-NH.json",
    "kind": "docs",
    "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+    "F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/john-hay/visit-us/rules-policies"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -972,17 +938,15 @@
   {
    "path": "data/docs/US-NJ.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-NM.json",
    "kind": "docs",
    "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+    "F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/whsa/learn/management/lawsandpolicies.htm"
    ],
    "notes": [
     "no live copy: first time this file is published"
@@ -992,39 +956,33 @@
   {
    "path": "data/docs/US-NV.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-NY.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-OH.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-OK.json",
    "kind": "docs",
    "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+    "F-D3 2 of 20 re-tested links dead, e.g. https://mip.agri.arkansas.gov/agtools/Forestry/Fire_Info"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1032,28 +990,24 @@
   {
    "path": "data/docs/US-OR.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-PA.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-RI.json",
    "kind": "docs",
    "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+    "F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/block-island/visit-us/rules-policies"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1061,73 +1015,59 @@
   {
    "path": "data/docs/US-SC.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-SD.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-TN.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-TX.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-UT.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-VA.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-VT.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-WA.json",
    "kind": "docs",
    "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
+    "F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/umatilla/visit-us/rules-policies"
    ],
    "notes": [
     "no live copy: first time this file is published"
@@ -1137,31 +1077,25 @@
   {
    "path": "data/docs/US-WI.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-WV.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-WY.json",
    "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/fers/CA-AB.json.gz",
@@ -1421,8 +1355,9 @@
    "path": "data/fers/US-CT.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 26 -> 48 (over 30% change)",
-    "F-2 23 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-10073+US-7533, US-11013+US-1669, US-12620+US-4561"
+    "F-2 candidates 26 -> 46 (over 30% change)",
+    "F-2 23 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-10073+US-7533, US-11013+US-1669, US-12620+US-4561",
+    "F-K known 2-fer missing: US-0881 + US-1662"
    ],
    "notes": [
     "replaces live data/fers/US-CT.json.gz (same file, other format): promotion removes the old name"
@@ -1506,7 +1441,7 @@
    "path": "data/fers/US-IA.json",
    "kind": "fers",
    "why": [
-    "F-2 6 new candidate pairs since the live file (over 10% of 9): a person looks at them first, e.g. US-11305+US-11307, US-11305+US-11323, US-11305+US-11324"
+    "F-2 4 new candidate pairs since the live file (over 10% of 9): a person looks at them first, e.g. US-11305+US-11307, US-11305+US-11323, US-11305+US-2283"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1545,6 +1480,11 @@
    "path": "data/fers/US-KS.json",
    "kind": "fers",
    "why": [
+    "F-2 pass2 missing: the 2-fer passes did not all run",
+    "F-2 pass3 missing: the 2-fer passes did not all run",
+    "F-K known 2-fer missing: US-2336 + US-7925",
+    "F-K known 2-fer missing: US-2342 + US-7944",
+    "F-K known 2-fer missing: US-2352 + US-7434",
     "F-K known 2-fer missing: US-2333 + US-7402",
     "F-K known 2-fer missing: US-7406 + US-7939"
    ],
@@ -1578,7 +1518,9 @@
    "path": "data/fers/US-MA.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 30 new candidate pairs since the live file (over 10% of 75): a person looks at them first, e.g. US-0672+US-11686, US-0672+US-8395, US-0728+US-4582"
+    "F-2 only 53 of 75 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
+    "F-2 30 new candidate pairs since the live file (over 10% of 75): a person looks at them first, e.g. US-0672+US-11686, US-0672+US-8395, US-0728+US-4582",
+    "F-K known 2-fer missing: US-0891 + US-2430"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1623,9 +1565,9 @@
    "path": "data/fers/US-MN.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 133 -> 180 (over 30% change)",
-    "F-2 NOT SURE 18 -> 4 (over 30% change)",
-    "F-2 55 new candidate pairs since the live file (over 10% of 133): a person looks at them first, e.g. US-0673+US-10196, US-0673+US-10721, US-0673+US-10723",
+    "F-2 candidates 133 -> 187 (over 30% change)",
+    "F-2 NOT SURE 18 -> 7 (over 30% change)",
+    "F-2 62 new candidate pairs since the live file (over 10% of 133): a person looks at them first, e.g. CA-0359+US-4491, US-0673+US-10196, US-0673+US-10721",
     "F-S3 2 live rows whose two park pins are 100+ km apart (wrong joins), e.g. US-13562+US-4822 132 km",
     "F-K known 2-fer missing: US-2506 + US-7148"
    ],
@@ -1637,7 +1579,7 @@
    "kind": "fers",
    "why": [
     "F-2 only 2 of 3 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 47 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US-0710+US-9757, US-0788+US-6491, US-0788+US-6498",
+    "F-2 48 new candidate pairs since the live file (over 10% of 3): a person looks at them first, e.g. US-0710+US-9757, US-0788+US-6491, US-0788+US-6498",
     "F-K known 2-fer missing: US-1772 + US-3356"
    ],
    "notes": [],
@@ -1702,7 +1644,7 @@
    "path": "data/fers/US-ND.json",
    "kind": "fers",
    "why": [
-    "F-4 data/fers/US-ND.json replaces live data/fers/US-ND.json.gz (other format) with 51 rows for 83 (over 10% fewer)"
+    "F-4 data/fers/US-ND.json replaces live data/fers/US-ND.json.gz (other format) with 52 rows for 83 (over 10% fewer)"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1711,8 +1653,11 @@
    "path": "data/fers/US-NE.json",
    "kind": "fers",
    "why": [
-    "F-2 NOT SURE 9 -> 12 (over 30% change)",
-    "F-2 43 new candidate pairs since the live file (over 10% of 4): a person looks at them first, e.g. US-0443+US-5622, US-0445+US-5655, US-0675+US-10341"
+    "F-2 NOT SURE 9 -> 26 (over 30% change)",
+    "F-2 pass2 missing: the 2-fer passes did not all run",
+    "F-2 pass3 missing: the 2-fer passes did not all run",
+    "F-K known 2-fer missing: US-2613 + US-3371",
+    "F-K known 2-fer missing: US-0445 + US-5655"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1865,10 +1810,8 @@
    "path": "data/fers/US-SD.json",
    "kind": "fers",
    "why": [
-    "F-2 only 7 of 12 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 3 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0068+US-11905, US-11905+US-2916, US-11905+US-2917",
-    "F-K known 2-fer missing: US-0675 + US-8174",
-    "F-K known 2-fer missing: US-0675 + US-8187"
+    "F-2 candidates 12 -> 16 (over 30% change)",
+    "F-2 4 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US-0068+US-11905, US-0675+US-8161+US-8174, US-11905+US-2916"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -3802,7 +3745,9 @@
    "path": "data/world-key/AE.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -3816,7 +3761,9 @@
    "path": "data/world-key/AT.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -3837,7 +3784,9 @@
    "path": "data/world-key/BE.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -3853,7 +3802,9 @@
    "why": [
     "F-O1 outlines 32 -> 29 (more than 1% lost)"
    ],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "HOLD"
   },
   {
@@ -3874,7 +3825,9 @@
    "path": "data/world-key/BZ.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 43 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -3888,7 +3841,9 @@
    "path": "data/world-key/CD.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 4 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -3909,7 +3864,9 @@
    "path": "data/world-key/CL.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -3923,14 +3880,18 @@
    "path": "data/world-key/CO.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 11 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/CV.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -3944,14 +3905,18 @@
    "path": "data/world-key/CZ.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/DE.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -3965,7 +3930,9 @@
    "path": "data/world-key/DO.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -3986,21 +3953,27 @@
    "path": "data/world-key/ES.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 6 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/FI.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 3 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/FO.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -4010,7 +3983,9 @@
     "F-O1 outlines 13877 -> 13377 (more than 1% lost)",
     "F-O3 retired parks still outlined: FR-5742, FR-5743, FR-5752, FR-5753, FR-5756"
    ],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 7 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "HOLD"
   },
   {
@@ -4024,14 +3999,18 @@
    "path": "data/world-key/GB.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/GE.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 24 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -4045,7 +4024,9 @@
    "path": "data/world-key/GR.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -4073,7 +4054,9 @@
    "path": "data/world-key/HR.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 3 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -4087,21 +4070,27 @@
    "path": "data/world-key/ID.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 9 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/IE.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 8 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/IM.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -4124,28 +4113,36 @@
    "why": [
     "F-O2 101 of 185 outlines carry a layer name that shares no word with the park (55%; live 97/185): outlines swapped to other parks?"
    ],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 23 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "HOLD"
   },
   {
    "path": "data/world-key/KE.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 3 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/LK.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 4 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/LR.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -4175,7 +4172,9 @@
    "path": "data/world-key/MK.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 4 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -4189,28 +4188,36 @@
    "path": "data/world-key/MT.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 13 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/MV.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 2 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/MX.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 15 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/NC.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 2 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -4224,7 +4231,9 @@
    "path": "data/world-key/NI.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 19 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -4238,28 +4247,36 @@
    "path": "data/world-key/NO.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/NZ.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 47 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/OM.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 4 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/PA.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 2 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -4280,28 +4297,36 @@
    "path": "data/world-key/PL.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 15 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/PR.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 10 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/PT.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 29 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/PY.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -4329,14 +4354,18 @@
    "path": "data/world-key/SE.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 27 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
    "path": "data/world-key/SI.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 2 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -4378,7 +4407,9 @@
    "path": "data/world-key/VI.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 2 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS"
   },
   {
@@ -4387,7 +4418,9 @@
    "why": [
     "F-O2 4 of 75 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?"
    ],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "HOLD"
   },
   {
