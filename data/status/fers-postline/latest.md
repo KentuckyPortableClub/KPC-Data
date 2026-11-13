@@ -1,6 +1,6 @@
 # 2-fer post-line check (for Quality)
 
-2026-11-13 04:14 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
+2026-11-13 11:10 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
 
 ## CA-AB: live pairs 40 -> 33 (+5 / -12)
 - gained: CA-0110+US-4558 CA-0664+CA-0719+CA-0726 CA-2956+CA-2958 CA-3008+CA-6112 CA-6112+CA-6588
@@ -462,12 +462,12 @@
 - near a size threshold: US-13518+US-4512 23 m ~ 25 yd (kept); US-2647+US-4512 109 m ~ 100 yd (small); US-2650+US-4512 47 m ~ 50 yd (very tight); US-2667+US-4512 23 m ~ 25 yd (kept); US-4512+US-4863 103 m ~ 100 yd (small); US-4512+US-4877 23 m ~ 25 yd (kept); US-4512+US-4900 23 m ~ 25 yd (kept); US-4512+US-4958 47 m ~ 50 yd (very tight)
 - stale inputs: -
 
-## US-NJ: live pairs 28 -> 54 (+26 / -0)
-- gained: US-0452+US-8036 US-0684+US-1347+US-1613 US-0684+US-1613+US-1634 US-0684+US-1634 US-0746+US-4582 US-11337+US-8051 US-11338+US-13061 US-12101+US-6461 US-12645+US-4999 US-13149+US-4995 US-1608+US-1631 US-1612+US-8034 US-1613+US-4582 US-1616+US-8059 US-1619+US-4556 US-1622+US-8048 US-1628+US-4582 US-1630+US-4998 US-1636+US-4556 US-1636+US-4991 US-4556+US-4991 US-4556+US-4999 US-4556+US-5001 US-4992+US-5000 US-4992+US-8052 US-5000+US-8053
+## US-NJ: live pairs 28 -> 55 (+27 / -0)
+- gained: US-0452+US-8036 US-0684+US-1347+US-1613 US-0684+US-1613 US-0684+US-1613+US-1634 US-0684+US-1634 US-0746+US-4582 US-11337+US-8051 US-11338+US-13061 US-12101+US-6461 US-12645+US-4999 US-13149+US-4995 US-1608+US-1631 US-1612+US-8034 US-1613+US-4582 US-1616+US-8059 US-1619+US-4556 US-1622+US-8048 US-1628+US-4582 US-1630+US-4998 US-1636+US-4556 US-1636+US-4991 US-4556+US-4991 US-4556+US-4999 US-4556+US-5001 US-4992+US-5000 US-4992+US-8052 US-5000+US-8053
 - lost: -
 - touching held parks: -
 - touching pin-only parks: -
-- water / bank: 2
+- water / bank: 1
 - one-record same land: -
 - near a size threshold: US-0452+US-8036 45 m ~ 50 yd (very tight); US-0684+US-1613+US-1634 45 m ~ 50 yd (very tight); US-0886+US-11964+US-13256 101 m ~ 100 yd (small); US-0888+US-1622 91 m ~ 100 yd (small); US-11338+US-13061 83 m ~ 100 yd (small); US-12101+US-6461 75 m ~ 100 yd (small); US-12645+US-4999 75 m ~ 100 yd (small); US-1608+US-1631 23 m ~ 25 yd (kept); US-1613+US-1634 45 m ~ 50 yd (very tight); US-1619+US-4999 101 m ~ 100 yd (small); US-1622+US-4995 23 m ~ 25 yd (kept); US-1622+US-8048 27 m ~ 25 yd (kept); US-1630+US-4998 45 m ~ 50 yd (very tight); US-5000+US-8053 27 m ~ 25 yd (kept)
 - stale inputs: -
