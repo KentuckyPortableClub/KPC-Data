@@ -19,13 +19,21 @@ on:
         required: false
         default: ''
       mode:
-        description: 'replay | check | undo | undo-bot | release | questions | release-approved'
+        description: 'replay | check | undo | undo-bot | release | release-areas | questions | release-approved'
         default: 'replay'
       target:
         description: 'undo / release: the live path (data/access/US-NY.json; undo: add @2 or @3 to go 2 or 3 copies back); undo-bot: the bot (access, campfed, docs, hours, truth, ...)'
         default: ''
       area:
         description: 'undo-bot only: one area (e.g. US-KY); blank = every area'
+        default: ''
+      areas:
+        description: 'release-areas: space-separated areas to consider (e.g. CA-AB US-KY). Each is promoted on its own if Quality said RELEASE-READY: YES and it is no worse than live. A held area keeps its live data and does not block the others. Do not run this while a US 2-fer line is in progress on these files.'
+        required: false
+        default: ''
+      grade:
+        description: 'release-areas: path to a Quality verdicts.json (RELEASE-READY). Empty = data/status/quality/verdicts.json if present.'
+        required: false
         default: ''
 permissions:
   contents: write
@@ -71,6 +79,7 @@ jobs:
             undo) python3 .github/scripts/kpc_waiting_room.py undo "${{ inputs.target }}" ;;
             undo-bot) python3 .github/scripts/kpc_waiting_room.py undo-bot "${{ inputs.target }}" "${{ inputs.area }}" ;;
             release) python3 .github/scripts/kpc_waiting_room.py release "${{ inputs.target }}" ;;
+            release-areas) python3 .github/scripts/kpc_fers_release_areas.py --areas "${{ inputs.areas }}" --grade "${{ inputs.grade }}" ;;
             questions) python3 .github/scripts/kpc_key_questions.py ;;
             release-approved) python3 .github/scripts/kpc_release_approved.py ;;   # Brandon 3:02 PM: one batch of what chat 11 (+ chat 2) approved, on the day chat 8 + 11 PASS the key   # RULE SHEET G step 2: held key pieces -> one question each for chat 11
             *) echo "::notice title=Waiting room::unknown mode $M" ;;

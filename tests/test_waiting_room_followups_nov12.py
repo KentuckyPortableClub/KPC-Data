@@ -48,6 +48,33 @@ def same_but(name, W, job, changed):
             and sorted(O['jobs']) == sorted(W['jobs']))
 
 
+def _wr_inputs_ok(O, W):
+    """Nov 13: the only allowed waiting-room trigger change is release-areas (mode text + areas/grade inputs)."""
+    oi = (O.get(True) or {}).get('workflow_dispatch', {}).get('inputs') or {}
+    wi = (W.get(True) or {}).get('workflow_dispatch', {}).get('inputs') or {}
+    if set(wi) - set(oi) != {'areas', 'grade'}: return False
+    if set(oi) - set(wi): return False
+    if 'release-areas' not in (wi.get('mode') or {}).get('description', ''): return False
+    if (wi.get('mode') or {}).get('default') != (oi.get('mode') or {}).get('default'): return False
+    for k in oi:
+        if k == 'mode': continue
+        if oi[k] != wi[k]: return False
+    return True
+
+def _wr_run_norm(run):
+    return re.sub(
+        r'^[ \t]*release-areas\) python3 \.github/scripts/kpc_fers_release_areas\.py --areas "\$\{\{ inputs\.areas \}\}" --grade "\$\{\{ inputs\.grade \}\}" ;;\n',
+        '', run or '', flags=re.M)
+
+def _wr_on_same(O, W):
+    if not _wr_inputs_ok(O, W): return False
+    # crons and event types unchanged; dispatch inputs compared above
+    o_on, w_on = O.get(True) or {}, W.get(True) or {}
+    if sorted(o_on) != sorted(w_on): return False
+    if o_on.get('schedule') != w_on.get('schedule'): return False
+    return True
+
+
 # ------------------------------------------------------------------ 1. kpc-fers-pending.yml: no batches while kpc-fers.yml runs
 P = load('kpc-fers-pending.yml')
 J = P['jobs']['look']
@@ -128,10 +155,10 @@ O = old('kpc-waiting-room.yml')
 if O is not None:
     os_ = O['jobs']['waiting']['steps']
     DI = steps.index(D)
-    check(f'waiting room: every step but Save and the rerun is the same as on main ({BASE}); job, triggers, permissions, concurrency too',
-          len(os_) == len(steps) and all(a == b for i, (a, b) in enumerate(zip(os_, steps)) if i not in (SI, DI))
+    check(f'waiting room: every step but Save and the rerun is the same as on main ({BASE}), except the Nov 13 release-areas line; job, permissions, concurrency too',
+          len(os_) == len(steps) and all((_wr_run_norm(a.get('run')) == _wr_run_norm(b.get('run')) and {k: v for k, v in a.items() if k != 'run'} == {k: v for k, v in b.items() if k != 'run'}) for i, (a, b) in enumerate(zip(os_, steps)) if i not in (SI, DI))
           and {k: v for k, v in O['jobs']['waiting'].items() if k != 'steps'} == {k: v for k, v in W['jobs']['waiting'].items() if k != 'steps'}
-          and all(O.get(k) == W.get(k) for k in (True, 'permissions', 'concurrency', 'name', 'run-name')))
+          and _wr_on_same(O, W) and all(O.get(k) == W.get(k) for k in ('permissions', 'concurrency', 'name', 'run-name')))
     norm = lambda r: [ln for ln in r.splitlines() if not ln.strip().startswith('#')]
     check('the rerun step changed only in its comments', norm(os_[DI]['run']) == norm(D['run']) and {k: v for k, v in os_[DI].items() if k != 'run'} == {k: v for k, v in D.items() if k != 'run'})
     check('Save changed only by STRICT=1, exit 1 and its comment', [ln.replace('STRICT=1 bash', 'bash').replace('; exit 1; }', '; }') for ln in norm(srun)] == norm(os_[SI]['run'])

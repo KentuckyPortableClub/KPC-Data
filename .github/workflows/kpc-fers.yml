@@ -143,7 +143,7 @@ jobs:
         env:
           STATES: ${{ matrix.r.region == 'ky' && 'US-KY' || matrix.r.states }}
           PAIR_MINUTES: '40'
-        run: python3 .github/scripts/kpc_pota_pairs.py || { kpc_rc=$?; echo "::error title=kpc_pota_pairs.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_pota_pairs.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+        run: LINKS=. DATA=kpcdata python3 kpcdata/.github/scripts/kpc_pota_pairs_run.py || { kpc_rc=$?; echo "::error title=kpc_pota_pairs_run.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_pota_pairs_run.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Look for shared ground
         if: ${{ steps.wait.outputs.wait != '1' }}
         id: kept_green_3
@@ -233,6 +233,7 @@ jobs:
           # Nov 9 evening (KZ4CP 5:12 PM CST; Quality Nov 8 on Data #55): 2-fers are hidden beta, so a changed live 2-fer file never goes
           # live from here: the waiting-room divert (the same one kpc-fers-line.yml uses) moves it to data/waiting/in/ and puts the live file
           # back. The pair answers (reuse-*), reports and the full-rebuild dates are working files and stay. If the divert fails, nothing is pushed.
+          python3 kpcdata/.github/scripts/kpc_fers_annotate.py --new data/fers --live kpcdata --states "${{ matrix.r.region == 'ky' && 'US-KY' || matrix.r.states }}" || { kpc_rc=$?; echo "::error title=kpc_fers_annotate.py::stopped with an error (exit $kpc_rc)"; echo "kpc_fers_annotate.py - stopped with an error (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py divert data/fers) || { kpc_rc=$?; echo "::error title=kpc_waiting_room.py::divert failed (exit $kpc_rc): nothing pushed, no live 2-fer file written"; echo "kpc_waiting_room.py - divert failed (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit 1; }
           STRICT=1 bash .github/scripts/kpc_push_data.sh kpcdata "2-fer bot pass ${{ inputs.pass || 'all' }} (${{ matrix.r.name }}, hidden data)" data || exit 1   # Nov 8: no continue-on-error; never if: always()
           # KPC owner, 2026-11-12: the green states are saved above; a red state makes this job red AFTER the save (it blocks nobody)
@@ -259,6 +260,7 @@ jobs:
           # Nov 9 evening (KZ4CP 5:12 PM CST; Quality Nov 8 on Data #55): 2-fers are hidden beta, so a changed live 2-fer file never goes
           # live from here: the waiting-room divert (the same one kpc-fers-line.yml uses) moves it to data/waiting/in/ and puts the live file
           # back. The pair answers (reuse-*), reports and the full-rebuild dates are working files and stay. If the divert fails, nothing is pushed.
+          python3 kpcdata/.github/scripts/kpc_fers_annotate.py --new data/fers --live kpcdata --states "${{ matrix.r.region == 'ky' && 'US-KY' || matrix.r.states }}" || { kpc_rc=$?; echo "::error title=kpc_fers_annotate.py::stopped with an error (exit $kpc_rc)"; echo "kpc_fers_annotate.py - stopped with an error (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py divert data/fers) || { kpc_rc=$?; echo "::error title=kpc_waiting_room.py::divert failed (exit $kpc_rc): nothing pushed, no live 2-fer file written"; echo "kpc_waiting_room.py - divert failed (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit 1; }
           STRICT=1 bash .github/scripts/kpc_push_data.sh kpcdata "2-fer bot: finished parts of a broken run (${{ matrix.r.name }}, hidden data)" data || exit 1
       - name: Keep the outlines read live for next time (KPC-Archive; fers-cache release only as the fallback, Nov 9 evening)

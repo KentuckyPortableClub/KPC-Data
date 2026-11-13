@@ -264,7 +264,7 @@ with tempfile.TemporaryDirectory() as t:   # a stomp under another cut is imposs
     o, kd, lk, work = setup(t)   # its own states, and the stale-base check keeps any state another run saved meanwhile (shown in 1)
     check(F.areas(HERE) == bot and F.area_of_state(HERE)['US-FL'] == 'southeast', 'kpc_fers_states.areas() is the one list')
 lines_tags = [l.strip() for l in Y['kpc-fers-lines.yml'][True]['workflow_dispatch']['inputs']['areas']['default'].split(';')]
-check(sorted(lines_tags) == sorted(bot), f'kpc-fers-lines.yml default queue = the 14 areas ({lines_tags})')
+check(sorted(lines_tags) == sorted(bot), f'kpc-fers-lines.yml default queue = every area of fers-areas.json ({lines_tags})')
 A = mod('kpc_fers_areas', HERE / '.github/scripts/kpc_fers_areas.py')
 os.environ.pop('FULL', None)
 one = A.plan('US-FL')

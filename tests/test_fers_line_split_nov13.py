@@ -1,0 +1,79 @@
+#!/usr/bin/env python3
+"""Nov 13 (Quality, US 2-fer chain 43408359385): the southeast line (NC SC GA FL AL MS TN) hit the
+memory guard in the fetcher at about 11.2 GB, and mid-Atlantic (PA MD DE DC VA WV) hit it in the
+worker at about 11.1 GB. Those lines are split into smaller state groups so a job stays under the
+guard. Nothing is started."""
+import json, pathlib, sys, math
+ROOT = pathlib.Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / '.github/scripts'))
+import kpc_fers_states as F
+import kpc_fers_chain_plan as P
+import yaml
+
+ok = True
+def check(c, msg):
+    global ok
+    print(('PASS ' if c else 'FAIL ') + msg)
+    ok = ok and bool(c)
+
+cfg = json.loads((ROOT / '.github/fers-areas.json').read_text(encoding='utf-8'))
+areas = cfg['areas']
+by = {s: name for name, sts in areas.items() for s in sts.split()}
+
+OLD_SE = 'US-NC US-SC US-GA US-FL US-AL US-MS US-TN'.split()
+OLD_MA = 'US-PA US-MD US-DE US-DC US-VA US-WV'.split()
+
+check(areas.get('southeast') == 'US-NC US-SC US-GA US-FL',
+      'southeast is the four Atlantic states (NC SC GA FL), not the old seven')
+check(areas.get('southinland') == 'US-AL US-MS US-TN',
+      'southinland is AL MS TN (split out of the old southeast line)')
+check(areas.get('midatlantic') == 'US-PA US-MD US-DE US-DC',
+      'midatlantic is PA MD DE DC, not the old six')
+check(areas.get('appalachia') == 'US-VA US-WV',
+      'appalachia is VA WV (split out of the old mid-Atlantic line)')
+
+check(all(by[s] in ('southeast', 'southinland') for s in OLD_SE),
+      'every state of the old southeast line is still in exactly one of the split areas')
+check(all(by[s] in ('midatlantic', 'appalachia') for s in OLD_MA),
+      'every state of the old mid-Atlantic line is still in exactly one of the split areas')
+check(len(areas['southeast'].split()) <= 4 and len(areas['southinland'].split()) <= 3
+      and len(areas['midatlantic'].split()) <= 4 and len(areas['appalachia'].split()) <= 2,
+      'each of the four split areas is smaller than the line that hit the memory guard')
+check(areas['southeast'] != ' '.join(OLD_SE) and areas['midatlantic'] != ' '.join(OLD_MA),
+      'neither problem line still runs as one job')
+
+sts = [s for v in areas.values() for s in v.split()]
+check(len(sts) == len(set(sts)), 'no state is in two areas')
+us = {'US-' + x for x in 'AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY'.split()}
+check(us <= set(sts) and 'US-KY' not in sts, 'every US state except Kentucky is still in an area')
+check(F.area_of_state(ROOT)['US-FL'] == 'southeast' and F.area_of_state(ROOT)['US-TN'] == 'southinland'
+      and F.area_of_state(ROOT)['US-PA'] == 'midatlantic' and F.area_of_state(ROOT)['US-VA'] == 'appalachia',
+      'kpc_fers_states.area_of_state follows the split (FL stays southeast; TN/VA moved)')
+
+# the lines default queue and the chain's US/CA list are the same one list
+Y = yaml.safe_load((ROOT / '.github/workflows/kpc-fers-lines.yml').read_text(encoding='utf-8'))
+# workflow_dispatch is under 'on' which yaml may parse as True
+on = Y.get('on') or Y.get(True)
+default = on['workflow_dispatch']['inputs']['areas']['default']
+tags = [x.strip() for x in default.split(';') if x.strip()]
+check(sorted(tags) == sorted(areas), f'kpc-fers-lines.yml default queue is every area, including the two new ones ({tags})')
+check('southinland' in tags and 'appalachia' in tags, 'the default lines queue names southinland and appalachia')
+chain = {t: v for t, v in P.R.items() if P.kind_of(v) != 'world-key'}
+check(chain == areas, 'the chain plans exactly the bot areas (same tags, same state sets)')
+mp = json.loads((ROOT / '.github/fers-area-map.json').read_text(encoding='utf-8'))
+check(mp['bot'] == areas and mp['chain'] == areas and not mp['same_tag_different_members']
+      and not mp['bot_only_tags'] and not mp['chain_only_tags'],
+      'fers-area-map.json matches the split list and is not stale')
+
+# monthly full-rebuild cap uses the new area count
+check(cfg.get('full_cycle_days') == 90 and '16 areas' in cfg.get('full_cycle_about', '')
+      and f'{math.ceil(len(areas) * 30 / 90)}' in cfg.get('full_cycle_about', ''),
+      'full-cycle note uses 16 areas (ceil(16 x 30 / 90) = 6 a monthly run)')
+
+# memory guard is still wrapped around the line fetcher and worker (the split is how those two lines stay under it)
+line = (ROOT / '.github/workflows/kpc-fers-line.yml').read_text(encoding='utf-8')
+check('kpc_mem_guard.py' in line and line.count('kpc_mem_guard.py') >= 2,
+      'kpc-fers-line.yml still wraps the fetcher and the worker with the memory guard')
+
+print('ALL PASS' if ok else 'FAILED')
+sys.exit(0 if ok else 1)

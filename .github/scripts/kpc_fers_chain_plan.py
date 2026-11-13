@@ -64,7 +64,7 @@ import kpc_fers_states as FS   # noqa: E402  (the one area list, the per-state h
 WORLD = {'worldwest': 'W-GB W-IE W-FR W-ES W-PT W-BE W-NL W-LU W-DE W-CH',
          'worldnorth': 'W-AT W-IT W-DK W-NO W-SE W-FI W-EE W-LV W-LT W-PL',
          'worldeast': 'W-CZ W-SK W-HU W-SI W-HR W-RO W-AU W-JP'}
-R = {**FS.areas(), **WORLD}   # KPC owner, 2026-11-12: US / Canada = .github/fers-areas.json, the bot's own 14 areas
+R = {**FS.areas(), **WORLD}   # KPC owner, 2026-11-12: US / Canada = .github/fers-areas.json, the bot's own areas (fers-areas.json)
 RETIRED = ('midwest', 'northeast', 'oh', 'mi', 'ut')   # tags of the old chain list that no longer exist (canadaeast / canadawest /
 # southeast / southcentral / mountain / pacific are kept as names, with the bot's members)
 KEYS = {'us-key': 'us', 'ca-key': 'ca', 'world-key': 'world'}

@@ -4,6 +4,7 @@ name: KPC 2-fer post-line check (hidden)
 # which run inside the chain workflow), compare the HELD new 2-fer output with the previous one and write a report for Quality.
 # workflow_run on a stand-alone line, or a dispatch from the chain (owner rule, 2026-11-10: not on the chain's own completion), no cron. Read-only on the 2-fers; never fails; saves only data/status/fers-postline/ and the chain gate state
 # (data/status/fers-chain/gate.json + gate-log.md). Releases nothing.
+# Nov 13: after the Links report, kpc_fers_postline_gate.py fails the job when any live pair is gone with no dropped or not-sure row.
 on:
   workflow_run:
     workflows: ['KPC 2-fer assembly line (hidden)']
@@ -33,7 +34,6 @@ jobs:
     if: ${{ github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion != 'skipped' && github.event.workflow_run.conclusion != 'cancelled') }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    continue-on-error: true
     steps:
       - uses: actions/checkout@v5
       - uses: actions/checkout@v5
@@ -63,6 +63,8 @@ jobs:
           if [ ! -f links/.github/scripts/kpc_fers_postline.py ]; then echo "::warning title=2-fer post-line check::KPC-Links has no kpc_fers_postline.py (links-05 not merged): no report"; exit 0; fi
           DATA=. LINKS=links python3 links/.github/scripts/kpc_fers_postline.py || { kpc_rc=$?; echo "::error title=kpc_fers_postline.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_postline.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # next round C4: was '|| true'
           [ -f data/status/fers-postline/latest.md ] && cat data/status/fers-postline/latest.md >> "$GITHUB_STEP_SUMMARY"; true
+      - name: Fail on silent gone pairs (Nov 13)
+        run: python3 .github/scripts/kpc_fers_postline_gate.py --data .
       - name: Map-audit gate, automatic re-enable (per Brandon via Super Head Bot (relayed), 5:48 AM CST Nov 4) - counts this report; 3 clean post-key + post-line checks in a row (or a Brandon / KZ4CP GOOD) turn the gate on, once; it never turns it off
         continue-on-error: true
         run: |
