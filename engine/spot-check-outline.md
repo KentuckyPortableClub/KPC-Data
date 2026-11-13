@@ -1,30 +1,6 @@
-# Spot check: outline (20 random rows of 10863)
+# Spot check: outline (20 random rows of 10897)
 
 For chat 11: open each link and say YES / NO. The engine decides nothing.
-
-## US-10200 Willow River State Wildlife Area (US-WI)
-- status: candidate
-- tier: T-3
-- band: WEAK
-- record_name: Willow River SHA-WPHRA
-- url: https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0?f=html
-- record_link: https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?where=OBJECTID%3D713542&outFields=%2A&f=html
-- source_url: https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?geometry=-92.6022%2C45.035&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: same land also in PACK-US-WI-land-373 'Willow River SHA-WPHRA', PACK-US-WI-land-373 'Willow River SHA-WPHRA': merged, counted once; record 'Willow River SHA-WPHRA' (PACK-US-WI-land-370); pin inside; about 817.4 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
-- answer: 
-
-## CA-4865 Fort Malden National Historic Site (CA-ON)
-- status: found
-- tier: T-1
-- band: STRONG
-- record_name: Fort Malden National Historic Site
-- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2355&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-83.1126%2C42.108&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Fort Malden National Historic Site' (PACK-CA-NB-land-73); pin inside; about 13.0 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
-- answer: 
 
 ## US-10189 Lundy Pond State Wildlife Area (US-WI)
 - status: candidate
@@ -38,16 +14,40 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Lundy Pond SHA-WPRA' (PACK-US-WI-land-370); pin inside; about 35.4 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## US-5541 Calvin Coolidge State Forest (US-VT)
+## US-0042 Fort Gaines National Historic Site (US-AL)
+- status: found
+- tier: T-2
+- band: STRONG
+- record_name: Fort Gaines
+- url: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1?f=html
+- record_link: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D379681&outFields=%2A&f=html
+- source_url: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?geometry=-88.0756%2C30.2483&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Fort Gaines' (Q-1678); pin inside; about 31.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- answer: 
+
+## US-4221 Pisgah Marsh Area State Fish and Wildlife Area (US-IN)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Coolidge State Forest
-- url: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38?f=html
-- record_link: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?where=OBJECTID%3D18&outFields=%2A&f=html
-- source_url: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?geometry=-72.8052%2C43.6093&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Pisgah Marsh Nongame Area And Boardwalk
+- url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html
+- record_link: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D4834&outFields=%2A&f=html
+- source_url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-85.6546%2C41.2914&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Coolidge State Forest' (PACK-US-VT-preserve-362); pin inside; about 23600.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Pisgah Marsh Nongame Area And Boardwalk' (PACK-US-IN-land-191); pin inside; about 122.1 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- answer: 
+
+## US-3128 Lake Shaftsbury State Park (US-VT)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: Shaftsbury State Park
+- url: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38?f=html
+- record_link: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?where=OBJECTID%3D455&outFields=%2A&f=html
+- source_url: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?geometry=-73.1791%2C43.0224&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Shaftsbury State Park' (PACK-US-VT-preserve-362); pin inside; about 104.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## US-4171 Paynetown on Monroe Lake State Recreation Area (US-IN)
@@ -74,28 +74,28 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Bob Kern Wetlands Nature Preserve' (PACK-US-IN-land-191); pin inside; about 166.3 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## US-6529 Truman Reservoir Management Lands State Park (US-MO)
+## US-5709 Nodaway State Conservation Area (US-MO)
 - status: candidate
-- tier: T-4
+- tier: T-2
 - band: WEAK
-- record_name: Truman Reservoir ML (Deepwater Creek)
+- record_name: Nodaway Valley CA
 - url: https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5?f=html
-- record_link: https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5/query?where=OBJECTID%3D946&outFields=%2A&f=html
-- source_url: https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5/query?geometry=-93.8066%2C38.2872&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5/query?where=OBJECTID%3D735&outFields=%2A&f=html
+- source_url: https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5/query?geometry=-95.078%2C40.0875&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: same land also in WB-US-493 'Truman Reservoir ML (Deepwater Creek)': merged, counted once; record 'Truman Reservoir ML (Deepwater Creek)' (PACK-US-MO-land-283); pin inside; about 5637.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
+- why: record 'Nodaway Valley CA' (PACK-US-MO-land-283); pin inside; about 3960.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## CA-1055 Lower Fort Garry National Historic Site (CA-MB)
-- status: found
-- tier: T-2
-- band: STRONG
-- record_name: Lieu historique national de Lower Fort Garry
-- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2557&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-96.9316%2C50.1121&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Lieu historique national de Lower Fort Garry' (Q-1781); pin inside; about 66.0 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+## CA-4785 Yellowhead Pass National Historic Site (CA-AB)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: Yellowhead Pass
+- url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0?f=html
+- record_link: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0/query?where=OBJECTID%3D165&outFields=%2A&f=html
+- source_url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0/query?geometry=-118.224%2C52.863&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 58
+- why: record 'Yellowhead Pass' (Q-1371); pin 58 m from the edge; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
 ## US-12025 Goose Creek State Game Land (US-IN)
@@ -122,16 +122,16 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Vermillion Highlands Research Recreation and WMA' (PACK-US-MN-forest-27); pin inside; about 2841.3 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## US-10302 Atherton Meadows State Wildlife Habitat Management Area (US-VT)
+## US-10301 Gale Meadows State Wildlife Habitat Management Area (US-VT)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Atherton Meadows WMA
+- record_name: Gale Meadows WMA
 - url: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38?f=html
-- record_link: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?where=OBJECTID%3D279&outFields=%2A&f=html
-- source_url: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?geometry=-72.9111%2C42.7669&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?where=OBJECTID%3D200&outFields=%2A&f=html
+- source_url: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?geometry=-72.8645%2C43.1679&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Atherton Meadows WMA' (PACK-US-VT-preserve-362); pin inside; about 1035.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Gale Meadows WMA' (PACK-US-VT-preserve-362); pin inside; about 867.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## US-7618 Rankin Wildlife Management Area (US-TN)
@@ -182,28 +182,28 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Moirs Ltd. Power House' (PACK-CA-NS-land-83); pin 6 m from the edge; about 3.3 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
-## US-7965 Brigadoon State Nature Preserve (US-KY)
-- status: found
-- tier: T-1
-- band: STRONG
-- record_name: Brigadoon State Nature Preserve
+## US-7963 Pilot Knob State Nature Preserve (US-KY)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: Pilot Knob State Nature Preserve
 - url: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0?f=html
-- record_link: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D8&outFields=%2A&f=html
-- source_url: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?geometry=-85.9811%2C36.8978&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Brigadoon State Nature Preserve' (US-KY-snp); pin inside; about 187.3 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- record_link: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D26&outFields=%2A&f=html
+- source_url: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?geometry=-83.945%2C37.9121&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 81
+- why: same land also in US-KY-heritage-land 'Pilot Knob State Nature Preserve', US-KY-heritage-land 'Pilot Knob State Nature Preserve', US-KY-heritage-land 'Pilot Knob State Nature Preserve': merged, counted once; record 'Pilot Knob State Nature Preserve' (US-KY-snp); pin 81 m from the edge; about 742.2 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
-## US-11956 Pine River State Fish and Wildlife Area (US-WI)
+## US-10200 Willow River State Wildlife Area (US-WI)
 - status: candidate
-- tier: T-4
+- tier: T-3
 - band: WEAK
-- record_name: Pine River System Fishery Area
+- record_name: Willow River SHA-WPHRA
 - url: https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0?f=html
-- record_link: https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?where=OBJECTID%3D712693&outFields=%2A&f=html
-- source_url: https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?geometry=-89.2269%2C44.2047&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?where=OBJECTID%3D713542&outFields=%2A&f=html
+- source_url: https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?geometry=-92.6022%2C45.035&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: same land also in PACK-US-WI-land-373 'Pine River System Fishery Area': merged, counted once; record 'Pine River System Fishery Area' (PACK-US-WI-land-370); pin inside; about 2077.4 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
+- why: same land also in PACK-US-WI-land-373 'Willow River SHA-WPHRA', PACK-US-WI-land-373 'Willow River SHA-WPHRA': merged, counted once; record 'Willow River SHA-WPHRA' (PACK-US-WI-land-370); pin inside; about 817.4 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## US-0980 Beall Woods State Park (US-IL)
@@ -230,15 +230,15 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: same land also in US-NPS-boundary 'San Juan Island National Historical Park', PACK-US-land-200 'San Juan Islands National Monument', WB-US-481 'San Juan Islands National Monument': merged, counted once; record 'San Juan Island National Historic Park' (PACK-US-WA-land-366); pin inside; about 507.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## CA-6413 Site historique de La Grave Historic Site (CA-QC)
+## CA-6408 Phare de l'Île-Brion Historic Site (CA-QC)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Site patrimonial de La Grave
-- url: https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson
-- record_link: https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson
-- source_url: https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson
+- record_name: Milieu naturel délimité sur un plan de l'Île-Brion
+- url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/24?f=html
+- record_link: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/24/query?where=OBJECTID%3D31&outFields=%2A&f=html
+- source_url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/24/query?geometry=-61.5088%2C47.7819&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Site patrimonial de La Grave' (PACK-CA-QC-land-392); pin inside; about 7.7 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Milieu naturel délimité sur un plan de l'Île-Brion' (WB-CANAD-79); pin inside; about 137.1 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
