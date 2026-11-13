@@ -1,8 +1,8 @@
 {
  "about": "world-key: the HELD build (data/waiting/in/data/world-key/) vs the LIVE key (data/world-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'world-key', 'build': the held build id from data/waiting/in/data/world-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-13 14:17 UTC",
+ "made": "2026-11-13 18:01 UTC",
  "totals": {
-  "gained": 913,
+  "gained": 914,
   "lost": 104,
   "pieces_changed": 4731,
   "grade_changed": 12319
@@ -39,7 +39,7 @@
    "grade_changed": 0
   },
   "BZ": {
-   "gained": 7,
+   "gained": 8,
    "lost": 1,
    "pieces_changed": 35,
    "grade_changed": 0
@@ -654,6 +654,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/BZ-0022"
+  },
+  {
+   "area": "BZ",
+   "ref": "BZ-0024",
+   "name": "Gales Point Wildlife Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "12",
+     "Gales Point",
+     "Protected_Areas_Belize_2015",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/BZ-0024"
   },
   {
    "area": "BZ",
