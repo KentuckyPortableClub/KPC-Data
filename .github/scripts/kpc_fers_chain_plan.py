@@ -188,6 +188,17 @@ def area_fp(links, kind, sts, fers):
         for ol in (root / 'data/outlines' / f'{ol_name}.geojson.gz',
                    root / 'data/released/outlines' / f'{ol_name}.geojson.gz'):
             h.update(ol.as_posix().encode() + b'\0' + (ol.read_bytes() if ol.is_file() else b'missing'))
+        # Quality regrade: .pN outline parts are inputs too
+        parts_dir = root / 'data/outlines'
+        if parts_dir.is_dir():
+            for ol in sorted(parts_dir.glob(f'{ol_name}.p*.geojson.gz')):
+                h.update(ol.as_posix().encode() + b'\0' + ol.read_bytes())
+        # Canada members also hash data/canada-bounds
+        if kind == 'ca-key' or str(st).startswith('CA-'):
+            bounds = root / 'data/canada-bounds'
+            if bounds.is_dir():
+                for bf in sorted(bounds.glob('*.json')):
+                    h.update(bf.as_posix().encode() + b'\0' + bf.read_bytes())
     return h.hexdigest()[:16]
 
 

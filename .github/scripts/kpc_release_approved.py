@@ -13,7 +13,7 @@ ONE batch, run by hand (waiting-room workflow, mode 'release-approved') on the d
     state file goes through the waiting room's own checks (kpc_waiting_room.py) like any bot file: a file that fails is HELD;
   - nothing without an approval moves. Writes data/waiting/released.jsonl (what went out). Never fails.
   python3 kpc_release_approved.py [--dry]"""
-import json, math, os, pathlib, re, sys, time
+import json, os, math, os, pathlib, re, sys, time
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import kpc_waiting_room as W  # noqa: E402
 
@@ -134,27 +134,18 @@ def refused(rel):
     return (W.W / 'in' / rel).exists() and bool(W.keep_line(rel) or W.not_line(rel))
 
 
-# Verified sources for a release (X1, Quality Nov 13). Releases stay owner-run.
-OWNER_SRC_RE = re.compile(r'brandon|kpc owner|kentuckyportableclub', re.I)
-QUALITY_SRC_RE = re.compile(r'\bquality\b|chat\s*11\b', re.I)
-BOT_SRC_RE = re.compile(r'(^|[^a-z0-9])(kpc-bot|github-actions(?:\[bot\])?|dependabot|auto(?:matic)?(?:\s+bot)?|trusted(?:\s+kind)?)([^a-z0-9]|$)', re.I)
-
-
-def item_source_text(it):
-    it = it or {}
-    return ' '.join(str(it.get(k) or '') for k in ('by', 'author', 'who', 'source', 'from', 'grader', 'checked_by', 'signed_by'))
-
-
-def source_ok(it):
-    """(ok, why). Require a verified owner or Quality source; refuse bot-written entries."""
-    text = item_source_text(it)
-    if BOT_SRC_RE.search(text) and not (OWNER_SRC_RE.search(text) or QUALITY_SRC_RE.search(text)):
-        return False, 'bot-written entry: refused (releases stay owner-run)'
-    if OWNER_SRC_RE.search(text) or QUALITY_SRC_RE.search(text):
+def owner_dispatch_ok():
+    """(ok, why). release-approved runs only on workflow_dispatch by the repo owner or a KPC_RELEASE_ACTORS account.
+    Item text ('by: chat 11') does not authorize a release."""
+    event = (os.environ.get('GITHUB_EVENT_NAME') or '').strip()
+    if event and event != 'workflow_dispatch':
+        return False, f'release-approved is owner-dispatch only (event is {event})'
+    actor = (os.environ.get('GITHUB_ACTOR') or '').strip()
+    owner = (os.environ.get('GITHUB_REPOSITORY_OWNER') or '').strip()
+    allowed = (os.environ.get('KPC_RELEASE_ACTORS') or '').split()
+    if actor and (actor == owner or actor in allowed):
         return True, ''
-    if not text.strip():
-        return False, 'no verified owner or Quality source on the item: refused'
-    return False, 'source is not a verified owner or Quality: refused'
+    return False, f'{(actor or "no actor")} is not the repo owner and is not in KPC_RELEASE_ACTORS: refused'
 
 
 def verdict_ok(v):
@@ -204,10 +195,6 @@ NO_CHANGE = re.compile(r'nothing new, changed or gone|no change|nothing (new|cha
 AUTO_GRADE = re.compile(r'\bauto(matic)?\b|\bbot check\b', re.I)
 
 
-TRUST_KINDS = {'campinfo', 'access', 'docs', 'truth', 'campfed', 'campstate', 'trails', 'leads', 'hours', 'campsites', 'cell', 'acres'}   # never 2-fers, keys, POTA, closures
-TRUST_RUN = 0   # X1 (Quality Nov 13): a bot must not release itself. Releases stay owner-run (verified owner or Quality source).
-
-
 def central_date():
     try:
         import datetime as _dt
@@ -224,56 +211,6 @@ def item_kind(it):
         m = re.match(r'([a-z-]+?)(?:-(?:US|CA)-[A-Z]{2})?$', str(it.get('kind') or it.get('what') or ''))
         k = m.group(1) if m else None
     return {'fers': 'fers', 'us-key': 'key', 'ca-key': 'key', 'world-key': 'key'}.get(k, k)
-
-
-def trusted_kinds(items):
-    """kind -> True when its last TRUST_RUN graded items (chat 11's field, newest last) all say YES / PASS and none says NO.
-    TRUST_RUN < 1 (X1): no kind is trusted for bot self-release."""
-    if int(TRUST_RUN or 0) < 1:
-        return set()
-    hist = {}
-    for it in items:
-        k = item_kind(it); v = str(it.get('chat11') or '').strip()
-        if not k or not v: continue
-        if before_cutoff(it): continue   # Nov 2 bot fixes (Quality 3a): trust starts over at the restart
-        ok = verdict_ok(v)[0]
-        # a grade that says nothing changed, or a bot's own automatic check, is not a person's grade: it never builds trust,
-        # but a NO still ends it
-        if ok and (NO_CHANGE.search(v) or AUTO_GRADE.search(str(it.get('by') or '') + ' ' + str(it.get('checked_by') or ''))): continue
-        hist.setdefault(k, []).append(ok)
-    return {k for k, h in hist.items() if k in TRUST_KINDS and k not in getattr(W, 'NEVER_AUTO', set()) and len(h) >= TRUST_RUN and all(h[-TRUST_RUN:])}   # Nov 4 review: never the pile solver
-
-
-def auto_trusted(items, log):
-    """X1: bot self-release is refused. Releases stay owner-run (a chat-11 YES from a verified owner or Quality source)."""
-    print('::notice title=Release approved (trusted)::bot self-release is refused; releases stay owner-run')
-    return
-    import hashlib
-    T = trusted_kinds(items)
-    if not T: print('::notice title=Release approved (trusted)::no bot kind has 3 passed grades in a row yet'); return
-    V = {r['path']: r for r in (W.load(W.W / 'verdicts.json', {}) or {}).get('results') or []}
-    S = W.load(W.W / 'sample-for-chat11.json', {'about': 'files a trusted bot released by itself: chat 11 checks these (1 in 10); a NO item in approved.json ends that kind\'s trust', 'files': []}) or {}
-    n, today = 0, central_date()
-    have = {(x.get('path'), x.get('date')) for x in S.get('files') or []}
-    for rel, r in V.items():
-        if r.get('kind') not in T or r.get('verdict') not in ('PASS', 'LIVE-FILTERED') or not (W.W / 'in' / rel).exists(): continue
-        # Nov 2 bot fixes (Quality 3b): verdicts.json may belong to an OLDER held copy (saves are last-wins). Judge the file that
-        # is held NOW and release only when that verdict passes too.
-        try:
-            now = W.judge(rel, W.load(W.W / 'in' / rel), *W.live_of(rel))
-            vnow = now.get('verdict') if isinstance(now, dict) else None
-        except Exception as e:  # noqa: BLE001
-            vnow = f'could not be checked ({type(e).__name__})'
-        if vnow not in ('PASS', 'LIVE-FILTERED'):
-            log.append({'item': rel, 'result': f'skipped (trusted kind {r["kind"]}): the file held now does not pass the check ({vnow}); the saved PASS was for an older copy'}); continue
-        if not DRY:
-            W.mode_release(rel)
-            if refused(rel): log.append({'item': rel, 'result': REFUSED}); continue
-        n += 1; log.append({'item': rel, 'result': f"released (trusted kind {r['kind']}: last {TRUST_RUN} chat-11 grades since the Nov 2 restart passed; the held file re-checked: {vnow})"})
-        if int(hashlib.md5((rel + today).encode()).hexdigest(), 16) % 10 == 0 and (rel, today) not in have:
-            S.setdefault('files', []).append({'path': rel, 'kind': r['kind'], 'date': today}); have.add((rel, today))
-    if not DRY: json.dump(S, open(W.W / 'sample-for-chat11.json', 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
-    print(f"::notice title=Release approved (trusted)::trusted kinds {', '.join(sorted(T))}: {n} files released by themselves")
 
 
 # ---- PER-PARK KEY RELEASE (chat 10, Nov 2 2026; Brandon OK'd the outside review 6:34 AM: 'good parks go live, the few bad ones
@@ -350,6 +287,10 @@ def per_park_release(A, log, U):
 
 
 def main():
+    ok, why = owner_dispatch_ok()
+    if not ok:
+        print(f'::notice title=Release approved::{why}: nothing moved')
+        return
     A = W.load(W.W / 'approved.json', {}) or {}
     items = A.get('items') or []
     log = []
@@ -358,8 +299,6 @@ def main():
         key = json.dumps(it, sort_keys=True, ensure_ascii=False)
         if key in U: continue
         ok, why = verdict_ok(it.get('chat11'))   # Brandon Oct 29 5:16 PM 'Waiting Room 11 has to approve' = chat 11's own field
-        if ok:
-            ok, why = source_ok(it)   # X1: verified owner or Quality source; bot-written entries are refused
         if ok:
             why = before_cutoff(it); ok = not why   # Nov 2 bot fixes (Quality 8a, rule 22): nothing graded before the 9:37 AM restart moves
         if not ok:
@@ -411,8 +350,6 @@ def main():
                        'previous': 'data/waiting/previous/ (the live copies just replaced)'}, open(W.W / 'released-key.json', 'w', encoding='utf-8'), indent=1)
             open('/tmp/kpc-key-released', 'w').write(' '.join(sts))
             print(f'::notice title=Release approved::key released for {len(sts)} areas: data/waiting/released-key.json written for the 2-fer rerun')
-    try: auto_trusted(items, log)
-    except Exception as e: print(f'::notice title=Release approved (trusted)::skipped ({type(e).__name__}: {e})')  # noqa: BLE001
     if not DRY and any(l.get('item') == 'keyed-parking' for l in log):
         os.environ['WAITING_ON'] = '1'; os.environ['PROMOTE_KINDS'] = 'access'; W.mode_check(True)   # the keyed files pass the same checks as any bot file
     with open(W.W / 'released.jsonl', 'a', encoding='utf-8') as fh:

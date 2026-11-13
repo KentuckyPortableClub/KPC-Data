@@ -7,7 +7,7 @@
   python3 kpc_fers_annotate.py --new DIR --live DIR [--states 'CA-AB CA-SK']
 The new files are updated in place. Offline, never fails a run on a read error of one file (that file is left, others go on).
 """
-import argparse, json, gzip, pathlib, re, sys, time
+import argparse, json, gzip, os, pathlib, re, sys, time
 
 LIVE = ('candidate', 'very tight', 'water only')
 KNOWN = {
@@ -57,7 +57,104 @@ def has_row(rows):
     return any(not str(s.get('status') or '').startswith('gone') for s in rows)
 
 
-def us_trail_on_canada(s):
+def _links_root():
+    env = os.environ.get('LINKS') or os.environ.get('RELEASED_KEYS') or ''
+    if env: return pathlib.Path(env)
+    here = pathlib.Path(__file__).resolve()
+    for cand in (here.parents[3] / 'KPC-Links', here.parents[2] / 'links', pathlib.Path('/workspace/KPC-Links')):
+        if (cand / 'kpc-us-states.json').is_file():
+            return cand
+    return None
+
+
+_US_LAND = None  # list of polygons (list of rings of [lon, lat]); loaded once
+
+
+def us_land_polygons(links=None):
+    """Union of land polygons in Links kpc-us-states.json (field p, including AK). Cached."""
+    global _US_LAND
+    if _US_LAND is not None:
+        return _US_LAND
+    root = pathlib.Path(links) if links else _links_root()
+    path = (root / 'kpc-us-states.json') if root else None
+    out = []
+    if path and path.is_file():
+        try:
+            doc = json.loads(path.read_text(encoding='utf-8'))
+        except (ValueError, OSError):
+            doc = []
+        for st in doc if isinstance(doc, list) else []:
+            for poly in (st.get('p') or []) if isinstance(st, dict) else []:
+                if isinstance(poly, list) and poly:
+                    out.append(poly)
+    _US_LAND = out
+    return _US_LAND
+
+
+def _pt_in_ring(lon, lat, ring):
+    """Even-odd ray test. ring is [[lon, lat], ...]."""
+    n = len(ring)
+    if n < 3: return False
+    inside = False
+    j = n - 1
+    for i in range(n):
+        xi, yi = ring[i][0], ring[i][1]
+        xj, yj = ring[j][0], ring[j][1]
+        if (yi > lat) != (yj > lat):
+            xint = (xj - xi) * (lat - yi) / ((yj - yi) or 1e-21) + xi
+            if lon < xint:
+                inside = not inside
+        j = i
+    return inside
+
+
+def pt_on_us_land(lat, lon, links=None):
+    """True when (lat, lon) is inside a US land polygon (AK included). Tries lon and lon±360 for the AK wrap."""
+    polys = us_land_polygons(links)
+    if not polys:
+        return False
+    for lo in (lon, lon - 360.0, lon + 360.0):
+        for poly in polys:
+            outer = poly[0] if poly else None
+            if not outer or not _pt_in_ring(lo, lat, outer):
+                continue
+            if any(_pt_in_ring(lo, lat, hole) for hole in poly[1:]):
+                continue
+            return True
+    return False
+
+
+def _coords_of_spot(s):
+    """(lat, lon) samples for the spot: the center plus vertices of a line/shape, if any."""
+    out = []
+    c = s.get('center') or s.get('ll')
+    if isinstance(c, (list, tuple)) and len(c) >= 2:
+        try: out.append((float(c[0]), float(c[1])))
+        except (TypeError, ValueError): pass
+    shape = s.get('shape') or s.get('line') or s.get('path')
+    def walk(x):
+        if isinstance(x, (list, tuple)) and len(x) >= 2 and isinstance(x[0], (int, float)):
+            # [lat, lon] (same order as center) or [lon, lat] if |x[0]| > 90 and |x[1]| <= 90
+            a, b = float(x[0]), float(x[1])
+            if abs(a) <= 90 and abs(b) <= 180:
+                out.append((a, b))
+            elif abs(b) <= 90 and abs(a) <= 180:
+                out.append((b, a))
+            return
+        if isinstance(x, (list, tuple)):
+            for y in x:
+                walk(y)
+        elif isinstance(x, dict):
+            walk(x.get('coordinates') or x.get('paths') or x.get('rings'))
+    if shape is not None:
+        try: walk(shape)
+        except (TypeError, ValueError): pass
+    return out
+
+
+def us_trail_on_canada(s, links=None):
+    """True when a CA+US trail has a part that is not on US land after clipping to kpc-us-states.json polygons.
+    AK in-polygon stays US; eastern Canada below 49 that is outside US land is Canadian. Latitude 49 is not the border."""
     refs = [str(r) for r in (s.get('refs') or [])]
     has_ca = any(r.startswith('CA-') for r in refs)
     has_us = any(r.startswith('US-') for r in refs)
@@ -68,11 +165,11 @@ def us_trail_on_canada(s):
     blob = ' '.join(str(s.get(k) or '') for k in ('kind', 'name', 'trail', 'line', 'src', 'source', 'tier', 'about', 'note'))
     is_trail = kind in TRAIL_KIND or re.search(r'\b(trail|nst|nsb|cdt|continental divide)\b', blob, re.I)
     if not is_trail: return False
-    c = s.get('center') or [None, None]
-    try: lat = float(c[0])
-    except (TypeError, ValueError): lat = None
-    if lat is not None and lat >= 49.0: return True
-    return False
+    pts = _coords_of_spot(s)
+    if not pts:
+        return False
+    # clip: any sample that is not on US land means a Canadian remainder
+    return any(not pt_on_us_land(lat, lon, links) for lat, lon in pts)
 
 
 def gone_row(key, live_s, reason):

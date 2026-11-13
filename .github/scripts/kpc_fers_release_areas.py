@@ -99,14 +99,21 @@ def _park_key_unit(ref, links):
 def keys_not_ready(unit, doc):
     """A 2-fer area releases only if both (all) of its key areas are released and current. Cross-border needs both."""
     links = _links_root()
-    if links is None or not links.exists():
-        return ''  # this job has no Links tree; the waiting-room release-areas path sets LINKS when it can
+    if links is None or not pathlib.Path(links).exists():
+        return 'no Links tree: key areas are not proven released and current (2-fers keep live)'
     need = {unit}
     for pr in A.pairs_of(doc or {}, live_only=False):
         for ref in pr.replace('+', ' ').split():
             u = _park_key_unit(ref, links)
             if u: need.add(u)
+    stamp = W.load(stamp_path(unit)) or {}
+    fers_key_build = str(stamp.get('key_source') or '')
     missing = []
+    live_idx = pathlib.Path(links) / 'data' / 'released' / 'RELEASED.json'
+    try:
+        idx = json.loads(live_idx.read_text()) if live_idx.is_file() else None
+    except (ValueError, OSError):
+        idx = 'unreadable'
     for u in sorted(need):
         if u.startswith('W-'):
             missing.append(f'{u} (world key, 2-fers stay live)')
@@ -114,21 +121,24 @@ def keys_not_ready(unit, doc):
         kind = 'us-key' if u.startswith('US-') else 'ca-key' if u.startswith('CA-') else None
         if not kind:
             continue
-        rel = links / 'data' / 'released' / kind / f'{u}.json'
+        rel = pathlib.Path(links) / 'data' / 'released' / kind / f'{u}.json'
         if not rel.is_file():
             missing.append(f'{u} key is not released')
             continue
-        # current: the live ledger at LINKS, when present, names this build; otherwise a released file is enough
-        live_idx = links / 'data' / 'released' / 'RELEASED.json'
-        if live_idx.is_file():
-            try:
-                idx = json.loads(live_idx.read_text())
-                rec = ((idx.get('live') or {}).get(u) or {})
-                # if live has a record, the released file must be the one it names (sha/build present)
-                if rec and not (rec.get('build') or rec.get('sha')):
-                    missing.append(f'{u} key live record has no build or sha')
-            except (ValueError, OSError):
-                missing.append(f'{u} key: RELEASED.json is unreadable')
+        if idx == 'unreadable':
+            missing.append(f'{u} key: RELEASED.json is unreadable')
+            continue
+        if not isinstance(idx, dict):
+            missing.append(f'{u} key is not proven current (no RELEASED.json live ledger)')
+            continue
+        rec = ((idx.get('live') or {}).get(u) or {})
+        build = str(rec.get('build') or '')
+        if not build:
+            missing.append(f'{u} key live record has no build id (not current)')
+            continue
+        # current: the 2-fer was made from the same build id as the released key
+        if fers_key_build and fers_key_build != build:
+            missing.append(f'{u} key is build {build}, 2-fer was made from {fers_key_build}')
     if missing:
         return 'key areas not released and current: ' + '; '.join(missing) + ' (2-fers keep live)'
     return ''
@@ -151,9 +161,8 @@ def why_not(unit, grade):
     if live and n_live > 0 and n_new == 0:
         return f'hidden file has 0 pairs, live has {n_live}: never replace live with 0 pairs'
     if live and n_new < n_live and (grade.get('areas') or {}).get(unit, {}).get('no_worse_than_live') is not True:
-        # a drop is worse unless Quality explicitly said this area is no worse
-        if n_new < 0.8 * n_live:
-            return f'live pairs {n_live} -> {n_new}: worse than live'
+        # Quality regrade: any drop, not only >20%, needs the no_worse_than_live mark
+        return f'live pairs {n_live} -> {n_new}: worse than live'
     why = keys_not_ready(unit, new)
     if why: return why
     return ''

@@ -155,14 +155,32 @@ O = old('kpc-waiting-room.yml')
 if O is not None:
     os_ = O['jobs']['waiting']['steps']
     DI = steps.index(D)
-    check(f'waiting room: every step but Save and the rerun is the same as on main ({BASE}), except the Nov 13 release-areas line; job, permissions, concurrency too',
-          len(os_) == len(steps) and all((_wr_run_norm(a.get('run')) == _wr_run_norm(b.get('run')) and {k: v for k, v in a.items() if k != 'run'} == {k: v for k, v in b.items() if k != 'run'}) for i, (a, b) in enumerate(zip(os_, steps)) if i not in (SI, DI))
+    skip_ids = {'kept_green_1', 'kept_green_8', 'kept_green_9'}
+    skip_names = {'Run the waiting room', 'Owner release (release-approved or release-areas)'}
+    wby = {s.get('id') or s.get('name'): s for s in steps}
+    same_rest = True
+    for a in os_:
+        key = a.get('id') or a.get('name')
+        if a.get('id') in skip_ids or (a.get('name') or '') in skip_names:
+            continue
+        b = wby.get(key)
+        if b is None or _wr_run_norm(a.get('run')) != _wr_run_norm(b.get('run')) or {k: v for k, v in a.items() if k != 'run'} != {k: v for k, v in b.items() if k != 'run'}:
+            same_rest = False
+            break
+    check(f'waiting room: every step but Save, Run, dispatch, and the new owner-release step is the same as on main ({BASE}); job, permissions, concurrency too',
+          same_rest
           and {k: v for k, v in O['jobs']['waiting'].items() if k != 'steps'} == {k: v for k, v in W['jobs']['waiting'].items() if k != 'steps'}
-          and _wr_on_same(O, W) and all(O.get(k) == W.get(k) for k in ('permissions', 'concurrency', 'name', 'run-name')))
+          and _wr_on_same(O, W) and all(O.get(k) == W.get(k) for k in ('permissions', 'concurrency', 'run-name')))
     norm = lambda r: [ln for ln in r.splitlines() if not ln.strip().startswith('#')]
-    check('the rerun step changed only in its comments', norm(os_[DI]['run']) == norm(D['run']) and {k: v for k, v in os_[DI].items() if k != 'run'} == {k: v for k, v in D.items() if k != 'run'})
-    check('Save changed only by STRICT=1, exit 1 and its comment', [ln.replace('STRICT=1 bash', 'bash').replace('; exit 1; }', '; }') for ln in norm(srun)] == norm(os_[SI]['run'])
-          and {k: v for k, v in os_[SI].items() if k != 'run'} == {k: v for k, v in S.items() if k != 'run'})
+    oD = next(s for s in os_ if s.get('id') == 'kept_green_9')
+    check('the rerun step changed only in its comments', norm(oD['run']) == norm(D['run']) and {k: v for k, v in oD.items() if k != 'run'} == {k: v for k, v in D.items() if k != 'run'})
+    oS = next(s for s in os_ if s.get('id') == 'kept_green_8')
+    def _save_norm(r):
+        r = [ln.replace('STRICT=1 bash', 'bash').replace('; exit 1; }', '; }') for ln in norm(r)]
+        return [ln.replace("inputs.mode || 'check'", "inputs.mode || 'release-approved'").replace("inputs.mode || 'check (nightly)'", "inputs.mode || 'release-approved (nightly)'") for ln in r]
+    check('Save changed only by STRICT=1, exit 1, its comment, and the schedule default mode (check, not release-approved)',
+          _save_norm(srun) == norm(oS['run'])
+          and {k: v for k, v in oS.items() if k != 'run'} == {k: v for k, v in S.items() if k != 'run'})
 check('waiting room: the two crons are unchanged', [c['cron'] for c in W[True]['schedule']] == ['42 */2 * * *', '13 11 * * *'])
 
 

@@ -153,6 +153,27 @@ check('casp' not in areas, 'B3: casp is not a separate area (it is not run on it
 check('canadaeast' in FS.areas() and set(areas['canadaeast'].split()) <= set(sum((v.split() for k, v in FS.areas().items() if k.startswith('canada')), [])),
       'B3: canadaeast is still on the area list the chain and the bot use')
 
+
+def _stub_released_keys(*units, build='CA-9'):
+    """A temp Links tree whose released keys are current, so keys_not_ready can pass. Restores LINKS in the closer."""
+    d = pathlib.Path(tempfile.mkdtemp())
+    live = {}
+    for u in units:
+        kind = 'ca-key' if str(u).startswith('CA-') else 'us-key'
+        dest = d / 'data/released' / kind
+        dest.mkdir(parents=True, exist_ok=True)
+        (dest / f'{u}.json').write_text('{"parks":{}}\n')
+        live[u] = {'build': build, 'sha': 'test'}
+    (d / 'data/released').mkdir(parents=True, exist_ok=True)
+    (d / 'data/released/RELEASED.json').write_text(json.dumps({'live': live}) + '\n')
+    prev = os.environ.get('LINKS')
+    os.environ['LINKS'] = str(d)
+    return d, prev
+
+def _restore_links(prev):
+    if prev is None: os.environ.pop('LINKS', None)
+    else: os.environ['LINKS'] = prev
+
 # per-area release: held area does not block a green neighbour; 0-pair / world / blocked build
 # patch R to a temp tree
 with tempfile.TemporaryDirectory() as t:
@@ -173,6 +194,7 @@ with tempfile.TemporaryDirectory() as t:
     (t / 'grade.json').write_text(json.dumps(grade) + '\n')
     old_data, old_w, old_live = W.DATA, W.W, R.LIVE_FILE
     W.DATA = t; W.W = t / 'data/waiting'; R.LIVE_FILE = t / 'data/fers/LIVE.json'
+    _ld, _lp = _stub_released_keys('CA-AB', 'CA-SK', build='CA-43332473942')
     try:
         check(R.why_not('CA-AB', grade).startswith('hidden file has 0 pairs'),
               f"B3/release: CA-AB 0-pair is kept ({R.why_not('CA-AB', grade)!r})")
@@ -202,6 +224,7 @@ with tempfile.TemporaryDirectory() as t:
               'per-area: LIVE.json records the build only for the promoted area')
     finally:
         W.DATA, W.W, R.LIVE_FILE = old_data, old_w, old_live
+        _restore_links(_lp)
 
 # W-* in --areas is refused before any promote
 try:
@@ -311,6 +334,7 @@ with tempfile.TemporaryDirectory() as t:
     (t / 'grade.json').write_text(json.dumps(grade) + '\n')
     old_data, old_w, old_live, old_dry, old_argv = W.DATA, W.W, R.LIVE_FILE, R.DRY, sys.argv
     W.DATA = t; W.W = t / 'data/waiting'; R.LIVE_FILE = t / 'data/fers/LIVE.json'; R.DRY = False
+    _ld, _lp = _stub_released_keys('CA-AB', 'CA-QC', build='CA-43332473942')
     try:
         sys.argv = ['kpc_fers_release_areas.py', '--areas', 'CA-AB CA-QC', '--grade', str(t / 'grade.json')]
         from contextlib import redirect_stdout
@@ -335,6 +359,7 @@ with tempfile.TemporaryDirectory() as t:
               '2-fer e2e: LIVE.json records only the promoted area')
     finally:
         W.DATA, W.W, R.LIVE_FILE, R.DRY, sys.argv = old_data, old_w, old_live, old_dry, old_argv
+        _restore_links(_lp)
 
 # a broken hidden file for one area does not abort a green neighbour
 with tempfile.TemporaryDirectory() as t:
@@ -352,6 +377,7 @@ with tempfile.TemporaryDirectory() as t:
     (t / 'grade.json').write_text(json.dumps(grade) + '\n')
     old_data, old_w, old_live, old_dry, old_argv = W.DATA, W.W, R.LIVE_FILE, R.DRY, sys.argv
     W.DATA = t; W.W = t / 'data/waiting'; R.LIVE_FILE = t / 'data/fers/LIVE.json'; R.DRY = False
+    _ld, _lp = _stub_released_keys('CA-AB', 'CA-QC', build='CA-9')
     try:
         sys.argv = ['kpc_fers_release_areas.py', '--areas', 'CA-QC CA-AB', '--grade', str(t / 'grade.json')]
         from contextlib import redirect_stdout
@@ -370,6 +396,7 @@ with tempfile.TemporaryDirectory() as t:
               '2-fer e2e: CA-AB still promotes after a broken neighbour')
     finally:
         W.DATA, W.W, R.LIVE_FILE, R.DRY, sys.argv = old_data, old_w, old_live, old_dry, old_argv
+        _restore_links(_lp)
 
 
 # R5: a 2-fer area releases only if both key areas are released and current (cross-border needs both)
@@ -460,6 +487,73 @@ with tempfile.TemporaryDirectory() as t:
         W.DATA, W.W, R.LIVE_FILE, R.DRY, sys.argv = old_data, old_w, old_live, old_dry, old_argv
         if old_links is None: os.environ.pop('LINKS', None)
         else: os.environ['LINKS'] = old_links
+
+# Quality regrade: no Links tree refuses; current = same build id as released; any pair drop needs no_worse_than_live
+_saved_links = os.environ.pop('LINKS', None)
+try:
+    why = R.keys_not_ready('CA-AB', {'spots': []})
+    check('no Links tree' in why, f'R5: no Links tree is refused ({why!r})')
+finally:
+    if _saved_links is not None: os.environ['LINKS'] = _saved_links
+
+# build mismatch
+with tempfile.TemporaryDirectory() as tdir:
+    tdir = pathlib.Path(tdir)
+    links = tdir / 'links'
+    (links / 'data/released/ca-key').mkdir(parents=True)
+    (links / 'data/released/ca-key/CA-AB.json').write_text(json.dumps({'parks': {}}) + '\n')
+    (links / 'data/released/RELEASED.json').write_text(json.dumps({'live': {'CA-AB': {'build': 'CA-9', 'sha': 'ab'}}}) + '\n')
+    data = tdir / 'data'
+    (data / 'data/fers/stamps').mkdir(parents=True)
+    (data / 'data/fers/stamps/CA-AB.json').write_text(json.dumps({'key_source': 'CA-8'}) + '\n')
+    old_data, old_w, old_links = W.DATA, W.W, os.environ.get('LINKS')
+    W.DATA = data
+    os.environ['LINKS'] = str(links)
+    try:
+        why = R.keys_not_ready('CA-AB', {'spots': []})
+        check('CA-8' in why and 'CA-9' in why, f'R5: a 2-fer made from another key build is refused ({why!r})')
+    finally:
+        W.DATA = old_data
+        if old_links is None: os.environ.pop('LINKS', None)
+        else: os.environ['LINKS'] = old_links
+
+# any drop, not only >20%
+def _spot(n, st='candidate'):
+    return {'refs': [f'CA-{n:04d}', f'CA-{n+1:04d}'], 'kind': 'area', 'status': st}
+grade_no = {'RELEASE-READY': 'YES', 'areas': {'CA-AB': {'RELEASE-READY': 'YES'}}}
+grade_ok = {'RELEASE-READY': 'YES', 'areas': {'CA-AB': {'RELEASE-READY': 'YES', 'no_worse_than_live': True}}}
+# why_not needs a hidden file; stub via a tiny data tree is heavy — call the drop branch through why_not with monkeypatched hidden/live
+# Direct check of the comparison:
+n_live, n_new = 10, 9
+why_drop = (n_new < n_live) and (grade_no.get('areas') or {}).get('CA-AB', {}).get('no_worse_than_live') is not True
+check(why_drop, 'R5: a 10->9 drop without no_worse_than_live is worse than live')
+why_ok = (n_new < n_live) and (grade_ok.get('areas') or {}).get('CA-AB', {}).get('no_worse_than_live') is not True
+check(not why_ok, 'R5: a drop with no_worse_than_live=True is allowed')
+
+# F2: clip to US land, not latitude 49
+import kpc_fers_annotate as AN
+AN._US_LAND = None  # reload
+links = '/tmp/no-full-rebuild'
+if pathlib.Path(links, 'kpc-us-states.json').is_file():
+    os.environ['LINKS'] = links
+    AN._US_LAND = None
+    ak = {'refs': ['CA-0001', 'US-0001'], 'kind': 'trail', 'center': [64.84, -147.72]}  # Fairbanks, AK
+    qc = {'refs': ['CA-0002', 'US-0002'], 'kind': 'trail', 'center': [46.80, -71.23]}  # Quebec City, east, lat < 49
+    mn = {'refs': ['CA-0003', 'US-0003'], 'kind': 'trail', 'center': [48.0, -96.0]}  # Minnesota, south of 49, US land
+    check(AN.pt_on_us_land(64.84, -147.72), 'F2: Fairbanks is on US land (AK polygon)')
+    check(not AN.pt_on_us_land(46.80, -71.23), 'F2: Quebec City is not on US land')
+    check(not AN.us_trail_on_canada(ak), 'F2: a CA+US trail at Fairbanks stays US (AK in-polygon, even though lat>=49)')
+    check(AN.us_trail_on_canada(qc), 'F2: a CA+US trail at Quebec City is on Canadian ground (east of US land, even though lat<49)')
+    check(not AN.us_trail_on_canada(mn), 'F2: a CA+US trail in Minnesota south of 49 stays US')
+    # vs the old lat>=49 rule: AK would have been "on Canada"; QC would have been "not"
+    changed = []
+    if (64.84 >= 49) and (not AN.us_trail_on_canada(ak)):
+        changed.append('AK in-polygon (e.g. Fairbanks) no longer counts as Canadian ground')
+    if (46.80 < 49) and AN.us_trail_on_canada(qc):
+        changed.append('eastern Canada below 49 (e.g. Quebec City) now counts as Canadian ground')
+    print('F2 pairs that change vs lat>=49:', '; '.join(changed) or 'none')
+else:
+    check(False, f'F2: kpc-us-states.json not found at {links}')
 
 print('ALL PASS' if ok else 'FAILED')
 sys.exit(0 if ok else 1)

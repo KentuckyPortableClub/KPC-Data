@@ -72,17 +72,42 @@ jobs:
           WAITING_ON: ${{ vars.WAITING_ON }}
         run: |
           cd kpcdata
-          M="${{ inputs.mode || 'release-approved' }}"
+          M="${{ inputs.mode || 'check' }}"
           case "$M" in
             replay) python3 .github/scripts/kpc_waiting_room.py replay ;;
             check) python3 .github/scripts/kpc_waiting_room.py check --promote ;;
             undo) python3 .github/scripts/kpc_waiting_room.py undo "${{ inputs.target }}" ;;
             undo-bot) python3 .github/scripts/kpc_waiting_room.py undo-bot "${{ inputs.target }}" "${{ inputs.area }}" ;;
             release) python3 .github/scripts/kpc_waiting_room.py release "${{ inputs.target }}" ;;
-            release-areas) python3 .github/scripts/kpc_fers_release_areas.py --areas "${{ inputs.areas }}" --grade "${{ inputs.grade }}" ;;
             questions) python3 .github/scripts/kpc_key_questions.py ;;
-            release-approved) python3 .github/scripts/kpc_release_approved.py ;;   # Brandon 3:02 PM: one batch of what chat 11 (+ chat 2) approved, on the day chat 8 + 11 PASS the key   # RULE SHEET G step 2: held key pieces -> one question each for chat 11
+            release-approved|release-areas)
+              echo "::notice title=Waiting room::$M is owner-dispatch only: it runs in the next step, never on a schedule and never inside continue-on-error"
+              ;;
             *) echo "::notice title=Waiting room::unknown mode $M" ;;
+          esac
+      - name: Owner release (release-approved or release-areas)
+        if: ${{ github.event_name == 'workflow_dispatch' && (inputs.mode == 'release-approved' || inputs.mode == 'release-areas') }}
+        env:
+          LINKS: ../links
+          NET: '1'
+          WAITING_ON: ${{ vars.WAITING_ON }}
+          KPC_RELEASE_ACTORS: ${{ vars.KPC_RELEASE_ACTORS }}
+        run: |
+          cd kpcdata
+          ACTOR="${{ github.actor }}"
+          OWNER="${{ github.repository_owner }}"
+          ALLOWED="${{ vars.KPC_RELEASE_ACTORS }}"
+          case " $ALLOWED " in *" $ACTOR "*) ;; *)
+            if [ "$ACTOR" != "$OWNER" ] || [ -z "$ACTOR" ]; then
+              echo "::error title=Release::$ACTOR is not the repo owner and is not in KPC_RELEASE_ACTORS. Nothing was released."
+              exit 1
+            fi
+          ;; esac
+          M="${{ inputs.mode }}"
+          case "$M" in
+            release-approved) python3 .github/scripts/kpc_release_approved.py ;;
+            release-areas) python3 .github/scripts/kpc_fers_release_areas.py --areas "${{ inputs.areas }}" --grade "${{ inputs.grade }}" ;;
+            *) echo "::error title=Release::unknown mode $M"; exit 1 ;;
           esac
       - name: The look-up branch (AUTO-3 files save-map requests there)
         if: ${{ (github.event_name == 'schedule' || inputs.as_schedule) || inputs.mode == 'release-approved' }}
@@ -147,10 +172,10 @@ jobs:
         run: |
           cd kpcdata
           D="data/waiting data/status"
-          if [ "${{ inputs.mode || 'release-approved' }}" != replay ]; then D="data"; fi
+          if [ "${{ inputs.mode || 'check' }}" != replay ]; then D="data"; fi
           # Nov 12 (KPC owner, 2026-11-11; Quality's #72 follow-up): STRICT=1 as in kpc-fers.yml, so a push that did not land exits 1 and
           # this step goes red (its outcome is failure, so the 2-fer rerun below never starts). Without it the script only printed a notice.
-          STRICT=1 bash ../links/.github/scripts/kpc_push_data.sh . "waiting room: ${{ inputs.mode || 'release-approved (nightly)' }} ${{ inputs.target }}" $D || { kpc_rc=$?; echo "::error title=Save::a save or push failed; this run is NOT saved, the next run tries again (exit $kpc_rc)"; echo "Save - a save or push failed; this run is NOT saved, the next run tries again (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit 1; }
+          STRICT=1 bash ../links/.github/scripts/kpc_push_data.sh . "waiting room: ${{ inputs.mode || 'check (nightly)' }} ${{ inputs.target }}" $D || { kpc_rc=$?; echo "::error title=Save::a save or push failed; this run is NOT saved, the next run tries again (exit $kpc_rc)"; echo "Save - a save or push failed; this run is NOT saved, the next run tries again (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit 1; }
       - name: A key went live -> the 2-fers rerun for those states (chat 2 BOT E reads data/waiting/released-key.json)
         # Nov 12 (a cancelled world key run still committed, KPC-Links): was if: always(), so a CANCELLED run, or a run whose Save never
         # reached main, still started kpc-fers-pending (force=yes) for a key that was not live. Now: never on a cancel, only after Save

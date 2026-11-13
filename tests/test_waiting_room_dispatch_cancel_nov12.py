@@ -168,9 +168,23 @@ if r.returncode == 0:
     # Nov 12 follow-up (KPC owner, 2026-11-11): Save (SI) now runs kpc_push_data.sh with STRICT=1 and exits 1 on a failed save;
     # that change is checked in tests/test_waiting_room_followups_nov12.py, so Save is left out of this compare too.
     same = len(os_) == len(steps) and all((_wr_run_norm(a.get('run')) == _wr_run_norm(b.get('run')) and {k: v for k, v in a.items() if k != 'run'} == {k: v for k, v in b.items() if k != 'run'}) for i, (a, b) in enumerate(zip(os_, steps)) if i not in (DI, SI))
-    check('every other step (but Save, see test_waiting_room_followups_nov12), the job settings, the triggers, permissions and concurrency are the same as on main (da499ab), except the Nov 13 release-areas mode',
+    # Quality regrade: schedule defaults to check; release-approved / release-areas moved to an owner-dispatch step.
+    # The dispatch step (DI) and Save (SI) are already compared separately in this test / followups.
+    skip_ids = {'kept_green_1', 'kept_green_8', 'kept_green_9'}  # Run, Save, dispatch
+    skip_names = {'Run the waiting room', 'Owner release (release-approved or release-areas)'}
+    same = True
+    wnames = {s.get('id') or s.get('name'): s for s in steps}
+    for a in os_:
+        key = a.get('id') or a.get('name')
+        if a.get('id') in skip_ids or (a.get('name') or '') in skip_names:
+            continue
+        b = wnames.get(key)
+        if b is None or {k: v for k, v in a.items() if k != 'run'} != {k: v for k, v in b.items() if k != 'run'} or _wr_run_norm(a.get('run')) != _wr_run_norm(b.get('run')):
+            same = False
+            break
+    check('every other step (but Save, Run, dispatch, and the new owner-release step), the job settings, the triggers, permissions and concurrency are the same as on main, except the Nov 13 owner-dispatch changes',
           same and {k: v for k, v in O['jobs']['waiting'].items() if k != 'steps'} == {k: v for k, v in J.items() if k != 'steps'}
-          and _wr_on_same(O, W) and all(O.get(k) == W.get(k) for k in ('permissions', 'concurrency', 'name', 'run-name')))
+          and _wr_on_same(O, W) and all(O.get(k) == W.get(k) for k in ('permissions', 'concurrency', 'run-name')))
     check('the old step was if: always() (the hole this fixes)', os_[DI].get('if') == 'always()')
 else:
     print('INFO da499ab not in this clone: the compare with main is skipped')
