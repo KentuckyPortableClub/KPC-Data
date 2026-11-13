@@ -1,0 +1,128 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "canadabc",
+ "states": [
+  "CA-BC",
+  "CA-YT",
+  "CA-NT",
+  "CA-NU"
+ ],
+ "since": "2026-11-12",
+ "date": "2026-11-13 04:13 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "water not checked: CA-BC: 52 rows (the USGS water map / files had no answer there): never READY with one",
+  "water not checked: CA-YT: 3 rows (the USGS water map / files had no answer there): never READY with one",
+  "water not checked: CA-NT: 1 rows (the USGS water map / files had no answer there): never READY with one",
+  "water not checked: CA-NU: 2 rows (the USGS water map / files had no answer there): never READY with one"
+ ],
+ "known_answers": "19/19 on 2026-11-02",
+ "missing_check": {
+  "FOUND": 0,
+  "DROPPED": 72,
+  "NEVER LOOKED AT": 0
+ },
+ "never_looked_at": {
+  "counted": 0,
+  "no_official_outline": 0,
+  "expected": 72,
+  "limit": "10%",
+  "by_reason": {}
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-11-13",
+   "pairs tested": 2315,
+   "pairs whose boxes touch": 2315
+  },
+  "pass2": {
+   "agree with the pass before": 1038,
+   "date": "2026-11-13",
+   "pairs tested": 289
+  },
+  "pass3": {
+   "agree with the pass before": 622,
+   "date": "2026-11-13",
+   "pairs tested": 269
+  },
+  "pass5": {
+   "checked": 186,
+   "date": "2026-11-13",
+   "pairs tested": 0,
+   "still not checked": 60
+  }
+ },
+ "files": {
+  "CA-BC": "data/fers/CA-BC.json",
+  "CA-YT": "data/fers/CA-YT.json",
+  "CA-NT": "data/fers/CA-NT.json",
+  "CA-NU": "data/fers/CA-NU.json"
+ },
+ "CA-BC": {
+  "rows": 959,
+  "live": 141,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 52,
+   "the official outline of Twin Falls Tea House National Histor": 1,
+   "both parks join the same official records and both POTA pins": 6,
+   "the official outline of Stewart Farm Historic Site could not": 1,
+   "one record covers two parks": 1,
+   "the official outline of Riverview Park could not be read in": 1,
+   "both parks join the same official records but a POTA pin is": 8,
+   "this spot is 138 km from Tweedsmuir South Provincial Park's": 1,
+   "the official outline of Fisgard Lighthouse National Historic": 1
+  },
+  "dropped": 403,
+  "merged": 343
+ },
+ "water_weak": {
+  "CA-BC": 52,
+  "CA-YT": 3,
+  "CA-NT": 1,
+  "CA-NU": 2
+ },
+ "CA-YT": {
+  "rows": 63,
+  "live": 3,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 3,
+   "this spot is 111 km from Tatshenshini-Alsek Provincial Park'": 1,
+   "both parks join the same official records and both POTA pins": 1
+  },
+  "dropped": 25,
+  "merged": 30
+ },
+ "CA-NT": {
+  "rows": 40,
+  "live": 1,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 1
+  },
+  "dropped": 27,
+  "merged": 11
+ },
+ "CA-NU": {
+  "rows": 267,
+  "live": 4,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "water not checked": 2
+  },
+  "dropped": 134,
+  "merged": 127
+ },
+ "states_ready": [],
+ "states_held": [
+  "CA-BC",
+  "CA-NT",
+  "CA-NU",
+  "CA-YT"
+ ]
+}
