@@ -14,8 +14,8 @@
     "tries": 1
    },
    "southeast": {
-    "fp": "7a538f2b1c0205f1",
-    "planned": "2026-11-13 10:21 UTC",
+    "fp": "24d60cbdda0d5282",
+    "planned": "2026-11-13 22:01 UTC",
     "tries": 1
    },
    "pacific": {
@@ -24,14 +24,14 @@
     "tries": 1
    },
    "midatlantic": {
-    "fp": "62d5014922f2e244",
-    "planned": "2026-11-13 10:21 UTC",
+    "fp": "6c54f018aee08dd6",
+    "planned": "2026-11-13 22:01 UTC",
     "tries": 1
    },
    "newyork": {
-    "fp": "fe99adc49ee23864",
-    "planned": "2026-11-13 10:21 UTC",
-    "tries": 2
+    "fp": "80f0208c7b0fe06e",
+    "planned": "2026-11-13 22:01 UTC",
+    "tries": 1
    },
    "newengland": {
     "fp": "239b1b4b49db6d5b",
@@ -50,19 +50,21 @@
    }
   },
   "waiting": {
-   "southeast": "line started 2026-11-13 10:21 UTC: waiting for its result",
-   "midatlantic": "the memory guard stopped its line on these key files: needs a smaller cut or more memory (not started again on the same cut): a person looks",
-   "newyork": "the line did not finish READY after 2 starts on these key files (see data/fers/line-newyork.json): a person looks",
+   "newengland": "next start (at most 3 areas at a time)",
+   "greatlakes": "next start (at most 3 areas at a time)",
+   "plains": "next start (at most 3 areas at a time)",
    "southcentral": "next start (at most 3 areas at a time)",
    "mountain": "next start (at most 3 areas at a time)",
    "southwest": "next start (at most 3 areas at a time)",
-   "pacific": "next start (at most 3 areas at a time)"
+   "pacific": "next start (at most 3 areas at a time)",
+   "southinland": "next start (at most 3 areas at a time)",
+   "appalachia": "next start (at most 3 areas at a time)",
+   "lakeswest": "next start (at most 3 areas at a time)"
   },
   "ran": [
    "southeast",
-   "newengland",
-   "greatlakes",
-   "plains"
+   "midatlantic",
+   "newyork"
   ]
  },
  "ca-key": {
