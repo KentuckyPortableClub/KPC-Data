@@ -47,7 +47,7 @@ Updated 2026-11-13. Every fact in <area>.json carries its source url, read date 
 | US-MT | 389 | 30 | 311 | 0 | 0 | 0 | 0 | 0 | 48 | 0 | 78 | 0 |
 | US-NV | 87 | 24 | 34 | 0 | 0 | 0 | 0 | 7 | 22 | 11 | 46 | 0 |
 | US-AZ | 198 | 1 | 168 | 0 | 16 | 7 | 0 | 2 | 4 | 0 | 28 | 0 |
-| US-NM | 136 | 51 | 78 | 0 | 0 | 0 | 0 | 0 | 7 | 1 | 58 | 0 |
+| US-NM | 136 | 51 | 78 | 0 | 0 | 4 | 0 | 0 | 3 | 1 | 58 | 0 |
 | US-CA | 1190 | 50 | 752 | 0 | 7 | 14 | 352 | 0 | 15 | 4 | 81 | 0 |
 | US-OR | 496 | 47 | 410 | 0 | 0 | 14 | 0 | 1 | 24 | 8 | 85 | 0 |
 | US-WA | 363 | 24 | 212 | 1 | 15 | 0 | 66 | 0 | 45 | 3 | 70 | 0 |
@@ -68,7 +68,7 @@ Updated 2026-11-13. Every fact in <area>.json carries its source url, read date 
 - dnr.alaska.gov: 113 campgrounds · robots.txt says no
 - cpw.state.co.us: 97 campgrounds · host resting
 - reservemn.usedirect.com: 94 campgrounds · robots.txt says no
-- www.fs.usda.gov: 67 campgrounds · host resting
+- www.fs.usda.gov: 71 campgrounds · host resting
 - www.ksoutdoors.gov: 63 campgrounds · robots.txt says no
 - dnr.wisconsin.gov: 58 campgrounds · host resting
 - reserve.floridastateparks.org: 55 campgrounds · robots.txt says no

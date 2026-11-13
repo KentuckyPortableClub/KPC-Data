@@ -710,8 +710,8 @@
     "no_page": 0,
     "not_official": 0,
     "ok": 51,
-    "other": 7,
-    "resting": 0,
+    "other": 3,
+    "resting": 4,
     "robots": 0,
     "with_booking": 58,
     "with_elevation": 0,
@@ -720,7 +720,7 @@
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-06"
+   "updated": "2026-11-13"
   },
   "US-NV": {
    "camps": 88,
@@ -1149,7 +1149,7 @@
   "US-NE": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-NH": "FCC listAsOfDates: robots.txt says no",
   "US-NJ": "FCC listAsOfDates: robots.txt says no",
-  "US-NM": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-NM": "FCC listAsOfDates: robots.txt says no",
   "US-NV": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-NY": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-OH": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1454,9 +1454,9 @@
     "carriers": null,
     "files": [],
     "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "status": "FCC listAsOfDates: robots.txt says no"
    },
-   "read": "2026-11-06"
+   "read": "2026-11-13"
   },
   "US-NV": {
    "cell": {
@@ -1623,7 +1623,6 @@
  },
  "hosts": {
   "dep.nj.gov": 1794571755.9843144,
-  "parks.ky.gov": 1794568343.840061,
   "www.fs.usda.gov": 1794652532.4902353
  },
  "ky_check": {
@@ -2573,11 +2572,11 @@
  },
  "last": {
   "areas": [
-   "US-MS"
+   "US-NM"
   ],
   "fcc_token": true,
   "manners": {
-   "dropped_queued": 203,
+   "dropped_queued": 136,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2590,26 +2589,26 @@
     ]
    ],
    "host_rule": 0,
-   "requests": 196,
+   "requests": 108,
    "rested": 4,
-   "robots": 3,
+   "robots": 2,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 24,
-   "camps": 203,
+   "browser": 1,
+   "camps": 137,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 25,
-   "needs_key": 51,
-   "no_page": 13,
-   "not_official": 6,
-   "ok": 42,
-   "pages_read": 82,
+   "needs_browser": 1,
+   "needs_key": 79,
+   "no_page": 2,
+   "not_official": 0,
+   "ok": 52,
+   "pages_read": 102,
    "resting": 4,
    "ridb_calls": 0,
-   "robots": 2,
+   "robots": 0,
    "skipped_fresh": 0
   },
   "when": "2026-11-13"
