@@ -1,125 +1,51 @@
 {
- "checked": "2026-11-12 20:08 UTC",
- "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43281354640",
+ "checked": "2026-11-13 04:14 UTC",
+ "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43332473942",
  "areas": {
   "CA-AB": {
-   "gained": [],
+   "gained": [
+    "CA-0110+US-4558",
+    "CA-0664+CA-0719+CA-0726",
+    "CA-2956+CA-2958",
+    "CA-3008+CA-6112",
+    "CA-6112+CA-6588"
+   ],
    "lost": [
     {
-     "pair": "CA-0005+CA-0040",
-     "now": "pass 1"
-    },
-    {
      "pair": "CA-0005+CA-0045",
-     "now": "pass 1"
+     "now": "merged into one row: CA-0005+CA-0045@area@51.088,-115.920"
     },
     {
      "pair": "CA-0005+CA-0117",
-     "now": "pass 1"
-    },
-    {
-     "pair": "CA-0005+CA-0726",
-     "now": "pass 1"
+     "now": "merged into one row: CA-0005+CA-0117@area@51.570,-116.454"
     },
     {
      "pair": "CA-0005+CA-3829",
-     "now": "pass 1"
-    },
-    {
-     "pair": "CA-0040+CA-3119",
-     "now": "pass 1"
-    },
-    {
-     "pair": "CA-0040+CA-3161",
-     "now": "pass 1"
-    },
-    {
-     "pair": "CA-0040+CA-3163",
-     "now": "pass 1"
-    },
-    {
-     "pair": "CA-0040+CA-3167",
-     "now": "pass 1"
-    },
-    {
-     "pair": "CA-0040+CA-3582",
-     "now": "pass 1"
-    },
-    {
-     "pair": "CA-0040+CA-3845",
-     "now": "pass 1"
+     "now": "not sure: water not checked (the USGS water map did not answer): run pass 5"
     },
     {
      "pair": "CA-0040+CA-3846",
-     "now": "pass 1"
-    },
-    {
-     "pair": "CA-0040+CA-3847",
-     "now": "pass 1"
+     "now": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coars"
     },
     {
      "pair": "CA-0109+CA-0691",
      "now": "gone"
     },
     {
-     "pair": "CA-0110+CA-0691",
-     "now": "pass 1"
-    },
-    {
-     "pair": "CA-0115+CA-2932",
-     "now": "pass 1"
-    },
-    {
-     "pair": "CA-0115+CA-3118",
-     "now": "pass 1"
-    },
-    {
      "pair": "CA-0636+CA-2949",
      "now": "not sure: both parks join the same official records but a POTA pin is outside the shared o"
     },
     {
-     "pair": "CA-0647+CA-6112",
-     "now": "pass 1"
-    },
-    {
-     "pair": "CA-0664+CA-0719",
-     "now": "pass 1"
-    },
-    {
      "pair": "CA-0664+CA-0726",
-     "now": "pass 1"
+     "now": "not sure: water not checked (the USGS water map did not answer): run pass 5"
     },
     {
      "pair": "CA-0671+CA-3123",
      "now": "not sure: both parks join the same official records and both POTA pins are inside it, but "
     },
     {
-     "pair": "CA-0672+CA-3125",
-     "now": "pass 1"
-    },
-    {
-     "pair": "CA-0674+CA-6112",
-     "now": "pass 1"
-    },
-    {
-     "pair": "CA-0677+CA-3017",
-     "now": "pass 1"
-    },
-    {
-     "pair": "CA-0685+CA-6112",
-     "now": "pass 1"
-    },
-    {
-     "pair": "CA-1177+CA-6112",
-     "now": "pass 1"
-    },
-    {
      "pair": "CA-1182+CA-3063",
      "now": "gone"
-    },
-    {
-     "pair": "CA-2947+CA-6112",
-     "now": "pass 1"
     },
     {
      "pair": "CA-2956+CA-2957",
@@ -130,35 +56,46 @@
      "now": "gone"
     },
     {
-     "pair": "CA-2971+CA-2972",
-     "now": "pass 1"
-    },
-    {
-     "pair": "CA-2971+CA-3159",
-     "now": "pass 1"
-    },
-    {
      "pair": "CA-3026+CA-3027",
      "now": "not sure: both parks join the same official records and both POTA pins are inside it, but "
-    },
-    {
-     "pair": "CA-3116+CA-3118",
-     "now": "pass 1"
-    },
-    {
-     "pair": "CA-5522+CA-6112",
-     "now": "pass 1"
-    },
-    {
-     "pair": "CA-6112+CA-6587",
-     "now": "pass 1"
     }
    ],
    "live_before": 40,
-   "live_now": 3,
+   "live_now": 33,
    "touch_held": [],
    "touch_pin_only": [],
-   "water_bank": [],
+   "water_bank": [
+    {
+     "pair": "CA-0005+CA-0045",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0005+CA-0117",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0005+CA-3829",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0115+CA-2988",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    },
+    {
+     "pair": "CA-0115+CA-3118",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    },
+    {
+     "pair": "CA-0664+CA-0726",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    }
+   ],
    "same_land_one_record": [
     {
      "pair": "CA-0683+CA-1197",
@@ -169,19 +106,18 @@
      "status": "candidate"
     },
     {
-     "pair": "CA-1174+CA-2994",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-3057+CA-5533",
-     "status": "candidate"
-    },
-    {
      "pair": "CA-3057+CA-5533",
      "status": "candidate"
     }
    ],
-   "near_threshold": [],
+   "near_threshold": [
+    {
+     "pair": "CA-0040+CA-3161",
+     "wide_m": 53,
+     "near": "50 yd (very tight)",
+     "status": "candidate"
+    }
+   ],
    "preline": {
     "tag": "canadawest",
     "verdict": "GO",
@@ -192,7 +128,123 @@
   },
   "CA-BC": {
    "gained": [
-    "CA-3657+CA-3658"
+    "CA-0045+CA-0117",
+    "CA-0045+CA-3435",
+    "CA-0045+CA-3829",
+    "CA-0066+CA-3205",
+    "CA-0066+CA-3604",
+    "CA-0066+CA-3664",
+    "CA-0066+CA-4207",
+    "CA-0066+CA-5344",
+    "CA-0105+CA-4253",
+    "CA-0105+CA-4254",
+    "CA-0105+CA-4289",
+    "CA-0445+CA-3745",
+    "CA-0697+CA-4080",
+    "CA-0700+CA-3824",
+    "CA-0707+CA-4004",
+    "CA-0709+CA-0712",
+    "CA-0711+CA-4065",
+    "CA-0713+CA-3764",
+    "CA-0714+CA-4116",
+    "CA-0719+CA-0726",
+    "CA-0720+CA-4233",
+    "CA-0723+CA-1214",
+    "CA-0723+CA-3231",
+    "CA-0723+CA-3810",
+    "CA-0733+CA-3717",
+    "CA-0733+CA-4149",
+    "CA-0736+CA-3208",
+    "CA-0736+CA-4041",
+    "CA-0736+CA-4094",
+    "CA-0736+CA-4095",
+    "CA-0736+CA-4096",
+    "CA-0737+CA-3551",
+    "CA-0738+CA-4151",
+    "CA-0741+CA-4177",
+    "CA-0742+US-4592",
+    "CA-0746+CA-3346",
+    "CA-1219+CA-3201",
+    "CA-1219+CA-4105",
+    "CA-3052+CA-3657",
+    "CA-3052+CA-3658",
+    "CA-3167+CA-3657",
+    "CA-3167+CA-3658",
+    "CA-3181+CA-4236",
+    "CA-3181+CA-4237",
+    "CA-3185+CA-4108",
+    "CA-3188+CA-3322",
+    "CA-3188+CA-3980",
+    "CA-3191+CA-4299",
+    "CA-3191+US-4448",
+    "CA-3217+CA-3583",
+    "CA-3222+CA-3322",
+    "CA-3228+CA-3796",
+    "CA-3228+CA-4214",
+    "CA-3228+CA-4215",
+    "CA-3249+CA-3884",
+    "CA-3303+CA-4092",
+    "CA-3308+CA-4116",
+    "CA-3316+CA-4201",
+    "CA-3327+CA-3329",
+    "CA-3327+US-0055",
+    "CA-3328+CA-5346",
+    "CA-3344+CA-3665",
+    "CA-3347+CA-4241",
+    "CA-3360+CA-3452",
+    "CA-3361+CA-3452",
+    "CA-3391+CA-3392",
+    "CA-3417+CA-4215",
+    "CA-3428+CA-3461",
+    "CA-3452+CA-3848",
+    "CA-3456+CA-3511",
+    "CA-3456+CA-3512",
+    "CA-3481+CA-3944",
+    "CA-3488+CA-4181",
+    "CA-3510+CA-3541",
+    "CA-3511+CA-4139",
+    "CA-3512+CA-4139",
+    "CA-3547+CA-3673",
+    "CA-3548+CA-3673",
+    "CA-3584+CA-3804",
+    "CA-3593+CA-4122",
+    "CA-3594+CA-3595",
+    "CA-3597+CA-3837",
+    "CA-3615+CA-4243",
+    "CA-3621+CA-3628",
+    "CA-3624+CA-4122",
+    "CA-3640+CA-3904",
+    "CA-3657+CA-3658",
+    "CA-3706+CA-4278",
+    "CA-3717+CA-3913",
+    "CA-3721+CA-3925",
+    "CA-3724+CA-4065",
+    "CA-3735+CA-3738",
+    "CA-3736+CA-3738",
+    "CA-3758+CA-3831",
+    "CA-3758+CA-4224",
+    "CA-3766+CA-4289",
+    "CA-3791+CA-4239",
+    "CA-3797+CA-4097",
+    "CA-3798+CA-4151",
+    "CA-3799+CA-3868",
+    "CA-3799+CA-4145",
+    "CA-3824+CA-3889",
+    "CA-3830+CA-4178",
+    "CA-3832+CA-4148",
+    "CA-3871+CA-4038",
+    "CA-3871+CA-4212",
+    "CA-3872+CA-3950",
+    "CA-3897+CA-3898",
+    "CA-3913+CA-4149",
+    "CA-3964+CA-4148",
+    "CA-3993+CA-4135",
+    "CA-3994+CA-4135",
+    "CA-4122+CA-4123",
+    "CA-4145+CA-4245",
+    "CA-4151+CA-4160",
+    "CA-4151+CA-4291",
+    "CA-4194+CA-4195"
    ],
    "lost": [
     {
@@ -249,65 +301,267 @@
     }
    ],
    "live_before": 29,
-   "live_now": 17,
+   "live_now": 133,
    "touch_held": [],
    "touch_pin_only": [],
-   "water_bank": [],
+   "water_bank": [
+    {
+     "pair": "CA-0001+CA-3539",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0018+CA-3362",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0114+CA-3231",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0696+CA-3269",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    },
+    {
+     "pair": "CA-0706+CA-4121",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0712+CA-4276",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0717+CA-3439",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0717+CA-3440",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0742+US-0029",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0742+US-12607",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0742+US-4448",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0743+CA-1213",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0750+CA-3543",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3193+CA-3194",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3209+CA-4044",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3220+CA-3965",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3245+CA-5497",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3275+CA-3840",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3275+CA-3841",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3303+CA-3615",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3338+CA-4080",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    },
+    {
+     "pair": "CA-3353+CA-3354",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3413+CA-3769",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3431+CA-3805",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3506+CA-3615",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3539+CA-4026",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3542+CA-3543",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3567+US-4448",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3615+CA-4243",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3631+CA-4020",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3672+CA-3674",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3735+CA-3737",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3736+CA-3737",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3805+CA-4278",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3834+CA-4027",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3845+CA-3846",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    },
+    {
+     "pair": "CA-3845+CA-3846",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3846+CA-3847",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    },
+    {
+     "pair": "CA-3846+CA-3847",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3850+CA-4060",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3917+CA-4258",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3953+CA-3954",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-3965+CA-3967",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-4155+CA-5502",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-4191+CA-4258",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-4205+CA-4206",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    },
+    {
+     "pair": "CA-4218+CA-4258",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-5498+CA-5501",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-5501+CA-5503",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    }
+   ],
    "same_land_one_record": [
     {
      "pair": "CA-0748+CA-4282",
      "status": "candidate"
     },
     {
-     "pair": "CA-0748+CA-4282",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-0748+CA-4282",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-0748+CA-4282",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-0748+CA-4282",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-3250+CA-3251",
-     "status": "not sure: one record covers two parks (the record '' does not name 'Boyle Point Provincial"
-    },
-    {
-     "pair": "CA-3250+CA-3251",
-     "status": "not sure: one record covers two parks (the record '' does not name 'Boyle Point Provincial"
-    },
-    {
-     "pair": "CA-3250+CA-3251",
-     "status": "not sure: one record covers two parks (the record '' does not name 'Boyle Point Provincial"
-    },
-    {
-     "pair": "CA-3250+CA-3251",
-     "status": "not sure: one record covers two parks (the record '' does not name 'Boyle Point Provincial"
-    },
-    {
      "pair": "CA-3250+CA-3251",
      "status": "not sure: one record covers two parks (the record '' does not name 'Boyle Point Provincial"
     },
     {
      "pair": "CA-3261+CA-3262",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-3261+CA-3262",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-3263+CA-3264",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-3263+CA-3264",
      "status": "candidate"
     },
     {
@@ -319,22 +573,6 @@
      "status": "candidate"
     },
     {
-     "pair": "CA-3320+CA-3321",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-3348+CA-3349",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-3348+CA-3349",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-3348+CA-3349",
-     "status": "candidate"
-    },
-    {
      "pair": "CA-3348+CA-3349",
      "status": "candidate"
     },
@@ -343,31 +581,7 @@
      "status": "candidate"
     },
     {
-     "pair": "CA-3439+CA-3440",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-3439+CA-3440",
-     "status": "candidate"
-    },
-    {
      "pair": "CA-3511+CA-3512",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-3511+CA-3512",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-3511+CA-3512",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-3522+CA-3523",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-3522+CA-3523",
      "status": "candidate"
     },
     {
@@ -379,19 +593,7 @@
      "status": "candidate"
     },
     {
-     "pair": "CA-3657+CA-3658",
-     "status": "candidate"
-    },
-    {
      "pair": "CA-3684+CA-3685",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-3684+CA-3685",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-3781+CA-3782",
      "status": "candidate"
     },
     {
@@ -403,14 +605,6 @@
      "status": "candidate"
     },
     {
-     "pair": "CA-3838+CA-3839",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-3840+CA-3841",
-     "status": "candidate"
-    },
-    {
      "pair": "CA-3840+CA-3841",
      "status": "candidate"
     },
@@ -419,47 +613,11 @@
      "status": "candidate"
     },
     {
-     "pair": "CA-3868+CA-3869",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-3868+CA-3869",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-3868+CA-3869",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-3988+CA-3989",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-3988+CA-3989",
-     "status": "candidate"
-    },
-    {
      "pair": "CA-3988+CA-3989",
      "status": "candidate"
     },
     {
      "pair": "CA-4100+CA-4101",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-4100+CA-4101",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-4152+CA-4153",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-4152+CA-4153",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-4152+CA-4153",
      "status": "candidate"
     },
     {
@@ -467,9 +625,166 @@
      "status": "candidate"
     }
    ],
-   "near_threshold": [],
+   "near_threshold": [
+    {
+     "pair": "CA-0066+CA-3664",
+     "wide_m": 23,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "CA-0105+CA-4289",
+     "wide_m": 39,
+     "near": "50 yd (very tight)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "CA-0117+CA-4798",
+     "wide_m": 20,
+     "near": "25 yd (kept)",
+     "status": "not sure: the official outline of Twin F"
+    },
+    {
+     "pair": "CA-0713+CA-3764",
+     "wide_m": 27,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "CA-0723+CA-3810",
+     "wide_m": 25,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "CA-3052+CA-3657",
+     "wide_m": 25,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "CA-3052+CA-3658",
+     "wide_m": 25,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "CA-3167+CA-3657",
+     "wide_m": 25,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "CA-3167+CA-3658",
+     "wide_m": 25,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "CA-3181+CA-4236",
+     "wide_m": 45,
+     "near": "50 yd (very tight)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "CA-3181+CA-4237",
+     "wide_m": 45,
+     "near": "50 yd (very tight)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "CA-3275+CA-3840",
+     "wide_m": 77,
+     "near": "100 yd (small)",
+     "status": "not sure: water not checked (the USGS wa"
+    },
+    {
+     "pair": "CA-3303+CA-3615",
+     "wide_m": 79,
+     "near": "100 yd (small)",
+     "status": "not sure: water not checked (the USGS wa"
+    },
+    {
+     "pair": "CA-3303+CA-4092",
+     "wide_m": 25,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "CA-3328+CA-5346",
+     "wide_m": 23,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "CA-3359+CA-4024",
+     "wide_m": 20,
+     "near": "25 yd (kept)",
+     "status": "not sure: the official outline of Riverv"
+    },
+    {
+     "pair": "CA-3431+CA-3805",
+     "wide_m": 37,
+     "near": "50 yd (very tight)",
+     "status": "not sure: water not checked (the USGS wa"
+    },
+    {
+     "pair": "CA-3615+CA-4233",
+     "wide_m": 25,
+     "near": "25 yd (kept)",
+     "status": "not sure: this spot is 138 km from Tweed"
+    },
+    {
+     "pair": "CA-3615+CA-4243",
+     "wide_m": 23,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "CA-3640+CA-3904",
+     "wide_m": 25,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "CA-3721+CA-3925",
+     "wide_m": 25,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "CA-3766+CA-4289",
+     "wide_m": 105,
+     "near": "100 yd (small)",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-3965+CA-3967",
+     "wide_m": 45,
+     "near": "50 yd (very tight)",
+     "status": "not sure: water not checked (the USGS wa"
+    },
+    {
+     "pair": "CA-4191+CA-4258",
+     "wide_m": 87,
+     "near": "100 yd (small)",
+     "status": "not sure: water not checked (the USGS wa"
+    },
+    {
+     "pair": "CA-4787+CA-4789",
+     "wide_m": 20,
+     "near": "25 yd (kept)",
+     "status": "not sure: the official outline of Fisgar"
+    },
+    {
+     "pair": "CA-5498+CA-5501",
+     "wide_m": 93,
+     "near": "100 yd (small)",
+     "status": "not sure: water not checked (the USGS wa"
+    }
+   ],
    "preline": {
-    "tag": "canadawest",
+    "tag": "canadabc",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -477,30 +792,28 @@
    "stale_inputs": []
   },
   "CA-MB": {
-   "gained": [],
+   "gained": [
+    "CA-0084+CA-2472",
+    "CA-0108+CA-2395",
+    "CA-1087+CA-1536"
+   ],
    "lost": [
-    {
-     "pair": "CA-0083+CA-2476",
-     "now": "pass 1"
-    },
-    {
-     "pair": "CA-0084+CA-2476",
-     "now": "pass 1"
-    },
     {
      "pair": "CA-0113+CA-2540",
      "now": "not sure: both parks join the same official records but a POTA pin is outside the shared o"
-    },
-    {
-     "pair": "CA-0545+CA-2474",
-     "now": "pass 1"
     }
    ],
    "live_before": 4,
-   "live_now": 0,
+   "live_now": 6,
    "touch_held": [],
    "touch_pin_only": [],
-   "water_bank": [],
+   "water_bank": [
+    {
+     "pair": "CA-0541+CA-2460",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    }
+   ],
    "same_land_one_record": [],
    "near_threshold": [],
    "preline": {
@@ -704,17 +1017,32 @@
    "stale_inputs": []
   },
   "CA-NT": {
-   "gained": [],
+   "gained": [
+    "CA-0062+CA-0121"
+   ],
    "lost": [],
    "live_before": 0,
-   "live_now": 0,
+   "live_now": 1,
    "touch_held": [],
    "touch_pin_only": [],
-   "water_bank": [],
+   "water_bank": [
+    {
+     "pair": "CA-4332+CA-4344",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    }
+   ],
    "same_land_one_record": [],
-   "near_threshold": [],
+   "near_threshold": [
+    {
+     "pair": "CA-0062+CA-0121",
+     "wide_m": 49,
+     "near": "50 yd (very tight)",
+     "status": "candidate"
+    }
+   ],
    "preline": {
-    "tag": "canadawest",
+    "tag": "canadabc",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -722,17 +1050,33 @@
    "stale_inputs": []
   },
   "CA-NU": {
-   "gained": [],
+   "gained": [
+    "CA-0064+CA-4594",
+    "CA-0070+CA-0127",
+    "CA-4569+CA-4594",
+    "CA-4586+CA-4594"
+   ],
    "lost": [],
    "live_before": 0,
-   "live_now": 0,
+   "live_now": 4,
    "touch_held": [],
    "touch_pin_only": [],
-   "water_bank": [],
+   "water_bank": [
+    {
+     "pair": "CA-0091+CA-4569",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0091+CA-4594",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    }
+   ],
    "same_land_one_record": [],
    "near_threshold": [],
    "preline": {
-    "tag": "canadawest",
+    "tag": "canadabc",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -740,7 +1084,147 @@
    "stale_inputs": []
   },
   "CA-ON": {
-   "gained": [],
+   "gained": [
+    "CA-0006+CA-6003",
+    "CA-0010+CA-0168",
+    "CA-0010+CA-0241",
+    "CA-0010+CA-0273",
+    "CA-0010+CA-5628",
+    "CA-0021+CA-5628",
+    "CA-0050+CA-0201",
+    "CA-0050+CA-0222",
+    "CA-0050+CA-0346",
+    "CA-0050+CA-0353",
+    "CA-0050+CA-0360",
+    "CA-0050+CA-0370",
+    "CA-0050+CA-0379",
+    "CA-0050+CA-0386",
+    "CA-0050+CA-0395",
+    "CA-0050+CA-1627",
+    "CA-0052+CA-6003",
+    "CA-0053+CA-0279",
+    "CA-0067+CA-6003",
+    "CA-0078+CA-0354",
+    "CA-0078+CA-0435",
+    "CA-0094+CA-6003",
+    "CA-0099+CA-6003",
+    "CA-0138+CA-1301",
+    "CA-0148+CA-5628",
+    "CA-0164+CA-5628",
+    "CA-0168+CA-5628",
+    "CA-0174+CA-6003",
+    "CA-0182+CA-6003",
+    "CA-0189+CA-6003",
+    "CA-0190+CA-5628",
+    "CA-0196+CA-5628",
+    "CA-0214+CA-5628",
+    "CA-0229+CA-5628",
+    "CA-0231+CA-5628",
+    "CA-0238+CA-6003",
+    "CA-0240+CA-6003",
+    "CA-0271+CA-5628",
+    "CA-0273+CA-5628",
+    "CA-0279+CA-6003",
+    "CA-0305+CA-0306",
+    "CA-0308+CA-5628",
+    "CA-0312+CA-4882",
+    "CA-0318+CA-5628",
+    "CA-0322+CA-5628",
+    "CA-0336+CA-5628",
+    "CA-0341+US-2489",
+    "CA-0342+CA-6003",
+    "CA-0347+CA-6003",
+    "CA-0351+CA-6003",
+    "CA-0352+CA-5628",
+    "CA-0364+CA-4882",
+    "CA-0367+CA-6003",
+    "CA-0368+CA-1599",
+    "CA-0381+CA-6003",
+    "CA-0387+CA-5628",
+    "CA-0396+CA-5628",
+    "CA-0417+CA-1643",
+    "CA-0417+CA-6003",
+    "CA-0419+CA-6003",
+    "CA-0442+CA-4889",
+    "CA-1043+CA-5628",
+    "CA-1046+CA-5536",
+    "CA-1046+CA-5628",
+    "CA-1297+CA-5628",
+    "CA-1297+CA-6003",
+    "CA-1307+CA-5628",
+    "CA-1323+CA-5628",
+    "CA-1375+CA-6003",
+    "CA-1397+CA-5628",
+    "CA-1440+CA-5628",
+    "CA-1447+CA-5628",
+    "CA-1490+CA-5628",
+    "CA-1494+CA-6003",
+    "CA-1541+CA-5536",
+    "CA-1541+CA-5628",
+    "CA-1576+CA-6003",
+    "CA-1586+CA-6003",
+    "CA-1598+CA-5628",
+    "CA-1639+CA-5628",
+    "CA-1643+CA-6003",
+    "CA-1673+CA-5143",
+    "CA-1673+CA-6003",
+    "CA-4856+CA-5628",
+    "CA-4856+CA-6003",
+    "CA-4863+CA-5628",
+    "CA-4863+CA-6003",
+    "CA-4882+CA-5295",
+    "CA-4889+CA-6003",
+    "CA-5092+CA-5628",
+    "CA-5093+CA-5628",
+    "CA-5100+CA-5628",
+    "CA-5105+CA-5628",
+    "CA-5112+CA-5628",
+    "CA-5141+CA-6003",
+    "CA-5142+CA-6003",
+    "CA-5312+CA-5628",
+    "CA-5353+CA-5628",
+    "CA-5358+CA-5565",
+    "CA-5358+CA-5628",
+    "CA-5359+CA-5628",
+    "CA-5370+CA-6003",
+    "CA-5372+CA-5628",
+    "CA-5373+CA-5628",
+    "CA-5536+CA-5628",
+    "CA-5559+CA-6003",
+    "CA-5563+CA-5628",
+    "CA-5564+CA-5628",
+    "CA-5565+CA-5566",
+    "CA-5566+CA-5628",
+    "CA-5569+CA-5628",
+    "CA-5572+CA-5628",
+    "CA-5573+CA-5628",
+    "CA-5574+CA-5628",
+    "CA-5577+CA-6003",
+    "CA-5578+CA-5628",
+    "CA-5593+CA-6003",
+    "CA-5596+CA-6003",
+    "CA-5627+CA-5628",
+    "CA-5628+CA-5653",
+    "CA-5628+CA-5654",
+    "CA-5628+CA-5656",
+    "CA-5628+CA-5657",
+    "CA-5628+CA-5658",
+    "CA-5628+CA-5665",
+    "CA-5628+CA-5943",
+    "CA-5628+CA-5959",
+    "CA-5628+CA-6003",
+    "CA-5628+CA-6008",
+    "CA-5628+CA-6608",
+    "CA-5628+CA-6609",
+    "CA-5628+CA-6610",
+    "CA-5628+CA-6611",
+    "CA-5633+CA-6003",
+    "CA-5669+CA-6003",
+    "CA-5670+CA-5671",
+    "CA-5942+CA-6003",
+    "CA-6003+CA-6370",
+    "CA-6003+CA-6371"
+   ],
    "lost": [
     {
      "pair": "CA-0052+CA-0053",
@@ -763,12 +1247,8 @@
      "now": "not sure: both parks join the same official records and both POTA pins are inside it, but "
     },
     {
-     "pair": "CA-5143+CA-6003",
-     "now": "pass 1"
-    },
-    {
      "pair": "CA-5565+CA-5628",
-     "now": "pass 1"
+     "now": "dropped in pass 3: the finer official outlines show no shared patch here (the first, coars"
     },
     {
      "pair": "CA-5633+CA-5942",
@@ -780,17 +1260,94 @@
     }
    ],
    "live_before": 13,
-   "live_now": 4,
+   "live_now": 144,
    "touch_held": [],
    "touch_pin_only": [],
-   "water_bank": [],
+   "water_bank": [
+    {
+     "pair": "CA-0050+CA-0394",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0050+CA-1282",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0050+CA-1479",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0209+CA-4889",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0341+US-2489",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    },
+    {
+     "pair": "CA-0359+US-4491",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0365+CA-4882",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    },
+    {
+     "pair": "CA-0402+CA-4867",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-1473+US-4491",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-4882+CA-5642",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    },
+    {
+     "pair": "CA-4882+CA-5956",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    },
+    {
+     "pair": "CA-4882+CA-5957",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    },
+    {
+     "pair": "CA-4889+CA-5091",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    },
+    {
+     "pair": "CA-4889+CA-5291",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    },
+    {
+     "pair": "CA-5670+CA-5671",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    },
+    {
+     "pair": "CA-5671+CA-5895",
+     "kind": "area",
+     "status": "water only: boat or kayak"
+    }
+   ],
    "same_land_one_record": [
     {
      "pair": "CA-0052+CA-0053",
-     "status": "not sure: one record covers two parks ('Long Point Biosphere Reserve' is a biosphere, the "
-    },
-    {
-     "pair": "CA-0052+CA-0279",
      "status": "not sure: one record covers two parks ('Long Point Biosphere Reserve' is a biosphere, the "
     },
     {
@@ -806,15 +1363,7 @@
      "status": "not sure: one record covers two parks (the record '' does not name 'Timber Island Provinci"
     },
     {
-     "pair": "CA-0414+CA-1667",
-     "status": "not sure: one record covers two parks (the record '' does not name 'Timber Island Provinci"
-    },
-    {
      "pair": "CA-1320+CA-1321",
-     "status": "candidate"
-    },
-    {
-     "pair": "CA-1361+CA-1362",
      "status": "candidate"
     },
     {
@@ -830,9 +1379,70 @@
      "status": "not sure: one record covers two parks (the record 'Boyd Conservation Area' does not name '"
     }
    ],
-   "near_threshold": [],
+   "near_threshold": [
+    {
+     "pair": "CA-0050+CA-0222",
+     "wide_m": 27,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "CA-0050+CA-0360",
+     "wide_m": 45,
+     "near": "50 yd (very tight)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "CA-0050+CA-0379",
+     "wide_m": 53,
+     "near": "50 yd (very tight)",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-0050+CA-1479",
+     "wide_m": 45,
+     "near": "50 yd (very tight)",
+     "status": "not sure: water not checked (the USGS wa"
+    },
+    {
+     "pair": "CA-0053+CA-0279",
+     "wide_m": 53,
+     "near": "50 yd (very tight)",
+     "status": "candidate"
+    },
+    {
+     "pair": "CA-0209+CA-4889",
+     "wide_m": 39,
+     "near": "50 yd (very tight)",
+     "status": "not sure: water not checked (the USGS wa"
+    },
+    {
+     "pair": "CA-0312+CA-4882",
+     "wide_m": 23,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "CA-0341+US-2489",
+     "wide_m": 25,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    },
+    {
+     "pair": "CA-1473+US-4491",
+     "wide_m": 39,
+     "near": "50 yd (very tight)",
+     "status": "not sure: water not checked (the USGS wa"
+    },
+    {
+     "pair": "CA-4882+CA-5295",
+     "wide_m": 23,
+     "near": "25 yd (kept)",
+     "status": "very tight: could be map error: check bo"
+    }
+   ],
    "preline": {
-    "tag": "canadaeast",
+    "tag": "canadaon",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -940,7 +1550,34 @@
    ]
   },
   "CA-SK": {
-   "gained": [],
+   "gained": [
+    "CA-0051+CA-1118",
+    "CA-0075+CA-6128",
+    "CA-0075+CA-6130",
+    "CA-0075+CA-6140",
+    "CA-0075+CA-6142",
+    "CA-0075+CA-6143",
+    "CA-0075+CA-6144",
+    "CA-0075+CA-6145",
+    "CA-0075+CA-6146",
+    "CA-0075+CA-6147",
+    "CA-0075+CA-6148",
+    "CA-0075+CA-6149",
+    "CA-0075+CA-6150",
+    "CA-0075+CA-6152",
+    "CA-0075+CA-6153",
+    "CA-0081+CA-2717",
+    "CA-1117+CA-2605",
+    "CA-1118+CA-2711",
+    "CA-2653+CA-2654",
+    "CA-2653+CA-2677",
+    "CA-2676+CA-2677",
+    "CA-2740+CA-2741",
+    "CA-2838+CA-2839",
+    "CA-2894+CA-2896",
+    "CA-6146+CA-6147",
+    "CA-6152+CA-6153"
+   ],
    "lost": [
     {
      "pair": "CA-0051+CA-2711",
@@ -964,7 +1601,7 @@
     }
    ],
    "live_before": 10,
-   "live_now": 5,
+   "live_now": 31,
    "touch_held": [],
    "touch_pin_only": [],
    "water_bank": [],
@@ -986,20 +1623,12 @@
      "status": "not sure: one record covers two parks (the record '' does not name 'Fort Carlton Provincia"
     },
     {
-     "pair": "CA-0599+CA-6054",
-     "status": "not sure: one record covers two parks (the record '' does not name 'Fort Carlton Provincia"
-    },
-    {
      "pair": "CA-0600+CA-6064",
      "status": "not sure: one record covers two parks ('Fort Pitt National Historic Site' is a historic, t"
     },
     {
      "pair": "CA-0624+CA-6072",
      "status": "not sure: one record covers two parks ('Steele Narrows National Historic Site' is a histor"
-    },
-    {
-     "pair": "CA-0630+CA-2916",
-     "status": "candidate"
     },
     {
      "pair": "CA-0630+CA-2916",
@@ -1020,14 +1649,6 @@
     {
      "pair": "CA-2879+CA-2880",
      "status": "not sure: one record covers two parks (the record '' does not name 'Upper Rousay Lake Game"
-    },
-    {
-     "pair": "CA-2879+CA-2880",
-     "status": "not sure: one record covers two parks (the record '' does not name 'Upper Rousay Lake Game"
-    },
-    {
-     "pair": "CA-2897+CA-2898",
-     "status": "not sure: one record covers two parks (the record '' does not name 'Wascana Trails Recreat"
     },
     {
      "pair": "CA-2897+CA-2898",
@@ -1063,7 +1684,8 @@
   },
   "CA-YT": {
    "gained": [
-    "CA-0847+CA-6280"
+    "CA-0847+CA-6280",
+    "CA-4636+CA-6261"
    ],
    "lost": [
     {
@@ -1072,10 +1694,26 @@
     }
    ],
    "live_before": 2,
-   "live_now": 2,
+   "live_now": 3,
    "touch_held": [],
    "touch_pin_only": [],
-   "water_bank": [],
+   "water_bank": [
+    {
+     "pair": "CA-0039+CA-0106",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0044+CA-0842",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    },
+    {
+     "pair": "CA-0841+CA-3622",
+     "kind": "area",
+     "status": "not sure: water not checked (the USGS water map did not answer): run pass 5"
+    }
+   ],
    "same_land_one_record": [
     {
      "pair": "CA-0847+CA-6280",
@@ -1084,15 +1722,24 @@
     {
      "pair": "CA-4635+CA-4636",
      "status": "candidate"
-    },
-    {
-     "pair": "CA-4635+CA-4636",
-     "status": "candidate"
     }
    ],
-   "near_threshold": [],
+   "near_threshold": [
+    {
+     "pair": "CA-0044+CA-0742",
+     "wide_m": 45,
+     "near": "50 yd (very tight)",
+     "status": "not sure: this spot is 111 km from Tatsh"
+    },
+    {
+     "pair": "CA-0841+CA-3622",
+     "wide_m": 85,
+     "near": "100 yd (small)",
+     "status": "not sure: water not checked (the USGS wa"
+    }
+   ],
    "preline": {
-    "tag": "canadawest",
+    "tag": "canadabc",
     "verdict": "GO",
     "key_source": "build",
     "held_key": true
@@ -4521,7 +5168,7 @@
     }
    ],
    "stale_inputs": [
-    "the key build US-43056604383 (2026-11-11 16:50 UTC) is newer than this output's last pass (2026-11-02)",
+    "the key build US-43293787778 (2026-11-12 21:36 UTC) is newer than this output's last pass (2026-11-02)",
     "no pre-line report for this area"
    ]
   },

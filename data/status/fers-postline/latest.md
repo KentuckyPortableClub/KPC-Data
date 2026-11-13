@@ -1,33 +1,33 @@
 # 2-fer post-line check (for Quality)
 
-2026-11-12 20:08 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
+2026-11-13 04:14 UTC · 2-fer post-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4): read-only report for Quality. The 2-fers stay HELD in the waiting room; this releases nothing.
 
-## CA-AB: live pairs 40 -> 3 (+0 / -37)
-- gained: -
-- lost: CA-0005+CA-0040 (pass 1); CA-0005+CA-0045 (pass 1); CA-0005+CA-0117 (pass 1); CA-0005+CA-0726 (pass 1); CA-0005+CA-3829 (pass 1); CA-0040+CA-3119 (pass 1); CA-0040+CA-3161 (pass 1); CA-0040+CA-3163 (pass 1); CA-0040+CA-3167 (pass 1); CA-0040+CA-3582 (pass 1); CA-0040+CA-3845 (pass 1); CA-0040+CA-3846 (pass 1); CA-0040+CA-3847 (pass 1); CA-0109+CA-0691 (gone); CA-0110+CA-0691 (pass 1); CA-0115+CA-2932 (pass 1); CA-0115+CA-3118 (pass 1); CA-0636+CA-2949 (not sure: both parks join the same official records but a POTA pin is outside the shared o); CA-0647+CA-6112 (pass 1); CA-0664+CA-0719 (pass 1)
+## CA-AB: live pairs 40 -> 33 (+5 / -12)
+- gained: CA-0110+US-4558 CA-0664+CA-0719+CA-0726 CA-2956+CA-2958 CA-3008+CA-6112 CA-6112+CA-6588
+- lost: CA-0005+CA-0045 (merged into one row: CA-0005+CA-0045@area@51.088,-115.920); CA-0005+CA-0117 (merged into one row: CA-0005+CA-0117@area@51.570,-116.454); CA-0005+CA-3829 (not sure: water not checked (the USGS water map did not answer): run pass 5); CA-0040+CA-3846 (dropped in pass 3: the finer official outlines show no shared patch here (the first, coars); CA-0109+CA-0691 (gone); CA-0636+CA-2949 (not sure: both parks join the same official records but a POTA pin is outside the shared o); CA-0664+CA-0726 (not sure: water not checked (the USGS water map did not answer): run pass 5); CA-0671+CA-3123 (not sure: both parks join the same official records and both POTA pins are inside it, but ); CA-1182+CA-3063 (gone); CA-2956+CA-2957 (gone); CA-2957+CA-2958 (gone); CA-3026+CA-3027 (not sure: both parks join the same official records and both POTA pins are inside it, but )
 - touching held parks: -
 - touching pin-only parks: -
-- water / bank: 0
-- one-record same land: CA-0683+CA-1197 CA-1174+CA-2994 CA-1174+CA-2994 CA-3057+CA-5533 CA-3057+CA-5533
-- near a size threshold: -
+- water / bank: 6
+- one-record same land: CA-0683+CA-1197 CA-1174+CA-2994 CA-3057+CA-5533
+- near a size threshold: CA-0040+CA-3161 53 m ~ 50 yd (very tight)
 - stale inputs: -
 
-## CA-BC: live pairs 29 -> 17 (+1 / -13)
-- gained: CA-3657+CA-3658
+## CA-BC: live pairs 29 -> 133 (+117 / -13)
+- gained: CA-0045+CA-0117 CA-0045+CA-3435 CA-0045+CA-3829 CA-0066+CA-3205 CA-0066+CA-3604 CA-0066+CA-3664 CA-0066+CA-4207 CA-0066+CA-5344 CA-0105+CA-4253 CA-0105+CA-4254 CA-0105+CA-4289 CA-0445+CA-3745 CA-0697+CA-4080 CA-0700+CA-3824 CA-0707+CA-4004 CA-0709+CA-0712 CA-0711+CA-4065 CA-0713+CA-3764 CA-0714+CA-4116 CA-0719+CA-0726 CA-0720+CA-4233 CA-0723+CA-1214 CA-0723+CA-3231 CA-0723+CA-3810 CA-0733+CA-3717 CA-0733+CA-4149 CA-0736+CA-3208 CA-0736+CA-4041 CA-0736+CA-4094 CA-0736+CA-4095
 - lost: CA-3250+CA-3251 (not sure: one record covers two parks (the record '' does not name 'Boyle Point Provincial); CA-3410+CA-3411 (not sure: both parks join the same official records but a POTA pin is outside the shared o); CA-3465+CA-3466 (not sure: both parks join the same official records and both POTA pins are inside it, but ); CA-3495+CA-3496 (not sure: both parks join the same official records but a POTA pin is outside the shared o); CA-3504+CA-3505 (not sure: both parks join the same official records but a POTA pin is outside the shared o); CA-3524+CA-3525 (not sure: both parks join the same official records and both POTA pins are inside it, but ); CA-3789+CA-3790 (not sure: both parks join the same official records and both POTA pins are inside it, but ); CA-3899+CA-3900 (not sure: both parks join the same official records but a POTA pin is outside the shared o); CA-3932+CA-3933 (not sure: both parks join the same official records but a POTA pin is outside the shared o); CA-3976+CA-3977 (not sure: both parks join the same official records but a POTA pin is outside the shared o); CA-4142+CA-4143 (not sure: both parks join the same official records but a POTA pin is outside the shared o); CA-4157+CA-4158 (not sure: both parks join the same official records and both POTA pins are inside it, but ); CA-4253+CA-4254 (not sure: both parks join the same official records but a POTA pin is outside the shared o)
 - touching held parks: -
 - touching pin-only parks: -
-- water / bank: 0
-- one-record same land: CA-0748+CA-4282 CA-0748+CA-4282 CA-0748+CA-4282 CA-0748+CA-4282 CA-0748+CA-4282 CA-3250+CA-3251 CA-3250+CA-3251 CA-3250+CA-3251 CA-3250+CA-3251 CA-3250+CA-3251 CA-3261+CA-3262 CA-3261+CA-3262 CA-3263+CA-3264 CA-3263+CA-3264 CA-3263+CA-3264 CA-3320+CA-3321 CA-3320+CA-3321 CA-3348+CA-3349 CA-3348+CA-3349 CA-3348+CA-3349
-- near a size threshold: -
+- water / bank: 49
+- one-record same land: CA-0748+CA-4282 CA-3250+CA-3251 CA-3261+CA-3262 CA-3263+CA-3264 CA-3320+CA-3321 CA-3348+CA-3349 CA-3439+CA-3440 CA-3511+CA-3512 CA-3522+CA-3523 CA-3657+CA-3658 CA-3684+CA-3685 CA-3781+CA-3782 CA-3838+CA-3839 CA-3840+CA-3841 CA-3868+CA-3869 CA-3988+CA-3989 CA-4100+CA-4101 CA-4152+CA-4153
+- near a size threshold: CA-0066+CA-3664 23 m ~ 25 yd (kept); CA-0105+CA-4289 39 m ~ 50 yd (very tight); CA-0117+CA-4798 20 m ~ 25 yd (kept); CA-0713+CA-3764 27 m ~ 25 yd (kept); CA-0723+CA-3810 25 m ~ 25 yd (kept); CA-3052+CA-3657 25 m ~ 25 yd (kept); CA-3052+CA-3658 25 m ~ 25 yd (kept); CA-3167+CA-3657 25 m ~ 25 yd (kept); CA-3167+CA-3658 25 m ~ 25 yd (kept); CA-3181+CA-4236 45 m ~ 50 yd (very tight); CA-3181+CA-4237 45 m ~ 50 yd (very tight); CA-3275+CA-3840 77 m ~ 100 yd (small); CA-3303+CA-3615 79 m ~ 100 yd (small); CA-3303+CA-4092 25 m ~ 25 yd (kept); CA-3328+CA-5346 23 m ~ 25 yd (kept); CA-3359+CA-4024 20 m ~ 25 yd (kept); CA-3431+CA-3805 37 m ~ 50 yd (very tight); CA-3615+CA-4233 25 m ~ 25 yd (kept); CA-3615+CA-4243 23 m ~ 25 yd (kept); CA-3640+CA-3904 25 m ~ 25 yd (kept)
 - stale inputs: -
 
-## CA-MB: live pairs 4 -> 0 (+0 / -4)
-- gained: -
-- lost: CA-0083+CA-2476 (pass 1); CA-0084+CA-2476 (pass 1); CA-0113+CA-2540 (not sure: both parks join the same official records but a POTA pin is outside the shared o); CA-0545+CA-2474 (pass 1)
+## CA-MB: live pairs 4 -> 6 (+3 / -1)
+- gained: CA-0084+CA-2472 CA-0108+CA-2395 CA-1087+CA-1536
+- lost: CA-0113+CA-2540 (not sure: both parks join the same official records but a POTA pin is outside the shared o)
 - touching held parks: -
 - touching pin-only parks: -
-- water / bank: 0
+- water / bank: 1
 - one-record same land: -
 - near a size threshold: -
 - stale inputs: -
@@ -62,34 +62,34 @@
 - near a size threshold: -
 - stale inputs: -
 
-## CA-NT: live pairs 0 -> 0 (+0 / -0)
-- gained: -
+## CA-NT: live pairs 0 -> 1 (+1 / -0)
+- gained: CA-0062+CA-0121
 - lost: -
 - touching held parks: -
 - touching pin-only parks: -
-- water / bank: 0
+- water / bank: 1
+- one-record same land: -
+- near a size threshold: CA-0062+CA-0121 49 m ~ 50 yd (very tight)
+- stale inputs: -
+
+## CA-NU: live pairs 0 -> 4 (+4 / -0)
+- gained: CA-0064+CA-4594 CA-0070+CA-0127 CA-4569+CA-4594 CA-4586+CA-4594
+- lost: -
+- touching held parks: -
+- touching pin-only parks: -
+- water / bank: 2
 - one-record same land: -
 - near a size threshold: -
 - stale inputs: -
 
-## CA-NU: live pairs 0 -> 0 (+0 / -0)
-- gained: -
-- lost: -
+## CA-ON: live pairs 13 -> 144 (+139 / -8)
+- gained: CA-0006+CA-6003 CA-0010+CA-0168 CA-0010+CA-0241 CA-0010+CA-0273 CA-0010+CA-5628 CA-0021+CA-5628 CA-0050+CA-0201 CA-0050+CA-0222 CA-0050+CA-0346 CA-0050+CA-0353 CA-0050+CA-0360 CA-0050+CA-0370 CA-0050+CA-0379 CA-0050+CA-0386 CA-0050+CA-0395 CA-0050+CA-1627 CA-0052+CA-6003 CA-0053+CA-0279 CA-0067+CA-6003 CA-0078+CA-0354 CA-0078+CA-0435 CA-0094+CA-6003 CA-0099+CA-6003 CA-0138+CA-1301 CA-0148+CA-5628 CA-0164+CA-5628 CA-0168+CA-5628 CA-0174+CA-6003 CA-0182+CA-6003 CA-0189+CA-6003
+- lost: CA-0052+CA-0053 (not sure: one record covers two parks ('Long Point Biosphere Reserve' is a biosphere, the ); CA-0052+CA-0279 (not sure: one record covers two parks ('Long Point Biosphere Reserve' is a biosphere, the ); CA-0057+CA-0307 (not sure: both parks join the same official records and both POTA pins are inside it, but ); CA-1303+CA-1304 (not sure: both parks join the same official records and both POTA pins are inside it, but ); CA-1507+CA-1508 (not sure: both parks join the same official records and both POTA pins are inside it, but ); CA-5565+CA-5628 (dropped in pass 3: the finer official outlines show no shared patch here (the first, coars); CA-5633+CA-5942 (not sure: both parks join the same official records but a POTA pin is outside the shared o); CA-5991+CA-5992 (not sure: both parks join the same official records but a POTA pin is outside the shared o)
 - touching held parks: -
 - touching pin-only parks: -
-- water / bank: 0
-- one-record same land: -
-- near a size threshold: -
-- stale inputs: -
-
-## CA-ON: live pairs 13 -> 4 (+0 / -9)
-- gained: -
-- lost: CA-0052+CA-0053 (not sure: one record covers two parks ('Long Point Biosphere Reserve' is a biosphere, the ); CA-0052+CA-0279 (not sure: one record covers two parks ('Long Point Biosphere Reserve' is a biosphere, the ); CA-0057+CA-0307 (not sure: both parks join the same official records and both POTA pins are inside it, but ); CA-1303+CA-1304 (not sure: both parks join the same official records and both POTA pins are inside it, but ); CA-1507+CA-1508 (not sure: both parks join the same official records and both POTA pins are inside it, but ); CA-5143+CA-6003 (pass 1); CA-5565+CA-5628 (pass 1); CA-5633+CA-5942 (not sure: both parks join the same official records but a POTA pin is outside the shared o); CA-5991+CA-5992 (not sure: both parks join the same official records but a POTA pin is outside the shared o)
-- touching held parks: -
-- touching pin-only parks: -
-- water / bank: 0
-- one-record same land: CA-0052+CA-0053 CA-0052+CA-0279 CA-0052+CA-0279 CA-0174+CA-6371 CA-0414+CA-1667 CA-0414+CA-1667 CA-1320+CA-1321 CA-1361+CA-1362 CA-1361+CA-1362 CA-5358+CA-5566 CA-5554+CA-5555
-- near a size threshold: -
+- water / bank: 16
+- one-record same land: CA-0052+CA-0053 CA-0052+CA-0279 CA-0174+CA-6371 CA-0414+CA-1667 CA-1320+CA-1321 CA-1361+CA-1362 CA-5358+CA-5566 CA-5554+CA-5555
+- near a size threshold: CA-0050+CA-0222 27 m ~ 25 yd (kept); CA-0050+CA-0360 45 m ~ 50 yd (very tight); CA-0050+CA-0379 53 m ~ 50 yd (very tight); CA-0050+CA-1479 45 m ~ 50 yd (very tight); CA-0053+CA-0279 53 m ~ 50 yd (very tight); CA-0209+CA-4889 39 m ~ 50 yd (very tight); CA-0312+CA-4882 23 m ~ 25 yd (kept); CA-0341+US-2489 25 m ~ 25 yd (kept); CA-1473+US-4491 39 m ~ 50 yd (very tight); CA-4882+CA-5295 23 m ~ 25 yd (kept)
 - stale inputs: -
 
 ## CA-PE: live pairs 0 -> 0 (+0 / -0)
@@ -122,13 +122,13 @@
 - near a size threshold: -
 - stale inputs: no pre-line report for this area
 
-## CA-SK: live pairs 10 -> 5 (+0 / -5)
-- gained: -
+## CA-SK: live pairs 10 -> 31 (+26 / -5)
+- gained: CA-0051+CA-1118 CA-0075+CA-6128 CA-0075+CA-6130 CA-0075+CA-6140 CA-0075+CA-6142 CA-0075+CA-6143 CA-0075+CA-6144 CA-0075+CA-6145 CA-0075+CA-6146 CA-0075+CA-6147 CA-0075+CA-6148 CA-0075+CA-6149 CA-0075+CA-6150 CA-0075+CA-6152 CA-0075+CA-6153 CA-0081+CA-2717 CA-1117+CA-2605 CA-1118+CA-2711 CA-2653+CA-2654 CA-2653+CA-2677 CA-2676+CA-2677 CA-2740+CA-2741 CA-2838+CA-2839 CA-2894+CA-2896 CA-6146+CA-6147 CA-6152+CA-6153
 - lost: CA-0051+CA-2711 (not sure: both parks join the same official records but a POTA pin is outside the shared o); CA-0621+CA-2820 (not sure: both parks join the same official records and both POTA pins are inside it, but ); CA-1149+CA-2844 (not sure: one record covers two parks (the record '' does not name 'Shamrock Regional Park); CA-2644+CA-2645 (not sure: both parks join the same official records but a POTA pin is outside the shared o); CA-2879+CA-2880 (not sure: one record covers two parks (the record '' does not name 'Upper Rousay Lake Game)
 - touching held parks: -
 - touching pin-only parks: -
 - water / bank: 0
-- one-record same land: CA-0082+CA-1146 CA-0082+CA-2819 CA-0591+CA-6057 CA-0599+CA-6054 CA-0599+CA-6054 CA-0600+CA-6064 CA-0624+CA-6072 CA-0630+CA-2916 CA-0630+CA-2916 CA-1093+CA-2549 CA-1127+CA-2747 CA-1149+CA-2844 CA-2879+CA-2880 CA-2879+CA-2880 CA-2897+CA-2898 CA-2897+CA-2898
+- one-record same land: CA-0082+CA-1146 CA-0082+CA-2819 CA-0591+CA-6057 CA-0599+CA-6054 CA-0600+CA-6064 CA-0624+CA-6072 CA-0630+CA-2916 CA-1093+CA-2549 CA-1127+CA-2747 CA-1149+CA-2844 CA-2879+CA-2880 CA-2897+CA-2898
 - near a size threshold: -
 - stale inputs: -
 
@@ -142,14 +142,14 @@
 - near a size threshold: -
 - stale inputs: -
 
-## CA-YT: live pairs 2 -> 2 (+1 / -1)
-- gained: CA-0847+CA-6280
+## CA-YT: live pairs 2 -> 3 (+2 / -1)
+- gained: CA-0847+CA-6280 CA-4636+CA-6261
 - lost: CA-0848+CA-4625 (not sure: both parks join the same official records and both POTA pins are inside it, but )
 - touching held parks: -
 - touching pin-only parks: -
-- water / bank: 0
-- one-record same land: CA-0847+CA-6280 CA-4635+CA-4636 CA-4635+CA-4636
-- near a size threshold: -
+- water / bank: 3
+- one-record same land: CA-0847+CA-6280 CA-4635+CA-4636
+- near a size threshold: CA-0044+CA-0742 45 m ~ 50 yd (very tight); CA-0841+CA-3622 85 m ~ 100 yd (small)
 - stale inputs: -
 
 ## US-AK: live pairs 31 -> 0 (+0 / -31)
@@ -330,7 +330,7 @@
 - water / bank: 29
 - one-record same land: US-0703+US-3790 US-10139+US-4526
 - near a size threshold: US-0019+US-10164 105 m ~ 100 yd (small); US-10158+US-10171+US-4484 37 m ~ 50 yd (very tight); US-10168+US-4484 37 m ~ 50 yd (very tight); US-1275+US-4484 27 m ~ 25 yd (kept); US-1281+US-4687 49 m ~ 50 yd (very tight); US-4484+US-7962 49 m ~ 50 yd (very tight)
-- stale inputs: the key build US-43056604383 (2026-11-11 16:50 UTC) is newer than this output's last pass (2026-11-02); no pre-line report for this area
+- stale inputs: the key build US-43293787778 (2026-11-12 21:36 UTC) is newer than this output's last pass (2026-11-02); no pre-line report for this area
 
 ## US-LA: live pairs 8 -> 0 (+0 / -8)
 - gained: -
