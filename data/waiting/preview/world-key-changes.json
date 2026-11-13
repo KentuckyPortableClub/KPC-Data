@@ -1,10 +1,10 @@
 {
  "about": "world-key: the HELD build (data/waiting/in/data/world-key/) vs the LIVE key (data/world-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'world-key', 'build': the held build id from data/waiting/in/data/world-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-13 08:43 UTC",
+ "made": "2026-11-13 14:17 UTC",
  "totals": {
-  "gained": 903,
-  "lost": 103,
-  "pieces_changed": 4727,
+  "gained": 913,
+  "lost": 104,
+  "pieces_changed": 4731,
   "grade_changed": 12319
  },
  "per_area": {
@@ -32,10 +32,16 @@
    "pieces_changed": 0,
    "grade_changed": 164
   },
-  "BZ": {
-   "gained": 6,
+  "BS": {
+   "gained": 1,
    "lost": 0,
-   "pieces_changed": 30,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
+  "BZ": {
+   "gained": 7,
+   "lost": 1,
+   "pieces_changed": 35,
    "grade_changed": 0
   },
   "CD": {
@@ -119,7 +125,7 @@
   "FR": {
    "gained": 84,
    "lost": 54,
-   "pieces_changed": 408,
+   "pieces_changed": 407,
    "grade_changed": 308
   },
   "GB": {
@@ -249,7 +255,7 @@
    "grade_changed": 55
   },
   "NZ": {
-   "gained": 29,
+   "gained": 37,
    "lost": 1,
    "pieces_changed": 10,
    "grade_changed": 0
@@ -612,6 +618,25 @@
    "pota": "https://pota.app/#/park/AT-0431"
   },
   {
+   "area": "BS",
+   "ref": "BS-0025",
+   "name": "The Retreat Garden National Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "16",
+     "The Retreat",
+     "Protected_Areas_of_The_Bahamas",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/BS-0025"
+  },
+  {
    "area": "BZ",
    "ref": "BZ-0022",
    "name": "Crooked Tree Wildlife Reserve",
@@ -632,34 +657,21 @@
   },
   {
    "area": "BZ",
-   "ref": "BZ-0024",
-   "name": "Gales Point Wildlife Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "12",
-     "Gales Point",
-     "Protected_Areas_Belize_2015",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/BZ-0024"
-  },
-  {
-   "area": "BZ",
    "ref": "BZ-0051",
    "name": "Bird Caye Bird Sanctuary",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "9",
+     "183",
      "Laughing Bird Caye",
      "Protected_Areas_Belize_2015",
+     "pin inside + shared name words"
+    ],
+    [
+     "100",
+     "Laughing Bird Caye",
+     "PA_updated_2024",
      "pin inside + shared name words"
     ]
    ],
@@ -670,11 +682,61 @@
   },
   {
    "area": "BZ",
+   "ref": "BZ-0057",
+   "name": "Altun Ha Archeological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "257",
+     "Altun Ha",
+     "Protected_Areas_Belize_2015",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/BZ-0057"
+  },
+  {
+   "area": "BZ",
+   "ref": "BZ-0059",
+   "name": "Cahal Pech Archeological Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "176",
+     "Cahal Pech",
+     "Protected_Areas_Belize_2015",
+     "pin inside + shared name words"
+    ],
+    [
+     "8",
+     "Cahal Pech",
+     "PA_updated_2024",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/BZ-0059"
+  },
+  {
+   "area": "BZ",
    "ref": "BZ-0061",
    "name": "Cerro Maya Archeological Reserve",
    "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
+    [
+     "259",
+     "Cerro Maya",
+     "Protected_Areas_Belize_2015",
+     "pin inside + shared name words"
+    ],
     [
      "62",
      "Cerro Maya",
@@ -17470,6 +17532,44 @@
   },
   {
    "area": "NZ",
+   "ref": "NZ-0173",
+   "name": "Mt.Thomas Forest Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "130571",
+     "Mt. Thomas Forest Conservation Area",
+     "Public conservation land",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NZ-0173"
+  },
+  {
+   "area": "NZ",
+   "ref": "NZ-0236",
+   "name": "Waitotara Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "41102",
+     "Waitōtara Forest Conservation Area",
+     "Public conservation land",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NZ-0236"
+  },
+  {
+   "area": "NZ",
    "ref": "NZ-0241",
    "name": "Musick Point Esplanade Reserve",
    "old_grade": "pin",
@@ -17527,6 +17627,63 @@
   },
   {
    "area": "NZ",
+   "ref": "NZ-0321",
+   "name": "Te Matai Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "210122",
+     "Te Matai Forest",
+     "Public conservation land",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NZ-0321"
+  },
+  {
+   "area": "NZ",
+   "ref": "NZ-0347",
+   "name": "Inline Downs Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "33483",
+     "Tinline Downs Conservation Area",
+     "Public conservation land",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NZ-0347"
+  },
+  {
+   "area": "NZ",
+   "ref": "NZ-0560",
+   "name": "Horohoro Forest Reserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "97684",
+     "Horohoro Forest",
+     "Public conservation land",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NZ-0560"
+  },
+  {
+   "area": "NZ",
    "ref": "NZ-0624",
    "name": "Atuanui Forest Recreation Site",
    "old_grade": "pin",
@@ -17546,6 +17703,44 @@
   },
   {
    "area": "NZ",
+   "ref": "NZ-0670",
+   "name": "The Wolds Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "324605",
+     "Conservation Area A- The Wolds",
+     "Public conservation land",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NZ-0670"
+  },
+  {
+   "area": "NZ",
+   "ref": "NZ-0675",
+   "name": "The Wolds (B) Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "324604",
+     "Conservation Area B - The Wolds",
+     "Public conservation land",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NZ-0675"
+  },
+  {
+   "area": "NZ",
    "ref": "NZ-0676",
    "name": "Lake Alexandrina / Tekapo Ecological Park",
    "old_grade": "pin",
@@ -17562,6 +17757,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/NZ-0676"
+  },
+  {
+   "area": "NZ",
+   "ref": "NZ-0786",
+   "name": "Robertson FHF Acquisition Conservation Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "130300",
+     "Conservation Area - Robertson FHF Aquisition",
+     "Public conservation land",
+     "name (chat 11 YES)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/NZ-0786"
   },
   {
    "area": "PA",
@@ -18072,6 +18286,25 @@
    ],
    "by_answer": false,
    "pota": "https://pota.app/#/park/AU-8945"
+  },
+  {
+   "area": "BZ",
+   "ref": "BZ-0034",
+   "name": "Sibun Forest Reserve",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "339",
+     "Sibun",
+     "Belize: Belize Forest Department / Ministry FFESD (layer owner sfm.manager_FFE",
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/BZ-0034"
   },
   {
    "area": "CH",
@@ -26587,6 +26820,25 @@
    "pota": "https://pota.app/#/park/AE-0002"
   },
   {
+   "area": "BS",
+   "ref": "BS-0025",
+   "name": "The Retreat Garden National Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "16",
+     "The Retreat",
+     "Protected_Areas_of_The_Bahamas",
+     "pin inside + shared name words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/BS-0025"
+  },
+  {
    "area": "CD",
    "ref": "CD-0003",
    "name": "Upemba National Park",
@@ -26604,25 +26856,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/CD-0003"
-  },
-  {
-   "area": "CO",
-   "ref": "CO-0099",
-   "name": "La Selva State Conservation Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "20270",
-     "La Selva",
-     "Colombia RUNAP (national register of protected areas, DNP)",
-     "name (chat 11 YES)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/CO-0099"
   }
  ]
 }
