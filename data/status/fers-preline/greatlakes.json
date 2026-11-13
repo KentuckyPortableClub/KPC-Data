@@ -3,12 +3,10 @@
  "states": [
   "US-OH",
   "US-MI",
-  "US-IN",
-  "US-IL",
-  "US-WI"
+  "US-IN"
  ],
  "key_source": "build",
- "checked": "2026-11-13 14:20 UTC",
+ "checked": "2026-11-13 23:53 UTC",
  "areas": {
   "US-OH": {
    "hold": [],
@@ -62,41 +60,6 @@
    "held_key": "HELD KEY: build US-43293787778 has no person's sign-off yet; the 2-fers measured on it are held with it",
    "postcheck": "us-US-43293787778.json",
    "bad_pins": 1,
-   "overrides_no_still": 0
-  },
-  "US-IL": {
-   "hold": [],
-   "warn": [
-    "6 rule 18 row(s): US-1000 US-10786 US-11043 US-4092 US-4123 US-7872 (a person decides)",
-    "1 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-4236"
-   ],
-   "key_file": "data/us-key/US-IL.json",
-   "build": "US-43293787778",
-   "built": "2026-11-12 21:36 UTC",
-   "rules": "d4ebfafce438",
-   "parks": 219,
-   "outlines": 213,
-   "held_key": "HELD KEY: build US-43293787778 has no person's sign-off yet; the 2-fers measured on it are held with it",
-   "postcheck": "us-US-43293787778.json",
-   "bad_pins": 1,
-   "overrides_no_still": 0
-  },
-  "US-WI": {
-   "hold": [],
-   "warn": [
-    "1 review-pile HOLD row(s) still outlines: US-9800 (their 2-fers are 'not sure')",
-    "31 rule 18 row(s): US-10186 US-11931 US-11932 US-1439 US-1443 US-1446 US-1454 US-4243 US-4271 US-4278 (a person decides)",
-    "2 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-12601 US-9800"
-   ],
-   "key_file": "data/us-key/US-WI.json",
-   "build": "US-43293787778",
-   "built": "2026-11-12 21:36 UTC",
-   "rules": "d4ebfafce438",
-   "parks": 348,
-   "outlines": 334,
-   "held_key": "HELD KEY: build US-43293787778 has no person's sign-off yet; the 2-fers measured on it are held with it",
-   "postcheck": "us-US-43293787778.json",
-   "bad_pins": 2,
    "overrides_no_still": 0
   }
  },
