@@ -2571,33 +2571,39 @@
  },
  "last": {
   "areas": [
-   "US-RI"
+   "US-VT"
   ],
   "fcc_token": true,
   "manners": {
+   "dropped_queued": 9,
    "errors": 0,
-   "for_person_urls": [],
+   "for_person_urls": [
+    [
+     "https://epqs.nationalmap.gov/robots.txt",
+     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from epqs.nationalmap.gov"
+    ]
+   ],
    "host_rule": 0,
-   "requests": 0,
-   "rested": 0,
-   "robots": 0,
+   "requests": 1,
+   "rested": 1,
+   "robots": 1,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 0,
+   "camps": 10,
    "elevations": 0,
    "errors": 0,
    "needs_browser": 0,
-   "needs_key": 0,
+   "needs_key": 9,
    "no_page": 0,
    "not_official": 0,
    "ok": 0,
    "pages_read": 0,
-   "resting": 0,
+   "resting": 1,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 5
+   "skipped_fresh": 275
   },
   "when": "2026-11-13"
  },
