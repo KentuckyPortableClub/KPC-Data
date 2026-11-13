@@ -1,4 +1,4 @@
-# Scoreboard check (2026-11-12)
+# Scoreboard check (2026-11-13)
 
 Bot counts (data/us-key, data/ca-key tonight) next to chat 8's hand counts (KPC_Scoreboard_NA.csv, Oct 27 night).
 A difference is not an error by itself: the keys move nightly, retired parks are left out here, and chat 8 sorted BLM areas by name.
