@@ -49,7 +49,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-08 | 5 | data/fers/US-MS.json | HOLD | F-2 candidates 12 -> 0 (over 30% change); F-2 NOT SURE 9 -> 0 (over 30% change); F-2 pass2 missing: the 2-fer passes did not all run; F-2 pass3 missing: the 2-fer passes did not all run |
 | 2026-11-08 | 5 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
 | 2026-11-08 | 5 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
-| 2026-11-09 | 4 | data/docs/US-IN.json | HOLD | F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dA/846dfeb0e5/harmonie_trail.pdf?language_id=1 |
+| 2026-11-09 | 4 | data/docs/US-IN.json | HOLD | F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dA/846dfeb0e5/harmonie_trail.pdf?language_id=1 |
 | 2026-11-09 | 4 | data/fers/CA-NS.json | HOLD | F-2 pass2 missing: the 2-fer passes did not all run; F-2 pass3 missing: the 2-fer passes did not all run; F-2 only 4 of 6 live candidate pairs are still there (under 80%): a person looks (a rule change is released by han |
 | 2026-11-10 | 3 | data/truth/US-UT.json | HOLD | F-R2 6 OFF rows share the size 2,200,000.0 ac |
 | 2026-11-10 | 3 | data/truth/US-WA.json | HOLD | F-R2 5 OFF rows share the size 564.0 ac; F-R3 157 of 188 sized parks are OFF (over half: a reading problem?) |
@@ -362,7 +362,8 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-11 | 2 | data/world-key/FR.json | HOLD | F-O1 outlines 13877 -> 13388 (more than 1% lost); F-O3 retired parks still outlined: FR-4503, FR-4610, FR-4835, FR-5038, FR-5198 |
 | 2026-11-11 | 2 | data/world-key/JP.json | HOLD | F-O2 101 of 185 outlines carry a layer name that shares no word with the park (55%; live 97/185): outlines swapped to other parks? |
 | 2026-11-11 | 2 | data/world-key/LU.json | HOLD | F-O1 outlines 49 -> 46 (more than 1% lost) |
-| 2026-11-13 | 0 | data/world-key/GB.json | HOLD | F-4 unsure: PAD-US did not answer the shape test (HTTPError) |
+| 2026-11-13 | 0 | data/world-key/AE.json | HOLD | F-4 unsure: PAD-US did not answer the shape test (HTTPError) |
+| 2026-11-13 | 0 | data/world-key/IE.json | HOLD | F-4 unsure: PAD-US did not answer the shape test (HTTPError) |
 | ? | ? | data/ca-key/index.json | RELEASE |  |
 | ? | ? | data/pile-solver/AS.json | PASS |  |
 | ? | ? | data/pile-solver/AT.json | PASS |  |
@@ -426,7 +427,6 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/us-key/overrides-parks-01.json | PASS |  |
 | ? | ? | data/us-key/overrides-parks-02.json | PASS |  |
 | ? | ? | data/us-key/overrides.json | PASS |  |
-| ? | ? | data/world-key/AE.json | PASS |  |
 | ? | ? | data/world-key/AS.json | PASS |  |
 | ? | ? | data/world-key/AT.json | PASS |  |
 | ? | ? | data/world-key/AU.json | PASS |  |
@@ -456,6 +456,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/world-key/FI.json | PASS |  |
 | ? | ? | data/world-key/FO.json | PASS |  |
 | ? | ? | data/world-key/GA.json | PASS |  |
+| ? | ? | data/world-key/GB.json | PASS |  |
 | ? | ? | data/world-key/GE.json | PASS |  |
 | ? | ? | data/world-key/GL.json | PASS |  |
 | ? | ? | data/world-key/GR.json | PASS |  |
@@ -465,7 +466,6 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/world-key/HR.json | PASS |  |
 | ? | ? | data/world-key/HU.json | PASS |  |
 | ? | ? | data/world-key/ID.json | PASS |  |
-| ? | ? | data/world-key/IE.json | PASS |  |
 | ? | ? | data/world-key/IM.json | PASS |  |
 | ? | ? | data/world-key/IT.json | RELEASE |  |
 | ? | ? | data/world-key/JE.json | PASS |  |
