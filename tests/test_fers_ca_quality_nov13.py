@@ -281,5 +281,185 @@ for pth in (ROOT / '.github/scripts').glob('kpc_fers*.py'):
         block_hit.append(pth.name)
 check(not block_hit, f'nothing in fers scripts removes or skips canadaeast ({block_hit})')
 
+
+# ---- end to end (Brandon, 5:10 AM CT Nov 13): one held or broken 2-fer area never blocks the others
+def _fers_tree(t, live, hidden):
+    (t / 'data/waiting/in/data/fers').mkdir(parents=True)
+    (t / 'data/fers/stamps').mkdir(parents=True)
+    for name, doc_ in live.items():
+        (t / 'data/fers' / f'{name}.json').write_text(json.dumps(doc_) + '\n')
+    for name, raw in hidden.items():
+        path = t / 'data/waiting/in/data/fers' / f'{name}.json'
+        if isinstance(raw, (bytes, bytearray)):
+            path.write_bytes(raw)
+        else:
+            path.write_text(json.dumps(raw) + '\n')
+
+with tempfile.TemporaryDirectory() as t:
+    t = pathlib.Path(t)
+    ab_live = doc(spot(['CA-0100', 'CA-0101']))
+    qc_live = doc(spot(['CA-0200', 'CA-0201']), spot(['CA-0202', 'CA-0203']))
+    ab_new = doc(spot(['CA-0100', 'CA-0101']), spot(['CA-0102', 'CA-0103']))
+    qc_new = doc(spot(['CA-0200', 'CA-0201']))  # fewer, but we will hold QC by grade, not by 0-pair
+    _fers_tree(t, {'CA-AB': ab_live, 'CA-QC': qc_live}, {'CA-AB': ab_new, 'CA-QC': qc_new})
+    (t / 'data/fers/stamps/CA-AB.json').write_text(json.dumps({'run': 'CA-43332473942', 'rules': 'x', 'built_sha': 'ab'}) + '\n')
+    (t / 'data/fers/stamps/CA-QC.json').write_text(json.dumps({'run': 'CA-43332473942', 'rules': 'x', 'built_sha': 'qc'}) + '\n')
+    grade = {'RELEASE-READY': 'PARTIAL', 'areas': {
+        'CA-AB': {'RELEASE-READY': 'YES', 'no_worse_than_live': True},
+        'CA-QC': {'RELEASE-READY': 'NO'},
+    }}
+    (t / 'grade.json').write_text(json.dumps(grade) + '\n')
+    old_data, old_w, old_live, old_dry, old_argv = W.DATA, W.W, R.LIVE_FILE, R.DRY, sys.argv
+    W.DATA = t; W.W = t / 'data/waiting'; R.LIVE_FILE = t / 'data/fers/LIVE.json'; R.DRY = False
+    try:
+        sys.argv = ['kpc_fers_release_areas.py', '--areas', 'CA-AB CA-QC', '--grade', str(t / 'grade.json')]
+        from contextlib import redirect_stdout
+        import io
+        buf = io.StringIO()
+        with redirect_stdout(buf):
+            rc = R.main()
+        out = buf.getvalue()
+        ab_after = json.loads((t / 'data/fers/CA-AB.json').read_text())
+        qc_after = json.loads((t / 'data/fers/CA-QC.json').read_text())
+        check(rc == 0 and 'CA-AB promoted' in out and 'CA-QC kept live' in out,
+              f'2-fer e2e CLI: held CA-QC does not block CA-AB (rc={rc}; {out.strip()[:240]})')
+        check('CA-0102+CA-0103' in A.pairs_of(ab_after, live_only=True),
+              '2-fer e2e: CA-AB live is the promoted hidden copy')
+        check(A.pairs_of(qc_after, live_only=True).keys() == {'CA-0200+CA-0201', 'CA-0202+CA-0203'},
+              '2-fer e2e: held CA-QC keeps its live pairs')
+        check((t / 'data/waiting/in/data/fers/CA-QC.json').is_file()
+              and not (t / 'data/waiting/in/data/fers/CA-AB.json').is_file(),
+              '2-fer e2e: only the held area stays in the waiting room (only that area still needs a later promote / rebuild)')
+        ledger = json.loads((t / 'data/fers/LIVE.json').read_text())
+        check(ledger.get('areas', {}).get('CA-AB', {}).get('build') == 'CA-43332473942' and 'CA-QC' not in ledger.get('areas', {}),
+              '2-fer e2e: LIVE.json records only the promoted area')
+    finally:
+        W.DATA, W.W, R.LIVE_FILE, R.DRY, sys.argv = old_data, old_w, old_live, old_dry, old_argv
+
+# a broken hidden file for one area does not abort a green neighbour
+with tempfile.TemporaryDirectory() as t:
+    t = pathlib.Path(t)
+    ab_live = doc(spot(['CA-0100', 'CA-0101']))
+    qc_live = doc(spot(['CA-0200', 'CA-0201']))
+    ab_new = doc(spot(['CA-0100', 'CA-0101']), spot(['CA-0102', 'CA-0103']))
+    _fers_tree(t, {'CA-AB': ab_live, 'CA-QC': qc_live},
+               {'CA-AB': ab_new, 'CA-QC': b'NOT-JSON{{{'})
+    (t / 'data/fers/stamps/CA-AB.json').write_text(json.dumps({'run': 'CA-9', 'rules': 'x', 'built_sha': 'ab'}) + '\n')
+    grade = {'RELEASE-READY': 'YES', 'areas': {
+        'CA-AB': {'RELEASE-READY': 'YES', 'no_worse_than_live': True},
+        'CA-QC': {'RELEASE-READY': 'YES'},
+    }}
+    (t / 'grade.json').write_text(json.dumps(grade) + '\n')
+    old_data, old_w, old_live, old_dry, old_argv = W.DATA, W.W, R.LIVE_FILE, R.DRY, sys.argv
+    W.DATA = t; W.W = t / 'data/waiting'; R.LIVE_FILE = t / 'data/fers/LIVE.json'; R.DRY = False
+    try:
+        sys.argv = ['kpc_fers_release_areas.py', '--areas', 'CA-QC CA-AB', '--grade', str(t / 'grade.json')]
+        from contextlib import redirect_stdout
+        import io
+        buf = io.StringIO()
+        with redirect_stdout(buf):
+            rc = R.main()
+        out = buf.getvalue()
+        qc_after = json.loads((t / 'data/fers/CA-QC.json').read_text())
+        ab_after = json.loads((t / 'data/fers/CA-AB.json').read_text())
+        check(rc == 0 and 'CA-AB promoted' in out and 'CA-QC kept live' in out,
+              f'2-fer e2e: a broken hidden file for CA-QC does not block CA-AB (rc={rc}; {out.strip()[:240]})')
+        check(A.pairs_of(qc_after, live_only=True).keys() == {'CA-0200+CA-0201'},
+              '2-fer e2e: CA-QC live bytes stay when its hidden file is unreadable')
+        check('CA-0102+CA-0103' in A.pairs_of(ab_after, live_only=True),
+              '2-fer e2e: CA-AB still promotes after a broken neighbour')
+    finally:
+        W.DATA, W.W, R.LIVE_FILE, R.DRY, sys.argv = old_data, old_w, old_live, old_dry, old_argv
+
+
+# R5: a 2-fer area releases only if both key areas are released and current (cross-border needs both)
+with tempfile.TemporaryDirectory() as t:
+    t = pathlib.Path(t)
+    data, links = t / 'data-root', t / 'links'
+    ab_live = doc(spot(['CA-0100', 'CA-0101']))
+    ab_new = doc(spot(['CA-0100', 'CA-0101']), spot(['CA-0102', 'CA-0103']))
+    # cross-border pair in the hidden file
+    ab_xb = doc(spot(['CA-0110', 'US-4558']))
+    _fers_tree(data, {'CA-AB': ab_live}, {'CA-AB': ab_new})
+    (data / 'data/fers/stamps/CA-AB.json').write_text(json.dumps({'run': 'CA-9', 'rules': 'x', 'built_sha': 'ab'}) + '\n')
+    grade = {'RELEASE-READY': 'YES', 'areas': {'CA-AB': {'RELEASE-READY': 'YES', 'no_worse_than_live': True}}}
+    (data / 'grade.json').write_text(json.dumps(grade) + '\n')
+    # Links tree with no released key
+    (links / 'data/ca-key').mkdir(parents=True)
+    (links / 'data/ca-key/CA-AB.json').write_text(json.dumps({'parks': {'CA-0100': {}, 'CA-0101': {}, 'CA-0102': {}, 'CA-0103': {}}}) + '\n')
+    old_data, old_w, old_live, old_dry, old_argv, old_links = W.DATA, W.W, R.LIVE_FILE, R.DRY, sys.argv, os.environ.get('LINKS')
+    W.DATA = data; W.W = data / 'data/waiting'; R.LIVE_FILE = data / 'data/fers/LIVE.json'; R.DRY = False
+    os.environ['LINKS'] = str(links)
+    try:
+        sys.argv = ['kpc_fers_release_areas.py', '--areas', 'CA-AB', '--grade', str(data / 'grade.json')]
+        from contextlib import redirect_stdout
+        import io
+        buf = io.StringIO()
+        with redirect_stdout(buf):
+            rc = R.main()
+        out = buf.getvalue()
+        check(rc == 1 and 'CA-AB kept live' in out and 'not released' in out,
+              f'R5: CA-AB 2-fer stays live when the CA-AB key is not released (rc={rc}; {out.strip()[:200]})')
+        # now release the key
+        dest = links / 'data/released/ca-key'; dest.mkdir(parents=True)
+        (dest / 'CA-AB.json').write_text(json.dumps({'parks': {'CA-0100': {}}}) + '\n')
+        (links / 'data/released/RELEASED.json').write_text(json.dumps({'live': {'CA-AB': {'build': 'CA-9', 'sha': 'ab'}}}) + '\n')
+        # hidden still waiting (previous promote did not happen)
+        buf = io.StringIO()
+        with redirect_stdout(buf):
+            rc = R.main()
+        out = buf.getvalue()
+        check(rc == 0 and 'CA-AB promoted' in out,
+              f'R5: CA-AB 2-fer promotes once its key is released and current (rc={rc}; {out.strip()[:200]})')
+    finally:
+        W.DATA, W.W, R.LIVE_FILE, R.DRY, sys.argv = old_data, old_w, old_live, old_dry, old_argv
+        if old_links is None: os.environ.pop('LINKS', None)
+        else: os.environ['LINKS'] = old_links
+
+# cross-border: CA-AB hidden has CA-0110+US-4558; both keys required
+with tempfile.TemporaryDirectory() as t:
+    t = pathlib.Path(t)
+    data, links = t / 'data-root', t / 'links'
+    live = doc(spot(['CA-0100', 'CA-0101']))
+    hidden = doc(spot(['CA-0110', 'US-4558']))
+    _fers_tree(data, {'CA-AB': live}, {'CA-AB': hidden})
+    (data / 'data/fers/stamps/CA-AB.json').write_text(json.dumps({'run': 'CA-9', 'rules': 'x', 'built_sha': 'ab'}) + '\n')
+    (data / 'grade.json').write_text(json.dumps({'RELEASE-READY': 'YES', 'areas': {'CA-AB': {'RELEASE-READY': 'YES', 'no_worse_than_live': True}}}) + '\n')
+    (links / 'data/ca-key').mkdir(parents=True)
+    (links / 'data/us-key').mkdir(parents=True)
+    (links / 'data/ca-key/CA-AB.json').write_text(json.dumps({'parks': {'CA-0110': {}, 'CA-0100': {}, 'CA-0101': {}}}) + '\n')
+    (links / 'data/us-key/US-MT.json').write_text(json.dumps({'parks': {'US-4558': {}}}) + '\n')
+    (links / 'data/released/ca-key').mkdir(parents=True)
+    (links / 'data/released/ca-key/CA-AB.json').write_text(json.dumps({'parks': {'CA-0110': {}}}) + '\n')
+    (links / 'data/released/RELEASED.json').write_text(json.dumps({'live': {'CA-AB': {'build': 'CA-9', 'sha': 'ab'}}}) + '\n')
+    old_data, old_w, old_live, old_dry, old_argv, old_links = W.DATA, W.W, R.LIVE_FILE, R.DRY, sys.argv, os.environ.get('LINKS')
+    W.DATA = data; W.W = data / 'data/waiting'; R.LIVE_FILE = data / 'data/fers/LIVE.json'; R.DRY = False
+    os.environ['LINKS'] = str(links)
+    try:
+        sys.argv = ['kpc_fers_release_areas.py', '--areas', 'CA-AB', '--grade', str(data / 'grade.json')]
+        from contextlib import redirect_stdout
+        import io
+        buf = io.StringIO()
+        with redirect_stdout(buf):
+            rc = R.main()
+        out = buf.getvalue()
+        check(rc == 1 and 'US-MT key is not released' in out,
+              f'R5: cross-border CA-0110+US-4558 stays live until the US-MT key is also released ({out.strip()[:240]})')
+        (links / 'data/released/us-key').mkdir(parents=True)
+        (links / 'data/released/us-key/US-MT.json').write_text(json.dumps({'parks': {'US-4558': {}}}) + '\n')
+        idx = json.loads((links / 'data/released/RELEASED.json').read_text())
+        idx.setdefault('live', {})['US-MT'] = {'build': 'US-9', 'sha': 'mt'}
+        (links / 'data/released/RELEASED.json').write_text(json.dumps(idx) + '\n')
+        buf = io.StringIO()
+        with redirect_stdout(buf):
+            rc = R.main()
+        out = buf.getvalue()
+        check(rc == 0 and 'CA-AB promoted' in out,
+              f'R5: cross-border promotes once both key areas are released ({out.strip()[:200]})')
+    finally:
+        W.DATA, W.W, R.LIVE_FILE, R.DRY, sys.argv = old_data, old_w, old_live, old_dry, old_argv
+        if old_links is None: os.environ.pop('LINKS', None)
+        else: os.environ['LINKS'] = old_links
+
 print('ALL PASS' if ok else 'FAILED')
 sys.exit(0 if ok else 1)

@@ -10,6 +10,7 @@ Owner-run: started from the waiting-room workflow (mode release-areas). Does not
 import json, os, pathlib, re, sys, time
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import kpc_waiting_room as W  # noqa: E402
+import kpc_fers_annotate as A  # noqa: E402
 
 DRY = '--dry' in sys.argv
 BLOCKED_BUILDS = frozenset({'US-42797939226'})
@@ -72,7 +73,69 @@ def stamp_path(unit):
     return W.DATA / 'data' / 'fers' / 'stamps' / f'{unit}.json'
 
 
+def _links_root():
+    env = os.environ.get('LINKS') or os.environ.get('RELEASED_KEYS') or ''
+    return pathlib.Path(env) if env else None
+
+
+def _park_key_unit(ref, links):
+    """US-4558 / CA-0110 -> US-XX / CA-XX using the key files at LINKS, or None."""
+    if not links: return None
+    kind = 'us-key' if ref.startswith('US-') else 'ca-key' if ref.startswith('CA-') else None
+    if not kind: return None
+    folder = links / 'data' / kind
+    if not folder.is_dir():
+        folder = links / 'data' / 'released' / kind
+    if not folder.is_dir(): return None
+    for fp in folder.glob('US-??.json' if kind == 'us-key' else 'CA-??.json'):
+        try:
+            if ref in ((json.loads(fp.read_text()) or {}).get('parks') or {}):
+                return fp.stem
+        except (ValueError, OSError):
+            continue
+    return None
+
+
+def keys_not_ready(unit, doc):
+    """A 2-fer area releases only if both (all) of its key areas are released and current. Cross-border needs both."""
+    links = _links_root()
+    if links is None or not links.exists():
+        return ''  # this job has no Links tree; the waiting-room release-areas path sets LINKS when it can
+    need = {unit}
+    for pr in A.pairs_of(doc or {}, live_only=False):
+        for ref in pr.replace('+', ' ').split():
+            u = _park_key_unit(ref, links)
+            if u: need.add(u)
+    missing = []
+    for u in sorted(need):
+        if u.startswith('W-'):
+            missing.append(f'{u} (world key, 2-fers stay live)')
+            continue
+        kind = 'us-key' if u.startswith('US-') else 'ca-key' if u.startswith('CA-') else None
+        if not kind:
+            continue
+        rel = links / 'data' / 'released' / kind / f'{u}.json'
+        if not rel.is_file():
+            missing.append(f'{u} key is not released')
+            continue
+        # current: the live ledger at LINKS, when present, names this build; otherwise a released file is enough
+        live_idx = links / 'data' / 'released' / 'RELEASED.json'
+        if live_idx.is_file():
+            try:
+                idx = json.loads(live_idx.read_text())
+                rec = ((idx.get('live') or {}).get(u) or {})
+                # if live has a record, the released file must be the one it names (sha/build present)
+                if rec and not (rec.get('build') or rec.get('sha')):
+                    missing.append(f'{u} key live record has no build or sha')
+            except (ValueError, OSError):
+                missing.append(f'{u} key: RELEASED.json is unreadable')
+    if missing:
+        return 'key areas not released and current: ' + '; '.join(missing) + ' (2-fers keep live)'
+    return ''
+
+
 def why_not(unit, grade):
+
     if unit.startswith('W-'): return 'world 2-fers are never public'
     src = hidden_path(unit)
     if src is None: return 'no hidden file waiting for this area (live stays as it is)'
@@ -91,6 +154,8 @@ def why_not(unit, grade):
         # a drop is worse unless Quality explicitly said this area is no worse
         if n_new < 0.8 * n_live:
             return f'live pairs {n_live} -> {n_new}: worse than live'
+    why = keys_not_ready(unit, new)
+    if why: return why
     return ''
 
 
@@ -119,30 +184,35 @@ def main():
     promoted, kept = [], []
     t = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
     for unit in units:
-        why = why_not(unit, grade)
-        if why:
-            kept.append((unit, why))
-            print(f'::notice title=2-fer release::{unit} kept live ({why})')
-            continue
-        rel = hidden_path(unit)
-        rel_posix = rel.relative_to(W.W / 'in').as_posix() if rel else f'data/fers/{unit}.json'
-        if DRY:
+        try:
+            why = why_not(unit, grade)
+            if why:
+                kept.append((unit, why))
+                print(f'::notice title=2-fer release::{unit} kept live ({why})')
+                continue
+            rel = hidden_path(unit)
+            rel_posix = rel.relative_to(W.W / 'in').as_posix() if rel else f'data/fers/{unit}.json'
+            if DRY:
+                promoted.append(unit)
+                print(f'::notice title=2-fer release::{unit} would be promoted (dry run)')
+                continue
+            # refuse world / 0-pair already checked; still go through waiting-room promote so previous/ undo is kept
+            if W.promote_file(rel_posix, None, raw=rel) is False:
+                kept.append((unit, 'waiting room refused the promote'))
+                print(f'::notice title=2-fer release::{unit} kept live (waiting room refused the promote)')
+                continue
+            if rel: rel.unlink(missing_ok=True)
+            stamp = W.load(stamp_path(unit)) or {}
+            record_live(unit, {'build': str(stamp.get('run') or stamp.get('build') or ''),
+                               'rules': str(stamp.get('rules') or ''),
+                               'sha': str(stamp.get('built_sha') or ''),
+                               'time': t, 'key_source': str(stamp.get('key_source') or '')})
             promoted.append(unit)
-            print(f'::notice title=2-fer release::{unit} would be promoted (dry run)')
+            print(f'::notice title=2-fer release::{unit} promoted')
+        except Exception as e:  # noqa: BLE001  a broken hidden file or judge error on one area must not abort the others
+            kept.append((unit, f'cannot promote this area ({type(e).__name__}: {str(e)[:160]})'))
+            print(f'::notice title=2-fer release::{unit} kept live (cannot promote this area: {type(e).__name__})')
             continue
-        # refuse world / 0-pair already checked; still go through waiting-room promote so previous/ undo is kept
-        if W.promote_file(rel_posix, None, raw=rel) is False:
-            kept.append((unit, 'waiting room refused the promote'))
-            print(f'::notice title=2-fer release::{unit} kept live (waiting room refused the promote)')
-            continue
-        if rel: rel.unlink(missing_ok=True)
-        stamp = W.load(stamp_path(unit)) or {}
-        record_live(unit, {'build': str(stamp.get('run') or stamp.get('build') or ''),
-                           'rules': str(stamp.get('rules') or ''),
-                           'sha': str(stamp.get('built_sha') or ''),
-                           'time': t, 'key_source': str(stamp.get('key_source') or '')})
-        promoted.append(unit)
-        print(f'::notice title=2-fer release::{unit} promoted')
     print(f"::notice title=2-fer release::{len(promoted)} area(s) promoted, {len(kept)} kept live")
     if not promoted:
         print('::error title=2-fer release::no area was promoted. Nothing was released.')
