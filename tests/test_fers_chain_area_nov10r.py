@@ -62,8 +62,9 @@ def _plan(D, Lk, now):
 
 green = lambda *sts, rules='cur-us-key': {s: {'parks': 1, 'rules': rules} for s in sts}
 # KPC owner, 2026-11-12: the chain reads the ONE area list (.github/fers-areas.json); the old one-state chain areas (oh / mi / ut) are
-# retired, so these cases use whole areas: greatlakes (OH MI IN IL WI) and newyork (NY NJ)
-GL = ('OH', 'MI', 'IN', 'IL', 'WI'); NYA = ('NY', 'NJ')
+# retired, so these cases use whole areas: greatlakes (OH MI IN) and newyork (NY NJ)
+# Nov 13 CHANGED (KPC owner): greatlakes was split for memory (IL and WI are the lakeswest line now), so GL is its three states
+GL = ('OH', 'MI', 'IN'); NYA = ('NY', 'NJ')
 # ---- the per-state test
 idx = {'rules': 'old', 'failed': ['FL'], 'states': {'OH': {'rules': 'cur'}, 'TN': {'rules': 'old'}, 'FL': {'rules': 'cur'}, 'GA': {'rules': 'cur', '_not_built': 1}}}
 bad = dict(P.states_not_green(idx, 'us-key', ['US-OH', 'US-TN', 'US-FL', 'US-GA', 'US-MS'], 'cur'))

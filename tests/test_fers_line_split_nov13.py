@@ -66,9 +66,9 @@ check(mp['bot'] == areas and mp['chain'] == areas and not mp['same_tag_different
       'fers-area-map.json matches the split list and is not stale')
 
 # monthly full-rebuild cap uses the new area count
-check(cfg.get('full_cycle_days') == 90 and '16 areas' in cfg.get('full_cycle_about', '')
+check(cfg.get('full_cycle_days') == 90 and f'{len(areas)} areas' in cfg.get('full_cycle_about', '')   # Nov 13 CHANGED: the count follows the list (17 after the greatlakes split)
       and f'{math.ceil(len(areas) * 30 / 90)}' in cfg.get('full_cycle_about', ''),
-      'full-cycle note uses 16 areas (ceil(16 x 30 / 90) = 6 a monthly run)')
+      'full-cycle note uses the real area count (ceil(17 x 30 / 90) = 6 a monthly run)')
 
 # memory guard is still wrapped around the line fetcher and worker (the split is how those two lines stay under it)
 line = (ROOT / '.github/workflows/kpc-fers-line.yml').read_text(encoding='utf-8')

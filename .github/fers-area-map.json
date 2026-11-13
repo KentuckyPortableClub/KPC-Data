@@ -6,7 +6,8 @@
   "canadaeast": "CA-QC CA-NB CA-NS CA-PE CA-NL CA-SI CA-SP",
   "canadaon": "CA-ON",
   "canadawest": "CA-AB CA-SK CA-MB",
-  "greatlakes": "US-OH US-MI US-IN US-IL US-WI",
+  "greatlakes": "US-OH US-MI US-IN",
+  "lakeswest": "US-IL US-WI",
   "midatlantic": "US-PA US-MD US-DE US-DC",
   "mountain": "US-CO US-WY US-MT US-ID US-UT",
   "newengland": "US-MA US-RI US-CT US-VT US-NH US-ME",
@@ -137,8 +138,8 @@
    "chain": "mountain"
   },
   "US-IL": {
-   "bot": "greatlakes",
-   "chain": "greatlakes"
+   "bot": "lakeswest",
+   "chain": "lakeswest"
   },
   "US-IN": {
    "bot": "greatlakes",
@@ -269,8 +270,8 @@
    "chain": "pacific"
   },
   "US-WI": {
-   "bot": "greatlakes",
-   "chain": "greatlakes"
+   "bot": "lakeswest",
+   "chain": "lakeswest"
   },
   "US-WV": {
    "bot": "appalachia",
@@ -287,7 +288,8 @@
   "canadaeast": "CA-QC CA-NB CA-NS CA-PE CA-NL CA-SI CA-SP",
   "canadaon": "CA-ON",
   "canadawest": "CA-AB CA-SK CA-MB",
-  "greatlakes": "US-OH US-MI US-IN US-IL US-WI",
+  "greatlakes": "US-OH US-MI US-IN",
+  "lakeswest": "US-IL US-WI",
   "midatlantic": "US-PA US-MD US-DE US-DC",
   "mountain": "US-CO US-WY US-MT US-ID US-UT",
   "newengland": "US-MA US-RI US-CT US-VT US-NH US-ME",
@@ -308,6 +310,7 @@
   "canadaon",
   "canadawest",
   "greatlakes",
+  "lakeswest",
   "midatlantic",
   "mountain",
   "newengland",
