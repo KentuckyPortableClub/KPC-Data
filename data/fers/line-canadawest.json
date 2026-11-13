@@ -2,169 +2,106 @@
  "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
  "tag": "canadawest",
  "states": [
-  "CA-MB",
-  "CA-SK",
   "CA-AB",
-  "CA-BC",
-  "CA-YT",
-  "CA-NT",
-  "CA-NU"
+  "CA-SK",
+  "CA-MB"
  ],
- "since": "2026-11-09",
- "date": "2026-11-09 20:58 UTC",
+ "since": "2026-11-12",
+ "date": "2026-11-13 01:55 UTC",
  "verdict": "PART READY FOR CHAT 8",
  "why": [
-  "water not checked: CA-MB: 1 rows (the USGS water map / files had no answer there): never READY with one",
-  "water not checked: CA-BC: 15 rows (the USGS water map / files had no answer there): never READY with one",
-  "water not checked: CA-YT: 1 rows (the USGS water map / files had no answer there): never READY with one"
+  "water not checked: CA-AB: 4 rows (the USGS water map / files had no answer there): never READY with one",
+  "water not checked: CA-MB: 1 rows (the USGS water map / files had no answer there): never READY with one"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
   "FOUND": 0,
-  "DROPPED": 73,
+  "DROPPED": 29,
   "NEVER LOOKED AT": 0
  },
  "never_looked_at": {
   "counted": 0,
   "no_official_outline": 0,
-  "expected": 73,
+  "expected": 29,
   "limit": "10%",
   "by_reason": {}
  },
  "report": {
   "pass1": {
-   "date": "2026-11-09",
-   "pairs tested": 2189,
-   "pairs whose boxes touch": 2189
+   "date": "2026-11-12",
+   "pairs tested": 597,
+   "pairs whose boxes touch": 597
   },
   "pass2": {
-   "agree with the pass before": 1425,
-   "date": "2026-11-09",
-   "pairs tested": 442
+   "agree with the pass before": 612,
+   "date": "2026-11-12",
+   "pairs tested": 186
   },
   "pass3": {
-   "agree with the pass before": 502,
-   "date": "2026-11-09",
-   "pairs tested": 406
+   "agree with the pass before": 226,
+   "date": "2026-11-13",
+   "pairs tested": 181
   },
   "pass5": {
-   "checked": 101,
-   "date": "2026-11-09",
+   "checked": 50,
+   "date": "2026-11-13",
    "pairs tested": 0,
-   "still not checked": 18
+   "still not checked": 5
   }
  },
  "files": {
-  "CA-MB": "data/fers/CA-MB.json",
-  "CA-SK": "data/fers/CA-SK.json",
   "CA-AB": "data/fers/CA-AB.json",
-  "CA-BC": "data/fers/CA-BC.json",
-  "CA-YT": "data/fers/CA-YT.json",
-  "CA-NT": "data/fers/CA-NT.json",
-  "CA-NU": "data/fers/CA-NU.json"
- },
- "CA-MB": {
-  "rows": 70,
-  "live": 4,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {
-   "no ownership source for this row": 1,
-   "water not checked": 1
-  },
-  "dropped": 60,
-  "merged": 4
- },
- "water_weak": {
-  "CA-MB": 1,
-  "CA-BC": 15,
-  "CA-YT": 1
- },
- "CA-SK": {
-  "rows": 65,
-  "live": 24,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {
-   "no ownership source for this row": 10,
-   "no owner on the park record or in its name for Lenore Lake M": 1,
-   "one record covers two parks": 3,
-   "no park here owns land": 2
-  },
-  "dropped": 16,
-  "merged": 9
+  "CA-SK": "data/fers/CA-SK.json",
+  "CA-MB": "data/fers/CA-MB.json"
  },
  "CA-AB": {
-  "rows": 519,
-  "live": 36,
+  "rows": 536,
+  "live": 35,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "no ownership source for this row": 6,
-   "one record covers two parks": 1
+   "water not checked": 4,
+   "both parks join the same official records but a POTA pin is": 1,
+   "both parks join the same official records and both POTA pins": 2
   },
-  "dropped": 323,
-  "merged": 153
+  "dropped": 336,
+  "merged": 158
  },
- "CA-BC": {
-  "rows": 780,
-  "live": 29,
+ "water_weak": {
+  "CA-AB": 4,
+  "CA-MB": 1
+ },
+ "CA-SK": {
+  "rows": 69,
+  "live": 31,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "water not checked": 15,
-   "the official outline of Twin Falls Tea House National Histor": 1,
-   "no ownership source for this row": 32,
-   "the official outline of Ruckle Provincial Park could not be": 1,
-   "the official outline of Stewart Farm Historic Site could not": 1,
-   "the official outline of Riverview Park could not be read in": 1,
-   "the official outline of Rathtrevor Beach Provincial Park cou": 1,
-   "the official outline of Peace Arch Provincial Park could not": 1,
-   "the official outline of Fisgard Lighthouse National Historic": 1
+   "both parks join the same official records but a POTA pin is": 2,
+   "our saved copy of the official line for CA-6151 is only 0 m": 1,
+   "one record covers two parks": 7,
+   "both parks join the same official records and both POTA pins": 1
   },
-  "dropped": 568,
-  "merged": 129
+  "dropped": 16,
+  "merged": 11
  },
- "CA-YT": {
-  "rows": 68,
-  "live": 4,
+ "CA-MB": {
+  "rows": 79,
+  "live": 6,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
-   "this spot is 141 km from Old Crow Flats Special Management A": 1,
-   "water not checked": 1,
-   "no ownership source for this row": 2
+   "both parks join the same official records but a POTA pin is": 1,
+   "water not checked": 1
   },
-  "dropped": 4,
-  "merged": 56
- },
- "CA-NT": {
-  "rows": 34,
-  "live": 1,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {},
-  "dropped": 32,
-  "merged": 1
- },
- "CA-NU": {
-  "rows": 234,
-  "live": 4,
-  "waiting": 0,
-  "unfinished": 0,
-  "not_sure": {},
-  "dropped": 112,
-  "merged": 118
+  "dropped": 64,
+  "merged": 7
  },
  "states_ready": [
-  "CA-SK",
-  "CA-AB",
-  "CA-NT",
-  "CA-NU"
+  "CA-SK"
  ],
  "states_held": [
-  "CA-BC",
-  "CA-MB",
-  "CA-YT"
+  "CA-AB",
+  "CA-MB"
  ]
 }

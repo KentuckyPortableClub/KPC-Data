@@ -1,64 +1,12 @@
 {
  "area": "canadawest",
- "date": "2026-11-09",
+ "date": "2026-11-13",
  "states": [
-  "CA-MB",
-  "CA-SK",
   "CA-AB",
-  "CA-BC",
-  "CA-YT",
-  "CA-NT",
-  "CA-NU"
+  "CA-SK",
+  "CA-MB"
  ],
  "rows": [
-  {
-   "area": "canadawest",
-   "state": "CA-YT",
-   "refs": [
-    "CA-0106",
-    "CA-4623"
-   ],
-   "names": {
-    "CA-0106": "Vuntut National Park",
-    "CA-4623": "Old Crow Flats Special Management Area Habitat Protection Area"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "2176072.8 ac",
-   "sort": 2176072.8,
-   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0106+CA-4623@area@68.375,-138.616",
-   "sources": {
-    "CA-0106": "read from the agency 2026-10-29",
-    "CA-4623": "read from the agency 2026-10-29",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-YT",
-   "refs": [
-    "CA-0044",
-    "CA-0842"
-   ],
-   "names": {
-    "CA-0044": "Kluane National Park",
-    "CA-0842": "Asi Keyi Territorial Park"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "141897.6 ac",
-   "sort": 141897.6,
-   "reason": "candidate \u00b7 ['FED:NPS', 'STATE']",
-   "id": "CA-0044+CA-0842@area@61.491,-139.792",
-   "sources": {
-    "CA-0044": "read from the agency 2026-10-29",
-    "CA-0842": "read from the agency 2026-10-29",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
-  },
   {
    "area": "canadawest",
    "state": "CA-AB",
@@ -77,130 +25,11 @@
    "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
    "id": "CA-3116+CA-3118@area@58.401,-111.085",
    "sources": {
-    "CA-3116": "read from the agency 2026-11-06",
+    "CA-3116": "read from the agency 2026-11-13",
     "CA-3118": "read from the agency 2026-11-05",
     "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-AB",
-   "refs": [
-    "CA-0040",
-    "CA-3167"
-   ],
-   "names": {
-    "CA-0040": "Jasper National Park",
-    "CA-3167": "Willmore Wilderness Park"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "9571.7 ac",
-   "sort": 9571.7,
-   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0040+CA-3167@area@53.420,-119.522",
-   "sources": {
-    "CA-0040": "read from the agency 2026-11-05",
-    "CA-3167": "read from the agency 2026-11-05",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3724",
-    "CA-4065"
-   ],
-   "names": {
-    "CA-3724": "Lanz and Cox Islands Provincial Park",
-    "CA-4065": "Scott Islands Marine Protected Area"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "8433.6 ac",
-   "sort": 8433.6,
-   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-3724+CA-4065@area@50.813,-128.609",
-   "sources": {
-    "CA-3724": "read from the agency 2026-11-06",
-    "CA-4065": "read from the agency 2026-11-06",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-0711",
-    "CA-4065"
-   ],
-   "names": {
-    "CA-0711": "Cape Scott Provincial Park",
-    "CA-4065": "Scott Islands Marine Protected Area"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "7233.6 ac",
-   "sort": 7233.6,
-   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0711+CA-4065@area@50.698,-128.381",
-   "sources": {
-    "CA-0711": "read from the agency 2026-11-06",
-    "CA-4065": "read from the agency 2026-11-06",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-MB",
-   "refs": [
-    "CA-0541",
-    "CA-2460"
-   ],
-   "names": {
-    "CA-0541": "Fisher Bay Provincial Park",
-    "CA-2460": "Moose Creek Wildlife Management Area"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "6620.7 ac",
-   "sort": 6620.7,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "CA-0541+CA-2460@area@51.485,-97.108",
-   "sources": {
-    "CA-0541": "read from the agency 2026-11-05",
-    "CA-2460": "read from the agency 2026-11-05"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-AB",
-   "refs": [
-    "CA-0040",
-    "CA-3119"
-   ],
-   "names": {
-    "CA-0040": "Jasper National Park",
-    "CA-3119": "Rock Lake - Solomon Creek Wildland Provincial Park"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "2881.6 ac",
-   "sort": 2881.6,
-   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0040+CA-3119@area@53.232,-117.866",
-   "sources": {
-    "CA-0040": "read from the agency 2026-11-05",
-    "CA-3119": "read from the agency 2026-11-05",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
@@ -215,16 +44,16 @@
    },
    "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
-   "size": "2309.2 ac",
-   "sort": 2309.2,
+   "size": "13731.0 ac",
+   "sort": 13731.0,
    "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0040+CA-3845@area@53.226,-119.024",
+   "id": "CA-0040+CA-3845@area@52.584,-118.320",
    "sources": {
     "CA-0040": "read from the agency 2026-11-05",
-    "CA-3845": "read from the agency 2026-11-06",
+    "CA-3845": "read from the agency 2026-11-13",
     "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
@@ -239,87 +68,184 @@
    },
    "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
-   "size": "2309.2 ac",
-   "sort": 2309.2,
+   "size": "13731.0 ac",
+   "sort": 13731.0,
    "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0040+CA-3847@area@53.226,-119.024",
+   "id": "CA-0040+CA-3847@area@52.584,-118.320",
    "sources": {
     "CA-0040": "read from the agency 2026-11-05",
-    "CA-3847": "read from the agency 2026-11-06",
+    "CA-3847": "read from the agency 2026-11-13",
     "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
-   "state": "CA-YT",
+   "state": "CA-MB",
    "refs": [
-    "CA-0039",
-    "CA-4623"
+    "CA-0541",
+    "CA-2460"
    ],
    "names": {
-    "CA-0039": "Ivvavik National Park",
-    "CA-4623": "Old Crow Flats Special Management Area Habitat Protection Area"
-   },
-   "what": "not sure",
-   "kind": "area",
-   "size": "2133.6 ac",
-   "sort": 2133.6,
-   "reason": "this spot is 141 km from Old Crow Flats Special Management Area Habitat Protection Area's POTA pin: its outline may hold a far piece of a same-named place, or the record is a wrong join (held until checked; rule B13) \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0039+CA-4623@area@68.609,-140.170",
-   "sources": {
-    "CA-0039": "read from the agency 2026-10-29",
-    "CA-4623": "read from the agency 2026-10-29",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-4155",
-    "CA-5502"
-   ],
-   "names": {
-    "CA-4155": "Sturgeon Bank Wildlife Management Area",
-    "CA-5502": "Iona Beach Regional Park"
+    "CA-0541": "Fisher Bay Provincial Park",
+    "CA-2460": "Moose Creek Wildlife Management Area"
    },
    "what": "water map weak here (fix later: a better water source)",
    "kind": "area",
-   "size": "1743.4 ac",
-   "sort": 1743.4,
+   "size": "6620.8 ac",
+   "sort": 6620.8,
    "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "CA-4155+CA-5502@area@49.222,-123.246",
+   "id": "CA-0541+CA-2460@area@51.485,-97.108",
    "sources": {
-    "CA-4155": "read from the agency 2026-11-06",
-    "CA-5502": "read from the agency 2026-11-05"
+    "CA-0541": "read from the agency 2026-11-05",
+    "CA-2460": "saved copy (saved-copy-only map)"
    },
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
-   "state": "CA-YT",
+   "state": "CA-MB",
    "refs": [
-    "CA-0044",
-    "CA-0742"
+    "CA-0108",
+    "CA-2395"
    ],
    "names": {
-    "CA-0044": "Kluane National Park",
-    "CA-0742": "Tatshenshini-Alsek Provincial Park"
+    "CA-0108": "Wapusk National Park",
+    "CA-2395": "Churchill Wildlife Management Area"
    },
    "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
-   "size": "1708.5 ac",
-   "sort": 1708.5,
-   "reason": "candidate \u00b7 ['FED:NPS', 'STATE']",
-   "id": "CA-0044+CA-0742@area@60.000,-139.059",
+   "size": "4657.9 ac",
+   "sort": 4657.9,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0108+CA-2395@area@57.123,-92.801",
    "sources": {
-    "CA-0044": "read from the agency 2026-10-29",
-    "CA-0742": "read from the agency 2026-11-06",
+    "CA-0108": "read from the agency 2026-11-13",
+    "CA-2395": "saved copy (saved-copy-only map)",
     "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
+  },
+  {
+   "area": "canadawest",
+   "state": "CA-AB",
+   "refs": [
+    "CA-0005",
+    "CA-3829"
+   ],
+   "names": {
+    "CA-0005": "Banff National Park",
+    "CA-3829": "Mount Assiniboine Provincial Park"
+   },
+   "what": "water map weak here (fix later: a better water source)",
+   "kind": "area",
+   "size": "4240.2 ac",
+   "sort": 4240.2,
+   "reason": "water not checked (the USGS water map did not answer): run pass 5 \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0005+CA-3829@area@50.868,-115.637",
+   "sources": {
+    "CA-0005": "read from the agency 2026-11-05",
+    "CA-3829": "read from the agency 2026-11-13",
+    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-13"
+  },
+  {
+   "area": "canadawest",
+   "state": "CA-AB",
+   "refs": [
+    "CA-0040",
+    "CA-3582"
+   ],
+   "names": {
+    "CA-0040": "Jasper National Park",
+    "CA-3582": "Hamber Provincial Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "4103.1 ac",
+   "sort": 4103.1,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0040+CA-3582@area@52.463,-118.034",
+   "sources": {
+    "CA-0040": "read from the agency 2026-11-05",
+    "CA-3582": "read from the agency 2026-11-13",
+    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-13"
+  },
+  {
+   "area": "canadawest",
+   "state": "CA-AB",
+   "refs": [
+    "CA-0110",
+    "CA-0691"
+   ],
+   "names": {
+    "CA-0110": "Waterton Lakes National Park",
+    "CA-0691": "Akamina-Kishinena Provincial Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "2816.9 ac",
+   "sort": 2816.9,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0110+CA-0691@area@49.092,-114.132",
+   "sources": {
+    "CA-0110": "read from the agency 2026-11-05",
+    "CA-0691": "read from the agency 2026-11-13",
+    "USGS water": "saved copy of the USGS map, read 2026-11-05",
+    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-13"
+  },
+  {
+   "area": "canadawest",
+   "state": "CA-AB",
+   "refs": [
+    "CA-0664",
+    "CA-0726"
+   ],
+   "names": {
+    "CA-0664": "Peter Lougheed Provincial Park",
+    "CA-0726": "Height of the Rockies Provincial Park"
+   },
+   "what": "water map weak here (fix later: a better water source)",
+   "kind": "area",
+   "size": "2794.3 ac",
+   "sort": 2794.3,
+   "reason": "water not checked (the USGS water map did not answer): run pass 5",
+   "id": "CA-0664+CA-0726@area@50.548,-115.223",
+   "sources": {
+    "CA-0664": "read from the agency 2026-11-05",
+    "CA-0726": "read from the agency 2026-11-13",
+    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-13"
+  },
+  {
+   "area": "canadawest",
+   "state": "CA-AB",
+   "refs": [
+    "CA-0005",
+    "CA-0117"
+   ],
+   "names": {
+    "CA-0005": "Banff National Park",
+    "CA-0117": "Yoho National Park"
+   },
+   "what": "water map weak here (fix later: a better water source)",
+   "kind": "area",
+   "size": "2658.5 ac",
+   "sort": 2658.5,
+   "reason": "water not checked (the USGS water map did not answer): run pass 5",
+   "id": "CA-0005+CA-0117@area@51.570,-116.454",
+   "sources": {
+    "CA-0005": "read from the agency 2026-11-05",
+    "CA-0117": "read from the agency 2026-11-13",
+    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
@@ -339,79 +265,83 @@
    "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
    "id": "CA-2838+CA-2839@area@52.957,-108.152",
    "sources": {
-    "CA-2838": "read from the agency 2026-11-06",
-    "CA-2839": "read from the agency 2026-11-05",
+    "CA-2838": "read from the agency 2026-11-13",
+    "CA-2839": "read from the agency 2026-11-13",
     "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
    "state": "CA-AB",
    "refs": [
-    "CA-0115",
-    "CA-3118"
-   ],
-   "names": {},
-   "what": "water only (boat spot): is there really no land?",
-   "kind": "area",
-   "size": "943.1 ac",
-   "sort": 943.1,
-   "reason": "water only: boat or kayak",
-   "id": "CA-0115+CA-3118@area@58.090,-111.367",
-   "sources": {
-    "CA-0115": "read from the agency 2026-11-05",
-    "CA-3118": "read from the agency 2026-11-05",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-0742",
-    "US-4448"
+    "CA-0005",
+    "CA-0045"
    ],
    "names": {
-    "CA-0742": "Tatshenshini-Alsek Provincial Park",
-    "US-4448": "Tongass National Forest"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "756.3 ac",
-   "sort": 756.3,
-   "reason": "candidate \u00b7 ['FED:USFS', 'STATE']",
-   "id": "CA-0742+US-4448@area@59.569,-138.235",
-   "sources": {
-    "CA-0742": "read from the agency 2026-11-06",
-    "US-4448": "read from the agency 2026-11-06",
-    "USGS water": "saved copy of the USGS map, read 2026-11-05"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3539",
-    "CA-4026"
-   ],
-   "names": {
-    "CA-3539": "George C. Reifel Migratory Bird Sanctuary",
-    "CA-4026": "Roberts Bank Wildlife Management Area"
+    "CA-0005": "Banff National Park",
+    "CA-0045": "Kootenay National Park"
    },
    "what": "water map weak here (fix later: a better water source)",
    "kind": "area",
-   "size": "565.1 ac",
-   "sort": 565.1,
+   "size": "1347.8 ac",
+   "sort": 1347.8,
    "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "CA-3539+CA-4026@area@49.098,-123.198",
+   "id": "CA-0005+CA-0045@area@51.088,-115.920",
    "sources": {
-    "CA-3539": "read from the agency 2026-11-06",
-    "CA-4026": "read from the agency 2026-11-06"
+    "CA-0005": "read from the agency 2026-11-05",
+    "CA-0045": "read from the agency 2026-11-13",
+    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
+  },
+  {
+   "area": "canadawest",
+   "state": "CA-AB",
+   "refs": [
+    "CA-0040",
+    "CA-3167"
+   ],
+   "names": {
+    "CA-0040": "Jasper National Park",
+    "CA-3167": "Willmore Wilderness Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "527.0 ac",
+   "sort": 527.0,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0040+CA-3167@area@53.465,-118.677",
+   "sources": {
+    "CA-0040": "read from the agency 2026-11-05",
+    "CA-3167": "read from the agency 2026-11-05",
+    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-13"
+  },
+  {
+   "area": "canadawest",
+   "state": "CA-AB",
+   "refs": [
+    "CA-0005",
+    "CA-0726"
+   ],
+   "names": {
+    "CA-0005": "Banff National Park",
+    "CA-0726": "Height of the Rockies Provincial Park"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "492.2 ac",
+   "sort": 492.2,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0005+CA-0726@area@50.712,-115.385",
+   "sources": {
+    "CA-0005": "read from the agency 2026-11-05",
+    "CA-0726": "read from the agency 2026-11-13",
+    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
@@ -435,78 +365,7 @@
     "CA-3118": "read from the agency 2026-11-05",
     "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-AB",
-   "refs": [
-    "CA-0040",
-    "CA-3163"
-   ],
-   "names": {
-    "CA-0040": "Jasper National Park",
-    "CA-3163": "Whitehorse Wildland Provincial Park"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "460.0 ac",
-   "sort": 460.0,
-   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0040+CA-3163@area@52.897,-117.405",
-   "sources": {
-    "CA-0040": "read from the agency 2026-11-05",
-    "CA-3163": "read from the agency 2026-11-05",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3191",
-    "US-4448"
-   ],
-   "names": {
-    "CA-3191": "Atlin/Teix'gi Aan Tlein Provincial Park",
-    "US-4448": "Tongass National Forest"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "367.0 ac",
-   "sort": 367.0,
-   "reason": "candidate \u00b7 ['FED:USFS', 'STATE']",
-   "id": "CA-3191+US-4448@area@58.935,-134.328",
-   "sources": {
-    "CA-3191": "read from the agency 2026-11-06",
-    "US-4448": "read from the agency 2026-11-06",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-0001",
-    "CA-3539"
-   ],
-   "names": {
-    "CA-0001": "Alaksen National Wildlife Area",
-    "CA-3539": "George C. Reifel Migratory Bird Sanctuary"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "354.3 ac",
-   "sort": 354.3,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "CA-0001+CA-3539@area@49.103,-123.179",
-   "sources": {
-    "CA-0001": "read from the agency 2026-11-06",
-    "CA-3539": "read from the agency 2026-11-06"
-   },
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
@@ -526,11 +385,11 @@
    "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
    "id": "CA-2894+CA-2896@area@50.423,-104.586",
    "sources": {
-    "CA-2894": "read from the agency 2026-11-05",
-    "CA-2896": "read from the agency 2026-11-06",
+    "CA-2894": "read from the agency 2026-11-13",
+    "CA-2896": "read from the agency 2026-11-13",
     "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
@@ -551,308 +410,79 @@
    "id": "CA-0672+CA-3125@area@55.205,-119.077",
    "sources": {
     "CA-0672": "read from the agency 2026-11-05",
-    "CA-3125": "read from the agency 2026-11-06",
+    "CA-3125": "read from the agency 2026-11-13",
     "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-SK",
-   "refs": [
-    "CA-0081",
-    "CA-2717"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "233.2 ac",
-   "sort": 233.2,
-   "reason": "no owner on the park record or in its name for Lenore Lake Migratory Bird Sanctuary (a person adds it)",
-   "id": "CA-0081+CA-2717@area@52.437,-104.995",
-   "sources": {
-    "CA-0081": "read from the agency 2026-11-06",
-    "CA-2717": "read from the agency 2026-11-05",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-YT",
-   "refs": [
-    "CA-0841",
-    "CA-3622"
-   ],
-   "names": {
-    "CA-0841": "Agay Mene Territorial Park",
-    "CA-3622": "Indian Lake - Hitchcock Creek Conservation Area"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "218.1 ac",
-   "sort": 218.1,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "CA-0841+CA-3622@area@60.001,-133.790",
-   "sources": {
-    "CA-0841": "read from the agency 2026-10-29",
-    "CA-3622": "read from the agency 2026-11-06"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-0742",
-    "US-0029"
-   ],
-   "names": {
-    "CA-0742": "Tatshenshini-Alsek Provincial Park",
-    "US-0029": "Glacier Bay National Preserve"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "206.4 ac",
-   "sort": 206.4,
-   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:NPS', 'STATE']",
-   "id": "CA-0742+US-0029@area@59.106,-137.546",
-   "sources": {
-    "CA-0742": "read from the agency 2026-11-06",
-    "US-0029": "read from the agency 2026-11-06"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-0742",
-    "US-12607"
-   ],
-   "names": {
-    "CA-0742": "Tatshenshini-Alsek Provincial Park",
-    "US-12607": "Glacier Bay National Park"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "200.4 ac",
-   "sort": 200.4,
-   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:NPS', 'STATE']",
-   "id": "CA-0742+US-12607@area@59.106,-137.546",
-   "sources": {
-    "CA-0742": "read from the agency 2026-11-06",
-    "US-12607": "read from the agency 2026-11-06"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3834",
-    "CA-4027"
-   ],
-   "names": {
-    "CA-3834": "Mount Elphinstone Provincial Park",
-    "CA-4027": "Roberts Creek Provincial Park"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "177.6 ac",
-   "sort": 177.6,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "CA-3834+CA-4027@area@49.432,-123.613",
-   "sources": {
-    "CA-3834": "read from the agency 2026-11-06",
-    "CA-4027": "read from the agency 2026-11-05"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-AB",
-   "refs": [
-    "CA-0005",
-    "CA-3829"
-   ],
-   "names": {
-    "CA-0005": "Banff National Park",
-    "CA-3829": "Mount Assiniboine Provincial Park"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "175.2 ac",
-   "sort": 175.2,
-   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0005+CA-3829@area@50.948,-115.610",
-   "sources": {
-    "CA-0005": "read from the agency 2026-11-05",
-    "CA-3829": "read from the agency 2026-11-06",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-AB",
-   "refs": [
-    "CA-0115",
-    "CA-2988"
-   ],
-   "names": {},
-   "what": "water only (boat spot): is there really no land?",
-   "kind": "area",
-   "size": "166.8 ac",
-   "sort": 166.8,
-   "reason": "water only: boat or kayak",
-   "id": "CA-0115+CA-2988@area@58.856,-111.260",
-   "sources": {
-    "CA-0115": "read from the agency 2026-11-05",
-    "CA-2988": "read from the agency 2026-11-05",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3506",
-    "CA-3615"
-   ],
-   "names": {
-    "CA-3506": "Fiordland Conservation Area",
-    "CA-3615": "Huchsduwachsdu Nuyem Jees / Kitlope Heritage Conservation Area"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "161.2 ac",
-   "sort": 161.2,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "CA-3506+CA-3615@area@52.889,-127.870",
-   "sources": {
-    "CA-3506": "read from the agency 2026-11-06",
-    "CA-3615": "read from the agency 2026-11-06"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-AB",
-   "refs": [
-    "CA-0115",
-    "CA-2932"
-   ],
-   "names": {
-    "CA-0115": "Wood Buffalo National Park",
-    "CA-2932": "Birch River Wildland Provincial Park"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "146.0 ac",
-   "sort": 146.0,
-   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0115+CA-2932@area@58.079,-114.000",
-   "sources": {
-    "CA-0115": "read from the agency 2026-11-05",
-    "CA-2932": "read from the agency 2026-11-05",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-0750",
-    "CA-3543"
-   ],
-   "names": {
-    "CA-0750": "Yahk Provincial Park",
-    "CA-3543": "Gilnockie Creek Ecological Reserve"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "133.6 ac",
-   "sort": 133.6,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "CA-0750+CA-3543@area@49.013,-115.650",
-   "sources": {
-    "CA-0750": "read from the agency 2026-11-05",
-    "CA-3543": "read from the agency 2026-11-06"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3542",
-    "CA-3543"
-   ],
-   "names": {
-    "CA-3542": "Gilnockie Provincial Park",
-    "CA-3543": "Gilnockie Creek Ecological Reserve"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "133.6 ac",
-   "sort": 133.6,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "CA-3542+CA-3543@area@49.013,-115.650",
-   "sources": {
-    "CA-3542": "read from the agency 2026-11-05",
-    "CA-3543": "read from the agency 2026-11-06"
-   },
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
    "state": "CA-AB",
    "refs": [
     "CA-0040",
-    "CA-3161"
+    "CA-3119"
    ],
    "names": {
     "CA-0040": "Jasper National Park",
-    "CA-3161": "White Goat Natural Area"
+    "CA-3119": "Rock Lake - Solomon Creek Wildland Provincial Park"
    },
    "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
-   "size": "105.3 ac",
-   "sort": 105.3,
+   "size": "199.7 ac",
+   "sort": 199.7,
    "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0040+CA-3161@area@52.214,-117.026",
+   "id": "CA-0040+CA-3119@area@53.342,-118.160",
    "sources": {
     "CA-0040": "read from the agency 2026-11-05",
-    "CA-3161": "read from the agency 2026-11-05",
+    "CA-3119": "read from the agency 2026-11-05",
     "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
-   "state": "CA-BC",
+   "state": "CA-AB",
    "refs": [
-    "CA-3672",
-    "CA-3674"
+    "CA-0115",
+    "CA-3118"
+   ],
+   "names": {},
+   "what": "water only (boat spot): is there really no land?",
+   "kind": "area",
+   "size": "107.9 ac",
+   "sort": 107.9,
+   "reason": "water only: boat or kayak",
+   "id": "CA-0115+CA-3118@area@58.558,-111.148",
+   "sources": {
+    "CA-0115": "read from the agency 2026-11-05",
+    "CA-3118": "read from the agency 2026-11-05",
+    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-13"
+  },
+  {
+   "area": "canadawest",
+   "state": "CA-MB",
+   "refs": [
+    "CA-0084",
+    "CA-2476"
    ],
    "names": {
-    "CA-3672": "Khutzeymateen Provincial Park",
-    "CA-3674": "Khyex Conservation Area"
+    "CA-0084": "Riding Mountain National Park",
+    "CA-2476": "Parkland Wildlife Management Area"
    },
-   "what": "water map weak here (fix later: a better water source)",
+   "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
-   "size": "100.7 ac",
-   "sort": 100.7,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "CA-3672+CA-3674@area@54.519,-129.713",
+   "size": "86.9 ac",
+   "sort": 86.9,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0084+CA-2476@area@50.770,-100.612",
    "sources": {
-    "CA-3672": "read from the agency 2026-11-06",
-    "CA-3674": "read from the agency 2026-11-06"
+    "CA-0084": "read from the agency 2026-11-13",
+    "CA-2476": "read from the agency 2026-11-13",
+    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
@@ -872,35 +502,11 @@
    "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
    "id": "CA-0083+CA-2476@area@50.770,-100.612",
    "sources": {
-    "CA-0083": "read from the agency 2026-11-06",
-    "CA-2476": "read from the agency 2026-11-05",
+    "CA-0083": "read from the agency 2026-11-13",
+    "CA-2476": "read from the agency 2026-11-13",
     "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-MB",
-   "refs": [
-    "CA-0084",
-    "CA-2476"
-   ],
-   "names": {
-    "CA-0084": "Riding Mountain National Park",
-    "CA-2476": "Parkland Wildlife Management Area"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "79.8 ac",
-   "sort": 79.8,
-   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0084+CA-2476@area@50.770,-100.612",
-   "sources": {
-    "CA-0084": "read from the agency 2026-11-06",
-    "CA-2476": "read from the agency 2026-11-05",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
@@ -920,11 +526,11 @@
    "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
    "id": "CA-0051+CA-1118@area@51.354,-105.214",
    "sources": {
-    "CA-0051": "read from the agency 2026-11-06",
+    "CA-0051": "read from the agency 2026-11-13",
     "CA-1118": "read from the agency 2026-11-05",
     "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
@@ -945,704 +551,187 @@
    "id": "CA-1118+CA-2711@area@51.354,-105.214",
    "sources": {
     "CA-1118": "read from the agency 2026-11-05",
-    "CA-2711": "read from the agency 2026-11-06",
+    "CA-2711": "read from the agency 2026-11-13",
     "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
-   "state": "CA-BC",
+   "state": "CA-AB",
    "refs": [
-    "CA-0018",
-    "CA-3362"
+    "CA-0115",
+    "CA-2932"
    ],
    "names": {
-    "CA-0018": "Columbia National Wildlife Area",
-    "CA-3362": "Columbia Wetlands Wildlife Management Area"
+    "CA-0115": "Wood Buffalo National Park",
+    "CA-2932": "Birch River Wildland Provincial Park"
    },
    "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
-   "size": "60.9 ac",
-   "sort": 60.9,
+   "size": "60.0 ac",
+   "sort": 60.0,
    "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0018+CA-3362@area@50.929,-116.401",
+   "id": "CA-0115+CA-2932@area@58.079,-114.000",
    "sources": {
-    "CA-0018": "read from the agency 2026-11-06",
-    "CA-3362": "read from the agency 2026-11-06",
+    "CA-0115": "read from the agency 2026-11-05",
+    "CA-2932": "read from the agency 2026-11-05",
     "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-5498",
-    "CA-5501"
-   ],
-   "names": {
-    "CA-5498": "Capilano River Regional Park",
-    "CA-5501": "Grouse Mountain Regional Park"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "59.3 ac",
-   "sort": 59.3,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "CA-5498+CA-5501@area@49.362,-123.105",
-   "sources": {
-    "CA-5498": "read from the agency 2026-11-05",
-    "CA-5501": "read from the agency 2026-11-05"
-   },
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
    "state": "CA-AB",
    "refs": [
     "CA-0040",
-    "CA-3582"
+    "CA-3163"
    ],
    "names": {
     "CA-0040": "Jasper National Park",
-    "CA-3582": "Hamber Provincial Park"
+    "CA-3163": "Whitehorse Wildland Provincial Park"
    },
    "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
-   "size": "54.9 ac",
-   "sort": 54.9,
+   "size": "55.9 ac",
+   "sort": 55.9,
    "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0040+CA-3582@area@52.463,-118.034",
+   "id": "CA-0040+CA-3163@area@52.897,-117.405",
    "sources": {
     "CA-0040": "read from the agency 2026-11-05",
-    "CA-3582": "read from the agency 2026-11-06",
+    "CA-3163": "read from the agency 2026-11-05",
     "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3917",
-    "CA-4258"
-   ],
-   "names": {
-    "CA-3917": "Oak Bay Islands Ecological Reserve",
-    "CA-4258": "Victoria Harbour Migratory Bird Sanctuary"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "44.6 ac",
-   "sort": 44.6,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "CA-3917+CA-4258@area@48.444,-123.272",
-   "sources": {
-    "CA-3917": "read from the agency 2026-11-06",
-    "CA-4258": "read from the agency 2026-11-06"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3209",
-    "CA-4044"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "25.9 ac",
-   "sort": 25.9,
-   "reason": "the official outline of Ruckle Provincial Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3209+CA-4044@area@48.771,-123.401",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-0105",
-    "CA-4253"
-   ],
-   "names": {
-    "CA-0105": "Vaseux-Bighorn National Wildlife Area",
-    "CA-4253": "Vaseux Lake Provincial Park"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "21.2 ac",
-   "sort": 21.2,
-   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0105+CA-4253@area@49.299,-119.530",
-   "sources": {
-    "CA-0105": "read from the agency 2026-11-06",
-    "CA-4253": "read from the agency 2026-11-06",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-0105",
-    "CA-4254"
-   ],
-   "names": {
-    "CA-0105": "Vaseux-Bighorn National Wildlife Area",
-    "CA-4254": "Vaseux Lake Migratory Bird Sanctuary"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "21.2 ac",
-   "sort": 21.2,
-   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0105+CA-4254@area@49.299,-119.530",
-   "sources": {
-    "CA-0105": "read from the agency 2026-11-06",
-    "CA-4254": "read from the agency 2026-11-06",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3245",
-    "CA-6382"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "16.9 ac",
-   "sort": 16.9,
-   "reason": "the official outline of Stewart Farm Historic Site could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3245+CA-6382@area@49.065,-122.844",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-4218",
-    "CA-4258"
-   ],
-   "names": {
-    "CA-4218": "Trial Islands Ecological Reserve",
-    "CA-4258": "Victoria Harbour Migratory Bird Sanctuary"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "14.5 ac",
-   "sort": 14.5,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "CA-4218+CA-4258@area@48.401,-123.304",
-   "sources": {
-    "CA-4218": "read from the agency 2026-11-06",
-    "CA-4258": "read from the agency 2026-11-06"
-   },
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
    "state": "CA-AB",
    "refs": [
-    "CA-0005",
-    "CA-0726"
-   ],
-   "names": {
-    "CA-0005": "Banff National Park",
-    "CA-0726": "Height of the Rockies Provincial Park"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "13.6 ac",
-   "sort": 13.6,
-   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0005+CA-0726@area@50.712,-115.385",
-   "sources": {
-    "CA-0005": "read from the agency 2026-11-05",
-    "CA-0726": "read from the agency 2026-11-06",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3624",
-    "CA-4122"
+    "CA-0115",
+    "CA-2988"
    ],
    "names": {},
    "what": "water only (boat spot): is there really no land?",
    "kind": "area",
-   "size": "10.5 ac",
-   "sort": 10.5,
+   "size": "18.6 ac",
+   "sort": 18.6,
    "reason": "water only: boat or kayak",
-   "id": "CA-3624+CA-4122@area@49.226,-119.545",
+   "id": "CA-0115+CA-2988@area@59.557,-111.454",
    "sources": {
-    "CA-3624": "read from the agency 2026-11-05",
-    "CA-4122": "read from the agency 2026-11-06",
+    "CA-0115": "read from the agency 2026-11-05",
+    "CA-2988": "read from the agency 2026-11-05",
     "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-SK",
-   "refs": [
-    "CA-6152",
-    "CA-6153"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "trail",
-   "size": "412 yd of line",
-   "sort": 9.4,
-   "reason": "no park here owns land (designations only): no owner on the records",
-   "id": "CA-6152+CA-6153@trail@53.920,-106.069",
-   "sources": {
-    "CA-6152": "official line (trails bot)",
-    "CA-6153": "official line (trails bot)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-4191",
-    "CA-4258"
-   ],
-   "names": {
-    "CA-4191": "Ten Mile Point Ecological Reserve",
-    "CA-4258": "Victoria Harbour Migratory Bird Sanctuary"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "7.9 ac",
-   "sort": 7.9,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "CA-4191+CA-4258@area@48.451,-123.266",
-   "sources": {
-    "CA-4191": "read from the agency 2026-11-06",
-    "CA-4258": "read from the agency 2026-11-06"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-0045",
-    "CA-3829"
-   ],
-   "names": {
-    "CA-0045": "Kootenay National Park",
-    "CA-3829": "Mount Assiniboine Provincial Park"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "7.8 ac",
-   "sort": 7.8,
-   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0045+CA-3829@area@51.066,-115.850",
-   "sources": {
-    "CA-0045": "read from the agency 2026-11-06",
-    "CA-3829": "read from the agency 2026-11-06",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3944",
-    "CA-4012"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "5.4 ac",
-   "sort": 5.4,
-   "reason": "the official outline of Rathtrevor Beach Provincial Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3944+CA-4012@area@49.317,-124.251",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3567",
-    "US-4448"
-   ],
-   "names": {
-    "CA-3567": "Great Glacier Provincial Park",
-    "US-4448": "Tongass National Forest"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "5.3 ac",
-   "sort": 5.3,
-   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:USFS', 'STATE']",
-   "id": "CA-3567+US-4448@area@56.804,-131.879",
-   "sources": {
-    "CA-3567": "read from the agency 2026-11-06",
-    "US-4448": "read from the agency 2026-11-06"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-5501",
-    "CA-5503"
-   ],
-   "names": {
-    "CA-5501": "Grouse Mountain Regional Park",
-    "CA-5503": "Lynn Headwaters Regional Park"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "5.1 ac",
-   "sort": 5.1,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "CA-5501+CA-5503@area@49.403,-123.081",
-   "sources": {
-    "CA-5501": "read from the agency 2026-11-05",
-    "CA-5503": "read from the agency 2026-11-05"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3327",
-    "US-0055"
-   ],
-   "names": {
-    "CA-3327": "Chilliwack Lake Provincial Park",
-    "US-0055": "North Cascades National Park"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "4.9 ac",
-   "sort": 4.9,
-   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:NPS', 'STATE']",
-   "id": "CA-3327+US-0055@area@49.000,-121.387",
-   "sources": {
-    "CA-3327": "read from the agency 2026-11-06",
-    "US-0055": "read from the agency 2026-11-06",
-    "USGS water": "saved copy of the USGS map, read 2026-11-05"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3328",
-    "CA-5346"
-   ],
-   "names": {
-    "CA-3328": "Chilliwack River Provincial Park",
-    "CA-5346": "Thompson Regional Park"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "4.4 ac",
-   "sort": 4.4,
-   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['LOCAL', 'STATE']",
-   "id": "CA-3328+CA-5346@area@49.080,-121.880",
-   "sources": {
-    "CA-3328": "read from the agency 2026-11-05",
-    "CA-5346": "read from the agency 2026-11-06"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-AB",
-   "refs": [
-    "CA-0110",
-    "CA-0691"
-   ],
-   "names": {
-    "CA-0110": "Waterton Lakes National Park",
-    "CA-0691": "Akamina-Kishinena Provincial Park"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "4.1 ac",
-   "sort": 4.1,
-   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0110+CA-0691@area@49.092,-114.132",
-   "sources": {
-    "CA-0110": "read from the agency 2026-11-05",
-    "CA-0691": "read from the agency 2026-11-06",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-0742",
-    "US-4592"
-   ],
-   "names": {
-    "CA-0742": "Tatshenshini-Alsek Provincial Park",
-    "US-4592": "Haines State Forest"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "3.6 ac",
-   "sort": 3.6,
-   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['STAT', 'STATE']",
-   "id": "CA-0742+US-4592@area@59.450,-136.364",
-   "sources": {
-    "CA-0742": "read from the agency 2026-11-06",
-    "US-4592": "read from the agency 2026-11-05",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3303",
-    "CA-3615"
-   ],
-   "names": {
-    "CA-3303": "Cascade-Sutslem Conservation Area",
-    "CA-3615": "Huchsduwachsdu Nuyem Jees / Kitlope Heritage Conservation Area"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "2.8 ac",
-   "sort": 2.8,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "CA-3303+CA-3615@area@52.774,-127.728",
-   "sources": {
-    "CA-3303": "read from the agency 2026-11-06",
-    "CA-3615": "read from the agency 2026-11-06"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-SK",
-   "refs": [
-    "CA-6146",
-    "CA-6147"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "trail",
-   "size": "113 yd of line",
-   "sort": 2.6,
-   "reason": "no park here owns land (designations only): no owner on the records",
-   "id": "CA-6146+CA-6147@trail@53.676,-106.669",
-   "sources": {
-    "CA-6146": "official line (trails bot)",
-    "CA-6147": "official line (trails bot)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-0032",
-    "CA-3393"
-   ],
-   "names": {
-    "CA-0032": "Gwaii Haanas and Haida National Park",
-    "CA-3393": "Daawuuxusda Heritage Site Conservation Area"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "2.0 ac",
-   "sort": 2.0,
-   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0032+CA-3393@area@52.734,-132.106",
-   "sources": {
-    "CA-0032": "read from the agency 2026-11-06",
-    "CA-3393": "read from the agency 2026-11-06",
-    "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3615",
-    "CA-4243"
-   ],
-   "names": {
-    "CA-3615": "Huchsduwachsdu Nuyem Jees / Kitlope Heritage Conservation Area",
-    "CA-4243": "Upper Kimsquit River Conservancy Protected Area"
-   },
-   "what": "water map weak here (fix later: a better water source)",
-   "kind": "area",
-   "size": "1.3 ac",
-   "sort": 1.3,
-   "reason": "water not checked (the USGS water map did not answer): run pass 5",
-   "id": "CA-3615+CA-4243@area@53.087,-127.442",
-   "sources": {
-    "CA-3615": "read from the agency 2026-11-06",
-    "CA-4243": "read from the agency 2026-11-06"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3245",
-    "CA-5497"
-   ],
-   "names": {
-    "CA-3245": "Boundary Bay Wildlife Management Area",
-    "CA-5497": "Boundary Bay Regional Park"
-   },
-   "what": "more than one owner on the patch (all public): live, look later",
-   "kind": "area",
-   "size": "1.2 ac",
-   "sort": 1.2,
-   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['LOCAL', 'STATE']",
-   "id": "CA-3245+CA-5497@area@49.016,-123.044",
-   "sources": {
-    "CA-3245": "read from the agency 2026-11-06",
-    "CA-5497": "read from the agency 2026-11-05"
-   },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3948",
-    "US-3246"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.9 ac",
-   "sort": 0.9,
-   "reason": "the official outline of Peace Arch Provincial Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3948+US-3246@area@49.002,-122.757",
-   "sources": {},
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
    "state": "CA-AB",
    "refs": [
     "CA-0040",
-    "CA-3846"
+    "CA-3161"
    ],
    "names": {
     "CA-0040": "Jasper National Park",
-    "CA-3846": "Mount Robson Corridor Protected Area"
+    "CA-3161": "White Goat Natural Area"
    },
    "what": "more than one owner on the patch (all public): live, look later",
    "kind": "area",
-   "size": "0.5 ac",
-   "sort": 0.5,
-   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:CANADA', 'STATE']",
-   "id": "CA-0040+CA-3846@area@52.892,-118.465",
+   "size": "9.0 ac",
+   "sort": 9.0,
+   "reason": "candidate \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0040+CA-3161@area@52.277,-117.061",
    "sources": {
     "CA-0040": "read from the agency 2026-11-05",
-    "CA-3846": "read from the agency 2026-11-06",
+    "CA-3161": "read from the agency 2026-11-05",
     "water": "NRCan NHN file 2026-11-05 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
    },
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3359",
-    "CA-4024"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.3 ac",
-   "sort": 0.3,
-   "reason": "the official outline of Riverview Park could not be read in pass 2 (the next run tries again)",
-   "id": "CA-3359+CA-4024@area@49.252,-122.801",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-4787",
-    "CA-4789"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.2 ac",
-   "sort": 0.2,
-   "reason": "the official outline of Fisgard Lighthouse National Historic Site, Fort Rodd Hill National Historic Site could not be read in pass 2 (the next run tries again)",
-   "id": "CA-4787+CA-4789@area@48.431,-123.449",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-0117",
-    "CA-4798"
-   ],
-   "names": {},
-   "what": "not sure",
-   "kind": "area",
-   "size": "0.1 ac",
-   "sort": 0.1,
-   "reason": "the official outline of Twin Falls Tea House National Historic Site could not be read in pass 2 (the next run tries again)",
-   "id": "CA-0117+CA-4798@area@51.544,-116.532",
-   "sources": {},
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
    "state": "CA-MB",
    "refs": [
-    "CA-0113",
-    "CA-2540"
+    "CA-0084",
+    "CA-2472"
    ],
    "names": {
-    "CA-0113": "Whitemouth Bog National Wildlife Area",
-    "CA-2540": "Whitemouth Bog Wildlife Management Area"
+    "CA-0084": "Riding Mountain National Park",
+    "CA-2472": "Onanole Wildlife Management Area"
+   },
+   "what": "more than one owner on the patch (all public): live, look later",
+   "kind": "area",
+   "size": "5.6 ac",
+   "sort": 5.6,
+   "reason": "very tight: could be map error: check both official maps on the ground \u00b7 ['FED:CANADA', 'STATE']",
+   "id": "CA-0084+CA-2472@area@50.606,-99.835",
+   "sources": {
+    "CA-0084": "read from the agency 2026-11-13",
+    "CA-2472": "read from the agency 2026-11-13",
+    "water": "NRCan NHN file 2026-11-13 (Natural Resources Canada's National Hydro Network, Open Government Licence - Canada)"
+   },
+   "checked": "2026-11-13"
+  },
+  {
+   "area": "canadawest",
+   "state": "CA-AB",
+   "refs": [
+    "CA-0636",
+    "CA-2949"
+   ],
+   "names": {
+    "CA-0636": "Bow Valley Provincial Park",
+    "CA-2949": "Bow Valley Provincial Recreation Area"
    },
    "what": "not sure",
    "kind": "same land",
    "size": "0 ac",
    "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-0113+CA-2540@same land@50.038,-95.949",
+   "reason": "both parks join the same official records but a POTA pin is outside the shared outline (or cannot be tested): likely a join to fix",
+   "id": "CA-0636+CA-2949@same land@51.056,-115.139",
    "sources": {},
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
+  },
+  {
+   "area": "canadawest",
+   "state": "CA-AB",
+   "refs": [
+    "CA-0671",
+    "CA-3123"
+   ],
+   "names": {
+    "CA-0671": "Rumsey Natural Area",
+    "CA-3123": "Rumsey Ecological Reserve"
+   },
+   "what": "not sure",
+   "kind": "same land",
+   "size": "0 ac",
+   "sort": 0.0,
+   "reason": "both parks join the same official records and both POTA pins are inside it, but the pins are more than 1 km apart (separate units of one big record): likely a join to fix (CA-0671 and CA-3123: pins 9.40 km apart)",
+   "id": "CA-0671+CA-3123@same land@51.857,-112.646",
+   "sources": {},
+   "checked": "2026-11-13"
+  },
+  {
+   "area": "canadawest",
+   "state": "CA-AB",
+   "refs": [
+    "CA-3026",
+    "CA-3027"
+   ],
+   "names": {
+    "CA-3026": "Gipsy Lake Wildland Provincial Park",
+    "CA-3027": "Gipsy-Gordon Wildland Provincial Park"
+   },
+   "what": "not sure",
+   "kind": "same land",
+   "size": "0 ac",
+   "sort": 0.0,
+   "reason": "both parks join the same official records and both POTA pins are inside it, but the pins are more than 1 km apart (separate units of one big record): likely a join to fix (CA-3026 and CA-3027: pins 28.93 km apart)",
+   "id": "CA-3026+CA-3027@same land@56.639,-110.594",
+   "sources": {},
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
@@ -1659,50 +748,33 @@
    "kind": "same land",
    "size": "0 ac",
    "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
+   "reason": "both parks join the same official records but a POTA pin is outside the shared outline (or cannot be tested): likely a join to fix",
    "id": "CA-0051+CA-2711@same land@51.334,-105.226",
    "sources": {},
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
    "state": "CA-SK",
    "refs": [
-    "CA-0082",
-    "CA-1146"
+    "CA-0075",
+    "CA-6151"
    ],
    "names": {
-    "CA-0082": "Redberry Lake Biosphere Reserve",
-    "CA-1146": "Redberry Lake Regional Park"
+    "CA-0075": "Prince Albert National Park",
+    "CA-6151": "Boundary Bog Trail National Geologic Trail"
    },
    "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
+   "kind": "trail",
+   "size": "0 yd of line",
    "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-0082+CA-1146@same land@52.710,-107.218",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-SK",
-   "refs": [
-    "CA-0082",
-    "CA-2819"
-   ],
-   "names": {
-    "CA-0082": "Redberry Lake Biosphere Reserve",
-    "CA-2819": "Redberry Lake Migratory Bird Sanctuary"
+   "reason": "our saved copy of the official line for CA-6151 is only 0 m long in all (a broken copy, not the trail): fix the line, then run again",
+   "id": "CA-0075+CA-6151@trail@53.909,-106.021",
+   "sources": {
+    "CA-0075": "read from the agency 2026-10-29",
+    "CA-6151": "official line (trails bot)"
    },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-0082+CA-2819@same land@52.692,-107.162",
-   "sources": {},
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
@@ -1722,7 +794,27 @@
    "reason": "one record covers two parks ('Cumberland House National Historic Site' is a historic, the record a state park): a person decides",
    "id": "CA-0591+CA-6057@same land@53.960,-102.265",
    "sources": {},
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
+  },
+  {
+   "area": "canadawest",
+   "state": "CA-SK",
+   "refs": [
+    "CA-0599",
+    "CA-6054"
+   ],
+   "names": {
+    "CA-0599": "Fort Carlton Provincial Park",
+    "CA-6054": "Carlton House National Historic Site"
+   },
+   "what": "not sure",
+   "kind": "same land",
+   "size": "0 ac",
+   "sort": 0.0,
+   "reason": "one record covers two parks (the record '' does not name 'Fort Carlton Provincial Park'; the record '' does not name 'Carlton House National Historic Site'): a person decides",
+   "id": "CA-0599+CA-6054@same land@52.872,-106.523",
+   "sources": {},
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
@@ -1742,7 +834,7 @@
    "reason": "one record covers two parks ('Fort Pitt National Historic Site' is a historic, the record a state park): a person decides",
    "id": "CA-0600+CA-6064@same land@53.571,-109.793",
    "sources": {},
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
@@ -1759,10 +851,10 @@
    "kind": "same land",
    "size": "0 ac",
    "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
+   "reason": "both parks join the same official records and both POTA pins are inside it, but the pins are more than 1 km apart (separate units of one big record): likely a join to fix (CA-0621 and CA-2820: pins 5.02 km apart)",
    "id": "CA-0621+CA-2820@same land@50.746,-105.019",
    "sources": {},
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
@@ -1782,67 +874,7 @@
    "reason": "one record covers two parks ('Steele Narrows National Historic Site' is a historic, the record a state park): a person decides",
    "id": "CA-0624+CA-6072@same land@54.041,-109.319",
    "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-SK",
-   "refs": [
-    "CA-0630",
-    "CA-2916"
-   ],
-   "names": {
-    "CA-0630": "Wood Mountain Post Provincial Park",
-    "CA-2916": "Wood Mountain Regional Park Recreation Site"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-0630+CA-2916@same land@49.318,-106.380",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-SK",
-   "refs": [
-    "CA-1093",
-    "CA-2549"
-   ],
-   "names": {
-    "CA-1093": "Antelope Lake Regional Park",
-    "CA-2549": "Antelope Park Recreation Site"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-1093+CA-2549@same land@50.277,-108.408",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-SK",
-   "refs": [
-    "CA-1127",
-    "CA-2747"
-   ],
-   "names": {
-    "CA-1127": "McLaren Lake Regional Park",
-    "CA-2747": "Mclaren Lake Recreation Site"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-1127+CA-2747@same land@50.300,-109.896",
-   "sources": {},
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
@@ -1859,10 +891,10 @@
    "kind": "same land",
    "size": "0 ac",
    "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
+   "reason": "one record covers two parks (the record '' does not name 'Shamrock Regional Park'; the record '' does not name 'Shamrock Recreation Site'): a person decides",
    "id": "CA-1149+CA-2844@same land@50.060,-106.466",
    "sources": {},
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
@@ -1879,10 +911,10 @@
    "kind": "same land",
    "size": "0 ac",
    "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
+   "reason": "both parks join the same official records but a POTA pin is outside the shared outline (or cannot be tested): likely a join to fix",
    "id": "CA-2644+CA-2645@same land@51.106,-106.600",
    "sources": {},
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
@@ -1899,810 +931,50 @@
    "kind": "same land",
    "size": "0 ac",
    "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
+   "reason": "one record covers two parks (the record '' does not name 'Upper Rousay Lake Game Preserve'; the record '' does not name 'Upper Rousay Lake Migratory Bird Sanctuary'): a person decides",
    "id": "CA-2879+CA-2880@same land@51.184,-102.588",
    "sources": {},
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
-   "state": "CA-AB",
+   "state": "CA-SK",
    "refs": [
-    "CA-0636",
-    "CA-2949"
+    "CA-2897",
+    "CA-2898"
    ],
    "names": {
-    "CA-0636": "Bow Valley Provincial Park",
-    "CA-2949": "Bow Valley Provincial Recreation Area"
+    "CA-2897": "Wascana Trails Recreation Site",
+    "CA-2898": "Wascana Valley Natural Area"
    },
    "what": "not sure",
    "kind": "same land",
    "size": "0 ac",
    "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-0636+CA-2949@same land@51.056,-115.139",
+   "reason": "one record covers two parks (the record '' does not name 'Wascana Trails Recreation Site'; the record '' does not name 'Wascana Valley Natural Area'): a person decides",
+   "id": "CA-2897+CA-2898@same land@50.555,-104.838",
    "sources": {},
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   },
   {
    "area": "canadawest",
-   "state": "CA-AB",
+   "state": "CA-MB",
    "refs": [
-    "CA-0671",
-    "CA-3123"
+    "CA-0113",
+    "CA-2540"
    ],
    "names": {
-    "CA-0671": "Rumsey Natural Area",
-    "CA-3123": "Rumsey Ecological Reserve"
+    "CA-0113": "Whitemouth Bog National Wildlife Area",
+    "CA-2540": "Whitemouth Bog Wildlife Management Area"
    },
    "what": "not sure",
    "kind": "same land",
    "size": "0 ac",
    "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-0671+CA-3123@same land@51.857,-112.646",
+   "reason": "both parks join the same official records but a POTA pin is outside the shared outline (or cannot be tested): likely a join to fix",
+   "id": "CA-0113+CA-2540@same land@50.038,-95.949",
    "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-AB",
-   "refs": [
-    "CA-0683",
-    "CA-1197"
-   ],
-   "names": {
-    "CA-0683": "Victoria Settlement Natural Area",
-    "CA-1197": "Victoria Settlement Provincial Park"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-0683+CA-1197@same land@54.031,-112.369",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-AB",
-   "refs": [
-    "CA-1174",
-    "CA-2994"
-   ],
-   "names": {
-    "CA-1174": "Crow Lake Provincial Park",
-    "CA-2994": "Crow Lake Ecological Reserve"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-1174+CA-2994@same land@55.796,-112.126",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-AB",
-   "refs": [
-    "CA-3026",
-    "CA-3027"
-   ],
-   "names": {
-    "CA-3026": "Gipsy Lake Wildland Provincial Park",
-    "CA-3027": "Gipsy-Gordon Wildland Provincial Park"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3026+CA-3027@same land@56.639,-110.594",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-AB",
-   "refs": [
-    "CA-3057",
-    "CA-5533"
-   ],
-   "names": {
-    "CA-3057": "Kootenay Plains Ecological Reserve",
-    "CA-5533": "Kootenay Plains Provincial Recreation Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3057+CA-5533@same land@52.059,-116.423",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-0714",
-    "CA-3308"
-   ],
-   "names": {
-    "CA-0714": "Cathedral Provincial Park",
-    "CA-3308": "Cathedral Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-0714+CA-3308@same land@49.135,-120.103",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-0748",
-    "CA-4282"
-   ],
-   "names": {
-    "CA-0748": "West Twin Provincial Park",
-    "CA-4282": "West Twin Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-0748+CA-4282@same land@53.352,-120.577",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3250",
-    "CA-3251"
-   ],
-   "names": {
-    "CA-3250": "Boyle Point Provincial Park",
-    "CA-3251": "Boyle Point Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3250+CA-3251@same land@49.489,-124.704",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3261",
-    "CA-3262"
-   ],
-   "names": {
-    "CA-3261": "Browne Lake Ecological Reserve",
-    "CA-3262": "Browne Lake Provincial Park"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3261+CA-3262@same land@49.819,-119.185",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3263",
-    "CA-3264"
-   ],
-   "names": {
-    "CA-3263": "Broughton Archipelago Provincial Park",
-    "CA-3264": "Broughton Archipelago Conservancy Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3263+CA-3264@same land@50.712,-126.641",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3320",
-    "CA-3321"
-   ],
-   "names": {
-    "CA-3320": "Chasm Ecological Reserve",
-    "CA-3321": "Chasm Provincial Park"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3320+CA-3321@same land@51.219,-121.484",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3348",
-    "CA-3349"
-   ],
-   "names": {
-    "CA-3348": "Close To The Edge Provincial Park",
-    "CA-3349": "Close To The Edge Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3348+CA-3349@same land@54.058,-121.020",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3410",
-    "CA-3411"
-   ],
-   "names": {
-    "CA-3410": "Denman Island Provincial Park",
-    "CA-3411": "Denman Island Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3410+CA-3411@same land@49.578,-124.827",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3439",
-    "CA-3440"
-   ],
-   "names": {
-    "CA-3439": "Dune Za Keyih (Frog-Gataga) Park",
-    "CA-3440": "Dune Za Keyih (Frog-Gataga) Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3439+CA-3440@same land@58.366,-126.397",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3465",
-    "CA-3466"
-   ],
-   "names": {
-    "CA-3465": "Elk Falls Provincial Park",
-    "CA-3466": "Elk Falls Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3465+CA-3466@same land@50.048,-125.338",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3495",
-    "CA-3496"
-   ],
-   "names": {
-    "CA-3495": "Exchamsiks River Provincial Park",
-    "CA-3496": "Exchamsiks Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3495+CA-3496@same land@54.335,-129.296",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3504",
-    "CA-3505"
-   ],
-   "names": {
-    "CA-3504": "Fintry Provincial Park",
-    "CA-3505": "Fintry Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3504+CA-3505@same land@50.129,-119.504",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3511",
-    "CA-3512"
-   ],
-   "names": {
-    "CA-3511": "Foch-Gilttoyees Provincial Park",
-    "CA-3512": "Foch-Gilttoyees Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3511+CA-3512@same land@53.805,-129.025",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3522",
-    "CA-3523"
-   ],
-   "names": {
-    "CA-3522": "Francis Point Ecological Reserve",
-    "CA-3523": "Francis Point Provincial Park"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3522+CA-3523@same land@49.608,-124.058",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3524",
-    "CA-3525"
-   ],
-   "names": {
-    "CA-3524": "Francois Lake Provincial Park",
-    "CA-3525": "Francois Lake Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3524+CA-3525@same land@53.983,-125.167",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3657",
-    "CA-3658"
-   ],
-   "names": {
-    "CA-3657": "Kakwa Provincial Park",
-    "CA-3658": "Kakwa Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3657+CA-3658@same land@54.018,-120.324",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3684",
-    "CA-3685"
-   ],
-   "names": {
-    "CA-3684": "Kingfisher Creek Ecological Reserve",
-    "CA-3685": "Kingfisher Creek Provincial Park"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3684+CA-3685@same land@50.794,-118.811",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3781",
-    "CA-3782"
-   ],
-   "names": {
-    "CA-3781": "Mara Meadows Ecological Reserve",
-    "CA-3782": "Mara Meadows Provincial Park"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3781+CA-3782@same land@50.696,-119.109",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3789",
-    "CA-3790"
-   ],
-   "names": {
-    "CA-3789": "Maxhamish Lake Provincial Park",
-    "CA-3790": "Maxhamish Lake Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3789+CA-3790@same land@59.842,-123.251",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3838",
-    "CA-3839"
-   ],
-   "names": {
-    "CA-3838": "Mount Griffin Ecological Reserve",
-    "CA-3839": "Mount Griffin Provincial Park"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3838+CA-3839@same land@50.884,-118.500",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3840",
-    "CA-3841"
-   ],
-   "names": {
-    "CA-3840": "Mount Maxwell Ecological Reserve",
-    "CA-3841": "Mount Maxwell Provincial Park"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3840+CA-3841@same land@48.807,-123.517",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3868",
-    "CA-3869"
-   ],
-   "names": {
-    "CA-3868": "Nahatlatch Provincial Park",
-    "CA-3869": "Nahatlatch Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3868+CA-3869@same land@50.006,-121.687",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3899",
-    "CA-3900"
-   ],
-   "names": {
-    "CA-3899": "Nisga'a Memorial Lava Bed Protected Area",
-    "CA-3900": "Nisga'a Memorial Lava Bed Corridor Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3899+CA-3900@same land@55.095,-128.947",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3926",
-    "CA-3927"
-   ],
-   "names": {
-    "CA-3926": "Omineca Provincial Park",
-    "CA-3927": "Omineca Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3926+CA-3927@same land@55.814,-124.712",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3932",
-    "CA-3933"
-   ],
-   "names": {
-    "CA-3932": "Otter Lake Provincial Park",
-    "CA-3933": "Otter Lake Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3932+CA-3933@same land@49.585,-120.775",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3976",
-    "CA-3977"
-   ],
-   "names": {
-    "CA-3976": "Portage Brule Rapids Ecological Reserve",
-    "CA-3977": "Portage Brule Rapids Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3976+CA-3977@same land@59.645,-126.878",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-3988",
-    "CA-3989"
-   ],
-   "names": {
-    "CA-3988": "Ptarmigan Creek Provincial Park",
-    "CA-3989": "Ptarmigan Creek Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-3988+CA-3989@same land@53.494,-120.871",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-4100",
-    "CA-4101"
-   ],
-   "names": {
-    "CA-4100": "Skihist Ecological Reserve",
-    "CA-4101": "Skihist Provincial Park"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-4100+CA-4101@same land@50.254,-121.508",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-4142",
-    "CA-4143"
-   ],
-   "names": {
-    "CA-4142": "Stawamus Chief Provincial Park",
-    "CA-4143": "Stawamus Chief Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-4142+CA-4143@same land@49.673,-123.144",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-4152",
-    "CA-4153"
-   ],
-   "names": {
-    "CA-4152": "Stuart Lake Marine Park",
-    "CA-4153": "Stuart Lake Provincial Park"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-4152+CA-4153@same land@54.625,-124.643",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-4157",
-    "CA-4158"
-   ],
-   "names": {
-    "CA-4157": "Sugarbowl - Grizzly Den Provincial Park",
-    "CA-4158": "Sugarbowl - Grizzly Den Protected Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-4157+CA-4158@same land@53.916,-121.670",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-BC",
-   "refs": [
-    "CA-4253",
-    "CA-4254"
-   ],
-   "names": {
-    "CA-4253": "Vaseux Lake Provincial Park",
-    "CA-4254": "Vaseux Lake Migratory Bird Sanctuary"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-4253+CA-4254@same land@49.300,-119.531",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-YT",
-   "refs": [
-    "CA-0848",
-    "CA-4625"
-   ],
-   "names": {
-    "CA-0848": "Pickhandle Lake Recreation Park",
-    "CA-4625": "Pickhandle Lake Habitat Protection Area"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-0848+CA-4625@same land@61.934,-140.359",
-   "sources": {},
-   "checked": "2026-11-09"
-  },
-  {
-   "area": "canadawest",
-   "state": "CA-YT",
-   "refs": [
-    "CA-4635",
-    "CA-4636"
-   ],
-   "names": {
-    "CA-4635": "Tombstone Natural Habitat Protection Area",
-    "CA-4636": "Tombstone Territorial Park"
-   },
-   "what": "not sure",
-   "kind": "same land",
-   "size": "0 ac",
-   "sort": 0.0,
-   "reason": "no ownership source for this row (an inside or overlapping pair needs one: Brandon Nov 8): a person or the next run checks it",
-   "id": "CA-4635+CA-4636@same land@64.565,-138.837",
-   "sources": {},
-   "checked": "2026-11-09"
+   "checked": "2026-11-13"
   }
  ]
 }
