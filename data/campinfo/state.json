@@ -1016,8 +1016,8 @@
     "no_page": 146,
     "not_official": 0,
     "ok": 105,
-    "other": 20,
-    "resting": 0,
+    "other": 19,
+    "resting": 1,
     "robots": 0,
     "with_booking": 125,
     "with_elevation": 0,
@@ -1026,7 +1026,7 @@
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-06"
+   "updated": "2026-11-13"
   },
   "US-WA": {
    "camps": 369,
@@ -1163,7 +1163,7 @@
   "US-TX": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-UT": "FCC listAsOfDates: robots.txt says no",
   "US-VA": "FCC listAsOfDates: robots.txt says no",
-  "US-VT": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-VT": "FCC listAsOfDates: robots.txt says no",
   "US-WA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-WI": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-WV": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1580,9 +1580,9 @@
     "carriers": null,
     "files": [],
     "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "status": "FCC listAsOfDates: robots.txt says no"
    },
-   "read": "2026-11-06"
+   "read": "2026-11-13"
   },
   "US-WA": {
    "cell": {
@@ -1622,7 +1622,6 @@
   }
  },
  "hosts": {
-  "dep.nj.gov": 1794571755.9843144,
   "www.fs.usda.gov": 1794652532.4902353
  },
  "ky_check": {
@@ -2572,11 +2571,11 @@
  },
  "last": {
   "areas": [
-   "US-RI"
+   "US-VT"
   ],
   "fcc_token": true,
   "manners": {
-   "dropped_queued": 4,
+   "dropped_queued": 284,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2589,23 +2588,24 @@
     ]
    ],
    "host_rule": 0,
-   "requests": 8,
-   "rested": 0,
+   "requests": 272,
+   "rested": 1,
    "robots": 2,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 5,
+   "browser": 19,
+   "camps": 285,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 0,
-   "needs_key": 0,
-   "no_page": 2,
+   "needs_browser": 19,
+   "needs_key": 9,
+   "no_page": 147,
    "not_official": 0,
-   "ok": 3,
-   "pages_read": 4,
-   "resting": 0,
+   "ok": 128,
+   "pages_read": 248,
+   "resting": 1,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0
