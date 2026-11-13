@@ -134,18 +134,20 @@ def refused(rel):
     return (W.W / 'in' / rel).exists() and bool(W.keep_line(rel) or W.not_line(rel))
 
 
+RELEASE_LOGINS = ('kpcwebhost',)   # Quality D2 (Brandon, Nov 13 2026 7:48 AM CT): his own login only; no repo-owner fallback
+
+
 def owner_dispatch_ok():
-    """(ok, why). release-approved runs only on workflow_dispatch by the repo owner or a KPC_RELEASE_ACTORS account.
+    """(ok, why). release-approved runs only on workflow_dispatch triggered by Brandon's own login (kpcwebhost).
+    The repo owner account (KentuckyPortableClub) is what the bots commit as, so it is NOT allowed. Reads the triggering actor.
     Item text ('by: chat 11') does not authorize a release."""
     event = (os.environ.get('GITHUB_EVENT_NAME') or '').strip()
     if event and event != 'workflow_dispatch':
         return False, f'release-approved is owner-dispatch only (event is {event})'
-    actor = (os.environ.get('GITHUB_ACTOR') or '').strip()
-    owner = (os.environ.get('GITHUB_REPOSITORY_OWNER') or '').strip()
-    allowed = (os.environ.get('KPC_RELEASE_ACTORS') or '').split()
-    if actor and (actor == owner or actor in allowed):
+    actor = (os.environ.get('GITHUB_TRIGGERING_ACTOR') or '').strip()
+    if actor in RELEASE_LOGINS:
         return True, ''
-    return False, f'{(actor or "no actor")} is not the repo owner and is not in KPC_RELEASE_ACTORS: refused'
+    return False, f'{(actor or "no triggering actor")} is not kpcwebhost (the only release login): refused'
 
 
 def verdict_ok(v):

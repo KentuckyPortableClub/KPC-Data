@@ -107,7 +107,7 @@ def keys_not_ready(unit, doc):
             u = _park_key_unit(ref, links)
             if u: need.add(u)
     stamp = W.load(stamp_path(unit)) or {}
-    fers_key_build = str(stamp.get('key_source') or '')
+    kb = stamp.get('key_builds') if isinstance(stamp.get('key_builds'), dict) else {}   # Quality D1: real per-kind key build ids
     missing = []
     live_idx = pathlib.Path(links) / 'data' / 'released' / 'RELEASED.json'
     try:
@@ -136,9 +136,12 @@ def keys_not_ready(unit, doc):
         if not build:
             missing.append(f'{u} key live record has no build id (not current)')
             continue
-        # current: the 2-fer was made from the same build id as the released key
-        if fers_key_build and fers_key_build != build:
-            missing.append(f'{u} key is build {build}, 2-fer was made from {fers_key_build}')
+        # current: the 2-fer was made from the same build id as the released key (missing = refuse, fail closed)
+        made = str(kb.get(u.split('-', 1)[0]) or '')
+        if not made:
+            missing.append(f'{u}: the 2-fer stamp has no {u.split("-", 1)[0]} key build id (not proven current)')
+        elif made != build:
+            missing.append(f'{u} key is build {build}, 2-fer was made from {made}')
     if missing:
         return 'key areas not released and current: ' + '; '.join(missing) + ' (2-fers keep live)'
     return ''
@@ -151,8 +154,11 @@ def why_not(unit, grade):
     if src is None: return 'no hidden file waiting for this area (live stays as it is)'
     new = W.load(src)
     live = W.load(W.DATA / 'data' / 'fers' / f'{unit}.json') or W.load(W.DATA / 'data' / 'fers' / f'{unit}.json.gz')
-    if (stamp := W.load(stamp_path(unit)) or {}) and str(stamp.get('run') or stamp.get('key_source') or '') in BLOCKED_BUILDS:
-        return f"{stamp.get('run')} is never released"
+    stamp = W.load(stamp_path(unit)) or {}
+    _kb = stamp.get('key_builds') if isinstance(stamp.get('key_builds'), dict) else {}
+    hit = sorted({str(v) for v in _kb.values()} & set(BLOCKED_BUILDS))   # Quality D1: check the real key build ids, not the run id
+    if hit:
+        return f"{hit[0]} is never released (the 2-fer was made from it)"
     if str((stamp or {}).get('build') or '') in BLOCKED_BUILDS:
         return f"{stamp.get('build')} is never released"
     ok, why = grade_allows(grade, unit)

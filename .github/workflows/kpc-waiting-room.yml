@@ -91,18 +91,16 @@ jobs:
           LINKS: ../links
           NET: '1'
           WAITING_ON: ${{ vars.WAITING_ON }}
-          KPC_RELEASE_ACTORS: ${{ vars.KPC_RELEASE_ACTORS }}
+          GITHUB_TRIGGERING_ACTOR: ${{ github.triggering_actor }}
         run: |
           cd kpcdata
-          ACTOR="${{ github.actor }}"
-          OWNER="${{ github.repository_owner }}"
-          ALLOWED="${{ vars.KPC_RELEASE_ACTORS }}"
-          case " $ALLOWED " in *" $ACTOR "*) ;; *)
-            if [ "$ACTOR" != "$OWNER" ] || [ -z "$ACTOR" ]; then
-              echo "::error title=Release::$ACTOR is not the repo owner and is not in KPC_RELEASE_ACTORS. Nothing was released."
-              exit 1
-            fi
-          ;; esac
+          # Quality D2 (Brandon, Nov 13 2026 7:48 AM CT): only his own login kpcwebhost may release; no repo-owner
+          # fallback (the bots commit as KentuckyPortableClub) and the check reads triggering_actor, not actor.
+          ACTOR="${{ github.triggering_actor }}"
+          if [ "$ACTOR" != "kpcwebhost" ]; then
+            echo "::error title=Release::${ACTOR:-no actor} is not kpcwebhost (the only release login). Nothing was released."
+            exit 1
+          fi
           M="${{ inputs.mode }}"
           case "$M" in
             release-approved) python3 .github/scripts/kpc_release_approved.py ;;

@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""Quality X1 (regrade Nov 13): release-approved is owner-dispatch only (github.actor /
-KPC_RELEASE_ACTORS / GITHUB_REPOSITORY_OWNER). Item text such as 'by: chat 11' does not
+"""Quality X1 (regrade Nov 13): release-approved is owner-dispatch only (triggered by kpcwebhost only; D2 Nov 13). Item text such as 'by: chat 11' does not
 authorize a release. Dead auto_trusted / source_ok regex paths are gone. The waiting-room
 schedule defaults to check, never release-approved, and the watchdog does not restart it
 as release-approved. release-areas is not inside continue-on-error.
@@ -20,31 +19,30 @@ src = pathlib.Path(__file__).resolve().parents[1].joinpath('.github/scripts/kpc_
 check('source_ok regex path is gone', 'def source_ok' not in src and 'OWNER_SRC_RE' not in src)
 check('auto_trusted is gone', 'def auto_trusted' not in src and 'TRUST_RUN' not in src)
 
-# owner_dispatch_ok
-saved = {k: os.environ.pop(k) for k in list(os.environ) if k in ('GITHUB_EVENT_NAME', 'GITHUB_ACTOR', 'GITHUB_REPOSITORY_OWNER', 'KPC_RELEASE_ACTORS')}
+# owner_dispatch_ok (Quality D2, Brandon Nov 13 7:48 AM CT: kpcwebhost only, triggering actor, no owner fallback)
+KEYS = ('GITHUB_EVENT_NAME', 'GITHUB_ACTOR', 'GITHUB_TRIGGERING_ACTOR', 'GITHUB_REPOSITORY_OWNER', 'KPC_RELEASE_ACTORS')
+saved = {k: os.environ.pop(k) for k in list(os.environ) if k in KEYS}
 try:
     ok1, why1 = RA.owner_dispatch_ok()
-    check('no actor / no event is refused', (not ok1) and 'KPC_RELEASE_ACTORS' in why1)
+    check('no triggering actor is refused', (not ok1) and 'kpcwebhost' in why1)
     os.environ['GITHUB_EVENT_NAME'] = 'schedule'
-    os.environ['GITHUB_ACTOR'] = 'KZ4CP'
-    os.environ['GITHUB_REPOSITORY_OWNER'] = 'KZ4CP'
+    os.environ['GITHUB_TRIGGERING_ACTOR'] = 'kpcwebhost'
     ok2, why2 = RA.owner_dispatch_ok()
-    check('a schedule run is refused even if the actor is the owner', (not ok2) and 'owner-dispatch' in why2)
+    check('a schedule run is refused even if triggered by kpcwebhost', (not ok2) and 'owner-dispatch' in why2)
     os.environ['GITHUB_EVENT_NAME'] = 'workflow_dispatch'
-    os.environ['GITHUB_ACTOR'] = 'kpc-bot'
+    os.environ['GITHUB_TRIGGERING_ACTOR'] = 'KentuckyPortableClub'
     os.environ['GITHUB_REPOSITORY_OWNER'] = 'KentuckyPortableClub'
-    os.environ['KPC_RELEASE_ACTORS'] = 'KZ4CP'
+    os.environ['KPC_RELEASE_ACTORS'] = 'KentuckyPortableClub'
     ok3, why3 = RA.owner_dispatch_ok()
-    check('a bot actor not in KPC_RELEASE_ACTORS is refused', (not ok3) and 'kpc-bot' in why3)
-    os.environ['GITHUB_ACTOR'] = 'KZ4CP'
-    ok4, why4 = RA.owner_dispatch_ok()
-    check('workflow_dispatch by an actor in KPC_RELEASE_ACTORS is allowed', ok4)
-    del os.environ['KPC_RELEASE_ACTORS']
-    os.environ['GITHUB_REPOSITORY_OWNER'] = 'KZ4CP'
-    ok5, _ = RA.owner_dispatch_ok()
-    check('workflow_dispatch by GITHUB_REPOSITORY_OWNER is allowed', ok5)
+    check('the repo owner account (what the bots commit as) is refused, even if listed in KPC_RELEASE_ACTORS', (not ok3) and 'KentuckyPortableClub' in why3)
+    os.environ['GITHUB_ACTOR'] = 'kpcwebhost'
+    ok3b, _ = RA.owner_dispatch_ok()
+    check('github.actor=kpcwebhost does not help when the triggering actor is someone else', not ok3b)
+    os.environ['GITHUB_TRIGGERING_ACTOR'] = 'kpcwebhost'
+    ok4, _ = RA.owner_dispatch_ok()
+    check('workflow_dispatch triggered by kpcwebhost is allowed', ok4)
 finally:
-    for k in ('GITHUB_EVENT_NAME', 'GITHUB_ACTOR', 'GITHUB_REPOSITORY_OWNER', 'KPC_RELEASE_ACTORS'):
+    for k in KEYS:
         os.environ.pop(k, None)
     os.environ.update(saved)
 
@@ -62,7 +60,8 @@ check('owner release step is workflow_dispatch only and has no continue-on-error
       and 'continue-on-error' not in body
       and 'kpc_release_approved.py' in body
       and 'kpc_fers_release_areas.py' in body
-      and 'KPC_RELEASE_ACTORS' in body)
+      and 'github.triggering_actor' in body and '"kpcwebhost"' in body
+      and 'repository_owner' not in body and 'KPC_RELEASE_ACTORS' not in body)
 # the continue-on-error run step does not itself invoke the release scripts
 run1 = yml[yml.find('- name: Run the waiting room'):yml.find('- name: Owner release')]
 check('the continue-on-error waiting-room step does not run release-approved or release-areas',

@@ -154,7 +154,7 @@ check('canadaeast' in FS.areas() and set(areas['canadaeast'].split()) <= set(sum
       'B3: canadaeast is still on the area list the chain and the bot use')
 
 
-def _stub_released_keys(*units, build='CA-9'):
+def _stub_released_keys(*units, build='CA-43311979456'):
     """A temp Links tree whose released keys are current, so keys_not_ready can pass. Restores LINKS in the closer."""
     d = pathlib.Path(tempfile.mkdtemp())
     live = {}
@@ -186,7 +186,7 @@ with tempfile.TemporaryDirectory() as t:
     (t / 'data/waiting/in/data/fers/CA-AB.json').write_text(json.dumps(empty) + '\n')
     sk_new = doc(spot(['CA-0100', 'CA-0101']), spot(['CA-0102', 'CA-0103']))
     (t / 'data/waiting/in/data/fers/CA-SK.json').write_text(json.dumps(sk_new) + '\n')
-    (t / 'data/fers/stamps/CA-SK.json').write_text(json.dumps({'run': 'CA-43332473942', 'rules': 'x', 'built_sha': 'abc'}) + '\n')
+    (t / 'data/fers/stamps/CA-SK.json').write_text(json.dumps({'run': 'CA-43332473942', 'rules': 'x', 'built_sha': 'abc', 'key_builds': {'CA': 'CA-43311979456'}}) + '\n')
     grade = {'RELEASE-READY': 'YES', 'areas': {
         'CA-AB': {'RELEASE-READY': 'YES'},
         'CA-SK': {'RELEASE-READY': 'YES', 'no_worse_than_live': True},
@@ -194,7 +194,7 @@ with tempfile.TemporaryDirectory() as t:
     (t / 'grade.json').write_text(json.dumps(grade) + '\n')
     old_data, old_w, old_live = W.DATA, W.W, R.LIVE_FILE
     W.DATA = t; W.W = t / 'data/waiting'; R.LIVE_FILE = t / 'data/fers/LIVE.json'
-    _ld, _lp = _stub_released_keys('CA-AB', 'CA-SK', build='CA-43332473942')
+    _ld, _lp = _stub_released_keys('CA-AB', 'CA-SK', build='CA-43311979456')
     try:
         check(R.why_not('CA-AB', grade).startswith('hidden file has 0 pairs'),
               f"B3/release: CA-AB 0-pair is kept ({R.why_not('CA-AB', grade)!r})")
@@ -202,6 +202,10 @@ with tempfile.TemporaryDirectory() as t:
         check(R.why_not('W-GB', grade) == 'world 2-fers are never public', 'per-area: world 2-fers are never public')
         blocked = dict(grade, build='US-42797939226')
         check('never released' in R.why_not('CA-SK', blocked), 'per-area: US-42797939226 is never released')
+        _sk = (t / 'data/fers/stamps/CA-SK.json').read_text()
+        (t / 'data/fers/stamps/CA-SK.json').write_text(json.dumps({'run': '1', 'key_builds': {'US': 'US-42797939226', 'CA': 'CA-43311979456'}}) + '\n')
+        check('US-42797939226 is never released' in R.why_not('CA-SK', grade), 'D1: stamp key build US-42797939226 is never released')
+        (t / 'data/fers/stamps/CA-SK.json').write_text(_sk)
         # SK promotes, AB is kept, live AB bytes unchanged
         sys_argv = sys.argv
         sys.argv = ['kpc_fers_release_areas.py', '--areas', 'CA-AB CA-SK', '--grade', str(t / 'grade.json')]
@@ -325,8 +329,8 @@ with tempfile.TemporaryDirectory() as t:
     ab_new = doc(spot(['CA-0100', 'CA-0101']), spot(['CA-0102', 'CA-0103']))
     qc_new = doc(spot(['CA-0200', 'CA-0201']))  # fewer, but we will hold QC by grade, not by 0-pair
     _fers_tree(t, {'CA-AB': ab_live, 'CA-QC': qc_live}, {'CA-AB': ab_new, 'CA-QC': qc_new})
-    (t / 'data/fers/stamps/CA-AB.json').write_text(json.dumps({'run': 'CA-43332473942', 'rules': 'x', 'built_sha': 'ab'}) + '\n')
-    (t / 'data/fers/stamps/CA-QC.json').write_text(json.dumps({'run': 'CA-43332473942', 'rules': 'x', 'built_sha': 'qc'}) + '\n')
+    (t / 'data/fers/stamps/CA-AB.json').write_text(json.dumps({'run': 'CA-43332473942', 'rules': 'x', 'built_sha': 'ab', 'key_builds': {'CA': 'CA-43311979456'}}) + '\n')
+    (t / 'data/fers/stamps/CA-QC.json').write_text(json.dumps({'run': 'CA-43332473942', 'rules': 'x', 'built_sha': 'qc', 'key_builds': {'CA': 'CA-43311979456'}}) + '\n')
     grade = {'RELEASE-READY': 'PARTIAL', 'areas': {
         'CA-AB': {'RELEASE-READY': 'YES', 'no_worse_than_live': True},
         'CA-QC': {'RELEASE-READY': 'NO'},
@@ -334,7 +338,7 @@ with tempfile.TemporaryDirectory() as t:
     (t / 'grade.json').write_text(json.dumps(grade) + '\n')
     old_data, old_w, old_live, old_dry, old_argv = W.DATA, W.W, R.LIVE_FILE, R.DRY, sys.argv
     W.DATA = t; W.W = t / 'data/waiting'; R.LIVE_FILE = t / 'data/fers/LIVE.json'; R.DRY = False
-    _ld, _lp = _stub_released_keys('CA-AB', 'CA-QC', build='CA-43332473942')
+    _ld, _lp = _stub_released_keys('CA-AB', 'CA-QC', build='CA-43311979456')
     try:
         sys.argv = ['kpc_fers_release_areas.py', '--areas', 'CA-AB CA-QC', '--grade', str(t / 'grade.json')]
         from contextlib import redirect_stdout
@@ -369,7 +373,7 @@ with tempfile.TemporaryDirectory() as t:
     ab_new = doc(spot(['CA-0100', 'CA-0101']), spot(['CA-0102', 'CA-0103']))
     _fers_tree(t, {'CA-AB': ab_live, 'CA-QC': qc_live},
                {'CA-AB': ab_new, 'CA-QC': b'NOT-JSON{{{'})
-    (t / 'data/fers/stamps/CA-AB.json').write_text(json.dumps({'run': 'CA-9', 'rules': 'x', 'built_sha': 'ab'}) + '\n')
+    (t / 'data/fers/stamps/CA-AB.json').write_text(json.dumps({'run': '43311979456', 'rules': 'x', 'built_sha': 'ab', 'key_builds': {'CA': 'CA-43311979456'}}) + '\n')
     grade = {'RELEASE-READY': 'YES', 'areas': {
         'CA-AB': {'RELEASE-READY': 'YES', 'no_worse_than_live': True},
         'CA-QC': {'RELEASE-READY': 'YES'},
@@ -377,7 +381,7 @@ with tempfile.TemporaryDirectory() as t:
     (t / 'grade.json').write_text(json.dumps(grade) + '\n')
     old_data, old_w, old_live, old_dry, old_argv = W.DATA, W.W, R.LIVE_FILE, R.DRY, sys.argv
     W.DATA = t; W.W = t / 'data/waiting'; R.LIVE_FILE = t / 'data/fers/LIVE.json'; R.DRY = False
-    _ld, _lp = _stub_released_keys('CA-AB', 'CA-QC', build='CA-9')
+    _ld, _lp = _stub_released_keys('CA-AB', 'CA-QC', build='CA-43311979456')
     try:
         sys.argv = ['kpc_fers_release_areas.py', '--areas', 'CA-QC CA-AB', '--grade', str(t / 'grade.json')]
         from contextlib import redirect_stdout
@@ -408,7 +412,7 @@ with tempfile.TemporaryDirectory() as t:
     # cross-border pair in the hidden file
     ab_xb = doc(spot(['CA-0110', 'US-4558']))
     _fers_tree(data, {'CA-AB': ab_live}, {'CA-AB': ab_new})
-    (data / 'data/fers/stamps/CA-AB.json').write_text(json.dumps({'run': 'CA-9', 'rules': 'x', 'built_sha': 'ab'}) + '\n')
+    (data / 'data/fers/stamps/CA-AB.json').write_text(json.dumps({'run': '43311979456', 'rules': 'x', 'built_sha': 'ab', 'key_builds': {'CA': 'CA-43311979456'}}) + '\n')
     grade = {'RELEASE-READY': 'YES', 'areas': {'CA-AB': {'RELEASE-READY': 'YES', 'no_worse_than_live': True}}}
     (data / 'grade.json').write_text(json.dumps(grade) + '\n')
     # Links tree with no released key
@@ -430,7 +434,7 @@ with tempfile.TemporaryDirectory() as t:
         # now release the key
         dest = links / 'data/released/ca-key'; dest.mkdir(parents=True)
         (dest / 'CA-AB.json').write_text(json.dumps({'parks': {'CA-0100': {}}}) + '\n')
-        (links / 'data/released/RELEASED.json').write_text(json.dumps({'live': {'CA-AB': {'build': 'CA-9', 'sha': 'ab'}}}) + '\n')
+        (links / 'data/released/RELEASED.json').write_text(json.dumps({'live': {'CA-AB': {'build': 'CA-43311979456', 'sha': 'ab'}}}) + '\n')
         # hidden still waiting (previous promote did not happen)
         buf = io.StringIO()
         with redirect_stdout(buf):
@@ -450,7 +454,7 @@ with tempfile.TemporaryDirectory() as t:
     live = doc(spot(['CA-0100', 'CA-0101']))
     hidden = doc(spot(['CA-0110', 'US-4558']))
     _fers_tree(data, {'CA-AB': live}, {'CA-AB': hidden})
-    (data / 'data/fers/stamps/CA-AB.json').write_text(json.dumps({'run': 'CA-9', 'rules': 'x', 'built_sha': 'ab'}) + '\n')
+    (data / 'data/fers/stamps/CA-AB.json').write_text(json.dumps({'run': '43311979456', 'rules': 'x', 'built_sha': 'ab', 'key_builds': {'CA': 'CA-43311979456', 'US': 'US-43293787778'}}) + '\n')
     (data / 'grade.json').write_text(json.dumps({'RELEASE-READY': 'YES', 'areas': {'CA-AB': {'RELEASE-READY': 'YES', 'no_worse_than_live': True}}}) + '\n')
     (links / 'data/ca-key').mkdir(parents=True)
     (links / 'data/us-key').mkdir(parents=True)
@@ -458,7 +462,7 @@ with tempfile.TemporaryDirectory() as t:
     (links / 'data/us-key/US-MT.json').write_text(json.dumps({'parks': {'US-4558': {}}}) + '\n')
     (links / 'data/released/ca-key').mkdir(parents=True)
     (links / 'data/released/ca-key/CA-AB.json').write_text(json.dumps({'parks': {'CA-0110': {}}}) + '\n')
-    (links / 'data/released/RELEASED.json').write_text(json.dumps({'live': {'CA-AB': {'build': 'CA-9', 'sha': 'ab'}}}) + '\n')
+    (links / 'data/released/RELEASED.json').write_text(json.dumps({'live': {'CA-AB': {'build': 'CA-43311979456', 'sha': 'ab'}}}) + '\n')
     old_data, old_w, old_live, old_dry, old_argv, old_links = W.DATA, W.W, R.LIVE_FILE, R.DRY, sys.argv, os.environ.get('LINKS')
     W.DATA = data; W.W = data / 'data/waiting'; R.LIVE_FILE = data / 'data/fers/LIVE.json'; R.DRY = False
     os.environ['LINKS'] = str(links)
@@ -475,7 +479,7 @@ with tempfile.TemporaryDirectory() as t:
         (links / 'data/released/us-key').mkdir(parents=True)
         (links / 'data/released/us-key/US-MT.json').write_text(json.dumps({'parks': {'US-4558': {}}}) + '\n')
         idx = json.loads((links / 'data/released/RELEASED.json').read_text())
-        idx.setdefault('live', {})['US-MT'] = {'build': 'US-9', 'sha': 'mt'}
+        idx.setdefault('live', {})['US-MT'] = {'build': 'US-43293787778', 'sha': 'mt'}
         (links / 'data/released/RELEASED.json').write_text(json.dumps(idx) + '\n')
         buf = io.StringIO()
         with redirect_stdout(buf):
@@ -502,16 +506,26 @@ with tempfile.TemporaryDirectory() as tdir:
     links = tdir / 'links'
     (links / 'data/released/ca-key').mkdir(parents=True)
     (links / 'data/released/ca-key/CA-AB.json').write_text(json.dumps({'parks': {}}) + '\n')
-    (links / 'data/released/RELEASED.json').write_text(json.dumps({'live': {'CA-AB': {'build': 'CA-9', 'sha': 'ab'}}}) + '\n')
+    (links / 'data/released/RELEASED.json').write_text(json.dumps({'live': {'CA-AB': {'build': 'CA-43311979456', 'sha': 'ab'}}}) + '\n')
     data = tdir / 'data'
     (data / 'data/fers/stamps').mkdir(parents=True)
-    (data / 'data/fers/stamps/CA-AB.json').write_text(json.dumps({'key_source': 'CA-8'}) + '\n')
+    (data / 'data/fers/stamps/CA-AB.json').write_text(json.dumps({'key_source': 'build', 'key_builds': {'CA': 'CA-43056604383'}}) + '\n')
     old_data, old_w, old_links = W.DATA, W.W, os.environ.get('LINKS')
     W.DATA = data
     os.environ['LINKS'] = str(links)
     try:
         why = R.keys_not_ready('CA-AB', {'spots': []})
-        check('CA-8' in why and 'CA-9' in why, f'R5: a 2-fer made from another key build is refused ({why!r})')
+        check('CA-43056604383' in why and 'CA-43311979456' in why, f'D1: a 2-fer made from another key build is refused ({why!r})')
+        (data / 'data/fers/stamps/CA-AB.json').write_text(json.dumps({'key_source': 'build'}) + '\n')
+        why = R.keys_not_ready('CA-AB', {'spots': []})
+        check('no CA key build id' in why, f'D1: a stamp with no key build id is refused ({why!r})')
+        (data / 'data/fers/stamps/CA-AB.json').write_text(json.dumps({'key_builds': {'CA': 'CA-43311979456'}}) + '\n')
+        check(R.keys_not_ready('CA-AB', {'spots': []}) == '', 'D1: the matching real key build id promotes')
+        (links / 'data/us-key').mkdir(parents=True); (links / 'data/ca-key').mkdir(parents=True)
+        (links / 'data/us-key/index.json').write_text(json.dumps({'build': 'US-43293787778'}))
+        (links / 'data/ca-key/index.json').write_text(json.dumps({'build': 'CA-43311979456'}))
+        import kpc_fers_states as FS
+        check(FS.key_builds(links) == {'US': 'US-43293787778', 'CA': 'CA-43311979456'}, 'D1: the stamp records the real US and CA key build ids')
     finally:
         W.DATA = old_data
         if old_links is None: os.environ.pop('LINKS', None)
