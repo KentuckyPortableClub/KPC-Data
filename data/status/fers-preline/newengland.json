@@ -1,0 +1,121 @@
+{
+ "tag": "newengland",
+ "states": [
+  "US-MA",
+  "US-RI",
+  "US-CT",
+  "US-VT",
+  "US-NH",
+  "US-ME"
+ ],
+ "key_source": "build",
+ "checked": "2026-11-13 14:20 UTC",
+ "areas": {
+  "US-MA": {
+   "hold": [],
+   "warn": [
+    "3 review-pile HOLD row(s) still outlines: US-11401 US-11631 US-8396 (their 2-fers are 'not sure')",
+    "1 rule 18 row(s): US-8400 (a person decides)",
+    "2 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-11401 US-11631"
+   ],
+   "key_file": "data/us-key/US-MA.json",
+   "build": "US-43293787778",
+   "built": "2026-11-12 21:36 UTC",
+   "rules": "d4ebfafce438",
+   "parks": 421,
+   "outlines": 411,
+   "held_key": "HELD KEY: build US-43293787778 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "us-US-43293787778.json",
+   "bad_pins": 2,
+   "overrides_no_still": 0
+  },
+  "US-RI": {
+   "hold": [],
+   "warn": [
+    "1 rule 18 row(s): US-7722 (a person decides)"
+   ],
+   "key_file": "data/us-key/US-RI.json",
+   "build": "US-43293787778",
+   "built": "2026-11-12 21:36 UTC",
+   "rules": "d4ebfafce438",
+   "parks": 61,
+   "outlines": 58,
+   "held_key": "HELD KEY: build US-43293787778 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "us-US-43293787778.json",
+   "bad_pins": 0,
+   "overrides_no_still": 0
+  },
+  "US-CT": {
+   "hold": [],
+   "warn": [
+    "1 review-pile HOLD row(s) still outlines: US-1696 (their 2-fers are 'not sure')",
+    "1 rule 18 row(s): US-10656 (a person decides)",
+    "1 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-1696"
+   ],
+   "key_file": "data/us-key/US-CT.json",
+   "build": "US-43293787778",
+   "built": "2026-11-12 21:36 UTC",
+   "rules": "d4ebfafce438",
+   "parks": 157,
+   "outlines": 150,
+   "held_key": "HELD KEY: build US-43293787778 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "us-US-43293787778.json",
+   "bad_pins": 1,
+   "overrides_no_still": 0
+  },
+  "US-VT": {
+   "hold": [],
+   "warn": [
+    "3 review-pile HOLD row(s) still outlines: US-5532 US-5538 US-5553 (their 2-fers are 'not sure')",
+    "3 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-5532 US-5538 US-5553"
+   ],
+   "key_file": "data/us-key/US-VT.json",
+   "build": "US-43293787778",
+   "built": "2026-11-12 21:36 UTC",
+   "rules": "d4ebfafce438",
+   "parks": 109,
+   "outlines": 94,
+   "held_key": "HELD KEY: build US-43293787778 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "us-US-43293787778.json",
+   "bad_pins": 3,
+   "overrides_no_still": 0
+  },
+  "US-NH": {
+   "hold": [],
+   "warn": [
+    "5 review-pile HOLD row(s) still outlines: US-4894 US-4926 US-4933 US-4934 US-4955 (their 2-fers are 'not sure')",
+    "1 rule 18 row(s): US-13517 (a person decides)",
+    "8 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-4868 US-4886 US-4894 US-4926 US-4933 US-4934 US-4955 US-8396"
+   ],
+   "key_file": "data/us-key/US-NH.json",
+   "build": "US-43293787778",
+   "built": "2026-11-12 21:36 UTC",
+   "rules": "d4ebfafce438",
+   "parks": 206,
+   "outlines": 193,
+   "held_key": "HELD KEY: build US-43293787778 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "us-US-43293787778.json",
+   "bad_pins": 8,
+   "overrides_no_still": 0
+  },
+  "US-ME": {
+   "hold": [],
+   "warn": [],
+   "key_file": "data/us-key/US-ME.json",
+   "build": "US-43293787778",
+   "built": "2026-11-12 21:36 UTC",
+   "rules": "d4ebfafce438",
+   "parks": 148,
+   "outlines": 141,
+   "held_key": "HELD KEY: build US-43293787778 has no person's sign-off yet; the 2-fers measured on it are held with it",
+   "postcheck": "us-US-43293787778.json",
+   "bad_pins": 0,
+   "overrides_no_still": 0
+  }
+ },
+ "about": "2-fer pre-line check (Brandon, directly (Mapping chat), 4:52 AM CST Nov 4). HOLD = the line does not build. Read-only; nothing is moved or released.",
+ "fers_rules": "cef323de4c9a",
+ "verdict": "GO",
+ "holds": [],
+ "held_key": true
+}
