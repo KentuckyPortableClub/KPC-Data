@@ -1,0 +1,161 @@
+{
+ "about": "Assembly-line verdict for one area (fetcher -> worker -> checker). READY only when every pass finished in this run, nothing was cut short, the known answers + missing check pass.",
+ "tag": "plains",
+ "states": [
+  "US-MN",
+  "US-IA",
+  "US-MO",
+  "US-ND",
+  "US-SD",
+  "US-NE",
+  "US-KS"
+ ],
+ "since": "2026-11-13",
+ "date": "2026-11-13 16:55 UTC",
+ "verdict": "STOPPED",
+ "why": [
+  "missing check: 5737 of 9472 expected pairs were never looked at (61%; 2004 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (5725); <park>: not in this run (another state, retired, or no POTA pin) (12)",
+  "water not checked: US-MO: 1 rows (the USGS water map / files had no answer there): never READY with one"
+ ],
+ "known_answers": "19/19 on 2026-11-02",
+ "missing_check": {
+  "FOUND": 345,
+  "DROPPED": 1386,
+  "NEVER LOOKED AT": 7741
+ },
+ "never_looked_at": {
+  "counted": 5737,
+  "no_official_outline": 2004,
+  "expected": 9472,
+  "limit": "10%",
+  "by_reason": {
+   "not tested: the outlines' boxes do not touch (the parks are apart on the official maps)": 5725,
+   "<park>: not in this run (another state, retired, or no POTA pin)": 12
+  }
+ },
+ "report": {
+  "pass1": {
+   "date": "2026-11-13",
+   "pairs tested": 6600,
+   "pairs whose boxes touch": 6600
+  },
+  "pass2": {
+   "agree with the pass before": 1688,
+   "date": "2026-11-13",
+   "pairs tested": 481
+  },
+  "pass3": {
+   "agree with the pass before": 1246,
+   "date": "2026-11-13",
+   "pairs tested": 469
+  },
+  "pass5": {
+   "checked": 202,
+   "date": "2026-11-13",
+   "pairs tested": 0,
+   "still not checked": 1
+  }
+ },
+ "files": {
+  "US-MN": "data/fers/US-MN.json",
+  "US-IA": "data/fers/US-IA.json",
+  "US-MO": "data/fers/US-MO.json",
+  "US-ND": "data/fers/US-ND.json",
+  "US-SD": "data/fers/US-SD.json",
+  "US-NE": "data/fers/US-NE.json",
+  "US-KS": "data/fers/US-KS.json"
+ },
+ "US-MN": {
+  "rows": 1220,
+  "live": 209,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "our saved copy of the official line for US-11904 is only 10": 2,
+   "no park here owns land": 1,
+   "this spot is 130 km from Richard J. Dorer Memorial Hardwood": 1,
+   "one record covers two parks": 1
+  },
+  "dropped": 478,
+  "merged": 528
+ },
+ "US-IA": {
+  "rows": 63,
+  "live": 23,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "2-fer self-check": 1
+  },
+  "dropped": 25,
+  "merged": 14
+ },
+ "US-MO": {
+  "rows": 263,
+  "live": 62,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "both parks join the same official records but a POTA pin is": 1,
+   "low-confidence outline for Katy Trail Rock Island Spur State": 1,
+   "both parks join the same official records and both POTA pins": 1,
+   "water not checked": 1
+  },
+  "dropped": 116,
+  "merged": 81
+ },
+ "water_weak": {
+  "US-MO": 1
+ },
+ "US-ND": {
+  "rows": 52,
+  "live": 12,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 22,
+  "merged": 18
+ },
+ "US-SD": {
+  "rows": 58,
+  "live": 11,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {},
+  "dropped": 39,
+  "merged": 8
+ },
+ "US-NE": {
+  "rows": 128,
+  "live": 48,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "one record covers two parks": 9,
+   "both parks join the same official records and both POTA pins": 3
+  },
+  "dropped": 23,
+  "merged": 45
+ },
+ "US-KS": {
+  "rows": 61,
+  "live": 24,
+  "waiting": 0,
+  "unfinished": 0,
+  "not_sure": {
+   "one record covers two parks": 5
+  },
+  "dropped": 10,
+  "merged": 22
+ },
+ "states_ready": [],
+ "states_held": [
+  "US-MN",
+  "US-IA",
+  "US-MO",
+  "US-ND",
+  "US-SD",
+  "US-NE",
+  "US-KS"
+ ]
+}

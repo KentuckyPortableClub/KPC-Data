@@ -1,0 +1,33 @@
+{
+ "tag": "plains",
+ "checked": "2026-11-13 16:55 UTC",
+ "areas": {
+  "US-MN": 0,
+  "US-IA": 1,
+  "US-MO": 0,
+  "US-ND": 0,
+  "US-SD": 0,
+  "US-NE": 0,
+  "US-KS": 0
+ },
+ "held": 1,
+ "rule": "an area / same-land 2-fer is held when either half is a PIN or APPROXIMATE in that state / province / country of the current key",
+ "by": "fers-selfcheck",
+ "rows": [
+  {
+   "id": "US-0271+US-0367@area@41.539,-93.260",
+   "refs": [
+    "US-0271",
+    "US-0367"
+   ],
+   "kind": "area",
+   "area": "US-IA",
+   "was": "candidate",
+   "why": "dropped: key PIN is not a line-match (US-0367)",
+   "halves": {
+    "US-0271": "official",
+    "US-0367": "pin"
+   }
+  }
+ ]
+}
