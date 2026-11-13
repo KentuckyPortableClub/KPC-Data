@@ -5,14 +5,14 @@
    "verdict": "FAIL",
    "bar": "Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.",
    "measured": {
-    "rows": 10622,
-    "parks": 4126,
+    "rows": 10712,
+    "parks": 4140,
     "parks_with_hit": 579,
     "SURE": 446,
-    "LIKELY": 654,
-    "UNLIKELY_evidence": 3851,
+    "LIKELY": 658,
+    "UNLIKELY_evidence": 3866,
     "strong": 246,
-    "already_approved": 568,
+    "already_approved": 570,
     "open_without_whynot": 456,
     "non_official_candidates": 1,
     "unlikely_as_questions": 0,
@@ -31,19 +31,19 @@
     },
     {
      "reason": "evidence: UNLIKELY only : name: none word in common",
-     "parks": 1733
+     "parks": 1736
     },
     {
      "reason": "blocked: source could not be read",
-     "parks": 1053
+     "parks": 1122
     },
     {
      "reason": "evidence: UNLIKELY only : pin not inside nor within m with a name match",
-     "parks": 854
+     "parks": 859
     },
     {
      "reason": "already approved: already approved",
-     "parks": 568
+     "parks": 570
     }
    ],
    "examples": [
@@ -108,19 +108,19 @@
     "the finder bars need the side-by-side run (95% re-found, +25% parks) and a 40-row sample (85% YES)"
    ],
    "details": {
-    "rows": 10622,
-    "found_or_candidate": 1074,
-    "blocked": 2100,
+    "rows": 10712,
+    "found_or_candidate": 1078,
+    "blocked": 2169,
     "hit_rate": 0.101,
     "bands": {
      "STRONG": 246,
-     "WEAK": 810,
+     "WEAK": 814,
      "CONFLICT": 18
     },
     "tiers": {
      "T-1": 76,
-     "T-2": 351,
-     "T-3": 514,
+     "T-2": 353,
+     "T-3": 516,
      "T-4": 67,
      "T-6": 66
     },
@@ -296,11 +296,11 @@
   "outline": {
    "pass1": {
     "error": 430,
-    "already approved": 568,
+    "already approved": 570,
     "found": 259,
-    "candidate": 908,
-    "evidence": 3781,
-    "blocked": 2100,
+    "candidate": 912,
+    "evidence": 3796,
+    "blocked": 2169,
     "not found": 2571,
     "pin only": 5
    },
