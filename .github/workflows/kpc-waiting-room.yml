@@ -94,11 +94,11 @@ jobs:
           GITHUB_TRIGGERING_ACTOR: ${{ github.triggering_actor }}
         run: |
           cd kpcdata
-          # Quality D2 (Brandon, Nov 13 2026 7:48 AM CT): only his own login kpcwebhost may release; no repo-owner
-          # fallback (the bots commit as KentuckyPortableClub) and the check reads triggering_actor, not actor.
+          # Quality D2 (Brandon, Nov 13 2026 8:34 AM CT): only his login KentuckyPortableClub may release; the check reads
+          # triggering_actor, not actor, and has no repo variable.
           ACTOR="${{ github.triggering_actor }}"
-          if [ "$ACTOR" != "kpcwebhost" ]; then
-            echo "::error title=Release::${ACTOR:-no actor} is not kpcwebhost (the only release login). Nothing was released."
+          if [ "$ACTOR" != "KentuckyPortableClub" ]; then
+            echo "::error title=Release::${ACTOR:-no actor} is not KentuckyPortableClub (the only release login). Nothing was released."
             exit 1
           fi
           M="${{ inputs.mode }}"
