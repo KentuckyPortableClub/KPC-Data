@@ -134,6 +134,29 @@ def refused(rel):
     return (W.W / 'in' / rel).exists() and bool(W.keep_line(rel) or W.not_line(rel))
 
 
+# Verified sources for a release (X1, Quality Nov 13). Releases stay owner-run.
+OWNER_SRC_RE = re.compile(r'brandon|kpc owner|kentuckyportableclub', re.I)
+QUALITY_SRC_RE = re.compile(r'\bquality\b|chat\s*11\b', re.I)
+BOT_SRC_RE = re.compile(r'(^|[^a-z0-9])(kpc-bot|github-actions(?:\[bot\])?|dependabot|auto(?:matic)?(?:\s+bot)?|trusted(?:\s+kind)?)([^a-z0-9]|$)', re.I)
+
+
+def item_source_text(it):
+    it = it or {}
+    return ' '.join(str(it.get(k) or '') for k in ('by', 'author', 'who', 'source', 'from', 'grader', 'checked_by', 'signed_by'))
+
+
+def source_ok(it):
+    """(ok, why). Require a verified owner or Quality source; refuse bot-written entries."""
+    text = item_source_text(it)
+    if BOT_SRC_RE.search(text) and not (OWNER_SRC_RE.search(text) or QUALITY_SRC_RE.search(text)):
+        return False, 'bot-written entry: refused (releases stay owner-run)'
+    if OWNER_SRC_RE.search(text) or QUALITY_SRC_RE.search(text):
+        return True, ''
+    if not text.strip():
+        return False, 'no verified owner or Quality source on the item: refused'
+    return False, 'source is not a verified owner or Quality: refused'
+
+
 def verdict_ok(v):
     """Oct 31 (Fable review #6): chat 11's field decides, whoever created the item (chat 2 creates the 2-fer items: MN + IA were skipped
     twice). Markup is ignored ('**YES**', '"YES', 'KEY: YES', double spaces); a verdict that ALSO says NO / FAIL / HOLD / NOT SURE /
@@ -182,7 +205,7 @@ AUTO_GRADE = re.compile(r'\bauto(matic)?\b|\bbot check\b', re.I)
 
 
 TRUST_KINDS = {'campinfo', 'access', 'docs', 'truth', 'campfed', 'campstate', 'trails', 'leads', 'hours', 'campsites', 'cell', 'acres'}   # never 2-fers, keys, POTA, closures
-TRUST_RUN = 3   # Brandon Oct 31 10:00 PM ('I agree to all'): a bot kind whose last 3 chat-11 grades all passed is released by the bot, chat 11 samples 1 in 10
+TRUST_RUN = 0   # X1 (Quality Nov 13): a bot must not release itself. Releases stay owner-run (verified owner or Quality source).
 
 
 def central_date():
@@ -204,7 +227,10 @@ def item_kind(it):
 
 
 def trusted_kinds(items):
-    """kind -> True when its last TRUST_RUN graded items (chat 11's field, newest last) all say YES / PASS and none says NO."""
+    """kind -> True when its last TRUST_RUN graded items (chat 11's field, newest last) all say YES / PASS and none says NO.
+    TRUST_RUN < 1 (X1): no kind is trusted for bot self-release."""
+    if int(TRUST_RUN or 0) < 1:
+        return set()
     hist = {}
     for it in items:
         k = item_kind(it); v = str(it.get('chat11') or '').strip()
@@ -219,8 +245,9 @@ def trusted_kinds(items):
 
 
 def auto_trusted(items, log):
-    """Held files of a trusted kind whose waiting-room verdict is PASS go live by themselves; 1 in 10 is listed for chat 11's sample
-    (data/waiting/sample-for-chat11.json). A chat-11 NO on any sample ends the trust at once (the next run sees it)."""
+    """X1: bot self-release is refused. Releases stay owner-run (a chat-11 YES from a verified owner or Quality source)."""
+    print('::notice title=Release approved (trusted)::bot self-release is refused; releases stay owner-run')
+    return
     import hashlib
     T = trusted_kinds(items)
     if not T: print('::notice title=Release approved (trusted)::no bot kind has 3 passed grades in a row yet'); return
@@ -331,6 +358,8 @@ def main():
         key = json.dumps(it, sort_keys=True, ensure_ascii=False)
         if key in U: continue
         ok, why = verdict_ok(it.get('chat11'))   # Brandon Oct 29 5:16 PM 'Waiting Room 11 has to approve' = chat 11's own field
+        if ok:
+            ok, why = source_ok(it)   # X1: verified owner or Quality source; bot-written entries are refused
         if ok:
             why = before_cutoff(it); ok = not why   # Nov 2 bot fixes (Quality 8a, rule 22): nothing graded before the 9:37 AM restart moves
         if not ok:
