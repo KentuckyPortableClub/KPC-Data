@@ -192,3 +192,44 @@ environment variable = 0, so a before / after run can measure each. None is a ga
   sheets) is tried, as a closed ring only, not touching the picture edge; flagged in the report.
 `python3 kpc_trace_marks.py --selftest` and `python3 dev/marks_match_test.py` (end to end through the tracer's own matcher and gates)
 run in the workflow before tracing. `--list-hosts --base <folder>` prints every host a run would contact and makes no request.
+
+## Nov 11: placing a picture by hand (KPC owner, 2026-11-11)
+For the maps the tracer cannot place (campgrounds, small parks, landings): a person places the picture by hand on the members' page
+`kpc-map-placer.html` (KPC-Links), and `kpc_hand_place.py` checks it here. A hand placement **is a picture trace**: approximate, never
+official, the same gates, the same output, the same not-official note.
+
+**The person's flow.** Pick the state and the park (parks with a saved picture on `picture-maps`). Click a spot on the picture, then the
+same spot on the USGS map (road junction, bridge end, building corner), at least 4 pairs spread around the park; move or delete a pair any
+time. After 3 pairs the page shows each pair's error, the leave-one-out error and every gate. Then trace the boundary (or the trail) on the
+picture, corner by corner, and SAVE: the page downloads `<ref>.clicks.json`. Put it on the `intake-files` branch in `hand-placer/`.
+
+**The check.** Prepare the tracer's input folder as usual (`kpc_picture_prep.py <picture-maps checkout> <KPC-Links checkout>`; do NOT run
+`kpc_picture_geo.py` first: it redraws the picture, and the click set's picture fingerprint is the saved copy's). Then:
+```bash
+python3 .github/scripts/draft/kpc_hand_place.py <ref>.clicks.json --base <fixtures> --out <tools-out>/picture-trace/hand
+#   optional: --basemap <fixtures>/cache/<ref>_basemap.json   (the tracer's saved basemap: scores its line agreement too)
+python3 .github/scripts/draft/kpc_hand_place.py --check <tools-out>/picture-trace/hand/*.json --base <fixtures>   # Quality's re-check
+```
+It never trusts the page's numbers: it fits again from the saved pairs and refuses a click set whose own numbers do not match its points.
+It writes `<ref>.json` exactly like an accepted automatic trace (`traced/<ref>.json`: grade, status DRAWN, fit_m, fit_loo_m, control_points,
+`use_for_2fer: false`, `official: false`, ...) plus `via: "hand points"` and `hand` = the whole click set, its sha256 and the checker's
+numbers and gate results. `--check` places the stored click set again and must get the stored file byte for byte; exit 1 otherwise.
+Keep hand traces in their own folder (`picture-trace/hand`), not in `picture-trace/traced`: the picture-trace workflow rewrites that one.
+No network at all, no pin is moved, WDPA / Protected Planet input is refused.
+
+**The gates in plain words** (the tracer's constants are imported, not copied):
+- **as is:** fit error (RMS) under 50 m; leave-one-out error under 50 m; the POTA pin inside or within 1 km (else held); size against the
+  known acres (0.2x-5x) or the ceiling for the park type (else held); a map clipped at the picture edge (held); the index row (agency,
+  source address, page; app / crowd map sites refused).
+- **adapted:** the scale must be in the GeoPDF plausibility range (0.05-500 m per pixel); at least 4 pairs (the tracer's 3 + 1, so every pair can be left out and checked by the others); the WORST single pair left
+  out must also miss by under 50 m; the picture may not be stretched more than 15% one way (the GeoPDF skew limit) or mirrored.
+- **new for hand points:** the points are not nearly on one line (spread 0.15 or more); the points span at least half the traced shape;
+  no part of the shape lies further outside the points than half their spread; every real-map point was clicked on a USGS layer.
+- **line agreement:** scored with the tracer's own function on the tracer's saved basemap when one is given (`--basemap`): z 2 or more, and
+  1.5x / +2 over the same basemap turned 90 / 180 / 270 degrees. With no saved basemap it is recorded as "not scored" in the trace's flags.
+- **cannot apply:** the rotated-decoy junction score. It asks whether a MACHINE's choice of junctions beats chance; a person chose these
+  points by eye, so it is replaced by the geometry gates above (and by the line agreement when a basemap is given).
+
+**2-fers.** Exactly as an automatic picture trace: after grading, a person adds the outline to KPC-Links `data/fers-approx-outlines.json`
+(`--fers-entry <trace>` prints the entry: the automatic fields + `via`), and `kpc_fers.py` treats it as any picture trace (approximate
+tier, the not-official note, an official outline always wins). `tests/test_hand_place_nov11.py` drives that path with the real functions.
