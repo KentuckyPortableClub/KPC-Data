@@ -261,7 +261,7 @@
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-06"
+   "updated": "2026-11-13"
   },
   "US-IA": {
    "camps": 223,
@@ -1127,7 +1127,7 @@
   "US-DE": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-FL": "FCC listAsOfDates: robots.txt says no",
   "US-GA": "FCC listAsOfDates: robots.txt says no",
-  "US-HI": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-HI": "FCC listAsOfDates: robots.txt says no",
   "US-IA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-ID": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-IL": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1264,9 +1264,9 @@
     "carriers": null,
     "files": [],
     "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "status": "FCC listAsOfDates: robots.txt says no"
    },
-   "read": "2026-11-06"
+   "read": "2026-11-13"
   },
   "US-IA": {
    "cell": {
@@ -1622,8 +1622,7 @@
  },
  "hosts": {
   "dep.nj.gov": 1794571755.9843144,
-  "parks.ky.gov": 1794568343.840061,
-  "www.fs.usda.gov": 1794564793.8127542
+  "parks.ky.gov": 1794568343.840061
  },
  "ky_check": {
   "agree": 53,
@@ -2572,11 +2571,11 @@
  },
  "last": {
   "areas": [
-   "US-CA"
+   "US-HI"
   ],
   "fcc_token": true,
   "manners": {
-   "dropped_queued": 1214,
+   "dropped_queued": 21,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2586,37 +2585,29 @@
     [
      "https://broadbandmap.fcc.gov/robots.txt",
      "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from broadbandmap.fcc.gov"
-    ],
-    [
-     "https://www.reservecalifornia.com/robots.txt",
-     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from www.reservecalifornia.com"
-    ],
-    [
-     "https://www.fire.ca.gov/robots.txt",
-     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from www.fire.ca.gov"
     ]
    ],
    "host_rule": 0,
-   "requests": 124,
-   "rested": 16,
-   "robots": 4,
+   "requests": 27,
+   "rested": 0,
+   "robots": 2,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 9,
-   "camps": 1210,
+   "browser": 10,
+   "camps": 22,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 9,
-   "needs_key": 768,
-   "no_page": 360,
+   "needs_browser": 2,
+   "needs_key": 2,
+   "no_page": 8,
    "not_official": 0,
-   "ok": 59,
-   "pages_read": 106,
-   "resting": 16,
+   "ok": 20,
+   "pages_read": 13,
+   "resting": 0,
    "ridb_calls": 0,
-   "robots": 7,
+   "robots": 0,
    "skipped_fresh": 0
   },
   "when": "2026-11-13"
