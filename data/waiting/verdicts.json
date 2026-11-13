@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-13T02:31Z",
+ "checked": "2026-11-13T03:07Z",
  "switched_on": false,
  "results": [
   {
@@ -1164,11 +1164,10 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/CA-AB.json.gz",
+   "path": "data/fers/CA-AB.json",
    "kind": "fers",
    "why": [
-    "F-2 only 27 of 37 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 5 new candidate pairs since the live file (over 10% of 37): a person looks at them first, e.g. CA-0110+US-4558, CA-0664+CA-0719+CA-0726, CA-2956+CA-2958"
+    "F-4 data/fers/CA-AB.json replaces live data/fers/CA-AB.json.gz (other format) with 536 rows for 836 (over 10% fewer)"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1189,7 +1188,9 @@
    "path": "data/fers/CA-MB.json",
    "kind": "fers",
    "why": [
-    "F-2 only 3 of 4 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
+    "F-2 pass2 missing: the 2-fer passes did not all run",
+    "F-2 pass3 missing: the 2-fer passes did not all run",
+    "F-2 only 0 of 4 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
    ],
    "notes": [
     "replaces live data/fers/CA-MB.json.gz (same file, other format): promotion removes the old name"
@@ -1248,18 +1249,15 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/CA-ON.json",
+   "path": "data/fers/CA-ON.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 candidates 13 -> 5 (over 30% change)",
-    "F-2 NOT SURE 302 -> 24 (over 30% change)",
-    "F-2 pass2 missing: the 2-fer passes did not all run",
-    "F-2 pass3 missing: the 2-fer passes did not all run",
-    "F-2 only 4 of 13 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
+    "F-2 candidates 13 -> 138 (over 30% change)",
+    "F-2 NOT SURE 302 -> 19 (over 30% change)",
+    "F-2 only 5 of 13 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
+    "F-2 133 new candidate pairs since the live file (over 10% of 13): a person looks at them first, e.g. CA-0006+CA-6003, CA-0010+CA-0168, CA-0010+CA-0241"
    ],
-   "notes": [
-    "replaces live data/fers/CA-ON.json.gz (same file, other format): promotion removes the old name"
-   ],
+   "notes": [],
    "verdict": "HOLD"
   },
   {
@@ -1295,9 +1293,10 @@
    "path": "data/fers/CA-SK.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 10 -> 31 (over 30% change)",
-    "F-2 only 5 of 10 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
-    "F-2 26 new candidate pairs since the live file (over 10% of 10): a person looks at them first, e.g. CA-0051+CA-1118, CA-0075+CA-6128, CA-0075+CA-6130"
+    "F-2 candidates 10 -> 6 (over 30% change)",
+    "F-2 pass2 missing: the 2-fer passes did not all run",
+    "F-2 pass3 missing: the 2-fer passes did not all run",
+    "F-2 only 5 of 10 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -4466,6 +4465,16 @@
    "why": [],
    "notes": [],
    "verdict": "PASS"
+  },
+  {
+   "path": "data/fers/CA-AB.json.gz",
+   "kind": "fers",
+   "why": [
+    "F-2 only 27 of 37 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
+    "F-2 5 new candidate pairs since the live file (over 10% of 37): a person looks at them first, e.g. CA-0110+US-4558, CA-0664+CA-0719+CA-0726, CA-2956+CA-2958"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
   }
  ]
 }
