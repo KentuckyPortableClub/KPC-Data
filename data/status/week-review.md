@@ -1,4 +1,4 @@
-# The week in numbers (2026-11-05 -> 2026-11-12)
+# The week in numbers (2026-11-06 -> 2026-11-13)
 
 For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snapshots in week-numbers.json.
 
@@ -6,9 +6,9 @@ For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snaps
 
 | key | official | approximate | pin | official change this week |
 |---|---|---|---|---|
-| US | 11,271 | 414 | 1,422 | +74 |
-| Canada | 4,348 | 39 | 1,514 | -28 |
-| World | 29,141 | 0 | 17,466 | +904 |
+| US | 11,271 | 414 | 1,422 | +108 |
+| Canada | 4,348 | 39 | 1,514 | -26 |
+| World | 29,141 | 0 | 17,466 | +915 |
 
 ## Questions (per file: tier + answer)
 
