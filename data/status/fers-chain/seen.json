@@ -1,7 +1,7 @@
 {
  "us-key": {
-  "build": "US-43056604383",
-  "first_seen": "2026-11-11 18:02 UTC",
+  "build": "US-43293787778",
+  "first_seen": "2026-11-13 10:21 UTC",
   "areas": {
    "southcentral": {
     "fp": "ecc47844f6dcf8ee",
@@ -14,8 +14,8 @@
     "tries": 1
    },
    "southeast": {
-    "fp": "cd97f9e2ef4953f2",
-    "planned": "2026-11-12 18:35 UTC",
+    "fp": "7a538f2b1c0205f1",
+    "planned": "2026-11-13 10:21 UTC",
     "tries": 1
    },
    "pacific": {
@@ -24,14 +24,14 @@
     "tries": 1
    },
    "midatlantic": {
-    "fp": "18f287df91b346e3",
-    "planned": "2026-11-12 18:35 UTC",
+    "fp": "62d5014922f2e244",
+    "planned": "2026-11-13 10:21 UTC",
     "tries": 1
    },
    "newyork": {
     "fp": "fe99adc49ee23864",
-    "planned": "2026-11-12 18:35 UTC",
-    "tries": 1
+    "planned": "2026-11-13 10:21 UTC",
+    "tries": 2
    }
   },
   "waiting": {
@@ -47,22 +47,7 @@
    "southeast",
    "midatlantic",
    "newyork"
-  ],
-  "retired": {
-   "midwest": {
-    "fp": "e6d77ece24d1ca53",
-    "planned": "2026-11-12 11:03 UTC",
-    "tries": 1
-   },
-   "northeast": {
-    "fp": "92b5c2b9ca2b8f90",
-    "planned": "2026-11-12 11:03 UTC",
-    "tries": 1
-   },
-   "oh": "next start (at most 3 areas at a time)",
-   "mi": "next start (at most 3 areas at a time)",
-   "ut": "next start (at most 3 areas at a time)"
-  }
+  ]
  },
  "ca-key": {
   "build": "CA-43311979456",
@@ -85,12 +70,11 @@
    }
   },
   "waiting": {
+   "canadabc": "next start (at most 3 areas at a time)",
+   "canadawest": "next start (at most 3 areas at a time)",
+   "canadaon": "next start (at most 3 areas at a time)",
    "canadaeast": "next start (at most 3 areas at a time)"
   },
-  "ran": [
-   "canadabc",
-   "canadawest",
-   "canadaon"
-  ]
+  "ran": []
  }
 }
