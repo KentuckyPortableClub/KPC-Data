@@ -55,6 +55,19 @@ REASONS = ('built', 'reused', 'failed', 'not-built', 'not-planned', 'cancelled',
 
 
 # ------------------------------------------------------------------ areas (the ONE list)
+
+def key_builds(links):
+    """Quality D1 (KPC owner, 2026-11-13): the real key build ids this 2-fer was made from, per kind (US and CA, so a
+    cross-border pair can check both). Read from the Links key indexes; a kind with no readable build is left out."""
+    out = {}
+    for kind, rel in (('US', 'data/us-key/index.json'), ('CA', 'data/ca-key/index.json')):
+        try:
+            b = str((json.loads((pathlib.Path(links) / rel).read_text(encoding='utf-8')) or {}).get('build') or '')
+        except (OSError, ValueError, TypeError, AttributeError):
+            b = ''
+        if b: out[kind] = b
+    return out
+
 def areas(root=ROOT):
     return json.load(open(pathlib.Path(root) / '.github/fers-areas.json', encoding='utf-8'))['areas']
 
@@ -382,7 +395,7 @@ def pick(env=os.environ, out=sys.stdout):
         rec = {'format': 1, 'st': st, 'composition': COMPOSITION, 'rules': rules, 'area_hash': rows[st]['area_hash'], 'area_parts': rows[st]['area_parts'],
                'neighbours': rows[st]['nb'], 'out_sha': sha(b), 'built_sha': _git(links, 'rev-parse', 'HEAD').stdout.strip() or env.get('BUILT_SHA', ''),
                'data_sha': base if base != 'HEAD' else _git(kpcdata, 'rev-parse', 'HEAD').stdout.strip(), 'passes': passes(d),
-               'run': env.get('GITHUB_RUN_ID', ''), 'job': env.get('JOB') or '', 'key_source': env.get('KEY_SOURCE') or 'live', 'why': 'built'}
+               'run': env.get('GITHUB_RUN_ID', ''), 'job': env.get('JOB') or '', 'key_source': env.get('KEY_SOURCE') or 'live', 'key_builds': key_builds(links), 'why': 'built'}
         stp.write_text(json.dumps(rec, indent=1, sort_keys=True) + '\n', encoding='utf-8')
         rows[st].update(verdict='built', why='rebuilt and saved (held in the waiting room)' + (f"; {rows[st]['dropped']} pair(s) left to their owner state" if rows[st].get('dropped') else ''))
     # 6 the run table

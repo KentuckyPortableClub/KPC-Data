@@ -120,6 +120,33 @@ D = steps[DI]
 SI = next(i for i, s in enumerate(steps) if str(s.get('name', '')).startswith('Save (data/waiting'))
 S = steps[SI]
 
+
+def _wr_inputs_ok(O, W):
+    """Nov 13: the only allowed waiting-room trigger change is release-areas (mode text + areas/grade inputs)."""
+    oi = (O.get(True) or {}).get('workflow_dispatch', {}).get('inputs') or {}
+    wi = (W.get(True) or {}).get('workflow_dispatch', {}).get('inputs') or {}
+    if set(wi) - set(oi) != {'areas', 'grade'}: return False
+    if set(oi) - set(wi): return False
+    if 'release-areas' not in (wi.get('mode') or {}).get('description', ''): return False
+    if (wi.get('mode') or {}).get('default') != (oi.get('mode') or {}).get('default'): return False
+    for k in oi:
+        if k == 'mode': continue
+        if oi[k] != wi[k]: return False
+    return True
+
+def _wr_run_norm(run):
+    return re.sub(
+        r'^[ \t]*release-areas\) python3 \.github/scripts/kpc_fers_release_areas\.py --areas "\$\{\{ inputs\.areas \}\}" --grade "\$\{\{ inputs\.grade \}\}" ;;\n',
+        '', run or '', flags=re.M)
+
+def _wr_on_same(O, W):
+    if not _wr_inputs_ok(O, W): return False
+    # crons and event types unchanged; dispatch inputs compared above
+    o_on, w_on = O.get(True) or {}, W.get(True) or {}
+    if sorted(o_on) != sorted(w_on): return False
+    if o_on.get('schedule') != w_on.get('schedule'): return False
+    return True
+
 # ------------------------------------------------------------------ 0. what it is, unchanged parts
 bad = []
 for f in sorted(WF.glob('*.yml')):
@@ -140,10 +167,24 @@ if r.returncode == 0:
     os_ = O['jobs']['waiting']['steps']
     # Nov 12 follow-up (KPC owner, 2026-11-11): Save (SI) now runs kpc_push_data.sh with STRICT=1 and exits 1 on a failed save;
     # that change is checked in tests/test_waiting_room_followups_nov12.py, so Save is left out of this compare too.
-    same = len(os_) == len(steps) and all(a == b for i, (a, b) in enumerate(zip(os_, steps)) if i not in (DI, SI))
-    check('every other step (but Save, see test_waiting_room_followups_nov12), the job settings, the triggers, permissions and concurrency are byte-for-byte the same as on main (da499ab)',
+    same = len(os_) == len(steps) and all((_wr_run_norm(a.get('run')) == _wr_run_norm(b.get('run')) and {k: v for k, v in a.items() if k != 'run'} == {k: v for k, v in b.items() if k != 'run'}) for i, (a, b) in enumerate(zip(os_, steps)) if i not in (DI, SI))
+    # Quality regrade: schedule defaults to check; release-approved / release-areas moved to an owner-dispatch step.
+    # The dispatch step (DI) and Save (SI) are already compared separately in this test / followups.
+    skip_ids = {'kept_green_1', 'kept_green_8', 'kept_green_9'}  # Run, Save, dispatch
+    skip_names = {'Run the waiting room', 'Owner release (release-approved or release-areas)'}
+    same = True
+    wnames = {s.get('id') or s.get('name'): s for s in steps}
+    for a in os_:
+        key = a.get('id') or a.get('name')
+        if a.get('id') in skip_ids or (a.get('name') or '') in skip_names:
+            continue
+        b = wnames.get(key)
+        if b is None or {k: v for k, v in a.items() if k != 'run'} != {k: v for k, v in b.items() if k != 'run'} or _wr_run_norm(a.get('run')) != _wr_run_norm(b.get('run')):
+            same = False
+            break
+    check('every other step (but Save, Run, dispatch, and the new owner-release step), the job settings, the triggers, permissions and concurrency are the same as on main, except the Nov 13 owner-dispatch changes',
           same and {k: v for k, v in O['jobs']['waiting'].items() if k != 'steps'} == {k: v for k, v in J.items() if k != 'steps'}
-          and all(O.get(k) == W.get(k) for k in (True, 'permissions', 'concurrency', 'name', 'run-name')))
+          and _wr_on_same(O, W) and all(O.get(k) == W.get(k) for k in ('permissions', 'concurrency', 'run-name')))
     check('the old step was if: always() (the hole this fixes)', os_[DI].get('if') == 'always()')
 else:
     print('INFO da499ab not in this clone: the compare with main is skipped')

@@ -567,6 +567,11 @@ def c_fers(path, new, live, ctx):
     if len(op) >= 3 and len(np_ - op) > max(2, .10 * len(op)):   # chat 8 retest 1: near-miss swaps (a partner moved to a park 20 km away) add NEW pairs
         holds.append(f'F-2 {len(np_ - op)} new candidate pairs since the live file (over 10% of {len(op)}): a person looks at them first, e.g. ' + ', '.join('+'.join(sorted(q)) for q in sorted(np_ - op, key=sorted)[:3]))
     if O and not S: holds.append(f'F-2 every row gone (live had {len(O)})')
+    # Nov 13: a hidden file with 0 live pairs must never replace a live file that has pairs (canadaeast/casp not run on this key)
+    n_live = len({frozenset(s.get('refs') or []) for s in O if str(s.get('status', '')).startswith(('candidate', 'very tight', 'water only'))})
+    n_new = len({frozenset(s.get('refs') or []) for s in S if str(s.get('status', '')).startswith(('candidate', 'very tight', 'water only'))})
+    if n_live > 0 and n_new == 0:
+        holds.append(f'F-2 0 pairs in the hidden file, live had {n_live}: never replace live with 0 pairs')
     # chat 8 attack 3: a far-apart pair is a wrong join for EVERY kind (area / trail / river too), not only 'same land'
     far2 = []
     for s in S:
@@ -1202,11 +1207,39 @@ def promote_overrides_set(rel, content=None, raw=None):
     return True
 
 
+
+def refuse_fers_promote(rel, src=None, new=None, live=None):
+    """Nov 13: a hidden 2-fer file must never replace live with 0 pairs, and world 2-fers are never public.
+    Returns a reason to refuse, or ''."""
+    rel = str(rel).replace('\\', '/')
+    name = pathlib.Path(rel).name
+    if name.endswith('.gz'):
+        name = name[:-3]
+    if re.match(r'W-[A-Z]{2}\.json$', name):
+        return 'world 2-fers are never public'
+    if not re.match(r'(?:US|CA)-[A-Z]{2}\.json$', name):
+        return ''
+    if new is None and src is not None:
+        new = load(src)
+    if live is None:
+        live = load(DATA / 'data' / 'fers' / name) or load(DATA / 'data' / 'fers' / (name + '.gz'))
+    def n_live(d):
+        return sum(1 for s in ((d or {}).get('spots') or []) if isinstance(s, dict) and str(s.get('status', '')).startswith(('candidate', 'very tight', 'water only')))
+    a, b = n_live(live), n_live(new)
+    if live and a > 0 and b == 0:
+        return f'hidden file has 0 pairs, live has {a}: never replace live with 0 pairs'
+    return ''
+
+
 def promote_file(rel, content=None, raw=None):
     """Fable c: the file goes live EXACTLY as the bot wrote it (its own bytes: indent, gzip), so git sees only real changes. Only a
     closures file with rows taken out is rewritten (indented, like the bot writes it). Nov 12: a split override set goes live as ONE
     set (promote_overrides_set; False = nothing went live)."""
     if ov_member(rel) and ov_split(rel, content, raw): return promote_overrides_set(rel, content, raw)
+    why = refuse_fers_promote(rel, src=raw, new=content)
+    if why:
+        print(f'::notice title=Waiting room::refused {rel}: {why}')
+        return False
     live = DATA / rel
     if str(rel).endswith('overrides.json') and live.exists():   # Nov 9: never lose a newer hand edit (see keep_newer_overrides)
         try:
@@ -1287,6 +1320,9 @@ def mode_release(rel):
     if '..' in str(rel) or str(rel).startswith('/') or not str(rel).startswith('data/'): print(f'::notice title=Waiting room release::refused: {rel} is not a data/ path'); return
     src = W / 'in' / rel
     if not src.exists(): print(f'::notice title=Waiting room release::nothing held at {rel}'); return
+    why = refuse_fers_promote(rel, src=src)
+    if why:
+        print(f'::notice title=Waiting room release::refused: {why}'); return
     if load(src) is None: print(f'::notice title=Waiting room release::refused: {rel} does not read as JSON'); return   # chat 8 retest 5
     kl, nl = keep_line(rel), not_line(rel)   # Nov 4: a person's keep (Brandon, directly (Mapping chat), 4:36 AM CST Nov 4) beats any YES or trusted-kind release
     if nl: print(f'::notice title=Waiting room release::refused: {rel} is not a trail line (data/waiting/known/trails.json not_lines); its home is {nl.get("home")}'); return
@@ -1423,6 +1459,9 @@ if __name__ == '__main__':
         elif a[0] == 'undo': mode_undo(a[1])
         elif a[0] == 'undo-bot': mode_undo_bot(a[1], a[2] if len(a) > 2 else '')
         elif a[0] == 'release': mode_release(a[1])
+        elif a[0] == 'release-areas':
+            import kpc_fers_release_areas as RA
+            sys.exit(RA.main())
         elif a[0] == 'divert': mode_divert(a[1:])
         elif a[0] == 'resume': mode_resume(a[1:])
         else: print(__doc__)

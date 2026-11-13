@@ -226,7 +226,7 @@ jobs:
         timeout-minutes: 65
         env:
           PAIR_MINUTES: '60'
-        run: python3 .github/scripts/kpc_pota_pairs.py || { kpc_rc=$?; echo "::error title=kpc_pota_pairs.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_pota_pairs.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+        run: LINKS=. DATA=kpcdata python3 kpcdata/.github/scripts/kpc_pota_pairs_run.py || { kpc_rc=$?; echo "::error title=kpc_pota_pairs_run.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_pota_pairs_run.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: USGS water from the bulk files BEFORE the line (tiles under last run's rows; Fable Oct 28 10:34 PM)
         id: kept_green_3
         continue-on-error: true
@@ -579,6 +579,8 @@ jobs:
               open(f, 'a').write(line + '\n')
           print(line)
           PY
+          # Nov 13: write dropped/not-sure rows for any live pair that vanished, and demote US trail lines on Canadian ground, before the files are held.
+          python3 kpcdata/.github/scripts/kpc_fers_annotate.py --new data/fers --live kpcdata --states "$STATES" || { kpc_rc=$?; echo "::error title=kpc_fers_annotate.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_annotate.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           (cd kpcdata && LINKS=.. python3 .github/scripts/kpc_waiting_room.py divert data/fers) || { kpc_rc=$?; echo "::error title=kpc_waiting_room.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_waiting_room.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }   # Oct 29 (chat 2 + Brandon 10:22 PM): changed 2-fer files wait in data/waiting/in/ (checked, chat 11 approves), the live ones stay
           STRICT=1 bash .github/scripts/kpc_push_data.sh kpcdata "2-fer line ${{ inputs.tag }} (hidden data)" data || exit 1
           # KPC owner, 2026-11-12: the green states are saved above; a red state makes this line red AFTER the save (it blocks nobody)

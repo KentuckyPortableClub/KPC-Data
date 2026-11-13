@@ -16,7 +16,7 @@ SELF = 'kpc-watchdog.yml'
 WATCHDOG_INPUTS = {'kpc-new-refs.yml': {'dry_run': 'false'}}   # its dispatch default is a dry run; the scheduled run is not
 # Nov 2 review: a restart must do what the SCHEDULED run does. These dispatch defaults would change it:
 WATCHDOG_INPUTS.update({
-    'kpc-waiting-room.yml': {'mode': 'release-approved'},             # default 'replay' = no release, no key doctor
+    'kpc-waiting-room.yml': {'mode': 'check'},                        # Quality regrade: never restart waiting-room as release-approved
     'kpc-closures.yml': {'areas': '', 'test': 'no', 'chunks': '5'},  # default = a Kentucky-only TEST run
     'kpc-discovery.yml': {'states': ''},                              # default 'OH' every time; scheduled = the week's 8 states
     'kpc-helpers.yml': {'@37 5 * * 0': {'jobs': 'linkfix sitecheck'}, '@23 10 * * *': {'jobs': 'match'}},

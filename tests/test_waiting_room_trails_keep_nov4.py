@@ -89,7 +89,7 @@ with tempfile.TemporaryDirectory() as t:   # end to end: a chat 11 YES in approv
     import subprocess
     R = pathlib.Path(t) / 'data_repo'
     cp('data/trails/US-9905.json', R); cp('data/waiting/in/data/trails/US-9905.json', R); cp('data/waiting/known/trails.json', R)
-    json.dump({'items': [{'path': 'data/waiting/in/data/trails/US-9905.json', 'chat11': 'YES', 'date': '2026-11-04', 'time': '4:40 AM', 'by': 'test'}]},
+    json.dump({'items': [{'path': 'data/waiting/in/data/trails/US-9905.json', 'chat11': 'YES', 'date': '2026-11-04', 'time': '4:40 AM', 'by': 'KPC owner'}]},
               open(R / 'data/waiting/approved.json', 'w'))
     before = (R / 'data/trails/US-9905.json').read_bytes()
     e = dict(os.environ, DATA=str(R), LINKS=str(R / 'nolinks'))

@@ -64,7 +64,7 @@ import kpc_fers_states as FS   # noqa: E402  (the one area list, the per-state h
 WORLD = {'worldwest': 'W-GB W-IE W-FR W-ES W-PT W-BE W-NL W-LU W-DE W-CH',
          'worldnorth': 'W-AT W-IT W-DK W-NO W-SE W-FI W-EE W-LV W-LT W-PL',
          'worldeast': 'W-CZ W-SK W-HU W-SI W-HR W-RO W-AU W-JP'}
-R = {**FS.areas(), **WORLD}   # KPC owner, 2026-11-12: US / Canada = .github/fers-areas.json, the bot's own 14 areas
+R = {**FS.areas(), **WORLD}   # KPC owner, 2026-11-12: US / Canada = .github/fers-areas.json, the bot's own areas (fers-areas.json)
 RETIRED = ('midwest', 'northeast', 'oh', 'mi', 'ut')   # tags of the old chain list that no longer exist (canadaeast / canadawest /
 # southeast / southcentral / mountain / pacific are kept as names, with the bot's members)
 KEYS = {'us-key': 'us', 'ca-key': 'ca', 'world-key': 'world'}
@@ -138,8 +138,11 @@ def audit_clean(data, passed=None):
 RETRY_H = 6      # a planned line with no result after this many hours may start again
 try:   # KPC owner, 2026-11-12: a line stopped by the memory guard (kpc_mem_guard.py) is not started again on the same cut
     from kpc_mem_guard import stopped_for_memory as MEM_STOP
-except Exception:  # noqa: BLE001
-    def MEM_STOP(data, tag, since=None): return False
+except Exception as e:  # noqa: BLE001
+    # X6: fail closed — do not start or retry a line when the guard cannot be read.
+    _MEM_IMPORT_ERR = e
+    def MEM_STOP(data, tag, since=None):
+        raise RuntimeError(f'kpc_mem_guard could not be imported: fail closed ({type(_MEM_IMPORT_ERR).__name__}: {str(_MEM_IMPORT_ERR)[:120]})') from _MEM_IMPORT_ERR
 TRIES = 2        # at most this many starts per area fingerprint; then a person looks
 
 
@@ -174,11 +177,28 @@ def area_ready(links, sts):
 
 
 def area_fp(links, kind, sts, fers):
-    """sha256 of the area's key files + the 2-fer rules hash: the same files and rules = the same 2-fer answer."""
+    """sha256 of the area's key files, outline files, and the 2-fer rules hash: the same files and rules = the same 2-fer answer."""
     h = hashlib.sha256(str(fers).encode())
+    root = pathlib.Path(links)
     for st in sts:
-        f = pathlib.Path(links) / f"data/{kind}/{st if kind != 'world-key' else st.replace('W-', '')}.json"
+        key_name = st if kind != 'world-key' else st.replace('W-', '')
+        f = root / f'data/{kind}/{key_name}.json'
         h.update(st.encode() + b'\0' + (f.read_bytes() if f.exists() else b'missing'))
+        ol_name = st if kind != 'world-key' else (st if str(st).startswith('W-') else f'W-{st}')
+        for ol in (root / 'data/outlines' / f'{ol_name}.geojson.gz',
+                   root / 'data/released/outlines' / f'{ol_name}.geojson.gz'):
+            h.update(ol.as_posix().encode() + b'\0' + (ol.read_bytes() if ol.is_file() else b'missing'))
+        # Quality regrade: .pN outline parts are inputs too
+        parts_dir = root / 'data/outlines'
+        if parts_dir.is_dir():
+            for ol in sorted(parts_dir.glob(f'{ol_name}.p*.geojson.gz')):
+                h.update(ol.as_posix().encode() + b'\0' + ol.read_bytes())
+        # Canada members also hash data/canada-bounds
+        if kind == 'ca-key' or str(st).startswith('CA-'):
+            bounds = root / 'data/canada-bounds'
+            if bounds.is_dir():
+                for bf in sorted(bounds.glob('*.json')):
+                    h.update(bf.as_posix().encode() + b'\0' + bf.read_bytes())
     return h.hexdigest()[:16]
 
 

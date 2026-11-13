@@ -71,6 +71,8 @@ data/fers/missing-canorth.json # kpc-overlap-finder.js:888 REG.missing + '.json'
 
 # world 2-fers: OFF the public site (owner, 2026-11-11: 2-fers are club-room only and the world ones are only a test)
 !data/fers/W-*                 # world 2-fer files (.json and .json.gz); the GPS tool skips world areas (KPC-Links kpc-gps.js patch)
+!**/wdpa*                      # WDPA / Protected Planet must never be on the public site
+!**/*WDPA*                     # WDPA / Protected Planet must never be on the public site
 
 # --- kept, unproven (member-facing data a page or the app could read; small)
 data/campinfo/                 # kept, unproven (campground info: member-facing; no page string names it; KPC-App not readable)

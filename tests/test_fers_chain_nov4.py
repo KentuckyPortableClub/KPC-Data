@@ -37,7 +37,11 @@ L = chain['jobs']['line']
 check(L['uses'] == './.github/workflows/kpc-fers-line.yml' and L['with']['key'] == 'build' and L['with']['force'] == 'no' and L['with']['next'] == '' and L['strategy']['max-parallel'] <= 2,
       'chain: calls kpc-fers-line.yml (workflow_call) with key=build, force=no, no next, at most 2 at a time')
 check(set(post['on']) == {'workflow_run', 'workflow_dispatch'} and post['on']['workflow_run']['workflows'] == [line['name']], f"post-line: workflow_run on '{line['name']}' only (a stand-alone line) + the chain's dispatch, never on the chain's own completion")
-check(post['jobs']['postline'].get('continue-on-error') is True and all(s.get('continue-on-error') for s in post['jobs']['postline']['steps'] if 'run' in s), 'post-line: never fails (job + steps continue on error)')
+# Nov 13 (B1): the gone-pair gate must be allowed to fail the job (no continue-on-error). Other steps still continue on error so the report and save run.
+gate = next((s for s in post['jobs']['postline']['steps'] if 'kpc_fers_postline_gate.py' in s.get('run', '')), None)
+check(gate is not None and not gate.get('continue-on-error'), 'post-line: the gone-pair gate fails the job when a live pair is gone with no row')
+others = [s for s in post['jobs']['postline']['steps'] if 'run' in s and 'kpc_fers_postline_gate.py' not in s.get('run', '')]
+check(all(s.get('continue-on-error') for s in others), 'post-line: every other step continues on error (the report and the save still run)')
 check(post['permissions'] == {'contents': 'write'} and all(re.sub(r'\s+', ' ', s['run'].split('"', 2)[2]).strip().startswith('data/status/fers-postline data/status/fers-chain ||') for s in post['jobs']['postline']['steps'] if 'kpc_push_data' in s.get('run', '')), 'post-line: saves only data/status/fers-postline + the gate state (data/status/fers-chain)')
 for trig in ('workflow_dispatch', 'workflow_call'):
     i = line['on'][trig]['inputs']; check(i.get('key', {}).get('default') == 'live' and i.get('force', {}).get('default') == 'no', f'line {trig}: inputs key (default live) + force (default no)')
@@ -83,7 +87,12 @@ for n, t in code.items():
 sv = next(s for s in J['checker']['steps'] if s.get('name', '').startswith('Save'))['run']
 check(0 < sv.find('kpc_waiting_room.py divert data/fers') < sv.find('kpc_push_data.sh'), 'checker: the 2-fers are diverted into the waiting room (HELD) before the save')
 pre = next(s for s in J['preline']['steps'] if s.get('name', '').startswith('Save'))['run']
-check(pre.strip().endswith('|| echo "::warning title=2-fer pre-line check::report not saved (the verdict above still holds)"') and 'data/status/fers-preline' in pre, 'preline saves only data/status/fers-preline')
+check('data/status/fers-preline' in pre and 'kpc_push_data.sh' in pre
+      and 'report not saved (the verdict above still holds)' in pre
+      and 'data/status/fers-preline' in pre.split('kpc_push_data.sh', 1)[1].split('||', 1)[0]
+      and 'data/status/fers-chain' not in pre.split('kpc_push_data.sh', 1)[1].split('||', 1)[0]
+      and 'data/fers' not in pre.split('kpc_push_data.sh', 1)[1].split('||', 1)[0],
+      'preline saves only data/status/fers-preline')
 # ---- the chain plan
 spec = importlib.util.spec_from_file_location('plan', HERE / '.github/scripts/kpc_fers_chain_plan.py'); P = importlib.util.module_from_spec(spec); spec.loader.exec_module(P)
 STUB = '''import hashlib, json, pathlib
@@ -150,9 +159,9 @@ with tempfile.TemporaryDirectory() as t:
     r2, s2, _ = run(D, Lk, 'on'); check(r2 == [], 'plan: the same build never starts an area twice (seen.json)')
     w(Lk / 'data/us-key/index.json', {'build': 'US-201', 'rules': 'rules-us-key'}); w(Lk / 'data/status/key-check/last-us.json', {'build': 'US-201'}); w(D / 'data/waiting/in/data/us-key/index.json', {'build': 'US-201'})
     r3, s3, _ = run(D, Lk, 'on'); check(r3 == [] and s3['us-key']['build'] == 'US-201', 'plan: a NEW build with the same key files does not run the area again (fingerprint)')
-    w(Lk / 'data/us-key/US-TN.json', {'parks': {'US-1': {}}})
+    w(Lk / 'data/us-key/US-NC.json', {'parks': {'US-1': {}}})
     r4, s4, _ = run(D, Lk, 'on'); check([x['tag'] for x in r4] == ['southeast'], 'plan: a build that changed an area key file runs that area again')
-for name, dirty in [('an open row (no answer)', {'US-TN': None}), ("a row answered NO", {'US-TN': 'NO: outline wrong'}), ('a row answered only by a pattern', None)]:
+for name, dirty in [('an open row (no answer)', {'US-NC': None}), ("a row answered NO", {'US-NC': 'NO: outline wrong'}), ('a row answered only by a pattern', None)]:
     with tempfile.TemporaryDirectory() as t:
         D, Lk = repo(t, ready=SE, dirty=dirty)
         if dirty is None:
@@ -167,9 +176,10 @@ with tempfile.TemporaryDirectory() as t:
 # ---- gate OFF: the map audit is not read
 with tempfile.TemporaryDirectory() as t:
     D, Lk = repo(t); tags = []
-    for i in range(4): r, s, n = run(D, Lk, gate='off'); tags.append([x['tag'] for x in r])
+    us = [k for k, v in P.R.items() if v.startswith('US-')]
+    for i in range((len(us) + 2) // 3): r, s, n = run(D, Lk, gate='off'); tags.append([x['tag'] for x in r])
     flat = [x for g in tags for x in g]
-    check(all(len(g) <= 3 for g in tags) and sorted(flat) == sorted(k for k, v in P.R.items() if not v.startswith('CA-')) and len(flat) == len(set(flat)), 'plan (gate off): at most 3 areas per start, every US area once, none twice')
+    check(all(len(g) <= 3 for g in tags) and sorted(flat) == sorted(us) and len(flat) == len(set(flat)), 'plan (gate off): at most 3 areas per start, every US area once, none twice')
     check('ky' not in flat and not any('US-KY' in P.R[x] for x in flat), 'plan: Kentucky (its own key) is never in the chain')
     check(not any(P.R[x].startswith('CA-') for x in flat), 'plan: a US build starts no Canada area (Canada waits for its own build)')
 with tempfile.TemporaryDirectory() as t:

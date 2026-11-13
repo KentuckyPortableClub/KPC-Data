@@ -207,6 +207,34 @@ src = (HERE / '.github/scripts/kpc_fers_chain_plan.py').read_text()
 check(re.search(r"if int\(a.get\('tries'\) or 0\) >= TRIES:.*\n\s+if MEM_STOP\(data, tag, a.get\('planned'\)\): s\['waiting'\]\[tag\] = 'the memory guard", src) is not None,
       'the chain does not start a memory-stopped area again on the same key files (same fingerprint): a person looks')
 
+# X6: memory-guard import fails closed; area_fp includes outlines
+check('fail closed' in src and 'return False' not in src[src.find('except Exception'):src.find('TRIES =')],
+      'X6: a failed kpc_mem_guard import raises (fail closed), it does not return False')
+td = pathlib.Path(tempfile.mkdtemp())
+(td / 'data/us-key').mkdir(parents=True)
+(td / 'data/outlines').mkdir(parents=True)
+(td / 'data/us-key/US-KY.json').write_bytes(b'{"parks":{}}')
+fp1 = CP.area_fp(str(td), 'us-key', ['US-KY'], 'fers-hash')
+(td / 'data/outlines/US-KY.geojson.gz').write_bytes(b'outline-bytes')
+fp2 = CP.area_fp(str(td), 'us-key', ['US-KY'], 'fers-hash')
+check(fp1 != fp2 and len(fp1) == 16 and len(fp2) == 16,
+      'X6: area_fp changes when the outline file is added (outlines are in the fingerprint)')
+(td / 'data/outlines/US-KY.p1.geojson.gz').write_bytes(b'part-bytes')
+fp3 = CP.area_fp(str(td), 'us-key', ['US-KY'], 'fers-hash')
+check(fp3 != fp2, 'X6: area_fp changes when a .pN outline part is added')
+td2 = pathlib.Path(tempfile.mkdtemp())
+(td2 / 'data/ca-key').mkdir(parents=True)
+(td2 / 'data/outlines').mkdir(parents=True)
+(td2 / 'data/canada-bounds').mkdir(parents=True)
+(td2 / 'data/ca-key/CA-QC.json').write_bytes(b'{"parks":{}}')
+fp_a = CP.area_fp(str(td2), 'ca-key', ['CA-QC'], 'fers-hash')
+(td2 / 'data/canada-bounds/CA-2241.json').write_bytes(b'{"bounds":1}')
+fp_b = CP.area_fp(str(td2), 'ca-key', ['CA-QC'], 'fers-hash')
+check(fp_a != fp_b, 'X6: area_fp for a CA member changes when data/canada-bounds is added')
+shutil.rmtree(td, ignore_errors=True)
+shutil.rmtree(td2, ignore_errors=True)
+
+
 # 7 per-state outcome after a guard stop (fixture)
 def cond(expr, ctx):
     """Evaluate a GitHub if: expression of the forms used here (&&, ||, !, ==, !=, success(), cancelled(), dotted names)."""
