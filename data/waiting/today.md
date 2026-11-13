@@ -359,7 +359,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-07 | 6 | data/world-key/ZA.json | HOLD | F-O2 4 of 75 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
 | 2026-11-08 | 5 | data/wwff/CTFF.json | HOLD | F-W2 rows 702 -> 280 (under 80% of the saved list) |
 | 2026-11-09 | 4 | data/trails/index.json | HOLD | F-T4 trail index 139 -> 102 lines (under 80% of the saved list) |
-| 2026-11-11 | 2 | data/world-key/FR.json | HOLD | F-O1 outlines 13877 -> 13388 (more than 1% lost) |
+| 2026-11-11 | 2 | data/world-key/FR.json | HOLD | F-O1 outlines 13877 -> 13388 (more than 1% lost); F-O3 retired parks still outlined: FR-4503, FR-4610, FR-4835, FR-5038, FR-5198 |
 | 2026-11-11 | 2 | data/world-key/JP.json | HOLD | F-O2 101 of 185 outlines carry a layer name that shares no word with the park (55%; live 97/185): outlines swapped to other parks? |
 | 2026-11-11 | 2 | data/world-key/LU.json | HOLD | F-O1 outlines 49 -> 46 (more than 1% lost) |
 | ? | ? | data/ca-key/index.json | RELEASE |  |
