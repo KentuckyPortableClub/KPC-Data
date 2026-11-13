@@ -216,7 +216,7 @@
    "Unit": "acres",
    "Agency": "Arkansas State Parks (park, state GIS table)",
    "Source page": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0/query?where=OBJECTID%3D54&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0; read 2026-11-07"
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0; read 2026-11-13"
   },
   {
    "Park number (if matched)": "US-7980",
@@ -225,7 +225,7 @@
    "Unit": "acres",
    "Agency": "National Register of Historic Places Polygons",
    "Source page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D400828&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-05"
+   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-13"
   },
   {
    "Park number (if matched)": "CA-0831",
@@ -3001,6 +3001,26 @@
    "# times used": 0,
    "Status": "BLOCKED",
    "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "apps.web.maine.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www2.dnr.sc.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots.txt not readable this run)",
    "Retry?": "YES"
   }
  ]
