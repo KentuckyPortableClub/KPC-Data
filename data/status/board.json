@@ -14,7 +14,7 @@
    "last_run": "2026-11-13",
    "made": "1068 audit rows not clean in 43 areas; waiting for audit 44, waiting for key 22",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43489666095",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43492074836",
    "waiting_on": "chat 11 / 12 (audit answers), chat 2 (fixes)"
   },
   "Cell coverage (FCC)": {
@@ -1084,9 +1084,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-13",
-   "made": "2026-11-13 19:11 UTC: 1 skipped run(s) started again: kpc-eu-alerts.yml (missed Nov 13 18:40 UTC)",
-   "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43489666095",
+   "made": "nothing skipped",
+   "result": "green",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43492074836",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1198,7 +1198,7 @@
    "last_run": "2026-11-13",
    "made": "site is under 60 min behind main: the copy bot will catch up",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43489666095",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43492074836",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "answer-sheet-check": {
@@ -1291,7 +1291,7 @@
   },
   "waiting room": {
    "last_run": "2026-11-13",
-   "made": "heartbeat 0 h old, 506 files waiting",
+   "made": "heartbeat 1 h old, 506 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
