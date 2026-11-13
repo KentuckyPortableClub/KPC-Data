@@ -417,3 +417,4 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-07, 6 days): key data/world-key/ZA.json held: F-O2 4 of 75 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?
 - FROM WAITING ROOM (held since 2026-11-08, 5 days): wwff data/wwff/CTFF.json held: F-W2 rows 702 -> 280 (under 80% of the saved list)
 - FROM WAITING ROOM HEALTH (2026-11-13): RED: 346 files waiting over 3 days in data/waiting/in/ (e.g. US-WY.json)
+- FROM BOT 2-fer line (chat 2; 2026-11-13): BROKE in the fetcher (STOPPED BY THE MEMORY GUARD: needs a smaller cut or more memory; not retried on the same cut) (not for grading): US-NC US-SC US-GA US-FL (southeast) · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43515596321)
