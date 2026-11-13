@@ -4,13 +4,10 @@
   "US-NC",
   "US-SC",
   "US-GA",
-  "US-FL",
-  "US-AL",
-  "US-MS",
-  "US-TN"
+  "US-FL"
  ],
  "key_source": "build",
- "checked": "2026-11-13 10:23 UTC",
+ "checked": "2026-11-13 22:03 UTC",
  "areas": {
   "US-NC": {
    "hold": [],
@@ -72,56 +69,6 @@
    "rules": "d4ebfafce438",
    "parks": 460,
    "outlines": 437,
-   "held_key": "HELD KEY: build US-43293787778 has no person's sign-off yet; the 2-fers measured on it are held with it",
-   "postcheck": "us-US-43293787778.json",
-   "bad_pins": 1,
-   "overrides_no_still": 0
-  },
-  "US-AL": {
-   "hold": [],
-   "warn": [
-    "1 review-pile HOLD row(s) still outlines: US-3701 (their 2-fers are 'not sure')",
-    "4 rule 18 row(s): US-1034 US-3711 US-3714 US-9916 (a person decides)",
-    "1 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-3701"
-   ],
-   "key_file": "data/us-key/US-AL.json",
-   "build": "US-43293787778",
-   "built": "2026-11-12 21:36 UTC",
-   "rules": "d4ebfafce438",
-   "parks": 155,
-   "outlines": 134,
-   "held_key": "HELD KEY: build US-43293787778 has no person's sign-off yet; the 2-fers measured on it are held with it",
-   "postcheck": "us-US-43293787778.json",
-   "bad_pins": 1,
-   "overrides_no_still": 0
-  },
-  "US-MS": {
-   "hold": [],
-   "warn": [],
-   "key_file": "data/us-key/US-MS.json",
-   "build": "US-43293787778",
-   "built": "2026-11-12 21:36 UTC",
-   "rules": "d4ebfafce438",
-   "parks": 155,
-   "outlines": 99,
-   "held_key": "HELD KEY: build US-43293787778 has no person's sign-off yet; the 2-fers measured on it are held with it",
-   "postcheck": "us-US-43293787778.json",
-   "bad_pins": 0,
-   "overrides_no_still": 0
-  },
-  "US-TN": {
-   "hold": [],
-   "warn": [
-    "2 review-pile HOLD row(s) still outlines: US-12070 US-12715 (their 2-fers are 'not sure')",
-    "2 rule 18 row(s): US-3969 US-7568 (a person decides)",
-    "1 bad POTA pin(s) (0,0, impossible or 'pin may be wrong'; listed, never moved): US-6275"
-   ],
-   "key_file": "data/us-key/US-TN.json",
-   "build": "US-43293787778",
-   "built": "2026-11-12 21:36 UTC",
-   "rules": "d4ebfafce438",
-   "parks": 277,
-   "outlines": 263,
    "held_key": "HELD KEY: build US-43293787778 has no person's sign-off yet; the 2-fers measured on it are held with it",
    "postcheck": "us-US-43293787778.json",
    "bad_pins": 1,
