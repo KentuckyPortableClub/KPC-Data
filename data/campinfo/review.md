@@ -977,7 +977,7 @@ Updated 2026-11-13. Every fact in <area>.json carries its source url, read date 
   - hookups.water = true · “information. Boat ramp Handicap accessible fishing piers 11 developed camping sites with electrical/water hookups Primitive camping Restroom”
   - map.date_how = "PDF, year 2024 in the link" · “link “Lake Depth Map””
   - map.url = "https://www.mdwfp.com/sites/default/files/2024-05/lake-lama · “link “Lake Depth Map” -> https://www.mdwfp.com/sites/default/files/2024-05/lake-lamar-bruce_2019.pdf”
-  - phone = "(662) 869-2009" · “g piers, and a new pond. Address: Saltillo, MS 38866 Phone: (662) 869-2009 Fees: Daily and Annual Fishing Report Bass The fishing repo”
+  - phone = "(662) 869-2009" · “g piers, and a new pond. Address: Saltillo, MS 38866 Phone: (662) 869-2009 Fees: Daily and Annual Fishing Report Bass Anglers have bee”
   - reservable = false · “3 -88.6666 34.39078 -88.6684 34.3914 -88.6679 34.39422 -88.6664 Amenities Campgrounds are first come first served, please call the State Lak”
   - restrooms = "yes (kind not stated)" · “fishing piers 11 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Picnic table”
   - showers = true · “11 developed camping sites with electrical/water hookups Primitive camping Restrooms with showers Pavilion rental Picnic tables Barbecue gri”
