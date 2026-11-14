@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-14T17:30Z",
+ "checked": "2026-11-14T21:19Z",
  "switched_on": false,
  "results": [
   {
@@ -715,11 +715,9 @@
   {
    "path": "data/docs/US-AR.json",
    "kind": "docs",
-   "why": [
-    "F-D3 2 of 20 re-tested links dead, e.g. https://www.agfc.com/resources/maps/wildlife-viewing-area-maps/"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-AZ.json",
@@ -929,7 +927,7 @@
    "path": "data/docs/US-ND.json",
    "kind": "docs",
    "why": [
-    "F-D3 7 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/slade/visit-us/rules-policies"
+    "F-D3 8 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/slade/visit-us/rules-policies"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1049,11 +1047,9 @@
   {
    "path": "data/docs/US-TX.json",
    "kind": "docs",
-   "why": [
-    "F-D3 15 of 20 re-tested links dead, e.g. https://tpwd.texas.gov/publications/pwdpubs/media/park_maps/pwd_mp_p45"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-UT.json",
@@ -3749,11 +3745,11 @@
   {
    "path": "data/world-key/AE.json",
    "kind": "key",
-   "why": [
-    "F-4 unsure: PAD-US did not answer the shape test (HTTPError)"
+   "why": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
    ],
-   "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/AS.json",
@@ -3788,11 +3784,11 @@
   {
    "path": "data/world-key/BE.json",
    "kind": "key",
-   "why": [
-    "F-4 unsure: PAD-US did not answer the shape test (HTTPError)"
+   "why": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
    ],
-   "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/BM.json",

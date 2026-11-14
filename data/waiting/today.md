@@ -99,15 +99,13 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-13 | 1 | data/docs/US-MD.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/thst/learn/management/lawsandpolicies.htm |
 | 2026-11-13 | 1 | data/docs/US-MI.json | HOLD | F-D3 3 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s |
 | 2026-11-13 | 1 | data/docs/US-MS.json | HOLD | F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/coldwater_river/visit-us/rules-policies |
-| 2026-11-13 | 1 | data/docs/US-ND.json | HOLD | F-D3 7 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/slade/visit-us/rules-policies |
+| 2026-11-13 | 1 | data/docs/US-ND.json | HOLD | F-D3 8 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/slade/visit-us/rules-policies |
 | 2026-11-13 | 1 | data/docs/US-NJ.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/great-swamp/visit-us/rules-policies |
 | 2026-11-13 | 1 | data/docs/US-SC.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/cape-romain/visit-us/rules-policies |
 | 2026-11-13 | 1 | data/fers/CA-AB.json.gz | HOLD | F-2 only 27 of 37 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 5 new candidate pairs since the live file (over 10% of 37): a person looks at them first, e.g. C |
 | 2026-11-13 | 1 | data/fers/CA-BC.json.gz | HOLD | F-2 candidates 29 -> 111 (over 30% change); F-2 only 16 of 29 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 95 new candidate pairs since the live file (over 10% |
 | 2026-11-13 | 1 | data/fers/CA-ON.json.gz | HOLD | F-2 candidates 13 -> 138 (over 30% change); F-2 NOT SURE 302 -> 19 (over 30% change); F-2 only 5 of 13 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 133 new can |
-| 2026-11-14 | 0 | data/docs/US-AR.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.agfc.com/resources/maps/wildlife-viewing-area-maps/ |
 | 2026-11-14 | 0 | data/docs/US-IN.json | HOLD | F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/HE-WabashCA_Parke1.pdf |
-| 2026-11-14 | 0 | data/docs/US-TX.json | HOLD | F-D3 15 of 20 re-tested links dead, e.g. https://tpwd.texas.gov/publications/pwdpubs/media/park_maps/pwd_mp_p45 |
 | 2026-11-14 | 0 | data/fers/US-MI.json.gz | HOLD | F-2 candidates 82 -> 137 (over 30% change); F-2 NOT SURE 9 -> 12 (over 30% change); F-2 60 new candidate pairs since the live file (over 10% of 82): a person looks at them first, e.g. US-0766+US-4239, US-10088+US-4239, U |
 | 2026-11-14 | 0 | data/fers/US-OH.json.gz | HOLD | F-2 candidates 27 -> 64 (over 30% change); F-2 38 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. US-11673+US-4239, US-12057+US-9444, US-1935+US-4239 |
 | ? | ? | data/ca-key/CA-ON.json | RELEASE |  |
@@ -184,6 +182,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/campstate/US-WA.json | PASS |  |
 | ? | ? | data/campstate/US-WY.json | PASS |  |
 | ? | ? | data/docs/US-AL.json | PASS |  |
+| ? | ? | data/docs/US-AR.json | PASS |  |
 | ? | ? | data/docs/US-AZ.json | PASS |  |
 | ? | ? | data/docs/US-CA.json | PASS |  |
 | ? | ? | data/docs/US-CO.json | PASS |  |
@@ -204,6 +203,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/docs/US-PA.json | PASS |  |
 | ? | ? | data/docs/US-SD.json | PASS |  |
 | ? | ? | data/docs/US-TN.json | PASS |  |
+| ? | ? | data/docs/US-TX.json | PASS |  |
 | ? | ? | data/docs/US-UT.json | PASS |  |
 | ? | ? | data/docs/US-VA.json | PASS |  |
 | ? | ? | data/docs/US-VT.json | PASS |  |
@@ -364,8 +364,6 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-11 | 3 | data/world-key/JP.json | HOLD | F-O2 101 of 185 outlines carry a layer name that shares no word with the park (55%; live 97/185): outlines swapped to other parks? |
 | 2026-11-11 | 3 | data/world-key/LU.json | HOLD | F-O1 outlines 49 -> 46 (more than 1% lost) |
 | 2026-11-13 | 1 | data/world-key/BS.json | HOLD | F-O1 outlines 32 -> 29 (more than 1% lost) |
-| 2026-11-14 | 0 | data/world-key/AE.json | HOLD | F-4 unsure: PAD-US did not answer the shape test (HTTPError) |
-| 2026-11-14 | 0 | data/world-key/BE.json | HOLD | F-4 unsure: PAD-US did not answer the shape test (HTTPError) |
 | ? | ? | data/ca-key/index.json | RELEASE |  |
 | ? | ? | data/pile-solver/AS.json | PASS |  |
 | ? | ? | data/pile-solver/AT.json | PASS |  |
@@ -429,10 +427,12 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/us-key/overrides-parks-01.json | PASS |  |
 | ? | ? | data/us-key/overrides-parks-02.json | PASS |  |
 | ? | ? | data/us-key/overrides.json | PASS |  |
+| ? | ? | data/world-key/AE.json | PASS |  |
 | ? | ? | data/world-key/AS.json | PASS |  |
 | ? | ? | data/world-key/AT.json | PASS |  |
 | ? | ? | data/world-key/AU.json | PASS |  |
 | ? | ? | data/world-key/AX.json | PASS |  |
+| ? | ? | data/world-key/BE.json | PASS |  |
 | ? | ? | data/world-key/BM.json | PASS |  |
 | ? | ? | data/world-key/BT.json | PASS |  |
 | ? | ? | data/world-key/BW.json | PASS |  |
