@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-14T11:41Z",
+ "checked": "2026-11-14T11:59Z",
  "switched_on": false,
  "results": [
   {
@@ -819,9 +819,11 @@
   {
    "path": "data/docs/US-IN.json",
    "kind": "docs",
-   "why": [],
+   "why": [
+    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/HE-WabashCA_Parke1.pdf"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/docs/US-KS.json",
@@ -871,7 +873,7 @@
    "path": "data/docs/US-MI.json",
    "kind": "docs",
    "why": [
-    "F-D3 4 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s"
+    "F-D3 4 of 20 re-tested links dead, e.g. https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/"
    ],
    "notes": [
     "no live copy: first time this file is published"
@@ -1084,9 +1086,11 @@
   {
    "path": "data/docs/US-WI.json",
    "kind": "docs",
-   "why": [],
+   "why": [
+    "F-D3 16 of 20 re-tested links dead, e.g. https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=MEAD%20WI"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/docs/US-WV.json",
@@ -3839,11 +3843,11 @@
   {
    "path": "data/world-key/CD.json",
    "kind": "key",
-   "why": [
-    "F-4 unsure: PAD-US did not answer the shape test (HTTPError)"
+   "why": [],
+   "notes": [
+    "F-O4 shape test: 4 changed outlines read from PAD-US, 0 far from the park pin"
    ],
-   "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/CG.json",

@@ -49,7 +49,6 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-08 | 6 | data/fers/US-MS.json | HOLD | F-2 candidates 12 -> 0 (over 30% change); F-2 NOT SURE 9 -> 0 (over 30% change); F-2 pass2 missing: the 2-fer passes did not all run; F-2 pass3 missing: the 2-fer passes did not all run |
 | 2026-11-08 | 6 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
 | 2026-11-08 | 6 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
-| 2026-11-09 | 5 | data/docs/US-IN.json | HOLD | F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/HE-WabashCA_Parke1.pdf |
 | 2026-11-09 | 5 | data/fers/CA-NS.json | HOLD | F-2 pass2 missing: the 2-fer passes did not all run; F-2 pass3 missing: the 2-fer passes did not all run; F-2 only 4 of 6 live candidate pairs are still there (under 80%): a person looks (a rule change is released by han |
 | 2026-11-10 | 4 | data/truth/US-UT.json | HOLD | F-R2 6 OFF rows share the size 2,200,000.0 ac |
 | 2026-11-10 | 4 | data/truth/US-WA.json | HOLD | F-R2 5 OFF rows share the size 564.0 ac; F-R3 157 of 188 sized parks are OFF (over half: a reading problem?) |
@@ -98,7 +97,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-12 | 2 | data/fers/US-WY.json | HOLD | F-2 candidates 45 -> 0 (over 30% change); F-2 NOT SURE 46 -> 4 (over 30% change); F-2 pass2 missing: the 2-fer passes did not all run; F-2 pass3 missing: the 2-fer passes did not all run |
 | 2026-11-13 | 1 | data/docs/US-GA.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/okefenokee/visit-us/rules-policies |
 | 2026-11-13 | 1 | data/docs/US-MD.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/thst/learn/management/lawsandpolicies.htm |
-| 2026-11-13 | 1 | data/docs/US-MI.json | HOLD | F-D3 3 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s |
+| 2026-11-13 | 1 | data/docs/US-MI.json | HOLD | F-D3 4 of 20 re-tested links dead, e.g. https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/ |
 | 2026-11-13 | 1 | data/docs/US-MS.json | HOLD | F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/coldwater_river/visit-us/rules-policies |
 | 2026-11-13 | 1 | data/docs/US-ND.json | HOLD | F-D3 7 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/slade/visit-us/rules-policies |
 | 2026-11-13 | 1 | data/docs/US-NJ.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/great-swamp/visit-us/rules-policies |
@@ -106,6 +105,8 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-13 | 1 | data/fers/CA-AB.json.gz | HOLD | F-2 only 27 of 37 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 5 new candidate pairs since the live file (over 10% of 37): a person looks at them first, e.g. C |
 | 2026-11-13 | 1 | data/fers/CA-BC.json.gz | HOLD | F-2 candidates 29 -> 111 (over 30% change); F-2 only 16 of 29 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 95 new candidate pairs since the live file (over 10% |
 | 2026-11-13 | 1 | data/fers/CA-ON.json.gz | HOLD | F-2 candidates 13 -> 138 (over 30% change); F-2 NOT SURE 302 -> 19 (over 30% change); F-2 only 5 of 13 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 133 new can |
+| 2026-11-14 | 0 | data/docs/US-IN.json | HOLD | F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/HE-WabashCA_Parke1.pdf |
+| 2026-11-14 | 0 | data/docs/US-WI.json | HOLD | F-D3 16 of 20 re-tested links dead, e.g. https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=MEAD%20WI |
 | 2026-11-14 | 0 | data/fers/US-MI.json.gz | HOLD | F-2 candidates 82 -> 137 (over 30% change); F-2 NOT SURE 9 -> 12 (over 30% change); F-2 60 new candidate pairs since the live file (over 10% of 82): a person looks at them first, e.g. US-0766+US-4239, US-10088+US-4239, U |
 | 2026-11-14 | 0 | data/fers/US-OH.json.gz | HOLD | F-2 candidates 27 -> 64 (over 30% change); F-2 38 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. US-11673+US-4239, US-12057+US-9444, US-1935+US-4239 |
 | ? | ? | data/ca-key/CA-ON.json | RELEASE |  |
@@ -208,7 +209,6 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/docs/US-VA.json | PASS |  |
 | ? | ? | data/docs/US-VT.json | PASS |  |
 | ? | ? | data/docs/US-WA.json | PASS |  |
-| ? | ? | data/docs/US-WI.json | PASS |  |
 | ? | ? | data/docs/US-WV.json | PASS |  |
 | ? | ? | data/docs/US-WY.json | PASS |  |
 | ? | ? | data/fers/CA-NT.json | PASS |  |
