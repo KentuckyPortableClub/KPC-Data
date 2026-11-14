@@ -5,12 +5,12 @@
    "verdict": "FAIL",
    "bar": "Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.",
    "measured": {
-    "rows": 10931,
-    "parks": 4191,
+    "rows": 10968,
+    "parks": 4206,
     "parks_with_hit": 581,
     "SURE": 446,
-    "LIKELY": 666,
-    "UNLIKELY_evidence": 3981,
+    "LIKELY": 669,
+    "UNLIKELY_evidence": 4006,
     "strong": 246,
     "already_approved": 576,
     "open_without_whynot": 456,
@@ -31,11 +31,11 @@
     },
     {
      "reason": "evidence: UNLIKELY only : name: none word in common",
-     "parks": 1765
+     "parks": 1767
     },
     {
      "reason": "blocked: source could not be read",
-     "parks": 1212
+     "parks": 1221
     },
     {
      "reason": "evidence: UNLIKELY only : pin not inside nor within m with a name match",
@@ -108,21 +108,21 @@
     "the finder bars need the side-by-side run (95% re-found, +25% parks) and a 40-row sample (85% YES)"
    ],
    "details": {
-    "rows": 10931,
-    "found_or_candidate": 1086,
-    "blocked": 2259,
+    "rows": 10968,
+    "found_or_candidate": 1089,
+    "blocked": 2268,
     "hit_rate": 0.099,
     "bands": {
      "STRONG": 246,
-     "WEAK": 822,
+     "WEAK": 825,
      "CONFLICT": 18
     },
     "tiers": {
      "T-1": 76,
      "T-2": 356,
-     "T-3": 520,
+     "T-3": 521,
      "T-4": 67,
-     "T-6": 67
+     "T-6": 69
     },
     "every_open_park_has_whynot": false,
     "non_official_publishers": []
@@ -298,9 +298,9 @@
     "error": 430,
     "already approved": 576,
     "found": 259,
-    "candidate": 920,
-    "evidence": 3911,
-    "blocked": 2259,
+    "candidate": 923,
+    "evidence": 3936,
+    "blocked": 2268,
     "not found": 2571,
     "pin only": 5
    },
