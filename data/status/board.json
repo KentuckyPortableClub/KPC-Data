@@ -14,7 +14,7 @@
    "last_run": "2026-11-14",
    "made": "1068 audit rows not clean in 43 areas; waiting for audit 43, waiting for key 23",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43536591058",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43549883300",
    "waiting_on": "chat 11 / 12 (audit answers), chat 2 (fixes)"
   },
   "Cell coverage (FCC)": {
@@ -1020,9 +1020,9 @@
   "Key bots: errors and silence": {
    "areas": "",
    "last_run": "2026-11-14",
-   "made": "2 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots); waiting room (kpc_engine.py)",
+   "made": "1 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots)",
    "result": "red",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43536591058",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43549883300",
    "waiting_on": "HQ: open the watchdog run summary for the run links"
   },
   "Layer collector": {
@@ -1084,9 +1084,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-14",
-   "made": "2026-11-14 00:49 UTC: 1 skipped run(s) started again: kpc-copy-from-links.yml (missed Nov 14 00:11 UTC)",
+   "made": "2026-11-14 03:07 UTC: 5 skipped run(s) started again: kpc-closures.yml (missed Nov 14 01:38 UTC); kpc-copy-from-links.yml (missed Nov 14 02:11 UTC); kpc-eu-alerts.yml (missed Nov 14 00:40 UTC); kpc-flow.yml (missed Nov 14 01:46 UTC); kpc-waiting-room.yml (missed Nov 14 02:42 UTC)",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43536591058",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43549883300",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1196,9 +1196,9 @@
   "Website copy (site branch)": {
    "areas": "",
    "last_run": "2026-11-14",
-   "made": "site is under 60 min behind main: the copy bot will catch up",
+   "made": "site = main: the website has the newest data",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43536591058",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43549883300",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "answer-sheet-check": {
@@ -1238,7 +1238,7 @@
    "last_run": "2026-11-14",
    "made": "NOs: 434 of 723 NOs landed; 289 missing (re-applied to overrides.fixed.json); 1288 came back in the key release: 6035 parks pass, 198 held, 21 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-14.md ",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43529886923",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43530306554",
    "waiting_on": "chat 10 (came-back NOs / stuck areas); per-park release in release-approved"
   },
   "layer intake": {
@@ -1291,7 +1291,7 @@
   },
   "waiting room": {
    "last_run": "2026-11-14",
-   "made": "heartbeat 0 h old, 507 files waiting",
+   "made": "heartbeat 2 h old, 507 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
