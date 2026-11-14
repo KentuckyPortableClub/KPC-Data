@@ -436,7 +436,7 @@
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-07"
+   "updated": "2026-11-14"
   },
   "US-MD": {
    "camps": 78,
@@ -1137,7 +1137,7 @@
   "US-KS": "FCC listAsOfDates: robots.txt says no",
   "US-KY": "FCC listAsOfDates: robots.txt says no",
   "US-LA": "FCC listAsOfDates: robots.txt says no",
-  "US-MA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-MA": "FCC listAsOfDates: robots.txt says no",
   "US-MD": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-ME": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-MI": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
@@ -1338,9 +1338,9 @@
     "carriers": null,
     "files": [],
     "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "status": "FCC listAsOfDates: robots.txt says no"
    },
-   "read": "2026-11-07"
+   "read": "2026-11-14"
   },
   "US-MD": {
    "cell": {
@@ -2573,11 +2573,11 @@
  },
  "last": {
   "areas": [
-   "US-IA"
+   "US-MA"
   ],
   "fcc_token": true,
   "manners": {
-   "dropped_queued": 222,
+   "dropped_queued": 35,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2590,23 +2590,23 @@
     ]
    ],
    "host_rule": 0,
-   "requests": 171,
+   "requests": 41,
    "rested": 0,
    "robots": 2,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 70,
-   "camps": 223,
+   "browser": 2,
+   "camps": 36,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 70,
-   "needs_key": 32,
-   "no_page": 94,
+   "needs_browser": 2,
+   "needs_key": 8,
+   "no_page": 1,
    "not_official": 0,
-   "ok": 97,
-   "pages_read": 97,
+   "ok": 27,
+   "pages_read": 35,
    "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
