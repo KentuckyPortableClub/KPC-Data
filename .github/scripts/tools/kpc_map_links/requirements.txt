@@ -1,8 +1,0 @@
-# Python 3.11+
-requests>=2.31
-beautifulsoup4>=4.12
-rapidfuzz>=3.6
-pypdf>=4.0
-# optional: only needed for agencies whose index page builds its links with JavaScript
-# after install run:  python -m playwright install --with-deps chromium
-playwright>=1.44

@@ -1,9 +1,0 @@
-# Known failures of KPC-Data main 91719b7d751f (Nov 5 2026 CST), read by .github/scripts/kpc_full_suite.py (the handoff gate).
-# A failure listed here does not fail the gate; anything else does. Remove a line when its test passes on main.
-tests/test_fers_chain_nov4.py              # workflow_run names / preline save path (fails on main and on the fers stack)
-tests/test_fixbundle_pile_state_nov4.py    # 'state.json: auto=false, nothing solved yet, version 1' (fails on main and on the fers stack)
-selftest:.github/scripts/kpc_intake_bot.py # 'SELFTEST FAIL: 24 of 25 checks ok' (CREDIT/official/- -> REJECT, wanted READY; exits 0 on main)
-# Added Nov 7 2026 ~9 PM CST (Brandon 7:36 PM CST; Quality grade 2026-11-07 item D): failing on KPC-Data main c333d327, not caused by any open PR
-tests/test_fers_check_ca_layers_nov6.py         # reads a hard-coded /tmp/fers/L/data/ca-key/layers.json (a scratch path from the Nov 6 fers run)
-tests/test_key_reconcile_nov6.py                # kpc_key_reconcile --selftest: 'a park only in Links: unexplained'
-selftest:.github/scripts/kpc_key_reconcile.py   # same selftest as test_key_reconcile_nov6
