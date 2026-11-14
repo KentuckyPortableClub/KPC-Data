@@ -1982,6 +1982,148 @@
     "hunter areas": 63,
     "hunter last pass": "auto-202611031355"
    }
+  },
+  {
+   "date": "2026-11-14",
+   "outlines": {
+    "US": {
+     "official": 11271,
+     "pin": 1422,
+     "approximate": 414
+    },
+    "Canada": {
+     "official": 4348,
+     "pin": 1514,
+     "approximate": 39
+    },
+    "World": {
+     "official": 29133,
+     "pin": 17463,
+     "approx": 14392
+    }
+   },
+   "questions": {
+    "aliases-nov1": {},
+    "aliases-nov2": {},
+    "aliases-oct31": {
+     "- YES": 21,
+     "rows": 33,
+     "- NOT SURE": 7,
+     "- NO": 5
+    },
+    "gis-hunter": {
+     "- YES": 84,
+     "rows": 638,
+     "- NO": 339,
+     "- NOT SURE": 16,
+     "SURE YES": 8,
+     "SURE NOT SURE": 1,
+     "LIKELY NO": 22,
+     "LIKELY YES": 12,
+     "LIKELY NOT SURE": 8,
+     "SURE NO": 2,
+     "SURE bot YES": 136,
+     "LIKELY open": 8,
+     "LIKELY bot YES": 2
+    },
+    "hardlook": {},
+    "key-pieces": {
+     "- NO": 81,
+     "rows": 307,
+     "- YES": 193,
+     "- NOT SURE": 33
+    },
+    "layers": {
+     "LIKELY YES": 2131,
+     "rows": 26431,
+     "LIKELY NO": 213,
+     "SURE NO": 8,
+     "LIKELY NOT SURE": 6711,
+     "SURE YES": 15607,
+     "SURE NOT SURE": 526,
+     "LIKELY bot YES": 14,
+     "SURE bot YES": 731,
+     "SURE open": 73,
+     "LIKELY open": 417
+    },
+    "lost-finds-nov1": {},
+    "map-audit": {
+     "audit other": 526,
+     "rows": 2096,
+     "audit YES": 1028,
+     "audit NO": 410,
+     "audit open": 132
+    },
+    "nearmiss-nov2": {
+     "LIKELY open": 17,
+     "rows": 45,
+     "SURE open": 28
+    },
+    "no-recheck": {
+     "- YES": 2,
+     "rows": 13,
+     "LIKELY NOT SURE": 6,
+     "SURE YES": 2,
+     "- NOT SURE": 1,
+     "LIKELY NO": 1,
+     "LIKELY YES": 1
+    },
+    "not-sure-for-chat9": {
+     "- open": 146,
+     "rows": 146
+    },
+    "outside-intake-nov5": {
+     "- open": 402,
+     "rows": 402
+    },
+    "parked": {},
+    "pin-typos": {},
+    "world-finder": {
+     "- NO": 1652,
+     "rows": 3830,
+     "LIKELY NO": 437,
+     "LIKELY NOT SURE": 464,
+     "SURE YES": 984,
+     "SURE NOT SURE": 50,
+     "LIKELY YES": 57,
+     "SURE bot YES": 35,
+     "LIKELY open": 30,
+     "SURE NO": 72,
+     "SURE open": 7,
+     "- YES": 15,
+     "- NOT SURE": 27
+    }
+   },
+   "layers": {
+    "intake": {
+     "REJECT": 1882,
+     "WATER-ONLY": 42,
+     "ASK-THE-PUBLISHER": 441,
+     "LIVE-ONLY": 5,
+     "RETRY": 449,
+     "READY": 11,
+     "approved": 2
+    },
+    "queue rows": 2158,
+    "collector": {
+     "asked": 661,
+     "failed": 196,
+     "evidence": 9,
+     "no match": 1402,
+     "no hit": 222297,
+     "UNLIKELY": 21621,
+     "LIKELY": 6404,
+     "SURE": 1092
+    },
+    "finders found": 150
+   },
+   "coverage": {
+    "world countries done": 227,
+    "world countries started": 233,
+    "world candidates": 1673,
+    "hunter areas": 63,
+    "hunter last pass": "auto-202611031355"
+   }
   }
  ]
 }
