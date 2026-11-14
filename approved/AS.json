@@ -1,0 +1,26 @@
+{
+"AS-0001": {
+"park": "American Samoa National Park",
+"layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+"record": 1177,
+"name_field": "UNIT_NAME",
+"record_name": "National Park of American Samoa",
+"kind": "park",
+"answer": "YES",
+"checked_by": "chat 11 (Oct 31)",
+"from_file": "layers.json",
+"key_now": "padus"
+},
+"AS-0002": {
+"park": "Rose Atoll National Wildlife Refuge",
+"layer": "https://services1.arcgis.com/KNdRU5cN6ENqCTjk/ArcGIS/rest/services/US_Fish_and_Wildlife_Service/FeatureServer/7",
+"record": 992,
+"name_field": "ORGNAME",
+"record_name": "ROSE ATOLL NATIONAL WILDLIFE REFUGE",
+"kind": "wild",
+"answer": "YES",
+"checked_by": "chat 11 (Oct 31)",
+"from_file": "layers.json",
+"key_now": "padus"
+}
+}
