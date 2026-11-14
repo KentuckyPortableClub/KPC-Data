@@ -54,6 +54,7 @@ KEYED_API = {'ridb.recreation.gov': '/api/', 'developer.nps.gov': '/api/'}
 # Nov 3 through KPC_ARCGIS_ROBOTS_EXEMPT) is DELETED; no variable turns it back on. Crawl-delay is obeyed (longer of it and our 2 s
 # gap). A 403 on a page is retried once after a pause, then handed to a person (no strike-and-forget, no third try).
 MAX_CRAWL_DELAY = 120   # a host asking for more than this is skipped for the run and listed for a person
+SLOW_HOSTS = {'apps.fs.usda.gov': 10.0}   # KPC owner, 2026-11-13: at least this many seconds between two requests to the host
 # Nov 3 (Super, answer-sheet task): ArcGIS Hub asks for Crawl-delay 60. Obeying it must not stall a nightly run, so:
 #  * KPC_MANNERS_CACHE=<dir> keeps plain 200 GET answers on disk (the workflow saves the dir with actions/cache). A cached answer
 #    younger than KPC_MANNERS_CACHE_DAYS (default 7) is returned with no request at all. By default only SLOW hosts (Crawl-delay of
@@ -213,9 +214,9 @@ class Manners:
         return float(d) if d else 0.0
 
     def _pace(self, h, cd, strike=0):
-        """Wait until this host may be asked again: max(gap, Crawl-delay), doubled per strike (A5, A6, A12)."""
+        """Wait until this host may be asked again: max(gap, Crawl-delay, a slow host's gap), doubled per strike (A5, A6, A12)."""
         with self._lk:
-            w = max(self.gap, cd) * (2 ** strike) - (time.time() - self.last.get(h, 0))
+            w = max(self.gap, cd, SLOW_HOSTS.get(h, 0.0)) * (2 ** strike) - (time.time() - self.last.get(h, 0))
             self.last[h] = time.time() + max(0.0, w)
         if w > 0: time.sleep(w)   # never cut a Crawl-delay short
         self.stat['requests'] += 1
@@ -291,6 +292,7 @@ class Manners:
                     return 403, ehd, b'', u
                 if e.code in (429, 500, 502, 503, 504):
                     self.strike[h] = self.strike.get(h, 0) + 1; self.stat['strikes'] += 1
+                    if h in SLOW_HOSTS and ra > max(120, cd): self.dead[h] = time.time() + ra; return 'rest', {}, b'', u   # 2026-11-13: wait it out fully
                     if self.strike[h] >= self.strikes_out: self.dead[h] = time.time() + self.rest_s; return 'rest', {}, b'', u
                     time.sleep(min(max(ra, 20 * (attempt + 1)), max(120, cd))); continue
                 if e.code == 416 and rng: return self.get(u, None, timeout, head, accept)

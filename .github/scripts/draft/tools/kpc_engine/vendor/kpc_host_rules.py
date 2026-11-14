@@ -5,8 +5,9 @@ kpc_master.live_ok. It is asked BEFORE robots.txt and before every request, so a
   * never contact: the Grant County NM parcel server (services.arcgis.com/33TOOklri9xpic7U) and ncnhde.natureserve.org;
   * every services*.arcgis.com host: services, services1 to services9 and up, and the regional ones (services-eu1 and the like).
     No live read, robots.txt included; their layers come from saved copies only (a person downloads them);
-  * the saved-copy-only list: services.arcgis.com, services1.arcgis.com, apps.fs.usda.gov (KPC_SAVED_ONLY_HOSTS ADDS hosts,
-    it never drops these; the services*.arcgis.com rule holds whatever the list says).
+  * the saved-copy-only list: services.arcgis.com, services1.arcgis.com (KPC_SAVED_ONLY_HOSTS ADDS hosts,
+    it never drops these; the services*.arcgis.com rule holds whatever the list says). KPC owner, 2026-11-13: apps.fs.usda.gov is
+    off the list (its robots.txt answered 403 = no rules file, not a Disallow line); kpc_manners asks it at most once every 10 s.
   * fail closed: an address with no host, or not plain http(s), is refused; the host compared is the one really dialled
     (no port, no user@, no trailing dot, percent-escapes decoded).
 www.arcgis.com, hub.arcgis.com and agency servers are not caught (they follow robots.txt; hub portals wait 60 s).
@@ -16,7 +17,7 @@ import os, re, urllib.error, urllib.parse, urllib.request
 
 NEVER_CONTACT = [('services.arcgis.com', '/33TOOklri9xpic7U'), ('ncnhde.natureserve.org', '')]
 ARCGIS_SERVICES_HOST_RE = re.compile(r'^services(?:\d+|-[a-z0-9]+)?\.arcgis\.com$')
-DEFAULT_SAVED_ONLY = 'services.arcgis.com,services1.arcgis.com,apps.fs.usda.gov'
+DEFAULT_SAVED_ONLY = 'services.arcgis.com,services1.arcgis.com'
 
 
 def saved_only_hosts():
