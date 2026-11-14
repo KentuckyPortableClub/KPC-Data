@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-14T11:59Z",
+ "checked": "2026-11-14T14:21Z",
  "switched_on": false,
  "results": [
   {
@@ -820,7 +820,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/HE-WabashCA_Parke1.pdf"
+    "F-D3 8 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/HE-WabashCA_Parke1.pdf"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -854,7 +854,7 @@
    "path": "data/docs/US-MD.json",
    "kind": "docs",
    "why": [
-    "F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/thst/learn/management/lawsandpolicies.htm"
+    "F-D3 3 of 20 re-tested links dead, e.g. https://www.nps.gov/thst/learn/management/lawsandpolicies.htm"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1086,11 +1086,9 @@
   {
    "path": "data/docs/US-WI.json",
    "kind": "docs",
-   "why": [
-    "F-D3 16 of 20 re-tested links dead, e.g. https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=MEAD%20WI"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-WV.json",
