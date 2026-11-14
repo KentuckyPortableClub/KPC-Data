@@ -1,6 +1,6 @@
 # 2-fer pre-line check: newengland (US-MA US-RI US-CT US-VT US-NH US-ME): GO
 
-Key source: build · checked 2026-11-13 14:20 UTC
+Key source: build · checked 2026-11-14 00:54 UTC
 
 ## US-MA: GO (HELD KEY: build US-43293787778 has no person's sign-off yet; the 2-fers measured on it are held with it)
 - warn: 3 review-pile HOLD row(s) still outlines: US-11401 US-11631 US-8396 (their 2-fers are 'not sure')
