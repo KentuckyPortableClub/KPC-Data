@@ -724,10 +724,6 @@ Source file: `data/campinfo/US-NV.json`
   "sewer": null,
   "water": null
  },
- "ids": [
-  "10082283",
-  "10108841"
- ],
  "kind": "c",
  "lat": 36.12812,
  "list": "campfed",
