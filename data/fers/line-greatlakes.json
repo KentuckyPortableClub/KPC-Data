@@ -6,8 +6,8 @@
   "US-MI",
   "US-IN"
  ],
- "since": "2026-11-13",
- "date": "2026-11-14 00:44 UTC",
+ "since": "2026-11-14",
+ "date": "2026-11-14 01:12 UTC",
  "verdict": "STOPPED",
  "why": [
   "missing check: 3599 of 6085 expected pairs were never looked at (59%; 1095 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (3599)"
@@ -29,13 +29,13 @@
  },
  "report": {
   "pass1": {
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "pairs tested": 4084,
    "pairs whose boxes touch": 4084
   },
   "pass2": {
    "agree with the pass before": 1478,
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "pairs tested": 378
   },
   "pass3": {
