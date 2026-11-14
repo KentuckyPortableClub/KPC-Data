@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-14T15:41Z",
+ "checked": "2026-11-14T15:56Z",
  "switched_on": false,
  "results": [
   {
@@ -819,9 +819,11 @@
   {
    "path": "data/docs/US-IN.json",
    "kind": "docs",
-   "why": [],
+   "why": [
+    "F-D3 8 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/HE-WabashCA_Parke1.pdf"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/docs/US-KS.json",
@@ -871,7 +873,7 @@
    "path": "data/docs/US-MI.json",
    "kind": "docs",
    "why": [
-    "F-D3 4 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s"
+    "F-D3 3 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s"
    ],
    "notes": [
     "no live copy: first time this file is published"
