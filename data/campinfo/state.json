@@ -116,13 +116,14 @@
    "checked": 653,
    "counts": {
     "camps": 653,
-    "needs_browser": 16,
+    "kept_after_failed_read": 97,
+    "needs_browser": 15,
     "needs_key": 337,
     "no_page": 0,
     "not_official": 0,
     "ok": 183,
-    "other": 20,
-    "resting": 97,
+    "other": 8,
+    "resting": 110,
     "robots": 0,
     "with_booking": 316,
     "with_elevation": 0,
@@ -131,7 +132,7 @@
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-09"
+   "updated": "2026-11-14"
   },
   "US-CT": {
    "camps": 32,
@@ -1123,7 +1124,7 @@
   "US-AR": "FCC listAsOfDates: robots.txt says no",
   "US-AZ": "FCC listAsOfDates: robots.txt says no",
   "US-CA": "FCC listAsOfDates: robots.txt says no",
-  "US-CO": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-CO": "FCC listAsOfDates: robots.txt says no",
   "US-CT": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-DE": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-FL": "FCC listAsOfDates: robots.txt says no",
@@ -1220,9 +1221,9 @@
     "carriers": null,
     "files": [],
     "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "status": "FCC listAsOfDates: robots.txt says no"
    },
-   "read": "2026-11-09"
+   "read": "2026-11-14"
   },
   "US-CT": {
    "cell": {
@@ -1622,6 +1623,7 @@
   }
  },
  "hosts": {
+  "cpw.state.co.us": 1794732873.8686528,
   "www.fs.usda.gov": 1794652532.4902353
  },
  "ky_check": {
@@ -2571,41 +2573,46 @@
  },
  "last": {
   "areas": [
-   "US-VT"
+   "US-CO"
   ],
   "fcc_token": true,
   "manners": {
-   "dropped_queued": 9,
+   "dropped_queued": 675,
    "errors": 0,
    "for_person_urls": [
     [
      "https://epqs.nationalmap.gov/robots.txt",
      "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from epqs.nationalmap.gov"
+    ],
+    [
+     "https://broadbandmap.fcc.gov/robots.txt",
+     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from broadbandmap.fcc.gov"
     ]
    ],
    "host_rule": 0,
-   "requests": 1,
-   "rested": 1,
-   "robots": 1,
-   "strikes": 0
+   "requests": 123,
+   "rested": 213,
+   "robots": 2,
+   "strikes": 3
   },
   "ridb_key": false,
   "stat": {
-   "camps": 10,
+   "browser": 5,
+   "camps": 676,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 0,
-   "needs_key": 9,
-   "no_page": 0,
+   "needs_browser": 8,
+   "needs_key": 352,
+   "no_page": 3,
    "not_official": 0,
-   "ok": 0,
-   "pages_read": 0,
-   "resting": 1,
+   "ok": 107,
+   "pages_read": 110,
+   "resting": 214,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 275
+   "skipped_fresh": 0
   },
-  "when": "2026-11-13"
+  "when": "2026-11-14"
  },
  "test": {
   "result": "PASS",
