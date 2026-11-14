@@ -336,16 +336,15 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-11, 3 days): docs data/docs/US-HI.json held: F-D3 5 of 20 re-tested links dead, e.g. https://www.nps.gov/puhe/learn/management/lawsandpolicies.htm
 - FROM WAITING ROOM (held since 2026-10-31, 14 days): docs data/docs/US-ID.json held: F-D1 one rules page on 63 of 362 parks: https://idfg.idaho.gov/sites/default/files/seasons-rules-big-game-2026.pdf
 - FROM WAITING ROOM (held since 2026-10-31, 14 days): docs data/docs/US-IL.json held: F-D2 3 map links on a banned host (fire news / map pins / social), e.g. https://www.google.com/maps/place/39%C2%B006'01.1%22N+88%C2%B047'57.1%
-- FROM WAITING ROOM (held since 2026-11-14): docs data/docs/US-IN.json held: F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/HE-WabashCA_Parke1.pdf
+- FROM WAITING ROOM (held since 2026-11-14): docs data/docs/US-IN.json held: F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/HE-WabashCA_Parke1.pdf
 - FROM WAITING ROOM (held since 2026-11-11, 3 days): docs data/docs/US-KS.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/safe/learn/management/lawsandpolicies.htm
 - FROM WAITING ROOM (held since 2026-11-11, 3 days): docs data/docs/US-LA.json held: F-D3 5 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/red-river/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-13, 1 days): docs data/docs/US-MD.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/thst/learn/management/lawsandpolicies.htm
 - FROM WAITING ROOM (held since 2026-10-31, 14 days): docs data/docs/US-ME.json held: F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml · F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml
-- FROM WAITING ROOM (held since 2026-11-13, 1 days): docs data/docs/US-MI.json held: F-D3 3 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s
 - FROM WAITING ROOM (held since 2026-11-11, 3 days): docs data/docs/US-MN.json held: F-D3 6 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/rydell/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-10-31, 14 days): docs data/docs/US-MO.json held: F-D1 one rules page on 426 of 561 parks: https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp
 - FROM WAITING ROOM (held since 2026-11-13, 1 days): docs data/docs/US-MS.json held: F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/coldwater_river/visit-us/rules-policies
-- FROM WAITING ROOM (held since 2026-11-13, 1 days): docs data/docs/US-ND.json held: F-D3 8 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/slade/visit-us/rules-policies
+- FROM WAITING ROOM (held since 2026-11-13, 1 days): docs data/docs/US-ND.json held: F-D3 7 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/slade/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-13, 1 days): docs data/docs/US-NJ.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/great-swamp/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-11, 3 days): docs data/docs/US-RI.json held: F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/john-h-chafee/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-13, 1 days): docs data/docs/US-SC.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/cape-romain/visit-us/rules-policies

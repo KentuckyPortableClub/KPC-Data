@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-14T21:19Z",
+ "checked": "2026-11-14T21:45Z",
  "switched_on": false,
  "results": [
   {
@@ -820,7 +820,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/HE-WabashCA_Parke1.pdf"
+    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/HE-WabashCA_Parke1.pdf"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -872,13 +872,11 @@
   {
    "path": "data/docs/US-MI.json",
    "kind": "docs",
-   "why": [
-    "F-D3 3 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-MN.json",
@@ -927,7 +925,7 @@
    "path": "data/docs/US-ND.json",
    "kind": "docs",
    "why": [
-    "F-D3 8 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/slade/visit-us/rules-policies"
+    "F-D3 7 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/slade/visit-us/rules-policies"
    ],
    "notes": [],
    "verdict": "HOLD"
