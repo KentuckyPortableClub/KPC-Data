@@ -9,8 +9,8 @@
   "US-NH",
   "US-ME"
  ],
- "since": "2026-11-13",
- "date": "2026-11-14 00:05 UTC",
+ "since": "2026-11-14",
+ "date": "2026-11-14 01:04 UTC",
  "verdict": "STOPPED",
  "why": [
   "missing check: 1446 of 2900 expected pairs were never looked at (50%; 581 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (1442); not tested: the official outline of <park> could not be read in pass 1 (one of its map rec (4)"
@@ -33,13 +33,13 @@
  },
  "report": {
   "pass1": {
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "pairs tested": 3730,
    "pairs whose boxes touch": 3730
   },
   "pass2": {
    "agree with the pass before": 700,
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "pairs tested": 338
   },
   "pass3": {
