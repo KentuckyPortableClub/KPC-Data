@@ -1,6 +1,6 @@
 # 2-fer pre-line check: plains (US-MN US-IA US-MO US-ND US-SD US-NE US-KS): GO
 
-Key source: build · checked 2026-11-13 14:56 UTC
+Key source: build · checked 2026-11-14 00:07 UTC
 
 ## US-MN: GO (HELD KEY: build US-43293787778 has no person's sign-off yet; the 2-fers measured on it are held with it)
 - warn: 4 review-pile HOLD row(s) still outlines: US-0361 US-11023 US-13354 US-9388 (their 2-fers are 'not sure')
