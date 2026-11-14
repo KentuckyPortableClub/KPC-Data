@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-13T23:50Z",
+ "checked": "2026-11-14T00:06Z",
  "switched_on": false,
  "results": [
   {
@@ -1430,9 +1430,8 @@
    "path": "data/fers/US-CT.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 26 -> 46 (over 30% change)",
-    "F-2 23 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-10073+US-7533, US-11013+US-1669, US-12620+US-4561",
-    "F-K known 2-fer missing: US-0881 + US-1662"
+    "F-2 candidates 26 -> 48 (over 30% change)",
+    "F-2 23 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-10073+US-7533, US-11013+US-1669, US-12620+US-4561"
    ],
    "notes": [
     "replaces live data/fers/US-CT.json.gz (same file, other format): promotion removes the old name"
@@ -1590,7 +1589,6 @@
    "path": "data/fers/US-MA.json.gz",
    "kind": "fers",
    "why": [
-    "F-2 only 53 of 75 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
     "F-2 30 new candidate pairs since the live file (over 10% of 75): a person looks at them first, e.g. US-0672+US-11686, US-0672+US-8395, US-0728+US-4582",
     "F-K known 2-fer missing: US-0891 + US-2430"
    ],

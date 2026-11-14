@@ -10,15 +10,15 @@
   "US-ME"
  ],
  "since": "2026-11-13",
- "date": "2026-11-13 14:54 UTC",
+ "date": "2026-11-14 00:05 UTC",
  "verdict": "STOPPED",
  "why": [
   "missing check: 1446 of 2900 expected pairs were never looked at (50%; 581 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (1442); not tested: the official outline of <park> could not be read in pass 1 (one of its map rec (4)"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
-  "FOUND": 178,
-  "DROPPED": 695,
+  "FOUND": 188,
+  "DROPPED": 685,
   "NEVER LOOKED AT": 2027
  },
  "never_looked_at": {
@@ -44,12 +44,12 @@
   },
   "pass3": {
    "agree with the pass before": 498,
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "pairs tested": 325
   },
   "pass5": {
    "checked": 113,
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "pairs tested": 0,
    "still not checked": 0
   }
@@ -63,8 +63,8 @@
   "US-ME": "data/fers/US-ME.json"
  },
  "US-MA": {
-  "rows": 478,
-  "live": 106,
+  "rows": 504,
+  "live": 118,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
@@ -72,7 +72,7 @@
    "low-confidence outline for Nashua River Rail Trail State Tra": 2
   },
   "dropped": 151,
-  "merged": 218
+  "merged": 232
  },
  "US-RI": {
   "rows": 45,
@@ -84,8 +84,8 @@
   "merged": 8
  },
  "US-CT": {
-  "rows": 98,
-  "live": 52,
+  "rows": 100,
+  "live": 54,
   "waiting": 0,
   "unfinished": 0,
   "not_sure": {
