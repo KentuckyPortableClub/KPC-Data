@@ -1037,13 +1037,14 @@
    "checked": 363,
    "counts": {
     "camps": 363,
+    "kept_after_failed_read": 4,
     "needs_browser": 1,
     "needs_key": 212,
     "no_page": 66,
     "not_official": 0,
     "ok": 24,
-    "other": 45,
-    "resting": 0,
+    "other": 40,
+    "resting": 5,
     "robots": 15,
     "with_booking": 70,
     "with_elevation": 0,
@@ -1052,7 +1053,7 @@
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-07"
+   "updated": "2026-11-14"
   },
   "US-WI": {
    "camps": 107,
@@ -1168,7 +1169,7 @@
   "US-UT": "FCC listAsOfDates: robots.txt says no",
   "US-VA": "FCC listAsOfDates: robots.txt says no",
   "US-VT": "FCC listAsOfDates: robots.txt says no",
-  "US-WA": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-WA": "FCC listAsOfDates: robots.txt says no",
   "US-WI": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-WV": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-WY": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
@@ -1593,9 +1594,9 @@
     "carriers": null,
     "files": [],
     "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "status": "FCC listAsOfDates: robots.txt says no"
    },
-   "read": "2026-11-07"
+   "read": "2026-11-14"
   },
   "US-WI": {
    "cell": {
@@ -2576,12 +2577,12 @@
  },
  "last": {
   "areas": [
-   "US-SC"
+   "US-WA"
   ],
   "fcc_token": true,
   "manners": {
-   "dropped_queued": 76,
-   "errors": 3,
+   "dropped_queued": 386,
+   "errors": 0,
    "for_person_urls": [
     [
      "https://epqs.nationalmap.gov/robots.txt",
@@ -2590,29 +2591,33 @@
     [
      "https://broadbandmap.fcc.gov/robots.txt",
      "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from broadbandmap.fcc.gov"
+    ],
+    [
+     "https://washington.goingtocamp.com/robots.txt",
+     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from washington.goingtocamp.com"
     ]
    ],
    "host_rule": 0,
-   "requests": 51,
-   "rested": 1,
-   "robots": 2,
-   "strikes": 3
+   "requests": 106,
+   "rested": 8,
+   "robots": 3,
+   "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 1,
-   "camps": 77,
+   "browser": 39,
+   "camps": 369,
    "elevations": 0,
-   "errors": 1,
-   "needs_browser": 28,
-   "needs_key": 26,
-   "no_page": 1,
-   "not_official": 7,
-   "ok": 41,
-   "pages_read": 42,
-   "resting": 2,
+   "errors": 0,
+   "needs_browser": 33,
+   "needs_key": 214,
+   "no_page": 74,
+   "not_official": 0,
+   "ok": 62,
+   "pages_read": 56,
+   "resting": 8,
    "ridb_calls": 0,
-   "robots": 0,
+   "robots": 19,
    "skipped_fresh": 0
   },
   "when": "2026-11-14"

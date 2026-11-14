@@ -50,7 +50,7 @@ Updated 2026-11-14. Every fact in <area>.json carries its source url, read date 
 | US-NM | 136 | 51 | 78 | 0 | 0 | 4 | 0 | 0 | 3 | 1 | 58 | 0 |
 | US-CA | 1190 | 50 | 752 | 0 | 7 | 14 | 352 | 0 | 15 | 4 | 81 | 0 |
 | US-OR | 496 | 47 | 410 | 0 | 0 | 14 | 0 | 1 | 24 | 8 | 85 | 0 |
-| US-WA | 363 | 24 | 212 | 1 | 15 | 0 | 66 | 0 | 45 | 3 | 70 | 0 |
+| US-WA | 363 | 24 | 212 | 1 | 15 | 5 | 66 | 0 | 40 | 3 | 70 | 0 |
 | US-AK | 368 | 8 | 234 | 0 | 113 | 0 | 4 | 0 | 9 | 5 | 64 | 0 |
 | US-HI | 22 | 10 | 2 | 0 | 0 | 0 | 8 | 0 | 2 | 0 | 12 | 0 |
 | US-MI | 511 | 3 | 110 | 0 | 12 | 0 | 377 | 0 | 9 | 0 | 12 | 0 |
@@ -66,8 +66,8 @@ Updated 2026-11-14. Every fact in <area>.json carries its source url, read date 
 
 - outdoornebraska.gov: 187 campgrounds · host resting
 - dnr.alaska.gov: 113 campgrounds · robots.txt says no
+- www.fs.usda.gov: 99 campgrounds · host resting
 - cpw.state.co.us: 98 campgrounds · host resting
-- www.fs.usda.gov: 94 campgrounds · host resting
 - reservemn.usedirect.com: 94 campgrounds · robots.txt says no
 - www.ksoutdoors.gov: 63 campgrounds · robots.txt says no
 - dnr.wisconsin.gov: 58 campgrounds · host resting
@@ -83,7 +83,7 @@ Updated 2026-11-14. Every fact in <area>.json carries its source url, read date 
 - dep.nj.gov: 17 campgrounds · host resting
 - mdc.mo.gov: 15 campgrounds · host resting (deferred: slow host, next run)
 - azstateparks.com: 15 campgrounds · robots.txt says no
-- washington.goingtocamp.com: 15 campgrounds · host resting (robots.txt could not be read: next run)
+- washington.goingtocamp.com: 15 campgrounds · robots.txt says no
 - midnrreservations.com: 12 campgrounds · host resting (robots.txt could not be read: next run)
 - reserveohio.com: 12 campgrounds · host resting (robots.txt could not be read: next run)
 - www.reservecalifornia.com: 5 campgrounds · robots.txt says no
@@ -3635,10 +3635,10 @@ Updated 2026-11-14. Every fact in <area>.json carries its source url, read date 
   - fees = "$10 | $7 for the day" · “Winter: Park closed Nov. 1 - March 31 Fees Discover pass: Annual Pass: $45 One-day Pass: $10 Watercraft Launch Fee: $7 for the day Entrance ”
   - map.date_how = "PDF, year 2023 in the link" · “link “Sacajawea full color map.pdf””
   - map.url = "https://parks.wa.gov/sites/default/files/2023-04/Sacajawea% · “link “Sacajawea full color map.pdf” -> https://parks.wa.gov/sites/default/files/2023-04/Sacajawea%20full%20color%20map.pdf”
-  - phone = "(509) 545-2361" · “more about fees Contact Email sacajawea@parks.wa.gov Phone (509) 545-2361 Get Directions Get Discover Pass Map & visitor guide Locate”
+  - phone = "(509) 545-2361" · “more about fees Contact Email sacajawea@parks.wa.gov Phone (509) 545-2361 Get Directions Get Discover Pass Fri 01 Jan Sacajawea First”
   - reservable = false · “ng for the day or a picnic under the trees. Boating The park offers a boat launch and one first come, first serve primitive campsite for boa”
   - rules.fires = "fire pits in designated areas" · “nu Search Search Alerts Burn Ban Level 2 Posted on: May 28, 2026 Wood fires restricted to fire pits in designated areas. Gas and propane all”
-  - rules.pets = "Dogs Allowed on Leash" · “Email sacajawea@parks.wa.gov Phone (509) 545-2361 Get Directions Get Discover Pass Rules Dogs Allowed on Leash Fires Allowed in Designated A”
+  - rules.pets = "Dogs Allowed on Leash" · “Directions Get Discover Pass Fri 01 Jan Sacajawea First Day Hike 10:00am - 12:00pm Rules Dogs Allowed on Leash Fires Allowed in Designated A”
 - **Primitive campsites (first-come)** (intake-US-3260, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [www.parks.wa.gov](https://www.parks.wa.gov/576/Saddlebag-Island)
   - booking.url = "https://www.parks.wa.gov/576/Saddlebag-Island" · “booking link from our outside research (camping, in the park) row (official system www.parks.wa.gov)”
   - drinking_water = false · “res Allowed in Designated Areas Boat-in Only See all other general park rules There is no potable water on the island. There is no garbage s”
