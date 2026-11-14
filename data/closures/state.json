@@ -10,41 +10,66 @@
     "taken_down": 18,
     "whole": 1
    },
-   "failed": 2,
+   "failed": 3,
    "items": 88,
-   "read": "2026-11-14T03:08Z",
+   "read": "2026-11-14T15:19Z",
    "sources": 73,
    "status": "done"
   }
  },
  "hosts": {
-  "www.fs.usda.gov": 1794665950.8323889
+  "developer.nps.gov": 1794756202.7363312,
+  "www.fs.usda.gov": 1794756064.9096503
  },
  "last": {
-  "areas": [],
+  "areas": [
+   "US-KY"
+  ],
   "browser": [],
-  "done": [],
-  "failed": [],
+  "done": [
+   "US-KY"
+  ],
+  "failed": [
+   {
+    "area": "US-KY",
+    "src": "fs-gwj",
+    "url": "https://www.fs.usda.gov/alerts/gwj/alerts-notices",
+    "why": "rest (host resting after an earlier strike; last items kept)"
+   },
+   {
+    "area": "US-KY",
+    "src": "ky-fs-dbnf",
+    "url": "https://www.fs.usda.gov/alerts/dbnf/alerts-notices",
+    "why": "rest (host resting after an earlier strike; last items kept)"
+   },
+   {
+    "area": "US-KY",
+    "src": "nps-ky",
+    "url": "https://www.nps.gov/state/ky/index.htm",
+    "why": "rest (host resting after an earlier strike; last items kept)"
+   }
+  ],
   "manners": {
-   "errors": 0,
+   "errors": 4,
    "for_person_urls": [],
    "host_rule": 0,
-   "requests": 0,
-   "rested": 0,
+   "keyed_api": 1,
+   "requests": 114,
+   "rested": 1,
    "robots": 0,
-   "strikes": 0
+   "strikes": 6
   },
   "stat": {
    "items": 0,
-   "pages": 0,
-   "pdfs": 0,
-   "requests": 0,
-   "sentences": 0,
-   "sources_failed": 0,
-   "unmatched": 0,
-   "unreadable": 0
+   "pages": 80,
+   "pdfs": 17,
+   "requests": 105,
+   "sentences": 326,
+   "sources_failed": 3,
+   "unmatched": 118,
+   "unreadable": 203
   },
-  "when": "2026-11-14T07:59Z"
+  "when": "2026-11-14T15:19Z"
  },
  "proven": "2026-10-31 (Brandon GO Oct 30 6:07 AM 'Yes': KY closures live Sat Oct 31; dry runs clean Oct 30). The 6-hour schedule runs from now; the site keeps reading the old Kentucky reader until chat 11's side-by-side PASS (CL-5).",
  "test": {
