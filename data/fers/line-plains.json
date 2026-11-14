@@ -10,12 +10,11 @@
   "US-NE",
   "US-KS"
  ],
- "since": "2026-11-13",
- "date": "2026-11-13 16:55 UTC",
+ "since": "2026-11-14",
+ "date": "2026-11-14 00:49 UTC",
  "verdict": "STOPPED",
  "why": [
-  "missing check: 5737 of 9472 expected pairs were never looked at (61%; 2004 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (5725); <park>: not in this run (another state, retired, or no POTA pin) (12)",
-  "water not checked: US-MO: 1 rows (the USGS water map / files had no answer there): never READY with one"
+  "missing check: 5737 of 9472 expected pairs were never looked at (61%; 2004 more have no official outline and are not counted); READY needs 10% or less. Most: not tested: the outlines' boxes do not touch (the parks are apart on the official maps) (5725); <park>: not in this run (another state, retired, or no POTA pin) (12)"
  ],
  "known_answers": "19/19 on 2026-11-02",
  "missing_check": {
@@ -35,25 +34,25 @@
  },
  "report": {
   "pass1": {
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "pairs tested": 6600,
    "pairs whose boxes touch": 6600
   },
   "pass2": {
    "agree with the pass before": 1688,
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "pairs tested": 481
   },
   "pass3": {
    "agree with the pass before": 1246,
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "pairs tested": 469
   },
   "pass5": {
    "checked": 202,
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "pairs tested": 0,
-   "still not checked": 1
+   "still not checked": 0
   }
  },
  "files": {
@@ -99,13 +98,10 @@
    "both parks join the same official records but a POTA pin is": 1,
    "low-confidence outline for Katy Trail Rock Island Spur State": 1,
    "both parks join the same official records and both POTA pins": 1,
-   "water not checked": 1
+   "this spot is 110 km from Upper Mississippi Conservation Rese": 1
   },
   "dropped": 116,
   "merged": 81
- },
- "water_weak": {
-  "US-MO": 1
  },
  "US-ND": {
   "rows": 52,

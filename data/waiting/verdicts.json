@@ -1430,8 +1430,9 @@
    "path": "data/fers/US-CT.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 26 -> 48 (over 30% change)",
-    "F-2 23 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-10073+US-7533, US-11013+US-1669, US-12620+US-4561"
+    "F-2 candidates 26 -> 46 (over 30% change)",
+    "F-2 23 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-10073+US-7533, US-11013+US-1669, US-12620+US-4561",
+    "F-K known 2-fer missing: US-0881 + US-1662"
    ],
    "notes": [
     "replaces live data/fers/US-CT.json.gz (same file, other format): promotion removes the old name"
@@ -1589,6 +1590,7 @@
    "path": "data/fers/US-MA.json.gz",
    "kind": "fers",
    "why": [
+    "F-2 only 53 of 75 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
     "F-2 30 new candidate pairs since the live file (over 10% of 75): a person looks at them first, e.g. US-0672+US-11686, US-0672+US-8395, US-0728+US-4582",
     "F-K known 2-fer missing: US-0891 + US-2430"
    ],
@@ -1614,14 +1616,22 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/fers/US-MI.json.gz",
+   "path": "data/fers/US-MI.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 82 -> 137 (over 30% change)",
-    "F-2 NOT SURE 9 -> 12 (over 30% change)",
-    "F-2 60 new candidate pairs since the live file (over 10% of 82): a person looks at them first, e.g. US-0766+US-4239, US-10088+US-4239, US-10519+US-4239"
+    "F-2 candidates 82 -> 2 (over 30% change)",
+    "F-2 NOT SURE 9 -> 5 (over 30% change)",
+    "F-2 pass2 missing: the 2-fer passes did not all run",
+    "F-2 pass3 missing: the 2-fer passes did not all run",
+    "F-2 only 2 of 82 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)",
+    "F-K known 2-fer missing: US-3304 + US-6619",
+    "F-K known 2-fer missing: US-13184 + US-1522",
+    "F-K known 2-fer missing: US-12786 + US-4488",
+    "F-K known 2-fer missing: US-3334 + US-6621"
    ],
-   "notes": [],
+   "notes": [
+    "replaces live data/fers/US-MI.json.gz (same file, other format): promotion removes the old name"
+   ],
    "verdict": "HOLD"
   },
   {
@@ -1793,13 +1803,17 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/fers/US-OH.json.gz",
+   "path": "data/fers/US-OH.json",
    "kind": "fers",
    "why": [
-    "F-2 candidates 27 -> 64 (over 30% change)",
-    "F-2 38 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. US-11673+US-4239, US-12057+US-9444, US-1935+US-4239"
+    "F-2 candidates 27 -> 122 (over 30% change)",
+    "F-2 pass2 missing: the 2-fer passes did not all run",
+    "F-2 pass3 missing: the 2-fer passes did not all run",
+    "F-2 only 16 of 27 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)"
    ],
-   "notes": [],
+   "notes": [
+    "replaces live data/fers/US-OH.json.gz (same file, other format): promotion removes the old name"
+   ],
    "verdict": "HOLD"
   },
   {
@@ -4015,7 +4029,8 @@
    "path": "data/world-key/FR.json",
    "kind": "key",
    "why": [
-    "F-O1 outlines 13877 -> 12882 (more than 1% lost)"
+    "F-O1 outlines 13877 -> 13377 (more than 1% lost)",
+    "F-O3 retired parks still outlined: FR-5742, FR-5743, FR-5752, FR-5753, FR-5756"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -4461,6 +4476,27 @@
    "why": [],
    "notes": [],
    "verdict": "PASS"
+  },
+  {
+   "path": "data/fers/US-MI.json.gz",
+   "kind": "fers",
+   "why": [
+    "F-2 candidates 82 -> 137 (over 30% change)",
+    "F-2 NOT SURE 9 -> 12 (over 30% change)",
+    "F-2 60 new candidate pairs since the live file (over 10% of 82): a person looks at them first, e.g. US-0766+US-4239, US-10088+US-4239, US-10519+US-4239"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
+  },
+  {
+   "path": "data/fers/US-OH.json.gz",
+   "kind": "fers",
+   "why": [
+    "F-2 candidates 27 -> 64 (over 30% change)",
+    "F-2 38 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. US-11673+US-4239, US-12057+US-9444, US-1935+US-4239"
+   ],
+   "notes": [],
+   "verdict": "HOLD"
   }
  ]
 }
