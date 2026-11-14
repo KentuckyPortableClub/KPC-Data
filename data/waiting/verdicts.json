@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-14T06:07Z",
+ "checked": "2026-11-14T07:26Z",
  "switched_on": false,
  "results": [
   {
@@ -820,7 +820,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 4 of 20 re-tested links dead, e.g. https://www.in.gov/dA/3d79363a7b/tippecanoe_river_trail.pdf?language_i"
+    "F-D3 7 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/HE-WabashCA_Parke1.pdf"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -873,7 +873,7 @@
    "path": "data/docs/US-MI.json",
    "kind": "docs",
    "why": [
-    "F-D3 4 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s"
+    "F-D3 3 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s"
    ],
    "notes": [
     "no live copy: first time this file is published"
@@ -1086,11 +1086,9 @@
   {
    "path": "data/docs/US-WI.json",
    "kind": "docs",
-   "why": [
-    "F-D3 16 of 20 re-tested links dead, e.g. https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=MEAD%20WI"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-WV.json",
@@ -3788,11 +3786,11 @@
   {
    "path": "data/world-key/BE.json",
    "kind": "key",
-   "why": [
-    "F-4 unsure: PAD-US did not answer the shape test (HTTPError)"
+   "why": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
    ],
-   "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/world-key/BM.json",
