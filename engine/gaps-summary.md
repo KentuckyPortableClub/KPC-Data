@@ -1,6 +1,6 @@
 # Missing list (gaps)
 
-Built 2026-11-13 from the club files (read-only).
+Built 2026-11-14 from the club files (read-only).
 
 | area | kind | parks | missing | solved since last night |
 |---|---|---|---|---|
@@ -523,7 +523,7 @@ Built 2026-11-13 from the club files (read-only).
 | GB | outline | 7079 | 3395 | 0 |
 | GB | map | 7079 | 7079 | 0 |
 | GB | page | 7079 | 7079 | 0 |
-| AU | outline | 11308 | 3152 | 0 |
+| AU | outline | 11308 | 3138 | 26 |
 | AU | map | 11308 | 11308 | 0 |
 | AU | page | 11308 | 11308 | 0 |
 | JP | outline | 1241 | 1056 | 0 |
@@ -535,7 +535,7 @@ Built 2026-11-13 from the club files (read-only).
 | PL | outline | 2994 | 2966 | 0 |
 | PL | map | 2994 | 2994 | 0 |
 | PL | page | 2994 | 2994 | 0 |
-| FR | outline | 13309 | 3471 | 0 |
+| FR | outline | 13309 | 3470 | 1 |
 | FR | map | 13309 | 13309 | 0 |
 | FR | page | 13309 | 13309 | 0 |
 | ES | outline | 2498 | 2498 | 0 |
