@@ -713,10 +713,6 @@ Source file: `data/campinfo/US-CO.json`
   "sewer": null,
   "water": null
  },
- "ids": [
-  "10199750",
-  "247548"
- ],
  "kind": "c",
  "lat": 40.72719,
  "list": "campfed",
