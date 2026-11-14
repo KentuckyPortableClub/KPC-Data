@@ -355,14 +355,14 @@ Source file: `data/campinfo/US-SC.json`
   "url": "https://reserve.southcarolinaparks.com/caesars-head"
  },
  "cell": null,
- "checked": "2026-11-07",
+ "checked": "2026-11-14",
  "checkin": null,
  "checkout": null,
  "drinking_water": null,
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-82.6261&y=35.1061&units=Feet&wkid=4326",
-  "status": "host resting (robots.txt could not be read: next run)",
+  "status": "robots.txt says no",
   "value": null
  },
  "features": null,
@@ -374,8 +374,6 @@ Source file: `data/campinfo/US-SC.json`
   "water": null
  },
  "kind": "c",
- "last_read_failed": "2026-11-14",
- "last_read_status": "ok, no campground facts in the page text: needs browser?",
  "lat": 35.1061,
  "list": "outside research (camping, in the park)",
  "lodging_booking": {
@@ -426,14 +424,14 @@ Source file: `data/campinfo/US-SC.json`
   "url": "https://reserve.southcarolinaparks.com/sesqui"
  },
  "cell": null,
- "checked": "2026-11-07",
+ "checked": "2026-11-14",
  "checkin": null,
  "checkout": null,
  "drinking_water": null,
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-80.91272&y=34.10139&units=Feet&wkid=4326",
-  "status": "host resting (robots.txt could not be read: next run)",
+  "status": "robots.txt says no",
   "value": null
  },
  "features": "fire ring",
@@ -449,8 +447,6 @@ Source file: `data/campinfo/US-SC.json`
   "water": true
  },
  "kind": "c",
- "last_read_failed": "2026-11-14",
- "last_read_status": "ok, no campground facts in the page text: needs browser?",
  "lat": 34.10139,
  "list": "campstate-manual",
  "lodging_booking": {
