@@ -34,6 +34,12 @@ jobs:
             for s in $S; do [ $((i % 7 + 1)) = "$D" ] && A="$A US-$s"; i=$((i+1)); done
           fi
           echo "::notice title=Camping weekly::today: $A"
+          # Nov 14: the workshop's live group keeps ONE running + ONE waiting run, and a newer waiting run silently replaces an older
+          # one (a waiting Sunday run or chain job). So today's slice starts only when no live workshop run is running or waiting.
+          kpc_busy=0; for kpc_st in in_progress queued pending waiting requested; do
+            kpc_n=$(gh run list -R ${{ github.repository }} --workflow kpc-workshop.yml --status "$kpc_st" --limit 20 --json displayTitle --jq '[.[] | select(.displayTitle | startswith("KPC bot workshop - Kentucky test") | not)] | length') || { echo "::error title=start the next run::could not ask GitHub whether a workshop run is going: today's slice ($A) not started (fail closed)"; echo "start the next run - could not ask GitHub whether a workshop run is going: today's slice ($A) not started (fail closed)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit 0; }
+            kpc_busy=$((kpc_busy + ${kpc_n:-0})); done
+          if [ "$kpc_busy" -gt 0 ]; then echo "::warning title=Camping weekly::a workshop run is already running or waiting: today's slice ($A) skipped so the two never overlap and no waiting run is replaced; next week's run (or a by-hand run with areas=$A) catches up"; echo "Camping weekly - a workshop run is already running or waiting: today's slice ($A) skipped" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit 0; fi
           gh api -X POST repos/${{ github.repository }}/actions/workflows/kpc-workshop.yml/dispatches -f ref=main -f 'inputs[bots]=campinfo' -f "inputs[areas]=$A" -f 'inputs[chain]=0' || { kpc_rc=$?; echo "::error title=start the next run::could not start the next run (exit $kpc_rc); the chain stops here"; echo "start the next run - could not start the next run (exit $kpc_rc); the chain stops here" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
