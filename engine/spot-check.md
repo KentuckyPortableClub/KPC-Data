@@ -1,4 +1,4 @@
-# Spot check: all kinds (20 random rows of 10968)
+# Spot check: all kinds (20 random rows of 10993)
 
 For chat 11: open each link and say YES / NO. The engine decides nothing.
 
