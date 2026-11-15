@@ -1,53 +1,53 @@
-# Spot check: all kinds (20 random rows of 11573)
+# Spot check: all kinds (20 random rows of 11782)
 
 For chat 11: open each link and say YES / NO. The engine decides nothing.
 
-## CA-6012 Morrison Dam Conservation Area (CA-ON)
+## CA-0793 Saint Croix Island National Historic Site (CA-NB)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Morrison Dam CA
-- url: https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/ABCA_Properties/FeatureServer/0?f=html
-- record_link: https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/ABCA_Properties/FeatureServer/0/query?where=OBJECTID%3D23&outFields=%2A&f=html
-- source_url: https://services1.arcgis.com/d0ZCwU7eGKVeNiEE/arcgis/rest/services/ABCA_Properties/FeatureServer/0/query?geometry=-81.4577%2C43.3602&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 8
-- why: same land also in CA-ON-ca-admin 'Ausable Bayfield Conservation Authority': merged, counted once; record 'Morrison Dam CA' (PACK-CA-ON-land-397); pin 8 m from the edge; about 24.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- record_name: St. Croix Island International Historic Site
+- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D4727&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-67.1107%2C45.1341&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 10
+- why: same land also in PACK-CA-NB-park-427 '': merged, counted once; record 'St. Croix Island International Historic Site' (PACK-CA-NB-land-73); pin 10 m from the edge; about 8.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## US-9837 Buzz Besadny State Fish and Wildlife Area (US-WI)
-- status: found
-- tier: T-2
-- band: STRONG
-- record_name: C.D. (Buzz) Besadny Fish And Wildlife Area
+## US-8217 Casey Lake State Wildlife Area (US-WI)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: Casey Lake SHA-WPRA
 - url: https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0?f=html
-- record_link: https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?where=OBJECTID%3D713376&outFields=%2A&f=html
-- source_url: https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?geometry=-87.6233%2C44.509&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?where=OBJECTID%3D713527&outFields=%2A&f=html
+- source_url: https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?geometry=-92.4103%2C45.0499&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'C.D. (Buzz) Besadny Fish And Wildlife Area' (PACK-US-WI-land-370); pin inside; about 2749.7 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: same land also in PACK-US-WI-land-373 'Casey Lake SHA-WPRA', PACK-US-WI-land-373 'Casey Lake SHA-WPRA', PACK-US-WI-land-373 'Casey Lake SHA-WPRA': merged, counted once; record 'Casey Lake SHA-WPRA' (PACK-US-WI-land-370); pin inside; about 359.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## CA-1708 Whitefish River Sandy Till Conservation Reserve (CA-ON)
+## US-13269 Lake Tahoe-Eastshore Dr Byway Area of Outstanding Natural Beauty (US-NV)
 - status: candidate
-- tier: T-3
+- tier: T-6
 - band: WEAK
-- record_name: WHITEFISH RIVER CONSERVATION RESERVE
-- url: https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2?f=html
-- record_link: https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2/query?where=OBJECTID%3D11233&outFields=%2A&f=html
-- source_url: https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2/query?geometry=-80.8927%2C48.0587&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Lake Tahoe Basin Management Unit
+- url: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0?f=html
+- record_link: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D109&outFields=%2A&f=html
+- source_url: https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?geometry=-119.942%2C38.9593&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: same land also in PACK-CA-ON-park-435 'WHITEFISH RIVER CONSERVATION RESERVE': merged, counted once; record 'WHITEFISH RIVER CONSERVATION RESERVE' (CA-ON-cr); pin inside; about 9467.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Lake Tahoe Basin Management Unit' (US-USFS-ownership); pin inside; about 176285.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
 - answer: 
 
-## CA-4960 Parc Michel-Chartrand Regional Park (CA-QC)
-- status: found
-- tier: T-2
-- band: STRONG
-- record_name: Michel-Chartrand, Parc
-- url: https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json
-- record_link: https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json
-- source_url: https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json
-- pin_m: 0
-- why: record 'Michel-Chartrand, Parc' (PACK-CA-QC-park-91); pin inside; about 410.4 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+## CA-4339 Pontoon Lake Territorial Park (CA-NT)
+- status: candidate
+- tier: T-6
+- band: WEAK
+- record_name: Pontoon Lake
+- url: https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/PlanningCadastre_LCC/MapServer/16?f=html
+- record_link: https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/PlanningCadastre_LCC/MapServer/16/query?where=OBJECTID%3D31512&outFields=%2A&f=html
+- source_url: https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/PlanningCadastre_LCC/MapServer/16/query?geometry=-114.026%2C62.5531&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 6
+- why: record 'Pontoon Lake' (PACK-CA-NT-park-85); pin 6 m from the edge; about 5.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
 - answer: 
 
 ## US-12026 Pine Creek State Game Land (US-IN)
@@ -74,28 +74,28 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Dornoch Firth' (PACK-GB-land-173); pin inside; about 39027.0 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## US-4162 Mounds on Brookville Lake State Recreation Area (US-IN)
+## US-12026 Pine Creek State Game Land (US-IN)
+- status: candidate
+- tier: T-4
+- band: WEAK
+- record_name: Pine Creek Bottoms Gamebird Habitat Area
+- url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html
+- record_link: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D4825&outFields=%2A&f=html
+- source_url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-87.1585%2C40.6404&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Pine Creek Bottoms Gamebird Habitat Area' (PACK-US-IN-land-191); pin inside; about 809.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
+- answer: 
+
+## US-3692 Heron Bay and Portersville Bay State Fish and Wildlife Area (US-AL)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Brookville Lake
-- url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html
-- record_link: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D3170&outFields=%2A&f=html
-- source_url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-84.9633%2C39.4949&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Heron Bay Wetlands
+- url: https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0?f=html
+- record_link: https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0/query?where=OBJECTID%3D122&outFields=%2A&f=html
+- source_url: https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0/query?geometry=-88.1301%2C30.3485&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: same land also in PACK-US-IN-land-387 'Brookville Lake': merged, counted once; record 'Brookville Lake' (PACK-US-IN-land-191); pin inside; about 2734.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
-- answer: 
-
-## CA-4903 Forges du Saint Maurice National Historic Site (CA-QC)
-- status: found
-- tier: T-1
-- band: STRONG
-- record_name: Forges du Saint-Maurice National Historic Site
-- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1951&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-72.6596%2C46.3951&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Forges du Saint-Maurice National Historic Site' (PACK-CA-NB-land-73); pin inside; about 117.1 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: same land also in PACK-US-AL-wildlife-218 'Grand Bay Savanna Wildlife Management Area': merged, counted once; record 'Heron Bay Wetlands' (PACK-US-AL-preserve-217); pin inside; about 462.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## CA-2218 Rimouski Reserve Nature Reserve (CA-QC)
@@ -122,28 +122,29 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: same land also in PACK-US-MN-preserve-278 'Savage Fen': merged, counted once; record 'Savage Fen' (PACK-US-MN-forest-27); pin 6 m from the edge; about 289.9 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: weak
 - answer: 
 
-## US-10787 Weinberg-King Scripps Unit State Park (US-IL)
-- status: candidate
-- tier: T-3
-- band: WEAK
-- record_name: Weinberg-King
+## US-0526 Wildcat Hollow State Nature Preserve (US-IL)
+- status: found
+- tier: T-2
+- band: STRONG
+- record_name: Wildcat Hollow
 - url: https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11?f=html
-- record_link: https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11/query?where=OBJECTID%3D306&outFields=%2A&f=html
-- source_url: https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11/query?geometry=-90.6406%2C40.0994&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11/query?where=OBJECTID%3D47&outFields=%2A&f=html
+- source_url: https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11/query?geometry=-88.616%2C38.9959&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Weinberg-King' (PACK-US-IL-wildlife-14); pin inside; about 2275.5 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Wildcat Hollow' (PACK-US-IL-wildlife-14); pin inside; about 732.2 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## CA-1708 Whitefish River Sandy Till Conservation Reserve (CA-ON)
+## CA-2046 Parc Parent Recreation Park (CA-QC)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: WHITEFISH RIVER CONSERVATION RESERVE
-- url: https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2?f=html
-- record_link: https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2/query?where=OBJECTID%3D11233&outFields=%2A&f=html
-- source_url: https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2/query?geometry=-80.8927%2C48.0587&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: same land also in PACK-CA-ON-park-435 'WHITEFISH RIVER CONSERVATION RESERVE': merged, counted once; record 'WHITEFISH RIVER CONSERVATION RESERVE' (CA-ON-cr); pin inside; about 9467.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- record_name: Forêt-Héritage (partie Parent) Natural Area Under Private Stewardship
+- url: https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1?f=html
+- record_link: https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?where=OBJECTID%3D443465&outFields=%2A&f=html
+- source_url: https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?geometry=-74.1031%2C45.8416&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- label: WDPA (last resort)
+- pin_m: 147
+- why: same land also in PACK-CA-QC-park-447 'Milieu naturel de conservation volontaire de la Forêt-Héritage (partie Parent)': merged, counted once; record 'Forêt-Héritage (partie Parent) Natural Area Under Private Stewardship' (WDPA-last-resort-WDPA_v0); pin 147 m from the edge; about 8.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
 - answer: 
 
 ## US-4424 Ouachita National Forest (US-OK)
@@ -170,16 +171,16 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: same land also in PACK-US-IN-land-387 'Monroe Lake': merged, counted once; record 'Monroe Lake' (PACK-US-IN-land-191); pin 29 m from the edge; about 482.2 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
 - answer: 
 
-## CA-4912 Lévis Forts National Historic Site (CA-QC)
-- status: candidate
+## CA-4900 Cartier-Brébeuf National Historic Site (CA-QC)
+- status: found
 - tier: T-1
-- band: CONFLICT
-- record_name: Lévis Forts National Historic Site
+- band: STRONG
+- record_name: Cartier-Brébeuf National Historic Site
 - url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1851&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-71.158%2C46.815&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1838&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-71.2392%2C46.8258&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Lévis Forts National Historic Site' (PACK-CA-NB-land-73); pin inside; about 11.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: likely
+- why: record 'Cartier-Brébeuf National Historic Site' (PACK-CA-NB-land-73); pin inside; about 13.1 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
 ## CA-6253 Moirs Ltd. Power House Historic Site (CA-NS)
@@ -194,7 +195,7 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Moirs Ltd. Power House' (PACK-CA-NS-land-83); pin 6 m from the edge; about 3.3 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
-## US-4514 Cibola National Forest (US-TX)
+## US-4514 Cibola National Forest (US-OK)
 - status: found
 - tier: T-1
 - band: STRONG
@@ -206,16 +207,16 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Cibola National Forest' (US-USFS-ownership); pin inside; about 1883163.2 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## CA-5626 Kettle Creek Conservation Area (CA-ON)
+## CA-1708 Whitefish River Sandy Till Conservation Reserve (CA-ON)
 - status: candidate
-- tier: T-2
+- tier: T-3
 - band: WEAK
-- record_name: Kettle Creek Conservation Authority
-- url: https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11?f=html
-- record_link: https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11/query?where=OBJECTID%3D417&outFields=%2A&f=html
-- source_url: https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11/query?geometry=-81.1466%2C42.8237&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: WHITEFISH RIVER CONSERVATION RESERVE
+- url: https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2?f=html
+- record_link: https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2/query?where=OBJECTID%3D11233&outFields=%2A&f=html
+- source_url: https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2/query?geometry=-80.8927%2C48.0587&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Kettle Creek Conservation Authority' (CA-ON-ca-admin); pin inside; about 126642.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
+- why: same land also in PACK-CA-ON-park-435 'WHITEFISH RIVER CONSERVATION RESERVE': merged, counted once; record 'WHITEFISH RIVER CONSERVATION RESERVE' (CA-ON-cr); pin inside; about 9467.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## US-2218 Nu'uanu Pali Wayside State Park (US-HI)
