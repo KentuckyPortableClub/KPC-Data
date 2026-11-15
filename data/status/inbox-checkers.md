@@ -350,7 +350,7 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-11, 4 days): docs data/docs/US-KS.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/flint-hills/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-11, 4 days): docs data/docs/US-LA.json held: F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/catahoula/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-10-31, 15 days): docs data/docs/US-ME.json held: F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml · F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml
-- FROM WAITING ROOM (held since 2026-11-15): docs data/docs/US-MI.json held: F-D3 4 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s
+- FROM WAITING ROOM (held since 2026-11-15): docs data/docs/US-MI.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s
 - FROM WAITING ROOM (held since 2026-11-11, 4 days): docs data/docs/US-MN.json held: F-D3 5 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/minnesota-valley-wetland-management-distric
 - FROM WAITING ROOM (held since 2026-10-31, 15 days): docs data/docs/US-MO.json held: F-D1 one rules page on 426 of 561 parks: https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp
 - FROM WAITING ROOM (held since 2026-11-13, 2 days): docs data/docs/US-ND.json held: F-D3 4 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/arrowwood-wetland-management-district/visit
@@ -428,7 +428,6 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-01, 14 days): truth data/truth/US-MA.json held: F-R2 6 OFF rows share the size 1,000.0 ac · F-R3 169 of 242 sized parks are OFF (over half: a reading problem?)
 - FROM WAITING ROOM (held since 2026-11-01, 14 days): truth data/truth/US-MD.json held: F-R3 48 of 89 sized parks are OFF (over half: a reading problem?)
 - FROM WAITING ROOM (held since 2026-11-01, 14 days): truth data/truth/US-MN.json held: F-R3 13 of 20 sized parks are OFF (over half: a reading problem?)
-- FROM WAITING ROOM (held since 2026-11-01, 14 days): truth data/truth/US-MS.json held: F-R2 5 OFF rows share the size 1,200,000.0 ac
 - FROM WAITING ROOM (held since 2026-11-01, 14 days): truth data/truth/US-NY.json held: F-R2 6 OFF rows share the size 46,000.0 ac
 - FROM WAITING ROOM (held since 2026-11-01, 14 days): truth data/truth/US-OK.json held: F-R3 53 of 100 sized parks are OFF (over half: a reading problem?)
 - FROM WAITING ROOM (held since 2026-11-01, 14 days): truth data/truth/US-TX.json held: F-R2 5 OFF rows share the size 675,000.0 ac
