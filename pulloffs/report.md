@@ -1,12 +1,12 @@
 # kpc_pulloffs run report (2026-11-15)
 
-- version 1.0.0; exit code 3; ran 50.3 min; 322 web requests
-- parks in this input (after --areas / --limit): 190; done: 81; left for the next run: 109
-- candidates for chat 11: 2474; kept out (log only, work/log/kept_out.jsonl): 7054
+- version 1.0.0; exit code 3; ran 50.9 min; 353 web requests
+- parks in this input (after --areas / --limit): 190; done: 93; left for the next run: 97
+- candidates for chat 11: 2615; kept out (log only, work/log/kept_out.jsonl): 7347
 
 ## Recall check (acceptance test only, before the duplicate drop)
 
-Official access pins next to a public road (within 30 m) inside the search band: 311; found within 50 m: 62 (20%)
+Official access pins next to a public road (within 30 m) inside the search band: 401; found within 50 m: 89 (22%)
 
 ## Parks
 
@@ -130,7 +130,31 @@ Official access pins next to a public road (within 30 m) inside the search band:
   - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
 - US-3814 Hensley-Pine Mountain Wildlife Management Area: done; 4 candidate(s); 18 kept out; photo cells 62; points looked at {'entry': 56, 'road': 360, 'hint': 0}; roads {'public': 58, 'dropped (interstate/ramp/private/alley)': 0, 'lot-road hints': 0}; recall 0/1
   - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
-- US-3815 Higginson-Henry Wildlife Management Area: time ran out after 35 of 75 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
+- US-3815 Higginson-Henry Wildlife Management Area: done; 52 candidate(s); 132 kept out; photo cells 75; points looked at {'entry': 43, 'road': 372, 'hint': 0}; roads {'public': 56, 'dropped (interstate/ramp/private/alley)': 2, 'lot-road hints': 0}; recall 15/42
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3816 John A. Kleber Wildlife Management Area: done; 19 candidate(s); 66 kept out; photo cells 65; points looked at {'entry': 87, 'road': 297, 'hint': 0}; roads {'public': 55, 'dropped (interstate/ramp/private/alley)': 2, 'lot-road hints': 0}; recall 5/14
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3817 John C. Williams Wildlife Management Area: done; 8 candidate(s); 12 kept out; photo cells 14; points looked at {'entry': 2, 'road': 89, 'hint': 0}; roads {'public': 10, 'dropped (interstate/ramp/private/alley)': 18, 'lot-road hints': 0}; recall 0/6
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3818 Jones-Keeney Wildlife Management Area: done; 8 candidate(s); 17 kept out; photo cells 20; points looked at {'entry': 1, 'road': 73, 'hint': 0}; roads {'public': 11, 'dropped (interstate/ramp/private/alley)': 3, 'lot-road hints': 0}; recall 0/0
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3819 Kaler Bottoms Wildlife Management Area: done; 3 candidate(s); 7 kept out; photo cells 7; points looked at {'entry': 4, 'road': 17, 'hint': 0}; roads {'public': 4, 'dropped (interstate/ramp/private/alley)': 0, 'lot-road hints': 0}; recall 1/2
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3820 Kentucky River Wildlife Management Area: done; 10 candidate(s); 24 kept out; photo cells 51; points looked at {'entry': 14, 'road': 191, 'hint': 0}; roads {'public': 33, 'dropped (interstate/ramp/private/alley)': 8, 'lot-road hints': 0}; recall 1/9
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3821 L. B. Davison Wildlife Management Area: done; 2 candidate(s); 1 kept out; photo cells 5; points looked at {'entry': 24, 'road': 28, 'hint': 0}; roads {'public': 5, 'dropped (interstate/ramp/private/alley)': 0, 'lot-road hints': 0}; recall 0/0
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3822 Lee K. Nelson Wildlife Management Area: done; 0 candidate(s); 0 kept out; photo cells 1; points looked at {'entry': 4, 'road': 6, 'hint': 0}; roads {'public': 2, 'dropped (interstate/ramp/private/alley)': 0, 'lot-road hints': 0}; recall 0/1
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3823 Livingston County Wildlife Management Area: done; 3 candidate(s); 5 kept out; photo cells 21; points looked at {'entry': 1, 'road': 77, 'hint': 0}; roads {'public': 18, 'dropped (interstate/ramp/private/alley)': 2, 'lot-road hints': 0}; recall 0/3
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3824 Marion County Wildlife Management Area: done; 3 candidate(s); 3 kept out; photo cells 6; points looked at {'entry': 4, 'road': 21, 'hint': 0}; roads {'public': 7, 'dropped (interstate/ramp/private/alley)': 0, 'lot-road hints': 0}; recall 1/3
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3825 Miller Welch Wildlife Management Area: done; 28 candidate(s); 24 kept out; photo cells 22; points looked at {'entry': 21, 'road': 101, 'hint': 0}; roads {'public': 28, 'dropped (interstate/ramp/private/alley)': 2, 'lot-road hints': 0}; recall 4/8
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3826 Mullins Wildlife Management Area: done; 5 candidate(s); 2 kept out; photo cells 4; points looked at {'entry': 10, 'road': 33, 'hint': 0}; roads {'public': 17, 'dropped (interstate/ramp/private/alley)': 3, 'lot-road hints': 0}; recall 0/2
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3827 Obion Creek Wildlife Management Area: time ran out after 0 of 50 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
 
 ## Web manners
 
