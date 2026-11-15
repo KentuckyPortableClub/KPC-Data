@@ -754,22 +754,23 @@
    "checked": 584,
    "counts": {
     "camps": 584,
-    "needs_browser": 0,
+    "kept_after_failed_read": 6,
+    "needs_browser": 242,
     "needs_key": 5,
     "no_page": 1,
     "not_official": 0,
-    "ok": 95,
-    "other": 428,
-    "resting": 0,
-    "robots": 55,
-    "with_booking": 572,
+    "ok": 93,
+    "other": 184,
+    "resting": 1,
+    "robots": 58,
+    "with_booking": 569,
     "with_elevation": 0,
     "with_facts": 516,
-    "with_sites": 37
+    "with_sites": 35
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-08"
+   "updated": "2026-11-15"
   },
   "US-OH": {
    "camps": 96,
@@ -1157,7 +1158,7 @@
   "US-NJ": "FCC listAsOfDates: robots.txt says no",
   "US-NM": "FCC listAsOfDates: robots.txt says no",
   "US-NV": "FCC listAsOfDates: robots.txt says no",
-  "US-NY": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-NY": "FCC listAsOfDates: robots.txt says no",
   "US-OH": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-OK": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-OR": "FCC listAsOfDates: robots.txt says no",
@@ -1478,9 +1479,9 @@
     "carriers": null,
     "files": [],
     "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "status": "FCC listAsOfDates: robots.txt says no"
    },
-   "read": "2026-11-08"
+   "read": "2026-11-15"
   },
   "US-OH": {
    "cell": {
@@ -2577,11 +2578,11 @@
  },
  "last": {
   "areas": [
-   "US-NC"
+   "US-NY"
   ],
   "fcc_token": true,
   "manners": {
-   "dropped_queued": 146,
+   "dropped_queued": 592,
    "errors": 0,
    "for_person_urls": [
     [
@@ -2591,29 +2592,34 @@
     [
      "https://broadbandmap.fcc.gov/robots.txt",
      "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from broadbandmap.fcc.gov"
+    ],
+    [
+     "https://www.dec.ny.gov/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.dec.ny.gov this run"
     ]
    ],
    "host_rule": 0,
-   "requests": 125,
-   "rested": 6,
-   "robots": 2,
+   "requests": 1168,
+   "rested": 1,
+   "robots": 58,
+   "robots_unreadable": 1,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 4,
-   "camps": 147,
+   "browser": 183,
+   "camps": 585,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 2,
-   "needs_key": 68,
+   "needs_browser": 424,
+   "needs_key": 6,
    "no_page": 1,
    "not_official": 0,
-   "ok": 74,
-   "pages_read": 114,
-   "resting": 6,
+   "ok": 513,
+   "pages_read": 977,
+   "resting": 1,
    "ridb_calls": 0,
-   "robots": 0,
+   "robots": 55,
    "skipped_fresh": 0
   },
   "when": "2026-11-15"

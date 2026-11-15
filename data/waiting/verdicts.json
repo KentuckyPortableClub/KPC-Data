@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-15T10:45Z",
+ "checked": "2026-11-15T11:12Z",
  "switched_on": false,
  "results": [
   {
@@ -328,13 +328,11 @@
   {
    "path": "data/campinfo/US-NY.json",
    "kind": "campinfo",
-   "why": [
-    "F-I3 the same site count on 4 camps of one agency (state: 56): copied from a shared page?"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/campinfo/US-OH.json",
@@ -854,11 +852,9 @@
   {
    "path": "data/docs/US-MD.json",
    "kind": "docs",
-   "why": [
-    "F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/pisc/planyourvisit/maps.htm"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-ME.json",

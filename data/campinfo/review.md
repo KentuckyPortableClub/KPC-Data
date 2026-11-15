@@ -24,7 +24,7 @@ Updated 2026-11-15. Every fact in <area>.json carries its source url, read date 
 | US-ND | 92 | 12 | 17 | 0 | 0 | 0 | 0 | 6 | 57 | 11 | 69 | 0 |
 | US-SD | 126 | 36 | 29 | 0 | 0 | 0 | 0 | 0 | 61 | 30 | 60 | 0 |
 | US-PA | 161 | 37 | 45 | 1 | 0 | 1 | 0 | 0 | 77 | 1 | 115 | 0 |
-| US-NY | 584 | 95 | 5 | 0 | 55 | 0 | 1 | 0 | 428 | 37 | 572 | 0 |
+| US-NY | 584 | 93 | 5 | 242 | 58 | 1 | 1 | 0 | 184 | 35 | 569 | 0 |
 | US-NJ | 23 | 0 | 3 | 2 | 0 | 15 | 0 | 0 | 3 | 0 | 4 | 0 |
 | US-CT | 32 | 1 | 2 | 0 | 0 | 0 | 0 | 29 | 0 | 1 | 3 | 0 |
 | US-RI | 5 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 2 | 4 | 0 |
@@ -65,7 +65,7 @@ Updated 2026-11-15. Every fact in <area>.json carries its source url, read date 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
 - outdoornebraska.gov: 187 campgrounds · host resting
-- www.fs.usda.gov: 121 campgrounds · host resting
+- www.fs.usda.gov: 122 campgrounds · host resting
 - dnr.alaska.gov: 113 campgrounds · robots.txt says no
 - cpw.state.co.us: 98 campgrounds · host resting
 - reservemn.usedirect.com: 94 campgrounds · robots.txt says no
@@ -89,6 +89,7 @@ Updated 2026-11-15. Every fact in <area>.json carries its source url, read date 
 - www.reservecalifornia.com: 5 campgrounds · robots.txt says no
 - apps.web.maine.gov: 4 campgrounds · host resting (robots.txt could not be read: next run)
 - getoutside.idaho.gov: 4 campgrounds · host resting (robots.txt could not be read: next run)
+- www.dec.ny.gov: 3 campgrounds · host resting (robots.txt could not be read: next run)
 - www.maine.gov: 3 campgrounds · host resting (robots.txt could not be read: next run)
 - tpwd.texas.gov: 3 campgrounds · robots.txt says no
 - reserve.mdwfp.com: 2 campgrounds · robots.txt says no
@@ -99,6 +100,7 @@ Updated 2026-11-15. Every fact in <area>.json carries its source url, read date 
 
 ## Needs a browser pass (the page opened but its text holds no campground facts: filled by script, most likely)
 
+- dec.ny.gov: 240 campgrounds
 - itd.idaho.gov: 30 campgrounds
 - reservations.wvstateparks.com: 26 campgrounds
 - southcarolinaparks.com: 20 campgrounds
@@ -106,6 +108,7 @@ Updated 2026-11-15. Every fact in <area>.json carries its source url, read date 
 - wildlife.utah.gov: 7 campgrounds
 - www.recreation.gov: 6 campgrounds
 - gastateparks.org: 3 campgrounds
+- www.nps.gov: 3 campgrounds
 - wvdnr.gov: 2 campgrounds
 - files.dfm.idaho.gov: 2 campgrounds
 - parks.ky.gov: 1 campgrounds
@@ -114,7 +117,6 @@ Updated 2026-11-15. Every fact in <area>.json carries its source url, read date 
 - dnr.wisconsin.gov: 1 campgrounds
 - tpwd.texas.gov: 1 campgrounds
 - wgfapps.wyo.gov: 1 campgrounds
-- www.nps.gov: 1 campgrounds
 - parks.nv.gov: 1 campgrounds
 
 ## Kentucky answer-key check (R5: the bot vs kpc-campgrounds.json, hand-checked)
@@ -1888,7 +1890,7 @@ Updated 2026-11-15. Every fact in <area>.json carries its source url, read date 
 
 ## US-NY: 12 random samples (records with facts; seed = the date)
 
-- **Lesser Wilderness State Forest** (intake-US-5391, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
+- **Lesser Wilderness State Forest** (intake-US-5391, agency (outside research camping-us-oct31), status ok, no campground facts in the page text: needs browser?, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
   - booking.how = "online: dec.ny.gov" · “link “Camping Reservations””
   - booking.url = "https://dec.ny.gov/things-to-do/camping/reservations" · “link “Camping Reservations” -> https://dec.ny.gov/things-to-do/camping/reservations”
   - drinking_water = true · “ollect and bury droppings away from water, trails and camp sites. Keep your pet away from drinking water sources. Observe and enjoy wildlife”
@@ -1906,7 +1908,7 @@ Updated 2026-11-15. Every fact in <area>.json carries its source url, read date 
   - reservable = false · “k State Forest Ranger responsible for the area. Lean-tos are available in many areas on a first come first served basis. Lean-tos cannot be ”
   - restrooms = "vault" · “plants, rocks, fossils or artifacts from state land without a permit is illegal. Use pit privies provided near popular camping areas and tra”
   - rules.fires = "firewood into New York unless it has been heat treated to k · “ls. New York State Firewood Regulation There is a regulation that prohibits the import of firewood into New York unless it has been heat tre”
-- **Yatesville Falls State Forest** (intake-US-5381, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
+- **Yatesville Falls State Forest** (intake-US-5381, agency (outside research camping-us-oct31), status ok, no campground facts in the page text: needs browser?, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
   - booking.how = "online: dec.ny.gov" · “link “Camping Reservations””
   - booking.url = "https://dec.ny.gov/things-to-do/camping/reservations" · “link “Camping Reservations” -> https://dec.ny.gov/things-to-do/camping/reservations”
   - drinking_water = true · “ollect and bury droppings away from water, trails and camp sites. Keep your pet away from drinking water sources. Observe and enjoy wildlife”
@@ -1915,7 +1917,7 @@ Updated 2026-11-15. Every fact in <area>.json carries its source url, read date 
   - reservable = false · “k State Forest Ranger responsible for the area. Lean-tos are available in many areas on a first come first served basis. Lean-tos cannot be ”
   - restrooms = "vault" · “plants, rocks, fossils or artifacts from state land without a permit is illegal. Use pit privies provided near popular camping areas and tra”
   - rules.fires = "firewood into New York unless it has been heat treated to k · “ls. New York State Firewood Regulation There is a regulation that prohibits the import of firewood into New York unless it has been heat tre”
-- **Mariposa Finger Lakes Lean-To** (intake-US-5408, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
+- **Mariposa Finger Lakes Lean-To** (intake-US-5408, agency (outside research camping-us-oct31), status ok, no campground facts in the page text: needs browser?, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
   - booking.how = "online: dec.ny.gov" · “link “Camping Reservations””
   - booking.url = "https://dec.ny.gov/things-to-do/camping/reservations" · “link “Camping Reservations” -> https://dec.ny.gov/things-to-do/camping/reservations”
   - drinking_water = true · “ollect and bury droppings away from water, trails and camp sites. Keep your pet away from drinking water sources. Observe and enjoy wildlife”
@@ -1954,7 +1956,7 @@ Updated 2026-11-15. Every fact in <area>.json carries its source url, read date 
   - reservable = false · “k State Forest Ranger responsible for the area. Lean-tos are available in many areas on a first come first served basis. Lean-tos cannot be ”
   - restrooms = "vault" · “plants, rocks, fossils or artifacts from state land without a permit is illegal. Use pit privies provided near popular camping areas and tra”
   - rules.fires = "firewood into New York unless it has been heat treated to k · “ls. New York State Firewood Regulation There is a regulation that prohibits the import of firewood into New York unless it has been heat tre”
-- **Panama State Forest** (intake-US-5235, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
+- **Panama State Forest** (intake-US-5235, agency (outside research camping-us-oct31), status ok, no campground facts in the page text: needs browser?, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
   - booking.how = "online: dec.ny.gov" · “link “Camping Reservations””
   - booking.url = "https://dec.ny.gov/things-to-do/camping/reservations" · “link “Camping Reservations” -> https://dec.ny.gov/things-to-do/camping/reservations”
   - drinking_water = true · “ollect and bury droppings away from water, trails and camp sites. Keep your pet away from drinking water sources. Observe and enjoy wildlife”
@@ -1990,7 +1992,7 @@ Updated 2026-11-15. Every fact in <area>.json carries its source url, read date 
   - reservable = false · “k State Forest Ranger responsible for the area. Lean-tos are available in many areas on a first come first served basis. Lean-tos cannot be ”
   - restrooms = "vault" · “plants, rocks, fossils or artifacts from state land without a permit is illegal. Use pit privies provided near popular camping areas and tra”
   - rules.fires = "firewood into New York unless it has been heat treated to k · “ls. New York State Firewood Regulation There is a regulation that prohibits the import of firewood into New York unless it has been heat tre”
-- **Mud Pond Campsite** (intake-US-5333, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
+- **Mud Pond Campsite** (intake-US-5333, agency (outside research camping-us-oct31), status ok, no campground facts in the page text: needs browser?, 8 facts) · [dec.ny.gov](https://dec.ny.gov/things-to-do/camping/state-land-rules)
   - booking.how = "online: dec.ny.gov" · “link “Camping Reservations””
   - booking.url = "https://dec.ny.gov/things-to-do/camping/reservations" · “link “Camping Reservations” -> https://dec.ny.gov/things-to-do/camping/reservations”
   - drinking_water = true · “ollect and bury droppings away from water, trails and camp sites. Keep your pet away from drinking water sources. Observe and enjoy wildlife”
