@@ -43,7 +43,7 @@ Updated 2026-11-15. Every fact in <area>.json carries its source url, read date 
 | US-NE | 232 | 3 | 11 | 2 | 0 | 185 | 6 | 23 | 2 | 0 | 74 | 0 |
 | US-CO | 653 | 183 | 337 | 15 | 0 | 110 | 0 | 0 | 8 | 2 | 316 | 0 |
 | US-WY | 301 | 5 | 162 | 3 | 0 | 0 | 79 | 0 | 52 | 0 | 41 | 0 |
-| US-ID | 450 | 27 | 311 | 33 | 4 | 0 | 0 | 35 | 40 | 8 | 100 | 0 |
+| US-ID | 450 | 27 | 311 | 33 | 4 | 16 | 0 | 35 | 24 | 8 | 100 | 0 |
 | US-MT | 389 | 30 | 311 | 0 | 0 | 4 | 0 | 0 | 44 | 0 | 78 | 0 |
 | US-NV | 87 | 23 | 34 | 1 | 0 | 4 | 0 | 7 | 18 | 11 | 46 | 0 |
 | US-AZ | 198 | 1 | 168 | 0 | 16 | 7 | 0 | 2 | 4 | 0 | 28 | 0 |
@@ -65,8 +65,8 @@ Updated 2026-11-15. Every fact in <area>.json carries its source url, read date 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
 - outdoornebraska.gov: 187 campgrounds · host resting
+- www.fs.usda.gov: 115 campgrounds · host resting
 - dnr.alaska.gov: 113 campgrounds · robots.txt says no
-- www.fs.usda.gov: 99 campgrounds · host resting
 - cpw.state.co.us: 98 campgrounds · host resting
 - reservemn.usedirect.com: 94 campgrounds · robots.txt says no
 - www.ksoutdoors.gov: 63 campgrounds · robots.txt says no
