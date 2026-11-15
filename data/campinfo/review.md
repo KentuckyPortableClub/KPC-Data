@@ -22,7 +22,7 @@ Updated 2026-11-15. Every fact in <area>.json carries its source url, read date 
 | US-MN | 227 | 34 | 45 | 0 | 94 | 2 | 50 | 0 | 2 | 0 | 132 | 0 |
 | US-IA | 222 | 27 | 32 | 0 | 0 | 0 | 93 | 0 | 70 | 0 | 97 | 0 |
 | US-ND | 92 | 12 | 17 | 0 | 0 | 0 | 0 | 6 | 57 | 11 | 69 | 0 |
-| US-SD | 126 | 36 | 29 | 0 | 0 | 0 | 0 | 0 | 61 | 30 | 60 | 0 |
+| US-SD | 126 | 36 | 29 | 4 | 0 | 51 | 0 | 0 | 6 | 30 | 45 | 0 |
 | US-PA | 161 | 37 | 45 | 1 | 0 | 1 | 0 | 0 | 77 | 1 | 115 | 0 |
 | US-NY | 584 | 93 | 5 | 242 | 58 | 1 | 1 | 0 | 184 | 35 | 569 | 0 |
 | US-NJ | 23 | 0 | 3 | 2 | 0 | 15 | 0 | 0 | 3 | 0 | 4 | 0 |
@@ -65,7 +65,7 @@ Updated 2026-11-15. Every fact in <area>.json carries its source url, read date 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
 - outdoornebraska.gov: 187 campgrounds · host resting
-- www.fs.usda.gov: 122 campgrounds · host resting
+- www.fs.usda.gov: 124 campgrounds · host resting
 - dnr.alaska.gov: 113 campgrounds · robots.txt says no
 - cpw.state.co.us: 98 campgrounds · host resting
 - reservemn.usedirect.com: 94 campgrounds · robots.txt says no
@@ -73,6 +73,7 @@ Updated 2026-11-15. Every fact in <area>.json carries its source url, read date 
 - dnr.wisconsin.gov: 58 campgrounds · host resting
 - reserve.floridastateparks.org: 55 campgrounds · robots.txt says no
 - dec.ny.gov: 55 campgrounds · robots.txt says no
+- gfp.sd.gov: 49 campgrounds · host resting
 - www.wlf.louisiana.gov: 31 campgrounds · host resting (robots.txt could not be read: next run)
 - parks.ky.gov: 29 campgrounds · host resting
 - reserve.tnstateparks.com: 25 campgrounds · host resting (robots.txt could not be read: next run)
@@ -107,6 +108,7 @@ Updated 2026-11-15. Every fact in <area>.json carries its source url, read date 
 - cpw.state.co.us: 15 campgrounds
 - wildlife.utah.gov: 7 campgrounds
 - www.recreation.gov: 6 campgrounds
+- gfp.sd.gov: 4 campgrounds
 - gastateparks.org: 3 campgrounds
 - www.nps.gov: 3 campgrounds
 - wvdnr.gov: 2 campgrounds
