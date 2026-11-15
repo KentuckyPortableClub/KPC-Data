@@ -16,7 +16,7 @@ Updated 2026-11-15. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-MS | 155 | 99 | 6 | **2** | 12 | 69 | 0 | 3 | 0 | 11 |
 | US-IN | 229 | 217 | 106 | **33** | 32 | 41 | 4 | 17 | 0 | 9 |
 | US-IL | 219 | 211 | 68 | **42** | 56 | 36 | 8 | 15 | 0 | 6 |
-| US-MO | 561 | 554 | 13 | **5** | 8 | 512 | 16 | 2 | 0 | 39 |
+| US-MO | 561 | 554 | 16 | **2** | 8 | 512 | 16 | 2 | 0 | 39 |
 | US-WI | 348 | 333 | 128 | **71** | 38 | 96 | 0 | 17 | 0 | 10 |
 | US-MN | 319 | 295 | 7 | **13** | 12 | 263 | 0 | 8 | 0 | 10 |
 | US-IA | 181 | 177 | 20 | **13** | 16 | 128 | 0 | 7 | 0 | 2 |
@@ -960,14 +960,11 @@ You · [www.fws.gov](https://www.fws.gov/refuge/chassahowitzka/about-us)
 
 ## US-MO
 
-**Agree:** 13 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 13 agree (second agency).
+**Agree:** 16 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 16 agree (second agency).
 
 **Size more than 15% off (our outline vs the agency):**
 
 - US-0376 Great River National Wildlife Refuge: ours 11,765 ac vs agency 2,009 acres (= 2,009 ac; 486% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/great-river/about-us) · “n - 1,710 acres in Pike County, IL Cherry Box Division - 298 acres in Shelby County, MO Fox Island Division - 2,009 acres in Clark County, MO Canton Division - ”
-- US-13160 John Baumgardt Memorial State Conservation Area: ours 304 ac vs agency 503 acres (= 503 ac; 40% off) · cause: ? · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/john-baumgardt-memorial-ca) · “ity John Baumgardt Memorial CA Media Area Map 194.38 KB John Baumgardt Memorial Conservation Area consists of 503 acres in Southern Barry County. The area was d”
-- US-12668 Noser Mill State Conservation Area: ours 137 ac vs agency 205 acres (= 205 ac; 33% off) · cause: ? · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/noser-mill-conservation-area) · “p 776.21 KB Noser Mill Conservation Area is located in Franklin County near the town of Beaufort. The area is 205 acres and mostly forested. The Missouri Depart”
-- US-8309 Dr Harry and Lina Berrier Memorial State Conservation Area: ours 75 ac vs agency 105 Acres (= 105 ac; 29% off) · cause: ? · [mdc.mo.gov](https://mdc.mo.gov/sites/default/files/2024-03/201917map.pdf) · “and Lina Berrier Memorial CA Conser vation Commission of the State of Missouri © Last Updated - 2/21/2024 105 Acres - Cass County Legend Parking Lot MDC Land No”
 - US-10135 Blue Spring Branch State Conservation Area: ours 459 ac vs agency 551 acre (= 551 ac; 17% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/blue-spring-branch-conservation-area) · “lue Spring Branch Conservation Area Media Area Map 1.33 MB Area Brochure 146.35 KB Blue Spring Branch CA is a 551-acre area that consists of open fields and for”
 
 **Unsure (no clean total found; the nearest number is only a guess):**

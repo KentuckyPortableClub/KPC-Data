@@ -2,11 +2,12 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-MO",
  "counts": {
-  "agree": 13,
+  "agree": 16,
   "handover_hints": 2,
   "no_page": 0,
   "no_size": 512,
-  "off": 5,
+  "not_read": 0,
+  "off": 2,
   "ours_unknown": 16,
   "parks": 561,
   "retired": 0,
@@ -1692,7 +1693,7 @@
   "US-10152": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Perry Tower Site State Conservation Area",
    "official": null,
    "ours": {
@@ -9640,21 +9641,18 @@
    "verdict": "no size on page"
   },
   "US-11081": {
-   "checked": "2026-10-29",
+   "checked": "2026-11-15",
    "handover": [],
-   "last_read_failed": "2026-11-08",
    "n": "Alfred Newton Gossett State Conservation Area",
    "official": null,
    "ours": {
-    "acres": 972,
+    "acres": 671,
     "dissolved": {
      "after": 671,
      "before": 1342,
      "copies": 1,
-     "key_union": 972,
      "parts": 0,
      "records": 2,
-     "summed": 671,
      "tracts": 1
     },
     "manager": "",
@@ -9669,7 +9667,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -10374,7 +10372,7 @@
    "verdict": "no size on page"
   },
   "US-11133": {
-   "checked": "2026-10-29",
+   "checked": "2026-11-15",
    "handover": [
     {
      "date_hint": "2018",
@@ -10385,19 +10383,16 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "last_read_failed": "2026-11-08",
    "n": "Lamberson Memorial State Conservation Area",
    "official": null,
    "ours": {
-    "acres": 1131,
+    "acres": 1724,
     "dissolved": {
      "after": 1724,
      "before": 5172,
      "copies": 2,
-     "key_union": 1131,
      "parts": 0,
      "records": 3,
-     "summed": 1724,
      "tracts": 1
     },
     "manager": "",
@@ -10410,7 +10405,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 1
    },
@@ -10434,10 +10429,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -11063,7 +11058,7 @@
   "US-11225": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Blue Slip Tower Site State Conservation Area",
    "official": null,
    "ours": {
@@ -15135,7 +15130,7 @@
   "US-12668": {
    "checked": "2026-10-29",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Noser Mill State Conservation Area",
    "official": {
     "acres": 205.0,
@@ -15148,12 +15143,12 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 137,
+    "acres": 176,
     "dissolved": {
      "after": 211,
      "before": 422,
      "copies": 1,
-     "key_union": 137,
+     "key_union": 176,
      "parts": 0,
      "records": 2,
      "summed": 211,
@@ -15171,7 +15166,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -15192,7 +15187,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 33,
+   "pct": 14,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -15232,7 +15227,7 @@
    ],
    "t": "State Conservation Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-12669": {
    "checked": "2026-11-08",
@@ -15901,7 +15896,7 @@
   "US-13160": {
    "checked": "2026-10-29",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "John Baumgardt Memorial State Conservation Area",
    "official": {
     "acres": 503.0,
@@ -15914,15 +15909,13 @@
     "why": "clean total"
    },
    "ours": {
-    "acres": 304,
+    "acres": 503,
     "dissolved": {
      "after": 503,
      "before": 1509,
      "copies": 2,
-     "key_union": 304,
      "parts": 0,
      "records": 3,
-     "summed": 503,
      "tracts": 1
     },
     "manager": "",
@@ -15958,7 +15951,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 40,
+   "pct": 0,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -15989,21 +15982,21 @@
    ],
    "t": "State Conservation Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-13161": {
    "checked": "2026-10-29",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Roaring River Cove Hardwoods State Conservation Area",
    "official": null,
    "ours": {
-    "acres": 61,
+    "acres": 82,
     "dissolved": {
      "after": 88,
      "before": 264,
      "copies": 2,
-     "key_union": 61,
+     "key_union": 82,
      "parts": 0,
      "records": 3,
      "summed": 88,
@@ -16058,7 +16051,7 @@
   "US-13246": {
    "checked": "2026-10-29",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Carpenter Memorial State Conservation Area",
    "official": {
     "acres": 365.0,
@@ -16081,7 +16074,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -16196,7 +16189,7 @@
   "US-13258": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Possum Woods State Conservation Area",
    "official": null,
    "ours": {
@@ -18704,11 +18697,11 @@
   "US-1787": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Table Rock State Park",
    "official": null,
    "ours": {
-    "acres": 61564,
+    "acres": 57478,
     "manager": "",
     "pieces": [
      [
@@ -19338,14 +19331,14 @@
   "US-3335": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Arrow Rock State Historic Site",
    "official": null,
    "ours": {
-    "acres": 136,
+    "acres": 174,
     "dissolved": {
      "after": 337,
-     "before": 341,
+     "before": 345,
      "copies": 0,
      "families": {
       "padus": 174,
@@ -19353,15 +19346,13 @@
      },
      "family_fold": 163,
      "family_used": "padus",
-     "key_union": 136,
-     "parts": 4,
-     "records": 8,
-     "summed": 174,
+     "parts": 8,
+     "records": 12,
      "tracts": 4
     },
     "family_fold": "layers {'padus': 174, 'sgmoa': 163}: one land in 2 layers, the padus copy used (163 ac of copies not added)",
     "manager": "",
-    "note": "8 joined records = 4 tracts: 0 copies of a tract (same acres, another layer) and 4 fee tracts under a designation record folded; summed 341 -> 337 acres",
+    "note": "12 joined records = 4 tracts: 0 copies of a tract (same acres, another layer) and 8 fee tracts under a designation record folded; summed 345 -> 337 acres",
     "pieces": [
      [
       210053,
@@ -19370,9 +19361,9 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 5
+    "unknown_pieces": 1
    },
    "owner_now": null,
    "pages": [
@@ -19403,14 +19394,14 @@
   "US-3336": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Battle of Athens State Historic Site",
    "official": null,
    "ours": {
-    "acres": 372,
+    "acres": 392,
     "dissolved": {
      "after": 708,
-     "before": 722,
+     "before": 733,
      "copies": 0,
      "families": {
       "padus": 336,
@@ -19418,13 +19409,15 @@
      },
      "family_fold": 336,
      "family_used": "sgmoa",
-     "parts": 8,
-     "records": 15,
-     "tracts": 7
+     "key_union": 392,
+     "parts": 17,
+     "records": 22,
+     "summed": 372,
+     "tracts": 5
     },
     "family_fold": "layers {'sgmoa': 372, 'padus': 336}: one land in 2 layers, the sgmoa copy used (336 ac of copies not added)",
     "manager": "",
-    "note": "15 joined records = 7 tracts: 0 copies of a tract (same acres, another layer) and 8 fee tracts under a designation record folded; summed 722 -> 708 acres",
+    "note": "22 joined records = 5 tracts: 0 copies of a tract (same acres, another layer) and 17 fee tracts under a designation record folded; summed 733 -> 708 acres",
     "pieces": [
      [
       "sgmoa1575",
@@ -19433,33 +19426,21 @@
       "reviewed"
      ],
      [
-      "sgmoa1569",
+      "sgmoa1604",
       "Battle of Athens State Historic Site",
-      1,
+      2,
       "name"
      ],
      [
-      "sgmoa1570",
+      "sgmoa1605",
       "Battle of Athens State Historic Site",
-      1,
-      "name"
-     ],
-     [
-      "sgmoa1572",
-      "Battle of Athens State Historic Site",
-      1,
-      "name"
-     ],
-     [
-      "sgmoa1573",
-      "Battle of Athens State Historic Site",
-      1,
+      2,
       "name"
      ]
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 10
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -19490,16 +19471,16 @@
   "US-3337": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Battle of Carthage State Historic Site",
    "official": null,
    "ours": {
-    "acres": 6,
+    "acres": 5,
     "dissolved": {
      "after": 8,
      "before": 16,
      "copies": 1,
-     "key_union": 6,
+     "key_union": 5,
      "parts": 0,
      "records": 2,
      "summed": 8,
@@ -19548,7 +19529,7 @@
   "US-3338": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Battle of Island Mound State Historic Site",
    "official": null,
    "ours": {
@@ -19709,17 +19690,19 @@
   "US-3341": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Bollinger Mill State Historic Site",
    "official": null,
    "ours": {
-    "acres": 44,
+    "acres": 47,
     "dissolved": {
      "after": 44,
      "before": 88,
      "copies": 1,
+     "key_union": 47,
      "parts": 2,
      "records": 5,
+     "summed": 44,
      "tracts": 2
     },
     "manager": "",
@@ -19771,16 +19754,16 @@
   "US-3342": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Boone's Lick State Historic Site",
    "official": null,
    "ours": {
-    "acres": 46,
+    "acres": 59,
     "dissolved": {
      "after": 54,
      "before": 107,
      "copies": 1,
-     "key_union": 46,
+     "key_union": 59,
      "parts": 0,
      "records": 2,
      "summed": 54,
@@ -19829,19 +19812,17 @@
   "US-3343": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Bothwell Lodge State Historic Site",
    "official": null,
    "ours": {
-    "acres": 185,
+    "acres": 236,
     "dissolved": {
      "after": 236,
      "before": 471,
      "copies": 1,
-     "key_union": 185,
      "parts": 0,
      "records": 2,
-     "summed": 236,
      "tracts": 1
     },
     "manager": "",
@@ -19887,11 +19868,11 @@
   "US-3344": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Clark's Hill/Norton State Historic Site",
    "official": null,
    "ours": {
-    "acres": 26,
+    "acres": 14,
     "family_fold": "layers {'sgmoa': 13, 'padus': 12}: one land in 2 layers, the sgmoa copy used (12 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -19935,11 +19916,11 @@
   "US-3345": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Confederate Memorial State Historic Site",
    "official": null,
    "ours": {
-    "acres": 125,
+    "acres": 141,
     "family_fold": "layers {'sgmoa': 141, 'padus': 134}: one land in 2 layers, the sgmoa copy used (134 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -19983,19 +19964,17 @@
   "US-3346": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Deutschheim State Historic Site",
    "official": null,
    "ours": {
-    "acres": 2,
+    "acres": 1,
     "dissolved": {
      "after": 1,
      "before": 2,
      "copies": 1,
-     "key_union": 2,
      "parts": 0,
      "records": 2,
-     "summed": 1,
      "tracts": 1
     },
     "manager": "",
@@ -20041,16 +20020,16 @@
   "US-3347": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Dillard Mill State Historic Site",
    "official": null,
    "ours": {
-    "acres": 123,
+    "acres": 141,
     "dissolved": {
      "after": 133,
      "before": 264,
      "copies": 1,
-     "key_union": 123,
+     "key_union": 141,
      "parts": 0,
      "records": 2,
      "summed": 133,
@@ -20139,12 +20118,21 @@
   "US-3349": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "First Missouri State Capitol State Historic Site",
    "official": null,
    "ours": {
     "acres": 1,
+    "dissolved": {
+     "after": 1,
+     "before": 2,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2 -> 1 acres",
     "pieces": [
      [
       210093,
@@ -20153,9 +20141,9 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 1
    },
    "owner_now": null,
    "pages": [
@@ -20186,11 +20174,11 @@
   "US-3350": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Gen. John J. Pershing Boyhood Home State Historic Site",
    "official": null,
    "ours": {
-    "acres": 4,
+    "acres": 3,
     "family_fold": "layers {'sgmoa': 5, 'padus': 2}: one land in 2 layers, the sgmoa copy used (2 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -20234,7 +20222,7 @@
   "US-3351": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Gov. Daniel Dunklin's Grave State Historic Site",
    "official": null,
    "ours": {
@@ -20282,30 +20270,23 @@
   "US-3352": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Hunter-Dawson State Historic Site",
    "official": null,
    "ours": {
-    "acres": 11,
+    "acres": 12,
     "dissolved": {
-     "after": 21,
-     "before": 37,
+     "after": 19,
+     "before": 38,
      "copies": 1,
-     "families": {
-      "padus": 19,
-      "sgmoa": 2
-     },
-     "family_fold": 2,
-     "family_used": "padus",
-     "key_union": 11,
-     "parts": 0,
-     "records": 5,
+     "key_union": 12,
+     "parts": 3,
+     "records": 6,
      "summed": 19,
-     "tracts": 4
+     "tracts": 2
     },
-    "family_fold": "layers {'padus': 19, 'sgmoa': 2}: one land in 2 layers, the padus copy used (2 ac of copies not added)",
     "manager": "",
-    "note": "5 joined records = 4 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 37 -> 21 acres",
+    "note": "6 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 3 fee tracts under a designation record folded; summed 38 -> 19 acres",
     "pieces": [
      [
       210075,
@@ -20322,7 +20303,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 3
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -20353,11 +20334,11 @@
   "US-3353": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Iliniwek Village State Historic Site",
    "official": null,
    "ours": {
-    "acres": 65,
+    "acres": 126,
     "family_fold": "layers {'padus': 126, 'sgmoa': 121}: one land in 2 layers, the padus copy used (121 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -20401,14 +20382,14 @@
   "US-3354": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Jewell Cemetery State Historic Site",
    "official": null,
    "ours": {
     "acres": 0,
     "manager": "",
     "pieces": [],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -20441,11 +20422,11 @@
   "US-3355": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Locust Creek Covered Bridge State Historic Site",
    "official": null,
    "ours": {
-    "acres": 54,
+    "acres": 49,
     "family_fold": "layers {'padus': 44, 'sgmoa': 40}: one land in 2 layers, the padus copy used (40 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -20489,7 +20470,7 @@
   "US-3356": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Mark Twain Birthplace State Historic Site",
    "official": null,
    "ours": {
@@ -20545,19 +20526,17 @@
   "US-3357": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Mastodon State Historic Site",
    "official": null,
    "ours": {
-    "acres": 341,
+    "acres": 422,
     "dissolved": {
      "after": 422,
      "before": 842,
      "copies": 1,
-     "key_union": 341,
      "parts": 0,
      "records": 2,
-     "summed": 422,
      "tracts": 1
     },
     "manager": "",
@@ -20570,7 +20549,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -20661,7 +20640,7 @@
   "US-3359": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Missouri State Museum/Jefferson Landing State Historic Site",
    "official": null,
    "ours": {
@@ -20719,11 +20698,11 @@
   "US-3360": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Nathan Boone Homestead State Historic Site",
    "official": null,
    "ours": {
-    "acres": 245,
+    "acres": 401,
     "family_fold": "layers {'sgmoa': 401, 'padus': 392}: one land in 2 layers, the sgmoa copy used (392 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -20767,11 +20746,11 @@
   "US-3361": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Osage Village State Historic Site",
    "official": null,
    "ours": {
-    "acres": 80,
+    "acres": 108,
     "family_fold": "layers {'padus': 108, 'sgmoa': 100}: one land in 2 layers, the padus copy used (100 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -20815,11 +20794,11 @@
   "US-3362": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Sandy Creek Covered Bridge State Historic Site",
    "official": null,
    "ours": {
-    "acres": 217,
+    "acres": 284,
     "family_fold": "layers {'padus': 251, 'sgmoa': 208}: one land in 2 layers, the padus copy used (208 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -20863,11 +20842,11 @@
   "US-3363": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Sappington Cemetery State Historic Site",
    "official": null,
    "ours": {
-    "acres": 4,
+    "acres": 3,
     "dissolved": {
      "after": 3,
      "before": 4,
@@ -20878,7 +20857,7 @@
      },
      "family_fold": 1,
      "family_used": "sgmoa",
-     "key_union": 4,
+     "key_union": 3,
      "parts": 0,
      "records": 3,
      "summed": 2,
@@ -20928,21 +20907,21 @@
   "US-3364": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Scott Joplin House State Historic Site",
    "official": null,
    "ours": {
     "acres": 4,
     "dissolved": {
      "after": 4,
-     "before": 8,
+     "before": 12,
      "copies": 0,
-     "parts": 3,
-     "records": 4,
+     "parts": 7,
+     "records": 8,
      "tracts": 1
     },
     "manager": "",
-    "note": "4 joined records = 1 tracts: 0 copies of a tract (same acres, another layer) and 3 fee tracts under a designation record folded; summed 8 -> 4 acres",
+    "note": "8 joined records = 1 tracts: 0 copies of a tract (same acres, another layer) and 7 fee tracts under a designation record folded; summed 12 -> 4 acres",
     "pieces": [
      [
       210095,
@@ -20953,7 +20932,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 4
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -20984,7 +20963,7 @@
   "US-3365": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Thomas Hart Benton Home and Studio State Historic Site",
    "official": null,
    "ours": {
@@ -21024,11 +21003,11 @@
   "US-3366": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Towosahgy State Historic Site",
    "official": null,
    "ours": {
-    "acres": 46,
+    "acres": 67,
     "family_fold": "layers {'padus': 63, 'sgmoa': 62}: one land in 2 layers, the padus copy used (62 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -21072,12 +21051,23 @@
   "US-3367": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Union Covered Bridge State Historic Site",
    "official": null,
    "ours": {
-    "acres": 3,
+    "acres": 1,
+    "dissolved": {
+     "after": 3,
+     "before": 6,
+     "copies": 1,
+     "key_union": 1,
+     "parts": 0,
+     "records": 2,
+     "summed": 3,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 6 -> 3 acres",
     "pieces": [
      [
       210091,
@@ -21088,7 +21078,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -21119,11 +21109,11 @@
   "US-3368": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Watkins Woolen Mill State Historic Site",
    "official": null,
    "ours": {
-    "acres": 1130,
+    "acres": 1531,
     "family_fold": "layers {'padus': 1480, 'sgmoa': 1531}: one land in 2 layers, the sgmoa copy used (1,480 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -21140,7 +21130,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -21928,23 +21918,21 @@
   "US-4587": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Harry S. Truman Birthplace State Historic Site",
    "official": null,
    "ours": {
-    "acres": 7,
+    "acres": 2,
     "dissolved": {
      "after": 2,
-     "before": 3,
-     "copies": 1,
-     "key_union": 7,
+     "before": 4,
+     "copies": 2,
      "parts": 0,
-     "records": 3,
-     "summed": 2,
+     "records": 4,
      "tracts": 2
     },
     "manager": "",
-    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3 -> 2 acres",
+    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 4 -> 2 acres",
     "pieces": [
      [
       210073,
@@ -21961,7 +21949,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 5
+    "unknown_pieces": 4
    },
    "owner_now": null,
    "pages": [
@@ -23584,11 +23572,11 @@
   "US-5713": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Jay Nixon State Park",
    "official": null,
    "ours": {
-    "acres": 976,
+    "acres": 1237,
     "manager": "",
     "pieces": [
      [
@@ -23596,11 +23584,17 @@
       "Jay Nixon Backcountry",
       1236,
       "reviewed"
+     ],
+     [
+      "sgmoa1627",
+      "Jay Nixon State Park",
+      1,
+      "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -23631,7 +23625,7 @@
   "US-5714": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Shepherd of the Hills State Park",
    "official": null,
    "ours": {
@@ -23645,7 +23639,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -34941,7 +34935,7 @@
   "US-8309": {
    "checked": "2026-10-29",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Dr Harry and Lina Berrier Memorial State Conservation Area",
    "official": {
     "acres": 105.0,
@@ -34954,15 +34948,13 @@
     "why": "a map label (no sentence)"
    },
    "ours": {
-    "acres": 75,
+    "acres": 105,
     "dissolved": {
      "after": 105,
      "before": 315,
      "copies": 2,
-     "key_union": 75,
      "parts": 0,
      "records": 3,
-     "summed": 105,
      "tracts": 1
     },
     "manager": "",
@@ -34998,7 +34990,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 29,
+   "pct": 0,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -35020,7 +35012,7 @@
    ],
    "t": "State Conservation Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-8310": {
    "checked": "2026-11-08",
@@ -35366,11 +35358,11 @@
   "US-8504": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Sugar Creek State Conservation Area",
    "official": null,
    "ours": {
-    "acres": 2262,
+    "acres": 3081,
     "dissolved": {
      "after": 5672,
      "before": 8753,
@@ -35381,10 +35373,8 @@
      },
      "family_fold": 2591,
      "family_used": "sgmoc",
-     "key_union": 2262,
      "parts": 0,
      "records": 3,
-     "summed": 3081,
      "tracts": 2
     },
     "family_fold": "layers {'sgmoc': 3081, 'padus': 2591}: one land in 2 layers, the sgmoc copy used (2,591 ac of copies not added)",
@@ -35400,7 +35390,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -35819,11 +35809,11 @@
   "US-8511": {
    "checked": "2026-10-29",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "White River Balds Natural Area State Conservation Area",
    "official": null,
    "ours": {
-    "acres": 313,
+    "acres": 370,
     "family_fold": "layers {'sgmog': 370, 'padus': 361}: one land in 2 layers, the sgmog copy used (361 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -36030,5 +36020,5 @@
    "verdict": "ours unknown"
   }
  },
- "read": "2026-11-08"
+ "read": "2026-11-15"
 }
