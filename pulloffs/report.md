@@ -1,12 +1,12 @@
 # kpc_pulloffs run report (2026-11-15)
 
-- version 1.0.0; exit code 3; ran 50.9 min; 353 web requests
-- parks in this input (after --areas / --limit): 190; done: 93; left for the next run: 97
-- candidates for chat 11: 2615; kept out (log only, work/log/kept_out.jsonl): 7347
+- version 1.0.0; exit code 3; ran 50.1 min; 243 web requests
+- parks in this input (after --areas / --limit): 190; done: 94; left for the next run: 96
+- candidates for chat 11: 2621; kept out (log only, work/log/kept_out.jsonl): 7392
 
 ## Recall check (acceptance test only, before the duplicate drop)
 
-Official access pins next to a public road (within 30 m) inside the search band: 401; found within 50 m: 89 (22%)
+Official access pins next to a public road (within 30 m) inside the search band: 406; found within 50 m: 89 (22%)
 
 ## Parks
 
@@ -154,7 +154,9 @@ Official access pins next to a public road (within 30 m) inside the search band:
   - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
 - US-3826 Mullins Wildlife Management Area: done; 5 candidate(s); 2 kept out; photo cells 4; points looked at {'entry': 10, 'road': 33, 'hint': 0}; roads {'public': 17, 'dropped (interstate/ramp/private/alley)': 3, 'lot-road hints': 0}; recall 0/2
   - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
-- US-3827 Obion Creek Wildlife Management Area: time ran out after 0 of 50 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
+- US-3827 Obion Creek Wildlife Management Area: done; 6 candidate(s); 45 kept out; photo cells 50; points looked at {'entry': 11, 'road': 166, 'hint': 0}; roads {'public': 19, 'dropped (interstate/ramp/private/alley)': 0, 'lot-road hints': 0}; recall 0/5
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3828 Peabody Wildlife Management Area: time ran out after 141 of 443 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
 
 ## Web manners
 
