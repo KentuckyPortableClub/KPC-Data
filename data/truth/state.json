@@ -98,7 +98,7 @@
    },
    "left": 0,
    "parks": 155,
-   "status": "done",
+   "status": "queued",
    "updated": "2026-11-15"
   },
   "US-AR": {
@@ -259,7 +259,7 @@
    },
    "left": 0,
    "parks": 460,
-   "status": "done",
+   "status": "queued",
    "updated": "2026-11-15"
   },
   "US-GA": {
@@ -280,7 +280,7 @@
    },
    "left": 0,
    "parks": 238,
-   "status": "done",
+   "status": "queued",
    "updated": "2026-11-15"
   },
   "US-HI": {
@@ -366,23 +366,22 @@
   "US-IN": {
    "checked": 229,
    "counts": {
-    "agree": 106,
+    "agree": 85,
     "handover_hints": 17,
     "no_page": 0,
-    "no_size": 41,
-    "not_read": 0,
-    "off": 33,
-    "ours_unknown": 4,
+    "no_size": 35,
+    "off": 54,
+    "ours_unknown": 1,
     "parks": 229,
     "retired": 0,
-    "unsure": 32,
-    "weak": 9,
-    "with_outline": 217
+    "unsure": 34,
+    "weak": 17,
+    "with_outline": 209
    },
    "left": 0,
    "parks": 229,
-   "status": "done",
-   "updated": "2026-11-15"
+   "status": "queued",
+   "updated": "2026-11-08"
   },
   "US-KS": {
    "checked": 145,
@@ -568,23 +567,22 @@
   "US-MS": {
    "checked": 155,
    "counts": {
-    "agree": 6,
-    "handover_hints": 3,
+    "agree": 7,
+    "handover_hints": 4,
     "no_page": 0,
     "no_size": 69,
-    "not_read": 0,
-    "off": 2,
+    "off": 8,
     "ours_unknown": 0,
     "parks": 155,
     "retired": 0,
-    "unsure": 12,
-    "weak": 11,
-    "with_outline": 99
+    "unsure": 6,
+    "weak": 16,
+    "with_outline": 100
    },
    "left": 0,
    "parks": 155,
-   "status": "done",
-   "updated": "2026-11-15"
+   "status": "queued",
+   "updated": "2026-11-08"
   },
   "US-MT": {
    "checked": 254,
@@ -624,7 +622,7 @@
    },
    "left": 0,
    "parks": 253,
-   "status": "done",
+   "status": "queued",
    "updated": "2026-11-15"
   },
   "US-ND": {
@@ -885,7 +883,7 @@
    },
    "left": 0,
    "parks": 167,
-   "status": "done",
+   "status": "queued",
    "updated": "2026-11-15"
   },
   "US-SD": {
@@ -926,7 +924,7 @@
    },
    "left": 0,
    "parks": 277,
-   "status": "done",
+   "status": "queued",
    "updated": "2026-11-15"
   },
   "US-TX": {
@@ -987,7 +985,7 @@
    },
    "left": 0,
    "parks": 184,
-   "status": "done",
+   "status": "queued",
    "updated": "2026-11-15"
   },
   "US-VT": {
@@ -1068,7 +1066,7 @@
    },
    "left": 0,
    "parks": 172,
-   "status": "done",
+   "status": "queued",
    "updated": "2026-11-15"
   },
   "US-WY": {
@@ -1100,38 +1098,31 @@
  },
  "last": {
   "areas": [
-   "US-IN"
+   "US-KY"
   ],
   "manners": {
-   "browser": 7,
-   "dropped_queued": 1,
+   "browser": 1,
    "errors": 0,
-   "for_person_urls": [
-    [
-     "https://arcg.is/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from arcg.is this run"
-    ]
-   ],
-   "host_rule": 2,
-   "requests": 583,
-   "rested": 16,
-   "robots": 1,
-   "robots_unreadable": 1,
+   "for_person_urls": [],
+   "host_rule": 3,
+   "requests": 21,
+   "rested": 0,
+   "robots": 0,
    "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 17,
-   "no_size": 42,
-   "ours_unknown": 4,
-   "pages_read": 490,
-   "parks": 229,
+   "handover_hints": 5,
+   "no_size": 6,
+   "ours_unknown": 0,
+   "pages_read": 6,
+   "parks": 8,
    "retired": 0,
-   "size_agree": 106,
-   "size_off": 33,
-   "size_unsure": 32,
-   "skipped_fresh": 0,
-   "with_outline": 217
+   "size_agree": 0,
+   "size_off": 1,
+   "size_unsure": 1,
+   "skipped_fresh": 185,
+   "with_outline": 8
   },
   "when": "2026-11-15"
  },
@@ -1203,7 +1194,7 @@
   },
   "https://www.in.gov/dnr/news/": {
    "links": 0,
-   "read": "2026-11-15",
+   "read": "2026-11-08",
    "status": "HTTP 404"
   },
   "https://www.ncparks.gov/news": {
