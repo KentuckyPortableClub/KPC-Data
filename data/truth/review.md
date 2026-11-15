@@ -13,7 +13,7 @@ Updated 2026-11-15. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-AL | 155 | 134 | 31 | **10** | 23 | 58 | 6 | 4 | 0 | 5 |
 | US-SC | 167 | 160 | 18 | **14** | 11 | 112 | 2 | 5 | 0 | 4 |
 | US-FL | 460 | 437 | 85 | **34** | 36 | 279 | 2 | 12 | 0 | 8 |
-| US-MS | 155 | 100 | 7 | **8** | 6 | 69 | 0 | 4 | 0 | 16 |
+| US-MS | 155 | 99 | 6 | **2** | 12 | 69 | 0 | 3 | 0 | 11 |
 | US-IN | 229 | 209 | 85 | **54** | 34 | 35 | 1 | 17 | 0 | 17 |
 | US-IL | 219 | 211 | 68 | **42** | 56 | 36 | 8 | 15 | 0 | 6 |
 | US-MO | 561 | 554 | 13 | **5** | 8 | 512 | 16 | 2 | 0 | 39 |
@@ -702,32 +702,31 @@ You · [www.fws.gov](https://www.fws.gov/refuge/chassahowitzka/about-us)
 
 ## US-MS
 
-**Agree:** 7 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 7 agree (second agency).
+**Agree:** 6 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 6 agree (second agency).
 
 **Size more than 15% off (our outline vs the agency):**
 
-- US-4495 Delta National Forest: ours 61,472 ac vs agency 1.2 million acres (= 1,200,000 ac; 95% off) · cause: agency bigger: our outline may miss a tract · [www.fs.usda.gov](https://www.fs.usda.gov/detail/mississippi/about-forest/districts/?cid=stelprdb5209587) · “l Plain to the upland hardwoods in the northern part of the state, the National Forests in Mississippi covers 1.2 million acres of diverse natural resources and”
-- US-4496 Holly Springs National Forest: ours 156,210 ac vs agency 1.2 million acres (= 1,200,000 ac; 87% off) · cause: agency bigger: our outline may miss a tract · [www.fs.usda.gov](https://www.fs.usda.gov/detail/mississippi/about-forest/districts/?cid=stelprdb5209589) · “l Plain to the upland hardwoods in the northern part of the state, the National Forests in Mississippi covers 1.2 million acres of diverse natural resources and”
-- US-4493 Bienville National Forest: ours 180,227 ac vs agency 1.2 million acres (= 1,200,000 ac; 85% off) · cause: agency bigger: our outline may miss a tract · [www.fs.usda.gov](https://www.fs.usda.gov/detail/mississippi/about-forest/districts/?cid=stelprdb5209585) · “l Plain to the upland hardwoods in the northern part of the state, the National Forests in Mississippi covers 1.2 million acres of diverse natural resources and”
-- US-4497 Homochitto National Forest: ours 191,846 ac vs agency 1.2 million acres (= 1,200,000 ac; 84% off) · cause: agency bigger: our outline may miss a tract · [www.fs.usda.gov](https://www.fs.usda.gov/detail/mississippi/about-forest/districts/?cid=stelprdb5209590) · “l Plain to the upland hardwoods in the northern part of the state, the National Forests in Mississippi covers 1.2 million acres of diverse natural resources and”
-- US-4494 De Soto National Forest: ours 532,454 ac vs agency 1.2 million acres (= 1,200,000 ac; 56% off) · cause: agency bigger: our outline may miss a tract · [www.fs.usda.gov](https://www.fs.usda.gov/detail/mississippi/about-forest/districts/?cid=stelprdb5209588) · “l Plain to the upland hardwoods in the northern part of the state, the National Forests in Mississippi covers 1.2 million acres of diverse natural resources and”
-- US-0391 Panther Swamp National Wildlife Refuge: ours 30,790 ac vs agency 40,000 acres (= 40,000 ac; 23% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/panther_swamp/) · “and Cotton's access for some amazing sites to find a variety of game species, but don't stop there! With over 40,000 acres of land, there are plenty of areas fo”
-- US-0388 Mississippi Sandhill Crane National Wildlife Refuge: ours 15,663 ac vs agency 20,000 acres (= 20,000 ac; 22% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/mississippi-sandhill-crane/about-us) · “s the description of 'the rarest bird in North America'. Although the refuge and I-10 were both created, only 20,000 acres of the original crane habitat exist a”
 - US-9847 Clark Creek Natural Area State Park: ours 572 ac vs agency 700 acres (= 700 ac; 18% off) · cause: agency bigger: our outline may miss a tract · [www.mdwfp.com](https://www.mdwfp.com/parks-destinations/park/clark-creek-state-park) · “hwestern Mississippi, is one of the Magnolia State's most beautiful outdoor treasures. Comprised of more than 700 acres, it is highlighted by some 50 waterfalls”
+- US-0391 Panther Swamp National Wildlife Refuge: ours 33,156 ac vs agency 40,000 acres (= 40,000 ac; 17% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/panther_swamp/) · “and Cotton's access for some amazing sites to find a variety of game species, but don't stop there! With over 40,000 acres of land, there are plenty of areas fo”
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
+- US-0384 Grand Bay National Wildlife Refuge: ours 13,121 ac · cause: whole park compared (POTA lists it in 2 states: {'US-AL': 2727, 'US-MS': 10394})
 - US-0390 Noxubee National Wildlife Refuge: ours 48,330 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 800 acres, no total words near it) · [www.fws.gov](https://www.fws.gov/refuge/sam-d-hamilton-noxubee/about-us)
-- US-0392 St. Catherine Creek National Wildlife Refuge: ours 26,398 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-0642 Natchez Trace Parkway National Parkway: ours 35,645 ac · cause: whole park compared (POTA lists it in 2 states: {'US-AL': 4118, 'US-MS': 31527})
+- US-0392 St. Catherine Creek National Wildlife Refuge: ours 24,933 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0642 Natchez Trace Parkway National Parkway: ours 98,699 ac · cause: whole park compared (POTA lists it in 2 states: {'US-AL': 4118, 'US-MS': 31527})
 - US-12204 Calling Panther State Fishing Lake: ours 1,500 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-12639 Pelahatchie Shore State Recreation Area: ours 60 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 250 acres, no total words near it) · [www.therez.ms.gov](https://www.therez.ms.gov/parks-recreation/hunting/draw-hunt-rules)
+- US-4493 Bienville National Forest: ours 180,227 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-4494 De Soto National Forest: ours 532,454 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-4495 Delta National Forest: ours 61,472 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-4496 Holly Springs National Forest: ours 156,210 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-4497 Homochitto National Forest: ours 191,846 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-4498 Tombigbee National Forest: ours 67,449 ac · cause: no total-looking sentence: numbers found were parts or other units
 
 **Handover / closure hints (a person decides; nothing applied):**
 
 - US-0385 Hillside National Wildlife Refuge · transfer: “National Wildlife Refuge supports hundreds of wildlife species. Before what is now refuge land was transferred to the U.S. Fish and Wildlife Service, it was used by the U.S. Army Corps of Engineers to” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/hillside/about-us)
-- US-0388 Mississippi Sandhill Crane National Wildlife Refuge · managed by: “ational wildlife refuge A national wildlife refuge is typically a contiguous area of land and water managed by the U.S. Fish and Wildlife Service for the conservation and, where appropriate, restorati” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/mississippi-sandhill-crane/about-us)
 - US-0390 Noxubee National Wildlife Refuge · renamed: “located in three counties of Mississippi, Noxubee, Oktibbeha, and Winston. In 2012, the refuge was renamed Sam D. Hamilton Noxubee National Wildlife Refuge in honor of Sam D. Hamilton, a former direct” · [www.fws.gov](https://www.fws.gov/refuge/noxubee/)
 - US-0390 Noxubee National Wildlife Refuge · renamed: “s created from lands obtained through the 1930s Resettlement Administration. In 2012 the refuge was renamed Sam D. Hamilton Noxubee National Wildlife Refuge in honor of Sam D. Hamilton, a former direc” · [www.fws.gov](https://www.fws.gov/refuge/sam-d-hamilton-noxubee/about-us)
 - US-11880 Winterville Mounds State Historical Park · transfer: “g for its future, the Greenville Garden Club raised funding to purchase the 42—acre tract, and then donated the land to the State Park commission (now Wildlife, Fisheries, and Parks) in 1960. An origi” · owner now: State Park · [www.mdah.ms.gov](https://www.mdah.ms.gov/explore-mississippi/winterville-mounds)
