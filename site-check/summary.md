@@ -1,35 +1,100 @@
-# KPC site check — 2026-11-08
+# KPC site check — 2026-11-15
 
 Site: https://kentuckyportableclub.github.io/KPC-Links/  
-Checks: 80 (40 parks), 10 with problems; run time 12.7 min.
+Checks: 80 (40 parks), 80 with problems; run time 11.7 min.
 
 ## Problems by kind
 
-- card does not fit the phone: 8
-- console error(s): 2
+- steps failed: 80
+- label … but the key says …: 60
+- no outline drawn: 17
 
 ## Failures first
 
 | ref | tool | device | problem | label seen | screenshot |
 |---|---|---|---|---|---|
-| US-0434 | us_planner | phone | card does not fit the phone | Official outline | screens/US-0434_us_planner_phone.jpg |
-| US-10139 | us_planner | desktop | 4 console error(s) | Official Kentucky boundary | screens/US-10139_us_planner_desktop.jpg |
-| US-10139 | us_planner | phone | 4 console error(s) | Official Kentucky boundary | screens/US-10139_us_planner_phone.jpg |
-| US-1043 | us_planner | phone | card does not fit the phone | Official outline | screens/US-1043_us_planner_phone.jpg |
-| US-10709 | us_planner | phone | card does not fit the phone | Approximate outline | screens/US-10709_us_planner_phone.jpg |
-| US-10754 | us_planner | phone | card does not fit the phone | Approximate outline | screens/US-10754_us_planner_phone.jpg |
-| US-10838 | us_planner | phone | card does not fit the phone | Pin only (no official outline yet) | screens/US-10838_us_planner_phone.jpg |
-| US-12589 | us_planner | phone | card does not fit the phone | Official outline | screens/US-12589_us_planner_phone.jpg |
-| US-6123 | us_planner | phone | card does not fit the phone | Official outline | screens/US-6123_us_planner_phone.jpg |
-| US-6218 | us_planner | phone | card does not fit the phone | Official outline. POTA’s pin may be off for this park | screens/US-6218_us_planner_phone.jpg |
+| US-0064 | us_planner | desktop | steps failed | — | screens/US-0064_us_planner_desktop.jpg |
+| US-0064 | us_planner | phone | steps failed | — | screens/US-0064_us_planner_phone.jpg |
+| US-0450 | us_planner | desktop | steps failed | — | screens/US-0450_us_planner_desktop.jpg |
+| US-0450 | us_planner | phone | steps failed | — | screens/US-0450_us_planner_phone.jpg |
+| US-0763 | us_planner | desktop | steps failed; label 'none' but the key says 'official' | — | screens/US-0763_us_planner_desktop.jpg |
+| US-0763 | us_planner | phone | steps failed; no outline drawn; label 'none' but the key says 'official' | — | screens/US-0763_us_planner_phone.jpg |
+| US-10016 | us_planner | desktop | steps failed; label 'none' but the key says 'approximate' | — | screens/US-10016_us_planner_desktop.jpg |
+| US-10016 | us_planner | phone | steps failed; no outline drawn; label 'none' but the key says 'approximate' | — | screens/US-10016_us_planner_phone.jpg |
+| US-10017 | us_planner | desktop | steps failed; label 'none' but the key says 'approximate' | — | screens/US-10017_us_planner_desktop.jpg |
+| US-10017 | us_planner | phone | steps failed; label 'none' but the key says 'approximate' | — | screens/US-10017_us_planner_phone.jpg |
+| US-10240 | us_planner | desktop | steps failed; label 'none' but the key says 'approximate' | — | screens/US-10240_us_planner_desktop.jpg |
+| US-10240 | us_planner | phone | steps failed; label 'none' but the key says 'approximate' | — | screens/US-10240_us_planner_phone.jpg |
+| US-10472 | us_planner | desktop | steps failed; label 'none' but the key says 'approximate' | — | screens/US-10472_us_planner_desktop.jpg |
+| US-10472 | us_planner | phone | steps failed; label 'none' but the key says 'approximate' | — | screens/US-10472_us_planner_phone.jpg |
+| US-10512 | us_planner | desktop | steps failed; no outline drawn; label 'none' but the key says 'official' | — | screens/US-10512_us_planner_desktop.jpg |
+| US-10512 | us_planner | phone | steps failed; no outline drawn; label 'none' but the key says 'official' | — | screens/US-10512_us_planner_phone.jpg |
+| US-10881 | us_planner | desktop | steps failed; label 'none' but the key says 'approximate' | — | screens/US-10881_us_planner_desktop.jpg |
+| US-10881 | us_planner | phone | steps failed; label 'none' but the key says 'approximate' | — | screens/US-10881_us_planner_phone.jpg |
+| US-10979 | us_planner | desktop | steps failed; label 'none' but the key says 'pin' | — | screens/US-10979_us_planner_desktop.jpg |
+| US-10979 | us_planner | phone | steps failed; label 'none' but the key says 'pin' | — | screens/US-10979_us_planner_phone.jpg |
+| US-11122 | us_planner | desktop | steps failed | — | screens/US-11122_us_planner_desktop.jpg |
+| US-11122 | us_planner | phone | steps failed | — | screens/US-11122_us_planner_phone.jpg |
+| US-1126 | us_planner | desktop | steps failed | — | screens/US-1126_us_planner_desktop.jpg |
+| US-1126 | us_planner | phone | steps failed | — | screens/US-1126_us_planner_phone.jpg |
+| US-11667 | us_planner | desktop | steps failed; label 'none' but the key says 'pin' | — | screens/US-11667_us_planner_desktop.jpg |
+| US-11667 | us_planner | phone | steps failed; label 'none' but the key says 'pin' | — | screens/US-11667_us_planner_phone.jpg |
+| US-12085 | us_planner | desktop | steps failed; label 'none' but the key says 'official' | — | screens/US-12085_us_planner_desktop.jpg |
+| US-12085 | us_planner | phone | steps failed; label 'none' but the key says 'official' | — | screens/US-12085_us_planner_phone.jpg |
+| US-12227 | us_planner | desktop | steps failed; no outline drawn; label 'none' but the key says 'approximate' | — | screens/US-12227_us_planner_desktop.jpg |
+| US-12227 | us_planner | phone | steps failed; label 'none' but the key says 'approximate' | — | screens/US-12227_us_planner_phone.jpg |
+| US-13083 | us_planner | desktop | steps failed; label 'none' but the key says 'pin' | — | screens/US-13083_us_planner_desktop.jpg |
+| US-13083 | us_planner | phone | steps failed; label 'none' but the key says 'pin' | — | screens/US-13083_us_planner_phone.jpg |
+| US-13291 | us_planner | desktop | steps failed; label 'none' but the key says 'pin' | — | screens/US-13291_us_planner_desktop.jpg |
+| US-13291 | us_planner | phone | steps failed; label 'none' but the key says 'pin' | — | screens/US-13291_us_planner_phone.jpg |
+| US-13474 | us_planner | desktop | steps failed; label 'none' but the key says 'pin' | — | screens/US-13474_us_planner_desktop.jpg |
+| US-13474 | us_planner | phone | steps failed; label 'none' but the key says 'pin' | — | screens/US-13474_us_planner_phone.jpg |
+| US-1419 | us_planner | desktop | steps failed; no outline drawn; label 'none' but the key says 'official' | — | screens/US-1419_us_planner_desktop.jpg |
+| US-1419 | us_planner | phone | steps failed; label 'none' but the key says 'official' | — | screens/US-1419_us_planner_phone.jpg |
+| US-2486 | us_planner | desktop | steps failed | — | screens/US-2486_us_planner_desktop.jpg |
+| US-2486 | us_planner | phone | steps failed | — | screens/US-2486_us_planner_phone.jpg |
+| US-2503 | us_planner | desktop | steps failed | — | screens/US-2503_us_planner_desktop.jpg |
+| US-2503 | us_planner | phone | steps failed | — | screens/US-2503_us_planner_phone.jpg |
+| US-2685 | us_planner | desktop | steps failed; label 'none' but the key says 'pin' | — | screens/US-2685_us_planner_desktop.jpg |
+| US-2685 | us_planner | phone | steps failed; label 'none' but the key says 'pin' | — | screens/US-2685_us_planner_phone.jpg |
+| US-2784 | us_planner | desktop | steps failed | — | screens/US-2784_us_planner_desktop.jpg |
+| US-2784 | us_planner | phone | steps failed | — | screens/US-2784_us_planner_phone.jpg |
+| US-3723 | us_planner | desktop | steps failed; no outline drawn; label 'none' but the key says 'approximate' | — | screens/US-3723_us_planner_desktop.jpg |
+| US-3723 | us_planner | phone | steps failed; label 'none' but the key says 'approximate' | — | screens/US-3723_us_planner_phone.jpg |
+| US-3791 | us_planner | desktop | steps failed | — | screens/US-3791_us_planner_desktop.jpg |
+| US-3791 | us_planner | phone | steps failed | — | screens/US-3791_us_planner_phone.jpg |
+| US-4491 | us_planner | desktop | steps failed; no outline drawn; label 'none' but the key says 'official' | — | screens/US-4491_us_planner_desktop.jpg |
+| US-4491 | us_planner | phone | steps failed; no outline drawn; label 'none' but the key says 'official' | — | screens/US-4491_us_planner_phone.jpg |
+| US-5265 | us_planner | desktop | steps failed; label 'none' but the key says 'approximate' | — | screens/US-5265_us_planner_desktop.jpg |
+| US-5265 | us_planner | phone | steps failed; label 'none' but the key says 'approximate' | — | screens/US-5265_us_planner_phone.jpg |
+| US-5830 | us_planner | desktop | steps failed; label 'none' but the key says 'pin' | — | screens/US-5830_us_planner_desktop.jpg |
+| US-5830 | us_planner | phone | steps failed; label 'none' but the key says 'pin' | — | screens/US-5830_us_planner_phone.jpg |
+| US-5870 | us_planner | desktop | steps failed; label 'none' but the key says 'pin' | — | screens/US-5870_us_planner_desktop.jpg |
+| US-5870 | us_planner | phone | steps failed; label 'none' but the key says 'pin' | — | screens/US-5870_us_planner_phone.jpg |
+| US-6164 | us_planner | desktop | steps failed; label 'none' but the key says 'pin' | — | screens/US-6164_us_planner_desktop.jpg |
+| US-6164 | us_planner | phone | steps failed; label 'none' but the key says 'pin' | — | screens/US-6164_us_planner_phone.jpg |
+| US-6538 | us_planner | desktop | steps failed; label 'none' but the key says 'pin' | — | screens/US-6538_us_planner_desktop.jpg |
+| US-6538 | us_planner | phone | steps failed; label 'none' but the key says 'pin' | — | screens/US-6538_us_planner_phone.jpg |
+| US-6657 | us_planner | desktop | steps failed; label 'none' but the key says 'official' | — | screens/US-6657_us_planner_desktop.jpg |
+| US-6657 | us_planner | phone | steps failed; no outline drawn; label 'none' but the key says 'official' | — | screens/US-6657_us_planner_phone.jpg |
+| US-7528 | us_planner | desktop | steps failed | — | screens/US-7528_us_planner_desktop.jpg |
+| US-7528 | us_planner | phone | steps failed | — | screens/US-7528_us_planner_phone.jpg |
+| US-8019 | us_planner | desktop | steps failed; label 'none' but the key says 'official' | — | screens/US-8019_us_planner_desktop.jpg |
+| US-8019 | us_planner | phone | steps failed; no outline drawn; label 'none' but the key says 'official' | — | screens/US-8019_us_planner_phone.jpg |
+| US-8076 | us_planner | desktop | steps failed; no outline drawn; label 'none' but the key says 'official' | — | screens/US-8076_us_planner_desktop.jpg |
+| US-8076 | us_planner | phone | steps failed; no outline drawn; label 'none' but the key says 'official' | — | screens/US-8076_us_planner_phone.jpg |
+| US-8116 | us_planner | desktop | steps failed; no outline drawn; label 'none' but the key says 'official' | — | screens/US-8116_us_planner_desktop.jpg |
+| US-8116 | us_planner | phone | steps failed; no outline drawn; label 'none' but the key says 'official' | — | screens/US-8116_us_planner_phone.jpg |
+| US-8413 | us_planner | desktop | steps failed | — | screens/US-8413_us_planner_desktop.jpg |
+| US-8413 | us_planner | phone | steps failed | — | screens/US-8413_us_planner_phone.jpg |
+| US-8963 | us_planner | desktop | steps failed; no outline drawn; label 'none' but the key says 'official' | — | screens/US-8963_us_planner_desktop.jpg |
+| US-8963 | us_planner | phone | steps failed; label 'none' but the key says 'official' | — | screens/US-8963_us_planner_phone.jpg |
+| US-9168 | us_planner | desktop | steps failed; label 'none' but the key says 'approximate' | — | screens/US-9168_us_planner_desktop.jpg |
+| US-9168 | us_planner | phone | steps failed; label 'none' but the key says 'approximate' | — | screens/US-9168_us_planner_phone.jpg |
+| US-9966 | us_planner | desktop | steps failed; label 'none' but the key says 'approximate' | — | screens/US-9966_us_planner_desktop.jpg |
+| US-9966 | us_planner | phone | steps failed; no outline drawn; label 'none' but the key says 'approximate' | — | screens/US-9966_us_planner_phone.jpg |
 
-## Passed (70)
+## Passed (0)
 
-US-0006 (desktop), US-0006 (phone), US-0238 (desktop), US-0238 (phone), US-0332 (desktop), US-0332 (phone), US-0434 (desktop), US-0437 (desktop), US-0437 (phone), US-0886 (desktop), US-0886 (phone), US-10010 (desktop), US-10010 (phone), US-10186 (desktop), US-10186 (phone), US-1043 (desktop), US-10614 (desktop), US-10614 (phone), US-10709 (desktop), US-10754 (desktop), US-10838 (desktop), US-10877 (desktop), US-10877 (phone), US-11308 (desktop), US-11308 (phone), US-11655 (desktop), US-11655 (phone), US-11793 (desktop), US-11793 (phone), US-12055 (desktop), US-12055 (phone), US-12064 (desktop), US-12064 (phone), US-12589 (desktop), US-12772 (desktop), US-12772 (phone), US-1449 (desktop), US-1449 (phone), US-1952 (desktop), US-1952 (phone), US-2194 (desktop), US-2194 (phone), US-2436 (desktop), US-2436 (phone), US-2740 (desktop), US-2740 (phone), US-3350 (desktop), US-3350 (phone), US-3724 (desktop), US-3724 (phone), US-4254 (desktop), US-4254 (phone), US-4403 (desktop), US-4403 (phone), US-4784 (desktop), US-4784 (phone), US-5258 (desktop), US-5258 (phone), US-6123 (desktop), US-6218 (desktop), US-6675 (desktop), US-6675 (phone), US-7239 (desktop), US-7239 (phone), US-7475 (desktop), US-7475 (phone), US-9442 (desktop), US-9442 (phone), US-9986 (desktop), US-9986 (phone)
+none
 
-## Console errors seen (most common first; the URL is the file that failed)
-
-- 2× HTTP 404 https://kentuckyportableclub.github.io/KPC-Data/data/parkinfo/US-KY.json  — on: us_planner US-10139
-- 2× Failed to load resource: the server responded with a status of 404 () (https://kentuckyportableclub.github.io/KPC-Data/data/parkinfo/US-KY.json)  — on: us_planner US-10139
-- 2× HTTP 404 https://kentuckyportableclub.github.io/KPC-Links/data/parkinfo/US-KY.json  — on: us_planner US-10139
-- 2× Failed to load resource: the server responded with a status of 404 () (https://kentuckyportableclub.github.io/KPC-Links/data/parkinfo/US-KY.json)  — on: us_planner US-10139
