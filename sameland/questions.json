@@ -1,7 +1,7 @@
 {
  "about": "KPC 13 same-land questions for the checker (chat 11). answer = YES / NO / NOT SURE. Nothing is relabelled until a person answers.",
- "built": "2026-11-08",
- "open": 45,
+ "built": "2026-11-15",
+ "open": 43,
  "questions": [
   {
    "id": "US-10139+US-4526",
@@ -32,38 +32,7 @@
    ],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
-  },
-  {
-   "id": "US-0703+US-3790",
-   "area": "US-KY",
-   "refs": [
-    "US-0703",
-    "US-3790"
-   ],
-   "names": [
-    "Fort Donelson National Battlefield",
-    "Fort Heiman National Battlefield"
-   ],
-   "verdict": "SAME LAND: likely",
-   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
-   "tests": {
-    "S1": "SAME RECORD",
-    "S2": "SMALL ONE INSIDE",
-    "S3": false,
-    "S4": false,
-    "S5": "same"
-   },
-   "fers": [
-    {
-     "id": "US-0703+US-3790@same land@36.503,-88.061",
-     "kind": "same land",
-     "live": true
-    }
-   ],
-   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
-   "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "US-10112+US-7966",
@@ -94,7 +63,7 @@
    ],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "US-3933+US-7578",
@@ -119,7 +88,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "US-7580+US-7581",
@@ -144,32 +113,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
-  },
-  {
-   "id": "US-3971+US-5499",
-   "area": "US-TN",
-   "refs": [
-    "US-3971",
-    "US-5499"
-   ],
-   "names": [
-    "Prentice Cooper Wildlife Management Area",
-    "Prentice Cooper State Forest"
-   ],
-   "verdict": "SAME LAND: likely",
-   "why": "The outlines are almost the same shape, the names are the same family, and the same agency runs both.",
-   "tests": {
-    "S1": "SHARES A RECORD",
-    "S2": "SAME SHAPE",
-    "S3": true,
-    "S4": true,
-    "S5": "same"
-   },
-   "fers": [],
-   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
-   "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "US-2971+US-3960",
@@ -194,7 +138,57 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
+  },
+  {
+   "id": "US-3971+US-5499",
+   "area": "US-TN",
+   "refs": [
+    "US-3971",
+    "US-5499"
+   ],
+   "names": [
+    "Prentice Cooper Wildlife Management Area",
+    "Prentice Cooper State Forest"
+   ],
+   "verdict": "SAME LAND: likely",
+   "why": "The outlines are almost the same shape, the names are the same family, and the same agency runs both.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": true,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-15"
+  },
+  {
+   "id": "US-0642+US-4560",
+   "area": "US-TN",
+   "refs": [
+    "US-0642",
+    "US-4560"
+   ],
+   "names": [
+    "Natchez Trace Parkway National Parkway",
+    "Natchez Trace Trail National Scenic Trail"
+   ],
+   "verdict": "CHECK",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers, but one outline is not graded official: a person should look.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S2": "SAME SHAPE",
+    "S3": true,
+    "S4": true,
+    "S5": "same"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-15"
   },
   {
    "id": "US-3934+US-5491",
@@ -208,18 +202,18 @@
     "Chickasaw State Forest"
    ],
    "verdict": "CHECK",
-   "why": "The outlines are almost the same shape but different agencies run them, which is usually normal layering: a person should look.",
+   "why": "The outlines are almost the same shape but the managing agency could not be read for one of them: a person should look.",
    "tests": {
     "S1": "SHARES A RECORD",
     "S2": "SAME SHAPE",
     "S3": true,
     "S4": false,
-    "S5": "different"
+    "S5": "unknown"
    },
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "US-3935+US-5492",
@@ -233,18 +227,18 @@
     "Chuck Swan State Forest"
    ],
    "verdict": "CHECK",
-   "why": "The outlines are almost the same shape but different agencies run them, which is usually normal layering: a person should look.",
+   "why": "The outlines are almost the same shape but the managing agency could not be read for one of them: a person should look.",
    "tests": {
     "S1": null,
     "S2": "SAME SHAPE",
     "S3": true,
     "S4": false,
-    "S5": "different"
+    "S5": "unknown"
    },
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "US-0538+US-3960",
@@ -269,7 +263,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "US-0538+US-2971",
@@ -294,107 +288,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
-  },
-  {
-   "id": "US-12663+US-2952",
-   "area": "US-TN",
-   "refs": [
-    "US-12663",
-    "US-2952"
-   ],
-   "names": [
-    "Ocoee River State Park",
-    "Hiwassee Ocoee State Park"
-   ],
-   "verdict": "CHECK",
-   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
-   "tests": {
-    "S1": "SHARES A RECORD",
-    "S2": "ONE INSIDE THE OTHER",
-    "S3": false,
-    "S4": false,
-    "S5": "same"
-   },
-   "fers": [],
-   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
-   "answer": null,
-   "asked": "2026-11-08"
-  },
-  {
-   "id": "US-2935+US-3924",
-   "area": "US-TN",
-   "refs": [
-    "US-2935",
-    "US-3924"
-   ],
-   "names": [
-    "Cedars of Lebanon State Park",
-    "Cedars of Lebanon State Forest"
-   ],
-   "verdict": "CHECK",
-   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
-   "tests": {
-    "S1": "SHARES A RECORD",
-    "S2": "PART OVERLAP",
-    "S3": true,
-    "S4": false,
-    "S5": "same"
-   },
-   "fers": [],
-   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
-   "answer": null,
-   "asked": "2026-11-08"
-  },
-  {
-   "id": "US-2966+US-5498",
-   "area": "US-TN",
-   "refs": [
-    "US-2966",
-    "US-5498"
-   ],
-   "names": [
-    "Pickett State Park",
-    "Pickett State Forest"
-   ],
-   "verdict": "CHECK",
-   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
-   "tests": {
-    "S1": "SHARES A RECORD",
-    "S2": "PART OVERLAP",
-    "S3": true,
-    "S4": false,
-    "S5": "different"
-   },
-   "fers": [],
-   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
-   "answer": null,
-   "asked": "2026-11-08"
-  },
-  {
-   "id": "US-2961+US-3957",
-   "area": "US-TN",
-   "refs": [
-    "US-2961",
-    "US-3957"
-   ],
-   "names": [
-    "Natchez Trace State Park",
-    "Natchez Trace State Forest Wildlife Management Area"
-   ],
-   "verdict": "CHECK",
-   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
-   "tests": {
-    "S1": "SHARES A RECORD",
-    "S2": "SMALL ONE INSIDE",
-    "S3": true,
-    "S4": false,
-    "S5": "different"
-   },
-   "fers": [],
-   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
-   "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "US-11879+US-2955",
@@ -414,12 +308,87 @@
     "S2": "SMALL ONE INSIDE",
     "S3": false,
     "S4": false,
-    "S5": "same"
+    "S5": "unknown"
    },
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
+  },
+  {
+   "id": "US-2935+US-3924",
+   "area": "US-TN",
+   "refs": [
+    "US-2935",
+    "US-3924"
+   ],
+   "names": [
+    "Cedars of Lebanon State Park",
+    "Cedars of Lebanon State Forest"
+   ],
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "SMALL ONE INSIDE",
+    "S3": true,
+    "S4": false,
+    "S5": "unknown"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-15"
+  },
+  {
+   "id": "US-2966+US-5498",
+   "area": "US-TN",
+   "refs": [
+    "US-2966",
+    "US-5498"
+   ],
+   "names": [
+    "Pickett State Park",
+    "Pickett State Forest"
+   ],
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "SMALL ONE INSIDE",
+    "S3": true,
+    "S4": false,
+    "S5": "unknown"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-15"
+  },
+  {
+   "id": "US-2961+US-3957",
+   "area": "US-TN",
+   "refs": [
+    "US-2961",
+    "US-3957"
+   ],
+   "names": [
+    "Natchez Trace State Park",
+    "Natchez Trace State Forest Wildlife Management Area"
+   ],
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S2": "SMALL ONE INSIDE",
+    "S3": true,
+    "S4": false,
+    "S5": "unknown"
+   },
+   "fers": [],
+   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
+   "answer": null,
+   "asked": "2026-11-15"
   },
   {
    "id": "US-2978+US-5501",
@@ -439,12 +408,12 @@
     "S2": "SMALL ONE INSIDE",
     "S3": true,
     "S4": false,
-    "S5": "different"
+    "S5": "unknown"
    },
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "US-2936+US-5491",
@@ -464,12 +433,12 @@
     "S2": "SMALL ONE INSIDE",
     "S3": true,
     "S4": false,
-    "S5": "different"
+    "S5": "unknown"
    },
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "US-2936+US-3934",
@@ -489,37 +458,12 @@
     "S2": "SMALL ONE INSIDE",
     "S3": true,
     "S4": false,
-    "S5": "different"
+    "S5": "unknown"
    },
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
-  },
-  {
-   "id": "US-6266+US-9718",
-   "area": "US-TN",
-   "refs": [
-    "US-6266",
-    "US-9718"
-   ],
-   "names": [
-    "Savage Gulf State Natural Area",
-    "Savage Gulf State Park"
-   ],
-   "verdict": "CHECK",
-   "why": "The names are the same family and the POTA pins are within 200 m, though the outlines are not the same shape (one sits inside the other): a person should look.",
-   "tests": {
-    "S1": null,
-    "S2": "SMALL ONE INSIDE",
-    "S3": true,
-    "S4": true,
-    "S5": "same"
-   },
-   "fers": [],
-   "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
-   "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-1320+CA-1321",
@@ -544,7 +488,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-1361+CA-1362",
@@ -569,7 +513,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-0057+CA-0307",
@@ -594,7 +538,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-5991+CA-5992",
@@ -619,7 +563,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-1507+CA-1508",
@@ -644,7 +588,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-1303+CA-1304",
@@ -669,7 +613,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-5633+CA-5942",
@@ -694,7 +638,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-1310+CA-1577",
@@ -719,7 +663,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-1475+CA-1699",
@@ -744,7 +688,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-0162+CA-0163",
@@ -769,7 +713,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-0304+CA-0306",
@@ -794,7 +738,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-1477+CA-1478",
@@ -819,7 +763,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-0414+CA-1667",
@@ -844,7 +788,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-4856+CA-4863",
@@ -869,7 +813,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-0351+CA-1586",
@@ -894,7 +838,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-0418+CA-1705",
@@ -919,7 +863,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-1708+CA-6629",
@@ -944,7 +888,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-0395+CA-1627",
@@ -969,7 +913,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-5554+CA-5555",
@@ -994,7 +938,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-0174+CA-6371",
@@ -1019,7 +963,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-5358+CA-5566",
@@ -1044,7 +988,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-0052+CA-0279",
@@ -1069,7 +1013,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-0052+CA-0053",
@@ -1094,7 +1038,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-0304+CA-0305",
@@ -1119,7 +1063,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   },
   {
    "id": "CA-0305+CA-0306",
@@ -1144,7 +1088,7 @@
    "fers": [],
    "question": "Are these two park numbers the same land (to be shown as 'same land, two park numbers', not as an ordinary 2-fer)? YES / NO / NOT SURE",
    "answer": null,
-   "asked": "2026-11-08"
+   "asked": "2026-11-15"
   }
  ]
 }

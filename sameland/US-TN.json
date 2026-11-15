@@ -1,16 +1,16 @@
 {
  "tool": "KPC 13 same-land finder",
  "area": "US-TN",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "about": "Pairs of POTA parks whose outlines overlap, with the five same-land tests. SAME LAND: likely and CHECK rows are questions for the checker; nothing here relabels a 2-fer.",
  "counts": {
   "parks": 277,
-  "outlines": 256,
-  "pairs_overlapping": 88,
+  "outlines": 230,
+  "pairs_overlapping": 45,
   "SAME LAND: likely": 4,
-  "CHECK": 13,
-  "NOT SAME": 71,
-  "one_inside_the_other": 2
+  "CHECK": 12,
+  "NOT SAME": 29,
+  "one_inside_the_other": 1
  },
  "left_out": [
   [
@@ -26,16 +26,124 @@
    "a trail or river line, not an area"
   ],
   [
-   "US-4560",
-   "a trail or river line, not an area"
-  ],
-  [
    "US-4577",
    "a trail or river line, not an area"
   ],
   [
    "US-8313",
    "a trail or river line, not an area"
+  ],
+  [
+   "US-12360",
+   "sgtnd: source down (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-12361",
+   "sgtna: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); tnd: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); tnd: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); tnd: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-12369",
+   "sgtne: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-12663",
+   "sgtna: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtng: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-12713",
+   "sgtna: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-12714",
+   "sgtna: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-13364",
+   "sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-13501",
+   "sgtna: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-13567",
+   "sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-2957",
+   "sgtna: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtng: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-2972",
+   "sgtna: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtng: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); tnd: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-2974",
+   "sgtna: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtng: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-5497",
+   "sgtnd: source down (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6235",
+   "sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); tnd: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6241",
+   "sgtna: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); tnd: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6242",
+   "sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6246",
+   "sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); tnd: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6248",
+   "sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6251",
+   "sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); tnd: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6254",
+   "sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6258",
+   "sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6264",
+   "sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6269",
+   "sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); tnd: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6272",
+   "sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6277",
+   "sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6279",
+   "sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); tnd: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-7577",
+   "sgtne: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-9718",
+   "sgtna: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
   ]
  ],
  "pairs": [
@@ -50,10 +158,10 @@
     "Cheatham Lake Wildlife Management Area"
    ],
    "acres": [
-    23264.8,
-    23264.8
+    23220.8,
+    23220.8
    ],
-   "overlap_acres": 23264.8,
+   "overlap_acres": 23220.8,
    "verdict": "SAME LAND: likely",
    "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
    "tests": {
@@ -102,7 +210,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-7580+US-7581",
@@ -115,10 +227,10 @@
     "Cordell Hull Waterfowl Refuge Wildlife Management Area"
    ],
    "acres": [
-    28449.4,
-    28449.4
+    17125.5,
+    17125.5
    ],
-   "overlap_acres": 28449.4,
+   "overlap_acres": 17125.5,
    "verdict": "SAME LAND: likely",
    "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
    "tests": {
@@ -156,54 +268,11 @@
      ]
     ]
    },
-   "fers": []
-  },
-  {
-   "id": "US-3971+US-5499",
-   "refs": [
-    "US-3971",
-    "US-5499"
-   ],
-   "names": [
-    "Prentice Cooper Wildlife Management Area",
-    "Prentice Cooper State Forest"
-   ],
-   "acres": [
-    28013.7,
-    26079.8
-   ],
-   "overlap_acres": 26051.9,
-   "verdict": "SAME LAND: likely",
-   "why": "The outlines are almost the same shape, the names are the same family, and the same agency runs both.",
-   "tests": {
-    "S1": "SHARES A RECORD",
-    "S1_records": [
-     "PAD-US:256230"
-    ],
-    "S2": "SAME SHAPE",
-    "S2_of_smaller": 0.999,
-    "S2_of_larger": 0.93,
-    "S3": true,
-    "S3_score": 100.0,
-    "S3_names": [
-     "prentice cooper",
-     "prentice cooper"
-    ],
-    "S4": true,
-    "S4_m": 9,
-    "S5": "same",
-    "S5_agencies": [
-     [
-      "State fish and wildlife agency",
-      "TDA"
-     ],
-     [
-      "State fish and wildlife agency",
-      "Tennessee Division of Forestry"
-     ]
-    ]
-   },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-2971+US-3960",
@@ -216,10 +285,10 @@
     "Reelfoot State Wildlife Area"
    ],
    "acres": [
-    20195.7,
-    22437.3
+    20043.9,
+    22166.8
    ],
-   "overlap_acres": 20059.5,
+   "overlap_acres": 20043.9,
    "verdict": "SAME LAND: likely",
    "why": "The outlines are almost the same shape, the names are the same family, and the same agency runs both.",
    "tests": {
@@ -229,8 +298,8 @@
      "PAD-US:255740"
     ],
     "S2": "SAME SHAPE",
-    "S2_of_smaller": 0.993,
-    "S2_of_larger": 0.894,
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.904,
     "S3": true,
     "S3_score": 100.0,
     "S3_names": [
@@ -242,17 +311,116 @@
     "S5": "same",
     "S5_agencies": [
      [
-      "State conservation department (TDEC; PAD-US 'SDC')",
       "State fish and wildlife agency"
      ],
      [
-      "State conservation department (TDEC; PAD-US 'SDC')",
-      "State fish and wildlife agency",
-      "U.S. Fish and Wildlife Service"
+      "State fish and wildlife agency"
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-3971+US-5499",
+   "refs": [
+    "US-3971",
+    "US-5499"
+   ],
+   "names": [
+    "Prentice Cooper Wildlife Management Area",
+    "Prentice Cooper State Forest"
+   ],
+   "acres": [
+    27508.1,
+    24391.8
+   ],
+   "overlap_acres": 24391.8,
+   "verdict": "SAME LAND: likely",
+   "why": "The outlines are almost the same shape, the names are the same family, and the same agency runs both.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:256230"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.887,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "prentice cooper",
+     "prentice cooper"
+    ],
+    "S4": true,
+    "S4_m": 9,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-0642+US-4560",
+   "refs": [
+    "US-0642",
+    "US-4560"
+   ],
+   "names": [
+    "Natchez Trace Parkway National Parkway",
+    "Natchez Trace Trail National Scenic Trail"
+   ],
+   "acres": [
+    31527.1,
+    31527.1
+   ],
+   "overlap_acres": 31527.1,
+   "verdict": "CHECK",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers, but one outline is not graded official: a person should look.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "PAD-US:3552"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "natchez trace parkway parkway",
+     "natchez trace"
+    ],
+    "S4": true,
+    "S4_m": 46,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     [
+      "National Park Service"
+     ]
+    ]
+   },
+   "fers": [],
+   "grades": [
+    "official",
+    "approximate"
+   ]
   },
   {
    "id": "US-3934+US-5491",
@@ -265,12 +433,12 @@
     "Chickasaw State Forest"
    ],
    "acres": [
-    14526.9,
-    14531.7
+    14526.8,
+    14526.8
    ],
    "overlap_acres": 14526.8,
    "verdict": "CHECK",
-   "why": "The outlines are almost the same shape but different agencies run them, which is usually normal layering: a person should look.",
+   "why": "The outlines are almost the same shape but the managing agency could not be read for one of them: a person should look.",
    "tests": {
     "S1": "SHARES A RECORD",
     "S1_records": [
@@ -288,17 +456,19 @@
     ],
     "S4": false,
     "S4_m": 365,
-    "S5": "different",
+    "S5": "unknown",
     "S5_agencies": [
      [
       "State fish and wildlife agency"
      ],
-     [
-      "Tennessee Division of Forestry"
-     ]
+     []
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-3935+US-5492",
@@ -311,18 +481,18 @@
     "Chuck Swan State Forest"
    ],
    "acres": [
-    24680.9,
-    24718.4
+    24662.7,
+    24363.5
    ],
-   "overlap_acres": 24079.0,
+   "overlap_acres": 23715.5,
    "verdict": "CHECK",
-   "why": "The outlines are almost the same shape but different agencies run them, which is usually normal layering: a person should look.",
+   "why": "The outlines are almost the same shape but the managing agency could not be read for one of them: a person should look.",
    "tests": {
     "S1": null,
     "S1_records": [],
     "S2": "SAME SHAPE",
-    "S2_of_smaller": 0.976,
-    "S2_of_larger": 0.974,
+    "S2_of_smaller": 0.973,
+    "S2_of_larger": 0.962,
     "S3": true,
     "S3_score": 100.0,
     "S3_names": [
@@ -331,17 +501,19 @@
     ],
     "S4": false,
     "S4_m": 5527,
-    "S5": "different",
+    "S5": "unknown",
     "S5_agencies": [
      [
       "State fish and wildlife agency"
      ],
-     [
-      "Tennessee Division of Forestry"
-     ]
+     []
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-0538+US-3960",
@@ -354,10 +526,10 @@
     "Reelfoot State Wildlife Area"
    ],
    "acres": [
-    26109.0,
-    22437.3
+    26101.4,
+    22166.8
    ],
-   "overlap_acres": 20126.5,
+   "overlap_acres": 20111.3,
    "verdict": "CHECK",
    "why": "The two park numbers share an agency record but not all of their records: a person should look.",
    "tests": {
@@ -367,7 +539,7 @@
      "PAD-US:255740"
     ],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.897,
+    "S2_of_smaller": 0.907,
     "S2_of_larger": 0.771,
     "S3": true,
     "S3_score": 100.0,
@@ -384,13 +556,15 @@
       "U.S. Fish and Wildlife Service"
      ],
      [
-      "State conservation department (TDEC; PAD-US 'SDC')",
-      "State fish and wildlife agency",
-      "U.S. Fish and Wildlife Service"
+      "State fish and wildlife agency"
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-0538+US-2971",
@@ -403,10 +577,10 @@
     "Reelfoot Lake State Park"
    ],
    "acres": [
-    26109.0,
-    20195.7
+    26101.4,
+    20043.9
    ],
-   "overlap_acres": 20078.9,
+   "overlap_acres": 20043.9,
    "verdict": "CHECK",
    "why": "The two park numbers share an agency record but not all of their records: a person should look.",
    "tests": {
@@ -416,8 +590,8 @@
      "PAD-US:255740"
     ],
     "S2": "ONE INSIDE THE OTHER",
-    "S2_of_smaller": 0.994,
-    "S2_of_larger": 0.769,
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.768,
     "S3": true,
     "S3_score": 100.0,
     "S3_names": [
@@ -433,198 +607,15 @@
       "U.S. Fish and Wildlife Service"
      ],
      [
-      "State conservation department (TDEC; PAD-US 'SDC')",
       "State fish and wildlife agency"
      ]
     ]
    },
-   "fers": []
-  },
-  {
-   "id": "US-12663+US-2952",
-   "refs": [
-    "US-12663",
-    "US-2952"
-   ],
-   "names": [
-    "Ocoee River State Park",
-    "Hiwassee Ocoee State Park"
-   ],
-   "acres": [
-    190.0,
-    143.9
-   ],
-   "overlap_acres": 140.8,
-   "verdict": "CHECK",
-   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
-   "tests": {
-    "S1": "SHARES A RECORD",
-    "S1_records": [
-     "sgtnf:84",
-     "sgtng:44"
-    ],
-    "S2": "ONE INSIDE THE OTHER",
-    "S2_of_smaller": 0.979,
-    "S2_of_larger": 0.741,
-    "S3": false,
-    "S3_score": 64.0,
-    "S3_names": [
-     "ocoee river",
-     "hiwassee ocoee"
-    ],
-    "S4": false,
-    "S4_m": 18283,
-    "S5": "same",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')",
-      "Tennessee Valley Authority"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-2935+US-3924",
-   "refs": [
-    "US-2935",
-    "US-3924"
-   ],
-   "names": [
-    "Cedars of Lebanon State Park",
-    "Cedars of Lebanon State Forest"
-   ],
-   "acres": [
-    4430.4,
-    9514.0
-   ],
-   "overlap_acres": 4185.1,
-   "verdict": "CHECK",
-   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
-   "tests": {
-    "S1": "SHARES A RECORD",
-    "S1_records": [
-     "PAD-US:255595"
-    ],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.945,
-    "S2_of_larger": 0.44,
-    "S3": true,
-    "S3_score": 100.0,
-    "S3_names": [
-     "cedars lebanon",
-     "cedars lebanon"
-    ],
-    "S4": false,
-    "S4_m": 5323,
-    "S5": "same",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')",
-      "Tennessee Division of Forestry",
-      "Tennessee Natural Areas"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-2966+US-5498",
-   "refs": [
-    "US-2966",
-    "US-5498"
-   ],
-   "names": [
-    "Pickett State Park",
-    "Pickett State Forest"
-   ],
-   "acres": [
-    5087.9,
-    24612.0
-   ],
-   "overlap_acres": 4647.7,
-   "verdict": "CHECK",
-   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
-   "tests": {
-    "S1": "SHARES A RECORD",
-    "S1_records": [
-     "PAD-US:255633",
-     "PAD-US:255634"
-    ],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.913,
-    "S2_of_larger": 0.189,
-    "S3": true,
-    "S3_score": 100.0,
-    "S3_names": [
-     "pickett",
-     "pickett"
-    ],
-    "S4": false,
-    "S4_m": 2152,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "Tennessee Division of Forestry"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-2961+US-3957",
-   "refs": [
-    "US-2961",
-    "US-3957"
-   ],
-   "names": [
-    "Natchez Trace State Park",
-    "Natchez Trace State Forest Wildlife Management Area"
-   ],
-   "acres": [
-    8298.7,
-    46399.2
-   ],
-   "overlap_acres": 8287.3,
-   "verdict": "CHECK",
-   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
-   "tests": {
-    "S1": "SHARES A RECORD",
-    "S1_records": [
-     "PAD-US:255627"
-    ],
-    "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 0.999,
-    "S2_of_larger": 0.179,
-    "S3": true,
-    "S3_score": 100.0,
-    "S3_names": [
-     "natchez trace",
-     "natchez trace"
-    ],
-    "S4": false,
-    "S4_m": 6160,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State fish and wildlife agency",
-      "Tennessee Division of Forestry"
-     ]
-    ]
-   },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-11879+US-2955",
@@ -637,10 +628,10 @@
     "Wilson Cumberland Trail State Park"
    ],
    "acres": [
-    7118.3,
-    42213.2
+    7108.9,
+    18984.7
    ],
-   "overlap_acres": 7109.0,
+   "overlap_acres": 7108.9,
    "verdict": "CHECK",
    "why": "The two park numbers share an agency record but not all of their records: a person should look.",
    "tests": {
@@ -649,8 +640,8 @@
      "PAD-US:255602"
     ],
     "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 0.999,
-    "S2_of_larger": 0.168,
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.374,
     "S3": false,
     "S3_score": 26.1,
     "S3_names": [
@@ -659,17 +650,155 @@
     ],
     "S4": false,
     "S4_m": 6205,
-    "S5": "same",
+    "S5": "unknown",
     "S5_agencies": [
+     [],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-2935+US-3924",
+   "refs": [
+    "US-2935",
+    "US-3924"
+   ],
+   "names": [
+    "Cedars of Lebanon State Park",
+    "Cedars of Lebanon State Forest"
+   ],
+   "acres": [
+    2297.5,
+    9358.3
+   ],
+   "overlap_acres": 2286.8,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255595"
+    ],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.995,
+    "S2_of_larger": 0.244,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "cedars lebanon",
+     "cedars lebanon"
+    ],
+    "S4": false,
+    "S4_m": 5323,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-2966+US-5498",
+   "refs": [
+    "US-2966",
+    "US-5498"
+   ],
+   "names": [
+    "Pickett State Park",
+    "Pickett State Forest"
+   ],
+   "acres": [
+    4641.0,
+    24578.2
+   ],
+   "overlap_acres": 4641.0,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255633",
+     "PAD-US:255634"
+    ],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.189,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "pickett",
+     "pickett"
+    ],
+    "S4": false,
+    "S4_m": 2152,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-2961+US-3957",
+   "refs": [
+    "US-2961",
+    "US-3957"
+   ],
+   "names": [
+    "Natchez Trace State Park",
+    "Natchez Trace State Forest Wildlife Management Area"
+   ],
+   "acres": [
+    8222.3,
+    45825.9
+   ],
+   "overlap_acres": 8222.3,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255627"
+    ],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.179,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "natchez trace",
+     "natchez trace"
+    ],
+    "S4": false,
+    "S4_m": 6160,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
      [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
+      "State fish and wildlife agency"
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-2978+US-5501",
@@ -682,10 +811,10 @@
     "Standing Stone State Forest"
    ],
    "acres": [
-    1058.4,
-    9420.5
+    1050.9,
+    9406.2
    ],
-   "overlap_acres": 1053.7,
+   "overlap_acres": 1050.9,
    "verdict": "CHECK",
    "why": "The two park numbers share an agency record but not all of their records: a person should look.",
    "tests": {
@@ -694,7 +823,7 @@
      "PAD-US:255644"
     ],
     "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 0.996,
+    "S2_of_smaller": 1.0,
     "S2_of_larger": 0.112,
     "S3": true,
     "S3_score": 100.0,
@@ -704,17 +833,17 @@
     ],
     "S4": false,
     "S4_m": 2341,
-    "S5": "different",
+    "S5": "unknown",
     "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "Tennessee Division of Forestry"
-     ]
+     [],
+     []
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-2936+US-5491",
@@ -727,10 +856,10 @@
     "Chickasaw State Forest"
    ],
    "acres": [
-    1387.1,
-    14531.7
+    1386.8,
+    14526.8
    ],
-   "overlap_acres": 1387.1,
+   "overlap_acres": 1386.8,
    "verdict": "CHECK",
    "why": "The two park numbers share an agency record but not all of their records: a person should look.",
    "tests": {
@@ -749,17 +878,17 @@
     ],
     "S4": false,
     "S4_m": 5671,
-    "S5": "different",
+    "S5": "unknown",
     "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "Tennessee Division of Forestry"
-     ]
+     [],
+     []
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-2936+US-3934",
@@ -772,10 +901,10 @@
     "Chickasaw State Wildlife Area"
    ],
    "acres": [
-    1387.1,
-    14526.9
+    1386.8,
+    14526.8
    ],
-   "overlap_acres": 1387.1,
+   "overlap_acres": 1386.8,
    "verdict": "CHECK",
    "why": "The two park numbers share an agency record but not all of their records: a person should look.",
    "tests": {
@@ -794,187 +923,19 @@
     ],
     "S4": false,
     "S4_m": 6032,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State fish and wildlife agency"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-6266+US-9718",
-   "refs": [
-    "US-6266",
-    "US-9718"
-   ],
-   "names": [
-    "Savage Gulf State Natural Area",
-    "Savage Gulf State Park"
-   ],
-   "acres": [
-    30.1,
-    19480.7
-   ],
-   "overlap_acres": 29.7,
-   "verdict": "CHECK",
-   "why": "The names are the same family and the POTA pins are within 200 m, though the outlines are not the same shape (one sits inside the other): a person should look.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 0.989,
-    "S2_of_larger": 0.002,
-    "S3": true,
-    "S3_score": 100.0,
-    "S3_names": [
-     "savage gulf",
-     "savage gulf"
-    ],
-    "S4": true,
-    "S4_m": 0,
-    "S5": "same",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-11918+US-12714",
-   "refs": [
-    "US-11918",
-    "US-12714"
-   ],
-   "names": [
-    "Sherwood Forest State Natural Area",
-    "Head of the Crow State Park"
-   ],
-   "acres": [
-    4061.4,
-    5541.8
-   ],
-   "overlap_acres": 3057.2,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.753,
-    "S2_of_larger": 0.552,
-    "S3": false,
-    "S3_score": 35.3,
-    "S3_names": [
-     "sherwood",
-     "head crow"
-    ],
-    "S4": false,
-    "S4_m": 6701,
     "S5": "unknown",
     "S5_agencies": [
      [],
      [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-12361+US-3928",
-   "refs": [
-    "US-12361",
-    "US-3928"
-   ],
-   "names": [
-    "Scott's Gulf Wilderness State Park",
-    "Bridgestone/firestone Centennial Wilderness Wildlife Management Area"
-   ],
-   "acres": [
-    10182.6,
-    18579.2
-   ],
-   "overlap_acres": 7087.4,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.696,
-    "S2_of_larger": 0.381,
-    "S3": false,
-    "S3_score": 23.3,
-    "S3_names": [
-     "scotts gulf",
-     "bridgestone firestone centennial"
-    ],
-    "S4": false,
-    "S4_m": 2994,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
       "State fish and wildlife agency"
      ]
     ]
    },
-   "fers": []
-  },
-  {
-   "id": "US-12360+US-3969",
-   "refs": [
-    "US-12360",
-    "US-3969"
-   ],
-   "names": [
-    "Wolf River State Forest",
-    "Wolf River Wildlife Management Area"
-   ],
-   "acres": [
-    5487.9,
-    17513.0
-   ],
-   "overlap_acres": 5487.7,
-   "verdict": "NOT SAME",
-   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 1.0,
-    "S2_of_larger": 0.313,
-    "S3": true,
-    "S3_score": 100.0,
-    "S3_names": [
-     "wolf river",
-     "wolf river"
-    ],
-    "S4": false,
-    "S4_m": 13036,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "Tennessee Division of Forestry"
-     ],
-     [
-      "State fish and wildlife agency"
-     ]
-    ]
-   },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-0534+US-7568",
@@ -988,17 +949,17 @@
    ],
    "acres": [
     6601.3,
-    13808.1
+    12002.5
    ],
-   "overlap_acres": 3298.2,
+   "overlap_acres": 3295.7,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.5,
-    "S2_of_larger": 0.239,
+    "S2_of_smaller": 0.499,
+    "S2_of_larger": 0.275,
     "S3": false,
     "S3_score": 21.1,
     "S3_names": [
@@ -1013,98 +974,62 @@
       "U.S. Fish and Wildlife Service"
      ],
      [
-      "State fish and wildlife agency",
-      "U.S. Army Corps of Engineers"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-3944+US-6255",
-   "refs": [
-    "US-3944",
-    "US-6255"
-   ],
-   "names": [
-    "Hickory Flats Wildlife Management Area",
-    "May Prairie State Natural Area"
-   ],
-   "acres": [
-    767.3,
-    508.6
-   ],
-   "overlap_acres": 136.9,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.269,
-    "S2_of_larger": 0.178,
-    "S3": false,
-    "S3_score": 33.3,
-    "S3_names": [
-     "hickory flats",
-     "may prairie"
-    ],
-    "S4": false,
-    "S4_m": 1348,
-    "S5": "different",
-    "S5_agencies": [
-     [
       "State fish and wildlife agency"
-     ],
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
-   "id": "US-3948+US-5494",
+   "id": "US-13563+US-6275",
    "refs": [
-    "US-3948",
-    "US-5494"
+    "US-13563",
+    "US-6275"
    ],
    "names": [
-    "John Tully Wildlife Management Area",
-    "John Tully State Forest"
+    "Bear Hollow Mountain Wildlife Management Area",
+    "Walls of Jericho State Natural Area"
    ],
    "acres": [
-    15531.2,
-    2148.1
+    16564.7,
+    739.5
    ],
-   "overlap_acres": 2131.2,
+   "overlap_acres": 736.6,
    "verdict": "NOT SAME",
    "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
     "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 0.992,
-    "S2_of_larger": 0.137,
-    "S3": true,
-    "S3_score": 100.0,
+    "S2_of_smaller": 0.996,
+    "S2_of_larger": 0.044,
+    "S3": false,
+    "S3_score": 36.4,
     "S3_names": [
-     "john tully",
-     "john tully"
+     "bear hollow mountain",
+     "walls jericho"
     ],
     "S4": false,
-    "S4_m": 2900,
-    "S5": "different",
+    "S4_m": 1242,
+    "S5": "same",
     "S5_agencies": [
      [
       "State fish and wildlife agency"
      ],
      [
-      "Tennessee Division of Forestry"
+      "State fish and wildlife agency"
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-3969+US-6245",
@@ -1117,18 +1042,18 @@
     "Ghost River State Natural Area"
    ],
    "acres": [
-    17513.0,
-    2263.2
+    8367.5,
+    2083.9
    ],
-   "overlap_acres": 2164.3,
+   "overlap_acres": 353.5,
    "verdict": "NOT SAME",
-   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
-    "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 0.956,
-    "S2_of_larger": 0.124,
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.17,
+    "S2_of_larger": 0.042,
     "S3": false,
     "S3_score": 66.7,
     "S3_names": [
@@ -1143,276 +1068,15 @@
       "State fish and wildlife agency"
      ],
      [
-      "State conservation department (TDEC; PAD-US 'SDC')",
-      "State fish and wildlife agency",
-      "Tennessee Natural Areas"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-11918+US-5493",
-   "refs": [
-    "US-11918",
-    "US-5493"
-   ],
-   "names": [
-    "Sherwood Forest State Natural Area",
-    "Franklin-Marion State Forest"
-   ],
-   "acres": [
-    4061.4,
-    8824.8
-   ],
-   "overlap_acres": 985.2,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.243,
-    "S2_of_larger": 0.112,
-    "S3": false,
-    "S3_score": 17.4,
-    "S3_names": [
-     "sherwood",
-     "franklin marion"
-    ],
-    "S4": false,
-    "S4_m": 4442,
-    "S5": "unknown",
-    "S5_agencies": [
-     [],
-     [
-      "Tennessee Division of Forestry"
+      "State fish and wildlife agency"
      ]
     ]
    },
    "fers": [],
-   "grades": [
-    "official",
-    "approximate"
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
    ]
-  },
-  {
-   "id": "US-2955+US-7880",
-   "refs": [
-    "US-2955",
-    "US-7880"
-   ],
-   "names": [
-    "Wilson Cumberland Trail State Park",
-    "Luper Mountain Wildlife Management Area"
-   ],
-   "acres": [
-    42213.2,
-    6171.7
-   ],
-   "overlap_acres": 3533.5,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.573,
-    "S2_of_larger": 0.084,
-    "S3": false,
-    "S3_score": 38.7,
-    "S3_names": [
-     "wilson cumberland",
-     "luper mountain"
-    ],
-    "S4": false,
-    "S4_m": 80090,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State fish and wildlife agency"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-12361+US-2945",
-   "refs": [
-    "US-12361",
-    "US-2945"
-   ],
-   "names": [
-    "Scott's Gulf Wilderness State Park",
-    "Fall Creek Falls State Park"
-   ],
-   "acres": [
-    10182.6,
-    29491.4
-   ],
-   "overlap_acres": 2243.5,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.22,
-    "S2_of_larger": 0.076,
-    "S3": false,
-    "S3_score": 22.2,
-    "S3_names": [
-     "scotts gulf",
-     "fall creek falls"
-    ],
-    "S4": false,
-    "S4_m": 23087,
-    "S5": "same",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')",
-      "State fish and wildlife agency"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-2946+US-7622",
-   "refs": [
-    "US-2946",
-    "US-7622"
-   ],
-   "names": [
-    "Fort Loudon State Park",
-    "Tellico Lake Wildlife Management Area"
-   ],
-   "acres": [
-    1007.2,
-    6475.1
-   ],
-   "overlap_acres": 425.9,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.423,
-    "S2_of_larger": 0.066,
-    "S3": false,
-    "S3_score": 33.3,
-    "S3_names": [
-     "fort loudon",
-     "tellico"
-    ],
-    "S4": false,
-    "S4_m": 1541,
-    "S5": "same",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')",
-      "Tennessee Valley Authority"
-     ],
-     [
-      "State fish and wildlife agency",
-      "Tennessee Valley Authority"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-2955+US-6252",
-   "refs": [
-    "US-2955",
-    "US-6252"
-   ],
-   "names": [
-    "Wilson Cumberland Trail State Park",
-    "Laurel Snow State Natural Area"
-   ],
-   "acres": [
-    42213.2,
-    2233.9
-   ],
-   "overlap_acres": 2222.4,
-   "verdict": "NOT SAME",
-   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 0.995,
-    "S2_of_larger": 0.053,
-    "S3": false,
-    "S3_score": 42.9,
-    "S3_names": [
-     "wilson cumberland",
-     "laurel snow"
-    ],
-    "S4": false,
-    "S4_m": 31228,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State parks agency (PAD-US 'SPR')"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-2956+US-6240",
-   "refs": [
-    "US-2956",
-    "US-6240"
-   ],
-   "names": [
-    "Long Hunter State Park",
-    "Couchville Cedar Glade State Natural Area"
-   ],
-   "acres": [
-    3007.3,
-    139.1
-   ],
-   "overlap_acres": 135.1,
-   "verdict": "NOT SAME",
-   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 0.971,
-    "S2_of_larger": 0.045,
-    "S3": false,
-    "S3_score": 30.3,
-    "S3_names": [
-     "long hunter",
-     "couchville cedar glade"
-    ],
-    "S4": false,
-    "S4_m": 2078,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State parks agency (PAD-US 'SPR')"
-     ]
-    ]
-   },
-   "fers": []
   },
   {
    "id": "US-2929+US-3959",
@@ -1425,18 +1089,18 @@
     "Obion River Wildlife Management Area"
    ],
    "acres": [
-    394.6,
-    9409.7
+    386.8,
+    9407.2
    ],
-   "overlap_acres": 327.8,
+   "overlap_acres": 322.0,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.831,
-    "S2_of_larger": 0.035,
+    "S2_of_smaller": 0.833,
+    "S2_of_larger": 0.034,
     "S3": false,
     "S3_score": 44.4,
     "S3_names": [
@@ -1445,323 +1109,19 @@
     ],
     "S4": false,
     "S4_m": 8607,
-    "S5": "different",
+    "S5": "unknown",
     "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
+     [],
      [
       "State fish and wildlife agency"
      ]
     ]
    },
-   "fers": []
-  },
-  {
-   "id": "US-2935+US-3925",
-   "refs": [
-    "US-2935",
-    "US-3925"
-   ],
-   "names": [
-    "Cedars of Lebanon State Park",
-    "Vesta Cedar Glade State Natural Area"
-   ],
-   "acres": [
-    4430.4,
-    145.2
-   ],
-   "overlap_acres": 145.1,
-   "verdict": "NOT SAME",
-   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 0.999,
-    "S2_of_larger": 0.033,
-    "S3": false,
-    "S3_score": 58.1,
-    "S3_names": [
-     "cedars lebanon",
-     "vesta cedar glade"
-    ],
-    "S4": false,
-    "S4_m": 6072,
-    "S5": "same",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-13563+US-6275",
-   "refs": [
-    "US-13563",
-    "US-6275"
-   ],
-   "names": [
-    "Bear Hollow Mountain Wildlife Management Area",
-    "Walls of Jericho State Natural Area"
-   ],
-   "acres": [
-    22495.5,
-    752.8
-   ],
-   "overlap_acres": 752.8,
-   "verdict": "NOT SAME",
-   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 1.0,
-    "S2_of_larger": 0.033,
-    "S3": false,
-    "S3_score": 36.4,
-    "S3_names": [
-     "bear hollow mountain",
-     "walls jericho"
-    ],
-    "S4": false,
-    "S4_m": 1242,
-    "S5": "same",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')",
-      "State fish and wildlife agency"
-     ],
-     [
-      "State fish and wildlife agency",
-      "Tennessee Natural Areas"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-2966+US-6239",
-   "refs": [
-    "US-2966",
-    "US-6239"
-   ],
-   "names": [
-    "Pickett State Park",
-    "Colditz Cove State Natural Area"
-   ],
-   "acres": [
-    5087.9,
-    161.4
-   ],
-   "overlap_acres": 157.5,
-   "verdict": "NOT SAME",
-   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 0.976,
-    "S2_of_larger": 0.031,
-    "S3": false,
-    "S3_score": 31.6,
-    "S3_names": [
-     "pickett",
-     "colditz cove"
-    ],
-    "S4": false,
-    "S4_m": 22387,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State parks agency (PAD-US 'SPR')"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-2939+US-2955",
-   "refs": [
-    "US-2939",
-    "US-2955"
-   ],
-   "names": [
-    "Cumberland Mountain State Park",
-    "Wilson Cumberland Trail State Park"
-   ],
-   "acres": [
-    2568.3,
-    42213.2
-   ],
-   "overlap_acres": 998.7,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.389,
-    "S2_of_larger": 0.024,
-    "S3": false,
-    "S3_score": 74.1,
-    "S3_names": [
-     "cumberland mountain",
-     "wilson cumberland"
-    ],
-    "S4": false,
-    "S4_m": 71055,
-    "S5": "same",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-0686+US-6272",
-   "refs": [
-    "US-0686",
-    "US-6272"
-   ],
-   "names": [
-    "Big South Fork National Recreation Area",
-    "Twin Arches State Natural Area"
-   ],
-   "acres": [
-    83327.3,
-    1605.7
-   ],
-   "overlap_acres": 1605.7,
-   "verdict": "NOT SAME",
-   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 1.0,
-    "S2_of_larger": 0.019,
-    "S3": false,
-    "S3_score": 24.0,
-    "S3_names": [
-     "big south fork",
-     "twin arches"
-    ],
-    "S4": false,
-    "S4_m": 7452,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "National Park Service",
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "Tennessee Natural Areas"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-2955+US-6270",
-   "refs": [
-    "US-2955",
-    "US-6270"
-   ],
-   "names": [
-    "Wilson Cumberland Trail State Park",
-    "Stinging Fork Falls State Natural Area"
-   ],
-   "acres": [
-    42213.2,
-    776.1
-   ],
-   "overlap_acres": 775.8,
-   "verdict": "NOT SAME",
-   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 1.0,
-    "S2_of_larger": 0.018,
-    "S3": false,
-    "S3_score": 27.8,
-    "S3_names": [
-     "wilson cumberland",
-     "stinging fork falls"
-    ],
-    "S4": false,
-    "S4_m": 53504,
-    "S5": "same",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-3924+US-3925",
-   "refs": [
-    "US-3924",
-    "US-3925"
-   ],
-   "names": [
-    "Cedars of Lebanon State Forest",
-    "Vesta Cedar Glade State Natural Area"
-   ],
-   "acres": [
-    9514.0,
-    145.2
-   ],
-   "overlap_acres": 145.1,
-   "verdict": "NOT SAME",
-   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 0.999,
-    "S2_of_larger": 0.015,
-    "S3": false,
-    "S3_score": 58.1,
-    "S3_names": [
-     "cedars lebanon",
-     "vesta cedar glade"
-    ],
-    "S4": false,
-    "S4_m": 1766,
-    "S5": "same",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')",
-      "Tennessee Division of Forestry",
-      "Tennessee Natural Areas"
-     ],
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ]
-    ]
-   },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-3960+US-7573",
@@ -1774,7 +1134,7 @@
     "Black Bayou Refuge Wildlife Management Area"
    ],
    "acres": [
-    22437.3,
+    22166.8,
     1373.9
    ],
    "overlap_acres": 324.7,
@@ -1785,7 +1145,7 @@
     "S1_records": [],
     "S2": "PART OVERLAP",
     "S2_of_smaller": 0.236,
-    "S2_of_larger": 0.014,
+    "S2_of_larger": 0.015,
     "S3": false,
     "S3_score": 10.5,
     "S3_names": [
@@ -1797,139 +1157,6 @@
     "S5": "same",
     "S5_agencies": [
      [
-      "State conservation department (TDEC; PAD-US 'SDC')",
-      "State fish and wildlife agency",
-      "U.S. Fish and Wildlife Service"
-     ],
-     [
-      "State fish and wildlife agency"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-6242+US-7615",
-   "refs": [
-    "US-6242",
-    "US-7615"
-   ],
-   "names": [
-    "Elsie Quarterman Cedar Glade State Natural Area",
-    "Percy Priest Wildlife Management Area"
-   ],
-   "acres": [
-    189.9,
-    16771.7
-   ],
-   "overlap_acres": 189.9,
-   "verdict": "NOT SAME",
-   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 1.0,
-    "S2_of_larger": 0.011,
-    "S3": false,
-    "S3_score": 30.0,
-    "S3_names": [
-     "elsie quarterman cedar glade",
-     "percy priest"
-    ],
-    "S4": false,
-    "S4_m": 9494,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "Tennessee Natural Areas"
-     ],
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')",
-      "State fish and wildlife agency",
-      "USACOE"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-2955+US-6260",
-   "refs": [
-    "US-2955",
-    "US-6260"
-   ],
-   "names": [
-    "Wilson Cumberland Trail State Park",
-    "Piney Falls State Natural Area"
-   ],
-   "acres": [
-    42213.2,
-    437.8
-   ],
-   "overlap_acres": 435.7,
-   "verdict": "NOT SAME",
-   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 0.995,
-    "S2_of_larger": 0.01,
-    "S3": false,
-    "S3_score": 28.6,
-    "S3_names": [
-     "wilson cumberland",
-     "piney falls"
-    ],
-    "S4": false,
-    "S4_m": 58243,
-    "S5": "same",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-3965+US-7623",
-   "refs": [
-    "US-3965",
-    "US-7623"
-   ],
-   "names": [
-    "White Lake Wildlife Refuge",
-    "Thorny Cypress Wildlife Management Area"
-   ],
-   "acres": [
-    1220.2,
-    3288.5
-   ],
-   "overlap_acres": 28.6,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.023,
-    "S2_of_larger": 0.009,
-    "S3": false,
-    "S3_score": 10.5,
-    "S3_names": [
-     "white",
-     "thorny cypress"
-    ],
-    "S4": false,
-    "S4_m": 651,
-    "S5": "same",
-    "S5_agencies": [
-     [
       "State fish and wildlife agency"
      ],
      [
@@ -1937,7 +1164,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-3940+US-3963",
@@ -1950,17 +1181,17 @@
     "Three Rivers Wildlife Management Area"
    ],
    "acres": [
-    9461.9,
-    1631.2
+    8477.8,
+    1630.9
    ],
-   "overlap_acres": 58.6,
+   "overlap_acres": 53.1,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.036,
+    "S2_of_smaller": 0.033,
     "S2_of_larger": 0.006,
     "S3": false,
     "S3_score": 11.8,
@@ -1980,153 +1211,27 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
-   "id": "US-2945+US-3928",
+   "id": "US-3944+US-6255",
    "refs": [
-    "US-2945",
-    "US-3928"
+    "US-3944",
+    "US-6255"
    ],
    "names": [
-    "Fall Creek Falls State Park",
-    "Bridgestone/firestone Centennial Wilderness Wildlife Management Area"
+    "Hickory Flats Wildlife Management Area",
+    "May Prairie State Natural Area"
    ],
    "acres": [
-    29491.4,
-    18579.2
+    767.3,
+    353.3
    ],
-   "overlap_acres": 75.3,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.004,
-    "S2_of_larger": 0.003,
-    "S3": false,
-    "S3_score": 37.5,
-    "S3_names": [
-     "fall creek falls",
-     "bridgestone firestone centennial"
-    ],
-    "S4": false,
-    "S4_m": 26079,
-    "S5": "same",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')",
-      "State fish and wildlife agency"
-     ],
-     [
-      "State fish and wildlife agency"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-2955+US-6243",
-   "refs": [
-    "US-2955",
-    "US-6243"
-   ],
-   "names": [
-    "Wilson Cumberland Trail State Park",
-    "Falling Water Falls State Natural Area"
-   ],
-   "acres": [
-    42213.2,
-    135.7
-   ],
-   "overlap_acres": 135.2,
-   "verdict": "NOT SAME",
-   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 0.997,
-    "S2_of_larger": 0.003,
-    "S3": false,
-    "S3_score": 27.8,
-    "S3_names": [
-     "wilson cumberland",
-     "falling water falls"
-    ],
-    "S4": false,
-    "S4_m": 13121,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State parks agency (PAD-US 'SPR')"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-13364+US-7598",
-   "refs": [
-    "US-13364",
-    "US-7598"
-   ],
-   "names": [
-    "Cherokee Trail of Tears State Park",
-    "Hiwassee Refuge Wildlife Management Area"
-   ],
-   "acres": [
-    28.2,
-    8555.3
-   ],
-   "overlap_acres": 28.1,
-   "verdict": "NOT SAME",
-   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 0.995,
-    "S2_of_larger": 0.003,
-    "S3": false,
-    "S3_score": 27.3,
-    "S3_names": [
-     "cherokee tears",
-     "hiwassee"
-    ],
-    "S4": false,
-    "S4_m": 6218,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State fish and wildlife agency"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-2955+US-7609",
-   "refs": [
-    "US-2955",
-    "US-7609"
-   ],
-   "names": [
-    "Wilson Cumberland Trail State Park",
-    "North Cumberland Wildlife Management Area"
-   ],
-   "acres": [
-    42213.2,
-    213649.9
-   ],
-   "overlap_acres": 327.1,
+   "overlap_acres": 2.7,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
@@ -2134,26 +1239,30 @@
     "S1_records": [],
     "S2": "PART OVERLAP",
     "S2_of_smaller": 0.008,
-    "S2_of_larger": 0.002,
+    "S2_of_larger": 0.004,
     "S3": false,
-    "S3_score": 76.9,
+    "S3_score": 33.3,
     "S3_names": [
-     "wilson cumberland",
-     "north cumberland"
+     "hickory flats",
+     "may prairie"
     ],
     "S4": false,
-    "S4_m": 148828,
+    "S4_m": 1348,
     "S5": "different",
     "S5_agencies": [
      [
-      "State conservation department (TDEC; PAD-US 'SDC')"
+      "State fish and wildlife agency"
      ],
      [
-      "State fish and wildlife agency"
+      "State conservation department (TDEC; PAD-US 'SDC')"
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-13362+US-7598",
@@ -2166,10 +1275,10 @@
     "Hiwassee Refuge Wildlife Management Area"
    ],
    "acres": [
-    6232.4,
-    8555.3
+    6017.0,
+    8393.9
    ],
-   "overlap_acres": 20.9,
+   "overlap_acres": 20.8,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
@@ -2189,15 +1298,18 @@
     "S5": "same",
     "S5_agencies": [
      [
-      "State fish and wildlife agency",
-      "Tennessee Valley Authority"
+      "State fish and wildlife agency"
      ],
      [
       "State fish and wildlife agency"
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-11879+US-3958",
@@ -2210,8 +1322,8 @@
     "North Chickamauga Creek Wildlife Management Area"
    ],
    "acres": [
-    7118.3,
-    3176.4
+    7108.9,
+    3130.4
    ],
    "overlap_acres": 6.3,
    "verdict": "NOT SAME",
@@ -2230,236 +1342,19 @@
     ],
     "S4": false,
     "S4_m": 7952,
-    "S5": "different",
+    "S5": "unknown",
     "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
+     [],
      [
       "State fish and wildlife agency"
      ]
     ]
    },
-   "fers": []
-  },
-  {
-   "id": "US-0034+US-6264",
-   "refs": [
-    "US-0034",
-    "US-6264"
-   ],
-   "names": [
-    "Great Smoky Mountains National Park",
-    "Roundtop Mountain State Natural Area"
-   ],
-   "acres": [
-    241081.6,
-    238.8
-   ],
-   "overlap_acres": 238.6,
-   "verdict": "NOT SAME",
-   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 0.999,
-    "S2_of_larger": 0.001,
-    "S3": false,
-    "S3_score": 52.6,
-    "S3_names": [
-     "great smoky mountains",
-     "roundtop mountain"
-    ],
-    "S4": false,
-    "S4_m": 20088,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "National Park Service"
-     ],
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')",
-      "Tennessee Natural Areas"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-2957+US-3937",
-   "refs": [
-    "US-2957",
-    "US-3937"
-   ],
-   "names": [
-    "Meeman-Shelby Forest State Park",
-    "Eagle Lake Refuge Wildlife Management Area"
-   ],
-   "acres": [
-    11991.8,
-    3537.0
-   ],
-   "overlap_acres": 6.6,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.002,
-    "S2_of_larger": 0.001,
-    "S3": false,
-    "S3_score": 33.3,
-    "S3_names": [
-     "meeman shelby",
-     "eagle"
-    ],
-    "S4": false,
-    "S4_m": 9719,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State fish and wildlife agency"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-0686+US-6248",
-   "refs": [
-    "US-0686",
-    "US-6248"
-   ],
-   "names": [
-    "Big South Fork National Recreation Area",
-    "Honey Creek State Natural Area"
-   ],
-   "acres": [
-    83327.3,
-    109.5
-   ],
-   "overlap_acres": 109.5,
-   "verdict": "NOT SAME",
-   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "SMALL ONE INSIDE",
-    "S2_of_smaller": 1.0,
-    "S2_of_larger": 0.001,
-    "S3": false,
-    "S3_score": 32.0,
-    "S3_names": [
-     "big south fork",
-     "honey creek"
-    ],
-    "S4": false,
-    "S4_m": 7742,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "National Park Service",
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "Tennessee Natural Areas"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-0686+US-5500",
-   "refs": [
-    "US-0686",
-    "US-5500"
-   ],
-   "names": [
-    "Big South Fork National Recreation Area",
-    "Scott State Forest"
-   ],
-   "acres": [
-    83327.3,
-    2857.8
-   ],
-   "overlap_acres": 42.1,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.015,
-    "S2_of_larger": 0.001,
-    "S3": false,
-    "S3_score": 31.6,
-    "S3_names": [
-     "big south fork",
-     "scott"
-    ],
-    "S4": false,
-    "S4_m": 1355,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "National Park Service",
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "Tennessee Division of Forestry"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-2980+US-7611",
-   "refs": [
-    "US-2980",
-    "US-7611"
-   ],
-   "names": [
-    "Tims Ford State Park",
-    "Owl Hollow Mill Wildlife Management Area"
-   ],
-   "acres": [
-    3181.7,
-    2457.6
-   ],
-   "overlap_acres": 3.2,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.001,
-    "S2_of_larger": 0.001,
-    "S3": false,
-    "S3_score": 25.0,
-    "S3_names": [
-     "tims ford",
-     "owl hollow mill"
-    ],
-    "S4": false,
-    "S4_m": 6182,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')",
-      "Tennessee Valley Authority"
-     ],
-     [
-      "State fish and wildlife agency"
-     ]
-    ]
-   },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-3940+US-3959",
@@ -2472,10 +1367,10 @@
     "Obion River Wildlife Management Area"
    ],
    "acres": [
-    9461.9,
-    9409.7
+    8477.8,
+    9407.2
    ],
-   "overlap_acres": 9.4,
+   "overlap_acres": 8.5,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
@@ -2502,7 +1397,58 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-3792+US-7568",
+   "refs": [
+    "US-3792",
+    "US-7568"
+   ],
+   "names": [
+    "Land Between the Lakes National Recreation Area",
+    "Barkley Wildlife Management Area"
+   ],
+   "acres": [
+    63693.8,
+    12002.5
+   ],
+   "overlap_acres": 33.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.003,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 21.1,
+    "S3_names": [
+     "land between",
+     "barkley"
+    ],
+    "S4": false,
+    "S4_m": 35894,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "U.S. Forest Service"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-3945+US-3959",
@@ -2516,7 +1462,7 @@
    ],
    "acres": [
     653.2,
-    9409.7
+    9407.2
    ],
    "overlap_acres": 6.8,
    "verdict": "NOT SAME",
@@ -2545,51 +1491,11 @@
      ]
     ]
    },
-   "fers": []
-  },
-  {
-   "id": "US-0703+US-7568",
-   "refs": [
-    "US-0703",
-    "US-7568"
-   ],
-   "names": [
-    "Fort Donelson National Battlefield",
-    "Barkley Wildlife Management Area"
-   ],
-   "acres": [
-    844.6,
-    13808.1
-   ],
-   "overlap_acres": 20.4,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.024,
-    "S2_of_larger": 0.001,
-    "S3": false,
-    "S3_score": 10.0,
-    "S3_names": [
-     "fort donelson",
-     "barkley"
-    ],
-    "S4": false,
-    "S4_m": 3165,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "National Park Service"
-     ],
-     [
-      "State fish and wildlife agency",
-      "U.S. Army Corps of Engineers"
-     ]
-    ]
-   },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-0539+US-2965",
@@ -2603,7 +1509,7 @@
    ],
    "acres": [
     21152.0,
-    798.3
+    789.2
    ],
    "overlap_acres": 21.1,
    "verdict": "NOT SAME",
@@ -2612,7 +1518,7 @@
     "S1": null,
     "S1_records": [],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.026,
+    "S2_of_smaller": 0.027,
     "S2_of_larger": 0.001,
     "S3": false,
     "S3_score": 0.0,
@@ -2622,105 +1528,20 @@
     ],
     "S4": false,
     "S4_m": 63620,
-    "S5": "different",
+    "S5": "unknown",
     "S5_agencies": [
      [
       "Tennessee Valley Authority",
       "U.S. Fish and Wildlife Service"
      ],
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ]
+     []
     ]
    },
-   "fers": []
-  },
-  {
-   "id": "US-0019+US-7609",
-   "refs": [
-    "US-0019",
-    "US-7609"
-   ],
-   "names": [
-    "Cumberland Gap National Historical Park",
-    "North Cumberland Wildlife Management Area"
-   ],
-   "acres": [
-    5364.7,
-    213649.9
-   ],
-   "overlap_acres": 97.8,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.018,
-    "S2_of_larger": 0.0,
-    "S3": false,
-    "S3_score": 83.3,
-    "S3_names": [
-     "cumberland gap",
-     "north cumberland"
-    ],
-    "S4": false,
-    "S4_m": 57541,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "National Park Service"
-     ],
-     [
-      "State fish and wildlife agency"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-2952+US-4525",
-   "refs": [
-    "US-2952",
-    "US-4525"
-   ],
-   "names": [
-    "Hiwassee Ocoee State Park",
-    "Cherokee National Forest"
-   ],
-   "acres": [
-    143.9,
-    660605.8
-   ],
-   "overlap_acres": 20.0,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.139,
-    "S2_of_larger": 0.0,
-    "S3": false,
-    "S3_score": 45.5,
-    "S3_names": [
-     "hiwassee ocoee",
-     "cherokee"
-    ],
-    "S4": false,
-    "S4_m": 20711,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')",
-      "Tennessee Valley Authority"
-     ],
-     [
-      "U.S. Forest Service"
-     ]
-    ]
-   },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-3959+US-3963",
@@ -2733,8 +1554,8 @@
     "Three Rivers Wildlife Management Area"
    ],
    "acres": [
-    9409.7,
-    1631.2
+    9407.2,
+    1630.9
    ],
    "overlap_acres": 1.3,
    "verdict": "NOT SAME",
@@ -2763,50 +1584,11 @@
      ]
     ]
    },
-   "fers": []
-  },
-  {
-   "id": "US-12663+US-4525",
-   "refs": [
-    "US-12663",
-    "US-4525"
-   ],
-   "names": [
-    "Ocoee River State Park",
-    "Cherokee National Forest"
-   ],
-   "acres": [
-    190.0,
-    660605.8
-   ],
-   "overlap_acres": 34.2,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.18,
-    "S2_of_larger": 0.0,
-    "S3": false,
-    "S3_score": 42.1,
-    "S3_names": [
-     "ocoee river",
-     "cherokee"
-    ],
-    "S4": false,
-    "S4_m": 3063,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "U.S. Forest Service"
-     ]
-    ]
-   },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-0722+US-2930",
@@ -2820,9 +1602,9 @@
    ],
    "acres": [
     4699.3,
-    5399.7
+    4978.7
    ],
-   "overlap_acres": 0.9,
+   "overlap_acres": 0.4,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
@@ -2839,17 +1621,19 @@
     ],
     "S4": false,
     "S4_m": 38014,
-    "S5": "different",
+    "S5": "unknown",
     "S5_agencies": [
      [
       "National Park Service"
      ],
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ]
+     []
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-0537+US-2947",
@@ -2863,7 +1647,7 @@
    ],
    "acres": [
     12352.7,
-    1729.5
+    1707.2
    ],
    "overlap_acres": 1.5,
    "verdict": "NOT SAME",
@@ -2882,407 +1666,111 @@
     ],
     "S4": false,
     "S4_m": 6563,
-    "S5": "different",
+    "S5": "unknown",
     "S5_agencies": [
      [
       "U.S. Fish and Wildlife Service"
      ],
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ]
+     []
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
-   "id": "US-4525+US-6246",
+   "id": "US-2945+US-3928",
    "refs": [
-    "US-4525",
-    "US-6246"
+    "US-2945",
+    "US-3928"
    ],
    "names": [
-    "Cherokee National Forest",
-    "Hampton Creek Cove State Natural Area"
+    "Fall Creek Falls State Park",
+    "Bridgestone/firestone Centennial Wilderness Wildlife Management Area"
    ],
    "acres": [
-    660605.8,
-    704.5
+    7743.8,
+    18132.9
    ],
-   "overlap_acres": 18.6,
+   "overlap_acres": 1.6,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.026,
+    "S2_of_smaller": 0.0,
     "S2_of_larger": 0.0,
     "S3": false,
-    "S3_score": 38.5,
+    "S3_score": 37.5,
     "S3_names": [
-     "cherokee",
-     "hampton creek cove"
+     "fall creek falls",
+     "bridgestone firestone centennial"
     ],
     "S4": false,
-    "S4_m": 249038,
-    "S5": "different",
+    "S4_m": 26079,
+    "S5": "same",
     "S5_agencies": [
      [
-      "U.S. Forest Service"
-     ],
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')",
-      "Tennessee Natural Areas"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-2947+US-3948",
-   "refs": [
-    "US-2947",
-    "US-3948"
-   ],
-   "names": [
-    "Fort Pillow State Park",
-    "John Tully Wildlife Management Area"
-   ],
-   "acres": [
-    1729.5,
-    15531.2
-   ],
-   "overlap_acres": 1.2,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.001,
-    "S2_of_larger": 0.0,
-    "S3": false,
-    "S3_score": 38.1,
-    "S3_names": [
-     "fort pillow",
-     "john tully"
-    ],
-    "S4": false,
-    "S4_m": 951,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
+      "State fish and wildlife agency"
      ],
      [
       "State fish and wildlife agency"
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
-   "id": "US-12361+US-5490",
+   "id": "US-0686+US-5500",
    "refs": [
-    "US-12361",
-    "US-5490"
+    "US-0686",
+    "US-5500"
    ],
    "names": [
-    "Scott's Gulf Wilderness State Park",
-    "Bledsoe State Forest"
+    "Big South Fork National Recreation Area",
+    "Scott State Forest"
    ],
    "acres": [
-    10182.6,
-    8385.5
+    83326.3,
+    2841.8
    ],
-   "overlap_acres": 2.9,
+   "overlap_acres": 35.6,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.0,
+    "S2_of_smaller": 0.013,
     "S2_of_larger": 0.0,
     "S3": false,
-    "S3_score": 33.3,
+    "S3_score": 31.6,
     "S3_names": [
-     "scotts gulf",
-     "bledsoe"
+     "big south fork",
+     "scott"
     ],
     "S4": false,
-    "S4_m": 14881,
-    "S5": "different",
+    "S4_m": 1355,
+    "S5": "unknown",
     "S5_agencies": [
      [
-      "State conservation department (TDEC; PAD-US 'SDC')"
+      "National Park Service"
      ],
-     [
-      "Tennessee Division of Forestry"
-     ]
+     []
     ]
    },
-   "fers": []
-  },
-  {
-   "id": "US-2974+US-4525",
-   "refs": [
-    "US-2974",
-    "US-4525"
-   ],
-   "names": [
-    "Rocky Fork State Park",
-    "Cherokee National Forest"
-   ],
-   "acres": [
-    2202.3,
-    660605.8
-   ],
-   "overlap_acres": 23.8,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.011,
-    "S2_of_larger": 0.0,
-    "S3": false,
-    "S3_score": 33.3,
-    "S3_names": [
-     "rocky fork",
-     "cherokee"
-    ],
-    "S4": false,
-    "S4_m": 202605,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "U.S. Forest Service"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-2955+US-7599",
-   "refs": [
-    "US-2955",
-    "US-7599"
-   ],
-   "names": [
-    "Wilson Cumberland Trail State Park",
-    "Keyes-Harrison Wildlife Management Area"
-   ],
-   "acres": [
-    42213.2,
-    1740.2
-   ],
-   "overlap_acres": 4.1,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.002,
-    "S2_of_larger": 0.0,
-    "S3": false,
-    "S3_score": 32.3,
-    "S3_names": [
-     "wilson cumberland",
-     "keyes harrison"
-    ],
-    "S4": false,
-    "S4_m": 86486,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State fish and wildlife agency"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-2955+US-5499",
-   "refs": [
-    "US-2955",
-    "US-5499"
-   ],
-   "names": [
-    "Wilson Cumberland Trail State Park",
-    "Prentice Cooper State Forest"
-   ],
-   "acres": [
-    42213.2,
-    26079.8
-   ],
-   "overlap_acres": 2.5,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.0,
-    "S2_of_larger": 0.0,
-    "S3": false,
-    "S3_score": 31.2,
-    "S3_names": [
-     "wilson cumberland",
-     "prentice cooper"
-    ],
-    "S4": false,
-    "S4_m": 26421,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State fish and wildlife agency",
-      "Tennessee Division of Forestry"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-2955+US-3971",
-   "refs": [
-    "US-2955",
-    "US-3971"
-   ],
-   "names": [
-    "Wilson Cumberland Trail State Park",
-    "Prentice Cooper Wildlife Management Area"
-   ],
-   "acres": [
-    42213.2,
-    28013.7
-   ],
-   "overlap_acres": 2.9,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.0,
-    "S2_of_larger": 0.0,
-    "S3": false,
-    "S3_score": 31.2,
-    "S3_names": [
-     "wilson cumberland",
-     "prentice cooper"
-    ],
-    "S4": false,
-    "S4_m": 26428,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "State fish and wildlife agency",
-      "TDA"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-3928+US-5490",
-   "refs": [
-    "US-3928",
-    "US-5490"
-   ],
-   "names": [
-    "Bridgestone/firestone Centennial Wilderness Wildlife Management Area",
-    "Bledsoe State Forest"
-   ],
-   "acres": [
-    18579.2,
-    8385.5
-   ],
-   "overlap_acres": 0.4,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.0,
-    "S2_of_larger": 0.0,
-    "S3": false,
-    "S3_score": 30.8,
-    "S3_names": [
-     "bridgestone firestone centennial",
-     "bledsoe"
-    ],
-    "S4": false,
-    "S4_m": 17517,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State fish and wildlife agency"
-     ],
-     [
-      "Tennessee Division of Forestry"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-3931+US-5496",
-   "refs": [
-    "US-3931",
-    "US-5496"
-   ],
-   "names": [
-    "Catoosa Wildlife Management Area",
-    "Lone Mountain State Forest"
-   ],
-   "acres": [
-    79846.5,
-    3572.0
-   ],
-   "overlap_acres": 0.3,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.0,
-    "S2_of_larger": 0.0,
-    "S3": false,
-    "S3_score": 30.0,
-    "S3_names": [
-     "catoosa",
-     "lone mountain"
-    ],
-    "S4": false,
-    "S4_m": 20119,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State fish and wildlife agency"
-     ],
-     [
-      "Tennessee Division of Forestry"
-     ]
-    ]
-   },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-2948+US-7609",
@@ -3295,17 +1783,17 @@
     "North Cumberland Wildlife Management Area"
    ],
    "acres": [
-    42395.6,
-    213649.9
+    41930.6,
+    160384.4
    ],
-   "overlap_acres": 63.8,
+   "overlap_acres": 55.4,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.002,
+    "S2_of_smaller": 0.001,
     "S2_of_larger": 0.0,
     "S3": false,
     "S3_score": 29.6,
@@ -3315,17 +1803,19 @@
     ],
     "S4": false,
     "S4_m": 36372,
-    "S5": "different",
+    "S5": "unknown",
     "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
+     [],
      [
       "State fish and wildlife agency"
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-12774+US-4525",
@@ -3338,7 +1828,7 @@
     "Cherokee National Forest"
    ],
    "acres": [
-    42.5,
+    32.2,
     660605.8
    ],
    "overlap_acres": 0.5,
@@ -3348,7 +1838,7 @@
     "S1": null,
     "S1_records": [],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.012,
+    "S2_of_smaller": 0.015,
     "S2_of_larger": 0.0,
     "S3": false,
     "S3_score": 29.6,
@@ -3361,7 +1851,6 @@
     "S5": "different",
     "S5_agencies": [
      [
-      "State fish and wildlife agency",
       "U.S. Fish and Wildlife Service"
      ],
      [
@@ -3369,7 +1858,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer (full detail)"
+   ]
   },
   {
    "id": "US-0686+US-5498",
@@ -3382,8 +1875,8 @@
     "Pickett State Forest"
    ],
    "acres": [
-    83327.3,
-    24612.0
+    83326.3,
+    24578.2
    ],
    "overlap_acres": 30.9,
    "verdict": "NOT SAME",
@@ -3402,18 +1895,19 @@
     ],
     "S4": false,
     "S4_m": 13308,
-    "S5": "different",
+    "S5": "unknown",
     "S5_agencies": [
      [
-      "National Park Service",
-      "State conservation department (TDEC; PAD-US 'SDC')"
+      "National Park Service"
      ],
-     [
-      "Tennessee Division of Forestry"
-     ]
+     []
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-0034+US-7588",
@@ -3427,7 +1921,7 @@
    ],
    "acres": [
     241081.6,
-    9258.3
+    9245.6
    ],
    "overlap_acres": 26.1,
    "verdict": "NOT SAME",
@@ -3456,7 +1950,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-4525+US-7622",
@@ -3470,9 +1968,9 @@
    ],
    "acres": [
     660605.8,
-    6475.1
+    5086.7
    ],
-   "overlap_acres": 0.6,
+   "overlap_acres": 0.4,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
@@ -3500,7 +1998,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-0537+US-5494",
@@ -3514,16 +2016,16 @@
    ],
    "acres": [
     12352.7,
-    2148.1
+    2136.4
    ],
-   "overlap_acres": 3.6,
+   "overlap_acres": 1.1,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.002,
+    "S2_of_smaller": 0.0,
     "S2_of_larger": 0.0,
     "S3": false,
     "S3_score": 26.1,
@@ -3533,33 +2035,35 @@
     ],
     "S4": false,
     "S4_m": 10186,
-    "S5": "different",
+    "S5": "unknown",
     "S5_agencies": [
      [
       "U.S. Fish and Wildlife Service"
      ],
-     [
-      "Tennessee Division of Forestry"
-     ]
+     []
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
-   "id": "US-12714+US-5493",
+   "id": "US-2980+US-7611",
    "refs": [
-    "US-12714",
-    "US-5493"
+    "US-2980",
+    "US-7611"
    ],
    "names": [
-    "Head of the Crow State Park",
-    "Franklin-Marion State Forest"
+    "Tims Ford State Park",
+    "Owl Hollow Mill Wildlife Management Area"
    ],
    "acres": [
-    5541.8,
-    8824.8
+    3177.8,
+    2457.4
    ],
-   "overlap_acres": 0.3,
+   "overlap_acres": 0.4,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
@@ -3571,25 +2075,25 @@
     "S3": false,
     "S3_score": 25.0,
     "S3_names": [
-     "head crow",
-     "franklin marion"
+     "tims ford",
+     "owl hollow mill"
     ],
     "S4": false,
-    "S4_m": 9082,
+    "S4_m": 6182,
     "S5": "different",
     "S5_agencies": [
      [
-      "State conservation department (TDEC; PAD-US 'SDC')"
+      "Tennessee Valley Authority"
      ],
      [
-      "Tennessee Division of Forestry"
+      "State fish and wildlife agency"
      ]
     ]
    },
    "fers": [],
-   "grades": [
-    "official",
-    "approximate"
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
    ]
   },
   {
@@ -3603,8 +2107,8 @@
     "North Chickamauga Creek Wildlife Management Area"
    ],
    "acres": [
-    42213.2,
-    3176.4
+    18984.7,
+    3130.4
    ],
    "overlap_acres": 6.3,
    "verdict": "NOT SAME",
@@ -3623,61 +2127,19 @@
     ],
     "S4": false,
     "S4_m": 13168,
-    "S5": "different",
+    "S5": "unknown",
     "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
+     [],
      [
       "State fish and wildlife agency"
      ]
     ]
    },
-   "fers": []
-  },
-  {
-   "id": "US-3792+US-7568",
-   "refs": [
-    "US-3792",
-    "US-7568"
-   ],
-   "names": [
-    "Land Between the Lakes National Recreation Area",
-    "Barkley Wildlife Management Area"
-   ],
-   "acres": [
-    171280.9,
-    13808.1
-   ],
-   "overlap_acres": 33.7,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.002,
-    "S2_of_larger": 0.0,
-    "S3": false,
-    "S3_score": 21.1,
-    "S3_names": [
-     "land between",
-     "barkley"
-    ],
-    "S4": false,
-    "S4_m": 35894,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "U.S. Forest Service"
-     ],
-     [
-      "State fish and wildlife agency",
-      "U.S. Army Corps of Engineers"
-     ]
-    ]
-   },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-0034+US-4525",
@@ -3723,92 +2185,6 @@
    "fers": []
   },
   {
-   "id": "US-2976+US-5498",
-   "refs": [
-    "US-2976",
-    "US-5498"
-   ],
-   "names": [
-    "Sgt. Alvin C. York State Park",
-    "Pickett State Forest"
-   ],
-   "acres": [
-    354.5,
-    24612.0
-   ],
-   "overlap_acres": 8.9,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.025,
-    "S2_of_larger": 0.0,
-    "S3": false,
-    "S3_score": 19.0,
-    "S3_names": [
-     "sgt alvin york",
-     "pickett"
-    ],
-    "S4": false,
-    "S4_m": 14195,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "Tennessee Division of Forestry"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "US-2972+US-4525",
-   "refs": [
-    "US-2972",
-    "US-4525"
-   ],
-   "names": [
-    "Roan Mountain State Park",
-    "Cherokee National Forest"
-   ],
-   "acres": [
-    2248.0,
-    660605.8
-   ],
-   "overlap_acres": 102.0,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.045,
-    "S2_of_larger": 0.0,
-    "S3": false,
-    "S3_score": 19.0,
-    "S3_names": [
-     "roan mountain",
-     "cherokee"
-    ],
-    "S4": false,
-    "S4_m": 246447,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "State conservation department (TDEC; PAD-US 'SDC')"
-     ],
-     [
-      "U.S. Forest Service"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
    "id": "US-3953+US-3959",
    "refs": [
     "US-3953",
@@ -3820,7 +2196,7 @@
    ],
    "acres": [
     1248.1,
-    9409.7
+    9407.2
    ],
    "overlap_acres": 1.9,
    "verdict": "NOT SAME",
@@ -3849,7 +2225,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   },
   {
    "id": "US-0685+US-3931",
@@ -3863,16 +2243,16 @@
    ],
    "acres": [
     3160.3,
-    79846.5
+    79407.5
    ],
-   "overlap_acres": 27.4,
+   "overlap_acres": 20.0,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.009,
+    "S2_of_smaller": 0.006,
     "S2_of_larger": 0.0,
     "S3": false,
     "S3_score": 9.1,
@@ -3892,50 +2272,11 @@
      ]
     ]
    },
-   "fers": []
-  },
-  {
-   "id": "US-4525+US-5497",
-   "refs": [
-    "US-4525",
-    "US-5497"
-   ],
-   "names": [
-    "Cherokee National Forest",
-    "Martha Sundquist State Forest"
-   ],
-   "acres": [
-    660605.8,
-    2001.0
-   ],
-   "overlap_acres": 12.2,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.006,
-    "S2_of_larger": 0.0,
-    "S3": false,
-    "S3_score": 8.3,
-    "S3_names": [
-     "cherokee",
-     "martha sundquist"
-    ],
-    "S4": false,
-    "S4_m": 153523,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "U.S. Forest Service"
-     ],
-     [
-      "Tennessee Division of Forestry"
-     ]
-    ]
-   },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "live agency layer, but only part of the park's records could be read"
+   ]
   }
  ],
  "club_same_land_rows": []

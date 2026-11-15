@@ -1,22 +1,18 @@
 {
  "tool": "KPC 13 same-land finder",
  "area": "CA-ON",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "about": "Pairs of POTA parks whose outlines overlap, with the five same-land tests. SAME LAND: likely and CHECK rows are questions for the checker; nothing here relabels a 2-fer.",
  "counts": {
   "parks": 1180,
-  "outlines": 932,
-  "pairs_overlapping": 144,
+  "outlines": 931,
+  "pairs_overlapping": 151,
   "SAME LAND: likely": 12,
   "CHECK": 13,
-  "NOT SAME": 119,
+  "NOT SAME": 126,
   "one_inside_the_other": 1
  },
  "left_out": [
-  [
-   "CA-0023",
-   "no layer address for 'Hard look~5'"
-  ],
   [
    "CA-0177",
    "no layer address for 'Hard look~6'"
@@ -66,20 +62,8 @@
    "no layer address for 'Hard look~2'"
   ],
   [
-   "CA-5114",
-   "no layer address for 'Hard look~10'"
-  ],
-  [
-   "CA-5297",
-   "no layer address for 'Hard look~11'"
-  ],
-  [
    "CA-5314",
    "no layer address for 'Hard look~9'"
-  ],
-  [
-   "CA-5528",
-   "no layer address for 'Hard look~13'"
   ],
   [
    "CA-5536",
@@ -106,10 +90,6 @@
    "no layer address for 'Hard look~14'"
   ],
   [
-   "CA-5945",
-   "no layer address for 'Hard look~15'"
-  ],
-  [
    "CA-5989",
    "no layer address for 'ON-SVCA Grey'"
   ],
@@ -120,30 +100,6 @@
   [
    "CA-6139",
    "no layer address for 'Hard look~16'"
-  ],
-  [
-   "CA-6204",
-   "no layer address for 'Hard look~7'"
-  ],
-  [
-   "CA-6256",
-   "no layer address for 'Hard look~7'"
-  ],
-  [
-   "CA-6257",
-   "no layer address for 'Hard look~7'"
-  ],
-  [
-   "CA-6337",
-   "no layer address for 'Hard look~7'"
-  ],
-  [
-   "CA-6345",
-   "no layer address for 'Hard look~7'"
-  ],
-  [
-   "CA-6512",
-   "no layer address for 'Hard look~7'"
   ],
   [
    "CA-6617",
@@ -1398,10 +1354,10 @@
     "Cabot Head Provincial Park"
    ],
    "acres": [
-    39304.6,
+    39301.2,
     12557.7
    ],
-   "overlap_acres": 10959.1,
+   "overlap_acres": 10959.7,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
@@ -1429,7 +1385,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ]
   },
   {
    "id": "CA-1673+CA-5143",
@@ -1487,10 +1447,10 @@
     "Johnston Harbour-Pine Tree Point Provincial Park"
    ],
    "acres": [
-    39304.6,
+    39301.2,
     2373.0
    ],
-   "overlap_acres": 2354.6,
+   "overlap_acres": 2354.3,
    "verdict": "NOT SAME",
    "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
    "tests": {
@@ -1518,7 +1478,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ]
   },
   {
    "id": "CA-0417+CA-1643",
@@ -1620,7 +1584,7 @@
    ],
    "acres": [
     1860.6,
-    49872.1
+    50689.2
    ],
    "overlap_acres": 607.8,
    "verdict": "NOT SAME",
@@ -1649,7 +1613,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "the club's saved simplified outline (the live layer could not be read)"
+   ]
   },
   {
    "id": "CA-5671+CA-5895",
@@ -1697,6 +1665,54 @@
    ]
   },
   {
+   "id": "CA-0050+CA-0394",
+   "refs": [
+    "CA-0050",
+    "CA-0394"
+   ],
+   "names": [
+    "Lake Superior National Marine Area",
+    "Slate Islands Provincial Park"
+   ],
+   "acres": [
+    2811724.8,
+    16264.8
+   ],
+   "overlap_acres": 16264.8,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.006,
+    "S3": false,
+    "S3_score": 35.7,
+    "S3_names": [
+     "superior marine",
+     "slate islands"
+    ],
+    "S4": false,
+    "S4_m": 100119,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ]
+  },
+  {
    "id": "CA-0365+CA-4882",
    "refs": [
     "CA-0365",
@@ -1708,7 +1724,7 @@
    ],
    "acres": [
     239.1,
-    49872.1
+    50689.2
    ],
    "overlap_acres": 77.5,
    "verdict": "NOT SAME",
@@ -1737,51 +1753,56 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "the club's saved simplified outline (the live layer could not be read)"
+   ]
   },
   {
-   "id": "CA-0050+CA-0394",
+   "id": "CA-0442+CA-4889",
    "refs": [
-    "CA-0050",
-    "CA-0394"
+    "CA-0442",
+    "CA-4889"
    ],
    "names": [
-    "Lake Superior National Marine Area",
-    "Slate Islands Provincial Park"
+    "Wolf Island Provincial Park",
+    "Trent - Severn Waterway National Historic Site"
    ],
    "acres": [
-    2691307.4,
-    16264.8
+    542.7,
+    115395.5
    ],
-   "overlap_acres": 4594.5,
+   "overlap_acres": 242.2,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.282,
+    "S2_of_smaller": 0.446,
     "S2_of_larger": 0.002,
     "S3": false,
-    "S3_score": 35.7,
+    "S3_score": 25.0,
     "S3_names": [
-     "superior marine",
-     "slate islands"
+     "wolf island",
+     "trent severn waterway"
     ],
     "S4": false,
-    "S4_m": 100119,
-    "S5": "different",
+    "S4_m": 29945,
+    "S5": "unknown",
     "S5_agencies": [
      [
-      "Government of Canada (federal protected area)",
-      "Parks Canada"
-     ],
-     [
       "Ontario Parks"
-     ]
+     ],
+     []
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "the club's saved simplified outline (the live layer could not be read)"
+   ]
   },
   {
    "id": "CA-0050+CA-0395",
@@ -1794,10 +1815,10 @@
     "Sleeping Giant Provincial Park"
    ],
    "acres": [
-    2691307.4,
+    2811724.8,
     60490.4
    ],
-   "overlap_acres": 3079.1,
+   "overlap_acres": 3081.5,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
@@ -1825,7 +1846,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ]
   },
   {
    "id": "CA-0050+CA-1627",
@@ -1838,10 +1863,10 @@
     "Sleeping Giant Wilderness Area"
    ],
    "acres": [
-    2691307.4,
+    2811724.8,
     60490.4
    ],
-   "overlap_acres": 3079.1,
+   "overlap_acres": 3081.5,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
@@ -1870,6 +1895,10 @@
     ]
    },
    "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ],
    "grades": [
     "official",
     "approximate"
@@ -1886,7 +1915,7 @@
     "Little Cove Provincial Park"
    ],
    "acres": [
-    39304.6,
+    39301.2,
     42.8
    ],
    "overlap_acres": 42.8,
@@ -1917,7 +1946,59 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ]
+  },
+  {
+   "id": "CA-0050+CA-0201",
+   "refs": [
+    "CA-0050",
+    "CA-0201"
+   ],
+   "names": [
+    "Lake Superior National Marine Area",
+    "Edward Island Provincial Park"
+   ],
+   "acres": [
+    2811724.8,
+    1509.9
+   ],
+   "overlap_acres": 1509.9,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 28.6,
+    "S3_names": [
+     "superior marine",
+     "edward island"
+    ],
+    "S4": false,
+    "S4_m": 75256,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ]
   },
   {
    "id": "CA-0140+CA-0152",
@@ -2018,10 +2099,10 @@
     "Perth Wildlife Reserve"
    ],
    "acres": [
-    49872.1,
+    50689.2,
     409.9
    ],
-   "overlap_acres": 36.3,
+   "overlap_acres": 36.7,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
@@ -2050,7 +2131,7 @@
    },
    "fers": [],
    "outline_from": [
-    "live agency layer (full detail)",
+    "the club's saved simplified outline (the live layer could not be read)",
     "the club's saved simplified outline (the live layer could not be read)"
    ]
   },
@@ -2495,7 +2576,7 @@
     "Pukaskwa River Provincial Park"
    ],
    "acres": [
-    460980.9,
+    460969.5,
     3620.9
    ],
    "overlap_acres": 35.8,
@@ -2526,7 +2607,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ]
   },
   {
    "id": "CA-0263+CA-1477",
@@ -2797,17 +2882,17 @@
     "Lake Superior North Shore Conservation Reserve"
    ],
    "acres": [
-    2691307.4,
+    2811724.8,
     3746.3
    ],
-   "overlap_acres": 44.2,
+   "overlap_acres": 119.9,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.012,
+    "S2_of_smaller": 0.032,
     "S2_of_larger": 0.0,
     "S3": false,
     "S3_score": 69.6,
@@ -2828,7 +2913,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ]
   },
   {
    "id": "CA-0245+CA-1462",
@@ -2884,17 +2973,17 @@
     "Schreiber Channel Provincial Park"
    ],
    "acres": [
-    2691307.4,
+    2811724.8,
     29.5
    ],
-   "overlap_acres": 1.6,
+   "overlap_acres": 1.5,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.055,
+    "S2_of_smaller": 0.053,
     "S2_of_larger": 0.0,
     "S3": false,
     "S3_score": 50.0,
@@ -2915,7 +3004,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ]
   },
   {
    "id": "CA-0050+CA-0222",
@@ -2928,17 +3021,17 @@
     "Gravel River Provincial Park"
    ],
    "acres": [
-    2691307.4,
+    2811724.8,
     1817.8
    ],
-   "overlap_acres": 4.2,
+   "overlap_acres": 5.6,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.002,
+    "S2_of_smaller": 0.003,
     "S2_of_larger": 0.0,
     "S3": false,
     "S3_score": 44.4,
@@ -2959,7 +3052,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ]
   },
   {
    "id": "CA-0407+CA-1551",
@@ -3231,16 +3328,16 @@
    ],
    "acres": [
     22.6,
-    49872.1
+    50689.2
    ],
-   "overlap_acres": 10.6,
+   "overlap_acres": 5.9,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.468,
+    "S2_of_smaller": 0.26,
     "S2_of_larger": 0.0,
     "S3": false,
     "S3_score": 40.0,
@@ -3263,7 +3360,7 @@
    "fers": [],
    "outline_from": [
     "the club's saved simplified outline (the live layer could not be read)",
-    "live agency layer (full detail)"
+    "the club's saved simplified outline (the live layer could not be read)"
    ]
   },
   {
@@ -3320,17 +3417,17 @@
     "Porphyry Island Provincial Park"
    ],
    "acres": [
-    2691307.4,
+    2811724.8,
     269.3
    ],
-   "overlap_acres": 12.9,
+   "overlap_acres": 269.3,
    "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.048,
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
     "S2_of_larger": 0.0,
     "S3": false,
     "S3_score": 40.0,
@@ -3351,7 +3448,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ]
   },
   {
    "id": "CA-0134+CA-0423",
@@ -3580,17 +3681,17 @@
     "Rainbow Falls Provincial Park"
    ],
    "acres": [
-    2691307.4,
+    2811724.8,
     1436.0
    ],
-   "overlap_acres": 2.0,
+   "overlap_acres": 2.4,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.001,
+    "S2_of_smaller": 0.002,
     "S2_of_larger": 0.0,
     "S3": false,
     "S3_score": 35.7,
@@ -3611,7 +3712,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ]
   },
   {
    "id": "CA-0444+CA-1475",
@@ -3699,6 +3804,49 @@
     ]
    },
    "fers": []
+  },
+  {
+   "id": "CA-4889+CA-5291",
+   "refs": [
+    "CA-4889",
+    "CA-5291"
+   ],
+   "names": [
+    "Trent - Severn Waterway National Historic Site",
+    "Ken Reid Conservation Area"
+   ],
+   "acres": [
+    115395.5,
+    261.9
+   ],
+   "overlap_acres": 2.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.011,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 34.5,
+    "S3_names": [
+     "trent severn waterway",
+     "ken reid"
+    ],
+    "S4": false,
+    "S4_m": 37924,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "the club's saved simplified outline (the live layer could not be read)"
+   ]
   },
   {
    "id": "CA-0283+CA-1449",
@@ -3797,17 +3945,17 @@
     "Portland Bay Conservation Area"
    ],
    "acres": [
-    49872.1,
+    50689.2,
     5.8
    ],
-   "overlap_acres": 0.9,
+   "overlap_acres": 0.8,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.16,
+    "S2_of_smaller": 0.144,
     "S2_of_larger": 0.0,
     "S3": false,
     "S3_score": 33.3,
@@ -3827,7 +3975,7 @@
    },
    "fers": [],
    "outline_from": [
-    "live agency layer (full detail)",
+    "the club's saved simplified outline (the live layer could not be read)",
     "the club's saved simplified outline (the live layer could not be read)"
    ]
   },
@@ -4058,7 +4206,7 @@
     "Puff Island Provincial Park"
    ],
    "acres": [
-    2691307.4,
+    2811724.8,
     24.6
    ],
    "overlap_acres": 24.6,
@@ -4089,7 +4237,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ]
   },
   {
    "id": "CA-1568+CA-1577",
@@ -4188,7 +4340,7 @@
     "Agate Island Wilderness Area"
    ],
    "acres": [
-    2691307.4,
+    2811724.8,
     151.8
    ],
    "overlap_acres": 151.8,
@@ -4219,7 +4371,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ]
   },
   {
    "id": "CA-0050+CA-0386",
@@ -4232,17 +4388,17 @@
     "Shesheeb Bay Provincial Park"
    ],
    "acres": [
-    2691307.4,
+    2811724.8,
     719.4
    ],
-   "overlap_acres": 14.1,
+   "overlap_acres": 51.5,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.02,
+    "S2_of_smaller": 0.072,
     "S2_of_larger": 0.0,
     "S3": false,
     "S3_score": 29.6,
@@ -4263,7 +4419,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ]
   },
   {
    "id": "CA-0260+CA-1453",
@@ -4429,50 +4589,6 @@
     "S5_agencies": [
      [
       "Ontario Parks"
-     ],
-     [
-      "Ontario Parks"
-     ]
-    ]
-   },
-   "fers": []
-  },
-  {
-   "id": "CA-0050+CA-0201",
-   "refs": [
-    "CA-0050",
-    "CA-0201"
-   ],
-   "names": [
-    "Lake Superior National Marine Area",
-    "Edward Island Provincial Park"
-   ],
-   "acres": [
-    2691307.4,
-    1509.9
-   ],
-   "overlap_acres": 11.2,
-   "verdict": "NOT SAME",
-   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
-   "tests": {
-    "S1": null,
-    "S1_records": [],
-    "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.007,
-    "S2_of_larger": 0.0,
-    "S3": false,
-    "S3_score": 28.6,
-    "S3_names": [
-     "superior marine",
-     "edward island"
-    ],
-    "S4": false,
-    "S4_m": 75256,
-    "S5": "different",
-    "S5_agencies": [
-     [
-      "Government of Canada (federal protected area)",
-      "Parks Canada"
      ],
      [
       "Ontario Parks"
@@ -4750,7 +4866,7 @@
     "Rock Dunder Nature Reserve"
    ],
    "acres": [
-    49872.1,
+    50689.2,
     288.3
    ],
    "overlap_acres": 3.1,
@@ -4780,7 +4896,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ]
   },
   {
    "id": "CA-0324+CA-1324",
@@ -4999,6 +5119,49 @@
    "fers": []
   },
   {
+   "id": "CA-4889+CA-6092",
+   "refs": [
+    "CA-4889",
+    "CA-6092"
+   ],
+   "names": [
+    "Trent - Severn Waterway National Historic Site",
+    "Young's Point Conservation Area"
+   ],
+   "acres": [
+    115395.5,
+    41.1
+   ],
+   "overlap_acres": 0.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.017,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 24.2,
+    "S3_names": [
+     "trent severn waterway",
+     "youngs point"
+    ],
+    "S4": false,
+    "S4_m": 21573,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "the club's saved simplified outline (the live layer could not be read)"
+   ]
+  },
+  {
    "id": "CA-0423+CA-1710",
    "refs": [
     "CA-0423",
@@ -5096,10 +5259,10 @@
     "Foley Mountain Conservation Area"
    ],
    "acres": [
-    49872.1,
+    50689.2,
     488.7
    ],
-   "overlap_acres": 4.5,
+   "overlap_acres": 4.4,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
@@ -5128,7 +5291,7 @@
    },
    "fers": [],
    "outline_from": [
-    "live agency layer (full detail)",
+    "the club's saved simplified outline (the live layer could not be read)",
     "the club's saved simplified outline (the live layer could not be read)"
    ]
   },
@@ -5305,6 +5468,51 @@
    "fers": []
   },
   {
+   "id": "CA-0209+CA-4889",
+   "refs": [
+    "CA-0209",
+    "CA-4889"
+   ],
+   "names": [
+    "Ferris Provincial Park",
+    "Trent - Severn Waterway National Historic Site"
+   ],
+   "acres": [
+    537.1,
+    115395.5
+   ],
+   "overlap_acres": 2.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.005,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 22.2,
+    "S3_names": [
+     "ferris",
+     "trent severn waterway"
+    ],
+    "S4": false,
+    "S4_m": 41446,
+    "S5": "unknown",
+    "S5_agencies": [
+     [
+      "Ontario Parks"
+     ],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "the club's saved simplified outline (the live layer could not be read)"
+   ]
+  },
+  {
    "id": "CA-1475+CA-1483",
    "refs": [
     "CA-1475",
@@ -5436,6 +5644,54 @@
    "fers": []
   },
   {
+   "id": "CA-0050+CA-1318",
+   "refs": [
+    "CA-0050",
+    "CA-1318"
+   ],
+   "names": [
+    "Lake Superior National Marine Area",
+    "Black Bay Bog Conservation Reserve"
+   ],
+   "acres": [
+    2811724.8,
+    4612.5
+   ],
+   "overlap_acres": 0.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 21.4,
+    "S3_names": [
+     "superior marine",
+     "black bay bog"
+    ],
+    "S4": false,
+    "S4_m": 23028,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Government of Canada (federal protected area)",
+      "Parks Canada"
+     ],
+     [
+      "Ontario Parks"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ]
+  },
+  {
    "id": "CA-0143+CA-0306",
    "refs": [
     "CA-0143",
@@ -5489,17 +5745,17 @@
     "Ruby Lake Provincial Park"
    ],
    "acres": [
-    2691307.4,
+    2811724.8,
     6781.4
    ],
-   "overlap_acres": 29.3,
+   "overlap_acres": 35.0,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.004,
+    "S2_of_smaller": 0.005,
     "S2_of_larger": 0.0,
     "S3": false,
     "S3_score": 21.1,
@@ -5520,7 +5776,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ]
   },
   {
    "id": "CA-0397+CA-1551",
@@ -5953,6 +6213,49 @@
    "fers": []
   },
   {
+   "id": "CA-4889+CA-5647",
+   "refs": [
+    "CA-4889",
+    "CA-5647"
+   ],
+   "names": [
+    "Trent - Severn Waterway National Historic Site",
+    "Rice Lake Conservation Area"
+   ],
+   "acres": [
+    115395.5,
+    250.7
+   ],
+   "overlap_acres": 0.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.003,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 16.0,
+    "S3_names": [
+     "trent severn waterway",
+     "rice"
+    ],
+    "S4": false,
+    "S4_m": 23635,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "the club's saved simplified outline (the live layer could not be read)"
+   ]
+  },
+  {
    "id": "CA-0242+CA-1476",
    "refs": [
     "CA-0242",
@@ -6007,16 +6310,16 @@
    ],
    "acres": [
     2759.5,
-    49872.1
+    50689.2
    ],
-   "overlap_acres": 1.8,
+   "overlap_acres": 11.9,
    "verdict": "NOT SAME",
    "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
    "tests": {
     "S1": null,
     "S1_records": [],
     "S2": "PART OVERLAP",
-    "S2_of_smaller": 0.001,
+    "S2_of_smaller": 0.004,
     "S2_of_larger": 0.0,
     "S3": false,
     "S3_score": 16.0,
@@ -6036,7 +6339,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "the club's saved simplified outline (the live layer could not be read)"
+   ]
   },
   {
    "id": "CA-0337+CA-1564",
@@ -6135,7 +6442,7 @@
     "White Lake Provincial Park"
    ],
    "acres": [
-    460980.9,
+    460969.5,
     10042.1
    ],
    "overlap_acres": 7.5,
@@ -6166,7 +6473,11 @@
      ]
     ]
    },
-   "fers": []
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "live agency layer (full detail)"
+   ]
   },
   {
    "id": "CA-0197+CA-0371",
@@ -6210,6 +6521,49 @@
     ]
    },
    "fers": []
+  },
+  {
+   "id": "CA-4889+CA-5091",
+   "refs": [
+    "CA-4889",
+    "CA-5091"
+   ],
+   "names": [
+    "Trent - Severn Waterway National Historic Site",
+    "Birdsall Wildlife Area"
+   ],
+   "acres": [
+    115395.5,
+    594.8
+   ],
+   "overlap_acres": 5.6,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.009,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 13.8,
+    "S3_names": [
+     "trent severn waterway",
+     "birdsall"
+    ],
+    "S4": false,
+    "S4_m": 17930,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "the club's saved simplified outline (the live layer could not be read)",
+    "the club's saved simplified outline (the live layer could not be read)"
+   ]
   },
   {
    "id": "CA-1310+CA-1475",
