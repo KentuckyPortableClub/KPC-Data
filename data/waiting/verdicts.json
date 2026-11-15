@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-14T21:45Z",
+ "checked": "2026-11-15T01:21Z",
  "switched_on": false,
  "results": [
   {
@@ -698,7 +698,7 @@
    "path": "data/docs/US-AK.json",
    "kind": "docs",
    "why": [
-    "F-D3 4 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/kanuti/visit-us/rules-policies"
+    "F-D3 5 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/izembek/visit-us/rules-policies"
    ],
    "notes": [
     "no live copy: first time this file is published"
@@ -715,9 +715,11 @@
   {
    "path": "data/docs/US-AR.json",
    "kind": "docs",
-   "why": [],
+   "why": [
+    "F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/logan-cave/visit-us/rules-policies"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/docs/US-AZ.json",
@@ -764,7 +766,7 @@
    "path": "data/docs/US-DE.json",
    "kind": "docs",
    "why": [
-    "F-D3 2 of 13 re-tested links dead, e.g. https://www.fws.gov/refuge/bombay-hook/visit-us/rules-policies"
+    "F-D3 2 of 13 re-tested links dead, e.g. https://www.fws.gov/refuge/prime-hook/visit-us/rules-policies"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -779,17 +781,15 @@
   {
    "path": "data/docs/US-GA.json",
    "kind": "docs",
-   "why": [
-    "F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/okefenokee/visit-us/rules-policies"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-HI.json",
    "kind": "docs",
    "why": [
-    "F-D3 5 of 20 re-tested links dead, e.g. https://www.nps.gov/puhe/learn/management/lawsandpolicies.htm"
+    "F-D3 5 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/kealia-pond/visit-us/rules-policies"
    ],
    "notes": [
     "no live copy: first time this file is published"
@@ -811,7 +811,8 @@
    "path": "data/docs/US-IL.json",
    "kind": "docs",
    "why": [
-    "F-D2 3 map links on a banned host (fire news / map pins / social), e.g. https://www.google.com/maps/place/39%C2%B006'01.1%22N+88%C2%B047'57.1%"
+    "F-D2 3 map links on a banned host (fire news / map pins / social), e.g. https://www.google.com/maps/place/39%C2%B006'01.1%22N+88%C2%B047'57.1%",
+    "F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/kankakee-and-conservation-area/visit-us/rul"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -820,7 +821,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/fish-and-wildlife/files/HE-WabashCA_Parke1.pdf"
+    "F-D3 7 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/big-oaks/visit-us/rules-policies"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -829,7 +830,7 @@
    "path": "data/docs/US-KS.json",
    "kind": "docs",
    "why": [
-    "F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/safe/learn/management/lawsandpolicies.htm"
+    "F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/flint-hills/visit-us/rules-policies"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -838,7 +839,7 @@
    "path": "data/docs/US-LA.json",
    "kind": "docs",
    "why": [
-    "F-D3 5 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/red-river/visit-us/rules-policies"
+    "F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/catahoula/visit-us/rules-policies"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -853,11 +854,9 @@
   {
    "path": "data/docs/US-MD.json",
    "kind": "docs",
-   "why": [
-    "F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/thst/learn/management/lawsandpolicies.htm"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-ME.json",
@@ -872,17 +871,19 @@
   {
    "path": "data/docs/US-MI.json",
    "kind": "docs",
-   "why": [],
+   "why": [
+    "F-D3 4 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s"
+   ],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/docs/US-MN.json",
    "kind": "docs",
    "why": [
-    "F-D3 6 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/rydell/visit-us/rules-policies"
+    "F-D3 5 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/minnesota-valley-wetland-management-distric"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -899,11 +900,9 @@
   {
    "path": "data/docs/US-MS.json",
    "kind": "docs",
-   "why": [
-    "F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/coldwater_river/visit-us/rules-policies"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-MT.json",
@@ -925,7 +924,7 @@
    "path": "data/docs/US-ND.json",
    "kind": "docs",
    "why": [
-    "F-D3 7 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/slade/visit-us/rules-policies"
+    "F-D3 4 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/arrowwood-wetland-management-district/visit"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -940,9 +939,11 @@
   {
    "path": "data/docs/US-NH.json",
    "kind": "docs",
-   "why": [],
+   "why": [
+    "F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/silvio-o-conte/visit-us/rules-policies"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/docs/US-NJ.json",
@@ -956,11 +957,13 @@
   {
    "path": "data/docs/US-NM.json",
    "kind": "docs",
-   "why": [],
+   "why": [
+    "F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/las-vegas/visit-us/rules-policies"
+   ],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/docs/US-NV.json",
@@ -997,11 +1000,13 @@
   {
    "path": "data/docs/US-OR.json",
    "kind": "docs",
-   "why": [],
+   "why": [
+    "F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/siletz-bay/visit-us/rules-policies"
+   ],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/docs/US-PA.json",
@@ -1014,7 +1019,7 @@
    "path": "data/docs/US-RI.json",
    "kind": "docs",
    "why": [
-    "F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/john-h-chafee/visit-us/rules-policies"
+    "F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/sachuest-point/visit-us/rules-policies"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -1022,11 +1027,9 @@
   {
    "path": "data/docs/US-SC.json",
    "kind": "docs",
-   "why": [
-    "F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/cape-romain/visit-us/rules-policies"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-SD.json",
