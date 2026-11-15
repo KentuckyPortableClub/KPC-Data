@@ -1,12 +1,12 @@
 # kpc_pulloffs run report (2026-11-15)
 
-- version 1.0.0; exit code 3; ran 50.3 min; 174 web requests
-- parks in this input (after --areas / --limit): 190; done: 63; left for the next run: 127
-- candidates for chat 11: 2350; kept out (log only, work/log/kept_out.jsonl): 6749
+- version 1.0.0; exit code 3; ran 50.0 min; 249 web requests
+- parks in this input (after --areas / --limit): 190; done: 71; left for the next run: 119
+- candidates for chat 11: 2408; kept out (log only, work/log/kept_out.jsonl): 6894
 
 ## Recall check (acceptance test only, before the duplicate drop)
 
-Official access pins next to a public road (within 30 m) inside the search band: 242; found within 50 m: 56 (23%)
+Official access pins next to a public road (within 30 m) inside the search band: 273; found within 50 m: 58 (21%)
 
 ## Parks
 
@@ -93,7 +93,24 @@ Official access pins next to a public road (within 30 m) inside the search band:
   - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
 - US-3796 Big Rivers Wildlife Management Area: done; 12 candidate(s); 42 kept out; photo cells 46; points looked at {'entry': 18, 'road': 189, 'hint': 0}; roads {'public': 23, 'dropped (interstate/ramp/private/alley)': 25, 'lot-road hints': 0}; recall 4/8
   - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
-- US-3797 Boatwright Wildlife Management Area: time ran out after 21 of 68 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
+- US-3797 Boatwright Wildlife Management Area: done; 20 candidate(s); 73 kept out; photo cells 68; points looked at {'entry': 44, 'road': 266, 'hint': 0}; roads {'public': 20, 'dropped (interstate/ramp/private/alley)': 3, 'lot-road hints': 0}; recall 1/4
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3798 Buck Creek Wildlife Management Area: done; 1 candidate(s); 0 kept out; photo cells 7; points looked at {'entry': 19, 'road': 30, 'hint': 0}; roads {'public': 6, 'dropped (interstate/ramp/private/alley)': 0, 'lot-road hints': 0}; recall 0/1
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3799 Burchell-Beech Wildlife Management Area: done; 1 candidate(s); 1 kept out; photo cells 5; points looked at {'entry': 17, 'road': 15, 'hint': 0}; roads {'public': 5, 'dropped (interstate/ramp/private/alley)': 0, 'lot-road hints': 0}; recall 0/1
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3800 Cedar Creek Lake Wildlife Management Area: done; 17 candidate(s); 30 kept out; photo cells 21; points looked at {'entry': 29, 'road': 86, 'hint': 0}; roads {'public': 28, 'dropped (interstate/ramp/private/alley)': 6, 'lot-road hints': 0}; recall 1/4
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3801 Clifty Wilderness Area: done; 2 candidate(s); 18 kept out; photo cells 84; points looked at {'entry': 20, 'road': 386, 'hint': 0}; roads {'public': 68, 'dropped (interstate/ramp/private/alley)': 4, 'lot-road hints': 0}; recall 0/16
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3802 Clyde E Buckley Sanctuary: done; 15 candidate(s); 16 kept out; photo cells 14; points looked at {'entry': 28, 'road': 43, 'hint': 0}; roads {'public': 4, 'dropped (interstate/ramp/private/alley)': 5, 'lot-road hints': 0}; recall 0/0
+  - note: no official access point and no approved pull-off: looking up to 400 m outside (ruling G-P2)
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3803 Coil Estate Wildlife Management Area: done; 1 candidate(s); 3 kept out; photo cells 4; points looked at {'entry': 2, 'road': 7, 'hint': 0}; roads {'public': 2, 'dropped (interstate/ramp/private/alley)': 0, 'lot-road hints': 0}; recall 0/2
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3804 Cranks Creek Wildlife Management Area: done; 1 candidate(s); 4 kept out; photo cells 12; points looked at {'entry': 24, 'road': 79, 'hint': 0}; roads {'public': 28, 'dropped (interstate/ramp/private/alley)': 0, 'lot-road hints': 0}; recall 0/3
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3805 Curtis Gates Lloyd Wildlife Management Area: time ran out after 5 of 17 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
 
 ## Web manners
 
