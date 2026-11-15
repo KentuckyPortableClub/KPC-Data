@@ -244,22 +244,23 @@
   "US-FL": {
    "checked": 460,
    "counts": {
-    "agree": 83,
-    "handover_hints": 15,
+    "agree": 85,
+    "handover_hints": 12,
     "no_page": 0,
     "no_size": 279,
-    "off": 46,
+    "not_read": 0,
+    "off": 34,
     "ours_unknown": 2,
     "parks": 460,
     "retired": 0,
-    "unsure": 31,
-    "weak": 10,
-    "with_outline": 441
+    "unsure": 36,
+    "weak": 8,
+    "with_outline": 437
    },
    "left": 0,
    "parks": 460,
-   "status": "queued",
-   "updated": "2026-11-08"
+   "status": "done",
+   "updated": "2026-11-15"
   },
   "US-GA": {
    "checked": 238,
@@ -1091,46 +1092,57 @@
  },
  "hosts": {
   "www.alapark.com": 1794839162.2541056,
-  "www.nps.gov": 1794839637.6295125
+  "www.floridastateparks.org": 1794843061.7207148,
+  "www.nps.gov": 1794839637.6295125,
+  "www.swfwmd.state.fl.us": 1794843293.845532
  },
  "last": {
   "areas": [
-   "US-SC"
+   "US-FL"
   ],
   "manners": {
-   "browser": 6,
-   "deferred": 13,
+   "deferred": 59,
+   "dropped_queued": 35,
    "errors": 0,
+   "for_person": 4,
    "for_person_urls": [
     [
-     "http://www.wildlifesouth.com/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.wildlifesouth.com this run"
+     "https://www.floridastateparks.org/parks-and-trails/little-talbot-island-state-park",
+     "HTTP 403 twice"
     ],
     [
-     "https://www.yorkcountygov.com/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.yorkcountygov.com this run"
+     "https://www.floridastateparks.org/learn/rules-regulations",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.swfwmd.state.fl.us/recreation/myakka-river-flatford-swamp",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.swfwmd.state.fl.us/recreation/deep-creek-preserve",
+     "HTTP 403 twice"
     ]
    ],
-   "host_rule": 0,
-   "requests": 16,
-   "rested": 0,
-   "robots": 2,
-   "robots_unreadable": 2,
-   "strikes": 0
+   "host_rule": 3,
+   "requests": 322,
+   "rested": 407,
+   "retry403": 4,
+   "robots": 1,
+   "strikes": 8
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 5,
-   "no_size": 20,
-   "ours_unknown": 1,
-   "pages_read": 6,
-   "parks": 21,
+   "handover_hints": 12,
+   "no_size": 280,
+   "ours_unknown": 2,
+   "pages_read": 254,
+   "parks": 458,
    "retired": 0,
-   "size_agree": 0,
-   "size_off": 0,
-   "size_unsure": 0,
-   "skipped_fresh": 146,
-   "with_outline": 21
+   "size_agree": 85,
+   "size_off": 34,
+   "size_unsure": 36,
+   "skipped_fresh": 2,
+   "with_outline": 437
   },
   "when": "2026-11-15"
  },

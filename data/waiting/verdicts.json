@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-15T15:27Z",
+ "checked": "2026-11-15T16:03Z",
  "switched_on": false,
  "results": [
   {
@@ -867,11 +867,13 @@
   {
    "path": "data/docs/US-MI.json",
    "kind": "docs",
-   "why": [],
+   "why": [
+    "F-D3 2 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s"
+   ],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/docs/US-MN.json",
