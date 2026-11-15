@@ -1,12 +1,12 @@
 # kpc_pulloffs run report (2026-11-15)
 
-- version 1.0.0; exit code 3; ran 50.2 min; 182 web requests
-- parks in this input (after --areas / --limit): 190; done: 60; left for the next run: 130
-- candidates for chat 11: 2318; kept out (log only, work/log/kept_out.jsonl): 6640
+- version 1.0.0; exit code 3; ran 50.3 min; 174 web requests
+- parks in this input (after --areas / --limit): 190; done: 63; left for the next run: 127
+- candidates for chat 11: 2350; kept out (log only, work/log/kept_out.jsonl): 6749
 
 ## Recall check (acceptance test only, before the duplicate drop)
 
-Official access pins next to a public road (within 30 m) inside the search band: 230; found within 50 m: 50 (22%)
+Official access pins next to a public road (within 30 m) inside the search band: 242; found within 50 m: 56 (23%)
 
 ## Parks
 
@@ -86,10 +86,17 @@ Official access pins next to a public road (within 30 m) inside the search band:
 - US-3793 Ballard Wildlife Management Area: done; 25 candidate(s); 94 kept out; photo cells 55; points looked at {'entry': 48, 'road': 212, 'hint': 0}; roads {'public': 24, 'dropped (interstate/ramp/private/alley)': 0, 'lot-road hints': 0}; recall 2/24
   - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
   - problem (skipped, run went on): NAIP photo for cell 639,8229 not read: HTTP 504
-- US-3794 Beaver Creek Wildlife Management Area: time ran out after 96 of 168 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
+- US-3794 Beaver Creek Wildlife Management Area: done; 20 candidate(s); 67 kept out; photo cells 168; points looked at {'entry': 260, 'road': 977, 'hint': 0}; roads {'public': 158, 'dropped (interstate/ramp/private/alley)': 9, 'lot-road hints': 0}; recall 2/3
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+  - problem (skipped, run went on): NAIP photo for cell 1456,8180 not read: HTTP 504
+- US-3795 Beechy Creek Wildlife Management Area: done; 0 candidate(s); 0 kept out; photo cells 3; points looked at {'entry': 4, 'road': 14, 'hint': 0}; roads {'public': 8, 'dropped (interstate/ramp/private/alley)': 0, 'lot-road hints': 0}; recall 0/1
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3796 Big Rivers Wildlife Management Area: done; 12 candidate(s); 42 kept out; photo cells 46; points looked at {'entry': 18, 'road': 189, 'hint': 0}; roads {'public': 23, 'dropped (interstate/ramp/private/alley)': 25, 'lot-road hints': 0}; recall 4/8
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3797 Boatwright Wildlife Management Area: time ran out after 21 of 68 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
 
 ## Web manners
 
-- tigerweb.geo.census.gov: no robots rules (it answered with a web page, not a robots file); treated as allow-all (RFC 9309)
-- imagery.nationalmap.gov: no robots rules (HTTP 403); treated as allow-all (RFC 9309)
 - services2.arcgis.com: robots.txt could not be read (network error: _ReqRefused: <urlopen error services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)>); host skipped (RFC 9309: unreachable = disallow)
+- imagery.nationalmap.gov: no robots rules (HTTP 403); treated as allow-all (RFC 9309)
+- tigerweb.geo.census.gov: no robots rules (it answered with a web page, not a robots file); treated as allow-all (RFC 9309)
