@@ -6,6 +6,7 @@
   "handover_hints": 20,
   "no_page": 1,
   "no_size": 146,
+  "not_read": 0,
   "off": 15,
   "ours_unknown": 5,
   "parks": 253,
@@ -9363,29 +9364,29 @@
   "US-6877": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Yadkin River State Game Land",
    "official": null,
    "ours": {
     "acres": 11656,
     "dissolved": {
-     "after": 33479,
-     "before": 45855,
+     "after": 33495,
+     "before": 45871,
      "copies": 3,
      "families": {
       "ncg": 11636,
       "sgnca": 11656,
-      "sgncc": 10187
+      "sgncc": 10203
      },
-     "family_fold": 21823,
+     "family_fold": 21839,
      "family_used": "sgnca",
-     "parts": 8,
-     "records": 128,
-     "tracts": 117
+     "parts": 10,
+     "records": 136,
+     "tracts": 123
     },
-    "family_fold": "layers {'ncg': 11636, 'sgnca': 11656, 'sgncc': 10187}: one land in 3 layers, the sgnca copy used (21,823 ac of copies not added)",
+    "family_fold": "layers {'ncg': 11636, 'sgnca': 11656, 'sgncc': 10203}: one land in 3 layers, the sgnca copy used (21,839 ac of copies not added)",
     "manager": "",
-    "note": "128 joined records = 117 tracts: 3 copies of a tract (same acres, another layer) and 8 fee tracts under a designation record folded; summed 45855 -> 33479 acres",
+    "note": "136 joined records = 123 tracts: 3 copies of a tract (same acres, another layer) and 10 fee tracts under a designation record folded; summed 45871 -> 33495 acres",
     "pieces": [
      [
       "sgnca13377",
@@ -9402,7 +9403,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 9
+    "unknown_pieces": 1
    },
    "owner_now": null,
    "pages": [
@@ -9773,7 +9774,7 @@
   "US-6883": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Brinkleyville State Game Land",
    "official": null,
    "ours": {
@@ -9831,19 +9832,17 @@
   "US-6884": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Buckhorn State Game Land",
    "official": null,
    "ours": {
-    "acres": 407,
+    "acres": 491,
     "dissolved": {
      "after": 491,
      "before": 1473,
      "copies": 2,
-     "key_union": 407,
      "parts": 0,
      "records": 3,
-     "summed": 491,
      "tracts": 1
     },
     "manager": "",
@@ -9856,7 +9855,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -9971,11 +9970,11 @@
   "US-6886": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Buffalo Cove State Game Land",
    "official": null,
    "ours": {
-    "acres": 7952,
+    "acres": 7031,
     "dissolved": {
      "after": 13843,
      "before": 34518,
@@ -9986,10 +9985,8 @@
      },
      "family_fold": 6812,
      "family_used": "sgnca",
-     "key_union": 7952,
      "parts": 2,
      "records": 13,
-     "summed": 7031,
      "tracts": 9
     },
     "family_fold": "layers {'sgnca': 7031, 'sgncc': 6812}: one land in 2 layers, the sgnca copy used (6,812 ac of copies not added)",
@@ -10100,31 +10097,29 @@
   "US-6888": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Butner-Falls of the Neuse State Game Land",
    "official": null,
    "ours": {
-    "acres": 45702,
+    "acres": 40413,
     "dissolved": {
-     "after": 112859,
-     "before": 150992,
+     "after": 112849,
+     "before": 150998,
      "copies": 2,
      "families": {
       "ncg": 37480,
       "sgnca": 40413,
-      "sgncc": 34966
+      "sgncc": 34956
      },
-     "family_fold": 72446,
+     "family_fold": 72436,
      "family_used": "sgnca",
-     "key_union": 45702,
-     "parts": 29,
-     "records": 70,
-     "summed": 40413,
+     "parts": 30,
+     "records": 71,
      "tracts": 39
     },
-    "family_fold": "layers {'sgnca': 40413, 'ncg': 37480, 'sgncc': 34966}: one land in 3 layers, the sgnca copy used (72,446 ac of copies not added)",
+    "family_fold": "layers {'sgnca': 40413, 'ncg': 37480, 'sgncc': 34956}: one land in 3 layers, the sgnca copy used (72,436 ac of copies not added)",
     "manager": "",
-    "note": "70 joined records = 39 tracts: 2 copies of a tract (same acres, another layer) and 29 fee tracts under a designation record folded; summed 150992 -> 112859 acres",
+    "note": "71 joined records = 39 tracts: 2 copies of a tract (same acres, another layer) and 30 fee tracts under a designation record folded; summed 150998 -> 112849 acres",
     "pieces": [
      [
       "sgnca9059",
@@ -10135,7 +10130,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 1
    },
    "owner_now": null,
    "pages": [
@@ -10448,19 +10443,17 @@
   "US-6893": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Chowan State Game Land",
    "official": null,
    "ours": {
-    "acres": 27997,
+    "acres": 33841,
     "dissolved": {
      "after": 33841,
      "before": 33874,
      "copies": 1,
-     "key_union": 27997,
      "parts": 0,
      "records": 4,
-     "summed": 33841,
      "tracts": 3
     },
     "manager": "",
@@ -10518,11 +10511,11 @@
   "US-6894": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Chowan Swamp State Game Land",
    "official": null,
    "ours": {
-    "acres": 36270,
+    "acres": 33769,
     "dissolved": {
      "after": 62293,
      "before": 140661,
@@ -10534,10 +10527,8 @@
      },
      "family_fold": 28524,
      "family_used": "sgncb",
-     "key_union": 36270,
      "parts": 22,
      "records": 30,
-     "summed": 33769,
      "tracts": 6
     },
     "family_fold": "layers {'sgncb': 33769, 'sgnca': 25343, 'sgncc': 3181}: one land in 3 layers, the sgncb copy used (28,524 ac of copies not added)",
@@ -10551,7 +10542,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -10579,11 +10570,11 @@
   "US-6895": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Cold Mountain State Game Land",
    "official": null,
    "ours": {
-    "acres": 3997,
+    "acres": 3630,
     "dissolved": {
      "after": 7020,
      "before": 17576,
@@ -10594,10 +10585,8 @@
      },
      "family_fold": 3390,
      "family_used": "sgncb",
-     "key_union": 3997,
      "parts": 3,
      "records": 9,
-     "summed": 3630,
      "tracts": 4
     },
     "family_fold": "layers {'sgncb': 3630, 'sgncc': 3390}: one land in 2 layers, the sgncb copy used (3,390 ac of copies not added)",
@@ -10704,7 +10693,7 @@
   "US-6897": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Croatan State Game Land",
    "official": null,
    "ours": {
@@ -10734,7 +10723,7 @@
       "reviewed"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -10830,23 +10819,23 @@
   "US-6899": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Dan River State Game Land",
    "official": null,
    "ours": {
-    "acres": 1714,
+    "acres": 1716,
     "dissolved": {
-     "after": 2885,
-     "before": 7989,
+     "after": 2886,
+     "before": 7990,
      "copies": 2,
-     "key_union": 1714,
+     "key_union": 1716,
      "parts": 4,
-     "records": 9,
-     "summed": 2885,
-     "tracts": 3
+     "records": 10,
+     "summed": 2886,
+     "tracts": 4
     },
     "manager": "",
-    "note": "9 joined records = 3 tracts: 2 copies of a tract (same acres, another layer) and 4 fee tracts under a designation record folded; summed 7989 -> 2885 acres",
+    "note": "10 joined records = 4 tracts: 2 copies of a tract (same acres, another layer) and 4 fee tracts under a designation record folded; summed 7990 -> 2886 acres",
     "pieces": [
      [
       "sgnca3237",
@@ -10865,11 +10854,17 @@
       "Dan River",
       5,
       "name"
+     ],
+     [
+      "sgncc1020",
+      "Dan River",
+      1,
+      "name"
      ]
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -11217,19 +11212,17 @@
   "US-6903": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Elk Knob State Game Land",
    "official": null,
    "ours": {
-    "acres": 620,
+    "acres": 721,
     "dissolved": {
      "after": 721,
      "before": 2884,
      "copies": 3,
-     "key_union": 620,
      "parts": 0,
      "records": 4,
-     "summed": 721,
      "tracts": 1
     },
     "manager": "",
@@ -11270,30 +11263,29 @@
   "US-6904": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Embro State Game Land",
    "official": null,
    "ours": {
-    "acres": 10074,
+    "acres": 9382,
     "dissolved": {
-     "after": 13389,
-     "before": 37001,
+     "after": 25431,
+     "before": 37004,
      "copies": 1,
      "families": {
+      "padus": 8858,
       "sgnca": 9382,
-      "sgncc": 4007
+      "sgncc": 7191
      },
-     "family_fold": 4007,
+     "family_fold": 16049,
      "family_used": "sgnca",
-     "key_union": 10074,
-     "parts": 12,
-     "records": 18,
-     "summed": 9382,
-     "tracts": 5
+     "parts": 7,
+     "records": 19,
+     "tracts": 11
     },
-    "family_fold": "layers {'sgnca': 9382, 'sgncc': 4007}: one land in 2 layers, the sgnca copy used (4,007 ac of copies not added)",
+    "family_fold": "layers {'sgnca': 9382, 'padus': 8858, 'sgncc': 7191}: one land in 3 layers, the sgnca copy used (16,049 ac of copies not added)",
     "manager": "",
-    "note": "18 joined records = 5 tracts: 1 copies of a tract (same acres, another layer) and 12 fee tracts under a designation record folded; summed 37001 -> 13389 acres",
+    "note": "19 joined records = 11 tracts: 1 copies of a tract (same acres, another layer) and 7 fee tracts under a designation record folded; summed 37004 -> 25431 acres",
     "pieces": [
      [
       "sgnca3476",
@@ -11302,9 +11294,9 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -11406,11 +11398,11 @@
   "US-6906": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Green River State Game Land",
    "official": null,
    "ours": {
-    "acres": 18608,
+    "acres": 15449,
     "dissolved": {
      "after": 21738,
      "before": 65462,
@@ -11421,7 +11413,7 @@
      },
      "family_fold": 1794,
      "family_used": "sgnca",
-     "key_union": 18608,
+     "key_union": 15449,
      "parts": 23,
      "records": 33,
      "summed": 19944,
@@ -11619,11 +11611,11 @@
   "US-6909": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Harris State Game Land",
    "official": null,
    "ours": {
-    "acres": 12850,
+    "acres": 11527,
     "dissolved": {
      "after": 22259,
      "before": 46106,
@@ -11634,10 +11626,8 @@
      },
      "family_fold": 10732,
      "family_used": "ncg",
-     "key_union": 12850,
      "parts": 7,
      "records": 19,
-     "summed": 11527,
      "tracts": 10
     },
     "family_fold": "layers {'ncg': 11527, 'sgncc': 10732}: one land in 2 layers, the ncg copy used (10,732 ac of copies not added)",
@@ -11836,11 +11826,11 @@
   "US-6913": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Hyco State Game Land",
    "official": null,
    "ours": {
-    "acres": 2900,
+    "acres": 2382,
     "dissolved": {
      "after": 4390,
      "before": 9157,
@@ -11851,10 +11841,8 @@
      },
      "family_fold": 2008,
      "family_used": "ncg",
-     "key_union": 2900,
      "parts": 2,
      "records": 6,
-     "summed": 2382,
      "tracts": 3
     },
     "family_fold": "layers {'ncg': 2382, 'sgncc': 2008}: one land in 2 layers, the ncg copy used (2,008 ac of copies not added)",
@@ -11868,7 +11856,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -11981,11 +11969,11 @@
   "US-6915": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Johns River State Game Land",
    "official": null,
    "ours": {
-    "acres": 7203,
+    "acres": 6538,
     "dissolved": {
      "after": 9674,
      "before": 32371,
@@ -11996,10 +11984,8 @@
      },
      "family_fold": 3136,
      "family_used": "sgnca",
-     "key_union": 7203,
      "parts": 4,
      "records": 14,
-     "summed": 6538,
      "tracts": 6
     },
     "family_fold": "layers {'sgnca': 6538, 'sgncc': 3136}: one land in 2 layers, the sgnca copy used (3,136 ac of copies not added)",
@@ -12013,7 +11999,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -12041,11 +12027,11 @@
   "US-6916": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Jordan State Game Land",
    "official": null,
    "ours": {
-    "acres": 45549,
+    "acres": 40462,
     "dissolved": {
      "after": 75248,
      "before": 81612,
@@ -12056,10 +12042,8 @@
      },
      "family_fold": 34786,
      "family_used": "sgncb",
-     "key_union": 45549,
      "parts": 36,
      "records": 44,
-     "summed": 40462,
      "tracts": 6
     },
     "family_fold": "layers {'sgncb': 40462, 'sgncc': 34786}: one land in 2 layers, the sgncb copy used (34,786 ac of copies not added)",
@@ -12188,19 +12172,17 @@
   "US-6918": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Kerr Scott State Game Land",
    "official": null,
    "ours": {
-    "acres": 369,
+    "acres": 521,
     "dissolved": {
      "after": 521,
      "before": 1562,
      "copies": 1,
-     "key_union": 369,
      "parts": 6,
      "records": 8,
-     "summed": 521,
      "tracts": 1
     },
     "manager": "",
@@ -12310,19 +12292,17 @@
   "US-6920": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Lee State Game Land",
    "official": null,
    "ours": {
-    "acres": 1637,
+    "acres": 1441,
     "dissolved": {
      "after": 1441,
      "before": 5763,
      "copies": 2,
-     "key_union": 1637,
      "parts": 2,
      "records": 5,
-     "summed": 1441,
      "tracts": 1
     },
     "manager": "",
@@ -12363,11 +12343,11 @@
   "US-6922": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Linwood State Game Land",
    "official": null,
    "ours": {
-    "acres": 187,
+    "acres": 206,
     "dissolved": {
      "after": 313,
      "before": 651,
@@ -12378,7 +12358,7 @@
      },
      "family_fold": 144,
      "family_used": "sgnca",
-     "key_union": 187,
+     "key_union": 206,
      "parts": 0,
      "records": 4,
      "summed": 169,
@@ -12423,19 +12403,17 @@
   "US-6923": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Lower Fishing Creek State Game Land",
    "official": null,
    "ours": {
-    "acres": 1041,
+    "acres": 1296,
     "dissolved": {
      "after": 1296,
      "before": 6470,
      "copies": 3,
-     "key_union": 1041,
      "parts": 4,
      "records": 8,
-     "summed": 1296,
      "tracts": 1
     },
     "manager": "",
@@ -12448,7 +12426,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -12476,7 +12454,7 @@
   "US-6924": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Lower Roanoke River State Game Land",
    "official": null,
    "ours": {
@@ -12539,19 +12517,17 @@
   "US-6925": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Mayo State Game Land",
    "official": null,
    "ours": {
-    "acres": 6120,
+    "acres": 5101,
     "dissolved": {
      "after": 5101,
      "before": 20373,
      "copies": 2,
-     "key_union": 6120,
      "parts": 3,
      "records": 6,
-     "summed": 5101,
      "tracts": 1
     },
     "manager": "",
@@ -12564,7 +12540,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -12752,30 +12728,30 @@
   "US-6928": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Needmore State Game Land",
    "official": null,
    "ours": {
-    "acres": 6590,
+    "acres": 5630,
     "dissolved": {
-     "after": 8553,
-     "before": 15558,
+     "after": 8593,
+     "before": 15561,
      "copies": 2,
      "families": {
       "sgnca": 5093,
-      "sgncc": 3460
+      "sgncc": 3500
      },
-     "family_fold": 3460,
+     "family_fold": 3500,
      "family_used": "sgnca",
-     "key_union": 6590,
-     "parts": 42,
-     "records": 49,
+     "key_union": 5630,
+     "parts": 43,
+     "records": 51,
      "summed": 5093,
-     "tracts": 5
+     "tracts": 6
     },
-    "family_fold": "layers {'sgnca': 5093, 'sgncc': 3460}: one land in 2 layers, the sgnca copy used (3,460 ac of copies not added)",
+    "family_fold": "layers {'sgnca': 5093, 'sgncc': 3500}: one land in 2 layers, the sgnca copy used (3,500 ac of copies not added)",
     "manager": "",
-    "note": "49 joined records = 5 tracts: 2 copies of a tract (same acres, another layer) and 42 fee tracts under a designation record folded; summed 15558 -> 8553 acres",
+    "note": "51 joined records = 6 tracts: 2 copies of a tract (same acres, another layer) and 43 fee tracts under a designation record folded; summed 15561 -> 8593 acres",
     "pieces": [
      [
       "sgnca5288",
@@ -12786,7 +12762,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 5
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -12971,11 +12947,11 @@
   "US-6931": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Nicholson Creek State Game Land",
    "official": null,
    "ours": {
-    "acres": 1109,
+    "acres": 1021,
     "dissolved": {
      "after": 1848,
      "before": 4911,
@@ -12986,10 +12962,8 @@
      },
      "family_fold": 827,
      "family_used": "padus",
-     "key_union": 1109,
      "parts": 0,
      "records": 5,
-     "summed": 1021,
      "tracts": 2
     },
     "family_fold": "layers {'padus': 1021, 'sgnca': 827}: one land in 2 layers, the padus copy used (827 ac of copies not added)",
@@ -13232,19 +13206,17 @@
   "US-6935": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Perkins State Game Land",
    "official": null,
    "ours": {
-    "acres": 1432,
+    "acres": 1696,
     "dissolved": {
      "after": 1696,
      "before": 6784,
      "copies": 2,
-     "key_union": 1432,
      "parts": 2,
      "records": 5,
-     "summed": 1696,
      "tracts": 1
     },
     "manager": "",
@@ -13285,16 +13257,16 @@
   "US-6936": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Pisgah State Game Land",
    "official": null,
    "ours": {
-    "acres": 309546,
+    "acres": 316540,
     "dissolved": {
      "after": 149588,
      "before": 318301,
      "copies": 3,
-     "key_union": 309546,
+     "key_union": 316540,
      "parts": 63,
      "records": 73,
      "summed": 149588,
@@ -13374,29 +13346,29 @@
   "US-6937": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Pisgah WRC State Game Land",
    "official": null,
    "ours": {
     "acres": 517774,
     "dissolved": {
-     "after": 789403,
-     "before": 817617,
+     "after": 789497,
+     "before": 817639,
      "copies": 7,
      "families": {
       "padus": 4728,
       "sgncb": 517774,
-      "sgncc": 266901
+      "sgncc": 266995
      },
-     "family_fold": 271629,
+     "family_fold": 271723,
      "family_used": "sgncb",
-     "parts": 20,
-     "records": 114,
-     "tracts": 87
+     "parts": 16,
+     "records": 116,
+     "tracts": 93
     },
-    "family_fold": "layers {'sgncb': 517774, 'sgncc': 266901, 'padus': 4728}: one land in 3 layers, the sgncb copy used (271,629 ac of copies not added)",
+    "family_fold": "layers {'sgncb': 517774, 'sgncc': 266995, 'padus': 4728}: one land in 3 layers, the sgncb copy used (271,723 ac of copies not added)",
     "manager": "",
-    "note": "114 joined records = 87 tracts: 7 copies of a tract (same acres, another layer) and 20 fee tracts under a designation record folded; summed 817617 -> 789403 acres",
+    "note": "116 joined records = 93 tracts: 7 copies of a tract (same acres, another layer) and 16 fee tracts under a designation record folded; summed 817639 -> 789497 acres",
     "pieces": [
      [
       "sgncb62",
@@ -13407,7 +13379,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 3
+    "unknown_pieces": 1
    },
    "owner_now": null,
    "pages": [
@@ -13600,30 +13572,30 @@
   "US-6940": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "R Wayne Bailey-Caswell State Game Land",
    "official": null,
    "ours": {
     "acres": 18029,
     "dissolved": {
-     "after": 66021,
-     "before": 70296,
+     "after": 65855,
+     "before": 70305,
      "copies": 4,
      "families": {
       "padus": 16246,
       "sgnca": 18029,
       "sgncb": 18014,
-      "sgncc": 13732
+      "sgncc": 13566
      },
-     "family_fold": 47992,
+     "family_fold": 47826,
      "family_used": "sgnca",
-     "parts": 23,
-     "records": 67,
-     "tracts": 40
+     "parts": 28,
+     "records": 70,
+     "tracts": 38
     },
-    "family_fold": "layers {'sgncb': 18014, 'sgnca': 18029, 'padus': 16246, 'sgncc': 13732}: one land in 4 layers, the sgnca copy used (47,992 ac of copies not added)",
+    "family_fold": "layers {'sgncb': 18014, 'sgnca': 18029, 'padus': 16246, 'sgncc': 13566}: one land in 4 layers, the sgnca copy used (47,826 ac of copies not added)",
     "manager": "",
-    "note": "67 joined records = 40 tracts: 4 copies of a tract (same acres, another layer) and 23 fee tracts under a designation record folded; summed 70296 -> 66021 acres",
+    "note": "70 joined records = 38 tracts: 4 copies of a tract (same acres, another layer) and 28 fee tracts under a designation record folded; summed 70305 -> 65855 acres",
     "pieces": [
      [
       "sgnca5963",
@@ -13640,7 +13612,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 3
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -14076,11 +14048,11 @@
   "US-6947": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Sandhills State Game Land",
    "official": null,
    "ours": {
-    "acres": 73364,
+    "acres": 65235,
     "dissolved": {
      "after": 170455,
      "before": 304480,
@@ -14092,10 +14064,8 @@
      },
      "family_fold": 105220,
      "family_used": "sgncb",
-     "key_union": 73364,
      "parts": 16,
      "records": 87,
-     "summed": 65235,
      "tracts": 63
     },
     "family_fold": "layers {'sgncb': 65235, 'padus': 43114, 'sgncc': 62106}: one land in 3 layers, the sgncb copy used (105,220 ac of copies not added)",
@@ -14137,19 +14107,17 @@
   "US-6948": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Sandy Creek State Game Land",
    "official": null,
    "ours": {
-    "acres": 790,
+    "acres": 923,
     "dissolved": {
      "after": 923,
      "before": 4615,
      "copies": 3,
-     "key_union": 790,
      "parts": 4,
      "records": 8,
-     "summed": 923,
      "tracts": 1
     },
     "manager": "",
@@ -14190,11 +14158,11 @@
   "US-6949": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Sandy Mush State Game Land",
    "official": null,
    "ours": {
-    "acres": 3166,
+    "acres": 2867,
     "dissolved": {
      "after": 6991,
      "before": 11384,
@@ -14206,10 +14174,8 @@
      },
      "family_fold": 4124,
      "family_used": "sgnca",
-     "key_union": 3166,
      "parts": 11,
      "records": 19,
-     "summed": 2867,
      "tracts": 7
     },
     "family_fold": "layers {'sgnca': 2867, 'padus': 2796, 'sgncc': 1328}: one land in 3 layers, the sgnca copy used (4,124 ac of copies not added)",
@@ -14223,7 +14189,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -14251,11 +14217,11 @@
   "US-6950": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Second Creek State Game Land",
    "official": null,
    "ours": {
-    "acres": 1553,
+    "acres": 1131,
     "dissolved": {
      "after": 2247,
      "before": 5557,
@@ -14267,10 +14233,8 @@
      },
      "family_fold": 1116,
      "family_used": "padus",
-     "key_union": 1553,
      "parts": 0,
      "records": 6,
-     "summed": 1131,
      "tracts": 3
     },
     "family_fold": "layers {'padus': 1131, 'sgnca': 1106, 'sgncc': 10}: one land in 3 layers, the padus copy used (1,116 ac of copies not added)",
@@ -14284,7 +14248,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -14312,7 +14276,7 @@
   "US-6951": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Shocco Creek State Game Land",
    "official": null,
    "ours": {
@@ -14370,11 +14334,11 @@
   "US-6952": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "South Mountains State Game Land",
    "official": null,
    "ours": {
-    "acres": 27332,
+    "acres": 23983,
     "dissolved": {
      "after": 28356,
      "before": 109322,
@@ -14385,7 +14349,7 @@
      },
      "family_fold": 5773,
      "family_used": "sgnca",
-     "key_union": 27332,
+     "key_union": 23983,
      "parts": 29,
      "records": 37,
      "summed": 22583,
@@ -14651,11 +14615,11 @@
   "US-6956": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Tar River State Game Land",
    "official": null,
    "ours": {
-    "acres": 108,
+    "acres": 154,
     "dissolved": {
      "after": 277,
      "before": 585,
@@ -14666,10 +14630,8 @@
      },
      "family_fold": 123,
      "family_used": "sgnca",
-     "key_union": 108,
      "parts": 0,
      "records": 4,
-     "summed": 154,
      "tracts": 2
     },
     "family_fold": "layers {'sgnca': 154, 'padus': 123}: one land in 2 layers, the sgnca copy used (123 ac of copies not added)",
@@ -14787,11 +14749,11 @@
   "US-6958": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Thurmond Chatham State Game Land",
    "official": null,
    "ours": {
-    "acres": 5592,
+    "acres": 6542,
     "dissolved": {
      "after": 12917,
      "before": 25976,
@@ -14803,10 +14765,8 @@
      },
      "family_fold": 6375,
      "family_used": "sgnca",
-     "key_union": 5592,
      "parts": 6,
      "records": 11,
-     "summed": 6542,
      "tracts": 4
     },
     "family_fold": "layers {'sgnca': 6542, 'padus': 6348, 'sgncc': 27}: one land in 3 layers, the sgnca copy used (6,375 ac of copies not added)",
@@ -14820,7 +14780,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -14853,19 +14813,17 @@
   "US-6959": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Tillery State Game Land",
    "official": null,
    "ours": {
-    "acres": 6465,
+    "acres": 5260,
     "dissolved": {
      "after": 5260,
      "before": 20972,
      "copies": 2,
-     "key_union": 6465,
      "parts": 4,
      "records": 8,
-     "summed": 5260,
      "tracts": 2
     },
     "manager": "",
@@ -14912,7 +14870,7 @@
   "US-6960": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Toxaway State Game Land",
    "official": null,
    "ours": {
@@ -14971,11 +14929,11 @@
   "US-6961": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Upper Roanoke River State Game Land",
    "official": null,
    "ours": {
-    "acres": 10205,
+    "acres": 11065,
     "dissolved": {
      "after": 21244,
      "before": 33196,
@@ -14986,10 +14944,8 @@
      },
      "family_fold": 10179,
      "family_used": "ncg",
-     "key_union": 10205,
      "parts": 0,
      "records": 9,
-     "summed": 11065,
      "tracts": 7
     },
     "family_fold": "layers {'ncg': 11065, 'sgncc': 10179}: one land in 2 layers, the ncg copy used (10,179 ac of copies not added)",
@@ -15031,29 +14987,29 @@
   "US-6962": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Uwharrie State Game Land",
    "official": null,
    "ours": {
     "acres": 52709,
     "dissolved": {
-     "after": 104549,
-     "before": 107010,
+     "after": 104512,
+     "before": 107078,
      "copies": 4,
      "families": {
       "sgnca": 882,
       "sgncb": 52709,
-      "sgncc": 50958
+      "sgncc": 50921
      },
-     "family_fold": 51840,
+     "family_fold": 51803,
      "family_used": "sgncb",
-     "parts": 15,
-     "records": 80,
+     "parts": 18,
+     "records": 83,
      "tracts": 61
     },
-    "family_fold": "layers {'sgncb': 52709, 'sgncc': 50958, 'sgnca': 882}: one land in 3 layers, the sgncb copy used (51,840 ac of copies not added)",
+    "family_fold": "layers {'sgncb': 52709, 'sgncc': 50921, 'sgnca': 882}: one land in 3 layers, the sgncb copy used (51,803 ac of copies not added)",
     "manager": "",
-    "note": "80 joined records = 61 tracts: 4 copies of a tract (same acres, another layer) and 15 fee tracts under a designation record folded; summed 107010 -> 104549 acres",
+    "note": "83 joined records = 61 tracts: 4 copies of a tract (same acres, another layer) and 18 fee tracts under a designation record folded; summed 107078 -> 104512 acres",
     "pieces": [
      [
       "sgncb89",
@@ -15062,9 +15018,9 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 3
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -15338,30 +15294,28 @@
   "US-6967": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "William H Silver State Game Land",
    "official": null,
    "ours": {
-    "acres": 2934,
+    "acres": 2041,
     "dissolved": {
-     "after": 3457,
-     "before": 10118,
+     "after": 3458,
+     "before": 10119,
      "copies": 2,
      "families": {
       "sgnca": 2041,
-      "sgncc": 1416
+      "sgncc": 1417
      },
-     "family_fold": 1416,
+     "family_fold": 1417,
      "family_used": "sgnca",
-     "key_union": 2934,
      "parts": 4,
-     "records": 10,
-     "summed": 2041,
-     "tracts": 4
+     "records": 11,
+     "tracts": 5
     },
-    "family_fold": "layers {'sgnca': 2041, 'sgncc': 1416}: one land in 2 layers, the sgnca copy used (1,416 ac of copies not added)",
+    "family_fold": "layers {'sgnca': 2041, 'sgncc': 1417}: one land in 2 layers, the sgnca copy used (1,417 ac of copies not added)",
     "manager": "",
-    "note": "10 joined records = 4 tracts: 2 copies of a tract (same acres, another layer) and 4 fee tracts under a designation record folded; summed 10118 -> 3457 acres",
+    "note": "11 joined records = 5 tracts: 2 copies of a tract (same acres, another layer) and 4 fee tracts under a designation record folded; summed 10119 -> 3458 acres",
     "pieces": [
      [
       "sgnca8984",
@@ -15372,7 +15326,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -15536,7 +15490,7 @@
   "US-8008": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Armstrong State Fish Hatchery",
    "official": null,
    "ours": {
@@ -15551,7 +15505,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -15579,16 +15533,16 @@
   "US-8009": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Marion State Fish Hatchery",
    "official": null,
    "ours": {
-    "acres": 17,
+    "acres": 15,
     "dissolved": {
      "after": 16,
      "before": 32,
      "copies": 1,
-     "key_union": 17,
+     "key_union": 15,
      "parts": 0,
      "records": 2,
      "summed": 16,
@@ -15652,11 +15606,11 @@
   "US-8012": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Table Rock State Fish Hatchery",
    "official": null,
    "ours": {
-    "acres": 170,
+    "acres": 251,
     "family_fold": "layers {'padus': 251, 'sgnca': 245}: one land in 2 layers, the padus copy used (245 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -15695,19 +15649,17 @@
   "US-8013": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Watha State Fish Hatchery",
    "official": null,
    "ours": {
-    "acres": 176,
+    "acres": 304,
     "dissolved": {
      "after": 304,
      "before": 608,
      "copies": 1,
-     "key_union": 176,
      "parts": 0,
      "records": 2,
-     "summed": 304,
      "tracts": 1
     },
     "manager": "",
@@ -15941,5 +15893,5 @@
    "verdict": "no size on page"
   }
  },
- "read": "2026-11-08"
+ "read": "2026-11-15"
 }
