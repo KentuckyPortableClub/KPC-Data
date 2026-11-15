@@ -552,3 +552,117 @@ It decides nothing: it ranks. Score 0 = all pass; +3 OUTSIDE / WAY OFF / MISMATC
 | 3 | US-8578 | Erie Dam/Brewer Lake Wildlife Management Area | SOURCE DOWN: MISMATCH: The record name 'Erie Dam' does not match POTA's name 'Erie Dam/Brewer Lake Wildlife Management Area' (score 0.67). |
 | 3 | US-8596 | Ochs Point Wildlife Management Area | SOURCE DOWN: MISMATCH: The record name 'Ochs' does not match POTA's name 'Ochs Point Wildlife Management Area' (score 0.50). |
 | 3 | US-8599 | Painted Woods Wildlife Management Area | SOURCE DOWN: OUTSIDE: POTA's pin is 660 m outside the outline. |
+
+## US-NE
+
+- parks: 201 (154 with an outline graded, 14 with no outline, 33 with records this tool can't read)
+- pass every test: 141; have flags: 60; source down (retry): 159
+- flags: NEAR 17, DUPLICATE 15, TINY HOLES 14, MISMATCH 12, SPILL 6, OUTSIDE 4, SLIVERS 2, SELF-INTERSECTION 2, WEAK 1, CONFLICT 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 7 | US-3486 | Moger National Waterfowl Production Area | MISMATCH: The record name 'Clay County Waterfowl Production Area Of Ne' does not match POTA's name 'Moger National Waterfowl Production Area' (score 0.00) (+2 more flags). |
+| 7 | US-3489 | Massie National Waterfowl Production Area | MISMATCH: The record name 'Clay County Waterfowl Production Area Of Ne' does not match POTA's name 'Massie National Waterfowl Production Area' (score 0.00) (+2 more flags). |
+| 7 | US-3490 | Smith Lagoon National Waterfowl Production Area | MISMATCH: The record name 'Clay County Waterfowl Production Area Of Ne' does not match POTA's name 'Smith Lagoon National Waterfowl Production Area' (score 0.00) (+2 more flags). |
+| 6 | US-3483 | Atlanta National Waterfowl Production Area | MISMATCH: The record name 'Phelps County Waterfowl Production Area' does not match POTA's name 'Atlanta National Waterfowl Production Area' (score 0.00) (+1 more flag). |
+| 5 | US-5629 | Sherman Reservoir State Recreation Area | SOURCE DOWN: CONFLICT: The record is the whole lake but the park is a recreation area on it (+2 more flags). |
+| 4 | US-13329 | Plum Creek Canyon Reservoir Wildlife Management Area | SOURCE DOWN: MISMATCH: The record name 'Plum Creek Wildlife Management Area' does not match POTA's name 'Plum Creek Canyon Reservoir Wildlife Management Area' (score 0.67) (+1 more flag). |
+| 4 | US-7478 | Oglala National Grassland | OUTSIDE: POTA's pin is 1.1 km outside the outline (+1 more flag). |
+| 3 | US-0442 | Crescent Lake National Wildlife Refuge | OUTSIDE: POTA's pin is 1.6 km outside the outline. |
+| 3 | US-0447 | Valentine National Wildlife Refuge | SPILL: The outline covers 73% of US-9356 Willow Lake Wildlife Management Area, with no 2-fer row (maybe the wrong record). |
+| 3 | US-12736 | Gifford Point Wildlife Management Area | SOURCE DOWN: MISMATCH: The record name 'Gifford Wildlife Management Area' does not match POTA's name 'Gifford Point Wildlife Management Area' (score 0.50). |
+
+## US-NH
+
+- parks: 206 (193 with an outline graded, 9 with no outline, 4 with records this tool can't read)
+- pass every test: 108; have flags: 98; source down (retry): 10
+- flags: NEAR 44, OUTSIDE 23, TINY HOLES 19, SELF-INTERSECTION 8, SLIVERS 5, MISMATCH 4, SPILL 4, FAR 4, OFF 4, DUPLICATE 4, CONFLICT 1, WAY OFF 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 6 | US-13486 | Bellamy River Wildlife Management Area - East Wildlife Management Area | SOURCE DOWN: OUTSIDE: POTA's pin is 2.1 km outside the outline (+1 more flag). |
+| 6 | US-4512 | White Mountain National Forest | SPILL: The outline covers 95% of US-4959 Sentinel Mountain State Forest, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-4949 | Ragged Mountain State Forest | OUTSIDE: POTA's pin is 1.1 km outside the outline (+1 more flag). |
+| 5 | US-4894 | Davis-White State Forest | FAR: POTA's pin is 55.5 km outside the outline. |
+| 5 | US-4905 | Gile State Forest | SPILL: The outline covers 100% of US-2685 Winslow State Park, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-4933 | Merrimack River State Forest | FAR: POTA's pin is 26.3 km outside the outline. |
+| 5 | US-4934 | Merriman State Forest | FAR: POTA's pin is 21.2 km outside the outline. |
+| 5 | US-4955 | Saltmarsh Pond State Forest | FAR: POTA's pin is 22.1 km outside the outline. |
+| 4 | US-4937 | Nottingham State Forest | OUTSIDE: POTA's pin is 1.1 km outside the outline (+1 more flag). |
+| 4 | US-4944 | Pine River State Forest | OUTSIDE: POTA's pin is 911 m outside the outline (+1 more flag). |
+
+## US-NJ
+
+- parks: 134 (129 with an outline graded, 4 with no outline, 1 with records this tool can't read)
+- pass every test: 38; have flags: 96; source down (retry): 115
+- flags: TINY HOLES 68, NEAR 31, SLIVERS 21, SELF-INTERSECTION 19, SPILL 5, MISMATCH 4, SCATTERED 3, WEAK 2, INVALID 2, OUTSIDE 1, CONFLICT 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 7 | US-8042 | Heislerville Wildlife Management Area | SOURCE DOWN: SPILL: The outline covers 55% of US-0886 Maurice River National Wild and Scenic River, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 5 | US-11964 | Peaslee Wildlife Management Area | SOURCE DOWN: SPILL: The outline covers 74% of US-13256 Menantico Ponds Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-13061 | Gum Tree Corner Wildlife Management Area | SOURCE DOWN: MISMATCH: The record name 'Gumtree Corner Wildlife Management Area' does not match POTA's name 'Gum Tree Corner Wildlife Management Area' (score 0.67) (+2 more flags). |
+| 5 | US-5000 | Wharton State Forest | SOURCE DOWN: SPILL: The outline covers 98% of US-6609 Pinelands Preserve National Conservation Area, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 4 | US-0453 | Edwin B. Forsythe National Wildlife Refuge | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-74.275981897499 39.6189470423469]; 5 piece(s) under 10 m wide; 6 hole(s) under 100 m2; 322 pieces spread over 78 km (+3 more flags). |
+| 4 | US-1613 | Delaware and Raritan Canal State Park | SOURCE DOWN: NEAR: POTA's pin is 15 m outside the outline (+3 more flags). |
+| 4 | US-1615 | Thomas Edison Memorial State Park | SOURCE DOWN: MISMATCH: The record name 'Edison State Park' does not match POTA's name 'Thomas Edison Memorial State Park' (score 0.50) (+1 more flag). |
+| 4 | US-6461 | Spruce Run State Recreation Area | SOURCE DOWN: CONFLICT: The record is the whole lake but the park is a recreation area on it (+1 more flag). |
+| 4 | US-8037 | Dix Wildlife Management Area | SOURCE DOWN: INVALID: The shape has problems: Nested shells[-75.3305893248544 39.3535544868743]; Self-intersection[-75.3297518352367 39.3531975754792]; 1 piece(s) under 10 m wide; 12 hole(s) under 100 m2 (+3 more flags). |
+| 3 | US-0452 | Cape May National Wildlife Refuge | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-74.7702769774342 39.1995019157942]; 1 piece(s) under 10 m wide; 4 hole(s) under 100 m2 (+2 more flags). |
+
+## US-NM
+
+- parks: 124 (104 with an outline graded, 17 with no outline, 3 with records this tool can't read)
+- pass every test: 81; have flags: 43; source down (retry): 56
+- flags: NEAR 22, SELF-INTERSECTION 13, TINY HOLES 9, SLIVERS 7, SPILL 7, OUTSIDE 5, MISMATCH 5, DUPLICATE 3, WEAK 3, SCATTERED 2, CONFLICT 1, OFF 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 7 | US-0961 | Salinas Pueblo Missions, Gran Quivira Unit, National Monument | MISMATCH: The record name 'Salinas Pueblo Missions National Monument' does not match POTA's name 'Salinas Pueblo Missions, Gran Quivira Unit, National Monument' (score 0.60) (+2 more flags). |
+| 6 | US-11814 | Salinas Pueblo Missions, Quarai unit, National Monument | SPILL: The outline covers 100% of US-11813 Salinas Pueblo Missions, Abo Unit National Monument, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-4517 | Santa Fe National Forest | SPILL: The outline covers 63% of US-8227 Jemez National Recreation Area, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-4551 | Organ Mountains-Desert Peaks National Monument | OUTSIDE: POTA's pin is 1.5 km outside the outline (+1 more flag). |
+| 5 | US-0459 | Las Vegas National Wildlife Refuge | OUTSIDE: POTA's pin is 635 m outside the outline (+2 more flags). |
+| 5 | US-11813 | Salinas Pueblo Missions, Abo Unit National Monument | SPILL: The outline covers 100% of US-11814 Salinas Pueblo Missions, Quarai unit, National Monument, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-12746 | Aden Hills Off-Highway Vehicle Area BLM Recreation Management Area | SOURCE DOWN: MISMATCH: The record name 'Aden Hills' does not match POTA's name 'Aden Hills Off-Highway Vehicle Area BLM Recreation Management Area' (score 0.40) (+2 more flags). |
+| 5 | US-4516 | Lincoln National Forest | SPILL: The outline covers 100% of US-13654 Monjeau Lookout National Historical Site, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 4 | US-11866 | Rio Bonito Acquired Lands: Salazar Tract, BLM Recreation Management Area | SPILL: The outline covers 52% of US-13185 Dow Canyon Tract BLM Recreation Management Area, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+| 4 | US-12590 | Alien Run Mountain Bike Trail BLM Recreation Management Area | SOURCE DOWN: MISMATCH: The record name 'Alien Run' does not match POTA's name 'Alien Run Mountain Bike Trail BLM Recreation Management Area' (score 0.50) (+1 more flag). |
+
+## US-NV
+
+- parks: 367 (192 with an outline graded, 168 with no outline, 7 with records this tool can't read)
+- pass every test: 248; have flags: 119; source down (retry): 28
+- flags: SPILL 38, NEAR 32, OUTSIDE 19, MISMATCH 17, SELF-INTERSECTION 15, TINY HOLES 15, DUPLICATE 14, SLIVERS 13, CONFLICT 5, WEAK 4, OFF 4, FAR 3, WAY OFF 2, SCATTERED 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 10 | US-4391 | Humboldt-Toiyabe National Forest | SOURCE DOWN: MISMATCH: The record name 'Toiyabe National Forest' does not match POTA's name 'Humboldt-Toiyabe National Forest' (score 0.50) (+5 more flags). |
+| 10 | US-9285 | Avi Kwa Ame (Spirit Mountain) National Monument | OUTSIDE: POTA's pin is 2.4 km outside the outline (+3 more flags). |
+| 7 | US-13018 | Black Rock Range East/West BLM Herd Management Area | OUTSIDE: POTA's pin is 2.8 km outside the outline (+2 more flags). |
+| 7 | US-4458 | Lake Tahoe Basin Management Unit National Forest | SOURCE DOWN: MISMATCH: The record name 'Tahoe National Forest' does not match POTA's name 'Lake Tahoe Basin Management Unit National Forest' (score 0.50) (+2 more flags). |
+| 7 | US-9254 | High Rock Canyon BLM Special Recreation Management Area | WAY OFF: The outline is 8.9 times bigger than the official 5,665 acres (50,268 ac drawn) (+2 more flags). |
+| 6 | US-13050 | Silver King BLM Herd Management Area | SPILL: The outline covers 100% of US-13196 Stampede-Nevada BLM Recreation Management Area, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-13135 | Seven Troughs BLM Herd Management Area | OUTSIDE: POTA's pin is 1.2 km outside the outline (+1 more flag). |
+| 6 | US-13151 | Shoshone OHV Trail System BLM Recreation Management Area | OUTSIDE: POTA's pin is 1.3 km outside the outline (+1 more flag). |
+| 6 | US-13251 | Virginia City Historic District (Comstock Lode) National Historic District | MISMATCH: The record name 'Virginia City Historic District' does not match POTA's name 'Virginia City Historic District (Comstock Lode) National Historic District' (score 0.60) (+1 more flag). |
+| 6 | US-13269 | Lake Tahoe-Eastshore Dr Byway Area of Outstanding Natural Beauty | OUTSIDE: POTA's pin is 533 m outside the outline (+1 more flag). |
+
+## US-NY
+
+- parks: 851 (823 with an outline graded, 21 with no outline, 7 with records this tool can't read)
+- pass every test: 657; have flags: 194; source down (retry): 774
+- flags: NEAR 101, SELF-INTERSECTION 35, MISMATCH 29, SPILL 26, TINY HOLES 23, DUPLICATE 23, SLIVERS 19, OUTSIDE 5, OFF 2, SCATTERED 2, WEAK 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 8 | US-5106 | Bear Swamp(Otsego County) State Forest | SOURCE DOWN: MISMATCH: The record name 'Bear Swamp State Forest' does not match POTA's name 'Bear Swamp(Otsego County) State Forest' (score 0.67) (+3 more flags). |
+| 8 | US-5107 | Bear Swamp(Cayuga County) State Forest | SOURCE DOWN: MISMATCH: The record name 'Bear Swamp State Forest' does not match POTA's name 'Bear Swamp(Cayuga County) State Forest' (score 0.67) (+3 more flags). |
+| 8 | US-5110 | Beaver Creek(St Lawrence County) State Forest | SOURCE DOWN: MISMATCH: The record name 'Beaver Creek State Forest' does not match POTA's name 'Beaver Creek(St Lawrence County) State Forest' (score 0.50) (+3 more flags). |
+| 8 | US-5249 | Pine Hill (Delaware County) State Forest | SOURCE DOWN: MISMATCH: The record name 'Pine Hill State Forest' does not match POTA's name 'Pine Hill (Delaware County) State Forest' (score 0.67) (+3 more flags). |
+| 8 | US-8097 | South Hill (Delaware and Otsego County) State Forest | SOURCE DOWN: MISMATCH: The record name 'South Hill State Forest' does not match POTA's name 'South Hill (Delaware and Otsego County) State Forest' (score 0.50) (+3 more flags). |
+| 7 | US-10284 | Lost Nation (St. Lawrence County) State Forest | SOURCE DOWN: MISMATCH: The record name 'Lost Nation State Forest' does not match POTA's name 'Lost Nation (St. Lawrence County) State Forest' (score 0.50) (+2 more flags). |
+| 7 | US-12030 | Pine Hill (Cattaraugus County) State Forest | SOURCE DOWN: MISMATCH: The record name 'Pine Hill State Forest' does not match POTA's name 'Pine Hill (Cattaraugus County) State Forest' (score 0.67) (+2 more flags). |
+| 7 | US-12778 | Tracy Creek (Steuben County) State Forest | SOURCE DOWN: MISMATCH: The record name 'Tracy Creek State Forest' does not match POTA's name 'Tracy Creek (Steuben County) State Forest' (score 0.67) (+2 more flags). |
+| 7 | US-2128 | Robert Moses (Long Island) State Park | SOURCE DOWN: MISMATCH: The record name 'Robert Moses State Park' does not match POTA's name 'Robert Moses (Long Island) State Park' (score 0.50) (+2 more flags). |
+| 7 | US-4374 | Robert Moses (Thousand Islands) State Park | SOURCE DOWN: MISMATCH: The record name 'Robert Moses State Park' does not match POTA's name 'Robert Moses (Thousand Islands) State Park' (score 0.50) (+2 more flags). |

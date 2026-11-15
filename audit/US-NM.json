@@ -1,6 +1,6 @@
 {
  "area": "US-NM",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -1531,13 +1531,13 @@
      "flag": "SPILL",
      "parks": [
       {
-       "ref": "US-11814",
-       "name": "Salinas Pueblo Missions, Quarai unit, National Monument",
+       "ref": "US-11813",
+       "name": "Salinas Pueblo Missions, Abo Unit National Monument",
        "share": 1.0
       },
       {
-       "ref": "US-11813",
-       "name": "Salinas Pueblo Missions, Abo Unit National Monument",
+       "ref": "US-11814",
+       "name": "Salinas Pueblo Missions, Quarai unit, National Monument",
        "share": 1.0
       }
      ],
@@ -1550,10 +1550,10 @@
     "T8": {
      "flag": "DUPLICATE",
      "parks": {
-      "US-11813": [
+      "US-11814": [
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3403"
       ],
-      "US-11814": [
+      "US-11813": [
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3403"
       ]
      },
@@ -1729,8 +1729,7 @@
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1"
    ],
    "acres_drawn": 671.3,
    "records": [
@@ -1773,24 +1772,13 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=14052&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
-    },
-    {
-     "id": "sgnmc14052",
-     "name": "Datil Well Recreation Area Campground",
-     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
-     "acres": 2.0,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
-     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=14052&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#13971",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#14052",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9#14052",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#14052",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#14052"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#14052"
    ],
    "tests": {
     "T1": {
@@ -1798,11 +1786,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 671.3,
-     "official_acres": 671.3,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -1834,17 +1819,17 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-10-13",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
     "official acres count once the land of rst14052: it lies inside a bigger record from the same source"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-11782",
@@ -1987,10 +1972,9 @@
    ],
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0"
    ],
-   "acres_drawn": 24654.2,
+   "acres_drawn": 24654.1,
    "records": [
     {
      "id": "sgakg14020",
@@ -2011,22 +1995,11 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?objectIds=14020&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
-    },
-    {
-     "id": "sgnmc14020",
-     "name": "Fort Stanton",
-     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
-     "acres": 24654.1,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
-     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=14020&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#14020",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#14020",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#14020"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#14020"
    ],
    "tests": {
     "T1": {
@@ -2034,11 +2007,8 @@
      "metres": 711.2
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 24654.2,
-     "official_acres": 24654.1,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -2066,15 +2036,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-10-13",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 3,
-   "why": "OUTSIDE: POTA's pin is 711 m outside the outline."
+   "why": "SOURCE DOWN: OUTSIDE: POTA's pin is 711 m outside the outline."
   },
   {
    "ref": "US-11789",
@@ -2677,10 +2648,10 @@
     "T8": {
      "flag": "DUPLICATE",
      "parks": {
-      "US-0961": [
+      "US-11814": [
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3403"
       ],
-      "US-11814": [
+      "US-0961": [
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3403"
       ]
      },
@@ -2799,7 +2770,7 @@
    "name": "La Cueva Non-Motorized Trail System Recreation Site",
    "key_name": "La Cueva Non-Motorized Trail System Recreation Site",
    "type": "Recreation Site",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     32.3623,
     -104.299
@@ -2845,11 +2816,8 @@
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "detail_m": 0.09,
-     "declared_m": null,
-     "coordinate_step_m": 0.09,
-     "median_spacing_m": 0.0,
-     "flag": "PASS"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -2857,13 +2825,15 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: : down for this run (failed 3 times)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 268 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 268 m outside the outline."
   },
   {
    "ref": "US-11816",
@@ -2877,8 +2847,7 @@
    ],
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0"
    ],
    "acres_drawn": 57638.4,
    "records": [
@@ -2911,23 +2880,12 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?objectIds=14039&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
-    },
-    {
-     "id": "sgnmc14039",
-     "name": "Hackberry Lake OHV",
-     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
-     "acres": 57605.1,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
-     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=14039&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9#14053",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#14053",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#14039",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#14039"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#14039"
    ],
    "tests": {
     "T1": {
@@ -2935,11 +2893,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 57638.4,
-     "official_acres": 57605.8,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -2967,15 +2922,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-10-13",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-11817",
@@ -3210,53 +3166,76 @@
    "name": "Coronado Historic Site",
    "key_name": "Coronado Historic Site",
    "type": "Historic Site",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     35.3294,
     -106.557
    ],
-   "outline_from": [],
-   "acres_drawn": null,
-   "records": [],
-   "record_ids": [],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 103.9,
+   "records": [
+    {
+     "id": "padus#80742",
+     "name": "Coronado Historic Site",
+     "type": "LHCA Local Historic or Cultural Area",
+     "category": "Fee",
+     "acres": 104.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=80742&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#80742"
+   ],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "outline_acres": 103.9,
+     "official_acres": 104.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Coronado Historic Site",
+     "record_name": "Coronado Historic Site"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "PASS",
+     "pieces": 1
     },
     "T6": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "CAN'T TELL",
-     "note": "no record id"
+     "flag": "PASS"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 0,
-   "why": "Nothing could be tested."
+   "why": "All tests pass."
   },
   {
    "ref": "US-11838",
@@ -3806,8 +3785,7 @@
    ],
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1"
    ],
    "acres_drawn": 3315.4,
    "records": [
@@ -3830,22 +3808,11 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=14013&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
-    },
-    {
-     "id": "sgnmc14013",
-     "name": "Alien Run",
-     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
-     "acres": 3315.3,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
-     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=14013&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#14013",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#14013",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#14013"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#14013"
    ],
    "tests": {
     "T1": {
@@ -3853,11 +3820,8 @@
      "metres": 2.2
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 3315.4,
-     "official_acres": 3315.3,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "MISMATCH",
@@ -3885,15 +3849,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-10-13",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 4,
-   "why": "MISMATCH: The record name 'Alien Run' does not match POTA's name 'Alien Run Mountain Bike Trail BLM Recreation Management Area' (score 0.50) (+1 more flag)."
+   "why": "SOURCE DOWN: MISMATCH: The record name 'Alien Run' does not match POTA's name 'Alien Run Mountain Bike Trail BLM Recreation Management Area' (score 0.50) (+1 more flag)."
   },
   {
    "ref": "US-12591",
@@ -3908,8 +3873,7 @@
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1"
    ],
    "acres_drawn": 2.1,
    "records": [
@@ -3942,23 +3906,12 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=11412&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
-    },
-    {
-     "id": "sgnmc11412",
-     "name": "Sunset Reef Campground",
-     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
-     "acres": 2.1,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
-     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=11412&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9#11412",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#11412",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#11412",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#11412"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#11412"
    ],
    "tests": {
     "T1": {
@@ -3966,11 +3919,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 2.1,
-     "official_acres": 2.1,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -3998,15 +3948,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-10-13",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-12592",
@@ -4073,10 +4024,9 @@
    ],
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1"
    ],
-   "acres_drawn": 23339.6,
+   "acres_drawn": 23339.5,
    "records": [
     {
      "id": "rst13982",
@@ -4097,22 +4047,11 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=13982&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
-    },
-    {
-     "id": "sgnmc13982",
-     "name": "Glade Run Recreation Area",
-     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
-     "acres": 23339.4,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
-     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=13982&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#13982",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#13982",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#13982"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#13982"
    ],
    "tests": {
     "T1": {
@@ -4120,11 +4059,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 23339.6,
-     "official_acres": 23339.4,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4139,16 +4075,15 @@
     },
     "T5": {
      "flag": "SELF-INTERSECTION",
-     "pieces": 2,
+     "pieces": 3,
      "flags": [
-      "SELF-INTERSECTION",
-      "TINY HOLES"
+      "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-108.110326470483 36.9065650437661]; 1 hole(s) under 100 m2",
+     "note": "Ring Self-intersection[-108.110326470483 36.9065650437661]",
      "repair": {
       "ok": true,
       "area_change_pct": 0.0,
-      "holes": 1,
+      "holes": 0,
       "pieces": 0
      }
     },
@@ -4163,15 +4098,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-10-13",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-108.110326470483 36.9065650437661]; 1 hole(s) under 100 m2 (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-108.110326470483 36.9065650437661]."
   },
   {
    "ref": "US-12737",
@@ -4239,8 +4175,7 @@
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1"
    ],
    "acres_drawn": 8051.5,
    "records": [
@@ -4273,23 +4208,12 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=11071&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
-    },
-    {
-     "id": "sgnmc11071",
-     "name": "Aden Hills",
-     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
-     "acres": 8051.4,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
-     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=11071&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9#11071",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#11071",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#11071",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#11071"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#11071"
    ],
    "tests": {
     "T1": {
@@ -4297,11 +4221,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 8051.5,
-     "official_acres": 8051.4,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "MISMATCH",
@@ -4321,11 +4242,11 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-107.07565015818 32.1698996257025]; 2 hole(s) under 100 m2",
+     "note": "Ring Self-intersection[-107.07565015818 32.1698996257025]; 1 hole(s) under 100 m2",
      "repair": {
       "ok": true,
       "area_change_pct": 0.0,
-      "holes": 2,
+      "holes": 1,
       "pieces": 0
      }
     },
@@ -4340,15 +4261,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-10-13",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 5,
-   "why": "MISMATCH: The record name 'Aden Hills' does not match POTA's name 'Aden Hills Off-Highway Vehicle Area BLM Recreation Management Area' (score 0.40) (+2 more flags)."
+   "why": "SOURCE DOWN: MISMATCH: The record name 'Aden Hills' does not match POTA's name 'Aden Hills Off-Highway Vehicle Area BLM Recreation Management Area' (score 0.40) (+2 more flags)."
   },
   {
    "ref": "US-12785",
@@ -4621,10 +4543,9 @@
    ],
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0"
    ],
-   "acres_drawn": 3832.8,
+   "acres_drawn": 3832.7,
    "records": [
     {
      "id": "sgakg14015",
@@ -4645,22 +4566,11 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?objectIds=14015&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
-    },
-    {
-     "id": "sgnmc14015",
-     "name": "Quebradas Backcountry Byway",
-     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
-     "acres": 3833.7,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
-     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=14015&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#14015",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#14015",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#14015"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#14015"
    ],
    "tests": {
     "T1": {
@@ -4668,11 +4578,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 3832.8,
-     "official_acres": 3833.7,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4700,15 +4607,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-10-13",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-13185",
@@ -4829,8 +4737,7 @@
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1"
    ],
    "acres_drawn": 4.2,
    "records": [
@@ -4863,23 +4770,12 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=11411&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
-    },
-    {
-     "id": "sgnmc11411",
-     "name": "Chosa Campground",
-     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
-     "acres": 4.2,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
-     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=11411&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9#11411",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#11411",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#11411",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#11411"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#11411"
    ],
    "tests": {
     "T1": {
@@ -4887,11 +4783,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 4.2,
-     "official_acres": 4.2,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4919,15 +4812,69 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-10-13",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
+  },
+  {
+   "ref": "US-13654",
+   "name": "Monjeau Lookout National Historical Site",
+   "key_name": "Monjeau Lookout National Historical Site",
+   "type": "National Historical Site",
+   "grade": "pin",
+   "pin": [
+    33.4314,
+    -105.731
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 0,
-   "why": "All tests pass."
+   "why": "Nothing could be tested."
   },
   {
    "ref": "US-2686",
@@ -4940,21 +4887,10 @@
     -108.108
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 2203.5,
+   "acres_drawn": 1824.3,
    "records": [
-    {
-     "id": "sgnmb1",
-     "name": "BLUEWATER LAKE",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 2108.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=1&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229267",
      "name": "Bluewater Lake State Park",
@@ -4967,7 +4903,6 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#1",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229267"
    ],
    "tests": {
@@ -4976,11 +4911,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 2203.5,
-     "official_acres": 2108.0,
-     "times": 1.05,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4995,7 +4927,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 7
+     "pieces": 10
     },
     "T6": {
      "flag": "PASS"
@@ -5008,15 +4940,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2687",
@@ -5029,21 +4962,10 @@
     -104.331
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 1545.5,
+   "acres_drawn": 1438.6,
    "records": [
-    {
-     "id": "sgnmb33",
-     "name": "BOTTOMLESS LAKES",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 1537.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=33&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229268",
      "name": "Bottomless Lakes State Park",
@@ -5056,7 +4978,6 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#33",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229268"
    ],
    "tests": {
@@ -5065,11 +4986,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1545.5,
-     "official_acres": 1537.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5097,15 +5015,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2688",
@@ -5118,21 +5037,10 @@
     -104.378
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 4436.9,
+   "acres_drawn": 2663.7,
    "records": [
-    {
-     "id": "sgnmb2",
-     "name": "BRANTLEY LAKE",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 4343.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=2&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229269",
      "name": "Brantley Lake State Park",
@@ -5145,7 +5053,6 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#2",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229269"
    ],
    "tests": {
@@ -5154,11 +5061,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 4436.9,
-     "official_acres": 4343.0,
-     "times": 1.02,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5186,15 +5090,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2689",
@@ -5207,21 +5112,10 @@
     -107.312
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 8282.8,
+   "acres_drawn": 4475.7,
    "records": [
-    {
-     "id": "sgnmb3",
-     "name": "CABALLO LAKE",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 5817.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=3&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229270",
      "name": "Caballo Lake State Park",
@@ -5234,7 +5128,6 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#3",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229270"
    ],
    "tests": {
@@ -5243,11 +5136,8 @@
      "metres": 20.7
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 8282.8,
-     "official_acres": 5817.0,
-     "times": 1.42,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5262,7 +5152,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 2
+     "pieces": 6
     },
     "T6": {
      "flag": "PASS"
@@ -5275,15 +5165,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 21 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 21 m outside the outline."
   },
   {
    "ref": "US-2690",
@@ -5295,82 +5186,50 @@
     35.4446,
     -106.122
    ],
-   "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0"
-   ],
-   "acres_drawn": 1086.3,
-   "records": [
-    {
-     "id": "sgnmb4",
-     "name": "CERRILLOS HILLS",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 1086.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=4&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    }
-   ],
-   "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#4"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1086.3,
-     "official_acres": 1086.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Cerrillos Hills State Park",
-     "record_name": "CERRILLOS HILLS"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "state park",
-     "record_kind": "state park",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "SELF-INTERSECTION",
-     "pieces": 2,
-     "flags": [
-      "SELF-INTERSECTION"
-     ],
-     "note": "Ring Self-intersection[-106.120959471848 35.4459540302082]",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 0,
-      "pieces": 0
-     }
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-106.120959471848 35.4459540302082]."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-2691",
@@ -5383,10 +5242,9 @@
     -105.152
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 1376.9,
+   "acres_drawn": 1230.6,
    "records": [
     {
      "id": "padus#229272",
@@ -5397,21 +5255,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=229272&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgnmb5",
-     "name": "CIMARRON CANYON",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 378.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=5&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229272",
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#5"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229272"
    ],
    "tests": {
     "T1": {
@@ -5419,11 +5266,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1376.9,
-     "official_acres": 1231.0,
-     "times": 1.12,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5451,15 +5295,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2692",
@@ -5472,21 +5317,10 @@
     -107.974
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 2952.9,
+   "acres_drawn": 681.3,
    "records": [
-    {
-     "id": "sgnmb6",
-     "name": "CITY OF ROCKS",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 2915.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=6&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229273",
      "name": "City Of Rocks State Park",
@@ -5499,7 +5333,6 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#6",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229273"
    ],
    "tests": {
@@ -5508,11 +5341,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 2952.9,
-     "official_acres": 2915.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5540,15 +5370,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2693",
@@ -5561,21 +5392,10 @@
     -103.305
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 469.8,
+   "acres_drawn": 315.4,
    "records": [
-    {
-     "id": "sgnmb7",
-     "name": "CLAYTON LAKE",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 417.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=7&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229274",
      "name": "Clayton Lake State Park",
@@ -5588,20 +5408,16 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#7",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229274"
    ],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NEAR",
+     "metres": 78.6
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 469.8,
-     "official_acres": 417.0,
-     "times": 1.13,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5629,15 +5445,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 79 m outside the outline."
   },
   {
    "ref": "US-2694",
@@ -5650,10 +5467,9 @@
     -104.185
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 1608.1,
+   "acres_drawn": 1398.2,
    "records": [
     {
      "id": "padus#229275",
@@ -5664,21 +5480,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=229275&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgnmb8",
-     "name": "CONCHAS LAKE",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 503.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=8&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229275",
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#8"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229275"
    ],
    "tests": {
     "T1": {
@@ -5686,11 +5491,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1608.1,
-     "official_acres": 1398.0,
-     "times": 1.15,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5718,15 +5520,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2695",
@@ -5739,10 +5542,9 @@
     -105.233
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 7909.7,
+   "acres_drawn": 7761.4,
    "records": [
     {
      "id": "padus#229276",
@@ -5763,22 +5565,11 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=79461&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgnmb31",
-     "name": "COYOTE CREEK",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 601.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=31&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229276",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#79461",
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#31"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#79461"
    ],
    "tests": {
     "T1": {
@@ -5786,13 +5577,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 7909.7,
-     "official_acres": 7761.0,
-     "times": 1.02,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
-     "official_acres_low": 7306.0,
-     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 7,306 ac, all providers added 7,761 ac"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5820,15 +5606,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2696",
@@ -5841,21 +5628,10 @@
     -105.267
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 3643.6,
+   "acres_drawn": 1918.5,
    "records": [
-    {
-     "id": "sgnmb9",
-     "name": "EAGLE NEST LAKE",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 3488.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=9&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229263",
      "name": "Eagle Nest Lake",
@@ -5878,7 +5654,6 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#9",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229263",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229277"
    ],
@@ -5888,11 +5663,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 3643.6,
-     "official_acres": 3488.0,
-     "times": 1.04,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5902,12 +5674,12 @@
     },
     "T4": {
      "park_kind": "state park",
-     "record_kind": "state park",
+     "record_kind": "recreation area",
      "flag": "PASS"
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 1
+     "pieces": 4
     },
     "T6": {
      "flag": "PASS"
@@ -5920,15 +5692,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2697",
@@ -5941,21 +5714,10 @@
     -107.208
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 43268.8,
+   "acres_drawn": 20696.2,
    "records": [
-    {
-     "id": "sgnmb11",
-     "name": "ELEPHANT BUTTE LAKE",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 33356.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=11&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229279",
      "name": "Elephant Butte Lake State Park",
@@ -5968,7 +5730,6 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#11",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229279"
    ],
    "tests": {
@@ -5977,11 +5738,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 43268.8,
-     "official_acres": 33356.0,
-     "times": 1.3,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5995,18 +5753,8 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "SLIVERS",
-     "pieces": 3,
-     "flags": [
-      "SLIVERS"
-     ],
-     "note": "1 piece(s) under 10 m wide",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 0,
-      "pieces": 1
-     }
+     "flag": "PASS",
+     "pieces": 16
     },
     "T6": {
      "flag": "PASS"
@@ -6019,15 +5767,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "SLIVERS: The shape has problems: 1 piece(s) under 10 m wide."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2698",
@@ -6040,21 +5789,10 @@
     -106.737
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 5518.2,
+   "acres_drawn": 1850.3,
    "records": [
-    {
-     "id": "sgnmb10",
-     "name": "EL VADO LAKE",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 5206.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=10&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229278",
      "name": "El Vado Lake State Park",
@@ -6067,20 +5805,16 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#10",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229278"
    ],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NEAR",
+     "metres": 229.9
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 5518.2,
-     "official_acres": 5206.0,
-     "times": 1.06,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6094,18 +5828,8 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 1,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "4 hole(s) under 100 m2",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 4,
-      "pieces": 0
-     }
+     "flag": "PASS",
+     "pieces": 24
     },
     "T6": {
      "flag": "PASS"
@@ -6118,15 +5842,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "TINY HOLES: The shape has problems: 4 hole(s) under 100 m2."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 230 m outside the outline."
   },
   {
    "ref": "US-2699",
@@ -6139,21 +5864,10 @@
     -106.726
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 306.1,
+   "acres_drawn": 259.5,
    "records": [
-    {
-     "id": "sgnmb29",
-     "name": "FENTON LAKE",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 291.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=29&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229298",
      "name": "Fenton Lake Fishing Area (and Dam)",
@@ -6166,20 +5880,16 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#29",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229298"
    ],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NEAR",
+     "metres": 1.2
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 306.1,
-     "official_acres": 291.0,
-     "times": 1.05,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6189,7 +5899,7 @@
     },
     "T4": {
      "park_kind": "state park",
-     "record_kind": "state park",
+     "record_kind": "recreation area",
      "flag": "PASS"
     },
     "T5": {
@@ -6207,15 +5917,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 1 m outside the outline."
   },
   {
    "ref": "US-2700",
@@ -6228,21 +5939,10 @@
     -106.691
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 10027.7,
+   "acres_drawn": 5232.6,
    "records": [
-    {
-     "id": "sgnmb12",
-     "name": "HERON LAKE",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 9963.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=12&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229280",
      "name": "Heron Lake State Park",
@@ -6255,7 +5955,6 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#12",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229280"
    ],
    "tests": {
@@ -6264,11 +5963,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 10027.7,
-     "official_acres": 9963.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6283,7 +5979,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 1
+     "pieces": 7
     },
     "T6": {
      "flag": "PASS"
@@ -6296,15 +5992,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2701",
@@ -6317,21 +6014,10 @@
     -105.837
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 363.9,
+   "acres_drawn": 346.7,
    "records": [
-    {
-     "id": "sgnmb13",
-     "name": "HYDE MEMORIAL",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 352.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=13&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229281",
      "name": "Hyde Memorial State Park",
@@ -6344,7 +6030,6 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#13",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229281"
    ],
    "tests": {
@@ -6353,11 +6038,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 363.9,
-     "official_acres": 352.0,
-     "times": 1.03,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6385,15 +6067,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2702",
@@ -6406,21 +6089,10 @@
     -106.918
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 295.9,
+   "acres_drawn": 270.9,
    "records": [
-    {
-     "id": "sgnmb14",
-     "name": "LEASBURG DAM",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 288.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=14&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229282",
      "name": "Leasburg Dam State Park",
@@ -6433,7 +6105,6 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#14",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229282"
    ],
    "tests": {
@@ -6442,11 +6113,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 295.9,
-     "official_acres": 288.0,
-     "times": 1.03,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6474,15 +6142,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2703",
@@ -6495,21 +6164,10 @@
     -104.277
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 1552.6,
+   "acres_drawn": 374.3,
    "records": [
-    {
-     "id": "sgnmb34",
-     "name": "LIVING DESERT ZOO",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 1551.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=34&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229283",
      "name": "Living Desert State Park",
@@ -6522,7 +6180,6 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#34",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229283"
    ],
    "tests": {
@@ -6531,11 +6188,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1552.6,
-     "official_acres": 1551.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6563,15 +6217,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2704",
@@ -6584,10 +6239,9 @@
     -106.361
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 1702.2,
+   "acres_drawn": 1700.4,
    "records": [
     {
      "id": "padus#229284",
@@ -6598,21 +6252,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=229284&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgnmb15",
-     "name": "MANZANO MOUNTAINS",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 188.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=15&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229284",
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#15"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229284"
    ],
    "tests": {
     "T1": {
@@ -6620,11 +6263,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1702.2,
-     "official_acres": 1700.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6652,15 +6292,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2705",
@@ -6673,21 +6314,10 @@
     -106.826
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 289.3,
+   "acres_drawn": 237.0,
    "records": [
-    {
-     "id": "sgnmb16",
-     "name": "MESILLA VALLEY BOSQUE",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 272.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=16&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229528",
      "name": "Mesilla Valley Bosque Park",
@@ -6700,20 +6330,16 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#16",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229528"
    ],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NEAR",
+     "metres": 20.7
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 289.3,
-     "official_acres": 272.0,
-     "times": 1.06,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6723,8 +6349,8 @@
     },
     "T4": {
      "park_kind": "state park",
-     "record_kind": "state park",
-     "flag": "PASS"
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
      "flag": "PASS",
@@ -6741,15 +6367,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 21 m outside the outline."
   },
   {
    "ref": "US-2706",
@@ -6762,21 +6389,10 @@
     -105.392
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 48.8,
+   "acres_drawn": 17.7,
    "records": [
-    {
-     "id": "sgnmb17",
-     "name": "MORPHY LAKE",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 48.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=17&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229285",
      "name": "Morphy Lake State Park",
@@ -6789,20 +6405,16 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#17",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229285"
    ],
    "tests": {
     "T1": {
      "flag": "NEAR",
-     "metres": 288.9
+     "metres": 321.3
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 48.8,
-     "official_acres": 48.0,
-     "times": 1.02,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6830,15 +6442,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 289 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 321 m outside the outline."
   },
   {
    "ref": "US-2707",
@@ -6851,11 +6464,9 @@
     -107.613
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 28803.3,
+   "acres_drawn": 17478.6,
    "records": [
     {
      "id": "padus#229286",
@@ -6876,33 +6487,11 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=184876&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgnmb18",
-     "name": "NAVAJO LAKE",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 10424.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=18&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
-    {
-     "id": "sgnmc13998",
-     "name": "Navajo Lake Horse Trails",
-     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
-     "acres": 6764.9,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
-     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=13998&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229286",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#184876",
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#18",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#13998"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#184876"
    ],
    "tests": {
     "T1": {
@@ -6910,11 +6499,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 28803.3,
-     "official_acres": 17478.0,
-     "times": 1.65,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6928,18 +6514,8 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 38,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "2 hole(s) under 100 m2",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 2,
-      "pieces": 0
-     }
+     "flag": "PASS",
+     "pieces": 46
     },
     "T6": {
      "flag": "PASS"
@@ -6952,17 +6528,18 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-10-13",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
     "record 229286: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
-   "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 1.6 times bigger than the official 17,478 acres (28,803 ac drawn) (+1 more flag)."
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2708",
@@ -6975,21 +6552,10 @@
     -103.352
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 208.5,
+   "acres_drawn": 178.1,
    "records": [
-    {
-     "id": "sgnmb19",
-     "name": "OASIS",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 194.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=19&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229287",
      "name": "Oasis State State Park",
@@ -7002,20 +6568,16 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#19",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229287"
    ],
    "tests": {
     "T1": {
      "flag": "NEAR",
-     "metres": 12.5
+     "metres": 45.1
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 208.5,
-     "official_acres": 194.0,
-     "times": 1.07,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7043,15 +6605,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 12 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 45 m outside the outline."
   },
   {
    "ref": "US-2709",
@@ -7064,10 +6627,9 @@
     -105.913
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 719.7,
+   "acres_drawn": 719.6,
    "records": [
     {
      "id": "padus#229288",
@@ -7078,21 +6640,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=229288&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgnmb20",
-     "name": "OLIVER LEE MEMORIAL",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 638.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=20&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229288",
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#20"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229288"
    ],
    "tests": {
     "T1": {
@@ -7100,11 +6651,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 719.7,
-     "official_acres": 720.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7132,15 +6680,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2710",
@@ -7153,21 +6702,10 @@
     -107.641
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 57.2,
+   "acres_drawn": 42.8,
    "records": [
-    {
-     "id": "sgnmb21",
-     "name": "PANCHO VILLA",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 54.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=21&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229289",
      "name": "Pancho Villa State Park",
@@ -7180,7 +6718,6 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#21",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229289"
    ],
    "tests": {
@@ -7189,11 +6726,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 57.2,
-     "official_acres": 54.0,
-     "times": 1.06,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7221,15 +6755,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2711",
@@ -7242,8 +6777,7 @@
     -107.306
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
    "acres_drawn": 315.1,
    "records": [
@@ -7256,21 +6790,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=229290&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgnmb35",
-     "name": "PERCHA DAM",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 204.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=35&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229290",
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#35"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229290"
    ],
    "tests": {
     "T1": {
@@ -7278,11 +6801,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 315.1,
-     "official_acres": 315.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7310,15 +6830,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2712",
@@ -7331,21 +6852,10 @@
     -106.683
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 64.0,
+   "acres_drawn": 25.2,
    "records": [
-    {
-     "id": "sgnmb23",
-     "name": "RIO GRANDE NATURE CENTER",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 39.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=23&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229265",
      "name": "Rio Grande Nature Center",
@@ -7358,20 +6868,16 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#23",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229265"
    ],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "OUTSIDE",
+     "metres": 1515.3
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 64.0,
-     "official_acres": 39.0,
-     "times": 1.64,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7381,12 +6887,12 @@
     },
     "T4": {
      "park_kind": "state park",
-     "record_kind": "state park",
-     "flag": "PASS"
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 2
+     "pieces": 1
     },
     "T6": {
      "flag": "PASS"
@@ -7399,15 +6905,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 1.6 times bigger than the official 39 acres (64 ac drawn)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 3,
+   "why": "SOURCE DOWN: OUTSIDE: POTA's pin is 1.5 km outside the outline."
   },
   {
    "ref": "US-2713",
@@ -7420,21 +6927,10 @@
     -107.612
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 912.3,
+   "acres_drawn": 233.8,
    "records": [
-    {
-     "id": "sgnmb24",
-     "name": "ROCKHOUND",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 913.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=24&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229291",
      "name": "Rockhound State Park",
@@ -7447,7 +6943,6 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#24",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229291"
    ],
    "tests": {
@@ -7456,21 +6951,14 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 912.3,
-     "official_acres": 913.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "MISMATCH",
      "score": 0.526,
      "pota_name": "Rock Hound State Park",
-     "record_name": "Rockhound State Park",
-     "worst_record": {
-      "name": "ROCKHOUND",
-      "score": 0.526
-     }
+     "record_name": "Rockhound State Park"
     },
     "T4": {
      "park_kind": "state park",
@@ -7479,7 +6967,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 2
+     "pieces": 1
     },
     "T6": {
      "flag": "PASS"
@@ -7492,15 +6980,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 3,
-   "why": "MISMATCH: The record name 'Rockhound State Park' does not match POTA's name 'Rock Hound State Park' (score 0.53)."
+   "why": "SOURCE DOWN: MISMATCH: The record name 'Rockhound State Park' does not match POTA's name 'Rock Hound State Park' (score 0.53)."
   },
   {
    "ref": "US-2714",
@@ -7513,10 +7002,9 @@
     -104.691
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 409.6,
+   "acres_drawn": 363.8,
    "records": [
     {
      "id": "padus#229292",
@@ -7527,33 +7015,19 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=229292&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgnmb30",
-     "name": "SANTA ROSA LAKE",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 329.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=30&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229292",
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#30"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229292"
    ],
    "tests": {
     "T1": {
      "flag": "NEAR",
-     "metres": 91.5
+     "metres": 140.4
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 409.6,
-     "official_acres": 364.0,
-     "times": 1.13,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7581,15 +7055,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 92 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 140 m outside the outline."
   },
   {
    "ref": "US-2715",
@@ -7602,10 +7077,9 @@
     -105.232
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 131.3,
+   "acres_drawn": 129.7,
    "records": [
     {
      "id": "padus#229293",
@@ -7616,21 +7090,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=229293&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgnmb25",
-     "name": "STORRIE LAKE",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 122.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=25&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229293",
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#25"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229293"
    ],
    "tests": {
     "T1": {
@@ -7638,11 +7101,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 131.3,
-     "official_acres": 130.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7670,15 +7130,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2716",
@@ -7691,21 +7152,10 @@
     -104.386
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 4849.0,
+   "acres_drawn": 4115.0,
    "records": [
-    {
-     "id": "sgnmb32",
-     "name": "SUGARITE CANYON",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 4530.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=32&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229294",
      "name": "Sugarite Canyon State Park",
@@ -7718,7 +7168,6 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#32",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229294"
    ],
    "tests": {
@@ -7727,11 +7176,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 4849.0,
-     "official_acres": 4530.0,
-     "times": 1.07,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7759,15 +7205,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2717",
@@ -7780,21 +7227,10 @@
     -104.396
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 1672.0,
+   "acres_drawn": 903.6,
    "records": [
-    {
-     "id": "sgnmb26",
-     "name": "SUMNER LAKE",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 1467.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=26&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229295",
      "name": "Sumner Lake State Park",
@@ -7807,7 +7243,6 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#26",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229295"
    ],
    "tests": {
@@ -7816,11 +7251,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1672.0,
-     "official_acres": 1467.0,
-     "times": 1.14,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7835,7 +7267,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 1
+     "pieces": 4
     },
     "T6": {
      "flag": "PASS"
@@ -7848,15 +7280,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2718",
@@ -7869,21 +7302,10 @@
     -103.451
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 1844.6,
+   "acres_drawn": 1613.8,
    "records": [
-    {
-     "id": "sgnmb27",
-     "name": "UTE LAKE",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 1632.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=27&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229296",
      "name": "Ute Lake State Park",
@@ -7896,7 +7318,6 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#27",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229296"
    ],
    "tests": {
@@ -7905,11 +7326,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1844.6,
-     "official_acres": 1632.0,
-     "times": 1.13,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7937,15 +7355,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2719",
@@ -8011,21 +7430,10 @@
     -105.334
    ],
    "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 1777.8,
+   "acres_drawn": 1603.7,
    "records": [
-    {
-     "id": "sgnmb28",
-     "name": "VILLANUEVA",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 1731.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=28&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    },
     {
      "id": "padus#229297",
      "name": "Villanueva State Park",
@@ -8038,7 +7446,6 @@
     }
    ],
    "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#28",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#229297"
    ],
    "tests": {
@@ -8047,11 +7454,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1777.8,
-     "official_acres": 1731.0,
-     "times": 1.03,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -8066,7 +7470,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 1
+     "pieces": 2
     },
     "T6": {
      "flag": "PASS"
@@ -8079,15 +7483,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-4376",
@@ -8500,7 +7905,15 @@
      }
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "US-13654",
+       "name": "Monjeau Lookout National Historical Site",
+       "share": 1.0
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -8516,8 +7929,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-105.210573020405 33.6176101834287]; 2 piece(s) under 10 m wide (+1 more flag)."
+   "score": 5,
+   "why": "SPILL: The outline covers 100% of US-13654 Monjeau Lookout National Historical Site, with no 2-fer row (maybe the wrong record) (+2 more flags)."
   },
   {
    "ref": "US-4517",
@@ -8630,10 +8043,15 @@
       {
        "ref": "US-8227",
        "name": "Jemez National Recreation Area",
-       "share": 0.85
+       "share": 0.63
+      },
+      {
+       "ref": "US-9679",
+       "name": "Pecos Canyon State Park",
+       "share": 0.59
       }
      ],
-     "count": 1
+     "count": 2
     },
     "T7": {
      "flag": "N/A",
@@ -8650,7 +8068,7 @@
    "problems": [],
    "status": "graded",
    "score": 6,
-   "why": "SPILL: The outline covers 85% of US-8227 Jemez National Recreation Area, with no 2-fer row (maybe the wrong record) (+3 more flags)."
+   "why": "SPILL: The outline covers 63% of US-8227 Jemez National Recreation Area, with no 2-fer row (maybe the wrong record) (+3 more flags)."
   },
   {
    "ref": "US-4551",
@@ -9523,8 +8941,7 @@
    ],
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1"
    ],
    "acres_drawn": 463.0,
    "records": [
@@ -9547,22 +8964,11 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=13990&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
-    },
-    {
-     "id": "sgnmc13990",
-     "name": "Valley of Fires Recreation Area",
-     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
-     "acres": 463.0,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
-     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=13990&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#13990",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#13990",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#13990"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#13990"
    ],
    "tests": {
     "T1": {
@@ -9570,11 +8976,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 463.0,
-     "official_acres": 463.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -9602,15 +9005,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-10-13",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-7878",
@@ -9623,23 +9027,12 @@
     -106.014
    ],
    "outline_from": [
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1"
    ],
-   "acres_drawn": 33872.6,
+   "acres_drawn": 33872.5,
    "records": [
-    {
-     "id": "sgnmc11047",
-     "name": "Red Sands OHV",
-     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
-     "acres": 33872.3,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
-     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=11047&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
-    },
     {
      "id": "rma11047",
      "name": "Red Sands OHV",
@@ -9672,7 +9065,6 @@
     }
    ],
    "record_ids": [
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#11047",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9#11047",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#11047",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#11047"
@@ -9683,11 +9075,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 33872.6,
-     "official_acres": 33872.3,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -9726,15 +9115,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-10-13",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 2,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-106.085680929852 32.6074349715192]; 1 hole(s) under 100 m2 (+1 more flag)."
+   "why": "SOURCE DOWN: SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-106.085680929852 32.6074349715192]; 1 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-8227",
@@ -9746,79 +9136,50 @@
     35.6802,
     -106.737
    ],
-   "outline_from": [
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0"
-   ],
-   "acres_drawn": 57754.9,
-   "records": [
-    {
-     "id": "fsod53",
-     "name": "Jemez National Recreation Area",
-     "type": "Forest Service national designated areas (monuments, NRAs, scenic areas)",
-     "acres": 57753.0,
-     "acres_from": "the key's acres",
-     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
-     "link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query?objectIds=53&outFields=*&returnGeometry=false&f=html",
-     "name_field": "fullname"
-    }
-   ],
-   "record_ids": [
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0#53"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 57754.9,
-     "official_acres": 57753.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Jemez National Recreation Area",
-     "record_name": "Jemez National Recreation Area"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "recreation area",
-     "record_kind": "national forest",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "SPILL",
-     "parks": [
-      {
-       "ref": "US-2699",
-       "name": "Fenton Lake State Park",
-       "share": 0.6
-      }
-     ],
-     "count": 1
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 3,
-   "why": "SPILL: The outline covers 60% of US-2699 Fenton Lake State Park, with no 2-fer row (maybe the wrong record)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: apps.fs.usda.gov: saved copies only, no live read"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-8228",
@@ -9903,7 +9264,6 @@
    ],
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0"
    ],
    "acres_drawn": 10216.6,
@@ -9919,16 +9279,6 @@
      "name_field": "FET_NAME"
     },
     {
-     "id": "sgnmc13981",
-     "name": "Angel Peak Scenic Area",
-     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
-     "acres": 10216.1,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
-     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=13981&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
-    },
-    {
      "id": "rst13981",
      "name": "Angel Peak Scenic Area",
      "type": "Bureau of Land Management",
@@ -9941,7 +9291,6 @@
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#13981",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#13981",
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#13981"
    ],
    "tests": {
@@ -9950,11 +9299,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 10216.6,
-     "official_acres": 10216.1,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -9982,15 +9328,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-10-13",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-8617",
@@ -10145,8 +9492,7 @@
    ],
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1"
    ],
    "acres_drawn": 4439.9,
    "records": [
@@ -10169,22 +9515,11 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=14080&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
-    },
-    {
-     "id": "sgnmc14080",
-     "name": "San Ysidro Trails Area",
-     "type": "BLM Natl Recreation Site Polygons (park, state GIS table)",
-     "acres": 4439.0,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2",
-     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2/query?objectIds=14080&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#14080",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#14080",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_Recreation_Site_Polygons/FeatureServer/2#14080"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#14080"
    ],
    "tests": {
     "T1": {
@@ -10192,11 +9527,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 4439.9,
-     "official_acres": 4439.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "MISMATCH",
@@ -10224,15 +9556,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-10-13",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 3,
-   "why": "MISMATCH: The record name 'San Ysidro Trails Area' does not match POTA's name 'San Ysidro Trials Area BLM Recreation Management Area' (score 0.67)."
+   "why": "SOURCE DOWN: MISMATCH: The record name 'San Ysidro Trails Area' does not match POTA's name 'San Ysidro Trials Area BLM Recreation Management Area' (score 0.67)."
   },
   {
    "ref": "US-8620",
@@ -10246,8 +9579,8 @@
    ],
    "outline_from": [
     "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
-    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
-    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0"
+    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
+    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1"
    ],
    "acres_drawn": 15862.7,
    "records": [
@@ -10262,26 +9595,26 @@
      "name_field": "ACEC_NAME"
     },
     {
-     "id": "wsa1517",
-     "name": "Ojito",
-     "type": "Bureau of Land Management",
-     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
-     "link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1/query?objectIds=1517&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NLCS_NAME"
-    },
-    {
      "id": "wbl476",
      "name": "Ojito Wilderness",
      "type": "Bureau of Land Management",
      "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0",
      "link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0/query?objectIds=476&outFields=*&returnGeometry=false&f=html",
      "name_field": "NLCS_NAME"
+    },
+    {
+     "id": "wsa1517",
+     "name": "Ojito",
+     "type": "Bureau of Land Management",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1",
+     "link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1/query?objectIds=1517&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NLCS_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0#1729",
-    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1#1517",
-    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0#476"
+    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/0#476",
+    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1#1517"
    ],
    "tests": {
     "T1": {
@@ -10422,72 +9755,50 @@
     35.7439,
     -105.677
    ],
-   "outline_from": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0"
-   ],
-   "acres_drawn": 378.0,
-   "records": [
-    {
-     "id": "sgnmb22",
-     "name": "PECOS CANYON",
-     "type": "NM EMNRD State Parks data, hosted in the State of New Mexico Mapping Community AGOL org (park, state GIS table)",
-     "acres": 378.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0",
-     "link": "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0/query?objectIds=22&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Name"
-    }
-   ],
-   "record_ids": [
-    "https://services7.arcgis.com/fdxAYNZ9OCyQZXdN/arcgis/rest/services/NM_State_Parks/FeatureServer/0#22"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 378.0,
-     "official_acres": 378.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Pecos Canyon State Park",
-     "record_name": "PECOS CANYON"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "state park",
-     "record_kind": "state park",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 3
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2026-07-30",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-9757",
