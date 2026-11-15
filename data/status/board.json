@@ -1020,9 +1020,9 @@
   "Key bots: errors and silence": {
    "areas": "",
    "last_run": "2026-11-15",
-   "made": "1 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots)",
+   "made": "3 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots); map audit (Save); waiting room (kpc_engine.py)",
    "result": "red",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43693646473",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43766793325",
    "waiting_on": "HQ: open the watchdog run summary for the run links"
   },
   "Layer collector": {
@@ -1084,9 +1084,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-15",
-   "made": "2026-11-15 08:16 UTC: 10 skipped run(s) started again: kpc-camp-weekly.yml (missed Nov 15 07:29 UTC); kpc-copy-from-links.yml (missed Nov 15 07:11 UTC); kpc-hardlook.yml (missed Nov 15 06:13 UTC); kpc-helpers.yml (missed Nov 15 05:37 UTC); kpc-map-pictures.yml (missed Nov 15 07:24 UTC); kpc-picture-",
+   "made": "2026-11-15 23:52 UTC: 1 skipped run(s) started again: kpc-copy-from-links.yml (missed Nov 15 23:11 UTC)",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43693646473",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43777121858",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1196,10 +1196,10 @@
   "Website copy (site branch)": {
    "areas": "",
    "last_run": "2026-11-15",
-   "made": "site = main: the website has the newest data",
-   "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43693646473",
-   "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
+   "made": "site is 88 min behind main (4 commits, 11 website files): started the copy bot (kpc-pages-sync) once",
+   "result": "red",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43777121858",
+   "waiting_on": "HQ: look at kpc-pages-sync.yml runs"
   },
   "answer-sheet-check": {
    "areas": "",
