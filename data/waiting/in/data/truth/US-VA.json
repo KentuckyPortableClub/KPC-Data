@@ -6,6 +6,7 @@
   "handover_hints": 17,
   "no_page": 0,
   "no_size": 27,
+  "not_read": 0,
   "off": 25,
   "ours_unknown": 21,
   "parks": 184,
@@ -985,11 +986,11 @@
   "US-0565": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Fisherman Island National Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 1978,
+    "acres": 2477,
     "family_fold": "layers {'padus': 3970, 'sgvae': 2177}: one land in 2 layers, the padus copy used (2,177 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -1526,11 +1527,11 @@
   "US-0573": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Wallops Island National Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 468,
+    "acres": 373,
     "dissolved": {
      "after": 733,
      "before": 1093,
@@ -1541,10 +1542,8 @@
      },
      "family_fold": 360,
      "family_used": "sgvae",
-     "key_union": 468,
      "parts": 0,
      "records": 3,
-     "summed": 373,
      "tracts": 2
     },
     "family_fold": "layers {'sgvae': 373, 'padus': 360}: one land in 2 layers, the sgvae copy used (360 ac of copies not added)",
@@ -6054,32 +6053,38 @@
   "US-1313": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Powhatan State Park",
    "official": null,
    "ours": {
-    "acres": 1564,
+    "acres": 1565,
     "dissolved": {
-     "after": 1564,
-     "before": 7817,
-     "copies": 4,
+     "after": 1565,
+     "before": 7820,
+     "copies": 6,
      "parts": 0,
-     "records": 5,
-     "tracts": 1
+     "records": 8,
+     "tracts": 2
     },
     "manager": "",
-    "note": "5 joined records = 1 tracts: 4 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 7817 -> 1564 acres",
+    "note": "8 joined records = 2 tracts: 6 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 7820 -> 1565 acres",
     "pieces": [
      [
       54645,
       "Powhatan State Park",
       1564,
       "name"
+     ],
+     [
+      "sgvac19",
+      "Powhatan State Park",
+      1,
+      "name"
      ]
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 5
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -16503,5 +16508,5 @@
    "verdict": "no size on page"
   }
  },
- "read": "2026-11-08"
+ "read": "2026-11-15"
 }
