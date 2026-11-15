@@ -799,3 +799,117 @@ It decides nothing: it ranks. Score 0 = all pass; +3 OUTSIDE / WAY OFF / MISMATC
 | 4 | US-8192 | Shadehill State Recreation Area | CONFLICT: The record is the whole lake but the park is a recreation area on it (+1 more flag). |
 | 3 | US-10319 | South Scalp Creek State Recreation Area | MISMATCH: The record name 'S. Scalp Creek Recreation Area' does not match POTA's name 'South Scalp Creek State Recreation Area' (score 0.67). |
 | 3 | US-10330 | Newell Lake State Recreation Area | CONFLICT: The record is the whole lake but the park is a recreation area on it. |
+
+## US-TN
+
+- parks: 277 (235 with an outline graded, 14 with no outline, 28 with records this tool can't read)
+- pass every test: 136; have flags: 141; source down (retry): 235
+- flags: NEAR 72, TINY HOLES 42, SLIVERS 28, SELF-INTERSECTION 27, DUPLICATE 24, SPILL 15, OUTSIDE 10, MISMATCH 8, CONFLICT 5, WEAK 3, SCATTERED 2
+
+| score | ref | park | why |
+|---|---|---|---|
+| 10 | US-2955 | Wilson Cumberland Trail State Park | SOURCE DOWN: MISMATCH: The record name 'Cumberland Trail' does not match POTA's name 'Wilson Cumberland Trail State Park' (score 0.50) (+5 more flags). |
+| 9 | US-2945 | Fall Creek Falls State Park | SOURCE DOWN: OUTSIDE: POTA's pin is 1.1 km outside the outline (+2 more flags). |
+| 8 | US-11879 | North Chickamauga Creek Gorge State Park | SOURCE DOWN: MISMATCH: The record name 'Cumberland Trail' does not match POTA's name 'North Chickamauga Creek Gorge State Park' (score 0.00) (+3 more flags). |
+| 7 | US-4525 | Cherokee National Forest | SPILL: The outline covers 86% of US-12663 Ocoee River State Park, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-5498 | Pickett State Forest | SOURCE DOWN: SPILL: The outline covers 44% of US-6261 Pogue Creek Canyon State Natural Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 6 | US-3928 | Bridgestone/firestone Centennial Wilderness Wildlife Management Area | SOURCE DOWN: SPILL: The outline covers 61% of US-12361 Scott's Gulf Wilderness State Park, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-3960 | Reelfoot State Wildlife Area | SOURCE DOWN: CONFLICT: The park is a wma but the record is a state park (+3 more flags). |
+| 6 | US-7622 | Tellico Lake Wildlife Management Area | SOURCE DOWN: OUTSIDE: POTA's pin is 3.1 km outside the outline (+3 more flags). |
+| 5 | US-2971 | Reelfoot Lake State Park | SOURCE DOWN: CONFLICT: The park is a state park but the record is a wma (+2 more flags). |
+| 5 | US-3934 | Chickasaw State Wildlife Area | SOURCE DOWN: CONFLICT: The park is a wma but the record is a state park (+2 more flags). |
+
+## US-TX
+
+- parks: 222 (199 with an outline graded, 14 with no outline, 9 with records this tool can't read)
+- pass every test: 152; have flags: 70; source down (retry): 197
+- flags: NEAR 30, SELF-INTERSECTION 24, TINY HOLES 16, SPILL 11, DUPLICATE 8, MISMATCH 6, OUTSIDE 5, SCATTERED 4, SLIVERS 4, INVALID 1, CONFLICT 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 8 | US-6571 | Las Palomas , Anacua Unit Wildlife Management Area | SOURCE DOWN: OUTSIDE: POTA's pin is 1.4 km outside the outline (+3 more flags). |
+| 8 | US-6572 | Las Palomas , Lower Rio Grande Valley Units Wildlife Management Area | MISMATCH: The record name 'Las Palomas Wildlife Management Area' does not match POTA's name 'Las Palomas , Lower Rio Grande Valley Units Wildlife Management Area' (score 0.33) (+3 more flags). |
+| 7 | US-4415 | Davy Crockett National Forest | SOURCE DOWN: OUTSIDE: POTA's pin is 1.4 km outside the outline (+2 more flags). |
+| 6 | US-0550 | Lower Rio Grande Valley National Wildlife Refuge | SOURCE DOWN: SPILL: The outline covers 88% of US-10274 Palmito Ranch Battlefield State Historic Site, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-4416 | Sabine National Forest | SOURCE DOWN: SPILL: The outline covers 88% of US-6584 Moore Plantation Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 5 | US-0541 | Aransas National Wildlife Refuge | SOURCE DOWN: SPILL: The outline covers 63% of US-6580 Matagorda Island Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-4414 | Angelina National Forest | SOURCE DOWN: SPILL: The outline covers 81% of US-6537 Bannister Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 3 | US-0035 | Guadalupe Mountains National Park | SOURCE DOWN: SPILL: The outline covers 100% of US-9757 Butterfield Overland National Historic Trail, with no 2-fer row (maybe the wrong record). |
+| 3 | US-0553 | San Bernard National Wildlife Refuge | SOURCE DOWN: SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-95.4908523812823 28.8554926947922]; 20 hole(s) under 100 m2; 63 pieces spread over 111 km (+2 more flags). |
+| 3 | US-10509 | Sam Houston National Forest Wildlife Management Area | SOURCE DOWN: NEAR: POTA's pin is 399 m outside the outline (+2 more flags). |
+
+## US-UT
+
+- parks: 692 (373 with an outline graded, 246 with no outline, 73 with records this tool can't read)
+- pass every test: 475; have flags: 217; source down (retry): 216
+- flags: SPILL 75, NEAR 66, SELF-INTERSECTION 62, MISMATCH 41, TINY HOLES 36, OUTSIDE 31, DUPLICATE 29, SLIVERS 19, FAR 6, OFF 6, WEAK 5, WAY OFF 2, SCATTERED 1, CONFLICT 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 13 | US-5869 | 9 Mile Canyon BLM Recreation Management Area | FAR: POTA's pin is 21.9 km outside the outline (+4 more flags). |
+| 10 | US-4398 | Uinta-Wasatch-Cache National Forest | MISMATCH: The record name 'Cache National Forest' does not match POTA's name 'Uinta-Wasatch-Cache National Forest' (score 0.33) (+5 more flags). |
+| 9 | US-6035 | Zion NPS Wilderness Area | MISMATCH: The record name 'Zion National Park' does not match POTA's name 'Zion NPS Wilderness Area' (score 0.50) (+4 more flags). |
+| 9 | US-6074 | King Top Mountains BLM Herd Management Area | MISMATCH: The record name 'King Top' does not match POTA's name 'King Top Mountains BLM Herd Management Area' (score 0.67) (+4 more flags). |
+| 8 | US-10983 | Notch Peak WSA BLM Wilderness Area | MISMATCH: The record name 'Notch Peak' does not match POTA's name 'Notch Peak WSA BLM Wilderness Area' (score 0.67) (+3 more flags). |
+| 8 | US-10986 | Wahweap WSA BLM Wilderness Area | MISMATCH: The record name 'Wahweap' does not match POTA's name 'Wahweap WSA BLM Wilderness Area' (score 0.50) (+3 more flags). |
+| 8 | US-5789 | Behind the Rocks Wilderness Area | FAR: POTA's pin is 18.9 km outside the outline (+1 more flag). |
+| 8 | US-5896 | Muddy Creek BLM Herd Management Area | OUTSIDE: POTA's pin is 652 m outside the outline (+3 more flags). |
+| 8 | US-6075 | Wah Wah Mountains BLM Wilderness Area | WAY OFF: The outline is 8.1 times bigger than the official 6,088 acres (49,572 ac drawn) (+3 more flags). |
+| 7 | US-11761 | Quail Creek Reservoir Designated Dispersed Camping Area BLM Special Recreation Management Area | OUTSIDE: POTA's pin is 653 m outside the outline (+2 more flags). |
+
+## US-VA
+
+- parks: 184 (147 with an outline graded, 7 with no outline, 30 with records this tool can't read)
+- pass every test: 106; have flags: 78; source down (retry): 171
+- flags: TINY HOLES 31, NEAR 26, SPILL 12, SLIVERS 11, SELF-INTERSECTION 8, OUTSIDE 7, DUPLICATE 6, INVALID 3, MISMATCH 3, SCATTERED 2, CONFLICT 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 7 | US-0561 | Chincoteague National Wildlife Refuge | SOURCE DOWN: SPILL: The outline covers 44% of US-0671 Assateague Island National Seashore, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4526 | George Washington & Jefferson National Forest | SOURCE DOWN: SPILL: The outline covers 100% of US-9948 Little Wilson Creek Wilderness Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 5 | US-0016 | Colonial National Historical Park | SOURCE DOWN: SPILL: The outline covers 64% of US-9897 Jamestowne National Historical Site, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-0671 | Assateague Island National Seashore | SOURCE DOWN: SPILL: The outline covers 75% of US-0561 Chincoteague National Wildlife Refuge, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-3378 | Blue Ridge National Parkway | SOURCE DOWN: SPILL: The outline covers 51% of US-10507 Rock Castle Gorge National Recreation Trail, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-5503 | Appomattox-Buckingham State Forest | SOURCE DOWN: SPILL: The outline covers 81% of US-1302 Holliday Lake State Park, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-5512 | Cumberland State Forest | SOURCE DOWN: SPILL: The outline covers 99% of US-1290 Bear Creek Lake State Park, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-9902 | Colonial National Parkway | SPILL: The outline covers 64% of US-9897 Jamestowne National Historical Site, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 4 | US-0573 | Wallops Island National Wildlife Refuge | SOURCE DOWN: OUTSIDE: POTA's pin is 3.3 km outside the outline (+1 more flag). |
+| 4 | US-0670 | George Washington Memorial Parkway | SPILL: The outline covers 92% of US-9961 Dyke Marsh Wildlife Reserve, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+
+## US-VT
+
+- parks: 109 (94 with an outline graded, 15 with no outline, 0 with records this tool can't read)
+- pass every test: 67; have flags: 42; source down (retry): 2
+- flags: TINY HOLES 20, NEAR 8, SELF-INTERSECTION 7, OUTSIDE 6, MISMATCH 5, SLIVERS 4, INVALID 4, DUPLICATE 4, SPILL 3, SCATTERED 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 6 | US-5552 | Groton State Forest | SPILL: The outline covers 100% of US-3142 Seyon Lodge State Park, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 5 | US-5541 | Calvin Coolidge State Forest | MISMATCH: The record name 'Coolidge State Forest' does not match POTA's name 'Calvin Coolidge State Forest' (score 0.50) (+2 more flags). |
+| 5 | US-5555 | Mount Mansfield State Forest | SPILL: The outline covers 100% of US-3129 Little River State Park, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 4 | US-3101 | Bomoseen State Park | SPILL: The outline covers 73% of US-3118 Halfmoon Pond State Park, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+| 3 | US-0329 | Silvio O Conte National Wildlife Refuge | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-71.7600611148564 44.8109113367356]; 1 piece(s) under 10 m wide; 28 hole(s) under 100 m2 (+2 more flags). |
+| 3 | US-3133 | Mount Ascutney State Park | MISMATCH: The record name 'Ascutney State Park' does not match POTA's name 'Mount Ascutney State Park' (score 0.50). |
+| 3 | US-3138 | Quechee State Park | OUTSIDE: POTA's pin is 643 m outside the outline. |
+| 3 | US-3140 | Sand Bar State Park | MISMATCH: The record name 'Sandbar State Park' does not match POTA's name 'Sand Bar State Park' (score 0.50). |
+| 3 | US-3148 | Townshend State Park | OUTSIDE: POTA's pin is 908 m outside the outline. |
+| 3 | US-4527 | Green Mountain National Forest | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-72.8558190520403 44.0624197173004]; 5 hole(s) under 100 m2; 89 pieces spread over 176 km (+2 more flags). |
+
+## US-WA
+
+- parks: 536 (484 with an outline graded, 39 with no outline, 13 with records this tool can't read)
+- pass every test: 328; have flags: 208; source down (retry): 262
+- flags: NEAR 70, SPILL 54, SELF-INTERSECTION 49, TINY HOLES 48, CONFLICT 41, SLIVERS 36, DUPLICATE 25, MISMATCH 19, OFF 12, SCATTERED 11, OUTSIDE 6, INVALID 6, WAY OFF 4
+
+| score | ref | park | why |
+|---|---|---|---|
+| 12 | US-12488 | Columbia Basin Upland Restoration State Wildlife Area | CONFLICT: The park is a wma but the record is a state park (+7 more flags). |
+| 11 | US-12575 | Johns River State Wildlife Area | WAY OFF: The outline is 8.9 times bigger than the official 1,358 acres (12,119 ac drawn) (+4 more flags). |
+| 10 | US-12243 | Sherman Creek Wildlife Area State Fish and Wildlife Area | CONFLICT: The park is a wma but the record is a state park (+5 more flags). |
+| 9 | US-12322 | L.T. Murray State Wildlife Area | CONFLICT: The park is a wma but the record is a state park (+4 more flags). |
+| 9 | US-12323 | Quilomene State Wildlife Area | CONFLICT: The park is a wma but the record is a state park (+4 more flags). |
+| 9 | US-12552 | Skagit Bay Estuary State Wildlife Area | CONFLICT: The park is a wma but the record is a state park (+4 more flags). |
+| 9 | US-12553 | Skagit Headquarters State Wildlife Area | CONFLICT: The park is a wma but the record is a state park (+4 more flags). |
+| 9 | US-6583 | Asotin Creek State Wildlife Area | WAY OFF: The outline is 29.6 times bigger than the official 1,234 acres (36,558 ac drawn) (+2 more flags). |
+| 8 | US-10630 | Colockum Wildlife Area | CONFLICT: The park is a wma but the record is a state park (+3 more flags). |
+| 8 | US-12265 | Sunnyside Wildlife Area State Fish and Wildlife Area | CONFLICT: The park is a wma but the record is a state park (+3 more flags). |

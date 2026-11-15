@@ -774,11 +774,11 @@
     "T8": {
      "flag": "DUPLICATE",
      "parks": {
-      "US-2971": [
+      "US-3960": [
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255640",
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255740"
       ],
-      "US-3960": [
+      "US-2971": [
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255640",
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255740"
       ]
@@ -1719,7 +1719,7 @@
     }
    },
    "problems": [
-    "SOURCE DOWN: : InvalidSchema"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
    "status": "SOURCE DOWN: retry next run",
    "score": 0,
@@ -7488,11 +7488,11 @@
     "T8": {
      "flag": "DUPLICATE",
      "parks": {
-      "US-0538": [
+      "US-3960": [
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255640",
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255740"
       ],
-      "US-3960": [
+      "US-0538": [
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255640",
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255740"
       ]
@@ -8404,7 +8404,7 @@
     }
    },
    "problems": [
-    "SOURCE DOWN: : InvalidSchema"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
    "status": "SOURCE DOWN: retry next run",
    "score": 1,
@@ -9805,12 +9805,12 @@
     "T8": {
      "flag": "DUPLICATE",
      "parks": {
+      "US-2936": [
+       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255597"
+      ],
       "US-5491": [
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255597",
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255551"
-      ],
-      "US-2936": [
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255597"
       ]
      },
      "note": "same record id(s) as another park number: for KPC 13"
@@ -12216,11 +12216,11 @@
     "T8": {
      "flag": "DUPLICATE",
      "parks": {
-      "US-2971": [
+      "US-0538": [
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255640",
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255740"
       ],
-      "US-0538": [
+      "US-2971": [
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255640",
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255740"
       ]
@@ -13528,7 +13528,7 @@
     }
    },
    "problems": [
-    "SOURCE DOWN: : down for this run (failed 3 times)"
+    "SOURCE DOWN: : InvalidSchema"
    ],
    "status": "SOURCE DOWN: retry next run",
    "score": 0,
@@ -13690,7 +13690,7 @@
     }
    },
    "problems": [
-    "SOURCE DOWN: : down for this run (failed 3 times)"
+    "SOURCE DOWN: : InvalidSchema"
    ],
    "status": "SOURCE DOWN: retry next run",
    "score": 1,
@@ -13845,12 +13845,12 @@
     "T8": {
      "flag": "DUPLICATE",
      "parks": {
+      "US-2936": [
+       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255597"
+      ],
       "US-3934": [
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255597",
        "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255551"
-      ],
-      "US-2936": [
-       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#255597"
       ]
      },
      "note": "same record id(s) as another park number: for KPC 13"

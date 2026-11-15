@@ -1,6 +1,6 @@
 {
  "area": "US-VT",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -9,7 +9,7 @@
    "name": "Silvio O Conte National Wildlife Refuge",
    "key_name": "Silvio O Conte National Wildlife Refuge",
    "type": "National Wildlife Refuge",
-   "grade": "approximate",
+   "grade": "official",
    "pin": [
     44.7678,
     -71.7018
@@ -17,7 +17,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 27098.5,
+   "acres_drawn": 34991.8,
    "records": [
     {
      "id": "padus#4344",
@@ -38,11 +38,22 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=5301&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#5300",
+     "name": "Silvio O. Conte National Fish And Wildlife Refuge",
+     "type": "NWR National Wildlife Refuge",
+     "category": "Fee",
+     "acres": 7893.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=5300&outFields=*&returnGeometry=false&f=html"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#4344",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#5301"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#5301",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#5300"
    ],
    "tests": {
     "T1": {
@@ -51,8 +62,8 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 27098.5,
-     "official_acres": 27090.0,
+     "outline_acres": 34991.8,
+     "official_acres": 34983.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -69,17 +80,18 @@
     },
     "T5": {
      "flag": "SELF-INTERSECTION",
-     "pieces": 7,
+     "pieces": 20,
      "flags": [
       "SELF-INTERSECTION",
+      "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-71.7600611148564 44.8109113367356]; 1 hole(s) under 100 m2",
+     "note": "Ring Self-intersection[-71.7600611148564 44.8109113367356]; 1 piece(s) under 10 m wide; 28 hole(s) under 100 m2",
      "repair": {
       "ok": true,
       "area_change_pct": 0.0,
-      "holes": 1,
-      "pieces": 0
+      "holes": 28,
+      "pieces": 1
      }
     },
     "T6": {
@@ -99,8 +111,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-71.7600611148564 44.8109113367356]; 1 hole(s) under 100 m2 (+1 more flag)."
+   "score": 3,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-71.7600611148564 44.8109113367356]; 1 piece(s) under 10 m wide; 28 hole(s) under 100 m2 (+2 more flags)."
   },
   {
    "ref": "US-0574",
@@ -5417,53 +5429,76 @@
    "name": "Sand Bar State Park",
    "key_name": "Sand Bar State Park",
    "type": "State Park",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     44.626,
     -73.2396
    ],
-   "outline_from": [],
-   "acres_drawn": null,
-   "records": [],
-   "record_ids": [],
+   "outline_from": [
+    "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38"
+   ],
+   "acres_drawn": 20.3,
+   "records": [
+    {
+     "id": "sgvta430",
+     "name": "Sandbar State Park",
+     "type": "Vermont Agency of Natural Resources (preserve, state GIS table)",
+     "acres": 20.0,
+     "acres_from": "acres field",
+     "layer": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
+     "link": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?objectIds=430&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    }
+   ],
+   "record_ids": [
+    "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38#430"
+   ],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "outline_acres": 20.3,
+     "official_acres": 20.0,
+     "times": 1.01,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "MISMATCH",
+     "score": 0.5,
+     "pota_name": "Sand Bar State Park",
+     "record_name": "Sandbar State Park"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": "state park",
+     "record_kind": "state park",
+     "flag": "PASS"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "PASS",
+     "pieces": 1
     },
     "T6": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "CAN'T TELL",
-     "note": "no record id"
+     "flag": "PASS"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "Nothing could be tested."
+   "score": 3,
+   "why": "MISMATCH: The record name 'Sandbar State Park' does not match POTA's name 'Sand Bar State Park' (score 0.50)."
   },
   {
    "ref": "US-3141",
