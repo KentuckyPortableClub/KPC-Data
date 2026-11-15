@@ -871,6 +871,7 @@
     "handover_hints": 5,
     "no_page": 3,
     "no_size": 112,
+    "not_read": 0,
     "off": 14,
     "ours_unknown": 2,
     "parks": 167,
@@ -881,8 +882,8 @@
    },
    "left": 0,
    "parks": 167,
-   "status": "queued",
-   "updated": "2026-11-08"
+   "status": "done",
+   "updated": "2026-11-15"
   },
   "US-SD": {
    "checked": 120,
@@ -1094,52 +1095,42 @@
  },
  "last": {
   "areas": [
-   "US-AL"
+   "US-SC"
   ],
   "manners": {
-   "browser": 30,
-   "dropped_queued": 2,
-   "errors": 3,
-   "for_person": 2,
+   "browser": 6,
+   "deferred": 13,
+   "errors": 0,
    "for_person_urls": [
     [
-     "https://www.alapark.com/rules-and-regulations",
-     "HTTP 403 twice"
+     "http://www.wildlifesouth.com/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.wildlifesouth.com this run"
     ],
     [
-     "https://www.alapark.com/rules-and-regulations",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.tva.com/robots.txt",
-     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from www.tva.com"
-    ],
-    [
-     "https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/robots.txt",
-     "robots.txt answered 400: nothing fetched from tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net this run"
+     "https://www.yorkcountygov.com/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.yorkcountygov.com this run"
     ]
    ],
-   "host_rule": 4,
-   "requests": 283,
-   "rested": 40,
-   "retry403": 2,
+   "host_rule": 0,
+   "requests": 16,
+   "rested": 0,
    "robots": 2,
-   "robots_unreadable": 1,
-   "strikes": 7
+   "robots_unreadable": 2,
+   "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 4,
-   "no_size": 64,
-   "ours_unknown": 6,
-   "pages_read": 188,
-   "parks": 150,
+   "handover_hints": 5,
+   "no_size": 20,
+   "ours_unknown": 1,
+   "pages_read": 6,
+   "parks": 21,
    "retired": 0,
-   "size_agree": 31,
-   "size_off": 10,
-   "size_unsure": 19,
-   "skipped_fresh": 5,
-   "with_outline": 130
+   "size_agree": 0,
+   "size_off": 0,
+   "size_unsure": 0,
+   "skipped_fresh": 146,
+   "with_outline": 21
   },
   "when": "2026-11-15"
  },

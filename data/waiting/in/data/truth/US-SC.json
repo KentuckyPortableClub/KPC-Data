@@ -6,6 +6,7 @@
   "handover_hints": 5,
   "no_page": 3,
   "no_size": 112,
+  "not_read": 0,
   "off": 14,
   "ours_unknown": 2,
   "parks": 167,
@@ -1712,7 +1713,7 @@
   "US-11995": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Fort Frederick Heritage Preserve",
    "official": null,
    "ours": {
@@ -1961,11 +1962,11 @@
   "US-12589": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Beaverdam Creek Waterfowl Management Area Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 145,
+    "acres": 149,
     "manager": "",
     "pieces": [],
     "pin": "just outside",
@@ -5379,13 +5380,30 @@
   "US-3898": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Forty Acre Rock Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 3755,
+    "acres": 3516,
+    "dissolved": {
+     "after": 5478,
+     "before": 8651,
+     "copies": 1,
+     "families": {
+      "padus": 2305,
+      "sgscc": 3173
+     },
+     "family_fold": 2305,
+     "family_used": "sgscc",
+     "key_union": 3516,
+     "parts": 0,
+     "records": 3,
+     "summed": 3173,
+     "tracts": 2
+    },
     "family_fold": "layers {'sgscc': 3173, 'padus': 2305}: one land in 2 layers, the sgscc copy used (2,305 ac of copies not added)",
     "manager": "",
+    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 8651 -> 5478 acres",
     "pieces": [
      [
       "sgscc64",
@@ -5396,7 +5414,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 1
    },
    "owner_now": null,
    "pages": [
@@ -6089,11 +6107,11 @@
   "US-3910": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Santee Cooper Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 4735,
+    "acres": 5037,
     "dissolved": {
      "after": 7879,
      "before": 14167,
@@ -6104,8 +6122,10 @@
      },
      "family_fold": 3144,
      "family_used": "padus",
+     "key_union": 5037,
      "parts": 0,
      "records": 4,
+     "summed": 4735,
      "tracts": 2
     },
     "family_fold": "layers {'padus': 4735, 'sgsca': 3144}: one land in 2 layers, the padus copy used (3,144 ac of copies not added)",
@@ -6257,11 +6277,11 @@
   "US-3913": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Tillman Sand Ridge Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 1187,
+    "acres": 1421,
     "family_fold": "layers {'sgscc': 1421, 'padus': 1317}: one land in 2 layers, the sgscc copy used (1,317 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6300,11 +6320,11 @@
   "US-3914": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Cathedral Bay Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 39,
+    "acres": 52,
     "family_fold": "layers {'sgscc': 58, 'padus': 52}: one land in 2 layers, the sgscc copy used (52 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6438,19 +6458,17 @@
   "US-3918": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Savage Bay Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 98,
+    "acres": 110,
     "dissolved": {
      "after": 110,
      "before": 220,
      "copies": 1,
-     "key_union": 98,
      "parts": 0,
      "records": 2,
-     "summed": 110,
      "tracts": 1
     },
     "manager": "",
@@ -7560,16 +7578,16 @@
   "US-8146": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Ditch Pond Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 248,
+    "acres": 269,
     "dissolved": {
      "after": 285,
      "before": 568,
      "copies": 1,
-     "key_union": 248,
+     "key_union": 269,
      "parts": 0,
      "records": 2,
      "summed": 285,
@@ -7585,7 +7603,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -7698,11 +7716,11 @@
   "US-8149": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Oak Lea Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2000,
+    "acres": 2229,
     "dissolved": {
      "after": 2454,
      "before": 4616,
@@ -7713,8 +7731,10 @@
      },
      "family_fold": 454,
      "family_used": "sgsca",
+     "key_union": 2229,
      "parts": 5,
      "records": 15,
+     "summed": 2000,
      "tracts": 9
     },
     "family_fold": "layers {'sgsca': 2000, 'padus': 454}: one land in 2 layers, the sgsca copy used (454 ac of copies not added)",
@@ -7756,11 +7776,11 @@
   "US-8150": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Bald Rock Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 117,
+    "acres": 177,
     "family_fold": "layers {'padus': 168, 'sgscc': 163}: one land in 2 layers, the padus copy used (163 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -7799,7 +7819,7 @@
   "US-8151": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Woodbury Wildlife Management Area",
    "official": null,
    "ours": {
@@ -7898,7 +7918,7 @@
   "US-8153": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Herbert Kirsh Wildlife Management Area",
    "official": null,
    "ours": {
@@ -7912,7 +7932,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -7940,19 +7960,17 @@
   "US-8154": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Worth Mountain Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1192,
+    "acres": 1643,
     "dissolved": {
      "after": 1643,
      "before": 3279,
      "copies": 1,
-     "key_union": 1192,
      "parts": 0,
      "records": 2,
-     "summed": 1643,
      "tracts": 1
     },
     "manager": "",
@@ -7965,7 +7983,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 5
    },
@@ -8249,11 +8267,11 @@
   "US-9198": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Childsbury Towne Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 72,
+    "acres": 109,
     "dissolved": {
      "after": 187,
      "before": 275,
@@ -8264,7 +8282,7 @@
      },
      "family_fold": 88,
      "family_used": "padus",
-     "key_union": 72,
+     "key_union": 109,
      "parts": 0,
      "records": 3,
      "summed": 99,
@@ -8350,11 +8368,11 @@
   "US-9200": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Dungannon Plantation Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 539,
+    "acres": 756,
     "dissolved": {
      "after": 1487,
      "before": 2949,
@@ -8365,10 +8383,8 @@
      },
      "family_fold": 731,
      "family_used": "padus",
-     "key_union": 539,
      "parts": 0,
      "records": 5,
-     "summed": 756,
      "tracts": 3
     },
     "family_fold": "layers {'sgsca': 731, 'padus': 756}: one land in 2 layers, the padus copy used (731 ac of copies not added)",
@@ -8475,30 +8491,30 @@
   "US-9202": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Santee Coastal Reserve Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 98347,
+    "acres": 97373,
     "dissolved": {
      "after": 95224,
-     "before": 217867,
-     "copies": 5,
+     "before": 241643,
+     "copies": 6,
      "families": {
       "padus": 27655,
       "sgsca": 67569
      },
      "family_fold": 27655,
      "family_used": "sgsca",
-     "key_union": 98347,
+     "key_union": 97373,
      "parts": 2,
-     "records": 11,
+     "records": 12,
      "summed": 67569,
      "tracts": 4
     },
     "family_fold": "layers {'sgsca': 67569, 'padus': 27655}: one land in 2 layers, the sgsca copy used (27,655 ac of copies not added)",
     "manager": "",
-    "note": "11 joined records = 4 tracts: 5 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 217867 -> 95224 acres",
+    "note": "12 joined records = 4 tracts: 6 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 241643 -> 95224 acres",
     "pieces": [
      [
       "sgsca47",
@@ -8509,7 +8525,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 4
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -8603,19 +8619,17 @@
   "US-9205": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Bennett's Bay Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 617,
+    "acres": 679,
     "dissolved": {
      "after": 679,
      "before": 2037,
      "copies": 2,
-     "key_union": 617,
      "parts": 0,
      "records": 3,
-     "summed": 679,
      "tracts": 1
     },
     "manager": "",
@@ -8628,7 +8642,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8777,7 +8791,7 @@
   "US-9208": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Santee-Delta Wildlife Management Area",
    "official": null,
    "ours": {
@@ -9586,19 +9600,17 @@
   "US-9222": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Lynchburg Savanna Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 209,
+    "acres": 291,
     "dissolved": {
      "after": 291,
      "before": 1164,
      "copies": 3,
-     "key_union": 209,
      "parts": 0,
      "records": 4,
-     "summed": 291,
      "tracts": 1
     },
     "manager": "",
@@ -9805,7 +9817,7 @@
   "US-9225": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Brasstown Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -10082,16 +10094,16 @@
   "US-9230": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Rock Hill Blackjacks Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 207,
+    "acres": 305,
     "dissolved": {
      "after": 290,
      "before": 1160,
      "copies": 3,
-     "key_union": 207,
+     "key_union": 305,
      "parts": 0,
      "records": 4,
      "summed": 290,
@@ -10107,7 +10119,7 @@
       "words"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -10153,5 +10165,5 @@
    "verdict": "no outline"
   }
  },
- "read": "2026-11-08"
+ "read": "2026-11-15"
 }
