@@ -883,7 +883,7 @@
    },
    "left": 0,
    "parks": 167,
-   "status": "queued",
+   "status": "done",
    "updated": "2026-11-15"
   },
   "US-SD": {
@@ -1098,42 +1098,48 @@
  },
  "last": {
   "areas": [
-   "US-AL"
+   "US-SC"
   ],
   "manners": {
-   "browser": 21,
-   "dropped_queued": 2,
+   "browser": 5,
+   "deferred": 13,
    "errors": 0,
+   "for_person": 1,
    "for_person_urls": [
     [
-     "https://www.tva.com/robots.txt",
-     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from www.tva.com"
+     "https://www.beaufortsc.org/listing/fort-frederick-heritage-preserve/254/",
+     "HTTP 403 twice"
     ],
     [
-     "https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/robots.txt",
-     "robots.txt answered 400: nothing fetched from tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net this run"
+     "http://www.wildlifesouth.com/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.wildlifesouth.com this run"
+    ],
+    [
+     "https://www.yorkcountygov.com/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.yorkcountygov.com this run"
     ]
    ],
    "host_rule": 0,
-   "requests": 53,
-   "rested": 36,
+   "requests": 16,
+   "rested": 0,
+   "retry403": 1,
    "robots": 2,
-   "robots_unreadable": 1,
-   "strikes": 0
+   "robots_unreadable": 2,
+   "strikes": 2
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 4,
-   "no_size": 39,
-   "ours_unknown": 2,
-   "pages_read": 23,
-   "parks": 41,
+   "handover_hints": 5,
+   "no_size": 20,
+   "ours_unknown": 1,
+   "pages_read": 5,
+   "parks": 21,
    "retired": 0,
    "size_agree": 0,
    "size_off": 0,
    "size_unsure": 0,
-   "skipped_fresh": 114,
-   "with_outline": 41
+   "skipped_fresh": 146,
+   "with_outline": 21
   },
   "when": "2026-11-15"
  },
