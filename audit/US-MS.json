@@ -1,6 +1,6 @@
 {
  "area": "US-MS",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -201,7 +201,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 7686.5,
+   "acres_drawn": 10418.1,
    "records": [
     {
      "id": "padus#3872",
@@ -222,11 +222,33 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=4816&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#3871",
+     "name": "Grand Bay National Wildlife Refuge",
+     "type": "NWR National Wildlife Refuge",
+     "category": "Fee",
+     "acres": 2727.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3871&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#4815",
+     "name": "Grand Bay National Wildlife Refuge",
+     "type": "NWR National Wildlife Refuge",
+     "category": "Fee",
+     "acres": 2727.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=4815&outFields=*&returnGeometry=false&f=html"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3872",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#4816"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#4816",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3871",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#4815"
    ],
    "tests": {
     "T1": {
@@ -235,8 +257,8 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 7686.5,
-     "official_acres": 7667.0,
+     "outline_acres": 10418.1,
+     "official_acres": 10394.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -253,16 +275,16 @@
     },
     "T5": {
      "flag": "SELF-INTERSECTION",
-     "pieces": 45,
+     "pieces": 53,
      "flags": [
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-88.4082402925856 30.4110872828656]; 2 hole(s) under 100 m2",
+     "note": "Ring Self-intersection[-88.4082402925856 30.4110872828656]; 4 hole(s) under 100 m2",
      "repair": {
       "ok": true,
       "area_change_pct": 0.0,
-      "holes": 2,
+      "holes": 4,
       "pieces": 0
      }
     },
@@ -284,7 +306,7 @@
    "problems": [],
    "status": "graded",
    "score": 2,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-88.4082402925856 30.4110872828656]; 2 hole(s) under 100 m2 (+1 more flag)."
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-88.4082402925856 30.4110872828656]; 4 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-0385",
@@ -1640,7 +1662,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 2441.4,
+   "acres_drawn": 2444.5,
    "records": [
     {
      "id": "padus#3293",
@@ -1651,10 +1673,21 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3293&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#3292",
+     "name": "Vicksburg National Military Park",
+     "type": "National Military Park Historic or Cultural Area",
+     "category": "Fee",
+     "acres": 3.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3292&outFields=*&returnGeometry=false&f=html"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3293"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3293",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3292"
    ],
    "tests": {
     "T1": {
@@ -1663,8 +1696,8 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 2441.4,
-     "official_acres": 2441.0,
+     "outline_acres": 2444.5,
+     "official_acres": 2444.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -1681,7 +1714,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 15
+     "pieces": 16
     },
     "T6": {
      "flag": "PASS"
@@ -3718,7 +3751,8 @@
     }
    },
    "problems": [
-    "SOURCE DOWN: : down for this run (failed 3 times)"
+    "SOURCE DOWN: : down for this run (failed 3 times)",
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
    ],
    "status": "SOURCE DOWN: retry next run",
    "score": 1,
@@ -3759,11 +3793,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 586.4,
-     "official_acres": 586.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -3805,10 +3836,12 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-89.8028667204796 34.43904111851]."
+   "why": "SOURCE DOWN: SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-89.8028667204796 34.43904111851]."
   },
   {
    "ref": "US-2541",
@@ -9272,7 +9305,7 @@
    "name": "Natchez Wildlife Management Area",
    "key_name": "Natchez Wildlife Management Area",
    "type": "Wildlife Management Area",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     31.6103,
     -91.2297
