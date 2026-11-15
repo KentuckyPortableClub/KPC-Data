@@ -1,12 +1,12 @@
 # kpc_pulloffs run report (2026-11-15)
 
-- version 1.0.0; exit code 3; ran 50.3 min; 106 web requests
-- parks in this input (after --areas / --limit): 190; done: 96; left for the next run: 94
-- candidates for chat 11: 2758; kept out (log only, work/log/kept_out.jsonl): 7770
+- version 1.0.0; exit code 3; ran 50.6 min; 87 web requests
+- parks in this input (after --areas / --limit): 190; done: 100; left for the next run: 90
+- candidates for chat 11: 2800; kept out (log only, work/log/kept_out.jsonl): 7908
 
 ## Recall check (acceptance test only, before the duplicate drop)
 
-Official access pins next to a public road (within 30 m) inside the search band: 436; found within 50 m: 96 (22%)
+Official access pins next to a public road (within 30 m) inside the search band: 468; found within 50 m: 100 (21%)
 
 ## Parks
 
@@ -160,9 +160,22 @@ Official access pins next to a public road (within 30 m) inside the search band:
   - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
 - US-3829 R. F. Tarter Wildlife Management Area: done; 0 candidate(s); 1 kept out; photo cells 9; points looked at {'entry': 4, 'road': 20, 'hint': 0}; roads {'public': 4, 'dropped (interstate/ramp/private/alley)': 0, 'lot-road hints': 0}; recall 0/1
   - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
-- US-3830 Sloughs Wildlife Management Area: time ran out after 114 of 131 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
+- US-3830 Sloughs Wildlife Management Area: done; 38 candidate(s); 128 kept out; photo cells 131; points looked at {'entry': 61, 'road': 428, 'hint': 0}; roads {'public': 73, 'dropped (interstate/ramp/private/alley)': 9, 'lot-road hints': 0}; recall 3/27
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+  - problem (skipped, run went on): NAIP photo for cell 868,8380 not read: HTTP 504
+  - problem (skipped, run went on): NAIP photo for cell 869,8378 not read: HTTP 502
+- US-3831 South Shore Wildlife Management Area: done; 2 candidate(s); 5 kept out; photo cells 2; points looked at {'entry': 0, 'road': 16, 'hint': 0}; roads {'public': 11, 'dropped (interstate/ramp/private/alley)': 0, 'lot-road hints': 0}; recall 0/0
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3832 Stone Mountain Wildlife Management Area: done; 0 candidate(s); 0 kept out; photo cells 10; points looked at {'entry': 6, 'road': 43, 'hint': 0}; roads {'public': 18, 'dropped (interstate/ramp/private/alley)': 0, 'lot-road hints': 0}; recall 0/2
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+  - problem (skipped, run went on): NAIP photo for cell 616,8138 not read: HTTP 504
+  - problem (skipped, run went on): NAIP photo for cell 617,8140 not read: HTTP 504
+- US-3833 T. N. Sullivan Wildlife Management Area: done; 2 candidate(s); 5 kept out; photo cells 5; points looked at {'entry': 18, 'road': 24, 'hint': 0}; roads {'public': 3, 'dropped (interstate/ramp/private/alley)': 0, 'lot-road hints': 0}; recall 1/3
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3834 Tradewater Wildlife Management Area: time ran out after 9 of 13 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
 
 ## Web manners
 
 - services2.arcgis.com: robots.txt could not be read (network error: _ReqRefused: <urlopen error services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)>); host skipped (RFC 9309: unreachable = disallow)
 - imagery.nationalmap.gov: no robots rules (HTTP 403); treated as allow-all (RFC 9309)
+- tigerweb.geo.census.gov: no robots rules (it answered with a web page, not a robots file); treated as allow-all (RFC 9309)
