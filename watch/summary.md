@@ -3,7 +3,7 @@
 | area | SAME | FIRST LOOK | GREW | SHRANK | MOVED | RECORD GONE | RENAMED | LAYER MOVED | SOURCE DOWN | CAN'T TELL |
 |---|---|---|---|---|---|---|---|---|---|---|
 | US-KY | 173 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 18 | 2 |
-| US-TN | 26 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 235 | 0 |
+| US-TN | 28 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 235 | 0 |
 | CA-ON | 813 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 141 |
 
 ## Changed parks (0)
