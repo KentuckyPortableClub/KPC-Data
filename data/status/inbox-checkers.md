@@ -347,17 +347,17 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-11, 4 days): docs data/docs/US-HI.json held: F-D3 5 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/kealia-pond/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-10-31, 15 days): docs data/docs/US-ID.json held: F-D1 one rules page on 63 of 362 parks: https://idfg.idaho.gov/sites/default/files/seasons-rules-big-game-2026.pdf
 - FROM WAITING ROOM (held since 2026-10-31, 15 days): docs data/docs/US-IL.json held: F-D2 3 map links on a banned host (fire news / map pins / social), e.g. https://www.google.com/maps/place/39%C2%B006'01.1%22N+88%C2%B047'57.1% · F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/kankakee-and-conservation-area/visit-us/rul
+- FROM WAITING ROOM (held since 2026-11-15): docs data/docs/US-IN.json held: F-D3 6 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/big-oaks/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-11, 4 days): docs data/docs/US-KS.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/flint-hills/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-11, 4 days): docs data/docs/US-LA.json held: F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/catahoula/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-10-31, 15 days): docs data/docs/US-ME.json held: F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml · F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml
-- FROM WAITING ROOM (held since 2026-11-15): docs data/docs/US-MI.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s
+- FROM WAITING ROOM (held since 2026-11-15): docs data/docs/US-MI.json held: F-D3 4 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s
 - FROM WAITING ROOM (held since 2026-11-11, 4 days): docs data/docs/US-MN.json held: F-D3 5 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/minnesota-valley-wetland-management-distric
 - FROM WAITING ROOM (held since 2026-10-31, 15 days): docs data/docs/US-MO.json held: F-D1 one rules page on 426 of 561 parks: https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp
 - FROM WAITING ROOM (held since 2026-11-13, 2 days): docs data/docs/US-ND.json held: F-D3 4 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/arrowwood-wetland-management-district/visit
 - FROM WAITING ROOM (held since 2026-11-15): docs data/docs/US-NH.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/silvio-o-conte/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-13, 2 days): docs data/docs/US-NJ.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/great-swamp/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-15): docs data/docs/US-NM.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/las-vegas/visit-us/rules-policies
-- FROM WAITING ROOM (held since 2026-11-15): docs data/docs/US-OK.json held: F-D3 12 of 20 re-tested links dead, e.g. https://www.wildlifedepartment.com/sites/default/files/wma-maps/Deep%2
 - FROM WAITING ROOM (held since 2026-11-15): docs data/docs/US-OR.json held: F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/siletz-bay/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-11, 4 days): docs data/docs/US-RI.json held: F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/sachuest-point/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-13, 2 days): fers data/fers/CA-AB.json.gz held: F-2 only 27 of 37 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand) · F-2 5 new candidate pairs since the live file (over 10% of 37): a person looks at them first, e.g. CA-0110+US-4558, CA-0664+CA-0719+CA-0726, CA-2956+CA-2958
@@ -440,3 +440,4 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-11, 4 days): key data/world-key/LU.json held: F-O1 outlines 49 -> 46 (more than 1% lost)
 - FROM WAITING ROOM (held since 2026-11-07, 8 days): key data/world-key/ZA.json held: F-O2 4 of 75 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?
 - FROM WAITING ROOM (held since 2026-11-08, 7 days): wwff data/wwff/CTFF.json held: F-W2 rows 702 -> 280 (under 80% of the saved list)
+- FROM WAITING ROOM HEALTH (2026-11-15): RED: 406 files waiting over 3 days in data/waiting/in/ (e.g. US-SD.json)

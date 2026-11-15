@@ -1148,9 +1148,9 @@
   "Tool trial: pulloffs": {
    "areas": "",
    "last_run": "2026-11-15",
-   "made": "exit 3 2026-11-15: US-3837: photo cell 69/72",
+   "made": "exit 3 2026-11-15: US-3837: photo cell 44/72",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43749719051",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43744477577",
    "waiting_on": "chat 11 grades tools-out/pulloffs/ against the spec pass mark; open files only when red"
   },
   "Tool trial: sameland": {
@@ -1218,11 +1218,11 @@
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "closures super-bot": {
-   "areas": "1 done, 0 left",
+   "areas": "0 done, 0 left",
    "last_run": "2026-11-15",
-   "made": "1 areas read, 1 saved; see data/closures/review.md",
+   "made": "0 areas read, 0 saved; see data/closures/review.md",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43666112318",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43752452834",
    "waiting_on": "chat 11 grades the Kentucky side-by-side; Brandon GO before any merge (CL-5)"
   },
   "hours fees permits bot": {
@@ -1291,9 +1291,9 @@
   },
   "waiting room": {
    "last_run": "2026-11-15",
-   "made": "heartbeat 0 h old, 509 files waiting",
-   "result": "green",
-   "waiting_on": "nothing"
+   "made": "406 files waiting over 3 days in data/waiting/in/ (e.g. US-SD.json)",
+   "result": "red",
+   "waiting_on": "chat 11 (look at the waiting room run)"
   },
   "world finder v2": {
    "areas": "",
