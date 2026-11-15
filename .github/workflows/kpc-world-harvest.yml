@@ -1,4 +1,5 @@
 name: KPC world harvester (hidden)
+# RETIRED 2026-11-14: the world harvester is off (the world finder replaced it, and that is retired too); schedule removed; files kept because kpc_world_finder.py imports kpc_world_harvest.py and tests read this file. Was: cron '43 9 * * 5' (every Friday).
 # Oct 27 2026 (HQ 10:42 PM, built by Fable): explores OUTSIDE North America for official park GIS (protected-area and park
 # boundary layers) and writes LEADS to data/harvest/ for chat 8 to grade. Separate from the Discovery Bot (own scripts, own folder).
 # Manners are in the script (1 request per 2 s per server, robots.txt everywhere except ArcGIS's documented REST API paths on arcgis.com
@@ -23,8 +24,6 @@ on:
       fresh:
         description: 'yes = redo the named countries from nothing (new rules: their old leads and read list are cleared first)'
         default: ''
-  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '43 9 * * 5'   # Brandon Nov 1 1:20 PM 'set all them to run on their own': every Friday, the next unfinished countries in queue order
 permissions:
   contents: write
   actions: write

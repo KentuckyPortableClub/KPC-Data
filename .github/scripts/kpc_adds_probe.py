@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# RETIRED 2026-11-14: no workflow runs this file; the module stays because kpc_lookup.py imports it for layer-probe and probe requests.
 """DATA ADDS PROBE (chat 9, Oct 27 2026; HQ first paste). TEMPORARY: delete with kpc-adds-probe.yml after use.
 Chat sessions cannot reach state map servers, so a runner tests each candidate layer ONCE: does it answer, geometry, name
 field, record count, samples, licence (service copyright + the ArcGIS Online item's licenceInfo when there is one), dates

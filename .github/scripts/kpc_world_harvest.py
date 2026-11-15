@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# RETIRED 2026-11-14: kpc-world-harvest.yml has no schedule; file kept because kpc_world_finder.py imports it (and tests do).
 """WORLD HARVESTER (Fable, chat 2, Oct 27 2026; HQ 10:42 PM). A NEW bot, separate from the Discovery Bot: explores OUTSIDE North
 America for legitimate, OFFICIAL park GIS (protected-area and park boundary layers) and writes LEADS for chat 8 to grade. It never
 adds anything to the answer key. WDPA is never asked. Historic sites and city / council parks are skipped.

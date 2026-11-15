@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# RETIRED 2026-11-14: its workflow kpc-collector.yml has no schedule; file kept because tests import it.
 """LAYER COLLECTOR (chat 10, Oct 30 2026; HQ 8:10 AM, Brandon 8:06 AM 'automate all we can'). Part of the daily copy run.
 Reads every line starting `LAYER |` in KPC-Links .claude/build/research/fable/*.md:
     LAYER | <park ref> | <agency> | <layer URL (…/MapServer/N or …/FeatureServer/N, or a download link)> | name field: <FIELD> | <note>

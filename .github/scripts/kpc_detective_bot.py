@@ -32,7 +32,7 @@ MINUTES per chunk; never fails (exit 0 always). kpc_gapfill_bot.py is a shim tha
 
 Env: AREAS='US-KY US-NV' (blank = the next unfinished areas in GAP_QUEUE order) · MINUTES (55) · LINKS (KPC-Links checkout,
      default 'links') · OUT (data/detective) · REFRESH_DAYS (30) · MAXREQ (8 per park) · QMAX (14 per question) · PARKS (cap per
-     area per chunk) · JOBS='questions gaps' (which jobs, in order; default both)
+     area per chunk) · JOBS='questions' (default; the 'gaps' job is RETIRED 2026-11-14: asked for, it prints a notice and is skipped)
      --selftest = no web: the fact-word extraction (6 sentences), the name-mismatch judgment, the 'sure' rule, the missing-list
      counts for US-KY and US-NV.
 """
@@ -1268,12 +1268,10 @@ def main():
     areas = [a for a in want if a in GAP_QUEUE or key_file(a).exists()] if want else [a for a in GAP_QUEUE if (state['areas'].get(a) or {}).get('status') != 'done']
     if not areas and not (load(INBOX / 'questions.json', {}) or load(OUT / 'questions.json', {})).get('questions'): notice('no area or question to do'); print('LEFT=0'); save(OUT / 'state.json', state); review(state); return
     P = pins()
-    jobs = (os.environ.get('JOBS') or 'questions gaps').split()
+    jobs = (os.environ.get('JOBS') or 'questions').split()
     if 'questions' in jobs: run_questions(state, P, areas if want else None)
-    if 'gaps' in jobs:
-        for area in areas:
-            if late(): break
-            run_area(area, state, P)
+    if 'gaps' in jobs:   # RETIRED 2026-11-14: the gap filler job is off (the GIS hunter does that work); run_area() is kept, not called
+        notice("RETIRED: the 'gaps' job is retired (2026-11-14) and was skipped")
     state['hosts'] = M.resting()
     state['last'] = {'when': TODAY, 'areas': areas[:8], 'stat': STAT, 'manners': M.stat}
     if STAT['checked'] and not state.get('proven') and os.environ.get('PROVEN') == '1': state['proven'] = TODAY

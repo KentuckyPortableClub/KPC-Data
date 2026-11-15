@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# RETIRED 2026-11-14: its workflow kpc-collector.yml has no schedule; file kept for reference (by-hand runs only).
 """TWO GIS FINDERS (chat 10, Oct 30 2026; Brandon 10:44 AM 'All 3'). Leads only: they FIND official layers; the layer collector
 pin-tests every one against the area's open parks (name tiers T-1..T-6) and chat 11 says YES. Nothing goes on a map from here.
 

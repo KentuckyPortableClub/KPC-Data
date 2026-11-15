@@ -1,12 +1,11 @@
 name: KPC world finder v2 (stage 1, hidden)
+# RETIRED 2026-11-14: the world finder is off (paused since Nov 4); schedule removed; files kept because tests name it and kpc_world_finder.py is read by tests. Was: cron '24 8 * * *' (daily).
 # Oct 29 2026 (chat 10, Opus; Fable's design KPC-Links .claude/build/research/KPC_WorldHarvester_Redesign_Fable.md; Brandon 10:12 PM
 # 'build v2 and test it, timed auto test to run for awhile and shut off ... dump the worlds list of parks with no boundaries in it and
 # let it eat'). STAGE 1 only (W9 / W2 off). Biggest gap first, France last; chains itself until the world list is done or the stop
 # time passes. Hidden data only (freeze): candidates for chat 11, leads for the intake. Never goes red.
 on:
   # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): the schedule is off, by hand (workflow_dispatch) only
-  # schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    # - cron: '24 8 * * *'   # PR2 (Nov 2): daily (was every 6 h, '24 */6 * * *'); each start still chains itself through its chunks   # Oct 30 (Brandon 6:01 AM 'set timer'): 5 chunks every 6 h = round the clock until stage 1 is done (then each run finds nothing and stops)   # G9 Nov 2: was '23 */6 * * *' (spread the start times; now 1 min later)
   workflow_dispatch:
     inputs:
       countries:
