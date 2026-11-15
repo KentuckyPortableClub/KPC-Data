@@ -8,11 +8,10 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 |---|---|---|---|---|
 | 2026-10-31 | 15 | data/campinfo/US-MA.json | HOLD | F-I3 the same site count on 6 camps of one agency (state: 27): copied from a shared page? |
 | 2026-10-31 | 15 | data/docs/US-ID.json | HOLD | F-D1 one rules page on 63 of 362 parks: https://idfg.idaho.gov/sites/default/files/seasons-rules-big-game-2026.pdf |
-| 2026-10-31 | 15 | data/docs/US-IL.json | HOLD | F-D2 3 map links on a banned host (fire news / map pins / social), e.g. https://www.google.com/maps/place/39%C2%B006'01.1%22N+88%C2%B047'57.1%; F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/kankakee- |
+| 2026-10-31 | 15 | data/docs/US-IL.json | HOLD | F-D2 3 map links on a banned host (fire news / map pins / social), e.g. https://www.google.com/maps/place/39%C2%B006'01.1%22N+88%C2%B047'57.1%; F-D3 16 of 20 re-tested links dead, e.g. https://dnr.illinois.gov/content/da |
 | 2026-10-31 | 15 | data/docs/US-ME.json | HOLD | F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml; F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml |
 | 2026-10-31 | 15 | data/docs/US-MO.json | HOLD | F-D1 one rules page on 426 of 561 parks: https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp |
 | 2026-11-01 | 14 | data/campinfo/US-NC.json | HOLD | F-I3 the same site count on 4 camps of one agency (state: 579): copied from a shared page? |
-| 2026-11-01 | 14 | data/campinfo/US-NY.json | HOLD | F-I3 the same site count on 4 camps of one agency (state: 56): copied from a shared page? |
 | 2026-11-01 | 14 | data/fers/US-IL.json | HOLD | F-2 candidates 11 -> 25 (over 30% change); F-2 15 new candidate pairs since the live file (over 10% of 11): a person looks at them first, e.g. US-0282+US-4482, US-0283+US-4130, US-0287+US-1015 |
 | 2026-11-01 | 14 | data/fers/US-NE.json | HOLD | F-2 NOT SURE 9 -> 12 (over 30% change); F-2 43 new candidate pairs since the live file (over 10% of 4): a person looks at them first, e.g. US-0443+US-5622, US-0445+US-5655, US-0675+US-10341 |
 | 2026-11-01 | 14 | data/fers/US-SD.json | HOLD | F-2 only 7 of 12 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 3 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US |
@@ -103,9 +102,8 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-14 | 1 | data/fers/US-MI.json.gz | HOLD | F-2 candidates 82 -> 137 (over 30% change); F-2 NOT SURE 9 -> 12 (over 30% change); F-2 60 new candidate pairs since the live file (over 10% of 82): a person looks at them first, e.g. US-0766+US-4239, US-10088+US-4239, U |
 | 2026-11-14 | 1 | data/fers/US-OH.json.gz | HOLD | F-2 candidates 27 -> 64 (over 30% change); F-2 38 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. US-11673+US-4239, US-12057+US-9444, US-1935+US-4239 |
 | 2026-11-15 | 0 | data/docs/US-AR.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/logan-cave/visit-us/rules-policies |
-| 2026-11-15 | 0 | data/docs/US-IN.json | HOLD | F-D3 7 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/big-oaks/visit-us/rules-policies |
-| 2026-11-15 | 0 | data/docs/US-MD.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/pisc/planyourvisit/maps.htm |
-| 2026-11-15 | 0 | data/docs/US-MI.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s |
+| 2026-11-15 | 0 | data/docs/US-IN.json | HOLD | F-D3 8 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/big-oaks/visit-us/rules-policies |
+| 2026-11-15 | 0 | data/docs/US-MI.json | HOLD | F-D3 4 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s |
 | 2026-11-15 | 0 | data/docs/US-NH.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/silvio-o-conte/visit-us/rules-policies |
 | 2026-11-15 | 0 | data/docs/US-NM.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/las-vegas/visit-us/rules-policies |
 | 2026-11-15 | 0 | data/docs/US-OR.json | HOLD | F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/siletz-bay/visit-us/rules-policies |
@@ -138,6 +136,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/campinfo/US-NJ.json | PASS |  |
 | ? | ? | data/campinfo/US-NM.json | PASS |  |
 | ? | ? | data/campinfo/US-NV.json | PASS |  |
+| ? | ? | data/campinfo/US-NY.json | PASS |  |
 | ? | ? | data/campinfo/US-OH.json | PASS |  |
 | ? | ? | data/campinfo/US-OK.json | PASS |  |
 | ? | ? | data/campinfo/US-OR.json | PASS |  |
@@ -191,6 +190,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/docs/US-FL.json | PASS |  |
 | ? | ? | data/docs/US-GA.json | PASS |  |
 | ? | ? | data/docs/US-MA.json | PASS |  |
+| ? | ? | data/docs/US-MD.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/pisc/planyourvisit/maps.htm |
 | ? | ? | data/docs/US-MS.json | PASS |  |
 | ? | ? | data/docs/US-MT.json | PASS |  |
 | ? | ? | data/docs/US-NC.json | PASS |  |
