@@ -44,10 +44,10 @@ Rejected: below thresholds 628, known (already ours) 164, too far apart 123
 | 23 | US-3818 | US-3834 | Jones-Keeney Wildlife Management Area / Tradewater Wildlife Management Area | US-KY | 8 | 7 | 7.96 | pin/pin | check-official-map |
 | 24 | US-1259 | US-3806 | Green River Lake State Park / Dennis-Gray Wildlife Management Area | US-KY | 8 | 6 | 14.98 | pin/pin | check-official-map |
 | 25 | US-12972 | US-4693 | Cascade Caverns State Nature Preserve / Tygarts State Forest | US-KY | 8 | 6 | 4.45 | pin/pin | check-official-map |
-| 26 | US-3837 | US-7953 | West Kentucky Wildlife Management Area / Metropolis Lake State Nature Preserve | US-KY | 7 | 8 | 2.97 | pin/pin | check-official-map |
-| 27 | US-12971 | US-12972 | Bat Cave State Nature Preserve / Cascade Caverns State Nature Preserve | US-KY | 7 | 7 | 3.03 | pin/pin | check-official-map |
-| 28 | US-3790 | US-3795 | Fort Heiman National Battlefield / Beechy Creek Wildlife Management Area | US-KY | 7 | 6 | 9.1 | pin/pin | check-official-map |
-| 29 | US-10103 | US-12083 | The Cumberland River Wilderness Area / University of the Cumberlands Wildlife Management Area | US-KY | 7 | 3 | 6.92 | pin/pin | trail-river |
+| 26 | US-10103 | US-12083 | The Cumberland River Wilderness Area / University of the Cumberlands Wildlife Management Area | US-KY | 8 | 4 | 6.92 | pin/pin | trail-river |
+| 27 | US-3837 | US-7953 | West Kentucky Wildlife Management Area / Metropolis Lake State Nature Preserve | US-KY | 7 | 8 | 2.97 | pin/pin | check-official-map |
+| 28 | US-12971 | US-12972 | Bat Cave State Nature Preserve / Cascade Caverns State Nature Preserve | US-KY | 7 | 7 | 3.03 | pin/pin | check-official-map |
+| 29 | US-3790 | US-3795 | Fort Heiman National Battlefield / Beechy Creek Wildlife Management Area | US-KY | 7 | 6 | 9.1 | pin/pin | check-official-map |
 | 30 | US-3809 | US-3816 | Dr. James R. Rich Wildlife Management Area / John A. Kleber Wildlife Management Area | US-KY | 6 | 9 | 6.35 | pin/pin | check-official-map |
 | 31 | US-1287 | US-3818 | Pennyrile Forest State Park / Jones-Keeney Wildlife Management Area | US-KY | 6 | 5 | 12.17 | pin/pin | check-official-map |
 | 32 | US-3818 | US-4692 | Jones-Keeney Wildlife Management Area / Pennyrile State Forest | US-KY | 6 | 5 | 13.93 | pin/pin | check-official-map |
