@@ -5,7 +5,7 @@ Updated 2026-11-15. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | area | parks | with outline | agree | OFF (>15%) | unsure | no size | ours unknown | handover hints | retired | weak (≤4) |
 |---|---|---|---|---|---|---|---|---|---|---|
 | US-KY | 193 | 193 | 111 | **5** | 8 | 68 | 1 | 5 | 0 | 29 |
-| US-TN | 277 | 256 | 7 | **5** | 1 | 236 | 2 | 3 | 0 | 9 |
+| US-TN | 277 | 263 | 8 | **5** | 1 | 238 | 6 | 4 | 0 | 12 |
 | US-NC | 253 | 225 | 31 | **15** | 27 | 146 | 5 | 20 | 0 | 8 |
 | US-VA | 184 | 177 | 50 | **25** | 54 | 27 | 21 | 17 | 0 | 20 |
 | US-WV | 172 | 165 | 20 | **11** | 101 | 28 | 5 | 1 | 0 | 5 |
@@ -94,25 +94,26 @@ Updated 2026-11-15. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 
 ## US-TN
 
-**Agree:** 7 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 7 agree (second agency).
+**Agree:** 8 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 8 agree (second agency).
 
 **Size more than 15% off (our outline vs the agency):**
 
 - US-0539 Tennessee National Wildlife Refuge: ours 21,159 ac vs agency 51,000 acre (= 51,000 ac; 59% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/tennessee/) · “ng, and taking a drive to see wildlife are all popular activities on Tennessee National Wildlife Refuge. This 51,000 acre refuge has miles of peaceful refuge ro”
-- US-0534 Cross Creeks National Wildlife Refuge: ours 5,683 ac vs agency 8,862 acres (= 8,862 ac; 36% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/cross-creeks) · “migratory birds with an emphasis placed on providing habitat for wintering waterfowl. Today, the refuge spans 8,862 acres. The mixture of open water, wetlands, ”
-- US-0686 Big South Fork National Recreation Area: ours 79,788 ac vs agency 125,000 acres (= 125,000 ac; 36% off) · cause: agency bigger: our outline may miss a tract · [www.nps.gov](https://www.nps.gov/biso/index.htm) · “This Site All NPS Exiting nps.gov Cancel Big South Fork National River & Recreation Area • KY,TN Encompassing 125,000 acres of the Cumberland Plateau, Big South”
+- US-0686 Big South Fork National Recreation Area: ours 85,042 ac vs agency 125,000 acres (= 125,000 ac; 32% off) · cause: agency bigger: our outline may miss a tract · [www.nps.gov](https://www.nps.gov/biso/index.htm) · “This Site All NPS Exiting nps.gov Cancel Big South Fork National River & Recreation Area • KY,TN Encompassing 125,000 acres of the Cumberland Plateau, Big South”
+- US-0534 Cross Creeks National Wildlife Refuge: ours 6,579 ac vs agency 8,862 acres (= 8,862 ac; 26% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/cross-creeks) · “migratory birds with an emphasis placed on providing habitat for wintering waterfowl. Today, the refuge spans 8,862 acres. The mixture of open water, wetlands, ”
 - US-6234 Bays Mountain State Natural Area: ours 3,048 ac vs agency 3,788 acre (= 3,788 ac; 20% off) · cause: agency bigger: our outline may miss a tract · [www.baysmountain.com](https://www.baysmountain.com/park-overview/) · “ve Closed Christmas Day Closed Bays Mountain Park & Planetarium, nestled in scenic Kingsport, Tennessee, is a 3,788 acre nature preserve and the largest city ow”
 - US-0703 Fort Donelson National Battlefield: ours 845 ac vs agency 1007 acres (= 1,007 ac; 16% off) · cause: agency bigger: our outline may miss a tract · stale: agency figure is 'as of 2010' · [www.nps.gov](https://www.nps.gov/fodo/learn/management/statistics.htm) · “Site All NPS Exiting nps.gov Cancel Fort Donelson National Battlefield Contact Us Park Statistics Park Size: 1007 acres (as of 2010) Annual Visitation: Total Vi”
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
-- US-0536 Lake Isom National Wildlife Refuge: ours 1,473 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0642 Natchez Trace Parkway National Parkway: ours 98,699 ac · cause: whole park compared (POTA lists it in 3 states: {'US-TN': 31527, 'US-AL': 35645, 'US-MS': 31527})
 
 **Handover / closure hints (a person decides; nothing applied):**
 
 - US-0539 Tennessee National Wildlife Refuge · managed by: “diversity of wildlife, including over 300 bird species and numerous mammals, fish, and reptiles. It is managed by the U.S. Fish and Wildlife Service as part of the Tennessee National Wildlife Refuge C” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/tennessee/)
 - US-0686 Big South Fork National Recreation Area · managed by: “llow for the protection of 125,000 acres of the Cumberland Plateau. Approximately 116,000 acres are currently owned by the Department of the Interior. Economic Impact Based on current visitation and u” · owner now: Department of the Interior · [www.nps.gov](https://www.nps.gov/biso/learn/management/statistics.htm)
 - US-0703 Fort Donelson National Battlefield · transfer: “TN – On Monday, October 30, 2006, the Calloway County Executive Office will officially announce the transfer of properties associated with FortHeiman in Calloway County, Kentucky, to the National Park” · owner now: National Park Service · [www.nps.gov](https://www.nps.gov/fodo/learn/news/newsreleases.htm)
+- US-4556 Appalachian Trail National Scenic Trail · managed by: “ian Mountains. Conceived in 1921, built by private citizens, and completed in 1937, today the trail is managed by the National Park Service, US Forest Service, Appalachian Trail Conservancy, numerous ” · owner now: National Park Service · [www.nps.gov](https://www.nps.gov/appa/index.htm)
 
 ## US-NC
 

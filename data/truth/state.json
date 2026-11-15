@@ -904,22 +904,23 @@
   "US-TN": {
    "checked": 277,
    "counts": {
-    "agree": 7,
-    "handover_hints": 3,
+    "agree": 8,
+    "handover_hints": 4,
     "no_page": 2,
-    "no_size": 236,
+    "no_size": 238,
+    "not_read": 0,
     "off": 5,
-    "ours_unknown": 2,
+    "ours_unknown": 6,
     "parks": 277,
     "retired": 0,
     "unsure": 1,
-    "weak": 9,
-    "with_outline": 256
+    "weak": 12,
+    "with_outline": 263
    },
    "left": 0,
    "parks": 277,
-   "status": "queued",
-   "updated": "2026-11-08"
+   "status": "done",
+   "updated": "2026-11-15"
   },
   "US-TX": {
    "checked": 222,
@@ -1085,31 +1086,50 @@
  "hosts": {},
  "last": {
   "areas": [
-   "US-KY"
+   "US-TN"
   ],
   "manners": {
-   "browser": 1,
-   "errors": 0,
-   "for_person_urls": [],
-   "host_rule": 3,
-   "requests": 33,
+   "browser": 2,
+   "dropped_queued": 392,
+   "errors": 1,
+   "for_person_urls": [
+    [
+     "https://legacy.fws.gov/robots.txt",
+     "robots.txt answered 503: nothing fetched from legacy.fws.gov this run"
+    ],
+    [
+     "https://www.tn.gov/robots.txt",
+     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from www.tn.gov"
+    ],
+    [
+     "https://tnstateparks.com/robots.txt",
+     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from tnstateparks.com"
+    ],
+    [
+     "https://www.murfreesborotn.gov/robots.txt",
+     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from www.murfreesborotn.gov"
+    ]
+   ],
+   "host_rule": 1,
+   "requests": 139,
    "rested": 0,
-   "robots": 0,
-   "strikes": 0
+   "robots": 4,
+   "robots_unreadable": 1,
+   "strikes": 1
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 5,
-   "no_size": 7,
-   "ours_unknown": 0,
-   "pages_read": 12,
-   "parks": 9,
+   "handover_hints": 4,
+   "no_size": 243,
+   "ours_unknown": 6,
+   "pages_read": 103,
+   "parks": 276,
    "retired": 0,
-   "size_agree": 0,
-   "size_off": 1,
+   "size_agree": 8,
+   "size_off": 5,
    "size_unsure": 1,
-   "skipped_fresh": 184,
-   "with_outline": 9
+   "skipped_fresh": 1,
+   "with_outline": 263
   },
   "when": "2026-11-15"
  },
@@ -1161,8 +1181,8 @@
   },
   "https://tnstateparks.com/about/news": {
    "links": 0,
-   "read": "2026-11-01",
-   "status": "rest"
+   "read": "2026-11-15",
+   "status": "robots"
   },
   "https://wvdnr.gov/news/": {
    "links": 166,
@@ -1196,8 +1216,8 @@
   },
   "https://www.tn.gov/twra/news.html": {
    "links": 0,
-   "read": "2026-11-01",
-   "status": "rest"
+   "read": "2026-11-15",
+   "status": "robots"
   }
  },
  "proven": "2026-10-29",
