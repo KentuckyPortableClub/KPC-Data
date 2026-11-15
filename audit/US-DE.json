@@ -1,6 +1,6 @@
 {
  "area": "US-DE",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -233,7 +233,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 888.8,
+   "acres_drawn": 1104.9,
    "records": [
     {
      "id": "padus#3200",
@@ -244,10 +244,21 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3200&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#3201",
+     "name": "First State National Historical Park",
+     "type": "National Historical Park Historic or Cultural Area",
+     "category": "Fee",
+     "acres": 216.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3201&outFields=*&returnGeometry=false&f=html"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3200"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3200",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3201"
    ],
    "tests": {
     "T1": {
@@ -256,8 +267,8 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 888.8,
-     "official_acres": 889.0,
+     "outline_acres": 1104.9,
+     "official_acres": 1105.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -273,8 +284,18 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 3
+     "flag": "TINY HOLES",
+     "pieces": 2,
+     "flags": [
+      "TINY HOLES"
+     ],
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -293,8 +314,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "NEAR: POTA's pin is 9 m outside the outline."
+   "score": 2,
+   "why": "NEAR: POTA's pin is 9 m outside the outline (+1 more flag)."
   },
   {
    "ref": "US-0898",
@@ -307,103 +328,64 @@
     -75.7736
    ],
    "outline_from": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0"
+    "trails/US-0898.json"
    ],
-   "acres_drawn": 11779.4,
+   "acres_drawn": null,
    "records": [
     {
-     "id": "wsrc25",
-     "name": "White Clay Creek Wild and Scenic River",
-     "type": "NPS Wild and Scenic River corridor (official boundary)",
-     "acres": 11596.0,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
-     "link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0/query?objectIds=25&outFields=*&returnGeometry=false&f=html",
-     "name_field": "WSR_GNIS_NAME"
-    },
-    {
-     "id": "wsrc26",
-     "name": "White Clay Creek Wild and Scenic River",
-     "type": "NPS Wild and Scenic River corridor (official boundary)",
-     "acres": 176.0,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0",
-     "link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0/query?objectIds=26&outFields=*&returnGeometry=false&f=html",
-     "name_field": "WSR_GNIS_NAME"
+     "id": "trl:US-0898",
+     "name": "White Clay Creek National Wild and Scenic River",
+     "type": "trail",
+     "layer": "trails/US-0898.json"
     }
    ],
-   "record_ids": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0#25",
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0#26"
-   ],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "NEAR",
-     "metres": 29.0
+     "metres": 101.1
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 11779.4,
-     "official_acres": 11772.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "White Clay Creek National Wild and Scenic River",
-     "record_name": "White Clay Creek Wild and Scenic River"
+     "record_name": "White Clay Creek National Wild and Scenic River"
     },
     "T4": {
      "park_kind": "river",
-     "record_kind": "river",
+     "record_kind": "trail",
      "flag": "PASS"
     },
     "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 2,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "2 hole(s) under 100 m2",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 2,
-      "pieces": 0
-     }
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T6": {
-     "flag": "SPILL",
-     "parks": [
-      {
-       "ref": "US-9881",
-       "name": "Pomeroy and Newark National Recreation Trail",
-       "share": 0.41
-      }
-     ],
-     "count": 1
+     "flag": "NO OUTLINE"
     },
     "T7": {
      "flag": "N/A",
      "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2025-09-16",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2025-09-16, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [
-    "record wsrc25: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
    ],
-   "status": "graded",
-   "score": 6,
-   "why": "SPILL: The outline covers 41% of US-9881 Pomeroy and Newark National Recreation Trail, with no 2-fer row (maybe the wrong record) (+3 more flags)."
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 101 m outside the outline."
   },
   {
    "ref": "US-10531",
@@ -494,6 +476,16 @@
      "name_field": "NAME"
     },
     {
+     "id": "sgded108",
+     "name": "Fork Branch Nature Preserve",
+     "type": "Delaware nature preserves (DNREC) (preserve, state GIS table)",
+     "acres": 10.1,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8/query?objectIds=108&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
      "id": "sgded87",
      "name": "Fork Branch Nature Preserve",
      "type": "Delaware nature preserves (DNREC) (preserve, state GIS table)",
@@ -501,16 +493,6 @@
      "acres_from": "acres field",
      "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8",
      "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8/query?objectIds=87&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgded94",
-     "name": "Fork Branch Nature Preserve",
-     "type": "Delaware nature preserves (DNREC) (preserve, state GIS table)",
-     "acres": 0.4,
-     "acres_from": "acres field",
-     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8",
-     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8/query?objectIds=94&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     },
     {
@@ -524,13 +506,13 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgded108",
+     "id": "sgded94",
      "name": "Fork Branch Nature Preserve",
      "type": "Delaware nature preserves (DNREC) (preserve, state GIS table)",
-     "acres": 10.1,
+     "acres": 0.4,
      "acres_from": "acres field",
      "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8",
-     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8/query?objectIds=108&outFields=*&returnGeometry=false&f=html",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8/query?objectIds=94&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     },
     {
@@ -552,14 +534,17 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#60694",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8#96",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8#45",
-    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8#87",
-    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8#94",
-    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8#95",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8#108",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8#87",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8#95",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8#94",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#917",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1079",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#100",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#2",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#135",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#999",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#552",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#553"
    ],
@@ -740,10 +725,101 @@
     -75.4752
    ],
    "outline_from": [
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
    "acres_drawn": 87.6,
    "records": [
+    {
+     "id": "sgdea766",
+     "name": "Abbotts Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 28.9,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=766&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea718",
+     "name": "Abbotts Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 20.8,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=718&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea750",
+     "name": "Abbotts Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 13.6,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=750&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea675",
+     "name": "Abbotts Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 11.3,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=675&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea674",
+     "name": "Abbotts Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 4.9,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=674&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea719",
+     "name": "Abbotts Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 4.0,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=719&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea676",
+     "name": "Abbotts Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 2.4,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=676&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea717",
+     "name": "Abbotts Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 1.0,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=717&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea767",
+     "name": "Abbotts Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 0.6,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=767&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
     {
      "id": "sgdee638",
      "name": "Abbotts Pond",
@@ -770,6 +846,15 @@
     }
    ],
    "record_ids": [
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#766",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#718",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#750",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#675",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#674",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#719",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#676",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#717",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#767",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#638",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#639",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#687"
@@ -780,8 +865,11 @@
      "metres": 0
     },
     "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 87.6
+     "flag": "PASS",
+     "outline_acres": 87.6,
+     "official_acres": 87.5,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
      "flag": "PASS",
@@ -956,11 +1044,92 @@
     -75.4862
    ],
    "outline_from": [
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
    "acres_drawn": 223.0,
    "records": [
+    {
+     "id": "sgdea658",
+     "name": "Blairs Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 73.7,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=658&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1293",
+     "name": "Blairs Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 46.5,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1293&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1291",
+     "name": "Blairs Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 37.4,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1291&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1140",
+     "name": "Blairs Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 25.2,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1140&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea622",
+     "name": "Blairs Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 21.1,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=622&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1292",
+     "name": "Blairs Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 17.9,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1292&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1243",
+     "name": "Blairs Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 0.6,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1243&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1290",
+     "name": "Blairs Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 0.4,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1290&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
     {
      "id": "padus#57512",
      "name": "Blairs Pond",
@@ -994,17 +1163,17 @@
      "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11",
      "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11/query?objectIds=705&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
-    },
-    {
-     "id": "sgdee740",
-     "name": "Blairs Pond",
-     "type": "Delaware public protected lands (DNREC) (land, state GIS table)",
-     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11",
-     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11/query?objectIds=740&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#658",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1293",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1291",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1140",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#622",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1292",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1243",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1290",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57512",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#703",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#704",
@@ -1017,10 +1186,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "WAY OFF",
+     "flag": "PASS",
      "outline_acres": 223.0,
-     "official_acres": 8.0,
-     "times": 27.87,
+     "official_acres": 222.8,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -1055,8 +1224,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "WAY OFF: The outline is 27.9 times bigger than the official 8 acres (223 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-10670",
@@ -1432,10 +1601,41 @@
     -75.6461
    ],
    "outline_from": [
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
    "acres_drawn": 21.7,
    "records": [
+    {
+     "id": "sgdea1041",
+     "name": "Craigs Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 19.6,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1041&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1040",
+     "name": "Craigs Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 1.2,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1040&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1251",
+     "name": "Craigs Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 0.9,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1251&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
     {
      "id": "sgdee757",
      "name": "Craigs Pond",
@@ -1470,6 +1670,9 @@
     }
    ],
    "record_ids": [
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1041",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1040",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1251",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#757",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#758",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#759",
@@ -1481,8 +1684,11 @@
      "metres": 0
     },
     "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 21.7
+     "flag": "PASS",
+     "outline_acres": 21.7,
+     "official_acres": 21.7,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
      "flag": "PASS",
@@ -2351,10 +2557,21 @@
     -75.6196
    ],
    "outline_from": [
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
    "acres_drawn": 40.2,
    "records": [
+    {
+     "id": "sgdea871",
+     "name": "Massey Mill Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 40.2,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=871&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
     {
      "id": "sgdee815",
      "name": "Massey Mill Pond",
@@ -2365,6 +2582,7 @@
     }
    ],
    "record_ids": [
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#871",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#815"
    ],
    "tests": {
@@ -2373,8 +2591,11 @@
      "metres": 1.1
     },
     "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 40.2
+     "flag": "PASS",
+     "outline_acres": 40.2,
+     "official_acres": 40.2,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
      "flag": "WEAK",
@@ -2733,11 +2954,32 @@
     -75.7361
    ],
    "outline_from": [
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
    "acres_drawn": 78.0,
    "records": [
+    {
+     "id": "sgdea789",
+     "name": "Mud Mill Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 52.2,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=789&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1281",
+     "name": "Mud Mill Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 25.6,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1281&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
     {
      "id": "padus#57568",
      "name": "Mud Mill Pond",
@@ -2766,6 +3008,8 @@
     }
    ],
    "record_ids": [
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#789",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1281",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57568",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#845",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#846"
@@ -2776,10 +3020,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "WAY OFF",
+     "flag": "PASS",
      "outline_acres": 78.0,
-     "official_acres": 4.0,
-     "times": 19.49,
+     "official_acres": 77.8,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -2814,8 +3058,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "WAY OFF: The outline is 19.5 times bigger than the official 4 acres (78 ac drawn)."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-10686",
@@ -2828,10 +3072,71 @@
     -75.6283
    ],
    "outline_from": [
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
    "acres_drawn": 47.0,
    "records": [
+    {
+     "id": "sgdea1056",
+     "name": "Portsville Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 24.1,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1056&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea857",
+     "name": "Portsville Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 6.5,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=857&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1128",
+     "name": "Portsville Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 4.9,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1128&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1057",
+     "name": "Portsville Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 4.0,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1057&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1149",
+     "name": "Portsville Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 4.3,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1149&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1148",
+     "name": "Portsville Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 3.2,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1148&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
     {
      "id": "sgdee799",
      "name": "Portsville Pond",
@@ -2858,6 +3163,12 @@
     }
    ],
    "record_ids": [
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1056",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#857",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1128",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1057",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1149",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1148",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#799",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#800",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#861"
@@ -2868,8 +3179,11 @@
      "metres": 0
     },
     "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 47.0
+     "flag": "PASS",
+     "outline_acres": 47.0,
+     "official_acres": 47.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
      "flag": "PASS",
@@ -3071,10 +3385,71 @@
     -75.6368
    ],
    "outline_from": [
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
    "acres_drawn": 10.3,
    "records": [
+    {
+     "id": "sgdea1039",
+     "name": "Tussock Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 3.6,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1039&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea705",
+     "name": "Tussock Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 1.8,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=705&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea722",
+     "name": "Tussock Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 1.7,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=722&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea706",
+     "name": "Tussock Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 1.1,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=706&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea720",
+     "name": "Tussock Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 1.0,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=720&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea721",
+     "name": "Tussock Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 1.1,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=721&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
     {
      "id": "sgdee828",
      "name": "Tussock Pond",
@@ -3101,6 +3476,12 @@
     }
    ],
    "record_ids": [
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1039",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#705",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#722",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#706",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#720",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#721",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#828",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#829",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#830"
@@ -3111,8 +3492,11 @@
      "metres": 0
     },
     "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 10.3
+     "flag": "PASS",
+     "outline_acres": 10.3,
+     "official_acres": 9.2,
+     "times": 1.12,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
      "flag": "PASS",
@@ -3126,18 +3510,8 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 1,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "3 hole(s) under 100 m2",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.034,
-      "holes": 3,
-      "pieces": 0
-     }
+     "flag": "PASS",
+     "pieces": 1
     },
     "T6": {
      "flag": "PASS"
@@ -3156,8 +3530,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "TINY HOLES: The shape has problems: 3 hole(s) under 100 m2."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-10690",
@@ -3937,7 +4311,7 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
-   "acres_drawn": 340.7,
+   "acres_drawn": 341.3,
    "records": [
     {
      "id": "padus#76397",
@@ -4075,6 +4449,9 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#190",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#81",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#23",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#754",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#755",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#619",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#120",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#444",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#652",
@@ -4087,12 +4464,12 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 340.7,
+     "outline_acres": 341.3,
      "official_acres": 413.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by Ducks Unlimited (PAD-US source DU_PADUS4_0Fee_PADUS_DU_NCED_2022)",
-     "official_acres_low": 330.0,
-     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 330 ac, all providers added 413 ac"
+     "official_acres_low": 335.7,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 336 ac, all providers added 413 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -4107,15 +4484,15 @@
     },
     "T5": {
      "flag": "TINY HOLES",
-     "pieces": 2,
+     "pieces": 3,
      "flags": [
       "TINY HOLES"
      ],
-     "note": "5 hole(s) under 100 m2",
+     "note": "4 hole(s) under 100 m2",
      "repair": {
       "ok": true,
       "area_change_pct": 0.0,
-      "holes": 5,
+      "holes": 4,
       "pieces": 0
      }
     },
@@ -4164,7 +4541,7 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
-   "acres_drawn": 275.9,
+   "acres_drawn": 276.0,
    "records": [
     {
      "id": "padus#76431",
@@ -4193,6 +4570,16 @@
      "category": "Fee",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=9716&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "sgdea1071",
+     "name": "Bellevue State Park",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 240.9,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1071&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
      "id": "sgdea40",
@@ -4245,6 +4632,7 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#76431",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#60672",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#9716",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1071",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#40",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#39",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#6",
@@ -4258,7 +4646,7 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 275.9,
+     "outline_acres": 276.0,
      "official_acres": 273.0,
      "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by Ducks Unlimited (PAD-US source DU_PADUS4_0Fee_PADUS_DU_NCED_2022)"
@@ -4310,6 +4698,7 @@
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
    "acres_drawn": 1102.2,
@@ -4405,11 +4794,33 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=60677&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "sgdee742",
+     "id": "sgdea614",
      "name": "Brandywine Creek State Park",
-     "type": "Delaware public protected lands (DNREC) (land, state GIS table)",
-     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11",
-     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11/query?objectIds=742&outFields=*&returnGeometry=false&f=html",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 894.1,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=614&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea615",
+     "name": "Brandywine Creek State Park",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 894.1,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=615&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1015",
+     "name": "Brandywine Creek State Park",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 894.1,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1015&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     }
    ],
@@ -4423,6 +4834,10 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#60674",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#9722",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#60677",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#614",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#615",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1015",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1016",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#742"
    ],
    "tests": {
@@ -4504,7 +4919,7 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
-   "acres_drawn": 5566.4,
+   "acres_drawn": 5580.4,
    "records": [
     {
      "id": "padus#60681",
@@ -4607,6 +5022,16 @@
      "name_field": "NAME"
     },
     {
+     "id": "sgdea1097",
+     "name": "Cape Henlopen State Park",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 164.3,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1097&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
      "id": "sgdea170",
      "name": "Cape Henlopen State Park",
      "type": "Delaware DNREC (land, state GIS table)",
@@ -4614,16 +5039,6 @@
      "acres_from": "acres field",
      "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
      "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=170&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgdea8",
-     "name": "Cape Henlopen State Park",
-     "type": "Delaware DNREC (land, state GIS table)",
-     "acres": 114.7,
-     "acres_from": "acres field",
-     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
-     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=8&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     }
    ],
@@ -4638,9 +5053,11 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#29",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#31",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#352",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1097",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#170",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#8",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#13",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1255",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#422",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#9",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#223",
@@ -4658,11 +5075,13 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#11",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#219",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#234",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1203",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#420",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#32",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#212",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#222",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#175",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#853",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#1"
    ],
    "tests": {
@@ -4672,7 +5091,7 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 5566.4,
+     "outline_acres": 5580.4,
      "official_acres": 5918.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by Ducks Unlimited (PAD-US source DU_PADUS4_0Fee_PADUS_DU_NCED_2022)",
@@ -4697,11 +5116,11 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-75.1187942920889 38.7425198802849]; 8 hole(s) under 100 m2",
+     "note": "Ring Self-intersection[-75.1187942920889 38.7425198802849]; 11 hole(s) under 100 m2",
      "repair": {
       "ok": true,
       "area_change_pct": 0.0,
-      "holes": 8,
+      "holes": 11,
       "pieces": 0
      }
     },
@@ -4910,6 +5329,16 @@
      "name_field": "NAME"
     },
     {
+     "id": "sgdea973",
+     "name": "Fenwick Island State Park",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 7.7,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=973&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
      "id": "sgdea465",
      "name": "Fenwick Island Beach",
      "type": "Delaware DNREC (land, state GIS table)",
@@ -4942,6 +5371,7 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#226",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#227",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#473",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#973",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#465",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#3",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#448"
@@ -4954,8 +5384,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 347.9,
-     "official_acres": 340.1,
-     "times": 1.02,
+     "official_acres": 347.8,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -5411,6 +5841,7 @@
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
    "acres_drawn": 1595.6,
@@ -5426,6 +5857,36 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=76415&outFields=*&returnGeometry=false&f=html"
     },
     {
+     "id": "sgdea818",
+     "name": "Killens Pond State Park",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 1441.9,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=818&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1183",
+     "name": "Killens Pond State Park",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 98.2,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1183&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea736",
+     "name": "Killens Pond State Park",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 51.8,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=736&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
      "id": "sgdee637",
      "name": "Killens Pond State Park",
      "type": "Delaware public protected lands (DNREC) (land, state GIS table)",
@@ -5436,6 +5897,9 @@
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#76415",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#818",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1183",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#736",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#637"
    ],
    "tests": {
@@ -5446,8 +5910,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 1595.6,
-     "official_acres": 1442.0,
-     "times": 1.11,
+     "official_acres": 1591.9,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by Ducks Unlimited (PAD-US source DU_PADUS4_0Fee_PADUS_DU_NCED_2022)"
     },
     "T3": {
@@ -5523,6 +5987,26 @@
      "name_field": "NAME"
     },
     {
+     "id": "sgdea947",
+     "name": "Lums Pond State Park",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 35.9,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=947&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea946",
+     "name": "Lums Pond State Park",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 0.1,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=946&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
      "id": "sgdee36",
      "name": "Lums Pond State Park",
      "type": "Delaware public protected lands (DNREC) (land, state GIS table)",
@@ -5534,6 +6018,8 @@
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#76416",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#69",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#947",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#946",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#36"
    ],
    "tests": {
@@ -5598,7 +6084,7 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
-   "acres_drawn": 2796.7,
+   "acres_drawn": 2861.1,
    "records": [
     {
      "id": "padus#60712",
@@ -5735,18 +6221,27 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#167",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#312",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#93",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1206",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#77",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#75",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#846",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#739",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#325",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#76",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1143",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#92",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#313",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1284",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#138",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#94",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#166",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#885",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#886",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#95",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#326",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#327",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#306",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1035",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#148",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#140",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#117",
@@ -5755,10 +6250,14 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#316",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#151",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#494",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#697",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#700",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#78",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#79",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#495",
-    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#326",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1036",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1053",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1078",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#6",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#7",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#8",
@@ -5772,9 +6271,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 2796.7,
-     "official_acres": 2573.0,
-     "times": 1.09,
+     "outline_acres": 2861.1,
+     "official_acres": 2589.3,
+     "times": 1.1,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -5790,15 +6289,15 @@
     },
     "T5": {
      "flag": "TINY HOLES",
-     "pieces": 20,
+     "pieces": 19,
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2",
+     "note": "2 hole(s) under 100 m2",
      "repair": {
       "ok": true,
       "area_change_pct": 0.0,
-      "holes": 1,
+      "holes": 2,
       "pieces": 0
      }
     },
@@ -5808,10 +6307,15 @@
       {
        "ref": "US-10687",
        "name": "Trussum Pond State Fishing Lake",
-       "share": 0.33
+       "share": 0.34
+      },
+      {
+       "ref": "US-9890",
+       "name": "James Branch State Nature Preserve",
+       "share": 0.31
       }
      ],
-     "count": 1
+     "count": 2
     },
     "T7": {
      "flag": "N/A",
@@ -5834,7 +6338,7 @@
    "problems": [],
    "status": "graded",
    "score": 5,
-   "why": "SPILL: The outline covers 33% of US-10687 Trussum Pond State Fishing Lake, with no 2-fer row (maybe the wrong record) (+2 more flags)."
+   "why": "SPILL: The outline covers 34% of US-10687 Trussum Pond State Fishing Lake, with no 2-fer row (maybe the wrong record) (+2 more flags)."
   },
   {
    "ref": "US-1743",
@@ -5894,6 +6398,36 @@
      "name_field": "NAME"
     },
     {
+     "id": "sgdea1069",
+     "name": "White Clay Creek State Park",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 527.4,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1069&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea852",
+     "name": "White Clay Creek State Park",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 88.2,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=852&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea943",
+     "name": "White Clay Creek State Park",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 29.8,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=943&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
      "id": "sgdee408",
      "name": "White Clay Creek State Park",
      "type": "Delaware public protected lands (DNREC) (land, state GIS table)",
@@ -5923,6 +6457,9 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#60719",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#52034",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#70",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1069",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#852",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#943",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#408",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#635",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#866"
@@ -5938,8 +6475,8 @@
      "official_acres": 4059.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by Ducks Unlimited (PAD-US source DU_PADUS4_0Fee_PADUS_DU_NCED_2022)",
-     "official_acres_low": 3520.0,
-     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 3,520 ac, all providers added 4,059 ac"
+     "official_acres_low": 3647.5,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 3,648 ac, all providers added 4,059 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -6183,6 +6720,16 @@
      "name_field": "NAME"
     },
     {
+     "id": "sgdea1182",
+     "name": "Auburn Valley State Park",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 2.6,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1182&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
      "id": "sgdea499",
      "name": "Auburn Valley State Park",
      "type": "Delaware DNREC (land, state GIS table)",
@@ -6193,19 +6740,13 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgdee489",
+     "id": "sgdea716",
      "name": "Auburn Valley State Park",
-     "type": "Delaware public protected lands (DNREC) (land, state GIS table)",
-     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11",
-     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11/query?objectIds=489&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgdee490",
-     "name": "Auburn Valley State Park",
-     "type": "Delaware public protected lands (DNREC) (land, state GIS table)",
-     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11",
-     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11/query?objectIds=490&outFields=*&returnGeometry=false&f=html",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 1.4,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=716&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     }
    ],
@@ -6219,7 +6760,10 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#18",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#133",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#356",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1182",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#499",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#716",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1088",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#489",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#490",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#491",
@@ -6235,8 +6779,8 @@
     "T2": {
      "flag": "OFF",
      "outline_acres": 369.2,
-     "official_acres": 223.1,
-     "times": 1.65,
+     "official_acres": 225.7,
+     "times": 1.64,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -6282,7 +6826,7 @@
    "problems": [],
    "status": "graded",
    "score": 2,
-   "why": "OFF: The outline is 1.6 times bigger than the official 223 acres (369 ac drawn) (+1 more flag)."
+   "why": "OFF: The outline is 1.6 times bigger than the official 226 acres (369 ac drawn) (+1 more flag)."
   },
   {
    "ref": "US-4367",
@@ -6489,8 +7033,8 @@
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
    "acres_drawn": 6060.6,
@@ -6633,16 +7177,7 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#52036",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#54732",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#54724",
-    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#17",
-    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#18",
-    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#7",
-    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#6",
-    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#1",
-    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#9",
-    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#16",
-    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#25",
-    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#10",
-    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#8",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1163",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#331",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#127",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#120",
@@ -6663,7 +7198,18 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#45",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#187",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#333",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1231",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#164",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#17",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#18",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#7",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#6",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#1",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#9",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#16",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#25",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#10",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#8",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#10"
    ],
    "tests": {
@@ -6677,8 +7223,8 @@
      "official_acres": 8384.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by Ducks Unlimited (PAD-US source DU_PADUS4_0Fee_PADUS_DU_NCED_2022)",
-     "official_acres_low": 5876.0,
-     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 5,876 ac, all providers added 8,384 ac"
+     "official_acres_low": 5900.6,
+     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 5,901 ac, all providers added 8,384 ac"
     },
     "T3": {
      "flag": "PASS",
@@ -6904,14 +7450,18 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#28",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#4",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Biota/DE_Forestry/FeatureServer/0#22",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1116",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#58",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1155",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#51",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#149",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#192",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1156",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#60",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#184",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#211",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#143",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#964",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#59",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#232",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#131",
@@ -6919,14 +7469,18 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#159",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#161",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#145",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#858",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#54",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#160",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#52",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#64",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#958",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#53",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#150",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#708",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#169",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#230",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#957",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#90",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#50",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#91",
@@ -6974,11 +7528,11 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-75.3769110333284 38.71663003644]; 7 hole(s) under 100 m2",
+     "note": "Ring Self-intersection[-75.3769110333284 38.71663003644]; 6 hole(s) under 100 m2",
      "repair": {
       "ok": true,
       "area_change_pct": 0.0,
-      "holes": 7,
+      "holes": 6,
       "pieces": 0
      }
     },
@@ -7192,6 +7746,7 @@
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
@@ -7218,6 +7773,96 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=57601&outFields=*&returnGeometry=false&f=html"
     },
     {
+     "id": "sgdea511",
+     "name": "Ted Harvey Conservation Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 2312.3,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=511&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea860",
+     "name": "Ted Harvey Conservation Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 747.7,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=860&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea513",
+     "name": "Ted Harvey Conservation Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 129.2,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=513&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea514",
+     "name": "Ted Harvey Conservation Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 100.3,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=514&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1200",
+     "name": "Ted Harvey Conservation Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 43.3,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1200&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea778",
+     "name": "Ted Harvey Conservation Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 17.6,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=778&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea863",
+     "name": "Ted Harvey Conservation Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 18.4,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=863&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1086",
+     "name": "Ted Harvey Conservation Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 1.1,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1086&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1322",
+     "name": "Ted Harvey Conservation Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 1.4,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1322&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
      "id": "sgdec3",
      "name": "Ted Harvey Conservation Area",
      "type": "Delaware Fish & Wildlife (DNREC) (wild, state GIS table)",
@@ -7226,79 +7871,20 @@
      "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
      "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17/query?objectIds=3&outFields=*&returnGeometry=false&f=html",
      "name_field": "AREA_NAME"
-    },
-    {
-     "id": "sgdec1",
-     "name": "Ted Harvey Conservation Area",
-     "type": "Delaware Fish & Wildlife (DNREC) (wild, state GIS table)",
-     "acres": 599.9,
-     "acres_from": "acres field",
-     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
-     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17/query?objectIds=1&outFields=*&returnGeometry=false&f=html",
-     "name_field": "AREA_NAME"
-    },
-    {
-     "id": "sgdec24",
-     "name": "Ted Harvey Conservation Area",
-     "type": "Delaware Fish & Wildlife (DNREC) (wild, state GIS table)",
-     "acres": 531.4,
-     "acres_from": "acres field",
-     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
-     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17/query?objectIds=24&outFields=*&returnGeometry=false&f=html",
-     "name_field": "AREA_NAME"
-    },
-    {
-     "id": "sgdec4",
-     "name": "Ted Harvey Conservation Area",
-     "type": "Delaware Fish & Wildlife (DNREC) (wild, state GIS table)",
-     "acres": 436.4,
-     "acres_from": "acres field",
-     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
-     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17/query?objectIds=4&outFields=*&returnGeometry=false&f=html",
-     "name_field": "AREA_NAME"
-    },
-    {
-     "id": "sgdec57",
-     "name": "Ted Harvey Conservation Area",
-     "type": "Delaware Fish & Wildlife (DNREC) (wild, state GIS table)",
-     "acres": 232.7,
-     "acres_from": "acres field",
-     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
-     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17/query?objectIds=57&outFields=*&returnGeometry=false&f=html",
-     "name_field": "AREA_NAME"
-    },
-    {
-     "id": "sgdec5",
-     "name": "Ted Harvey Conservation Area",
-     "type": "Delaware Fish & Wildlife (DNREC) (wild, state GIS table)",
-     "acres": 100.3,
-     "acres_from": "acres field",
-     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
-     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17/query?objectIds=5&outFields=*&returnGeometry=false&f=html",
-     "name_field": "AREA_NAME"
-    },
-    {
-     "id": "sgdec67",
-     "name": "Ted Harvey Conservation Area",
-     "type": "Delaware Fish & Wildlife (DNREC) (wild, state GIS table)",
-     "acres": 37.9,
-     "acres_from": "acres field",
-     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
-     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17/query?objectIds=67&outFields=*&returnGeometry=false&f=html",
-     "name_field": "AREA_NAME"
-    },
-    {
-     "id": "sgdee823",
-     "name": "Ted Harvey Conservation Area",
-     "type": "Delaware public protected lands (DNREC) (land, state GIS table)",
-     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11",
-     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11/query?objectIds=823&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#76241",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57601",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#511",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#860",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#513",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#514",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1200",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#778",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#863",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1086",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1322",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#3",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#1",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#24",
@@ -7337,11 +7923,11 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "2 hole(s) under 100 m2",
+     "note": "3 hole(s) under 100 m2",
      "repair": {
       "ok": true,
       "area_change_pct": 0.0,
-      "holes": 2,
+      "holes": 3,
       "pieces": 0
      }
     },
@@ -7385,6 +7971,7 @@
    ],
    "outline_from": [
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
@@ -7411,6 +7998,86 @@
      "name_field": "AREA_NAME"
     },
     {
+     "id": "sgdea1278",
+     "name": "Tappahanna Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 143.9,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1278&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1136",
+     "name": "Tappahanna Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 136.2,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1136&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1138",
+     "name": "Tappahanna Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 83.1,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1138&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea661",
+     "name": "Tappahanna Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 62.9,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=661&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1226",
+     "name": "Tappahanna Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 22.1,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1226&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea662",
+     "name": "Tappahanna Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 7.1,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=662&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea990",
+     "name": "Tappahanna Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 4.2,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=990&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1137",
+     "name": "Tappahanna Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 0.3,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1137&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
      "id": "padus#57599",
      "name": "Tappahanna Wildlife Area",
      "type": "SL State Other or Unknown",
@@ -7429,19 +8096,19 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=57600&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgdee822",
-     "name": "Tappahanna Wildlife Area",
-     "type": "Delaware public protected lands (DNREC) (land, state GIS table)",
-     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11",
-     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11/query?objectIds=822&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#52",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#53",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1278",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1136",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1138",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#661",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1226",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#662",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#990",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1137",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57599",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57600",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#822"
@@ -7652,7 +8319,31 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#47",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#30",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#63",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1010",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1289",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#585",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1037",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1090",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1288",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1298",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1241",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#607",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#660",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1021",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1011",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1018",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#611",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#986",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1019",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1020",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#987",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1084",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#400",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1085",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1177",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#608",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1100",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#659",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#806",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#807"
    ],
@@ -7726,6 +8417,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
    "acres_drawn": 149.3,
@@ -7749,6 +8441,46 @@
      "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
      "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17/query?objectIds=16&outFields=*&returnGeometry=false&f=html",
      "name_field": "AREA_NAME"
+    },
+    {
+     "id": "sgdea752",
+     "name": "McGinnis Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 93.3,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=752&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea751",
+     "name": "McGinnis Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 48.9,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=751&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea679",
+     "name": "McGinnis Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 3.7,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=679&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea753",
+     "name": "McGinnis Pond",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 1.4,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=753&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
      "id": "sgdee762",
@@ -7778,6 +8510,10 @@
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#76226",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#16",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#752",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#751",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#679",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#753",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#762",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#763",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#764"
@@ -7790,8 +8526,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 149.3,
-     "official_acres": 142.0,
-     "times": 1.05,
+     "official_acres": 147.3,
+     "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by Ducks Unlimited (PAD-US source DU_PADUS4_0Fee_PADUS_DU_NCED_2022)"
     },
     "T3": {
@@ -8008,16 +8744,33 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#65",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#23",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#469",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1313",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1306",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#463",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#470",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#566",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#472",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#353",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1214",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#471",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1167",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#445",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1197",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1321",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1314",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#442",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1316",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#443",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#444",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#870",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1225",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1315",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#414",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1172",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1012",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1157",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1158",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1305",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#766"
    ],
    "tests": {
@@ -8051,11 +8804,11 @@
      "flags": [
       "TINY HOLES"
      ],
-     "note": "1 hole(s) under 100 m2",
+     "note": "2 hole(s) under 100 m2",
      "repair": {
       "ok": true,
       "area_change_pct": 0.0,
-      "holes": 1,
+      "holes": 2,
       "pieces": 0
      }
     },
@@ -8093,12 +8846,23 @@
     -75.2688
    ],
    "outline_from": [
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
    "acres_drawn": 664.4,
    "records": [
+    {
+     "id": "sgdea1228",
+     "name": "Prime Hook Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 662.0,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1228&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
     {
      "id": "sgdec78",
      "name": "Prime Hook Wildlife Area",
@@ -8129,6 +8893,7 @@
     }
    ],
    "record_ids": [
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1228",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#78",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#76236",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#801"
@@ -8192,6 +8957,7 @@
    ],
    "outline_from": [
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
@@ -8206,6 +8972,56 @@
      "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
      "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17/query?objectIds=76&outFields=*&returnGeometry=false&f=html",
      "name_field": "AREA_NAME"
+    },
+    {
+     "id": "sgdea586",
+     "name": "Marshy Hope Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 522.6,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=586&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea568",
+     "name": "Marshy Hope Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 403.2,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=568&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea588",
+     "name": "Marshy Hope Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 124.2,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=588&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1325",
+     "name": "Marshy Hope Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 8.2,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1325&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea587",
+     "name": "Marshy Hope Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 1.8,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=587&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
      "id": "padus#57546",
@@ -8258,6 +9074,11 @@
    ],
    "record_ids": [
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#76",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#586",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#568",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#588",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1325",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#587",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57546",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57549",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57548",
@@ -8291,14 +9112,13 @@
      "flag": "SELF-INTERSECTION",
      "pieces": 2,
      "flags": [
-      "SELF-INTERSECTION",
-      "TINY HOLES"
+      "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-75.7044637892758 38.7742271845757]; 1 hole(s) under 100 m2",
+     "note": "Ring Self-intersection[-75.7044637892758 38.7742271845757]",
      "repair": {
       "ok": true,
       "area_change_pct": 0.0,
-      "holes": 1,
+      "holes": 0,
       "pieces": 0
      }
     },
@@ -8319,8 +9139,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-75.7044637892758 38.7742271845757]; 1 hole(s) under 100 m2 (+1 more flag)."
+   "score": 1,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-75.7044637892758 38.7742271845757]."
   },
   {
    "ref": "US-5726",
@@ -8334,10 +9154,11 @@
    ],
    "outline_from": [
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
-   "acres_drawn": 2309.1,
+   "acres_drawn": 2309.2,
    "records": [
     {
      "id": "sgdec40",
@@ -8358,6 +9179,56 @@
      "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
      "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17/query?objectIds=79&outFields=*&returnGeometry=false&f=html",
      "name_field": "AREA_NAME"
+    },
+    {
+     "id": "sgdea901",
+     "name": "Old Furnace Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 1180.8,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=901&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea678",
+     "name": "Old Furnace Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 700.5,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=678&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea900",
+     "name": "Old Furnace Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 173.2,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=900&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea1181",
+     "name": "Old Furnace Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 66.1,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1181&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea677",
+     "name": "Old Furnace Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 28.5,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=677&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
     },
     {
      "id": "padus#57588",
@@ -8391,6 +9262,11 @@
    "record_ids": [
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#40",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#79",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#901",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#678",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#900",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1181",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#677",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57588",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#76234",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#810"
@@ -8402,7 +9278,7 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 2309.1,
+     "outline_acres": 2309.2,
      "official_acres": 2260.5,
      "times": 1.02,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by Ducks Unlimited (PAD-US source DU_PADUS4_0Fee_PADUS_DU_NCED_2022)"
@@ -8455,9 +9331,10 @@
    "outline_from": [
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
-   "acres_drawn": 4941.2,
+   "acres_drawn": 4941.5,
    "records": [
     {
      "id": "sgdec17",
@@ -8596,6 +9473,44 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57574",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57486",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57575",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#626",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#929",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#867",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#922",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#864",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#921",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#918",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1309",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#927",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#919",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1115",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#643",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#923",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1209",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#644",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#628",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1308",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1311",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#578",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1135",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#631",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1312",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#612",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1185",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1328",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#629",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1152",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1320",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#910",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#928",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1150",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#627",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#670",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#630",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1329",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#911",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1099",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1310",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#804",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#847",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#848"
@@ -8607,7 +9522,7 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 4941.2,
+     "outline_acres": 4941.5,
      "official_acres": 4647.0,
      "times": 1.06,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
@@ -8672,9 +9587,10 @@
    "outline_from": [
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
-   "acres_drawn": 5486.3,
+   "acres_drawn": 5486.4,
    "records": [
     {
      "id": "sgdec15",
@@ -8767,19 +9683,33 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=57481&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "sgdee686",
-     "name": " Midlands Wildlife Area",
-     "type": "Delaware public protected lands (DNREC) (land, state GIS table)",
-     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11",
-     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11/query?objectIds=686&outFields=*&returnGeometry=false&f=html",
+     "id": "sgdea862",
+     "name": "Midlands Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 2083.1,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=862&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     },
     {
-     "id": "sgdee765",
+     "id": "sgdea849",
      "name": "Midlands Wildlife Area",
-     "type": "Delaware public protected lands (DNREC) (land, state GIS table)",
-     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11",
-     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11/query?objectIds=765&outFields=*&returnGeometry=false&f=html",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 681.0,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=849&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea847",
+     "name": "Midlands Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 650.9,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=847&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     }
    ],
@@ -8793,6 +9723,17 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57555",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57556",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57481",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#862",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#849",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#847",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1059",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#861",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1120",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#794",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#651",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#650",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#795",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1193",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#686",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#765"
    ],
@@ -8803,7 +9744,7 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 5486.3,
+     "outline_acres": 5486.4,
      "official_acres": 5356.7,
      "times": 1.02,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
@@ -8823,13 +9764,14 @@
      "flag": "SELF-INTERSECTION",
      "pieces": 3,
      "flags": [
-      "SELF-INTERSECTION"
+      "SELF-INTERSECTION",
+      "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-75.3844426398245 38.5385249928258]",
+     "note": "Ring Self-intersection[-75.3844426398245 38.5385249928258]; 1 hole(s) under 100 m2",
      "repair": {
       "ok": true,
       "area_change_pct": 0.0,
-      "holes": 0,
+      "holes": 1,
       "pieces": 0
      }
     },
@@ -8849,11 +9791,12 @@
     }
    },
    "problems": [
+    "record sgdea1059: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
     "record sgdee765: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 1,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-75.3844426398245 38.5385249928258]."
+   "score": 2,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-75.3844426398245 38.5385249928258]; 1 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-7645",
@@ -9088,6 +10031,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
    "acres_drawn": 3786.1,
@@ -9228,6 +10172,26 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#59",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#81",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#66",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#880",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1147",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#787",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#881",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1151",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#557",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#595",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#741",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#593",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#803",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#596",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#597",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#802",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1153",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#724",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#723",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#920",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#788",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#804",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#725",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#669",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#670"
    ],
@@ -9426,13 +10390,13 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgdea479",
+     "id": "sgdea1217",
      "name": "Blackiston Wildlife Area",
      "type": "Delaware DNREC (land, state GIS table)",
-     "acres": 168.2,
+     "acres": 189.8,
      "acres_from": "acres field",
      "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
-     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=479&outFields=*&returnGeometry=false&f=html",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1217&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     }
    ],
@@ -9448,8 +10412,14 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#76205",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#427",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#477",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1217",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#672",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1216",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#479",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#592",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#480",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1139",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1171",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#478",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#481",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#476",
@@ -9485,11 +10455,11 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-75.7443527266789 39.2577161635462]; 1 hole(s) under 100 m2",
+     "note": "Ring Self-intersection[-75.7443527266789 39.2577161635462]; 2 hole(s) under 100 m2",
      "repair": {
       "ok": true,
       "area_change_pct": 0.0,
-      "holes": 1,
+      "holes": 2,
       "pieces": 0
      }
     },
@@ -9513,7 +10483,7 @@
    ],
    "status": "graded",
    "score": 2,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-75.7443527266789 39.2577161635462]; 1 hole(s) under 100 m2 (+1 more flag)."
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-75.7443527266789 39.2577161635462]; 2 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-7648",
@@ -9526,12 +10496,23 @@
     -75.7055
    ],
    "outline_from": [
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
    "acres_drawn": 5165.4,
    "records": [
+    {
+     "id": "sgdea518",
+     "name": "C&D Canal Conservation Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 4816.1,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=518&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
     {
      "id": "padus#75971",
      "name": "C&D Canal Conservation Area",
@@ -9622,6 +10603,7 @@
     }
    ],
    "record_ids": [
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#518",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#75971",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#76248",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#61",
@@ -9710,6 +10692,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
    "acres_drawn": 5903.3,
@@ -9785,11 +10768,53 @@
      "name_field": "AREA_NAME"
     },
     {
-     "id": "sgdee747",
+     "id": "sgdea1211",
      "name": "Cedar Swamp Wildlife Area",
-     "type": "Delaware public protected lands (DNREC) (land, state GIS table)",
-     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11",
-     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11/query?objectIds=747&outFields=*&returnGeometry=false&f=html",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 1314.5,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1211&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea570",
+     "name": "Cedar Swamp Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 889.8,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=570&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea878",
+     "name": "Cedar Swamp Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 725.0,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=878&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea877",
+     "name": "Cedar Swamp Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 404.3,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=877&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
+     "id": "sgdea874",
+     "name": "Cedar Swamp Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 303.8,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=874&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     }
    ],
@@ -9801,6 +10826,21 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57517",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#36",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#10",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1211",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#570",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#878",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#877",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#874",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#974",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#866",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1110",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1240",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#875",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#865",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#996",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1232",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#876",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#569",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#747"
    ],
    "tests": {
@@ -9875,9 +10915,10 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
-   "acres_drawn": 2013.6,
+   "acres_drawn": 2013.7,
    "records": [
     {
      "id": "padus#76249",
@@ -10013,6 +11054,21 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#11",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#71",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#58",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#824",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#567",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#771",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#979",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#571",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#825",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1028",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1279",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#590",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#669",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1180",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1094",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1067",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1252",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#991",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#775"
    ],
    "tests": {
@@ -10022,7 +11078,7 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 2013.6,
+     "outline_acres": 2013.7,
      "official_acres": 1992.1,
      "times": 1.01,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by Ducks Unlimited (PAD-US source DU_PADUS4_0Fee_PADUS_DU_NCED_2022)"
@@ -10511,9 +11567,10 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
-   "acres_drawn": 5029.8,
+   "acres_drawn": 5029.9,
    "records": [
     {
      "id": "padus#76223",
@@ -10626,11 +11683,13 @@
      "name_field": "AREA_NAME"
     },
     {
-     "id": "sgdee250",
-     "name": "Little Creek Park",
-     "type": "Delaware public protected lands (DNREC) (land, state GIS table)",
-     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11",
-     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11/query?objectIds=250&outFields=*&returnGeometry=false&f=html",
+     "id": "sgdea962",
+     "name": "Little Creek Wildlife Area",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 635.3,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=962&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     }
    ],
@@ -10646,6 +11705,102 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#20",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#19",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#80",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#962",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#757",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#600",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1064",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#702",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1107",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#899",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#913",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#709",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#663",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#664",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#710",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#646",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#912",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1280",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#758",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#760",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#690",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#756",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#691",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1065",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1112",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1113",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1013",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1274",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#940",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#855",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1130",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#835",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#665",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#689",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#854",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#915",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#980",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1169",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1194",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#647",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#666",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#703",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#704",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#759",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#774",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#832",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#941",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#942",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#981",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#982",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#983",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#984",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1003",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1026",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1030",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1031",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1032",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1033",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1034",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1044",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1045",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1046",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1047",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1048",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1049",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1068",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1075",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1076",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1077",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1103",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1104",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1105",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1106",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1111",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1154",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1179",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1191",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1195",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1196",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1229",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1244",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1245",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1246",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1247",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1248",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1249",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1253",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1260",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1262",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1263",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1264",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1265",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1266",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1267",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1271",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1275",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1294",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1318",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1319",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#250",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#737"
    ],
@@ -10656,7 +11811,7 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 5029.8,
+     "outline_acres": 5029.9,
      "official_acres": 9222.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by Ducks Unlimited (PAD-US source DU_PADUS4_0Fee_PADUS_DU_NCED_2022)",
@@ -10682,11 +11837,11 @@
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-75.4224317778439 39.1379483929855]; 1 piece(s) under 10 m wide; 8 hole(s) under 100 m2",
+     "note": "Ring Self-intersection[-75.4224317778439 39.1379483929855]; 1 piece(s) under 10 m wide; 7 hole(s) under 100 m2",
      "repair": {
       "ok": true,
       "area_change_pct": 0.0,
-      "holes": 8,
+      "holes": 7,
       "pieces": 1
      }
     },
@@ -10708,7 +11863,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-75.4224317778439 39.1379483929855]; 1 piece(s) under 10 m wide; 8 hole(s) under 100 m2 (+2 more flags)."
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-75.4224317778439 39.1379483929855]; 1 piece(s) under 10 m wide; 7 hole(s) under 100 m2 (+2 more flags)."
   },
   {
    "ref": "US-9883",
@@ -10981,6 +12136,16 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=60671&outFields=*&returnGeometry=false&f=html"
     },
     {
+     "id": "sgdea1236",
+     "name": "Beach Plum Island Nature Preserve",
+     "type": "Delaware DNREC (land, state GIS table)",
+     "acres": 74.9,
+     "acres_from": "acres field",
+     "layer": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+     "link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0/query?objectIds=1236&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NAME"
+    },
+    {
      "id": "sgdea37",
      "name": "Beach Plum Island Nature Preserve",
      "type": "Delaware DNREC (land, state GIS table)",
@@ -11043,6 +12208,7 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8#83",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#76401",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#60671",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1236",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#37",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#38",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#21",
@@ -11053,7 +12219,7 @@
    "tests": {
     "T1": {
      "flag": "NEAR",
-     "metres": 8.4
+     "metres": 8.3
     },
     "T2": {
      "flag": "PASS",
@@ -11394,10 +12560,19 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/8#47",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#177",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#323",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1202",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#561",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#178",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#934",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#228",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#317",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#324",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1254",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#738",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#936",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#933",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#935",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#698",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#341"
    ],
    "tests": {
@@ -11479,6 +12654,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11"
    ],
    "acres_drawn": 599.5,
@@ -11619,6 +12795,16 @@
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#31",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#7",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17#49",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#966",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1117",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#1184",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#970",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#972",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#968",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#967",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#969",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#971",
+    "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0#764",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#494",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#699",
     "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11#700"

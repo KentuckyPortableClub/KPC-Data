@@ -96,3 +96,155 @@ It decides nothing: it ranks. Score 0 = all pass; +3 OUTSIDE / WAY OFF / MISMATC
 | 3 | US-1067 | Roper Lake State Park | SOURCE DOWN: SPILL: The outline covers 42% of US-11944 Dankworth Pond State Park, with no 2-fer row (maybe the wrong record). |
 | 3 | US-11943 | Sonoita Creek State Natural Area | SOURCE DOWN: OUTSIDE: POTA's pin is 3.5 km outside the outline. |
 | 3 | US-11984 | Quigley-Achee State Wildlife Area | SOURCE DOWN: MISMATCH: The record name 'Quigley Wildlife Area' does not match POTA's name 'Quigley-Achee State Wildlife Area' (score 0.50). |
+
+## US-CA
+
+- parks: 411 (386 with an outline graded, 17 with no outline, 8 with records this tool can't read)
+- pass every test: 211; have flags: 200; source down (retry): 271
+- flags: TINY HOLES 104, NEAR 77, SELF-INTERSECTION 42, SLIVERS 41, DUPLICATE 25, SCATTERED 18, MISMATCH 15, OUTSIDE 14, SPILL 13, OFF 1, INVALID 1, FAR 1, CONFLICT 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 8 | US-4458 | Lake Tahoe Basin Management Unit National Forest | MISMATCH: The record name 'Tahoe National Forest' does not match POTA's name 'Lake Tahoe Basin Management Unit National Forest' (score 0.50) (+5 more flags). |
+| 8 | US-4462 | Plumas National Forest | OUTSIDE: POTA's pin is 1.4 km outside the outline (+5 more flags). |
+| 8 | US-4468 | Stanislaus National Forest | SPILL: The outline covers 100% of US-0894 Tuolumne National Wild and Scenic River, with no 2-fer row (maybe the wrong record) (+5 more flags). |
+| 7 | US-4453 | Angeles National Forest | SPILL: The outline covers 100% of US-4544 San Gabriel Mountains National Monument, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4461 | Modoc National Forest | SPILL: The outline covers 69% of US-12115 Sáttítla Highlands Natural Monument, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4464 | Sequoia National Forest | SPILL: The outline covers 96% of US-0197 Kern National Wild and Scenic River, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4466 | Sierra National Forest | SPILL: The outline covers 100% of US-0884 Kings River National Wild and Scenic River, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 6 | US-0206 | Sacramento River National Wildlife Refuge | SPILL: The outline covers 52% of US-0203 North Central Valley Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-0208 | San Diego National Wildlife Refuge | OUTSIDE: POTA's pin is 4.5 km outside the outline (+3 more flags). |
+| 6 | US-4391 | Humboldt-Toiyabe National Forest | MISMATCH: The record name 'Toiyabe National Forest' does not match POTA's name 'Humboldt-Toiyabe National Forest' (score 0.50) (+3 more flags). |
+
+## US-CO
+
+- parks: 276 (259 with an outline graded, 10 with no outline, 7 with records this tool can't read)
+- pass every test: 113; have flags: 163; source down (retry): 206
+- flags: NEAR 70, OUTSIDE 44, TINY HOLES 36, SELF-INTERSECTION 24, DUPLICATE 15, SPILL 15, SLIVERS 14, SCATTERED 10, MISMATCH 3, OFF 2, INVALID 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 8 | US-4410 | White River National Forest | SPILL: The outline covers 100% of US-11902 Camp Hale National Monument, with no 2-fer row (maybe the wrong record) (+5 more flags). |
+| 7 | US-4405 | Rio Grande National Forest | SPILL: The outline covers 100% of US-9604 Alberta Park Reservoir State Wildlife Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4406 | Roosevelt National Forest | SPILL: The outline covers 100% of US-9612 Bellaire Lake State Wildlife Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4407 | San Isabel National Forest | SPILL: The outline covers 100% of US-4404 Pike National Forest, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4408 | San Juan National Forest | SPILL: The outline covers 100% of US-4413 Chimney Rock National Monument, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 6 | US-0185 | Hugo State Wildlife Area | SOURCE DOWN: OUTSIDE: POTA's pin is 2.3 km outside the outline (+1 more flag). |
+| 6 | US-9658 | Hot Sulfur Springs State Wildlife Area | SOURCE DOWN: OUTSIDE: POTA's pin is 996 m outside the outline (+1 more flag). |
+| 5 | US-12172 | James Mark Jones State Wildlife Area | SOURCE DOWN: SPILL: The outline covers 88% of US-12171 Tomahawk State Wildlife Area, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-4400 | Arapaho National Forest | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-105.503981655023 39.7194950506381]; 123 piece(s) under 10 m wide; 447 hole(s) under 100 m2; 568 pieces spread over 150 km (+4 more flags). |
+| 5 | US-4402 | Gunnison National Forest | NEAR: POTA's pin is 95 m outside the outline (+4 more flags). |
+
+## US-CT
+
+- parks: 157 (123 with an outline graded, 4 with no outline, 30 with records this tool can't read)
+- pass every test: 74; have flags: 83; source down (retry): 148
+- flags: TINY HOLES 39, NEAR 36, SLIVERS 24, OUTSIDE 11, SELF-INTERSECTION 6, SPILL 4, WEAK 1, MISMATCH 1, SCATTERED 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 6 | US-6866 | Nehantic State Forest | SOURCE DOWN: SPILL: The outline covers 76% of US-6858 Beckett Hill Park Reserve, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 5 | US-7541 | Salmon River State Forest | SOURCE DOWN: SPILL: The outline covers 73% of US-1660 Day Pond State Park, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 4 | US-10075 | Nepaug State Forest | SOURCE DOWN: OUTSIDE: POTA's pin is 1.4 km outside the outline (+1 more flag). |
+| 4 | US-1662 | Devil's Hopyard State Park | SOURCE DOWN: SPILL: The outline covers 55% of US-0881 Eightmile National Wild and Scenic River, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+| 4 | US-1693 | Machimoodus State Park | SOURCE DOWN: SPILL: The outline covers 39% of US-1723 Sunrise State Park, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+| 4 | US-1696 | Mianus River State Park | OUTSIDE: POTA's pin is 4.1 km outside the outline (+1 more flag). |
+| 4 | US-6861 | Great Pond / Massacoe State Forest | SOURCE DOWN: MISMATCH: The record name 'Massacoe State Forest' does not match POTA's name 'Great Pond / Massacoe State Forest' (score 0.50) (+1 more flag). |
+| 3 | US-0329 | Silvio O Conte National Wildlife Refuge | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-71.5329012489622 44.3689592479819]; 1 piece(s) under 10 m wide; 27 hole(s) under 100 m2 (+2 more flags). |
+| 3 | US-12604 | Meshomasic State Forest | SOURCE DOWN: SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-72.5786066494314 41.6350222399905]; 4 piece(s) under 10 m wide; 137 hole(s) under 100 m2 (+2 more flags). |
+| 3 | US-1658 | Connecticut Valley Railroad State Park | SOURCE DOWN: OUTSIDE: POTA's pin is 4.2 km outside the outline. |
+
+## US-DC
+
+- parks: 35 (29 with an outline graded, 6 with no outline, 0 with records this tool can't read)
+- pass every test: 23; have flags: 12; source down (retry): 6
+- flags: NEAR 7, SLIVERS 7, MISMATCH 2, SELF-INTERSECTION 2, TINY HOLES 2, DUPLICATE 2, SPILL 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 10 | US-0654 | National Capital Parks - East Park | MISMATCH: The record name 'National Capital Parks' does not match POTA's name 'National Capital Parks - East Park' (score 0.50) (+5 more flags). |
+| 7 | US-13543 | US National Arboretum Botanical Gardens | MISMATCH: The record name 'National Arboretum' does not match POTA's name 'US National Arboretum Botanical Gardens' (score 0.25) (+4 more flags). |
+| 2 | US-0814 | Ford's Theatre National Historic Site | NEAR: POTA's pin is 13 m outside the outline (+1 more flag). |
+| 2 | US-0848 | Mary McLeod Bethune Council House National Historic Site | NEAR: POTA's pin is 4 m outside the outline (+1 more flag). |
+| 1 | US-0656 | Rock Creek Park | SLIVERS: The shape has problems: 1 piece(s) under 10 m wide. |
+| 1 | US-0670 | George Washington Memorial Parkway | SLIVERS: The shape has problems: 60 piece(s) under 10 m wide. |
+| 1 | US-0795 | World War I National Memorial | DUPLICATE: Another park number uses the same record: US-0796. |
+| 1 | US-0796 | World War II National Memorial | DUPLICATE: Another park number uses the same record: US-0795. |
+| 1 | US-0805 | Carter G. Woodson Home National Historic Site | NEAR: POTA's pin is 2 m outside the outline. |
+| 1 | US-0853 | Pennsylvania Avenue National Historic Site | SLIVERS: The shape has problems: 2 piece(s) under 10 m wide. |
+
+## US-DE
+
+- parks: 89 (85 with an outline graded, 4 with no outline, 0 with records this tool can't read)
+- pass every test: 36; have flags: 53; source down (retry): 7
+- flags: TINY HOLES 33, SELF-INTERSECTION 12, NEAR 11, SLIVERS 10, SPILL 8, DUPLICATE 6, MISMATCH 5, OUTSIDE 2, WEAK 1, OFF 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 6 | US-7648 | Chesapeake and Delaware Canal Conservation Area | MISMATCH: The record name 'C&D Canal Wildlife Area' does not match POTA's name 'Chesapeake and Delaware Canal Conservation Area' (score 0.33) (+3 more flags). |
+| 6 | US-7653 | Tony Florio Woodland Beach State Wildlife Area | MISMATCH: The record name 'Woodland Beach Wildlife Area' does not match POTA's name 'Tony Florio Woodland Beach State Wildlife Area' (score 0.50) (+3 more flags). |
+| 5 | US-1733 | Cape Henlopen State Park | SPILL: The outline covers 89% of US-9879 Pinelands Nature National Recreation Trail, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-1742 | Trap Pond State Park | SPILL: The outline covers 34% of US-10687 Trussum Pond State Fishing Lake, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-1743 | White Clay Creek State Park | SPILL: The outline covers 93% of US-9881 Pomeroy and Newark National Recreation Trail, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-7645 | Assawoman Bay State Wildlife Area | MISMATCH: The record name 'Assawoman Wildlife Area' does not match POTA's name 'Assawoman Bay State Wildlife Area' (score 0.50) (+2 more flags). |
+| 5 | US-9890 | James Branch State Nature Preserve | SPILL: The outline covers 35% of US-10670 Chipmans Pond State Fishing Lake, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 4 | US-1730 | Alapocas Run State Park | SPILL: The outline covers 55% of US-9878 Northern Delaware Greenway National Recreation Trail, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+| 4 | US-1744 | Wilmington State Park | OUTSIDE: POTA's pin is 723 m outside the outline (+1 more flag). |
+| 4 | US-5719 | Ted Harvey State Conservation Area | SPILL: The outline covers 92% of US-9892 St. Jones National Reserve, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+
+## US-FL
+
+- parks: 460 (381 with an outline graded, 22 with no outline, 57 with records this tool can't read)
+- pass every test: 286; have flags: 174; source down (retry): 212
+- flags: SLIVERS 68, TINY HOLES 49, SELF-INTERSECTION 44, SPILL 35, SCATTERED 32, DUPLICATE 29, NEAR 27, OFF 20, MISMATCH 13, CONFLICT 8, OUTSIDE 6, WAY OFF 6, FAR 5, INVALID 1, WEAK 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 14 | US-3618 | Fakahatchee Strand Preserve State Park | WAY OFF: The outline is 6.7 times bigger than the official 80,158 acres (536,536 ac drawn) (+7 more flags). |
+| 11 | US-5250 | Annutteliga Hammock State Conservation Area | WAY OFF: The outline is 12.0 times bigger than the official 2,424 acres (29,049 ac drawn) (+6 more flags). |
+| 11 | US-6281 | Loxahatchee River National Wild and Scenic River | FAR: POTA's pin is 17.3 km outside the outline (+2 more flags). |
+| 11 | US-6321 | Rotenberger Wildlife Management Area | CONFLICT: The park is a wma but the record is a state park (+6 more flags). |
+| 9 | US-6288 | Apalachicola River Wildlife Area | WAY OFF: The outline is 18.1 times bigger than the official 37,626 acres (681,102 ac drawn) (+4 more flags). |
+| 9 | US-6327 | Tenoroc Wildlife Area | FAR: POTA's pin is 224.7 km outside the outline (+2 more flags). |
+| 9 | US-8713 | Withlacoochee Hills State Conservation Area | SOURCE DOWN: FAR: POTA's pin is 387.6 km outside the outline (+2 more flags). |
+| 8 | US-0245 | Lake Wales Ridge Wildlife Management Area | SPILL: The outline covers 100% of US-8713 Withlacoochee Hills State Conservation Area, with no 2-fer row (maybe the wrong record) (+5 more flags). |
+| 8 | US-6291 | Fred C. Babcock/Cecil M. Webb Wildlife Management Area | CONFLICT: The park is a wma but the record is a state park (+3 more flags). |
+| 8 | US-8695 | Peacock Slough State Conservation Area | SOURCE DOWN: FAR: POTA's pin is 474.1 km outside the outline (+1 more flag). |
+
+## US-GA
+
+- parks: 238 (207 with an outline graded, 11 with no outline, 20 with records this tool can't read)
+- pass every test: 168; have flags: 70; source down (retry): 192
+- flags: NEAR 27, TINY HOLES 22, DUPLICATE 12, SPILL 12, SELF-INTERSECTION 10, SLIVERS 9, MISMATCH 9, SCATTERED 2, WEAK 2, OUTSIDE 2, INVALID 1, OFF 1, CONFLICT 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 9 | US-4473 | Chattahoochee-Oconee National Forest | MISMATCH: The record name 'Chattahoochee Purchase Unit' does not match POTA's name 'Chattahoochee-Oconee National Forest' (score 0.50) (+4 more flags). |
+| 8 | US-9797 | Chattahoochee Fall Line Hilliard Tract Wildlife Management Area | SOURCE DOWN: SPILL: The outline covers 100% of US-7906 Chattahoochee Fall Line Almo Tract Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+5 more flags). |
+| 7 | US-7140 | Charlie Elliot Wildlife Management Area | MISMATCH: The record name 'Charlie Elliott Wildlife Center Clybel Wildlife Management Area Marben Public Fishing Area' does not match POTA's name 'Charlie Elliot Wildlife Management Area' (score 0.67) (+2 more flags). |
+| 7 | US-7906 | Chattahoochee Fall Line Almo Tract Wildlife Management Area | SOURCE DOWN: SPILL: The outline covers 100% of US-9797 Chattahoochee Fall Line Hilliard Tract Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 6 | US-9780 | Townsend Wildlife Management Area | SOURCE DOWN: OUTSIDE: POTA's pin is 1.4 km outside the outline (+3 more flags). |
+| 6 | US-9793 | Ball's Ferry Property Wildlife Management Area | SOURCE DOWN: MISMATCH: The record name 'Balls Ferry State Park' does not match POTA's name 'Ball's Ferry Property Wildlife Management Area' (score 0.67) (+1 more flag). |
+| 5 | US-3741 | Coosawattee Wildlife Management Area | SOURCE DOWN: SPILL: The outline covers 100% of US-7899 Carter's Lake Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 4 | US-2196 | Richard B. Russell State Park | SOURCE DOWN: SPILL: The outline covers 68% of US-3747 Elbert County Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+| 4 | US-7138 | Chestatee Wildlife Management Area | SOURCE DOWN: SPILL: The outline covers 100% of US-7473 DeSoto Falls National Recreation Area, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+| 4 | US-7141 | Clybel Wildlife Management Area | SOURCE DOWN: SPILL: The outline covers 100% of US-7140 Charlie Elliot Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+
+## US-HI
+
+- parks: 103 (93 with an outline graded, 9 with no outline, 1 with records this tool can't read)
+- pass every test: 58; have flags: 45; source down (retry): 46
+- flags: NEAR 21, TINY HOLES 11, SLIVERS 6, SPILL 4, OUTSIDE 4, MISMATCH 2, DUPLICATE 2, SELF-INTERSECTION 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 4 | US-10913 | Diamond Head Summit State Trail | MISMATCH: The record name 'Diamond Head State Monument' does not match POTA's name 'Diamond Head Summit State Trail' (score 0.67) (+1 more flag). |
+| 4 | US-2209 | Ahupua'a O Kahana State Park | SOURCE DOWN: SPILL: The outline covers 96% of US-10916 Kapaʻeleʻele State Trail, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+| 4 | US-2215 | Koke`e State Park | SOURCE DOWN: MISMATCH: The record name 'Koke'e State Park' does not match POTA's name 'Koke`e State Park' (score 0.50) (+1 more flag). |
+| 4 | US-2226 | Wailua River State Park | SOURCE DOWN: OUTSIDE: POTA's pin is 1.1 km outside the outline (+1 more flag). |
+| 3 | US-10907 | Mokuleia Forest Reserve | SPILL: The outline covers 33% of US-10925 HI State Game Reserve, with no 2-fer row (maybe the wrong record). |
+| 3 | US-10914 | Ka‘ena Point State Trail | OUTSIDE: POTA's pin is 2.7 km outside the outline. |
+| 3 | US-10915 | Nakoa State Trail | OUTSIDE: POTA's pin is 1.6 km outside the outline. |
+| 3 | US-10921 | Hawaii Capital National Historic District | SPILL: The outline covers 70% of US-6426 Iolani Palace State Preserve, with no 2-fer row (maybe the wrong record). |
+| 3 | US-6401 | Mauna Kea State Recreation Area | OUTSIDE: POTA's pin is 866 m outside the outline. |
+| 3 | US-6413 | Keawa Heiau State Recreation Area | SOURCE DOWN: SPILL: The outline covers 39% of US-10917 ʻAiea Loop State Trail, with no 2-fer row (maybe the wrong record). |

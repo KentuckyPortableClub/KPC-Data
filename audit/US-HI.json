@@ -1,6 +1,6 @@
 {
  "area": "US-HI",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -54,6 +54,8 @@
      "id": "sghib191",
      "name": "HALEAKALA NATIONAL PARK",
      "type": "Hawaii DLNR reserves (DOFAW) (wild, state GIS table)",
+     "acres": 1.0,
+     "acres_from": "the key's acres",
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1/query?objectIds=191&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
@@ -84,7 +86,7 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 33887.5,
-     "official_acres": 33915.0,
+     "official_acres": 33916.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -255,10 +257,9 @@
     -156.98
    ],
    "outline_from": [
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1"
    ],
-   "acres_drawn": 10652.3,
+   "acres_drawn": 5670.1,
    "records": [
     {
      "id": "sghib367",
@@ -269,19 +270,10 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1/query?objectIds=367&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sgakd1147",
-     "name": "Kalaupapa National Historical Park",
-     "type": "National Park Service (legal boundary) (park, state GIS table)",
-     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
-     "link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=1147&outFields=*&returnGeometry=false&f=html",
-     "name_field": "UNIT_NAME"
     }
    ],
    "record_ids": [
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#367",
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2#1147"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#367"
    ],
    "tests": {
     "T1": {
@@ -289,17 +281,14 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 10652.3,
-     "official_acres": 5672.0,
-     "times": 1.88,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Kalaupapa National Historical Park",
-     "record_name": "Kalaupapa National Historical Park"
+     "record_name": "KALAUPAPA NATIONAL HISTORICAL PARK"
     },
     "T4": {
      "park_kind": "national park",
@@ -321,15 +310,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-10-16",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 1.9 times bigger than the official 5,672 acres (10,652 ac drawn)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-0117",
@@ -564,6 +554,59 @@
    "pin": [
     28.2247,
     -177.355
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+    }
+   },
+   "problems": [],
+   "status": "graded",
+   "score": 0,
+   "why": "Nothing could be tested."
+  },
+  {
+   "ref": "US-0121",
+   "name": "Kure Atoll",
+   "key_name": "Kure Atoll",
+   "type": "State Wildlife Area",
+   "grade": "pin",
+   "pin": [
+    28.4168,
+    -178.332
    ],
    "outline_from": [],
    "acres_drawn": null,
@@ -2603,7 +2646,7 @@
    "name": "Ka‘ena Point State Trail",
    "key_name": "Ka‘ena Point State Trail",
    "type": "State Trail",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     21.579,
     -158.24
@@ -3086,60 +3129,91 @@
    "name": "Hawaii Capital National Historic District",
    "key_name": "Hawaii Capital National Historic District",
    "type": "National Historic District",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     21.3106,
     -157.861
    ],
-   "outline_from": [],
-   "acres_drawn": null,
-   "records": [],
-   "record_ids": [],
+   "outline_from": [
+    "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1"
+   ],
+   "acres_drawn": 156.9,
+   "records": [
+    {
+     "id": "sgaki395518",
+     "name": "Hawaii Capital Historic District",
+     "type": "National Register of Historic Places Polygons (land, state GIS table)",
+     "layer": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+     "link": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?objectIds=395518&outFields=*&returnGeometry=false&f=html",
+     "name_field": "RESNAME"
+    }
+   ],
+   "record_ids": [
+    "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1#395518"
+   ],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "NO FIGURE",
+     "outline_acres": 156.9
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Hawaii Capital National Historic District",
+     "record_name": "Hawaii Capital Historic District"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "PASS",
+     "pieces": 1
     },
     "T6": {
-     "flag": "NO OUTLINE"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "US-6426",
+       "name": "Iolani Palace State Preserve",
+       "share": 0.7
+      },
+      {
+       "ref": "US-10919",
+       "name": "Na Ala Hele State Trail",
+       "share": 0.65
+      }
+     ],
+     "count": 2
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "CAN'T TELL",
-     "note": "no record id"
+     "flag": "PASS"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "Nothing could be tested."
+   "score": 3,
+   "why": "SPILL: The outline covers 70% of US-6426 Iolani Palace State Preserve, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "US-10922",
    "name": "Marconi Wireless Telegraphy Station Kahuku National Historic Site",
    "key_name": "Marconi Wireless Telegraphy Station Kahuku National Historic Site",
    "type": "National Historic Site",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     21.7063,
     -157.973
@@ -3164,8 +3238,8 @@
      "note": "no record"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
      "flag": "NO OUTLINE"
@@ -3179,13 +3253,15 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: mapservices.nps.gov: layer said: Failed to execute query."
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "Nothing could be tested."
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-10923",
@@ -3589,8 +3665,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1"
    ],
    "acres_drawn": 67.6,
    "records": [
@@ -3623,23 +3698,12 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1/query?objectIds=299&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic38",
-     "name": "AKAKA FALLS STATE PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 66.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=38&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195370",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#38",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#299",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#38"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#299"
    ],
    "tests": {
     "T1": {
@@ -3647,11 +3711,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 67.6,
-     "official_acres": 66.0,
-     "times": 1.02,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -3679,16 +3740,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2209",
@@ -3702,7 +3763,6 @@
    ],
    "outline_from": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
@@ -3717,16 +3777,6 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?objectIds=5&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic5",
-     "name": "AHUPUAA O KAHANA STATE PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 5221.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=5&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     },
     {
      "id": "sghib277",
@@ -3761,7 +3811,6 @@
    ],
    "record_ids": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#5",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#5",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#277",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195373",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195372"
@@ -3772,11 +3821,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 5225.8,
-     "official_acres": 5221.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -3827,16 +3873,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 5,
-   "why": "SPILL: The outline covers 96% of US-10916 Kapaʻeleʻele State Trail, with no 2-fer row (maybe the wrong record) (+2 more flags)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 4,
+   "why": "SOURCE DOWN: SPILL: The outline covers 96% of US-10916 Kapaʻeleʻele State Trail, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "US-2210",
@@ -3851,8 +3897,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1"
    ],
    "acres_drawn": 250.7,
    "records": [
@@ -3905,26 +3950,6 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1/query?objectIds=182&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic55",
-     "name": "HAENA STATE PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 184.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=55&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sghic56",
-     "name": "HAENA STATE PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 52.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=56&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
@@ -3932,9 +3957,7 @@
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#55",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#56",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#181",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#182",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#55",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#56"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#182"
    ],
    "tests": {
     "T1": {
@@ -3942,11 +3965,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 250.7,
-     "official_acres": 236.0,
-     "times": 1.06,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -3960,19 +3980,8 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "SELF-INTERSECTION",
-     "pieces": 1,
-     "flags": [
-      "SELF-INTERSECTION",
-      "TINY HOLES"
-     ],
-     "note": "Ring Self-intersection[-159.58530922892 22.2202722743099]; 1 hole(s) under 100 m2",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 1,
-      "pieces": 0
-     }
+     "flag": "PASS",
+     "pieces": 1
     },
     "T6": {
      "flag": "PASS"
@@ -3985,16 +3994,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 3,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-159.58530922892 22.2202722743099]; 1 hole(s) under 100 m2 (+2 more flags)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2211",
@@ -4009,7 +4018,6 @@
    "outline_from": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
    "acres_drawn": 17.9,
@@ -4035,16 +4043,6 @@
      "name_field": "name"
     },
     {
-     "id": "sghic8",
-     "name": "HEEIA STATE PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 18.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=8&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "padus#195378",
      "name": "Heeia State Park",
      "type": "State Parks & Recreation Areas State Park",
@@ -4058,7 +4056,6 @@
    "record_ids": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#8",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#276",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#8",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195378"
    ],
    "tests": {
@@ -4067,11 +4064,8 @@
      "metres": 10.8
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 17.9,
-     "official_acres": 18.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4099,16 +4093,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 11 m outside the outline (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 11 m outside the outline."
   },
   {
    "ref": "US-2212",
@@ -4122,7 +4116,6 @@
    ],
    "outline_from": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
@@ -4137,16 +4130,6 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?objectIds=6&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic6",
-     "name": "KAENA POINT STATE PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 1509.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=6&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     },
     {
      "id": "sghib379",
@@ -4171,7 +4154,6 @@
    ],
    "record_ids": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#6",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#6",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#379",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195379"
    ],
@@ -4181,11 +4163,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1529.5,
-     "official_acres": 1509.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4200,16 +4179,15 @@
     },
     "T5": {
      "flag": "SLIVERS",
-     "pieces": 6,
+     "pieces": 7,
      "flags": [
-      "SLIVERS",
-      "TINY HOLES"
+      "SLIVERS"
      ],
-     "note": "1 piece(s) under 10 m wide; 1 hole(s) under 100 m2",
+     "note": "1 piece(s) under 10 m wide",
      "repair": {
       "ok": true,
       "area_change_pct": 0.0,
-      "holes": 1,
+      "holes": 0,
       "pieces": 1
      }
     },
@@ -4224,21 +4202,19 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
     "record sghia6: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
-    "record sghic6: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
     "record sghib379: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
     "record 195379: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
-   "status": "graded",
-   "score": 3,
-   "why": "SLIVERS: The shape has problems: 1 piece(s) under 10 m wide; 1 hole(s) under 100 m2 (+2 more flags)."
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: SLIVERS: The shape has problems: 1 piece(s) under 10 m wide."
   },
   {
    "ref": "US-2213",
@@ -4252,8 +4228,7 @@
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16"
    ],
    "acres_drawn": 7.5,
    "records": [
@@ -4276,22 +4251,11 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?objectIds=25&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic25",
-     "name": "KAUMAHINA STATE WAYSIDE",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 7.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=25&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195382",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#25",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#25"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#25"
    ],
    "tests": {
     "T1": {
@@ -4299,11 +4263,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 7.5,
-     "official_acres": 7.0,
-     "times": 1.07,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4331,16 +4292,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2214",
@@ -4355,8 +4316,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16"
    ],
    "acres_drawn": 1702.6,
    "records": [
@@ -4409,26 +4369,6 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?objectIds=39&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic40",
-     "name": "KEKAHA KAI STATE PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 863.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=40&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sghic39",
-     "name": "KEKAHA KAI STATE PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 775.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=39&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
@@ -4436,9 +4376,7 @@
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#292",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#291",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#40",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#39",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#40",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#39"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#39"
    ],
    "tests": {
     "T1": {
@@ -4446,11 +4384,8 @@
      "metres": 11.8
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1702.6,
-     "official_acres": 1668.0,
-     "times": 1.02,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4478,16 +4413,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 12 m outside the outline (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 12 m outside the outline."
   },
   {
    "ref": "US-2215",
@@ -4502,8 +4437,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16"
    ],
    "acres_drawn": 4411.0,
    "records": [
@@ -4536,23 +4470,12 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?objectIds=57&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic57",
-     "name": "KOKEE STATE PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 4357.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=57&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195387",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#184",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#57",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#57"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#57"
    ],
    "tests": {
     "T1": {
@@ -4560,11 +4483,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 4411.0,
-     "official_acres": 4373.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "MISMATCH",
@@ -4606,16 +4526,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 5,
-   "why": "MISMATCH: The record name 'Koke'e State Park' does not match POTA's name 'Koke`e State Park' (score 0.50) (+2 more flags)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 4,
+   "why": "SOURCE DOWN: MISMATCH: The record name 'Koke'e State Park' does not match POTA's name 'Koke`e State Park' (score 0.50) (+1 more flag)."
   },
   {
    "ref": "US-2216",
@@ -4706,7 +4626,6 @@
    "outline_from": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
    "acres_drawn": 173.5,
@@ -4732,16 +4651,6 @@
      "name_field": "name"
     },
     {
-     "id": "sghic29",
-     "name": "MAKENA STATE PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 170.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=29&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "padus#195391",
      "name": "Makena State Park",
      "type": "State Parks & Recreation Areas State Park",
@@ -4755,7 +4664,6 @@
    "record_ids": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#282",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#29",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#29",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195391"
    ],
    "tests": {
@@ -4764,11 +4672,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 173.5,
-     "official_acres": 171.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4796,16 +4701,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2218",
@@ -4819,7 +4724,6 @@
    ],
    "outline_from": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
    "acres_drawn": 4.2,
@@ -4835,16 +4739,6 @@
      "name_field": "name"
     },
     {
-     "id": "sghic12",
-     "name": "NUUANU PALI STATE WAYSIDE",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 4.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=12&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "padus#195397",
      "name": "Nuuanu Pali State Wayside",
      "type": "State Parks & Recreation Areas State Park",
@@ -4857,7 +4751,6 @@
    ],
    "record_ids": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#12",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#12",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195397"
    ],
    "tests": {
@@ -4866,11 +4759,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 4.2,
-     "official_acres": 4.0,
-     "times": 1.04,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4898,16 +4788,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2219",
@@ -4921,7 +4811,6 @@
    ],
    "outline_from": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
@@ -4936,16 +4825,6 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?objectIds=22&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic22",
-     "name": "PALAAU STATE PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 233.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=22&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     },
     {
      "id": "sghib279",
@@ -4970,7 +4849,6 @@
    ],
    "record_ids": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#22",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#22",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#279",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195399"
    ],
@@ -4980,11 +4858,8 @@
      "metres": 13.4
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 236.4,
-     "official_acres": 233.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5012,16 +4887,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 13 m outside the outline (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 13 m outside the outline."
   },
   {
    "ref": "US-2220",
@@ -5036,8 +4911,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1"
    ],
    "acres_drawn": 157.8,
    "records": [
@@ -5070,23 +4944,12 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1/query?objectIds=301&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic59",
-     "name": "POLIHALE STATE PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 148.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=59&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195400",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#59",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#301",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#59"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#301"
    ],
    "tests": {
     "T1": {
@@ -5094,11 +4957,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 157.8,
-     "official_acres": 148.0,
-     "times": 1.07,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5126,16 +4986,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2221",
@@ -5149,8 +5009,7 @@
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16"
    ],
    "acres_drawn": 3.1,
    "records": [
@@ -5173,33 +5032,11 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?objectIds=70&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic71",
-     "name": "PUAA KAA STATE WAYSIDE",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 2.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=71&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sghic72",
-     "name": "PUAA KAA STATE WAYSIDE",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 2.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=72&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195402",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#70",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#71",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#72"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#70"
    ],
    "tests": {
     "T1": {
@@ -5207,11 +5044,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 3.1,
-     "official_acres": 2.0,
-     "times": 1.54,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5239,16 +5073,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 1.5 times bigger than the official 2 acres (3 ac drawn) (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2222",
@@ -5262,7 +5096,6 @@
    ],
    "outline_from": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
    "acres_drawn": 84.3,
@@ -5278,16 +5111,6 @@
      "name_field": "name"
     },
     {
-     "id": "sghic14",
-     "name": "PUU UALAKAA STATE WAYSIDE",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 83.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=14&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "padus#195403",
      "name": "Puu Ualakea State Wayside",
      "type": "State Parks & Recreation Areas State Park",
@@ -5300,7 +5123,6 @@
    ],
    "record_ids": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#14",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#14",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195403"
    ],
    "tests": {
@@ -5309,11 +5131,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 84.3,
-     "official_acres": 83.0,
-     "times": 1.02,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5351,16 +5170,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2 (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
   },
   {
    "ref": "US-2223",
@@ -5375,10 +5194,9 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16"
    ],
-   "acres_drawn": 1864.4,
+   "acres_drawn": 1864.2,
    "records": [
     {
      "id": "padus#195415",
@@ -5409,23 +5227,12 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?objectIds=58&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic58",
-     "name": "WAIMEA CANYON STATE PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 1802.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=58&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195415",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#185",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#58",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#58"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#58"
    ],
    "tests": {
     "T1": {
@@ -5433,11 +5240,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1864.4,
-     "official_acres": 1845.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5465,18 +5269,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [
-    "record sghic58: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
    ],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2224",
@@ -5491,7 +5293,6 @@
    "outline_from": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
    "acres_drawn": 112.3,
@@ -5517,16 +5318,6 @@
      "name_field": "name"
     },
     {
-     "id": "sghic27",
-     "name": "WAIANAPANAPA STATE PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 109.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=27&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "padus#195410",
      "name": "Wai'anapanapa State Park",
      "type": "State Parks & Recreation Areas State Park",
@@ -5540,7 +5331,6 @@
    "record_ids": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#27",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#287",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#27",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195410"
    ],
    "tests": {
@@ -5549,11 +5339,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 112.3,
-     "official_acres": 109.0,
-     "times": 1.03,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5581,16 +5368,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2225",
@@ -5605,8 +5392,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1"
    ],
    "acres_drawn": 38.8,
    "records": [
@@ -5679,26 +5465,6 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1/query?objectIds=297&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic43",
-     "name": "WAILUKU RIVER STATE PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 7.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=43&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sghic42",
-     "name": "WAILUKU RIVER STATE PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 3.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=42&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
@@ -5708,9 +5474,7 @@
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#43",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#42",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#296",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#297",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#43",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#42"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#297"
    ],
    "tests": {
     "T1": {
@@ -5718,13 +5482,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 38.8,
-     "official_acres": 37.0,
-     "times": 1.05,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
-     "official_acres_low": 21.0,
-     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 21 ac, all providers added 37 ac"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5752,16 +5511,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2226",
@@ -5776,10 +5535,9 @@
    "outline_from": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 1143.5,
+   "acres_drawn": 1143.3,
    "records": [
     {
      "id": "sghia52",
@@ -5802,16 +5560,6 @@
      "name_field": "name"
     },
     {
-     "id": "sghic52",
-     "name": "WAILUA RIVER STATE PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 1123.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=52&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "padus#195412",
      "name": "Wailua River State Park",
      "type": "State Parks & Recreation Areas State Park",
@@ -5825,7 +5573,6 @@
    "record_ids": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#52",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#268",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#52",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195412"
    ],
    "tests": {
@@ -5834,11 +5581,8 @@
      "metres": 1071.0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1143.5,
-     "official_acres": 1123.0,
-     "times": 1.02,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5876,18 +5620,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [
-    "record sghic52: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
    ],
-   "status": "graded",
-   "score": 5,
-   "why": "OUTSIDE: POTA's pin is 1.1 km outside the outline (+2 more flags)."
+   "status": "SOURCE DOWN: retry next run",
+   "score": 4,
+   "why": "SOURCE DOWN: OUTSIDE: POTA's pin is 1.1 km outside the outline (+1 more flag)."
   },
   {
    "ref": "US-2227",
@@ -5901,8 +5643,7 @@
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16"
    ],
    "acres_drawn": 1.5,
    "records": [
@@ -5925,22 +5666,11 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?objectIds=26&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic26",
-     "name": "WAILUA VALLEY STATE WAYSIDE",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 1.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=26&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195413",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#26",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#26"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#26"
    ],
    "tests": {
     "T1": {
@@ -5948,11 +5678,8 @@
      "metres": 3.6
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1.5,
-     "official_acres": 1.0,
-     "times": 1.47,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5980,16 +5707,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 4 m outside the outline (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 4 m outside the outline."
   },
   {
    "ref": "US-3391",
@@ -6003,8 +5730,7 @@
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16"
    ],
    "acres_drawn": 6115.4,
    "records": [
@@ -6037,34 +5763,12 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?objectIds=54&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic53",
-     "name": "NA PALI COAST STATE WILDERNESS PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 4880.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=53&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sghic54",
-     "name": "NA PALI COAST STATE WILDERNESS PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 1149.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=54&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195396",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#53",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#54",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#53",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#54"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#54"
    ],
    "tests": {
     "T1": {
@@ -6072,11 +5776,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 6115.4,
-     "official_acres": 6029.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6104,16 +5805,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-4565",
@@ -6126,35 +5827,26 @@
     -156.033
    ],
    "outline_from": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Ala_Kahakai_National_Historic_Trail_Official_Corridor/FeatureServer/0"
+    "trails/US-4565.json"
    ],
-   "acres_drawn": 320121.1,
+   "acres_drawn": null,
    "records": [
     {
-     "id": "akht1",
+     "id": "trl:US-4565",
      "name": "Ala Kahakai National Historic Trail",
-     "type": "NPS Ala Kahakai National Historic Trail corridor (official)",
-     "acres": 320438.6,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Ala_Kahakai_National_Historic_Trail_Official_Corridor/FeatureServer/0",
-     "link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Ala_Kahakai_National_Historic_Trail_Official_Corridor/FeatureServer/0/query?objectIds=1&outFields=*&returnGeometry=false&f=html",
-     "name_field": "TrailName"
+     "type": "trail",
+     "layer": "trails/US-4565.json"
     }
    ],
-   "record_ids": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/Ala_Kahakai_National_Historic_Trail_Official_Corridor/FeatureServer/0#1"
-   ],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NEAR",
+     "metres": 46.3
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 320121.1,
-     "official_acres": 320438.6,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T3": {
      "flag": "PASS",
@@ -6168,47 +5860,31 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "SELF-INTERSECTION",
-     "pieces": 1,
-     "flags": [
-      "SELF-INTERSECTION"
-     ],
-     "note": "Ring Self-intersection[-155.85241837817 20.2679754884762]",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 0,
-      "pieces": 0
-     }
+     "flag": "N/A",
+     "note": "a line, not an area"
     },
     "T6": {
-     "flag": "SPILL",
-     "parks": [
-      {
-       "ref": "US-6421",
-       "name": "Kohala Historical Sites State Preserve",
-       "share": 0.54
-      }
-     ],
-     "count": 1
+     "flag": "NO OUTLINE"
     },
     "T7": {
      "flag": "N/A",
      "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2025-12-05",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 4,
-   "why": "SPILL: The outline covers 54% of US-6421 Kohala Historical Sites State Preserve, with no 2-fer row (maybe the wrong record) (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 46 m outside the outline."
   },
   {
    "ref": "US-6401",
@@ -6309,7 +5985,6 @@
    ],
    "outline_from": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1"
    ],
@@ -6324,16 +5999,6 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?objectIds=47&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic47",
-     "name": "LAVA TREE STATE MONUMENT",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 18.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=47&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     },
     {
      "id": "padus#195368",
@@ -6358,7 +6023,6 @@
    ],
    "record_ids": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#47",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#47",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195368",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#136"
    ],
@@ -6368,11 +6032,8 @@
      "metres": 67.0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 18.2,
-     "official_acres": 18.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6400,16 +6061,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 67 m outside the outline (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 67 m outside the outline."
   },
   {
    "ref": "US-6403",
@@ -6424,7 +6085,6 @@
    "outline_from": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
    "acres_drawn": 525.8,
@@ -6443,6 +6103,8 @@
      "id": "sghib107",
      "name": "HAPUNA BEACH STATE RECREATION AREA (WAIALEA  SEC.)",
      "type": "Hawaii DLNR reserves (DOFAW) (wild, state GIS table)",
+     "acres": 2.0,
+     "acres_from": "the key's acres",
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1/query?objectIds=107&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
@@ -6478,36 +6140,6 @@
      "name_field": "name"
     },
     {
-     "id": "sghic64",
-     "name": "HAPUNA BEACH STATE RECREATION AREA",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 291.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=64&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sghic36",
-     "name": "HAPUNA BEACH STATE RECREATION AREA",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 232.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=36&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sghic37",
-     "name": "HAPUNA BEACH STATE RECREATION AREA (WAIALEA  SEC.)",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 2.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=37&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "padus#195377",
      "name": "Hapuna Beach State Recreation Area",
      "type": "State Parks & Recreation Areas State Park",
@@ -6534,9 +6166,6 @@
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#64",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#36",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#37",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#64",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#36",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#37",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195377",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195376"
    ],
@@ -6546,11 +6175,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 525.8,
-     "official_acres": 525.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6588,16 +6214,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "SLIVERS: The shape has problems: 2 piece(s) under 10 m wide (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: SLIVERS: The shape has problems: 2 piece(s) under 10 m wide."
   },
   {
    "ref": "US-6404",
@@ -6688,7 +6314,6 @@
    "outline_from": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
    "acres_drawn": 539.2,
@@ -6714,16 +6339,6 @@
      "name_field": "name"
     },
     {
-     "id": "sghic48",
-     "name": "KEALAKEKUA BAY STATE HISTORICAL PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 538.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=48&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "padus#195363",
      "name": "Kealakekua Bay State Historical Park",
      "type": "State Historical Park State Historic or Cultural Area",
@@ -6737,7 +6352,6 @@
    "record_ids": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#294",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#48",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#48",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195363"
    ],
    "tests": {
@@ -6746,11 +6360,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 539.2,
-     "official_acres": 539.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6778,16 +6389,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-6406",
@@ -6802,7 +6413,6 @@
    "outline_from": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
    "acres_drawn": 14.0,
@@ -6828,16 +6438,6 @@
      "name_field": "name"
     },
     {
-     "id": "sghic34",
-     "name": "MACKENZIE STATE RECREATION AREA",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 14.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=34&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "padus#195389",
      "name": "Mackenzie State Recreation Area",
      "type": "State Parks & Recreation Areas State Park",
@@ -6851,7 +6451,6 @@
    "record_ids": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#34",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#295",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#34",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195389"
    ],
    "tests": {
@@ -6860,11 +6459,8 @@
      "metres": 10.3
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 14.0,
-     "official_acres": 14.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6892,16 +6488,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 10 m outside the outline (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 10 m outside the outline."
   },
   {
    "ref": "US-6407",
@@ -6916,8 +6512,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1"
    ],
    "acres_drawn": 129.8,
    "records": [
@@ -6950,23 +6545,12 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1/query?objectIds=298&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic41",
-     "name": "WAILOA RIVER STATE RECREATION AREA",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 112.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=41&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195411",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#41",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#298",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#41"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#298"
    ],
    "tests": {
     "T1": {
@@ -6974,11 +6558,8 @@
      "metres": 476.1
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 129.8,
-     "official_acres": 129.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7006,16 +6587,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 476 m outside the outline (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 476 m outside the outline."
   },
   {
    "ref": "US-6408",
@@ -7211,7 +6792,6 @@
    ],
    "outline_from": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
    "acres_drawn": 8.2,
@@ -7227,16 +6807,6 @@
      "name_field": "name"
     },
     {
-     "id": "sghic28",
-     "name": "POLIPOLI SPRING STATE RECREATION AREA",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 8.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=28&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "padus#195401",
      "name": "Polipoli Spring State Recreation Area",
      "type": "State Parks & Recreation Areas State Park",
@@ -7249,7 +6819,6 @@
    ],
    "record_ids": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#28",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#28",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195401"
    ],
    "tests": {
@@ -7258,11 +6827,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 8.2,
-     "official_acres": 8.0,
-     "times": 1.02,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7290,16 +6856,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-6412",
@@ -7314,8 +6880,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1"
    ],
    "acres_drawn": 6.4,
    "records": [
@@ -7348,23 +6913,12 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1/query?objectIds=29&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic11",
-     "name": "AIEA BAY STATE RECREATION AREA",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 6.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=11&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195374",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#11",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#29",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#11"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#29"
    ],
    "tests": {
     "T1": {
@@ -7372,11 +6926,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 6.4,
-     "official_acres": 6.0,
-     "times": 1.07,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7404,16 +6955,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-6413",
@@ -7428,8 +6979,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1"
    ],
    "acres_drawn": 386.2,
    "records": [
@@ -7462,23 +7012,12 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1/query?objectIds=275&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic9",
-     "name": "KEAIWA HEIAU STATE RECREATION AREA",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 385.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=9&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195383",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#9",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#275",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#9"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#275"
    ],
    "tests": {
     "T1": {
@@ -7486,11 +7025,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 386.2,
-     "official_acres": 385.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7526,16 +7062,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 4,
-   "why": "SPILL: The outline covers 39% of US-10917 ʻAiea Loop State Trail, with no 2-fer row (maybe the wrong record) (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 3,
+   "why": "SOURCE DOWN: SPILL: The outline covers 39% of US-10917 ʻAiea Loop State Trail, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "US-6414",
@@ -7550,8 +7086,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1"
    ],
    "acres_drawn": 111.3,
    "records": [
@@ -7604,26 +7139,6 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1/query?objectIds=6&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic2",
-     "name": "MALAEKAHANA STATE RECREATION AREA (LAIE SEC.)",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 74.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=2&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sghic1",
-     "name": "MALAEKAHANA STATE RECREATION AREA (KAHUKU SEC.)",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 36.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=1&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
@@ -7631,9 +7146,7 @@
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#2",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#1",
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#9",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#6",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#2",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#1"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#6"
    ],
    "tests": {
     "T1": {
@@ -7641,11 +7154,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 111.3,
-     "official_acres": 110.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7673,16 +7183,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-6415",
@@ -7697,8 +7207,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1"
    ],
    "acres_drawn": 149.2,
    "records": [
@@ -7731,23 +7240,12 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1/query?objectIds=273&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic16",
-     "name": "SAND ISLAND STATE RECREATION AREA",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 133.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=16&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195407",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#16",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#273",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#16"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#273"
    ],
    "tests": {
     "T1": {
@@ -7755,11 +7253,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 149.2,
-     "official_acres": 144.0,
-     "times": 1.04,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7787,16 +7282,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-6416",
@@ -7811,8 +7306,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1"
    ],
    "acres_drawn": 71.8,
    "records": [
@@ -7845,23 +7339,12 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1/query?objectIds=32&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic18",
-     "name": "WAAHILA RIDGE STATE RECREATION AREA",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 49.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=18&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195408",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#18",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#32",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#18"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#32"
    ],
    "tests": {
     "T1": {
@@ -7869,11 +7352,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 71.8,
-     "official_acres": 72.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7901,16 +7381,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-6417",
@@ -7925,8 +7405,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1"
    ],
    "acres_drawn": 67.6,
    "records": [
@@ -7959,23 +7438,12 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1/query?objectIds=22&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic7",
-     "name": "WAHIAWA FRESHWATER STATE RECREATION AREA",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 67.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=7&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195409",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#7",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#22",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#7"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#22"
    ],
    "tests": {
     "T1": {
@@ -7983,11 +7451,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 67.6,
-     "official_acres": 67.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -8015,16 +7480,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-6419",
@@ -8038,8 +7503,7 @@
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16"
    ],
    "acres_drawn": 1.4,
    "records": [
@@ -8057,23 +7521,16 @@
      "id": "sghia44",
      "name": "HULIHEE PALACE",
      "type": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
+     "acres": 1.0,
+     "acres_from": "the key's acres",
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?objectIds=44&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic44",
-     "name": "HULIHEE PALACE",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=44&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#157564",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#44",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#44"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#44"
    ],
    "tests": {
     "T1": {
@@ -8081,11 +7538,8 @@
      "metres": 9.1
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1.4,
-     "official_acres": 1.0,
-     "times": 1.37,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -8113,16 +7567,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 9 m outside the outline (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 9 m outside the outline."
   },
   {
    "ref": "US-6420",
@@ -8136,8 +7590,7 @@
    ],
    "outline_from": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1"
    ],
    "acres_drawn": 4477.2,
    "records": [
@@ -8160,22 +7613,11 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1/query?objectIds=264&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic65",
-     "name": "KIHOLO STATE PARK RESERVE",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 3.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=65&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#65",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#264",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#65"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#264"
    ],
    "tests": {
     "T1": {
@@ -8183,11 +7625,8 @@
      "metres": 79.1
     },
     "T2": {
-     "flag": "WAY OFF",
-     "outline_acres": 4477.2,
-     "official_acres": 3.0,
-     "times": 1492.39,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -8215,16 +7654,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 5,
-   "why": "WAY OFF: The outline is 1492.4 times bigger than the official 3 acres (4,477 ac drawn) (+2 more flags)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 79 m outside the outline."
   },
   {
    "ref": "US-6421",
@@ -8315,7 +7754,6 @@
    "outline_from": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
    "acres_drawn": 294.2,
@@ -8341,16 +7779,6 @@
      "name_field": "name"
     },
     {
-     "id": "sghic33",
-     "name": "LAPAKAHI STATE HISTORICAL PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 293.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=33&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "padus#195364",
      "name": "Lapakahi State Historical Park",
      "type": "State Historical Park State Historic or Cultural Area",
@@ -8364,7 +7792,6 @@
    "record_ids": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#289",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#33",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#33",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195364"
    ],
    "tests": {
@@ -8373,11 +7800,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 294.2,
-     "official_acres": 294.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -8405,16 +7829,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-6423",
@@ -8593,8 +8017,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1"
    ],
    "acres_drawn": 503.8,
    "records": [
@@ -8627,23 +8050,12 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1/query?objectIds=36&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic21",
-     "name": "DIAMOND HEAD STATE MONUMENT",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 503.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=21&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195365",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#21",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#36",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#21"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#36"
    ],
    "tests": {
     "T1": {
@@ -8651,11 +8063,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 503.8,
-     "official_acres": 503.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -8689,16 +8098,16 @@
      "note": "same record id(s) as another park number: for KPC 13"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "DUPLICATE: Another park number uses the same record: US-10913 (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: DUPLICATE: Another park number uses the same record: US-10913."
   },
   {
    "ref": "US-6426",
@@ -8841,8 +8250,7 @@
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16"
    ],
    "acres_drawn": 3.6,
    "records": [
@@ -8865,22 +8273,11 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?objectIds=61&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic61",
-     "name": "LAIE POINT STATE WAYSIDE",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 1.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=61&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#195388",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#61",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#61"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#61"
    ],
    "tests": {
     "T1": {
@@ -8888,11 +8285,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 3.6,
-     "official_acres": 4.0,
-     "times": 1.11,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -8920,16 +8314,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-6429",
@@ -8943,8 +8337,7 @@
    ],
    "outline_from": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1"
    ],
    "acres_drawn": 4.0,
    "records": [
@@ -8967,22 +8360,11 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1/query?objectIds=13&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic3",
-     "name": "PUU O MAHUKA HEIAU STATE HISTORIC SITE",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 4.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=3&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#3",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#13",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#3"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#13"
    ],
    "tests": {
     "T1": {
@@ -8990,11 +8372,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 4.0,
-     "official_acres": 4.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -9022,16 +8401,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-6430",
@@ -9044,8 +8423,7 @@
     -157.839
    ],
    "outline_from": [
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16"
    ],
    "acres_drawn": 8.2,
    "records": [
@@ -9058,21 +8436,10 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?objectIds=66&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic66",
-     "name": "QUEEN EMMA SUMMER PALACE",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 8.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=66&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#66",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#66"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#66"
    ],
    "tests": {
     "T1": {
@@ -9080,11 +8447,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 8.2,
-     "official_acres": 8.0,
-     "times": 1.03,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -9112,16 +8476,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-6431",
@@ -9135,8 +8499,7 @@
    ],
    "outline_from": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16"
    ],
    "acres_drawn": 3.4,
    "records": [
@@ -9159,22 +8522,11 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?objectIds=62&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic62",
-     "name": "ROYAL MAUSOLEUM STATE MONUMENT",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 3.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=62&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#302",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#62",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#62"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#62"
    ],
    "tests": {
     "T1": {
@@ -9182,11 +8534,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 3.4,
-     "official_acres": 3.0,
-     "times": 1.12,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -9214,16 +8563,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-07, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-7690",
@@ -9515,8 +8864,7 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1"
    ],
    "acres_drawn": 106.8,
    "records": [
@@ -9549,23 +8897,12 @@
      "layer": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1",
      "link": "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1/query?objectIds=270&outFields=*&returnGeometry=false&f=html",
      "name_field": "name"
-    },
-    {
-     "id": "sghic20",
-     "name": "HANAUMA BAY STATE UNDERWATER PARK",
-     "type": "Hawaii State Parks (DLNR) (park, state GIS table)",
-     "acres": 96.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0/query?objectIds=20&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#158431",
     "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16#20",
-    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#270",
-    "https://services.arcgis.com/HQ0xoN0EzDPBOEci/ArcGIS/rest/services/State_Park_Boundaries/FeatureServer/0#20"
+    "https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/1#270"
    ],
    "tests": {
     "T1": {
@@ -9573,11 +8910,8 @@
      "metres": 173.9
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 106.8,
-     "official_acres": 99.0,
-     "times": 1.08,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -9605,16 +8939,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-07",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-07, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 174 m outside the outline (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 174 m outside the outline."
   },
   {
    "ref": "US-7694",
