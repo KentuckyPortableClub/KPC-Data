@@ -1,0 +1,2786 @@
+{
+ "tool": "KPC 11 Boundary Change Watcher",
+ "date": "2026-11-15",
+ "areas": [
+  "US-KY",
+  "US-TN",
+  "CA-ON"
+ ],
+ "note": "Only parks whose agency outline changed. Nothing here edits a key, an outline or a 2-fer.",
+ "changed": [],
+ "could_not_check": [
+  {
+   "area": "US-KY",
+   "ref": "US-0019",
+   "name": "Cumberland Gap National Historical Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-KY",
+   "ref": "US-0050",
+   "name": "Mammoth Cave National Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-KY",
+   "ref": "US-0295",
+   "name": "Clarks River National Wildlife Refuge",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-KY",
+   "ref": "US-0538",
+   "name": "Reelfoot National Wildlife Refuge",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-KY",
+   "ref": "US-0608",
+   "name": "Ohio River Islands National Wildlife Refuge",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-KY",
+   "ref": "US-0686",
+   "name": "Big South Fork National Recreation Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-KY",
+   "ref": "US-0703",
+   "name": "Fort Donelson National Battlefield",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-KY",
+   "ref": "US-0724",
+   "name": "Abraham Lincoln Birthplace National Historic Site",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-KY",
+   "ref": "US-10098",
+   "name": "Green River National Wildlife Refuge",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-KY",
+   "ref": "US-10099",
+   "name": "Wolf Creek National Fish Hatchery",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-KY",
+   "ref": "US-10172",
+   "name": "Salato Wildlife Refuge",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: 'Salato Wildlife Refuge': no record with this name on the layer."
+  },
+  {
+   "area": "US-KY",
+   "ref": "US-11181",
+   "name": "Sheltowee Trace National Recreation Trail",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-KY",
+   "ref": "US-3790",
+   "name": "Fort Heiman National Battlefield",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-KY",
+   "ref": "US-3791",
+   "name": "Trail of Tears National Historic Trail",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-KY",
+   "ref": "US-3801",
+   "name": "Clifty Wilderness Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: apps.fs.usda.gov: saved copies only, no live read); it will be tried again next run."
+  },
+  {
+   "area": "US-KY",
+   "ref": "US-3802",
+   "name": "Clyde E Buckley Sanctuary",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: 'Clyde E Buckley Sanctuary': no record with this name on the layer."
+  },
+  {
+   "area": "US-KY",
+   "ref": "US-4484",
+   "name": "Daniel Boone National Forest",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: apps.fs.usda.gov: saved copies only, no live read); it will be tried again next run."
+  },
+  {
+   "area": "US-KY",
+   "ref": "US-4572",
+   "name": "Lewis and Clark National Historic Trail",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-KY",
+   "ref": "US-7708",
+   "name": "Mill Springs Battlefield National Monument",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-KY",
+   "ref": "US-7950",
+   "name": "Camp Nelson National Monument",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-0533",
+   "name": "Chickasaw National Wildlife Refuge",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-0538",
+   "name": "Reelfoot National Wildlife Refuge",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-0686",
+   "name": "Big South Fork National Recreation Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-10621",
+   "name": "McGlothlin-Largen Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-11181",
+   "name": "Sheltowee Trace National Recreation Trail",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: apps.fs.usda.gov: saved copies only, no live read); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-11241",
+   "name": "Oak Ridge Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-11858",
+   "name": "Middle Fork Bottoms State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-11879",
+   "name": "North Chickamauga Creek Gorge State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-12070",
+   "name": "Garrett Lake State Fishing Lake",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-12071",
+   "name": "Whiteville Lake State Fishing Lake",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-12072",
+   "name": "Bedford Lake State Fishing Lake",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-12360",
+   "name": "Wolf River State Forest",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-12361",
+   "name": "Scott's Gulf Wilderness State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-12369",
+   "name": "Lake Graham State Fishing Lake",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-12663",
+   "name": "Ocoee River State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-12713",
+   "name": "Fiery Gizzard State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-12714",
+   "name": "Head of the Crow State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-12715",
+   "name": "Gibson County State Fishing Lake",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-12774",
+   "name": "Erwin National Fish Hatchery",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-13092",
+   "name": "Jarrell Switch Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-13362",
+   "name": "Chickamauga WMA Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-13364",
+   "name": "Cherokee Trail of Tears State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-13501",
+   "name": "Fort Southwest Point State Historical Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-13563",
+   "name": "Bear Hollow Mountain Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-13567",
+   "name": "Clinch River Valley State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2928",
+   "name": "Bicentennial Capitol Mall State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2929",
+   "name": "Big Cypress Tree State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2930",
+   "name": "Big Hill Pond State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2931",
+   "name": "Big Ridge State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2932",
+   "name": "Bledsoe Creek State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2933",
+   "name": "Booker T Washington State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2934",
+   "name": "Burgess Falls State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2935",
+   "name": "Cedars of Lebanon State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2936",
+   "name": "Chickasaw State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2937",
+   "name": "Cordell Hull Birthplace State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2938",
+   "name": "Cove Lake State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2939",
+   "name": "Cumberland Mountain State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2940",
+   "name": "Cummins Falls State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2941",
+   "name": "David Crockett State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2943",
+   "name": "Dunbar Cave State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2944",
+   "name": "Edgar Evins State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2945",
+   "name": "Fall Creek Falls State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2946",
+   "name": "Fort Loudon State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2947",
+   "name": "Fort Pillow State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2948",
+   "name": "Frozen Head State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2949",
+   "name": "Harpeth River State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2950",
+   "name": "Henry Horton State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2951",
+   "name": "Harrison Bay State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2952",
+   "name": "Hiwassee Ocoee State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2953",
+   "name": "Indian Mountain State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2954",
+   "name": "Johnsonville State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2955",
+   "name": "Wilson Cumberland Trail State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2956",
+   "name": "Long Hunter State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2957",
+   "name": "Meeman-Shelby Forest State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2958",
+   "name": "Montgomery Bell State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2959",
+   "name": "Mousetail Landing State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2960",
+   "name": "Nathan Bedford Forrest State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2961",
+   "name": "Natchez Trace State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2962",
+   "name": "Norris Dam State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2963",
+   "name": "Old Stone Fort State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2964",
+   "name": "Panther Creek State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2965",
+   "name": "Paris Landing State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2966",
+   "name": "Pickett State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2967",
+   "name": "Pickwick Landing State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2968",
+   "name": "Pinson Mounds State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2969",
+   "name": "Port Royal State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2970",
+   "name": "Red Clay State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2971",
+   "name": "Reelfoot Lake State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2972",
+   "name": "Roan Mountain State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2973",
+   "name": "Rock Island State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2974",
+   "name": "Rocky Fork State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2975",
+   "name": "Seven Islands Birding State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2976",
+   "name": "Sgt. Alvin C. York State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2978",
+   "name": "Standing Stone State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2979",
+   "name": "Sycamore Shoals State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2980",
+   "name": "Tims Ford State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2981",
+   "name": "T.O. Fuller State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-2982",
+   "name": "Warriors' Path State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3791",
+   "name": "Trail of Tears National Historic Trail",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: apps.fs.usda.gov: saved copies only, no live read); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3792",
+   "name": "Land Between the Lakes National Recreation Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: apps.fs.usda.gov: saved copies only, no live read); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3922",
+   "name": "Radnor Lake State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3924",
+   "name": "Cedars of Lebanon State Forest",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3925",
+   "name": "Vesta Cedar Glade State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3926",
+   "name": "Bean Switch Refuge Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3927",
+   "name": "Bogota Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3928",
+   "name": "Bridgestone/firestone Centennial Wilderness Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3929",
+   "name": "Buffalo Springs Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3930",
+   "name": "Camden Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3931",
+   "name": "Catoosa Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3932",
+   "name": "Cedar Hill Swamp Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3933",
+   "name": "Cheatham Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3934",
+   "name": "Chickasaw State Wildlife Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3935",
+   "name": "Chuck Swan Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3936",
+   "name": "Cowan Marsh State Wildlife Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3937",
+   "name": "Eagle Lake Refuge Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3938",
+   "name": "Ernest Rice Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3939",
+   "name": "Forks Of The River Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3940",
+   "name": "Gooch Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3942",
+   "name": "Haley-jaqueth Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3943",
+   "name": "Haynes Bottom Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3944",
+   "name": "Hickory Flats Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3945",
+   "name": "Hop-in Wildlife Refuge",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3946",
+   "name": "Horns Bluff Refuge Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3947",
+   "name": "Jackson Swamp Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3948",
+   "name": "John Tully Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3951",
+   "name": "Laurel Hill Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3952",
+   "name": "M.T.S.U. Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3953",
+   "name": "Maness Swamp State Wildlife Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3954",
+   "name": "Mingo Swamp Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3955",
+   "name": "Moss Island Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3956",
+   "name": "Murfree Springs State Wildlife Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3957",
+   "name": "Natchez Trace State Forest Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3958",
+   "name": "North Chickamauga Creek Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3959",
+   "name": "Obion River Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3960",
+   "name": "Reelfoot State Wildlife Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3961",
+   "name": "South Fork Waterfowl State Wildlife Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3962",
+   "name": "The Boils State Wildlife Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3963",
+   "name": "Three Rivers Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3964",
+   "name": "Tumbleweed Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3965",
+   "name": "White Lake Wildlife Refuge",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3966",
+   "name": "White Oak Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3967",
+   "name": "Whites Mill Wildlife Refuge",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3968",
+   "name": "Williamsport Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3969",
+   "name": "Wolf River Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3970",
+   "name": "Yanahli Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-3971",
+   "name": "Prentice Cooper Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-4556",
+   "name": "Appalachian Trail National Scenic Trail",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: apps.fs.usda.gov: saved copies only, no live read); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-4577",
+   "name": "Overmountain Victory National Historic Trail",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: apps.fs.usda.gov: saved copies only, no live read); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-5490",
+   "name": "Bledsoe State Forest",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-5491",
+   "name": "Chickasaw State Forest",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-5492",
+   "name": "Chuck Swan State Forest",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-5493",
+   "name": "Franklin-Marion State Forest",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-5494",
+   "name": "John Tully State Forest",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-5495",
+   "name": "Lewis State Forest",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-5496",
+   "name": "Lone Mountain State Forest",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-5497",
+   "name": "Martha Sundquist State Forest",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-5498",
+   "name": "Pickett State Forest",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-5499",
+   "name": "Prentice Cooper State Forest",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-5500",
+   "name": "Scott State Forest",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-5501",
+   "name": "Standing Stone State Forest",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-5502",
+   "name": "Stewart State Forest",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6234",
+   "name": "Bays Mountain State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6235",
+   "name": "Beaman Park State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6236",
+   "name": "Carroll Cabin Barrens State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6238",
+   "name": "Chimneys State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6241",
+   "name": "Devil's Backbone State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6242",
+   "name": "Elsie Quarterman Cedar Glade State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6244",
+   "name": "Flat Rock Cedar Glade State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6245",
+   "name": "Ghost River State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6246",
+   "name": "Hampton Creek Cove State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6248",
+   "name": "Honey Creek State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6249",
+   "name": "House Mountain State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6250",
+   "name": "John and Hester Lane Cedar Glade State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6251",
+   "name": "John Noel at Bon Aqua State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6254",
+   "name": "Lucius E. Burch, Jr. State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6255",
+   "name": "May Prairie State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6256",
+   "name": "Mount View Glade State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6258",
+   "name": "Old Forest State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6262",
+   "name": "Powell River State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6263",
+   "name": "Riverwoods State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6264",
+   "name": "Roundtop Mountain State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6265",
+   "name": "Rugby State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6267",
+   "name": "Sequatchie Cave State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6268",
+   "name": "Short Springs State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6269",
+   "name": "Stillhouse Hollow Falls State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6271",
+   "name": "Sunk Lake State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6272",
+   "name": "Twin Arches State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6275",
+   "name": "Walls of Jericho State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6276",
+   "name": "Walterhill Floodplain State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6277",
+   "name": "Washmorgan Hollow State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6278",
+   "name": "Watauga River Bluffs State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6279",
+   "name": "William B. Clark State Natural Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7566",
+   "name": "Arnold Hollow Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7567",
+   "name": "Bark Camp Barrens Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7568",
+   "name": "Barkley Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7569",
+   "name": "Beason Creek Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7570",
+   "name": "Beaverdam Creek Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7571",
+   "name": "Beech River Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7572",
+   "name": "Big Sandy Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7573",
+   "name": "Black Bayou Refuge Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7574",
+   "name": "Blackburn Fork Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7575",
+   "name": "Browntown Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7576",
+   "name": "Chambers Creek Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7577",
+   "name": "Charlotte Ann Finnel Neal Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7578",
+   "name": "Cheatham Lake Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7579",
+   "name": "Colonel Forrest V Durand Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7580",
+   "name": "Cordell Hull Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7581",
+   "name": "Cordell Hull Waterfowl Refuge Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7582",
+   "name": "Cove Creek Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7583",
+   "name": "Cypress Pond Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7585",
+   "name": "Eagle Creek Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7587",
+   "name": "Flintville Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7588",
+   "name": "Foothills Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7589",
+   "name": "Fort Ridge Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7590",
+   "name": "Fourth Fractional Township Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7591",
+   "name": "Grays Creek Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7592",
+   "name": "Happy Hollow Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7593",
+   "name": "Harmon Creek Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7594",
+   "name": "Harp Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7595",
+   "name": "Harts Mill Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7596",
+   "name": "Headwaters Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7597",
+   "name": "Hick Hill Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7598",
+   "name": "Hiwassee Refuge Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7599",
+   "name": "Keyes-Harrison Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7600",
+   "name": "Kyles Ford Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7601",
+   "name": "Lick Creek Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7602",
+   "name": "Lick Creek Bottoms Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7603",
+   "name": "Maple Springs Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7605",
+   "name": "Mt. Roosevelt Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7606",
+   "name": "New Hope Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7607",
+   "name": "Nolichucky Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7608",
+   "name": "Normandy Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7609",
+   "name": "North Cumberland Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7610",
+   "name": "Old Hickory Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7611",
+   "name": "Owl Hollow Mill Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7612",
+   "name": "Paint Rock Refuge Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7613",
+   "name": "Parker Branch Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7614",
+   "name": "Pea Ridge Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7615",
+   "name": "Percy Priest Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7616",
+   "name": "Perry Switch Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7617",
+   "name": "Presidents Island Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7618",
+   "name": "Rankin Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7619",
+   "name": "Shelton Ferry Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7620",
+   "name": "Skinner Mountain Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7621",
+   "name": "Spring Creek Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7622",
+   "name": "Tellico Lake Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7623",
+   "name": "Thorny Cypress Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7624",
+   "name": "Tie Camp Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7625",
+   "name": "Tigrett Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7626",
+   "name": "Tull Bottom Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7627",
+   "name": "West Sandy Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7628",
+   "name": "Yuchi Refuge Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-7880",
+   "name": "Luper Mountain Wildlife Management Area",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-8313",
+   "name": "Mountains to Sea State Trail",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: apps.fs.usda.gov: saved copies only, no live read); it will be tried again next run."
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-9718",
+   "name": "Savage Gulf State Park",
+   "verdict": "SOURCE DOWN",
+   "why": "The agency's server did not give the outline (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); it will be tried again next run."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-0177",
+   "name": "Chapleau Crown Game Preserve",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'Hard look~6' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1043",
+   "name": "Mount Nemo Conservation Reserve",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CH Conser' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1046",
+   "name": "Rattlesnake Point Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CH Conser' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1297",
+   "name": "Ball's Falls Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1299",
+   "name": "Bannockburn Conservation Reserve",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ABCA Ausa' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1301",
+   "name": "Barron Canyon National Geologic Trail",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'trl1301' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1392",
+   "name": "Elora Gorge Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1427",
+   "name": "Greenwood Conservation Reserve",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-TRCA Toro' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1440",
+   "name": "Hilton Falls Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CH Conser' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1519",
+   "name": "Milne Dam Conservation Park",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-TRCA Toro' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1528",
+   "name": "Mountsberg Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CH Conser' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1541",
+   "name": "Crawford Lake Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CH Conser' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1599",
+   "name": "South Point Trail (Rondeau) Provincial Park",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'trl1599' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1638",
+   "name": "W.A. Taylor Conservation Reserve",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-RVCA Ride' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1646",
+   "name": "Stoney Island Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1658",
+   "name": "Sunnidale Recreation Park",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'Hard look~8' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1660",
+   "name": "Edenvale Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'Hard look~9' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1661",
+   "name": "Fort Willow Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'Hard look~9' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1678",
+   "name": "New Lowell Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'Hard look~9' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-1689",
+   "name": "Warkworth Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-LTC Lower' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-4861",
+   "name": "Butler's Barracks National Historic Site",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'Hard look~2' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-4865",
+   "name": "Fort Malden National Historic Site",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'Hard look~2' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-4873",
+   "name": "Laurier House National Historic Site",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'Hard look~2' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-4887",
+   "name": "Sir John Johnson House National Historic Site",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'Hard look~2' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-4889",
+   "name": "Trent - Severn Waterway National Historic Site",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'Parks Canada' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-4890",
+   "name": "Woodside National Historic Site",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'Hard look~2' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5086",
+   "name": "Seymour Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-LTC Lower' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5088",
+   "name": "King's Mill Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-LTC Lower' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5089",
+   "name": "Sager Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-LTC Lower' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5091",
+   "name": "Birdsall Wildlife Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ORCA Oton' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5092",
+   "name": "Bruce's Caves Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5102",
+   "name": "Harold Town Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ORCA Oton' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5104",
+   "name": "Hope Mill Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ORCA Oton' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5105",
+   "name": "Kelso Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CH Conser' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5111",
+   "name": "Oak Ridges Corridor Conservation Reserve",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-TRCA Toro' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5143",
+   "name": "Marshlands Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CRCA Cata' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5291",
+   "name": "Ken Reid Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-KRCA Kawa' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5314",
+   "name": "Tottenham Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'Hard look~9' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5317",
+   "name": "Rockwood Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5318",
+   "name": "Guelph Lake Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5319",
+   "name": "Belwood Lake Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5368",
+   "name": "Meadowvale Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CVC Credi' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5508",
+   "name": "Robert Edmondson Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CH Conser' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5536",
+   "name": "Nassagaweya Canyon Trail Recreation Site",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'trl5536' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5541",
+   "name": "E.M. Warwick Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-LTVCA Low' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5543",
+   "name": "Morris Island Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-MVC Missi' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5561",
+   "name": "Cold Creek Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-TRCA Toro' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5564",
+   "name": "Area 8 Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CH Conser' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5565",
+   "name": "Dofasco 2000 Trail Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'trl5565' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5571",
+   "name": "Binbrook Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5575",
+   "name": "Jordan Harbour Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5576",
+   "name": "Virgil Dams and Reservoirs Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5577",
+   "name": "Two Mile Creek Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5578",
+   "name": "Woodend Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5580",
+   "name": "Hedley Forest Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5582",
+   "name": "Canborough Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5583",
+   "name": "Port Davidson Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5585",
+   "name": "Chippawa Creek Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5586",
+   "name": "Gainsborough Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5587",
+   "name": "Comfort Maple Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5588",
+   "name": "St. Johns Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5589",
+   "name": "E.C. Brown Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5591",
+   "name": "Stevensville Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5595",
+   "name": "Gord Harry Trail Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5596",
+   "name": "Long Beach Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-NPCA Niag' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5597",
+   "name": "Brant Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5598",
+   "name": "Byng Island Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5599",
+   "name": "Conestogo Lake Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5600",
+   "name": "Elora Quarry Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5601",
+   "name": "Laurel Creek Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5602",
+   "name": "Luther Marsh Wildlife Management Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5603",
+   "name": "Pinehurst Lake Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5604",
+   "name": "Shade's Mills Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GRCA Gran' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5627",
+   "name": "Inglis Falls Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5628",
+   "name": "Bruce Trail National Recreation Trail",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'trl5628' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5630",
+   "name": "Carr's Marsh Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GANA Gana' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5632",
+   "name": "Cobourg Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GANA Gana' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5637",
+   "name": "Goodrich-Loomis Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-LTC Lower' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5638",
+   "name": "Ganaraska Forest Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GANA Gana' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5639",
+   "name": "Sawer Creek Wildlife Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ORCA Oton' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5641",
+   "name": "Sylvan Glen Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'Hard look~14' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5643",
+   "name": "Charles Sauriol Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-TRCA Toro' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5645",
+   "name": "Ball's Mill Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'Hard look~14' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5647",
+   "name": "Rice Lake Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GANA Gana' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5648",
+   "name": "Garden Hill Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GANA Gana' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5649",
+   "name": "Richardson's Lookout Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GANA Gana' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5650",
+   "name": "Thurne Parks Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'Hard look~14' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5651",
+   "name": "Hibou Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5652",
+   "name": "Port Hope Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GANA Gana' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5653",
+   "name": "Pottawatomi and Jones Falls Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5654",
+   "name": "Old Baldy Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5655",
+   "name": "Indian Falls Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5656",
+   "name": "Eugenia Falls Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5657",
+   "name": "Epping-John Muir Lookout Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5658",
+   "name": "Spirit Rock & McNeill Estate Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5660",
+   "name": "Arran Lake Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5661",
+   "name": "Feversham Gorge – Madeleine Graydon Memorial Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5665",
+   "name": "The Glen Management Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5669",
+   "name": "Holiday Beach Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ERCA Esse' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5670",
+   "name": "Sunnybrook Park Wilderness Park",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-TRCA Toro' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5895",
+   "name": "Serena Gundy Park Wilderness Park",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-TRCA Toro' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5943",
+   "name": "Cheltenham Badlands Natural Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-CVC Credi' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5947",
+   "name": "Devonwood Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ERCA Esse' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5957",
+   "name": "Portland Bay Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-RVCA Ride' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5959",
+   "name": "West Rocks Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5982",
+   "name": "Brucedale Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5983",
+   "name": "Denny's Dam Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5984",
+   "name": "Durham Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5985",
+   "name": "McBeath Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5986",
+   "name": "Saugeen Bluffs Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5987",
+   "name": "Schmidt Lake Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5989",
+   "name": "Sulpher Spring Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-5990",
+   "name": "Varney Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6003",
+   "name": "Great Lakes Waterfront Trail Recreation Site",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'trl6003' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6004",
+   "name": "Christie Beach Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6005",
+   "name": "Ainslie Wood Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6006",
+   "name": "Clendenan Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6007",
+   "name": "Colpoy's Lookout Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6008",
+   "name": "Kemble Mountain Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-GSCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6009",
+   "name": "Crediton Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ABCA Ausa' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6010",
+   "name": "Clinton Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ABCA Ausa' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6011",
+   "name": "Lucan Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ABCA Ausa' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6013",
+   "name": "Parkhill Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ABCA Ausa' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6014",
+   "name": "Rock Glen Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ABCA Ausa' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6015",
+   "name": "Zurich Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ABCA Ausa' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6091",
+   "name": "Lang Mill Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ORCA Oton' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6092",
+   "name": "Young's Point Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ORCA Oton' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6139",
+   "name": "Fingal Wildlife Management Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'Hard look~16' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6208",
+   "name": "Ausable River Cut Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ABCA Ausa' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6212",
+   "name": "Big Bend Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-LTVCA Low' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6352",
+   "name": "Osprey Wetlands Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6358",
+   "name": "Whitchurch Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-LSRCA Lak' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6360",
+   "name": "Hardwood Hill Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6362",
+   "name": "Cedar Beach Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ERCA Esse' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6363",
+   "name": "Kopegaron Woods Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ERCA Esse' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6364",
+   "name": "Tremblay Beach Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ERCA Esse' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6365",
+   "name": "Ruscom Shores Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ERCA Esse' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6368",
+   "name": "Bell's Lake Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-SVCA Grey' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6370",
+   "name": "John R. Park Homestead Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ERCA Esse' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6371",
+   "name": "Cedar Creek Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'ON-ERCA Esse' in layers.json or the tool's list."
+  },
+  {
+   "area": "CA-ON",
+   "ref": "CA-6617",
+   "name": "H. R. Frink Conservation Area",
+   "verdict": "CAN'T TELL",
+   "why": "This park could not be checked: no layer address for 'Hard look~17' in layers.json or the tool's list."
+  }
+ ],
+ "layers_moved": []
+}
