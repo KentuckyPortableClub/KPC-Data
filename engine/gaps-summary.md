@@ -4,7 +4,7 @@ Built 2026-11-15 from the club files (read-only).
 
 | area | kind | parks | missing | solved since last night |
 |---|---|---|---|---|
-| US-KY | outline | 193 | 0 | 186 |
+| US-KY | outline | 193 | 0 | 0 |
 | US-KY | map | 193 | 43 | 0 |
 | US-KY | page | 193 | 0 | 0 |
 | US-KY | parking | 193 | 8 | 0 |

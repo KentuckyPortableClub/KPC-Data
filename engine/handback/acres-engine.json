@@ -273,6 +273,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/4; read 2026-11-05"
   },
   {
+   "Park number (if matched)": "CA-6564",
+   "Park name (as the agency writes it)": "Blanche Provincial Park",
+   "Size": 63,
+   "Unit": "acres",
+   "Agency": "NS_Lands_Proposed_or_Pending_Protection",
+   "Source page": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?where=OBJECTID%3D104&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0; read 2026-11-02"
+  },
+  {
    "Park number (if matched)": "CA-6251",
    "Park name (as the agency writes it)": "GRAND PARADE",
    "Size": 2,
@@ -433,15 +442,6 @@
    "Agency": "Property Boundaries",
    "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2051&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "CA-6564",
-   "Park name (as the agency writes it)": "Blanche Provincial Park",
-   "Size": 63,
-   "Unit": "acres",
-   "Agency": "NS_Lands_Proposed_or_Pending_Protection",
-   "Source page": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?where=OBJECTID%3D104&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0; read 2026-11-02"
   },
   {
    "Park number (if matched)": "US-8143",
@@ -1009,15 +1009,6 @@
    "Agency": "Natural Area Parcel Ownership",
    "Source page": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2/query?where=OBJECTID%3D23788&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2; read 2026-11-04"
-  },
-  {
-   "Park number (if matched)": "US-4254",
-   "Park name (as the agency writes it)": "Chimney Rock Oak Savanna",
-   "Size": 30,
-   "Unit": "acres",
-   "Agency": "Natural Area Parcel Ownership",
-   "Source page": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2/query?where=OBJECTID%3D23733&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2; read 2026-11-11"
   },
   {
    "Park number (if matched)": "US-4255",
@@ -2378,7 +2369,7 @@
    "Agency/area": "Natural Area Parcel Ownership",
    "Kind": "GIS layer",
    "Example URL": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2",
-   "# times used": 7,
+   "# times used": 6,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
