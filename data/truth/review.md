@@ -1,6 +1,6 @@
 # Park truth checker: review (review lists only; nothing here changes a key or a card)
 
-Updated 2026-11-10. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + source agreement; weakest first in checklist-<area>.csv.
+Updated 2026-11-15. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + source agreement; weakest first in checklist-<area>.csv.
 
 | area | parks | with outline | agree | OFF (>15%) | unsure | no size | ours unknown | handover hints | retired | weak (≤4) |
 |---|---|---|---|---|---|---|---|---|---|---|
