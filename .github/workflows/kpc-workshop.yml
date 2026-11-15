@@ -44,8 +44,15 @@ on:
 permissions:
   contents: write
   actions: write
+# Nov 14: Kentucky test runs (test=yes) are named apart, so the 'is a live run waiting?' checks below (and camp-weekly's) can skip them.
+run-name: ${{ inputs.test == 'yes' && format('KPC bot workshop - Kentucky test ({0})', inputs.bots) || github.workflow }}
 concurrency:
-  group: kpc-workshop-${{ inputs.bots || 'weekly' }}   # Oct 28: one queue per bot set, so a Kentucky test of one bot is not cancelled by another bot's long-run chain (they read different areas)
+  # Nov 14: ONE live group for the Sunday run, its watchdog restart, camp-weekly's daily campinfo run, chain follow-ups and other
+  # by-hand runs, so two never read agency hosts at the same time. GitHub keeps one running + ONE waiting run per group (a newer
+  # waiting run silently replaces an older one), so every dispatch into this group first checks that no live run is waiting.
+  # Oct 28 reason kept for by-hand Kentucky tests (test=yes): one queue per bot set, so a Kentucky test of one bot is not
+  # cancelled by another bot's long-run chain (they read different areas).
+  group: ${{ inputs.test == 'yes' && format('kpc-workshop-{0}', inputs.bots) || 'kpc-workshop-live' }}
   cancel-in-progress: false
 jobs:
   workshop:
@@ -140,16 +147,18 @@ jobs:
         id: kept_green_3
         continue-on-error: true
         run: |
+          kpc_waiting() { kpc_w=0; for kpc_st in queued pending waiting requested; do kpc_n=$(gh run list -R ${{ github.repository }} --workflow kpc-workshop.yml --status "$kpc_st" --limit 20 --json databaseId,displayTitle --jq "[.[] | select(.databaseId != ${{ github.run_id }}) | select(.displayTitle | startswith(\"KPC bot workshop - Kentucky test\") | not)] | length") || { echo "::error title=Next run::could not ask GitHub whether a live workshop run is waiting: the chain stops here (fail closed)"; echo "Next run - could not ask GitHub whether a live workshop run is waiting: the chain stops here (fail closed)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; return 0; }; kpc_w=$((kpc_w + ${kpc_n:-0})); done; if [ "$kpc_w" -gt 0 ]; then echo "::warning title=Next run::another live workshop run is already waiting (a newer one would silently replace it): the chain stops here; start it again by hand after that run"; echo "Next run - another live workshop run is already waiting: the chain stops here; start it again by hand after that run" >> "$RUNNER_TEMP/kpc-hidden.txt"; return 0; fi; return 1; }   # Nov 14: 0 = do NOT start (one waiting run per group)
           echo "::notice title=Workshop::Kentucky gates PASSED: starting the whole queue (chain ${{ inputs.chain }})"
-          gh workflow run kpc-workshop.yml -R ${{ github.repository }} -f bots="${{ inputs.bots }}" -f areas= -f minutes=300 -f chain=${{ inputs.chain }} -f browser=${{ inputs.browser || 'yes' }} || { kpc_rc=$?; echo "::error title=Next run::could not start the next run; the chain stops here (exit $kpc_rc)"; echo "Next run - could not start the next run; the chain stops here (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          kpc_waiting || gh workflow run kpc-workshop.yml -R ${{ github.repository }} -f bots="${{ inputs.bots }}" -f areas= -f minutes=300 -f chain=${{ inputs.chain }} -f browser=${{ inputs.browser || 'yes' }} || { kpc_rc=$?; echo "::error title=Next run::could not start the next run; the chain stops here (exit $kpc_rc)"; echo "Next run - could not start the next run; the chain stops here (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Areas remain, so the next job starts itself
         if: ${{ inputs.areas == '' && env.LEFT != '0' && env.LEFT != '' && inputs.chain != '0' && inputs.chain != '' }}
         id: kept_green_4
         continue-on-error: true
         run: |
           C=$(( ${{ inputs.chain }} - 1 ))
+          kpc_waiting() { kpc_w=0; for kpc_st in queued pending waiting requested; do kpc_n=$(gh run list -R ${{ github.repository }} --workflow kpc-workshop.yml --status "$kpc_st" --limit 20 --json databaseId,displayTitle --jq "[.[] | select(.databaseId != ${{ github.run_id }}) | select(.displayTitle | startswith(\"KPC bot workshop - Kentucky test\") | not)] | length") || { echo "::error title=Next run::could not ask GitHub whether a live workshop run is waiting: the chain stops here (fail closed)"; echo "Next run - could not ask GitHub whether a live workshop run is waiting: the chain stops here (fail closed)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; return 0; }; kpc_w=$((kpc_w + ${kpc_n:-0})); done; if [ "$kpc_w" -gt 0 ]; then echo "::warning title=Next run::another live workshop run is already waiting (a newer one would silently replace it): the chain stops here; start it again by hand after that run"; echo "Next run - another live workshop run is already waiting: the chain stops here; start it again by hand after that run" >> "$RUNNER_TEMP/kpc-hidden.txt"; return 0; fi; return 1; }   # Nov 14: 0 = do NOT start (one waiting run per group)
           echo "::notice title=Workshop::$LEFT areas left: the next job starts itself (then $C more may follow)"
-          gh workflow run kpc-workshop.yml -R ${{ github.repository }} -f bots="${{ inputs.bots }}" -f areas= -f minutes=300 -f chain=$C -f browser=${{ inputs.browser || 'yes' }} || { kpc_rc=$?; echo "::error title=Next run::could not start the next run; the chain stops here (exit $kpc_rc)"; echo "Next run - could not start the next run; the chain stops here (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          kpc_waiting || gh workflow run kpc-workshop.yml -R ${{ github.repository }} -f bots="${{ inputs.bots }}" -f areas= -f minutes=300 -f chain=$C -f browser=${{ inputs.browser || 'yes' }} || { kpc_rc=$?; echo "::error title=Next run::could not start the next run; the chain stops here (exit $kpc_rc)"; echo "Next run - could not start the next run; the chain stops here (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:
