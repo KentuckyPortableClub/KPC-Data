@@ -342,6 +342,7 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-15): docs data/docs/US-IN.json held: F-D3 7 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/big-oaks/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-11, 4 days): docs data/docs/US-KS.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/flint-hills/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-11, 4 days): docs data/docs/US-LA.json held: F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/catahoula/visit-us/rules-policies
+- FROM WAITING ROOM (held since 2026-11-15): docs data/docs/US-MD.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/pisc/planyourvisit/maps.htm
 - FROM WAITING ROOM (held since 2026-10-31, 15 days): docs data/docs/US-ME.json held: F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml · F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml
 - FROM WAITING ROOM (held since 2026-11-15): docs data/docs/US-MI.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s
 - FROM WAITING ROOM (held since 2026-11-11, 4 days): docs data/docs/US-MN.json held: F-D3 5 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/minnesota-valley-wetland-management-distric
@@ -429,12 +430,8 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-10, 5 days): truth data/truth/US-WA.json held: F-R2 5 OFF rows share the size 564.0 ac · F-R3 157 of 188 sized parks are OFF (over half: a reading problem?)
 - FROM WAITING ROOM (held since 2026-11-13, 2 days): key data/world-key/BS.json held: F-O1 outlines 32 -> 29 (more than 1% lost)
 - FROM WAITING ROOM (held since 2026-11-11, 4 days): key data/world-key/FR.json held: F-O1 outlines 13877 -> 12882 (more than 1% lost)
-- FROM WAITING ROOM (held since 2026-11-11, 4 days): key data/world-key/JP.json held: F-4 unsure: PAD-US did not answer the shape test (HTTPError)
-- FROM WAITING ROOM (held since 2026-11-15): key data/world-key/KE.json held: F-4 unsure: PAD-US did not answer the shape test (HTTPError)
-- FROM WAITING ROOM (held since 2026-11-15): key data/world-key/LK.json held: F-4 unsure: PAD-US did not answer the shape test (HTTPError)
-- FROM WAITING ROOM (held since 2026-11-15): key data/world-key/LR.json held: F-4 unsure: PAD-US did not answer the shape test (HTTPError)
+- FROM WAITING ROOM (held since 2026-11-11, 4 days): key data/world-key/JP.json held: F-O2 101 of 185 outlines carry a layer name that shares no word with the park (55%; live 97/185): outlines swapped to other parks?
 - FROM WAITING ROOM (held since 2026-11-11, 4 days): key data/world-key/LU.json held: F-O1 outlines 49 -> 46 (more than 1% lost)
-- FROM WAITING ROOM (held since 2026-11-15): key data/world-key/NI.json held: F-4 unsure: PAD-US did not answer the shape test (HTTPError)
 - FROM WAITING ROOM (held since 2026-11-07, 8 days): key data/world-key/ZA.json held: F-O2 4 of 75 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?
 - FROM WAITING ROOM (held since 2026-11-08, 7 days): wwff data/wwff/CTFF.json held: F-W2 rows 702 -> 280 (under 80% of the saved list)
-- FROM WAITING ROOM HEALTH (2026-11-15): RED: 385 files waiting over 3 days in data/waiting/in/ (e.g. US-SD.json)
+- FROM WAITING ROOM HEALTH (2026-11-15): RED: 396 files waiting over 3 days in data/waiting/in/ (e.g. US-SD.json)
