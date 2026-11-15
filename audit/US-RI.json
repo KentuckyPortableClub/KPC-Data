@@ -1,6 +1,6 @@
 {
  "area": "US-RI",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -551,7 +551,6 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 2.9,
@@ -567,16 +566,6 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgrib678",
-     "name": "Gull Cove Fishing Area",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 2.9,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=678&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "sgric713",
      "name": "Gull Cove Fishing Area",
      "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
@@ -589,7 +578,6 @@
    ],
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#713",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#678",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#713"
    ],
    "tests": {
@@ -598,11 +586,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 2.9,
-     "official_acres": 2.9,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -630,15 +615,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-10542",
@@ -652,7 +638,6 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 26.2,
@@ -668,16 +653,6 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgrib648",
-     "name": "Camp Cronin",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 26.2,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=648&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "sgric680",
      "name": "Camp Cronin",
      "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
@@ -690,7 +665,6 @@
    ],
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#680",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#648",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#680"
    ],
    "tests": {
@@ -699,11 +673,8 @@
      "metres": 66.2
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 26.2,
-     "official_acres": 26.2,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -731,15 +702,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 66 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 66 m outside the outline."
   },
   {
    "ref": "US-10543",
@@ -753,7 +725,6 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 1.2,
@@ -769,16 +740,6 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgrib825",
-     "name": "Patriot Park",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 1.2,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=825&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "sgric869",
      "name": "Patriot Park",
      "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
@@ -791,7 +752,6 @@
    ],
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#869",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#825",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#869"
    ],
    "tests": {
@@ -800,11 +760,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1.2,
-     "official_acres": 1.2,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -832,15 +789,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-10544",
@@ -1122,21 +1080,10 @@
     -71.5639
    ],
    "outline_from": [
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 1.2,
    "records": [
-    {
-     "id": "sgrib617",
-     "name": "Barbers Pond",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 1.2,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=617&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
     {
      "id": "sgric649",
      "name": "Barbers Pond",
@@ -1149,7 +1096,6 @@
     }
    ],
    "record_ids": [
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#617",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#649"
    ],
    "tests": {
@@ -1158,11 +1104,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1.2,
-     "official_acres": 1.2,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -1191,15 +1134,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 3,
-   "why": "CONFLICT: The record is the whole lake but the park is a recreation area on it."
+   "why": "SOURCE DOWN: CONFLICT: The record is the whole lake but the park is a recreation area on it."
   },
   {
    "ref": "US-2868",
@@ -1214,7 +1158,6 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 195.2,
@@ -1270,36 +1213,6 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgrib1026",
-     "name": "Beavertail State Park",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 162.4,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=1026&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib1024",
-     "name": "Beavertail State Park - Town of Jamestown",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 18.7,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=1024&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib1049",
-     "name": "Beavertail State Park",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 6.4,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=1049&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "sgric37986",
      "name": "Beavertail State Park",
      "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
@@ -1336,9 +1249,6 @@
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#37986",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#37984",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#47339",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#1026",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#1024",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#1049",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#37986",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#37984",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#47339"
@@ -1349,11 +1259,8 @@
      "metres": 300.5
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 195.2,
-     "official_acres": 195.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -1381,15 +1288,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 300 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 300 m outside the outline."
   },
   {
    "ref": "US-2869",
@@ -1612,7 +1520,6 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 162.4,
@@ -1638,16 +1545,6 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgrib832",
-     "name": "Brenton Point",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 62.4,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=832&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "sgric876",
      "name": "Brenton Point",
      "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
@@ -1661,7 +1558,6 @@
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#157804",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#876",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#832",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#876"
    ],
    "tests": {
@@ -1670,11 +1566,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 162.4,
-     "official_acres": 161.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -1702,17 +1595,17 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
     "record 157804: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2871",
@@ -1727,7 +1620,6 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 2242.0,
@@ -1783,26 +1675,6 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgrib131",
-     "name": "Burlingame State Park",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 1303.1,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=131&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib22",
-     "name": "Burlingame State Park - Sanctuary Road",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 31.5,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=22&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "sgric135",
      "name": "Burlingame State Park",
      "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
@@ -1829,8 +1701,6 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57159",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#135",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#24",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#131",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#22",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#135",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#24"
    ],
@@ -1840,11 +1710,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 2242.0,
-     "official_acres": 2220.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -1872,15 +1739,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2872",
@@ -1894,7 +1762,6 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
@@ -1918,26 +1785,6 @@
      "acres_from": "acres field",
      "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
      "link": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0/query?objectIds=762&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib105",
-     "name": "Colt State Park",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 442.7,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=105&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib723",
-     "name": "Colt State Park",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 15.8,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=723&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     },
     {
@@ -1974,8 +1821,6 @@
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#109",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#762",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#105",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#723",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#109",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#762",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57161"
@@ -1986,11 +1831,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 462.6,
-     "official_acres": 458.5,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -2010,11 +1852,11 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-71.2819782807599 41.6802703873126]; 3 hole(s) under 100 m2",
+     "note": "Ring Self-intersection[-71.2819782807599 41.6802703873126]; 2 hole(s) under 100 m2",
      "repair": {
       "ok": true,
       "area_change_pct": 0.0,
-      "holes": 3,
+      "holes": 2,
       "pieces": 0
      }
     },
@@ -2029,15 +1871,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 2,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-71.2819782807599 41.6802703873126]; 3 hole(s) under 100 m2 (+1 more flag)."
+   "why": "SOURCE DOWN: SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-71.2819782807599 41.6802703873126]; 2 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-2873",
@@ -2051,7 +1894,6 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 67.3,
@@ -2067,16 +1909,6 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgrib269",
-     "name": "Fishermans Memorial State Park",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 67.2,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=269&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "sgric275",
      "name": "Fishermans Memorial State Park",
      "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
@@ -2089,7 +1921,6 @@
    ],
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#275",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#269",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#275"
    ],
    "tests": {
@@ -2098,11 +1929,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 67.3,
-     "official_acres": 67.2,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -2130,15 +1958,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2874",
@@ -2228,7 +2057,6 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 61.0,
@@ -2251,26 +2079,6 @@
      "acres_from": "acres field",
      "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
      "link": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0/query?objectIds=566&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib540",
-     "name": "Fort Wetherill State Park",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 54.5,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=540&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib539",
-     "name": "Fort Wetherill State Park",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 6.5,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=539&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     },
     {
@@ -2297,8 +2105,6 @@
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#567",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#566",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#540",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#539",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#567",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#566"
    ],
@@ -2308,11 +2114,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 61.0,
-     "official_acres": 61.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -2340,15 +2143,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2876",
@@ -2362,7 +2166,6 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 478.3,
@@ -2378,16 +2181,6 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgrib90",
-     "name": "Goddard Park",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 478.4,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=90&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "sgric94",
      "name": "Goddard Park",
      "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
@@ -2400,7 +2193,6 @@
    ],
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#94",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#90",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#94"
    ],
    "tests": {
@@ -2409,11 +2201,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 478.3,
-     "official_acres": 478.4,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -2441,15 +2230,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2877",
@@ -2463,7 +2253,6 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 80.7,
@@ -2486,26 +2275,6 @@
      "acres_from": "acres field",
      "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
      "link": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0/query?objectIds=13547&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib900",
-     "name": "Haines Memorial State Park",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 72.7,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=900&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib954",
-     "name": "Haines Memorial State Park",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 8.0,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=954&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     },
     {
@@ -2532,8 +2301,6 @@
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#4252",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#13547",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#900",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#954",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#4252",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#13547"
    ],
@@ -2543,11 +2310,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 80.7,
-     "official_acres": 80.7,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -2575,15 +2339,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-2878",
@@ -2597,7 +2362,6 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
@@ -2621,26 +2385,6 @@
      "acres_from": "acres field",
      "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
      "link": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0/query?objectIds=883&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib50",
-     "name": "Lincoln Woods State Park",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 598.0,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=50&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib835",
-     "name": "Lincoln Woods State Park",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 23.6,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=835&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     },
     {
@@ -2697,8 +2441,6 @@
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#53",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#883",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#50",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#835",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#53",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#883",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57179",
@@ -2711,11 +2453,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 647.7,
-     "official_acres": 621.6,
-     "times": 1.04,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -2749,15 +2488,16 @@
      "note": "same record id(s) as another park number: for KPC 13"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "DUPLICATE: Another park number uses the same record: US-5483."
+   "why": "SOURCE DOWN: DUPLICATE: Another park number uses the same record: US-5483."
   },
   {
    "ref": "US-2879",
@@ -2772,7 +2512,6 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 126.8,
@@ -2808,26 +2547,6 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgrib659",
-     "name": "Rocky Point Park",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 79.9,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=659&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib611",
-     "name": "Rocky Point",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 46.8,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=611&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "sgric692",
      "name": "Rocky Point Park",
      "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
@@ -2852,8 +2571,6 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57193",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#692",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#643",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#659",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#611",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#692",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#643"
    ],
@@ -2863,11 +2580,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 126.8,
-     "official_acres": 126.8,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -2905,20 +2619,21 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
+   "why": "SOURCE DOWN: TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
   },
   {
    "ref": "US-2880",
-   "name": "Snake Den State Park",
-   "key_name": "Snake Den State Park",
+   "name": "Snake Den/Dame Farm State Park",
+   "key_name": "Snake Den/Dame Farm State Park",
    "type": "State Park",
    "grade": "official",
    "pin": [
@@ -2927,11 +2642,9 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-    "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 889.5,
+   "acres_drawn": 889.4,
    "records": [
     {
      "id": "sgria754",
@@ -2941,26 +2654,6 @@
      "acres_from": "acres field",
      "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
      "link": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0/query?objectIds=754&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib717",
-     "name": "Snake Den",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 767.8,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=717&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgric754",
-     "name": "Snake Den",
-     "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
-     "acres": 767.8,
-     "acres_from": "acres field",
-     "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3",
-     "link": "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3/query?objectIds=754&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     },
     {
@@ -3004,8 +2697,6 @@
    ],
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#754",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#717",
-    "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#754",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57202",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57203",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57204",
@@ -3018,16 +2709,20 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 889.5,
+     "outline_acres": 889.4,
      "official_acres": 767.8,
      "times": 1.16,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Snake Den State Park",
-     "record_name": "Snake Den State Park"
+     "flag": "MISMATCH",
+     "score": 0.5,
+     "pota_name": "Snake Den/Dame Farm State Park",
+     "record_name": "Snake Den State Park",
+     "worst_record": {
+      "name": "Snake Den",
+      "score": 0.5
+     }
     },
     "T4": {
      "park_kind": "state park",
@@ -3049,15 +2744,14 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 3,
+   "why": "MISMATCH: The record name 'Snake Den State Park' does not match POTA's name 'Snake Den/Dame Farm State Park' (score 0.50)."
   },
   {
    "ref": "US-2881",
@@ -3210,7 +2904,7 @@
     }
    },
    "problems": [
-    "SOURCE DOWN: : InvalidSchema"
+    "SOURCE DOWN: : down for this run (failed 3 times)"
    ],
    "status": "SOURCE DOWN: retry next run",
    "score": 0,
@@ -3387,8 +3081,8 @@
   },
   {
    "ref": "US-5484",
-   "name": "George Washington Memorial State Forest",
-   "key_name": "George Washington Memorial State Forest",
+   "name": "George Washington Wildlife Management Area",
+   "key_name": "George Washington Wildlife Management Area",
    "type": "State Forest",
    "grade": "official",
    "pin": [
@@ -3398,10 +3092,9 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
-   "acres_drawn": 3343.6,
+   "acres_drawn": 3461.0,
    "records": [
     {
      "id": "padus#57294",
@@ -3414,6 +3107,26 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=57294&outFields=*&returnGeometry=false&f=html"
     },
     {
+     "id": "padus#57293",
+     "name": "George Washington Management Area",
+     "type": "SF State Resource Management Area",
+     "category": "Fee",
+     "acres": 195.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=57293&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#57295",
+     "name": "George Washington Management Area",
+     "type": "SF State Resource Management Area",
+     "category": "Fee",
+     "acres": 36.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=57295&outFields=*&returnGeometry=false&f=html"
+    },
+    {
      "id": "sgria30",
      "name": "George Washington Management Area",
      "type": "Rhode Island DEM (land, state GIS table)",
@@ -3421,16 +3134,6 @@
      "acres_from": "acres field",
      "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
      "link": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0/query?objectIds=30&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib28",
-     "name": "George Washington Management Area",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 2830.6,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=28&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     },
     {
@@ -3446,8 +3149,9 @@
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57294",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57293",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57295",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#30",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#28",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#30"
    ],
    "tests": {
@@ -3456,16 +3160,13 @@
      "metres": 747.3
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 3343.6,
-     "official_acres": 3202.0,
-     "times": 1.04,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
-     "pota_name": "George Washington Memorial State Forest",
+     "pota_name": "George Washington Wildlife Management Area",
      "record_name": "George Washington Management Area"
     },
     "T4": {
@@ -3496,15 +3197,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 6,
-   "why": "OUTSIDE: POTA's pin is 747 m outside the outline (+1 more flag)."
+   "why": "SOURCE DOWN: OUTSIDE: POTA's pin is 747 m outside the outline (+1 more flag)."
   },
   {
    "ref": "US-6979",
@@ -3804,10 +3506,9 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
-   "acres_drawn": 3714.3,
+   "acres_drawn": 3714.2,
    "records": [
     {
      "id": "padus#57300",
@@ -3946,7 +3647,6 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57301",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57307",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#890",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#842",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#890"
    ],
    "tests": {
@@ -3955,13 +3655,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 3714.3,
-     "official_acres": 3677.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)",
-     "official_acres_low": 3605.0,
-     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 3,605 ac, all providers added 3,677 ac"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -3981,11 +3676,11 @@
       "SELF-INTERSECTION",
       "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-71.5760390118623 41.4750085612993]; 65 hole(s) under 100 m2",
+     "note": "Ring Self-intersection[-71.5760390118623 41.4750085612993]; 68 hole(s) under 100 m2",
      "repair": {
       "ok": true,
       "area_change_pct": 0.002,
-      "holes": 65,
+      "holes": 68,
       "pieces": 0
      }
     },
@@ -4000,17 +3695,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [
-    "record sgrib842: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
    ],
-   "status": "graded",
+   "status": "SOURCE DOWN: retry next run",
    "score": 2,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-71.5760390118623 41.4750085612993]; 65 hole(s) under 100 m2 (+1 more flag)."
+   "why": "SOURCE DOWN: SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-71.5760390118623 41.4750085612993]; 68 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-6982",
@@ -4024,10 +3718,9 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
-   "acres_drawn": 8380.0,
+   "acres_drawn": 8379.9,
    "records": [
     {
      "id": "sgria10848",
@@ -4037,16 +3730,6 @@
      "acres_from": "acres field",
      "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
      "link": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0/query?objectIds=10848&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib949",
-     "name": "Big River",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 8379.8,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=949&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     },
     {
@@ -4062,7 +3745,6 @@
    ],
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#10848",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#949",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#10848"
    ],
    "tests": {
@@ -4071,11 +3753,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 8380.0,
-     "official_acres": 8379.8,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4103,15 +3782,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-6983",
@@ -4226,7 +3906,6 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 1336.8,
@@ -4282,36 +3961,6 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgrib533",
-     "name": "Black Hut",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 196.5,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=533&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib731",
-     "name": "Black Hut",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 141.2,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=731&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib732",
-     "name": "Black Hut",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 44.0,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=732&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "sgric559",
      "name": "Black Hut",
      "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
@@ -4348,9 +3997,6 @@
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#559",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#770",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#771",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#533",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#731",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#732",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#559",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#770",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#771"
@@ -4361,11 +4007,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1336.8,
-     "official_acres": 1336.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4403,15 +4046,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
+   "why": "SOURCE DOWN: TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
   },
   {
    "ref": "US-6985",
@@ -4426,7 +4070,6 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 181.7,
@@ -4472,16 +4115,6 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgrib2",
-     "name": "Round Top",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 135.3,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=2&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "sgric2",
      "name": "Round Top",
      "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
@@ -4497,7 +4130,6 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57352",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57117",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#2",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#2",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#2"
    ],
    "tests": {
@@ -4506,11 +4138,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 181.7,
-     "official_acres": 181.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4538,15 +4167,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-6986",
@@ -4647,7 +4277,6 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 419.9,
@@ -4663,16 +4292,6 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgrib419",
-     "name": "Cocumcussoc",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 420.0,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=419&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "sgric436",
      "name": "Cocumcussoc",
      "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
@@ -4685,7 +4304,6 @@
    ],
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#436",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#419",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#436"
    ],
    "tests": {
@@ -4694,11 +4312,8 @@
      "metres": 32.2
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 419.9,
-     "official_acres": 420.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4726,15 +4341,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 32 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 32 m outside the outline."
   },
   {
    "ref": "US-6988",
@@ -4748,7 +4364,6 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 723.6,
@@ -4781,36 +4396,6 @@
      "acres_from": "acres field",
      "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
      "link": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0/query?objectIds=588&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib420",
-     "name": "Bradford Dye / Grills Preserve",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 505.2,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=420&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib1013",
-     "name": "Grills Preserve",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 211.6,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=1013&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib558",
-     "name": "Grills",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 6.8,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=558&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     },
     {
@@ -4848,9 +4433,6 @@
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#437",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#33784",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#588",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#420",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#1013",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#558",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#437",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#33784",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#588"
@@ -4861,11 +4443,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 723.6,
-     "official_acres": 723.6,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4879,18 +4458,8 @@
      "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 3,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "1 hole(s) under 100 m2",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 1,
-      "pieces": 0
-     }
+     "flag": "PASS",
+     "pieces": 4
     },
     "T6": {
      "flag": "PASS"
@@ -4903,15 +4472,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-6989",
@@ -4926,7 +4496,6 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 302.1,
@@ -4972,16 +4541,6 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgrib23",
-     "name": "Black Farm",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 218.9,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=23&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "sgric25",
      "name": "Black Farm",
      "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
@@ -4997,7 +4556,6 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57258",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57259",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#25",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#23",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#25"
    ],
    "tests": {
@@ -5006,11 +4564,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 302.1,
-     "official_acres": 302.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5049,15 +4604,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 2,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-71.7229894594268 41.4632343933293]; 1 hole(s) under 100 m2 (+1 more flag)."
+   "why": "SOURCE DOWN: SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-71.7229894594268 41.4632343933293]; 1 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-6990",
@@ -5071,11 +4627,10 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 1549.1,
+   "acres_drawn": 1549.0,
    "records": [
     {
      "id": "sgria393",
@@ -5085,16 +4640,6 @@
      "acres_from": "acres field",
      "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
      "link": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0/query?objectIds=393&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib379",
-     "name": "Nicholas Farm",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 840.0,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=379&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     },
     {
@@ -5190,7 +4735,6 @@
    ],
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#393",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#379",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#393",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57319",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57318",
@@ -5207,11 +4751,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1549.1,
-     "official_acres": 1532.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5249,15 +4790,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "TINY HOLES: The shape has problems: 6 hole(s) under 100 m2."
+   "why": "SOURCE DOWN: TINY HOLES: The shape has problems: 6 hole(s) under 100 m2."
   },
   {
    "ref": "US-6991",
@@ -5465,11 +5007,10 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 338.2,
+   "acres_drawn": 338.1,
    "records": [
     {
      "id": "sgria603",
@@ -5479,16 +5020,6 @@
      "acres_from": "acres field",
      "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
      "link": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0/query?objectIds=603&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib573",
-     "name": "J.L. Curran",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 296.9,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=573&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     },
     {
@@ -5514,7 +5045,6 @@
    ],
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#603",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#573",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#603",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57176"
    ],
@@ -5524,11 +5054,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 338.2,
-     "official_acres": 296.9,
-     "times": 1.14,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5560,15 +5087,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-7508",
@@ -5582,7 +5110,6 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 342.6,
@@ -5598,16 +5125,6 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgrib863",
-     "name": "Pulaski State Park",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 342.7,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=863&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "sgric916",
      "name": "Pulaski State Park",
      "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
@@ -5620,7 +5137,6 @@
    ],
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#916",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#863",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#916"
    ],
    "tests": {
@@ -5629,11 +5145,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 342.6,
-     "official_acres": 342.7,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5661,15 +5174,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-7518",
@@ -5683,7 +5197,6 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 28.9,
@@ -5699,16 +5212,6 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgrib729",
-     "name": "Kimball Refuge",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 28.9,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=729&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "sgric768",
      "name": "Kimball Refuge",
      "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
@@ -5721,7 +5224,6 @@
    ],
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#768",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#729",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#768"
    ],
    "tests": {
@@ -5730,11 +5232,8 @@
      "metres": 4.9
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 28.9,
-     "official_acres": 28.9,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5762,15 +5261,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 5 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 5 m outside the outline."
   },
   {
    "ref": "US-7714",
@@ -5785,7 +5285,6 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 2055.5,
@@ -5851,26 +5350,6 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgrib913",
-     "name": "Buck Hill",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 47.5,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=913&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib946",
-     "name": "Buck Hill",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 12.4,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=946&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "sgric8587",
      "name": "Buck Hill",
      "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
@@ -5898,8 +5377,6 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57105",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#8587",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#9174",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#913",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#946",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#8587",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#9174"
    ],
@@ -5909,13 +5386,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 2055.5,
-     "official_acres": 2315.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)",
-     "official_acres_low": 2056.0,
-     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 2,056 ac, all providers added 2,315 ac"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5954,15 +5426,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 2,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-71.769419813792 41.9941745364411]; 15 hole(s) under 100 m2 (+1 more flag)."
+   "why": "SOURCE DOWN: SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-71.769419813792 41.9941745364411]; 15 hole(s) under 100 m2 (+1 more flag)."
   },
   {
    "ref": "US-7715",
@@ -6279,22 +5752,11 @@
     -71.6382
    ],
    "outline_from": [
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
    "acres_drawn": 87.5,
    "records": [
-    {
-     "id": "sgrib377",
-     "name": "Charlestown Breachway Fishing Area",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 49.7,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=377&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
     {
      "id": "sgric391",
      "name": "Charlestown Breachway Fishing Area",
@@ -6317,7 +5779,6 @@
     }
    ],
    "record_ids": [
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#377",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#391",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57160"
    ],
@@ -6327,11 +5788,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 87.5,
-     "official_acres": 49.7,
-     "times": 1.76,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6359,15 +5817,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 1.8 times bigger than the official 50 acres (88 ac drawn)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-7718",
@@ -6381,7 +5840,6 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 31.8,
@@ -6397,16 +5855,6 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgrib579",
-     "name": "East Matunuck State Beach",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 31.8,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=579&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "sgric609",
      "name": "East Matunuck State Beach",
      "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
@@ -6419,7 +5867,6 @@
    ],
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#609",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#579",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#609"
    ],
    "tests": {
@@ -6428,11 +5875,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 31.8,
-     "official_acres": 31.8,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6460,15 +5904,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-7719",
@@ -6482,7 +5927,6 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 65.6,
@@ -6505,26 +5949,6 @@
      "acres_from": "acres field",
      "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
      "link": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0/query?objectIds=664&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib633",
-     "name": "Misquamicut State Beach",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 35.6,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=633&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib632",
-     "name": "Misquamicut State Beach",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 30.1,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=632&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     },
     {
@@ -6551,8 +5975,6 @@
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#665",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#664",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#633",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#632",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#665",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#664"
    ],
@@ -6562,11 +5984,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 65.6,
-     "official_acres": 65.7,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6594,15 +6013,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-7720",
@@ -6616,7 +6036,6 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 28.9,
@@ -6632,16 +6051,6 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgrib257",
-     "name": "Roger Wheeler State Beach",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 29.0,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=257&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "sgric263",
      "name": "Roger Wheeler State Beach",
      "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
@@ -6654,7 +6063,6 @@
    ],
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#263",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#257",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#263"
    ],
    "tests": {
@@ -6663,11 +6071,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 28.9,
-     "official_acres": 29.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "WEAK",
@@ -6695,15 +6100,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "WEAK: The record name 'Roger Wheeler State Beach' does not match POTA's name 'Roger W. Wheeler State Beach' (score 0.75)."
+   "why": "SOURCE DOWN: WEAK: The record name 'Roger Wheeler State Beach' does not match POTA's name 'Roger W. Wheeler State Beach' (score 0.75)."
   },
   {
    "ref": "US-7721",
@@ -6717,7 +6123,6 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 2.1,
@@ -6733,16 +6138,6 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgrib651",
-     "name": "Salty Brine State Beach",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 2.1,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=651&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "sgric684",
      "name": "Salty Brine State Beach",
      "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
@@ -6755,7 +6150,6 @@
    ],
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#684",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#651",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#684"
    ],
    "tests": {
@@ -6764,11 +6158,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 2.1,
-     "official_acres": 2.1,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6796,15 +6187,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-7722",
@@ -6894,7 +6286,6 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 244.0,
@@ -6910,16 +6301,6 @@
      "name_field": "NAME"
     },
     {
-     "id": "sgrib615",
-     "name": "Rome Point",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 243.9,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=615&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
      "id": "sgric647",
      "name": "Rome Point",
      "type": "Rhode Island DEM (state conservation land) (land, state GIS table)",
@@ -6932,7 +6313,6 @@
    ],
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#647",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#615",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#647"
    ],
    "tests": {
@@ -6941,11 +6321,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 244.0,
-     "official_acres": 243.9,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "MISMATCH",
@@ -6973,15 +6350,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 3,
-   "why": "MISMATCH: The record name 'Rome Point' does not match POTA's name 'John H. Chaffee Rome Point State Nature Preserve' (score 0.40)."
+   "why": "SOURCE DOWN: MISMATCH: The record name 'Rome Point' does not match POTA's name 'John H. Chaffee Rome Point State Nature Preserve' (score 0.40)."
   },
   {
    "ref": "US-7865",
@@ -6995,7 +6373,6 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3"
    ],
    "acres_drawn": 198.9,
@@ -7018,26 +6395,6 @@
      "acres_from": "acres field",
      "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
      "link": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0/query?objectIds=125&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib264",
-     "name": "East Beach",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 134.2,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=264&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib121",
-     "name": "East Beach",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 64.7,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=121&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     },
     {
@@ -7064,8 +6421,6 @@
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#270",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#125",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#264",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#121",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#270",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#125"
    ],
@@ -7075,11 +6430,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 198.9,
-     "official_acres": 198.9,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7107,15 +6459,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-7971",
@@ -7127,69 +6480,50 @@
     42.015,
     -71.5529
    ],
-   "outline_from": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2"
-   ],
-   "acres_drawn": 150.7,
-   "records": [
-    {
-     "id": "sgakd1227",
-     "name": "Blackstone River Valley National Historical Park",
-     "type": "National Park Service (legal boundary) (park, state GIS table)",
-     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
-     "link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=1227&outFields=*&returnGeometry=false&f=html",
-     "name_field": "UNIT_NAME"
-    }
-   ],
-   "record_ids": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2#1227"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "NOTE",
-     "metres": 2176.3,
-     "was": "OUTSIDE",
-     "note": "the park spans several states / provinces (US-RI, US-MA): POTA's one pin may be in another part"
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 150.7
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Blackstone River Valley National Historical Park",
-     "record_name": "Blackstone River Valley National Historical Park"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "national park",
-     "record_kind": "national park",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 10
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2026-10-16",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-8293",
@@ -7203,7 +6537,6 @@
    ],
    "outline_from": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
@@ -7217,16 +6550,6 @@
      "acres_from": "acres field",
      "layer": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
      "link": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0/query?objectIds=154&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgrib150",
-     "name": "Sapowet Marsh Management Area",
-     "type": "Rhode Island DEM (land, state GIS table)",
-     "acres": 175.3,
-     "acres_from": "acres field",
-     "layer": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0",
-     "link": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0/query?objectIds=150&outFields=*&returnGeometry=false&f=html",
      "name_field": "NAME"
     },
     {
@@ -7292,7 +6615,6 @@
    ],
    "record_ids": [
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0#154",
-    "https://services2.arcgis.com/S8zZg9pg23JUEexQ/ArcGIS/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer/0#150",
     "https://risegis.ri.gov/hosting/rest/services/RIDEM/Conserved_Land_in_RI_v2/FeatureServer/3#154",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57356",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#57355",
@@ -7306,11 +6628,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 260.3,
-     "official_acres": 214.0,
-     "times": 1.22,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7338,15 +6657,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-05-07",
-     "read": "2026-11-08",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   }
  ]
 }
